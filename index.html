@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olivier — US College Soccer & Exercise Science Scholarship Guide v12.1</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f6f3;--surface:#fff;--surface2:#f2f1ee;--surface3:#eceae6;
+  --border:#e2e0db;--border2:#d0cec8;
+  --navy:#111827;--text:#1f2937;--muted:#6b7280;--hint:#9ca3af;
+  --indigo:#4f46e5;--indigo2:#6366f1;--indigo3:#e0e7ff;
+  --sky:#0284c7;--sky2:#38bdf8;--sky3:#e0f2fe;
+  --emerald:#059669;--emerald2:#34d399;--emerald3:#d1fae5;
+  --amber:#d97706;--amber2:#f59e0b;--amber3:#fef3c7;
+  --rose:#e11d48;--rose2:#f43f5e;--rose3:#ffe4e6;
+  --violet:#7c3aed;--violet3:#ede9fe;
+  --gold:#b45309;--gold3:#fef9c3;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:14px;}
+.top-nav{background:var(--surface);border-bottom:1px solid var(--border);padding:0 1.5rem;display:flex;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,0.06);overflow-x:auto;}
+.nav-brand{font-family:'Outfit',sans-serif;font-size:.9rem;font-weight:700;color:var(--navy);padding:.9rem 1.25rem .9rem 0;border-right:1px solid var(--border);margin-right:.75rem;white-space:nowrap;}
+.nav-brand span{color:var(--indigo);}
+.nav-tab{background:none;border:none;cursor:pointer;color:var(--muted);font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;padding:.9rem 1rem;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;}
+.nav-tab:hover{color:var(--text);}
+.nav-tab.active{color:var(--indigo);border-bottom-color:var(--indigo);}
+.compare-count{background:var(--rose2);color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:10px;margin-left:5px;vertical-align:middle;}
+.page{display:none;padding:1.5rem;max-width:1320px;margin:0 auto;}
+.page.active{display:block;}
+.hero{background:var(--navy);border-radius:18px;padding:3rem 2.5rem 2.5rem;margin-bottom:1.5rem;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;top:-60px;right:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.18) 0%,transparent 70%);pointer-events:none;}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:1.25rem;}
+.hero h1{font-family:'Outfit',sans-serif;font-weight:800;font-size:clamp(1.9rem,4.5vw,3rem);color:#fff;line-height:1.15;margin-bottom:.6rem;letter-spacing:-.02em;}
+.hero h1 em{font-style:italic;color:#a5b4fc;font-family:'Lora',serif;}
+.hero p{color:rgba(255,255,255,.55);font-size:14px;max-width:600px;margin:0 auto 2rem;line-height:1.75;}
+.hero-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;}
+.hstat .num{font-family:'Outfit',sans-serif;font-weight:800;font-size:2rem;color:#fff;display:block;letter-spacing:-.02em;}
+.hstat .lbl{font-size:11px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-top:2px;}
+.profile-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--border);border-radius:14px;overflow:hidden;border:1px solid var(--border);margin-bottom:1.5rem;}
+.pb-item{background:var(--surface);padding:.85rem 1rem;}
+.pb-item label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:4px;font-weight:600;}
+.pb-item .val{font-size:13px;font-weight:600;color:var(--indigo);}
+/* ── Compact Header ── */
+.compact-header{background:var(--navy);border-radius:14px;padding:1rem 1.4rem;margin-bottom:1rem;display:grid;grid-template-columns:1fr auto auto;gap:1rem 1.5rem;align-items:center;}
+@media(max-width:800px){.compact-header{grid-template-columns:1fr;gap:.75rem;}}
+.ch-left{min-width:0;}
+.ch-title{font-family:'Outfit',sans-serif;font-size:1.15rem;font-weight:800;color:#fff;letter-spacing:-.02em;line-height:1.2;}
+.ch-title span{color:#a5b4fc;font-style:italic;}
+.ch-badge{font-size:10px;color:rgba(255,255,255,.4);font-weight:600;margin-top:3px;text-transform:uppercase;letter-spacing:.09em;}
+.ch-stats{display:flex;gap:1.25rem;}
+.ch-stat{text-align:center;}
+.ch-num{display:block;font-size:1.5rem;font-weight:800;color:#fff;line-height:1;font-family:'Outfit',sans-serif;}
+.ch-lbl{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.09em;font-weight:700;}
+.ch-profile{display:flex;flex-wrap:wrap;gap:4px 10px;background:rgba(255,255,255,.06);border-radius:9px;padding:.5rem .75rem;}
+.ch-p-item{display:flex;align-items:center;gap:5px;}
+.ch-p-l{font-size:9px;color:rgba(255,255,255,.35);font-weight:700;text-transform:uppercase;letter-spacing:.07em;}
+.ch-p-v{font-size:11px;color:#e0e7ff;font-weight:600;}
+/* ── ATAR → GPA Converter ── */
+.atar-panel{background:var(--navy);border-radius:14px;padding:1rem 1.4rem;margin-bottom:.75rem;}
+.atar-panel-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.85rem;}
+.atar-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.45);}
+.atar-summary{display:flex;gap:1rem;flex-wrap:wrap;}
+.atar-sum-item{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;}
+.atar-sum-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.atar-slider-row{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;}
+.atar-slider-wrap{position:relative;}
+.atar-slider-wrap input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:6px;border-radius:3px;background:rgba(255,255,255,.15);outline:none;cursor:pointer;}
+.atar-slider-wrap input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;border-radius:50%;background:#6366f1;cursor:pointer;border:3px solid #fff;box-shadow:0 2px 8px rgba(99,102,241,.6);}
+.atar-slider-wrap input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#6366f1;cursor:pointer;border:3px solid #fff;}
+.atar-tick-row{display:flex;justify-content:space-between;margin-top:4px;}
+.atar-tick{font-size:9px;color:rgba(255,255,255,.3);font-weight:600;}
+.atar-readout{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:.6rem 1rem;text-align:center;min-width:130px;flex-shrink:0;}
+.atar-readout .ar-atar{font-size:2rem;font-weight:800;color:#fff;line-height:1;font-family:'Outfit',sans-serif;}
+.atar-readout .ar-label{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.09em;margin-top:1px;font-weight:700;}
+.atar-readout .ar-gpa{font-size:1.1rem;font-weight:800;color:#a5b4fc;margin-top:4px;line-height:1;}
+.atar-readout .ar-gpa-label{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.09em;font-weight:700;}
+/* ── Compact Filter Panel ── */
+.filter-panel{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden;}
+.filter-panel-header{display:flex;justify-content:space-between;align-items:center;padding:.6rem 1rem;background:var(--surface2);}
+.filter-panel-body{padding:.6rem 1rem;display:grid;grid-template-columns:1fr 1fr;gap:.4rem .75rem;border-top:1px solid var(--border);}
+@media(max-width:700px){.filter-panel-body{grid-template-columns:1fr;}}
+.filter-row{display:flex;align-items:center;flex-wrap:wrap;gap:4px;}
+.fg-label{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);min-width:60px;flex-shrink:0;}
+.fchip{background:var(--bg);border:1.5px solid var(--border2);color:var(--muted);padding:4px 10px;border-radius:14px;font-size:11px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;}
+.fchip:hover{border-color:var(--indigo2);color:var(--indigo);background:var(--indigo3);}
+.fchip.active{background:var(--indigo);border-color:var(--indigo);color:#fff;font-weight:700;}
+.filter-clear-btn{background:var(--rose3);border:1px solid var(--rose2);color:var(--rose);padding:3px 10px;border-radius:7px;font-size:11px;font-weight:700;cursor:pointer;font-family:'Outfit',sans-serif;}
+.filter-clear-btn:hover{background:var(--rose2);color:#fff;}
+.filter-toggle-btn{background:var(--surface3);border:1px solid var(--border2);color:var(--indigo);padding:3px 10px;border-radius:7px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;}
+.filter-result-count{font-size:11px;font-weight:700;color:var(--indigo);background:var(--indigo3);padding:1px 8px;border-radius:8px;}
+/* ── Redesigned Cards ── */
+.ucard{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:box-shadow .15s,border-color .15s;position:relative;display:flex;flex-direction:column;}
+.ucard:hover{box-shadow:0 6px 20px rgba(0,0,0,.08);border-color:var(--border2);}
+.ucard.top-pick{border-color:#6366f1;border-width:2px;}
+.tp-badge{position:absolute;top:10px;right:10px;background:var(--indigo);color:#fff;font-size:9px;font-weight:800;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.07em;z-index:2;}
+/* Card header — name + div + conf + location in one tight row */
+.card-head2{display:flex;gap:10px;align-items:flex-start;padding:.85rem .9rem .6rem;}
+.card-av2{width:40px;height:40px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;font-family:'Outfit',sans-serif;}
+.card-id{flex:1;min-width:0;}
+.card-id h3{font-size:13px;font-weight:700;color:var(--navy);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.card-id .card-sub{font-size:10px;color:var(--hint);margin-top:1px;display:flex;align-items:center;gap:5px;flex-wrap:wrap;}
+/* Score strip — 3 scores in one horizontal band */
+.score-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.ss-item{padding:6px 8px;text-align:center;border-right:1px solid var(--border);}
+.ss-item:last-child{border-right:none;}
+.ss-val{font-size:1.1rem;font-weight:800;line-height:1;font-family:'Outfit',sans-serif;}
+.ss-lbl{font-size:8px;color:var(--hint);text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-top:2px;}
+/* Info grid — compact 2-col key facts */
+.info-grid2{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:.5rem .9rem;}
+.ig2-item{padding:3px 0;}
+.ig2-label{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--hint);}
+.ig2-val{font-size:11.5px;font-weight:600;color:var(--navy);line-height:1.3;}
+/* Degree band */
+.degree-band{background:var(--emerald3);border-top:1px solid #a7f3d0;border-bottom:1px solid #a7f3d0;padding:5px .9rem;display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.db-title{font-size:11px;font-weight:700;color:#065f46;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.db-align{font-size:10px;font-weight:700;padding:2px 7px;border-radius:8px;flex-shrink:0;}
+/* Conference strip */
+.conf-strip{padding:5px .9rem;display:flex;gap:4px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--border);}
+.conf-strip .conf-lbl{font-size:9px;font-weight:700;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-right:2px;}
+/* GPA row compact */
+.gpa-compact{padding:5px .9rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.gpa-c-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--hint);}
+.gpa-c-val{font-size:11px;font-weight:700;}
+.gpa-c-target{font-size:10px;color:var(--muted);}
+/* Facilities badge */
+.fac-card-badge{display:inline-flex;align-items:center;gap:3px;font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em;}
+/* Bottom section — coach + buttons */
+.card-footer2{display:flex;align-items:center;justify-content:space-between;padding:.6rem .9rem;background:var(--surface2);border-top:1px solid var(--border);margin-top:auto;}
+.card-coach{font-size:11px;color:var(--muted);font-weight:500;}
+.card-coach strong{color:var(--navy);font-weight:700;}
+.card-btns{display:flex;gap:5px;}
+
+
+.section-head{display:flex;align-items:center;gap:10px;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1.5px solid var(--border);}
+.section-head h2{font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:700;color:var(--navy);}
+.section-intro{font-size:13px;color:var(--muted);line-height:1.75;background:var(--surface);border-radius:10px;padding:.9rem 1.1rem;margin-bottom:1.25rem;border:1px solid var(--border);}
+.dbadge{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:2px 8px;border-radius:4px;white-space:nowrap;}
+.d-D1{background:var(--rose3);color:var(--rose);}
+.d-D2{background:var(--sky3);color:var(--sky);}
+.d-D3{background:var(--violet3);color:var(--violet);}
+.d-NAIA{background:var(--amber3);color:var(--amber);}
+.d-JUCO{background:var(--surface3);color:var(--muted);}
+.d-IVY{background:var(--gold3);color:var(--gold);}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem;margin-bottom:2rem;}
+.ucard{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s;position:relative;}
+.ucard:hover{border-color:var(--border2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
+.ucard.top-pick{border-color:var(--indigo2);}
+.tp-badge{position:absolute;top:12px;right:12px;background:var(--indigo3);border:1px solid var(--indigo2);color:var(--indigo);font-size:9px;font-weight:700;letter-spacing:.1em;padding:3px 9px;border-radius:5px;}
+.card-head{padding:1.1rem 1.1rem .85rem;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;}
+.uni-av{width:42px;height:42px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;font-family:'Outfit',sans-serif;}
+.card-meta h3{font-size:13.5px;font-weight:700;color:var(--navy);line-height:1.35;}
+.card-meta .loc{font-size:11px;color:var(--hint);margin-top:2px;}
+.card-body{padding:.9rem 1.1rem;}
+.mrow{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:.85rem;}
+.metric{background:var(--bg);border-radius:8px;padding:8px 9px;text-align:center;border:1px solid var(--border);}
+.metric .mv{font-size:14px;font-weight:700;color:var(--navy);display:block;line-height:1.2;}
+.metric .ml{font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;font-weight:600;}
+.standings-bar{margin-bottom:.85rem;}
+.standings-bar .sb-label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);font-weight:600;margin-bottom:5px;}
+.standing-years{display:flex;gap:4px;flex-wrap:wrap;}
+.sy{font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;white-space:nowrap;}
+.sy-top{background:var(--emerald3);color:var(--emerald);}
+.sy-mid{background:var(--amber3);color:var(--amber);}
+.sy-low{background:var(--rose3);color:var(--rose);}
+.sy-na{background:var(--surface3);color:var(--hint);}
+.titles-row{margin-bottom:.85rem;}
+.titles-row .tl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);font-weight:600;margin-bottom:5px;}
+.title-chip{display:inline-block;font-size:10px;font-weight:700;background:var(--gold3);color:var(--gold);padding:2px 8px;border-radius:4px;margin:2px 2px 0 0;border:1px solid #fde68a;}
+.degree-row{background:var(--emerald3);border-radius:8px;padding:8px 11px;margin-bottom:.85rem;border:1px solid #a7f3d0;}
+.degree-row .dr-label{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--emerald);font-weight:700;margin-bottom:3px;}
+.degree-row .dr-title{font-size:11.5px;font-weight:600;color:#065f46;line-height:1.4;}
+.degree-row .dr-align{font-size:10px;color:var(--emerald);margin-top:2px;}
+.pro-row{margin-bottom:.85rem;}
+.pro-row .pl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);font-weight:600;margin-bottom:5px;}
+.pro-stat{display:flex;align-items:center;gap:8px;}
+.pro-num{font-family:'Outfit',sans-serif;font-size:1.5rem;font-weight:800;color:var(--indigo);line-height:1;}
+.pro-desc{font-size:11px;color:var(--muted);line-height:1.5;}
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:5px 12px;margin-bottom:.85rem;}
+.igrid .il{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--hint);font-weight:600;}
+.igrid .iv{font-size:12px;color:var(--muted);margin-top:1px;}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:.8rem;}
+.tag{font-size:10px;font-weight:600;padding:2px 9px;border-radius:12px;letter-spacing:.03em;}
+.t-warm{background:var(--amber3);color:var(--amber);}
+.t-city{background:var(--sky3);color:var(--sky);}
+.t-acad{background:var(--emerald3);color:var(--emerald);}
+.t-soccer{background:var(--indigo3);color:var(--indigo);}
+.t-aid{background:var(--rose3);color:var(--rose);}
+.t-dev{background:var(--violet3);color:var(--violet);}
+.t-ivy{background:var(--gold3);color:var(--gold);}
+.coach-box{background:var(--bg);border-radius:9px;padding:9px 11px;margin-bottom:.8rem;display:flex;gap:9px;align-items:center;border:1px solid var(--border);}
+.coach-av{width:32px;height:32px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;background:var(--indigo3);color:var(--indigo);}
+.coach-info .cn{font-size:12px;font-weight:600;color:var(--navy);}
+.coach-info .ct{font-size:11px;color:var(--hint);}
+.devbar{margin-bottom:.8rem;}
+.devbar .dl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);font-weight:600;margin-bottom:6px;}
+.devbars{display:flex;flex-direction:column;gap:4px;}
+.devrow{display:flex;align-items:center;gap:7px;}
+.devrow .dn{font-size:11px;color:var(--muted);width:100px;flex-shrink:0;}
+.devtrack{flex:1;height:5px;background:var(--surface3);border-radius:3px;overflow:hidden;}
+.devfill{height:100%;border-radius:3px;}
+.devrow .dv{font-size:10px;font-weight:700;width:26px;text-align:right;}
+.rec{background:var(--indigo3);border-left:3px solid var(--indigo2);border-radius:0 8px 8px 0;padding:9px 11px;font-size:12px;color:#374151;line-height:1.65;margin-bottom:.8rem;}
+.ftag{display:inline-block;font-size:11px;background:var(--surface2);color:var(--muted);padding:2px 8px;border-radius:5px;margin:2px 2px 0 0;border:1px solid var(--border);}
+.card-footer{padding:.75rem 1.1rem;border-top:1px solid var(--border);display:flex;gap:8px;}
+.compare-btn{flex:1;background:var(--surface);border:1px solid var(--border2);color:var(--muted);padding:7px 12px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .15s;}
+.compare-btn:hover{border-color:var(--sky);color:var(--sky);}
+.compare-btn.selected{background:var(--sky3);border-color:var(--sky);color:var(--sky);}
+.detail-btn{background:var(--indigo);border:1px solid var(--indigo);color:#fff;padding:7px 14px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .15s;white-space:nowrap;}
+.detail-btn:hover{background:var(--indigo2);}
+.compare-empty{text-align:center;padding:5rem 2rem;color:var(--hint);}
+.compare-empty h3{font-size:1.2rem;color:var(--muted);margin-bottom:.5rem;font-weight:600;}
+.compare-table-wrap{overflow-x:auto;}
+table.ctable{width:100%;border-collapse:collapse;}
+table.ctable th{background:var(--surface2);color:var(--hint);font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
+table.ctable td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top;min-width:180px;}
+table.ctable tr:hover td{background:#fafaf9;}
+table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;background:var(--surface2);white-space:nowrap;position:sticky;left:0;border-right:1px solid var(--border);min-width:160px;}
+.cval{font-size:13px;color:var(--text);}
+.cval.good{color:var(--emerald);}
+.cval.warn{color:var(--amber);}
+.cval.head{font-size:14px;font-weight:700;color:var(--navy);}
+.compare-header-cell{min-width:200px;padding:12px 14px;}
+.chc-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.chc-loc{font-size:11px;color:var(--muted);margin-bottom:8px;}
+.remove-btn{background:none;border:1px solid var(--border2);color:var(--muted);padding:3px 10px;border-radius:5px;font-size:11px;cursor:pointer;font-family:'Outfit',sans-serif;}
+.remove-btn:hover{border-color:var(--rose);color:var(--rose);}
+.score-bar{display:flex;align-items:center;gap:7px;}
+.sb-track{flex:1;max-width:80px;height:6px;background:var(--surface3);border-radius:3px;overflow:hidden;}
+.sb-fill{height:100%;border-radius:3px;}
+.modal-overlay{position:fixed;inset:0;background:rgba(17,24,39,.5);z-index:200;display:flex;align-items:flex-start;justify-content:center;padding:2rem 1rem;overflow-y:auto;}
+.modal-overlay.hidden{display:none;}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:18px;width:100%;max-width:780px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15);}
+.modal-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;background:var(--bg);}
+.modal-head h2{font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;color:var(--navy);}
+.modal-head p{font-size:12px;color:var(--muted);margin-top:3px;}
+.close-btn{background:var(--surface);border:1px solid var(--border2);color:var(--muted);width:30px;height:30px;border-radius:7px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.close-btn:hover{border-color:var(--rose);color:var(--rose);}
+.modal-body{padding:1.3rem 1.6rem;max-height:75vh;overflow-y:auto;}
+.modal-tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:1.25rem;overflow-x:auto;}
+.mtab{background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;color:var(--muted);padding:.65rem 1rem;transition:all .15s;white-space:nowrap;}
+.mtab:hover{color:var(--text);}
+.mtab.active{color:var(--indigo);border-bottom-color:var(--indigo);}
+.mtab-content{display:none;}
+.mtab-content.active{display:block;}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+.detail-block{background:var(--bg);border-radius:11px;padding:1rem 1.1rem;border:1px solid var(--border);}
+.detail-block h4{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);font-weight:700;margin-bottom:.75rem;}
+.detail-block p{font-size:13px;color:var(--muted);line-height:1.7;}
+.subject-list li{font-size:13px;color:var(--muted);line-height:1.85;list-style:none;padding-left:16px;position:relative;}
+.subject-list li::before{content:'–';position:absolute;left:0;color:var(--hint);}
+.fit-section{margin-bottom:1rem;}
+.fit-section h4{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);font-weight:700;margin-bottom:.85rem;}
+.fit-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;}
+.fit-label{font-size:12px;color:var(--muted);width:150px;flex-shrink:0;}
+.fit-track{flex:1;height:7px;background:var(--surface3);border-radius:4px;overflow:hidden;}
+.fit-fill{height:100%;border-radius:4px;}
+.fit-num{font-size:12px;font-weight:700;width:32px;text-align:right;}
+.contact-block{background:var(--bg);border-radius:11px;padding:1rem 1.1rem;margin-bottom:.75rem;border:1px solid var(--border);}
+.contact-block h4{font-size:13px;font-weight:700;color:var(--indigo);margin-bottom:8px;}
+.contact-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:5px;}
+.contact-row .ci{font-size:10px;color:var(--hint);font-weight:700;text-transform:uppercase;letter-spacing:.07em;width:55px;flex-shrink:0;padding-top:2px;}
+.contact-row .cv{font-size:12.5px;color:var(--text);}
+.contact-row a{color:var(--indigo);text-decoration:none;}
+.tip-box{background:var(--indigo3);border-radius:9px;padding:.9rem 1rem;margin-bottom:.75rem;border:1px solid #c7d2fe;}
+.tip-box p{font-size:12.5px;color:#374151;line-height:1.7;}
+.tip-box strong{color:var(--navy);font-weight:600;}
+.align-pill{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;margin-right:4px;}
+.align-full{background:var(--emerald3);color:var(--emerald);}
+.align-strong{background:var(--sky3);color:var(--sky);}
+.align-partial{background:var(--amber3);color:var(--amber);}
+.pro-league-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;}
+.pro-league-table th{background:var(--navy);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:9px 14px;text-align:left;}
+.pro-league-table td{padding:9px 14px;border-bottom:1px solid var(--border);font-size:13px;color:var(--text);vertical-align:top;}
+.pro-league-table tr:hover td{background:var(--surface2);}
+.rank-medal{display:inline-block;width:22px;height:22px;border-radius:50%;font-size:11px;font-weight:800;text-align:center;line-height:22px;margin-right:6px;}
+.medal-1{background:#fef08a;color:#713f12;}
+.medal-2{background:#e2e8f0;color:#475569;}
+.medal-3{background:#fed7aa;color:#7c2d12;}
+.ew-note{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--indigo2);border-radius:0 12px 12px 0;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:13px;color:var(--muted);line-height:1.75;}
+.ew-note strong{color:var(--navy);}
+.conf-section{margin-bottom:2.5rem;}
+.path-card{background:var(--surface);border-radius:14px;padding:1.3rem;border:1px solid var(--border);}
+.q-card{font-size:13px;color:var(--muted);padding:.9rem 1rem .9rem 1.1rem;background:var(--surface);border-radius:9px;border:1px solid var(--border);border-left:3px solid var(--indigo2);line-height:1.7;}
+.ivy-warning{background:var(--gold3);border:1px solid #fde68a;border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--gold);font-weight:600;margin-bottom:.75rem;}
+@media(max-width:600px){.cards-grid{grid-template-columns:1fr;}.detail-grid{grid-template-columns:1fr;}.page{padding:1rem;}.hero{padding:2rem 1.25rem 1.75rem;}.hero-stats{gap:1.5rem;}}
+/* ── Facilities Tab ── */
+.fac-rating-badge{display:inline-block;font-size:11px;font-weight:800;padding:4px 12px;border-radius:6px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem;}
+.fac-elite{background:#fef08a;color:#713f12;}
+.fac-excellent{background:var(--emerald3);color:var(--emerald);}
+.fac-verygood{background:var(--sky3);color:var(--sky);}
+.fac-good{background:var(--indigo3);color:var(--indigo);}
+.fac-solid{background:var(--surface3);color:var(--muted);}
+.fac-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+@media(max-width:640px){.fac-grid{grid-template-columns:1fr;}}
+.fac-block{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;}
+.fac-block h5{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:.5rem;display:flex;align-items:center;gap:6px;}
+.fac-block p{font-size:12px;color:var(--muted);line-height:1.7;}
+.fac-note{background:var(--navy);border-radius:12px;padding:1rem 1.1rem;margin-top:1rem;}
+.fac-note p{font-size:12.5px;color:rgba(255,255,255,.7);line-height:1.75;}
+.fac-note strong{color:#fff;}
+/* ── GPA Section in Cards ── */
+.gpa-row{background:var(--surface2);border-radius:8px;padding:8px 10px;margin-bottom:.85rem;border:1px solid var(--border);}
+.gpa-row .gpa-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--hint);margin-bottom:5px;}
+.gpa-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+.gpa-item{background:var(--surface);border-radius:6px;padding:5px 8px;border:1px solid var(--border);}
+.gpa-item .gi-label{font-size:9px;color:var(--hint);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:2px;}
+.gpa-item .gi-val{font-size:13px;font-weight:700;}
+.gpa-none{font-size:11px;color:var(--emerald);font-weight:600;}
+.gpa-warn{color:var(--rose);}
+.gpa-ok{color:var(--amber);}
+.gpa-good{color:var(--emerald);}
+/* ── Financial Model Tab ── */
+.fin-hero{background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);border-radius:18px;padding:2rem 2rem 1.75rem;margin-bottom:1.5rem;position:relative;overflow:hidden;}
+.fin-hero::after{content:'';position:absolute;top:-40px;right:-40px;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.2) 0%,transparent 70%);pointer-events:none;}
+.fin-hero h2{font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:.4rem;letter-spacing:-.02em;}
+.fin-hero p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.75;max-width:680px;}
+.fin-explainer{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:1.5rem;}
+.fin-exp-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem;}
+.fin-exp-card h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;margin-bottom:.5rem;}
+.fin-exp-card p{font-size:12px;color:var(--muted);line-height:1.65;}
+.fin-school-selector{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:6px;margin-bottom:1.5rem;}
+.fin-school-btn{background:var(--surface);border:1px solid var(--border2);color:var(--muted);padding:8px 12px;border-radius:9px;font-size:12px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .15s;text-align:left;}
+.fin-school-btn:hover{border-color:var(--indigo2);color:var(--indigo);}
+.fin-school-btn.selected{background:var(--indigo3);border-color:var(--indigo2);color:var(--indigo);}
+.fin-school-btn .fsb-name{font-weight:700;font-size:13px;}
+.fin-school-btn .fsb-div{font-size:10px;margin-top:2px;}
+.fin-model-area{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;}
+@media(max-width:900px){.fin-model-area{grid-template-columns:1fr;}}
+.fin-controls{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.4rem;}
+.fin-controls h3{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:1.25rem;padding-bottom:.65rem;border-bottom:1px solid var(--border);}
+.slider-group{margin-bottom:1.25rem;}
+.slider-group label{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--navy);margin-bottom:6px;}
+.slider-group label span{font-size:13px;font-weight:800;color:var(--indigo);}
+.slider-group input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:6px;border-radius:3px;background:var(--surface3);outline:none;cursor:pointer;}
+.slider-group input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--indigo);cursor:pointer;border:2px solid #fff;box-shadow:0 2px 6px rgba(79,70,229,.4);}
+.slider-group input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--indigo);cursor:pointer;border:2px solid #fff;}
+.slider-sublabel{font-size:10px;color:var(--hint);margin-top:3px;display:flex;justify-content:space-between;}
+.aid-preset-row{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:1.25rem;}
+.aid-preset{background:var(--bg);border:1px solid var(--border2);color:var(--muted);padding:4px 10px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;}
+.aid-preset:hover{border-color:var(--indigo);color:var(--indigo);}
+.aid-preset.active{background:var(--indigo3);border-color:var(--indigo2);color:var(--indigo);}
+.extras-section{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
+.extras-section h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--hint);margin-bottom:.75rem;}
+.extra-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem;}
+.extra-row label{font-size:12px;color:var(--muted);font-weight:500;}
+.extra-row input[type=number]{width:90px;padding:5px 8px;border:1px solid var(--border2);border-radius:6px;font-size:12px;font-family:'Outfit',sans-serif;color:var(--text);background:var(--bg);text-align:right;}
+.fin-results{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.4rem;}
+.fin-results h3{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:1.25rem;padding-bottom:.65rem;border-bottom:1px solid var(--border);}
+.fin-summary-num{font-family:'Outfit',sans-serif;font-size:2.8rem;font-weight:800;line-height:1;letter-spacing:-.03em;}
+.fin-breakdown{margin-bottom:1.25rem;}
+.fin-row{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;border-radius:7px;margin-bottom:3px;font-size:12.5px;}
+.fin-row.income{background:var(--emerald3);color:#065f46;}
+.fin-row.expense{background:var(--surface2);color:var(--text);}
+.fin-row.net-positive{background:var(--emerald3);border:1px solid #a7f3d0;font-weight:700;font-size:13px;}
+.fin-row.net-negative{background:var(--rose3);border:1px solid #fecdd3;font-weight:700;font-size:13px;color:var(--rose);}
+.fin-row.net-neutral{background:var(--amber3);border:1px solid #fde68a;font-weight:700;font-size:13px;color:var(--amber);}
+.fin-row .fr-label{font-weight:600;}
+.fin-row .fr-val{font-weight:700;}
+.fin-4yr{background:var(--navy);border-radius:12px;padding:1.1rem 1.25rem;margin-top:1rem;}
+.fin-4yr .f4-label{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.09em;margin-bottom:4px;font-weight:700;}
+.fin-4yr .f4-val{font-size:1.8rem;font-weight:800;color:#fff;font-family:'Outfit',sans-serif;}
+.fin-4yr .f4-sub{font-size:11px;color:rgba(255,255,255,.4);margin-top:3px;}
+.fin-comparison{margin-top:2rem;}
+.fin-comparison h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:1rem;padding-bottom:.65rem;border-bottom:1.5px solid var(--border);}
+.fcbar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.fcbar-name{font-size:12px;font-weight:600;color:var(--navy);width:120px;flex-shrink:0;}
+.fcbar-track{flex:1;height:28px;background:var(--surface2);border-radius:6px;overflow:hidden;position:relative;}
+.fcbar-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;color:#fff;transition:width .4s;}
+.fcbar-amt{font-size:12px;font-weight:700;color:var(--muted);width:80px;text-align:right;flex-shrink:0;}
+.fcbar-div{font-size:10px;color:var(--hint);width:50px;flex-shrink:0;}
+.scenario-tabs{display:flex;gap:6px;margin-bottom:1rem;flex-wrap:wrap;}
+.sc-tab{background:var(--surface);border:1px solid var(--border2);color:var(--muted);padding:6px 14px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .15s;}
+.sc-tab:hover{border-color:var(--indigo);color:var(--indigo);}
+.sc-tab.active{background:var(--indigo3);border-color:var(--indigo2);color:var(--indigo);font-weight:700;}
+.aud-notice{background:var(--amber3);border:1px solid #fde68a;border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--amber);font-weight:600;margin-bottom:1rem;}
+.fin-tip{background:var(--indigo3);border-radius:9px;padding:.75rem 1rem;font-size:12px;color:#374151;line-height:1.7;margin-top:.75rem;border:1px solid #c7d2fe;}
+.fin-tip strong{color:var(--navy);}
+
+.conf-tier{margin-bottom:2.5rem;}
+.conf-tier-head{display:flex;align-items:center;gap:12px;margin-bottom:1rem;padding:.75rem 1.1rem;border-radius:12px;border:1px solid var(--border);}
+.tier-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;padding:3px 12px;border-radius:20px;white-space:nowrap;}
+.tier-p5{background:#1e1b4b;color:#a5b4fc;}
+.tier-d1{background:var(--rose3);color:var(--rose);}
+.tier-d2{background:var(--sky3);color:var(--sky);}
+.tier-naia{background:var(--amber3);color:var(--amber);}
+.tier-juco{background:var(--surface3);color:var(--muted);}
+.tier-ivy{background:var(--gold3);color:var(--gold);}
+.conf-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1rem;}
+.conf-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;}
+.conf-card-head{padding:1rem 1.1rem .75rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;}
+.conf-name{font-size:14px;font-weight:700;color:var(--navy);}
+.conf-abbr{font-size:11px;color:var(--hint);margin-top:2px;}
+.conf-prestige{font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;}
+.conf-body{padding:.85rem 1.1rem;}
+.conf-schools{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:.75rem;}
+.conf-school-chip{font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;border:1px solid var(--border2);color:var(--muted);background:var(--bg);}
+.conf-school-chip.in-guide{background:var(--indigo3);border-color:var(--indigo2);color:var(--indigo);}
+.conf-stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:.75rem;}
+.conf-stat{background:var(--bg);border-radius:7px;padding:6px 8px;text-align:center;border:1px solid var(--border);}
+.conf-stat .csv{font-size:13px;font-weight:700;color:var(--navy);}
+.conf-stat .csl{font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:1px;font-weight:600;}
+.conf-desc{font-size:12px;color:var(--muted);line-height:1.65;}
+.conf-olivier{background:var(--indigo3);border-radius:8px;padding:7px 10px;font-size:11.5px;color:#374151;margin-top:.65rem;border:1px solid #c7d2fe;}
+.conf-olivier strong{color:var(--indigo);}
+.ranking-table{width:100%;border-collapse:collapse;margin-bottom:2rem;}
+.ranking-table th{background:var(--navy);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:9px 14px;text-align:left;}
+.ranking-table td{padding:9px 14px;border-bottom:1px solid var(--border);font-size:12.5px;vertical-align:middle;}
+.ranking-table tr:hover td{background:var(--surface2);}
+.ranking-table td:first-child{font-weight:700;color:var(--navy);}
+.rk-num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font-size:11px;font-weight:800;margin-right:6px;}
+.rk-elite{background:#fef08a;color:#713f12;}
+.rk-strong{background:var(--sky3);color:var(--sky);}
+.rk-solid{background:var(--emerald3);color:var(--emerald);}
+.rk-dev{background:var(--surface3);color:var(--muted);}
+/* ── Coaches Page ── */
+.coaches-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.5rem;align-items:center;}
+.coach-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1rem;margin-bottom:2rem;}
+.coach-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .2s,box-shadow .2s;}
+.coach-card:hover{border-color:var(--border2);box-shadow:0 6px 20px rgba(0,0,0,.07);}
+.coach-card.top-coach{border-color:var(--indigo2);}
+.coach-card-head{padding:1.1rem;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:flex-start;position:relative;}
+.coach-av-lg{width:52px;height:52px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;font-family:'Outfit',sans-serif;}
+.coach-school{font-size:13px;font-weight:700;color:var(--navy);line-height:1.3;}
+.coach-title-sm{font-size:11px;color:var(--hint);margin-top:2px;}
+.coach-rank-badge{position:absolute;top:10px;right:10px;font-size:10px;font-weight:800;padding:3px 9px;border-radius:5px;letter-spacing:.05em;}
+.coach-card-body{padding:.9rem 1.1rem;}
+.coach-stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-bottom:.85rem;}
+.cstat{background:var(--bg);border-radius:7px;padding:6px 7px;text-align:center;border:1px solid var(--border);}
+.cstat .cv{font-size:13px;font-weight:700;color:var(--navy);display:block;line-height:1.2;}
+.cstat .cl{font-size:8px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;font-weight:700;}
+.coach-bio{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:.75rem;}
+.coach-strengths{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:.75rem;}
+.cs-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;}
+.cs-tac{background:var(--indigo3);color:var(--indigo);}
+.cs-dev{background:var(--emerald3);color:var(--emerald);}
+.cs-rec{background:var(--sky3);color:var(--sky);}
+.cs-aus{background:var(--amber3);color:var(--amber);}
+.cs-pro{background:var(--rose3);color:var(--rose);}
+.staff-section{background:var(--bg);border-radius:9px;padding:.85rem 1rem;border:1px solid var(--border);}
+.staff-section h5{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:.6rem;}
+.staff-row{display:flex;justify-content:space-between;align-items:flex-start;padding:5px 0;border-bottom:1px solid var(--border);}
+.staff-row:last-child{border-bottom:none;}
+.staff-name{font-size:12px;font-weight:600;color:var(--navy);}
+.staff-role{font-size:11px;color:var(--hint);}
+.staff-bg{font-size:11px;color:var(--muted);text-align:right;max-width:200px;line-height:1.4;}
+.coaching-rank-section{margin-bottom:2rem;}
+.head-coach-rank-table{width:100%;border-collapse:collapse;margin-bottom:1rem;}
+.head-coach-rank-table th{background:var(--navy);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:9px 14px;text-align:left;}
+.head-coach-rank-table td{padding:9px 14px;border-bottom:1px solid var(--border);font-size:12px;vertical-align:top;}
+.head-coach-rank-table tr:hover td{background:var(--surface2);}
+.exp-bar{display:flex;align-items:center;gap:6px;}
+.exp-track{width:80px;height:5px;background:var(--surface3);border-radius:3px;overflow:hidden;}
+.exp-fill{height:100%;border-radius:3px;background:var(--indigo2);}
+
+</style>
+</head>
+<body>
+<nav class="top-nav">
+  <div class="nav-brand">⚽ <span>Olivier's</span> Guide v6</div>
+  <button class="nav-tab active" onclick="showPage('explore',this)">Explore Schools</button>
+  <button class="nav-tab" onclick="showPage('compare',this)">Compare <span class="compare-count" id="ccount">0</span></button>
+  <button class="nav-tab" onclick="showPage('pipeline',this)">Pro Pipeline</button>
+  <button class="nav-tab" onclick="showPage('alignment',this)">ACU Alignment</button>
+  <button class="nav-tab" onclick="showPage('pathways',this)">Pathways</button>
+  <button class="nav-tab" onclick="showPage('contacts',this)">Coach Contacts</button>
+  <button class="nav-tab" onclick="showPage('conferences',this)">Conferences</button>
+  <button class="nav-tab" onclick="showPage('coaches',this)">Coaches & Staff</button>
+  <button class="nav-tab" onclick="showPage('finance',this)">💰 Financial Model</button>
+</nav>
+
+<div class="modal-overlay hidden" id="modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div><h2 id="modal-title">University</h2><p id="modal-sub">Location · Division</p></div>
+      <button class="close-btn" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<!-- EXPLORE PAGE -->
+<div class="page active" id="page-explore">
+  <div class="compact-header">
+    <div class="ch-left">
+      <div class="ch-title">US College Soccer <span>&</span> Exercise Science Guide</div>
+      <div class="ch-badge">Platform Sports Management · Sydney, AUS · v12.1</div>
+    </div>
+    <div class="ch-stats">
+      <div class="ch-stat"><span class="ch-num">24</span><span class="ch-lbl">Schools</span></div>
+      <div class="ch-stat"><span class="ch-num">6</span><span class="ch-lbl">Divisions</span></div>
+      <div class="ch-stat"><span class="ch-num">14</span><span class="ch-lbl">Conferences</span></div>
+      <div class="ch-stat"><span class="ch-num">8</span><span class="ch-lbl">Top Picks</span></div>
+    </div>
+    <div class="ch-profile">
+      <div class="ch-p-item"><span class="ch-p-l">Athlete</span><span class="ch-p-v">Olivier · CM 8/10</span></div>
+      <div class="ch-p-item"><span class="ch-p-l">GPA</span><span class="ch-p-v" style="color:var(--amber)">2.8 progressing</span></div>
+      <div class="ch-p-item"><span class="ch-p-l">Goal</span><span class="ch-p-v">DPT / Chiro</span></div>
+      <div class="ch-p-item"><span class="ch-p-l">Lifestyle</span><span class="ch-p-v">Warm + City</span></div>
+      <div class="ch-p-item"><span class="ch-p-l">AU Degree</span><span class="ch-p-v">BESS ACU (16 units)</span></div>
+    </div>
+  </div>
+  <div class="atar-panel">
+    <div class="atar-panel-top">
+      <div class="atar-title">ATAR → US GPA Eligibility Filter</div>
+      <div class="atar-summary">
+        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#059669"></div><span style="color:rgba(255,255,255,.7)" id="atar-count-eligible">— eligible</span></div>
+        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#d97706"></div><span style="color:rgba(255,255,255,.7)" id="atar-count-borderline">— borderline</span></div>
+        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#e11d48"></div><span style="color:rgba(255,255,255,.7)" id="atar-count-below">— below min</span></div>
+      </div>
+    </div>
+    <div class="atar-slider-row">
+      <div class="atar-slider-wrap">
+        <input type="range" id="atar-slider" min="40" max="99" value="70" oninput="onAtarSlide()">
+        <div class="atar-tick-row">
+          <span class="atar-tick">40</span>
+          <span class="atar-tick">50</span>
+          <span class="atar-tick">60</span>
+          <span class="atar-tick">70</span>
+          <span class="atar-tick">80</span>
+          <span class="atar-tick">90</span>
+          <span class="atar-tick">99</span>
+        </div>
+      </div>
+      <div class="atar-readout">
+        <div class="ar-atar" id="atar-display">70</div>
+        <div class="ar-label">ATAR</div>
+        <div class="ar-gpa" id="gpa-display">2.8</div>
+        <div class="ar-gpa-label">US GPA equiv.</div>
+      </div>
+    </div>
+  </div>
+  <div class="filter-panel" id="filter-panel">
+    <div class="filter-panel-header">
+      <span id="filter-active-summary" style="font-size:12px;color:var(--muted)">Showing all <strong>24</strong> schools</span>
+      <div style="display:flex;gap:6px;align-items:center">
+        <button class="filter-clear-btn" id="filter-clear-btn" onclick="clearAllFilters()" style="display:none">✕ Clear filters</button>
+        <button class="filter-toggle-btn" id="filter-toggle-btn" onclick="toggleFilterPanel()">▼ Show filters</button>
+      </div>
+    </div>
+    <div class="filter-panel-body" id="filter-panel-body" style="display:none">
+      <div class="filter-row">
+        <div class="fg-label">Division</div>
+        <button class="fchip" data-filter="div" data-val="D1" onclick="toggleFilter(this)">D1</button>
+        <button class="fchip" data-filter="div" data-val="D2" onclick="toggleFilter(this)">D2</button>
+        <button class="fchip" data-filter="div" data-val="D3" onclick="toggleFilter(this)">D3</button>
+        <button class="fchip" data-filter="div" data-val="NAIA" onclick="toggleFilter(this)">NAIA</button>
+        <button class="fchip" data-filter="div" data-val="JUCO" onclick="toggleFilter(this)">JUCO</button>
+        <button class="fchip" data-filter="div" data-val="IVY" onclick="toggleFilter(this)">Ivy</button>
+      </div>
+      <div class="filter-row">
+        <div class="fg-label">Region</div>
+        <button class="fchip" data-filter="region" data-val="west" onclick="toggleFilter(this)">🌊 West</button>
+        <button class="fchip" data-filter="region" data-val="east" onclick="toggleFilter(this)">🗽 East</button>
+        <button class="fchip" data-filter="region" data-val="south" onclick="toggleFilter(this)">☀ Florida</button>
+        <button class="fchip" data-filter="region" data-val="texas" onclick="toggleFilter(this)">🤠 Texas</button>
+        <button class="fchip" data-filter="warm" data-val="true" onclick="toggleFilter(this)">☀ Warm</button>
+        <button class="fchip" data-filter="city" data-val="true" onclick="toggleFilter(this)">🏙 City</button>
+      </div>
+      <div class="filter-row">
+        <div class="fg-label">Facilities</div>
+        <button class="fchip" data-filter="facrating" data-val="elite" onclick="toggleFilter(this)">🏆 Elite</button>
+        <button class="fchip" data-filter="facrating" data-val="excellent" onclick="toggleFilter(this)">⭐ Excellent</button>
+        <button class="fchip" data-filter="facrating" data-val="verygood" onclick="toggleFilter(this)">✅ Very Good</button>
+        <button class="fchip" data-filter="facrating" data-val="good" onclick="toggleFilter(this)">👍 Good</button>
+        <button class="fchip" data-filter="facrating" data-val="solid" onclick="toggleFilter(this)">📋 Solid</button>
+      </div>
+      <div class="filter-row">
+        <div class="fg-label">Special</div>
+        <button class="fchip" data-filter="top" data-val="true" onclick="toggleFilter(this)">★ Top Picks</button>
+        <button class="fchip" data-filter="acualign" data-val="full" onclick="toggleFilter(this)">🎓 Full ACU (14+)</button>
+        <button class="fchip" data-filter="acualign" data-val="strong" onclick="toggleFilter(this)">🎓 Strong ACU (10+)</button>
+      </div>
+    </div>
+  </div>
+  <div id="cards-container"></div>
+</div>
+
+<!-- COMPARE PAGE -->
+<div class="page" id="page-compare">
+  <div style="margin-bottom:1.5rem;"><div class="section-head"><h2>Side-by-Side Comparison</h2></div><p style="font-size:13px;color:var(--muted)">Select up to 4 schools from Explore and click "+ Compare".</p></div>
+  <div id="compare-content"><div class="compare-empty"><h3>No schools selected yet</h3><p>Go to <strong>Explore Schools</strong> and click "+ Compare".</p></div></div>
+</div>
+
+<!-- PRO PIPELINE PAGE -->
+<div class="page" id="page-pipeline">
+  <div class="section-head"><h2>Professional Player Pipeline Rankings</h2></div>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">MLS SuperDraft picks 2022–2026 plus direct signings. The strongest indicator of a program's ability to develop players to the professional level.</p>
+  <div class="section-head"><h2>All-time NCAA Championship Winners</h2></div>
+  <div style="overflow-x:auto;margin-bottom:2rem;"><table class="pro-league-table">
+    <thead><tr><th>Rank</th><th>University</th><th>Div</th><th>NCAA Titles</th><th>Championship Years</th><th>Last Title</th></tr></thead>
+    <tbody>
+      <tr><td><span class="rank-medal medal-1">1</span>Indiana</td><td><span class="dbadge d-D1">D1 Big Ten</span></td><td>🏆 8</td><td>1982, 1983, 1988, 1998, 1999, 2003, 2004, 2012</td><td>2012 — 39 consecutive NCAA appearances (record)</td></tr>
+      <tr><td><span class="rank-medal medal-2">2</span>Virginia (UVA)</td><td><span class="dbadge d-D1">D1 ACC</span></td><td>🏆 7</td><td>1989*, 1991, 1992, 1993, 1994, 2009, 2014</td><td>2014 — most titles since 1990, produced Claudio Reyna, John Harkes</td></tr>
+      <tr><td><span class="rank-medal medal-3">3</span>UCLA</td><td><span class="dbadge d-D1">D1 Big Ten</span></td><td>🏆 4</td><td>1985, 1990, 1997, 2002</td><td>2002 — Pac-12 Champs 2023, Big Ten Tourn 2024</td></tr>
+      <tr><td>4</td><td>Wake Forest</td><td><span class="dbadge d-D1">D1 ACC</span></td><td>🏆 1</td><td>2007</td><td>2007 — 4 MLS picks in 2025 draft alone</td></tr>
+      <tr><td>5</td><td>UCSB</td><td><span class="dbadge d-D1">D1 Big West</span></td><td>🏆 1</td><td>2006</td><td>2006 — Manu Duah #1 overall 2025 MLS pick</td></tr>
+      <tr><td>6</td><td>SMU</td><td><span class="dbadge d-D1">D1 ACC</span></td><td>ACC Tourn 2025</td><td>2025 ACC Tournament Champions (first ever)</td><td>2025 — Elite Eight 2024, ranked #5 nationally</td></tr>
+      <tr><td>7</td><td>Princeton</td><td><span class="dbadge d-IVY">D1 Ivy</span></td><td>Ivy League titles</td><td>1999, 2001, 2010, 2014, 2018, 2021, 2024, 2025</td><td>2025 — undefeated Ivy League + Tournament double (first ever)</td></tr>
+      <tr><td>8</td><td>Barry University</td><td><span class="dbadge d-D2">D2 SSC</span></td><td>🏆 4 D2</td><td>1984, 1986, 1993, 2001</td><td>2001 — most decorated D2 program all-time</td></tr>
+      <tr><td>9</td><td>PBA</td><td><span class="dbadge d-D2">D2 SSC</span></td><td>SSC Champs</td><td>2024 SSC Tournament, 2025 SSC Regular Season</td><td>2025 — ranked #2 nationally, 4 SSC titles under previous coaching era</td></tr>
+    </tbody>
+  </table></div>
+  <div class="section-head"><h2>MLS SuperDraft Picks by Program (2022–2026)</h2></div>
+  <div style="overflow-x:auto;margin-bottom:2rem;"><table class="pro-league-table">
+    <thead><tr><th>Rank</th><th>University</th><th>MLS Picks 5yr</th><th>Notable Pro Players</th><th>All-Time Pipeline</th></tr></thead>
+    <tbody>
+      <tr><td><span class="rank-medal medal-1">1</span>Virginia (UVA)</td><td>6+</td><td>Nick Dang (2025 R2), AJ Smith (2025 R3), Aidan Morris (2021 Columbus Crew, USMNT)</td><td>Top 5 all-time MLS producers</td></tr>
+      <tr><td><span class="rank-medal medal-2">2</span>Indiana</td><td>5+</td><td>Jansen Miller (2025 R1 SKC), Collins Oduro (2025 R2), Samuel Sarver (2025 R2), Aidan Morris (2021)</td><td>Top 10 all-time, most decorated program history</td></tr>
+      <tr><td><span class="rank-medal medal-3">3</span>SMU</td><td>5+</td><td>Jaylinn Mitchell (2026 R1), Cesar Ruvalcaba (2025 R2), Garrett McLaughlin (#8 overall 2020), Eddie Munjoma (Hermann Trophy, FC Dallas HGP)</td><td>ACC elite pipeline, FC Dallas connections</td></tr>
+      <tr><td>4</td><td>UCLA</td><td>4</td><td>Nicholas Cavallo (2025 R3), Grayson Doody (2024 R1 CF Montréal), Ahmed Longmire (#10 overall 2022)</td><td>Top 8 all-time, LA MLS academy connections</td></tr>
+      <tr><td>5</td><td>Wake Forest</td><td>4</td><td>Travis Smith Jr. (2025 R1 Chicago), Liam O'Gara (2025 R3), Trace Alphin (2025 R2)</td><td>4 picks in single 2025 draft — highest rate in ACC</td></tr>
+      <tr><td>6</td><td>FIU</td><td>3</td><td>Michael Appiah (2025 R3 Inter Miami), Stephen Afrifa (#8 overall 2022 SKC)</td><td>14 MLS draft picks all-time, Inter Miami connections</td></tr>
+      <tr><td>7</td><td>UCSB</td><td>3</td><td>Manu Duah (#1 overall 2025 — highest ever Big West pick)</td><td>Strong Big West pipeline</td></tr>
+      <tr><td>8</td><td>USF</td><td>3</td><td>Jahiem Wickham (2026 R3), Pedro Faife (2024 USL)</td><td>Kiefer returning — rebuilding to AAC prominence</td></tr>
+      <tr><td>9</td><td>Princeton</td><td>2</td><td>Kevin O'Toole (2022 R2 NYCFC), Barlow has coached 5 MLS players</td><td>Ivy pipeline grows with 2024–2025 surge in form</td></tr>
+      <tr><td>10</td><td>Barry/Lynn/PBA/NSU</td><td>USL+intl</td><td>Multiple USL L1/L2 + European pro signings annually</td><td>D2 SSC Florida programs — best non-MLS pro pipelines</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<!-- ACU ALIGNMENT PAGE -->
+<div class="page" id="page-alignment">
+  <div class="section-head"><h2>ACU BESS Degree Alignment — How US Programs Map to Olivier's Curriculum</h2></div>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">Olivier's ACU Bachelor of Exercise and Sports Science (BESS) has 16 specified units. Each US program is rated on how many of those units have a direct equivalent. A higher alignment score means less need to take extra courses and stronger WES credit recognition potential.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:2rem;">
+    <div style="background:var(--surface);border:1px solid var(--emerald);border-radius:12px;padding:1.1rem 1.25rem;"><div style="font-size:11px;font-weight:700;color:var(--emerald);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Full alignment (14–16/16 units)</div><p style="font-size:13px;color:var(--muted);line-height:1.7">UF (APK), Indiana, PBA, Barry, Virginia, USF. These programs cover anatomy, exercise physiology, biomechanics, motor control, resistance training, sport psychology, research methods, and internship — all matching Olivier's ACU units directly.</p></div>
+    <div style="background:var(--surface);border:1px solid var(--sky);border-radius:12px;padding:1.1rem 1.25rem;"><div style="font-size:11px;font-weight:700;color:var(--sky);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Strong alignment (10–13/16 units)</div><p style="font-size:13px;color:var(--muted);line-height:1.7">UCLA, UCSB, Wake Forest, SMU, FIU, St Edward's, Chapman, Cal State LA, Lynn, Keiser. Core exercise science covered but motor development and/or motor control may be split across courses.</p></div>
+    <div style="background:var(--surface);border:1px solid var(--amber);border-radius:12px;padding:1.1rem 1.25rem;"><div style="font-size:11px;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Partial alignment (6–9/16 units)</div><p style="font-size:13px;color:var(--muted);line-height:1.7">Princeton, Yale, Charleston, St John's, Oklahoma City. Core science present but the degree structure differs significantly — pre-health biology pathway rather than a dedicated exercise science curriculum.</p></div>
+  </div>
+  <div class="section-head"><h2>ACU Units — Which US Programs Cover Each</h2></div>
+  <div style="overflow-x:auto;"><table class="pro-league-table">
+    <thead><tr><th>ACU Unit</th><th>US Equivalent Name</th><th>Best Match Programs</th><th>Coverage</th></tr></thead>
+    <tbody>
+      <tr><td>ANAT100 — Anatomical Foundations</td><td>Human/Applied Anatomy</td><td>All programs</td><td><span class="align-pill align-full">Full — universal</span></td></tr>
+      <tr><td>EXSC222 — Functional Anatomy</td><td>Functional/Applied Anatomy</td><td>UF, Indiana, PBA, Barry, Virginia, USF</td><td><span class="align-pill align-full">Full at D1/top D2</span></td></tr>
+      <tr><td>BIOL125 — Human Biology 1</td><td>General/Human Biology</td><td>All programs</td><td><span class="align-pill align-full">Full — universal prerequisite</span></td></tr>
+      <tr><td>EXSC225 — Physiological Bases of Exercise</td><td>Introduction to Exercise Physiology</td><td>All programs</td><td><span class="align-pill align-full">Full — universal</span></td></tr>
+      <tr><td>EXSC322 — Exercise Physiology: Adaptation</td><td>Advanced Exercise Physiology</td><td>UF, Indiana, PBA, Barry, Virginia, USF, FIU</td><td><span class="align-pill align-full">Full at D1/strong D2</span></td></tr>
+      <tr><td>EXSC394 — Exercise Prescription</td><td>Exercise Prescription / Clinical Ex Phys</td><td>UF, PBA (explicit Pre-PT), Indiana, Barry, USF</td><td><span class="align-pill align-full">Full at pre-PT programs</span></td></tr>
+      <tr><td>EXSC224 — Mechanical Bases of Exercise</td><td>Introduction to Biomechanics</td><td>All programs</td><td><span class="align-pill align-full">Full — universal</span></td></tr>
+      <tr><td>EXSC321 — Biomechanics</td><td>Advanced/Applied Biomechanics</td><td>UF, Indiana, Virginia, Barry, PBA, USF, FIU</td><td><span class="align-pill align-full">Full at D1/strong D2</span></td></tr>
+      <tr><td>EXSC204 — Exercise Prescription & Delivery</td><td>Exercise Testing and Prescription</td><td>UF, PBA, Indiana, Barry, Virginia, USF</td><td><span class="align-pill align-strong">Strong — near identical</span></td></tr>
+      <tr><td>EXSC216 — Resistance Training</td><td>Strength & Conditioning / Resistance Training</td><td>Indiana, USF, PBA, Barry, St Edward's</td><td><span class="align-pill align-strong">Strong — near identical</span></td></tr>
+      <tr><td>EXSC199 — Psychology of Sport</td><td>Sport Psychology</td><td>All programs</td><td><span class="align-pill align-full">Full — universal</span></td></tr>
+      <tr><td>EXSC296 — Health & Exercise Psychology</td><td>Exercise & Health Psychology</td><td>UF, Indiana, PBA, Barry, Virginia</td><td><span class="align-pill align-strong">Strong at major programs</span></td></tr>
+      <tr><td>EXSC187 — Growth, Motor Development & Ageing</td><td>Lifespan Motor Development</td><td>Indiana, UF, Virginia</td><td><span class="align-pill" style="background:var(--amber3);color:var(--amber)">Partial — often split</span></td></tr>
+      <tr><td>EXSC230 — Motor Control & Learning</td><td>Motor Control & Learning / Neuromechanics</td><td>Indiana (9 labs), UF, Virginia</td><td><span class="align-pill" style="background:var(--amber3);color:var(--amber)">Partial — rare standalone</span></td></tr>
+      <tr><td>EXSC122 — Research & Ethics</td><td>Research Methods in Kinesiology</td><td>All accredited programs</td><td><span class="align-pill align-strong">Strong — required everywhere</span></td></tr>
+      <tr><td>EXSC398 — Professional Experience (140hrs)</td><td>Internship / Clinical Practicum</td><td>UF (12cr mandatory), PBA (clinical network), Indiana</td><td><span class="align-pill align-full">Full at UF, PBA, Indiana</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:var(--indigo3);border-radius:12px;padding:1.1rem 1.25rem;margin-top:1.5rem;font-size:13px;color:#374151;line-height:1.75;border:1px solid #c7d2fe;"><strong style="color:var(--navy)">WES Credit Recognition tip:</strong> When Olivier transfers mid-degree, BIOL125, ANAT100, EXSC225, and EXSC322 are the four units most likely to receive direct credit transfers (saving approximately one semester). Platform Sports Management should coordinate a WES evaluation before finalising the shortlist. Most competitive DPT programs require a minimum 3.0 GPA — Olivier should plan to raise his GPA steadily throughout his US degree.</div>
+</div>
+
+<!-- PATHWAYS PAGE -->
+<div class="page" id="page-pathways">
+  <div class="section-head"><h2>Recommended Pathways for Olivier</h2></div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:2rem;">
+    <div class="path-card" style="border-color:#c7d2fe;"><div style="font-size:11px;font-weight:700;color:var(--indigo);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Path A — Aim High D1</div><h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.65rem;">Top D1 Target</h3><p style="font-size:13px;color:var(--muted);line-height:1.7">Target: UCLA, USF, UCSB, Virginia, SMU, FIU. Requires elite highlights and improving academic standing. Best if Olivier's videos demonstrate high-level ability against quality opposition.</p><div style="font-size:12px;color:var(--hint);border-top:1px solid var(--border);padding-top:.65rem;margin-top:.5rem">GPA minimum: 2.3 NCAA core. Aim 3.0+ for merit aid stacking.</div></div>
+    <div class="path-card" style="border-color:#bae6fd;"><div style="font-size:11px;font-weight:700;color:var(--sky);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Path B — Smart Fit D2</div><h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.65rem;">D2 / NAIA Best Match</h3><p style="font-size:13px;color:var(--muted);line-height:1.7">Target: PBA (West Palm Beach), Lynn (Boca Raton), Barry (Miami), Nova Southeastern (Fort Lauderdale), St Edward's (Austin). Best overall balance of soccer, academics, scholarship, and climate.</p><div style="font-size:12px;color:var(--hint);border-top:1px solid var(--border);padding-top:.65rem;margin-top:.5rem">Athletic + academic aid can combine for major cost reduction.</div></div>
+    <div class="path-card" style="border-color:#a7f3d0;"><div style="font-size:11px;font-weight:700;color:var(--emerald);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Path C — Ivy League</div><h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.65rem;">Princeton / Yale</h3><p style="font-size:13px;color:var(--muted);line-height:1.7">No athletic scholarships — need-based aid only (can cover 100% of costs for qualifying families). GPA 2.8 may be a barrier. Princeton won the 2024 AND 2025 Ivy tournaments — program is surging. Elite academic-sports combination.</p><div style="font-size:12px;color:var(--gold);border-top:1px solid var(--border);padding-top:.65rem;margin-top:.5rem">⚠ Admission is highly selective — GPA improvement essential.</div></div>
+    <div class="path-card" style="border-color:#fde68a;"><div style="font-size:11px;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Path D — JUCO Transfer</div><h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.65rem;">2yr + Transfer</h3><p style="font-size:13px;color:var(--muted);line-height:1.7">Santa Monica College (LA) → UCLA/UCSB. 2 years at ~$9k/yr. Boost GPA, build US soccer resume. Most proven transfer pipeline in California — SMC is 100m from the beach.</p><div style="font-size:12px;color:var(--hint);border-top:1px solid var(--border);padding-top:.65rem;margin-top:.5rem">Near-zero financial risk. Build to 3.3+ GPA then step up.</div></div>
+  </div>
+  <div class="section-head"><h2>Questions to Ask Every Coach</h2></div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.75rem;margin-bottom:2rem;">
+    <div class="q-card">"How many central midfielders are returning and where does an 8/10 fit into your system in year one?"</div>
+    <div class="q-card">"What formation do you play and what is the role of the 8 in your system specifically?"</div>
+    <div class="q-card">"What does a typical scholarship package look like for an Australian student-athlete?"</div>
+    <div class="q-card">"Is there a direct articulation agreement with a DPT program for Exercise Science graduates?"</div>
+    <div class="q-card">"How many players from this program have signed professional contracts in the last 5 years?"</div>
+    <div class="q-card">"Can I visit campus during a training session and speak with current international students?"</div>
+    <div class="q-card">"Does the Exercise Science department work directly with the soccer team for sport science support?"</div>
+    <div class="q-card">"How are WES-evaluated Australian unit credits typically applied toward the degree?"</div>
+  </div>
+</div>
+
+<!-- CONTACTS PAGE -->
+<div class="page" id="page-contacts">
+  <div class="section-head"><h2>Coach Contacts &amp; Recruiting Info</h2></div>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">All contact should be coordinated through Platform Sports Management — agent introductions carry significantly more weight than cold emails.</p>
+  <div id="contacts-list"></div>
+</div>
+<!-- FINANCIAL MODEL PAGE -->
+<div class="page" id="page-finance">
+  <div class="fin-hero">
+    <h2>💰 Scholarship & Financial Model</h2>
+    <p>Model the real annual and 4-year cost for any school based on athletic scholarship %, academic scholarship, and living expenses. Understand the difference between full, partial, and no scholarship scenarios — in AUD and USD.</p>
+  </div>
+  <div class="aud-notice">⚠ Exchange rate used: 1 USD = 1.55 AUD (approximate). Update in the controls below if the rate has changed.</div>
+  <div class="fin-explainer">
+    <div class="fin-exp-card"><h4 style="color:var(--indigo)">What is Athletic Scholarship?</h4><p>In D1 and D2, coaches have a scholarship "pool" (9.9 equivalencies for D1 soccer; 9.0 for D2). They split this across their roster. A "full athletic scholarship" covers tuition, room, board, and fees. In practice, international players often receive 25–75% athletic aid. NAIA has no cap. D3 and Ivy League = zero athletic scholarships.</p></div>
+    <div class="fin-exp-card"><h4 style="color:var(--emerald)">What is Academic Scholarship?</h4><p>Separate from athletic aid — awarded for GPA, SAT/ACT, and academic achievement. Can stack on top of athletic scholarships. For Olivier at GPA 2.8, academic merit aid is limited but available at some schools (typically requires 3.0+). As GPA improves, more academic aid becomes accessible.</p></div>
+    <div class="fin-exp-card"><h4 style="color:var(--amber)">What are Living Expenses?</h4><p>Beyond tuition, room & board: flights home (2× per year ~$3,000–4,000 AUD), personal spending, phone, books, health insurance. These are NOT covered by scholarships and must be budgeted separately. Platform Sports Management should clarify what exactly each scholarship covers (tuition-only vs full COA).</p></div>
+    <div class="fin-exp-card"><h4 style="color:var(--rose)">AUD vs USD</h4><p>All school costs are in USD. The AUD amount fluctuates with exchange rates — budgeting in AUD requires a buffer. A $30,000 USD annual cost becomes ~$46,500 AUD at current rates. Use the exchange rate slider to see impact of rate changes on your budget.</p></div>
+  </div>
+
+  <div class="section-head"><h2>Step 1 — Select a School to Model</h2></div>
+  <div class="fin-school-selector" id="fin-school-selector"></div>
+
+  <div id="fin-model-wrapper" style="display:none">
+    <div class="section-head"><h2 id="fin-school-title">Financial Model</h2></div>
+    <div class="scenario-tabs">
+      <div style="font-size:11px;color:var(--hint);font-weight:700;text-transform:uppercase;letter-spacing:.08em;align-self:center;margin-right:4px">Quick scenarios:</div>
+      <button class="sc-tab" onclick="applyScenario('none',this)">❌ No Scholarship</button>
+      <button class="sc-tab" onclick="applyScenario('ath25',this)">25% Athletic</button>
+      <button class="sc-tab" onclick="applyScenario('ath50',this)">50% Athletic Only</button>
+      <button class="sc-tab" onclick="applyScenario('acad50',this)">50% Academic Only</button>
+      <button class="sc-tab active" onclick="applyScenario('full',this)">💎 Full Ride (50+50)</button>
+      <button class="sc-tab" onclick="applyScenario('partial',this)">⚖️ Partial (25+25)</button>
+    </div>
+    <div class="fin-model-area">
+      <div class="fin-controls">
+        <h3>⚙️ Adjust Scholarship & Costs</h3>
+        <div style="background:var(--indigo3);border-radius:9px;padding:8px 11px;margin-bottom:1rem;font-size:12px;color:#374151;border:1px solid #c7d2fe">
+          <strong style="color:var(--navy)">How it works:</strong> Each slider covers up to 50% of total annual cost. Athletic + Academic combined = up to 100% (full ride). Slide both to max for a full scholarship scenario.
+        </div>
+        <div class="slider-group">
+          <label>🏆 Athletic Scholarship <span id="val-athletic">50%</span> of cost</label>
+          <input type="range" id="sl-athletic" min="0" max="50" value="50" oninput="updateFinModel()">
+          <div class="slider-sublabel"><span>0% (no athletic aid)</span><span>50% (max athletic)</span></div>
+        </div>
+        <div style="display:flex;justify-content:center;margin:-4px 0 8px;font-size:11px;color:var(--hint);font-weight:600">+ combined =</div>
+        <div class="slider-group">
+          <label>🎓 Academic Scholarship <span id="val-academic">0%</span> of cost</label>
+          <input type="range" id="sl-academic" min="0" max="50" value="0" step="1" oninput="updateFinModel()">
+          <div class="slider-sublabel"><span>0% (no academic aid)</span><span>50% (max academic)</span></div>
+        </div>
+        <div id="combined-aid-display" style="background:var(--surface2);border-radius:8px;padding:8px 12px;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;border:1px solid var(--border)">
+          <span style="font-size:12px;font-weight:600;color:var(--muted)">Combined Aid:</span>
+          <span id="combined-aid-pct" style="font-size:1.4rem;font-weight:800;color:var(--indigo)">50%</span>
+          <span id="combined-aid-usd" style="font-size:12px;font-weight:700;color:var(--emerald)">saving $0</span>
+        </div>
+        <div class="extras-section">
+          <h4>Additional Annual Costs (USD)</h4>
+          <div class="extra-row"><label>Flights home (2× / yr)</label><input type="number" id="ex-flights" value="2200" step="100" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>Personal spending</label><input type="number" id="ex-personal" value="3000" step="100" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>Books & supplies</label><input type="number" id="ex-books" value="800" step="100" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>Health insurance</label><input type="number" id="ex-health" value="1200" step="100" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>US mobile / sim</label><input type="number" id="ex-mobile" value="500" step="100" oninput="updateFinModel()"></div>
+        </div>
+        <div class="slider-group" style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">
+          <label>AUD/USD Exchange Rate <span id="val-fx">1.55</span></label>
+          <input type="range" id="sl-fx" min="1.30" max="1.80" step="0.01" value="1.55" oninput="updateFinModel()">
+          <div class="slider-sublabel"><span>1.30 AUD (strong AUD)</span><span>1.80 AUD (weak AUD)</span></div>
+        </div>
+        <div id="fin-aid-note" class="fin-tip" style="margin-top:.75rem"></div>
+      </div>
+      <div class="fin-results">
+        <h3>📊 Annual Cost Breakdown</h3>
+        <div id="fin-breakdown-content"></div>
+        <div class="fin-4yr" id="fin-4yr-block"></div>
+        <div class="fin-tip" id="fin-tips"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head" style="margin-top:1rem"><h2>All-Schools Comparison — Annual Net Cost at 50% Athletic Scholarship</h2></div>
+  <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">50% athletic scholarship only (academic slider at 0). A realistic partial-scholarship scenario. Full ride = both sliders at max (50+50=100%). Click a bar to model in detail above.</p>
+  <div id="fin-comparison-bars"></div>
+</div>
+
+<div class="page" id="page-conferences">
+  <div class="section-head"><h2>Conference Guide — Structure, Rankings & Olivier's Relevance</h2></div>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">Understanding conference structure helps Olivier target the right level. Schools highlighted in <span style="background:var(--indigo3);color:var(--indigo);font-weight:700;padding:1px 6px;border-radius:4px">indigo</span> are in this guide. Conference prestige, scholarship rules, and pro pipeline vary dramatically across divisions.</p>
+  <div class="section-head"><h2>Overall Conference Prestige Ranking — Men's Soccer</h2></div>
+  <div style="overflow-x:auto;margin-bottom:2.5rem;">
+    <table class="ranking-table">
+      <thead><tr><th>Rank</th><th>Conference</th><th>Division</th><th>Programs in Guide</th><th>MLS Pipeline (5yr)</th><th>Scholarships</th><th>Relevance for Olivier</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rk-num rk-elite">1</span>ACC</td><td>Atlantic Coast</td><td><span class="dbadge d-D1">D1</span></td><td>Virginia, Wake Forest, SMU, FIU (leaving 2025)</td><td>★★★★★ Elite</td><td>Up to 9.9 equivalencies</td><td>Hardest to access; highest pro rate; SMU and FIU are realistic targets</td></tr>
+        <tr><td><span class="rk-num rk-elite">2</span>Big Ten</td><td>Big Ten (Midwest/West)</td><td><span class="dbadge d-D1">D1</span></td><td>UCLA, Indiana</td><td>★★★★★ Elite</td><td>Up to 9.9 equivalencies</td><td>Indiana is #1 all-time; UCLA is #1 West Coast. Both highly competitive for spots</td></tr>
+        <tr><td><span class="rk-num rk-elite">3</span>Big East</td><td>Big East (East)</td><td><span class="dbadge d-D1">D1</span></td><td>St. John's</td><td>★★★★ Very Strong</td><td>Up to 9.9 equivalencies</td><td>Georgetown, Creighton dominant. St John's is competitive; NYC clinical access unique</td></tr>
+        <tr><td><span class="rk-num rk-strong">4</span>SEC</td><td>Southeastern Conference</td><td><span class="dbadge d-D1">D1</span></td><td>UF (Florida)</td><td>★★★ Strong</td><td>Up to 9.9 equivalencies</td><td>Soccer is secondary to football in SEC culture; UF APK degree is the draw</td></tr>
+        <tr><td><span class="rk-num rk-strong">5</span>AAC</td><td>American Athletic</td><td><span class="dbadge d-D1">D1</span></td><td>USF, FIU (joins 2026)</td><td>★★★★ Strong</td><td>Up to 9.9 equivalencies</td><td>USF and FIU are both AAC powers. More accessible than ACC/Big Ten for internationals</td></tr>
+        <tr><td><span class="rk-num rk-strong">6</span>Big West</td><td>Big West (West Coast)</td><td><span class="dbadge d-D1">D1</span></td><td>UCSB</td><td>★★★ Solid</td><td>Up to 9.9 equivalencies</td><td>UCSB won Big West 2024. Manu Duah #1 overall. Good Pacific pipeline</td></tr>
+        <tr><td><span class="rk-num rk-strong">7</span>Ivy League</td><td>Ivy League (East)</td><td><span class="dbadge d-IVY">IVY</span></td><td>Princeton, Yale</td><td>★★ Growing</td><td>Zero athletic scholarships</td><td>Princeton surging — 2024+2025 tournament doubles. No scholarships = need-based aid only</td></tr>
+        <tr><td><span class="rk-num rk-strong">8</span>CAA</td><td>Colonial Athletic</td><td><span class="dbadge d-D1">D1</span></td><td>Charleston</td><td>★★ Developing</td><td>Up to 9.9 equivalencies</td><td>Lower-profile D1; Charleston Battery (USL) connection is the pro draw</td></tr>
+        <tr><td><span class="rk-num rk-solid">9</span>SSC</td><td>Sunshine State (Florida)</td><td><span class="dbadge d-D2">D2</span></td><td>PBA, Lynn, Barry, Nova SE</td><td>★★★ USL/International</td><td>Up to 9 equivalencies</td><td>Best D2 conference nationally. PBA ranked #2 nationally 2025. Florida climate matches Sydney</td></tr>
+        <tr><td><span class="rk-num rk-solid">10</span>LSC</td><td>Lone Star Conference (Texas)</td><td><span class="dbadge d-D2">D2</span></td><td>St Edward's</td><td>★★ Regional</td><td>Up to 9 equivalencies</td><td>Austin FC connection unique. Diego Bocanegra system suits 8/10 midfielder</td></tr>
+        <tr><td><span class="rk-num rk-solid">11</span>CCAA</td><td>California Collegiate Athletic</td><td><span class="dbadge d-D2">D2</span></td><td>Cal State LA</td><td>★ Limited</td><td>Up to 9 equivalencies</td><td>Most affordable LA option. Strong academic environment for PT pathway</td></tr>
+        <tr><td><span class="rk-num rk-solid">12</span>SAC</td><td>Sooner Athletic (NAIA)</td><td><span class="dbadge d-NAIA">NAIA</span></td><td>Oklahoma City</td><td>★★ USL/A-League</td><td>Up to equivalent of full ride</td><td>Brian Finnegan has direct Australian player connections. Generous scholarships</td></tr>
+        <tr><td><span class="rk-num rk-dev">13</span>Sun Conference</td><td>Sun Conference (NAIA Florida)</td><td><span class="dbadge d-NAIA">NAIA</span></td><td>Keiser</td><td>★ Clinical focus</td><td>Up to equivalent of full ride</td><td>Health sciences pathway is the priority over pro soccer at Keiser</td></tr>
+        <tr><td><span class="rk-num rk-dev">14</span>SCIAC</td><td>Southern CA Intercollegiate (D3)</td><td><span class="dbadge d-D3">D3</span></td><td>Chapman</td><td>None (D3)</td><td>Zero athletic scholarships</td><td>Chapman's Pre-PT required course KIN405 is unique value. Academic-first choice</td></tr>
+        <tr><td><span class="rk-num rk-dev">15</span>CCCAA/NJCAA</td><td>Junior College Conferences</td><td><span class="dbadge d-JUCO">JUCO</span></td><td>Santa Monica, Miami Dade</td><td>Transfer pathway</td><td>Athletic grants + need</td><td>2-year stepping stones. SMC → UCLA proven pipeline. Miami Dade → Barry/FIU proven</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="conferences-container"></div>
+</div>
+
+<!-- COACHES & STAFF PAGE -->
+<div class="page" id="page-coaches">
+  <div class="section-head"><h2>Head Coaches & Staff — Rankings, Backgrounds & Fit Assessment</h2></div>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">Every head coach ranked by overall coaching quality for Olivier's development as an 8/10 central midfielder targeting a PT career. Includes assistant coach backgrounds where known. All contact via Platform Sports Management.</p>
+  <div class="section-head"><h2>Head Coach Rankings — Best for Olivier's Development</h2></div>
+  <div style="overflow-x:auto;margin-bottom:2.5rem;">
+    <table class="head-coach-rank-table">
+      <thead><tr><th>Rank</th><th>Coach</th><th>School</th><th>Div</th><th>Years HC</th><th>Career Record</th><th>MLS Players Dev</th><th>Why Good for Olivier</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rk-num rk-elite">1</span></td><td><strong>George Gelnovatch</strong></td><td>Virginia (UVA)</td><td><span class="dbadge d-D1">D1 ACC</span></td><td>30+ yrs</td><td>550+ W, 9 College Cups</td><td>Aidan Morris (USMNT), Claudio Reyna, John Harkes</td><td>Most decorated active coach in US college soccer. Tactical sophistication is unmatched. Would transform Olivier's tactical IQ</td></tr>
+        <tr><td><span class="rk-num rk-elite">2</span></td><td><strong>Todd Yeagley</strong></td><td>Indiana</td><td><span class="dbadge d-D1">D1 Big Ten</span></td><td>10+ yrs</td><td>Big Ten champs 2020,21,23,24</td><td>Jansen Miller R1 2025, Aidan Morris, Collins Oduro</td><td>Best motor control labs in USA; high-intensity pressing style perfectly suited to an 8/10. Produced USMNT players consistently</td></tr>
+        <tr><td><span class="rk-num rk-elite">3</span></td><td><strong>Ryan Jorden</strong></td><td>UCLA</td><td><span class="dbadge d-D1">D1 Big Ten</span></td><td>7 yrs</td><td>13 MLS picks under him</td><td>Ahmed Longmire, Grayson Doody, Nicholas Cavallo</td><td>Technical player-development style. LA lifestyle match. 13 MLS picks = proven developer. #1 kinesiology degree access</td></tr>
+        <tr><td><span class="rk-num rk-elite">4</span></td><td><strong>Tim Von Steeg</strong></td><td>UCSB</td><td><span class="dbadge d-D1">D1 Big West</span></td><td>20+ yrs</td><td>350+ career wins</td><td>Manu Duah #1 overall 2025 — highest Big West pick ever</td><td>Most experienced coach in guide. Proven #1 overall pick developer. Mediterranean campus lifestyle = Sydney match</td></tr>
+        <tr><td><span class="rk-num rk-strong">5</span></td><td><strong>Kyle Russell</strong></td><td>FIU</td><td><span class="dbadge d-D1">D1 AAC</span></td><td>6 yrs</td><td>2021 CUSA CoY, AAC Champs</td><td>Stephen Afrifa #8 overall, Michael Appiah Inter Miami</td><td>Young, elite developer. Reached 4 of 5 possible conference finals. STEM degree + Inter Miami connection unique combo</td></tr>
+        <tr><td><span class="rk-num rk-strong">6</span></td><td><strong>Kevin Hudson</strong></td><td>SMU</td><td><span class="dbadge d-D1">D1 ACC</span></td><td>9 yrs</td><td>2025 ACC Tourn champs (first ever)</td><td>Jaylinn Mitchell 2026 R1, Garrett McLaughlin #8 overall</td><td>First ACC Tournament title in SMU history. FC Dallas direct network. Dallas city campus + warm climate</td></tr>
+        <tr><td><span class="rk-num rk-strong">7</span></td><td><strong>George Kiefer</strong></td><td>USF</td><td><span class="dbadge d-D1">D1 AAC</span></td><td>Returned 2025</td><td>4 conf titles, 10 NCAA apps (first tenure)</td><td>Jahiem Wickham 2026 R3, Pedro Faife USL</td><td>Proven builder returning to rebuild. Ground-floor opportunity with a coach who has already built USF to prominence once</td></tr>
+        <tr><td><span class="rk-num rk-strong">8</span></td><td><strong>Jim Barlow</strong></td><td>Princeton</td><td><span class="dbadge d-IVY">IVY</span></td><td>29 yrs</td><td>237-184-72, 7 Ivy titles</td><td>Kevin O'Toole NYCFC, 5 total MLS players</td><td>2025 Northeast Regional Staff of Year. First-ever Ivy League + Tournament double 2025. Elite tactical development</td></tr>
+        <tr><td><span class="rk-num rk-strong">9</span></td><td><strong>Bobby Muuss</strong></td><td>Wake Forest</td><td><span class="dbadge d-D1">D1 ACC</span></td><td>8+ yrs</td><td>4 MLS picks in single 2025 draft</td><td>Travis Smith Jr R1 2025, Liam O'Gara, Trace Alphin</td><td>Possession-based style suits 8/10. ACC quality. Wake Forest Baptist Medical proximity for DPT hours</td></tr>
+        <tr><td><span class="rk-num rk-strong">10</span></td><td><strong>Lucas Martorana</strong></td><td>PBA</td><td><span class="dbadge d-D2">D2 SSC</span></td><td>3 yrs</td><td>61-9-6 as assistant + HC record</td><td>USL2 and international signings annually</td><td>2025 SSC Coach of Year. #2 nationally. Pre-PT in degree title. Former professional player. Small campus = personal mentoring</td></tr>
+        <tr><td><span class="rk-num rk-solid">11</span></td><td><strong>Diego Bocanegra</strong></td><td>St Edward's</td><td><span class="dbadge d-D2">D2 LSC</span></td><td>5+ yrs</td><td>LSC Coach of Year</td><td>Austin Bold FC USL2 connection</td><td>Austin native, former USL pro. European pressing system best match for Olivier's style in D2</td></tr>
+        <tr><td><span class="rk-num rk-solid">12</span></td><td><strong>Richie Grant</strong></td><td>Lynn</td><td><span class="dbadge d-D2">D2 SSC</span></td><td>Multiple yrs</td><td>Multiple SSC Coach of Year</td><td>3–4 USL/international signings yr</td><td>Australian and UK player specialist. Known personally places internationals in pro markets post-graduation</td></tr>
+        <tr><td><span class="rk-num rk-solid">13</span></td><td><strong>Petsa Ivanovic</strong></td><td>Barry</td><td><span class="dbadge d-D2">D2 SSC</span></td><td>Multiple yrs</td><td>Multiple SSC championships</td><td>Inter Miami / European lower league connections</td><td>USSF licensed. Miami energy. 4 D2 national titles in program history. Pre-PT Seminar HPS450 in degree</td></tr>
+        <tr><td><span class="rk-num rk-solid">14</span></td><td><strong>Brian Finnegan</strong></td><td>OCU</td><td><span class="dbadge d-NAIA">NAIA SAC</span></td><td>Multiple yrs</td><td>Multiple NAIA tournament appearances</td><td>A-League / NPL Australian pathway direct</td><td>Has explicitly placed Australian players in professional environments. Only coach in guide with direct A-League connections</td></tr>
+        <tr><td><span class="rk-num rk-solid">15</span></td><td><strong>Dave Masur</strong></td><td>St John's</td><td><span class="dbadge d-D1">D1 Big East</span></td><td>30+ yrs</td><td>450+ career wins</td><td>NYCFC, Red Bulls academy proximity</td><td>Elite international player experience. NYC clinical network for DPT is world-class. Big East competitive environment</td></tr>
+        <tr><td><span class="rk-num rk-solid">16</span></td><td><strong>Keith Wiggans</strong></td><td>Charleston</td><td><span class="dbadge d-D1">D1 CAA</span></td><td>6 yrs</td><td>1-4-3 (2020) → 10-6-2 (2024)</td><td>Charleston Battery (USL) alumni connections</td><td>CofC alum, played 7 seasons pro for Battery. Program improving every year. Beautiful city campus lifestyle</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="section-head"><h2>Detailed Coach Profiles — Head Coaches & Known Staff</h2></div>
+  <div class="coaches-filters">
+    <span class="fl">Filter:</span>
+    <button class="fbtn active" onclick="filterCoaches('all',this)">All Coaches</button>
+    <button class="fbtn" onclick="filterCoaches('D1',this)">D1</button>
+    <button class="fbtn" onclick="filterCoaches('D2',this)">D2</button>
+    <button class="fbtn" onclick="filterCoaches('NAIA',this)">NAIA</button>
+    <button class="fbtn" onclick="filterCoaches('IVY',this)">Ivy League</button>
+    <button class="fbtn" onclick="filterCoaches('aus',this)">🇦🇺 Aus Connections</button>
+    <button class="fbtn" onclick="filterCoaches('pro',this)">🏆 Pro Pipeline</button>
+  </div>
+  <div class="coach-cards" id="coach-cards-container"></div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

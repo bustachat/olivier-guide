@@ -1,0 +1,3206 @@
+[
+  {
+    "id": "ucla",
+    "name": "UCLA",
+    "full": "University of California, Los Angeles",
+    "loc": "Los Angeles, CA",
+    "region": "west",
+    "div": "D1",
+    "conf": "Big Ten",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#e0e7ff",
+      "#4f46e5"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "4th",
+        "note": "Big Ten (debut)"
+      },
+      {
+        "yr": 2023,
+        "pos": "1st",
+        "note": "Pac-12 Champions"
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd",
+        "note": "Pac-12"
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd",
+        "note": "Pac-12"
+      },
+      {
+        "yr": 2020,
+        "pos": "3rd",
+        "note": "Pac-12"
+      }
+    ],
+    "titles": [
+      "NCAA 1985, 1990, 1997, 2002",
+      "Pac-12 Champs 2023",
+      "Big Ten Tourn Champs 2024"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 4,
+      "notable": [
+        "Ahmed Longmire — #10 overall, Nashville SC (2022)",
+        "Grayson Doody — R1, CF Montréal (2024)",
+        "Nicholas Cavallo — R3 (2025)"
+      ],
+      "draftRank": "Top 8 all-time MLS producers"
+    },
+    "acRank": "#20 National",
+    "kinRank": "#1 Nationally (Physiol Sci)",
+    "degreeTitle": "B.S. in Physiological Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong — no named kinesiology major but Physiol Sci covers anatomy, physiology, biomechanics fully. Motor control/development less explicit.",
+    "soccerLevel": "Big Ten — Elite",
+    "cost": "~$67k/yr",
+    "aid": "Athletic + Merit",
+    "size": "46,000+",
+    "prePT": "Excellent",
+    "gpa": {
+      "minEntry": "3.0 NCAA core (min)",
+      "minSchol": "3.5+ for merit aid stacking",
+      "note": "Highly selective public — aim 3.5+ for strong admission. Athletic scholarship may offset GPA concern.",
+      "status": "below"
+    },
+    "fin": {
+      "costNum": 67000,
+      "tuition": 44000,
+      "roomBoard": 19000,
+      "fees": 4000,
+      "maxAthletic": 0.8,
+      "maxAcademic": 8000,
+      "aidType": "athletic+merit",
+      "internationalNote": "International students not eligible for federal aid. Athletic scholarship can cover up to 80% of costs. UC Blue+Gold program covers tuition for CA residents only."
+    },
+    "culture": {
+      "vibe": "Vibrant, diverse, high-energy West Coast university culture. UCLA is one of the most socially active campuses in the USA — always something happening. Greek life is prominent but not dominant. International students are common and blend seamlessly.",
+      "thingsToDo": "Santa Monica Beach (10 min), Venice Beach, Westwood Village restaurants and cinema, Griffith Observatory, LA nightlife, Dodgers/Lakers/Rams games, concerts at the Forum, hiking in the Santa Monica Mountains, Disneyland (45 min). LA is limitless.",
+      "socialScene": "Large international student body. Australian students have established communities. Bruin athletics culture is intense — games are events. Social media presence huge. Campus feels alive 24/7.",
+      "olivierMatch": "★★★★★ Best campus lifestyle match in guide for Olivier. City, beach, warm, diverse. Feels closest to Sydney energy of any US campus.",
+      "lifestyleTags": "Warm, sunny, active"
+    },
+    "facilityDetails": {
+      "stadium": "Drake Stadium — 8,000 capacity, FieldTurf surface, permanent seating, stadium lighting, video board. Shared with track & field, maintained to Big Ten broadcast standards.",
+      "trainingFields": "3 dedicated practice fields adjacent to Drake Stadium (2x natural grass, 1x FieldTurf). Ball-wall training walls, rebounder nets, GPS tracking zones marked on all surfaces.",
+      "strengthConditioning": "Acosta Athletic Center — 20,000 sq ft dedicated athlete weight room. Olympic lifting platforms (12), squat racks, cable systems, battle ropes, sled tracks. Olympic sports strength coach assigned exclusively to soccer. Cryotherapy chambers, hot/cold plunge pools, normatec recovery boots.",
+      "sportsScience": "Biomotion Lab (3D motion capture — 24-camera Vicon system), Biomechanics Research Lab (force plates, EMG systems), UCLA Exercise Physiology Lab (VO2 max, lactate testing), GPS/accelerometer tracking (Catapult) on all training sessions. One of the top 3 sports science environments in the NCAA.",
+      "sportsMed": "UCLA Health dedicated athletic trainer assigned to soccer. On-site physio room, rehabilitation gym, ultrasound, laser therapy, cryotherapy. UCLA Health orthopaedic surgery access (Dr Neal ElAttrache — team physician to LA Lakers).",
+      "academicLabs": "Department of Physiological Science: 6 research labs including cardiopulmonary physiology, muscle physiology, biomechanics, and neuroscience. Access to David Geffen School of Medicine anatomy cadaver lab. Student pre-PT club has first-priority clinical placement at UCLA Health.",
+      "extras": "Pauley Pavilion athlete lounge and recovery centre. LAFC training facility access (professional relationship). LA Galaxy El Camino College training facility visits. Olympic-standard athlete dining hall. Dedicated locker room for soccer with iPad film stations.",
+      "rating": "Elite",
+      "note": "UCLA is a top-3 facilities environment in the entire guide. The combination of Drake Stadium, the Biomotion Lab, and UCLA Health access creates a professional-standard training environment that rivals many MLS clubs."
+    },
+    "coach": {
+      "name": "Ryan Jorden",
+      "title": "Head Coach (7th yr)",
+      "email": "rjorden@athletics.ucla.edu",
+      "phone": "310-825-3515",
+      "profile": "13 MLS draft picks under Jorden. NCAA Tournament 4 years running. Technical, player-development style."
+    },
+    "devScores": {
+      "tactical": 90,
+      "technical": 88,
+      "fitness": 85,
+      "ptPath": 95
+    },
+    "fitOlivier": 96,
+    "tags": [
+      "warm",
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Drake Stadium",
+      "Biomotion Lab",
+      "Biomechanics Research Lab"
+    ],
+    "courses": [
+      "PHYSIOL 3 — Introduction to Physiology",
+      "PHYSIOL 111A — Physiology of Exercise",
+      "PHYSIOL 120A — Biomechanics",
+      "KIN 150 — Sport Biomechanics",
+      "ANATOMY 1 — Human Anatomy"
+    ],
+    "rec": "LA lifestyle closest to Sydney. #1 Kinesiology equivalent nationally. Highly competitive for international athletes — elite highlights required. Extraordinary PT/Chiro grad school access via UCLA Health.",
+    "url": "https://uclabruins.com/sports/mens-soccer"
+  },
+  {
+    "id": "ucsb",
+    "name": "UCSB",
+    "full": "UC Santa Barbara",
+    "loc": "Santa Barbara, CA",
+    "region": "west",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e0f2fe",
+      "#0284c7"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "1st",
+        "note": "Big West Champions"
+      },
+      {
+        "yr": 2023,
+        "pos": "2nd",
+        "note": "Big West"
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd",
+        "note": "Big West"
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd",
+        "note": "Big West"
+      },
+      {
+        "yr": 2020,
+        "pos": "2nd",
+        "note": "Big West"
+      }
+    ],
+    "titles": [
+      "NCAA 2006",
+      "Big West 2024, 2022, 2021, 2018"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "Manu Duah — #1 overall 2025 (highest ever Big West pick)",
+        "Multiple USL signings annually"
+      ],
+      "draftRank": "Strong regional pipeline"
+    },
+    "acRank": "Top 50 National",
+    "kinRank": "Strong",
+    "degreeTitle": "B.S. in Kinesiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong — anatomy, physiology, biomechanics, sport psych all covered. Motor development/control less structured than at UF or Indiana.",
+    "soccerLevel": "Big West — Competitive",
+    "cost": "~$57k/yr",
+    "aid": "Athletic + Merit",
+    "size": "26,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5 NCAA core (min)",
+      "minSchol": "3.3+ for UC fee waiver programs",
+      "note": "UC system is merit-aware. International student GPA review differs from domestic.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 57000,
+      "tuition": 36000,
+      "roomBoard": 17000,
+      "fees": 4000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 6000,
+      "aidType": "athletic+merit",
+      "internationalNote": "International students qualify for athletic aid. UC system merit aid limited for internationals. Athletic package is primary lever."
+    },
+    "culture": {
+      "vibe": "Laid-back Californian surf culture. UCSB is famous for its relaxed vibe — students study hard but also surf, bike to class, and socialise on the beach. Isla Vista (adjacent neighbourhood) is one of the most social student areas in California.",
+      "thingsToDo": "Surfing at Goleta Beach (walking distance), biking along the coast, kayaking, Santa Barbara farmers markets, wine country day trips, hiking in the Santa Ynez Mountains, whale watching, State Street restaurants.",
+      "socialScene": "Very social campus. Large student population but feels intimate due to coastal setting. International students welcomed — strong surf and outdoor culture. Less city-oriented than LA but more relaxed.",
+      "olivierMatch": "★★★★★ Closest climate and lifestyle to Sydney in entire guide. Beach at your doorstep. Relaxed atmosphere. Less urban bustle than LA but arguably better day-to-day liveability for an Australian.",
+      "lifestyleTags": "Laid-back, coastal, outdoor"
+    },
+    "facilityDetails": {
+      "stadium": "Harder Stadium — 17,000 capacity, one of the largest dedicated soccer stadiums in US college soccer. Natural grass surface, full broadcast infrastructure, video scoreboard, 360° permanent seating.",
+      "trainingFields": "2 practice fields adjacent to Harder Stadium. 1 additional satellite training field on east campus. All-weather surfaces, permanent floodlighting. Santa Barbara climate allows year-round outdoor training.",
+      "strengthConditioning": "UCSB Athletics Weight Room — 15,000 sq ft shared facility with strength coaches for all Olympic sports. Free weights, Olympic platforms, Keiser pneumatic systems. Soccer-specific conditioning blocks scheduled with dedicated S&C coach.",
+      "sportsScience": "Exercise Science teaching labs with metabolic carts (VO2 max), body composition analysis (DEXA), and functional movement screening. GPS tracking via Statsports system on all training sessions. Video analysis system (Hudl) with iPad tablets for all players.",
+      "sportsMed": "Dedicated athletic trainer for soccer. On-site treatment room with ultrasound, e-stim, ice baths. Goleta Valley Cottage Hospital sports medicine partnership for imaging and surgical consultation.",
+      "academicLabs": "UCSB Department of Kinesiology: teaching labs for biomechanics, motor learning, exercise physiology. Bren Hall science facilities available to kinesiology students. Marine Science Institute provides additional lab access. Pre-PT advising formally integrated into kinesiology program.",
+      "extras": "UCSB Recreation Center (one of the most highly rated campus rec facilities in the USA) — climbing wall, Olympic pool, fitness studios. Team video room in Harder Stadium. Beach volleyball courts, surfboard rental, ocean swimming all on campus.",
+      "rating": "Excellent",
+      "note": "Harder Stadium's 17,000 capacity creates an elite match atmosphere unmatched in D1 outside the top 15 programs nationally. The campus recreation environment is extraordinary — ocean, mountains, and world-class facilities all accessible."
+    },
+    "coach": {
+      "name": "Tim Von Steeg",
+      "title": "Head Coach (20+ seasons)",
+      "email": "tvonsteeg@athletics.ucsb.edu",
+      "phone": "805-893-3229",
+      "profile": "350+ career wins. Manu Duah #1 overall pick 2025. One of the most respected coaches in D1."
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 85,
+      "fitness": 80,
+      "ptPath": 78
+    },
+    "fitOlivier": 83,
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Harder Stadium (17k cap)",
+      "Campus Rec Centre",
+      "Exercise Science Labs"
+    ],
+    "courses": [
+      "KINE 1 — The Moving Body",
+      "KINE 105 — Sport Physiology",
+      "KINE 108 — Biomechanics",
+      "KINE 160 — Athletic Training"
+    ],
+    "rec": "Mediterranean climate identical to Sydney. Manu Duah #1 pick proves D1 pro calibre. Strong kinesiology. Beach campus lifestyle match.",
+    "url": "https://ucsbgauchos.com/sports/mens-soccer"
+  },
+  {
+    "id": "usf",
+    "name": "USF",
+    "full": "University of South Florida",
+    "loc": "Tampa, FL",
+    "region": "south",
+    "div": "D1",
+    "conf": "American Athletic (AAC)",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#d1fae5",
+      "#059669"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Mid AAC",
+        "note": "Rebuilding"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid AAC",
+        "note": "AAC"
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd AAC",
+        "note": "AAC"
+      },
+      {
+        "yr": 2021,
+        "pos": "4th AAC",
+        "note": "AAC"
+      },
+      {
+        "yr": 2020,
+        "pos": "3rd AAC",
+        "note": "AAC"
+      }
+    ],
+    "titles": [
+      "4× AAC/C-USA titles 2002–2016 under Kiefer",
+      "10 NCAA Tournament appearances under Kiefer"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "Jahiem Wickham — 2026 R3",
+        "Pedro Faife — 2024 USL",
+        "3 MLS picks under Kiefer first tenure"
+      ],
+      "draftRank": "Rebuilding; historically solid AAC producer"
+    },
+    "acRank": "Top 100 National",
+    "kinRank": "Strong (Kinesiology Research Complex)",
+    "degreeTitle": "B.S. in Exercise Science and Kinesiology",
+    "acuAlign": 13,
+    "acuAlignNote": "Full coverage of anatomy, physiology, biomechanics, exercise prescription, strength training, sport psych, research, and 12cr internship. Motor development less explicit.",
+    "soccerLevel": "AAC — Very Competitive",
+    "cost": "~$38k/yr",
+    "aid": "Athletic + Need",
+    "size": "50,000+",
+    "prePT": "Very Strong",
+    "gpa": {
+      "minEntry": "2.3 NCAA core (min)",
+      "minSchol": "3.0+ for academic aid stacking",
+      "note": "USF is accessible for international athletes. Athletic package primary; GPA 2.8 is workable.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 38000,
+      "tuition": 22000,
+      "roomBoard": 13000,
+      "fees": 3000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 12000,
+      "aidType": "athletic+need",
+      "internationalNote": "USF Green & Gold Scholars program — merit aid available to international students with 3.0+ GPA. Athletic aid can stack with academic."
+    },
+    "culture": {
+      "vibe": "Urban Tampa campus with a mix of commuter and residential students. USF has grown significantly in recent years and now has genuine campus energy. Bulls athletics culture is building. Tampa is a genuine city with major league sports.",
+      "thingsToDo": "Ybor City nightlife (historic Latin quarter), Raymond James Stadium (Tampa Bay Buccaneers), Amalie Arena (Lightning NHL), Tampa Riverwalk, Busch Gardens, Clearwater Beach (30 min), Disney World (90 min), Gulf Coast beaches.",
+      "socialScene": "Diverse, urban commuter-meets-residential mix. Large international community. Latin American influence in Tampa culture is strong. Warm year-round. Growing campus social scene under Kiefer's rebuilt program.",
+      "olivierMatch": "★★★★ Tampa has Sydney-level warmth and urban energy. Clearwater Beach quality rivals Sydney beaches. USF campus atmosphere less tight-knit than smaller schools but the city compensates.",
+      "lifestyleTags": "Urban, warm, growing"
+    },
+    "facilityDetails": {
+      "stadium": "Corbett Soccer Stadium — 3,000 capacity, FieldTurf, permanent lighting. Modernised under Kiefer's rebuild — new bleachers and press box. AAC broadcast-ready infrastructure.",
+      "trainingFields": "2 dedicated practice fields at Corbett complex. 1 additional grass training field on north campus. Rebounders, training goals, GPS tracking zones.",
+      "strengthConditioning": "USF Sun Dome Athletic Weight Room — 12,000 sq ft, full free weight section, Olympic platforms, Keiser resistance equipment. Football and basketball get priority scheduling but soccer has dedicated morning blocks. Recovery room with contrast baths and normatec boots.",
+      "sportsScience": "Kinesiology Research Complex — 8 laboratories covering exercise physiology, biomechanics, motor control, and sport psychology. VO2 max testing, force plate analysis, EMG, isokinetic dynamometers. GPS tracking (Catapult) on all USF soccer sessions.",
+      "sportsMed": "USF Athletics Sports Medicine Department — certified athletic trainer assigned to soccer. Dr Kevin Trivelpiece as team physician. Hydration testing, injury rehabilitation gym, ultrasound therapy, laser therapy. USF Health medical school proximity provides exceptional injury management resources.",
+      "academicLabs": "School of Physical Education and Exercise Science: 12 research labs, exercise physiology suites, biomechanics teaching lab, motor learning lab. 12-credit internship (EXSC 4930) at USF Health hospitals for exercise science degree — exceptional clinical hours access.",
+      "extras": "Student Rec Center (70,000 sq ft) — largest in Florida. Dedicated locker rooms at Corbett with TV film stations. Tampa Bay Lightning and Buccaneers stadium tours available through USF sports management program. Stadium on-site physio room.",
+      "rating": "Very Good",
+      "note": "USF's Kinesiology Research Complex is one of the strongest academic science environments in this guide. The 12-credit clinical internship integrated into the degree is unique — most schools offer this as optional. Corbett Stadium is functional but not impressive."
+    },
+    "coach": {
+      "name": "George Kiefer",
+      "title": "Head Coach (returned 2025)",
+      "email": "gkiefer@usf.edu",
+      "phone": "813-974-2125",
+      "profile": "4 conf titles, 10 NCAA appearances in first tenure. Returned Dec 2025. Proven developer. 2025 Far West Region Staff of Year at GCU."
+    },
+    "devScores": {
+      "tactical": 88,
+      "technical": 84,
+      "fitness": 90,
+      "ptPath": 88
+    },
+    "fitOlivier": 90,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Corbett Soccer Stadium",
+      "Kinesiology Research Complex",
+      "Student Rec Centre"
+    ],
+    "courses": [
+      "KIN 2502 — Exercise Physiology",
+      "KIN 4310 — Sport Biomechanics",
+      "KIN 6116 — Advanced Ex Phys",
+      "HPA 4170 — Health Research"
+    ],
+    "rec": "Kiefer returning is a huge signal — USF rebuilding to prominence. Tampa city + warm. Strong kinesiology degree. Affordable D1 Florida school. Ground floor opportunity with a proven builder.",
+    "url": "https://gousfbulls.com/sports/mens-soccer"
+  },
+  {
+    "id": "uf",
+    "name": "UF",
+    "full": "University of Florida",
+    "loc": "Gainesville, FL",
+    "region": "south",
+    "div": "D1",
+    "conf": "SEC Conference",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "color": [
+      "#ede9fe",
+      "#7c3aed"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Mid SEC",
+        "note": "SEC"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid SEC",
+        "note": "SEC"
+      },
+      {
+        "yr": 2022,
+        "pos": "Lower SEC",
+        "note": "SEC"
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid SEC",
+        "note": "SEC"
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid SEC",
+        "note": "SEC"
+      }
+    ],
+    "titles": [
+      "Consistent SEC Tournament appearances",
+      "Strong academic/research reputation"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Multiple USL Championship signings",
+        "Strong athletic training + sport science placement"
+      ],
+      "draftRank": "Moderate soccer pipeline; extraordinary academic pipeline"
+    },
+    "acRank": "#29 National",
+    "kinRank": "#1 Nationally (APK)",
+    "degreeTitle": "B.S. in Applied Physiology and Kinesiology (APK)",
+    "acuAlign": 16,
+    "acuAlignNote": "FULL alignment — UF APK is the closest US structural match to ACU BESS. Anatomy, physiology, biomechanics, exercise prescription, resistance training, motor control, sport psych, research, AND mandatory 12cr internship. STEM-designated degree.",
+    "soccerLevel": "SEC — Strong",
+    "cost": "~$45k/yr",
+    "aid": "Athletic + Need",
+    "size": "55,000+",
+    "prePT": "Excellent",
+    "gpa": {
+      "minEntry": "3.0+ highly recommended",
+      "minSchol": "3.5+ for merit scholarship",
+      "note": "UF is selective (APK is a competitive major). GPA 2.8 is borderline — needs strong athletic profile.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 45000,
+      "tuition": 28000,
+      "roomBoard": 13000,
+      "fees": 4000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 10000,
+      "aidType": "athletic+merit",
+      "internationalNote": "UF Bright Futures is state-funded (Florida residents only). International athletes rely on athletic + merit package. APK degree competitive — athletic aid is essential lever."
+    },
+    "culture": {
+      "vibe": "Classic large American college-town atmosphere. Gainesville during football season is electric — The Swamp is one of the loudest stadiums in college sports. Heavy Gators sports culture dominates social life. University Avenue bar scene is legendary among college towns.",
+      "thingsToDo": "Ben Hill Griffin Stadium (Florida Gators football), Payne's Prairie hiking, Ichetucknee Springs tubing, Cedar Key day trips, Gainesville music scene (Tom Petty's hometown), Lake Alice wildlife. Gainesville itself is a small city.",
+      "socialScene": "Tight-knit college town feel. International student community present but smaller than urban schools. Football Saturdays are unmissable cultural events. Academic culture is serious — library culture strong.",
+      "olivierMatch": "★★★ Gainesville is a great college town but not a major city. Less Sydney-like than Florida coastal options. Culture is warm and friendly. Best if immersive college-town experience appeals.",
+      "lifestyleTags": "College-town, Gators culture, outdoors"
+    },
+    "facilityDetails": {
+      "stadium": "Donald R. Dizney Stadium — 2,500 capacity, FieldTurf, permanent lighting, press box. Part of the UF Athletic Association complex. SEC production values.",
+      "trainingFields": "3 practice fields within the soccer complex. Additional access to UF Athletic Association turf fields. Year-round Gainesville climate allows outdoor training 10+ months annually.",
+      "strengthConditioning": "James G. Pressly Stadium includes dedicated soccer strength & conditioning suite. Access to UF Athletic Association main weight facility (one of the largest in collegiate athletics — 28,000 sq ft). Olympic lifting, squat platforms, pneumatic resistance, cryotherapy, hyperbaric chamber access.",
+      "sportsScience": "Applied Physiology & Kinesiology (APK) Center for Exercise Science — 13 dedicated laboratories. Includes: metabolic lab (8 metabolic carts), body composition lab (DEXA, BodPod), biomechanics lab (3D motion capture, 8 force plates), neuromuscular lab, environmental physiology chamber (heat/altitude simulation), cardiovascular lab, muscle biopsy suite. The most comprehensive academic exercise science facility in any school in this guide.",
+      "sportsMed": "UF Health Sports Medicine — dedicated team physician (Dr Christopher Logue, team physician for Jacksonville Jaguars). Sports medicine suite within soccer complex, full rehabilitation gym, underwater treadmill, hydrotherapy. UF Health Shands Hospital (top-10 nationally) available for complex cases.",
+      "academicLabs": "APK degree has dedicated lab access built into the curriculum — students aren't just observing, they're running experiments. 12-credit internship at UF Health facilities. Pre-DPT advising program with formal letter-of-recommendation support from APK faculty. Access to UF College of Medicine anatomy labs.",
+      "extras": "Ben Hill Griffin Stadium (The Swamp — 90,000 capacity) — seeing Florida Gators football is a college bucket-list experience. UF student ID gives free access to all UF athletic events. O'Dome fitness complex. Student Health Center pharmacy and clinic on campus. UF Norman Gyms for open recreation.",
+      "rating": "Elite",
+      "note": "UF's APK facility is unmatched academically in this guide — 13 labs, a hyperbaric chamber, muscle biopsy suite, and embedded curriculum access. If Olivier's primary goal is DPT preparation, no other school provides a laboratory environment close to this."
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Confirm with Platform Sports Mgmt",
+      "email": "soccercoach@athletics.ufl.edu",
+      "phone": "352-375-4683",
+      "profile": "Verify current coach. UF APK is the #1 ranked exercise science program nationally — extraordinary academic environment."
+    },
+    "devScores": {
+      "tactical": 80,
+      "technical": 82,
+      "fitness": 88,
+      "ptPath": 95
+    },
+    "fitOlivier": 82,
+    "tags": [
+      "warm",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "James G. Pressly Stadium",
+      "Center for Exercise Science (13 labs)",
+      "Sports Medicine Suite"
+    ],
+    "courses": [
+      "APK 3110C — Applied Anatomy",
+      "APK 4110C — Exercise Physiology",
+      "APK 4140 — Sport Nutrition",
+      "APK 3400 — Sport Psychology",
+      "APK 6905 — Internship (12cr)"
+    ],
+    "rec": "UF's APK is #1 nationally. Most complete structural match to ACU BESS degree. Mandatory 12-credit internship = clinical hours for DPT. Gainesville is a college town not a major city — less lifestyle match.",
+    "url": "https://floridagators.com/sports/mens-soccer"
+  },
+  {
+    "id": "fiu",
+    "name": "FIU",
+    "full": "Florida International University",
+    "loc": "Miami, FL",
+    "region": "south",
+    "div": "D1",
+    "conf": "American Athletic (AAC)",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#e0f2fe",
+      "#0284c7"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "AAC Final",
+        "note": "AAC Championship Match"
+      },
+      {
+        "yr": 2023,
+        "pos": "1st AAC",
+        "note": "AAC Regular Season + Tourn Champs"
+      },
+      {
+        "yr": 2022,
+        "pos": "1st AAC",
+        "note": "AAC Champs"
+      },
+      {
+        "yr": 2021,
+        "pos": "1st CUSA",
+        "note": "CUSA Champs — NCAA R32"
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid CUSA",
+        "note": "COVID year"
+      }
+    ],
+    "titles": [
+      "2× D2 NCAA titles 1982, 1984",
+      "2021 CUSA Champions",
+      "2022 AAC Champions",
+      "2023 AAC Regular Season Champs",
+      "2024 AAC Championship Match"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "Michael Appiah — 2025 R3 Inter Miami",
+        "Stephen Afrifa — #8 overall 2022 SKC",
+        "14 total MLS draft picks program history"
+      ],
+      "draftRank": "14 all-time MLS picks; Inter Miami direct pipeline"
+    },
+    "acRank": "Top 150 National",
+    "kinRank": "STEM-designated Exercise Science",
+    "degreeTitle": "B.S. in Sport and Exercise Science (STEM)",
+    "acuAlign": 14,
+    "acuAlignNote": "Very strong — STEM-designated degree with anatomy, physiology, biomechanics, exercise prescription, resistance training, sport psych, and internship. FIU PT dept has DPT articulation for graduates.",
+    "soccerLevel": "AAC — Elite (5 conf titles in 4 years)",
+    "cost": "~$30k/yr",
+    "aid": "Athletic + Need",
+    "size": "55,000+",
+    "prePT": "Strong",
+    "gpa": {
+      "minEntry": "2.0 NCAA core (min)",
+      "minSchol": "3.0 for academic scholarship layer",
+      "note": "FIU is very accessible for international athletes. GPA 2.8 is comfortable for admission.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 30000,
+      "tuition": 18000,
+      "roomBoard": 10000,
+      "fees": 2000,
+      "maxAthletic": 0.95,
+      "maxAcademic": 8000,
+      "aidType": "athletic+need",
+      "internationalNote": "FIU is one of the most affordable D1 options. Athletic scholarship can cover nearly full cost. Academic merit aid available for 3.0+ GPA."
+    },
+    "culture": {
+      "vibe": "Urban Miami campus with strong Latin American cultural influence. FIU is one of the most diverse universities in the USA — over 50% Hispanic student body. Miami energy permeates everything. Students are ambitious, fashion-forward, and globally connected.",
+      "thingsToDo": "South Beach (20 min), Wynwood Arts District, Bayside Marketplace, Everglades day trips, Miami Heat/Marlins/Dolphins games, Calle Ocho festival, Little Havana restaurants, Fort Lauderdale (30 min), Key West (3.5hr drive).",
+      "socialScene": "Highly international. Spanish is widely spoken. Many students work part-time in Miami's hospitality and sport industry. Soccer culture is dominant — Inter Miami is 5 minutes away. Late-night lifestyle. Warm year-round.",
+      "olivierMatch": "★★★★★ Miami is arguably the most cosmopolitan US city match to Sydney's multicultural energy. FIU's Latin-influenced campus culture is vibrant and welcoming to Australians. Great lifestyle value.",
+      "lifestyleTags": "Cosmopolitan, Latin, vibrant"
+    },
+    "facilityDetails": {
+      "stadium": "FIU Soccer Stadium — 2,000 capacity, FieldTurf surface, floodlit, AAC broadcast-ready. Adjacent to campus Athletic Complex. Inter Miami CF HQ is 5 minutes drive.",
+      "trainingFields": "2 FieldTurf practice fields at soccer complex. Access to additional FIU Athletics fields. GPS tracking zones installed 2022. Rebounders and training goal infrastructure throughout.",
+      "strengthConditioning": "FIU Athletics Performance Center — rebuilt 2021 with $4.2M investment. 14,000 sq ft. Olympic platforms (8), power racks, cable systems, Keiser resistance machines. Dedicated performance coaches for Olympic sports. Cryotherapy unit, normatec compression, HRV monitoring via Whoop integration.",
+      "sportsScience": "FIU Department of Kinesiology & Health Sciences — STEM-designated program with dedicated labs: exercise physiology lab (VO2 max, metabolic testing), biomechanics lab (3D capture, force plates), sport psychology suite. GPS tracking (Statsports) for all training sessions. Video analysis via Hudl with individual player dashboards.",
+      "sportsMed": "FIU Athletics Medicine — dedicated certified athletic trainer for soccer. University physician on contract. Miami sports medicine network access — Jackson Memorial Hospital, Baptist Health Sports Medicine. FIU Health Sciences campus shares facilities for advanced rehabilitation.",
+      "academicLabs": "FIU Kinesiology is STEM-designated — students can access research funding and graduate school pipelines not available in non-STEM exercise science degrees. Biodynamics Laboratory, Human Performance Laboratory. Pre-health advising formally embedded in kinesiology advising.",
+      "extras": "Proximity to Inter Miami CF training facility (5 min drive) — players have visited for training observation. Miami sports industry network: Heat, Marlins, Miami FC all accessible. FIU Recreation Center (195,000 sq ft — one of the largest in Florida). Miami climate means outdoor training 12 months/year.",
+      "rating": "Very Good",
+      "note": "FIU's 2021 Athletics Performance Center rebuild is significant — it's better than many older D1 facilities. The STEM designation on the kinesiology degree and Inter Miami proximity are the standout differentiators at this price point."
+    },
+    "coach": {
+      "name": "Kyle Russell",
+      "title": "Head Coach (6th season)",
+      "email": "krussell@fiu.edu",
+      "phone": "305-919-5773",
+      "profile": "2021 CUSA Coach of Year. 2022 AAC Champs. 2024 AAC Final. Stephen Afrifa #8 overall pick under him. Young, elite developer. FC Dallas connections. AAC championship contender every year."
+    },
+    "devScores": {
+      "tactical": 90,
+      "technical": 86,
+      "fitness": 88,
+      "ptPath": 88
+    },
+    "fitOlivier": 91,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "FIU Soccer Stadium",
+      "Exercise Science Labs",
+      "Inter Miami training facility proximity",
+      "Student Rec Center"
+    ],
+    "courses": [
+      "PET 3010 — Introduction to Sport & Exercise Science",
+      "PET 3341 — Exercise Physiology",
+      "PET 4350 — Biomechanics",
+      "PET 4380 — Motor Learning",
+      "PET 4396 — Sport Psychology"
+    ],
+    "rec": "FIU is the sleeper pick of the guide. Miami city campus, tropical climate, and Kyle Russell has turned this into an AAC powerhouse. STEM exercise science degree. Inter Miami CF connections. Very affordable. Strong case as THE best overall package for Olivier.",
+    "url": "https://fiusports.com/sports/mens-soccer"
+  },
+  {
+    "id": "virginia",
+    "name": "UVA",
+    "full": "University of Virginia",
+    "loc": "Charlottesville, VA",
+    "region": "east",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#ede9fe",
+      "#7c3aed"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Top 4 ACC",
+        "note": "NCAA Tournament"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 4 ACC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 6 ACC",
+        "note": "ACC"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 4 ACC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2020,
+        "pos": "—",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "NCAA 1989*, 1991, 1992, 1993, 1994, 2009, 2014",
+      "31 ACC regular season titles",
+      "Most titles since 1990 — all-time #3"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 6,
+      "notable": [
+        "Nick Dang — 2025 R2 Austin FC",
+        "AJ Smith — 2025 R3",
+        "Aidan Morris — 2021 Columbus Crew (USMNT)",
+        "All-time: Claudio Reyna, John Harkes, Tony Meola"
+      ],
+      "draftRank": "Top 5 all-time MLS producers"
+    },
+    "acRank": "#24 National",
+    "kinRank": "Top 30",
+    "degreeTitle": "B.S. in Kinesiology",
+    "acuAlign": 13,
+    "acuAlignNote": "Strong — anatomy, physiology, biomechanics, motor control, sport psych all covered. UVA Health System gives extraordinary clinical placement access for pre-PT students.",
+    "soccerLevel": "ACC — Elite (7 NCAA titles)",
+    "cost": "~$62k/yr",
+    "aid": "Athletic + Merit",
+    "size": "25,000",
+    "prePT": "Strong",
+    "gpa": {
+      "minEntry": "3.0+ strongly preferred",
+      "minSchol": "3.5+ for merit aid",
+      "note": "UVA is academically selective. Athletic scholarship can compensate but GPA matters for admission.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 62000,
+      "tuition": 42000,
+      "roomBoard": 16000,
+      "fees": 4000,
+      "maxAthletic": 0.8,
+      "maxAcademic": 8000,
+      "aidType": "athletic+merit",
+      "internationalNote": "UVA is expensive but athletic scholarship can be substantial for elite players. Academic merit aid limited for internationals."
+    },
+    "culture": {
+      "vibe": "Academically prestigious, tradition-heavy, slightly formal. UVA has one of the most storied university cultures in America — founded by Thomas Jefferson, the 'Lawn' is a UNESCO World Heritage site. Students take academic pride seriously. Social life centres on the Corner bar district and Greek life.",
+      "thingsToDo": "Downtown Charlottesville restaurants and music venues, Shenandoah National Park hiking (40 min), Blue Ridge Parkway, wineries, Jefferson's Monticello, skiing at Wintergreen (45 min). Beautiful Virginia countryside.",
+      "socialScene": "Strong alumni network culture. Honour code tradition is taken seriously. International students present but less prominent than at larger state schools. Tight-knit soccer program community. Academically competitive peer group.",
+      "olivierMatch": "★★★ Charlottesville is charming but not a major city. Climate is cooler. Culture is more formal and traditional than Sydney. Best if Olivier values academic prestige and history over city lifestyle.",
+      "lifestyleTags": "Academic prestige, historic, traditional"
+    },
+    "facilityDetails": {
+      "stadium": "Klöckner Stadium — 8,000 capacity, natural grass surface, one of the most atmospheric soccer venues in the USA. Named after former player Andreas Klöckner. Full broadcast infrastructure, permanent seating, outdoor scoreboard.",
+      "trainingFields": "3 dedicated practice fields within the Klöckner complex (2 natural grass, 1 FieldTurf). Indoor training facility (Lannigan Field — 73,000 sq ft) for inclement weather. All surfaces maintained to professional standard.",
+      "strengthConditioning": "McCue Center — UVA's flagship athletic performance facility. 28,000 sq ft, completely rebuilt 2018. Olympic lifting platforms (16), squat rack systems, Keiser and Hammer Strength equipment. Cryotherapy chambers, normatec recovery stations, HRV testing, altitude tents. Dedicated strength and conditioning coaches for all varsity sports.",
+      "sportsScience": "UVA Sports Performance Lab — one of the top university sports science facilities in the country. GPS tracking (Catapult Vector), Vicon motion capture (24-camera), force plate systems, lactate/VO2 testing, reactive strength testing (VALD ForceDecks). Video analysis suite with Dartfish integration and individual player dashboards on iPads.",
+      "sportsMed": "UVA Athletics Sports Medicine — multiple certified athletic trainers. Team physician access to UVA Health sports medicine clinic. UVA Medical Center (Top 50 hospital nationally) with orthopaedic surgery, sports cardiology, and concussion management. Most comprehensive sports medicine environment in the guide.",
+      "academicLabs": "UVA Department of Kinesiology: anatomy lab with cadavers, biomechanics lab (full 3D capture), exercise physiology with 8 metabolic carts, motor learning and control lab. Pre-PT advising through the Curry School of Education. UVA School of Medicine anatomy access.",
+      "extras": "Scott Stadium (UVA football — 61,500 capacity) and John Paul Jones Arena (basketball) create an elite athletic culture on campus. Nameless Field natural grass pitch for open training. Historic Rotunda, Lawn, and UNESCO campus setting. UVA Aquatic & Fitness Center. $2.1B UVA research infrastructure accessible to undergraduates.",
+      "rating": "Elite",
+      "note": "Virginia's McCue Center and Sports Performance Lab represent one of the top 5 athletic facilities environments in this entire guide. Combined with Klöckner Stadium's atmosphere and UVA Medical Center access, this is a premier development environment."
+    },
+    "coach": {
+      "name": "George Gelnovatch",
+      "title": "Head Coach (since 1995)",
+      "email": "gsoccer@virginia.edu",
+      "phone": "434-982-5115",
+      "profile": "Most wins in Virginia history. 9 College Cups. Developer of USMNT players. Tactically sophisticated."
+    },
+    "devScores": {
+      "tactical": 95,
+      "technical": 90,
+      "fitness": 88,
+      "ptPath": 82
+    },
+    "fitOlivier": 72,
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Klöckner Stadium (8k cap)",
+      "McCue Center",
+      "Kinesiology Labs",
+      "Sports Performance Center"
+    ],
+    "courses": [
+      "KINE 3610 — Biomechanics",
+      "KINE 3630 — Exercise Physiology",
+      "KINE 4610 — Motor Control",
+      "BIOL 2100 — Cell & Molecular Biology"
+    ],
+    "rec": "Most storied men's soccer program in the USA. 7 NCAA titles. Top-5 MLS producer. Charlottesville is not a major city and climate is cool — less lifestyle match for Sydney. Fierce competition for spots.",
+    "url": "https://virginiasports.com/sports/mens-soccer"
+  },
+  {
+    "id": "wakeforest",
+    "name": "Wake Forest",
+    "full": "Wake Forest University",
+    "loc": "Winston-Salem, NC",
+    "region": "east",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#ffe4e6",
+      "#e11d48"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Top 5 ACC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 4 ACC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 6 ACC",
+        "note": "ACC"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 3 ACC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2020,
+        "pos": "Top 4 ACC",
+        "note": "NCAA Tourn"
+      }
+    ],
+    "titles": [
+      "NCAA 2007",
+      "Multiple ACC Tournament appearances"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 4,
+      "notable": [
+        "Travis Smith Jr. — 2025 R1 Chicago Fire",
+        "Liam O'Gara — 2025 R3",
+        "Trace Alphin — 2025 R2 LA Galaxy"
+      ],
+      "draftRank": "4 picks in single 2025 draft — highest single-year rate in ACC"
+    },
+    "acRank": "#50 National",
+    "kinRank": "Good (Health & Exercise Science)",
+    "degreeTitle": "B.S. in Health and Exercise Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong — anatomy, physiology, biomechanics, sport psych, exercise prescription covered. Wake Forest Baptist Medical Centre proximity unique for DPT clinical hours. Motor development less structured.",
+    "soccerLevel": "ACC — Very Strong (2007 champ)",
+    "cost": "~$73k/yr",
+    "aid": "Athletic + Merit",
+    "size": "8,500",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "3.0 NCAA core",
+      "minSchol": "3.3+ for merit aid consideration",
+      "note": "Wake Forest is selective. GPA 2.8 may be marginal — depends on athletic profile and trend.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 73000,
+      "tuition": 50000,
+      "roomBoard": 18000,
+      "fees": 5000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 10000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Wake Forest is the most expensive school in guide. Athletic scholarship critical. Merit aid available but competitive. Net cost after full athletic aid is ~$11k."
+    },
+    "culture": {
+      "vibe": "Small, tight-knit, academically intense. With only 8,500 undergrads, everyone knows each other — professors know student names, teams socialise together, and campus life is genuinely close. Winston-Salem has limited nightlife but strong arts culture.",
+      "thingsToDo": "Reynolda House Museum, Old Salem historic village, Greensboro and Charlotte day trips, Blue Ridge Parkway hiking, Piedmont Triad food scene. Wake Forest's small size means social life centres on campus.",
+      "socialScene": "Greek life is prominent. Very few international students by percentage. Strong sense of community pride. Sports teams socialise together. Academic culture is serious — Pro Humanitate motto taken literally.",
+      "olivierMatch": "★★ Winston-Salem is not a city and the campus bubble is tight. For Olivier, the small campus means intense personal development but limited urban exploration. Good if he values tight community over city lifestyle.",
+      "lifestyleTags": "Small campus, tight community, academic"
+    },
+    "facilityDetails": {
+      "stadium": "Spry Soccer Stadium — 3,000 capacity, natural grass surface, lights, and press box. Intimate atmosphere well-suited to the small campus. Recent pitch renovation with improved drainage system.",
+      "trainingFields": "2 practice fields adjacent to Spry Stadium. Wake Forest Soccer Training Complex has dedicated training surfaces with rebounder infrastructure. Indoor training space available at Lawrence Joel Memorial Coliseum for inclement weather.",
+      "strengthConditioning": "Wake Forest Allen Building Athletic Performance Center — 20,000 sq ft rebuilt 2019. Full free weight section, Olympic platforms, Keiser, power racks. Sports dietitian on staff. Normatec recovery, cryotherapy access through athletic medicine suite. Soccer-specific programming from dedicated performance coach.",
+      "sportsScience": "Wake Forest Sport Science Suite — GPS tracking (Catapult) for all sessions, HRV monitoring (Polar Team Pro), video analysis (Hudl), reactive agility testing. Department of Health and Exercise Science has biomechanics lab, exercise physiology teaching lab, and sport psychology suite.",
+      "sportsMed": "Wake Forest Sports Medicine — certified athletic trainer assigned to soccer. Access to Wake Forest Baptist Medical Center (Atrium Health) — one of the top academic medical centres in the South. Pre-PT students can access observation hours at Baptist Medical through kinesiology clinical placement program.",
+      "academicLabs": "HES (Health and Exercise Science) Department: 4 teaching labs including biomechanics, exercise physiology, motor behaviour, and sport/exercise psychology. Wake Forest Baptist Medical proximity is genuinely unique — Olivier could be observing DPT sessions in a major medical centre while competing in the ACC.",
+      "extras": "Sutton Center athletic complex with exclusive athlete dining. Wake Forest Reynolds Gym open to athletes. Small campus (8,500 students) means no queue for facilities — access is always available. Winston-Salem proximity to Charlotte (1.5hr) for big-city access.",
+      "rating": "Very Good",
+      "note": "Wake Forest's standout facility advantage is Wake Forest Baptist Medical Center — its proximity and the kinesiology department's clinical placement relationship make it genuinely unique for a pre-PT student. The athletic performance center is excellent for a small D1 program."
+    },
+    "coach": {
+      "name": "Bobby Muuss",
+      "title": "Head Coach",
+      "email": "bmuuss@wfu.edu",
+      "phone": "336-758-5640",
+      "profile": "4 MLS picks in 2025 draft alone. Strong ACC pipeline. Technical possession-based style suits an 8/10."
+    },
+    "devScores": {
+      "tactical": 90,
+      "technical": 88,
+      "fitness": 82,
+      "ptPath": 75
+    },
+    "fitOlivier": 68,
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Spry Soccer Stadium",
+      "Wake Forest Soccer Training Centre",
+      "Kinesiology Dept"
+    ],
+    "courses": [
+      "HES 201 — Human Anatomy",
+      "HES 301 — Exercise Physiology",
+      "HES 302 — Biomechanics",
+      "HES 401 — Sport Nutrition"
+    ],
+    "rec": "ACC powerhouse. 4 MLS picks in one draft. Small campus means strong faculty relationships for DPT applications. Winston-Salem is not a major city. GPA 2.8 may be admission challenge.",
+    "url": "https://godeacs.com/sports/mens-soccer"
+  },
+  {
+    "id": "smu",
+    "name": "SMU",
+    "full": "Southern Methodist University",
+    "loc": "Dallas, TX",
+    "region": "texas",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#fef3c7",
+      "#d97706"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "4th ACC",
+        "note": "Elite Eight — NCAA Tourn"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 5 AAC",
+        "note": "AAC"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 3 AAC",
+        "note": "AAC"
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd AAC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2020,
+        "pos": "2nd AAC",
+        "note": "Ranked #5 nationally"
+      }
+    ],
+    "titles": [
+      "2025 ACC Tournament Champions (first ever)",
+      "Elite Eight 2024",
+      "Multiple AAC titles",
+      "Hermann Trophy winner Eddie Munjoma"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 5,
+      "notable": [
+        "Jaylinn Mitchell — 2026 R1",
+        "Cesar Ruvalcaba — 2025 R2",
+        "Garrett McLaughlin — #8 overall 2020",
+        "Eddie Munjoma — Hermann Trophy, FC Dallas HGP",
+        "Luchi Gonzalez — former SMU player, now FC Dallas head coach"
+      ],
+      "draftRank": "Elite ACC pipeline; strong FC Dallas connection in Dallas"
+    },
+    "acRank": "Top 80 National",
+    "kinRank": "Health Sciences — Good",
+    "degreeTitle": "B.S. in Applied Physiology and Health Management",
+    "acuAlign": 10,
+    "acuAlignNote": "Solid core — anatomy, physiology, biomechanics, exercise prescription covered. Health management focus is slightly different from ACU BESS exercise science curriculum but pre-PT pathway is available.",
+    "soccerLevel": "ACC — Elite (2025 ACC Tourn champs)",
+    "cost": "~$65k/yr",
+    "aid": "Athletic + Merit",
+    "size": "12,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5 NCAA core (min)",
+      "minSchol": "3.3+ for merit scholarship",
+      "note": "SMU is moderately selective. Athletic scholarship can offset; GPA 2.8 is workable.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 65000,
+      "tuition": 44000,
+      "roomBoard": 17000,
+      "fees": 4000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 12000,
+      "aidType": "athletic+merit",
+      "internationalNote": "SMU has strong merit scholarship programs. Athletic + merit can combine well. Dedman College merit awards available to internationals with 3.3+ GPA."
+    },
+    "culture": {
+      "vibe": "Affluent, stylish, urban Dallas campus. SMU is known for its well-dressed student body and upscale Park Cities neighbourhood setting. Dallas energy is everywhere — major city, major sports, major ambition. The campus itself is beautiful and manicured.",
+      "thingsToDo": "AT&T Stadium (Cowboys NFL), American Airlines Center (Mavericks NBA/Stars NHL), Deep Ellum music district, Bishop Arts neighbourhood, Dallas Museum of Art, Klyde Warren Park, Fort Worth day trips. Dallas is America's 4th largest metro.",
+      "socialScene": "Predominantly domestic and upper-middle-class culture, but growing international presence. FC Dallas connection gives soccer players genuine professional visibility. Warm 8 months of the year. High-energy big-city feel.",
+      "olivierMatch": "★★★★ Dallas city campus, warm climate, top-25 soccer. Less cosmopolitan/multicultural than Miami or LA but genuine big-city energy. Upscale campus culture may suit or challenge depending on Olivier's preference.",
+      "lifestyleTags": "Upscale, big city, Dallas energy"
+    },
+    "facilityDetails": {
+      "stadium": "Westcott Field — 4,000 capacity, FieldTurf surface, permanent lighting, press box. Renovated 2023 as SMU joined the ACC. Located on the beautiful Park Cities campus.",
+      "trainingFields": "2 dedicated practice fields at Westcott complex. Additional SMU Athletics turf field access. SMU's Dallas Park Cities campus allows year-round outdoor training in warm Texas climate.",
+      "strengthConditioning": "SMU Dedman Center for Lifetime Sports Athletic Performance — 18,000 sq ft weight room rebuilt 2020. Olympic lifting platforms, Keiser machines, cable systems. Soccer-specific strength coach. Recovery suite: cryotherapy, normatec, contrast baths. Sports dietitian consultations for athletes.",
+      "sportsScience": "GPS tracking (Statsports GPS Elite) on all training sessions. Dartfish video analysis with individual player film sessions. Applied Physiology & Health Management department has exercise physiology lab, biomechanics teaching lab. FC Dallas analytics partnership provides exposure to professional match analysis systems.",
+      "sportsMed": "Dedicated certified athletic trainer for soccer. UT Southwestern Medical Center sports medicine partnership (one of the best academic medical centres in Texas). Clint Longenecker (team physician) is Dallas-based orthopaedic specialist. Good clinical access for observation hours.",
+      "academicLabs": "SMU Dedman College Applied Physiology labs: exercise physiology, biomechanics, health management computing. Meadows Museum access (arts). SMU's proximity to the Koons Health and Sciences Centre provides pre-health students outstanding advising resources.",
+      "extras": "AT&T Stadium (Cowboys) and American Airlines Center (Mavericks/Stars) — two of the best sports venues in America within 20 minutes. FC Dallas Toyota Stadium tour and training facility access for SMU soccer players. SMU campus itself is one of the most beautiful in Texas — manicured lawns, Georgian architecture.",
+      "rating": "Very Good",
+      "note": "Westcott Field was renovated for SMU's ACC entry — the stadium infrastructure is improving rapidly. The FC Dallas analytics partnership is a unique professional-standard exposure not found at most D1 programs."
+    },
+    "coach": {
+      "name": "Kevin Hudson",
+      "title": "Head Coach (9th season)",
+      "email": "khudson@smu.edu",
+      "phone": "214-768-2736",
+      "profile": "Led SMU to 2025 ACC Tournament title (first ever). Elite Eight 2024. FC Dallas direct connections — Luchi Gonzalez (FC Dallas HC) is SMU alum. Consistently top-25 nationally."
+    },
+    "devScores": {
+      "tactical": 92,
+      "technical": 88,
+      "fitness": 85,
+      "ptPath": 78
+    },
+    "fitOlivier": 87,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Westcott Field (4,000 cap)",
+      "Dedman Recreation Centre",
+      "Health Sciences Building",
+      "Dallas sports industry network"
+    ],
+    "courses": [
+      "PHYE 3322 — Exercise Physiology",
+      "PHYE 3300 — Biomechanics",
+      "PHYE 4350 — Sport Psychology",
+      "PHYE 4300 — Nutrition for Performance",
+      "PHYE 4380 — Exercise Programming"
+    ],
+    "rec": "SMU is a genuine sleeper pick. 2025 ACC Tournament Champions. Warm Dallas city campus. Luchi Gonzalez (FC Dallas HC) is an SMU alum — direct pro pathway. Top-25 consistently nationally. Strong soccer + good academics combination.",
+    "url": "https://smumustangs.com/sports/mens-soccer"
+  },
+  {
+    "id": "stjohns",
+    "name": "St. John's",
+    "full": "St. John's University",
+    "loc": "Queens, New York City, NY",
+    "region": "east",
+    "div": "D1",
+    "conf": "Big East Conference",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#ede9fe",
+      "#7c3aed"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Mid Big East",
+        "note": "Big East"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid Big East",
+        "note": "Big East"
+      },
+      {
+        "yr": 2022,
+        "pos": "Upper Big East",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid Big East",
+        "note": "Big East"
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid Big East",
+        "note": "Big East"
+      }
+    ],
+    "titles": [
+      "NCAA 1996",
+      "Multiple Big East titles"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Consistent USL Championship signings",
+        "NYC pro network — NYCFC, Red Bulls academy access"
+      ],
+      "draftRank": "Consistent D1 producer; NYC clinical network unique advantage"
+    },
+    "acRank": "Top 150",
+    "kinRank": "Good",
+    "degreeTitle": "B.S. in Human Performance",
+    "acuAlign": 10,
+    "acuAlignNote": "Core exercise science covered. NYC location provides extraordinary clinical placement access for DPT applications — Hospital for Special Surgery, NYU Langone, NY Presbyterian all accessible.",
+    "soccerLevel": "Big East — Competitive",
+    "cost": "~$58k/yr",
+    "aid": "Athletic + Need",
+    "size": "21,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.0 NCAA core (min)",
+      "minSchol": "3.0 for academic aid layer",
+      "note": "St. John's is accessible for international student-athletes. GPA 2.8 is fine.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 58000,
+      "tuition": 40000,
+      "roomBoard": 14000,
+      "fees": 4000,
+      "maxAthletic": 0.8,
+      "maxAcademic": 12000,
+      "aidType": "athletic+need",
+      "internationalNote": "St. John's offers multiple merit scholarship programs. Athletic + Catholic Mission Scholarship can stack well for international students."
+    },
+    "culture": {
+      "vibe": "New York City campus culture — fast-paced, ambitious, diverse, and never dull. Queens is genuine NYC — the most ethnically diverse urban county in the world. Campus itself is a green oasis but step outside and you're in one of the world's great cities.",
+      "thingsToDo": "Central Park, Manhattan skyline, Brooklyn Bridge, NYCFC/Red Bulls soccer, MSG events, Broadway, Museum Mile, Queens food scene (most diverse cuisine on earth), Citi Field, every type of music venue imaginable. NYC needs no introduction.",
+      "socialScene": "Extremely diverse student body. Every culture represented. Catholic university ethos but applied liberally. Commuter culture means less tight-knit than residential campuses. City is the campus in many ways.",
+      "olivierMatch": "★★★★ NYC is incomparable for urban experience. Weather is cold (winters) which is the main lifestyle mismatch. If Olivier can handle cold winters, the city culture and clinical network are extraordinary.",
+      "lifestyleTags": "NYC energy, global, never boring"
+    },
+    "facilityDetails": {
+      "stadium": "Belson Stadium — 3,000 capacity, FieldTurf surface, lights, permanent seating. Located in Queens, adjacent to the main St. John's campus. Big East broadcast-ready.",
+      "trainingFields": "2 practice fields at Belson complex. St. John's Athletics also uses Lou Carnesecca Arena outdoor areas for overflow training. Limited by NYC land constraints but well-maintained.",
+      "strengthConditioning": "St. John's Carnesecca Arena Athletic Weight Room — 12,000 sq ft, full free weight section, cable systems, functional training area. Dedicated performance coach for soccer. Recovery suite with normatec boots and contrast bath access through athletic training room.",
+      "sportsScience": "GPS tracking (Statsports) for all sessions. Video analysis via Hudl. Department of Human Performance and Exercise Science has biomechanics teaching lab and exercise physiology lab.",
+      "sportsMed": "Dedicated certified athletic trainer. Hospital for Special Surgery (HSS — ranked #1 orthopaedic hospital in the world, 14 consecutive years) has a partnership with St. John's Athletics. NYU Langone Sports Performance Center and NY Presbyterian Hospital are both accessible. Best sports medicine access of any school in this guide from a graduate school observation perspective.",
+      "academicLabs": "St. John's School of Education Human Performance: exercise physiology lab, anatomy lab, biomechanics teaching space. NYC clinical placement network is extraordinary — students can access HSS, NYU Langone, and NY Presbyterian for DPT observation hours without leaving the city.",
+      "extras": "Barclays Center and Madison Square Garden — two of the world's great arenas within 30 minutes. NYCFC and NY Red Bulls training ground access for players with agent connections. NYC's unmatched cultural offering: every museum, park, restaurant, and music venue. Metropolitan Museum of Art, Central Park, Brooklyn Bridge all accessible by subway.",
+      "rating": "Good",
+      "note": "Belson Stadium and the athletic facilities are functional but not elite by D1 standards. The extraordinary differentiator is the NYC clinical network — Hospital for Special Surgery is the #1 orthopaedic hospital in the world and St. John's players can access it for clinical observation."
+    },
+    "coach": {
+      "name": "Dave Masur",
+      "title": "Head Coach (30+ years)",
+      "email": "masurd@stjohns.edu",
+      "phone": "718-990-6139",
+      "profile": "450+ career wins. Excellent with international players. NYC connections for clinical internships outstanding."
+    },
+    "devScores": {
+      "tactical": 80,
+      "technical": 82,
+      "fitness": 78,
+      "ptPath": 78
+    },
+    "fitOlivier": 74,
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Belson Stadium",
+      "Sport Science Labs",
+      "NYC clinical network"
+    ],
+    "courses": [
+      "PEP 201 — Human Movement",
+      "PEP 305 — Exercise Physiology",
+      "PEP 320 — Kinesiology",
+      "PEP 401 — Rehabilitation Science"
+    ],
+    "rec": "NYC = Hospital for Special Surgery, NYU Langone, NY Presbyterian — best clinical DPT access in the country. Big East soccer is tough. Cool climate. City lifestyle partially compensates.",
+    "url": "https://redstormsports.com/sports/mens-soccer"
+  },
+  {
+    "id": "indiana",
+    "name": "Indiana",
+    "full": "Indiana University Bloomington",
+    "loc": "Bloomington, IN",
+    "region": "east",
+    "div": "D1",
+    "conf": "Big Ten Conference",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#ffe4e6",
+      "#e11d48"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "1st",
+        "note": "Big Ten Champions"
+      },
+      {
+        "yr": 2023,
+        "pos": "1st",
+        "note": "Big Ten Champions"
+      },
+      {
+        "yr": 2022,
+        "pos": "2nd",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2021,
+        "pos": "1st",
+        "note": "Big Ten Champions"
+      },
+      {
+        "yr": 2020,
+        "pos": "1st",
+        "note": "Big Ten Champions"
+      }
+    ],
+    "titles": [
+      "NCAA 1982, 1983, 1988, 1998, 1999, 2003, 2004, 2012",
+      "19 Big Ten regular season titles",
+      "16 Big Ten Tournament titles",
+      "39 consecutive NCAA Tournaments (record)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 5,
+      "notable": [
+        "Jansen Miller — 2025 R1 SKC",
+        "Collins Oduro — 2025 R2",
+        "Samuel Sarver — 2025 R2",
+        "Aidan Morris — 2021 Columbus Crew (USMNT)"
+      ],
+      "draftRank": "Top 10 all-time. Most decorated program in US college soccer history."
+    },
+    "acRank": "#30 National",
+    "kinRank": "Strong (9 dedicated labs)",
+    "degreeTitle": "B.S. in Kinesiology — Exercise Science Major",
+    "acuAlign": 15,
+    "acuAlignNote": "Near-full alignment — anatomy, physiology, biomechanics, motor control (dedicated lab), motor development, resistance training, sport psych, research, internship. Best motor control coverage of any program in guide.",
+    "soccerLevel": "Big Ten — 8× NCAA Champion",
+    "cost": "~$55k/yr",
+    "aid": "Athletic + Academic",
+    "size": "40,000+",
+    "prePT": "Very Strong",
+    "gpa": {
+      "minEntry": "2.3 NCAA core (min)",
+      "minSchol": "3.0+ for academic scholarship",
+      "note": "Indiana is manageable for international athletes with a strong athletic profile. GPA 2.8 borderline.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 55000,
+      "tuition": 36000,
+      "roomBoard": 15000,
+      "fees": 4000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 8000,
+      "aidType": "athletic+academic",
+      "internationalNote": "Big Ten athletic aid can be significant. Academic merit available. Bloomington in-state cost is low but international rate applies."
+    },
+    "culture": {
+      "vibe": "Classic American Big Ten college-town atmosphere at its absolute finest. Bloomington is a college town that punches above its weight — vibrant music scene, excellent restaurants, beautiful forested campus, and intense Hoosiers sports culture.",
+      "thingsToDo": "Sample Gates and historic campus walks, Lake Monroe hiking and watersports, Brown County State Park (stunning fall foliage), Indianapolis day trips (1hr), IU Auditorium world-class concerts, Little 500 bike race (legendary). Bloomington is surprisingly fun.",
+      "socialScene": "Warm Midwestern hospitality. International student community exists but the culture is predominantly American. Soccer team is a tight brotherhood — Big Ten culture means athletes are respected on campus. Academic atmosphere is serious but social.",
+      "olivierMatch": "★★★ Bloomington is not a city and winters are cold. But the campus energy, athletics culture, and Midwestern warmth make it surprisingly enjoyable. Best if Olivier embraces the quintessential American college experience.",
+      "lifestyleTags": "College-town, Hoosiers pride, surprisingly fun"
+    },
+    "facilityDetails": {
+      "stadium": "Bill Armstrong Stadium — 10,000 capacity, natural grass surface (annually re-sodded), full broadcast infrastructure. Home of 8 NCAA championships. One of the most storied soccer venues in American collegiate history.",
+      "trainingFields": "4 dedicated training fields adjacent to Armstrong Stadium (3 natural grass, 1 synthetic turf). Indoor practice space in Cook Hall for winter months. GPS tracking zones permanently installed on all surfaces.",
+      "strengthConditioning": "Simon Skjodt Assembly Hall adjacent Athletic Performance Center — 22,000 sq ft weight facility. Olympic lifting platforms (14), Keiser full system, Hammer Strength equipment. Dedicated strength and conditioning coaches for all Olympic sports. Cryotherapy chambers, normatec recovery, altitude tent room, hyperbaric oxygen chamber.",
+      "sportsScience": "IU School of Public Health Kinesiology Labs — 9 dedicated research and teaching laboratories including: bioenergetics and environmental stress suite (unique in the USA — altitude simulation and heat chamber combined), biomechanics lab (12-camera motion capture, 6 force plates), muscle physiology lab (muscle biopsy capability), motor control and coordination lab, cardiovascular physiology lab. GPS tracking (Catapult Vector) with real-time HRV monitoring on all sessions.",
+      "sportsMed": "Indiana Athletics Sports Medicine — multiple certified athletic trainers. IU Health (University Hospital affiliate) team physician access. Sports concussion research lab on campus. One of the few programs in the guide with a dedicated motor control rehabilitation research lab that doubles as a clinical resource.",
+      "academicLabs": "IU Kinesiology: 9 research labs accessible to undergraduates. The bioenergetics and environmental stress lab is the only one of its kind at an American university — nowhere else can simulate altitude AND heat stress simultaneously for research. Students working with faculty on research from Year 1 is the norm, not exception.",
+      "extras": "Assembly Hall (17,000 cap basketball) creates extraordinary game-day atmosphere. IU Memorial Union — one of the largest student unions in the USA. IU Outdoor Pool and Wellness Centre. Jacobs School of Music (world-famous) for cultural events. Bloomington itself surprises visitors — voted one of the best college towns in America.",
+      "rating": "Elite",
+      "note": "Indiana is the #2 facilities environment in this guide for Olivier's specific needs. Bill Armstrong Stadium has hosted 8 NCAA Championship games. The bioenergetics lab is unique in USA collegiate sport. The combination of soccer tradition, science infrastructure, and personal development environment is exceptional."
+    },
+    "coach": {
+      "name": "Todd Yeagley",
+      "title": "Head Coach",
+      "email": "tyeagley@indiana.edu",
+      "phone": "812-855-9148",
+      "profile": "Big Ten champs 2020, 2021, 2023, 2024. Developed Aidan Morris (USMNT). High-pressure, high-tempo style. Bioenergetics lab is only one of its kind in USA."
+    },
+    "devScores": {
+      "tactical": 93,
+      "technical": 88,
+      "fitness": 92,
+      "ptPath": 85
+    },
+    "fitOlivier": 70,
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Bill Armstrong Stadium (10,000 cap)",
+      "School of Public Health Kinesiology Labs",
+      "Bioenergetics & Environmental Stress Suite (unique USA)"
+    ],
+    "courses": [
+      "KIN 230 — Anatomy & Physiology",
+      "KIN 350 — Exercise Physiology",
+      "KIN 373 — Biomechanics",
+      "KIN 490 — Motor Learning",
+      "KIN 450 — Sport Rehabilitation"
+    ],
+    "rec": "Most decorated soccer program in USA history. Best motor control coverage in this guide (9 labs). Aidan Morris (USMNT) developed here. Bloomington is a classic college town — not a city — and climate is cold. For development and pro pathway if he can compete at Big Ten level.",
+    "url": "https://iuhoosiers.com/sports/mens-soccer"
+  },
+  {
+    "id": "princeton",
+    "name": "Princeton",
+    "full": "Princeton University",
+    "loc": "Princeton, NJ",
+    "region": "east",
+    "div": "IVY",
+    "conf": "Ivy League",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#fef9c3",
+      "#b45309"
+    ],
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "1st",
+        "note": "Ivy League + Tourn double — first ever, undefeated"
+      },
+      {
+        "yr": 2024,
+        "pos": "1st Tourn",
+        "note": "Ivy League Tournament winners"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid Ivy",
+        "note": "Ivy League"
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid Ivy",
+        "note": "Ivy League"
+      },
+      {
+        "yr": 2021,
+        "pos": "1st",
+        "note": "Perfect Ivy season (7-0)"
+      }
+    ],
+    "titles": [
+      "2025 Ivy League + Tournament double (first ever in history)",
+      "2024 Ivy League Tournament",
+      "2021 perfect Ivy season (7-0)",
+      "2018 Ivy League title",
+      "7 Ivy League titles under Barlow"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Kevin O'Toole — 2022 R2 NYCFC",
+        "Barlow has coached 5 total MLS players"
+      ],
+      "draftRank": "Growing pipeline — program surging in 2024–2025"
+    },
+    "acRank": "#1 National (US News)",
+    "kinRank": "Neuroscience / Molecular Biology (no kinesiology major)",
+    "degreeTitle": "No kinesiology major — Neuroscience or Molecular Biology pre-PT pathway",
+    "acuAlign": 6,
+    "acuAlignNote": "Partial — Princeton has no exercise science degree. Students take pre-PT through neuroscience or biology. Very different structure from ACU BESS. Strong sciences but not exercise-science specific.",
+    "soccerLevel": "Ivy League — 2× consecutive champions",
+    "cost": "~$85k/yr (before need-based aid)",
+    "aid": "Need-based ONLY — no athletic scholarships (can cover 100% for qualifying families)",
+    "size": "5,500",
+    "prePT": "Strong via science pathway",
+    "gpa": {
+      "minEntry": "3.9+ GPA typical admit",
+      "minSchol": "3.5 min (need-based only)",
+      "note": "Ivy League — no athletic scholarships. Typical admitted student GPA is 3.9+. GPA 2.8 is far below.",
+      "status": "below"
+    },
+    "fin": {
+      "costNum": 85000,
+      "tuition": 59000,
+      "roomBoard": 20000,
+      "fees": 6000,
+      "maxAthletic": 0,
+      "maxAcademic": 85000,
+      "aidType": "need-only",
+      "internationalNote": "NO athletic scholarships. 100% need-based aid only. Princeton meets full demonstrated financial need — families below $100k AUD may receive significant grants. Average aid package covers ~75% of costs."
+    },
+    "culture": {
+      "vibe": "Highly intellectual, traditions-focused, architecturally stunning. Princeton's Gothic campus is one of the most beautiful in the world. Academic culture is intense — 'Eating Clubs' replace Greek life as the social backbone. The town of Princeton is charming but quiet.",
+      "thingsToDo": "Princeton town restaurants and shops, New York City (1hr by train), Philadelphia (1hr), Delaware Water Gap hiking, Princeton Battle Monument, Nassau Street cultural events. NYC and Philly are weekend escapes.",
+      "socialScene": "Very small, intimate, elite. International students well-represented at graduate level; undergraduate international community is smaller. Honour code is sacred. Soccer team is a close-knit group. Eating club selection is a social rite of passage.",
+      "olivierMatch": "★★ Princeton town is quiet. Culture is highly academic and competitive. If Olivier gets in and excels, the alumni network is unmatched. But day-to-day atmosphere is more studious than social.",
+      "lifestyleTags": "Elite academic, historic, intellectually intense"
+    },
+    "facilityDetails": {
+      "stadium": "Roberts Stadium — 3,000 capacity, natural grass, Ivy League standards. Historic setting on Princeton's UNESCO campus. Traditional atmosphere with no commercial signage — pure athletic environment.",
+      "trainingFields": "2 natural grass training fields adjacent to Roberts Stadium. Bubble dome available for winter training (Princeton Athletic Complex). Princeton's maintenance standards mean surfaces are immaculate.",
+      "strengthConditioning": "Princeton Athletic Performance Center — 15,000 sq ft, rebuilt 2018. Full Olympic lifting, Keiser systems, functional training area. No professional athletes share these facilities — completely dedicated to Princeton varsity sports. Sports science and S&C coaching available to all varsity athletes.",
+      "sportsScience": "Princeton University facilities are world-class at the research level — but less integrated into athletic programmes than schools with exercise science departments. Video analysis available. No formal GPS tracking system confirmed for soccer. Princeton's research resources (cyclotron, genomics labs) are world-class but less directly applicable to sport performance.",
+      "sportsMed": "Excellent athletic medicine — Princeton University Health Services with on-site sports physician. Princeton Medical Center provides imaging and surgical consultation. Certifed athletic trainers assigned per sport. Academic medical access is excellent; sport science integration into training is less formalised.",
+      "academicLabs": "Princeton does not offer a kinesiology or exercise science major. Biology, neuroscience, and molecular biology departments have extraordinary lab resources — world-leading at the research level. For a pre-PT student, course electives in biology and neuroscience are strong, but the structured pre-PT pathway does not exist in the way it does at UF or Indiana.",
+      "extras": "Princeton Art Museum (free, world-class collection). Princeton Science Library. Nassau Street cultural district. Outdoor tennis, squash, rowing on Lake Carnegie. 600 acres of arboretum adjacent to campus. 90-minute train to NYC for pro games and cultural access.",
+      "rating": "Very Good",
+      "note": "Princeton's facilities are beautiful and well-resourced by Ivy League standards, but the absence of a kinesiology/exercise science department means the academic lab integration Olivier needs for DPT preparation is limited. Athletic facilities are top-quality but not the science environment."
+    },
+    "coach": {
+      "name": "Jim Barlow",
+      "title": "Head Coach (29th season)",
+      "email": "jbarlow@princeton.edu",
+      "phone": "609-258-3568",
+      "profile": "237-184-72 career record. 2025 Northeast Regional Coaching Staff of Year. 7 Ivy titles. Coached 5 MLS players. Princeton alum — deep connection to program."
+    },
+    "devScores": {
+      "tactical": 88,
+      "technical": 85,
+      "fitness": 80,
+      "ptPath": 72
+    },
+    "fitOlivier": 62,
+    "tags": [
+      "acad",
+      "soccer",
+      "ivy"
+    ],
+    "facilities": [
+      "Roberts Stadium (Princeton)",
+      "Class A athletic facilities",
+      "Academic research labs — world class"
+    ],
+    "courses": [
+      "NEU 101 — Neuroscience",
+      "MOL 214 — Quantitative Biology",
+      "CHM 201 — Chemistry",
+      "PHY 103 — General Physics",
+      "PSY 251 — Cognitive Neuroscience"
+    ],
+    "rec": "Princeton is surging — 2024 AND 2025 Ivy Tournament champions, first Ivy team ever to do the double. Jim Barlow coached the 2025 team to an undefeated conference season. Zero athletic scholarships but need-based aid can cover full cost. GPA 2.8 will be a significant admission challenge. Degree is not exercise science aligned.",
+    "url": "https://goprincetontigers.com/sports/mens-soccer"
+  },
+  {
+    "id": "yale",
+    "name": "Yale",
+    "full": "Yale University",
+    "loc": "New Haven, CT",
+    "region": "east",
+    "div": "IVY",
+    "conf": "Ivy League",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#fef9c3",
+      "#b45309"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Ivy Tourn Champs",
+        "note": "2023 Ivy Tournament Champions"
+      },
+      {
+        "yr": 2023,
+        "pos": "2nd Ivy",
+        "note": "Ivy Tournament Champions"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 4 Ivy",
+        "note": "Ivy League"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 4 Ivy",
+        "note": "Ivy League"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID — no Ivy season"
+      }
+    ],
+    "titles": [
+      "2023 Ivy League Tournament Champions",
+      "Consistent Ivy contender under Stannard"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Occasional USL/lower league signings",
+        "NYC/New Haven clinical sports network access"
+      ],
+      "draftRank": "Limited MLS pipeline — academic-first program"
+    },
+    "acRank": "#5 National (US News)",
+    "kinRank": "No kinesiology — Biology/Human Biology pre-PT pathway",
+    "degreeTitle": "No kinesiology major — Human Biology or Ecology & Evolutionary Biology pre-PT pathway",
+    "acuAlign": 5,
+    "acuAlignNote": "Partial — no exercise science degree. Pre-PT through general biology. Very different from ACU BESS structure. Yale's strength is academic prestige, not exercise science specificity.",
+    "soccerLevel": "Ivy League — Tournament Champions 2023",
+    "cost": "~$85k/yr (before need-based aid)",
+    "aid": "Need-based ONLY — no athletic scholarships",
+    "size": "14,000",
+    "prePT": "Strong via science pathway",
+    "gpa": {
+      "minEntry": "3.9+ GPA typical admit",
+      "minSchol": "3.5 min (need-based only)",
+      "note": "Ivy League — no athletic scholarships. Typical admitted student GPA is 3.9+. GPA 2.8 is far below.",
+      "status": "below"
+    },
+    "fin": {
+      "costNum": 85000,
+      "tuition": 59000,
+      "roomBoard": 20000,
+      "fees": 6000,
+      "maxAthletic": 0,
+      "maxAcademic": 85000,
+      "aidType": "need-only",
+      "internationalNote": "NO athletic scholarships. 100% need-based aid only. Yale financial aid for international students is generous — families under $75k income typically pay <$0. Admission is the barrier."
+    },
+    "culture": {
+      "vibe": "Intellectually vibrant with genuine warmth — Yale is less formal than Princeton. New Haven is a real city with pizza culture (literally Yale vs. Frank Pepe's is a thing), a thriving arts scene, and direct train access to NYC.",
+      "thingsToDo": "New Haven pizza institutions (Frank Pepe's, Sally's), Long Island Sound beaches, Yale Art Gallery, Yale Peabody Museum, New Haven Green, NYC (2hr by train), hiking on East Rock. New Haven is more liveable than people expect.",
+      "socialScene": "Extremely diverse intellectually. Yale residential college system creates tight sub-communities within the larger university. International students prominent. Theatre and arts culture very active.",
+      "olivierMatch": "★★★ New Haven is more accessible than Princeton's town. Yale culture blends intensity with warmth. Train to NYC makes weekends exciting. Cold winters are the main lifestyle gap for a Sydney native.",
+      "lifestyleTags": "Ivy intellectual, warmer culture, New Haven"
+    },
+    "facilityDetails": {
+      "stadium": "Reese Stadium — 3,000 capacity, natural grass, Ivy League setting. Historic Yale athletic campus. Well-maintained, traditional, understated.",
+      "trainingFields": "2 training fields at Yale Athletics. Yale's indoor facility (Lanman Center) provides covered training during New England winters. Natural grass surfaces maintained to Ivy standards.",
+      "strengthConditioning": "Yale Athletics Strength & Conditioning Center — 14,000 sq ft, fully equipped with Olympic platforms, free weights, Keiser, functional training zones. Shared with all Yale varsity sports. Dedicated performance coach for spring and fall soccer preparation.",
+      "sportsScience": "Yale Athletics video analysis (Hudl). Limited GPS tracking infrastructure confirmed for soccer. Yale's research labs (engineering, biology, neuroscience) are world-leading but not formally connected to the athletic training environment in the way exercise science schools are.",
+      "sportsMed": "Yale Health sports medicine with certified athletic trainers. Yale New Haven Hospital (top academic medical centre) provides specialist consultation. Dr Andrew Peterson (Yale team physician) is a sports orthopaedist. Excellent medical access; formal clinical placement for pre-PT students is less structured than dedicated health science schools.",
+      "academicLabs": "Yale has no kinesiology or exercise science major. Biology and neuroscience departments are world-class for research. Cushing Center (Yale's neuroscience building) has some of the best brain research labs in the world. For pre-PT, Yale students must build their pathway independently from neuroscience/biology electives.",
+      "extras": "Yale Payne Whitney Gymnasium — one of the world's great athletic buildings. Olympic pool, squash courts, climbing walls, fitness studios. Yale Art Gallery (free, world-class). Yale Repertory Theatre. New Haven Green cultural events. Train access to NYC (2hr) for weekend exploration.",
+      "rating": "Good",
+      "note": "Yale's athletic facilities are impressive by any standard. However, like Princeton, the lack of an exercise science academic infrastructure means the integrated lab-to-field development pathway Olivier needs is absent. Beautiful environment but requires independent construction of pre-PT pathway."
+    },
+    "coach": {
+      "name": "Kylie Stannard",
+      "title": "Head Coach (since 2014)",
+      "email": "kylie.stannard@yale.edu",
+      "phone": "203-432-1456",
+      "profile": "2023 Ivy Tournament Champions. New Haven is smaller than NYC but more accessible. Yale's 2025 class ranked #32 nationally by Top Drawer."
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 80,
+      "fitness": 78,
+      "ptPath": 68
+    },
+    "fitOlivier": 58,
+    "tags": [
+      "acad",
+      "soccer",
+      "ivy",
+      "city"
+    ],
+    "facilities": [
+      "Reese Stadium (Yale)",
+      "Elite academic science facilities",
+      "New Haven clinical network"
+    ],
+    "courses": [
+      "BIOL 101 — Principles of Biology",
+      "MCDB 120 — Cell Biology",
+      "CHEM 161 — General Chemistry",
+      "MCDB 310 — Human Physiology"
+    ],
+    "rec": "Yale won the 2023 Ivy Tournament. New Haven is a real city — more accessible than Princeton or Ithaca. No athletic scholarships. No exercise science degree. GPA 2.8 is a major admission challenge. Best considered if Olivier's GPA improves significantly and he has extraordinary academic potential.",
+    "url": "https://yalebulldogs.com/sports/mens-soccer"
+  },
+  {
+    "id": "charleston",
+    "name": "Charleston",
+    "full": "College of Charleston",
+    "loc": "Charleston, SC",
+    "region": "east",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e0f2fe",
+      "#0284c7"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "4th CAA",
+        "note": "10-6-2 overall"
+      },
+      {
+        "yr": 2023,
+        "pos": "5th CAA",
+        "note": "CAA"
+      },
+      {
+        "yr": 2022,
+        "pos": "4th CAA",
+        "note": "CAA"
+      },
+      {
+        "yr": 2021,
+        "pos": "6th CAA",
+        "note": "CAA"
+      },
+      {
+        "yr": 2020,
+        "pos": "4th CAA",
+        "note": "COVID season"
+      }
+    ],
+    "titles": [
+      "50 years of soccer 2024",
+      "Improving under Wiggans — 10-win season 2024"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Charleston Battery (USL) — local pro team",
+        "Battery connections provide occasional USL pathways"
+      ],
+      "draftRank": "Limited MLS pipeline; local USL Battery connections"
+    },
+    "acRank": "Regional Strong",
+    "kinRank": "Kinesiology — Good",
+    "degreeTitle": "B.S. in Kinesiology",
+    "acuAlign": 10,
+    "acuAlignNote": "Core kinesiology covered. Charleston's program is solid but smaller than major research universities. Good for a student who prioritises lifestyle and city over research facilities.",
+    "soccerLevel": "CAA — Competitive (improving)",
+    "cost": "~$38k/yr",
+    "aid": "Athletic + Need",
+    "size": "11,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.0 NCAA core (min)",
+      "minSchol": "3.0 for merit layer",
+      "note": "College of Charleston is accessible. GPA 2.8 is comfortable for both admission and aid.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 38000,
+      "tuition": 24000,
+      "roomBoard": 11000,
+      "fees": 3000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 10000,
+      "aidType": "athletic+need",
+      "internationalNote": "Affordable D1. Athletic scholarship can cover most costs. Academic merit available for 3.0+ GPA."
+    },
+    "culture": {
+      "vibe": "One of America's most beautiful and charming cities. The College of Charleston sits in the heart of the historic district — cobblestone streets, antebellum architecture, and waterfront beauty. The campus atmosphere matches the city — relaxed, social, and genuinely enjoyable.",
+      "thingsToDo": "Rainbow Row architecture walks, Sullivan's Island and Isle of Palms beaches (20 min), Charleston Battery waterfront, King Street shopping and restaurants, Fort Sumter tours, Mount Pleasant Pier, Boone Hall Plantation. Charleston is endlessly photogenic.",
+      "socialScene": "Warm, Southern hospitality. Predominately domestic students but growing international presence. Charleston Battery soccer connection means players have local pro visibility. Beach access excellent. Social scene on Upper King Street is one of the best college bar strips in the South.",
+      "olivierMatch": "★★★★ Charleston is a genuinely beautiful and liveable city. Warm, coastal, social — closer to Sydney lifestyle than most East Coast options. Smaller D1 program means personal attention. Excellent city culture.",
+      "lifestyleTags": "Historic, coastal, Southern charm"
+    },
+    "facilityDetails": {
+      "stadium": "Patriots Point Soccer Complex — opened 2000, $6.5M facility, 2,000 capacity, natural grass, lights. Located 7 miles from main campus at Mt. Pleasant with stunning Charleston Harbour views from the pitch.",
+      "trainingFields": "Training fields at Patriots Point and additional on-campus practice areas. Natural grass maintained to good standard. Year-round Charleston climate allows outdoor training 11+ months annually.",
+      "strengthConditioning": "CofC Athletics Weight Room — 8,000 sq ft, functional, adequate. Free weights, Olympic platforms, cable systems. Shared with all CofC varsity sports. Smaller program means more individual attention from S&C staff. Access to Charleston Battery training facilities occasionally available for top players.",
+      "sportsScience": "GPS tracking (Statsports) introduced 2023. Video analysis via Hudl. Kinesiology department has basic exercise physiology and biomechanics teaching labs. Less sophisticated sports science infrastructure than larger programs but growing.",
+      "sportsMed": "CofC Athletics certified athletic trainer. Medical University of South Carolina (MUSC) sports medicine partnership — MUSC is a top academic medical centre with strong orthopaedics and sports cardiology. Good medical access for a mid-major D1 program.",
+      "academicLabs": "CofC Department of Health and Human Performance: biomechanics teaching lab, exercise physiology lab, motor behaviour lab. MUSC clinical placement connections for pre-PT students are valuable — MUSC has a Doctor of Physical Therapy program on campus.",
+      "extras": "Patriots Point Naval Museum adjacent to soccer complex (USS Yorktown aircraft carrier). Charleston Harbour and beach access. Historic King Street and Market Street in downtown Charleston. Battery soccer facility has the best views of any soccer stadium in this guide — Charleston Harbour waterfront.",
+      "rating": "Good",
+      "note": "Patriots Point is a gem — a beautiful facility in a stunning coastal location. But the overall sports science infrastructure is less developed than larger programs. The MUSC DPT program connection is a unique and under-appreciated advantage for a pre-PT student."
+    },
+    "coach": {
+      "name": "Keith Wiggans",
+      "title": "Head Coach (6th season)",
+      "email": "kwiggans@cofc.edu",
+      "phone": "843-953-5932",
+      "profile": "CofC alum. Played 7 seasons for Charleston Battery (USL). Record improving: 1-4-3 (2020) to 10-6-2 (2024). Alumni connections to pro soccer in Charleston. 50th anniversary season 2024."
+    },
+    "devScores": {
+      "tactical": 76,
+      "technical": 78,
+      "fitness": 74,
+      "ptPath": 74
+    },
+    "fitOlivier": 74,
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Patriots Point Soccer Complex ($6.5M, 2000)",
+      "Kinesiology Labs",
+      "Charleston clinical network"
+    ],
+    "courses": [
+      "KIN 201 — Anatomy & Physiology",
+      "KIN 330 — Exercise Physiology",
+      "KIN 340 — Biomechanics",
+      "KIN 420 — Sport Psychology"
+    ],
+    "rec": "Charleston is one of America's most beautiful cities — historic waterfront, warm climate. Keith Wiggans played for the local pro team (Charleston Battery). Best if Olivier values city lifestyle and a developing D1 program with personal coaching.",
+    "url": "https://cofcsports.com/sports/mens-soccer"
+  },
+  {
+    "id": "pba",
+    "name": "PBA",
+    "full": "Palm Beach Atlantic University",
+    "loc": "West Palm Beach, FL",
+    "region": "south",
+    "div": "D2",
+    "conf": "Sunshine State Conference (SSC)",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#d1fae5",
+      "#059669"
+    ],
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "1st SSC",
+        "note": "SSC Regular Season Champs — #2 nationally, 13-3-2"
+      },
+      {
+        "yr": 2024,
+        "pos": "1st Tourn",
+        "note": "SSC Tournament Champions"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2021,
+        "pos": "N/A",
+        "note": "Building phase"
+      }
+    ],
+    "titles": [
+      "2025 SSC Regular Season Champions (8-0-2 conf)",
+      "2024 SSC Tournament Champions",
+      "4 SSC titles in program history",
+      "Ranked #2 nationally 2025"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Multiple USL2 and international pro signings annually",
+        "West Palm Beach / Fort Lauderdale area has strong USL league connections"
+      ],
+      "draftRank": "D2 level — USL2 and international pro pathway"
+    },
+    "acRank": "Faith-Based Liberal Arts",
+    "kinRank": "NSCA-accredited Applied Physiology & Kinesiology",
+    "degreeTitle": "B.S. in Applied Physiology and Kinesiology — Pre-Physical Therapy Concentration",
+    "acuAlign": 14,
+    "acuAlignNote": "HIGHEST ACADEMIC MATCH in guide. Pre-PT is in the degree concentration title. NSCA accredited. Internships at Jupiter Medical Center, Orlando Health, Paley Advanced Orthopedic Institute built into degree. Mandatory clinical placement aligns with ACU EXSC398.",
+    "soccerLevel": "SSC D2 — #2 nationally 2025",
+    "cost": "~$38k/yr",
+    "aid": "Athletic + Academic",
+    "size": "3,500",
+    "prePT": "Excellent — Pre-PT in degree title",
+    "gpa": {
+      "minEntry": "2.0 min (Christian mission)",
+      "minSchol": "3.0 for academic scholarship",
+      "note": "PBA is faith-based and accessible. Athletic + academic aid stacks well. GPA 2.8 is eligible.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 38000,
+      "tuition": 26000,
+      "roomBoard": 10000,
+      "fees": 2000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 12000,
+      "aidType": "athletic+academic",
+      "internationalNote": "PBA Christian mission scholarship adds to athletic package. Presidential Scholarship for 3.5+ GPA. Athletic + academic stacks to near-full coverage possible."
+    },
+    "culture": {
+      "vibe": "Faith-based Christian university with a tight-knit, values-driven community. PBA is small (3,500 students) but West Palm Beach is a full city outside the gates. The campus atmosphere is warm, supportive, and personally focused — coaches and professors know every student.",
+      "thingsToDo": "West Palm Beach waterfront, Clematis Street restaurants and nightlife, Palm Beach Island luxury experience, Palm Beach Zoo, Norton Museum of Art, Fort Lauderdale (45 min), Miami (90 min), Singer Island beaches (20 min). South Florida has everything.",
+      "socialScene": "Small campus means everyone knows each other — close community culture. Faith values are present but not overbearing for non-religious students. Many international athletes. West Palm Beach has a cosmopolitan, Latin-influenced energy.",
+      "olivierMatch": "★★★★ PBA's tight-knit culture provides personal development support that larger schools can't match. West Palm Beach lifestyle is warm, coastal, and diverse. Best overall package for Olivier — the city compensates for the small campus.",
+      "lifestyleTags": "Faith community, warm coastal city, personal"
+    },
+    "facilityDetails": {
+      "stadium": "PBA Soccer/Lacrosse Field — 1,500 capacity, FieldTurf surface, permanent lighting. Compact but well-maintained facility on the West Palm Beach campus. SSC-standard infrastructure.",
+      "trainingFields": "2 training fields at PBA athletic complex. Additional turf field for sport-specific sessions. Year-round South Florida climate — unlimited outdoor training.",
+      "strengthConditioning": "PBA Health and Human Performance Center — rebuilt 2022, NSCA-accredited facility. Modern strength equipment (free weights, Olympic platforms, Keiser, cable systems), recovery suite (normatec, contrast baths), sports nutrition station. NSCA accreditation is a significant credential — means the facility meets national sports science standards.",
+      "sportsScience": "GPS tracking (Statsports) for all sessions. Video analysis (Hudl). PBA's Health and Human Performance Lab has VO2 max testing, body composition (DEXA scan), force plate assessment, and movement screening built into the athletic program — unusually sophisticated for a D2 school.",
+      "sportsMed": "PBA Athletics certified athletic trainer. Jupiter Medical Center formal partnership — one of the top hospital systems in Palm Beach County. Pre-PT students can access Jupiter Medical for clinical observation hours as part of their APK degree program.",
+      "academicLabs": "PBA Applied Exercise Science and Health department has dedicated labs: Human Performance Lab (metabolic testing, body composition), Biomechanics Lab, Sports Nutrition Lab. The Pre-Physical Therapy Concentration in the APK degree integrates directly with lab access and Jupiter Medical clinical placements.",
+      "extras": "PBA's faith-based campus creates a genuinely supportive community — small (3,500 students) means everyone knows the soccer team. West Palm Beach waterfront (Clematis Street) 10 minutes from campus. Singer Island beach 20 minutes. Palm Beach luxury island experience 25 minutes. Fort Lauderdale 45 minutes, Miami 90 minutes.",
+      "rating": "Very Good",
+      "note": "PBA's NSCA-accredited facility is unusually sophisticated for a D2 school of this size. The integrated Pre-PT lab access and Jupiter Medical clinical partnership directly embedded in the degree curriculum is the standout feature — you're building clinical hours while playing competitive soccer."
+    },
+    "coach": {
+      "name": "Lucas Martorana",
+      "title": "Head Coach (appointed 2022)",
+      "email": "lucas.martorana@pba.edu",
+      "phone": "561-803-2000",
+      "profile": "61-9-6 record as assistant before becoming HC. 2025 SSC Coach of Year. #2 nationally. Tin Vastic led SSC in goals 2025. All-American Hermoso anchored defence. Former USL/PDL/MISL professional."
+    },
+    "devScores": {
+      "tactical": 86,
+      "technical": 84,
+      "fitness": 82,
+      "ptPath": 97
+    },
+    "fitOlivier": 93,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "acad",
+      "dev"
+    ],
+    "facilities": [
+      "PBA Soccer/Lacrosse Field",
+      "Health and Human Performance Lab (state of the art)",
+      "Jupiter Medical Center placements",
+      "NSCA accredited facilities"
+    ],
+    "courses": [
+      "KIN 201 — Anatomy & Physiology",
+      "KIN 310 — Exercise Physiology",
+      "KIN 320 — Biomechanics",
+      "KIN 410 — Exercise Prescription",
+      "KIN 430 — Pre-Physical Therapy Seminar"
+    ],
+    "rec": "PBA is the single best academic match for Olivier's goals in the entire guide. \"Pre-Physical Therapy\" is literally in the degree concentration title. Ranked #2 nationally in D2 in 2025. West Palm Beach is warm, coastal, and cosmopolitan — close to Sydney lifestyle. Mandatory clinical internship at Jupiter Medical Centre and Orlando Health.",
+    "url": "https://pbasailfish.com/sports/mens-soccer"
+  },
+  {
+    "id": "lynn",
+    "name": "Lynn",
+    "full": "Lynn University",
+    "loc": "Boca Raton, FL",
+    "region": "south",
+    "div": "D2",
+    "conf": "Sunshine State Conference (SSC)",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#e0e7ff",
+      "#4f46e5"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Top 5 SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 5 SSC",
+        "note": "SSC — Final Four 2021"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 4 SSC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 3 SSC",
+        "note": "Final Four"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "2021 D2 Final Four run",
+      "Multiple SSC regional appearances",
+      "Consistent national top-25 D2 ranking"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "3–4 USL/international signings per year",
+        "Strong Australian and UK player placement track record"
+      ],
+      "draftRank": "Best D2 pipeline for Australian players specifically"
+    },
+    "acRank": "Regional Strong",
+    "kinRank": "Exercise Science — Strong",
+    "degreeTitle": "B.S. in Exercise Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong — anatomy, physiology, biomechanics, exercise prescription covered. Small campus means personal advising for DPT applications. South Florida clinical network good.",
+    "soccerLevel": "SSC D2 — Top 10 nationally",
+    "cost": "~$47k/yr",
+    "aid": "Athletic + Merit",
+    "size": "3,200",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.0 min",
+      "minSchol": "3.0 for academic layer",
+      "note": "Lynn has no restrictive GPA entry requirement. Strong athletic profile is the primary factor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 47000,
+      "tuition": 32000,
+      "roomBoard": 12000,
+      "fees": 3000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 10000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Lynn actively recruits international students. Merit aid available. Coach Grant has placed Australians with strong overall packages. Net cost after good offer: ~$15-20k."
+    },
+    "culture": {
+      "vibe": "International, sophisticated, and intentionally global. Lynn University's student body is ~45% international — it is one of the most globally diverse universities in the USA. Boca Raton is an affluent, polished South Florida city 20 minutes from the beach.",
+      "thingsToDo": "Boca Raton's Mizner Park restaurants and shops, Red Reef Park beach, Delray Beach Atlantic Avenue, Fort Lauderdale Las Olas (20 min), Palm Beach (30 min), Miami (1hr), Everglades day trips. Boca has an upscale coastal lifestyle.",
+      "socialScene": "The most international campus culture in the guide. Cultures from 100+ countries. Australian students blend in effortlessly. Soccer team has had many international players — you won't feel isolated. Relaxed and welcoming.",
+      "olivierMatch": "★★★★★ Lynn is arguably the best cultural fit for Olivier specifically. 45% international, warm Florida sun, 20 minutes from the beach, Boca Raton's Mediterranean-lite atmosphere. Closest day-to-day feel to Sydney expat life.",
+      "lifestyleTags": "Global, beach, cosmopolitan"
+    },
+    "facilityDetails": {
+      "stadium": "Lynn Soccer Complex — 2,000 capacity, FieldTurf, permanent lighting. Updated 2020. Located on Boca Raton campus. SSC D2 standard.",
+      "trainingFields": "2 dedicated training fields at Lynn Athletic Complex. Year-round South Florida climate allows unlimited outdoor training. GPS tracking zones on practice fields.",
+      "strengthConditioning": "Lynn Athletics Performance Center — 10,000 sq ft, full free weight section, Olympic platforms, cable systems, functional training zone. Recovery station with normatec and ice baths. Shared with all Lynn varsity sports but soccer is the flagship athletic program with priority scheduling.",
+      "sportsScience": "GPS tracking (Statsports GPS Elite) for all training sessions. Video analysis via Hudl with individual player dashboards. Lynn Kinesiology department has exercise physiology and biomechanics teaching labs.",
+      "sportsMed": "Lynn Athletics certified athletic trainer. Boca Raton Regional Hospital sports medicine partnership. Lynn's close relationship with international players (including Australians) means the athletic trainer is experienced with players from different health systems.",
+      "academicLabs": "Lynn University College of Arts and Sciences: exercise science labs for physiology and biomechanics teaching. Small class sizes (avg 17 students) mean laboratory access is less competitive than at larger universities — guaranteed bench time for every student.",
+      "extras": "Boca Raton's Mizner Park (10 min) — outdoor restaurants, cinema, cultural events. Red Reef Park beach (10 min drive). FAU Stadium nearby for large-scale events. Fort Lauderdale 20 min. Palm Beach 30 min. Miami 1 hour.",
+      "rating": "Good",
+      "note": "Lynn's facilities are functional D2 standard — good, not elite. The standout is the small class size advantage in academic labs (guaranteed bench time) and Coach Grant's specific experience integrating international athletes, including Australians, into the program."
+    },
+    "coach": {
+      "name": "Richie Grant",
+      "title": "Head Coach",
+      "email": "rgrant@lynn.edu",
+      "phone": "561-237-7665",
+      "profile": "Multiple SSC Coach of Year. Strong international recruiting — many Australian and UK players. Development-focused. Known for placing internationals into pro markets."
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 85,
+      "fitness": 80,
+      "ptPath": 80
+    },
+    "fitOlivier": 94,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "aid",
+      "dev"
+    ],
+    "facilities": [
+      "Lynn Soccer Complex",
+      "Fitness & Wellness Center",
+      "Kinesiology Labs",
+      "Beach 2 miles"
+    ],
+    "courses": [
+      "EX SCI 101 — Intro Exercise Science",
+      "KIN 302 — Human Anatomy & Physiology",
+      "KIN 410 — Exercise Physiology",
+      "KIN 450 — Rehabilitation Science"
+    ],
+    "rec": "Top pick for Australian players specifically. Warm Boca Raton sunshine, large international community, personal coaching on small campus. Coach Grant has Australian connections. Exercise Science to pre-PT pathway available. Best Sydney lifestyle match at D2 level.",
+    "url": "https://lynuniversity.com/athletics/soccer"
+  },
+  {
+    "id": "barry",
+    "name": "Barry",
+    "full": "Barry University",
+    "loc": "Miami Shores, FL",
+    "region": "south",
+    "div": "D2",
+    "conf": "Sunshine State Conference (SSC)",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e0f2fe",
+      "#0284c7"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Top 4 SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 4 SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 3 SSC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 4 SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "D2 NCAA 1984, 1986, 1993, 2001 — Most D2 national titles all-time",
+      "Multiple SSC Championships"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "3–4 USL/international signings annually",
+        "Inter Miami CF / Fort Lauderdale CF connections",
+        "Multiple European lower league placements"
+      ],
+      "draftRank": "Best D2 all-time program for total pro pipeline — 4 national titles"
+    },
+    "acRank": "Regional",
+    "kinRank": "School of Human Performance — Strong",
+    "degreeTitle": "B.S. in Exercise Science / Human Performance",
+    "acuAlign": 13,
+    "acuAlignNote": "Strong — includes dedicated HPS 450 Pre-Physical Therapy Seminar as formal degree requirement (rare at D2 level). Anatomy, physiology, biomechanics, exercise prescription, resistance training all covered.",
+    "soccerLevel": "SSC D2 — 4× National Champions (most ever)",
+    "cost": "~$44k/yr",
+    "aid": "Athletic + Academic",
+    "size": "8,600",
+    "prePT": "Excellent — explicit HPS 450 Pre-PT Seminar in degree",
+    "gpa": {
+      "minEntry": "2.0 min",
+      "minSchol": "3.0+ for academic scholarship",
+      "note": "Barry is accessible. No minimum GPA barrier for entry. GPA 2.8 qualifies for academic aid stacking.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 44000,
+      "tuition": 30000,
+      "roomBoard": 11000,
+      "fees": 3000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 10000,
+      "aidType": "athletic+academic",
+      "internationalNote": "Barry Miami location — high academic aid stack possible. HPS Pre-PT degree has academic scholarship tracks. Total package can be very competitive."
+    },
+    "culture": {
+      "vibe": "Urban Miami Shores campus with a Latin American-influenced energy. Barry is small but Miami permeates everything — the culture, the food, the music, the people. Small campus means tight personal community while the city provides endless stimulation.",
+      "thingsToDo": "Miami Beach (20 min), Wynwood Murals, Brickell city centre, Coconut Grove, Miami Zoo, Everglades, South Beach nightlife, Miami Heat basketball. Being in Miami means unlimited world-class entertainment.",
+      "socialScene": "Diverse, Latin-influenced, globally minded. Many international students — especially Latin American and Caribbean. Soccer culture very strong. Small campus means faculty and coaches are personally invested in every student.",
+      "olivierMatch": "★★★★★ Miami is Sydney's American cousin — ocean, warmth, multiculturalism, and ambition. Barry's small campus provides personal support while Miami provides everything else. Strong cultural match for Olivier.",
+      "lifestyleTags": "Miami multicultural, warm, tight community"
+    },
+    "facilityDetails": {
+      "stadium": "Barry University Soccer Stadium — 2,000 capacity, natural grass, lights. Miami Shores location. Historic D2 program with multiple national championships.",
+      "trainingFields": "2 training fields at Barry Athletic Complex. Year-round Miami climate. Natural grass surfaces maintained well. Miami sports training culture means players have access to professional facility visits.",
+      "strengthConditioning": "Barry Athletics Performance Center — 9,000 sq ft, Olympic lifting, free weights, cable systems. Sports dietitian on staff for health sciences students. Recovery equipment including normatec and contrast baths.",
+      "sportsScience": "GPS tracking (Statsports) for sessions. Video analysis (Hudl). Barry's School of Human Performance has dedicated labs including: HPS 310 Biomechanics Lab, HPS 320 Exercise Physiology Lab, and HPS 450 Pre-PT Seminar Lab — a structured capstone course integrating clinical observation.",
+      "sportsMed": "Barry Athletics certified athletic trainer. University of Miami Health System partnership — Jackson Memorial Hospital sports medicine access. This is the same health system used by Inter Miami CF and the Miami Heat. Pre-PT students can observe clinical sessions at UM Health facilities.",
+      "academicLabs": "Barry School of Human Performance: anatomy lab, exercise physiology suite, biomechanics teaching lab. The HPS 450 Pre-PT Seminar course is a formal academic requirement that integrates clinical observation — genuinely unique in D2. UM Health clinical placement access as part of degree.",
+      "extras": "Miami Beach (20 min drive). Wynwood Arts District (25 min). Brickell financial district. Miami Heat (Kaseya Center) 15 min. Inter Miami (Chase Stadium) 30 min. Barry's small campus (8,500 students) in Miami Shores — a beautiful, quiet neighbourhood right in Miami.",
+      "rating": "Good",
+      "note": "Barry's facilities are D2 standard but the HPS 450 Pre-PT Seminar course, UM Health clinical access, and the program's 4 national championships create a uniquely rich development environment. Miami as a backdrop compensates generously for the modest campus facilities."
+    },
+    "coach": {
+      "name": "Petsa Ivanovic",
+      "title": "Head Coach",
+      "email": "pivanovic@barry.edu",
+      "phone": "305-899-3770",
+      "profile": "Multiple SSC championships. Strong international recruiting. US Soccer Federation licensed."
+    },
+    "devScores": {
+      "tactical": 84,
+      "technical": 80,
+      "fitness": 82,
+      "ptPath": 90
+    },
+    "fitOlivier": 88,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Barry Soccer Stadium",
+      "Exercise Physiology Labs",
+      "Miami training network",
+      "Sports Medicine Suite"
+    ],
+    "courses": [
+      "HPS 301 — Exercise Physiology",
+      "HPS 320 — Biomechanics",
+      "HPS 450 — Pre-Physical Therapy Seminar",
+      "HPS 210 — Anatomy & Physiology"
+    ],
+    "rec": "Barry has 4 D2 national titles — most ever. HPS 450 Pre-PT Seminar is unique at D2 level. Miami multicultural energy matches Sydney culture. Inter Miami CF connections. School of Human Performance is a dedicated college.",
+    "url": "https://gobarrybucs.com/sports/mens-soccer"
+  },
+  {
+    "id": "nova",
+    "name": "Nova SE",
+    "full": "Nova Southeastern University",
+    "loc": "Fort Lauderdale, FL",
+    "region": "south",
+    "div": "D2",
+    "conf": "Sunshine State Conference (SSC)",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#d1fae5",
+      "#059669"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Mid SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid SSC",
+        "note": "SSC"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 3 SSC",
+        "note": "SSC Final Four run"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "2021 D2 Final Four run — program's most successful season ever",
+      "Multiple SSC appearances"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Occasional USL/NISA signings",
+        "Fort Lauderdale Strikers connections",
+        "Multiple former players in lower professional leagues"
+      ],
+      "draftRank": "Limited pipeline — health sciences career placement stronger than pro soccer"
+    },
+    "acRank": "Regional (large health sciences institution)",
+    "kinRank": "Kinesiology and Exercise Science — Strong",
+    "degreeTitle": "B.S. in Kinesiology and Exercise Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong core — anatomy, physiology, biomechanics, sport psych covered. NSU is primarily a health sciences university; degree has strong clinical health science integration. Neuroscience faculty prominent.",
+    "soccerLevel": "SSC D2 — Competitive",
+    "cost": "~$40k/yr",
+    "aid": "Athletic + Academic",
+    "size": "25,600",
+    "prePT": "Strong",
+    "gpa": {
+      "minEntry": "2.5 min",
+      "minSchol": "3.0+ for academic scholarship",
+      "note": "NSU is a health sciences institution — moderately selective. GPA 2.8 is fine.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 40000,
+      "tuition": 28000,
+      "roomBoard": 10000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 12000,
+      "aidType": "athletic+academic",
+      "internationalNote": "NSU health sciences university has strong academic merit programs. Athletic + NSU Presidential Scholarship combination possible."
+    },
+    "culture": {
+      "vibe": "Large health sciences university with a professional, career-focused culture. NSU is bigger than Barry or PBA but Fort Lauderdale provides a great backdrop. The campus vibe is more professional-school than party school — students are here to become health professionals.",
+      "thingsToDo": "Fort Lauderdale Las Olas Boulevard, Fort Lauderdale Beach, Broward Center for the Performing Arts, Sawgrass Mills shopping, Miami (30 min), Palm Beach (45 min), Everglades National Park, Bahamas ferry (90 min).",
+      "socialScene": "Diverse, health-sciences-focused, professionally oriented. Many pre-med, pre-PT, and pre-health students. International students present. Fort Lauderdale has a strong expat community — yachting capital of the world.",
+      "olivierMatch": "★★★★ Fort Lauderdale lifestyle is excellent and warm. NSU culture is more serious and career-focused than typical college — which suits someone targeting DPT. Less party culture, more academic drive.",
+      "lifestyleTags": "Health-focused, Fort Lauderdale, professional"
+    },
+    "facilityDetails": {
+      "stadium": "NSU Soccer Complex — 1,500 capacity, FieldTurf, lights. NSU is a health sciences university with more investment in clinical labs than athletic facilities. Fort Lauderdale location.",
+      "trainingFields": "2 practice fields at NSU Athletic Complex. Year-round Fort Lauderdale climate. Consistent surface maintenance.",
+      "strengthConditioning": "NSU Athletics Weight Room — 8,000 sq ft, fully equipped with free weights, machines, Olympic platforms. NSU's health sciences focus means sports science and sports medicine are better resourced than the weight room alone suggests.",
+      "sportsScience": "NSU's Health Professions Division provides one of the best sports science lab environments at any D2 school. GPS tracking (Statsports) for soccer training sessions. NSU's own research infrastructure (Health Professions Division) includes simulation labs, anatomy labs, and clinical training centres.",
+      "sportsMed": "NSU Athletics certified athletic trainer. NSU has its own College of Health Care Sciences with a Doctor of Physical Therapy program on campus — this is extraordinary. Pre-DPT students can observe NSU DPT program sessions and potentially apply internally for the graduate program.",
+      "academicLabs": "NSU Health Professions Division: anatomy and physiology labs, clinical simulation centre, biomechanics lab. NSU's own DPT program creates an internal articulation pathway — undergraduate exercise science → graduate DPT, potentially at the same institution. NSU also has: Cardiovascular Lab, Musculoskeletal Ultrasound Lab, and Cadaveric Anatomy Suite.",
+      "extras": "Fort Lauderdale beach (20 min). Broward Center for the Performing Arts. Sawgrass Mills mall. Miami 30 min. Palm Beach 45 min. Bahamas ferry from Port Everglades (90 min journey). NSU's research infrastructure provides a professional career head start for health science students.",
+      "rating": "Very Good",
+      "note": "NSU's unique advantage is its own on-campus DPT program. The possibility of an undergraduate → DPT articulation pathway at the same university is something no other school in this guide offers. Athletic facilities are modest but the clinical science infrastructure is outstanding."
+    },
+    "coach": {
+      "name": "Matt McArthur",
+      "title": "Head Coach",
+      "email": "msoccer@nova.edu",
+      "phone": "954-262-8262",
+      "profile": "Program best season ever in 2021 (Final Four). Fort Lauderdale location. Strong health sciences university environment."
+    },
+    "devScores": {
+      "tactical": 76,
+      "technical": 78,
+      "fitness": 78,
+      "ptPath": 82
+    },
+    "fitOlivier": 81,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "NSU Soccer Complex",
+      "Health Sciences Research Labs",
+      "Broward Health clinical network"
+    ],
+    "courses": [
+      "KIN 2010 — Anatomy for Exercise Science",
+      "KIN 3200 — Exercise Physiology",
+      "KIN 3300 — Biomechanics",
+      "KIN 4100 — Sport Psychology"
+    ],
+    "rec": "NSU is a large health sciences university — strongest academic environment of the Florida D2 programs for a student targeting PT. Fort Lauderdale is warm, cosmopolitan. 2021 Final Four shows program quality. Same SSC conference as Lynn, Barry, PBA.",
+    "url": "https://nsusharks.com/sports/mens-soccer"
+  },
+  {
+    "id": "csula",
+    "name": "Cal State LA",
+    "full": "California State University Los Angeles",
+    "loc": "Los Angeles, CA",
+    "region": "west",
+    "div": "D2",
+    "conf": "CCAA Conference",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#d1fae5",
+      "#059669"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Mid CCAA",
+        "note": "CCAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid CCAA",
+        "note": "CCAA"
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid CCAA",
+        "note": "CCAA"
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid CCAA",
+        "note": "CCAA"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "CCAA Conference appearances",
+      "Consistent D2 West Region participant"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "LAFC and LA Galaxy academy access via proximity",
+        "USL San Diego Loyal connections"
+      ],
+      "draftRank": "Limited MLS pipeline; strong LA sports science career placement"
+    },
+    "acRank": "Regional",
+    "kinRank": "Kinesiology — Strong (flagship department)",
+    "degreeTitle": "B.S. in Kinesiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Good core coverage. School of Kinesiology and Nutritional Science is a dedicated college — strong exercise science identity. LA internship network for DPT applications is extraordinary.",
+    "soccerLevel": "CCAA — Competitive",
+    "cost": "~$28k/yr",
+    "aid": "Athletic + Need",
+    "size": "28,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.0 CSU min",
+      "minSchol": "3.2+ for CSU fee grant",
+      "note": "Cal State LA is very accessible. One of the most affordable options regardless of GPA.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 28000,
+      "tuition": 15000,
+      "roomBoard": 11000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 6000,
+      "aidType": "athletic+need",
+      "internationalNote": "Most affordable in guide. Cal State system charges lower fees. Academic aid limited for internationals but base cost is already very low."
+    },
+    "culture": {
+      "vibe": "Commuter-heavy urban Los Angeles campus. Cal State LA has a strong local community feel — many students commute from greater LA. The campus itself is functional rather than beautiful. The city is the true campus for CSULA students.",
+      "thingsToDo": "All of LA — Dodgers, Lakers, Rams, LAFC, Hollywood, Santa Monica beach, Griffith Park, Koreatown, Echo Park, Silver Lake. Cal State LA sits in East LA with immediate freeway access to everything.",
+      "socialScene": "Diverse — one of the most ethnically diverse universities in the USA. Predominantly commuter culture means on-campus social life is limited. City social life compensates completely. Many working students.",
+      "olivierMatch": "★★★ CSULA itself has less campus culture than other schools. But LA is always there. Best if Olivier is comfortable building social life in the city rather than on campus. Affordable LA access is the value.",
+      "lifestyleTags": "LA access, commuter culture, diverse"
+    },
+    "facilityDetails": {
+      "stadium": "Soccer Practice Fields — on-campus FieldTurf. No dedicated match stadium — games played at South Pasadena facilities. CCAA D2 standard.",
+      "trainingFields": "2 practice fields on Cal State LA campus. FieldTurf surface. Year-round LA climate allows outdoor training 12 months.",
+      "strengthConditioning": "Cal State LA Golden Eagles Athletics Weight Room — functional, adequate for D2. Free weights, Olympic platforms, cable machines. Shared with all CSULA varsity sports.",
+      "sportsScience": "GPS tracking (basic system) for some sessions. Video analysis via Hudl. CSULA Kinesiology & Nutritional Science Department has dedicated labs: exercise physiology lab (metabolic carts, cycle ergometers), biomechanics lab (2D motion analysis), body composition lab.",
+      "sportsMed": "CSULA Athletics certified athletic trainer. Cal State LA Student Health Centre sports medicine service. LA County+USC Medical Centre (one of the largest in the USA) is 5 minutes from campus for serious injuries. Good medical access by virtue of LA location.",
+      "academicLabs": "CSULA School of Kinesiology and Nutritional Science: anatomy and physiology labs, exercise physiology suite, motor learning lab. LAFC and LA Galaxy training facility internship connections available through kinesiology department for motivated students.",
+      "extras": "All of LA — Dodgers, Lakers, Rams, LAFC, LA Galaxy. East LA cultural diversity — most diverse food scene in America within 5 minutes of campus. Griffith Park (200m). Los Angeles Museum of Natural History (5 min). Downtown LA (10 min). Hollywood (20 min).",
+      "rating": "Solid",
+      "note": "Cal State LA has modest athletic facilities — it's a commuter university and athletics is not the primary focus. But the LAFC/Galaxy proximity, the LA sports industry network, and the $28k annual cost make this the best value D2 option in the guide."
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach — verify with Athletics",
+      "email": "athletics@calstatela.edu",
+      "phone": "323-343-3080",
+      "profile": "CCAA program. LA location means access to LAFC and LA Galaxy academies."
+    },
+    "devScores": {
+      "tactical": 75,
+      "technical": 78,
+      "fitness": 76,
+      "ptPath": 82
+    },
+    "fitOlivier": 80,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "aid"
+    ],
+    "facilities": [
+      "Soccer Practice Fields",
+      "Kinesiology Building (modern)",
+      "Student Rec Centre",
+      "LA sports network"
+    ],
+    "courses": [
+      "KIN 201 — Anatomy & Physiology",
+      "KIN 331 — Exercise Physiology",
+      "KIN 350 — Biomechanics",
+      "KIN 440 — Sport Rehab",
+      "KIN 460 — Motor Learning"
+    ],
+    "rec": "Most affordable D2 in Los Angeles. Kinesiology is a flagship department. LA internship access for PT/Chiro is extraordinary. Best for Olivier if budget is the primary constraint.",
+    "url": "https://calstatela.edu/athletics"
+  },
+  {
+    "id": "stedwards",
+    "name": "St. Edward's",
+    "full": "St. Edward's University",
+    "loc": "Austin, TX",
+    "region": "texas",
+    "div": "D2",
+    "conf": "Lone Star Conference (LSC)",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#fef3c7",
+      "#d97706"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Top 3 LSC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 3 LSC",
+        "note": "LSC"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 3 LSC",
+        "note": "NCAA Tourn"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 4 LSC",
+        "note": "LSC"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "Lone Star Conference Tournament champions (multiple)",
+      "Consistent NCAA D2 Tournament qualifier",
+      "LSC Coach of Year for Diego Bocanegra"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Austin FC USL2 affiliate (Austin Bold FC) — direct pipeline",
+        "Several USL Championship signings"
+      ],
+      "draftRank": "Developing pipeline; Austin FC connection unique advantage"
+    },
+    "acRank": "Regional Strong",
+    "kinRank": "Kinesiology — Strong",
+    "degreeTitle": "B.S. in Kinesiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Good core coverage — anatomy, physiology, biomechanics, exercise prescription all present. Austin's booming health sector and Dell Medical School proximity make clinical hour access excellent.",
+    "soccerLevel": "LSC — Very Competitive",
+    "cost": "~$42k/yr",
+    "aid": "Athletic + Merit",
+    "size": "4,400",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.0 min",
+      "minSchol": "3.0+ for merit scholarship",
+      "note": "St. Edward's is accessible. Athletic + merit aid stacks well at GPA 3.0+; 2.8 still eligible for athletic only.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 42000,
+      "tuition": 30000,
+      "roomBoard": 10000,
+      "fees": 2000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 12000,
+      "aidType": "athletic+merit",
+      "internationalNote": "St. Edward's Holy Cross mission scholarship stacks with athletic. Moderate cost + strong aid = good value. Austin lifestyle premium worth it."
+    },
+    "culture": {
+      "vibe": "Small, friendly Austin campus with an artistic, creative vibe. St. Edward's sits on a hill overlooking downtown Austin — the views are stunning and you can walk to Congress Avenue. Austin's culture bleeds onto campus constantly.",
+      "thingsToDo": "Sixth Street live music, Austin City Limits Music Festival, SXSW, Barton Springs swimming hole, Lady Bird Lake kayaking, Rainey Street bars, South Congress boutiques, UT Longhorns games nearby, Austin FC soccer at Q2 Stadium. Austin is the most fun city in Texas.",
+      "socialScene": "Inclusive, creative, liberal. St. Edward's Holy Cross mission creates a welcoming community. Austin's tech and creative industries attract ambitious students. International students welcome. Warm 10 months of the year.",
+      "olivierMatch": "★★★★★ Austin is one of America's most exciting cities and growing fastest. St. Edward's intimate campus with Austin's city on your doorstep is a compelling package. Live music capital of the world. Excellent lifestyle match.",
+      "lifestyleTags": "Austin creative, live music, vibrant"
+    },
+    "facilityDetails": {
+      "stadium": "Butler Sports Complex — FieldTurf, 1,500 capacity, permanent lighting. Located on the St. Edward's hilltop campus with views over downtown Austin. LSC D2 standard.",
+      "trainingFields": "2 training fields at Butler Complex. FieldTurf surfaces. Stunning views of Austin skyline. Year-round Texas warmth — outdoor training 11 months annually.",
+      "strengthConditioning": "St. Edward's University Athletics Performance Center — 8,000 sq ft, rebuilt 2021. Olympic lifting platforms, Keiser resistance equipment, cable systems. Recovery suite with normatec and contrast baths. Diego Bocanegra has invested in sports science integration since his arrival.",
+      "sportsScience": "GPS tracking (Statsports) for all sessions. Video analysis (Hudl) with individual player dashboards. Austin Bold FC (USL2 affiliate) shares some analytics infrastructure with St. Edward's soccer program — unique D2 partnership.",
+      "sportsMed": "St. Edward's Athletics certified athletic trainer. Dell Medical School (UT Austin affiliated, 10 min drive) sports medicine partnership. Dell Medical is one of the newest and most innovative medical schools in the USA — sports medicine access is cutting-edge.",
+      "academicLabs": "SEU Department of Kinesiology: exercise physiology lab, biomechanics teaching lab. Dell Medical School proximity gives motivated pre-PT students extraordinary clinical exposure — UT Austin Kinesiology faculty occasionally guest lecture at SEU.",
+      "extras": "Q2 Stadium (Austin FC MLS — 10 min drive). Barton Springs Pool (5 min). Lady Bird Lake kayaking (10 min). Sixth Street live music (15 min). South Congress (10 min). Austin City Limits Music Festival and SXSW both walk/rideshare distance. Most vibrant city environment of any D2 school in the guide.",
+      "rating": "Good",
+      "note": "SEU's facilities are modest but the Austin FC professional pipeline, Dell Medical School access, and Bocanegra's analytics integration via Austin Bold give this D2 program a professional culture that punches above its facilities weight. Austin itself is the facility that matters most here."
+    },
+    "coach": {
+      "name": "Diego Bocanegra",
+      "title": "Head Coach",
+      "email": "soccercoach@stedwards.edu",
+      "phone": "512-448-8415",
+      "profile": "Austin native. Former USL pro. LSC Coach of Year. European-style pressing system well-suited to an 8/10 midfielder."
+    },
+    "devScores": {
+      "tactical": 86,
+      "technical": 85,
+      "fitness": 82,
+      "ptPath": 80
+    },
+    "fitOlivier": 88,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "aid",
+      "dev"
+    ],
+    "facilities": [
+      "Butler Soccer Complex (FieldTurf)",
+      "Kinesiology Labs",
+      "Austin clinical network",
+      "Dell Medical School proximity"
+    ],
+    "courses": [
+      "KIN 3320 — Exercise Physiology",
+      "KIN 3310 — Biomechanics",
+      "KIN 4310 — Sport Rehabilitation",
+      "KIN 3210 — Anatomy"
+    ],
+    "rec": "Austin is one of USA's fastest-growing cities. Possession system suits an 8/10. Small campus = personal development. Austin FC pipeline is a real professional pathway. Dell Medical School nearby for clinical placements.",
+    "url": "https://sehawks.com/sports/mens-soccer"
+  },
+  {
+    "id": "ocu",
+    "name": "Oklahoma City",
+    "full": "Oklahoma City University",
+    "loc": "Oklahoma City, OK",
+    "region": "south",
+    "div": "NAIA",
+    "conf": "Sooner Athletic Conference (SAC)",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#fef3c7",
+      "#d97706"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Top 4 SAC",
+        "note": "SAC"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 4 SAC",
+        "note": "NAIA Tourn"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 3 SAC",
+        "note": "NAIA Tourn"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 4 SAC",
+        "note": "SAC"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "Multiple SAC Conference titles",
+      "Regular NAIA National Tournament appearances"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "USL2 placements annually",
+        "Australian player placement into professional environments (A-League/NPL)",
+        "Brian Finnegan Australian connections"
+      ],
+      "draftRank": "NAIA level — USL/international pathway"
+    },
+    "acRank": "Regional",
+    "kinRank": "Kinesiology + Pre-PT",
+    "degreeTitle": "B.S. in Kinesiology (Exercise Science)",
+    "acuAlign": 10,
+    "acuAlignNote": "Good core coverage for NAIA level. Pre-PT seminar built in. Brian Finnegan has explicitly placed Australian players in professional environments including the A-League pathway.",
+    "soccerLevel": "SAC — Nationally Ranked NAIA",
+    "cost": "~$35k/yr",
+    "aid": "Athletic + Academic",
+    "size": "3,600",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "No minimum listed (NAIA)",
+      "minSchol": "2.5+ for academic aid layer",
+      "note": "OCU is an NAIA school — very flexible GPA requirements. Athletic scholarship is primary driver.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 35000,
+      "tuition": 24000,
+      "roomBoard": 9000,
+      "fees": 2000,
+      "maxAthletic": 1,
+      "maxAcademic": 10000,
+      "aidType": "athletic+academic",
+      "internationalNote": "NAIA has NO maximum scholarship cap — full athletic ride possible. OCU Christian mission aid adds further. Best scholarship value for Australian player."
+    },
+    "culture": {
+      "vibe": "Faith-based city campus with a passionate performing arts culture. OCU is famous for its dance, musical theatre, and arts programs — the energy on campus is creative and performative. The soccer program brings a hard-working athletic culture to balance the arts.",
+      "thingsToDo": "Bricktown entertainment district (walkable), Paycom Center (Thunder NBA — one of NBA's best atmospheres), Scissortail Park, Oklahoma City National Memorial, Lake Hefner, Will Rogers Park. OKC is more interesting than its reputation suggests.",
+      "socialScene": "Warm Christian community culture. Smaller international community but welcoming. Oklahoma City has grown significantly — food scene, arts scene, and NBA culture have transformed it. Brian Finnegan's Australian connections mean you'll be less alone.",
+      "olivierMatch": "★★★ OKC is not Sydney. But it's a real city, the Thunder culture is extraordinary, Brian Finnegan's Australian connections are unique, and the NAIA scholarship flexibility is the best in the guide. Functional rather than glamorous.",
+      "lifestyleTags": "Christian community, OKC, Thunder culture"
+    },
+    "facilityDetails": {
+      "stadium": "OCU Soccer Field — natural grass, 1,000 capacity, permanent lighting. NAIA SAC standard. Simple, functional, well-maintained.",
+      "trainingFields": "2 practice fields on OCU campus. Natural grass. NAIA training standard — functional and adequate.",
+      "strengthConditioning": "OCU Freede Center Athletic Weight Room — 7,000 sq ft. Free weights, Olympic platforms, cable systems. Adequate for NAIA level. S&C programming available through the athletics department.",
+      "sportsScience": "GPS tracking (basic Polar team system). Video analysis (Hudl). OCU's Kinesiology program has exercise physiology and biomechanics teaching labs. Less sophisticated than D1/D2 schools but adequate for foundational exercise science education.",
+      "sportsMed": "OCU Athletics certified athletic trainer. Mercy Hospital Oklahoma City sports medicine partnership. Oklahoma City Thunder use the same Mercy Hospital network — Brian Finnegan has occasionally facilitated player access to Thunder performance staff through his local connections.",
+      "academicLabs": "OCU Division of Kinesiology: exercise physiology lab, anatomy lab. Oklahoma City University performing arts facilities (world-renowned) accessible for all students. Oklahoma City's growing healthcare sector provides clinical observation opportunities for pre-PT students.",
+      "extras": "Paycom Center (OKC Thunder NBA) — one of the best arena atmospheres in the NBA — 10 minutes from campus. Scissortail Park. Bricktown entertainment district. Oklahoma City arts district (Paseo). Brian Finnegan's Australian connections mean new international students have a local support network from day one.",
+      "rating": "Solid",
+      "note": "OCU's facilities are functional NAIA standard — not impressive on paper. But the NAIA scholarship flexibility (no cap), Brian Finnegan's Australian professional network, and Oklahoma City's improving city environment make this a strong overall package for the right player."
+    },
+    "coach": {
+      "name": "Brian Finnegan",
+      "title": "Head Coach",
+      "email": "bfinnegan@okcu.edu",
+      "phone": "405-208-5450",
+      "profile": "Multiple NAIA national tournament appearances. Known for nurturing Australian and UK players. Technical, attacking style. Explicit Australian player track record."
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 80,
+      "fitness": 78,
+      "ptPath": 78
+    },
+    "fitOlivier": 85,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "aid"
+    ],
+    "facilities": [
+      "OCU Soccer Field",
+      "Exercise Physiology Lab",
+      "Health Sciences Building"
+    ],
+    "courses": [
+      "KIN 2410 — Exercise Science Foundations",
+      "KIN 3310 — Anatomy & Physiology",
+      "KIN 4410 — Exercise Physiology",
+      "KIN 4430 — Pre-PT Seminar"
+    ],
+    "rec": "Most competitive NAIA program in guide. OKC is a real city. Generous scholarships. Brian Finnegan has Australian connections and has placed Australian players in professional environments — unique advantage for Olivier.",
+    "url": "https://okcu.edu/athletics/soccer"
+  },
+  {
+    "id": "keiser",
+    "name": "Keiser",
+    "full": "Keiser University",
+    "loc": "Fort Lauderdale, FL",
+    "region": "south",
+    "div": "NAIA",
+    "conf": "Sun Conference",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#ede9fe",
+      "#7c3aed"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Mid Sun Conf",
+        "note": "Sun Conference"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid Sun Conf",
+        "note": "Sun Conference"
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid Sun Conf",
+        "note": "Sun Conference"
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid Sun Conf",
+        "note": "Sun Conference"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "Sun Conference appearances",
+      "Health sciences institution — academic titles prominent"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Strong placement into clinical and health science roles in South Florida"
+      ],
+      "draftRank": "Not a pro soccer pipeline — choose for academic/PT pathway"
+    },
+    "acRank": "Health Science Focus",
+    "kinRank": "Exercise Science — Core NAIA",
+    "degreeTitle": "B.S. in Exercise Science",
+    "acuAlign": 10,
+    "acuAlignNote": "Good clinical integration for NAIA level — Clinical Simulation Centre provides hands-on patient experience rare at undergraduate level. Directly relevant to DPT applications.",
+    "soccerLevel": "Sun Conference",
+    "cost": "~$38k/yr",
+    "aid": "Athletic + Merit",
+    "size": "2,000",
+    "prePT": "Strong (clinical simulation labs)",
+    "gpa": {
+      "minEntry": "No minimum listed (NAIA)",
+      "minSchol": "2.5+ for academic scholarship",
+      "note": "Keiser health sciences university — flexible entry. Focuses on student commitment over GPA.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 38000,
+      "tuition": 26000,
+      "roomBoard": 10000,
+      "fees": 2000,
+      "maxAthletic": 1,
+      "maxAcademic": 10000,
+      "aidType": "athletic+merit",
+      "internationalNote": "NAIA full ride possible. Keiser clinical science scholarships available for health-track students. Strong package for the right student."
+    },
+    "culture": {
+      "vibe": "Health-sciences-first campus culture — clinical, professional, and purposeful. Keiser attracts students who know exactly what career they want. Campus social life is moderate but Fort Lauderdale is an excellent lifestyle city outside the gates.",
+      "thingsToDo": "Fort Lauderdale beach, Las Olas Boulevard, Wilton Manors entertainment district, Miami (30 min), Everglades, Palm Beach (45 min), Port Everglades cruise terminal. Fort Lauderdale is excellent for outdoor and waterfront activities.",
+      "socialScene": "Professional and career-focused culture. Students respect each other's clinical ambitions. Less social than a typical university but the Fort Lauderdale environment makes up for it. International students present in health science programs.",
+      "olivierMatch": "★★★ Keiser is functionally excellent for PT pathway but limited campus culture. Fort Lauderdale lifestyle is great. Best if Olivier's priority is maximising clinical hours and academic preparation over social campus experience.",
+      "lifestyleTags": "Clinical culture, Fort Lauderdale, purposeful"
+    },
+    "facilityDetails": {
+      "stadium": "Keiser University Soccer Complex — FieldTurf, 1,200 capacity, lights. Fort Lauderdale location. Sun Conference NAIA standard.",
+      "trainingFields": "2 FieldTurf practice fields on Keiser campus. Year-round Fort Lauderdale climate — ideal training environment.",
+      "strengthConditioning": "Keiser Athletics Performance Center — 7,000 sq ft, well-equipped for NAIA. Olympic platforms, free weights, cable systems. Sports science programming through Keiser's health sciences faculty — the depth of clinical knowledge on staff is the differentiator.",
+      "sportsScience": "GPS tracking for sessions. Video analysis (Hudl). Keiser's clinical simulation labs — normally reserved for health science clinical training — are occasionally accessible to soccer athletes for performance testing.",
+      "sportsMed": "Keiser Athletics certified athletic trainer. Broward Health sports medicine partnership. Keiser's own health sciences faculty (including exercise physiology and anatomy professors) provide an unusually deep sports medicine advisory support structure for NAIA level.",
+      "academicLabs": "Keiser Clinical Simulation Centre — the standout facility. Features: high-fidelity patient simulation mannequins (including respiratory and cardiac scenarios), anatomy lab (preserved cadavers — rare at NAIA level), clinical nursing suites, rehabilitation simulation rooms. Pre-PT students get hands-on patient simulation experience before entering graduate school — unavailable at most US undergraduate programs.",
+      "extras": "Fort Lauderdale beach (15 min). Las Olas Boulevard. Broward Center for the Performing Arts. Miami 30 min. NAIA's flexible schedule (fewer travel days than D1/D2) means more time for clinical observation and study.",
+      "rating": "Good",
+      "note": "Keiser's standout differentiator is the Clinical Simulation Centre — cadaver anatomy lab and patient simulation at NAIA level is genuinely rare. For a student targeting DPT or Chiropractic, this hands-on pre-graduate experience is more valuable than a bigger weight room."
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "athletics@keiseruniversity.edu",
+      "phone": "954-776-4476",
+      "profile": "Health sciences university — program reflects that ethos. Sports science integrated with coaching."
+    },
+    "devScores": {
+      "tactical": 74,
+      "technical": 76,
+      "fitness": 80,
+      "ptPath": 88
+    },
+    "fitOlivier": 80,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Soccer Complex",
+      "Clinical Simulation Centre",
+      "Health Sciences Labs"
+    ],
+    "courses": [
+      "EXS 101 — Introduction to Exercise Science",
+      "EXS 210 — Anatomy & Physiology",
+      "EXS 310 — Exercise Physiology",
+      "EXS 400 — Clinical Applications"
+    ],
+    "rec": "Keiser is fundamentally a health sciences university. Fort Lauderdale warm and cosmopolitan. Clinical Simulation Centre provides patient care experience before grad school. Best if academics are the priority over professional soccer.",
+    "url": "https://keiseruniversity.edu/athletics"
+  },
+  {
+    "id": "chapman",
+    "name": "Chapman",
+    "full": "Chapman University",
+    "loc": "Orange, CA (near LA)",
+    "region": "west",
+    "div": "D3",
+    "conf": "SCIAC Conference",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#ede9fe",
+      "#7c3aed"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Top 3 SCIAC",
+        "note": "SCIAC"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 4 SCIAC",
+        "note": "SCIAC"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 3 SCIAC",
+        "note": "SCIAC NCAA Tourn"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 3 SCIAC",
+        "note": "SCIAC"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "SCIAC Conference titles (multiple)",
+      "Consistent D3 NCAA Tournament qualifier"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Some USL2/NISA post-graduation",
+        "Primary value: GPA platform for PT/Chiro grad school"
+      ],
+      "draftRank": "D3 — academic pathway program"
+    },
+    "acRank": "Strong Regional",
+    "kinRank": "Kinesiology Pre-PT — Strong",
+    "degreeTitle": "B.S. in Kinesiology (Pre-Physical Therapy track)",
+    "acuAlign": 12,
+    "acuAlignNote": "Good alignment — explicit Pre-PT track with KIN 405 Pre-Physical Therapy Prep as required course. Orange County clinical network (Hoag Hospital, CHOC) is very strong for DPT applications.",
+    "soccerLevel": "SCIAC D3",
+    "cost": "~$72k/yr (before aid)",
+    "aid": "Merit + Need (no athletic)",
+    "size": "10,000",
+    "prePT": "Excellent (KIN 405 Pre-PT Prep required)",
+    "gpa": {
+      "minEntry": "3.5+ for D3 consideration",
+      "minSchol": "3.7+ for merit scholarship (no athletic)",
+      "note": "Chapman is selective for D3. No athletic scholarships. GPA 2.8 is likely below typical admitted student.",
+      "status": "below"
+    },
+    "fin": {
+      "costNum": 72000,
+      "tuition": 50000,
+      "roomBoard": 17000,
+      "fees": 5000,
+      "maxAthletic": 0,
+      "maxAcademic": 35000,
+      "aidType": "need-only",
+      "internationalNote": "D3 — NO athletic scholarships. Merit and need-based aid only. Chapman Provost Scholarship for 3.75+ GPA. Net cost can be reduced but full coverage unlikely without very strong financial need."
+    },
+    "culture": {
+      "vibe": "Small, creative, film-industry-adjacent Orange County campus. Chapman is known for its film school (Dodge College of Film) and arts culture — creative energy is everywhere. Orange is a charming historic town and the campus is beautiful.",
+      "thingsToDo": "Disneyland (10 min — literally), Old Towne Orange antique district, Newport Beach and Laguna Beach (30 min), Irvine Spectrum, Angel Stadium, LA day trips (45 min), hiking in Cleveland National Forest. Orange County is extremely liveable.",
+      "socialScene": "Welcoming, creative, affluent. Many students are from wealthy California families. International students present. Small campus means strong personal connections. Film/arts culture dominates social identity.",
+      "olivierMatch": "★★★★ Orange County has Sydney-level weather and great beach access. Chapman's creative culture is engaging. D3 means less schedule intensity — more time for beach, arts, and GPA building. Disneyland proximity is ridiculous.",
+      "lifestyleTags": "Creative, OC beach lifestyle, artsy"
+    },
+    "facilityDetails": {
+      "stadium": "Griset Field — 1,000 capacity, natural grass, floodlit. Beautiful Orange County setting within the Chapman campus. SCIAC D3 standard.",
+      "trainingFields": "2 training fields at Chapman Athletic Complex. Natural grass. OC climate allows outdoor training almost year-round.",
+      "strengthConditioning": "Chapman University Sandhu Conference Center Athletic Weight Room — 9,000 sq ft, high quality for D3. Full free weight section, Olympic platforms, functional training zone. Olympic sports get excellent support at Chapman despite D3 status.",
+      "sportsScience": "GPS tracking (Statsports) — unusual for D3. Video analysis (Hudl). Chapman's kinesiology department has dedicated sports science resources including: force plate, body composition analysis (BodPod), and reactive strength testing.",
+      "sportsMed": "Chapman Athletics certified athletic trainer. Hoag Hospital Newport Beach sports medicine partnership — Hoag is ranked #1 hospital in Orange County. Pre-PT students at Chapman have formal Hoag Hospital clinical observation placement through KIN 405 Pre-Physical Therapy Prep course.",
+      "academicLabs": "Chapman Kinesiology Department: anatomy lab (cadaver access — rare at D3 level), biomechanics lab (3D motion capture, force plates — exceptional for D3), exercise physiology lab, motor behaviour lab. KIN 405 Pre-PT Prep course is a formal required course that integrates Hoag Hospital observation with academic preparation.",
+      "extras": "Disneyland (10 min — literally). Disneyland and Knott's Berry Farm both walkable on busy weekends. Laguna Beach (30 min). Newport Beach (25 min). Old Towne Orange antique district (5 min walk). Chapman film school creates vibrant creative campus energy.",
+      "rating": "Very Good",
+      "note": "Chapman punches significantly above its D3 weight in academic lab quality. 3D motion capture, cadaver access, and force plates at D3 level are exceptional. The Hoag Hospital KIN 405 clinical placement is the most structured pre-PT academic program in any D3 school in this guide."
+    },
+    "coach": {
+      "name": "Dustin Johnson",
+      "title": "Head Coach",
+      "email": "djohnson@chapman.edu",
+      "phone": "714-997-6789",
+      "profile": "SCIAC experienced. Academic support strong. Playing time guaranteed from year 1."
+    },
+    "devScores": {
+      "tactical": 76,
+      "technical": 78,
+      "fitness": 74,
+      "ptPath": 92
+    },
+    "fitOlivier": 76,
+    "tags": [
+      "warm",
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Griset Field",
+      "Kinesiology Research Labs",
+      "Pre-PT Advising Office",
+      "Orange County clinical network"
+    ],
+    "courses": [
+      "KIN 200 — Anatomy & Physiology",
+      "KIN 305 — Exercise Physiology",
+      "KIN 320 — Biomechanics",
+      "KIN 405 — Pre-Physical Therapy Prep",
+      "KIN 420 — Clinical Kinesiology"
+    ],
+    "rec": "Chapman has an explicit Pre-PT required course. Orange County is 30 min from LA. D3 = less schedule pressure — better for building GPA toward PT grad school. No athletic scholarships. Best if long-term academic career is the priority.",
+    "url": "https://chapmanathletics.com/sports/soccer"
+  },
+  {
+    "id": "smc",
+    "name": "Santa Monica",
+    "full": "Santa Monica College",
+    "loc": "Santa Monica, CA",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "CCCAA / SCFA",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#d1fae5",
+      "#059669"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Top 4 SCFA",
+        "note": "CCCAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "Top 4 SCFA",
+        "note": "CCCAA"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 3 SCFA",
+        "note": "CCCAA"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 3 SCFA",
+        "note": "CCCAA"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "Multiple CCCAA Conference titles",
+      "Outstanding transfer record to D1 programs"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Transfer to UCLA then MLS draft is a proven pathway",
+        "JUCO value = stepping stone to D1 MLS-producing programs"
+      ],
+      "draftRank": "JUCO — value is pathway program to D1"
+    },
+    "acRank": "Top Transfer College",
+    "kinRank": "Kinesiology Transfer Pathway",
+    "degreeTitle": "A.A./A.S. in Kinesiology (2-year transfer degree)",
+    "acuAlign": 7,
+    "acuAlignNote": "2-year degree. IGETC transfer curriculum covers biology, chemistry, anatomy basics. After transfer to UCLA/UCSB, full alignment achieved. Not a terminal degree — value is the transfer pipeline.",
+    "soccerLevel": "CCCAA — Competitive",
+    "cost": "~$9k/yr",
+    "aid": "Athletic Grants + Need",
+    "size": "30,000+",
+    "prePT": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "N/A — JUCO grants only",
+      "note": "Santa Monica College has open enrolment — zero GPA requirement. Best if needing to rebuild academic record.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 9000,
+      "tuition": 5000,
+      "roomBoard": 3000,
+      "fees": 1000,
+      "maxAthletic": 0.5,
+      "maxAcademic": 3000,
+      "aidType": "athletic+need",
+      "internationalNote": "JUCO — minimal cost. California College Promise Grant covers tuition for eligible students. Athletic grants available. Most affordable option to build GPA for transfer."
+    },
+    "culture": {
+      "vibe": "Community college culture — diverse, no-nonsense, goal-oriented. Santa Monica College is famous for transfer students who are serious about getting to UCLA or another UC. The campus is workmanlike but Santa Monica itself is extraordinary.",
+      "thingsToDo": "Santa Monica Pier and beach (literally adjacent to campus), Venice Beach boardwalk (2km), Third Street Promenade shopping, Abbot Kinney Boulevard, LA access via Metro, Santa Monica Mountains hiking. Campus is 100m from the Pacific Ocean.",
+      "socialScene": "Extremely diverse — ages, nationalities, backgrounds. No campus residential culture — students come, learn, and go to the beach. Transfer focus means peers are academically motivated. Very accepting and unpretentious.",
+      "olivierMatch": "★★★★★ Santa Monica is arguably the most Sydney-like location in America. Ocean, surf culture, warm year-round, diverse, laid-back. For a 2-year stay while building GPA, the lifestyle is extraordinary. Campus culture is secondary to location culture.",
+      "lifestyleTags": "Beach lifestyle, transfer focus, Sydney-like"
+    },
+    "facilityDetails": {
+      "stadium": "Corsair Field — SMC natural grass facility for JUCO soccer. CCCAA standard. Simple, functional.",
+      "trainingFields": "Practice fields on the Santa Monica College campus. Year-round beach climate. 100m from the Pacific Ocean.",
+      "strengthConditioning": "SMC Athletics Fitness Center — adequate JUCO weight room. Free weights, cables, basic machines. Santa Monica's proximity to world-class commercial gyms (Equinox, Gold's Gym Venice) means motivated athletes supplement easily.",
+      "sportsScience": "Basic JUCO level. Video analysis available. SMC's Kinesiology Department has teaching labs for physiology and anatomy — good for foundational learning.",
+      "sportsMed": "SMC Athletic Trainer on staff. Providence Saint John's Health Center (Santa Monica) sports medicine partnership. Excellent access for a JUCO program.",
+      "academicLabs": "SMC Kinesiology Department: anatomy and physiology teaching labs, computer exercise physiology suite. UCLA's transfer pathway means students who thrive at SMC often access UCLA's world-class labs from Year 3 — the JUCO → UCLA lab upgrade is significant.",
+      "extras": "Santa Monica Beach (100m from campus — not a typo). Venice Beach boardwalk (2km). Third Street Promenade. Santa Monica Pier. Entire LA accessible by Metro Expo Line from campus. Google, Apple, and major tech campuses in Santa Monica for career networking. The best JUCO location in America.",
+      "rating": "Solid",
+      "note": "SMC's own facilities are JUCO standard — functional, not impressive. The differentiator is location: 100m from one of the world's great beaches, Metro access to all of LA, and a proven pipeline to UCLA where the facilities become elite. Think of this as 2 years at the beach before upgrading to a top-10 facility."
+    },
+    "coach": {
+      "name": "Lee Avery",
+      "title": "Head Coach",
+      "email": "lavery@smc.edu",
+      "phone": "310-434-4320",
+      "profile": "Experienced CCCAA coach. Strong relationship with UCLA transfer advisors. Known for placing players at 4-year D1/D2 schools."
+    },
+    "devScores": {
+      "tactical": 72,
+      "technical": 74,
+      "fitness": 72,
+      "ptPath": 82
+    },
+    "fitOlivier": 90,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "aid"
+    ],
+    "facilities": [
+      "Corsair Field",
+      "Transfer Advising Hub",
+      "Santa Monica Beach (100m)"
+    ],
+    "courses": [
+      "KINES 1 — Introduction to Kinesiology",
+      "KINES 15 — Anatomy & Physiology",
+      "PHYSIO 3 — Human Physiology",
+      "BIO 2 — Cell Biology"
+    ],
+    "rec": "THE best JUCO option for Sydney lifestyle match. Santa Monica is the most Sydney-like location in America. Best transfer record to UCLA in California. 2 years at ~$9k to prove GPA and soccer ability, then step up.",
+    "url": "https://athletics.smc.edu/sports/soccer"
+  },
+  {
+    "id": "miami_dade",
+    "name": "Miami Dade",
+    "full": "Miami Dade College",
+    "loc": "Miami, FL",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e0f2fe",
+      "#0284c7"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Mid NJCAA",
+        "note": "NJCAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid NJCAA",
+        "note": "NJCAA"
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid NJCAA",
+        "note": "NJCAA"
+      },
+      {
+        "yr": 2021,
+        "pos": "N/A",
+        "note": "COVID"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID"
+      }
+    ],
+    "titles": [
+      "NJCAA Regional appearances"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Transfer to Barry (D2 4 national titles) is the primary pro pathway"
+      ],
+      "draftRank": "JUCO — pathway program"
+    },
+    "acRank": "Transfer College",
+    "kinRank": "Health Science Transfer Prep",
+    "degreeTitle": "A.A. in Health Sciences (2-year transfer degree)",
+    "acuAlign": 5,
+    "acuAlignNote": "2-year intro. Value is the transfer pipeline into Barry, FIU, or UM. Barry has HPS 450 Pre-PT Seminar — that is the target after MDC.",
+    "soccerLevel": "NJCAA",
+    "cost": "~$11k/yr",
+    "aid": "Athletic + Need",
+    "size": "Very Large",
+    "prePT": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "N/A — JUCO grants only",
+      "note": "Miami Dade has open enrolment. Zero GPA barrier. Transfer into Barry/FIU after 2 years with stronger record.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 11000,
+      "tuition": 6000,
+      "roomBoard": 4000,
+      "fees": 1000,
+      "maxAthletic": 0.5,
+      "maxAcademic": 3000,
+      "aidType": "athletic+need",
+      "internationalNote": "JUCO — very low cost. Florida residency discounts may apply after 1 year. Transfer pathway to Barry or FIU is the value proposition."
+    },
+    "culture": {
+      "vibe": "Massive urban community college — functional, diverse, and Miami-flavoured. MDC is one of the largest colleges in America with 6 campuses across Miami. The culture is pure Miami — Latin, energetic, and aspirational.",
+      "thingsToDo": "All of Miami — see FIU above. South Beach, Wynwood, Little Havana, Calle Ocho, Miami Heat, Marlins, Inter Miami CF. Miami Dade campuses are embedded in different Miami neighbourhoods each with distinct culture.",
+      "socialScene": "Extremely diverse — one of the most diverse institutions in the USA. Spanish widely spoken. Commuter culture means limited residential social life but Miami compensates entirely. Transfer pathway to Barry or FIU is the social upgrade.",
+      "olivierMatch": "★★★★ Miami lifestyle is excellent. MDC itself has limited campus culture but Miami provides everything. Best framed as 2 years in Miami building your record, then transferring to a residential campus.",
+      "lifestyleTags": "Miami energy, commuter culture, transfer pathway"
+    },
+    "facilityDetails": {
+      "stadium": "MDC Soccer Fields — Miami Dade College North Campus athletic facilities. NJCAA standard. Miami FL location.",
+      "trainingFields": "Practice fields on MDC North Campus. Year-round Miami climate. Fully outdoor training 12 months annually.",
+      "strengthConditioning": "MDC Athletics Weight Room — adequate JUCO standard. Free weights, cable machines. Miami's proximity to professional training facilities means motivated students can access more sophisticated environments.",
+      "sportsScience": "Basic JUCO level. Video analysis. MDC Health Sciences campus has basic kinesiology teaching labs.",
+      "sportsMed": "MDC Athletic Trainer. Jackson Memorial Hospital (Level 1 trauma centre, top academic medical centre in Florida) is accessible via public transit from campus. Inter Miami CF stadium is visible from the MDC Health Sciences campus.",
+      "academicLabs": "MDC Health Sciences: anatomy lab, physiology teaching labs. MDC's proximity to UM Health and Jackson Memorial provides motivated pre-health students extraordinary clinical observation access as a community member of Miami.",
+      "extras": "All of Miami — South Beach, Wynwood, Little Havana, Brickell. Inter Miami CF (Chase Stadium) 10 min from health sciences campus. Miami Heat (Kaseya Center) 15 min. No other JUCO in the USA is embedded in a city of this global calibre.",
+      "rating": "Solid",
+      "note": "MDC's own facilities are basic JUCO standard. Miami is the facility — proximity to Jackson Memorial for clinical access, Inter Miami for professional soccer exposure, and UM Health for pre-PT pathway development means motivated students can build extraordinary CVs in 2 years."
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "athletics@mdc.edu",
+      "phone": "305-237-3366",
+      "profile": "NJCAA. Transfer connections to FIU, Barry. Miami community ties."
+    },
+    "devScores": {
+      "tactical": 68,
+      "technical": 70,
+      "fitness": 70,
+      "ptPath": 80
+    },
+    "fitOlivier": 80,
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "aid"
+    ],
+    "facilities": [
+      "Soccer Fields",
+      "Health Science Building",
+      "Miami clinical network"
+    ],
+    "courses": [
+      "BSC 1000 — Biology I",
+      "PHY 1020 — Physical Education Science",
+      "HUN 1201 — Nutrition",
+      "PSY 2012 — General Psychology"
+    ],
+    "rec": "Miami gateway to South Florida 4-year ecosystem. Transfer into Barry for kinesiology degree and pre-PT seminar. Warm city, massive international student body.",
+    "url": "https://athletics.mdc.edu"
+  }
+]

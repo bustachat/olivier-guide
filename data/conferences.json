@@ -1,0 +1,485 @@
+[
+  {
+    "id": "acc",
+    "name": "Atlantic Coast Conference",
+    "abbr": "ACC",
+    "tier": "Power 5 (D1)",
+    "tierClass": "tier-p5",
+    "prestige": "Elite — #1 men's soccer conference nationally",
+    "founded": 1953,
+    "teams": 18,
+    "soccerTeams": 16,
+    "ncaaTitles": 28,
+    "mlsPipeline": "Highest in college soccer — leads all conferences in MLS picks 2020–2026",
+    "scholarships": "Up to 9.9 athletic equivalencies split across roster",
+    "guideSchools": [
+      "Virginia (UVA)",
+      "Wake Forest",
+      "SMU",
+      "FIU (AAC→ACC 2026)"
+    ],
+    "otherSchools": [
+      "Clemson (2021, 2023 champs)",
+      "Georgetown (2019 champ)",
+      "Maryland",
+      "NC State",
+      "Notre Dame",
+      "Duke",
+      "Louisville",
+      "Pitt",
+      "Stanford",
+      "Syracuse"
+    ],
+    "desc": "The most prestigious men's soccer conference in the United States. Virginia holds 7 national titles. Clemson won in 2021 and 2023. Georgetown in 2019. ACC has produced more MLS #1 overall draft picks than any other conference in the past decade. The competition level is equivalent to a top European second division in terms of athleticism and tactical sophistication.",
+    "olivierNote": "SMU won the 2025 ACC Tournament (first ever) and FIU joins from AAC. Both are realistic Olivier targets. Virginia and Wake Forest are elite but require very strong highlights. The ACC brand significantly enhances graduate school applications.",
+    "color": [
+      "#1e1b4b",
+      "#a5b4fc"
+    ]
+  },
+  {
+    "id": "bten",
+    "name": "Big Ten Conference",
+    "abbr": "Big Ten",
+    "tier": "Power 5 (D1)",
+    "tierClass": "tier-p5",
+    "prestige": "Elite — #2 overall, dominant Midwest and West",
+    "founded": 1896,
+    "teams": 18,
+    "soccerTeams": 14,
+    "ncaaTitles": 12,
+    "mlsPipeline": "Top 5 — Indiana all-time leader; UCLA strong West Coast pipeline",
+    "scholarships": "Up to 9.9 athletic equivalencies",
+    "guideSchools": [
+      "UCLA (West)",
+      "Indiana"
+    ],
+    "otherSchools": [
+      "Maryland",
+      "Penn State",
+      "Michigan",
+      "Michigan State",
+      "Ohio State",
+      "Northwestern",
+      "Wisconsin",
+      "Rutgers",
+      "Oregon",
+      "USC",
+      "Washington"
+    ],
+    "desc": "The Big Ten expanded to include West Coast powerhouses UCLA and USC in 2024. Indiana is the most decorated men's soccer program in US history (8 NCAA titles, 39 consecutive tournament appearances). UCLA joins as a 4-time national champion with extraordinary academic resources. The conference now spans both coasts, making it arguably the most geographically diverse elite conference.",
+    "olivierNote": "Indiana and UCLA are both top-10 historically. Indiana's motor control labs (9 dedicated) are the best in the country — unmatched for Olivier's BESS degree alignment. UCLA offers the #1 nationally ranked kinesiology equivalent and LA lifestyle closest to Sydney.",
+    "color": [
+      "#1e3a5f",
+      "#93c5fd"
+    ]
+  },
+  {
+    "id": "bigeast",
+    "name": "Big East Conference",
+    "abbr": "Big East",
+    "tier": "Power 5 (D1)",
+    "tierClass": "tier-p5",
+    "prestige": "Elite — #3, traditional soccer powerhouse",
+    "founded": 1979,
+    "teams": 11,
+    "soccerTeams": 11,
+    "ncaaTitles": 4,
+    "mlsPipeline": "Strong — Georgetown, Creighton, St John's consistent producers",
+    "scholarships": "Up to 9.9 athletic equivalencies",
+    "guideSchools": [
+      "St. John's (NYC)"
+    ],
+    "otherSchools": [
+      "Georgetown",
+      "Creighton",
+      "Providence",
+      "Seton Hall",
+      "Butler",
+      "Xavier",
+      "Connecticut",
+      "DePaul",
+      "Villanova"
+    ],
+    "desc": "The Big East is a traditional powerhouse in US college soccer. Georgetown won the 2019 NCAA title. Creighton and Georgetown are perennial College Cup contenders. The conference features many urban campuses across the East Coast, making it culturally diverse and clinically connected for students targeting health careers. St. John's in Queens NYC has access to the Hospital for Special Surgery — the #1 orthopaedic hospital in the world.",
+    "olivierNote": "St. John's offers the unique NYC clinical advantage — Hospital for Special Surgery, NYU Langone, NY Presbyterian are all within reach for DPT observation hours. Dave Masur's 450+ career wins is elite experience. Big East soccer is extremely competitive.",
+    "color": [
+      "#1e3a5f",
+      "#7dd3fc"
+    ]
+  },
+  {
+    "id": "sec",
+    "name": "Southeastern Conference",
+    "abbr": "SEC",
+    "tier": "Power 5 (D1)",
+    "tierClass": "tier-p5",
+    "prestige": "Strong — soccer secondary to football but growing",
+    "founded": 1932,
+    "teams": 16,
+    "soccerTeams": 14,
+    "ncaaTitles": 2,
+    "mlsPipeline": "Moderate — soccer historically overshadowed by football culture",
+    "scholarships": "Up to 9.9 athletic equivalencies",
+    "guideSchools": [
+      "UF — University of Florida"
+    ],
+    "otherSchools": [
+      "South Carolina",
+      "Kentucky",
+      "Vanderbilt",
+      "Tennessee",
+      "Auburn",
+      "Georgia",
+      "Florida State (ACC, not SEC)"
+    ],
+    "desc": "The SEC is the dominant American football conference, and soccer has historically been a secondary sport in the culture. However, academic and research infrastructure is extraordinary. UF's Applied Physiology and Kinesiology (APK) programme is the #1 nationally ranked exercise science degree in the United States — a STEM-designated degree with 13 dedicated labs, mandatory 12-credit internship, and direct DPT graduate school articulation pathways.",
+    "olivierNote": "UF is in this guide purely for the APK degree — it's the only program with 16/16 ACU BESS alignment (perfect match). Soccer is mid-table SEC but if Olivier's academic and PT career goals are the primary driver, Gainesville delivers extraordinary infrastructure.",
+    "color": [
+      "#1f2937",
+      "#86efac"
+    ]
+  },
+  {
+    "id": "aac",
+    "name": "American Athletic Conference",
+    "abbr": "AAC",
+    "tier": "High Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Very Strong — #5-6 nationally, rising fast",
+    "founded": 2013,
+    "teams": 14,
+    "soccerTeams": 12,
+    "ncaaTitles": 0,
+    "mlsPipeline": "Strong and growing — USF and FIU are consistent MLS producers",
+    "scholarships": "Up to 9.9 athletic equivalencies",
+    "guideSchools": [
+      "USF (Tampa)",
+      "FIU (Miami — leaving for ACC 2026)"
+    ],
+    "otherSchools": [
+      "Tulsa",
+      "Memphis",
+      "Wichita State",
+      "South Florida",
+      "Temple",
+      "East Carolina",
+      "UAB"
+    ],
+    "desc": "The American Athletic Conference (AAC) has emerged as a genuine high-major conference in soccer, sitting just below the Power 5 conferences. USF and FIU have been consistent conference champions. FIU won the AAC in 2022 and reached the championship match in 2024 — before their scheduled transition to the ACC in 2026. The conference offers a strong level of competition with more accessible scholarship packages than Power 5 programs.",
+    "olivierNote": "FIU and USF are both excellent Olivier fits. Kyle Russell at FIU has built a genuine powerhouse — AAC finalist 4 times in 5 seasons. George Kiefer returning to USF is a major development signal. Both offer Florida warmth, city campuses, and strong exercise science degrees at accessible D1 cost levels.",
+    "color": [
+      "#1e3a5f",
+      "#38bdf8"
+    ]
+  },
+  {
+    "id": "bigwest",
+    "name": "Big West Conference",
+    "abbr": "Big West",
+    "tier": "High Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Strong — dominant West Coast regional conference",
+    "founded": 1969,
+    "teams": 12,
+    "soccerTeams": 10,
+    "ncaaTitles": 1,
+    "mlsPipeline": "Solid — Manu Duah #1 overall 2025 is the marquee recent example",
+    "scholarships": "Up to 9.9 athletic equivalencies",
+    "guideSchools": [
+      "UCSB — UC Santa Barbara"
+    ],
+    "otherSchools": [
+      "UC Davis",
+      "UC Irvine",
+      "Cal Poly SLO",
+      "CSUN",
+      "CSU Fullerton",
+      "Hawaii",
+      "Cal State Bakersfield"
+    ],
+    "desc": "The Big West is the premier West Coast conference below the Pac-12 (now effectively the Big Ten West). UCSB won the Big West in 2024 and produced Manu Duah as the #1 overall pick in the 2025 MLS Draft — the highest any Big West player has ever been selected. The conference features California schools with Mediterranean climates, strong academic programs, and proximity to MLS teams (LAFC, LA Galaxy, San Jose, Seattle).",
+    "olivierNote": "UCSB is a compelling fit — Santa Barbara's climate is identical to Sydney, Tim Von Steeg has 350+ wins and the Big West Championship 2024, and Manu Duah's #1 pick proves the pro pipeline is real. Best lifestyle match of the D1 programs alongside UCLA.",
+    "color": [
+      "#0c4a6e",
+      "#7dd3fc"
+    ]
+  },
+  {
+    "id": "ivy",
+    "name": "Ivy League",
+    "abbr": "Ivy",
+    "tier": "Ivy League (D1)",
+    "tierClass": "tier-ivy",
+    "prestige": "Elite academic — no athletic scholarships",
+    "founded": 1954,
+    "teams": 8,
+    "soccerTeams": 8,
+    "ncaaTitles": 0,
+    "mlsPipeline": "Growing — Princeton 2 MLS picks recently; Kevin O'Toole NYCFC 2022",
+    "scholarships": "ZERO athletic scholarships — 100% need-based financial aid only",
+    "guideSchools": [
+      "Princeton",
+      "Yale"
+    ],
+    "otherSchools": [
+      "Harvard",
+      "Cornell",
+      "Dartmouth",
+      "Brown",
+      "Columbia",
+      "Pennsylvania"
+    ],
+    "desc": "The Ivy League has a unique financial aid model — no athletic scholarships of any kind, but need-based aid can cover 100% of costs for qualifying families. The 8 schools are among the most academically prestigious in the world. Princeton won both the 2024 and 2025 Ivy League Tournaments — the first team ever to win back-to-back under Jim Barlow. Yale won in 2023. The league has produced MLS players including Kevin O'Toole (NYCFC). Princeton's 2025 undefeated Ivy season is the program's best in history.",
+    "olivierNote": "Zero athletic scholarships is the key constraint. If Olivier's family qualifies for need-based aid, costs can match or beat D2 programs. GPA 2.8 is likely below minimum for Ivy admission — a GPA of 3.5+ is typically needed. Princeton is surging in 2024–2025.",
+    "color": [
+      "#713f12",
+      "#fde68a"
+    ]
+  },
+  {
+    "id": "caa",
+    "name": "Colonial Athletic Association",
+    "abbr": "CAA",
+    "tier": "Mid-Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Solid — competitive D1, best East Coast mid-major",
+    "founded": 1979,
+    "teams": 13,
+    "soccerTeams": 10,
+    "ncaaTitles": 0,
+    "mlsPipeline": "Limited — Charleston Battery (USL) local connection is primary pro pathway",
+    "scholarships": "Up to 9.9 athletic equivalencies",
+    "guideSchools": [
+      "College of Charleston"
+    ],
+    "otherSchools": [
+      "Drexel",
+      "Hofstra",
+      "Monmouth",
+      "UNCW",
+      "Delaware",
+      "Towson",
+      "Northeastern"
+    ],
+    "desc": "The CAA is a solid mid-major D1 conference along the East Coast. It lacks the national profile of the ACC or Big East but offers genuine D1 competition. Charleston's Keith Wiggans played 7 seasons for the Charleston Battery (USL) — a direct connection to the professional game in the city. Charleston is one of the most beautiful and historic cities in the American South, with a warm coastal climate.",
+    "olivierNote": "Charleston is the lifestyle pick of the D1 East programs. Historic waterfront city, warm climate, improving program. Best if Olivier values city experience and personal coaching development over conference prestige.",
+    "color": [
+      "#0c4a6e",
+      "#38bdf8"
+    ]
+  },
+  {
+    "id": "ssc",
+    "name": "Sunshine State Conference",
+    "abbr": "SSC",
+    "tier": "Division II",
+    "tierClass": "tier-d2",
+    "prestige": "#1 D2 conference nationally — dominates national rankings",
+    "founded": 1975,
+    "teams": 12,
+    "soccerTeams": 12,
+    "ncaaTitles": 4,
+    "mlsPipeline": "Best non-MLS pipeline — USL2, international pro signings annually from multiple SSC teams",
+    "scholarships": "Up to 9 athletic equivalencies (D2 maximum)",
+    "guideSchools": [
+      "PBA (West Palm Beach)",
+      "Lynn (Boca Raton)",
+      "Barry (Miami)",
+      "Nova SE (Fort Lauderdale)"
+    ],
+    "otherSchools": [
+      "Rollins College",
+      "Florida Southern",
+      "St. Thomas University",
+      "Palm Beach University",
+      "Saint Leo"
+    ],
+    "desc": "The Sunshine State Conference is consistently ranked as the top Division II conference in men's soccer nationally. In 2025, PBA finished ranked #2 nationally with an 8-0-2 conference record, Barry has 4 all-time national championships (most in D2 history), and Lynn had a Final Four run in 2021. The entire conference is located in South Florida — warm, coastal, and diverse. Exercise science and health sciences programs across SSC schools directly serve the large Florida medical and PT sector.",
+    "olivierNote": "The SSC is arguably the single best conference for Olivier's overall needs. 4 guide schools, all in warm Florida cities (West Palm Beach, Boca Raton, Miami, Fort Lauderdale), all within 60 minutes of each other. PBA is #2 nationally with a Pre-PT degree title. Barry has the most D2 titles ever. Lynn has Australian player specialist connections. Nova SE has its own DPT program.",
+    "color": [
+      "#064e3b",
+      "#6ee7b7"
+    ]
+  },
+  {
+    "id": "lsc",
+    "name": "Lone Star Conference",
+    "abbr": "LSC",
+    "tier": "Division II",
+    "tierClass": "tier-d2",
+    "prestige": "Strong regional — Texas and Oklahoma",
+    "founded": 1931,
+    "teams": 12,
+    "soccerTeams": 10,
+    "ncaaTitles": 0,
+    "mlsPipeline": "Developing — Austin FC (MLS) connections via St Edward's proximity",
+    "scholarships": "Up to 9 athletic equivalencies",
+    "guideSchools": [
+      "St. Edward's (Austin TX)"
+    ],
+    "otherSchools": [
+      "Angelo State",
+      "Tarleton State",
+      "UT Permian Basin",
+      "Texas A&M Commerce",
+      "West Texas A&M",
+      "Oklahoma Baptist"
+    ],
+    "desc": "The Lone Star Conference covers Texas and Oklahoma in Division II. St. Edward's in Austin is the flagship LSC soccer program, with Diego Bocanegra's possession-based attacking style producing consistent LSC Championship contenders. Austin FC (MLS) is headquartered nearby, and the Austin Bold FC (USL2) serves as a direct affiliate — creating a genuine professional pathway. Austin is one of America's fastest-growing cities.",
+    "olivierNote": "St. Edward's is the best Texas pick for Olivier. Diego Bocanegra's European pressing system is perfect for an 8/10 midfielder. Austin is warm, urban, and culturally dynamic. Austin FC pipeline is a rare MLS-affiliated pro pathway at D2 level.",
+    "color": [
+      "#1c1917",
+      "#fbbf24"
+    ]
+  },
+  {
+    "id": "ccaa",
+    "name": "California Collegiate Athletic Association",
+    "abbr": "CCAA",
+    "tier": "Division II",
+    "tierClass": "tier-d2",
+    "prestige": "Competitive West Coast D2",
+    "founded": 1938,
+    "teams": 20,
+    "soccerTeams": 18,
+    "ncaaTitles": 0,
+    "mlsPipeline": "Limited MLS; strong sport science career placement in LA",
+    "scholarships": "Up to 9 athletic equivalencies",
+    "guideSchools": [
+      "Cal State LA"
+    ],
+    "otherSchools": [
+      "Cal State San Marcos",
+      "Sonoma State",
+      "Cal State East Bay",
+      "Humboldt State",
+      "Stanislaus State",
+      "Cal Poly Pomona"
+    ],
+    "desc": "The CCAA is the West Coast Division II conference, featuring California State University system schools. The academic quality of Cal State system institutions is strong for kinesiology — Cal State LA has a dedicated School of Kinesiology and Nutritional Science. The LA market provides extraordinary internship and clinical placement access for students targeting PT or sport science careers.",
+    "olivierNote": "Cal State LA is the most affordable option in Los Angeles (~$28k/yr). LAFC and LA Galaxy proximity makes the LA sport science career network extraordinary. Best if budget is the primary constraint while maintaining LA lifestyle.",
+    "color": [
+      "#1e40af",
+      "#93c5fd"
+    ]
+  },
+  {
+    "id": "sac",
+    "name": "Sooner Athletic Conference (NAIA)",
+    "abbr": "SAC",
+    "tier": "NAIA",
+    "tierClass": "tier-naia",
+    "prestige": "Elite NAIA — most competitive NAIA conference nationally",
+    "founded": 1926,
+    "teams": 14,
+    "soccerTeams": 14,
+    "ncaaTitles": 5,
+    "mlsPipeline": "NAIA to USL2 and international; occasional A-League/NPL Australian pathways",
+    "scholarships": "Full scholarship equivalent possible (NAIA — no maximum)",
+    "guideSchools": [
+      "Oklahoma City University (OCU)"
+    ],
+    "otherSchools": [
+      "Oklahoma Baptist",
+      "Science & Arts",
+      "Bacone College",
+      "John Brown University"
+    ],
+    "desc": "The Sooner Athletic Conference is consistently the highest-ranked NAIA conference in men's soccer. Oklahoma City University under Brian Finnegan is a regular NAIA national tournament participant. NAIA scholarship rules are arguably the most flexible in college sports — there is no maximum equivalency cap, meaning a full academic + athletic package is achievable. OCU has a specific track record of developing and placing Australian players.",
+    "olivierNote": "Brian Finnegan at OCU has the only direct A-League and Australian professional connection in this entire guide. If Olivier's primary goal is maximum scholarship value and a warm city campus, OCU offers the best NAIA package. Oklahoma City is a genuine city with a growing sport and entertainment scene.",
+    "color": [
+      "#78350f",
+      "#fcd34d"
+    ]
+  },
+  {
+    "id": "sun",
+    "name": "Sun Conference (NAIA)",
+    "abbr": "Sun",
+    "tier": "NAIA",
+    "tierClass": "tier-naia",
+    "prestige": "Competitive Florida NAIA",
+    "founded": 2002,
+    "teams": 16,
+    "soccerTeams": 12,
+    "ncaaTitles": 0,
+    "mlsPipeline": "Limited — career health science pathway is primary focus",
+    "scholarships": "Full scholarship equivalent possible",
+    "guideSchools": [
+      "Keiser University"
+    ],
+    "otherSchools": [
+      "Embry-Riddle Aeronautical",
+      "Warner University",
+      "Southeastern University",
+      "Webber International"
+    ],
+    "desc": "The Sun Conference is the Florida NAIA league. Keiser University is primarily a health sciences institution — the Clinical Simulation Centre at Keiser provides hands-on patient care simulation before graduate school, which is extremely rare at undergraduate level. Soccer competes at a solid NAIA level within a health-sciences-first university culture.",
+    "olivierNote": "Keiser is the right choice if PT/Chiro pathway is the absolute priority over soccer profile. Fort Lauderdale warm and cosmopolitan. Clinical Simulation Centre gives pre-grad experience unavailable at most US programs.",
+    "color": [
+      "#4c1d95",
+      "#c4b5fd"
+    ]
+  },
+  {
+    "id": "sciac",
+    "name": "Southern CA Intercollegiate Athletic Conference (D3)",
+    "abbr": "SCIAC",
+    "tier": "Division III",
+    "tierClass": "tier-d1",
+    "prestige": "Strong D3 — best D3 conference in California",
+    "founded": 1915,
+    "teams": 9,
+    "soccerTeams": 9,
+    "ncaaTitles": 0,
+    "mlsPipeline": "None (D3) — academic/PT pathway focus",
+    "scholarships": "ZERO athletic scholarships — merit and need-based aid only",
+    "guideSchools": [
+      "Chapman University"
+    ],
+    "otherSchools": [
+      "Claremont-Mudd-Scripps",
+      "Pomona-Pitzer",
+      "Cal Lutheran",
+      "Occidental",
+      "La Verne",
+      "Redlands"
+    ],
+    "desc": "SCIAC is the premier Division III conference in Southern California. No athletic scholarships across all D3 programs. Chapman University is the standout — KIN 405 Pre-Physical Therapy Prep is a required course in the curriculum, and the Orange County clinical network (Hoag Hospital, CHOC) provides excellent DPT observation hours. D3 reduces athletic schedule demands, which can improve GPA performance for students targeting graduate school.",
+    "olivierNote": "Chapman D3 = less schedule pressure = better GPA performance for PT grad school applications. No athletic scholarships but merit aid and the Hoag Hospital clinical network are strong compensators. Orange County is 30 minutes from LA.",
+    "color": [
+      "#1e3a5f",
+      "#c4b5fd"
+    ]
+  },
+  {
+    "id": "juco",
+    "name": "Junior College Conferences (CCCAA / NJCAA)",
+    "abbr": "JUCO",
+    "tier": "Junior College",
+    "tierClass": "tier-juco",
+    "prestige": "Transfer pathway — not a career destination",
+    "founded": "Various",
+    "teams": "100+",
+    "soccerTeams": "Many",
+    "ncaaTitles": "N/A",
+    "mlsPipeline": "Pathway — SMC → UCLA transfer pipeline is the most proven in California",
+    "scholarships": "Athletic grants + need-based aid (varies by state)",
+    "guideSchools": [
+      "Santa Monica College (CCCAA)",
+      "Miami Dade College (NJCAA)"
+    ],
+    "otherSchools": [
+      "Pasadena City College",
+      "Cuyamaca College",
+      "Pima CC (Tucson)"
+    ],
+    "desc": "Community college and junior college programs serve as 2-year transfer platforms. Santa Monica College has the best documented transfer pipeline to UCLA in California — multiple players have transferred and gone on to D1 careers. Miami Dade feeds into Barry, FIU, and UM in South Florida. JUCO costs ($9k–$11k/yr) are a fraction of 4-year programs. The key value is using 2 years to raise GPA, build US soccer exposure, and step up to a 4-year program with a strong academic record.",
+    "olivierNote": "Santa Monica College → UCLA is the safest low-risk, high-upside option in the guide if Olivier's GPA or video profile needs development time. Santa Monica is 100 metres from the beach. 2 years at ~$9k then transfer to UCLA — the most Sydney-like location in America.",
+    "color": [
+      "#14532d",
+      "#86efac"
+    ]
+  }
+]

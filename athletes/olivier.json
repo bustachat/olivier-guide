@@ -1,0 +1,64 @@
+{
+  "id": "olivier",
+  "name": "Olivier",
+  "agentName": "Platform Sports Management",
+  "guideVersion": "v13",
+
+  "position": "Central Midfielder",
+  "positionCode": "CM",
+  "positionRating": "8/10",
+  "positionStyle": "Box-to-box",
+
+  "currentGpa": 2.8,
+  "gpaStatus": "progressing",
+  "yearLevel": "Year 12 HSC",
+  "expectedAtarMin": 55,
+  "expectedAtarMax": 75,
+  "defaultAtar": 70,
+  "targetDeparture": "August 2027",
+
+  "auDegree": "B. Ex & Sports Sci (ACU)",
+  "auUnitsTotal": 16,
+  "auUnitsCompleted": [],
+  "auUnitsPlanned": [
+    "BIOL125", "ANAT100", "EXSC101", "EXSC225", "EXSC322",
+    "EXSC301", "EXSC315", "EXSC320", "EXSC330", "EXSC340",
+    "EXSC350", "EXSC360", "EXSC370", "EXSC380", "EXSC390", "EXSC398"
+  ],
+  "wesTransferableUnits": ["BIOL125", "ANAT100", "EXSC225", "EXSC322"],
+
+  "careerGoal": "DPT / Chiropractic",
+  "lifestylePrefs": ["warm", "city"],
+  "targetDivisions": ["D1", "D2", "NAIA", "JUCO"],
+  "budgetAUD": 80000,
+  "fxRate": 1.55,
+
+  "shortlist": ["fiu", "pba", "lynn", "ucsb", "usf", "barry"],
+
+  "scoreWeights": {
+    "soccerLevel":    25,
+    "gpaEligibility": 20,
+    "cost":           18,
+    "acuAlignment":   15,
+    "city":           10,
+    "ptPath":          7,
+    "climate":         5
+  },
+
+  "soccerLevelMap": {
+    "D1":   1.00,
+    "IVY":  0.90,
+    "D2":   0.80,
+    "NAIA": 0.65,
+    "D3":   0.50,
+    "JUCO": 0.60
+  },
+
+  "prePtMap": {
+    "Excellent":        1.00,
+    "Very Strong":      0.90,
+    "Good":             0.75,
+    "Solid":            0.60,
+    "Transfer Pathway": 0.40
+  }
+}

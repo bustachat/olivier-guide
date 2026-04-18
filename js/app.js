@@ -6,24 +6,31 @@
 let unis = [];
 let conferences = [];
 let coachData = [];
+let athlete = null;  // Loaded from athletes/[id].json
 
 // Load all three data files in parallel, then initialise the app
 async function loadData() {
   try {
-    const base = window.DATA_BASE_URL || './data/';
-    const [schoolsRes, confsRes, coachesRes] = await Promise.all([
+    const base       = window.DATA_BASE_URL  || './data/';
+    const athleteId  = new URLSearchParams(window.location.search).get('athlete') || 'olivier';
+    const athleteBase = window.ATHLETE_BASE_URL || './athletes/';
+
+    const [schoolsRes, confsRes, coachesRes, athleteRes] = await Promise.all([
       fetch(base + 'schools.json'),
       fetch(base + 'conferences.json'),
-      fetch(base + 'coaches.json')
+      fetch(base + 'coaches.json'),
+      fetch(athleteBase + athleteId + '.json')
     ]);
 
-    if (!schoolsRes.ok) throw new Error('Failed to load schools.json');
-    if (!confsRes.ok)   throw new Error('Failed to load conferences.json');
-    if (!coachesRes.ok) throw new Error('Failed to load coaches.json');
+    if (!schoolsRes.ok)  throw new Error('Failed to load schools.json');
+    if (!confsRes.ok)    throw new Error('Failed to load conferences.json');
+    if (!coachesRes.ok)  throw new Error('Failed to load coaches.json');
+    if (!athleteRes.ok)  throw new Error('Failed to load athlete: ' + athleteId + '.json');
 
     unis        = await schoolsRes.json();
     conferences = await confsRes.json();
     coachData   = await coachesRes.json();
+    athlete     = await athleteRes.json();
 
     initApp();
   } catch (err) {
@@ -45,6 +52,9 @@ function initApp() {
   renderCoachCards();
   renderFinSchoolSelector();
   renderFinComparisonBars();
+  // Run ATAR slider at default — triggers score calc + GPA refresh
+  const defaultAtar = (athlete && athlete.defaultAtar) ? athlete.defaultAtar : 70;
+  document.getElementById('atar-slider').value = defaultAtar;
   onAtarSlide();
 }
 
@@ -342,9 +352,10 @@ function buildDetailBody(u){
       </div>
       <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
-          <div style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}">${u.fitOlivier}%</div>
-          <p style="font-size:13px;color:var(--muted)">Combines climate, city lifestyle, exercise science quality, soccer level, pro pathway, and PT/Chiro pathway.</p>
+          <div style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}" id="modal-fit-score-${u.id}">${u.fitOlivier}%</div>
+          <p style="font-size:13px;color:var(--muted)">Dynamically calculated from Olivier's score weights. Move the ATAR slider on Explore to see how eligibility affects this score.</p>
         </div>
+        ${(typeof buildScoreBreakdown === 'function' && athlete) ? buildScoreBreakdown(u, athlete, currentAtarGpa) : ''}
       </div>
     </div>
     <div class="mtab-content" id="tab-contact">
@@ -469,10 +480,15 @@ function onAtarSlide() {
   document.getElementById('atar-display').textContent = atar;
   document.getElementById('gpa-display').textContent = currentAtarGpa.toFixed(1);
 
-  // Re-render all GPA rows on visible cards dynamically
+  // Re-render all GPA rows dynamically
   refreshAllGpaRows();
 
-  // Update summary counts
+  // Recalculate all fit scores against new GPA
+  if (typeof recalculateAllScores === 'function' && athlete) {
+    recalculateAllScores(athlete, currentAtarGpa);
+  }
+
+  // Update ATAR summary counts
   updateAtarCounts();
 }
 

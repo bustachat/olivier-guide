@@ -54,7 +54,17 @@ function initApp() {
   renderFinComparisonBars();
   // Run ATAR slider at default — triggers score calc + GPA refresh
   const defaultAtar = (athlete && athlete.defaultAtar) ? athlete.defaultAtar : 70;
-  document.getElementById('atar-slider').value = defaultAtar;
+  const sliderEl = document.getElementById('atar-slider');
+  if (sliderEl) sliderEl.value = defaultAtar;
+  // Calculate initial converted GPA
+  if (typeof atarToGpa === 'function') {
+    currentAtarGpa = atarToGpa(defaultAtar);
+  }
+  // Run score calculation explicitly after cards are in DOM
+  if (typeof recalculateAllScores === 'function' && athlete) {
+    recalculateAllScores(athlete, currentAtarGpa);
+  }
+  // Then trigger full ATAR UI update
   onAtarSlide();
 }
 
@@ -160,7 +170,7 @@ function buildCard(u){
     '</div>'+
     ivyWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item"><div class="ss-val" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item"><div class="ss-val" id="fit-'+u.id+'" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item"><div class="ss-val" style="color:'+sc(devAvg)+'">'+devAvg+'%</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item"><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+

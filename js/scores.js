@@ -142,26 +142,28 @@ function calcDevAvg(school) {
 // Called on load and whenever ATAR slider moves
 function recalculateAllScores(athlete, convertedGpa) {
   const container = document.getElementById('cards-container');
-  if (!container || !unis.length || !athlete) return;
+  if (!container || !unis.length || !athlete) {
+    console.warn('recalculateAllScores: missing', {
+      hasContainer: !!container,
+      unisCount: unis.length,
+      hasAthlete: !!athlete
+    });
+    return;
+  }
 
   unis.forEach(school => {
-    const card = document.getElementById('card-' + school.id);
-    if (!card) return;
-
     const newFit = calculateFitScore(school, athlete, convertedGpa);
 
-    // Update the fit score display in the score strip
-    const ssItems = card.querySelectorAll('.ss-item');
-    if (ssItems[0]) {
-      const valEl = ssItems[0].querySelector('.ss-val');
-      if (valEl) {
-        valEl.textContent = newFit + '%';
-        valEl.style.color = sc(newFit);
-      }
+    // Target by specific id — most reliable
+    const valEl = document.getElementById('fit-' + school.id);
+    if (valEl) {
+      valEl.textContent = newFit + '%';
+      valEl.style.color = sc(newFit);
     }
 
-    // Store on card for compare table re-renders
-    card.dataset.fitscore = newFit;
+    // Also store on card element for compare/modal use
+    const card = document.getElementById('card-' + school.id);
+    if (card) card.dataset.fitscore = newFit;
   });
 }
 

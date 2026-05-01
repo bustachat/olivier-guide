@@ -409,6 +409,8 @@
     "warm": true,
     "city": false,
     "top": false,
+    "noVarsity": true,
+    "noVarsityNote": "UF does NOT field a varsity men's soccer team — the SEC only sponsors women's soccer at most member schools, and UF men's soccer is a student-run club, not an NCAA program. Olivier cannot be recruited or scholarshipped here. Listed for academic reference only — UF's APK degree remains the closest US structural match to ACU BESS (16/16).",
     "color": [
       "#ede9fe",
       "#7c3aed"
@@ -416,48 +418,48 @@
     "confRecord": [
       {
         "yr": 2024,
-        "pos": "Mid SEC",
-        "note": "SEC"
+        "pos": "No Varsity",
+        "note": "Club soccer only"
       },
       {
         "yr": 2023,
-        "pos": "Mid SEC",
-        "note": "SEC"
+        "pos": "No Varsity",
+        "note": "Club soccer only"
       },
       {
         "yr": 2022,
-        "pos": "Lower SEC",
-        "note": "SEC"
+        "pos": "No Varsity",
+        "note": "Club soccer only"
       },
       {
         "yr": 2021,
-        "pos": "Mid SEC",
-        "note": "SEC"
+        "pos": "No Varsity",
+        "note": "Club soccer only"
       },
       {
         "yr": 2020,
-        "pos": "Mid SEC",
-        "note": "SEC"
+        "pos": "No Varsity",
+        "note": "Club soccer only"
       }
     ],
     "titles": [
-      "Consistent SEC Tournament appearances",
-      "Strong academic/research reputation"
+      "⚠ No varsity men's soccer program",
+      "Strong academic/research reputation (APK #1 nationally)"
     ],
     "proPlayers": {
-      "mlsPicks5yr": 2,
+      "mlsPicks5yr": 0,
       "notable": [
-        "Multiple USL Championship signings",
-        "Strong athletic training + sport science placement"
+        "N/A — no varsity program, no NCAA pathway",
+        "Academic-only consideration for graduate school prep"
       ],
-      "draftRank": "Moderate soccer pipeline; extraordinary academic pipeline"
+      "draftRank": "N/A — UF does not have a varsity men's soccer program"
     },
     "acRank": "#29 National",
     "kinRank": "#1 Nationally (APK)",
     "degreeTitle": "B.S. in Applied Physiology and Kinesiology (APK)",
     "acuAlign": 16,
     "acuAlignNote": "FULL alignment — UF APK is the closest US structural match to ACU BESS. Anatomy, physiology, biomechanics, exercise prescription, resistance training, motor control, sport psych, research, AND mandatory 12cr internship. STEM-designated degree.",
-    "soccerLevel": "SEC — Strong",
+    "soccerLevel": "⚠ No NCAA Varsity Men's Soccer",
     "cost": "~$45k/yr",
     "aid": "Athletic + Need",
     "size": "55,000+",
@@ -497,11 +499,11 @@
       "note": "UF's APK facility is unmatched academically in this guide — 13 labs, a hyperbaric chamber, muscle biopsy suite, and embedded curriculum access. If Olivier's primary goal is DPT preparation, no other school provides a laboratory environment close to this."
     },
     "coach": {
-      "name": "TBD",
-      "title": "Confirm with Platform Sports Mgmt",
-      "email": "soccercoach@athletics.ufl.edu",
-      "phone": "352-375-4683",
-      "profile": "Verify current coach. UF APK is the #1 ranked exercise science program nationally — extraordinary academic environment."
+      "name": "⚠ No Varsity Head Coach",
+      "title": "UF does not field a varsity men's soccer team",
+      "email": "N/A — no NCAA program",
+      "phone": "N/A — no NCAA program",
+      "profile": "UF does not have a varsity men's soccer program. Only a student-run club soccer team exists (gatorsclubsoccer.com). Do not contact UF Athletics for soccer recruitment — there is no scholarship pathway. Listed only because the APK degree is the #1 ranked exercise science program nationally."
     },
     "devScores": {
       "tactical": 80,
@@ -509,7 +511,7 @@
       "fitness": 88,
       "ptPath": 95
     },
-    "fitOlivier": 82,
+    "fitOlivier": null,
     "tags": [
       "warm",
       "acad",
@@ -527,7 +529,7 @@
       "APK 3400 — Sport Psychology",
       "APK 6905 — Internship (12cr)"
     ],
-    "rec": "UF's APK is #1 nationally. Most complete structural match to ACU BESS degree. Mandatory 12-credit internship = clinical hours for DPT. Gainesville is a college town not a major city — less lifestyle match.",
+    "rec": "⚠ NOT A VIABLE OPTION FOR OLIVIER. UF does not field a varsity men's soccer team — only club soccer exists. Olivier cannot be recruited, scholarshipped, or play NCAA D1 here. The APK degree remains academically the #1 ranked exercise science program nationally and the closest structural match to ACU BESS (16/16), so UF is retained in this guide for academic reference only. If Olivier wants this calibre of pre-PT degree with actual varsity soccer, the strongest equivalents are Indiana (15/16, B1G), USF (13/16, AAC, Florida warm climate), FIU (14/16, AAC, Miami), or PBA (14/16, D2 SSC, West Palm Beach).",
     "url": "https://floridagators.com/sports/mens-soccer"
   },
   {

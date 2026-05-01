@@ -114,27 +114,24 @@
     "abbr": "SEC",
     "tier": "Power 5 (D1)",
     "tierClass": "tier-p5",
-    "prestige": "Strong — soccer secondary to football but growing",
+    "prestige": "⚠ Soccer-restricted — SEC does NOT sponsor men's soccer at UF",
     "founded": 1932,
     "teams": 16,
-    "soccerTeams": 14,
-    "ncaaTitles": 2,
-    "mlsPipeline": "Moderate — soccer historically overshadowed by football culture",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "soccerTeams": 0,
+    "ncaaTitles": 0,
+    "mlsPipeline": "N/A — SEC does not sponsor men's soccer at UF (women's only)",
+    "scholarships": "N/A — no varsity men's soccer at the guide's SEC school (UF)",
     "guideSchools": [
-      "UF — University of Florida"
+      "⚠ UF — Reference only (no varsity men's soccer)"
     ],
     "otherSchools": [
-      "South Carolina",
-      "Kentucky",
-      "Vanderbilt",
-      "Tennessee",
-      "Auburn",
-      "Georgia",
-      "Florida State (ACC, not SEC)"
+      "South Carolina (men's soccer — not in guide)",
+      "Kentucky (men's soccer — not in guide)",
+      "Most SEC schools sponsor women's soccer only",
+      "UF, Auburn, Georgia, Tennessee — NO men's varsity"
     ],
-    "desc": "The SEC is the dominant American football conference, and soccer has historically been a secondary sport in the culture. However, academic and research infrastructure is extraordinary. UF's Applied Physiology and Kinesiology (APK) programme is the #1 nationally ranked exercise science degree in the United States — a STEM-designated degree with 13 dedicated labs, mandatory 12-credit internship, and direct DPT graduate school articulation pathways.",
-    "olivierNote": "UF is in this guide purely for the APK degree — it's the only program with 16/16 ACU BESS alignment (perfect match). Soccer is mid-table SEC but if Olivier's academic and PT career goals are the primary driver, Gainesville delivers extraordinary infrastructure.",
+    "desc": "⚠ IMPORTANT CORRECTION: The SEC sponsors women's soccer broadly but NOT men's soccer at most member schools. The University of Florida — this guide's only SEC entry — does NOT field a varsity men's soccer team. UF only has a student-run men's club soccer team. UF's Applied Physiology and Kinesiology (APK) programme remains the #1 nationally ranked exercise science degree in the United States, but Olivier cannot play NCAA D1 men's soccer at UF. UF is retained in the guide solely as an academic benchmark.",
+    "olivierNote": "⚠ UF is included for ACADEMIC REFERENCE ONLY. It is the only program with 16/16 ACU BESS alignment (perfect academic match), but Olivier cannot be recruited to play men's soccer at UF — there is no varsity team. For comparable APK-tier academics WITH varsity D1 soccer, look at Indiana (B1G, 15/16) or USF (AAC, 13/16).",
     "color": [
       "#1f2937",
       "#86efac"

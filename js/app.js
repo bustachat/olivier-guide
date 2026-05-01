@@ -6,31 +6,24 @@
 let unis = [];
 let conferences = [];
 let coachData = [];
-let athlete = null;  // Loaded from athletes/[id].json
 
 // Load all three data files in parallel, then initialise the app
 async function loadData() {
   try {
-    const base       = window.DATA_BASE_URL  || './data/';
-    const athleteId  = new URLSearchParams(window.location.search).get('athlete') || 'olivier';
-    const athleteBase = window.ATHLETE_BASE_URL || './athletes/';
-
-    const [schoolsRes, confsRes, coachesRes, athleteRes] = await Promise.all([
+    const base = window.DATA_BASE_URL || './data/';
+    const [schoolsRes, confsRes, coachesRes] = await Promise.all([
       fetch(base + 'schools.json'),
       fetch(base + 'conferences.json'),
-      fetch(base + 'coaches.json'),
-      fetch(athleteBase + athleteId + '.json')
+      fetch(base + 'coaches.json')
     ]);
 
-    if (!schoolsRes.ok)  throw new Error('Failed to load schools.json');
-    if (!confsRes.ok)    throw new Error('Failed to load conferences.json');
-    if (!coachesRes.ok)  throw new Error('Failed to load coaches.json');
-    if (!athleteRes.ok)  throw new Error('Failed to load athlete: ' + athleteId + '.json');
+    if (!schoolsRes.ok) throw new Error('Failed to load schools.json');
+    if (!confsRes.ok)   throw new Error('Failed to load conferences.json');
+    if (!coachesRes.ok) throw new Error('Failed to load coaches.json');
 
     unis        = await schoolsRes.json();
     conferences = await confsRes.json();
     coachData   = await coachesRes.json();
-    athlete     = await athleteRes.json();
 
     initApp();
   } catch (err) {
@@ -52,19 +45,6 @@ function initApp() {
   renderCoachCards();
   renderFinSchoolSelector();
   renderFinComparisonBars();
-  // Run ATAR slider at default — triggers score calc + GPA refresh
-  const defaultAtar = (athlete && athlete.defaultAtar) ? athlete.defaultAtar : 70;
-  const sliderEl = document.getElementById('atar-slider');
-  if (sliderEl) sliderEl.value = defaultAtar;
-  // Calculate initial converted GPA
-  if (typeof atarToGpa === 'function') {
-    currentAtarGpa = atarToGpa(defaultAtar);
-  }
-  // Run score calculation explicitly after cards are in DOM
-  if (typeof recalculateAllScores === 'function' && athlete) {
-    recalculateAllScores(athlete, currentAtarGpa);
-  }
-  // Then trigger full ATAR UI update
   onAtarSlide();
 }
 
@@ -122,6 +102,7 @@ function buildCard(u){
 
   const devAvg=Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
   const ivyWarn=u.div==='IVY'?'<div class="ivy-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ Ivy: No athletic scholarships. Need-based only. GPA 2.8 likely insufficient.</div>':'';
+  const noVarsityWarn=u.noVarsity?'<div class="no-varsity-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ NO VARSITY MEN\'S SOCCER — '+u.full+' does NOT field an NCAA men\'s soccer team. Listed for academic reference only.</div>':'';
 
   // GPA compact row
   let gpaHtml='';
@@ -169,8 +150,9 @@ function buildCard(u){
       '</div>'+
     '</div>'+
     ivyWarn+
+    noVarsityWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item"><div class="ss-val" id="fit-'+u.id+'" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item"><div class="ss-val" style="color:'+(u.noVarsity?'var(--rose)':sc(u.fitOlivier))+';font-size:'+(u.noVarsity?'.85rem':'1.05rem')+'">'+(u.noVarsity?'N/A':u.fitOlivier+'%')+'</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item"><div class="ss-val" style="color:'+sc(devAvg)+'">'+devAvg+'%</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item"><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
@@ -180,11 +162,11 @@ function buildCard(u){
     '</div>'+
     '<div class="info-grid2">'+
       '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+u.cost+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+u.aid+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+(u.noVarsity?'N/A':u.aid)+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePT.split('—')[0].trim()+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">MLS Picks (5yr)</div><div class="ig2-val">'+u.proPlayers.mlsPicks5yr+' picks</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">MLS Picks (5yr)</div><div class="ig2-val">'+(u.noVarsity?'<span style="color:var(--rose)">N/A</span>':u.proPlayers.mlsPicks5yr+' picks')+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Facilities</div><div class="ig2-val"><span class="fac-card-badge fac-'+facRating+'">'+facEmoji+' '+facLabel+'</span></div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px">'+u.soccerLevel.split('—')[0].trim()+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px'+(u.noVarsity?';color:var(--rose);font-weight:700':'')+'">'+u.soccerLevel.split('—')[0].trim()+'</div></div>'+
     '</div>'+
     gpaHtml+
     '<div class="conf-strip">'+
@@ -236,7 +218,7 @@ function renderComparePage(){
     ['Head Coach',u=>`<div class="cval">${u.coach.name}</div>`],
     ['Climate',u=>`<div class="cval">${u.warm?'☀ Warm':'⛅ Mixed'}</div>`],
     ['City Campus',u=>`<div class="cval ${u.city?'good':''}">${u.city?'✅ Yes':'⚠ Smaller'}</div>`],
-    ['Overall Fit',u=>{const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
+    ['Overall Fit',u=>{if(u.noVarsity)return`<div style="color:var(--rose);font-weight:700;font-size:12px">⚠ N/A — No Varsity</div>`;const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
     ['Tactical Dev',u=>`<div style="color:${sc(u.devScores.tactical)};font-weight:600">${u.devScores.tactical}/100</div>`],
     ['PT Path Score',u=>`<div style="color:${sc(u.devScores.ptPath)};font-weight:600">${u.devScores.ptPath}/100</div>`],
     ['Website',u=>`<a href="${u.url}" target="_blank" style="color:var(--indigo);font-size:12px;font-weight:600">Visit →</a>`],
@@ -278,6 +260,7 @@ function buildDetailBody(u){
     </div>
     <div class="mtab-content active" id="tab-overview">
       ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League: No athletic scholarships — need-based financial aid only. Highly selective admission. GPA 2.8 is likely insufficient without significant improvement.</div>`:''}
+      ${u.noVarsity?`<div class="no-varsity-warning">⚠ NO VARSITY MEN'S SOCCER PROGRAM — ${u.noVarsityNote||u.full+' does not field an NCAA men\'s soccer team.'} Olivier cannot be recruited or scholarshipped here. Listed for academic reference only.</div>`:''}
       <div class="detail-grid">
         <div class="detail-block"><h4>Quick Facts</h4><table style="width:100%;font-size:12px">
           <tr><td style="color:var(--hint);padding:4px 0">Division</td><td><span class="dbadge d-${u.div}">${u.div}</span></td></tr>
@@ -362,14 +345,14 @@ function buildDetailBody(u){
       </div>
       <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
-          <div style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}" id="modal-fit-score-${u.id}">${u.fitOlivier}%</div>
-          <p style="font-size:13px;color:var(--muted)">Dynamically calculated from Olivier's score weights. Move the ATAR slider on Explore to see how eligibility affects this score.</p>
+          <div style="font-size:2.5rem;font-weight:800;color:${u.noVarsity?'var(--rose)':sc(u.fitOlivier)}">${u.noVarsity?'N/A':u.fitOlivier+'%'}</div>
+          <p style="font-size:13px;color:var(--muted)">${u.noVarsity?'Fit score not applicable — no varsity men\'s soccer program. Olivier cannot play here.':'Combines climate, city lifestyle, exercise science quality, soccer level, pro pathway, and PT/Chiro pathway.'}</p>
         </div>
-        ${(typeof buildScoreBreakdown === 'function' && athlete) ? buildScoreBreakdown(u, athlete, currentAtarGpa) : ''}
       </div>
     </div>
     <div class="mtab-content" id="tab-contact">
       ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League coaches cannot offer athletic scholarships. Contact should still go through Platform Sports Management — coach relationships matter for roster spots.</div>`:''}
+      ${u.noVarsity?`<div class="no-varsity-warning">⚠ NO VARSITY MEN'S SOCCER COACH — ${u.full} has no NCAA men's soccer program and therefore no head coach to contact. Do NOT email UF Athletics for soccer recruitment. Only a student-run club soccer team exists.</div>`:''}
       <div class="contact-block"><h4>${u.coach.name}</h4>
         <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
         <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
@@ -490,15 +473,10 @@ function onAtarSlide() {
   document.getElementById('atar-display').textContent = atar;
   document.getElementById('gpa-display').textContent = currentAtarGpa.toFixed(1);
 
-  // Re-render all GPA rows dynamically
+  // Re-render all GPA rows on visible cards dynamically
   refreshAllGpaRows();
 
-  // Recalculate all fit scores against new GPA
-  if (typeof recalculateAllScores === 'function' && athlete) {
-    recalculateAllScores(athlete, currentAtarGpa);
-  }
-
-  // Update ATAR summary counts
+  // Update summary counts
   updateAtarCounts();
 }
 
@@ -659,7 +637,8 @@ function renderContacts(){
     <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
     <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone}</div></div>
     <div class="contact-row"><div class="ci">Program</div><div class="cv"><a href="${u.url}" target="_blank">View →</a></div></div>
-    ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
+    ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}
+    ${u.noVarsity?'<div style="font-size:11px;color:var(--rose);font-weight:700;margin-top:4px;background:var(--rose3);padding:6px 8px;border-radius:6px">⚠ NO VARSITY MEN\'S SOCCER — do not contact for recruitment. Listed for academic reference only.</div>':''}</div>`;});
   container.innerHTML=html;
 }
 // ══════════════════════════════════════════════════

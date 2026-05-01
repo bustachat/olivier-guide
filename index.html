@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Olivier — US College Soccer & Exercise Science Scholarship Guide v13</title>
+<title>Olivier — US College Soccer & Exercise Science Scholarship Guide v14</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -284,6 +284,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .path-card{background:var(--surface);border-radius:14px;padding:1.3rem;border:1px solid var(--border);}
 .q-card{font-size:13px;color:var(--muted);padding:.9rem 1rem .9rem 1.1rem;background:var(--surface);border-radius:9px;border:1px solid var(--border);border-left:3px solid var(--indigo2);line-height:1.7;}
 .ivy-warning{background:var(--gold3);border:1px solid #fde68a;border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--gold);font-weight:600;margin-bottom:.75rem;}
+.no-varsity-warning{background:var(--rose3);border:1.5px solid var(--rose);border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--rose);font-weight:700;margin-bottom:.75rem;line-height:1.5;}
 @media(max-width:600px){.cards-grid{grid-template-columns:1fr;}.detail-grid{grid-template-columns:1fr;}.page{padding:1rem;}.hero{padding:2rem 1.25rem 1.75rem;}.hero-stats{gap:1.5rem;}}
 /* ── Facilities Tab ── */
 .fac-rating-badge{display:inline-block;font-size:11px;font-weight:800;padding:4px 12px;border-radius:6px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem;}
@@ -458,7 +459,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 </head>
 <body>
 <nav class="top-nav">
-  <div class="nav-brand">⚽ <span>Olivier's</span> Guide v13</div>
+  <div class="nav-brand">⚽ <span>Olivier's</span> Guide v6</div>
   <button class="nav-tab active" onclick="showPage('explore',this)">Explore Schools</button>
   <button class="nav-tab" onclick="showPage('compare',this)">Compare <span class="compare-count" id="ccount">0</span></button>
   <button class="nav-tab" onclick="showPage('pipeline',this)">Pro Pipeline</button>
@@ -485,7 +486,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   <div class="compact-header">
     <div class="ch-left">
       <div class="ch-title">US College Soccer <span>&</span> Exercise Science Guide</div>
-      <div class="ch-badge">Platform Sports Management · Sydney, AUS · v13</div>
+      <div class="ch-badge">Platform Sports Management · Sydney, AUS · v14</div>
     </div>
     <div class="ch-stats">
       <div class="ch-stat"><span class="ch-num">24</span><span class="ch-lbl">Schools</span></div>
@@ -625,32 +626,34 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   <div class="section-head"><h2>ACU BESS Degree Alignment — How US Programs Map to Olivier's Curriculum</h2></div>
   <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">Olivier's ACU Bachelor of Exercise and Sports Science (BESS) has 16 specified units. Each US program is rated on how many of those units have a direct equivalent. A higher alignment score means less need to take extra courses and stronger WES credit recognition potential.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:2rem;">
-    <div style="background:var(--surface);border:1px solid var(--emerald);border-radius:12px;padding:1.1rem 1.25rem;"><div style="font-size:11px;font-weight:700;color:var(--emerald);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Full alignment (14–16/16 units)</div><p style="font-size:13px;color:var(--muted);line-height:1.7">UF (APK), Indiana, PBA, Barry, Virginia, USF. These programs cover anatomy, exercise physiology, biomechanics, motor control, resistance training, sport psychology, research methods, and internship — all matching Olivier's ACU units directly.</p></div>
+    <div style="background:var(--surface);border:1px solid var(--emerald);border-radius:12px;padding:1.1rem 1.25rem;"><div style="font-size:11px;font-weight:700;color:var(--emerald);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Full alignment (14–16/16 units)</div><p style="font-size:13px;color:var(--muted);line-height:1.7">Indiana (15/16), PBA (14), FIU (14), Barry (13), USF (13), Virginia (13). These programs cover anatomy, exercise physiology, biomechanics, motor control, resistance training, sport psychology, research methods, and internship — all matching Olivier's ACU units directly with playable varsity men's soccer.</p></div>
     <div style="background:var(--surface);border:1px solid var(--sky);border-radius:12px;padding:1.1rem 1.25rem;"><div style="font-size:11px;font-weight:700;color:var(--sky);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Strong alignment (10–13/16 units)</div><p style="font-size:13px;color:var(--muted);line-height:1.7">UCLA, UCSB, Wake Forest, SMU, FIU, St Edward's, Chapman, Cal State LA, Lynn, Keiser. Core exercise science covered but motor development and/or motor control may be split across courses.</p></div>
     <div style="background:var(--surface);border:1px solid var(--amber);border-radius:12px;padding:1.1rem 1.25rem;"><div style="font-size:11px;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">Partial alignment (6–9/16 units)</div><p style="font-size:13px;color:var(--muted);line-height:1.7">Princeton, Yale, Charleston, St John's, Oklahoma City. Core science present but the degree structure differs significantly — pre-health biology pathway rather than a dedicated exercise science curriculum.</p></div>
+    <div style="background:var(--surface);border:1.5px solid var(--rose);border-radius:12px;padding:1.1rem 1.25rem;"><div style="font-size:11px;font-weight:700;color:var(--rose);text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">⚠ Reference only — No varsity men's soccer</div><p style="font-size:13px;color:var(--muted);line-height:1.7"><strong style="color:var(--rose)">UF (APK) — 16/16 academically</strong>, but UF does not field a varsity NCAA men's soccer team. Listed for academic benchmark reference only — Olivier cannot be recruited or scholarshipped here. The UF APK degree remains the gold-standard structural match to ACU BESS, which is why it stays in the guide as a comparator.</p></div>
   </div>
   <div class="section-head"><h2>ACU Units — Which US Programs Cover Each</h2></div>
   <div style="overflow-x:auto;"><table class="pro-league-table">
     <thead><tr><th>ACU Unit</th><th>US Equivalent Name</th><th>Best Match Programs</th><th>Coverage</th></tr></thead>
     <tbody>
       <tr><td>ANAT100 — Anatomical Foundations</td><td>Human/Applied Anatomy</td><td>All programs</td><td><span class="align-pill align-full">Full — universal</span></td></tr>
-      <tr><td>EXSC222 — Functional Anatomy</td><td>Functional/Applied Anatomy</td><td>UF, Indiana, PBA, Barry, Virginia, USF</td><td><span class="align-pill align-full">Full at D1/top D2</span></td></tr>
+      <tr><td>EXSC222 — Functional Anatomy</td><td>Functional/Applied Anatomy</td><td>UF*, Indiana, PBA, Barry, Virginia, USF</td><td><span class="align-pill align-full">Full at D1/top D2</span></td></tr>
       <tr><td>BIOL125 — Human Biology 1</td><td>General/Human Biology</td><td>All programs</td><td><span class="align-pill align-full">Full — universal prerequisite</span></td></tr>
       <tr><td>EXSC225 — Physiological Bases of Exercise</td><td>Introduction to Exercise Physiology</td><td>All programs</td><td><span class="align-pill align-full">Full — universal</span></td></tr>
-      <tr><td>EXSC322 — Exercise Physiology: Adaptation</td><td>Advanced Exercise Physiology</td><td>UF, Indiana, PBA, Barry, Virginia, USF, FIU</td><td><span class="align-pill align-full">Full at D1/strong D2</span></td></tr>
-      <tr><td>EXSC394 — Exercise Prescription</td><td>Exercise Prescription / Clinical Ex Phys</td><td>UF, PBA (explicit Pre-PT), Indiana, Barry, USF</td><td><span class="align-pill align-full">Full at pre-PT programs</span></td></tr>
+      <tr><td>EXSC322 — Exercise Physiology: Adaptation</td><td>Advanced Exercise Physiology</td><td>UF*, Indiana, PBA, Barry, Virginia, USF, FIU</td><td><span class="align-pill align-full">Full at D1/strong D2</span></td></tr>
+      <tr><td>EXSC394 — Exercise Prescription</td><td>Exercise Prescription / Clinical Ex Phys</td><td>UF*, PBA (explicit Pre-PT), Indiana, Barry, USF</td><td><span class="align-pill align-full">Full at pre-PT programs</span></td></tr>
       <tr><td>EXSC224 — Mechanical Bases of Exercise</td><td>Introduction to Biomechanics</td><td>All programs</td><td><span class="align-pill align-full">Full — universal</span></td></tr>
-      <tr><td>EXSC321 — Biomechanics</td><td>Advanced/Applied Biomechanics</td><td>UF, Indiana, Virginia, Barry, PBA, USF, FIU</td><td><span class="align-pill align-full">Full at D1/strong D2</span></td></tr>
-      <tr><td>EXSC204 — Exercise Prescription & Delivery</td><td>Exercise Testing and Prescription</td><td>UF, PBA, Indiana, Barry, Virginia, USF</td><td><span class="align-pill align-strong">Strong — near identical</span></td></tr>
+      <tr><td>EXSC321 — Biomechanics</td><td>Advanced/Applied Biomechanics</td><td>UF*, Indiana, Virginia, Barry, PBA, USF, FIU</td><td><span class="align-pill align-full">Full at D1/strong D2</span></td></tr>
+      <tr><td>EXSC204 — Exercise Prescription & Delivery</td><td>Exercise Testing and Prescription</td><td>UF*, PBA, Indiana, Barry, Virginia, USF</td><td><span class="align-pill align-strong">Strong — near identical</span></td></tr>
       <tr><td>EXSC216 — Resistance Training</td><td>Strength & Conditioning / Resistance Training</td><td>Indiana, USF, PBA, Barry, St Edward's</td><td><span class="align-pill align-strong">Strong — near identical</span></td></tr>
       <tr><td>EXSC199 — Psychology of Sport</td><td>Sport Psychology</td><td>All programs</td><td><span class="align-pill align-full">Full — universal</span></td></tr>
-      <tr><td>EXSC296 — Health & Exercise Psychology</td><td>Exercise & Health Psychology</td><td>UF, Indiana, PBA, Barry, Virginia</td><td><span class="align-pill align-strong">Strong at major programs</span></td></tr>
-      <tr><td>EXSC187 — Growth, Motor Development & Ageing</td><td>Lifespan Motor Development</td><td>Indiana, UF, Virginia</td><td><span class="align-pill" style="background:var(--amber3);color:var(--amber)">Partial — often split</span></td></tr>
-      <tr><td>EXSC230 — Motor Control & Learning</td><td>Motor Control & Learning / Neuromechanics</td><td>Indiana (9 labs), UF, Virginia</td><td><span class="align-pill" style="background:var(--amber3);color:var(--amber)">Partial — rare standalone</span></td></tr>
+      <tr><td>EXSC296 — Health & Exercise Psychology</td><td>Exercise & Health Psychology</td><td>UF*, Indiana, PBA, Barry, Virginia</td><td><span class="align-pill align-strong">Strong at major programs</span></td></tr>
+      <tr><td>EXSC187 — Growth, Motor Development & Ageing</td><td>Lifespan Motor Development</td><td>Indiana, UF*, Virginia</td><td><span class="align-pill" style="background:var(--amber3);color:var(--amber)">Partial — often split</span></td></tr>
+      <tr><td>EXSC230 — Motor Control & Learning</td><td>Motor Control & Learning / Neuromechanics</td><td>Indiana (9 labs), UF*, Virginia</td><td><span class="align-pill" style="background:var(--amber3);color:var(--amber)">Partial — rare standalone</span></td></tr>
       <tr><td>EXSC122 — Research & Ethics</td><td>Research Methods in Kinesiology</td><td>All accredited programs</td><td><span class="align-pill align-strong">Strong — required everywhere</span></td></tr>
-      <tr><td>EXSC398 — Professional Experience (140hrs)</td><td>Internship / Clinical Practicum</td><td>UF (12cr mandatory), PBA (clinical network), Indiana</td><td><span class="align-pill align-full">Full at UF, PBA, Indiana</span></td></tr>
+      <tr><td>EXSC398 — Professional Experience (140hrs)</td><td>Internship / Clinical Practicum</td><td>UF* (12cr mandatory), PBA (clinical network), Indiana</td><td><span class="align-pill align-full">Full at UF*, PBA, Indiana</span></td></tr>
     </tbody>
   </table></div>
+  <div style="background:var(--rose3);border-radius:9px;padding:.75rem 1rem;margin-top:1rem;font-size:12px;color:var(--rose);font-weight:600;line-height:1.6;border:1px solid var(--rose);"><strong>* UF asterisk note:</strong> The University of Florida has the strongest academic match (16/16) but does NOT field a varsity NCAA men's soccer team. UF is included only as an academic reference benchmark — Olivier cannot be recruited or scholarshipped there for soccer. For comparable academic depth WITH playable varsity soccer, see Indiana (15/16, B1G), USF (13/16, AAC), FIU (14/16, AAC), or PBA (14/16, D2 SSC).</div>
   <div style="background:var(--indigo3);border-radius:12px;padding:1.1rem 1.25rem;margin-top:1.5rem;font-size:13px;color:#374151;line-height:1.75;border:1px solid #c7d2fe;"><strong style="color:var(--navy)">WES Credit Recognition tip:</strong> When Olivier transfers mid-degree, BIOL125, ANAT100, EXSC225, and EXSC322 are the four units most likely to receive direct credit transfers (saving approximately one semester). Platform Sports Management should coordinate a WES evaluation before finalising the shortlist. Most competitive DPT programs require a minimum 3.0 GPA — Olivier should plan to raise his GPA steadily throughout his US degree.</div>
 </div>
 
@@ -772,7 +775,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
         <tr><td><span class="rk-num rk-elite">1</span>ACC</td><td>Atlantic Coast</td><td><span class="dbadge d-D1">D1</span></td><td>Virginia, Wake Forest, SMU, FIU (leaving 2025)</td><td>★★★★★ Elite</td><td>Up to 9.9 equivalencies</td><td>Hardest to access; highest pro rate; SMU and FIU are realistic targets</td></tr>
         <tr><td><span class="rk-num rk-elite">2</span>Big Ten</td><td>Big Ten (Midwest/West)</td><td><span class="dbadge d-D1">D1</span></td><td>UCLA, Indiana</td><td>★★★★★ Elite</td><td>Up to 9.9 equivalencies</td><td>Indiana is #1 all-time; UCLA is #1 West Coast. Both highly competitive for spots</td></tr>
         <tr><td><span class="rk-num rk-elite">3</span>Big East</td><td>Big East (East)</td><td><span class="dbadge d-D1">D1</span></td><td>St. John's</td><td>★★★★ Very Strong</td><td>Up to 9.9 equivalencies</td><td>Georgetown, Creighton dominant. St John's is competitive; NYC clinical access unique</td></tr>
-        <tr><td><span class="rk-num rk-strong">4</span>SEC</td><td>Southeastern Conference</td><td><span class="dbadge d-D1">D1</span></td><td>UF (Florida)</td><td>★★★ Strong</td><td>Up to 9.9 equivalencies</td><td>Soccer is secondary to football in SEC culture; UF APK degree is the draw</td></tr>
+        <tr><td><span class="rk-num rk-strong">4</span>SEC</td><td>Southeastern Conference</td><td><span class="dbadge d-D1">D1</span></td><td><span style="color:var(--rose);font-weight:700">⚠ UF — no men's varsity</span></td><td><span style="color:var(--rose)">N/A</span></td><td>SEC sponsors women's only</td><td><strong style="color:var(--rose)">SEC has NO men's varsity soccer at UF.</strong> Listed only because UF APK is the #1 academic match. The SEC as a conference does not sponsor men's soccer at most member schools — football culture dominates.</td></tr>
         <tr><td><span class="rk-num rk-strong">5</span>AAC</td><td>American Athletic</td><td><span class="dbadge d-D1">D1</span></td><td>USF, FIU (joins 2026)</td><td>★★★★ Strong</td><td>Up to 9.9 equivalencies</td><td>USF and FIU are both AAC powers. More accessible than ACC/Big Ten for internationals</td></tr>
         <tr><td><span class="rk-num rk-strong">6</span>Big West</td><td>Big West (West Coast)</td><td><span class="dbadge d-D1">D1</span></td><td>UCSB</td><td>★★★ Solid</td><td>Up to 9.9 equivalencies</td><td>UCSB won Big West 2024. Manu Duah #1 overall. Good Pacific pipeline</td></tr>
         <tr><td><span class="rk-num rk-strong">7</span>Ivy League</td><td>Ivy League (East)</td><td><span class="dbadge d-IVY">IVY</span></td><td>Princeton, Yale</td><td>★★ Growing</td><td>Zero athletic scholarships</td><td>Princeton surging — 2024+2025 tournament doubles. No scholarships = need-based aid only</td></tr>

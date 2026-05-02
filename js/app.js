@@ -209,7 +209,7 @@ function alignLabel(n){return n>=14?'Full align':n>=10?'Strong align':'Partial a
 
 function renderCards(){
   const container=document.getElementById('cards-container');
-  container.innerHTML='<div id="lens-controls" class="lens-controls"></div>';
+  container.innerHTML='';
   renderLensControls();
   const sections=[
     {div:'D1',label:'NCAA Division I',intro:'Highest competition. Elite soccer, strong kinesiology programs, competitive scholarships. Now includes FIU, SMU, College of Charleston, and the Ivy League programs.'},
@@ -1163,7 +1163,8 @@ function renderMinutesOutlook(){
     const traj = mo.trajectory;
     const score = (u.lensScores||{}).minutes || 0;
     const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
-    const riskColor = mo.recruit_risk==='High'?'var(--rose)':mo.recruit_risk==='Medium'?'var(--amber)':'var(--emerald)';
+    const riskColor = mo.recruit_risk==='High'?'var(--amber)':mo.recruit_risk==='Medium'?'var(--sky)':'var(--emerald)';
+    const riskLabel = mo.recruit_risk==='High'?'High Demand':mo.recruit_risk==='Medium'?'Moderate':'Open';
     
     html += '<div class="mo-card'+(idx<3?' mo-top':'')+'">'+
       '<div class="mo-card-head">'+
@@ -1201,8 +1202,8 @@ function renderMinutesOutlook(){
             '<div class="mo-stat-lbl">2027 Juniors</div>'+
           '</div>'+
           '<div class="mo-stat">'+
-            '<div class="mo-stat-num" style="color:'+riskColor+';font-size:14px">'+mo.recruit_risk+'</div>'+
-            '<div class="mo-stat-lbl">Recruit Risk</div>'+
+            '<div class="mo-stat-num" style="color:'+riskColor+';font-size:13px;font-weight:800">'+riskLabel+'</div>'+
+            '<div class="mo-stat-lbl">Entry Competition</div>'+
           '</div>'+
         '</div>';
     if(mo.cleared_names && mo.cleared_names.length){

@@ -552,7 +552,12 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .coach-card:hover{border-color:var(--border2);box-shadow:0 6px 20px rgba(0,0,0,.07);}
 .coach-card.top-coach{border-color:var(--indigo2);}
 .coach-card-head{padding:1.1rem;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:flex-start;position:relative;}
-.coach-av-lg{width:52px;height:52px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;font-family:'Outfit',sans-serif;}
+.coach-contact-strip{display:flex;flex-wrap:wrap;gap:6px;margin-top:.75rem;padding-top:.65rem;border-top:1px solid var(--border);}
+.coach-cta{font-size:11px;font-weight:600;text-decoration:none;padding:5px 10px;border-radius:6px;transition:opacity .15s;white-space:nowrap;}
+.coach-cta:hover{opacity:.8;}
+.coach-cta-email{background:var(--indigo3);color:var(--indigo);border:1px solid #c7d2fe;flex:1;text-align:center;}
+.coach-cta-phone{background:var(--emerald3);color:var(--emerald);border:1px solid #a7f3d0;}
+.coach-cta-link{background:var(--surface3);color:var(--muted);border:1px solid var(--border);}width:52px;height:52px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;font-family:'Outfit',sans-serif;}
 .coach-school{font-size:13px;font-weight:700;color:var(--navy);line-height:1.3;}
 .coach-title-sm{font-size:11px;color:var(--hint);margin-top:2px;}
 .coach-rank-badge{position:absolute;top:10px;right:10px;font-size:10px;font-weight:800;padding:3px 9px;border-radius:5px;letter-spacing:.05em;}
@@ -596,7 +601,6 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   <button class="nav-tab" onclick="showPage('pipeline',this)">Pro Pipeline</button>
   <button class="nav-tab" onclick="showPage('alignment',this)">ACU Alignment</button>
   <button class="nav-tab" onclick="showPage('pathways',this)">Pathways</button>
-  <button class="nav-tab" onclick="showPage('contacts',this)">Coach Contacts</button>
   <button class="nav-tab" onclick="showPage('conferences',this)">Conferences</button>
   <button class="nav-tab" onclick="showPage('coaches',this)">Coaches & Staff</button>
   <button class="nav-tab" onclick="showPage('finance',this)">💰 Financial Model</button>
@@ -816,11 +820,6 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 </div>
 
 <!-- CONTACTS PAGE -->
-<div class="page" id="page-contacts">
-  <div class="section-head"><h2>Coach Contacts &amp; Recruiting Info</h2></div>
-  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">All contact should be coordinated through your agent — agent introductions carry significantly more weight than cold emails.</p>
-  <div id="contacts-list"></div>
-</div>
 <!-- FINANCIAL MODEL PAGE -->
 <div class="page" id="page-finance">
   <div class="fin-hero">
@@ -931,8 +930,8 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 
 <!-- COACHES & STAFF PAGE -->
 <div class="page" id="page-coaches">
-  <div class="section-head"><h2>Head Coaches & Staff — Rankings, Backgrounds & Fit Assessment</h2></div>
-  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">Every head coach ranked by overall coaching quality for Olivier's development as an 8/10 central midfielder targeting a PT career. Includes assistant coach backgrounds where known. All contact via your agent.</p>
+  <div class="section-head"><h2>Coaches, Staff & Contact Details</h2></div>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">Every head coach ranked by overall coaching quality for Olivier's development as an 8/10 central midfielder targeting a PT career. Email, phone and program links are in each coach card below the rankings table. All contact via your agent.</p>
   <div class="section-head"><h2>Head Coach Rankings — Best for Olivier's Development</h2></div>
   <div style="overflow-x:auto;margin-bottom:2.5rem;">
     <table class="head-coach-rank-table">

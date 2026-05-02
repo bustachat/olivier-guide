@@ -46,7 +46,6 @@ function initApp() {
   document.title = 'Olivier — US College Soccer Guide ' + APP_VERSION;
   renderCards();
   renderComparePage();
-  renderContacts();
   renderConferences();
   renderCoachCards();
   renderFinSchoolSelector();
@@ -969,8 +968,10 @@ function buildCoachCard(c){
       <div class="coach-bio">${c.bio.slice(0,280)}${c.bio.length>280?'…':''}</div>
       <div class="coach-strengths">${strHtml}</div>
       <div class="staff-section"><h5>Known Staff & Background</h5>${staffHtml}</div>
-      <div style="display:flex;gap:8px;margin-top:.75rem">
-        <a href="mailto:${c.contact.email}" style="font-size:11.5px;font-weight:600;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:5px 10px;border-radius:6px;flex:1;text-align:center">✉ ${c.contact.email}</a>
+      <div class="coach-contact-strip">
+        <a href="mailto:${c.contact.email}" class="coach-cta coach-cta-email" title="Send email">✉ ${c.contact.email}</a>
+        ${c.contact.phone?`<a href="tel:${c.contact.phone}" class="coach-cta coach-cta-phone" title="Call">📞 ${c.contact.phone}</a>`:''}
+        ${u.url?`<a href="${u.url}" target="_blank" class="coach-cta coach-cta-link">🔗 Program →</a>`:''}
       </div>
     </div>`;
   return el;

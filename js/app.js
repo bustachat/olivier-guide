@@ -296,9 +296,9 @@ function buildCard(u){
     '</div>'+
     ivyWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item"><div class="ss-val" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
-      '<div class="ss-item"><div class="ss-val" style="color:'+sc(devAvg)+'">'+devAvg+'%</div><div class="ss-lbl">Dev Score</div></div>'+
-      '<div class="ss-item"><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
+      '<div class="ss-item" data-tip="Fit Score: Overall match for Olivier across climate, lifestyle, soccer level, exercise science degree quality, and PT pathway. 90%+ = excellent fit."><div class="ss-val" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item" data-tip="Dev Score: Average of 4 development sub-scores — Tactical, Technical, Fitness, and PT Pathway quality. Reflects how well the program will develop Olivier as a player and pre-PT student."><div class="ss-val" style="color:'+sc(devAvg)+'">'+devAvg+'%</div><div class="ss-lbl">Dev Score</div></div>'+
+      '<div class="ss-item" data-tip="ACU Alignment: How many of Olivier\'s 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial."><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
     '<div class="degree-band">'+
       '<span class="db-title" title="'+u.degreeTitle+'">'+u.degreeTitle+'</span>'+
@@ -1238,21 +1238,11 @@ function renderMinutesOutlook(){
     '</div>'+
   '</div>';
   
+  const available = ranked.filter(u => (u.minutesOutlook||{}).available);
+  const unavailable = ranked.filter(u => !(u.minutesOutlook||{}).available);
+  
   html += '<div class="mo-cards-grid">';
-  ranked.forEach((u,idx)=>{
-    const mo = u.minutesOutlook || {};
-    if(!mo.available){
-      html += '<div class="mo-card mo-unavailable">'+
-        '<div class="mo-card-head">'+
-          '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
-          '<span class="mo-school-name">'+u.full+'</span>'+
-        '</div>'+
-        '<div class="mo-card-body">'+
-          '<p style="color:var(--rose);font-size:13px;font-weight:600">⚠ '+(mo.reason||'Not applicable')+'</p>'+
-        '</div>'+
-      '</div>';
-      return;
-    }
+  available.forEach((u,idx)=>{
     const traj = mo.trajectory;
     const score = (u.lensScores||{}).minutes || 0;
     const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
@@ -1308,6 +1298,23 @@ function renderMinutesOutlook(){
     }
     html += '</div></div>';
   });
+
+  // Unavailable schools at the bottom, collapsed into a tidy section
+  if(unavailable.length){
+    html += '<div class="mo-unavail-section">'+
+      '<div class="mo-unavail-heading">⚠ No Roster Data — '+unavailable.length+' schools</div>'+
+      '<div class="mo-unavail-grid">';
+    unavailable.forEach(u=>{
+      const mo = u.minutesOutlook || {};
+      html += '<div class="mo-unavail-card">'+
+        '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
+        '<span class="mo-school-name" style="font-size:12px">'+u.full+'</span>'+
+        '<span style="font-size:11px;color:var(--muted);flex:1;text-align:right">'+(mo.reason||'Not analysed')+'</span>'+
+      '</div>';
+    });
+    html += '</div></div>';
+  }
+
   html += '</div>';
   
   html += '<div class="mo-footer">'+

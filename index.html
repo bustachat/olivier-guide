@@ -552,6 +552,62 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .coach-card:hover{border-color:var(--border2);box-shadow:0 6px 20px rgba(0,0,0,.07);}
 .coach-card.top-coach{border-color:var(--indigo2);}
 .coach-card-head{padding:1.1rem;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:flex-start;position:relative;}
+/* ── Score strip tooltip ── */
+.ss-item{position:relative;cursor:help;}
+.ss-item[data-tip]::after{
+  content:attr(data-tip);
+  position:absolute;
+  bottom:calc(100% + 8px);
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--navy);
+  color:rgba(255,255,255,.9);
+  font-size:11px;
+  font-weight:400;
+  line-height:1.55;
+  padding:8px 11px;
+  border-radius:8px;
+  width:220px;
+  white-space:normal;
+  text-align:left;
+  z-index:999;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity .15s;
+  box-shadow:0 4px 12px rgba(0,0,0,.18);
+}
+.ss-item[data-tip]::before{
+  content:'';
+  position:absolute;
+  bottom:calc(100% + 3px);
+  left:50%;
+  transform:translateX(-50%);
+  border:5px solid transparent;
+  border-top-color:var(--navy);
+  opacity:0;
+  transition:opacity .15s;
+  z-index:999;
+  pointer-events:none;
+}
+.ss-item[data-tip]:hover::after,
+.ss-item[data-tip]:hover::before{opacity:1;}
+
+/* ── Minutes unavailable section ── */
+.mo-unavail-section{margin-top:1.5rem;padding:1rem 1.2rem;background:var(--surface2);border-radius:12px;border:1px solid var(--border);}
+.mo-unavail-heading{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:.65rem;}
+.mo-unavail-grid{display:flex;flex-direction:column;gap:5px;}
+.mo-unavail-card{display:flex;align-items:center;gap:8px;padding:5px 8px;background:var(--surface);border-radius:7px;border:1px solid var(--border);}
+
+/* ── Glossary ── */
+.gloss-section{margin-bottom:2rem;}
+.gloss-section-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--indigo);margin-bottom:.9rem;padding-bottom:.4rem;border-bottom:2px solid var(--indigo3);}
+.gloss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:.75rem;}
+.gloss-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;}
+.gloss-term{font-size:13px;font-weight:700;color:var(--text);margin-bottom:.35rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;}
+.gloss-range{font-size:10px;font-weight:700;background:var(--indigo3);color:var(--indigo);padding:1px 7px;border-radius:20px;letter-spacing:.04em;}
+.gloss-def{font-size:12px;color:var(--muted);line-height:1.65;}
+.gloss-def strong{color:var(--text);}
+
 .coach-contact-strip{display:flex;flex-wrap:wrap;gap:6px;margin-top:.75rem;padding-top:.65rem;border-top:1px solid var(--border);}
 .coach-cta{font-size:11px;font-weight:600;text-decoration:none;padding:5px 10px;border-radius:6px;transition:opacity .15s;white-space:nowrap;}
 .coach-cta:hover{opacity:.8;}
@@ -968,6 +1024,142 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     <button class="fbtn" onclick="filterCoaches('pro',this)">🏆 Pro Pipeline</button>
   </div>
   <div class="coach-cards" id="coach-cards-container"></div>
+</div>
+  <button class="nav-tab" onclick="showPage('glossary',this)">📖 Glossary</button>
+<!-- GLOSSARY PAGE -->
+<div class="page" id="page-glossary">
+  <div class="section-head"><h2>📖 Glossary — Scores, Terms & Systems Explained</h2></div>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:1.75rem;line-height:1.75">Every metric and term used across this guide, explained plainly.</p>
+
+  <div class="gloss-section">
+    <div class="gloss-section-title">Card Scores</div>
+    <div class="gloss-grid">
+      <div class="gloss-item">
+        <div class="gloss-term">Fit Score <span class="gloss-range">0–100%</span></div>
+        <div class="gloss-def">The overall match between this school and Olivier's specific profile. Combines climate preference (warm + city), lifestyle, exercise science degree quality, soccer development level, and PT pathway strength into a single percentage. <strong>90%+ = excellent all-round fit. 80–89% = strong. Below 70% = meaningful trade-offs exist.</strong></div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Dev Score <span class="gloss-range">0–100%</span></div>
+        <div class="gloss-def">Average of four development sub-scores: Tactical (coaching system quality for a CM), Technical (training environment and facilities), Fitness (sports science integration), and PT Pathway (how well the program feeds into DPT/Chiro admissions). A high Dev Score means the program will improve Olivier as both a player and a pre-PT student.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">ACU Align <span class="gloss-range">out of 16</span></div>
+        <div class="gloss-def">How many of Olivier's 16 ACU Bachelor of Exercise & Sports Science units are covered by the US degree at this school. <strong>14–16 = Full align</strong> (emerald) — some units may transfer as direct credit via WES evaluation, potentially shortening the US degree by a semester. <strong>10–13 = Strong align</strong> (blue). <strong>Below 10 = Partial</strong> (amber) — more coursework required to complete the US degree.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Minutes Score <span class="gloss-range">0–100</span></div>
+        <div class="gloss-def">Realistic playing-time opportunity score for Olivier entering in 2027. Weighted toward early years (Yr1 45%, Yr2 30%, Yr3 15%, Yr4 10%). Based on how many midfielders graduate out before arrival, how many juniors and seniors remain as competition, and division-level portal recruitment activity. <strong>70+ = strong early opportunity. 40–69 = build-up role in early years. Below 40 = tough pathway to regular minutes.</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gloss-section">
+    <div class="gloss-section-title">Development Sub-Scores</div>
+    <div class="gloss-grid">
+      <div class="gloss-item">
+        <div class="gloss-term">Tactical Dev</div>
+        <div class="gloss-def">Quality and style of the coaching system for a central midfielder. High scores indicate a coach who runs structured possession-based or high-press systems that suit an 8/10 box-to-box CM. Virginia (Gelnovatch), Indiana (Yeagley) and FIU (Russell) score highest.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Technical Dev</div>
+        <div class="gloss-def">Training environment quality — facilities, pitch standards, GPS/data usage, strength and conditioning access. Elite or Excellent-rated facilities schools score highest here.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Fitness Dev</div>
+        <div class="gloss-def">Integration of sports science into the soccer program. Schools with dedicated sports science departments (Indiana, UCLA, UF) and those with STEM-classified exercise science degrees (FIU) score highest.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">PT Pathway Score</div>
+        <div class="gloss-def">How well the undergraduate program prepares Olivier for DPT or Chiropractic school admission. Factors include: whether the degree title includes Pre-PT, the number of ACU units that align (more alignment = stronger foundation), clinical hours embedded in the degree, and whether the university has its own DPT program (e.g. Nova Southeastern has an on-campus DPT articulation).</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gloss-section">
+    <div class="gloss-section-title">View By Lenses</div>
+    <div class="gloss-grid">
+      <div class="gloss-item">
+        <div class="gloss-term">Best Overall</div>
+        <div class="gloss-def">Olivier's existing Fit Score. Combines climate/lifestyle, exercise science degree quality, soccer level, and PT pathway into a single number. The default ranking.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Soccer-First</div>
+        <div class="gloss-def">60% dev average + 30% titles/MLS pipeline + 10% division strength. Use this if soccer development and pro pathway are the top priority.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Academic-First</div>
+        <div class="gloss-def">85% ACU alignment + 15% baseline. Shows which schools are the strongest academic match for Olivier's existing ACU BESS degree. UF tops this lens despite having no men's varsity soccer.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Minutes Outlook</div>
+        <div class="gloss-def">Ranks schools by realistic 2027-entry playing time opportunity. Uses the Minutes Score (see above). Barry D2 consistently ranks #1 under this lens — 7 of 13 midfielders clear before Olivier arrives.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">PT Pathway</div>
+        <div class="gloss-def">50% Pre-PT degree quality + 30% ACU alignment + 20% PT dev score. For Olivier's goal of DPT or Chiropractic school, this lens surfaces the strongest academic pipelines regardless of soccer rank.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Lifestyle-First</div>
+        <div class="gloss-def">Weights warm climate, city campus, and cultural fit. Sydney-equivalent lifestyle schools (LA, Tampa, Miami, Fort Lauderdale) score highest. Use this if Olivier's day-to-day environment is a key decision factor.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Value-First</div>
+        <div class="gloss-def">60% fit score + 40% affordability (linear scale: $20k/yr = 100, $90k/yr = 0). Surfaces schools where scholarship dollars go furthest. JUCO and Florida D2 schools dominate this lens.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gloss-section">
+    <div class="gloss-section-title">Minutes Outlook Terms</div>
+    <div class="gloss-grid">
+      <div class="gloss-item">
+        <div class="gloss-term">Cleared Before Olivier Arrives</div>
+        <div class="gloss-def">2025 junior-year players who graduate after the 2026 season — they are completely gone before Olivier enters in August 2027. Their spots are genuinely open (subject to portal recruitment).</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">2027 Juniors (primary blockers)</div>
+        <div class="gloss-def">Current 2025 freshmen who become juniors in Olivier's first year. They are the most significant competition — established in the program for 2 years, playing Olivier's position, and present for his first 2 seasons.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Entry Competition</div>
+        <div class="gloss-def">Formerly called "Recruit Risk." <strong>High Demand</strong> = many spots are opening so the coach is actively recruiting hard to fill them — Olivier competes against a larger incoming class. <strong>Moderate</strong> = normal turnover, typical recruiting activity. <strong>Open</strong> = fewer spots turning over, less portal competition for those specific positions.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Trajectory Labels</div>
+        <div class="gloss-def"><strong>Captain candidate (80%+):</strong> Senior leader, likely captain or key starter. <strong>Established starter (65–79%):</strong> Regular starter, consistent minutes. <strong>Likely starter (50–64%):</strong> More starts than not, growing role. <strong>Squad rotation (35–49%):</strong> Meaningful contributions from bench, fighting for starts. <strong>Bench / development (20–34%):</strong> Training squad with limited game time. <strong>Development year (below 20%):</strong> Redshirt or minimal appearances.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gloss-section">
+    <div class="gloss-section-title">Filters & Badges</div>
+    <div class="gloss-grid">
+      <div class="gloss-item">
+        <div class="gloss-term">Top Pick filter (★)</div>
+        <div class="gloss-def">Schools manually flagged as top recommendations across all criteria — the shortlist Olivier should prioritise for coach outreach.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">#1 by Division filter (🏅)</div>
+        <div class="gloss-def">Shows only the #1-ranked school within each division under the currently active lens. Useful for quickly comparing the best D1 vs D2 vs NAIA option side by side.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Full ACU (14+) / Strong ACU (10+)</div>
+        <div class="gloss-def">Filter by ACU alignment score. Full (14+) = deep overlap, likely credit transfer possible. Strong (10+) = substantial coverage, good foundation for PT school. Use these filters when the DPT pathway is the primary decision factor.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Facilities Ratings</div>
+        <div class="gloss-def"><strong>Elite:</strong> MLS-standard training complex, dedicated sports science lab. <strong>Excellent:</strong> Purpose-built soccer facility, GPS/data integration. <strong>Very Good:</strong> Strong training infrastructure, good pitch quality. <strong>Good:</strong> Solid D1/D2 standard. <strong>Solid:</strong> Functional, meets competition standards.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">ATAR → GPA Slider</div>
+        <div class="gloss-def">Converts Olivier's Australian ATAR score to a US GPA equivalent and filters out schools where his current GPA would fall below their minimum eligibility requirement. Cards marked red are below minimum; amber are borderline. Slide right to see how a higher ATAR/GPA score opens up more schools.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">WES Evaluation</div>
+        <div class="gloss-def">World Education Services — the standard body that converts Australian academic credentials into US-recognised equivalents. A formal WES evaluation of Olivier's completed ACU units (especially BIOL125, ANAT100, EXSC225, EXSC322) should be coordinated before finalising any shortlist, as these four units are most likely to transfer as direct US credit.</div>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="js/scores.js"></script>
 <script src="js/app.js"></script>

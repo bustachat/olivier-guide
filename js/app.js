@@ -383,12 +383,100 @@ function removeCompare(id){
   renderComparePage();
 }
 
+// ═══ Roster URL helper ═══════════════════════════════════════════════════════
+function rosterUrl(u){
+  // A few schools need custom roster paths
+  const overrides = {
+    lynn:       'https://lynuniversity.com/athletics/soccer/roster',
+    csula:      'https://calstatela.edu/athletics/mens-soccer/roster',
+    keiser:     'https://keiseruniversity.edu/athletics/mens-soccer/roster',
+    ocu:        'https://okcu.edu/athletics/soccer/roster',
+    miami_dade: 'https://athletics.mdc.edu/sports/mens-soccer/roster',
+  };
+  if(overrides[u.id]) return overrides[u.id];
+  return u.url.replace(/\/$/, '') + '/roster';
+}
+
 function openDetail(id){
   const u=unis.find(x=>x.id===id);if(!u)return;
   document.getElementById('modal-title').textContent=u.full;
   document.getElementById('modal-sub').textContent=`${u.loc} · ${u.div} · ${u.conf}`;
   document.getElementById('modal-body').innerHTML=buildDetailBody(u);
   document.getElementById('modal').classList.remove('hidden');
+}
+
+function buildMinutesModalTab(u){
+  const mo = u.minutesOutlook || {};
+  const roster = rosterUrl(u);
+  if(!mo.available){
+    return `<div class="detail-block">
+      <p style="color:var(--rose);font-weight:600;font-size:13px">⚠ ${mo.reason||'Minutes Outlook not available for this school.'}</p>
+      <p style="color:var(--muted);font-size:12.5px;margin-top:.5rem">This may be a JUCO, Ivy League, or school where roster data was not analysed.</p>
+    </div>`;
+  }
+  const riskColor = mo.recruit_risk==='High'?'var(--amber)':mo.recruit_risk==='Medium'?'var(--sky)':'var(--emerald)';
+  const riskLabel = mo.recruit_risk==='High'?'High Demand':mo.recruit_risk==='Medium'?'Moderate':'Open';
+  const score = (u.lensScores||{}).minutes || 0;
+  const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
+  const traj = mo.trajectory || [];
+
+  // Summary sentence
+  const cleared = mo.cleared_before_2027 || 0;
+  const juniors = mo.rising_junior_2027_count || 0;
+  const seniors = mo.rising_senior_2027_count || 0;
+  const yr1label = traj[0] ? traj[0].label : '—';
+  const summary = `${cleared} midfielder${cleared!==1?'s':''} clear out before Olivier arrives. `+
+    `${seniors} senior${seniors!==1?'s':''} and ${juniors} junior${juniors!==1?'s':''} remain as direct competition in 2027. `+
+    `Expected year-1 role: <strong>${yr1label}</strong>.`;
+
+  let trajHtml = traj.map(t=>{
+    const barColor = t.pct>=80?'#3B6D11':t.pct>=60?'#639922':t.pct>=40?'#BA7517':'#A32D2D';
+    return `<div class="mo-traj-row">
+      <div class="mo-traj-year">${t.year} · ${t.yr_label}</div>
+      <div class="mo-traj-bar"><div class="mo-traj-fill" style="width:${t.pct}%;background:${barColor}"></div></div>
+      <div class="mo-traj-label">${t.label}</div>
+    </div>`;
+  }).join('');
+
+  const clearedNames = (mo.cleared_names||[]).join(', ');
+  const blockerNames = (mo.rising_junior_2027_names||[]).join(', ');
+
+  return `
+    <div class="detail-block" style="margin-bottom:1rem">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:.75rem">
+        <h4 style="margin:0">2027 Entry · Playing Time Outlook</h4>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:11px;color:var(--hint);font-weight:600">Minutes Score</span>
+          <span style="font-size:1.4rem;font-weight:800;color:${scoreColor};font-family:'Outfit',sans-serif">${score}</span>
+          <a href="${roster}" target="_blank" style="font-size:11px;font-weight:700;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:3px 10px;border-radius:6px;border:1px solid #c7d2fe">📋 View Roster →</a>
+        </div>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted);line-height:1.65;margin-bottom:1rem">${summary}</p>
+      <div class="mo-trajectory" style="margin-bottom:1rem">${trajHtml}</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:.75rem">
+        <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
+          <div style="font-size:1.3rem;font-weight:800;color:var(--text)">${mo.mf_total_2025}</div>
+          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">MFs 2025</div>
+        </div>
+        <div style="background:var(--emerald3);border-radius:8px;padding:7px;text-align:center;border:1px solid #a7f3d0">
+          <div style="font-size:1.3rem;font-weight:800;color:var(--emerald)">${cleared}</div>
+          <div style="font-size:9px;color:var(--emerald);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">Cleared</div>
+        </div>
+        <div style="background:var(--surface3);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
+          <div style="font-size:1.3rem;font-weight:800;color:var(--rose)">${juniors}</div>
+          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">2027 Juniors</div>
+        </div>
+        <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
+          <div style="font-size:1.1rem;font-weight:800;color:${riskColor}">${riskLabel}</div>
+          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">Entry Competition</div>
+        </div>
+      </div>
+      ${clearedNames?`<div style="background:var(--emerald3);border-radius:7px;padding:7px 10px;font-size:11.5px;margin-bottom:6px"><strong style="color:var(--emerald)">Gone before Olivier arrives:</strong> <span style="color:#065f46">${clearedNames}</span></div>`:''}
+      ${blockerNames?`<div style="background:var(--rose3);border-radius:7px;padding:7px 10px;font-size:11.5px"><strong style="color:var(--rose)">Primary 2027-junior blockers:</strong> <span style="color:var(--rose)">${blockerNames}</span></div>`:''}
+    </div>
+    <div class="tip-box">
+      <p><strong>Key question for the coach call:</strong> "How many central midfielders are in your 2026 and 2027 recruiting classes, and where do you see an Australian 8/10 CM fitting your projected 2027 depth chart?"</p>
+    </div>`;
 }
 
 function buildDetailBody(u){
@@ -400,6 +488,7 @@ function buildDetailBody(u){
       <button class="mtab" onclick="switchTab(this,'pro')">Pro Pipeline</button>
       <button class="mtab" onclick="switchTab(this,'development')">Development</button>
       <button class="mtab" onclick="switchTab(this,'contact')">Coach & Contact</button>
+      <button class="mtab" onclick="switchTab(this,'minutes')">⏱ Minutes</button>
       <button class="mtab" onclick="switchTab(this,'culture')">🎉 College Culture</button>
       <button class="mtab" onclick="switchTab(this,'facilities')">🏟 Facilities</button>
     </div>
@@ -446,7 +535,7 @@ function buildDetailBody(u){
         <ul class="subject-list">${u.courses.map(c=>`<li>${c}</li>`).join('')}</ul>
       </div>
       <div class="detail-block" style="margin-bottom:1rem"><h4>WES Credit Recognition</h4>
-        <p style="font-size:12.5px;color:var(--muted);line-height:1.7">When Olivier transfers mid-degree, World Education Services (WES) will assess completed ACU units. BIOL125 (Human Biology), ANAT100 (Anatomy), EXSC225 (Exercise Physiology), and EXSC322 (Advanced Physiology) are the units most likely to receive direct credit — potentially shortening the US degree by one semester. Platform Sports Management should coordinate a formal WES evaluation before finalising the shortlist.</p>
+        <p style="font-size:12.5px;color:var(--muted);line-height:1.7">When Olivier transfers mid-degree, World Education Services (WES) will assess completed ACU units. BIOL125 (Human Biology), ANAT100 (Anatomy), EXSC225 (Exercise Physiology), and EXSC322 (Advanced Physiology) are the units most likely to receive direct credit — potentially shortening the US degree by one semester. Your agent should coordinate a formal WES evaluation before finalising the shortlist.</p>
       </div>
       <div class="detail-block"><h4>DPT Graduate School Requirements</h4>
         <p style="font-size:12.5px;color:var(--muted);line-height:1.7">To become a Doctor of Physical Therapy (DPT) in the USA: bachelor's in Exercise Science or Kinesiology, minimum 3.0–3.3 GPA (competitive programs require 3.5+), 50–100 clinical observation hours, GRE scores, and faculty recommendations. Olivier should plan to raise his GPA above 3.0 during his US degree. Pre-PT rating at ${u.full}: <strong style="color:var(--emerald)">${u.prePT}</strong>.</p>
@@ -495,7 +584,7 @@ function buildDetailBody(u){
       </div>
     </div>
     <div class="mtab-content" id="tab-contact">
-      ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League coaches cannot offer athletic scholarships. Contact should still go through Platform Sports Management — coach relationships matter for roster spots.</div>`:''}
+      ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League coaches cannot offer athletic scholarships. Contact should still go through your agent — coach relationships matter for roster spots.</div>`:''}
       <div class="contact-block"><h4>${u.coach.name}</h4>
         <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
         <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
@@ -503,8 +592,11 @@ function buildDetailBody(u){
         <div class="contact-row"><div class="ci">Website</div><div class="cv"><a href="${u.url}" target="_blank">Program Page →</a></div></div>
       </div>
       <div class="detail-block" style="margin-bottom:1rem"><h4>Coach Profile</h4><p style="font-size:12.5px;color:var(--muted);line-height:1.7">${u.coach.profile}</p></div>
-      <div class="tip-box"><p><strong>Platform Sports Management recommends:</strong> All contact should be coordinated through your agent. Coach introductions via a platform carry significantly more weight than cold emails. Include Olivier's highlights link, academic profile, and Australian background.</p></div>
+      <div class="tip-box"><p><strong>Agent recommends:</strong> All contact should be coordinated through your agent. Coach introductions via a platform carry significantly more weight than cold emails. Include Olivier's highlights link, academic profile, and Australian background.</p></div>
       <div class="tip-box"><p><strong>What coaches want from an 8/10 midfielder:</strong> Pressing intensity, passing range, composure under pressure, work rate off the ball. Show defensive recovery, winning duels, variety — not just assists and goals.</p></div>
+    </div>
+    <div class="mtab-content" id="tab-minutes">
+      ${buildMinutesModalTab(u)}
     </div>
     <div class="mtab-content" id="tab-culture">
       ${u.culture?`
@@ -1172,6 +1264,7 @@ function renderMinutesOutlook(){
         '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
         '<span class="mo-school-name">'+u.full+'</span>'+
         '<span class="mo-score" style="color:'+scoreColor+'">'+score+'</span>'+
+        '<a href="'+rosterUrl(u)+'" target="_blank" style="font-size:10px;font-weight:700;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:2px 8px;border-radius:5px;border:1px solid #c7d2fe;white-space:nowrap;margin-left:auto">📋 Roster →</a>'+
       '</div>'+
       '<div class="mo-card-body">'+
         '<div class="mo-trajectory">';
@@ -1220,7 +1313,7 @@ function renderMinutesOutlook(){
     '<p style="color:var(--muted);font-size:12px;line-height:1.6;margin-top:1.5rem">'+
       '<strong>Methodology caveat:</strong> Outlook assumes typical recruiting class sizes (3-5 MFs/yr). '+
       'The 2026 freshman class is being recruited right now and is currently unknown — those players become '+
-      "Olivier's 2027 sophomore-year competition. Platform Sports Management coach calls should refine "+
+      "Olivier's 2027 sophomore-year competition. Coach calls should refine "+
       'year 1-2 projections by directly asking each coach: <em>"How many central midfielders are in your '+
       '2026 and 2027 recruiting classes, and what is your projected 2027 starting XI?"</em>'+
     '</p>'+

@@ -132,7 +132,63 @@
       "ANATOMY 1 — Human Anatomy"
     ],
     "rec": "LA lifestyle closest to Sydney. #1 Kinesiology equivalent nationally. Highly competitive for international athletes — elite highlights required. Extraordinary PT/Chiro grad school access via UCLA Health.",
-    "url": "https://uclabruins.com/sports/mens-soccer"
+    "url": "https://uclabruins.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 96,
+      "soccer": 76,
+      "academic": 73,
+      "minutes": 37,
+      "pt": 85,
+      "lifestyle": 100,
+      "value": 72
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 10,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Philip Naef",
+        "Sebastian Rincon"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Tamir Ratoviz"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Zach Mastrodimos",
+        "Ander Marticorena",
+        "Dylan Cantafio",
+        "Adrian Aguilar"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "ucsb",
@@ -263,7 +319,65 @@
       "KINE 160 — Athletic Training"
     ],
     "rec": "Mediterranean climate identical to Sydney. Manu Duah #1 pick proves D1 pro calibre. Strong kinesiology. Beach campus lifestyle match.",
-    "url": "https://ucsbgauchos.com/sports/mens-soccer"
+    "url": "https://ucsbgauchos.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 83,
+      "soccer": 69,
+      "academic": 73,
+      "minutes": 42,
+      "pt": 66,
+      "lifestyle": 100,
+      "value": 73
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 11,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Justin Gomes",
+        "Kaden Standish",
+        "Dominick Phanco"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Mika Ney",
+        "Ethan Senter"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Steinar Bjornsson",
+        "Jacob Medina",
+        "Jack Middleton",
+        "Ty Branigan"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "usf",
@@ -396,7 +510,63 @@
       "HPA 4170 — Health Research"
     ],
     "rec": "Kiefer returning is a huge signal — USF rebuilding to prominence. Tampa city + warm. Strong kinesiology degree. Affordable D1 Florida school. Ground floor opportunity with a proven builder.",
-    "url": "https://gousfbulls.com/sports/mens-soccer"
+    "url": "https://gousfbulls.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 90,
+      "soccer": 72,
+      "academic": 84,
+      "minutes": 61,
+      "pt": 79,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 10,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Pedro Faife",
+        "Tyler Richardson",
+        "Michael Owens",
+        "Yanis Lasri"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Asher Jones"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Jacobo Gonzalez",
+        "Luka Zujovic"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "uf",
@@ -530,7 +700,20 @@
       "APK 6905 — Internship (12cr)"
     ],
     "rec": "⚠ NOT A VIABLE OPTION FOR OLIVIER. UF does not field a varsity men's soccer team — only club soccer exists. Olivier cannot be recruited, scholarshipped, or play NCAA D1 here. The APK degree remains academically the #1 ranked exercise science program nationally and the closest structural match to ACU BESS (16/16), so UF is retained in this guide for academic reference only. If Olivier wants this calibre of pre-PT degree with actual varsity soccer, the strongest equivalents are Indiana (15/16, B1G), USF (13/16, AAC, Florida warm climate), FIU (14/16, AAC, Miami), or PBA (14/16, D2 SSC, West Palm Beach).",
-    "url": "https://floridagators.com/sports/mens-soccer"
+    "url": "https://floridagators.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 0,
+      "soccer": 0,
+      "academic": 100,
+      "minutes": 0,
+      "pt": 94,
+      "lifestyle": 80,
+      "value": 0
+    },
+    "minutesOutlook": {
+      "available": false,
+      "reason": "No varsity men's soccer program"
+    }
   },
   {
     "id": "fiu",
@@ -668,7 +851,59 @@
       "PET 4396 — Sport Psychology"
     ],
     "rec": "FIU is the sleeper pick of the guide. Miami city campus, tropical climate, and Kyle Russell has turned this into an AAC powerhouse. STEM exercise science degree. Inter Miami CF connections. Very affordable. Strong case as THE best overall package for Olivier.",
-    "url": "https://fiusports.com/sports/mens-soccer"
+    "url": "https://fiusports.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 91,
+      "soccer": 76,
+      "academic": 89,
+      "minutes": 46,
+      "pt": 81,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Leonardo Consoloni"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Dominic Brady",
+        "Lukas Pareja",
+        "Martin Piedeleu"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "virginia",
@@ -802,7 +1037,63 @@
       "BIOL 2100 — Cell & Molecular Biology"
     ],
     "rec": "Most storied men's soccer program in the USA. 7 NCAA titles. Top-5 MLS producer. Charlottesville is not a major city and climate is cool — less lifestyle match for Sydney. Fierce competition for spots.",
-    "url": "https://virginiasports.com/sports/mens-soccer"
+    "url": "https://virginiasports.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 72,
+      "soccer": 82,
+      "academic": 84,
+      "minutes": 35,
+      "pt": 78,
+      "lifestyle": 40,
+      "value": 58
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Brendan Lambe",
+        "Marco Dos Santos"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Luke Burns"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Ethan Martinez",
+        "Sami Oulouheu",
+        "Bacary Tandjigora",
+        "Emmanuel Akinkoye"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "wakeforest",
@@ -933,7 +1224,68 @@
       "HES 401 — Sport Nutrition"
     ],
     "rec": "ACC powerhouse. 4 MLS picks in one draft. Small campus means strong faculty relationships for DPT applications. Winston-Salem is not a major city. GPA 2.8 may be admission challenge.",
-    "url": "https://godeacs.com/sports/mens-soccer"
+    "url": "https://godeacs.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 68,
+      "soccer": 74,
+      "academic": 73,
+      "minutes": 66,
+      "pt": 66,
+      "lifestyle": 40,
+      "value": 47
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 14,
+      "cleared_before_2027": 6,
+      "cleared_names": [
+        "Nico Rabiu",
+        "Vlad Walent",
+        "Jose Perez",
+        "Jeffrey White",
+        "Pierce Bateson",
+        "Tate Lorentz"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Harvey Sarajian",
+        "Joel Torbic"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "David Nguema",
+        "Alfred Debah",
+        "Chandler Young",
+        "Bret Russell"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "smu",
@@ -1072,7 +1424,63 @@
       "PHYE 4380 — Exercise Programming"
     ],
     "rec": "SMU is a genuine sleeper pick. 2025 ACC Tournament Champions. Warm Dallas city campus. Luchi Gonzalez (FC Dallas HC) is an SMU alum — direct pro pathway. Top-25 consistently nationally. Strong soccer + good academics combination.",
-    "url": "https://smumustangs.com/sports/mens-soccer"
+    "url": "https://smumustangs.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 87,
+      "soccer": 80,
+      "academic": 68,
+      "minutes": 34,
+      "pt": 64,
+      "lifestyle": 100,
+      "value": 67
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 7,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Alex Salvo",
+        "Jaylinn Mitchell"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Nick Harshaw",
+        "Andre Philibbosian"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Franco Ocana",
+        "Landon Hickam",
+        "Caleb Bronold"
+      ],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "stjohns",
@@ -1202,7 +1610,67 @@
       "PEP 401 — Rehabilitation Science"
     ],
     "rec": "NYC = Hospital for Special Surgery, NYU Langone, NY Presbyterian — best clinical DPT access in the country. Big East soccer is tough. Cool climate. City lifestyle partially compensates.",
-    "url": "https://redstormsports.com/sports/mens-soccer"
+    "url": "https://redstormsports.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 74,
+      "soccer": 65,
+      "academic": 68,
+      "minutes": 22,
+      "pt": 64,
+      "lifestyle": 60,
+      "value": 64
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Jad Benjelloun",
+        "Takuto Kawase"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Gabe Smyth",
+        "Kaief Tomlinson",
+        "Bradyn Cobb"
+      ],
+      "rising_junior_2027_count": 6,
+      "rising_junior_2027_names": [
+        "Guilherme Gomes",
+        "Andrew Porucznik",
+        "Jayden Montgomery",
+        "Dylan Gugin",
+        "Jorian Michelis",
+        "Charlie Joyce"
+      ],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "indiana",
@@ -1337,7 +1805,61 @@
       "KIN 450 — Sport Rehabilitation"
     ],
     "rec": "Most decorated soccer program in USA history. Best motor control coverage in this guide (9 labs). Aidan Morris (USMNT) developed here. Bloomington is a classic college town — not a city — and climate is cold. For development and pro pathway if he can compete at Big Ten level.",
-    "url": "https://iuhoosiers.com/sports/mens-soccer"
+    "url": "https://iuhoosiers.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 70,
+      "soccer": 82,
+      "academic": 95,
+      "minutes": 56,
+      "pt": 83,
+      "lifestyle": 40,
+      "value": 64
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Jacopo Fedrizzi",
+        "Seth Stewart",
+        "Noah Joseph"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Charlie Heuer",
+        "Justin Shreffler",
+        "EJ Dreher"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "princeton",
@@ -1472,7 +1994,20 @@
       "PSY 251 — Cognitive Neuroscience"
     ],
     "rec": "Princeton is surging — 2024 AND 2025 Ivy Tournament champions, first Ivy team ever to do the double. Jim Barlow coached the 2025 team to an undefeated conference season. Zero athletic scholarships but need-based aid can cover full cost. GPA 2.8 will be a significant admission challenge. Degree is not exercise science aligned.",
-    "url": "https://goprincetontigers.com/sports/mens-soccer"
+    "url": "https://goprincetontigers.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 62,
+      "soccer": 70,
+      "academic": 47,
+      "minutes": 50,
+      "pt": 63,
+      "lifestyle": 40,
+      "value": 36
+    },
+    "minutesOutlook": {
+      "available": false,
+      "reason": "No roster data available"
+    }
   },
   {
     "id": "yale",
@@ -1604,7 +2139,20 @@
       "MCDB 310 — Human Physiology"
     ],
     "rec": "Yale won the 2023 Ivy Tournament. New Haven is a real city — more accessible than Princeton or Ithaca. No athletic scholarships. No exercise science degree. GPA 2.8 is a major admission challenge. Best considered if Olivier's GPA improves significantly and he has extraordinary academic potential.",
-    "url": "https://yalebulldogs.com/sports/mens-soccer"
+    "url": "https://yalebulldogs.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 58,
+      "soccer": 61,
+      "academic": 42,
+      "minutes": 50,
+      "pt": 60,
+      "lifestyle": 60,
+      "value": 34
+    },
+    "minutesOutlook": {
+      "available": false,
+      "reason": "No roster data available"
+    }
   },
   {
     "id": "charleston",
@@ -1735,7 +2283,61 @@
       "KIN 420 — Sport Psychology"
     ],
     "rec": "Charleston is one of America's most beautiful cities — historic waterfront, warm climate. Keith Wiggans played for the local pro team (Charleston Battery). Best if Olivier values city lifestyle and a developing D1 program with personal coaching.",
-    "url": "https://cofcsports.com/sports/mens-soccer"
+    "url": "https://cofcsports.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 74,
+      "soccer": 58,
+      "academic": 68,
+      "minutes": 38,
+      "pt": 64,
+      "lifestyle": 100,
+      "value": 97
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Ezequiel Emanuele Goetzke",
+        "Hogan Walker"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Dan Toulson",
+        "Bemanzi Alibaruho",
+        "Reeves Cates",
+        "Paul Killeen"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "pba",
@@ -1872,7 +2474,58 @@
       "KIN 430 — Pre-Physical Therapy Seminar"
     ],
     "rec": "PBA is the single best academic match for Olivier's goals in the entire guide. \"Pre-Physical Therapy\" is literally in the degree concentration title. Ranked #2 nationally in D2 in 2025. West Palm Beach is warm, coastal, and cosmopolitan — close to Sydney lifestyle. Mandatory clinical internship at Jupiter Medical Centre and Orlando Health.",
-    "url": "https://pbasailfish.com/sports/mens-soccer"
+    "url": "https://pbasailfish.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 93,
+      "soccer": 63,
+      "academic": 89,
+      "minutes": 44,
+      "pt": 91,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Quinlan van Arkel"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Julian Walby",
+        "Lucas Velazco"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 70,
+          "label": "Established starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "lynn",
@@ -2007,7 +2660,62 @@
       "KIN 450 — Rehabilitation Science"
     ],
     "rec": "Top pick for Australian players specifically. Warm Boca Raton sunshine, large international community, personal coaching on small campus. Coach Grant has Australian connections. Exercise Science to pre-PT pathway available. Best Sydney lifestyle match at D2 level.",
-    "url": "https://lynuniversity.com/athletics/soccer"
+    "url": "https://lynuniversity.com/athletics/soccer",
+    "lensScores": {
+      "overall": 94,
+      "soccer": 61,
+      "academic": 73,
+      "minutes": 42,
+      "pt": 67,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 13,
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Myles Petrie"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Juan Moran Garcia",
+        "Gavin Diaz",
+        "Daniel Barrett"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "TJ Brandt",
+        "Ryan Rodriguez"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "barry",
@@ -2141,7 +2849,67 @@
       "HPS 210 — Anatomy & Physiology"
     ],
     "rec": "Barry has 4 D2 national titles — most ever. HPS 450 Pre-PT Seminar is unique at D2 level. Miami multicultural energy matches Sydney culture. Inter Miami CF connections. School of Human Performance is a dedicated college.",
-    "url": "https://gobarrybucs.com/sports/mens-soccer"
+    "url": "https://gobarrybucs.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 88,
+      "soccer": 59,
+      "academic": 84,
+      "minutes": 82,
+      "pt": 87,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 13,
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Humberto Benavidez",
+        "Jayden Byard",
+        "Aidan de Gannes",
+        "Juan Pablo Gorrin",
+        "Nikola Momcilovic",
+        "Alejandro Montejo",
+        "Daniel Romero-Ramos"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Agustin Malec",
+        "Matthew Van De Warker"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Sky Carrizo",
+        "Kadir Rimola"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "nova",
@@ -2274,7 +3042,62 @@
       "KIN 4100 — Sport Psychology"
     ],
     "rec": "NSU is a large health sciences university — strongest academic environment of the Florida D2 programs for a student targeting PT. Fort Lauderdale is warm, cosmopolitan. 2021 Final Four shows program quality. Same SSC conference as Lynn, Barry, PBA.",
-    "url": "https://nsusharks.com/sports/mens-soccer"
+    "url": "https://nsusharks.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 81,
+      "soccer": 56,
+      "academic": 73,
+      "minutes": 62,
+      "pt": 75,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Andres Morral Rosales",
+        "Aidan Marshall King",
+        "Toga Katsuma"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Matthew Gordon",
+        "Jamie  Bulloch"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Trevor Richter"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "csula",
@@ -2408,7 +3231,61 @@
       "KIN 460 — Motor Learning"
     ],
     "rec": "Most affordable D2 in Los Angeles. Kinesiology is a flagship department. LA internship access for PT/Chiro is extraordinary. Best for Olivier if budget is the primary constraint.",
-    "url": "https://calstatela.edu/athletics"
+    "url": "https://calstatela.edu/athletics",
+    "lensScores": {
+      "overall": 80,
+      "soccer": 56,
+      "academic": 73,
+      "minutes": 38,
+      "pt": 67,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Diego Arvizu"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Ignacio Moreno",
+        "Felix Alverdale",
+        "Emil Kischka"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Anthony Lopez"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "stedwards",
@@ -2543,7 +3420,62 @@
       "KIN 3210 — Anatomy"
     ],
     "rec": "Austin is one of USA's fastest-growing cities. Possession system suits an 8/10. Small campus = personal development. Austin FC pipeline is a real professional pathway. Dell Medical School nearby for clinical placements.",
-    "url": "https://sehawks.com/sports/mens-soccer"
+    "url": "https://sehawks.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 88,
+      "soccer": 62,
+      "academic": 73,
+      "minutes": 37,
+      "pt": 67,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 7,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Holden Rabb",
+        "Matthew Devaney"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Jud Anderson"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Filip Adamski",
+        "Armando Don Juan",
+        "Jonathan Marks Jr."
+      ],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "ocu",
@@ -2676,7 +3608,61 @@
       "KIN 4430 — Pre-PT Seminar"
     ],
     "rec": "Most competitive NAIA program in guide. OKC is a real city. Generous scholarships. Brian Finnegan has Australian connections and has placed Australian players in professional environments — unique advantage for Olivier.",
-    "url": "https://okcu.edu/athletics/soccer"
+    "url": "https://okcu.edu/athletics/soccer",
+    "lensScores": {
+      "overall": 85,
+      "soccer": 57,
+      "academic": 68,
+      "minutes": 60,
+      "pt": 64,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 10,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Chris McDonald",
+        "Matheus Ambrozio",
+        "Kenz Toms"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Hannan Ashraf",
+        "Ethan Taylor",
+        "Ethan Zeinalpor"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "keiser",
@@ -2807,7 +3793,73 @@
       "EXS 400 — Clinical Applications"
     ],
     "rec": "Keiser is fundamentally a health sciences university. Fort Lauderdale warm and cosmopolitan. Clinical Simulation Centre provides patient care experience before grad school. Best if academics are the priority over professional soccer.",
-    "url": "https://keiseruniversity.edu/athletics"
+    "url": "https://keiseruniversity.edu/athletics",
+    "lensScores": {
+      "overall": 80,
+      "soccer": 55,
+      "academic": 68,
+      "minutes": 2,
+      "pt": 74,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 17,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Xabi Souto",
+        "Ethan Barimo"
+      ],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [
+        "Mohammed Mouzoune",
+        "Alessio Silva",
+        "Fami Konate",
+        "Santiago Duque",
+        "Tristan Silva"
+      ],
+      "rising_junior_2027_count": 10,
+      "rising_junior_2027_names": [
+        "Keanu Does",
+        "Ted Gibbs",
+        "Eric Neron-Bancel",
+        "Bailey Newton",
+        "Manex Landa",
+        "Eden Barlow",
+        "Sergio Padin-Rey",
+        "Juan Terrasa",
+        "Caio Saab",
+        "Alejandro Molina-Casas"
+      ],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "chapman",
@@ -2941,7 +3993,65 @@
       "KIN 420 — Clinical Kinesiology"
     ],
     "rec": "Chapman has an explicit Pre-PT required course. Orange County is 30 min from LA. D3 = less schedule pressure — better for building GPA toward PT grad school. No athletic scholarships. Best if long-term academic career is the priority.",
-    "url": "https://chapmanathletics.com/sports/soccer"
+    "url": "https://chapmanathletics.com/sports/soccer",
+    "lensScores": {
+      "overall": 76,
+      "soccer": 54,
+      "academic": 79,
+      "minutes": 40,
+      "pt": 86,
+      "lifestyle": 100,
+      "value": 53
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Connor Kilde",
+        "Benji Leonetti"
+      ],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [
+        "Cooper Haley",
+        "Evan Crownfield",
+        "Evan White",
+        "Tyler Yzuel",
+        "Cole Poling"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Kobe Lee",
+        "Dane Price"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   },
   {
     "id": "smc",
@@ -3073,7 +4183,20 @@
       "BIO 2 — Cell Biology"
     ],
     "rec": "THE best JUCO option for Sydney lifestyle match. Santa Monica is the most Sydney-like location in America. Best transfer record to UCLA in California. 2 years at ~$9k to prove GPA and soccer ability, then step up.",
-    "url": "https://athletics.smc.edu/sports/soccer"
+    "url": "https://athletics.smc.edu/sports/soccer",
+    "lensScores": {
+      "overall": 90,
+      "soccer": 51,
+      "academic": 52,
+      "minutes": 50,
+      "pt": 55,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": false,
+      "reason": "No roster data available"
+    }
   },
   {
     "id": "miami_dade",
@@ -3203,6 +4326,19 @@
       "PSY 2012 — General Psychology"
     ],
     "rec": "Miami gateway to South Florida 4-year ecosystem. Transfer into Barry for kinesiology degree and pre-PT seminar. Warm city, massive international student body.",
-    "url": "https://athletics.mdc.edu"
+    "url": "https://athletics.mdc.edu",
+    "lensScores": {
+      "overall": 80,
+      "soccer": 47,
+      "academic": 42,
+      "minutes": 50,
+      "pt": 50,
+      "lifestyle": 100,
+      "value": 100
+    },
+    "minutesOutlook": {
+      "available": false,
+      "reason": "No roster data available"
+    }
   }
 ]

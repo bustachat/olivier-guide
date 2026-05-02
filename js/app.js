@@ -1,6 +1,7 @@
 // ═══════════════════════════════════════════════════════════════════════
-// app.js  —  Olivier Scholarship Guide v12.1
+// app.js  —  Olivier Scholarship Guide v15
 // All application logic. Data loaded from data/ JSON files.
+// v15: Adds lens system + 2027 Minutes Outlook tab.
 // ═══════════════════════════════════════════════════════════════════════
 
 let unis = [];
@@ -45,7 +46,116 @@ function initApp() {
   renderCoachCards();
   renderFinSchoolSelector();
   renderFinComparisonBars();
+  renderMinutesOutlook();
   onAtarSlide();
+  applyLens(currentLens); // ensure initial sort+highlight
+}
+
+// ═══ v15: Lens system ════════════════════════════════════════════════════════
+const LENSES = [
+  {key:'overall',   label:'Best Overall',     desc:"Olivier's existing fit score (climate, lifestyle, exercise science, soccer level, PT pathway combined)."},
+  {key:'soccer',    label:'Soccer-First',     desc:'Weights development scores (60%), titles & MLS pipeline (30%), and division strength (10%).'},
+  {key:'academic',  label:'Academic-First',   desc:'Weights ACU BESS unit alignment (85%) plus a baseline. UF tops this list but cannot be played at — flagged accordingly.'},
+  {key:'minutes',   label:'Minutes Outlook',  desc:'2027-entry roster opportunity. Higher = more midfielder slots opening up before Olivier arrives.'},
+  {key:'pt',        label:'PT Pathway',       desc:'Pre-PT degree quality (50%), ACU alignment (30%), clinical/PT-specific dev score (20%).'},
+  {key:'lifestyle', label:'Lifestyle-First',  desc:'Climate (warm), city access, and cultural match for Sydney-raised Olivier.'},
+  {key:'value',     label:'Value-First',      desc:'Fit score per dollar of cost. Best fit-to-cost ratio.'},
+];
+let currentLens = 'overall';
+
+function lensRank(lensKey){
+  // Returns array of school IDs sorted by lens score desc, fitOlivier as tiebreaker
+  return [...unis].sort((a,b)=>{
+    const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
+    const sb = (b.lensScores && b.lensScores[lensKey]) || 0;
+    if(sb !== sa) return sb - sa;
+    const fa = a.fitOlivier || 0;
+    const fb = b.fitOlivier || 0;
+    return fb - fa;
+  }).map(u=>u.id);
+}
+
+function renderLensControls(){
+  const container = document.getElementById('lens-controls');
+  if(!container) return;
+  container.innerHTML =
+    '<div class="lens-label">View schools by</div>'+
+    '<div class="lens-pills">'+
+      LENSES.map(L=>
+        '<button class="lens-pill'+(L.key===currentLens?' active':'')+'" '+
+          'data-lens="'+L.key+'" onclick="applyLens(\''+L.key+'\')" '+
+          'title="'+L.desc.replace(/"/g,'&quot;')+'">'+L.label+'</button>'
+      ).join('')+
+    '</div>'+
+    '<div class="lens-explainer" id="lens-explainer">'+
+      currentLensExplainer()+
+    '</div>';
+}
+
+function currentLensExplainer(){
+  const L = LENSES.find(x=>x.key===currentLens);
+  if(!L) return '';
+  const top3 = lensRank(currentLens).slice(0,3);
+  const top3Names = top3.map(id=>{
+    const u = unis.find(x=>x.id===id);
+    if(!u) return '';
+    const score = (u.lensScores||{})[currentLens] || 0;
+    const warn = u.noVarsity ? ' <span class="lens-warn">⚠ no varsity</span>' : '';
+    return '<strong>'+u.name+'</strong> ('+score+')'+warn;
+  }).join(' · ');
+  return '<span class="lens-desc">'+L.desc+'</span>'+
+    '<div class="lens-top3">Top 3: '+top3Names+'</div>';
+}
+
+function applyLens(lensKey){
+  currentLens = lensKey;
+  // Update active pill
+  document.querySelectorAll('.lens-pill').forEach(b=>{
+    b.classList.toggle('active', b.dataset.lens===lensKey);
+  });
+  // Update explainer
+  const exp = document.getElementById('lens-explainer');
+  if(exp) exp.innerHTML = currentLensExplainer();
+  // Re-rank cards within each section, and apply top-3 highlight
+  const top3Ids = new Set(lensRank(lensKey).slice(0,3));
+  document.querySelectorAll('.cards-grid').forEach(grid=>{
+    const cards = [...grid.children];
+    cards.sort((a,b)=>{
+      const ua = unis.find(x=>x.id===a.id.replace('card-',''));
+      const ub = unis.find(x=>x.id===b.id.replace('card-',''));
+      const sa = (ua && ua.lensScores && ua.lensScores[lensKey]) || 0;
+      const sb = (ub && ub.lensScores && ub.lensScores[lensKey]) || 0;
+      if(sb !== sa) return sb - sa;
+      return (ub && ub.fitOlivier || 0) - (ua && ua.fitOlivier || 0);
+    });
+    cards.forEach(c=>grid.appendChild(c));
+  });
+  // Highlight top 3 across all visible cards
+  document.querySelectorAll('.ucard').forEach(card=>{
+    const id = card.id.replace('card-','');
+    card.classList.remove('lens-top1','lens-top2','lens-top3');
+    if(top3Ids.has(id)){
+      const u = unis.find(x=>x.id===id);
+      const ranked = lensRank(lensKey);
+      const pos = ranked.indexOf(id);
+      if(pos===0) card.classList.add('lens-top1');
+      else if(pos===1) card.classList.add('lens-top2');
+      else if(pos===2) card.classList.add('lens-top3');
+      // Add lens badge (replaces previous if any)
+      let badge = card.querySelector('.lens-badge');
+      if(!badge){
+        badge = document.createElement('div');
+        badge.className = 'lens-badge';
+        card.insertBefore(badge, card.firstChild);
+      }
+      const lensLabel = LENSES.find(L=>L.key===lensKey).label;
+      const warn = u && u.noVarsity ? ' ⚠' : '';
+      badge.textContent = '★ #'+(pos+1)+' '+lensLabel.toUpperCase()+warn;
+    } else {
+      const badge = card.querySelector('.lens-badge');
+      if(badge) badge.remove();
+    }
+  });
 }
 
 // ═══ Application logic ═══════════════════════════════════════════════════════
@@ -64,7 +174,8 @@ function alignLabel(n){return n>=14?'Full align':n>=10?'Strong align':'Partial a
 
 function renderCards(){
   const container=document.getElementById('cards-container');
-  container.innerHTML='';
+  container.innerHTML='<div id="lens-controls" class="lens-controls"></div>';
+  renderLensControls();
   const sections=[
     {div:'D1',label:'NCAA Division I',intro:'Highest competition. Elite soccer, strong kinesiology programs, competitive scholarships. Now includes FIU, SMU, College of Charleston, and the Ivy League programs.'},
     {div:'IVY',label:'Ivy League (D1)',intro:'No athletic scholarships — need-based financial aid only. Princeton won the 2024 AND 2025 Ivy League Tournaments. GPA 2.8 is a significant challenge for admission. Degrees are NOT exercise science aligned.'},
@@ -102,7 +213,6 @@ function buildCard(u){
 
   const devAvg=Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
   const ivyWarn=u.div==='IVY'?'<div class="ivy-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ Ivy: No athletic scholarships. Need-based only. GPA 2.8 likely insufficient.</div>':'';
-  const noVarsityWarn=u.noVarsity?'<div class="no-varsity-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ NO VARSITY MEN\'S SOCCER — '+u.full+' does NOT field an NCAA men\'s soccer team. Listed for academic reference only.</div>':'';
 
   // GPA compact row
   let gpaHtml='';
@@ -150,9 +260,8 @@ function buildCard(u){
       '</div>'+
     '</div>'+
     ivyWarn+
-    noVarsityWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item"><div class="ss-val" style="color:'+(u.noVarsity?'var(--rose)':sc(u.fitOlivier))+';font-size:'+(u.noVarsity?'.85rem':'1.05rem')+'">'+(u.noVarsity?'N/A':u.fitOlivier+'%')+'</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item"><div class="ss-val" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item"><div class="ss-val" style="color:'+sc(devAvg)+'">'+devAvg+'%</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item"><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
@@ -162,11 +271,11 @@ function buildCard(u){
     '</div>'+
     '<div class="info-grid2">'+
       '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+u.cost+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+(u.noVarsity?'N/A':u.aid)+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+u.aid+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePT.split('—')[0].trim()+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">MLS Picks (5yr)</div><div class="ig2-val">'+(u.noVarsity?'<span style="color:var(--rose)">N/A</span>':u.proPlayers.mlsPicks5yr+' picks')+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">MLS Picks (5yr)</div><div class="ig2-val">'+u.proPlayers.mlsPicks5yr+' picks</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Facilities</div><div class="ig2-val"><span class="fac-card-badge fac-'+facRating+'">'+facEmoji+' '+facLabel+'</span></div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px'+(u.noVarsity?';color:var(--rose);font-weight:700':'')+'">'+u.soccerLevel.split('—')[0].trim()+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px">'+u.soccerLevel.split('—')[0].trim()+'</div></div>'+
     '</div>'+
     gpaHtml+
     '<div class="conf-strip">'+
@@ -218,7 +327,7 @@ function renderComparePage(){
     ['Head Coach',u=>`<div class="cval">${u.coach.name}</div>`],
     ['Climate',u=>`<div class="cval">${u.warm?'☀ Warm':'⛅ Mixed'}</div>`],
     ['City Campus',u=>`<div class="cval ${u.city?'good':''}">${u.city?'✅ Yes':'⚠ Smaller'}</div>`],
-    ['Overall Fit',u=>{if(u.noVarsity)return`<div style="color:var(--rose);font-weight:700;font-size:12px">⚠ N/A — No Varsity</div>`;const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
+    ['Overall Fit',u=>{const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
     ['Tactical Dev',u=>`<div style="color:${sc(u.devScores.tactical)};font-weight:600">${u.devScores.tactical}/100</div>`],
     ['PT Path Score',u=>`<div style="color:${sc(u.devScores.ptPath)};font-weight:600">${u.devScores.ptPath}/100</div>`],
     ['Website',u=>`<a href="${u.url}" target="_blank" style="color:var(--indigo);font-size:12px;font-weight:600">Visit →</a>`],
@@ -260,7 +369,6 @@ function buildDetailBody(u){
     </div>
     <div class="mtab-content active" id="tab-overview">
       ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League: No athletic scholarships — need-based financial aid only. Highly selective admission. GPA 2.8 is likely insufficient without significant improvement.</div>`:''}
-      ${u.noVarsity?`<div class="no-varsity-warning">⚠ NO VARSITY MEN'S SOCCER PROGRAM — ${u.noVarsityNote||u.full+' does not field an NCAA men\'s soccer team.'} Olivier cannot be recruited or scholarshipped here. Listed for academic reference only.</div>`:''}
       <div class="detail-grid">
         <div class="detail-block"><h4>Quick Facts</h4><table style="width:100%;font-size:12px">
           <tr><td style="color:var(--hint);padding:4px 0">Division</td><td><span class="dbadge d-${u.div}">${u.div}</span></td></tr>
@@ -345,14 +453,13 @@ function buildDetailBody(u){
       </div>
       <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
-          <div style="font-size:2.5rem;font-weight:800;color:${u.noVarsity?'var(--rose)':sc(u.fitOlivier)}">${u.noVarsity?'N/A':u.fitOlivier+'%'}</div>
-          <p style="font-size:13px;color:var(--muted)">${u.noVarsity?'Fit score not applicable — no varsity men\'s soccer program. Olivier cannot play here.':'Combines climate, city lifestyle, exercise science quality, soccer level, pro pathway, and PT/Chiro pathway.'}</p>
+          <div style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}">${u.fitOlivier}%</div>
+          <p style="font-size:13px;color:var(--muted)">Combines climate, city lifestyle, exercise science quality, soccer level, pro pathway, and PT/Chiro pathway.</p>
         </div>
       </div>
     </div>
     <div class="mtab-content" id="tab-contact">
       ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League coaches cannot offer athletic scholarships. Contact should still go through Platform Sports Management — coach relationships matter for roster spots.</div>`:''}
-      ${u.noVarsity?`<div class="no-varsity-warning">⚠ NO VARSITY MEN'S SOCCER COACH — ${u.full} has no NCAA men's soccer program and therefore no head coach to contact. Do NOT email UF Athletics for soccer recruitment. Only a student-run club soccer team exists.</div>`:''}
       <div class="contact-block"><h4>${u.coach.name}</h4>
         <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
         <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
@@ -637,8 +744,7 @@ function renderContacts(){
     <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
     <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone}</div></div>
     <div class="contact-row"><div class="ci">Program</div><div class="cv"><a href="${u.url}" target="_blank">View →</a></div></div>
-    ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}
-    ${u.noVarsity?'<div style="font-size:11px;color:var(--rose);font-weight:700;margin-top:4px;background:var(--rose3);padding:6px 8px;border-radius:6px">⚠ NO VARSITY MEN\'S SOCCER — do not contact for recruitment. Listed for academic reference only.</div>':''}</div>`;});
+    ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
   container.innerHTML=html;
 }
 // ══════════════════════════════════════════════════
@@ -970,6 +1076,118 @@ function selectSchoolFromBar(id){
   const btn = [...document.querySelectorAll('.fin-school-btn')].find(b=>b.onclick.toString().includes(`'${id}'`));
   selectFinSchool(id, btn);
   document.getElementById('fin-model-wrapper').scrollIntoView({behavior:'smooth'});
+}
+
+// ═══ v15: Minutes Outlook tab ═══════════════════════════════════════════════
+function renderMinutesOutlook(){
+  const container = document.getElementById('page-minutes');
+  if(!container) return;
+  
+  // Sort by minutes lens score
+  const ranked = [...unis].sort((a,b)=>{
+    const sa = (a.lensScores && a.lensScores.minutes) || 0;
+    const sb = (b.lensScores && b.lensScores.minutes) || 0;
+    if(sb !== sa) return sb - sa;
+    return (b.fitOlivier || 0) - (a.fitOlivier || 0);
+  });
+  
+  let html = '<div class="mo-intro">'+
+    '<h2 style="margin-top:0">Minutes Outlook · 2027 Entry Analysis</h2>'+
+    '<p style="color:var(--muted);font-size:14px;line-height:1.6">'+
+      'Olivier enters US college soccer in <strong>August 2027</strong>. This tab projects his '+
+      'realistic playing-time trajectory across all 4 years at each school, based on the 2025 '+
+      'roster and how players age out by his entry year.'+
+    '</p>'+
+    '<div class="mo-key">'+
+      '<div class="mo-key-item"><strong>2025 Sr/Gr</strong> → already gone, irrelevant</div>'+
+      '<div class="mo-key-item"><strong>2025 Jr</strong> → graduate after 2026 → ✅ <em>cleared before he arrives</em></div>'+
+      '<div class="mo-key-item"><strong>2025 So</strong> → become 2027 Sr → 1-yr overlap with Olivier</div>'+
+      '<div class="mo-key-item"><strong>2025 Fr</strong> → become 2027 Jr → ❌ <em>primary 2-year competition</em></div>'+
+      '<div class="mo-key-item"><strong>+ Unknown 2026 freshman class</strong> (PSM coach call needed)</div>'+
+    '</div>'+
+  '</div>';
+  
+  html += '<div class="mo-cards-grid">';
+  ranked.forEach((u,idx)=>{
+    const mo = u.minutesOutlook || {};
+    if(!mo.available){
+      html += '<div class="mo-card mo-unavailable">'+
+        '<div class="mo-card-head">'+
+          '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
+          '<span class="mo-school-name">'+u.full+'</span>'+
+        '</div>'+
+        '<div class="mo-card-body">'+
+          '<p style="color:var(--rose);font-size:13px;font-weight:600">⚠ '+(mo.reason||'Not applicable')+'</p>'+
+        '</div>'+
+      '</div>';
+      return;
+    }
+    const traj = mo.trajectory;
+    const score = (u.lensScores||{}).minutes || 0;
+    const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
+    const riskColor = mo.recruit_risk==='High'?'var(--rose)':mo.recruit_risk==='Medium'?'var(--amber)':'var(--emerald)';
+    
+    html += '<div class="mo-card'+(idx<3?' mo-top':'')+'">'+
+      '<div class="mo-card-head">'+
+        (idx<3?'<span class="mo-rank">#'+(idx+1)+'</span>':'')+
+        '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
+        '<span class="mo-school-name">'+u.full+'</span>'+
+        '<span class="mo-score" style="color:'+scoreColor+'">'+score+'</span>'+
+      '</div>'+
+      '<div class="mo-card-body">'+
+        '<div class="mo-trajectory">';
+    traj.forEach(t=>{
+      const barColor = t.pct>=80?'#3B6D11':t.pct>=60?'#639922':t.pct>=40?'#BA7517':'#A32D2D';
+      html += '<div class="mo-traj-row">'+
+        '<div class="mo-traj-year">'+t.year+' · '+t.yr_label+'</div>'+
+        '<div class="mo-traj-bar"><div class="mo-traj-fill" style="width:'+t.pct+'%;background:'+barColor+'"></div></div>'+
+        '<div class="mo-traj-label">'+t.label+'</div>'+
+      '</div>';
+    });
+    html += '</div>'+
+        '<div class="mo-stats">'+
+          '<div class="mo-stat">'+
+            '<div class="mo-stat-num">'+mo.mf_total_2025+'</div>'+
+            '<div class="mo-stat-lbl">MFs (2025)</div>'+
+          '</div>'+
+          '<div class="mo-stat">'+
+            '<div class="mo-stat-num" style="color:var(--emerald)">'+mo.cleared_before_2027+'</div>'+
+            '<div class="mo-stat-lbl">Cleared by 2027</div>'+
+          '</div>'+
+          '<div class="mo-stat">'+
+            '<div class="mo-stat-num">'+mo.rising_senior_2027_count+'</div>'+
+            '<div class="mo-stat-lbl">2027 Seniors</div>'+
+          '</div>'+
+          '<div class="mo-stat">'+
+            '<div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div>'+
+            '<div class="mo-stat-lbl">2027 Juniors</div>'+
+          '</div>'+
+          '<div class="mo-stat">'+
+            '<div class="mo-stat-num" style="color:'+riskColor+';font-size:14px">'+mo.recruit_risk+'</div>'+
+            '<div class="mo-stat-lbl">Recruit Risk</div>'+
+          '</div>'+
+        '</div>';
+    if(mo.cleared_names && mo.cleared_names.length){
+      html += '<div class="mo-names"><strong>Gone before Olivier arrives:</strong> '+mo.cleared_names.join(', ')+'</div>';
+    }
+    if(mo.rising_junior_2027_names && mo.rising_junior_2027_names.length){
+      html += '<div class="mo-names mo-names-warn"><strong>Primary 2027-junior blockers:</strong> '+mo.rising_junior_2027_names.join(', ')+'</div>';
+    }
+    html += '</div></div>';
+  });
+  html += '</div>';
+  
+  html += '<div class="mo-footer">'+
+    '<p style="color:var(--muted);font-size:12px;line-height:1.6;margin-top:1.5rem">'+
+      '<strong>Methodology caveat:</strong> Outlook assumes typical recruiting class sizes (3-5 MFs/yr). '+
+      'The 2026 freshman class is being recruited right now and is currently unknown — those players become '+
+      "Olivier's 2027 sophomore-year competition. Platform Sports Management coach calls should refine "+
+      'year 1-2 projections by directly asking each coach: <em>"How many central midfielders are in your '+
+      '2026 and 2027 recruiting classes, and what is your projected 2027 starting XI?"</em>'+
+    '</p>'+
+  '</div>';
+  
+  container.innerHTML = html;
 }
 
 // App initialised via loadData() → initApp()

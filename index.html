@@ -57,25 +57,24 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-
 .ch-p-item{display:flex;align-items:center;gap:5px;}
 .ch-p-l{font-size:9px;color:rgba(255,255,255,.35);font-weight:700;text-transform:uppercase;letter-spacing:.07em;}
 .ch-p-v{font-size:11px;color:#e0e7ff;font-weight:600;}
-/* ── ATAR → GPA Converter ── */
-.atar-panel{background:var(--navy);border-radius:14px;padding:.65rem 1.2rem;margin-bottom:.6rem;}
-.atar-panel-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.5rem;}
-.atar-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.45);}
-.atar-summary{display:flex;gap:1rem;flex-wrap:wrap;}
-.atar-sum-item{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;}
-.atar-sum-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
-.atar-slider-row{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;}
+/* ── ATAR → GPA Converter — single row ── */
+.atar-panel{background:var(--navy);border-radius:14px;padding:.5rem 1.2rem;margin-bottom:.6rem;}
+.atar-single-row{display:flex;align-items:center;gap:1rem;flex-wrap:nowrap;}
+.atar-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.45);white-space:nowrap;flex-shrink:0;}
+.atar-summary{display:flex;gap:.75rem;flex-shrink:0;}
+.atar-sum-item{display:flex;align-items:center;gap:4px;font-size:11px;font-weight:700;color:rgba(255,255,255,.65);}
+.atar-sum-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
 .atar-slider-wrap{position:relative;}
-.atar-slider-wrap input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:6px;border-radius:3px;background:rgba(255,255,255,.15);outline:none;cursor:pointer;}
-.atar-slider-wrap input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;border-radius:50%;background:#6366f1;cursor:pointer;border:3px solid #fff;box-shadow:0 2px 8px rgba(99,102,241,.6);}
-.atar-slider-wrap input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#6366f1;cursor:pointer;border:3px solid #fff;}
-.atar-tick-row{display:flex;justify-content:space-between;margin-top:4px;}
+.atar-slider-wrap input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:5px;border-radius:3px;background:rgba(255,255,255,.15);outline:none;cursor:pointer;}
+.atar-slider-wrap input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:#6366f1;cursor:pointer;border:2px solid #fff;box-shadow:0 2px 6px rgba(99,102,241,.6);}
+.atar-slider-wrap input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#6366f1;cursor:pointer;border:2px solid #fff;}
+.atar-tick-row{display:flex;justify-content:space-between;margin-top:2px;}
 .atar-tick{font-size:9px;color:rgba(255,255,255,.3);font-weight:600;}
-.atar-readout{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:.45rem .8rem;text-align:center;min-width:110px;flex-shrink:0;}
-.atar-readout .ar-atar{font-size:1.5rem;font-weight:800;color:#fff;line-height:1;font-family:'Outfit',sans-serif;}
-.atar-readout .ar-label{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.09em;margin-top:1px;font-weight:700;}
-.atar-readout .ar-gpa{font-size:.95rem;font-weight:800;color:#a5b4fc;margin-top:3px;line-height:1;}
-.atar-readout .ar-gpa-label{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.09em;font-weight:700;}
+.atar-readout{display:flex;align-items:center;gap:4px;flex-shrink:0;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:.35rem .7rem;}
+.atar-readout .ar-atar{font-size:1.2rem;font-weight:800;color:#fff;line-height:1;font-family:'Outfit',sans-serif;}
+.atar-readout .ar-sep{font-size:.9rem;color:rgba(255,255,255,.3);font-weight:400;}
+.atar-readout .ar-gpa{font-size:1.2rem;font-weight:800;color:#a5b4fc;line-height:1;}
+.atar-readout .ar-gpa-label{font-size:9px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.09em;font-weight:700;margin-left:2px;}
 /* ── Compact Filter Panel ── */
 .filter-panel{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden;}
 .filter-panel-header{display:flex;justify-content:space-between;align-items:center;padding:.6rem 1rem;background:var(--surface2);}
@@ -291,14 +290,18 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .ivy-warning{background:var(--gold3);border:1px solid #fde68a;border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--gold);font-weight:600;margin-bottom:.75rem;}
 .no-varsity-warning{background:var(--rose3);border:1.5px solid var(--rose);border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--rose);font-weight:700;margin-bottom:.75rem;line-height:1.5;}
 
-/* ── v15: Lens selector ─────────────────────────────────────────────── */
 .lens-controls{
   background:linear-gradient(135deg,#fafaf8 0%,#f3f1ec 100%);
   border:1px solid var(--border);
   border-radius:12px;
-  padding:.75rem 1.1rem .7rem;
-  margin-bottom:1.25rem;
-  box-shadow:0 1px 2px rgba(0,0,0,0.02);
+  padding:.55rem 1rem;
+  margin-bottom:.75rem;
+}
+.lens-header-row{
+  display:flex;
+  align-items:center;
+  gap:.75rem;
+  flex-wrap:wrap;
 }
 .lens-label{
   font-size:10px;
@@ -306,7 +309,8 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   text-transform:uppercase;
   letter-spacing:.09em;
   font-weight:700;
-  margin-bottom:.5rem;
+  white-space:nowrap;
+  flex-shrink:0;
   display:flex;
   align-items:center;
   gap:.4rem;
@@ -323,7 +327,6 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   display:inline-flex;
   flex-wrap:wrap;
   gap:0;
-  margin-bottom:.65rem;
   padding:3px;
   background:#ebe9e2;
   border-radius:9px;
@@ -350,76 +353,21 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .lens-pill:hover{background:rgba(255,255,255,0.7);color:var(--text);}
 .lens-pill.active{background:#fff;color:var(--indigo);box-shadow:0 1px 3px rgba(0,0,0,0.08);}
 .lens-pill.active:hover{background:#fff;}
-/* Explainer: desc + horizontal top-picks strip */
+/* Explainer: desc only, no top-picks */
 .lens-explainer{
-  padding-top:.55rem;
+  padding-top:.4rem;
   border-top:1px dashed #d6d3ca;
-  font-size:12px;
-}
-.lens-desc{
-  color:var(--muted);
-  font-style:italic;
-  margin-bottom:.45rem;
+  margin-top:.4rem;
   font-size:11.5px;
 }
-.lens-top-by-div{
-  display:flex;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:6px;
-}
-.lens-top-heading{
-  font-size:10px;
-  font-weight:700;
-  color:#5a5a55;
-  text-transform:uppercase;
-  letter-spacing:.05em;
-  flex-shrink:0;
-  margin-right:2px;
-}
-.lens-div-row{
-  display:inline-flex;
-  align-items:center;
-  gap:4px;
-  background:rgba(255,255,255,0.55);
-  border:1px solid #e5e2d9;
-  border-radius:7px;
-  padding:3px 7px;
-  font-size:11.5px;
-  line-height:1.4;
-  white-space:nowrap;
-}
-.lens-div-tag{
-  display:inline-block;
-  font-size:9.5px;
-  font-weight:800;
-  padding:1px 5px;
-  border-radius:4px;
-  letter-spacing:.04em;
-  flex-shrink:0;
-  text-align:center;
-}
-.lens-div-tag.div-D1{background:#fee2e2;color:#9f1239;}
-.lens-div-tag.div-IVY{background:#fef3c7;color:#854f0b;}
-.lens-div-tag.div-D2{background:#dbeafe;color:#1e40af;}
-.lens-div-tag.div-NAIA{background:#e9d5ff;color:#6b21a8;}
-.lens-div-tag.div-D3{background:#d1fae5;color:#065f46;}
-.lens-div-tag.div-JUCO{background:#f3f4f6;color:#374151;}
-.lens-div-picks{color:var(--text);}
-.lens-div-picks strong{color:var(--indigo);font-weight:600;}
-.lens-arrow{color:#cbcabb;margin:0 1px;font-weight:400;}
-.lens-score-inline{color:var(--muted);font-weight:400;font-size:10.5px;}
+.lens-desc{color:var(--muted);font-style:italic;}
+/* Remove old top-by-div styles (kept for compat) */
+.lens-top-by-div{display:none;}
+.lens-div-tag{display:none;}
 .lens-warn{
-  display:inline-block;
-  background:var(--rose3);
-  color:var(--rose);
-  font-weight:700;
-  font-size:9px;
-  padding:1px 4px;
-  border-radius:4px;
-  margin-left:2px;
-  letter-spacing:.03em;
-  text-transform:uppercase;
+  display:inline-block;background:var(--rose3);color:var(--rose);
+  font-weight:700;font-size:9px;padding:1px 4px;border-radius:4px;
+  margin-left:2px;letter-spacing:.03em;text-transform:uppercase;
 }
 
 /* ── v15: Lens top-3 highlight on cards ─────────────────────────────── */
@@ -428,18 +376,17 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .ucard.lens-top2{border:2px solid #fbbf24 !important;box-shadow:0 0 0 2px #fef3c7, 0 6px 18px rgba(251,191,36,0.12) !important;}
 .ucard.lens-top3{border:2px solid #fcd34d !important;box-shadow:0 0 0 2px #fefce8, 0 4px 14px rgba(252,211,77,0.10) !important;}
 .lens-badge{
-  position:absolute;
-  top:-1px;
-  left:1rem;
+  display:block;
+  width:100%;
   background:#f59e0b;
   color:#451a03;
-  font-size:9.5px;
+  font-size:9px;
   font-weight:800;
-  letter-spacing:.06em;
-  padding:4px 11px;
-  border-radius:0 0 7px 7px;
-  z-index:5;
-  box-shadow:0 2px 4px rgba(245,158,11,0.3);
+  letter-spacing:.07em;
+  padding:4px 12px;
+  text-transform:uppercase;
+  line-height:1;
+  /* NOT position:absolute — sits in normal flow at top of card */
 }
 .ucard.lens-top2 .lens-badge{background:#fbbf24;}
 .ucard.lens-top3 .lens-badge{background:#fcd34d;}
@@ -679,7 +626,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   <div class="compact-header">
     <div class="ch-left">
       <div class="ch-title">US College Soccer Guide <span id="ch-version" style="font-size:.75rem;font-weight:600;opacity:.55;font-style:normal;color:#a5b4fc;vertical-align:middle;margin-left:4px"></span></div>
-      <div class="ch-badge">Platform Sports Management · Sydney, AUS</div>
+      <div class="ch-badge">Scholarship Guide · Sydney, AUS</div>
     </div>
     <div class="ch-stats">
       <div class="ch-stat"><span class="ch-num">24</span><span class="ch-lbl">Schools</span></div>
@@ -696,16 +643,14 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     </div>
   </div>
   <div class="atar-panel">
-    <div class="atar-panel-top">
-      <div class="atar-title">ATAR → US GPA Eligibility Filter</div>
+    <div class="atar-single-row">
+      <div class="atar-title">ATAR → GPA</div>
       <div class="atar-summary">
-        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#059669"></div><span style="color:rgba(255,255,255,.7)" id="atar-count-eligible">— eligible</span></div>
-        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#d97706"></div><span style="color:rgba(255,255,255,.7)" id="atar-count-borderline">— borderline</span></div>
-        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#e11d48"></div><span style="color:rgba(255,255,255,.7)" id="atar-count-below">— below min</span></div>
+        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#059669"></div><span id="atar-count-eligible">— eligible</span></div>
+        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#d97706"></div><span id="atar-count-borderline">— borderline</span></div>
+        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#e11d48"></div><span id="atar-count-below">— below min</span></div>
       </div>
-    </div>
-    <div class="atar-slider-row">
-      <div class="atar-slider-wrap">
+      <div class="atar-slider-wrap" style="flex:1;min-width:0;">
         <input type="range" id="atar-slider" min="40" max="99" value="70" oninput="onAtarSlide()">
         <div class="atar-tick-row">
           <span class="atar-tick">40</span>
@@ -718,10 +663,10 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
         </div>
       </div>
       <div class="atar-readout">
-        <div class="ar-atar" id="atar-display">70</div>
-        <div class="ar-label">ATAR</div>
-        <div class="ar-gpa" id="gpa-display">2.8</div>
-        <div class="ar-gpa-label">US GPA equiv.</div>
+        <span class="ar-atar" id="atar-display">70</span>
+        <span class="ar-sep">→</span>
+        <span class="ar-gpa" id="gpa-display">2.8</span>
+        <span class="ar-gpa-label">GPA</span>
       </div>
     </div>
   </div>
@@ -763,6 +708,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
       <div class="filter-row">
         <div class="fg-label">Special</div>
         <button class="fchip" data-filter="top" data-val="true" onclick="toggleFilter(this)">★ Top Picks</button>
+        <button class="fchip" data-filter="lensdivtop" data-val="true" onclick="toggleFilter(this)">🏅 #1 by Division</button>
         <button class="fchip" data-filter="acualign" data-val="full" onclick="toggleFilter(this)">🎓 Full ACU (14+)</button>
         <button class="fchip" data-filter="acualign" data-val="strong" onclick="toggleFilter(this)">🎓 Strong ACU (10+)</button>
       </div>

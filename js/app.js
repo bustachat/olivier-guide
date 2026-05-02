@@ -110,13 +110,15 @@ function renderLensControls(){
   const container = document.getElementById('lens-controls');
   if(!container) return;
   container.innerHTML =
-    '<div class="lens-label">View schools by</div>'+
-    '<div class="lens-pills">'+
-      LENSES.map(L=>
-        '<button class="lens-pill'+(L.key===currentLens?' active':'')+'" '+
-          'data-lens="'+L.key+'" onclick="applyLens(\''+L.key+'\')" '+
-          'title="'+L.desc.replace(/"/g,'&quot;')+'">'+L.label+'</button>'
-      ).join('')+
+    '<div class="lens-header-row">'+
+      '<span class="lens-label">View by</span>'+
+      '<div class="lens-pills">'+
+        LENSES.map(L=>
+          '<button class="lens-pill'+(L.key===currentLens?' active':'')+'" '+
+            'data-lens="'+L.key+'" onclick="applyLens(\''+L.key+'\')" '+
+            'title="'+L.desc.replace(/"/g,'&quot;')+'">'+L.label+'</button>'
+        ).join('')+
+      '</div>'+
     '</div>'+
     '<div class="lens-explainer" id="lens-explainer">'+
       currentLensExplainer()+
@@ -126,26 +128,7 @@ function renderLensControls(){
 function currentLensExplainer(){
   const L = LENSES.find(x=>x.key===currentLens);
   if(!L) return '';
-  const byDiv = lensRankByDivision(currentLens);
-  const divLabels = {D1:'D1', IVY:'Ivy', D2:'D2', NAIA:'NAIA', D3:'D3', JUCO:'JUCO'};
-  let rows = '';
-  DIVISIONS_ORDER.forEach(div=>{
-    if(!byDiv[div] || byDiv[div].length===0) return;
-    const picks = byDiv[div].map(u=>{
-      const score = (u.lensScores||{})[currentLens] || 0;
-      const warn = u.noVarsity ? ' <span class="lens-warn">no varsity</span>' : '';
-      return '<strong>'+u.name+'</strong> <span class="lens-score-inline">('+score+')</span>'+warn;
-    }).join(' <span class="lens-arrow">→</span> ');
-    rows += '<div class="lens-div-row">'+
-      '<span class="lens-div-tag div-'+div+'">'+divLabels[div]+'</span>'+
-      '<span class="lens-div-picks">'+picks+'</span>'+
-    '</div>';
-  });
-  return '<div class="lens-desc">'+L.desc+'</div>'+
-    '<div class="lens-top-by-div">'+
-      '<div class="lens-top-heading">★ Top picks by division</div>'+
-      rows+
-    '</div>';
+  return '<div class="lens-desc">'+L.desc+'</div>';
 }
 
 function applyLens(lensKey){
@@ -187,6 +170,8 @@ function applyLens(lensKey){
     if(!u) return;
     const divTops = top3IdsByDiv[u.div] || [];
     const pos = divTops.indexOf(id);
+    // Mark #1 per division for the filter
+    card.dataset.lensdivtop = (pos===0) ? 'true' : 'false';
     if(pos >= 0){
       if(pos===0) card.classList.add('lens-top1');
       else if(pos===1) card.classList.add('lens-top2');
@@ -251,6 +236,7 @@ function buildCard(u){
   el.dataset.div=u.div; el.dataset.region=u.region; el.dataset.warm=u.warm; el.dataset.top=u.top;
   el.dataset.city=u.city?'true':'false';
   el.dataset.acualign=u.acuAlign>=14?'full':u.acuAlign>=10?'strong':'partial';
+  el.dataset.lensdivtop='false';
   const gpaBucket=!u.gpa?'low':
     (u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open'))?'none':
     (u.gpa.minEntry.includes('2.0')||u.gpa.minEntry.includes('2.3'))?'low':
@@ -721,6 +707,8 @@ function applyFilters(){
         } else {
           if(![...vals].some(v=>cardVal===v)){ show=false; break; }
         }
+      } else if(type==='lensdivtop'){
+        if(c.dataset.lensdivtop !== 'true'){ show=false; break; }
       } else {
         if(![...vals].some(v=>c.dataset[type]===v)){ show=false; break; }
       }

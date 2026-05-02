@@ -1024,25 +1024,25 @@ function selectFinSchool(id, btnEl){
   if(btnEl) btnEl.classList.add('selected');
   document.getElementById('fin-model-wrapper').style.display='';
   document.getElementById('fin-school-title').textContent = `${finCurrentSchool.full} — Financial Model`;
-  // Enforce school-specific athletic max cap on the slider (some schools can't do 50%)
-  // For need-only schools (Ivy, D3) athletic slider is locked to 0
   const u = finCurrentSchool;
   const slAth = document.getElementById('sl-athletic');
+  const slAcad = document.getElementById('sl-academic');
+
   if(u.fin.aidType === 'need-only' || u.fin.maxAthletic === 0){
     slAth.max = 0; slAth.value = 0; slAth.disabled = true;
     slAth.style.opacity = '0.3';
   } else {
-    // Max athletic is capped at school's real max, but ceiling is 50
     const athCap = Math.round(Math.min(u.fin.maxAthletic, 0.5) * 100);
-    slAth.max = athCap; slAth.value = athCap; slAth.disabled = false;
+    slAth.max = athCap;
+    // Clamp current value to new cap — don't reset if already within range
+    slAth.value = Math.min(parseInt(slAth.value)||25, athCap);
+    slAth.disabled = false;
     slAth.style.opacity = '1';
   }
-  // Academic slider — always goes to 50 (represents up to 50% of cost as academic aid)
-  const slAcad = document.getElementById('sl-academic');
-  slAcad.max = 50; slAcad.value = 0;
-  // Apply default full scenario
-  applyScenario('full', document.querySelector('.sc-tab.active'));
-  document.getElementById('fin-aid-note').innerHTML = `<strong>Aid type at ${finCurrentSchool.name}:</strong> ${u.fin.aidType.toUpperCase()} — ${u.fin.internationalNote}`;
+  // Clamp academic slider too but don't reset it
+  slAcad.value = Math.min(parseInt(slAcad.value)||0, 50);
+
+  document.getElementById('fin-aid-note').innerHTML = `<strong>Aid type at ${u.name}:</strong> ${u.fin.aidType.toUpperCase()} — ${u.fin.internationalNote}`;
   updateFinModel();
 }
 

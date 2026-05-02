@@ -552,11 +552,19 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .coach-card:hover{border-color:var(--border2);box-shadow:0 6px 20px rgba(0,0,0,.07);}
 .coach-card.top-coach{border-color:var(--indigo2);}
 .coach-card-head{padding:1.1rem;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:flex-start;position:relative;}
-/* ── Score strip tooltip — rendered via JS to escape overflow:hidden ── */
-.ss-item{position:relative;cursor:help;}
-.ss-item[data-tip] .ss-lbl::after{content:' ⓘ';font-size:9px;opacity:.5;}
+/* ── Score strip tooltip — click to toggle ── */
+.ss-item{position:relative;cursor:pointer;}
+.ss-item[data-tip] .ss-lbl::after{
+  content:' ⓘ';
+  font-size:9px;
+  color:var(--border2);
+  transition:color .15s;
+}
+.ss-item[data-tip]:hover .ss-lbl::after{color:var(--indigo);}
+.ss-item[data-tip].tip-active .ss-lbl::after{color:var(--indigo);}
+.ss-item[data-tip].tip-active .ss-lbl{color:var(--indigo);}
 #score-tooltip{
-  position:fixed;
+  position:absolute;
   z-index:9999;
   background:var(--navy);
   color:rgba(255,255,255,.92);
@@ -882,8 +890,8 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
       <button class="sc-tab" onclick="applyScenario('ath25',this)">25% Athletic</button>
       <button class="sc-tab" onclick="applyScenario('ath50',this)">50% Athletic Only</button>
       <button class="sc-tab" onclick="applyScenario('acad50',this)">50% Academic Only</button>
-      <button class="sc-tab active" onclick="applyScenario('full',this)">💎 Full Ride (50+50)</button>
-      <button class="sc-tab" onclick="applyScenario('partial',this)">⚖️ Partial (25+25)</button>
+      <button class="sc-tab" onclick="applyScenario('full',this)">💎 Full Ride (50+50)</button>
+      <button class="sc-tab active" onclick="applyScenario('partial',this)">⚖️ Partial (25+25)</button>
     </div>
     <div class="fin-model-area">
       <div class="fin-controls">
@@ -1145,32 +1153,42 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 <script src="js/scores.js"></script>
 <script src="js/app.js"></script>
 <script>
-// Body-level tooltip for score strip — escapes overflow:hidden on cards
+// Click-to-toggle tooltip for score strip items
 (function(){
   const tip = document.getElementById('score-tooltip');
-  document.addEventListener('mouseover', function(e){
-    const el = e.target.closest('[data-tip]');
-    if(!el) return;
+  let activeEl = null;
+
+  function showTip(el){
     tip.textContent = el.dataset.tip;
     tip.style.display = 'block';
-  });
-  document.addEventListener('mousemove', function(e){
-    if(tip.style.display === 'none') return;
-    const x = e.clientX, y = e.clientY;
+    const rect = el.getBoundingClientRect();
     const tw = tip.offsetWidth, th = tip.offsetHeight;
-    const vw = window.innerWidth, vh = window.innerHeight;
-    // Position above cursor, shift left if too close to right edge
-    let left = x - tw/2;
-    let top  = y - th - 12;
+    const vw = window.innerWidth;
+    let left = rect.left + rect.width/2 - tw/2;
+    let top  = rect.top + window.scrollY - th - 10;
     if(left < 8) left = 8;
     if(left + tw > vw - 8) left = vw - tw - 8;
-    if(top < 8) top = y + 20; // flip below if not enough room above
+    if(top - window.scrollY < 8) top = rect.bottom + window.scrollY + 10;
     tip.style.left = left + 'px';
     tip.style.top  = top  + 'px';
-  });
-  document.addEventListener('mouseout', function(e){
+    el.classList.add('tip-active');
+    activeEl = el;
+  }
+
+  function hideTip(){
+    tip.style.display = 'none';
+    if(activeEl){ activeEl.classList.remove('tip-active'); activeEl = null; }
+  }
+
+  document.addEventListener('click', function(e){
     const el = e.target.closest('[data-tip]');
-    if(el) tip.style.display = 'none';
+    if(el){
+      e.stopPropagation();
+      if(activeEl === el){ hideTip(); }
+      else { hideTip(); showTip(el); }
+    } else {
+      hideTip();
+    }
   });
 })();
 </script>

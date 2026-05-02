@@ -1010,9 +1010,7 @@ function renderFinSchoolSelector(){
     if(!u.fin) return;
     const btn = document.createElement('button');
     btn.className = 'fin-school-btn' + (finCurrentSchool&&finCurrentSchool.id===u.id?' selected':'');
-    // Preview at 50% athletic only (one slider half way)
-    const costNet = Math.round(u.fin.costNum * 0.5);
-    btn.innerHTML = `<div class="fsb-name">${u.name}</div><div class="fsb-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span> ~${fmt(costNet)}/yr @ 50% ath</div>`;
+    btn.innerHTML = `<div class="fsb-name">${u.name}</div><div class="fsb-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span> ${fmt(u.fin.costNum)}/yr full cost</div>`;
     btn.onclick = ()=>selectFinSchool(u.id, btn);
     container.appendChild(btn);
   });
@@ -1028,19 +1026,19 @@ function selectFinSchool(id, btnEl){
   const slAth = document.getElementById('sl-athletic');
   const slAcad = document.getElementById('sl-academic');
 
+  const isFirstSelection = !document.getElementById('fin-model-wrapper').style.display || document.getElementById('fin-model-wrapper').style.display === 'none';
+
   if(u.fin.aidType === 'need-only' || u.fin.maxAthletic === 0){
     slAth.max = 0; slAth.value = 0; slAth.disabled = true;
     slAth.style.opacity = '0.3';
   } else {
     const athCap = Math.round(Math.min(u.fin.maxAthletic, 0.5) * 100);
     slAth.max = athCap;
-    // Clamp current value to new cap — don't reset if already within range
-    slAth.value = Math.min(parseInt(slAth.value)||25, athCap);
+    slAth.value = isFirstSelection ? 0 : Math.min(parseInt(slAth.value)||0, athCap);
     slAth.disabled = false;
     slAth.style.opacity = '1';
   }
-  // Clamp academic slider too but don't reset it
-  slAcad.value = Math.min(parseInt(slAcad.value)||0, 50);
+  slAcad.value = isFirstSelection ? 0 : Math.min(parseInt(slAcad.value)||0, 50);
 
   document.getElementById('fin-aid-note').innerHTML = `<strong>Aid type at ${u.name}:</strong> ${u.fin.aidType.toUpperCase()} — ${u.fin.internationalNote}`;
   updateFinModel();

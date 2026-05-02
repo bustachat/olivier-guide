@@ -4,6 +4,8 @@
 // v15: Adds lens system + 2027 Minutes Outlook tab.
 // ═══════════════════════════════════════════════════════════════════════
 
+const APP_VERSION = 'v15';
+
 let unis = [];
 let conferences = [];
 let coachData = [];
@@ -39,6 +41,9 @@ async function loadData() {
 }
 
 function initApp() {
+  // Inject version everywhere it appears
+  document.querySelectorAll('#ch-version').forEach(el => el.textContent = APP_VERSION);
+  document.title = 'Olivier — US College Soccer Guide ' + APP_VERSION;
   renderCards();
   renderComparePage();
   renderContacts();
@@ -51,7 +56,14 @@ function initApp() {
   applyLens(currentLens); // ensure initial sort+highlight
 }
 
-// ═══ v15: Lens system ════════════════════════════════════════════════════════
+// Division show/hide toggle
+function toggleDivSection(btn){
+  const section = btn.closest('.conf-section');
+  const collapsed = section.classList.toggle('div-collapsed');
+  btn.textContent = collapsed ? 'Show' : 'Hide';
+}
+
+// ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
   {key:'overall',   label:'Best Overall',     desc:"Olivier's existing fit score (climate, lifestyle, exercise science, soccer level, PT pathway combined)."},
   {key:'soccer',    label:'Soccer-First',     desc:'Weights development scores (60%), titles & MLS pipeline (30%), and division strength (10%).'},
@@ -226,7 +238,7 @@ function renderCards(){
     const secUnis=unis.filter(u=>u.div===sec.div);
     const el=document.createElement('div');
     el.className='conf-section';el.dataset.div=sec.div;
-    el.innerHTML=`<div class="section-head"><h2>${sec.label}</h2><span class="dbadge d-${sec.div}">${sec.div}</span></div><div class="section-intro">${sec.intro}</div><div class="cards-grid" id="grid-${sec.div}"></div>`;
+    el.innerHTML=`<div class="section-head"><h2>${sec.label}</h2><span class="dbadge d-${sec.div}">${sec.div}</span><button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Hide/show this division">Hide</button></div><div class="section-intro">${sec.intro}</div><div class="cards-grid" id="grid-${sec.div}"></div>`;
     container.appendChild(el);
     const grid=el.querySelector(`#grid-${sec.div}`);
     secUnis.forEach(u=>grid.appendChild(buildCard(u)));

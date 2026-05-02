@@ -65,6 +65,7 @@ let currentLens = 'overall';
 
 function lensRank(lensKey){
   // Returns array of school IDs sorted by lens score desc, fitOlivier as tiebreaker
+  // Used for the overall "across-all-divisions" view in the explainer
   return [...unis].sort((a,b)=>{
     const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
     const sb = (b.lensScores && b.lensScores[lensKey]) || 0;
@@ -73,6 +74,24 @@ function lensRank(lensKey){
     const fb = b.fitOlivier || 0;
     return fb - fa;
   }).map(u=>u.id);
+}
+
+// v15: per-division ranking - returns {divKey: [topId1, topId2, topId3], ...}
+const DIVISIONS_ORDER = ['D1','IVY','D2','NAIA','D3','JUCO'];
+function lensRankByDivision(lensKey){
+  const out = {};
+  DIVISIONS_ORDER.forEach(div=>{
+    const inDiv = unis.filter(u=>u.div===div);
+    if(inDiv.length===0) return;
+    const sorted = inDiv.sort((a,b)=>{
+      const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
+      const sb = (b.lensScores && b.lensScores[lensKey]) || 0;
+      if(sb !== sa) return sb - sa;
+      return (b.fitOlivier || 0) - (a.fitOlivier || 0);
+    });
+    out[div] = sorted.slice(0, Math.min(3, sorted.length));
+  });
+  return out;
 }
 
 function renderLensControls(){
@@ -95,16 +114,26 @@ function renderLensControls(){
 function currentLensExplainer(){
   const L = LENSES.find(x=>x.key===currentLens);
   if(!L) return '';
-  const top3 = lensRank(currentLens).slice(0,3);
-  const top3Names = top3.map(id=>{
-    const u = unis.find(x=>x.id===id);
-    if(!u) return '';
-    const score = (u.lensScores||{})[currentLens] || 0;
-    const warn = u.noVarsity ? ' <span class="lens-warn">⚠ no varsity</span>' : '';
-    return '<strong>'+u.name+'</strong> ('+score+')'+warn;
-  }).join(' · ');
-  return '<span class="lens-desc">'+L.desc+'</span>'+
-    '<div class="lens-top3">Top 3: '+top3Names+'</div>';
+  const byDiv = lensRankByDivision(currentLens);
+  const divLabels = {D1:'D1', IVY:'Ivy', D2:'D2', NAIA:'NAIA', D3:'D3', JUCO:'JUCO'};
+  let rows = '';
+  DIVISIONS_ORDER.forEach(div=>{
+    if(!byDiv[div] || byDiv[div].length===0) return;
+    const picks = byDiv[div].map(u=>{
+      const score = (u.lensScores||{})[currentLens] || 0;
+      const warn = u.noVarsity ? ' <span class="lens-warn">no varsity</span>' : '';
+      return '<strong>'+u.name+'</strong> <span class="lens-score-inline">('+score+')</span>'+warn;
+    }).join(' <span class="lens-arrow">→</span> ');
+    rows += '<div class="lens-div-row">'+
+      '<span class="lens-div-tag div-'+div+'">'+divLabels[div]+'</span>'+
+      '<span class="lens-div-picks">'+picks+'</span>'+
+    '</div>';
+  });
+  return '<div class="lens-desc">'+L.desc+'</div>'+
+    '<div class="lens-top-by-div">'+
+      '<div class="lens-top-heading">★ Top picks by division</div>'+
+      rows+
+    '</div>';
 }
 
 function applyLens(lensKey){
@@ -116,8 +145,15 @@ function applyLens(lensKey){
   // Update explainer
   const exp = document.getElementById('lens-explainer');
   if(exp) exp.innerHTML = currentLensExplainer();
-  // Re-rank cards within each section, and apply top-3 highlight
-  const top3Ids = new Set(lensRank(lensKey).slice(0,3));
+  
+  // Per-division ranking — get top 3 IDs per division
+  const byDiv = lensRankByDivision(lensKey);
+  const top3IdsByDiv = {};
+  Object.keys(byDiv).forEach(div=>{
+    top3IdsByDiv[div] = byDiv[div].map(u=>u.id);
+  });
+  
+  // Re-rank cards within each grid section (each section is one division)
   document.querySelectorAll('.cards-grid').forEach(grid=>{
     const cards = [...grid.children];
     cards.sort((a,b)=>{
@@ -126,22 +162,24 @@ function applyLens(lensKey){
       const sa = (ua && ua.lensScores && ua.lensScores[lensKey]) || 0;
       const sb = (ub && ub.lensScores && ub.lensScores[lensKey]) || 0;
       if(sb !== sa) return sb - sa;
-      return (ub && ub.fitOlivier || 0) - (ua && ua.fitOlivier || 0);
+      return ((ub && ub.fitOlivier) || 0) - ((ua && ua.fitOlivier) || 0);
     });
     cards.forEach(c=>grid.appendChild(c));
   });
-  // Highlight top 3 across all visible cards
+  
+  // Highlight top 3 within each division
   document.querySelectorAll('.ucard').forEach(card=>{
     const id = card.id.replace('card-','');
     card.classList.remove('lens-top1','lens-top2','lens-top3');
-    if(top3Ids.has(id)){
-      const u = unis.find(x=>x.id===id);
-      const ranked = lensRank(lensKey);
-      const pos = ranked.indexOf(id);
+    const u = unis.find(x=>x.id===id);
+    if(!u) return;
+    const divTops = top3IdsByDiv[u.div] || [];
+    const pos = divTops.indexOf(id);
+    if(pos >= 0){
       if(pos===0) card.classList.add('lens-top1');
       else if(pos===1) card.classList.add('lens-top2');
       else if(pos===2) card.classList.add('lens-top3');
-      // Add lens badge (replaces previous if any)
+      // Add lens badge
       let badge = card.querySelector('.lens-badge');
       if(!badge){
         badge = document.createElement('div');
@@ -149,8 +187,8 @@ function applyLens(lensKey){
         card.insertBefore(badge, card.firstChild);
       }
       const lensLabel = LENSES.find(L=>L.key===lensKey).label;
-      const warn = u && u.noVarsity ? ' ⚠' : '';
-      badge.textContent = '★ #'+(pos+1)+' '+lensLabel.toUpperCase()+warn;
+      const warn = u.noVarsity ? ' ⚠' : '';
+      badge.textContent = '★ #'+(pos+1)+' '+u.div+' · '+lensLabel.toUpperCase()+warn;
     } else {
       const badge = card.querySelector('.lens-badge');
       if(badge) badge.remove();

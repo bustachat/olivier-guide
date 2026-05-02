@@ -1243,6 +1243,7 @@ function renderMinutesOutlook(){
   
   html += '<div class="mo-cards-grid">';
   available.forEach((u,idx)=>{
+    const mo = u.minutesOutlook || {};
     const traj = mo.trajectory;
     const score = (u.lensScores||{}).minutes || 0;
     const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';

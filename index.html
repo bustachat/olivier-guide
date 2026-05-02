@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Olivier — US College Soccer & Exercise Science Scholarship Guide v14</title>
+<title>Olivier — US College Soccer & Exercise Science Scholarship Guide v15</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -285,6 +285,167 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .q-card{font-size:13px;color:var(--muted);padding:.9rem 1rem .9rem 1.1rem;background:var(--surface);border-radius:9px;border:1px solid var(--border);border-left:3px solid var(--indigo2);line-height:1.7;}
 .ivy-warning{background:var(--gold3);border:1px solid #fde68a;border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--gold);font-weight:600;margin-bottom:.75rem;}
 .no-varsity-warning{background:var(--rose3);border:1.5px solid var(--rose);border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--rose);font-weight:700;margin-bottom:.75rem;line-height:1.5;}
+
+/* ── v15: Lens selector ─────────────────────────────────────────────── */
+.lens-controls{
+  background:linear-gradient(135deg,#fafaf8 0%,#f3f1ec 100%);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.1rem 1.4rem 1rem;
+  margin-bottom:1.75rem;
+  box-shadow:0 1px 2px rgba(0,0,0,0.02), 0 4px 12px rgba(0,0,0,0.025);
+}
+.lens-label{
+  font-size:10.5px;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.09em;
+  font-weight:700;
+  margin-bottom:.6rem;
+  display:flex;
+  align-items:center;
+  gap:.4rem;
+}
+.lens-label::before{
+  content:'';
+  display:inline-block;
+  width:14px;
+  height:2px;
+  background:var(--indigo);
+  border-radius:2px;
+}
+.lens-pills{
+  display:inline-flex;
+  flex-wrap:wrap;
+  gap:0;
+  margin-bottom:.85rem;
+  padding:3px;
+  background:#ebe9e2;
+  border-radius:10px;
+  box-shadow:inset 0 1px 2px rgba(0,0,0,0.04);
+}
+.lens-pill{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  padding:7px 14px;
+  font-size:12.5px;
+  font-family:inherit;
+  background:transparent;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  color:#5a5a55;
+  font-weight:600;
+  letter-spacing:0;
+  transition:all .15s ease;
+  margin:0;
+  white-space:nowrap;
+}
+.lens-pill:hover{
+  background:rgba(255,255,255,0.7);
+  color:var(--text);
+}
+.lens-pill.active{
+  background:#fff;
+  color:var(--indigo);
+  box-shadow:0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+}
+.lens-pill.active:hover{
+  background:#fff;
+}
+.lens-explainer{
+  padding-top:.75rem;
+  border-top:1px dashed #d6d3ca;
+  font-size:12.5px;
+  line-height:1.55;
+}
+.lens-desc{
+  color:var(--muted);
+  font-style:italic;
+}
+.lens-top3{
+  margin-top:.45rem;
+  color:var(--text);
+  font-size:12.5px;
+}
+.lens-top3::before{
+  content:'★ ';
+  color:#f59e0b;
+  margin-right:2px;
+}
+.lens-top3 strong{
+  color:var(--indigo);
+  font-weight:600;
+}
+.lens-warn{
+  display:inline-block;
+  background:var(--rose3);
+  color:var(--rose);
+  font-weight:700;
+  font-size:10px;
+  padding:1px 6px;
+  border-radius:4px;
+  margin-left:3px;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+}
+
+/* ── v15: Lens top-3 highlight on cards ─────────────────────────────── */
+.ucard{position:relative;}
+.ucard.lens-top1{border:2px solid #f59e0b !important;box-shadow:0 0 0 3px #fef3c7, 0 8px 24px rgba(245,158,11,0.15) !important;}
+.ucard.lens-top2{border:2px solid #fbbf24 !important;box-shadow:0 0 0 2px #fef3c7, 0 6px 18px rgba(251,191,36,0.12) !important;}
+.ucard.lens-top3{border:2px solid #fcd34d !important;box-shadow:0 0 0 2px #fefce8, 0 4px 14px rgba(252,211,77,0.10) !important;}
+.lens-badge{
+  position:absolute;
+  top:-1px;
+  left:1rem;
+  background:#f59e0b;
+  color:#451a03;
+  font-size:9.5px;
+  font-weight:800;
+  letter-spacing:.06em;
+  padding:4px 11px;
+  border-radius:0 0 7px 7px;
+  z-index:5;
+  box-shadow:0 2px 4px rgba(245,158,11,0.3);
+}
+.ucard.lens-top2 .lens-badge{background:#fbbf24;}
+.ucard.lens-top3 .lens-badge{background:#fcd34d;}
+
+/* ── v15: Minutes Outlook tab ───────────────────────────────────────── */
+.mo-intro{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:1.5rem;}
+.mo-intro h2{margin-bottom:.5rem;}
+.mo-key{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.5rem;margin-top:.75rem;font-size:12px;}
+.mo-key-item{padding:.4rem .6rem;background:var(--bg);border-radius:6px;color:var(--muted);}
+.mo-key-item strong{color:var(--text);}
+.mo-cards-grid{display:grid;grid-template-columns:1fr;gap:1rem;}
+.mo-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;}
+.mo-card.mo-top{border:2px solid #f59e0b;box-shadow:0 0 0 1px #fef3c7;}
+.mo-card.mo-unavailable{opacity:.55;background:var(--rose3);border-color:var(--rose);}
+.mo-card-head{display:flex;align-items:center;gap:10px;margin-bottom:.75rem;flex-wrap:wrap;}
+.mo-rank{background:#f59e0b;color:#451a03;font-weight:800;font-size:11px;padding:3px 8px;border-radius:6px;}
+.mo-school-name{font-size:15px;font-weight:600;color:var(--text);flex:1;min-width:160px;}
+.mo-score{font-size:24px;font-weight:700;}
+.mo-trajectory{display:flex;flex-direction:column;gap:6px;margin-bottom:.75rem;}
+.mo-traj-row{display:grid;grid-template-columns:130px 1fr 160px;gap:10px;align-items:center;font-size:12px;}
+.mo-traj-year{color:var(--muted);font-weight:500;}
+.mo-traj-bar{background:var(--bg);height:10px;border-radius:5px;overflow:hidden;}
+.mo-traj-fill{height:100%;border-radius:5px;}
+.mo-traj-label{color:var(--text);font-weight:500;}
+.mo-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:.6rem;background:var(--bg);border-radius:8px;margin-bottom:.5rem;}
+.mo-stat{text-align:center;}
+.mo-stat-num{font-size:18px;font-weight:700;color:var(--text);}
+.mo-stat-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;}
+.mo-names{font-size:11.5px;color:var(--muted);padding:.5rem .6rem;background:var(--bg);border-radius:6px;margin-top:.4rem;line-height:1.5;}
+.mo-names strong{color:var(--text);}
+.mo-names-warn{background:var(--rose3);color:var(--rose);}
+.mo-names-warn strong{color:var(--rose);}
+.mo-footer{margin-top:1rem;padding:1rem;background:var(--bg);border-radius:8px;}
+@media (max-width:640px){
+  .mo-traj-row{grid-template-columns:90px 1fr 120px;}
+  .mo-stats{grid-template-columns:repeat(2,1fr);}
+}
 @media(max-width:600px){.cards-grid{grid-template-columns:1fr;}.detail-grid{grid-template-columns:1fr;}.page{padding:1rem;}.hero{padding:2rem 1.25rem 1.75rem;}.hero-stats{gap:1.5rem;}}
 /* ── Facilities Tab ── */
 .fac-rating-badge{display:inline-block;font-size:11px;font-weight:800;padding:4px 12px;border-radius:6px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem;}
@@ -459,9 +620,10 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 </head>
 <body>
 <nav class="top-nav">
-  <div class="nav-brand">⚽ <span>Olivier's</span> Guide v14</div>
+  <div class="nav-brand">⚽ <span>Olivier's</span> Guide v6</div>
   <button class="nav-tab active" onclick="showPage('explore',this)">Explore Schools</button>
   <button class="nav-tab" onclick="showPage('compare',this)">Compare <span class="compare-count" id="ccount">0</span></button>
+  <button class="nav-tab" onclick="showPage('minutes',this)">⏱ Minutes Outlook</button>
   <button class="nav-tab" onclick="showPage('pipeline',this)">Pro Pipeline</button>
   <button class="nav-tab" onclick="showPage('alignment',this)">ACU Alignment</button>
   <button class="nav-tab" onclick="showPage('pathways',this)">Pathways</button>
@@ -486,7 +648,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   <div class="compact-header">
     <div class="ch-left">
       <div class="ch-title">US College Soccer <span>&</span> Exercise Science Guide</div>
-      <div class="ch-badge">Platform Sports Management · Sydney, AUS · v14</div>
+      <div class="ch-badge">Platform Sports Management · Sydney, AUS · v15</div>
     </div>
     <div class="ch-stats">
       <div class="ch-stat"><span class="ch-num">24</span><span class="ch-lbl">Schools</span></div>
@@ -582,6 +744,11 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 <div class="page" id="page-compare">
   <div style="margin-bottom:1.5rem;"><div class="section-head"><h2>Side-by-Side Comparison</h2></div><p style="font-size:13px;color:var(--muted)">Select up to 4 schools from Explore and click "+ Compare".</p></div>
   <div id="compare-content"><div class="compare-empty"><h3>No schools selected yet</h3><p>Go to <strong>Explore Schools</strong> and click "+ Compare".</p></div></div>
+</div>
+
+<!-- MINUTES OUTLOOK PAGE -->
+<div class="page" id="page-minutes">
+  <!-- populated by renderMinutesOutlook() in app.js -->
 </div>
 
 <!-- PRO PIPELINE PAGE -->

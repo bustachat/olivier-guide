@@ -250,23 +250,46 @@ function renderCards(){
   const container=document.getElementById('cards-container');
   container.innerHTML='';
   renderLensControls();
-  const sections=[
-    {div:'D1',label:'NCAA Division I',intro:'Highest competition. Elite soccer, strong kinesiology programs, competitive scholarships. Now includes FIU, SMU, College of Charleston, and the Ivy League programs.'},
-    {div:'IVY',label:'Ivy League (D1)',intro:'No athletic scholarships — need-based financial aid only. Princeton won the 2024 AND 2025 Ivy League Tournaments. GPA 2.8 is a significant challenge for admission. Degrees are NOT exercise science aligned.'},
-    {div:'D2',label:'NCAA Division II',intro:'Best overall balance. Playing time from year 1, genuine scholarships, strong exercise science programs. PBA is ranked #2 nationally in 2025 with an explicit Pre-PT degree title. Same SSC conference as Lynn, Barry, Nova Southeastern.'},
-    {div:'NAIA',label:'NAIA',intro:'Generous scholarships, smaller campuses, personal development. OCU has specific Australian player connections.'},
-    {div:'D3',label:'NCAA Division III',intro:'No athletic scholarships. Academic focus. Chapman has a mandatory Pre-PT Prep course — best D3 option.'},
-    {div:'JUCO',label:'JUCO / Junior College',intro:'2-year pathway. Santa Monica College → UCLA is the best transfer pipeline in California.'}
+
+  // Group by conference key — prevents the 71-card D1 wall
+  const CONF_SECTIONS=[
+    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'Elite D1 soccer. 4 fully-profiled schools (Virginia, Wake Forest, SMU, FIU) plus 11 listed programs. Virginia has 7 NCAA titles. SMU won 2025 ACC Tournament. Clemson and Notre Dame are perennial powers.'},
+    {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'#1 and #2 all-time MLS producers. UCLA on the West Coast, Indiana in the Midwest. Penn State, Michigan, Michigan State all elite programs. Most competitive conference for roster spots.'},
+    {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference. St. John\'s is the fully-profiled school. Georgetown and Creighton are perennial top-10 programs. Strong clinical network in major cities.'},
+    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'USF fully profiled. FIU joins AAC in 2026. Most accessible D1 conference for internationals with strong warm-climate schools. Navy and Army offer full-ride opportunities.'},
+    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1. UCSB fully profiled — Manu Duah went #1 overall in 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine all competitive. Pacific lifestyle matches Sydney.'},
+    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston fully profiled with Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern round out a competitive conference.'},
+    {key:'other',    label:'D2 · NAIA · D3 · JUCO',              tier:'Other Divisions',intro:'Best overall value tier. PBA (#2 nationally 2025) and Lynn are top shortlist schools. Barry has 4 D2 NCAA titles. Oklahoma City has direct Australian connections. JUCO schools are transfer pathways.'},
   ];
-  sections.forEach(sec=>{
-    const secUnis=unis.filter(u=>u.div===sec.div);
+
+  // Also include Ivy League under acc or as standalone — they are in other.json
+  CONF_SECTIONS.forEach(sec=>{
+    const secUnis=unis.filter(u=>(u.confKey||'other')===sec.key);
+    if(!secUnis.length) return;
+    const fullCount=secUnis.filter(u=>u.profileDepth==='full').length;
+    const listedCount=secUnis.filter(u=>u.profileDepth==='listed').length;
+    const countNote=listedCount>0?` <span style="font-size:10px;color:var(--hint);font-weight:500">${fullCount} full profile · ${listedCount} listed</span>`:'';
     const el=document.createElement('div');
-    el.className='conf-section div-collapsed';el.dataset.div=sec.div;
-    el.innerHTML=`<div class="section-head"><h2>${sec.label}</h2><span class="dbadge d-${sec.div}">${sec.div}</span><button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Show/hide this division">Show</button></div><div class="section-intro">${sec.intro}</div><div class="cards-grid" id="grid-${sec.div}"></div>`;
+    el.className='conf-section div-collapsed';
+    el.dataset.div=secUnis[0]?.div||'D1';
+    el.dataset.confkey=sec.key;
+    el.innerHTML=
+      `<div class="section-head">` +
+        `<h2>${sec.label}${countNote}</h2>` +
+        `<span class="dbadge d-${secUnis[0]?.div||'D1'}" style="font-size:9px">${sec.tier}</span>` +
+        `<button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Show/hide this conference">Show</button>` +
+      `</div>` +
+      `<div class="section-intro">${sec.intro}</div>` +
+      `<div class="cards-grid" id="grid-${sec.key}"></div>`;
     container.appendChild(el);
-    const grid=el.querySelector(`#grid-${sec.div}`);
+    const grid=el.querySelector(`#grid-${sec.key}`);
     secUnis.forEach(u=>grid.appendChild(buildCard(u)));
   });
+
+  // Update the filter summary count now that all cards are rendered
+  const totalCards = document.querySelectorAll('#cards-container .ucard').length;
+  const summaryEl = document.getElementById('filter-active-summary');
+  if(summaryEl) summaryEl.innerHTML = 'Showing all <strong>'+totalCards+'</strong> schools';
 }
 
 function buildCard(u){
@@ -284,7 +307,7 @@ function buildCard(u){
     u.gpa.minEntry.includes('2.5')?'mid':
     (u.gpa.minEntry.includes('3.0')||u.gpa.minEntry.includes('3.5')||u.gpa.minEntry.includes('3.9'))?'high':'low';
   el.dataset.gpamin=gpaBucket;
-  const facRating=u.facilityDetails?u.facilityDetails.rating.toLowerCase().replace(' ',''):'solid';
+  const facRating=u.facilityDetails?u.facilityDetails.rating.toLowerCase().replace(/\s+/g,''):'solid';
   el.dataset.facrating=facRating;
   el.id='card-'+u.id;
 
@@ -312,10 +335,10 @@ function buildCard(u){
 
   const facEmoji=facRating==='elite'?'🏆':facRating==='excellent'?'⭐':facRating==='verygood'?'✅':facRating==='good'?'👍':'📋';
   const facLabel=u.facilityDetails?u.facilityDetails.rating:'—';
-  const standingHtml=u.confRecord.slice(0,5).map(function(r){
+  const standingHtml=(u.confRecord||[]).slice(0,5).map(function(r){
     return '<span class="sy '+posColor(r.pos)+'" title="'+r.yr+': '+r.note+'" style="font-size:9px">'+r.yr.toString().slice(2)+': '+r.pos.split(' ')[0]+'</span>';
   }).join('');
-  const titlesNote=u.titles.length>0?'<span style="margin-left:4px;font-size:9px;color:var(--gold);font-weight:700">🏆 '+u.titles.length+' title'+(u.titles.length>1?'s':'')+'</span>':'';
+  const titlesNote=(u.titles||[]).length>0?'<span style="margin-left:4px;font-size:9px;color:var(--gold);font-weight:700">🏆 '+u.titles.length+' title'+(u.titles.length>1?'s':'')+'</span>':'';
 
   const alignBg=alignColor(u.acuAlign)==='var(--emerald)'?'var(--emerald3)':alignColor(u.acuAlign)==='var(--sky)'?'var(--sky3)':'var(--amber3)';
 
@@ -354,8 +377,10 @@ function buildCard(u){
       '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+u.cost+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+u.aid+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePT.split('—')[0].trim()+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">MLS Picks (5yr)</div><div class="ig2-val">'+u.proPlayers.mlsPicks5yr+' picks</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Facilities</div><div class="ig2-val"><span class="fac-card-badge fac-'+facRating+'">'+facEmoji+' '+facLabel+'</span></div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">MLS Picks (5yr)</div><div class="ig2-val">'+(u.proPlayers&&u.proPlayers.mlsPicks5yr!==undefined?u.proPlayers.mlsPicks5yr+' picks':'—')+'</div></div>'+
+      (isListed
+        ? '<div class="ig2-item"><div class="ig2-label">Profile</div><div class="ig2-val" style="color:var(--hint);font-size:10px">Listed — full data pending</div></div>'
+        : '<div class="ig2-item"><div class="ig2-label">Facilities</div><div class="ig2-val"><span class="fac-card-badge fac-'+facRating+'">'+facEmoji+' '+facLabel+'</span></div></div>')+
       '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px">'+u.soccerLevel.split('—')[0].trim()+'</div></div>'+
     '</div>'+
     gpaHtml+
@@ -1205,40 +1230,94 @@ function updateFinModel(){
 function renderFinComparisonBars(){
   const container = document.getElementById('fin-comparison-bars');
   const fx = 1.55;
-  const athPct = 0.5; // 50% scenario
-  const extras = 7500; // standard extras bundle
+  const athPct = 0.5;
+  const extras = 7500;
 
+  // Full-profile schools only — listed schools don't have full fin data
   const data = unis
-    .filter(u=>u.fin)
-    .map(u=>({
+    .filter(u => u.fin && u.profileDepth !== 'listed' && u.fin.costNum > 0)
+    .map(u => ({
       u,
-      net: Math.max(0, u.fin.costNum*(1-athPct)) + extras
+      net: Math.max(0, u.fin.costNum * (1 - athPct)) + extras,
+      cost: u.fin.costNum
     }))
-    .sort((a,b)=>a.net-b.net);
+    .sort((a,b) => a.net - b.net);
+
+  if(!data.length){ container.innerHTML=''; return; }
 
   const maxNet = data[data.length-1].net;
 
-  let html = '<div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.25rem;overflow-x:auto">';
-  data.forEach(({u,net})=>{
-    const pct = Math.round((net/maxNet)*100);
-    const barColor = net<15000?'var(--emerald)':net<30000?'var(--sky)':net<50000?'var(--amber)':'var(--rose)';
-    html+=`<div class="fcbar-row" onclick="selectSchoolFromBar('${u.id}')" style="cursor:pointer">
-      <div class="fcbar-name" title="${u.full}">${u.name}</div>
-      <span class="fcbar-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span></span>
-      <div class="fcbar-track">
-        <div class="fcbar-fill" style="width:${pct}%;background:${barColor};min-width:${net>0?'40px':'0'}">${net>12000?fmt(net):''}</div>
-        ${net===0?'<span style="position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:700;color:var(--emerald)">FULL RIDE</span>':''}
-      </div>
-      <div class="fcbar-amt">${fmtAUD(net,fx)}<br><span style="font-size:9px;color:var(--hint)">AUD/yr</span></div>
-    </div>`;
+  // Conference average lines
+  const confAvgs = {};
+  ['acc','big-ten','big-east','aac','big-west','caa','other'].forEach(ck=>{
+    const inConf = data.filter(d=>d.u.confKey===ck);
+    if(inConf.length) confAvgs[ck] = Math.round(inConf.reduce((s,d)=>s+d.net,0)/inConf.length);
   });
-  html += '<div style="font-size:11px;color:var(--hint);margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border)">Assumes 50% athletic scholarship + $7,500 USD living/personal costs. Sorted lowest to highest cost. Click any bar to model in detail above.</div></div>';
+
+  // Cost brackets
+  const brackets = [
+    { label:'Under $30k', min:0,     max:29999,  color:'var(--emerald)', bg:'var(--emerald3)' },
+    { label:'$30–50k',    min:30000, max:49999,  color:'var(--sky)',     bg:'var(--sky3)'     },
+    { label:'$50–70k',    min:50000, max:69999,  color:'var(--amber)',   bg:'var(--amber3)'   },
+    { label:'$70k+',      min:70000, max:Infinity,color:'var(--rose)',   bg:'var(--rose3)'    },
+  ];
+
+  let html = '<div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.25rem">';
+
+  brackets.forEach(b=>{
+    const inBracket = data.filter(d=>d.cost>=b.min&&d.cost<=b.max);
+    if(!inBracket.length) return;
+
+    // Conference average for this bracket's schools
+    const bracketConfKeys=[...new Set(inBracket.map(d=>d.u.confKey))];
+    const confAvgLine = bracketConfKeys.length>1
+      ? Math.round(inBracket.reduce((s,d)=>s+d.net,0)/inBracket.length)
+      : null;
+
+    html+=`<div style="margin-bottom:1.5rem">
+      <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem">
+        <span style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;background:${b.bg};color:${b.color};padding:2px 10px;border-radius:4px">${b.label}</span>
+        <span style="font-size:11px;color:var(--hint)">${inBracket.length} school${inBracket.length!==1?'s':''}</span>
+        ${confAvgLine?`<span style="font-size:10px;color:var(--muted);margin-left:auto">Bracket avg: <strong style="color:${b.color}">${fmt(confAvgLine)}</strong>/yr net</span>`:''}
+      </div>`;
+
+    inBracket.forEach(({u,net})=>{
+      const pct = Math.round((net/maxNet)*100);
+      html+=`<div class="fcbar-row" onclick="selectSchoolFromBar('${u.id}')" style="cursor:pointer">
+        <div class="fcbar-name" title="${u.full}">${u.name}</div>
+        <span class="fcbar-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span></span>
+        <div class="fcbar-track" style="position:relative">
+          <div class="fcbar-fill" style="width:${pct}%;background:${b.color};opacity:.85;min-width:${net>0?'40px':'0'}">${net>12000?fmt(net):''}</div>
+          ${net===0?'<span style="position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:700;color:var(--emerald)">FULL RIDE</span>':''}
+          ${confAvgLine?`<div style="position:absolute;top:0;bottom:0;left:${Math.round((confAvgLine/maxNet)*100)}%;width:1.5px;background:var(--navy);opacity:.25;pointer-events:none"></div>`:''}
+        </div>
+        <div class="fcbar-amt">${fmtAUD(net,fx)}<br><span style="font-size:9px;color:var(--hint)">AUD/yr</span></div>
+      </div>`;
+    });
+    html+='</div>';
+  });
+
+  // Conference averages summary
+  html+=`<div style="background:var(--surface2);border-radius:9px;padding:.75rem 1rem;margin-top:.5rem">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:.5rem">Conference Averages (net cost at 50% athletic scholarship)</div>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem">`;
+  Object.entries(confAvgs).forEach(([ck,avg])=>{
+    const label={acc:'ACC',['big-ten']:'Big Ten',['big-east']:'Big East',aac:'AAC',['big-west']:'Big West',caa:'CAA',other:'D2/NAIA'}[ck]||ck;
+    html+=`<span style="font-size:11px;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:3px 10px"><strong>${label}</strong> ${fmt(avg)}/yr</span>`;
+  });
+  html+=`</div></div>`;
+
+  html += '<div style="font-size:11px;color:var(--hint);margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border)">Assumes 50% athletic scholarship + $7,500 USD living costs. Full-profile schools only. Sorted by cost bracket, lowest first. Click any bar to model in detail above.</div></div>';
   container.innerHTML = html;
 }
 
 function selectSchoolFromBar(id){
   const u = unis.find(x=>x.id===id);
   if(!u) return;
+  if(u.profileDepth==='listed'){
+    alert(u.name+' is a listed-depth school — full financial data not yet available. Full profile coming in a future update.');
+    return;
+  }
   // Switch to finance tab if not already there
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.getElementById('page-finance').classList.add('active');

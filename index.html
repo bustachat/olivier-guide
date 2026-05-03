@@ -720,7 +720,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   <div id="lens-controls" class="lens-controls"></div>
   <div class="filter-panel" id="filter-panel">
     <div class="filter-panel-header">
-      <span id="filter-active-summary" style="font-size:12px;color:var(--muted)">Showing all <strong>24</strong> schools</span>
+      <span id="filter-active-summary" style="font-size:12px;color:var(--muted)">Loading schools…</span>
       <div style="display:flex;gap:6px;align-items:center">
         <button class="filter-clear-btn" id="filter-clear-btn" onclick="clearAllFilters()" style="display:none">✕ Clear filters</button>
         <button class="filter-toggle-btn" id="filter-toggle-btn" onclick="toggleFilterPanel()">▼ Show filters</button>
@@ -963,8 +963,8 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     </div>
   </div>
 
-  <div class="section-head" style="margin-top:1rem"><h2>All-Schools Comparison — Annual Net Cost at 50% Athletic Scholarship</h2></div>
-  <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">50% athletic scholarship only (academic slider at 0). A realistic partial-scholarship scenario. Full ride = both sliders at max (50+50=100%). Click a bar to model in detail above.</p>
+  <div class="section-head" style="margin-top:1rem"><h2>Full-Profile Schools — Cost Comparison by Bracket</h2></div>
+  <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">Full-profile schools only, grouped by cost bracket. Assumes 50% athletic scholarship. Conference average reference lines shown per bracket. Click any bar to model in detail above. Listed-depth schools will appear here once fully profiled.</p>
   <div id="fin-comparison-bars"></div>
 </div>
 

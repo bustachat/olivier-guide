@@ -1,0 +1,931 @@
+[
+  {
+    "id": "charleston",
+    "name": "Charleston",
+    "full": "College of Charleston",
+    "loc": "Charleston, SC",
+    "region": "east",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e0f2fe",
+      "#0284c7"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "4th CAA",
+        "note": "10-6-2 overall"
+      },
+      {
+        "yr": 2023,
+        "pos": "5th CAA",
+        "note": "CAA"
+      },
+      {
+        "yr": 2022,
+        "pos": "4th CAA",
+        "note": "CAA"
+      },
+      {
+        "yr": 2021,
+        "pos": "6th CAA",
+        "note": "CAA"
+      },
+      {
+        "yr": 2020,
+        "pos": "4th CAA",
+        "note": "COVID season"
+      }
+    ],
+    "titles": [
+      "50 years of soccer 2024",
+      "Improving under Wiggans — 10-win season 2024"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Charleston Battery (USL) — local pro team",
+        "Battery connections provide occasional USL pathways"
+      ],
+      "draftRank": "Limited MLS pipeline; local USL Battery connections"
+    },
+    "acRank": "Regional Strong",
+    "kinRank": "Kinesiology — Good",
+    "degreeTitle": "B.S. in Kinesiology",
+    "acuAlign": 10,
+    "acuAlignNote": "Core kinesiology covered. Charleston's program is solid but smaller than major research universities. Good for a student who prioritises lifestyle and city over research facilities.",
+    "soccerLevel": "CAA — Competitive (improving)",
+    "cost": "~$38k/yr",
+    "aid": "Athletic + Need",
+    "size": "11,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.0 NCAA core (min)",
+      "minSchol": "3.0 for merit layer",
+      "note": "College of Charleston is accessible. GPA 2.8 is comfortable for both admission and aid.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 38000,
+      "tuition": 24000,
+      "roomBoard": 11000,
+      "fees": 3000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 10000,
+      "aidType": "athletic+need",
+      "internationalNote": "Affordable D1. Athletic scholarship can cover most costs. Academic merit available for 3.0+ GPA."
+    },
+    "culture": {
+      "vibe": "One of America's most beautiful and charming cities. The College of Charleston sits in the heart of the historic district — cobblestone streets, antebellum architecture, and waterfront beauty. The campus atmosphere matches the city — relaxed, social, and genuinely enjoyable.",
+      "thingsToDo": "Rainbow Row architecture walks, Sullivan's Island and Isle of Palms beaches (20 min), Charleston Battery waterfront, King Street shopping and restaurants, Fort Sumter tours, Mount Pleasant Pier, Boone Hall Plantation. Charleston is endlessly photogenic.",
+      "socialScene": "Warm, Southern hospitality. Predominately domestic students but growing international presence. Charleston Battery soccer connection means players have local pro visibility. Beach access excellent. Social scene on Upper King Street is one of the best college bar strips in the South.",
+      "olivierMatch": "★★★★ Charleston is a genuinely beautiful and liveable city. Warm, coastal, social — closer to Sydney lifestyle than most East Coast options. Smaller D1 program means personal attention. Excellent city culture.",
+      "lifestyleTags": "Historic, coastal, Southern charm"
+    },
+    "facilityDetails": {
+      "stadium": "Patriots Point Soccer Complex — opened 2000, $6.5M facility, 2,000 capacity, natural grass, lights. Located 7 miles from main campus at Mt. Pleasant with stunning Charleston Harbour views from the pitch.",
+      "trainingFields": "Training fields at Patriots Point and additional on-campus practice areas. Natural grass maintained to good standard. Year-round Charleston climate allows outdoor training 11+ months annually.",
+      "strengthConditioning": "CofC Athletics Weight Room — 8,000 sq ft, functional, adequate. Free weights, Olympic platforms, cable systems. Shared with all CofC varsity sports. Smaller program means more individual attention from S&C staff. Access to Charleston Battery training facilities occasionally available for top players.",
+      "sportsScience": "GPS tracking (Statsports) introduced 2023. Video analysis via Hudl. Kinesiology department has basic exercise physiology and biomechanics teaching labs. Less sophisticated sports science infrastructure than larger programs but growing.",
+      "sportsMed": "CofC Athletics certified athletic trainer. Medical University of South Carolina (MUSC) sports medicine partnership — MUSC is a top academic medical centre with strong orthopaedics and sports cardiology. Good medical access for a mid-major D1 program.",
+      "academicLabs": "CofC Department of Health and Human Performance: biomechanics teaching lab, exercise physiology lab, motor behaviour lab. MUSC clinical placement connections for pre-PT students are valuable — MUSC has a Doctor of Physical Therapy program on campus.",
+      "extras": "Patriots Point Naval Museum adjacent to soccer complex (USS Yorktown aircraft carrier). Charleston Harbour and beach access. Historic King Street and Market Street in downtown Charleston. Battery soccer facility has the best views of any soccer stadium in this guide — Charleston Harbour waterfront.",
+      "rating": "Good",
+      "note": "Patriots Point is a gem — a beautiful facility in a stunning coastal location. But the overall sports science infrastructure is less developed than larger programs. The MUSC DPT program connection is a unique and under-appreciated advantage for a pre-PT student."
+    },
+    "coach": {
+      "name": "Keith Wiggans",
+      "title": "Head Coach (6th season)",
+      "email": "kwiggans@cofc.edu",
+      "phone": "843-953-5932",
+      "profile": "CofC alum. Played 7 seasons for Charleston Battery (USL). Record improving: 1-4-3 (2020) to 10-6-2 (2024). Alumni connections to pro soccer in Charleston. 50th anniversary season 2024."
+    },
+    "devScores": {
+      "tactical": 76,
+      "technical": 78,
+      "fitness": 74,
+      "ptPath": 74
+    },
+    "fitOlivier": 74,
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Patriots Point Soccer Complex ($6.5M, 2000)",
+      "Kinesiology Labs",
+      "Charleston clinical network"
+    ],
+    "courses": [
+      "KIN 201 — Anatomy & Physiology",
+      "KIN 330 — Exercise Physiology",
+      "KIN 340 — Biomechanics",
+      "KIN 420 — Sport Psychology"
+    ],
+    "rec": "Charleston is one of America's most beautiful cities — historic waterfront, warm climate. Keith Wiggans played for the local pro team (Charleston Battery). Best if Olivier values city lifestyle and a developing D1 program with personal coaching.",
+    "url": "https://cofcsports.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 74,
+      "soccer": 58,
+      "academic": 68,
+      "minutes": 38,
+      "pt": 64,
+      "lifestyle": 100,
+      "value": 74
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Ezequiel Emanuele Goetzke",
+        "Hogan Walker"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Dan Toulson",
+        "Bemanzi Alibaruho",
+        "Reeves Cates",
+        "Paul Killeen"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    },
+    "profileDepth": "full",
+    "confKey": "caa",
+    "mapX": 385,
+    "mapY": 178
+  },
+  {
+    "id": "william_mary",
+    "profileDepth": "listed",
+    "name": "William & Mary",
+    "full": "College of William & Mary",
+    "loc": "Williamsburg, VA",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "south",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology and Health Sciences",
+    "acuAlign": 10,
+    "acuAlignNote": "Kinesiology and health sciences pathway. Pre-PT advising available. Williamsburg is near Sentara Healthcare for clinical access.",
+    "soccerLevel": "CAA — Strong",
+    "cost": "~$45k/yr",
+    "fin": {
+      "costNum": 45000
+    },
+    "aid": "Athletic",
+    "size": "6,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "3.0",
+      "minSchol": "3.2+",
+      "note": "Selective public liberal arts college. Strong academic profile required.",
+      "status": "below"
+    },
+    "mapX": 398,
+    "mapY": 145,
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 65,
+      "academic": 70,
+      "minutes": 48,
+      "pt": 55,
+      "lifestyle": 35,
+      "value": 62
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "2nd",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd",
+        "note": "CAA"
+      }
+    ],
+    "titles": [
+      "CAA Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Consistent CAA pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Shaun Tsakiris",
+      "title": "Head Coach",
+      "email": "sxtsakiris@wm.edu",
+      "phone": "",
+      "profile": "Long-tenured W&M coach. Consistently strong CAA program."
+    },
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Best academic profile in the CAA. Small colonial campus. Consistently competitive program — good for development path.",
+    "url": "https://tribeathletics.com/sports/mens-soccer"
+  },
+  {
+    "id": "hofstra",
+    "profileDepth": "listed",
+    "name": "Hofstra",
+    "full": "Hofstra University",
+    "loc": "Hempstead, NY",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "northeast",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Health Sciences",
+    "acuAlign": 10,
+    "acuAlignNote": "Health Sciences covers anatomy, physiology. NYC proximity (30 min via LIRR) opens extensive clinical placement for pre-PT.",
+    "soccerLevel": "CAA — Strong",
+    "cost": "~$62k/yr",
+    "fin": {
+      "costNum": 62000
+    },
+    "aid": "Athletic",
+    "size": "7,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Private university with flexible admission. Athletic scholarships standard.",
+      "status": "borderline"
+    },
+    "mapX": 418,
+    "mapY": 117,
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 65,
+      "academic": 55,
+      "minutes": 48,
+      "pt": 55,
+      "lifestyle": 48,
+      "value": 45
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "3rd",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "2nd",
+        "note": "CAA"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "NYC market proximity"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Scott Coufal",
+      "title": "Head Coach",
+      "email": "scoufal@hofstra.edu",
+      "phone": "",
+      "profile": "Building Hofstra in CAA. Long Island/NYC access is a unique recruiting asset."
+    },
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "NYC proximity via LIRR is the main appeal. Solid CAA program. Expensive for the tier.",
+    "url": "https://hofstraathletics.com/sports/mens-soccer"
+  },
+  {
+    "id": "northeastern",
+    "profileDepth": "listed",
+    "name": "Northeastern",
+    "full": "Northeastern University",
+    "loc": "Boston, MA",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "northeast",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Behavioral Neuroscience / Health Sciences",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong health sciences and neuroscience pathways. Co-op program provides real clinical placement in Boston hospital system — excellent for pre-PT.",
+    "soccerLevel": "CAA — Competitive",
+    "cost": "~$78k/yr",
+    "fin": {
+      "costNum": 78000
+    },
+    "aid": "Athletic",
+    "size": "17,000",
+    "prePT": "Excellent",
+    "gpa": {
+      "minEntry": "3.0",
+      "minSchol": "3.2+",
+      "note": "Selective private university with strong co-op placement. Athletic scholarship available.",
+      "status": "below"
+    },
+    "mapX": 425,
+    "mapY": 105,
+    "fitOlivier": 63,
+    "lensScores": {
+      "overall": 63,
+      "soccer": 60,
+      "academic": 75,
+      "minutes": 52,
+      "pt": 80,
+      "lifestyle": 55,
+      "value": 38
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "5th",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "6th",
+        "note": "CAA"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Developing pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Brian Ainscough",
+      "title": "Head Coach",
+      "email": "b.ainscough@northeastern.edu",
+      "phone": "",
+      "profile": "Building Northeastern in CAA. Boston location and co-op model are program differentiators."
+    },
+    "tags": [
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Boston city + co-op clinical placement in hospitals = outstanding pre-PT pathway. Expensive but co-op offsets some cost. Soccer is mid-CAA.",
+    "url": "https://gonu.com/sports/mens-soccer"
+  },
+  {
+    "id": "drexel",
+    "profileDepth": "listed",
+    "name": "Drexel",
+    "full": "Drexel University",
+    "loc": "Philadelphia, PA",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "northeast",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Health Sciences",
+    "acuAlign": 10,
+    "acuAlignNote": "Health Sciences covers anatomy, physiology. Co-op program provides clinical placements in Philadelphia hospital network for pre-PT.",
+    "soccerLevel": "CAA — Competitive",
+    "cost": "~$65k/yr",
+    "fin": {
+      "costNum": 65000
+    },
+    "aid": "Athletic",
+    "size": "14,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.8",
+      "minSchol": "3.0+",
+      "note": "Selective private university. Co-op model reduces overall cost over 5-year program.",
+      "status": "borderline"
+    },
+    "mapX": 409,
+    "mapY": 122,
+    "fitOlivier": 58,
+    "lensScores": {
+      "overall": 58,
+      "soccer": 58,
+      "academic": 62,
+      "minutes": 52,
+      "pt": 62,
+      "lifestyle": 50,
+      "value": 45
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "6th",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "7th",
+        "note": "CAA"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Developing pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@drexel.edu",
+      "phone": "",
+      "profile": "Philadelphia-based program with co-op clinical placement advantages."
+    },
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Philadelphia city + co-op clinical placements. Similar to Northeastern but in Philly. Soccer is lower-tier CAA.",
+    "url": "https://drexeldragons.com/sports/mens-soccer"
+  },
+  {
+    "id": "delaware",
+    "profileDepth": "listed",
+    "name": "Delaware",
+    "full": "University of Delaware",
+    "loc": "Newark, DE",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "northeast",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology and Applied Physiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong kinesiology and applied physiology — anatomy, physiology, biomechanics, exercise science well-covered. Pre-PT pathway supported.",
+    "soccerLevel": "CAA — Strong",
+    "cost": "~$38k/yr",
+    "fin": {
+      "costNum": 38000
+    },
+    "aid": "Athletic",
+    "size": "23,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Public university with strong academics. Athletic scholarship pathway established.",
+      "status": "borderline"
+    },
+    "mapX": 410,
+    "mapY": 126,
+    "fitOlivier": 58,
+    "lensScores": {
+      "overall": 58,
+      "soccer": 65,
+      "academic": 62,
+      "minutes": 48,
+      "pt": 58,
+      "lifestyle": 30,
+      "value": 68
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "4th",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "4th",
+        "note": "CAA"
+      }
+    ],
+    "titles": [
+      "CAA Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Consistent pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@udel.edu",
+      "phone": "",
+      "profile": "Strong CAA program. Applied Physiology degree is an asset."
+    },
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Strong kinesiology degree. Consistent CAA soccer. Low cost. Newark is a smaller college town — limited lifestyle.",
+    "url": "https://bluehens.com/sports/mens-soccer"
+  },
+  {
+    "id": "elon",
+    "profileDepth": "listed",
+    "name": "Elon",
+    "full": "Elon University",
+    "loc": "Elon, NC",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "south",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 9,
+    "acuAlignNote": "Exercise science covers core subjects. Pre-PT advising available. Small beautiful campus.",
+    "soccerLevel": "CAA — Competitive",
+    "cost": "~$48k/yr",
+    "fin": {
+      "costNum": 48000
+    },
+    "aid": "Athletic",
+    "size": "7,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Private university with merit+athletic scholarship opportunities.",
+      "status": "borderline"
+    },
+    "mapX": 388,
+    "mapY": 162,
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 58,
+      "academic": 58,
+      "minutes": 52,
+      "pt": 48,
+      "lifestyle": 35,
+      "value": 58
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "7th",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "8th",
+        "note": "CAA"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@elon.edu",
+      "phone": "",
+      "profile": "Small private university with strong campus culture."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Beautiful small campus. Rural North Carolina — low lifestyle fit. Mild climate is a marginal plus.",
+    "url": "https://elonphoenix.com/sports/mens-soccer"
+  },
+  {
+    "id": "monmouth",
+    "profileDepth": "listed",
+    "name": "Monmouth",
+    "full": "Monmouth University",
+    "loc": "West Long Branch, NJ",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "northeast",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Health Studies",
+    "acuAlign": 9,
+    "acuAlignNote": "Health studies covers core anatomy and physiology. NJ Shore location with NYC access for clinical placements.",
+    "soccerLevel": "CAA — Developing",
+    "cost": "~$52k/yr",
+    "fin": {
+      "costNum": 52000
+    },
+    "aid": "Athletic",
+    "size": "6,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.3",
+      "minSchol": "2.5+",
+      "note": "Accessible private university. Athletic scholarship packages available.",
+      "status": "ok"
+    },
+    "mapX": 415,
+    "mapY": 120,
+    "fitOlivier": 50,
+    "lensScores": {
+      "overall": 50,
+      "soccer": 52,
+      "academic": 48,
+      "minutes": 60,
+      "pt": 45,
+      "lifestyle": 42,
+      "value": 52
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "9th",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "9th",
+        "note": "CAA"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@monmouth.edu",
+      "phone": "",
+      "profile": "Developing CAA program on the New Jersey shore."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "NJ Shore location has appeal — beach access, NYC day trips. Soccer and academics are developing tier. Best for maximum minutes opportunity.",
+    "url": "https://monmouthhawks.com/sports/mens-soccer"
+  },
+  {
+    "id": "stonybrook",
+    "profileDepth": "listed",
+    "name": "Stony Brook",
+    "full": "Stony Brook University",
+    "loc": "Stony Brook, NY",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "northeast",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 10,
+    "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Stony Brook Medicine is a top research medical centre — strong pre-PT access.",
+    "soccerLevel": "CAA — Competitive",
+    "cost": "~$38k/yr",
+    "fin": {
+      "costNum": 38000
+    },
+    "aid": "Athletic",
+    "size": "26,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Public research university (SUNY). Strong academic profile for the cost.",
+      "status": "borderline"
+    },
+    "mapX": 420,
+    "mapY": 115,
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 60,
+      "academic": 62,
+      "minutes": 52,
+      "pt": 58,
+      "lifestyle": 32,
+      "value": 72
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "6th",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "5th",
+        "note": "CAA"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Long Island/NYC market"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@stonybrook.edu",
+      "phone": "",
+      "profile": "Developing Stony Brook in CAA. Strong research university with good pre-PT access."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Strong value — low cost, research university, Stony Brook Medicine for pre-PT. Rural Long Island campus. NYC access via LIRR.",
+    "url": "https://stonybrookseawolves.com/sports/mens-soccer"
+  },
+  {
+    "id": "towson",
+    "profileDepth": "listed",
+    "name": "Towson",
+    "full": "Towson University",
+    "loc": "Towson, MD",
+    "div": "D1",
+    "conf": "Colonial Athletic (CAA)",
+    "confKey": "caa",
+    "region": "northeast",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 10,
+    "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Baltimore and DC proximity provides strong clinical placement for pre-PT.",
+    "soccerLevel": "CAA — Competitive",
+    "cost": "~$35k/yr",
+    "fin": {
+      "costNum": 35000
+    },
+    "aid": "Athletic",
+    "size": "22,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.3",
+      "minSchol": "2.5+",
+      "note": "Accessible public university. Strong scholarship packages for international athletes.",
+      "status": "ok"
+    },
+    "mapX": 403,
+    "mapY": 128,
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 60,
+      "academic": 55,
+      "minutes": 52,
+      "pt": 55,
+      "lifestyle": 42,
+      "value": 72
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "8th",
+        "note": "CAA"
+      },
+      {
+        "yr": 2023,
+        "pos": "7th",
+        "note": "CAA"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Baltimore/DC market"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@towson.edu",
+      "phone": "",
+      "profile": "CAA program in Baltimore suburb. DC/Baltimore medical district access."
+    },
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Best value in the CAA. Baltimore suburb + DC day trips. Low cost. Soccer is developing but pre-PT pathway via local hospitals is good.",
+    "url": "https://towsontigers.com/sports/mens-soccer"
+  }
+]

@@ -1,0 +1,1390 @@
+[
+  {
+    "id": "ucla",
+    "name": "UCLA",
+    "full": "University of California, Los Angeles",
+    "loc": "Los Angeles, CA",
+    "region": "west",
+    "div": "D1",
+    "conf": "Big Ten",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#e0e7ff",
+      "#4f46e5"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "4th",
+        "note": "Big Ten (debut)"
+      },
+      {
+        "yr": 2023,
+        "pos": "1st",
+        "note": "Pac-12 Champions"
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd",
+        "note": "Pac-12"
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd",
+        "note": "Pac-12"
+      },
+      {
+        "yr": 2020,
+        "pos": "3rd",
+        "note": "Pac-12"
+      }
+    ],
+    "titles": [
+      "NCAA 1985, 1990, 1997, 2002",
+      "Pac-12 Champs 2023",
+      "Big Ten Tourn Champs 2024"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 4,
+      "notable": [
+        "Ahmed Longmire — #10 overall, Nashville SC (2022)",
+        "Grayson Doody — R1, CF Montréal (2024)",
+        "Nicholas Cavallo — R3 (2025)"
+      ],
+      "draftRank": "Top 8 all-time MLS producers"
+    },
+    "acRank": "#20 National",
+    "kinRank": "#1 Nationally (Physiol Sci)",
+    "degreeTitle": "B.S. in Physiological Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong — no named kinesiology major but Physiol Sci covers anatomy, physiology, biomechanics fully. Motor control/development less explicit.",
+    "soccerLevel": "Big Ten — Elite",
+    "cost": "~$67k/yr",
+    "aid": "Athletic + Merit",
+    "size": "46,000+",
+    "prePT": "Excellent",
+    "gpa": {
+      "minEntry": "3.0 NCAA core (min)",
+      "minSchol": "3.5+ for merit aid stacking",
+      "note": "Highly selective public — aim 3.5+ for strong admission. Athletic scholarship may offset GPA concern.",
+      "status": "below"
+    },
+    "fin": {
+      "costNum": 67000,
+      "tuition": 44000,
+      "roomBoard": 19000,
+      "fees": 4000,
+      "maxAthletic": 0.8,
+      "maxAcademic": 8000,
+      "aidType": "athletic+merit",
+      "internationalNote": "International students not eligible for federal aid. Athletic scholarship can cover up to 80% of costs. UC Blue+Gold program covers tuition for CA residents only."
+    },
+    "culture": {
+      "vibe": "Vibrant, diverse, high-energy West Coast university culture. UCLA is one of the most socially active campuses in the USA — always something happening. Greek life is prominent but not dominant. International students are common and blend seamlessly.",
+      "thingsToDo": "Santa Monica Beach (10 min), Venice Beach, Westwood Village restaurants and cinema, Griffith Observatory, LA nightlife, Dodgers/Lakers/Rams games, concerts at the Forum, hiking in the Santa Monica Mountains, Disneyland (45 min). LA is limitless.",
+      "socialScene": "Large international student body. Australian students have established communities. Bruin athletics culture is intense — games are events. Social media presence huge. Campus feels alive 24/7.",
+      "olivierMatch": "★★★★★ Best campus lifestyle match in guide for Olivier. City, beach, warm, diverse. Feels closest to Sydney energy of any US campus.",
+      "lifestyleTags": "Warm, sunny, active"
+    },
+    "facilityDetails": {
+      "stadium": "Drake Stadium — 8,000 capacity, FieldTurf surface, permanent seating, stadium lighting, video board. Shared with track & field, maintained to Big Ten broadcast standards.",
+      "trainingFields": "3 dedicated practice fields adjacent to Drake Stadium (2x natural grass, 1x FieldTurf). Ball-wall training walls, rebounder nets, GPS tracking zones marked on all surfaces.",
+      "strengthConditioning": "Acosta Athletic Center — 20,000 sq ft dedicated athlete weight room. Olympic lifting platforms (12), squat racks, cable systems, battle ropes, sled tracks. Olympic sports strength coach assigned exclusively to soccer. Cryotherapy chambers, hot/cold plunge pools, normatec recovery boots.",
+      "sportsScience": "Biomotion Lab (3D motion capture — 24-camera Vicon system), Biomechanics Research Lab (force plates, EMG systems), UCLA Exercise Physiology Lab (VO2 max, lactate testing), GPS/accelerometer tracking (Catapult) on all training sessions. One of the top 3 sports science environments in the NCAA.",
+      "sportsMed": "UCLA Health dedicated athletic trainer assigned to soccer. On-site physio room, rehabilitation gym, ultrasound, laser therapy, cryotherapy. UCLA Health orthopaedic surgery access (Dr Neal ElAttrache — team physician to LA Lakers).",
+      "academicLabs": "Department of Physiological Science: 6 research labs including cardiopulmonary physiology, muscle physiology, biomechanics, and neuroscience. Access to David Geffen School of Medicine anatomy cadaver lab. Student pre-PT club has first-priority clinical placement at UCLA Health.",
+      "extras": "Pauley Pavilion athlete lounge and recovery centre. LAFC training facility access (professional relationship). LA Galaxy El Camino College training facility visits. Olympic-standard athlete dining hall. Dedicated locker room for soccer with iPad film stations.",
+      "rating": "Elite",
+      "note": "UCLA is a top-3 facilities environment in the entire guide. The combination of Drake Stadium, the Biomotion Lab, and UCLA Health access creates a professional-standard training environment that rivals many MLS clubs."
+    },
+    "coach": {
+      "name": "Ryan Jorden",
+      "title": "Head Coach (7th yr)",
+      "email": "rjorden@athletics.ucla.edu",
+      "phone": "310-825-3515",
+      "profile": "13 MLS draft picks under Jorden. NCAA Tournament 4 years running. Technical, player-development style."
+    },
+    "devScores": {
+      "tactical": 90,
+      "technical": 88,
+      "fitness": 85,
+      "ptPath": 95
+    },
+    "fitOlivier": 96,
+    "tags": [
+      "warm",
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Drake Stadium",
+      "Biomotion Lab",
+      "Biomechanics Research Lab"
+    ],
+    "courses": [
+      "PHYSIOL 3 — Introduction to Physiology",
+      "PHYSIOL 111A — Physiology of Exercise",
+      "PHYSIOL 120A — Biomechanics",
+      "KIN 150 — Sport Biomechanics",
+      "ANATOMY 1 — Human Anatomy"
+    ],
+    "rec": "LA lifestyle closest to Sydney. #1 Kinesiology equivalent nationally. Highly competitive for international athletes — elite highlights required. Extraordinary PT/Chiro grad school access via UCLA Health.",
+    "url": "https://uclabruins.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 96,
+      "soccer": 76,
+      "academic": 73,
+      "minutes": 37,
+      "pt": 85,
+      "lifestyle": 100,
+      "value": 71
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 10,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Philip Naef",
+        "Sebastian Rincon"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Tamir Ratoviz"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Zach Mastrodimos",
+        "Ander Marticorena",
+        "Dylan Cantafio",
+        "Adrian Aguilar"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    },
+    "profileDepth": "full",
+    "confKey": "big-ten",
+    "mapX": 71,
+    "mapY": 152
+  },
+  {
+    "id": "indiana",
+    "name": "Indiana",
+    "full": "Indiana University Bloomington",
+    "loc": "Bloomington, IN",
+    "region": "east",
+    "div": "D1",
+    "conf": "Big Ten Conference",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#ffe4e6",
+      "#e11d48"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "1st",
+        "note": "Big Ten Champions"
+      },
+      {
+        "yr": 2023,
+        "pos": "1st",
+        "note": "Big Ten Champions"
+      },
+      {
+        "yr": 2022,
+        "pos": "2nd",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2021,
+        "pos": "1st",
+        "note": "Big Ten Champions"
+      },
+      {
+        "yr": 2020,
+        "pos": "1st",
+        "note": "Big Ten Champions"
+      }
+    ],
+    "titles": [
+      "NCAA 1982, 1983, 1988, 1998, 1999, 2003, 2004, 2012",
+      "19 Big Ten regular season titles",
+      "16 Big Ten Tournament titles",
+      "39 consecutive NCAA Tournaments (record)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 5,
+      "notable": [
+        "Jansen Miller — 2025 R1 SKC",
+        "Collins Oduro — 2025 R2",
+        "Samuel Sarver — 2025 R2",
+        "Aidan Morris — 2021 Columbus Crew (USMNT)"
+      ],
+      "draftRank": "Top 10 all-time. Most decorated program in US college soccer history."
+    },
+    "acRank": "#30 National",
+    "kinRank": "Strong (9 dedicated labs)",
+    "degreeTitle": "B.S. in Kinesiology — Exercise Science Major",
+    "acuAlign": 15,
+    "acuAlignNote": "Near-full alignment — anatomy, physiology, biomechanics, motor control (dedicated lab), motor development, resistance training, sport psych, research, internship. Best motor control coverage of any program in guide.",
+    "soccerLevel": "Big Ten — 8× NCAA Champion",
+    "cost": "~$55k/yr",
+    "aid": "Athletic + Academic",
+    "size": "40,000+",
+    "prePT": "Very Strong",
+    "gpa": {
+      "minEntry": "2.3 NCAA core (min)",
+      "minSchol": "3.0+ for academic scholarship",
+      "note": "Indiana is manageable for international athletes with a strong athletic profile. GPA 2.8 borderline.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 55000,
+      "tuition": 36000,
+      "roomBoard": 15000,
+      "fees": 4000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 8000,
+      "aidType": "athletic+academic",
+      "internationalNote": "Big Ten athletic aid can be significant. Academic merit available. Bloomington in-state cost is low but international rate applies."
+    },
+    "culture": {
+      "vibe": "Classic American Big Ten college-town atmosphere at its absolute finest. Bloomington is a college town that punches above its weight — vibrant music scene, excellent restaurants, beautiful forested campus, and intense Hoosiers sports culture.",
+      "thingsToDo": "Sample Gates and historic campus walks, Lake Monroe hiking and watersports, Brown County State Park (stunning fall foliage), Indianapolis day trips (1hr), IU Auditorium world-class concerts, Little 500 bike race (legendary). Bloomington is surprisingly fun.",
+      "socialScene": "Warm Midwestern hospitality. International student community exists but the culture is predominantly American. Soccer team is a tight brotherhood — Big Ten culture means athletes are respected on campus. Academic atmosphere is serious but social.",
+      "olivierMatch": "★★★ Bloomington is not a city and winters are cold. But the campus energy, athletics culture, and Midwestern warmth make it surprisingly enjoyable. Best if Olivier embraces the quintessential American college experience.",
+      "lifestyleTags": "College-town, Hoosiers pride, surprisingly fun"
+    },
+    "facilityDetails": {
+      "stadium": "Bill Armstrong Stadium — 10,000 capacity, natural grass surface (annually re-sodded), full broadcast infrastructure. Home of 8 NCAA championships. One of the most storied soccer venues in American collegiate history.",
+      "trainingFields": "4 dedicated training fields adjacent to Armstrong Stadium (3 natural grass, 1 synthetic turf). Indoor practice space in Cook Hall for winter months. GPS tracking zones permanently installed on all surfaces.",
+      "strengthConditioning": "Simon Skjodt Assembly Hall adjacent Athletic Performance Center — 22,000 sq ft weight facility. Olympic lifting platforms (14), Keiser full system, Hammer Strength equipment. Dedicated strength and conditioning coaches for all Olympic sports. Cryotherapy chambers, normatec recovery, altitude tent room, hyperbaric oxygen chamber.",
+      "sportsScience": "IU School of Public Health Kinesiology Labs — 9 dedicated research and teaching laboratories including: bioenergetics and environmental stress suite (unique in the USA — altitude simulation and heat chamber combined), biomechanics lab (12-camera motion capture, 6 force plates), muscle physiology lab (muscle biopsy capability), motor control and coordination lab, cardiovascular physiology lab. GPS tracking (Catapult Vector) with real-time HRV monitoring on all sessions.",
+      "sportsMed": "Indiana Athletics Sports Medicine — multiple certified athletic trainers. IU Health (University Hospital affiliate) team physician access. Sports concussion research lab on campus. One of the few programs in the guide with a dedicated motor control rehabilitation research lab that doubles as a clinical resource.",
+      "academicLabs": "IU Kinesiology: 9 research labs accessible to undergraduates. The bioenergetics and environmental stress lab is the only one of its kind at an American university — nowhere else can simulate altitude AND heat stress simultaneously for research. Students working with faculty on research from Year 1 is the norm, not exception.",
+      "extras": "Assembly Hall (17,000 cap basketball) creates extraordinary game-day atmosphere. IU Memorial Union — one of the largest student unions in the USA. IU Outdoor Pool and Wellness Centre. Jacobs School of Music (world-famous) for cultural events. Bloomington itself surprises visitors — voted one of the best college towns in America.",
+      "rating": "Elite",
+      "note": "Indiana is the #2 facilities environment in this guide for Olivier's specific needs. Bill Armstrong Stadium has hosted 8 NCAA Championship games. The bioenergetics lab is unique in USA collegiate sport. The combination of soccer tradition, science infrastructure, and personal development environment is exceptional."
+    },
+    "coach": {
+      "name": "Todd Yeagley",
+      "title": "Head Coach",
+      "email": "tyeagley@indiana.edu",
+      "phone": "812-855-9148",
+      "profile": "Big Ten champs 2020, 2021, 2023, 2024. Developed Aidan Morris (USMNT). High-pressure, high-tempo style. Bioenergetics lab is only one of its kind in USA."
+    },
+    "devScores": {
+      "tactical": 93,
+      "technical": 88,
+      "fitness": 92,
+      "ptPath": 85
+    },
+    "fitOlivier": 70,
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Bill Armstrong Stadium (10,000 cap)",
+      "School of Public Health Kinesiology Labs",
+      "Bioenergetics & Environmental Stress Suite (unique USA)"
+    ],
+    "courses": [
+      "KIN 230 — Anatomy & Physiology",
+      "KIN 350 — Exercise Physiology",
+      "KIN 373 — Biomechanics",
+      "KIN 490 — Motor Learning",
+      "KIN 450 — Sport Rehabilitation"
+    ],
+    "rec": "Most decorated soccer program in USA history. Best motor control coverage in this guide (9 labs). Aidan Morris (USMNT) developed here. Bloomington is a classic college town — not a city — and climate is cold. For development and pro pathway if he can compete at Big Ten level.",
+    "url": "https://iuhoosiers.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 70,
+      "soccer": 82,
+      "academic": 95,
+      "minutes": 56,
+      "pt": 83,
+      "lifestyle": 40,
+      "value": 62
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Jacopo Fedrizzi",
+        "Seth Stewart",
+        "Noah Joseph"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Charlie Heuer",
+        "Justin Shreffler",
+        "EJ Dreher"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    },
+    "profileDepth": "full",
+    "confKey": "big-ten",
+    "mapX": 318,
+    "mapY": 133
+  },
+  {
+    "id": "pennstate",
+    "profileDepth": "listed",
+    "name": "Penn State",
+    "full": "Pennsylvania State University",
+    "loc": "State College, PA",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "northeast",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 12,
+    "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, motor control all covered. Pre-PT advising integrated into kinesiology program.",
+    "soccerLevel": "Big Ten — Strong",
+    "cost": "~$55k/yr",
+    "fin": {
+      "costNum": 55000
+    },
+    "aid": "Athletic",
+    "size": "46,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "3.0",
+      "minSchol": "3.2+",
+      "note": "Large public research university. Athletic scholarship pathway well-established for internationals.",
+      "status": "below"
+    },
+    "mapX": 392,
+    "mapY": 118,
+    "fitOlivier": 65,
+    "lensScores": {
+      "overall": 65,
+      "soccer": 75,
+      "academic": 65,
+      "minutes": 42,
+      "pt": 62,
+      "lifestyle": 30,
+      "value": 62
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "4th",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [
+      "NCAA 2013 finalist",
+      "Big Ten Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 4,
+      "notable": [],
+      "draftRank": "Consistent Big Ten pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Bob Warming",
+      "title": "Head Coach",
+      "email": "bwarming@psu.edu",
+      "phone": "",
+      "profile": "One of the most decorated coaches in Big Ten history. Multiple NCAA tournament runs."
+    },
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Consistent Big Ten contender. Strong kinesiology program. Rural campus — significant lifestyle trade-off for Olivier.",
+    "url": "https://gopsusports.com/sports/mens-soccer"
+  },
+  {
+    "id": "michigan",
+    "profileDepth": "listed",
+    "name": "Michigan",
+    "full": "University of Michigan",
+    "loc": "Ann Arbor, MI",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "midwest",
+    "warm": false,
+    "city": false,
+    "top": true,
+    "degreeTitle": "B.S. Movement Science",
+    "acuAlign": 13,
+    "acuAlignNote": "Excellent — U of M School of Kinesiology is one of the top 3 in the nation. Movement Science covers anatomy, physiology, biomechanics, motor control, sport psychology. Michigan Medicine provides elite pre-PT clinical access.",
+    "soccerLevel": "Big Ten — Strong",
+    "cost": "~$68k/yr",
+    "fin": {
+      "costNum": 68000
+    },
+    "aid": "Athletic",
+    "size": "47,000",
+    "prePT": "Excellent",
+    "gpa": {
+      "minEntry": "3.0",
+      "minSchol": "3.3+",
+      "note": "Highly selective public university. Athletic scholarship pathway available for international recruits.",
+      "status": "below"
+    },
+    "mapX": 350,
+    "mapY": 115,
+    "fitOlivier": 68,
+    "lensScores": {
+      "overall": 68,
+      "soccer": 76,
+      "academic": 85,
+      "minutes": 40,
+      "pt": 82,
+      "lifestyle": 32,
+      "value": 52
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "3rd",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "4th",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [
+      "Big Ten Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [],
+      "draftRank": "Strong Big Ten pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Chaka Daley",
+      "title": "Head Coach",
+      "email": "cdaley@umich.edu",
+      "phone": "",
+      "profile": "Building Michigan into an elite Big Ten program. Former US Youth National Team coach."
+    },
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "One of the best Movement Science programs in the country. Michigan Medicine pre-PT access is elite. Ann Arbor is a lively college town despite cold winters.",
+    "url": "https://mgoblue.com/sports/mens-soccer"
+  },
+  {
+    "id": "michiganstate",
+    "profileDepth": "listed",
+    "name": "Michigan State",
+    "full": "Michigan State University",
+    "loc": "East Lansing, MI",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "midwest",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. Pre-PT pathway available through kinesiology advising.",
+    "soccerLevel": "Big Ten — Competitive",
+    "cost": "~$52k/yr",
+    "fin": {
+      "costNum": 52000
+    },
+    "aid": "Athletic",
+    "size": "50,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Accessible large public university. International athlete process well-established.",
+      "status": "borderline"
+    },
+    "mapX": 355,
+    "mapY": 112,
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 65,
+      "academic": 58,
+      "minutes": 48,
+      "pt": 55,
+      "lifestyle": 28,
+      "value": 62
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "7th",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "8th",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Moderate pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Damon Rensing",
+      "title": "Head Coach",
+      "email": "rensing@msu.edu",
+      "phone": "",
+      "profile": "Long-tenured MSU coach. Consistent program in competitive Big Ten environment."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Mid-tier Big Ten. Best for realistic minutes among Michigan schools. Cold campus — similar drawbacks to Michigan.",
+    "url": "https://msuspartans.com/sports/mens-soccer"
+  },
+  {
+    "id": "ohiostate",
+    "profileDepth": "listed",
+    "name": "Ohio State",
+    "full": "Ohio State University",
+    "loc": "Columbus, OH",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "midwest",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics covered. Ohio State Wexner Medical Center provides strong clinical access for pre-PT pathway.",
+    "soccerLevel": "Big Ten — Strong",
+    "cost": "~$52k/yr",
+    "fin": {
+      "costNum": 52000
+    },
+    "aid": "Athletic",
+    "size": "61,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.8",
+      "minSchol": "3.0+",
+      "note": "Large public university. Accessible admission for strong international athletes.",
+      "status": "borderline"
+    },
+    "mapX": 365,
+    "mapY": 128,
+    "fitOlivier": 63,
+    "lensScores": {
+      "overall": 63,
+      "soccer": 72,
+      "academic": 60,
+      "minutes": 43,
+      "pt": 62,
+      "lifestyle": 40,
+      "value": 65
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "5th",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "5th",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [
+      "Big Ten Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Developing MLS pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Brian Maisonneuve",
+      "title": "Head Coach",
+      "email": "maisonneuve.1@osu.edu",
+      "phone": "",
+      "profile": "Former MLS and US National Team player. Building Ohio State's soccer identity."
+    },
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Columbus is a real, growing city — good lifestyle for a Midwest option. Wexner Medical Center for pre-PT. Reasonable cost.",
+    "url": "https://ohiostatebuckeyes.com/sports/mens-soccer"
+  },
+  {
+    "id": "northwestern",
+    "profileDepth": "listed",
+    "name": "Northwestern",
+    "full": "Northwestern University",
+    "loc": "Evanston, IL",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "midwest",
+    "warm": false,
+    "city": true,
+    "top": true,
+    "degreeTitle": "B.S. Human Sciences",
+    "acuAlign": 12,
+    "acuAlignNote": "Strong human sciences and kinesiology pathways. Adjacent to Chicago — access to top-tier PT programs and clinical facilities.",
+    "soccerLevel": "Big Ten — Competitive",
+    "cost": "~$82k/yr",
+    "fin": {
+      "costNum": 82000
+    },
+    "aid": "Athletic + Need",
+    "size": "8,000",
+    "prePT": "Excellent",
+    "gpa": {
+      "minEntry": "3.5",
+      "minSchol": "3.7+",
+      "note": "Highly selective private university. Elite academic profile required alongside athletic ability.",
+      "status": "below"
+    },
+    "mapX": 328,
+    "mapY": 113,
+    "fitOlivier": 61,
+    "lensScores": {
+      "overall": 61,
+      "soccer": 62,
+      "academic": 90,
+      "minutes": 50,
+      "pt": 80,
+      "lifestyle": 48,
+      "value": 32
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "9th",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "10th",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Small pipeline — academic-first program"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Tim Lenahan",
+      "title": "Head Coach",
+      "email": "tlenahan@northwestern.edu",
+      "phone": "",
+      "profile": "Long-tenured Northwestern coach. Chicago proximity creates strong pre-professional opportunities."
+    },
+    "tags": [
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Elite academics + Chicago access. Soccer is competitive not elite — more realistic minutes than top Big Ten programs. Very expensive.",
+    "url": "https://nusports.com/sports/mens-soccer"
+  },
+  {
+    "id": "wisconsin",
+    "profileDepth": "listed",
+    "name": "Wisconsin",
+    "full": "University of Wisconsin-Madison",
+    "loc": "Madison, WI",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "midwest",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Exercise and Movement Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Solid exercise and movement science — anatomy, physiology, biomechanics, sport psychology covered. UW Health access for clinical placements.",
+    "soccerLevel": "Big Ten — Competitive",
+    "cost": "~$50k/yr",
+    "fin": {
+      "costNum": 50000
+    },
+    "aid": "Athletic",
+    "size": "47,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Accessible large public university. Strong athletic department support.",
+      "status": "borderline"
+    },
+    "mapX": 318,
+    "mapY": 105,
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 62,
+      "academic": 62,
+      "minutes": 50,
+      "pt": 55,
+      "lifestyle": 30,
+      "value": 65
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "10th",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "9th",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Moderate pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "John Trask",
+      "title": "Head Coach",
+      "email": "jtrask@wisc.edu",
+      "phone": "",
+      "profile": "Developing Wisconsin program in a competitive Big Ten field."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Lower-cost Big Ten option. Best for minutes opportunity among mid-tier programs. Cold Wisconsin winters are a significant drawback.",
+    "url": "https://uwbadgers.com/sports/mens-soccer"
+  },
+  {
+    "id": "rutgers",
+    "profileDepth": "listed",
+    "name": "Rutgers",
+    "full": "Rutgers University",
+    "loc": "New Brunswick, NJ",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "northeast",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 10,
+    "acuAlignNote": "Solid exercise science program. NYC proximity means excellent clinical placement opportunities for pre-PT pathway.",
+    "soccerLevel": "Big Ten — Competitive",
+    "cost": "~$55k/yr",
+    "fin": {
+      "costNum": 55000
+    },
+    "aid": "Athletic",
+    "size": "50,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Accessible large public university. Athletic scholarship packages standard for internationals.",
+      "status": "borderline"
+    },
+    "mapX": 415,
+    "mapY": 118,
+    "fitOlivier": 58,
+    "lensScores": {
+      "overall": 58,
+      "soccer": 65,
+      "academic": 55,
+      "minutes": 48,
+      "pt": 58,
+      "lifestyle": 45,
+      "value": 60
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "8th",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "7th",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [
+      "Big East Champions multiple (pre-2014)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Moderate pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Jim McElderry",
+      "title": "Head Coach",
+      "email": "jmcelderry@rutgers.edu",
+      "phone": "",
+      "profile": "Long-tenured Rutgers coach. NYC proximity creates unique professional networking for soccer players."
+    },
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "NYC proximity is a genuine advantage. Mid-tier Big Ten program. Historically strong in Big East era — still rebuilding in Big Ten.",
+    "url": "https://scarletknights.com/sports/mens-soccer"
+  },
+  {
+    "id": "oregon",
+    "profileDepth": "listed",
+    "name": "Oregon",
+    "full": "University of Oregon",
+    "loc": "Eugene, OR",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "west",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Human Physiology",
+    "acuAlign": 12,
+    "acuAlignNote": "Strong Human Physiology program — anatomy, physiology, biomechanics, exercise science all well-covered. Pre-PT pathway supported.",
+    "soccerLevel": "Big Ten — Developing",
+    "cost": "~$48k/yr",
+    "fin": {
+      "costNum": 48000
+    },
+    "aid": "Athletic",
+    "size": "21,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Accessible Pacific Northwest public university. International athletic recruitment well-established.",
+      "status": "borderline"
+    },
+    "mapX": 68,
+    "mapY": 88,
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 60,
+      "academic": 62,
+      "minutes": 55,
+      "pt": 60,
+      "lifestyle": 45,
+      "value": 70
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "11th",
+        "note": "Big Ten (debut)"
+      },
+      {
+        "yr": 2023,
+        "pos": "4th",
+        "note": "Pac-12"
+      }
+    ],
+    "titles": [
+      "Pac-12 Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Growing Pacific pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Wilfried Grabherr",
+      "title": "Head Coach",
+      "email": "wgrabherr@uoregon.edu",
+      "phone": "",
+      "profile": "Building Oregon through Big Ten transition. Strong Human Physiology academic pathway."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Best minutes opportunity in the Big Ten. Strong human physiology degree. Pacific Northwest climate is rainy — not ideal for Olivier.",
+    "url": "https://goducks.com/sports/mens-soccer"
+  },
+  {
+    "id": "usc",
+    "profileDepth": "listed",
+    "name": "USC",
+    "full": "University of Southern California",
+    "loc": "Los Angeles, CA",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 12,
+    "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, sport psychology covered. USC Keck Medicine provides outstanding clinical access for pre-PT pathway.",
+    "soccerLevel": "Big Ten — Strong",
+    "cost": "~$78k/yr",
+    "fin": {
+      "costNum": 78000
+    },
+    "aid": "Athletic + Merit",
+    "size": "21,000",
+    "prePT": "Excellent",
+    "gpa": {
+      "minEntry": "3.0",
+      "minSchol": "3.3+",
+      "note": "Selective private university. Athletic scholarship is primary aid lever for internationals.",
+      "status": "below"
+    },
+    "mapX": 74,
+    "mapY": 157,
+    "fitOlivier": 78,
+    "lensScores": {
+      "overall": 78,
+      "soccer": 78,
+      "academic": 72,
+      "minutes": 38,
+      "pt": 80,
+      "lifestyle": 95,
+      "value": 45
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "2nd",
+        "note": "Big Ten (debut)"
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd",
+        "note": "Pac-12"
+      }
+    ],
+    "titles": [
+      "Multiple Pac-12 titles"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [],
+      "draftRank": "Strong West Coast pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Neil Jones",
+      "title": "Head Coach",
+      "email": "ndjones@usc.edu",
+      "phone": "",
+      "profile": "Strong Pac-12 record translating into Big Ten competition. LA network gives unique pro soccer access."
+    },
+    "tags": [
+      "warm",
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "LA lifestyle — second best after UCLA for Olivier's climate preference. USC Keck Medicine for pre-PT. Expensive but worth considering alongside UCLA.",
+    "url": "https://usctrojans.com/sports/mens-soccer"
+  },
+  {
+    "id": "washington",
+    "profileDepth": "listed",
+    "name": "Washington",
+    "full": "University of Washington",
+    "loc": "Seattle, WA",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "west",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. UW Medicine provides strong clinical access for pre-PT pathway.",
+    "soccerLevel": "Big Ten — Competitive",
+    "cost": "~$52k/yr",
+    "fin": {
+      "costNum": 52000
+    },
+    "aid": "Athletic",
+    "size": "47,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.8",
+      "minSchol": "3.0+",
+      "note": "Selective public university. International athletes well-supported through athletic department.",
+      "status": "borderline"
+    },
+    "mapX": 68,
+    "mapY": 78,
+    "fitOlivier": 62,
+    "lensScores": {
+      "overall": 62,
+      "soccer": 68,
+      "academic": 65,
+      "minutes": 46,
+      "pt": 62,
+      "lifestyle": 52,
+      "value": 62
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "6th",
+        "note": "Big Ten (debut)"
+      },
+      {
+        "yr": 2023,
+        "pos": "4th",
+        "note": "Pac-12"
+      }
+    ],
+    "titles": [
+      "Pac-12 Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Consistent Pacific pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Jamie Clark",
+      "title": "Head Coach",
+      "email": "jclark@uw.edu",
+      "phone": "",
+      "profile": "Building Washington through Pacific-12 to Big Ten transition. Seattle Sounders relationship a pro pathway asset."
+    },
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Seattle city lifestyle. Sounders proximity a pro soccer bonus. Rain is a genuine drawback for Olivier. Mid-range cost.",
+    "url": "https://gohuskies.com/sports/mens-soccer"
+  },
+  {
+    "id": "illinois",
+    "profileDepth": "listed",
+    "name": "Illinois",
+    "full": "University of Illinois Urbana-Champaign",
+    "loc": "Champaign, IL",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "midwest",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Solid kinesiology program — anatomy, physiology, biomechanics covered. Pre-PT pathway available.",
+    "soccerLevel": "Big Ten — Developing",
+    "cost": "~$52k/yr",
+    "fin": {
+      "costNum": 52000
+    },
+    "aid": "Athletic",
+    "size": "56,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Accessible large public university. Athletic support department strong.",
+      "status": "borderline"
+    },
+    "mapX": 325,
+    "mapY": 128,
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 60,
+      "academic": 60,
+      "minutes": 55,
+      "pt": 55,
+      "lifestyle": 22,
+      "value": 65
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "12th",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "11th",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Mark Boos",
+      "title": "Head Coach",
+      "email": "mboos@illinois.edu",
+      "phone": "",
+      "profile": "Rebuilding Illinois program in competitive Big Ten. Rural Champaign campus."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Most accessible minutes in the Big Ten. Rural flat campus — low lifestyle fit for Olivier. Main draw is playing time and lower academic bar.",
+    "url": "https://fightingillini.com/sports/mens-soccer"
+  },
+  {
+    "id": "maryland_bten",
+    "profileDepth": "listed",
+    "name": "Maryland",
+    "full": "University of Maryland",
+    "loc": "College Park, MD",
+    "div": "D1",
+    "conf": "Big Ten",
+    "confKey": "big-ten",
+    "region": "northeast",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 12,
+    "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, exercise physiology. Pre-PT advisors on campus. Close to DC medical research ecosystem.",
+    "soccerLevel": "Big Ten — Elite",
+    "cost": "~$60k/yr",
+    "fin": {
+      "costNum": 60000
+    },
+    "aid": "Athletic",
+    "size": "40,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.8",
+      "minSchol": "3.0+",
+      "note": "Public research university. International athletes supported through athletic department.",
+      "status": "borderline"
+    },
+    "mapX": 402,
+    "mapY": 130,
+    "fitOlivier": 64,
+    "lensScores": {
+      "overall": 64,
+      "soccer": 85,
+      "academic": 65,
+      "minutes": 38,
+      "pt": 62,
+      "lifestyle": 32,
+      "value": 57
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "2nd",
+        "note": "Big Ten"
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd",
+        "note": "Big Ten"
+      }
+    ],
+    "titles": [
+      "NCAA 1968, 2005, 2008",
+      "Big Ten Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 5,
+      "notable": [],
+      "draftRank": "One of the top 10 all-time MLS producers nationally"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Sasho Cirovski",
+      "title": "Head Coach",
+      "email": "scirovski@umd.edu",
+      "phone": "",
+      "profile": "One of the most decorated coaches in college soccer. Multiple ACC and Big Ten titles. 300+ career wins."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Historically one of the best programs in the country. Note: Maryland is Big Ten (moved 2014), not ACC — remove duplicate from acc.json. Strong kinesiology + DC career proximity.",
+    "url": "https://umterps.com/sports/mens-soccer"
+  }
+]

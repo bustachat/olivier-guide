@@ -1,8 +1,22 @@
 # Olivier — US College Soccer & Exercise Science Scholarship Guide
 
-**Version 12.1** | Platform Sports Management × Sydney, AUS
+**Version 15** | Platform Sports Management × Sydney, AUS
 
-A personalised scholarship research tool covering 24 US universities across 9 conferences, with financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, college culture guides, and multi-select filtering.
+A personalised scholarship research tool covering 24 US universities across 9 conferences, with financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, college culture guides, multi-select filtering, **a 7-lens dynamic ranking system, and 2027-entry Minutes Outlook analysis**.
+
+## Changelog
+
+**v15** — Lens system + Minutes Outlook tab
+- 7 lenses: Best Overall, Soccer-First, Academic-First, Minutes Outlook, PT Pathway, Lifestyle-First, Value-First
+- Click any lens pill to re-rank schools dynamically; top 3 highlighted with amber badges
+- New "⏱ Minutes Outlook" tab projecting Olivier's 4-year playing-time trajectory (2027-2030) at every school
+- Based on 19-school roster analysis (535 players) — central midfielder competition projected by graduating class
+- Tiebreaker: existing fitOlivier score
+
+**v14** — UF "No Varsity" warning system
+- Flagged UF as not having a varsity men's soccer program (only club soccer)
+- Replaced UF fit score with N/A
+- Added "Reference only — No varsity" subsection to ACU Alignment tab
 
 ---
 

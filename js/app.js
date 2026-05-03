@@ -1,30 +1,30 @@
 // ═══════════════════════════════════════════════════════════════════════
-// app.js  —  Olivier Scholarship Guide v15
+// app.js  —  Olivier Scholarship Guide v16
 // All application logic. Data loaded from data/ JSON files.
-// v15: Adds lens system + 2027 Minutes Outlook tab.
+// v16: Conference-split JSON, Dashboard tab, sort system, listed-depth schools.
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v15';
+const APP_VERSION = 'v16';
 
 let unis = [];
 let conferences = [];
 let coachData = [];
 
-// Load all three data files in parallel, then initialise the app
+const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'other'];
+
 async function loadData() {
   try {
     const base = window.DATA_BASE_URL || './data/';
-    const [schoolsRes, confsRes, coachesRes] = await Promise.all([
-      fetch(base + 'schools.json'),
+    const [confResults, confsRes, coachesRes] = await Promise.all([
+      Promise.all(CONF_FILES.map(f => fetch(base + f + '.json').then(r => { if (!r.ok) throw new Error('Failed to load ' + f + '.json'); return r.json(); }))),
       fetch(base + 'conferences.json'),
       fetch(base + 'coaches.json')
     ]);
 
-    if (!schoolsRes.ok) throw new Error('Failed to load schools.json');
     if (!confsRes.ok)   throw new Error('Failed to load conferences.json');
     if (!coachesRes.ok) throw new Error('Failed to load coaches.json');
 
-    unis        = await schoolsRes.json();
+    unis        = confResults.flat();
     conferences = await confsRes.json();
     coachData   = await coachesRes.json();
 
@@ -41,9 +41,9 @@ async function loadData() {
 }
 
 function initApp() {
-  // Inject version everywhere it appears
   document.querySelectorAll('#ch-version').forEach(el => el.textContent = APP_VERSION);
   document.title = 'Olivier — US College Soccer Guide ' + APP_VERSION;
+  renderDashboard();
   renderCards();
   renderComparePage();
   renderConferences();
@@ -52,7 +52,7 @@ function initApp() {
   renderFinComparisonBars();
   renderMinutesOutlook();
   onAtarSlide();
-  applyLens(currentLens); // ensure initial sort+highlight
+  applyLens(currentLens);
 }
 
 // Division show/hide toggle
@@ -103,6 +103,46 @@ function lensRankByDivision(lensKey){
     out[div] = sorted.slice(0, Math.min(3, sorted.length));
   });
   return out;
+}
+
+function lensRankByConference(lensKey){
+  const confKeys = [...new Set(unis.map(u=>u.confKey).filter(Boolean))];
+  const out = {};
+  confKeys.forEach(ck=>{
+    const inConf = unis.filter(u=>u.confKey===ck);
+    const sorted = [...inConf].sort((a,b)=>{
+      const sa = (a.lensScores?.[lensKey])||0;
+      const sb = (b.lensScores?.[lensKey])||0;
+      return sb - sa;
+    });
+    out[ck] = sorted.slice(0,3);
+  });
+  return out;
+}
+
+const SORT_OPTIONS = [
+  { key:'fit',  label:'Best Fit',    fn:(a,b)=>(b.fitOlivier||0)-(a.fitOlivier||0) },
+  { key:'cost', label:'Lowest Cost', fn:(a,b)=>(a.fin?.costNum||0)-(b.fin?.costNum||0) },
+  { key:'acu',  label:'ACU Align',   fn:(a,b)=>(b.acuAlign||0)-(a.acuAlign||0) },
+  { key:'mls',  label:'MLS Pipeline',fn:(a,b)=>(b.proPlayers?.mlsPicks5yr||0)-(a.proPlayers?.mlsPicks5yr||0) },
+];
+let currentSort = 'fit';
+
+function applySort(key){
+  currentSort = key;
+  document.querySelectorAll('.sort-pill').forEach(p=>
+    p.classList.toggle('active', p.dataset.sort===key)
+  );
+  const sortFn = SORT_OPTIONS.find(s=>s.key===key).fn;
+  document.querySelectorAll('.cards-grid').forEach(grid=>{
+    const cards = [...grid.children];
+    cards.sort((a,b)=>{
+      const ua = unis.find(x=>x.id===a.id.replace('card-',''));
+      const ub = unis.find(x=>x.id===b.id.replace('card-',''));
+      return sortFn(ua||{}, ub||{});
+    });
+    cards.forEach(c=>grid.appendChild(c));
+  });
 }
 
 function renderLensControls(){
@@ -221,8 +261,8 @@ function renderCards(){
   sections.forEach(sec=>{
     const secUnis=unis.filter(u=>u.div===sec.div);
     const el=document.createElement('div');
-    el.className='conf-section';el.dataset.div=sec.div;
-    el.innerHTML=`<div class="section-head"><h2>${sec.label}</h2><span class="dbadge d-${sec.div}">${sec.div}</span><button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Hide/show this division">Hide</button></div><div class="section-intro">${sec.intro}</div><div class="cards-grid" id="grid-${sec.div}"></div>`;
+    el.className='conf-section div-collapsed';el.dataset.div=sec.div;
+    el.innerHTML=`<div class="section-head"><h2>${sec.label}</h2><span class="dbadge d-${sec.div}">${sec.div}</span><button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Show/hide this division">Show</button></div><div class="section-intro">${sec.intro}</div><div class="cards-grid" id="grid-${sec.div}"></div>`;
     container.appendChild(el);
     const grid=el.querySelector(`#grid-${sec.div}`);
     secUnis.forEach(u=>grid.appendChild(buildCard(u)));
@@ -236,6 +276,8 @@ function buildCard(u){
   el.dataset.city=u.city?'true':'false';
   el.dataset.acualign=u.acuAlign>=14?'full':u.acuAlign>=10?'strong':'partial';
   el.dataset.lensdivtop='false';
+  el.dataset.conf=u.conf;
+  el.dataset.confkey=u.confKey||'other';
   const gpaBucket=!u.gpa?'low':
     (u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open'))?'none':
     (u.gpa.minEntry.includes('2.0')||u.gpa.minEntry.includes('2.3'))?'low':
@@ -246,7 +288,10 @@ function buildCard(u){
   el.dataset.facrating=facRating;
   el.id='card-'+u.id;
 
-  const devAvg=Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
+  const isListed = u.profileDepth === 'listed';
+  const devAvg = Object.values(u.devScores).every(v => v === 0)
+    ? null
+    : Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
   const ivyWarn=u.div==='IVY'?'<div class="ivy-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ Ivy: No athletic scholarships. Need-based only. GPA 2.8 likely insufficient.</div>':'';
 
   // GPA compact row
@@ -297,7 +342,7 @@ function buildCard(u){
     ivyWarn+
     '<div class="score-strip">'+
       '<div class="ss-item" data-tip="Fit Score: Overall match for Olivier across climate, lifestyle, soccer level, exercise science degree quality, and PT pathway. 90%+ = excellent fit."><div class="ss-val" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
-      '<div class="ss-item" data-tip="Dev Score: Average of 4 development sub-scores — Tactical, Technical, Fitness, and PT Pathway quality. Reflects how well the program will develop Olivier as a player and pre-PT student."><div class="ss-val" style="color:'+sc(devAvg)+'">'+devAvg+'%</div><div class="ss-lbl">Dev Score</div></div>'+
+      '<div class="ss-item" data-tip="Dev Score: Average of 4 development sub-scores — Tactical, Technical, Fitness, and PT Pathway quality. Reflects how well the program will develop Olivier as a player and pre-PT student."><div class="ss-val" style="color:'+(devAvg===null?'var(--hint)':sc(devAvg))+'">'+(devAvg===null?'—':devAvg+'%')+'</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item" data-tip="ACU Alignment: How many of Olivier\'s 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial."><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
     '<div class="degree-band">'+
@@ -322,7 +367,7 @@ function buildCard(u){
       '<div class="card-coach">Coach: <strong>'+u.coach.name+'</strong></div>'+
       '<div class="card-btns">'+
         '<button class="compare-btn'+(inSchol?' selected':'')+'" id="cbtn-'+u.id+'" onclick="toggleCompare(\''+u.id+'\',this)">'+(inSchol?'✓':'+')+' Compare</button>'+
-        '<button class="detail-btn" onclick="openDetail(\''+u.id+'\')">Details →</button>'+
+        (isListed?'<button class="detail-btn listed-btn" disabled>Preview</button>':'<button class="detail-btn" onclick="openDetail(\''+u.id+'\')">Details →</button>')+
       '</div>'+
     '</div>';
   return el;
@@ -703,15 +748,12 @@ function onAtarSlide() {
   const atar = parseInt(document.getElementById('atar-slider').value);
   currentAtarGpa = atarToGpa(atar);
 
-  // Update readout
   document.getElementById('atar-display').textContent = atar;
   document.getElementById('gpa-display').textContent = currentAtarGpa.toFixed(1);
 
-  // Re-render all GPA rows on visible cards dynamically
   refreshAllGpaRows();
-
-  // Update summary counts
   updateAtarCounts();
+  if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa);
 }
 
 function refreshAllGpaRows() {

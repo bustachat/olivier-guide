@@ -1,0 +1,857 @@
+[
+  {
+    "id": "ucsb",
+    "name": "UCSB",
+    "full": "UC Santa Barbara",
+    "loc": "Santa Barbara, CA",
+    "region": "west",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e0f2fe",
+      "#0284c7"
+    ],
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "1st",
+        "note": "Big West Champions"
+      },
+      {
+        "yr": 2023,
+        "pos": "2nd",
+        "note": "Big West"
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd",
+        "note": "Big West"
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd",
+        "note": "Big West"
+      },
+      {
+        "yr": 2020,
+        "pos": "2nd",
+        "note": "Big West"
+      }
+    ],
+    "titles": [
+      "NCAA 2006",
+      "Big West 2024, 2022, 2021, 2018"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "Manu Duah — #1 overall 2025 (highest ever Big West pick)",
+        "Multiple USL signings annually"
+      ],
+      "draftRank": "Strong regional pipeline"
+    },
+    "acRank": "Top 50 National",
+    "kinRank": "Strong",
+    "degreeTitle": "B.S. in Kinesiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong — anatomy, physiology, biomechanics, sport psych all covered. Motor development/control less structured than at UF or Indiana.",
+    "soccerLevel": "Big West — Competitive",
+    "cost": "~$57k/yr",
+    "aid": "Athletic + Merit",
+    "size": "26,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5 NCAA core (min)",
+      "minSchol": "3.3+ for UC fee waiver programs",
+      "note": "UC system is merit-aware. International student GPA review differs from domestic.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 57000,
+      "tuition": 36000,
+      "roomBoard": 17000,
+      "fees": 4000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 6000,
+      "aidType": "athletic+merit",
+      "internationalNote": "International students qualify for athletic aid. UC system merit aid limited for internationals. Athletic package is primary lever."
+    },
+    "culture": {
+      "vibe": "Laid-back Californian surf culture. UCSB is famous for its relaxed vibe — students study hard but also surf, bike to class, and socialise on the beach. Isla Vista (adjacent neighbourhood) is one of the most social student areas in California.",
+      "thingsToDo": "Surfing at Goleta Beach (walking distance), biking along the coast, kayaking, Santa Barbara farmers markets, wine country day trips, hiking in the Santa Ynez Mountains, whale watching, State Street restaurants.",
+      "socialScene": "Very social campus. Large student population but feels intimate due to coastal setting. International students welcomed — strong surf and outdoor culture. Less city-oriented than LA but more relaxed.",
+      "olivierMatch": "★★★★★ Closest climate and lifestyle to Sydney in entire guide. Beach at your doorstep. Relaxed atmosphere. Less urban bustle than LA but arguably better day-to-day liveability for an Australian.",
+      "lifestyleTags": "Laid-back, coastal, outdoor"
+    },
+    "facilityDetails": {
+      "stadium": "Harder Stadium — 17,000 capacity, one of the largest dedicated soccer stadiums in US college soccer. Natural grass surface, full broadcast infrastructure, video scoreboard, 360° permanent seating.",
+      "trainingFields": "2 practice fields adjacent to Harder Stadium. 1 additional satellite training field on east campus. All-weather surfaces, permanent floodlighting. Santa Barbara climate allows year-round outdoor training.",
+      "strengthConditioning": "UCSB Athletics Weight Room — 15,000 sq ft shared facility with strength coaches for all Olympic sports. Free weights, Olympic platforms, Keiser pneumatic systems. Soccer-specific conditioning blocks scheduled with dedicated S&C coach.",
+      "sportsScience": "Exercise Science teaching labs with metabolic carts (VO2 max), body composition analysis (DEXA), and functional movement screening. GPS tracking via Statsports system on all training sessions. Video analysis system (Hudl) with iPad tablets for all players.",
+      "sportsMed": "Dedicated athletic trainer for soccer. On-site treatment room with ultrasound, e-stim, ice baths. Goleta Valley Cottage Hospital sports medicine partnership for imaging and surgical consultation.",
+      "academicLabs": "UCSB Department of Kinesiology: teaching labs for biomechanics, motor learning, exercise physiology. Bren Hall science facilities available to kinesiology students. Marine Science Institute provides additional lab access. Pre-PT advising formally integrated into kinesiology program.",
+      "extras": "UCSB Recreation Center (one of the most highly rated campus rec facilities in the USA) — climbing wall, Olympic pool, fitness studios. Team video room in Harder Stadium. Beach volleyball courts, surfboard rental, ocean swimming all on campus.",
+      "rating": "Excellent",
+      "note": "Harder Stadium's 17,000 capacity creates an elite match atmosphere unmatched in D1 outside the top 15 programs nationally. The campus recreation environment is extraordinary — ocean, mountains, and world-class facilities all accessible."
+    },
+    "coach": {
+      "name": "Tim Von Steeg",
+      "title": "Head Coach (20+ seasons)",
+      "email": "tvonsteeg@athletics.ucsb.edu",
+      "phone": "805-893-3229",
+      "profile": "350+ career wins. Manu Duah #1 overall pick 2025. One of the most respected coaches in D1."
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 85,
+      "fitness": 80,
+      "ptPath": 78
+    },
+    "fitOlivier": 83,
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Harder Stadium (17k cap)",
+      "Campus Rec Centre",
+      "Exercise Science Labs"
+    ],
+    "courses": [
+      "KINE 1 — The Moving Body",
+      "KINE 105 — Sport Physiology",
+      "KINE 108 — Biomechanics",
+      "KINE 160 — Athletic Training"
+    ],
+    "rec": "Mediterranean climate identical to Sydney. Manu Duah #1 pick proves D1 pro calibre. Strong kinesiology. Beach campus lifestyle match.",
+    "url": "https://ucsbgauchos.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 83,
+      "soccer": 69,
+      "academic": 73,
+      "minutes": 42,
+      "pt": 66,
+      "lifestyle": 100,
+      "value": 69
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 11,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Justin Gomes",
+        "Kaden Standish",
+        "Dominick Phanco"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Mika Ney",
+        "Ethan Senter"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Steinar Bjornsson",
+        "Jacob Medina",
+        "Jack Middleton",
+        "Ty Branigan"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ]
+    },
+    "profileDepth": "full",
+    "confKey": "big-west",
+    "mapX": 62,
+    "mapY": 150
+  },
+  {
+    "id": "calpoly",
+    "profileDepth": "listed",
+    "name": "Cal Poly",
+    "full": "California Polytechnic State University",
+    "loc": "San Luis Obispo, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong kinesiology — learn-by-doing philosophy. Anatomy, physiology, biomechanics all covered with strong lab component.",
+    "soccerLevel": "Big West — Competitive",
+    "cost": "~$32k/yr",
+    "fin": {
+      "costNum": 32000
+    },
+    "aid": "Athletic",
+    "size": "22,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Cal Poly's 'learn by doing' model is unique. Athletic scholarship pathway available.",
+      "status": "borderline"
+    },
+    "mapX": 63,
+    "mapY": 152,
+    "fitOlivier": 68,
+    "lensScores": {
+      "overall": 68,
+      "soccer": 65,
+      "academic": 65,
+      "minutes": 50,
+      "pt": 60,
+      "lifestyle": 78,
+      "value": 85
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "3rd",
+        "note": "Big West"
+      },
+      {
+        "yr": 2023,
+        "pos": "4th",
+        "note": "Big West"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Developing pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "Steve Sampson",
+      "title": "Head Coach",
+      "email": "ssampson@calpoly.edu",
+      "phone": "",
+      "profile": "Experienced coach at SLO — one of California's most desirable campus locations."
+    },
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Best value California coastal option. SLO campus lifestyle is outstanding — beaches, wine country, mountains. Low cost for a California D1.",
+    "url": "https://gopoly.com/sports/mens-soccer"
+  },
+  {
+    "id": "ucdavis",
+    "profileDepth": "listed",
+    "name": "UC Davis",
+    "full": "University of California, Davis",
+    "loc": "Davis, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Exercise Biology",
+    "acuAlign": 11,
+    "acuAlignNote": "Exercise Biology covers anatomy, physiology, biomechanics, motor learning. UC Davis Medical Center provides strong clinical access for pre-PT.",
+    "soccerLevel": "Big West — Competitive",
+    "cost": "~$58k/yr",
+    "fin": {
+      "costNum": 58000
+    },
+    "aid": "Athletic",
+    "size": "39,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.8",
+      "minSchol": "3.0+",
+      "note": "Selective UC campus. International athletes qualify for athletic aid.",
+      "status": "borderline"
+    },
+    "mapX": 60,
+    "mapY": 132,
+    "fitOlivier": 62,
+    "lensScores": {
+      "overall": 62,
+      "soccer": 62,
+      "academic": 70,
+      "minutes": 50,
+      "pt": 62,
+      "lifestyle": 60,
+      "value": 58
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "4th",
+        "note": "Big West"
+      },
+      {
+        "yr": 2023,
+        "pos": "5th",
+        "note": "Big West"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Developing pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@ucdavis.edu",
+      "phone": "",
+      "profile": "Building UC Davis in competitive Big West."
+    },
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "UC quality academics. Davis is a bike-friendly college town near Sacramento. Warm inland California — not coastal but pleasant.",
+    "url": "https://ucdavisaggies.com/sports/mens-soccer"
+  },
+  {
+    "id": "ucirvine",
+    "profileDepth": "listed",
+    "name": "UC Irvine",
+    "full": "University of California, Irvine",
+    "loc": "Irvine, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Exercise science covers anatomy, physiology, biomechanics. UC Irvine Medical Center provides strong pre-PT clinical access.",
+    "soccerLevel": "Big West — Competitive",
+    "cost": "~$55k/yr",
+    "fin": {
+      "costNum": 55000
+    },
+    "aid": "Athletic",
+    "size": "36,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.8",
+      "minSchol": "3.0+",
+      "note": "Selective UC campus. Athletic scholarship pathway available for international athletes.",
+      "status": "borderline"
+    },
+    "mapX": 78,
+    "mapY": 160,
+    "fitOlivier": 68,
+    "lensScores": {
+      "overall": 68,
+      "soccer": 62,
+      "academic": 68,
+      "minutes": 52,
+      "pt": 62,
+      "lifestyle": 82,
+      "value": 62
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "5th",
+        "note": "Big West"
+      },
+      {
+        "yr": 2023,
+        "pos": "4th",
+        "note": "Big West"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "OC/LA market access"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@uci.edu",
+      "phone": "",
+      "profile": "Building UCI in Big West. Orange County location is a lifestyle advantage."
+    },
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Orange County location — warm, near beach, LA day trips. Strong lifestyle for Olivier. Soccer is mid-tier Big West.",
+    "url": "https://ucirvineantares.com/sports/mens-soccer"
+  },
+  {
+    "id": "ucriverside",
+    "profileDepth": "listed",
+    "name": "UC Riverside",
+    "full": "University of California, Riverside",
+    "loc": "Riverside, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 10,
+    "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Developing program — pre-PT support available.",
+    "soccerLevel": "Big West — Developing",
+    "cost": "~$50k/yr",
+    "fin": {
+      "costNum": 50000
+    },
+    "aid": "Athletic",
+    "size": "26,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Accessible UC campus. Strong scholarship packages for international athletes.",
+      "status": "borderline"
+    },
+    "mapX": 83,
+    "mapY": 163,
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 55,
+      "academic": 60,
+      "minutes": 58,
+      "pt": 52,
+      "lifestyle": 55,
+      "value": 68
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "8th",
+        "note": "Big West"
+      },
+      {
+        "yr": 2023,
+        "pos": "8th",
+        "note": "Big West"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "Developing pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@ucr.edu",
+      "phone": "",
+      "profile": "Developing UC Riverside program in Big West."
+    },
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Inland Southern California — hot and dry. More minutes opportunity than stronger UC campuses. Weakest soccer in this batch.",
+    "url": "https://ucrhighlanders.com/sports/mens-soccer"
+  },
+  {
+    "id": "ucsd",
+    "profileDepth": "listed",
+    "name": "UC San Diego",
+    "full": "University of California, San Diego",
+    "loc": "La Jolla, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "degreeTitle": "B.S. Exercise and Rehabilitative Sciences",
+    "acuAlign": 12,
+    "acuAlignNote": "Exercise and Rehabilitative Sciences — one of the most PT-aligned degrees in the UC system. Anatomy, physiology, biomechanics, clinical rehabilitation all covered. UCSD Health for clinical access.",
+    "soccerLevel": "Big West — Competitive",
+    "cost": "~$55k/yr",
+    "fin": {
+      "costNum": 55000
+    },
+    "aid": "Athletic",
+    "size": "33,000",
+    "prePT": "Excellent",
+    "gpa": {
+      "minEntry": "3.0",
+      "minSchol": "3.2+",
+      "note": "Highly selective UC campus (recently elevated to major research university). Athletic scholarship available.",
+      "status": "below"
+    },
+    "mapX": 80,
+    "mapY": 168,
+    "fitOlivier": 72,
+    "lensScores": {
+      "overall": 72,
+      "soccer": 65,
+      "academic": 80,
+      "minutes": 50,
+      "pt": 82,
+      "lifestyle": 90,
+      "value": 65
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "2nd",
+        "note": "Big West"
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd",
+        "note": "Big West"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Growing pipeline — program elevating quickly"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@ucsd.edu",
+      "phone": "",
+      "profile": "Rapidly elevating UCSD program. La Jolla setting is exceptional."
+    },
+    "tags": [
+      "warm",
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "San Diego/La Jolla — best beach city in the guide after UCSB. Exercise and Rehabilitative Sciences is ideal for Olivier's DPT path. Rising program.",
+    "url": "https://ucsdtritons.com/sports/mens-soccer"
+  },
+  {
+    "id": "longbeach",
+    "profileDepth": "listed",
+    "name": "Long Beach State",
+    "full": "California State University, Long Beach",
+    "loc": "Long Beach, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 10,
+    "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Long Beach Memorial Medical Center for pre-PT clinical access.",
+    "soccerLevel": "Big West — Competitive",
+    "cost": "~$30k/yr",
+    "fin": {
+      "costNum": 30000
+    },
+    "aid": "Athletic",
+    "size": "37,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.3",
+      "minSchol": "2.5+",
+      "note": "Very accessible CSU campus. Strong scholarship packages for international athletes.",
+      "status": "ok"
+    },
+    "mapX": 76,
+    "mapY": 157,
+    "fitOlivier": 65,
+    "lensScores": {
+      "overall": 65,
+      "soccer": 62,
+      "academic": 55,
+      "minutes": 52,
+      "pt": 55,
+      "lifestyle": 82,
+      "value": 88
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "6th",
+        "note": "Big West"
+      },
+      {
+        "yr": 2023,
+        "pos": "5th",
+        "note": "Big West"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "LA market access"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@csulb.edu",
+      "phone": "",
+      "profile": "Big West program in LA metro area."
+    },
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "LA metro + beach + very low cost = best value lifestyle option in the Big West. Soccer is mid-tier but LA career access is a real bonus.",
+    "url": "https://longbeachstate.com/sports/mens-soccer"
+  },
+  {
+    "id": "hawaii",
+    "profileDepth": "listed",
+    "name": "Hawaii",
+    "full": "University of Hawaii at Manoa",
+    "loc": "Honolulu, HI",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Exercise and Sports Science",
+    "acuAlign": 9,
+    "acuAlignNote": "Exercise and sports science — covers core subjects. Hawaii is geographically isolated, which limits some clinical placement options.",
+    "soccerLevel": "Big West — Competitive",
+    "cost": "~$42k/yr",
+    "fin": {
+      "costNum": 42000
+    },
+    "aid": "Athletic",
+    "size": "18,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.3",
+      "minSchol": "2.5+",
+      "note": "Accessible state university. Travel costs to/from Australia are high — factored separately.",
+      "status": "ok"
+    },
+    "mapX": 35,
+    "mapY": 215,
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 60,
+      "academic": 50,
+      "minutes": 52,
+      "pt": 45,
+      "lifestyle": 88,
+      "value": 68
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "7th",
+        "note": "Big West"
+      },
+      {
+        "yr": 2023,
+        "pos": "6th",
+        "note": "Big West"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Limited pipeline due to geography"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@hawaii.edu",
+      "phone": "",
+      "profile": "Island program — unique lifestyle, isolated competition schedule."
+    },
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Lifestyle 10/10 — Honolulu beach life. Geographically isolated for recruiting and travel. Extra flight cost to/from Australia. Lower academic/soccer tier.",
+    "url": "https://hawaiiathletics.com/sports/mens-soccer"
+  },
+  {
+    "id": "csuf",
+    "profileDepth": "listed",
+    "name": "CS Fullerton",
+    "full": "California State University, Fullerton",
+    "loc": "Fullerton, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 10,
+    "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Orange County clinical network for pre-PT placement.",
+    "soccerLevel": "Big West — Developing",
+    "cost": "~$28k/yr",
+    "fin": {
+      "costNum": 28000
+    },
+    "aid": "Athletic",
+    "size": "40,000",
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.0",
+      "minSchol": "2.3+",
+      "note": "Very accessible CSU campus. Strong scholarship packages for international athletes.",
+      "status": "ok"
+    },
+    "mapX": 80,
+    "mapY": 162,
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 55,
+      "academic": 50,
+      "minutes": 60,
+      "pt": 50,
+      "lifestyle": 78,
+      "value": 90
+    },
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "9th",
+        "note": "Big West"
+      },
+      {
+        "yr": 2023,
+        "pos": "8th",
+        "note": "Big West"
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "coach": {
+      "name": "TBD",
+      "title": "Head Coach",
+      "email": "soccer@fullerton.edu",
+      "phone": "",
+      "profile": "Developing Big West program in Orange County."
+    },
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "Lowest-cost warm SoCal option. OC location is excellent lifestyle. Soccer is developing — most realistic minutes in Big West.",
+    "url": "https://fullertontitans.com/sports/mens-soccer"
+  }
+]

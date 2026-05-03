@@ -289,6 +289,7 @@ function buildCard(u){
   el.id='card-'+u.id;
 
   const isListed = u.profileDepth === 'listed';
+  const cardColor = u.color || ['#e0e7ff', '#4f46e5'];
   const devAvg = Object.values(u.devScores).every(v => v === 0)
     ? null
     : Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
@@ -328,7 +329,7 @@ function buildCard(u){
   el.innerHTML=
     topBadge+
     '<div class="card-head2">'+
-      '<div class="card-av2" style="background:'+u.color[0]+';color:'+u.color[1]+'">'+u.name.slice(0,4)+'</div>'+
+      '<div class="card-av2" style="background:'+cardColor[0]+';color:'+cardColor[1]+'">'+u.name.slice(0,4)+'</div>'+
       '<div class="card-id">'+
         '<h3>'+u.full+'</h3>'+
         '<div class="card-sub">'+
@@ -1049,7 +1050,7 @@ function renderFinSchoolSelector(){
   const container = document.getElementById('fin-school-selector');
   container.innerHTML = '';
   unis.forEach(u=>{
-    if(!u.fin) return;
+    if(!u.fin || u.profileDepth === 'listed') return;
     const btn = document.createElement('button');
     btn.className = 'fin-school-btn' + (finCurrentSchool&&finCurrentSchool.id===u.id?' selected':'');
     btn.innerHTML = `<div class="fsb-name">${u.name}</div><div class="fsb-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span> ${fmt(u.fin.costNum)}/yr full cost</div>`;

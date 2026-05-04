@@ -1,49 +1,64 @@
 // ═══════════════════════════════════════════════════════════════════════
 // dashboard.js  —  Olivier Scholarship Guide v16
-// Self-contained Dashboard tab module.
-// Reads: unis[] / conferences[] / currentAtarGpa  (set by app.js)
+// Reads: unis[] / LENSES[] (set by app.js / scores.js)
 // Own state: dashGpa, dashBudget, dashAthlete
 // ═══════════════════════════════════════════════════════════════════════
 
-let dashGpa    = 2.8;
-let dashBudget = 55000;
+let dashGpa     = 2.8;
+let dashBudget  = 55000;
 let dashAthlete = {};
 
-// Division dot colours — consistent with card colour system
+// Division colours — consistent with card system
 const DASH_DIV_COLOR = {
-  'D1':   '#4f46e5',
-  'IVY':  '#7c3aed',
-  'D2':   '#059669',
+  'D1':   '#e11d48',
+  'IVY':  '#b45309',
+  'D2':   '#0284c7',
   'NAIA': '#d97706',
-  'D3':   '#6b7280',
-  'JUCO': '#9ca3af',
+  'D3':   '#7c3aed',
+  'JUCO': '#6b7280',
 };
 
-const CONF_LABELS = {
-  'acc':      { label:'ACC',      tier:'Power 4' },
-  'big-ten':  { label:'Big Ten',  tier:'Power 4' },
-  'big-east': { label:'Big East', tier:'Major'   },
-  'aac':      { label:'AAC',      tier:'Major'   },
-  'big-west': { label:'Big West', tier:'Major'   },
-  'caa':      { label:'CAA',      tier:'Mid'     },
-  'other':    { label:'Other',    tier:'D2/NAIA' },
+const CONF_META = {
+  'acc':      { label:'ACC',      tier:'P4',     tierCls:'bp5' },
+  'big-ten':  { label:'Big Ten',  tier:'P4',     tierCls:'bp5' },
+  'big-east': { label:'Big East', tier:'P4',     tierCls:'bp5' },
+  'aac':      { label:'AAC',      tier:'Hi-Maj', tierCls:'bhi' },
+  'big-west': { label:'Big West', tier:'Hi-Maj', tierCls:'bhi' },
+  'caa':      { label:'CAA',      tier:'Mid-Maj',tierCls:'bhi' },
+  'other':    { label:'D2/NAIA',  tier:'D2',     tierCls:'bd2' },
 };
 
-// ─── Reachability helper ──────────────────────────────────────────────────────
-function dashReachable(school) {
-  const gpaMin = parseFloat(school.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
-  const costNum = school.fin?.costNum ?? 0;
+// ATAR → GPA table
+const ATAR_GPA = [
+  [99,4.0],[95,3.9],[90,3.7],[85,3.5],[80,3.3],
+  [75,3.0],[70,2.8],[65,2.6],[60,2.4],[55,2.2],[50,2.0]
+];
+function atarToGpa(a) {
+  for (let i = 0; i < ATAR_GPA.length - 1; i++) {
+    const [a1,g1] = ATAR_GPA[i], [a2,g2] = ATAR_GPA[i+1];
+    if (a <= a1 && a >= a2) {
+      const t = (a - a2) / (a1 - a2);
+      return Math.round((g2 + t*(g1-g2)) * 10) / 10;
+    }
+  }
+  return a >= 99 ? 4.0 : 2.0;
+}
+
+// ─── Reachability ─────────────────────────────────────────────────────────────
+function dashReachable(u) {
+  const gpaMin = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+  const costNum = u.fin?.costNum ?? 0;
   return dashGpa >= gpaMin && costNum <= dashBudget;
 }
 
-// ─── Entry point — called once from initApp() ─────────────────────────────────
+// ─── Entry point ──────────────────────────────────────────────────────────────
 async function renderDashboard() {
-  const base = window.DATA_BASE_URL || './data/';
+  const base = window.DATA_BASE_URL || './';
   try {
-    const res = await fetch(base.replace('data/', '') + 'athletes/olivier.json');
+    const res = await fetch(base + 'athletes/olivier.json');
     dashAthlete = await res.json();
   } catch (_) {
-    dashAthlete = { budgetUSD: 55000, shortlist: [], defaultAtar: 70 };
+    dashAthlete = { budgetUSD:55000, shortlist:['fiu','pba','lynn','ucsb'], defaultAtar:70, currentGpa:2.8 };
   }
 
   dashBudget = dashAthlete.budgetUSD || 55000;
@@ -52,307 +67,558 @@ async function renderDashboard() {
   const el = document.getElementById('page-dashboard');
   if (!el) return;
 
-  el.innerHTML = `
-    <div style="max-width:1100px;margin:0 auto;padding:1.5rem 1rem">
-
-      <!-- Sliders row -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem">
-        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem 1.25rem">
-          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem">
-            <span style="font-size:13px;font-weight:600;color:#1f2937">ATAR → GPA</span>
-            <span style="font-size:12px;color:#6b7280">ATAR <strong id="dash-atar-display">70</strong> → GPA <strong id="dash-gpa-display">2.8</strong></span>
-          </div>
-          <p style="font-size:11.5px;color:#9ca3af;margin:0 0 .5rem">Uses same slider as main tab — move there to update</p>
-          <div style="height:4px;background:#e5e7eb;border-radius:2px;position:relative">
-            <div id="dash-atar-bar" style="height:4px;background:#4f46e5;border-radius:2px;width:50%"></div>
-          </div>
-        </div>
-        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem 1.25rem">
-          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem">
-            <span style="font-size:13px;font-weight:600;color:#1f2937">Annual Budget</span>
-            <span style="font-size:12px;color:#6b7280"><strong id="bud-display">$55k</strong> / yr</span>
-          </div>
-          <input id="bud-slider" type="range" min="20" max="90" step="5"
-            value="${Math.round(dashBudget/1000)}"
-            style="width:100%;accent-color:#4f46e5;margin:0">
-          <div style="display:flex;justify-content:space-between;margin-top:2px">
-            <span style="font-size:10px;color:#9ca3af">$20k</span>
-            <span style="font-size:10px;color:#9ca3af">$90k</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Stat strip -->
-      <div id="dash-stat-strip" style="display:grid;grid-template-columns:repeat(5,1fr);gap:.75rem;margin-bottom:1.5rem"></div>
-
-      <!-- Shortlist -->
-      <div style="margin-bottom:1.5rem">
-        <h3 style="font-size:13px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .75rem">Shortlist</h3>
-        <div id="dash-shortlist" style="display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem"></div>
-      </div>
-
-      <!-- Lens chips -->
-      <div style="margin-bottom:1.5rem">
-        <h3 style="font-size:13px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .75rem">Best per Lens</h3>
-        <div id="dash-lens-chips" style="display:flex;flex-wrap:wrap;gap:.5rem"></div>
-      </div>
-
-      <!-- Conference strip -->
-      <div style="margin-bottom:1.5rem">
-        <h3 style="font-size:13px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .75rem">Conferences</h3>
-        <div id="dash-conf-strip" style="display:grid;grid-template-columns:repeat(7,1fr);gap:.75rem"></div>
-      </div>
-
-      <!-- Map + Brackets row -->
-      <div style="display:grid;grid-template-columns:3fr 2fr;gap:1.5rem">
-        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem">
-          <h3 style="font-size:13px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .75rem">School Map</h3>
-          <svg id="dash-map-svg" viewBox="0 0 500 300" style="width:100%;border-radius:8px;background:#f0f4f8"></svg>
-        </div>
-        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem">
-          <h3 style="font-size:13px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .75rem">Cost Brackets</h3>
-          <div id="dash-brackets" style="display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;height:220px"></div>
-        </div>
-      </div>
-
-    </div>`;
-
-  // Budget slider handler
-  document.getElementById('bud-slider').addEventListener('input', function () {
-    dashBudget = parseInt(this.value) * 1000;
-    document.getElementById('bud-display').textContent = '$' + this.value + 'k';
-    updateDashboard();
-  });
-
+  el.innerHTML = buildDashboardShell();
+  attachSliderHandlers();
   drawMapBase();
   updateDashboard();
 }
 
-// ─── Called when ATAR slider moves (hooked in app.js onAtarSlide) ─────────────
-function syncDashGpa(gpa) {
-  dashGpa = gpa;
-  if (document.getElementById('dash-gpa-display')) updateDashboard();
+// ─── Shell HTML ───────────────────────────────────────────────────────────────
+function buildDashboardShell() {
+  const initAtar = dashAthlete.defaultAtar || 70;
+  const initBud  = Math.round(dashBudget / 1000);
+
+  return `
+<div class="dash-wrap">
+
+  <!-- ── Slider panel ───────────────────────────────────────────── -->
+  <div class="dash-slider-panel">
+    <div class="dash-sp-block">
+      <div class="dash-sp-header">
+        <span class="dash-sp-label">ATAR → GPA eligibility</span>
+        <div class="dash-sp-readout">
+          <span class="dash-sp-big" id="dash-atar-val">${initAtar}</span>
+          <span class="dash-sp-sep">=</span>
+          <span class="dash-sp-sub" id="dash-gpa-val">${dashGpa.toFixed(1)}</span>
+          <span class="dash-sp-unit">GPA</span>
+        </div>
+      </div>
+      <input type="range" class="dash-range" min="50" max="99" step="1"
+        value="${initAtar}" id="dash-atar-slider">
+      <div class="dash-ticks">
+        <span>50</span><span>65</span><span>80</span><span>99</span>
+      </div>
+      <div class="dash-sp-result" id="dash-gpa-result">— schools GPA-eligible</div>
+    </div>
+    <div class="dash-sp-block">
+      <div class="dash-sp-header">
+        <span class="dash-sp-label">Annual budget</span>
+        <div class="dash-sp-readout">
+          <span class="dash-sp-big" id="dash-bud-val">$${initBud}k</span>
+        </div>
+      </div>
+      <input type="range" class="dash-range" min="20" max="90" step="5"
+        value="${initBud}" id="dash-bud-slider">
+      <div class="dash-ticks">
+        <span>$20k</span><span>$40k</span><span>$60k</span><span>$90k</span>
+      </div>
+      <div class="dash-sp-result" id="dash-bud-result">— schools within budget</div>
+    </div>
+  </div>
+
+  <!-- ── Snapshot strip ─────────────────────────────────────────── -->
+  <div class="dash-sec-lbl">Snapshot</div>
+  <div class="dash-stat-strip" id="dash-stat-strip">
+    <div class="dash-sc"><span class="dash-sc-num indigo" id="ds-eligible">—</span><div class="dash-sc-right"><div class="dash-sc-lbl">GPA eligible</div></div></div>
+    <div class="dash-sc"><span class="dash-sc-num emerald" id="ds-budget">—</span><div class="dash-sc-right"><div class="dash-sc-lbl">Within budget</div></div></div>
+    <div class="dash-sc"><span class="dash-sc-num emerald" id="ds-both">—</span><div class="dash-sc-right"><div class="dash-sc-lbl">Real options</div><div class="dash-sc-sub">eligible + affordable</div></div></div>
+    <div class="dash-sc"><span class="dash-sc-num amber" id="ds-cost">—</span><div class="dash-sc-right"><div class="dash-sc-lbl">Avg cost eligible</div></div></div>
+    <div class="dash-sc"><span class="dash-sc-num emerald dash-sc-name" id="ds-best">—</span><div class="dash-sc-right"><div class="dash-sc-lbl">Best fit reachable</div></div></div>
+  </div>
+
+  <!-- ── Shortlist ──────────────────────────────────────────────── -->
+  <div class="dash-sec-lbl">Shortlist</div>
+  <div class="dash-shortlist-row" id="dash-shortlist"></div>
+
+  <!-- ── Lens chips ─────────────────────────────────────────────── -->
+  <div class="dash-sec-lbl">Best per lens — dims when GPA or budget rules out current #1</div>
+  <div class="dash-lens-row" id="dash-lens-row"></div>
+
+  <!-- ── Conference strip ───────────────────────────────────────── -->
+  <div class="dash-sec-lbl">Conferences</div>
+  <div class="dash-conf-strip" id="dash-conf-strip"></div>
+
+  <!-- ── Map + Brackets ─────────────────────────────────────────── -->
+  <div class="dash-main-grid">
+    <div class="dash-panel">
+      <div class="dash-panel-title">School map — dot size = fit · hover for details</div>
+      <div class="dash-map-wrap" id="dash-map-wrap">
+        <svg id="dash-map-svg" viewBox="0 0 500 300" style="display:block;width:100%"></svg>
+        <div class="dash-map-tip" id="dash-map-tip"></div>
+      </div>
+      <div class="dash-map-legend">
+        <div class="dash-ml"><div class="dash-ml-dot" style="background:#e11d48"></div>D1</div>
+        <div class="dash-ml"><div class="dash-ml-dot" style="background:#0284c7"></div>D2</div>
+        <div class="dash-ml"><div class="dash-ml-dot" style="background:#d97706"></div>NAIA</div>
+        <div class="dash-ml"><div class="dash-ml-dot" style="background:#7c3aed"></div>D3</div>
+        <div class="dash-ml"><div class="dash-ml-dot" style="background:#6b7280"></div>JUCO</div>
+        <div class="dash-ml"><div class="dash-ml-dot" style="background:#b45309"></div>IVY</div>
+      </div>
+    </div>
+    <div class="dash-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.55rem">
+        <div class="dash-panel-title" style="margin:0">Cost by bracket</div>
+        <div style="font-size:8px;color:var(--hint)">faded = ineligible or over budget</div>
+      </div>
+      <div class="dash-bracket-grid" id="dash-brackets"></div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+.dash-wrap{padding:.85rem;font-family:'Outfit',system-ui,sans-serif;}
+
+/* Slider panel */
+.dash-slider-panel{background:var(--navy);border-radius:10px;padding:.65rem 1rem;margin-bottom:.7rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.dash-sp-block{display:flex;flex-direction:column;gap:.28rem;}
+.dash-sp-header{display:flex;align-items:center;justify-content:space-between;}
+.dash-sp-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.4);}
+.dash-sp-readout{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:.18rem .6rem;display:flex;align-items:baseline;gap:4px;}
+.dash-sp-big{font-size:1.05rem;font-weight:800;color:#fff;line-height:1;font-family:inherit;}
+.dash-sp-sub{font-size:.9rem;font-weight:800;color:#a5b4fc;line-height:1;}
+.dash-sp-sep{font-size:.75rem;color:rgba(255,255,255,.3);}
+.dash-sp-unit{font-size:8px;color:rgba(255,255,255,.3);margin-left:2px;}
+.dash-sp-result{font-size:10px;font-weight:700;color:#a5b4fc;}
+.dash-range{width:100%;-webkit-appearance:none;appearance:none;height:3px;border-radius:2px;background:rgba(255,255,255,.15);outline:none;cursor:pointer;}
+.dash-range::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:#6366f1;cursor:pointer;border:2px solid #fff;}
+.dash-range::-moz-range-thumb{width:15px;height:15px;border-radius:50%;background:#6366f1;border:2px solid #fff;cursor:pointer;}
+.dash-ticks{display:flex;justify-content:space-between;}
+.dash-ticks span{font-size:8px;color:rgba(255,255,255,.22);}
+
+/* Section label */
+.dash-sec-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--hint);margin-bottom:.35rem;}
+
+/* Stat strip */
+.dash-stat-strip{display:flex;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:.7rem;}
+.dash-sc{flex:1;padding:.48rem .6rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:.45rem;}
+.dash-sc:last-child{border-right:none;}
+.dash-sc-num{font-size:1.1rem;font-weight:800;line-height:1;font-family:inherit;flex-shrink:0;}
+.dash-sc-num.indigo{color:var(--indigo);}
+.dash-sc-num.emerald{color:var(--emerald);}
+.dash-sc-num.amber{color:var(--amber);}
+.dash-sc-num.rose{color:var(--rose);}
+.dash-sc-name{font-size:.9rem;}
+.dash-sc-right{display:flex;flex-direction:column;gap:2px;}
+.dash-sc-lbl{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);line-height:1;}
+.dash-sc-sub{font-size:7.5px;color:#065f46;background:var(--emerald3);border-radius:3px;padding:0 4px;display:inline-block;font-weight:700;line-height:1.5;}
+
+/* Shortlist */
+.dash-shortlist-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:.7rem;}
+.dash-sl-card{background:var(--surface);border:2px solid var(--indigo);border-radius:11px;padding:.6rem .75rem;position:relative;transition:opacity .25s,border-color .25s;}
+.dash-sl-card.over-budget{border-color:var(--border);border-width:1px;opacity:.5;}
+.dash-sl-card.ineligible{border-color:#fbbf24;border-width:1.5px;opacity:.6;}
+.dash-sl-star{position:absolute;top:5px;right:7px;font-size:9px;color:var(--indigo);font-weight:800;background:var(--indigo3);border-radius:4px;padding:1px 6px;}
+.dash-sl-div{font-size:8px;font-weight:700;background:var(--rose3);color:var(--rose);border-radius:3px;padding:1px 5px;display:inline-block;text-transform:uppercase;letter-spacing:.05em;}
+.dash-sl-div.d2{background:var(--sky3);color:var(--sky);}
+.dash-sl-div.naia{background:var(--amber3);color:var(--amber);}
+.dash-sl-name{font-size:13px;font-weight:800;color:var(--navy);margin:.18rem 0 .08rem;}
+.dash-sl-deg{font-size:8.5px;color:var(--muted);line-height:1.3;margin-bottom:.3rem;}
+.dash-sl-scores{display:flex;gap:6px;}
+.dash-sl-sc{font-size:10px;font-weight:700;}
+.dash-sl-sc span{color:var(--hint);font-weight:400;}
+.dash-sl-warn{font-size:8px;font-weight:700;border-radius:4px;padding:1px 5px;margin-top:.28rem;display:inline-block;}
+.dash-sl-warn.gpa{color:#92400e;background:var(--amber3);}
+.dash-sl-warn.budget{color:#9f1239;background:var(--rose3);}
+.dash-sl-btns{display:flex;gap:3px;margin-top:.4rem;}
+.dash-sl-btn{flex:1;background:var(--surface2);border:1px solid var(--border);color:var(--muted);font-size:8px;font-weight:600;border-radius:5px;padding:3px 0;cursor:pointer;text-align:center;font-family:inherit;}
+.dash-sl-btn.primary{background:var(--indigo);border-color:var(--indigo);color:#fff;}
+
+/* Lens row */
+.dash-lens-row{display:grid;grid-template-columns:repeat(7,1fr);gap:.3rem;margin-bottom:.7rem;}
+.dash-lc{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.42rem .32rem;text-align:center;transition:opacity .25s;}
+.dash-lc.blocked{opacity:.3;}
+.dash-lkey{font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--hint);margin-bottom:.18rem;}
+.dash-lname{font-size:10px;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:.2rem;}
+.dash-lscore{font-size:1rem;font-weight:800;line-height:1;font-family:inherit;}
+.dash-lconf{font-size:7px;color:var(--muted);margin-top:.12rem;}
+.dash-lalt{font-size:7px;color:var(--amber);font-weight:700;margin-top:.18rem;}
+
+/* Conference strip */
+.dash-conf-strip{display:flex;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:.7rem;}
+.dash-cc{flex:1;padding:.36rem .42rem;border-right:1px solid var(--border);cursor:pointer;transition:background .12s;}
+.dash-cc:last-child{border-right:none;}
+.dash-cc:hover{background:var(--surface2);}
+.dash-cc-top{display:flex;align-items:center;justify-content:space-between;gap:3px;margin-bottom:.22rem;}
+.dash-cc-name{font-size:10px;font-weight:700;color:var(--navy);white-space:nowrap;line-height:1.2;}
+.dash-cc-badge{font-size:6px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-radius:3px;padding:1px 3px;white-space:nowrap;flex-shrink:0;}
+.bp5{background:var(--indigo3);color:#3730a3;}
+.bhi{background:var(--sky3);color:#0369a1;}
+.bd2{background:var(--sky3);color:#0284c7;}
+.dash-cc-data{display:flex;align-items:baseline;justify-content:space-between;}
+.dash-cc-fit{font-size:10px;font-weight:800;}
+.dash-cc-count{font-size:8px;color:var(--hint);font-weight:600;}
+
+/* Main grid */
+.dash-main-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;}
+.dash-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.7rem .85rem;}
+.dash-panel-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:.55rem;}
+
+/* Map */
+.dash-map-wrap{position:relative;background:#eef2f7;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
+.dash-map-dot{position:absolute;border-radius:50%;cursor:pointer;transform:translate(-50%,-50%);transition:opacity .2s;}
+.dash-map-dot.shortlist{outline-offset:1px;}
+.dash-map-tip{position:absolute;background:var(--navy);color:#fff;font-size:9px;font-weight:600;padding:3px 8px;border-radius:5px;pointer-events:none;white-space:nowrap;z-index:10;display:none;transform:translateX(-50%);}
+.dash-map-legend{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.38rem;}
+.dash-ml{display:flex;align-items:center;gap:3px;font-size:8px;color:var(--muted);}
+.dash-ml-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+
+/* Brackets */
+.dash-bracket-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem;}
+.dash-bracket-col{display:flex;flex-direction:column;gap:.18rem;}
+.dash-bracket-hdr{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:.22rem .4rem;border-radius:5px;text-align:center;}
+.bh-g{background:var(--emerald3);color:#065f46;}
+.bh-b{background:var(--sky3);color:#075985;}
+.bh-a{background:var(--amber3);color:#78350f;}
+.bh-r{background:var(--rose3);color:#9f1239;}
+.dash-dots-wrap{display:flex;flex-wrap:wrap;gap:3px;min-height:28px;}
+.dash-sdot{width:8px;height:8px;border-radius:50%;cursor:pointer;border:1px solid rgba(255,255,255,.6);transition:opacity .2s;flex-shrink:0;}
+.dash-sdot.dim{opacity:.18;}
+.dash-bracket-count{font-size:8px;color:var(--hint);font-weight:600;margin-top:2px;}
+</style>`;
 }
 
-// ─── Master update — calls all sub-renderers ──────────────────────────────────
+// ─── Slider handlers ──────────────────────────────────────────────────────────
+function attachSliderHandlers() {
+  const atarSl = document.getElementById('dash-atar-slider');
+  const budSl  = document.getElementById('dash-bud-slider');
+
+  if (atarSl) {
+    atarSl.addEventListener('input', function() {
+      const a = parseInt(this.value);
+      dashGpa = atarToGpa(a);
+      document.getElementById('dash-atar-val').textContent = a;
+      document.getElementById('dash-gpa-val').textContent  = dashGpa.toFixed(1);
+      // Sync main app ATAR slider if present
+      const mainSl = document.getElementById('atar-slider');
+      if (mainSl && mainSl.value !== String(a)) {
+        mainSl.value = a;
+        // Trigger main app sync if function exists
+        if (typeof onAtarSlide === 'function') onAtarSlide(a);
+      }
+      updateDashboard();
+    });
+  }
+
+  if (budSl) {
+    budSl.addEventListener('input', function() {
+      dashBudget = parseInt(this.value) * 1000;
+      document.getElementById('dash-bud-val').textContent = '$' + this.value + 'k';
+      updateDashboard();
+    });
+  }
+}
+
+// ─── Called when main ATAR slider moves ──────────────────────────────────────
+function syncDashGpa(gpa) {
+  dashGpa = gpa;
+  const sl = document.getElementById('dash-atar-slider');
+  const gpaEl  = document.getElementById('dash-gpa-val');
+  // Back-calculate ATAR from GPA for display
+  if (sl) {
+    // Find closest ATAR
+    let bestAtar = 70;
+    let bestDiff = 99;
+    for (let a = 50; a <= 99; a++) {
+      const diff = Math.abs(atarToGpa(a) - gpa);
+      if (diff < bestDiff) { bestDiff = diff; bestAtar = a; }
+    }
+    sl.value = bestAtar;
+    const atarEl = document.getElementById('dash-atar-val');
+    if (atarEl) atarEl.textContent = bestAtar;
+  }
+  if (gpaEl) gpaEl.textContent = gpa.toFixed(1);
+  if (document.getElementById('dash-stat-strip')) updateDashboard();
+}
+
+// ─── Master update ────────────────────────────────────────────────────────────
 function updateDashboard() {
-  updateAtarReadout();
   updateStatStrip();
   updateShortlist();
-  updateLensChips();
+  updateLensRow();
   updateConfStrip();
   updateMapDots();
   updateBrackets();
 }
 
-function updateAtarReadout() {
-  const atar = parseInt(document.getElementById('atar-slider')?.value || 70);
-  const gpaEl  = document.getElementById('dash-gpa-display');
-  const atarEl = document.getElementById('dash-atar-display');
-  const bar    = document.getElementById('dash-atar-bar');
-  if (gpaEl)  gpaEl.textContent  = dashGpa.toFixed(1);
-  if (atarEl) atarEl.textContent = atar;
-  if (bar)    bar.style.width    = Math.round((atar - 40) / 59 * 100) + '%';
-}
-
-// ─── Stat strip ───────────────────────────────────────────────────────────────
+// ─── 1. Stat strip ────────────────────────────────────────────────────────────
 function updateStatStrip() {
-  const el = document.getElementById('dash-stat-strip');
-  if (!el) return;
-
-  const gpaEligible = unis.filter(u => {
-    const gpaMin = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
-    return dashGpa >= gpaMin;
+  const eligible = unis.filter(u => {
+    const g = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+    return dashGpa >= g;
   }).length;
-
-  const budgetFit = unis.filter(u => (u.fin?.costNum ?? 0) <= dashBudget).length;
+  const inBudget  = unis.filter(u => (u.fin?.costNum ?? 0) <= dashBudget).length;
   const reachable = unis.filter(dashReachable).length;
+  const withCost  = unis.filter(u => dashReachable(u) && (u.fin?.costNum ?? 0) > 0);
+  const avgCost   = withCost.length
+    ? '$' + Math.round(withCost.reduce((s,u) => s + (u.fin.costNum||0), 0) / withCost.length / 1000) + 'k'
+    : '—';
+  const best = [...unis].filter(dashReachable).sort((a,b) => (b.fitOlivier||0)-(a.fitOlivier||0))[0];
 
-  const reachableWithCost = unis.filter(u => dashReachable(u) && (u.fin?.costNum ?? 0) > 0);
-  const avgCost = reachableWithCost.length
-    ? Math.round(reachableWithCost.reduce((s, u) => s + (u.fin?.costNum || 0), 0) / reachableWithCost.length / 1000)
-    : 0;
+  const set = (id, val) => { const e = document.getElementById(id); if(e) e.textContent = val; };
+  set('ds-eligible', eligible);
+  set('ds-budget',   inBudget);
+  set('ds-both',     reachable);
+  set('ds-cost',     avgCost);
+  set('ds-best',     best?.name || '—');
 
-  const bestFit = [...unis].filter(dashReachable).sort((a, b) => (b.fitOlivier || 0) - (a.fitOlivier || 0))[0];
+  const bestEl = document.getElementById('ds-best');
+  if (bestEl) bestEl.className = 'dash-sc-num dash-sc-name ' + (best ? 'emerald' : 'rose');
 
-  const cells = [
-    { num: gpaEligible, label: 'GPA eligible',    color: '#4f46e5' },
-    { num: budgetFit,   label: 'In budget',        color: '#059669' },
-    { num: reachable,   label: 'Real options',     color: '#0284c7' },
-    { num: '$' + avgCost + 'k', label: 'Avg cost (reach)', color: '#d97706', raw: true },
-    { num: bestFit?.name || '—', label: 'Best fit', color: '#e11d48', raw: true },
-  ];
-
-  el.innerHTML = cells.map(c => `
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:.75rem 1rem;text-align:center">
-      <div style="font-size:${c.raw ? '16px' : '22px'};font-weight:700;color:${c.color};line-height:1.1">${c.num}</div>
-      <div style="font-size:11px;color:#6b7280;margin-top:.25rem">${c.label}</div>
-    </div>`).join('');
+  const gpaRes = document.getElementById('dash-gpa-result');
+  const budRes = document.getElementById('dash-bud-result');
+  if (gpaRes) gpaRes.textContent = eligible + ' of ' + unis.length + ' schools GPA-eligible';
+  if (budRes) budRes.textContent = inBudget + ' of ' + unis.length + ' within budget';
 }
 
-// ─── Shortlist cards ──────────────────────────────────────────────────────────
+// ─── 2. Shortlist cards ───────────────────────────────────────────────────────
 function updateShortlist() {
   const el = document.getElementById('dash-shortlist');
   if (!el) return;
   const ids = (dashAthlete.shortlist || []).slice(0, 4);
-  if (!ids.length) { el.innerHTML = '<p style="color:#9ca3af;font-size:13px">No shortlist set.</p>'; return; }
+  if (!ids.length) { el.innerHTML = '<p style="font-size:13px;color:var(--hint)">No shortlist configured.</p>'; return; }
 
   el.innerHTML = ids.map(id => {
     const u = unis.find(x => x.id === id);
     if (!u) return '';
-    const ok = dashReachable(u);
-    const gpaMin = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
-    const overBudget = (u.fin?.costNum ?? 0) > dashBudget;
-    const gpaBlocked = dashGpa < gpaMin;
-    const warn = !ok ? (gpaBlocked && overBudget ? 'GPA + budget' : gpaBlocked ? 'GPA too low' : 'Over budget') : '';
-    const cost = u.fin?.costNum ? '$' + Math.round(u.fin.costNum / 1000) + 'k' : '—';
 
-    return `
-      <div style="background:#fff;border:1.5px solid ${ok ? '#e5e7eb' : '#fca5a5'};border-radius:10px;
-        padding:.75rem;opacity:${ok ? 1 : 0.6};position:relative">
-        ${!ok ? `<div style="position:absolute;top:.5rem;right:.5rem;font-size:10px;background:#fef2f2;
-          color:#e11d48;padding:2px 6px;border-radius:4px;font-weight:600">${warn}</div>` : ''}
-        <div style="font-weight:700;font-size:14px;color:#111827;margin-bottom:.25rem">${u.name}</div>
-        <div style="font-size:11.5px;color:#6b7280;margin-bottom:.4rem">${u.loc}</div>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap">
-          <span style="font-size:11px;background:#e0e7ff;color:#4f46e5;padding:2px 7px;border-radius:4px">${u.div}</span>
-          <span style="font-size:11px;background:#f3f4f6;color:#374151;padding:2px 7px;border-radius:4px">${cost}</span>
-          <span style="font-size:11px;background:#f0fdf4;color:#059669;padding:2px 7px;border-radius:4px">${u.fitOlivier || '—'}%</span>
-        </div>
-      </div>`;
+    const gpaMin    = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+    const costNum   = u.fin?.costNum ?? 0;
+    const overBudget = costNum > dashBudget;
+    const ineligible = dashGpa < gpaMin;
+    const ok = !overBudget && !ineligible;
+
+    const divClass = u.div === 'D2' ? ' d2' : u.div === 'NAIA' ? ' naia' : '';
+    const fitColor = (u.fitOlivier||0) >= 90 ? 'var(--emerald)' : (u.fitOlivier||0) >= 80 ? 'var(--amber)' : 'var(--rose)';
+    const acuColor = (u.acuAlign||0) >= 14 ? 'var(--emerald)' : (u.acuAlign||0) >= 10 ? 'var(--sky)' : 'var(--amber)';
+
+    let warn = '';
+    if (ineligible) warn = '<div class="dash-sl-warn gpa">GPA below entry minimum</div>';
+    else if (overBudget) warn = '<div class="dash-sl-warn budget">Above current budget</div>';
+
+    return `<div class="dash-sl-card${overBudget?' over-budget':''}${ineligible?' ineligible':''}">
+      <div class="dash-sl-star">★ TOP</div>
+      <div class="dash-sl-div${divClass}">${u.div} · ${u.conf}</div>
+      <div class="dash-sl-name">${u.name}</div>
+      <div class="dash-sl-deg">${(u.degreeTitle||'').substring(0,42)}</div>
+      <div class="dash-sl-scores">
+        <div class="dash-sl-sc" style="color:${fitColor}">${u.fitOlivier||'—'}% <span>fit</span></div>
+        <div class="dash-sl-sc" style="color:${acuColor}">${u.acuAlign||'—'}/16 <span>ACU</span></div>
+        <div class="dash-sl-sc" style="color:var(--muted)">~$${Math.round(costNum/1000)}k</div>
+      </div>
+      ${warn}
+      <div class="dash-sl-btns">
+        <button class="dash-sl-btn primary" onclick="openDetail('${u.id}')">Details</button>
+        <button class="dash-sl-btn" onclick="addToCompare('${u.id}')">Compare</button>
+        <button class="dash-sl-btn" onclick="window.location.href='mailto:${u.coach?.email||''}'">Email</button>
+      </div>
+    </div>`;
   }).join('');
 }
 
-// ─── Lens chips ───────────────────────────────────────────────────────────────
-function updateLensChips() {
-  const el = document.getElementById('dash-lens-chips');
+// ─── 3. Lens row ──────────────────────────────────────────────────────────────
+function updateLensRow() {
+  const el = document.getElementById('dash-lens-row');
   if (!el || typeof LENSES === 'undefined') return;
 
   el.innerHTML = LENSES.map(L => {
-    const sorted = [...unis].sort((a, b) =>
-      ((b.lensScores?.[L.key] || 0) - (a.lensScores?.[L.key] || 0))
-    );
+    const sorted = [...unis].sort((a,b) => ((b.lensScores?.[L.key]||0) - (a.lensScores?.[L.key]||0)));
     const top = sorted[0];
     if (!top) return '';
-    const ok = dashReachable(top);
-    const gpaMin = parseFloat(top.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
-    const warn = !ok
-      ? (dashGpa < gpaMin ? 'GPA too low' : 'Over budget')
-      : '';
 
-    return `
-      <div style="background:#fff;border:1.5px solid ${ok ? '#e5e7eb' : '#fde68a'};border-radius:10px;
-        padding:.6rem .9rem;min-width:130px;opacity:${ok ? 1 : 0.7}">
-        <div style="font-size:10px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.05em">${L.label}</div>
-        <div style="font-weight:700;font-size:14px;color:#111827;margin:.15rem 0">${top.name}</div>
-        <div style="font-size:11px;color:${ok ? '#059669' : '#d97706'}">${ok ? '✓ reachable' : warn}</div>
-      </div>`;
+    const gpaMin    = parseFloat(top.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+    const overBudget = (top.fin?.costNum ?? 0) > dashBudget;
+    const ineligible = dashGpa < gpaMin;
+    const blocked   = overBudget || ineligible;
+    const score     = top.lensScores?.[L.key] || top.fitOlivier || 0;
+    const scoreColor = score >= 90 ? 'var(--emerald)' : score >= 80 ? 'var(--amber)' : 'var(--rose)';
+    const altText   = ineligible ? 'GPA too low' : overBudget ? 'Over budget' : '';
+
+    return `<div class="dash-lc${blocked?' blocked':''}">
+      <div class="dash-lkey">${L.label}</div>
+      <div class="dash-lname">${top.name}</div>
+      <div class="dash-lscore" style="color:${blocked?'var(--border2)':scoreColor}">${blocked?'—':score}</div>
+      <div class="dash-lconf">${top.conf}</div>
+      ${altText ? `<div class="dash-lalt">${altText}</div>` : ''}
+    </div>`;
   }).join('');
 }
 
-// ─── Conference strip ─────────────────────────────────────────────────────────
+// ─── 4. Conference strip ──────────────────────────────────────────────────────
 function updateConfStrip() {
   const el = document.getElementById('dash-conf-strip');
   if (!el) return;
 
-  el.innerHTML = Object.entries(CONF_LABELS).map(([ck, meta]) => {
-    const inConf = unis.filter(u => u.confKey === ck);
+  el.innerHTML = Object.entries(CONF_META).map(([ck, meta]) => {
+    const inConf    = unis.filter(u => u.confKey === ck);
+    const total     = inConf.length;
     const reachable = inConf.filter(dashReachable).length;
-    const bestFit = Math.max(...inConf.map(u => u.fitOlivier || 0), 0);
+    const bestFit   = Math.max(0, ...inConf.map(u => u.fitOlivier || 0));
+    const fitColor  = bestFit >= 90 ? 'var(--emerald)' : bestFit >= 80 ? 'var(--indigo)' : 'var(--amber)';
 
-    return `
-      <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:.75rem .6rem;text-align:center">
-        <div style="font-size:11px;font-weight:700;color:#111827">${meta.label}</div>
-        <div style="font-size:9.5px;color:#9ca3af;margin:.1rem 0 .4rem">${meta.tier}</div>
-        <div style="font-size:18px;font-weight:700;color:#4f46e5;line-height:1">${bestFit}<span style="font-size:10px">%</span></div>
-        <div style="font-size:10px;color:#6b7280;margin-top:.3rem">best fit</div>
-        <div style="font-size:11px;font-weight:600;color:#059669;margin-top:.25rem">${reachable} reach</div>
-      </div>`;
+    return `<div class="dash-cc" onclick="filterToConf('${ck}')">
+      <div class="dash-cc-top">
+        <div class="dash-cc-name">${meta.label}</div>
+        <div class="dash-cc-badge ${meta.tierCls}">${meta.tier}</div>
+      </div>
+      <div class="dash-cc-data">
+        <div class="dash-cc-fit" style="color:${fitColor}">${bestFit}%</div>
+        <div class="dash-cc-count">${reachable}/${total}</div>
+      </div>
+    </div>`;
   }).join('');
 }
 
-// ─── Map — draw base once ─────────────────────────────────────────────────────
+// ─── 5. Map ───────────────────────────────────────────────────────────────────
 function drawMapBase() {
   const svg = document.getElementById('dash-map-svg');
   if (!svg) return;
+  const ns = 'http://www.w3.org/2000/svg';
 
-  // Simplified continental US outline
-  const usPath = 'M 68,65 L 160,58 L 220,55 L 290,60 L 345,65 L 380,72 L 425,78 ' +
-    'L 445,95 L 438,112 L 430,118 L 435,125 L 420,128 L 415,140 L 418,152 ' +
-    'L 408,165 L 400,178 L 388,195 L 378,210 L 375,218 L 390,228 L 398,242 ' +
-    'L 400,260 L 385,268 L 370,255 L 362,242 L 348,228 L 318,232 L 298,240 ' +
-    'L 268,258 L 228,268 L 190,272 L 148,272 L 118,268 L 88,255 L 68,235 ' +
-    'L 50,195 L 42,155 L 40,118 L 45,90 L 52,75 L 68,65 Z';
+  // Background
+  const bg = document.createElementNS(ns,'rect');
+  bg.setAttribute('width','500');bg.setAttribute('height','300');bg.setAttribute('fill','#eef2f7');
+  svg.appendChild(bg);
 
-  svg.innerHTML = `
-    <path d="${usPath}" fill="#dde8f0" stroke="#b0c4d8" stroke-width="1.5"/>
-    <text x="28" y="228" font-size="8" fill="#94a3b8">HI</text>
-    <rect x="22" y="215" width="14" height="10" fill="none" stroke="#b0c4d8" stroke-width="0.8" rx="1"/>
-    <g id="dash-map-dots"></g>`;
+  // Continental US land mass
+  const land = document.createElementNS(ns,'path');
+  land.setAttribute('fill','#dce4ee');
+  land.setAttribute('stroke','#c5d0dc');
+  land.setAttribute('stroke-width','0.8');
+  land.setAttribute('d',
+    'M52,58 L100,52 L160,46 L220,42 L278,42 L278,58 ' +
+    'L440,72 L440,260 L415,272 L390,280 L360,282 ' +
+    'L330,278 L305,268 L302,248 L280,248 L280,230 ' +
+    'L262,234 L240,238 L218,234 L200,224 L192,212 ' +
+    'L190,200 L186,210 L178,220 L165,228 L148,230 ' +
+    'L130,226 L114,216 L100,202 L88,186 L80,170 ' +
+    'L78,155 L52,155 Z'
+  );
+  svg.appendChild(land);
+
+  // Florida peninsula
+  const fl = document.createElementNS(ns,'path');
+  fl.setAttribute('fill','#dce4ee');fl.setAttribute('stroke','#c5d0dc');fl.setAttribute('stroke-width','0.8');
+  fl.setAttribute('d','M330,222 L360,218 L380,220 L390,230 L392,245 L385,258 L372,268 L355,272 L340,268 L330,255 L326,240 Z');
+  svg.appendChild(fl);
+
+  // AK inset
+  const ak = document.createElementNS(ns,'rect');
+  ak.setAttribute('x','52');ak.setAttribute('y','255');ak.setAttribute('width','52');ak.setAttribute('height','38');
+  ak.setAttribute('rx','3');ak.setAttribute('fill','#dce4ee');ak.setAttribute('stroke','#c5d0dc');ak.setAttribute('stroke-width','0.8');
+  svg.appendChild(ak);
+  const akl = document.createElementNS(ns,'text');
+  akl.setAttribute('x','78');akl.setAttribute('y','278');akl.setAttribute('text-anchor','middle');
+  akl.setAttribute('font-size','7');akl.setAttribute('fill','#9ca3af');akl.textContent='AK';
+  svg.appendChild(akl);
+
+  // HI inset
+  const hi = document.createElementNS(ns,'rect');
+  hi.setAttribute('x','112');hi.setAttribute('y','255');hi.setAttribute('width','42');hi.setAttribute('height','38');
+  hi.setAttribute('rx','3');hi.setAttribute('fill','#dce4ee');hi.setAttribute('stroke','#c5d0dc');hi.setAttribute('stroke-width','0.8');
+  svg.appendChild(hi);
+  const hil = document.createElementNS(ns,'text');
+  hil.setAttribute('x','133');hil.setAttribute('y','278');hil.setAttribute('text-anchor','middle');
+  hil.setAttribute('font-size','7');hil.setAttribute('fill','#9ca3af');hil.textContent='HI';
+  svg.appendChild(hil);
 }
 
-// ─── Map — update dots ────────────────────────────────────────────────────────
 function updateMapDots() {
-  const g = document.getElementById('dash-map-dots');
-  if (!g) return;
+  const wrap = document.getElementById('dash-map-wrap');
+  const svg  = document.getElementById('dash-map-svg');
+  if (!wrap || !svg) return;
 
+  // Size the wrap correctly
+  const svgW = 500, svgH = 300;
+  wrap.style.height = (wrap.offsetWidth * (svgH/svgW)) + 'px';
+
+  const tip = document.getElementById('dash-map-tip');
   const shortlistIds = new Set(dashAthlete.shortlist || []);
 
-  g.innerHTML = unis
-    .filter(u => u.mapX !== undefined && u.mapY !== undefined)
-    .map(u => {
-      const reachable = dashReachable(u);
-      const isShortlisted = shortlistIds.has(u.id);
-      const r = Math.max(4, Math.min(8, 4 + Math.round((u.fitOlivier || 0) / 25)));
-      const color = DASH_DIV_COLOR[u.div] || '#6b7280';
-      const opacity = reachable ? 1 : 0.15;
+  // Remove existing dots
+  wrap.querySelectorAll('.dash-map-dot').forEach(e => e.remove());
 
-      const dot = isShortlisted
-        ? `<circle cx="${u.mapX}" cy="${u.mapY}" r="${r + 3}" fill="none" stroke="#4f46e5" stroke-width="1.5" opacity="${opacity}"/>`
-        : '';
+  unis.filter(u => u.mapX !== undefined && u.mapY !== undefined).forEach(u => {
+    const blocked  = !dashReachable(u);
+    const isSL     = shortlistIds.has(u.id);
+    const color    = DASH_DIV_COLOR[u.div] || '#9ca3af';
+    const size     = Math.max(7, Math.min(13, Math.round((u.fitOlivier||50) / 9)));
+    const lp       = (u.mapX / svgW) * 100;
+    const tp       = (u.mapY / svgH) * 100;
 
-      const tooltip = `${u.name} · $${Math.round((u.fin?.costNum || 0) / 1000)}k · ${u.fitOlivier || '—'}%`;
-      return `<g class="map-dot" style="cursor:pointer">
-        ${dot}
-        <circle cx="${u.mapX}" cy="${u.mapY}" r="${r}" fill="${color}" opacity="${opacity}"/>
-        <title>${tooltip}</title>
-      </g>`;
-    }).join('');
+    const dot = document.createElement('div');
+    dot.className = 'dash-map-dot' + (isSL && !blocked ? ' shortlist' : '');
+    dot.style.cssText = [
+      'position:absolute',
+      `left:${lp}%`,
+      `top:${tp}%`,
+      `width:${size}px`,
+      `height:${size}px`,
+      `background:${blocked ? '#b0bcc8' : color}`,
+      `opacity:${blocked ? 0.15 : 1}`,
+      isSL && !blocked ? `outline:2px solid var(--indigo);outline-offset:1px` : '',
+    ].filter(Boolean).join(';');
+
+    dot.addEventListener('mouseenter', function() {
+      tip.style.display = 'block';
+      tip.textContent   = u.name + ' · $' + Math.round((u.fin?.costNum||0)/1000) + 'k · ' + (u.fitOlivier||'—') + '% fit';
+      tip.style.left    = lp + '%';
+      tip.style.top     = (tp + 3) + '%';
+    });
+    dot.addEventListener('mouseleave', () => tip.style.display = 'none');
+    wrap.appendChild(dot);
+  });
 }
 
-// ─── Cost brackets ────────────────────────────────────────────────────────────
+// ─── 6. Cost brackets ─────────────────────────────────────────────────────────
 function updateBrackets() {
   const el = document.getElementById('dash-brackets');
   if (!el) return;
 
   const brackets = [
-    { label: 'Under $30k', min: 0,     max: 29999  },
-    { label: '$30–50k',    min: 30000, max: 49999  },
-    { label: '$50–70k',    min: 50000, max: 69999  },
-    { label: '$70k+',      min: 70000, max: Infinity },
+    { label:'Under $30k', cls:'bh-g', min:0,     max:29999      },
+    { label:'$30–50k',    cls:'bh-b', min:30000, max:49999      },
+    { label:'$50–70k',    cls:'bh-a', min:50000, max:69999      },
+    { label:'$70k+',      cls:'bh-r', min:70000, max:Infinity   },
   ];
 
   el.innerHTML = brackets.map(b => {
-    const inBracket = unis.filter(u => {
-      const c = u.fin?.costNum ?? 0;
-      return c >= b.min && c <= b.max;
-    });
-    const reachableCount = inBracket.filter(dashReachable).length;
+    const inBracket  = unis.filter(u => { const c = u.fin?.costNum??0; return c>=b.min && c<=b.max; });
+    const reachable  = inBracket.filter(dashReachable).length;
 
-    const dots = inBracket.slice(0, 30).map(u => {
-      const ok = dashReachable(u);
-      const color = DASH_DIV_COLOR[u.div] || '#6b7280';
-      return `<span title="${u.name} · ${u.fitOlivier || '—'}%"
-        style="display:inline-block;width:9px;height:9px;border-radius:50%;
-        background:${color};opacity:${ok ? 1 : 0.18};margin:2px;cursor:default"></span>`;
+    const dots = inBracket.map(u => {
+      const ok    = dashReachable(u);
+      const color = DASH_DIV_COLOR[u.div] || '#9ca3af';
+      return `<div class="dash-sdot${ok?'':' dim'}" style="background:${ok?color:'#c8d4e0'}" title="${u.name} · $${Math.round((u.fin?.costNum||0)/1000)}k"></div>`;
     }).join('');
 
-    return `
-      <div style="display:flex;flex-direction:column;gap:.4rem">
-        <div style="font-size:10.5px;font-weight:700;color:#374151">${b.label}</div>
-        <div style="flex:1;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;
-          padding:.4rem .5rem;overflow:hidden">${dots || '<span style="font-size:10px;color:#9ca3af">none</span>'}</div>
-        <div style="font-size:10.5px;color:#059669;font-weight:600">${reachableCount} of ${inBracket.length}</div>
-      </div>`;
+    return `<div class="dash-bracket-col">
+      <div class="dash-bracket-hdr ${b.cls}">${b.label}</div>
+      <div class="dash-dots-wrap">${dots || '<span style="font-size:9px;color:var(--hint)">none</span>'}</div>
+      <div class="dash-bracket-count">${reachable} of ${inBracket.length} reachable</div>
+    </div>`;
   }).join('');
+}
+
+// ─── Conference filter helper (jumps to Explore tab filtered by conf) ─────────
+function filterToConf(confKey) {
+  // Switch to Explore tab
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
+  const explorePage = document.getElementById('page-explore');
+  const exploreTab  = [...document.querySelectorAll('.nav-tab')].find(b => b.textContent.includes('Explore'));
+  if (explorePage) explorePage.classList.add('active');
+  if (exploreTab)  exploreTab.classList.add('active');
+
+  // Expand the matching conf section and scroll to it
+  setTimeout(() => {
+    const section = document.querySelector(`.conf-section[data-confkey="${confKey}"]`);
+    if (section) {
+      if (section.classList.contains('div-collapsed')) {
+        const btn = section.querySelector('.div-toggle-btn');
+        if (btn) btn.click();
+      }
+      section.scrollIntoView({ behavior:'smooth', block:'start' });
+    }
+  }, 100);
 }

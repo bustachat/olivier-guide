@@ -263,18 +263,30 @@ function renderCards(){
 
   // Group by conference key — prevents the 71-card D1 wall
   const CONF_SECTIONS=[
-    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'Elite D1 soccer. 4 fully-profiled schools (Virginia, Wake Forest, SMU, FIU) plus 11 listed programs. Virginia has 7 NCAA titles. SMU won 2025 ACC Tournament. Clemson and Notre Dame are perennial powers.'},
+    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'Elite D1 soccer. 3 fully-profiled schools — Virginia (7 NCAA titles, 2025 ACC regular season champs), Wake Forest (2024 ACC Tourn champs), SMU (2025 ACC Tournament Champions — first ever). Clemson, Notre Dame, Stanford and Duke among 14 listed programs.'},
     {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'#1 and #2 all-time MLS producers. UCLA on the West Coast, Indiana in the Midwest. Penn State, Michigan, Michigan State all elite programs. Most competitive conference for roster spots.'},
     {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference. St. John\'s is the fully-profiled school. Georgetown and Creighton are perennial top-10 programs. Strong clinical network in major cities.'},
-    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'USF fully profiled. FIU joins AAC in 2026. Most accessible D1 conference for internationals with strong warm-climate schools. Navy and Army offer full-ride opportunities.'},
+    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'FIU and USF both fully profiled in the AAC. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Navy and Army offer full federal scholarships (zero cost).'},
     {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1. UCSB fully profiled — Manu Duah went #1 overall in 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine all competitive. Pacific lifestyle matches Sydney.'},
     {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston fully profiled with Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern round out a competitive conference.'},
-    {key:'other',    label:'D2 · NAIA · D3 · JUCO',              tier:'Other Divisions',intro:'Best overall value tier. PBA (#2 nationally 2025) and Lynn are top shortlist schools. Barry has 4 D2 NCAA titles. Oklahoma City has direct Australian connections. JUCO schools are transfer pathways.'},
+    {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships — need-based aid only. Princeton won the 2024 and 2025 Ivy League Tournaments back-to-back under Jim Barlow. Yale won 2023. Both require 3.9+ GPA. Kinesiology degrees are not available but Ivy credentials carry enormous DPT school credibility. Only viable if GPA climbs to 3.5+.'},
+    {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
+    {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has direct Australian player connections through coach Brian Finnegan — worth an email. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
+    {key:'other', divFilter:'D3JUCO',  label:'D3 · JUCO',               tier:'D3 / JUCO',     intro:'Chapman (D3, Orange CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 PT pathway. Santa Monica College is the best JUCO entry point in the guide ($9k/yr) with a proven transfer pipeline to UCLA and UCSB. Miami Dade College transfers link well to Barry and FIU.'},
   ];
 
   // Also include Ivy League under acc or as standalone — they are in other.json
   CONF_SECTIONS.forEach(sec=>{
-    const secUnis=unis.filter(u=>(u.confKey||'other')===sec.key);
+    let secUnis;
+    if(sec.key==='other' && sec.divFilter){
+      if(sec.divFilter==='IVY')     secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='IVY');
+      else if(sec.divFilter==='D2') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D2');
+      else if(sec.divFilter==='NAIA') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='NAIA');
+      else if(sec.divFilter==='D3JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&(u.div==='D3'||u.div==='JUCO'));
+      else secUnis=unis.filter(u=>u.confKey===sec.key);
+    } else {
+      secUnis=unis.filter(u=>(u.confKey||'other')===sec.key);
+    }
     if(!secUnis.length) return;
     const fullCount=secUnis.filter(u=>u.profileDepth==='full').length;
     const listedCount=secUnis.filter(u=>u.profileDepth==='listed').length;

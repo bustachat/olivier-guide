@@ -46,6 +46,7 @@ function atarToGpa(a) {
 
 // ─── Reachability ─────────────────────────────────────────────────────────────
 function dashReachable(u) {
+  if (u.noVarsity || u.excludeFromCostModel) return false;
   const gpaMin = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
   const costNum = u.fin?.costNum ?? 0;
   return dashGpa >= gpaMin && costNum <= dashBudget;
@@ -538,7 +539,7 @@ function updateMapDots() {
   // Remove existing dots
   wrap.querySelectorAll('.dash-map-dot').forEach(e => e.remove());
 
-  unis.filter(u => u.mapX !== undefined && u.mapY !== undefined).forEach(u => {
+  unis.filter(u => u.mapX !== undefined && u.mapY !== undefined && !u.excludeFromMap && !u.noVarsity).forEach(u => {
     const blocked  = !dashReachable(u);
     const isSL     = shortlistIds.has(u.id);
     const color    = DASH_DIV_COLOR[u.div] || '#9ca3af';
@@ -583,7 +584,11 @@ function updateBrackets() {
   ];
 
   el.innerHTML = brackets.map(b => {
-    const inBracket  = unis.filter(u => { const c = u.fin?.costNum??0; return c>=b.min && c<=b.max; });
+    const inBracket  = unis.filter(u => {
+      if (u.noVarsity || u.excludeFromCostModel) return false;
+      const c = u.fin?.costNum ?? 0;
+      return c >= b.min && c <= b.max;
+    });
     const reachable  = inBracket.filter(dashReachable).length;
 
     const dots = inBracket.map(u => {

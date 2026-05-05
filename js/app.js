@@ -504,7 +504,7 @@ function removeCompare(id){
 function rosterUrl(u){
   // A few schools need custom roster paths
   const overrides = {
-    lynn:       'https://lynuniversity.com/athletics/soccer/roster',
+    lynn:       'https://lynnfightingknights.com/sports/mens-soccer/roster',
     csula:      'https://calstatela.edu/athletics/mens-soccer/roster',
     keiser:     'https://keiseruniversity.edu/athletics/mens-soccer/roster',
     ocu:        'https://okcu.edu/athletics/soccer/roster',

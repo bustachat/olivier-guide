@@ -245,6 +245,31 @@ function applyLens(lensKey){
 // ═══ Application logic ═══════════════════════════════════════════════════════
 let selectedIds=new Set();
 function sc(s){return s>=90?'#059669':s>=80?'#d97706':'#e11d48';}
+function chipLabel(pos){
+  if(!pos) return '—';
+  const p = pos.toLowerCase();
+  // Champions / titles
+  if(p.includes('champ') && !p.includes('runner')) return 'Champs';
+  if(p.includes('1st')) return '1st';
+  if(p.includes('2nd')) return '2nd';
+  if(p.includes('3rd')) return '3rd';
+  if(p.includes('4th')) return '4th';
+  if(p.includes('5th')) return '5th';
+  if(p.includes('6th')) return '6th';
+  if(p.includes('final') && p.includes('aac')) return 'Final';
+  if(p.includes('final') && p.includes('acc')) return 'Final';
+  if(p.includes('final') && p.includes('ssc')) return 'Final';
+  if(p.includes('final') && p.includes('big')) return 'Final';
+  if(p.includes('final')) return 'Final';
+  if(p.includes('tourn') && !p.includes('final')) return 'T-QF';
+  if(p.includes('mid')) return 'Mid';
+  if(p.includes('lower')) return 'Lower';
+  if(p.includes('contend')) return 'Cont.';
+  // Fallback: first two words max 10 chars
+  const words = pos.split(' ');
+  const short = words.slice(0,2).join(' ');
+  return short.length > 10 ? words[0] : short;
+}
 function posColor(pos){
   if(!pos)return 'sy-na';
   const p=(pos||'').toLowerCase();
@@ -358,7 +383,7 @@ function buildCard(u){
   const facEmoji=facRating==='elite'?'🏆':facRating==='excellent'?'⭐':facRating==='verygood'?'✅':facRating==='good'?'👍':'📋';
   const facLabel=u.facilityDetails?u.facilityDetails.rating:'—';
   const standingHtml=(u.confRecord||[]).slice(0,5).map(function(r){
-    return '<span class="sy '+posColor(r.pos)+'" title="'+r.yr+': '+r.note+'" style="font-size:9px">'+r.yr.toString().slice(2)+': '+r.pos.split(' ')[0]+'</span>';
+    return '<span class="sy '+posColor(r.pos)+'" title="'+r.yr+': '+r.note+'" style="font-size:9px">'+r.yr.toString().slice(2)+': '+chipLabel(r.pos)+'</span>';
   }).join('');
   const titlesNote=(u.titles||[]).length>0?'<span style="margin-left:4px;font-size:9px;color:var(--gold);font-weight:700">🏆 '+u.titles.length+' title'+(u.titles.length>1?'s':'')+'</span>':'';
 
@@ -407,7 +432,7 @@ function buildCard(u){
     '</div>'+
     gpaHtml+
     '<div class="conf-strip">'+
-      '<span class="conf-lbl">5yr:</span>'+
+      '<span class="conf-lbl">6yr:</span>'+
       standingHtml+
       titlesNote+
     '</div>'+
@@ -442,7 +467,7 @@ function renderComparePage(){
     ['Annual Cost',u=>`<div class="cval warn">${u.cost}</div>`],
     ['Aid Available',u=>`<div class="cval good">${u.aid}</div>`],
     ['GPA Min Entry',u=>`<div style="font-size:13px;font-weight:700;color:${u.gpa?(u.gpa.status==='eligible'?'var(--emerald)':u.gpa.status==='borderline'?'var(--amber)':'var(--rose)'):'var(--muted)'}">${u.gpa?u.gpa.minEntry:'—'} ${u.gpa?(u.gpa.status==='eligible'?'✅':u.gpa.status==='borderline'?'⚠️':u.gpa.status==='below'?'❌':''):''}</div><div style="font-size:10px;color:var(--muted);margin-top:3px">${u.gpa?'Target: '+u.gpa.minSchol:''}</div>`],
-    ['Conference (last 5yr)',u=>`<div>${u.confRecord.map(r=>`<div style="font-size:11px;margin-bottom:2px"><span class="sy ${posColor(r.pos)}" style="margin-right:4px">${r.yr}</span>${r.pos}</div>`).join('')}</div>`],
+    ['Conference (last 6yr)',u=>`<div>${u.confRecord.map(r=>`<div style="font-size:11px;margin-bottom:2px"><span class="sy ${posColor(r.pos)}" style="margin-right:4px">${r.yr}</span>${r.pos}</div>`).join('')}</div>`],
     ['Titles',u=>`<div>${u.titles.slice(0,3).map(t=>`<span class="title-chip" style="display:block;margin-bottom:2px;font-size:10px">${t}</span>`).join('')}</div>`],
     ['MLS Picks 5yr',u=>`<div style="font-size:18px;font-weight:800;color:var(--indigo)">${u.proPlayers.mlsPicks5yr}</div><div style="font-size:11px;color:var(--muted)">${u.proPlayers.draftRank.slice(0,45)}</div>`],
     ['Notable Pro Players',u=>`<div>${(u.proPlayers.notable||[]).slice(0,2).map(n=>`<div style="font-size:11px;color:var(--muted);margin-bottom:3px">• ${n}</div>`).join('')}</div>`],

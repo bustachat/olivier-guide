@@ -75,9 +75,8 @@ const LENSES = [
 let currentLens = 'overall';
 
 function lensRank(lensKey){
-  // Returns array of school IDs sorted by lens score desc, fitOlivier as tiebreaker
-  // Used for the overall "across-all-divisions" view in the explainer
-  return [...unis].sort((a,b)=>{
+  // Full-profile schools only — listed schools have unverified lensScores
+  return [...unis].filter(u=>u.profileDepth==='full').sort((a,b)=>{
     const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
     const sb = (b.lensScores && b.lensScores[lensKey]) || 0;
     if(sb !== sa) return sb - sa;
@@ -92,7 +91,8 @@ const DIVISIONS_ORDER = ['D1','IVY','D2','NAIA','D3','JUCO'];
 function lensRankByDivision(lensKey){
   const out = {};
   DIVISIONS_ORDER.forEach(div=>{
-    const inDiv = unis.filter(u=>u.div===div);
+    // Full-profile schools only — listed schools have unverified lensScores
+    const inDiv = unis.filter(u=>u.div===div && u.profileDepth==='full');
     if(inDiv.length===0) return;
     const sorted = inDiv.sort((a,b)=>{
       const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
@@ -109,7 +109,9 @@ function lensRankByConference(lensKey){
   const confKeys = [...new Set(unis.map(u=>u.confKey).filter(Boolean))];
   const out = {};
   confKeys.forEach(ck=>{
-    const inConf = unis.filter(u=>u.confKey===ck);
+    // Full-profile schools only — listed schools have unverified lensScores
+    const inConf = unis.filter(u=>u.confKey===ck && u.profileDepth==='full');
+    if(!inConf.length) return;
     const sorted = [...inConf].sort((a,b)=>{
       const sa = (a.lensScores?.[lensKey])||0;
       const sb = (b.lensScores?.[lensKey])||0;
@@ -224,7 +226,15 @@ function applyLens(lensKey){
       }
       const lensLabel = LENSES.find(L=>L.key===lensKey).label;
       const warn = u.noVarsity ? ' ⚠' : '';
-      badge.textContent = '★ #'+(pos+1)+' '+u.div+' · '+lensLabel.toUpperCase()+warn;
+      // Never badge listed schools — their scores are unverified
+      if(u.profileDepth === 'listed'){
+        card.classList.remove('lens-top1','lens-top2','lens-top3');
+        card.dataset.lensdivtop = 'false';
+        const badge = card.querySelector('.lens-badge');
+        if(badge) badge.remove();
+      } else {
+        badge.textContent = '★ #'+(pos+1)+' '+u.div+' · '+lensLabel.toUpperCase()+warn;
+      }
     } else {
       const badge = card.querySelector('.lens-badge');
       if(badge) badge.remove();

@@ -423,7 +423,10 @@ function updateLensRow() {
   if (!el || typeof LENSES === 'undefined') return;
 
   el.innerHTML = LENSES.map(L => {
-    const sorted = [...unis].sort((a,b) => ((b.lensScores?.[L.key]||0) - (a.lensScores?.[L.key]||0)));
+    // Full-profile schools only — listed schools have unverified lensScores
+    const sorted = [...unis]
+      .filter(u => u.profileDepth === 'full')
+      .sort((a,b) => ((b.lensScores?.[L.key]||0) - (a.lensScores?.[L.key]||0)));
     const top = sorted[0];
     if (!top) return '';
 

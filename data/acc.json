@@ -197,7 +197,8 @@
     "profileDepth": "full",
     "confKey": "acc",
     "mapX": 387,
-    "mapY": 143
+    "mapY": 143,
+    "domain": "virginia.edu"
   },
   {
     "id": "wakeforest",
@@ -398,7 +399,8 @@
     "profileDepth": "full",
     "confKey": "acc",
     "mapX": 375,
-    "mapY": 155
+    "mapY": 155,
+    "domain": "wfu.edu"
   },
   {
     "id": "smu",
@@ -603,7 +605,8 @@
     "profileDepth": "full",
     "confKey": "acc",
     "mapX": 248,
-    "mapY": 196
+    "mapY": 196,
+    "domain": "smu.edu"
   },
   {
     "id": "clemson",
@@ -707,7 +710,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Elite ACC program. Two-time recent NCAA champions. Health Science path strong for pre-PT.",
-    "url": "https://clemsontigers.com/sports/mens-soccer"
+    "url": "https://clemsontigers.com/sports/mens-soccer",
+    "domain": "clemson.edu"
   },
   {
     "id": "notredame",
@@ -811,7 +815,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Elite academics + strong ACC soccer. Cold Indiana winters a drawback. High cost and very selective admission.",
-    "url": "https://und.com/sports/mens-soccer"
+    "url": "https://und.com/sports/mens-soccer",
+    "domain": "nd.edu"
   },
   {
     "id": "duke",
@@ -916,7 +921,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Elite academics and strong ACC soccer. Very expensive. Extremely competitive admission.",
-    "url": "https://goduke.com/sports/mens-soccer"
+    "url": "https://goduke.com/sports/mens-soccer",
+    "domain": "duke.edu"
   },
   {
     "id": "unc",
@@ -1020,7 +1026,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Strong Exercise Science program and solid ACC soccer. Good value relative to Duke/Notre Dame.",
-    "url": "https://goheels.com/sports/mens-soccer"
+    "url": "https://goheels.com/sports/mens-soccer",
+    "domain": "unc.edu"
   },
   {
     "id": "ncstate",
@@ -1121,7 +1128,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Mid-tier ACC program in Raleigh. Good value for cost. More realistic minutes opportunity than top ACC programs.",
-    "url": "https://gopack.com/sports/mens-soccer"
+    "url": "https://gopack.com/sports/mens-soccer",
+    "domain": "ncsu.edu"
   },
   {
     "id": "louisville",
@@ -1224,7 +1232,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Best value in the ACC. Warm, mid-sized city. Realistic minutes path. UofL Health for pre-PT clinical experience.",
-    "url": "https://gocards.com/sports/mens-soccer"
+    "url": "https://gocards.com/sports/mens-soccer",
+    "domain": "louisville.edu"
   },
   {
     "id": "pittsburgh",
@@ -1328,7 +1337,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Real city \u2014 Pittsburgh has strong character. UPMC partnership is outstanding for pre-PT. Cold climate is a drawback.",
-    "url": "https://pittPanthers.com/sports/mens-soccer"
+    "url": "https://pittPanthers.com/sports/mens-soccer",
+    "domain": "pitt.edu"
   },
   {
     "id": "stanford",
@@ -1434,7 +1444,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Best academic + soccer combination in the entire guide. Bay Area location. Extremely difficult admission \u2014 elite level required.",
-    "url": "https://gostanford.com/sports/mens-soccer"
+    "url": "https://gostanford.com/sports/mens-soccer",
+    "domain": "stanford.edu"
   },
   {
     "id": "syracuse",
@@ -1538,7 +1549,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Mid-tier ACC program. Expensive private university. Very cold winters \u2014 significant lifestyle downside for Olivier.",
-    "url": "https://cuse.com/sports/mens-soccer"
+    "url": "https://cuse.com/sports/mens-soccer",
+    "domain": "syracuse.edu"
   },
   {
     "id": "cal",
@@ -1644,7 +1656,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Bay Area lifestyle closest to UCLA. Strong physiology path for pre-PT. Now in ACC \u2014 competing at higher level.",
-    "url": "https://calbears.com/sports/mens-soccer"
+    "url": "https://calbears.com/sports/mens-soccer",
+    "domain": "berkeley.edu"
   },
   {
     "id": "fsu",
@@ -1748,6 +1761,7 @@
     "facilities": [],
     "courses": [],
     "rec": "Best value ACC warm-weather option. Florida location + strong soccer + accessible cost. Tallahassee is smaller city \u2014 lifestyle trade-off.",
-    "url": "https://seminoles.com/sports/mens-soccer"
+    "url": "https://seminoles.com/sports/mens-soccer",
+    "domain": "fsu.edu"
   }
 ]

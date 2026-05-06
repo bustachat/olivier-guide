@@ -413,8 +413,20 @@ function updateShortlist() {
 
     return `<div class="dash-sl-card${overBudget?' over-budget':''}${ineligible?' ineligible':''}">
       <div class="dash-sl-star">★ TOP</div>
-      <div class="dash-sl-div${divClass}">${u.div} · ${u.conf}</div>
-      <div class="dash-sl-name">${u.name}</div>
+      <div class="dash-sl-head" style="display:flex;align-items:center;gap:.45rem;margin-bottom:.3rem">
+        <div class="dash-sl-emblem" data-domain="${u.domain||''}" data-abbr="${u.name.slice(0,4)}"
+          style="width:34px;height:34px;border-radius:7px;background:var(--surface2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">
+          ${u.domain
+            ? `<img src="https://logo.clearbit.com/${u.domain}" alt="${u.name}" width="28" height="28" style="object-fit:contain"
+                onerror="this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}">`
+            : `<span style="font-size:9px;font-weight:800;color:var(--muted)">${u.name.slice(0,4)}</span>`
+          }
+        </div>
+        <div>
+          <div class="dash-sl-name" style="margin:0 0 1px">${u.name}</div>
+          <div class="dash-sl-div${divClass}" style="margin:0">${u.div} · ${u.conf}</div>
+        </div>
+      </div>
       <div class="dash-sl-deg">${(u.degreeTitle||'').substring(0,42)}</div>
       <div class="dash-sl-scores">
         <div class="dash-sl-sc" style="color:${fitColor}">${u.fitOlivier||'—'}% <span>fit</span></div>

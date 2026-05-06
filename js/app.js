@@ -339,6 +339,32 @@ function renderCards(){
   if(summaryEl) summaryEl.innerHTML = 'Showing all <strong>'+totalCards+'</strong> schools';
 }
 
+// ── School emblem logo helper ────────────────────────────────────────────────
+// Tries Clearbit (high-res PNG) first, falls back to Google favicon (64px),
+// then falls back to the coloured text abbreviation if both fail.
+function logoUrl(u, size){
+  if(!u.domain) return null;
+  return 'https://logo.clearbit.com/' + u.domain;
+}
+function faviconUrl(u){
+  if(!u.domain) return null;
+  return 'https://www.google.com/s2/favicons?domain=' + u.domain + '&sz=64';
+}
+function buildEmblemHtml(u, sizeClass){
+  const abbr = u.name.slice(0,4);
+  const bg   = (u.color || ['#e0e7ff','#4f46e5'])[0];
+  const fg   = (u.color || ['#e0e7ff','#4f46e5'])[1];
+  if(!u.domain){
+    return '<div class="card-av2 '+sizeClass+'" style="background:'+bg+';color:'+fg+'">'+abbr+'</div>';
+  }
+  const id = 'emb-'+u.id;
+  return '<div class="card-emblem '+sizeClass+'" id="'+id+'" data-abbr="'+abbr+'" data-bg="'+bg+'" data-fg="'+fg+'" data-domain="'+u.domain+'">'+
+    '<img src="'+logoUrl(u)+'" alt="'+u.name+'" '+
+      'onerror="this.src=\''+faviconUrl(u)+'\';this.onerror=function(){var p=this.parentNode;p.innerHTML=\'<div class=\\\'card-av2\\\' style=\\\'background:\'+this.parentNode.dataset.bg+\';color:\'+this.parentNode.dataset.fg+\'\\\'>\'+this.parentNode.dataset.abbr+\'</div>\';}">'+
+  '</div>';
+}
+
+
 function buildCard(u){
   const el=document.createElement('div');
   el.className='ucard'+(u.top?' top-pick':'');
@@ -399,7 +425,7 @@ function buildCard(u){
   el.innerHTML=
     topBadge+
     '<div class="card-head2">'+
-      '<div class="card-av2" style="background:'+cardColor[0]+';color:'+cardColor[1]+'">'+u.name.slice(0,4)+'</div>'+
+      buildEmblemHtml(u, 'card-av-size')+
       '<div class="card-id">'+
         '<h3>'+u.full+'</h3>'+
         '<div class="card-sub">'+

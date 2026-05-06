@@ -196,7 +196,8 @@
     "profileDepth": "full",
     "confKey": "aac",
     "mapX": 370,
-    "mapY": 240
+    "mapY": 240,
+    "domain": "fiu.edu"
   },
   {
     "id": "usf",
@@ -394,7 +395,8 @@
     "profileDepth": "full",
     "confKey": "aac",
     "mapX": 352,
-    "mapY": 228
+    "mapY": 228,
+    "domain": "usf.edu"
   },
   {
     "id": "tulsa",
@@ -497,7 +499,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Warm Oklahoma city. Small private university with strong scholarship offers. Mid-tier AAC soccer.",
-    "url": "https://tulsahurricane.com/sports/mens-soccer"
+    "url": "https://tulsahurricane.com/sports/mens-soccer",
+    "domain": "utulsa.edu"
   },
   {
     "id": "memphis",
@@ -600,7 +603,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Best value in the AAC. Warm city. Low academic bar. Soccer is competitive enough for development.",
-    "url": "https://gotigersgo.com/sports/mens-soccer"
+    "url": "https://gotigersgo.com/sports/mens-soccer",
+    "domain": "memphis.edu"
   },
   {
     "id": "wichitastate",
@@ -701,7 +705,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Lowest cost option in the AAC. Best for budget-constrained scenarios. Flat Kansas campus \u2014 low lifestyle appeal for Olivier.",
-    "url": "https://goshockers.com/sports/mens-soccer"
+    "url": "https://goshockers.com/sports/mens-soccer",
+    "domain": "wichita.edu"
   },
   {
     "id": "temple",
@@ -803,7 +808,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Philadelphia location is the main draw \u2014 Union proximity, real city. Good value for an AAC program.",
-    "url": "https://owlsports.com/sports/mens-soccer"
+    "url": "https://owlsports.com/sports/mens-soccer",
+    "domain": "temple.edu"
   },
   {
     "id": "eastcarolina",
@@ -905,7 +911,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Lowest-cost warm option in the guide. Rural North Carolina campus. Best for budget-first scenarios.",
-    "url": "https://ecupirates.com/sports/mens-soccer"
+    "url": "https://ecupirates.com/sports/mens-soccer",
+    "domain": "ecu.edu"
   },
   {
     "id": "uab",
@@ -1008,7 +1015,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Hidden gem for pre-PT pathway \u2014 UAB Hospital is world-class. Warm Birmingham city. Very low cost. Soccer is lower-tier AAC.",
-    "url": "https://uabsports.com/sports/mens-soccer"
+    "url": "https://uabsports.com/sports/mens-soccer",
+    "domain": "uab.edu"
   },
   {
     "id": "navy",
@@ -1109,7 +1117,8 @@
     "facilities": [],
     "courses": [],
     "rec": "\u26a0 Service academy \u2014 requires 5-year US Navy commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. Listed for completeness only.",
-    "url": "https://navysports.com/sports/mens-soccer"
+    "url": "https://navysports.com/sports/mens-soccer",
+    "domain": "usna.edu"
   },
   {
     "id": "army",
@@ -1210,7 +1219,8 @@
     "facilities": [],
     "courses": [],
     "rec": "\u26a0 Service academy \u2014 requires 5-year US Army commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. Listed for completeness only.",
-    "url": "https://goarmywestpoint.com/sports/mens-soccer"
+    "url": "https://goarmywestpoint.com/sports/mens-soccer",
+    "domain": "westpoint.edu"
   },
   {
     "id": "charlotte",
@@ -1315,7 +1325,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Warm city at very low cost. Charlotte FC proximity is a development bonus. Best lifestyle-to-cost ratio in the AAC.",
-    "url": "https://charlotte49ers.com/sports/mens-soccer"
+    "url": "https://charlotte49ers.com/sports/mens-soccer",
+    "domain": "charlotte.edu"
   },
   {
     "id": "rice",
@@ -1421,6 +1432,7 @@
     "facilities": [],
     "courses": [],
     "rec": "Elite academics + warm Houston city + Texas Medical Center for pre-PT = best non-power-conference academic option. Selective admission.",
-    "url": "https://riceowls.com/sports/mens-soccer"
+    "url": "https://riceowls.com/sports/mens-soccer",
+    "domain": "rice.edu"
   }
 ]

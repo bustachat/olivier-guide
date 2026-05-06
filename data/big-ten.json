@@ -198,7 +198,8 @@
     "profileDepth": "full",
     "confKey": "big-ten",
     "mapX": 71,
-    "mapY": 152
+    "mapY": 152,
+    "domain": "ucla.edu"
   },
   {
     "id": "indiana",
@@ -396,7 +397,8 @@
     "profileDepth": "full",
     "confKey": "big-ten",
     "mapX": 318,
-    "mapY": 133
+    "mapY": 133,
+    "domain": "indiana.edu"
   },
   {
     "id": "pennstate",
@@ -501,7 +503,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Consistent Big Ten contender. Strong kinesiology program. Rural campus \u2014 significant lifestyle trade-off for Olivier.",
-    "url": "https://gopsusports.com/sports/mens-soccer"
+    "url": "https://gopsusports.com/sports/mens-soccer",
+    "domain": "psu.edu"
   },
   {
     "id": "michigan",
@@ -605,7 +608,8 @@
     "facilities": [],
     "courses": [],
     "rec": "One of the best Movement Science programs in the country. Michigan Medicine pre-PT access is elite. Ann Arbor is a lively college town despite cold winters.",
-    "url": "https://mgoblue.com/sports/mens-soccer"
+    "url": "https://mgoblue.com/sports/mens-soccer",
+    "domain": "umich.edu"
   },
   {
     "id": "michiganstate",
@@ -706,7 +710,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Mid-tier Big Ten. Best for realistic minutes among Michigan schools. Cold campus \u2014 similar drawbacks to Michigan.",
-    "url": "https://msuspartans.com/sports/mens-soccer"
+    "url": "https://msuspartans.com/sports/mens-soccer",
+    "domain": "msu.edu"
   },
   {
     "id": "ohiostate",
@@ -810,7 +815,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Columbus is a real, growing city \u2014 good lifestyle for a Midwest option. Wexner Medical Center for pre-PT. Reasonable cost.",
-    "url": "https://ohiostatebuckeyes.com/sports/mens-soccer"
+    "url": "https://ohiostatebuckeyes.com/sports/mens-soccer",
+    "domain": "osu.edu"
   },
   {
     "id": "northwestern",
@@ -913,7 +919,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Elite academics + Chicago access. Soccer is competitive not elite \u2014 more realistic minutes than top Big Ten programs. Very expensive.",
-    "url": "https://nusports.com/sports/mens-soccer"
+    "url": "https://nusports.com/sports/mens-soccer",
+    "domain": "northwestern.edu"
   },
   {
     "id": "wisconsin",
@@ -1014,7 +1021,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Lower-cost Big Ten option. Best for minutes opportunity among mid-tier programs. Cold Wisconsin winters are a significant drawback.",
-    "url": "https://uwbadgers.com/sports/mens-soccer"
+    "url": "https://uwbadgers.com/sports/mens-soccer",
+    "domain": "wisc.edu"
   },
   {
     "id": "rutgers",
@@ -1118,7 +1126,8 @@
     "facilities": [],
     "courses": [],
     "rec": "NYC proximity is a genuine advantage. Mid-tier Big Ten program. Historically strong in Big East era \u2014 still rebuilding in Big Ten.",
-    "url": "https://scarletknights.com/sports/mens-soccer"
+    "url": "https://scarletknights.com/sports/mens-soccer",
+    "domain": "rutgers.edu"
   },
   {
     "id": "oregon",
@@ -1221,7 +1230,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Best minutes opportunity in the Big Ten. Strong human physiology degree. Pacific Northwest climate is rainy \u2014 not ideal for Olivier.",
-    "url": "https://goducks.com/sports/mens-soccer"
+    "url": "https://goducks.com/sports/mens-soccer",
+    "domain": "uoregon.edu"
   },
   {
     "id": "usc",
@@ -1327,7 +1337,8 @@
     "facilities": [],
     "courses": [],
     "rec": "LA lifestyle \u2014 second best after UCLA for Olivier's climate preference. USC Keck Medicine for pre-PT. Expensive but worth considering alongside UCLA.",
-    "url": "https://usctrojans.com/sports/mens-soccer"
+    "url": "https://usctrojans.com/sports/mens-soccer",
+    "domain": "usc.edu"
   },
   {
     "id": "washington",
@@ -1431,7 +1442,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Seattle city lifestyle. Sounders proximity a pro soccer bonus. Rain is a genuine drawback for Olivier. Mid-range cost.",
-    "url": "https://gohuskies.com/sports/mens-soccer"
+    "url": "https://gohuskies.com/sports/mens-soccer",
+    "domain": "uw.edu"
   },
   {
     "id": "illinois",
@@ -1532,7 +1544,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Most accessible minutes in the Big Ten. Rural flat campus \u2014 low lifestyle fit for Olivier. Main draw is playing time and lower academic bar.",
-    "url": "https://fightingillini.com/sports/mens-soccer"
+    "url": "https://fightingillini.com/sports/mens-soccer",
+    "domain": "illinois.edu"
   },
   {
     "id": "maryland_bten",
@@ -1636,6 +1649,7 @@
     "facilities": [],
     "courses": [],
     "rec": "Historically one of the best programs in the country. Note: Maryland is Big Ten (moved 2014), not ACC \u2014 remove duplicate from acc.json. Strong kinesiology + DC career proximity.",
-    "url": "https://umterps.com/sports/mens-soccer"
+    "url": "https://umterps.com/sports/mens-soccer",
+    "domain": "umd.edu"
   }
 ]

@@ -196,7 +196,8 @@
     "profileDepth": "full",
     "confKey": "big-east",
     "mapX": 412,
-    "mapY": 113
+    "mapY": 113,
+    "domain": "stjohns.edu"
   },
   {
     "id": "georgetown",
@@ -301,7 +302,8 @@
     "facilities": [],
     "courses": [],
     "rec": "DC city life + elite academics + Georgetown Medical pre-PT access. NOTE: Georgetown is Big East, not ACC \u2014 remove duplicate from acc.json.",
-    "url": "https://guhoyas.com/sports/mens-soccer"
+    "url": "https://guhoyas.com/sports/mens-soccer",
+    "domain": "georgetown.edu"
   },
   {
     "id": "creighton",
@@ -405,7 +407,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Consistently strong Big East program. Omaha is a real city with low cost of living. Good value for a competitive D1 program.",
-    "url": "https://gocreighton.com/sports/mens-soccer"
+    "url": "https://gocreighton.com/sports/mens-soccer",
+    "domain": "creighton.edu"
   },
   {
     "id": "providence",
@@ -507,7 +510,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Small Catholic college. Providence is a real city with Boston day-trip access. Expensive for the program tier.",
-    "url": "https://friars.com/sports/mens-soccer"
+    "url": "https://friars.com/sports/mens-soccer",
+    "domain": "providence.edu"
   },
   {
     "id": "setonhall",
@@ -609,7 +613,8 @@
     "facilities": [],
     "courses": [],
     "rec": "NYC proximity is the main draw \u2014 30 min to Manhattan. Mid-tier Big East program. Expensive for the tier.",
-    "url": "https://shupirates.com/sports/mens-soccer"
+    "url": "https://shupirates.com/sports/mens-soccer",
+    "domain": "shu.edu"
   },
   {
     "id": "butler",
@@ -711,7 +716,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Beautiful small campus in Indianapolis. Good value for a Big East program. Indianapolis medical district for pre-PT clinical access.",
-    "url": "https://butlersports.com/sports/mens-soccer"
+    "url": "https://butlersports.com/sports/mens-soccer",
+    "domain": "butler.edu"
   },
   {
     "id": "xavier",
@@ -813,7 +819,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Small Jesuit university in Cincinnati. FC Cincinnati proximity is a pro soccer bonus. Mid-tier Big East program.",
-    "url": "https://goxavier.com/sports/mens-soccer"
+    "url": "https://goxavier.com/sports/mens-soccer",
+    "domain": "xavier.edu"
   },
   {
     "id": "uconn",
@@ -916,7 +923,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Historically strong program. Rural Storrs campus is the main drawback \u2014 isolated location in Connecticut.",
-    "url": "https://uconnhuskies.com/sports/mens-soccer"
+    "url": "https://uconnhuskies.com/sports/mens-soccer",
+    "domain": "uconn.edu"
   },
   {
     "id": "depaul",
@@ -1018,7 +1026,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Chicago city life is the main appeal \u2014 strongest lifestyle score in this Big East batch. Weakest soccer in the conference but best location for Olivier.",
-    "url": "https://depaulbluedemons.com/sports/mens-soccer"
+    "url": "https://depaulbluedemons.com/sports/mens-soccer",
+    "domain": "depaul.edu"
   },
   {
     "id": "villanova",
@@ -1120,7 +1129,8 @@
     "facilities": [],
     "courses": [],
     "rec": "Prestigious small Catholic university. Philadelphia suburb with strong Main Line culture. Expensive for the program tier.",
-    "url": "https://villanova.com/sports/mens-soccer"
+    "url": "https://villanova.com/sports/mens-soccer",
+    "domain": "villanova.edu"
   },
   {
     "id": "marquette",
@@ -1224,6 +1234,7 @@
     "facilities": [],
     "courses": [],
     "rec": "Solid Big East program in Milwaukee. Consistent tournament contender. Cold winters but real city life.",
-    "url": "https://gomarquette.com/sports/mens-soccer"
+    "url": "https://gomarquette.com/sports/mens-soccer",
+    "domain": "marquette.edu"
   }
 ]

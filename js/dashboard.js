@@ -288,14 +288,27 @@ function attachSliderHandlers() {
     atarSl.addEventListener('input', function() {
       const a = parseInt(this.value);
       dashGpa = atarToGpa(a);
+      // Update display values only — never re-render the slider HTML element
       document.getElementById('dash-atar-val').textContent = a;
       document.getElementById('dash-gpa-val').textContent  = dashGpa.toFixed(1);
-      // Sync main app ATAR slider if present
+      // Sync main app ATAR slider — set value directly, do NOT call onAtarSlide
+      // onAtarSlide would call syncDashGpa which would trigger updateDashboard again (loop)
       const mainSl = document.getElementById('atar-slider');
       if (mainSl && mainSl.value !== String(a)) {
         mainSl.value = a;
-        // Trigger main app sync if function exists
-        if (typeof onAtarSlide === 'function') onAtarSlide(a);
+        // Update main app display elements directly
+        const mainAtarEl = document.getElementById('atar-display');
+        const mainGpaEl  = document.getElementById('gpa-display');
+        if (mainAtarEl) mainAtarEl.textContent = a;
+        if (mainGpaEl)  mainGpaEl.textContent  = dashGpa.toFixed(1);
+        // Update the main app's currentAtarGpa variable if accessible
+        if (typeof currentAtarGpa !== 'undefined') {
+          // Use assignment via window scope to update the global
+          window.currentAtarGpa = dashGpa;
+        }
+        // Refresh GPA rows in explore tab without rebuilding slider
+        if (typeof refreshAllGpaRows === 'function') refreshAllGpaRows();
+        if (typeof updateAtarCounts === 'function')  updateAtarCounts();
       }
       updateDashboard();
     });
@@ -310,25 +323,26 @@ function attachSliderHandlers() {
   }
 }
 
-// ─── Called when main ATAR slider moves ──────────────────────────────────────
-function syncDashGpa(gpa) {
+// ─── Called when main ATAR slider moves — receives both atar int and gpa float ──
+function syncDashGpa(gpa, atar) {
   dashGpa = gpa;
-  const sl = document.getElementById('dash-atar-slider');
-  const gpaEl  = document.getElementById('dash-gpa-val');
-  // Back-calculate ATAR from GPA for display
-  if (sl) {
-    // Find closest ATAR
-    let bestAtar = 70;
-    let bestDiff = 99;
+  const sl    = document.getElementById('dash-atar-slider');
+  const gpaEl = document.getElementById('dash-gpa-val');
+  const atarEl = document.getElementById('dash-atar-val');
+
+  // Use the passed atar value directly — avoids float back-calculation rounding errors
+  const atarVal = (atar !== undefined) ? atar : (() => {
+    let bestAtar = 70, bestDiff = 99;
     for (let a = 50; a <= 99; a++) {
       const diff = Math.abs(atarToGpa(a) - gpa);
       if (diff < bestDiff) { bestDiff = diff; bestAtar = a; }
     }
-    sl.value = bestAtar;
-    const atarEl = document.getElementById('dash-atar-val');
-    if (atarEl) atarEl.textContent = bestAtar;
-  }
-  if (gpaEl) gpaEl.textContent = gpa.toFixed(1);
+    return bestAtar;
+  })();
+
+  if (sl && sl.value !== String(atarVal)) sl.value = atarVal;
+  if (atarEl) atarEl.textContent = atarVal;
+  if (gpaEl)  gpaEl.textContent  = gpa.toFixed(1);
   if (document.getElementById('dash-stat-strip')) updateDashboard();
 }
 

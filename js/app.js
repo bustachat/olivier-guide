@@ -826,7 +826,7 @@ function onAtarSlide() {
 
   refreshAllGpaRows();
   updateAtarCounts();
-  if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa);
+  if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa, atar);
 }
 
 function refreshAllGpaRows() {

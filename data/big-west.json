@@ -104,10 +104,10 @@
     },
     "coach": {
       "name": "Tim Vom Steeg",
-      "title": "Head Coach (20+ seasons)",
+      "title": "Head Coach (27th season 2025)",
       "email": "tvomsteeg@athletics.ucsb.edu",
-      "phone": "805-893-3229",
-      "profile": "350+ career wins. Manu Duah #1 overall pick 2025. One of the most respected coaches in D1."
+      "phone": "805-893-8320",
+      "profile": "27th season at UCSB 2025. Career record 324-152-76. 2006 NCAA National Champion. National CoY 2004 and 2006. 4x Big West CoY. 14 Big West Championships (12 reg season + 2 tourn). 32 MLS draftees including Manu Duah #1 overall 2025. UCSB alum BA History 1989, MA 2000. His four sons all played for UCSB. 2025 Big West Regular Season Champions."
     },
     "devScores": {
       "tactical": 82,
@@ -197,7 +197,33 @@
     "confKey": "big-west",
     "mapX": 62,
     "mapY": 150,
-    "domain": "ucsb.edu"
+    "domain": "ucsb.edu",
+    "staff": [
+      {
+        "name": "Greg Wilson",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Long-tenured associate HC. Recruiting and tactical development."
+      },
+      {
+        "name": "Matias Fernandez",
+        "role": "Goalkeeping Coach",
+        "email": "",
+        "bg": "GK development."
+      },
+      {
+        "name": "Carson Vom Steeg",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Joined May 2025. UCSB alum. Former US U-18 National Team captain. Stanford NCAA champion 2017. USL career: Loudoun United (DC United reserve) and Memphis 901 FC."
+      },
+      {
+        "name": "Kian Kohan",
+        "role": "Director of Operations",
+        "email": "",
+        "bg": "Program operations."
+      }
+    ]
   },
   {
     "id": "calpoly",

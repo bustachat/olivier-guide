@@ -103,11 +103,11 @@
       "note": "Belson Stadium and the athletic facilities are functional but not elite by D1 standards. The extraordinary differentiator is the NYC clinical network \u2014 Hospital for Special Surgery is the #1 orthopaedic hospital in the world and St. John's players can access it for clinical observation."
     },
     "coach": {
-      "name": "Dave Masur",
-      "title": "Head Coach (30+ years)",
+      "name": "Dr Dave Masur",
+      "title": "Head Coach / Associate Athletics Director (35th season at SJU)",
       "email": "masurd@stjohns.edu",
-      "phone": "718-990-6139",
-      "profile": "450+ career wins. Excellent with international players. NYC connections for clinical internships outstanding."
+      "phone": "",
+      "profile": "35th season at St Johns 2025. 39th season as HC overall. 468-213-118 (.660) career record. 415-192-112 at SJU. 1996 NCAA National Champion. 4 College Cups. 23 NCAA Tournaments including 15 consecutive 1992-2006. 9 Big East Tournament titles. 2x National CoY (1996, 2001). 3x Big East CoY. Doctor of Education from St Johns. 2025: returned to NCAA Tournament for first time since 2021, 9-6-4 record. 2nd-winningest active D1 HC."
     },
     "devScores": {
       "tactical": 80,
@@ -197,7 +197,15 @@
     "confKey": "big-east",
     "mapX": 412,
     "mapY": 113,
-    "domain": "stjohns.edu"
+    "domain": "stjohns.edu",
+    "staff": [
+      {
+        "name": "David Janezic",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Associate HC since 2021. 9th year on staff 2025. Named TopDrawerSoccer Top D1 Assistant multiple times. Part of 2019 Big East Coaching Staff of Year. Developed Nicolas Fleuriau Chateau (3rd round MLS pick, Vancouver, 2024). Previously at Fairleigh Dickinson."
+      }
+    ]
   },
   {
     "id": "georgetown",

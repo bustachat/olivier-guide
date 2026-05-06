@@ -106,10 +106,10 @@
     },
     "coach": {
       "name": "Ryan Jorden",
-      "title": "Head Coach (7th yr)",
-      "email": "rjorden@athletics.ucla.edu",
+      "title": "Head Coach (7th season 2025)",
+      "email": "msoccer@athletics.ucla.edu",
       "phone": "310-825-3515",
-      "profile": "PhD in Biomechanics from Northern Colorado. 7th season at UCLA 2025. 150-113-35 (.562) overall record. 13 MLS draftees including 9 at UCLA. Won 2025 Big Ten Tournament over Michigan 5-0. USSF A License. ODP Region IV HC 2013-19. Former Pacific Tigers HC \u2014 largest single-season turnaround in D1 history (2016). No verified international player connections."
+      "profile": "7th season at UCLA 2025. 150-113-35 (.562) overall record. 13 MLS draftees. PhD Biomechanics from Northern Colorado. Won 2025 Big Ten Tournament over Michigan 5-0. USSF A License. Former Pacific Tigers HC \u2014 led largest single-season D1 turnaround. NCCAA National CoY 2011 and 2012 at Cal Baptist."
     },
     "devScores": {
       "tactical": 90,
@@ -199,7 +199,27 @@
     "confKey": "big-ten",
     "mapX": 71,
     "mapY": 152,
-    "domain": "ucla.edu"
+    "domain": "ucla.edu",
+    "staff": [
+      {
+        "name": "Sergi Nus",
+        "role": "Assistant Coach",
+        "email": "sergi.nus@athletics.ucla.edu",
+        "bg": "Full-time assistant. Recruiting and player development."
+      },
+      {
+        "name": "Erik Holt",
+        "role": "Assistant Coach",
+        "email": "msoccer@athletics.ucla.edu",
+        "bg": "Hired Jan 2026. UCLA alum and former team captain. 6-yr MLS career with Real Salt Lake. Previously assistant at LMU 2025."
+      },
+      {
+        "name": "Graeme Jorden",
+        "role": "Graduate Assistant",
+        "email": "",
+        "bg": "Graduate Assistant."
+      }
+    ]
   },
   {
     "id": "indiana",
@@ -310,10 +330,10 @@
     },
     "coach": {
       "name": "Todd Yeagley",
-      "title": "Head Coach",
+      "title": "Head Coach (16th season 2026)",
       "email": "tyeagley@indiana.edu",
-      "phone": "812-855-9148",
-      "profile": "Big Ten champs 2020, 2021, 2023, 2024. Developed Aidan Morris (USMNT). High-pressure, high-tempo style. Bioenergetics lab is only one of its kind in USA."
+      "phone": "812-855-0051",
+      "profile": "16th season at Indiana 2026. Son of legendary Jerry Yeagley. 2012 NCAA National Champion (first #16 seed ever to win championship). 39 MLS draftees under him. 11 Big Ten Championships. 4 Big Ten CoY. 4 consecutive Big Ten Tourn titles 2020-23. 2025: missed Big Ten Tourn but received NCAA at-large bid. Former Columbus Crew MLS player. IU All-American 1991-94."
     },
     "devScores": {
       "tactical": 93,
@@ -398,7 +418,27 @@
     "confKey": "big-ten",
     "mapX": 318,
     "mapY": 133,
-    "domain": "indiana.edu"
+    "domain": "indiana.edu",
+    "staff": [
+      {
+        "name": "Christian Lomeli",
+        "role": "Assistant Coach",
+        "email": "clomeli@iu.edu",
+        "bg": "Full-time assistant. Player development and recruiting."
+      },
+      {
+        "name": "Tanner Thompson",
+        "role": "Assistant Coach",
+        "email": "tannthom@iu.edu",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Jacob Bushue",
+        "role": "Assistant Coach",
+        "email": "jbushue@iu.edu",
+        "bg": "Full-time assistant."
+      }
+    ]
   },
   {
     "id": "pennstate",

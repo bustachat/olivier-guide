@@ -108,10 +108,10 @@
     },
     "coach": {
       "name": "Kyle Russell",
-      "title": "Head Coach (6th season)",
+      "title": "Head Coach (7th season 2026)",
       "email": "krussell@fiu.edu",
       "phone": "305-919-5773",
-      "profile": "2021 CUSA Coach of Year. 2022 AAC Champs. 2024 AAC Final. Stephen Afrifa #8 overall pick under him. Young, elite developer. FC Dallas connections. AAC championship contender every year."
+      "profile": "7th season at FIU 2026. Announced youngest HC in 2021 NCAA Tournament field. 2021 CUSA CoY. 2022 AAC Regular Season + Tournament Champs. 2024 and 2025 AAC Championship Finals \u2014 3 finals in 4 seasons. 2025: outlasted #1 Charlotte in PKs in AAC semis. Michael Appiah to Inter Miami 2025 MLS Draft. Stephen Afrifa #8 overall pick SKC 2022. 14 MLS draftees all-time. Contract through 2026."
     },
     "devScores": {
       "tactical": 90,
@@ -197,7 +197,27 @@
     "confKey": "aac",
     "mapX": 370,
     "mapY": 240,
-    "domain": "fiu.edu"
+    "domain": "fiu.edu",
+    "staff": [
+      {
+        "name": "Dannie Merida",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Full-time associate HC. Player development and recruitment."
+      },
+      {
+        "name": "Matteo Gasperoni",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant. Tactical and technical development."
+      },
+      {
+        "name": "Giuseppe Weller",
+        "role": "Volunteer Goalkeeper Coach",
+        "email": "",
+        "bg": "GK development and set piece work."
+      }
+    ]
   },
   {
     "id": "usf",
@@ -305,10 +325,10 @@
     },
     "coach": {
       "name": "George Kiefer",
-      "title": "Head Coach (returned 2025)",
+      "title": "Head Coach \u2014 2nd tenure (starts 2026)",
       "email": "gkiefer@usf.edu",
       "phone": "813-974-2125",
-      "profile": "Announced as USF HC Dec 10, 2025 \u2014 beginning SECOND tenure leading the Bulls in 2026. First stint USF 2002-16: 162-86-51 (.627), 4 conf titles, 10 NCAA apps, 2 Elite Eights. Then NC State 2017-23 and GCU 2024-25 (2025 WAC champ, NCAA Sweet 16, Far West Staff of Year). Career record 230-151-82 across 24 seasons. No verified Australian connections."
+      "profile": "Begins second tenure at USF in 2026, announced Dec 10 2025. First USF tenure 2002-16: 162-86-51 (.627), 4 conf titles, 10 NCAA apps, 2 Elite Eights. Then NC State 2017-23, GCU 2024-25 (2025 WAC champ, NCAA Sweet 16, Far West Staff of Year). Career record 230-151-82. 14 NCAA Tournament appearances total. Brought same GCU assistants De Oliveira and Madero to USF."
     },
     "devScores": {
       "tactical": 88,
@@ -396,7 +416,33 @@
     "confKey": "aac",
     "mapX": 352,
     "mapY": 228,
-    "domain": "usf.edu"
+    "domain": "usf.edu",
+    "staff": [
+      {
+        "name": "Daniel De Oliveira",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Joined from GCU where he helped win 2025 WAC title and reach NCAA Sweet 16 under Kiefer."
+      },
+      {
+        "name": "Armant\u00e9 Marshall",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Former USF player under Kiefer first tenure (2007-09). Was Director of Operations under previous staff. Stayed on in new role."
+      },
+      {
+        "name": "AJ Madero",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Joined from GCU. Was part of 2025 WAC championship and NCAA Sweet 16 staff."
+      },
+      {
+        "name": "Rima El Brouzi",
+        "role": "Director of Operations",
+        "email": "",
+        "bg": "Program operations."
+      }
+    ]
   },
   {
     "id": "tulsa",

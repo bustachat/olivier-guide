@@ -104,10 +104,10 @@
     },
     "coach": {
       "name": "Keith Wiggans",
-      "title": "Head Coach (6th season)",
-      "email": "kwiggans@cofc.edu",
-      "phone": "843-953-5932",
-      "profile": "CofC alum. Played 7 seasons for Charleston Battery (USL). Record improving: 1-4-3 (2020) to 10-6-2 (2024). Alumni connections to pro soccer in Charleston. 50th anniversary season 2024."
+      "title": "Head Coach (6th season 2025)",
+      "email": "msoccer@cofc.edu",
+      "phone": "843-953-6724",
+      "profile": "6th season as HC 2025. Overall record: 27-31-18, CAA: 10-19-8. 2024 best season: 10-6-2, ranked #23 nationally Sep 2024. CofC alum (2000-04) \u2014 holds school records for career GAA (0.99), wins (41), shutouts (23), saves (269). Played 7 seasons for Charleston Battery (USL). Was assistant/assoc HC under Ralph Lundy for 11 seasons before taking over 2019."
     },
     "devScores": {
       "tactical": 76,
@@ -193,7 +193,21 @@
     "confKey": "caa",
     "mapX": 385,
     "mapY": 178,
-    "domain": "cofc.edu"
+    "domain": "cofc.edu",
+    "staff": [
+      {
+        "name": "Jet Terry",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Hired March 2025. Charleston native, former CofC player 2016. 2 seasons as assistant at Saginaw Valley State (D2) where he helped win conf title and reach NCAA QF. Previously Director of Soccer Operations at CofC 2022-23."
+      },
+      {
+        "name": "Ernesto Aguinaga-Hernandez",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Joined July 2025. Previously volunteer assistant at Univ of Wisconsin-Parkside 4 seasons. Helped 2 conference titles, 3 NCAA D2 tournaments. Former trialist Club Leon FC (Mexico)."
+      }
+    ]
   },
   {
     "id": "william_mary",

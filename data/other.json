@@ -255,10 +255,10 @@
     },
     "coach": {
       "name": "Jim Barlow",
-      "title": "Head Coach (29th season)",
+      "title": "Head Coach (29th season 2025)",
       "email": "jbarlow@princeton.edu",
-      "phone": "609-258-3568",
-      "profile": "237-184-72 career record. 2025 Northeast Regional Coaching Staff of Year. 7 Ivy titles. Coached 5 MLS players. Princeton alum \u2014 deep connection to program."
+      "phone": "609-258-2438",
+      "profile": "29th season at Princeton 2025. Career record 237-184-72. 7 Ivy League titles. First-ever Ivy League + Tournament double 2025 (undefeated 7-0 conf, no goals conceded in conf play). 2025 Northeast Regional Staff of Year. 2024 Ivy League Tournament Champions. 3 consecutive perfect Ivy seasons. Former US U-15 HC 2004-11. Princeton alum 1990 Ivy League Player of Year. Former midfielder."
     },
     "devScores": {
       "tactical": 88,
@@ -303,7 +303,28 @@
     "confKey": "other",
     "mapX": 408,
     "mapY": 118,
-    "domain": "princeton.edu"
+    "domain": "princeton.edu",
+    "staff": [
+      {
+        "name": "Steve Totten",
+        "role": "Associate Head Coach",
+        "email": "stotten@princeton.edu",
+        "phone": "609-258-2438",
+        "bg": "18 years on Princeton staff. Key recruiting architect. Part of 2025 Northeast Regional Staff of Year."
+      },
+      {
+        "name": "Sam Maira",
+        "role": "Assistant Coach (GK)",
+        "email": "smaira@princeton.edu",
+        "bg": "Joined 2021. 5 seasons. South Jersey Soccer Coaches HOF. Rutgers alum. Part of 2025 Northeast Regional Staff of Year."
+      },
+      {
+        "name": "Tom Moffat",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "19 seasons with the Tigers. Part of 2025 Northeast Regional Staff of Year."
+      }
+    ]
   },
   {
     "id": "yale",
@@ -562,10 +583,10 @@
     },
     "coach": {
       "name": "Lucas Martorana",
-      "title": "Head Coach (appointed 2022)",
+      "title": "Head Coach (4th season as HC)",
       "email": "lucas.martorana@pba.edu",
       "phone": "561-803-2000",
-      "profile": "33-22-9 as HC (61-9-6 as assistant under previous coach) record as assistant before becoming HC. 2025 SSC Coach of Year. #2 nationally. Tin Vastic led SSC in goals 2025. All-American Hermoso anchored defence. Former USL/PDL/MISL professional."
+      "profile": "Named HC Nov 2022 after interim role. HC record 33-22-9 (.586). 2025 SSC Coaching Staff of Year (first as HC). PBA #2 nationally 2025 (13-3-2 overall, 8-0-2 conf). Degree in Mathematics, Masters in school counseling. Former USL/PDL/MISL semi-pro player. Was assistant/associate HC 2017-22 (61-9-6 as assistant under McMahon)."
     },
     "devScores": {
       "tactical": 86,
@@ -652,7 +673,33 @@
     "confKey": "other",
     "mapX": 376,
     "mapY": 234,
-    "domain": "pba.edu"
+    "domain": "pba.edu",
+    "staff": [
+      {
+        "name": "Pete Arnold",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Jake Strachan",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant. Former PBA player \u2014 earned all-SSC honors 2024."
+      },
+      {
+        "name": "Leo Jean-Jacques",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Guillermo Falo",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      }
+    ]
   },
   {
     "id": "lynn",
@@ -760,10 +807,10 @@
     },
     "coach": {
       "name": "John Rootes",
-      "title": "Head Coach",
+      "title": "Head Coach (17th season \u2014 since 2008)",
       "email": "jrootes@lynn.edu",
       "phone": "561-237-7665",
-      "profile": "Head Coach since 2008 \u2014 most successful in program history. 3x NCAA D2 National Champion (2012, 2014, 2024). Record 194-54-31 at Lynn. United Soccer Coaches National Staff of Year 2024. Developed multiple Australian and international players."
+      "profile": "17th season at Lynn 2025. 194-54-31 (.751) at Lynn. 3 NCAA D2 National Championships (2012, 2014, 2024). 2024 National Staff of Year. 10 NCAA appearances. 4 final game appearances. 26 All-Americans. Career total 498-150-55 across 4 schools including SNHU (169-30-11, 1989 national champion) and Clayton State (69-38-9). 2012-14 teams had highest team GPA in all NCAA/NAIA institutions."
     },
     "devScores": {
       "tactical": 82,
@@ -852,7 +899,21 @@
     "confKey": "other",
     "mapX": 377,
     "mapY": 232,
-    "domain": "lynn.edu"
+    "domain": "lynn.edu",
+    "staff": [
+      {
+        "name": "Anthony Desperito",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Former Lynn player who scored game-winning goal in 2012 national championship final under Rootes. Won 2012, 2014, 2024 titles \u2014 2 as player, 2 as coach. First person in Lynn history to win national title as both player and coach."
+      },
+      {
+        "name": "Mariana Mazzocca",
+        "role": "Assistant Athletic Trainer",
+        "email": "",
+        "bg": "Athletic trainer for mens soccer since 2023."
+      }
+    ]
   },
   {
     "id": "barry",
@@ -960,10 +1021,10 @@
     },
     "coach": {
       "name": "Petsa Ivanovic",
-      "title": "Head Coach",
+      "title": "Head Coach (4th season \u2014 since Spring 2022)",
       "email": "pivanovic@barry.edu",
       "phone": "305-899-3770",
-      "profile": "Multiple SSC championships. Strong international recruiting. US Soccer Federation licensed."
+      "profile": "4th season at Barry 2025. 31-18-8 overall record. Won both SSC regular season and tournament 2023 \u2014 first time in program history. 2025: 6th seed in SSC tournament after 6-9-3 season. Previously top assistant at Marshall for 5 years \u2014 helped win 2020-21 NCAA D1 National Championship (College Cup). Southeast Region Staff of Year 2019 and 2020-21. Originally from Palanka, Serbia. Played at University of Charleston and Jacksonville University."
     },
     "devScores": {
       "tactical": 84,
@@ -1056,7 +1117,34 @@
     "confKey": "other",
     "mapX": 372,
     "mapY": 238,
-    "domain": "barry.edu"
+    "domain": "barry.edu",
+    "staff": [
+      {
+        "name": "Ivan Barriga",
+        "role": "Associate Head Coach",
+        "email": "ibarriga@barry.edu",
+        "phone": "305-899-3135",
+        "bg": "Promoted to Assoc HC. On staff since 2019 as volunteer, promoted to full-time 2020. Has helped produce 13 All-SSC players."
+      },
+      {
+        "name": "Juan Wulf",
+        "role": "Goalkeeper Coach",
+        "email": "",
+        "bg": "GK development."
+      },
+      {
+        "name": "Ethan Sonis",
+        "role": "Volunteer Assistant Coach",
+        "email": "",
+        "bg": "Volunteer assistant."
+      },
+      {
+        "name": "Jose Santamarina",
+        "role": "Volunteer Assistant Coach",
+        "email": "",
+        "bg": "Volunteer assistant."
+      }
+    ]
   },
   {
     "id": "nova",
@@ -1562,10 +1650,10 @@
     },
     "coach": {
       "name": "Brian Young",
-      "title": "Head Coach",
+      "title": "Head Coach (multi-tenure)",
       "email": "byoung@stedwards.edu",
       "phone": "512-448-8415",
-      "profile": "Long-tenured head coach at St Edwards University. Associate HC Corey Miller (since 2017). Program competes in Lone Star Conference. Austin FC development connections. "
+      "profile": "Long-tenured HC at St Edwards \u2014 16 seasons in first stint (168-104-32, .605), program reinstated 2023 for second stint. 2024 LSC Coach of Year. 9 conference championships overall. Program revived after COVID shutdown 2020. Was assistant at Brown University before SEU \u2014 helped Brown to 4 Ivy League Championships. Lone Star Conference NCAA DII Coaches Connection representative. Players placed professionally in Sweden and England."
     },
     "devScores": {
       "tactical": 86,
@@ -1594,7 +1682,7 @@
       "KIN 3210 \u2014 Anatomy"
     ],
     "rec": "Austin is one of USA's fastest-growing cities. Possession system suits an 8/10. Small campus = personal development. Austin FC pipeline is a real professional pathway. Dell Medical School nearby for clinical placements.",
-    "url": "https://sehawks.com/sports/mens-soccer",
+    "url": "https://gohilltoppers.com/sports/mens-soccer",
     "lensScores": {
       "overall": 88,
       "soccer": 62,
@@ -1655,7 +1743,15 @@
     "confKey": "other",
     "mapX": 240,
     "mapY": 207,
-    "domain": "stedwards.edu"
+    "domain": "stedwards.edu",
+    "staff": [
+      {
+        "name": "Corey Miller",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Promoted to Assoc HC March 2025. On staff since 2017. USSF National B License. Former Simpson College captain. Was HC at Concordia (Austin) where he built program to ASC Tournament for first time."
+      }
+    ]
   },
   {
     "id": "ocu",
@@ -1763,10 +1859,10 @@
     },
     "coach": {
       "name": "Billy Martin",
-      "title": "Head Coach",
+      "title": "Head Coach (since 2020-21)",
       "email": "bmartin@okcu.edu",
-      "phone": "405-208-5450",
-      "profile": "HC since 2020. OCU alumni. Was Brian Harvey assistant for 17 years (1996-2014), then Rose State College HC. Continues legacy of legendary Brian Harvey (1986-2019, NAIA Hall of Famer, died Jan 2023) who played pro in Australia, China, England and USA. Australian playing connection was Harveys personal history, not a current program specialty."
+      "phone": "405-208-5800",
+      "profile": "Head coach since 2020-21. OCU alumnus \u2014 played for Harvey 1989-91. Was Harvey assistant for 19 years (1996-2014). Then Rose State College HC for 6 years (74-35-2, 4 Region II regular season titles, 3x Region CoY). Guided OCU men to 14-2-4 record in 2024 with SAC Tournament title and NAIA Tournament 2nd round. Also coaches womens program. Bishop McGuinness HS head coach since 2012."
     },
     "devScores": {
       "tactical": 82,
@@ -1793,7 +1889,7 @@
       "KIN 4430 \u2014 Pre-PT Seminar"
     ],
     "rec": "NAIA program with generous scholarships. Billy Martin (HC since 2020) is an OCU alumnus who served as Brian Harvey assistant for 17 years. Strong NAIA soccer tradition. Oklahoma City warm spring climate. No specific Australian player pathway currently documented.",
-    "url": "https://okcu.edu/athletics/soccer",
+    "url": "https://www.ocusports.com/sports/mens-soccer",
     "lensScores": {
       "overall": 85,
       "soccer": 57,
@@ -1852,7 +1948,28 @@
     "confKey": "other",
     "mapX": 255,
     "mapY": 172,
-    "domain": "okcu.edu"
+    "domain": "okcu.edu",
+    "staff": [
+      {
+        "name": "Harvey Paul",
+        "role": "Assistant Coach",
+        "email": "hlpaul1@okcu.edu",
+        "phone": "405-208-5800",
+        "bg": "Former OCU player 2020-22. From Bristol, England. Business degree from OCU. 2nd-team All-SAC 2021. Hired 2023 after graduating."
+      },
+      {
+        "name": "Aiden Twohig",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant coach."
+      },
+      {
+        "name": "Thaddeus Caraway",
+        "role": "Goalkeeper Coach",
+        "email": "",
+        "bg": "GK development."
+      }
+    ]
   },
   {
     "id": "keiser",

@@ -136,7 +136,7 @@
       "BIOL 2100 \u2014 Cell & Molecular Biology"
     ],
     "rec": "Most storied men's soccer program in the USA. 7 NCAA titles. Top-5 MLS producer. Charlottesville is not a major city and climate is cool \u2014 less lifestyle match for Sydney. Fierce competition for spots.",
-    "url": "https://virginiasports.com/sports/mens-soccer",
+    "url": "https://virginiasports.com/sports/msoc",
     "lensScores": {
       "overall": 72,
       "soccer": 82,
@@ -306,10 +306,10 @@
     },
     "coach": {
       "name": "Bobby Muuss",
-      "title": "Head Coach",
-      "email": "bmuuss@wfu.edu",
-      "phone": "336-758-5640",
-      "profile": "4 MLS picks in 2025 draft alone. Strong ACC pipeline. Technical possession-based style suits an 8/10."
+      "title": "Head Coach (11th season 2025)",
+      "email": "muussrp@wfu.edu",
+      "phone": "336-758-5783",
+      "profile": "11th season at Wake Forest 2025. 152-40-24 record in first 10 seasons \u2014 most wins any D1 program that span. 3 ACC titles (2016, 2017, 2024). 4 consecutive ACC CoY (2015-18). 8 Sweet 16s. 6 Elite Eights. 30 professionals produced. Hermann Trophy winners Ian Harkes (2016) and Jon Bakero (2017). 14-straight NCAA Tournament appearances."
     },
     "devScores": {
       "tactical": 90,
@@ -400,7 +400,29 @@
     "confKey": "acc",
     "mapX": 375,
     "mapY": 155,
-    "domain": "wfu.edu"
+    "domain": "wfu.edu",
+    "staff": [
+      {
+        "name": "Steve Armas",
+        "role": "Associate Head Coach",
+        "email": "armasas@wfu.edu",
+        "phone": "336-758-5516",
+        "bg": "Associate HC. Works recruiting and player development."
+      },
+      {
+        "name": "Dane Brenner",
+        "role": "Associate Head Coach",
+        "email": "brennerd@wfu.edu",
+        "phone": "336-758-3744",
+        "bg": "Associate HC."
+      },
+      {
+        "name": "Ade Taiwo",
+        "role": "Assistant Coach",
+        "email": "taiwoa@wfu.edu",
+        "bg": "Full-time assistant."
+      }
+    ]
   },
   {
     "id": "smu",
@@ -512,10 +534,10 @@
     },
     "coach": {
       "name": "Kevin Hudson",
-      "title": "Head Coach (9th season)",
+      "title": "Head Coach (11th season 2026)",
       "email": "khudson@smu.edu",
       "phone": "214-768-2736",
-      "profile": "Led SMU to 2025 ACC Tournament title (first ever). Elite Eight 2024. FC Dallas direct connections \u2014 Luchi Gonzalez (FC Dallas HC) is SMU alum. Consistently top-25 nationally."
+      "profile": "11th season 2026. 115-44-23 (.693) as HC. Former SMU midfielder. 2025 ACC Tournament Champions (first ever) \u2014 beat Virginia 1-0 in final. NCAA Elite Eight 2024. 4x AAC CoY. Michael King and Jaime Ibarra-Perez promoted to Associate HCs Feb 2026."
     },
     "devScores": {
       "tactical": 92,
@@ -606,7 +628,33 @@
     "confKey": "acc",
     "mapX": 248,
     "mapY": 196,
-    "domain": "smu.edu"
+    "domain": "smu.edu",
+    "staff": [
+      {
+        "name": "Michael King",
+        "role": "Associate Head Coach, Recruiting Coordinator",
+        "email": "",
+        "bg": "Promoted Feb 2026. On staff since 2021. Former SMU defender 2012-16. Key to 2023 AAC and 2025 ACC championships."
+      },
+      {
+        "name": "Jaime Ibarra-Perez",
+        "role": "Associate Head Coach, Goalkeeping",
+        "email": "",
+        "bg": "Promoted Feb 2026. Former SMU GK 2010-13, 2012 CUSA Player of Year. 14 clean sheets in 2024-25 combined."
+      },
+      {
+        "name": "Ross Fitzpatrick",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Alejandro Radilla",
+        "role": "Director of Sports Science and Analytics",
+        "email": "",
+        "bg": "Sports science and data analytics."
+      }
+    ]
   },
   {
     "id": "clemson",

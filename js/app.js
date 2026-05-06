@@ -1377,126 +1377,215 @@ function selectSchoolFromBar(id){
 }
 
 // ═══ v15: Minutes Outlook tab ═══════════════════════════════════════════════
+// ── Minutes Outlook scoring ─────────────────────────────────────────────────
+// Two modes:
+//   'roster'   — pure trajectory weighted average, no division adjustment
+//   'adjusted' — trajectory × division quality factor for Olivier specifically
+//
+// Division factor (adjusted mode):
+//   D1:   1.0  — Olivier is a competitive recruit, trajectory as-is
+//   D2:   1.15 — Olivier is a strong recruit, likely to play sooner than average
+//   NAIA: 1.25 — Olivier would be one of the better players on the roster
+//   D3:   1.1  — Overqualified for minutes, not ideal for development
+//   IVY:  0.9  — Academic culture limits playing time flexibility
+//   JUCO: 1.0  — Short-term, trajectory calibrated correctly
+
+const MO_DIV_FACTOR = {D1:1.0, D2:1.15, NAIA:1.25, IVY:0.9, D3:1.1, JUCO:1.0};
+
+function calcMinutesScore(u, mode){
+  const traj = (u.minutesOutlook||{}).trajectory || [];
+  if(traj.length < 4) return 0;
+  const [yr1,yr2,yr3,yr4] = traj.map(t=>t.pct);
+  const raw = yr1*0.35 + yr2*0.30 + yr3*0.20 + yr4*0.15;
+  const factor = mode==='adjusted' ? (MO_DIV_FACTOR[u.div]||1.0) : 1.0;
+  return Math.min(95, Math.round(raw * factor));
+}
+
+let moMode = 'roster'; // current toggle state
+
 function renderMinutesOutlook(){
   const container = document.getElementById('page-minutes');
   if(!container) return;
-  
-  // Sort by minutes lens score
-  const ranked = [...unis].sort((a,b)=>{
-    const sa = (a.lensScores && a.lensScores.minutes) || 0;
-    const sb = (b.lensScores && b.lensScores.minutes) || 0;
-    if(sb !== sa) return sb - sa;
-    return (b.fitOlivier || 0) - (a.fitOlivier || 0);
+  buildMinutesHtml();
+}
+
+function setMoMode(mode){
+  moMode = mode;
+  // Update toggle button styles
+  ['roster','adjusted'].forEach(m=>{
+    const btn = document.getElementById('mo-toggle-'+m);
+    if(btn) btn.className = 'mo-toggle-btn'+(m===mode?' mo-toggle-active':'');
   });
-  
-  let html = '<div class="mo-intro">'+
-    '<h2 style="margin-top:0">Minutes Outlook · 2027 Entry Analysis</h2>'+
-    '<p style="color:var(--muted);font-size:14px;line-height:1.6">'+
-      'Olivier enters US college soccer in <strong>August 2027</strong>. This tab projects his '+
-      'realistic playing-time trajectory across all 4 years at each school, based on the 2025 '+
-      'roster and how players age out by his entry year.'+
-    '</p>'+
-    '<div class="mo-key">'+
-      '<div class="mo-key-item"><strong>2025 Sr/Gr</strong> → already gone, irrelevant</div>'+
-      '<div class="mo-key-item"><strong>2025 Jr</strong> → graduate after 2026 → ✅ <em>cleared before he arrives</em></div>'+
-      '<div class="mo-key-item"><strong>2025 So</strong> → become 2027 Sr → 1-yr overlap with Olivier</div>'+
-      '<div class="mo-key-item"><strong>2025 Fr</strong> → become 2027 Jr → ❌ <em>primary 2-year competition</em></div>'+
-      '<div class="mo-key-item"><strong>+ Unknown 2026 freshman class</strong> (PSM coach call needed)</div>'+
-    '</div>'+
-  '</div>';
-  
-  const available = ranked.filter(u => (u.minutesOutlook||{}).available);
-  const unavailable = ranked.filter(u => !(u.minutesOutlook||{}).available);
-  
-  html += '<div class="mo-cards-grid">';
-  available.forEach((u,idx)=>{
+  buildMinutesHtml(true); // rebuild cards only
+}
+
+function buildMinutesHtml(cardsOnly){
+  const container = document.getElementById('page-minutes');
+  if(!container) return;
+
+  const available = [...unis].filter(u => (u.minutesOutlook||{}).available && u.profileDepth==='full');
+  const unavailable = [...unis].filter(u => !(u.minutesOutlook||{}).available && u.profileDepth==='full');
+
+  // Sort by current mode score
+  const ranked = [...available].sort((a,b)=>{
+    const sa = calcMinutesScore(a, moMode);
+    const sb = calcMinutesScore(b, moMode);
+    if(sb!==sa) return sb-sa;
+    return (b.fitOlivier||0)-(a.fitOlivier||0);
+  });
+
+  if(!cardsOnly){
+    // Build full shell including intro, toggles, key
+    const introHtml =
+      '<div class="mo-intro">'+
+        '<div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:.75rem">'+
+          '<h2 style="margin:0">Minutes Outlook · 2027 Entry Analysis</h2>'+
+          '<div style="display:flex;gap:.35rem;align-items:center;flex-shrink:0">'+
+            '<span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-right:4px">Ranking mode:</span>'+
+            '<button id="mo-toggle-roster"   class="mo-toggle-btn mo-toggle-active" onclick="setMoMode(\'roster\')">📋 Roster-Based</button>'+
+            '<button id="mo-toggle-adjusted" class="mo-toggle-btn" onclick="setMoMode(\'adjusted\')">⚽ Olivier-Adjusted</button>'+
+          '</div>'+
+        '</div>'+
+        '<div id="mo-mode-desc" class="mo-mode-desc">'+
+          '<strong>Roster-Based:</strong> Ranks purely on squad numbers and trajectory — how open the roster is regardless of who Olivier is. Same methodology for every player.'+
+        '</div>'+
+        '<p style="color:var(--muted);font-size:13px;line-height:1.6;margin:.6rem 0 .5rem">'+
+          'Olivier enters US college soccer in <strong>August 2027</strong>. Trajectories project realistic playing time across all 4 years based on 2025 rosters and how players age out.'+
+        '</p>'+
+        '<div class="mo-key">'+
+          '<div class="mo-key-item"><strong>2025 Sr/Gr</strong> → already gone, irrelevant</div>'+
+          '<div class="mo-key-item"><strong>2025 Jr</strong> → graduate after 2026 → ✅ <em>cleared before he arrives</em></div>'+
+          '<div class="mo-key-item"><strong>2025 So</strong> → become 2027 Sr → 1-yr overlap with Olivier</div>'+
+          '<div class="mo-key-item"><strong>2025 Fr</strong> → become 2027 Jr → ❌ <em>primary 2-year competition</em></div>'+
+          '<div class="mo-key-item"><strong>+ Unknown 2026 class</strong> (coach call needed)</div>'+
+        '</div>'+
+      '</div>'+
+      '<div id="mo-cards-wrap"></div>'+
+      '<div id="mo-unavail-wrap"></div>'+
+      '<div class="mo-footer">'+
+        '<p style="color:var(--muted);font-size:12px;line-height:1.6;margin-top:1.5rem">'+
+          '<strong>Methodology caveat:</strong> Outlook assumes typical recruiting class sizes (3–5 MFs/yr). '+
+          'The 2026 freshman class is being recruited now and is unknown. '+
+          'Refine Yr1–2 projections by asking each coach: <em>"How many central midfielders are in your 2026 and 2027 classes, and what is your projected 2027 starting XI?"</em>'+
+        '</p>'+
+      '</div>';
+
+    container.innerHTML = introHtml;
+
+    // Build unavailable section once
+    if(unavailable.length){
+      let unavailHtml = '<div class="mo-unavail-section">'+
+        '<div class="mo-unavail-heading">⚠ No Roster Data — '+unavailable.length+' schools</div>'+
+        '<div class="mo-unavail-grid">';
+      unavailable.forEach(u=>{
+        const mo = u.minutesOutlook || {};
+        unavailHtml += '<div class="mo-unavail-card">'+
+          '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
+          '<span class="mo-school-name" style="font-size:12px">'+u.full+'</span>'+
+          '<span style="font-size:11px;color:var(--muted);flex:1;text-align:right">'+(mo.reason||'Not analysed')+'</span>'+
+        '</div>';
+      });
+      unavailHtml += '</div></div>';
+      const unavailWrap = document.getElementById('mo-unavail-wrap');
+      if(unavailWrap) unavailWrap.innerHTML = unavailHtml;
+    }
+  }
+
+  // Update mode description
+  const modeDesc = document.getElementById('mo-mode-desc');
+  if(modeDesc){
+    if(moMode==='roster'){
+      modeDesc.innerHTML = '<strong>📋 Roster-Based:</strong> Ranks purely on squad numbers and trajectory — how open the roster is, regardless of who Olivier is. Same methodology applied to any player.';
+    } else {
+      modeDesc.innerHTML = '<strong>⚽ Olivier-Adjusted:</strong> Applies a division quality factor based on Olivier\'s ability level (8/10 box-to-box, ATAR 70). <span style="color:var(--emerald)">D2 ×1.15</span> and <span style="color:var(--emerald)">NAIA ×1.25</span> — at those levels he would likely play sooner than an average recruit. <span style="color:var(--sky)">D1 ×1.0</span> — competitive but not guaranteed. This shows his realistic best-case minutes picture.';
+    }
+  }
+
+  // Build cards
+  let cardsHtml = '<div class="mo-cards-grid">';
+  ranked.forEach((u,idx)=>{
     const mo = u.minutesOutlook || {};
-    const traj = mo.trajectory;
-    const score = (u.lensScores||{}).minutes || 0;
+    const traj = mo.trajectory || [];
+    const score = calcMinutesScore(u, moMode);
+    const rosterScore = calcMinutesScore(u, 'roster');
+    const adjScore = calcMinutesScore(u, 'adjusted');
     const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
     const riskColor = mo.recruit_risk==='High'?'var(--amber)':mo.recruit_risk==='Medium'?'var(--sky)':'var(--emerald)';
     const riskLabel = mo.recruit_risk==='High'?'High Demand':mo.recruit_risk==='Medium'?'Moderate':'Open';
-    
-    html += '<div class="mo-card'+(idx<3?' mo-top':'')+'">'+
+    const divFactor = MO_DIV_FACTOR[u.div]||1.0;
+    const showAdj = moMode==='adjusted' && divFactor!==1.0;
+
+    cardsHtml += '<div class="mo-card'+(idx<3?' mo-top':'')+'">'+
       '<div class="mo-card-head">'+
         (idx<3?'<span class="mo-rank">#'+(idx+1)+'</span>':'')+
         '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
         '<span class="mo-school-name">'+u.full+'</span>'+
-        '<span class="mo-score" style="color:'+scoreColor+'">'+score+'</span>'+
-        '<a href="'+rosterUrl(u)+'" target="_blank" style="font-size:10px;font-weight:700;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:2px 8px;border-radius:5px;border:1px solid #c7d2fe;white-space:nowrap;margin-left:auto">📋 Roster →</a>'+
+        '<div style="display:flex;align-items:center;gap:6px;margin-left:auto">'+
+          (showAdj?
+            '<span style="font-size:9px;font-weight:700;color:var(--emerald);background:var(--emerald3);border-radius:4px;padding:1px 6px">×'+divFactor+' adj</span>':
+            '')+
+          '<span class="mo-score" style="color:'+scoreColor+'">'+score+'</span>'+
+        '</div>'+
+        '<a href="'+rosterUrl(u)+'" target="_blank" style="font-size:10px;font-weight:700;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:2px 8px;border-radius:5px;border:1px solid #c7d2fe;white-space:nowrap;margin-left:8px">📋 Roster →</a>'+
       '</div>'+
       '<div class="mo-card-body">'+
         '<div class="mo-trajectory">';
+
     traj.forEach(t=>{
       const barColor = t.pct>=80?'#3B6D11':t.pct>=60?'#639922':t.pct>=40?'#BA7517':'#A32D2D';
-      html += '<div class="mo-traj-row">'+
+      cardsHtml += '<div class="mo-traj-row">'+
         '<div class="mo-traj-year">'+t.year+' · '+t.yr_label+'</div>'+
         '<div class="mo-traj-bar"><div class="mo-traj-fill" style="width:'+t.pct+'%;background:'+barColor+'"></div></div>'+
         '<div class="mo-traj-label">'+t.label+'</div>'+
       '</div>';
     });
-    html += '</div>'+
-        '<div class="mo-stats">'+
-          '<div class="mo-stat">'+
-            '<div class="mo-stat-num">'+mo.mf_total_2025+'</div>'+
-            '<div class="mo-stat-lbl">MFs (2025)</div>'+
-          '</div>'+
-          '<div class="mo-stat">'+
-            '<div class="mo-stat-num" style="color:var(--emerald)">'+mo.cleared_before_2027+'</div>'+
-            '<div class="mo-stat-lbl">Cleared by 2027</div>'+
-          '</div>'+
-          '<div class="mo-stat">'+
-            '<div class="mo-stat-num">'+mo.rising_senior_2027_count+'</div>'+
-            '<div class="mo-stat-lbl">2027 Seniors</div>'+
-          '</div>'+
-          '<div class="mo-stat">'+
-            '<div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div>'+
-            '<div class="mo-stat-lbl">2027 Juniors</div>'+
-          '</div>'+
-          '<div class="mo-stat">'+
-            '<div class="mo-stat-num" style="color:'+riskColor+';font-size:13px;font-weight:800">'+riskLabel+'</div>'+
-            '<div class="mo-stat-lbl">Entry Competition</div>'+
-          '</div>'+
-        '</div>';
+
+    cardsHtml += '</div>'+
+      '<div class="mo-stats">'+
+        '<div class="mo-stat"><div class="mo-stat-num">'+mo.mf_total_2025+'</div><div class="mo-stat-lbl">MFs (2025)</div></div>'+
+        '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--emerald)">'+mo.cleared_before_2027+'</div><div class="mo-stat-lbl">Cleared by 2027</div></div>'+
+        '<div class="mo-stat"><div class="mo-stat-num">'+mo.rising_senior_2027_count+'</div><div class="mo-stat-lbl">2027 Seniors</div></div>'+
+        '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div><div class="mo-stat-lbl">2027 Juniors</div></div>'+
+        '<div class="mo-stat"><div class="mo-stat-num" style="color:'+riskColor+';font-size:13px;font-weight:800">'+riskLabel+'</div><div class="mo-stat-lbl">Entry Competition</div></div>'+
+      '</div>';
+
     if(mo.cleared_names && mo.cleared_names.length){
-      html += '<div class="mo-names"><strong>Gone before Olivier arrives:</strong> '+mo.cleared_names.join(', ')+'</div>';
+      cardsHtml += '<div class="mo-names"><strong>Gone before Olivier arrives:</strong> '+mo.cleared_names.join(', ')+'</div>';
     }
     if(mo.rising_junior_2027_names && mo.rising_junior_2027_names.length){
-      html += '<div class="mo-names mo-names-warn"><strong>Primary 2027-junior blockers:</strong> '+mo.rising_junior_2027_names.join(', ')+'</div>';
+      cardsHtml += '<div class="mo-names mo-names-warn"><strong>Primary 2027-junior blockers:</strong> '+mo.rising_junior_2027_names.join(', ')+'</div>';
     }
-    html += '</div></div>';
+
+    // Show both scores when in adjusted mode so user can compare
+    if(moMode==='adjusted'){
+      cardsHtml += '<div style="font-size:10px;color:var(--hint);margin-top:.4rem;padding-top:.4rem;border-top:1px solid var(--border)">'+
+        'Roster score: <strong>'+rosterScore+'</strong> → Olivier-adjusted: <strong style="color:'+scoreColor+'">'+adjScore+'</strong>'+
+        (divFactor!==1.0?' ('+u.div+' ×'+divFactor+')':'(D1 — no adjustment)')+
+      '</div>';
+    }
+
+    cardsHtml += '</div></div>';
   });
 
-  // Unavailable schools at the bottom, collapsed into a tidy section
-  if(unavailable.length){
-    html += '<div class="mo-unavail-section">'+
-      '<div class="mo-unavail-heading">⚠ No Roster Data — '+unavailable.length+' schools</div>'+
-      '<div class="mo-unavail-grid">';
-    unavailable.forEach(u=>{
-      const mo = u.minutesOutlook || {};
-      html += '<div class="mo-unavail-card">'+
-        '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
-        '<span class="mo-school-name" style="font-size:12px">'+u.full+'</span>'+
-        '<span style="font-size:11px;color:var(--muted);flex:1;text-align:right">'+(mo.reason||'Not analysed')+'</span>'+
-      '</div>';
-    });
-    html += '</div></div>';
-  }
+  cardsHtml += '</div>';
 
-  html += '</div>';
-  
-  html += '<div class="mo-footer">'+
-    '<p style="color:var(--muted);font-size:12px;line-height:1.6;margin-top:1.5rem">'+
-      '<strong>Methodology caveat:</strong> Outlook assumes typical recruiting class sizes (3-5 MFs/yr). '+
-      'The 2026 freshman class is being recruited right now and is currently unknown — those players become '+
-      "Olivier's 2027 sophomore-year competition. Coach calls should refine "+
-      'year 1-2 projections by directly asking each coach: <em>"How many central midfielders are in your '+
-      '2026 and 2027 recruiting classes, and what is your projected 2027 starting XI?"</em>'+
-    '</p>'+
-  '</div>';
-  
-  container.innerHTML = html;
+  const cardsWrap = document.getElementById('mo-cards-wrap');
+  if(cardsWrap) cardsWrap.innerHTML = cardsHtml;
 }
+
+// CSS for toggle buttons — injected once
+(function(){
+  if(document.getElementById('mo-toggle-style')) return;
+  const s = document.createElement('style');
+  s.id = 'mo-toggle-style';
+  s.textContent = `
+    .mo-toggle-btn{background:var(--surface2);border:1px solid var(--border);color:var(--muted);font-size:11px;font-weight:700;border-radius:7px;padding:5px 12px;cursor:pointer;font-family:inherit;transition:all .15s}
+    .mo-toggle-btn:hover{background:var(--surface3);color:var(--text)}
+    .mo-toggle-active{background:var(--indigo)!important;border-color:var(--indigo)!important;color:#fff!important}
+    .mo-mode-desc{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .75rem;font-size:12px;color:var(--text);line-height:1.5;margin-bottom:.5rem}
+  `;
+  document.head.appendChild(s);
+})();
 
 // App initialised via loadData() → initApp()
 

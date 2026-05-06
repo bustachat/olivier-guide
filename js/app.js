@@ -43,6 +43,18 @@ async function loadData() {
 function initApp() {
   document.querySelectorAll('#ch-version').forEach(el => el.textContent = APP_VERSION);
   document.title = 'Olivier — US College Soccer Guide ' + APP_VERSION;
+
+  // Update header stats dynamically from loaded data
+  const totalSchools  = unis.length;
+  const totalDivs     = [...new Set(unis.map(u=>u.div).filter(Boolean))].length;
+  const totalConfs    = [...new Set(unis.map(u=>u.confKey).filter(Boolean))].length;
+  const totalTop      = unis.filter(u=>u.top).length;
+  const set = (id, val) => { const el=document.getElementById(id); if(el) el.textContent=val; };
+  set('hstat-schools', totalSchools);
+  set('hstat-divs',    totalDivs);
+  set('hstat-confs',   totalConfs);
+  set('hstat-top',     totalTop);
+
   renderDashboard();
   renderCards();
   renderComparePage();

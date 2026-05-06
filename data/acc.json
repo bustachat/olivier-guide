@@ -107,10 +107,10 @@
     },
     "coach": {
       "name": "George Gelnovatch",
-      "title": "Head Coach (since 1995)",
+      "title": "Head Coach (30th season 2025)",
       "email": "gsoccer@virginia.edu",
       "phone": "434-982-5115",
-      "profile": "Most wins in Virginia history. 9 College Cups. Developer of USMNT players. Tactically sophisticated."
+      "profile": "30th season at UVA 2025. 395-165-79 (.680) career record. 2 NCAA titles (2009, 2014). 6 College Cups. 28 NCAA Tournament appearances. 5 ACC Tournament titles. 3x ACC CoY (1996, 2001, 2025). Contract extended through 2031 (May 2026). Former UVA player and All-American. US U-18 HC 1999-2003, asst to full US National Team 1999-2002 including 2002 World Cup quarterfinalists. 2025: ACC Regular Season Champions (5-0-3 unbeaten), lost ACC Tourn Final to SMU 0-1. #2 NCAA seed."
     },
     "devScores": {
       "tactical": 95,
@@ -198,7 +198,21 @@
     "confKey": "acc",
     "mapX": 387,
     "mapY": 143,
-    "domain": "virginia.edu"
+    "domain": "virginia.edu",
+    "staff": [
+      {
+        "name": "Matt Chulis",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "20th season on UVA staff 2025, 14th as Assoc HC. 3x UVA All-American as player. Former MLS: Columbus Crew, Chicago Fire, Portland Timbers, Pittsburgh Riverhounds. Instrumental in 2009 and 2014 NCAA Championship runs."
+      },
+      {
+        "name": "Johnny Fenwick",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Hired April 2026. Joins from High Point (Dir of Player Development 2025, where they won Big South title). Previously asst and Dir of Operations at High Point."
+      }
+    ]
   },
   {
     "id": "wakeforest",

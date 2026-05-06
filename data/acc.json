@@ -576,19 +576,19 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
+          "pct": 40,
           "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
+          "pct": 40,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
@@ -597,7 +597,8 @@
           "pct": 85,
           "label": "Captain candidate"
         }
-      ]
+      ],
+      "trajectoryNote": "Lean squad (5 remaining) justifies higher Yr1 than 30%. 3 juniors present Yr1+Yr2 = sustained competition, but Low risk means no new wave of recruits behind Olivier. Yr2 flat. Yr3 juniors clear + Olivier established."
     },
     "profileDepth": "full",
     "confKey": "acc",

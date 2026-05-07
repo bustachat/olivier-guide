@@ -10,6 +10,49 @@ let unis = [];
 let conferences = [];
 let coachData = [];
 
+// ── AUD/USD Exchange Rate ─────────────────────────────────────────────────────
+// Fetched live from open.er-api.com — free, no key needed.
+// Falls back to DEFAULT_FX if the fetch fails or times out.
+// Current mid-market rate as of May 2026: 1 USD = ~1.38 AUD (xe.com)
+// Default set to 1.40 — small buffer above live rate for budget planning.
+const DEFAULT_FX = 1.40;  // update this if AUD weakens significantly
+let currentFx = DEFAULT_FX;
+
+async function fetchLiveFxRate() {
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 4000); // 4s timeout
+    const res = await fetch('https://open.er-api.com/v6/latest/USD', { signal: controller.signal });
+    clearTimeout(timeout);
+    if (!res.ok) throw new Error('FX fetch failed');
+    const data = await res.json();
+    const audPerUsd = data.rates && data.rates.AUD;
+    if (audPerUsd && audPerUsd > 1.0 && audPerUsd < 3.0) {
+      currentFx = Math.round(audPerUsd * 100) / 100; // round to 2dp
+      return currentFx;
+    }
+    throw new Error('AUD rate out of expected range');
+  } catch (_) {
+    currentFx = DEFAULT_FX;
+    return DEFAULT_FX;
+  }
+}
+
+function applyFxToUI(fx) {
+  // Update the FX slider and display in Financial tab
+  const slFx   = document.getElementById('sl-fx');
+  const valFx  = document.getElementById('val-fx');
+  const notice = document.getElementById('fx-rate-notice');
+  if (slFx)   slFx.value = fx.toFixed(2);
+  if (valFx)  valFx.textContent = fx.toFixed(2);
+  if (notice) {
+    const isLive = fx !== DEFAULT_FX;
+    notice.innerHTML = isLive
+      ? `<span style="color:var(--emerald)">✅ Live rate loaded: 1 USD = ${fx.toFixed(2)} AUD</span> — updates each page load. Use the slider to stress-test other scenarios.`
+      : `<span style="color:var(--amber)">⚠ Using default rate: 1 USD = ${fx.toFixed(2)} AUD</span> — live rate unavailable. Adjust slider if your bank rate differs.`;
+  }
+}
+
 const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'other'];
 
 async function loadData() {
@@ -27,6 +70,13 @@ async function loadData() {
     unis        = confResults.flat();
     conferences = await confsRes.json();
     coachData   = await coachesRes.json();
+
+    // Fetch live FX rate — runs alongside initApp, updates UI when ready
+    fetchLiveFxRate().then(fx => {
+      applyFxToUI(fx);
+      // Re-render comparison bars with live rate
+      if (typeof renderFinComparisonBars === 'function') renderFinComparisonBars();
+    });
 
     initApp();
   } catch (err) {
@@ -1314,7 +1364,7 @@ function updateFinModel(){
 
 function renderFinComparisonBars(){
   const container = document.getElementById('fin-comparison-bars');
-  const fx = 1.55;
+  const fx = currentFx;
   const athPct = 0.5;
   const extras = 7500;
 

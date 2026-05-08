@@ -1,10 +1,12 @@
 // ═══════════════════════════════════════════════════════════════════════
-// app.js  —  Olivier Scholarship Guide v16
+// app.js  —  Olivier Scholarship Guide v17
 // All application logic. Data loaded from data/ JSON files.
 // v16: Conference-split JSON, Dashboard tab, sort system, listed-depth schools.
+// v17: ATAR hide-ineligible toggle. Below-min cards greyed out. Top Picks
+//      always remain visible (dimmed only, never hidden) regardless of GPA.
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v16';
+const APP_VERSION = 'v17';
 
 let unis = [];
 let conferences = [];
@@ -905,6 +907,20 @@ function dynamicGpaStatus(convertedGpa, minEntry) {
 // Current ATAR state (starts at 70)
 let currentAtarGpa = atarToGpa(70);
 
+// v17: Hide-ineligible toggle state
+let atarHideBelow = false;
+
+function toggleAtarHide() {
+  atarHideBelow = !atarHideBelow;
+  const btn = document.getElementById('atar-hide-btn');
+  if (btn) {
+    btn.classList.toggle('atar-hide-active', atarHideBelow);
+    btn.textContent = atarHideBelow ? '🚫 Hiding ineligible' : '🚫 Hide ineligible';
+  }
+  refreshAllGpaRows();
+  applyFilters();
+}
+
 function onAtarSlide() {
   const atar = parseInt(document.getElementById('atar-slider').value);
   currentAtarGpa = atarToGpa(atar);
@@ -914,6 +930,7 @@ function onAtarSlide() {
 
   refreshAllGpaRows();
   updateAtarCounts();
+  applyFilters(); // v17: re-run filter engine so hide/grey state updates live
   if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa, atar);
 }
 
@@ -939,7 +956,12 @@ function refreshAllGpaRows() {
       valEl.style.color = statusColor;
     }
 
-    // Also update the data-atargpa attribute for potential future filtering
+    // v17: grey-out class — borderline gets a mild tint, below gets full grey
+    card.classList.remove('gpa-borderline', 'gpa-below');
+    if (dynStatus === 'borderline') card.classList.add('gpa-borderline');
+    if (dynStatus === 'below')      card.classList.add('gpa-below');
+
+    // Update data attribute for filter engine
     card.dataset.atargpastatus = dynStatus;
   });
 }
@@ -1007,6 +1029,16 @@ function applyFilters(){
         if(![...vals].some(v=>c.dataset[type]===v)){ show=false; break; }
       }
     }
+    // v17: ATAR hide-ineligible toggle
+    // Top Picks are never fully hidden — they stay visible but greyed out
+    // so aspirational targets remain visible even when below minimum.
+    if (show && atarHideBelow) {
+      const status = c.dataset.atargpastatus;
+      const isTopPick = c.dataset.top === 'true';
+      if (status === 'below' && !isTopPick) {
+        show = false;
+      }
+    }
     c.style.display = show ? '' : 'none';
     if(show) visible++;
   });
@@ -1024,6 +1056,10 @@ function applyFilters(){
 function clearAllFilters(){
   Object.keys(activeFilters).forEach(k=>activeFilters[k].clear());
   document.querySelectorAll('.fchip.active').forEach(b=>b.classList.remove('active'));
+  // v17: also reset hide-below toggle
+  atarHideBelow = false;
+  const hideBtn = document.getElementById('atar-hide-btn');
+  if (hideBtn) { hideBtn.classList.remove('atar-hide-active'); hideBtn.textContent = '🚫 Hide ineligible'; }
   const container = document.getElementById('cards-container');
   if(container){
     container.querySelectorAll('.ucard').forEach(c=>c.style.display='');

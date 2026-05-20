@@ -607,14 +607,14 @@ function rosterUrl(u){
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
 const SOCIAL = {
-  // Instagram SVG
-  _ig: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg>',
-  // X/Twitter SVG
-  _x:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4"/><path d="M20 4h-5m5 0v5M4 20h5m-5 0v-5"/></svg>',
-  // Facebook SVG
-  _fb: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>',
-  // YouTube SVG
-  _yt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>',
+  // Instagram SVG — brand gradient pink/purple
+  _ig: '<svg viewBox="0 0 24 24" fill="none" stroke="#e1306c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="#e1306c" stroke="none"/></svg>',
+  // X/Twitter SVG — black
+  _x:  '<svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4"/><path d="M20 4h-5m5 0v5M4 20h5m-5 0v-5"/></svg>',
+  // Facebook SVG — brand blue
+  _fb: '<svg viewBox="0 0 24 24" fill="none" stroke="#1877f2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>',
+  // YouTube SVG — brand red
+  _yt: '<svg viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#ff0000" stroke="none"/></svg>',
 
   // Per-school data: [instagram, twitter, facebook, youtube]
   // null = not found / not applicable
@@ -658,10 +658,10 @@ function buildSocialStrip(u){
     ? `<a class="soc-pill" href="${url}" target="_blank">${svg}<span>${handle}</span></a>`
     : '';
   let html = lbl;
-  if(ig) html += pill(ig,  SOCIAL._ig, '@'+ig.split('/').pop());
-  if(tw) html += pill(tw,  SOCIAL._x,  '@'+tw.split('/').pop());
-  if(fb) html += pill(fb,  SOCIAL._fb, fb.split('/').pop());
-  if(yt) html += pill(yt,  SOCIAL._yt, 'YouTube');
+  if(ig) html += pill(ig, SOCIAL._ig, '@'+ig.split('/').pop());
+  if(tw) html += pill(tw, SOCIAL._x,  '@'+tw.split('/').pop());
+  if(fb) html += pill(fb, SOCIAL._fb, fb.split('/').pop());
+  if(yt) html += pill(yt, SOCIAL._yt, 'YouTube');
   if(html === lbl) html = ''; // nothing to show
   el.innerHTML = html;
 }

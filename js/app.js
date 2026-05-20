@@ -388,7 +388,7 @@ function renderCards(){
     const el=document.createElement('div');
     el.className='conf-section div-collapsed';
     el.dataset.div=secUnis[0]?.div||'D1';
-    el.dataset.confkey=sec.key;
+    el.dataset.confkey=(sec.divFilter==='ASUN')?'asun':sec.key;
     el.innerHTML=
       `<div class="section-head">` +
         `<h2>${sec.label}${countNote}</h2>` +
@@ -442,7 +442,7 @@ function buildCard(u){
   el.dataset.acualign=u.acuAlign>=14?'full':u.acuAlign>=10?'strong':'partial';
   el.dataset.lensdivtop='false';
   el.dataset.conf=u.conf;
-  el.dataset.confkey=u.confKey||'other';
+  el.dataset.confkey=(u.conf&&u.conf.includes('ASUN'))?'asun':(u.confKey||'other');
   const gpaBucket=!u.gpa?'low':
     (u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open'))?'none':
     (u.gpa.minEntry.includes('2.0')||u.gpa.minEntry.includes('2.3'))?'low':

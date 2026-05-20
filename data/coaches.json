@@ -1013,5 +1013,57 @@
       "#fce7f3",
       "#9d174d"
     ]
+  },
+  {
+    "id": "oldham",
+    "schoolId": "keiser",
+    "name": "Gavin Oldham",
+    "school": "Keiser University",
+    "div": "NAIA",
+    "conf": "Sun Conference",
+    "rank": 20,
+    "rankClass": "rk-solid",
+    "overallScore": 68,
+    "devScore": 68,
+    "tacticalScore": 65,
+    "ptPathScore": 80,
+    "mlsPlayers": 0,
+    "yearsHC": 3,
+    "ausConnection": false,
+    "record": "Head coach at Keiser University. NAIA Sun Conference. Health sciences integrated program.",
+    "bio": "Head Coach Gavin Oldham leads the Keiser University men's soccer program in Fort Lauderdale. Keiser is a health sciences university — the clinical simulation labs and pre-PT academic environment are core selling points for a player like Olivier targeting a DPT career. The program sits in the NAIA Sun Conference with generous scholarship potential and warm year-round climate. Fort Lauderdale provides proximity to Inter Miami, MLS action, and the South Florida professional soccer ecosystem. Oldham is supported by Assistant Coach Joe Barber and Goalkeeping Coach Leo Camacho, with athletic trainer Vittoria Giordano providing sports medicine support.",
+    "strengths": [
+      "Health sciences campus",
+      "Pre-PT environment",
+      "Fort Lauderdale climate",
+      "NAIA full scholarship potential",
+      "Inter Miami proximity"
+    ],
+    "staff": [
+      {
+        "name": "Joe Barber",
+        "role": "Assistant Men's Soccer Coach",
+        "bg": "Assistant coach contributing to player development and recruitment."
+      },
+      {
+        "name": "Leo Camacho",
+        "role": "Goalkeeping Coach",
+        "bg": "Dedicated goalkeeping coach — specialist GK development within the Sun Conference program."
+      },
+      {
+        "name": "Vittoria Giordano",
+        "role": "Assistant Athletic Trainer",
+        "bg": "Sports medicine support for men's soccer. Keiser health sciences facilities available to student-athletes."
+      }
+    ],
+    "contact": {
+      "email": "athletics@keiseruniversity.edu",
+      "phone": "954-776-4476"
+    },
+    "url": "https://keiseruniversity.edu/athletics/mens-soccer",
+    "color": [
+      "#ede9fe",
+      "#7c3aed"
+    ]
   }
 ]

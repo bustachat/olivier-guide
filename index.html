@@ -250,9 +250,23 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .modal-overlay{position:fixed;inset:0;background:rgba(17,24,39,.5);z-index:200;display:flex;align-items:flex-start;justify-content:center;padding:2rem 1rem;overflow-y:auto;}
 .modal-overlay.hidden{display:none;}
 .modal{background:var(--surface);border:1px solid var(--border);border-radius:18px;width:100%;max-width:780px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15);}
-.modal-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;background:var(--bg);}
-.modal-head h2{font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;color:var(--navy);}
-.modal-head p{font-size:12px;color:var(--muted);margin-top:3px;}
+.modal-head{border-bottom:1px solid var(--border);background:var(--bg);}
+.mh-banner{padding:1.1rem 1.4rem 1rem;display:flex;align-items:center;gap:12px;background:var(--bg);}
+.mh-logo{width:46px;height:46px;border-radius:9px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}
+.mh-logo img{width:30px;height:30px;object-fit:contain;}
+.mh-logo span{font-size:11px;font-weight:700;color:var(--muted);}
+.mh-info{flex:1;min-width:0;}
+.mh-info h2{font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:700;color:var(--navy);}
+.mh-badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px;}
+.mh-badge{font-size:9px;font-weight:600;padding:2px 7px;border-radius:10px;background:var(--surface);color:var(--muted);border:1px solid var(--border);}
+.mh-links{display:flex;align-items:center;gap:6px;padding:.55rem 1.4rem;border-top:1px solid var(--border);flex-wrap:wrap;}
+.mh-social{display:flex;align-items:center;gap:6px;padding:.55rem 1.4rem;border-top:1px solid var(--border);flex-wrap:wrap;}
+.mh-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-right:3px;white-space:nowrap;}
+.mh-link{display:inline-flex;align-items:center;gap:5px;padding:4px 11px;border-radius:6px;border:1px solid var(--border);background:var(--surface);text-decoration:none;font-size:11px;font-weight:500;color:var(--text);white-space:nowrap;line-height:1.4;transition:border-color .12s;}
+.mh-link:hover{border-color:var(--border2);}
+.mh-link svg{width:11px;height:11px;flex-shrink:0;color:var(--muted);}
+.mh-link.program{background:#eff6ff;border-color:#bfdbfe;color:#1d4ed8;}
+.mh-link.program svg{color:#1d4ed8;}
 .soc-pill{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:var(--surface);text-decoration:none;font-size:11px;color:var(--text);font-weight:500;transition:border-color .12s;white-space:nowrap;}
 .soc-pill:hover{border-color:var(--border2);color:var(--text);}
 .soc-pill svg{width:12px;height:12px;flex-shrink:0;}
@@ -678,12 +692,16 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 <div class="modal-overlay hidden" id="modal">
   <div class="modal">
     <div class="modal-head">
-      <div style="flex:1;min-width:0">
-        <h2 id="modal-title">University</h2>
-        <p id="modal-sub">Location · Division</p>
-        <div id="modal-social" style="margin-top:.6rem;display:flex;align-items:center;gap:5px;flex-wrap:wrap;"></div>
+      <div class="mh-banner">
+        <div class="mh-logo" id="modal-logo"><span id="modal-abbr">—</span></div>
+        <div class="mh-info">
+          <h2 id="modal-title">University</h2>
+          <div class="mh-badges" id="modal-badges"></div>
+        </div>
+        <button class="close-btn" onclick="closeModal()">✕</button>
       </div>
-      <button class="close-btn" onclick="closeModal()">✕</button>
+      <div class="mh-links" id="modal-links"></div>
+      <div class="mh-social" id="modal-social"></div>
     </div>
     <div class="modal-body" id="modal-body"></div>
   </div>

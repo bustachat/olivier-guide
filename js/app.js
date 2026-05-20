@@ -605,6 +605,68 @@ function rosterUrl(u){
 }
 
 
+
+// ═══ School domains (for favicon + university site link) ═══════════════════
+const DOMAINS = {
+  ucla:         'uclabruins.com',
+  ucsb:         'ucsbgauchos.com',
+  usf:          'gousfbulls.com',
+  fiu:          'fiusports.com',
+  virginia:     'virginiasports.com',
+  wakeforest:   'godeacs.com',
+  smu:          'smumustangs.com',
+  stjohns:      'redstormsports.com',
+  indiana:      'iuhoosiers.com',
+  charleston:   'cofcsports.com',
+  princeton:    'goprincetontigers.com',
+  yale:         'yalebulldogs.com',
+  pba:          'pbasailfish.com',
+  lynn:         'lynnfightingknights.com',
+  barry:        'gobarrybucs.com',
+  nova:         'nsusharks.com',
+  csula:        'calstatela.edu',
+  stedwards:    'gohilltoppers.com',
+  ocu:          'ocusports.com',
+  keiser:       'kuseahawks.com',
+  chapman:      'chapmanathletics.com',
+  smc:          'smcathletics.com',
+  miami_dade:   'athletics.mdc.edu',
+  uc_charleston:'ucgoldeneagles.com',
+  iowa_western: 'goreivers.com',
+  uca:          'ucasports.com',
+  uf:           'gatorzone.com',
+};
+
+const SITE_URLS = {
+  ucla:         'https://www.ucla.edu',
+  ucsb:         'https://www.ucsb.edu',
+  usf:          'https://www.usf.edu',
+  fiu:          'https://www.fiu.edu',
+  virginia:     'https://www.virginia.edu',
+  wakeforest:   'https://www.wfu.edu',
+  smu:          'https://www.smu.edu',
+  stjohns:      'https://www.stjohns.edu',
+  indiana:      'https://www.indiana.edu',
+  charleston:   'https://www.cofc.edu',
+  princeton:    'https://www.princeton.edu',
+  yale:         'https://www.yale.edu',
+  pba:          'https://www.pba.edu',
+  lynn:         'https://www.lynn.edu',
+  barry:        'https://www.barry.edu',
+  nova:         'https://www.nova.edu',
+  csula:        'https://www.calstatela.edu',
+  stedwards:    'https://www.stedwards.edu',
+  ocu:          'https://www.okcu.edu',
+  keiser:       'https://www.keiseruniversity.edu',
+  chapman:      'https://www.chapman.edu',
+  smc:          'https://www.smc.edu',
+  miami_dade:   'https://www.mdc.edu',
+  uc_charleston:'https://www.ucwv.edu',
+  iowa_western: 'https://www.iwcc.edu',
+  uca:          'https://www.uca.edu',
+  uf:           'https://www.ufl.edu',
+};
+
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
 const SOCIAL = {
   // Instagram SVG — brand gradient pink/purple
@@ -647,6 +709,39 @@ const SOCIAL = {
   uf:           [null,                                      null,                               null,                                   null],
 };
 
+
+function buildModalHeader(u){
+  // Logo / favicon
+  const logoEl = document.getElementById('modal-logo');
+  const abbrEl = document.getElementById('modal-abbr');
+  const domain = DOMAINS[u.id];
+  if(domain){
+    logoEl.innerHTML = `<img src="https://www.google.com/s2/favicons?domain=${domain}&sz=64" alt="${u.id}"
+      onerror="this.style.display='none';document.getElementById('modal-abbr').style.display='block'">
+      <span id="modal-abbr" style="display:none;font-size:11px;font-weight:700;color:var(--muted)">${(u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3)}</span>`;
+  } else {
+    abbrEl.textContent = (u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3);
+  }
+
+  // Badges
+  const badgesEl = document.getElementById('modal-badges');
+  badgesEl.innerHTML = [
+    `<span class="mh-badge">${u.div}</span>`,
+    `<span class="mh-badge">${u.conf}</span>`,
+    `<span class="mh-badge">${u.loc}</span>`,
+  ].join('');
+
+  // Links row
+  const linksEl = document.getElementById('modal-links');
+  const siteUrl = SITE_URLS[u.id] || '#';
+  const progUrl = u.url || '#';
+  const globeSvg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
+  const soccerSvg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4m-4-4h7"/></svg>`;
+  linksEl.innerHTML = `<span class="mh-lbl">Links</span>`
+    + `<a class="mh-link" href="${siteUrl}" target="_blank">${globeSvg}<span>${(SITE_URLS[u.id]||'').replace('https://www.','')}</span></a>`
+    + (progUrl !== '#' ? `<a class="mh-link program" href="${progUrl}" target="_blank">${soccerSvg}<span>Men's Soccer →</span></a>` : '');
+}
+
 function buildSocialStrip(u){
   const el = document.getElementById('modal-social');
   if(!el) return;
@@ -669,8 +764,8 @@ function buildSocialStrip(u){
 function openDetail(id){
   const u=unis.find(x=>x.id===id);if(!u)return;
   document.getElementById('modal-title').textContent=u.full;
-  document.getElementById('modal-sub').textContent=`${u.loc} · ${u.div} · ${u.conf}`;
   document.getElementById('modal-body').innerHTML=buildDetailBody(u);
+  buildModalHeader(u);
   buildSocialStrip(u);
   document.getElementById('modal').classList.remove('hidden');
 }
@@ -859,7 +954,7 @@ function buildDetailBody(u){
         <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
         <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
         <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone}</div></div>
-        <div class="contact-row"><div class="ci">Website</div><div class="cv"><a href="${u.url}" target="_blank">Program Page →</a></div></div>
+
       </div>
       <div class="detail-block" style="margin-bottom:1rem"><h4>Coach Profile</h4><p style="font-size:12.5px;color:var(--muted);line-height:1.7">${u.coach.profile}</p></div>
       <div class="tip-box"><p><strong>Agent recommends:</strong> All contact should be coordinated through your agent. Coach introductions via a platform carry significantly more weight than cold emails. Include Olivier's highlights link, academic profile, and Australian background.</p></div>
@@ -1174,7 +1269,7 @@ function renderContacts(){
     <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
     <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
     <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone}</div></div>
-    <div class="contact-row"><div class="ci">Program</div><div class="cv"><a href="${u.url}" target="_blank">View →</a></div></div>
+
     ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
   container.innerHTML=html;
 }
@@ -1273,7 +1368,7 @@ function buildCoachCard(c){
       <div class="coach-contact-strip">
         <a href="mailto:${c.contact.email}" class="coach-cta coach-cta-email" title="Send email">✉ ${c.contact.email}</a>
         ${c.contact.phone?`<a href="tel:${c.contact.phone}" class="coach-cta coach-cta-phone" title="Call">📞 ${c.contact.phone}</a>`:''}
-        ${u.url?`<a href="${u.url}" target="_blank" class="coach-cta coach-cta-link">🔗 Program →</a>`:''}
+
       </div>
     </div>`;
   return el;

@@ -1,15 +1,12 @@
 // ═══════════════════════════════════════════════════════════════════════
-// app.js  —  Olivier Scholarship Guide v18
+// app.js  —  Olivier Scholarship Guide v17
 // All application logic. Data loaded from data/ JSON files.
 // v16: Conference-split JSON, Dashboard tab, sort system, listed-depth schools.
 // v17: ATAR hide-ineligible toggle. Below-min cards greyed out. Top Picks
 //      always remain visible (dimmed only, never hidden) regardless of GPA.
-// v18: Division audit confirmed (all 30 existing schools correctly allocated).
-//      Added: U of Charleston WV (D2 MEC), Iowa Western CC (JUCO), UCA (D1 ASUN).
-//      New ASUN Conference section. Clarified Charleston SC (D1) ≠ Charleston WV (D2).
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v18';
+const APP_VERSION = 'v17';
 
 let unis = [];
 let conferences = [];
@@ -360,12 +357,11 @@ function renderCards(){
     {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference. St. John\'s is the fully-profiled school. Georgetown and Creighton are perennial top-10 programs. Strong clinical network in major cities.'},
     {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'FIU and USF both fully profiled in the AAC. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Navy and Army offer full federal scholarships (zero cost).'},
     {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1. UCSB fully profiled — Manu Duah went #1 overall in 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine all competitive. Pacific lifestyle matches Sydney.'},
-    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston (SC) fully profiled with Charleston Battery (USL) connection — note: this is the College of Charleston in South Carolina, a distinct institution from the University of Charleston in West Virginia (D2). William & Mary, Hofstra, Northeastern round out a competitive conference.'},
-    {key:'other', divFilter:'ASUN',    label:'ASUN Conference',         tier:'Mid-Major · D1', intro:'Mid-major D1 including University of Central Arkansas — affordable warm-climate D1 with a strong Kinesiology department and UAMS clinical network for pre-PT students. Conway AR is 20 min from Little Rock. One of the best value D1 options in the guide at ~$28k/yr.'},
+    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston fully profiled with Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern round out a competitive conference.'},
     {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships — need-based aid only. Princeton won the 2024 and 2025 Ivy League Tournaments back-to-back under Jim Barlow. Yale won 2023. Both require 3.9+ GPA. Kinesiology degrees are not available but Ivy credentials carry enormous DPT school credibility. Only viable if GPA climbs to 3.5+.'},
-    {key:'other', divFilter:'D2',      label:'NCAA Division II',        tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline. University of Charleston WV (D2 MEC) offers a CAMC hospital clinical partnership for pre-PT — note: distinct from College of Charleston SC (D1 CAA).'},
+    {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
     {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
-    {key:'other', divFilter:'D3JUCO',  label:'D3 · JUCO',               tier:'D3 / JUCO',     intro:'Chapman (D3, Orange CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 PT pathway. Santa Monica College is the best JUCO entry point in the guide ($9k/yr) with a proven transfer pipeline to UCLA and UCSB. Miami Dade College transfers link well to Barry and FIU. Iowa Western CC (NJCAA, Council Bluffs IA/Omaha metro) is the Midwest transfer option at ~$14k/yr with connections to Creighton, Iowa State, and Drake University.'},
+    {key:'other', divFilter:'D3JUCO',  label:'D3 · JUCO',               tier:'D3 / JUCO',     intro:'Chapman (D3, Orange CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 PT pathway. Santa Monica College is the best JUCO entry point in the guide ($9k/yr) with a proven transfer pipeline to UCLA and UCSB. Miami Dade College transfers link well to Barry and FIU.'},
   ];
 
   // Also include Ivy League under acc or as standalone — they are in other.json
@@ -376,7 +372,6 @@ function renderCards(){
       else if(sec.divFilter==='D2') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D2');
       else if(sec.divFilter==='NAIA') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='NAIA');
       else if(sec.divFilter==='D3JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&(u.div==='D3'||u.div==='JUCO'));
-      else if(sec.divFilter==='ASUN') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D1'&&u.conf&&u.conf.includes('ASUN'));
       else secUnis=unis.filter(u=>u.confKey===sec.key);
     } else {
       secUnis=unis.filter(u=>(u.confKey||'other')===sec.key);
@@ -388,7 +383,7 @@ function renderCards(){
     const el=document.createElement('div');
     el.className='conf-section div-collapsed';
     el.dataset.div=secUnis[0]?.div||'D1';
-    el.dataset.confkey=(sec.divFilter==='ASUN')?'asun':sec.key;
+    el.dataset.confkey=sec.key;
     el.innerHTML=
       `<div class="section-head">` +
         `<h2>${sec.label}${countNote}</h2>` +
@@ -442,7 +437,7 @@ function buildCard(u){
   el.dataset.acualign=u.acuAlign>=14?'full':u.acuAlign>=10?'strong':'partial';
   el.dataset.lensdivtop='false';
   el.dataset.conf=u.conf;
-  el.dataset.confkey=(u.conf&&u.conf.includes('ASUN'))?'asun':(u.confKey||'other');
+  el.dataset.confkey=u.confKey||'other';
   const gpaBucket=!u.gpa?'low':
     (u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open'))?'none':
     (u.gpa.minEntry.includes('2.0')||u.gpa.minEntry.includes('2.3'))?'low':
@@ -609,11 +604,74 @@ function rosterUrl(u){
   return u.url.replace(/\/$/, '') + '/roster';
 }
 
+
+// ═══ Social Media Data ═══════════════════════════════════════════════════════
+const SOCIAL = {
+  // Instagram SVG
+  _ig: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg>',
+  // X/Twitter SVG
+  _x:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4"/><path d="M20 4h-5m5 0v5M4 20h5m-5 0v-5"/></svg>',
+  // Facebook SVG
+  _fb: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>',
+  // YouTube SVG
+  _yt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>',
+
+  // Per-school data: [instagram, twitter, facebook, youtube]
+  // null = not found / not applicable
+  ucla:         ['https://instagram.com/uclamsoccer',       'https://x.com/uclamsoccer',        'https://facebook.com/UCLAMSoccer',     'https://youtube.com/uclaathletics'],
+  ucsb:         ['https://instagram.com/ucsbmsoccer',       'https://x.com/UCSBMensSoccer',     null,                                   'https://youtube.com/user/UCSBGauchosAthletics'],
+  usf:          ['https://instagram.com/usfmsoc',           'https://x.com/usfmsoc',            'https://facebook.com/usfmenssoccer',   'https://youtube.com/channel/UC2hUZIkGfPjlJy8-P0MJjYA'],
+  fiu:          ['https://instagram.com/fiumsoccer',        null,                               null,                                   'https://youtube.com/channel/UChMJ4FwFGluPCiF4QwZmp1Q'],
+  virginia:     ['https://instagram.com/uvamensoccer',      'https://x.com/UVAMenSoccer',       null,                                   'https://youtube.com/channel/UCRz7SRXbiTbNvN2Us0JvbdA'],
+  wakeforest:   ['https://instagram.com/wakemsoccer',       'https://x.com/WakeMSoccer',        'https://facebook.com/wakemsoccer',     'https://youtube.com/user/wakeforestathletics'],
+  smu:          ['https://instagram.com/smu_msoc',          null,                               'https://facebook.com/SMUMustangs',     'https://youtube.com/user/SMUMustangsAthletics'],
+  stjohns:      ['https://instagram.com/stjohnsmsoccer',    'https://x.com/StJohnsMSoccer',     'https://facebook.com/StJohnsRedStorm', 'https://youtube.com/user/stjohnsredstormtv'],
+  indiana:      ['https://instagram.com/indianamsoc',       'https://x.com/IndianaMSOC',        'https://facebook.com/IndianaMSOC',     'https://youtube.com/user/IUAthletics'],
+  charleston:   ['https://instagram.com/cofcsoccer',        null,                               'https://facebook.com/cofcsports',      'https://youtube.com/user/cofcsports'],
+  princeton:    ['https://instagram.com/princetonmsoc',     'https://x.com/PrincetonMSoc',      null,                                   'https://youtube.com/@GoPrincetonTigers'],
+  yale:         ['https://instagram.com/yalemsoccer',       null,                               null,                                   'https://youtube.com/user/YaleAthletics'],
+  pba:          ['https://instagram.com/sailfishmsoc',      null,                               null,                                   'https://youtube.com/@PBASailfish'],
+  lynn:         ['https://instagram.com/lynnmsoc',          null,                               null,                                   null],
+  barry:        ['https://instagram.com/barryumsoccer',     null,                               null,                                   'https://youtube.com/@barryuniversityathletics5651'],
+  nova:         ['https://instagram.com/nsu_msoccer',       'https://x.com/nsu_msoccer',        null,                                   'https://youtube.com/c/NSUSharksAthletics'],
+  csula:        ['https://instagram.com/calstatelamsoc',    null,                               null,                                   'https://youtube.com/user/CSULAathletics'],
+  stedwards:    ['https://instagram.com/seumsoccer',        null,                               'https://facebook.com/SEUMSoccer',      'https://youtube.com/@seusports'],
+  ocu:          ['https://instagram.com/ocumsoccer',        null,                               null,                                   'https://youtube.com/ocustars'],
+  keiser:       ['https://instagram.com/keiser_msoc',       'https://x.com/KUSeahawkMSOC',      'https://facebook.com/KUseahawksoccer', 'https://youtube.com/@keiserseahawksathletics3079'],
+  chapman:      ['https://instagram.com/chapmanmsoc',       null,                               null,                                   'https://youtube.com/user/chapmansports'],
+  smc:          ['https://instagram.com/smcmenssoccer',     null,                               null,                                   null],
+  miami_dade:   ['https://instagram.com/mdcsharksmsoc',     null,                               null,                                   'https://youtube.com/channel/UCQzMKai0FDVTRzmg9UbJIxA'],
+  uc_charleston:['https://instagram.com/ucwv_msoccer',      'https://x.com/ucwv_msoccer',       'https://facebook.com/ucwvmsoccer',     'https://youtube.com/@UCWV1'],
+  iowa_western: ['https://instagram.com/reivermsoccer',     null,                               'https://facebook.com/ReiverSoccer',    null],
+  uca:          ['https://instagram.com/ucamenssoccer',     'https://x.com/ucamenssoccer',      'https://facebook.com/ucamenssoccer',   'https://youtube.com/c/CentralArkansasAthletics'],
+  uf:           [null,                                      null,                               null,                                   null],
+};
+
+function buildSocialStrip(u){
+  const el = document.getElementById('modal-social');
+  if(!el) return;
+  const data = SOCIAL[u.id];
+  if(!data){ el.innerHTML=''; return; }
+  const [ig, tw, fb, yt] = data;
+  const lbl = '<span class="soc-lbl">Follow</span>';
+  const pill = (url, svg, handle) => url
+    ? `<a class="soc-pill" href="${url}" target="_blank">${svg}<span>${handle}</span></a>`
+    : '';
+  let html = lbl;
+  if(ig) html += pill(ig,  SOCIAL._ig, '@'+ig.split('/').pop());
+  if(tw) html += pill(tw,  SOCIAL._x,  '@'+tw.split('/').pop());
+  if(fb) html += pill(fb,  SOCIAL._fb, fb.split('/').pop());
+  if(yt) html += pill(yt,  SOCIAL._yt, 'YouTube');
+  if(html === lbl) html = ''; // nothing to show
+  el.innerHTML = html;
+}
+
 function openDetail(id){
   const u=unis.find(x=>x.id===id);if(!u)return;
   document.getElementById('modal-title').textContent=u.full;
   document.getElementById('modal-sub').textContent=`${u.loc} · ${u.div} · ${u.conf}`;
   document.getElementById('modal-body').innerHTML=buildDetailBody(u);
+  buildSocialStrip(u);
   document.getElementById('modal').classList.remove('hidden');
 }
 
@@ -912,7 +970,7 @@ function dynamicGpaStatus(convertedGpa, minEntry) {
 // Current ATAR state (starts at 70)
 let currentAtarGpa = atarToGpa(70);
 
-// v18: Hide-ineligible toggle state
+// v17: Hide-ineligible toggle state
 let atarHideBelow = false;
 
 function toggleAtarHide() {
@@ -935,7 +993,7 @@ function onAtarSlide() {
 
   refreshAllGpaRows();
   updateAtarCounts();
-  applyFilters(); // v18: re-run filter engine so hide/grey state updates live
+  applyFilters(); // v17: re-run filter engine so hide/grey state updates live
   if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa, atar);
 }
 
@@ -961,7 +1019,7 @@ function refreshAllGpaRows() {
       valEl.style.color = statusColor;
     }
 
-    // v18: grey-out class — borderline gets a mild tint, below gets full grey
+    // v17: grey-out class — borderline gets a mild tint, below gets full grey
     card.classList.remove('gpa-borderline', 'gpa-below');
     if (dynStatus === 'borderline') card.classList.add('gpa-borderline');
     if (dynStatus === 'below')      card.classList.add('gpa-below');
@@ -1034,7 +1092,7 @@ function applyFilters(){
         if(![...vals].some(v=>c.dataset[type]===v)){ show=false; break; }
       }
     }
-    // v18: ATAR hide-ineligible toggle
+    // v17: ATAR hide-ineligible toggle
     // Top Picks are never fully hidden — they stay visible but greyed out
     // so aspirational targets remain visible even when below minimum.
     if (show && atarHideBelow) {
@@ -1061,7 +1119,7 @@ function applyFilters(){
 function clearAllFilters(){
   Object.keys(activeFilters).forEach(k=>activeFilters[k].clear());
   document.querySelectorAll('.fchip.active').forEach(b=>b.classList.remove('active'));
-  // v18: also reset hide-below toggle
+  // v17: also reset hide-below toggle
   atarHideBelow = false;
   const hideBtn = document.getElementById('atar-hide-btn');
   if (hideBtn) { hideBtn.classList.remove('atar-hide-active'); hideBtn.textContent = '🚫 Hide ineligible'; }
@@ -1131,7 +1189,7 @@ function renderConferences(){
     {key:'Power 5 (D1)',label:'Power 5 Conferences — Elite Division I',cls:'tier-p5',intro:"The 'Big Five' soccer conferences that produce the majority of MLS draft picks. Getting into a Power 5 program requires elite highlights. These programs offer the strongest soccer development but the most competitive roster spots."},
     {key:'High Major (D1)',label:'High-Major Conferences — Very Strong D1',cls:'tier-d1',intro:'Just below Power 5 in profile but highly competitive. AAC and Big West programs are realistic D1 targets for Olivier with strong highlights — and several are in warm coastal cities.'},
     {key:'Ivy League (D1)',label:'Ivy League — Academic Elite, No Athletic Scholarships',cls:'tier-ivy',intro:'Unique financial model: no athletic scholarships, need-based aid only. Princeton is surging. GPA improvement essential.'},
-    {key:'Mid-Major (D1)',label:'Mid-Major D1 — Competitive Regional Programs',cls:'tier-d1',intro:'Genuine D1 competition at more accessible scholarship levels. College of Charleston (CAA) is the lifestyle pick. University of Central Arkansas (ASUN) has the best MF minutes opportunity of any D1 in the guide — 6 of 9 midfielders clear before 2027.'},
+    {key:'Mid-Major (D1)',label:'Mid-Major D1 — Competitive Regional Programs',cls:'tier-d1',intro:'Genuine D1 competition at more accessible scholarship levels. Charleston is the lifestyle pick.'},
     {key:'Division II',label:'Division II Conferences — Best Overall Value',cls:'tier-d2',intro:'Often the best overall balance for international athletes: real scholarships, playing time from year 1, strong academic programs, warm climates in Florida and Texas.'},
     {key:'NAIA',label:'NAIA — Generous Scholarships, Personal Development',cls:'tier-naia',intro:'No scholarship maximum in NAIA — full packages possible. Billy Martin at OCU continues a strong NAIA soccer tradition. Keiser in Fort Lauderdale has clinical simulation labs.'},
     {key:'Division III',label:'Division III — Academic Focus, No Athletic Scholarships',cls:'tier-juco',intro:'No athletic scholarships. Best for athletes where PT/Chiro grad school GPA is the primary goal.'},
@@ -1523,17 +1581,10 @@ const MO_DIV_FACTOR = {D1:1.0, D2:1.15, NAIA:1.25, IVY:0.9, D3:1.1, JUCO:1.0};
 
 function calcMinutesScore(u, mode){
   const traj = (u.minutesOutlook||{}).trajectory || [];
-  if(traj.length === 0) return 0;
-  const factor = mode==='adjusted' ? (MO_DIV_FACTOR[u.div]||1.0) : 1.0;
-  // JUCO 2-year programs: weight Yr1 70% / Yr2 30% (no Yr3/Yr4)
-  if(traj.length === 2){
-    const raw = traj[0].pct*0.70 + traj[1].pct*0.30;
-    return Math.min(95, Math.round(raw * factor));
-  }
-  // Standard 4-year programs
   if(traj.length < 4) return 0;
   const [yr1,yr2,yr3,yr4] = traj.map(t=>t.pct);
   const raw = yr1*0.35 + yr2*0.30 + yr3*0.20 + yr4*0.15;
+  const factor = mode==='adjusted' ? (MO_DIV_FACTOR[u.div]||1.0) : 1.0;
   return Math.min(95, Math.round(raw * factor));
 }
 

@@ -253,6 +253,10 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .modal-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;background:var(--bg);}
 .modal-head h2{font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;color:var(--navy);}
 .modal-head p{font-size:12px;color:var(--muted);margin-top:3px;}
+.soc-pill{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:var(--surface);text-decoration:none;font-size:11px;color:var(--muted);transition:border-color .12s,color .12s;white-space:nowrap;}
+.soc-pill:hover{border-color:var(--border2);color:var(--text);}
+.soc-pill svg{width:12px;height:12px;flex-shrink:0;}
+.soc-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);padding-right:2px;}
 .close-btn{background:var(--surface);border:1px solid var(--border2);color:var(--muted);width:30px;height:30px;border-radius:7px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .close-btn:hover{border-color:var(--rose);color:var(--rose);}
 .modal-body{padding:1.3rem 1.6rem;max-height:75vh;overflow-y:auto;}
@@ -674,7 +678,11 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 <div class="modal-overlay hidden" id="modal">
   <div class="modal">
     <div class="modal-head">
-      <div><h2 id="modal-title">University</h2><p id="modal-sub">Location · Division</p></div>
+      <div style="flex:1;min-width:0">
+        <h2 id="modal-title">University</h2>
+        <p id="modal-sub">Location · Division</p>
+        <div id="modal-social" style="margin-top:.6rem;display:flex;align-items:center;gap:5px;flex-wrap:wrap;"></div>
+      </div>
       <button class="close-btn" onclick="closeModal()">✕</button>
     </div>
     <div class="modal-body" id="modal-body"></div>

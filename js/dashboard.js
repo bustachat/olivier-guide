@@ -25,6 +25,7 @@ const CONF_META = {
   'aac':      { label:'AAC',      tier:'Hi-Maj', tierCls:'bhi' },
   'big-west': { label:'Big West', tier:'Hi-Maj', tierCls:'bhi' },
   'caa':      { label:'CAA',      tier:'Mid-Maj',tierCls:'bhi' },
+  'asun':     { label:'ASUN',     tier:'Mid-Maj',tierCls:'bhi' },
   'other':    { label:'D2/NAIA',  tier:'D2',     tierCls:'bd2' },
 };
 

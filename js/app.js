@@ -1,12 +1,15 @@
 // ═══════════════════════════════════════════════════════════════════════
-// app.js  —  Olivier Scholarship Guide v17
+// app.js  —  Olivier Scholarship Guide v18
 // All application logic. Data loaded from data/ JSON files.
 // v16: Conference-split JSON, Dashboard tab, sort system, listed-depth schools.
 // v17: ATAR hide-ineligible toggle. Below-min cards greyed out. Top Picks
 //      always remain visible (dimmed only, never hidden) regardless of GPA.
+// v18: Division audit confirmed (all 30 existing schools correctly allocated).
+//      Added: U of Charleston WV (D2 MEC), Iowa Western CC (JUCO), UCA (D1 ASUN).
+//      New ASUN Conference section. Clarified Charleston SC (D1) ≠ Charleston WV (D2).
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v17';
+const APP_VERSION = 'v18';
 
 let unis = [];
 let conferences = [];
@@ -357,11 +360,12 @@ function renderCards(){
     {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference. St. John\'s is the fully-profiled school. Georgetown and Creighton are perennial top-10 programs. Strong clinical network in major cities.'},
     {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'FIU and USF both fully profiled in the AAC. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Navy and Army offer full federal scholarships (zero cost).'},
     {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1. UCSB fully profiled — Manu Duah went #1 overall in 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine all competitive. Pacific lifestyle matches Sydney.'},
-    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston fully profiled with Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern round out a competitive conference.'},
+    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston (SC) fully profiled with Charleston Battery (USL) connection — note: this is the College of Charleston in South Carolina, a distinct institution from the University of Charleston in West Virginia (D2). William & Mary, Hofstra, Northeastern round out a competitive conference.'},
+    {key:'other', divFilter:'ASUN',    label:'ASUN Conference',         tier:'Mid-Major · D1', intro:'Mid-major D1 including University of Central Arkansas — affordable warm-climate D1 with a strong Kinesiology department and UAMS clinical network for pre-PT students. Conway AR is 20 min from Little Rock. One of the best value D1 options in the guide at ~$28k/yr.'},
     {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships — need-based aid only. Princeton won the 2024 and 2025 Ivy League Tournaments back-to-back under Jim Barlow. Yale won 2023. Both require 3.9+ GPA. Kinesiology degrees are not available but Ivy credentials carry enormous DPT school credibility. Only viable if GPA climbs to 3.5+.'},
-    {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
+    {key:'other', divFilter:'D2',      label:'NCAA Division II',        tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline. University of Charleston WV (D2 MEC) offers a CAMC hospital clinical partnership for pre-PT — note: distinct from College of Charleston SC (D1 CAA).'},
     {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
-    {key:'other', divFilter:'D3JUCO',  label:'D3 · JUCO',               tier:'D3 / JUCO',     intro:'Chapman (D3, Orange CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 PT pathway. Santa Monica College is the best JUCO entry point in the guide ($9k/yr) with a proven transfer pipeline to UCLA and UCSB. Miami Dade College transfers link well to Barry and FIU.'},
+    {key:'other', divFilter:'D3JUCO',  label:'D3 · JUCO',               tier:'D3 / JUCO',     intro:'Chapman (D3, Orange CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 PT pathway. Santa Monica College is the best JUCO entry point in the guide ($9k/yr) with a proven transfer pipeline to UCLA and UCSB. Miami Dade College transfers link well to Barry and FIU. Iowa Western CC (NJCAA, Council Bluffs IA/Omaha metro) is the Midwest transfer option at ~$14k/yr with connections to Creighton, Iowa State, and Drake University.'},
   ];
 
   // Also include Ivy League under acc or as standalone — they are in other.json
@@ -372,6 +376,7 @@ function renderCards(){
       else if(sec.divFilter==='D2') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D2');
       else if(sec.divFilter==='NAIA') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='NAIA');
       else if(sec.divFilter==='D3JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&(u.div==='D3'||u.div==='JUCO'));
+      else if(sec.divFilter==='ASUN') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D1'&&u.conf&&u.conf.includes('ASUN'));
       else secUnis=unis.filter(u=>u.confKey===sec.key);
     } else {
       secUnis=unis.filter(u=>(u.confKey||'other')===sec.key);
@@ -907,7 +912,7 @@ function dynamicGpaStatus(convertedGpa, minEntry) {
 // Current ATAR state (starts at 70)
 let currentAtarGpa = atarToGpa(70);
 
-// v17: Hide-ineligible toggle state
+// v18: Hide-ineligible toggle state
 let atarHideBelow = false;
 
 function toggleAtarHide() {
@@ -930,7 +935,7 @@ function onAtarSlide() {
 
   refreshAllGpaRows();
   updateAtarCounts();
-  applyFilters(); // v17: re-run filter engine so hide/grey state updates live
+  applyFilters(); // v18: re-run filter engine so hide/grey state updates live
   if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa, atar);
 }
 
@@ -956,7 +961,7 @@ function refreshAllGpaRows() {
       valEl.style.color = statusColor;
     }
 
-    // v17: grey-out class — borderline gets a mild tint, below gets full grey
+    // v18: grey-out class — borderline gets a mild tint, below gets full grey
     card.classList.remove('gpa-borderline', 'gpa-below');
     if (dynStatus === 'borderline') card.classList.add('gpa-borderline');
     if (dynStatus === 'below')      card.classList.add('gpa-below');
@@ -1029,7 +1034,7 @@ function applyFilters(){
         if(![...vals].some(v=>c.dataset[type]===v)){ show=false; break; }
       }
     }
-    // v17: ATAR hide-ineligible toggle
+    // v18: ATAR hide-ineligible toggle
     // Top Picks are never fully hidden — they stay visible but greyed out
     // so aspirational targets remain visible even when below minimum.
     if (show && atarHideBelow) {
@@ -1056,7 +1061,7 @@ function applyFilters(){
 function clearAllFilters(){
   Object.keys(activeFilters).forEach(k=>activeFilters[k].clear());
   document.querySelectorAll('.fchip.active').forEach(b=>b.classList.remove('active'));
-  // v17: also reset hide-below toggle
+  // v18: also reset hide-below toggle
   atarHideBelow = false;
   const hideBtn = document.getElementById('atar-hide-btn');
   if (hideBtn) { hideBtn.classList.remove('atar-hide-active'); hideBtn.textContent = '🚫 Hide ineligible'; }

@@ -1523,10 +1523,17 @@ const MO_DIV_FACTOR = {D1:1.0, D2:1.15, NAIA:1.25, IVY:0.9, D3:1.1, JUCO:1.0};
 
 function calcMinutesScore(u, mode){
   const traj = (u.minutesOutlook||{}).trajectory || [];
+  if(traj.length === 0) return 0;
+  const factor = mode==='adjusted' ? (MO_DIV_FACTOR[u.div]||1.0) : 1.0;
+  // JUCO 2-year programs: weight Yr1 70% / Yr2 30% (no Yr3/Yr4)
+  if(traj.length === 2){
+    const raw = traj[0].pct*0.70 + traj[1].pct*0.30;
+    return Math.min(95, Math.round(raw * factor));
+  }
+  // Standard 4-year programs
   if(traj.length < 4) return 0;
   const [yr1,yr2,yr3,yr4] = traj.map(t=>t.pct);
   const raw = yr1*0.35 + yr2*0.30 + yr3*0.20 + yr4*0.15;
-  const factor = mode==='adjusted' ? (MO_DIV_FACTOR[u.div]||1.0) : 1.0;
   return Math.min(95, Math.round(raw * factor));
 }
 

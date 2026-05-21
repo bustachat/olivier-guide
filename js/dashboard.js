@@ -1,14 +1,15 @@
 // ═══════════════════════════════════════════════════════════════════════
-// dashboard.js  —  Olivier Scholarship Guide v16
+// dashboard.js  —  Olivier Scholarship Guide v18
 // Reads: unis[] / LENSES[] (set by app.js / scores.js)
 // Own state: dashGpa, dashBudget, dashAthlete
+// v18: updateShortlist() now dynamic — ranks all full-profile schools by
+//      fitOlivier, shows top 8. olivier.json shortlist = pinned/starred.
 // ═══════════════════════════════════════════════════════════════════════
 
 let dashGpa     = 2.8;
 let dashBudget  = 55000;
 let dashAthlete = {};
 
-// Division colours — consistent with card system
 const DASH_DIV_COLOR = {
   'D1':   '#e11d48',
   'IVY':  '#b45309',
@@ -29,7 +30,6 @@ const CONF_META = {
   'other':    { label:'D2/NAIA',  tier:'D2',     tierCls:'bd2' },
 };
 
-// ATAR → GPA table
 const ATAR_GPA = [
   [99,4.0],[95,3.9],[90,3.7],[85,3.5],[80,3.3],
   [75,3.0],[70,2.8],[65,2.6],[60,2.4],[55,2.2],[50,2.0]
@@ -45,7 +45,6 @@ function atarToGpa(a) {
   return a >= 99 ? 4.0 : 2.0;
 }
 
-// ─── Reachability ─────────────────────────────────────────────────────────────
 function dashReachable(u) {
   if (u.noVarsity || u.excludeFromCostModel) return false;
   const gpaMin = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
@@ -83,7 +82,6 @@ function buildDashboardShell() {
   return `
 <div class="dash-wrap">
 
-  <!-- ── Slider panel ───────────────────────────────────────────── -->
   <div class="dash-slider-panel">
     <div class="dash-sp-block">
       <div class="dash-sp-header">
@@ -118,7 +116,6 @@ function buildDashboardShell() {
     </div>
   </div>
 
-  <!-- ── Snapshot strip ─────────────────────────────────────────── -->
   <div class="dash-sec-lbl">Snapshot</div>
   <div class="dash-stat-strip" id="dash-stat-strip">
     <div class="dash-sc"><span class="dash-sc-num indigo" id="ds-eligible">—</span><div class="dash-sc-right"><div class="dash-sc-lbl">GPA eligible</div></div></div>
@@ -128,19 +125,15 @@ function buildDashboardShell() {
     <div class="dash-sc"><span class="dash-sc-num emerald dash-sc-name" id="ds-best">—</span><div class="dash-sc-right"><div class="dash-sc-lbl">Best fit reachable</div></div></div>
   </div>
 
-  <!-- ── Shortlist ──────────────────────────────────────────────── -->
-  <div class="dash-sec-lbl">Shortlist</div>
+  <div class="dash-sec-lbl">Shortlist — ★ pinned · ranked by fit score · auto-updates as data grows</div>
   <div class="dash-shortlist-row" id="dash-shortlist"></div>
 
-  <!-- ── Lens chips ─────────────────────────────────────────────── -->
   <div class="dash-sec-lbl">Best per lens — dims when GPA or budget rules out current #1</div>
   <div class="dash-lens-row" id="dash-lens-row"></div>
 
-  <!-- ── Conference strip ───────────────────────────────────────── -->
   <div class="dash-sec-lbl">Conferences</div>
   <div class="dash-conf-strip" id="dash-conf-strip"></div>
 
-  <!-- ── Map + Brackets ─────────────────────────────────────────── -->
   <div class="dash-main-grid">
     <div class="dash-panel">
       <div class="dash-panel-title">School map — dot size = fit · hover for details</div>
@@ -170,8 +163,6 @@ function buildDashboardShell() {
 
 <style>
 .dash-wrap{padding:.85rem;font-family:'Outfit',system-ui,sans-serif;}
-
-/* Slider panel */
 .dash-slider-panel{background:var(--navy);border-radius:10px;padding:.65rem 1rem;margin-bottom:.7rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
 .dash-sp-block{display:flex;flex-direction:column;gap:.28rem;}
 .dash-sp-header{display:flex;align-items:center;justify-content:space-between;}
@@ -187,11 +178,7 @@ function buildDashboardShell() {
 .dash-range::-moz-range-thumb{width:15px;height:15px;border-radius:50%;background:#6366f1;border:2px solid #fff;cursor:pointer;}
 .dash-ticks{display:flex;justify-content:space-between;}
 .dash-ticks span{font-size:8px;color:rgba(255,255,255,.22);}
-
-/* Section label */
 .dash-sec-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--hint);margin-bottom:.35rem;}
-
-/* Stat strip */
 .dash-stat-strip{display:flex;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:.7rem;}
 .dash-sc{flex:1;padding:.48rem .6rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:.45rem;}
 .dash-sc:last-child{border-right:none;}
@@ -204,8 +191,6 @@ function buildDashboardShell() {
 .dash-sc-right{display:flex;flex-direction:column;gap:2px;}
 .dash-sc-lbl{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);line-height:1;}
 .dash-sc-sub{font-size:7.5px;color:#065f46;background:var(--emerald3);border-radius:3px;padding:0 4px;display:inline-block;font-weight:700;line-height:1.5;}
-
-/* Shortlist */
 .dash-shortlist-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:.7rem;}
 .dash-sl-card{background:var(--surface);border:2px solid var(--indigo);border-radius:11px;padding:.6rem .75rem;position:relative;transition:opacity .25s,border-color .25s;}
 .dash-sl-card.over-budget{border-color:var(--border);border-width:1px;opacity:.5;}
@@ -214,6 +199,7 @@ function buildDashboardShell() {
 .dash-sl-div{font-size:8px;font-weight:700;background:var(--rose3);color:var(--rose);border-radius:3px;padding:1px 5px;display:inline-block;text-transform:uppercase;letter-spacing:.05em;}
 .dash-sl-div.d2{background:var(--sky3);color:var(--sky);}
 .dash-sl-div.naia{background:var(--amber3);color:var(--amber);}
+.dash-sl-div.ivy{background:var(--amber3);color:#92400e;}
 .dash-sl-name{font-size:13px;font-weight:800;color:var(--navy);margin:.18rem 0 .08rem;}
 .dash-sl-deg{font-size:8.5px;color:var(--muted);line-height:1.3;margin-bottom:.3rem;}
 .dash-sl-scores{display:flex;gap:6px;}
@@ -225,8 +211,6 @@ function buildDashboardShell() {
 .dash-sl-btns{display:flex;gap:3px;margin-top:.4rem;}
 .dash-sl-btn{flex:1;background:var(--surface2);border:1px solid var(--border);color:var(--muted);font-size:8px;font-weight:600;border-radius:5px;padding:3px 0;cursor:pointer;text-align:center;font-family:inherit;}
 .dash-sl-btn.primary{background:var(--indigo);border-color:var(--indigo);color:#fff;}
-
-/* Lens row */
 .dash-lens-row{display:grid;grid-template-columns:repeat(7,1fr);gap:.3rem;margin-bottom:.7rem;}
 .dash-lc{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.42rem .32rem;text-align:center;transition:opacity .25s;}
 .dash-lc.blocked{opacity:.3;}
@@ -235,8 +219,6 @@ function buildDashboardShell() {
 .dash-lscore{font-size:1rem;font-weight:800;line-height:1;font-family:inherit;}
 .dash-lconf{font-size:7px;color:var(--muted);margin-top:.12rem;}
 .dash-lalt{font-size:7px;color:var(--amber);font-weight:700;margin-top:.18rem;}
-
-/* Conference strip */
 .dash-conf-strip{display:flex;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:.7rem;}
 .dash-cc{flex:1;padding:.36rem .42rem;border-right:1px solid var(--border);cursor:pointer;transition:background .12s;}
 .dash-cc:last-child{border-right:none;}
@@ -250,13 +232,9 @@ function buildDashboardShell() {
 .dash-cc-data{display:flex;align-items:baseline;justify-content:space-between;}
 .dash-cc-fit{font-size:10px;font-weight:800;}
 .dash-cc-count{font-size:8px;color:var(--hint);font-weight:600;}
-
-/* Main grid */
 .dash-main-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;}
 .dash-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.7rem .85rem;}
 .dash-panel-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:.55rem;}
-
-/* Map */
 .dash-map-wrap{position:relative;background:#eef2f7;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
 .dash-map-dot{position:absolute;border-radius:50%;cursor:pointer;transform:translate(-50%,-50%);transition:opacity .2s;}
 .dash-map-dot.shortlist{outline-offset:1px;}
@@ -264,8 +242,6 @@ function buildDashboardShell() {
 .dash-map-legend{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.38rem;}
 .dash-ml{display:flex;align-items:center;gap:3px;font-size:8px;color:var(--muted);}
 .dash-ml-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
-
-/* Brackets */
 .dash-bracket-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem;}
 .dash-bracket-col{display:flex;flex-direction:column;gap:.18rem;}
 .dash-bracket-hdr{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:.22rem .4rem;border-radius:5px;text-align:center;}
@@ -289,25 +265,16 @@ function attachSliderHandlers() {
     atarSl.addEventListener('input', function() {
       const a = parseInt(this.value);
       dashGpa = atarToGpa(a);
-      // Update display values only — never re-render the slider HTML element
       document.getElementById('dash-atar-val').textContent = a;
       document.getElementById('dash-gpa-val').textContent  = dashGpa.toFixed(1);
-      // Sync main app ATAR slider — set value directly, do NOT call onAtarSlide
-      // onAtarSlide would call syncDashGpa which would trigger updateDashboard again (loop)
       const mainSl = document.getElementById('atar-slider');
       if (mainSl && mainSl.value !== String(a)) {
         mainSl.value = a;
-        // Update main app display elements directly
         const mainAtarEl = document.getElementById('atar-display');
         const mainGpaEl  = document.getElementById('gpa-display');
         if (mainAtarEl) mainAtarEl.textContent = a;
         if (mainGpaEl)  mainGpaEl.textContent  = dashGpa.toFixed(1);
-        // Update the main app's currentAtarGpa variable if accessible
-        if (typeof currentAtarGpa !== 'undefined') {
-          // Use assignment via window scope to update the global
-          window.currentAtarGpa = dashGpa;
-        }
-        // Refresh GPA rows in explore tab without rebuilding slider
+        if (typeof currentAtarGpa !== 'undefined') window.currentAtarGpa = dashGpa;
         if (typeof refreshAllGpaRows === 'function') refreshAllGpaRows();
         if (typeof updateAtarCounts === 'function')  updateAtarCounts();
       }
@@ -324,14 +291,11 @@ function attachSliderHandlers() {
   }
 }
 
-// ─── Called when main ATAR slider moves — receives both atar int and gpa float ──
 function syncDashGpa(gpa, atar) {
   dashGpa = gpa;
-  const sl    = document.getElementById('dash-atar-slider');
-  const gpaEl = document.getElementById('dash-gpa-val');
+  const sl     = document.getElementById('dash-atar-slider');
+  const gpaEl  = document.getElementById('dash-gpa-val');
   const atarEl = document.getElementById('dash-atar-val');
-
-  // Use the passed atar value directly — avoids float back-calculation rounding errors
   const atarVal = (atar !== undefined) ? atar : (() => {
     let bestAtar = 70, bestDiff = 99;
     for (let a = 50; a <= 99; a++) {
@@ -340,7 +304,6 @@ function syncDashGpa(gpa, atar) {
     }
     return bestAtar;
   })();
-
   if (sl && sl.value !== String(atarVal)) sl.value = atarVal;
   if (atarEl) atarEl.textContent = atarVal;
   if (gpaEl)  gpaEl.textContent  = gpa.toFixed(1);
@@ -387,36 +350,61 @@ function updateStatStrip() {
   if (budRes) budRes.textContent = inBudget + ' of ' + unis.length + ' within budget';
 }
 
-// ─── 2. Shortlist cards ───────────────────────────────────────────────────────
+// ─── 2. Shortlist cards — DYNAMIC ────────────────────────────────────────────
+// Shows top 8 full-profile schools ranked by fitOlivier.
+// Schools in olivier.json shortlist[] are pinned first with ★ TOP badge.
+// Auto-updates whenever unis[] changes — new schools appear automatically.
 function updateShortlist() {
   const el = document.getElementById('dash-shortlist');
   if (!el) return;
-  const ids = (dashAthlete.shortlist || []).slice(0, 4);
-  if (!ids.length) { el.innerHTML = '<p style="font-size:13px;color:var(--hint)">No shortlist configured.</p>'; return; }
 
-  el.innerHTML = ids.map(id => {
-    const u = unis.find(x => x.id === id);
-    if (!u) return '';
+  const pinnedIds   = (dashAthlete.shortlist || []);
+  const pinnedSet   = new Set(pinnedIds);
+  const fullSchools = unis.filter(u => u.profileDepth === 'full' && !u.noVarsity);
 
-    const gpaMin    = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
-    const costNum   = u.fin?.costNum ?? 0;
+  // Pinned schools in order
+  const pinned = pinnedIds.map(id => fullSchools.find(u => u.id === id)).filter(Boolean);
+
+  // Remaining top schools by fitOlivier
+  const autoTop = [...fullSchools]
+    .filter(u => !pinnedSet.has(u.id))
+    .sort((a, b) => (b.fitOlivier || 0) - (a.fitOlivier || 0));
+
+  // Merge to 8 total
+  const display = [...pinned];
+  for (const u of autoTop) {
+    if (display.length >= 8) break;
+    display.push(u);
+  }
+
+  if (!display.length) {
+    el.innerHTML = '<p style="font-size:13px;color:var(--hint)">No schools loaded yet.</p>';
+    return;
+  }
+
+  el.innerHTML = display.map((u, idx) => {
+    const isPinned   = pinnedSet.has(u.id);
+    const gpaMin     = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+    const costNum    = u.fin?.costNum ?? 0;
     const overBudget = costNum > dashBudget;
     const ineligible = dashGpa < gpaMin;
-    const ok = !overBudget && !ineligible;
 
-    const divClass = u.div === 'D2' ? ' d2' : u.div === 'NAIA' ? ' naia' : '';
-    const fitColor = (u.fitOlivier||0) >= 90 ? 'var(--emerald)' : (u.fitOlivier||0) >= 80 ? 'var(--amber)' : 'var(--rose)';
-    const acuColor = (u.acuAlign||0) >= 14 ? 'var(--emerald)' : (u.acuAlign||0) >= 10 ? 'var(--sky)' : 'var(--amber)';
+    const divClass  = u.div === 'D2' ? ' d2' : u.div === 'NAIA' ? ' naia' : u.div === 'IVY' ? ' ivy' : '';
+    const fitColor  = (u.fitOlivier||0) >= 90 ? 'var(--emerald)' : (u.fitOlivier||0) >= 80 ? 'var(--amber)' : 'var(--rose)';
+    const acuColor  = (u.acuAlign||0) >= 14 ? 'var(--emerald)' : (u.acuAlign||0) >= 10 ? 'var(--sky)' : 'var(--amber)';
+
+    const badge = isPinned
+      ? `<div class="dash-sl-star">★ TOP</div>`
+      : `<div class="dash-sl-star" style="background:var(--surface3);color:var(--muted);border:1px solid var(--border)">#${idx + 1}</div>`;
 
     let warn = '';
     if (ineligible) warn = '<div class="dash-sl-warn gpa">GPA below entry minimum</div>';
     else if (overBudget) warn = '<div class="dash-sl-warn budget">Above current budget</div>';
 
     return `<div class="dash-sl-card${overBudget?' over-budget':''}${ineligible?' ineligible':''}">
-      <div class="dash-sl-star">★ TOP</div>
+      ${badge}
       <div class="dash-sl-head" style="display:flex;align-items:center;gap:.45rem;margin-bottom:.3rem">
-        <div class="dash-sl-emblem" data-domain="${u.domain||''}" data-abbr="${u.name.slice(0,4)}"
-          style="width:34px;height:34px;border-radius:7px;background:var(--surface2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">
+        <div style="width:34px;height:34px;border-radius:7px;background:var(--surface2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">
           ${u.domain
             ? `<img src="https://logo.clearbit.com/${u.domain}" alt="${u.name}" width="28" height="28" style="object-fit:contain"
                 onerror="this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}">`
@@ -450,20 +438,19 @@ function updateLensRow() {
   if (!el || typeof LENSES === 'undefined') return;
 
   el.innerHTML = LENSES.map(L => {
-    // Full-profile schools only — listed schools have unverified lensScores
     const sorted = [...unis]
       .filter(u => u.profileDepth === 'full')
       .sort((a,b) => ((b.lensScores?.[L.key]||0) - (a.lensScores?.[L.key]||0)));
     const top = sorted[0];
     if (!top) return '';
 
-    const gpaMin    = parseFloat(top.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+    const gpaMin     = parseFloat(top.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
     const overBudget = (top.fin?.costNum ?? 0) > dashBudget;
     const ineligible = dashGpa < gpaMin;
-    const blocked   = overBudget || ineligible;
-    const score     = top.lensScores?.[L.key] || top.fitOlivier || 0;
+    const blocked    = overBudget || ineligible;
+    const score      = top.lensScores?.[L.key] || top.fitOlivier || 0;
     const scoreColor = score >= 90 ? 'var(--emerald)' : score >= 80 ? 'var(--amber)' : 'var(--rose)';
-    const altText   = ineligible ? 'GPA too low' : overBudget ? 'Over budget' : '';
+    const altText    = ineligible ? 'GPA too low' : overBudget ? 'Over budget' : '';
 
     return `<div class="dash-lc${blocked?' blocked':''}">
       <div class="dash-lkey">${L.label}</div>
@@ -500,57 +487,56 @@ function updateConfStrip() {
   }).join('');
 }
 
-// ─── 5. Map ───────────────────────────────────────────────────────────────────
+// ─── 5. Map dots ──────────────────────────────────────────────────────────────
 function drawMapBase() {
   const svg = document.getElementById('dash-map-svg');
   if (!svg) return;
-  const ns = 'http://www.w3.org/2000/svg';
+  svg.innerHTML = '';
 
-  // Background
-  const bg = document.createElementNS(ns,'rect');
-  bg.setAttribute('width','500');bg.setAttribute('height','300');bg.setAttribute('fill','#eef2f7');
-  svg.appendChild(bg);
+  const states = [
+    'M 72,78 L 72,148 L 100,148 L 100,110 L 120,110 L 120,78 Z',
+    'M 120,78 L 120,148 L 160,148 L 160,78 Z',
+    'M 160,78 L 160,148 L 200,148 L 200,78 Z',
+    'M 200,78 L 200,148 L 240,148 L 240,78 Z',
+    'M 240,78 L 240,148 L 280,148 L 280,78 Z',
+    'M 280,78 L 280,148 L 320,148 L 320,78 Z',
+    'M 320,78 L 320,148 L 360,148 L 360,78 Z',
+    'M 360,78 L 360,148 L 400,148 L 400,78 Z',
+    'M 400,78 L 400,148 L 440,148 L 440,78 Z',
+    'M 72,148 L 72,220 L 440,220 L 440,148 Z',
+    'M 72,220 L 72,280 L 440,280 L 440,220 Z',
+  ];
 
-  // Continental US land mass
-  const land = document.createElementNS(ns,'path');
-  land.setAttribute('fill','#dce4ee');
-  land.setAttribute('stroke','#c5d0dc');
-  land.setAttribute('stroke-width','0.8');
-  land.setAttribute('d',
-    'M52,58 L100,52 L160,46 L220,42 L278,42 L278,58 ' +
-    'L440,72 L440,260 L415,272 L390,280 L360,282 ' +
-    'L330,278 L305,268 L302,248 L280,248 L280,230 ' +
-    'L262,234 L240,238 L218,234 L200,224 L192,212 ' +
-    'L190,200 L186,210 L178,220 L165,228 L148,230 ' +
-    'L130,226 L114,216 L100,202 L88,186 L80,170 ' +
-    'L78,155 L52,155 Z'
-  );
-  svg.appendChild(land);
+  states.forEach(d => {
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.setAttribute('d', d);
+    path.setAttribute('fill', '#dde6ef');
+    path.setAttribute('stroke', '#c5d4e2');
+    path.setAttribute('stroke-width', '0.5');
+    svg.appendChild(path);
+  });
 
-  // Florida peninsula
-  const fl = document.createElementNS(ns,'path');
-  fl.setAttribute('fill','#dce4ee');fl.setAttribute('stroke','#c5d0dc');fl.setAttribute('stroke-width','0.8');
-  fl.setAttribute('d','M330,222 L360,218 L380,220 L390,230 L392,245 L385,258 L372,268 L355,272 L340,268 L330,255 L326,240 Z');
-  svg.appendChild(fl);
+  // Simple state abbreviations
+  [['CA',75,100],['NV',108,105],['ID',140,90],['MT',170,85],['WY',200,95],
+   ['CO',230,105],['NM',235,155],['TX',255,185],['OK',290,160],['KS',310,130],
+   ['NE',325,110],['SD',340,95],['ND',350,82],['MN',380,88],['WI',400,100],
+   ['MI',415,95],['IL',400,118],['IN',415,115],['OH',430,108],['PA',445,105],
+   ['NY',455,95],['FL',420,240],['GA',420,200],['SC',435,185],['NC',440,175],
+   ['VA',445,162],['MD',450,155]
+  ].forEach(([text, x, y]) => {
+    const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+    t.setAttribute('x', x); t.setAttribute('y', y);
+    t.setAttribute('text-anchor','middle');
+    t.setAttribute('font-size','6'); t.setAttribute('fill','#9ca3af');
+    t.textContent = text;
+    svg.appendChild(t);
+  });
 
-  // AK inset
-  const ak = document.createElementNS(ns,'rect');
-  ak.setAttribute('x','52');ak.setAttribute('y','255');ak.setAttribute('width','52');ak.setAttribute('height','38');
-  ak.setAttribute('rx','3');ak.setAttribute('fill','#dce4ee');ak.setAttribute('stroke','#c5d0dc');ak.setAttribute('stroke-width','0.8');
-  svg.appendChild(ak);
-  const akl = document.createElementNS(ns,'text');
-  akl.setAttribute('x','78');akl.setAttribute('y','278');akl.setAttribute('text-anchor','middle');
-  akl.setAttribute('font-size','7');akl.setAttribute('fill','#9ca3af');akl.textContent='AK';
-  svg.appendChild(akl);
-
-  // HI inset
-  const hi = document.createElementNS(ns,'rect');
-  hi.setAttribute('x','112');hi.setAttribute('y','255');hi.setAttribute('width','42');hi.setAttribute('height','38');
-  hi.setAttribute('rx','3');hi.setAttribute('fill','#dce4ee');hi.setAttribute('stroke','#c5d0dc');hi.setAttribute('stroke-width','0.8');
-  svg.appendChild(hi);
-  const hil = document.createElementNS(ns,'text');
-  hil.setAttribute('x','133');hil.setAttribute('y','278');hil.setAttribute('text-anchor','middle');
-  hil.setAttribute('font-size','7');hil.setAttribute('fill','#9ca3af');hil.textContent='HI';
+  const hil = document.createElementNS('http://www.w3.org/2000/svg','text');
+  hil.setAttribute('x',80); hil.setAttribute('y',260);
+  hil.setAttribute('text-anchor','middle');
+  hil.setAttribute('font-size','7'); hil.setAttribute('fill','#9ca3af');
+  hil.textContent = 'HI';
   svg.appendChild(hil);
 }
 
@@ -559,32 +545,27 @@ function updateMapDots() {
   const svg  = document.getElementById('dash-map-svg');
   if (!wrap || !svg) return;
 
-  // Size the wrap correctly
   const svgW = 500, svgH = 300;
   wrap.style.height = (wrap.offsetWidth * (svgH/svgW)) + 'px';
 
   const tip = document.getElementById('dash-map-tip');
   const shortlistIds = new Set(dashAthlete.shortlist || []);
 
-  // Remove existing dots
   wrap.querySelectorAll('.dash-map-dot').forEach(e => e.remove());
 
   unis.filter(u => u.mapX !== undefined && u.mapY !== undefined && !u.excludeFromMap && !u.noVarsity).forEach(u => {
-    const blocked  = !dashReachable(u);
-    const isSL     = shortlistIds.has(u.id);
-    const color    = DASH_DIV_COLOR[u.div] || '#9ca3af';
-    const size     = Math.max(7, Math.min(13, Math.round((u.fitOlivier||50) / 9)));
-    const lp       = (u.mapX / svgW) * 100;
-    const tp       = (u.mapY / svgH) * 100;
+    const blocked = !dashReachable(u);
+    const isSL    = shortlistIds.has(u.id);
+    const color   = DASH_DIV_COLOR[u.div] || '#9ca3af';
+    const size    = Math.max(7, Math.min(13, Math.round((u.fitOlivier||50) / 9)));
+    const lp      = (u.mapX / svgW) * 100;
+    const tp      = (u.mapY / svgH) * 100;
 
     const dot = document.createElement('div');
     dot.className = 'dash-map-dot' + (isSL && !blocked ? ' shortlist' : '');
     dot.style.cssText = [
-      'position:absolute',
-      `left:${lp}%`,
-      `top:${tp}%`,
-      `width:${size}px`,
-      `height:${size}px`,
+      'position:absolute', `left:${lp}%`, `top:${tp}%`,
+      `width:${size}px`, `height:${size}px`,
       `background:${blocked ? '#b0bcc8' : color}`,
       `opacity:${blocked ? 0.15 : 1}`,
       isSL && !blocked ? `outline:2px solid var(--indigo);outline-offset:1px` : '',
@@ -593,8 +574,8 @@ function updateMapDots() {
     dot.addEventListener('mouseenter', function() {
       tip.style.display = 'block';
       tip.textContent   = u.name + ' · $' + Math.round((u.fin?.costNum||0)/1000) + 'k · ' + (u.fitOlivier||'—') + '% fit';
-      tip.style.left    = lp + '%';
-      tip.style.top     = (tp + 3) + '%';
+      tip.style.left = lp + '%';
+      tip.style.top  = (tp + 3) + '%';
     });
     dot.addEventListener('mouseleave', () => tip.style.display = 'none');
     wrap.appendChild(dot);
@@ -607,20 +588,19 @@ function updateBrackets() {
   if (!el) return;
 
   const brackets = [
-    { label:'Under $30k', cls:'bh-g', min:0,     max:29999      },
-    { label:'$30–50k',    cls:'bh-b', min:30000, max:49999      },
-    { label:'$50–70k',    cls:'bh-a', min:50000, max:69999      },
-    { label:'$70k+',      cls:'bh-r', min:70000, max:Infinity   },
+    { label:'Under $30k', cls:'bh-g', min:0,     max:29999    },
+    { label:'$30–50k',    cls:'bh-b', min:30000, max:49999    },
+    { label:'$50–70k',    cls:'bh-a', min:50000, max:69999    },
+    { label:'$70k+',      cls:'bh-r', min:70000, max:Infinity },
   ];
 
   el.innerHTML = brackets.map(b => {
-    const inBracket  = unis.filter(u => {
+    const inBracket = unis.filter(u => {
       if (u.noVarsity || u.excludeFromCostModel) return false;
       const c = u.fin?.costNum ?? 0;
       return c >= b.min && c <= b.max;
     });
-    const reachable  = inBracket.filter(dashReachable).length;
-
+    const reachable = inBracket.filter(dashReachable).length;
     const dots = inBracket.map(u => {
       const ok    = dashReachable(u);
       const color = DASH_DIV_COLOR[u.div] || '#9ca3af';
@@ -635,9 +615,8 @@ function updateBrackets() {
   }).join('');
 }
 
-// ─── Conference filter helper (jumps to Explore tab filtered by conf) ─────────
+// ─── Conference filter helper ─────────────────────────────────────────────────
 function filterToConf(confKey) {
-  // Switch to Explore tab
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
   const explorePage = document.getElementById('page-explore');
@@ -645,7 +624,6 @@ function filterToConf(confKey) {
   if (explorePage) explorePage.classList.add('active');
   if (exploreTab)  exploreTab.classList.add('active');
 
-  // Expand the matching conf section and scroll to it
   setTimeout(() => {
     const section = document.querySelector(`.conf-section[data-confkey="${confKey}"]`);
     if (section) {

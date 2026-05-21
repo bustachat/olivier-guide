@@ -2,7 +2,7 @@
   "id": "olivier",
   "name": "Olivier",
   "agentName": "Platform Sports Management",
-  "guideVersion": "v13",
+  "guideVersion": "v18",
 
   "position": "Central Midfielder",
   "positionCode": "CM",
@@ -31,9 +31,10 @@
   "lifestylePrefs": ["warm", "city"],
   "targetDivisions": ["D1", "D2", "NAIA", "JUCO"],
   "budgetAUD": 80000,
+  "budgetUSD": 52000,
   "fxRate": 1.55,
 
-  "shortlist": ["fiu", "pba", "lynn", "ucsb", "usf", "barry"],
+  "shortlist": ["fiu", "pba", "lynn", "ucsb", "usf", "barry", "clemson", "unc", "fau", "smu"],
 
   "scoreWeights": {
     "soccerLevel":    25,
@@ -60,5 +61,8 @@
     "Good":             0.75,
     "Solid":            0.60,
     "Transfer Pathway": 0.40
-  }
+  },
+
+  "guideTitle": "US College Soccer & Exercise Science Guide",
+  "guideSubtitle": "Olivier — Scholarship Guide"
 }

@@ -450,7 +450,7 @@ function buildCard(u){
     u.gpa.minEntry.includes('2.5')?'mid':
     (u.gpa.minEntry.includes('3.0')||u.gpa.minEntry.includes('3.5')||u.gpa.minEntry.includes('3.9'))?'high':'low';
   el.dataset.gpamin=gpaBucket;
-  const facRating=u.facilityDetails?u.facilityDetails.rating.toLowerCase().replace(/\s+/g,''):'solid';
+  const facRating=(u.facilityDetails?.rating||'Solid').toLowerCase().replace(/\s+/g,'');
   el.dataset.facrating=facRating;
   el.id='card-'+u.id;
 
@@ -1010,7 +1010,7 @@ function buildDetailBody(u){
     <div class="mtab-content" id="tab-facilities">
       ${u.facilityDetails?`
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem;flex-wrap:wrap">
-        <span class="fac-rating-badge fac-${u.facilityDetails.rating.toLowerCase().replace(' ','')}">${u.facilityDetails.rating} Facilities</span>
+        <span class="fac-rating-badge fac-${(u.facilityDetails.rating||'Solid').toLowerCase().replace(' ','')}">${u.facilityDetails.rating||'—'} Facilities</span>
         <span style="font-size:12px;color:var(--muted)">${u.full} · ${u.div} · ${u.conf}</span>
       </div>
       <div class="fac-grid">

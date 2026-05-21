@@ -635,6 +635,12 @@ const DOMAINS = {
   iowa_western: 'goreivers.com',
   uca:          'ucasports.com',
   uf:           'gatorzone.com',
+  clemson:      'clemsontigers.com',
+  georgetown:   'guhoyas.com',
+  notredame:    'fightingirish.com',
+  maryland:     'umterps.com',
+  unc:          'goheels.com',
+  fau:          'fausports.com',
 };
 
 const SITE_URLS = {
@@ -665,6 +671,12 @@ const SITE_URLS = {
   iowa_western: 'https://www.iwcc.edu',
   uca:          'https://www.uca.edu',
   uf:           'https://www.ufl.edu',
+  clemson:      'https://www.clemson.edu',
+  georgetown:   'https://www.georgetown.edu',
+  notredame:    'https://www.nd.edu',
+  maryland:     'https://www.umd.edu',
+  unc:          'https://www.unc.edu',
+  fau:          'https://www.fau.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -707,6 +719,12 @@ const SOCIAL = {
   iowa_western: ['https://instagram.com/reivermsoccer',     null,                               'https://facebook.com/ReiverSoccer',    null],
   uca:          ['https://instagram.com/ucamenssoccer',     'https://x.com/ucamenssoccer',      'https://facebook.com/ucamenssoccer',   'https://youtube.com/c/CentralArkansasAthletics'],
   uf:           [null,                                      null,                               null,                                   null],
+  clemson:      ['https://instagram.com/clemsonsoccer',      'https://x.com/ClemsonMSoccer',     'https://facebook.com/ClemsonMSoccer',  'https://youtube.com/clemsontigers'],
+  georgetown:   ['https://instagram.com/georgetownmsoc',     'https://x.com/GUHoyasMSoc',        null,                                   'https://youtube.com/guhoyas'],
+  notredame:    ['https://instagram.com/ndmsoccer',          'https://x.com/NDMenSoccer',         null,                                   'https://youtube.com/fightingirish'],
+  maryland:     ['https://instagram.com/umterpsmsoc',        'https://x.com/UMTerpsMSOC',         'https://facebook.com/TerrapinsMSoccer','https://youtube.com/umterps'],
+  unc:          ['https://instagram.com/uncmsoccer',         'https://x.com/UNCMensSoccer',       null,                                   'https://youtube.com/tarheels'],
+  fau:          ['https://instagram.com/faumsoccer',         'https://x.com/FAUMSoccer',          null,                                   'https://youtube.com/fauowls'],
 };
 
 

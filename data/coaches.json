@@ -1065,5 +1065,286 @@
       "#ede9fe",
       "#7c3aed"
     ]
+  },
+  {
+    "id": "noonan",
+    "schoolId": "clemson",
+    "name": "Mike Noonan",
+    "school": "Clemson University",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "rank": 21,
+    "rankClass": "rk-elite",
+    "overallScore": 97,
+    "devScore": 95,
+    "tacticalScore": 95,
+    "ptPathScore": 88,
+    "mlsPlayers": 8,
+    "yearsHC": 16,
+    "ausConnection": false,
+    "record": "2× NCAA National Champion (2021, 2023). 400+ career wins. 4 first-round MLS picks in 2026 draft alone. Nation-leading pipeline.",
+    "bio": "Mike Noonan is in his 16th season at Clemson and is widely regarded as one of the elite coaches in college soccer. His 2021 and 2023 NCAA championships make him the only active coach with 2+ recent national titles. Noonan's high-press, technically demanding style has produced an extraordinary professional pipeline — 4 first-round picks in the 2026 draft alone including #4 overall Kwaku Agyabeng. Robbie Robinson won the Hermann Trophy and went #1 overall in 2020 under Noonan. Riggs Field is one of the most iconic venues in college soccer.",
+    "strengths": [
+      "2× recent NCAA champion",
+      "Elite MLS pipeline",
+      "High-press tactical style",
+      "Iconic Riggs Field venue",
+      "South Carolina warm climate"
+    ],
+    "staff": [
+      {
+        "name": "Philip Jones",
+        "role": "Associate Head Coach",
+        "bg": "13-year tenure alongside Noonan."
+      },
+      {
+        "name": "Camilo Rodriguez",
+        "role": "Assistant Coach",
+        "bg": "10-year tenure, technical development specialist."
+      },
+      {
+        "name": "Gaye Diadie",
+        "role": "Assistant Coach",
+        "bg": "1st season — fresh perspective on the staff."
+      }
+    ],
+    "contact": {
+      "email": "soccer@clemson.edu",
+      "phone": "864-656-1990"
+    },
+    "url": "https://clemsontigers.com/sports/mens-soccer",
+    "color": [
+      "#fff3e0",
+      "#f97316"
+    ]
+  },
+  {
+    "id": "wiese",
+    "schoolId": "georgetown",
+    "name": "Brian Wiese",
+    "school": "Georgetown University",
+    "div": "D1",
+    "conf": "Big East Conference",
+    "rank": 22,
+    "rankClass": "rk-elite",
+    "overallScore": 95,
+    "devScore": 93,
+    "tacticalScore": 94,
+    "ptPathScore": 90,
+    "mlsPlayers": 42,
+    "yearsHC": 20,
+    "ausConnection": false,
+    "record": "2019 NCAA National Champion. 42 MLS signings all-time. 6× East Regional Staff of Year. 14 NCAA Tournament berths in 16yr span.",
+    "bio": "Brian Wiese is in his 20th season at Georgetown and has built the Hoyas into one of the most consistent programs in college soccer. The 2019 national championship capped a historic run — Georgetown's first ever title, won with a 20-1-3 record and a dramatic penalty shootout against Virginia. Wiese has sent 42 players to MLS and been named East Regional Staff of Year 6 times. His possession-based, technically sophisticated style suits a midfielder like Olivier. Georgetown's Washington D.C. location provides unmatched clinical placement access for DPT preparation.",
+    "strengths": [
+      "2019 NCAA champion",
+      "42 MLS signings",
+      "D.C. clinical network",
+      "Possession-based style",
+      "Big East dominance"
+    ],
+    "staff": [
+      {
+        "name": "Connor Klekota",
+        "role": "Assistant Head Coach",
+        "bg": "Notre Dame 2013 NCAA champion as player under Bobby Clark."
+      },
+      {
+        "name": "Michael Montross",
+        "role": "Assistant Coach",
+        "bg": "Technical development specialist."
+      },
+      {
+        "name": "Brian Bouhl",
+        "role": "Asst Coach / Dir of Operations",
+        "bg": "Long-tenured Georgetown staff member."
+      }
+    ],
+    "contact": {
+      "email": "msoccer@georgetown.edu",
+      "phone": "202-687-2435"
+    },
+    "url": "https://guhoyas.com/sports/mens-soccer",
+    "color": [
+      "#e0f2fe",
+      "#0c4a6e"
+    ]
+  },
+  {
+    "id": "riley",
+    "schoolId": "notredame",
+    "name": "Chad Riley",
+    "school": "University of Notre Dame",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "rank": 23,
+    "rankClass": "rk-elite",
+    "overallScore": 91,
+    "devScore": 90,
+    "tacticalScore": 90,
+    "ptPathScore": 76,
+    "mlsPlayers": 3,
+    "yearsHC": 8,
+    "ausConnection": false,
+    "record": "2023 NCAA Runner-Up. 2021 ACC Tournament Champions. Maintained Bobby Clark's elite standard. College Cup 2021, 2023.",
+    "bio": "Chad Riley inherited one of the most prestigious programs in college soccer from legendary coach Bobby Clark and has maintained Notre Dame's elite status. Riley's 2023 team finished as NCAA runners-up (13-3-6, ACC Regular Season Champions) and his 2021 squad won the ACC Tournament and reached the College Cup. Notre Dame's program has produced 27 MLS draft picks under Clark and continues that pipeline under Riley. The Fighting Irish play in the ACC — the toughest conference in college soccer — making every season a gauntlet of top-25 opponents.",
+    "strengths": [
+      "Notre Dame prestige",
+      "2023 NCAA Runner-Up",
+      "ACC elite competition",
+      "Bobby Clark legacy program",
+      "27 MLS picks under Clark era"
+    ],
+    "staff": [
+      {
+        "name": "Mike Graczyk",
+        "role": "Associate Head Coach",
+        "bg": "5th season with Riley."
+      },
+      {
+        "name": "Jeff Rowland",
+        "role": "Assistant Coach",
+        "bg": "4th season. Player development specialist."
+      }
+    ],
+    "contact": {
+      "email": "soccer@nd.edu",
+      "phone": "574-631-6107"
+    },
+    "url": "https://fightingirish.com/sports/mens-soccer",
+    "color": [
+      "#fff7ed",
+      "#1a4a2e"
+    ]
+  },
+  {
+    "id": "cirovski",
+    "schoolId": "maryland",
+    "name": "Sasho Cirovski",
+    "school": "University of Maryland",
+    "div": "D1",
+    "conf": "Big Ten Conference",
+    "rank": 24,
+    "rankClass": "rk-elite",
+    "overallScore": 96,
+    "devScore": 93,
+    "tacticalScore": 92,
+    "ptPathScore": 89,
+    "mlsPlayers": 49,
+    "yearsHC": 32,
+    "ausConnection": false,
+    "record": "3× NCAA National Champion (2005, 2008, 2018). 49 MLS picks + 7 homegrown. 6 players at FIFA World Cup. 2018 National Coach of Year. Led nation in attendance 2016, 2019, 2025.",
+    "bio": "Sasho Cirovski is the most decorated active coach in college soccer history by professional pipeline — 49 MLS SuperDraft picks, 7 MLS homegrown signings, and 6 players who appeared at FIFA Men's World Cups. His 2018 national championship was built on a possession-based, technically demanding system that produced Zack Steffen (USMNT World Cup goalkeeper), Graham Zusi (2014 World Cup goal), Omar Gonzalez, and Taylor Twellman. Ludwig Field leads the nation in attendance because Maryland soccer fans are among the most passionate in the country. In 32 seasons, Cirovski has built Maryland into college soccer's most prolific professional development machine.",
+    "strengths": [
+      "3× NCAA champion",
+      "49 MLS picks — most of any coach",
+      "6 World Cup players",
+      "Top-20 kinesiology degree",
+      "Baltimore/DC clinical network"
+    ],
+    "staff": [
+      {
+        "name": "Jake Pace",
+        "role": "Assistant Coach",
+        "bg": "Maryland alumnus. B.S. Kinesiology from Maryland. Back-to-back ACC champion as player 2012-13."
+      }
+    ],
+    "contact": {
+      "email": "soccer@umd.edu",
+      "phone": "301-314-7085"
+    },
+    "url": "https://umterps.com/sports/mens-soccer",
+    "color": [
+      "#fff7ed",
+      "#cc0000"
+    ]
+  },
+  {
+    "id": "somoano",
+    "schoolId": "unc",
+    "name": "Carlos Somoano",
+    "school": "UNC Chapel Hill",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "rank": 25,
+    "rankClass": "rk-strong",
+    "overallScore": 88,
+    "devScore": 87,
+    "tacticalScore": 88,
+    "ptPathScore": 91,
+    "mlsPlayers": 3,
+    "yearsHC": 14,
+    "ausConnection": false,
+    "record": "2023 ACC Regular Season Champions. 14 NCAA Tournament appearances. Consistent top-25. Dorrance dynasty legacy program.",
+    "bio": "Carlos Somoano has maintained UNC's place among the elite of college soccer in his 14 seasons — a remarkable feat given the Anson Dorrance women's dynasty that dominates the university's soccer identity. Somoano's 2023 team won the ACC Regular Season title and he consistently produces ACC All-Conference players and MLS draftees. UNC's Exercise and Sport Science degree is explicitly designed for DPT, OT and PA school preparation — making it one of the strongest academic fits in the guide for Olivier. Chapel Hill's Research Triangle location provides world-class clinical access through UNC Health and Duke Medical.",
+    "strengths": [
+      "ACC Regular Season Champions 2023",
+      "EXSS degree best DPT alignment",
+      "UNC Health + Duke Medical clinical access",
+      "Research Triangle location",
+      "Warm NC climate"
+    ],
+    "staff": [
+      {
+        "name": "Grant Porter",
+        "role": "Associate Head Coach",
+        "bg": "14-year tenure alongside Somoano — longest-serving assistant in ACC."
+      },
+      {
+        "name": "Michael Harrington",
+        "role": "Assistant Coach",
+        "bg": "3rd season."
+      },
+      {
+        "name": "Jeff Negalha",
+        "role": "Assistant Coach",
+        "bg": "10th year (2nd stint). Technical specialist."
+      }
+    ],
+    "contact": {
+      "email": "soccer@unc.edu",
+      "phone": "919-962-6000"
+    },
+    "url": "https://goheels.com/sports/mens-soccer",
+    "color": [
+      "#e0f2fe",
+      "#0077b6"
+    ]
+  },
+  {
+    "id": "worthen",
+    "schoolId": "fau",
+    "name": "Joey Worthen",
+    "school": "Florida Atlantic University",
+    "div": "D1",
+    "conf": "American Athletic Conference (AAC)",
+    "rank": 26,
+    "rankClass": "rk-solid",
+    "overallScore": 72,
+    "devScore": 72,
+    "tacticalScore": 70,
+    "ptPathScore": 96,
+    "mlsPlayers": 0,
+    "yearsHC": 1,
+    "ausConnection": false,
+    "record": "2025 AAC Tournament Champions in debut season. First NCAA Tournament for FAU since 2007.",
+    "bio": "Joey Worthen achieved something remarkable in his first season as FAU head coach — leading the Owls to the 2025 AAC Tournament Championship and their first NCAA Tournament appearance since 2007. This breakout result signals genuine momentum for a program transitioning from Conference USA to the AAC. FAU's unique selling point for Olivier is not the soccer pedigree but the degree: the Pre-PT/OT concentration in Exercise Science & Health Promotion, with a formal articulation agreement giving students a guaranteed early interview for FIU's DPT program. This is the most direct physical therapy pathway of any school in the entire guide. Boca Raton's South Florida lifestyle — warm year-round, beach access, close to Miami and Fort Lauderdale — is the best climate match for Olivier's Sydney background.",
+    "strengths": [
+      "2025 AAC Tournament Champions",
+      "Pre-PT degree with FIU DPT guaranteed pathway",
+      "South Florida warm climate",
+      "Same city as Lynn University",
+      "Accessible admission + affordable D1"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "soccer@fau.edu",
+      "phone": "561-297-3000"
+    },
+    "url": "https://fausports.com/sports/mens-soccer",
+    "color": [
+      "#e0f2fe",
+      "#003366"
+    ]
   }
 ]

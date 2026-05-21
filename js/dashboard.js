@@ -20,14 +20,19 @@ const DASH_DIV_COLOR = {
 };
 
 const CONF_META = {
-  'acc':      { label:'ACC',      tier:'P4',     tierCls:'bp5' },
-  'big-ten':  { label:'Big Ten',  tier:'P4',     tierCls:'bp5' },
-  'big-east': { label:'Big East', tier:'P4',     tierCls:'bp5' },
-  'aac':      { label:'AAC',      tier:'Hi-Maj', tierCls:'bhi' },
-  'big-west': { label:'Big West', tier:'Hi-Maj', tierCls:'bhi' },
-  'caa':      { label:'CAA',      tier:'Mid-Maj',tierCls:'bhi' },
-  'asun':     { label:'ASUN',     tier:'Mid-Maj',tierCls:'bhi' },
-  'other':    { label:'D2/NAIA',  tier:'D2',     tierCls:'bd2' },
+  'acc':          { label:'ACC',          tier:'P4',     tierCls:'bp5' },
+  'big-ten':      { label:'Big Ten',      tier:'P4',     tierCls:'bp5' },
+  'big-east':     { label:'Big East',     tier:'P4',     tierCls:'bp5' },
+  'sec':          { label:'SEC',          tier:'P4',     tierCls:'bp5' },
+  'aac':          { label:'AAC',          tier:'Hi-Maj', tierCls:'bhi' },
+  'big-west':     { label:'Big West',     tier:'Hi-Maj', tierCls:'bhi' },
+  'caa':          { label:'CAA',          tier:'Mid-Maj',tierCls:'bhi' },
+  'asun':         { label:'ASUN',         tier:'Mid-Maj',tierCls:'bhi' },
+  'mac':          { label:'MAC',          tier:'Mid-Maj',tierCls:'bhi' },
+  'wac':          { label:'WAC',          tier:'Mid-Maj',tierCls:'bhi' },
+  'wcc':          { label:'WCC',          tier:'Mid-Maj',tierCls:'bhi' },
+  'america-east': { label:'Am. East',     tier:'Mid-Maj',tierCls:'bhi' },
+  'other':        { label:'D2/NAIA',      tier:'D2',     tierCls:'bd2' },
 };
 
 const ATAR_GPA = [

@@ -4442,5 +4442,904 @@
     "domain": "fausports.com",
     "mapX": 335,
     "mapY": 215
+  },
+  {
+    "id": "gcu",
+    "name": "GCU",
+    "full": "Grand Canyon University",
+    "loc": "Phoenix, AZ",
+    "region": "west",
+    "div": "D1",
+    "conf": "WAC",
+    "confKey": "wac",
+    "warm": true,
+    "city": true,
+    "top": true,
+    "color": [
+      "#fef3c7",
+      "#92400e"
+    ],
+    "profileDepth": "full",
+    "degreeTitle": "B.S. Kinesiology (Exercise Science)",
+    "kinRank": "B.S. Kinesiology \u2014 pre-health emphasis with sport science labs",
+    "acuAlign": 12,
+    "acuAlignNote": "Strong alignment \u2014 GCU Kinesiology covers anatomy, exercise physiology, biomechanics, resistance training, sport psychology, and research methods. Clinical placement hours available through Banner Health network (Phoenix). Missing: some ACU-specific motor control labs and full environmental physiology depth.",
+    "soccerLevel": "WAC Conference \u2014 D1 Mid-Major",
+    "cost": "~$38k/yr",
+    "aid": "Athletic + Merit",
+    "size": "25000",
+    "prePT": "Strong \u2014 Banner Health clinical network",
+    "gpa": {
+      "minEntry": "2.5+",
+      "minSchol": "3.0+ for academic merit",
+      "note": "GCU is accessible for a GPA 2.8 student with a strong athletic profile. International recruiting is active \u2014 Australian players have been on the roster under Kiefer. New coach Jamie Davies brings elite development reputation.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 38000,
+      "tuition": 28000,
+      "roomBoard": 8000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 8000,
+      "aidType": "athletic+merit",
+      "internationalNote": "GCU actively recruits international athletes and provides strong athletic scholarship packages. Online degree option available (not recommended for athlete experience). Campus cost of living in Phoenix is moderate."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WAC Champs",
+        "note": "WAC Tournament Champions. 14-4-5 overall. NCAA Sweet 16 \u2014 beat UCLA and San Diego. Kiefer named Far West Region Staff of Year."
+      },
+      {
+        "yr": 2024,
+        "pos": "WAC play",
+        "note": "Kiefer's first season \u2014 rebuilding to conference contention."
+      },
+      {
+        "yr": 2023,
+        "pos": "WAC Mid-table",
+        "note": "WAC Conference play under Kraus."
+      },
+      {
+        "yr": 2022,
+        "pos": "WAC play",
+        "note": "Mid-table WAC."
+      },
+      {
+        "yr": 2021,
+        "pos": "WAC play",
+        "note": "WAC conference competition."
+      },
+      {
+        "yr": 2020,
+        "pos": "WAC play",
+        "note": "COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "2025 WAC Tournament Champions",
+      "NCAA Sweet 16 2025",
+      "4 WAC conference titles in program history"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Dayne St. Clair (2021 MLS \u2014 Minnesota United, USMNT)",
+        "Multiple USL signings annually under Kiefer era"
+      ],
+      "draftRank": "Growing WAC pipeline. Sweet 16 run 2025 elevated national profile."
+    },
+    "acRank": "Regional Strong \u2014 Kinesiology with pre-health emphasis",
+    "devScores": {
+      "tactical": 82,
+      "technical": 80,
+      "fitness": 85,
+      "ptPath": 78
+    },
+    "fitOlivier": 85,
+    "lensScores": {
+      "overall": 85,
+      "soccer": 80,
+      "academic": 75,
+      "pt": 76,
+      "lifestyle": 92,
+      "minutes": 68,
+      "value": 88
+    },
+    "coach": {
+      "name": "Jamie Davies",
+      "title": "Head Coach (appointed December 2025)",
+      "email": "soccer@gcu.edu",
+      "phone": "602-639-7500",
+      "profile": "Jamie Davies was appointed December 18, 2025. Previously at University of North Florida (ASUN) where he engineered one of the most dramatic turnarounds in US college soccer \u2014 inherited a 3-win team ranked 203rd nationally, finished ranked #46 nationally with two consecutive conference titles and NCAA Tournament appearances in two seasons. Prior to UNF, spent 6 seasons as UCF Associate HC and recruiting coordinator \u2014 three AAC regular season titles and four NCAA Tournaments. High-intensity pressing style, elite recruiting eye. Davies replaces George Kiefer who departed for USF."
+    },
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "GCU Soccer Stadium \u2014 5,000 capacity, natural grass",
+      "GCU Athletic Performance Center \u2014 full Olympic S&C facility",
+      "Kinesiology & Sports Science labs \u2014 biomechanics, physiology",
+      "Banner Health clinical network \u2014 pre-PT placement"
+    ],
+    "courses": [
+      "KIN 300 \u2014 Exercise Physiology",
+      "KIN 320 \u2014 Biomechanics",
+      "KIN 340 \u2014 Motor Learning and Control",
+      "KIN 360 \u2014 Resistance Training and Conditioning",
+      "KIN 450 \u2014 Clinical Practicum (Banner Health)"
+    ],
+    "rec": "GCU is Olivier's best warm-climate D1 option that isn't Florida. Phoenix is a major city with genuine city campus energy \u2014 the 28,000-student campus has an NBA/NFL/MLB market on its doorstep. Jamie Davies' appointment is exciting \u2014 he's one of the fastest-rising coaches in US college soccer with a proven turnaround track record. The 2025 Sweet 16 run under Kiefer elevates the program's national credibility. Kinesiology degree with Banner Health clinical placement is a legitimate pre-DPT pathway. Trade-off: WAC is below ACC/Big Ten/Big East in prestige, and Davies is new \u2014 program direction is uncertain in year 1.",
+    "url": "https://gculopes.com/sports/mens-soccer",
+    "domain": "gcu.edu",
+    "mapX": 120,
+    "mapY": 178,
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 11,
+      "cleared_before_2027": 5,
+      "cleared_names": [],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium \u2014 new coach will reshape roster",
+      "trajectoryNote": "Davies' rebuild means 2026 recruiting class is entirely his own vision. Roster reset under new coach creates opportunity but also uncertainty. GCU has history of signing international players \u2014 Olivier profile fits the recruitment pattern.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 45,
+          "label": "Squad rotation \u2014 new-coach rebuild"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 62,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 76,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 88,
+          "label": "Key player"
+        }
+      ]
+    },
+    "culture": {
+      "vibe": "GCU is a large, fast-growing Christian university with exceptional facilities and a genuinely electric campus atmosphere. The 28,000-student residential campus has one of the most engaged student fanbases in the WAC. Phoenix provides world-class warmth, a major sports market (Suns, Cardinals, Coyotes, D-backs, Arizona FC MLS) and a diverse international community.",
+      "olivierMatch": "\u2605\u2605\u2605\u2605 Phoenix is warm 10 months of the year \u2014 as close to Sydney weather as you'll find in the US. Major city with beach-less but outdoor lifestyle (Camelback Mountain, South Mountain, Papago Park). GCU's Christian culture is genuine but not restrictive \u2014 international students are well integrated. Football, soccer, and basketball games are sold-out events. Strong Australian sporting culture crossover in Phoenix.",
+      "socialScene": "Vibrant campus with strong club and intramural culture. Phoenix city life \u2014 restaurants, rooftop bars, Old Town Scottsdale, ASU Tempe nearby. International student community is large. Soccer team provides immediate social network.",
+      "thingsToDo": "Phoenix \u2014 Camelback Mountain hiking, Chase Field (D-backs), Footprint Center (Suns), State Farm Stadium (Cardinals), Arizona FC (MLS), Scottsdale nightlife, Sedona (2hr), Grand Canyon (4hr), Desert Botanical Garden. Warm 10+ months. Golf culture world-class.",
+      "lifestyleTags": "Warm major city, large campus, Christian culture, outdoor lifestyle, sports-mad"
+    },
+    "facilityDetails": {
+      "stadium": "GCU Soccer Stadium \u2014 5,000 capacity, natural grass, dedicated soccer venue. One of the best mid-major soccer facilities in the West.",
+      "trainingFields": "Multiple natural grass training fields on campus. Year-round outdoor training \u2014 no weather limitations.",
+      "strengthConditioning": "GCU Athletic Performance Center \u2014 30,000 sq ft Olympic-grade facility. Full weight room, speed tracks, recovery pools. Shared with all GCU athletic programs.",
+      "sportsScience": "GPS tracking, video analysis (Hudl), heart rate monitoring under Kiefer era. Davies expected to maintain elite sports science infrastructure.",
+      "academicLabs": "Kinesiology labs include biomechanics, exercise physiology, and motor control equipment. Banner Health network provides clinical placement for pre-PT students \u2014 major hospital system in Phoenix metro.",
+      "sportsMed": "Full-time athletic trainer. Sports medicine staff integrated with GCU Athletics."
+    }
+  },
+  {
+    "id": "texas_am",
+    "name": "Texas A&M",
+    "full": "Texas A&M University",
+    "loc": "College Station, TX",
+    "region": "south",
+    "div": "D1",
+    "conf": "SEC",
+    "confKey": "sec",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "color": [
+      "#fce7f3",
+      "#7c2d12"
+    ],
+    "profileDepth": "full",
+    "degreeTitle": "B.S. Kinesiology (Exercise Science track)",
+    "kinRank": "B.S. Kinesiology \u2014 one of the largest kinesiology departments in the US (~3,000 undergrads)",
+    "acuAlign": 13,
+    "acuAlignNote": "Strong alignment \u2014 Texas A&M Kinesiology covers anatomy, exercise physiology, biomechanics, resistance training, motor control, sport psychology, and research methods. Texas A&M Health Science Center provides clinical access for pre-PT. Department has 3,000+ undergrads \u2014 largest kinesiology program in the guide by enrollment.",
+    "soccerLevel": "SEC Conference \u2014 D1 Elite",
+    "cost": "~$42k/yr",
+    "aid": "Athletic + Merit",
+    "size": "74000",
+    "prePT": "Very Strong \u2014 Texas A&M Health Science Center",
+    "gpa": {
+      "minEntry": "2.5+ NCAA core",
+      "minSchol": "3.0+ for full merit stack",
+      "note": "Texas A&M is selective but accessible with a strong athletic profile. International recruiting is active in SEC. GPA 2.8 is borderline \u2014 improving trajectory matters.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 42000,
+      "tuition": 28000,
+      "roomBoard": 11000,
+      "fees": 3000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 10000,
+      "aidType": "athletic+merit",
+      "internationalNote": "SEC athletic scholarships are full equivalency \u2014 can cover full COA. Texas A&M offers strong athletic scholarship packages to international recruits. College Station cost of living is very low relative to coastal options."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "SEC play",
+        "note": "Final season under previous staff. Bobby Shuttleworth hired December 2025."
+      },
+      {
+        "yr": 2024,
+        "pos": "SEC play",
+        "note": "NCAA Tournament appearance. SEC competition."
+      },
+      {
+        "yr": 2023,
+        "pos": "SEC Top 4",
+        "note": "NCAA Tournament Round of 16. Competitive SEC season."
+      },
+      {
+        "yr": 2022,
+        "pos": "SEC play",
+        "note": "NCAA Tournament. Strong SEC showing."
+      },
+      {
+        "yr": 2021,
+        "pos": "SEC play",
+        "note": "NCAA Tournament appearance. SEC mid-table."
+      },
+      {
+        "yr": 2020,
+        "pos": "SEC play",
+        "note": "COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "Multiple SEC regular season titles",
+      "Consistent NCAA Tournament program \u2014 15+ appearances"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "Gyasi Zardes (Columbus Crew, USMNT \u2014 legendary Aggie)",
+        "Collin McHugh (2023 MLS)",
+        "Multiple SEC players to MLS/USL annually"
+      ],
+      "draftRank": "Consistent SEC pipeline. Zardes is program's most famous alum."
+    },
+    "acRank": "Top 20 nationally \u2014 largest kinesiology department in the guide",
+    "devScores": {
+      "tactical": 84,
+      "technical": 82,
+      "fitness": 88,
+      "ptPath": 85
+    },
+    "fitOlivier": 74,
+    "lensScores": {
+      "overall": 74,
+      "soccer": 82,
+      "academic": 86,
+      "pt": 85,
+      "lifestyle": 55,
+      "minutes": 42,
+      "value": 78
+    },
+    "coach": {
+      "name": "Bobby Shuttleworth",
+      "title": "Head Coach (appointed December 2025)",
+      "email": "soccer@athletics.tamu.edu",
+      "phone": "979-845-2311",
+      "profile": "Bobby Shuttleworth was hired December 2025 as only the second head coach in Texas A&M men's soccer history. Spent four seasons as associate head coach at Florida State under Brian Pensky, helping win NCAA titles in 2023 and 2025 \u2014 FSU's record during his tenure was 70-7-12 (.854), the best winning percentage in the nation over that span. Former MLS goalkeeper for 14 years (New England Revolution, Minnesota United, Chicago Fire, Atlanta United \u2014 232 appearances, 81 wins, 53 clean sheets, ranked 13th all-time). Brings elite development pedigree from the most successful NCAA soccer program of the last 4 years."
+    },
+    "tags": [
+      "warm",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Ellis Field \u2014 4,000 capacity, one of the best dedicated soccer facilities in SEC",
+      "Texas A&M Sports Performance Complex \u2014 world-class S&C",
+      "Kinesiology Building \u2014 research labs, biomechanics, exercise physiology",
+      "Texas A&M Health Science Center \u2014 pre-PT clinical access"
+    ],
+    "courses": [
+      "KINE 306 \u2014 Applied Anatomy",
+      "KINE 321 \u2014 Exercise Physiology I",
+      "KINE 322 \u2014 Exercise Physiology II",
+      "KINE 412 \u2014 Biomechanics",
+      "KINE 481 \u2014 Motor Control",
+      "KINE 491 \u2014 Clinical Internship"
+    ],
+    "rec": "Texas A&M is the SEC option for Olivier \u2014 massive kinesiology department, elite facilities, and a new coach with a 2\u00d7 national championship pedigree at Florida State. College Station is not a major city (it's a college town), which is a genuine lifestyle drawback for a Sydney-raised player, but it is warm and the campus itself is an exceptional athletic environment. The depth of the kinesiology program is unmatched in the guide by enrollment \u2014 3,000+ kinesiology undergrads means serious research infrastructure, pre-PT advising, and clinical placement through the Health Science Center. Squad depth in SEC is intense \u2014 realistic playing time timeline is Yr2\u20133 unless Shuttleworth's rebuild opens spots.",
+    "url": "https://12thman.com/sports/mens-soccer",
+    "domain": "tamu.edu",
+    "mapX": 272,
+    "mapY": 208,
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 13,
+      "cleared_before_2027": 4,
+      "cleared_names": [],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High \u2014 SEC squad depth, new coach reshaping roster",
+      "trajectoryNote": "Shuttleworth is rebuilding around his own recruits. SEC competition means development year Yr1 is realistic. Kinesiology infrastructure makes the 4-year commitment worthwhile even if playing time builds gradually.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Development year \u2014 SEC depth"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Breaking into rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 68,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 82,
+          "label": "Established starter"
+        }
+      ]
+    },
+    "culture": {
+      "vibe": "Texas A&M is one of the most distinctive campus cultures in American sport \u2014 intense school pride, military tradition (Corps of Cadets), and an unparalleled game day atmosphere. The 12th Man tradition is famous worldwide. Soccer has a passionate following. College Station is a college town (population ~120k) 90 minutes from Houston.",
+      "olivierMatch": "\u2605\u2605\u2605 Warm climate (similar to Sydney in summer, mild winters). But College Station is not a major city \u2014 there's no Sydney-like coastal/urban lifestyle here. For Olivier, this is about maximising academic and soccer development in an elite environment, not lifestyle. Houston is 90 minutes away for city days. The kinesiology infrastructure and Shuttleworth's coaching pedigree make this a serious contender if playing time can be negotiated.",
+      "socialScene": "Dominated by Texas A&M traditions \u2014 Midnight Yell, Bonfire legacy, massive athletic events. International student population is growing. Houston proximity for city trips. Strong alumni network (Aggie Network) globally.",
+      "thingsToDo": "College Station \u2014 Kyle Field game days (one of the top 5 college football atmospheres in the US), George Bush Presidential Library, Wolf Pen Creek Park. Houston (90 min) \u2014 Space Center, Discovery Green, Astros, Rockets, Houston Dynamo (MLS). Austin (2 hrs). Gulf Coast beaches (3 hrs). Warm climate year-round.",
+      "lifestyleTags": "Warm, college town, elite athletic culture, strong traditions, SEC prestige"
+    },
+    "facilityDetails": {
+      "stadium": "Ellis Field \u2014 4,000 capacity, natural grass, dedicated soccer stadium. One of the better SEC soccer facilities.",
+      "trainingFields": "Multiple natural grass and synthetic training surfaces. Texas climate allows year-round outdoor training.",
+      "strengthConditioning": "Texas A&M Sports Performance Complex \u2014 among the best S&C facilities in college athletics. Full Olympic-grade weight rooms, speed tracks, recovery pools, sports science integration.",
+      "sportsScience": "Elite sports science infrastructure under Texas A&M Athletics. GPS, video analysis, heart rate monitoring, sports psychologist on staff.",
+      "academicLabs": "Texas A&M Kinesiology Building \u2014 full biomechanics lab, exercise physiology research lab, motor control suite. 3,000+ kinesiology undergrads means elite research depth. Texas A&M Health Science Center provides clinical placement access for pre-PT/DPT students.",
+      "sportsMed": "Full-time AT and sports medicine staff. SEC-level medical support."
+    }
+  },
+  {
+    "id": "akron",
+    "name": "Akron",
+    "full": "University of Akron",
+    "loc": "Akron, OH",
+    "region": "midwest",
+    "div": "D1",
+    "conf": "MAC",
+    "confKey": "mac",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#dbeafe",
+      "#1e3a5f"
+    ],
+    "profileDepth": "full",
+    "degreeTitle": "B.S. Exercise Science (Pre-PT / Pre-Health concentration)",
+    "kinRank": "B.S. Exercise Science \u2014 one of the strongest pre-PT pipelines in the MAC",
+    "acuAlign": 13,
+    "acuAlignNote": "Strong alignment \u2014 Akron Exercise Science covers anatomy, exercise physiology, biomechanics, motor control, resistance training, sport psychology, and research methods. Explicit Pre-PT concentration available. Cleveland Clinic and Summa Health System provide clinical placement \u2014 among the best pre-PT clinical networks in the Midwest.",
+    "soccerLevel": "MAC Conference \u2014 D1 elite program, historically top-10 nationally",
+    "cost": "~$32k/yr",
+    "aid": "Athletic + Merit",
+    "size": "19000",
+    "prePT": "Excellent \u2014 Cleveland Clinic + Summa Health clinical network",
+    "gpa": {
+      "minEntry": "2.0 (very accessible)",
+      "minSchol": "2.5+ for merit aid",
+      "note": "Akron is one of the most accessible D1 programs academically in the guide. GPA 2.8 is well above the minimum and qualifies for merit aid. Strong international recruiting history.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 32000,
+      "tuition": 20000,
+      "roomBoard": 10000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 8000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Akron has strong scholarship packages for international athletes. Public university pricing is very competitive \u2014 one of the best value D1 options in the guide. Ohio cost of living is moderate."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "MAC Champs",
+        "note": "MAC Regular Season and Tournament Champions. NCAA Tournament \u2014 continued Embick dynasty."
+      },
+      {
+        "yr": 2024,
+        "pos": "MAC Top 2",
+        "note": "NCAA Tournament. MAC Championship Final."
+      },
+      {
+        "yr": 2023,
+        "pos": "MAC Champs",
+        "note": "MAC Tournament Champions. NCAA Tournament Sweet 16."
+      },
+      {
+        "yr": 2022,
+        "pos": "MAC Top 3",
+        "note": "NCAA Tournament. Strong MAC showing."
+      },
+      {
+        "yr": 2021,
+        "pos": "MAC Champs",
+        "note": "MAC Tournament Champions. NCAA Tournament College Cup (Final Four)."
+      },
+      {
+        "yr": 2020,
+        "pos": "MAC play",
+        "note": "COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "MAC Tournament Champions 2021, 2023, 2025",
+      "NCAA College Cup (Final Four) 2021",
+      "Multiple MAC regular season titles"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 5,
+      "notable": [
+        "Emil Jaaskelainen (#7 overall 2024 MLS Draft \u2014 Inter Miami)",
+        "Jack Lynn (2023 MLS)",
+        "Patrick Rakovsky (2022 R1)",
+        "18 MLS picks under Coppinger era alone"
+      ],
+      "draftRank": "Top-15 all-time MLS producers. Consistent first-round pipeline."
+    },
+    "acRank": "Strong \u2014 Exercise Science with explicit Pre-PT concentration",
+    "devScores": {
+      "tactical": 86,
+      "technical": 84,
+      "fitness": 85,
+      "ptPath": 88
+    },
+    "fitOlivier": 78,
+    "lensScores": {
+      "overall": 78,
+      "soccer": 90,
+      "academic": 82,
+      "pt": 88,
+      "lifestyle": 45,
+      "minutes": 52,
+      "value": 92
+    },
+    "coach": {
+      "name": "Jared Embick",
+      "title": "Head Coach (contract extended through 2035)",
+      "email": "jembick@uakron.edu",
+      "phone": "330-972-7080",
+      "profile": "Jared Embick has built Akron into one of the most consistent soccer programs in D1 over a decade-plus tenure. Contract extended through 2035 \u2014 a sign of total institutional commitment. Under his staff (with associate HC Ger Coppinger), Akron has won multiple MAC titles, reached the 2021 College Cup Final Four, and sent 18 MLS draft picks in Coppinger's tenure alone including Emil Jaaskelainen (#7 overall, Inter Miami, 2024). Staff: Ger Coppinger (Associate HC, 11th season), Michael Nanchoff (Asst), Josh Kay (Asst). USSF A License. Technical, high-intensity playing style."
+    },
+    "tags": [
+      "city",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "FirstEnergy Stadium \u2014 training and home games",
+      "InfoCision Stadium complex",
+      "Akron Exercise Science Labs \u2014 biomechanics, physiology",
+      "Cleveland Clinic + Summa Health clinical network"
+    ],
+    "courses": [
+      "EXSC 352 \u2014 Exercise Physiology",
+      "EXSC 401 \u2014 Biomechanics",
+      "EXSC 420 \u2014 Motor Learning",
+      "EXSC 440 \u2014 Strength and Conditioning",
+      "EXSC 460 \u2014 Clinical Practicum (Cleveland Clinic)"
+    ],
+    "rec": "Akron is the hidden gem of this guide. The combination of a top-20 MLS pipeline, explicit Pre-PT concentration, and Cleveland Clinic clinical access is genuinely exceptional \u2014 PBA-level PT pathway quality at a public university price. Jared Embick has a contract through 2035, giving Olivier certainty about coaching continuity. The trade-off is clear: Akron, Ohio has cold winters and a rust-belt city feel \u2014 it's the furthest from the Sydney lifestyle in the guide. But for a player who prioritises soccer development, PT career pathway, and value, Akron competes with anyone.",
+    "url": "https://gozips.com/sports/mens-soccer",
+    "domain": "uakron.edu",
+    "mapX": 390,
+    "mapY": 118,
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 5,
+      "cleared_names": [],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium \u2014 elite program, high international recruiting competition",
+      "trajectoryNote": "Akron's MLS pipeline means roster competition is genuine. However, MAC quality is accessible for an 8/10 international CM \u2014 Embick regularly develops international players into starters. Years 1-2 rotation realistic if Olivier impresses in preseason.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 40,
+          "label": "Squad rotation \u2014 competitive roster"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 60,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 75,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 88,
+          "label": "Captain candidate"
+        }
+      ]
+    },
+    "culture": {
+      "vibe": "Mid-sized public university with a genuine soccer culture \u2014 Akron is known in college soccer circles as a program that takes the sport seriously. The Akron/Cleveland metro is a proud rust-belt sports market (Browns, Cavaliers, Guardians, Cleveland FC). Campus itself is urban and walkable in central Akron.",
+      "olivierMatch": "\u2605\u2605\u2605 Akron is cold in winter \u2014 this is the primary drawback for a Sydney player. But the soccer development environment, Cleveland Clinic PT pathway, and team culture are exceptional. For Olivier, this is a place to develop fast, graduate with an elite PT credential, and enter the professional pipeline. Not a lifestyle-first choice \u2014 a career-first choice.",
+      "socialScene": "Urban campus with college-town energy. Cleveland (45 min) \u2014 Rock and Roll Hall of Fame, Progressive Field, Rocket Mortgage Fieldhouse, Cleveland FC (MLS starting 2026). Akron has a craft beer culture, vibrant arts scene. Soccer team is the prestige sport on campus.",
+      "thingsToDo": "Cleveland (45 min) \u2014 Rock Hall, Cleveland Museum of Art, Cuyahoga Valley National Park, Lake Erie beaches. Akron \u2014 Cuyahoga Valley bike trails, Inventure Place, Summit County Metro Parks. Columbus (2hrs), Pittsburgh (2hrs). Cold winters but excellent fall soccer weather.",
+      "lifestyleTags": "Cold winters, urban campus, elite soccer culture, Cleveland market, PT pathway first-class"
+    },
+    "facilityDetails": {
+      "stadium": "FirstEnergy Soccer Complex \u2014 dedicated soccer facility. Natural grass. One of the best MAC soccer venues.",
+      "trainingFields": "Multiple training pitches adjacent to the stadium. Indoor facility for winter training.",
+      "strengthConditioning": "Dedicated soccer S&C program \u2014 part of Akron Athletics performance infrastructure. Full Olympic weight room, speed development track.",
+      "sportsScience": "GPS tracking, video analysis, sports psychology support. Embick runs a data-informed program \u2014 one of the more analytically advanced MAC programs.",
+      "academicLabs": "Exercise Science labs \u2014 biomechanics, physiology, motor control equipment. Cleveland Clinic partnership is the crown jewel \u2014 one of the top 5 hospital systems in the US. Pre-PT students have direct clinical observation and placement pathways.",
+      "sportsMed": "Full-time AT and sports medicine staff. Cleveland Clinic proximity means elite medical support available."
+    }
+  },
+  {
+    "id": "denver",
+    "name": "Denver",
+    "full": "University of Denver",
+    "loc": "Denver, CO",
+    "region": "west",
+    "div": "D1",
+    "conf": "West Coast Conference (from 2026)",
+    "confKey": "wcc",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#fce7f3",
+      "#831843"
+    ],
+    "profileDepth": "full",
+    "degreeTitle": "B.S. Kinesiology and Sport Studies",
+    "kinRank": "B.S. Kinesiology and Sport Studies \u2014 launched 2023, NSCA-certified preparation",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong alignment \u2014 Denver Kinesiology covers anatomy, exercise physiology, biomechanics, motor control, sport psychology, and research methods. NSCA certification preparation integrated. Note: degree launched 2023 \u2014 newer program with growing infrastructure. Clinical placement developing through Swedish Medical Center and Denver Health.",
+    "soccerLevel": "Summit League (2025), moving to West Coast Conference (2026) \u2014 D1 elite",
+    "cost": "~$62k/yr",
+    "aid": "Athletic + Merit",
+    "size": "12000",
+    "prePT": "Good \u2014 Swedish Medical Center clinical network",
+    "gpa": {
+      "minEntry": "2.8+",
+      "minSchol": "3.0+ for merit aid",
+      "note": "DU is selective (private university). GPA 2.8 is at the minimum threshold \u2014 improving trajectory helps. Strong athletic scholarship packages available. Small private university means personal coach attention.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 62000,
+      "tuition": 48000,
+      "roomBoard": 12000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 15000,
+      "aidType": "athletic+merit",
+      "internationalNote": "DU is a private university with a strong merit aid program. Athletic + academic scholarships can be stacked. Denver cost of living is moderate-high. International students well-supported \u2014 DU has a large international student community (~15%)."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Summit Champs",
+        "note": "Summit League Champions (9th title). NCAA Tournament Round of 32."
+      },
+      {
+        "yr": 2024,
+        "pos": "Summit Champs",
+        "note": "Summit League Champions. NCAA College Cup (Final Four). Best season in program history."
+      },
+      {
+        "yr": 2023,
+        "pos": "Summit Champs",
+        "note": "Summit League Champions. NCAA Tournament Round of 32."
+      },
+      {
+        "yr": 2022,
+        "pos": "Summit Champs",
+        "note": "Summit League Champions. NCAA Tournament Round of 32."
+      },
+      {
+        "yr": 2021,
+        "pos": "Summit Champs",
+        "note": "Summit League Champions. NCAA Tournament Round of 16."
+      },
+      {
+        "yr": 2020,
+        "pos": "Summit play",
+        "note": "Summit League competition. COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "Summit League Champions 2021, 2022, 2023, 2024, 2025 (5 consecutive)",
+      "NCAA College Cup 2024 (Final Four)",
+      "15 consecutive NCAA Tournaments"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 4,
+      "notable": [
+        "Aidan Semelsberger (2025 CSC First Team Academic All-America)",
+        "Cole Bassett (2021 R1 \u2014 Colorado Rapids, USMNT)",
+        "Multiple Summit League players to MLS/USL annually"
+      ],
+      "draftRank": "Strong mid-major pipeline. Moving to WCC 2026 will elevate national profile."
+    },
+    "acRank": "Strong \u2014 new kinesiology program (2023) with NSCA certification pathway",
+    "devScores": {
+      "tactical": 85,
+      "technical": 84,
+      "fitness": 82,
+      "ptPath": 76
+    },
+    "fitOlivier": 76,
+    "lensScores": {
+      "overall": 76,
+      "soccer": 86,
+      "academic": 72,
+      "pt": 74,
+      "lifestyle": 72,
+      "minutes": 48,
+      "value": 62
+    },
+    "coach": {
+      "name": "Jamie Franks",
+      "title": "Head Coach (10th season)",
+      "email": "soccer@du.edu",
+      "phone": "303-871-4618",
+      "profile": "Jamie Franks is in his 10th season and has built Denver into the dominant Summit League program \u2014 5 consecutive conference titles 2021\u20132025, 15 straight NCAA Tournaments, College Cup (Final Four) in 2024. Moving the program to the West Coast Conference in 2026 \u2014 a significant elevation in competition and national visibility. Strong recruiting eye for technical midfielders. Cole Bassett (USMNT) is his most notable development success. Franks is one of the most underrated coaches in D1 soccer."
+    },
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "University of Denver Soccer Stadium \u2014 2,500 capacity, natural grass",
+      "Daniel L. Ritchie Center \u2014 Olympic-grade athletic facility",
+      "Kinesiology labs \u2014 biomechanics, exercise physiology",
+      "Swedish Medical Center clinical network"
+    ],
+    "courses": [
+      "KINE 2300 \u2014 Anatomy and Physiology",
+      "KINE 3100 \u2014 Exercise Physiology",
+      "KINE 3200 \u2014 Biomechanics",
+      "KINE 4100 \u2014 Motor Control",
+      "KINE 4500 \u2014 Clinical Practicum"
+    ],
+    "rec": "Denver is a sleeper pick in this guide. Five consecutive Summit League titles, a College Cup run in 2024, and moving to the West Coast Conference in 2026 \u2014 this program is on a genuine upward trajectory. Jamie Franks is one of the best under-the-radar coaches in D1. Denver city is a major US city with genuine lifestyle appeal (1 mile high, outdoor culture, beer scene, MLS team). The Kinesiology degree launched in 2023 \u2014 newer program but NSCA-certified and developing clinical links. Trade-off: Colorado winters, high cost (~$62k), and squad depth is competitive for a program this successful.",
+    "url": "https://denverpioneers.com/sports/mens-soccer",
+    "domain": "du.edu",
+    "mapX": 195,
+    "mapY": 148,
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 11,
+      "cleared_before_2027": 4,
+      "cleared_names": [],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium-High \u2014 elite program, WCC move elevates competition",
+      "trajectoryNote": "DU's move to WCC in 2026 raises the program's ambition and recruiting level. Olivier would enter a program in transition to a higher conference \u2014 opportunity if he earns trust early, but competition will intensify.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 35,
+          "label": "Squad rotation \u2014 strong roster"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Breaking into rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 72,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Key player"
+        }
+      ]
+    },
+    "culture": {
+      "vibe": "Small private university (~12,000 students) with a genuinely excellent academic reputation and exceptional athletics culture. DU is one of the few schools where soccer is the flagship sport on campus \u2014 the program gets sold-out crowds and genuine campus-wide attention. Denver city is world-class: outdoor culture, 300 days of sunshine, MLS Colorado Rapids, Nuggets, Broncos, Rockies.",
+      "olivierMatch": "\u2605\u2605\u2605\u2605 Denver city is excellent \u2014 cosmopolitan, diverse, outdoor-focused. Not warm in winter (cold Oct-March) but the rest of the year is exceptional, with 300 days of sunshine. The Mile High City has a Sydney-adjacent energy \u2014 outdoor lifestyle, cafe culture, sport culture. If climate is less important than city quality, Denver scores very high. DU's small campus means personal development.",
+      "socialScene": "Small DU campus with strong international community (~15% international students). Denver city life \u2014 LoDo (Lower Downtown), River North Art District, Larimer Square, Red Rocks Amphitheater, Colorado Rockies games. Colorado Rapids (MLS) proximity. Mountain access \u2014 skiing (1hr), hiking, biking.",
+      "thingsToDo": "Denver \u2014 Red Rocks Amphitheater, Rocky Mountain National Park (2hrs), skiing (Vail, Breckenridge, Copper \u2014 1-2hrs), Colorado Rapids MLS, Coors Field (Rockies), Ball Arena (Nuggets), LoDo entertainment district. Outdoor lifestyle year-round despite cold winters.",
+      "lifestyleTags": "Major city, outdoor lifestyle, cold winters, small campus, elite soccer culture"
+    },
+    "facilityDetails": {
+      "stadium": "University of Denver Soccer Stadium \u2014 2,500 capacity, natural grass, dedicated soccer venue on campus.",
+      "trainingFields": "Multiple natural grass training fields. Indoor turf facility for winter training.",
+      "strengthConditioning": "Daniel L. Ritchie Center \u2014 Olympic-grade multi-sport facility. Full S&C program dedicated to soccer.",
+      "sportsScience": "GPS tracking, video analysis, sports psychology. Franks runs a technically sophisticated program \u2014 analytics integrated into training.",
+      "academicLabs": "New Kinesiology labs (post-2023) \u2014 biomechanics, exercise physiology. Swedish Medical Center network developing for clinical placements. NSCA certification preparation integrated into curriculum.",
+      "sportsMed": "Full-time AT staff. DU athletics has strong sports medicine infrastructure."
+    }
+  },
+  {
+    "id": "vermont",
+    "name": "Vermont",
+    "full": "University of Vermont",
+    "loc": "Burlington, VT",
+    "region": "east",
+    "div": "D1",
+    "conf": "America East Conference",
+    "confKey": "america-east",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#dcfce7",
+      "#14532d"
+    ],
+    "profileDepth": "listed",
+    "degreeTitle": "B.S. Kinesiology (Exercise and Movement Science)",
+    "kinRank": "B.S. Kinesiology \u2014 solid mid-tier program with pre-PT options",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong alignment \u2014 UVM Kinesiology covers anatomy, exercise physiology, biomechanics, sport psychology, and research methods. UVM Medical Center provides clinical access. Reasonable pre-PT pathway.",
+    "soccerLevel": "America East Conference \u2014 D1, 2024 NCAA National Champions",
+    "cost": "~$55k/yr",
+    "aid": "Athletic + Merit",
+    "size": "13000",
+    "prePT": "Good \u2014 UVM Medical Center",
+    "gpa": {
+      "minEntry": "2.8+",
+      "minSchol": "3.0+",
+      "note": "Selective public university. Athletic scholarship available. New head coach Adrian Dubois in 2026 after Rob Dow departed post-championship.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 55000,
+      "tuition": 40000,
+      "roomBoard": 13000,
+      "fees": 2000,
+      "maxAthletic": 0.7,
+      "maxAcademic": 10000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Out-of-state + international tuition is high at Vermont. Athletic scholarship reduces this significantly. New coach \u2014 scholarship packages may change."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "AEC Champs",
+        "note": "America East Champions. NCAA Tournament \u2014 Dow's final season."
+      },
+      {
+        "yr": 2024,
+        "pos": "AEC Champs + NCAA Champions",
+        "note": "2024 NCAA National Champions \u2014 beat Marshall 2-1 OT in final. First title in any UVM sport outside skiing."
+      },
+      {
+        "yr": 2023,
+        "pos": "AEC play",
+        "note": "NCAA Tournament appearance."
+      },
+      {
+        "yr": 2022,
+        "pos": "AEC Top 3",
+        "note": "NCAA Tournament Elite Eight."
+      },
+      {
+        "yr": 2021,
+        "pos": "AEC play",
+        "note": "NCAA Tournament appearance."
+      },
+      {
+        "yr": 2020,
+        "pos": "AEC play",
+        "note": "COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "2024 NCAA National Champions",
+      "America East Champions 2024, 2025",
+      "Multiple AEC titles"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Maximilian Kissel (2025 MLS Draft \u2014 championship game hero)",
+        "Marcel Papp (2025 MLS Draft)"
+      ],
+      "draftRank": "Growing America East pipeline. 2024 championship elevated national profile significantly."
+    },
+    "acRank": "Good \u2014 UVM Medical Center pre-PT access",
+    "devScores": {
+      "tactical": 0,
+      "technical": 0,
+      "fitness": 0,
+      "ptPath": 0
+    },
+    "fitOlivier": 52,
+    "lensScores": {
+      "overall": 52,
+      "soccer": 72,
+      "academic": 62,
+      "pt": 58,
+      "lifestyle": 25,
+      "minutes": 55,
+      "value": 55
+    },
+    "coach": {
+      "name": "Adrian Dubois",
+      "title": "Head Coach (2026, 1st season)",
+      "email": "soccer@uvm.edu",
+      "phone": "802-656-4604",
+      "profile": "Adrian Dubois was appointed in 2026 after Rob Dow departed following the 2024 national championship. Dow built an extraordinary culture at Vermont \u2014 the 2024 title over Marshall in OT remains one of the biggest upsets in college soccer history. Dubois inherits a program with strong momentum but significant graduation losses from the championship squad."
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Virtue Field \u2014 2,600 capacity",
+      "UVM Athletic Complex",
+      "UVM Medical Center \u2014 clinical access"
+    ],
+    "courses": [],
+    "rec": "Vermont is in the guide primarily due to the 2024 NCAA Championship and strong America East soccer tradition. However, Burlington VT is cold (long harsh winters), not a major city, and the lifestyle match for a Sydney-raised player is poor. Rob Dow has departed \u2014 new coach Dubois inherits a program under pressure to follow a once-in-a-generation season. Listed depth only \u2014 worth monitoring if Olivier's profile is developing and the new coach has Australian connections, but not a priority target.",
+    "url": "https://uvmathletics.com/sports/mens-soccer",
+    "domain": "uvm.edu",
+    "mapX": 445,
+    "mapY": 88,
+    "minutesOutlook": {
+      "available": false
+    },
+    "culture": {
+      "vibe": "Small New England university with exceptional natural beauty and a campus that rallied behind its soccer team to produce a historic national championship. Burlington is a progressive, outdoorsy college town on Lake Champlain.",
+      "olivierMatch": "\u2605\u2605 Burlington VT is cold \u2014 very cold. Winters are long and harsh, and the landscape is beautiful but not Sydney-like. New coach, championship squad graduated. Not a lifestyle fit but the soccer tradition is now elite.",
+      "socialScene": "Small college town. Burlington has good food, music, and Vermont Green FC (USL League One) proximity.",
+      "thingsToDo": "Burlington \u2014 Church Street Marketplace, Lake Champlain, Ben & Jerry's factory tour, Green Mountain hiking. Montreal (2hrs), Boston (3hrs). Skiing world-class (Stowe, Sugarbush). Cold winters.",
+      "lifestyleTags": "Cold, small city, outdoorsy, elite soccer tradition, new coach era"
+    },
+    "facilityDetails": {
+      "stadium": "Virtue Field \u2014 2,600 capacity, natural grass. Famous for passionate home crowds during 2024 championship run.",
+      "trainingFields": "On-campus training fields. Indoor facility essential for Vermont winters.",
+      "strengthConditioning": "Standard D1 S&C facility. Good quality for America East level.",
+      "sportsScience": "Developing \u2014 Dow built a strong culture around fitness and tactical discipline.",
+      "academicLabs": "UVM Kinesiology labs. UVM Medical Center proximity for clinical placement.",
+      "sportsMed": "Full-time AT staff. UVM Medical Center for advanced care."
+    }
   }
 ]

@@ -635,6 +635,57 @@
     ]
   },
   {
+    "id": "embick",
+    "schoolId": "akron",
+    "name": "Jared Embick",
+    "school": "University of Akron",
+    "div": "D1",
+    "conf": "MAC",
+    "rank": 13,
+    "rankClass": "rk-strong",
+    "overallScore": 88,
+    "devScore": 90,
+    "tacticalScore": 86,
+    "ptPathScore": 88,
+    "mlsPlayers": 18,
+    "yearsHC": 12,
+    "ausConnection": false,
+    "record": "Contract extended through 2035. Multiple MAC titles, 2021 College Cup (Final Four), consistent NCAA Tournament program.",
+    "bio": "Jared Embick has built Akron into one of the most consistent D1 programs in America. Contract extended through 2035 \u2014 total institutional commitment. Under his staff (Associate HC Ger Coppinger, 11th season), Akron has produced 18 MLS draft picks including Emil Jaaskelainen (#7 overall Inter Miami 2024), won multiple MAC titles, and reached the 2021 College Cup Final Four. USSF A License. High-intensity pressing style with strong technical development focus. The Pre-PT pipeline through Cleveland Clinic is a genuine USP Embick has built around the program.",
+    "strengths": [
+      "Top-20 MLS pipeline",
+      "Pre-PT Cleveland Clinic pathway",
+      "Long-term stability (contract to 2035)",
+      "High-intensity pressing"
+    ],
+    "staff": [
+      {
+        "name": "Ger Coppinger",
+        "role": "Associate Head Coach",
+        "bg": "11th season at Akron. 18 MLS picks in his tenure."
+      },
+      {
+        "name": "Michael Nanchoff",
+        "role": "Assistant Coach",
+        "bg": "Technical development."
+      },
+      {
+        "name": "Josh Kay",
+        "role": "Assistant Coach",
+        "bg": "United Soccer Coaches 30 Under 30 honoree."
+      }
+    ],
+    "contact": {
+      "email": "jembick@uakron.edu",
+      "phone": "330-972-7080"
+    },
+    "url": "https://gozips.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a5f"
+    ]
+  },
+  {
     "id": "barlow",
     "schoolId": "princeton",
     "name": "Jim Barlow",
@@ -644,7 +695,7 @@
     "yearsHC": 29,
     "record": "29th season 2025. 237-184-72 career. 7 Ivy titles. First-ever Ivy double (title + tournament) 2025. Northeast Regional Staff of Year 2025.",
     "mlsPlayers": 2,
-    "rank": 13,
+    "rank": 14,
     "rankClass": "rk-strong",
     "overallScore": 87,
     "tacticalScore": 88,
@@ -698,7 +749,7 @@
     "yearsHC": 11,
     "record": "11th season 2025. 152-40-24 (first 10 seasons). 3 ACC titles (2016,2017,2024). 14 consecutive NCAA Tournaments.",
     "mlsPlayers": 4,
-    "rank": 14,
+    "rank": 15,
     "rankClass": "rk-strong",
     "overallScore": 86,
     "tacticalScore": 90,
@@ -752,7 +803,7 @@
     "yearsHC": 4,
     "record": "HC record 33-22-9 (.586) in 4 seasons (interim 2022, HC from Nov 2022). 2025 SSC Coaching Staff of Year.",
     "mlsPlayers": 0,
-    "rank": 15,
+    "rank": 16,
     "rankClass": "rk-strong",
     "overallScore": 86,
     "tacticalScore": 86,
@@ -812,7 +863,7 @@
     "yearsHC": 20,
     "record": "168-104-32 (.605) in first 16-season tenure. 9 conference championships. 2024 LSC Coach of Year.",
     "mlsPlayers": 0,
-    "rank": 16,
+    "rank": 17,
     "rankClass": "rk-strong",
     "overallScore": 85,
     "tacticalScore": 86,
@@ -854,7 +905,7 @@
     "yearsHC": 17,
     "record": "194-54-31 (.751) at Lynn. Career 498-150-55 across 4 schools. 3 NCAA D2 National Championships (2012, 2014, 2024).",
     "mlsPlayers": 0,
-    "rank": 17,
+    "rank": 18,
     "rankClass": "rk-strong",
     "overallScore": 84,
     "tacticalScore": 82,
@@ -887,6 +938,41 @@
     ]
   },
   {
+    "id": "franks",
+    "schoolId": "denver",
+    "name": "Jamie Franks",
+    "school": "University of Denver",
+    "div": "D1",
+    "conf": "WCC",
+    "rank": 19,
+    "rankClass": "rk-strong",
+    "overallScore": 84,
+    "devScore": 86,
+    "tacticalScore": 84,
+    "ptPathScore": 72,
+    "mlsPlayers": 4,
+    "yearsHC": 10,
+    "ausConnection": false,
+    "record": "5 consecutive Summit League titles (2021-2025), 15 straight NCAA Tournaments, 2024 College Cup (Final Four).",
+    "bio": "Jamie Franks is in his 10th season and has built Denver into the dominant Summit League program. Five consecutive conference titles, 15 straight NCAA Tournaments, and a College Cup Final Four appearance in 2024 \u2014 the best run in program history. Moving the program to the West Coast Conference in 2026 is a major step up in competition and national visibility. Known for developing technical midfielders (Cole Bassett to USMNT). One of the most underrated coaches in D1 soccer.",
+    "strengths": [
+      "5 consecutive conference titles",
+      "Moving to stronger WCC 2026",
+      "Technical midfielder development",
+      "Denver city campus lifestyle"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "soccer@du.edu",
+      "phone": "303-871-4618"
+    },
+    "url": "https://denverpioneers.com/sports/mens-soccer",
+    "color": [
+      "#fce7f3",
+      "#831843"
+    ]
+  },
+  {
     "id": "ivanovic",
     "schoolId": "barry",
     "name": "Petsa Ivanovic",
@@ -896,7 +982,7 @@
     "yearsHC": 4,
     "record": "31-18-8 in 3 seasons. 2023 SSC regular season + tournament double \u2014 first time in program history.",
     "mlsPlayers": 0,
-    "rank": 18,
+    "rank": 20,
     "rankClass": "rk-strong",
     "overallScore": 83,
     "tacticalScore": 84,
@@ -956,7 +1042,7 @@
     "yearsHC": 5,
     "record": "HC since 2020-21. 2024: 14-2-4, SAC Tournament champs, NAIA Tournament 2nd round.",
     "mlsPlayers": 0,
-    "rank": 19,
+    "rank": 21,
     "rankClass": "rk-strong",
     "overallScore": 82,
     "tacticalScore": 82,
@@ -1001,6 +1087,41 @@
     ]
   },
   {
+    "id": "shuttleworth",
+    "schoolId": "texas_am",
+    "name": "Bobby Shuttleworth",
+    "school": "Texas A&M University",
+    "div": "D1",
+    "conf": "SEC",
+    "rank": 22,
+    "rankClass": "rk-strong",
+    "overallScore": 82,
+    "devScore": 84,
+    "tacticalScore": 80,
+    "ptPathScore": 78,
+    "mlsPlayers": 3,
+    "yearsHC": 1,
+    "ausConnection": false,
+    "record": "Associate HC at FSU: 70-7-12 (.854) \u2014 2 NCAA titles (2023, 2025). 14-year MLS career.",
+    "bio": "Bobby Shuttleworth was appointed Texas A&M head coach December 2025, only the second head coach in program history. Spent 4 seasons at Florida State under Brian Pensky \u2014 helped win NCAA titles in 2023 and 2025, FSU had the highest winning percentage in the nation during that span (.854). Former MLS goalkeeper for 14 years (New England, Minnesota United, Chicago Fire, Atlanta United \u2014 232 appearances, ranked 13th all-time). Brings elite championship pedigree from the most dominant program of the last 4 years.",
+    "strengths": [
+      "Championship pedigree",
+      "Player development",
+      "Elite recruiting from FSU network",
+      "SEC environment"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "soccer@athletics.tamu.edu",
+      "phone": "979-845-2311"
+    },
+    "url": "https://12thman.com/sports/mens-soccer",
+    "color": [
+      "#fce7f3",
+      "#7c2d12"
+    ]
+  },
+  {
     "id": "masur",
     "schoolId": "stjohns",
     "name": "Dr Dave Masur",
@@ -1010,7 +1131,7 @@
     "yearsHC": 35,
     "record": "468-213-118 career (.660). 415-192-112 at SJU. 1996 NCAA champion. 2nd-winningest active D1 HC.",
     "mlsPlayers": 2,
-    "rank": 20,
+    "rank": 23,
     "rankClass": "rk-solid",
     "overallScore": 80,
     "tacticalScore": 80,
@@ -1043,6 +1164,41 @@
     ]
   },
   {
+    "id": "davies",
+    "schoolId": "gcu",
+    "name": "Jamie Davies",
+    "school": "Grand Canyon University",
+    "div": "D1",
+    "conf": "WAC",
+    "rank": 24,
+    "rankClass": "rk-strong",
+    "overallScore": 79,
+    "devScore": 80,
+    "tacticalScore": 82,
+    "ptPathScore": 72,
+    "mlsPlayers": 2,
+    "yearsHC": 3,
+    "ausConnection": false,
+    "record": "UNF: 2 consecutive ASUN titles, 2 NCAA Tournaments in 2 seasons from 3-win team",
+    "bio": "Jamie Davies was appointed GCU head coach December 18, 2025 after one of the most remarkable coaching turnarounds in college soccer. At North Florida (ASUN), he inherited a 3-win team ranked 203rd nationally and built them to ranked #46 nationally with two consecutive conference titles and NCAA Tournament appearances. Prior to UNF, spent 6 seasons as UCF Associate HC \u2014 three AAC regular season titles, four NCAA Tournaments. Style: high-intensity pressing, technically demanding. GCU Sweet 16 run in 2025 under Kiefer gives him a strong foundation to build on.",
+    "strengths": [
+      "Rapid program building",
+      "Technical development",
+      "Strong recruiting eye",
+      "Warm Phoenix campus"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "soccer@gcu.edu",
+      "phone": "602-639-7500"
+    },
+    "url": "https://gculopes.com/sports/mens-soccer",
+    "color": [
+      "#fef3c7",
+      "#92400e"
+    ]
+  },
+  {
     "id": "wiggans",
     "schoolId": "charleston",
     "name": "Keith Wiggans",
@@ -1052,7 +1208,7 @@
     "yearsHC": 6,
     "record": "27-31-18 overall, 10-19-8 CAA. 2024 best season: 10-6-2, ranked #23 nationally.",
     "mlsPlayers": 0,
-    "rank": 21,
+    "rank": 25,
     "rankClass": "rk-solid",
     "overallScore": 76,
     "tacticalScore": 76,
@@ -1097,7 +1253,7 @@
     "school": "University of Central Arkansas",
     "div": "D1",
     "conf": "ASUN",
-    "rank": 22,
+    "rank": 26,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
@@ -1154,7 +1310,7 @@
     "school": "Florida Atlantic University",
     "div": "D1",
     "conf": "American Athletic Conference (AAC)",
-    "rank": 23,
+    "rank": 27,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
@@ -1190,7 +1346,7 @@
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 24,
+    "rank": 28,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1246,7 +1402,7 @@
     "school": "Keiser University",
     "div": "NAIA",
     "conf": "Sun Conference",
-    "rank": 25,
+    "rank": 29,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1298,7 +1454,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 26,
+    "rank": 30,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "devScore": 65,

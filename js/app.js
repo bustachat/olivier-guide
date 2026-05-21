@@ -1694,9 +1694,19 @@ const MO_DIV_FACTOR = {D1:1.0, D2:1.15, NAIA:1.25, IVY:0.9, D3:1.1, JUCO:1.0};
 
 function calcMinutesScore(u, mode){
   const traj = (u.minutesOutlook||{}).trajectory || [];
-  if(traj.length < 4) return 0;
-  const [yr1,yr2,yr3,yr4] = traj.map(t=>t.pct);
-  const raw = yr1*0.35 + yr2*0.30 + yr3*0.20 + yr4*0.15;
+  if(traj.length === 0) return 0;
+  const pcts = traj.map(t=>t.pct);
+  let raw;
+  if(pcts.length >= 4){
+    // Standard 4-year program
+    raw = pcts[0]*0.35 + pcts[1]*0.30 + pcts[2]*0.20 + pcts[3]*0.15;
+  } else if(pcts.length === 2){
+    // JUCO 2-year program — weight Yr1 more heavily (transfer depends on Yr1)
+    raw = pcts[0]*0.60 + pcts[1]*0.40;
+  } else {
+    // 1 or 3 years — equal-weight average
+    raw = pcts.reduce((a,b)=>a+b,0) / pcts.length;
+  }
   const factor = mode==='adjusted' ? (MO_DIV_FACTOR[u.div]||1.0) : 1.0;
   return Math.min(95, Math.round(raw * factor));
 }

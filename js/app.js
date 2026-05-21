@@ -725,7 +725,7 @@ const SOCIAL = {
   iowa_western: ['https://instagram.com/reivermsoccer',     null,                               'https://facebook.com/ReiverSoccer',    null],
   uca:          ['https://instagram.com/ucamenssoccer',     'https://x.com/ucamenssoccer',      'https://facebook.com/ucamenssoccer',   'https://youtube.com/c/CentralArkansasAthletics'],
   uf:           [null,                                      null,                               null,                                   null],
-  clemson:      ['https://instagram.com/clemsonsoccer',      'https://x.com/ClemsonMSoccer',     'https://facebook.com/ClemsonMSoccer',  'https://youtube.com/clemsontigers'],
+  clemson:      ['https://instagram.com/clemsonsoccer',      'https://x.com/ClemsonMSoccer',     'https://www.facebook.com/ClemsonMensSoccer',  'https://youtube.com/clemsontigers'],
   georgetown:   ['https://instagram.com/georgetownmsoc',     'https://x.com/GUHoyasMSoc',        null,                                   'https://youtube.com/guhoyas'],
   notredame:    ['https://instagram.com/ndmsoccer',          'https://x.com/NDMenSoccer',         null,                                   'https://youtube.com/fightingirish'],
   maryland:     ['https://instagram.com/umterpsmsoc',        'https://x.com/UMTerpsMSOC',         'https://facebook.com/TerrapinsMSoccer','https://youtube.com/umterps'],

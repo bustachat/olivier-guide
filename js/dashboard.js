@@ -497,51 +497,53 @@ function drawMapBase() {
   const svg = document.getElementById('dash-map-svg');
   if (!svg) return;
   svg.innerHTML = '';
+  const ns = 'http://www.w3.org/2000/svg';
 
-  const states = [
-    'M 72,78 L 72,148 L 100,148 L 100,110 L 120,110 L 120,78 Z',
-    'M 120,78 L 120,148 L 160,148 L 160,78 Z',
-    'M 160,78 L 160,148 L 200,148 L 200,78 Z',
-    'M 200,78 L 200,148 L 240,148 L 240,78 Z',
-    'M 240,78 L 240,148 L 280,148 L 280,78 Z',
-    'M 280,78 L 280,148 L 320,148 L 320,78 Z',
-    'M 320,78 L 320,148 L 360,148 L 360,78 Z',
-    'M 360,78 L 360,148 L 400,148 L 400,78 Z',
-    'M 400,78 L 400,148 L 440,148 L 440,78 Z',
-    'M 72,148 L 72,220 L 440,220 L 440,148 Z',
-    'M 72,220 L 72,280 L 440,280 L 440,220 Z',
-  ];
+  // Background
+  const bg = document.createElementNS(ns,'rect');
+  bg.setAttribute('width','500');bg.setAttribute('height','300');bg.setAttribute('fill','#eef2f7');
+  svg.appendChild(bg);
 
-  states.forEach(d => {
-    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
-    path.setAttribute('d', d);
-    path.setAttribute('fill', '#dde6ef');
-    path.setAttribute('stroke', '#c5d4e2');
-    path.setAttribute('stroke-width', '0.5');
-    svg.appendChild(path);
-  });
+  // Continental US land mass
+  const land = document.createElementNS(ns,'path');
+  land.setAttribute('fill','#dce4ee');
+  land.setAttribute('stroke','#c5d0dc');
+  land.setAttribute('stroke-width','0.8');
+  land.setAttribute('d',
+    'M52,58 L100,52 L160,46 L220,42 L278,42 L278,58 ' +
+    'L440,72 L440,260 L415,272 L390,280 L360,282 ' +
+    'L330,278 L305,268 L302,248 L280,248 L280,230 ' +
+    'L262,234 L240,238 L218,234 L200,224 L192,212 ' +
+    'L190,200 L186,210 L178,220 L165,228 L148,230 ' +
+    'L130,226 L114,216 L100,202 L88,186 L80,170 ' +
+    'L78,155 L52,155 Z'
+  );
+  svg.appendChild(land);
 
-  // Simple state abbreviations
-  [['CA',75,100],['NV',108,105],['ID',140,90],['MT',170,85],['WY',200,95],
-   ['CO',230,105],['NM',235,155],['TX',255,185],['OK',290,160],['KS',310,130],
-   ['NE',325,110],['SD',340,95],['ND',350,82],['MN',380,88],['WI',400,100],
-   ['MI',415,95],['IL',400,118],['IN',415,115],['OH',430,108],['PA',445,105],
-   ['NY',455,95],['FL',420,240],['GA',420,200],['SC',435,185],['NC',440,175],
-   ['VA',445,162],['MD',450,155]
-  ].forEach(([text, x, y]) => {
-    const t = document.createElementNS('http://www.w3.org/2000/svg','text');
-    t.setAttribute('x', x); t.setAttribute('y', y);
-    t.setAttribute('text-anchor','middle');
-    t.setAttribute('font-size','6'); t.setAttribute('fill','#9ca3af');
-    t.textContent = text;
-    svg.appendChild(t);
-  });
+  // Florida peninsula
+  const fl = document.createElementNS(ns,'path');
+  fl.setAttribute('fill','#dce4ee');fl.setAttribute('stroke','#c5d0dc');fl.setAttribute('stroke-width','0.8');
+  fl.setAttribute('d','M330,222 L360,218 L380,220 L390,230 L392,245 L385,258 L372,268 L355,272 L340,268 L330,255 L326,240 Z');
+  svg.appendChild(fl);
 
-  const hil = document.createElementNS('http://www.w3.org/2000/svg','text');
-  hil.setAttribute('x',80); hil.setAttribute('y',260);
-  hil.setAttribute('text-anchor','middle');
-  hil.setAttribute('font-size','7'); hil.setAttribute('fill','#9ca3af');
-  hil.textContent = 'HI';
+  // AK inset
+  const ak = document.createElementNS(ns,'rect');
+  ak.setAttribute('x','52');ak.setAttribute('y','255');ak.setAttribute('width','52');ak.setAttribute('height','38');
+  ak.setAttribute('rx','3');ak.setAttribute('fill','#dce4ee');ak.setAttribute('stroke','#c5d0dc');ak.setAttribute('stroke-width','0.8');
+  svg.appendChild(ak);
+  const akl = document.createElementNS(ns,'text');
+  akl.setAttribute('x','78');akl.setAttribute('y','278');akl.setAttribute('text-anchor','middle');
+  akl.setAttribute('font-size','7');akl.setAttribute('fill','#9ca3af');akl.textContent='AK';
+  svg.appendChild(akl);
+
+  // HI inset
+  const hi = document.createElementNS(ns,'rect');
+  hi.setAttribute('x','112');hi.setAttribute('y','255');hi.setAttribute('width','42');hi.setAttribute('height','38');
+  hi.setAttribute('rx','3');hi.setAttribute('fill','#dce4ee');hi.setAttribute('stroke','#c5d0dc');hi.setAttribute('stroke-width','0.8');
+  svg.appendChild(hi);
+  const hil = document.createElementNS(ns,'text');
+  hil.setAttribute('x','133');hil.setAttribute('y','278');hil.setAttribute('text-anchor','middle');
+  hil.setAttribute('font-size','7');hil.setAttribute('fill','#9ca3af');hil.textContent='HI';
   svg.appendChild(hil);
 }
 

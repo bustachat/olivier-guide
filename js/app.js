@@ -648,6 +648,11 @@ const DOMAINS = {
   maryland:     'umterps.com',
   unc:          'goheels.com',
   fau:          'fausports.com',
+  gcu:          'lopes.com',
+  texas_am:     'aggieathletics.com',
+  akron:        'gozips.com',
+  denver:       'denverpioneers.com',
+  vermont:      'uvmathletics.com',
 };
 
 const SITE_URLS = {
@@ -684,6 +689,11 @@ const SITE_URLS = {
   maryland:     'https://www.umd.edu',
   unc:          'https://www.unc.edu',
   fau:          'https://www.fau.edu',
+  gcu:          'https://www.gcu.edu',
+  texas_am:     'https://www.tamu.edu',
+  akron:        'https://www.uakron.edu',
+  denver:       'https://www.du.edu',
+  vermont:      'https://www.uvm.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -732,6 +742,11 @@ const SOCIAL = {
   maryland:     ['https://instagram.com/umterpsmsoc',        'https://x.com/UMTerpsMSOC',         'https://facebook.com/TerrapinsMSoccer','https://youtube.com/umterps'],
   unc:          ['https://instagram.com/uncmsoccer',         'https://x.com/UNCMensSoccer',       null,                                   'https://youtube.com/tarheels'],
   fau:          ['https://instagram.com/faumsoccer',         'https://x.com/FAUMSoccer',          null,                                   'https://youtube.com/fauowls'],
+  gcu:          ['https://instagram.com/gculopesmsoccer',    'https://x.com/GCULopesSOC',         'https://facebook.com/GCULopes',        'https://youtube.com/gcuathletics'],
+  texas_am:     ['https://instagram.com/tamumsoccer',        'https://x.com/TAMUSoccer',          'https://facebook.com/TAMUSoccer',      'https://youtube.com/aggievision'],
+  akron:        ['https://instagram.com/akronzipsmsoc',      'https://x.com/AkronMSOC',           'https://facebook.com/AkronZipsMSOC',   'https://youtube.com/gozipsathletics'],
+  denver:       ['https://instagram.com/dumenssoccer',       'https://x.com/DUMensSoccer',        'https://facebook.com/DUPioneerSoccer', 'https://youtube.com/denverpioneers'],
+  vermont:      ['https://instagram.com/uvmmenssoccer',      'https://x.com/UVMMensSoccer',       null,                                   'https://youtube.com/uvmathletics'],
 };
 
 

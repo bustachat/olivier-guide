@@ -553,7 +553,9 @@ function updateMapDots() {
   if (!wrap || !svg) return;
 
   const svgW = 500, svgH = 300;
-  wrap.style.height = (wrap.offsetWidth * (svgH/svgW)) + 'px';
+  const measuredW = wrap.offsetWidth || wrap.parentElement?.offsetWidth || 0;
+  if (measuredW === 0) { observeMapResize(); return; }
+  wrap.style.height = (measuredW * (svgH/svgW)) + 'px';
 
   const tip = document.getElementById('dash-map-tip');
   const shortlistIds = new Set(dashAthlete.shortlist || []);
@@ -587,6 +589,20 @@ function updateMapDots() {
     dot.addEventListener('mouseleave', () => tip.style.display = 'none');
     wrap.appendChild(dot);
   });
+}
+
+// Re-draw the map once its container gains a real width (handles the
+// case where the dashboard renders while hidden / before layout settles,
+// and re-fires on resize). Registered lazily; only one observer is kept.
+let _mapResizeObserver = null;
+function observeMapResize() {
+  if (_mapResizeObserver) return;
+  const wrap = document.getElementById('dash-map-wrap');
+  if (!wrap || typeof ResizeObserver === 'undefined') return;
+  _mapResizeObserver = new ResizeObserver(() => {
+    if (wrap.offsetWidth > 0) updateMapDots();
+  });
+  _mapResizeObserver.observe(wrap);
 }
 
 // ─── 6. Cost brackets ─────────────────────────────────────────────────────────

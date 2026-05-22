@@ -113,6 +113,7 @@ function initApp() {
   renderComparePage();
   renderConferences();
   renderCoachCards();
+  renderCoachTable();
   renderFinSchoolSelector();
   renderFinComparisonBars();
   renderMinutesOutlook();
@@ -1418,6 +1419,28 @@ function renderCoachCards(){
   const container=document.getElementById('coach-cards-container');
   container.innerHTML='';
   [...coachData].sort((a,b)=>a.rank-b.rank).forEach(c=>{container.appendChild(buildCoachCard(c));});
+}
+
+function renderCoachTable(){
+  try{
+    const tb=document.getElementById('coach-rank-tbody');
+    if(!tb || typeof coachData==='undefined') return;
+    tb.innerHTML=[...coachData].sort((a,b)=>(a.rank||999)-(b.rank||999)).map(c=>{
+      const rc=c.rankClass||'rk-solid';
+      const years=(c.yearsHC&&c.yearsHC>0)?c.yearsHC+' yrs':'New 2026';
+      const mls=(typeof c.mlsPlayers==='number')?c.mlsPlayers+' MLS':'—';
+      const strengths=Array.isArray(c.strengths)?c.strengths.join(' · '):'';
+      const divCell=`<span class="dbadge d-${c.div}">${c.div}</span> ${c.conf||''}`;
+      return `<tr><td><span class="rk-num ${rc}">${c.rank}</span></td>`+
+        `<td><strong>${c.name}</strong></td>`+
+        `<td>${c.school}</td>`+
+        `<td>${divCell}</td>`+
+        `<td>${years}</td>`+
+        `<td>${c.record||'—'}</td>`+
+        `<td>${mls}</td>`+
+        `<td>${strengths||'—'}</td></tr>`;
+    }).join('');
+  }catch(e){ console.error('renderCoachTable failed:',e); }
 }
 
 function filterCoaches(type,btn){

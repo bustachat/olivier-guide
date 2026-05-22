@@ -112,10 +112,10 @@ function buildDashboardShell() {
           <span class="dash-sp-big" id="dash-bud-val">$${initBud}k</span>
         </div>
       </div>
-      <input type="range" class="dash-range" min="20" max="90" step="5"
+<input type="range" class="dash-range" min="20" max="100" step="5"
         value="${initBud}" id="dash-bud-slider">
       <div class="dash-ticks">
-        <span>$20k</span><span>$40k</span><span>$60k</span><span>$90k</span>
+        <span>$20k</span><span>$50k</span><span>$75k</span><span>$100k</span>
       </div>
       <div class="dash-sp-result" id="dash-bud-result">— schools within budget</div>
     </div>

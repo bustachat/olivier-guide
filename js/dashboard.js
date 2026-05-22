@@ -430,7 +430,7 @@ function updateShortlist() {
       ${warn}
       <div class="dash-sl-btns">
         <button class="dash-sl-btn primary" onclick="openDetail('${u.id}')">Details</button>
-        <button class="dash-sl-btn" onclick="addToCompare('${u.id}')">Compare</button>
+<button class="dash-sl-btn" onclick="toggleCompare('${u.id}',this)">Compare</button>
         <button class="dash-sl-btn" onclick="window.location.href='mailto:${u.coach?.email||''}'">Email</button>
       </div>
     </div>`;

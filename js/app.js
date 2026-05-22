@@ -138,50 +138,18 @@ const LENSES = [
 ];
 let currentLens = 'overall';
 
-function lensRank(lensKey){
-  // Full-profile schools only — listed schools have unverified lensScores
-  return [...unis].filter(u=>u.profileDepth==='full').sort((a,b)=>{
-    const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
-    const sb = (b.lensScores && b.lensScores[lensKey]) || 0;
-    if(sb !== sa) return sb - sa;
-    const fa = a.fitOlivier || 0;
-    const fb = b.fitOlivier || 0;
-    return fb - fa;
-  }).map(u=>u.id);
-}
-
-// v15: per-division ranking - returns {divKey: [topId1, topId2, topId3], ...}
-const DIVISIONS_ORDER = ['D1','IVY','D2','NAIA','D3','JUCO'];
 function lensRankByDivision(lensKey){
+  const divKeys = [...new Set(unis.map(u=>u.div).filter(Boolean))];
   const out = {};
-  DIVISIONS_ORDER.forEach(div=>{
-    // Full-profile schools only — listed schools have unverified lensScores
-    const inDiv = unis.filter(u=>u.div===div && u.profileDepth==='full');
-    if(inDiv.length===0) return;
-    const sorted = inDiv.sort((a,b)=>{
-      const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
-      const sb = (b.lensScores && b.lensScores[lensKey]) || 0;
-      if(sb !== sa) return sb - sa;
-      return (b.fitOlivier || 0) - (a.fitOlivier || 0);
-    });
-    out[div] = sorted.slice(0, Math.min(3, sorted.length));
-  });
-  return out;
-}
-
-function lensRankByConference(lensKey){
-  const confKeys = [...new Set(unis.map(u=>u.confKey).filter(Boolean))];
-  const out = {};
-  confKeys.forEach(ck=>{
-    // Full-profile schools only — listed schools have unverified lensScores
-    const inConf = unis.filter(u=>u.confKey===ck && u.profileDepth==='full');
-    if(!inConf.length) return;
-    const sorted = [...inConf].sort((a,b)=>{
-      const sa = (a.lensScores?.[lensKey])||0;
-      const sb = (b.lensScores?.[lensKey])||0;
-      return sb - sa;
-    });
-    out[ck] = sorted.slice(0,3);
+  divKeys.forEach(dk=>{
+    const sorted = unis
+      .filter(u=>u.div===dk && u.profileDepth==='full')
+      .sort((a,b)=>{
+        const sa = (a.lensScores?.[lensKey])||0;
+        const sb = (b.lensScores?.[lensKey])||0;
+        return sb - sa;
+      });
+    out[dk] = sorted.slice(0,3);
   });
   return out;
 }
@@ -238,22 +206,18 @@ function currentLensExplainer(){
 
 function applyLens(lensKey){
   currentLens = lensKey;
-  // Update active pill
   document.querySelectorAll('.lens-pill').forEach(b=>{
     b.classList.toggle('active', b.dataset.lens===lensKey);
   });
-  // Update explainer
   const exp = document.getElementById('lens-explainer');
   if(exp) exp.innerHTML = currentLensExplainer();
-  
-  // Per-division ranking — get top 3 IDs per division
+
   const byDiv = lensRankByDivision(lensKey);
   const top3IdsByDiv = {};
   Object.keys(byDiv).forEach(div=>{
     top3IdsByDiv[div] = byDiv[div].map(u=>u.id);
   });
-  
-  // Re-rank cards within each grid section (each section is one division)
+
   document.querySelectorAll('.cards-grid').forEach(grid=>{
     const cards = [...grid.children];
     cards.sort((a,b)=>{
@@ -266,8 +230,7 @@ function applyLens(lensKey){
     });
     cards.forEach(c=>grid.appendChild(c));
   });
-  
-  // Highlight top 3 within each division
+
   document.querySelectorAll('.ucard').forEach(card=>{
     const id = card.id.replace('card-','');
     card.classList.remove('lens-top1','lens-top2','lens-top3');
@@ -275,13 +238,11 @@ function applyLens(lensKey){
     if(!u) return;
     const divTops = top3IdsByDiv[u.div] || [];
     const pos = divTops.indexOf(id);
-    // Mark #1 per division for the filter
     card.dataset.lensdivtop = (pos===0) ? 'true' : 'false';
     if(pos >= 0){
       if(pos===0) card.classList.add('lens-top1');
       else if(pos===1) card.classList.add('lens-top2');
       else if(pos===2) card.classList.add('lens-top3');
-      // Add lens badge
       let badge = card.querySelector('.lens-badge');
       if(!badge){
         badge = document.createElement('div');
@@ -290,7 +251,6 @@ function applyLens(lensKey){
       }
       const lensLabel = LENSES.find(L=>L.key===lensKey).label;
       const warn = u.noVarsity ? ' ⚠' : '';
-      // Never badge listed schools — their scores are unverified
       if(u.profileDepth === 'listed'){
         card.classList.remove('lens-top1','lens-top2','lens-top3');
         card.dataset.lensdivtop = 'false';
@@ -312,7 +272,6 @@ function sc(s){return s>=90?'#059669':s>=80?'#d97706':'#e11d48';}
 function chipLabel(pos){
   if(!pos) return '—';
   const p = pos.toLowerCase();
-  // Champions / titles
   if(p.includes('champ') && !p.includes('runner')) return 'Champs';
   if(p.includes('1st')) return '1st';
   if(p.includes('2nd')) return '2nd';
@@ -329,7 +288,6 @@ function chipLabel(pos){
   if(p.includes('mid')) return 'Mid';
   if(p.includes('lower')) return 'Lower';
   if(p.includes('contend')) return 'Cont.';
-  // Fallback: first two words max 10 chars
   const words = pos.split(' ');
   const short = words.slice(0,2).join(' ');
   return short.length > 10 ? words[0] : short;
@@ -345,73 +303,6 @@ function posColor(pos){
 function alignColor(n){return n>=14?'var(--emerald)':n>=10?'var(--sky)':'var(--amber)';}
 function alignLabel(n){return n>=14?'Full align':n>=10?'Strong align':'Partial align';}
 
-function renderCards(){
-  const container=document.getElementById('cards-container');
-  container.innerHTML='';
-  renderLensControls();
-
-  // Group by conference key — prevents the 71-card D1 wall
-  const CONF_SECTIONS=[
-    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'Elite D1 soccer — strongest conference in the guide. 6 fully-profiled schools: Virginia (7 NCAA titles), Wake Forest (2024 ACC Tourn champs), SMU (2025 ACC Tournament Champions — first ever), Clemson (2× recent NCAA champions, nation-leading 4 first-round picks in 2026 draft), Notre Dame (27 MLS picks), UNC (ACC Regular Season champs 2023). Stanford and Duke among 14 listed programs.'},
-    {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'Most prolific MLS-producing conference all-time. UCLA on the West Coast, Indiana in the Midwest (8 NCAA titles), Maryland (most MLS picks of any program ever — 49 + 7 homegrown under Cirovski). Penn State, Michigan, USC all elite listed programs.'},
-    {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference. St. John\'s and Georgetown both fully profiled. Georgetown are 2019 national champions under Wiese — 42 MLS signings, D.C. United + NYCFC pipeline. Creighton and UConn are perennial top-10 programs. Strong clinical network in major cities.'},
-    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'FIU and USF both fully profiled in the AAC. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Navy and Army offer full federal scholarships (zero cost).'},
-    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1. UCSB fully profiled — Manu Duah went #1 overall in 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine all competitive. Pacific lifestyle matches Sydney.'},
-    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston fully profiled with Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern round out a competitive conference.'},
-    {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major D1 spanning the South and Southeast. UCA (Conway, AR) is fully profiled — best D1 central midfielder opening in the guide with 6 of 9 MFs clearing before Olivier arrives. Strong Kinesiology program with UAMS clinical network. Most affordable D1 in the guide at ~$28k/yr.'},
-    {key:'sec',      label:'SEC — Southeastern Conference',       tier:'Power 4 · D1', intro:'Elite D1 conference. Texas A&M fully profiled — Bobby Shuttleworth (2× national champion assistant at FSU) appointed December 2025. Largest kinesiology department in the guide (~3,000 undergrads). College Station is a college town not a major city — warm climate, elite facilities, SEC prestige.'},
-    {key:'mac',      label:'MAC — Mid-American Conference',       tier:'Mid-Major · D1', intro:'Akron is the hidden gem of this guide — top-20 MLS pipeline, explicit Pre-PT concentration, Cleveland Clinic clinical network, and coach Jared Embick contracted through 2035. Cold Ohio winters are the main lifestyle drawback. Best PT pathway + soccer value in D1.'},
-    {key:'wac',      label:'WAC — Western Athletic Conference',   tier:'Mid-Major · D1', intro:'GCU (Phoenix, AZ) fully profiled — Jamie Davies appointed December 2025. Warm major city campus, Kinesiology with Banner Health clinical network. 2025 WAC champions and NCAA Sweet 16. Best warm D1 city campus outside Florida and California.'},
-    {key:'wcc',      label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Denver (University of Denver) fully profiled — 5 consecutive Summit League titles 2021-2025, College Cup 2024, moving to WCC in 2026. Kinesiology launched 2023. Denver city is excellent — outdoor lifestyle, 300 days sunshine, Colorado Rapids MLS. Cold winters the main drawback.'},
-    {key:'america-east', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Vermont (Burlington, VT) listed — 2024 NCAA National Champions. New coach Adrian Dubois in 2026. Burlington is cold — not a lifestyle match for Olivier. Listed for pipeline reference.'},
-    {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships — need-based aid only. Princeton won the 2024 and 2025 Ivy League Tournaments back-to-back under Jim Barlow. Yale won 2023. Both require 3.9+ GPA. Kinesiology degrees are not available but Ivy credentials carry enormous DPT school credibility. Only viable if GPA climbs to 3.5+.'},
-    {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
-    {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
-    {key:'other', divFilter:'D3JUCO',  label:'D3 · JUCO',               tier:'D3 / JUCO',     intro:'Chapman (D3, Orange CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 PT pathway. Santa Monica College is the best JUCO entry point in the guide ($9k/yr) with a proven transfer pipeline to UCLA and UCSB. Miami Dade College transfers link well to Barry and FIU.'},
-  ];
-
-  // Also include Ivy League under acc or as standalone — they are in other.json
-  CONF_SECTIONS.forEach(sec=>{
-    let secUnis;
-    if(sec.key==='other' && sec.divFilter){
-      if(sec.divFilter==='IVY')     secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='IVY');
-      else if(sec.divFilter==='D2') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D2');
-      else if(sec.divFilter==='NAIA') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='NAIA');
-      else if(sec.divFilter==='D3JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&(u.div==='D3'||u.div==='JUCO'));
-      else secUnis=unis.filter(u=>u.confKey===sec.key);
-    } else {
-      secUnis=unis.filter(u=>(u.confKey||'other')===sec.key);
-    }
-    if(!secUnis.length) return;
-    const fullCount=secUnis.filter(u=>u.profileDepth==='full').length;
-    const listedCount=secUnis.filter(u=>u.profileDepth==='listed').length;
-    const countNote=listedCount>0?` <span style="font-size:10px;color:var(--hint);font-weight:500">${fullCount} full profile · ${listedCount} listed</span>`:'';
-    const el=document.createElement('div');
-    el.className='conf-section div-collapsed';
-    el.dataset.div=secUnis[0]?.div||'D1';
-    el.dataset.confkey=sec.key;
-    el.innerHTML=
-      `<div class="section-head">` +
-        `<h2>${sec.label}${countNote}</h2>` +
-        `<span class="dbadge d-${secUnis[0]?.div||'D1'}" style="font-size:9px">${sec.tier}</span>` +
-        `<button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Show/hide this conference">Show</button>` +
-      `</div>` +
-      `<div class="section-intro">${sec.intro}</div>` +
-      `<div class="cards-grid" id="grid-${sec.key}"></div>`;
-    container.appendChild(el);
-    const grid=el.querySelector(`#grid-${sec.key}`);
-    secUnis.forEach(u=>grid.appendChild(buildCard(u)));
-  });
-
-  // Update the filter summary count now that all cards are rendered
-  const totalCards = document.querySelectorAll('#cards-container .ucard').length;
-  const summaryEl = document.getElementById('filter-active-summary');
-  if(summaryEl) summaryEl.innerHTML = 'Showing all <strong>'+totalCards+'</strong> schools';
-}
-
-// ── School emblem logo helper ────────────────────────────────────────────────
-// Tries Clearbit (high-res PNG) first, falls back to Google favicon (64px),
-// then falls back to the coloured text abbreviation if both fail.
 function logoUrl(u, size){
   if(!u.domain) return null;
   return 'https://logo.clearbit.com/' + u.domain;
@@ -433,7 +324,6 @@ function buildEmblemHtml(u, sizeClass){
       'onerror="this.src=\''+faviconUrl(u)+'\';this.onerror=function(){var p=this.parentNode;p.innerHTML=\'<div class=\\\'card-av2\\\' style=\\\'background:\'+this.parentNode.dataset.bg+\';color:\'+this.parentNode.dataset.fg+\'\\\'>\'+this.parentNode.dataset.abbr+\'</div>\';}">'+
   '</div>';
 }
-
 
 function buildCard(u){
   const el=document.createElement('div');
@@ -461,7 +351,6 @@ function buildCard(u){
     : Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
   const ivyWarn=u.div==='IVY'?'<div class="ivy-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ Ivy: No athletic scholarships. Need-based only. GPA 2.8 likely insufficient.</div>':'';
 
-  // GPA compact row
   let gpaHtml='';
   if(u.gpa){
     const statusColor=u.gpa.status==='eligible'?'var(--emerald)':u.gpa.status==='borderline'?'var(--amber)':'var(--rose)';
@@ -542,6 +431,67 @@ function buildCard(u){
   return el;
 }
 
+function renderCards(){
+  const container=document.getElementById('cards-container');
+  container.innerHTML='';
+  renderLensControls();
+
+  const CONF_SECTIONS=[
+    {key:'acc',          label:'ACC — Atlantic Coast Conference',              tier:'Power 4 · D1',    intro:'Elite D1 soccer — strongest conference in the guide. 6 fully-profiled schools: Virginia (7 NCAA titles), Wake Forest (2024 ACC Tourn champs), SMU (2025 ACC Tournament Champions — first ever), Clemson (2× recent NCAA champions, nation-leading 4 first-round picks in 2026 draft), Notre Dame (27 MLS picks), UNC (ACC Regular Season champs 2023). Stanford and Duke among 14 listed programs.'},
+    {key:'big-ten',      label:'Big Ten Conference',                           tier:'Power 4 · D1',    intro:'Most prolific MLS-producing conference all-time. UCLA on the West Coast, Indiana in the Midwest (8 NCAA titles), Maryland (most MLS picks of any program ever — 49 + 7 homegrown under Cirovski). Penn State, Michigan, USC all elite listed programs.'},
+    {key:'big-east',     label:'Big East Conference',                          tier:'Major · D1',      intro:'NYC-dominated conference. St. John\'s and Georgetown both fully profiled. Georgetown are 2019 national champions under Wiese — 42 MLS signings, D.C. United + NYCFC pipeline. Creighton and UConn are perennial top-10 programs. Strong clinical network in major cities.'},
+    {key:'aac',          label:'AAC — American Athletic Conference',           tier:'High Major · D1', intro:'FIU and USF both fully profiled in the AAC. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Navy and Army offer full federal scholarships (zero cost).'},
+    {key:'big-west',     label:'Big West Conference',                          tier:'High Major · D1', intro:'West Coast D1. UCSB fully profiled — Manu Duah went #1 overall in 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine all competitive. Pacific lifestyle matches Sydney.'},
+    {key:'caa',          label:'CAA — Colonial Athletic Association',          tier:'Mid-Major · D1',  intro:'Mid-major D1. College of Charleston fully profiled with Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern round out a competitive conference.'},
+    {key:'asun',         label:'ASUN Conference',                              tier:'Mid-Major · D1',  intro:'Mid-major D1 spanning the South and Southeast. UCA (Conway, AR) is fully profiled — best D1 central midfielder opening in the guide with 6 of 9 MFs clearing before Olivier arrives. Strong Kinesiology program with UAMS clinical network. Most affordable D1 in the guide at ~$28k/yr.'},
+    {key:'sec',          label:'SEC — Southeastern Conference',                tier:'Power 4 · D1',    intro:'Elite D1 conference. Texas A&M fully profiled — Bobby Shuttleworth (2× national champion assistant at FSU) appointed December 2025. Largest kinesiology department in the guide (~3,000 undergrads). College Station is a college town not a major city — warm climate, elite facilities, SEC prestige.'},
+    {key:'mac',          label:'MAC — Mid-American Conference',                tier:'Mid-Major · D1',  intro:'Akron is the hidden gem of this guide — top-20 MLS pipeline, explicit Pre-PT concentration, Cleveland Clinic clinical network, and coach Jared Embick contracted through 2035. Cold Ohio winters are the main lifestyle drawback. Best PT pathway + soccer value in D1.'},
+    {key:'wac',          label:'WAC — Western Athletic Conference',            tier:'Mid-Major · D1',  intro:'GCU (Phoenix, AZ) fully profiled — Jamie Davies appointed December 2025. Warm major city campus, Kinesiology with Banner Health clinical network. 2025 WAC champions and NCAA Sweet 16. Best warm D1 city campus outside Florida and California.'},
+    {key:'wcc',          label:'WCC — West Coast Conference',                  tier:'Mid-Major · D1',  intro:'Denver (University of Denver) fully profiled — 5 consecutive Summit League titles 2021-2025, College Cup 2024, moving to WCC in 2026. Kinesiology launched 2023. Denver city is excellent — outdoor lifestyle, 300 days sunshine, Colorado Rapids MLS. Cold winters the main drawback.'},
+    {key:'america-east', label:'America East Conference',                      tier:'Mid-Major · D1',  intro:'Vermont (Burlington, VT) listed — 2024 NCAA National Champions. New coach Adrian Dubois in 2026. Burlington is cold — not a lifestyle match for Olivier. Listed for pipeline reference.'},
+    {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships — need-based aid only. Princeton won the 2024 and 2025 Ivy League Tournaments back-to-back under Jim Barlow. Yale won 2023.'},
+    {key:'other', divFilter:'D2',      label:'Division II Programs',    tier:'D2',            intro:'South Florida D2 cluster: PBA (ranked #2 nationally 2025), Lynn (2024 D2 National Champions — undefeated), Barry (4 all-time D2 titles), Nova SE (FT Lauderdale, health sciences campus). St Edward\'s in Austin TX. Cal State LA in LA.'},
+    {key:'other', divFilter:'NAIA',    label:'NAIA Programs',           tier:'NAIA',          intro:'Oklahoma City University has Australian player connections under Billy Martin. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
+    {key:'other', divFilter:'D3JUCO',  label:'D3 · JUCO',              tier:'D3 / JUCO',     intro:'Chapman (D3, Orange CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 PT pathway. Santa Monica College is the best JUCO entry point in the guide ($9k/yr) with a proven transfer pipeline to UCLA and UCSB. Miami Dade College transfers link well to Barry and FIU.'},
+  ];
+
+  CONF_SECTIONS.forEach(sec=>{
+    let secUnis;
+    if(sec.key==='other' && sec.divFilter){
+      if(sec.divFilter==='IVY')     secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='IVY');
+      else if(sec.divFilter==='D2') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D2');
+      else if(sec.divFilter==='NAIA') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='NAIA');
+      else if(sec.divFilter==='D3JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&(u.div==='D3'||u.div==='JUCO'));
+      else secUnis=unis.filter(u=>u.confKey===sec.key);
+    } else {
+      secUnis=unis.filter(u=>(u.confKey||'other')===sec.key);
+    }
+    if(!secUnis.length) return;
+    const fullCount=secUnis.filter(u=>u.profileDepth==='full').length;
+    const listedCount=secUnis.filter(u=>u.profileDepth==='listed').length;
+    const countNote=listedCount>0?` <span style="font-size:10px;color:var(--hint);font-weight:500">${fullCount} full profile · ${listedCount} listed</span>`:'';
+    const el=document.createElement('div');
+    el.className='conf-section div-collapsed';
+    el.dataset.div=secUnis[0]?.div||'D1';
+    el.dataset.confkey=sec.key;
+    el.innerHTML=
+      `<div class="section-head">` +
+        `<h2>${sec.label}${countNote}</h2>` +
+        `<span class="dbadge d-${secUnis[0]?.div||'D1'}" style="font-size:9px">${sec.tier}</span>` +
+        `<button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Show/hide this conference">Show</button>` +
+      `</div>` +
+      `<div class="section-intro">${sec.intro}</div>` +
+      `<div class="cards-grid" id="grid-${sec.key}"></div>`;
+    container.appendChild(el);
+    const grid=el.querySelector(`#grid-${sec.key}`);
+    secUnis.forEach(u=>grid.appendChild(buildCard(u)));
+  });
+
+  const totalCards = document.querySelectorAll('#cards-container .ucard').length;
+  const summaryEl = document.getElementById('filter-active-summary');
+  if(summaryEl) summaryEl.innerHTML = 'Showing all <strong>'+totalCards+'</strong> schools';
+}
+
 function toggleCompare(id,btn){
   if(selectedIds.has(id)){selectedIds.delete(id);btn.textContent='+ Compare';btn.classList.remove('selected');}
   else{if(selectedIds.size>=4){alert('Max 4 schools. Remove one first.');return;}selectedIds.add(id);btn.textContent='✓ In Compare';btn.classList.add('selected');}
@@ -598,7 +548,6 @@ function removeCompare(id){
 
 // ═══ Roster URL helper ═══════════════════════════════════════════════════════
 function rosterUrl(u){
-  // A few schools need custom roster paths
   const overrides = {
     lynn:       'https://lynnfightingknights.com/sports/mens-soccer/roster',
     csula:      'https://calstatela.edu/athletics/mens-soccer/roster',
@@ -609,8 +558,6 @@ function rosterUrl(u){
   if(overrides[u.id]) return overrides[u.id];
   return u.url.replace(/\/$/, '') + '/roster';
 }
-
-
 
 // ═══ School domains (for favicon + university site link) ═══════════════════
 const DOMAINS = {
@@ -647,6 +594,11 @@ const DOMAINS = {
   maryland:     'umterps.com',
   unc:          'goheels.com',
   fau:          'fausports.com',
+  gcu:          'lopes.com',
+  texas_am:     'aggieathletics.com',
+  akron:        'gozips.com',
+  denver:       'denverpioneers.com',
+  vermont:      'uvmathletics.com',
 };
 
 const SITE_URLS = {
@@ -683,6 +635,11 @@ const SITE_URLS = {
   maryland:     'https://www.umd.edu',
   unc:          'https://www.unc.edu',
   fau:          'https://www.fau.edu',
+  gcu:          'https://www.gcu.edu',
+  texas_am:     'https://www.tamu.edu',
+  akron:        'https://www.uakron.edu',
+  denver:       'https://www.du.edu',
+  vermont:      'https://www.uvm.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -725,17 +682,21 @@ const SOCIAL = {
   iowa_western: ['https://instagram.com/reivermsoccer',     null,                               'https://facebook.com/ReiverSoccer',    null],
   uca:          ['https://instagram.com/ucamenssoccer',     'https://x.com/ucamenssoccer',      'https://facebook.com/ucamenssoccer',   'https://youtube.com/c/CentralArkansasAthletics'],
   uf:           [null,                                      null,                               null,                                   null],
-  clemson:      ['https://instagram.com/clemsonsoccer',      'https://x.com/ClemsonMSoccer',     'https://www.facebook.com/ClemsonMensSoccer',  'https://youtube.com/clemsontigers'],
-  georgetown:   ['https://instagram.com/georgetownmsoc',     'https://x.com/GUHoyasMSoc',        null,                                   'https://youtube.com/guhoyas'],
-  notredame:    ['https://instagram.com/ndmsoccer',          'https://x.com/NDMenSoccer',         null,                                   'https://youtube.com/fightingirish'],
-  maryland:     ['https://instagram.com/umterpsmsoc',        'https://x.com/UMTerpsMSOC',         'https://facebook.com/TerrapinsMSoccer','https://youtube.com/umterps'],
-  unc:          ['https://instagram.com/uncmsoccer',         'https://x.com/UNCMensSoccer',       null,                                   'https://youtube.com/tarheels'],
-  fau:          ['https://instagram.com/faumsoccer',         'https://x.com/FAUMSoccer',          null,                                   'https://youtube.com/fauowls'],
+  clemson:      ['https://instagram.com/clemsonsoccer',     'https://x.com/ClemsonMSoccer',     'https://www.facebook.com/ClemsonMensSoccer', 'https://youtube.com/clemsontigers'],
+  georgetown:   ['https://instagram.com/georgetownmsoc',    'https://x.com/GUHoyasMSoc',        null,                                   'https://youtube.com/guhoyas'],
+  notredame:    ['https://instagram.com/ndmsoccer',         'https://x.com/NDMenSoccer',        null,                                   'https://youtube.com/fightingirish'],
+  maryland:     ['https://instagram.com/umterpsmsoc',       'https://x.com/UMTerpsMSOC',        'https://facebook.com/TerrapinsMSoccer','https://youtube.com/umterps'],
+  unc:          ['https://instagram.com/uncmsoccer',        'https://x.com/UNCMensSoccer',      null,                                   'https://youtube.com/tarheels'],
+  fau:          ['https://instagram.com/faumsoccer',        'https://x.com/FAUMSoccer',         null,                                   'https://youtube.com/fauowls'],
+  gcu:          ['https://instagram.com/gculopesmsoccer',   'https://x.com/GCULopesSOC',        'https://facebook.com/GCULopes',        'https://youtube.com/gcuathletics'],
+  texas_am:     ['https://instagram.com/tamumsoccer',       'https://x.com/TAMUSoccer',         'https://facebook.com/TAMUSoccer',      'https://youtube.com/aggievision'],
+  akron:        ['https://instagram.com/akronzipsmsoc',     'https://x.com/AkronMSOC',          'https://facebook.com/AkronZipsMSOC',   'https://youtube.com/gozipsathletics'],
+  denver:       ['https://instagram.com/dumenssoccer',      'https://x.com/DUMensSoccer',       'https://facebook.com/DUPioneerSoccer', 'https://youtube.com/denverpioneers'],
+  vermont:      ['https://instagram.com/uvmmenssoccer',     'https://x.com/UVMMensSoccer',      null,                                   'https://youtube.com/uvmathletics'],
 };
 
 
 function buildModalHeader(u){
-  // Logo / favicon
   const logoEl = document.getElementById('modal-logo');
   const abbrEl = document.getElementById('modal-abbr');
   const domain = DOMAINS[u.id];
@@ -747,7 +708,6 @@ function buildModalHeader(u){
     abbrEl.textContent = (u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3);
   }
 
-  // Badges
   const badgesEl = document.getElementById('modal-badges');
   badgesEl.innerHTML = [
     `<span class="mh-badge">${u.div}</span>`,
@@ -755,7 +715,6 @@ function buildModalHeader(u){
     `<span class="mh-badge">${u.loc}</span>`,
   ].join('');
 
-  // Links row
   const linksEl = document.getElementById('modal-links');
   const siteUrl = SITE_URLS[u.id] || '#';
   const progUrl = u.url || '#';
@@ -781,7 +740,7 @@ function buildSocialStrip(u){
   if(tw) html += pill(tw, SOCIAL._x,  '@'+tw.split('/').pop());
   if(fb) html += pill(fb, SOCIAL._fb, fb.split('/').pop());
   if(yt) html += pill(yt, SOCIAL._yt, 'YouTube');
-  if(html === lbl) html = ''; // nothing to show
+  if(html === lbl) html = '';
   el.innerHTML = html;
 }
 
@@ -809,7 +768,6 @@ function buildMinutesModalTab(u){
   const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
   const traj = mo.trajectory || [];
 
-  // Summary sentence
   const cleared = mo.cleared_before_2027 || 0;
   const juniors = mo.rising_junior_2027_count || 0;
   const seniors = mo.rising_senior_2027_count || 0;
@@ -819,50 +777,44 @@ function buildMinutesModalTab(u){
     `Expected year-1 role: <strong>${yr1label}</strong>.`;
 
   let trajHtml = traj.map(t=>{
-    const barColor = t.pct>=80?'#3B6D11':t.pct>=60?'#639922':t.pct>=40?'#BA7517':'#A32D2D';
-    return `<div class="mo-traj-row">
-      <div class="mo-traj-year">${t.year} · ${t.yr_label}</div>
-      <div class="mo-traj-bar"><div class="mo-traj-fill" style="width:${t.pct}%;background:${barColor}"></div></div>
-      <div class="mo-traj-label">${t.label}</div>
+    const barColor = t.pct>=80?'#3B6D11':t.pct>=60?'#639922':t.pct>=40?'#d97706':'#e11d48';
+    return `<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+      <div style="font-size:11px;color:var(--muted);width:90px;flex-shrink:0">${t.yr_label}</div>
+      <div style="flex:1;height:7px;background:var(--surface3);border-radius:4px;overflow:hidden">
+        <div style="width:${t.pct}%;height:100%;background:${barColor};border-radius:4px"></div>
+      </div>
+      <div style="font-size:11px;font-weight:700;color:${barColor};width:32px;text-align:right">${t.pct}%</div>
+      <div style="font-size:11px;color:var(--muted)">${t.label}</div>
     </div>`;
   }).join('');
 
   const clearedNames = (mo.cleared_names||[]).join(', ');
-  const blockerNames = (mo.rising_junior_2027_names||[]).join(', ');
+  const blockerNames = [...(mo.rising_senior_2027_names||[]),...(mo.rising_junior_2027_names||[])].join(', ');
 
   return `
     <div class="detail-block" style="margin-bottom:1rem">
-      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:.75rem">
-        <h4 style="margin:0">2027 Entry · Playing Time Outlook</h4>
-        <div style="display:flex;align-items:center;gap:8px">
-          <span style="font-size:11px;color:var(--hint);font-weight:600">Minutes Score</span>
-          <span style="font-size:1.4rem;font-weight:800;color:${scoreColor};font-family:'Outfit',sans-serif">${score}</span>
-          <a href="${roster}" target="_blank" style="font-size:11px;font-weight:700;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:3px 10px;border-radius:6px;border:1px solid #c7d2fe">📋 View Roster →</a>
-        </div>
-      </div>
-      <p style="font-size:12.5px;color:var(--muted);line-height:1.65;margin-bottom:1rem">${summary}</p>
-      <div class="mo-trajectory" style="margin-bottom:1rem">${trajHtml}</div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:.75rem">
-        <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
-          <div style="font-size:1.3rem;font-weight:800;color:var(--text)">${mo.mf_total_2025}</div>
-          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">MFs 2025</div>
-        </div>
-        <div style="background:var(--emerald3);border-radius:8px;padding:7px;text-align:center;border:1px solid #a7f3d0">
-          <div style="font-size:1.3rem;font-weight:800;color:var(--emerald)">${cleared}</div>
-          <div style="font-size:9px;color:var(--emerald);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">Cleared</div>
-        </div>
-        <div style="background:var(--surface3);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
-          <div style="font-size:1.3rem;font-weight:800;color:var(--rose)">${juniors}</div>
-          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">2027 Juniors</div>
-        </div>
-        <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
-          <div style="font-size:1.1rem;font-weight:800;color:${riskColor}">${riskLabel}</div>
-          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">Entry Competition</div>
-        </div>
-      </div>
-      ${clearedNames?`<div style="background:var(--emerald3);border-radius:7px;padding:7px 10px;font-size:11.5px;margin-bottom:6px"><strong style="color:var(--emerald)">Gone before Olivier arrives:</strong> <span style="color:#065f46">${clearedNames}</span></div>`:''}
-      ${blockerNames?`<div style="background:var(--rose3);border-radius:7px;padding:7px 10px;font-size:11.5px"><strong style="color:var(--rose)">Primary 2027-junior blockers:</strong> <span style="color:var(--rose)">${blockerNames}</span></div>`:''}
+      <h4>2027 Entry — Central Midfielder Outlook</h4>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:1rem">${summary}</p>
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:8px">Projected Playing Time Trajectory</div>
+      ${trajHtml}
+      <div style="font-size:11px;color:var(--muted);margin-top:.5rem;line-height:1.6">${mo.trajectoryNote||''}</div>
     </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1rem">
+      <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
+        <div style="font-size:1.1rem;font-weight:800;color:var(--emerald)">${cleared}</div>
+        <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">MFs Cleared</div>
+      </div>
+      <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
+        <div style="font-size:1.1rem;font-weight:800;color:var(--amber)">${juniors}</div>
+        <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">2027 Juniors</div>
+      </div>
+      <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
+        <div style="font-size:1.1rem;font-weight:800;color:${riskColor}">${riskLabel}</div>
+        <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">Entry Competition</div>
+      </div>
+    </div>
+    ${clearedNames?`<div style="background:var(--emerald3);border-radius:7px;padding:7px 10px;font-size:11.5px;margin-bottom:6px"><strong style="color:var(--emerald)">Gone before Olivier arrives:</strong> <span style="color:#065f46">${clearedNames}</span></div>`:''}
+    ${blockerNames?`<div style="background:var(--rose3);border-radius:7px;padding:7px 10px;font-size:11.5px"><strong style="color:var(--rose)">Primary 2027-junior blockers:</strong> <span style="color:var(--rose)">${blockerNames}</span></div>`:''}
     <div class="tip-box">
       <p><strong>Key question for the coach call:</strong> "How many central midfielders are in your 2026 and 2027 recruiting classes, and where do you see an Australian 8/10 CM fitting your projected 2027 depth chart?"</p>
     </div>`;
@@ -882,19 +834,20 @@ function buildDetailBody(u){
       <button class="mtab" onclick="switchTab(this,'facilities')">🏟 Facilities</button>
     </div>
     <div class="mtab-content active" id="tab-overview">
-      ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League: No athletic scholarships — need-based financial aid only. Highly selective admission. GPA 2.8 is likely insufficient without significant improvement.</div>`:''}
+      ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League: No athletic scholarships — need-based financial aid only. Highly selective admission. GPA 2.8 is below typical Ivy requirements.</div>`:''}
+      ${u.noVarsity?`<div style="background:var(--rose3);border:1px solid var(--rose2);border-radius:10px;padding:.85rem 1rem;margin-bottom:1rem"><strong style="color:var(--rose)">⚠ No varsity men's soccer:</strong> <span style="color:var(--rose)">${u.noVarsityNote||''}</span></div>`:''}
       <div class="detail-grid">
-        <div class="detail-block"><h4>Quick Facts</h4><table style="width:100%;font-size:12px">
-          <tr><td style="color:var(--hint);padding:4px 0">Division</td><td><span class="dbadge d-${u.div}">${u.div}</span></td></tr>
-          <tr><td style="color:var(--hint);padding:4px 0">Conference</td><td>${u.conf}</td></tr>
+        <div class="detail-block"><h4>Quick Facts</h4>
+          <table style="width:100%;font-size:13px">
           <tr><td style="color:var(--hint);padding:4px 0">Location</td><td>${u.loc}</td></tr>
-          <tr><td style="color:var(--hint);padding:4px 0">Campus Size</td><td>${u.size}</td></tr>
+          <tr><td style="color:var(--hint);padding:4px 0">Division</td><td><span class="dbadge d-${u.div}">${u.div}</span> ${u.conf}</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">Annual Cost</td><td style="color:var(--amber);font-weight:600">${u.cost}</td></tr>
-          <tr><td style="color:var(--hint);padding:4px 0">Aid</td><td style="color:var(--emerald);font-weight:600">${u.aid}</td></tr>
+          <tr><td style="color:var(--hint);padding:4px 0">Aid Type</td><td>${u.aid}</td></tr>
+          <tr><td style="color:var(--hint);padding:4px 0">Campus Size</td><td>${u.size} students</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">Climate</td><td>${u.warm?'☀ Warm':'⛅ Mixed seasons'}</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">City Campus</td><td>${u.city?'✅ Urban':'⚠ Smaller town'}</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">Pre-PT</td><td style="color:var(--emerald);font-weight:600">${u.prePT}</td></tr>
-        </table></div>
+          </table></div>
         <div class="detail-block"><h4>ACU Degree Alignment</h4>
           <div style="font-size:2.5rem;font-weight:800;color:${alignColor(u.acuAlign)};font-family:'Outfit',sans-serif;line-height:1">${u.acuAlign}<span style="font-size:1.2rem;color:var(--hint)">/16</span></div>
           <div style="font-size:13px;font-weight:600;color:${alignColor(u.acuAlign)};margin:4px 0 8px">${alignLabel(u.acuAlign)}</div>
@@ -937,7 +890,7 @@ function buildDetailBody(u){
           ${u.confRecord.map(r=>`<tr style="border-bottom:1px solid var(--border)"><td style="padding:7px 0;font-weight:600">${r.yr}</td><td style="padding:7px 0"><span class="sy ${posColor(r.pos)}">${r.pos}</span></td><td style="padding:7px 0;font-size:12px;color:var(--muted)">${r.note}</td></tr>`).join('')}
         </table>
       </div>
-      <div class="detail-block"><h4>Titles & Honours</h4>
+      <div class="detail-block"><h4>Titles &amp; Honours</h4>
         <div style="display:flex;flex-wrap:wrap;gap:5px">${u.titles.map(t=>`<span class="title-chip">${t}</span>`).join('')}</div>
       </div>
     </div>
@@ -978,7 +931,6 @@ function buildDetailBody(u){
         <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
         <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
         <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone}</div></div>
-
       </div>
       <div class="detail-block" style="margin-bottom:1rem"><h4>Coach Profile</h4><p style="font-size:12.5px;color:var(--muted);line-height:1.7">${u.coach.profile}</p></div>
       <div class="tip-box"><p><strong>Agent recommends:</strong> All contact should be coordinated through your agent. Coach introductions via a platform carry significantly more weight than cold emails. Include Olivier's highlights link, academic profile, and Australian background.</p></div>
@@ -1021,8 +973,8 @@ function buildDetailBody(u){
         <div class="fac-block"><h5>🏥 Sports Medicine & Recovery</h5><p>${u.facilityDetails.sportsMed}</p></div>
         <div class="fac-block"><h5>🔬 Academic Labs & Clinical Access</h5><p>${u.facilityDetails.academicLabs}</p></div>
       </div>
-      <div class="fac-block" style="margin-bottom:1rem"><h5>🎁 Extras & Unique Perks</h5><p>${u.facilityDetails.extras}</p></div>
-      <div class="fac-note"><p><strong>Facilities verdict:</strong> ${u.facilityDetails.note}</p></div>
+      ${u.facilityDetails.extras?`<div class="fac-block" style="margin-bottom:1rem"><h5>🎁 Extras & Unique Perks</h5><p>${u.facilityDetails.extras}</p></div>`:''}
+      ${u.facilityDetails.note?`<div class="fac-note"><p><strong>Facilities verdict:</strong> ${u.facilityDetails.note}</p></div>`:''}
       `:'<div class="detail-block"><p style="color:var(--muted)">Facility details coming soon.</p></div>'}
     </div>`;
 }
@@ -1040,11 +992,10 @@ function showPage(id,btn){
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   document.getElementById('page-'+id).classList.add('active');btn.classList.add('active');
 }
+
 // ══════════════════════════════════════════════════
 // ATAR → GPA CONVERSION ENGINE
 // ══════════════════════════════════════════════════
-
-// Conversion table: [atar, usgpa]
 const atarGpaTable = [
   [99, 4.0], [95, 3.9], [90, 3.7], [85, 3.5], [80, 3.3],
   [75, 3.0], [70, 2.8], [65, 2.6], [60, 2.4], [55, 2.2],
@@ -1052,14 +1003,11 @@ const atarGpaTable = [
 ];
 
 function atarToGpa(atar) {
-  // Clamp
   const val = Math.max(40, Math.min(99, atar));
-  // Find surrounding bracket
   for (let i = 0; i < atarGpaTable.length - 1; i++) {
     const [a1, g1] = atarGpaTable[i];
     const [a2, g2] = atarGpaTable[i + 1];
     if (val <= a1 && val >= a2) {
-      // Linear interpolation
       const t = (val - a2) / (a1 - a2);
       return Math.round((g2 + t * (g1 - g2)) * 10) / 10;
     }
@@ -1067,29 +1015,23 @@ function atarToGpa(atar) {
   return 1.5;
 }
 
-// Parse a school's minEntry string into a numeric GPA threshold
 function parseMinEntry(minEntry) {
   if (!minEntry) return 0;
   const s = minEntry.toLowerCase();
   if (s.includes('no minimum') || s.includes('open')) return 0;
-  // Extract first number found
   const m = minEntry.match(/(\d+\.\d+|\d+)/);
   return m ? parseFloat(m[1]) : 0;
 }
 
-// Determine dynamic status given converted GPA and school min entry
 function dynamicGpaStatus(convertedGpa, minEntry) {
   const min = parseMinEntry(minEntry);
-  if (min === 0) return 'eligible';           // open enrolment
+  if (min === 0) return 'eligible';
   if (convertedGpa >= min) return 'eligible';
   if (convertedGpa >= min - 0.3) return 'borderline';
   return 'below';
 }
 
-// Current ATAR state (starts at 70)
 let currentAtarGpa = atarToGpa(70);
-
-// v17: Hide-ineligible toggle state
 let atarHideBelow = false;
 
 function toggleAtarHide() {
@@ -1106,13 +1048,11 @@ function toggleAtarHide() {
 function onAtarSlide() {
   const atar = parseInt(document.getElementById('atar-slider').value);
   currentAtarGpa = atarToGpa(atar);
-
   document.getElementById('atar-display').textContent = atar;
   document.getElementById('gpa-display').textContent = currentAtarGpa.toFixed(1);
-
   refreshAllGpaRows();
   updateAtarCounts();
-  applyFilters(); // v17: re-run filter engine so hide/grey state updates live
+  applyFilters();
   if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa, atar);
 }
 
@@ -1125,25 +1065,19 @@ function refreshAllGpaRows() {
     if (!u || !u.gpa) return;
     const gpaRowEl = card.querySelector('.gpa-compact');
     if (!gpaRowEl) return;
-
     const dynStatus = dynamicGpaStatus(currentAtarGpa, u.gpa.minEntry);
     const statusColor = dynStatus === 'eligible' ? 'var(--emerald)' : dynStatus === 'borderline' ? 'var(--amber)' : 'var(--rose)';
     const statusIcon  = dynStatus === 'eligible' ? '✅' : dynStatus === 'borderline' ? '⚠️' : '❌';
     const isOpen = u.gpa.minEntry.toLowerCase().includes('no minimum') || u.gpa.minEntry.toLowerCase().includes('open');
     const entryText = isOpen ? 'Open entry ✅' : u.gpa.minEntry + ' ' + statusIcon;
-
     const valEl = gpaRowEl.querySelector('.gpa-c-val');
     if (valEl) {
       valEl.textContent = entryText;
       valEl.style.color = statusColor;
     }
-
-    // v17: grey-out class — borderline gets a mild tint, below gets full grey
     card.classList.remove('gpa-borderline', 'gpa-below');
     if (dynStatus === 'borderline') card.classList.add('gpa-borderline');
     if (dynStatus === 'below')      card.classList.add('gpa-below');
-
-    // Update data attribute for filter engine
     card.dataset.atargpastatus = dynStatus;
   });
 }
@@ -1172,7 +1106,6 @@ function updateAtarCounts() {
 // ══════════════════════════════════════════════════
 // MULTI-SELECT FILTER ENGINE
 // ══════════════════════════════════════════════════
-// activeFilters: { filterType: Set of active values }
 const activeFilters = {};
 
 function toggleFilter(btn){
@@ -1211,9 +1144,6 @@ function applyFilters(){
         if(![...vals].some(v=>c.dataset[type]===v)){ show=false; break; }
       }
     }
-    // v17: ATAR hide-ineligible toggle
-    // Top Picks are never fully hidden — they stay visible but greyed out
-    // so aspirational targets remain visible even when below minimum.
     if (show && atarHideBelow) {
       const status = c.dataset.atargpastatus;
       const isTopPick = c.dataset.top === 'true';
@@ -1224,7 +1154,6 @@ function applyFilters(){
     c.style.display = show ? '' : 'none';
     if(show) visible++;
   });
-  // Show/hide section wrappers
   document.querySelectorAll('.conf-section').forEach(sec=>{
     const hasVisible=[...sec.querySelectorAll('.ucard')].some(c=>c.style.display!=='none');
     sec.style.display=hasVisible?'':'none';
@@ -1238,7 +1167,6 @@ function applyFilters(){
 function clearAllFilters(){
   Object.keys(activeFilters).forEach(k=>activeFilters[k].clear());
   document.querySelectorAll('.fchip.active').forEach(b=>b.classList.remove('active'));
-  // v17: also reset hide-below toggle
   atarHideBelow = false;
   const hideBtn = document.getElementById('atar-hide-btn');
   if (hideBtn) { hideBtn.classList.remove('atar-hide-active'); hideBtn.textContent = '🚫 Hide ineligible'; }
@@ -1276,7 +1204,7 @@ function toggleFilterPanel(){
   btn.textContent = isHidden ? '▲ Hide filters' : '▼ Show filters';
 }
 
-// Keep backward-compat stubs for any residual calls (coaches filters etc)
+// Backward-compat stubs
 function filterAll(btn){clearAllFilters();}
 function filterDiv(div,btn){}
 function filterRegion(reg,btn){}
@@ -1293,26 +1221,23 @@ function renderContacts(){
     <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
     <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
     <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone}</div></div>
-
     ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
   container.innerHTML=html;
 }
+
 // ══════════════════════════════════════════════════
 // CONFERENCES DATA & RENDER
 // ══════════════════════════════════════════════════
-
-
 function renderConferences(){
   const container=document.getElementById('conferences-container');
   const tiers=[
-    {key:'Power 5 (D1)',label:'Power 5 Conferences — Elite Division I',cls:'tier-p5',intro:"The 'Big Five' soccer conferences that produce the majority of MLS draft picks. Getting into a Power 5 program requires elite highlights. These programs offer the strongest soccer development but the most competitive roster spots."},
-    {key:'High Major (D1)',label:'High-Major Conferences — Very Strong D1',cls:'tier-d1',intro:'Just below Power 5 in profile but highly competitive. AAC and Big West programs are realistic D1 targets for Olivier with strong highlights — and several are in warm coastal cities.'},
-    {key:'Ivy League (D1)',label:'Ivy League — Academic Elite, No Athletic Scholarships',cls:'tier-ivy',intro:'Unique financial model: no athletic scholarships, need-based aid only. Princeton is surging. GPA improvement essential.'},
-    {key:'Mid-Major (D1)',label:'Mid-Major D1 — Competitive Regional Programs',cls:'tier-d1',intro:'Genuine D1 competition at more accessible scholarship levels. Charleston is the lifestyle pick.'},
-    {key:'Division II',label:'Division II Conferences — Best Overall Value',cls:'tier-d2',intro:'Often the best overall balance for international athletes: real scholarships, playing time from year 1, strong academic programs, warm climates in Florida and Texas.'},
-    {key:'NAIA',label:'NAIA — Generous Scholarships, Personal Development',cls:'tier-naia',intro:'No scholarship maximum in NAIA — full packages possible. Billy Martin at OCU continues a strong NAIA soccer tradition. Keiser in Fort Lauderdale has clinical simulation labs.'},
-    {key:'Division III',label:'Division III — Academic Focus, No Athletic Scholarships',cls:'tier-juco',intro:'No athletic scholarships. Best for athletes where PT/Chiro grad school GPA is the primary goal.'},
-    {key:'Junior College',label:'Junior College — 2-Year Transfer Pathway',cls:'tier-juco',intro:'Starting point not a destination. Santa Monica College → UCLA is the proven pipeline.'},
+    {key:'Power 5 (D1)',      label:'Power 5 Conferences — Elite Division I',                  cls:'tier-p5',   intro:"The 'Big Five' soccer conferences that produce the majority of MLS draft picks. Getting into a Power 5 program requires elite highlights. These programs offer the strongest soccer development but the most competitive roster spots."},
+    {key:'High Major (D1)',   label:'High-Major Conferences — Very Strong D1',                 cls:'tier-d1',   intro:'Just below Power 5 in profile but highly competitive. Strong MLS pipelines, full scholarships, accessible for internationals.'},
+    {key:'Mid-Major (D1)',    label:'Mid-Major Conferences — Solid D1',                        cls:'tier-d1',   intro:'Competitive D1 with more opportunity for playing time. ASUN, CAA, MAC, WAC, WCC and America East all feature in this guide.'},
+    {key:'Division II',       label:'Division II — Florida Sunshine State Conference',         cls:'tier-d2',   intro:'The SSC is the best D2 conference in the country. PBA, Lynn, Barry and Nova SE all in South Florida — warm climate, strong soccer, near-full scholarships.'},
+    {key:'NAIA',              label:'NAIA — National Association of Intercollegiate Athletics', cls:'tier-naia', intro:'No scholarship cap — full rides possible. OCU and Keiser both in warm cities with strong PT pathways.'},
+    {key:'Division III',      label:'Division III — Academic Focus, No Athletic Scholarships', cls:'tier-juco', intro:'No athletic scholarships. Best for athletes where PT/Chiro grad school GPA is the primary goal.'},
+    {key:'Junior College',    label:'Junior College — 2-Year Transfer Pathway',                cls:'tier-juco', intro:'Starting point not a destination. Santa Monica College → UCLA is the proven pipeline.'},
   ];
   let html='';
   tiers.forEach(t=>{
@@ -1351,8 +1276,6 @@ function renderConferences(){
 // ══════════════════════════════════════════════════
 // COACHES DATA & RENDER
 // ══════════════════════════════════════════════════
-
-
 function buildCoachCard(c){
   const u=unis.find(x=>x.id===c.schoolId)||{};
   const el=document.createElement('div');
@@ -1392,7 +1315,6 @@ function buildCoachCard(c){
       <div class="coach-contact-strip">
         <a href="mailto:${c.contact.email}" class="coach-cta coach-cta-email" title="Send email">✉ ${c.contact.email}</a>
         ${c.contact.phone?`<a href="tel:${c.contact.phone}" class="coach-cta coach-cta-phone" title="Call">📞 ${c.contact.phone}</a>`:''}
-
       </div>
     </div>`;
   return el;
@@ -1430,30 +1352,33 @@ function renderFinSchoolSelector(){
   unis.forEach(u=>{
     if(!u.fin || u.profileDepth === 'listed') return;
     const btn = document.createElement('button');
-    btn.className = 'fin-school-btn' + (finCurrentSchool&&finCurrentSchool.id===u.id?' selected':'');
-    btn.innerHTML = `<div class="fsb-name">${u.name}</div><div class="fsb-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span> ${fmt(u.fin.costNum)}/yr full cost</div>`;
-    btn.onclick = ()=>selectFinSchool(u.id, btn);
+    btn.className = 'fin-school-btn' + (finCurrentSchool&&finCurrentSchool.id===u.id?' active':'');
+    btn.innerHTML = `<div class="fsb-name">${u.name}</div><div class="fsb-div">${u.div} · ${u.conf.split(' ')[0]}</div>`;
+    btn.onclick = () => finSelectSchool(u, btn, true);
     container.appendChild(btn);
   });
+  if(!finCurrentSchool && unis.length){
+    const firstFull = unis.find(u=>u.fin&&u.profileDepth!=='listed');
+    if(firstFull){
+      const firstBtn = container.querySelector('.fin-school-btn');
+      finSelectSchool(firstFull, firstBtn, false);
+    }
+  }
 }
 
-function selectFinSchool(id, btnEl){
-  finCurrentSchool = unis.find(u=>u.id===id);
-  document.querySelectorAll('.fin-school-btn').forEach(b=>b.classList.remove('selected'));
-  if(btnEl) btnEl.classList.add('selected');
-  document.getElementById('fin-model-wrapper').style.display='';
-  document.getElementById('fin-school-title').textContent = `${finCurrentSchool.full} — Financial Model`;
-  const u = finCurrentSchool;
-  const slAth = document.getElementById('sl-athletic');
+function finSelectSchool(u, btn, isFirstSelection){
+  finCurrentSchool = u;
+  document.querySelectorAll('.fin-school-btn').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+
+  const f = u.fin;
+  const athCap = Math.round((f.maxAthletic||0.5)*100);
+  const slAth  = document.getElementById('sl-athletic');
   const slAcad = document.getElementById('sl-academic');
 
-  const isFirstSelection = !document.getElementById('fin-model-wrapper').style.display || document.getElementById('fin-model-wrapper').style.display === 'none';
-
-  if(u.fin.aidType === 'need-only' || u.fin.maxAthletic === 0){
-    slAth.max = 0; slAth.value = 0; slAth.disabled = true;
-    slAth.style.opacity = '0.3';
+  if(f.aidType==='need-only'){
+    slAth.value = 0; slAth.disabled = true; slAth.style.opacity = '0.3';
   } else {
-    const athCap = Math.round(Math.min(u.fin.maxAthletic, 0.5) * 100);
     slAth.max = athCap;
     slAth.value = isFirstSelection ? 0 : Math.min(parseInt(slAth.value)||0, athCap);
     slAth.disabled = false;
@@ -1473,7 +1398,6 @@ function applyScenario(type, btn){
   const slAth = document.getElementById('sl-athletic');
   const slAcad = document.getElementById('sl-academic');
   const athMax = parseInt(slAth.max) || 0;
-  // Scenarios: ath and acad are now percentages out of 50 each
   const scenarios = {
     none:    {ath:0,   acad:0},
     ath25:   {ath:25,  acad:0},
@@ -1492,12 +1416,11 @@ function updateFinModel(){
   const u = finCurrentSchool;
   if(!u || !u.fin) return;
   const f = u.fin;
-  const athPct  = parseInt(document.getElementById('sl-athletic').value)  / 100; // 0–0.50
-  const acadPct = parseInt(document.getElementById('sl-academic').value)  / 100; // 0–0.50
+  const athPct  = parseInt(document.getElementById('sl-athletic').value)  / 100;
+  const acadPct = parseInt(document.getElementById('sl-academic').value)  / 100;
   const combinedPct = athPct + acadPct;
   const fx = parseFloat(document.getElementById('sl-fx').value);
 
-  // Update labels
   document.getElementById('val-athletic').textContent  = Math.round(athPct*100)+'%';
   document.getElementById('val-academic').textContent  = Math.round(acadPct*100)+'%';
   document.getElementById('val-fx').textContent        = fx.toFixed(2);
@@ -1508,12 +1431,11 @@ function updateFinModel(){
   const totalAid  = athSchol + acadSchol;
   const netCOA    = Math.max(0, totalCOA - totalAid);
 
-  // Update combined aid display
   const combinedEl  = document.getElementById('combined-aid-pct');
   const combinedUSD = document.getElementById('combined-aid-usd');
   if(combinedEl){
     combinedEl.textContent = Math.round(combinedPct*100)+'%';
-    combinedEl.style.color = combinedPct>=0.9?'var(--emerald)':combinedPct>=0.5?'var(--indigo)':'var(--amber)';
+    combinedEl.style.color = combinedPct>=0.9?'var(--emerald)':combinedPct>=0.5?'var(--amber)':'var(--rose)';
     combinedUSD.textContent = 'saving '+fmt(totalAid)+'/yr';
   }
 
@@ -1528,14 +1450,12 @@ function updateFinModel(){
   const total4yr    = totalAnnual * 4;
   const netColor    = netCOA===0?'var(--emerald)':netCOA<15000?'var(--amber)':'var(--rose)';
 
-  // ── Summary ──
   let html = `<div style="margin-bottom:1.25rem">
     <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:4px">Annual Out-of-Pocket (USD)</div>
     <div class="fin-summary-num" style="color:${netColor}">${fmt(totalAnnual)}</div>
     <div style="font-size:13px;color:var(--muted);margin-top:4px">= <strong style="color:${netColor}">${fmtAUD(totalAnnual,fx)}</strong> AUD / year</div>
   </div>`;
 
-  // ── Breakdown ──
   html += `<div class="fin-breakdown">
     <div class="fin-row expense"><span class="fr-label">📋 Tuition</span><span class="fr-val">${fmt(f.tuition)}</span></div>
     <div class="fin-row expense"><span class="fr-label">🏠 Room & Board</span><span class="fr-val">${fmt(f.roomBoard)}</span></div>
@@ -1543,34 +1463,22 @@ function updateFinModel(){
     <div class="fin-row expense" style="border-top:2px solid var(--border2);font-weight:700"><span class="fr-label">Total Cost of Attendance</span><span class="fr-val">${fmt(totalCOA)}</span></div>
     ${athPct>0?`<div class="fin-row income"><span class="fr-label">🏆 Athletic Scholarship (${Math.round(athPct*100)}% of cost)</span><span class="fr-val">−${fmt(athSchol)}</span></div>`:''}
     ${acadPct>0?`<div class="fin-row income"><span class="fr-label">🎓 Academic Scholarship (${Math.round(acadPct*100)}% of cost)</span><span class="fr-val">−${fmt(acadSchol)}</span></div>`:''}
-    <div class="fin-row ${netCOA===0?'net-positive':netCOA<20000?'net-neutral':'net-negative'}">
-      <span class="fr-label">Net University Cost (${100-Math.round(combinedPct*100)}% remaining)</span><span class="fr-val">${fmt(netCOA)}</span>
-    </div>
-    ${totalExtras>0?`
-    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);padding:8px 0 4px">Living & Personal Costs</div>
-    ${exFlights>0?`<div class="fin-row expense"><span class="fr-label">✈️ Flights home (2×/yr)</span><span class="fr-val">${fmt(exFlights)}</span></div>`:''}
-    ${exPersonal>0?`<div class="fin-row expense"><span class="fr-label">💳 Personal spending</span><span class="fr-val">${fmt(exPersonal)}</span></div>`:''}
-    ${exBooks>0?`<div class="fin-row expense"><span class="fr-label">📚 Books & supplies</span><span class="fr-val">${fmt(exBooks)}</span></div>`:''}
-    ${exHealth>0?`<div class="fin-row expense"><span class="fr-label">🏥 Health insurance</span><span class="fr-val">${fmt(exHealth)}</span></div>`:''}
-    ${exMobile>0?`<div class="fin-row expense"><span class="fr-label">📱 Phone / mobile</span><span class="fr-val">${fmt(exMobile)}</span></div>`:''}
-    <div class="fin-row ${totalAnnual===0?'net-positive':totalAnnual<20000?'net-neutral':'net-negative'}" style="margin-top:4px">
-      <span class="fr-label">💸 TOTAL ANNUAL COST</span><span class="fr-val">${fmt(totalAnnual)}</span>
-    </div>`:''}
+    <div class="fin-row ${netCOA===0?'net-positive':netCOA<20000?'net-partial':'net-gap'}"><span class="fr-label" style="font-weight:700">Net Out-of-Pocket / yr</span><span class="fr-val" style="color:${netColor};font-weight:800">${fmt(netCOA)}</span></div>
+    ${totalExtras>0?`<div class="fin-row expense"><span class="fr-label">✈ Living & Extras</span><span class="fr-val">${fmt(totalExtras)}</span></div>`:''}
+    <div class="fin-row" style="border-top:2px solid var(--border2);font-weight:700"><span class="fr-label">Total Annual (incl. extras)</span><span class="fr-val">${fmt(totalAnnual)}</span></div>
+    <div class="fin-row" style="font-weight:700"><span class="fr-label">4-Year Total Estimate</span><span class="fr-val" style="color:${netColor}">${fmt(total4yr)}</span></div>
+    <div class="fin-row" style="font-size:11px;color:var(--hint)"><span class="fr-label">4yr in AUD</span><span class="fr-val">${fmtAUD(total4yr,fx)}</span></div>
   </div>`;
 
-  document.getElementById('fin-breakdown-content').innerHTML = html;
+  document.getElementById('fin-results-html').innerHTML = html;
 
-  // ── 4-year block ──
-  const savedTotal = totalAid * 4;
-  document.getElementById('fin-4yr-block').innerHTML = `
-    <div class="f4-label">4-Year Total Investment</div>
-    <div class="f4-val">${fmt(total4yr)} USD</div>
-    <div class="f4-sub">${fmtAUD(total4yr,fx)} AUD total · You save ${fmt(savedTotal)} over 4 years in scholarships</div>`;
-
-  // ── Tips ──
   let tips = '';
   if(u.fin.aidType==='need-only'){
-    tips = `<strong>Need-based only:</strong> ${u.name} has no athletic scholarships — the athletic slider is disabled. Academic aid here represents need-based grants based on family income documentation.`;
+    tips = `<strong>Need-based only (Ivy League):</strong> No athletic scholarship. 100% of aid based on demonstrated financial need. Families earning under $75k typically pay little to nothing. Above that, aid scales back. <em>Admission is the barrier, not money.</em>`;
+  } else if(combinedPct===0){
+    tips = `<strong>No aid modelled:</strong> Use the sliders above to model different scholarship scenarios. A 50% athletic + 50% academic combination (full ride) is the best-case for an 8/10 international CM.`;
+  } else if(f.aidType==='athletic+need'){
+    tips = `<strong>Athletic + need-based aid:</strong> Academic aid here represents need-based grants based on family income documentation.`;
   } else if(combinedPct < 1.0){
     const gap = Math.round((1.0 - combinedPct) * 100);
     tips = `<strong>${gap}% gap remaining:</strong> At current settings ${fmt(totalCOA-totalAid)}/yr is unfunded. Try increasing both sliders to close the gap. A full ride = 50% athletic + 50% academic.`;
@@ -1586,7 +1494,6 @@ function renderFinComparisonBars(){
   const athPct = 0.5;
   const extras = 7500;
 
-  // Full-profile schools only — listed schools don't have full fin data
   const data = unis
     .filter(u => u.fin && u.profileDepth !== 'listed' && u.fin.costNum > 0)
     .map(u => ({
@@ -1600,19 +1507,11 @@ function renderFinComparisonBars(){
 
   const maxNet = data[data.length-1].net;
 
-  // Conference average lines
-  const confAvgs = {};
-  ['acc','big-ten','big-east','aac','big-west','caa','other'].forEach(ck=>{
-    const inConf = data.filter(d=>d.u.confKey===ck);
-    if(inConf.length) confAvgs[ck] = Math.round(inConf.reduce((s,d)=>s+d.net,0)/inConf.length);
-  });
-
-  // Cost brackets
   const brackets = [
-    { label:'Under $30k', min:0,     max:29999,  color:'var(--emerald)', bg:'var(--emerald3)' },
-    { label:'$30–50k',    min:30000, max:49999,  color:'var(--sky)',     bg:'var(--sky3)'     },
-    { label:'$50–70k',    min:50000, max:69999,  color:'var(--amber)',   bg:'var(--amber3)'   },
-    { label:'$70k+',      min:70000, max:Infinity,color:'var(--rose)',   bg:'var(--rose3)'    },
+    { label:'Under $30k', min:0,     max:29999,   color:'var(--emerald)', bg:'var(--emerald3)' },
+    { label:'$30–50k',    min:30000, max:49999,   color:'var(--sky)',     bg:'var(--sky3)'     },
+    { label:'$50–70k',    min:50000, max:69999,   color:'var(--amber)',   bg:'var(--amber3)'   },
+    { label:'$70k+',      min:70000, max:Infinity, color:'var(--rose)',   bg:'var(--rose3)'    },
   ];
 
   let html = '<div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.25rem">';
@@ -1621,266 +1520,124 @@ function renderFinComparisonBars(){
     const inBracket = data.filter(d=>d.cost>=b.min&&d.cost<=b.max);
     if(!inBracket.length) return;
 
-    // Conference average for this bracket's schools
-    const bracketConfKeys=[...new Set(inBracket.map(d=>d.u.confKey))];
-    const confAvgLine = bracketConfKeys.length>1
-      ? Math.round(inBracket.reduce((s,d)=>s+d.net,0)/inBracket.length)
-      : null;
-
     html+=`<div style="margin-bottom:1.5rem">
       <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem">
         <span style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;background:${b.bg};color:${b.color};padding:2px 10px;border-radius:4px">${b.label}</span>
         <span style="font-size:11px;color:var(--hint)">${inBracket.length} school${inBracket.length!==1?'s':''}</span>
-        ${confAvgLine?`<span style="font-size:10px;color:var(--muted);margin-left:auto">Bracket avg: <strong style="color:${b.color}">${fmt(confAvgLine)}</strong>/yr net</span>`:''}
       </div>`;
 
-    inBracket.forEach(({u,net})=>{
-      const pct = Math.round((net/maxNet)*100);
-      html+=`<div class="fcbar-row" onclick="selectSchoolFromBar('${u.id}')" style="cursor:pointer">
-        <div class="fcbar-name" title="${u.full}">${u.name}</div>
-        <span class="fcbar-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span></span>
-        <div class="fcbar-track" style="position:relative">
-          <div class="fcbar-fill" style="width:${pct}%;background:${b.color};opacity:.85;min-width:${net>0?'40px':'0'}">${net>12000?fmt(net):''}</div>
-          ${net===0?'<span style="position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:700;color:var(--emerald)">FULL RIDE</span>':''}
-          ${confAvgLine?`<div style="position:absolute;top:0;bottom:0;left:${Math.round((confAvgLine/maxNet)*100)}%;width:1.5px;background:var(--navy);opacity:.25;pointer-events:none"></div>`:''}
+    inBracket.forEach(d=>{
+      const barW = Math.round((d.net/maxNet)*100);
+      const audNet = Math.round(d.net * fx);
+      html+=`<div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">
+        <div style="font-size:11px;font-weight:600;width:90px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${d.u.name}</div>
+        <div style="flex:1;height:7px;background:var(--surface3);border-radius:4px;overflow:hidden">
+          <div style="width:${barW}%;height:100%;background:${b.color};border-radius:4px"></div>
         </div>
-        <div class="fcbar-amt">${fmtAUD(net,fx)}<br><span style="font-size:9px;color:var(--hint)">AUD/yr</span></div>
+        <div style="font-size:10px;font-weight:700;color:${b.color};width:90px;text-align:right;flex-shrink:0">${fmt(d.net)}/yr · A$${Math.round(audNet/1000)}k</div>
       </div>`;
     });
     html+='</div>';
   });
 
-  // Conference averages summary
-  html+=`<div style="background:var(--surface2);border-radius:9px;padding:.75rem 1rem;margin-top:.5rem">
-    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:.5rem">Conference Averages (net cost at 50% athletic scholarship)</div>
-    <div style="display:flex;flex-wrap:wrap;gap:.5rem">`;
-  Object.entries(confAvgs).forEach(([ck,avg])=>{
-    const label={acc:'ACC',['big-ten']:'Big Ten',['big-east']:'Big East',aac:'AAC',['big-west']:'Big West',caa:'CAA',other:'D2/NAIA'}[ck]||ck;
-    html+=`<span style="font-size:11px;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:3px 10px"><strong>${label}</strong> ${fmt(avg)}/yr</span>`;
-  });
-  html+=`</div></div>`;
-
-  html += '<div style="font-size:11px;color:var(--hint);margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border)">Assumes 50% athletic scholarship + $7,500 USD living costs. Full-profile schools only. Sorted by cost bracket, lowest first. Click any bar to model in detail above.</div></div>';
+  html += `<div style="font-size:10px;color:var(--hint);margin-top:.5rem;line-height:1.5">Based on 50% athletic scholarship + $7,500 extras. Adjust sliders in the Financial Model tab for personalised estimates. Exchange rate: 1 USD = ${fx.toFixed(2)} AUD.</div>`;
+  html += '</div>';
   container.innerHTML = html;
 }
 
-function selectSchoolFromBar(id){
-  const u = unis.find(x=>x.id===id);
-  if(!u) return;
-  if(u.profileDepth==='listed'){
-    alert(u.name+' is a listed-depth school — full financial data not yet available. Full profile coming in a future update.');
-    return;
-  }
-  // Switch to finance tab if not already there
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.getElementById('page-finance').classList.add('active');
-  document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
-  document.querySelectorAll('.nav-tab').forEach(b=>{if(b.textContent.includes('Financial'))b.classList.add('active');});
-  // Select the school
-  const btn = [...document.querySelectorAll('.fin-school-btn')].find(b=>b.onclick.toString().includes(`'${id}'`));
-  selectFinSchool(id, btn);
-  document.getElementById('fin-model-wrapper').scrollIntoView({behavior:'smooth'});
-}
-
-// ═══ v15: Minutes Outlook tab ═══════════════════════════════════════════════
-// ── Minutes Outlook scoring ─────────────────────────────────────────────────
-// Two modes:
-//   'roster'   — pure trajectory weighted average, no division adjustment
-//   'adjusted' — trajectory × division quality factor for Olivier specifically
-//
-// Division factor (adjusted mode):
-//   D1:   1.0  — Olivier is a competitive recruit, trajectory as-is
-//   D2:   1.15 — Olivier is a strong recruit, likely to play sooner than average
-//   NAIA: 1.25 — Olivier would be one of the better players on the roster
-//   D3:   1.1  — Overqualified for minutes, not ideal for development
-//   IVY:  0.9  — Academic culture limits playing time flexibility
-//   JUCO: 1.0  — Short-term, trajectory calibrated correctly
-
-const MO_DIV_FACTOR = {D1:1.0, D2:1.15, NAIA:1.25, IVY:0.9, D3:1.1, JUCO:1.0};
-
-function calcMinutesScore(u, mode){
-  const traj = (u.minutesOutlook||{}).trajectory || [];
-  if(traj.length === 0) return 0;
-  const pcts = traj.map(t=>t.pct);
-  let raw;
-  if(pcts.length >= 4){
-    // Standard 4-year program
-    raw = pcts[0]*0.35 + pcts[1]*0.30 + pcts[2]*0.20 + pcts[3]*0.15;
-  } else if(pcts.length === 2){
-    // JUCO 2-year program — weight Yr1 more heavily (transfer depends on Yr1)
-    raw = pcts[0]*0.60 + pcts[1]*0.40;
-  } else {
-    // 1 or 3 years — equal-weight average
-    raw = pcts.reduce((a,b)=>a+b,0) / pcts.length;
-  }
-  const factor = mode==='adjusted' ? (MO_DIV_FACTOR[u.div]||1.0) : 1.0;
-  return Math.min(95, Math.round(raw * factor));
-}
-
-let moMode = 'roster'; // current toggle state
-
+// ══════════════════════════════════════════════════
+// MINUTES OUTLOOK PAGE
+// ══════════════════════════════════════════════════
 function renderMinutesOutlook(){
   const container = document.getElementById('page-minutes');
   if(!container) return;
-  buildMinutesHtml();
-}
 
-function setMoMode(mode){
-  moMode = mode;
-  // Update toggle button styles
-  ['roster','adjusted'].forEach(m=>{
-    const btn = document.getElementById('mo-toggle-'+m);
-    if(btn) btn.className = 'mo-toggle-btn'+(m===mode?' mo-toggle-active':'');
-  });
-  buildMinutesHtml(true); // rebuild cards only
-}
-
-function buildMinutesHtml(cardsOnly){
-  const container = document.getElementById('page-minutes');
-  if(!container) return;
-
-  const available = [...unis].filter(u => (u.minutesOutlook||{}).available && u.profileDepth==='full');
-  const unavailable = [...unis].filter(u => !(u.minutesOutlook||{}).available && u.profileDepth==='full');
-
-  // Sort by current mode score
-  const ranked = [...available].sort((a,b)=>{
-    const sa = calcMinutesScore(a, moMode);
-    const sb = calcMinutesScore(b, moMode);
-    if(sb!==sa) return sb-sa;
-    return (b.fitOlivier||0)-(a.fitOlivier||0);
-  });
-
-  if(!cardsOnly){
-    // Build full shell including intro, toggles, key
-    const introHtml =
-      '<div class="mo-intro">'+
-        '<div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:.75rem">'+
-          '<h2 style="margin:0">Minutes Outlook · 2027 Entry Analysis</h2>'+
-          '<div style="display:flex;gap:.35rem;align-items:center;flex-shrink:0">'+
-            '<span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-right:4px">Ranking mode:</span>'+
-            '<button id="mo-toggle-roster"   class="mo-toggle-btn mo-toggle-active" onclick="setMoMode(\'roster\')">📋 Roster-Based</button>'+
-            '<button id="mo-toggle-adjusted" class="mo-toggle-btn" onclick="setMoMode(\'adjusted\')">⚽ Olivier-Adjusted</button>'+
-          '</div>'+
-        '</div>'+
-        '<div id="mo-mode-desc" class="mo-mode-desc">'+
-          '<strong>Roster-Based:</strong> Ranks purely on squad numbers and trajectory — how open the roster is regardless of who Olivier is. Same methodology for every player.'+
-        '</div>'+
-        '<p style="color:var(--muted);font-size:13px;line-height:1.6;margin:.6rem 0 .5rem">'+
-          'Olivier enters US college soccer in <strong>August 2027</strong>. Trajectories project realistic playing time across all 4 years based on 2025 rosters and how players age out.'+
-        '</p>'+
-        '<div class="mo-key">'+
-          '<div class="mo-key-item"><strong>2025 Sr/Gr</strong> → already gone, irrelevant</div>'+
-          '<div class="mo-key-item"><strong>2025 Jr</strong> → graduate after 2026 → ✅ <em>cleared before he arrives</em></div>'+
-          '<div class="mo-key-item"><strong>2025 So</strong> → become 2027 Sr → 1-yr overlap with Olivier</div>'+
-          '<div class="mo-key-item"><strong>2025 Fr</strong> → become 2027 Jr → ❌ <em>primary 2-year competition</em></div>'+
-          '<div class="mo-key-item"><strong>+ Unknown 2026 class</strong> (coach call needed)</div>'+
-        '</div>'+
-      '</div>'+
-      '<div id="mo-cards-wrap"></div>'+
-      '<div id="mo-unavail-wrap"></div>'+
-      '<div class="mo-footer">'+
-        '<p style="color:var(--muted);font-size:12px;line-height:1.6;margin-top:1.5rem">'+
-          '<strong>Methodology caveat:</strong> Outlook assumes typical recruiting class sizes (3–5 MFs/yr). '+
-          'The 2026 freshman class is being recruited now and is unknown. '+
-          'Refine Yr1–2 projections by asking each coach: <em>"How many central midfielders are in your 2026 and 2027 classes, and what is your projected 2027 starting XI?"</em>'+
-        '</p>'+
-      '</div>';
-
-    container.innerHTML = introHtml;
-
-    // Build unavailable section once
-    if(unavailable.length){
-      let unavailHtml = '<div class="mo-unavail-section">'+
-        '<div class="mo-unavail-heading">⚠ No Roster Data — '+unavailable.length+' schools</div>'+
-        '<div class="mo-unavail-grid">';
-      unavailable.forEach(u=>{
-        const mo = u.minutesOutlook || {};
-        unavailHtml += '<div class="mo-unavail-card">'+
-          '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
-          '<span class="mo-school-name" style="font-size:12px">'+u.full+'</span>'+
-          '<span style="font-size:11px;color:var(--muted);flex:1;text-align:right">'+(mo.reason||'Not analysed')+'</span>'+
-        '</div>';
-      });
-      unavailHtml += '</div></div>';
-      const unavailWrap = document.getElementById('mo-unavail-wrap');
-      if(unavailWrap) unavailWrap.innerHTML = unavailHtml;
-    }
+  const fullUnis = unis.filter(u=>u.profileDepth==='full'&&u.minutesOutlook);
+  if(!fullUnis.length){
+    container.innerHTML='<div style="padding:2rem;color:var(--muted)">Minutes Outlook data not yet loaded.</div>';
+    return;
   }
 
-  // Update mode description
-  const modeDesc = document.getElementById('mo-mode-desc');
-  if(modeDesc){
-    if(moMode==='roster'){
-      modeDesc.innerHTML = '<strong>📋 Roster-Based:</strong> Ranks purely on squad numbers and trajectory — how open the roster is, regardless of who Olivier is. Same methodology applied to any player.';
-    } else {
-      modeDesc.innerHTML = '<strong>⚽ Olivier-Adjusted:</strong> Applies a division quality factor based on Olivier\'s ability level (8/10 box-to-box, ATAR 70). <span style="color:var(--emerald)">D2 ×1.15</span> and <span style="color:var(--emerald)">NAIA ×1.25</span> — at those levels he would likely play sooner than an average recruit. <span style="color:var(--sky)">D1 ×1.0</span> — competitive but not guaranteed. This shows his realistic best-case minutes picture.';
-    }
-  }
+  let headerHtml = `
+    <div class="section-head"><h2>⏱ 2027 Entry — Minutes Outlook for Olivier</h2></div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:1rem;line-height:1.75">
+      Roster analysis for each fully-profiled school. Shows how many central midfielders clear out before Olivier's 2027 entry,
+      who remains as competition, and a year-by-year trajectory for playing time.
+    </p>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:1.5rem">
+      <span style="font-size:11px;font-weight:700;color:var(--muted)">Filter:</span>
+      <button class="mo-toggle-btn mo-toggle-active" id="mo-btn-all"   onclick="moFilter('all',this)">All schools</button>
+      <button class="mo-toggle-btn"                  id="mo-btn-D1"    onclick="moFilter('D1',this)">D1 only</button>
+      <button class="mo-toggle-btn"                  id="mo-btn-D2"    onclick="moFilter('D2',this)">D2 / NAIA</button>
+      <button class="mo-toggle-btn"                  id="mo-btn-open"  onclick="moFilter('open',this)">Open Competition</button>
+      <button class="mo-toggle-btn"                  id="mo-btn-warm"  onclick="moFilter('warm',this)">Warm Climate</button>
+    </div>
+    <div id="mo-cards-wrap" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem"></div>`;
 
-  // Build cards
-  let cardsHtml = '<div class="mo-cards-grid">';
-  ranked.forEach((u,idx)=>{
-    const mo = u.minutesOutlook || {};
-    const traj = mo.trajectory || [];
-    const score = calcMinutesScore(u, moMode);
-    const rosterScore = calcMinutesScore(u, 'roster');
-    const adjScore = calcMinutesScore(u, 'adjusted');
-    const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
-    const riskColor = mo.recruit_risk==='High'?'var(--amber)':mo.recruit_risk==='Medium'?'var(--sky)':'var(--emerald)';
-    const riskLabel = mo.recruit_risk==='High'?'High Demand':mo.recruit_risk==='Medium'?'Moderate':'Open';
-    const divFactor = MO_DIV_FACTOR[u.div]||1.0;
-    const showAdj = moMode==='adjusted' && divFactor!==1.0;
+  container.innerHTML = headerHtml;
+  moRenderCards(fullUnis, 'all');
+}
 
-    cardsHtml += '<div class="mo-card'+(idx<3?' mo-top':'')+'">'+
-      '<div class="mo-card-head">'+
-        (idx<3?'<span class="mo-rank">#'+(idx+1)+'</span>':'')+
-        '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
-        '<span class="mo-school-name">'+u.full+'</span>'+
-        '<div style="display:flex;align-items:center;gap:6px;margin-left:auto">'+
-          (showAdj?
-            '<span style="font-size:9px;font-weight:700;color:var(--emerald);background:var(--emerald3);border-radius:4px;padding:1px 6px">×'+divFactor+' adj</span>':
-            '')+
-          '<span class="mo-score" style="color:'+scoreColor+'">'+score+'</span>'+
-        '</div>'+
-        '<a href="'+rosterUrl(u)+'" target="_blank" style="font-size:10px;font-weight:700;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:2px 8px;border-radius:5px;border:1px solid #c7d2fe;white-space:nowrap;margin-left:8px">📋 Roster →</a>'+
-      '</div>'+
-      '<div class="mo-card-body">'+
-        '<div class="mo-trajectory">';
+function moFilter(mode, btn){
+  document.querySelectorAll('.mo-toggle-btn').forEach(b=>b.classList.remove('mo-toggle-active'));
+  btn.classList.add('mo-toggle-active');
+  const fullUnis = unis.filter(u=>u.profileDepth==='full'&&u.minutesOutlook);
+  moRenderCards(fullUnis, mode);
+}
 
-    traj.forEach(t=>{
-      const barColor = t.pct>=80?'#3B6D11':t.pct>=60?'#639922':t.pct>=40?'#BA7517':'#A32D2D';
-      cardsHtml += '<div class="mo-traj-row">'+
-        '<div class="mo-traj-year">'+t.year+' · '+t.yr_label+'</div>'+
-        '<div class="mo-traj-bar"><div class="mo-traj-fill" style="width:'+t.pct+'%;background:'+barColor+'"></div></div>'+
-        '<div class="mo-traj-label">'+t.label+'</div>'+
-      '</div>';
-    });
+function moRenderCards(allUnis, mode){
+  let filtered = allUnis;
+  if(mode==='D1')   filtered = allUnis.filter(u=>u.div==='D1'||u.div==='IVY');
+  if(mode==='D2')   filtered = allUnis.filter(u=>u.div==='D2'||u.div==='NAIA');
+  if(mode==='open') filtered = allUnis.filter(u=>(u.minutesOutlook?.recruit_risk||'').includes('Low')||u.minutesOutlook?.cleared_before_2027>=4);
+  if(mode==='warm') filtered = allUnis.filter(u=>u.warm);
 
-    cardsHtml += '</div>'+
-      '<div class="mo-stats">'+
-        '<div class="mo-stat"><div class="mo-stat-num">'+mo.mf_total_2025+'</div><div class="mo-stat-lbl">MFs (2025)</div></div>'+
-        '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--emerald)">'+mo.cleared_before_2027+'</div><div class="mo-stat-lbl">Cleared by 2027</div></div>'+
-        '<div class="mo-stat"><div class="mo-stat-num">'+mo.rising_senior_2027_count+'</div><div class="mo-stat-lbl">2027 Seniors</div></div>'+
-        '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div><div class="mo-stat-lbl">2027 Juniors</div></div>'+
-        '<div class="mo-stat"><div class="mo-stat-num" style="color:'+riskColor+';font-size:13px;font-weight:800">'+riskLabel+'</div><div class="mo-stat-lbl">Entry Competition</div></div>'+
-      '</div>';
+  const sorted = [...filtered].sort((a,b)=>(b.minutesOutlook?.cleared_before_2027||0)-(a.minutesOutlook?.cleared_before_2027||0));
 
-    if(mo.cleared_names && mo.cleared_names.length){
-      cardsHtml += '<div class="mo-names"><strong>Gone before Olivier arrives:</strong> '+mo.cleared_names.join(', ')+'</div>';
-    }
-    if(mo.rising_junior_2027_names && mo.rising_junior_2027_names.length){
-      cardsHtml += '<div class="mo-names mo-names-warn"><strong>Primary 2027-junior blockers:</strong> '+mo.rising_junior_2027_names.join(', ')+'</div>';
-    }
+  let cardsHtml = '';
+  sorted.forEach(u=>{
+    const mo = u.minutesOutlook;
+    if(!mo) return;
 
-    // Show both scores when in adjusted mode so user can compare
-    if(moMode==='adjusted'){
-      cardsHtml += '<div style="font-size:10px;color:var(--hint);margin-top:.4rem;padding-top:.4rem;border-top:1px solid var(--border)">'+
-        'Roster score: <strong>'+rosterScore+'</strong> → Olivier-adjusted: <strong style="color:'+scoreColor+'">'+adjScore+'</strong>'+
-        (divFactor!==1.0?' ('+u.div+' ×'+divFactor+')':'(D1 — no adjustment)')+
-      '</div>';
-    }
+    const cleared = mo.cleared_before_2027||0;
+    const traj = (mo.trajectory||[])[0];
+    const yr1pct = traj?traj.pct:0;
+    const yr1label = traj?traj.label:'Unknown';
+    const barColor = yr1pct>=80?'var(--emerald)':yr1pct>=50?'var(--amber)':'var(--rose)';
+    const riskColor = (mo.recruit_risk||'').includes('High')?'var(--amber)':(mo.recruit_risk||'').includes('Low')?'var(--emerald)':'var(--sky)';
 
-    cardsHtml += '</div></div>';
+    const divFactor = u.div==='D1'?1.0:u.div==='IVY'?1.1:0.85;
+
+    cardsHtml+=`<div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden">
+      <div style="background:var(--navy);padding:.85rem 1rem;display:flex;align-items:center;gap:.75rem">
+        <div style="width:36px;height:36px;border-radius:8px;background:var(--surface2);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">
+          ${u.domain?`<img src="https://logo.clearbit.com/${u.domain}" width="28" height="28" style="object-fit:contain" onerror="this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=null">`:`<span style="font-size:9px;font-weight:800;color:var(--muted)">${u.name.slice(0,3)}</span>`}
+        </div>
+        <div>
+          <div style="font-size:13px;font-weight:700;color:#fff">${u.name}</div>
+          <div style="font-size:10px;color:rgba(255,255,255,.5)">${u.div} · ${u.conf.split(' ')[0]}</div>
+        </div>
+        <div style="margin-left:auto;text-align:right">
+          <div style="font-size:1.4rem;font-weight:800;color:var(--emerald)">${cleared}</div>
+          <div style="font-size:9px;color:rgba(255,255,255,.4)">MFs cleared</div>
+        </div>
+      </div>
+      <div style="padding:.85rem 1rem">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:.65rem">
+          <div style="flex:1;height:6px;background:var(--surface3);border-radius:3px;overflow:hidden">
+            <div style="width:${yr1pct}%;height:100%;background:${barColor};border-radius:3px"></div>
+          </div>
+          <div style="font-size:11px;font-weight:700;color:${barColor};flex-shrink:0">${yr1pct}%</div>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:.5rem">Yr 1 outlook: <strong>${yr1label}</strong></div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          <span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--surface2);color:${riskColor}">Competition: ${mo.recruit_risk||'—'}</span>
+          ${u.warm?'<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:var(--amber3);color:var(--amber)">☀ Warm</span>':''}
+        </div>
+        ${mo.trajectoryNote?`<div style="font-size:11px;color:var(--hint);margin-top:.5rem;line-height:1.5">${mo.trajectoryNote.slice(0,120)}${mo.trajectoryNote.length>120?'…':''}</div>`:''}
+        <button class="detail-btn" style="margin-top:.75rem;width:100%;font-size:12px;padding:6px" onclick="openDetail('${u.id}')">Full Details & Minutes Tab →</button>
+      </div>
+    </div>`;
   });
 
   cardsHtml += '</div>';

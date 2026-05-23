@@ -1,16 +1,18 @@
 // ═══════════════════════════════════════════════════════════════════════
-// app.js  —  Olivier Scholarship Guide v18
+// app.js  —  Olivier Scholarship Guide v19
 // All application logic. Data loaded from data/ JSON files.
 // v16: Conference-split JSON, Dashboard tab, sort system, listed-depth schools.
 // v17: ATAR hide-ineligible toggle. Below-min cards greyed out. Top Picks
 //      always remain visible (dimmed only, never hidden) regardless of GPA.
 // V18: New Schools and Conferences
+// V19: Major Update. Make HTML completely Dynamic. No Hardcoded data
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v18';
+const APP_VERSION = 'v19';
 
 let unis = [];
 let conferences = [];
+let conferencePrestige = [];
 let coachData = [];
 
 // ── AUD/USD Exchange Rate ─────────────────────────────────────────────────────
@@ -61,18 +63,21 @@ const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'oth
 async function loadData() {
   try {
     const base = window.DATA_BASE_URL || './data/';
-    const [confResults, confsRes, coachesRes] = await Promise.all([
+    const [confResults, confsRes, coachesRes, confPrestigeRes] = await Promise.all([
       Promise.all(CONF_FILES.map(f => fetch(base + f + '.json').then(r => { if (!r.ok) throw new Error('Failed to load ' + f + '.json'); return r.json(); }))),
       fetch(base + 'conferences.json'),
-      fetch(base + 'coaches.json')
+      fetch(base + 'coaches.json'),
+      fetch(base + 'conf-prestige.json')
     ]);
 
-    if (!confsRes.ok)   throw new Error('Failed to load conferences.json');
-    if (!coachesRes.ok) throw new Error('Failed to load coaches.json');
+    if (!confsRes.ok)        throw new Error('Failed to load conferences.json');
+    if (!coachesRes.ok)      throw new Error('Failed to load coaches.json');
+    if (!confPrestigeRes.ok) throw new Error('Failed to load conf-prestige.json');
 
-    unis        = confResults.flat();
-    conferences = await confsRes.json();
-    coachData   = await coachesRes.json();
+    unis               = confResults.flat();
+    conferences        = await confsRes.json();
+    coachData          = await coachesRes.json();
+    conferencePrestige = await confPrestigeRes.json();
 
     // Fetch live FX rate — runs alongside initApp, updates UI when ready
     fetchLiveFxRate().then(fx => {
@@ -112,6 +117,7 @@ function initApp() {
   renderCards();
   renderComparePage();
   renderConferences();
+  renderConferencePrestige();
   renderCoachCards();
   renderCoachTable();
   renderFinSchoolSelector();
@@ -1318,6 +1324,51 @@ function renderContacts(){
 // CONFERENCES DATA & RENDER
 // ══════════════════════════════════════════════════
 
+
+function renderConferencePrestige() {
+  try {
+    const container = document.getElementById('conf-prestige-container');
+    if (!container) return;
+    if (!Array.isArray(conferencePrestige) || !conferencePrestige.length) return;
+
+    const sorted = [...conferencePrestige].sort((a, b) => a.rank - b.rank);
+
+    const rows = sorted.map(c => {
+      const programsCell = c.programsInGuideWarning
+        ? `<span style="color:var(--rose);font-weight:700">⚠ ${c.programsInGuide}</span>`
+        : c.programsInGuide;
+
+      const pipelineCell = c.mlsPipelineWarning
+        ? `<span style="color:var(--rose)">${c.mlsPipeline}</span>`
+        : c.mlsPipeline;
+
+      const relevanceCell = c.rank === 4
+        ? `<strong style="color:var(--rose)">SEC has NO men's varsity soccer at UF.</strong> Listed only because UF APK is the #1 academic match. The SEC as a conference does not sponsor men's soccer at most member schools — football culture dominates.`
+        : c.relevance;
+
+      return `<tr>
+        <td><span class="rk-num ${c.rankClass}">${c.rank}</span>${c.name}</td>
+        <td>${c.fullName}</td>
+        <td><span class="dbadge ${c.divBadge}">${c.div}</span></td>
+        <td>${programsCell}</td>
+        <td>${pipelineCell}</td>
+        <td>${c.scholarships}</td>
+        <td>${relevanceCell}</td>
+      </tr>`;
+    }).join('');
+
+    container.innerHTML = `<div style="overflow-x:auto;margin-bottom:2.5rem;">
+      <table class="ranking-table">
+        <thead><tr>
+          <th>Rank</th><th>Conference</th><th>Division</th>
+          <th>Programs in Guide</th><th>MLS Pipeline (5yr)</th>
+          <th>Scholarships</th><th>Relevance for Olivier</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  } catch(e) { console.error('renderConferencePrestige failed:', e); }
+}
 
 function renderConferences(){
   const container=document.getElementById('conferences-container');

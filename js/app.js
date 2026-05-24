@@ -15,6 +15,7 @@ let conferences = [];
 let conferencePrestige = [];
 let pipelineData = {};
 let coachData = [];
+let athleteConfig = {};
 
 // ── AUD/USD Exchange Rate ─────────────────────────────────────────────────────
 // Fetched live from open.er-api.com — free, no key needed.
@@ -64,24 +65,27 @@ const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'oth
 async function loadData() {
   try {
     const base = window.DATA_BASE_URL || './data/';
-    const [confResults, confsRes, coachesRes, confPrestigeRes, pipelineRes] = await Promise.all([
+    const [confResults, confsRes, coachesRes, confPrestigeRes, pipelineRes, athleteRes] = await Promise.all([
       Promise.all(CONF_FILES.map(f => fetch(base + f + '.json').then(r => { if (!r.ok) throw new Error('Failed to load ' + f + '.json'); return r.json(); }))),
       fetch(base + 'conferences.json'),
       fetch(base + 'coaches.json'),
       fetch(base + 'conf-prestige.json'),
-      fetch(base + 'pipeline.json')
+      fetch(base + 'pipeline.json'),
+      fetch(base + 'olivier.json')
     ]);
 
     if (!confsRes.ok)        throw new Error('Failed to load conferences.json');
     if (!coachesRes.ok)      throw new Error('Failed to load coaches.json');
     if (!confPrestigeRes.ok) throw new Error('Failed to load conf-prestige.json');
     if (!pipelineRes.ok)     throw new Error('Failed to load pipeline.json');
+    if (!athleteRes.ok)      throw new Error('Failed to load olivier.json');
 
     unis               = confResults.flat();
     conferences        = await confsRes.json();
     coachData          = await coachesRes.json();
     conferencePrestige = await confPrestigeRes.json();
     pipelineData       = await pipelineRes.json();
+    athleteConfig      = await athleteRes.json();
 
     // Fetch live FX rate — runs alongside initApp, updates UI when ready
     fetchLiveFxRate().then(fx => {
@@ -121,9 +125,10 @@ function initApp() {
   renderCards();
   renderComparePage();
   renderConferences();
+  renderPathways();
   renderPipelineTables();
   renderConferencePrestige();
-  renderACUTable(); 	
+  renderACUTable();
   renderCoachCards();
   renderCoachTable();
   renderFinSchoolSelector();
@@ -1325,6 +1330,40 @@ function renderContacts(){
 
     ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
   container.innerHTML=html;
+}
+
+// ══════════════════════════════════════════════════
+// PATHWAYS — rendered from olivier.json athleteConfig
+// ══════════════════════════════════════════════════
+
+function renderPathways() {
+  try {
+    const container = document.getElementById('pathways-container');
+    if (!container) return;
+    const p = athleteConfig.pathways;
+    if (!p) return;
+
+    const pathCards = (p.paths || []).map(path => `
+      <div class="path-card" style="border-color:${path.borderColor};">
+        <div style="font-size:11px;font-weight:700;color:${path.labelColor};text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">${path.label}</div>
+        <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.65rem;">${path.title}</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7">${path.body}</p>
+        <div style="font-size:12px;color:${path.footerColor};border-top:1px solid var(--border);padding-top:.65rem;margin-top:.5rem">${path.footer}</div>
+      </div>`).join('');
+
+    const questions = (p.coachQuestions || []).map(q =>
+      `<div class="q-card">"${q}"</div>`
+    ).join('');
+
+    container.innerHTML = `
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:2rem;">
+        ${pathCards}
+      </div>
+      <div class="section-head"><h2>Questions to Ask Every Coach</h2></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.75rem;margin-bottom:2rem;">
+        ${questions}
+      </div>`;
+  } catch(e) { console.error('renderPathways failed:', e); }
 }
 
 // ══════════════════════════════════════════════════

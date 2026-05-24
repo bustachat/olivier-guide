@@ -122,7 +122,8 @@ function initApp() {
   renderComparePage();
   renderConferences();
   renderPipelineTables();
-  renderConferencePrestige(); 	
+  renderConferencePrestige();
+  renderACUTable(); 	
   renderCoachCards();
   renderCoachTable();
   renderFinSchoolSelector();
@@ -1325,6 +1326,85 @@ function renderContacts(){
     ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
   container.innerHTML=html;
 }
+
+// ══════════════════════════════════════════════════
+// ACU ALIGNMENT TABLE — rendered from acuUnits on school objects
+// ══════════════════════════════════════════════════
+
+const ACU_UNIT_META = [
+  { unit: "ANAT100", label: "Anatomical Foundations",            usEquiv: "Human/Applied Anatomy",                       coverage: "Full — universal" },
+  { unit: "EXSC222", label: "Functional Anatomy",                usEquiv: "Functional/Applied Anatomy",                   coverage: "Full at D1/top D2" },
+  { unit: "BIOL125", label: "Human Biology 1",                   usEquiv: "General/Human Biology",                        coverage: "Full — universal prerequisite" },
+  { unit: "EXSC225", label: "Physiological Bases of Exercise",   usEquiv: "Introduction to Exercise Physiology",          coverage: "Full — universal" },
+  { unit: "EXSC322", label: "Exercise Physiology: Adaptation",   usEquiv: "Advanced Exercise Physiology",                 coverage: "Full at D1/strong D2" },
+  { unit: "EXSC394", label: "Exercise Prescription",             usEquiv: "Exercise Prescription / Clinical Ex Phys",     coverage: "Full at pre-PT programs" },
+  { unit: "EXSC224", label: "Mechanical Bases of Exercise",      usEquiv: "Introduction to Biomechanics",                 coverage: "Full — universal" },
+  { unit: "EXSC321", label: "Biomechanics",                      usEquiv: "Advanced/Applied Biomechanics",                coverage: "Full at D1/strong D2" },
+  { unit: "EXSC204", label: "Exercise Prescription & Delivery",  usEquiv: "Exercise Testing and Prescription",            coverage: "Strong — near identical",        partial: true },
+  { unit: "EXSC216", label: "Resistance Training",               usEquiv: "Strength & Conditioning / Resistance Training",coverage: "Strong — near identical",        partial: true },
+  { unit: "EXSC199", label: "Psychology of Sport",               usEquiv: "Sport Psychology",                             coverage: "Full — universal" },
+  { unit: "EXSC296", label: "Health & Exercise Psychology",      usEquiv: "Exercise & Health Psychology",                 coverage: "Strong at major programs",       partial: true },
+  { unit: "EXSC187", label: "Growth, Motor Development & Ageing",usEquiv: "Lifespan Motor Development",                  coverage: "Partial — often split",          amber: true },
+  { unit: "EXSC230", label: "Motor Control & Learning",          usEquiv: "Motor Control & Learning / Neuromechanics",   coverage: "Partial — rare standalone",      amber: true },
+  { unit: "EXSC122", label: "Research & Ethics",                 usEquiv: "Research Methods in Kinesiology",              coverage: "Strong — required everywhere",   partial: true },
+  { unit: "EXSC398", label: "Professional Experience (140hrs)",  usEquiv: "Internship / Clinical Practicum",              coverage: "Full at UF*, PBA, Indiana, Akron" },
+];
+
+function renderACUTable() {
+  try {
+    const container = document.getElementById('acu-table-container');
+    if (!container) return;
+    if (!Array.isArray(unis) || !unis.length) return;
+
+    const fullProfiles = unis.filter(u => u.profileDepth === 'full' && Array.isArray(u.acuUnits));
+    if (!fullProfiles.length) return;
+
+    const rows = ACU_UNIT_META.map(meta => {
+      const covering = fullProfiles
+        .filter(u => {
+          const match = u.acuUnits.find(x => x.unit === meta.unit);
+          return match && match.covered;
+        })
+        .sort((a, b) => (b.acuAlign || 0) - (a.acuAlign || 0));
+
+      const chips = covering.map(u => {
+        const color = u.acuAlign >= 14 ? 'var(--emerald)' :
+                      u.acuAlign >= 10 ? 'var(--sky)' : 'var(--amber)';
+        const bg    = u.acuAlign >= 14 ? 'var(--emerald3)' :
+                      u.acuAlign >= 10 ? 'var(--sky3)' : 'var(--amber3)';
+        const note  = u.div === 'IVY' ? ' (no schol)' :
+                      u.noVarsity ? ' ⚠' : '';
+        return `<span style="display:inline-block;font-size:10px;font-weight:600;padding:1px 7px;border-radius:5px;margin:2px 2px 0;background:${bg};color:${color}">${u.name}${note}</span>`;
+      }).join('');
+
+      const coverageChip = meta.amber
+        ? `<span class="align-pill" style="background:var(--amber3);color:var(--amber)">${meta.coverage}</span>`
+        : meta.partial
+          ? `<span class="align-pill align-strong">${meta.coverage}</span>`
+          : `<span class="align-pill align-full">${meta.coverage}</span>`;
+
+      return `<tr>
+        <td>${meta.unit} — ${meta.label}</td>
+        <td>${meta.usEquiv}</td>
+        <td>${chips || '<span style="color:var(--hint);font-size:11px">—</span>'}</td>
+        <td>${coverageChip}</td>
+      </tr>`;
+    }).join('');
+
+    container.innerHTML = `<div style="overflow-x:auto;">
+      <table class="pro-league-table">
+        <thead><tr>
+          <th>ACU Unit</th>
+          <th>US Equivalent Name</th>
+          <th>Programs covering this unit</th>
+          <th>Coverage</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  } catch(e) { console.error('renderACUTable failed:', e); }
+}
+
 
 // ══════════════════════════════════════════════════
 // PIPELINE DATA & RENDER

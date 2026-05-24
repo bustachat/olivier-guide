@@ -13,6 +13,7 @@ const APP_VERSION = 'v19';
 let unis = [];
 let conferences = [];
 let conferencePrestige = [];
+let pipelineData = {};
 let coachData = [];
 
 // ── AUD/USD Exchange Rate ─────────────────────────────────────────────────────
@@ -63,21 +64,24 @@ const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'oth
 async function loadData() {
   try {
     const base = window.DATA_BASE_URL || './data/';
-    const [confResults, confsRes, coachesRes, confPrestigeRes] = await Promise.all([
+    const [confResults, confsRes, coachesRes, confPrestigeRes, pipelineRes] = await Promise.all([
       Promise.all(CONF_FILES.map(f => fetch(base + f + '.json').then(r => { if (!r.ok) throw new Error('Failed to load ' + f + '.json'); return r.json(); }))),
       fetch(base + 'conferences.json'),
       fetch(base + 'coaches.json'),
-      fetch(base + 'conf-prestige.json')
+      fetch(base + 'conf-prestige.json'),
+      fetch(base + 'pipeline.json')
     ]);
 
     if (!confsRes.ok)        throw new Error('Failed to load conferences.json');
     if (!coachesRes.ok)      throw new Error('Failed to load coaches.json');
     if (!confPrestigeRes.ok) throw new Error('Failed to load conf-prestige.json');
+    if (!pipelineRes.ok)     throw new Error('Failed to load pipeline.json');
 
     unis               = confResults.flat();
     conferences        = await confsRes.json();
     coachData          = await coachesRes.json();
     conferencePrestige = await confPrestigeRes.json();
+    pipelineData       = await pipelineRes.json();
 
     // Fetch live FX rate — runs alongside initApp, updates UI when ready
     fetchLiveFxRate().then(fx => {
@@ -117,7 +121,8 @@ function initApp() {
   renderCards();
   renderComparePage();
   renderConferences();
-  renderConferencePrestige();
+  renderPipelineTables();
+  renderConferencePrestige(); 	
   renderCoachCards();
   renderCoachTable();
   renderFinSchoolSelector();
@@ -1320,6 +1325,88 @@ function renderContacts(){
     ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
   container.innerHTML=html;
 }
+
+// ══════════════════════════════════════════════════
+// PIPELINE DATA & RENDER
+// ══════════════════════════════════════════════════
+
+function chipStyle(style) {
+  const map = {
+    'chip-green':  'background:#f0fdf4;color:#166534;font-size:9px;font-weight:700;padding:2px 6px;border-radius:8px',
+    'chip-purple': 'background:#f5f3ff;color:#5b21b6;font-size:9px;font-weight:700;padding:2px 6px;border-radius:8px',
+    'chip-gold':   'background:#fef9c3;color:#854d0e;font-size:9px;font-weight:700;padding:2px 6px;border-radius:8px',
+    'hint':        'color:var(--hint);font-size:11px',
+  };
+  return map[style] || 'font-size:11px;color:var(--muted)';
+}
+
+function buildChampionshipRows(rows, cols) {
+  return rows.map(r => {
+    if (r.sectionDivider) {
+      return `<tr style="background:var(--surface2,#f8f8f6)"><td colspan="${cols}" style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--hint);padding:5px 10px">${r.dividerLabel}</td></tr>`;
+    }
+    const rankCell = r.rankClass
+      ? `<span class="${r.rankClass}">${r.rank}</span>${r.school}`
+      : `${r.rank !== null ? r.rank + ' · ' : '— '}${r.school}`;
+    const titlesCell = r.titlesColor === 'muted'
+      ? `<span style="color:var(--muted)">${r.titles}</span>`
+      : r.titles;
+    const yearsCell = r.yearsStyle
+      ? `<span style="${chipStyle(r.yearsStyle)}">${r.years}</span>`
+      : r.years;
+    return `<tr>
+      <td>${rankCell}</td>
+      <td><span class="dbadge ${r.badgeClass}">${r.badge}</span></td>
+      <td>${titlesCell}</td>
+      <td style="font-size:11px">${yearsCell}</td>
+      <td style="font-size:11px;color:var(--muted)">${r.notes}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderPipelineTables() {
+  try {
+    if (!pipelineData || !pipelineData.ncaaD1) return;
+
+    const d1 = document.getElementById('pipeline-d1-container');
+    if (d1) {
+      d1.innerHTML = `<div style="overflow-x:auto;margin-bottom:.5rem;"><table class="pro-league-table">
+        <thead><tr><th>School</th><th>Division</th><th>D1 Titles</th><th>Years</th><th>Notes</th></tr></thead>
+        <tbody>${buildChampionshipRows(pipelineData.ncaaD1, 5)}</tbody>
+      </table></div>`;
+    }
+
+    const d2 = document.getElementById('pipeline-d2-container');
+    if (d2) {
+      d2.innerHTML = `<div style="overflow-x:auto;margin-bottom:.5rem;"><table class="pro-league-table">
+        <thead><tr><th>School</th><th>Division</th><th>D2 Titles</th><th>Years</th><th>Notes</th></tr></thead>
+        <tbody>${buildChampionshipRows(pipelineData.ncaaD2, 5)}</tbody>
+      </table></div>`;
+    }
+
+    const mls = document.getElementById('pipeline-mls-container');
+    if (mls) {
+      const mlsRows = pipelineData.mlsDraft.map(r => {
+        const rankCell = r.rankClass
+          ? `<span class="${r.rankClass}">${r.rank}</span>`
+          : r.rank;
+        return `<tr>
+          <td>${rankCell}</td>
+          <td>${r.school}</td>
+          <td><span class="dbadge ${r.badgeClass}">${r.badge}</span></td>
+          <td>${r.picks5yr}</td>
+          <td style="font-size:11px;color:var(--muted)">${r.notable}</td>
+          <td style="font-size:11px;color:var(--muted)">${r.allTime}</td>
+        </tr>`;
+      }).join('');
+      mls.innerHTML = `<div style="overflow-x:auto;margin-bottom:2rem;"><table class="pro-league-table">
+        <thead><tr><th>Rank</th><th>School</th><th>Div</th><th>Picks 5yr</th><th>Notable players</th><th>All-time pipeline</th></tr></thead>
+        <tbody>${mlsRows}</tbody>
+      </table></div>`;
+    }
+  } catch(e) { console.error('renderPipelineTables failed:', e); }
+}
+
 // ══════════════════════════════════════════════════
 // CONFERENCES DATA & RENDER
 // ══════════════════════════════════════════════════

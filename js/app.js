@@ -122,6 +122,7 @@ function initApp() {
   set('hstat-top',     totalTop);
 
   renderDashboard();
+  renderFilterChips();
   renderCards();
   renderComparePage();
   renderConferences();
@@ -1330,6 +1331,53 @@ function renderContacts(){
 
     ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
   container.innerHTML=html;
+}
+
+// ══════════════════════════════════════════════════
+// FILTER CHIPS — conference row rendered from unis data
+// ══════════════════════════════════════════════════
+
+const CONF_CHIP_LABELS = {
+  'acc':          'ACC',
+  'big-ten':      'Big Ten',
+  'big-east':     'Big East',
+  'aac':          'AAC',
+  'big-west':     'Big West',
+  'caa':          'CAA',
+  'asun':         'ASUN',
+  'sec':          'SEC',
+  'mac':          'MAC',
+  'wac':          'WAC',
+  'wcc':          'WCC',
+  'america-east': 'Am. East',
+  'other':        'D2 / NAIA / JUCO',
+};
+
+// Preferred display order — known conferences first, then alphabetical remainder
+const CONF_CHIP_ORDER = [
+  'acc','big-ten','big-east','aac','big-west','caa',
+  'asun','sec','mac','wac','wcc','america-east','other'
+];
+
+function renderFilterChips() {
+  try {
+    const container = document.getElementById('conf-filter-chips');
+    if (!container) return;
+    const keys = [...new Set(unis.map(u => u.confKey).filter(Boolean))];
+    const ordered = CONF_CHIP_ORDER.filter(k => keys.includes(k));
+    // Any keys not in the order list go at the end alphabetically
+    const extra = keys.filter(k => !CONF_CHIP_ORDER.includes(k)).sort();
+    [...ordered, ...extra].forEach(ck => {
+      const label = CONF_CHIP_LABELS[ck] || ck.toUpperCase();
+      const btn = document.createElement('button');
+      btn.className = 'fchip';
+      btn.dataset.filter = 'confkey';
+      btn.dataset.val = ck;
+      btn.onclick = function(){ toggleFilter(this); };
+      btn.textContent = label;
+      container.appendChild(btn);
+    });
+  } catch(e) { console.error('renderFilterChips failed:', e); }
 }
 
 // ══════════════════════════════════════════════════

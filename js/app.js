@@ -22,8 +22,9 @@ let athleteConfig = {};
 // Falls back to DEFAULT_FX if the fetch fails or times out.
 // Current mid-market rate as of May 2026: 1 USD = ~1.38 AUD (xe.com)
 // Default set to 1.40 — small buffer above live rate for budget planning.
-const DEFAULT_FX = 1.40;  // update this if AUD weakens significantly
+const DEFAULT_FX = 1.40;
 let currentFx = DEFAULT_FX;
+let fxIsLive   = false;  // true once a live rate is successfully fetched
 
 async function fetchLiveFxRate() {
   // Try two free CORS-friendly sources in sequence
@@ -42,6 +43,7 @@ async function fetchLiveFxRate() {
       const rate = src.parse(data);
       if (rate && rate > 1.0 && rate < 3.0) {
         currentFx = Math.round(rate * 100) / 100;
+        fxIsLive  = true;
         return currentFx;
       }
     } catch (_) { /* try next source */ }
@@ -57,7 +59,7 @@ function applyFxToUI(fx) {
   if (valFx) valFx.textContent = fx.toFixed(2);
 
   // Update banner rate box
-  const isLive = fx !== DEFAULT_FX;
+  const isLive = fxIsLive;
   const rateBox = document.getElementById('fin-rate-box');
   if (rateBox) {
     rateBox.className = 'fin-rate-box ' + (isLive ? 'live' : 'fallback');

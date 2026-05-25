@@ -143,8 +143,7 @@ function buildDashboardShell() {
     <div class="dash-panel">
       <div class="dash-panel-title">School map — dot size = fit · hover for details</div>
       <div class="dash-map-wrap" id="dash-map-wrap">
-        <svg id="dash-map-svg" viewBox="0 0 640 390" style="display:block;width:100%"></svg>
-        <div class="dash-map-tip" id="dash-map-tip"></div>
+        <svg id="dash-map-svg" viewBox="0 0 640 390" style="display:block;width:100%;border-radius:10px"></svg>
       </div>
       <div class="dash-map-legend">
         <div class="dash-ml"><div class="dash-ml-dot" style="background:#e11d48"></div>D1</div>
@@ -245,11 +244,9 @@ function buildDashboardShell() {
 .dash-main-grid{display:grid;grid-template-columns:3fr 2fr;gap:.7rem;}
 .dash-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.7rem .85rem;}
 .dash-panel-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:.55rem;}
-.dash-map-wrap{position:relative;background:#eef2f7;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
-.dash-map-dot{position:absolute;border-radius:50%;cursor:pointer;transform:translate(-50%,-50%);transition:opacity .2s,box-shadow .15s;}
-.dash-map-dot.shortlist{outline-offset:1px;}
-.dash-map-dot.dash-dot-highlighted{box-shadow:0 0 0 3px #fff,0 0 0 5px var(--indigo);z-index:10;opacity:1 !important;}
-.dash-map-tip{position:absolute;background:var(--navy);color:#fff;font-size:9px;font-weight:600;padding:3px 8px;border-radius:5px;pointer-events:none;white-space:nowrap;z-index:10;display:none;transform:translateX(-50%);}
+.dash-map-wrap{border-radius:10px;overflow:hidden;border:1px solid var(--border);}
+.dash-map-dot{cursor:pointer;transition:opacity .2s,r .15s;}
+.dash-map-dot.dash-dot-highlighted{stroke:#6366f1 !important;stroke-width:2.5 !important;opacity:1 !important;}
 .dash-map-legend{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.38rem;}
 .dash-ml{display:flex;align-items:center;gap:3px;font-size:8px;color:var(--muted);}
 .dash-ml-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
@@ -562,56 +559,44 @@ function drawMapBase() {
 }
 
 function updateMapDots() {
-  const wrap = document.getElementById('dash-map-wrap');
-  const svg  = document.getElementById('dash-map-svg');
-  if (!wrap || !svg) return;
+  const svg = document.getElementById('dash-map-svg');
+  if (!svg) return;
 
-  const svgW = 640, svgH = 390;
-  const measuredW = wrap.offsetWidth || wrap.parentElement?.offsetWidth || 0;
-  if (measuredW === 0) { observeMapResize(); return; }
-  wrap.style.height = (measuredW * (svgH/svgW)) + 'px';
+  // Remove old dots only — keep the base map paths
+  svg.querySelectorAll('.dash-map-dot').forEach(e => e.remove());
 
-  const tip = document.getElementById('dash-map-tip');
+  const ns = 'http://www.w3.org/2000/svg';
   const shortlistIds = new Set(dashAthlete.shortlist || []);
-
-  wrap.querySelectorAll('.dash-map-dot').forEach(e => e.remove());
 
   unis.filter(u => u.mapX !== undefined && u.mapY !== undefined && !u.excludeFromMap && !u.noVarsity).forEach(u => {
     const blocked = !dashReachable(u);
     const isSL    = shortlistIds.has(u.id);
     const color   = DASH_DIV_COLOR[u.div] || '#9ca3af';
-    const size    = Math.max(7, Math.min(14, Math.round((u.fitOlivier||50) / 9)));
-    const lp      = (u.mapX / svgW) * 100;
-    const tp      = (u.mapY / svgH) * 100;
+    const r       = Math.max(4, Math.min(8, Math.round((u.fitOlivier||50) / 13)));
 
-    const dot = document.createElement('div');
-    dot.className = 'dash-map-dot' + (isSL && !blocked ? ' shortlist' : '');
-    dot.dataset.id = u.id;
-    dot.style.cssText = [
-      'position:absolute', `left:${lp}%`, `top:${tp}%`,
-      `width:${size}px`, `height:${size}px`,
-      `background:${blocked ? '#b0bcc8' : color}`,
-      `opacity:${blocked ? 0.15 : 1}`,
-      isSL && !blocked ? `outline:2px solid var(--indigo);outline-offset:1px` : '',
-    ].filter(Boolean).join(';');
+    const circle = document.createElementNS(ns, 'circle');
+    circle.setAttribute('cx', u.mapX);
+    circle.setAttribute('cy', u.mapY);
+    circle.setAttribute('r',  r);
+    circle.setAttribute('fill',    blocked ? '#b0bcc8' : color);
+    circle.setAttribute('opacity', blocked ? '0.2' : '1');
+    circle.setAttribute('stroke',  isSL && !blocked ? 'var(--indigo)' : 'rgba(255,255,255,0.6)');
+    circle.setAttribute('stroke-width', isSL && !blocked ? '2' : '0.8');
+    circle.classList.add('dash-map-dot');
+    circle.dataset.id = u.id;
+    circle.style.cursor = 'pointer';
+    circle.style.transition = 'opacity .2s';
 
-    dot.addEventListener('mouseenter', function() {
-      // Floating tooltip on map
-      tip.style.display = 'block';
-      tip.textContent   = u.name + ' · $' + Math.round((u.fin?.costNum||0)/1000) + 'k · ' + (u.fitOlivier||'—') + '% fit';
-      tip.style.left = lp + '%';
-      tip.style.top  = (tp + 3) + '%';
-      // Show info in right panel
+    circle.addEventListener('mouseenter', function() {
       showHoverInfo(u);
-      // Cross-highlight bracket dot
       highlightDot(u.id);
     });
-    dot.addEventListener('mouseleave', () => {
-      tip.style.display = 'none';
+    circle.addEventListener('mouseleave', () => {
       clearHoverInfo();
       clearDotHighlights();
     });
-    wrap.appendChild(dot);
+
+    svg.appendChild(circle);
   });
 }
 
@@ -622,6 +607,9 @@ function showHoverInfo(u) {
   const fitColor  = (u.fitOlivier||0) >= 90 ? 'var(--emerald)' : (u.fitOlivier||0) >= 80 ? 'var(--amber)' : 'var(--rose)';
   const acuColor  = (u.acuAlign||0)   >= 14 ? 'var(--emerald)' : (u.acuAlign||0)   >= 10 ? 'var(--sky)'   : 'var(--amber)';
   const costNum   = u.fin?.costNum || 0;
+  const climate   = u.warm ? '☀ Warm' : '⛅ Mixed';
+  const cityTag   = u.city ? '🏙 City campus' : '🏘 Smaller town';
+  const culture   = u.culture?.olivierMatch || u.culture?.lifestyleTags || null;
   el.innerHTML = `
     <div class="dash-hi-name">${u.full || u.name}</div>
     <div class="dash-hi-meta">${u.div} · ${u.conf} · ${u.loc}</div>
@@ -630,7 +618,12 @@ function showHoverInfo(u) {
       <div class="dash-hi-sc" style="color:${acuColor}">${u.acuAlign||'—'}/16 <span>ACU</span></div>
       <div class="dash-hi-sc" style="color:var(--amber)">$${Math.round(costNum/1000)}k <span>/yr</span></div>
       <div class="dash-hi-sc" style="color:var(--muted)">${u.prePT ? u.prePT.split('—')[0].trim() : '—'} <span>pre-PT</span></div>
-    </div>`;
+    </div>
+    <div style="display:flex;gap:8px;margin-top:5px;flex-wrap:wrap">
+      <span style="font-size:9px;font-weight:600;color:var(--muted)">${climate}</span>
+      <span style="font-size:9px;font-weight:600;color:var(--muted)">${cityTag}</span>
+    </div>
+    ${culture ? `<div style="font-size:10px;color:var(--indigo);font-style:italic;margin-top:4px;line-height:1.4">"${culture}"</div>` : ''}`;
 }
 
 function clearHoverInfo() {
@@ -654,19 +647,6 @@ function clearDotHighlights() {
   document.querySelectorAll('.dash-dot-highlighted').forEach(d => d.classList.remove('dash-dot-highlighted'));
 }
 
-// Re-draw the map once its container gains a real width (handles the
-// case where the dashboard renders while hidden / before layout settles,
-// and re-fires on resize). Registered lazily; only one observer is kept.
-let _mapResizeObserver = null;
-function observeMapResize() {
-  if (_mapResizeObserver) return;
-  const wrap = document.getElementById('dash-map-wrap');
-  if (!wrap || typeof ResizeObserver === 'undefined') return;
-  _mapResizeObserver = new ResizeObserver(() => {
-    if (wrap.offsetWidth > 0) updateMapDots();
-  });
-  _mapResizeObserver.observe(wrap);
-}
 
 // ─── 6. Cost brackets ─────────────────────────────────────────────────────────
 function updateBrackets() {

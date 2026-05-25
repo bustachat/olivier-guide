@@ -250,9 +250,11 @@ function renderLensControls(){
             'title="'+L.desc.replace(/"/g,'&quot;')+'">'+L.label+'</button>'
         ).join('')+
       '</div>'+
-    '</div>'+
-    '<div class="lens-explainer" id="lens-explainer">'+
-      currentLensExplainer()+
+      '<div class="search-schools-wrap" style="margin-left:auto">'+
+        '<input id="search-schools" type="text" placeholder="Search schools…" '+
+          'oninput="filterBySearch(this.value);document.getElementById(\'search-clear-btn\').style.display=this.value?\'\':\'none\'">'+
+        '<button id="search-clear-btn" onclick="clearSearch()" title="Clear search">✕</button>'+
+      '</div>'+
     '</div>';
 }
 
@@ -268,9 +270,7 @@ function applyLens(lensKey){
   document.querySelectorAll('.lens-pill').forEach(b=>{
     b.classList.toggle('active', b.dataset.lens===lensKey);
   });
-  // Update explainer
-  const exp = document.getElementById('lens-explainer');
-  if(exp) exp.innerHTML = currentLensExplainer();
+  // Update explainer — removed in v20.1, lens desc now in tooltip only
   
   // Per-division ranking — get top 3 IDs per division
   const byDiv = lensRankByDivision(lensKey);
@@ -470,7 +470,7 @@ function buildCard(u){
   el.dataset.lensdivtop='false';
   el.dataset.conf=u.conf;
   el.dataset.confkey=u.confKey||'other';
-  el.dataset.confgroup=(u.conf||'').toLowerCase().replace(/\s+/g,'-');
+  el.dataset.confgroup=resolveConfGroup(u.conf||'');
   const gpaBucket=!u.gpa?'low':
     (u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open'))?'none':
     (u.gpa.minEntry.includes('2.0')||u.gpa.minEntry.includes('2.3'))?'low':
@@ -1211,9 +1211,38 @@ function updateAtarCounts() {
   if (bwEl) bwEl.textContent = below + ' below min';
 }
 
-// ══════════════════════════════════════════════════
-// v20: LIVE SEARCH + SHOW/HIDE ALL
-// ══════════════════════════════════════════════════
+// ── Conference group resolver — maps any conf string to a known chip key ──────
+const CONF_ALIAS_MAP = {
+  'sec': 'sec', 'southeastern': 'sec',
+  'acc': 'acc', 'atlantic coast': 'acc',
+  'big ten': 'big-ten', 'big-ten': 'big-ten',
+  'big east': 'big-east', 'big-east': 'big-east',
+  'aac': 'aac', 'american athletic': 'aac',
+  'big west': 'big-west', 'big-west': 'big-west',
+  'caa': 'caa', 'colonial athletic': 'caa',
+  'wac': 'wac', 'western athletic': 'wac',
+  'mac': 'mac', 'mid-american': 'mac',
+  'wcc': 'wcc', 'west coast': 'wcc',
+  'asun': 'asun',
+  'america east': 'america-east', 'america-east': 'america-east',
+  'ivy league': 'ivy-league', 'ivy': 'ivy-league',
+  'ssc': 'ssc', 'sunshine state': 'ssc',
+  'ccaa': 'ccaa', 'california collegiate': 'ccaa',
+  'lsc': 'lsc', 'lone star': 'lsc',
+  'sac': 'sac', 'sooner athletic': 'sac',
+  'sun conference': 'sun-conference', 'sun': 'sun-conference',
+  'sciac': 'sciac',
+  'cccaa': 'cccaa',
+  'njcaa': 'njcaa',
+};
+function resolveConfGroup(conf) {
+  const norm = conf.toLowerCase().trim();
+  return CONF_ALIAS_MAP[norm] ||
+    Object.entries(CONF_ALIAS_MAP).find(([alias]) => norm.includes(alias))?.[1] ||
+    norm.replace(/\s+/g, '-');
+}
+
+
 
 let searchKeyword = '';
 
@@ -1438,25 +1467,20 @@ function renderFilterChips() {
     const container = document.getElementById('conf-filter-chips');
     if (!container) return;
 
-    // Build set of confgroup values actually present in loaded schools
-    const presentGroups = new Set(
-      unis.map(u => (u.conf || '').toLowerCase().replace(/\s+/g, '-')).filter(Boolean)
-    );
+    // Find which known chip keys are present in loaded data
+    const presentKeys = new Set();
+    unis.forEach(u => {
+      const key = resolveConfGroup(u.conf || '');
+      if (CONF_CHIP_LABELS[key]) presentKeys.add(key);
+    });
 
-    // Ordered known conferences that are present
-    const ordered = CONF_CHIP_ORDER.filter(k => presentGroups.has(k));
-
-    // Any present groups not in our known order — append alphabetically
-    const extra = [...presentGroups]
-      .filter(k => !CONF_CHIP_ORDER.includes(k))
-      .sort();
-
-    [...ordered, ...extra].forEach(cg => {
-      const label = CONF_CHIP_LABELS[cg] || cg.toUpperCase().replace(/-/g, ' ');
+    // Render in prestige order, only present keys
+    CONF_CHIP_ORDER.filter(k => presentKeys.has(k)).forEach(ck => {
+      const label = CONF_CHIP_LABELS[ck] || ck.toUpperCase();
       const btn = document.createElement('button');
       btn.className = 'fchip';
       btn.dataset.filter = 'confgroup';
-      btn.dataset.val = cg;
+      btn.dataset.val = ck;
       btn.onclick = function(){ toggleFilter(this); };
       btn.textContent = label;
       container.appendChild(btn);

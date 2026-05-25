@@ -94,7 +94,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-
 @media(max-width:700px){.filter-panel-body{grid-template-columns:1fr;}}
 .filter-row{display:flex;align-items:center;flex-wrap:wrap;gap:4px;}
 .fg-label{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);min-width:60px;flex-shrink:0;}
-.fchip{background:var(--bg);border:1.5px solid var(--border2);color:var(--muted);padding:4px 10px;border-radius:14px;font-size:11px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;}
+.fchip{background:var(--surface2);border:1px solid var(--border);color:var(--muted);padding:3px 9px;border-radius:5px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;letter-spacing:.02em;}
 .fchip:hover{border-color:var(--indigo2);color:var(--indigo);background:var(--indigo3);}
 .fchip.active{background:var(--indigo);border-color:var(--indigo);color:#fff;font-weight:700;}
 .sort-pill{background:var(--bg);border:1.5px solid var(--border2);color:var(--muted);padding:4px 12px;border-radius:14px;font-size:11px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;}
@@ -788,19 +788,8 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   <div id="lens-controls" class="lens-controls"></div>
   <div class="filter-panel" id="filter-panel">
     <div class="filter-panel-header">
-      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;flex:1;min-width:0">
-        <div class="search-schools-wrap">
-          <input id="search-schools" type="text" placeholder="Search schools…"
-            oninput="filterBySearch(this.value);document.getElementById('search-clear-btn').style.display=this.value?'':'none'">
-          <button id="search-clear-btn" onclick="clearSearch()" title="Clear search">✕</button>
-        </div>
-        <span id="filter-active-summary" style="font-size:12px;color:var(--muted)">Loading schools…</span>
-      </div>
+      <span id="filter-active-summary" style="font-size:12px;color:var(--muted)">Loading schools…</span>
       <div style="display:flex;gap:6px;align-items:center;flex-shrink:0">
-        <div class="show-hide-btns">
-          <button class="show-hide-btn" onclick="showAllCards()" title="Expand all conference sections">▼ Show All</button>
-          <button class="show-hide-btn" onclick="hideAllCards()" title="Collapse all conference sections">▲ Hide All</button>
-        </div>
         <button class="filter-clear-btn" id="filter-clear-btn" onclick="clearAllFilters()" style="display:none">✕ Clear filters</button>
         <button class="filter-toggle-btn" id="filter-toggle-btn" onclick="toggleFilterPanel()">▼ Show filters</button>
       </div>
@@ -851,6 +840,10 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     <button class="sort-pill" data-sort="cost" onclick="applySort('cost')">Lowest Cost</button>
     <button class="sort-pill" data-sort="acu" onclick="applySort('acu')">ACU Align</button>
     <button class="sort-pill" data-sort="mls" onclick="applySort('mls')">MLS Pipeline</button>
+    <div style="margin-left:auto;display:flex;gap:5px">
+      <button class="show-hide-btn" onclick="showAllCards()" title="Expand all conference sections">▼ Show All</button>
+      <button class="show-hide-btn" onclick="hideAllCards()" title="Collapse all conference sections">▲ Hide All</button>
+    </div>
   </div>
   <div id="cards-container"></div>
 </div>

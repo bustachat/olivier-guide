@@ -470,6 +470,7 @@ function buildCard(u){
   el.dataset.lensdivtop='false';
   el.dataset.conf=u.conf;
   el.dataset.confkey=u.confKey||'other';
+  el.dataset.confgroup=(u.conf||'').toLowerCase().replace(/\s+/g,'-');
   const gpaBucket=!u.gpa?'low':
     (u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open'))?'none':
     (u.gpa.minEntry.includes('2.0')||u.gpa.minEntry.includes('2.3'))?'low':
@@ -1389,42 +1390,73 @@ function renderContacts(){
 // FILTER CHIPS — conference row rendered from unis data
 // ══════════════════════════════════════════════════
 
+// v20.1: Conference chip labels — covers every conf in the guide
 const CONF_CHIP_LABELS = {
-  'acc':          'ACC',
-  'big-ten':      'Big Ten',
-  'big-east':     'Big East',
-  'aac':          'AAC',
-  'big-west':     'Big West',
-  'caa':          'CAA',
-  'asun':         'ASUN',
-  'sec':          'SEC',
-  'mac':          'MAC',
-  'wac':          'WAC',
-  'wcc':          'WCC',
-  'america-east': 'Am. East',
-  'other':        'D2 / NAIA / JUCO',
+  // Power 4 / Major D1
+  'sec':              'SEC',
+  'acc':              'ACC',
+  'big-ten':          'Big Ten',
+  'big-east':         'Big East',
+  'aac':              'AAC',
+  'big-west':         'Big West',
+  // Mid-Major D1
+  'caa':              'CAA',
+  'wac':              'WAC',
+  'mac':              'MAC',
+  'wcc':              'WCC',
+  'asun':             'ASUN',
+  'america-east':     'Am. East',
+  // Ivy
+  'ivy-league':       'Ivy League',
+  // D2
+  'ssc':              'SSC',
+  'ccaa':             'CCAA',
+  'lsc':              'LSC',
+  // NAIA
+  'sac':              'SAC',
+  'sun-conference':   'Sun Conf',
+  // D3
+  'sciac':            'SCIAC',
+  // JUCO
+  'cccaa':            'CCCAA',
+  'njcaa':            'NJCAA',
 };
 
-// Preferred display order — Conference Prestige ranking (v20)
+// Ordered by tier — P4 first, then mid-major D1, Ivy, D2, NAIA, D3, JUCO
 const CONF_CHIP_ORDER = [
   'sec','acc','big-ten','big-east','aac','big-west',
-  'caa','wac','mac','wcc','asun','america-east','other'
+  'caa','wac','mac','wcc','asun','america-east',
+  'ivy-league',
+  'ssc','ccaa','lsc',
+  'sac','sun-conference',
+  'sciac',
+  'cccaa','njcaa',
 ];
 
 function renderFilterChips() {
   try {
     const container = document.getElementById('conf-filter-chips');
     if (!container) return;
-    const keys = [...new Set(unis.map(u => u.confKey).filter(Boolean))];
-    const ordered = CONF_CHIP_ORDER.filter(k => keys.includes(k));
-    // Any keys not in the order list go at the end alphabetically
-    const extra = keys.filter(k => !CONF_CHIP_ORDER.includes(k)).sort();
-    [...ordered, ...extra].forEach(ck => {
-      const label = CONF_CHIP_LABELS[ck] || ck.toUpperCase();
+
+    // Build set of confgroup values actually present in loaded schools
+    const presentGroups = new Set(
+      unis.map(u => (u.conf || '').toLowerCase().replace(/\s+/g, '-')).filter(Boolean)
+    );
+
+    // Ordered known conferences that are present
+    const ordered = CONF_CHIP_ORDER.filter(k => presentGroups.has(k));
+
+    // Any present groups not in our known order — append alphabetically
+    const extra = [...presentGroups]
+      .filter(k => !CONF_CHIP_ORDER.includes(k))
+      .sort();
+
+    [...ordered, ...extra].forEach(cg => {
+      const label = CONF_CHIP_LABELS[cg] || cg.toUpperCase().replace(/-/g, ' ');
       const btn = document.createElement('button');
       btn.className = 'fchip';
-      btn.dataset.filter = 'confkey';
-      btn.dataset.val = ck;
+      btn.dataset.filter = 'confgroup';
+      btn.dataset.val = cg;
       btn.onclick = function(){ toggleFilter(this); };
       btn.textContent = label;
       container.appendChild(btn);
@@ -1637,15 +1669,17 @@ function renderPipelineTables() {
     const mls = document.getElementById('pipeline-mls-container');
     if (mls) {
       const mlsRows = pipelineData.mlsDraft.map(r => {
-        const rank = parseInt(r.rank) || 0;
-        const badgeStyle = rank === 1
+        const rankNum = parseInt(r.rank);
+        const badgeStyle = rankNum === 1
           ? 'background:#F59E0B;color:#451a03'
-          : rank === 2
+          : rankNum === 2
             ? 'background:#A78BFA;color:#2e1065'
-            : rank === 3
+            : rankNum === 3
               ? 'background:#FB923C;color:#431407'
               : 'background:#E5E7EB;color:#374151';
-        const rankCell = `<span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;font-size:11px;font-weight:800;${badgeStyle}">${r.rank}</span>`;
+        // Always render the circle — use r.rank string directly so "—" or any value shows
+        const displayRank = (r.rank !== null && r.rank !== undefined) ? r.rank : '—';
+        const rankCell = `<span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;font-size:11px;font-weight:800;${badgeStyle}">${displayRank}</span>`;
         return `<tr>
           <td style="font-size:11px">${rankCell}</td>
           <td style="font-size:11px">${r.school}</td>
@@ -2112,7 +2146,7 @@ function renderFinComparisonBars(){
         <div class="fcbar-name" title="${u.full}">${u.name}</div>
         <span class="fcbar-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span></span>
         <div class="fcbar-track" style="position:relative">
-          <div class="fcbar-fill" style="width:${pct}%;background:${b.color};opacity:.85;min-width:${net>0?'40px':'0'}">${net>12000?fmt(net):(net>0?'$'+Math.round(net/1000)+'k':'')}</div>
+          <div class="fcbar-fill" style="width:${pct}%;background:${b.color};opacity:.85;min-width:${net>0?'40px':'0'}">${net>0?fmt(net):''}</div>
           ${net===0?'<span style="position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:700;color:var(--emerald)">FULL RIDE</span>':''}
           ${confAvgLine?`<div style="position:absolute;top:0;bottom:0;left:${Math.round((confAvgLine/maxNet)*100)}%;width:1.5px;background:var(--navy);opacity:.25;pointer-events:none"></div>`:''}
         </div>

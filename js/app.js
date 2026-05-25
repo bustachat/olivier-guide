@@ -28,8 +28,8 @@ let currentFx = DEFAULT_FX;
 async function fetchLiveFxRate() {
   // Try two free CORS-friendly sources in sequence
   const sources = [
-    { url: 'https://open.er-api.com/v6/latest/USD',           parse: d => d?.rates?.AUD },
-    { url: 'https://api.exchangerate-api.com/v4/latest/USD',  parse: d => d?.rates?.AUD },
+    { url: 'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json', parse: d => d?.usd?.aud },
+    { url: 'https://latest.currency-api.pages.dev/v1/currencies/usd.json',                        parse: d => d?.usd?.aud },
   ];
   for (const src of sources) {
     try {
@@ -452,10 +452,6 @@ function renderCards(){
 // then falls back to the coloured text abbreviation if both fail.
 function logoUrl(u, size){
   if(!u.domain) return null;
-  return 'https://logo.clearbit.com/' + u.domain;
-}
-function faviconUrl(u){
-  if(!u.domain) return null;
   return 'https://www.google.com/s2/favicons?domain=' + u.domain + '&sz=64';
 }
 function buildEmblemHtml(u, sizeClass){
@@ -468,7 +464,7 @@ function buildEmblemHtml(u, sizeClass){
   const id = 'emb-'+u.id;
   return '<div class="card-emblem '+sizeClass+'" id="'+id+'" data-abbr="'+abbr+'" data-bg="'+bg+'" data-fg="'+fg+'" data-domain="'+u.domain+'">'+
     '<img src="'+logoUrl(u)+'" alt="'+u.name+'" '+
-      'onerror="this.src=\''+faviconUrl(u)+'\';this.onerror=function(){var p=this.parentNode;p.innerHTML=\'<div class=\\\'card-av2\\\' style=\\\'background:\'+this.parentNode.dataset.bg+\';color:\'+this.parentNode.dataset.fg+\'\\\'>\'+this.parentNode.dataset.abbr+\'</div>\';}">'+
+      'onerror="var p=this.parentNode;p.innerHTML=\'<div class=\\\'card-av2\\\' style=\\\'background:\'+p.dataset.bg+\';color:\'+p.dataset.fg+\'\\\'>\'+p.dataset.abbr+\'</div>\'">'+
   '</div>';
 }
 

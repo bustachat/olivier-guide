@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Olivier — US College Soccer & Exercise Science Scholarship Guide v19</title>
+<title>Olivier — US College Soccer & Exercise Science Scholarship Guide v20</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -452,7 +452,33 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   .mo-traj-row{grid-template-columns:90px 1fr 120px;}
   .mo-stats{grid-template-columns:repeat(2,1fr);}
 }
-@media(max-width:600px){.cards-grid{grid-template-columns:1fr;}.detail-grid{grid-template-columns:1fr;}.page{padding:1rem;}.hero{padding:2rem 1.25rem 1.75rem;}.hero-stats{gap:1.5rem;}}
+/* ── v20: Mobile filter streamline ── */
+@media(max-width:768px){
+  .filter-panel-body{display:flex;flex-direction:column;gap:.4rem;}
+  .filter-row{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;}
+  .filter-row::-webkit-scrollbar{height:3px;}
+  .filter-row::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+  .fchip{flex-shrink:0;}
+}
+/* ── v20: Search box ── */
+.search-schools-wrap{position:relative;display:flex;align-items:center;flex:1;min-width:160px;max-width:280px;}
+#search-schools{width:100%;padding:5px 30px 5px 10px;border:1.5px solid var(--border2);border-radius:14px;font-size:12px;font-family:'Outfit',sans-serif;color:var(--text);background:var(--bg);outline:none;transition:border-color .12s;}
+#search-schools:focus{border-color:var(--indigo2);}
+#search-schools::placeholder{color:var(--hint);}
+#search-clear-btn{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--hint);font-size:14px;padding:0;line-height:1;display:none;}
+#search-clear-btn:hover{color:var(--rose);}
+/* ── v20: Show/Hide All buttons ── */
+.show-hide-btns{display:flex;gap:5px;}
+.show-hide-btn{background:var(--surface3);border:1px solid var(--border2);color:var(--muted);padding:4px 10px;border-radius:7px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;}
+.show-hide-btn:hover{border-color:var(--indigo2);color:var(--indigo);background:var(--indigo3);}
+/* ── v20: Pipeline division toggle buttons ── */
+.pipeline-toggle-btn{background:var(--indigo);border:1px solid var(--indigo);color:#fff;padding:6px 14px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .15s;white-space:nowrap;}
+.pipeline-toggle-btn.pipeline-toggle-off{background:var(--surface);border-color:var(--border2);color:var(--muted);}
+.pipeline-toggle-btn:hover{opacity:.85;}
+/* ── v20: Financial banner compact ── */
+.fin-hero{padding:1rem 2rem !important;}
+.fin-hero p{font-size:11px !important;}
+
 /* ── Facilities Tab ── */
 .fac-rating-badge{display:inline-block;font-size:11px;font-weight:800;padding:4px 12px;border-radius:6px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem;}
 .fac-elite{background:#fef08a;color:#713f12;}
@@ -560,7 +586,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .conf-card-head{padding:1rem 1.1rem .75rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;}
 .conf-name{font-size:14px;font-weight:700;color:var(--navy);}
 .conf-abbr{font-size:11px;color:var(--hint);margin-top:2px;}
-.conf-prestige{font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;}
+.conf-prestige{font-size:11px;font-weight:700;padding:8px 12px;border-radius:6px;line-height:1.4;}
 .conf-body{padding:.85rem 1.1rem;}
 .conf-schools{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:.75rem;}
 .conf-school-chip{font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;border:1px solid var(--border2);color:var(--muted);background:var(--bg);}
@@ -762,8 +788,19 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   <div id="lens-controls" class="lens-controls"></div>
   <div class="filter-panel" id="filter-panel">
     <div class="filter-panel-header">
-      <span id="filter-active-summary" style="font-size:12px;color:var(--muted)">Loading schools…</span>
-      <div style="display:flex;gap:6px;align-items:center">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;flex:1;min-width:0">
+        <div class="search-schools-wrap">
+          <input id="search-schools" type="text" placeholder="Search schools…"
+            oninput="filterBySearch(this.value);document.getElementById('search-clear-btn').style.display=this.value?'':'none'">
+          <button id="search-clear-btn" onclick="clearSearch()" title="Clear search">✕</button>
+        </div>
+        <span id="filter-active-summary" style="font-size:12px;color:var(--muted)">Loading schools…</span>
+      </div>
+      <div style="display:flex;gap:6px;align-items:center;flex-shrink:0">
+        <div class="show-hide-btns">
+          <button class="show-hide-btn" onclick="showAllCards()" title="Expand all conference sections">▼ Show All</button>
+          <button class="show-hide-btn" onclick="hideAllCards()" title="Collapse all conference sections">▲ Hide All</button>
+        </div>
         <button class="filter-clear-btn" id="filter-clear-btn" onclick="clearAllFilters()" style="display:none">✕ Clear filters</button>
         <button class="filter-toggle-btn" id="filter-toggle-btn" onclick="toggleFilterPanel()">▼ Show filters</button>
       </div>

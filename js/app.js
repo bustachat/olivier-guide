@@ -8,7 +8,7 @@
 // V19: Major Update. Make HTML completely Dynamic. No Hardcoded data
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v19';
+const APP_VERSION = 'v20';
 
 let unis = [];
 let conferences = [];
@@ -50,7 +50,13 @@ function applyFxToUI(fx) {
   const slFx   = document.getElementById('sl-fx');
   const valFx  = document.getElementById('val-fx');
   const notice = document.getElementById('fx-rate-notice');
-  if (slFx)   slFx.value = fx.toFixed(2);
+  if (slFx) {
+    slFx.value = fx.toFixed(2);
+    // v20 bug fix: fire updateFinModel so AUD amounts recalculate immediately
+    if (typeof updateFinModel === 'function' && typeof finCurrentSchool !== 'undefined' && finCurrentSchool) {
+      updateFinModel();
+    }
+  }
   if (valFx)  valFx.textContent = fx.toFixed(2);
   if (notice) {
     const isLive = fx !== DEFAULT_FX;
@@ -1205,8 +1211,44 @@ function updateAtarCounts() {
 }
 
 // ══════════════════════════════════════════════════
-// MULTI-SELECT FILTER ENGINE
+// v20: LIVE SEARCH + SHOW/HIDE ALL
 // ══════════════════════════════════════════════════
+
+let searchKeyword = '';
+
+function filterBySearch(keyword) {
+  searchKeyword = (keyword || '').toLowerCase().trim();
+  applyFilters();
+}
+
+function clearSearch() {
+  searchKeyword = '';
+  const inp = document.getElementById('search-schools');
+  if (inp) inp.value = '';
+  applyFilters();
+  const clearBtn = document.getElementById('search-clear-btn');
+  if (clearBtn) clearBtn.style.display = 'none';
+}
+
+function showAllCards() {
+  document.querySelectorAll('.conf-section').forEach(sec => {
+    if (sec.classList.contains('div-collapsed')) {
+      const btn = sec.querySelector('.div-toggle-btn');
+      if (btn) btn.click();
+    }
+  });
+}
+
+function hideAllCards() {
+  document.querySelectorAll('.conf-section').forEach(sec => {
+    if (!sec.classList.contains('div-collapsed')) {
+      const btn = sec.querySelector('.div-toggle-btn');
+      if (btn) btn.click();
+    }
+  });
+}
+
+
 // activeFilters: { filterType: Set of active values }
 const activeFilters = {};
 
@@ -1230,6 +1272,14 @@ function applyFilters(){
   let visible = 0;
   cards.forEach(c=>{
     let show = true;
+    // v20: live search filter
+    if (searchKeyword) {
+      const cardId = (c.id || '').replace('card-', '');
+      const u = unis.find(x => x.id === cardId);
+      const haystack = ((u ? u.full : '') + ' ' + (u ? u.name : '')).toLowerCase();
+      if (!haystack.includes(searchKeyword)) show = false;
+    }
+    if (!show) { c.style.display = 'none'; return; }
     for(const [type, vals] of Object.entries(activeFilters)){
       if(!vals.size) continue;
       if(type==='gpamin'){
@@ -1273,6 +1323,8 @@ function applyFilters(){
 function clearAllFilters(){
   Object.keys(activeFilters).forEach(k=>activeFilters[k].clear());
   document.querySelectorAll('.fchip.active').forEach(b=>b.classList.remove('active'));
+  // v20: also clear search
+  clearSearch();
   // v17: also reset hide-below toggle
   atarHideBelow = false;
   const hideBtn = document.getElementById('atar-hide-btn');
@@ -1353,10 +1405,10 @@ const CONF_CHIP_LABELS = {
   'other':        'D2 / NAIA / JUCO',
 };
 
-// Preferred display order — known conferences first, then alphabetical remainder
+// Preferred display order — Conference Prestige ranking (v20)
 const CONF_CHIP_ORDER = [
-  'acc','big-ten','big-east','aac','big-west','caa',
-  'asun','sec','mac','wac','wcc','america-east','other'
+  'sec','acc','big-ten','big-east','aac','big-west',
+  'caa','wac','mac','wcc','asun','america-east','other'
 ];
 
 function renderFilterChips() {
@@ -1535,44 +1587,120 @@ function renderPipelineTables() {
   try {
     if (!pipelineData || !pipelineData.ncaaD1) return;
 
+    // v20: inject toggle buttons + section wrappers
+    const pipelinePage = document.getElementById('page-pipeline');
+    if (!document.getElementById('pipeline-div-toggles') && pipelinePage) {
+      const toggleBar = document.createElement('div');
+      toggleBar.id = 'pipeline-div-toggles';
+      toggleBar.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.25rem';
+      toggleBar.innerHTML = [
+        ['pipeline-toggle-d1', 'NCAA D1 Champions'],
+        ['pipeline-toggle-d2', 'NCAA D2 Champions'],
+        ['pipeline-toggle-mls','MLS SuperDraft'],
+      ].map(([id, label]) =>
+        `<button id="${id}" class="pipeline-toggle-btn pipeline-toggle-on"
+          onclick="togglePipelineSection('${id}')">${label}</button>`
+      ).join('');
+      // Insert after the intro paragraph (first <p> after section-head)
+      const firstP = pipelinePage.querySelector('p');
+      if (firstP) pipelinePage.insertBefore(toggleBar, firstP.nextSibling);
+    }
+
     const d1 = document.getElementById('pipeline-d1-container');
     if (d1) {
       d1.innerHTML = `<div style="overflow-x:auto;margin-bottom:.5rem;"><table class="pro-league-table">
-        <thead><tr><th>School</th><th>Division</th><th>D1 Titles</th><th>Years</th><th>Notes</th></tr></thead>
-        <tbody>${buildChampionshipRows(pipelineData.ncaaD1, 5)}</tbody>
+        <thead><tr>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">School</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Division</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">D1 Titles</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Years</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Notes</th>
+        </tr></thead>
+        <tbody style="font-size:11px">${buildChampionshipRows(pipelineData.ncaaD1, 5)}</tbody>
       </table></div>`;
     }
 
     const d2 = document.getElementById('pipeline-d2-container');
     if (d2) {
       d2.innerHTML = `<div style="overflow-x:auto;margin-bottom:.5rem;"><table class="pro-league-table">
-        <thead><tr><th>School</th><th>Division</th><th>D2 Titles</th><th>Years</th><th>Notes</th></tr></thead>
-        <tbody>${buildChampionshipRows(pipelineData.ncaaD2, 5)}</tbody>
+        <thead><tr>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">School</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Division</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">D2 Titles</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Years</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Notes</th>
+        </tr></thead>
+        <tbody style="font-size:11px">${buildChampionshipRows(pipelineData.ncaaD2, 5)}</tbody>
       </table></div>`;
     }
 
     const mls = document.getElementById('pipeline-mls-container');
     if (mls) {
       const mlsRows = pipelineData.mlsDraft.map(r => {
-        const rankCell = r.rankClass
-          ? `<span class="${r.rankClass}">${r.rank}</span>`
-          : r.rank;
+        const rank = parseInt(r.rank) || 0;
+        const badgeStyle = rank === 1
+          ? 'background:#F59E0B;color:#451a03'
+          : rank === 2
+            ? 'background:#A78BFA;color:#2e1065'
+            : rank === 3
+              ? 'background:#FB923C;color:#431407'
+              : 'background:#E5E7EB;color:#374151';
+        const rankCell = `<span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;font-size:11px;font-weight:800;${badgeStyle}">${r.rank}</span>`;
         return `<tr>
-          <td>${rankCell}</td>
-          <td>${r.school}</td>
-          <td><span class="dbadge ${r.badgeClass}">${r.badge}</span></td>
-          <td>${r.picks5yr}</td>
+          <td style="font-size:11px">${rankCell}</td>
+          <td style="font-size:11px">${r.school}</td>
+          <td style="font-size:11px"><span class="dbadge ${r.badgeClass}">${r.badge}</span></td>
+          <td style="font-size:11px">${r.picks5yr}</td>
           <td style="font-size:11px;color:var(--muted)">${r.notable}</td>
           <td style="font-size:11px;color:var(--muted)">${r.allTime}</td>
         </tr>`;
       }).join('');
       mls.innerHTML = `<div style="overflow-x:auto;margin-bottom:2rem;"><table class="pro-league-table">
-        <thead><tr><th>Rank</th><th>School</th><th>Div</th><th>Picks 5yr</th><th>Notable players</th><th>All-time pipeline</th></tr></thead>
+        <thead><tr>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Rank</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">School</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Div</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Picks 5yr</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">Notable players</th>
+          <th style="font-size:16px;font-weight:700;font-family:'Outfit',sans-serif">All-time pipeline</th>
+        </tr></thead>
         <tbody>${mlsRows}</tbody>
       </table></div>`;
     }
   } catch(e) { console.error('renderPipelineTables failed:', e); }
 }
+
+// v20: Division toggle for Pro Pipeline
+function togglePipelineSection(btnId) {
+  const map = {
+    'pipeline-toggle-d1':  ['pipeline-d1-container', 'pipeline-d1-header'],
+    'pipeline-toggle-d2':  ['pipeline-d2-container', 'pipeline-d2-header'],
+    'pipeline-toggle-mls': ['pipeline-mls-container', 'pipeline-mls-header'],
+  };
+  const targets = map[btnId];
+  if (!targets) return;
+  const btn = document.getElementById(btnId);
+  const isOn = btn.classList.contains('pipeline-toggle-on');
+  // Toggle container visibility
+  targets.forEach(tid => {
+    const el = document.getElementById(tid);
+    if (el) el.style.display = isOn ? 'none' : '';
+  });
+  // Also toggle the section-head above each container
+  const containerEl = document.getElementById(targets[0]);
+  if (containerEl) {
+    let prev = containerEl.previousElementSibling;
+    while (prev && !prev.classList.contains('section-head') && !prev.tagName.match(/^P$/i)) prev = prev.previousElementSibling;
+    if (prev) prev.style.display = isOn ? 'none' : '';
+    // Also hide/show the intro <p>
+    let prevP = containerEl.previousElementSibling;
+    while (prevP && prevP.tagName !== 'P') prevP = prevP.previousElementSibling;
+    if (prevP && prevP.tagName === 'P') prevP.style.display = isOn ? 'none' : '';
+  }
+  btn.classList.toggle('pipeline-toggle-on', !isOn);
+  btn.classList.toggle('pipeline-toggle-off', isOn);
+}
+
 
 // ══════════════════════════════════════════════════
 // CONFERENCES DATA & RENDER
@@ -1984,7 +2112,7 @@ function renderFinComparisonBars(){
         <div class="fcbar-name" title="${u.full}">${u.name}</div>
         <span class="fcbar-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span></span>
         <div class="fcbar-track" style="position:relative">
-          <div class="fcbar-fill" style="width:${pct}%;background:${b.color};opacity:.85;min-width:${net>0?'40px':'0'}">${net>12000?fmt(net):''}</div>
+          <div class="fcbar-fill" style="width:${pct}%;background:${b.color};opacity:.85;min-width:${net>0?'40px':'0'}">${net>12000?fmt(net):(net>0?'$'+Math.round(net/1000)+'k':'')}</div>
           ${net===0?'<span style="position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:700;color:var(--emerald)">FULL RIDE</span>':''}
           ${confAvgLine?`<div style="position:absolute;top:0;bottom:0;left:${Math.round((confAvgLine/maxNet)*100)}%;width:1.5px;background:var(--navy);opacity:.25;pointer-events:none"></div>`:''}
         </div>

@@ -143,7 +143,7 @@ function buildDashboardShell() {
     <div class="dash-panel">
       <div class="dash-panel-title">School map — dot size = fit · hover for details</div>
       <div class="dash-map-wrap" id="dash-map-wrap">
-        <svg id="dash-map-svg" viewBox="0 0 500 300" style="display:block;width:100%"></svg>
+        <svg id="dash-map-svg" viewBox="0 0 640 390" style="display:block;width:100%"></svg>
         <div class="dash-map-tip" id="dash-map-tip"></div>
       </div>
       <div class="dash-map-legend">
@@ -155,12 +155,17 @@ function buildDashboardShell() {
         <div class="dash-ml"><div class="dash-ml-dot" style="background:#b45309"></div>IVY</div>
       </div>
     </div>
-    <div class="dash-panel">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.55rem">
-        <div class="dash-panel-title" style="margin:0">Cost by bracket</div>
-        <div style="font-size:8px;color:var(--hint)">faded = ineligible or over budget</div>
+    <div class="dash-panel" style="display:flex;flex-direction:column;gap:.5rem">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.55rem">
+          <div class="dash-panel-title" style="margin:0">Cost by bracket</div>
+          <div style="font-size:8px;color:var(--hint)">faded = ineligible or over budget</div>
+        </div>
+        <div class="dash-bracket-grid" id="dash-brackets"></div>
       </div>
-      <div class="dash-bracket-grid" id="dash-brackets"></div>
+      <div id="dash-hover-info" class="dash-hover-info">
+        <div class="dash-hi-empty">Hover a dot on the map or bracket to see school details</div>
+      </div>
     </div>
   </div>
 
@@ -237,12 +242,13 @@ function buildDashboardShell() {
 .dash-cc-data{display:flex;align-items:baseline;justify-content:space-between;}
 .dash-cc-fit{font-size:10px;font-weight:800;}
 .dash-cc-count{font-size:8px;color:var(--hint);font-weight:600;}
-.dash-main-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;}
+.dash-main-grid{display:grid;grid-template-columns:3fr 2fr;gap:.7rem;}
 .dash-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.7rem .85rem;}
 .dash-panel-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:.55rem;}
 .dash-map-wrap{position:relative;background:#eef2f7;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
-.dash-map-dot{position:absolute;border-radius:50%;cursor:pointer;transform:translate(-50%,-50%);transition:opacity .2s;}
+.dash-map-dot{position:absolute;border-radius:50%;cursor:pointer;transform:translate(-50%,-50%);transition:opacity .2s,box-shadow .15s;}
 .dash-map-dot.shortlist{outline-offset:1px;}
+.dash-map-dot.dash-dot-highlighted{box-shadow:0 0 0 3px #fff,0 0 0 5px var(--indigo);z-index:10;opacity:1 !important;}
 .dash-map-tip{position:absolute;background:var(--navy);color:#fff;font-size:9px;font-weight:600;padding:3px 8px;border-radius:5px;pointer-events:none;white-space:nowrap;z-index:10;display:none;transform:translateX(-50%);}
 .dash-map-legend{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.38rem;}
 .dash-ml{display:flex;align-items:center;gap:3px;font-size:8px;color:var(--muted);}
@@ -255,9 +261,17 @@ function buildDashboardShell() {
 .bh-a{background:var(--amber3);color:#78350f;}
 .bh-r{background:var(--rose3);color:#9f1239;}
 .dash-dots-wrap{display:flex;flex-wrap:wrap;gap:3px;min-height:28px;}
-.dash-sdot{width:8px;height:8px;border-radius:50%;cursor:pointer;border:1px solid rgba(255,255,255,.6);transition:opacity .2s;flex-shrink:0;}
+.dash-sdot{width:8px;height:8px;border-radius:50%;cursor:pointer;border:1px solid rgba(255,255,255,.6);transition:opacity .2s,box-shadow .15s;flex-shrink:0;}
 .dash-sdot.dim{opacity:.18;}
+.dash-sdot.dash-dot-highlighted{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--indigo);opacity:1 !important;position:relative;z-index:5;}
 .dash-bracket-count{font-size:8px;color:var(--hint);font-weight:600;margin-top:2px;}
+.dash-hover-info{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.65rem .8rem;min-height:78px;display:flex;flex-direction:column;justify-content:center;transition:all .15s;}
+.dash-hi-empty{font-size:10px;color:var(--hint);text-align:center;font-style:italic;line-height:1.5;}
+.dash-hi-name{font-size:13px;font-weight:800;color:var(--navy);margin-bottom:2px;}
+.dash-hi-meta{font-size:10px;color:var(--muted);margin-bottom:5px;line-height:1.4;}
+.dash-hi-scores{display:flex;gap:10px;flex-wrap:wrap;}
+.dash-hi-sc{font-size:11px;font-weight:700;}
+.dash-hi-sc span{font-size:9px;color:var(--hint);font-weight:400;}
 </style>`;
 }
 
@@ -499,51 +513,51 @@ function drawMapBase() {
   svg.innerHTML = '';
   const ns = 'http://www.w3.org/2000/svg';
 
-  // Background
+  // Background — 640x390
   const bg = document.createElementNS(ns,'rect');
-  bg.setAttribute('width','500');bg.setAttribute('height','300');bg.setAttribute('fill','#eef2f7');
+  bg.setAttribute('width','640');bg.setAttribute('height','390');bg.setAttribute('fill','#eef2f7');
   svg.appendChild(bg);
 
-  // Continental US land mass
+  // Continental US land mass — all coords scaled from 500x300 → 640x390 (×1.28, ×1.30)
   const land = document.createElementNS(ns,'path');
   land.setAttribute('fill','#dce4ee');
   land.setAttribute('stroke','#c5d0dc');
-  land.setAttribute('stroke-width','0.8');
+  land.setAttribute('stroke-width','1.0');
   land.setAttribute('d',
-    'M52,58 L100,52 L160,46 L220,42 L278,42 L278,58 ' +
-    'L440,72 L440,260 L415,272 L390,280 L360,282 ' +
-    'L330,278 L305,268 L302,248 L280,248 L280,230 ' +
-    'L262,234 L240,238 L218,234 L200,224 L192,212 ' +
-    'L190,200 L186,210 L178,220 L165,228 L148,230 ' +
-    'L130,226 L114,216 L100,202 L88,186 L80,170 ' +
-    'L78,155 L52,155 Z'
+    'M67,75 L128,68 L205,60 L282,55 L356,55 L356,75 ' +
+    'L563,94 L563,338 L531,354 L499,364 L461,367 ' +
+    'L422,361 L390,348 L387,322 L358,322 L358,299 ' +
+    'L335,304 L307,309 L279,304 L256,291 L246,276 ' +
+    'L243,260 L238,273 L228,286 L211,296 L190,299 ' +
+    'L166,294 L146,281 L128,263 L113,242 L102,221 ' +
+    'L100,202 L67,202 Z'
   );
   svg.appendChild(land);
 
-  // Florida peninsula
+  // Florida peninsula — scaled
   const fl = document.createElementNS(ns,'path');
-  fl.setAttribute('fill','#dce4ee');fl.setAttribute('stroke','#c5d0dc');fl.setAttribute('stroke-width','0.8');
-  fl.setAttribute('d','M330,222 L360,218 L380,220 L390,230 L392,245 L385,258 L372,268 L355,272 L340,268 L330,255 L326,240 Z');
+  fl.setAttribute('fill','#dce4ee');fl.setAttribute('stroke','#c5d0dc');fl.setAttribute('stroke-width','1.0');
+  fl.setAttribute('d','M422,289 L461,283 L486,286 L499,299 L502,318 L493,335 L476,348 L454,354 L435,348 L422,331 L417,312 Z');
   svg.appendChild(fl);
 
   // AK inset
   const ak = document.createElementNS(ns,'rect');
-  ak.setAttribute('x','52');ak.setAttribute('y','255');ak.setAttribute('width','52');ak.setAttribute('height','38');
-  ak.setAttribute('rx','3');ak.setAttribute('fill','#dce4ee');ak.setAttribute('stroke','#c5d0dc');ak.setAttribute('stroke-width','0.8');
+  ak.setAttribute('x','67');ak.setAttribute('y','331');ak.setAttribute('width','67');ak.setAttribute('height','49');
+  ak.setAttribute('rx','4');ak.setAttribute('fill','#dce4ee');ak.setAttribute('stroke','#c5d0dc');ak.setAttribute('stroke-width','1.0');
   svg.appendChild(ak);
   const akl = document.createElementNS(ns,'text');
-  akl.setAttribute('x','78');akl.setAttribute('y','278');akl.setAttribute('text-anchor','middle');
-  akl.setAttribute('font-size','7');akl.setAttribute('fill','#9ca3af');akl.textContent='AK';
+  akl.setAttribute('x','100');akl.setAttribute('y','361');akl.setAttribute('text-anchor','middle');
+  akl.setAttribute('font-size','9');akl.setAttribute('fill','#9ca3af');akl.textContent='AK';
   svg.appendChild(akl);
 
   // HI inset
   const hi = document.createElementNS(ns,'rect');
-  hi.setAttribute('x','112');hi.setAttribute('y','255');hi.setAttribute('width','42');hi.setAttribute('height','38');
-  hi.setAttribute('rx','3');hi.setAttribute('fill','#dce4ee');hi.setAttribute('stroke','#c5d0dc');hi.setAttribute('stroke-width','0.8');
+  hi.setAttribute('x','143');hi.setAttribute('y','331');hi.setAttribute('width','54');hi.setAttribute('height','49');
+  hi.setAttribute('rx','4');hi.setAttribute('fill','#dce4ee');hi.setAttribute('stroke','#c5d0dc');hi.setAttribute('stroke-width','1.0');
   svg.appendChild(hi);
   const hil = document.createElementNS(ns,'text');
-  hil.setAttribute('x','133');hil.setAttribute('y','278');hil.setAttribute('text-anchor','middle');
-  hil.setAttribute('font-size','7');hil.setAttribute('fill','#9ca3af');hil.textContent='HI';
+  hil.setAttribute('x','170');hil.setAttribute('y','361');hil.setAttribute('text-anchor','middle');
+  hil.setAttribute('font-size','9');hil.setAttribute('fill','#9ca3af');hil.textContent='HI';
   svg.appendChild(hil);
 }
 
@@ -552,7 +566,7 @@ function updateMapDots() {
   const svg  = document.getElementById('dash-map-svg');
   if (!wrap || !svg) return;
 
-  const svgW = 500, svgH = 300;
+  const svgW = 640, svgH = 390;
   const measuredW = wrap.offsetWidth || wrap.parentElement?.offsetWidth || 0;
   if (measuredW === 0) { observeMapResize(); return; }
   wrap.style.height = (measuredW * (svgH/svgW)) + 'px';
@@ -566,12 +580,13 @@ function updateMapDots() {
     const blocked = !dashReachable(u);
     const isSL    = shortlistIds.has(u.id);
     const color   = DASH_DIV_COLOR[u.div] || '#9ca3af';
-    const size    = Math.max(7, Math.min(13, Math.round((u.fitOlivier||50) / 9)));
+    const size    = Math.max(7, Math.min(14, Math.round((u.fitOlivier||50) / 9)));
     const lp      = (u.mapX / svgW) * 100;
     const tp      = (u.mapY / svgH) * 100;
 
     const dot = document.createElement('div');
     dot.className = 'dash-map-dot' + (isSL && !blocked ? ' shortlist' : '');
+    dot.dataset.id = u.id;
     dot.style.cssText = [
       'position:absolute', `left:${lp}%`, `top:${tp}%`,
       `width:${size}px`, `height:${size}px`,
@@ -581,14 +596,62 @@ function updateMapDots() {
     ].filter(Boolean).join(';');
 
     dot.addEventListener('mouseenter', function() {
+      // Floating tooltip on map
       tip.style.display = 'block';
       tip.textContent   = u.name + ' · $' + Math.round((u.fin?.costNum||0)/1000) + 'k · ' + (u.fitOlivier||'—') + '% fit';
       tip.style.left = lp + '%';
       tip.style.top  = (tp + 3) + '%';
+      // Show info in right panel
+      showHoverInfo(u);
+      // Cross-highlight bracket dot
+      highlightDot(u.id);
     });
-    dot.addEventListener('mouseleave', () => tip.style.display = 'none');
+    dot.addEventListener('mouseleave', () => {
+      tip.style.display = 'none';
+      clearHoverInfo();
+      clearDotHighlights();
+    });
     wrap.appendChild(dot);
   });
+}
+
+// ─── Hover info panel ─────────────────────────────────────────────────────────
+function showHoverInfo(u) {
+  const el = document.getElementById('dash-hover-info');
+  if (!el) return;
+  const fitColor  = (u.fitOlivier||0) >= 90 ? 'var(--emerald)' : (u.fitOlivier||0) >= 80 ? 'var(--amber)' : 'var(--rose)';
+  const acuColor  = (u.acuAlign||0)   >= 14 ? 'var(--emerald)' : (u.acuAlign||0)   >= 10 ? 'var(--sky)'   : 'var(--amber)';
+  const costNum   = u.fin?.costNum || 0;
+  el.innerHTML = `
+    <div class="dash-hi-name">${u.full || u.name}</div>
+    <div class="dash-hi-meta">${u.div} · ${u.conf} · ${u.loc}</div>
+    <div class="dash-hi-scores">
+      <div class="dash-hi-sc" style="color:${fitColor}">${u.fitOlivier||'—'}% <span>fit</span></div>
+      <div class="dash-hi-sc" style="color:${acuColor}">${u.acuAlign||'—'}/16 <span>ACU</span></div>
+      <div class="dash-hi-sc" style="color:var(--amber)">$${Math.round(costNum/1000)}k <span>/yr</span></div>
+      <div class="dash-hi-sc" style="color:var(--muted)">${u.prePT ? u.prePT.split('—')[0].trim() : '—'} <span>pre-PT</span></div>
+    </div>`;
+}
+
+function clearHoverInfo() {
+  const el = document.getElementById('dash-hover-info');
+  if (el) el.innerHTML = '<div class="dash-hi-empty">Hover a dot on the map or bracket to see school details</div>';
+}
+
+// ─── Cross-highlight ──────────────────────────────────────────────────────────
+function highlightDot(id) {
+  // Highlight map dot
+  document.querySelectorAll('.dash-map-dot').forEach(d => {
+    d.classList.toggle('dash-dot-highlighted', d.dataset.id === id);
+  });
+  // Highlight bracket dot
+  document.querySelectorAll('.dash-sdot').forEach(d => {
+    d.classList.toggle('dash-dot-highlighted', d.dataset.id === id);
+  });
+}
+
+function clearDotHighlights() {
+  document.querySelectorAll('.dash-dot-highlighted').forEach(d => d.classList.remove('dash-dot-highlighted'));
 }
 
 // Re-draw the map once its container gains a real width (handles the
@@ -627,7 +690,9 @@ function updateBrackets() {
     const dots = inBracket.map(u => {
       const ok    = dashReachable(u);
       const color = DASH_DIV_COLOR[u.div] || '#9ca3af';
-      return `<div class="dash-sdot${ok?'':' dim'}" style="background:${ok?color:'#c8d4e0'}" title="${u.name} · $${Math.round((u.fin?.costNum||0)/1000)}k"></div>`;
+      return `<div class="dash-sdot${ok?'':' dim'}" data-id="${u.id}" style="background:${ok?color:'#c8d4e0'}" title="${u.name} · $${Math.round((u.fin?.costNum||0)/1000)}k"
+        onmouseenter="showHoverInfo(unis.find(x=>x.id==='${u.id}'));highlightDot('${u.id}')"
+        onmouseleave="clearHoverInfo();clearDotHighlights()"></div>`;
     }).join('');
 
     return `<div class="dash-bracket-col">

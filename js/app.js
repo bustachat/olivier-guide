@@ -117,7 +117,7 @@ function initApp() {
   document.title = 'Olivier — US College Soccer Guide ' + APP_VERSION;
 
   // Update header stats dynamically from loaded data
-  const totalSchools  = unis.length;
+  const totalSchools  = unis.filter(u => !u.noVarsity).length;
   const totalDivs     = [...new Set(unis.map(u=>u.div).filter(Boolean))].length;
   const totalConfs    = [...new Set(unis.map(u=>u.confKey).filter(Boolean))].length;
   const totalTop      = unis.filter(u=>u.top).length;

@@ -475,9 +475,24 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .pipeline-toggle-btn{background:var(--indigo);border:1px solid var(--indigo);color:#fff;padding:6px 14px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .15s;white-space:nowrap;}
 .pipeline-toggle-btn.pipeline-toggle-off{background:var(--surface);border-color:var(--border2);color:var(--muted);}
 .pipeline-toggle-btn:hover{opacity:.85;}
-/* ── v20: Financial banner compact ── */
-.fin-hero{padding:1rem 2rem !important;}
-.fin-hero p{font-size:11px !important;}
+/* ── v20: Financial banner redesign ── */
+.fin-hero{display:flex;align-items:center;gap:1.5rem;padding:1rem 1.5rem !important;}
+.fin-hero-left{flex:1;min-width:0;}
+.fin-hero h2{font-size:1.1rem !important;margin-bottom:.25rem;}
+.fin-hero p{font-size:11px !important;max-width:560px;}
+.fin-rate-box{flex-shrink:0;border-radius:10px;padding:.6rem .9rem;display:flex;align-items:center;gap:10px;min-width:195px;border:1px solid transparent;}
+.fin-rate-box.live{background:rgba(5,150,105,.15);border-color:rgba(5,150,105,.35);}
+.fin-rate-box.fallback{background:rgba(217,119,6,.12);border-color:rgba(217,119,6,.3);}
+.fin-rate-icon{font-size:15px;flex-shrink:0;}
+.fin-rate-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px;}
+.fin-rate-box.live .fin-rate-label{color:rgba(52,211,153,.7);}
+.fin-rate-box.fallback .fin-rate-label{color:rgba(251,191,36,.6);}
+.fin-rate-value{font-size:13px;font-weight:700;}
+.fin-rate-box.live .fin-rate-value{color:#34d399;}
+.fin-rate-box.fallback .fin-rate-value{color:#fbbf24;}
+.fin-rate-sub{font-size:10px;margin-top:1px;}
+.fin-rate-box.live .fin-rate-sub{color:rgba(52,211,153,.5);}
+.fin-rate-box.fallback .fin-rate-sub{color:rgba(251,191,36,.45);}
 
 /* ── Facilities Tab ── */
 .fac-rating-badge{display:inline-block;font-size:11px;font-weight:800;padding:4px 12px;border-radius:6px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem;}
@@ -902,10 +917,19 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 <!-- FINANCIAL MODEL PAGE -->
 <div class="page" id="page-finance">
   <div class="fin-hero">
-    <h2>💰 Scholarship & Financial Model</h2>
-    <p>Model the real annual and 4-year cost for any school based on athletic scholarship %, academic scholarship, and living expenses. Understand the difference between full, partial, and no scholarship scenarios — in AUD and USD.</p>
+    <div class="fin-hero-left">
+      <h2>💰 Scholarship &amp; Financial Model</h2>
+      <p>Model annual and 4-year cost for any school — athletic scholarship %, academic aid, and living expenses — in AUD and USD.</p>
+    </div>
+    <div class="fin-rate-box fallback" id="fin-rate-box">
+      <div class="fin-rate-icon">⏳</div>
+      <div>
+        <div class="fin-rate-label">AUD/USD Rate</div>
+        <div class="fin-rate-value">Loading…</div>
+        <div class="fin-rate-sub">Fetching live rate</div>
+      </div>
+    </div>
   </div>
-  <div class="aud-notice" id="fx-rate-notice">⏳ Loading live AUD/USD rate…</div>
   <div class="fin-explainer">
     <div class="fin-exp-card"><h4 style="color:var(--indigo)">What is Athletic Scholarship?</h4><p>In D1 and D2, coaches have a scholarship "pool" (9.9 equivalencies for D1 soccer; 9.0 for D2). They split this across their roster. A "full athletic scholarship" covers tuition, room, board, and fees. In practice, international players often receive 25–75% athletic aid. NAIA has no cap. D3 and Ivy League = zero athletic scholarships.</p></div>
     <div class="fin-exp-card"><h4 style="color:var(--emerald)">What is Academic Scholarship?</h4><p>Separate from athletic aid — awarded for GPA, SAT/ACT, and academic achievement. Can stack on top of athletic scholarships. For Olivier at GPA 2.8, academic merit aid is limited but available at some schools (typically requires 3.0+). As GPA improves, more academic aid becomes accessible.</p></div>

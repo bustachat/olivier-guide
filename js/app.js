@@ -26,43 +26,55 @@ const DEFAULT_FX = 1.40;  // update this if AUD weakens significantly
 let currentFx = DEFAULT_FX;
 
 async function fetchLiveFxRate() {
-  try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 4000); // 4s timeout
-    const res = await fetch('https://open.er-api.com/v6/latest/USD', { signal: controller.signal });
-    clearTimeout(timeout);
-    if (!res.ok) throw new Error('FX fetch failed');
-    const data = await res.json();
-    const audPerUsd = data.rates && data.rates.AUD;
-    if (audPerUsd && audPerUsd > 1.0 && audPerUsd < 3.0) {
-      currentFx = Math.round(audPerUsd * 100) / 100; // round to 2dp
-      return currentFx;
-    }
-    throw new Error('AUD rate out of expected range');
-  } catch (_) {
-    currentFx = DEFAULT_FX;
-    return DEFAULT_FX;
+  // Try two free CORS-friendly sources in sequence
+  const sources = [
+    { url: 'https://open.er-api.com/v6/latest/USD',           parse: d => d?.rates?.AUD },
+    { url: 'https://api.exchangerate-api.com/v4/latest/USD',  parse: d => d?.rates?.AUD },
+  ];
+  for (const src of sources) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 5000);
+      const res = await fetch(src.url, { signal: controller.signal });
+      clearTimeout(timeout);
+      if (!res.ok) continue;
+      const data = await res.json();
+      const rate = src.parse(data);
+      if (rate && rate > 1.0 && rate < 3.0) {
+        currentFx = Math.round(rate * 100) / 100;
+        return currentFx;
+      }
+    } catch (_) { /* try next source */ }
   }
+  currentFx = DEFAULT_FX;
+  return DEFAULT_FX;
 }
 
 function applyFxToUI(fx) {
-  // Update the FX slider and display in Financial tab
   const slFx   = document.getElementById('sl-fx');
   const valFx  = document.getElementById('val-fx');
-  const notice = document.getElementById('fx-rate-notice');
-  if (slFx) {
-    slFx.value = fx.toFixed(2);
-    // v20 bug fix: fire updateFinModel so AUD amounts recalculate immediately
-    if (typeof updateFinModel === 'function' && typeof finCurrentSchool !== 'undefined' && finCurrentSchool) {
-      updateFinModel();
-    }
+  if (slFx)  slFx.value = fx.toFixed(2);
+  if (valFx) valFx.textContent = fx.toFixed(2);
+
+  // Update banner rate box
+  const isLive = fx !== DEFAULT_FX;
+  const rateBox = document.getElementById('fin-rate-box');
+  if (rateBox) {
+    rateBox.className = 'fin-rate-box ' + (isLive ? 'live' : 'fallback');
+    rateBox.innerHTML = `
+      <div class="fin-rate-icon">${isLive ? '✅' : '⚠'}</div>
+      <div>
+        <div class="fin-rate-label">${isLive ? 'Live AUD/USD' : 'Default rate'}</div>
+        <div class="fin-rate-value">1 USD = ${fx.toFixed(2)} AUD</div>
+        <div class="fin-rate-sub">${isLive ? 'Updated this page load' : 'Adjust slider if rate differs'}</div>
+      </div>`;
   }
-  if (valFx)  valFx.textContent = fx.toFixed(2);
-  if (notice) {
-    const isLive = fx !== DEFAULT_FX;
-    notice.innerHTML = isLive
-      ? `<span style="color:var(--emerald)">✅ Live rate loaded: 1 USD = ${fx.toFixed(2)} AUD</span> — updates each page load. Use the slider to stress-test other scenarios.`
-      : `<span style="color:var(--amber)">⚠ Using default rate: 1 USD = ${fx.toFixed(2)} AUD</span> — live rate unavailable. Adjust slider if your bank rate differs.`;
+
+  // Re-render comparison bars with new rate
+  if (typeof renderFinComparisonBars === 'function') renderFinComparisonBars();
+  // Re-render model if a school is already selected
+  if (typeof updateFinModel === 'function' && typeof finCurrentSchool !== 'undefined' && finCurrentSchool) {
+    updateFinModel();
   }
 }
 
@@ -2055,7 +2067,10 @@ function updateFinModel(){
   const totalExtras = exFlights+exPersonal+exBooks+exHealth+exMobile;
 
   const totalAnnual = netCOA + totalExtras;
-  const total4yr    = totalAnnual * 4;
+  const isJuco      = u.div === 'JUCO';
+  const programYrs  = isJuco ? 2 : 4;
+  const total4yr    = totalAnnual * programYrs;
+  const savedTotal  = totalAid   * programYrs;
   const netColor    = netCOA===0?'var(--emerald)':netCOA<15000?'var(--amber)':'var(--rose)';
 
   // ── Summary ──
@@ -2090,12 +2105,11 @@ function updateFinModel(){
 
   document.getElementById('fin-breakdown-content').innerHTML = html;
 
-  // ── 4-year block ──
-  const savedTotal = totalAid * 4;
+  // ── Program total block ──
   document.getElementById('fin-4yr-block').innerHTML = `
-    <div class="f4-label">4-Year Total Investment</div>
+    <div class="f4-label">${programYrs}-Year Total Investment${isJuco ? ' — JUCO Transfer Program' : ''}</div>
     <div class="f4-val">${fmt(total4yr)} USD</div>
-    <div class="f4-sub">${fmtAUD(total4yr,fx)} AUD total · You save ${fmt(savedTotal)} over 4 years in scholarships</div>`;
+    <div class="f4-sub">${fmtAUD(total4yr,fx)} AUD total · You save ${fmt(savedTotal)} over ${programYrs} years in scholarships</div>`;
 
   // ── Tips ──
   let tips = '';
@@ -2105,7 +2119,7 @@ function updateFinModel(){
     const gap = Math.round((1.0 - combinedPct) * 100);
     tips = `<strong>${gap}% gap remaining:</strong> At current settings ${fmt(totalCOA-totalAid)}/yr is unfunded. Try increasing both sliders to close the gap. A full ride = 50% athletic + 50% academic.`;
   } else {
-    tips = `<strong>🎉 Full ride modelled!</strong> At these settings the total scholarship covers 100% of the university cost of attendance. Living costs (${fmt(totalExtras)}/yr) are the remaining family responsibility.`;
+    tips = `<strong>🎉 Full ride modelled!</strong> At these settings the total scholarship covers 100% of the university cost of attendance. Living costs (${fmt(totalExtras)}/yr) are the remaining family responsibility over ${programYrs} years.`;
   }
   document.getElementById('fin-tips').innerHTML = tips;
 }

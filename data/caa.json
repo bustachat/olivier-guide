@@ -357,12 +357,7 @@
       "notable": [],
       "draftRank": "Consistent CAA pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Shaun Tsakiris",
       "title": "Head Coach",
@@ -378,7 +373,10 @@
     "courses": [],
     "rec": "Best academic profile in the CAA. Small colonial campus. Consistently competitive program — good for development path.",
     "url": "https://tribeathletics.com/sports/mens-soccer",
-    "domain": "wm.edu"
+    "domain": "wm.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "hofstra",
@@ -463,12 +461,7 @@
       "notable": [],
       "draftRank": "NYC market proximity"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Scott Coufal",
       "title": "Head Coach",
@@ -484,7 +477,10 @@
     "courses": [],
     "rec": "NYC proximity via LIRR is the main appeal. Solid CAA program. Expensive for the tier.",
     "url": "https://hofstraathletics.com/sports/mens-soccer",
-    "domain": "hofstra.edu"
+    "domain": "hofstra.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "northeastern",
@@ -566,12 +562,7 @@
       "notable": [],
       "draftRank": "Developing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Brian Ainscough",
       "title": "Head Coach",
@@ -588,7 +579,10 @@
     "courses": [],
     "rec": "Boston city + co-op clinical placement in hospitals = outstanding pre-PT pathway. Expensive but co-op offsets some cost. Soccer is mid-CAA.",
     "url": "https://gonu.com/sports/mens-soccer",
-    "domain": "northeastern.edu"
+    "domain": "northeastern.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "drexel",
@@ -672,12 +666,7 @@
       "notable": [],
       "draftRank": "Developing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -693,7 +682,10 @@
     "courses": [],
     "rec": "Philadelphia city + co-op clinical placements. Similar to Northeastern but in Philly. Soccer is lower-tier CAA.",
     "url": "https://drexeldragons.com/sports/mens-soccer",
-    "domain": "drexel.edu"
+    "domain": "drexel.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "delaware",
@@ -777,12 +769,7 @@
       "notable": [],
       "draftRank": "Consistent pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -798,7 +785,10 @@
     "courses": [],
     "rec": "Strong kinesiology degree. Consistent CAA soccer. Low cost. Newark is a smaller college town — limited lifestyle.",
     "url": "https://bluehens.com/sports/mens-soccer",
-    "domain": "udel.edu"
+    "domain": "udel.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "elon",
@@ -880,12 +870,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -900,7 +885,10 @@
     "courses": [],
     "rec": "Beautiful small campus. Rural North Carolina — low lifestyle fit. Mild climate is a marginal plus.",
     "url": "https://elonphoenix.com/sports/mens-soccer",
-    "domain": "elon.edu"
+    "domain": "elon.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "monmouth",
@@ -982,12 +970,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1002,7 +985,10 @@
     "courses": [],
     "rec": "NJ Shore location has appeal — beach access, NYC day trips. Soccer and academics are developing tier. Best for maximum minutes opportunity.",
     "url": "https://monmouthhawks.com/sports/mens-soccer",
-    "domain": "monmouth.edu"
+    "domain": "monmouth.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "stonybrook",
@@ -1084,12 +1070,7 @@
       "notable": [],
       "draftRank": "Long Island/NYC market"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1104,7 +1085,10 @@
     "courses": [],
     "rec": "Strong value — low cost, research university, Stony Brook Medicine for pre-PT. Rural Long Island campus. NYC access via LIRR.",
     "url": "https://stonybrookseawolves.com/sports/mens-soccer",
-    "domain": "stonybrook.edu"
+    "domain": "stonybrook.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "towson",
@@ -1186,12 +1170,7 @@
       "notable": [],
       "draftRank": "Baltimore/DC market"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1207,6 +1186,9 @@
     "courses": [],
     "rec": "Best value in the CAA. Baltimore suburb + DC day trips. Low cost. Soccer is developing but pre-PT pathway via local hospitals is good.",
     "url": "https://towsontigers.com/sports/mens-soccer",
-    "domain": "towson.edu"
+    "domain": "towson.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   }
 ]

@@ -655,12 +655,7 @@
       "notable": [],
       "draftRank": "Consistent Big Ten pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Bob Warming",
       "title": "Head Coach",
@@ -676,7 +671,10 @@
     "courses": [],
     "rec": "Consistent Big Ten contender. Strong kinesiology program. Rural campus — significant lifestyle trade-off for Olivier.",
     "url": "https://gopsusports.com/sports/mens-soccer",
-    "domain": "psu.edu"
+    "domain": "psu.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "michigan",
@@ -760,12 +758,7 @@
       "notable": [],
       "draftRank": "Strong Big Ten pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Chaka Daley",
       "title": "Head Coach",
@@ -781,7 +774,10 @@
     "courses": [],
     "rec": "One of the best Movement Science programs in the country. Michigan Medicine pre-PT access is elite. Ann Arbor is a lively college town despite cold winters.",
     "url": "https://mgoblue.com/sports/mens-soccer",
-    "domain": "umich.edu"
+    "domain": "umich.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "michiganstate",
@@ -863,12 +859,7 @@
       "notable": [],
       "draftRank": "Moderate pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Damon Rensing",
       "title": "Head Coach",
@@ -883,7 +874,10 @@
     "courses": [],
     "rec": "Mid-tier Big Ten. Best for realistic minutes among Michigan schools. Cold campus — similar drawbacks to Michigan.",
     "url": "https://msuspartans.com/sports/mens-soccer",
-    "domain": "msu.edu"
+    "domain": "msu.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "ohiostate",
@@ -967,12 +961,7 @@
       "notable": [],
       "draftRank": "Developing MLS pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Brian Maisonneuve",
       "title": "Head Coach",
@@ -988,7 +977,10 @@
     "courses": [],
     "rec": "Columbus is a real, growing city — good lifestyle for a Midwest option. Wexner Medical Center for pre-PT. Reasonable cost.",
     "url": "https://ohiostatebuckeyes.com/sports/mens-soccer",
-    "domain": "osu.edu"
+    "domain": "osu.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "northwestern",
@@ -1070,12 +1062,7 @@
       "notable": [],
       "draftRank": "Small pipeline — academic-first program"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Tim Lenahan",
       "title": "Head Coach",
@@ -1092,7 +1079,10 @@
     "courses": [],
     "rec": "Elite academics + Chicago access. Soccer is competitive not elite — more realistic minutes than top Big Ten programs. Very expensive.",
     "url": "https://nusports.com/sports/mens-soccer",
-    "domain": "northwestern.edu"
+    "domain": "northwestern.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "wisconsin",
@@ -1174,12 +1164,7 @@
       "notable": [],
       "draftRank": "Moderate pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "John Trask",
       "title": "Head Coach",
@@ -1194,7 +1179,10 @@
     "courses": [],
     "rec": "Lower-cost Big Ten option. Best for minutes opportunity among mid-tier programs. Cold Wisconsin winters are a significant drawback.",
     "url": "https://uwbadgers.com/sports/mens-soccer",
-    "domain": "wisc.edu"
+    "domain": "wisc.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "rutgers",
@@ -1278,12 +1266,7 @@
       "notable": [],
       "draftRank": "Moderate pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Jim McElderry",
       "title": "Head Coach",
@@ -1299,7 +1282,10 @@
     "courses": [],
     "rec": "NYC proximity is a genuine advantage. Mid-tier Big Ten program. Historically strong in Big East era — still rebuilding in Big Ten.",
     "url": "https://scarletknights.com/sports/mens-soccer",
-    "domain": "rutgers.edu"
+    "domain": "rutgers.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "oregon",
@@ -1383,12 +1369,7 @@
       "notable": [],
       "draftRank": "Growing Pacific pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Wilfried Grabherr",
       "title": "Head Coach",
@@ -1403,7 +1384,10 @@
     "courses": [],
     "rec": "Best minutes opportunity in the Big Ten. Strong human physiology degree. Pacific Northwest climate is rainy — not ideal for Olivier.",
     "url": "https://goducks.com/sports/mens-soccer",
-    "domain": "uoregon.edu"
+    "domain": "uoregon.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "usc",
@@ -1487,12 +1471,7 @@
       "notable": [],
       "draftRank": "Strong West Coast pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Neil Jones",
       "title": "Head Coach",
@@ -1510,7 +1489,10 @@
     "courses": [],
     "rec": "LA lifestyle — second best after UCLA for Olivier's climate preference. USC Keck Medicine for pre-PT. Expensive but worth considering alongside UCLA.",
     "url": "https://usctrojans.com/sports/mens-soccer",
-    "domain": "usc.edu"
+    "domain": "usc.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "washington",
@@ -1594,12 +1576,7 @@
       "notable": [],
       "draftRank": "Consistent Pacific pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Jamie Clark",
       "title": "Head Coach",
@@ -1615,7 +1592,10 @@
     "courses": [],
     "rec": "Seattle city lifestyle. Sounders proximity a pro soccer bonus. Rain is a genuine drawback for Olivier. Mid-range cost.",
     "url": "https://gohuskies.com/sports/mens-soccer",
-    "domain": "uw.edu"
+    "domain": "uw.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "illinois",
@@ -1697,12 +1677,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Mark Boos",
       "title": "Head Coach",
@@ -1717,6 +1692,9 @@
     "courses": [],
     "rec": "Most accessible minutes in the Big Ten. Rural flat campus — low lifestyle fit for Olivier. Main draw is playing time and lower academic bar.",
     "url": "https://fightingillini.com/sports/mens-soccer",
-    "domain": "illinois.edu"
+    "domain": "illinois.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   }
 ]

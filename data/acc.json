@@ -951,12 +951,7 @@
       "notable": [],
       "draftRank": "Strong pipeline, highly selective roster"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "John Kerr",
       "title": "Head Coach",
@@ -972,7 +967,10 @@
     "courses": [],
     "rec": "Elite academics and strong ACC soccer. Very expensive. Extremely competitive admission.",
     "url": "https://goduke.com/sports/mens-soccer",
-    "domain": "duke.edu"
+    "domain": "duke.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "ncstate",
@@ -1054,12 +1052,7 @@
       "notable": [],
       "draftRank": "Developing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Kelly Findley",
       "title": "Head Coach",
@@ -1074,7 +1067,10 @@
     "courses": [],
     "rec": "Mid-tier ACC program in Raleigh. Good value for cost. More realistic minutes opportunity than top ACC programs.",
     "url": "https://gopack.com/sports/mens-soccer",
-    "domain": "ncsu.edu"
+    "domain": "ncsu.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "louisville",
@@ -1156,12 +1152,7 @@
       "notable": [],
       "draftRank": "Growing MLS pipeline in ACC"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "John Michael Hayden",
       "title": "Head Coach",
@@ -1178,7 +1169,10 @@
     "courses": [],
     "rec": "Best value in the ACC. Warm, mid-sized city. Realistic minutes path. UofL Health for pre-PT clinical experience.",
     "url": "https://gocards.com/sports/mens-soccer",
-    "domain": "louisville.edu"
+    "domain": "louisville.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "pittsburgh",
@@ -1262,12 +1256,7 @@
       "notable": [],
       "draftRank": "Developing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Jay Vidovich",
       "title": "Head Coach",
@@ -1283,7 +1272,10 @@
     "courses": [],
     "rec": "Real city — Pittsburgh has strong character. UPMC partnership is outstanding for pre-PT. Cold climate is a drawback.",
     "url": "https://pittPanthers.com/sports/mens-soccer",
-    "domain": "pitt.edu"
+    "domain": "pitt.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "stanford",
@@ -1368,12 +1360,7 @@
       "notable": [],
       "draftRank": "Top 10 all-time MLS producers"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Jeremy Gunn",
       "title": "Head Coach",
@@ -1390,7 +1377,10 @@
     "courses": [],
     "rec": "Best academic + soccer combination in the entire guide. Bay Area location. Extremely difficult admission — elite level required.",
     "url": "https://gostanford.com/sports/mens-soccer",
-    "domain": "stanford.edu"
+    "domain": "stanford.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "syracuse",
@@ -1475,12 +1465,7 @@
       "notable": [],
       "draftRank": "Moderate pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Ian McIntyre",
       "title": "Head Coach",
@@ -1495,7 +1480,10 @@
     "courses": [],
     "rec": "Mid-tier ACC program. Expensive private university. Very cold winters — significant lifestyle downside for Olivier.",
     "url": "https://cuse.com/sports/mens-soccer",
-    "domain": "syracuse.edu"
+    "domain": "syracuse.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "cal",
@@ -1579,12 +1567,7 @@
       "notable": [],
       "draftRank": "Strong West Coast pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Colin Carmichael",
       "title": "Head Coach",
@@ -1602,7 +1585,10 @@
     "courses": [],
     "rec": "Bay Area lifestyle closest to UCLA. Strong physiology path for pre-PT. Now in ACC — competing at higher level.",
     "url": "https://calbears.com/sports/mens-soccer",
-    "domain": "berkeley.edu"
+    "domain": "berkeley.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "fsu",
@@ -1686,12 +1672,7 @@
       "notable": [],
       "draftRank": "Strong Florida pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Elmar Bolowich",
       "title": "Head Coach",
@@ -1707,6 +1688,9 @@
     "courses": [],
     "rec": "Best value ACC warm-weather option. Florida location + strong soccer + accessible cost. Tallahassee is smaller city — lifestyle trade-off.",
     "url": "https://seminoles.com/sports/mens-soccer",
-    "domain": "fsu.edu"
+    "domain": "fsu.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   }
 ]

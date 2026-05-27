@@ -656,12 +656,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Tom McIntosh",
       "title": "Head Coach",
@@ -678,7 +673,10 @@
     "courses": [],
     "rec": "Warm Oklahoma city. Small private university with strong scholarship offers. Mid-tier AAC soccer.",
     "url": "https://tulsahurricane.com/sports/mens-soccer",
-    "domain": "utulsa.edu"
+    "domain": "utulsa.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "memphis",
@@ -760,12 +758,7 @@
       "notable": [],
       "draftRank": "Growing Southern pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -782,7 +775,10 @@
     "courses": [],
     "rec": "Best value in the AAC. Warm city. Low academic bar. Soccer is competitive enough for development.",
     "url": "https://gotigersgo.com/sports/mens-soccer",
-    "domain": "memphis.edu"
+    "domain": "memphis.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "wichitastate",
@@ -864,12 +860,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -884,7 +875,10 @@
     "courses": [],
     "rec": "Lowest cost option in the AAC. Best for budget-constrained scenarios. Flat Kansas campus — low lifestyle appeal for Olivier.",
     "url": "https://goshockers.com/sports/mens-soccer",
-    "domain": "wichita.edu"
+    "domain": "wichita.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "temple",
@@ -966,12 +960,7 @@
       "notable": [],
       "draftRank": "Philadelphia market access"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Brian Rowland",
       "title": "Head Coach",
@@ -987,7 +976,10 @@
     "courses": [],
     "rec": "Philadelphia location is the main draw — Union proximity, real city. Good value for an AAC program.",
     "url": "https://owlsports.com/sports/mens-soccer",
-    "domain": "temple.edu"
+    "domain": "temple.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "eastcarolina",
@@ -1069,12 +1061,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Andrew Whyte",
       "title": "Head Coach",
@@ -1090,7 +1077,10 @@
     "courses": [],
     "rec": "Lowest-cost warm option in the guide. Rural North Carolina campus. Best for budget-first scenarios.",
     "url": "https://ecupirates.com/sports/mens-soccer",
-    "domain": "ecu.edu"
+    "domain": "ecu.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "uab",
@@ -1172,12 +1162,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1194,7 +1179,10 @@
     "courses": [],
     "rec": "Hidden gem for pre-PT pathway — UAB Hospital is world-class. Warm Birmingham city. Very low cost. Soccer is lower-tier AAC.",
     "url": "https://uabsports.com/sports/mens-soccer",
-    "domain": "uab.edu"
+    "domain": "uab.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "navy",
@@ -1276,12 +1264,7 @@
       "notable": [],
       "draftRank": "N/A — service commitment prevents MLS"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Chris Kampe",
       "title": "Head Coach",
@@ -1296,7 +1279,10 @@
     "courses": [],
     "rec": "⚠ Service academy — requires 5-year US Navy commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. Listed for completeness only.",
     "url": "https://navysports.com/sports/mens-soccer",
-    "domain": "usna.edu"
+    "domain": "usna.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "army",
@@ -1378,12 +1364,7 @@
       "notable": [],
       "draftRank": "N/A — service commitment prevents MLS"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1398,7 +1379,10 @@
     "courses": [],
     "rec": "⚠ Service academy — requires 5-year US Army commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. Listed for completeness only.",
     "url": "https://goarmywestpoint.com/sports/mens-soccer",
-    "domain": "westpoint.edu"
+    "domain": "westpoint.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "charlotte",
@@ -1482,12 +1466,7 @@
       "notable": [],
       "draftRank": "Charlotte FC proximity — growing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1504,7 +1483,10 @@
     "courses": [],
     "rec": "Warm city at very low cost. Charlotte FC proximity is a development bonus. Best lifestyle-to-cost ratio in the AAC.",
     "url": "https://charlotte49ers.com/sports/mens-soccer",
-    "domain": "charlotte.edu"
+    "domain": "charlotte.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "rice",
@@ -1588,12 +1570,7 @@
       "notable": [],
       "draftRank": "Strong pipeline for program size"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1611,6 +1588,9 @@
     "courses": [],
     "rec": "Elite academics + warm Houston city + Texas Medical Center for pre-PT = best non-power-conference academic option. Selective admission.",
     "url": "https://riceowls.com/sports/mens-soccer",
-    "domain": "rice.edu"
+    "domain": "rice.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   }
 ]

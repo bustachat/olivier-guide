@@ -371,12 +371,7 @@
       "notable": [],
       "draftRank": "Developing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Steve Sampson",
       "title": "Head Coach",
@@ -392,7 +387,10 @@
     "courses": [],
     "rec": "Best value California coastal option. SLO campus lifestyle is outstanding — beaches, wine country, mountains. Low cost for a California D1.",
     "url": "https://gopoly.com/sports/mens-soccer",
-    "domain": "calpoly.edu"
+    "domain": "calpoly.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "ucdavis",
@@ -476,12 +474,7 @@
       "notable": [],
       "draftRank": "Developing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -497,7 +490,10 @@
     "courses": [],
     "rec": "UC quality academics. Davis is a bike-friendly college town near Sacramento. Warm inland California — not coastal but pleasant.",
     "url": "https://ucdavisaggies.com/sports/mens-soccer",
-    "domain": "ucdavis.edu"
+    "domain": "ucdavis.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "ucirvine",
@@ -582,12 +578,7 @@
       "notable": [],
       "draftRank": "OC/LA market access"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -604,7 +595,10 @@
     "courses": [],
     "rec": "Orange County location — warm, near beach, LA day trips. Strong lifestyle for Olivier. Soccer is mid-tier Big West.",
     "url": "https://ucirvineantares.com/sports/mens-soccer",
-    "domain": "uci.edu"
+    "domain": "uci.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "ucriverside",
@@ -686,12 +680,7 @@
       "notable": [],
       "draftRank": "Developing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -707,7 +696,10 @@
     "courses": [],
     "rec": "Inland Southern California — hot and dry. More minutes opportunity than stronger UC campuses. Weakest soccer in this batch.",
     "url": "https://ucrhighlanders.com/sports/mens-soccer",
-    "domain": "ucr.edu"
+    "domain": "ucr.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "ucsd",
@@ -789,12 +781,7 @@
       "notable": [],
       "draftRank": "Growing pipeline — program elevating quickly"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -812,7 +799,10 @@
     "courses": [],
     "rec": "San Diego/La Jolla — best beach city in the guide after UCSB. Exercise and Rehabilitative Sciences is ideal for Olivier's DPT path. Rising program.",
     "url": "https://ucsdtritons.com/sports/mens-soccer",
-    "domain": "ucsd.edu"
+    "domain": "ucsd.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "longbeach",
@@ -894,12 +884,7 @@
       "notable": [],
       "draftRank": "LA market access"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -916,7 +901,10 @@
     "courses": [],
     "rec": "LA metro + beach + very low cost = best value lifestyle option in the Big West. Soccer is mid-tier but LA career access is a real bonus.",
     "url": "https://longbeachstate.com/sports/mens-soccer",
-    "domain": "csulb.edu"
+    "domain": "csulb.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "hawaii",
@@ -998,12 +986,7 @@
       "notable": [],
       "draftRank": "Limited pipeline due to geography"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1020,7 +1003,10 @@
     "courses": [],
     "rec": "Lifestyle 10/10 — Honolulu beach life. Geographically isolated for recruiting and travel. Extra flight cost to/from Australia. Lower academic/soccer tier.",
     "url": "https://hawaiiathletics.com/sports/mens-soccer",
-    "domain": "hawaii.edu"
+    "domain": "hawaii.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "csuf",
@@ -1102,12 +1088,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "TBD",
       "title": "Head Coach",
@@ -1124,6 +1105,9 @@
     "courses": [],
     "rec": "Lowest-cost warm SoCal option. OC location is excellent lifestyle. Soccer is developing — most realistic minutes in Big West.",
     "url": "https://fullertontitans.com/sports/mens-soccer",
-    "domain": "fullerton.edu"
+    "domain": "fullerton.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   }
 ]

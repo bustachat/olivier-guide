@@ -355,12 +355,7 @@
       "notable": [],
       "draftRank": "Solid Midwest pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Ted Schmitt",
       "title": "Head Coach",
@@ -376,7 +371,10 @@
     "courses": [],
     "rec": "Consistently strong Big East program. Omaha is a real city with low cost of living. Good value for a competitive D1 program.",
     "url": "https://gocreighton.com/sports/mens-soccer",
-    "domain": "creighton.edu"
+    "domain": "creighton.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "providence",
@@ -458,12 +456,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Craig Stewart",
       "title": "Head Coach",
@@ -479,7 +472,10 @@
     "courses": [],
     "rec": "Small Catholic college. Providence is a real city with Boston day-trip access. Expensive for the program tier.",
     "url": "https://friars.com/sports/mens-soccer",
-    "domain": "providence.edu"
+    "domain": "providence.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "setonhall",
@@ -561,12 +557,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Ryan Baker",
       "title": "Head Coach",
@@ -582,7 +573,10 @@
     "courses": [],
     "rec": "NYC proximity is the main draw — 30 min to Manhattan. Mid-tier Big East program. Expensive for the tier.",
     "url": "https://shupirates.com/sports/mens-soccer",
-    "domain": "shu.edu"
+    "domain": "shu.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "butler",
@@ -664,12 +658,7 @@
       "notable": [],
       "draftRank": "Developing pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Paul Snape",
       "title": "Head Coach",
@@ -685,7 +674,10 @@
     "courses": [],
     "rec": "Beautiful small campus in Indianapolis. Good value for a Big East program. Indianapolis medical district for pre-PT clinical access.",
     "url": "https://butlersports.com/sports/mens-soccer",
-    "domain": "butler.edu"
+    "domain": "butler.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "xavier",
@@ -767,12 +759,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Nate Winding",
       "title": "Head Coach",
@@ -788,7 +775,10 @@
     "courses": [],
     "rec": "Small Jesuit university in Cincinnati. FC Cincinnati proximity is a pro soccer bonus. Mid-tier Big East program.",
     "url": "https://goxavier.com/sports/mens-soccer",
-    "domain": "xavier.edu"
+    "domain": "xavier.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "uconn",
@@ -872,12 +862,7 @@
       "notable": [],
       "draftRank": "Solid New England pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Ray Reid",
       "title": "Head Coach",
@@ -892,7 +877,10 @@
     "courses": [],
     "rec": "Historically strong program. Rural Storrs campus is the main drawback — isolated location in Connecticut.",
     "url": "https://uconnhuskies.com/sports/mens-soccer",
-    "domain": "uconn.edu"
+    "domain": "uconn.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "depaul",
@@ -974,12 +962,7 @@
       "notable": [],
       "draftRank": "Chicago Fire proximity a development pathway"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Mark Plotkin",
       "title": "Head Coach",
@@ -995,7 +978,10 @@
     "courses": [],
     "rec": "Chicago city life is the main appeal — strongest lifestyle score in this Big East batch. Weakest soccer in the conference but best location for Olivier.",
     "url": "https://depaulbluedemons.com/sports/mens-soccer",
-    "domain": "depaul.edu"
+    "domain": "depaul.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "villanova",
@@ -1077,12 +1063,7 @@
       "notable": [],
       "draftRank": "Limited pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Tom Carlin",
       "title": "Head Coach",
@@ -1098,7 +1079,10 @@
     "courses": [],
     "rec": "Prestigious small Catholic university. Philadelphia suburb with strong Main Line culture. Expensive for the program tier.",
     "url": "https://villanova.com/sports/mens-soccer",
-    "domain": "villanova.edu"
+    "domain": "villanova.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   },
   {
     "id": "marquette",
@@ -1182,12 +1166,7 @@
       "notable": [],
       "draftRank": "Consistent Midwest pipeline"
     },
-    "devScores": {
-      "tactical": 0,
-      "technical": 0,
-      "fitness": 0,
-      "ptPath": 0
-    },
+    "devScores": null,
     "coach": {
       "name": "Ami Bhatt",
       "title": "Head Coach",
@@ -1203,6 +1182,9 @@
     "courses": [],
     "rec": "Solid Big East program in Milwaukee. Consistent tournament contender. Cold winters but real city life.",
     "url": "https://gomarquette.com/sports/mens-soccer",
-    "domain": "marquette.edu"
+    "domain": "marquette.edu",
+    "minutesOutlook": {
+      "available": false
+    }
   }
 ]

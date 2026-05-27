@@ -157,6 +157,7 @@ function initApp() {
   renderACUTable();
   renderCoachCards();
   renderCoachTable();
+  renderOutreachTracker();
   renderFinSchoolSelector();
   renderFinComparisonBars();
   renderMinutesOutlook();
@@ -1978,6 +1979,102 @@ function filterCoaches(type,btn){
     else if(type==='pro')c.style.display=c.dataset.pro==='true'?'':'none';
     else c.style.display=c.dataset.div===type?'':'none';
   });
+}
+
+// ── Outreach Tracker ──────────────────────────────────────────────────────────
+const OUTREACH_STATUSES = ['Not contacted','Email sent','Call scheduled','Offer pending'];
+const OUTREACH_STATUS_COLOR = {
+  'Not contacted': { bg:'var(--surface2)', text:'var(--muted)' },
+  'Email sent':    { bg:'var(--sky3)',     text:'var(--sky)' },
+  'Call scheduled':{ bg:'var(--indigo3)', text:'var(--indigo)' },
+  'Offer pending': { bg:'var(--emerald3)','text':'var(--emerald)' },
+};
+function outreachKey(){ return 'olivier_outreach'; }
+function loadOutreachData(){ try{ return JSON.parse(localStorage.getItem(outreachKey())||'{}'); }catch(_){ return {}; } }
+function saveOutreachField(schoolId, field, value){
+  const data = loadOutreachData();
+  if(!data[schoolId]) data[schoolId] = {};
+  data[schoolId][field] = value;
+  localStorage.setItem(outreachKey(), JSON.stringify(data));
+}
+
+function renderOutreachTracker(){
+  try {
+    const wrap = document.getElementById('outreach-tracker-wrap');
+    if(!wrap) return;
+
+    const outreachList = (athleteConfig.outreach || []);
+    if(!outreachList.length){ wrap.innerHTML=''; return; }
+
+    const saved = loadOutreachData();
+    let activeFilter = 'all';
+
+    function buildRows(filter){
+      return outreachList.map(entry => {
+        const saved_entry = saved[entry.schoolId] || {};
+        const status   = saved_entry.status   || entry.status   || 'Not contacted';
+        const lastDate = saved_entry.lastContact || entry.lastContact || '';
+        const note     = saved_entry.note     || entry.note     || '';
+
+        if(filter === 'active' && !['Email sent','Call scheduled'].includes(status)) return '';
+        if(filter === 'offer'  && status !== 'Offer pending') return '';
+
+        const school = unis.find(u => u.id === entry.schoolId);
+        const name   = school ? school.name : entry.schoolId;
+        const div    = school ? school.div  : '';
+        const conf   = school ? school.conf : '';
+        const sc     = OUTREACH_STATUS_COLOR[status] || OUTREACH_STATUS_COLOR['Not contacted'];
+
+        const opts = OUTREACH_STATUSES.map(s =>
+          `<option value="${s}"${s===status?' selected':''}>${s}</option>`
+        ).join('');
+
+        return `<tr class="or-row" data-id="${entry.schoolId}">
+          <td class="or-school"><strong>${name}</strong><br><span style="font-size:9px;color:var(--muted)">${div} · ${conf}</span></td>
+          <td><select class="or-status-sel" style="background:${sc.bg};color:${sc.text}"
+            onchange="saveOutreachField('${entry.schoolId}','status',this.value);renderOutreachTracker()">${opts}</select></td>
+          <td><input type="date" class="or-date-inp" value="${lastDate}"
+            onchange="saveOutreachField('${entry.schoolId}','lastContact',this.value)"></td>
+          <td><input type="text" class="or-note-inp" value="${note.replace(/"/g,'&quot;')}" placeholder="Add note…"
+            onchange="saveOutreachField('${entry.schoolId}','note',this.value)"></td>
+        </tr>`;
+      }).join('');
+    }
+
+    function render(){
+      const rows = buildRows(activeFilter);
+      wrap.innerHTML = `
+        <div class="section-head"><h2>Coach Outreach Tracker</h2></div>
+        <div style="display:flex;gap:.5rem;margin-bottom:.85rem;flex-wrap:wrap">
+          <button class="or-filter-btn${activeFilter==='all'?' active':''}" onclick="(function(){window._orFilter='all';renderOutreachTracker()})()">All</button>
+          <button class="or-filter-btn${activeFilter==='active'?' active':''}" onclick="(function(){window._orFilter='active';renderOutreachTracker()})()">Active</button>
+          <button class="or-filter-btn${activeFilter==='offer'?' active':''}" onclick="(function(){window._orFilter='offer';renderOutreachTracker()})()">Offer pending</button>
+        </div>
+        <div style="overflow-x:auto;margin-bottom:2rem">
+          <table class="or-table">
+            <thead><tr><th>School</th><th>Status</th><th>Last Contact</th><th>Note</th></tr></thead>
+            <tbody>${rows || '<tr><td colspan="4" style="text-align:center;color:var(--hint);padding:1rem">No entries match this filter.</td></tr>'}</tbody>
+          </table>
+        </div>
+        <style>
+          .or-table{width:100%;border-collapse:collapse;font-size:12px;}
+          .or-table th{text-align:left;padding:5px 8px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);border-bottom:2px solid var(--border);}
+          .or-table td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:middle;}
+          .or-school{min-width:120px;}
+          .or-status-sel{border:1px solid var(--border);border-radius:6px;padding:3px 20px 3px 6px;font-size:10px;font-weight:700;font-family:'Outfit',sans-serif;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b7280'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 5px center;}
+          .or-date-inp,.or-note-inp{border:1px solid var(--border);border-radius:5px;padding:3px 6px;font-size:11px;font-family:'Outfit',sans-serif;background:var(--bg);color:var(--navy);outline:none;width:100%;}
+          .or-note-inp{min-width:160px;}
+          .or-filter-btn{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:4px 12px;font-size:11px;font-weight:600;font-family:'Outfit',sans-serif;cursor:pointer;color:var(--muted);}
+          .or-filter-btn.active{background:var(--indigo);border-color:var(--indigo);color:#fff;}
+        </style>`;
+      // Restore active filter after re-render
+      if(window._orFilter) activeFilter = window._orFilter;
+    }
+
+    // Sync active filter from window state if set
+    if(window._orFilter) activeFilter = window._orFilter;
+    render();
+  } catch(e){ console.error('renderOutreachTracker failed:',e); }
 }
 
 // ══════════════════════════════════════════════════

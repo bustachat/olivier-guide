@@ -57,6 +57,55 @@ function dashReachable(u) {
   return dashGpa >= gpaMin && costNum <= dashBudget;
 }
 
+// ─── Shortlist status helpers ─────────────────────────────────────────────────
+const SL_STATUSES = ['Not contacted','Email sent','In conversation','Offer received','Eliminated'];
+const SL_STATUS_COLOR = {
+  'Not contacted':  { bg:'var(--surface2)',  text:'var(--muted)' },
+  'Email sent':     { bg:'var(--sky3)',      text:'var(--sky)' },
+  'In conversation':{ bg:'var(--indigo3)',   text:'var(--indigo)' },
+  'Offer received': { bg:'var(--emerald3)',  text:'var(--emerald)' },
+  'Eliminated':     { bg:'var(--rose3)',     text:'var(--rose)' },
+};
+
+function slStatusKey() { return 'olivier_sl_status'; }
+
+function loadSlStatuses() {
+  try { return JSON.parse(localStorage.getItem(slStatusKey()) || '{}'); } catch(_) { return {}; }
+}
+
+function saveSlStatus(id, status) {
+  const map = loadSlStatuses();
+  map[id] = status;
+  localStorage.setItem(slStatusKey(), JSON.stringify(map));
+  // Update in-memory dashAthlete shortlist
+  if (dashAthlete.shortlist) {
+    dashAthlete.shortlist = dashAthlete.shortlist.map(entry => {
+      const entryId = typeof entry === 'string' ? entry : entry.id;
+      if (entryId === id) return { id: entryId, status };
+      return typeof entry === 'string' ? { id: entry, status: 'Not contacted' } : entry;
+    });
+  }
+  updateShortlist();
+}
+
+function getSlStatus(id) {
+  const saved = loadSlStatuses();
+  if (saved[id]) return saved[id];
+  // Fall back to JSON value if it exists
+  const entry = (dashAthlete.shortlist || []).find(e => (typeof e === 'string' ? e : e.id) === id);
+  if (entry && typeof entry === 'object') return entry.status || 'Not contacted';
+  return 'Not contacted';
+}
+
+function normaliseShortlist(raw) {
+  if (!Array.isArray(raw)) return [];
+  const saved = loadSlStatuses();
+  return raw.map(entry => {
+    if (typeof entry === 'string') return { id: entry, status: saved[entry] || 'Not contacted' };
+    return { id: entry.id, status: saved[entry.id] || entry.status || 'Not contacted' };
+  });
+}
+
 // ─── Entry point ──────────────────────────────────────────────────────────────
 async function renderDashboard() {
   const base = window.DATA_BASE_URL || './';
@@ -66,6 +115,9 @@ async function renderDashboard() {
   } catch (_) {
     dashAthlete = { budgetUSD:55000, shortlist:['fiu','pba','lynn','ucsb'], defaultAtar:70, currentGpa:2.8 };
   }
+
+  // Normalise shortlist to [{id, status}] and merge localStorage overrides
+  dashAthlete.shortlist = normaliseShortlist(dashAthlete.shortlist);
 
   dashBudget = dashAthlete.budgetUSD || 55000;
   dashGpa    = (typeof currentAtarGpa !== 'undefined') ? currentAtarGpa : (dashAthlete.currentGpa || 2.8);
@@ -269,6 +321,8 @@ function buildDashboardShell() {
 .dash-hi-scores{display:flex;gap:10px;flex-wrap:wrap;}
 .dash-hi-sc{font-size:11px;font-weight:700;}
 .dash-hi-sc span{font-size:9px;color:var(--hint);font-weight:400;}
+.dash-sl-status-row{margin:.28rem 0 .1rem;}
+.dash-sl-status-sel{width:100%;border:1px solid var(--border);border-radius:6px;padding:3px 6px;font-size:9px;font-weight:700;font-family:'Outfit',sans-serif;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b7280'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;padding-right:20px;}
 </style>`;
 }
 
@@ -374,23 +428,29 @@ function updateShortlist() {
   const el = document.getElementById('dash-shortlist');
   if (!el) return;
 
-  const pinnedIds   = (dashAthlete.shortlist || []);
-  const pinnedSet   = new Set(pinnedIds);
+  const pinnedEntries = (dashAthlete.shortlist || []).map(e =>
+    typeof e === 'string' ? { id: e, status: getSlStatus(e) } : e
+  );
+  const pinnedIds  = pinnedEntries.map(e => e.id);
+  const pinnedSet  = new Set(pinnedIds);
   const fullSchools = unis.filter(u => u.profileDepth === 'full' && !u.noVarsity);
 
-  // Pinned schools in order
-  const pinned = pinnedIds.map(id => fullSchools.find(u => u.id === id)).filter(Boolean);
+  // Pinned schools in order, carrying their status
+  const pinned = pinnedEntries
+    .map(entry => { const u = fullSchools.find(s => s.id === entry.id); return u ? { u, status: entry.status } : null; })
+    .filter(Boolean);
 
-  // Remaining top schools by fitOlivier
+  // Remaining top schools by fitOlivier (no status)
   const autoTop = [...fullSchools]
     .filter(u => !pinnedSet.has(u.id))
-    .sort((a, b) => (b.fitOlivier || 0) - (a.fitOlivier || 0));
+    .sort((a, b) => (b.fitOlivier || 0) - (a.fitOlivier || 0))
+    .map(u => ({ u, status: null }));
 
   // Merge to 8 total
   const display = [...pinned];
-  for (const u of autoTop) {
+  for (const item of autoTop) {
     if (display.length >= 8) break;
-    display.push(u);
+    display.push(item);
   }
 
   if (!display.length) {
@@ -398,7 +458,7 @@ function updateShortlist() {
     return;
   }
 
-  el.innerHTML = display.map((u, idx) => {
+  el.innerHTML = display.map(({ u, status }, idx) => {
     const isPinned   = pinnedSet.has(u.id);
     const gpaMin     = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
     const costNum    = u.fin?.costNum ?? 0;
@@ -416,6 +476,19 @@ function updateShortlist() {
     let warn = '';
     if (ineligible) warn = '<div class="dash-sl-warn gpa">GPA below entry minimum</div>';
     else if (overBudget) warn = '<div class="dash-sl-warn budget">Above current budget</div>';
+
+    // Status pill — only on pinned shortlist schools
+    let statusHtml = '';
+    if (isPinned && status !== null) {
+      const sc = SL_STATUS_COLOR[status] || SL_STATUS_COLOR['Not contacted'];
+      const opts = SL_STATUSES.map(s =>
+        `<option value="${s}"${s === status ? ' selected' : ''}>${s}</option>`
+      ).join('');
+      statusHtml = `<div class="dash-sl-status-row">
+        <select class="dash-sl-status-sel" style="background:${sc.bg};color:${sc.text}"
+          onchange="saveSlStatus('${u.id}', this.value)">${opts}</select>
+      </div>`;
+    }
 
     return `<div class="dash-sl-card${overBudget?' over-budget':''}${ineligible?' ineligible':''}">
       ${badge}
@@ -439,9 +512,10 @@ function updateShortlist() {
         <div class="dash-sl-sc" style="color:var(--muted)">~$${Math.round(costNum/1000)}k</div>
       </div>
       ${warn}
+      ${statusHtml}
       <div class="dash-sl-btns">
         <button class="dash-sl-btn primary" onclick="openDetail('${u.id}')">Details</button>
-<button class="dash-sl-btn" onclick="toggleCompare('${u.id}',this)">Compare</button>
+        <button class="dash-sl-btn" onclick="toggleCompare('${u.id}',this)">Compare</button>
         <button class="dash-sl-btn" onclick="window.location.href='mailto:${u.coach?.email||''}'">Email</button>
       </div>
     </div>`;
@@ -566,7 +640,7 @@ function updateMapDots() {
   svg.querySelectorAll('.dash-map-dot').forEach(e => e.remove());
 
   const ns = 'http://www.w3.org/2000/svg';
-  const shortlistIds = new Set(dashAthlete.shortlist || []);
+  const shortlistIds = new Set((dashAthlete.shortlist || []).map(e => typeof e === 'string' ? e : e.id));
 
   unis.filter(u => u.mapX !== undefined && u.mapY !== undefined && !u.excludeFromMap && !u.noVarsity).forEach(u => {
     const blocked = !dashReachable(u);

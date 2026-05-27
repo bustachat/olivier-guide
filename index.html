@@ -931,9 +931,9 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     </div>
   </div>
   <div class="fin-explainer">
-    <div class="fin-exp-card"><h4 style="color:var(--indigo)">What is Athletic Scholarship?</h4><p>In D1 and D2, coaches have a scholarship "pool" (9.9 equivalencies for D1 soccer; 9.0 for D2). They split this across their roster. A "full athletic scholarship" covers tuition, room, board, and fees. In practice, international players often receive 25–75% athletic aid. NAIA has no cap. D3 and Ivy League = zero athletic scholarships.</p></div>
+    <div class="fin-exp-card"><h4 style="color:var(--indigo)">What is Athletic Scholarship?</h4><p>In D1 and D2, coaches have a scholarship "pool" (9.9 equivalencies for D1 soccer; 9.0 for D2). They split this across their roster. A "full athletic scholarship" covers tuition, room, board, and fees. Team travel — buses, hotels, meals, and team flights for away games — is fully covered by the program and is not an out-of-pocket cost. Personal flights home to Australia are legally excluded from scholarships. In practice, international players often receive 25–75% athletic aid. NAIA has no cap. D3 and Ivy League = zero athletic scholarships.</p></div>
     <div class="fin-exp-card"><h4 style="color:var(--emerald)">What is Academic Scholarship?</h4><p>Separate from athletic aid — awarded for GPA, SAT/ACT, and academic achievement. Can stack on top of athletic scholarships. For Olivier at GPA 2.8, academic merit aid is limited but available at some schools (typically requires 3.0+). As GPA improves, more academic aid becomes accessible.</p></div>
-    <div class="fin-exp-card"><h4 style="color:var(--amber)">What are Living Expenses?</h4><p>Beyond tuition, room & board: flights home (2× per year ~$3,000–4,000 AUD), personal spending, phone, books, health insurance. These are NOT covered by scholarships and must be budgeted separately. Your agent should clarify what exactly each scholarship covers (tuition-only vs full COA).</p></div>
+    <div class="fin-exp-card"><h4 style="color:var(--amber)">What are Living Expenses?</h4><p>Beyond tuition, room &amp; board: <strong>flights home</strong> (2×/yr — $800–$3,200 USD depending on season and region; legally excluded from scholarships), personal spending, phone, books, and supplemental health insurance (~$35–60/month for non-university coverage). Books are generally excluded from scholarships but are often passed down from older teammates — budget $0–$800/yr. One-time setup costs: F-1 student visa $535 USD · NCAA registration $135 (or NAIA $170, postponed until offer stage) · SAT $111 if required by your school.</p></div>
     <div class="fin-exp-card"><h4 style="color:var(--rose)">AUD vs USD</h4><p>All school costs are in USD. The AUD amount fluctuates with exchange rates — budgeting in AUD requires a buffer. A $30,000 USD annual cost becomes ~$46,500 AUD at current rates. Use the exchange rate slider to see impact of rate changes on your budget.</p></div>
   </div>
 
@@ -975,11 +975,19 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
         </div>
         <div class="extras-section">
           <h4>Additional Annual Costs (USD)</h4>
-          <div class="extra-row"><label>Flights home (2× / yr)</label><input type="number" id="ex-flights" value="2200" step="100" oninput="updateFinModel()"></div>
-          <div class="extra-row"><label>Personal spending</label><input type="number" id="ex-personal" value="3000" step="100" oninput="updateFinModel()"></div>
-          <div class="extra-row"><label>Books & supplies</label><input type="number" id="ex-books" value="800" step="100" oninput="updateFinModel()"></div>
-          <div class="extra-row"><label>Health insurance</label><input type="number" id="ex-health" value="1200" step="100" oninput="updateFinModel()"></div>
-          <div class="extra-row"><label>US mobile / sim</label><input type="number" id="ex-mobile" value="500" step="100" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>✈️ Flights home (2× / yr) <span style="font-size:10px;color:var(--hint);font-weight:400">$400–$1,600 per flight</span></label><input type="number" id="ex-flights" value="2200" step="100" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>💳 Personal spending</label><input type="number" id="ex-personal" value="3000" step="100" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>📚 Books &amp; supplies <span style="font-size:10px;color:var(--hint);font-weight:400">often passed down</span></label><input type="number" id="ex-books" value="800" step="100" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>🏥 Supplemental insurance <span style="font-size:10px;color:var(--hint);font-weight:400">~$35–60/mo</span></label><input type="number" id="ex-health" value="540" step="60" oninput="updateFinModel()"></div>
+          <div class="extra-row"><label>📱 US mobile / sim</label><input type="number" id="ex-mobile" value="500" step="100" oninput="updateFinModel()"></div>
+        </div>
+        <div class="extras-section" style="margin-top:.75rem">
+          <h4>One-Time Setup Costs (USD)</h4>
+          <div class="extra-row"><label>🛂 F-1 Student Visa (5-year)</label><span style="font-size:12px;font-weight:700;color:var(--muted)">$535</span></div>
+          <div class="extra-row"><label>🎓 NCAA Registration <span style="font-size:10px;color:var(--hint);font-weight:400">or NAIA $170</span></label><span style="font-size:12px;font-weight:700;color:var(--muted)">$135</span></div>
+          <div class="extra-row"><label>📋 WES Credential Evaluation</label><span style="font-size:12px;font-weight:700;color:var(--muted)">~$200</span></div>
+          <div class="extra-row"><label>✍️ SAT Exam <span style="font-size:10px;color:var(--hint);font-weight:400">only if school requires it</span></label><span style="font-size:12px;font-weight:700;color:var(--muted)">$111</span></div>
+          <div style="font-size:10px;color:var(--hint);margin-top:.4rem;line-height:1.5">NCAA/NAIA registration is typically postponed until a program expresses serious interest or extends an offer. These costs are not included in the annual model above.</div>
         </div>
         <div class="slider-group" style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">
           <label>AUD/USD Exchange Rate <span id="val-fx">1.40</span></label>

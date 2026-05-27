@@ -158,6 +158,7 @@ function initApp() {
   renderCoachCards();
   renderCoachTable();
   renderOutreachTracker();
+  initCoachTabs();
   renderFinSchoolSelector();
   renderFinComparisonBars();
   renderMinutesOutlook();
@@ -1099,6 +1100,7 @@ function showPage(id,btn){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   document.getElementById('page-'+id).classList.add('active');btn.classList.add('active');
+  if(id==='coaches') setTimeout(initCoachTabs, 0);
 }
 // ══════════════════════════════════════════════════
 // ATAR → GPA CONVERSION ENGINE
@@ -1967,6 +1969,37 @@ function renderCoachTable(){
         `<td>${strengths||'—'}</td></tr>`;
     }).join('');
   }catch(e){ console.error('renderCoachTable failed:',e); }
+}
+
+// ── Coaches animated pill tab ─────────────────────────────────────────────────
+function initCoachTabs() {
+  const activeBtn = document.querySelector('.coach-tab-btn.active');
+  if (!activeBtn || activeBtn.offsetWidth === 0) return;
+  const pill = document.getElementById('coach-tab-pill');
+  if (!pill) return;
+  pill.style.width     = activeBtn.offsetWidth + 'px';
+  pill.style.transform = 'translateX(' + (activeBtn.offsetLeft - 4) + 'px)';
+}
+
+function switchCoachTab(tabName, btn) {
+  const track = document.getElementById('coach-tab-track');
+  const pill  = document.getElementById('coach-tab-pill');
+  if (!track || !pill) return;
+
+  // Slide pill to button — offsetLeft is relative to track, no border/scroll issues
+  pill.style.transform = 'translateX(' + (btn.offsetLeft - 4) + 'px)';
+  pill.style.width = btn.offsetWidth + 'px';
+
+  // Toggle active class
+  track.querySelectorAll('.coach-tab-btn').forEach(b =>
+    b.classList.toggle('active', b === btn)
+  );
+
+  // Show/hide tab panels
+  ['rankings', 'profiles', 'outreach'].forEach(t => {
+    const panel = document.getElementById('coach-tab-' + t);
+    if (panel) panel.style.display = t === tabName ? '' : 'none';
+  });
 }
 
 function filterCoaches(type,btn){

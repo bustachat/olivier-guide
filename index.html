@@ -629,6 +629,12 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .rk-solid{background:var(--emerald3);color:var(--emerald);}
 .rk-dev{background:var(--surface3);color:var(--muted);}
 /* ── Coaches Page ── */
+.coach-tab-wrap{margin-bottom:1.5rem;}
+.coach-tab-track{position:relative;display:inline-flex;background:var(--surface2);border:1.5px solid var(--border2);border-radius:28px;padding:4px;gap:0;}
+.coach-tab-pill{position:absolute;top:4px;left:4px;height:calc(100% - 8px);border-radius:22px;background:var(--indigo);transition:transform .22s cubic-bezier(.4,0,.2,1),width .22s cubic-bezier(.4,0,.2,1);pointer-events:none;box-shadow:0 2px 8px rgba(99,102,241,.35);}
+.coach-tab-btn{position:relative;z-index:1;border:none;background:transparent;border-radius:22px;padding:8px 20px;font-size:12px;font-weight:600;font-family:'Outfit',sans-serif;cursor:pointer;color:var(--muted);transition:color .18s;white-space:nowrap;line-height:1.3;}
+.coach-tab-btn.active{color:#fff;font-weight:700;}
+.coach-tab-btn:not(.active):hover{color:var(--navy);}
 .coaches-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.5rem;align-items:center;}
 .coach-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1rem;margin-bottom:2rem;}
 .coach-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .2s,box-shadow .2s;}
@@ -1030,27 +1036,47 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 <!-- COACHES & STAFF PAGE -->
 <div class="page" id="page-coaches">
   <div class="section-head"><h2>Coaches, Staff & Contact Details</h2></div>
-  <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.75">Every head coach ranked by overall coaching quality for Olivier's development as an 8/10 central midfielder targeting a PT career. Email, phone and program links are in each coach card below the rankings table. All contact via your agent.</p>
-  <div id="outreach-tracker-wrap"></div>
-  <div class="section-head"><h2>Head Coach Rankings — Best for Olivier's Development</h2></div>
-  <div style="overflow-x:auto;margin-bottom:2.5rem;">
-    <table class="head-coach-rank-table">
-      <thead><tr><th>Rank</th><th>Coach</th><th>School</th><th>Div</th><th>Years HC</th><th>Career Record</th><th>MLS Players Dev</th><th>Why Good for Olivier</th></tr></thead>
-      <tbody id="coach-rank-tbody"></tbody>
-    </table>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:1.25rem;line-height:1.75">Every head coach ranked by overall coaching quality for Olivier's development as an 8/10 central midfielder targeting a PT career. All contact via your agent.</p>
+
+  <!-- Animated pill tab bar -->
+  <div class="coach-tab-wrap">
+    <div class="coach-tab-track" id="coach-tab-track">
+      <div class="coach-tab-pill" id="coach-tab-pill"></div>
+      <button class="coach-tab-btn active" data-tab="rankings" onclick="switchCoachTab('rankings',this)">🏆 Rankings</button>
+      <button class="coach-tab-btn" data-tab="profiles" onclick="switchCoachTab('profiles',this)">👤 Profiles</button>
+      <button class="coach-tab-btn" data-tab="outreach" onclick="switchCoachTab('outreach',this)">📋 Outreach</button>
+    </div>
   </div>
-  <div class="section-head"><h2>Detailed Coach Profiles — Head Coaches & Known Staff</h2></div>
-  <div class="coaches-filters">
-    <span class="fl">Filter:</span>
-    <button class="fbtn active" onclick="filterCoaches('all',this)">All Coaches</button>
-    <button class="fbtn" onclick="filterCoaches('D1',this)">D1</button>
-    <button class="fbtn" onclick="filterCoaches('D2',this)">D2</button>
-    <button class="fbtn" onclick="filterCoaches('NAIA',this)">NAIA</button>
-    <button class="fbtn" onclick="filterCoaches('IVY',this)">Ivy League</button>
-    <button class="fbtn" onclick="filterCoaches('aus',this)">🇦🇺 Aus Connections</button>
-    <button class="fbtn" onclick="filterCoaches('pro',this)">🏆 Pro Pipeline</button>
+
+  <!-- Tab: Rankings -->
+  <div id="coach-tab-rankings">
+    <div style="overflow-x:auto;margin-bottom:2.5rem;">
+      <table class="head-coach-rank-table">
+        <thead><tr><th>Rank</th><th>Coach</th><th>School</th><th>Div</th><th>Years HC</th><th>Career Record</th><th>MLS Players Dev</th><th>Why Good for Olivier</th></tr></thead>
+        <tbody id="coach-rank-tbody"></tbody>
+      </table>
+    </div>
   </div>
-  <div class="coach-cards" id="coach-cards-container"></div>
+
+  <!-- Tab: Profiles -->
+  <div id="coach-tab-profiles" style="display:none">
+    <div class="coaches-filters">
+      <span class="fl">Filter:</span>
+      <button class="fbtn active" onclick="filterCoaches('all',this)">All Coaches</button>
+      <button class="fbtn" onclick="filterCoaches('D1',this)">D1</button>
+      <button class="fbtn" onclick="filterCoaches('D2',this)">D2</button>
+      <button class="fbtn" onclick="filterCoaches('NAIA',this)">NAIA</button>
+      <button class="fbtn" onclick="filterCoaches('IVY',this)">Ivy League</button>
+      <button class="fbtn" onclick="filterCoaches('aus',this)">🇦🇺 Aus Connections</button>
+      <button class="fbtn" onclick="filterCoaches('pro',this)">🏆 Pro Pipeline</button>
+    </div>
+    <div class="coach-cards" id="coach-cards-container"></div>
+  </div>
+
+  <!-- Tab: Outreach -->
+  <div id="coach-tab-outreach" style="display:none">
+    <div id="outreach-tracker-wrap"></div>
+  </div>
 </div>
 <!-- GLOSSARY PAGE -->
 <div class="page" id="page-glossary">

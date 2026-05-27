@@ -6,9 +6,11 @@
 //      always remain visible (dimmed only, never hidden) regardless of GPA.
 // V18: New Schools and Conferences
 // V19: Major Update. Make HTML completely Dynamic. No Hardcoded data
+// V20: Cosmetic Updates. SVG Map and Dot Positioning Update, Financial Model update for JUCO (2yr not 4yr), Live Rate Fix, Card Font Spacing etc
+// V21: TBA
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v20';
+const APP_VERSION = 'v21';
 
 let unis = [];
 let conferences = [];

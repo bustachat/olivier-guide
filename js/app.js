@@ -93,14 +93,14 @@ async function loadData() {
       fetch(base + 'coaches.json'),
       fetch(base + 'conf-prestige.json'),
       fetch(base + 'pipeline.json'),
-      fetch(base + 'olivier.json')
+      fetch('./athletes/olivier.json')
     ]);
 
     if (!confsRes.ok)        throw new Error('Failed to load conferences.json');
     if (!coachesRes.ok)      throw new Error('Failed to load coaches.json');
     if (!confPrestigeRes.ok) throw new Error('Failed to load conf-prestige.json');
     if (!pipelineRes.ok)     throw new Error('Failed to load pipeline.json');
-    if (!athleteRes.ok)      throw new Error('Failed to load olivier.json');
+    if (!athleteRes.ok)      throw new Error('Failed to load athletes/olivier.json');
 
     unis               = confResults.flat();
     conferences        = await confsRes.json();

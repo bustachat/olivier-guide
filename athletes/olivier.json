@@ -2,13 +2,11 @@
   "id": "olivier",
   "name": "Olivier",
   "agentName": "Platform Sports Management",
-  "guideVersion": "v18",
-
+  "guideVersion": "v21",
   "position": "Central Midfielder",
   "positionCode": "CM",
   "positionRating": "8/10",
   "positionStyle": "Box-to-box",
-
   "currentGpa": 2.8,
   "gpaStatus": "progressing",
   "yearLevel": "Year 12 HSC",
@@ -16,53 +14,147 @@
   "expectedAtarMax": 75,
   "defaultAtar": 70,
   "targetDeparture": "August 2027",
-
   "auDegree": "B. Ex & Sports Sci (ACU)",
   "auUnitsTotal": 16,
   "auUnitsCompleted": [],
   "auUnitsPlanned": [
-    "BIOL125", "ANAT100", "EXSC101", "EXSC225", "EXSC322",
-    "EXSC301", "EXSC315", "EXSC320", "EXSC330", "EXSC340",
-    "EXSC350", "EXSC360", "EXSC370", "EXSC380", "EXSC390", "EXSC398"
+    "BIOL125",
+    "ANAT100",
+    "EXSC101",
+    "EXSC225",
+    "EXSC322",
+    "EXSC301",
+    "EXSC315",
+    "EXSC320",
+    "EXSC330",
+    "EXSC340",
+    "EXSC350",
+    "EXSC360",
+    "EXSC370",
+    "EXSC380",
+    "EXSC390",
+    "EXSC398"
   ],
-  "wesTransferableUnits": ["BIOL125", "ANAT100", "EXSC225", "EXSC322"],
-
+  "wesTransferableUnits": [
+    "BIOL125",
+    "ANAT100",
+    "EXSC225",
+    "EXSC322"
+  ],
   "careerGoal": "DPT / Chiropractic",
-  "lifestylePrefs": ["warm", "city"],
-  "targetDivisions": ["D1", "D2", "NAIA", "JUCO"],
+  "lifestylePrefs": [
+    "warm",
+    "city"
+  ],
+  "targetDivisions": [
+    "D1",
+    "D2",
+    "NAIA",
+    "JUCO"
+  ],
   "budgetAUD": 80000,
   "budgetUSD": 52000,
   "fxRate": 1.55,
-
-  "shortlist": ["fiu", "pba", "lynn", "ucsb", "usf", "barry", "clemson", "unc", "fau", "smu"],
-
+  "shortlist": [
+    "fiu",
+    "pba",
+    "lynn",
+    "ucsb",
+    "usf",
+    "barry",
+    "clemson",
+    "unc",
+    "fau",
+    "smu"
+  ],
   "scoreWeights": {
-    "soccerLevel":    25,
+    "soccerLevel": 25,
     "gpaEligibility": 20,
-    "cost":           18,
-    "acuAlignment":   15,
-    "city":           10,
-    "ptPath":          7,
-    "climate":         5
+    "cost": 18,
+    "acuAlignment": 15,
+    "city": 10,
+    "ptPath": 7,
+    "climate": 5
   },
-
   "soccerLevelMap": {
-    "D1":   1.00,
-    "IVY":  0.90,
-    "D2":   0.80,
+    "D1": 1.0,
+    "IVY": 0.9,
+    "D2": 0.8,
     "NAIA": 0.65,
-    "D3":   0.50,
-    "JUCO": 0.60
+    "D3": 0.5,
+    "JUCO": 0.6
   },
-
   "prePtMap": {
-    "Excellent":        1.00,
-    "Very Strong":      0.90,
-    "Good":             0.75,
-    "Solid":            0.60,
-    "Transfer Pathway": 0.40
+    "Excellent": 1.0,
+    "Very Strong": 0.9,
+    "Good": 0.75,
+    "Solid": 0.6,
+    "Transfer Pathway": 0.4
   },
-
   "guideTitle": "US College Soccer & Exercise Science Guide",
-  "guideSubtitle": "Olivier — Scholarship Guide"
+  "guideSubtitle": "Olivier — Scholarship Guide",
+  "pathways": {
+    "paths": [
+      {
+        "id": "path-a",
+        "label": "Path A — Aim High D1",
+        "title": "Top D1 Target",
+        "borderColor": "#c7d2fe",
+        "labelColor": "var(--indigo)",
+        "body": "Target: UCLA, USF, UCSB, Virginia, SMU, FIU, UNC, FAU. Requires elite highlights and improving academic standing. Best if Olivier's videos demonstrate high-level ability against quality opposition. FAU is the most accessible warm-climate D1 with the best explicit Pre-PT degree in the guide.",
+        "footer": "GPA minimum: 2.3 NCAA core. Aim 3.0+ for merit aid stacking.",
+        "footerColor": "var(--hint)"
+      },
+      {
+        "id": "path-a2",
+        "label": "Path A2 — ACC Elite",
+        "title": "Reach ACC Programs",
+        "borderColor": "#fca5a5",
+        "labelColor": "var(--rose)",
+        "body": "Target: Clemson, Notre Dame, Maryland, Georgetown, UNC. Nation-leading MLS pipeline. Noonan (Clemson, 2× NCAA champion), Riley (Notre Dame), Cirovski (Maryland), Wiese (Georgetown). Requires top-level highlight reel, GPA 2.8+ and a standout athletic profile. These programs recruit internationally — Platform Sports Management connections are essential to get in front of coaches.",
+        "footer": "High competition for roster spots. Best-case scenario if Olivier's form peaks in 2026.",
+        "footerColor": "var(--rose)"
+      },
+      {
+        "id": "path-b",
+        "label": "Path B — Smart Fit D2",
+        "title": "D2 / NAIA Best Match",
+        "borderColor": "#bae6fd",
+        "labelColor": "var(--sky)",
+        "body": "Target: PBA (West Palm Beach), Lynn (Boca Raton), Barry (Miami), Nova Southeastern (Fort Lauderdale), St Edward's (Austin). Best overall balance of soccer, academics, scholarship, and climate. PBA is #2 nationally 2025 with Pre-PT in the degree title. Lynn won the 2024 D2 national championship.",
+        "footer": "Athletic + academic aid can combine for major cost reduction.",
+        "footerColor": "var(--hint)"
+      },
+      {
+        "id": "path-c",
+        "label": "Path C — Ivy League",
+        "title": "Princeton / Yale",
+        "borderColor": "#a7f3d0",
+        "labelColor": "var(--emerald)",
+        "body": "No athletic scholarships — need-based aid only (can cover 100% of costs for qualifying families). GPA 2.8 is a barrier but improving trajectory helps. Princeton won the 2024 AND 2025 Ivy tournaments — program is surging. Jim Barlow has explicitly developed midfielders into MLS-calibre players. Elite academic-sports combination.",
+        "footer": "⚠ Admission is highly selective — GPA improvement to 3.5+ essential.",
+        "footerColor": "var(--gold)"
+      },
+      {
+        "id": "path-d",
+        "label": "Path D — JUCO Transfer",
+        "title": "2yr + Transfer",
+        "borderColor": "#fde68a",
+        "labelColor": "var(--amber)",
+        "body": "Santa Monica College (LA) → UCLA/UCSB. Or Iowa Western (Council Bluffs) → Creighton/Iowa/D1 Midwest. 2 years at ~$9k/yr. Boost GPA, build US soccer resume. SMC is 100m from the beach — most proven transfer pipeline in California. Iowa Western has 100% MF roster turnover before 2027 — immediate starting opportunity.",
+        "footer": "Near-zero financial risk. Build to 3.3+ GPA then step up.",
+        "footerColor": "var(--hint)"
+      }
+    ],
+    "coachQuestions": [
+      "How many central midfielders are returning and where does an 8/10 fit into your system in year one?",
+      "What formation do you play and what is the role of the 8 in your system specifically?",
+      "What does a typical scholarship package look like for an Australian student-athlete?",
+      "Is there a direct articulation agreement with a DPT program for Exercise Science graduates?",
+      "How many players from this program have signed professional contracts in the last 5 years?",
+      "Can I visit campus during a training session and speak with current international students?",
+      "Does the Exercise Science department work directly with the soccer team for sport science support?",
+      "How are WES-evaluated Australian unit credits typically applied toward the degree?"
+    ]
+  }
 }

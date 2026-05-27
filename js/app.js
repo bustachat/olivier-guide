@@ -108,6 +108,9 @@ async function loadData() {
     conferencePrestige = await confPrestigeRes.json();
     pipelineData       = await pipelineRes.json();
     athleteConfig      = await athleteRes.json();
+    // Preserve both weight sets so the score-mode toggle can swap between them
+    athleteConfig._weightsMinutes = Object.assign({}, athleteConfig.scoreWeights);
+    athleteConfig._weightsBase    = Object.assign({}, athleteConfig.scoreWeightsBase);
 
     // Fetch live FX rate — runs alongside initApp, updates UI when ready
     fetchLiveFxRate().then(fx => {
@@ -495,9 +498,11 @@ function buildCard(u){
 
   const isListed = u.profileDepth === 'listed';
   const cardColor = u.color || ['#e0e7ff', '#4f46e5'];
-  const devAvg = Object.values(u.devScores).every(v => v === 0)
+  const devAvg = !u.devScores
     ? null
-    : Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
+    : Object.values(u.devScores).every(v => v === 0)
+      ? null
+      : Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
   const ivyWarn=u.div==='IVY'?'<div class="ivy-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ Ivy: No athletic scholarships. Need-based only. GPA 2.8 likely insufficient.</div>':'';
 
   // GPA compact row
@@ -547,7 +552,7 @@ function buildCard(u){
     '</div>'+
     ivyWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item" data-tip="Fit Score: Overall match for Olivier across climate, lifestyle, soccer level, exercise science degree quality, and PT pathway. 90%+ = excellent fit."><div class="ss-val" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item" data-tip="Fit Score: Overall match for Olivier across climate, lifestyle, soccer level, exercise science degree quality, and PT pathway. 90%+ = excellent fit."><div class="ss-val" id="fit-'+u.id+'" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item" data-tip="Dev Score: Average of 4 development sub-scores — Tactical, Technical, Fitness, and PT Pathway quality. Reflects how well the program will develop Olivier as a player and pre-PT student."><div class="ss-val" style="color:'+(devAvg===null?'var(--hint)':sc(devAvg))+'">'+(devAvg===null?'—':devAvg+'%')+'</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item" data-tip="ACU Alignment: How many of Olivier\'s 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial."><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
@@ -616,8 +621,8 @@ function renderComparePage(){
     ['Climate',u=>`<div class="cval">${u.warm?'☀ Warm':'⛅ Mixed'}</div>`],
     ['City Campus',u=>`<div class="cval ${u.city?'good':''}">${u.city?'✅ Yes':'⚠ Smaller'}</div>`],
     ['Overall Fit',u=>{const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
-    ['Tactical Dev',u=>`<div style="color:${sc(u.devScores.tactical)};font-weight:600">${u.devScores.tactical}/100</div>`],
-    ['PT Path Score',u=>`<div style="color:${sc(u.devScores.ptPath)};font-weight:600">${u.devScores.ptPath}/100</div>`],
+    ['Tactical Dev',u=>u.devScores?`<div style="color:${sc(u.devScores.tactical)};font-weight:600">${u.devScores.tactical}/100</div>`:'<div style="color:var(--muted)">—</div>'],
+    ['PT Path Score',u=>u.devScores?`<div style="color:${sc(u.devScores.ptPath)};font-weight:600">${u.devScores.ptPath}/100</div>`:'<div style="color:var(--muted)">—</div>'],
     ['Website',u=>`<a href="${u.url}" target="_blank" style="color:var(--indigo);font-size:12px;font-weight:600">Visit →</a>`],
   ];
   let html='<div class="compare-table-wrap"><table class="ctable"><thead><tr><th>Category</th>';
@@ -1012,12 +1017,12 @@ function buildDetailBody(u){
     <div class="mtab-content" id="tab-development">
       <div class="fit-section">
         <h4>Development Ratings — 8/10 Midfielder</h4>
-        ${Object.entries({tactical:'Tactical Development',technical:'Technical Development',fitness:'Fitness Programming',ptPath:'PT / Chiro Pathway'}).map(([k,l])=>`
+        ${u.devScores ? Object.entries({tactical:'Tactical Development',technical:'Technical Development',fitness:'Fitness Programming',ptPath:'PT / Chiro Pathway'}).map(([k,l])=>`
         <div class="fit-row">
           <div class="fit-label">${l}</div>
           <div class="fit-track"><div class="fit-fill" style="width:${u.devScores[k]}%;background:${sc(u.devScores[k])}"></div></div>
           <div class="fit-num" style="color:${sc(u.devScores[k])}">${u.devScores[k]}</div>
-        </div>`).join('')}
+        </div>`).join('') : '<p style="color:var(--muted);font-size:13px">Development ratings not available for this school profile.</p>'}
       </div>
       <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
@@ -1155,6 +1160,23 @@ function toggleAtarHide() {
   }
   refreshAllGpaRows();
   applyFilters();
+}
+
+// ── Score mode toggle: 'minutes' (default) | 'base' ─────────────────────────
+let scoreMode = 'minutes';
+
+function setScoreMode(mode) {
+  if (!athleteConfig) return;
+  scoreMode = mode;
+  athleteConfig.scoreWeights = mode === 'base'
+    ? athleteConfig._weightsBase
+    : athleteConfig._weightsMinutes;
+  document.querySelectorAll('.score-mode-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.mode === mode)
+  );
+  recalculateAllScores(athleteConfig, currentAtarGpa);
+  updateAtarCounts();
+  applySort(currentSort || 'fit');
 }
 
 function onAtarSlide() {

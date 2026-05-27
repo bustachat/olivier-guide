@@ -111,6 +111,19 @@ function cityScore(school, athlete) {
   return school.city ? 1.0 : 0.3;
 }
 
+// ── Minutes Outlook score ─────────────────────────────────────────────────────
+// Returns 0.0–1.0. Neutral (0.5) when data unavailable — not penalised.
+// Weights entry year (Yr1) 60%, second year (Yr2) 40%.
+function minutesOutlookScore(school) {
+  const mo = school.minutesOutlook;
+  if (!mo || !mo.available) return 0.5;
+  const t = mo.trajectory;
+  if (!t || !t.length) return 0.5;
+  const yr1 = (t[0] ? t[0].pct : 50) / 100;
+  const yr2 = (t[1] ? t[1].pct : t[0].pct) / 100;
+  return Math.min(1.0, yr1 * 0.6 + yr2 * 0.4);
+}
+
 // ── MAIN: Calculate fit score ────────────────────────────────────────────────
 // Returns 0–100 integer.
 // convertedGpa: the current ATAR-derived GPA from the slider (or athlete default)
@@ -118,13 +131,14 @@ function calculateFitScore(school, athlete, convertedGpa) {
   const w = athlete.scoreWeights;
 
   const components = {
-    soccerLevel:    soccerScore(school, athlete)        * w.soccerLevel,
+    soccerLevel:    soccerScore(school, athlete)              * w.soccerLevel,
     gpaEligibility: gpaEligibilityScore(school, convertedGpa) * w.gpaEligibility,
-    cost:           costScore(school, athlete)           * w.cost,
-    acuAlignment:   acuScore(school, athlete)            * w.acuAlignment,
-    city:           cityScore(school, athlete)           * w.city,
-    ptPath:         ptScore(school, athlete)             * w.ptPath,
-    climate:        climateScore(school, athlete)        * w.climate,
+    cost:           costScore(school, athlete)                * w.cost,
+    acuAlignment:   acuScore(school, athlete)                 * w.acuAlignment,
+    ptPath:         ptScore(school, athlete)                  * (w.ptPath || 0),
+    minutesOutlook: minutesOutlookScore(school)               * (w.minutesOutlook || 0),
+    city:           cityScore(school, athlete)                * w.city,
+    climate:        climateScore(school, athlete)             * (w.climate || 0),
   };
 
   const total = Object.values(components).reduce((a, b) => a + b, 0);
@@ -171,14 +185,15 @@ function recalculateAllScores(athlete, convertedGpa) {
 function buildScoreBreakdown(school, athlete, convertedGpa) {
   const w = athlete.scoreWeights;
   const rows = [
-    ['⚽ Soccer Level',    soccerScore(school, athlete),        w.soccerLevel],
+    ['⚽ Soccer Level',    soccerScore(school, athlete),              w.soccerLevel],
     ['🎓 GPA Eligibility', gpaEligibilityScore(school, convertedGpa), w.gpaEligibility],
-    ['💰 Annual Cost',     costScore(school, athlete),          w.cost],
-    ['📚 ACU Alignment',   acuScore(school, athlete),           w.acuAlignment],
-    ['🏙 City Campus',     cityScore(school, athlete),          w.city],
-    ['🏥 PT/Chiro Path',   ptScore(school, athlete),            w.ptPath],
-    ['☀ Climate',         climateScore(school, athlete),        w.climate],
-  ];
+    ['💰 Annual Cost',     costScore(school, athlete),                w.cost],
+    ['📚 ACU Alignment',   acuScore(school, athlete),                 w.acuAlignment],
+    ['🏥 PT/Chiro Path',   ptScore(school, athlete),                  w.ptPath],
+    ['⏱ Minutes Outlook', minutesOutlookScore(school),               w.minutesOutlook || 0],
+    ['🏙 City Campus',     cityScore(school, athlete),                w.city],
+    ['☀ Climate',         climateScore(school, athlete),              w.climate || 0],
+  ].filter(([, , weight]) => weight > 0);
 
   let html = '<div style="background:var(--surface2);border-radius:10px;padding:.85rem 1rem;margin-top:.75rem">';
   html += '<div style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.09em;color:var(--hint);margin-bottom:.6rem">Score Breakdown</div>';

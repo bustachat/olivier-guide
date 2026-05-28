@@ -9,8 +9,8 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current stable version: **v21 (Financial patch applied May 27 2026)**
-- Next milestone: **v21 full — three sessions + pre-session housekeeping (see Section 6)**
+- Current stable version: **v21 Stable (completed May 28 2026)**
+- All v21 sessions complete — see Section 6 for what was delivered
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -212,116 +212,76 @@ guideTitle, guideSubtitle,
 pathways{ paths[], coachQuestions[] }
 ```
 
-### Fit Score weights
-**v20 (current — do not change in Session 1):**
+### Fit Score weights (v21 — live)
 | Factor | Weight |
 |---|---|
-| Soccer Level | 25% |
+| Soccer Level | 20% |
 | GPA Eligibility | 20% |
-| Cost | 15% |
-| ACU Alignment | 15% |
-| PT Pathway | 10% |
-| City Campus | 10% |
+| Cost | 20% |
+| ACU Alignment | 10% |
+| Minutes Outlook | 20% |
+| City Campus | 5% |
 | Climate | 5% |
 
-**v21 target (Session 2):**
-| Factor | Weight | Change |
-|---|---|---|
-| Soccer Level | 25% | no change |
-| GPA Eligibility | 20% | no change |
-| Cost | 15% | no change |
-| ACU Alignment | 15% | no change |
-| PT Pathway | 10% | no change |
-| Minutes Outlook | 10% | NEW |
-| City Campus | 5% | −5% |
-| Climate | 0% | removed |
+**Score mode toggle (implemented v21.2):**
+Two weight sets live in `athletes/olivier.json`:
+- `scoreWeights` — minutes-adjusted (live default, used in cards and score mode "v21")
+- `scoreWeightsBase` — original weights without minutesOutlook or ptPath (used in "base" mode toggle)
+The toggle button in the ATAR panel switches between modes. `recalculateAllScores()` in scores.js reads whichever set is active.
+`ptPath` weight is 0 in `scoreWeights` — the `(w.ptPath || 0)` guard in scores.js is required to prevent NaN.
 
 ---
 
-## 6. v21 Session Plan
+## 6. v21 — What Was Delivered (All Complete)
 
-### PRE-SESSION — olivier.json Consolidation (do this before Session 1)
-**Goal:** Eliminate the two-olivier.json problem. Merge into a single source of truth.
-**Problem:** `data/olivier.json` (fetched by app.js) and `athletes/olivier.json` (fetched by dashboard.js) have drifted — guideVersion mismatch (v19 vs v18), and only `data/olivier.json` has pathways and coachQuestions.
-**Actions:**
-1. Read both files in full — diff every field
-2. Merge all content into `athletes/olivier.json` — it must have everything both files currently have
-3. Update `app.js` `loadData()` to fetch `athletes/olivier.json` instead of `data/olivier.json`
-4. Verify `dashboard.js` already fetches `athletes/olivier.json` — it does, no change needed there
-5. Delete `data/olivier.json`
-6. Validate: hard reload, all tabs work, pathways render, Dashboard loads
-7. `athletes/template.json` — does not exist, do not create it
-**Commit tag:** `v21.0 — olivier.json consolidation`
-**Files changed:** `athletes/olivier.json`, `js/app.js`, delete `data/olivier.json`
+All v21 work is committed and live at bustachat.github.io/olivier-guide as of May 28 2026.
 
----
+### v21.0 — olivier.json Consolidation ✅
+**Commit:** `1e8f588`
+- Merged `data/olivier.json` and `athletes/olivier.json` into a single source of truth at `athletes/olivier.json`
+- Updated `app.js loadData()` to fetch from `athletes/olivier.json`
+- Deleted `data/olivier.json` — do not re-create it
+- `dashboard.js` already fetched `athletes/olivier.json` — no change needed
 
-### Session 1 — Data Completeness
-**Goal:** Fill Minutes Outlook for 15+ new schools. Fix devScore=0 on listed schools. Georgetown + Notre Dame → full profile.
-**Commit tag:** `v21.1 Stable`
-**Files:** JSON data files only. No app.js, index.html, or scores.js changes in Session 1.
+### v21.1 — Data Completeness ✅
+**Commit:** `71cbc67`
+- Minutes Outlook populated for 19 schools from `College Rosters/roster_report.md`
+- `devScores: null` enforced on all listed-profile schools (was incorrectly set to zeros)
+- Georgetown and Notre Dame upgraded to full profile (all 9 modal tabs)
+- Schools still needing minutesOutlook roster scrape: Clemson, UNC, Maryland, GCU, Texas A&M, Akron, Denver, Vermont, FAU, UCA, Iowa Western, UC Charleston
 
-**Critical — use the College Rosters folder:**
-The repo contains a `College Rosters/` folder with three files:
-- `College Rosters/roster_report.md` — completed analysis for 19 schools with per-school midfielder breakdowns and opportunity scores
-- `College Rosters/roster_analysis.py` — Python scraper that fetches and parses official athletics roster pages
-- `College Rosters/manual_rosters.json` — hand-entered roster data for schools that failed auto-scrape
+### v21.2 — Intelligence ✅
+**Commit:** `1af4752`
+- Fit Score rebalanced: Minutes Outlook added at 20%, City dropped to 5%, Climate stays at 5%
+- Dual score mode toggle: `scoreWeights` (minutes-adjusted) and `scoreWeightsBase` (original) — toggle button in ATAR panel
+- JUCO soccerLevelMap raised from 0.6 → 0.75
+- GPA projection slider: +0.0 / +0.2 / +0.4 / +0.6 chips in ATAR panel
+- Fixed NaN bug in scores.js: `ptPath: ptScore(...) * (w.ptPath || 0)` guard added
+- Fixed missing `id="fit-{id}"` on card score elements so recalculate works on DOM
 
-**19 schools already analysed** (use roster_report.md directly for these):
-Nova Southeastern (15.0), Lynn (14.0), PBA (13.0), FIU (11.0), Barry (10.5),
-USF (10.0), Wake Forest (8.5), OCU (8.5), Charleston (7.5), UCLA (7.0),
-Indiana (7.0), Cal State LA (6.5), Chapman (6.0), Virginia (5.0),
-St Edward's (3.5), UCSB (3.0), SMU (1.0), St John's (1.0), Keiser (−4.0)
+### v21 Stable — UX ✅
+**Commit:** `7340c44`
+- Shortlist status tags on Dashboard: Not contacted / Email sent / In conversation / Offer received / Eliminated
+- Status persists via `localStorage` key `olivier_sl_status`; defaults from `athletes/olivier.json`
+- Coach Outreach Tracker on Coaches page: per-school status, last contact date, notes
+- Outreach persists via `localStorage` key `olivier_outreach`
 
-**Schools still needing roster scrape** (add to roster_analysis.py and run it):
-Clemson, UNC, Notre Dame, Georgetown, Maryland, GCU, Texas A&M, Akron, Denver, Vermont, FAU, UCA, Iowa Western, UC Charleston
-
-**Roster → minutesOutlook translation:**
-The opportunity score from roster_report.md maps to minutesOutlook trajectory[] pct values.
-High opportunity score = higher Yr1/Yr2 pct. Low/negative = lower pct.
-Always set `available: true` and populate all 4 trajectory year objects.
-
-**Session 1 gate:** fitOlivier values must remain unchanged from v20. Session 1 is data only.
+### Coaches Animated Pill Tabs ✅
+**Commit:** `f87c408`
+- Coaches page restructured into 3 tabs: Rankings / Profiles / Outreach
+- Animated sliding pill tab bar using CSS `transform + transition`
+- Pill position computed via `btn.offsetLeft - 4` (avoids getBoundingClientRect border offset)
+- `initCoachTabs()` called via `setTimeout(..., 0)` in `showPage()` to measure after layout
 
 ---
 
-### Session 2 — Intelligence
-**Goal:** Fit Score rebalancing. JUCO pathway adjustment. GPA projection slider.
-**Commit tag:** `v21.2 Stable`
-**Gate:** Do not start until Session 1 QA has passed and Minutes Outlook data is complete.
-**Files:** js/scores.js, js/app.js, index.html, athletes/olivier.json, all conf JSON files.
-
-Key rules:
-- All fitOlivier values must be recalculated and updated in JSON before committing
-- Produce a v20 vs v21 fitOlivier comparison table for review before commit
-- Schools with `minutesOutlook.available === false` get minutesScore = 0.5 (neutral) — not penalised
-- JUCO adjustment: raise `soccerLevelMap.JUCO` from 0.6 → 0.75 in scores.js
-- Weights must sum to exactly 100 — verify with: `Object.values(w).reduce((a,b)=>a+b,0) === 100`
-
----
-
-### Session 3 — UX
-**Goal:** Shortlist status tags. Coach outreach tracker.
-**Commit tag:** `v21 Stable`
-**Gate:** Do not start until Session 2 QA has passed.
-**Files:** js/app.js, index.html, athletes/olivier.json.
-
-Status options (shortlist): Not contacted / Email sent / In conversation / Offer received / Eliminated
-Status options (outreach): Not contacted / Email sent / Call scheduled / Offer pending
-Storage: `shortlist[]` extended to `[{id, status}]`. New `outreach[]` array added.
-Backward compat: existing string shortlist entries treated as "Not contacted" — no crash.
-
-After v21 Stable: update README.md, Blueprint v4.1 version table, produce handover document.
-
----
-
-### Out of scope for v21 — do not implement
-- Australian connection as Fit Score variable (relationship-based, not algorithmic)
-- New school additions (separate data operation — use new-school checklist)
-- Automated test suite (Playwright/Jest — deferred)
+### Deferred — not in v21, carry to v22
+- Roster scrape for remaining 14 schools (see v21.1 note above)
+- 2025 roster refresh (separate data operation)
 - NSU DPT articulation detail (PSM to research)
 - Multi-athlete platform expansion (post-Olivier commercial roadmap)
-- 2025 roster refresh (separate data operation post-v21)
+- Australian connection as Fit Score variable (relationship-based, not algorithmic)
+- Automated test suite (Playwright/Jest)
 
 ---
 
@@ -526,5 +486,5 @@ Always set `available: true` when populating and include all 4 trajectory year o
 
 ---
 
-*CLAUDE.md — v21 Plan — Updated May 27 2026*
+*CLAUDE.md — v21 Stable — Updated May 28 2026*
 *Multi Skilled Contractors. Do not commit changes to this file without owner approval.*

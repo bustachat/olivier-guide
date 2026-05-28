@@ -50,7 +50,7 @@ Key rules at a glance:
 
 | Version | Status | Key Changes |
 |-|-|-|
-| **v21** | ✅ Current | olivier.json consolidation. Minutes Outlook expanded. Fit Score rebalancing. GPA projection slider. Shortlist + outreach tracker. |
+| **v21** | ✅ Current (May 28 2026) | olivier.json consolidation. Minutes Outlook expanded. Fit Score rebalancing + dual mode toggle. GPA projection slider. Shortlist status tags. Coach outreach tracker. Coaches animated pill tab navigation. |
 | **v20** | Superseded | Search box, Show/Hide All, confgroup filter chips, Pro Pipeline rank badge circles, dashboard SVG circle dots + 640×390 viewBox + hover info panel + cross-highlight. |
 | **v19** | Superseded | Complete JSON layer separation. 4 new data files. 16 render functions. acuUnits[] on all schools. 5 new schools. |
 | **v18.1** | Superseded | ACU score corrections (Clemson 5, GCU 14). SuperDraft table corrected. 30 coaches. |

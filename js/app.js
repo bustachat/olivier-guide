@@ -508,7 +508,7 @@ function buildCard(u){
     ? null
     : Object.values(u.devScores).every(v => v === 0)
       ? null
-      : Math.round(Object.values(u.devScores).reduce((a,b)=>a+b,0)/4);
+      : Math.round((u.devScores.tactical + u.devScores.technical + u.devScores.fitness) / 3);
   const ivyWarn=u.div==='IVY'?'<div class="ivy-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ Ivy: No athletic scholarships. Need-based only. GPA 2.8 likely insufficient.</div>':'';
 
   // GPA compact row
@@ -628,7 +628,7 @@ function renderComparePage(){
     ['City Campus',u=>`<div class="cval ${u.city?'good':''}">${u.city?'✅ Yes':'⚠ Smaller'}</div>`],
     ['Overall Fit',u=>{const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
     ['Tactical Dev',u=>u.devScores?`<div style="color:${sc(u.devScores.tactical)};font-weight:600">${u.devScores.tactical}/100</div>`:'<div style="color:var(--muted)">—</div>'],
-    ['PT Path Score',u=>u.devScores?`<div style="color:${sc(u.devScores.ptPath)};font-weight:600">${u.devScores.ptPath}/100</div>`:'<div style="color:var(--muted)">—</div>'],
+    ['Technical Dev',u=>u.devScores?`<div style="color:${sc(u.devScores.technical)};font-weight:600">${u.devScores.technical}/100</div>`:'<div style="color:var(--muted)">—</div>'],
     ['Website',u=>`<a href="${u.url}" target="_blank" style="color:var(--indigo);font-size:12px;font-weight:600">Visit →</a>`],
   ];
   let html='<div class="compare-table-wrap"><table class="ctable"><thead><tr><th>Category</th>';
@@ -1038,7 +1038,7 @@ function buildDetailBody(u){
     <div class="mtab-content" id="tab-development">
       <div class="fit-section">
         <h4>Development Ratings — 8/10 Midfielder</h4>
-        ${u.devScores ? Object.entries({tactical:'Tactical Development',technical:'Technical Development',fitness:'Fitness Programming',ptPath:'PT / Chiro Pathway'}).map(([k,l])=>`
+        ${u.devScores ? Object.entries({tactical:'Tactical Development',technical:'Technical Development',fitness:'Fitness Programming'}).map(([k,l])=>`
         <div class="fit-row">
           <div class="fit-label">${l}</div>
           <div class="fit-track"><div class="fit-fill" style="width:${u.devScores[k]}%;background:${sc(u.devScores[k])}"></div></div>

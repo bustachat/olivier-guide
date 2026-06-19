@@ -175,6 +175,9 @@ function recalculateAllScores(athlete, convertedGpa) {
       valEl.style.color = sc(newFit);
     }
 
+    // Write back to school object so sort reads updated score
+    school.fitOlivier = newFit;
+
     // Also store on card element for compare/modal use
     const card = document.getElementById('card-' + school.id);
     if (card) card.dataset.fitscore = newFit;

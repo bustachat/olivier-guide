@@ -242,6 +242,13 @@ let currentSort = 'fit';
 
 function applySort(key){
   currentSort = key;
+  // Sort pills and lens are mutually exclusive — reset lens to overall
+  if (currentLens && currentLens !== 'overall') {
+    currentLens = 'overall';
+    document.querySelectorAll('.lens-pill').forEach(b=>
+      b.classList.toggle('active', b.dataset.lens==='overall')
+    );
+  }
   document.querySelectorAll('.sort-pill').forEach(p=>
     p.classList.toggle('active', p.dataset.sort===key)
   );
@@ -286,7 +293,14 @@ function currentLensExplainer(){
 
 function applyLens(lensKey){
   currentLens = lensKey;
-  // Update active pill
+  // Lens and sort pills are mutually exclusive — reset sort to Best Fit
+  if (lensKey !== 'overall') {
+    currentSort = 'fit';
+    document.querySelectorAll('.sort-pill').forEach(p=>
+      p.classList.toggle('active', p.dataset.sort==='fit')
+    );
+  }
+  // Update active lens pill
   document.querySelectorAll('.lens-pill').forEach(b=>{
     b.classList.toggle('active', b.dataset.lens===lensKey);
   });

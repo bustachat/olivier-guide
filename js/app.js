@@ -415,7 +415,8 @@ function renderCards(){
     {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships — need-based aid only. Princeton won the 2024 and 2025 Ivy League Tournaments back-to-back under Jim Barlow. Yale won 2023. Both require 3.9+ GPA. Kinesiology degrees are not available but Ivy credentials carry enormous DPT school credibility. Only viable if GPA climbs to 3.5+.'},
     {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
     {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
-    {key:'other', divFilter:'D3JUCO',  label:'D3 · JUCO',               tier:'D3 / JUCO',     intro:'Chapman (D3, Orange CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 PT pathway. Santa Monica College is the best JUCO entry point in the guide ($9k/yr) with a proven transfer pipeline to UCLA and UCSB. Miami Dade College transfers link well to Barry and FIU.'},
+    {key:'other', divFilter:'D3',      label:'NCAA Division III',        tier:'D3',            intro:'Chapman University (Orange, CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 pre-physical therapy pathway in the guide. D3 schools offer no athletic scholarships but provide strong academics and competitive soccer.'},
+    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with two Australians on roster — the premium JUCO option in the guide. Northeast Community College (Norfolk, NE) offers near-100% international squad culture at ~$18k/yr (NJCAA DII). Santa Monica College ($9k/yr) has the best transfer pipeline to UCLA/UCSB. All JUCO programs are 2-year transfer platforms.'},
   ];
 
   // Also include Ivy League under acc or as standalone — they are in other.json
@@ -425,6 +426,8 @@ function renderCards(){
       if(sec.divFilter==='IVY')     secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='IVY');
       else if(sec.divFilter==='D2') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D2');
       else if(sec.divFilter==='NAIA') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='NAIA');
+      else if(sec.divFilter==='D3') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D3');
+      else if(sec.divFilter==='JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='JUCO');
       else if(sec.divFilter==='D3JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&(u.div==='D3'||u.div==='JUCO'));
       else secUnis=unis.filter(u=>u.confKey===sec.key);
     } else {

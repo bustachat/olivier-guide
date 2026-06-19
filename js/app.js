@@ -803,11 +803,11 @@ const SOCIAL = {
   akron:        ['https://instagram.com/akronzipsmsoc',      'https://x.com/AkronMSOC',           'https://facebook.com/AkronZipsMSOC',   'https://youtube.com/gozipsathletics'],
   denver:       ['https://instagram.com/dumenssoccer',       'https://x.com/DUMensSoccer',        'https://facebook.com/DUPioneerSoccer', 'https://youtube.com/denverpioneers'],
   vermont:      ['https://instagram.com/uvmmenssoccer',      'https://x.com/UVMMensSoccer',       null,                                   'https://youtube.com/uvmathletics'],
-  mercyhurst:   ['https://instagram.com/hurstathletics',    'https://x.com/hurstathletics',      'https://facebook.com/hurstathletics',  'https://youtube.com/hurstathletics'],
-  georgian_court: ['https://instagram.com/gculions',        'https://x.com/gculions',            'https://facebook.com/gculions',        null],
-  columbia_college: ['https://instagram.com/columbiacougars', null,                              'https://facebook.com/columbiacougars', null],
-  northeast_cc: ['https://instagram.com/northeasthawks',   'https://x.com/northeasthawks',      'https://facebook.com/northeasthawks',  null],
-  monroe_college: ['https://instagram.com/monroeumustangs', 'https://x.com/monroeumustangs',    'https://facebook.com/monroeumustangs', null],
+  mercyhurst:     ['https://instagram.com/hurstmsoccer',        'https://x.com/hurstmsoccer',        'https://facebook.com/LakersMensSoccer', null],
+  georgian_court: ['https://instagram.com/gcu_mens_soccer',   'https://x.com/GCULions',           null,                                    null],
+  columbia_college: ['https://instagram.com/columbiacougarsoccer', null,                          null,                                    null],
+  northeast_cc:   ['https://instagram.com/NortheastHawks',    'https://x.com/NortheastHawks',      'https://facebook.com/northeastcchawks', null],
+  monroe_college: ['https://instagram.com/monroemsoc',        'https://x.com/MonroeMustangs',      'https://facebook.com/monroeathletics',  null],
 };
 
 

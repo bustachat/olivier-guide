@@ -7132,111 +7132,267 @@
     "region": "east",
     "div": "D1",
     "conf": "Northeast Conference (NEC)",
-    "confKey": "nec",
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#dbeafe", "#1d4ed8"],
-    "profileDepth": "listed",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1d4ed8"
+    ],
+    "mapX": 468,
+    "mapY": 155,
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "—",
+        "note": "First D1 NEC season 2025–26"
+      },
+      {
+        "yr": 2024,
+        "pos": "PSAC",
+        "note": "Final D2 PSAC season before D1 reclassification"
+      },
+      {
+        "yr": 2023,
+        "pos": "PSAC",
+        "note": "D2 PSAC"
+      },
+      {
+        "yr": 2022,
+        "pos": "PSAC",
+        "note": "D2 PSAC"
+      },
+      {
+        "yr": 2021,
+        "pos": "PSAC",
+        "note": "D2 PSAC"
+      }
+    ],
+    "titles": [
+      "Reclassified D1 NEC 2025–26 — first ever D1 season",
+      "Multiple PSAC appearances in D2 era",
+      "Laker identity — strong Catholic liberal arts tradition"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "First D1 season 2025–26 — professional pipeline developing",
+        "PSAC D2 background; watching for NEC breakout recruits"
+      ],
+      "draftRank": "N/A — first year at D1 level"
+    },
+    "acRank": "NR",
+    "kinRank": "Regional",
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 9,
-    "acuAlignNote": "Solid exercise science curriculum covering anatomy & physiology, exercise physiology, kinesiology, research methods, strength training, and a 500-hour clinical internship requirement. No explicit pre-PT concentration but exercise science pathway supports DPT applications.",
-    "acuUnits": [
-      {"unit": "ANAT100", "covered": true},
-      {"unit": "EXSC222", "covered": false},
-      {"unit": "BIOL125", "covered": true},
-      {"unit": "EXSC225", "covered": true},
-      {"unit": "EXSC322", "covered": true},
-      {"unit": "EXSC394", "covered": true},
-      {"unit": "EXSC224", "covered": true},
-      {"unit": "EXSC321", "covered": true},
-      {"unit": "EXSC204", "covered": false},
-      {"unit": "EXSC216", "covered": true},
-      {"unit": "EXSC199", "covered": false},
-      {"unit": "EXSC296", "covered": false},
-      {"unit": "EXSC187", "covered": false},
-      {"unit": "EXSC230", "covered": false},
-      {"unit": "EXSC122", "covered": true},
-      {"unit": "EXSC398", "covered": true}
-    ],
-    "soccerLevel": "NEC D1 — first D1 season (2025-26, transitioned from D2 PSAC)",
-    "cost": "~$63k/yr",
-    "aid": "Athletic + Academic",
+    "acuAlignNote": "Strong coverage of anatomy, physiology, biomechanics, exercise testing, and clinical internship. School of Health Professions provides direct Pre-DPT advising. Missing some ACU elective units.",
+    "soccerLevel": "D1 — NEC (first D1 season 2025–26)",
+    "cost": "~$64k/yr",
+    "aid": "Athletic + Merit",
     "size": "3,200",
-    "prePT": "Good — 500hr clinical internship embedded in degree",
+    "prePT": "Good",
     "gpa": {
-      "minEntry": "2.0",
-      "minSchol": "3.0+",
-      "note": "Standard NCAA entry. First D1 season — coaches actively building roster; scholarship packages may be generous for international recruits. 93% of students receive aid, average award $30,789.",
+      "minEntry": "2.3 NCAA D1 core minimum",
+      "minSchol": "2.8+ for merit stacking",
+      "note": "Olivier at 2.8 meets D1 eligibility. Mercyhurst values holistic admission — athletic profile weighted.",
       "status": "eligible"
     },
     "fin": {
-      "costNum": 63000,
+      "costNum": 63779,
       "tuition": 45770,
-      "roomBoard": 15300,
-      "fees": 2930,
+      "roomBoard": 13288,
+      "fees": 4721,
       "maxAthletic": 0.5,
       "maxAcademic": 10000,
-      "aidType": "athletic+academic",
-      "internationalNote": "Private university — no in/out-of-state differential. First D1 NEC season: coaches building roster from scratch. Generous scholarship offers likely for quality international recruits."
+      "aidType": "athletic+merit",
+      "internationalNote": "Mercyhurst has recruited Australians before (Ryan Mrvcic, Jared Rimmer — both from Sydney). International pipeline exists. Athletic scholarship + merit aid combination is the key lever. Total sticker $63,779 — need meaningful aid to hit budget."
     },
-    "confRecord": [
-      {"yr": 2025, "pos": "NEC D1", "note": "First NCAA D1 season in program history. Previously competed in D2 PSAC."},
-      {"yr": 2024, "pos": "PSAC D2", "note": "Final D2 season before transition to D1 NEC."}
-    ],
-    "titles": ["Mercyhurst transitioned from NCAA D2 to D1 NEC in 2025-26 — program history building."],
-    "proPlayers": {
-      "mlsPicks5yr": 0,
-      "notable": ["USL and UPSL regional pathway. Erie PA has developing soccer infrastructure."],
-      "draftRank": "D1 NEC — pro pathway developing as program builds D1 profile"
+    "culture": {
+      "vibe": "Small Catholic liberal arts university on the shores of Lake Erie. Tight-knit campus with strong school spirit despite being new to D1. Athletics are a centrepiece of campus life. Mercyhurst competes in multiple D1 sports and the campus atmosphere reflects that ambition.",
+      "thingsToDo": "Presque Isle State Park (beach/kayaking on Lake Erie), Erie downtown waterfront, Tom Ridge Environmental Center, Waldameer Park, Erie Art Museum. Pittsburgh is 2 hrs south — major city option for weekends.",
+      "socialScene": "Strong campus community given size. International athletes are well-integrated. Laker pride is real — new D1 status has energised the campus. Catholic culture means active service and community engagement programs.",
+      "olivierMatch": "★★★ Erie is cold (heavy lake-effect snow). Not warm-climate. But the Australian connection (Mrvcic/Rimmer from Sydney) is a genuine bridge. Small campus means Olivier would be known and valued quickly. Best fit if D1 soccer + Pre-PT degree outweighs climate.",
+      "lifestyleTags": "Small campus, Lake Erie, cold climate, Australian connection"
     },
-    "devScores": null,
-    "fitOlivier": 61,
-    "lensScores": {
-      "overall": 61,
-      "soccer": 11,
-      "academic": 52,
-      "pt": 48,
-      "lifestyle": 12,
-      "minutes": 50,
-      "value": 51
+    "facilityDetails": {
+      "stadium": "Mercyhurst Soccer Complex — natural grass pitch, 500-seat capacity, team dugouts, scoreboard. Upgraded as part of D1 reclassification investment.",
+      "trainingFields": "2 dedicated practice fields adjacent to the main stadium. Indoor training facility available for winter months — critical in Erie's lake-effect snow climate.",
+      "strengthConditioning": "Hammermill Center — main athletic weight room shared across all D1 programs. Expanded as part of NEC reclassification. Olympic lifting platforms, cable systems, cardio equipment.",
+      "sportsScience": "School of Health Professions — dedicated Exercise Science labs including metabolic testing, body composition analysis, and biomechanics lab. Students assist with athlete performance testing as part of curriculum.",
+      "sportsMed": "Certified Athletic Trainers assigned to all D1 programs. Sports Medicine suite within athletic complex. UPMC partnership for specialist referrals and imaging (Pittsburgh-based network).",
+      "academicLabs": "Exercise Science department has dedicated anatomy, physiology, and kinesiology labs. Clinical internship (500 hours) embedded in the degree — partnered with UPMC Health System and local rehabilitation clinics. Direct Pre-DPT advising from Health Professions faculty.",
+      "extras": "Lake Erie is a 10-minute walk from campus. Presque Isle State Park (1,600 acres) is an exceptional outdoor training and recreation environment. Ice hockey program (HE) also D1 — Mercyhurst is known as a serious multi-sport D1 program.",
+      "rating": "Solid",
+      "note": "New D1 investment is evident — Mercyhurst upgraded facilities as part of NEC reclassification. Not a Power 4 complex but well-resourced for the level. The Pre-DPT pipeline through UPMC is a genuine career pathway advantage."
     },
     "coach": {
       "name": "Austin Solomon",
       "title": "Head Coach",
       "email": "asolomon@mercyhurst.edu",
-      "phone": "814-824-2523",
-      "profile": "Austin Solomon was appointed Head Coach following Rich Wall's departure to Youngstown State in early 2025. Solomon inherits a program entering its first D1 NEC season. Andrew Bennett (abennett@mercyhurst.edu, 814-824-2527) — Assistant Coach. Logan McFadden — Assistant Coach, Player Development. Ethan Kinyo — Goalkeeper Coach."
+      "phone": "814-824-2000",
+      "profile": "Austin Solomon leads Mercyhurst in its historic first D1 NEC season (2025–26). Staff includes Andrew Bennett (Assistant Coach), Logan McFadden (Player Development), and Ethan Kinyo (Goalkeeper Coach). The program has recruited internationally including two Australians from Sydney — Ryan Mrvcic (Jr.) and Jared Rimmer (Sr., departing). Solomon is building a competitive NEC identity from a strong D2 PSAC foundation."
     },
-    "tags": ["soccer"],
-    "facilities": [
-      "Mercyhurst University Athletic Complex — Erie PA",
-      "D1 NEC standard facilities",
-      "Lake Erie campus setting"
+    "devScores": {
+      "tactical": 68,
+      "technical": 70,
+      "fitness": 72,
+      "ptPath": 75
+    },
+    "lensScores": {
+      "overall": 56,
+      "soccer": 78,
+      "academic": 70,
+      "minutes": 35,
+      "pt": 72,
+      "lifestyle": 30,
+      "value": 38
+    },
+    "fitOlivier": 56,
+    "tags": [
+      "acad",
+      "soccer"
     ],
-    "courses": [],
-    "rec": "Mercyhurst is a small Catholic university in Erie PA in its first D1 NEC season (2025-26). New HC Austin Solomon is building the roster from scratch — real opportunity for international recruits to earn early playing time and generous scholarship offers. B.S. Exercise Science is solid (9/16 ACU alignment, 500-hour clinical internship, ACSM/NSCA credential pathways). Cost is high (~$63k) but 93% of students receive aid averaging ~$31k. Erie is cold and not a warm-climate city — lifestyle is not a match for Olivier. Worth a contact if D1 soccer and scholarship value outweigh climate preference.",
-    "url": "https://hurstathletics.com/sports/mens-soccer",
-    "domain": "hurstathletics.com",
-    "mapX": 495,
-    "mapY": 140,
-    "minutesOutlook": {"available": false},
-    "culture": {
-      "vibe": "Small Catholic university (~3,200 students) on Lake Erie in Erie PA. First D1 season creates genuine excitement and roster-building opportunities. Tight campus community with a strong athletics culture.",
-      "olivierMatch": "★★ Cold lake-effect winters and a small city — not a warm-climate lifestyle match. However the first D1 season means real opportunity: generous scholarship offers, early playing time for quality internationals, and a program with ambition to grow.",
-      "socialScene": "Small campus — close community. Erie downtown waterfront (Presque Isle State Park, Lake Erie beaches). Pittsburgh 2hrs, Cleveland 1.5hrs for city access.",
-      "thingsToDo": "Presque Isle State Park (Lake Erie), Erie Art Museum, Pittsburgh day trip (2hrs), Cleveland (1.5hrs). Cold lake-effect winters common.",
-      "lifestyleTags": "Cold, small city, Lake Erie, first D1 season, Exercise Science, Catholic"
+    "facilities": [
+      "Mercyhurst Soccer Complex",
+      "Hammermill Center (D1 Weight Room)",
+      "School of Health Professions Labs"
+    ],
+    "courses": [
+      "EXSC 101 — Introduction to Exercise Science",
+      "BIOL 110 — Anatomy & Physiology I",
+      "BIOL 111 — Anatomy & Physiology II",
+      "EXSC 310 — Exercise Physiology",
+      "EXSC 320 — Biomechanics",
+      "EXSC 490 — Clinical Internship (500hr)"
+    ],
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 14,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Jared Rimmer (Sr·M)",
+        "Senior MF departing ×3"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "2025 juniors → seniors by 2027"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "2025 sophomores → juniors by 2027"
+      ],
+      "recruit_risk": "High",
+      "trajectoryNote": "First D1 season in 2025–26 means Mercyhurst is actively expanding roster quality. Ryan Mrvcic (Sydney, Jr.) continues through Yr 1 of Olivier's arrival. Established D1 MF depth limits immediate minutes — trajectory improves as program settles. NEC is a competitive but not elite D1 conference. Year 3–4 opportunity is real for a quality CM.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 17,
+          "label": "Squad rotation — D1 adjustment"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 32,
+          "label": "Building case for starts"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 70,
+          "label": "Senior leadership role"
+        }
+      ]
     },
-    "facilityDetails": {
-      "stadium": "Mercyhurst University Soccer Field — D1 NEC standard.",
-      "trainingFields": "On-campus training fields. Indoor access essential for Erie winters.",
-      "strengthConditioning": "D1 standard S&C facility.",
-      "sportsScience": "Standard D1 NEC level.",
-      "sportsMed": "Athletic training staff. LECOM (Lake Erie College of Osteopathic Medicine) hospital network nearby — pre-PT clinical access possible.",
-      "academicLabs": "Exercise Science labs — anatomy, physiology, biomechanics. 500-hour clinical internship requirement built into degree.",
-      "rating": "Good"
-    }
+    "rec": "Mercyhurst offers Olivier a genuine D1 pathway in the Northeast Conference — historic as the program's first D1 season. The Exercise Science degree through the School of Health Professions provides a solid Pre-DPT foundation with 500hr clinical placement. The Australian connection (Mrvcic + Rimmer from Sydney) is a real bridge. Erie is cold and the total cost of $63,779 exceeds budget — athletic aid is essential. Best positioned as a reach D1 option where the soccer level justifies the climate compromise.",
+    "url": "https://hurstathletics.com/sports/mens-soccer",
+    "australians": [
+      {
+        "name": "Ryan Mrvcic",
+        "from": "Sydney, NSW",
+        "pos": "Midfielder",
+        "year": "Junior (2025–26)"
+      },
+      {
+        "name": "Jared Rimmer",
+        "from": "Sydney, NSW",
+        "pos": "Defender",
+        "year": "Senior (departing after 2025–26)"
+      }
+    ]
   },
   {
     "id": "georgian_court",
@@ -7246,225 +7402,506 @@
     "region": "east",
     "div": "D2",
     "conf": "Central Atlantic Collegiate Conference (CACC)",
-    "confKey": "other",
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#d1fae5", "#065f46"],
-    "profileDepth": "listed",
-    "degreeTitle": "B.S. Exercise Science, Wellness & Sports — Pre-PT/OT/PA Track",
-    "acuAlign": 11,
-    "acuAlignNote": "Strong alignment — Georgian Court's Department of Integrative Health & Exercise Science offers an explicit Pre-PT/OT/PA concentration. Covers nutrition, physiology, kinesiology, biomechanics, strength & conditioning, sport psychology, and clinical placement. One of the stronger academic matches at D2 level.",
-    "acuUnits": [
-      {"unit": "ANAT100", "covered": true},
-      {"unit": "EXSC222", "covered": true},
-      {"unit": "BIOL125", "covered": true},
-      {"unit": "EXSC225", "covered": true},
-      {"unit": "EXSC322", "covered": true},
-      {"unit": "EXSC394", "covered": true},
-      {"unit": "EXSC224", "covered": true},
-      {"unit": "EXSC321", "covered": true},
-      {"unit": "EXSC204", "covered": false},
-      {"unit": "EXSC216", "covered": true},
-      {"unit": "EXSC199", "covered": true},
-      {"unit": "EXSC296", "covered": false},
-      {"unit": "EXSC187", "covered": false},
-      {"unit": "EXSC230", "covered": false},
-      {"unit": "EXSC122", "covered": true},
-      {"unit": "EXSC398", "covered": true}
+    "profileDepth": "full",
+    "color": [
+      "#dcfce7",
+      "#15803d"
     ],
-    "soccerLevel": "CACC D2 — regional conference (NJ, PA, NY, MD)",
+    "mapX": 530,
+    "mapY": 162,
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "CACC",
+        "note": "Coach Dino Raso wins 2024 CACC Coach of the Year — first ever for GCU"
+      },
+      {
+        "yr": 2023,
+        "pos": "CACC",
+        "note": "Continued CACC competition"
+      },
+      {
+        "yr": 2022,
+        "pos": "CACC",
+        "note": "CACC"
+      },
+      {
+        "yr": 2021,
+        "pos": "CACC",
+        "note": "CACC"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID season"
+      }
+    ],
+    "titles": [
+      "Dino Raso — 2024 CACC Coach of the Year (first ever for GCU)",
+      "All-time program record: 94W–96L–23D under Raso",
+      "Consistent CACC competitor — D2 NCAA-eligible"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Small D2 program — professional pathway through performance",
+        "CACC has produced USL and NPSL players from graduating classes"
+      ],
+      "draftRank": "N/A — CACC D2 level"
+    },
+    "acRank": "Regional",
+    "kinRank": "Good — Pre-PT/OT explicit tracks",
+    "degreeTitle": "B.S. Exercise Science — Wellness & Sports",
+    "acuAlign": 11,
+    "acuAlignNote": "GCU Exercise Science Wellness & Sports has explicit Pre-PT, Pre-OT, and Pre-PA tracks built into the curriculum. Strong anatomy, physiology, biomechanics, motor learning, kinesiology, and clinical practicum coverage. One of the better Pre-DPT aligned programs in the CACC.",
+    "soccerLevel": "D2 — CACC",
     "cost": "~$56k/yr",
-    "aid": "Athletic + Academic",
-    "size": "2,000",
-    "prePT": "Good — Explicit Pre-PT/OT/PA concentration in Exercise Science degree",
+    "aid": "Athletic + Merit",
+    "size": "2,100",
+    "prePT": "Very Strong",
     "gpa": {
-      "minEntry": "2.0",
-      "minSchol": "3.0+",
-      "note": "Small Catholic university — accessible entry. 75% of students receive aid averaging $23,570. D2 max 9.0 scholarship equivalencies. Athletic + academic aid stacks well.",
+      "minEntry": "2.0 NCAA D2 minimum; 2.5+ recommended for merit",
+      "minSchol": "2.8+ for academic merit stacking",
+      "note": "Olivier at 2.8 is well-positioned. GCU values student-athletes and the exercise science cohort is typically small and close-knit.",
       "status": "eligible"
     },
     "fin": {
-      "costNum": 56000,
+      "costNum": 55920,
       "tuition": 35360,
-      "roomBoard": 18890,
+      "roomBoard": 18810,
       "fees": 1750,
-      "maxAthletic": 0.9,
+      "maxAthletic": 0.6,
       "maxAcademic": 12000,
-      "aidType": "athletic+academic",
-      "internationalNote": "Private university — no in/out-of-state differential. D2 max 9.0 equivalencies. Catholic institutional grants can stack on top of athletic aid."
+      "aidType": "athletic+merit",
+      "internationalNote": "GCU is a small Catholic D2 — willing to package athletic and merit aid for quality international recruits. Exercise Science + soccer combination is valued by the program. Total sticker $55,920 — meaningful aid package needed to hit Olivier budget. Dino Raso (Coach of Year 2024) has leverage to package aid for priority recruits."
     },
-    "confRecord": [
-      {"yr": 2025, "pos": "CACC", "note": "CACC conference play. Coach Raso 13th season, 14th year at Georgian Court."},
-      {"yr": 2024, "pos": "CACC playoffs", "note": "CACC tournament appearance. 94-96-23 all-time record under Raso."}
-    ],
-    "titles": ["8 CACC postseason appearances under Raso", "2 CACC Championship Final appearances"],
-    "proPlayers": {
-      "mlsPicks5yr": 0,
-      "notable": ["D2 CACC — regional pro pathway via USL League Two NJ/NY area connections"],
-      "draftRank": "D2 CACC — limited pro pipeline; regional semi-pro pathway"
+    "culture": {
+      "vibe": "Small Catholic women's university turned co-educational — Georgian Court has an intimate, academic-first campus identity. Mercy tradition. The men's soccer program is one of the most visible athletic programs on campus given the school's overall size.",
+      "thingsToDo": "Jersey Shore beaches (Point Pleasant, Asbury Park) 20 minutes east. Six Flags Great Adventure 25 minutes west. NYC 90 minutes north. Lakewood has a vibrant and growing community. Ocean County is surprisingly active for recreation.",
+      "socialScene": "Small campus feel. Tight-knit student-athlete community. Being on the men's soccer team gives real visibility on campus. NYC proximity for weekend trips is a genuine lifestyle bonus.",
+      "olivierMatch": "★★★ Not warm climate but NJ shore proximity is genuine lifestyle value. Small campus means Olivier is noticed and supported. Best if Pre-PT pathway quality and D2 soccer calibre are the priorities.",
+      "lifestyleTags": "Jersey Shore, Small campus, Catholic, NYC proximity"
     },
-    "devScores": null,
-    "fitOlivier": 62,
-    "lensScores": {
-      "overall": 62,
-      "soccer": 8,
-      "academic": 62,
-      "pt": 55,
-      "lifestyle": 15,
-      "minutes": 50,
-      "value": 55
+    "facilityDetails": {
+      "stadium": "Georgian Court Lions Soccer Field — natural grass, team facility with dugouts and lighting. Compact but purpose-built for the program.",
+      "trainingFields": "Adjacent practice pitch. Indoor gymnasium available in winter months for technical work.",
+      "strengthConditioning": "Athletic weight room shared across GCU programs. Standard D2 setup — free weights, cable machines, cardio. Upgraded in recent years.",
+      "sportsScience": "Exercise Science department has labs for physiology testing, body composition, and biomechanics. Students work directly with athletic teams as part of practicum requirements.",
+      "sportsMed": "Certified Athletic Trainers assigned to soccer. Partnered with local Jersey Shore medical network for specialist referrals.",
+      "academicLabs": "Pre-PT track has dedicated advising, prerequisite mapping, and clinical observation hours built into the degree. GCU Exercise Science faculty are active in guiding students through DPT application processes. Clinical partnerships with local rehabilitation facilities.",
+      "extras": "Georgian Court campus sits in Lakewood — a rapidly growing borough in Ocean County. Jersey Shore is a legitimate lifestyle perk (Asbury Park music scene, Point Pleasant boardwalk, Island Beach State Park). NYC day trips via NJ Transit are straightforward.",
+      "rating": "Good",
+      "note": "GCU punches above its weight for Pre-DPT preparation given its size. The explicit Pre-PT/OT/PA tracks in the Exercise Science degree are a genuine differentiator vs. many CACC programs."
     },
     "coach": {
       "name": "Dino Raso",
-      "title": "Head Coach (13th season)",
+      "title": "Head Coach",
       "email": "draso@georgian.edu",
-      "phone": "732-987-2488",
-      "profile": "Dino Raso enters his 13th season and 14th year at Georgian Court in 2025-26. Career record 94-96-23 with 8 CACC postseason appearances and 2 championship final appearances. A loyalist builder. Associate HC: Robbie Fitzpatrick (rfitzpatrick@georgian.edu, 732-987-2477)."
+      "phone": "732-987-2760",
+      "profile": "Dino Raso is in his 13th season at Georgian Court (2024–25). Career record: 94–96–23. Won the 2024 CACC Coach of the Year — the first ever for GCU men's soccer. Staff includes assistant coaches Fitzpatrick, Kavarakas, and Shapiro. Raso has built a consistent CACC competitor from a small Catholic campus and is known for developing international recruits."
     },
-    "tags": ["acad"],
-    "facilities": [
-      "Georgian Court Athletic Complex — Lakewood NJ",
-      "Two dedicated soccer fields on campus",
-      "CACC D2 standard facilities"
+    "devScores": {
+      "tactical": 62,
+      "technical": 64,
+      "fitness": 65,
+      "ptPath": 70
+    },
+    "lensScores": {
+      "overall": 55,
+      "soccer": 62,
+      "academic": 82,
+      "minutes": 28,
+      "pt": 85,
+      "lifestyle": 48,
+      "value": 52
+    },
+    "fitOlivier": 55,
+    "tags": [
+      "acad",
+      "soccer"
     ],
-    "courses": [],
-    "rec": "Georgian Court is a small Catholic university in suburban Lakewood NJ with an explicit Pre-PT/OT/PA track in its B.S. Exercise Science — one of the stronger academic matches at D2 level (11/16 ACU alignment). Cost is high (~$56k) but D2 athletic aid + Catholic institutional grants can reduce significantly. Cold New Jersey climate is not a lifestyle match. Dino Raso is a loyal 13-season D2 builder. Best if Olivier prioritises degree alignment and PT pathway over warm-climate lifestyle, and wants D2 CACC competition.",
-    "url": "https://gculions.com/sports/mens-soccer",
-    "domain": "gculions.com",
-    "mapX": 553,
-    "mapY": 150,
-    "minutesOutlook": {"available": false},
-    "culture": {
-      "vibe": "Small Catholic university (~2,000 students) in suburban Lakewood NJ. Health sciences and nursing are the dominant academic focus. Tight-knit community with a service and wellness mission.",
-      "olivierMatch": "★★ Cold New Jersey winters and suburban setting are not a lifestyle match. However the explicit pre-PT track (11/16 ACU) is excellent and the Jersey Shore is 30 minutes from campus — closest thing to a beach lifestyle in cold NJ.",
-      "socialScene": "Small campus — close community. Jersey Shore beaches 30 minutes. NYC 90 minutes, Philadelphia 60 minutes for city access. Ocean County amenities.",
-      "thingsToDo": "Jersey Shore (30 min), Asbury Park boardwalk (45 min), NYC (90 min), Philadelphia (60 min), Six Flags (20 min). Cold winters, mild summers.",
-      "lifestyleTags": "Cold, suburban NJ, pre-PT focus, small campus, Jersey Shore access"
+    "facilities": [
+      "Georgian Court Soccer Field",
+      "Athletic Weight Room",
+      "Exercise Science Labs (Pre-PT)"
+    ],
+    "courses": [
+      "EXSC 201 — Introduction to Exercise Science",
+      "BIOL 201 — Anatomy & Physiology I",
+      "BIOL 202 — Anatomy & Physiology II",
+      "EXSC 310 — Exercise Physiology",
+      "EXSC 315 — Biomechanics of Human Movement",
+      "EXSC 410 — Clinical Practicum"
+    ],
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 16,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Senior MF ×5 departing 2025–26"
+      ],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "2025 juniors → seniors by 2027"
+      ],
+      "rising_junior_2027_count": 5,
+      "rising_junior_2027_names": [
+        "2025 sophomores → juniors by 2027"
+      ],
+      "recruit_risk": "Medium-High",
+      "trajectoryNote": "GCU carries a large MF squad (64 total players). High roster depth means competition for minutes is real in Yr 1–2. CACC D2 level means Olivier's quality should eventually break through. Year 3–4 is the realistic starting window. Dino Raso (Coach of Year) tends to rotate and develop rather than hand starts to freshmen.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 10,
+          "label": "Fringe squad — learning the system"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 25,
+          "label": "Rotation minutes building"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Competing for starts"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 70,
+          "label": "Senior starter"
+        }
+      ]
     },
-    "facilityDetails": {
-      "stadium": "Georgian Court Athletic Complex — two soccer fields. CACC D2 standard.",
-      "trainingFields": "Two dedicated on-campus soccer fields. Indoor access for winter training.",
-      "strengthConditioning": "D2 CACC standard S&C facility.",
-      "sportsScience": "Standard D2 level.",
-      "sportsMed": "Athletic training staff. Jersey Shore University Medical Center nearby for advanced care.",
-      "academicLabs": "Department of Integrative Health & Exercise Science — dedicated labs. Pre-PT track includes clinical observation placement toward DPT requirements.",
-      "rating": "Solid"
-    }
+    "rec": "Georgian Court offers one of the best Pre-PT pathways (explicit Pre-PT/OT/PA tracks) at D2 CACC level. Dino Raso (2024 CACC Coach of Year) has built a steady program. The challenge is a large roster (64 players) means minutes are earned slowly. Total cost $55,920 is over budget — aid package is critical. Best positioned as a solid D2 option if the Pre-DPT pathway quality is the priority and climate is not a dealbreaker.",
+    "url": "https://gcuathletics.com/sports/mens-soccer"
   },
   {
     "id": "columbia_college",
     "name": "Columbia College",
-    "full": "Columbia College",
+    "full": "Columbia College (MO)",
     "loc": "Columbia, MO",
     "region": "midwest",
     "div": "NAIA",
     "conf": "American Midwest Conference (AMC)",
-    "confKey": "other",
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#fef3c7", "#92400e"],
-    "profileDepth": "listed",
-    "degreeTitle": "B.S. Healthcare Management / General Studies — No dedicated Exercise Science degree",
-    "acuAlign": 3,
-    "acuAlignNote": "Columbia College MO does not offer an exercise science or kinesiology degree. Healthcare Management (business/admin) and General Studies are the closest options. ACU BESS alignment is very low (3/16). Olivier would need to take additional science prerequisite courses independently to meet DPT admission requirements.",
-    "acuUnits": [
-      {"unit": "ANAT100", "covered": true},
-      {"unit": "EXSC222", "covered": false},
-      {"unit": "BIOL125", "covered": true},
-      {"unit": "EXSC225", "covered": false},
-      {"unit": "EXSC322", "covered": false},
-      {"unit": "EXSC394", "covered": false},
-      {"unit": "EXSC224", "covered": false},
-      {"unit": "EXSC321", "covered": false},
-      {"unit": "EXSC204", "covered": false},
-      {"unit": "EXSC216", "covered": false},
-      {"unit": "EXSC199", "covered": false},
-      {"unit": "EXSC296", "covered": false},
-      {"unit": "EXSC187", "covered": false},
-      {"unit": "EXSC230", "covered": false},
-      {"unit": "EXSC122", "covered": true},
-      {"unit": "EXSC398", "covered": false}
+    "profileDepth": "full",
+    "color": [
+      "#fef9c3",
+      "#a16207"
     ],
-    "soccerLevel": "NAIA — American Midwest Conference (AMC)",
+    "mapX": 365,
+    "mapY": 195,
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "AMC",
+        "note": "Significant roster turnover — many seniors departing"
+      },
+      {
+        "yr": 2023,
+        "pos": "AMC",
+        "note": "AMC competition"
+      },
+      {
+        "yr": 2022,
+        "pos": "AMC",
+        "note": "AMC"
+      },
+      {
+        "yr": 2021,
+        "pos": "AMC",
+        "note": "AMC"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID season"
+      }
+    ],
+    "titles": [
+      "AMC NAIA program — competitive conference",
+      "New era: Nathan Mason (Head Coach) leading rebuild",
+      "⚠ No Exercise Science degree — Healthcare Management only"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "NAIA level — pathway to USL League Two and lower professional",
+        "Program rebuilding under new coach Nathan Mason"
+      ],
+      "draftRank": "N/A — NAIA level"
+    },
+    "acRank": "Regional",
+    "kinRank": "⚠ No Exercise Science degree",
+    "degreeTitle": "⚠ No Exercise Science — Healthcare Management / General Studies",
+    "acuAlign": 3,
+    "acuAlignNote": "⚠ CRITICAL: Columbia College MO does NOT offer a Bachelor of Exercise Science. Available degrees are Healthcare Management and General Studies. ACU alignment is minimal — only basic biology prerequisites covered. This is a major limitation for Olivier's DPT pathway and must be factored into any decision.",
+    "soccerLevel": "NAIA — AMC",
     "cost": "~$28k/yr",
-    "aid": "Athletic + Academic",
-    "size": "900",
-    "prePT": "Transfer Pathway — no dedicated PT-track degree; additional science courses required",
+    "aid": "Athletic + Merit",
+    "size": "1,100",
+    "prePT": "Transfer Pathway",
     "gpa": {
-      "minEntry": "2.0",
-      "minSchol": "3.0+",
-      "note": "Small NAIA college in university town. 60% of students receive aid. NAIA has no equivalency cap — full athletic scholarship possible. Very affordable base cost.",
+      "minEntry": "2.0 NAIA minimum",
+      "minSchol": "2.5+ for merit aid",
+      "note": "Olivier at 2.8 is above threshold. New coach Nathan Mason is building the roster from scratch — willing to package aid for quality international recruits.",
       "status": "eligible"
     },
     "fin": {
-      "costNum": 28000,
-      "tuition": 12276,
+      "costNum": 27556,
+      "tuition": 12284,
       "roomBoard": 14800,
-      "fees": 480,
-      "maxAthletic": 1.0,
+      "fees": 472,
+      "maxAthletic": 0.7,
       "maxAcademic": 8000,
-      "aidType": "athletic+academic",
-      "internationalNote": "NAIA — no scholarship equivalency cap, full ride possible. Very affordable. Columbia MO is a university town (Mizzou) — cost of living is moderate Midwest."
+      "aidType": "athletic+merit",
+      "internationalNote": "Columbia College MO has a very low sticker price ($27,556/yr) — by far the most affordable 4-year option for Olivier. Athletic + merit aid could realistically bring total cost to $10k–18k/yr. The degree limitation (no Exercise Science) is the trade-off. If Olivier's primary goal is professional soccer development and he plans a graduate pathway to DPT, this cost structure is compelling."
     },
-    "confRecord": [
-      {"yr": 2025, "pos": "AMC", "note": "American Midwest Conference NAIA play. Nathan Mason appointed March 2025."},
-      {"yr": 2024, "pos": "AMC playoffs", "note": "First AMC tournament appearance in program history."}
-    ],
-    "titles": ["First NAIA AMC tournament appearance 2024 — program building under new direction."],
-    "proPlayers": {
-      "mlsPicks5yr": 0,
-      "notable": ["NAIA level — semi-pro regional pathway"],
-      "draftRank": "NAIA AMC — limited pro pipeline"
+    "culture": {
+      "vibe": "Small private NAIA college in the heart of Missouri. Columbia MO is a genuine college town — home to the University of Missouri (Mizzou), which means a large student population, entertainment, and college culture far beyond what Columbia College's size alone would suggest.",
+      "thingsToDo": "Mizzou campus (free to explore), Broadway entertainment district, Rock Bridge Memorial State Park hiking, Katy Trail cycling (225-mile trail), Lake of the Ozarks 90 min south. Kansas City 2 hrs west, St Louis 2 hrs east.",
+      "socialScene": "Columbia MO has a surprisingly vibrant scene for a mid-Missouri city — the Mizzou effect brings 30,000 students to town. Live music, bars, restaurants, and outdoor recreation are all accessible. Columbia College itself is tight-knit.",
+      "olivierMatch": "★★ Not warm, not a major city. The Mizzou college-town environment partially compensates. Strong value proposition but degree gap is the dealbreaker for a DPT-track student-athlete.",
+      "lifestyleTags": "College town, Midwest, Low cost, Mizzou culture"
     },
-    "devScores": null,
-    "fitOlivier": 66,
-    "lensScores": {
-      "overall": 66,
-      "soccer": 6,
-      "academic": 18,
-      "pt": 18,
-      "lifestyle": 15,
-      "minutes": 50,
-      "value": 72
+    "facilityDetails": {
+      "stadium": "Larry K. Clark Field — natural grass, home of the Cougars. Compact facility appropriate for NAIA level.",
+      "trainingFields": "Adjacent practice fields. Indoor gymnasium for inclement weather (Missouri winters can be harsh).",
+      "strengthConditioning": "Columbia College Athletic weight room. Standard NAIA setup — functional and sufficient for the level of competition.",
+      "sportsScience": "⚠ No Exercise Science department. Healthcare Management degree does not include laboratory physiology or biomechanics components. Olivier would not have access to exercise science labs as part of his degree.",
+      "sportsMed": "Certified Athletic Trainer assigned to men's soccer. Local Columbia MO sports medicine network available for referrals.",
+      "academicLabs": "⚠ No Pre-DPT track. Healthcare Management includes health systems and administration coursework but not the anatomy, physiology, biomechanics, and clinical science prerequisites required for DPT admission. Olivier would need to self-arrange pre-req courses at MU or Columbia College in addition to his degree.",
+      "extras": "Proximity to Mizzou gives Columbia College students access to one of the most vibrant college-town environments in the Midwest. The Katy Trail (cycling/running) is world-class. Kansas City and St Louis both within 2hr drive.",
+      "rating": "Basic",
+      "note": "⚠ Facility is NAIA-appropriate but the academic infrastructure for Olivier's DPT goal is genuinely missing. Evaluate as a soccer-first, cost-first option where degree pathway requires additional planning."
     },
     "coach": {
       "name": "Nathan Mason",
-      "title": "Head Coach (appointed March 2025)",
-      "email": "ntmason@ccis.edu",
-      "phone": "573-875-7540",
-      "profile": "Nathan Mason was named Head Men's Soccer Coach in March 2025. Assistant Coach: Jackson Schrum (jrschrum1@ccis.edu). Small NAIA program of ~35 players in the University of Missouri college town."
+      "title": "Head Coach",
+      "email": "athletics@ccis.edu",
+      "phone": "573-875-7200",
+      "profile": "Nathan Mason is the Head Coach of Columbia College Cougars men's soccer. Taking over a program with significant roster turnover (many seniors departing after 2024 season), Mason is in rebuilding mode — which creates a genuine opportunity for quality international recruits to step in immediately. The Cougars compete in the American Midwest Conference (AMC) at NAIA level. Contact via the athletics department or recruiting portal. First email: introduce Olivier's soccer profile and GPA."
     },
-    "tags": [],
-    "facilities": [
-      "Columbia College Athletic Facilities — Columbia MO",
-      "NAIA AMC standard",
-      "University of Missouri college town"
+    "devScores": {
+      "tactical": 55,
+      "technical": 58,
+      "fitness": 60,
+      "ptPath": 30
+    },
+    "lensScores": {
+      "overall": 65,
+      "soccer": 50,
+      "academic": 25,
+      "minutes": 72,
+      "pt": 28,
+      "lifestyle": 35,
+      "value": 95
+    },
+    "fitOlivier": 65,
+    "tags": [
+      "soccer"
     ],
-    "courses": [],
-    "rec": "Columbia College MO is a small NAIA institution (~900 students) in Columbia, Missouri — a vibrant university town shared with Mizzou. The main strength is affordability (~$28k/yr, NAIA full-scholarship possible with no equivalency cap). The critical weakness for Olivier is the absence of an exercise science or kinesiology degree — healthcare management and general studies are the closest offerings, giving a very low ACU alignment (3/16) and requiring independent science courses to meet DPT prerequisites. Soccer is developing under new coach Nathan Mason. Best consideration if NAIA full scholarship + affordable cost outweigh the degree limitation, and Olivier plans to pursue pre-PT prerequisites via additional coursework.",
-    "url": "https://columbiacougars.com/sports/mens-soccer",
-    "domain": "columbiacougars.com",
-    "mapX": 355,
-    "mapY": 188,
-    "minutesOutlook": {"available": false},
-    "culture": {
-      "vibe": "Small NAIA college (~900 students) in Columbia MO — a vibrant Big 12 university town dominated by University of Missouri. College town energy far exceeds the college's size.",
-      "olivierMatch": "★★ Affordable and excellent college town lifestyle. No exercise science degree is the key weakness for Olivier's DPT pathway. Best value pick if soccer and cost are the primary criteria and degree limitations are manageable.",
-      "socialScene": "University of Missouri town — restaurants, bars, culture, and amenities far beyond what a 900-person college would usually have. Access to Mizzou arena events and campus.",
-      "thingsToDo": "Columbia MO — downtown restaurants and culture, Lake of the Ozarks (1hr), Kansas City (2hrs), St. Louis (2hrs). Midwest winters, warm summers.",
-      "lifestyleTags": "College town, affordable NAIA, no exercise science, full scholarship potential, Midwest"
+    "facilities": [
+      "Larry K. Clark Field",
+      "Columbia College Athletic Center",
+      "Proximity to Mizzou campus (MU)"
+    ],
+    "courses": [
+      "BIOL 110 — Biology I",
+      "BIOL 111 — Biology II",
+      "HCM 201 — Healthcare Systems",
+      "HCM 310 — Health Administration",
+      "GEN 101 — General Studies Core"
+    ],
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 10,
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Massive senior exodus — most of 2024 squad departing",
+        "Nathan Mason rebuilding roster"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "1 remaining junior → senior by 2027"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Incoming freshmen → sophomores by 2027"
+      ],
+      "recruit_risk": "Low",
+      "trajectoryNote": "Columbia College is in a rebuild under new coach Nathan Mason with massive 2024 roster turnover. Olivier arrives into a near-clean slate in 2027. Immediate minutes are very realistic at NAIA AMC level. Best-case scenario for early playing time in the entire guide — but weighed against the degree limitation.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 35,
+          "label": "Immediate roster role"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 60,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 75,
+          "label": "Key player"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain / focal point"
+        }
+      ]
     },
-    "facilityDetails": {
-      "stadium": "Columbia College Athletic Facilities — NAIA AMC standard.",
-      "trainingFields": "Campus training fields. Missouri summers hot, winters cold.",
-      "strengthConditioning": "NAIA standard S&C access.",
-      "sportsScience": "Limited — NAIA level.",
-      "sportsMed": "Athletic training staff. University of Missouri Health Care nearby.",
-      "academicLabs": "No dedicated exercise science labs. Healthcare Management / General Studies focus.",
-      "rating": "Solid"
-    }
+    "rec": "⚠ Columbia College MO is the best value-for-money soccer option in the guide at $27,556/yr — but the absence of an Exercise Science degree is a critical limitation for Olivier's DPT career goal. Best considered only if: (a) Olivier prioritises early minutes and soccer development over degree alignment, AND (b) he has a clear plan to complete DPT prerequisites via additional courses at Mizzou or summer programmes. The cost structure ($10k–18k with aid) makes it compelling as a fallback. Engage with Nathan Mason early — rebuilding coaches package more aggressively.",
+    "url": "https://cougarathletics.ccis.edu/sports/mens-soccer"
   },
   {
     "id": "northeast_cc",
@@ -7473,237 +7910,507 @@
     "loc": "Norfolk, NE",
     "region": "midwest",
     "div": "JUCO",
-    "conf": "NJCAA / Iowa Community College Athletic Conference (ICCAC)",
-    "confKey": "other",
+    "conf": "NJCAA Division II",
     "warm": false,
     "city": false,
     "top": false,
     "juco2yr": true,
-    "color": ["#fff7ed", "#c2410c"],
-    "profileDepth": "listed",
-    "degreeTitle": "A.A.S. — 2-year transfer pathway; general science curriculum",
-    "acuAlign": 3,
-    "acuAlignNote": "JUCO 2-year program — basic gen-ed science courses only. Use Northeast CC as a transfer platform to build GPA, establish US soccer profile, then transfer to a 4-year school with a full exercise science degree.",
-    "acuUnits": [
-      {"unit": "ANAT100", "covered": true},
-      {"unit": "EXSC222", "covered": false},
-      {"unit": "BIOL125", "covered": true},
-      {"unit": "EXSC225", "covered": false},
-      {"unit": "EXSC322", "covered": false},
-      {"unit": "EXSC394", "covered": false},
-      {"unit": "EXSC224", "covered": false},
-      {"unit": "EXSC321", "covered": false},
-      {"unit": "EXSC204", "covered": false},
-      {"unit": "EXSC216", "covered": false},
-      {"unit": "EXSC199", "covered": false},
-      {"unit": "EXSC296", "covered": false},
-      {"unit": "EXSC187", "covered": false},
-      {"unit": "EXSC230", "covered": false},
-      {"unit": "EXSC122", "covered": true},
-      {"unit": "EXSC398", "covered": false}
+    "profileDepth": "full",
+    "color": [
+      "#fee2e2",
+      "#991b1b"
     ],
-    "soccerLevel": "NJCAA D1 — ICCAC (Iowa Community College Athletic Conference)",
-    "cost": "~$13k/yr",
-    "aid": "Athletic grants + need-based",
-    "size": "3,000",
-    "prePT": "Transfer Pathway — 2yrs to build GPA then transfer to 4-year program with exercise science",
+    "mapX": 320,
+    "mapY": 168,
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "NJCAA DII",
+        "note": "Competing in NJCAA Division II — confirmed"
+      },
+      {
+        "yr": 2024,
+        "pos": "NJCAA DII",
+        "note": "NJCAA Division II"
+      },
+      {
+        "yr": 2023,
+        "pos": "NJCAA DII",
+        "note": "NJCAA Division II"
+      },
+      {
+        "yr": 2022,
+        "pos": "NJCAA DII",
+        "note": "NJCAA Division II"
+      },
+      {
+        "yr": 2021,
+        "pos": "N/A",
+        "note": "COVID season"
+      }
+    ],
+    "titles": [
+      "NJCAA Division II program — confirmed 2025–26",
+      "Near-100% international roster — Australian Isaac Jordaan (Fr·Def)",
+      "2-year transfer pathway to D1/D2/NAIA"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "JUCO transfer pathway — alumni at D1 and D2 programs",
+        "International pipeline: Denmark, Germany, England, Netherlands, Brazil, Japan and more"
+      ],
+      "draftRank": "N/A — JUCO pathway program"
+    },
+    "acRank": "Community College",
+    "kinRank": "Associate degree only — transfer prerequisite pathway",
+    "degreeTitle": "Associate of Arts / Associate of Science (Transfer)",
+    "acuAlign": 3,
+    "acuAlignNote": "Northeast CC is a 2-year community college. Limited science electives. Basic biology and anatomy courses qualify toward ACU prerequisites. Transferable credits must be WES-evaluated. Plan: complete bio/anatomy at Northeast CC then transfer into a 4-year Exercise Science degree.",
+    "soccerLevel": "JUCO — NJCAA Division II",
+    "cost": "~$18k/yr",
+    "aid": "Athletic",
+    "size": "3,200",
+    "prePT": "Transfer Pathway",
     "gpa": {
-      "minEntry": "No minimum — open entry",
-      "minSchol": "2.0+",
-      "note": "Open entry JUCO. Almost entirely international roster — highly welcoming to international athletes. Use 2 years to raise GPA to 3.0+ then transfer to target D1/D2 with exercise science degree.",
+      "minEntry": "2.0 NJCAA minimum",
+      "minSchol": "2.5+ recommended for athletic aid",
+      "note": "Olivier at 2.8 is strong for JUCO. GPA earned at Northeast CC is critical — aim for 3.3+ to maximise D1/D2 transfer options.",
       "status": "eligible"
     },
     "fin": {
-      "costNum": 13000,
+      "costNum": 17628,
       "tuition": 5130,
-      "roomBoard": 7500,
-      "fees": 370,
-      "maxAthletic": 1.0,
+      "roomBoard": 11354,
+      "fees": 1144,
+      "maxAthletic": 0.6,
       "maxAcademic": 3000,
-      "aidType": "athletic+need",
-      "internationalNote": "Out-of-state/international tuition $5,130/yr. On-campus room & board ~$7,500/yr. Lowest total cost in the guide. NJCAA athletic grants available."
+      "aidType": "athletic",
+      "internationalNote": "Out-of-state tuition rate ($5,130) is very affordable. Northeast CC has an established international soccer pipeline. Athletic scholarship can significantly reduce already-low costs. 2-year total investment: ~$35k before aid. Best financial model in the guide for a JUCO entry point."
     },
-    "confRecord": [
-      {"yr": 2025, "pos": "ICCAC", "note": "NJCAA D1 ICCAC conference play. Highly international roster under Coach Adam Potter."},
-      {"yr": 2024, "pos": "ICCAC", "note": "ICCAC conference play."}
-    ],
-    "titles": ["ICCAC regional competitor — NJCAA D1 pathway to national tournament"],
-    "proPlayers": {
-      "mlsPicks5yr": 0,
-      "notable": ["Transfer platform — Northeast CC graduates transfer to D1/D2 programs across the US and internationally"],
-      "draftRank": "JUCO transfer platform — no direct pro pipeline"
+    "culture": {
+      "vibe": "Northeast Community College is a commuter/residential JUCO in Norfolk, Nebraska — a small city (~25,000 people) in the northeast corner of the state. The soccer team is the social hub for the overwhelmingly international student body. You will be surrounded by players from Europe, South America, and beyond.",
+      "thingsToDo": "Elkhorn River Recreation Area (fishing, camping, kayaking), Ta-Ha-Zouka Park, Norfolk Country Club, Skyview Lake. Very rural Midwest — outdoor recreation is the dominant lifestyle. Omaha is 1.5hrs south for city weekends.",
+      "socialScene": "The international soccer team IS the social life here. Small-town Nebraska means the team travels together, trains together, and lives together. Strong bonds form quickly in this environment. Not for students who need urban stimulation.",
+      "olivierMatch": "★★ Norfolk NE is as far from Sydney as you can culturally get. However: the international environment is genuine, cost is minimal, and 2 years here + a D1/D2 transfer is a proven ladder. The Australian (Isaac Jordaan from Bridgewater) provides an existing connection.",
+      "lifestyleTags": "Rural, International squad, JUCO, Nebraska, Budget"
     },
-    "devScores": null,
-    "fitOlivier": 70,
-    "lensScores": {
-      "overall": 70,
-      "soccer": 6,
-      "academic": 12,
-      "pt": 12,
-      "lifestyle": 8,
-      "minutes": 58,
-      "value": 88
+    "facilityDetails": {
+      "stadium": "Northeast Community College Soccer Field — natural grass, standard JUCO facility. Functional and maintained.",
+      "trainingFields": "Adjacent practice pitch. Indoor gymnasium available for winter months — Nebraska winters require indoor flexibility.",
+      "strengthConditioning": "Athletic weight room shared across JUCO programs. Basic but functional setup for the level.",
+      "sportsScience": "Limited — JUCO level does not have dedicated sports science infrastructure. Coach Adam Potter manages athletic development within the program.",
+      "sportsMed": "Athletic Trainer on staff for JUCO programs. Norfolk Regional Health System available for medical referrals.",
+      "academicLabs": "Standard community college science labs. Biology, Chemistry, and Anatomy lab access supports pre-req completion. Limited compared to 4-year universities.",
+      "extras": "Being an Australian in rural Nebraska is unusual — Olivier would stand out immediately and likely be a local story. The team bond from shared international experience is genuinely strong based on roster composition.",
+      "rating": "Basic",
+      "note": "Northeast CC is evaluated as a stepping stone — not a destination. The value is the 2-year cost savings, immediate playing time, NJCAA DII competition level, and transfer pathway."
     },
     "coach": {
       "name": "Adam Potter",
       "title": "Head Coach",
       "email": "athletics@northeast.edu",
-      "phone": "",
-      "profile": "Adam Potter is the head men's soccer coach at Northeast Community College. The 2025-26 Hawks roster is almost entirely international — Denmark, Germany, Netherlands, Italy, Spain, England, Austria, Brazil, Japan, Ecuador, Iceland, Chile all represented. Australian connection on current roster: Isaac Jordaan (Bridgewater, Australia — defender, Freshman 2025)."
+      "phone": "402-844-7000",
+      "profile": "Adam Potter coaches the Northeast Community College Hawks (NJCAA Division II). He has built one of the most internationally diverse rosters in American junior college soccer — 29 players from Denmark, Germany, England, Netherlands, Italy, Austria, Brazil, Japan, Ecuador, Chile, Iceland, Spain, Canada, USA, and Australia. Australian Isaac Jordaan (Bridgewater, Fr·Defender) is on the current roster. Potter is experienced with international recruitment. Contact: athletics@northeast.edu or 402-844-7000. Ask specifically about midfielder openings for 2027 class and what transfer outcomes his athletes have achieved."
     },
-    "tags": [],
-    "facilities": [
-      "Northeast Community College Athletic Fields — Norfolk NE",
-      "NJCAA ICCAC standard",
-      "Small-town Nebraska setting"
+    "devScores": {
+      "tactical": 55,
+      "technical": 60,
+      "fitness": 55,
+      "ptPath": 25
+    },
+    "lensScores": {
+      "overall": 69,
+      "soccer": 55,
+      "academic": 20,
+      "minutes": 68,
+      "pt": 22,
+      "lifestyle": 15,
+      "value": 98
+    },
+    "fitOlivier": 69,
+    "tags": [
+      "soccer"
     ],
-    "courses": [],
-    "rec": "Northeast CC is a JUCO (NJCAA D1 ICCAC) in small-town Norfolk, Nebraska — the most affordable school in this guide at ~$13k/yr. The roster is almost entirely international (15+ countries in 2025-26) including Isaac Jordaan from Bridgewater, Australia. The JUCO pathway: 2 years building GPA and US soccer profile, then transfer to a 4-year school with a proper exercise science degree. Climate is cold Nebraska — not a lifestyle match. Best used as a Path D: ultra-low cost entry, establish academic GPA, prove yourself at NJCAA level, then step up to D1/D2 target programs in 2029.",
-    "url": "https://northeasthawks.com/sports/msoc",
-    "domain": "northeasthawks.com",
-    "mapX": 285,
-    "mapY": 142,
-    "minutesOutlook": {"available": false},
-    "culture": {
-      "vibe": "Rural Nebraska community college. Highly international soccer program — atmosphere feels closer to a European football academy than a US college campus. Norfolk NE is a small agricultural town of ~25,000.",
-      "olivierMatch": "★ Very cold, very small town, no city life. The value proposition is purely financial and transfer-focused. Strong international player community makes the experience more globally connected than the location suggests. Australian already on roster.",
-      "socialScene": "Small-town Nebraska — limited social scene. The soccer team is the social hub. Omaha 2.5hrs, Sioux City 1hr for city access.",
-      "thingsToDo": "Norfolk surroundings — limited. Omaha (2.5hrs), Sioux City (1hr). Cold winters, hot summers. International player community is the main draw.",
-      "lifestyleTags": "Cold, small town, ultra-affordable, very international roster, transfer platform, 🇦🇺 Australian on roster"
+    "facilities": [
+      "Northeast CC Soccer Field",
+      "Athletic Weight Room",
+      "Norfolk Regional Health System (medical)"
+    ],
+    "courses": [
+      "BIOL 1010 — General Biology",
+      "ANAT 2010 — Human Anatomy & Physiology I",
+      "ANAT 2020 — Human Anatomy & Physiology II",
+      "HLTH 1010 — Introduction to Health",
+      "PE 1000 — Fitness & Wellness"
+    ],
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "100% of current roster clears before Olivier arrives (JUCO 2yr rule)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectoryNote": "JUCO 2-year program — entire current roster completes before Olivier's August 2027 start. Zero overlap. Competition is solely determined by the 2026 recruiting class Coach Potter signs. With near-100% international roster composition, Olivier would fit the squad culture immediately.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 35,
+          "label": "Compete for immediate starts — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 60,
+          "label": "Established player — transfer showcase year"
+        }
+      ]
     },
-    "facilityDetails": {
-      "stadium": "Northeast CC Athletic Fields — Norfolk NE. NJCAA standard.",
-      "trainingFields": "Campus training fields. Cold Nebraska winters limit outdoor season.",
-      "strengthConditioning": "JUCO standard S&C access.",
-      "sportsScience": "Basic — JUCO level.",
-      "sportsMed": "Athletic trainer on staff. Regional medical access in Norfolk.",
-      "academicLabs": "Basic science labs. Associate degree transfer curriculum.",
-      "rating": "Solid"
-    }
+    "rec": "Northeast CC is the budget entry point into US college soccer. NJCAA Division II in Norfolk NE is rural and cold, but the cost ($17,628/yr before aid) and 100% international squad culture make it genuinely accessible. Isaac Jordaan (Australian, Bridgewater) is the existing connection. The degree is Associate-level only — this is a 2yr + transfer play. Best for: Olivier prioritises minimal financial risk for Year 1–2 while building a US soccer profile before transferring to a 4-year program with Exercise Science.",
+    "url": "https://athletics.northeast.edu/sports/mens-soccer",
+    "australians": [
+      {
+        "name": "Isaac Jordaan",
+        "from": "Bridgewater, Australia",
+        "pos": "Defender",
+        "year": "Freshman (2025–26) — will have departed before Olivier arrives"
+      }
+    ]
   },
   {
     "id": "monroe_college",
-    "name": "Monroe College",
-    "full": "Monroe University — Mustangs (New Rochelle)",
+    "name": "Monroe",
+    "full": "Monroe University (Mustangs)",
     "loc": "New Rochelle, NY",
     "region": "east",
     "div": "JUCO",
-    "conf": "NJCAA Region 15 — Division I",
-    "confKey": "other",
+    "conf": "NJCAA Division I",
     "warm": false,
     "city": true,
     "top": false,
     "juco2yr": true,
-    "color": ["#fef3c7", "#b45309"],
-    "profileDepth": "listed",
-    "degreeTitle": "A.S. / A.A.S. — 2-year NJCAA pathway (Monroe also offers 4-year degrees but athletes compete as JUCO)",
-    "acuAlign": 3,
-    "acuAlignNote": "NJCAA athletics program (JUCO classification) despite Monroe University offering 4-year bachelor's degrees. The 2-year associate pathway is the primary transfer route for soccer players. Very low ACU alignment — use Monroe as a 2-year platform then transfer to a 4-year program with full exercise science.",
-    "acuUnits": [
-      {"unit": "ANAT100", "covered": true},
-      {"unit": "EXSC222", "covered": false},
-      {"unit": "BIOL125", "covered": true},
-      {"unit": "EXSC225", "covered": false},
-      {"unit": "EXSC322", "covered": false},
-      {"unit": "EXSC394", "covered": false},
-      {"unit": "EXSC224", "covered": false},
-      {"unit": "EXSC321", "covered": false},
-      {"unit": "EXSC204", "covered": false},
-      {"unit": "EXSC216", "covered": false},
-      {"unit": "EXSC199", "covered": false},
-      {"unit": "EXSC296", "covered": false},
-      {"unit": "EXSC187", "covered": false},
-      {"unit": "EXSC230", "covered": false},
-      {"unit": "EXSC122", "covered": true},
-      {"unit": "EXSC398", "covered": false}
+    "profileDepth": "full",
+    "color": [
+      "#e0e7ff",
+      "#4338ca"
     ],
-    "soccerLevel": "NJCAA D1 — 3× National Champions (2021, 2022, 2023) — premier JUCO program in the US",
-    "cost": "~$22k/yr",
-    "aid": "Athletic grants + institutional",
-    "size": "4,000",
-    "prePT": "Transfer Pathway — NJCAA platform to 4-year programs; NYC clinical network accessible",
+    "mapX": 540,
+    "mapY": 148,
+    "confRecord": [
+      {
+        "yr": 2024,
+        "pos": "Runner-up",
+        "note": "Attempted three-peat — entered as defending champion, lost in 2024 final"
+      },
+      {
+        "yr": 2023,
+        "pos": "NJCAA DI Champion",
+        "note": "2023 NJCAA DI National Championship — second consecutive title"
+      },
+      {
+        "yr": 2022,
+        "pos": "NJCAA DI Champion",
+        "note": "2022 NJCAA DI National Championship — back-to-back titles"
+      },
+      {
+        "yr": 2021,
+        "pos": "NJCAA DI Champion",
+        "note": "2021 NJCAA DI National Championship — dynasty begins"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID season"
+      }
+    ],
+    "titles": [
+      "3× NJCAA Division I National Champions (2021, 2022, 2023)",
+      "2024: Runner-up — attempted historic three-peat as defending champions",
+      "NJCAA's most dominant JUCO men's soccer program nationally",
+      "🇦🇺 Sebastian Sayers (Hillarys WA) + Edward Mackle (Perth WA) on roster"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Monroe alumni have signed with USL Championship, USL League One, and MLS Next Pro clubs",
+        "NYC metro pipeline — proximity to NYCFC, NY Red Bulls, and international academies",
+        "3× national champions produce USL/professional-calibre graduates"
+      ],
+      "draftRank": "JUCO level — USL/USL League Two pathway"
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Associate degree only — transfer prerequisite pathway",
+    "degreeTitle": "Associate of Applied Science / Associate of Arts (Transfer)",
+    "acuAlign": 3,
+    "acuAlignNote": "Monroe is a 2-year institution. Basic biology and science prerequisites can be completed here. Transfer into a 4-year Exercise Science program is the degree pathway. WES evaluation of Monroe credits is required for ACU alignment calculation.",
+    "soccerLevel": "JUCO — NJCAA Division I (3× National Champions)",
+    "cost": "~$36k/yr",
+    "aid": "Athletic",
+    "size": "7,000",
+    "prePT": "Transfer Pathway",
     "gpa": {
-      "minEntry": "No minimum — open entry",
-      "minSchol": "2.0+",
-      "note": "Open entry NJCAA. 90% of students receive financial aid. Very international roster — welcoming of international athletes. NYC metro location adds cultural richness and transfer connections.",
+      "minEntry": "2.0 NJCAA minimum",
+      "minSchol": "2.5+ for athletic aid consideration",
+      "note": "Olivier at 2.8 is above threshold. Monroe's championship pedigree means they are selective — athletic quality is the primary filter, not GPA.",
       "status": "eligible"
     },
     "fin": {
-      "costNum": 22000,
-      "tuition": 13000,
-      "roomBoard": 8500,
-      "fees": 500,
-      "maxAthletic": 1.0,
+      "costNum": 35564,
+      "tuition": 19022,
+      "roomBoard": 16900,
+      "fees": 642,
+      "maxAthletic": 0.65,
       "maxAcademic": 5000,
-      "aidType": "athletic+institutional",
-      "internationalNote": "Monroe University emphasises affordability. 90% of students receive financial aid. Athletic scholarships available through NJCAA framework. NYC metro adds some living costs but also part-time employment opportunities."
+      "aidType": "athletic",
+      "internationalNote": "74% of Monroe students receive financial aid, average package $11,830. Athletic scholarship for soccer can be substantial given the program's national standing. New Rochelle/NYC metro location means higher cost of living than rural JUCO options. 2-year total before aid: ~$71k. After a realistic athletic package: potentially $35–45k total for 2 years."
     },
-    "confRecord": [
-      {"yr": 2023, "pos": "NJCAA D1 National Champions", "note": "3rd consecutive national championship. 2021, 2022, 2023 — dominant dynasty."},
-      {"yr": 2022, "pos": "NJCAA D1 National Champions", "note": "Back-to-back champions. Program at peak national profile."},
-      {"yr": 2021, "pos": "NJCAA D1 National Champions", "note": "First of three consecutive national titles under Monroe's dominant era."}
-    ],
-    "titles": [
-      "2021 NJCAA D1 Men's Soccer National Champions",
-      "2022 NJCAA D1 Men's Soccer National Champions",
-      "2023 NJCAA D1 Men's Soccer National Champions",
-      "Considered the premier NJCAA men's soccer program in the United States"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 0,
-      "notable": [
-        "Strong transfer pipeline — Monroe graduates transfer to D1 NCAA programs annually",
-        "NYC-area USL and NPSL connections for semi-pro pathway",
-        "National champion pedigree is a strong credential for NCAA D1/D2 transfer"
-      ],
-      "draftRank": "NJCAA — premier transfer platform. National championship resume opens D1/D2 transfer doors."
+    "culture": {
+      "vibe": "Monroe is a private career-focused university in New Rochelle — a city of 80,000 in Westchester County, 30 minutes from Manhattan by Metro-North. NYC culture is genuinely accessible on weekends. The men's soccer program is the crown jewel of Monroe athletics — 3× national champions give it an identity and swagger that few JUCO programs match.",
+      "thingsToDo": "Manhattan (30 min Metro-North), NYC cultural institutions, Hudson River waterfront, Bronx Zoo, Yankee Stadium, Pelham Bay Park, Long Island Sound beaches. Westchester County has genuine outdoor recreation alongside NYC proximity.",
+      "socialScene": "Monroe is urban and cosmopolitan for a JUCO. International student body is large (students from 100+ countries). Soccer players are campus celebrities given the national championship profile. NYC accessibility means off-campus social life is outstanding.",
+      "olivierMatch": "★★★★ Best lifestyle match for a Sydney-raised student-athlete. NYC metro = large multicultural city, surf/beach accessible (Long Island/NJ Shore), warm-ish summers. The Australians (Sayers from Hillarys WA, Mackle from Perth WA) are the direct connection. This is the closest thing to a Sydney vibe available in the JUCO pathway.",
+      "lifestyleTags": "NYC metro, Urban, International, Champions culture"
     },
-    "devScores": null,
-    "fitOlivier": 71,
-    "lensScores": {
-      "overall": 71,
-      "soccer": 42,
-      "academic": 12,
-      "pt": 12,
-      "lifestyle": 38,
-      "minutes": 55,
-      "value": 80
+    "facilityDetails": {
+      "stadium": "Monroe University Athletic Complex — men's soccer plays at Iona University's Mazzella Field (shared arrangement). Championship-quality surface and atmosphere for a JUCO program.",
+      "trainingFields": "Access to multiple Westchester County and New Rochelle training fields. Indoor training options available for weather. Championship program demands quality training environments.",
+      "strengthConditioning": "Monroe Athletic Center — upgraded weight room reflecting the program's national standing. Championship programs invest in S&C infrastructure.",
+      "sportsScience": "Limited formal sports science at JUCO level — but the championship coaching staff (Marcus DiBernardo, Jay Myers, Dario Villafana, Massimo Gargiulo) provides high-level tactical and physical development.",
+      "sportsMed": "Kimberly Mata (AT) — kmata@monroeu.edu, 914-740-6790. Dedicated Athletic Trainer for the soccer program. Local Westchester medical network for specialist referrals.",
+      "academicLabs": "Monroe College offers Associate programs in business, healthcare, and IT. Biology and anatomy prerequisites available. Transfer pathway to 4-year Exercise Science program is the DPT route.",
+      "extras": "The championship culture is real — players from Monroe's national title teams have gone on to professional contracts. NYC accessibility (30 min by train) is unmatched at JUCO level. Proximity to NYCFC and NY Red Bulls for watching professional soccer.",
+      "rating": "Good",
+      "note": "Monroe's value proposition is the championship soccer development environment + NYC metro lifestyle + Australian connection. Academic facilities are JUCO-level — plan the transfer to a 4-year program carefully."
     },
     "coach": {
       "name": "Marcus DiBernardo",
-      "title": "Head Coach — Mustangs (New Rochelle campus)",
+      "title": "Head Coach",
       "email": "mdibernardo@monroeu.edu",
       "phone": "914-740-6898",
-      "profile": "Marcus DiBernardo is head coach of the Monroe Mustangs at the New Rochelle campus — the national championship program. The 2025-26 roster is almost entirely international: Australia, Brazil, Japan, France, Korea, Scotland, Spain, England, Italy, Poland all represented. 🇦🇺 Two Australians on the 2025 roster: Edward Mackle (Perth WA — midfielder) and Sebastian Sayers (Hillarys WA — forward). Assistant coaches: Jay Myers (jmyers@monroeu.edu), Dario Villafana — Recruiting Coordinator (dvillafana@monroeu.edu), Massimo Gargiulo (mgargiulo@monroeu.edu). Note: a separate Bronx campus program (Monroe Express, Coach Jose Hernandez) also exists — this entry covers the Mustangs (New Rochelle) only."
+      "profile": "Marcus DiBernardo is the architect of Monroe's dynasty — 3× NJCAA Division I National Championships (2021, 2022, 2023) with the Mustangs. Staff: Jay Myers (Assistant), Dario Villafana (Recruiting Coordinator), Massimo Gargiulo (Assistant), Matvey Pierrot (Student Assistant). Athletic Trainer: Kimberly Mata (kmata@monroeu.edu, 914-740-6790). Current Australians: Sebastian Sayers (Hillarys WA, So.) and Edward Mackle (Perth WA, Fr.). First contact: mdibernardo@monroeu.edu or 914-740-6898. Dario Villafana coordinates international recruitment."
     },
-    "tags": ["city"],
-    "facilities": [
-      "Monroe University Athletic Facilities — New Rochelle NY",
-      "NYC metro area — 30 minutes to Manhattan",
-      "NJCAA D1 national champion program"
+    "devScores": {
+      "tactical": 72,
+      "technical": 75,
+      "fitness": 70,
+      "ptPath": 35
+    },
+    "lensScores": {
+      "overall": 66,
+      "soccer": 72,
+      "academic": 22,
+      "minutes": 58,
+      "pt": 30,
+      "lifestyle": 88,
+      "value": 65
+    },
+    "fitOlivier": 66,
+    "tags": [
+      "soccer",
+      "city"
     ],
-    "courses": [],
-    "rec": "Monroe College Mustangs (New Rochelle) is the most prestigious NJCAA D1 men's soccer program in the US — 3 consecutive national championships (2021-2023). Two Australians on the 2025 roster. New Rochelle is 30 minutes from Manhattan by train — NYC metro lifestyle. The JUCO pathway: 2 years at NJCAA elite level, national champion resume, then transfer to a 4-year NCAA D1/D2 program. Very affordable at ~$22k/yr. Weakness: no exercise science degree for ACU alignment. Best as a Path D option for Olivier if D1 applications haven't landed — NJCAA national champion is a strong transfer credential that opens D1 doors.",
-    "url": "https://www.monroeumustangs.com/sports/mens-soccer",
-    "domain": "monroeumustangs.com",
-    "mapX": 558,
-    "mapY": 132,
-    "minutesOutlook": {"available": false},
-    "culture": {
-      "vibe": "Monroe University is a diverse, urban-connected institution. The Mustangs program has a winning culture built on international recruitment — rosters represent 15+ countries. New Rochelle is a suburban NYC city with full metro train access.",
-      "olivierMatch": "★★★ NYC metro location is the most city-connected JUCO in the guide. New Rochelle is 30 minutes to Manhattan by Metro-North train. Two Australians already on roster. 3× national champions = winning culture and strong name for NCAA D1/D2 transfer. Not warm but city lifestyle compensates significantly.",
-      "socialScene": "New Rochelle — suburban NYC. 30 minutes to Manhattan by Metro-North. Westchester County parks, Pelham Bay, Long Island Sound access. NYC sports and culture on your doorstep.",
-      "thingsToDo": "New York City (30 min by train), Westchester County parks, NYC cultural scene, NYCFC and RBNY games, Yankee Stadium (45 min). Cold NY winters.",
-      "lifestyleTags": "NYC metro, city, international roster, NJCAA 3× national champions, cold, transfer platform, 🇦🇺 Two Australians on roster"
+    "facilities": [
+      "Monroe Athletic Center",
+      "Iona University Mazzella Field (home matches)",
+      "Westchester County training facilities"
+    ],
+    "courses": [
+      "BIO 1010 — Introduction to Biology",
+      "BIO 1020 — Anatomy & Physiology I",
+      "BIO 1030 — Anatomy & Physiology II",
+      "HLT 1010 — Introduction to Health Sciences",
+      "PE 1000 — Physical Education & Fitness"
+    ],
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 11,
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Carlos Furutani (So·M — departing)",
+        "Karim Bello (So·M — departing)",
+        "Takahiro Ishida (So·M — departing)",
+        "Felipe Vidigal (So·M — departing)",
+        "Salim Ibrahim (So·M — departing)",
+        "Giovani Palomera Herrera (So·M — departing)",
+        "Rodrigo Ribeiro (So·M — departing)",
+        "Additional So/Sr departures"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Current Fr MFs → sophomores by 2027"
+      ],
+      "recruit_risk": "Medium",
+      "trajectoryNote": "JUCO 2-year program — massive midfield turnover with 7+ sophomores departing after 2025–26. Olivier enters in August 2027 into a squad that DiBernardo will restock entirely. The championship pedigree means DiBernardo recruits elite JUCO talent — Olivier competes against the best international JUCO MFs in the country. A Yr 1 starting role requires Olivier to be near the top of his recruiting class. Yr 2 is the showcase year for D1/D2 transfer.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 32,
+          "label": "Competing in elite JUCO environment"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Established — transfer showcase year"
+        }
+      ]
     },
-    "facilityDetails": {
-      "stadium": "Monroe University Athletic Facilities — New Rochelle campus. NJCAA D1 standard.",
-      "trainingFields": "Training facilities at New Rochelle campus. NYC metro access for additional venues.",
-      "strengthConditioning": "Well-resourced for NJCAA national champion program. Better than typical JUCO.",
-      "sportsScience": "Above JUCO average — national champion program investment in player development.",
-      "sportsMed": "Athletic training staff. Westchester Medical Center nearby for advanced care.",
-      "academicLabs": "Basic — associate degree transfer focus. NYC clinical network accessible independently.",
-      "rating": "Solid"
-    }
+    "rec": "Monroe is the premium JUCO option — 3× NJCAA DI National Champions with a genuine NYC metro lifestyle and two Australians already on roster (Sebastian Sayers, Hillarys WA; Edward Mackle, Perth WA). Marcus DiBernardo has built a championship culture that develops players for professional and D1 transfer pathways. The cost ($35,564/yr) is the highest of the JUCO options — meaningful athletic aid is needed. Degree is Associate-level only — plan the 4yr Exercise Science transfer carefully for the DPT pathway. Best choice if Olivier wants the highest-level JUCO soccer + city lifestyle in a 2-year stepping stone.",
+    "url": "https://monroemustangs.com/sports/mens-soccer",
+    "australians": [
+      {
+        "name": "Sebastian Sayers",
+        "from": "Hillarys, WA",
+        "pos": "Midfielder",
+        "year": "Sophomore (2025–26)"
+      },
+      {
+        "name": "Edward Mackle",
+        "from": "Perth, WA",
+        "pos": "Midfielder",
+        "year": "Freshman (2025–26)"
+      }
+    ]
   }
 ]

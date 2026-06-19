@@ -1197,7 +1197,11 @@ function setScoreMode(mode) {
   );
   recalculateAllScores(athleteConfig, currentAtarGpa);
   updateAtarCounts();
-  applySort(currentSort || 'fit');
+  if (currentLens && currentLens !== 'overall') {
+    applyLens(currentLens);
+  } else {
+    applySort(currentSort || 'fit');
+  }
 }
 
 function onAtarSlide() {

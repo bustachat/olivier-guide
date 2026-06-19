@@ -175,11 +175,10 @@ function toggleDivSection(btn){
 
 // ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
-  {key:'overall',   label:'Best Overall',     desc:"Olivier's existing fit score (climate, lifestyle, exercise science, soccer level, PT pathway combined)."},
+  {key:'overall',   label:'Best Overall',     desc:"Olivier's overall fit score — soccer level, ACU degree alignment, cost, minutes outlook, climate, and city lifestyle combined."},
   {key:'soccer',    label:'Soccer-First',     desc:'Weights development scores (60%), titles & MLS pipeline (30%), and division strength (10%).'},
   {key:'academic',  label:'Academic-First',   desc:'Weights ACU BESS unit alignment (85%) plus a baseline. UF tops this list but cannot be played at — flagged accordingly.'},
   {key:'minutes',   label:'Minutes Outlook',  desc:'2027-entry roster opportunity. Higher = more midfielder slots opening up before Olivier arrives.'},
-  {key:'pt',        label:'PT Pathway',       desc:'Pre-PT degree quality (50%), ACU alignment (30%), clinical/PT-specific dev score (20%).'},
   {key:'lifestyle', label:'Lifestyle-First',  desc:'Climate (warm), city access, and cultural match for Sydney-raised Olivier.'},
   {key:'value',     label:'Value-First',      desc:'Fit score per dollar of cost. Best fit-to-cost ratio.'},
 ];

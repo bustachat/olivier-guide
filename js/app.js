@@ -1048,7 +1048,7 @@ function buildDetailBody(u){
       <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
           <div style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}">${u.fitOlivier}%</div>
-          <p style="font-size:13px;color:var(--muted)">Combines climate, city lifestyle, exercise science quality, soccer level, pro pathway, and PT/Chiro pathway.</p>
+          <p style="font-size:13px;color:var(--muted)">${u.rec||'Overall fit score based on soccer level, minutes outlook, cost, ACU alignment, climate, and city lifestyle.'}</p>
         </div>
       </div>
     </div>

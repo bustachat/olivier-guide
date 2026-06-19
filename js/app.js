@@ -242,17 +242,19 @@ let currentSort = 'fit';
 
 function applySort(key){
   currentSort = key;
-  // Sort pills and lens are mutually exclusive — reset lens to overall
-  if (currentLens && currentLens !== 'overall') {
-    currentLens = 'overall';
-    document.querySelectorAll('.lens-pill').forEach(b=>
-      b.classList.toggle('active', b.dataset.lens==='overall')
-    );
-  }
   document.querySelectorAll('.sort-pill').forEach(p=>
     p.classList.toggle('active', p.dataset.sort===key)
   );
-  const sortFn = SORT_OPTIONS.find(s=>s.key===key).fn;
+  // Best Fit sort is lens-aware: when a lens is active sort by lens score
+  const lensAwareFit = (a, b) => {
+    if (currentLens && currentLens !== 'overall') {
+      const sa = (a.lensScores?.[currentLens]) || 0;
+      const sb = (b.lensScores?.[currentLens]) || 0;
+      if (sb !== sa) return sb - sa;
+    }
+    return (b.fitOlivier || 0) - (a.fitOlivier || 0);
+  };
+  const sortFn = key === 'fit' ? lensAwareFit : SORT_OPTIONS.find(s=>s.key===key).fn;
   document.querySelectorAll('.cards-grid').forEach(grid=>{
     const cards = [...grid.children];
     cards.sort((a,b)=>{
@@ -293,40 +295,20 @@ function currentLensExplainer(){
 
 function applyLens(lensKey){
   currentLens = lensKey;
-  // Lens and sort pills are mutually exclusive — reset sort to Best Fit
-  if (lensKey !== 'overall') {
-    currentSort = 'fit';
-    document.querySelectorAll('.sort-pill').forEach(p=>
-      p.classList.toggle('active', p.dataset.sort==='fit')
-    );
-  }
   // Update active lens pill
   document.querySelectorAll('.lens-pill').forEach(b=>{
     b.classList.toggle('active', b.dataset.lens===lensKey);
   });
-  // Update explainer — removed in v20.1, lens desc now in tooltip only
-  
-  // Per-division ranking — get top 3 IDs per division
+  // Re-sort cards using the now-updated lens (Best Fit is lens-aware)
+  applySort(currentSort);
+
+  // Per-division ranking — get top 3 IDs per division for badge highlights
   const byDiv = lensRankByDivision(lensKey);
   const top3IdsByDiv = {};
   Object.keys(byDiv).forEach(div=>{
     top3IdsByDiv[div] = byDiv[div].map(u=>u.id);
   });
-  
-  // Re-rank cards within each grid section (each section is one division)
-  document.querySelectorAll('.cards-grid').forEach(grid=>{
-    const cards = [...grid.children];
-    cards.sort((a,b)=>{
-      const ua = unis.find(x=>x.id===a.id.replace('card-',''));
-      const ub = unis.find(x=>x.id===b.id.replace('card-',''));
-      const sa = (ua && ua.lensScores && ua.lensScores[lensKey]) || 0;
-      const sb = (ub && ub.lensScores && ub.lensScores[lensKey]) || 0;
-      if(sb !== sa) return sb - sa;
-      return ((ub && ub.fitOlivier) || 0) - ((ua && ua.fitOlivier) || 0);
-    });
-    cards.forEach(c=>grid.appendChild(c));
-  });
-  
+
   // Highlight top 3 within each division
   document.querySelectorAll('.ucard').forEach(card=>{
     const id = card.id.replace('card-','');
@@ -1211,11 +1193,7 @@ function setScoreMode(mode) {
   );
   recalculateAllScores(athleteConfig, currentAtarGpa);
   updateAtarCounts();
-  if (currentLens && currentLens !== 'overall') {
-    applyLens(currentLens);
-  } else {
-    applySort(currentSort || 'fit');
-  }
+  applySort(currentSort || 'fit');
 }
 
 function onAtarSlide() {

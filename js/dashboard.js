@@ -32,6 +32,7 @@ const CONF_META = {
   'wac':          { label:'WAC',          tier:'Mid-Maj',tierCls:'bhi' },
   'wcc':          { label:'WCC',          tier:'Mid-Maj',tierCls:'bhi' },
   'america-east': { label:'Am. East',     tier:'Mid-Maj',tierCls:'bhi' },
+  'nec':          { label:'NEC',          tier:'Mid-Maj',tierCls:'bhi' },
   'other':        { label:'D2/NAIA',      tier:'D2',     tierCls:'bd2' },
 };
 

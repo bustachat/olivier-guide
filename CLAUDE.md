@@ -285,25 +285,204 @@ All v21 work is committed and live at bustachat.github.io/olivier-guide as of Ma
 
 ---
 
-## 7. New School Checklist
+## 6b. v22 — Planned Work
+
+### v22.0 — New Schools (5 schools)
+**Status: In progress**
+
+5 new schools being added, all as `profileDepth: "listed"`:
+
+| School | ID | Div | Conference | confKey |
+|---|---|---|---|---|
+| Mercyhurst University (Erie PA) | `mercyhurst` | D1 | NEC (new) | `nec` |
+| Georgian Court University (Lakewood NJ) | `georgian_court` | D2 | CACC | `other` |
+| Columbia College (Columbia SC) | `columbia_college` | NAIA | USA South | `other` |
+| Northeast Community College (Norfolk NE) | `northeast_cc` | JUCO | NJCAA/ICCAC | `other` |
+| Monroe College (Bronx/New Rochelle NY) | `monroe_college` | JUCO | NJCAA | `other` |
+
+**NEC is a new conference in the guide — requires 3-place registration:**
+1. Add `nec` entry to `CONF_SECTIONS` in `js/app.js`
+2. Add `nec` entry to `CONF_META` in `js/dashboard.js`
+3. Add NEC card to `data/conferences.json`
+
+**Files changed in v22.0:**
+- `data/other.json` — 5 new school objects
+- `js/app.js` — CONF_SECTIONS (NEC), DOMAINS, SITE_URLS, SOCIAL, APP_VERSION → 'v22'
+- `js/dashboard.js` — CONF_META (NEC)
+- `data/conferences.json` — NEC card
+- `data/coaches.json` — 5 new coach entries
+- `athletes/olivier.json` — guideVersion "v21" → "v22"
+
+---
+
+## 7. Adding New Schools — Complete Guide
+
+### 7a. The 6 Files That Always Change
+
+Every new school requires changes across **6 files minimum**. There are no exceptions.
+
+| File | What to add |
+|---|---|
+| `data/other.json` (or relevant conf JSON) | School object (full or listed schema) |
+| `js/app.js` | Entry in DOMAINS, SITE_URLS, SOCIAL; possibly new CONF_SECTIONS entry |
+| `js/dashboard.js` | Entry in CONF_META if the school's conference is new |
+| `data/conferences.json` | New conference card if the conference is new to the guide |
+| `data/coaches.json` | Coach entry (required even for listed schools) |
+| `athletes/olivier.json` | Bump `guideVersion` (e.g. "v21" → "v22") |
+
+### 7b. Conference Registry — The 3-Place Rule
+
+**Every D1 school's conference must be registered in 3 independent places.**
+Missing any one of them causes a silent failure (no error, just missing UI behaviour).
+
+| Place | File | Purpose |
+|---|---|---|
+| `CONF_SECTIONS` array | `js/app.js` ~line 401 | Groups school cards under a conference heading on Explore page |
+| `CONF_META` object | `js/dashboard.js` ~line 22 | Powers the conference strip on the Dashboard |
+| Conference array | `data/conferences.json` | Drives the Conferences tab card |
+
+**D2, NAIA, JUCO schools do NOT need new CONF_SECTIONS or CONF_META entries.** They fall into existing divFilter buckets:
+
+| Division | confKey in school object | divFilter in CONF_SECTIONS |
+|---|---|---|
+| D2 | `"other"` | `"D2"` |
+| NAIA | `"other"` | `"NAIA"` |
+| D3 or JUCO | `"other"` | `"D3JUCO"` |
+| Ivy League D1 | `"other"` | `"IVY"` |
+
+A new D1 school whose conference is already in the guide (e.g. ACC, AAC) only needs the school object added to the correct JSON file — CONF_SECTIONS and CONF_META already cover that conference.
+
+**Only add a new CONF_SECTIONS + CONF_META + conferences.json entry when the school's conference has never appeared in the guide before** (e.g. NEC was new in v22 for Mercyhurst).
+
+### 7c. CONF_META Entry Format (dashboard.js)
+
+```js
+// Inside the CONF_META = { ... } object:
+'nec': { 'label': 'NEC', 'tier': 'Mid-Maj', 'tierCls': 'bhi' },
+```
+
+Tier class values: `'bp5'` (Power 4), `'bhi'` (High/Mid-Major), `'bd2'` (D2/NAIA)
+
+### 7d. CONF_SECTIONS Entry Format (app.js)
+
+```js
+// Add inside the CONF_SECTIONS = [ ... ] array:
+{key:'nec', label:'NEC — Northeast Conference', tier:'Mid-Major · D1', intro:'...'},
+```
+
+`key` must exactly match the school object's `confKey` field.
+
+### 7e. Listed-Profile vs Full-Profile Rules
+
+**Listed profile** (`profileDepth: "listed"`):
+- `devScores` must be `null` (not `{}`, not `{tactical:0,...}` — null)
+- `minutesOutlook` must be `{ "available": false }`
+- `lensScores` not required
+- `facilityDetails` and `culture` not required
+- `acuUnits[]` still required — 16 entries in order
+- `fin.costNum` still required — feeds the 20% Cost factor in Fit Score
+
+**JUCO 2-year schools** need: `"juco2yr": true` — Financial Model renders a 2-year block instead of 4-year.
+
+### 7f. Where Each School Type Lives
+
+| School type | JSON file |
+|---|---|
+| ACC schools | `data/acc.json` |
+| Big Ten | `data/big-ten.json` |
+| Big East | `data/big-east.json` |
+| AAC | `data/aac.json` |
+| Big West | `data/big-west.json` |
+| CAA | `data/caa.json` |
+| **Everything else** (D2, NAIA, JUCO, NEC, WAC, MAC, WCC, America East, SEC, IVY) | `data/other.json` |
+
+### 7g. Map Coordinate Reference (640×390 SVG)
+
+The US map SVG uses a 640×390 coordinate space. Approximate regional anchors:
+
+| Location | mapX | mapY |
+|---|---|---|
+| Los Angeles / Santa Monica | 70 | 260 |
+| San Francisco / Bay Area | 60 | 210 |
+| Santa Barbara | 75 | 255 |
+| Phoenix AZ | 130 | 270 |
+| Denver CO | 230 | 220 |
+| Dallas/Fort Worth | 310 | 295 |
+| Austin TX | 305 | 315 |
+| Chicago IL | 430 | 155 |
+| Council Bluffs / Omaha NE | 320 | 160 |
+| Norfolk NE | 295 | 145 |
+| Indianapolis IN | 455 | 170 |
+| Columbus OH | 490 | 165 |
+| Akron OH | 500 | 155 |
+| Erie PA | 505 | 140 |
+| Pittsburgh PA | 510 | 155 |
+| Princeton / Trenton NJ | 555 | 150 |
+| Lakewood NJ | 555 | 148 |
+| New York / Bronx / New Rochelle | 560 | 138 |
+| New Haven CT | 565 | 140 |
+| Burlington VT | 568 | 100 |
+| Washington DC / Georgetown | 540 | 175 |
+| Baltimore MD | 545 | 170 |
+| Charlotte NC | 515 | 215 |
+| Charleston SC | 525 | 235 |
+| Columbia SC | 515 | 230 |
+| Atlanta GA | 495 | 265 |
+| Conway / Little Rock AR | 390 | 270 |
+| Oklahoma City OK | 340 | 270 |
+| Tampa FL (USF) | 510 | 320 |
+| Boca Raton FL (FAU/Lynn) | 545 | 345 |
+| Fort Lauderdale FL (Nova/Keiser) | 545 | 348 |
+| Miami FL (Barry) | 545 | 355 |
+| West Palm Beach FL (PBA) | 545 | 340 |
+| Fort Worth TX (TCU) | 310 | 295 |
+
+**Always verify map dots land on landmass after adding a school.** Open Dashboard in browser, check dot position before committing.
+
+### 7h. New School Checklist
 
 Run every item before committing any new school.
 
-- [ ] Identify correct conference JSON file from the map in Section 2
-- [ ] Add school object with all required fields (Section 5 — full or listed schema)
-- [ ] `acuUnits[]` has exactly 16 entries — one per unit code in the correct order
-- [ ] `devScores` is `null` if `profileDepth: "listed"`
-- [ ] `minutesOutlook: { "available": false }` if roster data not yet collected
+**School object:**
+- [ ] Add school object to the correct JSON file (Section 7f)
+- [ ] All required fields present (Section 5 — full or listed schema)
+- [ ] `acuUnits[]` has exactly 16 entries in the correct order (Section 5)
+- [ ] `devScores: null` if `profileDepth: "listed"` (never zeros)
+- [ ] `minutesOutlook: { "available": false }` if roster data not collected
+- [ ] `juco2yr: true` if the school is a 2-year junior college
+- [ ] `fin.costNum` set — required even for listed schools (feeds Fit Score)
 - [ ] `facilityDetails.rating` populated if `profileDepth: "full"`
 - [ ] `culture{}` populated if `profileDepth: "full"`
-- [ ] Add school ID to `DOMAINS` in app.js
-- [ ] Add school ID to `SITE_URLS` in app.js
-- [ ] Add school ID to `SOCIAL` in app.js
-- [ ] `confKey` matches an existing key in `CONF_SECTIONS` in app.js
-- [ ] `mapX` / `mapY` calculated for the v20 640×390 coordinate system
-- [ ] Validate JSON: `python -m json.tool data/[file].json`
-- [ ] Verify map dot lands on correct landmass on Dashboard after deploy
-- [ ] If school has a coach, add entry to `coaches.json` in addition to school's `coach{}` object
+- [ ] `mapX` / `mapY` set using the coordinate reference above (Section 7g)
+
+**app.js (3 additions):**
+- [ ] Add school ID to `DOMAINS`
+- [ ] Add school ID to `SITE_URLS`
+- [ ] Add school ID to `SOCIAL` (nulls acceptable if social URLs unknown)
+- [ ] If new D1 conference: add entry to `CONF_SECTIONS` array
+- [ ] If confKey is new: verify it matches the school object's `confKey` field exactly
+
+**dashboard.js:**
+- [ ] If new D1 conference: add entry to `CONF_META` object
+
+**conferences.json:**
+- [ ] If new D1 conference: add full conference card object
+
+**coaches.json:**
+- [ ] Add coach entry for the school (even minimal data for listed schools)
+- [ ] Verify school's inline `coach{}` object matches coaches.json entry
+
+**athletes/olivier.json:**
+- [ ] Bump `guideVersion` to the new version string
+
+**Validation:**
+- [ ] `python -m json.tool data/other.json` (or whichever file was changed)
+- [ ] `python -m json.tool data/conferences.json`
+- [ ] `python -m json.tool data/coaches.json`
+- [ ] `node --check js/app.js`
+- [ ] `node --check js/dashboard.js`
+- [ ] Hard reload in browser — no console errors
+- [ ] Map dot visible and on correct landmass
 
 ---
 
@@ -486,5 +665,5 @@ Always set `available: true` when populating and include all 4 trajectory year o
 
 ---
 
-*CLAUDE.md — v21 Stable — Updated May 28 2026*
+*CLAUDE.md — v22 in progress — Updated June 19 2026*
 *Multi Skilled Contractors. Do not commit changes to this file without owner approval.*

@@ -10,7 +10,7 @@
 // V21: TBA
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v21';
+const APP_VERSION = 'v22';
 
 let unis = [];
 let conferences = [];
@@ -411,6 +411,7 @@ function renderCards(){
     {key:'wac',      label:'WAC — Western Athletic Conference',   tier:'Mid-Major · D1', intro:'GCU (Phoenix, AZ) fully profiled — Jamie Davies appointed December 2025. Warm major city campus, Kinesiology with Banner Health clinical network. 2025 WAC champions and NCAA Sweet 16. Best warm D1 city campus outside Florida and California.'},
     {key:'wcc',      label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Denver (University of Denver) fully profiled — 5 consecutive Summit League titles 2021-2025, College Cup 2024, moving to WCC in 2026. Kinesiology launched 2023. Denver city is excellent — outdoor lifestyle, 300 days sunshine, Colorado Rapids MLS. Cold winters the main drawback.'},
     {key:'america-east', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Vermont (Burlington, VT) listed — 2024 NCAA National Champions. New coach Adrian Dubois in 2026. Burlington is cold — not a lifestyle match for Olivier. Listed for pipeline reference.'},
+    {key:'nec',      label:'NEC — Northeast Conference',          tier:'Mid-Major · D1', intro:'Mid-major D1. Mercyhurst University (Erie, PA) — first D1 season 2025-26 in the Northeast Conference. New HC Austin Solomon building roster from scratch. B.S. Exercise Science with 500-hour clinical internship. High cost (~$63k) offset by 93% of students receiving aid averaging $31k.'},
     {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships — need-based aid only. Princeton won the 2024 and 2025 Ivy League Tournaments back-to-back under Jim Barlow. Yale won 2023. Both require 3.9+ GPA. Kinesiology degrees are not available but Ivy credentials carry enormous DPT school credibility. Only viable if GPA climbs to 3.5+.'},
     {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
     {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
@@ -698,6 +699,11 @@ const DOMAINS = {
   akron:        'gozips.com',
   denver:       'denverpioneers.com',
   vermont:      'uvmathletics.com',
+  mercyhurst:   'hurstathletics.com',
+  georgian_court: 'gculions.com',
+  columbia_college: 'columbiacougars.com',
+  northeast_cc: 'northeasthawks.com',
+  monroe_college: 'monroeumustangs.com',
 };
 
 const SITE_URLS = {
@@ -739,6 +745,11 @@ const SITE_URLS = {
   akron:        'https://www.uakron.edu',
   denver:       'https://www.du.edu',
   vermont:      'https://www.uvm.edu',
+  mercyhurst:   'https://www.mercyhurst.edu',
+  georgian_court: 'https://www.georgian.edu',
+  columbia_college: 'https://www.ccis.edu',
+  northeast_cc: 'https://www.northeast.edu',
+  monroe_college: 'https://www.monroeu.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -792,6 +803,11 @@ const SOCIAL = {
   akron:        ['https://instagram.com/akronzipsmsoc',      'https://x.com/AkronMSOC',           'https://facebook.com/AkronZipsMSOC',   'https://youtube.com/gozipsathletics'],
   denver:       ['https://instagram.com/dumenssoccer',       'https://x.com/DUMensSoccer',        'https://facebook.com/DUPioneerSoccer', 'https://youtube.com/denverpioneers'],
   vermont:      ['https://instagram.com/uvmmenssoccer',      'https://x.com/UVMMensSoccer',       null,                                   'https://youtube.com/uvmathletics'],
+  mercyhurst:   ['https://instagram.com/hurstathletics',    'https://x.com/hurstathletics',      'https://facebook.com/hurstathletics',  'https://youtube.com/hurstathletics'],
+  georgian_court: ['https://instagram.com/gculions',        'https://x.com/gculions',            'https://facebook.com/gculions',        null],
+  columbia_college: ['https://instagram.com/columbiacougars', null,                              'https://facebook.com/columbiacougars', null],
+  northeast_cc: ['https://instagram.com/northeasthawks',   'https://x.com/northeasthawks',      'https://facebook.com/northeasthawks',  null],
+  monroe_college: ['https://instagram.com/monroeumustangs', 'https://x.com/monroeumustangs',    'https://facebook.com/monroeumustangs', null],
 };
 
 

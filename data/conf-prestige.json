@@ -41,21 +41,6 @@
   {
     "rank": 4,
     "rankClass": "rk-strong",
-    "name": "SEC",
-    "fullName": "Southeastern Conference",
-    "div": "D1",
-    "divBadge": "d-D1",
-    "programsInGuide": "⚠ UF — no men's varsity",
-    "programsInGuideWarning": true,
-    "mlsPipeline": "N/A",
-    "mlsPipelineWarning": true,
-    "scholarships": "SEC sponsors women's only",
-    "confKey": "sec",
-    "relevance": "SEC has NO men's varsity soccer at UF. Listed only because UF APK is the #1 academic match. The SEC as a conference does not sponsor men's soccer at most member schools — football culture dominates."
-  },
-  {
-    "rank": 5,
-    "rankClass": "rk-strong",
     "name": "AAC",
     "fullName": "American Athletic",
     "div": "D1",
@@ -67,7 +52,7 @@
     "relevance": "FIU joined AAC in 2023 — reached 2024 and 2025 AAC Championship Finals. USF rebuilding under Kiefer. Most accessible Power-conference D1 for internationals."
   },
   {
-    "rank": 6,
+    "rank": 5,
     "rankClass": "rk-strong",
     "name": "Big West",
     "fullName": "Big West (West Coast)",
@@ -80,7 +65,7 @@
     "relevance": "UCSB won Big West Reg Season 2025. Manu Duah #1 overall 2025 MLS pick — highest Big West pick ever. Good Pacific pipeline."
   },
   {
-    "rank": 7,
+    "rank": 6,
     "rankClass": "rk-strong",
     "name": "MAC",
     "fullName": "Mid-American Conference (Midwest)",
@@ -93,7 +78,7 @@
     "relevance": "Top-20 MLS pipeline all-time — 18 picks under the Coppinger era, Emil Jaaskelainen #7 overall 2024. HC Jared Embick contracted through 2035. Explicit Pre-PT degree concentration with Cleveland Clinic network. Cold Ohio winters are the trade-off."
   },
   {
-    "rank": 8,
+    "rank": 7,
     "rankClass": "rk-strong",
     "name": "WCC",
     "fullName": "West Coast Conference (West)",
@@ -106,7 +91,7 @@
     "relevance": "Denver won 5 consecutive Summit League titles 2021–2025 and reached the 2024 College Cup Final Four. Moving to the WCC in 2026 — a significant elevation. HC Jamie Franks is one of the most technically precise developers in D1. Excellent city; cold winters the trade-off."
   },
   {
-    "rank": 9,
+    "rank": 8,
     "rankClass": "rk-strong",
     "name": "WAC",
     "fullName": "Western Athletic Conference (Southwest)",
@@ -119,7 +104,7 @@
     "relevance": "GCU won the 2025 WAC title and reached the NCAA Sweet 16 (beating UCLA and San Diego). Jamie Davies appointed December 2025. Phoenix — best warm major-city D1 campus outside Florida and California. Kinesiology with Banner Health clinical network."
   },
   {
-    "rank": 10,
+    "rank": 9,
     "rankClass": "rk-strong",
     "name": "Ivy League",
     "fullName": "Ivy League (East)",
@@ -132,7 +117,7 @@
     "relevance": "Princeton surging — 2024+2025 tournament doubles. No scholarships = need-based aid only"
   },
   {
-    "rank": 11,
+    "rank": 10,
     "rankClass": "rk-strong",
     "name": "CAA",
     "fullName": "Colonial Athletic",
@@ -145,7 +130,7 @@
     "relevance": "Lower-profile D1; Charleston Battery (USL) connection is the pro draw. Note: distinct from U of Charleston WV (D2 MEC)."
   },
   {
-    "rank": 12,
+    "rank": 11,
     "rankClass": "rk-strong",
     "name": "ASUN",
     "fullName": "ASUN Conference (South)",
@@ -158,7 +143,7 @@
     "relevance": "Mid-major D1. UCA has the best central midfielder opening of any D1 in this guide — 6 of 9 MFs clear before 2027. Affordable at ~$28k/yr. Warm climate. UAMS clinical network for pre-PT."
   },
   {
-    "rank": 13,
+    "rank": 12,
     "rankClass": "rk-solid",
     "name": "SSC",
     "fullName": "Sunshine State (Florida)",
@@ -171,7 +156,7 @@
     "relevance": "Best D2 conference nationally. PBA ranked #2 nationally 2025. Florida climate matches Sydney"
   },
   {
-    "rank": 14,
+    "rank": 13,
     "rankClass": "rk-solid",
     "name": "LSC",
     "fullName": "Lone Star Conference (Texas)",
@@ -184,7 +169,7 @@
     "relevance": "Austin FC connection unique. Austin-based program under HC Brian Young. Possession-based style in D2 LSC."
   },
   {
-    "rank": 15,
+    "rank": 14,
     "rankClass": "rk-solid",
     "name": "CCAA",
     "fullName": "California Collegiate Athletic",
@@ -197,7 +182,7 @@
     "relevance": "Most affordable LA option. Strong academic environment for PT pathway"
   },
   {
-    "rank": 16,
+    "rank": 15,
     "rankClass": "rk-solid",
     "name": "MEC",
     "fullName": "Mountain East Conference (WV)",
@@ -210,7 +195,7 @@
     "relevance": "D2 regional conference. UC Charleston has Australian on current roster (Jack Allan, Cape Schanck VIC). CAMC hospital clinical partnership for pre-PT. Note: distinct from College of Charleston SC (D1 CAA)."
   },
   {
-    "rank": 17,
+    "rank": 16,
     "rankClass": "rk-solid",
     "name": "SAC",
     "fullName": "Sooner Athletic (NAIA)",
@@ -223,7 +208,7 @@
     "relevance": "Billy Martin is HC (since 2020). NAIA program with generous scholarships. Program founder Brian Harvey (NAIA HOF) played professionally in Australia — historical connection. Warm spring climate."
   },
   {
-    "rank": 18,
+    "rank": 17,
     "rankClass": "rk-dev",
     "name": "Sun Conference",
     "fullName": "Sun Conference (NAIA Florida)",
@@ -236,7 +221,7 @@
     "relevance": "Health sciences pathway is the priority over pro soccer at Keiser"
   },
   {
-    "rank": 19,
+    "rank": 18,
     "rankClass": "rk-dev",
     "name": "SCIAC",
     "fullName": "Southern CA Intercollegiate (D3)",
@@ -249,7 +234,7 @@
     "relevance": "Chapman's Pre-PT required course KIN405 is unique value. Academic-first choice"
   },
   {
-    "rank": 20,
+    "rank": 19,
     "rankClass": "rk-dev",
     "name": "CCCAA/NJCAA",
     "fullName": "Junior College Conferences",
@@ -262,7 +247,7 @@
     "relevance": "2-year stepping stones. SMC → UCLA proven pipeline. Miami Dade → Barry/FIU. Iowa Western (Omaha metro) → Creighton/Iowa State/Drake. 100% roster turnover before 2027 — clean slate entry."
   },
   {
-    "rank": 21,
+    "rank": 20,
     "rankClass": null,
     "name": "NEC",
     "fullName": "Northeast Conference",
@@ -276,7 +261,7 @@
     "relevance": "Mercyhurst University (Erie, PA) — first D1 NEC season 2025–26. HC Austin Solomon rebuilding from D2 PSAC base. Exercise Science B.S. with 500hr clinical. 2 Australians previously on roster."
   },
   {
-    "rank": 22,
+    "rank": 21,
     "rankClass": null,
     "name": "CACC",
     "fullName": "Central Atlantic Collegiate Conference",
@@ -290,7 +275,7 @@
     "relevance": "Georgian Court University (Lakewood, NJ) — Dino Raso (13 seasons, 2024 CACC Coach of Year). B.S. Exercise Science Wellness & Sports with explicit Pre-PT/OT/PA tracks. Jersey Shore 20 min, NYC 90 min."
   },
   {
-    "rank": 23,
+    "rank": 22,
     "rankClass": null,
     "name": "AMC",
     "fullName": "American Midwest Conference",

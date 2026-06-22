@@ -1426,13 +1426,69 @@
     ]
   },
   {
+    "id": "erush_csula",
+    "schoolId": "csula",
+    "name": "Michael Erush",
+    "school": "Cal State LA",
+    "div": "D2",
+    "conf": "CCAA Conference",
+    "rank": 30,
+    "rankClass": "rk-solid",
+    "overallScore": 70,
+    "devScore": 70,
+    "tacticalScore": 68,
+    "ptPathScore": 55,
+    "mlsPlayers": 1,
+    "yearsHC": 5,
+    "ausConnection": false,
+    "record": "CCAA competitor. Cal State LA D2 program in East Los Angeles.",
+    "bio": "Head Coach Michael Erush leads Cal State LA with a full staff of four assistants — Associate HC Dallas Jaussi, and assistants Erick Lemus, Eduardo Castellanos, and Christian Segovia. A four-person staff is exceptional at D2 CCAA level. Cal State LA is the most affordable option in Los Angeles at ~8k/yr, giving access to LAFC and LA Galaxy academies, the same clinical network as the city-based D1 programs, and the cultural diversity of East LA. Erush's contact email: merush@calstatela.edu.",
+    "strengths": [
+      "Full 4-person coaching staff (exceptional at D2)",
+      "LAFC and LA Galaxy proximity",
+      "Most affordable LA option",
+      "East LA diversity and culture"
+    ],
+    "staff": [
+      {
+        "name": "Dallas Jaussi",
+        "role": "Associate Head Coach",
+        "bg": "Associate HC — recruitment and player development."
+      },
+      {
+        "name": "Erick Lemus",
+        "role": "Assistant Coach",
+        "bg": "Assistant coach — technical development."
+      },
+      {
+        "name": "Eduardo Castellanos",
+        "role": "Assistant Coach",
+        "bg": "Assistant coach — tactical and opposition analysis."
+      },
+      {
+        "name": "Christian Segovia",
+        "role": "Assistant Coach",
+        "bg": "Assistant coach — player welfare and recruitment."
+      }
+    ],
+    "contact": {
+      "email": "merush@calstatela.edu",
+      "phone": "323-343-3095"
+    },
+    "url": "https://lagoldeneagles.com/sports/mens-soccer",
+    "color": [
+      "#fef3c7",
+      "#b45309"
+    ]
+  },
+  {
     "id": "smee",
     "schoolId": "uc_charleston",
     "name": "Daniel Smee",
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 30,
+    "rank": 31,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1488,7 +1544,7 @@
     "school": "Keiser University",
     "div": "NAIA",
     "conf": "Sun Conference",
-    "rank": 31,
+    "rank": 32,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1540,7 +1596,7 @@
     "school": "Santa Monica College",
     "div": "JUCO",
     "conf": "CCCAA / SCFA",
-    "rank": 32,
+    "rank": 33,
     "rankClass": "rk-solid",
     "overallScore": 66,
     "devScore": 65,
@@ -1575,7 +1631,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 33,
+    "rank": 34,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "devScore": 65,
@@ -1631,7 +1687,7 @@
     "school": "Georgian Court University",
     "div": "D2",
     "conf": "CACC",
-    "rank": 34,
+    "rank": 35,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 66,
@@ -1672,7 +1728,7 @@
     "school": "Miami Dade College",
     "div": "JUCO",
     "conf": "NJCAA",
-    "rank": 35,
+    "rank": 36,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -1707,7 +1763,7 @@
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 36,
+    "rank": 37,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -1758,7 +1814,7 @@
     "school": "Northeast Community College",
     "div": "JUCO",
     "conf": "NJCAA ICCAC",
-    "rank": 37,
+    "rank": 38,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 60,
@@ -1793,7 +1849,7 @@
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 38,
+    "rank": 39,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -1834,7 +1890,7 @@
     "school": "Chapman University",
     "div": "D3",
     "conf": "SCIAC Conference",
-    "rank": 39,
+    "rank": 40,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 55,

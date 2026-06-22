@@ -1087,41 +1087,6 @@
     ]
   },
   {
-    "id": "shuttleworth",
-    "schoolId": "texas_am",
-    "name": "Bobby Shuttleworth",
-    "school": "Texas A&M University",
-    "div": "D1",
-    "conf": "SEC",
-    "rank": 22,
-    "rankClass": "rk-strong",
-    "overallScore": 82,
-    "devScore": 84,
-    "tacticalScore": 80,
-    "ptPathScore": 78,
-    "mlsPlayers": 3,
-    "yearsHC": 1,
-    "ausConnection": false,
-    "record": "Associate HC at FSU: 70-7-12 (.854) — 2 NCAA titles (2023, 2025). 14-year MLS career.",
-    "bio": "Bobby Shuttleworth was appointed Texas A&M head coach December 2025, only the second head coach in program history. Spent 4 seasons at Florida State under Brian Pensky — helped win NCAA titles in 2023 and 2025, FSU had the highest winning percentage in the nation during that span (.854). Former MLS goalkeeper for 14 years (New England, Minnesota United, Chicago Fire, Atlanta United — 232 appearances, ranked 13th all-time). Brings elite championship pedigree from the most dominant program of the last 4 years.",
-    "strengths": [
-      "Championship pedigree",
-      "Player development",
-      "Elite recruiting from FSU network",
-      "SEC environment"
-    ],
-    "staff": [],
-    "contact": {
-      "email": "soccer@athletics.tamu.edu",
-      "phone": "979-845-2311"
-    },
-    "url": "https://12thman.com/sports/mens-soccer",
-    "color": [
-      "#fce7f3",
-      "#7c2d12"
-    ]
-  },
-  {
     "id": "masur",
     "schoolId": "stjohns",
     "name": "Dr Dave Masur",
@@ -1131,7 +1096,7 @@
     "yearsHC": 35,
     "record": "468-213-118 career (.660). 415-192-112 at SJU. 1996 NCAA champion. 2nd-winningest active D1 HC.",
     "mlsPlayers": 2,
-    "rank": 23,
+    "rank": 22,
     "rankClass": "rk-solid",
     "overallScore": 80,
     "tacticalScore": 80,
@@ -1170,7 +1135,7 @@
     "school": "Grand Canyon University",
     "div": "D1",
     "conf": "WAC",
-    "rank": 24,
+    "rank": 23,
     "rankClass": "rk-strong",
     "overallScore": 79,
     "devScore": 80,
@@ -1208,7 +1173,7 @@
     "yearsHC": 6,
     "record": "27-31-18 overall, 10-19-8 CAA. 2024 best season: 10-6-2, ranked #23 nationally.",
     "mlsPlayers": 0,
-    "rank": 25,
+    "rank": 24,
     "rankClass": "rk-solid",
     "overallScore": 76,
     "tacticalScore": 76,
@@ -1253,7 +1218,7 @@
     "school": "University of Central Arkansas",
     "div": "D1",
     "conf": "ASUN",
-    "rank": 26,
+    "rank": 25,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
@@ -1310,7 +1275,7 @@
     "school": "Florida Atlantic University",
     "div": "D1",
     "conf": "American Athletic Conference (AAC)",
-    "rank": 27,
+    "rank": 26,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
@@ -1340,13 +1305,64 @@
     ]
   },
   {
+    "id": "dibernardo_monroe",
+    "schoolId": "monroe_college",
+    "name": "Marcus DiBernardo",
+    "school": "Monroe University — Mustangs (New Rochelle)",
+    "div": "JUCO",
+    "conf": "NJCAA Region 15",
+    "rank": 27,
+    "rankClass": "rk-solid",
+    "overallScore": 72,
+    "devScore": 74,
+    "tacticalScore": 72,
+    "ptPathScore": 42,
+    "mlsPlayers": 0,
+    "yearsHC": 5,
+    "ausConnection": true,
+    "record": "2021, 2022, 2023 NJCAA D1 National Champions — 3 consecutive national titles.",
+    "bio": "Marcus DiBernardo leads the Monroe Mustangs (New Rochelle campus) — the premier NJCAA D1 men's soccer program in the US with 3 consecutive national championships (2021-2023). The 2025 roster includes two Australians: Edward Mackle (Perth, WA — midfielder) and Sebastian Sayers (Hillarys, WA — forward). DiBernardo has built a world-class recruiting network drawing players from 15+ countries. New Rochelle is 30 minutes from Manhattan by Metro-North rail. Note: a separate Bronx campus program (Monroe Express, Coach Jose Hernandez) also exists — this entry covers the Mustangs only.",
+    "strengths": [
+      "3× NJCAA D1 National Champions (2021-2023)",
+      "2 Australians on 2025 roster",
+      "NYC metro — 30min to Manhattan",
+      "Premier JUCO transfer credential"
+    ],
+    "staff": [
+      {
+        "name": "Jay Myers",
+        "role": "Assistant Coach",
+        "email": "jmyers@monroeu.edu"
+      },
+      {
+        "name": "Dario Villafana",
+        "role": "Recruiting Coordinator",
+        "email": "dvillafana@monroeu.edu"
+      },
+      {
+        "name": "Massimo Gargiulo",
+        "role": "Assistant Coach",
+        "email": "mgargiulo@monroeu.edu"
+      }
+    ],
+    "contact": {
+      "email": "mdibernardo@monroeu.edu",
+      "phone": "914-740-6898"
+    },
+    "url": "https://www.monroeumustangs.com/sports/mens-soccer",
+    "color": [
+      "#fef3c7",
+      "#b45309"
+    ]
+  },
+  {
     "id": "smee",
     "schoolId": "uc_charleston",
     "name": "Daniel Smee",
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 29,
+    "rank": 28,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1402,7 +1418,7 @@
     "school": "Keiser University",
     "div": "NAIA",
     "conf": "Sun Conference",
-    "rank": 30,
+    "rank": 29,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1454,7 +1470,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 31,
+    "rank": 30,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "devScore": 65,
@@ -1504,13 +1520,54 @@
     ]
   },
   {
+    "id": "raso_georgian",
+    "schoolId": "georgian_court",
+    "name": "Dino Raso",
+    "school": "Georgian Court University",
+    "div": "D2",
+    "conf": "CACC",
+    "rank": 31,
+    "rankClass": "rk-solid",
+    "overallScore": 64,
+    "devScore": 66,
+    "tacticalScore": 64,
+    "ptPathScore": 62,
+    "mlsPlayers": 0,
+    "yearsHC": 13,
+    "ausConnection": false,
+    "record": "94-96-23 all-time. 8 CACC postseason appearances. 2 CACC Championship Final appearances.",
+    "bio": "Dino Raso enters his 13th season at Georgian Court in 2025-26 — one of the longest-tenured coaches in CACC D2 history. A loyalist builder who has established GCU as a consistent CACC postseason contender. The program's explicit Pre-PT/OT/PA track in Exercise Science is the strongest academic match at D2 level in the NJ/NY region. Associate HC Robbie Fitzpatrick handles much of the day-to-day training management.",
+    "strengths": [
+      "13 seasons — program stability",
+      "8 CACC postseason appearances",
+      "Pre-PT/OT/PA academic track",
+      "Jersey Shore / NYC proximity"
+    ],
+    "staff": [
+      {
+        "name": "Robbie Fitzpatrick",
+        "role": "Associate Head Coach",
+        "email": "rfitzpatrick@georgian.edu"
+      }
+    ],
+    "contact": {
+      "email": "draso@georgian.edu",
+      "phone": "732-987-2488"
+    },
+    "url": "https://gculions.com/sports/mens-soccer",
+    "color": [
+      "#d1fae5",
+      "#065f46"
+    ]
+  },
+  {
     "id": "solomon_mercyhurst",
     "schoolId": "mercyhurst",
     "name": "Austin Solomon",
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 33,
+    "rank": 32,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -1555,44 +1612,38 @@
     ]
   },
   {
-    "id": "raso_georgian",
-    "schoolId": "georgian_court",
-    "name": "Dino Raso",
-    "school": "Georgian Court University",
-    "div": "D2",
-    "conf": "CACC",
-    "rank": 32,
+    "id": "potter_northeast",
+    "schoolId": "northeast_cc",
+    "name": "Adam Potter",
+    "school": "Northeast Community College",
+    "div": "JUCO",
+    "conf": "NJCAA ICCAC",
+    "rank": 33,
     "rankClass": "rk-solid",
-    "overallScore": 64,
-    "devScore": 66,
-    "tacticalScore": 64,
-    "ptPathScore": 62,
+    "overallScore": 58,
+    "devScore": 60,
+    "tacticalScore": 58,
+    "ptPathScore": 40,
     "mlsPlayers": 0,
-    "yearsHC": 13,
-    "ausConnection": false,
-    "record": "94-96-23 all-time. 8 CACC postseason appearances. 2 CACC Championship Final appearances.",
-    "bio": "Dino Raso enters his 13th season at Georgian Court in 2025-26 — one of the longest-tenured coaches in CACC D2 history. A loyalist builder who has established GCU as a consistent CACC postseason contender. The program's explicit Pre-PT/OT/PA track in Exercise Science is the strongest academic match at D2 level in the NJ/NY region. Associate HC Robbie Fitzpatrick handles much of the day-to-day training management.",
+    "yearsHC": 3,
+    "ausConnection": true,
+    "record": "NJCAA Division II — consistently competitive with near-100% international roster (29 players, 15+ countries).",
+    "bio": "Adam Potter coaches the Northeast Community College Hawks — one of the most internationally diverse JUCO programs in the Midwest. The 2025-26 roster includes players from Denmark, Germany, Netherlands, Italy, Spain, England, Austria, Brazil, Japan, Ecuador, Iceland, Chile — and one Australian: Isaac Jordaan from Bridgewater, WA (defender, Freshman). A true transfer platform program. Best contact for Olivier: athletics@northeast.edu.",
     "strengths": [
-      "13 seasons — program stability",
-      "8 CACC postseason appearances",
-      "Pre-PT/OT/PA academic track",
-      "Jersey Shore / NYC proximity"
+      "Near-100% international roster — welcoming culture",
+      "Australian on 2025 roster (Isaac Jordaan, Bridgewater)",
+      "Ultra affordable (~$18k/yr out-of-state)",
+      "NJCAA DII transfer platform"
     ],
-    "staff": [
-      {
-        "name": "Robbie Fitzpatrick",
-        "role": "Associate Head Coach",
-        "email": "rfitzpatrick@georgian.edu"
-      }
-    ],
+    "staff": [],
     "contact": {
-      "email": "draso@georgian.edu",
-      "phone": "732-987-2488"
+      "email": "athletics@northeast.edu",
+      "phone": "402-844-7000"
     },
-    "url": "https://gculions.com/sports/mens-soccer",
+    "url": "https://northeasthawks.com/sports/msoc",
     "color": [
-      "#d1fae5",
-      "#065f46"
+      "#fff7ed",
+      "#c2410c"
     ]
   },
   {
@@ -1602,7 +1653,7 @@
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 35,
+    "rank": 34,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -1634,92 +1685,6 @@
     "color": [
       "#fef3c7",
       "#92400e"
-    ]
-  },
-  {
-    "id": "potter_northeast",
-    "schoolId": "northeast_cc",
-    "name": "Adam Potter",
-    "school": "Northeast Community College",
-    "div": "JUCO",
-    "conf": "NJCAA ICCAC",
-    "rank": 34,
-    "rankClass": "rk-solid",
-    "overallScore": 58,
-    "devScore": 60,
-    "tacticalScore": 58,
-    "ptPathScore": 40,
-    "mlsPlayers": 0,
-    "yearsHC": 3,
-    "ausConnection": true,
-    "record": "NJCAA Division II — consistently competitive with near-100% international roster (29 players, 15+ countries).",
-    "bio": "Adam Potter coaches the Northeast Community College Hawks — one of the most internationally diverse JUCO programs in the Midwest. The 2025-26 roster includes players from Denmark, Germany, Netherlands, Italy, Spain, England, Austria, Brazil, Japan, Ecuador, Iceland, Chile — and one Australian: Isaac Jordaan from Bridgewater, WA (defender, Freshman). A true transfer platform program. Best contact for Olivier: athletics@northeast.edu.",
-    "strengths": [
-      "Near-100% international roster — welcoming culture",
-      "Australian on 2025 roster (Isaac Jordaan, Bridgewater)",
-      "Ultra affordable (~$18k/yr out-of-state)",
-      "NJCAA DII transfer platform"
-    ],
-    "staff": [],
-    "contact": {
-      "email": "athletics@northeast.edu",
-      "phone": "402-844-7000"
-    },
-    "url": "https://northeasthawks.com/sports/msoc",
-    "color": [
-      "#fff7ed",
-      "#c2410c"
-    ]
-  },
-  {
-    "id": "dibernardo_monroe",
-    "schoolId": "monroe_college",
-    "name": "Marcus DiBernardo",
-    "school": "Monroe University — Mustangs (New Rochelle)",
-    "div": "JUCO",
-    "conf": "NJCAA Region 15",
-    "rank": 28,
-    "rankClass": "rk-solid",
-    "overallScore": 72,
-    "devScore": 74,
-    "tacticalScore": 72,
-    "ptPathScore": 42,
-    "mlsPlayers": 0,
-    "yearsHC": 5,
-    "ausConnection": true,
-    "record": "2021, 2022, 2023 NJCAA D1 National Champions — 3 consecutive national titles.",
-    "bio": "Marcus DiBernardo leads the Monroe Mustangs (New Rochelle campus) — the premier NJCAA D1 men's soccer program in the US with 3 consecutive national championships (2021-2023). The 2025 roster includes two Australians: Edward Mackle (Perth, WA — midfielder) and Sebastian Sayers (Hillarys, WA — forward). DiBernardo has built a world-class recruiting network drawing players from 15+ countries. New Rochelle is 30 minutes from Manhattan by Metro-North rail. Note: a separate Bronx campus program (Monroe Express, Coach Jose Hernandez) also exists — this entry covers the Mustangs only.",
-    "strengths": [
-      "3× NJCAA D1 National Champions (2021-2023)",
-      "2 Australians on 2025 roster",
-      "NYC metro — 30min to Manhattan",
-      "Premier JUCO transfer credential"
-    ],
-    "staff": [
-      {
-        "name": "Jay Myers",
-        "role": "Assistant Coach",
-        "email": "jmyers@monroeu.edu"
-      },
-      {
-        "name": "Dario Villafana",
-        "role": "Recruiting Coordinator",
-        "email": "dvillafana@monroeu.edu"
-      },
-      {
-        "name": "Massimo Gargiulo",
-        "role": "Assistant Coach",
-        "email": "mgargiulo@monroeu.edu"
-      }
-    ],
-    "contact": {
-      "email": "mdibernardo@monroeu.edu",
-      "phone": "914-740-6898"
-    },
-    "url": "https://www.monroeumustangs.com/sports/mens-soccer",
-    "color": [
-      "#fef3c7",
-      "#b45309"
     ]
   }
 ]

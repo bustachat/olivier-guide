@@ -23,7 +23,6 @@ const CONF_META = {
   'acc':          { label:'ACC',          tier:'P4',     tierCls:'bp5' },
   'big-ten':      { label:'Big Ten',      tier:'P4',     tierCls:'bp5' },
   'big-east':     { label:'Big East',     tier:'P4',     tierCls:'bp5' },
-  'sec':          { label:'SEC',          tier:'P4',     tierCls:'bp5' },
   'aac':          { label:'AAC',          tier:'Hi-Maj', tierCls:'bhi' },
   'big-west':     { label:'Big West',     tier:'Hi-Maj', tierCls:'bhi' },
   'caa':          { label:'CAA',          tier:'Mid-Maj',tierCls:'bhi' },

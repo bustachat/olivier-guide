@@ -4303,12 +4303,24 @@
     },
     "minutesOutlook": {
       "available": true,
-      "cleared_before_2027": 3,
-      "cleared_names": [],
-      "mf_total_2025": 12,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Misei Yoshizawa",
+        "Nathan Richmond",
+        "Gabriel Santuari",
+        "Mason Jimenez"
+      ],
+      "mf_total_2025": 11,
       "recruit_risk": "Very High",
-      "rising_junior_2027_count": 4,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 6,
+      "rising_junior_2027_names": [
+        "Daniel Bunk",
+        "Kwaku Agyabeng",
+        "Cooper Hineline",
+        "Abdou Mane",
+        "Caleb George",
+        "Kyle Mattis"
+      ],
       "trajectory": [
         {
           "year": 2027,
@@ -4335,7 +4347,11 @@
           "label": "Key player / starter"
         }
       ],
-      "trajectoryNote": "Clemson is elite — 4 players went in round 1 of the 2026 draft. MF competition is among the toughest in college soccer. Olivier would likely be a development-year player in Year 1, building toward meaningful minutes by Year 2-3. The soccer development value is exceptional but immediate minutes are not guaranteed."
+      "trajectoryNote": "Clemson is elite — 4 players went in round 1 of the 2026 draft. MF competition is among the toughest in college soccer. Olivier would likely be a development-year player in Year 1, building toward meaningful minutes by Year 2-3. The soccer development value is exceptional but immediate minutes are not guaranteed.",
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Ransford Gyan"
+      ]
     },
     "profileDepth": "full",
     "confKey": "acc",
@@ -6340,11 +6356,24 @@
       "available": true,
       "mf_total_2025": 11,
       "cleared_before_2027": 4,
-      "cleared_names": [],
-      "rising_senior_2027_count": 3,
+      "cleared_names": [
+        "David Biggers",
+        "Holger Olsson",
+        "Luke Schultz",
+        "Aidan Semelsberger"
+      ],
+      "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 2,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 7,
+      "rising_junior_2027_names": [
+        "Brett Phan",
+        "Ethan Orchard",
+        "Andrew Mann",
+        "Hudson Tate",
+        "Logan Isaacson",
+        "Jon Fritcher",
+        "Anthony Masino"
+      ],
       "recruit_risk": "Medium-High — elite program, WCC move elevates competition",
       "trajectoryNote": "DU's move to WCC in 2026 raises the program's ambition and recruiting level. Olivier would enter a program in transition to a higher conference — opportunity if he earns trust early, but competition will intensify.",
       "trajectory": [
@@ -6552,7 +6581,7 @@
       "soccer": 72,
       "academic": 62,
       "lifestyle": 50,
-      "minutes": 50,
+      "minutes": 49,
       "value": 55
     },
     "coach": {
@@ -6577,7 +6606,56 @@
     "mapX": 548,
     "mapY": 92,
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 11,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Connor Thompson",
+        "Andrew Millar",
+        "Niels Hartman",
+        "Marcos Blasco",
+        "Jeremy Tsang"
+      ],
+      "recruit_risk": "Medium",
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Ryan Zellefrow",
+        "Gabriel Chavez",
+        "Nash Barlow"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Nico Loebus",
+        "Shalom Adja",
+        "Gavin Stevenson"
+      ],
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 40,
+          "label": "Squad rotation — 5 MF slots clearing"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 62,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 78,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 88,
+          "label": "Key player"
+        }
+      ],
+      "trajectoryNote": "5 of 11 midfielders (3 Grads + R-Jr + Jr) clear before 2027. Competitive CAA D1 roster with strong turnover."
     },
     "culture": {
       "vibe": "Small New England university with exceptional natural beauty and a campus that rallied behind its soccer team to produce a historic national championship. Burlington is a progressive, outdoorsy college town on Lake Champlain.",

@@ -324,6 +324,25 @@ function buildDashboardShell() {
 .dash-hi-sc span{font-size:9px;color:var(--hint);font-weight:400;}
 .dash-sl-status-row{margin:.28rem 0 .1rem;}
 .dash-sl-status-sel{width:100%;border:1px solid var(--border);border-radius:6px;padding:3px 6px;font-size:9px;font-weight:700;font-family:'Outfit',sans-serif;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b7280'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;padding-right:20px;}
+@media(max-width:640px){
+  .dash-wrap{padding:.5rem;}
+  .dash-slider-panel{grid-template-columns:1fr;}
+  /* Shortlist: 2 columns instead of 4 */
+  .dash-shortlist-row{grid-template-columns:repeat(2,1fr);}
+  /* Stat strip: scroll horizontally */
+  .dash-stat-strip{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .dash-sc{min-width:88px;flex-shrink:0;}
+  /* Lens row: horizontal scroll */
+  .dash-lens-row{display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px;}
+  .dash-lc{min-width:70px;flex-shrink:0;}
+  /* Conf strip: horizontal scroll */
+  .dash-conf-strip{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .dash-cc{min-width:82px;flex-shrink:0;}
+  /* Map + bracket: stack vertically */
+  .dash-main-grid{grid-template-columns:1fr;}
+  /* Cost bracket: 2 cols instead of 4 */
+  .dash-bracket-grid{grid-template-columns:repeat(2,1fr);}
+}
 </style>`;
 }
 

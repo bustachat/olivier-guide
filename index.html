@@ -723,6 +723,26 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .exp-track{width:80px;height:5px;background:var(--surface3);border-radius:3px;overflow:hidden;}
 .exp-fill{height:100%;border-radius:3px;background:var(--indigo2);}
 
+/* ── v22.1: Mobile responsive ── */
+@media(max-width:640px){
+  .page{padding:.75rem .65rem;}
+  .top-nav{padding:0 .5rem;}
+  .nav-brand{font-size:.8rem;padding:.75rem .5rem .75rem 0;margin-right:.3rem;}
+  .nav-tab{padding:.75rem .55rem;font-size:11.5px;}
+  /* ATAR panel: fix overflow — wrap to two rows */
+  .atar-panel{padding:.5rem .75rem;}
+  .atar-single-row{flex-wrap:wrap;gap:.35rem .5rem;}
+  .atar-summary{gap:.3rem;}
+  .atar-sum-item{font-size:10px;}
+  .atar-slider-wrap{flex-basis:100%;}
+  .atar-hide-btn{margin-left:auto;}
+  /* Explore schools cards: single column */
+  .cards-grid{grid-template-columns:1fr;}
+  /* Coach and conference cards: single column */
+  .coach-cards{grid-template-columns:1fr;}
+  .conf-cards{grid-template-columns:1fr;}
+}
+
 </style>
 </head>
 <body>

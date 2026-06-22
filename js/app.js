@@ -2154,13 +2154,12 @@ function selectFinSchool(id, btnEl){
     slAth.max = 0; slAth.value = 0; slAth.disabled = true;
     slAth.style.opacity = '0.3';
   } else {
-    const athCap = Math.round(Math.min(u.fin.maxAthletic, 0.5) * 100);
-    slAth.max = athCap;
-    slAth.value = isFirstSelection ? 0 : Math.min(parseInt(slAth.value)||0, athCap);
+    slAth.max = 100;
+    slAth.value = isFirstSelection ? 0 : Math.min(parseInt(slAth.value)||0, 100);
     slAth.disabled = false;
     slAth.style.opacity = '1';
   }
-  slAcad.value = isFirstSelection ? 0 : Math.min(parseInt(slAcad.value)||0, 50);
+  slAcad.value = isFirstSelection ? 0 : Math.min(parseInt(slAcad.value)||0, 30000);
 
   document.getElementById('fin-aid-note').innerHTML = `<strong>Aid type at ${u.name}:</strong> ${u.fin.aidType.toUpperCase()} — ${u.fin.internationalNote}`;
   updateFinModel();
@@ -2179,9 +2178,8 @@ function applyScenario(type, btn){
     none:    {ath:0,   acad:0},
     ath25:   {ath:25,  acad:0},
     ath50:   {ath:50,  acad:0},
-    acad50:  {ath:0,   acad:50},
-    full:    {ath:50,  acad:50},
-    partial: {ath:25,  acad:25},
+    full:    {ath:100, acad:0},
+    partial: {ath:35,  acad:10000},
   };
   const s = scenarios[type] || scenarios.full;
   slAth.value = Math.min(s.ath, athMax);
@@ -2193,20 +2191,19 @@ function updateFinModel(){
   const u = finCurrentSchool;
   if(!u || !u.fin) return;
   const f = u.fin;
-  const athPct  = parseInt(document.getElementById('sl-athletic').value)  / 100; // 0–0.50
-  const acadPct = parseInt(document.getElementById('sl-academic').value)  / 100; // 0–0.50
-  const combinedPct = athPct + acadPct;
+  const athPct   = parseInt(document.getElementById('sl-athletic').value) / 100; // 0–1.0
+  const acadSchol = parseInt(document.getElementById('sl-academic').value) || 0;  // fixed dollars
   const fx = parseFloat(document.getElementById('sl-fx').value);
-
-  // Update labels
-  document.getElementById('val-athletic').textContent  = Math.round(athPct*100)+'%';
-  document.getElementById('val-academic').textContent  = Math.round(acadPct*100)+'%';
-  document.getElementById('val-fx').textContent        = fx.toFixed(2);
 
   const totalCOA  = f.costNum;
   const athSchol  = Math.round(totalCOA * athPct);
-  const acadSchol = Math.round(totalCOA * acadPct);
   const totalAid  = athSchol + acadSchol;
+  const combinedPct = totalCOA > 0 ? totalAid / totalCOA : 0;
+
+  // Update labels
+  document.getElementById('val-athletic').textContent = Math.round(athPct*100)+'%';
+  document.getElementById('val-academic').textContent = '$'+acadSchol.toLocaleString();
+  document.getElementById('val-fx').textContent       = fx.toFixed(2);
   const netCOA    = Math.max(0, totalCOA - totalAid);
 
   // Update combined aid display
@@ -2246,7 +2243,7 @@ function updateFinModel(){
     <div class="fin-row expense"><span class="fr-label">📑 Fees</span><span class="fr-val">${fmt(f.fees)}</span></div>
     <div class="fin-row expense" style="border-top:2px solid var(--border2);font-weight:700"><span class="fr-label">Total Cost of Attendance</span><span class="fr-val">${fmt(totalCOA)}</span></div>
     ${athPct>0?`<div class="fin-row income"><span class="fr-label">🏆 Athletic Scholarship (${Math.round(athPct*100)}% of cost)</span><span class="fr-val">−${fmt(athSchol)}</span></div>`:''}
-    ${acadPct>0?`<div class="fin-row income"><span class="fr-label">🎓 Academic Scholarship (${Math.round(acadPct*100)}% of cost)</span><span class="fr-val">−${fmt(acadSchol)}</span></div>`:''}
+    ${acadSchol>0?`<div class="fin-row income"><span class="fr-label">🎓 Institutional / Academic Aid</span><span class="fr-val">−${fmt(acadSchol)}</span></div>`:''}
     <div class="fin-row ${netCOA===0?'net-positive':netCOA<20000?'net-neutral':'net-negative'}">
       <span class="fr-label">Net University Cost (${100-Math.round(combinedPct*100)}% remaining)</span><span class="fr-val">${fmt(netCOA)}</span>
     </div>
@@ -2276,7 +2273,7 @@ function updateFinModel(){
     tips = `<strong>Need-based only:</strong> ${u.name} has no athletic scholarships — the athletic slider is disabled. Academic aid here represents need-based grants based on family income documentation.`;
   } else if(combinedPct < 1.0){
     const gap = Math.round((1.0 - combinedPct) * 100);
-    tips = `<strong>${gap}% gap remaining:</strong> At current settings ${fmt(totalCOA-totalAid)}/yr is unfunded. Try increasing both sliders to close the gap. A full ride = 50% athletic + 50% academic.`;
+    tips = `<strong>${gap}% gap remaining:</strong> At current settings ${fmt(totalCOA-totalAid)}/yr is unfunded. A full athletic ride = 100% athletic slider. Institutional aid (the dollar slider) is a bonus the coach can negotiate on top.`;
   } else {
     tips = `<strong>🎉 Full ride modelled!</strong> At these settings the total scholarship covers 100% of the university cost of attendance. Living costs (${fmt(totalExtras)}/yr) are the remaining family responsibility over ${programYrs} years.`;
   }

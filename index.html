@@ -981,27 +981,26 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
       <div style="font-size:11px;color:var(--hint);font-weight:700;text-transform:uppercase;letter-spacing:.08em;align-self:center;margin-right:4px">Quick scenarios:</div>
       <button class="sc-tab active" onclick="applyScenario('none',this)">❌ No Scholarship</button>
       <button class="sc-tab" onclick="applyScenario('ath25',this)">25% Athletic</button>
-      <button class="sc-tab" onclick="applyScenario('ath50',this)">50% Athletic Only</button>
-      <button class="sc-tab" onclick="applyScenario('acad50',this)">50% Academic Only</button>
-      <button class="sc-tab" onclick="applyScenario('full',this)">💎 Full Ride (50+50)</button>
-      <button class="sc-tab" onclick="applyScenario('partial',this)">⚖️ Partial (25+25)</button>
+      <button class="sc-tab" onclick="applyScenario('ath50',this)">50% Athletic</button>
+      <button class="sc-tab" onclick="applyScenario('partial',this)">⚖️ Typical Intl (35%+$10k)</button>
+      <button class="sc-tab" onclick="applyScenario('full',this)">💎 Full Athletic Ride (100%)</button>
     </div>
     <div class="fin-model-area">
       <div class="fin-controls">
         <h3>⚙️ Adjust Scholarship & Costs</h3>
         <div style="background:var(--indigo3);border-radius:9px;padding:8px 11px;margin-bottom:1rem;font-size:12px;color:#374151;border:1px solid #c7d2fe">
-          <strong style="color:var(--navy)">How it works:</strong> Each slider covers up to 50% of total annual cost. Athletic + Academic combined = up to 100% (full ride). Slide both to max for a full scholarship scenario.
+          <strong style="color:var(--navy)">How it works:</strong> Athletic scholarship covers up to 100% of total cost (a full ride). Academic/institutional aid is a separate fixed dollar amount the school or coach can stack on top. A full athletic scholarship alone can cover everything — academic aid is a bonus used to sweeten the deal.
         </div>
         <div class="slider-group">
           <label>🏆 Athletic Scholarship <span id="val-athletic">50%</span> of cost</label>
-          <input type="range" id="sl-athletic" min="0" max="50" value="50" oninput="updateFinModel()">
-          <div class="slider-sublabel"><span>0% (no athletic aid)</span><span>50% (max athletic)</span></div>
+          <input type="range" id="sl-athletic" min="0" max="100" value="50" oninput="updateFinModel()">
+          <div class="slider-sublabel"><span>0% (no athletic aid)</span><span>100% (full athletic ride)</span></div>
         </div>
         <div style="display:flex;justify-content:center;margin:-4px 0 8px;font-size:11px;color:var(--hint);font-weight:600">+ combined =</div>
         <div class="slider-group">
-          <label>🎓 Academic Scholarship <span id="val-academic">0%</span> of cost</label>
-          <input type="range" id="sl-academic" min="0" max="50" value="0" step="1" oninput="updateFinModel()">
-          <div class="slider-sublabel"><span>0% (no academic aid)</span><span>50% (max academic)</span></div>
+          <label>🎓 Institutional / Academic Aid <span id="val-academic">$0</span></label>
+          <input type="range" id="sl-academic" min="0" max="30000" value="0" step="500" oninput="updateFinModel()">
+          <div class="slider-sublabel"><span>$0 (no academic aid)</span><span>$30,000 (max institutional)</span></div>
         </div>
         <div id="combined-aid-display" style="background:var(--surface2);border-radius:8px;padding:8px 12px;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;border:1px solid var(--border)">
           <span style="font-size:12px;font-weight:600;color:var(--muted)">Combined Aid:</span>
@@ -1041,7 +1040,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   </div>
 
   <div class="section-head" style="margin-top:1rem"><h2>Full-Profile Schools — Cost Comparison by Bracket</h2></div>
-  <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">Full-profile schools only, grouped by cost bracket. Assumes 50% athletic scholarship. Conference average reference lines shown per bracket. Click any bar to model in detail above. Listed-depth schools will appear here once fully profiled.</p>
+  <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">Full-profile schools only, grouped by cost bracket. Assumes 50% athletic scholarship as a planning baseline. Conference average reference lines shown per bracket. Click any bar to model in detail above. Listed-depth schools will appear here once fully profiled.</p>
   <div id="fin-comparison-bars"></div>
 </div>
 
@@ -1225,6 +1224,29 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
       </div>
     </div>
   </div>
+
+  <div class="gloss-section">
+    <div class="gloss-section-title">How Scholarships Work</div>
+    <div class="gloss-grid">
+      <div class="gloss-item">
+        <div class="gloss-term">Scholarship Equivalencies</div>
+        <div class="gloss-def">In D1 men's soccer, each program has <strong>9.9 scholarship equivalencies</strong> per year — a fixed budget they split across their roster. A "full equivalency" (1.0) covers 100% of the Cost of Attendance (tuition + room &amp; board + fees). Coaches split this pool however they choose: one player might receive 1.0 (full ride), another 0.5, another 0.25. D2 has 9.0 equivalencies. NAIA has 12 with no per-player cap. D3 and Ivy League = zero athletic scholarships.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">A Full Athletic Scholarship</div>
+        <div class="gloss-def">A full athletic scholarship (1.0 equivalency) covers <strong>100% of Cost of Attendance</strong> on its own — tuition, room &amp; board, and fees. It does not need an academic scholarship to complete it. Academic or institutional aid can then stack on top as an additional bonus, but is not required for a full ride.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Institutional / Academic Aid Stacking</div>
+        <div class="gloss-def">Coaches control athletic aid. The university's financial aid or admissions office controls institutional grants and merit scholarships. Coaches actively work with both departments to build competitive packages — particularly at private universities with large endowments. A coach recruiting an international player might offer 40% athletic and then request an additional $8–15k institutional grant from the school to make the total package more attractive.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Example: D2 Florida Package</div>
+        <div class="gloss-def">Coach offers 35–50% athletic scholarship. Private school (Lynn, Barry, PBA, Nova SE) adds $5–15k institutional grant. Combined = 50–65% total coverage. This is why D2 Florida schools often deliver better value than high-sticker D1 programs — smaller base cost, generous institutional aid, and coaches who have more flexibility to build packages for international recruits.</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 <div id="score-tooltip"></div>
 <script src="js/scores.js"></script>

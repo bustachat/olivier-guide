@@ -3070,13 +3070,45 @@
       "overall": 79,
       "soccer": 51,
       "academic": 52,
-      "minutes": 50,
+      "minutes": 70,
       "lifestyle": 100,
       "value": 94
     },
     "minutesOutlook": {
-      "available": false,
-      "reason": "No roster data available"
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 9,
+      "cleared_names": [
+        "Jonathan Sanchez (So·M)",
+        "Omar Nieto (So·M)",
+        "Adrian Garcia (So·M)",
+        "Andy Salazar (So·M)",
+        "Zach Shayne (Fr·M)",
+        "Osvaldo Escobedo (Fr·M)",
+        "Anthony Lopez (Fr·M)",
+        "Henry Carrera (Fr·M)",
+        "Leo Blanchet (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectoryNote": "JUCO 2-year program — 100% of the current 2025-26 roster finishes before Olivier enters in August 2027. All 9 current MFs (4 So + 5 Fr) are completely gone. Zero roster overlap. Olivier's competition is entirely determined by the 2026 recruiting class that SMC signs. Ask the coach: 'How many central midfielders are in your 2026 class?' — that is the only relevant question. LA location is a major lifestyle plus vs Iowa/Midwest JUCOs.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 45,
+          "label": "Compete for immediate starts — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 65,
+          "label": "Key player — transfer year"
+        }
+      ]
     },
     "profileDepth": "full",
     "confKey": "other",
@@ -3287,13 +3319,48 @@
       "overall": 78,
       "soccer": 47,
       "academic": 42,
-      "minutes": 50,
+      "minutes": 72,
       "lifestyle": 100,
       "value": 88
     },
     "minutesOutlook": {
-      "available": false,
-      "reason": "No roster data available"
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 12,
+      "cleared_names": [
+        "Joao Pedro Dos Santos Oliveira (So·M)",
+        "Diego Luengo (So·M)",
+        "Martin Jaramillo (So·M)",
+        "Sean Bayard (So·M)",
+        "Javier Prieto (So·M)",
+        "Eduardo Cornejo (So·M)",
+        "Matthew Oliva (So·M)",
+        "Matteo DePalo (Fr·M)",
+        "Emmanuele Serra (Fr·M)",
+        "Lucas DePaula (Fr·M)",
+        "Nico Preciado (Fr·M)",
+        "Josemy Vigil (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectoryNote": "JUCO 2-year program — 100% of the current 2025-26 roster finishes before Olivier enters in August 2027. All 12 current MFs (7 So + 5 Fr) are completely gone. Zero roster overlap. Olivier's competition is determined entirely by the 2026 recruiting class. Miami market — diverse international roster (Argentina, Italy, Brazil, France, Spain). HC Giuseppe DePalo has strong South American network. Ask: 'How many central midfielders are in your 2026 class?'",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Compete for immediate starts — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 70,
+          "label": "Key player — transfer year"
+        }
+      ]
     },
     "profileDepth": "full",
     "confKey": "other",

@@ -1164,6 +1164,41 @@
     ]
   },
   {
+    "id": "stannard_yale",
+    "schoolId": "yale",
+    "name": "Kylie Stannard",
+    "school": "Yale University",
+    "div": "IVY",
+    "conf": "Ivy League",
+    "rank": 24,
+    "rankClass": "rk-strong",
+    "overallScore": 78,
+    "devScore": 80,
+    "tacticalScore": 80,
+    "ptPathScore": 85,
+    "mlsPlayers": 1,
+    "yearsHC": 5,
+    "ausConnection": false,
+    "record": "Ivy League competitor. Yale men's soccer in the most academically selective conference in college athletics.",
+    "bio": "Head Coach Kylie Stannard leads Yale men's soccer in the Ivy League — zero athletic scholarships but one of the most academically elite environments in American sport. Yale's pre-health science infrastructure and DPT pathway credentials are outstanding. The program develops technically excellent players in a high-academic environment. The primary barrier for Olivier is financial: no athletic scholarships means the full ~5k/yr sticker price applies, offset only by need-based aid. Stannard is building Yale into a consistent Ivy contender alongside traditional powers Princeton and Penn.",
+    "strengths": [
+      "Elite academic environment",
+      "Outstanding DPT/pre-health pathway",
+      "Ivy League prestige",
+      "New Haven urban campus"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "kylie.stannard@yale.edu",
+      "phone": "203-432-1456"
+    },
+    "url": "https://yalebulldogs.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#ca8a04"
+    ]
+  },
+  {
     "id": "wiggans",
     "schoolId": "charleston",
     "name": "Keith Wiggans",
@@ -1173,7 +1208,7 @@
     "yearsHC": 6,
     "record": "27-31-18 overall, 10-19-8 CAA. 2024 best season: 10-6-2, ranked #23 nationally.",
     "mlsPlayers": 0,
-    "rank": 24,
+    "rank": 25,
     "rankClass": "rk-solid",
     "overallScore": 76,
     "tacticalScore": 76,
@@ -1212,13 +1247,48 @@
     ]
   },
   {
+    "id": "mcarthur_nova",
+    "schoolId": "nova",
+    "name": "Matt McArthur",
+    "school": "Nova Southeastern University",
+    "div": "D2",
+    "conf": "Sunshine State Conference (SSC)",
+    "rank": 26,
+    "rankClass": "rk-solid",
+    "overallScore": 74,
+    "devScore": 74,
+    "tacticalScore": 72,
+    "ptPathScore": 58,
+    "mlsPlayers": 1,
+    "yearsHC": 6,
+    "ausConnection": false,
+    "record": "SSC competitor. Consistent D2 Sunshine State Conference program in Fort Lauderdale.",
+    "bio": "Head Coach Matt McArthur leads Nova Southeastern University in the highly competitive Sunshine State Conference — one of the strongest D2 conferences nationally alongside SSC rivals PBA, Barry, and Lynn. NSU is a research-focused private university in Fort Lauderdale with strong health sciences infrastructure including an accredited DPT program on campus. McArthur builds a technically solid program in a warm South Florida environment.",
+    "strengths": [
+      "SSC competitive environment",
+      "NSU DPT program on campus",
+      "South Florida warm climate",
+      "Fort Lauderdale location"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "msoccer@nova.edu",
+      "phone": "954-262-8262"
+    },
+    "url": "https://nsusharks.com/sports/mens-soccer",
+    "color": [
+      "#fef3c7",
+      "#d97706"
+    ]
+  },
+  {
     "id": "segebart",
     "schoolId": "uca",
     "name": "Kyle Segebart",
     "school": "University of Central Arkansas",
     "div": "D1",
     "conf": "ASUN",
-    "rank": 25,
+    "rank": 27,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
@@ -1275,7 +1345,7 @@
     "school": "Florida Atlantic University",
     "div": "D1",
     "conf": "American Athletic Conference (AAC)",
-    "rank": 26,
+    "rank": 28,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
@@ -1311,7 +1381,7 @@
     "school": "Monroe University — Mustangs (New Rochelle)",
     "div": "JUCO",
     "conf": "NJCAA Region 15",
-    "rank": 27,
+    "rank": 29,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 74,
@@ -1362,7 +1432,7 @@
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 28,
+    "rank": 30,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1418,7 +1488,7 @@
     "school": "Keiser University",
     "div": "NAIA",
     "conf": "Sun Conference",
-    "rank": 29,
+    "rank": 31,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1464,13 +1534,48 @@
     ]
   },
   {
+    "id": "avery_smc",
+    "schoolId": "smc",
+    "name": "Lee Avery",
+    "school": "Santa Monica College",
+    "div": "JUCO",
+    "conf": "CCCAA / SCFA",
+    "rank": 32,
+    "rankClass": "rk-solid",
+    "overallScore": 66,
+    "devScore": 65,
+    "tacticalScore": 63,
+    "ptPathScore": 40,
+    "mlsPlayers": 0,
+    "yearsHC": 8,
+    "ausConnection": false,
+    "record": "CCCAA / SCFA competitor. Premier JUCO to UCLA transfer pipeline in California.",
+    "bio": "Head Coach Lee Avery has built Santa Monica College into the premier JUCO feeder to UCLA in California. The 2025-26 roster reflects a diverse international recruiting network — predominantly Latin American and Spanish-speaking players with international contributors including a French midfielder (Leo Blanchet), a Brazilian defender (Daniel Loff Fernandes), and Greek twin brothers George and Greg Georgantellis. As a JUCO program, the entire current roster turns over before Olivier arrives in August 2027. Avery's documented relationships with UCLA soccer transfer advisors give SMC the strongest transfer pipeline of any JUCO in California.",
+    "strengths": [
+      "UCLA transfer pipeline",
+      "Latin American and international recruitment",
+      "Santa Monica lifestyle match for Sydney-raised players",
+      "Open admission — no GPA barrier"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "lavery@smc.edu",
+      "phone": "310-434-4320"
+    },
+    "url": "https://athletics.smc.edu/sports/soccer",
+    "color": [
+      "#d1fae5",
+      "#059669"
+    ]
+  },
+  {
     "id": "brown_iowa",
     "schoolId": "iowa_western",
     "name": "Mike Brown",
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 30,
+    "rank": 33,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "devScore": 65,
@@ -1526,7 +1631,7 @@
     "school": "Georgian Court University",
     "div": "D2",
     "conf": "CACC",
-    "rank": 31,
+    "rank": 34,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 66,
@@ -1567,7 +1672,7 @@
     "school": "Miami Dade College",
     "div": "JUCO",
     "conf": "NJCAA",
-    "rank": 32,
+    "rank": 35,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -1602,7 +1707,7 @@
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 33,
+    "rank": 36,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -1653,7 +1758,7 @@
     "school": "Northeast Community College",
     "div": "JUCO",
     "conf": "NJCAA ICCAC",
-    "rank": 34,
+    "rank": 37,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 60,
@@ -1688,7 +1793,7 @@
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 35,
+    "rank": 38,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -1720,6 +1825,41 @@
     "color": [
       "#fef3c7",
       "#92400e"
+    ]
+  },
+  {
+    "id": "johnson_chapman",
+    "schoolId": "chapman",
+    "name": "Dustin Johnson",
+    "school": "Chapman University",
+    "div": "D3",
+    "conf": "SCIAC Conference",
+    "rank": 39,
+    "rankClass": "rk-solid",
+    "overallScore": 52,
+    "devScore": 55,
+    "tacticalScore": 56,
+    "ptPathScore": 72,
+    "mlsPlayers": 0,
+    "yearsHC": 7,
+    "ausConnection": false,
+    "record": "SCIAC competitor. D3 program in Orange County, CA. No athletic scholarships.",
+    "bio": "Head Coach Dustin Johnson leads Chapman University men's soccer in the SCIAC — a strong D3 Southern California conference. Chapman's value for Olivier is academic: the KIN405 Pre-PT required course is the most explicit pre-PT unit in the guide. Orange County location, warm climate, and small private university culture make it appealing for lifestyle fit. The financial reality is the barrier: D3 means zero athletic scholarships — admission-based and need-based aid only. Best suited for a player who prioritises the PT pathway and Orange County lifestyle over soccer ambition.",
+    "strengths": [
+      "KIN405 Pre-PT required course (unique in guide)",
+      "Orange County warm climate",
+      "Small private university culture",
+      "Orange County lifestyle"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "djohnson@chapman.edu",
+      "phone": "714-997-6789"
+    },
+    "url": "https://chapmanathletics.com/sports/mens-soccer",
+    "color": [
+      "#fce7f3",
+      "#db2777"
     ]
   }
 ]

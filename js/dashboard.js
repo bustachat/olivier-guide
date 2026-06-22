@@ -253,7 +253,7 @@ function buildDashboardShell() {
 .dash-sc-right{display:flex;flex-direction:column;gap:2px;}
 .dash-sc-lbl{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);line-height:1;}
 .dash-sc-sub{font-size:7.5px;color:#065f46;background:var(--emerald3);border-radius:3px;padding:0 4px;display:inline-block;font-weight:700;line-height:1.5;}
-.dash-shortlist-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:.7rem;}
+.dash-shortlist-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:.5rem;margin-bottom:.7rem;}
 .dash-sl-card{background:var(--surface);border:2px solid var(--indigo);border-radius:11px;padding:.6rem .75rem;position:relative;transition:opacity .25s,border-color .25s;}
 .dash-sl-card.over-budget{border-color:var(--border);border-width:1px;opacity:.5;}
 .dash-sl-card.ineligible{border-color:#fbbf24;border-width:1.5px;opacity:.6;}

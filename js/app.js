@@ -2559,17 +2559,9 @@ function calcMinutesScore(u, mode){
   const traj = (u.minutesOutlook||{}).trajectory || [];
   if(traj.length === 0) return 0;
   const pcts = traj.map(t=>t.pct);
-  let raw;
-  if(pcts.length >= 4){
-    // Standard 4-year program
-    raw = pcts[0]*0.35 + pcts[1]*0.30 + pcts[2]*0.20 + pcts[3]*0.15;
-  } else if(pcts.length === 2){
-    // JUCO 2-year program — weight Yr1 more heavily (transfer depends on Yr1)
-    raw = pcts[0]*0.60 + pcts[1]*0.40;
-  } else {
-    // 1 or 3 years — equal-weight average
-    raw = pcts.reduce((a,b)=>a+b,0) / pcts.length;
-  }
+  // Rank on Yr1+Yr2 only — near-term roster data, apples-to-apples across JUCO and 4yr programs.
+  // Yr3/Yr4 trajectory data is still displayed on cards but not used for ranking.
+  const raw = pcts.length >= 2 ? pcts[0]*0.60 + pcts[1]*0.40 : pcts[0];
   const factor = mode==='adjusted' ? (MO_DIV_FACTOR[u.div]||1.0) : 1.0;
   return Math.min(95, Math.round(raw * factor));
 }

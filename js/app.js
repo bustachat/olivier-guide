@@ -701,6 +701,13 @@ const DOMAINS = {
   columbia_college: 'columbiacougars.com',
   northeast_cc: 'northeasthawks.com',
   monroe_college: 'monroeumustangs.com',
+  duke:           'goduke.com',
+  ncstate:        'gopack.com',
+  louisville:     'gocards.com',
+  pittsburgh:     'pittpanthers.com',
+  stanford:       'gostanford.com',
+  syracuse:       'cuse.com',
+  cal:            'calbears.com',
 };
 
 const SITE_URLS = {
@@ -746,6 +753,13 @@ const SITE_URLS = {
   columbia_college: 'https://www.ccis.edu',
   northeast_cc: 'https://www.northeast.edu',
   monroe_college: 'https://www.monroeu.edu',
+  duke:           'https://www.duke.edu',
+  ncstate:        'https://www.ncsu.edu',
+  louisville:     'https://www.louisville.edu',
+  pittsburgh:     'https://www.pitt.edu',
+  stanford:       'https://www.stanford.edu',
+  syracuse:       'https://www.syracuse.edu',
+  cal:            'https://www.berkeley.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -803,6 +817,13 @@ const SOCIAL = {
   columbia_college: ['https://instagram.com/columbiacougarsoccer', null,                          null,                                    null],
   northeast_cc:   ['https://instagram.com/NortheastHawks',    'https://x.com/NortheastHawks',      'https://facebook.com/northeastcchawks', null],
   monroe_college: ['https://instagram.com/monroemsoc',        'https://x.com/MonroeMustangs',      'https://facebook.com/monroeathletics',  null],
+  duke:           ['https://instagram.com/dukemenssoccer',    'https://x.com/DukeMSOC',            'https://facebook.com/DukeMensSoccer',  'https://youtube.com/dukebluedevils'],
+  ncstate:        ['https://instagram.com/ncstatemsoc',       'https://x.com/NCStateMSOC',         'https://facebook.com/NCStateSoccer',   'https://youtube.com/ncstateathletics'],
+  louisville:     ['https://instagram.com/uoflmsoc',          'https://x.com/UofLMSOC',            'https://facebook.com/UofLMensSoccer',  'https://youtube.com/uoflathletics'],
+  pittsburgh:     ['https://instagram.com/pitt_msoc',         'https://x.com/PittMSOC',            'https://facebook.com/PittMensSoccer',  'https://youtube.com/pittathletics'],
+  stanford:       ['https://instagram.com/stanfordmsoccer',   'https://x.com/StanfordMSoccer',     null,                                   'https://youtube.com/stanfordathletics'],
+  syracuse:       ['https://instagram.com/cusemsoc',          'https://x.com/CuseMSOC',            'https://facebook.com/SyracuseMSOC',    'https://youtube.com/syracuseathletics'],
+  cal:            ['https://instagram.com/cal_msoccer',       'https://x.com/CalMSOC',             null,                                   'https://youtube.com/ucberkeleysports'],
 };
 
 

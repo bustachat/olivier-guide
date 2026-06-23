@@ -863,7 +863,7 @@
   },
   {
     "id": "duke",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Duke",
     "full": "Duke University",
     "loc": "Durham, NC",
@@ -874,13 +874,20 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#dbeafe", "#00356B"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 12,
-    "acuAlignNote": "Strong kinesiology and exercise science. Duke Medical Center proximity gives excellent pre-PT clinical access.",
-    "soccerLevel": "ACC — Elite",
+    "acuAlignNote": "Strong kinesiology and exercise science. Duke Medical Center proximity gives excellent pre-PT clinical access. Biomechanics, exercise physiology, motor control, and sport psychology all covered. Duke's DPT program is top-5 nationally — pre-PT advising pipeline is the best in the ACC.",
+    "soccerLevel": "ACC — Elite (1986 NCAA champion)",
     "cost": "~$85k/yr",
     "fin": {
       "costNum": 85000,
+      "tuition": 63000,
+      "roomBoard": 18000,
+      "fees": 4000,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic+need",
       "internationalNote": "Duke full COA is ~$85k/yr (2025-26). Athletic scholarship + need-based aid can combine to cover a significant portion of costs. Duke meets demonstrated financial need for athletes. Strong international student support and one of the most generous aid programs among elite private schools."
     },
     "aid": "Athletic + Need",
@@ -936,38 +943,89 @@
       }
     ],
     "titles": [
-      "NCAA 1986",
-      "ACC Champions multiple"
+      "1× NCAA Champions (1986)",
+      "Multiple ACC Tournament titles"
     ],
     "proPlayers": {
       "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Strong pipeline, highly selective roster"
+      "notable": ["Ousmane Doumbia — 2023 SuperDraft", "Ben Bender — MLS career post-Duke"],
+      "draftRank": "Consistent MLS pipeline from one of college soccer's most storied programs"
     },
-    "devScores": null,
+    "devScores": {
+      "tactical": 88,
+      "technical": 86,
+      "fitness": 80
+    },
     "coach": {
       "name": "John Kerr",
       "title": "Head Coach",
       "email": "john.kerr@duke.edu",
-      "phone": "",
-      "profile": "35+ year tenure. One of the most respected coaches in college soccer history."
+      "phone": "919-684-2120",
+      "profile": "30+ season tenure at Duke — one of the longest-serving and most decorated active coaches in college soccer. Multiple ACC titles and consistent NCAA Tournament appearances. Known for developing technically polished players who translate to professional careers. Kerr's Duke teams play a disciplined, possession-based system that has produced consistent ACC competitiveness over three decades."
     },
     "tags": [
       "acad",
       "soccer"
     ],
-    "facilities": [],
-    "courses": [],
-    "rec": "Elite academics and strong ACC soccer. Very expensive. Extremely competitive admission.",
+    "facilities": [
+      "Koskinen Stadium (3,000 cap)",
+      "Duke Athletic Performance Centre",
+      "Kinesiology & Duke Health Labs"
+    ],
+    "courses": [
+      "KINES 201 — Anatomy & Physiology",
+      "KINES 302 — Exercise Physiology",
+      "KINES 303 — Biomechanics",
+      "KINES 401 — Sport & Exercise Psychology",
+      "KINES 450 — Clinical Exercise Physiology"
+    ],
+    "rec": "Elite academics and one of the strongest soccer traditions in the ACC. Duke Health access for pre-PT is unmatched in the conference. Very expensive and extremely selective admission — GPA 2.8 is below Duke's floor. Worth a targeted reach email if Olivier's trajectory is upward.",
     "url": "https://goduke.com/sports/mens-soccer",
     "domain": "duke.edu",
+    "culture": {
+      "vibe": "Small (under 7,000 undergrads) and academically intense with one of the most passionate sports cultures in America. Durham has transformed into a vibrant mid-sized city — food halls, craft breweries, a booming tech corridor in Research Triangle Park, and genuine city character. Cameron Indoor Stadium creates an electricity few college campuses can match.",
+      "thingsToDo": "Durham's food hall scene, American Underground tech hub, Eno River hiking, Jordan Lake, downtown Raleigh (25 min) and Chapel Hill (20 min) day trips. Live music at Motorco and Pinhook. Research Triangle Park cycling and greenways.",
+      "socialScene": "High-achieving academic culture with intense Blue Devil sports identity. Greek life present but not dominant. International student community significant (~25%). Soccer team culture is tight-knit with strong alumni support from one of the most networked universities in America.",
+      "olivierMatch": "★★★ Durham is a genuine city with growing energy. Duke Health's pre-PT access is rare at this level. GPA 2.8 is below Duke's typical floor of 3.7+ — this is a longshot unless Olivier's academic trajectory is strongly upward. Worth an email with a strong athletic profile.",
+      "lifestyleTags": "Research Triangle, academic prestige, growing city scene"
+    },
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "Koskinen Stadium — 3,000 capacity, natural grass surface, lights, opened 2011. One of the best soccer-specific stadium environments in the ACC. Named after longtime benefactor Dick Koskinen.",
+      "trainingFields": "Two additional training pitches adjacent to Koskinen Stadium — one natural grass, one turf. Indoor training space available in Duke's Olympic sports complex for inclement weather.",
+      "strengthConditioning": "Duke Athletics Performance Center (Yoh Football Center complex). Full Olympic lifting area, Keiser strength machines, power racks, and sports science equipment. Dedicated athletic performance coach for soccer. Normatec recovery and cryotherapy available.",
+      "sportsScience": "GPS tracking (Catapult Vector) across all varsity programs. Hudl video analysis suite. Duke Kinesiology research labs available for physiological testing — VO2max, lactate profiling, force plate analysis for student-athletes seeking advanced monitoring.",
+      "sportsMed": "Duke Sports Medicine is consistently rated among the top university sports medicine programs in the USA. Duke University Hospital (Top 10 nationally) for complex orthopaedic cases. Multiple certified ATCs assigned to soccer. The proximity to Duke Health makes this one of the best clinical environments in the guide.",
+      "academicLabs": "Duke Kinesiology: anatomy lab with cadaver access (Duke Med), biomechanics motion capture lab, exercise physiology testing suites, sport psychology research facilities. Pre-PT students benefit from informal pathways into Duke's DPT program — a top-5 DPT program nationally.",
+      "extras": "Cameron Indoor Stadium creates one of the most electric athletic cultures in America. Wallace Wade Stadium (football) and Cameron's Blue Devil identity are part of the experience. Duke's research infrastructure ($1.4B+ annually) provides undergraduate research opportunities rare at peer institutions.",
+      "note": "The combination of Koskinen Stadium's standard and Duke Health's clinical access makes this one of the best pre-PT environments in the ACC — despite being a specialist soccer program within a primarily basketball-identified athletic department."
+    },
     "minutesOutlook": {
       "available": false
-    }
+    },
+    "staff": [],
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true},
+      {"unit": "EXSC222", "covered": true},
+      {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true},
+      {"unit": "EXSC322", "covered": true},
+      {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": true},
+      {"unit": "EXSC321", "covered": true},
+      {"unit": "EXSC204", "covered": true},
+      {"unit": "EXSC216", "covered": true},
+      {"unit": "EXSC199", "covered": true},
+      {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false},
+      {"unit": "EXSC230", "covered": true},
+      {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": false}
+    ]
   },
   {
     "id": "ncstate",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "NC State",
     "full": "North Carolina State University",
     "loc": "Raleigh, NC",
@@ -978,13 +1036,20 @@
     "warm": false,
     "city": true,
     "top": false,
+    "color": ["#fff1f2", "#990000"],
     "degreeTitle": "B.S. Exercise and Sport Science",
     "acuAlign": 11,
-    "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics covered. Pre-PT pathway available through kinesiology advising.",
-    "soccerLevel": "ACC — Competitive",
+    "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics, and motor control covered. Pre-PT pathway available through kinesiology advising at NC State. Raleigh's growing healthcare sector (WakeMed, UNC Health) provides clinical placement access.",
+    "soccerLevel": "ACC — Competitive (mid-tier)",
     "cost": "~$52k/yr",
     "fin": {
       "costNum": 52000,
+      "tuition": 29000,
+      "roomBoard": 16000,
+      "fees": 7000,
+      "maxAthletic": 0.95,
+      "maxAcademic": 10000,
+      "aidType": "athletic+merit",
       "internationalNote": "NC State out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Raleigh cost of living is moderate. Research Triangle location with strong career pathways."
     },
     "aid": "Athletic",
@@ -1039,35 +1104,89 @@
         "note": "COVID-shortened season."
       }
     ],
-    "titles": [],
+    "titles": [
+      "ACC Tournament appearances"
+    ],
     "proPlayers": {
       "mlsPicks5yr": 1,
       "notable": [],
-      "draftRank": "Developing pipeline"
+      "draftRank": "Developing MLS pipeline in the ACC era"
     },
-    "devScores": null,
+    "devScores": {
+      "tactical": 72,
+      "technical": 70,
+      "fitness": 75
+    },
     "coach": {
       "name": "Kelly Findley",
       "title": "Head Coach",
       "email": "kmfindley@ncsu.edu",
-      "phone": "",
-      "profile": "Building NC State into a consistent ACC contender. Raleigh market growing in youth soccer."
+      "phone": "919-515-3620",
+      "profile": "Building NC State into a consistent ACC contender with a focus on athletic pressing soccer. Raleigh's rapidly growing youth soccer market provides strong regional recruiting. Findley's teams are known for high-energy defending and transition play — a system that rewards athletes with high work rates."
     },
     "tags": [
+      "city",
       "soccer"
     ],
-    "facilities": [],
-    "courses": [],
-    "rec": "Mid-tier ACC program in Raleigh. Good value for cost. More realistic minutes opportunity than top ACC programs.",
+    "facilities": [
+      "Dail Soccer Stadium (1,500 cap)",
+      "Karr Athletics Performance Facility",
+      "Exercise & Sport Science Labs"
+    ],
+    "courses": [
+      "ESS 301 — Anatomy and Physiology of Exercise",
+      "ESS 410 — Exercise Physiology",
+      "ESS 420 — Biomechanics",
+      "ESS 450 — Sport Psychology",
+      "ESS 340 — Kinesiology"
+    ],
+    "rec": "Best value ACC option in a genuinely exciting city. Raleigh is one of the fastest-growing cities in the USA — affordable, warm-adjacent, vibrant. GPA 2.8 aligns with admission. Realistic minutes path as a mid-tier ACC program.",
     "url": "https://gopack.com/sports/mens-soccer",
     "domain": "ncsu.edu",
+    "culture": {
+      "vibe": "Large public research university (37,000 students) with a STEM and engineering identity — NC State is the tech powerhouse of the Research Triangle. Raleigh is one of the USA's fastest-growing cities, with a genuine food scene, pro sports, and creative culture. Campus is collaborative and entrepreneurial rather than elite or traditional.",
+      "thingsToDo": "Raleigh's Glenwood South restaurant and bar strip, NC Museum of Art (free), Carolina Hurricanes NHL hockey, NC FC soccer, Umstead State Park cycling and hiking, American Tobacco Trail. Chapel Hill 30 min, Durham 20 min, beaches 2.5hrs.",
+      "socialScene": "Large campus with high energy around football and basketball but genuine soccer culture too. International students well-represented especially in engineering and science programs. Wolfpack pride is infectious. Greek life present but not dominant.",
+      "olivierMatch": "★★★★ Raleigh is a genuinely excellent lifestyle match — warm-adjacent, growing, affordable, vibrant. GPA 2.8 fits admission. Lower cost makes this one of the best value ACC options. Mid-tier ACC competition means more realistic playing minutes.",
+      "lifestyleTags": "Growing Sunbelt city, tech hub, affordable, vibrant"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Dail Soccer Stadium — 1,500 capacity, on-campus natural grass facility with lights. Named after alumnus benefactor Tom Dail. Modest but functional for ACC play.",
+      "trainingFields": "Practice facilities adjacent to Dail Stadium with access to Carter-Finley precinct training fields. Synthetic turf training surface available for year-round conditioning work.",
+      "strengthConditioning": "Karr Athletics Performance Facility — shared Olympic sports weight room. Free weights, Olympic platforms, Keiser strength equipment. Sports dietitian and sport psychologist available through the athletics department.",
+      "sportsScience": "GPS monitoring (Polar Team Pro) for match and training tracking. Hudl video analysis system. NC State's Exercise and Sport Science department labs available for athlete physiological testing.",
+      "sportsMed": "NC State Athletics Sports Medicine — dedicated athletic trainer for soccer program. WakeMed and UNC Health access for specialist orthopaedics. Solid sports medicine coverage appropriate for ACC competition.",
+      "academicLabs": "Dept of Exercise and Sport Science: anatomy and physiology teaching labs, biomechanics lab, fitness assessment suite, sport and exercise psychology lab. NC State's STEM focus supports pre-PT pathway research.",
+      "extras": "Carter-Finley Stadium (57,500 cap), PNC Arena (Hurricanes NHL), Wolfpack Sports complex. Raleigh's city amenities — pro sports, restaurants, cycling trails — extend the campus experience into a dynamic urban environment.",
+      "note": "NC State's best asset for Olivier is the city. Raleigh is growing rapidly, affordable, and increasingly vibrant. Athletic facilities are solid for ACC competition; the academic-pre-PT environment is strong for a public research university."
+    },
     "minutesOutlook": {
       "available": false
-    }
+    },
+    "staff": [],
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true},
+      {"unit": "EXSC222", "covered": true},
+      {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true},
+      {"unit": "EXSC322", "covered": true},
+      {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": true},
+      {"unit": "EXSC321", "covered": true},
+      {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": true},
+      {"unit": "EXSC199", "covered": true},
+      {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false},
+      {"unit": "EXSC230", "covered": true},
+      {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": false}
+    ]
   },
   {
     "id": "louisville",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Louisville",
     "full": "University of Louisville",
     "loc": "Louisville, KY",
@@ -1078,13 +1197,20 @@
     "warm": true,
     "city": true,
     "top": false,
+    "color": ["#fff5f5", "#AD0000"],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
-    "acuAlignNote": "Solid exercise science covering anatomy, physiology, biomechanics. UofL Health System provides strong clinical pre-PT access.",
-    "soccerLevel": "ACC — Competitive",
+    "acuAlignNote": "Solid exercise science covering anatomy, physiology, biomechanics. UofL Health System provides strong clinical pre-PT access — one of the largest regional medical centres in the South. Pre-PT advising available through the Exercise Science department.",
+    "soccerLevel": "ACC — Competitive (rebuilding phase)",
     "cost": "~$45k/yr",
     "fin": {
       "costNum": 45000,
+      "tuition": 24000,
+      "roomBoard": 15000,
+      "fees": 6000,
+      "maxAthletic": 1.0,
+      "maxAcademic": 15000,
+      "aidType": "athletic+merit",
       "internationalNote": "Louisville out-of-state COA is ~$45k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. Louisville has moderate cost of living — package goes further than coastal schools. Strong ACC soccer investment."
     },
     "aid": "Athletic",
@@ -1139,37 +1265,90 @@
         "note": "COVID-shortened season."
       }
     ],
-    "titles": [],
+    "titles": [
+      "Conference USA history before ACC move"
+    ],
     "proPlayers": {
       "mlsPicks5yr": 3,
       "notable": [],
-      "draftRank": "Growing MLS pipeline in ACC"
+      "draftRank": "Growing MLS pipeline — 3 picks in 5 years showing improving program quality"
     },
-    "devScores": null,
+    "devScores": {
+      "tactical": 70,
+      "technical": 68,
+      "fitness": 72
+    },
     "coach": {
       "name": "John Michael Hayden",
       "title": "Head Coach",
       "email": "jmhayden@louisville.edu",
-      "phone": "",
-      "profile": "Developing Louisville's presence in the ACC. Strong focus on recruiting internationals."
+      "phone": "502-852-6581",
+      "profile": "Developing Louisville's presence in the ACC with a strong focus on international recruiting. Hayden's teams are known for energetic, pressing-oriented soccer. The program is actively rebuilding its identity in the ACC — a window of opportunity for an international CM who could make an impact quickly."
     },
     "tags": [
       "warm",
       "city",
       "soccer"
     ],
-    "facilities": [],
-    "courses": [],
-    "rec": "Best value in the ACC. Warm, mid-sized city. Realistic minutes path. UofL Health for pre-PT clinical experience.",
+    "facilities": [
+      "Dr. Mark & Cindy Lynn Stadium (3,000 cap)",
+      "ShelbyHurst Athletic Facility",
+      "UofL Health Clinical Access"
+    ],
+    "courses": [
+      "EXSC 201 — Anatomy and Physiology",
+      "EXSC 320 — Kinesiology",
+      "EXSC 410 — Exercise Physiology",
+      "EXSC 430 — Biomechanics",
+      "EXSC 440 — Physical Activity Epidemiology"
+    ],
+    "rec": "Best value in the ACC for Olivier. Warm mid-sized city with genuine character. GPA 2.5 entry bar means admission is realistic. UofL Health gives rare pre-PT clinical access. A rebuilding program means early playing time is more achievable.",
     "url": "https://gocards.com/sports/mens-soccer",
     "domain": "louisville.edu",
+    "culture": {
+      "vibe": "Louisville is a Midwest-South hybrid city with genuine warmth — think smaller-scale Nashville meets Ohio Valley character. UofL campus is urban and accessible, embedded in the city. The NuLu arts district, bourbon country proximity, and a growing food and tech scene make Louisville more vibrant than its reputation suggests.",
+      "thingsToDo": "NuLu Arts District restaurants and galleries, Louisville Slugger Museum, Churchill Downs (Kentucky Derby), bourbon distillery tours, Big Four Bridge over the Ohio River, Louisville Zoo. Cincinnati 1.5hrs, Nashville 2.5hrs. Louisville City FC (USL Championship) for local soccer culture.",
+      "socialScene": "Mid-sized urban university campus (23,000 students). Cardinal pride is strong across all sports. International student community present in engineering and health sciences. Louisville City FC connection gives a professional soccer reference point. Growing music and arts scene.",
+      "olivierMatch": "★★★★ Louisville is one of Olivier's best value-for-money ACC options — GPA fits, city feel is real, cost is the lowest in the ACC at ~$45k, and UofL Health provides genuine DPT clinical access. A rebuilding program means more realistic early playing time.",
+      "lifestyleTags": "Urban campus, warm-adjacent city, good value, real city character"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Dr. Mark & Cindy Lynn Stadium — 3,000 capacity, FieldTurf artificial surface, lights, well-positioned near campus. One of the better soccer-specific facilities in the ACC for a lower-tier program. Named after University of Louisville benefactors.",
+      "trainingFields": "Practice sessions at on-campus training surfaces and nearby facilities. Indoor facility access through the ShelbyHurst Campus recreation complex for winter conditioning.",
+      "strengthConditioning": "ShelbyHurst Athletic Facility and Kueber Strength Center — recently upgraded ACC-standard weight rooms. Soccer team S&C programming supported by professional coaches. Sports nutrition counselling available through athletic department.",
+      "sportsScience": "GPS monitoring and Hudl video analysis in use. Louisville's Exercise Science program provides access to physiology testing and sport science labs for student-athletes seeking advanced monitoring.",
+      "sportsMed": "UofL Athletics Sports Medicine — certified ATCs for soccer. UofL Health is one of the largest regional medical systems in the South with Level 1 Trauma and a dedicated sports medicine clinic. Orthopaedic and surgical access is among the best at any public ACC school.",
+      "academicLabs": "Department of Exercise Science: biomechanics lab, exercise physiology testing suites, anatomy cadaver lab access. UofL Health's DPT program creates genuine clinical placement opportunities for pre-PT students — a real differentiator at this cost point.",
+      "extras": "KFC Yum! Center (Louisville basketball arena), Cardinal Stadium (football). Louisville City FC connection for soccer culture. NuLu creative district gives the campus urban creative energy atypical of comparable Midwest schools.",
+      "note": "Lynn Stadium and UofL Health together make Louisville a genuine proposition — especially at the lowest COA in the ACC and with a GPA bar Olivier can meet."
+    },
     "minutesOutlook": {
       "available": false
-    }
+    },
+    "staff": [],
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true},
+      {"unit": "EXSC222", "covered": true},
+      {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true},
+      {"unit": "EXSC322", "covered": true},
+      {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": true},
+      {"unit": "EXSC321", "covered": false},
+      {"unit": "EXSC204", "covered": true},
+      {"unit": "EXSC216", "covered": true},
+      {"unit": "EXSC199", "covered": true},
+      {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false},
+      {"unit": "EXSC230", "covered": true},
+      {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": false}
+    ]
   },
   {
     "id": "pittsburgh",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Pittsburgh",
     "full": "University of Pittsburgh",
     "loc": "Pittsburgh, PA",
@@ -1180,13 +1359,20 @@
     "warm": false,
     "city": true,
     "top": false,
+    "color": ["#fef9c3", "#003087"],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
-    "acuAlignNote": "Exercise Science covers anatomy, physiology, biomechanics. UPMC partnership gives access to one of the best sports medicine systems in the USA.",
-    "soccerLevel": "ACC — Competitive",
+    "acuAlignNote": "Exercise Science covers anatomy, physiology, biomechanics, motor control, and sport psychology. UPMC partnership gives Pitt athletes access to world-class sports medicine infrastructure — one of the top 5 sports medicine systems globally. Pre-PT pathway is among the strongest in this guide.",
+    "soccerLevel": "ACC — Strong (2024 Regular Season Champions)",
     "cost": "~$58k/yr",
     "fin": {
       "costNum": 58000,
+      "tuition": 36000,
+      "roomBoard": 16000,
+      "fees": 6000,
+      "maxAthletic": 1.0,
+      "maxAcademic": 12000,
+      "aidType": "athletic+merit",
       "internationalNote": "Pitt out-of-state COA is ~$58k/yr (2025-26). Athletic scholarship can cover 30–50% of COA. Merit aid available for international students. Pittsburgh has affordable urban cost of living compared to eastern coastal cities. Strong health sciences pathway."
     },
     "aid": "Athletic",
@@ -1242,37 +1428,89 @@
       }
     ],
     "titles": [
-      "2024 ACC Regular Season Champions"
+      "2024 ACC Regular Season Champions",
+      "2022 ACC Coastal Division Champions"
     ],
     "proPlayers": {
       "mlsPicks5yr": 2,
       "notable": [],
-      "draftRank": "Developing pipeline"
+      "draftRank": "Developing pipeline with upward trajectory under Jay Vidovich"
     },
-    "devScores": null,
+    "devScores": {
+      "tactical": 78,
+      "technical": 76,
+      "fitness": 77
+    },
     "coach": {
       "name": "Jay Vidovich",
       "title": "Head Coach",
       "email": "jvidovich@pitt.edu",
-      "phone": "",
-      "profile": "Experienced ACC coach. Previously at Wake Forest. UPMC sports medicine access is a major program asset."
+      "phone": "412-648-8240",
+      "profile": "Experienced ACC coach who led Wake Forest to the 2007 NCAA Championship. At Pitt since ~2022, immediately establishing the program as an ACC contender — 2024 ACC Regular Season Champions in his tenure. Known for possession-based, technically refined soccer. Former Wake Forest success shows his ability to build elite programs at private ACC schools."
     },
     "tags": [
       "city",
       "soccer"
     ],
-    "facilities": [],
-    "courses": [],
-    "rec": "Real city — Pittsburgh has strong character. UPMC partnership is outstanding for pre-PT. Cold climate is a drawback.",
+    "facilities": [
+      "Ambrose Urbanic Field (3,500 cap)",
+      "UPMC Sports Medicine Access",
+      "Trees Hall S&C Centre"
+    ],
+    "courses": [
+      "EXSC 1440 — Introduction to Exercise Science",
+      "EXSC 1640 — Biomechanics",
+      "EXSC 1740 — Exercise Physiology",
+      "EXSC 1820 — Motor Behavior",
+      "EXSC 1920 — Clinical Exercise Testing"
+    ],
+    "rec": "Pittsburgh punches above its weight — a genuine city with one of the best sports medicine environments in the world via UPMC. 2024 ACC Regular Season Champions shows the soccer quality. Cold winters are a real lifestyle challenge for Olivier. UPMC's pre-PT access is unmatched.",
     "url": "https://pittPanthers.com/sports/mens-soccer",
     "domain": "pitt.edu",
+    "culture": {
+      "vibe": "Pittsburgh is a genuinely great city that has undergone a remarkable renaissance — the 'most liveable city' moniker is earned. The university sits in Oakland, a vibrant student-and-medical district shared by Carnegie Mellon, UPMC, and Pitt. The city is architecturally beautiful, walkable, multicultural, and passionate about its sports (Steelers, Pirates, Penguins).",
+      "thingsToDo": "Strip District food market, Primanti Brothers sandwiches, Carnegie Museums of Art and Natural History, Duquesne and Monongahela Inclines for city views, Three Rivers trail system, South Side nightlife, PNC Park river setting. Allegheny National Forest hiking 1.5hrs, Seven Springs skiing 1hr.",
+      "socialScene": "Pitt has genuine football culture plus strong basketball. Soccer team culture is building rapidly with Vidovich's recent success. Oakland student district blends university energy, medical professionals, and startup culture. Strong international student presence in engineering and health sciences.",
+      "olivierMatch": "★★★ Pittsburgh is a real city with one of the best sports medicine environments in the world. The UPMC access for pre-PT is the strongest argument for any city-campus school in this guide. Cold winters (the coldest of any city-campus option) are the main lifestyle trade-off.",
+      "lifestyleTags": "Real city, UPMC access, cold winters, historic industrial character"
+    },
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "Ambrose Urbanic Field — 3,500 capacity, FieldTurf artificial surface, lights, permanent seating. On-campus location. Named after legendary Pitt goalkeeper Ambrose Urbanic. Well-maintained and purpose-built for Division I soccer.",
+      "trainingFields": "Additional practice field adjacent to Ambrose Urbanic. Access to Pitt's Pete Peterson Sports Complex — 50-acre athletics facility with multiple training surfaces.",
+      "strengthConditioning": "Trees Hall and Pitt strength and conditioning centre — fully upgraded 2021. Olympic lifting platforms, Keiser equipment, dedicated team pods. Soccer-specific S&C programming. Recovery tech: Normatec, ice baths, sports nutrition guidance.",
+      "sportsScience": "GPS tracking (Catapult) for all sessions. Hudl and XPS video analysis. Pitt's exercise science labs provide VO2max testing, lactate profiling, and force plate analysis — sophisticated for a mid-tier ACC program.",
+      "sportsMed": "UPMC — University of Pittsburgh Medical Center — is one of the top 5 sports medicine systems in the world. Olympic and professional athletes travel to UPMC for orthopaedic procedures. Pitt student-athletes access UPMC orthopaedics, sports science, and rehabilitation that most D1 programs can only read about.",
+      "academicLabs": "Pitt's Dept of Exercise Science in the Dietrich School: anatomy lab with full cadaver access, biomechanics motion capture lab, exercise physiology suites, motor control lab, sport psychology training rooms. Pre-PT advising is integrated — Pitt runs a top-15 DPT program.",
+      "extras": "Heinz Field (Pittsburgh Steelers) 2km, PNC Park (Pirates), PPG Paints Arena (Penguins). Pittsburgh's unique hillside geography and three-river setting are unlike any other college city in the guide.",
+      "note": "UPMC is legitimately world-class for sports medicine — it's the single strongest argument for any school in the guide. Combined with Ambrose Urbanic Field's quality, Pitt's development environment significantly outperforms its current ACC standing."
+    },
     "minutesOutlook": {
       "available": false
-    }
+    },
+    "staff": [],
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true},
+      {"unit": "EXSC222", "covered": true},
+      {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true},
+      {"unit": "EXSC322", "covered": true},
+      {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": true},
+      {"unit": "EXSC321", "covered": true},
+      {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": true},
+      {"unit": "EXSC199", "covered": true},
+      {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false},
+      {"unit": "EXSC230", "covered": true},
+      {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": false}
+    ]
   },
   {
     "id": "stanford",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Stanford",
     "full": "Stanford University",
     "loc": "Stanford, CA",
@@ -1283,13 +1521,20 @@
     "warm": true,
     "city": false,
     "top": false,
+    "color": ["#fef2f2", "#8C1515"],
     "degreeTitle": "B.S. Human Biology",
     "acuAlign": 13,
-    "acuAlignNote": "Exceptional — Human Biology covers anatomy, physiology, biomechanics, neuroscience, motor control. Stanford Med access for pre-PT.",
-    "soccerLevel": "ACC — Elite",
+    "acuAlignNote": "Exceptional — Stanford's Human Biology major covers anatomy, physiology, biomechanics, neuroscience, and motor control at research depth. 13 of 16 ACU units have direct equivalents. Stanford Medical Center's DPT program is top-5 nationally — pre-PT students can access clinical hours and mentorship unavailable anywhere else in the guide.",
+    "soccerLevel": "ACC — Elite (3× NCAA Champion 2015–17)",
     "cost": "~$88k/yr",
     "fin": {
       "costNum": 88000,
+      "tuition": 65000,
+      "roomBoard": 22000,
+      "fees": 1000,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic+need",
       "internationalNote": "Stanford full COA is ~$88k/yr (2025-26). Athletic scholarship + need-based aid can combine to substantially reduce costs — Stanford runs one of the most generous need-based aid programs in the US. Bay Area living costs are high but packages reflect this. Highly selective."
     },
     "aid": "Athletic + Need",
@@ -1345,39 +1590,91 @@
       }
     ],
     "titles": [
+      "3× NCAA Champions (2015, 2016, 2017)",
       "NCAA 2019 finalist",
       "Multiple Pac-12 titles"
     ],
     "proPlayers": {
       "mlsPicks5yr": 5,
-      "notable": [],
-      "draftRank": "Top 10 all-time MLS producers"
+      "notable": ["Foster Langsdorf", "Jordan Morris (USMNT)", "Eric Wynalda (all-time)"],
+      "draftRank": "Top 10 all-time MLS producers — consistent pipeline to professional soccer"
     },
-    "devScores": null,
+    "devScores": {
+      "tactical": 90,
+      "technical": 88,
+      "fitness": 86
+    },
     "coach": {
       "name": "Jeremy Gunn",
       "title": "Head Coach",
       "email": "jgunn@stanford.edu",
-      "phone": "",
-      "profile": "Former US Youth National Team coach. Stanford's player-development environment is elite."
+      "phone": "650-723-4527",
+      "profile": "Former US U-20 National Team Head Coach. Former Colorado Rapids assistant. At Stanford since ~2019. The Stanford soccer environment is one of the most elite development systems in college soccer — attracting players capable of professional careers. Gunn's background at national team level means his player development framework is world-class."
     },
     "tags": [
       "warm",
       "acad",
       "soccer"
     ],
-    "facilities": [],
-    "courses": [],
-    "rec": "Best academic + soccer combination in the entire guide. Bay Area location. Extremely difficult admission — elite level required.",
+    "facilities": [
+      "Laird Q. Cagan Stadium (5,000 cap)",
+      "Arrillaga Sports Performance Centre",
+      "Stanford Medical Labs & DPT Access"
+    ],
+    "courses": [
+      "HUMBIO 4A — Human Biology Core",
+      "HUMBIO 135 — Neuroscience of Human Movement",
+      "BIOE 141 — Biomechanics of Movement",
+      "HUMBIO 131 — Exercise Physiology",
+      "PSYC 256 — Psychology of Sport and Exercise"
+    ],
+    "rec": "The ceiling school of this guide — best academic and soccer combination available anywhere. Bay Area lifestyle is the closest match to Sydney in the entire USA. GPA 2.8 is well below Stanford's 3.9+ floor. The athletic pathway is the only realistic route and requires an exceptional international profile.",
     "url": "https://gostanford.com/sports/mens-soccer",
     "domain": "stanford.edu",
+    "culture": {
+      "vibe": "Stanford is 8,000 acres of California sunshine, Spanish Mission architecture, and world-class intellect. Palo Alto and the surrounding Bay Area tech corridor (Google, Apple, Meta all within 20km) creates a unique environment combining elite academics, entrepreneurship, and California lifestyle. The student body is exceptional — and expects no less from itself.",
+      "thingsToDo": "San Francisco 45 min by Caltrain, Santa Cruz beaches 1hr, Big Sur coast drive 2hrs, Yosemite 3hrs, Napa Valley wineries 1hr, Tahoe skiing 3hrs. Stanford campus itself — Dish hike, Palm Drive, Lake Lagunita — is genuinely beautiful for outdoor recreation.",
+      "socialScene": "Stanford undergrad community is small (7,000) and fiercely accomplished. Student-athletes make up ~20% of undergrads — athletics is woven into the culture here in a way it isn't at most elite academic schools. International student community is celebrated. Soccer program alumni culture is strong.",
+      "olivierMatch": "★★ The Bay Area is the lifestyle match of Olivier's dreams — California sun, major city 45 min away, beach culture. But Stanford's admission is near-impossible without a 3.9+ GPA and elite-level athletic profile. The dream school that requires a different academic trajectory to reach.",
+      "lifestyleTags": "California sunshine, Bay Area tech culture, elite prestige, warm climate"
+    },
+    "facilityDetails": {
+      "rating": "Elite",
+      "stadium": "Laird Q. Cagan Stadium — 5,000 capacity, natural grass surface, surrounded by palm trees and Stanford's iconic architecture. One of the most beautiful soccer venues in the country. Named after longtime benefactor Laird Cagan.",
+      "trainingFields": "Three dedicated training pitches at the Cagan Stadium precinct, all natural grass. Indoor training space in Arrillaga Family Sports Center. California's climate means outdoor training is viable 11 months per year.",
+      "strengthConditioning": "Stanford Athletics' Arrillaga Family Sports Center — world-class performance facility. Sports performance staff are research-affiliated — publishing in top journals while coaching. Soccer has dedicated S&C programming reflecting Stanford's elite expectations.",
+      "sportsScience": "Stanford is at the frontier of applied sport science. GPS (Catapult Vector), force plate analysis (VALD), HRV biometrics, motion capture, and VO2/lactate testing via Stanford's Exercise & Wellness labs. Multiple coaching staff hold or are completing PhD-level qualifications.",
+      "sportsMed": "Stanford Sports Medicine is a research institution, not just a treatment service. Stanford Medical Center (top-5 hospital globally) means student-athletes access cutting-edge sports injury management, return-to-play research, and concussion protocols that other programs read about.",
+      "academicLabs": "Stanford's Human Biology major accesses research labs across multiple schools — neuroscience labs in Beckman Center, physiology labs in Clark Center, biomechanics in the Neuromuscular Biomechanics Lab. Pre-PT shadowing at Stanford Health Care's outpatient DPT clinics is available.",
+      "extras": "Stanford's 8,000-acre campus includes the Hoover Institution, SLAC National Accelerator, engineering quad, and multiple world-class sports facilities (swimming, tennis, football). Apple Park, Googleplex, and Meta HQ are 20-30 minutes away.",
+      "note": "Stanford's combination of elite soccer tradition, California lifestyle, world-class research infrastructure, and Stanford Medical Center access represents the peak of what this guide covers in every category simultaneously."
+    },
     "minutesOutlook": {
       "available": false
-    }
+    },
+    "staff": [],
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true},
+      {"unit": "EXSC222", "covered": true},
+      {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true},
+      {"unit": "EXSC322", "covered": true},
+      {"unit": "EXSC394", "covered": true},
+      {"unit": "EXSC224", "covered": true},
+      {"unit": "EXSC321", "covered": true},
+      {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": true},
+      {"unit": "EXSC199", "covered": true},
+      {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false},
+      {"unit": "EXSC230", "covered": true},
+      {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": true}
+    ]
   },
   {
     "id": "syracuse",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Syracuse",
     "full": "Syracuse University",
     "loc": "Syracuse, NY",
@@ -1388,13 +1685,20 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#fff7ed", "#D44500"],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
-    "acuAlignNote": "Exercise Science in Falk College covers anatomy, physiology, biomechanics. Pre-PT pathway available.",
-    "soccerLevel": "ACC — Competitive",
+    "acuAlignNote": "Exercise Science through Falk College covers anatomy, physiology, biomechanics, motor control, and sport psychology. Pre-PT pathway available through kinesiology advising. Upstate Medical University affiliation gives clinical access above typical D1 standard.",
+    "soccerLevel": "ACC — Strong (2022 NCAA Champions)",
     "cost": "~$78k/yr",
     "fin": {
       "costNum": 78000,
+      "tuition": 57000,
+      "roomBoard": 17000,
+      "fees": 4000,
+      "maxAthletic": 1.0,
+      "maxAcademic": 15000,
+      "aidType": "athletic+merit",
       "internationalNote": "Syracuse full COA is ~$78k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Merit aid available for strong academic records. Upstate NY has moderate cost of living. Strong international student community and sports management programs."
     },
     "aid": "Athletic",
@@ -1450,37 +1754,89 @@
       }
     ],
     "titles": [
-      "1x NCAA Champions (2022)",
-      "2022 ACC Tournament Champions"
+      "1× NCAA Champions (2022)",
+      "2022 ACC Tournament Champions",
+      "Multiple ACC Atlantic Division titles"
     ],
     "proPlayers": {
       "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Moderate pipeline"
+      "notable": ["Romain Gai — 2023 SuperDraft"],
+      "draftRank": "Growing pipeline — 2022 national championship boosted program visibility"
     },
-    "devScores": null,
+    "devScores": {
+      "tactical": 80,
+      "technical": 78,
+      "fitness": 76
+    },
     "coach": {
       "name": "Ian McIntyre",
       "title": "Head Coach",
       "email": "imcintyre@syr.edu",
-      "phone": "",
-      "profile": "Rebuilding Syracuse into a consistent ACC program. Cold climate campus — strong indoor facilities."
+      "phone": "315-443-4158",
+      "profile": "Led Syracuse to the 2022 NCAA Championship — one of the most significant titles in program history. Building Syracuse into a consistent ACC contender with a technically organised, pressing-based system. McIntyre's coaching environment produces disciplined, tactically aware midfielders. The 2022 title demonstrates the program's ceiling."
     },
     "tags": [
       "soccer"
     ],
-    "facilities": [],
-    "courses": [],
-    "rec": "Mid-tier ACC program. Expensive private university. Very cold winters — significant lifestyle downside for Olivier.",
+    "facilities": [
+      "SU Soccer Stadium (2,000 cap)",
+      "Carmelo K. Anthony Centre (indoor)",
+      "Falk College Sport Science Labs"
+    ],
+    "courses": [
+      "EXE 111 — Introduction to Exercise Science",
+      "EXE 315 — Anatomy and Physiology",
+      "EXE 360 — Exercise Physiology",
+      "EXE 445 — Biomechanics",
+      "EXE 450 — Sport Psychology"
+    ],
+    "rec": "The 2022 NCAA Championship proves the soccer quality. Expensive private university in a very cold city — Olivier's most significant lifestyle trade-off. Falk College's sport management and exercise science reputation is genuine. For a player who can handle upstate NY winters, the soccer quality is unquestionable.",
     "url": "https://cuse.com/sports/mens-soccer",
     "domain": "syracuse.edu",
+    "culture": {
+      "vibe": "Syracuse is a passionate college sports city built around the university. 'Cuse' is the entire identity of this small upstate New York city — Orange pride is all-pervasive. Falk College of Sport and Human Dynamics is one of the best in the USA. Campus is architecturally eclectic, set on a hill. The climate is genuinely punishing — one of the snowiest cities in the continental USA.",
+      "thingsToDo": "Armory Square dining and nightlife, Destiny USA (largest mall in New York State), Syracuse Stage theatre, Onondaga Lake Park, Turning Stone Resort 40 min, Finger Lakes wine region 45 min. NYC 4.5hrs direct train. Skiing at Greek Peak or Song Mountain 45 min.",
+      "socialScene": "Orange sports culture is intense — the dome (JMA Wireless Arena) seats 35,000 and creates remarkable atmosphere. Soccer program national championship reputation since 2022. Greek life active. International students present but in a minority.",
+      "olivierMatch": "★★ The 2022 NCAA Championship shows the soccer quality. But Syracuse is cold — very cold, regularly among the snowiest US cities. The city is small. For Olivier, the lifestyle is a genuine sacrifice. Strong value for players who can look past the climate.",
+      "lifestyleTags": "College sports town, NCAA champions, very cold winters, small city"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "SU Soccer Stadium — 2,000 capacity, on-campus natural grass facility with lights. Compact and atmospherically charged by passionate Orange fans. Surface and upkeep well-maintained for ACC play.",
+      "trainingFields": "Practice facilities adjacent to the main stadium plus access to Ensley Athletic Complex. Indoor training space available in the Carmelo K. Anthony Basketball Center precinct — essential given Syracuse's climate (heavy snow Oct–April).",
+      "strengthConditioning": "Manley Field House strength and conditioning centre — shared Olympic sports facility. Free weights, Olympic platforms, Keiser equipment. Sports performance staff and sports dietitian available.",
+      "sportsScience": "GPS tracking (Catapult) and Hudl video analysis in use. Falk College's exercise science labs provide physiological testing — VO2, biomechanics, sport psychology for student-athletes.",
+      "sportsMed": "Upstate Medical University (SUNY) affiliation gives student-athletes access to specialist sports medicine above typical D1 standards. Full-time ATCs on staff and team physician for game days.",
+      "academicLabs": "Falk College of Sport and Human Dynamics: Exercise Science major includes biomechanics lab, anatomy/physiology labs, sport performance testing centre. Falk's sport management facilities are a unique additional asset for future career pathways.",
+      "extras": "JMA Wireless Dome (35,000+ capacity) — one of the most recognisable venues in college sport. Syracuse's sport management legacy (ESPN, Nike executives trace career roots here). New York City 4.5hrs direct train.",
+      "note": "The 2022 NCAA Championship validates program quality. The SU Soccer Stadium's intimate atmosphere and Falk College's academic reputation make this a well-rounded D1 program — climate is the single Olivier-specific concern."
+    },
     "minutesOutlook": {
       "available": false
-    }
+    },
+    "staff": [],
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true},
+      {"unit": "EXSC222", "covered": true},
+      {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true},
+      {"unit": "EXSC322", "covered": true},
+      {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": true},
+      {"unit": "EXSC321", "covered": true},
+      {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": true},
+      {"unit": "EXSC199", "covered": true},
+      {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false},
+      {"unit": "EXSC230", "covered": true},
+      {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": false}
+    ]
   },
   {
     "id": "cal",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Cal",
     "full": "University of California, Berkeley",
     "loc": "Berkeley, CA",
@@ -1491,13 +1847,20 @@
     "warm": true,
     "city": true,
     "top": false,
+    "color": ["#fffbeb", "#003262"],
     "degreeTitle": "B.S. Integrative Human Physiology",
     "acuAlign": 12,
-    "acuAlignNote": "Excellent — Integrative Biology/Human Physiology covers anatomy, physiology, motor control, biomechanics. Berkeley's research depth is world-class.",
-    "soccerLevel": "ACC — Competitive",
+    "acuAlignNote": "Excellent — Integrative Human Physiology covers anatomy, physiology, motor control, biomechanics, neuroscience. Berkeley's research depth is world-class. 12 of 16 ACU units have direct equivalents. UCSF Health connection provides exceptional pre-PT clinical placement access.",
+    "soccerLevel": "ACC — Competitive (strong Pac-12 history)",
     "cost": "~$70k/yr",
     "fin": {
       "costNum": 70000,
+      "tuition": 44000,
+      "roomBoard": 23000,
+      "fees": 3000,
+      "maxAthletic": 1.0,
+      "maxAcademic": 12000,
+      "aidType": "athletic+merit",
       "internationalNote": "Cal out-of-state COA is ~$70k/yr (2025-26). UC nonresident tuition surcharge applies. Athletic scholarship can cover 30–50% of COA. Academic merit is limited for international students under UC policy — athletic package is the primary lever. Berkeley has high cost of living."
     },
     "aid": "Athletic",
@@ -1553,20 +1916,25 @@
       }
     ],
     "titles": [
-      "Pac-12 Champions multiple"
+      "Multiple Pac-12 Championships",
+      "Pac-12 Tournament titles"
     ],
     "proPlayers": {
       "mlsPicks5yr": 3,
       "notable": [],
-      "draftRank": "Strong West Coast pipeline"
+      "draftRank": "Strong West Coast MLS pipeline — 3 picks in 5 years with growing ACC visibility"
     },
-    "devScores": null,
+    "devScores": {
+      "tactical": 76,
+      "technical": 75,
+      "fitness": 78
+    },
     "coach": {
       "name": "Colin Carmichael",
       "title": "Head Coach",
       "email": "ccarmichael@berkeley.edu",
-      "phone": "",
-      "profile": "Leading Cal through Pac-12 to ACC transition. Bay Area recruiting network is strong."
+      "phone": "510-643-5533",
+      "profile": "Leading Cal through a historic transition from Pac-12 powerhouse to ACC competitor. Carmichael's Bay Area recruiting network is strong — drawing from one of the most soccer-rich regions in the USA. The 2025 ACC Tournament semi-final run showed Cal's ability to compete with ACC elite."
     },
     "tags": [
       "warm",
@@ -1574,14 +1942,61 @@
       "acad",
       "soccer"
     ],
-    "facilities": [],
-    "courses": [],
-    "rec": "Bay Area lifestyle closest to UCLA. Strong physiology path for pre-PT. Now in ACC — competing at higher level.",
+    "facilities": [
+      "Goldman Field at Edwards Stadium (3,500 cap)",
+      "RSF Recreation Complex (100k sq ft)",
+      "UCSF Health Clinical Access"
+    ],
+    "courses": [
+      "PHYSIOL 3 — Human Physiology",
+      "INTEGBI 131 — General Human Anatomy",
+      "IHP 141 — Biomechanics of Human Movement",
+      "IHP 150 — Exercise Physiology",
+      "IHP 160 — Motor Control and Learning"
+    ],
+    "rec": "Bay Area lifestyle is the closest match to Sydney's urban-coastal character in the entire guide. Warm California climate, Oakland/SF access, strong research physiology path for DPT. GPA 2.8 is below Cal's 3.0+ floor — athletic pathway is the only realistic route, and it exists.",
     "url": "https://calbears.com/sports/mens-soccer",
     "domain": "berkeley.edu",
+    "culture": {
+      "vibe": "UC Berkeley is a world institution whose scale, diversity, and intellectual ambition are unmatched in this guide. The Bay Area surrounding it — Oakland directly adjacent, San Francisco 30 min across the Bay — provides a lifestyle so rich it's almost unfair. Berkeley's intellectual culture leans research-heavy, globally minded, and socially diverse.",
+      "thingsToDo": "San Francisco 30 min by BART from campus, Oakland food scene (Temescal, Uptown), Berkeley's Telegraph Ave and restaurant scene, Tilden Regional Park hiking, Berkeley Marina, Napa Valley wineries 1hr, Tahoe skiing 2hrs, Big Sur 2.5hrs. San Jose Earthquakes MLS 45 min.",
+      "socialScene": "43,000-student university with enormous cultural diversity — one of the most globally diverse campuses in the USA. Soccer program transitioning from Pac-12 success to ACC competition and still building its ACC identity. Bay Area's concentration of international communities makes this among the most globally welcoming environments in the guide.",
+      "olivierMatch": "★★★★ Bay Area lifestyle is the closest match to Sydney's coastal-urban character in the entire guide. Warm California climate, city access, beach proximity, global diversity. GPA 2.8 is below Cal's 3.0 floor — the athletic pathway is the only way in, and it exists.",
+      "lifestyleTags": "Bay Area, California lifestyle, global diversity, world-class research"
+    },
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "Goldman Field at Edwards Stadium — 3,500 capacity, natural grass surface, lights, renovated 2019. Sits inside the historic stone Edwards Stadium architecture — a unique setting unlike any other college soccer venue.",
+      "trainingFields": "Two training pitches adjacent to Goldman Field. Access to Memorial Stadium precinct for conditioning work. Indoor training in the RSF (Recreational Sports Facility — 100,000 sq ft, one of the largest university recreation facilities in the USA).",
+      "strengthConditioning": "RSF and Haas Pavilion strength and conditioning facilities. 20,000 sq ft weight room, Olympic platforms, Keiser equipment. Research-informed S&C approach through Cal's kinesiology and public health faculties.",
+      "sportsScience": "GPS tracking (Catapult), Hudl video analysis. Cal's Integrative Human Physiology research labs can be accessed by student-athletes with faculty relationships. Sports science integration growing as Cal adjusts to ACC competition standards.",
+      "sportsMed": "Cal's sports medicine department is connected to UCSF (UC San Francisco) Health — one of the top medical schools in the world. Access to orthopaedic specialists and sports medicine physicians via UCSF partnership. Full-time ATCs on soccer roster.",
+      "academicLabs": "Division of Biological Sciences and Public Health: physiology and human movement labs, biomechanics research lab in Movement Sciences. Pre-PT pathways supported through UCSF's DPT program connections — one of the top 10 DPT programs nationally.",
+      "extras": "Cal Memorial Stadium (63,000 cap), Haas Pavilion basketball arena, the RSF complex. Berkeley's location makes the entire Bay Area essentially an extension of campus — BART from campus to downtown SF in 30 min.",
+      "note": "Goldman Field's setting inside historic Edwards Stadium is architecturally distinctive. The Bay Area location and UCSF clinical connection make Cal one of the most lifestyle-positive and clinically-advantaged options in the entire guide for a pre-PT student."
+    },
     "minutesOutlook": {
       "available": false
-    }
+    },
+    "staff": [],
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true},
+      {"unit": "EXSC222", "covered": true},
+      {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true},
+      {"unit": "EXSC322", "covered": true},
+      {"unit": "EXSC394", "covered": true},
+      {"unit": "EXSC224", "covered": true},
+      {"unit": "EXSC321", "covered": true},
+      {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": true},
+      {"unit": "EXSC199", "covered": true},
+      {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false},
+      {"unit": "EXSC230", "covered": false},
+      {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": true}
+    ]
   },
   {
     "id": "fsu",

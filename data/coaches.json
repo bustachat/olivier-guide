@@ -145,68 +145,13 @@
     "licence": "USSF A, NSCAA Advanced National"
   },
   {
-    "id": "yeagley",
-    "schoolId": "indiana",
-    "name": "Todd Yeagley",
-    "school": "Indiana University",
-    "div": "D1",
-    "conf": "Big Ten",
-    "yearsHC": 16,
-    "record": "16th season 2026. 2012 NCAA National Champion. 11 Big Ten titles. 4 consecutive Big Ten Tourn 2020-23. 39 MLS draftees.",
-    "mlsPlayers": 5,
-    "rank": 4,
-    "rankClass": "rk-elite",
-    "overallScore": 95,
-    "tacticalScore": 93,
-    "devScore": 92,
-    "ptPathScore": 85,
-    "ausConnection": false,
-    "bio": "Todd Yeagley enters his 16th season at Indiana in 2026. In 2012 he led the Hoosiers to the NCAA National Championship as a #16 seed — the first and only time a #16 seed has won the championship. His staff includes Christian Lomeli, Tanner Thompson, and Jacob Bushue as assistant coaches (all reachable at 812-855-0051). Son of legendary Jerry Yeagley who won 5 titles. Former Columbus Crew MLS player. 11 Hoosiers are in MLS as of the 2026 season.",
-    "strengths": [
-      "High-press tactical system",
-      "Pro development",
-      "Big Ten champion",
-      "Lab facilities"
-    ],
-    "staff": [
-      {
-        "name": "Christian Lomeli",
-        "role": "Assistant Coach",
-        "email": "clomeli@iu.edu",
-        "bg": "Full-time assistant coach."
-      },
-      {
-        "name": "Tanner Thompson",
-        "role": "Assistant Coach",
-        "email": "tannthom@iu.edu",
-        "bg": "Full-time assistant coach."
-      },
-      {
-        "name": "Jacob Bushue",
-        "role": "Assistant Coach",
-        "email": "jbushue@iu.edu",
-        "bg": "Full-time assistant coach."
-      }
-    ],
-    "contact": {
-      "email": "tyeagley@indiana.edu",
-      "phone": "812-855-9148"
-    },
-    "url": "https://iuhoosiers.com/sports/mens-soccer",
-    "color": [
-      "#ffe4e6",
-      "#e11d48"
-    ],
-    "licence": null
-  },
-  {
     "id": "wiese",
     "schoolId": "georgetown",
     "name": "Brian Wiese",
     "school": "Georgetown University",
     "div": "D1",
     "conf": "Big East Conference",
-    "rank": 5,
+    "rank": 4,
     "rankClass": "rk-elite",
     "overallScore": 95,
     "devScore": 93,
@@ -251,6 +196,61 @@
       "#0c4a6e"
     ],
     "licence": "USSF A, NSCAA Premier"
+  },
+  {
+    "id": "yeagley",
+    "schoolId": "indiana",
+    "name": "Todd Yeagley",
+    "school": "Indiana University",
+    "div": "D1",
+    "conf": "Big Ten",
+    "yearsHC": 16,
+    "record": "16th season 2026. 2012 NCAA National Champion. 11 Big Ten titles. 4 consecutive Big Ten Tourn 2020-23. 39 MLS draftees.",
+    "mlsPlayers": 5,
+    "rank": 5,
+    "rankClass": "rk-elite",
+    "overallScore": 95,
+    "tacticalScore": 93,
+    "devScore": 92,
+    "ptPathScore": 85,
+    "ausConnection": false,
+    "bio": "Todd Yeagley enters his 16th season at Indiana in 2026. In 2012 he led the Hoosiers to the NCAA National Championship as a #16 seed — the first and only time a #16 seed has won the championship. His staff includes Christian Lomeli, Tanner Thompson, and Jacob Bushue as assistant coaches (all reachable at 812-855-0051). Son of legendary Jerry Yeagley who won 5 titles. Former Columbus Crew MLS player. 11 Hoosiers are in MLS as of the 2026 season.",
+    "strengths": [
+      "High-press tactical system",
+      "Pro development",
+      "Big Ten champion",
+      "Lab facilities"
+    ],
+    "staff": [
+      {
+        "name": "Christian Lomeli",
+        "role": "Assistant Coach",
+        "email": "clomeli@iu.edu",
+        "bg": "Full-time assistant coach."
+      },
+      {
+        "name": "Tanner Thompson",
+        "role": "Assistant Coach",
+        "email": "tannthom@iu.edu",
+        "bg": "Full-time assistant coach."
+      },
+      {
+        "name": "Jacob Bushue",
+        "role": "Assistant Coach",
+        "email": "jbushue@iu.edu",
+        "bg": "Full-time assistant coach."
+      }
+    ],
+    "contact": {
+      "email": "tyeagley@indiana.edu",
+      "phone": "812-855-9148"
+    },
+    "url": "https://iuhoosiers.com/sports/mens-soccer",
+    "color": [
+      "#ffe4e6",
+      "#e11d48"
+    ],
+    "licence": null
   },
   {
     "id": "jorden",
@@ -308,6 +308,54 @@
     "licence": "USSF A"
   },
   {
+    "id": "riley",
+    "schoolId": "notredame",
+    "name": "Chad Riley",
+    "school": "University of Notre Dame",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "rank": 7,
+    "rankClass": "rk-elite",
+    "overallScore": 91,
+    "devScore": 90,
+    "tacticalScore": 90,
+    "ptPathScore": 76,
+    "mlsPlayers": 3,
+    "yearsHC": 8,
+    "ausConnection": false,
+    "record": "2023 NCAA Runner-Up. 2021 ACC Tournament Champions. Maintained Bobby Clark's elite standard. College Cup 2021, 2023.",
+    "bio": "Chad Riley inherited one of the most prestigious programs in college soccer from legendary coach Bobby Clark and has maintained Notre Dame's elite status. Riley's 2023 team finished as NCAA runners-up (13-3-6, ACC Regular Season Champions) and his 2021 squad won the ACC Tournament and reached the College Cup. Notre Dame's program has produced 27 MLS draft picks under Clark and continues that pipeline under Riley. The Fighting Irish play in the ACC — the toughest conference in college soccer — making every season a gauntlet of top-25 opponents.",
+    "strengths": [
+      "Notre Dame prestige",
+      "2023 NCAA Runner-Up",
+      "ACC elite competition",
+      "Bobby Clark legacy program",
+      "27 MLS picks under Clark era"
+    ],
+    "staff": [
+      {
+        "name": "Mike Graczyk",
+        "role": "Associate Head Coach",
+        "bg": "5th season with Riley."
+      },
+      {
+        "name": "Jeff Rowland",
+        "role": "Assistant Coach",
+        "bg": "4th season. Player development specialist."
+      }
+    ],
+    "contact": {
+      "email": "soccer@nd.edu",
+      "phone": "574-631-6107"
+    },
+    "url": "https://fightingirish.com/sports/mens-soccer",
+    "color": [
+      "#fff7ed",
+      "#1a4a2e"
+    ],
+    "licence": "USSF A, NSCAA Advanced National"
+  },
+  {
     "id": "russell",
     "schoolId": "fiu",
     "name": "Kyle Russell",
@@ -317,7 +365,7 @@
     "yearsHC": 7,
     "record": "7th season 2026. 2021 CUSA CoY. 3 AAC Championship Finals in 4 seasons (2022,2024,2025). 14 MLS draftees.",
     "mlsPlayers": 3,
-    "rank": 7,
+    "rank": 8,
     "rankClass": "rk-elite",
     "overallScore": 91,
     "tacticalScore": 90,
@@ -361,54 +409,6 @@
       "#0284c7"
     ],
     "licence": null
-  },
-  {
-    "id": "riley",
-    "schoolId": "notredame",
-    "name": "Chad Riley",
-    "school": "University of Notre Dame",
-    "div": "D1",
-    "conf": "ACC Conference",
-    "rank": 8,
-    "rankClass": "rk-elite",
-    "overallScore": 91,
-    "devScore": 90,
-    "tacticalScore": 90,
-    "ptPathScore": 76,
-    "mlsPlayers": 3,
-    "yearsHC": 8,
-    "ausConnection": false,
-    "record": "2023 NCAA Runner-Up. 2021 ACC Tournament Champions. Maintained Bobby Clark's elite standard. College Cup 2021, 2023.",
-    "bio": "Chad Riley inherited one of the most prestigious programs in college soccer from legendary coach Bobby Clark and has maintained Notre Dame's elite status. Riley's 2023 team finished as NCAA runners-up (13-3-6, ACC Regular Season Champions) and his 2021 squad won the ACC Tournament and reached the College Cup. Notre Dame's program has produced 27 MLS draft picks under Clark and continues that pipeline under Riley. The Fighting Irish play in the ACC — the toughest conference in college soccer — making every season a gauntlet of top-25 opponents.",
-    "strengths": [
-      "Notre Dame prestige",
-      "2023 NCAA Runner-Up",
-      "ACC elite competition",
-      "Bobby Clark legacy program",
-      "27 MLS picks under Clark era"
-    ],
-    "staff": [
-      {
-        "name": "Mike Graczyk",
-        "role": "Associate Head Coach",
-        "bg": "5th season with Riley."
-      },
-      {
-        "name": "Jeff Rowland",
-        "role": "Assistant Coach",
-        "bg": "4th season. Player development specialist."
-      }
-    ],
-    "contact": {
-      "email": "soccer@nd.edu",
-      "phone": "574-631-6107"
-    },
-    "url": "https://fightingirish.com/sports/mens-soccer",
-    "color": [
-      "#fff7ed",
-      "#1a4a2e"
-    ],
-    "licence": "USSF A, NSCAA Advanced National"
   },
   {
     "id": "vomsteeg",
@@ -533,74 +533,13 @@
     "licence": "USSF A"
   },
   {
-    "id": "kiefer",
-    "schoolId": "usf",
-    "name": "George Kiefer",
-    "school": "USF",
-    "div": "D1",
-    "conf": "AAC",
-    "yearsHC": 0,
-    "record": "Begins 2nd USF tenure 2026. First tenure 2002-16: 162-86-51. Career 230-151-82 across 24 seasons.",
-    "mlsPlayers": 3,
-    "rank": 11,
-    "rankClass": "rk-elite",
-    "overallScore": 88,
-    "tacticalScore": 88,
-    "devScore": 84,
-    "ptPathScore": 88,
-    "ausConnection": false,
-    "bio": "George Kiefer begins his second tenure at USF in 2026, announced Dec 10 2025. He brings his GCU assistants with him — Daniel De Oliveira and AJ Madero (both helped win 2025 WAC title and reach NCAA Sweet 16 at GCU). Armanté Marshall (former USF player under Kiefer) also stays on as Associate HC.",
-    "strengths": [
-      "Proven builder",
-      "Ground-floor opportunity",
-      "AAC track record",
-      "Player development focus"
-    ],
-    "staff": [
-      {
-        "name": "Daniel De Oliveira",
-        "role": "Associate Head Coach",
-        "email": "",
-        "bg": "Associate Head Coach. Recruiting and player development."
-      },
-      {
-        "name": "Armanté Marshall",
-        "role": "Associate Head Coach",
-        "email": "",
-        "bg": "Associate Head Coach. Recruiting and player development."
-      },
-      {
-        "name": "AJ Madero",
-        "role": "Assistant Coach",
-        "email": "",
-        "bg": "Full-time assistant coach."
-      },
-      {
-        "name": "Rima El Brouzi",
-        "role": "Director of Operations",
-        "email": "",
-        "bg": "Director of program operations."
-      }
-    ],
-    "contact": {
-      "email": "gkiefer@usf.edu",
-      "phone": "813-974-2125"
-    },
-    "url": "https://gousfbulls.com/sports/mens-soccer",
-    "color": [
-      "#d1fae5",
-      "#059669"
-    ],
-    "licence": "USSF A"
-  },
-  {
     "id": "somoano",
     "schoolId": "unc",
     "name": "Carlos Somoano",
     "school": "UNC Chapel Hill",
     "div": "D1",
     "conf": "ACC Conference",
-    "rank": 12,
+    "rank": 11,
     "rankClass": "rk-elite",
     "overallScore": 88,
     "devScore": 87,
@@ -653,7 +592,7 @@
     "school": "University of Akron",
     "div": "D1",
     "conf": "MAC",
-    "rank": 13,
+    "rank": 12,
     "rankClass": "rk-elite",
     "overallScore": 88,
     "devScore": 90,
@@ -697,6 +636,67 @@
       "#1e3a5f"
     ],
     "licence": null
+  },
+  {
+    "id": "kiefer",
+    "schoolId": "usf",
+    "name": "George Kiefer",
+    "school": "USF",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 0,
+    "record": "Begins 2nd USF tenure 2026. First tenure 2002-16: 162-86-51. Career 230-151-82 across 24 seasons.",
+    "mlsPlayers": 3,
+    "rank": 13,
+    "rankClass": "rk-elite",
+    "overallScore": 88,
+    "tacticalScore": 88,
+    "devScore": 84,
+    "ptPathScore": 88,
+    "ausConnection": false,
+    "bio": "George Kiefer begins his second tenure at USF in 2026, announced Dec 10 2025. He brings his GCU assistants with him — Daniel De Oliveira and AJ Madero (both helped win 2025 WAC title and reach NCAA Sweet 16 at GCU). Armanté Marshall (former USF player under Kiefer) also stays on as Associate HC.",
+    "strengths": [
+      "Proven builder",
+      "Ground-floor opportunity",
+      "AAC track record",
+      "Player development focus"
+    ],
+    "staff": [
+      {
+        "name": "Daniel De Oliveira",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Associate Head Coach. Recruiting and player development."
+      },
+      {
+        "name": "Armanté Marshall",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Associate Head Coach. Recruiting and player development."
+      },
+      {
+        "name": "AJ Madero",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant coach."
+      },
+      {
+        "name": "Rima El Brouzi",
+        "role": "Director of Operations",
+        "email": "",
+        "bg": "Director of program operations."
+      }
+    ],
+    "contact": {
+      "email": "gkiefer@usf.edu",
+      "phone": "813-974-2125"
+    },
+    "url": "https://gousfbulls.com/sports/mens-soccer",
+    "color": [
+      "#d1fae5",
+      "#059669"
+    ],
+    "licence": "USSF A"
   },
   {
     "id": "barlow",
@@ -913,6 +913,42 @@
     "licence": "USSF A, NSCAA Advanced National"
   },
   {
+    "id": "kerr_duke",
+    "schoolId": "duke",
+    "name": "John Kerr",
+    "school": "Duke University",
+    "div": "D1",
+    "conf": "ACC",
+    "rank": 18,
+    "rankClass": "rk-strong",
+    "overallScore": 84,
+    "devScore": 86,
+    "tacticalScore": 87,
+    "ptPathScore": 75,
+    "mlsPlayers": 6,
+    "yearsHC": 31,
+    "ausConnection": false,
+    "record": "30+ seasons at Duke. Multiple ACC titles. 300+ career wins.",
+    "bio": "John Kerr Jr. is one of the longest-serving and most decorated coaches in college soccer history, entering his 31st season at Duke in 2025. His Duke program has produced consistent ACC contenders and professional players across three decades, including the 1986 NCAA Championship infrastructure he inherited and built upon. Kerr's teams are known for technical discipline and system-first soccer — a possession-based, positionally organised style that prioritises movement and combination play. Former Duke player himself, he returned as head coach in 1994 and has never left.",
+    "strengths": [
+      "30+ year program builder",
+      "Technically disciplined system",
+      "ACC consistency",
+      "Duke Health pre-PT environment"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "john.kerr@duke.edu",
+      "phone": "919-684-2120"
+    },
+    "url": "https://goduke.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#00356B"
+    ],
+    "licence": null
+  },
+  {
     "id": "jrootes",
     "schoolId": "lynn",
     "name": "John Rootes",
@@ -922,7 +958,7 @@
     "yearsHC": 17,
     "record": "194-54-31 (.751) at Lynn. Career 498-150-55 across 4 schools. 3 NCAA D2 National Championships (2012, 2014, 2024).",
     "mlsPlayers": 0,
-    "rank": 18,
+    "rank": 19,
     "rankClass": "rk-strong",
     "overallScore": 84,
     "tacticalScore": 82,
@@ -962,7 +998,7 @@
     "school": "University of Denver",
     "div": "D1",
     "conf": "WCC",
-    "rank": 19,
+    "rank": 20,
     "rankClass": "rk-strong",
     "overallScore": 84,
     "devScore": 86,
@@ -1001,7 +1037,7 @@
     "yearsHC": 4,
     "record": "31-18-8 in 3 seasons. 2023 SSC regular season + tournament double — first time in program history.",
     "mlsPlayers": 0,
-    "rank": 20,
+    "rank": 21,
     "rankClass": "rk-strong",
     "overallScore": 83,
     "tacticalScore": 84,
@@ -1062,7 +1098,7 @@
     "yearsHC": 5,
     "record": "HC since 2020-21. 2024: 14-2-4, SAC Tournament champs, NAIA Tournament 2nd round.",
     "mlsPlayers": 0,
-    "rank": 21,
+    "rank": 22,
     "rankClass": "rk-strong",
     "overallScore": 82,
     "tacticalScore": 82,
@@ -1108,6 +1144,43 @@
     "licence": "USSF B"
   },
   {
+    "id": "gunn_stanford",
+    "schoolId": "stanford",
+    "name": "Jeremy Gunn",
+    "school": "Stanford University",
+    "div": "D1",
+    "conf": "ACC",
+    "rank": 23,
+    "rankClass": "rk-strong",
+    "overallScore": 81,
+    "devScore": 85,
+    "tacticalScore": 83,
+    "ptPathScore": 78,
+    "mlsPlayers": 5,
+    "yearsHC": 6,
+    "ausConnection": false,
+    "record": "Former US U-20 National Team HC. Stanford ACC top-2 finish 2025.",
+    "bio": "Jeremy Gunn joined Stanford as head coach after serving as the US U-20 National Team Head Coach and as part of the Colorado Rapids staff. His national team background and development-first philosophy fit Stanford's elite player-production model. At Stanford since ~2019, he has maintained the program's elite standing through the Pac-12 to ACC transition — reaching the 2025 ACC Tournament semi-final. Stanford's soccer environment produces professional players at the highest rate of any academic institution in the country.",
+    "strengths": [
+      "USMNT youth national team background",
+      "Elite player development system",
+      "Stanford academic prestige",
+      "Bay Area recruiting network",
+      "California warm climate"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "jgunn@stanford.edu",
+      "phone": "650-723-4527"
+    },
+    "url": "https://gostanford.com/sports/mens-soccer",
+    "color": [
+      "#fef2f2",
+      "#8C1515"
+    ],
+    "licence": null
+  },
+  {
     "id": "masur",
     "schoolId": "stjohns",
     "name": "Dr Dave Masur",
@@ -1117,7 +1190,7 @@
     "yearsHC": 35,
     "record": "468-213-118 career (.660). 415-192-112 at SJU. 1996 NCAA champion. 2nd-winningest active D1 HC.",
     "mlsPlayers": 2,
-    "rank": 22,
+    "rank": 24,
     "rankClass": "rk-strong",
     "overallScore": 80,
     "tacticalScore": 80,
@@ -1151,13 +1224,49 @@
     "licence": null
   },
   {
+    "id": "mcintyre_syracuse",
+    "schoolId": "syracuse",
+    "name": "Ian McIntyre",
+    "school": "Syracuse University",
+    "div": "D1",
+    "conf": "ACC",
+    "rank": 25,
+    "rankClass": "rk-strong",
+    "overallScore": 79,
+    "devScore": 78,
+    "tacticalScore": 80,
+    "ptPathScore": 68,
+    "mlsPlayers": 2,
+    "yearsHC": 8,
+    "ausConnection": false,
+    "record": "2022 NCAA Champions. Multiple ACC tournament appearances.",
+    "bio": "Ian McIntyre led Syracuse to the 2022 NCAA Championship — one of the most significant titles in the program's history and the first in almost four decades. His teams play technically organised, pressing-based soccer with strong defensive structure. The 2022 title and the 2025 ACC semi-final run demonstrate the program ceiling under McIntyre. He has built Syracuse into a consistent ACC contender with a strong recruiting pipeline from the New York metro region.",
+    "strengths": [
+      "2022 NCAA National Champion",
+      "ACC contender consistently",
+      "NY metro recruiting network",
+      "Pressing and defensive organisation"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "imcintyre@syr.edu",
+      "phone": "315-443-4158"
+    },
+    "url": "https://cuse.com/sports/mens-soccer",
+    "color": [
+      "#fff7ed",
+      "#D44500"
+    ],
+    "licence": null
+  },
+  {
     "id": "davies",
     "schoolId": "gcu",
     "name": "Jamie Davies",
     "school": "Grand Canyon University",
     "div": "D1",
     "conf": "WAC",
-    "rank": 23,
+    "rank": 26,
     "rankClass": "rk-strong",
     "overallScore": 79,
     "devScore": 80,
@@ -1193,7 +1302,7 @@
     "school": "Yale University",
     "div": "IVY",
     "conf": "Ivy League",
-    "rank": 24,
+    "rank": 27,
     "rankClass": "rk-strong",
     "overallScore": 78,
     "devScore": 80,
@@ -1232,7 +1341,7 @@
     "yearsHC": 6,
     "record": "27-31-18 overall, 10-19-8 CAA. 2024 best season: 10-6-2, ranked #23 nationally.",
     "mlsPlayers": 0,
-    "rank": 25,
+    "rank": 28,
     "rankClass": "rk-strong",
     "overallScore": 76,
     "tacticalScore": 76,
@@ -1272,13 +1381,50 @@
     "licence": null
   },
   {
+    "id": "vidovich_pitt",
+    "schoolId": "pittsburgh",
+    "name": "Jay Vidovich",
+    "school": "University of Pittsburgh",
+    "div": "D1",
+    "conf": "ACC",
+    "rank": 29,
+    "rankClass": "rk-strong",
+    "overallScore": 76,
+    "devScore": 78,
+    "tacticalScore": 79,
+    "ptPathScore": 70,
+    "mlsPlayers": 2,
+    "yearsHC": 4,
+    "ausConnection": false,
+    "record": "Former Wake Forest HC (2007 NCAA Champion). Pitt: 2024 ACC Regular Season Champions.",
+    "bio": "Jay Vidovich has an elite coaching resume — he led Wake Forest to the 2007 NCAA Championship and spent over a decade building the Demon Deacons into a consistent national contender. Now at Pittsburgh, he quickly established the program as an ACC force: Pitt won the 2024 ACC Regular Season Championship. His possession-based, technically refined system has historically produced professional players and created winning cultures at multiple programs. Known for disciplined defensive organisation paired with technical quality in possession.",
+    "strengths": [
+      "2007 NCAA Champion (Wake Forest)",
+      "2024 ACC Reg Season Champions (Pitt)",
+      "Possession-based technical system",
+      "UPMC sports medicine environment",
+      "Real city — Pittsburgh"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "jvidovich@pitt.edu",
+      "phone": "412-648-8240"
+    },
+    "url": "https://pittPanthers.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#003087"
+    ],
+    "licence": null
+  },
+  {
     "id": "newton_indian_hills",
     "schoolId": "indian_hills",
     "name": "Zac Newton",
     "school": "Indian Hills CC (Warriors)",
     "div": "JUCO",
     "conf": "NJCAA DI",
-    "rank": 26,
+    "rank": 30,
     "rankClass": "rk-strong",
     "yearsHC": 2,
     "record": "2025 NJCAA DI National Champions; 2024 national semifinal; first-ever No. 1 national ranking",
@@ -1311,8 +1457,8 @@
     "school": "Nova Southeastern University",
     "div": "D2",
     "conf": "Sunshine State Conference (SSC)",
-    "rank": 27,
-    "rankClass": "rk-strong",
+    "rank": 31,
+    "rankClass": "rk-solid",
     "overallScore": 74,
     "devScore": 74,
     "tacticalScore": 72,
@@ -1341,14 +1487,66 @@
     "licence": "UEFA B, USSF D"
   },
   {
+    "id": "dibernardo_monroe",
+    "schoolId": "monroe_college",
+    "name": "Marcus DiBernardo",
+    "school": "Monroe University — Mustangs (New Rochelle)",
+    "div": "JUCO",
+    "conf": "NJCAA Region 15",
+    "rank": 32,
+    "rankClass": "rk-solid",
+    "overallScore": 72,
+    "devScore": 74,
+    "tacticalScore": 72,
+    "ptPathScore": 42,
+    "mlsPlayers": 0,
+    "yearsHC": 5,
+    "ausConnection": true,
+    "record": "2021, 2022, 2023 NJCAA D1 National Champions — 3 consecutive national titles.",
+    "bio": "Marcus DiBernardo leads the Monroe Mustangs (New Rochelle campus) — the premier NJCAA D1 men's soccer program in the US with 3 consecutive national championships (2021-2023). The 2025 roster includes two Australians: Edward Mackle (Perth, WA — midfielder) and Sebastian Sayers (Hillarys, WA — forward). DiBernardo has built a world-class recruiting network drawing players from 15+ countries. New Rochelle is 30 minutes from Manhattan by Metro-North rail. Note: a separate Bronx campus program (Monroe Express, Coach Jose Hernandez) also exists — this entry covers the Mustangs only.",
+    "strengths": [
+      "3× NJCAA D1 National Champions (2021-2023)",
+      "2 Australians on 2025 roster",
+      "NYC metro — 30min to Manhattan",
+      "Premier JUCO transfer credential"
+    ],
+    "staff": [
+      {
+        "name": "Jay Myers",
+        "role": "Assistant Coach",
+        "email": "jmyers@monroeu.edu"
+      },
+      {
+        "name": "Dario Villafana",
+        "role": "Recruiting Coordinator",
+        "email": "dvillafana@monroeu.edu"
+      },
+      {
+        "name": "Massimo Gargiulo",
+        "role": "Assistant Coach",
+        "email": "mgargiulo@monroeu.edu"
+      }
+    ],
+    "contact": {
+      "email": "mdibernardo@monroeu.edu",
+      "phone": "914-740-6898"
+    },
+    "url": "https://www.monroeumustangs.com/sports/mens-soccer",
+    "color": [
+      "#fef3c7",
+      "#b45309"
+    ],
+    "licence": "NSCAA Advanced National"
+  },
+  {
     "id": "segebart",
     "schoolId": "uca",
     "name": "Kyle Segebart",
     "school": "University of Central Arkansas",
     "div": "D1",
     "conf": "ASUN",
-    "rank": 28,
-    "rankClass": "rk-strong",
+    "rank": 33,
+    "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
     "tacticalScore": 70,
@@ -1405,8 +1603,8 @@
     "school": "Florida Atlantic University",
     "div": "D1",
     "conf": "American Athletic Conference (AAC)",
-    "rank": 29,
-    "rankClass": "rk-strong",
+    "rank": 34,
+    "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
     "tacticalScore": 70,
@@ -1436,66 +1634,14 @@
     "licence": "USSF B"
   },
   {
-    "id": "dibernardo_monroe",
-    "schoolId": "monroe_college",
-    "name": "Marcus DiBernardo",
-    "school": "Monroe University — Mustangs (New Rochelle)",
-    "div": "JUCO",
-    "conf": "NJCAA Region 15",
-    "rank": 30,
-    "rankClass": "rk-strong",
-    "overallScore": 72,
-    "devScore": 74,
-    "tacticalScore": 72,
-    "ptPathScore": 42,
-    "mlsPlayers": 0,
-    "yearsHC": 5,
-    "ausConnection": true,
-    "record": "2021, 2022, 2023 NJCAA D1 National Champions — 3 consecutive national titles.",
-    "bio": "Marcus DiBernardo leads the Monroe Mustangs (New Rochelle campus) — the premier NJCAA D1 men's soccer program in the US with 3 consecutive national championships (2021-2023). The 2025 roster includes two Australians: Edward Mackle (Perth, WA — midfielder) and Sebastian Sayers (Hillarys, WA — forward). DiBernardo has built a world-class recruiting network drawing players from 15+ countries. New Rochelle is 30 minutes from Manhattan by Metro-North rail. Note: a separate Bronx campus program (Monroe Express, Coach Jose Hernandez) also exists — this entry covers the Mustangs only.",
-    "strengths": [
-      "3× NJCAA D1 National Champions (2021-2023)",
-      "2 Australians on 2025 roster",
-      "NYC metro — 30min to Manhattan",
-      "Premier JUCO transfer credential"
-    ],
-    "staff": [
-      {
-        "name": "Jay Myers",
-        "role": "Assistant Coach",
-        "email": "jmyers@monroeu.edu"
-      },
-      {
-        "name": "Dario Villafana",
-        "role": "Recruiting Coordinator",
-        "email": "dvillafana@monroeu.edu"
-      },
-      {
-        "name": "Massimo Gargiulo",
-        "role": "Assistant Coach",
-        "email": "mgargiulo@monroeu.edu"
-      }
-    ],
-    "contact": {
-      "email": "mdibernardo@monroeu.edu",
-      "phone": "914-740-6898"
-    },
-    "url": "https://www.monroeumustangs.com/sports/mens-soccer",
-    "color": [
-      "#fef3c7",
-      "#b45309"
-    ],
-    "licence": "NSCAA Advanced National"
-  },
-  {
     "id": "erush_csula",
     "schoolId": "csula",
     "name": "Michael Erush",
     "school": "Cal State LA",
     "div": "D2",
     "conf": "CCAA Conference",
-    "rank": 31,
-    "rankClass": "rk-strong",
+    "rank": 35,
+    "rankClass": "rk-solid",
     "overallScore": 70,
     "devScore": 70,
     "tacticalScore": 68,
@@ -1545,13 +1691,103 @@
     "licence": null
   },
   {
+    "id": "carmichael_cal",
+    "schoolId": "cal",
+    "name": "Colin Carmichael",
+    "school": "University of California, Berkeley",
+    "div": "D1",
+    "conf": "ACC",
+    "rank": 36,
+    "rankClass": "rk-solid",
+    "overallScore": 69,
+    "devScore": 70,
+    "tacticalScore": 72,
+    "ptPathScore": 65,
+    "mlsPlayers": 3,
+    "yearsHC": 5,
+    "ausConnection": false,
+    "record": "Led Cal through Pac-12 to ACC transition. 2025 ACC Tournament semi-final.",
+    "bio": "Colin Carmichael is leading Cal through one of the most significant structural transitions in the program's history — from a Pac-12 powerhouse to a new ACC competitor. The 2025 ACC Tournament semi-final run (beating Duke and Pitt en route) showed the program's quality. Carmichael has maintained Cal's strong West Coast recruiting pipeline and player development culture while adapting to the increased competitive standard of the ACC.",
+    "strengths": [
+      "Bay Area recruiting network",
+      "Pac-12 program tradition",
+      "Berkeley academic prestige",
+      "California lifestyle match",
+      "UCSF clinical access"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "ccarmichael@berkeley.edu",
+      "phone": "510-643-5533"
+    },
+    "url": "https://calbears.com/sports/mens-soccer",
+    "color": [
+      "#fffbeb",
+      "#003262"
+    ],
+    "licence": null
+  },
+  {
+    "id": "oldham",
+    "schoolId": "keiser",
+    "name": "Gavin Oldham",
+    "school": "Keiser University",
+    "div": "NAIA",
+    "conf": "Sun Conference",
+    "rank": 37,
+    "rankClass": "rk-solid",
+    "overallScore": 68,
+    "devScore": 68,
+    "tacticalScore": 65,
+    "ptPathScore": 80,
+    "mlsPlayers": 0,
+    "yearsHC": 3,
+    "ausConnection": false,
+    "record": "Head coach at Keiser University. NAIA Sun Conference. Health sciences integrated program.",
+    "bio": "Head Coach Gavin Oldham leads the Keiser University men's soccer program in Fort Lauderdale. Keiser is a health sciences university — the clinical simulation labs and pre-PT academic environment are core selling points for a player like Olivier targeting a DPT career. The program sits in the NAIA Sun Conference with generous scholarship potential and warm year-round climate. Fort Lauderdale provides proximity to Inter Miami, MLS action, and the South Florida professional soccer ecosystem. Oldham is supported by Assistant Coach Joe Barber and Goalkeeping Coach Leo Camacho, with athletic trainer Vittoria Giordano providing sports medicine support.",
+    "strengths": [
+      "Health sciences campus",
+      "Pre-PT environment",
+      "Fort Lauderdale climate",
+      "NAIA full scholarship potential",
+      "Inter Miami proximity"
+    ],
+    "staff": [
+      {
+        "name": "Joe Barber",
+        "role": "Assistant Men's Soccer Coach",
+        "bg": "Assistant coach contributing to player development and recruitment."
+      },
+      {
+        "name": "Leo Camacho",
+        "role": "Goalkeeping Coach",
+        "bg": "Dedicated goalkeeping coach — specialist GK development within the Sun Conference program."
+      },
+      {
+        "name": "Vittoria Giordano",
+        "role": "Assistant Athletic Trainer",
+        "bg": "Sports medicine support for men's soccer. Keiser health sciences facilities available to student-athletes."
+      }
+    ],
+    "contact": {
+      "email": "athletics@keiseruniversity.edu",
+      "phone": "954-776-4476"
+    },
+    "url": "https://keiseruniversity.edu/athletics/mens-soccer",
+    "color": [
+      "#ede9fe",
+      "#7c3aed"
+    ],
+    "licence": null
+  },
+  {
     "id": "smee",
     "schoolId": "uc_charleston",
     "name": "Daniel Smee",
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 32,
+    "rank": 38,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -1602,66 +1838,13 @@
     "licence": "USSF C, FA Level 2"
   },
   {
-    "id": "oldham",
-    "schoolId": "keiser",
-    "name": "Gavin Oldham",
-    "school": "Keiser University",
-    "div": "NAIA",
-    "conf": "Sun Conference",
-    "rank": 33,
-    "rankClass": "rk-solid",
-    "overallScore": 68,
-    "devScore": 68,
-    "tacticalScore": 65,
-    "ptPathScore": 80,
-    "mlsPlayers": 0,
-    "yearsHC": 3,
-    "ausConnection": false,
-    "record": "Head coach at Keiser University. NAIA Sun Conference. Health sciences integrated program.",
-    "bio": "Head Coach Gavin Oldham leads the Keiser University men's soccer program in Fort Lauderdale. Keiser is a health sciences university — the clinical simulation labs and pre-PT academic environment are core selling points for a player like Olivier targeting a DPT career. The program sits in the NAIA Sun Conference with generous scholarship potential and warm year-round climate. Fort Lauderdale provides proximity to Inter Miami, MLS action, and the South Florida professional soccer ecosystem. Oldham is supported by Assistant Coach Joe Barber and Goalkeeping Coach Leo Camacho, with athletic trainer Vittoria Giordano providing sports medicine support.",
-    "strengths": [
-      "Health sciences campus",
-      "Pre-PT environment",
-      "Fort Lauderdale climate",
-      "NAIA full scholarship potential",
-      "Inter Miami proximity"
-    ],
-    "staff": [
-      {
-        "name": "Joe Barber",
-        "role": "Assistant Men's Soccer Coach",
-        "bg": "Assistant coach contributing to player development and recruitment."
-      },
-      {
-        "name": "Leo Camacho",
-        "role": "Goalkeeping Coach",
-        "bg": "Dedicated goalkeeping coach — specialist GK development within the Sun Conference program."
-      },
-      {
-        "name": "Vittoria Giordano",
-        "role": "Assistant Athletic Trainer",
-        "bg": "Sports medicine support for men's soccer. Keiser health sciences facilities available to student-athletes."
-      }
-    ],
-    "contact": {
-      "email": "athletics@keiseruniversity.edu",
-      "phone": "954-776-4476"
-    },
-    "url": "https://keiseruniversity.edu/athletics/mens-soccer",
-    "color": [
-      "#ede9fe",
-      "#7c3aed"
-    ],
-    "licence": null
-  },
-  {
     "id": "avery_smc",
     "schoolId": "smc",
     "name": "Lee Avery",
     "school": "Santa Monica College",
     "div": "JUCO",
     "conf": "CCCAA / SCFA",
-    "rank": 34,
+    "rank": 39,
     "rankClass": "rk-solid",
     "overallScore": 66,
     "devScore": 65,
@@ -1697,7 +1880,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 35,
+    "rank": 40,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "devScore": 65,
@@ -1754,7 +1937,7 @@
     "school": "Georgian Court University",
     "div": "D2",
     "conf": "CACC",
-    "rank": 36,
+    "rank": 41,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 66,
@@ -1790,13 +1973,49 @@
     "licence": "USSF A"
   },
   {
+    "id": "findley_ncstate",
+    "schoolId": "ncstate",
+    "name": "Kelly Findley",
+    "school": "North Carolina State University",
+    "div": "D1",
+    "conf": "ACC",
+    "rank": 42,
+    "rankClass": "rk-solid",
+    "overallScore": 63,
+    "devScore": 62,
+    "tacticalScore": 64,
+    "ptPathScore": 58,
+    "mlsPlayers": 1,
+    "yearsHC": 7,
+    "ausConnection": false,
+    "record": "Building NC State as a mid-tier ACC program. 2025: 3rd seed ACC Tournament.",
+    "bio": "Kelly Findley has been steadily developing NC State's standing in the ACC with energetic, pressing-oriented soccer. The 2025 ACC Tournament 3rd seed finish — the program's best in years — reflects the growing quality of the Wolfpack roster. Findley's teams are known for high work-rate defending and direct transitions. The Raleigh market is one of the fastest-growing youth soccer regions in the South, providing strong local recruitment.",
+    "strengths": [
+      "Raleigh's fast-growing soccer market",
+      "High-energy pressing system",
+      "Best value ACC location",
+      "Accessible admission for internationals"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "kmfindley@ncsu.edu",
+      "phone": "919-515-3620"
+    },
+    "url": "https://gopack.com/sports/mens-soccer",
+    "color": [
+      "#fff1f2",
+      "#990000"
+    ],
+    "licence": null
+  },
+  {
     "id": "depalo_mdc",
     "schoolId": "miami_dade",
     "name": "Giuseppe DePalo",
     "school": "Miami Dade College",
     "div": "JUCO",
     "conf": "NJCAA",
-    "rank": 37,
+    "rank": 43,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -1832,7 +2051,7 @@
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 38,
+    "rank": 44,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -1878,13 +2097,50 @@
     "licence": null
   },
   {
+    "id": "hayden_louisville",
+    "schoolId": "louisville",
+    "name": "John Michael Hayden",
+    "school": "University of Louisville",
+    "div": "D1",
+    "conf": "ACC",
+    "rank": 45,
+    "rankClass": "rk-solid",
+    "overallScore": 61,
+    "devScore": 60,
+    "tacticalScore": 62,
+    "ptPathScore": 56,
+    "mlsPlayers": 3,
+    "yearsHC": 5,
+    "ausConnection": false,
+    "record": "Developing Louisville in the ACC. Focus on international recruiting.",
+    "bio": "John Michael Hayden is actively building Louisville's competitive profile in the ACC with a strong focus on international recruitment — 3 MLS picks in 5 years shows growing program quality. Hayden's teams play energetic, transition-focused soccer with pressing structure. Louisville's position as the lowest-cost ACC program (COA ~$45k) combined with a genuine city campus and the UofL Health pre-PT environment makes this an increasingly attractive proposition for international players who fit the athletic profile.",
+    "strengths": [
+      "International recruiting focus",
+      "Lowest COA in the ACC",
+      "UofL Health pre-PT access",
+      "Louisville City FC soccer culture",
+      "Accessible GPA entry point"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "jmhayden@louisville.edu",
+      "phone": "502-852-6581"
+    },
+    "url": "https://gocards.com/sports/mens-soccer",
+    "color": [
+      "#fff5f5",
+      "#AD0000"
+    ],
+    "licence": null
+  },
+  {
     "id": "potter_northeast",
     "schoolId": "northeast_cc",
     "name": "Adam Potter",
     "school": "Northeast Community College",
     "div": "JUCO",
     "conf": "NJCAA ICCAC",
-    "rank": 39,
+    "rank": 46,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 60,
@@ -1920,7 +2176,7 @@
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 40,
+    "rank": 47,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -1962,7 +2218,7 @@
     "school": "Chapman University",
     "div": "D3",
     "conf": "SCIAC Conference",
-    "rank": 41,
+    "rank": 48,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 55,

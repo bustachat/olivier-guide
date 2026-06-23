@@ -230,8 +230,9 @@ This is the most common batch operation (used throughout v25). It has the larges
 | 4 | `js/app.js` — DOMAINS, SITE_URLS, SOCIAL | Add entry for each upgraded school. Run `node --check js/app.js` after. |
 | 5 | `data/conferences.json` — guideSchools[] | Move school from `otherSchools[]` into `guideSchools[]`. Clear `otherSchools[]` if all schools are now profiled. |
 | 6 | `data/conferences.json` — desc and olivierNote | **Always update these.** Change the school count ("X guide schools"), add new highlights, remove stale statements. This is the most frequently missed step. |
-| 7 | Validate all modified files | `python -m json.tool` on every JSON, `node --check` on JS |
-| 8 | Commit with version bump | `vNN.N — [Conference] batch: X listed schools upgraded to full profile` |
+| 7 | `minutesOutlook` — research and populate roster data | Minutes Outlook is 20% of fitOlivier. Use `College Rosters/roster_analysis.py` or manual research. Only set `{ "available": false }` if the roster page cannot be scraped — document why and request data to be provided. Do not leave the field absent. |
+| 8 | Validate all modified files | `python -m json.tool` on every JSON, `node --check` on JS |
+| 9 | Commit with version bump | `vNN.N — [Conference] batch: X listed schools upgraded to full profile` |
 
 **acuUnits false patterns by acuAlign** — use these to set covered:false on the correct units:
 
@@ -248,7 +249,7 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 
 **Service academy rule** (Army/Navy/USNA): costNum=0, all fin fields 0, maxAthletic=1.0, maxAcademic=0. Include explicit service commitment warning in every text field. Not compatible with DPT/Chiro or MLS goals.
 
-**minutesOutlook for upgrades**: Always set `{ "available": false }` unless roster data has been collected. Do not leave the field absent.
+**minutesOutlook for upgrades**: Research and populate at upgrade time — see Step 7 above. Only set `{ "available": false }` as a last resort if roster data cannot be obtained — document why and request data to be provided. Do not leave the field absent.
 
 **Also update after EVERY conference batch — these are ALWAYS missed:**
 - `data/conf-prestige.json` — `programsInGuide` string and `relevance` text for the conference row. This is a SEPARATE file from conferences.json and powers the Rankings table in the Conference tab. It is NOT updated automatically. Update it in the same commit as the batch.

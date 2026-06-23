@@ -2,7 +2,7 @@
   "id": "olivier",
   "name": "Olivier",
   "agentName": "Platform Sports Management",
-  "guideVersion": "v23",
+  "guideVersion": "v24",
   "position": "Central Midfielder",
   "positionCode": "CM",
   "positionRating": "8/10",
@@ -56,28 +56,108 @@
   "budgetUSD": 52000,
   "fxRate": 1.55,
   "shortlist": [
-    { "id": "fiu",     "status": "Not contacted" },
-    { "id": "pba",     "status": "Not contacted" },
-    { "id": "lynn",    "status": "Not contacted" },
-    { "id": "ucsb",    "status": "Not contacted" },
-    { "id": "usf",     "status": "Not contacted" },
-    { "id": "barry",   "status": "Not contacted" },
-    { "id": "clemson", "status": "Not contacted" },
-    { "id": "unc",     "status": "Not contacted" },
-    { "id": "fau",     "status": "Not contacted" },
-    { "id": "smu",     "status": "Not contacted" }
+    {
+      "id": "fiu",
+      "status": "Not contacted"
+    },
+    {
+      "id": "pba",
+      "status": "Not contacted"
+    },
+    {
+      "id": "lynn",
+      "status": "Not contacted"
+    },
+    {
+      "id": "ucsb",
+      "status": "Not contacted"
+    },
+    {
+      "id": "usf",
+      "status": "Not contacted"
+    },
+    {
+      "id": "barry",
+      "status": "Not contacted"
+    },
+    {
+      "id": "clemson",
+      "status": "Not contacted"
+    },
+    {
+      "id": "unc",
+      "status": "Not contacted"
+    },
+    {
+      "id": "fau",
+      "status": "Not contacted"
+    },
+    {
+      "id": "smu",
+      "status": "Not contacted"
+    }
   ],
   "outreach": [
-    { "schoolId": "fiu",     "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "pba",     "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "lynn",    "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "ucsb",    "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "usf",     "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "barry",   "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "clemson", "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "unc",     "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "fau",     "status": "Not contacted", "lastContact": null, "note": "" },
-    { "schoolId": "smu",     "status": "Not contacted", "lastContact": null, "note": "" }
+    {
+      "schoolId": "fiu",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "pba",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "lynn",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "ucsb",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "usf",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "barry",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "clemson",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "unc",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "fau",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    },
+    {
+      "schoolId": "smu",
+      "status": "Not contacted",
+      "lastContact": null,
+      "note": ""
+    }
   ],
   "scoreWeights": {
     "soccerLevel": 20,

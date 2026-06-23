@@ -308,12 +308,19 @@ Data verification pass, financial model correction, and coach data completion.
 **Tools added in v23:**
 - export_schools.py — exports all 95 schools to CSV for external review (excludes Olivier-specific fields)
 
-### Deferred to v24
-- 2025 roster scrape for remaining full-profile schools (Clemson, UNC, Maryland, GCU, Akron, Denver, Vermont, FAU, UCA, Iowa Western, UC Charleston)
-- GCU coach verification — Grok flagged "Davies Dec 2025", may be stale data
-- SMU shortlist review — fitOlivier 66, budget borderline at realistic package, may warrant removal
-- Cal State LA lensScores.minutes verification (was populated in v21, may be correct)
-- NSU DPT articulation detail (PSM to research)
+### Planned for v24
+**Priority 1 — Roster scrape (remaining schools)**
+Full-profile schools still with `minutesOutlook: { available: false }`: Clemson, UNC, Maryland, GCU, Akron, Denver, Vermont, FAU, UCA, Iowa Western, UC Charleston, Mercyhurst, Georgian Court. Note: available: false returns a neutral 0.5 score — scores are not broken, data is incomplete. Once populated: update lensScores.minutes, lensScores.overall, and fitOlivier for each.
+
+**Priority 2 — GCU coach verification**
+Grok flagged a coach named "Davies Dec 2025" — verify against current guide data before any outreach.
+
+**Priority 3 — internationalNote audit**
+Now that the financial model correctly uses 0–100% athletic slider, review remaining internationalNote fields for vague or misleading language — particularly Georgetown, Notre Dame, Indiana, UCSB.
+
+**Deferred from v24**
+- SMU shortlist decision (fitOlivier 66, borderline budget — keep as deliberate reach for now)
+- NSU DPT articulation detail (PSM research required)
 - Multi-athlete platform expansion
 - Australian connection as Fit Score variable
 - Automated test suite (Playwright/Jest)

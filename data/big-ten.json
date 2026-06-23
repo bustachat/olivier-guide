@@ -570,7 +570,7 @@
   },
   {
     "id": "pennstate",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Penn State",
     "full": "Pennsylvania State University",
     "loc": "State College, PA",
@@ -581,6 +581,7 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#dbeafe", "#1e3a8a"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 12,
     "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, motor control all covered. Pre-PT advising integrated into kinesiology program.",
@@ -588,6 +589,12 @@
     "cost": "~$55k/yr",
     "fin": {
       "costNum": 55000,
+      "tuition": 40000,
+      "roomBoard": 12000,
+      "fees": 3000,
+      "maxAthletic": 0.8,
+      "maxAcademic": 7000,
+      "aidType": "athletic",
       "internationalNote": "Penn State out-of-state COA is ~$55k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with strong academic record. State College has low cost of living — package goes further than coastal or urban schools."
     },
     "aid": "Athletic",
@@ -611,70 +618,80 @@
       "value": 62
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "Did not qualify for Big Ten Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play. NCAA Tournament."
-      },
-      {
-        "yr": 2020,
-        "pos": "B1G Final",
-        "note": "Lost to Indiana in Big Ten Tournament Final."
-      }
+      { "yr": 2025, "pos": "Lower B1G", "note": "Did not qualify for Big Ten Tournament." },
+      { "yr": 2024, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2023, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2022, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play. NCAA Tournament." },
+      { "yr": 2020, "pos": "B1G Final", "note": "Lost to Indiana in Big Ten Tournament Final." }
     ],
-    "titles": [
-      "NCAA 2013 finalist",
-      "Big Ten Champions multiple"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 4,
-      "notable": [],
-      "draftRank": "Consistent Big Ten pipeline"
-    },
-    "devScores": null,
+    "titles": ["NCAA 2013 finalist", "Big Ten Champions multiple"],
+    "proPlayers": { "mlsPicks5yr": 4, "notable": [], "draftRank": "Consistent Big Ten pipeline" },
+    "devScores": { "tactical": 78, "technical": 74, "fitness": 80 },
     "coach": {
       "name": "Bob Warming",
       "title": "Head Coach",
       "email": "bwarming@psu.edu",
       "phone": "",
-      "profile": "One of the most decorated coaches in Big Ten history. Multiple NCAA tournament runs."
+      "profile": "One of the most decorated coaches in Big Ten history. Led Penn State to 2013 NCAA Final. Multiple Big Ten titles. Deep recruiting network in Pennsylvania and Mid-Atlantic."
     },
-    "tags": [
-      "acad",
-      "soccer"
+    "tags": ["acad", "soccer"],
+    "facilityDetails": {
+      "stadium": "Jeffrey Field — 5,000 capacity, natural grass, permanent seating. Historic Penn State soccer venue.",
+      "trainingFields": "2 dedicated practice fields adjacent to Jeffrey Field. Indoor practice space available in winter.",
+      "strengthConditioning": "Penn State Lasch Football Building athletic complex access. Olympic lifting platforms, full weight training suite. Dedicated S&C coach for soccer.",
+      "sportsScience": "Kinesiology Department research labs — biomechanics, motor control, exercise physiology. Penn State is a top-20 kinesiology research institution nationally.",
+      "sportsMed": "Penn State Sports Medicine with certified athletic trainers. Penn State Health access for clinical support.",
+      "academicLabs": "Kinesiology Building: biomechanics lab, exercise physiology lab, motor control lab, sport psychology lab. Undergraduate research common.",
+      "extras": "Beaver Stadium atmosphere (college football capital). Nittany Lion athletics culture. Strong alumni network across Northeast and Mid-Atlantic.",
+      "rating": "Strong",
+      "note": "Jeffrey Field is a classic, storied venue. Facilities are solid Big Ten standard without elite tier extras."
+    },
+    "culture": {
+      "vibe": "Classic Big Ten college town. State College is a one-university town built around Penn State — everything revolves around Nittany Lions athletics. Extremely social, close-knit community.",
+      "thingsToDo": "Beaver Stadium (107,000 cap — third largest in the world), downtown State College bars and restaurants, Mount Nittany hiking, Tussey Mountain skiing (20 min), Beaver Lake, Penn State Creamery (legendary ice cream), Philadelphia day trip (3hr).",
+      "socialScene": "Tight-knit athletics community. Happy Valley has a genuine college-town energy — very American. International student support exists but the culture is predominantly domestic. Soccer team culture is strong brotherhood.",
+      "olivierMatch": "★★ Rural central Pennsylvania is a significant lifestyle gap from Sydney. No real city, cold winters. Best if Olivier fully embraces the American college-town experience.",
+      "lifestyleTags": "College-town, rural, cold winters"
+    },
+    "facilities": ["Jeffrey Field", "Lasch S&C Complex", "Kinesiology Research Labs"],
+    "courses": [
+      "KIN 202 — Foundations of Kinesiology",
+      "KIN 310 — Exercise Physiology",
+      "KIN 355 — Biomechanics of Sport",
+      "KIN 410 — Motor Behavior",
+      "KIN 453 — Clinical Kinesiology"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Bob Warming", "role": "Head Coach", "email": "bwarming@psu.edu", "bg": "Head Coach. One of the most experienced Big Ten coaches." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@psu.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Consistent Big Ten contender. Strong kinesiology program. Rural campus — significant lifestyle trade-off for Olivier.",
     "url": "https://gopsusports.com/sports/mens-soccer",
     "domain": "psu.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": true },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "michigan",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Michigan",
     "full": "University of Michigan",
     "loc": "Ann Arbor, MI",
@@ -685,6 +702,7 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#fef9c3", "#1d4ed8"],
     "degreeTitle": "B.S. Movement Science",
     "acuAlign": 13,
     "acuAlignNote": "Excellent — U of M School of Kinesiology is one of the top 3 in the nation. Movement Science covers anatomy, physiology, biomechanics, motor control, sport psychology. Michigan Medicine provides elite pre-PT clinical access.",
@@ -692,6 +710,12 @@
     "cost": "~$68k/yr",
     "fin": {
       "costNum": 68000,
+      "tuition": 52000,
+      "roomBoard": 13000,
+      "fees": 3000,
+      "maxAthletic": 0.8,
+      "maxAcademic": 5000,
+      "aidType": "athletic",
       "internationalNote": "Michigan out-of-state COA is ~$68k/yr (2025-26). Athletic scholarship can cover 30–50% of COA. Merit aid limited for international students. Ann Arbor cost of living is moderate. Strong international student community and global alumni network."
     },
     "aid": "Athletic",
@@ -715,69 +739,80 @@
       "value": 52
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "3rd B1G",
-        "note": "3rd seed Big Ten Tourn. Lost final to UCLA 0-5."
-      },
-      {
-        "yr": 2024,
-        "pos": "B1G Tourn",
-        "note": "Big Ten Tournament participant. NCAA bid."
-      },
-      {
-        "yr": 2023,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid B1G",
-        "note": "COVID-shortened spring season."
-      }
+      { "yr": 2025, "pos": "3rd B1G", "note": "3rd seed Big Ten Tourn. Lost final to UCLA 0-5." },
+      { "yr": 2024, "pos": "B1G Tourn", "note": "Big Ten Tournament participant. NCAA bid." },
+      { "yr": 2023, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2022, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2020, "pos": "Mid B1G", "note": "COVID-shortened spring season." }
     ],
-    "titles": [
-      "Big Ten Champions multiple"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 3,
-      "notable": [],
-      "draftRank": "Strong Big Ten pipeline"
-    },
-    "devScores": null,
+    "titles": ["Big Ten Champions multiple"],
+    "proPlayers": { "mlsPicks5yr": 3, "notable": [], "draftRank": "Strong Big Ten pipeline" },
+    "devScores": { "tactical": 82, "technical": 80, "fitness": 83 },
     "coach": {
       "name": "Chaka Daley",
       "title": "Head Coach",
       "email": "cdaley@umich.edu",
       "phone": "",
-      "profile": "Building Michigan into an elite Big Ten program. Former US Youth National Team coach."
+      "profile": "Building Michigan into an elite Big Ten program. Former US Youth National Team coach. Reached 2025 Big Ten Tournament Final before 0-5 loss to UCLA. Strong tactical identity — Michigan now Big Ten top-4."
     },
-    "tags": [
-      "acad",
-      "soccer"
+    "tags": ["acad", "soccer"],
+    "facilityDetails": {
+      "stadium": "Michigan Soccer Stadium — 3,000 capacity, natural grass, dedicated soccer facility. NCAA Tournament host.",
+      "trainingFields": "2 dedicated training fields adjacent to stadium. Michigan Athletic Campus (MAC) indoor facility access for winter.",
+      "strengthConditioning": "Michigan Athletics S&C complex — elite Big Ten standard. Olympic lifting, Keiser system, full recovery suite. Dedicated S&C coach for soccer.",
+      "sportsScience": "School of Kinesiology Movement Science labs — biomechanics lab, motor behaviour lab, sport performance lab. Michigan Medicine research integration. One of the top 3 kinesiology research environments in the Big Ten.",
+      "sportsMed": "Michigan Medicine athletic trainers. University of Michigan Health System team physician access. Cutting-edge sports medicine with concussion and return-to-play protocols.",
+      "academicLabs": "School of Kinesiology — 8 research labs. Movement Science program has one of the best motor learning and biomechanics lab suites in the Big Ten. Pre-PT pathway supported with Michigan Medicine clinical placements.",
+      "extras": "The Big House (107,000 cap) creates campus-wide sports culture. Ann Arbor is one of the most highly-rated college towns in America — genuine food and cultural scene. NWSL and MLS connections through Michigan Alumni network.",
+      "rating": "Strong",
+      "note": "Michigan's academic environment is the highlight — Movement Science program and Michigan Medicine access is top-3 in this guide for Olivier's PT/Chiro pathway."
+    },
+    "culture": {
+      "vibe": "Michigan is a world-class research university with a buzzing Ann Arbor culture. One of the rare Big Ten schools that feels like both a serious academic institution and a social hub. Maize and Blue pride is everywhere.",
+      "thingsToDo": "Ann Arbor downtown (restaurants, cafes, live music), Detroit day trip (45 min), Great Lakes region access, Michigan athletics games, Nichols Arboretum, East Quad music scene, Ann Arbor Art Fair (largest in USA).",
+      "socialScene": "Strong international student community (15%+ international). Ann Arbor is voted one of the best college towns in America year after year. Soccer team has a growing culture under Daley — reaching 2025 B1G Final signals program elevation.",
+      "olivierMatch": "★★★ Ann Arbor punches well above its Midwest location. The academic environment is exceptional. Climate is cold — four real seasons including harsh winters. Better lifestyle fit than other Midwest options.",
+      "lifestyleTags": "Ann Arbor culture, academic excellence, cold winters"
+    },
+    "facilities": ["Michigan Soccer Stadium", "School of Kinesiology Labs", "Michigan Medicine Sports Med"],
+    "courses": [
+      "MOVESCI 230 — Anatomical Kinesiology",
+      "MOVESCI 330 — Exercise Physiology",
+      "MOVESCI 340 — Biomechanics",
+      "MOVESCI 430 — Motor Control",
+      "MOVESCI 460 — Sport Psychology"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Chaka Daley", "role": "Head Coach", "email": "cdaley@umich.edu", "bg": "Head Coach. Former US Youth National Team coach. Building Michigan to Big Ten top-4 level." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@umich.edu", "bg": "Full-time assistant. Recruiting and player development." }
+    ],
     "rec": "One of the best Movement Science programs in the country. Michigan Medicine pre-PT access is elite. Ann Arbor is a lively college town despite cold winters.",
     "url": "https://mgoblue.com/sports/mens-soccer",
     "domain": "umich.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": true },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": true },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "michiganstate",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Michigan State",
     "full": "Michigan State University",
     "loc": "East Lansing, MI",
@@ -788,6 +823,7 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#dcfce7", "#15803d"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. Pre-PT pathway available through kinesiology advising.",
@@ -795,6 +831,12 @@
     "cost": "~$52k/yr",
     "fin": {
       "costNum": 52000,
+      "tuition": 38000,
+      "roomBoard": 11000,
+      "fees": 3000,
+      "maxAthletic": 0.75,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "Michigan State out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. East Lansing has low cost of living — package stretches further. Strong kinesiology program."
     },
     "aid": "Athletic",
@@ -818,66 +860,80 @@
       "value": 62
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "10th B1G",
-        "note": "2-5-3 conf record in 11-team Big Ten."
-      },
-      {
-        "yr": 2024,
-        "pos": "5th B1G",
-        "note": "5th in Big Ten standings."
-      },
-      {
-        "yr": 2023,
-        "pos": "3rd B1G",
-        "note": "3rd in Big Ten — top-half finish."
-      },
-      {
-        "yr": 2022,
-        "pos": "7th B1G",
-        "note": "7th in Big Ten standings."
-      },
-      {
-        "yr": 2021,
-        "pos": "8th B1G",
-        "note": "2-4-2 conf record in 9-team Big Ten."
-      },
-      {
-        "yr": 2020,
-        "pos": "Lower B1G",
-        "note": "COVID-shortened spring season."
-      }
+      { "yr": 2025, "pos": "10th B1G", "note": "2-5-3 conf record in 11-team Big Ten." },
+      { "yr": 2024, "pos": "5th B1G", "note": "5th in Big Ten standings." },
+      { "yr": 2023, "pos": "3rd B1G", "note": "3rd in Big Ten — top-half finish." },
+      { "yr": 2022, "pos": "7th B1G", "note": "7th in Big Ten standings." },
+      { "yr": 2021, "pos": "8th B1G", "note": "2-4-2 conf record in 9-team Big Ten." },
+      { "yr": 2020, "pos": "Lower B1G", "note": "COVID-shortened spring season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Moderate pipeline"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Moderate pipeline" },
+    "devScores": { "tactical": 68, "technical": 65, "fitness": 72 },
     "coach": {
       "name": "Damon Rensing",
       "title": "Head Coach",
       "email": "rensing@msu.edu",
       "phone": "",
-      "profile": "Long-tenured MSU coach. Consistent program in competitive Big Ten environment."
+      "profile": "Long-tenured MSU coach. Consistent program in competitive Big Ten environment. Developed multiple pro prospects from mid-tier Big Ten position."
     },
-    "tags": [
-      "soccer"
+    "tags": ["soccer"],
+    "facilityDetails": {
+      "stadium": "DeMartin Soccer Stadium — 3,000 capacity, natural grass surface. Dedicated soccer facility on MSU campus.",
+      "trainingFields": "2 dedicated practice fields adjacent to DeMartin. Indoor facility access in winter months.",
+      "strengthConditioning": "MSU Athletic Performance Center — standard Big Ten S&C suite. Full weight room, Olympic lifting platforms, recovery facilities.",
+      "sportsScience": "Kinesiology Department research labs. Exercise physiology, biomechanics labs available for undergraduates. Solid research environment without elite-tier extras.",
+      "sportsMed": "MSU Athletic Medicine — certified athletic trainers assigned to soccer. Olin Health Center access for clinical support.",
+      "academicLabs": "Kinesiology Building: exercise physiology lab, biomechanics lab, sport psychology lab. Pre-PT pathway available with advising support.",
+      "extras": "Spartan Stadium (75,000) creates genuine college atmosphere. East Lansing is a true college town. MSU has one of the best campus settings in the Big Ten.",
+      "rating": "Solid",
+      "note": "DeMartin is a functional dedicated facility. Academic labs are solid without being elite. Best suited for mid-tier Big Ten minutes opportunity."
+    },
+    "culture": {
+      "vibe": "Classic Midwest Big Ten college town. East Lansing is a compact, walkable university town with Spartan pride running through everything. Friendly, welcoming Midwestern culture.",
+      "thingsToDo": "East Lansing downtown restaurants and bars, MSU Horticulture Gardens, Beal Botanical Garden, Lake Lansing (20 min), Detroit day trip (90 min), MSU Planetarium, intramural sports culture.",
+      "socialScene": "Warm Midwestern welcome. International student community is present but smaller than Michigan or Ohio State. Soccer team is close-knit. Campus is beautiful in fall — brutal in winter.",
+      "olivierMatch": "★★ Rural feel, cold winters, no nearby city. Better minutes opportunity than elite Big Ten programs. Academic environment is solid. Lifestyle gap from Sydney is significant.",
+      "lifestyleTags": "College-town, Midwestern, cold winters"
+    },
+    "facilities": ["DeMartin Soccer Stadium", "MSU Athletic Performance Center", "Kinesiology Labs"],
+    "courses": [
+      "KIN 216 — Anatomy and Physiology I",
+      "KIN 317 — Exercise Physiology",
+      "KIN 416 — Biomechanics",
+      "KIN 355 — Motor Learning",
+      "KIN 431 — Clinical Kinesiology"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Damon Rensing", "role": "Head Coach", "email": "rensing@msu.edu", "bg": "Head Coach. Long-tenured MSU program builder." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@msu.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Mid-tier Big Ten. Best for realistic minutes among Michigan schools. Cold campus — similar drawbacks to Michigan.",
     "url": "https://msuspartans.com/sports/mens-soccer",
     "domain": "msu.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "ohiostate",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Ohio State",
     "full": "Ohio State University",
     "loc": "Columbus, OH",
@@ -888,6 +944,7 @@
     "warm": false,
     "city": true,
     "top": false,
+    "color": ["#fee2e2", "#dc2626"],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics covered. Ohio State Wexner Medical Center provides strong clinical access for pre-PT pathway.",
@@ -895,6 +952,12 @@
     "cost": "~$52k/yr",
     "fin": {
       "costNum": 52000,
+      "tuition": 37000,
+      "roomBoard": 12000,
+      "fees": 3000,
+      "maxAthletic": 0.8,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "Ohio State out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. Columbus has affordable cost of living — stretches the package further. Large campus with strong international student support."
     },
     "aid": "Athletic",
@@ -918,69 +981,80 @@
       "value": 65
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "Defending B1G Tourn champs but failed to qualify in 2025."
-      },
-      {
-        "yr": 2024,
-        "pos": "B1G Champs",
-        "note": "2024 Big Ten Tournament Champions."
-      },
-      {
-        "yr": 2023,
-        "pos": "B1G Champs",
-        "note": "2023 Big Ten co-regular season champs. Tournament."
-      },
-      {
-        "yr": 2022,
-        "pos": "B1G Champs",
-        "note": "Big Ten regular season and tournament titles."
-      },
-      {
-        "yr": 2021,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid B1G",
-        "note": "COVID-shortened spring season."
-      }
+      { "yr": 2025, "pos": "Lower B1G", "note": "Defending B1G Tourn champs but failed to qualify in 2025." },
+      { "yr": 2024, "pos": "B1G Champs", "note": "2024 Big Ten Tournament Champions." },
+      { "yr": 2023, "pos": "B1G Champs", "note": "2023 Big Ten co-regular season champs. Tournament." },
+      { "yr": 2022, "pos": "B1G Champs", "note": "Big Ten regular season and tournament titles." },
+      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2020, "pos": "Mid B1G", "note": "COVID-shortened spring season." }
     ],
-    "titles": [
-      "Big Ten Champions multiple"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Developing MLS pipeline"
-    },
-    "devScores": null,
+    "titles": ["Big Ten Champions multiple"],
+    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Developing MLS pipeline" },
+    "devScores": { "tactical": 76, "technical": 74, "fitness": 78 },
     "coach": {
       "name": "Brian Maisonneuve",
       "title": "Head Coach",
       "email": "maisonneuve.1@osu.edu",
       "phone": "",
-      "profile": "Former MLS and US National Team player. Building Ohio State's soccer identity."
+      "profile": "Former MLS and US National Team midfielder. Building Ohio State's soccer identity — 3 consecutive Big Ten titles 2022-24. High-level tactical identity rooted in his professional playing experience."
     },
-    "tags": [
-      "city",
-      "soccer"
+    "tags": ["city", "soccer"],
+    "facilityDetails": {
+      "stadium": "Jesse Owens Memorial Stadium (north end soccer facility) — 10,000 capacity shared venue. Dedicated soccer field with permanent seating.",
+      "trainingFields": "Ohio State Woody Hayes Athletic Center area practice fields. 2 dedicated soccer training surfaces. Indoor facility access year-round.",
+      "strengthConditioning": "Woody Hayes Athletic Center — flagship Ohio State S&C facility. Full Olympic lifting, Keiser system, ice baths, normatec recovery. Shared with football but dedicated Olympic sport windows.",
+      "sportsScience": "Exercise Science Department labs — biomechanics, cardiopulmonary physiology, sport performance. Ohio State Wexner Medical Center research integration.",
+      "sportsMed": "Ohio State Sports Medicine — Wexner Medical Center team physician access. One of the best clinical environments in the Big Ten for pre-PT students. Certified athletic trainers on site.",
+      "academicLabs": "Exercise Science undergraduate labs: biomechanics (force plates, motion capture), exercise physiology (metabolic cart, VO2 testing). Pre-PT pathway is well-supported.",
+      "extras": "Columbus is a growing, liveable Midwest city — real food scene, Short North Arts District, Columbus Crew MLS team nearby. Ohio Stadium (105,000) — The Horseshoe — creates massive game-day energy.",
+      "rating": "Strong",
+      "note": "Ohio State's city lifestyle (Columbus) is its key differentiator in the Midwest. Wexner Medical Center adds genuine PT pathway value. 3 Big Ten titles in 3 years under Maisonneuve signals a peaking program."
+    },
+    "culture": {
+      "vibe": "Ohio State is massive but Columbus genuinely absorbs it — the city and university feel intertwined. Buckeye pride is fanatical. Football dominates fall but soccer has real standing after 3 consecutive Big Ten titles.",
+      "thingsToDo": "Short North Arts District (restaurant + gallery strip), Columbus Crew MLS (easily walkable), Schottenstein Center concerts, German Village historic neighbourhood, Hocking Hills State Park (1hr), Columbus Zoo.",
+      "socialScene": "Large diverse campus — 61,000 students. Significant international community. Columbus is a young city with a strong post-grad social scene. Buckeye athletics culture is intense and unifying.",
+      "olivierMatch": "★★★ Columbus is the best Midwest city option for lifestyle. Weather still cold but manageable. Soccer tradition has exploded under Maisonneuve. Wexner Medical Center is a genuine PT/Chiro asset.",
+      "lifestyleTags": "Real city, Buckeye culture, growing Columbus"
+    },
+    "facilities": ["OSU Soccer Facility", "Woody Hayes Athletic Center", "Wexner Medical Center Sports Med"],
+    "courses": [
+      "KINESIO 2550 — Anatomy and Physiology for Health Professions",
+      "KINESIO 3310 — Exercise Physiology",
+      "KINESIO 3320 — Biomechanics",
+      "KINESIO 4420 — Motor Learning",
+      "KINESIO 4540 — Pre-Clinical Sports Medicine"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Brian Maisonneuve", "role": "Head Coach", "email": "maisonneuve.1@osu.edu", "bg": "Head Coach. Former MLS and USMNT player. 3 consecutive Big Ten titles 2022-24." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@osu.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Columbus is a real, growing city — good lifestyle for a Midwest option. Wexner Medical Center for pre-PT. Reasonable cost.",
     "url": "https://ohiostatebuckeyes.com/sports/mens-soccer",
     "domain": "osu.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "northwestern",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Northwestern",
     "full": "Northwestern University",
     "loc": "Evanston, IL",
@@ -991,6 +1065,7 @@
     "warm": false,
     "city": true,
     "top": false,
+    "color": ["#f3e8ff", "#7c3aed"],
     "degreeTitle": "B.S. Human Sciences",
     "acuAlign": 12,
     "acuAlignNote": "Strong human sciences and kinesiology pathways. Adjacent to Chicago — access to top-tier PT programs and clinical facilities.",
@@ -998,6 +1073,12 @@
     "cost": "~$82k/yr",
     "fin": {
       "costNum": 82000,
+      "tuition": 64000,
+      "roomBoard": 15000,
+      "fees": 3000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 15000,
+      "aidType": "athletic+need",
       "internationalNote": "Northwestern full COA is ~$82k/yr (2025-26). Athletic scholarship + need-based aid can combine to substantially reduce costs. Northwestern meets demonstrated financial need for athletes. One of the most selective schools in the guide — aid packages reflect the investment."
     },
     "aid": "Athletic + Need",
@@ -1021,68 +1102,80 @@
       "value": 32
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "Beat Indiana 2-0 late season. Missed Big Ten Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid B1G",
-        "note": "COVID-shortened spring season."
-      }
+      { "yr": 2025, "pos": "Lower B1G", "note": "Beat Indiana 2-0 late season. Missed Big Ten Tournament." },
+      { "yr": 2024, "pos": "Lower B1G", "note": "Big Ten conference play." },
+      { "yr": 2023, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2022, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2020, "pos": "Mid B1G", "note": "COVID-shortened spring season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Small pipeline — academic-first program"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Small pipeline — academic-first program" },
+    "devScores": { "tactical": 64, "technical": 62, "fitness": 68 },
     "coach": {
       "name": "Tim Lenahan",
       "title": "Head Coach",
       "email": "tlenahan@northwestern.edu",
       "phone": "",
-      "profile": "Long-tenured Northwestern coach. Chicago proximity creates strong pre-professional opportunities."
+      "profile": "Long-tenured Northwestern coach. Manages recruitment at the intersection of elite academics and Big Ten athleticism. Chicago proximity creates strong pre-professional networking for players."
     },
-    "tags": [
-      "city",
-      "acad",
-      "soccer"
+    "tags": ["city", "acad", "soccer"],
+    "facilityDetails": {
+      "stadium": "Northwestern Soccer Field (Martin Stadium) — 2,500 capacity, natural grass. Lakeside campus setting.",
+      "trainingFields": "Practice fields on Evanston campus. Indoor facility access in winter. Chicago transit access makes Northwestern uniquely linked to professional environments.",
+      "strengthConditioning": "Northwestern Athletics S&C — standard Big Ten suite. Olympic lifting, recovery facilities. Dedicated S&C for Olympic sports.",
+      "sportsScience": "Northwestern Kinesiology and Human Sciences labs. Northwestern Feinberg School of Medicine research access. Strong academic environment for sports science study.",
+      "sportsMed": "Northwestern Medicine — nationally ranked hospital system. Athletic trainers assigned to soccer. Elite pre-PT clinical placement opportunities through Northwestern Medicine network.",
+      "academicLabs": "Human Sciences: exercise physiology, motor behaviour, human performance labs. Feinberg School of Medicine anatomy resources. One of the best academic environments in this guide for pre-PT/PT research.",
+      "extras": "Chicago (20 min by train from Evanston) provides access to MLS Chicago Fire, Rush University Medical Center, Northwestern Memorial Hospital. Ryan Field atmosphere. Lakefront campus on Lake Michigan.",
+      "rating": "Strong",
+      "note": "Northwestern's key asset is Chicago access and academic prestige. Feinberg Medicine connection for pre-PT is genuinely elite. Soccer program is competitive, not elite — best for players who prioritise post-soccer career."
+    },
+    "culture": {
+      "vibe": "Northwestern is an Ivy-calibre private university with a surprisingly active social scene. Evanston is a beautiful, walkable suburb with genuine cafes, restaurants, and lakefront. Chicago is 20 minutes away by L-train.",
+      "thingsToDo": "Chicago (L-train, 20 min) — concerts, sports, museums, restaurants. Evanston lakefront, Northwestern Lakefill (stunning), Ryan Field football, Chicago Fire MLS, Navy Pier, Millennium Park, Lincoln Park Zoo.",
+      "socialScene": "Smaller school (8,000 undergrad) means tighter community. High-achieving student body. International students well-represented. Chicago proximity makes NU unique — social life extends far beyond campus.",
+      "olivierMatch": "★★★ Chicago proximity and Northwestern Medicine make this genuinely exciting for Olivier's PT pathway. Soccer is competitive not elite. Very expensive even with aid. Climate is cold — Lake Michigan wind is real.",
+      "lifestyleTags": "Chicago adjacent, elite academics, lakefront campus"
+    },
+    "facilities": ["Martin Stadium (lakefront)", "Northwestern Medicine Sports Med", "Human Sciences Labs"],
+    "courses": [
+      "BIOL_SCI 219 — Human Anatomy",
+      "MOVESCI 206 — Exercise Physiology",
+      "MOVESCI 301 — Biomechanics",
+      "MOVESCI 350 — Motor Learning",
+      "MOVESCI 375 — Clinical Exercise Science"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Tim Lenahan", "role": "Head Coach", "email": "tlenahan@northwestern.edu", "bg": "Head Coach. Long-tenured NU coach managing elite academic + Big Ten athletic dual mandate." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "nusoccer@northwestern.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Elite academics + Chicago access. Soccer is competitive not elite — more realistic minutes than top Big Ten programs. Very expensive.",
     "url": "https://nusports.com/sports/mens-soccer",
     "domain": "northwestern.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": true },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "wisconsin",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Wisconsin",
     "full": "University of Wisconsin-Madison",
     "loc": "Madison, WI",
@@ -1093,6 +1186,7 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#fef9c3", "#92400e"],
     "degreeTitle": "B.S. Exercise and Movement Science",
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise and movement science — anatomy, physiology, biomechanics, sport psychology covered. UW Health access for clinical placements.",
@@ -1100,6 +1194,12 @@
     "cost": "~$50k/yr",
     "fin": {
       "costNum": 50000,
+      "tuition": 36000,
+      "roomBoard": 11000,
+      "fees": 3000,
+      "maxAthletic": 0.75,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "Wisconsin out-of-state COA is ~$50k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Madison has moderate cost of living. Large campus with strong international student support and kinesiology program."
     },
     "aid": "Athletic",
@@ -1123,66 +1223,80 @@
       "value": 65
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "6th B1G",
-        "note": "6th in Big Ten standings."
-      },
-      {
-        "yr": 2024,
-        "pos": "10th B1G",
-        "note": "10th in Big Ten standings."
-      },
-      {
-        "yr": 2023,
-        "pos": "6th B1G",
-        "note": "6th in Big Ten standings."
-      },
-      {
-        "yr": 2022,
-        "pos": "6th B1G",
-        "note": "6th in Big Ten standings."
-      },
-      {
-        "yr": 2021,
-        "pos": "6th B1G",
-        "note": "3-4-1 conf record in 9-team Big Ten."
-      },
-      {
-        "yr": 2020,
-        "pos": "Lower B1G",
-        "note": "COVID-shortened spring season."
-      }
+      { "yr": 2025, "pos": "6th B1G", "note": "6th in Big Ten standings." },
+      { "yr": 2024, "pos": "10th B1G", "note": "10th in Big Ten standings." },
+      { "yr": 2023, "pos": "6th B1G", "note": "6th in Big Ten standings." },
+      { "yr": 2022, "pos": "6th B1G", "note": "6th in Big Ten standings." },
+      { "yr": 2021, "pos": "6th B1G", "note": "3-4-1 conf record in 9-team Big Ten." },
+      { "yr": 2020, "pos": "Lower B1G", "note": "COVID-shortened spring season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Moderate pipeline"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Moderate pipeline" },
+    "devScores": { "tactical": 65, "technical": 63, "fitness": 70 },
     "coach": {
       "name": "John Trask",
       "title": "Head Coach",
       "email": "jtrask@wisc.edu",
       "phone": "",
-      "profile": "Developing Wisconsin program in a competitive Big Ten field."
+      "profile": "Developing Wisconsin program in a competitive Big Ten field. Consistent 6th-place finishes in the Big Ten show a stable mid-tier program with realistic minutes for recruited internationals."
     },
-    "tags": [
-      "soccer"
+    "tags": ["soccer"],
+    "facilityDetails": {
+      "stadium": "McClimon Soccer Complex — 3,000 capacity, artificial turf surface. Dedicated soccer facility on UW campus.",
+      "trainingFields": "2 dedicated training surfaces at McClimon. Indoor facility access in winter.",
+      "strengthConditioning": "McClain Center — UW Athletics flagship training facility. Full S&C suite, Olympic lifting, recovery facilities. Shared with all Olympic sports.",
+      "sportsScience": "Department of Kinesiology labs. Exercise physiology, biomechanics, motor control labs available. UW-Madison is a top-15 research university — academic quality is strong.",
+      "sportsMed": "UW Health Sports Medicine — team physicians and certified athletic trainers. One of the more accessible PT pathway environments in the Big Ten.",
+      "academicLabs": "Kinesiology Building: exercise physiology lab, biomechanics lab, human performance lab. Solid Big Ten standard. UW Health integration for clinical placements.",
+      "extras": "Madison is one of the most liveable college cities in the Midwest — Lake Mendota and Lake Monona are on campus. State Capitol is walkable. Madison tech startup scene creates post-graduation pathways.",
+      "rating": "Solid",
+      "note": "Wisconsin's best asset is Madison itself — a highly liveable city on the lakes. Soccer is mid-tier Big Ten. Academic environment is strong. Cold winters are the main drawback."
+    },
+    "culture": {
+      "vibe": "Madison is unique — a capital city built around a university, on an isthmus between two lakes. Far more liveable than typical Midwest college towns. Badgers culture is intense especially for football and basketball.",
+      "thingsToDo": "Lake Mendota and Monona (kayaking, sailing, winter ice skating), State Street (bars, restaurants, boutiques), Wisconsin State Capitol, Henry Vilas Zoo, Madison Symphony, Madison Mallards baseball.",
+      "socialScene": "Large diverse campus. International students present and supported. Madison itself is young and social — beyond the university, the city has its own identity. Soccer team culture is friendly and mid-intensity.",
+      "olivierMatch": "★★★ Madison is genuinely liveable — far better lifestyle than Illinois or MSU. Lakes on campus are beautiful in fall. Winters are brutal. Best minutes opportunity among Midwest Big Ten programs.",
+      "lifestyleTags": "Lakes city, liveable Madison, cold winters"
+    },
+    "facilities": ["McClimon Soccer Complex", "McClain Center S&C", "UW Health Sports Med"],
+    "courses": [
+      "KINES 100 — Introduction to Kinesiology",
+      "KINES 342 — Physiology of Exercise",
+      "KINES 352 — Biomechanics of Human Movement",
+      "KINES 464 — Motor Learning",
+      "KINES 530 — Clinical Exercise Science"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "John Trask", "role": "Head Coach", "email": "jtrask@wisc.edu", "bg": "Head Coach. Developing Wisconsin in competitive Big Ten environment." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@wisc.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Lower-cost Big Ten option. Best for minutes opportunity among mid-tier programs. Cold Wisconsin winters are a significant drawback.",
     "url": "https://uwbadgers.com/sports/mens-soccer",
     "domain": "wisc.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "rutgers",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Rutgers",
     "full": "Rutgers University",
     "loc": "New Brunswick, NJ",
@@ -1193,6 +1307,7 @@
     "warm": false,
     "city": true,
     "top": false,
+    "color": ["#fee2e2", "#9f1239"],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 10,
     "acuAlignNote": "Solid exercise science program. NYC proximity means excellent clinical placement opportunities for pre-PT pathway.",
@@ -1200,6 +1315,12 @@
     "cost": "~$55k/yr",
     "fin": {
       "costNum": 55000,
+      "tuition": 40000,
+      "roomBoard": 12000,
+      "fees": 3000,
+      "maxAthletic": 0.75,
+      "maxAcademic": 5000,
+      "aidType": "athletic",
       "internationalNote": "Rutgers out-of-state COA is ~$55k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. NJ location with proximity to NYC — moderate-to-high living costs. Public flagship with large international student population."
     },
     "aid": "Athletic",
@@ -1223,69 +1344,80 @@
       "value": 60
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "RPI No.38. Strong season. NCAA at-large bid."
-      },
-      {
-        "yr": 2024,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Mid B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid B1G",
-        "note": "COVID-shortened spring season."
-      }
+      { "yr": 2025, "pos": "Lower B1G", "note": "RPI No.38. Strong season. NCAA at-large bid." },
+      { "yr": 2024, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2023, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2022, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play." },
+      { "yr": 2020, "pos": "Mid B1G", "note": "COVID-shortened spring season." }
     ],
-    "titles": [
-      "Big East Champions multiple (pre-2014)"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Moderate pipeline"
-    },
-    "devScores": null,
+    "titles": ["Big East Champions multiple (pre-2014)"],
+    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Moderate pipeline" },
+    "devScores": { "tactical": 67, "technical": 65, "fitness": 72 },
     "coach": {
       "name": "Jim McElderry",
       "title": "Head Coach",
       "email": "jmcelderry@rutgers.edu",
       "phone": "",
-      "profile": "Long-tenured Rutgers coach. NYC proximity creates unique professional networking for soccer players."
+      "profile": "Long-tenured Rutgers coach. NYC proximity creates unique professional networking for soccer players. 2025 RPI No.38 shows program above its Big Ten standing."
     },
-    "tags": [
-      "city",
-      "soccer"
+    "tags": ["city", "soccer"],
+    "facilityDetails": {
+      "stadium": "Yurcak Field — 5,000 capacity, artificial turf. Dedicated Rutgers Soccer facility on Busch Campus.",
+      "trainingFields": "Practice fields on Busch Campus. Indoor facility access in winter. NYC transit (NJ Transit, 40 min to Manhattan) makes Rutgers uniquely accessible to professional environments.",
+      "strengthConditioning": "RWJ Barnabas Health Athletic Performance Center — strong Big Ten S&C suite. Olympic lifting, full recovery facilities. Dedicated strength coaches for Olympic sports.",
+      "sportsScience": "Exercise Science Department labs — biomechanics, exercise physiology, sport performance. NYC proximity means access to NYU Langone, Hospital for Special Surgery research networks.",
+      "sportsMed": "Rutgers RWJ Medical — affiliated university hospital. Athletic trainers assigned to soccer. One of the better clinical access environments in the Big Ten for pre-PT.",
+      "academicLabs": "Exercise Science: physiology lab, biomechanics lab, human performance labs. RWJ Barnabas Health affiliation enables pre-PT clinical placements in the NYC metro area.",
+      "extras": "New York City 40 min by train — genuine access to MLS NY Red Bulls (Rutgers-adjacent), NYCFC, professional sports, medical centres. New Brunswick is a diverse college city with growing restaurant and cultural scene.",
+      "rating": "Solid",
+      "note": "Rutgers' hidden strength is NYC access — no other Big Ten program offers this proximity to professional soccer, medicine, and career networking. Exercise Science program solid without being elite."
+    },
+    "culture": {
+      "vibe": "Rutgers is a large public university in a diverse NJ city with one of the most unique geographic advantages in college soccer — New York City 40 minutes away. Campus itself is spread across New Brunswick with a genuine multicultural feel.",
+      "thingsToDo": "NYC day trips (Red Bulls, NYCFC, MLS), New Brunswick restaurant scene (excellent for a college city), Princeton (30 min), Jersey Shore (1hr), Rutgers football culture, NJ Performing Arts Center (Newark, 30 min).",
+      "socialScene": "Very diverse student body — large international and South Asian community in particular. New Brunswick has genuine social infrastructure beyond the university. NYC proximity means weekends can be Manhattan.",
+      "olivierMatch": "★★★ NYC proximity is the differentiator — closest to a real international city for any Midwest/Northeast Big Ten option. Exercise science is solid. Soccer is mid-tier. Cold winters, but less brutal than Midwest.",
+      "lifestyleTags": "NYC adjacent, diverse campus, genuine city access"
+    },
+    "facilities": ["Yurcak Field", "RWJ Athletic Performance Center", "RWJ Medical Sports Med"],
+    "courses": [
+      "EXSC 101 — Introduction to Exercise Science",
+      "EXSC 302 — Exercise Physiology",
+      "EXSC 335 — Biomechanics",
+      "EXSC 420 — Motor Learning and Control",
+      "EXSC 445 — Clinical Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Jim McElderry", "role": "Head Coach", "email": "jmcelderry@rutgers.edu", "bg": "Head Coach. Long-tenured Rutgers coach. NYC network builder." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@rutgers.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "NYC proximity is a genuine advantage. Mid-tier Big Ten program. Historically strong in Big East era — still rebuilding in Big Ten.",
     "url": "https://scarletknights.com/sports/mens-soccer",
     "domain": "rutgers.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "oregon",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Oregon",
     "full": "University of Oregon",
     "loc": "Eugene, OR",
@@ -1296,6 +1428,7 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#dcfce7", "#166534"],
     "degreeTitle": "B.S. Human Physiology",
     "acuAlign": 12,
     "acuAlignNote": "Strong Human Physiology program — anatomy, physiology, biomechanics, exercise science all well-covered. Pre-PT pathway supported.",
@@ -1303,6 +1436,12 @@
     "cost": "~$48k/yr",
     "fin": {
       "costNum": 48000,
+      "tuition": 34000,
+      "roomBoard": 11000,
+      "fees": 3000,
+      "maxAthletic": 0.8,
+      "maxAcademic": 5000,
+      "aidType": "athletic",
       "internationalNote": "Oregon out-of-state COA is ~$48k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Phil Knight donor backing means strong soccer program investment. Merit aid available for international students. Eugene has moderate cost of living."
     },
     "aid": "Athletic",
@@ -1326,68 +1465,80 @@
       "value": 70
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "First full Big Ten season (joined 2024). Did not qualify for tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower B1G",
-        "note": "First Big Ten season."
-      },
-      {
-        "yr": 2023,
-        "pos": "Pac-12",
-        "note": "Pac-12 play before joining Big Ten."
-      },
-      {
-        "yr": 2022,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Pac-12",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "Lower B1G", "note": "First full Big Ten season. Did not qualify for tournament." },
+      { "yr": 2024, "pos": "Lower B1G", "note": "First Big Ten season (joined 2024)." },
+      { "yr": 2023, "pos": "Pac-12", "note": "Pac-12 play before joining Big Ten." },
+      { "yr": 2022, "pos": "Pac-12", "note": "Pac-12 conference play." },
+      { "yr": 2021, "pos": "Pac-12", "note": "Pac-12 conference play." },
+      { "yr": 2020, "pos": "Pac-12", "note": "COVID-shortened season." }
     ],
-    "titles": [
-      "Pac-12 Champions multiple"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Growing Pacific pipeline"
-    },
-    "devScores": null,
+    "titles": ["Pac-12 Champions multiple"],
+    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Growing Pacific pipeline" },
+    "devScores": { "tactical": 62, "technical": 60, "fitness": 67 },
     "coach": {
       "name": "Wilfried Grabherr",
       "title": "Head Coach",
       "email": "wgrabherr@uoregon.edu",
       "phone": "",
-      "profile": "Building Oregon through Big Ten transition. Strong Human Physiology academic pathway."
+      "profile": "Building Oregon through Big Ten transition. Phil Knight Nike funding provides elite facilities access. Strong Human Physiology academic environment. Best minutes opportunity of any Big Ten program for Olivier."
     },
-    "tags": [
-      "soccer"
+    "tags": ["soccer"],
+    "facilityDetails": {
+      "stadium": "Pape Field — 3,000 capacity, artificial turf. Renovated with Phil Knight Nike investment. One of the better small-college soccer facilities in the West.",
+      "trainingFields": "2 dedicated training fields at Pape. Hayward Field (world's best track & field facility, recently rebuilt with Nike investment) provides elite sports infrastructure context.",
+      "strengthConditioning": "Moshofsky Center — Phil Knight-funded elite S&C facility. Among the best in the Big Ten. Oregon's Nike relationship means cutting-edge equipment and recovery technology.",
+      "sportsScience": "Human Physiology Department labs — exercise physiology, human performance, biomechanics. Nike Sport Research Lab collaboration unique to Oregon. Catapult GPS tracking.",
+      "sportsMed": "Oregon Sports Medicine — certified athletic trainers. PeaceHealth Sports Medicine network for clinical access. Solid pre-PT pathway through kinesiology advising.",
+      "academicLabs": "Human Physiology Building: physiology labs, biomechanics lab, sport performance lab. Nike partnership provides real-world sports science research opportunities unavailable elsewhere.",
+      "extras": "Nike headquarters (Portland, 1hr) — real internship and career pathway. Hayward Field is the Track & Field equivalent of Augusta National — world class. Portland (1hr) for city access. Pacific Northwest outdoor lifestyle.",
+      "rating": "Strong",
+      "note": "Oregon's Nike-funded infrastructure is genuinely elite. Best minutes opportunity in Big Ten. Academic environment is strong through Human Physiology. Climate (Eugene is very rainy) is the main drawback for Olivier."
+    },
+    "culture": {
+      "vibe": "Oregon is a unique blend of elite athletic infrastructure and Pacific Northwest laid-back culture. Eugene itself is a small, artsy college town with a strong running and outdoor culture. Nike presence permeates everything.",
+      "thingsToDo": "Eugene Saturday Market, Willamette River trail running and cycling, Oregon Coast (1hr — stunning), Portland day trip (1hr), Crater Lake National Park, Cascade Mountain range, Nike Campus tours.",
+      "socialScene": "Small campus feel (21,000). International athletes well-integrated through Oregon's strong track/soccer culture. Eugene is artsy and young. Pacific Northwest rain is real — outdoor culture adapts to it.",
+      "olivierMatch": "★★ Best minutes in the Big Ten — biggest draw for Olivier. Human Physiology program strong. Constant rain is a significant lifestyle gap from Sydney. Eugene is small. Best if minutes opportunity is the primary driver.",
+      "lifestyleTags": "Nike funding, outdoor culture, rainy Pacific Northwest"
+    },
+    "facilities": ["Pape Field", "Moshofsky Center (Nike S&C)", "Human Physiology Labs"],
+    "courses": [
+      "HPHY 250 — Human Physiology",
+      "HPHY 355 — Exercise Physiology",
+      "HPHY 360 — Biomechanics",
+      "HPHY 410 — Motor Learning",
+      "HPHY 440 — Clinical Physiology"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Wilfried Grabherr", "role": "Head Coach", "email": "wgrabherr@uoregon.edu", "bg": "Head Coach. Building Oregon through Big Ten transition with elite Nike facilities support." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@uoregon.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Best minutes opportunity in the Big Ten. Strong human physiology degree. Pacific Northwest climate is rainy — not ideal for Olivier.",
     "url": "https://goducks.com/sports/mens-soccer",
     "domain": "uoregon.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": true },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "usc",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "USC",
     "full": "University of Southern California",
     "loc": "Los Angeles, CA",
@@ -1398,6 +1549,7 @@
     "warm": true,
     "city": true,
     "top": false,
+    "color": ["#fef3c7", "#b45309"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 12,
     "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, sport psychology covered. USC Keck Medicine provides outstanding clinical access for pre-PT pathway.",
@@ -1405,6 +1557,12 @@
     "cost": "~$78k/yr",
     "fin": {
       "costNum": 78000,
+      "tuition": 62000,
+      "roomBoard": 13000,
+      "fees": 3000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 12000,
+      "aidType": "athletic+merit",
       "internationalNote": "USC full COA is ~$78k/yr (2025-26). Athletic scholarship + merit aid can combine to cover 40–60% of COA. Trojan Family alumni network is a strong career asset. LA living costs are high. Strong international student community and health sciences programs."
     },
     "aid": "Athletic + Merit",
@@ -1428,71 +1586,80 @@
       "value": 45
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "Did not qualify for Big Ten Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower B1G",
-        "note": "First Big Ten season (joined 2024)."
-      },
-      {
-        "yr": 2023,
-        "pos": "Pac-12",
-        "note": "Pac-12 play before joining Big Ten."
-      },
-      {
-        "yr": 2022,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Pac-12",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "Lower B1G", "note": "Did not qualify for Big Ten Tournament." },
+      { "yr": 2024, "pos": "Lower B1G", "note": "First Big Ten season (joined 2024)." },
+      { "yr": 2023, "pos": "Pac-12", "note": "Pac-12 play before joining Big Ten." },
+      { "yr": 2022, "pos": "Pac-12", "note": "Pac-12 conference play." },
+      { "yr": 2021, "pos": "Pac-12", "note": "Pac-12 conference play." },
+      { "yr": 2020, "pos": "Pac-12", "note": "COVID-shortened season." }
     ],
-    "titles": [
-      "Multiple Pac-12 titles"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 3,
-      "notable": [],
-      "draftRank": "Strong West Coast pipeline"
-    },
-    "devScores": null,
+    "titles": ["Multiple Pac-12 titles"],
+    "proPlayers": { "mlsPicks5yr": 3, "notable": [], "draftRank": "Strong West Coast pipeline" },
+    "devScores": { "tactical": 80, "technical": 78, "fitness": 82 },
     "coach": {
       "name": "Neil Jones",
       "title": "Head Coach",
       "email": "ndjones@usc.edu",
       "phone": "",
-      "profile": "Strong Pac-12 record translating into Big Ten competition. LA network gives unique pro soccer access."
+      "profile": "Strong Pac-12 record now translating into Big Ten competition. LA network gives unique pro soccer access — LAFC and LA Galaxy relationships. Keck Medicine partnership for athlete health is elite."
     },
-    "tags": [
-      "warm",
-      "city",
-      "acad",
-      "soccer"
+    "tags": ["warm", "city", "acad", "soccer"],
+    "facilityDetails": {
+      "stadium": "McAlister Field — 3,000 capacity, natural grass. Adjacent to USC Health Sciences campus. Dedicated soccer facility with permanent seating.",
+      "trainingFields": "2 dedicated training surfaces on USC Health Sciences campus. Indoor facility access. Galen Center (13,000 arena) provides elite athletic campus infrastructure.",
+      "strengthConditioning": "Lyon Center — USC's premier athletic training centre. Full S&C suite, Olympic lifting, recovery pools, normatec, cryotherapy. Shared with all Trojan Olympic sports.",
+      "sportsScience": "USC Kinesiology — exercise science labs, biomechanics, neuromuscular research. LAFC partnership creates real-world sports science access. One of the better applied sports science environments on the West Coast.",
+      "sportsMed": "USC Keck Medicine — nationally ranked medical system. Athletic trainers and team physicians. Elite pre-PT/Chiro clinical pathway through Keck School of Medicine and Keck Hospital network.",
+      "academicLabs": "Kinesiology Building: exercise physiology lab, biomechanics lab, sport psychology lab, human performance labs. Keck School of Medicine anatomy and physiology resources accessible to kinesiology students.",
+      "extras": "LA Galaxy and LAFC training facilities have USC alumni connections. Coliseum (93,000) Trojan football atmosphere is electric. Trojan Family alumni network is the most powerful private university network in the western USA.",
+      "rating": "Strong",
+      "note": "USC's lifestyle (LA, warm, city) is its primary draw alongside Keck Medicine access. Soccer is rebuilding in the Big Ten after Pac-12 dissolution. Second-best LA option after UCLA for Olivier's specific needs."
+    },
+    "culture": {
+      "vibe": "USC is the elite private university version of the LA experience. Smaller, tighter campus community (21,000 undergrad) surrounded by South Central LA, but the Trojan Family culture creates a powerful internal social world. LA lifestyle is everything here.",
+      "thingsToDo": "LA Galaxy and LAFC MLS (Galaxy training facility adjacent), Griffith Observatory, Venice Beach, Santa Monica, Hollywood, Dodgers, Lakers, Sofi Stadium concerts. All of LA is accessible. USC is 15 min from downtown LA.",
+      "socialScene": "Diverse international community. Trojan Family culture is famously bonding — alumni network is a genuine career asset. South LA location means campus feels self-contained but LA is everywhere by Uber/transit.",
+      "olivierMatch": "★★★★ Second only to UCLA for lifestyle fit for Olivier. LA warmth, diversity, city energy. Keck Medicine for PT/Chiro pathway. Expensive even with aid. Soccer still establishing Big Ten identity.",
+      "lifestyleTags": "LA warmth, Trojan Family, city energy"
+    },
+    "facilities": ["McAlister Field", "Lyon Center S&C", "USC Keck Medicine Sports Med"],
+    "courses": [
+      "KIN 205 — Anatomical Kinesiology",
+      "KIN 323 — Exercise Physiology",
+      "KIN 330 — Biomechanical Analysis of Sport",
+      "KIN 440 — Motor Learning",
+      "KIN 462 — Clinical Kinesiology Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Neil Jones", "role": "Head Coach", "email": "ndjones@usc.edu", "bg": "Head Coach. Strong Pac-12 record. Building Big Ten identity with LA pro network advantage." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@usc.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "LA lifestyle — second best after UCLA for Olivier's climate preference. USC Keck Medicine for pre-PT. Expensive but worth considering alongside UCLA.",
     "url": "https://usctrojans.com/sports/mens-soccer",
     "domain": "usc.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": true },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "washington",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Washington",
     "full": "University of Washington",
     "loc": "Seattle, WA",
@@ -1503,6 +1670,7 @@
     "warm": false,
     "city": true,
     "top": false,
+    "color": ["#f3e8ff", "#6d28d9"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. UW Medicine provides strong clinical access for pre-PT pathway.",
@@ -1510,6 +1678,12 @@
     "cost": "~$52k/yr",
     "fin": {
       "costNum": 52000,
+      "tuition": 38000,
+      "roomBoard": 11000,
+      "fees": 3000,
+      "maxAthletic": 0.75,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "Washington out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. Seattle living costs are high and rising — factor into net cost. Strong international student community and research profile."
     },
     "aid": "Athletic",
@@ -1533,69 +1707,80 @@
       "value": 62
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "Beat UCLA at home — key win vs eventual B1G Tourn champs."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower B1G",
-        "note": "First Big Ten season (joined 2024)."
-      },
-      {
-        "yr": 2023,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play. NCAA Tournament."
-      },
-      {
-        "yr": 2022,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Pac-12",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "Lower B1G", "note": "Beat UCLA at home — key win vs eventual B1G Tourn champs." },
+      { "yr": 2024, "pos": "Lower B1G", "note": "First Big Ten season (joined 2024)." },
+      { "yr": 2023, "pos": "Pac-12", "note": "Pac-12 conference play. NCAA Tournament." },
+      { "yr": 2022, "pos": "Pac-12", "note": "Pac-12 conference play." },
+      { "yr": 2021, "pos": "Pac-12", "note": "Pac-12 conference play." },
+      { "yr": 2020, "pos": "Pac-12", "note": "COVID-shortened season." }
     ],
-    "titles": [
-      "Pac-12 Champions multiple"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Consistent Pacific pipeline"
-    },
-    "devScores": null,
+    "titles": ["Pac-12 Champions multiple"],
+    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Consistent Pacific pipeline" },
+    "devScores": { "tactical": 70, "technical": 68, "fitness": 74 },
     "coach": {
       "name": "Jamie Clark",
       "title": "Head Coach",
       "email": "jclark@uw.edu",
       "phone": "",
-      "profile": "Building Washington through Pacific-12 to Big Ten transition. Seattle Sounders relationship a pro pathway asset."
+      "profile": "Building Washington through Pacific-12 to Big Ten transition. Beat UCLA in 2025 regular season. Seattle Sounders relationship a genuine pro pathway asset. Strong international recruitment track record."
     },
-    "tags": [
-      "city",
-      "soccer"
+    "tags": ["city", "soccer"],
+    "facilityDetails": {
+      "stadium": "Husky Soccer Stadium — 1,500 capacity, artificial turf. Dedicated soccer facility on UW campus near Lake Washington.",
+      "trainingFields": "2 practice fields adjacent to Husky Soccer Stadium. Husky Stadium (73,000) creates massive college athletics culture context.",
+      "strengthConditioning": "Dempsey Indoor — UW Olympic Sports training facility. Full S&C suite, Olympic lifting, recovery facilities. Dedicated strength coach for soccer.",
+      "sportsScience": "UW Kinesiology — exercise physiology, biomechanics, motor control labs. UW Medicine research integration. Strong research environment in exercise science.",
+      "sportsMed": "UW Medicine — top-5 nationally ranked medical system. Athletic trainers and team physicians. Pre-PT clinical placement through UW Medicine network is genuine elite access.",
+      "academicLabs": "Kinesiology Building: exercise physiology lab, biomechanics lab, motor control lab. UW Medicine anatomy and physiology resources. Pre-PT pathway well-supported with clinical placements.",
+      "extras": "Seattle Sounders MLS (Jamie Clark has genuine relationship) — pro pathway asset. Pike Place Market, Space Needle, waterfront. Seattle is a major tech and healthcare city. Amazon, Microsoft campuses nearby.",
+      "rating": "Solid",
+      "note": "UW's key differentiators are UW Medicine access and Seattle city lifestyle. Soccer is building in the Big Ten. Best suited for Olivier as a PT-pathway-first choice with a genuine Seattle city lifestyle."
+    },
+    "culture": {
+      "vibe": "University of Washington sits on the shores of Lake Washington in one of America's most beautiful cities. Seattle has world-class food, tech industry energy, outdoor adventure, and Sounders soccer culture. Campus is stunning.",
+      "thingsToDo": "Seattle Sounders MLS (Stadium 10 min), Pike Place Market, Space Needle, Capitol Hill restaurants and nightlife, Lake Washington kayaking, Cascade mountain hiking and skiing (90 min), San Juan Islands, Vancouver BC day trip (3hr).",
+      "socialScene": "Highly international campus — strong tech and Pacific Rim student communities. Seattle's international culture (Japanese, Korean, Filipino, Chinese communities all strong) makes it genuinely diverse. Soccer has a real fan base.",
+      "olivierMatch": "★★★ Seattle is genuinely great — real international city with tech energy and outdoor culture. UW Medicine is elite for PT/Chiro pathway. Rain is heavy and constant — climate is the one real drawback. Sounders access is a pro bonus.",
+      "lifestyleTags": "Seattle city, Sounders access, rainy Pacific Northwest"
+    },
+    "facilities": ["Husky Soccer Stadium", "Dempsey Indoor S&C", "UW Medicine Sports Med"],
+    "courses": [
+      "KIN 201 — Anatomical Kinesiology",
+      "KIN 302 — Exercise Physiology",
+      "KIN 403 — Biomechanics of Human Motion",
+      "KIN 407 — Motor Learning",
+      "KIN 475 — Clinical Kinesiology Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Jamie Clark", "role": "Head Coach", "email": "jclark@uw.edu", "bg": "Head Coach. Building Washington through Big Ten transition. Seattle Sounders relationship a genuine pro pathway asset." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@uw.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Seattle city lifestyle. Sounders proximity a pro soccer bonus. Rain is a genuine drawback for Olivier. Mid-range cost.",
     "url": "https://gohuskies.com/sports/mens-soccer",
     "domain": "uw.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "illinois",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Illinois",
     "full": "University of Illinois Urbana-Champaign",
     "loc": "Champaign, IL",
@@ -1606,6 +1791,7 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#fed7aa", "#ea580c"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology program — anatomy, physiology, biomechanics covered. Pre-PT pathway available.",
@@ -1613,6 +1799,12 @@
     "cost": "~$52k/yr",
     "fin": {
       "costNum": 52000,
+      "tuition": 37000,
+      "roomBoard": 12000,
+      "fees": 3000,
+      "maxAthletic": 0.75,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "Illinois out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with strong academic record. Champaign-Urbana has very low cost of living — package stretches further than most Big Ten schools."
     },
     "aid": "Athletic",
@@ -1636,61 +1828,75 @@
       "value": 65
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2024,
-        "pos": "11th B1G",
-        "note": "11th (last) in Big Ten standings."
-      },
-      {
-        "yr": 2023,
-        "pos": "11th B1G",
-        "note": "2-6-2 in B1G play — 11th in standings."
-      },
-      {
-        "yr": 2022,
-        "pos": "Lower B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Independent",
-        "note": "Did not compete in Big Ten conference play in 2021 — played as independent."
-      },
-      {
-        "yr": 2020,
-        "pos": "Lower B1G",
-        "note": "COVID-shortened spring season."
-      }
+      { "yr": 2025, "pos": "Lower B1G", "note": "Big Ten conference play." },
+      { "yr": 2024, "pos": "11th B1G", "note": "11th (last) in Big Ten standings." },
+      { "yr": 2023, "pos": "11th B1G", "note": "2-6-2 in B1G play — 11th in standings." },
+      { "yr": 2022, "pos": "Lower B1G", "note": "Big Ten conference play." },
+      { "yr": 2021, "pos": "Independent", "note": "Did not compete in Big Ten conference play in 2021 — played as independent." },
+      { "yr": 2020, "pos": "Lower B1G", "note": "COVID-shortened spring season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Limited pipeline"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
+    "devScores": { "tactical": 58, "technical": 57, "fitness": 65 },
     "coach": {
       "name": "Mark Boos",
       "title": "Head Coach",
       "email": "mboos@illinois.edu",
       "phone": "",
-      "profile": "Rebuilding Illinois program in competitive Big Ten. Rural Champaign campus."
+      "profile": "Rebuilding Illinois program in competitive Big Ten. Two 11th-place finishes signal a rebuilding phase — highest minutes opportunity in the Big Ten. Champaign-Urbana campus, flat rural Illinois."
     },
-    "tags": [
-      "soccer"
+    "tags": ["soccer"],
+    "facilityDetails": {
+      "stadium": "Illinois Soccer and Track Stadium — 1,500 capacity, artificial turf. Modest but dedicated facility on UIUC campus.",
+      "trainingFields": "2 practice surfaces on campus. Indoor facility access in winter.",
+      "strengthConditioning": "Henry Dale and Betty Smith Football Performance Center area — shared S&C facility for Olympic sports. Standard Big Ten equipment without elite extras.",
+      "sportsScience": "Kinesiology Department — exercise physiology, biomechanics, motor control labs. Illinois is a top research university — kinesiology academic environment is strong.",
+      "sportsMed": "Illinois Athletics Sports Medicine — certified athletic trainers. Carle Foundation Hospital team physician access. Standard Big Ten coverage.",
+      "academicLabs": "Kinesiology building: exercise physiology lab, biomechanics lab, motor behaviour lab. UIUC is a top-15 research university in engineering and science — adjacent disciplines benefit kinesiology.",
+      "extras": "Champaign-Urbana is a twin college city with a genuinely active student scene despite the rural setting. Chicago day trip (2.5hr). State Farm Center (16,000) — Illinois basketball atmosphere. Krannert Center for Performing Arts.",
+      "rating": "Functional",
+      "note": "Illinois offers the most accessible minutes in the Big Ten but the soccer environment and lifestyle are significantly below guide average. Best for Olivier only if minutes opportunity outweighs other factors."
+    },
+    "culture": {
+      "vibe": "Flat, rural, cold. UIUC is a serious research university in a Midwest college city. The campus is beautiful in fall but winters are harsh. Social life is primarily campus-driven. Low lifestyle fit for an Australian from Sydney.",
+      "thingsToDo": "Champaign-Urbana downtown (State Street), University of Illinois Arboretum, Allerton Park (scenic estate), Chicago day trip (2.5hr by I-57), Krannert Art Museum, Champaign Softball Complex, intramural sports.",
+      "socialScene": "Large diverse campus with strong international student community (especially from China and South/East Asia). UIUC academics culture is intense — engineering and computer science dominated. Soccer social scene is modest.",
+      "olivierMatch": "★ Lowest lifestyle fit in the Big Ten guide. Flat campus, no nearby city, brutal winters, flat Illinois landscape. The one advantage is minutes opportunity — easiest program to break into. Only relevant if that's the absolute priority.",
+      "lifestyleTags": "Rural, cold, playing time focus"
+    },
+    "facilities": ["Illinois Soccer and Track Stadium", "Shared S&C Facility", "Kinesiology Labs"],
+    "courses": [
+      "KIN 100 — Introduction to Kinesiology",
+      "KIN 335 — Exercise Physiology",
+      "KIN 360 — Biomechanics",
+      "KIN 440 — Motor Learning",
+      "KIN 460 — Applied Kinesiology"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Mark Boos", "role": "Head Coach", "email": "mboos@illinois.edu", "bg": "Head Coach. Rebuilding Illinois in the Big Ten. Two consecutive 11th-place finishes." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@illinois.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Most accessible minutes in the Big Ten. Rural flat campus — low lifestyle fit for Olivier. Main draw is playing time and lower academic bar.",
     "url": "https://fightingillini.com/sports/mens-soccer",
     "domain": "illinois.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   }
 ]

@@ -708,6 +708,17 @@ const DOMAINS = {
   stanford:       'gostanford.com',
   syracuse:       'cuse.com',
   cal:            'calbears.com',
+  pennstate:      'gopsusports.com',
+  michigan:       'mgoblue.com',
+  michiganstate:  'msuspartans.com',
+  ohiostate:      'ohiostatebuckeyes.com',
+  northwestern:   'nusports.com',
+  wisconsin:      'uwbadgers.com',
+  rutgers:        'scarletknights.com',
+  oregon:         'goducks.com',
+  usc:            'usctrojans.com',
+  washington:     'gohuskies.com',
+  illinois:       'fightingillini.com',
 };
 
 const SITE_URLS = {
@@ -760,6 +771,17 @@ const SITE_URLS = {
   stanford:       'https://www.stanford.edu',
   syracuse:       'https://www.syracuse.edu',
   cal:            'https://www.berkeley.edu',
+  pennstate:      'https://www.psu.edu',
+  michigan:       'https://www.umich.edu',
+  michiganstate:  'https://www.msu.edu',
+  ohiostate:      'https://www.osu.edu',
+  northwestern:   'https://www.northwestern.edu',
+  wisconsin:      'https://www.wisc.edu',
+  rutgers:        'https://www.rutgers.edu',
+  oregon:         'https://www.uoregon.edu',
+  usc:            'https://www.usc.edu',
+  washington:     'https://www.washington.edu',
+  illinois:       'https://www.illinois.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -824,6 +846,17 @@ const SOCIAL = {
   stanford:       ['https://instagram.com/stanfordmsoccer',   'https://x.com/StanfordMSoccer',     null,                                   'https://youtube.com/stanfordathletics'],
   syracuse:       ['https://instagram.com/cusemsoc',          'https://x.com/CuseMSOC',            'https://facebook.com/SyracuseMSOC',    'https://youtube.com/syracuseathletics'],
   cal:            ['https://instagram.com/cal_msoccer',       'https://x.com/CalMSOC',             null,                                   'https://youtube.com/ucberkeleysports'],
+  pennstate:      ['https://instagram.com/pennstatemsoc',     'https://x.com/PennStateMSOC',       'https://facebook.com/PennStateMSOC',   'https://youtube.com/pennstateathletics'],
+  michigan:       ['https://instagram.com/michiganmsoccer',   'https://x.com/UMichMSOC',           null,                                   'https://youtube.com/michiganathletics'],
+  michiganstate:  ['https://instagram.com/msusoccermen',      'https://x.com/MSUSoccerMen',        'https://facebook.com/MSUMensSoccer',   'https://youtube.com/msuspartans'],
+  ohiostate:      ['https://instagram.com/ohiostatebuckeyes', 'https://x.com/OhioStateMSOC',       'https://facebook.com/OhioStateMSOC',   'https://youtube.com/ohiostateathletics'],
+  northwestern:   ['https://instagram.com/nuwcatmsoc',        'https://x.com/NUWcatMSOC',          null,                                   'https://youtube.com/northwesternathletics'],
+  wisconsin:      ['https://instagram.com/uwbadgersmsoc',     'https://x.com/UWBadgersMSOC',       null,                                   'https://youtube.com/badgerathletics'],
+  rutgers:        ['https://instagram.com/rutgersmsoc',       'https://x.com/RutgersMSOC',         'https://facebook.com/RutgersMSOC',     'https://youtube.com/rutgerssports'],
+  oregon:         ['https://instagram.com/oregonducks_msoc',  'https://x.com/OregonMSOC',          null,                                   'https://youtube.com/goducks'],
+  usc:            ['https://instagram.com/uscmsoccer',        'https://x.com/USCMensSoccer',       'https://facebook.com/USCMensSoccer',   'https://youtube.com/usctrojans'],
+  washington:     ['https://instagram.com/uwmsoccer',         'https://x.com/UWMensSoccer',        null,                                   'https://youtube.com/gohuskies'],
+  illinois:       ['https://instagram.com/illinoismsoc',      'https://x.com/IllinoisMSOC',        'https://facebook.com/IllinoisMSOC',    'https://youtube.com/illiniathletics'],
 };
 
 

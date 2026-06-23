@@ -1743,7 +1743,7 @@ const ACU_UNIT_META = [
   { unit: "EXSC187", label: "Growth, Motor Development & Ageing",usEquiv: "Lifespan Motor Development",                  coverage: "Partial — often split",          amber: true },
   { unit: "EXSC230", label: "Motor Control & Learning",          usEquiv: "Motor Control & Learning / Neuromechanics",   coverage: "Partial — rare standalone",      amber: true },
   { unit: "EXSC122", label: "Research & Ethics",                 usEquiv: "Research Methods in Kinesiology",              coverage: "Strong — required everywhere",   partial: true },
-  { unit: "EXSC398", label: "Professional Experience (140hrs)",  usEquiv: "Internship / Clinical Practicum",              coverage: "Full at UF*, PBA, Indiana, Akron" },
+  { unit: "EXSC398", label: "Professional Experience (140hrs)",  usEquiv: "Internship / Clinical Practicum",              coverage: "Full at PBA, Indiana, Akron" },
 ];
 
 function renderACUTable() {

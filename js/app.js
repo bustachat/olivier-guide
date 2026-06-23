@@ -728,6 +728,14 @@ const DOMAINS = {
   uconn:          'uconnhuskies.com',
   depaul:         'depaulbluedemons.com',
   villanova:      'villanova.com',
+  calpoly:        'gopoly.com',
+  ucdavis:        'ucdavisaggies.com',
+  ucirvine:       'ucirvineantares.com',
+  ucriverside:    'ucrhighlanders.com',
+  ucsd:           'ucsdtritons.com',
+  longbeach:      'longbeachstate.com',
+  hawaii:         'hawaiiathletics.com',
+  csuf:           'fullertontitans.com',
 };
 
 const SITE_URLS = {
@@ -800,6 +808,14 @@ const SITE_URLS = {
   uconn:          'https://www.uconn.edu',
   depaul:         'https://www.depaul.edu',
   villanova:      'https://www.villanova.edu',
+  calpoly:        'https://www.calpoly.edu',
+  ucdavis:        'https://www.ucdavis.edu',
+  ucirvine:       'https://www.uci.edu',
+  ucriverside:    'https://www.ucr.edu',
+  ucsd:           'https://www.ucsd.edu',
+  longbeach:      'https://www.csulb.edu',
+  hawaii:         'https://www.hawaii.edu',
+  csuf:           'https://www.fullerton.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -884,6 +900,14 @@ const SOCIAL = {
   uconn:          ['https://instagram.com/uconnmsoc',         'https://x.com/UConnMSOC',           'https://facebook.com/UConnMSOC',       'https://youtube.com/uconnathletics'],
   depaul:         ['https://instagram.com/depaulmsoc',        'https://x.com/DePaulMSOC',          null,                                   'https://youtube.com/depaulathletics'],
   villanova:      ['https://instagram.com/novamsoc',          'https://x.com/NovaMSOC',            null,                                   'https://youtube.com/villanovaathletics'],
+  calpoly:        ['https://instagram.com/calpolymsoc',       'https://x.com/CalPolyMSOC',         null,                                   'https://youtube.com/calpolyathletics'],
+  ucdavis:        ['https://instagram.com/ucdavismsoc',       'https://x.com/UCDavisMSOC',         null,                                   'https://youtube.com/ucdavisaggies'],
+  ucirvine:       ['https://instagram.com/ucimsoc',           'https://x.com/UCIrvineSOC',         null,                                   'https://youtube.com/ucirvineantares'],
+  ucriverside:    ['https://instagram.com/ucrhighlanders',    'https://x.com/UCRMensSoccer',       null,                                   'https://youtube.com/ucrhighlanders'],
+  ucsd:           ['https://instagram.com/ucsdmsoc',          'https://x.com/UCSDMensSoccer',      null,                                   'https://youtube.com/ucsdtritons'],
+  longbeach:      ['https://instagram.com/lbstatemsoc',       'https://x.com/LBStateMSOC',         null,                                   'https://youtube.com/longbeachstate'],
+  hawaii:         ['https://instagram.com/hawaiimsoc',        'https://x.com/HawaiiMSOC',          null,                                   'https://youtube.com/hawaiiathletics'],
+  csuf:           ['https://instagram.com/csufmsoc',          'https://x.com/CSUFMensSoccer',      null,                                   'https://youtube.com/fullertontitans'],
 };
 
 

@@ -2072,6 +2072,49 @@
     "licence": null
   },
   {
+    "id": "sampson_calpoly",
+    "schoolId": "calpoly",
+    "name": "Steve Sampson",
+    "school": "California Polytechnic State University",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 10,
+    "record": "Back-to-back Big West Reg Season titles 2023-24",
+    "mlsPlayers": 1,
+    "rank": 45,
+    "rankClass": "rk-solid",
+    "overallScore": 68,
+    "tacticalScore": 67,
+    "devScore": 66,
+    "ptPathScore": 55,
+    "ausConnection": false,
+    "bio": "Steve Sampson has built Cal Poly into a perennial Big West top-2 program with back-to-back regular season titles (2023, 2024). SLO is consistently ranked the most liveable college town in California. Learn-by-doing kinesiology model means strong lab and practical experience alongside soccer development.",
+    "strengths": [
+      "Big West titles",
+      "SLO lifestyle",
+      "Learn-by-doing model",
+      "Low cost"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@calpoly.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "ssampson@calpoly.edu",
+      "phone": ""
+    },
+    "url": "https://gopoly.com/sports/mens-soccer",
+    "color": [
+      "#dcfce7",
+      "#166534"
+    ],
+    "licence": null
+  },
+  {
     "id": "clark_washington",
     "schoolId": "washington",
     "name": "Jamie Clark",
@@ -2081,7 +2124,7 @@
     "yearsHC": 8,
     "record": "Multiple Pac-12 titles, beat UCLA 2025",
     "mlsPlayers": 2,
-    "rank": 45,
+    "rank": 46,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "tacticalScore": 68,
@@ -2121,7 +2164,7 @@
     "school": "Keiser University",
     "div": "NAIA",
     "conf": "Sun Conference",
-    "rank": 46,
+    "rank": 47,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -2174,7 +2217,7 @@
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 47,
+    "rank": 48,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -2234,7 +2277,7 @@
     "yearsHC": 11,
     "record": "Multiple Big East appearances, 2024 Big East Tournament QF",
     "mlsPlayers": 2,
-    "rank": 48,
+    "rank": 49,
     "rankClass": "rk-solid",
     "overallScore": 66,
     "tacticalScore": 65,
@@ -2274,7 +2317,7 @@
     "school": "Santa Monica College",
     "div": "JUCO",
     "conf": "CCCAA / SCFA",
-    "rank": 49,
+    "rank": 50,
     "rankClass": "rk-solid",
     "overallScore": 66,
     "devScore": 65,
@@ -2313,7 +2356,7 @@
     "yearsHC": 18,
     "record": "Long-tenured Northwestern coach",
     "mlsPlayers": 1,
-    "rank": 50,
+    "rank": 51,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2353,7 +2396,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 51,
+    "rank": 52,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "devScore": 65,
@@ -2410,7 +2453,7 @@
     "school": "Georgian Court University",
     "div": "D2",
     "conf": "CACC",
-    "rank": 52,
+    "rank": 53,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 66,
@@ -2446,6 +2489,49 @@
     "licence": "USSF A"
   },
   {
+    "id": "hc_ucirvine",
+    "schoolId": "ucirvine",
+    "name": "Head Coach",
+    "school": "University of California, Irvine",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 5,
+    "record": "2025 Big West Tournament Champions",
+    "mlsPlayers": 1,
+    "rank": 54,
+    "rankClass": "rk-solid",
+    "overallScore": 64,
+    "tacticalScore": 64,
+    "devScore": 62,
+    "ptPathScore": 65,
+    "ausConnection": false,
+    "bio": "UC Irvine claimed the 2025 Big West Tournament Championship, beating UCSB 2-1 in the final. UCI Medical Center (nationally ranked academic medical centre) provides exceptional pre-PT clinical access. Orange County location \u2014 warm, coastal proximity, 5 miles from Huntington Beach.",
+    "strengths": [
+      "2025 BW Tournament champs",
+      "UCI Medical Center",
+      "OC beaches",
+      "Rising program"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@uci.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@uci.edu",
+      "phone": ""
+    },
+    "url": "https://ucirvineantares.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "berrera_providence",
     "schoolId": "providence",
     "name": "Craig Berrera",
@@ -2455,7 +2541,7 @@
     "yearsHC": 8,
     "record": "Mid-table Big East, NCAA Tournament appearances",
     "mlsPlayers": 1,
-    "rank": 53,
+    "rank": 55,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -2495,7 +2581,7 @@
     "school": "North Carolina State University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 54,
+    "rank": 56,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -2534,7 +2620,7 @@
     "yearsHC": 6,
     "record": "6th-place finishes in Big Ten",
     "mlsPlayers": 2,
-    "rank": 55,
+    "rank": 57,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -2574,7 +2660,7 @@
     "school": "Miami Dade College",
     "div": "JUCO",
     "conf": "NJCAA",
-    "rank": 56,
+    "rank": 58,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -2613,7 +2699,7 @@
     "yearsHC": 7,
     "record": "Mid Big East, NCAA Tournament 2022-23",
     "mlsPlayers": 1,
-    "rank": 57,
+    "rank": 59,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "tacticalScore": 62,
@@ -2647,13 +2733,56 @@
     "licence": null
   },
   {
+    "id": "hc_ucdavis",
+    "schoolId": "ucdavis",
+    "name": "Head Coach",
+    "school": "University of California, Davis",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 4,
+    "record": "2024 Big West Tournament Champions",
+    "mlsPlayers": 1,
+    "rank": 60,
+    "rankClass": "rk-solid",
+    "overallScore": 62,
+    "tacticalScore": 61,
+    "devScore": 60,
+    "ptPathScore": 60,
+    "ausConnection": false,
+    "bio": "UC Davis claimed the 2024 Big West Tournament Championship. The program operates from a top-tier research university with UC Davis Medical Center providing pre-PT clinical access. Davis is a bike-friendly college town adjacent to Sacramento \u2014 warm, clean, and affordable relative to Bay Area UC campuses.",
+    "strengths": [
+      "2024 BW Tournament champs",
+      "UC Davis Medical Center",
+      "Sacramento access",
+      "Bike-friendly campus"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@ucdavis.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@ucdavis.edu",
+      "phone": ""
+    },
+    "url": "https://ucdavisaggies.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "solomon_mercyhurst",
     "schoolId": "mercyhurst",
     "name": "Austin Solomon",
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 58,
+    "rank": 61,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -2708,7 +2837,7 @@
     "yearsHC": 12,
     "record": "Consistent Big Ten mid-table",
     "mlsPlayers": 2,
-    "rank": 59,
+    "rank": 62,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "tacticalScore": 60,
@@ -2748,7 +2877,7 @@
     "school": "University of Louisville",
     "div": "D1",
     "conf": "ACC",
-    "rank": 60,
+    "rank": 63,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "devScore": 60,
@@ -2788,7 +2917,7 @@
     "yearsHC": 6,
     "record": "Lower Big East, Chicago location",
     "mlsPlayers": 1,
-    "rank": 61,
+    "rank": 64,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "tacticalScore": 59,
@@ -2831,7 +2960,7 @@
     "yearsHC": 9,
     "record": "Lower Big East, building program",
     "mlsPlayers": 1,
-    "rank": 62,
+    "rank": 65,
     "rankClass": "rk-solid",
     "overallScore": 59,
     "tacticalScore": 58,
@@ -2874,7 +3003,7 @@
     "yearsHC": 5,
     "record": "Multiple Pac-12 titles",
     "mlsPlayers": 2,
-    "rank": 63,
+    "rank": 66,
     "rankClass": "rk-solid",
     "overallScore": 59,
     "tacticalScore": 58,
@@ -2908,13 +3037,56 @@
     "licence": null
   },
   {
+    "id": "hc_ucsd",
+    "schoolId": "ucsd",
+    "name": "Head Coach",
+    "school": "University of California, San Diego",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 5,
+    "record": "Building program post-D1 elevation",
+    "mlsPlayers": 2,
+    "rank": 67,
+    "rankClass": "rk-solid",
+    "overallScore": 58,
+    "tacticalScore": 58,
+    "devScore": 57,
+    "ptPathScore": 78,
+    "ausConnection": false,
+    "bio": "UCSD is a rapidly elevating program \u2014 recently elevated to full Division I research university status. The Exercise and Rehabilitative Sciences degree is among the most PT-aligned in the UC system. UCSD Health (top-15 nationally for research) provides exceptional pre-PT/Chiro clinical access. La Jolla is one of the most beautiful campus settings in US college soccer.",
+    "strengths": [
+      "UCSD Health top-15",
+      "La Jolla lifestyle",
+      "Rady Children's Hospital",
+      "Best pre-DPT in BW"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@ucsd.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@ucsd.edu",
+      "phone": ""
+    },
+    "url": "https://ucsdtritons.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "potter_northeast",
     "schoolId": "northeast_cc",
     "name": "Adam Potter",
     "school": "Northeast Community College",
     "div": "JUCO",
     "conf": "NJCAA ICCAC",
-    "rank": 64,
+    "rank": 68,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 60,
@@ -2944,13 +3116,56 @@
     "licence": null
   },
   {
+    "id": "hc_longbeach",
+    "schoolId": "longbeach",
+    "name": "Head Coach",
+    "school": "California State University, Long Beach",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 4,
+    "record": "Lower Big West \u2014 LA metro access",
+    "mlsPlayers": 1,
+    "rank": 69,
+    "rankClass": "rk-solid",
+    "overallScore": 55,
+    "tacticalScore": 54,
+    "devScore": 53,
+    "ptPathScore": 55,
+    "ausConnection": false,
+    "bio": "Long Beach State is a developing Big West program in the heart of the LA metro. Beach campus \u2014 2 miles from the Pacific Ocean. Long Beach Memorial Medical Center provides pre-PT clinical access. LAFC, LA Galaxy, and LA's MLS ecosystem accessible for professional networking. Lowest cost full-profile D1 option in Southern California.",
+    "strengths": [
+      "LA Metro + beach",
+      "LAFC/Galaxy network",
+      "Lowest D1 cost SoCal",
+      "Long Beach Memorial"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@csulb.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@csulb.edu",
+      "phone": ""
+    },
+    "url": "https://longbeachstate.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#111827"
+    ],
+    "licence": null
+  },
+  {
     "id": "mason_columbia",
     "schoolId": "columbia_college",
     "name": "Nathan Mason",
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 65,
+    "rank": 70,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -2995,7 +3210,7 @@
     "yearsHC": 4,
     "record": "11th Big Ten 2023-24",
     "mlsPlayers": 1,
-    "rank": 66,
+    "rank": 71,
     "rankClass": "rk-solid",
     "overallScore": 54,
     "tacticalScore": 53,
@@ -3035,7 +3250,7 @@
     "school": "Chapman University",
     "div": "D3",
     "conf": "SCIAC Conference",
-    "rank": 67,
+    "rank": 72,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 55,
@@ -3065,6 +3280,92 @@
     "licence": null
   },
   {
+    "id": "hc_hawaii",
+    "schoolId": "hawaii",
+    "name": "Head Coach",
+    "school": "University of Hawaii at Manoa",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 4,
+    "record": "Lower Big West \u2014 island program",
+    "mlsPlayers": 1,
+    "rank": 73,
+    "rankClass": "rk-solid",
+    "overallScore": 52,
+    "tacticalScore": 52,
+    "devScore": 50,
+    "ptPathScore": 50,
+    "ausConnection": false,
+    "bio": "Hawaii is a unique program \u2014 island geography creates a close-knit team culture and a lifestyle unmatched anywhere in US college soccer. Consistently lower Big West but real minutes opportunity for international recruits. Strong Pacific Rim international student community. The Queen's Medical Center and Straub Medical Center provide pre-PT clinical access in Honolulu.",
+    "strengths": [
+      "Pacific Rim culture",
+      "Tropical lifestyle",
+      "Minutes opportunity",
+      "Pacific time zone (AUS proximity)"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@hawaii.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@hawaii.edu",
+      "phone": ""
+    },
+    "url": "https://hawaiiathletics.com/sports/mens-soccer",
+    "color": [
+      "#dcfce7",
+      "#065f46"
+    ],
+    "licence": null
+  },
+  {
+    "id": "hc_csuf",
+    "schoolId": "csuf",
+    "name": "Head Coach",
+    "school": "California State University, Fullerton",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 4,
+    "record": "Lower Big West \u2014 developing program",
+    "mlsPlayers": 0,
+    "rank": 74,
+    "rankClass": "rk-solid",
+    "overallScore": 50,
+    "tacticalScore": 49,
+    "devScore": 48,
+    "ptPathScore": 58,
+    "ausConnection": false,
+    "bio": "CSUF is a developing Big West program in Orange County \u2014 the most accessible minutes option in the Big West. Lowest-cost D1 program in Southern California at ~$28k/yr. Orange County location means warm weather, beaches (Huntington Beach 15 min), Disneyland (3 min), and CHOC clinical access.",
+    "strengths": [
+      "Maximum minutes",
+      "Lowest D1 cost",
+      "CHOC clinical",
+      "OC lifestyle"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@fullerton.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@fullerton.edu",
+      "phone": ""
+    },
+    "url": "https://fullertontitans.com/sports/mens-soccer",
+    "color": [
+      "#fed7aa",
+      "#ea580c"
+    ],
+    "licence": null
+  },
+  {
     "id": "carlin_villanova",
     "schoolId": "villanova",
     "name": "Tom Carlin",
@@ -3074,7 +3375,7 @@
     "yearsHC": 5,
     "record": "3 consecutive last-place East Division finishes 2023-25",
     "mlsPlayers": 1,
-    "rank": 68,
+    "rank": 75,
     "rankClass": "rk-solid",
     "overallScore": 48,
     "tacticalScore": 47,
@@ -3104,6 +3405,49 @@
     "color": [
       "#dbeafe",
       "#2563eb"
+    ],
+    "licence": null
+  },
+  {
+    "id": "hc_ucriverside",
+    "schoolId": "ucriverside",
+    "name": "Head Coach",
+    "school": "University of California, Riverside",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 4,
+    "record": "Lower Big West \u2014 developing program",
+    "mlsPlayers": 0,
+    "rank": 76,
+    "rankClass": "rk-solid",
+    "overallScore": 48,
+    "tacticalScore": 47,
+    "devScore": 46,
+    "ptPathScore": 50,
+    "ausConnection": false,
+    "bio": "UC Riverside is a developing Big West program. Consistently lower-half Big West \u2014 best minutes opportunity in the conference for an international recruit. UC Riverside Medical Centre available for pre-PT clinical access. LA and Orange County accessible by car.",
+    "strengths": [
+      "Minutes opportunity",
+      "UC degree",
+      "Inland SoCal",
+      "Accessible GPA"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@ucr.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@ucr.edu",
+      "phone": ""
+    },
+    "url": "https://ucrhighlanders.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#1d4ed8"
     ],
     "licence": null
   }

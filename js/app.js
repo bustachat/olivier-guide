@@ -1752,7 +1752,7 @@ function renderACUTable() {
     if (!container) return;
     if (!Array.isArray(unis) || !unis.length) return;
 
-    const fullProfiles = unis.filter(u => u.profileDepth === 'full' && Array.isArray(u.acuUnits));
+    const fullProfiles = unis.filter(u => u.profileDepth === 'full' && Array.isArray(u.acuUnits) && !u.juco2yr);
     if (!fullProfiles.length) return;
 
     const rows = ACU_UNIT_META.map(meta => {

@@ -61,12 +61,156 @@ Do not proceed until you have stated this explicitly.
 
 ## 3. PLAN PHASE — Before Writing Code
 
-- Write out the exact files you will change and why.
+**THIS IS NON-NEGOTIABLE. Every change, no exceptions:**
+
+1. Identify the change type from Section 3a (Impact Map).
+2. Read every row in that change type's impact map out loud — files AND tabs.
+3. Write out the complete list of files and tabs this change touches.
+4. Only then begin coding.
+
+A change is NOT complete until every item in the impact map for that change type has been checked and actioned. This applies to data fixes, coach updates, new schools, cost changes — everything. Not checking the full impact map is the single largest source of errors in this project.
+
+**Other plan rules:**
 - For JSON changes: validate schema against Section 5 before touching the file.
 - For JS changes: identify the specific function(s) involved. Read them first.
-- For new schools: run the full new-school checklist (Section 7).
+- For new schools: run the full new-school checklist (Section 7) IN ADDITION to the impact map.
 - One change at a time. Complete and verify each change before starting the next.
 - State any assumptions. If something is ambiguous, ask — do not guess.
+
+---
+
+## 3a. Change Impact Map — Mandatory Before Every Change
+
+**For every change, find the matching type below. Every row is a required check — not a suggestion.**
+If a row says "always required" it means check it even if you think it won't be affected.
+The tabs column is what gets missed most often. Check every tab listed.
+
+---
+
+### CHANGE TYPE 1 — New School Added
+
+| What to update | Why |
+|---|---|
+| `data/[conf].json` — full school object | All required fields, confKey, acuUnits[16], lensScores[6], minutesOutlook, fitOlivier |
+| `data/coaches.json` — add coach entry | Full-profile school must have a coaches.json entry. Re-rank ALL coaches after adding. |
+| `data/conferences.json` — guideSchools[] | School chip will not appear in Conferences tab without this |
+| `data/conf-prestige.json` — conference entry | Conference prestige table will miss the school's conference if not updated |
+| `data/pipeline.json` | Only if school has NCAA titles or MLS picks — add to relevant table |
+| `js/app.js — DOMAINS` | Favicon in modal header breaks without this |
+| `js/app.js — SITE_URLS` | Visit Site link in modal breaks without this |
+| `js/app.js — SOCIAL` | Social pills in modal are blank without this (4-element array, nulls ok) |
+| `js/app.js — CONF_SECTIONS` | School is invisible in Explore if confKey has no matching section |
+
+**Tabs to verify after adding:**
+- Dashboard — map dot present, budget bracket bar present, shortlist panel (if on shortlist)
+- Explore Schools — card in correct section, all filters/lenses/sorts, Details modal all 9 tabs
+- Compare — school selectable
+- Minutes Outlook — card present (even if available: false)
+- Pro Pipeline — only if titles/MLS picks added to pipeline.json
+- ACU Alignment — row present in table
+- Conferences — school chip visible in guideSchools[], prestige table updated
+- Coaches & Staff — coach card in Rankings, profile in Profiles tab, entry in Outreach tab
+- Financial Model — school in selector, appears in comparison bars
+
+---
+
+### CHANGE TYPE 2 — Coach Name or Details Changed
+
+| What to update | Why |
+|---|---|
+| `data/[conf].json` — coach{} object | name, title, email, phone, profile — all fields |
+| `data/coaches.json` — matching entry | Must stay in sync with conf JSON — this is the source for the Coaches tab |
+| Re-rank ALL coaches if overallScore changed | Rank gaps break the Rankings display |
+
+**Tabs to verify after changing:**
+- Coaches & Staff → Rankings — name, rank, score badge correct
+- Coaches & Staff → Profiles — bio, staff array, contact details correct
+- Coaches & Staff → Outreach — contact details correct
+- Explore Schools → school modal → Coaching tab — coach details correct
+- Dashboard → shortlist panel — shows updated coach name
+
+**Two-file rule: coach change = conf JSON + coaches.json. Both. Always. No exceptions.**
+
+---
+
+### CHANGE TYPE 3 — minutesOutlook Populated or Changed
+
+**Cascade order is strict — do in this exact sequence:**
+
+| Step | What to update | Why |
+|---|---|---|
+| 1 | `data/[conf].json` — minutesOutlook{} | The raw data |
+| 2 | `data/[conf].json` — lensScores.minutes | Minutes lens score derived from minutesOutlook |
+| 3 | `data/[conf].json` — lensScores.overall | Overall lens includes minutes score |
+| 4 | `data/[conf].json` — fitOlivier | Minutes = 20% of fitOlivier — must recalculate |
+
+**Tabs to verify after changing:**
+- Minutes Outlook tab — card now renders with trajectory chart, Yr1/Yr2 percentages
+- Explore Schools — fitOlivier score updated, sort order correct, minutes lens score correct
+- Dashboard — lens comparison bars reflect new scores
+
+---
+
+### CHANGE TYPE 4 — Cost / fin{} Changed
+
+| What to update | Why |
+|---|---|
+| `data/[conf].json` — fin.costNum, tuition, roomBoard, fees | Raw cost data |
+| `data/[conf].json` — cost display string | Human-readable cost shown on card |
+| `data/[conf].json` — fin.internationalNote | Text must match realistic aid framing (25–50% athletic for D1) |
+| `data/[conf].json` — lensScores.value | Value lens = 60% fit + 40% affordability — recalculate |
+| `data/[conf].json` — lensScores.overall | Cost = 20% of fitOlivier — recalculate |
+| `data/[conf].json` — fitOlivier | Recalculate from scratch |
+
+**Tabs to verify after changing:**
+- Financial Model — school selector shows new cost, comparison bars shift, scenario breakdowns correct
+- Explore Schools — fitOlivier updated, Value lens ranking updated
+- Dashboard — budget bracket position may shift
+
+---
+
+### CHANGE TYPE 5 — athletes/olivier.json Changed
+
+| What changed | What's affected |
+|---|---|
+| `guideVersion` | Explore tab header version badge only |
+| `budgetAUD` or `fxRate` | costScore() recalculates for ALL schools → ALL fitOlivier change → all lensScores.overall must be manually recalculated and re-stored |
+| `scoreWeights` | ALL fitOlivier recalculate → all lensScores.overall must be manually recalculated |
+| `shortlist[]` | Dashboard shortlist panel, Coaches Outreach tracker, ★ Top Pick filter in Explore |
+| `outreach[]` | Coaches Outreach tracker only |
+| `pathways[]` | Pathways tab only |
+| `coachQuestions[]` | Pathways tab — questions section only |
+
+---
+
+### CHANGE TYPE 6 — confRecord Changed
+
+| What to update | Why |
+|---|---|
+| `data/[conf].json` — confRecord[] entries | The raw standings data |
+| `data/[conf].json` — lensScores.soccer | Consider recalculating if trajectory changed significantly |
+
+**Tabs to verify after changing:**
+- Explore Schools → school modal → Conference History tab
+- Compare tab — Conference (last 6yr) row
+
+confRecord is display-only — no automatic score cascade. But a major trajectory change (e.g. program declined from 1st to last) warrants manually reviewing lensScores.soccer.
+
+---
+
+### CHANGE TYPE 7 — Pipeline / Titles Changed
+
+| What to update | Why |
+|---|---|
+| `data/pipeline.json` — ncaaD1[], ncaaD2[], or mlsDraft[] | Powers the Pro Pipeline tab tables |
+| `data/[conf].json` — proPlayers.mlsPicks5yr, titles[], proPlayers.draftRank | Powers school modal pipeline tab |
+| `data/conf-prestige.json` — conference mlsPipeline field | Conference prestige table MLS column |
+| `data/[conf].json` — lensScores.soccer | MLS picks factor into soccer lens — consider recalculating |
+
+**Tabs to verify after changing:**
+- Pro Pipeline — championship tables and MLS SuperDraft table updated
+- Explore Schools → school modal → Pro Pipeline tab
+- Conferences — conference prestige table MLS column
 
 ---
 
@@ -460,17 +604,19 @@ Items marked (JUCO) are required for junior college schools.
 
 ## 10. COMMIT Protocol
 
-Before every commit:
+Before every commit — ALL of these, in order:
 
-1. Validate all modified JSON: `python -m json.tool [file].json`
-2. Check all modified JS: `node --check js/[file].js`
-3. Hard reload the live site (Ctrl+Shift+R) — zero red errors in console
-4. Confirm all nav tabs respond without JS errors
-5. Commit message format: `v22.x — [one-line description]`
+1. **Impact map sign-off** — State out loud which change type(s) from Section 3a applied, and confirm every row in that map was checked and actioned. If any row was skipped, do not commit — go back and complete it.
+2. Validate all modified JSON: `python -m json.tool [file].json`
+3. Check all modified JS: `node --check js/[file].js`
+4. Hard reload the live site (Ctrl+Shift+R) — zero red errors in console
+5. Confirm all nav tabs listed in the impact map for this change type respond without errors
+6. Commit message format: `v23.x — [one-line description]`
 
 After the final commit of each version:
 - Bump `guideVersion` in `athletes/olivier.json`
 - Update the version control table in `README.md`
+- Update CLAUDE.md Section 6 with the version summary and deferred items for next version
 - Produce a handover note: what completed, what is outstanding, what files changed
 
 ---

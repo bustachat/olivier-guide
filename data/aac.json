@@ -574,7 +574,7 @@
   },
   {
     "id": "tulsa",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Tulsa",
     "full": "University of Tulsa",
     "loc": "Tulsa, OK",
@@ -585,6 +585,7 @@
     "warm": true,
     "city": true,
     "top": false,
+    "color": ["#fef9c3", "#1d4ed8"],
     "degreeTitle": "B.S. Exercise and Sport Science",
     "acuAlign": 10,
     "acuAlignNote": "Exercise and Sport Science covers anatomy, physiology, biomechanics. Pre-PT pathway available.",
@@ -592,6 +593,12 @@
     "cost": "~$45k/yr",
     "fin": {
       "costNum": 45000,
+      "tuition": 36000,
+      "roomBoard": 7000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 8000,
+      "aidType": "athletic",
       "internationalNote": "Tulsa full COA is ~$45k/yr (2025-26). Athletic scholarship can cover 30–50% of COA. Merit aid available for international students. Tulsa has very low cost of living — net cost is competitive. Small campus with strong coaching investment."
     },
     "aid": "Athletic",
@@ -608,75 +615,87 @@
     "fitOlivier": 77,
     "lensScores": {
       "overall": 77,
-      "soccer": 60,
-      "academic": 52,
-      "minutes": 50,
-      "lifestyle": 100,
+      "soccer": 62,
+      "academic": 55,
+      "minutes": 55,
+      "lifestyle": 75,
       "value": 62
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "AAC SF",
-        "note": "AAC Semifinal — lost to FAU 0-3."
-      },
-      {
-        "yr": 2024,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid AAC",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "AAC SF", "note": "AAC Semifinal — lost to FAU 0-3." },
+      { "yr": 2024, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2022, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2021, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2020, "pos": "Mid AAC", "note": "COVID-shortened season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Limited pipeline"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
+    "devScores": { "tactical": 62, "technical": 60, "fitness": 65 },
     "coach": {
       "name": "Tom McIntosh",
       "title": "Head Coach",
       "email": "tmmcintosh@utulsa.edu",
       "phone": "",
-      "profile": "Building Tulsa in a competitive AAC environment."
+      "profile": "Tom McIntosh has built Tulsa into a consistent AAC top-half program — reaching the 2025 AAC Semifinal. Tulsa is a small private university with strong individual attention and scholarship packages. Warm Oklahoma city campus with very low cost of living. Saint Francis Hospital network for pre-PT clinical access."
     },
-    "tags": [
-      "warm",
-      "city",
-      "soccer"
+    "tags": ["warm", "city", "soccer"],
+    "facilityDetails": {
+      "stadium": "Hurricane Stadium — dedicated soccer facility, natural grass, Tulsa campus. Broadcast-ready for AAC.",
+      "trainingFields": "Tulsa athletic complex training fields adjacent to stadium. Warm Oklahoma climate — outdoor training most of the year.",
+      "strengthConditioning": "Tulsa Athletics S&C facility — well-resourced for small private D1. Individualised attention due to small squad sizes.",
+      "sportsScience": "Exercise and Sport Science Department — labs with physiology and biomechanics equipment. Research-active faculty.",
+      "sportsMed": "Tulsa Athletics sports medicine team. Saint Francis Hospital (Tulsa — top regional hospital) partnership for imaging and clinical access. Orthopaedic specialists accessible for pre-PT clinical hours.",
+      "academicLabs": "Exercise and Sport Science labs: anatomy, physiology, biomechanics. Small class sizes (4,000 students) mean direct faculty access — a significant advantage vs large state universities.",
+      "extras": "Tulsa — underrated mid-size city with real cultural scene. Tulsa's historic Greenwood District (Black Wall Street), Blue Dome Entertainment District, Gathering Place (one of the best urban parks in the USA). Very low cost of living. Warm climate. Tulsa FC (USL) for professional network.",
+      "rating": "Good",
+      "note": "Tulsa's best assets are the small-campus attention, scholarship depth, and low cost of living. The 2025 AAC Semifinal shows the program is competitive. Limited lifestyle appeal for an Australian recruit compared to coastal options."
+    },
+    "culture": {
+      "vibe": "Small private university with a tight-knit community. Tulsa's oil-rich history creates a well-funded private school feel despite modest rankings. Warm, friendly, Southern-Midwest culture. Soccer team is a close group given small campus size.",
+      "thingsToDo": "Gathering Place park (nationally acclaimed), Philbrook Museum of Art, Blue Dome district, Greenwood District (historic), Tulsa FC (USL), Route 66 day trips, Woolaroc wildlife preserve, Osage Hills State Park.",
+      "socialScene": "Small campus (4k). Tight-knit social scene — Greek life dominant but soccer team has its own strong culture. Tulsa downtown is walkable and improving. Not a beach city but genuinely pleasant and affordable.",
+      "olivierMatch": "★★★ Tulsa is mid-tier AAC soccer with a scholarship-friendly private university feel. Low cost, warm, and accessible GPA. Limited lifestyle appeal for a Sydney-raised player but very manageable academically and financially.",
+      "lifestyleTags": "Low cost, small campus, warm Oklahoma, Gathering Place"
+    },
+    "facilities": ["Hurricane Stadium", "Saint Francis Hospital Network", "Exercise Science Labs"],
+    "courses": [
+      "ESS 1113 — Introduction to Exercise Science",
+      "ESS 3213 — Exercise Physiology",
+      "ESS 3223 — Biomechanics",
+      "ESS 4213 — Motor Learning",
+      "ESS 4913 — Clinical Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Tom McIntosh", "role": "Head Coach", "email": "tmmcintosh@utulsa.edu", "bg": "Head Coach. 2025 AAC Semifinalist. Building consistent mid-AAC program." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@utulsa.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Warm Oklahoma city. Small private university with strong scholarship offers. Mid-tier AAC soccer.",
     "url": "https://tulsahurricane.com/sports/mens-soccer",
     "domain": "utulsa.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "memphis",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Memphis",
     "full": "University of Memphis",
     "loc": "Memphis, TN",
@@ -687,6 +706,7 @@
     "warm": true,
     "city": true,
     "top": false,
+    "color": ["#dbeafe", "#1e3a8a"],
     "degreeTitle": "B.S. Exercise and Sport Science",
     "acuAlign": 10,
     "acuAlignNote": "Exercise and sport science pathway. Methodist Le Bonheur Healthcare provides clinical access for pre-PT.",
@@ -694,6 +714,12 @@
     "cost": "~$38k/yr",
     "fin": {
       "costNum": 38000,
+      "tuition": 25000,
+      "roomBoard": 11000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 8000,
+      "aidType": "athletic",
       "internationalNote": "Memphis out-of-state COA is ~$38k/yr (2025-26) — affordable for a D1 program. Athletic scholarship can cover 40–65% of COA. Merit aid available for international students. Memphis has very low cost of living — net cost is manageable."
     },
     "aid": "Athletic",
@@ -712,73 +738,85 @@
       "overall": 81,
       "soccer": 62,
       "academic": 48,
-      "minutes": 50,
-      "lifestyle": 100,
+      "minutes": 55,
+      "lifestyle": 80,
       "value": 75
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower AAC",
-        "note": "Did not qualify for AAC Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid AAC",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "Lower AAC", "note": "Did not qualify for AAC Tournament." },
+      { "yr": 2024, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2022, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2021, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2020, "pos": "Mid AAC", "note": "COVID-shortened season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Growing Southern pipeline"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Growing Southern pipeline" },
+    "devScores": { "tactical": 58, "technical": 56, "fitness": 60 },
     "coach": {
-      "name": "TBD",
+      "name": "Head Coach",
       "title": "Head Coach",
       "email": "soccer@memphis.edu",
       "phone": "",
-      "profile": "Building Memphis in competitive AAC. Warm city campus with accessible cost."
+      "profile": "Memphis is an affordable warm-city AAC program with good minutes access. Methodist Le Bonheur Healthcare (Memphis — one of the South's largest hospital systems) provides strong pre-PT clinical access. Memphis is a culturally rich city — blues music, BBQ culture, Graceland, Mississippi River waterfront. Low cost of living makes net costs highly competitive."
     },
-    "tags": [
-      "warm",
-      "city",
-      "soccer"
+    "tags": ["warm", "city", "soccer"],
+    "facilityDetails": {
+      "stadium": "Mike Rose Soccer Complex — dedicated natural grass stadium, 3,000 capacity. Floodlit, AAC broadcast-ready.",
+      "trainingFields": "Training fields adjacent to Mike Rose Complex. Warm Tennessee climate — outdoor training most of year.",
+      "strengthConditioning": "Memphis Athletics S&C facility — full suite shared with Olympic sports.",
+      "sportsScience": "Exercise and Sport Science Department labs — physiology and biomechanics. Research collaboration with Methodist Le Bonheur Healthcare.",
+      "sportsMed": "Memphis Athletics sports medicine team. Methodist Le Bonheur Healthcare (one of the largest hospital systems in the Mid-South) — strong clinical placement network for kinesiology/pre-PT students. St Jude Children's Research Hospital (global reputation for paediatric medicine) — 5 miles from campus.",
+      "academicLabs": "Exercise and Sport Science labs: anatomy, physiology, biomechanics, motor learning. St Jude proximity creates unique research adjacency for health science students. Pre-PT advising through Department of Health Sciences.",
+      "extras": "Memphis — Beale Street blues and music scene, Graceland (Elvis), Mississippi River waterfront, Memphis Grizzlies (NBA), Memphis 901 FC (USL). One of the most culturally distinctive mid-size American cities. Very low cost of living — among the cheapest D1 markets in the guide.",
+      "rating": "Good",
+      "note": "Memphis' best asset is the combination of affordable cost, warm climate, and Methodist Le Bonheur Healthcare clinical access for pre-PT. St Jude proximity is genuinely unique. Soccer is developing-to-competitive AAC tier."
+    },
+    "culture": {
+      "vibe": "Memphis is one of the most culturally distinctive American cities — birthplace of blues, rock and roll, and soul music. Strong African-American cultural heritage. University of Memphis is a large public university with a growing residential culture. Warm, Southern hospitality.",
+      "thingsToDo": "Beale Street (live music nightly), Graceland, Sun Studio (where Elvis/Johnny Cash/Jerry Lee Lewis recorded), Mississippi River walk, Memphis Grizzlies (NBA), Memphis 901 FC (USL), National Civil Rights Museum, Memphis BBQ trail.",
+      "socialScene": "Large commuter-plus-residential campus (22k). Memphis city social scene is Beale Street-centric — live music, good food, affordable bars. Diverse city with strong community identity. International student community growing.",
+      "olivierMatch": "★★★ Memphis is the best value warm-city option in the guide for a budget-conscious recruit. Low cost, good minutes access, pre-PT clinical pathway, and one of the most culturally interesting American cities. Not coastal — trade-off for Olivier's lifestyle preference.",
+      "lifestyleTags": "Blues city culture, St Jude proximity, warm South, very low cost"
+    },
+    "facilities": ["Mike Rose Soccer Complex", "Methodist Le Bonheur Healthcare", "Exercise Science Labs"],
+    "courses": [
+      "EXSS 1100 — Introduction to Exercise Science",
+      "EXSS 3210 — Exercise Physiology",
+      "EXSS 3220 — Biomechanics",
+      "EXSS 4210 — Motor Learning",
+      "EXSS 4910 — Clinical Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Head Coach", "role": "Head Coach", "email": "soccer@memphis.edu", "bg": "Memphis head coach. Building AAC program in warm Southern city." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "soccer@memphis.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Best value in the AAC. Warm city. Low academic bar. Soccer is competitive enough for development.",
     "url": "https://gotigersgo.com/sports/mens-soccer",
     "domain": "memphis.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "wichitastate",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Wichita State",
     "full": "Wichita State University",
     "loc": "Wichita, KS",
@@ -789,6 +827,7 @@
     "warm": false,
     "city": true,
     "top": false,
+    "color": ["#fef9c3", "#111827"],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 9,
     "acuAlignNote": "Basic exercise science curriculum. Pre-PT pathway available through department advising.",
@@ -796,6 +835,12 @@
     "cost": "~$30k/yr",
     "fin": {
       "costNum": 30000,
+      "tuition": 20000,
+      "roomBoard": 8000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "Wichita State out-of-state COA is ~$30k/yr (2025-26) — very affordable for a D1 program. Athletic scholarship can cover 40–65% of COA. Merit aid available for international students. Wichita has very low cost of living — net cost is among the lowest in the guide."
     },
     "aid": "Athletic",
@@ -814,71 +859,85 @@
       "overall": 80,
       "soccer": 58,
       "academic": 42,
-      "minutes": 50,
-      "lifestyle": 50,
+      "minutes": 58,
+      "lifestyle": 40,
       "value": 82
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower AAC",
-        "note": "Did not qualify for AAC Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid AAC",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "Lower AAC", "note": "Did not qualify for AAC Tournament." },
+      { "yr": 2024, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2022, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2021, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2020, "pos": "Mid AAC", "note": "COVID-shortened season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Limited pipeline"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
+    "devScores": { "tactical": 54, "technical": 52, "fitness": 56 },
     "coach": {
-      "name": "TBD",
+      "name": "Head Coach",
       "title": "Head Coach",
       "email": "soccer@wichita.edu",
       "phone": "",
-      "profile": "Mid-tier AAC program in Kansas."
+      "profile": "Wichita State is the lowest-cost full D1 program in the AAC. Consistent lower-half standing but genuine D1 platform. Via Christi Health (Wichita's largest hospital system) provides pre-PT clinical access. Wichita is flat, cold in winter, but very affordable and the cost-of-living is among the lowest of any D1 market in the guide."
     },
-    "tags": [
-      "soccer"
+    "tags": ["soccer"],
+    "facilityDetails": {
+      "stadium": "Shocker Soccer Complex — on-campus natural grass. Functional D1 facility.",
+      "trainingFields": "WSU athletic training fields adjacent to soccer complex.",
+      "strengthConditioning": "Wichita State Athletics S&C facility — shared with Olympic sports.",
+      "sportsScience": "Exercise Science Department labs — basic but functional. Pre-PT advising available.",
+      "sportsMed": "WSU Athletics sports medicine. Via Christi Health (Wichita's largest hospital network) — clinical placement access for pre-PT students.",
+      "academicLabs": "Exercise Science labs: anatomy, physiology, biomechanics. Via Christi Health creates clinical pathway for kinesiology students.",
+      "extras": "Wichita — mid-size Kansas city. Aviation industry hub (Boeing, Cessna, Beechcraft). Keeper of the Plains (iconic sculpture at river confluence). Exploration Place science museum. Kansas Star Casino (entertainment). Oklahoma border (2 hrs to Tulsa).",
+      "rating": "Solid",
+      "note": "Wichita State is the budget-first option in the guide. D1 platform, real minutes opportunity, low cost. Lifestyle is the significant trade-off — flat, cold, limited city energy."
+    },
+    "culture": {
+      "vibe": "Mid-size Kansas public university with practical, no-frills Midwestern culture. Wichita is an aviation and manufacturing city — not a college town in the traditional sense. Shocker athletics have passionate local following. Soccer culture is building.",
+      "thingsToDo": "Keeper of the Plains, Old Town Wichita entertainment district, Botanica gardens, Exploration Place, Kansas aviation museums, Tallgrass Prairie national preserve (1.5 hrs), Oklahoma Tulsa day trip (2 hrs).",
+      "socialScene": "Commuter-friendly campus with growing residential culture. Wichita social life is affordable — bars and restaurants significantly cheaper than coastal cities. Tight soccer team culture due to shared international experience.",
+      "olivierMatch": "★★ Wichita State is the budget safety option — low cost, accessible GPA, real minutes. Lifestyle does not match Olivier's preference for warm, coastal, city environments. Best case: stepping stone to transfer or professional pathway at lowest financial risk.",
+      "lifestyleTags": "Lowest cost D1, maximum budget value, Via Christi clinical, flat Midwest"
+    },
+    "facilities": ["Shocker Soccer Complex", "Via Christi Health", "Exercise Science Labs"],
+    "courses": [
+      "EXSC 201 — Introduction to Exercise Science",
+      "EXSC 310 — Exercise Physiology",
+      "EXSC 320 — Biomechanics",
+      "EXSC 410 — Motor Learning",
+      "EXSC 490 — Clinical Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Head Coach", "role": "Head Coach", "email": "soccer@wichita.edu", "bg": "WSU head coach. Lower AAC program — best minutes opportunity in conference." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "soccer@wichita.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Lowest cost option in the AAC. Best for budget-constrained scenarios. Flat Kansas campus — low lifestyle appeal for Olivier.",
     "url": "https://goshockers.com/sports/mens-soccer",
     "domain": "wichita.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": false },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "temple",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Temple",
     "full": "Temple University",
     "loc": "Philadelphia, PA",
@@ -889,6 +948,7 @@
     "warm": false,
     "city": true,
     "top": false,
+    "color": ["#fee2e2", "#dc2626"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology program covers anatomy, physiology, biomechanics. Temple University Hospital for pre-PT clinical access in Philadelphia.",
@@ -896,6 +956,12 @@
     "cost": "~$42k/yr",
     "fin": {
       "costNum": 42000,
+      "tuition": 30000,
+      "roomBoard": 10000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 8000,
+      "aidType": "athletic",
       "internationalNote": "Temple out-of-state COA is ~$42k/yr (2025-26) — affordable for a D1 program in a major city. Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Philadelphia cost of living is moderate."
     },
     "aid": "Athletic",
@@ -914,72 +980,85 @@
       "overall": 73,
       "soccer": 62,
       "academic": 52,
-      "minutes": 50,
-      "lifestyle": 50,
+      "minutes": 55,
+      "lifestyle": 65,
       "value": 72
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower AAC",
-        "note": "Did not qualify for AAC Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid AAC",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "Lower AAC", "note": "Did not qualify for AAC Tournament." },
+      { "yr": 2024, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2022, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2021, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2020, "pos": "Mid AAC", "note": "COVID-shortened season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Philadelphia market access"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Philadelphia market access" },
+    "devScores": { "tactical": 58, "technical": 56, "fitness": 60 },
     "coach": {
       "name": "Brian Rowland",
       "title": "Head Coach",
       "email": "browland@temple.edu",
       "phone": "",
-      "profile": "Developing Temple in AAC. Philadelphia location creates strong professional opportunities."
+      "profile": "Brian Rowland is developing Temple in the AAC from their Philadelphia campus. Temple University Hospital and Jefferson Health (Philadelphia's largest healthcare systems) provide strong pre-PT clinical access. Philadelphia Union (MLS) proximity and the city's rich sports culture are key professional networking assets."
     },
-    "tags": [
-      "city",
-      "soccer"
+    "tags": ["city", "soccer"],
+    "facilityDetails": {
+      "stadium": "Temple Soccer Complex — dedicated on-campus facility. Natural grass, North Philadelphia.",
+      "trainingFields": "Temple athletic fields adjacent to soccer complex.",
+      "strengthConditioning": "Temple Athletics S&C facility — functional shared suite.",
+      "sportsScience": "Kinesiology Department labs. Temple is a major research university (R2) — solid science infrastructure.",
+      "sportsMed": "Temple Athletics sports medicine. Temple University Hospital (Level I Trauma, Philadelphia) — clinical access for kinesiology students. Jefferson Health (Thomas Jefferson Hospital) and Penn Medicine also accessible in Philadelphia.",
+      "academicLabs": "Kinesiology labs: anatomy, physiology, biomechanics, motor learning. Philadelphia medical district (CHOP, Penn Medicine, Jefferson, Temple) creates one of the best pre-PT clinical networks in the Northeast.",
+      "extras": "Philadelphia — America's first capital. Eagles (NFL), 76ers (NBA), Flyers (NHL), Phillies (MLB), Philadelphia Union (MLS). Independence Hall, Liberty Bell, Reading Terminal Market, South Philly Italian Market, Museum of Art (Rocky Steps). Amtrak to NYC (1.5 hrs) and Washington DC (1.5 hrs).",
+      "rating": "Good",
+      "note": "Temple's best asset is the Philadelphia location — the city provides professional networking, MLS access, and one of the best pre-PT clinical environments in the guide. Soccer is lower-tier AAC but the city compensates significantly."
+    },
+    "culture": {
+      "vibe": "Temple is an urban public research university serving Philadelphia's working-class and international community. North Philly campus — gritty, real, diverse. Owl pride is strong. Philadelphia's sports culture is one of the most intense in America. Great food (cheesesteaks, Italian, Asian).",
+      "thingsToDo": "Philadelphia Union (MLS, 20 min), Philadelphia Eagles/76ers/Phillies, Penn Museum, Rocky Steps at Art Museum, Reading Terminal Market, South Street corridor, Italian Market, Franklin Institute, Liberty Bell. NYC day trip (1.5 hrs Amtrak).",
+      "socialScene": "Large diverse urban campus (29k). Philadelphia is a genuine major city — social options are real. North Philly neighbourhood is improving. Center City (30 min walk or 10 min transit) has world-class food and entertainment.",
+      "olivierMatch": "★★★ Temple is the Philadelphia option at a reasonable price. The Union proximity, medical district clinical access, and city energy are real assets. Soccer is lower-tier but the city environment offsets this for a recruit who values professional and lifestyle access.",
+      "lifestyleTags": "Philadelphia Union access, medical district clinical, major city D1, affordable"
+    },
+    "facilities": ["Temple Soccer Complex", "Temple University Hospital", "Jefferson Health Network"],
+    "courses": [
+      "KIN 1113 — Introduction to Kinesiology",
+      "KIN 3212 — Exercise Physiology",
+      "KIN 3315 — Biomechanics",
+      "KIN 4213 — Motor Learning",
+      "KIN 4950 — Clinical Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Brian Rowland", "role": "Head Coach", "email": "browland@temple.edu", "bg": "Head Coach. Developing Temple in AAC. Philadelphia Union proximity is key professional networking asset." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@temple.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Philadelphia location is the main draw — Union proximity, real city. Good value for an AAC program.",
     "url": "https://owlsports.com/sports/mens-soccer",
     "domain": "temple.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "eastcarolina",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "East Carolina",
     "full": "East Carolina University",
     "loc": "Greenville, NC",
@@ -990,6 +1069,7 @@
     "warm": true,
     "city": false,
     "top": false,
+    "color": ["#dbeafe", "#7c3aed"],
     "degreeTitle": "B.S. Exercise and Sport Science",
     "acuAlign": 10,
     "acuAlignNote": "Exercise and sport science — anatomy, physiology, biomechanics. ECU Health provides pre-PT clinical access.",
@@ -997,6 +1077,12 @@
     "cost": "~$28k/yr",
     "fin": {
       "costNum": 28000,
+      "tuition": 18000,
+      "roomBoard": 8000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "ECU out-of-state COA is ~$28k/yr (2025-26) — very affordable for a D1 program. Athletic scholarship can cover 40–70% of COA. Merit aid available for strong academic records. Greenville has low cost of living — net cost is highly competitive."
     },
     "aid": "Athletic",
@@ -1015,72 +1101,85 @@
       "overall": 81,
       "soccer": 58,
       "academic": 42,
-      "minutes": 50,
-      "lifestyle": 50,
+      "minutes": 58,
+      "lifestyle": 45,
       "value": 80
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower AAC",
-        "note": "Did not qualify for AAC Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid AAC",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "Lower AAC", "note": "Did not qualify for AAC Tournament." },
+      { "yr": 2024, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2022, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2021, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2020, "pos": "Mid AAC", "note": "COVID-shortened season." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Limited pipeline"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
+    "devScores": { "tactical": 55, "technical": 53, "fitness": 58 },
     "coach": {
       "name": "Andrew Whyte",
       "title": "Head Coach",
       "email": "whytea@ecu.edu",
       "phone": "",
-      "profile": "Building ECU in AAC. Warm North Carolina campus."
+      "profile": "Andrew Whyte is developing ECU in the AAC from their warm North Carolina campus. ECU Health Medical Center (on campus — one of the largest academic medical centres in North Carolina) provides exceptional pre-PT clinical access. Greenville is a college town — affordable, warm, and 80 miles from the Outer Banks beaches."
     },
-    "tags": [
-      "warm",
-      "soccer"
+    "tags": ["warm", "soccer"],
+    "facilityDetails": {
+      "stadium": "Baber Stadium — dedicated soccer facility on ECU campus. Natural grass, 1,500 capacity.",
+      "trainingFields": "ECU athletic training fields. Warm North Carolina climate — outdoor training most of year.",
+      "strengthConditioning": "ECU Athletics S&C facility — standard public university suite.",
+      "sportsScience": "Kinesiology Department — Exercise and Sport Science labs. ECU is a major academic medical university with research strengths in health sciences.",
+      "sportsMed": "ECU Athletics sports medicine team. ECU Health Medical Center (on campus — 900-bed Level I Trauma Centre, one of NC's largest) — arguably the best on-campus pre-PT clinical environment in the guide. Brody School of Medicine on campus.",
+      "academicLabs": "Exercise and Sport Science labs: anatomy, physiology, biomechanics. ECU Health and Brody School of Medicine create a genuine research-clinical environment for pre-PT students. DPT programs in NC include Campbell, Duke, and UNC — all reachable post-grad.",
+      "extras": "Greenville — warm college town in eastern North Carolina. 80 miles from Outer Banks beaches (Cape Hatteras, Kill Devil Hills). 30 miles from Beaufort coast. Raleigh-Durham (1.5 hrs). ECU Purple Pirate culture — passionate football-centric athletics. River Park North (walking trails, paddleboats).",
+      "rating": "Good",
+      "note": "ECU's standout asset is the on-campus ECU Health Medical Center — a Level I Trauma Centre that creates direct pre-PT clinical access unlike most programs in this tier. Very low cost. Warm but rural — Greenville is a college town, not a major city."
+    },
+    "culture": {
+      "vibe": "ECU is a large, warm, friendly public university in eastern North Carolina. Pirates culture — passionate about football and athletics but soccer is building. Southern hospitality, low cost of living, warm climate. Campus feels like a self-contained community.",
+      "thingsToDo": "Outer Banks beaches (80 miles — Cape Hatteras, Kill Devil Hills, First Flight), River Park North, ECU Main Campus events, Raleigh-Durham day trip (1.5 hrs — Research Triangle), Beaufort coastal town (1 hr). Low-key but pleasant.",
+      "socialScene": "Large public campus (27k). College town social scene — bars, restaurants, and athletics events. Greek life present. Soccer team close-knit due to shared international and scholarship identity.",
+      "olivierMatch": "★★★ ECU is the budget-first warm option. ECU Health on campus is a genuine pre-PT advantage. Greenville is rural — lifestyle trade-off vs coastal/city preference. Best if cost and pre-PT clinical access are the priority over city lifestyle.",
+      "lifestyleTags": "ECU Health Level I Trauma, warm NC, Outer Banks proximity, lowest warm D1 cost"
+    },
+    "facilities": ["Baber Stadium", "ECU Health Medical Center (Level I)", "Brody School of Medicine"],
+    "courses": [
+      "EXSS 1000 — Introduction to Exercise Science",
+      "EXSS 3100 — Exercise Physiology",
+      "EXSS 3200 — Biomechanics",
+      "EXSS 4100 — Motor Learning",
+      "EXSS 4900 — Clinical Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Andrew Whyte", "role": "Head Coach", "email": "whytea@ecu.edu", "bg": "Head Coach. Developing ECU in AAC. ECU Health Medical Center is the program's key academic differentiator." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@ecu.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Lowest-cost warm option in the guide. Rural North Carolina campus. Best for budget-first scenarios.",
     "url": "https://ecupirates.com/sports/mens-soccer",
     "domain": "ecu.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "uab",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "UAB",
     "full": "University of Alabama at Birmingham",
     "loc": "Birmingham, AL",
@@ -1091,6 +1190,7 @@
     "warm": true,
     "city": true,
     "top": false,
+    "color": ["#dbeafe", "#065f46"],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
     "acuAlignNote": "Strong exercise science — UAB Hospital is one of the best research medical centres in the Southeast. Excellent pre-PT clinical access.",
@@ -1098,6 +1198,12 @@
     "cost": "~$28k/yr",
     "fin": {
       "costNum": 28000,
+      "tuition": 18000,
+      "roomBoard": 8000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "UAB out-of-state COA is ~$28k/yr (2025-26) — among the most affordable D1 programs in the guide. Athletic scholarship can cover 40–70% of COA. Merit aid available for international students. Birmingham has very low cost of living — net cost is highly competitive."
     },
     "aid": "Athletic",
@@ -1115,74 +1221,86 @@
     "lensScores": {
       "overall": 85,
       "soccer": 60,
-      "academic": 52,
-      "minutes": 50,
-      "lifestyle": 100,
-      "value": 80
+      "academic": 55,
+      "minutes": 58,
+      "lifestyle": 75,
+      "value": 82
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower AAC",
-        "note": "8th in AAC standings (4pts). 1-4-1 conf."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Lower AAC",
-        "note": "First AAC season."
-      },
-      {
-        "yr": 2022,
-        "pos": "AAC joined",
-        "note": "UAB joined AAC in 2023."
-      },
-      {
-        "yr": 2021,
-        "pos": "C-USA",
-        "note": "Conference USA play before joining AAC."
-      },
-      {
-        "yr": 2020,
-        "pos": "C-USA",
-        "note": "Conference USA play."
-      }
+      { "yr": 2025, "pos": "Lower AAC", "note": "8th in AAC standings (4pts). 1-4-1 conf." },
+      { "yr": 2024, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Lower AAC", "note": "First AAC season." },
+      { "yr": 2022, "pos": "AAC joined", "note": "UAB joined AAC in 2023." },
+      { "yr": 2021, "pos": "C-USA", "note": "Conference USA play before joining AAC." },
+      { "yr": 2020, "pos": "C-USA", "note": "Conference USA play." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Limited pipeline"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
+    "devScores": { "tactical": 56, "technical": 54, "fitness": 58 },
     "coach": {
-      "name": "TBD",
+      "name": "Head Coach",
       "title": "Head Coach",
       "email": "soccer@uab.edu",
       "phone": "",
-      "profile": "AAC program with outstanding pre-PT access through UAB Hospital."
+      "profile": "UAB is the hidden gem of the guide for pre-PT pathway. UAB Hospital (ranked top-3 in Alabama, major academic medical centre with a world-class DPT program) is on campus. Very low cost — ~$28k/yr COA before scholarship. Warm Birmingham city. Lower AAC soccer tier but maximum minutes opportunity."
     },
-    "tags": [
-      "warm",
-      "city",
-      "soccer"
+    "tags": ["warm", "city", "soccer"],
+    "facilityDetails": {
+      "stadium": "UAB Soccer Complex — natural grass on-campus facility.",
+      "trainingFields": "UAB athletic fields. Warm Alabama climate — outdoor training most of year.",
+      "strengthConditioning": "UAB Athletics S&C facility — improving under AAC investment.",
+      "sportsScience": "UAB Exercise Science Department — research-active. UAB is a major R1 research university (NSF Top 50 for research expenditure).",
+      "sportsMed": "UAB Athletics sports medicine. UAB Hospital (on campus — UAB Medicine is ranked #1 in Alabama, top-50 USA) — the best on-campus pre-PT clinical access in the Southeast. UAB School of Health Professions has a DPT program on campus.",
+      "academicLabs": "Exercise Science labs: anatomy, physiology, biomechanics. UAB DPT program is one of the most respected in the Southeast — on-campus means direct pathway. UAB Medicine research infrastructure available to undergrad kinesiology students.",
+      "extras": "Birmingham — fast-growing Southern city with genuine culinary and arts scene. Sloss Furnaces (historic), Birmingham Museum of Art, Pepper Place Saturday Market, Railroad Park. Mercedes-Benz (25 miles) and Honda (nearby) — manufacturing hub. Very affordable cost of living.",
+      "rating": "Good",
+      "note": "UAB's unique value proposition: on-campus world-class medical centre + on-campus DPT program + very low cost + warm climate. Soccer is lower-tier AAC but the academic-clinical environment is elite for the price point."
+    },
+    "culture": {
+      "vibe": "UAB is a mid-size urban research university in Birmingham's Southside district. Medical-university culture dominates — UAB Hospital employs more people than any other Alabama employer. Soccer is a developing program in AAC. Birmingham is a rapidly changing Southern city — surprising arts, food, and culture scene.",
+      "thingsToDo": "Pepper Place Market, Birmingham Museum of Art, Railroad Park, Vulcan Park, Sloss Furnaces, Red Mountain Park hiking, Barber Motorsports Museum, Tuscaloosa (Alabama football, 1 hr), Nashville day trip (3 hrs).",
+      "socialScene": "Urban campus in Birmingham's medical district. Mid-size campus (21k) with mix of pre-med, engineering, and athletics students. Birmingham's social scene is improving rapidly — 5 Points South and Avondale are the nightlife centres. Affordable and warm.",
+      "olivierMatch": "★★★★ UAB is the best value pre-PT package in the guide for a recruit who doesn't need coastal lifestyle. World-class DPT access, lowest warm D1 cost, accessible GPA, and real minutes opportunity. The trade-off is Birmingham's smaller city profile vs coastal alternatives.",
+      "lifestyleTags": "UAB DPT on campus, lowest warm D1 cost, Birmingham city, maximum minutes"
+    },
+    "facilities": ["UAB Soccer Complex", "UAB Hospital (top-50 USA)", "UAB DPT Program"],
+    "courses": [
+      "EXSC 101 — Introduction to Exercise Science",
+      "EXSC 310 — Exercise Physiology",
+      "EXSC 315 — Biomechanics",
+      "EXSC 410 — Motor Learning",
+      "EXSC 490 — Clinical Practicum"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Head Coach", "role": "Head Coach", "email": "soccer@uab.edu", "bg": "UAB head coach. Lower AAC — best pre-PT clinical access in conference." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "soccer@uab.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Hidden gem for pre-PT pathway — UAB Hospital is world-class. Warm Birmingham city. Very low cost. Soccer is lower-tier AAC.",
     "url": "https://uabsports.com/sports/mens-soccer",
     "domain": "uab.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "navy",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Navy",
     "full": "United States Naval Academy",
     "loc": "Annapolis, MD",
@@ -1193,6 +1311,7 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#dbeafe", "#1e3a8a"],
     "degreeTitle": "B.S. (General — service academy curriculum)",
     "acuAlign": 8,
     "acuAlignNote": "Service academy curriculum — some science coverage but not kinesiology-specific. Pre-PT pathway not standard.",
@@ -1200,6 +1319,12 @@
     "cost": "~$0/yr (fully funded)",
     "fin": {
       "costNum": 0,
+      "tuition": 0,
+      "roomBoard": 0,
+      "fees": 0,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
       "internationalNote": "US Naval Academy provides full tuition, room, board, and monthly stipend — no cost to the athlete. International students require congressional nomination and must commit to US Navy or Marine Corps service post-graduation. Athletic scholarship does not apply — the academy covers all costs."
     },
     "aid": "Full tuition + stipend",
@@ -1223,66 +1348,79 @@
       "value": 95
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower AAC",
-        "note": "Full federal scholarship program. AAC conference play."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Lower AAC",
-        "note": "Patriot League play before joining AAC."
-      },
-      {
-        "yr": 2021,
-        "pos": "Patriot",
-        "note": "Patriot League play. Full scholarship program."
-      },
-      {
-        "yr": 2020,
-        "pos": "Patriot",
-        "note": "Patriot League play."
-      }
+      { "yr": 2025, "pos": "Lower AAC", "note": "Full federal scholarship program. AAC conference play." },
+      { "yr": 2024, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2022, "pos": "Lower AAC", "note": "Patriot League play before joining AAC." },
+      { "yr": 2021, "pos": "Patriot", "note": "Patriot League play. Full scholarship program." },
+      { "yr": 2020, "pos": "Patriot", "note": "Patriot League play." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 0,
-      "notable": [],
-      "draftRank": "N/A — service commitment prevents MLS"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 0, "notable": [], "draftRank": "N/A — service commitment prevents MLS" },
+    "devScores": { "tactical": 60, "technical": 58, "fitness": 72 },
     "coach": {
       "name": "Chris Kampe",
       "title": "Head Coach",
       "email": "ckampe@usna.edu",
       "phone": "",
-      "profile": "Naval Academy coach — disciplined, physically demanding program."
+      "profile": "⚠ SERVICE ACADEMY: Naval Academy soccer is a fully funded D1 program with a 5-year US Navy/Marine Corps service commitment post-graduation. International recruits require a congressional nomination and citizenship waiver. Not compatible with DPT/Chiro career pathway or MLS goals. Listed for completeness — not a recommended pathway for Olivier."
     },
-    "tags": [
-      "soccer"
+    "tags": ["soccer"],
+    "facilityDetails": {
+      "stadium": "Navy-Marine Corps Memorial Stadium — multi-sport facility. Soccer held at Glenn Warner Soccer Facility on campus.",
+      "trainingFields": "Naval Academy athletic complex. Highly disciplined training environment.",
+      "strengthConditioning": "USNA S&C — elite physical conditioning program. Navy athletes are among the fittest in college athletics.",
+      "sportsScience": "Limited kinesiology-specific science. Academy curriculum is broad-based military and engineering focus.",
+      "sportsMed": "USNA Sports Medicine — excellent physical conditioning support. Not pre-PT focused.",
+      "academicLabs": "Not applicable for pre-PT pathway. Academy curriculum does not align with ACU BESS transfer credit.",
+      "extras": "Annapolis — beautiful historic sailing city on Chesapeake Bay. US Naval Academy grounds are architecturally stunning. DC proximity (35 miles). Baltimore (25 miles). Maryland crab season. Not relevant for Olivier's pathway.",
+      "rating": "Solid",
+      "note": "⚠ Service academy — 5-year US Navy commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. GPA 3.0+ required. International pathway is complex."
+    },
+    "culture": {
+      "vibe": "⚠ Service academy culture — disciplined, regimented, honour code-bound. Not a traditional university experience. Midshipmen wear uniforms, follow strict codes of conduct, and commit to military service. Academic excellence and physical fitness are paramount.",
+      "thingsToDo": "Annapolis waterfront, Chesapeake Bay sailing, Washington DC (35 miles), Baltimore Inner Harbor (25 miles), Maryland crabs. But note: Navy midshipmen have restricted freedom of movement compared to traditional college students.",
+      "socialScene": "Structured and regimented. Social life is within the academy community. Not applicable in the traditional college soccer recruit sense.",
+      "olivierMatch": "⚠ NOT RECOMMENDED for Olivier. Service commitment blocks DPT/Chiro career and MLS pathway. GPA requirement is above current level. International entry requires complex waiver process. Listed for completeness only.",
+      "lifestyleTags": "Service commitment, fully funded, Annapolis, not DPT-compatible"
+    },
+    "facilities": ["Glenn Warner Soccer Facility", "USNA Athletic Complex"],
+    "courses": [
+      "Science core curriculum (not ACU-aligned)",
+      "Naval Science",
+      "Mathematics",
+      "Engineering Science",
+      "Leadership"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Chris Kampe", "role": "Head Coach", "email": "ckampe@usna.edu", "bg": "Naval Academy head coach. Disciplined, physically demanding program. Service commitment required post-graduation." }
+    ],
     "rec": "⚠ Service academy — requires 5-year US Navy commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. Listed for completeness only.",
     "url": "https://navysports.com/sports/mens-soccer",
     "domain": "usna.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": false },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": false },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "army",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Army",
     "full": "United States Military Academy",
     "loc": "West Point, NY",
@@ -1293,6 +1431,7 @@
     "warm": false,
     "city": false,
     "top": false,
+    "color": ["#dcfce7", "#166534"],
     "degreeTitle": "B.S. (General — service academy curriculum)",
     "acuAlign": 8,
     "acuAlignNote": "Service academy curriculum. Pre-PT pathway not standard.",
@@ -1300,6 +1439,12 @@
     "cost": "~$0/yr (fully funded)",
     "fin": {
       "costNum": 0,
+      "tuition": 0,
+      "roomBoard": 0,
+      "fees": 0,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
       "internationalNote": "US Military Academy provides full tuition, room, board, and monthly stipend — no cost to the athlete. International students must receive a waiver and commit to US military service post-graduation. Athletic scholarship does not apply — the academy covers all costs."
     },
     "aid": "Full tuition + stipend",
@@ -1323,66 +1468,79 @@
       "value": 95
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower AAC",
-        "note": "Full federal scholarship program. AAC conference play."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Lower AAC",
-        "note": "Patriot League play before joining AAC."
-      },
-      {
-        "yr": 2021,
-        "pos": "Patriot",
-        "note": "Patriot League play. Full scholarship program."
-      },
-      {
-        "yr": 2020,
-        "pos": "Patriot",
-        "note": "Patriot League play."
-      }
+      { "yr": 2025, "pos": "Lower AAC", "note": "Full federal scholarship program. AAC conference play." },
+      { "yr": 2024, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Lower AAC", "note": "AAC conference play." },
+      { "yr": 2022, "pos": "Lower AAC", "note": "Patriot League play before joining AAC." },
+      { "yr": 2021, "pos": "Patriot", "note": "Patriot League play. Full scholarship program." },
+      { "yr": 2020, "pos": "Patriot", "note": "Patriot League play." }
     ],
     "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 0,
-      "notable": [],
-      "draftRank": "N/A — service commitment prevents MLS"
-    },
-    "devScores": null,
+    "proPlayers": { "mlsPicks5yr": 0, "notable": [], "draftRank": "N/A — service commitment prevents MLS" },
+    "devScores": { "tactical": 58, "technical": 56, "fitness": 72 },
     "coach": {
-      "name": "TBD",
+      "name": "Head Coach",
       "title": "Head Coach",
       "email": "soccer@westpoint.edu",
       "phone": "",
-      "profile": "Service academy program at West Point."
+      "profile": "⚠ SERVICE ACADEMY: West Point soccer is a fully funded D1 program with a 5-year US Army service commitment post-graduation. International recruits require citizenship waiver. Not compatible with DPT/Chiro career pathway or MLS goals. Listed for completeness — not a recommended pathway for Olivier."
     },
-    "tags": [
-      "soccer"
+    "tags": ["soccer"],
+    "facilityDetails": {
+      "stadium": "Holleder Memorial Stadium / West Point soccer facilities. Historic grounds on the Hudson River.",
+      "trainingFields": "West Point athletic complex. Rigorous physical training environment — among the best fitness infrastructure in college sports.",
+      "strengthConditioning": "USMA S&C — elite military conditioning. Physical standards among the highest in any D1 program.",
+      "sportsScience": "Limited kinesiology-specific science. Academy curriculum is broad-based military, engineering, and leadership focus.",
+      "sportsMed": "Keller Army Community Hospital on campus — military-grade medical support. Not aligned with pre-PT clinical pathway.",
+      "academicLabs": "Not applicable for pre-PT pathway. Academy curriculum does not align with ACU BESS transfer credit.",
+      "extras": "West Point on the Hudson River — one of the most scenic campus settings in the USA. New York City (50 miles south). Hudson Valley wine country. Historic military grounds. Not relevant for Olivier's pathway.",
+      "rating": "Solid",
+      "note": "⚠ Service academy — 5-year US Army commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. GPA 3.0+ required. International pathway is complex."
+    },
+    "culture": {
+      "vibe": "⚠ Service academy culture — regimented, disciplined, honour code. Cadets wear uniforms, follow strict military protocols, and commit to Army service post-graduation. Not a traditional college experience.",
+      "thingsToDo": "West Point grounds (historic, stunning), Hudson River, New York City (50 miles), Bear Mountain State Park, Catskills. But note: West Point cadets have significant restrictions on movement and lifestyle compared to traditional college students.",
+      "socialScene": "Highly structured — not traditional college social life. Cadet social events are within the academy community.",
+      "olivierMatch": "⚠ NOT RECOMMENDED for Olivier. Service commitment blocks DPT/Chiro career and MLS pathway. GPA requirement is above current level. International entry requires complex waiver process. Listed for completeness only.",
+      "lifestyleTags": "Service commitment, fully funded, Hudson Valley, not DPT-compatible"
+    },
+    "facilities": ["West Point Soccer Complex", "Keller Army Hospital", "Military S&C"],
+    "courses": [
+      "Science core curriculum (not ACU-aligned)",
+      "Military Science",
+      "Engineering",
+      "Mathematics",
+      "Leadership Studies"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Head Coach", "role": "Head Coach", "email": "soccer@westpoint.edu", "bg": "West Point head coach. Service academy — 5-year Army commitment post-graduation required." }
+    ],
     "rec": "⚠ Service academy — requires 5-year US Army commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. Listed for completeness only.",
     "url": "https://goarmywestpoint.com/sports/mens-soccer",
     "domain": "westpoint.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": false },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": false },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "charlotte",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Charlotte",
     "full": "University of North Carolina at Charlotte",
     "loc": "Charlotte, NC",
@@ -1393,6 +1551,7 @@
     "warm": true,
     "city": true,
     "top": false,
+    "color": ["#dbeafe", "#16a34a"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Atrium Health in Charlotte provides strong clinical access for pre-PT.",
@@ -1400,6 +1559,12 @@
     "cost": "~$28k/yr",
     "fin": {
       "costNum": 28000,
+      "tuition": 18000,
+      "roomBoard": 8000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 6000,
+      "aidType": "athletic",
       "internationalNote": "Charlotte out-of-state COA is ~$28k/yr (2025-26) — affordable for a D1 program. Athletic scholarship can cover 40–70% of COA. Merit aid available for international students. Charlotte has a growing international student community and moderate cost of living."
     },
     "aid": "Athletic",
@@ -1423,70 +1588,81 @@
       "value": 82
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Mid AAC",
-        "note": "Ranked No.24 nationally during season. FIU beat Charlotte 1-0."
-      },
-      {
-        "yr": 2024,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "C-USA",
-        "note": "Conference USA play before joining AAC."
-      },
-      {
-        "yr": 2020,
-        "pos": "C-USA",
-        "note": "Conference USA play."
-      }
+      { "yr": 2025, "pos": "Mid AAC", "note": "Ranked No.24 nationally during season. FIU beat Charlotte 1-0." },
+      { "yr": 2024, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2022, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2021, "pos": "C-USA", "note": "Conference USA play before joining AAC." },
+      { "yr": 2020, "pos": "C-USA", "note": "Conference USA play." }
     ],
-    "titles": [
-      "Multiple C-USA/AAC appearances"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Charlotte FC proximity — growing pipeline"
-    },
-    "devScores": null,
+    "titles": ["Multiple C-USA/AAC appearances"],
+    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Charlotte FC proximity — growing pipeline" },
+    "devScores": { "tactical": 65, "technical": 62, "fitness": 67 },
     "coach": {
-      "name": "TBD",
+      "name": "Head Coach",
       "title": "Head Coach",
       "email": "soccer@uncc.edu",
       "phone": "",
-      "profile": "Building Charlotte AAC program in one of the fastest-growing US cities."
+      "profile": "Building Charlotte's AAC program in one of the fastest-growing US cities. Charlotte FC (MLS) proximity creates professional networking opportunities rare at this cost level. Kinesiology department has strong Atrium Health clinical pipeline."
     },
-    "tags": [
-      "warm",
-      "city",
-      "soccer"
+    "tags": ["warm", "city", "soccer"],
+    "facilityDetails": {
+      "stadium": "Jerry Richardson Stadium / UNCC Soccer Complex. On-campus training facilities. Charlotte FC shares the broader Charlotte soccer ecosystem.",
+      "trainingFields": "On-campus training fields. New UNCC Athletic Complex opened 2022 with upgraded turf and lighting.",
+      "strengthConditioning": "UNCC Athletics S&C facility. Full program support for D1 athletes.",
+      "sportsScience": "Kinesiology department sports science labs. Biomechanics and exercise physiology access.",
+      "sportsMed": "Atrium Health (Charlotte's major hospital network) — pre-PT clinical rotations. Atrium has 42+ hospitals and hundreds of outpatient PT clinics across the Carolinas. Strong pathway.",
+      "academicLabs": "UNCC Kinesiology labs for anatomy, physiology, biomechanics. Good ACU alignment for core units.",
+      "extras": "Charlotte FC (MLS) — 10 minutes from campus. Bank of America Stadium. Uptown Charlotte's tech/finance district growing rapidly. Warm climate. Blue Ridge Mountains 90 minutes north. Beaches 3 hours east.",
+      "rating": "Good",
+      "note": "Best lifestyle-to-cost ratio in the AAC. Charlotte is one of the fastest-growing cities in the US — tech, banking, soccer culture all emerging."
+    },
+    "culture": {
+      "vibe": "Growing D1 program in an emerging sports city. UNCC campus is large and lively. Charlotte FC brings a real soccer culture to the city — MLS match days are accessible and exciting. Urban campus with light rail to Uptown.",
+      "thingsToDo": "Charlotte FC matches (MLS), Uptown Charlotte restaurants/bars, Lake Norman (30 min), Carowinds theme park, Blue Ridge Parkway (90 min), beaches (3 hr east).",
+      "socialScene": "Large public university social scene. Greek life, sports culture, light rail access to Uptown Charlotte. Growing international student community.",
+      "olivierMatch": "Strong match for Olivier's city + warm climate preferences. GPA requirement very accessible. Best affordable D1 city option in the AAC. Charlotte FC MLS proximity is a significant bonus for professional development networking.",
+      "lifestyleTags": "Warm, city, affordable D1, MLS proximity, growing market"
+    },
+    "facilities": ["UNCC Soccer Complex", "Atrium Health Clinical Network", "Charlotte FC Proximity"],
+    "courses": [
+      "KINE 2101 — Anatomy and Physiology I",
+      "KINE 2102 — Anatomy and Physiology II",
+      "KINE 3100 — Biomechanics",
+      "KINE 3200 — Exercise Physiology",
+      "KINE 4100 — Motor Learning",
+      "KINE 4300 — Pre-Clinical Practicum (Atrium Health)"
     ],
-    "facilities": [],
-    "courses": [],
+    "staff": [
+      { "name": "Head Coach", "role": "Head Coach", "email": "soccer@uncc.edu", "bg": "Charlotte 49ers head coach. Building AAC program with Charlotte FC MLS proximity as a recruitment and development advantage." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "soccer@uncc.edu", "bg": "Full-time assistant." }
+    ],
     "rec": "Warm city at very low cost. Charlotte FC proximity is a development bonus. Best lifestyle-to-cost ratio in the AAC.",
     "url": "https://charlotte49ers.com/sports/mens-soccer",
-    "domain": "charlotte.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "domain": "charlotte49ers.com",
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": false },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   },
   {
     "id": "rice",
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "name": "Rice",
     "full": "Rice University",
     "loc": "Houston, TX",
@@ -1497,6 +1673,7 @@
     "warm": true,
     "city": true,
     "top": false,
+    "color": ["#dbeafe", "#1e3a8a"],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 11,
     "acuAlignNote": "Strong kinesiology program. Texas Medical Center (world's largest medical complex, adjacent to campus) gives unmatched pre-PT clinical access.",
@@ -1504,6 +1681,12 @@
     "cost": "~$72k/yr",
     "fin": {
       "costNum": 72000,
+      "tuition": 58000,
+      "roomBoard": 12000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 10000,
+      "aidType": "athletic+need",
       "internationalNote": "Rice full COA is ~$72k/yr (2025-26). Athletic scholarship + need-based aid can combine to significantly reduce costs — Rice meets demonstrated financial need. Houston cost of living is moderate, which helps the net figure. Strong academic reputation with generous aid programs."
     },
     "aid": "Athletic + Need",
@@ -1527,66 +1710,76 @@
       "value": 50
     },
     "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Mid AAC",
-        "note": "Mid-table AAC finish."
-      },
-      {
-        "yr": 2024,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Mid AAC",
-        "note": "First AAC season."
-      },
-      {
-        "yr": 2022,
-        "pos": "C-USA",
-        "note": "Conference USA play before joining AAC."
-      },
-      {
-        "yr": 2021,
-        "pos": "C-USA",
-        "note": "Conference USA play."
-      },
-      {
-        "yr": 2020,
-        "pos": "C-USA",
-        "note": "COVID-shortened season."
-      }
+      { "yr": 2025, "pos": "Mid AAC", "note": "Mid-table AAC finish." },
+      { "yr": 2024, "pos": "Mid AAC", "note": "AAC conference play." },
+      { "yr": 2023, "pos": "Mid AAC", "note": "First AAC season." },
+      { "yr": 2022, "pos": "C-USA", "note": "Conference USA play before joining AAC." },
+      { "yr": 2021, "pos": "C-USA", "note": "Conference USA play." },
+      { "yr": 2020, "pos": "C-USA", "note": "COVID-shortened season." }
     ],
-    "titles": [
-      "AAC Champions multiple"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Strong pipeline for program size"
-    },
-    "devScores": null,
+    "titles": ["AAC Champions multiple"],
+    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Strong pipeline for program size" },
+    "devScores": { "tactical": 68, "technical": 66, "fitness": 70 },
     "coach": {
-      "name": "TBD",
+      "name": "Head Coach",
       "title": "Head Coach",
       "email": "soccer@rice.edu",
       "phone": "",
-      "profile": "Strong academic soccer program. Texas Medical Center access is unmatched for pre-PT."
+      "profile": "Strong academic soccer program at a private Ivy-calibre university. Texas Medical Center (world's largest, 54+ institutions) adjacent to campus — unmatched pre-PT/Chiro clinical access. GPA requirement is above Olivier's current level — athletic scholarship essential."
     },
-    "tags": [
-      "warm",
-      "city",
-      "acad",
-      "soccer"
+    "tags": ["warm", "city", "acad", "soccer"],
+    "facilityDetails": {
+      "stadium": "Rice Soccer Stadium — dedicated on-campus stadium. Rice Athletics complex. Intimate venue with great atmosphere for a small private university.",
+      "trainingFields": "On-campus training facilities. Rice Athletics has invested significantly in soccer infrastructure to compete in the AAC.",
+      "strengthConditioning": "Rice Athletics S&C facility — elite private university standard. Full-time strength staff.",
+      "sportsScience": "Kinesiology research labs. Rice engineering and bioengineering departments provide sports technology collaboration opportunities unique in US college soccer.",
+      "sportsMed": "Texas Medical Center — immediately adjacent to campus. 54+ institutions including MD Anderson, Methodist Hospital, Texas Children's. Best pre-PT/Chiro clinical access in US college soccer.",
+      "academicLabs": "Kinesiology labs for anatomy, physiology, biomechanics. Direct clinical pipeline through Texas Medical Center institutions.",
+      "extras": "Texas Medical Center — world's largest medical complex, adjacent to campus. Houston Dynamo (MLS) nearby. Houston Museum District, Hermann Park, Rice Village. Warm year-round. No state income tax (Texas). Houston is the 4th-largest US city.",
+      "rating": "Very Good",
+      "note": "GPA barrier is significant (3.5+ entry). Athletic scholarship essential to make COA manageable. Texas Medical Center access is the single best clinical asset in AAC soccer."
+    },
+    "culture": {
+      "vibe": "Small, elite private university — Oxford-style residential college system (8 colleges). Tight-knit academic community. Soccer team benefits from high-achieving peers and excellent facilities. Very different from large public university experience.",
+      "thingsToDo": "Texas Medical Center, Houston Dynamo (MLS), Museum District, Hermann Park, Rice Village shops, Space Center Houston, Galveston beaches (50 min), Buffalo Bayou Park. Houston's restaurant scene is world-class.",
+      "socialScene": "Residential college system creates close community — every student belongs to one of 8 residential colleges with own dining, events. Athletic team bonds tightly in this environment. Greek life minimal.",
+      "olivierMatch": "Aspirational — GPA 3.5+ is currently out of reach. But the Texas Medical Center access for pre-DPT/Chiro is the best in the entire guide. If Olivier's GPA improves and an athletic scholarship is available, Rice would be the top academic option in AAC. Listed for long-term reference.",
+      "lifestyleTags": "Warm, city, elite academic, Texas Medical Center, aspirational GPA"
+    },
+    "facilities": ["Rice Soccer Stadium", "Texas Medical Center (adjacent)", "Houston Dynamo MLS Proximity"],
+    "courses": [
+      "KINE 235 — Anatomy and Physiology I",
+      "KINE 236 — Anatomy and Physiology II",
+      "KINE 301 — Biomechanics of Human Movement",
+      "KINE 302 — Exercise Physiology",
+      "KINE 400 — Research Methods in Kinesiology",
+      "KINE 450 — Clinical Practicum (Texas Medical Center)"
     ],
-    "facilities": [],
-    "courses": [],
-    "rec": "Elite academics + warm Houston city + Texas Medical Center for pre-PT = best non-power-conference academic option. Selective admission.",
+    "staff": [
+      { "name": "Head Coach", "role": "Head Coach", "email": "soccer@rice.edu", "bg": "Rice Owls head coach. Private university program with Texas Medical Center clinical access and Houston Dynamo MLS proximity." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "soccer@rice.edu", "bg": "Full-time assistant." }
+    ],
+    "rec": "Elite academics + warm Houston city + Texas Medical Center for pre-PT = best non-power-conference academic option. Selective admission — GPA 3.5+ required.",
     "url": "https://riceowls.com/sports/mens-soccer",
-    "domain": "rice.edu",
-    "minutesOutlook": {
-      "available": false
-    }
+    "domain": "riceowls.com",
+    "minutesOutlook": { "available": false },
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ]
   }
 ]

@@ -736,6 +736,16 @@ const DOMAINS = {
   longbeach:      'longbeachstate.com',
   hawaii:         'hawaiiathletics.com',
   csuf:           'fullertontitans.com',
+  tulsa:          'tulsahurricane.com',
+  memphis:        'gotigersgo.com',
+  wichitastate:   'goshockers.com',
+  temple:         'owlsports.com',
+  eastcarolina:   'ecupirates.com',
+  uab:            'blazerssports.com',
+  navy:           'navysports.com',
+  army:           'goarmywestpoint.com',
+  charlotte:      'charlotte49ers.com',
+  rice:           'riceowls.com',
 };
 
 const SITE_URLS = {
@@ -816,6 +826,16 @@ const SITE_URLS = {
   longbeach:      'https://www.csulb.edu',
   hawaii:         'https://www.hawaii.edu',
   csuf:           'https://www.fullerton.edu',
+  tulsa:          'https://www.utulsa.edu',
+  memphis:        'https://www.memphis.edu',
+  wichitastate:   'https://www.wichita.edu',
+  temple:         'https://www.temple.edu',
+  eastcarolina:   'https://www.ecu.edu',
+  uab:            'https://www.uab.edu',
+  navy:           'https://www.usna.edu',
+  army:           'https://www.westpoint.edu',
+  charlotte:      'https://www.uncc.edu',
+  rice:           'https://www.rice.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -908,6 +928,16 @@ const SOCIAL = {
   longbeach:      ['https://instagram.com/lbstatemsoc',       'https://x.com/LBStateMSOC',         null,                                   'https://youtube.com/longbeachstate'],
   hawaii:         ['https://instagram.com/hawaiimsoc',        'https://x.com/HawaiiMSOC',          null,                                   'https://youtube.com/hawaiiathletics'],
   csuf:           ['https://instagram.com/csufmsoc',          'https://x.com/CSUFMensSoccer',      null,                                   'https://youtube.com/fullertontitans'],
+  tulsa:          ['https://instagram.com/tulsamsoc',         'https://x.com/TulsaMSOC',           null,                                   'https://youtube.com/tulsahurricane'],
+  memphis:        ['https://instagram.com/memphismsoc',       'https://x.com/MemphisMSOC',         null,                                   'https://youtube.com/memphistigers'],
+  wichitastate:   ['https://instagram.com/wsushockers',       'https://x.com/WichitaStateMSOC',    null,                                   'https://youtube.com/goshockers'],
+  temple:         ['https://instagram.com/templemsoc',        'https://x.com/TempleMSOC',          null,                                   'https://youtube.com/templeowls'],
+  eastcarolina:   ['https://instagram.com/ecumsoc',           'https://x.com/ECUMensSoccer',       null,                                   'https://youtube.com/ecupirates'],
+  uab:            ['https://instagram.com/uabmsoc',           'https://x.com/UABMensSoccer',       null,                                   'https://youtube.com/uabathletics'],
+  navy:           ['https://instagram.com/navymsoc',          'https://x.com/NavyMSOC',            null,                                   'https://youtube.com/navysports'],
+  army:           ['https://instagram.com/armymsoc',          'https://x.com/ArmyMSOC',            null,                                   'https://youtube.com/armysports'],
+  charlotte:      ['https://instagram.com/charlotte49ers',    'https://x.com/Charlotte49ers',      'https://facebook.com/Charlotte49ers',  'https://youtube.com/charlotte49ers'],
+  rice:           ['https://instagram.com/riceowls',          'https://x.com/RiceOwls',            'https://facebook.com/RiceOwls',        'https://youtube.com/riceowls'],
 };
 
 

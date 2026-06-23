@@ -2158,13 +2158,56 @@
     "licence": null
   },
   {
+    "id": "hc_rice",
+    "schoolId": "rice",
+    "name": "Head Coach",
+    "school": "Rice University",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Mid AAC \u2014 elite academic program",
+    "mlsPlayers": 2,
+    "rank": 47,
+    "rankClass": "rk-solid",
+    "overallScore": 68,
+    "tacticalScore": 68,
+    "devScore": 66,
+    "ptPathScore": 85,
+    "ausConnection": false,
+    "bio": "Rice University is the academic standout of the AAC \u2014 often called the 'Harvard of the South'. Texas Medical Center (world's largest medical complex, 54+ institutions) is adjacent to campus \u2014 the single best pre-DPT/Chiro clinical asset in all of US college soccer. GPA barrier is significant (3.5+). Athletic scholarship + need-based aid essential.",
+    "strengths": [
+      "Texas Medical Center (adjacent)",
+      "Elite academics",
+      "Houston MLS ecosystem",
+      "Best pre-DPT access in AAC"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@rice.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@rice.edu",
+      "phone": ""
+    },
+    "url": "https://riceowls.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "oldham",
     "schoolId": "keiser",
     "name": "Gavin Oldham",
     "school": "Keiser University",
     "div": "NAIA",
     "conf": "Sun Conference",
-    "rank": 47,
+    "rank": 48,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -2217,7 +2260,7 @@
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 48,
+    "rank": 49,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -2277,7 +2320,7 @@
     "yearsHC": 11,
     "record": "Multiple Big East appearances, 2024 Big East Tournament QF",
     "mlsPlayers": 2,
-    "rank": 49,
+    "rank": 50,
     "rankClass": "rk-solid",
     "overallScore": 66,
     "tacticalScore": 65,
@@ -2317,7 +2360,7 @@
     "school": "Santa Monica College",
     "div": "JUCO",
     "conf": "CCCAA / SCFA",
-    "rank": 50,
+    "rank": 51,
     "rankClass": "rk-solid",
     "overallScore": 66,
     "devScore": 65,
@@ -2356,7 +2399,7 @@
     "yearsHC": 18,
     "record": "Long-tenured Northwestern coach",
     "mlsPlayers": 1,
-    "rank": 51,
+    "rank": 52,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2396,7 +2439,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 52,
+    "rank": 53,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "devScore": 65,
@@ -2447,13 +2490,56 @@
     "licence": "USSF D, NSCAA Premier"
   },
   {
+    "id": "hc_charlotte",
+    "schoolId": "charlotte",
+    "name": "Head Coach",
+    "school": "University of North Carolina at Charlotte",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Mid AAC \u2014 Ranked No.24 nationally 2025",
+    "mlsPlayers": 1,
+    "rank": 54,
+    "rankClass": "rk-solid",
+    "overallScore": 65,
+    "tacticalScore": 65,
+    "devScore": 62,
+    "ptPathScore": 60,
+    "ausConnection": false,
+    "bio": "Charlotte is a rising AAC program \u2014 ranked No.24 nationally during the 2025 season. Charlotte FC (MLS) proximity creates professional networking opportunities rare at this cost level. Atrium Health (42+ hospitals) provides strong pre-PT clinical access. Best lifestyle-to-cost ratio in the AAC.",
+    "strengths": [
+      "No.24 national rank 2025",
+      "Charlotte FC MLS proximity",
+      "Atrium Health clinical",
+      "Best AAC value"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@uncc.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@uncc.edu",
+      "phone": ""
+    },
+    "url": "https://charlotte49ers.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#16a34a"
+    ],
+    "licence": null
+  },
+  {
     "id": "raso_georgian",
     "schoolId": "georgian_court",
     "name": "Dino Raso",
     "school": "Georgian Court University",
     "div": "D2",
     "conf": "CACC",
-    "rank": 53,
+    "rank": 55,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 66,
@@ -2498,7 +2584,7 @@
     "yearsHC": 5,
     "record": "2025 Big West Tournament Champions",
     "mlsPlayers": 1,
-    "rank": 54,
+    "rank": 56,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "tacticalScore": 64,
@@ -2541,7 +2627,7 @@
     "yearsHC": 8,
     "record": "Mid-table Big East, NCAA Tournament appearances",
     "mlsPlayers": 1,
-    "rank": 55,
+    "rank": 57,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -2581,7 +2667,7 @@
     "school": "North Carolina State University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 56,
+    "rank": 58,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -2620,7 +2706,7 @@
     "yearsHC": 6,
     "record": "6th-place finishes in Big Ten",
     "mlsPlayers": 2,
-    "rank": 57,
+    "rank": 59,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -2660,7 +2746,7 @@
     "school": "Miami Dade College",
     "div": "JUCO",
     "conf": "NJCAA",
-    "rank": 58,
+    "rank": 60,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -2699,7 +2785,7 @@
     "yearsHC": 7,
     "record": "Mid Big East, NCAA Tournament 2022-23",
     "mlsPlayers": 1,
-    "rank": 59,
+    "rank": 61,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "tacticalScore": 62,
@@ -2733,6 +2819,49 @@
     "licence": null
   },
   {
+    "id": "hc_tulsa",
+    "schoolId": "tulsa",
+    "name": "Head Coach",
+    "school": "University of Tulsa",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Mid-upper AAC \u2014 consistent finisher",
+    "mlsPlayers": 1,
+    "rank": 62,
+    "rankClass": "rk-solid",
+    "overallScore": 62,
+    "tacticalScore": 62,
+    "devScore": 60,
+    "ptPathScore": 55,
+    "ausConnection": false,
+    "bio": "Tulsa is a consistent mid-upper AAC program with a strong physical development culture. Tulsa, OK offers affordable living and a growing soccer scene. The program's physicality and pressing style suits a box-to-box midfielder profile.",
+    "strengths": [
+      "Physical pressing style",
+      "AAC mid-upper consistency",
+      "Affordable cost",
+      "Tulsa Soccer Club pipeline"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@utulsa.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@utulsa.edu",
+      "phone": ""
+    },
+    "url": "https://tulsahurricane.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#1d4ed8"
+    ],
+    "licence": null
+  },
+  {
     "id": "hc_ucdavis",
     "schoolId": "ucdavis",
     "name": "Head Coach",
@@ -2742,7 +2871,7 @@
     "yearsHC": 4,
     "record": "2024 Big West Tournament Champions",
     "mlsPlayers": 1,
-    "rank": 60,
+    "rank": 63,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "tacticalScore": 61,
@@ -2782,7 +2911,7 @@
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 61,
+    "rank": 64,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -2837,7 +2966,7 @@
     "yearsHC": 12,
     "record": "Consistent Big Ten mid-table",
     "mlsPlayers": 2,
-    "rank": 62,
+    "rank": 65,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "tacticalScore": 60,
@@ -2877,7 +3006,7 @@
     "school": "University of Louisville",
     "div": "D1",
     "conf": "ACC",
-    "rank": 63,
+    "rank": 66,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "devScore": 60,
@@ -2917,7 +3046,7 @@
     "yearsHC": 6,
     "record": "Lower Big East, Chicago location",
     "mlsPlayers": 1,
-    "rank": 64,
+    "rank": 67,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "tacticalScore": 59,
@@ -2960,7 +3089,7 @@
     "yearsHC": 9,
     "record": "Lower Big East, building program",
     "mlsPlayers": 1,
-    "rank": 65,
+    "rank": 68,
     "rankClass": "rk-solid",
     "overallScore": 59,
     "tacticalScore": 58,
@@ -3003,7 +3132,7 @@
     "yearsHC": 5,
     "record": "Multiple Pac-12 titles",
     "mlsPlayers": 2,
-    "rank": 66,
+    "rank": 69,
     "rankClass": "rk-solid",
     "overallScore": 59,
     "tacticalScore": 58,
@@ -3046,7 +3175,7 @@
     "yearsHC": 5,
     "record": "Building program post-D1 elevation",
     "mlsPlayers": 2,
-    "rank": 67,
+    "rank": 70,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 58,
@@ -3080,13 +3209,99 @@
     "licence": null
   },
   {
+    "id": "hc_memphis",
+    "schoolId": "memphis",
+    "name": "Head Coach",
+    "school": "University of Memphis",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Lower-mid AAC \u2014 rebuilding program",
+    "mlsPlayers": 1,
+    "rank": 71,
+    "rankClass": "rk-solid",
+    "overallScore": 58,
+    "tacticalScore": 57,
+    "devScore": 56,
+    "ptPathScore": 55,
+    "ausConnection": false,
+    "bio": "Memphis is a developing AAC program in one of the most musically and culturally rich cities in the US. Methodist Le Bonheur Healthcare provides pre-PT clinical access. FedExForum, Beale Street, and the Mississippi River define a unique campus culture.",
+    "strengths": [
+      "Memphis culture",
+      "Methodist Healthcare clinical",
+      "Affordable living",
+      "FedEx logistics hub (internship)"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@memphis.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@memphis.edu",
+      "phone": ""
+    },
+    "url": "https://gotigersgo.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
+    "id": "hc_temple",
+    "schoolId": "temple",
+    "name": "Head Coach",
+    "school": "Temple University",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Mid AAC \u2014 Philly soccer culture",
+    "mlsPlayers": 1,
+    "rank": 72,
+    "rankClass": "rk-solid",
+    "overallScore": 58,
+    "tacticalScore": 58,
+    "devScore": 56,
+    "ptPathScore": 60,
+    "ausConnection": false,
+    "bio": "Temple University is a major public university in North Philadelphia with direct access to the Philadelphia Union (MLS) ecosystem. Temple University Health System provides pre-PT clinical access. Philadelphia is the 6th-largest US city with a passionate soccer culture \u2014 Union, Penn FC, and the broader Delaware Valley scene.",
+    "strengths": [
+      "Philadelphia Union proximity",
+      "Temple Health clinical",
+      "Major city",
+      "Philly soccer culture"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@temple.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@temple.edu",
+      "phone": ""
+    },
+    "url": "https://owlsports.com/sports/mens-soccer",
+    "color": [
+      "#fee2e2",
+      "#dc2626"
+    ],
+    "licence": null
+  },
+  {
     "id": "potter_northeast",
     "schoolId": "northeast_cc",
     "name": "Adam Potter",
     "school": "Northeast Community College",
     "div": "JUCO",
     "conf": "NJCAA ICCAC",
-    "rank": 68,
+    "rank": 73,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 60,
@@ -3116,6 +3331,92 @@
     "licence": null
   },
   {
+    "id": "hc_uab",
+    "schoolId": "uab",
+    "name": "Head Coach",
+    "school": "University of Alabama at Birmingham",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Mid AAC \u2014 building program",
+    "mlsPlayers": 1,
+    "rank": 74,
+    "rankClass": "rk-solid",
+    "overallScore": 56,
+    "tacticalScore": 56,
+    "devScore": 54,
+    "ptPathScore": 72,
+    "ausConnection": false,
+    "bio": "UAB is a rising AAC program in Birmingham, Alabama's fast-growing medical city. UAB Hospital is one of the top research hospitals in the American South \u2014 direct pre-DPT/Chiro clinical access on campus. Physical Therapy School on campus (potential early access for motivated athletes). Low cost, accessible GPA.",
+    "strengths": [
+      "UAB Hospital (on campus)",
+      "PT School on campus",
+      "Low cost",
+      "Rising AAC program"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@uab.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@uab.edu",
+      "phone": ""
+    },
+    "url": "https://blazerssports.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#065f46"
+    ],
+    "licence": null
+  },
+  {
+    "id": "hc_eastcarolina",
+    "schoolId": "eastcarolina",
+    "name": "Head Coach",
+    "school": "East Carolina University",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Lower-mid AAC",
+    "mlsPlayers": 0,
+    "rank": 75,
+    "rankClass": "rk-solid",
+    "overallScore": 55,
+    "tacticalScore": 54,
+    "devScore": 53,
+    "ptPathScore": 60,
+    "ausConnection": false,
+    "bio": "East Carolina is a developing AAC program with ECU Health (major regional medical center) providing exceptional pre-PT clinical access. Greenville, NC is affordable college town. The ECU Kinesiology program has a strong PT pathway \u2014 one of the better academic pre-DPT options at this cost level.",
+    "strengths": [
+      "ECU Health clinical",
+      "Strong PT pathway",
+      "Affordable",
+      "Accessible GPA"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@ecu.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@ecu.edu",
+      "phone": ""
+    },
+    "url": "https://ecupirates.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#7c3aed"
+    ],
+    "licence": null
+  },
+  {
     "id": "hc_longbeach",
     "schoolId": "longbeach",
     "name": "Head Coach",
@@ -3125,7 +3426,7 @@
     "yearsHC": 4,
     "record": "Lower Big West \u2014 LA metro access",
     "mlsPlayers": 1,
-    "rank": 69,
+    "rank": 76,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "tacticalScore": 54,
@@ -3165,7 +3466,7 @@
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 70,
+    "rank": 77,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -3210,7 +3511,7 @@
     "yearsHC": 4,
     "record": "11th Big Ten 2023-24",
     "mlsPlayers": 1,
-    "rank": 71,
+    "rank": 78,
     "rankClass": "rk-solid",
     "overallScore": 54,
     "tacticalScore": 53,
@@ -3244,13 +3545,56 @@
     "licence": null
   },
   {
+    "id": "hc_wichitastate",
+    "schoolId": "wichitastate",
+    "name": "Head Coach",
+    "school": "Wichita State University",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 4,
+    "record": "Lower AAC \u2014 maximum minutes opportunity",
+    "mlsPlayers": 0,
+    "rank": 79,
+    "rankClass": "rk-solid",
+    "overallScore": 54,
+    "tacticalScore": 53,
+    "devScore": 52,
+    "ptPathScore": 50,
+    "ausConnection": false,
+    "bio": "Wichita State is the lowest-cost full-profile D1 option in the AAC at ~$30k/yr out-of-state. Consistently lower AAC \u2014 best minutes opportunity for an international recruit in the conference. Via Christi Health provides pre-PT clinical access.",
+    "strengths": [
+      "Maximum minutes",
+      "Lowest AAC cost",
+      "Via Christi clinical",
+      "Accessible GPA"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@wichita.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@wichita.edu",
+      "phone": ""
+    },
+    "url": "https://goshockers.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#111827"
+    ],
+    "licence": null
+  },
+  {
     "id": "johnson_chapman",
     "schoolId": "chapman",
     "name": "Dustin Johnson",
     "school": "Chapman University",
     "div": "D3",
     "conf": "SCIAC Conference",
-    "rank": 72,
+    "rank": 80,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 55,
@@ -3289,7 +3633,7 @@
     "yearsHC": 4,
     "record": "Lower Big West \u2014 island program",
     "mlsPlayers": 1,
-    "rank": 73,
+    "rank": 81,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "tacticalScore": 52,
@@ -3332,7 +3676,7 @@
     "yearsHC": 4,
     "record": "Lower Big West \u2014 developing program",
     "mlsPlayers": 0,
-    "rank": 74,
+    "rank": 82,
     "rankClass": "rk-solid",
     "overallScore": 50,
     "tacticalScore": 49,
@@ -3375,7 +3719,7 @@
     "yearsHC": 5,
     "record": "3 consecutive last-place East Division finishes 2023-25",
     "mlsPlayers": 1,
-    "rank": 75,
+    "rank": 83,
     "rankClass": "rk-solid",
     "overallScore": 48,
     "tacticalScore": 47,
@@ -3418,7 +3762,7 @@
     "yearsHC": 4,
     "record": "Lower Big West \u2014 developing program",
     "mlsPlayers": 0,
-    "rank": 76,
+    "rank": 84,
     "rankClass": "rk-solid",
     "overallScore": 48,
     "tacticalScore": 47,
@@ -3448,6 +3792,92 @@
     "color": [
       "#fef9c3",
       "#1d4ed8"
+    ],
+    "licence": null
+  },
+  {
+    "id": "hc_navy",
+    "schoolId": "navy",
+    "name": "Head Coach",
+    "school": "United States Naval Academy",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Lower AAC \u2014 service academy program",
+    "mlsPlayers": 0,
+    "rank": 85,
+    "rankClass": "rk-solid",
+    "overallScore": 42,
+    "tacticalScore": 50,
+    "devScore": 45,
+    "ptPathScore": 20,
+    "ausConnection": false,
+    "bio": "\u26a0 SERVICE ACADEMY: Naval Academy is fully funded D1 soccer with a 5-year US Navy service commitment post-graduation. Annapolis, MD is a beautiful historic city. Not compatible with DPT/Chiro career pathway or MLS goals. Listed for completeness \u2014 not recommended for Olivier.",
+    "strengths": [
+      "Fully funded",
+      "Annapolis historic city",
+      "Leadership development",
+      "Physical fitness culture"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@usna.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@usna.edu",
+      "phone": ""
+    },
+    "url": "https://navysports.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
+    "id": "hc_army",
+    "schoolId": "army",
+    "name": "Head Coach",
+    "school": "United States Military Academy",
+    "div": "D1",
+    "conf": "AAC",
+    "yearsHC": 5,
+    "record": "Lower AAC \u2014 service academy program",
+    "mlsPlayers": 0,
+    "rank": 86,
+    "rankClass": "rk-solid",
+    "overallScore": 40,
+    "tacticalScore": 48,
+    "devScore": 43,
+    "ptPathScore": 20,
+    "ausConnection": false,
+    "bio": "\u26a0 SERVICE ACADEMY: West Point is fully funded D1 soccer with a 5-year US Army service commitment post-graduation. West Point on the Hudson River \u2014 stunning setting. Not compatible with DPT/Chiro career pathway or MLS goals. Listed for completeness \u2014 not recommended for Olivier.",
+    "strengths": [
+      "Fully funded",
+      "Hudson River setting",
+      "Leadership development",
+      "Military elite conditioning"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@westpoint.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "soccer@westpoint.edu",
+      "phone": ""
+    },
+    "url": "https://goarmywestpoint.com/sports/mens-soccer",
+    "color": [
+      "#dcfce7",
+      "#166534"
     ],
     "licence": null
   }

@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current stable version: **v23 Stable (completed June 2026)**
+- Current stable version: **v25 Stable (completed June 2026)**
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -43,15 +43,15 @@ cat athletes/olivier.json      # Single source of truth for athlete config
 
 For data work, read the specific conference file:
 
-| Conference | File |
-|---|---|
-| ACC (Clemson, Virginia, UNC, Notre Dame, Maryland, Wake Forest, SMU, Georgetown) | `data/acc.json` |
-| Big Ten (UCLA, Indiana, Maryland) | `data/big-ten.json` |
-| Big East (St John's) | `data/big-east.json` |
-| AAC (USF, FIU, FAU, Temple, East Carolina) | `data/aac.json` |
-| Big West (UCSB, Hawaii) | `data/big-west.json` |
-| CAA (Charleston) | `data/caa.json` |
-| All D2, NAIA, JUCO, D3, NEC, CACC, AMC + everything else | `data/other.json` |
+| Conference | File | Schools (all full-profile as of v25) |
+|---|---|---|
+| ACC | `data/acc.json` | Virginia, Wake Forest, SMU, Clemson, Notre Dame, UNC, Duke, NC State, Louisville, Pitt, Stanford, Syracuse, Cal (13) |
+| Big Ten | `data/big-ten.json` | UCLA, Indiana, Maryland, Penn State, Michigan, Michigan State, Ohio State, Northwestern, Wisconsin, Rutgers, Oregon, USC, Washington, Illinois (14) |
+| Big East | `data/big-east.json` | St John's, Georgetown, Creighton, UConn, Providence, Villanova, Marquette, Butler, Seton Hall, DePaul, Xavier (11) |
+| AAC | `data/aac.json` | FIU, USF, FAU, Tulsa, Memphis, Wichita State, Temple, East Carolina, UAB, Navy, Army, Charlotte, Rice (13) |
+| Big West | `data/big-west.json` | UCSB, Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, Long Beach State, Hawaii, CSU Fullerton (9) |
+| CAA | `data/caa.json` | Charleston, William & Mary, Hofstra, Northeastern, Drexel, Delaware, Elon, Monmouth, Stony Brook (9) |
+| All D2, NAIA, JUCO, D3, NEC, CACC, AMC + everything else | `data/other.json` | Vermont (AEC), Mercyhurst (NEC), Georgian Court (CACC), Columbia College MO (AMC), + all non-D1 schools |
 
 ### Step 3 — Confirm the session goal
 State in one sentence what this session will deliver and which session number it is.
@@ -94,6 +94,8 @@ The tabs column is what gets missed most often. Check every tab listed.
 | `data/[conf].json` — full school object | All required fields, confKey, acuUnits[16], lensScores[6], minutesOutlook, fitOlivier |
 | `data/coaches.json` — add coach entry | Full-profile school must have a coaches.json entry. Re-rank ALL coaches after adding. |
 | `data/conferences.json` — guideSchools[] | School chip will not appear in Conferences tab without this |
+| `data/conferences.json` — desc and olivierNote | Update the text to reflect the new school count and program highlights — easy to miss |
+| `data/conferences.json` — otherSchools[] | Remove school from otherSchools[] if it was previously listed there |
 | `data/conf-prestige.json` — conference entry | Conference prestige table will miss the school's conference if not updated |
 | `data/pipeline.json` | Only if school has NCAA titles or MLS picks — add to relevant table |
 | `js/app.js — DOMAINS` | Favicon in modal header breaks without this |
@@ -214,6 +216,49 @@ confRecord is display-only — no automatic score cascade. But a major trajector
 
 ---
 
+### CHANGE TYPE 8 — Listed Profile → Full Profile Upgrade
+
+This is the most common batch operation (used throughout v25). It has the largest file footprint of any change type.
+
+**Step order matters — do not skip steps or reorder:**
+
+| Step | What to update | Why |
+|---|---|---|
+| 1 | `data/[conf].json` — add all full-profile fields | `profileDepth: "full"`, `color`, `devScores`, `facilityDetails{}`, `culture{}`, `staff[]`, `courses[]`, `acuUnits[16]`. Expand `fin{}` with tuition/roomBoard/fees/maxAthletic/maxAcademic/aidType. |
+| 2 | `data/[conf].json` — validate JSON | `python -m json.tool data/[conf].json` — do not proceed if invalid |
+| 3 | `data/coaches.json` — add coach entry | Use add\_[conf]\_coaches.py script. **Re-rank ALL coaches after every batch.** |
+| 4 | `js/app.js` — DOMAINS, SITE_URLS, SOCIAL | Add entry for each upgraded school. Run `node --check js/app.js` after. |
+| 5 | `data/conferences.json` — guideSchools[] | Move school from `otherSchools[]` into `guideSchools[]`. Clear `otherSchools[]` if all schools are now profiled. |
+| 6 | `data/conferences.json` — desc and olivierNote | **Always update these.** Change the school count ("X guide schools"), add new highlights, remove stale statements. This is the most frequently missed step. |
+| 7 | Validate all modified files | `python -m json.tool` on every JSON, `node --check` on JS |
+| 8 | Commit with version bump | `vNN.N — [Conference] batch: X listed schools upgraded to full profile` |
+
+**acuUnits false patterns by acuAlign** — use these to set covered:false on the correct units:
+
+| acuAlign (trues) | Units to set covered:false |
+|---|---|
+| 13 | EXSC394, EXSC187, EXSC398 |
+| 12 | EXSC394, EXSC296, EXSC187, EXSC398 |
+| 11 | EXSC394, EXSC204, EXSC296, EXSC187, EXSC398 |
+| 10 | EXSC394, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
+| 9 | EXSC394, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
+| 8 | EXSC394, EXSC322, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
+
+All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EXSC224, EXSC321, EXSC204, EXSC216, EXSC199, EXSC296, EXSC187, EXSC230, EXSC122, EXSC398`
+
+**Service academy rule** (Army/Navy/USNA): costNum=0, all fin fields 0, maxAthletic=1.0, maxAcademic=0. Include explicit service commitment warning in every text field. Not compatible with DPT/Chiro or MLS goals.
+
+**minutesOutlook for upgrades**: Always set `{ "available": false }` unless roster data has been collected. Do not leave the field absent.
+
+**Tabs to verify after upgrading a batch:**
+- Explore Schools — modal opens with all 9 tabs populated (Details button = confKey is correct)
+- Coaches & Staff → Rankings — new coaches present with correct badge colour
+- Conferences — conference card shows updated guideSchools count and desc/olivierNote
+- Financial Model — upgraded schools now appear (filter is `profileDepth !== 'listed'`)
+- ACU Alignment — rows present for all upgraded schools
+
+---
+
 ## 4. Immovable Architecture Rules
 
 These rules cannot be overridden by the user in session. If a proposed change would violate one, stop and flag it.
@@ -300,6 +345,19 @@ ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394,
 EXSC224, EXSC321, EXSC204, EXSC216, EXSC199, EXSC296,
 EXSC187, EXSC230, EXSC122, EXSC398
 ```
+
+**Standard false patterns by acuAlign** — count of `covered:true` must equal `acuAlign` integer:
+
+| acuAlign | covered:false units |
+|---|---|
+| 13 | EXSC394, EXSC187, EXSC398 |
+| 12 | EXSC394, EXSC296, EXSC187, EXSC398 |
+| 11 | EXSC394, EXSC204, EXSC296, EXSC187, EXSC398 |
+| 10 | EXSC394, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
+| 9 | EXSC394, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
+| 8 | EXSC394, EXSC322, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
+
+Verify: `count(covered:true) == acuAlign`. If they don't match, the ACU Alignment tab renders incorrect bars.
 
 ### coaches.json — required fields per coach entry
 ```
@@ -473,44 +531,32 @@ internationalNote populated for all schools, new JUCO school added, coaching lic
 - SMU shortlist decision (borderline budget reach — keep for now)
 - NSU DPT articulation detail
 
-### Planned for v25
-**Goal — Upgrade all 55 listed-profile schools to full-profile**
+### v25 Stable — June 2026
+All 55 listed-profile schools upgraded to full-profile. FSU removed (no men's soccer program). 95 coaches in coaches.json.
 
-55 schools currently have `profileDepth: "listed"` (card only, no Details modal). v25 will upgrade all of them to `profileDepth: "full"` with complete 9-tab modals.
+**Commits:**
+- v25.1–v25.2: ACC batch (Duke, NC State, Louisville, Pitt, Stanford, Syracuse, Cal) — 7 schools
+- v25.3: Big East batch (Villanova, Marquette + prior 7) — 9 schools complete
+- v25.4: Big West batch (Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, Long Beach, Hawaii, CSUF) — 8 schools
+- v25.5: AAC batch (Tulsa, Memphis, Wichita State, Temple, East Carolina, UAB, Navy, Army, Charlotte, Rice) — 10 schools
+- v25.6: CAA batch (William & Mary, Hofstra, Northeastern, Drexel, Delaware, Elon, Monmouth, Stony Brook) — 8 schools
+- v25.7: Vermont (America East) upgraded
+- v25.8: FSU removed; Conference tab desc/olivierNote updated across all conferences
 
-**Schools by file:**
-- `data/aac.json` — 10 schools: Army, Charlotte, East Carolina, Memphis, Navy, Rice, Temple, Tulsa, UAB, Wichita State
-- `data/acc.json` — 8 schools: Cal, Duke, Florida State, Louisville, NC State, Pittsburgh, Stanford, Syracuse
-- `data/big-east.json` — 9 schools: Butler, Creighton, DePaul, Marquette, Providence, Seton Hall, UConn, Villanova, Xavier
-- `data/big-ten.json` — 11 schools: Illinois, Michigan, Michigan State, Northwestern, Ohio State, Oregon, Penn State, Rutgers, USC, Washington, Wisconsin
-- `data/big-west.json` — 8 schools: CS Fullerton, Cal Poly, Hawaii, Long Beach State, UC Davis, UC Irvine, UC Riverside, UC San Diego
-- `data/caa.json` — 8 schools: Delaware, Drexel, Elon, Hofstra, Monmouth, Northeastern, Stony Brook, William & Mary
-- `data/other.json` — 1 school: Vermont (America East)
+**Total guide schools as of v25: 95 coaches, all schools full-profile.**
 
-**For each school, required additions:**
-1. All full-profile data fields (see Section 5 schema)
-2. coach{} object in conference JSON + coaches.json entry (re-rank all after each addition)
-3. devScores (tactical, technical, fitness)
-4. lensScores (6 keys: overall, soccer, academic, minutes, lifestyle, value)
-5. minutesOutlook (roster scrape required — or `available: false` initially)
-6. acuUnits[] — all 16 units with covered true/false
-7. facilityDetails, culture, confRecord, titles, proPlayers
-8. fitOlivier pre-calculated
-9. fin{} with internationalNote
-10. DOMAINS + SITE_URLS + SOCIAL entries in app.js
+**Deferred from v25 (carry to v26):**
+- minutesOutlook still `available:false` for most v25 batch schools — roster scrape needed
+- Placeholder coach names ("Head Coach") remain for 22 schools — real names to be researched
+- GCU coach verification (Jamie Davies Dec 2025 flag)
+- Remaining coaching licences unconfirmed (null)
+- SMU shortlist decision (borderline budget reach)
 
-**Recommended session order (by priority for Olivier):**
-1. ACC remaining (Duke, Stanford, Pittsburgh, FSU, Louisville, NC State, Syracuse, Cal) — high prestige
-2. Big Ten remaining (USC, Penn State, Ohio State, Michigan, Washington, Oregon, etc.) — high profile
-3. Big East remaining (Creighton, UConn, Butler, etc.) — strong soccer
-4. Big West remaining (UC Davis, UC Irvine, etc.) — California lifestyle fit
-5. AAC remaining (East Carolina, Temple, etc.) — lower priority
-6. CAA remaining (Delaware, Drexel, etc.) — lowest Olivier fit
-
-**Architecture note:** Each school added to coaches.json requires ALL coaches to be re-ranked. With 55 additions, do re-rank in batches at the end of each session rather than after every single school.
+**Planned for v26:**
+- Populate minutesOutlook for priority batch schools
+- Research and replace "Head Coach" placeholders with real coach names
+- Australian connection tracking as Fit Score variable
 - Multi-athlete platform expansion
-- Australian connection as Fit Score variable
-- Automated test suite (Playwright/Jest)
 
 ---
 
@@ -569,6 +615,9 @@ Items marked (JUCO) are required for junior college schools.
 ### E — conferences.json
 - [ ] Conference card exists for the school's conference
 - [ ] School added to `guideSchools[]` array
+- [ ] School removed from `otherSchools[]` if it was previously listed there
+- [ ] **`desc` text updated** — update school count and add new program highlights
+- [ ] **`olivierNote` text updated** — update count ("X guide schools") and key school callouts
 - [ ] `tier` field exactly matches renderer bucket keys (see Section 5)
 - [ ] If adding a NEW conference card: add entry to `conf-prestige.json` also
 

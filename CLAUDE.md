@@ -264,6 +264,33 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 
 ---
 
+### CHANGE TYPE 9 — Degree Program (degreeTitle) Updated
+
+This change type exists because degreeTitle updates and ACU alignment reviews are not automatically linked — but they must be. Knowing the real degree program often reveals different course coverage than a generic template assumed. Skipping the ACU review after a degreeTitle update is the gap that created stale acuAlignNote text and wrong acuUnits counts.
+
+**Rule: Any time degreeTitle is researched or changed, steps 2–4 below are mandatory — not optional.**
+
+| Step | What to update | Why |
+|---|---|---|
+| 1 | `data/[conf].json` — degreeTitle | The degree name shown on the school card and modal |
+| 2 | `data/[conf].json` — acuAlignNote | **Must be reviewed.** The note must reference the actual degree program by name, not a generic template. If the real degree has named courses matching ACU units, call them out explicitly. |
+| 3 | `data/[conf].json` — acuUnits[] | **Verify coverage.** Does the real degree program cover the same units assumed? Research specific course offerings. If the school offers Anatomy, Physiology, or Exercise Physiology by confirmed course name, mark those units covered:true. |
+| 4 | `data/[conf].json` — acuAlign | Count of covered:true must equal this integer. Recalculate if acuUnits changed. |
+
+**If acuUnits or acuAlign changed, also cascade:**
+- `lensScores.academic` — re-evaluate (acuAlign is a factor)
+- `lensScores.overall` — recalculate if academic lens changed significantly
+- `fitOlivier` — recalculate (acuAlignment = 10% of fit score)
+
+**Tabs to verify after changing:**
+- ACU Alignment tab — school row shows updated unit count and correct bars
+- Explore Schools → school modal → Overview tab — acuAlignNote text is accurate and degree-specific
+- Explore Schools — fitOlivier updated if acuAlign changed
+
+**Common failure mode:** Generic acuAlignNote text like "2-year degree. Transfer curriculum covers biology, anatomy basics." left in place after degreeTitle is updated to a specific program. The note must name the actual degree and reference specific courses available.
+
+---
+
 ## 4. Immovable Architecture Rules
 
 These rules cannot be overridden by the user in session. If a proposed change would violate one, stop and flag it.

@@ -411,7 +411,7 @@ function renderCards(){
     {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
     {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
     {key:'other', divFilter:'D3',      label:'NCAA Division III',        tier:'D3',            intro:'Chapman University (Orange, CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 pre-physical therapy pathway in the guide. D3 schools offer no athletic scholarships but provide strong academics and competitive soccer.'},
-    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with two Australians on roster — the premium JUCO option in the guide. Northeast Community College (Norfolk, NE) offers near-100% international squad culture at ~$18k/yr (NJCAA DII). Santa Monica College ($9k/yr) has the best transfer pipeline to UCLA/UCSB. All JUCO programs are 2-year transfer platforms.'},
+    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton — the fastest-rising JUCO program in the country. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Northeast Community College (Norfolk, NE) offers near-100% international squad culture at ~$18k/yr. Santa Monica College ($9k/yr) has the best transfer pipeline to UCLA/UCSB. All JUCO programs are 2-year transfer platforms.'},
   ];
 
   // Also include Ivy League under acc or as standalone — they are in other.json
@@ -683,7 +683,8 @@ const DOMAINS = {
   smc:          'smcathletics.com',
   miami_dade:   'athletics.mdc.edu',
   uc_charleston:'ucgoldeneagles.com',
-  iowa_western: 'goreivers.com',
+  iowa_western:  'goreivers.com',
+  indian_hills:  'indianhills.edu',
   uca:          'ucasports.com',
   clemson:      'clemsontigers.com',
   georgetown:   'guhoyas.com',
@@ -727,7 +728,8 @@ const SITE_URLS = {
   smc:          'https://www.smc.edu',
   miami_dade:   'https://www.mdc.edu',
   uc_charleston:'https://www.ucwv.edu',
-  iowa_western: 'https://www.iwcc.edu',
+  iowa_western:  'https://www.iwcc.edu',
+  indian_hills:  'https://www.indianhills.edu',
   uca:          'https://www.uca.edu',
   clemson:      'https://www.clemson.edu',
   georgetown:   'https://www.georgetown.edu',
@@ -783,7 +785,8 @@ const SOCIAL = {
   smc:          ['https://instagram.com/smcmenssoccer',     null,                               null,                                   null],
   miami_dade:   ['https://instagram.com/mdcsharksmsoc',     null,                               null,                                   'https://youtube.com/channel/UCQzMKai0FDVTRzmg9UbJIxA'],
   uc_charleston:['https://instagram.com/ucwv_msoccer',      'https://x.com/ucwv_msoccer',       'https://facebook.com/ucwvmsoccer',     'https://youtube.com/@UCWV1'],
-  iowa_western: ['https://instagram.com/reivermsoccer',     null,                               'https://facebook.com/ReiverSoccer',    null],
+  iowa_western:  ['https://instagram.com/reivermsoccer',     null,                               'https://facebook.com/ReiverSoccer',    null],
+  indian_hills:  [null,                                       null,                               null,                                   null],
   uca:          ['https://instagram.com/ucamenssoccer',     'https://x.com/ucamenssoccer',      'https://facebook.com/ucamenssoccer',   'https://youtube.com/c/CentralArkansasAthletics'],
   clemson:      ['https://instagram.com/clemsonsoccer',      'https://x.com/ClemsonMSoccer',     'https://www.facebook.com/ClemsonMensSoccer',  'https://youtube.com/clemsontigers'],
   georgetown:   ['https://instagram.com/georgetownmsoc',     'https://x.com/GUHoyasMSoc',        null,                                   'https://youtube.com/guhoyas'],

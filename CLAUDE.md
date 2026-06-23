@@ -452,19 +452,62 @@ Data verification pass, financial model correction, and coach data completion.
 **Tools added in v23:**
 - export_schools.py — exports all 95 schools to CSV for external review (excludes Olivier-specific fields)
 
-### Planned for v24
-**Priority 1 — Roster scrape (remaining schools)**
-Full-profile schools still with `minutesOutlook: { available: false }`: Clemson, UNC, Maryland, GCU, Akron, Denver, Vermont, FAU, UCA, Iowa Western, UC Charleston, Mercyhurst, Georgian Court. Note: available: false returns a neutral 0.5 score — scores are not broken, data is incomplete. Once populated: update lensScores.minutes, lensScores.overall, and fitOlivier for each.
+### v24 Stable — June 2026
+internationalNote populated for all schools, new JUCO school added, coaching licence data introduced.
 
-**Priority 2 — GCU coach verification**
-Grok flagged a coach named "Davies Dec 2025" — verify against current guide data before any outreach.
+**Changes in v24:**
+- internationalNote added to all 54 remaining schools across aac, acc, big-east, big-ten, big-west, caa (wakeforest/smu/ucla excluded — already corrected in v23.17)
+- APP_VERSION now driven dynamically from `athleteConfig.guideVersion` in olivier.json — no longer hardcoded in app.js
+- Indian Hills CC (Ottumwa, IA) added as full-profile JUCO school — 2025 NJCAA DI National Champions
+  - fitOlivier: 70, lensScores populated, minutesOutlook: 13 MFs clearing before 2027
+  - Two Australians on current roster: Daniel Monteiro (Brisbane) + Santo Aguek (Melbourne)
+  - Coach: Zac Newton (appointed July 2024) — ranked 26th, USSF C licence
+- coaching `licence` field added to all 41 coaches.json entries — 25 confirmed, 16 null
+- Licence badge displayed on coach cards (indigo pill) and rankings table (new column)
+- guideVersion bumped to v24 in athletes/olivier.json
 
-**Priority 3 — internationalNote audit**
-Now that the financial model correctly uses 0–100% athletic slider, review remaining internationalNote fields for vague or misleading language — particularly Georgetown, Notre Dame, Indiana, UCSB.
+**Deferred from v24 (carry to v25):**
+- minutesOutlook still missing for: Clemson, UNC, Maryland, GCU, Akron, Denver, FAU, UCA, Iowa Western, UC Charleston, Mercyhurst, Georgian Court
+- GCU coach verification (Davies Dec 2025 flag from Grok)
+- Remaining 16 coaching licences unconfirmed (null)
+- SMU shortlist decision (borderline budget reach — keep for now)
+- NSU DPT articulation detail
 
-**Deferred from v24**
-- SMU shortlist decision (fitOlivier 66, borderline budget — keep as deliberate reach for now)
-- NSU DPT articulation detail (PSM research required)
+### Planned for v25
+**Goal — Upgrade all 55 listed-profile schools to full-profile**
+
+55 schools currently have `profileDepth: "listed"` (card only, no Details modal). v25 will upgrade all of them to `profileDepth: "full"` with complete 9-tab modals.
+
+**Schools by file:**
+- `data/aac.json` — 10 schools: Army, Charlotte, East Carolina, Memphis, Navy, Rice, Temple, Tulsa, UAB, Wichita State
+- `data/acc.json` — 8 schools: Cal, Duke, Florida State, Louisville, NC State, Pittsburgh, Stanford, Syracuse
+- `data/big-east.json` — 9 schools: Butler, Creighton, DePaul, Marquette, Providence, Seton Hall, UConn, Villanova, Xavier
+- `data/big-ten.json` — 11 schools: Illinois, Michigan, Michigan State, Northwestern, Ohio State, Oregon, Penn State, Rutgers, USC, Washington, Wisconsin
+- `data/big-west.json` — 8 schools: CS Fullerton, Cal Poly, Hawaii, Long Beach State, UC Davis, UC Irvine, UC Riverside, UC San Diego
+- `data/caa.json` — 8 schools: Delaware, Drexel, Elon, Hofstra, Monmouth, Northeastern, Stony Brook, William & Mary
+- `data/other.json` — 1 school: Vermont (America East)
+
+**For each school, required additions:**
+1. All full-profile data fields (see Section 5 schema)
+2. coach{} object in conference JSON + coaches.json entry (re-rank all after each addition)
+3. devScores (tactical, technical, fitness)
+4. lensScores (6 keys: overall, soccer, academic, minutes, lifestyle, value)
+5. minutesOutlook (roster scrape required — or `available: false` initially)
+6. acuUnits[] — all 16 units with covered true/false
+7. facilityDetails, culture, confRecord, titles, proPlayers
+8. fitOlivier pre-calculated
+9. fin{} with internationalNote
+10. DOMAINS + SITE_URLS + SOCIAL entries in app.js
+
+**Recommended session order (by priority for Olivier):**
+1. ACC remaining (Duke, Stanford, Pittsburgh, FSU, Louisville, NC State, Syracuse, Cal) — high prestige
+2. Big Ten remaining (USC, Penn State, Ohio State, Michigan, Washington, Oregon, etc.) — high profile
+3. Big East remaining (Creighton, UConn, Butler, etc.) — strong soccer
+4. Big West remaining (UC Davis, UC Irvine, etc.) — California lifestyle fit
+5. AAC remaining (East Carolina, Temple, etc.) — lower priority
+6. CAA remaining (Delaware, Drexel, etc.) — lowest Olivier fit
+
+**Architecture note:** Each school added to coaches.json requires ALL coaches to be re-ranked. With 55 additions, do re-rank in batches at the end of each session rather than after every single school.
 - Multi-athlete platform expansion
 - Australian connection as Fit Score variable
 - Automated test suite (Playwright/Jest)

@@ -1089,6 +1089,49 @@
     "licence": null
   },
   {
+    "id": "watkins_uconn",
+    "schoolId": "uconn",
+    "name": "Ray Reid",
+    "school": "University of Connecticut",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 25,
+    "record": "4x NCAA National Champions, Big East elite",
+    "mlsPlayers": 8,
+    "rank": 22,
+    "rankClass": "rk-strong",
+    "overallScore": 82,
+    "tacticalScore": 81,
+    "devScore": 79,
+    "ptPathScore": 60,
+    "ausConnection": false,
+    "bio": "Ray Reid is one of the most decorated coaches in US college soccer history. Four NCAA National Championships (1981, 2000, 2011, 2015) and over 500 career wins. UConn Health Center is one of the finest sports medicine and pre-PT environments in the Big East. His player development record \u2014 8 MLS picks in 5 years \u2014 is elite.",
+    "strengths": [
+      "4x NCAA champions",
+      "8 MLS picks 5yr",
+      "UConn Health",
+      "Elite development record"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@uconn.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "rreid@uconn.edu",
+      "phone": ""
+    },
+    "url": "https://uconnhuskies.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "maisonneuve_ohiostate",
     "schoolId": "ohiostate",
     "name": "Brian Maisonneuve",
@@ -1098,7 +1141,7 @@
     "yearsHC": 10,
     "record": "3 consecutive Big Ten titles 2022-24",
     "mlsPlayers": 2,
-    "rank": 22,
+    "rank": 23,
     "rankClass": "rk-strong",
     "overallScore": 82,
     "tacticalScore": 80,
@@ -1141,7 +1184,7 @@
     "yearsHC": 5,
     "record": "HC since 2020-21. 2024: 14-2-4, SAC Tournament champs, NAIA Tournament 2nd round.",
     "mlsPlayers": 0,
-    "rank": 23,
+    "rank": 24,
     "rankClass": "rk-strong",
     "overallScore": 82,
     "tacticalScore": 82,
@@ -1193,7 +1236,7 @@
     "school": "Stanford University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 24,
+    "rank": 25,
     "rankClass": "rk-strong",
     "overallScore": 81,
     "devScore": 85,
@@ -1233,7 +1276,7 @@
     "yearsHC": 35,
     "record": "468-213-118 career (.660). 415-192-112 at SJU. 1996 NCAA champion. 2nd-winningest active D1 HC.",
     "mlsPlayers": 2,
-    "rank": 25,
+    "rank": 26,
     "rankClass": "rk-strong",
     "overallScore": 80,
     "tacticalScore": 80,
@@ -1273,7 +1316,7 @@
     "school": "Syracuse University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 26,
+    "rank": 27,
     "rankClass": "rk-strong",
     "overallScore": 79,
     "devScore": 78,
@@ -1309,7 +1352,7 @@
     "school": "Grand Canyon University",
     "div": "D1",
     "conf": "WAC",
-    "rank": 27,
+    "rank": 28,
     "rankClass": "rk-strong",
     "overallScore": 79,
     "devScore": 80,
@@ -1348,7 +1391,7 @@
     "yearsHC": 8,
     "record": "2025 Big Ten Tournament Final",
     "mlsPlayers": 3,
-    "rank": 28,
+    "rank": 29,
     "rankClass": "rk-strong",
     "overallScore": 78,
     "tacticalScore": 79,
@@ -1388,7 +1431,7 @@
     "school": "Yale University",
     "div": "IVY",
     "conf": "Ivy League",
-    "rank": 29,
+    "rank": 30,
     "rankClass": "rk-strong",
     "overallScore": 78,
     "devScore": 80,
@@ -1427,7 +1470,7 @@
     "yearsHC": 20,
     "record": "Multiple Big Ten titles, 2013 NCAA Final",
     "mlsPlayers": 4,
-    "rank": 30,
+    "rank": 31,
     "rankClass": "rk-strong",
     "overallScore": 76,
     "tacticalScore": 76,
@@ -1470,7 +1513,7 @@
     "yearsHC": 6,
     "record": "27-31-18 overall, 10-19-8 CAA. 2024 best season: 10-6-2, ranked #23 nationally.",
     "mlsPlayers": 0,
-    "rank": 31,
+    "rank": 32,
     "rankClass": "rk-strong",
     "overallScore": 76,
     "tacticalScore": 76,
@@ -1516,7 +1559,7 @@
     "school": "University of Pittsburgh",
     "div": "D1",
     "conf": "ACC",
-    "rank": 32,
+    "rank": 33,
     "rankClass": "rk-strong",
     "overallScore": 76,
     "devScore": 78,
@@ -1547,13 +1590,56 @@
     "licence": null
   },
   {
+    "id": "miller_creighton",
+    "schoolId": "creighton",
+    "name": "Johnny Miller",
+    "school": "Creighton University",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 12,
+    "record": "Big East Tournament Final 2023, consistent top-4 finishes",
+    "mlsPlayers": 3,
+    "rank": 34,
+    "rankClass": "rk-strong",
+    "overallScore": 75,
+    "tacticalScore": 74,
+    "devScore": 73,
+    "ptPathScore": 55,
+    "ausConnection": false,
+    "bio": "Johnny Miller has built Creighton into a perennial Big East contender with multiple top-4 finishes and a 2023 Tournament Final. Omaha's CHI Health and Nebraska Medicine create strong pre-PT/Chiro clinical access. The Jesuit academic environment pairs well with Exercise Science pathways.",
+    "strengths": [
+      "Big East finals",
+      "CHI Health clinical",
+      "Consistent top-4",
+      "Omaha pro network"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@creighton.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "jmiller@creighton.edu",
+      "phone": ""
+    },
+    "url": "https://gocreighton.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e40af"
+    ],
+    "licence": null
+  },
+  {
     "id": "newton_indian_hills",
     "schoolId": "indian_hills",
     "name": "Zac Newton",
     "school": "Indian Hills CC (Warriors)",
     "div": "JUCO",
     "conf": "NJCAA DI",
-    "rank": 33,
+    "rank": 35,
     "rankClass": "rk-strong",
     "yearsHC": 2,
     "record": "2025 NJCAA DI National Champions; 2024 national semifinal; first-ever No. 1 national ranking",
@@ -1589,7 +1675,7 @@
     "yearsHC": 12,
     "record": "Multiple Pac-12 titles",
     "mlsPlayers": 3,
-    "rank": 34,
+    "rank": 36,
     "rankClass": "rk-solid",
     "overallScore": 74,
     "tacticalScore": 75,
@@ -1629,7 +1715,7 @@
     "school": "Nova Southeastern University",
     "div": "D2",
     "conf": "Sunshine State Conference (SSC)",
-    "rank": 35,
+    "rank": 37,
     "rankClass": "rk-solid",
     "overallScore": 74,
     "devScore": 74,
@@ -1665,7 +1751,7 @@
     "school": "Monroe University \u00e2\u20ac\u201d Mustangs (New Rochelle)",
     "div": "JUCO",
     "conf": "NJCAA Region 15",
-    "rank": 36,
+    "rank": 38,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 74,
@@ -1717,7 +1803,7 @@
     "school": "University of Central Arkansas",
     "div": "D1",
     "conf": "ASUN",
-    "rank": 37,
+    "rank": 39,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
@@ -1775,7 +1861,7 @@
     "school": "Florida Atlantic University",
     "div": "D1",
     "conf": "American Athletic Conference (AAC)",
-    "rank": 38,
+    "rank": 40,
     "rankClass": "rk-solid",
     "overallScore": 72,
     "devScore": 72,
@@ -1815,7 +1901,7 @@
     "yearsHC": 15,
     "record": "Multiple Big East titles, 2025 RPI #38",
     "mlsPlayers": 2,
-    "rank": 39,
+    "rank": 41,
     "rankClass": "rk-solid",
     "overallScore": 70,
     "tacticalScore": 68,
@@ -1849,13 +1935,56 @@
     "licence": null
   },
   {
+    "id": "bhatt_marquette",
+    "schoolId": "marquette",
+    "name": "Ami Bhatt",
+    "school": "Marquette University",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 10,
+    "record": "Multiple Big East titles, consistent mid-table",
+    "mlsPlayers": 2,
+    "rank": 42,
+    "rankClass": "rk-solid",
+    "overallScore": 70,
+    "tacticalScore": 70,
+    "devScore": 68,
+    "ptPathScore": 60,
+    "ausConnection": false,
+    "bio": "Ami Bhatt has built Marquette into a consistent Big East mid-table competitor with multiple conference titles. His program consistently punches above its size. Froedtert & Medical College of Wisconsin partnership provides pre-PT clinical access unique in the Big East.",
+    "strengths": [
+      "Multiple BE titles",
+      "Froedtert clinical",
+      "Jesuit culture",
+      "Milwaukee city"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@marquette.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "abhatt@marquette.edu",
+      "phone": ""
+    },
+    "url": "https://gomarquette.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#1d4ed8"
+    ],
+    "licence": null
+  },
+  {
     "id": "erush_csula",
     "schoolId": "csula",
     "name": "Michael Erush",
     "school": "Cal State LA",
     "div": "D2",
     "conf": "CCAA Conference",
-    "rank": 40,
+    "rank": 43,
     "rankClass": "rk-solid",
     "overallScore": 70,
     "devScore": 70,
@@ -1912,7 +2041,7 @@
     "school": "University of California, Berkeley",
     "div": "D1",
     "conf": "ACC",
-    "rank": 41,
+    "rank": 44,
     "rankClass": "rk-solid",
     "overallScore": 69,
     "devScore": 70,
@@ -1952,7 +2081,7 @@
     "yearsHC": 8,
     "record": "Multiple Pac-12 titles, beat UCLA 2025",
     "mlsPlayers": 2,
-    "rank": 42,
+    "rank": 45,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "tacticalScore": 68,
@@ -1992,7 +2121,7 @@
     "school": "Keiser University",
     "div": "NAIA",
     "conf": "Sun Conference",
-    "rank": 43,
+    "rank": 46,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -2045,7 +2174,7 @@
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 44,
+    "rank": 47,
     "rankClass": "rk-solid",
     "overallScore": 68,
     "devScore": 68,
@@ -2096,13 +2225,56 @@
     "licence": "USSF C, FA Level 2"
   },
   {
+    "id": "walsh_xavier",
+    "schoolId": "xavier",
+    "name": "Andy Walsh",
+    "school": "Xavier University",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 11,
+    "record": "Multiple Big East appearances, 2024 Big East Tournament QF",
+    "mlsPlayers": 2,
+    "rank": 48,
+    "rankClass": "rk-solid",
+    "overallScore": 66,
+    "tacticalScore": 65,
+    "devScore": 64,
+    "ptPathScore": 60,
+    "ausConnection": false,
+    "bio": "Andy Walsh has maintained Xavier as a steady Big East presence with multiple NCAA Tournament appearances. Xavier's Cincinnati location provides access to UC Health (nationally ranked), Cincinnati Children's (top-4 USA), and a growing MLS market (FC Cincinnati). Jesuit academic environment with strong health sciences pathways.",
+    "strengths": [
+      "Cincinnati Children's clinical",
+      "FC Cincinnati network",
+      "Jesuit culture",
+      "Big East presence"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@xavier.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "awalsh@xavier.edu",
+      "phone": ""
+    },
+    "url": "https://goxavier.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#1e40af"
+    ],
+    "licence": null
+  },
+  {
     "id": "avery_smc",
     "schoolId": "smc",
     "name": "Lee Avery",
     "school": "Santa Monica College",
     "div": "JUCO",
     "conf": "CCCAA / SCFA",
-    "rank": 45,
+    "rank": 49,
     "rankClass": "rk-solid",
     "overallScore": 66,
     "devScore": 65,
@@ -2141,7 +2313,7 @@
     "yearsHC": 18,
     "record": "Long-tenured Northwestern coach",
     "mlsPlayers": 1,
-    "rank": 46,
+    "rank": 50,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2181,7 +2353,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 47,
+    "rank": 51,
     "rankClass": "rk-solid",
     "overallScore": 65,
     "devScore": 65,
@@ -2238,7 +2410,7 @@
     "school": "Georgian Court University",
     "div": "D2",
     "conf": "CACC",
-    "rank": 48,
+    "rank": 52,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 66,
@@ -2274,13 +2446,56 @@
     "licence": "USSF A"
   },
   {
+    "id": "berrera_providence",
+    "schoolId": "providence",
+    "name": "Craig Berrera",
+    "school": "Providence College",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 8,
+    "record": "Mid-table Big East, NCAA Tournament appearances",
+    "mlsPlayers": 1,
+    "rank": 53,
+    "rankClass": "rk-solid",
+    "overallScore": 63,
+    "tacticalScore": 62,
+    "devScore": 60,
+    "ptPathScore": 60,
+    "ausConnection": false,
+    "bio": "Craig Berrera manages Providence's place in the Big East with solid mid-table consistency. Providence is a small, high-academic Friar Dominican university in a top US healthcare corridor. Brown and Lifespan Health are walkable from campus, creating exceptional pre-PT/Chiro clinical access for student-athletes.",
+    "strengths": [
+      "Providence healthcare corridor",
+      "NCAA appearances",
+      "Small campus",
+      "Boston proximity"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@providence.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "cberrera@providence.edu",
+      "phone": ""
+    },
+    "url": "https://friars.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#111827"
+    ],
+    "licence": null
+  },
+  {
     "id": "findley_ncstate",
     "schoolId": "ncstate",
     "name": "Kelly Findley",
     "school": "North Carolina State University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 49,
+    "rank": 54,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -2319,7 +2534,7 @@
     "yearsHC": 6,
     "record": "6th-place finishes in Big Ten",
     "mlsPlayers": 2,
-    "rank": 50,
+    "rank": 55,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -2359,7 +2574,7 @@
     "school": "Miami Dade College",
     "div": "JUCO",
     "conf": "NJCAA",
-    "rank": 51,
+    "rank": 56,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -2389,13 +2604,56 @@
     "licence": "UEFA A, USSF A"
   },
   {
+    "id": "fleck_butler",
+    "schoolId": "butler",
+    "name": "Paul Fleck",
+    "school": "Butler University",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 7,
+    "record": "Mid Big East, NCAA Tournament 2022-23",
+    "mlsPlayers": 1,
+    "rank": 57,
+    "rankClass": "rk-solid",
+    "overallScore": 62,
+    "tacticalScore": 62,
+    "devScore": 60,
+    "ptPathScore": 55,
+    "ausConnection": false,
+    "bio": "Paul Fleck has developed Butler into a competitive Big East program with NCAA Tournament appearances. The Indianapolis campus has excellent pre-PT pathways through Indiana University Health and the IU School of Medicine. Butler is a small selective liberal arts college with very high academic standards.",
+    "strengths": [
+      "NCAA Tournament",
+      "IU Health access",
+      "Small academic culture",
+      "Indianapolis city"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@butler.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "pfleck@butler.edu",
+      "phone": ""
+    },
+    "url": "https://butlersports.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "solomon_mercyhurst",
     "schoolId": "mercyhurst",
     "name": "Austin Solomon",
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 52,
+    "rank": 58,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -2450,7 +2708,7 @@
     "yearsHC": 12,
     "record": "Consistent Big Ten mid-table",
     "mlsPlayers": 2,
-    "rank": 53,
+    "rank": 59,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "tacticalScore": 60,
@@ -2490,7 +2748,7 @@
     "school": "University of Louisville",
     "div": "D1",
     "conf": "ACC",
-    "rank": 54,
+    "rank": 60,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "devScore": 60,
@@ -2521,6 +2779,92 @@
     "licence": null
   },
   {
+    "id": "vossman_depaul",
+    "schoolId": "depaul",
+    "name": "Mark Plotkin",
+    "school": "DePaul University",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 6,
+    "record": "Lower Big East, Chicago location",
+    "mlsPlayers": 1,
+    "rank": 61,
+    "rankClass": "rk-solid",
+    "overallScore": 60,
+    "tacticalScore": 59,
+    "devScore": 58,
+    "ptPathScore": 68,
+    "ausConnection": false,
+    "bio": "Mark Plotkin is developing DePaul's program in Chicago's Lincoln Park neighborhood \u2014 one of the best urban campus environments in US college soccer. Chicago Fire (MLS), Advocate Health, and Northwestern Medicine all nearby. DePaul's Vincentian mission and Chicago medical district create strong pre-PT pathway. Program is lower Big East but the city environment is unmatched.",
+    "strengths": [
+      "Chicago Fire network",
+      "Northwestern Medicine",
+      "Lincoln Park campus",
+      "City lifestyle"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@depaul.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "mplotkin@depaul.edu",
+      "phone": ""
+    },
+    "url": "https://depaulbluedemons.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#dc2626"
+    ],
+    "licence": null
+  },
+  {
+    "id": "noonan_setonhall",
+    "schoolId": "setonhall",
+    "name": "Jeff Noonan",
+    "school": "Seton Hall University",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 9,
+    "record": "Lower Big East, building program",
+    "mlsPlayers": 1,
+    "rank": 62,
+    "rankClass": "rk-solid",
+    "overallScore": 59,
+    "tacticalScore": 58,
+    "devScore": 56,
+    "ptPathScore": 65,
+    "ausConnection": false,
+    "bio": "Jeff Noonan is building Seton Hall's program in the highly competitive Big East. The New Jersey location provides excellent access to NYC Red Bulls and NYCFC (30-45 min), and Hackensack Meridian Health sports medicine facilities. NYC proximity makes this a strong lifestyle and professional networking environment.",
+    "strengths": [
+      "NYC proximity",
+      "Red Bulls/NYCFC access",
+      "Hackensack Meridian Health",
+      "NJ location"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@shu.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "jnoonan@shu.edu",
+      "phone": ""
+    },
+    "url": "https://shupiratesl.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "grabherr_oregon",
     "schoolId": "oregon",
     "name": "Wilfried Grabherr",
@@ -2530,7 +2874,7 @@
     "yearsHC": 5,
     "record": "Multiple Pac-12 titles",
     "mlsPlayers": 2,
-    "rank": 55,
+    "rank": 63,
     "rankClass": "rk-solid",
     "overallScore": 59,
     "tacticalScore": 58,
@@ -2570,7 +2914,7 @@
     "school": "Northeast Community College",
     "div": "JUCO",
     "conf": "NJCAA ICCAC",
-    "rank": 56,
+    "rank": 64,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 60,
@@ -2606,7 +2950,7 @@
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 57,
+    "rank": 65,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -2651,7 +2995,7 @@
     "yearsHC": 4,
     "record": "11th Big Ten 2023-24",
     "mlsPlayers": 1,
-    "rank": 58,
+    "rank": 66,
     "rankClass": "rk-solid",
     "overallScore": 54,
     "tacticalScore": 53,
@@ -2691,7 +3035,7 @@
     "school": "Chapman University",
     "div": "D3",
     "conf": "SCIAC Conference",
-    "rank": 59,
+    "rank": 67,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 55,
@@ -2717,6 +3061,49 @@
     "color": [
       "#fce7f3",
       "#db2777"
+    ],
+    "licence": null
+  },
+  {
+    "id": "carlin_villanova",
+    "schoolId": "villanova",
+    "name": "Tom Carlin",
+    "school": "Villanova University",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 5,
+    "record": "3 consecutive last-place East Division finishes 2023-25",
+    "mlsPlayers": 1,
+    "rank": 68,
+    "rankClass": "rk-solid",
+    "overallScore": 48,
+    "tacticalScore": 47,
+    "devScore": 45,
+    "ptPathScore": 72,
+    "ausConnection": false,
+    "bio": "Tom Carlin is developing Villanova in the highly competitive Big East East Division. Three consecutive last-place finishes (2023-2025) signal a program in significant transition. The Main Line campus location provides access to CHOP (Children's Hospital of Philadelphia \u2014 top 2 USA) and Penn Medicine, making Villanova one of the best pre-PT/Chiro clinical environments in the guide despite the program's current on-field struggles.",
+    "strengths": [
+      "CHOP clinical access",
+      "Penn Medicine",
+      "Villanova prestige",
+      "Main Line Philadelphia"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@villanova.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "tcarlin@villanova.edu",
+      "phone": ""
+    },
+    "url": "https://villanova.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#2563eb"
     ],
     "licence": null
   }

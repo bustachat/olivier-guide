@@ -719,6 +719,15 @@ const DOMAINS = {
   usc:            'usctrojans.com',
   washington:     'gohuskies.com',
   illinois:       'fightingillini.com',
+  creighton:      'gocreighton.com',
+  marquette:      'marquette.edu',
+  providence:     'friars.com',
+  setonhall:      'shupiratesl.com',
+  butler:         'butlersports.com',
+  xavier:         'goxavier.com',
+  uconn:          'uconnhuskies.com',
+  depaul:         'depaulbluedemons.com',
+  villanova:      'villanova.com',
 };
 
 const SITE_URLS = {
@@ -782,6 +791,15 @@ const SITE_URLS = {
   usc:            'https://www.usc.edu',
   washington:     'https://www.washington.edu',
   illinois:       'https://www.illinois.edu',
+  creighton:      'https://www.creighton.edu',
+  marquette:      'https://www.marquette.edu',
+  providence:     'https://www.providence.edu',
+  setonhall:      'https://www.shu.edu',
+  butler:         'https://www.butler.edu',
+  xavier:         'https://www.xavier.edu',
+  uconn:          'https://www.uconn.edu',
+  depaul:         'https://www.depaul.edu',
+  villanova:      'https://www.villanova.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -857,6 +875,15 @@ const SOCIAL = {
   usc:            ['https://instagram.com/uscmsoccer',        'https://x.com/USCMensSoccer',       'https://facebook.com/USCMensSoccer',   'https://youtube.com/usctrojans'],
   washington:     ['https://instagram.com/uwmsoccer',         'https://x.com/UWMensSoccer',        null,                                   'https://youtube.com/gohuskies'],
   illinois:       ['https://instagram.com/illinoismsoc',      'https://x.com/IllinoisMSOC',        'https://facebook.com/IllinoisMSOC',    'https://youtube.com/illiniathletics'],
+  creighton:      ['https://instagram.com/creightonmsoc',     'https://x.com/CreightonMSOC',       'https://facebook.com/CreightonMSOC',   'https://youtube.com/gocreighton'],
+  marquette:      ['https://instagram.com/marquettemsoc',     'https://x.com/MarquetteMSOC',       null,                                   'https://youtube.com/marquetteathletics'],
+  providence:     ['https://instagram.com/providencemsoc',    'https://x.com/PCFriarsMSOC',        null,                                   'https://youtube.com/providenceathletics'],
+  setonhall:      ['https://instagram.com/shupiratesmsoc',    'https://x.com/SHUPiratesMSOC',      null,                                   'https://youtube.com/setonhallathletics'],
+  butler:         ['https://instagram.com/butlermsoc',        'https://x.com/ButlerMSOC',          null,                                   'https://youtube.com/butlerathletics'],
+  xavier:         ['https://instagram.com/xaviermsoc',        'https://x.com/XavierMSOC',          null,                                   'https://youtube.com/xavierathletics'],
+  uconn:          ['https://instagram.com/uconnmsoc',         'https://x.com/UConnMSOC',           'https://facebook.com/UConnMSOC',       'https://youtube.com/uconnathletics'],
+  depaul:         ['https://instagram.com/depaulmsoc',        'https://x.com/DePaulMSOC',          null,                                   'https://youtube.com/depaulathletics'],
+  villanova:      ['https://instagram.com/novamsoc',          'https://x.com/NovaMSOC',            null,                                   'https://youtube.com/villanovaathletics'],
 };
 
 

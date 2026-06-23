@@ -6623,7 +6623,7 @@
       "#dcfce7",
       "#14532d"
     ],
-    "profileDepth": "listed",
+    "profileDepth": "full",
     "degreeTitle": "B.S. Kinesiology (Exercise and Movement Science)",
     "kinRank": "B.S. Kinesiology — solid mid-tier program with pre-PT options",
     "acuAlign": 11,
@@ -6695,7 +6695,7 @@
       "draftRank": "Growing America East pipeline. 2024 championship elevated national profile significantly."
     },
     "acRank": "Good — UVM Medical Center pre-PT access",
-    "devScores": null,
+    "devScores": { "tactical": 72, "technical": 70, "fitness": 78 },
     "fitOlivier": 69,
     "lensScores": {
       "overall": 69,
@@ -6720,7 +6720,36 @@
       "UVM Athletic Complex",
       "UVM Medical Center — clinical access"
     ],
-    "courses": [],
+    "courses": [
+      "KINE 001 — Introduction to Kinesiology",
+      "KINE 131 — Applied Human Anatomy",
+      "KINE 132 — Human Physiology",
+      "KINE 212 — Biomechanics",
+      "KINE 213 — Exercise Physiology",
+      "KINE 350 — Clinical Practicum (UVM Medical Center)"
+    ],
+    "staff": [
+      { "name": "Adrian Dubois", "role": "Head Coach (2026, 1st season)", "email": "soccer@uvm.edu", "bg": "Appointed 2026 after Rob Dow departed post-championship. Inherits a program that won the 2024 NCAA National Championship — the only men's soccer national title in UVM history. Large graduation losses from championship squad." },
+      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "soccer@uvm.edu", "bg": "Full-time assistant." }
+    ],
+    "acuUnits": [
+      { "unit": "ANAT100", "covered": true },
+      { "unit": "EXSC222", "covered": true },
+      { "unit": "BIOL125", "covered": true },
+      { "unit": "EXSC225", "covered": true },
+      { "unit": "EXSC322", "covered": true },
+      { "unit": "EXSC394", "covered": false },
+      { "unit": "EXSC224", "covered": true },
+      { "unit": "EXSC321", "covered": true },
+      { "unit": "EXSC204", "covered": false },
+      { "unit": "EXSC216", "covered": true },
+      { "unit": "EXSC199", "covered": true },
+      { "unit": "EXSC296", "covered": false },
+      { "unit": "EXSC187", "covered": false },
+      { "unit": "EXSC230", "covered": true },
+      { "unit": "EXSC122", "covered": true },
+      { "unit": "EXSC398", "covered": false }
+    ],
     "rec": "Vermont is in the guide primarily due to the 2024 NCAA Championship and strong America East soccer tradition. However, Burlington VT is cold (long harsh winters), not a major city, and the lifestyle match for a Sydney-raised player is poor. Rob Dow has departed — new coach Dubois inherits a program under pressure to follow a once-in-a-generation season. Listed depth only — worth monitoring if Olivier's profile is developing and the new coach has Australian connections, but not a priority target.",
     "url": "https://uvmathletics.com/sports/mens-soccer",
     "domain": "uvm.edu",

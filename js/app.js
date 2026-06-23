@@ -10,7 +10,7 @@
 // V21: TBA
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v22';
+const APP_VERSION = 'v24';
 
 let unis = [];
 let conferences = [];

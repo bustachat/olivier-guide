@@ -250,10 +250,14 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 
 **minutesOutlook for upgrades**: Always set `{ "available": false }` unless roster data has been collected. Do not leave the field absent.
 
+**Also update after EVERY conference batch — these are ALWAYS missed:**
+- `data/conf-prestige.json` — `programsInGuide` string and `relevance` text for the conference row. This is a SEPARATE file from conferences.json and powers the Rankings table in the Conference tab. It is NOT updated automatically. Update it in the same commit as the batch.
+
 **Tabs to verify after upgrading a batch:**
 - Explore Schools — modal opens with all 9 tabs populated (Details button = confKey is correct)
 - Coaches & Staff → Rankings — new coaches present with correct badge colour
 - Conferences — conference card shows updated guideSchools count and desc/olivierNote
+- Conferences → Rankings table — programsInGuide column shows new school count (reads from conf-prestige.json)
 - Financial Model — upgraded schools now appear (filter is `profileDepth !== 'listed'`)
 - ACU Alignment — rows present for all upgraded schools
 

@@ -1931,6 +1931,7 @@ function buildCoachCard(c){
           <span class="dbadge d-${c.div}">${c.div}</span>
           <span style="font-size:11px;color:var(--hint)">${c.conf}</span>
           ${c.ausConnection?'<span style="font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;background:var(--amber3);color:var(--amber)">🇦🇺 Aus Link</span>':''}
+          ${c.licence?`<span style="font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;background:var(--indigo3,#e0e7ff);color:var(--indigo,#4338ca)">${c.licence}</span>`:''}
         </div>
       </div>
       <div class="coach-rank-badge" style="${rkcss}">Rank #${c.rank}</div>
@@ -1977,6 +1978,7 @@ function renderCoachTable(){
         `<td>${years}</td>`+
         `<td>${c.record||'—'}</td>`+
         `<td>${mls}</td>`+
+        `<td>${c.licence||'—'}</td>`+
         `<td>${strengths||'—'}</td></tr>`;
     }).join('');
   }catch(e){ console.error('renderCoachTable failed:',e); }

@@ -1,6 +1,6 @@
 # Olivier — US College Soccer & Exercise Science Scholarship Guide
 
-**Version 23** | Multi Skilled Contractors × Sydney, AUS
+**Version 26** | Multi Skilled Contractors × Sydney, AUS
 
 A personalised scholarship research tool covering 97 US universities across 18 conference sections — financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, culture guides, 6-lens dynamic ranking, 2027-entry Minutes Outlook analysis, and a live Dashboard with interactive USA school map.
 
@@ -50,7 +50,10 @@ Key rules at a glance:
 
 | Version | Status | Key Changes |
 |-|-|-|
-| **v23** | ✅ Current (June 2026) | CAA + Big Ten confRecord verification. minutesOutlook for SMC + MDC. 6 coaches added (40 total). Financial model corrected: athletic slider 0–100%, academic aid as fixed dollars, Glossary scholarships section. Misleading internationalNote text fixed for SMU/Wake Forest/UCLA. export_schools.py tool added. |
+| **v26** | ✅ Current (June 2026) | ACU Alignment tab: fixed stale summary cards, removed UF references, excluded JUCOs (soccer development is the metric for 2yr programs). Minutes Outlook: Yr1+Yr2-only ranking formula (apples-to-apples JUCO vs 4yr), JUCO adjusted factor 1.2, JUCO Yr1/Yr2 recalibrated based on Macarthur Bulls A-League academy context vs high school JUCO recruits. CLAUDE.md: minutesOutlook roster research now mandatory for full profile upgrades. |
+| **v25** | Superseded (June 2026) | All 55 listed-profile schools upgraded to full profile across ACC, Big East, Big West, AAC, CAA, America East. FSU removed (no men's soccer). 95 coaches in coaches.json. All schools now full-profile. |
+| **v24** | Superseded (June 2026) | internationalNote populated for all schools. Indian Hills CC added (2025 NJCAA DI National Champions). coaching licence field added to all coaches. APP_VERSION driven dynamically from olivier.json. |
+| **v23** | Superseded (June 2026) | CAA + Big Ten confRecord verification. minutesOutlook for SMC + MDC. 6 coaches added (40 total). Financial model corrected: athletic slider 0–100%, academic aid as fixed dollars, Glossary scholarships section. Misleading internationalNote text fixed for SMU/Wake Forest/UCLA. export_schools.py tool added. |
 | **v22** | Superseded (June 2026) | 5 new full-profile schools: Mercyhurst (NEC/D1), Georgian Court (CACC/D2), Columbia College MO (D3), Northeast CC (JUCO), Monroe College (JUCO). PT Pathway removed from scoring — Dev Score now 3 sub-scores (tactical/technical/fitness), 6-lens system. D3/JUCO split into separate conference sections. Sort/Lens/Mode redesigned as independent axes. Glossary updated. 35 coaches re-ranked. |
 | **v21** | Superseded (May 28 2026) | olivier.json consolidation. Minutes Outlook expanded. Fit Score rebalancing + dual mode toggle. GPA projection slider. Shortlist status tags. Coach outreach tracker. Coaches animated pill tab navigation. |
 | **v20** | Superseded | Search box, Show/Hide All, confgroup filter chips, Pro Pipeline rank badge circles, dashboard SVG circle dots + 640×390 viewBox + hover info panel + cross-highlight. |

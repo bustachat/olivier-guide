@@ -557,11 +557,42 @@ All 55 listed-profile schools upgraded to full-profile. FSU removed (no men's so
 - Remaining coaching licences unconfirmed (null)
 - SMU shortlist decision (borderline budget reach)
 
-**Planned for v26:**
-- Populate minutesOutlook for priority batch schools
-- Research and replace "Head Coach" placeholders with real coach names
-- Australian connection tracking as Fit Score variable
-- Multi-athlete platform expansion
+---
+
+### v26 Stable — June 2026
+ACU Alignment tab overhaul. Minutes Outlook formula and JUCO calibration fixes. Wichita State and Hawaii removed (no men's soccer programs). Coach name research continued.
+
+**Commits:**
+- v26.1–v26.2: Replace placeholder coaches with real names (16 total across multiple conferences)
+- v26.3: Remove Wichita State and Hawaii (no men's soccer programs confirmed)
+- v26.4: UC Riverside — Tim Cupello coach update
+- v26.5–v26.6: Conference tab fix (conf-prestige.json programsInGuide corrections)
+- v26.7: ACU Alignment tab — fix stale summary cards (Texas A&M removed, Clemson corrected 5/16, GCU corrected 14/16, v25 batch schools added)
+- v26.8: ACU Alignment tab — remove all UF references (no school object, not recruitable)
+- v26.9: ACU Alignment tab — exclude JUCO schools from table (soccer development is the metric for 2yr programs)
+- v26.10: Minutes Outlook — JUCO adjusted factor 1.0 → 1.2 (full roster reset, Olivier above average at JUCO level)
+- v26.11: Minutes Outlook — rank on Yr1+Yr2 only, apples-to-apples JUCO vs 4yr (Yr3/Yr4 display unchanged)
+- v26.12: JUCO minutesOutlook Yr1/Yr2 recalibrated — based on Macarthur Bulls A-League U18 (starter, 45–60 min/game) vs high school JUCO recruits. Cascade: lensScores.minutes, overall, fitOlivier updated for all 6 JUCO schools
+- v26.13: CLAUDE.md — minutesOutlook roster research now mandatory Step 7 in Change Type 8
+
+**Architecture decisions in v26:**
+- JUCOs excluded from ACU Alignment tab — WES alignment not applicable for 2yr programs; soccer development is the primary metric
+- Minutes Outlook ranking uses Yr1+Yr2 only — later year projections inflated D1 scores unfairly vs JUCOs with only 2 years of data
+- JUCO adjusted factor set to 1.2 — Olivier (A-League U18 academy) is above average in the JUCO player pool vs high school recruits
+- D1 transfer pipeline quality identified as the key JUCO metric: Indian Hills #2, Iowa Western #4, Monroe #3 nationally (Grok, June 2026)
+
+**Deferred from v26 (carry to v27):**
+- 53 schools with minutesOutlook `available:false` — populate or apply division baseline estimates
+- Remaining "Head Coach" placeholder names unresolved
+- GCU coach verification (Jamie Davies Dec 2025 flag)
+- Remaining coaching licences unconfirmed (null)
+- SMU shortlist decision (borderline budget reach)
+
+**Planned for v27:**
+- Add Tyler Junior College (Tyler, TX) — #1 JUCO D1 transfer feeder nationally
+- Add Daytona State College (Daytona Beach, FL) — top-5 JUCO D1 feeder, warm/Florida lifestyle
+- 53 schools minutesOutlook — populate from roster data or apply division baseline estimates with "estimated" flag
+- minutesOutlook now mandatory at full profile upgrade time (see Change Type 8 Step 7)
 
 ---
 

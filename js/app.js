@@ -1983,9 +1983,7 @@ function renderConferencePrestige() {
         ? `<span style="color:var(--rose)">${c.mlsPipeline}</span>`
         : c.mlsPipeline;
 
-      const relevanceCell = c.rank === 4
-        ? `<strong style="color:var(--rose)">SEC has NO men's varsity soccer at UF.</strong> Listed only because UF APK is the #1 academic match. The SEC as a conference does not sponsor men's soccer at most member schools — football culture dominates.`
-        : c.relevance;
+      const relevanceCell = c.relevance;
 
       return `<tr>
         <td><span class="rk-num ${c.rankClass}">${c.rank}</span>${c.name}</td>

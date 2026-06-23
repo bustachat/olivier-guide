@@ -10,7 +10,7 @@
 // V21: TBA
 // ═══════════════════════════════════════════════════════════════════════
 
-const APP_VERSION = 'v24';
+let APP_VERSION = 'v24'; // overwritten from athleteConfig.guideVersion after load
 
 let unis = [];
 let conferences = [];
@@ -108,6 +108,7 @@ async function loadData() {
     conferencePrestige = await confPrestigeRes.json();
     pipelineData       = await pipelineRes.json();
     athleteConfig      = await athleteRes.json();
+    if (athleteConfig.guideVersion) APP_VERSION = athleteConfig.guideVersion;
     // Preserve both weight sets so the score-mode toggle can swap between them
     athleteConfig._weightsMinutes = Object.assign({}, athleteConfig.scoreWeights);
     athleteConfig._weightsBase    = Object.assign({}, athleteConfig.scoreWeightsBase);

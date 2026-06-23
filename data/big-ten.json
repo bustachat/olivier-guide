@@ -142,7 +142,7 @@
       "soccer": 76,
       "academic": 73,
       "minutes": 30,
-      "lifestyle": 100,
+      "lifestyle": 97,
       "value": 71
     },
     "minutesOutlook": {
@@ -581,7 +581,10 @@
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#dbeafe", "#1e3a8a"],
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 12,
     "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, motor control all covered. Pre-PT advising integrated into kinesiology program.",
@@ -618,16 +621,51 @@
       "value": 62
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower B1G", "note": "Did not qualify for Big Ten Tournament." },
-      { "yr": 2024, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2023, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2022, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play. NCAA Tournament." },
-      { "yr": 2020, "pos": "B1G Final", "note": "Lost to Indiana in Big Ten Tournament Final." }
+      {
+        "yr": 2025,
+        "pos": "Lower B1G",
+        "note": "Did not qualify for Big Ten Tournament."
+      },
+      {
+        "yr": 2024,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play. NCAA Tournament."
+      },
+      {
+        "yr": 2020,
+        "pos": "B1G Final",
+        "note": "Lost to Indiana in Big Ten Tournament Final."
+      }
     ],
-    "titles": ["NCAA 2013 finalist", "Big Ten Champions multiple"],
-    "proPlayers": { "mlsPicks5yr": 4, "notable": [], "draftRank": "Consistent Big Ten pipeline" },
-    "devScores": { "tactical": 78, "technical": 74, "fitness": 80 },
+    "titles": [
+      "NCAA 2013 finalist",
+      "Big Ten Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 4,
+      "notable": [],
+      "draftRank": "Consistent Big Ten pipeline"
+    },
+    "devScores": {
+      "tactical": 78,
+      "technical": 74,
+      "fitness": 80
+    },
     "coach": {
       "name": "Bob Warming",
       "title": "Head Coach",
@@ -635,7 +673,10 @@
       "phone": "",
       "profile": "One of the most decorated coaches in Big Ten history. Led Penn State to 2013 NCAA Final. Multiple Big Ten titles. Deep recruiting network in Pennsylvania and Mid-Atlantic."
     },
-    "tags": ["acad", "soccer"],
+    "tags": [
+      "acad",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Jeffrey Field — 5,000 capacity, natural grass, permanent seating. Historic Penn State soccer venue.",
       "trainingFields": "2 dedicated practice fields adjacent to Jeffrey Field. Indoor practice space available in winter.",
@@ -654,7 +695,11 @@
       "olivierMatch": "★★ Rural central Pennsylvania is a significant lifestyle gap from Sydney. No real city, cold winters. Best if Olivier fully embraces the American college-town experience.",
       "lifestyleTags": "College-town, rural, cold winters"
     },
-    "facilities": ["Jeffrey Field", "Lasch S&C Complex", "Kinesiology Research Labs"],
+    "facilities": [
+      "Jeffrey Field",
+      "Lasch S&C Complex",
+      "Kinesiology Research Labs"
+    ],
     "courses": [
       "KIN 202 — Foundations of Kinesiology",
       "KIN 310 — Exercise Physiology",
@@ -663,30 +708,90 @@
       "KIN 453 — Clinical Kinesiology"
     ],
     "staff": [
-      { "name": "Bob Warming", "role": "Head Coach", "email": "bwarming@psu.edu", "bg": "Head Coach. One of the most experienced Big Ten coaches." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@psu.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Bob Warming",
+        "role": "Head Coach",
+        "email": "bwarming@psu.edu",
+        "bg": "Head Coach. One of the most experienced Big Ten coaches."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@psu.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Consistent Big Ten contender. Strong kinesiology program. Rural campus — significant lifestyle trade-off for Olivier.",
     "url": "https://gopsusports.com/sports/mens-soccer",
     "domain": "psu.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": true },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -702,7 +807,10 @@
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#fef9c3", "#1d4ed8"],
+    "color": [
+      "#fef9c3",
+      "#1d4ed8"
+    ],
     "degreeTitle": "B.S. Movement Science",
     "acuAlign": 13,
     "acuAlignNote": "Excellent — U of M School of Kinesiology is one of the top 3 in the nation. Movement Science covers anatomy, physiology, biomechanics, motor control, sport psychology. Michigan Medicine provides elite pre-PT clinical access.",
@@ -739,16 +847,50 @@
       "value": 52
     },
     "confRecord": [
-      { "yr": 2025, "pos": "3rd B1G", "note": "3rd seed Big Ten Tourn. Lost final to UCLA 0-5." },
-      { "yr": 2024, "pos": "B1G Tourn", "note": "Big Ten Tournament participant. NCAA bid." },
-      { "yr": 2023, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2022, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2020, "pos": "Mid B1G", "note": "COVID-shortened spring season." }
+      {
+        "yr": 2025,
+        "pos": "3rd B1G",
+        "note": "3rd seed Big Ten Tourn. Lost final to UCLA 0-5."
+      },
+      {
+        "yr": 2024,
+        "pos": "B1G Tourn",
+        "note": "Big Ten Tournament participant. NCAA bid."
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid B1G",
+        "note": "COVID-shortened spring season."
+      }
     ],
-    "titles": ["Big Ten Champions multiple"],
-    "proPlayers": { "mlsPicks5yr": 3, "notable": [], "draftRank": "Strong Big Ten pipeline" },
-    "devScores": { "tactical": 82, "technical": 80, "fitness": 83 },
+    "titles": [
+      "Big Ten Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [],
+      "draftRank": "Strong Big Ten pipeline"
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 80,
+      "fitness": 83
+    },
     "coach": {
       "name": "Chaka Daley",
       "title": "Head Coach",
@@ -756,7 +898,10 @@
       "phone": "",
       "profile": "Building Michigan into an elite Big Ten program. Former US Youth National Team coach. Reached 2025 Big Ten Tournament Final before 0-5 loss to UCLA. Strong tactical identity — Michigan now Big Ten top-4."
     },
-    "tags": ["acad", "soccer"],
+    "tags": [
+      "acad",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Michigan Soccer Stadium — 3,000 capacity, natural grass, dedicated soccer facility. NCAA Tournament host.",
       "trainingFields": "2 dedicated training fields adjacent to stadium. Michigan Athletic Campus (MAC) indoor facility access for winter.",
@@ -775,7 +920,11 @@
       "olivierMatch": "★★★ Ann Arbor punches well above its Midwest location. The academic environment is exceptional. Climate is cold — four real seasons including harsh winters. Better lifestyle fit than other Midwest options.",
       "lifestyleTags": "Ann Arbor culture, academic excellence, cold winters"
     },
-    "facilities": ["Michigan Soccer Stadium", "School of Kinesiology Labs", "Michigan Medicine Sports Med"],
+    "facilities": [
+      "Michigan Soccer Stadium",
+      "School of Kinesiology Labs",
+      "Michigan Medicine Sports Med"
+    ],
     "courses": [
       "MOVESCI 230 — Anatomical Kinesiology",
       "MOVESCI 330 — Exercise Physiology",
@@ -784,30 +933,90 @@
       "MOVESCI 460 — Sport Psychology"
     ],
     "staff": [
-      { "name": "Chaka Daley", "role": "Head Coach", "email": "cdaley@umich.edu", "bg": "Head Coach. Former US Youth National Team coach. Building Michigan to Big Ten top-4 level." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@umich.edu", "bg": "Full-time assistant. Recruiting and player development." }
+      {
+        "name": "Chaka Daley",
+        "role": "Head Coach",
+        "email": "cdaley@umich.edu",
+        "bg": "Head Coach. Former US Youth National Team coach. Building Michigan to Big Ten top-4 level."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@umich.edu",
+        "bg": "Full-time assistant. Recruiting and player development."
+      }
     ],
     "rec": "One of the best Movement Science programs in the country. Michigan Medicine pre-PT access is elite. Ann Arbor is a lively college town despite cold winters.",
     "url": "https://mgoblue.com/sports/mens-soccer",
     "domain": "umich.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": true },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": true },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -823,7 +1032,10 @@
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#dcfce7", "#15803d"],
+    "color": [
+      "#dcfce7",
+      "#15803d"
+    ],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. Pre-PT pathway available through kinesiology advising.",
@@ -860,16 +1072,48 @@
       "value": 62
     },
     "confRecord": [
-      { "yr": 2025, "pos": "10th B1G", "note": "2-5-3 conf record in 11-team Big Ten." },
-      { "yr": 2024, "pos": "5th B1G", "note": "5th in Big Ten standings." },
-      { "yr": 2023, "pos": "3rd B1G", "note": "3rd in Big Ten — top-half finish." },
-      { "yr": 2022, "pos": "7th B1G", "note": "7th in Big Ten standings." },
-      { "yr": 2021, "pos": "8th B1G", "note": "2-4-2 conf record in 9-team Big Ten." },
-      { "yr": 2020, "pos": "Lower B1G", "note": "COVID-shortened spring season." }
+      {
+        "yr": 2025,
+        "pos": "10th B1G",
+        "note": "2-5-3 conf record in 11-team Big Ten."
+      },
+      {
+        "yr": 2024,
+        "pos": "5th B1G",
+        "note": "5th in Big Ten standings."
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd B1G",
+        "note": "3rd in Big Ten — top-half finish."
+      },
+      {
+        "yr": 2022,
+        "pos": "7th B1G",
+        "note": "7th in Big Ten standings."
+      },
+      {
+        "yr": 2021,
+        "pos": "8th B1G",
+        "note": "2-4-2 conf record in 9-team Big Ten."
+      },
+      {
+        "yr": 2020,
+        "pos": "Lower B1G",
+        "note": "COVID-shortened spring season."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Moderate pipeline" },
-    "devScores": { "tactical": 68, "technical": 65, "fitness": 72 },
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Moderate pipeline"
+    },
+    "devScores": {
+      "tactical": 68,
+      "technical": 65,
+      "fitness": 72
+    },
     "coach": {
       "name": "Damon Rensing",
       "title": "Head Coach",
@@ -877,7 +1121,9 @@
       "phone": "",
       "profile": "Long-tenured MSU coach. Consistent program in competitive Big Ten environment. Developed multiple pro prospects from mid-tier Big Ten position."
     },
-    "tags": ["soccer"],
+    "tags": [
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "DeMartin Soccer Stadium — 3,000 capacity, natural grass surface. Dedicated soccer facility on MSU campus.",
       "trainingFields": "2 dedicated practice fields adjacent to DeMartin. Indoor facility access in winter months.",
@@ -896,7 +1142,11 @@
       "olivierMatch": "★★ Rural feel, cold winters, no nearby city. Better minutes opportunity than elite Big Ten programs. Academic environment is solid. Lifestyle gap from Sydney is significant.",
       "lifestyleTags": "College-town, Midwestern, cold winters"
     },
-    "facilities": ["DeMartin Soccer Stadium", "MSU Athletic Performance Center", "Kinesiology Labs"],
+    "facilities": [
+      "DeMartin Soccer Stadium",
+      "MSU Athletic Performance Center",
+      "Kinesiology Labs"
+    ],
     "courses": [
       "KIN 216 — Anatomy and Physiology I",
       "KIN 317 — Exercise Physiology",
@@ -905,30 +1155,90 @@
       "KIN 431 — Clinical Kinesiology"
     ],
     "staff": [
-      { "name": "Damon Rensing", "role": "Head Coach", "email": "rensing@msu.edu", "bg": "Head Coach. Long-tenured MSU program builder." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@msu.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Damon Rensing",
+        "role": "Head Coach",
+        "email": "rensing@msu.edu",
+        "bg": "Head Coach. Long-tenured MSU program builder."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@msu.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Mid-tier Big Ten. Best for realistic minutes among Michigan schools. Cold campus — similar drawbacks to Michigan.",
     "url": "https://msuspartans.com/sports/mens-soccer",
     "domain": "msu.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -944,7 +1254,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#fee2e2", "#dc2626"],
+    "color": [
+      "#fee2e2",
+      "#dc2626"
+    ],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics covered. Ohio State Wexner Medical Center provides strong clinical access for pre-PT pathway.",
@@ -981,16 +1294,50 @@
       "value": 65
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower B1G", "note": "Defending B1G Tourn champs but failed to qualify in 2025." },
-      { "yr": 2024, "pos": "B1G Champs", "note": "2024 Big Ten Tournament Champions." },
-      { "yr": 2023, "pos": "B1G Champs", "note": "2023 Big Ten co-regular season champs. Tournament." },
-      { "yr": 2022, "pos": "B1G Champs", "note": "Big Ten regular season and tournament titles." },
-      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2020, "pos": "Mid B1G", "note": "COVID-shortened spring season." }
+      {
+        "yr": 2025,
+        "pos": "Lower B1G",
+        "note": "Defending B1G Tourn champs but failed to qualify in 2025."
+      },
+      {
+        "yr": 2024,
+        "pos": "B1G Champs",
+        "note": "2024 Big Ten Tournament Champions."
+      },
+      {
+        "yr": 2023,
+        "pos": "B1G Champs",
+        "note": "2023 Big Ten co-regular season champs. Tournament."
+      },
+      {
+        "yr": 2022,
+        "pos": "B1G Champs",
+        "note": "Big Ten regular season and tournament titles."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid B1G",
+        "note": "COVID-shortened spring season."
+      }
     ],
-    "titles": ["Big Ten Champions multiple"],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Developing MLS pipeline" },
-    "devScores": { "tactical": 76, "technical": 74, "fitness": 78 },
+    "titles": [
+      "Big Ten Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Developing MLS pipeline"
+    },
+    "devScores": {
+      "tactical": 76,
+      "technical": 74,
+      "fitness": 78
+    },
     "coach": {
       "name": "Brian Maisonneuve",
       "title": "Head Coach",
@@ -998,7 +1345,10 @@
       "phone": "",
       "profile": "Former MLS and US National Team midfielder. Building Ohio State's soccer identity — 3 consecutive Big Ten titles 2022-24. High-level tactical identity rooted in his professional playing experience."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Jesse Owens Memorial Stadium (north end soccer facility) — 10,000 capacity shared venue. Dedicated soccer field with permanent seating.",
       "trainingFields": "Ohio State Woody Hayes Athletic Center area practice fields. 2 dedicated soccer training surfaces. Indoor facility access year-round.",
@@ -1017,7 +1367,11 @@
       "olivierMatch": "★★★ Columbus is the best Midwest city option for lifestyle. Weather still cold but manageable. Soccer tradition has exploded under Maisonneuve. Wexner Medical Center is a genuine PT/Chiro asset.",
       "lifestyleTags": "Real city, Buckeye culture, growing Columbus"
     },
-    "facilities": ["OSU Soccer Facility", "Woody Hayes Athletic Center", "Wexner Medical Center Sports Med"],
+    "facilities": [
+      "OSU Soccer Facility",
+      "Woody Hayes Athletic Center",
+      "Wexner Medical Center Sports Med"
+    ],
     "courses": [
       "KINESIO 2550 — Anatomy and Physiology for Health Professions",
       "KINESIO 3310 — Exercise Physiology",
@@ -1026,30 +1380,90 @@
       "KINESIO 4540 — Pre-Clinical Sports Medicine"
     ],
     "staff": [
-      { "name": "Brian Maisonneuve", "role": "Head Coach", "email": "maisonneuve.1@osu.edu", "bg": "Head Coach. Former MLS and USMNT player. 3 consecutive Big Ten titles 2022-24." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@osu.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Brian Maisonneuve",
+        "role": "Head Coach",
+        "email": "maisonneuve.1@osu.edu",
+        "bg": "Head Coach. Former MLS and USMNT player. 3 consecutive Big Ten titles 2022-24."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@osu.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Columbus is a real, growing city — good lifestyle for a Midwest option. Wexner Medical Center for pre-PT. Reasonable cost.",
     "url": "https://ohiostatebuckeyes.com/sports/mens-soccer",
     "domain": "osu.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1065,7 +1479,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#f3e8ff", "#7c3aed"],
+    "color": [
+      "#f3e8ff",
+      "#7c3aed"
+    ],
     "degreeTitle": "B.S. Human Sciences",
     "acuAlign": 12,
     "acuAlignNote": "Strong human sciences and kinesiology pathways. Adjacent to Chicago — access to top-tier PT programs and clinical facilities.",
@@ -1102,16 +1519,48 @@
       "value": 32
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower B1G", "note": "Beat Indiana 2-0 late season. Missed Big Ten Tournament." },
-      { "yr": 2024, "pos": "Lower B1G", "note": "Big Ten conference play." },
-      { "yr": 2023, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2022, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2020, "pos": "Mid B1G", "note": "COVID-shortened spring season." }
+      {
+        "yr": 2025,
+        "pos": "Lower B1G",
+        "note": "Beat Indiana 2-0 late season. Missed Big Ten Tournament."
+      },
+      {
+        "yr": 2024,
+        "pos": "Lower B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid B1G",
+        "note": "COVID-shortened spring season."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Small pipeline — academic-first program" },
-    "devScores": { "tactical": 64, "technical": 62, "fitness": 68 },
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Small pipeline — academic-first program"
+    },
+    "devScores": {
+      "tactical": 64,
+      "technical": 62,
+      "fitness": 68
+    },
     "coach": {
       "name": "Tim Lenahan",
       "title": "Head Coach",
@@ -1119,7 +1568,11 @@
       "phone": "",
       "profile": "Long-tenured Northwestern coach. Manages recruitment at the intersection of elite academics and Big Ten athleticism. Chicago proximity creates strong pre-professional networking for players."
     },
-    "tags": ["city", "acad", "soccer"],
+    "tags": [
+      "city",
+      "acad",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Northwestern Soccer Field (Martin Stadium) — 2,500 capacity, natural grass. Lakeside campus setting.",
       "trainingFields": "Practice fields on Evanston campus. Indoor facility access in winter. Chicago transit access makes Northwestern uniquely linked to professional environments.",
@@ -1138,7 +1591,11 @@
       "olivierMatch": "★★★ Chicago proximity and Northwestern Medicine make this genuinely exciting for Olivier's PT pathway. Soccer is competitive not elite. Very expensive even with aid. Climate is cold — Lake Michigan wind is real.",
       "lifestyleTags": "Chicago adjacent, elite academics, lakefront campus"
     },
-    "facilities": ["Martin Stadium (lakefront)", "Northwestern Medicine Sports Med", "Human Sciences Labs"],
+    "facilities": [
+      "Martin Stadium (lakefront)",
+      "Northwestern Medicine Sports Med",
+      "Human Sciences Labs"
+    ],
     "courses": [
       "BIOL_SCI 219 — Human Anatomy",
       "MOVESCI 206 — Exercise Physiology",
@@ -1147,30 +1604,90 @@
       "MOVESCI 375 — Clinical Exercise Science"
     ],
     "staff": [
-      { "name": "Tim Lenahan", "role": "Head Coach", "email": "tlenahan@northwestern.edu", "bg": "Head Coach. Long-tenured NU coach managing elite academic + Big Ten athletic dual mandate." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "nusoccer@northwestern.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Tim Lenahan",
+        "role": "Head Coach",
+        "email": "tlenahan@northwestern.edu",
+        "bg": "Head Coach. Long-tenured NU coach managing elite academic + Big Ten athletic dual mandate."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "nusoccer@northwestern.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Elite academics + Chicago access. Soccer is competitive not elite — more realistic minutes than top Big Ten programs. Very expensive.",
     "url": "https://nusports.com/sports/mens-soccer",
     "domain": "northwestern.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": true },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1186,7 +1703,10 @@
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#fef9c3", "#92400e"],
+    "color": [
+      "#fef9c3",
+      "#92400e"
+    ],
     "degreeTitle": "B.S. Exercise and Movement Science",
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise and movement science — anatomy, physiology, biomechanics, sport psychology covered. UW Health access for clinical placements.",
@@ -1223,16 +1743,48 @@
       "value": 65
     },
     "confRecord": [
-      { "yr": 2025, "pos": "6th B1G", "note": "6th in Big Ten standings." },
-      { "yr": 2024, "pos": "10th B1G", "note": "10th in Big Ten standings." },
-      { "yr": 2023, "pos": "6th B1G", "note": "6th in Big Ten standings." },
-      { "yr": 2022, "pos": "6th B1G", "note": "6th in Big Ten standings." },
-      { "yr": 2021, "pos": "6th B1G", "note": "3-4-1 conf record in 9-team Big Ten." },
-      { "yr": 2020, "pos": "Lower B1G", "note": "COVID-shortened spring season." }
+      {
+        "yr": 2025,
+        "pos": "6th B1G",
+        "note": "6th in Big Ten standings."
+      },
+      {
+        "yr": 2024,
+        "pos": "10th B1G",
+        "note": "10th in Big Ten standings."
+      },
+      {
+        "yr": 2023,
+        "pos": "6th B1G",
+        "note": "6th in Big Ten standings."
+      },
+      {
+        "yr": 2022,
+        "pos": "6th B1G",
+        "note": "6th in Big Ten standings."
+      },
+      {
+        "yr": 2021,
+        "pos": "6th B1G",
+        "note": "3-4-1 conf record in 9-team Big Ten."
+      },
+      {
+        "yr": 2020,
+        "pos": "Lower B1G",
+        "note": "COVID-shortened spring season."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Moderate pipeline" },
-    "devScores": { "tactical": 65, "technical": 63, "fitness": 70 },
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Moderate pipeline"
+    },
+    "devScores": {
+      "tactical": 65,
+      "technical": 63,
+      "fitness": 70
+    },
     "coach": {
       "name": "John Trask",
       "title": "Head Coach",
@@ -1240,7 +1792,9 @@
       "phone": "",
       "profile": "Developing Wisconsin program in a competitive Big Ten field. Consistent 6th-place finishes in the Big Ten show a stable mid-tier program with realistic minutes for recruited internationals."
     },
-    "tags": ["soccer"],
+    "tags": [
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "McClimon Soccer Complex — 3,000 capacity, artificial turf surface. Dedicated soccer facility on UW campus.",
       "trainingFields": "2 dedicated training surfaces at McClimon. Indoor facility access in winter.",
@@ -1259,7 +1813,11 @@
       "olivierMatch": "★★★ Madison is genuinely liveable — far better lifestyle than Illinois or MSU. Lakes on campus are beautiful in fall. Winters are brutal. Best minutes opportunity among Midwest Big Ten programs.",
       "lifestyleTags": "Lakes city, liveable Madison, cold winters"
     },
-    "facilities": ["McClimon Soccer Complex", "McClain Center S&C", "UW Health Sports Med"],
+    "facilities": [
+      "McClimon Soccer Complex",
+      "McClain Center S&C",
+      "UW Health Sports Med"
+    ],
     "courses": [
       "KINES 100 — Introduction to Kinesiology",
       "KINES 342 — Physiology of Exercise",
@@ -1268,30 +1826,90 @@
       "KINES 530 — Clinical Exercise Science"
     ],
     "staff": [
-      { "name": "John Trask", "role": "Head Coach", "email": "jtrask@wisc.edu", "bg": "Head Coach. Developing Wisconsin in competitive Big Ten environment." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@wisc.edu", "bg": "Full-time assistant." }
+      {
+        "name": "John Trask",
+        "role": "Head Coach",
+        "email": "jtrask@wisc.edu",
+        "bg": "Head Coach. Developing Wisconsin in competitive Big Ten environment."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@wisc.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Lower-cost Big Ten option. Best for minutes opportunity among mid-tier programs. Cold Wisconsin winters are a significant drawback.",
     "url": "https://uwbadgers.com/sports/mens-soccer",
     "domain": "wisc.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1307,7 +1925,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#fee2e2", "#9f1239"],
+    "color": [
+      "#fee2e2",
+      "#9f1239"
+    ],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 10,
     "acuAlignNote": "Solid exercise science program. NYC proximity means excellent clinical placement opportunities for pre-PT pathway.",
@@ -1344,16 +1965,50 @@
       "value": 60
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower B1G", "note": "RPI No.38. Strong season. NCAA at-large bid." },
-      { "yr": 2024, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2023, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2022, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2021, "pos": "Mid B1G", "note": "Big Ten conference play." },
-      { "yr": 2020, "pos": "Mid B1G", "note": "COVID-shortened spring season." }
+      {
+        "yr": 2025,
+        "pos": "Lower B1G",
+        "note": "RPI No.38. Strong season. NCAA at-large bid."
+      },
+      {
+        "yr": 2024,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid B1G",
+        "note": "COVID-shortened spring season."
+      }
     ],
-    "titles": ["Big East Champions multiple (pre-2014)"],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Moderate pipeline" },
-    "devScores": { "tactical": 67, "technical": 65, "fitness": 72 },
+    "titles": [
+      "Big East Champions multiple (pre-2014)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Moderate pipeline"
+    },
+    "devScores": {
+      "tactical": 67,
+      "technical": 65,
+      "fitness": 72
+    },
     "coach": {
       "name": "Jim McElderry",
       "title": "Head Coach",
@@ -1361,7 +2016,10 @@
       "phone": "",
       "profile": "Long-tenured Rutgers coach. NYC proximity creates unique professional networking for soccer players. 2025 RPI No.38 shows program above its Big Ten standing."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Yurcak Field — 5,000 capacity, artificial turf. Dedicated Rutgers Soccer facility on Busch Campus.",
       "trainingFields": "Practice fields on Busch Campus. Indoor facility access in winter. NYC transit (NJ Transit, 40 min to Manhattan) makes Rutgers uniquely accessible to professional environments.",
@@ -1380,7 +2038,11 @@
       "olivierMatch": "★★★ NYC proximity is the differentiator — closest to a real international city for any Midwest/Northeast Big Ten option. Exercise science is solid. Soccer is mid-tier. Cold winters, but less brutal than Midwest.",
       "lifestyleTags": "NYC adjacent, diverse campus, genuine city access"
     },
-    "facilities": ["Yurcak Field", "RWJ Athletic Performance Center", "RWJ Medical Sports Med"],
+    "facilities": [
+      "Yurcak Field",
+      "RWJ Athletic Performance Center",
+      "RWJ Medical Sports Med"
+    ],
     "courses": [
       "EXSC 101 — Introduction to Exercise Science",
       "EXSC 302 — Exercise Physiology",
@@ -1389,30 +2051,90 @@
       "EXSC 445 — Clinical Practicum"
     ],
     "staff": [
-      { "name": "Jim McElderry", "role": "Head Coach", "email": "jmcelderry@rutgers.edu", "bg": "Head Coach. Long-tenured Rutgers coach. NYC network builder." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@rutgers.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Jim McElderry",
+        "role": "Head Coach",
+        "email": "jmcelderry@rutgers.edu",
+        "bg": "Head Coach. Long-tenured Rutgers coach. NYC network builder."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@rutgers.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "NYC proximity is a genuine advantage. Mid-tier Big Ten program. Historically strong in Big East era — still rebuilding in Big Ten.",
     "url": "https://scarletknights.com/sports/mens-soccer",
     "domain": "rutgers.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": false },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1428,7 +2150,10 @@
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#dcfce7", "#166534"],
+    "color": [
+      "#dcfce7",
+      "#166534"
+    ],
     "degreeTitle": "B.S. Human Physiology",
     "acuAlign": 12,
     "acuAlignNote": "Strong Human Physiology program — anatomy, physiology, biomechanics, exercise science all well-covered. Pre-PT pathway supported.",
@@ -1465,16 +2190,50 @@
       "value": 70
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower B1G", "note": "First full Big Ten season. Did not qualify for tournament." },
-      { "yr": 2024, "pos": "Lower B1G", "note": "First Big Ten season (joined 2024)." },
-      { "yr": 2023, "pos": "Pac-12", "note": "Pac-12 play before joining Big Ten." },
-      { "yr": 2022, "pos": "Pac-12", "note": "Pac-12 conference play." },
-      { "yr": 2021, "pos": "Pac-12", "note": "Pac-12 conference play." },
-      { "yr": 2020, "pos": "Pac-12", "note": "COVID-shortened season." }
+      {
+        "yr": 2025,
+        "pos": "Lower B1G",
+        "note": "First full Big Ten season. Did not qualify for tournament."
+      },
+      {
+        "yr": 2024,
+        "pos": "Lower B1G",
+        "note": "First Big Ten season (joined 2024)."
+      },
+      {
+        "yr": 2023,
+        "pos": "Pac-12",
+        "note": "Pac-12 play before joining Big Ten."
+      },
+      {
+        "yr": 2022,
+        "pos": "Pac-12",
+        "note": "Pac-12 conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Pac-12",
+        "note": "Pac-12 conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Pac-12",
+        "note": "COVID-shortened season."
+      }
     ],
-    "titles": ["Pac-12 Champions multiple"],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Growing Pacific pipeline" },
-    "devScores": { "tactical": 62, "technical": 60, "fitness": 67 },
+    "titles": [
+      "Pac-12 Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Growing Pacific pipeline"
+    },
+    "devScores": {
+      "tactical": 62,
+      "technical": 60,
+      "fitness": 67
+    },
     "coach": {
       "name": "Wilfried Grabherr",
       "title": "Head Coach",
@@ -1482,7 +2241,9 @@
       "phone": "",
       "profile": "Building Oregon through Big Ten transition. Phil Knight Nike funding provides elite facilities access. Strong Human Physiology academic environment. Best minutes opportunity of any Big Ten program for Olivier."
     },
-    "tags": ["soccer"],
+    "tags": [
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Pape Field — 3,000 capacity, artificial turf. Renovated with Phil Knight Nike investment. One of the better small-college soccer facilities in the West.",
       "trainingFields": "2 dedicated training fields at Pape. Hayward Field (world's best track & field facility, recently rebuilt with Nike investment) provides elite sports infrastructure context.",
@@ -1501,7 +2262,11 @@
       "olivierMatch": "★★ Best minutes in the Big Ten — biggest draw for Olivier. Human Physiology program strong. Constant rain is a significant lifestyle gap from Sydney. Eugene is small. Best if minutes opportunity is the primary driver.",
       "lifestyleTags": "Nike funding, outdoor culture, rainy Pacific Northwest"
     },
-    "facilities": ["Pape Field", "Moshofsky Center (Nike S&C)", "Human Physiology Labs"],
+    "facilities": [
+      "Pape Field",
+      "Moshofsky Center (Nike S&C)",
+      "Human Physiology Labs"
+    ],
     "courses": [
       "HPHY 250 — Human Physiology",
       "HPHY 355 — Exercise Physiology",
@@ -1510,30 +2275,90 @@
       "HPHY 440 — Clinical Physiology"
     ],
     "staff": [
-      { "name": "Wilfried Grabherr", "role": "Head Coach", "email": "wgrabherr@uoregon.edu", "bg": "Head Coach. Building Oregon through Big Ten transition with elite Nike facilities support." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@uoregon.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Wilfried Grabherr",
+        "role": "Head Coach",
+        "email": "wgrabherr@uoregon.edu",
+        "bg": "Head Coach. Building Oregon through Big Ten transition with elite Nike facilities support."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@uoregon.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Best minutes opportunity in the Big Ten. Strong human physiology degree. Pacific Northwest climate is rainy — not ideal for Olivier.",
     "url": "https://goducks.com/sports/mens-soccer",
     "domain": "uoregon.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": true },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1549,7 +2374,10 @@
     "warm": true,
     "city": true,
     "top": false,
-    "color": ["#fef3c7", "#b45309"],
+    "color": [
+      "#fef3c7",
+      "#b45309"
+    ],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 12,
     "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, sport psychology covered. USC Keck Medicine provides outstanding clinical access for pre-PT pathway.",
@@ -1582,20 +2410,54 @@
       "soccer": 78,
       "academic": 72,
       "minutes": 50,
-      "lifestyle": 100,
+      "lifestyle": 95,
       "value": 45
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower B1G", "note": "Did not qualify for Big Ten Tournament." },
-      { "yr": 2024, "pos": "Lower B1G", "note": "First Big Ten season (joined 2024)." },
-      { "yr": 2023, "pos": "Pac-12", "note": "Pac-12 play before joining Big Ten." },
-      { "yr": 2022, "pos": "Pac-12", "note": "Pac-12 conference play." },
-      { "yr": 2021, "pos": "Pac-12", "note": "Pac-12 conference play." },
-      { "yr": 2020, "pos": "Pac-12", "note": "COVID-shortened season." }
+      {
+        "yr": 2025,
+        "pos": "Lower B1G",
+        "note": "Did not qualify for Big Ten Tournament."
+      },
+      {
+        "yr": 2024,
+        "pos": "Lower B1G",
+        "note": "First Big Ten season (joined 2024)."
+      },
+      {
+        "yr": 2023,
+        "pos": "Pac-12",
+        "note": "Pac-12 play before joining Big Ten."
+      },
+      {
+        "yr": 2022,
+        "pos": "Pac-12",
+        "note": "Pac-12 conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Pac-12",
+        "note": "Pac-12 conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Pac-12",
+        "note": "COVID-shortened season."
+      }
     ],
-    "titles": ["Multiple Pac-12 titles"],
-    "proPlayers": { "mlsPicks5yr": 3, "notable": [], "draftRank": "Strong West Coast pipeline" },
-    "devScores": { "tactical": 80, "technical": 78, "fitness": 82 },
+    "titles": [
+      "Multiple Pac-12 titles"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [],
+      "draftRank": "Strong West Coast pipeline"
+    },
+    "devScores": {
+      "tactical": 80,
+      "technical": 78,
+      "fitness": 82
+    },
     "coach": {
       "name": "Neil Jones",
       "title": "Head Coach",
@@ -1603,7 +2465,12 @@
       "phone": "",
       "profile": "Strong Pac-12 record now translating into Big Ten competition. LA network gives unique pro soccer access — LAFC and LA Galaxy relationships. Keck Medicine partnership for athlete health is elite."
     },
-    "tags": ["warm", "city", "acad", "soccer"],
+    "tags": [
+      "warm",
+      "city",
+      "acad",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "McAlister Field — 3,000 capacity, natural grass. Adjacent to USC Health Sciences campus. Dedicated soccer facility with permanent seating.",
       "trainingFields": "2 dedicated training surfaces on USC Health Sciences campus. Indoor facility access. Galen Center (13,000 arena) provides elite athletic campus infrastructure.",
@@ -1622,7 +2489,11 @@
       "olivierMatch": "★★★★ Second only to UCLA for lifestyle fit for Olivier. LA warmth, diversity, city energy. Keck Medicine for PT/Chiro pathway. Expensive even with aid. Soccer still establishing Big Ten identity.",
       "lifestyleTags": "LA warmth, Trojan Family, city energy"
     },
-    "facilities": ["McAlister Field", "Lyon Center S&C", "USC Keck Medicine Sports Med"],
+    "facilities": [
+      "McAlister Field",
+      "Lyon Center S&C",
+      "USC Keck Medicine Sports Med"
+    ],
     "courses": [
       "KIN 205 — Anatomical Kinesiology",
       "KIN 323 — Exercise Physiology",
@@ -1631,30 +2502,90 @@
       "KIN 462 — Clinical Kinesiology Practicum"
     ],
     "staff": [
-      { "name": "Neil Jones", "role": "Head Coach", "email": "ndjones@usc.edu", "bg": "Head Coach. Strong Pac-12 record. Building Big Ten identity with LA pro network advantage." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@usc.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Neil Jones",
+        "role": "Head Coach",
+        "email": "ndjones@usc.edu",
+        "bg": "Head Coach. Strong Pac-12 record. Building Big Ten identity with LA pro network advantage."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@usc.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "LA lifestyle — second best after UCLA for Olivier's climate preference. USC Keck Medicine for pre-PT. Expensive but worth considering alongside UCLA.",
     "url": "https://usctrojans.com/sports/mens-soccer",
     "domain": "usc.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": true },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1670,7 +2601,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#f3e8ff", "#6d28d9"],
+    "color": [
+      "#f3e8ff",
+      "#6d28d9"
+    ],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. UW Medicine provides strong clinical access for pre-PT pathway.",
@@ -1707,16 +2641,50 @@
       "value": 62
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower B1G", "note": "Beat UCLA at home — key win vs eventual B1G Tourn champs." },
-      { "yr": 2024, "pos": "Lower B1G", "note": "First Big Ten season (joined 2024)." },
-      { "yr": 2023, "pos": "Pac-12", "note": "Pac-12 conference play. NCAA Tournament." },
-      { "yr": 2022, "pos": "Pac-12", "note": "Pac-12 conference play." },
-      { "yr": 2021, "pos": "Pac-12", "note": "Pac-12 conference play." },
-      { "yr": 2020, "pos": "Pac-12", "note": "COVID-shortened season." }
+      {
+        "yr": 2025,
+        "pos": "Lower B1G",
+        "note": "Beat UCLA at home — key win vs eventual B1G Tourn champs."
+      },
+      {
+        "yr": 2024,
+        "pos": "Lower B1G",
+        "note": "First Big Ten season (joined 2024)."
+      },
+      {
+        "yr": 2023,
+        "pos": "Pac-12",
+        "note": "Pac-12 conference play. NCAA Tournament."
+      },
+      {
+        "yr": 2022,
+        "pos": "Pac-12",
+        "note": "Pac-12 conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Pac-12",
+        "note": "Pac-12 conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Pac-12",
+        "note": "COVID-shortened season."
+      }
     ],
-    "titles": ["Pac-12 Champions multiple"],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Consistent Pacific pipeline" },
-    "devScores": { "tactical": 70, "technical": 68, "fitness": 74 },
+    "titles": [
+      "Pac-12 Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Consistent Pacific pipeline"
+    },
+    "devScores": {
+      "tactical": 70,
+      "technical": 68,
+      "fitness": 74
+    },
     "coach": {
       "name": "Jamie Clark",
       "title": "Head Coach",
@@ -1724,7 +2692,10 @@
       "phone": "",
       "profile": "Building Washington through Pacific-12 to Big Ten transition. Beat UCLA in 2025 regular season. Seattle Sounders relationship a genuine pro pathway asset. Strong international recruitment track record."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Husky Soccer Stadium — 1,500 capacity, artificial turf. Dedicated soccer facility on UW campus near Lake Washington.",
       "trainingFields": "2 practice fields adjacent to Husky Soccer Stadium. Husky Stadium (73,000) creates massive college athletics culture context.",
@@ -1743,7 +2714,11 @@
       "olivierMatch": "★★★ Seattle is genuinely great — real international city with tech energy and outdoor culture. UW Medicine is elite for PT/Chiro pathway. Rain is heavy and constant — climate is the one real drawback. Sounders access is a pro bonus.",
       "lifestyleTags": "Seattle city, Sounders access, rainy Pacific Northwest"
     },
-    "facilities": ["Husky Soccer Stadium", "Dempsey Indoor S&C", "UW Medicine Sports Med"],
+    "facilities": [
+      "Husky Soccer Stadium",
+      "Dempsey Indoor S&C",
+      "UW Medicine Sports Med"
+    ],
     "courses": [
       "KIN 201 — Anatomical Kinesiology",
       "KIN 302 — Exercise Physiology",
@@ -1752,30 +2727,90 @@
       "KIN 475 — Clinical Kinesiology Practicum"
     ],
     "staff": [
-      { "name": "Jamie Clark", "role": "Head Coach", "email": "jclark@uw.edu", "bg": "Head Coach. Building Washington through Big Ten transition. Seattle Sounders relationship a genuine pro pathway asset." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@uw.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Jamie Clark",
+        "role": "Head Coach",
+        "email": "jclark@uw.edu",
+        "bg": "Head Coach. Building Washington through Big Ten transition. Seattle Sounders relationship a genuine pro pathway asset."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@uw.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Seattle city lifestyle. Sounders proximity a pro soccer bonus. Rain is a genuine drawback for Olivier. Mid-range cost.",
     "url": "https://gohuskies.com/sports/mens-soccer",
     "domain": "uw.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1791,7 +2826,10 @@
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#fed7aa", "#ea580c"],
+    "color": [
+      "#fed7aa",
+      "#ea580c"
+    ],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology program — anatomy, physiology, biomechanics covered. Pre-PT pathway available.",
@@ -1828,16 +2866,48 @@
       "value": 65
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower B1G", "note": "Big Ten conference play." },
-      { "yr": 2024, "pos": "11th B1G", "note": "11th (last) in Big Ten standings." },
-      { "yr": 2023, "pos": "11th B1G", "note": "2-6-2 in B1G play — 11th in standings." },
-      { "yr": 2022, "pos": "Lower B1G", "note": "Big Ten conference play." },
-      { "yr": 2021, "pos": "Independent", "note": "Did not compete in Big Ten conference play in 2021 — played as independent." },
-      { "yr": 2020, "pos": "Lower B1G", "note": "COVID-shortened spring season." }
+      {
+        "yr": 2025,
+        "pos": "Lower B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2024,
+        "pos": "11th B1G",
+        "note": "11th (last) in Big Ten standings."
+      },
+      {
+        "yr": 2023,
+        "pos": "11th B1G",
+        "note": "2-6-2 in B1G play — 11th in standings."
+      },
+      {
+        "yr": 2022,
+        "pos": "Lower B1G",
+        "note": "Big Ten conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Independent",
+        "note": "Did not compete in Big Ten conference play in 2021 — played as independent."
+      },
+      {
+        "yr": 2020,
+        "pos": "Lower B1G",
+        "note": "COVID-shortened spring season."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
-    "devScores": { "tactical": 58, "technical": 57, "fitness": 65 },
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 57,
+      "fitness": 65
+    },
     "coach": {
       "name": "Mark Boos",
       "title": "Head Coach",
@@ -1845,7 +2915,9 @@
       "phone": "",
       "profile": "Rebuilding Illinois program in competitive Big Ten. Two 11th-place finishes signal a rebuilding phase — highest minutes opportunity in the Big Ten. Champaign-Urbana campus, flat rural Illinois."
     },
-    "tags": ["soccer"],
+    "tags": [
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Illinois Soccer and Track Stadium — 1,500 capacity, artificial turf. Modest but dedicated facility on UIUC campus.",
       "trainingFields": "2 practice surfaces on campus. Indoor facility access in winter.",
@@ -1864,7 +2936,11 @@
       "olivierMatch": "★ Lowest lifestyle fit in the Big Ten guide. Flat campus, no nearby city, brutal winters, flat Illinois landscape. The one advantage is minutes opportunity — easiest program to break into. Only relevant if that's the absolute priority.",
       "lifestyleTags": "Rural, cold, playing time focus"
     },
-    "facilities": ["Illinois Soccer and Track Stadium", "Shared S&C Facility", "Kinesiology Labs"],
+    "facilities": [
+      "Illinois Soccer and Track Stadium",
+      "Shared S&C Facility",
+      "Kinesiology Labs"
+    ],
     "courses": [
       "KIN 100 — Introduction to Kinesiology",
       "KIN 335 — Exercise Physiology",
@@ -1873,30 +2949,90 @@
       "KIN 460 — Applied Kinesiology"
     ],
     "staff": [
-      { "name": "Mark Boos", "role": "Head Coach", "email": "mboos@illinois.edu", "bg": "Head Coach. Rebuilding Illinois in the Big Ten. Two consecutive 11th-place finishes." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@illinois.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Mark Boos",
+        "role": "Head Coach",
+        "email": "mboos@illinois.edu",
+        "bg": "Head Coach. Rebuilding Illinois in the Big Ten. Two consecutive 11th-place finishes."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@illinois.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Most accessible minutes in the Big Ten. Rural flat campus — low lifestyle fit for Olivier. Main draw is playing time and lower academic bar.",
     "url": "https://fightingillini.com/sports/mens-soccer",
     "domain": "illinois.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": false
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   }
 ]

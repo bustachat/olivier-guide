@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current stable version: **v22 Stable (completed June 2026)**
+- Current stable version: **v23 Stable (completed June 2026)**
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -279,9 +279,40 @@ Five new full-profile schools added: Mercyhurst (NEC/D1), Georgian Court (CACC/D
 - `school.fitOlivier` not written back in recalculate = sort broken after mode toggle
 - Sort + Lens fighting = applySort was overriding lens order silently
 
-### Deferred to v23
-- Roster scrape for remaining schools (Clemson, UNC, Maryland, GCU, Texas A&M, Akron, Denver, Vermont, FAU, UCA, Iowa Western, UC Charleston)
-- 2025 roster refresh (separate data operation)
+### v23 Stable — June 2026
+Data verification pass, financial model correction, and coach data completion.
+
+**Data fixes in v23:**
+- CAA confRecord verified standings for 5 schools: William & Mary, Northeastern, Elon, Monmouth, Stony Brook (2020–2025)
+- Big Ten confRecord corrected: MSU 2025 10th, MSU 2021 8th, Wisconsin 2021 6th, Illinois 2021 Independent
+- Orphaned data/schools.json deleted (v15-era monolith, nothing loaded it)
+- guideVersion bumped to v23 in athletes/olivier.json
+
+**Minutes Outlook in v23:**
+- minutesOutlook populated for Santa Monica College (JUCO) and Miami Dade College (JUCO)
+- lensScores.minutes and lensScores.overall updated for both schools
+- fitOlivier updated for SMC (79→80) and MDC (78→80)
+
+**Coach data completion in v23:**
+- 6 coaches added to coaches.json: Giuseppe DePalo (MDC), Lee Avery (SMC), Matt McArthur (Nova SE), Kylie Stannard (Yale), Dustin Johnson (Chapman), Michael Erush (Cal State LA)
+- All 40 coaches re-ranked by overallScore descending
+- Cal State LA full coaching staff documented (Michael Erush + 4 assistants)
+
+**Financial model overhaul in v23:**
+- Athletic scholarship slider corrected to 0–100% (full athletic ride = 100% of COA, not capped at 50%)
+- Academic/institutional aid restructured as fixed dollar amount ($0–$30k), not a percentage
+- Scenario buttons updated: Full Ride = 100% athletic, Typical Intl = 35% + $10k institutional
+- Glossary: new "How Scholarships Work" section with equivalency explanation and D2 Florida stacking example
+- Corrected misleading internationalNote text for SMU, Wake Forest, UCLA (removed "net cost ~$14k" based on inflated 85% athletic assumption)
+
+**Tools added in v23:**
+- export_schools.py — exports all 95 schools to CSV for external review (excludes Olivier-specific fields)
+
+### Deferred to v24
+- 2025 roster scrape for remaining full-profile schools (Clemson, UNC, Maryland, GCU, Akron, Denver, Vermont, FAU, UCA, Iowa Western, UC Charleston)
+- GCU coach verification — Grok flagged "Davies Dec 2025", may be stale data
+- SMU shortlist review — fitOlivier 66, budget borderline at realistic package, may warrant removal
+- Cal State LA lensScores.minutes verification (was populated in v21, may be correct)
 - NSU DPT articulation detail (PSM to research)
 - Multi-athlete platform expansion
 - Australian connection as Fit Score variable
@@ -515,5 +546,5 @@ Always set `available: true` when populating and include all 4 trajectory year o
 
 ---
 
-*CLAUDE.md — v22 Stable — Updated June 2026*
+*CLAUDE.md — v23 Stable — Updated June 2026*
 *Multi Skilled Contractors. Do not commit changes to this file without owner approval.*

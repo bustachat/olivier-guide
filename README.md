@@ -1,6 +1,6 @@
 # Olivier — US College Soccer & Exercise Science Scholarship Guide
 
-**Version 22** | Multi Skilled Contractors × Sydney, AUS
+**Version 23** | Multi Skilled Contractors × Sydney, AUS
 
 A personalised scholarship research tool covering 97 US universities across 18 conference sections — financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, culture guides, 6-lens dynamic ranking, 2027-entry Minutes Outlook analysis, and a live Dashboard with interactive USA school map.
 
@@ -50,7 +50,8 @@ Key rules at a glance:
 
 | Version | Status | Key Changes |
 |-|-|-|
-| **v22** | ✅ Current (June 2026) | 5 new full-profile schools: Mercyhurst (NEC/D1), Georgian Court (CACC/D2), Columbia College MO (D3), Northeast CC (JUCO), Monroe College (JUCO). PT Pathway removed from scoring — Dev Score now 3 sub-scores (tactical/technical/fitness), 6-lens system. D3/JUCO split into separate conference sections. Sort/Lens/Mode redesigned as independent axes. Glossary updated. 35 coaches re-ranked. |
+| **v23** | ✅ Current (June 2026) | CAA + Big Ten confRecord verification. minutesOutlook for SMC + MDC. 6 coaches added (40 total). Financial model corrected: athletic slider 0–100%, academic aid as fixed dollars, Glossary scholarships section. Misleading internationalNote text fixed for SMU/Wake Forest/UCLA. export_schools.py tool added. |
+| **v22** | Superseded (June 2026) | 5 new full-profile schools: Mercyhurst (NEC/D1), Georgian Court (CACC/D2), Columbia College MO (D3), Northeast CC (JUCO), Monroe College (JUCO). PT Pathway removed from scoring — Dev Score now 3 sub-scores (tactical/technical/fitness), 6-lens system. D3/JUCO split into separate conference sections. Sort/Lens/Mode redesigned as independent axes. Glossary updated. 35 coaches re-ranked. |
 | **v21** | Superseded (May 28 2026) | olivier.json consolidation. Minutes Outlook expanded. Fit Score rebalancing + dual mode toggle. GPA projection slider. Shortlist status tags. Coach outreach tracker. Coaches animated pill tab navigation. |
 | **v20** | Superseded | Search box, Show/Hide All, confgroup filter chips, Pro Pipeline rank badge circles, dashboard SVG circle dots + 640×390 viewBox + hover info panel + cross-highlight. |
 | **v19** | Superseded | Complete JSON layer separation. 4 new data files. 16 render functions. acuUnits[] on all schools. 5 new schools. |

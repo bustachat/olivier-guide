@@ -2551,9 +2551,9 @@ function selectSchoolFromBar(id){
 //   NAIA: 1.25 — Olivier would be one of the better players on the roster
 //   D3:   1.1  — Overqualified for minutes, not ideal for development
 //   IVY:  0.9  — Academic culture limits playing time flexibility
-//   JUCO: 1.0  — Short-term, trajectory calibrated correctly
+//   JUCO: 1.2  — Olivier is above average at JUCO level; full roster reset means he competes vs 1 recruiting class only
 
-const MO_DIV_FACTOR = {D1:1.0, D2:1.15, NAIA:1.25, IVY:0.9, D3:1.1, JUCO:1.0};
+const MO_DIV_FACTOR = {D1:1.0, D2:1.15, NAIA:1.25, IVY:0.9, D3:1.1, JUCO:1.2};
 
 function calcMinutesScore(u, mode){
   const traj = (u.minutesOutlook||{}).trajectory || [];

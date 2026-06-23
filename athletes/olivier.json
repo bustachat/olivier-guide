@@ -2,7 +2,7 @@
   "id": "olivier",
   "name": "Olivier",
   "agentName": "Platform Sports Management",
-  "guideVersion": "v26",
+  "guideVersion": "v27",
   "position": "Central Midfielder",
   "positionCode": "CM",
   "positionRating": "8/10",
@@ -193,12 +193,12 @@
     "Transfer Pathway": 0.4
   },
   "guideTitle": "US College Soccer & Exercise Science Guide",
-  "guideSubtitle": "Olivier \u2014 Scholarship Guide",
+  "guideSubtitle": "Olivier — Scholarship Guide",
   "pathways": {
     "paths": [
       {
         "id": "path-a",
-        "label": "Path A \u2014 Aim High D1",
+        "label": "Path A — Aim High D1",
         "title": "Top D1 Target",
         "borderColor": "#c7d2fe",
         "labelColor": "var(--indigo)",
@@ -208,17 +208,17 @@
       },
       {
         "id": "path-a2",
-        "label": "Path A2 \u2014 ACC Elite",
+        "label": "Path A2 — ACC Elite",
         "title": "Reach ACC Programs",
         "borderColor": "#fca5a5",
         "labelColor": "var(--rose)",
-        "body": "Target: Clemson, Notre Dame, Maryland, Georgetown, UNC. Nation-leading MLS pipeline. Noonan (Clemson, 2\u00d7 NCAA champion), Riley (Notre Dame), Cirovski (Maryland), Wiese (Georgetown). Requires top-level highlight reel, GPA 2.8+ and a standout athletic profile. These programs recruit internationally \u2014 Platform Sports Management connections are essential to get in front of coaches.",
+        "body": "Target: Clemson, Notre Dame, Maryland, Georgetown, UNC. Nation-leading MLS pipeline. Noonan (Clemson, 2× NCAA champion), Riley (Notre Dame), Cirovski (Maryland), Wiese (Georgetown). Requires top-level highlight reel, GPA 2.8+ and a standout athletic profile. These programs recruit internationally — Platform Sports Management connections are essential to get in front of coaches.",
         "footer": "High competition for roster spots. Best-case scenario if Olivier's form peaks in 2026.",
         "footerColor": "var(--rose)"
       },
       {
         "id": "path-b",
-        "label": "Path B \u2014 Smart Fit D2",
+        "label": "Path B — Smart Fit D2",
         "title": "D2 / NAIA Best Match",
         "borderColor": "#bae6fd",
         "labelColor": "var(--sky)",
@@ -228,21 +228,21 @@
       },
       {
         "id": "path-c",
-        "label": "Path C \u2014 Ivy League",
+        "label": "Path C — Ivy League",
         "title": "Princeton / Yale",
         "borderColor": "#a7f3d0",
         "labelColor": "var(--emerald)",
-        "body": "No athletic scholarships \u2014 need-based aid only (can cover 100% of costs for qualifying families). GPA 2.8 is a barrier but improving trajectory helps. Princeton won the 2024 AND 2025 Ivy tournaments \u2014 program is surging. Jim Barlow has explicitly developed midfielders into MLS-calibre players. Elite academic-sports combination.",
-        "footer": "\u26a0 Admission is highly selective \u2014 GPA improvement to 3.5+ essential.",
+        "body": "No athletic scholarships — need-based aid only (can cover 100% of costs for qualifying families). GPA 2.8 is a barrier but improving trajectory helps. Princeton won the 2024 AND 2025 Ivy tournaments — program is surging. Jim Barlow has explicitly developed midfielders into MLS-calibre players. Elite academic-sports combination.",
+        "footer": "⚠ Admission is highly selective — GPA improvement to 3.5+ essential.",
         "footerColor": "var(--gold)"
       },
       {
         "id": "path-d",
-        "label": "Path D \u2014 JUCO Transfer",
+        "label": "Path D — JUCO Transfer",
         "title": "2yr + Transfer",
         "borderColor": "#fde68a",
         "labelColor": "var(--amber)",
-        "body": "Santa Monica College (LA) \u2192 UCLA/UCSB. Or Iowa Western (Council Bluffs) \u2192 Creighton/Iowa/D1 Midwest. 2 years at ~$9k/yr. Boost GPA, build US soccer resume. SMC is 100m from the beach \u2014 most proven transfer pipeline in California. Iowa Western has 100% MF roster turnover before 2027 \u2014 immediate starting opportunity.",
+        "body": "Santa Monica College (LA) → UCLA/UCSB. Or Iowa Western (Council Bluffs) → Creighton/Iowa/D1 Midwest. 2 years at ~$9k/yr. Boost GPA, build US soccer resume. SMC is 100m from the beach — most proven transfer pipeline in California. Iowa Western has 100% MF roster turnover before 2027 — immediate starting opportunity.",
         "footer": "Near-zero financial risk. Build to 3.3+ GPA then step up.",
         "footerColor": "var(--hint)"
       }

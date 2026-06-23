@@ -411,7 +411,7 @@ function renderCards(){
     {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
     {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
     {key:'other', divFilter:'D3',      label:'NCAA Division III',        tier:'D3',            intro:'Chapman University (Orange, CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 pre-physical therapy pathway in the guide. D3 schools offer no athletic scholarships but provide strong academics and competitive soccer.'},
-    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton — the fastest-rising JUCO program in the country. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Northeast Community College (Norfolk, NE) offers near-100% international squad culture at ~$18k/yr. Santa Monica College ($9k/yr) has the best transfer pipeline to UCLA/UCSB. All JUCO programs are 2-year transfer platforms.'},
+    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Tyler Junior College (Tyler, TX) is the #1 JUCO D1 transfer feeder nationally — all-time record for D1 placements. Daytona State College (Daytona Beach, FL) are the 2025 NJCAA DI National Championship runners-up and a top-5 D1 transfer feeder — warm Florida beach city. Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Santa Monica College ($9k/yr) has the best UCLA transfer pipeline in California. All 8 JUCO programs are 2-year transfer platforms.'},
   ];
 
   // Also include Ivy League under acc or as standalone — they are in other.json
@@ -701,6 +701,8 @@ const DOMAINS = {
   columbia_college: 'columbiacougars.com',
   northeast_cc: 'northeasthawks.com',
   monroe_college: 'monroeumustangs.com',
+  tyler_jc:     'tjc.edu',
+  daytona_state: 'daytonastate.edu',
   duke:           'goduke.com',
   ncstate:        'gopack.com',
   louisville:     'gocards.com',
@@ -797,6 +799,8 @@ const SITE_URLS = {
   columbia_college: 'https://www.ccis.edu',
   northeast_cc: 'https://www.northeast.edu',
   monroe_college: 'https://www.monroeu.edu',
+  tyler_jc:     'https://www.tjc.edu',
+  daytona_state: 'https://www.daytonastate.edu',
   duke:           'https://www.duke.edu',
   ncstate:        'https://www.ncsu.edu',
   louisville:     'https://www.louisville.edu',
@@ -905,6 +909,8 @@ const SOCIAL = {
   columbia_college: ['https://instagram.com/columbiacougarsoccer', null,                          null,                                    null],
   northeast_cc:   ['https://instagram.com/NortheastHawks',    'https://x.com/NortheastHawks',      'https://facebook.com/northeastcchawks', null],
   monroe_college: ['https://instagram.com/monroemsoc',        'https://x.com/MonroeMustangs',      'https://facebook.com/monroeathletics',  null],
+  tyler_jc:       [null,                                       null,                                null,                                    null],
+  daytona_state:  [null,                                       null,                                null,                                    null],
   duke:           ['https://instagram.com/dukemenssoccer',    'https://x.com/DukeMSOC',            'https://facebook.com/DukeMensSoccer',  'https://youtube.com/dukebluedevils'],
   ncstate:        ['https://instagram.com/ncstatemsoc',       'https://x.com/NCStateMSOC',         'https://facebook.com/NCStateSoccer',   'https://youtube.com/ncstateathletics'],
   louisville:     ['https://instagram.com/uoflmsoc',          'https://x.com/UofLMSOC',            'https://facebook.com/UofLMensSoccer',  'https://youtube.com/uoflathletics'],

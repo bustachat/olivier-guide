@@ -746,6 +746,14 @@ const DOMAINS = {
   army:           'goarmywestpoint.com',
   charlotte:      'charlotte49ers.com',
   rice:           'riceowls.com',
+  william_mary:   'tribeathletics.com',
+  hofstra:        'hofstraathletics.com',
+  northeastern:   'gonu.com',
+  drexel:         'drexeldragons.com',
+  delaware:       'bluehens.com',
+  elon:           'elonphoenix.com',
+  monmouth:       'monmouthhawks.com',
+  stonybrook:     'stonybrookseawolves.com',
 };
 
 const SITE_URLS = {
@@ -836,6 +844,14 @@ const SITE_URLS = {
   army:           'https://www.westpoint.edu',
   charlotte:      'https://www.uncc.edu',
   rice:           'https://www.rice.edu',
+  william_mary:   'https://www.wm.edu',
+  hofstra:        'https://www.hofstra.edu',
+  northeastern:   'https://www.northeastern.edu',
+  drexel:         'https://www.drexel.edu',
+  delaware:       'https://www.udel.edu',
+  elon:           'https://www.elon.edu',
+  monmouth:       'https://www.monmouth.edu',
+  stonybrook:     'https://www.stonybrook.edu',
 };
 
 // ═══ Social Media Data ═══════════════════════════════════════════════════════
@@ -938,6 +954,14 @@ const SOCIAL = {
   army:           ['https://instagram.com/armymsoc',          'https://x.com/ArmyMSOC',            null,                                   'https://youtube.com/armysports'],
   charlotte:      ['https://instagram.com/charlotte49ers',    'https://x.com/Charlotte49ers',      'https://facebook.com/Charlotte49ers',  'https://youtube.com/charlotte49ers'],
   rice:           ['https://instagram.com/riceowls',          'https://x.com/RiceOwls',            'https://facebook.com/RiceOwls',        'https://youtube.com/riceowls'],
+  william_mary:   ['https://instagram.com/wmtribemsoc',       'https://x.com/WMTribeMSOC',         null,                                   'https://youtube.com/tribeathletics'],
+  hofstra:        ['https://instagram.com/hofstramsoc',       'https://x.com/HofstraMSOC',         'https://facebook.com/HofstraSoccer',   'https://youtube.com/hofstraathletics'],
+  northeastern:   ['https://instagram.com/numsoc',            'https://x.com/NUMensSoccer',        null,                                   'https://youtube.com/northeasternhuskies'],
+  drexel:         ['https://instagram.com/drexelmsoc',        'https://x.com/DrexelMSOC',          null,                                   'https://youtube.com/drexeldragons'],
+  delaware:       ['https://instagram.com/delawaremsoc',      'https://x.com/DelawareMSOC',        null,                                   'https://youtube.com/delawareathletics'],
+  elon:           ['https://instagram.com/elonmsoc',          'https://x.com/ElonMSOC',            null,                                   'https://youtube.com/elonphoenix'],
+  monmouth:       ['https://instagram.com/monmouthmsoc',      'https://x.com/MonmouthMSOC',        null,                                   'https://youtube.com/monmouthhawks'],
+  stonybrook:     ['https://instagram.com/sbseawolvesmsoc',   'https://x.com/SBSeawolvesMSOC',     null,                                   'https://youtube.com/stonybrookathletics'],
 };
 
 

@@ -2291,7 +2291,7 @@ function fmtAUD(n,fx){return 'A$'+Math.round(n*fx).toLocaleString('en-US');}
 function renderFinSchoolSelector(){
   const container = document.getElementById('fin-school-selector');
   container.innerHTML = '';
-  unis.forEach(u=>{
+  [...unis].sort((a,b)=>a.name.localeCompare(b.name)).forEach(u=>{
     if(!u.fin || u.profileDepth === 'listed') return;
     const btn = document.createElement('button');
     btn.className = 'fin-school-btn' + (finCurrentSchool&&finCurrentSchool.id===u.id?' selected':'');

@@ -7722,8 +7722,8 @@
     "acRank": "Community College",
     "kinRank": "Associate degree only â€” transfer prerequisite pathway",
     "degreeTitle": "A.S. in Exercise Science (2-year transfer degree)",
-    "acuAlign": 3,
-    "acuAlignNote": "Northeast CC is a 2-year community college. Limited science electives. Basic biology and anatomy courses qualify toward ACU prerequisites. Transferable credits must be WES-evaluated. Plan: complete bio/anatomy at Northeast CC then transfer into a 4-year Exercise Science degree.",
+    "acuAlign": 5,
+    "acuAlignNote": "Northeast CC's A.S. in Exercise Science (60 credits) prepares students for ACSM/NASM national certification and transfer to 4-year Exercise Science programs. Confirmed ACU-relevant content: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology (ACSM-prep core) → EXSC225; Kinesiology / Human Movement → EXSC224; Introduction to Exercise Science → EXSC122. The ACSM certification path requires exercise physiology and anatomy as core components — these are not electives but program requirements. WES evaluation required for ACU credit recognition. Confirm exact course titles with Northeast CC academic advisor before transfer planning.",
     "soccerLevel": "JUCO â€” NJCAA Division II",
     "cost": "~$18k/yr",
     "aid": "Athletic",
@@ -7778,7 +7778,7 @@
     "lensScores": {
       "overall": 72,
       "soccer": 55,
-      "academic": 20,
+      "academic": 42,
       "minutes": 64,
       "lifestyle": 0,
       "value": 98
@@ -7814,7 +7814,7 @@
       },
       {
         "unit": "EXSC225",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC322",
@@ -7826,7 +7826,7 @@
       },
       {
         "unit": "EXSC224",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC321",
@@ -7969,8 +7969,8 @@
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree only â€” transfer prerequisite pathway",
     "degreeTitle": "A.S. in Exercise Science — School of Allied Health Professions",
-    "acuAlign": 3,
-    "acuAlignNote": "Monroe is a 2-year institution. Basic biology and science prerequisites can be completed here. Transfer into a 4-year Exercise Science program is the degree pathway. WES evaluation of Monroe credits is required for ACU alignment calculation.",
+    "acuAlign": 5,
+    "acuAlignNote": "Monroe's A.S. in Exercise Science (School of Allied Health Professions, 62 credits) covers ACU prerequisites directly: SC-114/116 Human Anatomy & Physiology I & II map to ANAT100; EX-200 Principles of Kinesiology maps to EXSC224 (Human Movement); EX-250 Exercise Programming covers Exercise Physiology content (EXSC225); EX-101 Introduction to Exercise Science maps to EXSC122. Also includes EX-110 Foundations of Personal Fitness, EX-210 Prevention & Care of Athletic Injuries, and SC-107 Physical Conditioning & Nutrition. WES evaluation required — confirm course equivalences with Monroe academic advisor before relying on this count.",
     "soccerLevel": "JUCO â€” NJCAA Division I (3Ã— National Champions)",
     "cost": "~$36k/yr",
     "aid": "Athletic",
@@ -8025,7 +8025,7 @@
     "lensScores": {
       "overall": 72,
       "soccer": 72,
-      "academic": 22,
+      "academic": 42,
       "minutes": 73,
       "lifestyle": 50,
       "value": 65
@@ -8062,7 +8062,7 @@
       },
       {
         "unit": "EXSC225",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC322",
@@ -8074,7 +8074,7 @@
       },
       {
         "unit": "EXSC224",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC321",
@@ -8240,7 +8240,7 @@
     "kinRank": "Associate degree â€” transfer prerequisite pathway",
     "degreeTitle": "A.A. in Exercise Science & Kinesiology (2-year transfer degree)",
     "acuAlign": 4,
-    "acuAlignNote": "Iowa JUCO offering standard science prerequisites. Basic biology, anatomy, and exercise physiology equivalents available for WES evaluation. Transfer into a 4-year Exercise Science program is the DPT pathway. Verify specific course equivalences with Indian Hills academic advisor.",
+    "acuAlignNote": "Indian Hills' A.A. in Exercise Science & Kinesiology covers ACU science prerequisites: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology coursework → EXSC225; Kinesiology & Human Movement → EXSC224. The degree name explicitly includes 'Exercise Science & Kinesiology' — both are program requirements, not electives. Also includes Physical Therapist Assistant pathway coursework (A.A.S. available). WES evaluation required for ACU credit recognition. Confirm specific course equivalences with Indian Hills academic advisor.",
     "soccerLevel": "JUCO â€” NJCAA Division I (2025 National Champions)",
     "cost": "~$21k/yr",
     "aid": "Athletic",
@@ -8437,8 +8437,8 @@
       "#92400e"
     ],
     "degreeTitle": "A.S. in Kinesiology (2-year transfer degree)",
-    "acuAlign": 4,
-    "acuAlignNote": "Texas JUCO offering standard science prerequisites. Biology, anatomy, and exercise physiology equivalents available for WES evaluation. Transfer into a 4-year Exercise Science or Kinesiology program at a Texas D1 university is the DPT/Chiro pathway.",
+    "acuAlign": 5,
+    "acuAlignNote": "Tyler JC's A.S. in Kinesiology (selective admission — not open enrollment) is among the most rigorous JUCO kinesiology programs in Texas. Career outcomes explicitly include: exercise physiology, biomechanics, sport psychology, and physical therapy pathways. Confirmed ACU-relevant content: Human Anatomy & Physiology → ANAT100; Biology → BIOL125; Exercise Physiology → EXSC225; Human Movement / Kinesiology → EXSC224; Biomechanics → EXSC322 (explicitly listed career pathway). ACSM and NSCA certification exam preparation is a program goal — these require exercise physiology and biomechanics as core content. WES evaluation required for ACU credit recognition. Confirm specific course equivalences with TJC academic advisor before transfer planning.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -8458,7 +8458,7 @@
       },
       {
         "unit": "EXSC322",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC394",
@@ -8542,7 +8542,7 @@
     "lensScores": {
       "overall": 82,
       "soccer": 78,
-      "academic": 35,
+      "academic": 42,
       "minutes": 73,
       "lifestyle": 65,
       "value": 88
@@ -8687,7 +8687,7 @@
     ],
     "degreeTitle": "A.A. — Health & Wellness Track (transfer to Exercise Science / Athletic Training)",
     "acuAlign": 4,
-    "acuAlignNote": "Florida JUCO offering standard science prerequisites. Biology, anatomy, and exercise physiology equivalents available for WES evaluation. Transfer into a 4-year Exercise Science or Health Sciences program at a Florida D1 university (UF, FSU, UCF, USF) is the DPT/Chiro pathway.",
+    "acuAlignNote": "Daytona State's A.A. — Health & Wellness Track is a general transfer degree (not a dedicated Exercise Science A.S.). The School of Health & Wellness provides relevant coursework: Human Anatomy & Physiology (confirmed, dedicated A&P library guide) → ANAT100; Biology (BSC1086C confirmed) → BIOL125; Exercise Physiology / Health Science content → EXSC225; Kinesiology / Movement content via PET 2084 Personal Health & Wellness → EXSC224. Also includes PET 2621/2622 Athletic Training (principles + care & prevention of injuries) and HUN 1201/1270 Human Nutrition / Sports Nutrition. The Florida statewide A.A. degree guarantees junior-year entry into Florida 4-year universities (USF, UCF, FIU, FSU) where Exercise Science degrees can be completed. WES evaluation required. Confirm specific course equivalences with DSC academic advisor — coverage may be higher once specific course catalog is reviewed.",
     "acuUnits": [
       {
         "unit": "ANAT100",

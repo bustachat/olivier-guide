@@ -280,12 +280,12 @@ This change type exists because degreeTitle updates and ACU alignment reviews ar
 **If acuUnits or acuAlign changed, also cascade:**
 - `lensScores.academic` — re-evaluate (acuAlign is a factor)
 - `lensScores.overall` — recalculate if academic lens changed significantly
-- `fitOlivier` — recalculate (acuAlignment = 10% of fit score)
+- `fitOlivier` — recalculate (acuAlignment = 10% of fit score) — **JUCO EXCEPTION: do NOT cascade acuAlign into fitOlivier for JUCO schools. ACU alignment is informational only for JUCOs — playing time and transfer pathway drive fitOlivier, not degree program alignment.**
 
 **Tabs to verify after changing:**
 - ACU Alignment tab — school row shows updated unit count and correct bars
 - Explore Schools → school modal → Overview tab — acuAlignNote text is accurate and degree-specific
-- Explore Schools — fitOlivier updated if acuAlign changed
+- Explore Schools — fitOlivier updated if acuAlign changed (non-JUCO only)
 
 **Common failure mode:** Generic acuAlignNote text like "2-year degree. Transfer curriculum covers biology, anatomy basics." left in place after degreeTitle is updated to a specific program. The note must name the actual degree and reference specific courses available.
 

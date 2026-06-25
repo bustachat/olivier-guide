@@ -284,7 +284,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#dbeafe", "#1e40af"],
+    "color": [
+      "#dbeafe",
+      "#1e40af"
+    ],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics covered. CHI Health and Creighton Medical have strong pre-PT placement.",
@@ -311,34 +314,71 @@
     },
     "mapX": 346,
     "mapY": 166,
-    "fitOlivier": 59,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 59,
+      "overall": 54,
       "soccer": 75,
       "academic": 62,
-      "minutes": 50,
+      "minutes": 26,
       "lifestyle": 50,
       "value": 62
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower BE", "note": "Did not qualify for Big East Tournament." },
-      { "yr": 2024, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2023, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2022, "pos": "BE Champs", "note": "2022 Big East Tournament Champions." },
-      { "yr": 2021, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2020, "pos": "Mid BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "Lower BE",
+        "note": "Did not qualify for Big East Tournament."
+      },
+      {
+        "yr": 2024,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2022,
+        "pos": "BE Champs",
+        "note": "2022 Big East Tournament Champions."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      }
     ],
-    "titles": ["Big East Champions multiple"],
-    "proPlayers": { "mlsPicks5yr": 3, "notable": [], "draftRank": "Solid Midwest pipeline" },
-    "devScores": { "tactical": 75, "technical": 73, "fitness": 76 },
+    "titles": [
+      "Big East Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [],
+      "draftRank": "Solid Midwest pipeline"
+    },
+    "devScores": {
+      "tactical": 75,
+      "technical": 73,
+      "fitness": 76
+    },
     "coach": {
-      "name": "Ted Schmitt",
+      "name": "Johnny Torres",
       "title": "Head Coach",
-      "email": "tschmitt@creighton.edu",
+      "email": "jmtorres@creighton.edu",
       "phone": "",
       "profile": "Multiple Big East titles. One of the premier programs in the conference. 2022 Big East Tournament Champions under Schmitt. Creighton consistently competes above its market in national recruiting."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Morrison Stadium — 7,500 capacity (shared soccer/football), FieldTurf, lights, permanent seating. Substantial facility for a small university.",
       "trainingFields": "Dedicated practice fields at Morrison. Indoor training facility access in winter.",
@@ -357,7 +397,11 @@
       "olivierMatch": "★★ Omaha is affordable and friendly but far from Sydney lifestyle. Low cost of living maximises aid. Cold winters, no beach, flat landscape. Best suited if value and soccer quality are the main drivers.",
       "lifestyleTags": "Affordable Omaha, Jesuit community, value play"
     },
-    "facilities": ["Morrison Stadium", "CHI Health Sports Med", "Exercise Science Labs"],
+    "facilities": [
+      "Morrison Stadium",
+      "CHI Health Sports Med",
+      "Exercise Science Labs"
+    ],
     "courses": [
       "EXS 201 — Exercise Science Foundations",
       "EXS 310 — Exercise Physiology",
@@ -366,30 +410,140 @@
       "EXS 450 — Clinical Exercise Science"
     ],
     "staff": [
-      { "name": "Ted Schmitt", "role": "Head Coach", "email": "tschmitt@creighton.edu", "bg": "Head Coach. Multiple Big East titles. Premier Big East program builder." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@creighton.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Ted Schmitt",
+        "role": "Head Coach",
+        "email": "tschmitt@creighton.edu",
+        "bg": "Head Coach. Multiple Big East titles. Premier Big East program builder."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@creighton.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Consistently strong Big East program. Omaha is a real city with low cost of living. Good value for a competitive D1 program.",
     "url": "https://gocreighton.com/sports/mens-soccer",
     "domain": "creighton.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Diego Ferruzzi",
+        "Toraji Narazaki",
+        "Allan Juarez",
+        "Edward Morales",
+        "Miguel Angel Lopez"
+      ],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Lucas Cavalcante",
+        "Ayden Kokoszka",
+        "Ange Gbe",
+        "Brady Bragg"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Carter Derksen",
+        "Carter Tavares-Roche",
+        "Mario Albert"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Breaking into rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Key player"
+        }
+      ],
+      "trajectoryNote": "5 of 12 MFs clear before Olivier arrives. 7 remain — 4 as seniors in Yr1, 3 as juniors for 2 years. Head coach is Johnny Torres (appointed 2025). Creighton has a solid Big East history with active JUCO transfer pipeline."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -405,7 +559,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#fef9c3", "#111827"],
+    "color": [
+      "#fef9c3",
+      "#111827"
+    ],
     "degreeTitle": "B.S. Health Policy and Management",
     "acuAlign": 10,
     "acuAlignNote": "Health policy and management pathway. Pre-PT advising available but less structured than kinesiology-specific programs.",
@@ -432,26 +589,58 @@
     },
     "mapX": 541,
     "mapY": 139,
-    "fitOlivier": 64,
+    "fitOlivier": 59,
     "lensScores": {
-      "overall": 64,
+      "overall": 59,
       "soccer": 65,
       "academic": 58,
-      "minutes": 50,
+      "minutes": 24,
       "lifestyle": 50,
       "value": 38
     },
     "confRecord": [
-      { "yr": 2025, "pos": "4th BE", "note": "4th seed Big East Tourn. Lost SF to Georgetown 0-2." },
-      { "yr": 2024, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2023, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2022, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2021, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2020, "pos": "Mid BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "4th BE",
+        "note": "4th seed Big East Tourn. Lost SF to Georgetown 0-2."
+      },
+      {
+        "yr": 2024,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
-    "devScores": { "tactical": 67, "technical": 65, "fitness": 70 },
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 67,
+      "technical": 65,
+      "fitness": 70
+    },
     "coach": {
       "name": "Craig Stewart",
       "title": "Head Coach",
@@ -459,7 +648,10 @@
       "phone": "",
       "profile": "Developing Providence within competitive Big East field. 2025 4th seed in Big East Tournament — best result in recent years. Providence, RI location gives Boston day-trip access and solid New England soccer culture."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Glay Field — 1,500 capacity, natural grass. Modest dedicated facility on PC campus.",
       "trainingFields": "Practice fields on campus. Indoor access in winter at Mullaney Gymnasium.",
@@ -478,7 +670,11 @@
       "olivierMatch": "★★ Providence is a nice city but the academic program is weaker for Olivier's PT pathway. Expensive for the program tier. Best if New England culture resonates and Boston access is valued.",
       "lifestyleTags": "Providence charm, Boston access, small campus"
     },
-    "facilities": ["Glay Field", "PC Athletics Weight Room", "Health Sciences Labs"],
+    "facilities": [
+      "Glay Field",
+      "PC Athletics Weight Room",
+      "Health Sciences Labs"
+    ],
     "courses": [
       "HPM 201 — Introduction to Health Sciences",
       "HPM 310 — Exercise and Health",
@@ -487,30 +683,138 @@
       "HPM 450 — Clinical Health Practicum"
     ],
     "staff": [
-      { "name": "Craig Stewart", "role": "Head Coach", "email": "cstewart@providence.edu", "bg": "Head Coach. Developing Providence in competitive Big East." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@providence.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Craig Stewart",
+        "role": "Head Coach",
+        "email": "cstewart@providence.edu",
+        "bg": "Head Coach. Developing Providence in competitive Big East."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@providence.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Small Catholic college. Providence is a real city with Boston day-trip access. Expensive for the program tier.",
     "url": "https://friars.com/sports/mens-soccer",
     "domain": "providence.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 10,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Fernando Garcia Gil",
+        "Diego Batista",
+        "Cameron Yriondo",
+        "Pearse O'Brien"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Brian Garrepy"
+      ],
+      "rising_junior_2027_count": 5,
+      "rising_junior_2027_names": [
+        "Giuseppe Ciampa",
+        "Michael Vella",
+        "Angelo Ventrella",
+        "Jeremy Munoz",
+        "Connor Winters"
+      ],
+      "recruit_risk": "Low-Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Competition with 5 rising juniors"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Building into squad"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 82,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 strong rising juniors dominate MF competition in Yr1–Yr2, departing after 2028-29. Providence had a strong 2025 (4th Big East, beat Georgetown semi). Coach Craig Stewart confirmed."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": false },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -526,7 +830,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#dbeafe", "#1e3a8a"],
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 10,
     "acuAlignNote": "Exercise science program covers core anatomy and physiology. NYC proximity (30 min) opens extensive clinical placement options for pre-PT.",
@@ -553,34 +860,69 @@
     },
     "mapX": 532,
     "mapY": 156,
-    "fitOlivier": 64,
+    "fitOlivier": 63,
     "lensScores": {
-      "overall": 64,
+      "overall": 63,
       "soccer": 62,
       "academic": 55,
-      "minutes": 50,
+      "minutes": 43,
       "lifestyle": 50,
       "value": 40
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower BE", "note": "Did not qualify for Big East Tournament." },
-      { "yr": 2024, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2023, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2022, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2021, "pos": "BE Champs", "note": "2021 Big East Tournament Champions." },
-      { "yr": 2020, "pos": "Mid BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "Lower BE",
+        "note": "Did not qualify for Big East Tournament."
+      },
+      {
+        "yr": 2024,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "BE Champs",
+        "note": "2021 Big East Tournament Champions."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
-    "devScores": { "tactical": 63, "technical": 61, "fitness": 67 },
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 63,
+      "technical": 61,
+      "fitness": 67
+    },
     "coach": {
-      "name": "Ryan Baker",
+      "name": "Andreas Lindberg",
       "title": "Head Coach",
-      "email": "rjbaker@shu.edu",
+      "email": "alindberg@shu.edu",
       "phone": "",
       "profile": "Building Seton Hall in competitive Big East field. NYC metro (30 min to Manhattan) is a genuine program differentiator — NY Red Bulls and NYCFC access for players. 2021 Big East Tournament Champions."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Owen T. Carroll Field — 1,500 capacity, artificial turf. Dedicated soccer facility on SHU campus in South Orange.",
       "trainingFields": "Practice fields at Carroll Field. Walsh Gymnasium indoor access in winter.",
@@ -599,7 +941,11 @@
       "olivierMatch": "★★ NYC access is genuine and valuable for Olivier's PT pathway. Program tier and cost-effectiveness are the main trade-offs. Best if NYC lifestyle and clinical access are priorities over program prestige.",
       "lifestyleTags": "NYC adjacent, Catholic campus, Big East basketball culture"
     },
-    "facilities": ["Owen T. Carroll Field", "SHU Athletics Weight Room", "Hackensack Meridian Health"],
+    "facilities": [
+      "Owen T. Carroll Field",
+      "SHU Athletics Weight Room",
+      "Hackensack Meridian Health"
+    ],
     "courses": [
       "EXSC 102 — Introduction to Exercise Science",
       "EXSC 300 — Exercise Physiology",
@@ -608,30 +954,135 @@
       "EXSC 440 — Clinical Practicum"
     ],
     "staff": [
-      { "name": "Ryan Baker", "role": "Head Coach", "email": "rjbaker@shu.edu", "bg": "Head Coach. Building SHU in Big East. 2021 Big East Tournament Champions." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@shu.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Ryan Baker",
+        "role": "Head Coach",
+        "email": "rjbaker@shu.edu",
+        "bg": "Head Coach. Building SHU in Big East. 2021 Big East Tournament Champions."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@shu.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "NYC proximity is the main draw — 30 min to Manhattan. Mid-tier Big East program. Expensive for the tier.",
     "url": "https://shupirates.com/sports/mens-soccer",
     "domain": "shu.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 6,
+      "cleared_names": [
+        "Til Kauschke",
+        "Nico Rubio",
+        "Hannes Ottosson",
+        "Akira Bofinger",
+        "Sivert Ryssdalsnes",
+        "Matthew Iriarte"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Sammy Sansone",
+        "Giacomo Mana"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 35,
+          "label": "Competing for minutes"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Established in squad"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Key player / captain"
+        }
+      ],
+      "trajectoryNote": "6 of 8 MFs clear before Olivier arrives — only Sansone and Mana remain as Yr1 seniors. Spring 2026 squad is very small; recruiting class will shape competition. Program in transition under new head coach Andreas Lindberg."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": false },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -647,7 +1098,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#fef9c3", "#1e3a8a"],
+    "color": [
+      "#fef9c3",
+      "#1e3a8a"
+    ],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
     "acuAlignNote": "Strong exercise science program. Indianapolis medical district nearby — IU Health and Ascension provide pre-PT clinical access.",
@@ -674,26 +1128,58 @@
     },
     "mapX": 425,
     "mapY": 173,
-    "fitOlivier": 69,
+    "fitOlivier": 64,
     "lensScores": {
-      "overall": 69,
+      "overall": 64,
       "soccer": 65,
       "academic": 62,
-      "minutes": 50,
+      "minutes": 25,
       "lifestyle": 50,
       "value": 58
     },
     "confRecord": [
-      { "yr": 2025, "pos": "3rd Midwest", "note": "3rd in Big East Midwest Division." },
-      { "yr": 2024, "pos": "Last Midwest", "note": "Last in Big East Midwest Division." },
-      { "yr": 2023, "pos": "5th Midwest", "note": "5th in Big East Midwest Division." },
-      { "yr": 2022, "pos": "4th BE", "note": "4th in Big East standings." },
-      { "yr": 2021, "pos": "6th BE", "note": "6th in Big East standings." },
-      { "yr": 2020, "pos": "Lower BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "3rd Midwest",
+        "note": "3rd in Big East Midwest Division."
+      },
+      {
+        "yr": 2024,
+        "pos": "Last Midwest",
+        "note": "Last in Big East Midwest Division."
+      },
+      {
+        "yr": 2023,
+        "pos": "5th Midwest",
+        "note": "5th in Big East Midwest Division."
+      },
+      {
+        "yr": 2022,
+        "pos": "4th BE",
+        "note": "4th in Big East standings."
+      },
+      {
+        "yr": 2021,
+        "pos": "6th BE",
+        "note": "6th in Big East standings."
+      },
+      {
+        "yr": 2020,
+        "pos": "Lower BE",
+        "note": "Big East conference play."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Developing pipeline" },
-    "devScores": { "tactical": 65, "technical": 64, "fitness": 68 },
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Developing pipeline"
+    },
+    "devScores": {
+      "tactical": 65,
+      "technical": 64,
+      "fitness": 68
+    },
     "coach": {
       "name": "Paul Snape",
       "title": "Head Coach",
@@ -701,7 +1187,10 @@
       "phone": "",
       "profile": "Small university punching above weight in the Big East. Butler's beautiful campus and Indianapolis medical district create a strong environment for pre-health athletes. IU Health and Ascension are leading clinical placement sites."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Butler Bowl — 5,000 capacity, natural grass. Beautiful setting on Butler's stunning campus.",
       "trainingFields": "Practice fields on campus. Hinkle Fieldhouse indoor access in winter.",
@@ -720,7 +1209,11 @@
       "olivierMatch": "★★★ Beautiful campus + Indianapolis city. Best Big East value for exercise science. IU Health access for PT pathway. Cold Midwest winters but the campus environment is genuinely special.",
       "lifestyleTags": "Beautiful campus, Indianapolis city, IU Health access"
     },
-    "facilities": ["Butler Bowl", "Hinkle Fieldhouse S&C", "IU Health Sports Med"],
+    "facilities": [
+      "Butler Bowl",
+      "Hinkle Fieldhouse S&C",
+      "IU Health Sports Med"
+    ],
     "courses": [
       "ES 150 — Introduction to Exercise Science",
       "ES 302 — Exercise Physiology",
@@ -729,30 +1222,137 @@
       "ES 475 — Clinical Exercise Science"
     ],
     "staff": [
-      { "name": "Paul Snape", "role": "Head Coach", "email": "psnape@butler.edu", "bg": "Head Coach. Building Butler's Big East standing with a beautiful campus advantage." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@butler.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Paul Snape",
+        "role": "Head Coach",
+        "email": "psnape@butler.edu",
+        "bg": "Head Coach. Building Butler's Big East standing with a beautiful campus advantage."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@butler.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Beautiful small campus in Indianapolis. Good value for a Big East program. Indianapolis medical district for pre-PT clinical access.",
     "url": "https://butlersports.com/sports/mens-soccer",
     "domain": "butler.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Haato Efune",
+        "Jaden Hancock"
+      ],
+      "rising_senior_2027_count": 6,
+      "rising_senior_2027_names": [
+        "Luca Raso",
+        "Nacho de Miguel",
+        "Charlie Hosier",
+        "Kai Pope",
+        "Max Klein",
+        "Braden Benyr"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Alec Sexton"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Deep competition — 6 senior MFs"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Major Yr2 opening — seniors depart"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 82,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "Only 2 MFs clear before arrival, BUT 6 are rising seniors who all depart after Yr1 — creating a major opening in Yr2. Butler is Big East mid-lower tier. IU Health clinical access is the academic draw."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -768,7 +1368,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#fef9c3", "#1e40af"],
+    "color": [
+      "#fef9c3",
+      "#1e40af"
+    ],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 10,
     "acuAlignNote": "Exercise science covers anatomy, physiology, biomechanics. Xavier's pre-health advising connects to Cincinnati medical district clinical options.",
@@ -795,34 +1398,69 @@
     },
     "mapX": 461,
     "mapY": 176,
-    "fitOlivier": 68,
+    "fitOlivier": 64,
     "lensScores": {
-      "overall": 68,
+      "overall": 64,
       "soccer": 62,
       "academic": 58,
-      "minutes": 50,
+      "minutes": 31,
       "lifestyle": 50,
       "value": 55
     },
     "confRecord": [
-      { "yr": 2025, "pos": "4th Midwest", "note": "4th in Big East Midwest Division." },
-      { "yr": 2024, "pos": "5th Midwest", "note": "5th in Big East Midwest Division." },
-      { "yr": 2023, "pos": "1st Midwest", "note": "1st in Big East Midwest Division — Big East Tournament run." },
-      { "yr": 2022, "pos": "3rd BE", "note": "3rd in Big East standings." },
-      { "yr": 2021, "pos": "9th BE", "note": "9th in Big East standings." },
-      { "yr": 2020, "pos": "Lower BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "4th Midwest",
+        "note": "4th in Big East Midwest Division."
+      },
+      {
+        "yr": 2024,
+        "pos": "5th Midwest",
+        "note": "5th in Big East Midwest Division."
+      },
+      {
+        "yr": 2023,
+        "pos": "1st Midwest",
+        "note": "1st in Big East Midwest Division — Big East Tournament run."
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd BE",
+        "note": "3rd in Big East standings."
+      },
+      {
+        "yr": 2021,
+        "pos": "9th BE",
+        "note": "9th in Big East standings."
+      },
+      {
+        "yr": 2020,
+        "pos": "Lower BE",
+        "note": "Big East conference play."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
-    "devScores": { "tactical": 63, "technical": 61, "fitness": 65 },
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 63,
+      "technical": 61,
+      "fitness": 65
+    },
     "coach": {
-      "name": "Nate Winding",
+      "name": "John Higgins",
       "title": "Head Coach",
-      "email": "windingn@xavier.edu",
+      "email": "jhiggins@xavier.edu",
       "phone": "",
       "profile": "Developing Xavier program in competitive Big East. Won Big East Midwest Division in 2023. FC Cincinnati MLS relationship for local pro soccer access."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Corcoran Field — 1,000 capacity, natural grass. Dedicated soccer on Xavier campus.",
       "trainingFields": "Practice fields on campus. Cintas Center indoor access in winter.",
@@ -841,7 +1479,11 @@
       "olivierMatch": "★★★ Cincinnati is better than most expect — FC Cincinnati MLS is genuinely cool. Cincinnati Children's Hospital research proximity. Cold winters. Exercise science program adequate but not elite.",
       "lifestyleTags": "FC Cincinnati access, Cincinnati city, Jesuit community"
     },
-    "facilities": ["Corcoran Field", "Xavier Athletics Weight Room", "UC Health Sports Med"],
+    "facilities": [
+      "Corcoran Field",
+      "Xavier Athletics Weight Room",
+      "UC Health Sports Med"
+    ],
     "courses": [
       "EXSC 201 — Introduction to Exercise Science",
       "EXSC 305 — Exercise Physiology",
@@ -850,30 +1492,137 @@
       "EXSC 450 — Clinical Exercise Practicum"
     ],
     "staff": [
-      { "name": "Nate Winding", "role": "Head Coach", "email": "windingn@xavier.edu", "bg": "Head Coach. Developing Xavier in Big East. FC Cincinnati relationship." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@xavier.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Nate Winding",
+        "role": "Head Coach",
+        "email": "windingn@xavier.edu",
+        "bg": "Head Coach. Developing Xavier in Big East. FC Cincinnati relationship."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@xavier.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Small Jesuit university in Cincinnati. FC Cincinnati proximity is a pro soccer bonus. Mid-tier Big East program.",
     "url": "https://goxavier.com/sports/mens-soccer",
     "domain": "xavier.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Efraims Valutadatils",
+        "Nathan Trickett",
+        "Fred Cotta",
+        "Immanuel Wayoro",
+        "Alejandro Silvestrini"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Ryan D'urso",
+        "Johnny Gourley"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Julian Fitzgerald",
+        "Beckham Williams"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Competing for rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Building into squad"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 62,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 82,
+          "label": "Key player"
+        }
+      ],
+      "trajectoryNote": "5 of 9 MFs clear. Xavier is lower-half Big East but won Midwest Division in 2023. FC Cincinnati MLS (10 min from campus) is a program asset. Head coach confirmed: John Higgins."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": false },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -889,7 +1638,10 @@
     "warm": false,
     "city": false,
     "top": false,
-    "color": ["#dbeafe", "#1e3a8a"],
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
     "degreeTitle": "B.S. Kinesiology",
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics. UConn Health Center provides strong pre-PT clinical pathway.",
@@ -916,34 +1668,70 @@
     },
     "mapX": 538,
     "mapY": 146,
-    "fitOlivier": 65,
+    "fitOlivier": 59,
     "lensScores": {
-      "overall": 65,
+      "overall": 59,
       "soccer": 70,
       "academic": 60,
-      "minutes": 50,
+      "minutes": 19,
       "lifestyle": 0,
       "value": 65
     },
     "confRecord": [
-      { "yr": 2025, "pos": "3rd BE", "note": "3rd seed Big East Tourn. Reached final, lost to Georgetown 1-3." },
-      { "yr": 2024, "pos": "Top BE", "note": "Top Big East seed. NCAA Tournament." },
-      { "yr": 2023, "pos": "Top BE", "note": "Big East regular season title. NCAA Tournament." },
-      { "yr": 2022, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2021, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2020, "pos": "Mid BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "3rd BE",
+        "note": "3rd seed Big East Tourn. Reached final, lost to Georgetown 1-3."
+      },
+      {
+        "yr": 2024,
+        "pos": "Top BE",
+        "note": "Top Big East seed. NCAA Tournament."
+      },
+      {
+        "yr": 2023,
+        "pos": "Top BE",
+        "note": "Big East regular season title. NCAA Tournament."
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      }
     ],
-    "titles": ["Big East Champions multiple"],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Solid New England pipeline" },
-    "devScores": { "tactical": 73, "technical": 71, "fitness": 75 },
+    "titles": [
+      "Big East Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Solid New England pipeline"
+    },
+    "devScores": {
+      "tactical": 73,
+      "technical": 71,
+      "fitness": 75
+    },
     "coach": {
-      "name": "Ray Reid",
+      "name": "Chris Gbandi",
       "title": "Head Coach",
-      "email": "rreid@uconn.edu",
+      "email": "christopher.gbandi@uconn.edu",
       "phone": "",
       "profile": "Legendary UConn coach with multiple Big East titles and NCAA tournament appearances. Reached 2025 Big East Final before losing to Georgetown 1-3. Consistently top-3 in the Big East. UConn Health integration for pre-PT pathway."
     },
-    "tags": ["soccer"],
+    "tags": [
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Joseph J. DeLuca Field — 3,000 capacity, natural grass. Dedicated soccer venue on UConn's Storrs campus.",
       "trainingFields": "2 dedicated practice fields adjacent to DeLuca. Indoor facility at Olympic Sports Center in winter.",
@@ -962,7 +1750,11 @@
       "olivierMatch": "★★ Isolated rural campus, cold Connecticut winters. Strong soccer program (top-3 Big East). UConn Health for PT pathway is solid. Best if program quality and value are primary drivers over lifestyle.",
       "lifestyleTags": "Rural New England, Big East soccer, Husky athletics"
     },
-    "facilities": ["Joseph J. DeLuca Field", "UConn Olympic Sports Center", "UConn Health Sports Med"],
+    "facilities": [
+      "Joseph J. DeLuca Field",
+      "UConn Olympic Sports Center",
+      "UConn Health Sports Med"
+    ],
     "courses": [
       "KINE 3200 — Exercise Physiology",
       "KINE 3300 — Biomechanics",
@@ -971,30 +1763,136 @@
       "KINE 4500 — Clinical Kinesiology"
     ],
     "staff": [
-      { "name": "Ray Reid", "role": "Head Coach", "email": "rreid@uconn.edu", "bg": "Head Coach. Legendary UConn coach. Consistent Big East top-3." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@uconn.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Ray Reid",
+        "role": "Head Coach",
+        "email": "rreid@uconn.edu",
+        "bg": "Head Coach. Legendary UConn coach. Consistent Big East top-3."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@uconn.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Historically strong program. Rural Storrs campus is the main drawback — isolated location in Connecticut.",
     "url": "https://uconnhuskies.com/sports/mens-soccer",
     "domain": "uconn.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Max Gummesson",
+        "Nicolas Tomerius",
+        "Aidan Sheppela"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Matias Paredes",
+        "Mateo DePinho"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Xavier Perez",
+        "Preston Alessio",
+        "Jack Ryan"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development — deep, elite squad"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 25,
+          "label": "Breaking into rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely regular"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Key player"
+        }
+      ],
+      "trajectoryNote": "UConn reached the 2025 Big East Final (lost to Georgetown 1–3). 5 MFs remain on arrival plus strong incoming recruits. Yr3 is the realistic starting point. Head coach confirmed: Chris Gbandi."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1010,7 +1908,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#dbeafe", "#dc2626"],
+    "color": [
+      "#dbeafe",
+      "#dc2626"
+    ],
     "degreeTitle": "B.S. Health Sciences",
     "acuAlign": 11,
     "acuAlignNote": "Health Sciences pathway covers anatomy, physiology, nutrition. Chicago medical district provides outstanding pre-PT clinical access.",
@@ -1037,26 +1938,58 @@
     },
     "mapX": 420,
     "mapY": 150,
-    "fitOlivier": 69,
+    "fitOlivier": 68,
     "lensScores": {
-      "overall": 69,
+      "overall": 68,
       "soccer": 62,
       "academic": 60,
-      "minutes": 50,
+      "minutes": 47,
       "lifestyle": 50,
       "value": 55
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Last Midwest", "note": "6th/last in Big East Midwest Division." },
-      { "yr": 2024, "pos": "3rd Midwest", "note": "3rd in Big East Midwest Division." },
-      { "yr": 2023, "pos": "Last Midwest", "note": "6th/last in Big East Midwest Division." },
-      { "yr": 2022, "pos": "9th BE", "note": "9th in Big East standings." },
-      { "yr": 2021, "pos": "8th BE", "note": "8th in Big East standings." },
-      { "yr": 2020, "pos": "Lower BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "Last Midwest",
+        "note": "6th/last in Big East Midwest Division."
+      },
+      {
+        "yr": 2024,
+        "pos": "3rd Midwest",
+        "note": "3rd in Big East Midwest Division."
+      },
+      {
+        "yr": 2023,
+        "pos": "Last Midwest",
+        "note": "6th/last in Big East Midwest Division."
+      },
+      {
+        "yr": 2022,
+        "pos": "9th BE",
+        "note": "9th in Big East standings."
+      },
+      {
+        "yr": 2021,
+        "pos": "8th BE",
+        "note": "8th in Big East standings."
+      },
+      {
+        "yr": 2020,
+        "pos": "Lower BE",
+        "note": "Big East conference play."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Chicago Fire proximity a development pathway" },
-    "devScores": { "tactical": 60, "technical": 58, "fitness": 63 },
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Chicago Fire proximity a development pathway"
+    },
+    "devScores": {
+      "tactical": 60,
+      "technical": 58,
+      "fitness": 63
+    },
     "coach": {
       "name": "Mark Plotkin",
       "title": "Head Coach",
@@ -1064,7 +1997,10 @@
       "phone": "",
       "profile": "Building DePaul in competitive Big East. Chicago location is the program's strongest asset — Chicago Fire MLS access, Lurie Children's Hospital, Rush University Medical Center proximity. Two last-place Midwest finishes signal a program needing development."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Wish Field (Lincoln Park Campus) — dedicated soccer field. DePaul plays in downtown Chicago Lincoln Park neighbourhood.",
       "trainingFields": "Training at Wish Field and Chicago area facilities. Indoor access at DePaul's Ray Meyer Fitness Center.",
@@ -1083,7 +2019,11 @@
       "olivierMatch": "★★★★ Best lifestyle of any Big East program for Olivier — Chicago is genuinely close to Sydney energy in terms of world-class city experience. Rush Medical for PT pathway. Soccer program is weakest in the conference — that is the real trade-off.",
       "lifestyleTags": "Chicago city, Lincoln Park, world-class lifestyle"
     },
-    "facilities": ["Wish Field (Lincoln Park)", "Ray Meyer Fitness Center", "Rush University Medical"],
+    "facilities": [
+      "Wish Field (Lincoln Park)",
+      "Ray Meyer Fitness Center",
+      "Rush University Medical"
+    ],
     "courses": [
       "HLT 220 — Health Science Foundations",
       "HLT 310 — Exercise Physiology",
@@ -1092,30 +2032,135 @@
       "HLT 460 — Clinical Health Practicum"
     ],
     "staff": [
-      { "name": "Mark Plotkin", "role": "Head Coach", "email": "mplotkin@depaul.edu", "bg": "Head Coach. Building DePaul in Big East with Chicago as the strongest program asset." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@depaul.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Mark Plotkin",
+        "role": "Head Coach",
+        "email": "mplotkin@depaul.edu",
+        "bg": "Head Coach. Building DePaul in Big East with Chicago as the strongest program asset."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@depaul.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Chicago city life is the main appeal — strongest lifestyle score in this Big East batch. Weakest soccer in the conference but best location for Olivier.",
     "url": "https://depaulbluedemons.com/sports/mens-soccer",
     "domain": "depaul.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Eli Wachs",
+        "Max Padua",
+        "Noeh Hernandez",
+        "Chase Stegall",
+        "Jordan Clagette"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Ronan Selbo",
+        "Tyler Flowers",
+        "Nathan Laird"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low-Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 40,
+          "label": "Competing from arrival"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 58,
+          "label": "Established starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 72,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain / key player"
+        }
+      ],
+      "trajectoryNote": "Best minutes opportunity in the Big East — 5 of 8 MFs clear. Only 3 senior MFs remain in Yr1 then depart. DePaul is weakest Big East Midwest program (last place twice). Chicago Lincoln Park location is the main draw. Olivier at A-League U18 level can compete immediately."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1131,7 +2176,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#dbeafe", "#2563eb"],
+    "color": [
+      "#dbeafe",
+      "#2563eb"
+    ],
     "degreeTitle": "B.S. Human Services / Exercise Science",
     "acuAlign": 11,
     "acuAlignNote": "Exercise science and human services pathways. Philadelphia medical district (30 min) for pre-PT clinical access.",
@@ -1158,26 +2206,58 @@
     },
     "mapX": 522,
     "mapY": 160,
-    "fitOlivier": 55,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 55,
+      "overall": 52,
       "soccer": 62,
       "academic": 65,
-      "minutes": 50,
+      "minutes": 36,
       "lifestyle": 50,
       "value": 38
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Last East", "note": "6th/last in Big East East Division." },
-      { "yr": 2024, "pos": "Last East", "note": "6th/last in Big East East Division." },
-      { "yr": 2023, "pos": "Last East", "note": "6th/last in Big East East Division." },
-      { "yr": 2022, "pos": "10th BE", "note": "10th in Big East standings." },
-      { "yr": 2021, "pos": "4th BE", "note": "4th in Big East standings." },
-      { "yr": 2020, "pos": "Lower BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "Last East",
+        "note": "6th/last in Big East East Division."
+      },
+      {
+        "yr": 2024,
+        "pos": "Last East",
+        "note": "6th/last in Big East East Division."
+      },
+      {
+        "yr": 2023,
+        "pos": "Last East",
+        "note": "6th/last in Big East East Division."
+      },
+      {
+        "yr": 2022,
+        "pos": "10th BE",
+        "note": "10th in Big East standings."
+      },
+      {
+        "yr": 2021,
+        "pos": "4th BE",
+        "note": "4th in Big East standings."
+      },
+      {
+        "yr": 2020,
+        "pos": "Lower BE",
+        "note": "Big East conference play."
+      }
     ],
     "titles": [],
-    "proPlayers": { "mlsPicks5yr": 1, "notable": [], "draftRank": "Limited pipeline" },
-    "devScores": { "tactical": 60, "technical": 59, "fitness": 64 },
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [],
+      "draftRank": "Limited pipeline"
+    },
+    "devScores": {
+      "tactical": 60,
+      "technical": 59,
+      "fitness": 64
+    },
     "coach": {
       "name": "Tom Carlin",
       "title": "Head Coach",
@@ -1185,7 +2265,10 @@
       "phone": "",
       "profile": "Developing Villanova within competitive Big East environment. Three consecutive last-place East Division finishes signal a program in transition. Philadelphia medical district (Jefferson Health, Penn Medicine, CHOP) creates strong pre-PT clinical access."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Villanova Soccer Complex — dedicated facility on Main Line campus. 1,500 capacity, natural grass.",
       "trainingFields": "Practice fields at Villanova Soccer Complex. Pavilion indoor facility access in winter.",
@@ -1204,7 +2287,11 @@
       "olivierMatch": "★★★ Villanova is prestigious and Philadelphia Medical is elite for PT pathway. Soccer is in transition — lowest Big East program tier. Very expensive. Best if academic prestige, CHOP/Penn Medicine clinical access, and Philadelphia lifestyle are priorities.",
       "lifestyleTags": "Main Line prestige, Philadelphia access, CHOP clinical"
     },
-    "facilities": ["Villanova Soccer Complex", "Pavilion S&C", "Jefferson Health Sports Med"],
+    "facilities": [
+      "Villanova Soccer Complex",
+      "Pavilion S&C",
+      "Jefferson Health Sports Med"
+    ],
     "courses": [
       "EXSC 1400 — Foundations of Exercise Science",
       "EXSC 3200 — Exercise Physiology",
@@ -1213,30 +2300,136 @@
       "EXSC 4600 — Clinical Practicum"
     ],
     "staff": [
-      { "name": "Tom Carlin", "role": "Head Coach", "email": "tcarlin@villanova.edu", "bg": "Head Coach. Developing Villanova program. Philadelphia medical district access is the key academic draw." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@villanova.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Tom Carlin",
+        "role": "Head Coach",
+        "email": "tcarlin@villanova.edu",
+        "bg": "Head Coach. Developing Villanova program. Philadelphia medical district access is the key academic draw."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@villanova.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Prestigious small Catholic university. Philadelphia suburb with strong Main Line culture. Expensive for the program tier.",
     "url": "https://villanova.com/sports/mens-soccer",
     "domain": "villanova.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Marcello Mazzola",
+        "Josh Oladele",
+        "Michael teDuits",
+        "Mikhail Zaretser"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Karson Vazquez"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Gleb Bogdanov",
+        "Matthew Klann",
+        "Josh Rairick"
+      ],
+      "recruit_risk": "Low-Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Competing for minutes"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 45,
+          "label": "Pushing into squad"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 82,
+          "label": "Key player"
+        }
+      ],
+      "trajectoryNote": "3 consecutive last-place East Division finishes mean competition quality is lower. 4 MFs clear. 3 rising juniors provide 2 years of competition before departing. Philadelphia medical district (CHOP, Penn Medicine) is the academic draw despite weak soccer."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   },
   {
@@ -1252,7 +2445,10 @@
     "warm": false,
     "city": true,
     "top": false,
-    "color": ["#fef9c3", "#1d4ed8"],
+    "color": [
+      "#fef9c3",
+      "#1d4ed8"
+    ],
     "degreeTitle": "B.S. Exercise Science",
     "acuAlign": 11,
     "acuAlignNote": "Exercise Science covers anatomy, physiology, biomechanics. Froedtert & Medical College of Wisconsin provides pre-PT clinical access.",
@@ -1279,34 +2475,71 @@
     },
     "mapX": 413,
     "mapY": 140,
-    "fitOlivier": 69,
+    "fitOlivier": 65,
     "lensScores": {
-      "overall": 69,
+      "overall": 65,
       "soccer": 72,
       "academic": 60,
-      "minutes": 50,
+      "minutes": 31,
       "lifestyle": 55,
       "value": 65
     },
     "confRecord": [
-      { "yr": 2025, "pos": "Lower BE", "note": "Lost to Villanova 0-1 on final day." },
-      { "yr": 2024, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2023, "pos": "Mid BE", "note": "Big East conference play. NCAA Tournament history." },
-      { "yr": 2022, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2021, "pos": "Mid BE", "note": "Big East conference play." },
-      { "yr": 2020, "pos": "Mid BE", "note": "Big East conference play." }
+      {
+        "yr": 2025,
+        "pos": "Lower BE",
+        "note": "Lost to Villanova 0-1 on final day."
+      },
+      {
+        "yr": 2024,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid BE",
+        "note": "Big East conference play. NCAA Tournament history."
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "Mid BE",
+        "note": "Big East conference play."
+      }
     ],
-    "titles": ["Big East Champions multiple"],
-    "proPlayers": { "mlsPicks5yr": 2, "notable": [], "draftRank": "Consistent Midwest pipeline" },
-    "devScores": { "tactical": 70, "technical": 68, "fitness": 73 },
+    "titles": [
+      "Big East Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Consistent Midwest pipeline"
+    },
+    "devScores": {
+      "tactical": 70,
+      "technical": 68,
+      "fitness": 73
+    },
     "coach": {
-      "name": "Ami Bhatt",
+      "name": "David Korn",
       "title": "Head Coach",
-      "email": "abhatt@marquette.edu",
+      "email": "david.korn@marquette.edu",
       "phone": "",
       "profile": "Ami Bhatt has built Marquette into a consistent Big East mid-table competitor with multiple conference titles. His program consistently punches above its size. Froedtert & Medical College of Wisconsin partnership provides pre-PT clinical access unique in the Big East. Milwaukee city environment with strong Jesuit academic culture."
     },
-    "tags": ["city", "soccer"],
+    "tags": [
+      "city",
+      "soccer"
+    ],
     "facilityDetails": {
       "stadium": "Valley Fields — dedicated soccer stadium, natural grass. 3,500 capacity.",
       "trainingFields": "Valley Fields training pitch complex. Indoor access at Al McGuire Center in winter.",
@@ -1325,7 +2558,11 @@
       "olivierMatch": "★★★ Marquette is the most balanced Big East option below the elite tier. Solid soccer (real minutes), Froedtert/MCW clinical access, Jesuit degree value, and moderate cost all align well. Cold winters are the main trade-off vs Olivier's warm-climate preference.",
       "lifestyleTags": "Milwaukee city, Froedtert clinical, Jesuit culture"
     },
-    "facilities": ["Valley Fields", "Froedtert Health Sports Med", "MCW Pre-PT Access"],
+    "facilities": [
+      "Valley Fields",
+      "Froedtert Health Sports Med",
+      "MCW Pre-PT Access"
+    ],
     "courses": [
       "EXSC 2000 — Introduction to Exercise Science",
       "EXSC 3100 — Exercise Physiology",
@@ -1334,30 +2571,135 @@
       "EXSC 4500 — Clinical Practicum"
     ],
     "staff": [
-      { "name": "Ami Bhatt", "role": "Head Coach", "email": "abhatt@marquette.edu", "bg": "Head Coach. Multiple Big East titles. Program consistently mid-table in Big East." },
-      { "name": "Assistant Coach", "role": "Assistant Coach", "email": "msoccer@marquette.edu", "bg": "Full-time assistant." }
+      {
+        "name": "Ami Bhatt",
+        "role": "Head Coach",
+        "email": "abhatt@marquette.edu",
+        "bg": "Head Coach. Multiple Big East titles. Program consistently mid-table in Big East."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@marquette.edu",
+        "bg": "Full-time assistant."
+      }
     ],
     "rec": "Solid Big East program in Milwaukee. Consistent tournament contender. Cold winters but real city life and Froedtert Health clinical access.",
     "url": "https://gomarquette.com/sports/mens-soccer",
     "domain": "marquette.edu",
-    "minutesOutlook": { "available": false },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Mateo Stoka",
+        "David Siemionko",
+        "Jonathan Monreal-Herrera",
+        "Clayton Hamler",
+        "Hudson Torrez"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Rio Pehar",
+        "Enkido Hacka",
+        "Liam Cahill"
+      ],
+      "recruit_risk": "Medium-High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Competing with junior class"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Building into squad"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 62,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 82,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 of 8 MFs cleared — no rising seniors in Yr1, only 3 juniors from 2025-26 Fr. class. Marquette will recruit actively (Medium-High risk). Program note: Tristan Ronnestad-Stevens (Perth, AUS) on 2025-26 squad — Australian presence established. Head coach confirmed: David Korn. Froedtert/MCW clinical access is the pre-PT draw."
+    },
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": true },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": true },
-      { "unit": "EXSC321", "covered": true },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": true },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": true },
-      { "unit": "EXSC122", "covered": true },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ]
   }
 ]

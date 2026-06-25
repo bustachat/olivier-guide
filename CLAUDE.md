@@ -122,7 +122,7 @@ The tabs column is what gets missed most often. Check every tab listed.
 |---|---|
 | `data/[conf].json` — coach{} object | name, title, email, phone, profile — all fields |
 | `data/coaches.json` — matching entry | Must stay in sync with conf JSON — this is the source for the Coaches tab |
-| Re-rank ALL coaches if overallScore changed | Rank gaps break the Rankings display |
+| Re-rank ALL coaches — always, no exceptions | Any coach change (name, score, or details) triggers a re-rank. Rank gaps break Rankings display. |
 
 **Tabs to verify after changing:**
 - Coaches & Staff → Rankings — name, rank, score badge correct

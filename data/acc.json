@@ -904,12 +904,12 @@
     },
     "mapX": 502,
     "mapY": 205,
-    "fitOlivier": 42,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 42,
+      "overall": 49,
       "soccer": 85,
       "academic": 90,
-      "minutes": 50,
+      "minutes": 33,
       "lifestyle": 0,
       "value": 32
     },
@@ -1007,7 +1007,42 @@
       "note": "The combination of Koskinen Stadium's standard and Duke Health's clinical access makes this one of the best pre-PT environments in the ACC â€” despite being a specialist soccer program within a primarily basketball-identified athletic department."
     },
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 15,
+      "cleared_before_2027": 7,
+      "cleared_names": [],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 6,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "7 of 15 cleared, but 6 Fr remain as Jrs competing directly with Olivier through Yr1-2. Duke recruits elite midfielders every cycle — squad competition is very high. Roster count verified by browser; names not captured."
     },
     "staff": [],
     "acuUnits": [
@@ -1120,12 +1155,12 @@
     },
     "mapX": 503,
     "mapY": 212,
-    "fitOlivier": 69,
+    "fitOlivier": 80,
     "lensScores": {
-      "overall": 69,
+      "overall": 80,
       "soccer": 70,
       "academic": 60,
-      "minutes": 50,
+      "minutes": 57,
       "lifestyle": 50,
       "value": 65
     },
@@ -1219,7 +1254,42 @@
       "note": "NC State's best asset for Olivier is the city. Raleigh is growing rapidly, affordable, and increasingly vibrant. Athletic facilities are solid for ACC competition; the academic-pre-PT environment is strong for a public research university."
     },
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 7,
+      "cleared_before_2027": 5,
+      "cleared_names": [],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Key player"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 of 7 MFs cleared — near-complete midfield rebuild. Only 2 remain by 2027. Heavy recruiting expected. Roster count verified by browser MCP; names not captured."
     },
     "staff": [],
     "acuUnits": [
@@ -1332,12 +1402,12 @@
     },
     "mapX": 431,
     "mapY": 198,
-    "fitOlivier": 78,
+    "fitOlivier": 89,
     "lensScores": {
-      "overall": 78,
+      "overall": 89,
       "soccer": 70,
       "academic": 55,
-      "minutes": 50,
+      "minutes": 57,
       "lifestyle": 62,
       "value": 72
     },
@@ -1432,7 +1502,42 @@
       "note": "Lynn Stadium and UofL Health together make Louisville a genuine proposition â€” especially at the lowest COA in the ACC and with a GPA bar Olivier can meet."
     },
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 6,
+      "cleared_names": [],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Key player"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "6 of 9 MFs cleared before 2027. Strong opportunity for an ACC program — 2 rising juniors provide peer competition. Roster count verified; names not captured."
     },
     "staff": [],
     "acuUnits": [
@@ -1545,12 +1650,12 @@
     },
     "mapX": 495,
     "mapY": 156,
-    "fitOlivier": 69,
+    "fitOlivier": 80,
     "lensScores": {
-      "overall": 69,
+      "overall": 80,
       "soccer": 68,
       "academic": 65,
-      "minutes": 50,
+      "minutes": 57,
       "lifestyle": 50,
       "value": 55
     },
@@ -1645,7 +1750,42 @@
       "note": "UPMC is legitimately world-class for sports medicine â€” it's the single strongest argument for any school in the guide. Combined with Ambrose Urbanic Field's quality, Pitt's development environment significantly outperforms its current ACC standing."
     },
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 5,
+      "cleared_before_2027": 4,
+      "cleared_names": [],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Key player"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "4 of 5 MFs cleared — near-complete rebuild. Only 1 So remains as Sr in Yr1. Pitt will recruit heavily to fill midfield depth. Roster count verified; names not captured."
     },
     "staff": [],
     "acuUnits": [
@@ -1758,12 +1898,12 @@
     },
     "mapX": 70,
     "mapY": 179,
-    "fitOlivier": 47,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 47,
+      "overall": 52,
       "soccer": 88,
       "academic": 95,
-      "minutes": 50,
+      "minutes": 26,
       "lifestyle": 50,
       "value": 35
     },
@@ -1864,7 +2004,53 @@
       "note": "Stanford's combination of elite soccer tradition, California lifestyle, world-class research infrastructure, and Stanford Medical Center access represents the peak of what this guide covers in every category simultaneously."
     },
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "TJ Kahoalii",
+        "Trevor Islam"
+      ],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Tim Logan",
+        "Victor Fung",
+        "Aidan Reilly",
+        "Dillon Logan"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Yujin Kikuchi",
+        "Logan Tsopanoglou"
+      ],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Development squad"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "Only 2 MFs clear (Kahoalii Jr, Islam R-Jr). 4 So compete as Srs in Yr1 — midfield is congested. Stanford's elite recruiting cycle maintains perpetual competition."
     },
     "staff": [],
     "acuUnits": [
@@ -1977,12 +2163,12 @@
     },
     "mapX": 518,
     "mapY": 139,
-    "fitOlivier": 61,
+    "fitOlivier": 66,
     "lensScores": {
-      "overall": 61,
+      "overall": 66,
       "soccer": 68,
       "academic": 62,
-      "minutes": 50,
+      "minutes": 24,
       "lifestyle": 0,
       "value": 42
     },
@@ -2079,7 +2265,42 @@
       "note": "The 2022 NCAA Championship validates program quality. The SU Soccer Stadium's intimate atmosphere and Falk College's academic reputation make this a well-rounded D1 program â€” climate is the single Olivier-specific concern."
     },
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 10,
+      "cleared_before_2027": 1,
+      "cleared_names": [],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 5,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Development squad"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 25,
+          "label": "Development squad"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "Only 1 MF clears before 2027. 4 So and 5 Fr remain — midfield extremely crowded in Yr1-2. Patience required; Yr3 breakthrough as seniors clear. Roster count verified; names not captured."
     },
     "staff": [],
     "acuUnits": [
@@ -2192,12 +2413,12 @@
     },
     "mapX": 67,
     "mapY": 176,
-    "fitOlivier": 60,
+    "fitOlivier": 69,
     "lensScores": {
-      "overall": 60,
+      "overall": 69,
       "soccer": 72,
       "academic": 88,
-      "minutes": 50,
+      "minutes": 47,
       "lifestyle": 72,
       "value": 52
     },
@@ -2294,7 +2515,57 @@
       "note": "Goldman Field's setting inside historic Edwards Stadium is architecturally distinctive. The Bay Area location and UCSF clinical connection make Cal one of the most lifestyle-positive and clinically-advantaged options in the entire guide for a pre-PT student."
     },
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 9,
+      "cleared_names": [
+        "Gaku Nishimura",
+        "Cam Wilkerson",
+        "Rohan McEligot",
+        "Allan Juarez",
+        "Adrian Jacobs",
+        "Giancarlo Mota",
+        "Kai Djerbaka",
+        "Jack Bowers",
+        "Nik Laredo"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Junhwan Park",
+        "Kieran Bracken Serra"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Noe Morales"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 40,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "9 of 12 MFs cleared (5 Sr, 4 Jr). Heavy recruiting expected. Park and Bracken Serra (So) compete as Srs in Yr1."
     },
     "staff": [],
     "acuUnits": [

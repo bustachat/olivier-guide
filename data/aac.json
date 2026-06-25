@@ -615,12 +615,12 @@
     },
     "mapX": 335,
     "mapY": 228,
-    "fitOlivier": 77,
+    "fitOlivier": 88,
     "lensScores": {
-      "overall": 77,
+      "overall": 88,
       "soccer": 62,
       "academic": 55,
-      "minutes": 55,
+      "minutes": 57,
       "lifestyle": 75,
       "value": 62
     },
@@ -727,7 +727,52 @@
     "url": "https://tulsahurricane.com/sports/mens-soccer",
     "domain": "utulsa.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Gyuwon Chong",
+        "Ian McIntosh",
+        "Luc Achermann-Stanfield",
+        "Bowen McCloud",
+        "Aimar Membrila",
+        "Will Applegate",
+        "Jared Aguilar"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Jareth Mejia"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Key player"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster only — 2025-26 season unpublished. Classes +1 predicted. 7 of 8 MFs clear by 2027; only Jareth Mejia (Fr→So→Jr) remains. Near-complete rebuild creates big opportunity."
     },
     "acuUnits": [
       {
@@ -839,12 +884,12 @@
     },
     "mapX": 425,
     "mapY": 231,
-    "fitOlivier": 81,
+    "fitOlivier": 90,
     "lensScores": {
-      "overall": 81,
+      "overall": 90,
       "soccer": 62,
       "academic": 48,
-      "minutes": 55,
+      "minutes": 47,
       "lifestyle": 80,
       "value": 75
     },
@@ -951,7 +996,57 @@
     "url": "https://gotigersgo.com/sports/mens-soccer",
     "domain": "memphis.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Saad Chaouki",
+        "Dino Stavros",
+        "Christian Piccolotto",
+        "Ryan Ruguaru",
+        "Thomas Mancuso",
+        "Arlo McIntyre",
+        "Jin Tokishi"
+      ],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Carson Banham",
+        "Ignacio Escamilla",
+        "Mathias Krohnstad",
+        "Miller Lashlee"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Ben Mulrooney"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 40,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "7 of 12 MFs cleared, but 4 So (Banham, Escamilla, Krohnstad, Lashlee) compete as Srs in Yr1. Yr2 opens as seniors exit."
     },
     "acuUnits": [
       {
@@ -1063,12 +1158,12 @@
     },
     "mapX": 524,
     "mapY": 159,
-    "fitOlivier": 73,
+    "fitOlivier": 83,
     "lensScores": {
-      "overall": 73,
+      "overall": 83,
       "soccer": 62,
       "academic": 52,
-      "minutes": 55,
+      "minutes": 49,
       "lifestyle": 65,
       "value": 72
     },
@@ -1174,230 +1269,54 @@
     "url": "https://owlsports.com/sports/mens-soccer",
     "domain": "temple.edu",
     "minutesOutlook": {
-      "available": false
-    },
-    "acuUnits": [
-      {
-        "unit": "ANAT100",
-        "covered": true
-      },
-      {
-        "unit": "EXSC222",
-        "covered": true
-      },
-      {
-        "unit": "BIOL125",
-        "covered": true
-      },
-      {
-        "unit": "EXSC225",
-        "covered": true
-      },
-      {
-        "unit": "EXSC322",
-        "covered": true
-      },
-      {
-        "unit": "EXSC394",
-        "covered": false
-      },
-      {
-        "unit": "EXSC224",
-        "covered": true
-      },
-      {
-        "unit": "EXSC321",
-        "covered": true
-      },
-      {
-        "unit": "EXSC204",
-        "covered": false
-      },
-      {
-        "unit": "EXSC216",
-        "covered": false
-      },
-      {
-        "unit": "EXSC199",
-        "covered": true
-      },
-      {
-        "unit": "EXSC296",
-        "covered": false
-      },
-      {
-        "unit": "EXSC187",
-        "covered": false
-      },
-      {
-        "unit": "EXSC230",
-        "covered": true
-      },
-      {
-        "unit": "EXSC122",
-        "covered": true
-      },
-      {
-        "unit": "EXSC398",
-        "covered": false
-      }
-    ]
-  },
-  {
-    "id": "eastcarolina",
-    "profileDepth": "full",
-    "name": "East Carolina",
-    "full": "East Carolina University",
-    "loc": "Greenville, NC",
-    "div": "D1",
-    "conf": "AAC",
-    "confKey": "aac",
-    "region": "south",
-    "warm": true,
-    "city": false,
-    "top": false,
-    "color": [
-      "#dbeafe",
-      "#7c3aed"
-    ],
-    "degreeTitle": "B.S. Exercise and Sport Science",
-    "acuAlign": 10,
-    "acuAlignNote": "Exercise and sport science â€” anatomy, physiology, biomechanics. ECU Health provides pre-PT clinical access.",
-    "soccerLevel": "AAC â€” Competitive",
-    "cost": "~$28k/yr",
-    "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
-      "maxAthletic": 0.85,
-      "maxAcademic": 6000,
-      "aidType": "athletic",
-      "internationalNote": "ECU out-of-state COA is ~$28k/yr (2025-26) â€” very affordable for a D1 program. Athletic scholarship can cover 40â€“70% of COA. Merit aid available for strong academic records. Greenville has low cost of living â€” net cost is highly competitive."
-    },
-    "aid": "Athletic",
-    "size": 27000,
-    "prePT": "Good",
-    "gpa": {
-      "minEntry": "2.0",
-      "minSchol": "2.3+",
-      "note": "Very accessible public university. Strong value scholarship packages.",
-      "status": "ok"
-    },
-    "mapX": 509,
-    "mapY": 212,
-    "fitOlivier": 81,
-    "lensScores": {
-      "overall": 81,
-      "soccer": 58,
-      "academic": 42,
-      "minutes": 58,
-      "lifestyle": 45,
-      "value": 80
-    },
-    "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower AAC",
-        "note": "Did not qualify for AAC Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2022,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Lower AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Mid AAC",
-        "note": "COVID-shortened season."
-      }
-    ],
-    "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Limited pipeline"
-    },
-    "devScores": {
-      "tactical": 55,
-      "technical": 53,
-      "fitness": 58
-    },
-    "coach": {
-      "name": "Andrew Whyte",
-      "title": "Head Coach",
-      "email": "whytea@ecu.edu",
-      "phone": "",
-      "profile": "Andrew Whyte is developing ECU in the AAC from their warm North Carolina campus. ECU Health Medical Center (on campus â€” one of the largest academic medical centres in North Carolina) provides exceptional pre-PT clinical access. Greenville is a college town â€” affordable, warm, and 80 miles from the Outer Banks beaches."
-    },
-    "tags": [
-      "warm",
-      "soccer"
-    ],
-    "facilityDetails": {
-      "stadium": "Baber Stadium â€” dedicated soccer facility on ECU campus. Natural grass, 1,500 capacity.",
-      "trainingFields": "ECU athletic training fields. Warm North Carolina climate â€” outdoor training most of year.",
-      "strengthConditioning": "ECU Athletics S&C facility â€” standard public university suite.",
-      "sportsScience": "Kinesiology Department â€” Exercise and Sport Science labs. ECU is a major academic medical university with research strengths in health sciences.",
-      "sportsMed": "ECU Athletics sports medicine team. ECU Health Medical Center (on campus â€” 900-bed Level I Trauma Centre, one of NC's largest) â€” arguably the best on-campus pre-PT clinical environment in the guide. Brody School of Medicine on campus.",
-      "academicLabs": "Exercise and Sport Science labs: anatomy, physiology, biomechanics. ECU Health and Brody School of Medicine create a genuine research-clinical environment for pre-PT students. DPT programs in NC include Campbell, Duke, and UNC â€” all reachable post-grad.",
-      "extras": "Greenville â€” warm college town in eastern North Carolina. 80 miles from Outer Banks beaches (Cape Hatteras, Kill Devil Hills). 30 miles from Beaufort coast. Raleigh-Durham (1.5 hrs). ECU Purple Pirate culture â€” passionate football-centric athletics. River Park North (walking trails, paddleboats).",
-      "rating": "Good",
-      "note": "ECU's standout asset is the on-campus ECU Health Medical Center â€” a Level I Trauma Centre that creates direct pre-PT clinical access unlike most programs in this tier. Very low cost. Warm but rural â€” Greenville is a college town, not a major city."
-    },
-    "culture": {
-      "vibe": "ECU is a large, warm, friendly public university in eastern North Carolina. Pirates culture â€” passionate about football and athletics but soccer is building. Southern hospitality, low cost of living, warm climate. Campus feels like a self-contained community.",
-      "thingsToDo": "Outer Banks beaches (80 miles â€” Cape Hatteras, Kill Devil Hills, First Flight), River Park North, ECU Main Campus events, Raleigh-Durham day trip (1.5 hrs â€” Research Triangle), Beaufort coastal town (1 hr). Low-key but pleasant.",
-      "socialScene": "Large public campus (27k). College town social scene â€” bars, restaurants, and athletics events. Greek life present. Soccer team close-knit due to shared international and scholarship identity.",
-      "olivierMatch": "â˜…â˜…â˜… ECU is the budget-first warm option. ECU Health on campus is a genuine pre-PT advantage. Greenville is rural â€” lifestyle trade-off vs coastal/city preference. Best if cost and pre-PT clinical access are the priority over city lifestyle.",
-      "lifestyleTags": "ECU Health Level I Trauma, warm NC, Outer Banks proximity, lowest warm D1 cost"
-    },
-    "facilities": [
-      "Baber Stadium",
-      "ECU Health Medical Center (Level I)",
-      "Brody School of Medicine"
-    ],
-    "courses": [
-      "EXSS 1000 â€” Introduction to Exercise Science",
-      "EXSS 3100 â€” Exercise Physiology",
-      "EXSS 3200 â€” Biomechanics",
-      "EXSS 4100 â€” Motor Learning",
-      "EXSS 4900 â€” Clinical Practicum"
-    ],
-    "staff": [
-      {
-        "name": "Andrew Whyte",
-        "role": "Head Coach",
-        "email": "whytea@ecu.edu",
-        "bg": "Head Coach. Developing ECU in AAC. ECU Health Medical Center is the program's key academic differentiator."
-      },
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "msoccer@ecu.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "rec": "Lowest-cost warm option in the guide. Rural North Carolina campus. Best for budget-first scenarios.",
-    "url": "https://ecupirates.com/sports/mens-soccer",
-    "domain": "ecu.edu",
-    "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Rocco Haeufgloeckner",
+        "Paolo Kampula",
+        "George Medill",
+        "Alex O'Leary",
+        "Harrison Dandridge"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Chase Jackson",
+        "Michael Siravo"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Dylan Kaye",
+        "Simon Jordheim"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 45,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 of 9 MFs cleared. 2 rising seniors compete in Yr1. 2 rising juniors as peers through Yr2."
     },
     "acuUnits": [
       {
@@ -1509,12 +1428,12 @@
     },
     "mapX": 445,
     "mapY": 240,
-    "fitOlivier": 85,
+    "fitOlivier": 94,
     "lensScores": {
-      "overall": 85,
+      "overall": 94,
       "soccer": 60,
       "academic": 55,
-      "minutes": 58,
+      "minutes": 43,
       "lifestyle": 75,
       "value": 82
     },
@@ -1621,7 +1540,52 @@
     "url": "https://uabsports.com/sports/mens-soccer",
     "domain": "uab.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 7,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Gael Zackrisson",
+        "Justin Vallejo",
+        "Alan Melendez"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Matthew Garcia"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Diego Quevedo",
+        "Brody Pike",
+        "Guillermo Martin"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 35,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "3 Sr/Gr cleared. 3 Fr remain as Jrs (Quevedo, Pike, Martin) creating peer-level midfield depth through Yr1-2. Yr3 opens as they clear."
     },
     "acuUnits": [
       {
@@ -2164,12 +2128,12 @@
     },
     "mapX": 490,
     "mapY": 221,
-    "fitOlivier": 84,
+    "fitOlivier": 94,
     "lensScores": {
-      "overall": 84,
+      "overall": 94,
       "soccer": 62,
       "academic": 48,
-      "minutes": 50,
+      "minutes": 49,
       "lifestyle": 65,
       "value": 82
     },
@@ -2279,7 +2243,49 @@
     "url": "https://charlotte49ers.com/sports/mens-soccer",
     "domain": "charlotte49ers.com",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 4,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Natsuki Ogata",
+        "Larry Noel"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Luc Lavielle"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Samuel Francou"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 45,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "2 Jrs clear before 2027. Luc Lavielle (So→Sr) competes in Yr1. Very small squad — recruiting impact is high."
     },
     "acuUnits": [
       {
@@ -2321,234 +2327,6 @@
       {
         "unit": "EXSC216",
         "covered": false
-      },
-      {
-        "unit": "EXSC199",
-        "covered": true
-      },
-      {
-        "unit": "EXSC296",
-        "covered": false
-      },
-      {
-        "unit": "EXSC187",
-        "covered": false
-      },
-      {
-        "unit": "EXSC230",
-        "covered": true
-      },
-      {
-        "unit": "EXSC122",
-        "covered": true
-      },
-      {
-        "unit": "EXSC398",
-        "covered": false
-      }
-    ]
-  },
-  {
-    "id": "rice",
-    "profileDepth": "full",
-    "name": "Rice",
-    "full": "Rice University",
-    "loc": "Houston, TX",
-    "div": "D1",
-    "conf": "AAC",
-    "confKey": "aac",
-    "region": "south",
-    "warm": true,
-    "city": true,
-    "top": false,
-    "color": [
-      "#dbeafe",
-      "#1e3a8a"
-    ],
-    "degreeTitle": "B.S. Kinesiology",
-    "acuAlign": 11,
-    "acuAlignNote": "Strong kinesiology program. Texas Medical Center (world's largest medical complex, adjacent to campus) gives unmatched pre-PT clinical access.",
-    "soccerLevel": "AAC â€” Competitive",
-    "cost": "~$72k/yr",
-    "fin": {
-      "costNum": 72000,
-      "tuition": 58000,
-      "roomBoard": 12000,
-      "fees": 2000,
-      "maxAthletic": 0.85,
-      "maxAcademic": 10000,
-      "aidType": "athletic+need",
-      "internationalNote": "Rice full COA is ~$72k/yr (2025-26). Athletic scholarship + need-based aid can combine to significantly reduce costs â€” Rice meets demonstrated financial need. Houston cost of living is moderate, which helps the net figure. Strong academic reputation with generous aid programs."
-    },
-    "aid": "Athletic + Need",
-    "size": 4000,
-    "prePT": "Excellent",
-    "gpa": {
-      "minEntry": "3.5",
-      "minSchol": "3.7+",
-      "note": "Highly selective private university â€” often called the 'Harvard of the South'. Athletic scholarship essential.",
-      "status": "below"
-    },
-    "mapX": 330,
-    "mapY": 280,
-    "fitOlivier": 49,
-    "lensScores": {
-      "overall": 49,
-      "soccer": 65,
-      "academic": 85,
-      "minutes": 50,
-      "lifestyle": 65,
-      "value": 50
-    },
-    "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Mid AAC",
-        "note": "Mid-table AAC finish."
-      },
-      {
-        "yr": 2024,
-        "pos": "Mid AAC",
-        "note": "AAC conference play."
-      },
-      {
-        "yr": 2023,
-        "pos": "Mid AAC",
-        "note": "First AAC season."
-      },
-      {
-        "yr": 2022,
-        "pos": "C-USA",
-        "note": "Conference USA play before joining AAC."
-      },
-      {
-        "yr": 2021,
-        "pos": "C-USA",
-        "note": "Conference USA play."
-      },
-      {
-        "yr": 2020,
-        "pos": "C-USA",
-        "note": "COVID-shortened season."
-      }
-    ],
-    "titles": [
-      "AAC Champions multiple"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Strong pipeline for program size"
-    },
-    "devScores": {
-      "tactical": 68,
-      "technical": 66,
-      "fitness": 70
-    },
-    "coach": {
-      "name": "Brian Lee",
-      "title": "Head Coach (8th season)",
-      "email": "bgl1@rice.edu",
-      "phone": "713-348-6956",
-      "profile": "Strong academic soccer program at a private Ivy-calibre university. Texas Medical Center (world's largest, 54+ institutions) adjacent to campus â€” unmatched pre-PT/Chiro clinical access. GPA requirement is above Olivier's current level â€” athletic scholarship essential."
-    },
-    "tags": [
-      "warm",
-      "city",
-      "acad",
-      "soccer"
-    ],
-    "facilityDetails": {
-      "stadium": "Rice Soccer Stadium â€” dedicated on-campus stadium. Rice Athletics complex. Intimate venue with great atmosphere for a small private university.",
-      "trainingFields": "On-campus training facilities. Rice Athletics has invested significantly in soccer infrastructure to compete in the AAC.",
-      "strengthConditioning": "Rice Athletics S&C facility â€” elite private university standard. Full-time strength staff.",
-      "sportsScience": "Kinesiology research labs. Rice engineering and bioengineering departments provide sports technology collaboration opportunities unique in US college soccer.",
-      "sportsMed": "Texas Medical Center â€” immediately adjacent to campus. 54+ institutions including MD Anderson, Methodist Hospital, Texas Children's. Best pre-PT/Chiro clinical access in US college soccer.",
-      "academicLabs": "Kinesiology labs for anatomy, physiology, biomechanics. Direct clinical pipeline through Texas Medical Center institutions.",
-      "extras": "Texas Medical Center â€” world's largest medical complex, adjacent to campus. Houston Dynamo (MLS) nearby. Houston Museum District, Hermann Park, Rice Village. Warm year-round. No state income tax (Texas). Houston is the 4th-largest US city.",
-      "rating": "Very Good",
-      "note": "GPA barrier is significant (3.5+ entry). Athletic scholarship essential to make COA manageable. Texas Medical Center access is the single best clinical asset in AAC soccer."
-    },
-    "culture": {
-      "vibe": "Small, elite private university â€” Oxford-style residential college system (8 colleges). Tight-knit academic community. Soccer team benefits from high-achieving peers and excellent facilities. Very different from large public university experience.",
-      "thingsToDo": "Texas Medical Center, Houston Dynamo (MLS), Museum District, Hermann Park, Rice Village shops, Space Center Houston, Galveston beaches (50 min), Buffalo Bayou Park. Houston's restaurant scene is world-class.",
-      "socialScene": "Residential college system creates close community â€” every student belongs to one of 8 residential colleges with own dining, events. Athletic team bonds tightly in this environment. Greek life minimal.",
-      "olivierMatch": "Aspirational â€” GPA 3.5+ is currently out of reach. But the Texas Medical Center access for pre-DPT/Chiro is the best in the entire guide. If Olivier's GPA improves and an athletic scholarship is available, Rice would be the top academic option in AAC. Listed for long-term reference.",
-      "lifestyleTags": "Warm, city, elite academic, Texas Medical Center, aspirational GPA"
-    },
-    "facilities": [
-      "Rice Soccer Stadium",
-      "Texas Medical Center (adjacent)",
-      "Houston Dynamo MLS Proximity"
-    ],
-    "courses": [
-      "KINE 235 â€” Anatomy and Physiology I",
-      "KINE 236 â€” Anatomy and Physiology II",
-      "KINE 301 â€” Biomechanics of Human Movement",
-      "KINE 302 â€” Exercise Physiology",
-      "KINE 400 â€” Research Methods in Kinesiology",
-      "KINE 450 â€” Clinical Practicum (Texas Medical Center)"
-    ],
-    "staff": [
-      {
-        "name": "Head Coach",
-        "role": "Head Coach",
-        "email": "soccer@rice.edu",
-        "bg": "Rice Owls head coach. Private university program with Texas Medical Center clinical access and Houston Dynamo MLS proximity."
-      },
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "soccer@rice.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "rec": "Elite academics + warm Houston city + Texas Medical Center for pre-PT = best non-power-conference academic option. Selective admission â€” GPA 3.5+ required.",
-    "url": "https://riceowls.com/sports/mens-soccer",
-    "domain": "riceowls.com",
-    "minutesOutlook": {
-      "available": false
-    },
-    "acuUnits": [
-      {
-        "unit": "ANAT100",
-        "covered": true
-      },
-      {
-        "unit": "EXSC222",
-        "covered": true
-      },
-      {
-        "unit": "BIOL125",
-        "covered": true
-      },
-      {
-        "unit": "EXSC225",
-        "covered": true
-      },
-      {
-        "unit": "EXSC322",
-        "covered": true
-      },
-      {
-        "unit": "EXSC394",
-        "covered": false
-      },
-      {
-        "unit": "EXSC224",
-        "covered": true
-      },
-      {
-        "unit": "EXSC321",
-        "covered": true
-      },
-      {
-        "unit": "EXSC204",
-        "covered": false
-      },
-      {
-        "unit": "EXSC216",
-        "covered": true
       },
       {
         "unit": "EXSC199",

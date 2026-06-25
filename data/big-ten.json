@@ -611,12 +611,12 @@
     },
     "mapX": 502,
     "mapY": 153,
-    "fitOlivier": 56,
+    "fitOlivier": 67,
     "lensScores": {
-      "overall": 56,
+      "overall": 67,
       "soccer": 75,
       "academic": 65,
-      "minutes": 50,
+      "minutes": 53,
       "lifestyle": 0,
       "value": 62
     },
@@ -725,7 +725,52 @@
     "url": "https://gopsusports.com/sports/mens-soccer",
     "domain": "psu.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 6,
+      "cleared_names": [
+        "Ben Liscum",
+        "Freddie Bell",
+        "Caden Grabfelder",
+        "Malick Daouda",
+        "Ben Madore",
+        "Conor Clair"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Nziza Siibo",
+        "Davy Leavey"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Key player"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster only — 2025-26 season unpublished. Classes +1 predicted. 6 of 8 cleared (incl. Liscum Gr, Bell/Grabfelder Jr). Only Siibo and Leavey (Fr→So→Jr) remain as Srs in 2027."
     },
     "acuUnits": [
       {
@@ -837,12 +882,12 @@
     },
     "mapX": 448,
     "mapY": 150,
-    "fitOlivier": 53,
+    "fitOlivier": 60,
     "lensScores": {
-      "overall": 53,
+      "overall": 60,
       "soccer": 76,
       "academic": 85,
-      "minutes": 50,
+      "minutes": 36,
       "lifestyle": 0,
       "value": 52
     },
@@ -950,7 +995,42 @@
     "url": "https://mgoblue.com/sports/mens-soccer",
     "domain": "umich.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 15,
+      "cleared_before_2027": 9,
+      "cleared_names": [],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 5,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "9 of 15 MFs cleared, but 5 Fr remain as Jrs creating peer-level competition through Yr1-2. Michigan recruits at Big Ten elite level. Roster count verified by browser MCP; names not captured."
     },
     "acuUnits": [
       {
@@ -1062,12 +1142,12 @@
     },
     "mapX": 454,
     "mapY": 146,
-    "fitOlivier": 65,
+    "fitOlivier": 71,
     "lensScores": {
-      "overall": 65,
+      "overall": 71,
       "soccer": 65,
       "academic": 58,
-      "minutes": 50,
+      "minutes": 31,
       "lifestyle": 0,
       "value": 62
     },
@@ -1172,7 +1252,42 @@
     "url": "https://msuspartans.com/sports/mens-soccer",
     "domain": "msu.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 3,
+      "cleared_names": [],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Development squad"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 So compete as Srs in Yr1 — congested midfield for first season. Opens significantly in Yr2 as 5 seniors exit. Roster count verified; names not captured."
     },
     "acuUnits": [
       {
@@ -1284,12 +1399,12 @@
     },
     "mapX": 467,
     "mapY": 166,
-    "fitOlivier": 69,
+    "fitOlivier": 78,
     "lensScores": {
-      "overall": 69,
+      "overall": 78,
       "soccer": 72,
       "academic": 60,
-      "minutes": 50,
+      "minutes": 45,
       "lifestyle": 50,
       "value": 65
     },
@@ -1397,7 +1512,42 @@
     "url": "https://ohiostatebuckeyes.com/sports/mens-soccer",
     "domain": "osu.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 4,
+      "cleared_names": [],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 40,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "4 of 8 MFs cleared. 3 Fr remain as Jrs + 1 So as Sr in Yr1. Yr3 opens as juniors exit. Roster count verified; names not captured."
     },
     "acuUnits": [
       {
@@ -1509,12 +1659,12 @@
     },
     "mapX": 420,
     "mapY": 147,
-    "fitOlivier": 46,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 46,
+      "overall": 54,
       "soccer": 62,
       "academic": 90,
-      "minutes": 50,
+      "minutes": 41,
       "lifestyle": 50,
       "value": 32
     },
@@ -1621,7 +1771,42 @@
     "url": "https://nusports.com/sports/mens-soccer",
     "domain": "northwestern.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 13,
+      "cleared_before_2027": 7,
+      "cleared_names": [],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 6,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 35,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 45,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "7 of 13 cleared. No rising seniors (easier Yr1), but 6 Fr remain as Jrs — peer competition is heavy. Roster count verified; names not captured."
     },
     "acuUnits": [
       {
@@ -1733,12 +1918,12 @@
     },
     "mapX": 407,
     "mapY": 136,
-    "fitOlivier": 70,
+    "fitOlivier": 80,
     "lensScores": {
-      "overall": 70,
+      "overall": 80,
       "soccer": 62,
       "academic": 62,
-      "minutes": 50,
+      "minutes": 49,
       "lifestyle": 0,
       "value": 65
     },
@@ -1843,7 +2028,42 @@
     "url": "https://uwbadgers.com/sports/mens-soccer",
     "domain": "wisc.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 6,
+      "cleared_before_2027": 3,
+      "cleared_names": [],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 45,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "3 of 6 MFs cleared. Balanced competition — 2 So as Srs in Yr1, 1 Fr as Jr. Wisconsin rebuilds modestly year-to-year. Roster count verified; names not captured."
     },
     "acuUnits": [
       {
@@ -1955,12 +2175,12 @@
     },
     "mapX": 531,
     "mapY": 153,
-    "fitOlivier": 68,
+    "fitOlivier": 79,
     "lensScores": {
-      "overall": 68,
+      "overall": 79,
       "soccer": 65,
       "academic": 55,
-      "minutes": 50,
+      "minutes": 53,
       "lifestyle": 50,
       "value": 60
     },
@@ -2068,7 +2288,42 @@
     "url": "https://scarletknights.com/sports/mens-soccer",
     "domain": "rutgers.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 5,
+      "cleared_names": [],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 50,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Key player"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 of 8 MFs cleared before 2027. 2 So compete as Srs in Yr1. Solid Big Ten opportunity with manageable competition. Roster count verified; names not captured."
     },
     "acuUnits": [
       {
@@ -2110,457 +2365,6 @@
       {
         "unit": "EXSC216",
         "covered": false
-      },
-      {
-        "unit": "EXSC199",
-        "covered": true
-      },
-      {
-        "unit": "EXSC296",
-        "covered": false
-      },
-      {
-        "unit": "EXSC187",
-        "covered": false
-      },
-      {
-        "unit": "EXSC230",
-        "covered": true
-      },
-      {
-        "unit": "EXSC122",
-        "covered": true
-      },
-      {
-        "unit": "EXSC398",
-        "covered": false
-      }
-    ]
-  },
-  {
-    "id": "oregon",
-    "profileDepth": "full",
-    "name": "Oregon",
-    "full": "University of Oregon",
-    "loc": "Eugene, OR",
-    "div": "D1",
-    "conf": "Big Ten",
-    "confKey": "big-ten",
-    "region": "west",
-    "warm": false,
-    "city": false,
-    "top": false,
-    "color": [
-      "#dcfce7",
-      "#166534"
-    ],
-    "degreeTitle": "B.S. Human Physiology",
-    "acuAlign": 12,
-    "acuAlignNote": "Strong Human Physiology program — anatomy, physiology, biomechanics, exercise science all well-covered. Pre-PT pathway supported.",
-    "soccerLevel": "Big Ten — Developing",
-    "cost": "~$48k/yr",
-    "fin": {
-      "costNum": 48000,
-      "tuition": 34000,
-      "roomBoard": 11000,
-      "fees": 3000,
-      "maxAthletic": 0.8,
-      "maxAcademic": 5000,
-      "aidType": "athletic",
-      "internationalNote": "Oregon out-of-state COA is ~$48k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Phil Knight donor backing means strong soccer program investment. Merit aid available for international students. Eugene has moderate cost of living."
-    },
-    "aid": "Athletic",
-    "size": 21000,
-    "prePT": "Good",
-    "gpa": {
-      "minEntry": "2.5",
-      "minSchol": "2.8+",
-      "note": "Accessible Pacific Northwest public university. International athletic recruitment well-established.",
-      "status": "borderline"
-    },
-    "mapX": 87,
-    "mapY": 114,
-    "fitOlivier": 71,
-    "lensScores": {
-      "overall": 71,
-      "soccer": 60,
-      "academic": 62,
-      "minutes": 50,
-      "lifestyle": 0,
-      "value": 70
-    },
-    "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "First full Big Ten season. Did not qualify for tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower B1G",
-        "note": "First Big Ten season (joined 2024)."
-      },
-      {
-        "yr": 2023,
-        "pos": "Pac-12",
-        "note": "Pac-12 play before joining Big Ten."
-      },
-      {
-        "yr": 2022,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Pac-12",
-        "note": "COVID-shortened season."
-      }
-    ],
-    "titles": [
-      "Pac-12 Champions multiple"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 2,
-      "notable": [],
-      "draftRank": "Growing Pacific pipeline"
-    },
-    "devScores": {
-      "tactical": 62,
-      "technical": 60,
-      "fitness": 67
-    },
-    "coach": {
-      "name": "Wilfried Grabherr",
-      "title": "Head Coach",
-      "email": "wgrabherr@uoregon.edu",
-      "phone": "",
-      "profile": "Building Oregon through Big Ten transition. Phil Knight Nike funding provides elite facilities access. Strong Human Physiology academic environment. Best minutes opportunity of any Big Ten program for Olivier."
-    },
-    "tags": [
-      "soccer"
-    ],
-    "facilityDetails": {
-      "stadium": "Pape Field — 3,000 capacity, artificial turf. Renovated with Phil Knight Nike investment. One of the better small-college soccer facilities in the West.",
-      "trainingFields": "2 dedicated training fields at Pape. Hayward Field (world's best track & field facility, recently rebuilt with Nike investment) provides elite sports infrastructure context.",
-      "strengthConditioning": "Moshofsky Center — Phil Knight-funded elite S&C facility. Among the best in the Big Ten. Oregon's Nike relationship means cutting-edge equipment and recovery technology.",
-      "sportsScience": "Human Physiology Department labs — exercise physiology, human performance, biomechanics. Nike Sport Research Lab collaboration unique to Oregon. Catapult GPS tracking.",
-      "sportsMed": "Oregon Sports Medicine — certified athletic trainers. PeaceHealth Sports Medicine network for clinical access. Solid pre-PT pathway through kinesiology advising.",
-      "academicLabs": "Human Physiology Building: physiology labs, biomechanics lab, sport performance lab. Nike partnership provides real-world sports science research opportunities unavailable elsewhere.",
-      "extras": "Nike headquarters (Portland, 1hr) — real internship and career pathway. Hayward Field is the Track & Field equivalent of Augusta National — world class. Portland (1hr) for city access. Pacific Northwest outdoor lifestyle.",
-      "rating": "Strong",
-      "note": "Oregon's Nike-funded infrastructure is genuinely elite. Best minutes opportunity in Big Ten. Academic environment is strong through Human Physiology. Climate (Eugene is very rainy) is the main drawback for Olivier."
-    },
-    "culture": {
-      "vibe": "Oregon is a unique blend of elite athletic infrastructure and Pacific Northwest laid-back culture. Eugene itself is a small, artsy college town with a strong running and outdoor culture. Nike presence permeates everything.",
-      "thingsToDo": "Eugene Saturday Market, Willamette River trail running and cycling, Oregon Coast (1hr — stunning), Portland day trip (1hr), Crater Lake National Park, Cascade Mountain range, Nike Campus tours.",
-      "socialScene": "Small campus feel (21,000). International athletes well-integrated through Oregon's strong track/soccer culture. Eugene is artsy and young. Pacific Northwest rain is real — outdoor culture adapts to it.",
-      "olivierMatch": "★★ Best minutes in the Big Ten — biggest draw for Olivier. Human Physiology program strong. Constant rain is a significant lifestyle gap from Sydney. Eugene is small. Best if minutes opportunity is the primary driver.",
-      "lifestyleTags": "Nike funding, outdoor culture, rainy Pacific Northwest"
-    },
-    "facilities": [
-      "Pape Field",
-      "Moshofsky Center (Nike S&C)",
-      "Human Physiology Labs"
-    ],
-    "courses": [
-      "HPHY 250 — Human Physiology",
-      "HPHY 355 — Exercise Physiology",
-      "HPHY 360 — Biomechanics",
-      "HPHY 410 — Motor Learning",
-      "HPHY 440 — Clinical Physiology"
-    ],
-    "staff": [
-      {
-        "name": "Wilfried Grabherr",
-        "role": "Head Coach",
-        "email": "wgrabherr@uoregon.edu",
-        "bg": "Head Coach. Building Oregon through Big Ten transition with elite Nike facilities support."
-      },
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "msoccer@uoregon.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "rec": "Best minutes opportunity in the Big Ten. Strong human physiology degree. Pacific Northwest climate is rainy — not ideal for Olivier.",
-    "url": "https://goducks.com/sports/mens-soccer",
-    "domain": "uoregon.edu",
-    "minutesOutlook": {
-      "available": false
-    },
-    "acuUnits": [
-      {
-        "unit": "ANAT100",
-        "covered": true
-      },
-      {
-        "unit": "EXSC222",
-        "covered": true
-      },
-      {
-        "unit": "BIOL125",
-        "covered": true
-      },
-      {
-        "unit": "EXSC225",
-        "covered": true
-      },
-      {
-        "unit": "EXSC322",
-        "covered": true
-      },
-      {
-        "unit": "EXSC394",
-        "covered": false
-      },
-      {
-        "unit": "EXSC224",
-        "covered": true
-      },
-      {
-        "unit": "EXSC321",
-        "covered": true
-      },
-      {
-        "unit": "EXSC204",
-        "covered": true
-      },
-      {
-        "unit": "EXSC216",
-        "covered": true
-      },
-      {
-        "unit": "EXSC199",
-        "covered": true
-      },
-      {
-        "unit": "EXSC296",
-        "covered": false
-      },
-      {
-        "unit": "EXSC187",
-        "covered": false
-      },
-      {
-        "unit": "EXSC230",
-        "covered": true
-      },
-      {
-        "unit": "EXSC122",
-        "covered": true
-      },
-      {
-        "unit": "EXSC398",
-        "covered": false
-      }
-    ]
-  },
-  {
-    "id": "usc",
-    "profileDepth": "full",
-    "name": "USC",
-    "full": "University of Southern California",
-    "loc": "Los Angeles, CA",
-    "div": "D1",
-    "conf": "Big Ten",
-    "confKey": "big-ten",
-    "region": "west",
-    "warm": true,
-    "city": true,
-    "top": false,
-    "color": [
-      "#fef3c7",
-      "#b45309"
-    ],
-    "degreeTitle": "B.S. Kinesiology",
-    "acuAlign": 12,
-    "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, sport psychology covered. USC Keck Medicine provides outstanding clinical access for pre-PT pathway.",
-    "soccerLevel": "Big Ten — Strong",
-    "cost": "~$78k/yr",
-    "fin": {
-      "costNum": 78000,
-      "tuition": 62000,
-      "roomBoard": 13000,
-      "fees": 3000,
-      "maxAthletic": 0.85,
-      "maxAcademic": 12000,
-      "aidType": "athletic+merit",
-      "internationalNote": "USC full COA is ~$78k/yr (2025-26). Athletic scholarship + merit aid can combine to cover 40–60% of COA. Trojan Family alumni network is a strong career asset. LA living costs are high. Strong international student community and health sciences programs."
-    },
-    "aid": "Athletic + Merit",
-    "size": 21000,
-    "prePT": "Excellent",
-    "gpa": {
-      "minEntry": "3.0",
-      "minSchol": "3.3+",
-      "note": "Selective private university. Athletic scholarship is primary aid lever for internationals.",
-      "status": "below"
-    },
-    "mapX": 95,
-    "mapY": 204,
-    "fitOlivier": 60,
-    "lensScores": {
-      "overall": 60,
-      "soccer": 78,
-      "academic": 72,
-      "minutes": 50,
-      "lifestyle": 95,
-      "value": 45
-    },
-    "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "Did not qualify for Big Ten Tournament."
-      },
-      {
-        "yr": 2024,
-        "pos": "Lower B1G",
-        "note": "First Big Ten season (joined 2024)."
-      },
-      {
-        "yr": 2023,
-        "pos": "Pac-12",
-        "note": "Pac-12 play before joining Big Ten."
-      },
-      {
-        "yr": 2022,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Pac-12",
-        "note": "Pac-12 conference play."
-      },
-      {
-        "yr": 2020,
-        "pos": "Pac-12",
-        "note": "COVID-shortened season."
-      }
-    ],
-    "titles": [
-      "Multiple Pac-12 titles"
-    ],
-    "proPlayers": {
-      "mlsPicks5yr": 3,
-      "notable": [],
-      "draftRank": "Strong West Coast pipeline"
-    },
-    "devScores": {
-      "tactical": 80,
-      "technical": 78,
-      "fitness": 82
-    },
-    "coach": {
-      "name": "Neil Jones",
-      "title": "Head Coach",
-      "email": "ndjones@usc.edu",
-      "phone": "",
-      "profile": "Strong Pac-12 record now translating into Big Ten competition. LA network gives unique pro soccer access — LAFC and LA Galaxy relationships. Keck Medicine partnership for athlete health is elite."
-    },
-    "tags": [
-      "warm",
-      "city",
-      "acad",
-      "soccer"
-    ],
-    "facilityDetails": {
-      "stadium": "McAlister Field — 3,000 capacity, natural grass. Adjacent to USC Health Sciences campus. Dedicated soccer facility with permanent seating.",
-      "trainingFields": "2 dedicated training surfaces on USC Health Sciences campus. Indoor facility access. Galen Center (13,000 arena) provides elite athletic campus infrastructure.",
-      "strengthConditioning": "Lyon Center — USC's premier athletic training centre. Full S&C suite, Olympic lifting, recovery pools, normatec, cryotherapy. Shared with all Trojan Olympic sports.",
-      "sportsScience": "USC Kinesiology — exercise science labs, biomechanics, neuromuscular research. LAFC partnership creates real-world sports science access. One of the better applied sports science environments on the West Coast.",
-      "sportsMed": "USC Keck Medicine — nationally ranked medical system. Athletic trainers and team physicians. Elite pre-PT/Chiro clinical pathway through Keck School of Medicine and Keck Hospital network.",
-      "academicLabs": "Kinesiology Building: exercise physiology lab, biomechanics lab, sport psychology lab, human performance labs. Keck School of Medicine anatomy and physiology resources accessible to kinesiology students.",
-      "extras": "LA Galaxy and LAFC training facilities have USC alumni connections. Coliseum (93,000) Trojan football atmosphere is electric. Trojan Family alumni network is the most powerful private university network in the western USA.",
-      "rating": "Strong",
-      "note": "USC's lifestyle (LA, warm, city) is its primary draw alongside Keck Medicine access. Soccer is rebuilding in the Big Ten after Pac-12 dissolution. Second-best LA option after UCLA for Olivier's specific needs."
-    },
-    "culture": {
-      "vibe": "USC is the elite private university version of the LA experience. Smaller, tighter campus community (21,000 undergrad) surrounded by South Central LA, but the Trojan Family culture creates a powerful internal social world. LA lifestyle is everything here.",
-      "thingsToDo": "LA Galaxy and LAFC MLS (Galaxy training facility adjacent), Griffith Observatory, Venice Beach, Santa Monica, Hollywood, Dodgers, Lakers, Sofi Stadium concerts. All of LA is accessible. USC is 15 min from downtown LA.",
-      "socialScene": "Diverse international community. Trojan Family culture is famously bonding — alumni network is a genuine career asset. South LA location means campus feels self-contained but LA is everywhere by Uber/transit.",
-      "olivierMatch": "★★★★ Second only to UCLA for lifestyle fit for Olivier. LA warmth, diversity, city energy. Keck Medicine for PT/Chiro pathway. Expensive even with aid. Soccer still establishing Big Ten identity.",
-      "lifestyleTags": "LA warmth, Trojan Family, city energy"
-    },
-    "facilities": [
-      "McAlister Field",
-      "Lyon Center S&C",
-      "USC Keck Medicine Sports Med"
-    ],
-    "courses": [
-      "KIN 205 — Anatomical Kinesiology",
-      "KIN 323 — Exercise Physiology",
-      "KIN 330 — Biomechanical Analysis of Sport",
-      "KIN 440 — Motor Learning",
-      "KIN 462 — Clinical Kinesiology Practicum"
-    ],
-    "staff": [
-      {
-        "name": "Neil Jones",
-        "role": "Head Coach",
-        "email": "ndjones@usc.edu",
-        "bg": "Head Coach. Strong Pac-12 record. Building Big Ten identity with LA pro network advantage."
-      },
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "msoccer@usc.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "rec": "LA lifestyle — second best after UCLA for Olivier's climate preference. USC Keck Medicine for pre-PT. Expensive but worth considering alongside UCLA.",
-    "url": "https://usctrojans.com/sports/mens-soccer",
-    "domain": "usc.edu",
-    "minutesOutlook": {
-      "available": false
-    },
-    "acuUnits": [
-      {
-        "unit": "ANAT100",
-        "covered": true
-      },
-      {
-        "unit": "EXSC222",
-        "covered": true
-      },
-      {
-        "unit": "BIOL125",
-        "covered": true
-      },
-      {
-        "unit": "EXSC225",
-        "covered": true
-      },
-      {
-        "unit": "EXSC322",
-        "covered": true
-      },
-      {
-        "unit": "EXSC394",
-        "covered": false
-      },
-      {
-        "unit": "EXSC224",
-        "covered": true
-      },
-      {
-        "unit": "EXSC321",
-        "covered": true
-      },
-      {
-        "unit": "EXSC204",
-        "covered": true
-      },
-      {
-        "unit": "EXSC216",
-        "covered": true
       },
       {
         "unit": "EXSC199",
@@ -2631,12 +2435,12 @@
     },
     "mapX": 87,
     "mapY": 101,
-    "fitOlivier": 69,
+    "fitOlivier": 77,
     "lensScores": {
-      "overall": 69,
+      "overall": 77,
       "soccer": 68,
       "academic": 65,
-      "minutes": 50,
+      "minutes": 38,
       "lifestyle": 50,
       "value": 62
     },
@@ -2744,229 +2548,42 @@
     "url": "https://gohuskies.com/sports/mens-soccer",
     "domain": "uw.edu",
     "minutesOutlook": {
-      "available": false
-    },
-    "acuUnits": [
-      {
-        "unit": "ANAT100",
-        "covered": true
-      },
-      {
-        "unit": "EXSC222",
-        "covered": true
-      },
-      {
-        "unit": "BIOL125",
-        "covered": true
-      },
-      {
-        "unit": "EXSC225",
-        "covered": true
-      },
-      {
-        "unit": "EXSC322",
-        "covered": true
-      },
-      {
-        "unit": "EXSC394",
-        "covered": false
-      },
-      {
-        "unit": "EXSC224",
-        "covered": true
-      },
-      {
-        "unit": "EXSC321",
-        "covered": true
-      },
-      {
-        "unit": "EXSC204",
-        "covered": false
-      },
-      {
-        "unit": "EXSC216",
-        "covered": true
-      },
-      {
-        "unit": "EXSC199",
-        "covered": true
-      },
-      {
-        "unit": "EXSC296",
-        "covered": false
-      },
-      {
-        "unit": "EXSC187",
-        "covered": false
-      },
-      {
-        "unit": "EXSC230",
-        "covered": true
-      },
-      {
-        "unit": "EXSC122",
-        "covered": true
-      },
-      {
-        "unit": "EXSC398",
-        "covered": false
-      }
-    ]
-  },
-  {
-    "id": "illinois",
-    "profileDepth": "full",
-    "name": "Illinois",
-    "full": "University of Illinois Urbana-Champaign",
-    "loc": "Champaign, IL",
-    "div": "D1",
-    "conf": "Big Ten",
-    "confKey": "big-ten",
-    "region": "midwest",
-    "warm": false,
-    "city": false,
-    "top": false,
-    "color": [
-      "#fed7aa",
-      "#ea580c"
-    ],
-    "degreeTitle": "B.S. Kinesiology",
-    "acuAlign": 11,
-    "acuAlignNote": "Solid kinesiology program — anatomy, physiology, biomechanics covered. Pre-PT pathway available.",
-    "soccerLevel": "Big Ten — Developing",
-    "cost": "~$52k/yr",
-    "fin": {
-      "costNum": 52000,
-      "tuition": 37000,
-      "roomBoard": 12000,
-      "fees": 3000,
-      "maxAthletic": 0.75,
-      "maxAcademic": 6000,
-      "aidType": "athletic",
-      "internationalNote": "Illinois out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with strong academic record. Champaign-Urbana has very low cost of living — package stretches further than most Big Ten schools."
-    },
-    "aid": "Athletic",
-    "size": 56000,
-    "prePT": "Good",
-    "gpa": {
-      "minEntry": "2.5",
-      "minSchol": "2.8+",
-      "note": "Accessible large public university. Athletic support department strong.",
-      "status": "borderline"
-    },
-    "mapX": 416,
-    "mapY": 166,
-    "fitOlivier": 65,
-    "lensScores": {
-      "overall": 65,
-      "soccer": 60,
-      "academic": 60,
-      "minutes": 50,
-      "lifestyle": 0,
-      "value": 65
-    },
-    "confRecord": [
-      {
-        "yr": 2025,
-        "pos": "Lower B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2024,
-        "pos": "11th B1G",
-        "note": "11th (last) in Big Ten standings."
-      },
-      {
-        "yr": 2023,
-        "pos": "11th B1G",
-        "note": "2-6-2 in B1G play — 11th in standings."
-      },
-      {
-        "yr": 2022,
-        "pos": "Lower B1G",
-        "note": "Big Ten conference play."
-      },
-      {
-        "yr": 2021,
-        "pos": "Independent",
-        "note": "Did not compete in Big Ten conference play in 2021 — played as independent."
-      },
-      {
-        "yr": 2020,
-        "pos": "Lower B1G",
-        "note": "COVID-shortened spring season."
-      }
-    ],
-    "titles": [],
-    "proPlayers": {
-      "mlsPicks5yr": 1,
-      "notable": [],
-      "draftRank": "Limited pipeline"
-    },
-    "devScores": {
-      "tactical": 58,
-      "technical": 57,
-      "fitness": 65
-    },
-    "coach": {
-      "name": "Mark Boos",
-      "title": "Head Coach",
-      "email": "mboos@illinois.edu",
-      "phone": "",
-      "profile": "Rebuilding Illinois program in competitive Big Ten. Two 11th-place finishes signal a rebuilding phase — highest minutes opportunity in the Big Ten. Champaign-Urbana campus, flat rural Illinois."
-    },
-    "tags": [
-      "soccer"
-    ],
-    "facilityDetails": {
-      "stadium": "Illinois Soccer and Track Stadium — 1,500 capacity, artificial turf. Modest but dedicated facility on UIUC campus.",
-      "trainingFields": "2 practice surfaces on campus. Indoor facility access in winter.",
-      "strengthConditioning": "Henry Dale and Betty Smith Football Performance Center area — shared S&C facility for Olympic sports. Standard Big Ten equipment without elite extras.",
-      "sportsScience": "Kinesiology Department — exercise physiology, biomechanics, motor control labs. Illinois is a top research university — kinesiology academic environment is strong.",
-      "sportsMed": "Illinois Athletics Sports Medicine — certified athletic trainers. Carle Foundation Hospital team physician access. Standard Big Ten coverage.",
-      "academicLabs": "Kinesiology building: exercise physiology lab, biomechanics lab, motor behaviour lab. UIUC is a top-15 research university in engineering and science — adjacent disciplines benefit kinesiology.",
-      "extras": "Champaign-Urbana is a twin college city with a genuinely active student scene despite the rural setting. Chicago day trip (2.5hr). State Farm Center (16,000) — Illinois basketball atmosphere. Krannert Center for Performing Arts.",
-      "rating": "Functional",
-      "note": "Illinois offers the most accessible minutes in the Big Ten but the soccer environment and lifestyle are significantly below guide average. Best for Olivier only if minutes opportunity outweighs other factors."
-    },
-    "culture": {
-      "vibe": "Flat, rural, cold. UIUC is a serious research university in a Midwest college city. The campus is beautiful in fall but winters are harsh. Social life is primarily campus-driven. Low lifestyle fit for an Australian from Sydney.",
-      "thingsToDo": "Champaign-Urbana downtown (State Street), University of Illinois Arboretum, Allerton Park (scenic estate), Chicago day trip (2.5hr by I-57), Krannert Art Museum, Champaign Softball Complex, intramural sports.",
-      "socialScene": "Large diverse campus with strong international student community (especially from China and South/East Asia). UIUC academics culture is intense — engineering and computer science dominated. Soccer social scene is modest.",
-      "olivierMatch": "★ Lowest lifestyle fit in the Big Ten guide. Flat campus, no nearby city, brutal winters, flat Illinois landscape. The one advantage is minutes opportunity — easiest program to break into. Only relevant if that's the absolute priority.",
-      "lifestyleTags": "Rural, cold, playing time focus"
-    },
-    "facilities": [
-      "Illinois Soccer and Track Stadium",
-      "Shared S&C Facility",
-      "Kinesiology Labs"
-    ],
-    "courses": [
-      "KIN 100 — Introduction to Kinesiology",
-      "KIN 335 — Exercise Physiology",
-      "KIN 360 — Biomechanics",
-      "KIN 440 — Motor Learning",
-      "KIN 460 — Applied Kinesiology"
-    ],
-    "staff": [
-      {
-        "name": "Mark Boos",
-        "role": "Head Coach",
-        "email": "mboos@illinois.edu",
-        "bg": "Head Coach. Rebuilding Illinois in the Big Ten. Two consecutive 11th-place finishes."
-      },
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "msoccer@illinois.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "rec": "Most accessible minutes in the Big Ten. Rural flat campus — low lifestyle fit for Olivier. Main draw is playing time and lower academic bar.",
-    "url": "https://fightingillini.com/sports/mens-soccer",
-    "domain": "illinois.edu",
-    "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 13,
+      "cleared_before_2027": 8,
+      "cleared_names": [],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 45,
+          "label": "Coming off bench"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster only — 2025-26 unpublished. Classes +1 predicted. 8 of 13 cleared, but 5 Fr (→ Srs by 2027) create heavy competition in Yr1. Opens well in Yr2 as seniors exit."
     },
     "acuUnits": [
       {

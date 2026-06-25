@@ -2554,7 +2554,11 @@ function calcMinutesScore(u, mode){
   return Math.min(95, Math.round(raw * factor));
 }
 
-let moMode = 'roster'; // current toggle state
+let moMode = 'roster';   // ranking mode: 'roster' | 'adjusted'
+let moTier = 'all';      // score tier filter: 'all' | 'high' | 'mid' | 'low'
+let moExpanded = {};     // card open/closed state keyed by school id
+
+function moTierOf(score){ return score>=71?'high':score>=31?'mid':'low'; }
 
 function renderMinutesOutlook(){
   const container = document.getElementById('page-minutes');
@@ -2564,12 +2568,37 @@ function renderMinutesOutlook(){
 
 function setMoMode(mode){
   moMode = mode;
-  // Update toggle button styles
   ['roster','adjusted'].forEach(m=>{
     const btn = document.getElementById('mo-toggle-'+m);
     if(btn) btn.className = 'mo-toggle-btn'+(m===mode?' mo-toggle-active':'');
   });
-  buildMinutesHtml(true); // rebuild cards only
+  buildMinutesHtml(true);
+}
+
+function setMoTier(tier){
+  moTier = tier;
+  ['all','high','mid','low'].forEach(t=>{
+    const btn = document.getElementById('mo-tier-'+t);
+    if(btn) btn.className = 'mo-tier-btn mo-tier-'+t+(t===tier?' mo-tier-active':'');
+  });
+  buildMinutesHtml(true);
+}
+
+function moShowAll(){
+  const available = [...unis].filter(u=>(u.minutesOutlook||{}).available && u.profileDepth==='full');
+  available.forEach(u=>moExpanded[u.id]=true);
+  buildMinutesHtml(true);
+}
+
+function moHideAll(){
+  const available = [...unis].filter(u=>(u.minutesOutlook||{}).available && u.profileDepth==='full');
+  available.forEach(u=>moExpanded[u.id]=false);
+  buildMinutesHtml(true);
+}
+
+function toggleMoCard(id){
+  moExpanded[id] = !moExpanded[id];
+  buildMinutesHtml(true);
 }
 
 function buildMinutesHtml(cardsOnly){
@@ -2579,7 +2608,10 @@ function buildMinutesHtml(cardsOnly){
   const available = [...unis].filter(u => (u.minutesOutlook||{}).available && u.profileDepth==='full');
   const unavailable = [...unis].filter(u => !(u.minutesOutlook||{}).available && u.profileDepth==='full');
 
-  // Sort by current mode score
+  // Default all cards to expanded on first render
+  available.forEach(u=>{ if(moExpanded[u.id]===undefined) moExpanded[u.id]=true; });
+
+  // Sort all available by score for global rank
   const ranked = [...available].sort((a,b)=>{
     const sa = calcMinutesScore(a, moMode);
     const sb = calcMinutesScore(b, moMode);
@@ -2587,8 +2619,15 @@ function buildMinutesHtml(cardsOnly){
     return (b.fitOlivier||0)-(a.fitOlivier||0);
   });
 
+  // Tier counts
+  const cntHigh = ranked.filter(u=>moTierOf(calcMinutesScore(u,moMode))==='high').length;
+  const cntMid  = ranked.filter(u=>moTierOf(calcMinutesScore(u,moMode))==='mid').length;
+  const cntLow  = ranked.filter(u=>moTierOf(calcMinutesScore(u,moMode))==='low').length;
+
+  // Apply tier filter (preserves global rank order)
+  const filtered = moTier==='all' ? ranked : ranked.filter(u=>moTierOf(calcMinutesScore(u,moMode))===moTier);
+
   if(!cardsOnly){
-    // Build full shell including intro, toggles, key
     const introHtml =
       '<div class="mo-intro">'+
         '<div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:.75rem">'+
@@ -2613,6 +2652,7 @@ function buildMinutesHtml(cardsOnly){
           '<div class="mo-key-item"><strong>+ Unknown 2026 class</strong> (coach call needed)</div>'+
         '</div>'+
       '</div>'+
+      '<div id="mo-toolbar-wrap"></div>'+
       '<div id="mo-cards-wrap"></div>'+
       '<div id="mo-unavail-wrap"></div>'+
       '<div class="mo-footer">'+
@@ -2654,70 +2694,106 @@ function buildMinutesHtml(cardsOnly){
     }
   }
 
+  // Rebuild toolbar (tier filters + show/hide)
+  const toolbarWrap = document.getElementById('mo-toolbar-wrap');
+  if(toolbarWrap){
+    toolbarWrap.innerHTML =
+      '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem">'+
+        '<div style="display:flex;align-items:center;gap:.35rem;flex-wrap:wrap">'+
+          '<span style="font-size:11px;font-weight:700;color:var(--hint);margin-right:2px">Score:</span>'+
+          '<button id="mo-tier-all"  class="mo-tier-btn mo-tier-all'+(moTier==='all'?' mo-tier-active':'')+'" onclick="setMoTier(\'all\')">All <span class="mo-tier-cnt">'+ranked.length+'</span></button>'+
+          '<button id="mo-tier-high" class="mo-tier-btn mo-tier-high'+(moTier==='high'?' mo-tier-active':'')+'" onclick="setMoTier(\'high\')">71–100 <span class="mo-tier-cnt">'+cntHigh+'</span></button>'+
+          '<button id="mo-tier-mid"  class="mo-tier-btn mo-tier-mid'+(moTier==='mid'?' mo-tier-active':'')+'" onclick="setMoTier(\'mid\')">31–70 <span class="mo-tier-cnt">'+cntMid+'</span></button>'+
+          '<button id="mo-tier-low"  class="mo-tier-btn mo-tier-low'+(moTier==='low'?' mo-tier-active':'')+'" onclick="setMoTier(\'low\')">Under 30 <span class="mo-tier-cnt">'+cntLow+'</span></button>'+
+        '</div>'+
+        '<div style="display:flex;gap:.35rem">'+
+          '<button class="mo-showhide-btn" onclick="moShowAll()">Show all</button>'+
+          '<button class="mo-showhide-btn" onclick="moHideAll()">Hide all</button>'+
+        '</div>'+
+      '</div>';
+  }
+
   // Build cards
   let cardsHtml = '<div class="mo-cards-grid">';
-  ranked.forEach((u,idx)=>{
+
+  if(!filtered.length){
+    cardsHtml += '<p style="color:var(--muted);font-size:13px;padding:.5rem 0">No schools in this score range.</p>';
+  }
+
+  filtered.forEach((u, filteredIdx)=>{
+    const globalIdx = ranked.indexOf(u);
     const mo = u.minutesOutlook || {};
     const traj = mo.trajectory || [];
     const score = calcMinutesScore(u, moMode);
     const rosterScore = calcMinutesScore(u, 'roster');
     const adjScore = calcMinutesScore(u, 'adjusted');
     const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
-    const riskColor = mo.recruit_risk==='High'?'var(--amber)':mo.recruit_risk==='Medium'?'var(--sky)':'var(--emerald)';
-    const riskLabel = mo.recruit_risk==='High'?'High Demand':mo.recruit_risk==='Medium'?'Moderate':'Open';
+    const riskColor = mo.recruit_risk==='High'?'var(--amber)':mo.recruit_risk==='Medium-High'?'var(--amber)':mo.recruit_risk==='Medium'?'var(--sky)':'var(--emerald)';
+    const riskLabel = (mo.recruit_risk==='High'||mo.recruit_risk==='Medium-High')?'High Demand':mo.recruit_risk==='Medium'?'Moderate':'Open';
     const divFactor = MO_DIV_FACTOR[u.div]||1.0;
     const showAdj = moMode==='adjusted' && divFactor!==1.0;
+    const isOpen = moExpanded[u.id] !== false;
+    const rankNum = globalIdx+1;
 
-    cardsHtml += '<div class="mo-card'+(idx<3?' mo-top':'')+'">'+
-      '<div class="mo-card-head">'+
-        (idx<3?'<span class="mo-rank">#'+(idx+1)+'</span>':'')+
-        '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
-        '<span class="mo-school-name">'+u.full+'</span>'+
-        '<div style="display:flex;align-items:center;gap:6px;margin-left:auto">'+
-          (showAdj?
-            '<span style="font-size:9px;font-weight:700;color:var(--emerald);background:var(--emerald3);border-radius:4px;padding:1px 6px">×'+divFactor+' adj</span>':
-            '')+
-          '<span class="mo-score" style="color:'+scoreColor+'">'+score+'</span>'+
-        '</div>'+
-        '<a href="'+rosterUrl(u)+'" target="_blank" style="font-size:10px;font-weight:700;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:2px 8px;border-radius:5px;border:1px solid #c7d2fe;white-space:nowrap;margin-left:8px">📋 Roster →</a>'+
-      '</div>'+
-      '<div class="mo-card-body">'+
-        '<div class="mo-trajectory">';
+    cardsHtml +=
+      '<div class="mo-card'+(globalIdx<3?' mo-top':'')+'">'+
+        '<div class="mo-card-head" onclick="toggleMoCard(\''+u.id+'\')">'+
+          '<span class="mo-rank mo-rank-'+Math.min(rankNum,4)+'">#'+rankNum+'</span>'+
+          '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
+          '<span class="mo-school-name">'+u.full+'</span>'+
+          '<div style="display:flex;align-items:center;gap:6px;margin-left:auto">'+
+            (showAdj?'<span style="font-size:9px;font-weight:700;color:var(--emerald);background:var(--emerald3);border-radius:4px;padding:1px 6px">×'+divFactor+' adj</span>':'')+
+            '<span class="mo-score" style="color:'+scoreColor+'">'+score+'</span>'+
+          '</div>'+
+          '<a href="'+rosterUrl(u)+'" target="_blank" onclick="event.stopPropagation()" style="font-size:10px;font-weight:700;color:var(--indigo);text-decoration:none;background:var(--indigo3);padding:2px 8px;border-radius:5px;border:1px solid #c7d2fe;white-space:nowrap;margin-left:8px">📋 Roster →</a>'+
+          '<span class="mo-chevron'+(isOpen?' mo-chevron-open':'')+'">▾</span>'+
+        '</div>';
 
-    traj.forEach(t=>{
-      const barColor = t.pct>=80?'#3B6D11':t.pct>=60?'#639922':t.pct>=40?'#BA7517':'#A32D2D';
-      cardsHtml += '<div class="mo-traj-row">'+
-        '<div class="mo-traj-year">'+t.year+' · '+t.yr_label+'</div>'+
-        '<div class="mo-traj-bar"><div class="mo-traj-fill" style="width:'+t.pct+'%;background:'+barColor+'"></div></div>'+
-        '<div class="mo-traj-label">'+t.label+'</div>'+
-      '</div>';
-    });
+    if(isOpen){
+      cardsHtml +=
+        '<div class="mo-card-body">'+
+          '<div class="mo-trajectory">';
 
-    cardsHtml += '</div>'+
-      '<div class="mo-stats">'+
-        '<div class="mo-stat"><div class="mo-stat-num">'+mo.mf_total_2025+'</div><div class="mo-stat-lbl">MFs (2025)</div></div>'+
-        '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--emerald)">'+mo.cleared_before_2027+'</div><div class="mo-stat-lbl">Cleared by 2027</div></div>'+
-        '<div class="mo-stat"><div class="mo-stat-num">'+mo.rising_senior_2027_count+'</div><div class="mo-stat-lbl">2027 Seniors</div></div>'+
-        '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div><div class="mo-stat-lbl">2027 Juniors</div></div>'+
-        '<div class="mo-stat"><div class="mo-stat-num" style="color:'+riskColor+';font-size:13px;font-weight:800">'+riskLabel+'</div><div class="mo-stat-lbl">Entry Competition</div></div>'+
-      '</div>';
+      traj.forEach(t=>{
+        const barColor = t.pct>=80?'#3B6D11':t.pct>=60?'#639922':t.pct>=40?'#BA7517':'#A32D2D';
+        cardsHtml +=
+          '<div class="mo-traj-row">'+
+            '<div class="mo-traj-year">'+t.year+' · '+t.yr_label+'</div>'+
+            '<div class="mo-traj-bar"><div class="mo-traj-fill" style="width:'+t.pct+'%;background:'+barColor+'"></div></div>'+
+            '<div class="mo-traj-label">'+t.label+'</div>'+
+          '</div>';
+      });
 
-    if(mo.cleared_names && mo.cleared_names.length){
-      cardsHtml += '<div class="mo-names"><strong>Gone before Olivier arrives:</strong> '+mo.cleared_names.join(', ')+'</div>';
+      cardsHtml +=
+          '</div>'+
+          '<div class="mo-stats">'+
+            '<div class="mo-stat"><div class="mo-stat-num">'+mo.mf_total_2025+'</div><div class="mo-stat-lbl">MFs (2025)</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--emerald)">'+mo.cleared_before_2027+'</div><div class="mo-stat-lbl">Cleared by 2027</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num">'+mo.rising_senior_2027_count+'</div><div class="mo-stat-lbl">2027 Seniors</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div><div class="mo-stat-lbl">2027 Juniors</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num" style="color:'+riskColor+';font-size:13px;font-weight:800">'+riskLabel+'</div><div class="mo-stat-lbl">Entry Competition</div></div>'+
+          '</div>';
+
+      if(mo.cleared_names && mo.cleared_names.length){
+        cardsHtml += '<div class="mo-names"><strong>Gone before Olivier arrives:</strong> '+mo.cleared_names.join(', ')+'</div>';
+      }
+      if(mo.rising_junior_2027_names && mo.rising_junior_2027_names.length){
+        cardsHtml += '<div class="mo-names mo-names-warn"><strong>Primary 2027-junior blockers:</strong> '+mo.rising_junior_2027_names.join(', ')+'</div>';
+      }
+      if(mo.trajectoryNote){
+        cardsHtml += '<div style="font-size:11px;color:var(--muted);margin-top:.4rem;line-height:1.5;font-style:italic">'+mo.trajectoryNote+'</div>';
+      }
+      if(moMode==='adjusted'){
+        cardsHtml += '<div style="font-size:10px;color:var(--hint);margin-top:.4rem;padding-top:.4rem;border-top:1px solid var(--border)">'+
+          'Roster score: <strong>'+rosterScore+'</strong> → Olivier-adjusted: <strong style="color:'+scoreColor+'">'+adjScore+'</strong>'+
+          (divFactor!==1.0?' ('+u.div+' ×'+divFactor+')':'(D1 — no adjustment)')+
+        '</div>';
+      }
+
+      cardsHtml += '</div>';
     }
-    if(mo.rising_junior_2027_names && mo.rising_junior_2027_names.length){
-      cardsHtml += '<div class="mo-names mo-names-warn"><strong>Primary 2027-junior blockers:</strong> '+mo.rising_junior_2027_names.join(', ')+'</div>';
-    }
 
-    // Show both scores when in adjusted mode so user can compare
-    if(moMode==='adjusted'){
-      cardsHtml += '<div style="font-size:10px;color:var(--hint);margin-top:.4rem;padding-top:.4rem;border-top:1px solid var(--border)">'+
-        'Roster score: <strong>'+rosterScore+'</strong> → Olivier-adjusted: <strong style="color:'+scoreColor+'">'+adjScore+'</strong>'+
-        (divFactor!==1.0?' ('+u.div+' ×'+divFactor+')':'(D1 — no adjustment)')+
-      '</div>';
-    }
-
-    cardsHtml += '</div></div>';
+    cardsHtml += '</div>';
   });
 
   cardsHtml += '</div>';
@@ -2726,7 +2802,7 @@ function buildMinutesHtml(cardsOnly){
   if(cardsWrap) cardsWrap.innerHTML = cardsHtml;
 }
 
-// CSS for toggle buttons — injected once
+// CSS injected once
 (function(){
   if(document.getElementById('mo-toggle-style')) return;
   const s = document.createElement('style');
@@ -2736,6 +2812,24 @@ function buildMinutesHtml(cardsOnly){
     .mo-toggle-btn:hover{background:var(--surface3);color:var(--text)}
     .mo-toggle-active{background:var(--indigo)!important;border-color:var(--indigo)!important;color:#fff!important}
     .mo-mode-desc{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .75rem;font-size:12px;color:var(--text);line-height:1.5;margin-bottom:.5rem}
+    .mo-tier-btn{padding:3px 10px;font-size:11px;font-weight:700;border:1px solid var(--border);border-radius:20px;cursor:pointer;background:var(--surface2);font-family:inherit;color:var(--muted);transition:all .15s}
+    .mo-tier-btn:hover{background:var(--surface3);color:var(--text)}
+    .mo-tier-cnt{font-size:10px;font-weight:700;margin-left:2px;opacity:.75}
+    .mo-tier-all.mo-tier-active{background:var(--surface3);color:var(--text);border-color:var(--border2)}
+    .mo-tier-high.mo-tier-active{background:var(--emerald3);color:var(--emerald);border-color:var(--emerald)}
+    .mo-tier-mid.mo-tier-active{background:var(--amber3);color:var(--amber);border-color:var(--amber)}
+    .mo-tier-low.mo-tier-active{background:var(--rose3);color:var(--rose);border-color:var(--rose)}
+    .mo-showhide-btn{padding:3px 12px;font-size:11px;font-weight:700;border:1px solid var(--border);border-radius:7px;cursor:pointer;background:var(--surface2);font-family:inherit;color:var(--muted);transition:all .15s}
+    .mo-showhide-btn:hover{background:var(--surface3);color:var(--text)}
+    .mo-card-head{cursor:pointer;display:flex;align-items:center;gap:.5rem;padding:.6rem .75rem;border-radius:inherit}
+    .mo-card-head:hover{background:var(--surface2)}
+    .mo-chevron{font-size:14px;color:var(--muted);margin-left:6px;transition:transform .2s;display:inline-block}
+    .mo-chevron-open{transform:rotate(180deg)}
+    .mo-rank{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;font-size:11px;font-weight:800;flex-shrink:0}
+    .mo-rank-1{background:#fbbf24;color:#78350f}
+    .mo-rank-2{background:#d1d5db;color:#374151}
+    .mo-rank-3{background:#f97316;color:#7c2d12}
+    .mo-rank-4{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
   `;
   document.head.appendChild(s);
 })();

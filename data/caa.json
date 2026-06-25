@@ -312,12 +312,12 @@
     },
     "mapX": 509,
     "mapY": 188,
-    "fitOlivier": 60,
+    "fitOlivier": 56,
     "lensScores": {
-      "overall": 60,
+      "overall": 56,
       "soccer": 65,
       "academic": 70,
-      "minutes": 50,
+      "minutes": 28,
       "lifestyle": 0,
       "value": 62
     },
@@ -391,7 +391,52 @@
     "url": "https://tribeathletics.com/sports/mens-soccer",
     "domain": "wm.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2026": 7,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Diego Garciarena",
+        "Landon Cartwright",
+        "Gabe Ruitenberg"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Alex Garrison",
+        "Max Cooper"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Clem Cartwright",
+        "Aiden Sena"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 18,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 32,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 58,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "3 of 7 MFs clear before Olivier arrives (Sr×2, Gr×1). 4 remain including 2 rising juniors — competitive but manageable for a quality recruit."
     },
     "color": [
       "#dbeafe",
@@ -535,12 +580,12 @@
     },
     "mapX": 535,
     "mapY": 152,
-    "fitOlivier": 64,
+    "fitOlivier": 58,
     "lensScores": {
-      "overall": 64,
+      "overall": 58,
       "soccer": 65,
       "academic": 55,
-      "minutes": 50,
+      "minutes": 19,
       "lifestyle": 50,
       "value": 45
     },
@@ -615,7 +660,51 @@
     "url": "https://hofstraathletics.com/sports/mens-soccer",
     "domain": "hofstra.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2026": 6,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Henri Poll",
+        "Charlie Blair"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Owen Haviland"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "James York",
+        "Hayes Laibe",
+        "Konstantinos Karageorgis"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 12,
+          "label": "Fringe squad"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 22,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 48,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 75,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "Only 2 of 6 MFs clear. Heavy rebuild load with 3 rising juniors (Jr by 2027) — Olivier would enter a crowded midfield. Note: James York (#14) is Australian from Melbourne."
     },
     "color": [
       "#dbeafe",
@@ -759,12 +848,12 @@
     },
     "mapX": 544,
     "mapY": 136,
-    "fitOlivier": 55,
+    "fitOlivier": 56,
     "lensScores": {
-      "overall": 55,
+      "overall": 56,
       "soccer": 60,
       "academic": 75,
-      "minutes": 50,
+      "minutes": 56,
       "lifestyle": 50,
       "value": 38
     },
@@ -837,7 +926,56 @@
     "url": "https://gonu.com/sports/mens-soccer",
     "domain": "northeastern.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 12,
+      "cleared_before_2027": 10,
+      "cleared_names": [
+        "Jaden Prado",
+        "Alec Kenison",
+        "Kade Tepe",
+        "Fraser Brown",
+        "Christoph Schurz",
+        "Tomas Sciarra",
+        "Bryce Flowers",
+        "Richard Conces",
+        "Gus Mendieta",
+        "Brady Elmblad"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Derian Berisha",
+        "Shai Saarony"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 45,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 90,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster (+1 applied). Massive 10/12 MF turnover — only 2 Freshmen remain by Fall 2027. Elite opportunity window. Northeastern's co-op model means fewer players per year."
     },
     "color": [
       "#fee2e2",
@@ -981,12 +1119,12 @@
     },
     "mapX": 524,
     "mapY": 159,
-    "fitOlivier": 64,
+    "fitOlivier": 58,
     "lensScores": {
-      "overall": 64,
+      "overall": 58,
       "soccer": 58,
       "academic": 62,
-      "minutes": 50,
+      "minutes": 21,
       "lifestyle": 50,
       "value": 45
     },
@@ -1060,7 +1198,57 @@
     "url": "https://drexeldragons.com/sports/mens-soccer",
     "domain": "drexel.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2026": 12,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Tiago Lima-Bittencourt",
+        "Will Starker",
+        "Zain Akhtar",
+        "Max Haberl",
+        "Julian Pittaoulis"
+      ],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Levi Christie",
+        "Morgan Worsfold-Gregg",
+        "Mo Diallo",
+        "Gonzalo Alberola"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Gianluca Grubic",
+        "Jack Shannon",
+        "Leon Park"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 12,
+          "label": "Fringe squad"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 25,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 75,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 of 12 MFs clear — but 7 remain across Year 1 and 2. Deep MF corps makes early minutes competitive. Opportunity improves Year 3+ as classes turn over."
     },
     "color": [
       "#fef9c3",
@@ -1204,12 +1392,12 @@
     },
     "mapX": 525,
     "mapY": 164,
-    "fitOlivier": 74,
+    "fitOlivier": 70,
     "lensScores": {
-      "overall": 74,
+      "overall": 70,
       "soccer": 65,
       "academic": 62,
-      "minutes": 50,
+      "minutes": 30,
       "lifestyle": 0,
       "value": 68
     },
@@ -1283,7 +1471,48 @@
     "url": "https://bluehens.com/sports/mens-soccer",
     "domain": "udel.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2026": 4,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Rich Monath",
+        "Rocco Pastore"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Liam Penny",
+        "Freddy Jeffreys"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "Small 4-player MF pool — 2 clear, 2 remain (both So). Only 2 competitors in Year 1, suggesting real starting potential for a quality CMF like Olivier."
     },
     "color": [
       "#fef9c3",
@@ -1427,12 +1656,12 @@
     },
     "mapX": 497,
     "mapY": 211,
-    "fitOlivier": 69,
+    "fitOlivier": 61,
     "lensScores": {
-      "overall": 69,
+      "overall": 61,
       "soccer": 58,
       "academic": 58,
-      "minutes": 50,
+      "minutes": 12,
       "lifestyle": 0,
       "value": 58
     },
@@ -1503,7 +1732,62 @@
     "url": "https://elonphoenix.com/sports/mens-soccer",
     "domain": "elon.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2026": 17,
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Jordin Wilson",
+        "Daire McCarthy",
+        "Dominik Renz",
+        "JP Quigley",
+        "Ben Madore",
+        "Carlos Levy",
+        "Noah Sonne Kargo"
+      ],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [
+        "Alex Wharton",
+        "Tønnes Daland",
+        "Oscar Tonidandel",
+        "Will Dunn",
+        "Graham Jones"
+      ],
+      "rising_junior_2027_count": 5,
+      "rising_junior_2027_names": [
+        "Diego Thompson",
+        "Mohamed Kallon",
+        "Tristan D'Adamo",
+        "Henry Mertsch",
+        "Robbie Reeves"
+      ],
+      "recruit_risk": "Very High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 8,
+          "label": "Fringe squad"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 35,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 65,
+          "label": "Likely starter"
+        }
+      ],
+      "trajectoryNote": "Large 17-player MF pool with 10 remaining by Fall 2027. Highly competitive environment — Olivier would need exceptional performance to break through. Opportunity grows Year 3+ as pool thins."
     },
     "color": [
       "#fed7aa",
@@ -1647,12 +1931,12 @@
     },
     "mapX": 531,
     "mapY": 156,
-    "fitOlivier": 64,
+    "fitOlivier": 65,
     "lensScores": {
-      "overall": 64,
+      "overall": 65,
       "soccer": 52,
       "academic": 48,
-      "minutes": 50,
+      "minutes": 56,
       "lifestyle": 0,
       "value": 52
     },
@@ -1723,7 +2007,49 @@
     "url": "https://monmouthhawks.com/sports/mens-soccer",
     "domain": "monmouth.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 5,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Elias Stingl",
+        "Victor Andersson",
+        "Otto Moosbrugger",
+        "Kevin DeCapua"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Tommy Damiano"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Very Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 45,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 65,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 90,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster (+1 applied). Elite window — 4 of 5 MFs clear before Olivier arrives. Only 1 rising senior remains in Year 1. Monmouth actively rebuilding CAA program."
     },
     "color": [
       "#dbeafe",

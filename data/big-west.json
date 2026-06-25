@@ -332,12 +332,12 @@
     },
     "mapX": 81,
     "mapY": 198,
-    "fitOlivier": 78,
+    "fitOlivier": 76,
     "lensScores": {
-      "overall": 78,
+      "overall": 76,
       "soccer": 65,
       "academic": 65,
-      "minutes": 50,
+      "minutes": 42,
       "lifestyle": 85,
       "value": 85
     },
@@ -443,7 +443,51 @@
     "url": "https://gopoly.com/sports/mens-soccer",
     "domain": "calpoly.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2026": 6,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Diego Guerra",
+        "Rylan Firouznam",
+        "Brandon Newman",
+        "Benji Jimenez"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Cole Aman"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Liam Lambert"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "4 of 6 MFs clear (R-Jr×2, Gr, Sr). Only 1 rising senior and 1 rising junior remain — good entry opportunity. Cal Poly's compact squad means Olivier could feature regularly from Year 1."
     },
     "acuUnits": [
       {
@@ -555,12 +599,12 @@
     },
     "mapX": 77,
     "mapY": 172,
-    "fitOlivier": 69,
+    "fitOlivier": 63,
     "lensScores": {
-      "overall": 69,
+      "overall": 63,
       "soccer": 62,
       "academic": 70,
-      "minutes": 50,
+      "minutes": 21,
       "lifestyle": 60,
       "value": 58
     },
@@ -668,7 +712,53 @@
     "url": "https://ucdavisaggies.com/sports/mens-soccer",
     "domain": "ucdavis.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2026": 8,
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Gabriel Haggerty",
+        "Declan Horio",
+        "Cole Powell"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Jackson Richardson",
+        "Cole McLemore"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Diego Orosco",
+        "Ronaldo Melgoza",
+        "Chris Aguilar"
+      ],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 12,
+          "label": "Fringe squad"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 25,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 75,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "Only 3 of 8 MFs clear — 5 remain across Year 1-2 including 3 rising juniors. Competitive midfield at a strong academic school. Opportunity opens more in Year 3+."
     },
     "acuUnits": [
       {
@@ -780,12 +870,12 @@
     },
     "mapX": 100,
     "mapY": 208,
-    "fitOlivier": 73,
+    "fitOlivier": 71,
     "lensScores": {
-      "overall": 73,
+      "overall": 71,
       "soccer": 65,
       "academic": 68,
-      "minutes": 50,
+      "minutes": 42,
       "lifestyle": 84,
       "value": 62
     },
@@ -895,7 +985,51 @@
     "url": "https://ucirvineantares.com/sports/mens-soccer",
     "domain": "uci.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 7,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Hunny Yoo",
+        "Isaiahs Gutierrez",
+        "Justin Conyers",
+        "Isaac Powell",
+        "Braden Ferreira"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Luis Gomez",
+        "Matt Hagan"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster (+1 applied). 5 of 7 MFs clear — only 2 Freshmen (now So) remain. Strong opportunity window. UCI is Anteaters — warm Irvine campus, OC lifestyle."
     },
     "acuUnits": [
       {
@@ -1007,12 +1141,12 @@
     },
     "mapX": 106,
     "mapY": 212,
-    "fitOlivier": 74,
+    "fitOlivier": 71,
     "lensScores": {
-      "overall": 74,
+      "overall": 71,
       "soccer": 55,
       "academic": 60,
-      "minutes": 55,
+      "minutes": 42,
       "lifestyle": 55,
       "value": 68
     },
@@ -1118,7 +1252,51 @@
     "url": "https://ucrhighlanders.com/sports/mens-soccer",
     "domain": "ucr.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 7,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Tarek Hamideh",
+        "Ethan Gonzalez",
+        "Jona Martinez",
+        "Diego Ramirez",
+        "Kevin Meza"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Silvio Termini",
+        "Adrian Diaz"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster (+1 applied). 5 of 7 CMs/MFs clear — strong turnover. Only 2 Freshmen (now So) compete in Year 1. Riverside campus inland SoCal, warm."
     },
     "acuUnits": [
       {
@@ -1235,7 +1413,7 @@
       "overall": 64,
       "soccer": 65,
       "academic": 80,
-      "minutes": 50,
+      "minutes": 52,
       "lifestyle": 95,
       "value": 65
     },
@@ -1343,7 +1521,53 @@
     "url": "https://ucsdtritons.com/sports/mens-soccer",
     "domain": "ucsd.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 9,
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Nolan Sanchez",
+        "Adam Hillis",
+        "Bryce Barnum",
+        "Ryan Namdar",
+        "James Redington",
+        "Keenai Braun",
+        "Mhone Bogonko"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Tyler Cash",
+        "Sagar Patel"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Very Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 40,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 90,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster (+1 applied). Exceptional 7 of 9 MF turnover — only 2 Freshmen (now So) remain. Near-elite opportunity. UCSD La Jolla is premium coastal lifestyle."
     },
     "acuUnits": [
       {
@@ -1455,12 +1679,12 @@
     },
     "mapX": 102,
     "mapY": 211,
-    "fitOlivier": 84,
+    "fitOlivier": 80,
     "lensScores": {
-      "overall": 84,
+      "overall": 80,
       "soccer": 55,
       "academic": 50,
-      "minutes": 60,
+      "minutes": 42,
       "lifestyle": 74,
       "value": 90
     },
@@ -1567,7 +1791,54 @@
     "url": "https://fullertontitans.com/sports/mens-soccer",
     "domain": "fullerton.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total_2025": 10,
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Matthew Sacristan",
+        "Pablo Obrador-Ibanez",
+        "Jose de la Torre",
+        "Fernando Valenzuela",
+        "Benjamin Bjorkman",
+        "Cesar Aubour",
+        "Nikolas Wheeler-Quintanilla"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Alex Lugo",
+        "Aiden Bengard",
+        "Griffin Blair"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Key contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "⚠️ 2025 roster (+1 applied). 7 of 10 MFs clear — only 3 Freshmen (now So) remain. Strong opportunity. Fullerton warm campus near LA/Anaheim. CSUF is already a top scorer for Olivier."
     },
     "acuUnits": [
       {

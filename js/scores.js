@@ -43,18 +43,36 @@ function gpaStatus(convertedGpa, minEntry) {
 }
 
 // ── Cost score ───────────────────────────────────────────────────────────────
-// Returns 0.0–1.0 based on annual USD cost vs athlete's AUD budget
+// Returns 0.0–1.0 based on annual USD cost vs athlete's AUD budget.
+// Uses linear interpolation between anchor points — no score cliffs at boundaries.
+// A school costing 1% more than a threshold no longer loses 15 fit points.
 function costScore(school, athlete) {
   if (!school.fin || !school.fin.costNum) return 0.5;
   const budgetUSD = athlete.budgetAUD / athlete.fxRate;
-  // Full marks if cost ≤ 50% of budget (leaves room for scholarships)
-  // Zero marks if cost > 130% of budget (unaffordable even with aid)
   const ratio = school.fin.costNum / budgetUSD;
-  if (ratio <= 0.40) return 1.00;
-  if (ratio <= 0.60) return 0.90;
-  if (ratio <= 0.80) return 0.75;
-  if (ratio <= 1.00) return 0.55;
-  if (ratio <= 1.20) return 0.30;
+
+  // [cost/budget ratio, score] anchor points
+  const anchors = [
+    [0.00, 1.00],
+    [0.40, 1.00],
+    [0.60, 0.90],
+    [0.80, 0.75],
+    [1.00, 0.55],
+    [1.20, 0.30],
+    [1.40, 0.10],
+  ];
+
+  if (ratio <= anchors[0][0]) return anchors[0][1];
+  if (ratio >= anchors[anchors.length - 1][0]) return anchors[anchors.length - 1][1];
+
+  for (let i = 0; i < anchors.length - 1; i++) {
+    const [r1, s1] = anchors[i];
+    const [r2, s2] = anchors[i + 1];
+    if (ratio >= r1 && ratio <= r2) {
+      const t = (ratio - r1) / (r2 - r1);
+      return parseFloat((s1 + t * (s2 - s1)).toFixed(4));
+    }
+  }
   return 0.10;
 }
 

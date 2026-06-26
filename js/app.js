@@ -109,6 +109,10 @@ async function fetchWithRetry(url, maxAttempts = 3) {
 }
 
 async function loadData() {
+  // Show spinner immediately — user sees something while JSON fetches
+  const cc = document.getElementById('cards-container');
+  if (cc) cc.innerHTML = '<div class="app-spinner"><div class="app-spinner-ring"></div><span class="app-spinner-lbl">Loading schools…</span></div>';
+
   try {
     const base = window.DATA_BASE_URL || './data/';
 
@@ -180,6 +184,13 @@ function initApp() {
 
   renderDashboard();
   renderFilterChips();
+  // Auto-expand filter panel on desktop; leave collapsed on mobile
+  if (window.innerWidth >= 640) {
+    const fb = document.getElementById('filter-panel-body');
+    const ftb = document.getElementById('filter-toggle-btn');
+    if (fb) { fb.style.display = ''; }
+    if (ftb) { ftb.textContent = '▲ Hide filters'; }
+  }
   renderCards();
   renderComparePage();
   renderConferences();
@@ -1366,10 +1377,18 @@ function closeModal(){
   }
 }
 function showPage(id,btn){
+  // Save scroll position of the current active page before switching
+  const curPage = document.querySelector('.page.active');
+  if (curPage) {
+    sessionStorage.setItem('scroll_' + curPage.id, String(window.scrollY));
+  }
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   document.getElementById('page-'+id).classList.add('active');btn.classList.add('active');
   if(id==='coaches') setTimeout(initCoachTabs, 0);
+  // Restore scroll position for the new page
+  const saved = sessionStorage.getItem('scroll_page-' + id);  // key matches curPage.id = 'page-<id>'
+  window.scrollTo(0, saved ? parseInt(saved, 10) : 0);
 }
 // ══════════════════════════════════════════════════
 // ATAR → GPA CONVERSION ENGINE
@@ -1816,22 +1835,23 @@ function renderFilterChips() {
     const container = document.getElementById('conf-filter-chips');
     if (!container) return;
 
-    // Find which known chip keys are present in loaded data
-    const presentKeys = new Set();
+    // Count schools per conf-group key
+    const keyCounts = {};
     unis.forEach(u => {
       const key = resolveConfGroup(u.conf || '');
-      if (CONF_CHIP_LABELS[key]) presentKeys.add(key);
+      if (CONF_CHIP_LABELS[key]) keyCounts[key] = (keyCounts[key] || 0) + 1;
     });
 
-    // Render in prestige order, only present keys
-    CONF_CHIP_ORDER.filter(k => presentKeys.has(k)).forEach(ck => {
+    // Render in prestige order, only keys that have schools
+    CONF_CHIP_ORDER.filter(k => keyCounts[k]).forEach(ck => {
       const label = CONF_CHIP_LABELS[ck] || ck.toUpperCase();
+      const count = keyCounts[ck];
       const btn = document.createElement('button');
       btn.className = 'fchip';
       btn.dataset.filter = 'confgroup';
       btn.dataset.val = ck;
       btn.onclick = function(){ toggleFilter(this); };
-      btn.textContent = label;
+      btn.innerHTML = label + ' <span class="fchip-count">' + count + '</span>';
       container.appendChild(btn);
     });
   } catch(e) { console.error('renderFilterChips failed:', e); }

@@ -682,6 +682,10 @@ function updateMapDots() {
     circle.style.cursor = 'pointer';
     circle.style.transition = 'opacity .2s';
 
+    const titleEl = document.createElementNS(ns, 'title');
+    titleEl.textContent = (u.full || u.name) + ' — Fit ' + (u.fitOlivier || '—');
+    circle.appendChild(titleEl);
+
     circle.addEventListener('mouseenter', function() {
       showHoverInfo(u);
       highlightDot(u.id);

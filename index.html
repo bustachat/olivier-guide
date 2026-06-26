@@ -97,6 +97,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-
 .fchip{background:var(--surface2);border:1px solid var(--border);color:var(--muted);padding:3px 9px;border-radius:5px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;letter-spacing:.02em;}
 .fchip:hover{border-color:var(--indigo2);color:var(--indigo);background:var(--indigo3);}
 .fchip.active{background:var(--indigo);border-color:var(--indigo);color:#fff;font-weight:700;}
+.fchip-count{opacity:.7;font-weight:500;font-size:10px;}.fchip.active .fchip-count{opacity:.85;color:#e0e7ff;}
 .sort-pill{background:var(--bg);border:1.5px solid var(--border2);color:var(--muted);padding:4px 12px;border-radius:14px;font-size:11px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;}
 .sort-pill:hover{border-color:var(--indigo2);color:var(--indigo);background:var(--indigo3);}
 .sort-pill.active{background:var(--indigo);border-color:var(--indigo);color:#fff;font-weight:700;}
@@ -467,6 +468,11 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   .filter-row::-webkit-scrollbar{height:3px;}
   .filter-row::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
   .fchip{flex-shrink:0;}
+  /* M3 — mobile modal */
+  .modal-overlay{padding:.5rem .4rem;}
+  .modal-body{max-height:82vh;padding:1rem 1rem;}
+  .mtab{font-size:11px;padding:.55rem .65rem;}
+  .close-btn{width:36px;height:36px;font-size:18px;}
 }
 /* ── v20: Search box ── */
 .search-schools-wrap{position:relative;display:flex;align-items:center;flex:1;min-width:160px;max-width:280px;}
@@ -747,6 +753,10 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 }
 @keyframes score-pulse{0%{opacity:1}30%{opacity:.35}60%{opacity:1}100%{opacity:1}}
 .score-pulse{animation:score-pulse .55s ease}
+@keyframes spin{to{transform:rotate(360deg)}}
+.app-spinner{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5rem 1rem;gap:1rem}
+.app-spinner-ring{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--indigo);border-radius:50%;animation:spin .8s linear infinite}
+.app-spinner-lbl{font-size:13px;color:var(--muted);font-weight:500}
 
 </style>
 </head>

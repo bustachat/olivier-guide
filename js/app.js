@@ -737,6 +737,20 @@ function renderComparePage(){
     ['Climate',u=>`<div class="cval">${u.warm?'☀ Warm':'⛅ Mixed'}</div>`],
     ['City Campus',u=>`<div class="cval ${u.city?'good':''}">${u.city?'✅ Yes':'⚠ Smaller'}</div>`],
     ['Overall Fit',u=>{const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
+    ['Minutes Outlook',u=>{
+      const mo=u.minutesOutlook||{};
+      if(!mo.available) return '<div style="color:var(--muted);font-size:11px">Not available</div>';
+      const score=(u.lensScores||{}).minutes||0;
+      const sc2=score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
+      const traj=mo.trajectory||[];
+      const yr1=traj.find(t=>t.year===1)||traj[0];
+      const yr2=traj.find(t=>t.year===2)||traj[1];
+      return `<div style="font-size:18px;font-weight:800;color:${sc2}">${score}</div>`+
+        `<div style="font-size:11px;color:var(--muted);margin-top:2px">`+
+        (yr1?`Yr1: ${yr1.pct}%`:'')+
+        (yr2?` · Yr2: ${yr2.pct}%`:'')+
+        `</div>`;
+    }],
     ['Tactical Dev',u=>u.devScores?`<div style="color:${sc(u.devScores.tactical)};font-weight:600">${u.devScores.tactical}/100</div>`:'<div style="color:var(--muted)">—</div>'],
     ['Technical Dev',u=>u.devScores?`<div style="color:${sc(u.devScores.technical)};font-weight:600">${u.devScores.technical}/100</div>`:'<div style="color:var(--muted)">—</div>'],
     ['Website',u=>`<a href="${u.url}" target="_blank" style="color:var(--indigo);font-size:12px;font-weight:600">Visit →</a>`],

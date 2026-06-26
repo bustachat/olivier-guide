@@ -1559,6 +1559,7 @@ const CONF_ALIAS_MAP = {
   'ivy league': 'ivy-league', 'ivy': 'ivy-league',
   'ssc': 'ssc', 'sunshine state': 'ssc',
   'ccaa': 'ccaa', 'california collegiate': 'ccaa',
+  'cacc': 'cacc', 'central atlantic collegiate': 'cacc',
   'lsc': 'lsc', 'lone star': 'lsc',
   'sac': 'sac', 'sooner athletic': 'sac',
   'sun conference': 'sun-conference', 'sun': 'sun-conference',
@@ -1811,6 +1812,7 @@ const CONF_CHIP_LABELS = {
   // D2
   'ssc':              'SSC',
   'ccaa':             'CCAA',
+  'cacc':             'CACC',
   'lsc':              'LSC',
   // NAIA
   'sac':              'SAC',
@@ -1827,7 +1829,7 @@ const CONF_CHIP_ORDER = [
   'sec','acc','big-ten','big-east','aac','big-west',
   'caa','wac','mac','wcc','asun','america-east',
   'ivy-league',
-  'ssc','ccaa','lsc',
+  'ssc','ccaa','cacc','lsc',
   'sac','sun-conference',
   'sciac',
   'cccaa','njcaa',

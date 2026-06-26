@@ -1604,9 +1604,25 @@ function applyFilters(){
     sec.style.display=hasVisible?'':'none';
   });
   updateFilterSummary(visible);
-  const hasAny = Object.values(activeFilters).some(s=>s.size>0);
+  const hasAny = Object.values(activeFilters).some(s=>s.size>0) || !!searchKeyword;
   const clearBtn = document.getElementById('filter-clear-btn');
-  if(clearBtn) clearBtn.style.display = hasAny ? '' : 'none';
+  if(clearBtn) clearBtn.style.display = (Object.values(activeFilters).some(s=>s.size>0)) ? '' : 'none';
+
+  // Empty state — only show when filters are active and nothing matches
+  let emptyEl = document.getElementById('cards-empty-state');
+  if (!emptyEl) {
+    emptyEl = document.createElement('div');
+    emptyEl.id = 'cards-empty-state';
+    emptyEl.style.cssText = 'padding:2.5rem 1.5rem;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:14px;margin:1rem 0;display:none';
+    emptyEl.innerHTML =
+      '<div style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.4rem">No schools match your filters</div>' +
+      '<p style="font-size:12.5px;color:var(--muted);margin:0 0 1rem;line-height:1.6">' +
+        'Try removing a filter, expanding the division, or adjusting the budget range.' +
+      '</p>' +
+      '<button onclick="clearAllFilters()" style="background:var(--indigo);color:#fff;border:none;border-radius:8px;padding:6px 18px;font-size:12.5px;font-weight:700;cursor:pointer">Clear all filters</button>';
+    if (container) container.appendChild(emptyEl);
+  }
+  emptyEl.style.display = (visible === 0 && hasAny) ? '' : 'none';
 }
 
 function clearAllFilters(){

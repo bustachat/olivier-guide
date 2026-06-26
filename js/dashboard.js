@@ -77,6 +77,7 @@ function saveSlStatus(id, status) {
   const map = loadSlStatuses();
   map[id] = status;
   localStorage.setItem(slStatusKey(), JSON.stringify(map));
+  if (typeof showToast === 'function') showToast('Status saved: ' + status, 'ok');
   // Update in-memory dashAthlete shortlist
   if (dashAthlete.shortlist) {
     dashAthlete.shortlist = dashAthlete.shortlist.map(entry => {
@@ -169,6 +170,7 @@ function buildDashboardShell() {
       <div class="dash-ticks">
         <span>$20k</span><span>$50k</span><span>$75k</span><span>$100k</span>
       </div>
+      <div id="dash-fx-note" style="font-size:10px;color:var(--hint);margin-top:3px;letter-spacing:.01em"></div>
       <div class="dash-sp-result" id="dash-bud-result">— schools within budget</div>
     </div>
   </div>

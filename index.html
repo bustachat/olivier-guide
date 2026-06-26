@@ -110,6 +110,9 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-
 .filter-clear-btn:hover{background:var(--rose2);color:#fff;}
 .filter-toggle-btn{background:var(--surface3);border:1px solid var(--border2);color:var(--indigo);padding:3px 10px;border-radius:7px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;}
 .filter-result-count{font-size:11px;font-weight:700;color:var(--indigo);background:var(--indigo3);padding:1px 8px;border-radius:8px;}
+.active-filter-tag{display:inline-flex;align-items:center;gap:3px;background:var(--indigo3);color:var(--indigo);font-size:11px;font-weight:600;padding:2px 7px 2px 8px;border-radius:20px;margin-left:4px;border:1px solid #c7d2fe;}
+.active-filter-rm{background:none;border:none;color:var(--indigo);cursor:pointer;font-size:13px;line-height:1;padding:0 0 0 2px;opacity:.7;font-weight:700;}
+.active-filter-rm:hover{opacity:1;}
 /* ── Redesigned Cards ── */
 .ucard{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:box-shadow .15s,border-color .15s;position:relative;display:flex;flex-direction:column;}
 .ucard:hover{box-shadow:0 6px 20px rgba(0,0,0,.08);border-color:var(--border2);}
@@ -742,6 +745,8 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   .coach-cards{grid-template-columns:1fr;}
   .conf-cards{grid-template-columns:1fr;}
 }
+@keyframes score-pulse{0%{opacity:1}30%{opacity:.35}60%{opacity:1}100%{opacity:1}}
+.score-pulse{animation:score-pulse .55s ease}
 
 </style>
 </head>

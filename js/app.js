@@ -74,6 +74,14 @@ function applyFxToUI(fx) {
       </div>`;
   }
 
+  // Dashboard budget slider FX note
+  const dashFxNote = document.getElementById('dash-fx-note');
+  if (dashFxNote) {
+    dashFxNote.textContent = fxIsLive
+      ? `Live rate: 1 USD = ${fx.toFixed(2)} AUD`
+      : `Default rate: 1 USD = ${fx.toFixed(2)} AUD — may differ from live`;
+  }
+
   // Re-render comparison bars with new rate
   if (typeof renderFinComparisonBars === 'function') renderFinComparisonBars();
   // Re-render model if a school is already selected
@@ -195,6 +203,11 @@ const FOCUSABLE = 'button:not([disabled]), [href], input:not([disabled]), select
 let modalTriggerEl = null;
 
 function initModalFocusTrap() {
+  // Click the dark overlay (not the modal card itself) to close
+  document.getElementById('modal').addEventListener('click', e => {
+    if (e.target === document.getElementById('modal')) closeModal();
+  });
+
   document.addEventListener('keydown', e => {
     if (!currentModalId) return;
     const overlay = document.getElementById('modal');
@@ -408,6 +421,40 @@ function applyLens(lensKey){
 // ═══ Application logic ═══════════════════════════════════════════════════════
 let selectedIds=new Set();
 let currentModalId = null;
+
+// ── Toast notifications ───────────────────────────────────────────────────────
+// showToast(msg, type) — type: 'info' (default) | 'warn' | 'ok'
+function showToast(msg, type) {
+  let toast = document.getElementById('app-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'app-toast';
+    toast.style.cssText = [
+      'position:fixed','bottom:1.5rem','left:50%','transform:translateX(-50%) translateY(20px)',
+      'padding:9px 18px','border-radius:10px','font-size:13px','font-weight:600',
+      'box-shadow:0 4px 16px rgba(0,0,0,.14)','z-index:9999',
+      'opacity:0','transition:opacity .2s,transform .2s','pointer-events:none',
+      'white-space:nowrap',
+    ].join(';');
+    document.body.appendChild(toast);
+  }
+  const colors = {
+    warn: ['#451a03','#fef3c7'],
+    ok:   ['#052e16','#dcfce7'],
+    info: ['#0f172a','#e0e7ff'],
+  };
+  const [fg, bg] = colors[type] || colors.info;
+  toast.style.background = bg;
+  toast.style.color = fg;
+  toast.textContent = msg;
+  toast.style.opacity = '1';
+  toast.style.transform = 'translateX(-50%) translateY(0)';
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateX(-50%) translateY(20px)';
+  }, 2800);
+}
 function sc(s){return s>=90?'#059669':s>=80?'#d97706':'#e11d48';}
 function chipLabel(pos){
   if(!pos) return '—';
@@ -646,7 +693,7 @@ function buildCard(u){
 
 function toggleCompare(id,btn){
   if(selectedIds.has(id)){selectedIds.delete(id);btn.textContent='+ Compare';btn.classList.remove('selected');}
-  else{if(selectedIds.size>=4){alert('Max 4 schools. Remove one first.');return;}selectedIds.add(id);btn.textContent='✓ In Compare';btn.classList.add('selected');}
+  else{if(selectedIds.size>=4){showToast('Max 4 schools — remove one first','warn');return;}selectedIds.add(id);btn.textContent='✓ In Compare';btn.classList.add('selected');}
   document.getElementById('ccount').textContent=selectedIds.size;
   renderComparePage();
 }
@@ -1401,6 +1448,12 @@ function setScoreMode(mode) {
   );
   recalculateAllScores(athleteConfig, currentAtarGpa);
   updateAtarCounts();
+  // Brief pulse so user sees scores just changed
+  document.querySelectorAll('.ss-val').forEach(el => {
+    el.classList.remove('score-pulse');
+    void el.offsetWidth; // force reflow to restart animation
+    el.classList.add('score-pulse');
+  });
   applySort(currentSort || 'fit');
 }
 
@@ -1650,14 +1703,35 @@ function updateFilterSummary(count){
   const el = document.getElementById('filter-active-summary');
   if(!el) return;
   const container = document.getElementById('cards-container');
-  const total = container ? container.querySelectorAll('.ucard').length : 24;
+  const total = container ? container.querySelectorAll('.ucard').length : 0;
   const activeChips = document.querySelectorAll('.fchip.active');
-  if(activeChips.length===0){
+
+  if(activeChips.length === 0 && !searchKeyword){
     el.innerHTML = 'Showing all <strong>'+total+'</strong> schools';
-  } else {
-    const labels = [...activeChips].map(b=>b.textContent.trim()).join(', ');
-    el.innerHTML = '<span class="filter-result-count">'+count+' result'+(count!==1?'s':'')+'</span> matching: <em style="color:var(--indigo)">'+labels+'</em>';
+    return;
   }
+
+  // Build removable tag pills for each active filter
+  let html = '<span class="filter-result-count">'+count+' result'+(count!==1?'s':'')+'</span> ';
+  activeChips.forEach(chip => {
+    const label = chip.textContent.trim();
+    const type  = chip.dataset.filter;
+    const val   = chip.dataset.val;
+    html += `<span class="active-filter-tag">${label}<button class="active-filter-rm" aria-label="Remove ${label} filter" onclick="removeFilter('${type}','${val}',this)">×</button></span>`;
+  });
+  if(searchKeyword){
+    html += `<span class="active-filter-tag">Search: ${searchKeyword}<button class="active-filter-rm" aria-label="Clear search" onclick="clearSearch()">×</button></span>`;
+  }
+  el.innerHTML = html;
+}
+
+function removeFilter(type, val, btn){
+  if(!activeFilters[type]) return;
+  activeFilters[type].delete(val);
+  // Deactivate the matching chip
+  const chip = document.querySelector(`.fchip[data-filter="${type}"][data-val="${val}"]`);
+  if(chip) chip.classList.remove('active');
+  applyFilters();
 }
 
 function toggleFilterPanel(){
@@ -2599,7 +2673,7 @@ function selectSchoolFromBar(id){
   const u = unis.find(x=>x.id===id);
   if(!u) return;
   if(u.profileDepth==='listed'){
-    alert(u.name+' is a listed-depth school — full financial data not yet available. Full profile coming in a future update.');
+    showToast(u.name+' — full financial data not yet available','info');
     return;
   }
   // Switch to finance tab if not already there

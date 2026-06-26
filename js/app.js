@@ -84,30 +84,53 @@ function applyFxToUI(fx) {
 
 const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'other'];
 
+// Fetch with exponential-backoff retry. Throws after maxAttempts failures.
+async function fetchWithRetry(url, maxAttempts = 3) {
+  let lastErr;
+  for (let i = 0; i < maxAttempts; i++) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(res.status + ' ' + res.statusText + ' — ' + url);
+      return res.json();
+    } catch (e) {
+      lastErr = e;
+      if (i < maxAttempts - 1) await new Promise(r => setTimeout(r, 600 * (i + 1)));
+    }
+  }
+  throw lastErr;
+}
+
 async function loadData() {
   try {
     const base = window.DATA_BASE_URL || './data/';
-    const [confResults, confsRes, coachesRes, confPrestigeRes, pipelineRes, athleteRes] = await Promise.all([
-      Promise.all(CONF_FILES.map(f => fetch(base + f + '.json').then(r => { if (!r.ok) throw new Error('Failed to load ' + f + '.json'); return r.json(); }))),
-      fetch(base + 'conferences.json'),
-      fetch(base + 'coaches.json'),
-      fetch(base + 'conf-prestige.json'),
-      fetch(base + 'pipeline.json'),
-      fetch('./athletes/olivier.json')
+
+    // Conference JSON files — allSettled so one bad file doesn't kill the whole app
+    const confSettled = await Promise.allSettled(
+      CONF_FILES.map(f => fetchWithRetry(base + f + '.json'))
+    );
+    const failedConfs = CONF_FILES.filter((_, i) => confSettled[i].status === 'rejected');
+    if (failedConfs.length) {
+      console.warn('loadData: failed to load:', failedConfs.map(f => f + '.json').join(', '));
+    }
+    unis = confSettled
+      .filter(r => r.status === 'fulfilled')
+      .flatMap(r => r.value || []);
+
+    // Critical support files — retry up to 3x each, throw if all attempts fail
+    const [confs_data, coaches_data, prestige_data, pipeline_data, athlete_data] = await Promise.all([
+      fetchWithRetry(base + 'conferences.json'),
+      fetchWithRetry(base + 'coaches.json'),
+      fetchWithRetry(base + 'conf-prestige.json'),
+      fetchWithRetry(base + 'pipeline.json'),
+      fetchWithRetry('./athletes/olivier.json'),
     ]);
 
-    if (!confsRes.ok)        throw new Error('Failed to load conferences.json');
-    if (!coachesRes.ok)      throw new Error('Failed to load coaches.json');
-    if (!confPrestigeRes.ok) throw new Error('Failed to load conf-prestige.json');
-    if (!pipelineRes.ok)     throw new Error('Failed to load pipeline.json');
-    if (!athleteRes.ok)      throw new Error('Failed to load athletes/olivier.json');
+    conferences        = confs_data;
+    coachData          = coaches_data;
+    conferencePrestige = prestige_data;
+    pipelineData       = pipeline_data;
+    athleteConfig      = athlete_data;
 
-    unis               = confResults.flat();
-    conferences        = await confsRes.json();
-    coachData          = await coachesRes.json();
-    conferencePrestige = await confPrestigeRes.json();
-    pipelineData       = await pipelineRes.json();
-    athleteConfig      = await athleteRes.json();
     if (athleteConfig.guideVersion) APP_VERSION = athleteConfig.guideVersion;
     // Preserve both weight sets so the score-mode toggle can swap between them
     athleteConfig._weightsMinutes = Object.assign({}, athleteConfig.scoreWeights);

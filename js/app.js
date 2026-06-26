@@ -1136,9 +1136,15 @@ function openDetail(id){
   buildModalHeader(u);
   buildSocialStrip(u);
   document.getElementById('modal').classList.remove('hidden');
-  // Move focus into modal so keyboard users don't get stranded outside
   const closeBtn = document.querySelector('#modal .close-btn');
   if (closeBtn) closeBtn.focus();
+  // Modal is visible — non-overview tab content already in DOM but not painted yet.
+  // rAF fires after first paint so the browser commits the overview before doing heavier work.
+  requestAnimationFrame(() => {
+    // Trigger modal fit-score refresh now that DOM is stable
+    const fitEl = document.getElementById('modal-fit-score');
+    if (fitEl) fitEl.textContent = (u.fitOlivier || 0) + '%';
+  });
 }
 
 function buildMinutesModalTab(u){
@@ -1379,7 +1385,8 @@ function switchTab(btn,tabId){
   body.querySelectorAll('.mtab').forEach(b=>b.classList.remove('active'));
   body.querySelectorAll('.mtab-content').forEach(c=>c.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('tab-'+tabId).classList.add('active');
+  const tabEl=document.getElementById('tab-'+tabId);
+  if(tabEl) tabEl.classList.add('active');
 }
 function closeModal(){
   document.getElementById('modal').classList.add('hidden');

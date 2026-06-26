@@ -199,6 +199,15 @@ function recalculateAllScores(athlete, convertedGpa) {
     // Also store on card element for compare/modal use
     const card = document.getElementById('card-' + school.id);
     if (card) card.dataset.fitscore = newFit;
+
+    // If this school's modal is currently open, keep its displayed score in sync
+    if (typeof currentModalId !== 'undefined' && currentModalId === school.id) {
+      const modalFit = document.getElementById('modal-fit-score');
+      if (modalFit) {
+        modalFit.textContent = newFit + '%';
+        modalFit.style.color = sc(newFit);
+      }
+    }
   });
 }
 

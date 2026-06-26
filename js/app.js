@@ -333,47 +333,50 @@ function applyLens(lensKey){
     top3IdsByDiv[div] = byDiv[div].map(u=>u.id);
   });
 
-  // Highlight top 3 within each division
-  document.querySelectorAll('.ucard').forEach(card=>{
-    const id = card.id.replace('card-','');
-    card.classList.remove('lens-top1','lens-top2','lens-top3');
-    const u = unis.find(x=>x.id===id);
-    if(!u) return;
-    const divTops = top3IdsByDiv[u.div] || [];
-    const pos = divTops.indexOf(id);
-    // Mark #1 per division for the filter
-    card.dataset.lensdivtop = (pos===0) ? 'true' : 'false';
-    if(pos >= 0){
-      if(pos===0) card.classList.add('lens-top1');
-      else if(pos===1) card.classList.add('lens-top2');
-      else if(pos===2) card.classList.add('lens-top3');
-      // Add lens badge
-      let badge = card.querySelector('.lens-badge');
-      if(!badge){
-        badge = document.createElement('div');
-        badge.className = 'lens-badge';
-        card.insertBefore(badge, card.firstChild);
-      }
-      const lensLabel = LENSES.find(L=>L.key===lensKey).label;
-      const warn = u.noVarsity ? ' ⚠' : '';
-      // Never badge listed schools — their scores are unverified
-      if(u.profileDepth === 'listed'){
-        card.classList.remove('lens-top1','lens-top2','lens-top3');
-        card.dataset.lensdivtop = 'false';
+  // Highlight top 3 within each division — deferred to next frame so sort has painted first
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.ucard').forEach(card=>{
+      const id = card.id.replace('card-','');
+      card.classList.remove('lens-top1','lens-top2','lens-top3');
+      const u = unis.find(x=>x.id===id);
+      if(!u) return;
+      const divTops = top3IdsByDiv[u.div] || [];
+      const pos = divTops.indexOf(id);
+      // Mark #1 per division for the filter
+      card.dataset.lensdivtop = (pos===0) ? 'true' : 'false';
+      if(pos >= 0){
+        if(pos===0) card.classList.add('lens-top1');
+        else if(pos===1) card.classList.add('lens-top2');
+        else if(pos===2) card.classList.add('lens-top3');
+        // Add lens badge
+        let badge = card.querySelector('.lens-badge');
+        if(!badge){
+          badge = document.createElement('div');
+          badge.className = 'lens-badge';
+          card.insertBefore(badge, card.firstChild);
+        }
+        const lensLabel = LENSES.find(L=>L.key===lensKey).label;
+        const warn = u.noVarsity ? ' ⚠' : '';
+        // Never badge listed schools — their scores are unverified
+        if(u.profileDepth === 'listed'){
+          card.classList.remove('lens-top1','lens-top2','lens-top3');
+          card.dataset.lensdivtop = 'false';
+          const badge = card.querySelector('.lens-badge');
+          if(badge) badge.remove();
+        } else {
+          badge.textContent = '★ #'+(pos+1)+' '+u.div+' · '+lensLabel.toUpperCase()+warn;
+        }
+      } else {
         const badge = card.querySelector('.lens-badge');
         if(badge) badge.remove();
-      } else {
-        badge.textContent = '★ #'+(pos+1)+' '+u.div+' · '+lensLabel.toUpperCase()+warn;
       }
-    } else {
-      const badge = card.querySelector('.lens-badge');
-      if(badge) badge.remove();
-    }
+    });
   });
 }
 
 // ═══ Application logic ═══════════════════════════════════════════════════════
 let selectedIds=new Set();
+let currentModalId = null;
 function sc(s){return s>=90?'#059669':s>=80?'#d97706':'#e11d48';}
 function chipLabel(pos){
   if(!pos) return '—';
@@ -1023,6 +1026,7 @@ function buildSocialStrip(u){
 
 function openDetail(id){
   const u=unis.find(x=>x.id===id);if(!u)return;
+  currentModalId = id;
   document.getElementById('modal-title').textContent=u.full;
   document.getElementById('modal-body').innerHTML=buildDetailBody(u);
   buildModalHeader(u);
@@ -1203,7 +1207,7 @@ function buildDetailBody(u){
       </div>
       <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
-          <div style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}">${u.fitOlivier}%</div>
+          <div id="modal-fit-score" style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}">${u.fitOlivier}%</div>
           <p style="font-size:13px;color:var(--muted)">${u.rec||'Overall fit score based on soccer level, minutes outlook, cost, ACU alignment, climate, and city lifestyle.'}</p>
         </div>
       </div>
@@ -1270,7 +1274,7 @@ function switchTab(btn,tabId){
   btn.classList.add('active');
   document.getElementById('tab-'+tabId).classList.add('active');
 }
-function closeModal(){document.getElementById('modal').classList.add('hidden');}
+function closeModal(){document.getElementById('modal').classList.add('hidden');currentModalId=null;}
 function showPage(id,btn){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));

@@ -184,13 +184,6 @@ function initApp() {
 
   renderDashboard();
   renderFilterChips();
-  // Auto-expand filter panel on desktop; leave collapsed on mobile
-  if (window.innerWidth >= 640) {
-    const fb = document.getElementById('filter-panel-body');
-    const ftb = document.getElementById('filter-toggle-btn');
-    if (fb) { fb.style.display = ''; }
-    if (ftb) { ftb.textContent = '▲ Hide filters'; }
-  }
   renderCards();
   renderComparePage();
   renderConferences();

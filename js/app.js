@@ -1851,7 +1851,7 @@ function renderFilterChips() {
       btn.dataset.filter = 'confgroup';
       btn.dataset.val = ck;
       btn.onclick = function(){ toggleFilter(this); };
-      btn.innerHTML = label + ' <span class="fchip-count">' + count + '</span>';
+      btn.innerHTML = label + ' <span class="fchip-count">(' + count + ')</span>';
       container.appendChild(btn);
     });
   } catch(e) { console.error('renderFilterChips failed:', e); }

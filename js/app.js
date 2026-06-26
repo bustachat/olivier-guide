@@ -1568,9 +1568,12 @@ const CONF_ALIAS_MAP = {
 };
 function resolveConfGroup(conf) {
   const norm = conf.toLowerCase().trim();
-  return CONF_ALIAS_MAP[norm] ||
-    Object.entries(CONF_ALIAS_MAP).find(([alias]) => norm.includes(alias))?.[1] ||
-    norm.replace(/\s+/g, '-');
+  if (CONF_ALIAS_MAP[norm]) return CONF_ALIAS_MAP[norm];
+  // Sort by alias length descending so longer/more-specific aliases win (e.g. "ccaa" beats "acc")
+  const match = Object.entries(CONF_ALIAS_MAP)
+    .sort((a, b) => b[0].length - a[0].length)
+    .find(([alias]) => norm.includes(alias));
+  return match ? match[1] : norm.replace(/\s+/g, '-');
 }
 
 

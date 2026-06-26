@@ -188,6 +188,37 @@ function initApp() {
   renderMinutesOutlook();
   onAtarSlide();
   applyLens(currentLens);
+  initModalFocusTrap();
+}
+
+const FOCUSABLE = 'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+let modalTriggerEl = null;
+
+function initModalFocusTrap() {
+  document.addEventListener('keydown', e => {
+    if (!currentModalId) return;
+    const overlay = document.getElementById('modal');
+    const inner   = overlay ? overlay.querySelector('.modal') : null;
+    if (!inner) return;
+
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeModal();
+      return;
+    }
+
+    if (e.key === 'Tab') {
+      const focusables = [...inner.querySelectorAll(FOCUSABLE)];
+      if (!focusables.length) { e.preventDefault(); return; }
+      const first = focusables[0];
+      const last  = focusables[focusables.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last)  { e.preventDefault(); first.focus(); }
+      }
+    }
+  });
 }
 
 // Division show/hide toggle
@@ -1027,11 +1058,15 @@ function buildSocialStrip(u){
 function openDetail(id){
   const u=unis.find(x=>x.id===id);if(!u)return;
   currentModalId = id;
+  modalTriggerEl = document.activeElement;
   document.getElementById('modal-title').textContent=u.full;
   document.getElementById('modal-body').innerHTML=buildDetailBody(u);
   buildModalHeader(u);
   buildSocialStrip(u);
   document.getElementById('modal').classList.remove('hidden');
+  // Move focus into modal so keyboard users don't get stranded outside
+  const closeBtn = document.querySelector('#modal .close-btn');
+  if (closeBtn) closeBtn.focus();
 }
 
 function buildMinutesModalTab(u){
@@ -1274,7 +1309,15 @@ function switchTab(btn,tabId){
   btn.classList.add('active');
   document.getElementById('tab-'+tabId).classList.add('active');
 }
-function closeModal(){document.getElementById('modal').classList.add('hidden');currentModalId=null;}
+function closeModal(){
+  document.getElementById('modal').classList.add('hidden');
+  currentModalId = null;
+  // Return focus to the element that opened the modal
+  if (modalTriggerEl && typeof modalTriggerEl.focus === 'function') {
+    modalTriggerEl.focus();
+    modalTriggerEl = null;
+  }
+}
 function showPage(id,btn){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));

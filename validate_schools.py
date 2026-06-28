@@ -9,7 +9,7 @@ import json
 import sys
 from pathlib import Path
 
-CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'other']
+CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'd1-other', 'juco', 'ivy', 'd2']
 VALID_DIVS = {'D1', 'IVY', 'D2', 'NAIA', 'D3', 'JUCO'}
 VALID_DEPTHS = {'full', 'listed'}
 VALID_LENS_KEYS = {'overall', 'soccer', 'academic', 'minutes', 'lifestyle', 'value'}

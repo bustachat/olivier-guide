@@ -90,7 +90,7 @@ function applyFxToUI(fx) {
   }
 }
 
-const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'other'];
+const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'd1-other', 'juco', 'ivy', 'd2'];
 
 // Fetch with exponential-backoff retry. Throws after maxAttempts failures.
 async function fetchWithRetry(url, maxAttempts = 3) {

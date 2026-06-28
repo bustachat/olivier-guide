@@ -1,0 +1,459 @@
+[
+  {
+    "id": "princeton",
+    "name": "Princeton",
+    "full": "Princeton University",
+    "loc": "Princeton, NJ",
+    "region": "east",
+    "div": "IVY",
+    "conf": "Ivy League",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#fef9c3",
+      "#b45309"
+    ],
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "1st",
+        "note": "Ivy League + Tourn double — first ever, undefeated"
+      },
+      {
+        "yr": 2024,
+        "pos": "1st Tourn",
+        "note": "Ivy League Tournament winners"
+      },
+      {
+        "yr": 2023,
+        "pos": "Mid Ivy",
+        "note": "Ivy League"
+      },
+      {
+        "yr": 2022,
+        "pos": "Mid Ivy",
+        "note": "Ivy League"
+      },
+      {
+        "yr": 2021,
+        "pos": "1st",
+        "note": "Perfect Ivy season (7-0)"
+      }
+    ],
+    "titles": [
+      "2025 Ivy League + Tournament double (first in history)",
+      "2024 Ivy League Tournament",
+      "2021 perfect Ivy season (7-0)",
+      "2018 Ivy League title",
+      "7 Ivy League titles under Jim Barlow"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Kevin O'Toole — 2022 R2 NYCFC",
+        "Barlow has coached 5 total MLS players"
+      ],
+      "draftRank": "Growing pipeline — program surging in 2024–2025"
+    },
+    "acRank": "#1 National (US News)",
+    "kinRank": "Neuroscience / Molecular Biology (no kinesiology major)",
+    "degreeTitle": "No kinesiology major — Neuroscience or Molecular Biology pre-PT pathway",
+    "acuAlign": 6,
+    "acuAlignNote": "Partial — Princeton has no exercise science degree. Students take pre-PT through neuroscience or biology. Very different structure from ACU BESS. Strong sciences but not exercise-science specific.",
+    "soccerLevel": "Ivy League — 2× consecutive champions",
+    "cost": "~$85k/yr (before need-based aid)",
+    "aid": "Need-based ONLY — no athletic scholarships (can cover 100% for qualifying families)",
+    "size": 5500,
+    "prePT": "Strong via science pathway",
+    "gpa": {
+      "minEntry": "3.9+ GPA typical admit",
+      "minSchol": "3.5 min (need-based only)",
+      "note": "Ivy League — no athletic scholarships. Typical admitted student GPA is 3.9+. GPA 2.8 is far below.",
+      "status": "below"
+    },
+    "fin": {
+      "costNum": 85000,
+      "tuition": 59000,
+      "roomBoard": 20000,
+      "fees": 6000,
+      "maxAthletic": 0,
+      "maxAcademic": 85000,
+      "aidType": "need-only",
+      "internationalNote": "NO athletic scholarships. 100% need-based aid only. Princeton meets full demonstrated financial need — families below $100k AUD may receive significant grants. Average aid package covers ~75% of costs."
+    },
+    "culture": {
+      "vibe": "Highly intellectual, traditions-focused, architecturally stunning. Princeton's Gothic campus is one of the most beautiful in the world. Academic culture is intense — 'Eating Clubs' replace Greek life as the social backbone. The town of Princeton is charming but quiet.",
+      "thingsToDo": "Princeton town restaurants and shops, New York City (1hr by train), Philadelphia (1hr), Delaware Water Gap hiking, Princeton Battle Monument, Nassau Street cultural events. NYC and Philly are weekend escapes.",
+      "socialScene": "Very small, intimate, elite. International students well-represented at graduate level; undergraduate international community is smaller. Honour code is sacred. Soccer team is a close-knit group. Eating club selection is a social rite of passage.",
+      "olivierMatch": "★★ Princeton town is quiet. Culture is highly academic and competitive. If Olivier gets in and excels, the alumni network is unmatched. But day-to-day atmosphere is more studious than social.",
+      "lifestyleTags": "Elite academic, historic, intellectually intense"
+    },
+    "facilityDetails": {
+      "stadium": "Roberts Stadium — 3,000 capacity, natural grass, Ivy League standards. Historic setting on Princeton's UNESCO campus. Traditional atmosphere with no commercial signage — pure athletic environment.",
+      "trainingFields": "2 natural grass training fields adjacent to Roberts Stadium. Bubble dome available for winter training (Princeton Athletic Complex). Princeton's maintenance standards mean surfaces are immaculate.",
+      "strengthConditioning": "Princeton Athletic Performance Center — 15,000 sq ft, rebuilt 2018. Full Olympic lifting, Keiser systems, functional training area. No professional athletes share these facilities — completely dedicated to Princeton varsity sports. Sports science and S&C coaching available to all varsity athletes.",
+      "sportsScience": "Princeton University facilities are world-class at the research level — but less integrated into athletic programmes than schools with exercise science departments. Video analysis available. No formal GPS tracking system confirmed for soccer. Princeton's research resources (cyclotron, genomics labs) are world-class but less directly applicable to sport performance.",
+      "sportsMed": "Excellent athletic medicine — Princeton University Health Services with on-site sports physician. Princeton Medical Center provides imaging and surgical consultation. Certifed athletic trainers assigned per sport. Academic medical access is excellent; sport science integration into training is less formalised.",
+      "academicLabs": "Princeton does not offer a kinesiology or exercise science major. Biology, neuroscience, and molecular biology departments have extraordinary lab resources — world-leading at the research level. For a pre-PT student, course electives in biology and neuroscience are strong, but the structured pre-PT pathway does not exist in the way it does at UF or Indiana.",
+      "extras": "Princeton Art Museum (free, world-class collection). Princeton Science Library. Nassau Street cultural district. Outdoor tennis, squash, rowing on Lake Carnegie. 600 acres of arboretum adjacent to campus. 90-minute train to NYC for pro games and cultural access.",
+      "rating": "Very Good",
+      "note": "Princeton's facilities are beautiful and well-resourced by Ivy League standards, but the absence of a kinesiology/exercise science department means the academic lab integration Olivier needs for DPT preparation is limited. Athletic facilities are top-quality but not the science environment."
+    },
+    "coach": {
+      "name": "Jim Barlow",
+      "title": "Head Coach (29th season 2025)",
+      "email": "jbarlow@princeton.edu",
+      "phone": "609-258-2438",
+      "profile": "29th season at Princeton 2025. Career record 237-184-72. 7 Ivy League titles. First-ever Ivy League + Tournament double 2025 (undefeated 7-0 conf, no goals conceded in conf play). 2025 Northeast Regional Staff of Year. 2024 Ivy League Tournament Champions. 3 consecutive perfect Ivy seasons. Former US U-15 HC 2004-11. Princeton alum 1990 Ivy League Player of Year. Former midfielder."
+    },
+    "devScores": {
+      "tactical": 88,
+      "technical": 85,
+      "fitness": 80
+    },
+    "fitOlivier": 36,
+    "tags": [
+      "acad",
+      "soccer",
+      "ivy"
+    ],
+    "facilities": [
+      "Roberts Stadium (Princeton)",
+      "Class A athletic facilities",
+      "Academic research labs — world class"
+    ],
+    "courses": [
+      "NEU 101 — Neuroscience",
+      "MOL 214 — Quantitative Biology",
+      "CHM 201 — Chemistry",
+      "PHY 103 — General Physics",
+      "PSY 251 — Cognitive Neuroscience"
+    ],
+    "rec": "Princeton is surging — 2024 AND 2025 Ivy Tournament champions, first Ivy team ever to do the double. Jim Barlow coached the 2025 team to an undefeated conference season. Zero athletic scholarships but need-based aid can cover full cost. GPA 2.8 will be a significant admission challenge. Degree is not exercise science aligned.",
+    "url": "https://goprincetontigers.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 36,
+      "soccer": 70,
+      "academic": 47,
+      "minutes": 50,
+      "lifestyle": 0,
+      "value": 40
+    },
+    "minutesOutlook": {
+      "available": false,
+      "reason": "No roster data available"
+    },
+    "profileDepth": "full",
+    "confKey": "other",
+    "mapX": 522,
+    "mapY": 153,
+    "domain": "princeton.edu",
+    "staff": [
+      {
+        "name": "Steve Totten",
+        "role": "Associate Head Coach",
+        "email": "stotten@princeton.edu",
+        "phone": "609-258-2438",
+        "bg": "18 years on Princeton staff. Key recruiting architect. Part of 2025 Northeast Regional Staff of Year."
+      },
+      {
+        "name": "Sam Maira",
+        "role": "Assistant Coach (GK)",
+        "email": "smaira@princeton.edu",
+        "bg": "Joined 2021. 5 seasons. South Jersey Soccer Coaches HOF. Rutgers alum. Part of 2025 Northeast Regional Staff of Year."
+      },
+      {
+        "name": "Tom Moffat",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "19 seasons with the Tigers. Part of 2025 Northeast Regional Staff of Year."
+      }
+    ],
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "yale",
+    "name": "Yale",
+    "full": "Yale University",
+    "loc": "New Haven, CT",
+    "region": "east",
+    "div": "IVY",
+    "conf": "Ivy League",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#fef9c3",
+      "#b45309"
+    ],
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Mid Ivy",
+        "note": "Mid-table Ivy finish. Princeton won 2025 Ivy Tournament."
+      },
+      {
+        "yr": 2024,
+        "pos": "Ivy Tourn Champs",
+        "note": "2023 Ivy Tournament Champions"
+      },
+      {
+        "yr": 2023,
+        "pos": "2nd Ivy",
+        "note": "Ivy Tournament Champions"
+      },
+      {
+        "yr": 2022,
+        "pos": "Top 4 Ivy",
+        "note": "Ivy League"
+      },
+      {
+        "yr": 2021,
+        "pos": "Top 4 Ivy",
+        "note": "Ivy League"
+      },
+      {
+        "yr": 2020,
+        "pos": "N/A",
+        "note": "COVID — no Ivy season"
+      }
+    ],
+    "titles": [
+      "2023 Ivy League Tournament Champions",
+      "Consistent Ivy contender under Stannard"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Occasional USL/lower league signings",
+        "NYC/New Haven clinical sports network access"
+      ],
+      "draftRank": "Limited MLS pipeline — academic-first program"
+    },
+    "acRank": "#5 National (US News)",
+    "kinRank": "No kinesiology — Biology/Human Biology pre-PT pathway",
+    "degreeTitle": "No kinesiology major — Human Biology or Ecology & Evolutionary Biology pre-PT pathway",
+    "acuAlign": 5,
+    "acuAlignNote": "Partial — no exercise science degree. Pre-PT through general biology. Very different from ACU BESS structure. Yale's strength is academic prestige, not exercise science specificity.",
+    "soccerLevel": "Ivy League — Tournament Champions 2023",
+    "cost": "~$85k/yr (before need-based aid)",
+    "aid": "Need-based ONLY — no athletic scholarships",
+    "size": 14000,
+    "prePT": "Strong via science pathway",
+    "gpa": {
+      "minEntry": "3.9+ GPA typical admit",
+      "minSchol": "3.5 min (need-based only)",
+      "note": "Ivy League — no athletic scholarships. Typical admitted student GPA is 3.9+. GPA 2.8 is far below.",
+      "status": "below"
+    },
+    "fin": {
+      "costNum": 85000,
+      "tuition": 59000,
+      "roomBoard": 20000,
+      "fees": 6000,
+      "maxAthletic": 0,
+      "maxAcademic": 85000,
+      "aidType": "need-only",
+      "internationalNote": "NO athletic scholarships. 100% need-based aid only. Yale financial aid for international students is generous — families under $75k income typically pay <$0. Admission is the barrier."
+    },
+    "culture": {
+      "vibe": "Intellectually vibrant with genuine warmth — Yale is less formal than Princeton. New Haven is a real city with pizza culture (literally Yale vs. Frank Pepe's is a thing), a thriving arts scene, and direct train access to NYC.",
+      "thingsToDo": "New Haven pizza institutions (Frank Pepe's, Sally's), Long Island Sound beaches, Yale Art Gallery, Yale Peabody Museum, New Haven Green, NYC (2hr by train), hiking on East Rock. New Haven is more liveable than people expect.",
+      "socialScene": "Extremely diverse intellectually. Yale residential college system creates tight sub-communities within the larger university. International students prominent. Theatre and arts culture very active.",
+      "olivierMatch": "★★★ New Haven is more accessible than Princeton's town. Yale culture blends intensity with warmth. Train to NYC makes weekends exciting. Cold winters are the main lifestyle gap for a Sydney native.",
+      "lifestyleTags": "Ivy intellectual, warmer culture, New Haven"
+    },
+    "facilityDetails": {
+      "stadium": "Reese Stadium — 3,000 capacity, natural grass, Ivy League setting. Historic Yale athletic campus. Well-maintained, traditional, understated.",
+      "trainingFields": "2 training fields at Yale Athletics. Yale's indoor facility (Lanman Center) provides covered training during New England winters. Natural grass surfaces maintained to Ivy standards.",
+      "strengthConditioning": "Yale Athletics Strength & Conditioning Center — 14,000 sq ft, fully equipped with Olympic platforms, free weights, Keiser, functional training zones. Shared with all Yale varsity sports. Dedicated performance coach for spring and fall soccer preparation.",
+      "sportsScience": "Yale Athletics video analysis (Hudl). Limited GPS tracking infrastructure confirmed for soccer. Yale's research labs (engineering, biology, neuroscience) are world-leading but not formally connected to the athletic training environment in the way exercise science schools are.",
+      "sportsMed": "Yale Health sports medicine with certified athletic trainers. Yale New Haven Hospital (top academic medical centre) provides specialist consultation. Dr Andrew Peterson (Yale team physician) is a sports orthopaedist. Excellent medical access; formal clinical placement for pre-PT students is less structured than dedicated health science schools.",
+      "academicLabs": "Yale has no kinesiology or exercise science major. Biology and neuroscience departments are world-class for research. Cushing Center (Yale's neuroscience building) has some of the best brain research labs in the world. For pre-PT, Yale students must build their pathway independently from neuroscience/biology electives.",
+      "extras": "Yale Payne Whitney Gymnasium — one of the world's great athletic buildings. Olympic pool, squash courts, climbing walls, fitness studios. Yale Art Gallery (free, world-class). Yale Repertory Theatre. New Haven Green cultural events. Train access to NYC (2hr) for weekend exploration.",
+      "rating": "Good",
+      "note": "Yale's athletic facilities are impressive by any standard. However, like Princeton, the lack of an exercise science academic infrastructure means the integrated lab-to-field development pathway Olivier needs is absent. Beautiful environment but requires independent construction of pre-PT pathway."
+    },
+    "coach": {
+      "name": "Kylie Stannard",
+      "title": "Head Coach (since 2014)",
+      "email": "kylie.stannard@yale.edu",
+      "phone": "203-432-1456",
+      "profile": "2023 Ivy Tournament Champions. New Haven is smaller than NYC but more accessible. Yale's 2025 class ranked #32 nationally by Top Drawer. Note: Kylie is a male coach — unusual name."
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 80,
+      "fitness": 78
+    },
+    "fitOlivier": 39,
+    "tags": [
+      "acad",
+      "soccer",
+      "ivy",
+      "city"
+    ],
+    "facilities": [
+      "Reese Stadium (Yale)",
+      "Elite academic science facilities",
+      "New Haven clinical network"
+    ],
+    "courses": [
+      "BIOL 101 — Principles of Biology",
+      "MCDB 120 — Cell Biology",
+      "CHEM 161 — General Chemistry",
+      "MCDB 310 — Human Physiology"
+    ],
+    "rec": "Yale won the 2023 Ivy Tournament. New Haven is a real city — more accessible than Princeton or Ithaca. No athletic scholarships. No exercise science degree. GPA 2.8 is a major admission challenge. Best considered if Olivier's GPA improves significantly and he has extraordinary academic potential.",
+    "url": "https://yalebulldogs.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 39,
+      "soccer": 61,
+      "academic": 42,
+      "minutes": 50,
+      "lifestyle": 50,
+      "value": 38
+    },
+    "minutesOutlook": {
+      "available": false,
+      "reason": "No roster data available"
+    },
+    "profileDepth": "full",
+    "confKey": "other",
+    "mapX": 535,
+    "mapY": 143,
+    "domain": "yale.edu",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ]
+  }
+]

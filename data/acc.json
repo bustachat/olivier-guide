@@ -2634,5 +2634,805 @@
         "covered": true
       }
     ]
+  },
+  {
+    "id": "clemson",
+    "name": "Clemson",
+    "full": "Clemson University",
+    "loc": "Clemson, SC",
+    "region": "south",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "warm": true,
+    "city": false,
+    "top": true,
+    "color": [
+      "#fff3e0",
+      "#f97316"
+    ],
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "ACC — R32 NCAA",
+        "note": "8-6-3 overall. NCAA First Round exit. ACC powerhouse."
+      },
+      {
+        "yr": 2024,
+        "pos": "ACC Tourn Champs",
+        "note": "15-3-4. ACC Tournament Champions. NCAA Third Round. #9 nationally."
+      },
+      {
+        "yr": 2023,
+        "pos": "NCAA Champions",
+        "note": "15-3-5. NCAA National Champions — beat Notre Dame in final. 2nd title in 3 yrs."
+      },
+      {
+        "yr": 2022,
+        "pos": "ACC Tourn Champs",
+        "note": "13-7-1. ACC Tournament Champions. NCAA Second Round."
+      },
+      {
+        "yr": 2021,
+        "pos": "NCAA Champions",
+        "note": "16-5-2. NCAA National Champions. Noonan's 1st title."
+      },
+      {
+        "yr": 2020,
+        "pos": "ACC play",
+        "note": "COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "NCAA D1 Champions 2021",
+      "NCAA D1 Champions 2023",
+      "ACC Tournament Champions 2022, 2024",
+      "NCAA Runner-Up 2015",
+      "Most MLS first-round picks 2026 (4 players)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 8,
+      "draftRank": "Elite — among top 3 nationally last 5yr",
+      "notable": [
+        "Kwaku Agyabeng — 2026 R1 #4 overall (SKC)",
+        "Lukas Magnason — 2026 R1 #13 (Real Salt Lake)",
+        "Wahabu Musah — 2026 R1 #26 (Colorado Rapids)",
+        "Robbie Robinson — 2020 #1 overall (Inter Miami) + Hermann Trophy",
+        "4 first-round picks in 2026 draft alone — nation-leading"
+      ]
+    },
+    "acRank": "Strong — B.S. Health Science: Preprofessional Health Studies",
+    "kinRank": "B.S. Health Science — explicit pre-professional health pathway incl. physical therapy",
+    "degreeTitle": "B.S. Health Science: Preprofessional Health Studies",
+    "acuAlign": 5,
+    "acuAlignNote": "Partial alignment — Clemson's Health Science: Preprofessional degree is a public-health pathway, not exercise science. Required courses cover anatomy (BIOL 2220/2230), human biology, statistics, research methods, and a health internship — but there is no exercise physiology, no biomechanics, no resistance training, no sport psychology, and no motor control in the required curriculum. Strong for PT school admission prerequisites (MUSC DPT pathway is a genuine clinical advantage), but structurally different from ACU BESS.",
+    "soccerLevel": "ACC Conference — D1 Elite. 2× recent NCAA Champions.",
+    "cost": "~$52k/yr (out-of-state)",
+    "aid": "Athletic + Merit",
+    "size": 28000,
+    "prePT": "Good — pre-health public pathway covers PT school prerequisites. Degree is not exercise-science based. MUSC DPT pathway is the main clinical advantage.",
+    "gpa": {
+      "minEntry": "3.0+ recommended",
+      "minSchol": "3.5+ for academic merit",
+      "note": "GPA 2.8 is a challenge for Clemson admission — athletic scholarship is the key lever. Clemson is selective (53% acceptance). Pre-PT degree requires maintained GPA for progression.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 52000,
+      "tuition": 38000,
+      "roomBoard": 12000,
+      "fees": 2000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 8000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Out-of-state tuition ~$38k. Athletic scholarship can cover majority. Clemson has strong international student support. Merit aid available for high academic performers."
+    },
+    "culture": {
+      "vibe": "Large, spirited Southern university with intense athletic culture. Clemson is famous for its football program but soccer carries real prestige — 2× recent national champions. Campus is in a small college town (Clemson, SC) but Atlanta is 2hrs away.",
+      "olivierMatch": "★★★ Clemson is warm (South Carolina climate), has elite soccer development, and strong pre-PT degree. The campus town is small — not a city. Athletic culture is intense and competitive. If Olivier can handle a non-city environment, the soccer development opportunity is exceptional.",
+      "socialScene": "Huge college-town social scene driven by athletics. International players on soccer roster. Tight-knit team environment — Noonan known for player development culture.",
+      "thingsToDo": "Clemson is a small town — social life is campus-centred. Lake Hartwell (boating/kayaking) adjacent to campus. Greenville SC (45 min) is a vibrant city with excellent food scene. Atlanta, GA (2hr) for big-city weekends. Blue Ridge Mountains hiking 1hr. Charlotte NC 2hrs.",
+      "lifestyleTags": "Warm climate, small college town, elite soccer culture"
+    },
+    "facilityDetails": {
+      "stadium": "Historic Riggs Field — 8,000 capacity, one of the most famous college soccer venues in America. Natural grass. On-campus.",
+      "trainingFields": "Multiple practice fields adjacent to Riggs Field. Climate allows year-round outdoor training in South Carolina.",
+      "strengthConditioning": "Clemson Athletics world-class S&C — Allen N. Reeves Football Complex shared resources. Olympic lifting platforms, Hammer Strength, GPS and sports science integration.",
+      "sportsScience": "Full GPS tracking (Catapult), video analysis (Hudl + XOS), heart rate monitoring, lactate testing. One of the most advanced S&C setups in college soccer.",
+      "academicLabs": "Watt Family Innovation Center + Health Sciences facilities. Preprofessional Health Studies degree has dedicated labs. MUSC partnership creates access to world-class medical school facilities for clinical placements.",
+      "sportsMed": "Full-time certified AT staff, team physician, sports psychology support. Recovery facilities — hydrotherapy, cryotherapy, altitude simulation. MUSC accelerated DPT pathway gives direct clinical exposure.",
+      "extras": "Riggs Field atmosphere on gameday is elite. Lake Hartwell adjacent — boating, kayaking. Greenville, SC (45min) is ranked one of the best mid-size cities in the Southeast. Atlanta access. Blue Ridge hiking.",
+      "rating": "Elite",
+      "note": "Clemson offers one of the best overall packages in college soccer — elite facilities, elite coaching, elite degree for PT pathway, warm climate. The trade-off is a small-town setting and high competition for playing time (4 players drafted in first round in 2026 alone)."
+    },
+    "coach": {
+      "name": "Mike Noonan",
+      "title": "Head Men's Soccer Coach",
+      "email": "soccer@clemson.edu",
+      "phone": "864-656-1990",
+      "profile": "Mike Noonan — 16th season at Clemson. 2× NCAA National Champion (2021, 2023). 400+ career wins. Guided 4 players to first-round MLS picks in 2026 draft alone — most of any program nationally. Produced Robbie Robinson (#1 overall 2020 + Hermann Trophy). Known for technical development and high-press tactical style. Staff: Philip Jones (13yr Assoc HC), Camilo Rodriguez (10yr Asst), Gaye Diadie (Asst)."
+    },
+    "devScores": {
+      "tactical": 95,
+      "technical": 93,
+      "fitness": 92
+    },
+    "fitOlivier": 53,
+    "tags": [
+      "warm",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Riggs Field (8,000 cap)",
+      "Clemson S&C Elite Facilities",
+      "MUSC DPT Clinical Pathway"
+    ],
+    "courses": [
+      "BIOL 2220/2230 — Human Anatomy & Physiology I & II",
+      "HLTH 2980 — Human Health and Disease",
+      "HLTH 3800 — Epidemiology",
+      "HLTH 4900 — Research & Evaluation Strategies for Public Health",
+      "HLTH 4200 — Health Science Internship",
+      "PHYS 2070/2080 — General Physics I & II",
+      "BIOL 1030/1040 — General Biology I & II"
+    ],
+    "rec": "Clemson is elite-tier ACC soccer with 2 recent national championships and the best MLS draft pipeline of the last 2 years. The Pre-PT degree is excellent — explicitly designed for physical therapy and medical school pathways with access to MUSC's DPT program. South Carolina climate is warm. The challenge: Clemson is a small college town (not a city), competition for playing time is fierce (4 first-rounders in 2026), and GPA 2.8 is borderline for admission. If Olivier can secure an athletic scholarship offer, this is among the top 3 programs in the entire guide for soccer development.",
+    "url": "https://clemsontigers.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 53,
+      "soccer": 97,
+      "academic": 82,
+      "lifestyle": 50,
+      "minutes": 37,
+      "value": 60
+    },
+    "minutesOutlook": {
+      "available": true,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Misei Yoshizawa",
+        "Nathan Richmond",
+        "Gabriel Santuari",
+        "Mason Jimenez"
+      ],
+      "mf_total_2025": 11,
+      "recruit_risk": "Very High",
+      "rising_junior_2027_count": 6,
+      "rising_junior_2027_names": [
+        "Daniel Bunk",
+        "Kwaku Agyabeng",
+        "Cooper Hineline",
+        "Abdou Mane",
+        "Caleb George",
+        "Kyle Mattis"
+      ],
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Squad depth — development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Breaking into squad"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 75,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 88,
+          "label": "Key player / starter"
+        }
+      ],
+      "trajectoryNote": "Clemson is elite — 4 players went in round 1 of the 2026 draft. MF competition is among the toughest in college soccer. Olivier would likely be a development-year player in Year 1, building toward meaningful minutes by Year 2-3. The soccer development value is exceptional but immediate minutes are not guaranteed.",
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Ransford Gyan"
+      ]
+    },
+    "profileDepth": "full",
+    "confKey": "acc",
+    "domain": "clemson.edu",
+    "mapX": 397,
+    "mapY": 208,
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "notredame",
+    "name": "Notre Dame",
+    "full": "University of Notre Dame",
+    "loc": "Notre Dame, IN",
+    "region": "midwest",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "warm": false,
+    "city": false,
+    "top": true,
+    "color": [
+      "#fff7ed",
+      "#1a4a2e"
+    ],
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "ACC play",
+        "note": "NCAA Tournament appearance. Chad Riley 8th season."
+      },
+      {
+        "yr": 2024,
+        "pos": "ACC play",
+        "note": "7-5-5 overall. NCAA appearance."
+      },
+      {
+        "yr": 2023,
+        "pos": "ACC Reg Season Champs",
+        "note": "13-3-6. ACC Regular Season Champions. NCAA Runner-Up (lost to Clemson in final)."
+      },
+      {
+        "yr": 2022,
+        "pos": "ACC play",
+        "note": "NCAA appearance. Consistent top-25 program."
+      },
+      {
+        "yr": 2021,
+        "pos": "ACC Tourn Champs",
+        "note": "14-5-5. ACC Tournament Champions. NCAA College Cup semifinal."
+      },
+      {
+        "yr": 2020,
+        "pos": "ACC play",
+        "note": "COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "NCAA D1 Champions 2013",
+      "NCAA Runner-Up 2023",
+      "ACC Tournament Champions 2021",
+      "College Cup 2013, 2021, 2023",
+      "27 MLS SuperDraft picks under Bobby Clark"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "draftRank": "Strong — consistent MLS pipeline",
+      "notable": [
+        "Brandon Aubrey — ND 2013-16, Dallas Cowboys NFL kicker (switched codes)",
+        "Jon Gallagher — 2018 R1 #14 Atlanta United, now Austin FC",
+        "Mohamed Omar — 2022 R1 #23 Colorado Rapids, captain 2021",
+        "Philip Quinton — 2022 R1 #25 Columbus Crew, captain 2021",
+        "Paul Rothrock — 2021 MLS Draft, Seattle Sounders"
+      ]
+    },
+    "acRank": "Strong — Science degree with pre-health/pre-PT preparation",
+    "kinRank": "B.S. Science (Biology/pre-health track) — Notre Dame does not have a dedicated Kinesiology degree but strong pre-PT science pathway",
+    "degreeTitle": "B.S. Science — Pre-Health / Biology concentration",
+    "acuAlign": 9,
+    "acuAlignNote": "Partial-strong alignment — Notre Dame does not have a dedicated Exercise Science or Kinesiology degree. Pre-health Biology pathway covers anatomy, physiology, research methods and some sport psych electives. Missing dedicated biomechanics, motor control, resistance training, and exercise-specific clinical units. Strong for pre-med/pre-PT prerequisites but not as directly aligned as USF, FIU or Indiana. Students pursuing PT should complement with specific electives and clinical observation hours.",
+    "soccerLevel": "ACC Conference — D1 Elite. 2013 National Champions. Perennial top-25.",
+    "cost": "~$85k/yr",
+    "aid": "Athletic + Need-based (Notre Dame meets 100% of demonstrated need)",
+    "size": 9000,
+    "prePT": "Good — strong pre-PT science pathway, University Health System access",
+    "gpa": {
+      "minEntry": "3.8+ typical (extremely selective, 13% acceptance)",
+      "minSchol": "Notre Dame meets 100% of demonstrated need",
+      "note": "Notre Dame is among the most selective universities in the US. GPA 2.8 is a very significant barrier. Athletic scholarship is the primary pathway. Notre Dame has historically made exceptions for elite athletic recruits — coach relationship is everything here.",
+      "status": "challenging"
+    },
+    "fin": {
+      "costNum": 85000,
+      "tuition": 62000,
+      "roomBoard": 20000,
+      "fees": 3000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 0,
+      "aidType": "athletic+need",
+      "internationalNote": "Notre Dame meets 100% of demonstrated financial need for all admitted students. Athletic scholarship + need-based aid can substantially reduce cost. Requires financial disclosure."
+    },
+    "culture": {
+      "vibe": "One of the most iconic university campuses in America — beautiful Gothic architecture, intense Catholic identity, football-dominant athletic culture. Soccer has real prestige as a national championship program. Small college town (South Bend) adjacent to campus.",
+      "olivierMatch": "★★ Notre Dame is elite soccer and academics but cold Indiana winters are a significant negative for Olivier's warm-climate preference. Campus is not a city. However the quality of soccer development and the Notre Dame name carry enormous global prestige.",
+      "socialScene": "Strong campus social scene driven by football tailgates and athletic culture. International students in athletics. Beautiful campus for outdoor activities in fall. Cold winters limit outdoor lifestyle Oct-Mar.",
+      "thingsToDo": "South Bend is a modest mid-size city. Notre Dame campus is iconic and self-contained. Chicago (2hr) for big-city weekends. Lake Michigan beaches (1hr) in summer. Ann Arbor, MI (2hr).",
+      "lifestyleTags": "Cold winters, iconic campus, small city, elite academics"
+    },
+    "facilityDetails": {
+      "stadium": "Alumni Stadium — 2,500 capacity. On-campus. Well-maintained natural grass facility.",
+      "trainingFields": "Multiple training fields on campus. Indiana winters limit outdoor training significantly Nov-Feb.",
+      "strengthConditioning": "Notre Dame Athletics world-class S&C — shares resources with football program. Guglielmino Athletics Complex — elite facilities.",
+      "sportsScience": "Full GPS (Catapult), video analysis, heart rate monitoring. Notre Dame invests heavily in sports science.",
+      "academicLabs": "Notre Dame pre-health program has excellent science facilities. University of Notre Dame health sciences labs. Clinical access through South Bend hospital network.",
+      "sportsMed": "Notre Dame Sports Medicine — full-time staff, team physicians. University of Notre Dame Health (Beacon Health System partnership) for clinical observation.",
+      "extras": "Notre Dame campus is one of the most beautiful in the US. Grotto of Our Lady iconic. Touchdown Jesus. Football gamedays are a unique experience. Chicago access for big-city weekends.",
+      "rating": "Elite",
+      "note": "Notre Dame is elite in every dimension — facilities, academics, soccer tradition. The main negatives for Olivier are cold winters, non-city setting, and the very high academic bar (GPA 2.8 is challenging for 13% acceptance rate university)."
+    },
+    "coach": {
+      "name": "Chad Riley",
+      "title": "Head Men's Soccer Coach",
+      "email": "soccer@nd.edu",
+      "phone": "574-631-6107",
+      "profile": "Chad Riley — 8th season at Notre Dame. 2023 NCAA Runner-Up. 2021 ACC Tournament Champions. Known for high-press, technical style inherited from Bobby Clark era. Staff: Mike Graczyk (5th yr Asst HC), Jeff Rowland (4th yr Asst). Previously: Bobby Clark (17 seasons, 2013 NCAA Champion, 27 MLS draftees)."
+    },
+    "devScores": {
+      "tactical": 91,
+      "technical": 90,
+      "fitness": 89
+    },
+    "fitOlivier": 36,
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Alumni Stadium (ND campus)",
+      "Guglielmino Athletics Complex",
+      "Beacon Health System clinical network"
+    ],
+    "courses": [
+      "BIOS 11171 — Human Anatomy & Physiology I",
+      "BIOS 11172 — Human Anatomy & Physiology II",
+      "CHEM 10171/10172 — General Chemistry",
+      "PHYS 10310/10320 — General Physics",
+      "PSYC electives — Sport Psychology",
+      "Pre-PT advising through Biology/Science dept"
+    ],
+    "rec": "Notre Dame is elite soccer with a 2013 national championship and 2023 runner-up — Chad Riley has maintained the program's elite status. Pre-health science pathway prepares well for DPT programs. However the degree alignment is lower than dedicated exercise science programs (9/16 ACU units), winters are cold, the campus is not a city, and GPA 2.8 is a significant challenge for 13% acceptance rate. Best for Olivier if athletic offer is on the table and he is comfortable with a non-warm-climate experience.",
+    "url": "https://fightingirish.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 36,
+      "soccer": 93,
+      "academic": 95,
+      "lifestyle": 0,
+      "minutes": 30,
+      "value": 40
+    },
+    "minutesOutlook": {
+      "available": true,
+      "cleared_before_2027": 2,
+      "cleared_names": [],
+      "mf_total_2025": 11,
+      "recruit_risk": "Very High",
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [],
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Development — elite squad depth"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 45,
+          "label": "Breaking into rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Key player"
+        }
+      ],
+      "trajectoryNote": "Notre Dame is consistently a top-25 program with a deep, talented squad. MF competition is elite-level. Years 1-2 would be developmental with meaningful minutes expected from Year 3."
+    },
+    "profileDepth": "full",
+    "confKey": "acc",
+    "domain": "fightingirish.com",
+    "mapX": 371,
+    "mapY": 162,
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "unc",
+    "name": "UNC",
+    "full": "UNC Chapel Hill",
+    "loc": "Chapel Hill, NC",
+    "region": "south",
+    "div": "D1",
+    "conf": "ACC Conference",
+    "warm": true,
+    "city": false,
+    "top": true,
+    "color": [
+      "#e0f2fe",
+      "#0077b6"
+    ],
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "ACC play",
+        "note": "Somoano 14th season. Consistent top-25 program. NCAA appearances."
+      },
+      {
+        "yr": 2024,
+        "pos": "ACC play",
+        "note": "9-4-5 overall. NCAA First Round. ACC contender."
+      },
+      {
+        "yr": 2023,
+        "pos": "ACC Reg Season Champs",
+        "note": "ACC Regular Season Champions. Top-10 nationally for much of season."
+      },
+      {
+        "yr": 2022,
+        "pos": "ACC Top 3",
+        "note": "NCAA Tournament. Competitive ACC season."
+      },
+      {
+        "yr": 2021,
+        "pos": "ACC play",
+        "note": "NCAA Tournament. Somoano building strong ACC standing."
+      },
+      {
+        "yr": 2020,
+        "pos": "ACC play",
+        "note": "COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "ACC Regular Season Champions 2023",
+      "Multiple ACC Championship appearances",
+      "Dorrance era 4 D1 NCAA Championships (1978, 1979, 2001 — men's + women's dynasty)",
+      "Consistent top-25 D1 program"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "draftRank": "Strong — consistent MLS pipeline, ACC market access",
+      "notable": [
+        "Multiple players to MLS and USL annually",
+        "Strong local Carolina MLS pipeline",
+        "Somoano produced multiple All-Americans and conference players of year"
+      ]
+    },
+    "acRank": "Excellent — B.S. Exercise and Sport Science explicitly designed for PT/OT graduate school",
+    "kinRank": "B.S. Exercise and Sport Science — UNC EXSS dept explicitly prepares for DPT, OT, PA school",
+    "degreeTitle": "B.S. Exercise and Sport Science",
+    "acuAlign": 12,
+    "acuAlignNote": "Strong alignment — UNC's Exercise and Sport Science required core covers anatomy & physiology (EXSS 155/256), exercise physiology (EXSS 376 Physiological Basis of Human Performance), biomechanics (EXSS 385), neuromuscular control and learning (EXSS 380), sport & exercise psychology (EXSS 181), and research methods (EXSS 273). Gaps: exercise prescription, resistance training, and clinical practicum are not in the required core — available via the fitness professional track only. Chapel Hill / Durham / Raleigh clinical access via Duke Medical and UNC Health remains world-class.",
+    "soccerLevel": "ACC Conference — D1 Elite. Dorrance dynasty legacy. Consistent top-25.",
+    "cost": "~$50k/yr (out-of-state)",
+    "aid": "Athletic + Merit",
+    "size": 32000,
+    "prePT": "Excellent — degree explicitly designed for PT pathway + UNC Health / Duke Medical clinical access",
+    "gpa": {
+      "minEntry": "3.5+ recommended (UNC is selective, ~19% acceptance)",
+      "minSchol": "3.5+ for academic merit",
+      "note": "UNC is a flagship public research university with selective admission. GPA 2.8 is a challenge. Athletic scholarship is the primary pathway. UNC has historically made exceptions for elite athletic recruits.",
+      "status": "borderline"
+    },
+    "fin": {
+      "costNum": 50000,
+      "tuition": 36000,
+      "roomBoard": 12000,
+      "fees": 2000,
+      "maxAthletic": 0.9,
+      "maxAcademic": 8000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Out-of-state ~$36k tuition. Athletic scholarship can cover majority. Merit aid available. UNC has strong international student community in athletics."
+    },
+    "culture": {
+      "vibe": "Beautiful Southern university town — Chapel Hill is consistently ranked one of the best college towns in America. The Research Triangle (Chapel Hill, Durham, Raleigh) is one of the most vibrant metropolitan areas in the Southeast. Mild climate — warm springs and falls, mild winters, hot summers. ACC powerhouse in almost every sport.",
+      "olivierMatch": "★★★★ UNC is an excellent fit for Olivier — warm(ish) climate, college-town with city access (Raleigh 30min), elite Exercise Science degree explicitly designed for PT pathway, and top-25 soccer program. The main barrier is the selective admission and GPA 2.8.",
+      "socialScene": "Classic Southern college-town social life — Franklin Street, Dean Dome culture, ACC sports passion. Durham and Raleigh easily accessible for city experiences. Research Triangle has a young, educated, diverse population.",
+      "thingsToDo": "Chapel Hill is a walkable, beautiful college town. Durham (20min) — vibrant food and music scene, DPAC performances. Raleigh (30min) — NC Courage (NWSL), state capital. Outer Banks beaches (3hr). Blue Ridge Parkway (2hr). Charlotte (2.5hr).",
+      "lifestyleTags": "Warm climate, college town + city access, ACC prestige, research triangle"
+    },
+    "facilityDetails": {
+      "stadium": "Dorrance Field — named after Anson Dorrance, the legendary women's soccer coach. Natural grass, 5,000+ capacity. Beautiful setting on UNC campus.",
+      "trainingFields": "Multiple training fields adjacent to Dorrance Field. Chapel Hill climate allows extended outdoor training season (9+ months).",
+      "strengthConditioning": "UNC Athletics S&C — Kenan Football Center resources shared. GPS integration, Olympic platforms, sports science support.",
+      "sportsScience": "Full GPS tracking, video analysis, heart rate monitoring. UNC invests in sports science across all programs.",
+      "academicLabs": "UNC Exercise and Sport Science department — well-resourced labs including biomechanics (motion capture), exercise physiology (VO2max, metabolic carts), motor control, and applied sport psychology. UNC Health system provides clinical placement for pre-PT students.",
+      "sportsMed": "UNC Sports Medicine — full-time staff. UNC Health (one of NC's top academic medical systems) and Duke Medical (Durham) proximity provide exceptional clinical observation access for pre-PT students.",
+      "extras": "Franklin Street, the Pit, Dean Dome — iconic UNC campus culture. ACC rivalry games (Duke, NC State). Research Triangle job market strongest in the Southeast. Blue Ridge Parkway hiking access.",
+      "rating": "Very Good",
+      "note": "UNC offers a rare combination — explicit DPT-pathway degree, warm climate, world-class clinical access through UNC Health and Duke Medical, and a top-25 ACC soccer program. The college-town setting with Research Triangle city access is excellent for Olivier's lifestyle preferences."
+    },
+    "coach": {
+      "name": "Carlos Somoano",
+      "title": "Head Men's Soccer Coach",
+      "email": "soccer@unc.edu",
+      "phone": "919-962-6000",
+      "profile": "Carlos Somoano — 14th season at UNC. Built on Dorrance dynasty legacy. 2023 ACC Regular Season Champions. Consistent top-25 program with regular NCAA Tournament appearances. Staff: Grant Porter (14yr Assoc HC), Michael Harrington (3rd yr Asst), Jeff Negalha (10th yr Asst — 2nd stint). Known for technical, possession-oriented style. Strong ACC recruiting network."
+    },
+    "devScores": {
+      "tactical": 88,
+      "technical": 87,
+      "fitness": 86
+    },
+    "fitOlivier": 52,
+    "tags": [
+      "warm",
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Dorrance Field (5,000 cap)",
+      "UNC Health Clinical Network",
+      "Research Triangle location"
+    ],
+    "courses": [
+      "EXSS 101 — Introduction to Exercise and Sport Science",
+      "EXSS 275 — Anatomy of Human Movement",
+      "EXSS 276 — Physiology of Exercise",
+      "EXSS 378 — Biomechanics",
+      "EXSS 380 — Motor Learning and Control",
+      "EXSS 382 — Sport Psychology",
+      "EXSS 490 — Research Methods",
+      "EXSS 495 — Clinical Practicum (pre-PT/OT track)"
+    ],
+    "rec": "UNC is an excellent fit for Olivier — one of the strongest ACU degree alignments of any new school added (13/16), warm(ish) climate, world-class clinical placement through UNC Health and Duke Medical, and a top-25 ACC soccer program under a long-tenured coach. The Research Triangle setting provides city access without a full urban environment. The main challenges are selective admission (GPA 2.8 is borderline) and competition for playing time in a perennial ACC contender.",
+    "url": "https://goheels.com/sports/mens-soccer",
+    "lensScores": {
+      "overall": 52,
+      "soccer": 88,
+      "academic": 87,
+      "lifestyle": 50,
+      "minutes": 37,
+      "value": 68
+    },
+    "minutesOutlook": {
+      "available": true,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Joschi Schelb",
+        "Ryan Zellefrow"
+      ],
+      "mf_total_2025": 5,
+      "recruit_risk": "High",
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Jonathan Luna Sabando"
+      ],
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 55,
+          "label": "Breaking into rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 75,
+          "label": "Regular starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 88,
+          "label": "Key player"
+        }
+      ],
+      "trajectoryNote": "UNC is a consistent top-25 ACC program. MF competition is strong but slightly more accessible than Clemson or Georgetown. Olivier's box-to-box profile suits Somoano's style — years 2-3 are realistic for meaningful minutes.",
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Charlie Antonelius",
+        "Nico Loebus"
+      ]
+    },
+    "profileDepth": "full",
+    "confKey": "acc",
+    "domain": "goheels.com",
+    "mapX": 435,
+    "mapY": 202,
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ]
   }
 ]

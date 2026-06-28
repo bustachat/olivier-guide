@@ -46,12 +46,12 @@ For data work, read the specific conference file:
 | Conference | File | Schools (all full-profile as of v26) |
 |---|---|---|
 | ACC | `data/acc.json` | Virginia, Wake Forest, SMU, Clemson, Notre Dame, UNC, Duke, NC State, Louisville, Pitt, Stanford, Syracuse, Cal (13) |
-| Big Ten | `data/big-ten.json` | UCLA, Indiana, Maryland, Penn State, Michigan, Michigan State, Ohio State, Northwestern, Wisconsin, Rutgers, Oregon, USC, Washington, Illinois (14) |
+| Big Ten | `data/big-ten.json` | UCLA, Indiana, Maryland, Penn State, Michigan, Michigan State, Ohio State, Northwestern, Wisconsin, Rutgers, Oregon, USC, Washington, Illinois (11 — Illinois excluded, no men's soccer) |
 | Big East | `data/big-east.json` | St John's, Georgetown, Creighton, UConn, Providence, Villanova, Marquette, Butler, Seton Hall, DePaul, Xavier (11) |
-| AAC | `data/aac.json` | FIU, USF, FAU, Tulsa, Memphis, Temple, East Carolina, UAB, Navy, Army, Charlotte, Rice (12) |
-| Big West | `data/big-west.json` | UCSB, Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, Long Beach State, CSU Fullerton (8) |
+| AAC | `data/aac.json` | FIU, USF, FAU, Tulsa, Memphis, Temple, East Carolina, UAB, Navy, Army, Charlotte, Rice (10) |
+| Big West | `data/big-west.json` | UCSB, Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, Long Beach State, CSU Fullerton (7) |
 | CAA | `data/caa.json` | Charleston, William & Mary, Hofstra, Northeastern, Drexel, Delaware, Elon, Monmouth, Stony Brook (9) |
-| All D2, NAIA, JUCO, D3, NEC, CACC, AMC + everything else | `data/other.json` | Vermont (AEC), Mercyhurst (NEC), Georgian Court (CACC), Columbia College MO (AMC), + all non-D1 schools |
+| D2, NAIA, JUCO, D3, Ivy + non-major-conference D1 | `data/other.json` | 28 schools — IVY (Princeton, Yale), JUCO (TJC, Indian Hills, Daytona State, etc.), D2 (Nova SE, Barry, Lynn, etc.), NAIA, D3 + non-major D1 (Vermont, GCU, Akron, Denver, Mercyhurst, UCA) |
 
 ### Step 3 — Confirm the session goal
 State in one sentence what this session will deliver and which session number it is.

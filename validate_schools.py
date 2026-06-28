@@ -152,6 +152,26 @@ def validate_school(s, filename):
                 err(sid, f'fin.costNum="{cn}" — must be a number')
             elif cn is not None and not (0 <= cn <= 150000):
                 warn(sid, f'fin.costNum={cn} is outside typical range 0–150000')
+            elif cn is not None and cn >= 10000 and cn % 5000 == 0:
+                warn(sid, f'fin.costNum={cn} is a very round number — likely a ballpark estimate, verify against official COA')
+
+        # confRecord placeholder check
+        cr = s.get('confRecord', [])
+        PLACEHOLDER_PHRASES = ['compete in', 'competes in', 'plays in', 'member of', 'part of', 'njcaa di play', 'ncaa play']
+        if not cr:
+            warn(sid, 'confRecord is empty — add real season results')
+        elif isinstance(cr, list):
+            for entry in cr:
+                note = (entry.get('note', '') + ' ' + entry.get('pos', '')).lower()
+                if any(p in note for p in PLACEHOLDER_PHRASES):
+                    warn(sid, f'confRecord entry yr={entry.get("yr","?")} looks like placeholder text: "{entry.get("pos","")}"')
+                    break
+
+        # Coach contact check
+        coach = s.get('coach', {})
+        if isinstance(coach, dict):
+            if not coach.get('email') and not coach.get('phone'):
+                warn(sid, 'coach.email and coach.phone are both null — contacts unverified')
 
     elif depth == 'listed':
         # devScores must be null for listed profiles

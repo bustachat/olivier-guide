@@ -8428,9 +8428,9 @@
     "div": "JUCO",
     "conf": "NJCAA Division I / Region XIV",
     "confKey": "other",
-    "domain": "tjc.edu",
+    "domain": "apacheathletics.com",
     "warm": true,
-    "city": true,
+    "city": false,
     "top": false,
     "color": [
       "#fef3c7",
@@ -8438,7 +8438,7 @@
     ],
     "degreeTitle": "A.S. in Kinesiology (2-year transfer degree)",
     "acuAlign": 5,
-    "acuAlignNote": "Tyler JC's A.S. in Kinesiology (selective admission — not open enrollment) is among the most rigorous JUCO kinesiology programs in Texas. Career outcomes explicitly include: exercise physiology, biomechanics, sport psychology, and physical therapy pathways. Confirmed ACU-relevant content: Human Anatomy & Physiology → ANAT100; Biology → BIOL125; Exercise Physiology → EXSC225; Human Movement / Kinesiology → EXSC224; Biomechanics → EXSC322 (explicitly listed career pathway). ACSM and NSCA certification exam preparation is a program goal — these require exercise physiology and biomechanics as core content. WES evaluation required for ACU credit recognition. Confirm specific course equivalences with TJC academic advisor before transfer planning.",
+    "acuAlignNote": "Tyler JC's Kinesiology AS (open enrollment — no GPA minimum) is among the most rigorous JUCO kinesiology programs in Texas. Strength & Conditioning track offers the strongest pre-PT pathway. Career outcomes explicitly include: exercise physiology, biomechanics, sport psychology, and physical therapy pathways. Confirmed ACU-relevant content: Human Anatomy & Physiology → ANAT100; Biology → BIOL125; Exercise Physiology → EXSC225; Human Movement / Kinesiology → EXSC224; Biomechanics → EXSC322 (explicitly listed career pathway). ACSM and NSCA certification exam preparation is a program goal — these require exercise physiology and biomechanics as core content. WES evaluation required for ACU credit recognition. Confirm specific course equivalences with TJC academic advisor before transfer planning.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -8506,25 +8506,25 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — #1 D1 Transfer Feeder Nationally",
-    "cost": "~$14k/yr",
+    "cost": "~$22k/yr",
     "aid": "Athletic Grants + Need",
     "fin": {
-      "costNum": 14000,
-      "tuition": 8000,
-      "roomBoard": 5000,
-      "fees": 1000,
+      "costNum": 22230,
+      "tuition": 5752,
+      "roomBoard": 9540,
+      "fees": 6938,
       "maxAthletic": 0.65,
       "maxAcademic": 3000,
       "aidType": "athletic+need",
-      "internationalNote": "Tyler JC out-of-state/international COA is ~$14k/yr — very affordable. Athletic scholarship can cover 40-65% of COA. East Texas cost of living is low. 2-year total before aid: ~$28k. After a realistic athletic package: $10-18k total for 2 years."
+      "internationalNote": "Tyler JC out-of-state/international COA is ~$22k/yr (tuition & fees $5,752 + on-campus room/board $9,540 + books/personal/transport ~$6,938). NJCAA DI athletic scholarships can cover 40-65% of COA — very competitive for elite program. East Texas cost of living is low. 2-year total before aid: ~$44k. After a realistic 50% athletic package: ~$22k total across 2 years."
     },
     "size": 15000,
     "prePT": "Transfer Pathway",
     "coach": {
       "name": "Steve Clements",
       "title": "Head Coach",
-      "email": "SteveClements@tjc.edu",
-      "phone": "(903) 510-2687",
+      "email": null,
+      "phone": null,
       "profile": "Steve Clements is one of the most decorated coaches in NJCAA history — over 550 career wins and multiple NJCAA national titles at Tyler JC. He has built the Apache program into the #1 JUCO D1 transfer feeder in the country. Clements holds a USSF A License. Assistant coach Shaun Stocker (ShaunStocker@tjc.edu / 903-510-2687) handles day-to-day recruitment. The entire 2025-26 MF roster (13 players) clears before Olivier arrives in August 2027 — ask Clements: 'How many central midfielders are in your 2026 class?'"
     },
     "gpa": {
@@ -8538,14 +8538,14 @@
       "technical": 75,
       "fitness": 73
     },
-    "fitOlivier": 82,
+    "fitOlivier": 76,
     "lensScores": {
-      "overall": 82,
-      "soccer": 78,
+      "overall": 76,
+      "soccer": 50,
       "academic": 42,
       "minutes": 73,
-      "lifestyle": 65,
-      "value": 88
+      "lifestyle": 50,
+      "value": 68
     },
     "tags": [
       "juco",
@@ -8556,8 +8556,8 @@
     ],
     "facilities": [],
     "courses": [],
-    "rec": "#1 JUCO program nationally for D1 transfers — more athletes have transferred from TJC to Division I than any other junior college in the country. Tyler, TX is a warm East Texas city (~105k) with low cost of living. Pure pathway play: 2 years at ~$14k, then transfer to D1/D2 with rebuilt GPA.",
-    "url": "https://www.tjc.edu/athletics",
+    "rec": "6x NJCAA National Champions (2009, 2010, 2012, 2014, 2016, 2017) and #1 JUCO program nationally for D1 transfers. 100+ players have signed professional contracts, 10 MLS draftees. Tyler, TX is warm East Texas (~105k) with low cost of living. Pure pathway play: ~$22k/yr before aid, then transfer to D1/D2 on Clements' national network.",
+    "url": "https://www.apacheathletics.com/sports/msoc/index",
     "mapX": 337,
     "mapY": 258,
     "profileDepth": "full",
@@ -8622,28 +8622,28 @@
     "confRecord": [
       {
         "yr": 2025,
-        "pos": "NJCAA DI play",
-        "note": "Region XIV competition. #1 D1 transfer record nationally maintained."
+        "pos": "1st (North Division)",
+        "note": "11-0-1 conference, 17-1-2 overall. Region XIV Champions."
       },
       {
         "yr": 2024,
-        "pos": "NJCAA DI play",
-        "note": "Region XIV competition."
+        "pos": "1st (North Division)",
+        "note": "9-1-1 conference, 18-2-2 overall."
       },
       {
         "yr": 2023,
-        "pos": "NJCAA DI play",
-        "note": "Region XIV competition."
+        "pos": "1st",
+        "note": "12-2 conference, 15-3-1 overall."
       },
       {
         "yr": 2022,
-        "pos": "NJCAA DI play",
-        "note": "Region XIV competition."
+        "pos": "1st",
+        "note": "13-1 conference, 17-3-1 overall."
       },
       {
         "yr": 2021,
-        "pos": "NJCAA DI play",
-        "note": "Region XIV competition."
+        "pos": "1st",
+        "note": "Region XIV competition — consistent dominance."
       },
       {
         "yr": 2020,
@@ -8652,9 +8652,9 @@
       }
     ],
     "titles": [
-      "#1 JUCO program nationally for D1 transfers — all-time record",
-      "NJCAA Region XIV consistent competitor",
-      "Transfer alumni across ACC, Big Ten, Big East, AAC, and more"
+      "NJCAA Division I National Champions: 2009, 2010, 2012, 2014, 2016, 2017 (6 titles)",
+      "#1 JUCO D1 transfer feeder nationally — all-time record",
+      "100+ professional contracts, 10 MLS draftees under Coach Clements"
     ],
     "proPlayers": {
       "mlsPicks5yr": 0,

@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current stable version: **v26 Stable (completed June 2026)**
+- Current stable version: **v30 Stable (completed June 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json guideVersion`
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -609,9 +609,9 @@ ACU Alignment tab overhaul. Minutes Outlook formula and JUCO calibration fixes. 
 - SMU shortlist decision (borderline budget reach)
 
 **Planned for v27:**
-- Add Tyler Junior College (Tyler, TX) — #1 JUCO D1 transfer feeder nationally
-- Add Daytona State College (Daytona Beach, FL) — top-5 JUCO D1 feeder, warm/Florida lifestyle
-- 53 schools minutesOutlook — populate from roster data or apply division baseline estimates
+- ~~Add Tyler Junior College~~ — ALREADY IN GUIDE (id: tyler_jc, data/other.json). Needs data quality pass: costNum correction ($14k→$22.2k), confRecord with actual standings, titles[] with 6 national championships, domain fix (tjc.edu→apacheathletics.com), coach email/phone verification
+- ~~Add Daytona State College~~ — ALREADY IN GUIDE (id: daytona_state, data/other.json)
+- minutesOutlook — populate from roster data for schools still at available:false
 
 ---
 
@@ -646,7 +646,11 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 
 **1A — Strategic Gate (do first — before investing research time)**
 - [ ] Confirm active men's soccer program exists — Claude for Chrome → official athletics site (Tier 1)
-- [ ] Confirm school not already in guide — search all conf JSON files for the name
+- [ ] Confirm school not already in guide — use this exact command (grep misses compound IDs like "tyler_jc"):
+  ```bash
+  python -c "import json; [print(s.get('id'), s.get('name')) for f in ['data/acc.json','data/big-ten.json','data/big-east.json','data/aac.json','data/big-west.json','data/caa.json','data/other.json'] for s in json.load(open(f))]" | grep -i "SCHOOL_NAME"
+  ```
+  Replace SCHOOL_NAME with the short name (e.g. "tyler", "daytona"). If a match is found, this is a DATA UPDATE session, not an Add School session — stop here and re-identify the change type.
 - [ ] Rough fit: division, approx cost, climate, city — if clearly out of range on 3+ factors, decide listed vs. full vs. defer
 
 **1B — Identity & Structure**
@@ -659,7 +663,7 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 - [ ] `confKey` — open app.js, check CONF_SECTIONS. Does an entry exist for this div + conference? If not, flag as additional scope.
 - [ ] Athletics URL (men's soccer page) — for `url`
 - [ ] University homepage URL — for `SITE_URLS`
-- [ ] Athletics domain (for favicon) — use athletics subdomain, not main university domain
+- [ ] Athletics domain (for favicon) — use the domain of the ATHLETICS SITE, not the main university domain. JUCOs often have a separate athletics site (e.g. apacheathletics.com for TJC, not tjc.edu). Verify by loading the favicon: `https://[domain]/favicon.ico`
 - [ ] Latitude / longitude → calculate `mapX` / `mapY` (formula: mapX = (lon+124.5)/(124.5-67)×640, mapY = (49.5-lat)/(49.5-25)×390)
 - [ ] Undergraduate enrollment (for `size`)
 
@@ -686,7 +690,7 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 
 **1E — Soccer Program**
 - [ ] Soccer level description (free text for `soccerLevel`)
-- [ ] confRecord: last 5–6 years standings — Claude for Chrome → official conference website (Tier 1)
+- [ ] confRecord: last 5–6 years standings — Claude for Chrome → official conference website (Tier 1). For NJCAA: navigate to njcaaregion[N].com/sports/msoc/[YEAR]/standings. Never use placeholder text like "NJCAA DI play" — actual position and record are required.
 - [ ] Conference titles and notable finishes (for `titles[]`)
 - [ ] MLS picks last 5 years — Claude for Chrome → official MLS SuperDraft records (Tier 1)
 - [ ] Notable alumni and draft history
@@ -695,8 +699,8 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 **1F — Coach (all from official athletics staff page — Tier 1 only, never guess)**
 - [ ] Head coach name (confirmed on official staff page)
 - [ ] Title
-- [ ] Email (confirmed on official site)
-- [ ] Phone (confirmed on official site)
+- [ ] Email (confirmed on official site) — if no email listed, set `null` and use assistant contact. Never guess (e.g. "coach@domain.com" format)
+- [ ] Phone (confirmed on official site) — verify the number belongs to THIS coach, not an assistant. Staff directory tables often list assistant contact next to head coach name.
 - [ ] Years as head coach at this school
 - [ ] Career record
 - [ ] Coaching licence — check official bio first, then LinkedIn (Tier 2 for licence only)

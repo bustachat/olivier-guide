@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current stable version: **v25 Stable (completed June 2026)**
+- Current stable version: **v26 Stable (completed June 2026)**
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -43,19 +43,24 @@ cat athletes/olivier.json      # Single source of truth for athlete config
 
 For data work, read the specific conference file:
 
-| Conference | File | Schools (all full-profile as of v25) |
+| Conference | File | Schools (all full-profile as of v26) |
 |---|---|---|
 | ACC | `data/acc.json` | Virginia, Wake Forest, SMU, Clemson, Notre Dame, UNC, Duke, NC State, Louisville, Pitt, Stanford, Syracuse, Cal (13) |
 | Big Ten | `data/big-ten.json` | UCLA, Indiana, Maryland, Penn State, Michigan, Michigan State, Ohio State, Northwestern, Wisconsin, Rutgers, Oregon, USC, Washington, Illinois (14) |
 | Big East | `data/big-east.json` | St John's, Georgetown, Creighton, UConn, Providence, Villanova, Marquette, Butler, Seton Hall, DePaul, Xavier (11) |
-| AAC | `data/aac.json` | FIU, USF, FAU, Tulsa, Memphis, Wichita State, Temple, East Carolina, UAB, Navy, Army, Charlotte, Rice (13) |
-| Big West | `data/big-west.json` | UCSB, Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, Long Beach State, Hawaii, CSU Fullerton (9) |
+| AAC | `data/aac.json` | FIU, USF, FAU, Tulsa, Memphis, Temple, East Carolina, UAB, Navy, Army, Charlotte, Rice (12) |
+| Big West | `data/big-west.json` | UCSB, Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, Long Beach State, CSU Fullerton (8) |
 | CAA | `data/caa.json` | Charleston, William & Mary, Hofstra, Northeastern, Drexel, Delaware, Elon, Monmouth, Stony Brook (9) |
 | All D2, NAIA, JUCO, D3, NEC, CACC, AMC + everything else | `data/other.json` | Vermont (AEC), Mercyhurst (NEC), Georgian Court (CACC), Columbia College MO (AMC), + all non-D1 schools |
 
 ### Step 3 — Confirm the session goal
 State in one sentence what this session will deliver and which session number it is.
 Do not proceed until you have stated this explicitly.
+
+**Session flow — always in this order:**
+§2 EXPLORE (read repo state) → §3 PLAN (identify change type + impact map) → §7 Phase 0 (change assessment) → §7 Phase 1 (research) → §7 Phase 2 (sign-off) → §7 Phase 3 (make changes) → §7 Phase 4 (validate) → §7 Phase 5 (local test) → §7 Phase 6 (commit) → §7 Phase 7 (verify live) → §7 Phase 8 (end of session)
+
+Do not skip any phase. Do not begin Phase 3 before Phase 2 sign-off is written out explicitly.
 
 ---
 
@@ -64,16 +69,15 @@ Do not proceed until you have stated this explicitly.
 **THIS IS NON-NEGOTIABLE. Every change, no exceptions:**
 
 1. Identify the change type from Section 3a (Impact Map).
-2. Read every row in that change type's impact map out loud — files AND tabs.
+2. Read every row in that change type's impact map — files AND tabs.
 3. Write out the complete list of files and tabs this change touches.
-4. Only then begin coding.
+4. Only then begin the Universal Change Workflow in Section 7 — starting at Phase 0. Phase 0 and Phase 2 of §7 complete this planning step. Do not treat §3 as a substitute for them.
 
-A change is NOT complete until every item in the impact map for that change type has been checked and actioned. This applies to data fixes, coach updates, new schools, cost changes — everything. Not checking the full impact map is the single largest source of errors in this project.
+A change is NOT complete until every item in the impact map for that change type has been checked and actioned. This applies to data fixes, coach updates, new schools, cost changes, UX changes — everything.
 
 **Other plan rules:**
 - For JSON changes: validate schema against Section 5 before touching the file.
 - For JS changes: identify the specific function(s) involved. Read them first.
-- For new schools: run the full new-school checklist (Section 7) IN ADDITION to the impact map.
 - One change at a time. Complete and verify each change before starting the next.
 - State any assumptions. If something is ambiguous, ask — do not guess.
 
@@ -82,8 +86,6 @@ A change is NOT complete until every item in the impact map for that change type
 ## 3a. Change Impact Map — Mandatory Before Every Change
 
 **For every change, find the matching type below. Every row is a required check — not a suggestion.**
-If a row says "always required" it means check it even if you think it won't be affected.
-The tabs column is what gets missed most often. Check every tab listed.
 
 ---
 
@@ -96,7 +98,7 @@ The tabs column is what gets missed most often. Check every tab listed.
 | `data/conferences.json` — guideSchools[] | School chip will not appear in Conferences tab without this |
 | `data/conferences.json` — desc and olivierNote | Update the text to reflect the new school count and program highlights — easy to miss |
 | `data/conferences.json` — otherSchools[] | Remove school from otherSchools[] if it was previously listed there |
-| `data/conf-prestige.json` — conference entry | Conference prestige table will miss the school's conference if not updated |
+| `data/conf-prestige.json` — programsInGuide | Update comma-separated string and relevance text |
 | `data/pipeline.json` | Only if school has NCAA titles or MLS picks — add to relevant table |
 | `js/app.js — DOMAINS` | Favicon in modal header breaks without this |
 | `js/app.js — SITE_URLS` | Visit Site link in modal breaks without this |
@@ -109,7 +111,7 @@ The tabs column is what gets missed most often. Check every tab listed.
 - Compare — school selectable
 - Minutes Outlook — card present (even if available: false)
 - Pro Pipeline — only if titles/MLS picks added to pipeline.json
-- ACU Alignment — row present in table
+- ACU Alignment — row present (non-JUCO full-profile only)
 - Conferences — school chip visible in guideSchools[], prestige table updated
 - Coaches & Staff — coach card in Rankings, profile in Profiles tab, entry in Outreach tab
 - Financial Model — school in selector, appears in comparison bars
@@ -196,8 +198,6 @@ The tabs column is what gets missed most often. Check every tab listed.
 - Explore Schools → school modal → Conference History tab
 - Compare tab — Conference (last 6yr) row
 
-confRecord is display-only — no automatic score cascade. But a major trajectory change (e.g. program declined from 1st to last) warrants manually reviewing lensScores.soccer.
-
 ---
 
 ### CHANGE TYPE 7 — Pipeline / Titles Changed
@@ -218,23 +218,21 @@ confRecord is display-only — no automatic score cascade. But a major trajector
 
 ### CHANGE TYPE 8 — Listed Profile → Full Profile Upgrade
 
-This is the most common batch operation (used throughout v25). It has the largest file footprint of any change type.
-
 **Step order matters — do not skip steps or reorder:**
 
 | Step | What to update | Why |
 |---|---|---|
 | 1 | `data/[conf].json` — add all full-profile fields | `profileDepth: "full"`, `color`, `devScores`, `facilityDetails{}`, `culture{}`, `staff[]`, `courses[]`, `acuUnits[16]`. Expand `fin{}` with tuition/roomBoard/fees/maxAthletic/maxAcademic/aidType. |
 | 2 | `data/[conf].json` — validate JSON | `python -m json.tool data/[conf].json` — do not proceed if invalid |
-| 3 | `data/coaches.json` — add coach entry | Use add\_[conf]\_coaches.py script. **Re-rank ALL coaches after every batch.** |
+| 3 | `data/coaches.json` — add coach entry | Re-rank ALL coaches after every batch. |
 | 4 | `js/app.js` — DOMAINS, SITE_URLS, SOCIAL | Add entry for each upgraded school. Run `node --check js/app.js` after. |
-| 5 | `data/conferences.json` — guideSchools[] | Move school from `otherSchools[]` into `guideSchools[]`. Clear `otherSchools[]` if all schools are now profiled. |
-| 6 | `data/conferences.json` — desc and olivierNote | **Always update these.** Change the school count ("X guide schools"), add new highlights, remove stale statements. This is the most frequently missed step. |
-| 7 | `minutesOutlook` — research and populate roster data | Minutes Outlook is 20% of fitOlivier. Use `College Rosters/roster_analysis.py` or manual research. Only set `{ "available": false }` if the roster page cannot be scraped — document why and request data to be provided. Do not leave the field absent. |
-| 8 | Validate all modified files | `python -m json.tool` on every JSON, `node --check` on JS |
+| 5 | `data/conferences.json` — guideSchools[] | Move school from `otherSchools[]` into `guideSchools[]`. |
+| 6 | `data/conferences.json` — desc and olivierNote | **Always update these.** Change the school count and add new highlights. Most frequently missed step. |
+| 7 | `minutesOutlook` — research and populate roster data | Minutes Outlook is 20% of fitOlivier. Use Claude for Chrome MCP on the official roster page (see §15). Only set `{ "available": false }` if roster cannot be obtained — document why. |
+| 8 | Validate all modified files | `python validate_schools.py` then `python -m json.tool` on each JSON, `node --check` on JS |
 | 9 | Commit with version bump | `vNN.N — [Conference] batch: X listed schools upgraded to full profile` |
 
-**acuUnits false patterns by acuAlign** — use these to set covered:false on the correct units:
+**acuUnits false patterns by acuAlign:**
 
 | acuAlign (trues) | Units to set covered:false |
 |---|---|
@@ -247,47 +245,85 @@ This is the most common batch operation (used throughout v25). It has the larges
 
 All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EXSC224, EXSC321, EXSC204, EXSC216, EXSC199, EXSC296, EXSC187, EXSC230, EXSC122, EXSC398`
 
-**Service academy rule** (Army/Navy/USNA): costNum=0, all fin fields 0, maxAthletic=1.0, maxAcademic=0. Include explicit service commitment warning in every text field. Not compatible with DPT/Chiro or MLS goals.
-
-**minutesOutlook for upgrades**: Research and populate at upgrade time — see Step 7 above. Only set `{ "available": false }` as a last resort if roster data cannot be obtained — document why and request data to be provided. Do not leave the field absent.
-
-**Also update after EVERY conference batch — these are ALWAYS missed:**
-- `data/conf-prestige.json` — `programsInGuide` string and `relevance` text for the conference row. This is a SEPARATE file from conferences.json and powers the Rankings table in the Conference tab. It is NOT updated automatically. Update it in the same commit as the batch.
+**Also update after EVERY conference batch:**
+- `data/conf-prestige.json` — `programsInGuide` string and `relevance` text. This is a SEPARATE file and is NOT updated automatically.
 
 **Tabs to verify after upgrading a batch:**
-- Explore Schools — modal opens with all 9 tabs populated (Details button = confKey is correct)
+- Explore Schools — modal opens with all 9 tabs populated
 - Coaches & Staff → Rankings — new coaches present with correct badge colour
 - Conferences — conference card shows updated guideSchools count and desc/olivierNote
-- Conferences → Rankings table — programsInGuide column shows new school count (reads from conf-prestige.json)
-- Financial Model — upgraded schools now appear (filter is `profileDepth !== 'listed'`)
-- ACU Alignment — rows present for all upgraded schools
+- Conferences → Rankings table — programsInGuide column shows new school count
+- Financial Model — upgraded schools now appear
+- ACU Alignment — rows present for all upgraded schools (non-JUCO only)
 
 ---
 
 ### CHANGE TYPE 9 — Degree Program (degreeTitle) Updated
 
-This change type exists because degreeTitle updates and ACU alignment reviews are not automatically linked — but they must be. Knowing the real degree program often reveals different course coverage than a generic template assumed. Skipping the ACU review after a degreeTitle update is the gap that created stale acuAlignNote text and wrong acuUnits counts.
-
-**Rule: Any time degreeTitle is researched or changed, steps 2–4 below are mandatory — not optional.**
+**Rule: Any time degreeTitle is researched or changed, steps 2–4 below are mandatory.**
 
 | Step | What to update | Why |
 |---|---|---|
 | 1 | `data/[conf].json` — degreeTitle | The degree name shown on the school card and modal |
-| 2 | `data/[conf].json` — acuAlignNote | **Must be reviewed.** The note must reference the actual degree program by name, not a generic template. If the real degree has named courses matching ACU units, call them out explicitly. |
-| 3 | `data/[conf].json` — acuUnits[] | **Verify coverage.** Does the real degree program cover the same units assumed? Research specific course offerings. If the school offers Anatomy, Physiology, or Exercise Physiology by confirmed course name, mark those units covered:true. |
-| 4 | `data/[conf].json` — acuAlign | Count of covered:true must equal this integer. Recalculate if acuUnits changed. |
+| 2 | `data/[conf].json` — acuAlignNote | Must reference the actual degree by name with specific course examples — not generic template text |
+| 3 | `data/[conf].json` — acuUnits[] | Verify coverage against real degree course offerings |
+| 4 | `data/[conf].json` — acuAlign | Count of covered:true must equal this integer |
 
 **If acuUnits or acuAlign changed, also cascade:**
-- `lensScores.academic` — re-evaluate (acuAlign is a factor)
+- `lensScores.academic` — re-evaluate
 - `lensScores.overall` — recalculate if academic lens changed significantly
-- `fitOlivier` — recalculate (acuAlignment = 10% of fit score) — **JUCO EXCEPTION: do NOT cascade acuAlign into fitOlivier for JUCO schools. ACU alignment is informational only for JUCOs — playing time and transfer pathway drive fitOlivier, not degree program alignment.**
+- `fitOlivier` — recalculate (acuAlignment = 10% of fit score)
 
-**Tabs to verify after changing:**
-- ACU Alignment tab — school row shows updated unit count and correct bars
-- Explore Schools → school modal → Overview tab — acuAlignNote text is accurate and degree-specific
-- Explore Schools — fitOlivier updated if acuAlign changed (non-JUCO only)
+**JUCO EXCEPTION:** Do NOT cascade acuAlign into fitOlivier for JUCO schools. ACU alignment is informational only for JUCOs.
 
-**Common failure mode:** Generic acuAlignNote text like "2-year degree. Transfer curriculum covers biology, anatomy basics." left in place after degreeTitle is updated to a specific program. The note must name the actual degree and reference specific courses available.
+**Tabs to verify:** ACU Alignment tab, Explore modal Overview tab (acuAlignNote text), Explore fitOlivier (non-JUCO only).
+
+---
+
+### CHANGE TYPE 10 — School Removed
+
+| What to update | Why |
+|---|---|
+| `data/[conf].json` — remove school object entirely | Primary record — all other files reference this |
+| `data/coaches.json` — remove coach entry | Orphaned entry renders a broken card in Rankings/Profiles |
+| `data/coaches.json` — re-rank ALL remaining coaches | Rank gaps break Rankings display |
+| `js/app.js — DOMAINS` | Remove entry — stale entry is harmless but creates noise |
+| `js/app.js — SITE_URLS` | Remove entry |
+| `js/app.js — SOCIAL` | Remove entry |
+| `data/conferences.json` — guideSchools[] | Remove school display name from array |
+| `data/conferences.json` — desc and olivierNote | Update school count — most frequently missed step |
+| `data/conf-prestige.json` — programsInGuide | Remove school from comma-separated string |
+| `data/pipeline.json` | Only if school had entries — remove from relevant table |
+| `athletes/olivier.json` — shortlist[] | Remove if present — orphaned shortlist entry causes display error |
+| `athletes/olivier.json` — outreach[] | Remove if present |
+
+**Tabs to verify after removing:**
+- Explore Schools — school card gone, no ghost card, total count is N-1
+- Dashboard — map dot gone
+- Conferences — school chip gone from guideSchools, count updated in desc/olivierNote
+- Coaches & Staff → Rankings — coach gone, all remaining coaches renumbered correctly
+- ACU Alignment — row gone
+- Minutes Outlook — card gone
+- Financial Model — school gone from selector
+- F12 console — zero errors (orphaned references throw JS errors)
+
+---
+
+### CHANGE TYPE 11 — UX / JS Change
+
+| What to do | Why |
+|---|---|
+| Identify the specific function(s) involved | Never edit JS without knowing exactly which function owns the behaviour |
+| Read those functions in full before touching them | The most common JS error source is editing without reading first |
+| Map which tabs render using those functions | Determines test scope — targeted vs full regression |
+| Run `node --check js/[file].js` immediately after every edit | Don't wait for Phase 7 — catch syntax errors at the source |
+
+**Test scope by change type:**
+- Score calculation change (scores.js) → full regression all tabs
+- Single tab renderer change → targeted (affected tab) + smoke test all others
+- Sort / lens / mode logic → Explore Schools full test + mode/sort/lens combos
+- Dashboard renderer → Dashboard tab full test + smoke others
+- Cosmetic / text change → smoke test only
 
 ---
 
@@ -325,13 +361,16 @@ D3 and JUCO schools both use `confKey: 'other'` but are split by `divFilter: 'D3
 A school with a wrong or missing `confKey` is invisible in Explore and has no Details button.
 
 **conferences.json tier strings must match the renderer bucket keys exactly.**
-Valid tier strings: `"Mid-Major (D1)"`, `"Division II"`, `"NAIA"`, `"D3"`, `"JUCO"`.
-A wrong tier string (e.g. `"D2"` instead of `"Division II"`) silently hides the conference card.
+Valid tier strings: `"Power 5 (D1)"`, `"Major (D1)"`, `"Mid-Major (D1)"`, `"Division II"`, `"NAIA"`, `"D3"`, `"JUCO"`.
+A wrong tier string silently hides the conference card.
 
 **Map coordinates use the v20 640×390 SVG coordinate system.**
 mapX/mapY must be recalculated if coming from an older system. Verify on Dashboard after adding any school.
 
-**DOMAINS, SITE_URLS, and SOCIAL in app.js must be updated whenever a new school is added.**
+**DOMAINS, SITE_URLS, and SOCIAL in app.js must be updated whenever a new school is added or removed.**
+
+**Service academy rule (Army / Navy / USNA):**
+`costNum=0`, all `fin{}` numeric fields = 0, `maxAthletic=1.0`, `maxAcademic=0`. Include an explicit service commitment warning in every text field — `rec`, `acuAlignNote`, `fin.internationalNote`, `culture.olivierMatch`. These schools are not compatible with Olivier's DPT/Chiropractic goal or MLS pathway. fitOlivier will naturally be low due to career goal mismatch — do not inflate it.
 
 **Sort, Lens, and Score Mode are three independent, non-conflicting controls.**
 - Score mode toggle (With Minutes / Base Fit) → recalculates fit scores, then re-applies current sort
@@ -346,10 +385,11 @@ mapX/mapY must be recalculated if coming from an older system. Verify on Dashboa
 ### School object (full-profile)
 ```
 id, name, full, loc, region, div, conf, confKey, domain,
-warm, city, top, color,
+warm, city, top, color[],
 degreeTitle, acuAlign (int 1–16), acuUnits[] (16 objects),
 acuAlignNote, soccerLevel, cost, aid, fin{},
 size, prePT, coach{}, gpa{},
+facilities[] (brief array — 3 bullet strings for card display; full-profile schools also require facilityDetails{}),
 devScores{ tactical, technical, fitness },   ← 3 keys only — ptPath removed in v22
 fitOlivier (0–100),
 lensScores{ overall, soccer, academic, minutes, lifestyle, value },  ← 6 keys — pt removed v22
@@ -359,7 +399,7 @@ profileDepth: "full",
 minutesOutlook{ available: true/false, … },
 facilityDetails{ rating, stadium, trainingFields, strengthConditioning,
                  sportsScience, sportsMed, academicLabs, extras, note },
-culture{ vibe, thingsToDo, socialScene, olivierMatch, lifestyleTags[] },
+culture{ vibe, thingsToDo, socialScene, olivierMatch, lifestyleTags },
 confRecord[{ yr, pos, note }],
 titles[], proPlayers{}
 ```
@@ -388,35 +428,37 @@ EXSC187, EXSC230, EXSC122, EXSC398
 | 10 | EXSC394, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
 | 9 | EXSC394, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
 | 8 | EXSC394, EXSC322, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
-
-Verify: `count(covered:true) == acuAlign`. If they don't match, the ACU Alignment tab renders incorrect bars.
+| 7 or below | Start from the 8-false set above and additionally mark covered:false working backwards from the end of the unit list (EXSC398, EXSC122, EXSC230, EXSC187...) until covered:true count matches acuAlign. Always verify the final count manually. |
 
 ### coaches.json — required fields per coach entry
 ```
 id, schoolId, name, school, div, conf,
 rank, rankClass (rk-elite | rk-strong | rk-solid),   ← HYPHENS not underscores
-yearsHC, record, mlsPlayers, overallScore, ptPathScore,
-ausConnection (bool), bio, strengths[], staff[],
-contact{ email, phone },
+yearsHC, record, mlsPlayers, overallScore,
+ptPathScore (deprecated — set to 0 for new coaches; retained for legacy data),
+ausConnection (bool), licence (string or null),
+bio, strengths[], staff[],
+contact{ email, phone }
 ```
 rankClass drives badge colour: `rk-elite` = gold, `rk-strong` = sky, `rk-solid` = emerald.
-**After any coach addition, re-rank ALL coaches by overallScore descending. Rank must be sequential with no gaps.**
-After any coach update, verify the school's `coach{}` object in its conference JSON also reflects the change.
+**After any coach addition or removal, re-rank ALL coaches by overallScore descending. Rank must be sequential with no gaps.**
 
 ### conferences.json — required fields per entry
 ```
 id, name, abbr, tier, tierClass, prestige,
 founded, teams, soccerTeams, ncaaTitles,
 mlsPipeline, scholarships,
-guideSchools[], otherSchools[],
+guideSchools[] — display names (e.g. "Virginia (UVA)") NOT school JSON ids,
+otherSchools[],
 desc, olivierNote, color[]
 ```
-**tier field must exactly match renderer bucket keys:** `"Mid-Major (D1)"`, `"Division II"`, `"NAIA"`, `"D3"`, `"JUCO"`
+**tier field must exactly match renderer bucket keys:** `"Power 5 (D1)"`, `"Major (D1)"`, `"Mid-Major (D1)"`, `"Division II"`, `"NAIA"`, `"D3"`, `"JUCO"`
 
 ### conf-prestige.json — required fields per entry
 ```
 rank, rankClass, name, fullName, div, divBadge,
-programsInGuide, programsInGuideWarning (bool),
+programsInGuide (comma-separated display names),
+programsInGuideWarning (bool),
 mlsPipeline, mlsPipelineWarning (bool),
 scholarships, relevance
 ```
@@ -432,8 +474,6 @@ scholarships, relevance
                 picks5yr, notable, allTime }
 }
 ```
-yearsStyle values: "chip-gold" | "chip-purple" | "hint"
-rankClass values: "rank-medal medal-1" | "rank-medal medal-2" | "rank-medal medal-3" | null
 
 ### athletes/olivier.json — complete schema
 ```
@@ -446,11 +486,11 @@ auDegree, auUnitsTotal, auUnitsCompleted[], auUnitsPlanned[],
 wesTransferableUnits[],
 careerGoal, lifestylePrefs[], targetDivisions[],
 budgetAUD, budgetUSD, fxRate,
-shortlist[] — [{id, status}] objects (backward compat: plain strings = "Not contacted")
+shortlist[] — [{id, status}] objects
 outreach[]  — [{schoolId, status, lastContact, note}]
 scoreWeights{ soccerLevel, gpaEligibility, cost, acuAlignment,
-              city, climate, minutesOutlook }   ← ptPath removed v22
-scoreWeightsBase{ ... }                         ← same but minutesOutlook: 0
+              city, climate, minutesOutlook }
+scoreWeightsBase{ ... }
 soccerLevelMap{ D1, IVY, D2, NAIA, D3, JUCO }
 prePtMap{ Excellent, Very Strong, Good, Solid, Transfer Pathway }
 guideTitle, guideSubtitle,
@@ -468,21 +508,6 @@ pathways{ paths[], coachQuestions[] }
 | City Campus | 5% | 5% |
 | Climate | 5% | 5% |
 | PT Path | 0% | 0% |
-
-**ptPath weight is 0 in both modes.** The `(w.ptPath || 0)` guard in scores.js is required to prevent NaN.
-Dev Score is now the average of 3 sub-scores only: tactical + technical + fitness (ptPath removed v22).
-
-**Score mode toggle:**
-- `scoreWeights` — minutes-adjusted (default, "With Minutes" button)
-- `scoreWeightsBase` — base weights without minutesOutlook ("Base Fit" button)
-Mode toggle calls `recalculateAllScores()` then `applySort(currentSort)`.
-`recalculateAllScores()` writes back to `school.fitOlivier` AND `card.dataset.fitscore` — both required for sort to work after toggle.
-
-**Lens/Sort/Mode independence:**
-- `applySort('fit')` is lens-aware: when `currentLens !== 'overall'`, sorts by `lensScores[currentLens]`
-- `applyLens()` updates badges/highlights then calls `applySort(currentSort)` — does NOT reset sort
-- `setScoreMode()` calls `applySort(currentSort)` — does NOT call `applyLens()`
-- All three controls are fully combinable: Soccer-First lens + Lowest Cost sort + Base Fit mode all work simultaneously
 
 ---
 
@@ -504,14 +529,6 @@ Five new full-profile schools added: Mercyhurst (NEC/D1), Georgian Court (CACC/D
 - Sort/Lens/Mode redesigned as independent axes: Best Fit sort is lens-aware; lens applies highlights only; mode toggle re-applies current sort
 - Overall Fit description now uses `u.rec` (school-specific) instead of generic static text
 - Glossary updated: all PT Pathway references removed
-
-**Bugs fixed in v22 that inform the new-school checklist:**
-- Missing `confKey` = school invisible in Explore + no Details button
-- Wrong `divFilter` = school appears under wrong division section
-- Wrong `tier` string in conferences.json = conference card invisible
-- Invalid `rankClass` (underscores instead of hyphens) = coach badge broken
-- `school.fitOlivier` not written back in recalculate = sort broken after mode toggle
-- Sort + Lens fighting = applySort was overriding lens order silently
 
 ### v23 Stable — June 2026
 Data verification pass, financial model correction, and coach data completion.
@@ -537,7 +554,7 @@ Data verification pass, financial model correction, and coach data completion.
 - Academic/institutional aid restructured as fixed dollar amount ($0–$30k), not a percentage
 - Scenario buttons updated: Full Ride = 100% athletic, Typical Intl = 35% + $10k institutional
 - Glossary: new "How Scholarships Work" section with equivalency explanation and D2 Florida stacking example
-- Corrected misleading internationalNote text for SMU, Wake Forest, UCLA (removed "net cost ~$14k" based on inflated 85% athletic assumption)
+- Corrected misleading internationalNote text for SMU, Wake Forest, UCLA
 
 **Tools added in v23:**
 - export_schools.py — exports all 95 schools to CSV for external review (excludes Olivier-specific fields)
@@ -546,22 +563,12 @@ Data verification pass, financial model correction, and coach data completion.
 internationalNote populated for all schools, new JUCO school added, coaching licence data introduced.
 
 **Changes in v24:**
-- internationalNote added to all 54 remaining schools across aac, acc, big-east, big-ten, big-west, caa (wakeforest/smu/ucla excluded — already corrected in v23.17)
-- APP_VERSION now driven dynamically from `athleteConfig.guideVersion` in olivier.json — no longer hardcoded in app.js
+- internationalNote added to all 54 remaining schools
+- APP_VERSION now driven dynamically from `athleteConfig.guideVersion` in olivier.json
 - Indian Hills CC (Ottumwa, IA) added as full-profile JUCO school — 2025 NJCAA DI National Champions
-  - fitOlivier: 70, lensScores populated, minutesOutlook: 13 MFs clearing before 2027
-  - Two Australians on current roster: Daniel Monteiro (Brisbane) + Santo Aguek (Melbourne)
-  - Coach: Zac Newton (appointed July 2024) — ranked 26th, USSF C licence
 - coaching `licence` field added to all 41 coaches.json entries — 25 confirmed, 16 null
-- Licence badge displayed on coach cards (indigo pill) and rankings table (new column)
+- Licence badge displayed on coach cards and rankings table
 - guideVersion bumped to v24 in athletes/olivier.json
-
-**Deferred from v24 (carry to v25):**
-- minutesOutlook still missing for: Clemson, UNC, Maryland, GCU, Akron, Denver, FAU, UCA, Iowa Western, UC Charleston, Mercyhurst, Georgian Court
-- GCU coach verification (Davies Dec 2025 flag from Grok)
-- Remaining 16 coaching licences unconfirmed (null)
-- SMU shortlist decision (borderline budget reach — keep for now)
-- NSU DPT articulation detail
 
 ### v25 Stable — June 2026
 All 55 listed-profile schools upgraded to full-profile. FSU removed (no men's soccer program). 95 coaches in coaches.json.
@@ -570,21 +577,12 @@ All 55 listed-profile schools upgraded to full-profile. FSU removed (no men's so
 - v25.1–v25.2: ACC batch (Duke, NC State, Louisville, Pitt, Stanford, Syracuse, Cal) — 7 schools
 - v25.3: Big East batch (Villanova, Marquette + prior 7) — 9 schools complete
 - v25.4: Big West batch (Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, Long Beach, Hawaii, CSUF) — 8 schools
-- v25.5: AAC batch (Tulsa, Memphis, Wichita State, Temple, East Carolina, UAB, Navy, Army, Charlotte, Rice) — 10 schools
+- v25.5: AAC batch (Tulsa, Memphis, Temple, East Carolina, UAB, Navy, Army, Charlotte, Rice) — 10 schools
 - v25.6: CAA batch (William & Mary, Hofstra, Northeastern, Drexel, Delaware, Elon, Monmouth, Stony Brook) — 8 schools
 - v25.7: Vermont (America East) upgraded
 - v25.8: FSU removed; Conference tab desc/olivierNote updated across all conferences
 
 **Total guide schools as of v25: 95 coaches, all schools full-profile.**
-
-**Deferred from v25 (carry to v26):**
-- minutesOutlook still `available:false` for most v25 batch schools — roster scrape needed
-- Placeholder coach names ("Head Coach") remain for 22 schools — real names to be researched
-- GCU coach verification (Jamie Davies Dec 2025 flag)
-- Remaining coaching licences unconfirmed (null)
-- SMU shortlist decision (borderline budget reach)
-
----
 
 ### v26 Stable — June 2026
 ACU Alignment tab overhaul. Minutes Outlook formula and JUCO calibration fixes. Wichita State and Hawaii removed (no men's soccer programs). Coach name research continued.
@@ -594,22 +592,17 @@ ACU Alignment tab overhaul. Minutes Outlook formula and JUCO calibration fixes. 
 - v26.3: Remove Wichita State and Hawaii (no men's soccer programs confirmed)
 - v26.4: UC Riverside — Tim Cupello coach update
 - v26.5–v26.6: Conference tab fix (conf-prestige.json programsInGuide corrections)
-- v26.7: ACU Alignment tab — fix stale summary cards (Texas A&M removed, Clemson corrected 5/16, GCU corrected 14/16, v25 batch schools added)
-- v26.8: ACU Alignment tab — remove all UF references (no school object, not recruitable)
-- v26.9: ACU Alignment tab — exclude JUCO schools from table (soccer development is the metric for 2yr programs)
-- v26.10: Minutes Outlook — JUCO adjusted factor 1.0 → 1.2 (full roster reset, Olivier above average at JUCO level)
-- v26.11: Minutes Outlook — rank on Yr1+Yr2 only, apples-to-apples JUCO vs 4yr (Yr3/Yr4 display unchanged)
-- v26.12: JUCO minutesOutlook Yr1/Yr2 recalibrated — based on Macarthur Bulls A-League U18 (starter, 45–60 min/game) vs high school JUCO recruits. Cascade: lensScores.minutes, overall, fitOlivier updated for all 6 JUCO schools
+- v26.7–v26.9: ACU Alignment tab overhaul — stale cards fixed, JUCOs excluded
+- v26.10–v26.12: Minutes Outlook — JUCO adjusted factor 1.2, Yr1+Yr2 ranking, calibration
 - v26.13: CLAUDE.md — minutesOutlook roster research now mandatory Step 7 in Change Type 8
 
 **Architecture decisions in v26:**
-- JUCOs excluded from ACU Alignment tab — WES alignment not applicable for 2yr programs; soccer development is the primary metric
-- Minutes Outlook ranking uses Yr1+Yr2 only — later year projections inflated D1 scores unfairly vs JUCOs with only 2 years of data
-- JUCO adjusted factor set to 1.2 — Olivier (A-League U18 academy) is above average in the JUCO player pool vs high school recruits
-- D1 transfer pipeline quality identified as the key JUCO metric: Indian Hills #2, Iowa Western #4, Monroe #3 nationally (Grok, June 2026)
+- JUCOs excluded from ACU Alignment tab — WES alignment not applicable for 2yr programs
+- Minutes Outlook ranking uses Yr1+Yr2 only
+- JUCO adjusted factor set to 1.2 — Olivier above average in JUCO player pool
 
 **Deferred from v26 (carry to v27):**
-- 53 schools with minutesOutlook `available:false` — populate or apply division baseline estimates
+- 53 schools with minutesOutlook `available:false` — populate from roster data
 - Remaining "Head Coach" placeholder names unresolved
 - GCU coach verification (Jamie Davies Dec 2025 flag)
 - Remaining coaching licences unconfirmed (null)
@@ -618,89 +611,468 @@ ACU Alignment tab overhaul. Minutes Outlook formula and JUCO calibration fixes. 
 **Planned for v27:**
 - Add Tyler Junior College (Tyler, TX) — #1 JUCO D1 transfer feeder nationally
 - Add Daytona State College (Daytona Beach, FL) — top-5 JUCO D1 feeder, warm/Florida lifestyle
-- 53 schools minutesOutlook — populate from roster data or apply division baseline estimates with "estimated" flag
-- minutesOutlook now mandatory at full profile upgrade time (see Change Type 8 Step 7)
+- 53 schools minutesOutlook — populate from roster data or apply division baseline estimates
 
 ---
 
-## 7. New School Checklist
+## 7. Universal Change Workflow
 
-**Run every item in order before committing any new school. This checklist covers every file.**
-Items marked (full only) are required for `profileDepth: "full"` schools.
-Items marked (JUCO) are required for junior college schools.
+**This workflow applies to every change type without exception — new school, remove school, UX fix, data update, coach change, everything.**
 
-### A — Research & Plan
-- [ ] Determine `profileDepth`: "full" (9 modal tabs) or "listed" (card only)
-- [ ] Determine correct `div`: D1, IVY, D2, NAIA, D3, JUCO
-- [ ] Determine correct `conf` (actual conference name, e.g. "NEC", "CACC", "AMC")
-- [ ] Determine correct `confKey` — must match an existing key in `CONF_SECTIONS` in app.js
-  - D1 conferences have their own confKey (acc, big-ten, big-east, aac, etc.)
-  - D2 and NAIA conferences: check if CONF_SECTIONS has a key for them, or use 'other'
-  - D3 schools: `confKey: 'other'`, `div: 'D3'`
-  - JUCO schools: `confKey: 'other'`, `div: 'JUCO'`
-- [ ] Verify the CONF_SECTIONS entry for the target confKey has a matching `divFilter` for the school's div
-- [ ] Calculate `mapX` / `mapY` for the v20 640×390 SVG coordinate system
+The phases are universal. The checklist inside each phase is change-type specific — use the impact map (§3a) to identify which steps apply to your change.
 
-### B — Conference JSON (data/acc.json, data/other.json, etc.)
-- [ ] Add school object to the correct conference file
-- [ ] All required fields present (Section 5 — full or listed schema)
-- [ ] `id` is unique across ALL conference JSON files
-- [ ] `confKey` matches CONF_SECTIONS key exactly
-- [ ] `div` matches the CONF_SECTIONS `divFilter` for that key
-- [ ] `acuUnits[]` has exactly 16 entries in the correct order
-- [ ] `acuAlign` is an integer 1–16 matching the count of `covered: true` in acuUnits[]
-- [ ] `devScores` has exactly 3 keys: `tactical`, `technical`, `fitness` (full only); `null` if listed
-- [ ] `lensScores` has exactly 6 keys: `overall`, `soccer`, `academic`, `minutes`, `lifestyle`, `value` (full only)
-- [ ] `minutesOutlook: { "available": false }` if roster data not yet collected
-- [ ] `fitOlivier` pre-calculated and set (full only)
-- [ ] `rec` field populated with school-specific Overall Fit description (full only)
-- [ ] `facilityDetails.rating` is one of: "Elite" | "Excellent" | "Very Good" | "Good" | "Solid" (full only)
-- [ ] `culture{}` fully populated (full only)
-- [ ] `juco2yr: true` if JUCO 2-year school
-- [ ] Validate JSON: `python -m json.tool data/[file].json`
+---
 
-### C — app.js (DOMAINS, SITE_URLS, SOCIAL, CONF_SECTIONS)
-- [ ] Add school ID to `DOMAINS` object
-- [ ] Add school ID to `SITE_URLS` object
-- [ ] Add school ID to `SOCIAL` object (4-element array: instagram, twitter, facebook, youtube — null if unknown)
-- [ ] Confirm `CONF_SECTIONS` has an entry covering this school's `confKey` + `div` combination
-  - If adding a new conference, add a new CONF_SECTIONS entry with the correct key, divFilter, label, tier, intro
-  - D3 and JUCO both use `confKey:'other'` but must have SEPARATE CONF_SECTIONS entries with `divFilter:'D3'` and `divFilter:'JUCO'`
+### PHASE 0 — Change Assessment
 
-### D — coaches.json
-- [ ] Add coach entry with all required fields (Section 5)
-- [ ] `rankClass` uses HYPHENS: `rk-elite`, `rk-strong`, `rk-solid` (NOT underscores)
+Before any research or file editing, answer these questions:
+
+- [ ] What type of change is this? (match to §3a — types 1–11)
+- [ ] Which files will be touched? (list them)
+- [ ] Which tabs need verification? (list them from the impact map)
+- [ ] Does this involve a new conference? (scope expands — CONF_SECTIONS + conferences.json + conf-prestige.json all need entries)
+- [ ] Does this affect fitOlivier or lensScores? (cascade required)
+- [ ] What is the rollback plan? (`git revert HEAD` or restore from `Code\Archive\[version] Stable`)
+
+---
+
+### PHASE 1 — Research & Data Gathering
+
+**Output: a scratch doc with every data point confirmed. Phase 3 is pure transcription — no research during data entry.**
+
+Use §15 (Research Intelligence) to select the correct tool and source tier for every lookup.
+
+#### For ADD SCHOOL — complete all sections 1A through 1J:
+
+**1A — Strategic Gate (do first — before investing research time)**
+- [ ] Confirm active men's soccer program exists — Claude for Chrome → official athletics site (Tier 1)
+- [ ] Confirm school not already in guide — search all conf JSON files for the name
+- [ ] Rough fit: division, approx cost, climate, city — if clearly out of range on 3+ factors, decide listed vs. full vs. defer
+
+**1B — Identity & Structure**
+- [ ] Full official name (for `full`)
+- [ ] Short display name (for `name` — shown on card)
+- [ ] City, State (for `loc`)
+- [ ] Region: east / west / south / midwest
+- [ ] Division: D1 / IVY / D2 / NAIA / D3 / JUCO
+- [ ] Actual conference name
+- [ ] `confKey` — open app.js, check CONF_SECTIONS. Does an entry exist for this div + conference? If not, flag as additional scope.
+- [ ] Athletics URL (men's soccer page) — for `url`
+- [ ] University homepage URL — for `SITE_URLS`
+- [ ] Athletics domain (for favicon) — use athletics subdomain, not main university domain
+- [ ] Latitude / longitude → calculate `mapX` / `mapY` (formula: mapX = (lon+124.5)/(124.5-67)×640, mapY = (49.5-lat)/(49.5-25)×390)
+- [ ] Undergraduate enrollment (for `size`)
+
+**1C — Academic**
+- [ ] Exact degree program name — Claude for Chrome → academic catalog (not marketing page)
+- [ ] Course list for that degree
+- [ ] Go through all 16 ACU units one by one — covered / not covered:
+  `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EXSC224, EXSC321, EXSC204, EXSC216, EXSC199, EXSC296, EXSC187, EXSC230, EXSC122, EXSC398`
+- [ ] Count `covered:true` → this is `acuAlign`
+- [ ] Pre-PT quality: Excellent / Very Strong / Good / Solid / Transfer Pathway
+- [ ] GPA admission minimum — Claude for Chrome → official admissions page (Tier 1)
+- [ ] GPA scholarship minimum
+- [ ] `gpa.status`: eligible (≥2.8) / borderline (2.5–2.79) / below (<2.5) vs Olivier's 2.8
+
+**1D — Cost**
+- [ ] Annual tuition — Claude for Chrome → official cost-of-attendance page (Tier 1 only)
+- [ ] Annual room & board
+- [ ] Annual fees
+- [ ] Total COA = tuition + room/board + fees → this is `costNum`
+- [ ] Max athletic scholarship to internationals (as % of COA)
+- [ ] Max academic/merit scholarship to internationals (dollar amount)
+- [ ] Aid type: athletic / merit / both
+- [ ] International aid narrative — realistic framing (25–50% athletic for D1), not marketing copy
+
+**1E — Soccer Program**
+- [ ] Soccer level description (free text for `soccerLevel`)
+- [ ] confRecord: last 5–6 years standings — Claude for Chrome → official conference website (Tier 1)
+- [ ] Conference titles and notable finishes (for `titles[]`)
+- [ ] MLS picks last 5 years — Claude for Chrome → official MLS SuperDraft records (Tier 1)
+- [ ] Notable alumni and draft history
+- [ ] Pro pipeline narrative
+
+**1F — Coach (all from official athletics staff page — Tier 1 only, never guess)**
+- [ ] Head coach name (confirmed on official staff page)
+- [ ] Title
+- [ ] Email (confirmed on official site)
+- [ ] Phone (confirmed on official site)
+- [ ] Years as head coach at this school
+- [ ] Career record
+- [ ] Coaching licence — check official bio first, then LinkedIn (Tier 2 for licence only)
+- [ ] Australian connection: Y / N
+- [ ] MLS players developed
+- [ ] Bio narrative (for `profile` in school JSON and `bio` in coaches.json)
+- [ ] Strengths (3–4 bullet points for coaches.json)
+- [ ] Assistant coaches / staff
+
+**1G — Roster (for minutesOutlook)**
+- [ ] Use Claude for Chrome MCP → official roster page (see §15 for layout patterns)
+- [ ] Total midfielder count
+- [ ] Graduating midfielders (seniors / grad students clearing before Olivier's `targetDeparture` in athletes/olivier.json — currently August 2027)
+- [ ] Transfer portal departures (if known)
+- [ ] Entry competition level: Low / Moderate / High
+- [ ] Sufficient data to set `available:true`? If not, document why → `available:false`
+- [ ] If `available:true`: draft Yr1–Yr4 trajectory using Opportunity Score table in §14
+
+**1H — Facilities & Culture**
+- [ ] Stadium name and capacity — Claude for Chrome → official athletics site (Tier 1)
+- [ ] Training fields (dedicated? shared? turf or grass?)
+- [ ] Strength & conditioning facility
+- [ ] Sports science / sports medicine resources
+- [ ] Academic labs relevant to BESS / pre-PT
+- [ ] Facility rating: Elite / Excellent / Very Good / Good / Solid
+- [ ] Campus setting: urban / suburban / rural
+- [ ] Warm climate? Y/N (Florida, California, Southwest, Texas, Southeast)
+- [ ] City campus? Y/N (major city, walkable urban)
+- [ ] Things to do, social scene, Olivier lifestyle match (★ to ★★★★★)
+
+**1I — Social Media (verify on the actual account — never guess handles)**
+- [ ] Claude for Chrome → navigate directly to the account, confirm it's active
+- [ ] Instagram URL (or null)
+- [ ] Twitter/X URL (or null)
+- [ ] Facebook URL (or null)
+- [ ] YouTube URL (or null)
+
+**1J — Pre-Calculate All Scores (before opening any file)**
+Using scores.js logic — read scores.js if unsure of the formula:
+- [ ] `soccerScore`: D1=1.0, IVY=0.9, D2=0.8, NAIA=0.65, D3=0.5, JUCO=0.6
+- [ ] `gpaScore`: eligible=1.0, borderline=0.5, below=0.0
+- [ ] `costScore`: ratio = costNum ÷ budgetUSD; use interpolation anchors in scores.js
+- [ ] `acuScore`: acuAlign ÷ 16
+- [ ] `minutesScore`: 0.5 if available:false; else (yr1×0.6) + (yr2×0.4)
+- [ ] `cityScore`: city=true → 1.0, false → 0.3
+- [ ] `climateScore`: warm=true → 1.0, false → 0.2
+- [ ] **`fitOlivier`** = sum of (score × weight from scoreWeights in olivier.json) → round to integer
+- [ ] `devScores`: tactical, technical, fitness (each 0–100)
+- [ ] `lensScores` — calculate each using these formulas:
+  - `soccer`:    (devAvg × 0.6) + (mlsPicks5yr/10 × 0.3) + (divStrength × 0.1) → ×100  (divStrength: D1=1.0, IVY=0.9, D2=0.8, NAIA=0.65, D3=0.5, JUCO=0.6)
+  - `academic`:  (acuAlign/16 × 0.85) + 0.15 → ×100
+  - `minutes`:   minutesScore × 100  (same minutesScore used in fitOlivier)
+  - `lifestyle`: (warm × 50) + (city × 50)
+  - `value`:     (fitOlivier × 0.6) + (affordabilityScore × 0.4) → ×100  (affordabilityScore = 1 - costRatio capped at 1.0)
+  - `overall`:   same integer as fitOlivier
+
+#### For REMOVE SCHOOL:
+- [ ] Confirm the school's `id` exactly as it appears in the conf JSON
+- [ ] Check `athletes/olivier.json` shortlist[] and outreach[] for this id
+- [ ] Check `data/pipeline.json` for any entries referencing this school
+- [ ] Note current coach rank so you know how many coaches need re-ranking after removal
+
+#### For UX / JS CHANGE:
+- [ ] Name the exact function(s) to be modified
+- [ ] Read those functions in full — note all callers and all tabs they affect
+- [ ] Determine test scope: full / targeted / smoke (see §3a Change Type 11)
+
+#### For DATA UPDATE (coach, cost, minutes, etc.):
+- [ ] Identify change type from §3a (types 2–9)
+- [ ] List the cascade steps for that change type
+- [ ] Gather the new data values at Tier 1 sources (see §15)
+
+#### Scope discipline during research:
+If you discover incorrect data about a school NOT being worked on this session, add it to the deferred items list in §6. Do not fix it in this session. Fixing unplanned data expands scope, creates untested changes, and risks breaking the session's commit integrity.
+
+---
+
+### PHASE 2 — Impact Map Sign-off
+
+Before touching any file:
+
+- [ ] State out loud which change type(s) from §3a apply
+- [ ] List every file that will be modified
+- [ ] List every tab that will be verified
+- [ ] Confirm rollback plan
+
+Do not proceed until this is written out explicitly.
+
+---
+
+### PHASE 3 — Make the Changes
+
+**Read each file in full before editing it. No exceptions.**
+
+#### For ADD SCHOOL:
+
+**3A — Conference JSON**
+
+File map: acc / big-ten / big-east / aac / big-west / caa / other
+
+*Identity:*
+- [ ] `id` — unique across ALL conf files; underscore not hyphen for multi-word
+- [ ] `name`, `full`, `loc`, `region`, `div`, `conf`, `confKey`
+- [ ] `warm`, `city`, `top` booleans verified against actual location
+- [ ] `color[]` — [light bg, dark accent] matching school colours
+- [ ] `tags[]` — warm / city / soccer / acad as applicable
+- [ ] `url` — men's soccer athletics page
+- [ ] `domain` — athletics subdomain for favicon
+- [ ] `mapX`, `mapY` — from Phase 1 calculation
+- [ ] `profileDepth` — "full" or "listed"
+- [ ] `juco2yr: true` if JUCO
+
+*Academic & Cost:*
+- [ ] `degreeTitle`, `soccerLevel`, `size`, `prePT`
+- [ ] `acuAlign` integer — verified count of covered:true
+- [ ] `acuAlignNote` — names the actual degree, references specific courses; not generic
+- [ ] `acuUnits[]` — exactly 16 entries in order; covered:true count equals acuAlign
+- [ ] `gpa{}` — minEntry, minSchol, note, status
+- [ ] `cost` display string, `aid` display string
+- [ ] `fin{}` — costNum, tuition, roomBoard, fees, maxAthletic, maxAcademic, aidType, internationalNote
+
+*Soccer Program:*
+- [ ] `confRecord[]` — 5–6 years, pos short enough for a chip
+- [ ] `titles[]`
+- [ ] `proPlayers{}` — mlsPicks5yr, notable[], draftRank
+- [ ] If mlsPicks5yr > 0 or titles exist → pipeline.json needs updating (3F below)
+
+*Coach (in school object):*
+- [ ] `coach{}` — name, title, email, phone, profile all populated (not placeholder)
+
+*Scores — transcribe from Phase 1 worksheet:*
+- [ ] `devScores{}` — exactly 3 keys: tactical, technical, fitness; `null` if listed
+- [ ] `fitOlivier` — from Phase 1 calculation
+- [ ] `lensScores{}` — exactly 6 keys: overall, soccer, academic, minutes, lifestyle, value (full only)
+- [ ] `minutesOutlook{}` — available:true with trajectory, or available:false; never omit
+- [ ] If available:true → confirm lensScores.minutes and fitOlivier reflect the trajectory data
+
+*All profiles:*
+- [ ] `facilities[]` — 3-item brief array for card display (e.g. "Stadium name — 3,000 capacity", "Dedicated training pitch", "Pre-PT lab access"). Required for both listed and full-profile.
+
+*Full-Profile Only:*
+- [ ] `rec` — school-specific Overall Fit paragraph; not generic boilerplate
+- [ ] `facilityDetails{}` — rating + all 8 sub-fields (stadium, trainingFields, strengthConditioning, sportsScience, sportsMed, academicLabs, extras, note)
+- [ ] `culture{}` — vibe, thingsToDo, socialScene, olivierMatch (★ rating + sentence), lifestyleTags
+- [ ] `courses[]` — populate if available
+
+- [ ] `python -m json.tool data/[conf].json` — must pass before continuing
+
+**3B — pipeline.json (if applicable)**
+- [ ] If school has NCAA titles → add to ncaaD1[] or ncaaD2[]
+- [ ] If school has MLS picks → add to mlsDraft[]
+- [ ] `python -m json.tool data/pipeline.json`
+
+**3C — app.js**
+
+Read app.js in full. Run `node --check js/app.js` immediately after editing — do not wait for Phase 4.
+
+- [ ] `DOMAINS` — `schoolId: 'athletics-domain.com'` — athletics subdomain, not main university domain
+- [ ] `SITE_URLS` — `schoolId: 'https://www.university.edu'` — university homepage
+- [ ] `SOCIAL` — `schoolId: [instagram, twitter, facebook, youtube]` — 4 elements, null if unverified; never guess
+- [ ] `CONF_SECTIONS` — confirm entry exists for this school's confKey + div
+  - New conference → add entry with key, divFilter, label, tier, intro
+  - D3 and JUCO: separate entries with divFilter:'D3' and divFilter:'JUCO'
+- [ ] `node --check js/app.js` — run now
+
+**3D — coaches.json**
+
+Read coaches.json in full before editing.
+
+- [ ] Add coach entry — all required fields (§5 schema)
 - [ ] `schoolId` matches the school's `id` exactly
-- [ ] Re-rank ALL coaches by `overallScore` descending — update every `rank` field sequentially
-- [ ] NJCAA DII schools use appropriate strengths (not NCAA D1 language)
-- [ ] School's `coach{}` object in conference JSON matches coaches.json (name, title, contact)
+- [ ] `rankClass` — HYPHENS: rk-elite / rk-strong / rk-solid
+- [ ] `licence` — confirmed level or null
+- [ ] `ausConnection` bool set correctly
+- [ ] `contact.email` and `contact.phone` match `coach{}` in conf JSON exactly
+- [ ] `staff[]` present (can be empty array)
+- [ ] NJCAA schools — use NJCAA-appropriate language in strengths
+- [ ] Re-rank ALL coaches by overallScore descending — no gaps in sequential numbering
+- [ ] `python -m json.tool data/coaches.json`
 
-### E — conferences.json
-- [ ] Conference card exists for the school's conference
-- [ ] School added to `guideSchools[]` array
-- [ ] School removed from `otherSchools[]` if it was previously listed there
-- [ ] **`desc` text updated** — update school count and add new program highlights
-- [ ] **`olivierNote` text updated** — update count ("X guide schools") and key school callouts
-- [ ] `tier` field exactly matches renderer bucket keys (see Section 5)
-- [ ] If adding a NEW conference card: add entry to `conf-prestige.json` also
+**3E — conferences.json**
 
-### F — conf-prestige.json
-- [ ] Entry exists for the school's conference
+Read conferences.json in full before editing.
+
+- [ ] Conference card exists for this conference
+- [ ] School added to `guideSchools[]` — use display name (e.g. "Mercyhurst"), NOT school JSON id
+- [ ] School removed from `otherSchools[]` if previously listed
+- [ ] `desc` updated — new school count and highlights; verify text is actually new
+- [ ] `olivierNote` updated — update the literal school count number and add school callout
+- [ ] `tier` exactly matches renderer bucket keys
+- [ ] `python -m json.tool data/conferences.json`
+
+**3F — conf-prestige.json**
+
+Read conf-prestige.json in full before editing.
+
+- [ ] Entry exists for this conference
 - [ ] `div` and `divBadge` correct
+- [ ] `programsInGuide` — comma-separated string updated to include new school name
+- [ ] `relevance` — updated if new school is notable enough to call out
+- [ ] `python -m json.tool data/conf-prestige.json`
 
-### G — Verification
-- [ ] `python -m json.tool` passes on every modified JSON file
-- [ ] `node --check js/app.js` passes
-- [ ] Hard reload live site — no JS errors in console
-- [ ] School card appears in the correct conference section in Explore
-- [ ] Details button opens modal (means confKey is correct)
-- [ ] All 9 modal tabs populate without errors (full profile only)
-- [ ] Map dot appears on correct landmass on Dashboard
-- [ ] Conference tab shows the conference card
-- [ ] Coach Rankings tab shows the new coach with correct badge colour
+---
+
+#### For REMOVE SCHOOL:
+
+- [ ] Read conf JSON → remove school object entirely
+- [ ] `python -m json.tool data/[conf].json`
+- [ ] Read coaches.json → remove coach entry → re-rank ALL remaining coaches
+- [ ] `python -m json.tool data/coaches.json`
+- [ ] Read app.js → remove from DOMAINS, SITE_URLS, SOCIAL → `node --check js/app.js`
+- [ ] Read conferences.json → remove from guideSchools[] → update desc and olivierNote counts
+- [ ] `python -m json.tool data/conferences.json`
+- [ ] Read conf-prestige.json → remove from programsInGuide string → update relevance if needed
+- [ ] `python -m json.tool data/conf-prestige.json`
+- [ ] Read pipeline.json → remove any entries for this school (if applicable) → `python -m json.tool data/pipeline.json`
+- [ ] Read athletes/olivier.json → remove from shortlist[] and outreach[] if present → `python -m json.tool athletes/olivier.json`
+
+---
+
+#### For UX / JS CHANGE:
+
+- [ ] Read the target function(s) in full
+- [ ] Make the change
+- [ ] `node --check js/[file].js` immediately after every edit
+- [ ] If touching scores.js: re-verify scoreWeights cascade and recalculateAllScores() writeback
+
+---
+
+### PHASE 4 — Validate All Files
+
+Run in this exact order — all must pass before proceeding to Phase 5:
+
+```bash
+python validate_schools.py
+```
+Catches: duplicate school IDs, acuAlign vs covered:true mismatch, wrong lens/dev keys, ptPath remnants, rankClass underscores, duplicate coach ranks, schoolId mismatches, missing required fields, bad facilityDetails rating, empty trajectory when available:true.
+
+```bash
+python -m json.tool data/[conf].json
+python -m json.tool data/coaches.json
+python -m json.tool data/conferences.json
+python -m json.tool data/conf-prestige.json
+python -m json.tool data/pipeline.json     # only if edited
+node --check js/app.js                     # only if edited
+node --check js/scores.js                  # only if edited
+node --check js/dashboard.js               # only if edited
+```
+
+**Do not proceed to Phase 5 if any validation fails.**
+
+---
+
+### PHASE 5 — Local Browser Test
+
+**Mandatory before every commit. No exceptions. This is the test environment — not the live site.**
+
+```bash
+npx serve .
+# or
+python3 -m http.server 8000
+```
+
+Open `http://localhost:8000` (or the serve port).
+
+**Determine test scope from Phase 0:**
+
+| Scope | When |
+|---|---|
+| **Full** — all tabs | Add School, Remove School, scores.js change, scoreWeights change |
+| **Targeted** — affected tabs + smoke test others | Single tab UX change, data update to one school |
+| **Smoke** — page loads, no console errors, spot check | Cosmetic text change, coach name only |
+
+#### Full Test Checklist:
+
+*New / changed school:*
+- [ ] Card visible in correct conference section in Explore
+- [ ] Details button opens modal — missing = wrong `confKey`
+- [ ] All 9 modal tabs populate without errors (full only)
+- [ ] Dev Score: 3 bars — Tactical, Technical, Fitness — no PT Pathway bar
+- [ ] Fit score is non-zero and matches Phase 1 calculation
 - [ ] Fit score updates when ATAR slider moves
-- [ ] Fit score updates when score mode toggle (With Minutes / Base Fit) is clicked
-- [ ] Cards re-sort correctly when sort pills are clicked
+- [ ] Fit score updates when mode toggle clicked (With Minutes / Base Fit)
+- [ ] Cards re-sort correctly after mode toggle
+- [ ] Map dot on correct US state — Dashboard tab
+- [ ] Coach in Rankings with correct badge colour (rk-solid = emerald)
+- [ ] All coaches numbered sequentially — no duplicate ranks
+- [ ] Conference card visible, school chip present, count matches updated desc/olivierNote
+- [ ] Minutes Outlook tab — card present (even if available:false)
+- [ ] ACU Alignment tab — row present (non-JUCO full-profile only)
+- [ ] Financial Model — school in selector, appears in comparison bars
+- [ ] Compare tab — school selectable
+- [ ] Coaches → Profiles tab — bio, staff, contact render correctly
+- [ ] Coaches → Outreach tab — contact details correct
+- [ ] All 6 lens pills apply badges correctly to the new school
+- [ ] Score breakdown tooltip — open modal, click score, verify factor weights and contributions are correct
+- [ ] Sort position — school appears in reasonable rank position in Best Fit sort
+
+*Regression — existing schools not touched:*
+- [ ] Pick one existing school from the same conf file — open its modal, verify it still loads
+- [ ] Total card count in Explore = expected number (previous ± 1)
+- [ ] F12 console — zero red errors across all tabs
+
+**Only after all applicable items pass: proceed to Phase 6.**
+
+---
+
+### PHASE 6 — Commit & Deploy
+
+```bash
+git diff                              # Final review — confirm only intended files changed
+git add data/[conf].json              # Stage specific files by name — never git add .
+git add data/coaches.json
+git add data/conferences.json
+git add data/conf-prestige.json
+git add data/pipeline.json            # only if edited
+git add js/app.js                     # only if edited
+git add athletes/olivier.json         # only if shortlist/outreach/guideVersion changed
+git commit -m "vXX.X — [description]"
+git push
+```
+
+Commit message format: `vXX.X — [what changed] ([scope])`
+Examples:
+- `v27.1 — Add Tyler Junior College (JUCO, NJCAA DI)`
+- `v27.2 — Remove Wichita State (no men's soccer program confirmed)`
+- `v27.3 — Populate minutesOutlook for 8 Big Ten schools`
+
+Wait ~30 seconds for GitHub Pages deploy before proceeding to Phase 7.
+
+---
+
+### PHASE 7 — Post-Deploy Verification
+
+Hard reload the live site (Ctrl+Shift+R): `https://bustachat.github.io/olivier-guide`
+
+Repeat the Phase 5 checklist on the live site. Additionally verify:
+
+- [ ] Favicon loads in modal header (depends on domain being live)
+- [ ] Social links open correct verified accounts
+- [ ] "Visit Site" link opens correct university homepage
+- [ ] No console errors that weren't present locally
+
+**If any item fails:**
+1. Check incognito tab first — may be cache
+2. If confirmed bug: assess data error (fix → re-deploy) vs display issue
+3. Rollback if needed:
+```bash
+git revert HEAD          # creates a new commit undoing the last
+git push
+```
+Or restore from `Code\Archive\[version] Stable` if revert doesn't resolve.
+
+---
+
+### PHASE 8 — End of Session Protocol
+
+**Mandatory at the end of every session regardless of change type. This is how the workflow stays accurate.**
+
+- [ ] `git log --oneline -5` — confirm what was committed matches what was intended
+- [ ] Update §6 (Version History) in this file — what completed, what is deferred, what was discovered
+- [ ] Update deferred items list — remove resolved items, add newly discovered items
+- [ ] Update §3a if a new failure mode or change pattern was discovered this session
+- [ ] Update §7 if a workflow gap was found and fixed this session
+- [ ] Update §15 (Research Intelligence) if a new site layout or source rule was discovered
+- [ ] Update memory files — session learnings, new failure modes, feedback
+- [ ] Bump `guideVersion` in `athletes/olivier.json` if a new version shipped this session
+- [ ] Produce a one-paragraph handover note: what changed, which files, what's outstanding
+- [ ] Commit all CLAUDE.md updates made this session:
+```bash
+git add CLAUDE.md
+git commit -m "vXX — CLAUDE.md: end of session update ([summary of what changed in doc])"
+git push
+```
+
+**The workflow is a living document. Every session that discovers a gap and does not update and commit the document guarantees that gap will be repeated.**
 
 ---
 
@@ -709,10 +1081,13 @@ Items marked (JUCO) are required for junior college schools.
 **DO:**
 - Read the actual file before editing it — every time, no exceptions
 - Validate JSON after every edit: `python -m json.tool [file].json`
+- Run `python validate_schools.py` before every commit
 - Check JS syntax before committing: `node --check js/[file].js`
+- Run `node --check` immediately after every JS edit — not at the end
 - Wrap new render functions in try/catch so a single failure cannot cascade
 - Keep onclick handlers consistent — same function names across cards and dashboard
-- After adding a coach: re-rank ALL coaches in coaches.json
+- After adding any coach: re-rank ALL coaches in coaches.json
+- After removing any coach: re-rank ALL remaining coaches in coaches.json
 
 **DON'T:**
 - Reconstruct any file from memory or from this CLAUDE.md
@@ -725,10 +1100,11 @@ Items marked (JUCO) are required for junior college schools.
 - Call a function during init before verifying it exists in the loaded JS files
 - Create or reference data/olivier.json — it no longer exists
 - Use `rankClass` with underscores — always hyphens: `rk-elite`, `rk-strong`, `rk-solid`
-- Add `ptPath` to devScores — it was removed in v22
-- Add `pt` to lensScores — it was removed in v22
+- Add `ptPath` to devScores — removed in v22
+- Add `pt` to lensScores — removed in v22
 - Make sort pills and lens pills reset each other — they are independent controls
 - Call `applyLens()` from `setScoreMode()` — mode toggle calls `applySort()` only
+- Use aggregator sites (Niche, CollegeData, 247Sports, RosterResource) as data sources — see §15
 
 ---
 
@@ -759,20 +1135,20 @@ Items marked (JUCO) are required for junior college schools.
 
 ## 10. COMMIT Protocol
 
-Before every commit — ALL of these, in order:
+The commit protocol is defined in §7 Phases 4–6 and Phase 8. Follow those phases in order — they supersede this section.
 
-1. **Impact map sign-off** — State out loud which change type(s) from Section 3a applied, and confirm every row in that map was checked and actioned. If any row was skipped, do not commit — go back and complete it.
-2. Validate all modified JSON: `python -m json.tool [file].json`
-3. Check all modified JS: `node --check js/[file].js`
-4. Hard reload the live site (Ctrl+Shift+R) — zero red errors in console
-5. Confirm all nav tabs listed in the impact map for this change type respond without errors
-6. Commit message format: `v23.x — [one-line description]`
+**Quick reference — pre-commit gates (all required):**
+1. Phase 0 sign-off written out — change type, files, tabs, rollback plan
+2. `python validate_schools.py` — pass
+3. `python -m json.tool` on every modified JSON
+4. `node --check` on every modified JS
+5. Phase 5 local browser test — pass at appropriate scope
+6. `git diff` — only intended files staged
 
-After the final commit of each version:
+**After the final commit of each version, also:**
 - Bump `guideVersion` in `athletes/olivier.json`
-- Update the version control table in `README.md`
-- Update CLAUDE.md Section 6 with the version summary and deferred items for next version
-- Produce a handover note: what completed, what is outstanding, what files changed
+- Update the version table in `README.md`
+- Run Phase 8 (End of Session Protocol) in full — including committing CLAUDE.md
 
 ---
 
@@ -782,7 +1158,7 @@ After the final commit of each version:
 | Check | Pass condition |
 |---|---|
 | Hard reload (Ctrl+Shift+R) | Page loads. No blank screen. No JS error banner. |
-| Console (F12) | Zero red errors. Clearbit tracking-prevention warnings acceptable. |
+| Console (F12) | Zero red errors. |
 | All nav tabs respond | Each tab switches content without JS error |
 | School cards render | Cards grid populates. Fit scores show. Degree badges show. |
 | Filter chips work | Clicking a conference chip filters correctly |
@@ -799,16 +1175,31 @@ After the final commit of each version:
 | Check | Pass condition |
 |---|---|
 | Card visible in Explore | School appears under correct conference section |
-| confKey correct | Details button present on card (missing = wrong confKey) |
-| Division correct | School not appearing under wrong division section |
+| confKey correct | Details button present on card |
+| Division correct | Not appearing under wrong division section |
 | Conference tab | Conference card visible with school in guideSchools |
-| Coach Rankings | New coach visible with correct badge (rk-solid = emerald) |
-| Coach re-ranked | All coaches renumbered sequentially by overallScore |
+| Coach Rankings | New coach visible with correct badge |
+| Coach re-ranked | All coaches renumbered sequentially |
 | Map dot | Dot on correct US state on Dashboard |
-| Fit score | Score is non-zero and updates with ATAR slider |
-| Dev Score (full) | Three bars render: Tactical, Technical, Fitness — no PT Pathway bar |
-| lensScores (full) | 6 lens values present — no 'pt' key |
-| Modal tabs (full) | All 9 tabs populate — no "coming soon" panels |
+| Fit score | Score is non-zero and updates with ATAR slider and mode toggle |
+| Dev Score (full) | Three bars render: Tactical, Technical, Fitness |
+| lensScores (full) | 6 lens values — no 'pt' key |
+| Modal tabs (full) | All 9 tabs populate |
+| Minutes Outlook tab | Card present |
+| ACU Alignment tab | Row present (non-JUCO only) |
+| Financial Model | School in selector |
+
+### Remove school QA — run after removing any school
+| Check | Pass condition |
+|---|---|
+| Card gone from Explore | No ghost card, total count is N-1 |
+| Map dot gone | Dashboard — dot removed |
+| Conference tab | School chip removed, count updated |
+| Coach Rankings | Coach removed, all remaining coaches renumbered |
+| ACU Alignment | Row gone |
+| Minutes Outlook | Card gone |
+| Financial Model | School gone from selector |
+| Console | Zero errors — no orphaned reference errors |
 
 ---
 
@@ -828,7 +1219,7 @@ ACU BESS has 16 specified units. The four most likely to transfer as direct US c
 
 Fit Score is personal to Olivier. Do not generalise it. When a new athlete is onboarded, they get their own JSON config under athletes/ with their own score weights, pathways, and shortlist.
 
-**PT/Chiro as career goal:** This remains in Olivier's profile and coach questions but has been REMOVED from the scoring system in v22. Dev Score now measures soccer development only (tactical/technical/fitness). ACU alignment handles the degree-pathway angle. PT Pathway is not a scoring factor.
+**PT/Chiro as career goal:** Remains in Olivier's profile and coach questions but has been REMOVED from the scoring system in v22. Dev Score now measures soccer development only (tactical/technical/fitness). ACU alignment handles the degree-pathway angle. PT Pathway is not a scoring factor.
 
 ---
 
@@ -841,6 +1232,8 @@ The repo contains `College Rosters/` — do not delete or move these files.
 - `College Rosters/roster_analysis.py` — Python scraper for new schools
 - `College Rosters/manual_rosters.json` — hand-entered data for JS-rendered roster pages
 
+For all new roster research, use the Claude for Chrome MCP method documented in §15. Use `roster_analysis.py` for bulk scraping only.
+
 ### Opportunity Score → minutesOutlook translation guide
 | Opportunity Score | Yr1 pct | Yr2 pct | Yr3 pct | Yr4 pct |
 |---|---|---|---|---|
@@ -850,9 +1243,129 @@ The repo contains `College Rosters/` — do not delete or move these files.
 | 1–4 | 10–15% | 20–30% | 45–55% | 75% |
 | 0 or negative | 5–10% | 15% | 35% | 65% |
 
+Labels by Yr pct range: 80%+ = "Captain candidate" | 65–79% = "Established starter" | 50–64% = "Likely starter" | 35–49% = "Squad rotation" | 20–34% = "Bench / development" | <20% = "Development year"
+
 Always set `available: true` when populating and include all 4 trajectory year objects.
+
+**JUCO adjustment (v26):** Apply a 1.2 multiplier to the raw Opportunity Score before looking up the table. Olivier is above average in the JUCO player pool (A-League U18 academy vs high school recruits). Example: raw score of 8 → adjusted score 9.6 → use the 8–11 row. Cap at 12+ if adjusted score exceeds 12. Minutes Outlook ranking for JUCOs uses Yr1+Yr2 only — Yr3/Yr4 are shown for display but not used in scoring.
 
 ---
 
-*CLAUDE.md — v23 Stable — Updated June 2026*
+## 15. Research Intelligence
+
+**Every research task has a required tool and source tier. Using the wrong source produces stale or inaccurate data that ships to the live guide.**
+
+---
+
+### Tool Hierarchy
+
+| Task | Primary Tool | Why | Never Use |
+|---|---|---|---|
+| Roster scraping | Claude for Chrome MCP (`navigate` → `javascript_tool`) | Renders JS-heavy Sidearm sites; reads live data directly | Web search, RosterResource, any aggregator |
+| Coach name / email / phone | Claude for Chrome → official athletics staff page | Source of truth; aggregators lag 1–2 seasons | ESPN, 247Sports, team aggregator sites |
+| Coaching licence | Claude for Chrome → official bio, then LinkedIn if not found | Official pages vary; LinkedIn often more current | Any other source |
+| Tuition / cost data | Claude for Chrome → official school cost-of-attendance page | Only official COA is authoritative | CollegeData, Niche, Peterson's — always 1 year stale |
+| Degree / course list | Claude for Chrome → official academic catalog | Marketing pages show highlights; catalog shows full list | School marketing homepage alone |
+| GPA requirements | Claude for Chrome → official admissions page | Requirements change year to year | Aggregators |
+| Conference standings | Claude for Chrome → official conference website | Source of truth for exact finish positions | Wikipedia, ESPN |
+| MLS picks | Claude for Chrome → official MLS SuperDraft results | Authoritative | Any aggregator — often incomplete for recent years |
+| Social media handles | Claude for Chrome → navigate to the account directly; confirm it's active | Verify account is real and active | Guessing from school name pattern |
+| Map coordinates (lat/long) | WebSearch acceptable | Coordinates don't change | — |
+
+---
+
+### Source Quality Tiers
+
+**Tier 1 — Always use. These are the only authoritative sources.**
+- Official school athletics page
+- Official academic catalog
+- Official conference website
+- Official MLS/NCAA records
+- Official school admissions page
+- Official school cost-of-attendance page
+
+**Tier 2 — Use only to find a Tier 1 URL, then verify at the source.**
+- Google search results
+- Wikipedia
+- ESPN
+- LinkedIn (for coaching licences only)
+
+**Tier 3 — Never use as a data source. Always 6–18 months stale.**
+- Niche, CollegeData, Peterson's
+- RosterResource, 247Sports, Rivals
+- Any roster aggregator or recruiting site
+- Any site that is not the official school or official governing body
+
+If a Tier 1 source is unavailable (DNS error, page not found), document why and mark the field as `null` or deferred — do not substitute a Tier 3 source.
+
+---
+
+### Roster Scraping — Claude for Chrome Method
+
+**Standard workflow:**
+```
+navigate to official roster page
+→ detect layout type (see patterns below)
+→ extract with javascript_tool using layout-matched script
+→ write extracted data to a Python update script
+→ run the script
+→ validate JSON
+```
+
+Never edit JSON directly from scraped data. Always write a script first, then run it.
+
+If a page fails (DNS error, connection reset): try 2 alternate domains before marking as deferred.
+
+**Known layout patterns (as of June 2026):**
+
+| Layout | Sites | Extraction pattern |
+|---|---|---|
+| Sidearm Sports table | Most D1 schools | `table tbody tr` → cells[name_link, pos, yr]. Position values vary: "Midfielder", "MF", "M", "CM", "Midfield" |
+| Sidearm card (UC Davis style) | UC Davis, similar | Position appears after `Hide/Show Additional Information For NAME` line; year 3 lines before position |
+| Sidearm card (CSUF style) | CSUF, similar | Position BEFORE name — "M 6'0\" 165 lbs" then jersey, name, year+hometown |
+| Hofstra hybrid | Hofstra | jersey, firstName, lastName, pos, "H'H\" Wlbs Yr. Major", hometown — all separate lines |
+| Northeastern style | Northeastern | jersey, name, "Year Highschool Club", "Full Bio", "Hide/Show", "Position H Hometown" — position word = "Midfield", "Defense/Midfield" |
+| UC Riverside variant | UC Riverside | Uses "CM" and "F/M" as position codes — expand pos regex to include CM, F/M, D/M |
+
+**Position code normalisation:**
+All of these map to midfielder: `M`, `MF`, `CM`, `F/M`, `D/M`, `Midfielder`, `Midfield`, `Central Midfielder`, `Defense/Midfield`
+
+**New layout encountered?**
+Document it in this table before finishing the session (Phase 8 End of Session Protocol).
+
+---
+
+### Research Accuracy Rules
+
+- **Never guess** coach emails, phone numbers, or social media handles. If not found at Tier 1, set to `null` or `""` and mark as deferred.
+- **Never use** a published cost figure without tracing it to the official COA page. Third-party figures are routinely 10–20% off.
+- **Always verify** coach name against the official staff page for the current season. Coaching changes happen in December–February; aggregators lag by months.
+- **Always check** that a men's soccer program is active before researching any other data point. (Wichita State and Hawaii were fully researched and added before being removed in v26.)
+- **For MLS picks**: the official MLS SuperDraft record is the only authoritative source. Many programs claim players who went undrafted or signed as free agents.
+
+### Conflicting Tier 1 Sources
+
+When two Tier 1 sources disagree, use this priority order by data type:
+
+| Data type | Authoritative Tier 1 source when sources conflict |
+|---|---|
+| Coach name / contact | Official athletics staff page (more current than conference directory) |
+| Roster / player positions | Official school roster page (more current than conference roster) |
+| Conference standings | Official conference website (more current than school athletics page) |
+| Cost / tuition | Official school financial aid / bursar page (more current than admissions page) |
+| MLS draft picks | MLS official SuperDraft results page |
+
+When conflict cannot be resolved with confidence, note the discrepancy, use the more conservative value, and mark as needing verification.
+
+### Off-Season Roster Data Gaps
+
+Rosters are often unpublished or showing prior-year data between May and August — after the season ends and before new recruits commit for the following year.
+
+- **If the roster page shows a prior season's data**: note the data vintage explicitly. Set `minutesOutlook` to `{ "available": false }` and document: "Roster page showed [year] data as of [date scraped]. Defer until current-season roster is published."
+- **Do not use prior-year roster data to populate minutesOutlook** — graduating seniors may already have left and new recruits not yet visible, making opportunity scores unreliable.
+- **Best scraping window**: September–November, once teams have played several games and rosters are finalised.
+
+---
+
+*CLAUDE.md — v26 Stable — Updated June 2026*
 *Multi Skilled Contractors. Do not commit changes to this file without owner approval.*

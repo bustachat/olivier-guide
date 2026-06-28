@@ -53,6 +53,107 @@ For data work, read the specific conference file:
 | CAA | `data/caa.json` | Charleston, William & Mary, Hofstra, Northeastern, Drexel, Delaware, Elon, Monmouth, Stony Brook (9) |
 | D2, NAIA, JUCO, D3, Ivy + non-major-conference D1 | `data/other.json` | 28 schools — IVY (Princeton, Yale), JUCO (TJC, Indian Hills, Daytona State, etc.), D2 (Nova SE, Barry, Lynn, etc.), NAIA, D3 + non-major D1 (Vermont, GCU, Akron, Denver, Mercyhurst, UCA) |
 
+### School → File Reference Table (89 schools)
+
+**Maintenance rule: update this table whenever a school is added, removed, or changes conference file.**
+This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (commit checklist).
+
+| School | File | ID | Div | Conference |
+|---|---|---|---|---|
+| Akron | `data/other.json` | `akron` | D1 | MAC |
+| Army | `data/aac.json` | `army` | D1 | AAC |
+| Barry | `data/other.json` | `barry` | D2 | Sunshine State (SSC) |
+| Butler | `data/big-east.json` | `butler` | D1 | Big East |
+| Cal | `data/acc.json` | `cal` | D1 | ACC |
+| Cal Poly | `data/big-west.json` | `calpoly` | D1 | Big West |
+| Cal State LA | `data/other.json` | `csula` | D2 | CCAA |
+| Chapman | `data/other.json` | `chapman` | D3 | SCIAC |
+| Charleston | `data/caa.json` | `charleston` | D1 | CAA |
+| Charlotte | `data/aac.json` | `charlotte` | D1 | AAC |
+| Clemson | `data/acc.json` | `clemson` | D1 | ACC |
+| Columbia College | `data/other.json` | `columbia_college` | NAIA | AMC |
+| Creighton | `data/big-east.json` | `creighton` | D1 | Big East |
+| CS Fullerton | `data/big-west.json` | `csuf` | D1 | Big West |
+| Daytona State | `data/other.json` | `daytona_state` | JUCO | NJCAA DI / FCSAA |
+| Delaware | `data/caa.json` | `delaware` | D1 | CAA |
+| Denver | `data/other.json` | `denver` | D1 | WCC (from 2026) |
+| DePaul | `data/big-east.json` | `depaul` | D1 | Big East |
+| Drexel | `data/caa.json` | `drexel` | D1 | CAA |
+| Duke | `data/acc.json` | `duke` | D1 | ACC |
+| Elon | `data/caa.json` | `elon` | D1 | CAA |
+| FAU | `data/aac.json` | `fau` | D1 | AAC |
+| FIU | `data/aac.json` | `fiu` | D1 | AAC |
+| GCU | `data/other.json` | `gcu` | D1 | WAC |
+| Georgetown | `data/big-east.json` | `georgetown` | D1 | Big East |
+| Georgian Court | `data/other.json` | `georgian_court` | D2 | CACC |
+| Hofstra | `data/caa.json` | `hofstra` | D1 | CAA |
+| Indian Hills | `data/other.json` | `indian_hills` | JUCO | NJCAA DI |
+| Indiana | `data/big-ten.json` | `indiana` | D1 | Big Ten |
+| Iowa Western | `data/other.json` | `iowa_western` | JUCO | NJCAA DI |
+| Keiser | `data/other.json` | `keiser` | NAIA | Sun Conference |
+| Long Beach State | `data/big-west.json` | `longbeach` | D1 | Big West |
+| Louisville | `data/acc.json` | `louisville` | D1 | ACC |
+| Lynn | `data/other.json` | `lynn` | D2 | SSC |
+| Marquette | `data/big-east.json` | `marquette` | D1 | Big East |
+| Maryland | `data/big-ten.json` | `maryland` | D1 | Big Ten |
+| Memphis | `data/aac.json` | `memphis` | D1 | AAC |
+| Mercyhurst | `data/other.json` | `mercyhurst` | D1 | NEC |
+| Miami Dade | `data/other.json` | `miami_dade` | JUCO | NJCAA |
+| Michigan | `data/big-ten.json` | `michigan` | D1 | Big Ten |
+| Michigan State | `data/big-ten.json` | `michiganstate` | D1 | Big Ten |
+| Monmouth | `data/caa.json` | `monmouth` | D1 | CAA |
+| Monroe | `data/other.json` | `monroe_college` | JUCO | NJCAA DI |
+| Navy | `data/aac.json` | `navy` | D1 | AAC |
+| NC State | `data/acc.json` | `ncstate` | D1 | ACC |
+| Northeast CC | `data/other.json` | `northeast_cc` | JUCO | NJCAA DII |
+| Northeastern | `data/caa.json` | `northeastern` | D1 | CAA |
+| Northwestern | `data/big-ten.json` | `northwestern` | D1 | Big Ten |
+| Notre Dame | `data/acc.json` | `notredame` | D1 | ACC |
+| Nova SE | `data/other.json` | `nova` | D2 | SSC |
+| Ohio State | `data/big-ten.json` | `ohiostate` | D1 | Big Ten |
+| Oklahoma City | `data/other.json` | `ocu` | NAIA | SAC |
+| Oregon | `data/big-ten.json` | `oregon` | D1 | Big Ten |
+| PBA | `data/other.json` | `pba` | D2 | SSC |
+| Penn State | `data/big-ten.json` | `pennstate` | D1 | Big Ten |
+| Pittsburgh | `data/acc.json` | `pittsburgh` | D1 | ACC |
+| Princeton | `data/other.json` | `princeton` | IVY | Ivy League |
+| Providence | `data/big-east.json` | `providence` | D1 | Big East |
+| Rice | `data/aac.json` | `rice` | D1 | AAC |
+| Rutgers | `data/big-ten.json` | `rutgers` | D1 | Big Ten |
+| Santa Monica | `data/other.json` | `smc` | JUCO | CCCAA / SCFA |
+| Seton Hall | `data/big-east.json` | `setonhall` | D1 | Big East |
+| SMU | `data/acc.json` | `smu` | D1 | ACC |
+| St. Edward's | `data/other.json` | `stedwards` | D2 | Lone Star (LSC) |
+| St. John's | `data/big-east.json` | `stjohns` | D1 | Big East |
+| Stanford | `data/acc.json` | `stanford` | D1 | ACC |
+| Stony Brook | `data/caa.json` | `stonybrook` | D1 | CAA |
+| Syracuse | `data/acc.json` | `syracuse` | D1 | ACC |
+| Temple | `data/aac.json` | `temple` | D1 | AAC |
+| Tulsa | `data/aac.json` | `tulsa` | D1 | AAC |
+| Tyler JC | `data/other.json` | `tyler_jc` | JUCO | NJCAA DI / Region XIV |
+| U of Charleston | `data/other.json` | `uc_charleston` | D2 | Mountain East (MEC) |
+| UAB | `data/aac.json` | `uab` | D1 | AAC |
+| UC Davis | `data/big-west.json` | `ucdavis` | D1 | Big West |
+| UC Irvine | `data/big-west.json` | `ucirvine` | D1 | Big West |
+| UC Riverside | `data/big-west.json` | `ucriverside` | D1 | Big West |
+| UC San Diego | `data/big-west.json` | `ucsd` | D1 | Big West |
+| UCA | `data/other.json` | `uca` | D1 | ASUN |
+| UCLA | `data/big-ten.json` | `ucla` | D1 | Big Ten |
+| UConn | `data/big-east.json` | `uconn` | D1 | Big East |
+| UCSB | `data/big-west.json` | `ucsb` | D1 | Big West |
+| UNC | `data/acc.json` | `unc` | D1 | ACC |
+| USC | `data/big-ten.json` | `usc` | D1 | Big Ten |
+| USF | `data/aac.json` | `usf` | D1 | AAC |
+| UVA | `data/acc.json` | `virginia` | D1 | ACC |
+| Vermont | `data/other.json` | `vermont` | D1 | America East |
+| Villanova | `data/big-east.json` | `villanova` | D1 | Big East |
+| Wake Forest | `data/acc.json` | `wakeforest` | D1 | ACC |
+| Washington | `data/big-ten.json` | `washington` | D1 | Big Ten |
+| William & Mary | `data/caa.json` | `william_mary` | D1 | CAA |
+| Wisconsin | `data/big-ten.json` | `wisconsin` | D1 | Big Ten |
+| Xavier | `data/big-east.json` | `xavier` | D1 | Big East |
+| Yale | `data/other.json` | `yale` | IVY | Ivy League |
+
 ### Step 3 — Confirm the session goal
 State in one sentence what this session will deliver and which session number it is.
 Do not proceed until you have stated this explicitly.
@@ -94,6 +195,7 @@ A change is NOT complete until every item in the impact map for that change type
 | What to update | Why |
 |---|---|
 | `data/[conf].json` — full school object | All required fields, confKey, acuUnits[16], lensScores[6], minutesOutlook, fitOlivier |
+| `CLAUDE.md` — School → File Reference Table | Add a row for the new school — mandatory, keeps the lookup table accurate |
 | `data/coaches.json` — add coach entry | Full-profile school must have a coaches.json entry. Re-rank ALL coaches after adding. |
 | `data/conferences.json` — guideSchools[] | School chip will not appear in Conferences tab without this |
 | `data/conferences.json` — desc and olivierNote | Update the text to reflect the new school count and program highlights — easy to miss |
@@ -285,6 +387,7 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 | What to update | Why |
 |---|---|
 | `data/[conf].json` — remove school object entirely | Primary record — all other files reference this |
+| `CLAUDE.md` — School → File Reference Table | Remove the school's row — mandatory |
 | `data/coaches.json` — remove coach entry | Orphaned entry renders a broken card in Rankings/Profiles |
 | `data/coaches.json` — re-rank ALL remaining coaches | Rank gaps break Rankings display |
 | `js/app.js — DOMAINS` | Remove entry — stale entry is harmless but creates noise |

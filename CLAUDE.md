@@ -1449,6 +1449,7 @@ Document it in this table before finishing the session (Phase 8 End of Session P
 
 - **Never guess** coach emails, phone numbers, or social media handles. If not found at Tier 1, set to `null` or `""` and mark as deferred.
 - **Never use** a published cost figure without tracing it to the official COA page. Third-party figures are routinely 10–20% off.
+- **Whenever touching a school for any reason** (coach update, confRecord, new data), verify `costNum` against the official COA page at the same time — zero extra session cost, catches stale estimates before they affect Olivier's ranking.
 - **Always verify** coach name against the official staff page for the current season. Coaching changes happen in December–February; aggregators lag by months.
 - **Always check** that a men's soccer program is active before researching any other data point. (Wichita State and Hawaii were fully researched and added before being removed in v26.)
 - **For MLS picks**: the official MLS SuperDraft record is the only authoritative source. Many programs claim players who went undrafted or signed as free agents.

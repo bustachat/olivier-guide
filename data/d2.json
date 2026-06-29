@@ -933,14 +933,15 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 40000,
+      "costNum": 60244,
       "tuition": 28000,
       "roomBoard": 10000,
       "fees": 2000,
       "maxAthletic": 0.85,
       "maxAcademic": 12000,
       "aidType": "athletic+academic",
-      "internationalNote": "NSU health sciences university has strong academic merit programs. Athletic + NSU Presidential Scholarship combination possible."
+      "internationalNote": "NSU health sciences university has strong academic merit programs. Athletic + NSU Presidential Scholarship combination possible.",
+      "cost": "~$60k/yr"
     },
     "culture": {
       "vibe": "Large health sciences university with a professional, career-focused culture. NSU is bigger than Barry or PBA but Fort Lauderdale provides a great backdrop. The campus vibe is more professional-school than party school — students are here to become health professionals.",
@@ -972,7 +973,7 @@
       "technical": 78,
       "fitness": 78
     },
-    "fitOlivier": 76,
+    "fitOlivier": 68,
     "tags": [
       "warm",
       "city",
@@ -993,12 +994,12 @@
     "rec": "NSU is a large health sciences university — strongest academic environment of the Florida D2 programs for a student targeting PT. Fort Lauderdale is warm, cosmopolitan. 2021 Final Four shows program quality. Same SSC conference as Lynn, Barry, PBA.",
     "url": "https://nsusharks.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 76,
+      "overall": 68,
       "soccer": 56,
       "academic": 73,
       "minutes": 40,
       "lifestyle": 88,
-      "value": 77
+      "value": 57
     },
     "minutesOutlook": {
       "available": true,
@@ -1732,14 +1733,15 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 35000,
+      "costNum": 49262,
       "tuition": 24000,
       "roomBoard": 9000,
       "fees": 2000,
       "maxAthletic": 1,
       "maxAcademic": 10000,
       "aidType": "athletic+academic",
-      "internationalNote": "NAIA has NO maximum scholarship cap — full athletic ride possible. OCU Christian mission aid adds further. Best scholarship value for Australian player."
+      "internationalNote": "NAIA has NO maximum scholarship cap — full athletic ride possible. OCU Christian mission aid adds further. Best scholarship value for Australian player.",
+      "cost": "~$49k/yr"
     },
     "culture": {
       "vibe": "Faith-based city campus with a passionate performing arts culture. OCU is famous for its dance, musical theatre, and arts programs — the energy on campus is creative and performative. The soccer program brings a hard-working athletic culture to balance the arts.",
@@ -1771,7 +1773,7 @@
       "technical": 80,
       "fitness": 78
     },
-    "fitOlivier": 74,
+    "fitOlivier": 69,
     "tags": [
       "warm",
       "city",
@@ -1792,12 +1794,12 @@
     "rec": "NAIA program with generous scholarships. Billy Martin (HC since 2020) is an OCU alumnus who served as Brian Harvey assistant for 17 years. Strong NAIA soccer tradition. Oklahoma City warm spring climate. No specific Australian player pathway currently documented.",
     "url": "https://www.ocusports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 74,
+      "overall": 69,
       "soccer": 57,
       "academic": 68,
       "minutes": 50,
       "lifestyle": 52,
-      "value": 82
+      "value": 68
     },
     "minutesOutlook": {
       "available": true,

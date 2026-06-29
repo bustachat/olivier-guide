@@ -850,14 +850,15 @@
     "soccerLevel": "Big West — Competitive",
     "cost": "~$55k/yr",
     "fin": {
-      "costNum": 55000,
+      "costNum": 72796,
       "tuition": 39000,
       "roomBoard": 13000,
       "fees": 3000,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "UC Irvine out-of-state COA is ~$55k/yr (2025-26). UC nonresident tuition surcharge applies. Athletic scholarship can cover 30–50% of COA. Academic merit limited for international students under UC policy. Orange County location with moderate-to-high living costs."
+      "internationalNote": "UC Irvine out-of-state COA is ~$55k/yr (2025-26). UC nonresident tuition surcharge applies. Athletic scholarship can cover 30–50% of COA. Academic merit limited for international students under UC policy. Orange County location with moderate-to-high living costs.",
+      "cost": "~$73k/yr"
     },
     "aid": "Athletic",
     "size": 36000,
@@ -870,14 +871,14 @@
     },
     "mapX": 100,
     "mapY": 208,
-    "fitOlivier": 71,
+    "fitOlivier": 64,
     "lensScores": {
-      "overall": 71,
+      "overall": 64,
       "soccer": 65,
       "academic": 68,
       "minutes": 42,
       "lifestyle": 84,
-      "value": 62
+      "value": 44
     },
     "confRecord": [
       {

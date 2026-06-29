@@ -1898,14 +1898,15 @@
     "soccerLevel": "Big Ten — Competitive",
     "cost": "~$50k/yr",
     "fin": {
-      "costNum": 50000,
+      "costNum": 60505,
       "tuition": 36000,
       "roomBoard": 11000,
       "fees": 3000,
       "maxAthletic": 0.75,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "Wisconsin out-of-state COA is ~$50k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Madison has moderate cost of living. Large campus with strong international student support and kinesiology program."
+      "internationalNote": "Wisconsin out-of-state COA is ~$50k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Madison has moderate cost of living. Large campus with strong international student support and kinesiology program.",
+      "cost": "~$61k/yr"
     },
     "aid": "Athletic",
     "size": 47000,
@@ -1918,14 +1919,14 @@
     },
     "mapX": 407,
     "mapY": 136,
-    "fitOlivier": 80,
+    "fitOlivier": 75,
     "lensScores": {
-      "overall": 80,
+      "overall": 75,
       "soccer": 62,
       "academic": 62,
       "minutes": 49,
       "lifestyle": 0,
-      "value": 65
+      "value": 54
     },
     "confRecord": [
       {

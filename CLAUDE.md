@@ -459,6 +459,13 @@ app.js and dashboard.js both fetch from `athletes/olivier.json` only.
 - `domain` — athletics domain for favicon
 - `minutesOutlook` — set `{ "available": false }` if data not collected
 - `facilityDetails.rating` — "Elite" | "Excellent" | "Very Good" | "Good" | "Solid" (full-profile only)
+  - **Rating criteria** (surface type — grass or turf — does not affect tier):
+  - Elite: Fully dedicated soccer-only stadium, 5,000+ cap with real atmosphere; full S&C + recovery + video/analysis + GPS + dedicated sports med; on-campus; strong fan culture
+  - Excellent: Dedicated stadium (minor sharing OK), 2,500–5,000 cap; full S&C + sports med + video/analysis; on-campus; decent fan support
+  - Very Good: Dedicated or lightly shared, 1,500–3,500 cap, lights + permanent seating; solid S&C + basic sports med; on-campus or very close
+  - Good: May share with other sports, 500–2,000 cap; standard weight room + athletic trainers; on-campus; typical support
+  - Solid: No dedicated stadium or off-campus; limited/no seating; basic or shared facilities only
+  - **JUCO rule:** stadium capacity is weighted lower — strong S&C, sports med, GPS/video analysis can lift a JUCO from Solid to Good or Very Good regardless of capacity
 - `lensScores` — 6 pre-computed scores (full-profile only; pt lens removed in v22)
 
 **CONF_SECTIONS in app.js controls which cards-grid section a school appears in.**

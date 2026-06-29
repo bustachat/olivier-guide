@@ -681,6 +681,16 @@ Cost display made dynamic. The `cost` JSON field was a static string that drifte
 - `cost` field in school JSON is now redundant for full-profile schools — do not manually maintain it
 - **Deferred:** tuition/roomBoard/fees sub-fields for Tulsa, Nova SE, Oklahoma City, UC Irvine, Wisconsin don't add up to their v31-corrected costNum — need a dedicated COA research pass to fix components
 
+### v32.1 — June 2026
+COA component audit. All 17 schools where tuition+roomBoard+fees ≠ costNum were researched and fixed using official school/financial aid pages (Tier 1 only).
+
+**Changes in v32.1:**
+- Components corrected for 17 schools across 8 conference files: Cal, Duke, SMU, UNC, Notre Dame, Louisville (ACC); Princeton, Yale (Ivy); Wisconsin, Indiana (Big Ten); Georgetown (Big East); Tulsa (AAC); OCU, Nova SE (D2/NAIA); Monroe, Indian Hills (JUCO); UC Irvine (Big West)
+- `fees` field now absorbs all indirect costs (books, personal, transport, health insurance, international fees) to make components sum exactly to `costNum`
+- Princeton uses 2026-27 data (deliberate — Olivier's actual enrollment year)
+- 3 schools had costNum discrepancies vs official 2025-26 COA (Georgetown, Tulsa, OCU) — kept existing costNums, made components sum to them
+- UCI costNum ($72,796) is stale vs 2025-26 actual (~$81k) — noted, kept as-is; tuition updated to $56,682 (official 2025-26 nonresident t+f)
+
 ### v24 Stable — June 2026
 internationalNote populated for all schools, new JUCO school added, coaching licence data introduced.
 

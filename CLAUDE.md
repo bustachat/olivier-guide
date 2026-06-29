@@ -265,7 +265,7 @@ A change is NOT complete until every item in the impact map for that change type
 | What to update | Why |
 |---|---|
 | `data/[conf].json` — fin.costNum, tuition, roomBoard, fees | Raw cost data |
-| `data/[conf].json` — cost display string | Human-readable cost shown on card |
+| `data/[conf].json` — cost display string | **REDUNDANT since v32** — cost display is now computed dynamically from `costNum` via `costDisplay()` in app.js. The `cost` field in JSON is kept as a fallback only. Do NOT update it manually — fix `costNum` instead. |
 | `data/[conf].json` — fin.internationalNote | Text must match realistic aid framing (25–50% athletic for D1) |
 | `data/[conf].json` — lensScores.value | Value lens = 60% fit + 40% affordability — recalculate |
 | `data/[conf].json` — lensScores.overall | Cost = 20% of fitOlivier — recalculate |
@@ -671,6 +671,15 @@ Data verification pass, financial model correction, and coach data completion.
 
 **Tools added in v23:**
 - export_schools.py — exports all 95 schools to CSV for external review (excludes Olivier-specific fields)
+
+### v32 Stable — June 2026
+Cost display made dynamic. The `cost` JSON field was a static string that drifted from `fin.costNum` — 5 schools had displays $10–25k wrong.
+
+**Changes in v32:**
+- `costDisplay()` helper added to app.js — derives display from `fin.costNum` (e.g. `$69,664/yr`). Falls back to `u.cost` only if no `fin` data. Service academies (costNum=0) show "Fully funded".
+- All 3 display locations updated: school card, Compare tab, modal Overview
+- `cost` field in school JSON is now redundant for full-profile schools — do not manually maintain it
+- **Deferred:** tuition/roomBoard/fees sub-fields for Tulsa, Nova SE, Oklahoma City, UC Irvine, Wisconsin don't add up to their v31-corrected costNum — need a dedicated COA research pass to fix components
 
 ### v24 Stable — June 2026
 internationalNote populated for all schools, new JUCO school added, coaching licence data introduced.
@@ -1216,6 +1225,7 @@ git push
 - Re-add dash-map-tip floating tooltip
 - Call a function during init before verifying it exists in the loaded JS files
 - Create or reference data/olivier.json — it no longer exists
+- Update the `cost` display string in school JSON — cost display is dynamic from `costNum` since v32. Update `costNum` (and `tuition`/`roomBoard`/`fees`) instead.
 - Use `rankClass` with underscores — always hyphens: `rk-elite`, `rk-strong`, `rk-solid`
 - Add `ptPath` to devScores — removed in v22
 - Add `pt` to lensScores — removed in v22

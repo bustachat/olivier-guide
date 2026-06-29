@@ -670,7 +670,7 @@ function buildCard(u){
       '<span class="db-align" style="background:'+alignBg+';color:'+alignColor(u.acuAlign)+'">'+alignLabel(u.acuAlign)+'</span>'+
     '</div>'+
     '<div class="info-grid2">'+
-      '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+u.cost+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+costDisplay(u)+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+u.aid+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePT.split('—')[0].trim()+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">MLS Picks (5yr)</div><div class="ig2-val">'+(u.proPlayers&&u.proPlayers.mlsPicks5yr!==undefined?u.proPlayers.mlsPicks5yr+' picks':'—')+'</div></div>'+
@@ -713,7 +713,7 @@ function renderComparePage(){
     ['Bachelor\'s Degree',u=>`<div style="font-size:12px;font-weight:600;color:var(--navy)">${u.degreeTitle}</div>`],
     ['ACU Alignment',u=>`<div style="font-size:18px;font-weight:800;color:${alignColor(u.acuAlign)}">${u.acuAlign}/16</div><div style="font-size:11px;color:var(--muted)">${alignLabel(u.acuAlign)}</div>`],
     ['Align Note',u=>`<div style="font-size:11px;color:var(--muted);line-height:1.55">${u.acuAlignNote}</div>`],
-    ['Annual Cost',u=>`<div class="cval warn">${u.cost}</div>`],
+    ['Annual Cost',u=>`<div class="cval warn">${costDisplay(u)}</div>`],
     ['Aid Available',u=>`<div class="cval good">${u.aid}</div>`],
     ['GPA Min Entry',u=>`<div style="font-size:13px;font-weight:700;color:${u.gpa?(u.gpa.status==='eligible'?'var(--emerald)':u.gpa.status==='borderline'?'var(--amber)':'var(--rose)'):'var(--muted)'}">${u.gpa?u.gpa.minEntry:'—'} ${u.gpa?(u.gpa.status==='eligible'?'✅':u.gpa.status==='borderline'?'⚠️':u.gpa.status==='below'?'❌':''):''}</div><div style="font-size:10px;color:var(--muted);margin-top:3px">${u.gpa?'Target: '+u.gpa.minSchol:''}</div>`],
     ['Conference (last 6yr)',u=>`<div>${u.confRecord.map(r=>`<div style="font-size:11px;margin-bottom:2px"><span class="sy ${posColor(r.pos)}" style="margin-right:4px">${r.yr}</span>${r.pos}</div>`).join('')}</div>`],
@@ -1235,7 +1235,7 @@ function buildDetailBody(u){
           <tr><td style="color:var(--hint);padding:4px 0">Conference</td><td>${u.conf}</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">Location</td><td>${u.loc}</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">Campus Size</td><td>${u.size}</td></tr>
-          <tr><td style="color:var(--hint);padding:4px 0">Annual Cost</td><td style="color:var(--amber);font-weight:600">${u.cost}</td></tr>
+          <tr><td style="color:var(--hint);padding:4px 0">Annual Cost</td><td style="color:var(--amber);font-weight:600">${costDisplay(u)}</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">Aid</td><td style="color:var(--emerald);font-weight:600">${u.aid}</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">Climate</td><td>${u.warm?'☀ Warm':'⛅ Mixed seasons'}</td></tr>
           <tr><td style="color:var(--hint);padding:4px 0">City Campus</td><td>${u.city?'✅ Urban':'⚠ Smaller town'}</td></tr>
@@ -2468,6 +2468,11 @@ let finCurrentSchool = null;
 
 function fmt(n){return '$'+Math.round(n).toLocaleString('en-US');}
 function fmtAUD(n,fx){return 'A$'+Math.round(n*fx).toLocaleString('en-US');}
+function costDisplay(u){
+  if(!u.fin||u.fin.costNum===undefined) return u.cost||'—';
+  if(u.fin.costNum===0) return 'Fully funded';
+  return fmt(u.fin.costNum)+'/yr';
+}
 
 function renderFinSchoolSelector(){
   const container = document.getElementById('fin-school-selector');

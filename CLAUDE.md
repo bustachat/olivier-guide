@@ -681,6 +681,24 @@ Cost display made dynamic. The `cost` JSON field was a static string that drifte
 - `cost` field in school JSON is now redundant for full-profile schools — do not manually maintain it
 - **Deferred:** tuition/roomBoard/fees sub-fields for Tulsa, Nova SE, Oklahoma City, UC Irvine, Wisconsin don't add up to their v31-corrected costNum — need a dedicated COA research pass to fix components
 
+### v33 — June 2026
+COA pass #1. costNum corrected for 4 schools where stored value was stale vs official 2025-26 COA.
+
+**Changes in v33:**
+- UCI: costNum $72,796 → $81,292 (2025-26 federal COA; T+F $56,682 confirmed Tier-1 via UCI Registrar; roomBoard $19,500 estimated from 2026-27 housing rates)
+- Georgetown: costNum $100,864 → $97,264 (confirmed from Georgetown Financial Aid 2025-26 undergraduate COA page)
+- Tulsa: costNum $69,664 → $77,346 (confirmed from UTulsa federal COA 2025-26 page; now includes university fees + indirect costs)
+- OCU: costNum $49,262 → $56,720 (estimated from 2026-27 official COA of $57,120 minus $400 housing reduction for 2025-26)
+- Tulsa fitOlivier 77→70 (recalculated from current data; costScore 0.15→0.10 floor). lensScores.value 37→46.
+- OCU fitOlivier 69→68 (costScore 0.596→0.426). lensScores.value 68→58.
+- UCI and Georgetown fitOlivier/scores unchanged (costScore already at 0.10 floor).
+- guideVersion bumped to v33.
+
+**Deferred from v33:**
+- COA pass #2: 12 round-number costNum estimates (Penn State, Rutgers, Maryland, Creighton, Butler, DePaul, Marquette, UC Riverside, UCSD, William & Mary, Drexel, Vermont)
+- UCI roomBoard ($19,500) and total COA ($81,292) are estimates — UCI financial aid site (financialaid.uci.edu) blocked WebFetch (ECONNREFUSED); verify via Chrome MCP browser
+- OCU 2025-26 costNum is estimated (2025-26 official page rolled to 2026-27 data)
+
 ### v32.1 — June 2026
 COA component audit. All 17 schools where tuition+roomBoard+fees ≠ costNum were researched and fixed using official school/financial aid pages (Tier 1 only).
 

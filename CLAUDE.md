@@ -763,6 +763,16 @@ ACU Alignment tab overhaul. Minutes Outlook formula and JUCO calibration fixes. 
 - ~~Add Daytona State College~~ — ALREADY IN GUIDE (id: daytona_state, data/juco.json)
 - minutesOutlook — populate from roster data for schools still at available:false
 
+### v33.2 — July 2026
+Spot-check fix: Mercyhurst 2025 confRecord (Change Type 6).
+
+**Changes in v33.2:**
+- `data/d1-other.json` — Mercyhurst 2025 confRecord corrected. Was showing placeholder `"pos": "—"` for the school's first D1 NEC season; official NEC standings (necsports.com, Tier 1) confirm Mercyhurst finished 8th of 10 (3-5-1, 10 pts, 3-10-4 overall), did not clinch a tournament berth. Note updated accordingly.
+- lensScores.soccer left unchanged — the documented formula ((devAvg × 0.6) + (mlsPicks5yr/10 × 0.3) + (divStrength × 0.1)) does not derive from confRecord standings, so no cascade applies.
+- guideVersion bumped to v33.2 in athletes/olivier.json.
+
+**Lesson for future sessions:** newly-D1-reclassified schools (Mercyhurst-style) should not default to a placeholder dash for their first season once that season has concluded — check the conference's official standings page even when the note says "first season" or similar, since results are usually published well before the next spot-check.
+
 ---
 
 ## 7. Universal Change Workflow

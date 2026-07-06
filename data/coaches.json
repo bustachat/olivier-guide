@@ -2966,9 +2966,9 @@
     "licence": null
   },
   {
-    "id": "berrera_providence",
+    "id": "stewart_providence",
     "schoolId": "providence",
-    "name": "Craig Berrera",
+    "name": "Craig Stewart",
     "school": "Providence College",
     "div": "D1",
     "conf": "Big East",
@@ -2982,7 +2982,7 @@
     "devScore": 60,
     "ptPathScore": 60,
     "ausConnection": false,
-    "bio": "Craig Berrera manages Providence's place in the Big East with solid mid-table consistency. Providence is a small, high-academic Friar Dominican university in a top US healthcare corridor. Brown and Lifespan Health are walkable from campus, creating exceptional pre-PT/Chiro clinical access for student-athletes.",
+    "bio": "Craig Stewart manages Providence's place in the Big East with solid mid-table consistency. Providence is a small, high-academic Friar Dominican university in a top US healthcare corridor. Brown and Lifespan Health are walkable from campus, creating exceptional pre-PT/Chiro clinical access for student-athletes.",
     "strengths": [
       "Providence healthcare corridor",
       "NCAA appearances",
@@ -2998,7 +2998,7 @@
       }
     ],
     "contact": {
-      "email": "cberrera@providence.edu",
+      "email": "cstewart@providence.edu",
       "phone": ""
     },
     "url": "https://friars.com/sports/mens-soccer",
@@ -3253,25 +3253,25 @@
     "licence": null
   },
   {
-    "id": "fleck_butler",
+    "id": "sarachan_butler",
     "schoolId": "butler",
-    "name": "Paul Fleck",
+    "name": "Ian Sarachan",
     "school": "Butler University",
     "div": "D1",
     "conf": "Big East",
-    "yearsHC": 7,
-    "record": "Mid Big East, NCAA Tournament 2022-23",
-    "mlsPlayers": 1,
-    "rank": 72,
+    "yearsHC": 1,
+    "record": "First season at Butler (2026) — hired Nov 2025",
+    "mlsPlayers": 0,
+    "rank": 78,
     "rankClass": "rk-solid",
-    "overallScore": 62,
-    "tacticalScore": 62,
-    "devScore": 60,
-    "ptPathScore": 55,
+    "overallScore": 58,
+    "tacticalScore": 60,
+    "devScore": 58,
+    "ptPathScore": 0,
     "ausConnection": false,
-    "bio": "Paul Fleck has developed Butler into a competitive Big East program with NCAA Tournament appearances. The Indianapolis campus has excellent pre-PT pathways through Indiana University Health and the IU School of Medicine. Butler is a small selective liberal arts college with very high academic standards.",
+    "bio": "Ian Sarachan enters his first season as Butler's 7th head coach after 5 seasons as a Creighton assistant (2022 NCAA College Cup), stints at Wisconsin and Santa Clara, and most recently as an assistant with MLS's Colorado Rapids. No Butler head-coaching record yet, but a strong player-development pedigree. The Indianapolis campus has excellent pre-PT pathways through Indiana University Health and the IU School of Medicine. Butler is a small selective liberal arts college with very high academic standards.",
     "strengths": [
-      "NCAA Tournament",
+      "Strong MLS/NCAA assistant pedigree",
       "IU Health access",
       "Small academic culture",
       "Indianapolis city"
@@ -3285,8 +3285,8 @@
       }
     ],
     "contact": {
-      "email": "pfleck@butler.edu",
-      "phone": ""
+      "email": null,
+      "phone": null
     },
     "url": "https://butlersports.com/sports/mens-soccer",
     "color": [
@@ -3302,7 +3302,7 @@
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 73,
+    "rank": 72,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -3357,7 +3357,7 @@
     "yearsHC": 12,
     "record": "Consistent Big Ten mid-table",
     "mlsPlayers": 2,
-    "rank": 74,
+    "rank": 73,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "tacticalScore": 60,
@@ -3397,7 +3397,7 @@
     "school": "University of Louisville",
     "div": "D1",
     "conf": "ACC",
-    "rank": 75,
+    "rank": 74,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "devScore": 60,
@@ -3437,7 +3437,7 @@
     "yearsHC": 6,
     "record": "Lower Big East, Chicago location",
     "mlsPlayers": 1,
-    "rank": 76,
+    "rank": 75,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "tacticalScore": 59,
@@ -3480,7 +3480,7 @@
     "yearsHC": 5,
     "record": "Penn State Abington Hall of Fame inductee; strong international recruiting pipeline; program culture builder",
     "mlsPlayers": 1,
-    "rank": 77,
+    "rank": 76,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "tacticalScore": 58,
@@ -3520,7 +3520,7 @@
     "school": "Eastern Florida State College",
     "div": "JUCO",
     "conf": "NJCAA DI / FCSAA Region 8",
-    "rank": 78,
+    "rank": 77,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "devScore": 72,
@@ -4125,14 +4125,14 @@
     "licence": null
   },
   {
-    "id": "hc_navy",
+    "id": "hackworth_navy",
     "schoolId": "navy",
-    "name": "Head Coach",
+    "name": "John Hackworth",
     "school": "United States Naval Academy",
     "div": "D1",
     "conf": "AAC",
-    "yearsHC": 5,
-    "record": "Lower AAC — service academy program",
+    "yearsHC": 1,
+    "record": "First season at Navy (2026) — service academy program",
     "mlsPlayers": 0,
     "rank": 92,
     "rankClass": "rk-solid",
@@ -4141,7 +4141,7 @@
     "devScore": 45,
     "ptPathScore": 20,
     "ausConnection": false,
-    "bio": "⚠ SERVICE ACADEMY: Naval Academy is fully funded D1 soccer with a 5-year US Navy service commitment post-graduation. Annapolis, MD is a beautiful historic city. Not compatible with DPT/Chiro career pathway or MLS goals. Listed for completeness — not recommended for Olivier.",
+    "bio": "⚠ SERVICE ACADEMY: Naval Academy is fully funded D1 soccer with a 5-year US Navy service commitment post-graduation. Hackworth arrives after 4 years as director of coaching/technical director for MLS's St. Louis City SC, named 2025 MLS NEXT Pro Coach of the Year. Annapolis, MD is a beautiful historic city. Not compatible with DPT/Chiro career pathway or MLS goals. Listed for completeness — not recommended for Olivier.",
     "strengths": [
       "Fully funded",
       "Annapolis historic city",
@@ -4157,8 +4157,8 @@
       }
     ],
     "contact": {
-      "email": "soccer@usna.edu",
-      "phone": ""
+      "email": "jhackwor@usna.edu",
+      "phone": "410-293-3153"
     },
     "url": "https://navysports.com/sports/mens-soccer",
     "color": [

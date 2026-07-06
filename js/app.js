@@ -1513,6 +1513,14 @@ function onAtarSlide() {
   updateAtarCounts();
   applyFilters(); // v17: re-run filter engine so hide/grey state updates live
   if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa, atar);
+
+  // v36.1: GPA eligibility is 20% of fitOlivier — the slider must recalculate
+  // live scores, not just re-render GPA rows. Called on load too, since
+  // initApp() invokes onAtarSlide() at the end.
+  if (athleteConfig && athleteConfig.scoreWeights) {
+    recalculateAllScores(athleteConfig, currentAtarGpa);
+    applySort(currentSort || 'fit');
+  }
 }
 
 function refreshAllGpaRows() {

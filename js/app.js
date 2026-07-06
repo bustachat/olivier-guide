@@ -715,7 +715,12 @@ function renderComparePage(){
     ['Align Note',u=>`<div style="font-size:11px;color:var(--muted);line-height:1.55">${u.acuAlignNote}</div>`],
     ['Annual Cost',u=>`<div class="cval warn">${costDisplay(u)}</div>`],
     ['Aid Available',u=>`<div class="cval good">${u.aid}</div>`],
-    ['GPA Min Entry',u=>`<div style="font-size:13px;font-weight:700;color:${u.gpa?(u.gpa.status==='eligible'?'var(--emerald)':u.gpa.status==='borderline'?'var(--amber)':'var(--rose)'):'var(--muted)'}">${u.gpa?u.gpa.minEntry:'—'} ${u.gpa?(u.gpa.status==='eligible'?'✅':u.gpa.status==='borderline'?'⚠️':u.gpa.status==='below'?'❌':''):''}</div><div style="font-size:10px;color:var(--muted);margin-top:3px">${u.gpa?'Target: '+u.gpa.minSchol:''}</div>`],
+    ['GPA Min Entry',u=>{
+      const status = u.gpa ? dynamicGpaStatus(currentAtarGpa, u.gpa.minEntry) : null;
+      const color = status==='eligible'?'var(--emerald)':status==='borderline'?'var(--amber)':status==='below'?'var(--rose)':'var(--muted)';
+      const icon = status==='eligible'?'✅':status==='borderline'?'⚠️':status==='below'?'❌':'';
+      return `<div style="font-size:13px;font-weight:700;color:${color}">${u.gpa?u.gpa.minEntry:'—'} ${icon}</div><div style="font-size:10px;color:var(--muted);margin-top:3px">${u.gpa?'Target: '+u.gpa.minSchol:''}</div>`;
+    }],
     ['Conference (last 6yr)',u=>`<div>${u.confRecord.map(r=>`<div style="font-size:11px;margin-bottom:2px"><span class="sy ${posColor(r.pos)}" style="margin-right:4px">${r.yr}</span>${r.pos}</div>`).join('')}</div>`],
     ['Titles',u=>`<div>${u.titles.slice(0,3).map(t=>`<span class="title-chip" style="display:block;margin-bottom:2px;font-size:10px">${t}</span>`).join('')}</div>`],
     ['MLS Picks 5yr',u=>`<div style="font-size:18px;font-weight:800;color:var(--indigo)">${u.proPlayers.mlsPicks5yr}</div><div style="font-size:11px;color:var(--muted)">${u.proPlayers.draftRank.slice(0,45)}</div>`],
@@ -1520,6 +1525,13 @@ function onAtarSlide() {
   if (athleteConfig && athleteConfig.scoreWeights) {
     recalculateAllScores(athleteConfig, currentAtarGpa);
     applySort(currentSort || 'fit');
+  }
+
+  // v36.5: Compare tab's GPA row used to only refresh when the selection
+  // changed (toggleCompare/removeCompare) — never on ATAR slide — so it
+  // could show a stale eligibility icon relative to the current slider.
+  if (typeof renderComparePage === 'function' && typeof selectedIds !== 'undefined' && selectedIds.size) {
+    renderComparePage();
   }
 }
 

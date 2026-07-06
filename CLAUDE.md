@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v35.1 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v36.8 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -651,34 +651,27 @@ The JUCO columns are derived live by `effectiveWeights()` in scores.js (v35.1) �
 
 ## 6. Version History & Current State
 
-**Current version: v35.1 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
+**Current version: v36.8 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
 ### State snapshot (update only when it changes)
 - 93 schools, all full-profile, across 10 conference JSON files. 93 coaches in coaches.json, ranked 1–93.
-- JUCO section: 12 schools. ACU Alignment weight zeroed for JUCO in the Fit Score (v35.1, `effectiveWeights()` in scores.js — see §5 weights table).
+- JUCO section: 12 schools. ACU Alignment weight zeroed for JUCO in the Fit Score (v35.1, `effectiveWeights()` in scores.js — see §5 weights table). All 12 JUCO schools now correctly flagged `juco2yr:true` (v36.6 fixed the 3 that were missing it).
 - `recruit_pathway` / `recruit_pathway_note` schema added v34; populated only for the 4 v35 JUCO adds. Full 93-school pass deferred; whether it should ever feed the Fit model is an OPEN owner decision — do not fold it into fitOlivier without explicit sign-off (see CHANGELOG.md v34 notes).
+- `recalculateAllScores()` now runs on page load and every ATAR slider move (v36.1), not just the mode toggle — GPA eligibility (20% of fitOlivier) is live everywhere. Compare tab's GPA row is also live via `dynamicGpaStatus()` (v36.5) instead of a stored value.
+- All 93 full-profile schools have `kinRank` populated (v36.7 backfilled the 45 that were missing it).
 
-### Known issues — v36 fix backlog (July 2026 full code review; all verified in a live preview)
+### v36 fix backlog — CLOSED (July 2026)
 
-`node validate_consistency.js` reports the live list (174 issues at baseline). Highest impact first:
+The full 174-issue baseline from the v35.1 code review (previously listed here) was cleared across v36.1–v36.8 — see CHANGELOG.md's v36 entry for the batch-by-batch detail. `node validate_consistency.js` now reports **1 issue**:
 
-1. **49 schools have stale stored `fitOlivier`** vs the live scores.js formula. `recalculateAllScores()` is only called from `setScoreMode()` — never on load or ATAR slide — so cards show stored values until the mode toggle is touched, then jump (e.g. Louisville 89→79). Fix = re-store all fitOlivier/lensScores.overall from the live formula (Change Type 5 cascade) + decide whether load/ATAR-slide should recompute.
-2. **Conferences tab silently drops the Big East, SEC, and Ivy League cards** — their `tier` strings (`Major (D1)`, `Power 4 (D1)`, `D1 (Ivy)`) match no renderer bucket. Valid strings are in §4.
-3. **Entry Competition labels render inverted** — `recruit_risk` free text (`Very High`, `Medium-High`, `Moderate`, sentences) falls through to the green "Open" label. Only `Low` / `Medium` / `High` render correctly (§5). Affects Clemson, Notre Dame, Maryland, Georgetown, Elon, Marquette, Georgian Court, GCU, Akron, Denver, Barton CC, Arizona Western.
-4. **45 schools (v25 batch upgrades) missing `kinRank`** — modal Degree tab renders the literal text "undefined" (verified on Duke).
-5. **Santa Monica, Miami Dade, Iowa Western missing `juco2yr: true`** — they wrongly appear in the ACU Alignment tab (violates the v26 JUCO-exclusion decision).
-6. **Financial model sliders always reset to 0 on school switch** — `selectFinSchool()` clears the wrapper's `display` BEFORE reading it into `isFirstSelection`, so the preserve-settings branch is dead code.
-7. **Coach two-file violations** — Providence (conf JSON `Craig Stewart` vs coaches.json `Craig Berrera`), Butler (`Paul Snape` vs `Paul Fleck`), Navy (coaches.json still `Head Coach` placeholder vs conf JSON `Chris Kampe`). Fixing = Change Type 2, full re-rank.
-8. **Compare tab GPA row uses stored `gpa.status`** — stale/invalid values (`ok`, `challenging`) on 50 schools render eligible schools red. Cards self-heal on load via `refreshAllGpaRows()`; Compare never recomputes.
+- **Stony Brook coach name** — conf JSON `TBD` vs coaches.json `Head Coach` placeholder. This is a genuine data gap, not a stale-file conflict (official site at stonybrookseawolves.com is unreachable, consistent with the existing "site down" deferred item below) — do not guess a name; re-attempt via Tier-1 research once the site is back.
 
-Data: FIU fin components sum $40,000 ≠ costNum $39,634; Indian Hills sum $19,000 ≠ costNum $21,000.
-
-Lower priority (code quality): `atarToGpa` defined 3× across scores.js / dashboard.js / app.js (app.js wins by script load order — do not reorder the script tags); `DATA_BASE_URL` means `./data/` in app.js but site root in dashboard.js; olivier.json fetched twice per page load; `selectSchoolFromBar()` button-highlight matcher can never match (arrow-fn toString); dashboard `filterToConf('other')` scrolls to the Ivy section (5 Explore sections share `data-confkey="other"`, plus 5 duplicate `id="grid-other"` elements); search keyword echoed unescaped into the filter-summary HTML (self-XSS); stale Explore section intro texts in CONF_SECTIONS ("Stanford and Duke among 14 listed programs" etc. — everything is full-profile since v25); Glossary Minutes Score text says Yr1 45/Yr2 30/Yr3 15/Yr4 10 but code is Yr1 60/Yr2 40; FX slider sublabels say 1.30–1.80 but the range is 1.20–1.70; `costScore()` returns neutral 0.5 for costNum=0 (service academies) instead of 1.0 — falsy-zero guard, confirm intent before changing.
+Lower-priority (code quality, still deferred — none were in v36's named scope): `atarToGpa` defined 3× across scores.js / dashboard.js / app.js (app.js wins by script load order — do not reorder the script tags); `DATA_BASE_URL` means `./data/` in app.js but site root in dashboard.js; olivier.json fetched twice per page load; `selectSchoolFromBar()` button-highlight matcher can never match (arrow-fn toString); dashboard `filterToConf('other')` scrolls to the Ivy section (5 Explore sections share `data-confkey="other"`, plus 5 duplicate `id="grid-other"` elements); search keyword echoed unescaped into the filter-summary HTML (self-XSS); stale Explore section intro texts in CONF_SECTIONS ("Stanford and Duke among 14 listed programs" etc. — everything is full-profile since v25); Glossary Minutes Score text says Yr1 45/Yr2 30/Yr3 15/Yr4 10 but code is Yr1 60/Yr2 40; FX slider sublabels say 1.30–1.80 but the range is 1.20–1.70; `costScore()` returns neutral 0.5 for costNum=0 (service academies) instead of 1.0 — falsy-zero guard, confirm intent before changing.
 
 ### Deferred items (carried forward)
-- Stony Brook minutesOutlook — site down / off-season; still `available: false`
+- Stony Brook coach name AND minutesOutlook — site down / off-season; coach still placeholder, minutesOutlook still `available: false`
 - Navy + Army — service academies, intentionally `available: false`
 - UCI roomBoard ($19,500) and total COA, and OCU costNum, are estimates pending Tier-1 confirmation
 - 6 Big East coach licence fields `null` — verify when contacting programs
@@ -1014,7 +1007,7 @@ Catches: duplicate school IDs, acuAlign vs covered:true mismatch, wrong lens/dev
 ```bash
 node validate_consistency.js
 ```
-Catches what validate_schools.py doesn't: stored fitOlivier vs live scores.js formula drift, conferences.json tier strings vs renderer buckets, coach name sync (conf JSON vs coaches.json), recruit_risk / gpa.status enum drift, missing kinRank / juco2yr, DOMAINS / SITE_URLS / SOCIAL coverage, fin component sums, confKey vs CONF_SECTIONS, shortlist/outreach orphans, map coords. **Baseline as of July 2026: 174 known issues** (the v36 backlog in §6). The count must never increase from a session's changes; once the v36 fixes land, it must be zero.
+Catches what validate_schools.py doesn't: stored fitOlivier vs live scores.js formula drift, conferences.json tier strings vs renderer buckets, coach name sync (conf JSON vs coaches.json), recruit_risk / gpa.status enum drift, missing kinRank / juco2yr, DOMAINS / SITE_URLS / SOCIAL coverage, fin component sums, confKey vs CONF_SECTIONS, shortlist/outreach orphans, map coords. **v36 backlog cleared July 2026: 174 → 1 issue** (see §6 and CHANGELOG.md's v36 entry). The 1 remaining line (Stony Brook coach name) is a genuine data gap, not a bug — the count must never increase from a session's changes.
 
 ```bash
 python -m json.tool data/[conf].json

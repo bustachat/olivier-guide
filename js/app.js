@@ -2523,13 +2523,18 @@ function selectFinSchool(id, btnEl){
   finCurrentSchool = unis.find(u=>u.id===id);
   document.querySelectorAll('.fin-school-btn').forEach(b=>b.classList.remove('selected'));
   if(btnEl) btnEl.classList.add('selected');
-  document.getElementById('fin-model-wrapper').style.display='';
+
+  const finWrapper = document.getElementById('fin-model-wrapper');
+  // '' (no inline override) means "shown", not "unset" — only 'none' means hidden.
+  // The old `!display || ...` check treated '' as falsy too, so isFirstSelection
+  // was always true after the very first switch, resetting sliders every time.
+  const isFirstSelection = finWrapper.style.display === 'none';
+  finWrapper.style.display='';
+
   document.getElementById('fin-school-title').textContent = `${finCurrentSchool.full} — Financial Model`;
   const u = finCurrentSchool;
   const slAth = document.getElementById('sl-athletic');
   const slAcad = document.getElementById('sl-academic');
-
-  const isFirstSelection = !document.getElementById('fin-model-wrapper').style.display || document.getElementById('fin-model-wrapper').style.display === 'none';
 
   if(u.fin.aidType === 'need-only' || u.fin.maxAthletic === 0){
     slAth.max = 0; slAth.value = 0; slAth.disabled = true;

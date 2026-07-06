@@ -258,6 +258,9 @@ A change is NOT complete until every item in the impact map for that change type
 - Explore Schools — fitOlivier score updated, sort order correct, minutes lens score correct
 - Dashboard — lens comparison bars reflect new scores
 
+**Companion field — `recruit_pathway` / `recruit_pathway_note` (informational only, added v34):**
+Captures whether a school's midfield spots are typically filled by true incoming freshmen vs. transfer/JUCO portal players, discovered during the same roster pull used for `minutesOutlook`. See §5 for field definition and §7 Phase 1G for the research step. **No scoring cascade** — do not touch lensScores or fitOlivier for this field alone. Origin: FIU research (v34) found ~60–70% of its midfield roster is transfer/JUCO-sourced rather than true freshmen, which the existing GPA-based `internationalNote` framing didn't capture — that note describes academic admission ease, not athletic roster-spot competition, and the two can diverge sharply.
+
 ---
 
 ### CHANGE TYPE 4 — Cost / fin{} Changed
@@ -524,6 +527,19 @@ Same fields but `profileDepth: "listed"`.
 `devScores` must be `null` — not zeros. Zeros render as "0%", null renders as "—" or hidden.
 `minutesOutlook` must be `{ "available": false }`.
 
+### minutesOutlook{} — full field reference
+```
+available (bool),
+mf_total_2025 (int), cleared_before_2027 (int), cleared_names[],
+rising_senior_2027_count (int), rising_senior_2027_names[],
+rising_junior_2027_count (int), rising_junior_2027_names[],
+recruit_risk ("Low" | "Medium" | "High"),
+trajectory[{ year, yr_label, pct, label }],
+recruit_pathway ("Freshman-friendly" | "Transfer-preferred" | "Portal/JUCO-heavy" | "Mixed"),   ← added v34, optional, informational only
+recruit_pathway_note (string)   ← added v34, optional, informational only — describe the actual roster pattern found (e.g. share of midfield spots filled by transfer/JUCO vs true freshmen, and whether true-freshman internationals who succeeded shared a pro-academy background)
+```
+`recruit_pathway` and `recruit_pathway_note` carry **no scoring weight** — they do not feed lensScores.minutes or fitOlivier. They exist to separate "this school is a good fit on paper" from "this school realistically offers an entry point as an incoming freshman." Populate only when a school's roster is actually researched (Phase 1G) — do not backfill retroactively as a standalone project (that full pass is tracked separately, see backlog below).
+
 ### acuUnits[] — all 16 unit codes in order
 ```
 ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394,
@@ -775,6 +791,21 @@ Spot-check fix: Mercyhurst 2025 confRecord (Change Type 6).
 
 ---
 
+## 6a. Backlog — Recruiting Pathway (added v34, next focus area)
+
+**Origin:** FIU roster research (v34 session) found ~60–70% of midfield roster spots filled via transfer/JUCO portal rather than true incoming freshmen, and that true-freshman internationals who did make the roster generally carried a pro-academy/club pedigree. This is a different axis from the existing GPA-based `internationalNote` (academic admission ease) — a school can be easy to get *admitted* to and still hard to win a freshman *roster spot* at.
+
+**What shipped in v34 (this session):** schema-only. `recruit_pathway` / `recruit_pathway_note` added to the `minutesOutlook{}` field reference (§5), a research step added to Phase 1G (§7), and a companion note added to Change Type 3 (§3a). **No data was populated** — not even FIU. Populating any school's `recruit_pathway` is deferred to the full pass below.
+
+**Next focus area — full recruiting-pathway pass across all 95 schools:**
+- Research and populate `recruit_pathway` / `recruit_pathway_note` for every full-profile school, starting with FIU (data already gathered in the v34 research session — see conversation, not yet transcribed to JSON)
+- Decide whether to batch this by conference (matching the existing Change Type 8 batching pattern) or run it as a standalone pass
+- Informational only for now — no scoring cascade (see open question below)
+
+**Open question — does this belong in the Fit model at all?** Owner flagged (v34) that "fit" and "realistic likelihood of immediate entry" may be two different things the current single `fitOlivier` score conflates, and is not yet sure how to model that distinction. Do not attempt to fold `recruit_pathway` into `fitOlivier`/`lensScores.minutes` until this is explicitly resolved — possible directions to evaluate when this is picked up: (a) a second, separate "entry likelihood" score shown alongside fitOlivier rather than blended into it, (b) a dampening factor applied only to `lensScores.minutes` for Portal/JUCO-heavy schools, (c) leave purely informational (current default). Needs owner input before any scoring change — this is a model-design decision, not a data-entry task.
+
+---
+
 ## 7. Universal Change Workflow
 
 **This workflow applies to every change type without exception — new school, remove school, UX fix, data update, coach change, everything.**
@@ -878,6 +909,7 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 - [ ] Entry competition level: Low / Moderate / High
 - [ ] Sufficient data to set `available:true`? If not, document why → `available:false`
 - [ ] If `available:true`: draft Yr1–Yr4 trajectory using Opportunity Score table in §14
+- [ ] **Recruiting pathway (informational, added v34 — no scoring cascade):** from the same roster pull, classify how current midfield spots were actually filled — count true freshmen (no prior college) vs. transfers (4-year or JUCO). Note whether any true-freshman internationals who made the roster shared a pro-academy/club pedigree. Set `recruit_pathway` enum + `recruit_pathway_note` (see §5). This is separate from academic `gpa`/`internationalNote` fields — a school can be academically accessible and still have very limited true-freshman playing-time entry.
 
 **1H — Facilities & Culture**
 - [ ] Stadium name and capacity — Claude for Chrome → official athletics site (Tier 1)

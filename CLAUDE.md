@@ -52,7 +52,7 @@ For data work, read the specific conference file:
 | Big West | `data/big-west.json` | UCSB, Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, Long Beach State, CSU Fullerton (7) |
 | CAA | `data/caa.json` | Charleston, William & Mary, Hofstra, Northeastern, Drexel, Delaware, Elon, Monmouth, Stony Brook (9) |
 | Non-major D1 (MAC, WAC, WCC, ASUN, AEC, NEC) | `data/d1-other.json` | Akron (MAC), GCU (WAC), Denver (WCC), Vermont (AEC), Mercyhurst (NEC), UCA (ASUN) (6) |
-| JUCO | `data/juco.json` | Tyler JC, Indian Hills, Daytona State, Iowa Western, Santa Monica, Miami Dade, Monroe, Northeast CC (8) |
+| JUCO | `data/juco.json` | Tyler JC, Indian Hills, Daytona State, Iowa Western, Santa Monica, Miami Dade, Monroe, Northeast CC, Barton CC, Cowley CC, Arizona Western, Eastern Florida State (12) |
 | Ivy League | `data/ivy.json` | Princeton, Yale (2) |
 | D2, NAIA, D3 | `data/d2.json` | Nova SE, Barry, Lynn, PBA, Cal State LA, St. Edward's, Georgian Court, U of Charleston, Columbia College, Oklahoma City, Keiser, Chapman (12) |
 
@@ -64,8 +64,10 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | School | File | ID | Div | Conference |
 |---|---|---|---|---|
 | Akron | `data/d1-other.json` | `akron` | D1 | MAC |
+| Arizona Western | `data/juco.json` | `arizona_western` | JUCO | NJCAA DI / ACCAC |
 | Army | `data/aac.json` | `army` | D1 | AAC |
 | Barry | `data/d2.json` | `barry` | D2 | Sunshine State (SSC) |
+| Barton CC | `data/juco.json` | `barton_cc` | JUCO | NJCAA DI / KJCCC |
 | Butler | `data/big-east.json` | `butler` | D1 | Big East |
 | Cal | `data/acc.json` | `cal` | D1 | ACC |
 | Cal Poly | `data/big-west.json` | `calpoly` | D1 | Big West |
@@ -75,6 +77,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Charlotte | `data/aac.json` | `charlotte` | D1 | AAC |
 | Clemson | `data/acc.json` | `clemson` | D1 | ACC |
 | Columbia College | `data/d2.json` | `columbia_college` | NAIA | AMC |
+| Cowley CC | `data/juco.json` | `cowley_cc` | JUCO | NJCAA DI / KJCCC |
 | Creighton | `data/big-east.json` | `creighton` | D1 | Big East |
 | CS Fullerton | `data/big-west.json` | `csuf` | D1 | Big West |
 | Daytona State | `data/juco.json` | `daytona_state` | JUCO | NJCAA DI / FCSAA |
@@ -83,6 +86,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | DePaul | `data/big-east.json` | `depaul` | D1 | Big East |
 | Drexel | `data/caa.json` | `drexel` | D1 | CAA |
 | Duke | `data/acc.json` | `duke` | D1 | ACC |
+| Eastern Florida State | `data/juco.json` | `efsc` | JUCO | NJCAA DI / FCSAA Region 8 |
 | Elon | `data/caa.json` | `elon` | D1 | CAA |
 | FAU | `data/aac.json` | `fau` | D1 | AAC |
 | FIU | `data/aac.json` | `fiu` | D1 | AAC |
@@ -788,6 +792,28 @@ Spot-check fix: Mercyhurst 2025 confRecord (Change Type 6).
 - guideVersion bumped to v33.2 in athletes/olivier.json.
 
 **Lesson for future sessions:** newly-D1-reclassified schools (Mercyhurst-style) should not default to a placeholder dash for their first season once that season has concluded — check the conference's official standings page even when the note says "first season" or similar, since results are usually published well before the next spot-check.
+
+---
+
+### v35 — July 2026
+Four new full-profile JUCO schools added: Barton Community College, Cowley County Community College, Arizona Western College, Eastern Florida State College. `data/juco.json` now has 12 schools (was 8).
+
+**Changes in v35:**
+- `data/juco.json` — 4 new full-profile school objects added: `barton_cc` (NJCAA DI/KJCCC, Great Bend KS), `cowley_cc` (NJCAA DI/KJCCC, Arkansas City KS), `arizona_western` (NJCAA DI/ACCAC, Yuma AZ), `efsc` (NJCAA DI/FCSAA Region 8, Melbourne FL). All fields populated per §5 schema: acuUnits[16], lensScores[6], minutesOutlook (roster-researched via Chrome MCP for Barton, WebFetch fallback for the other 3 after a Claude-in-Chrome extension per-origin permission block), fitOlivier.
+- `data/coaches.json` — 4 coaches added (Rafael Simmons/Barton, Marcos Vinicius Longo Ribeiro/Cowley, Kenny Dale/AWC, Bart Sasnett/EFSC). All 93 coaches re-ranked by overallScore descending via a one-off `add_juco_coaches.py` script (deleted after use — not part of the permanent toolset).
+- `js/app.js` — DOMAINS, SITE_URLS, SOCIAL updated for all 4 schools; existing JUCO CONF_SECTIONS entry's intro text updated (no new section needed — `confKey:'other'`/`divFilter:'JUCO'` already existed).
+- `data/conferences.json` — JUCO entry's guideSchools[], desc, and olivierNote updated (8 → 12 schools).
+- `data/conf-prestige.json` — JUCO entry's programsInGuide and relevance updated.
+- `python validate_schools.py` passes — 93 schools total, only expected warnings (missing coach email/phone, matches existing JUCO pattern since no official contact info is published for any of the 4).
+
+**Research notes:**
+- Roster data (minutesOutlook) confirmed 100% turnover before Olivier's August 2027 start at all 4 schools, consistent with existing JUCO pattern. `recruit_pathway` populated as "Freshman-friendly" for all 4 based on roster composition (majority true freshmen, not transfer/portal-sourced) — this is the first batch where `recruit_pathway` (schema added v34) was actually populated.
+- Multi-year confRecord (2021-2024) is incomplete for all 4 — only 2025-26 season standings were confirmed at Tier 1 sources (KJCCC/ACCAC/FCSAA official sites) within this session's scope; older years marked "exact standings not researched this session" rather than guessed, following the precedent already set for Daytona State in this same file.
+- No coach email/phone published on any of the 4 schools' official athletics sites — all four `coach.email`/`coach.phone` fields are `null` (documented, not guessed).
+
+**Tooling note discovered this session:** the Claude-in-Chrome browser extension enforces its own per-origin permission grant, separate from `.claude/settings.json`/`settings.local.json` (which only gate the `WebFetch` tool and MCP tool-call permission, not browser `navigate`). When `navigate` returns "Navigation to this domain is not allowed" for a domain never visited in-session, `WebFetch` is a reliable fallback for static/server-rendered pages (works well for Sidearm Sports roster tables) even though it won't render heavy client-side JS.
+
+- guideVersion bumped to v35 in athletes/olivier.json.
 
 ---
 

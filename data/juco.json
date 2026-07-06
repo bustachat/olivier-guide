@@ -2005,5 +2005,509 @@
     "juco2yr": true,
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree — transfer prerequisite pathway"
+  },
+  {
+    "id": "barton_cc",
+    "name": "Barton CC",
+    "full": "Barton Community College",
+    "loc": "Great Bend, KS",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / KJCCC",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "profileDepth": "full",
+    "color": ["#dbeafe", "#1d4ed8"],
+    "mapX": 287,
+    "mapY": 177,
+    "domain": "bartonsports.com",
+    "url": "https://www.bartonsports.com/sports/msoc/index",
+    "degreeTitle": "A.S. in Exercise Science (2-year transfer degree)",
+    "acuAlign": 9,
+    "acuAlignNote": "Barton's A.S. in Exercise Science is a confirmed dedicated program (not a generic health-sciences transfer track) — a genuine advantage among JUCOs. Confirmed ACU-relevant coverage: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology → EXSC225; Kinesiology / Human Movement fundamentals → EXSC321; Introduction to Exercise Science → EXSC222 and EXSC122; Motor Learning-type coursework → EXSC199, EXSC230. Full WES evaluation required to confirm exact course-to-unit mapping before relying on this count for transfer planning.",
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true}, {"unit": "EXSC222", "covered": true}, {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true}, {"unit": "EXSC322", "covered": true}, {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": false}, {"unit": "EXSC321", "covered": true}, {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": false}, {"unit": "EXSC199", "covered": true}, {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false}, {"unit": "EXSC230", "covered": true}, {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": false}
+    ],
+    "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
+    "cost": "~$16.2k/yr",
+    "aid": "Athletic",
+    "size": 4700,
+    "prePT": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Barton has open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor and competitive for the Barton Bound merit scholarship program.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 16157,
+      "tuition": 6900,
+      "roomBoard": 7757,
+      "fees": 1500,
+      "maxAthletic": 0.5,
+      "maxAcademic": 3000,
+      "aidType": "athletic+merit",
+      "internationalNote": "International tuition is $230/credit hour (2026-27, ~$6,900/yr full-time). Room & board (19-meal plan, double occupancy) runs $7,036–$7,757/yr depending on hall. Barton Bound merit scholarships are available based on GPA/ACT for qualifying students. This is one of the most affordable full-profile JUCOs in the guide — a genuine budget entry point into a nationally competitive NJCAA DI program."
+    },
+    "soccerLevelDetail": null,
+    "confRecord": [
+      {"yr": 2025, "pos": "2nd KJCCC (7-2-1)", "note": "17-5-2 overall; qualified for the 2025 NJCAA DI National Tournament; ranked as high as #4 nationally (NJCAA DI, Oct 2025)."},
+      {"yr": 2024, "pos": "KJCCC", "note": "NJCAA DI / KJCCC — exact standings not researched this session."},
+      {"yr": 2023, "pos": "KJCCC", "note": "NJCAA DI / KJCCC — exact standings not researched this session."},
+      {"yr": 2022, "pos": "KJCCC", "note": "NJCAA DI / KJCCC — exact standings not researched this session."},
+      {"yr": 2021, "pos": "KJCCC", "note": "NJCAA DI / KJCCC — exact standings not researched this session."}
+    ],
+    "titles": [
+      "2025 NJCAA DI National Tournament qualifier (17-5-2, KJCCC runner-up, ranked #4 nationally)",
+      "Barton Athletics has 62 all-time NJCAA national championships across all sports — a program with deep institutional soccer investment"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": ["No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"],
+      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline"
+    },
+    "coach": {
+      "name": "Rafael Simmons",
+      "title": "Head Men's Soccer Coach",
+      "email": null,
+      "phone": null,
+      "profile": "Rafael Simmons enters his 4th season as Head Coach with a 44-16-8 record, guiding Barton to a 2025 NJCAA DI National Tournament berth and a #4 national ranking. Assistant coaches Scott Gray and Carlos Sanchez (both 1st season). The 2025-26 roster (36 players) draws heavily from Brazil, Japan, Germany, France, and Spain — a genuinely international recruiting network. No individual staff email/phone is published on the official athletics site; general admissions contact is webinquiry@bartonccc.edu / (800) 748-7594."
+    },
+    "devScores": {"tactical": 68, "technical": 70, "fitness": 68},
+    "fitOlivier": 77,
+    "lensScores": {"overall": 77, "soccer": 47, "academic": 63, "minutes": 68, "lifestyle": 0, "value": 74},
+    "tags": ["soccer", "acad"],
+    "facilities": ["Barton Outdoor Athletics Complex (lit soccer field)", "Scott Davis Field House (locker rooms, concessions)", "Dedicated Exercise Science program"],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Barton Outdoor Athletics Complex — dedicated lit soccer field, no fixed seating capacity published. Standard NJCAA DI facility.",
+      "trainingFields": "On-campus training pitch adjacent to the match field. Kansas climate requires indoor options November–March.",
+      "strengthConditioning": "Barton Athletics weight room — standard JUCO strength facility shared across programs.",
+      "sportsScience": "Basic JUCO level. Video analysis available. Barton's dedicated Exercise Science program gives motivated athletes classroom-level access to physiology and biomechanics content alongside their playing career.",
+      "sportsMed": "Head Athletic Trainer Kelsey Feist, Assistant AT Koltyn Ratliff, plus a Sports Medicine Aide and Student Athletic Trainer — a well-staffed JUCO sports medicine setup for the level.",
+      "academicLabs": "Exercise Science program teaching labs support anatomy/physiology coursework directly relevant to a BESS-style transfer pathway.",
+      "extras": "Scott Davis Field House adjacent to the soccer field provides locker rooms and a concession stand for match days. Great Bend is a small rural Kansas city (~15,000).",
+      "note": "Barton's facilities are solid rather than spectacular, but the combination of a genuinely dedicated Exercise Science degree, a well-staffed athletic training department, and a nationally-ranked (#4, 2025) program makes this a stronger academic-athletic package than most JUCOs at this price point."
+    },
+    "culture": {
+      "vibe": "Barton Community College sits in Great Bend, a small rural city (~15,000) in central Kansas. Campus culture centres heavily on athletics — Barton Athletics has 62 all-time NJCAA national championships across all sports. The men's soccer roster is overwhelmingly international (Brazil, Japan, Germany, France, Spain), so an Australian would fit an already globally diverse squad.",
+      "thingsToDo": "Great Bend is genuinely rural — Cheyenne Bottoms wetlands (birdwatching), Wichita is ~1.5hrs away for city amenities, Kansas City ~3.5hrs. Limited nightlife/urban culture on campus; social life centres on the athletics community.",
+      "socialScene": "Small, tight-knit international athlete community. The soccer team's heavy international recruiting (Brazil/Japan/Europe) means built-in camaraderie for an incoming Australian. Rural Kansas is a significant lifestyle change from Sydney.",
+      "olivierMatch": "★★ Great Bend is rural, cold-winter Kansas — a significant lifestyle mismatch for a warm-climate, city-preferring Sydney athlete. The trade-off is a genuinely strong, nationally-ranked (#4 NJCAA DI, 2025) program with a real Exercise Science degree and one of the most affordable cost profiles in the guide.",
+      "lifestyleTags": "Rural, cold winters, international squad, budget, strong soccer"
+    },
+    "courses": ["Exercise Science core sequence", "Human Anatomy & Physiology", "Exercise Physiology", "Kinesiology / Human Movement fundamentals"],
+    "rec": "Barton is a nationally competitive NJCAA DI program (#4 ranked, 2025 national tournament qualifier) with a genuinely dedicated Exercise Science degree — a rarer combination among JUCOs, most of which offer only a generic health-sciences transfer track. The trade-off is rural, cold-winter central Kansas, a poor lifestyle match for Olivier's warm-city preference. Best framed as a high-performance, low-cost 2-year stepping stone if lifestyle is deprioritised in favour of program strength and academic fit.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 16,
+      "cleared_before_2027": 16,
+      "cleared_names": [
+        "Jaiko Miguelez (Fr·M)", "Gabriel Henrique (So·M)", "Lucas Meibom (Fr·M)", "Rayen Covic (Fr·M)",
+        "Samuele Mailer (Fr·M)", "Kotaro Kimura (Fr·M)", "Rafael Silva (Fr·M)", "Etienne Grandjean (So·M)",
+        "Rafael Calmon (Fr·M)", "Vitor Bertoldo (Fr·M)", "Joaquim Diniz (Fr·M)", "Higor Prestes (Fr·M)",
+        "Dahman Zucchini (So·M)", "Jonah Gonzales (So·M)", "Luan Cony (Fr·M)", "Ikko Fujiwara (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Moderate",
+      "trajectory": [
+        {"yr": 2027, "yr_label": "Yr 1", "pct": 62, "label": "Squad rotation to likely starter — clean slate"},
+        {"yr": 2028, "yr_label": "Yr 2", "pct": 76, "label": "Established starter — transfer showcase year"}
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (16 MFs: 4 So + 12 Fr) clears before Olivier's August 2027 start. Zero roster overlap. Barton's 36-player squad is the largest roster among guide JUCOs, meaning more midfield slots but also a large, competitive 2026 recruiting class to enter. Ask the coach: 'How many central midfielders are in your 2026 class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "12 of the 16 current MFs (75%) are true freshmen with no prior college listed — Barton's heavy direct-from-high-school international recruiting (Brazil, Japan, Germany, France, Spain) suggests freshman entry is the norm rather than the exception, unlike transfer/JUCO-portal-heavy programs."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Exercise Science — dedicated 2yr program"
+  },
+  {
+    "id": "cowley_cc",
+    "name": "Cowley CC",
+    "full": "Cowley County Community College",
+    "loc": "Arkansas City, KS",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / KJCCC",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "profileDepth": "full",
+    "color": ["#fed7aa", "#c2410c"],
+    "mapX": 306,
+    "mapY": 198,
+    "domain": "cowleytigers.com",
+    "url": "https://cowleytigers.com/sports/msoc/index",
+    "degreeTitle": "A.S. Health Professions Transfer Pathway (2-year transfer degree)",
+    "acuAlign": 5,
+    "acuAlignNote": "Cowley does not offer a dedicated Exercise Science or Kinesiology degree — the closest fit is the general A.S. Medical/Health Professions transfer pathway (Emergency, Law & Health Professions division). Confirmed general-education overlap: ANAT100, EXSC222, BIOL125, EXSC225, EXSC321. This is a foundational transfer degree, not a specialised exercise-science track — expect most ACU-specific units to be completed after transferring to a 4-year Exercise Science program. WES evaluation required to confirm exact course equivalence.",
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true}, {"unit": "EXSC222", "covered": true}, {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true}, {"unit": "EXSC322", "covered": false}, {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": false}, {"unit": "EXSC321", "covered": true}, {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": false}, {"unit": "EXSC199", "covered": false}, {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false}, {"unit": "EXSC230", "covered": false}, {"unit": "EXSC122", "covered": false},
+      {"unit": "EXSC398", "covered": false}
+    ],
+    "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
+    "cost": "~$22.0k/yr",
+    "aid": "Athletic",
+    "size": 4500,
+    "prePT": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Cowley has open enrolment — no GPA barrier. Olivier's 2.8 is comfortably above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 21970,
+      "tuition": 8100,
+      "roomBoard": 9500,
+      "fees": 4370,
+      "maxAthletic": 0.5,
+      "maxAcademic": 3000,
+      "aidType": "athletic",
+      "internationalNote": "International rate is $270/credit hour (2025-26) — official college figures put the full annual cost (tuition, fees, room/board, books, transport) at ~$21,970 for international students, rising to ~$22,830 in 2026-27. Athletic scholarships can meaningfully reduce this for a strong recruit given the program's #4-5 national ranking."
+    },
+    "confRecord": [
+      {"yr": 2025, "pos": "1st KJCCC (8-1-1)", "note": "16-2-1 overall; ranked as high as #4-5 nationally (NJCAA DI, Oct 2025); qualified for the 2025 NJCAA DI National Tournament."},
+      {"yr": 2024, "pos": "KJCCC", "note": "NJCAA DI / KJCCC — exact standings not researched this session."},
+      {"yr": 2023, "pos": "KJCCC", "note": "NJCAA DI / KJCCC — exact standings not researched this session."},
+      {"yr": 2022, "pos": "KJCCC", "note": "NJCAA DI / KJCCC — exact standings not researched this session."},
+      {"yr": 2021, "pos": "KJCCC", "note": "NJCAA DI / KJCCC — exact standings not researched this session."}
+    ],
+    "titles": [
+      "5× KJCCC Conference Champions (per official program Instagram bio)",
+      "5× NJCAA Region VI Champions",
+      "5× Plains District Champions",
+      "NJCAA DI National Runner-Up (historical)",
+      "2025 — #4-5 nationally ranked, KJCCC regular-season champions, NJCAA DI National Tournament qualifier"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": ["No MLS SuperDraft picks confirmed in the last 5 years — value is the D1/transfer pathway from a nationally ranked program"],
+      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline"
+    },
+    "coach": {
+      "name": "Marcos Vinicius Longo Ribeiro",
+      "title": "Head Coach",
+      "email": null,
+      "phone": null,
+      "profile": "Marcos Vinicius Longo Ribeiro leads a Cowley program with 5× KJCCC, 5× Region VI, and 5× Plains District titles — one of the most decorated conference records among guide JUCOs. Assistant coach Eusebio \"Chevi\" Plaza. The 2025-26 roster is heavily Japanese and Brazilian, with additional depth from Mexico, Denmark, Spain, and France. No individual staff email/phone published on the official athletics site; general admissions contact is 800-593-2222 / admissions@cowley.edu."
+    },
+    "devScores": {"tactical": 74, "technical": 72, "fitness": 70},
+    "fitOlivier": 73,
+    "lensScores": {"overall": 73, "soccer": 49, "academic": 42, "minutes": 64, "lifestyle": 0, "value": 67},
+    "tags": ["soccer"],
+    "facilities": ["Cowley Soccer Complex (Arkansas City)", "Mark A. Phillips Track & Field Complex (shared)", "Athletic weight room"],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Cowley Soccer Complex in Arkansas City, with soccer also using the Mark A. Phillips Track & Field Complex — no fixed seating capacity published.",
+      "trainingFields": "On-campus training pitches. Kansas climate requires indoor options in winter months.",
+      "strengthConditioning": "Cowley Athletics weight room — standard JUCO strength facility.",
+      "sportsScience": "Basic JUCO level. Video analysis available. Program's 5× conference/region title record reflects strong coaching rather than dedicated sports-science infrastructure.",
+      "sportsMed": "Standard JUCO athletic training staff; specifics not published on the official site.",
+      "academicLabs": "General transfer-track science labs (biology, anatomy) support the Health Professions pathway; no dedicated exercise-science lab.",
+      "extras": "Arkansas City is a small south-central Kansas town. Wichita is roughly 1 hour north for city amenities.",
+      "note": "Cowley's facilities are functional JUCO standard — the real draw is the program's exceptional conference/region title record (5×/5×/5×) and current #4-5 national ranking, not the physical plant."
+    },
+    "culture": {
+      "vibe": "Cowley County Community College is in Arkansas City, a small south-central Kansas town. The men's soccer program is the most decorated in the guide's KJCCC pairing with Barton — 5× conference, 5× region, 5× district champions. Roster is heavily Japanese and Brazilian.",
+      "thingsToDo": "Arkansas City itself is small and rural. Wichita (~1hr) provides the nearest city amenities. Limited on-campus social/urban life outside athletics.",
+      "socialScene": "Tight-knit international athlete community, heavily Japanese/Brazilian on the current roster. Small-town Kansas is a significant change from Sydney city life.",
+      "olivierMatch": "★★ Arkansas City is rural, cold-winter Kansas — a poor lifestyle match for Olivier's warm-city preference. The trade-off is arguably the most successful JUCO soccer program in the guide by title count (5×/5×/5×) and a current top-5 national ranking.",
+      "lifestyleTags": "Rural, cold winters, international squad, elite conference record"
+    },
+    "courses": ["General Biology", "Anatomy & Physiology (transfer sequence)", "Health Professions Transfer Pathway core courses"],
+    "rec": "Cowley is arguably the most decorated JUCO soccer program in the guide by title count (5× KJCCC, 5× Region VI, 5× Plains District) and is currently ranked in the national top 5. The trade-off is a generic Health Professions transfer degree (no dedicated Exercise Science track) and a higher cost profile than most JUCOs (~$22k/yr), plus the same rural, cold-winter Kansas lifestyle mismatch as sister KJCCC program Barton.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Keitatsu Yoshida (So·M)", "Leonardo Leitao (So·M)", "Holden Schaefer (So·M)", "Yusei Suzaki (Fr·M)",
+        "Christian Cabrera (Fr·M)", "Hayato Yoshitake (Fr·M)", "Nino Inchico (Fr·M)", "Shuto Sasaki (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {"yr": 2027, "yr_label": "Yr 1", "pct": 58, "label": "Squad rotation — clean slate but tighter, higher-quality roster"},
+        {"yr": 2028, "yr_label": "Yr 2", "pct": 72, "label": "Likely starter — transfer showcase year"}
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 MFs: 3 So + 5 Fr) clears before Olivier's August 2027 start. Zero roster overlap. Cowley's smaller MF group plus its #4-5 national ranking suggests a highly competitive, quality-over-quantity recruiting approach — entry competition is likely higher per slot than roster size alone suggests. Ask the coach: 'How many central midfielders are in your 2026 class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "5 of the 8 current MFs (63%) are true freshmen with no prior college listed, drawn directly from Japan, Denmark, and France — suggests direct high-school-to-JUCO recruiting is the norm here, not portal/transfer recycling."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Associate degree — transfer prerequisite pathway"
+  },
+  {
+    "id": "arizona_western",
+    "name": "Arizona Western",
+    "full": "Arizona Western College",
+    "loc": "Yuma, AZ",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / ACCAC",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "profileDepth": "full",
+    "color": ["#fee2e2", "#b91c1c"],
+    "mapX": 110,
+    "mapY": 268,
+    "domain": "awcmatadors.com",
+    "url": "https://awcmatadors.com/sports/msoc/index",
+    "degreeTitle": "A.A. in Exercise, Wellness and Nutrition (2-year transfer degree)",
+    "acuAlign": 8,
+    "acuAlignNote": "Arizona Western's A.A. in Exercise, Wellness and Nutrition is a confirmed direct-match transfer degree. Confirmed ACU-relevant coverage: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology → EXSC225; Kinesiology / Human Movement → EXSC321; Introduction to Exercise Science → EXSC222 and EXSC122; foundational movement/wellness coursework → EXSC199, EXSC230. WES evaluation required to confirm exact course-to-unit mapping.",
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true}, {"unit": "EXSC222", "covered": true}, {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true}, {"unit": "EXSC322", "covered": false}, {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": false}, {"unit": "EXSC321", "covered": true}, {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": false}, {"unit": "EXSC199", "covered": true}, {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false}, {"unit": "EXSC230", "covered": true}, {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": false}
+    ],
+    "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
+    "cost": "~$16.3k/yr",
+    "aid": "Athletic",
+    "size": 8500,
+    "prePT": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Arizona Western has open enrolment — no GPA barrier. Olivier's 2.8 is comfortably above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 16300,
+      "tuition": 4800,
+      "roomBoard": 9500,
+      "fees": 2000,
+      "maxAthletic": 0.5,
+      "maxAcademic": 3000,
+      "aidType": "athletic",
+      "internationalNote": "Out-of-state rate is $160/credit hour for 7+ credits (2026-27, ~$4,800/yr full-time) — a distinct international rate was not separately published, so the out-of-state figure is used as the working estimate. Room & board runs an estimated $9,000–$10,000/yr. This is one of the most affordable full-profile JUCOs in the guide, combined with genuinely warm year-round Arizona desert climate."
+    },
+    "confRecord": [
+      {"yr": 2025, "pos": "2nd ACCAC (6-2)", "note": "11-3-1 overall; ranked #2 nationally (NJCAA DI, Oct 2025)."},
+      {"yr": 2024, "pos": "ACCAC", "note": "ACCAC / NJCAA Region I — exact standings not researched this session."},
+      {"yr": 2023, "pos": "ACCAC", "note": "ACCAC / NJCAA Region I — exact standings not researched this session."},
+      {"yr": 2022, "pos": "ACCAC Champions / Region I Champions", "note": "Won back-to-back NJCAA Region I title, 2-1 over Yavapai College."},
+      {"yr": 2021, "pos": "ACCAC Champions / Region I Champions", "note": "Undefeated season — 17-0 overall, 9-0 ACCAC — first undefeated season in program history."}
+    ],
+    "titles": [
+      "4× ACCAC Conference Champions",
+      "3× NJCAA Region I Champions",
+      "2021 — Undefeated season (17-0 overall, 9-0 ACCAC), first in program history",
+      "2022 — Back-to-back Region I champions (2-1 over Yavapai College)",
+      "2025 — Ranked #2 nationally (NJCAA DI, Oct 2025)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": ["No MLS SuperDraft picks confirmed in the last 5 years — value is the D1 transfer pathway from a top-2 nationally ranked program"],
+      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline"
+    },
+    "coach": {
+      "name": "Kenny Dale",
+      "title": "Head Men's Soccer Coach",
+      "email": null,
+      "phone": null,
+      "profile": "Kenny Dale leads a 5-person coaching staff — Assistant Bello Alhassan, Assistant/Recruiting Coordinator Admir Balicevac, Assistant Coach/Europe Tim Dennison, and Volunteer Assistant Tom vonAhlefeld — one of the most structured recruiting operations among guide JUCOs, with a dedicated European recruiting pipeline. The 2025-26 roster (30 players) draws from France, Japan, Canada, Ghana, Senegal, Brazil, Switzerland, Netherlands, Italy, Colombia, and Ethiopia. General college contact: 928-317-6000."
+    },
+    "devScores": {"tactical": 76, "technical": 74, "fitness": 72},
+    "fitOlivier": 80,
+    "lensScores": {"overall": 80, "soccer": 50, "academic": 58, "minutes": 70, "lifestyle": 50, "value": 75},
+    "tags": ["warm", "soccer", "acad"],
+    "facilities": ["Arizona Western College Soccer Field (lit, built 2013)", "Dedicated Exercise, Wellness and Nutrition program", "5-person coaching staff incl. European recruiting"],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Arizona Western College Soccer Field — dedicated lit pitch built in 2013, sited at the crest of a hill on campus; no fixed seating capacity published.",
+      "trainingFields": "Dedicated on-campus soccer field doubles as the training venue. Yuma's desert climate allows outdoor training year-round.",
+      "strengthConditioning": "AWC Athletics weight room — standard JUCO strength facility.",
+      "sportsScience": "Basic JUCO level. Video analysis available. The 5-person coaching staff including a dedicated European recruiting coach is a notable investment in program infrastructure relative to JUCO norms.",
+      "sportsMed": "Standard JUCO athletic training staff; specifics not published on the official site.",
+      "academicLabs": "Exercise, Wellness and Nutrition program labs support anatomy/physiology and nutrition coursework directly relevant to a BESS-style transfer pathway.",
+      "extras": "Yuma is a mid-size desert city (~95,000) on the Colorado River near the California and Mexico borders. Consistently one of the sunniest, warmest climates in the guide.",
+      "note": "AWC's facilities are solid JUCO standard, but the standout is program infrastructure — a 5-person coaching staff with a dedicated European recruiting coach, a genuinely relevant Exercise/Wellness/Nutrition degree, and a #2 national ranking (2025) — an unusually strong overall package for the cost."
+    },
+    "culture": {
+      "vibe": "Arizona Western College is in Yuma, a mid-size desert city (~95,000) near the California and Mexico borders. Consistently among the sunniest, warmest places in the country — a genuine climate match for a Sydney-raised athlete. The soccer program is nationally ranked (#2, 2025) with heavy European and West African recruiting alongside Latin American depth.",
+      "thingsToDo": "Colorado River recreation, historic Yuma Territorial Prison, proximity to San Diego (~3hrs) and Phoenix (~3hrs) for city weekends, Mexico border town of San Luis Río Colorado nearby. Desert outdoor lifestyle dominates.",
+      "socialScene": "Genuinely international roster (France, Japan, Ghana, Senegal, Brazil, Switzerland, Netherlands, Italy, Colombia, Ethiopia) gives strong built-in cross-cultural camaraderie. Yuma itself is a modest-sized city with limited nightlife compared to a metro area.",
+      "olivierMatch": "★★★★ Yuma's warm, sunny desert climate is a genuine match for Olivier's warm-weather preference, even though it's not a major city. Combined with a #2-ranked program, a directly relevant Exercise/Wellness/Nutrition degree, and one of the most affordable cost profiles in the guide, this is one of the strongest overall JUCO packages available.",
+      "lifestyleTags": "Warm, desert, sunny year-round, international squad, strong soccer, budget"
+    },
+    "courses": ["Exercise, Wellness and Nutrition core sequence", "Human Anatomy & Physiology", "Exercise Physiology", "Nutrition fundamentals"],
+    "rec": "Arizona Western pairs a genuinely relevant Exercise, Wellness and Nutrition degree with a nationally ranked (#2, 2025), well-resourced program — a 5-person coaching staff including a dedicated European recruiting coach — at one of the most affordable price points in the guide (~$16.3k/yr), plus a warm, sunny desert climate that matches Olivier's lifestyle preference far better than the Kansas JUCOs. The trade-off is Yuma's modest city size rather than a major metro.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 13,
+      "cleared_before_2027": 13,
+      "cleared_names": [
+        "Ishmael Mensah (So·M)", "Ziad Barakat (Fr·M)", "Lucas di Almeida (Fr·M)", "Justin Vallelian (So·M)",
+        "Adam Salma (So·M)", "Daniel Coke (So·M)", "Taikan Naito (Fr·M)", "Takuto Yamaguchi (Fr·M)",
+        "Jackson George (So·M)", "Yusei Nishida (Fr·M)", "Axel Gonzalez (Fr·M)", "Daniel Riascos (Fr·M)", "Mubashir Hilowle (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Moderate",
+      "trajectory": [
+        {"yr": 2027, "yr_label": "Yr 1", "pct": 64, "label": "Squad rotation to likely starter — clean slate"},
+        {"yr": 2028, "yr_label": "Yr 2", "pct": 78, "label": "Established starter — transfer showcase year"}
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (13 MFs: 5 So + 8 Fr) clears before Olivier's August 2027 start. Zero roster overlap. AWC's large, internationally diverse MF pool combined with a #2 national ranking suggests real depth but also real competition for spots. Ask the coach: 'How many central midfielders are in your 2026 class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "8 of the 13 current MFs (62%) are true freshmen with no prior college listed, recruited directly from Senegal, Brazil, Japan, Colombia, and Ethiopia — the dedicated European/international recruiting staff appears to source largely direct-from-home-country freshmen rather than transfer/portal players."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Exercise, Wellness and Nutrition — dedicated 2yr program"
+  },
+  {
+    "id": "efsc",
+    "name": "Eastern Florida State",
+    "full": "Eastern Florida State College",
+    "loc": "Melbourne, FL",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / FCSAA Region 8",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "profileDepth": "full",
+    "color": ["#fef3c7", "#b45309"],
+    "mapX": 489,
+    "mapY": 341,
+    "domain": "efsctitans.com",
+    "url": "https://www.efsctitans.com/sports/msoc/index",
+    "degreeTitle": "A.A. General Studies (2-year transfer degree)",
+    "acuAlign": 5,
+    "acuAlignNote": "EFSC does not offer a dedicated Exercise Science or Kinesiology transfer degree. The general A.A. covers ANAT100, EXSC222, BIOL125, EXSC225, EXSC321 at a foundational level. EFSC does separately offer a Physical Therapist Assistant (A.S.) — a 74-credit, 6-semester clinical/terminal program including Functional Anatomy & Kinesiology and Therapeutic Exercise coursework — but it is designed to produce licensed PTAs directly, not as a transfer pathway into a 4-year Exercise Science degree, so it is not used as the basis for this ACU count. WES evaluation required to confirm exact A.A. course equivalence.",
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true}, {"unit": "EXSC222", "covered": true}, {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true}, {"unit": "EXSC322", "covered": false}, {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": false}, {"unit": "EXSC321", "covered": true}, {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": false}, {"unit": "EXSC199", "covered": false}, {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false}, {"unit": "EXSC230", "covered": false}, {"unit": "EXSC122", "covered": false},
+      {"unit": "EXSC398", "covered": false}
+    ],
+    "soccerLevel": "NJCAA Division I — FCSAA Region 8",
+    "cost": "~$22.4k/yr",
+    "aid": "Athletic",
+    "size": 24000,
+    "prePT": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "EFSC has open enrolment — no GPA barrier. Olivier's 2.8 is comfortably above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 22426,
+      "tuition": 9738,
+      "roomBoard": 8000,
+      "fees": 4688,
+      "maxAthletic": 0.5,
+      "maxAcademic": 3000,
+      "aidType": "athletic",
+      "internationalNote": "Official EFSC figures put the total annual international student cost at $22,426 — $10,938 academic costs (tuition at $405.76/credit hour for 24 credits, plus books) and $11,488 living expenses (room & board, personal costs, required medical insurance, transportation). Athletic scholarships can meaningfully offset this for a strong recruit given the program's back-to-back national tournament runs."
+    },
+    "confRecord": [
+      {"yr": 2025, "pos": "2nd Region 8 sub-conference (2-2)", "note": "12-4-1 overall; part of back-to-back NJCAA DI National Tournament appearances (2024-25, 2025-26)."},
+      {"yr": 2024, "pos": "Region 8 + Southeast District Champions", "note": "NJCAA DI National Tournament semifinalist (Final Four) — 4th time in program history; 13 players advanced to 4-year programs."},
+      {"yr": 2023, "pos": "Region 8", "note": "FCSAA Region 8 — exact standings not researched this session."},
+      {"yr": 2022, "pos": "Region 8", "note": "FCSAA Region 8 — exact standings not researched this session."},
+      {"yr": 2021, "pos": "Region 8 Champions", "note": "Won Region 8 title, 2-0 over Daytona State College."}
+    ],
+    "titles": [
+      "2021 — NJCAA Region 8 Champions (2-0 over Daytona State College)",
+      "2024-25 — Region 8 + Southeast District Champions; NJCAA DI National Tournament semifinalist (Final Four) — 4th time in program history",
+      "Back-to-back NJCAA DI National Tournament appearances (2024-25, 2025-26)",
+      "13 players advanced to 4-year programs in 2025"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": ["No MLS SuperDraft picks confirmed in the last 5 years", "13 players advanced to 4-year programs in 2025 — strong transfer pipeline", "Titan Soccer Complex hosted Orlando City B (USL) matches in 2016, evidence of pro-level facility standards even though not a direct player pipeline"],
+      "draftRank": "JUCO — strong D1 transfer pipeline (13 transfers in 2025), not an MLS pipeline"
+    },
+    "coach": {
+      "name": "Bart Sasnett",
+      "title": "Head Coach",
+      "email": null,
+      "phone": null,
+      "profile": "Bart Sasnett led EFSC to consecutive NJCAA DI National Tournament appearances (2024-25 Final Four, 2025-26) and a 2021 Region 8 title. Staff includes Assistant Adrian Moreno, Goalkeeper Coach Calvin Dixon, and Assistants Jean Ganter and Taylor Pitts. The 2025-26 roster (27 players) is internationally diverse — England, Germany, Netherlands, Brazil, South Korea, Uganda, Italy, Japan, Colombia — alongside a strong core of Florida locals. General athletics contact: 321-632-1111."
+    },
+    "devScores": {"tactical": 72, "technical": 73, "fitness": 70},
+    "fitOlivier": 77,
+    "lensScores": {"overall": 77, "soccer": 49, "academic": 42, "minutes": 66, "lifestyle": 50, "value": 69},
+    "tags": ["warm", "soccer"],
+    "facilities": ["Titan Soccer Complex — 1,000-seat dedicated soccer stadium", "FIFA-regulation grass surface + adjacent practice field", "Air-conditioned press box"],
+    "facilityDetails": {
+      "rating": "Excellent",
+      "stadium": "Titan Soccer Complex — a 1,000-seat, soccer-specific stadium built in 2013, with a lighted FIFA-regulation-size (120×75 yard) Bermuda grass playing surface, an air-conditioned press box, and handicap-accessible bleachers. Notably hosted the NJCAA Division I Women's Soccer National Championship (2014-2016) and Orlando City B (USL) matches in 2016, when capacity was expanded to 3,500.",
+      "trainingFields": "Adjacent FIFA-regulation-size practice field alongside the match stadium. Florida climate allows year-round outdoor training.",
+      "strengthConditioning": "EFSC Athletics weight room — standard JUCO strength facility, with locker room and concession building on-site at the soccer complex.",
+      "sportsScience": "Basic JUCO level. Video analysis available. A dedicated Goalkeeper Coach on staff (Calvin Dixon) is a notable specialist investment relative to most JUCOs.",
+      "sportsMed": "Standard JUCO athletic training staff; specifics not published on the official site. Melbourne/Brevard County has strong regional hospital access (Health First system).",
+      "academicLabs": "General transfer-track science labs support the A.A. pathway. EFSC's Physical Therapist Assistant program has dedicated clinical/anatomy labs, though that program is a separate clinical track rather than the transfer pathway used here.",
+      "extras": "Melbourne is on Florida's Space Coast, near Kennedy Space Center and Cape Canaveral. Warm, coastal, with strong pro-adjacent facility history (Orlando City B hosted matches at this exact stadium).",
+      "note": "The Titan Soccer Complex is genuinely one of the best dedicated soccer-specific facilities among guide JUCOs — a real 1,000-seat stadium with FIFA-regulation surface and a documented history of hosting professional (USL) matches, well above typical JUCO facility standards."
+    },
+    "culture": {
+      "vibe": "Eastern Florida State College sits on Florida's Space Coast in Melbourne, near Kennedy Space Center. The soccer program plays in a genuine 1,000-seat soccer-specific stadium and has reached back-to-back NJCAA DI National Tournaments (2024-25 Final Four, 2025-26). Roster mixes strong Florida-local talent with internationals from England, Germany, Netherlands, Brazil, South Korea, Uganda, Italy, and Japan.",
+      "thingsToDo": "Cocoa Beach and the Space Coast's Atlantic beaches, Kennedy Space Center (rocket launches visible from campus area), Orlando theme parks (~1hr), Inter Miami CF and Orlando City SC both within reach for pro soccer. Warm, coastal Florida lifestyle year-round.",
+      "socialScene": "Internationally diverse roster with a strong Florida-local core gives a good mix of homegrown and international camaraderie. Melbourne is a mid-size coastal city (~85,000) with a genuine beach-town feel.",
+      "olivierMatch": "★★★★ Melbourne's warm, coastal Space Coast setting is a strong lifestyle match for a Sydney-raised athlete — beaches, warm climate, and a real stadium-grade home facility. Back-to-back national tournament runs add serious program credibility. The main gap is the lack of a dedicated Exercise Science degree.",
+      "lifestyleTags": "Warm, coastal, beach, Space Coast, Florida, strong soccer facility"
+    },
+    "courses": ["General Biology", "Anatomy & Physiology (transfer sequence)", "A.A. General Studies core courses"],
+    "rec": "EFSC offers a genuinely stadium-grade home facility (the 1,000-seat Titan Soccer Complex, with a documented pro-USL hosting history) and a program on a back-to-back NJCAA DI National Tournament run (Final Four 2024-25), in a warm, coastal Space Coast setting that suits Olivier's lifestyle preference well. The trade-off is the absence of a dedicated Exercise Science degree — the transfer pathway runs through a general A.A. rather than a specialised program — and a cost profile (~$22.4k/yr) toward the higher end of the guide's JUCO section.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 8,
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Louis Munn (So·M)", "Liam Kuemmritz (So·M)", "Shuto Sano (So·M)", "Ocira Lazarus (So·M)",
+        "Josh Rayfield (Fr·M)", "Kazuma Matsumoto (Fr·M)", "Diego Sanders (Fr·M)", "Davi Arujo (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {"yr": 2027, "yr_label": "Yr 1", "pct": 60, "label": "Squad rotation — clean slate"},
+        {"yr": 2028, "yr_label": "Yr 2", "pct": 74, "label": "Likely starter — transfer showcase year"}
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 MFs: 4 So + 4 Fr) clears before Olivier's August 2027 start. Zero roster overlap. EFSC's back-to-back national tournament runs suggest a competitive but not oversized MF group. Ask the coach: 'How many central midfielders are in your 2026 class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "All 4 incoming-freshman MFs (Josh Rayfield, Kazuma Matsumoto, Diego Sanders, Davi Arujo) are true freshmen with no prior college listed, drawn from England, Japan, and two Florida locals — suggests direct freshman recruiting rather than transfer/portal reliance, though the sample (4 players) is small."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Associate degree — transfer prerequisite pathway"
   }
 ]

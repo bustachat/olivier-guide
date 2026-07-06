@@ -103,7 +103,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-
 .sort-pill.active{background:var(--indigo);border-color:var(--indigo);color:#fff;font-weight:700;}
 .score-mode-wrap{display:flex;align-items:center;gap:0;border:1.5px solid var(--border2);border-radius:14px;overflow:hidden;flex-shrink:0;}
 .score-mode-btn{background:var(--bg);border:none;color:var(--muted);padding:4px 11px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;line-height:1.4;}
-.score-mode-btn:first-child{border-right:1px solid var(--border2);}
+.score-mode-btn:not(:last-child){border-right:1px solid var(--border2);}
 .score-mode-btn:hover{background:var(--indigo3);color:var(--indigo);}
 .score-mode-btn.active{background:var(--indigo);color:#fff;}
 .detail-btn.listed-btn{opacity:.45;cursor:not-allowed;}
@@ -896,9 +896,10 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     </div>
   </div>
   <div class="sort-row" style="display:flex;align-items:center;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap">
-    <div class="score-mode-wrap" title="Switch between Minutes-Adjusted fit (includes playing time opportunity) and Base Fit (soccer, GPA, cost, lifestyle only)">
+    <div class="score-mode-wrap" title="Switch between Minutes-Adjusted fit (includes playing time opportunity), Base Fit (soccer, GPA, cost, lifestyle only), and Soccer Priority (soccer quality, minutes, climate, city only — no GPA/Cost/ACU)">
       <button class="score-mode-btn active" data-mode="minutes" onclick="setScoreMode('minutes')">⏱ With Minutes</button>
       <button class="score-mode-btn" data-mode="base" onclick="setScoreMode('base')">📊 Base Fit</button>
+      <button class="score-mode-btn" data-mode="soccer" onclick="setScoreMode('soccer')">⚽ Soccer Priority</button>
     </div>
     <span style="font-size:12px;font-weight:600;color:var(--muted)">Sort:</span>
     <button class="sort-pill active" data-sort="fit" onclick="applySort('fit')">Best Fit</button>
@@ -1125,6 +1126,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
             <strong>Non-JUCO weights (With Minutes mode):</strong> Soccer Level 20% + GPA Eligibility 20% + Cost 20% + ACU Alignment 10% + Minutes Outlook 20% + City 5% + Climate 5% = 100%.<br>
             <strong>JUCO weights (With Minutes mode):</strong> ACU Alignment is set to <strong>0%</strong> — a JUCO degree is a 2-year stepping stone, not the pathway-relevant credential, so ACU alignment doesn't meaningfully measure fit here. That freed 10% moves to Minutes Outlook (20%→25%) and Climate (5%→10%), since playing time and lifestyle are what actually differentiate JUCO options. Soccer Level 20% + GPA Eligibility 20% + Cost 20% + Minutes Outlook 25% + City 5% + Climate 10% = 100%.<br>
             <strong>Base Fit mode</strong> (no Minutes factor) redistributes the same way but the freed ACU weight goes entirely to Climate for JUCO schools, since there's no Minutes slot to share it with.<br>
+            <strong>⚽ Soccer Priority mode (v37)</strong> is a different formula entirely, not a reweighting of the same factors: Soccer Program Quality 40% (dev scores + MLS pipeline + division strength — richer than the Soccer Level factor above) + Minutes Outlook 35% + Climate 15% + City 10% = 100%. GPA, Cost, and ACU Alignment are deliberately excluded — they already have dedicated views elsewhere (ATAR/budget toggles, Financial Model, ACU Alignment tab) and can't be predicted ahead of a real offer, so they don't belong in a "how good is this program" score. Same formula for JUCO and non-JUCO schools — no weight redistribution needed since ACU was never in it.<br>
             <em>GPA Eligibility note:</em> every guide JUCO is open-enrolment (no GPA minimum), so this factor always scores full marks (1.0) for JUCOs — it still contributes its full 20% weight, but doesn't differentiate between JUCO options the way it does for schools with an actual GPA threshold.
           </div>
         </div>

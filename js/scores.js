@@ -190,6 +190,34 @@ function calcDevAvg(school) {
   return Math.round(vals.reduce((a, b) => a + b, 0) / vals.length);
 }
 
+// ── Soccer Priority mode (v37) ───────────────────────────────────────────────
+// A third fit mode focused purely on soccer program quality + opportunity +
+// lifestyle. GPA, Cost, and ACU Alignment are deliberately excluded — they
+// already have dedicated views (ATAR/budget toggles, Financial Model,
+// ACU Alignment tab) and can't be predicted ahead of a real offer anyway.
+const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
+
+// Soccer program quality — dev scores + MLS pipeline + division strength.
+// Deliberately richer than fitOlivier's div-only soccerScore().
+function soccerQualityScore(school) {
+  const devAvg = calcDevAvg(school) / 100;
+  const mlsFactor = Math.min(1, ((school.proPlayers && school.proPlayers.mlsPicks5yr) || 0) / 10);
+  const divStrength = DIV_STRENGTH[school.div] || 0.5;
+  return (devAvg * 0.6) + (mlsFactor * 0.3) + (divStrength * 0.1);
+}
+
+function calculateSoccerPriorityFit(school, athlete) {
+  const w = athlete.scoreWeightsSoccer || { soccerQuality: 40, minutesOutlook: 35, climate: 15, city: 10 };
+  const components = {
+    soccerQuality:  soccerQualityScore(school)    * w.soccerQuality,
+    minutesOutlook: minutesOutlookScore(school)   * w.minutesOutlook,
+    climate:        climateScore(school, athlete) * w.climate,
+    city:           cityScore(school, athlete)    * w.city,
+  };
+  const total = Object.values(components).reduce((a, b) => a + b, 0);
+  return Math.min(100, Math.max(0, Math.round(total)));
+}
+
 // ── Recalculate all scores and update cards ──────────────────────────────────
 // Called on load and whenever ATAR slider moves
 function recalculateAllScores(athlete, convertedGpa) {
@@ -204,7 +232,9 @@ function recalculateAllScores(athlete, convertedGpa) {
   }
 
   unis.forEach(school => {
-    const newFit = calculateFitScore(school, athlete, convertedGpa);
+    const newFit = (typeof scoreMode !== 'undefined' && scoreMode === 'soccer')
+      ? calculateSoccerPriorityFit(school, athlete)
+      : calculateFitScore(school, athlete, convertedGpa);
 
     // Target by specific id — most reliable
     const valEl = document.getElementById('fit-' + school.id);

@@ -1484,15 +1484,17 @@ function toggleAtarHide() {
   applyFilters();
 }
 
-// ── Score mode toggle: 'minutes' (default) | 'base' ─────────────────────────
+// ── Score mode toggle: 'minutes' (default) | 'base' | 'soccer' ──────────────
 let scoreMode = 'minutes';
 
 function setScoreMode(mode) {
   if (!athleteConfig) return;
   scoreMode = mode;
-  athleteConfig.scoreWeights = mode === 'base'
-    ? athleteConfig._weightsBase
-    : athleteConfig._weightsMinutes;
+  // 'soccer' mode uses calculateSoccerPriorityFit() + scoreWeightsSoccer
+  // directly (scores.js) — it doesn't read athleteConfig.scoreWeights at all,
+  // so leave whatever With Minutes/Base Fit last set untouched.
+  if (mode === 'base') athleteConfig.scoreWeights = athleteConfig._weightsBase;
+  else if (mode === 'minutes') athleteConfig.scoreWeights = athleteConfig._weightsMinutes;
   document.querySelectorAll('.score-mode-btn').forEach(b =>
     b.classList.toggle('active', b.dataset.mode === mode)
   );

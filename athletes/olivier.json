@@ -2,7 +2,7 @@
   "id": "olivier",
   "name": "Olivier",
   "agentName": "Platform Sports Management",
-  "guideVersion": "v36.8",
+  "guideVersion": "v37.0",
   "position": "Central Midfielder",
   "positionCode": "CM",
   "positionRating": "8/10",
@@ -176,6 +176,12 @@
     "acuAlignment": 10,
     "city": 10,
     "climate": 10
+  },
+  "scoreWeightsSoccer": {
+    "soccerQuality": 40,
+    "minutesOutlook": 35,
+    "climate": 15,
+    "city": 10
   },
   "soccerLevelMap": {
     "D1": 1.0,

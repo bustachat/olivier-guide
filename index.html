@@ -1120,7 +1120,14 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     <div class="gloss-grid">
       <div class="gloss-item">
         <div class="gloss-term">Fit Score <span class="gloss-range">0–100%</span></div>
-        <div class="gloss-def">The overall match between this school and Olivier's specific profile. Combines soccer level, ACU degree alignment, annual cost, minutes outlook, climate preference (warm + city), and lifestyle into a single percentage. <strong>90%+ = excellent all-round fit. 80–89% = strong. Below 70% = meaningful trade-offs exist.</strong></div>
+        <div class="gloss-def">The overall match between this school and Olivier's specific profile. Combines soccer level, ACU degree alignment, annual cost, minutes outlook, climate preference (warm + city), and lifestyle into a single percentage. <strong>90%+ = excellent all-round fit. 80–89% = strong. Below 70% = meaningful trade-offs exist.</strong>
+          <div style="margin-top:.6rem;padding:.7rem .85rem;background:var(--surface2);border-radius:8px;font-size:12px;line-height:1.7">
+            <strong>Non-JUCO weights (With Minutes mode):</strong> Soccer Level 20% + GPA Eligibility 20% + Cost 20% + ACU Alignment 10% + Minutes Outlook 20% + City 5% + Climate 5% = 100%.<br>
+            <strong>JUCO weights (With Minutes mode):</strong> ACU Alignment is set to <strong>0%</strong> — a JUCO degree is a 2-year stepping stone, not the pathway-relevant credential, so ACU alignment doesn't meaningfully measure fit here. That freed 10% moves to Minutes Outlook (20%→25%) and Climate (5%→10%), since playing time and lifestyle are what actually differentiate JUCO options. Soccer Level 20% + GPA Eligibility 20% + Cost 20% + Minutes Outlook 25% + City 5% + Climate 10% = 100%.<br>
+            <strong>Base Fit mode</strong> (no Minutes factor) redistributes the same way but the freed ACU weight goes entirely to Climate for JUCO schools, since there's no Minutes slot to share it with.<br>
+            <em>GPA Eligibility note:</em> every guide JUCO is open-enrolment (no GPA minimum), so this factor always scores full marks (1.0) for JUCOs — it still contributes its full 20% weight, but doesn't differentiate between JUCO options the way it does for schools with an actual GPA threshold.
+          </div>
+        </div>
       </div>
       <div class="gloss-item">
         <div class="gloss-term">Dev Score <span class="gloss-range">0–100%</span></div>

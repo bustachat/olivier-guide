@@ -142,11 +142,31 @@ function minutesOutlookScore(school) {
   return Math.min(1.0, yr1 * 0.6 + yr2 * 0.4);
 }
 
+// ── JUCO weight override ─────────────────────────────────────────────────────
+// JUCO degrees are a 2-year stepping stone, not the actual pathway-relevant
+// credential — ACU alignment doesn't meaningfully measure JUCO fit. Zero it
+// out and redistribute to Minutes Outlook (if active) and Climate.
+function effectiveWeights(school, athlete) {
+  const w = athlete.scoreWeights;
+  if (school.div !== 'JUCO') return w;
+  const acuW = w.acuAlignment || 0;
+  if (!acuW) return w;
+  const hasMinutes = (w.minutesOutlook || 0) > 0;
+  const out = Object.assign({}, w, { acuAlignment: 0 });
+  if (hasMinutes) {
+    out.minutesOutlook = (w.minutesOutlook || 0) + acuW / 2;
+    out.climate = (w.climate || 0) + acuW / 2;
+  } else {
+    out.climate = (w.climate || 0) + acuW;
+  }
+  return out;
+}
+
 // ── MAIN: Calculate fit score ────────────────────────────────────────────────
 // Returns 0–100 integer.
 // convertedGpa: the current ATAR-derived GPA from the slider (or athlete default)
 function calculateFitScore(school, athlete, convertedGpa) {
-  const w = athlete.scoreWeights;
+  const w = effectiveWeights(school, athlete);
 
   const components = {
     soccerLevel:    soccerScore(school, athlete)              * w.soccerLevel,
@@ -213,7 +233,7 @@ function recalculateAllScores(athlete, convertedGpa) {
 
 // ── Score breakdown tooltip (for Detail modal) ───────────────────────────────
 function buildScoreBreakdown(school, athlete, convertedGpa) {
-  const w = athlete.scoreWeights;
+  const w = effectiveWeights(school, athlete);
   const rows = [
     ['⚽ Soccer Level',    soccerScore(school, athlete),              w.soccerLevel],
     ['🎓 GPA Eligibility', gpaEligibilityScore(school, convertedGpa), w.gpaEligibility],

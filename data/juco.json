@@ -10,6 +10,7 @@
     "warm": true,
     "city": true,
     "top": true,
+    "juco2yr": true,
     "color": [
       "#d1fae5",
       "#059669"
@@ -261,6 +262,7 @@
     "warm": true,
     "city": true,
     "top": false,
+    "juco2yr": true,
     "color": [
       "#e0f2fe",
       "#0284c7"
@@ -513,6 +515,7 @@
     "warm": false,
     "city": true,
     "top": false,
+    "juco2yr": true,
     "color": [
       "#dbeafe",
       "#1d4ed8"
@@ -1349,7 +1352,7 @@
       "costNum": 21000,
       "tuition": 6120,
       "roomBoard": 12792,
-      "fees": 88,
+      "fees": 2088,
       "maxAthletic": 0.7,
       "maxAcademic": 3000,
       "aidType": "athletic",

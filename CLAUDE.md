@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v36.8 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v37.1 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -286,7 +286,7 @@ Captures whether a school's midfield spots are typically filled by true incoming
 | What changed | What's affected |
 |---|---|
 | `guideVersion` | Explore tab header version badge only |
-| `budgetAUD` or `fxRate` | costScore() recalculates for ALL schools → ALL fitOlivier change → all lensScores.overall must be manually recalculated and re-stored |
+| `budgetAUD` or `fxRate` | **No longer affects fitOlivier** (v37.1 removed Cost from the Fit Score) — only affects the `value` lens (`affordabilityScore`) and the Financial Model tab. Re-store `lensScores.value` for all schools if changed. |
 | `scoreWeights` | ALL fitOlivier recalculate → all lensScores.overall must be manually recalculated |
 | `shortlist[]` | Dashboard shortlist panel, Coaches Outreach tracker, ★ Top Pick filter in Explore |
 | `outreach[]` | Coaches Outreach tracker only |
@@ -486,13 +486,12 @@ mapX/mapY must be recalculated if coming from an older system. Verify on Dashboa
 **DOMAINS, SITE_URLS, and SOCIAL in app.js must be updated whenever a new school is added or removed.**
 
 **Service academy rule (Army / Navy / USNA):**
-`costNum=0`, all `fin{}` numeric fields = 0, `maxAthletic=1.0`, `maxAcademic=0`. Include an explicit service commitment warning in every text field — `rec`, `acuAlignNote`, `fin.internationalNote`, `culture.olivierMatch`. These schools are not compatible with Olivier's DPT/Chiropractic goal or MLS pathway. fitOlivier will naturally be low due to career goal mismatch — do not inflate it.
+`costNum=0`, all `fin{}` numeric fields = 0, `maxAthletic=1.0`, `maxAcademic=0`. Include an explicit service commitment warning in every text field — `rec`, `acuAlignNote`, `fin.internationalNote`, `culture.olivierMatch`. These schools are not compatible with Olivier's DPT/Chiropractic goal or MLS pathway — this is a **narrative warning only**, since fitOlivier (v37.1+) doesn't score cost or career-goal fit at all. Do not try to force fitOlivier low for these schools; if their soccer/minutes/climate/city numbers are genuinely good, the score will reflect that — the incompatibility is communicated via the text fields, not suppressed in the score.
 
-**Sort, Lens, and Score Mode are three independent, non-conflicting controls.**
-- Score mode toggle (With Minutes / Base Fit) → recalculates fit scores, then re-applies current sort
+**Sort and Lens are two independent, non-conflicting controls** (the Score Mode toggle was retired in v37.1 — Soccer Priority is now the only Fit Score, so there's nothing to toggle between).
 - Sort pills → reorder cards; Best Fit sort is lens-aware (sorts by lensScores when a lens is active)
-- Lens pills → apply visual badges/highlights only; do NOT reset sort; do NOT conflict with mode toggle
-- These three systems must never override each other's state silently
+- Lens pills → apply visual badges/highlights only; do NOT reset sort
+- These two systems must never override each other's state silently
 
 ---
 
@@ -523,10 +522,10 @@ titles[], proPlayers{}
 For JUCO schools, also add: `"juco2yr": true`
 
 **Field gotchas (verified against the renderers, July 2026):**
-- `kinRank` — one-line program-ranking blurb shown in the modal Degree tab. REQUIRED on every full profile: the renderer prints it unguarded, so a missing field displays the literal text "undefined" (45 v25-batch schools currently missing it — v36 backlog, §6).
-- `gpa.status` — must be exactly `eligible` | `borderline` | `below`. The Compare tab renders this stored value directly (cards recompute live via refreshAllGpaRows(); Compare does not). Values like `ok` / `challenging` render red with no icon.
+- `kinRank` — one-line program-ranking blurb shown in the modal Degree tab. REQUIRED on every full profile: the renderer prints it unguarded, so a missing field displays the literal text "undefined". (Was missing on 45 v25-batch schools; backfilled v36.7.)
+- `gpa.status` — must be exactly `eligible` | `borderline` | `below`. This is now purely informational/filter display (v37.1 removed GPA from the Fit Score) — cards recompute live via `refreshAllGpaRows()` and the Compare tab now calls `dynamicGpaStatus()` live too (v36.5), so this stored field can't drift the way it used to.
 - `minutesOutlook.recruit_risk` — must be exactly `Low` | `Medium` | `High`. The renderers have no branch for anything else: `Very High`, `Medium-High`, `Moderate`, or sentence-style values all fall through to the green "Open" label — the opposite of the researched meaning.
-- Stored `fitOlivier` / `lensScores.overall` must always equal the live scores.js formula output. The score-mode toggle recalculates live and overwrites the display, so any drift shows up as scores "jumping" the first time the toggle is touched. `node validate_consistency.js` checks this (Phase 4).
+- Stored `fitOlivier` / `lensScores.overall` must always equal the live scores.js formula output (`calculateFitScore()` — Soccer Priority formula since v37.1). `recalculateAllScores()` runs on every page load (`initApp()`), so any drift shows up immediately, not just when some toggle is touched. `node validate_consistency.js` checks this (Phase 4).
 - `juco2yr: true` is the ONLY flag renderACUTable() uses to exclude JUCOs from the ACU Alignment tab — `div: "JUCO"` alone does NOT exclude.
 
 ### School object (listed-profile)
@@ -624,43 +623,40 @@ careerGoal, lifestylePrefs[], targetDivisions[],
 budgetAUD, budgetUSD, fxRate,
 shortlist[] — [{id, status}] objects
 outreach[]  — [{schoolId, status, lastContact, note}]
-scoreWeights{ soccerLevel, gpaEligibility, cost, acuAlignment,
-              city, climate, minutesOutlook }
-scoreWeightsBase{ ... }
-soccerLevelMap{ D1, IVY, D2, NAIA, D3, JUCO }
-prePtMap{ Excellent, Very Strong, Good, Solid, Transfer Pathway }
+scoreWeights{ soccerQuality, minutesOutlook, climate, city }
 guideTitle, guideSubtitle,
 pathways{ paths[], coachQuestions[] }
 ```
 
-### Fit Score weights (v35.1 — live; matches scoreWeights / scoreWeightsBase in athletes/olivier.json)
-| Factor | With Minutes | Base Fit | JUCO — With Minutes | JUCO — Base Fit |
-|---|---|---|---|---|
-| Soccer Level | 20% | 25% | 20% | 25% |
-| GPA Eligibility | 20% | 20% | 20% | 20% |
-| Cost | 20% | 25% | 20% | 25% |
-| ACU Alignment | 10% | 10% | **0%** | **0%** |
-| Minutes Outlook | 20% | — | **25%** | — |
-| City Campus | 5% | 10% | 5% | 10% |
-| Climate | 5% | 10% | **10%** | **20%** |
-| PT Path | 0% | 0% | 0% | 0% |
+**Retired in v37.1** (removed from schema — no longer read by any code): `scoreWeightsBase`, `soccerLevelMap`, `prePtMap`. These backed the old blended Fit Score (GPA/Cost/ACU included) and the score-mode toggle, both removed. If you find these fields referenced in an old branch or archived doc, they're describing pre-v37.1 behavior.
 
-The JUCO columns are derived live by `effectiveWeights()` in scores.js (v35.1) — the ACU weight is zeroed and redistributed: split evenly to Minutes Outlook and Climate in With Minutes mode, entirely to Climate in Base Fit mode. Only the non-JUCO weights are stored in olivier.json. When hand-calculating a JUCO school's fitOlivier, use the JUCO columns.
+### Fit Score weights (v37.1 — live; matches scoreWeights in athletes/olivier.json)
+| Factor | Weight | Formula |
+|---|---|---|
+| Soccer Program Quality | 40% | `devAvg×0.6 + (mlsPicks5yr/10, capped at 1)×0.3 + divStrength×0.1` — richer than a simple division lookup |
+| Minutes Outlook | 35% | `(Yr1%×0.6) + (Yr2%×0.4)`, neutral 0.5 if unavailable |
+| Climate | 15% | 1.0 if warm, else 0.2 (Olivier wants warm) |
+| City Campus | 10% | 1.0 if city, else 0.3 (Olivier wants city) |
+
+Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are deliberately **not** in the Fit Score at all (v37.1 decision): they already have dedicated views (ATAR/budget toggles, Financial Model tab, ACU Alignment tab) and can't be predicted ahead of a real offer, so blending them in was actively misleading (e.g. Stanford sitting at 41% purely because of cost, pre-v37.1). When a real offer appears, check GPA/Cost/ACU manually via those dedicated views — don't expect the Fit Score to reflect them.
+
+`divStrength` map (`DIV_STRENGTH` in scores.js): D1=1.0, IVY=0.9, D2=0.8, NAIA=0.65, D3=0.5, JUCO=0.6 — note this is a *different* map from the retired `soccerLevelMap` (which had JUCO=0.75); don't confuse the two if referencing old data.
 
 ---
 
 ## 6. Version History & Current State
 
-**Current version: v36.8 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
+**Current version: v37.1 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
 ### State snapshot (update only when it changes)
 - 93 schools, all full-profile, across 10 conference JSON files. 93 coaches in coaches.json, ranked 1–93.
-- JUCO section: 12 schools. ACU Alignment weight zeroed for JUCO in the Fit Score (v35.1, `effectiveWeights()` in scores.js — see §5 weights table). All 12 JUCO schools now correctly flagged `juco2yr:true` (v36.6 fixed the 3 that were missing it).
-- `recruit_pathway` / `recruit_pathway_note` schema added v34; populated only for the 4 v35 JUCO adds. Full 93-school pass deferred; whether it should ever feed the Fit model is an OPEN owner decision — do not fold it into fitOlivier without explicit sign-off (see CHANGELOG.md v34 notes).
-- `recalculateAllScores()` now runs on page load and every ATAR slider move (v36.1), not just the mode toggle — GPA eligibility (20% of fitOlivier) is live everywhere. Compare tab's GPA row is also live via `dynamicGpaStatus()` (v36.5) instead of a stored value.
+- JUCO section: 12 schools. All 12 correctly flagged `juco2yr:true` (v36.6 fixed the 3 that were missing it). Fit Score formula (v37.1) is identical for JUCO and non-JUCO — no weight redistribution, since ACU was removed from the formula entirely.
+- **v37.1 — Fit Score simplified to Soccer Priority only:** GPA, Cost, and ACU Alignment removed from fitOlivier entirely (they have dedicated views: ATAR/budget toggles, Financial Model, ACU Alignment tab). fitOlivier = Soccer Program Quality 40% + Minutes Outlook 35% + Climate 15% + City 10% (see §5 weights table). The With Minutes / Base Fit score-mode toggle and the "Soccer-First" Lens were both retired as redundant. `recalculateAllScores()` runs once on page load (`initApp()`) — no ATAR-slider dependency anymore since GPA isn't in the formula.
+- `recruit_pathway` / `recruit_pathway_note` schema added v34; populated only for the 4 v35 JUCO adds. Full 93-school pass deferred; this field carries no scoring weight and was never folded into fitOlivier (see CHANGELOG.md v34 notes) — now doubly moot since GPA-adjacent factors are out of the Fit Score entirely.
 - All 93 full-profile schools have `kinRank` populated (v36.7 backfilled the 45 that were missing it).
+- Compare tab's GPA row is live via `dynamicGpaStatus()` (v36.5) instead of a stored value — still relevant since GPA remains a first-class filter/toggle, just not a Fit Score input.
 
 ### v36 fix backlog — CLOSED (July 2026)
 
@@ -668,7 +664,7 @@ The full 174-issue baseline from the v35.1 code review (previously listed here) 
 
 - **Stony Brook coach name** — conf JSON `TBD` vs coaches.json `Head Coach` placeholder. This is a genuine data gap, not a stale-file conflict (official site at stonybrookseawolves.com is unreachable, consistent with the existing "site down" deferred item below) — do not guess a name; re-attempt via Tier-1 research once the site is back.
 
-Lower-priority (code quality, still deferred — none were in v36's named scope): `atarToGpa` defined 3× across scores.js / dashboard.js / app.js (app.js wins by script load order — do not reorder the script tags); `DATA_BASE_URL` means `./data/` in app.js but site root in dashboard.js; olivier.json fetched twice per page load; `selectSchoolFromBar()` button-highlight matcher can never match (arrow-fn toString); dashboard `filterToConf('other')` scrolls to the Ivy section (5 Explore sections share `data-confkey="other"`, plus 5 duplicate `id="grid-other"` elements); search keyword echoed unescaped into the filter-summary HTML (self-XSS); stale Explore section intro texts in CONF_SECTIONS ("Stanford and Duke among 14 listed programs" etc. — everything is full-profile since v25); Glossary Minutes Score text says Yr1 45/Yr2 30/Yr3 15/Yr4 10 but code is Yr1 60/Yr2 40; FX slider sublabels say 1.30–1.80 but the range is 1.20–1.70; `costScore()` returns neutral 0.5 for costNum=0 (service academies) instead of 1.0 — falsy-zero guard, confirm intent before changing.
+Lower-priority (code quality, still deferred — none were in v36's named scope): `atarToGpa` defined in both scores.js and app.js (app.js wins by script load order — do not reorder the script tags); `DATA_BASE_URL` means `./data/` in app.js but site root in dashboard.js; olivier.json fetched twice per page load; `selectSchoolFromBar()` button-highlight matcher can never match (arrow-fn toString); dashboard `filterToConf('other')` scrolls to the Ivy section (5 Explore sections share `data-confkey="other"`, plus 5 duplicate `id="grid-other"` elements); search keyword echoed unescaped into the filter-summary HTML (self-XSS); stale Explore section intro texts in CONF_SECTIONS ("Stanford and Duke among 14 listed programs" etc. — everything is full-profile since v25); Glossary Minutes Score text says Yr1 45/Yr2 30/Yr3 15/Yr4 10 but code is Yr1 60/Yr2 40; FX slider sublabels say 1.30–1.80 but the range is 1.20–1.70. (The old `costScore()` falsy-zero-for-service-academies issue is now moot — cost was removed from fitOlivier entirely in v37.1.)
 
 ### Deferred items (carried forward)
 - Stony Brook coach name AND minutesOutlook — site down / off-season; coach still placeholder, minutesOutlook still `available: false`
@@ -804,23 +800,22 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 - [ ] YouTube URL (or null)
 
 **1J — Pre-Calculate All Scores (before opening any file)**
-Using scores.js logic — read scores.js if unsure of the formula:
-- [ ] `soccerScore`: read from `soccerLevelMap` in athletes/olivier.json — currently D1=1.0, IVY=0.9, D2=0.8, NAIA=0.65, D3=0.5, **JUCO=0.75** (olivier.json overrides the 0.6 default hardcoded in scores.js — always use the olivier.json value)
-- [ ] `gpaScore`: eligible=1.0, borderline=0.5, below=0.0
-- [ ] `costScore`: ratio = costNum ÷ budgetUSD; use interpolation anchors in scores.js
-- [ ] `acuScore`: acuAlign ÷ 16
-- [ ] `minutesScore`: 0.5 if available:false; else (yr1×0.6) + (yr2×0.4)
+Using scores.js logic — read scores.js if unsure of the formula. **v37.1: fitOlivier no longer includes GPA, Cost, or ACU Alignment** — those are still required fields (gpa.status, acuAlign, fin.costNum) because their own tabs/toggles need them, they just don't feed the Fit Score calculation below.
+- [ ] `devScores`: tactical, technical, fitness (each 0–100) — manually researched, not formula-derived
+- [ ] `soccerQualityScore`: `(devAvg/100 × 0.6) + (min(1, mlsPicks5yr/10) × 0.3) + (divStrength × 0.1)` — devAvg is the mean of the 3 devScores; divStrength from `DIV_STRENGTH` in scores.js: D1=1.0, IVY=0.9, D2=0.8, NAIA=0.65, D3=0.5, JUCO=0.6 (note: different from the retired `soccerLevelMap`, which had JUCO=0.75 — don't mix them up)
+- [ ] `minutesScore`: 0.5 if available:false; else `(Yr1%×0.6) + (Yr2%×0.4)`
 - [ ] `cityScore`: city=true → 1.0, false → 0.3
 - [ ] `climateScore`: warm=true → 1.0, false → 0.2
-- [ ] **`fitOlivier`** = sum of (score × weight from scoreWeights in olivier.json) → round to integer. **JUCO schools: use the effectiveWeights() override** (§5 weights table): ACU=0%, Minutes 25%, Climate 10% in With Minutes mode
-- [ ] `devScores`: tactical, technical, fitness (each 0–100)
+- [ ] **`fitOlivier`** = `soccerQualityScore×40 + minutesScore×35 + climateScore×15 + cityScore×10`, rounded to integer. Same formula for JUCO and non-JUCO.
 - [ ] `lensScores` — calculate each using these formulas:
-  - `soccer`:    (devAvg × 0.6) + (mlsPicks5yr/10 × 0.3) + (divStrength × 0.1) → ×100  (divStrength: D1=1.0, IVY=0.9, D2=0.8, NAIA=0.65, D3=0.5, JUCO=0.6)
+  - `soccer`:    same as `soccerQualityScore` above × 100 (kept as data even though the standalone "Soccer-First" Lens UI was retired in v37.1)
   - `academic`:  (acuAlign/16 × 0.85) + 0.15 → ×100
-  - `minutes`:   minutesScore × 100  (same minutesScore used in fitOlivier)
+  - `minutes`:   minutesScore × 100 (same minutesScore used in fitOlivier)
   - `lifestyle`: (warm × 50) + (city × 50)
-  - `value`:     (fitOlivier × 0.6) + (affordabilityScore × 0.4) → ×100  (affordabilityScore = 1 - costRatio capped at 1.0)
+  - `value`:     (fitOlivier × 0.6) + (affordabilityScore × 0.4) → ×100 (affordabilityScore = 1 − costRatio, costRatio = costNum÷budgetUSD, capped at 1.0 — cost still factors into the Value lens, just not into fitOlivier itself)
   - `overall`:   same integer as fitOlivier
+
+Still required (for their own tabs, not for fitOlivier): `gpa.status` (eligible/borderline/below, via `dynamicGpaStatus()` in app.js — GPA toggle/Compare tab), `acuAlign` + `acuUnits[]` (ACU Alignment tab), `fin.costNum` etc. (Financial Model tab, and the `value` lens above).
 
 #### For REMOVE SCHOOL:
 - [ ] Confirm the school's `id` exactly as it appears in the conf JSON
@@ -1052,9 +1047,8 @@ Open `http://localhost:8000` (or the serve port).
 - [ ] All 9 modal tabs populate without errors (full only)
 - [ ] Dev Score: 3 bars — Tactical, Technical, Fitness — no PT Pathway bar
 - [ ] Fit score is non-zero and matches Phase 1 calculation
-- [ ] Fit score updates when ATAR slider moves — **known broken as of v35.1**: recalculateAllScores() is only wired to the mode toggle (v36 backlog, §6); until fixed, verify score recalculation via the mode toggle instead
-- [ ] Fit score updates when mode toggle clicked (With Minutes / Base Fit)
-- [ ] Cards re-sort correctly after mode toggle
+- [ ] Fit score does NOT change when the ATAR slider moves (v37.1: GPA isn't in the formula — this is intentional, not a bug)
+- [ ] Fit score re-sorts correctly on the "Best Fit" sort pill
 - [ ] Map dot on correct US state — Dashboard tab
 - [ ] Coach in Rankings with correct badge colour (rk-solid = emerald)
 - [ ] All coaches numbered sequentially — no duplicate ranks
@@ -1179,7 +1173,7 @@ git push
 - Add `ptPath` to devScores — removed in v22
 - Add `pt` to lensScores — removed in v22
 - Make sort pills and lens pills reset each other — they are independent controls
-- Call `applyLens()` from `setScoreMode()` — mode toggle calls `applySort()` only
+- Fold GPA, Cost, or ACU Alignment back into fitOlivier — v37.1 deliberately removed them (they have dedicated views); if this is ever revisited, it needs explicit owner sign-off, not a quiet reintroduction
 - Use aggregator sites (Niche, CollegeData, 247Sports, RosterResource) as data sources — see §15
 
 ---
@@ -1238,11 +1232,10 @@ The commit protocol is defined in §7 Phases 4–6 and Phase 8. Follow those pha
 | All nav tabs respond | Each tab switches content without JS error |
 | School cards render | Cards grid populates. Fit scores show. Degree badges show. |
 | Filter chips work | Clicking a conference chip filters correctly |
-| Score mode toggle | With Minutes / Base Fit both update scores; cards re-sort |
+| ATAR slider | GPA-eligibility toggle/filter updates live; Fit Score does NOT change (v37.1) |
 | Sort pills | Best Fit / Lowest Cost / ACU Align / MLS Pipeline all sort within sections |
-| Lens pills | All 6 lenses apply badges; Best Fit sort respects active lens |
+| Lens pills | All 5 lenses apply badges (Best Overall, Academic-First, Minutes Outlook, Lifestyle-First, Value-First); Best Fit sort respects active lens |
 | Lens + Sort combo | Lens badges visible while non-Fit sort is active |
-| Mode + Lens combo | Mode toggle preserves lens badges, re-sorts by current sort |
 | Modal opens with 9 tabs | Full-profile school: all 9 tabs populated |
 | Dashboard map | All dots on landmass. Hover info panel populates. |
 | Glossary tab | No PT Pathway entries visible |
@@ -1257,7 +1250,7 @@ The commit protocol is defined in §7 Phases 4–6 and Phase 8. Follow those pha
 | Coach Rankings | New coach visible with correct badge |
 | Coach re-ranked | All coaches renumbered sequentially |
 | Map dot | Dot on correct US state on Dashboard |
-| Fit score | Score is non-zero and updates with ATAR slider and mode toggle |
+| Fit score | Score is non-zero and matches the Soccer Priority formula (does NOT change with ATAR slider — v37.1) |
 | Dev Score (full) | Three bars render: Tactical, Technical, Fitness |
 | lensScores (full) | 6 lens values — no 'pt' key |
 | Modal tabs (full) | All 9 tabs populate |

@@ -108,7 +108,6 @@ schools.filter(s => s.profileDepth === 'full' && !coachSchoolIds.has(s.id)).forE
 // ── athlete config ──
 const sumW = o => Object.values(o).reduce((a, b) => a + b, 0);
 if (sumW(athlete.scoreWeights) !== 100) note('WEIGHTS', `scoreWeights sum=${sumW(athlete.scoreWeights)}`);
-if (sumW(athlete.scoreWeightsBase) !== 100) note('WEIGHTS', `scoreWeightsBase sum=${sumW(athlete.scoreWeightsBase)}`);
 (athlete.shortlist || []).forEach(e => { const id = typeof e === 'string' ? e : e.id; if (!idSet.has(id)) note('SHORTLIST', `shortlist id '${id}' not a school`); });
 (athlete.outreach || []).forEach(e => { if (!idSet.has(e.schoolId)) note('OUTREACH', `outreach schoolId '${e.schoolId}' not a school`); });
 
@@ -129,38 +128,35 @@ schools.filter(s => s.gpa).forEach(s => {
   if (s.gpa.status && s.gpa.status !== comp) note('GPA', `${s.id} stored gpa.status='${s.gpa.status}' vs computed@2.8='${comp}' (minEntry: ${s.gpa.minEntry}) — Compare tab renders the stored value`);
 });
 
-// ── fitOlivier recompute (With Minutes mode, GPA 2.8) — mirrors scores.js exactly ──
-function costScore(s) {
-  if (!s.fin || !s.fin.costNum) return 0.5;
-  const budgetUSD = athlete.budgetAUD / athlete.fxRate; const r = s.fin.costNum / budgetUSD;
-  const A = [[0, 1], [0.4, 1], [0.6, 0.9], [0.8, 0.75], [1, 0.55], [1.2, 0.3], [1.4, 0.1]];
-  if (r <= A[0][0]) return A[0][1]; if (r >= A[A.length - 1][0]) return A[A.length - 1][1];
-  for (let i = 0; i < A.length - 1; i++) { const [r1, s1] = A[i], [r2, s2] = A[i + 1]; if (r >= r1 && r <= r2) { const t = (r - r1) / (r2 - r1); return parseFloat((s1 + t * (s2 - s1)).toFixed(4)); } }
-  return 0.1;
+// ── fitOlivier recompute (Soccer Priority — the only Fit Score since v37.1) —
+// mirrors scores.js's calculateFitScore()/soccerQualityScore() exactly ──
+function calcDevAvg(s) {
+  if (!s.devScores) return 0;
+  const vals = Object.values(s.devScores);
+  return Math.round(vals.reduce((a, b) => a + b, 0) / vals.length);
+}
+const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
+function soccerQualityScore(s) {
+  const devAvg = calcDevAvg(s) / 100;
+  const mlsFactor = Math.min(1, ((s.proPlayers && s.proPlayers.mlsPicks5yr) || 0) / 10);
+  const divStrength = DIV_STRENGTH[s.div] || 0.5;
+  return (devAvg * 0.6) + (mlsFactor * 0.3) + (divStrength * 0.1);
 }
 function moScore(s) {
   const mo = s.minutesOutlook; if (!mo || !mo.available) return 0.5; const t = mo.trajectory; if (!t || !t.length) return 0.5;
   const y1 = (t[0] ? t[0].pct : 50) / 100, y2 = (t[1] ? t[1].pct : t[0].pct) / 100; return Math.min(1, y1 * 0.6 + y2 * 0.4);
 }
-function effW(s) {
-  const w = athlete.scoreWeights; if (s.div !== 'JUCO') return w; const acuW = w.acuAlignment || 0; if (!acuW) return w;
-  const out = Object.assign({}, w, { acuAlignment: 0 });
-  if ((w.minutesOutlook || 0) > 0) { out.minutesOutlook = (w.minutesOutlook || 0) + acuW / 2; out.climate = (w.climate || 0) + acuW / 2; } else out.climate = (w.climate || 0) + acuW;
-  return out;
-}
 const wantsWarm = athlete.lifestylePrefs.includes('warm'), wantsCity = athlete.lifestylePrefs.includes('city');
 const fitMismatches = [];
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
-  const w = effW(s);
-  const soccer = (athlete.soccerLevelMap || {})[s.div] ?? 0.5;
-  const g = gpaStatus(2.8, s.gpa ? s.gpa.minEntry : null); const gsc = g === 'eligible' ? 1 : g === 'borderline' ? 0.5 : 0;
-  const total = soccer * w.soccerLevel + gsc * w.gpaEligibility + costScore(s) * w.cost + ((s.acuAlign || 0) / (athlete.auUnitsTotal || 16)) * w.acuAlignment
-    + moScore(s) * (w.minutesOutlook || 0) + (wantsCity ? (s.city ? 1 : 0.3) : 1) * w.city + (wantsWarm ? (s.warm ? 1 : 0.2) : 1) * (w.climate || 0);
+  const w = athlete.scoreWeights;
+  const total = soccerQualityScore(s) * w.soccerQuality + moScore(s) * w.minutesOutlook
+    + (wantsCity ? (s.city ? 1 : 0.3) : 1) * w.city + (wantsWarm ? (s.warm ? 1 : 0.2) : 1) * w.climate;
   const fit = Math.min(100, Math.max(0, Math.round(total)));
   if (Math.abs(fit - (s.fitOlivier || 0)) > 1) fitMismatches.push(`${s.id} (${s._file}): stored ${s.fitOlivier}, live formula ${fit}`);
 });
 if (fitMismatches.length) {
-  note('FIT', `${fitMismatches.length} schools where stored fitOlivier differs >1 from the live scores.js formula (scores jump when the mode toggle is touched):`);
+  note('FIT', `${fitMismatches.length} schools where stored fitOlivier differs >1 from the live scores.js formula:`);
   fitMismatches.forEach(m => note('FIT', '  ' + m));
 }
 

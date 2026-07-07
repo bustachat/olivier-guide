@@ -2,7 +2,7 @@
   "id": "olivier",
   "name": "Olivier",
   "agentName": "Platform Sports Management",
-  "guideVersion": "v37.0",
+  "guideVersion": "v37.1",
   "position": "Central Midfielder",
   "positionCode": "CM",
   "positionRating": "8/10",
@@ -160,43 +160,10 @@
     }
   ],
   "scoreWeights": {
-    "soccerLevel": 20,
-    "gpaEligibility": 20,
-    "cost": 20,
-    "acuAlignment": 10,
-    "ptPath": 0,
-    "minutesOutlook": 20,
-    "city": 5,
-    "climate": 5
-  },
-  "scoreWeightsBase": {
-    "soccerLevel": 25,
-    "gpaEligibility": 20,
-    "cost": 25,
-    "acuAlignment": 10,
-    "city": 10,
-    "climate": 10
-  },
-  "scoreWeightsSoccer": {
     "soccerQuality": 40,
     "minutesOutlook": 35,
     "climate": 15,
     "city": 10
-  },
-  "soccerLevelMap": {
-    "D1": 1.0,
-    "IVY": 0.9,
-    "D2": 0.8,
-    "NAIA": 0.65,
-    "D3": 0.5,
-    "JUCO": 0.75
-  },
-  "prePtMap": {
-    "Excellent": 1.0,
-    "Very Strong": 0.9,
-    "Good": 0.75,
-    "Solid": 0.6,
-    "Transfer Pathway": 0.4
   },
   "guideTitle": "US College Soccer & Exercise Science Guide",
   "guideSubtitle": "Olivier — Scholarship Guide",

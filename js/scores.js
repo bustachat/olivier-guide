@@ -1,10 +1,15 @@
 // ═══════════════════════════════════════════════════════════════════════
-// scores.js  —  Dynamic Fit Score Calculator
-// Calculates personalised fit scores for each school against an
-// athlete profile. Called on load and whenever ATAR slider moves.
+// scores.js  —  Fit Score Calculator
+// Soccer Priority is the only Fit Score (v37.1) — GPA, Cost, and ACU
+// Alignment are deliberately excluded. They already have dedicated views
+// elsewhere (ATAR/budget toggles, Financial Model, ACU Alignment tab) and
+// can't be predicted ahead of a real offer, so they don't belong blended
+// into "how good a soccer/lifestyle opportunity is this."
 // ═══════════════════════════════════════════════════════════════════════
 
 // ── ATAR → GPA Conversion ───────────────────────────────────────────────────
+// Still used to drive the GPA-eligibility toggle/filter on Explore — just
+// no longer feeds the Fit Score itself.
 const ATAR_GPA_TABLE = [
   [99, 4.0], [95, 3.9], [90, 3.7], [85, 3.5], [80, 3.3],
   [75, 3.0], [70, 2.8], [65, 2.6], [60, 2.4], [55, 2.2],
@@ -22,97 +27,6 @@ function atarToGpa(atar) {
     }
   }
   return 1.5;
-}
-
-// ── Parse school minimum GPA from string ────────────────────────────────────
-function parseMinGpa(minEntry) {
-  if (!minEntry) return 0;
-  const s = minEntry.toLowerCase();
-  if (s.includes('no minimum') || s.includes('open')) return 0;
-  const m = minEntry.match(/(\d+\.\d+|\d+)/);
-  return m ? parseFloat(m[1]) : 0;
-}
-
-// ── GPA eligibility status ───────────────────────────────────────────────────
-function gpaStatus(convertedGpa, minEntry) {
-  const min = parseMinGpa(minEntry);
-  if (min === 0)                      return 'eligible';
-  if (convertedGpa >= min)            return 'eligible';
-  if (convertedGpa >= min - 0.3)      return 'borderline';
-  return 'below';
-}
-
-// ── Cost score ───────────────────────────────────────────────────────────────
-// Returns 0.0–1.0 based on annual USD cost vs athlete's AUD budget.
-// Uses linear interpolation between anchor points — no score cliffs at boundaries.
-// A school costing 1% more than a threshold no longer loses 15 fit points.
-function costScore(school, athlete) {
-  if (!school.fin || !school.fin.costNum) return 0.5;
-  const budgetUSD = athlete.budgetAUD / athlete.fxRate;
-  const ratio = school.fin.costNum / budgetUSD;
-
-  // [cost/budget ratio, score] anchor points
-  const anchors = [
-    [0.00, 1.00],
-    [0.40, 1.00],
-    [0.60, 0.90],
-    [0.80, 0.75],
-    [1.00, 0.55],
-    [1.20, 0.30],
-    [1.40, 0.10],
-  ];
-
-  if (ratio <= anchors[0][0]) return anchors[0][1];
-  if (ratio >= anchors[anchors.length - 1][0]) return anchors[anchors.length - 1][1];
-
-  for (let i = 0; i < anchors.length - 1; i++) {
-    const [r1, s1] = anchors[i];
-    const [r2, s2] = anchors[i + 1];
-    if (ratio >= r1 && ratio <= r2) {
-      const t = (ratio - r1) / (r2 - r1);
-      return parseFloat((s1 + t * (s2 - s1)).toFixed(4));
-    }
-  }
-  return 0.10;
-}
-
-// ── ACU alignment score ──────────────────────────────────────────────────────
-function acuScore(school, athlete) {
-  const total = athlete.auUnitsTotal || 16;
-  return (school.acuAlign || 0) / total;
-}
-
-// ── Soccer level score ───────────────────────────────────────────────────────
-function soccerScore(school, athlete) {
-  const map = athlete.soccerLevelMap || {
-    D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6
-  };
-  return map[school.div] || 0.5;
-}
-
-// ── GPA eligibility score ────────────────────────────────────────────────────
-// Uses the current ATAR-converted GPA (passed in, not from school data)
-function gpaEligibilityScore(school, convertedGpa) {
-  const minEntry = school.gpa ? school.gpa.minEntry : null;
-  const status = gpaStatus(convertedGpa, minEntry);
-  if (status === 'eligible')   return 1.0;
-  if (status === 'borderline') return 0.5;
-  return 0.0;   // below — hard penalty
-}
-
-// ── Pre-PT pathway score ─────────────────────────────────────────────────────
-function ptScore(school, athlete) {
-  const map = athlete.prePtMap || {
-    'Excellent': 1.0, 'Very Strong': 0.9, 'Good': 0.75,
-    'Solid': 0.6, 'Transfer Pathway': 0.4
-  };
-  const key = (school.prePT || '').split('—')[0].trim();
-  // Try exact match first, then partial
-  if (map[key] !== undefined) return map[key];
-  for (const [k, v] of Object.entries(map)) {
-    if (key.toLowerCase().includes(k.toLowerCase())) return v;
-  }
-  return 0.5;
 }
 
 // ── Climate score ─────────────────────────────────────────────────────────────
@@ -142,47 +56,6 @@ function minutesOutlookScore(school) {
   return Math.min(1.0, yr1 * 0.6 + yr2 * 0.4);
 }
 
-// ── JUCO weight override ─────────────────────────────────────────────────────
-// JUCO degrees are a 2-year stepping stone, not the actual pathway-relevant
-// credential — ACU alignment doesn't meaningfully measure JUCO fit. Zero it
-// out and redistribute to Minutes Outlook (if active) and Climate.
-function effectiveWeights(school, athlete) {
-  const w = athlete.scoreWeights;
-  if (school.div !== 'JUCO') return w;
-  const acuW = w.acuAlignment || 0;
-  if (!acuW) return w;
-  const hasMinutes = (w.minutesOutlook || 0) > 0;
-  const out = Object.assign({}, w, { acuAlignment: 0 });
-  if (hasMinutes) {
-    out.minutesOutlook = (w.minutesOutlook || 0) + acuW / 2;
-    out.climate = (w.climate || 0) + acuW / 2;
-  } else {
-    out.climate = (w.climate || 0) + acuW;
-  }
-  return out;
-}
-
-// ── MAIN: Calculate fit score ────────────────────────────────────────────────
-// Returns 0–100 integer.
-// convertedGpa: the current ATAR-derived GPA from the slider (or athlete default)
-function calculateFitScore(school, athlete, convertedGpa) {
-  const w = effectiveWeights(school, athlete);
-
-  const components = {
-    soccerLevel:    soccerScore(school, athlete)              * w.soccerLevel,
-    gpaEligibility: gpaEligibilityScore(school, convertedGpa) * w.gpaEligibility,
-    cost:           costScore(school, athlete)                * w.cost,
-    acuAlignment:   acuScore(school, athlete)                 * w.acuAlignment,
-    ptPath:         ptScore(school, athlete)                  * (w.ptPath || 0),
-    minutesOutlook: minutesOutlookScore(school)               * (w.minutesOutlook || 0),
-    city:           cityScore(school, athlete)                * w.city,
-    climate:        climateScore(school, athlete)             * (w.climate || 0),
-  };
-
-  const total = Object.values(components).reduce((a, b) => a + b, 0);
-  return Math.min(100, Math.max(0, Math.round(total)));
-}
-
 // ── Dev score average ────────────────────────────────────────────────────────
 function calcDevAvg(school) {
   if (!school.devScores) return 0;
@@ -190,15 +63,9 @@ function calcDevAvg(school) {
   return Math.round(vals.reduce((a, b) => a + b, 0) / vals.length);
 }
 
-// ── Soccer Priority mode (v37) ───────────────────────────────────────────────
-// A third fit mode focused purely on soccer program quality + opportunity +
-// lifestyle. GPA, Cost, and ACU Alignment are deliberately excluded — they
-// already have dedicated views (ATAR/budget toggles, Financial Model,
-// ACU Alignment tab) and can't be predicted ahead of a real offer anyway.
+// ── Soccer program quality — dev scores + MLS pipeline + division strength ──
 const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
 
-// Soccer program quality — dev scores + MLS pipeline + division strength.
-// Deliberately richer than fitOlivier's div-only soccerScore().
 function soccerQualityScore(school) {
   const devAvg = calcDevAvg(school) / 100;
   const mlsFactor = Math.min(1, ((school.proPlayers && school.proPlayers.mlsPicks5yr) || 0) / 10);
@@ -206,8 +73,13 @@ function soccerQualityScore(school) {
   return (devAvg * 0.6) + (mlsFactor * 0.3) + (divStrength * 0.1);
 }
 
-function calculateSoccerPriorityFit(school, athlete) {
-  const w = athlete.scoreWeightsSoccer || { soccerQuality: 40, minutesOutlook: 35, climate: 15, city: 10 };
+// ── MAIN: Calculate Fit Score ────────────────────────────────────────────────
+// Returns 0–100 integer. Soccer Program Quality 40% + Minutes Outlook 35% +
+// Climate 15% + City 10% (weights in athletes/olivier.json scoreWeights).
+// Same formula for JUCO and non-JUCO — ACU was never in it, so there's
+// nothing to redistribute.
+function calculateFitScore(school, athlete) {
+  const w = athlete.scoreWeights || { soccerQuality: 40, minutesOutlook: 35, climate: 15, city: 10 };
   const components = {
     soccerQuality:  soccerQualityScore(school)    * w.soccerQuality,
     minutesOutlook: minutesOutlookScore(school)   * w.minutesOutlook,
@@ -219,8 +91,10 @@ function calculateSoccerPriorityFit(school, athlete) {
 }
 
 // ── Recalculate all scores and update cards ──────────────────────────────────
-// Called on load and whenever ATAR slider moves
-function recalculateAllScores(athlete, convertedGpa) {
+// Called on load (initApp) and whenever ATAR slider moves. convertedGpa no
+// longer feeds the Fit Score, but the slider still drives the GPA-eligibility
+// toggle/filter separately (see refreshAllGpaRows / dynamicGpaStatus in app.js).
+function recalculateAllScores(athlete) {
   const container = document.getElementById('cards-container');
   if (!container || !unis.length || !athlete) {
     console.warn('recalculateAllScores: missing', {
@@ -232,9 +106,7 @@ function recalculateAllScores(athlete, convertedGpa) {
   }
 
   unis.forEach(school => {
-    const newFit = (typeof scoreMode !== 'undefined' && scoreMode === 'soccer')
-      ? calculateSoccerPriorityFit(school, athlete)
-      : calculateFitScore(school, athlete, convertedGpa);
+    const newFit = calculateFitScore(school, athlete);
 
     // Target by specific id — most reliable
     const valEl = document.getElementById('fit-' + school.id);
@@ -259,42 +131,4 @@ function recalculateAllScores(athlete, convertedGpa) {
       }
     }
   });
-}
-
-// ── Score breakdown tooltip (for Detail modal) ───────────────────────────────
-function buildScoreBreakdown(school, athlete, convertedGpa) {
-  const w = effectiveWeights(school, athlete);
-  const rows = [
-    ['⚽ Soccer Level',    soccerScore(school, athlete),              w.soccerLevel],
-    ['🎓 GPA Eligibility', gpaEligibilityScore(school, convertedGpa), w.gpaEligibility],
-    ['💰 Annual Cost',     costScore(school, athlete),                w.cost],
-    ['📚 ACU Alignment',   acuScore(school, athlete),                 w.acuAlignment],
-    ['🏥 PT/Chiro Path',   ptScore(school, athlete),                  w.ptPath],
-    ['⏱ Minutes Outlook', minutesOutlookScore(school),               w.minutesOutlook || 0],
-    ['🏙 City Campus',     cityScore(school, athlete),                w.city],
-    ['☀ Climate',         climateScore(school, athlete),              w.climate || 0],
-  ].filter(([, , weight]) => weight > 0);
-
-  let html = '<div style="background:var(--surface2);border-radius:10px;padding:.85rem 1rem;margin-top:.75rem">';
-  html += '<div style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.09em;color:var(--hint);margin-bottom:.6rem">Score Breakdown</div>';
-  html += '<table style="width:100%;font-size:11px;border-collapse:collapse">';
-  html += '<tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:3px 0;color:var(--hint);font-weight:700">Factor</th><th style="text-align:right;padding:3px 0;color:var(--hint);font-weight:700">Weight</th><th style="text-align:right;padding:3px 0;color:var(--hint);font-weight:700">Score</th><th style="text-align:right;padding:3px 0;color:var(--hint);font-weight:700">Points</th></tr>';
-
-  let total = 0;
-  rows.forEach(([label, factor, weight]) => {
-    const points = Math.round(factor * weight * 10) / 10;
-    total += points;
-    const pct = Math.round(factor * 100);
-    const color = pct >= 80 ? 'var(--emerald)' : pct >= 50 ? 'var(--amber)' : 'var(--rose)';
-    html += `<tr style="border-bottom:1px solid var(--border)">
-      <td style="padding:4px 0">${label}</td>
-      <td style="text-align:right;padding:4px 0;color:var(--muted)">${weight}%</td>
-      <td style="text-align:right;padding:4px 0;color:${color}">${pct}%</td>
-      <td style="text-align:right;padding:4px 0;font-weight:700">${points.toFixed(1)}</td>
-    </tr>`;
-  });
-
-  html += `<tr><td colspan="3" style="padding:5px 0;font-weight:700">Total Fit Score</td><td style="text-align:right;padding:5px 0;font-weight:800;color:${sc(Math.round(total))}">${Math.round(total)}/100</td></tr>`;
-  html += '</table></div>';
-  return html;
 }

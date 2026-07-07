@@ -144,9 +144,6 @@ async function loadData() {
     athleteConfig      = athlete_data;
 
     if (athleteConfig.guideVersion) APP_VERSION = athleteConfig.guideVersion;
-    // Preserve both weight sets so the score-mode toggle can swap between them
-    athleteConfig._weightsMinutes = Object.assign({}, athleteConfig.scoreWeights);
-    athleteConfig._weightsBase    = Object.assign({}, athleteConfig.scoreWeightsBase);
 
     // Fetch live FX rate — runs alongside initApp, updates UI when ready
     fetchLiveFxRate().then(fx => {
@@ -198,6 +195,7 @@ function initApp() {
   renderFinSchoolSelector();
   renderFinComparisonBars();
   renderMinutesOutlook();
+  recalculateAllScores(athleteConfig);
   onAtarSlide();
   applyLens(currentLens);
   initModalFocusTrap();
@@ -247,8 +245,7 @@ function toggleDivSection(btn){
 
 // ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
-  {key:'overall',   label:'Best Overall',     desc:"Olivier's overall fit score — soccer level, ACU degree alignment, cost, minutes outlook, climate, and city lifestyle combined."},
-  {key:'soccer',    label:'Soccer-First',     desc:'Weights development scores (60%), titles & MLS pipeline (30%), and division strength (10%).'},
+  {key:'overall',   label:'Best Overall',     desc:"Olivier's Fit Score — soccer program quality, minutes outlook, climate, and city lifestyle combined. GPA, cost, and ACU alignment are handled separately (ATAR/budget toggles, Financial Model, ACU Alignment tab)."},
   {key:'academic',  label:'Academic-First',   desc:'Weights ACU BESS unit alignment (85%) plus a baseline. UF tops this list but cannot be played at — flagged accordingly.'},
   {key:'minutes',   label:'Minutes Outlook',  desc:'2027-entry roster opportunity. Higher = more midfielder slots opening up before Olivier arrives.'},
   {key:'lifestyle', label:'Lifestyle-First',  desc:'Climate (warm), city access, and cultural match for Sydney-raised Olivier.'},
@@ -1484,31 +1481,6 @@ function toggleAtarHide() {
   applyFilters();
 }
 
-// ── Score mode toggle: 'minutes' (default) | 'base' | 'soccer' ──────────────
-let scoreMode = 'minutes';
-
-function setScoreMode(mode) {
-  if (!athleteConfig) return;
-  scoreMode = mode;
-  // 'soccer' mode uses calculateSoccerPriorityFit() + scoreWeightsSoccer
-  // directly (scores.js) — it doesn't read athleteConfig.scoreWeights at all,
-  // so leave whatever With Minutes/Base Fit last set untouched.
-  if (mode === 'base') athleteConfig.scoreWeights = athleteConfig._weightsBase;
-  else if (mode === 'minutes') athleteConfig.scoreWeights = athleteConfig._weightsMinutes;
-  document.querySelectorAll('.score-mode-btn').forEach(b =>
-    b.classList.toggle('active', b.dataset.mode === mode)
-  );
-  recalculateAllScores(athleteConfig, currentAtarGpa);
-  updateAtarCounts();
-  // Brief pulse so user sees scores just changed
-  document.querySelectorAll('.ss-val').forEach(el => {
-    el.classList.remove('score-pulse');
-    void el.offsetWidth; // force reflow to restart animation
-    el.classList.add('score-pulse');
-  });
-  applySort(currentSort || 'fit');
-}
-
 function onAtarSlide() {
   const atar = parseInt(document.getElementById('atar-slider').value);
   currentAtarGpa = atarToGpa(atar);
@@ -1516,18 +1488,14 @@ function onAtarSlide() {
   document.getElementById('atar-display').textContent = atar;
   document.getElementById('gpa-display').textContent = currentAtarGpa.toFixed(1);
 
+  // v37.1: GPA is a pure eligibility filter/toggle now — it no longer feeds
+  // the Fit Score (Soccer Priority dropped GPA/Cost/ACU entirely), so the
+  // slider only needs to refresh the eligibility display, not recalculate
+  // or re-sort scores.
   refreshAllGpaRows();
   updateAtarCounts();
   applyFilters(); // v17: re-run filter engine so hide/grey state updates live
   if (typeof syncDashGpa === 'function') syncDashGpa(currentAtarGpa, atar);
-
-  // v36.1: GPA eligibility is 20% of fitOlivier — the slider must recalculate
-  // live scores, not just re-render GPA rows. Called on load too, since
-  // initApp() invokes onAtarSlide() at the end.
-  if (athleteConfig && athleteConfig.scoreWeights) {
-    recalculateAllScores(athleteConfig, currentAtarGpa);
-    applySort(currentSort || 'fit');
-  }
 
   // v36.5: Compare tab's GPA row used to only refresh when the selection
   // changed (toggleCompare/removeCompare) — never on ATAR slide — so it

@@ -111,7 +111,7 @@ function normaliseShortlist(raw) {
 async function renderDashboard() {
   const base = window.DATA_BASE_URL || './';
   try {
-    const res = await fetch(base + 'athletes/olivier.json');
+    const res = await fetch(base + 'athletes/olivier.json', { cache: 'no-store' });
     dashAthlete = await res.json();
   } catch (_) {
     dashAthlete = { budgetUSD:55000, shortlist:['fiu','pba','lynn','ucsb'], defaultAtar:70, currentGpa:2.8 };

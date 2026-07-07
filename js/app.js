@@ -93,11 +93,18 @@ function applyFxToUI(fx) {
 const CONF_FILES = ['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'd1-other', 'juco', 'ivy', 'd2'];
 
 // Fetch with exponential-backoff retry. Throws after maxAttempts failures.
+// cache: 'no-store' — a hard reload (Ctrl+Shift+R) does not reliably bypass
+// HTTP cache for fetch()-initiated requests in every browser (seen live:
+// Chrome kept serving a pre-v37.1 cached athletes/olivier.json after a hard
+// reload, producing NaN fit scores from mismatched weight keys, while Edge
+// picked up the new file fine). Forcing no-store means every data file is
+// always fetched fresh from the network — the guide is low-traffic enough
+// that losing HTTP caching here costs nothing.
 async function fetchWithRetry(url, maxAttempts = 3) {
   let lastErr;
   for (let i = 0; i < maxAttempts; i++) {
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, { cache: 'no-store' });
       if (!res.ok) throw new Error(res.status + ' ' + res.statusText + ' — ' + url);
       return res.json();
     } catch (e) {

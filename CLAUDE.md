@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v37.1 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v37.3 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -646,7 +646,7 @@ Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are delibera
 
 ## 6. Version History & Current State
 
-**Current version: v37.1 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
+**Current version: v37.3 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
@@ -657,6 +657,7 @@ Full per-version history lives in **CHANGELOG.md** — moved out of this file in
 - `recruit_pathway` / `recruit_pathway_note` schema added v34; populated only for the 4 v35 JUCO adds. Full 93-school pass deferred; this field carries no scoring weight and was never folded into fitOlivier (see CHANGELOG.md v34 notes) — now doubly moot since GPA-adjacent factors are out of the Fit Score entirely.
 - All 93 full-profile schools have `kinRank` populated (v36.7 backfilled the 45 that were missing it).
 - Compare tab's GPA row is live via `dynamicGpaStatus()` (v36.5) instead of a stored value — still relevant since GPA remains a first-class filter/toggle, just not a Fit Score input.
+- **v37.3 — all data fetches use `{ cache: 'no-store' }`** (`fetchWithRetry()` in app.js, the olivier.json fetch in dashboard.js). Discovered live: after the v37.1 schema change, Chrome kept serving a cached pre-v37.1 `athletes/olivier.json` even after closing the browser and Ctrl+Shift+R, producing NaN fit scores (new JS + old JSON, missing the new `soccerQuality` weight key) — Edge was unaffected. A hard reload reliably busts cache for `<script>` tags but not for `fetch()`-initiated requests in every browser. **Any new data-fetching code must keep `cache: 'no-store'`** — don't remove it for a caching "optimization" without solving this class of bug another way first.
 
 ### v36 fix backlog — CLOSED (July 2026)
 
@@ -1157,6 +1158,7 @@ git push
 - Keep onclick handlers consistent — same function names across cards and dashboard
 - After adding any coach: re-rank ALL coaches in coaches.json
 - After removing any coach: re-rank ALL remaining coaches in coaches.json
+- Keep `{ cache: 'no-store' }` on every `fetch()` call in `fetchWithRetry()` (app.js) and the dashboard.js olivier.json fetch — v37.3 fix for a live bug where Chrome served stale JSON after a schema change even through a hard reload (see §6)
 
 **DON'T:**
 - Reconstruct any file from memory or from this CLAUDE.md

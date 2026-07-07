@@ -660,6 +660,7 @@ function buildCard(u){
         '<div class="card-sub">'+
           '<span class="dbadge d-'+u.div+'" style="font-size:9px;padding:1px 6px">'+u.div+'</span>'+
           '<span style="color:var(--hint)">'+confShort+'</span>'+
+          (u.njcaaRegion?'<span style="color:var(--hint)" title="'+(u.njcaaRegionArea||'')+'">· '+u.njcaaRegion+'</span>':'')+
           '<span>📍'+locShort+'</span>'+
           warmTag+cityTag+
         '</div>'+

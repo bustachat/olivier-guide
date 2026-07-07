@@ -11,6 +11,8 @@
     "city": true,
     "top": true,
     "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "Conference-level titles only (CCCAA); no recent NJCAA DI national tournament/ranking result on record",
     "color": [
       "#d1fae5",
       "#059669"
@@ -263,6 +265,8 @@
     "city": true,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "NJCAA regional appearances only; no national tournament/ranking result on record",
     "color": [
       "#e0f2fe",
       "#0284c7"
@@ -516,6 +520,8 @@
     "city": true,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2 2025 First-Team NJCAA All-Americans",
     "color": [
       "#dbeafe",
       "#1d4ed8"
@@ -668,6 +674,8 @@
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
       "recruit_risk": "Low",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "8 of the 12 current MFs (67%) are true freshmen with no prior college listed, recruited from Japan, Latvia, and Canada alongside US high schoolers. 2025 First-Team All-American Efraims Valutadatils (Latvia) came in as a freshman himself, evidencing a real freshman-to-All-American pathway.",
       "trajectoryNote": "JUCO 2-year program — 100% of the current 2025-26 roster finishes before Olivier enters in August 2027. All 12 current MFs (4 So + 8 Fr) are completely gone. Zero roster overlap whatsoever. Olivier's competition is entirely determined by the 2026 recruiting class that Coach Mike Brown signs now. Ask the coach: 'How many central midfielders are in your 2026 class?' — that is the only relevant question. Trajectory modelled as a strong incoming recruit competing against one unknown class.",
       "trajectory": [
         {
@@ -768,6 +776,8 @@
     "city": false,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "NJCAA Division II (regional tier); no national tournament/ranking result on record",
     "profileDepth": "full",
     "color": [
       "#fee2e2",
@@ -1013,6 +1023,8 @@
     "city": true,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "3x NJCAA DI National Champions (2021-2023); 2024 runner-up — \"NJCAA\\u2019s most dominant JUCO program nationally\"",
     "profileDepth": "full",
     "color": [
       "#e0e7ff",
@@ -1277,6 +1289,8 @@
     "city": false,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2025 NJCAA DI National Champions; 2025 First-Team All-American (Fabian Arroyo)",
     "profileDepth": "full",
     "color": [
       "#fef3c7",
@@ -1432,6 +1446,8 @@
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
       "recruit_risk": "Medium",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "9 of the 15 current MFs (60%) are true freshmen, drawn from an unusually wide international spread (Italy, Brazil x2, Costa Rica, England, Sweden, Germany, Netherlands, South Korea, Japan x2). 2025 First-Team All-American Fabian Arroyo (Costa Rica) is now a sophomore, having arrived as a freshman — a real freshman-to-All-American pipeline at the reigning national champions.",
       "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (all 14 MFs) finishes before Olivier enters in August 2027. Zero roster overlap. Olivier competes entirely against the 2026 recruiting class that Newton assembles. National champion program means Newton recruits elite JUCO talent globally — expect strong competition for midfield spots. Key question for coach: How many central midfielders are in your 2026 class?",
       "trajectory": [
         {
@@ -1681,6 +1697,8 @@
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "recruit_risk": "Medium",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "11 of the 13 current MFs (85%) are true freshmen with no prior college listed — the heaviest international freshman intake of any JUCO in the guide (Germany x3, South Africa, Jamaica, Denmark, Switzerland, South Korea, and an Australian from Melbourne). Freshman entry is clearly the norm, not the exception.",
       "trajectory": [
         {
           "year": 2027,
@@ -1761,6 +1779,8 @@
       ]
     },
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "6 all-time NJCAA DI National Championships (2009-2017); 2 2025 NJCAA All-Americans; #1 JUCO D1 transfer feeder nationally",
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree — transfer prerequisite pathway"
   },
@@ -1925,6 +1945,8 @@
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "recruit_risk": "Low",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "4 of the 7 current MFs (57%) are true freshmen, split roughly evenly between US high school recruits (New Smyrna Beach FL, Gainesville FL) and African/South American internationals (Gambia, Ghana, Uruguay) — a more balanced US/international freshman intake than Tyler JC or Iowa Western, still freshman-entry-friendly but less internationally academy-heavy.",
       "trajectory": [
         {
           "year": 2027,
@@ -2006,6 +2028,8 @@
       ]
     },
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2025 NJCAA DI National Championship runners-up; 3 2025 NJCAA All-Americans",
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree — transfer prerequisite pathway"
   },
@@ -2022,6 +2046,8 @@
     "city": false,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "Ranked #4 nationally (2025); 2025 NJCAA DI National Tournament qualifier; 1 2025 NJCAA All-American",
     "profileDepth": "full",
     "color": [
       "#dbeafe",
@@ -2276,6 +2302,8 @@
     "city": false,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2025 #4-5 nationally ranked; 3 2025 NJCAA All-Americans; NJCAA DI National Runner-Up (historical)",
     "profileDepth": "full",
     "color": [
       "#fed7aa",
@@ -2522,6 +2550,8 @@
     "city": false,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "Ranked #2 nationally (NJCAA DI, Oct 2025)",
     "profileDepth": "full",
     "color": [
       "#fee2e2",
@@ -2776,6 +2806,8 @@
     "city": false,
     "top": false,
     "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2024-25 NJCAA DI National Tournament semifinalist (Final Four); back-to-back tournament appearances",
     "profileDepth": "full",
     "color": [
       "#fef3c7",

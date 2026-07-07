@@ -519,7 +519,7 @@ confRecord[{ yr, pos, note }],
 titles[], proPlayers{}
 ```
 
-For JUCO schools, also add: `"juco2yr": true`
+For JUCO schools, also add: `"juco2yr": true`, `"jucoTier": "Elite" | "Standard"`, and `"jucoTierNote"` (added v37.4 — informational badge only, NO Fit Score cascade; classification basis: 2025-season national title/runner-up, top-5 national ranking, 2+ 2025 NJCAA All-Americans, or recent historical dominance, verified via official NJCAA.org All-America team list). Every JUCO school has `jucoTier` set explicitly — currently 9 of 12 are "Elite", 3 are "Standard". The Elite badge only renders on cards/modal when `jucoTier==='Elite'`; "Standard" schools show no badge at all.
 
 **Field gotchas (verified against the renderers, July 2026):**
 - `kinRank` — one-line program-ranking blurb shown in the modal Degree tab. REQUIRED on every full profile: the renderer prints it unguarded, so a missing field displays the literal text "undefined". (Was missing on 45 v25-batch schools; backfilled v36.7.)

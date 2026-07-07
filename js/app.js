@@ -647,12 +647,11 @@ function buildCard(u){
   const confShort=u.conf.split(' ')[0];
   const locShort=u.loc.split(',').slice(-2).join(',').trim();
   const topBadge=u.top?'<div class="tp-badge">★ TOP PICK</div>':'';
-  const eliteJucoBadge=(u.div==='JUCO'&&u.jucoTier==='Elite')?'<div class="elite-juco-badge" title="'+(u.jucoTierNote||'').replace(/"/g,'&quot;')+'">🏆 ELITE JUCO</div>':'';
+  const eliteJucoChip=(u.div==='JUCO'&&u.jucoTier==='Elite')?'<span class="elite-juco-chip" title="'+(u.jucoTierNote||'').replace(/"/g,'&quot;')+'">🏆 Elite JUCO</span>':'';
   const inSchol=selectedIds.has(u.id);
 
   el.innerHTML=
     topBadge+
-    eliteJucoBadge+
     '<div class="card-head2">'+
       buildEmblemHtml(u, 'card-av-size')+
       '<div class="card-id">'+
@@ -662,7 +661,7 @@ function buildCard(u){
           '<span style="color:var(--hint)">'+confShort+'</span>'+
           (u.njcaaRegion?'<span style="color:var(--hint)" title="'+(u.njcaaRegionArea||'')+'">· '+u.njcaaRegion+'</span>':'')+
           '<span>📍'+locShort+'</span>'+
-          warmTag+cityTag+
+          warmTag+cityTag+eliteJucoChip+
         '</div>'+
       '</div>'+
     '</div>'+

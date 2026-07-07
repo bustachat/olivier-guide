@@ -658,7 +658,7 @@ function buildCard(u){
     '</div>'+
     ivyWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item" data-tip="Fit Score: Overall match for Olivier across soccer level, minutes outlook, cost, ACU degree alignment, climate, and city lifestyle. 90%+ = excellent fit."><div class="ss-val" id="fit-'+u.id+'" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item" data-tip="Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). 90%+ = excellent soccer/lifestyle opportunity."><div class="ss-val" id="fit-'+u.id+'" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item" data-tip="Dev Score: Average of 3 soccer development sub-scores — Tactical, Technical, and Fitness Programming. Reflects how well the program will develop Olivier as a player."><div class="ss-val" style="color:'+(devAvg===null?'var(--hint)':sc(devAvg))+'">'+(devAvg===null?'—':devAvg+'%')+'</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item" data-tip="ACU Alignment: How many of Olivier\'s 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial."><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
@@ -1328,7 +1328,7 @@ function buildDetailBody(u){
       <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
           <div id="modal-fit-score" style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}">${u.fitOlivier}%</div>
-          <p style="font-size:13px;color:var(--muted)">${u.rec||'Overall fit score based on soccer level, minutes outlook, cost, ACU alignment, climate, and city lifestyle.'}</p>
+          <p style="font-size:13px;color:var(--muted)">${u.rec||'Fit score based on soccer program quality, minutes outlook, climate, and city lifestyle.'}</p>
         </div>
       </div>
     </div>

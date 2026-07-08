@@ -102,7 +102,11 @@
       "academicLabs": "UVA Department of Kinesiology: anatomy lab with cadavers, biomechanics lab (full 3D capture), exercise physiology with 8 metabolic carts, motor learning and control lab. Pre-PT advising through the Curry School of Education. UVA School of Medicine anatomy access.",
       "extras": "Scott Stadium (UVA football — 61,500 capacity) and John Paul Jones Arena (basketball) create an elite athletic culture on campus. Nameless Field natural grass pitch for open training. Historic Rotunda, Lawn, and UNESCO campus setting. UVA Aquatic & Fitness Center. $2.1B UVA research infrastructure accessible to undergraduates.",
       "rating": "Elite",
-      "note": "Virginia's McCue Center and Sports Performance Lab represent one of the top 5 athletic facilities environments in this entire guide. Combined with Klöckner Stadium's atmosphere and UVA Medical Center access, this is a premier development environment."
+      "note": "Virginia's McCue Center and Sports Performance Lab represent one of the top 5 athletic facilities environments in this entire guide. Combined with Klöckner Stadium's atmosphere and UVA Medical Center access, this is a premier development environment.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for all incoming first-years, with only narrow exemptions (married, single parent, non-traditional age). Verified v38 via official housing.virginia.edu."
+      }
     },
     "coach": {
       "name": "George Gelnovatch",
@@ -379,7 +383,11 @@
       "academicLabs": "HES (Health and Exercise Science) Department: 4 teaching labs including biomechanics, exercise physiology, motor behaviour, and sport/exercise psychology. Wake Forest Baptist Medical proximity is genuinely unique — Olivier could be observing DPT sessions in a major medical centre while competing in the ACC.",
       "extras": "Sutton Center athletic complex with exclusive athlete dining. Wake Forest Reynolds Gym open to athletes. Small campus (8,500 students) means no queue for facilities — access is always available. Winston-Salem proximity to Charlotte (1.5hr) for big-city access.",
       "rating": "Very Good",
-      "note": "Wake Forest's standout facility advantage is Wake Forest Baptist Medical Center — its proximity and the kinesiology department's clinical placement relationship make it genuinely unique for a pre-PT student. The athletic performance center is excellent for a small D1 program."
+      "note": "Wake Forest's standout facility advantage is Wake Forest Baptist Medical Center — its proximity and the kinesiology department's clinical placement relationship make it genuinely unique for a pre-PT student. The athletic performance center is excellent for a small D1 program.",
+      "housing": {
+        "available": true,
+        "note": "Six-semester (3-year) residency requirement; university guarantees 8 semesters of housing for students in good standing. Exemptions limited (local Forsyth/contiguous-county family address). Verified v38 via official rlh.wfu.edu."
+      }
     },
     "coach": {
       "name": "Bobby Muuss",
@@ -671,7 +679,11 @@
       "academicLabs": "SMU Dedman College Applied Physiology labs: exercise physiology, biomechanics, health management computing. Meadows Museum access (arts). SMU's proximity to the Koons Health and Sciences Centre provides pre-health students outstanding advising resources.",
       "extras": "AT&T Stadium (Cowboys) and American Airlines Center (Mavericks/Stars) — two of the best sports venues in America within 20 minutes. FC Dallas Toyota Stadium tour and training facility access for SMU soccer players. SMU campus itself is one of the most beautiful in Texas — manicured lawns, Georgian architecture.",
       "rating": "Very Good",
-      "note": "Westcott Field was renovated for SMU's ACC entry — the stadium infrastructure is improving rapidly. The FC Dallas analytics partnership is a unique professional-standard exposure not found at most D1 programs."
+      "note": "Westcott Field was renovated for SMU's ACC entry — the stadium infrastructure is improving rapidly. The FC Dallas analytics partnership is a unique professional-standard exposure not found at most D1 programs.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for all full-time first-years (one year, reduced from two starting Fall 2025); exemptions rare (local Dallas hardship, married, 21+). Verified v38 via official smu.edu/studentaffairs/housing."
+      }
     },
     "coach": {
       "name": "Kevin Hudson",
@@ -1005,7 +1017,11 @@
       "sportsMed": "Duke Sports Medicine is consistently rated among the top university sports medicine programs in the USA. Duke University Hospital (Top 10 nationally) for complex orthopaedic cases. Multiple certified ATCs assigned to soccer. The proximity to Duke Health makes this one of the best clinical environments in the guide.",
       "academicLabs": "Duke Kinesiology: anatomy lab with cadaver access (Duke Med), biomechanics motion capture lab, exercise physiology testing suites, sport psychology research facilities. Pre-PT students benefit from informal pathways into Duke's DPT program — a top-5 DPT program nationally.",
       "extras": "Cameron Indoor Stadium creates one of the most electric athletic cultures in America. Wallace Wade Stadium (football) and Cameron's Blue Devil identity are part of the experience. Duke's research infrastructure ($1.4B+ annually) provides undergraduate research opportunities rare at peer institutions.",
-      "note": "Playing surface renamed Freeman Field 2025. Top-tier Duke athletic infrastructure next door — Cameron Indoor, Wallace Wade football complex with S&C and sports medicine. Strong atmosphere for big ACC matches."
+      "note": "Playing surface renamed Freeman Field 2025. Top-tier Duke athletic infrastructure next door — Cameron Indoor, Wallace Wade football complex with S&C and sports medicine. Strong atmosphere for big ACC matches.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory 3-year (6-semester) residency requirement, guaranteed for all full-time undergraduates in good standing; seniors may live off-campus. Verified v38 via official students.duke.edu/living/housing."
+      }
     },
     "minutesOutlook": {
       "available": true,
@@ -1253,7 +1269,11 @@
       "sportsMed": "NC State Athletics Sports Medicine — dedicated athletic trainer for soccer program. WakeMed and UNC Health access for specialist orthopaedics. Solid sports medicine coverage appropriate for ACC competition.",
       "academicLabs": "Dept of Exercise and Sport Science: anatomy and physiology teaching labs, biomechanics lab, fitness assessment suite, sport and exercise psychology lab. NC State's STEM focus supports pre-PT pathway research.",
       "extras": "Carter-Finley Stadium (57,500 cap), PNC Arena (Hurricanes NHL), Wolfpack Sports complex. Raleigh's city amenities — pro sports, restaurants, cycling trails — extend the campus experience into a dynamic urban environment.",
-      "note": "Wolfpack Training Complex adjacent: grass field, turf field, lights, dedicated locker rooms and sports medicine facility. Solid ACC support infrastructure despite shared use with track."
+      "note": "Wolfpack Training Complex adjacent: grass field, turf field, lights, dedicated locker rooms and sports medicine facility. Solid ACC support infrastructure despite shared use with track.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for first-year students; exemptions limited to disability/medical need, religious requirements, or living with parents within 15 miles. Verified v38 via official housing.dasa.ncsu.edu."
+      }
     },
     "minutesOutlook": {
       "available": true,
@@ -1502,7 +1522,11 @@
       "sportsMed": "UofL Athletics Sports Medicine — certified ATCs for soccer. UofL Health is one of the largest regional medical systems in the South with Level 1 Trauma and a dedicated sports medicine clinic. Orthopaedic and surgical access is among the best at any public ACC school.",
       "academicLabs": "Department of Exercise Science: biomechanics lab, exercise physiology testing suites, anatomy cadaver lab access. UofL Health's DPT program creates genuine clinical placement opportunities for pre-PT students — a real differentiator at this cost point.",
       "extras": "KFC Yum! Center (Louisville basketball arena), Cardinal Stadium (football). Louisville City FC connection for soccer culture. NuLu creative district gives the campus urban creative energy atypical of comparable Midwest schools.",
-      "note": "15,320 sqft on-site training centre: dedicated locker rooms, sports medicine room, 830 sqft video/meeting room, indoor warm-up area. One of the best mid-major soccer facility packages in the ACC."
+      "note": "15,320 sqft on-site training centre: dedicated locker rooms, sports medicine room, 830 sqft video/meeting room, indoor warm-up area. One of the best mid-major soccer facility packages in the ACC.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory first-year live-on requirement; automatic exemptions only for local KY/IN counties or age 21+. Verified v38 via official louisville.edu/housing."
+      }
     },
     "minutesOutlook": {
       "available": true,
@@ -1751,7 +1775,11 @@
       "sportsMed": "UPMC — University of Pittsburgh Medical Center — is one of the top 5 sports medicine systems in the world. Olympic and professional athletes travel to UPMC for orthopaedic procedures. Pitt student-athletes access UPMC orthopaedics, sports science, and rehabilitation that most D1 programs can only read about.",
       "academicLabs": "Pitt's Dept of Exercise Science in the Dietrich School: anatomy lab with full cadaver access, biomechanics motion capture lab, exercise physiology suites, motor control lab, sport psychology training rooms. Pre-PT advising is integrated — Pitt runs a top-15 DPT program.",
       "extras": "Heinz Field (Pittsburgh Steelers) 2km, PNC Park (Pirates), PPG Paints Arena (Penguins). Pittsburgh's unique hillside geography and three-river setting are unlike any other college city in the guide.",
-      "note": "3rd floor added 2020 with video room, team lounge and coaches suites. Pitt main athletic S&C facilities accessible across campus. Compact urban campus facility — solid but limited by shared use and small capacity."
+      "note": "3rd floor added 2020 with video room, team lounge and coaches suites. Pitt main athletic S&C facilities accessible across campus. Compact urban campus facility — solid but limited by shared use and small capacity.",
+      "housing": {
+        "available": true,
+        "note": "Guaranteed (not strictly mandatory) for qualifying first-year fall-term students who meet application/deposit deadlines; guarantee extends to 2 years for incoming classes from Fall 2026. Verified v38 via official pc.pitt.edu (Panther Central)."
+      }
     },
     "minutesOutlook": {
       "available": true,
@@ -2006,7 +2034,11 @@
       "sportsMed": "Stanford Sports Medicine is a research institution, not just a treatment service. Stanford Medical Center (top-5 hospital globally) means student-athletes access cutting-edge sports injury management, return-to-play research, and concussion protocols that other programs read about.",
       "academicLabs": "Stanford's Human Biology major accesses research labs across multiple schools — neuroscience labs in Beckman Center, physiology labs in Clark Center, biomechanics in the Neuromuscular Biomechanics Lab. Pre-PT shadowing at Stanford Health Care's outpatient DPT clinics is available.",
       "extras": "Stanford's 8,000-acre campus includes the Hoover Institution, SLAC National Accelerator, engineering quad, and multiple world-class sports facilities (swimming, tennis, football). Apple Park, Googleplex, and Meta HQ are 20-30 minutes away.",
-      "note": "Modest stadium capacity but world-class Stanford athletic ecosystem — elite S&C, Rathbun Training Center sports medicine, performance science. Natural grass surface preferred by national teams. Stanford program prestige offsets small stadium."
+      "note": "Modest stadium capacity but world-class Stanford athletic ecosystem — elite S&C, Rathbun Training Center sports medicine, performance science. Natural grass surface preferred by national teams. Stanford program prestige offsets small stadium.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for first-year students (explicit residency requirement); guaranteed housing for 12 quarters across the degree. Verified v38 via official rde.stanford.edu."
+      }
     },
     "minutesOutlook": {
       "available": true,
@@ -2268,7 +2300,11 @@
       "sportsMed": "Upstate Medical University (SUNY) affiliation gives student-athletes access to specialist sports medicine above typical D1 standards. Full-time ATCs on staff and team physician for game days.",
       "academicLabs": "Falk College of Sport and Human Dynamics: Exercise Science major includes biomechanics lab, anatomy/physiology labs, sport performance testing centre. Falk's sport management facilities are a unique additional asset for future career pathways.",
       "extras": "JMA Wireless Dome (35,000+ capacity) — one of the most recognisable venues in college sport. Syracuse's sport management legacy (ESPN, Nike executives trace career roots here). New York City 4.5hrs direct train.",
-      "note": "The 2022 NCAA Championship validates program quality. The SU Soccer Stadium's intimate atmosphere and Falk College's academic reputation make this a well-rounded D1 program — climate is the single Olivier-specific concern."
+      "note": "The 2022 NCAA Championship validates program quality. The SU Soccer Stadium's intimate atmosphere and Falk College's academic reputation make this a well-rounded D1 program — climate is the single Olivier-specific concern.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for first- and second-year students (2 years), with a commuting exemption only if immediate family lives in the Syracuse area. Verified v38 via official housingmealplans.syr.edu."
+      }
     },
     "minutesOutlook": {
       "available": true,
@@ -2519,7 +2555,11 @@
       "sportsMed": "Cal's sports medicine department is connected to UCSF (UC San Francisco) Health — one of the top medical schools in the world. Access to orthopaedic specialists and sports medicine physicians via UCSF partnership. Full-time ATCs on soccer roster.",
       "academicLabs": "Division of Biological Sciences and Public Health: physiology and human movement labs, biomechanics research lab in Movement Sciences. Pre-PT pathways supported through UCSF's DPT program connections — one of the top 10 DPT programs nationally.",
       "extras": "Cal Memorial Stadium (63,000 cap), Haas Pavilion basketball arena, the RSF complex. Berkeley's location makes the entire Bay Area essentially an extension of campus — BART from campus to downtown SF in 30 min.",
-      "note": "Goldman Field's setting inside historic Edwards Stadium is architecturally distinctive. The Bay Area location and UCSF clinical connection make Cal one of the most lifestyle-positive and clinically-advantaged options in the entire guide for a pre-PT student."
+      "note": "Goldman Field's setting inside historic Edwards Stadium is architecturally distinctive. The Bay Area location and UCSF clinical connection make Cal one of the most lifestyle-positive and clinically-advantaged options in the entire guide for a pre-PT student.",
+      "housing": {
+        "available": true,
+        "note": "Not mandatory, but incoming first-years (2026-27) are guaranteed a housing offer for their first 2 years if deadlines are met; international students also have access to the dedicated International House community. Verified v38 via official housing.berkeley.edu."
+      }
     },
     "minutesOutlook": {
       "available": true,
@@ -2749,7 +2789,11 @@
       "sportsMed": "Full-time certified AT staff, team physician, sports psychology support. Recovery facilities — hydrotherapy, cryotherapy, altitude simulation. MUSC accelerated DPT pathway gives direct clinical exposure.",
       "extras": "Riggs Field atmosphere on gameday is elite. Lake Hartwell adjacent — boating, kayaking. Greenville, SC (45min) is ranked one of the best mid-size cities in the Southeast. Atlanta access. Blue Ridge hiking.",
       "rating": "Elite",
-      "note": "Clemson offers one of the best overall packages in college soccer — elite facilities, elite coaching, elite degree for PT pathway, warm climate. The trade-off is a small-town setting and high competition for playing time (4 players drafted in first round in 2026 alone)."
+      "note": "Clemson offers one of the best overall packages in college soccer — elite facilities, elite coaching, elite degree for PT pathway, warm climate. The trade-off is a small-town setting and high competition for playing time (4 players drafted in first round in 2026 alone).",
+      "housing": {
+        "available": true,
+        "note": "Mandatory and guaranteed for all first-year/Bridge students; exemption only for living with parents in the 3 counties surrounding campus (Anderson, Pickens, Oconee). Verified v38 via official housing.clemson.edu."
+      }
     },
     "coach": {
       "name": "Mike Noonan",
@@ -3024,7 +3068,11 @@
       "sportsMed": "Notre Dame Sports Medicine — full-time staff, team physicians. University of Notre Dame Health (Beacon Health System partnership) for clinical observation.",
       "extras": "Notre Dame campus is one of the most beautiful in the US. Grotto of Our Lady iconic. Touchdown Jesus. Football gamedays are a unique experience. Chicago access for big-city weekends.",
       "rating": "Elite",
-      "note": "Notre Dame is elite in every dimension — facilities, academics, soccer tradition. The main negatives for Olivier are cold winters, non-city setting, and the very high academic bar (GPA 2.8 is challenging for 13% acceptance rate university)."
+      "note": "Notre Dame is elite in every dimension — facilities, academics, soccer tradition. The main negatives for Olivier are cold winters, non-city setting, and the very high academic bar (GPA 2.8 is challenging for 13% acceptance rate university).",
+      "housing": {
+        "available": true,
+        "note": "Mandatory on-campus residency for the first 6 semesters (through junior year); exemptions only case-by-case. Verified v38 via official residentiallife.nd.edu."
+      }
     },
     "coach": {
       "name": "Chad Riley",
@@ -3278,7 +3326,11 @@
       "sportsMed": "UNC Sports Medicine — full-time staff. UNC Health (one of NC's top academic medical systems) and Duke Medical (Durham) proximity provide exceptional clinical observation access for pre-PT students.",
       "extras": "Franklin Street, the Pit, Dean Dome — iconic UNC campus culture. ACC rivalry games (Duke, NC State). Research Triangle job market strongest in the Southeast. Blue Ridge Parkway hiking access.",
       "rating": "Excellent",
-      "note": "New 2019 build with permanent chairback seating, full locker rooms and team offices. Connects to Football Practice Complex providing S&C and sports medicine access. Strong fan atmosphere in Chapel Hill."
+      "note": "New 2019 build with permanent chairback seating, full locker rooms and team offices. Connects to Football Practice Complex providing S&C and sports medicine access. Strong fan atmosphere in Chapel Hill.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory and guaranteed for all first-year students (on-campus halls or Granville Towers) for the full first academic year. Verified v38 via official housing.unc.edu."
+      }
     },
     "coach": {
       "name": "Carlos Somoano",

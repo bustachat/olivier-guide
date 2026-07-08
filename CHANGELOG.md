@@ -6,6 +6,26 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v38.2 – v38.12 (July 2026) — Housing research for all 81 non-JUCO schools + 2 more Standings/Titles gap sweeps
+Direct continuation of the v38.1 accuracy work. Two threads:
+
+**Housing (the originally-deferred v37.7 item, now closed):** `facilityDetails.housing` researched and populated for all 81 non-JUCO schools, batched by conference file and committed/pushed after each (AAC, ACC, Big Ten, Big East, Big West, CAA, d1-other, d2/NAIA/D3, Ivy — 9 commits, v38.2 through v38.8 plus v38.11/v38.12). All Tier-1 verified via each school's official housing/residence-life page. Outcome matches the expected low-yield: nearly every school has real on-campus housing, most with a mandatory first-year or multi-year live-on policy. Two genuine `"limited"` flags found (real housing exists but nothing is guaranteed for a late-committing international recruit): **CSU Fullerton** (no live-on requirement, no guarantee, first-come-first-served) and **Cal State LA** (same pattern, explicitly commuter-heavy campus). One data-integrity discovery made in passing: **Keiser University's** actual athletics campus (Seahawks, Vecellio Field) is in West Palm Beach, not Fort Lauderdale as this profile's `loc`, `culture`, `facilityDetails`, `coach.profile`, and `rec` fields all say — 12 occurrences of the wrong city. Housing itself was verified at the correct (Flagship/West Palm Beach) campus and flagged inline; the full location correction (loc/region/mapX/mapY/text fields) was deliberately left as a separate follow-up rather than folded into a housing-field commit — added to §6 deferred items below.
+
+**Standings/Titles, round 2 (v38.9, v38.10):** the owner asked why Iowa Western and Northeast CC still looked unresearched after v38.1 — turned out the original scan only caught schools explicitly self-flagged "not researched this session," missing schools where `confRecord` just repeated an identical generic label every year with no real detail. A follow-up scan for that exact signature (zero position variation across 3+ years) found 7 candidates across all 93 schools; 2 were false positives (Hofstra "CAA Champs" ×6 and Denver "Summit Champs" ×5 are both genuine, well-documented dynasties). The other 5 were real, and two turned out to be major finds:
+- **Northeast CC**: 2024 NJCAA DII National Champions (first title in program history) — completely absent from the data, which also had `jucoTier` wrongly set to "Standard" with a note claiming no national result existed.
+- **Iowa Western**: two undefeated-or-near-it ICCAC DI regular season titles (23-0-2 in 2024, 20-1-1 in 2021) — plus a wrong conference label ("Mon-Dak," an unrelated Montana/North Dakota conference) corrected to ICCAC/Region 11.
+- **Cal State LA**: actual 2021 NCAA Division II National Champions (beat Charleston WV 1-0) — was labeled "Mid CCAA" for all 5 years.
+- **University of Charleston (WV)**: 2024 NCAA D2 national runner-up (lost to Lynn 3-2) plus MEC double champions that year, and one of the most decorated D2 programs nationally overall (6 title-game appearances since 2014, 1 win) — was labeled "Mid MEC" for all 5 years.
+- Temple, Georgian Court, and Columbia College (MO) got smaller real fixes (an AAC tournament berth and worst-ever season, a CACC runner-up finish, and an entire missing 2025 conference championship, respectively).
+
+Where exact older-year records (2021–2023) couldn't be re-verified at Tier-1 within session budget, entries were marked "not re-verified v38 — retained from prior session" rather than guessed.
+
+**Total for this session (v38.1–v38.12):** 12 commits, all pushed and verified locally in the browser before each push (modal Standings & Titles tabs and housing display checked, zero console errors throughout). `node validate_consistency.js` held at the 1 known baseline issue (Stony Brook coach name) across every single commit — no regressions introduced. `validate_schools.py` could not run all session (no Python interpreter in either shell on this machine) — none of the session's edits touch fields that script checks.
+
+- guideVersion bumped to v38.12 in athletes/olivier.json.
+
+---
+
 ### v38.1 (July 2026) — Standings & Titles accuracy pass, batch 1 of N
 Owner asked for a full review of every school's Standings/Titles data (informational, no Fit Score cascade) since some schools were flagged as under-researched — starting with the 6 AAC schools that had empty `titles[]` and the 5 JUCO schools whose `confRecord[]` had self-flagged "not researched this session" placeholders from earlier sessions. Housing research for the 81 non-JUCO schools is the next batch (separate item, tracked in §6 deferred list).
 

@@ -305,6 +305,114 @@
     {
       "rank": null,
       "rankClass": null,
+      "school": "Tyler JC",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "6x NJCAA champion 2009-17",
+      "yearsStyle": "chip-green",
+      "notes": "#1 JUCO D1 transfer feeder nationally, all-time record. Heaviest international freshman recruiting of any JUCO in the guide (Germany, South Africa, Jamaica, Denmark, Switzerland, Korea, Australia)."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Indian Hills",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2025 NJCAA champion",
+      "yearsStyle": "chip-green",
+      "notes": "Defeated Daytona State 1-0 in the 2025 final. 2025 First-Team All-American Fabian Arroyo. Two Australians on current roster (Brisbane, Melbourne)."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Monroe College",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "3x NJCAA champion 2021-23",
+      "yearsStyle": "chip-green",
+      "notes": "2024 runner-up. \"NJCAA's most dominant JUCO program nationally.\" Confirmed pro pipeline — USL Championship, USL League One, MLS Next Pro alumni."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Daytona State",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2025 NJCAA runner-up",
+      "yearsStyle": "chip-purple",
+      "notes": "Lost 1-0 to Indian Hills in the 2025 final. 3 2025 NJCAA All-Americans."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Cowley CC",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2025 #4-5 nationally",
+      "yearsStyle": "chip-purple",
+      "notes": "3 2025 NJCAA All-Americans (1st/2nd/3rd team). KJCCC regular-season champions."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Barton CC",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2025 #4 nationally",
+      "yearsStyle": "chip-purple",
+      "notes": "2025 NJCAA DI National Tournament qualifier, KJCCC runner-up. 1 2025 NJCAA All-American."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Arizona Western",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2025 #2 nationally",
+      "yearsStyle": "chip-purple",
+      "notes": "Ranked #2 nationally NJCAA DI, Oct 2025. Back-to-back Region I champions."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "EFSC",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2024-25 Final Four",
+      "yearsStyle": "chip-purple",
+      "notes": "NJCAA DI National Tournament semifinalist, back-to-back tournament appearances (2024-25, 2025-26). 13 players advanced to 4-year programs in 2025."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Iowa Western",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2 2025 All-Americans",
+      "yearsStyle": "chip-purple",
+      "notes": "2025 First-Team NJCAA All-Americans Efraims Valutadatils (Latvia) and Caden Johnson. 100% roster turnover before 2027 — clean slate entry."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
       "school": "Santa Monica",
       "badge": "JUCO",
       "badgeClass": "d-JUCO",
@@ -312,7 +420,7 @@
       "titlesColor": "muted",
       "years": "Transfer pathway",
       "yearsStyle": "hint",
-      "notes": "Proven pipeline → UCLA / UCSB. ~$9k/yr cost. 2yr stepping stone."
+      "notes": "Proven pipeline → UCLA / UCSB. ~$9k/yr cost. 2yr stepping stone. No on-campus housing — commuter college."
     },
     {
       "rank": null,
@@ -324,19 +432,19 @@
       "titlesColor": "muted",
       "years": "Transfer pathway",
       "yearsStyle": "hint",
-      "notes": "Transfer → Barry / FIU. ~$11k/yr. South Florida warm climate."
+      "notes": "Transfer → Barry / FIU. ~$11k/yr. South Florida warm climate. No on-campus housing — commuter college."
     },
     {
       "rank": null,
       "rankClass": null,
-      "school": "Iowa Western",
+      "school": "Northeast CC",
       "badge": "JUCO",
       "badgeClass": "d-JUCO",
       "titles": "—",
       "titlesColor": "muted",
       "years": "Transfer pathway",
       "yearsStyle": "hint",
-      "notes": "100% roster turnover before 2027. Transfer → Midwest D1/D2. Clean slate entry."
+      "notes": "NJCAA Division II — 2-year transfer pathway to D1/D2/NAIA. Near-100% international roster."
     }
   ],
 
@@ -494,6 +602,16 @@
     {
       "rank": "—",
       "rankClass": null,
+      "school": "Monroe College",
+      "badge": "JUCO",
+      "badgeClass": "d-JUCO",
+      "picks5yr": 2,
+      "notable": "Alumni signed with USL Championship, USL League One, and MLS Next Pro clubs — NYC metro pipeline (NYCFC, NY Red Bulls proximity)",
+      "allTime": "3x NJCAA DI National Champions (2021-2023), 2024 runner-up — strongest confirmed pro pipeline of any JUCO in the guide, matching Princeton's recent picks count"
+    },
+    {
+      "rank": "—",
+      "rankClass": null,
       "school": "FAU",
       "badge": "D1 AAC",
       "badgeClass": "d-D1",
@@ -534,12 +652,12 @@
     {
       "rank": "19",
       "rankClass": null,
-      "school": "Iowa Western CC",
-      "badge": "JUCO",
+      "school": "Tyler JC / Iowa Western / Indian Hills / Daytona State / Cowley CC / Barton CC / Arizona Western / EFSC",
+      "badge": "Elite JUCO",
       "badgeClass": "d-JUCO",
       "picks5yr": 0,
-      "notable": "Transfer pathway → D1/D2 programs across Midwest",
-      "allTime": "100% roster turnover before 2027 — clean slate entry"
+      "notable": "No confirmed MLS SuperDraft picks in the last 5 years — value is national-tier competitiveness and D1 transfer volume, not direct-to-MLS",
+      "allTime": "8 combined NJCAA DI national titles/runner-ups/top-5 rankings since 2009 (Tyler JC 6x champion 2009-2017, Indian Hills 2025 champion, Daytona State 2025 runner-up, Arizona Western #2 nationally Oct 2025). 100% roster turnover before 2027 — clean slate entry at every one."
     },
     {
       "rank": "—",
@@ -554,12 +672,12 @@
     {
       "rank": "—",
       "rankClass": null,
-      "school": "Santa Monica / Miami Dade",
+      "school": "Santa Monica / Miami Dade / Northeast CC",
       "badge": "JUCO",
       "badgeClass": "d-JUCO",
       "picks5yr": 0,
-      "notable": "Transfer stepping stones — pro pathway via destination school",
-      "allTime": "Pipeline value comes from UCLA/UCSB/Barry/FIU transfer destinations"
+      "notable": "Transfer stepping stones — pro pathway via destination school, not a national-title program",
+      "allTime": "Pipeline value comes from UCLA/UCSB/Barry/FIU transfer destinations rather than the JUCO program itself"
     }
   ]
 }

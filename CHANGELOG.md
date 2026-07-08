@@ -6,6 +6,23 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v38.1 (July 2026) — Standings & Titles accuracy pass, batch 1 of N
+Owner asked for a full review of every school's Standings/Titles data (informational, no Fit Score cascade) since some schools were flagged as under-researched — starting with the 6 AAC schools that had empty `titles[]` and the 5 JUCO schools whose `confRecord[]` had self-flagged "not researched this session" placeholders from earlier sessions. Housing research for the 81 non-JUCO schools is the next batch (separate item, tracked in §6 deferred list).
+
+- **AAC titles[] populated for 6 schools** (Tulsa, Memphis, Temple, UAB, Navy, Army) — all were empty, unclear whether that meant "genuinely no titles" or "never researched." Verified via NCAA.com (Tier 1, official governing body) and the AAC's own official site (theamerican.org, Tier 1) where obtainable; Wikipedia used only where the official athletics site was JS-rendered and not fetchable this session (Tulsa, UAB), cross-checked against NCAA.com and, for Temple, an official Temple Athletics Media Guide citation — flagged inline as "pending direct Tier-1 confirmation" where a live official page could not be reached.
+- **Real data-accuracy bug found and fixed:** Memphis's 2024 `confRecord` entry was miscoded as `"Lower AAC" / "AAC conference play"` — official AAC site (theamerican.org) confirms Memphis actually won the outright 2024 AAC regular season championship as the No. 1 overall seed. Corrected the entry rather than just adding it to titles[].
+- **Mojibake fix:** Monroe College's titles[] had a double-encoded emoji (`ðŸ‡¦ðŸ‡º` instead of 🇦🇺) — same class of bug as the v28.2 encoding sweep, missed because it was added after that sweep ran. Fixed; swept the rest of `data/*.json` for the same pattern, found no other instances.
+- **JUCO confRecord gaps filled for 5 schools** (Barton CC, Cowley County CC, Arizona Western, EFSC, Daytona State) — all had years explicitly marked "exact standings not researched this session" from the v35 add-school session. Verified year-by-year against official conference sites (kjccc.org for KJCCC, accac.org for ACCAC, thefcsaasports.com for NJCAA Region 8/FCSAA) — all four are server-rendered and fetchable directly, unlike some of the AAC schools' JS-heavy Sidearm sites.
+- **Genuine unresolved discrepancy flagged, not silently resolved:** Eastern Florida State's existing data claims a 2021 Region 8 Championship win 2-0 over Daytona State, but the official 2021 regular-season Region 8 standings (thefcsaasports.com) show Daytona State finishing 1st (2-0 conference) and EFSC last (0-2) that year — i.e., EFSC lost both regular-season meetings. Per the project's own conflict-resolution rule (§15), noted the discrepancy in both schools' `confRecord[2021].note` rather than guessing which is right; needs direct verification (likely from an EFSC/Daytona State postseason box score) before the next pass touches either school.
+- **Cowley CC's "5× KJCCC Champions" title updated** from "per official program Instagram bio" sourcing to explicitly note that 2 of the 5 (2021, 2024) are now confirmed via official kjccc.org standings, with the remaining 3 still pending direct confirmation.
+- **Arizona Western's title count corrected**: was listed as "3× NJCAA Region I Champions" but the 2024 season (verified this session) was their 4th consecutive Region I title, meaning 2021–2024 were all Region I champions — updated to "4× consecutive."
+
+**Scope discipline:** did not re-verify the ~65 schools whose titles/confRecord were already populated (owner's call — full re-verification of all 93 is a separate, larger future pass if wanted). `node validate_consistency.js` still reports exactly 1 issue (Stony Brook coach name, unchanged baseline) — confirms no regressions from this batch. `validate_schools.py` could not be run this session (no Python interpreter available in either shell) — none of this batch's changes touch fields that script checks (ids, acuAlign, lens/dev keys, rankClass, coach ranks, facilityDetails, trajectory), only `titles[]`/`confRecord[]` string content, so this is a documented gap, not a skipped gate.
+
+- guideVersion bumped to v38.1 in athletes/olivier.json.
+
+---
+
 ### v37 — v37.0 through v37.10 (July 2026) — Fit Score redesign + JUCO enrichment pass
 Owner-driven redesign of the Fit Score, prompted by a simple observation: GPA and Cost already have dedicated toggles/tabs (ATAR slider, budget slider, Financial Model), and ACU Alignment has its own tab — blending all three into one "Fit" number alongside soccer/lifestyle factors was redundant at best, misleading at worst (e.g. Stanford sitting at 41% purely because of cost, pre-redesign).
 

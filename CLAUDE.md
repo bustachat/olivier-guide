@@ -677,6 +677,7 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
 - UCI roomBoard ($19,500) and total COA, and OCU costNum, are estimates pending Tier-1 confirmation
 - 6 Big East coach licence fields `null` — verify when contacting programs
 - recruit_pathway full pass across all 93 schools (see CHANGELOG.md v34)
+- `facilityDetails.housing` research for the 81 non-JUCO schools (v37.7 only covered the 12 JUCOs) — owner explicitly deferred this as its own session rather than doing it inline. Expect low yield (D1/D2/NAIA/D3 4-year colleges almost universally have on-campus housing) but still needs Tier-1 verification per research rules, not an assumption.
 
 ---
 

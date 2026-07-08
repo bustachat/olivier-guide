@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v37.3 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v37.10 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -316,6 +316,8 @@ Captures whether a school's midfield spots are typically filled by true incoming
 | `data/[conf].json` — proPlayers.mlsPicks5yr, titles[], proPlayers.draftRank | Powers school modal pipeline tab |
 | `data/conf-prestige.json` — conference mlsPipeline field | Conference prestige table MLS column |
 | `data/[conf].json` — lensScores.soccer | MLS picks factor into soccer lens — consider recalculating |
+
+**JUCO / NJCAA rule (confirmed v37.10):** JUCO national titles and rankings are **NJCAA** achievements, a completely separate governing body from **NCAA**. Never place a JUCO school in the ranked medal section of `ncaaD1[]` or `ncaaD2[]` (those are literally "NCAA championships" — mixing in NJCAA titles is a category error) — JUCO credentials belong only in the unranked/grouped section at the bottom of `ncaaD2[]` (labelled "NAIA, D3 & JUCO"), using `years`/`yearsStyle` chips (`chip-green` for actual NJCAA champions, `chip-purple` for rankings/All-Americans/tournament results) rather than the `titles`/medal-rank fields used for real NCAA champions. `mlsDraft[]` has no such restriction — MLS SuperDraft picks are picks regardless of the feeder program's governing body.
 
 **Tabs to verify after changing:**
 - Pro Pipeline — championship tables and MLS SuperDraft table updated
@@ -650,7 +652,7 @@ Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are delibera
 
 ## 6. Version History & Current State
 
-**Current version: v37.3 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
+**Current version: v37.10 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
@@ -663,6 +665,12 @@ Full per-version history lives in **CHANGELOG.md** — moved out of this file in
 - Compare tab's GPA row is live via `dynamicGpaStatus()` (v36.5) instead of a stored value — still relevant since GPA remains a first-class filter/toggle, just not a Fit Score input.
 - **v37.3 — all data fetches use `{ cache: 'no-store' }`** (`fetchWithRetry()` in app.js, the olivier.json fetch in dashboard.js). Discovered live: after the v37.1 schema change, Chrome kept serving a cached pre-v37.1 `athletes/olivier.json` even after closing the browser and Ctrl+Shift+R, producing NaN fit scores (new JS + old JSON, missing the new `soccerQuality` weight key) — Edge was unaffected. A hard reload reliably busts cache for `<script>` tags but not for `fetch()`-initiated requests in every browser. **Any new data-fetching code must keep `cache: 'no-store'`** — don't remove it for a caching "optimization" without solving this class of bug another way first.
 - **v37.9 — Dashboard "Top 8" panel is now strictly fitOlivier-ranked, no manual pinning.** The old `updateShortlist()` merged pinned `shortlist[]` entries first (★ TOP badge) then auto-filled remaining slots up to a cap of 8 by fitOlivier — but the pinned list had grown to 10 entries, already exceeding the cap, so the auto-fill-by-fit half never actually ran (JUCOs, or any non-pinned school regardless of score, could never appear). Owner chose to go fully dynamic rather than trim the pinned list. Removed with it: the per-card contact-status pill/dropdown (`saveSlStatus`/`getSlStatus`/`SL_STATUSES` — now dead code, deleted) — contact-status tracking lives in the separate Coaches Outreach tracker (`outreach[]`), unaffected. `shortlist[]` in olivier.json still exists and still drives the Dashboard map's "in shortlist" dot highlight — it just no longer pins cards in the Top 8 panel.
+- **v37.4-v37.10 — JUCO tiering, region, housing, and pipeline pass (all informational, zero Fit Score impact):**
+  - `jucoTier`: "Elite" | "Standard" + `jucoTierNote` on all 12 JUCO schools (v37.4), verified via NJCAA.org's official 2025-26 All-America team list + each school's own titles[]/confRecord — badge shows only for "Elite" (9 of 12), silent otherwise (same pattern as `top`/Top Pick).
+  - `njcaaRegion` + `njcaaRegionArea` on the 11 NJCAA-affiliated JUCOs (v37.5) — verified against NJCAA.org's official region list. **Santa Monica deliberately has no `njcaaRegion`** — it competes in CCCAA (California's own association), not NJCAA. A third-party regional-strength source consulted mid-session was wrong about Kansas (claimed "Region 11"; NJCAA's own page confirms Kansas is Region 6, Region 11 is Iowa+NE Nebraska only) — never trust a third-party regional grouping without checking njcaa.org directly.
+  - `facilityDetails.housing = { available, note }` on all 12 JUCOs (v37.7) — silent-unless-flagged display (only warns when `false`/`"limited"`, same pattern as Elite JUCO). 2 confirmed no housing (Santa Monica, Miami Dade — both commuter colleges, verified via each college's own FAQ), 1 limited (Daytona State — 67 units, waitlisted). **The 81 non-JUCO schools are unresearched** (deferred item, see below) — absent field means "not yet checked," not "confirmed has housing."
+  - Pro Pipeline tab (v37.10): all 12 JUCOs now represented in both the MLS SuperDraft table and the NCAA D2/NAIA/D3/JUCO table, replacing generic "transfer pathway" framing with real title/ranking credentials for the 8 Elite ones. See Change Type 7's JUCO/NJCAA rule above.
+  - All three UI elements (Elite JUCO chip, region tag, housing chip) live in the same flexible metadata row on cards, not the compact stat grid — that grid compresses badly at mobile width, learned live via prototype iteration with the owner before landing on the final placement.
 
 ### v36 fix backlog — CLOSED (July 2026)
 
@@ -878,7 +886,7 @@ File map: acc / big-ten / big-east / aac / big-west / caa / other
 - [ ] `domain` — athletics subdomain for favicon
 - [ ] `mapX`, `mapY` — from Phase 1 calculation
 - [ ] `profileDepth` — "full" or "listed"
-- [ ] `juco2yr: true` if JUCO
+- [ ] `juco2yr: true` if JUCO — and if JUCO, also research `jucoTier` ("Elite"/"Standard") + `jucoTierNote`, `njcaaRegion` + `njcaaRegionArea` (skip if not NJCAA-affiliated, e.g. CCCAA schools), and `facilityDetails.housing` (see §5 field gotchas for all three — added v37.4/v37.5/v37.7)
 
 *Academic & Cost:*
 - [ ] `degreeTitle`, `soccerLevel`, `size`, `prePT`

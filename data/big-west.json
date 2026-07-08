@@ -100,7 +100,11 @@
       "academicLabs": "UCSB Department of Kinesiology: teaching labs for biomechanics, motor learning, exercise physiology. Bren Hall science facilities available to kinesiology students. Marine Science Institute provides additional lab access. Pre-PT advising formally integrated into kinesiology program.",
       "extras": "UCSB Recreation Center (one of the most highly rated campus rec facilities in the USA) — climbing wall, Olympic pool, fitness studios. Team video room in Harder Stadium. Beach volleyball courts, surfboard rental, ocean swimming all on campus.",
       "rating": "Elite",
-      "note": "Largest stadium capacity in the guide. Hosted NCAA College Cup in 2010 and 2018. Now shares with USL League One professional club. UC system provides strong S&C and sports medicine support. Elite stadium presence for a Big West program."
+      "note": "Largest stadium capacity in the guide. Hosted NCAA College Cup in 2010 and 2018. Now shares with USL League One professional club. UC system provides strong S&C and sports medicine support. Elite stadium presence for a Big West program.",
+      "housing": {
+        "available": true,
+        "note": "Guaranteed for all incoming freshmen for the first year (not strictly mandatory); no guarantee beyond year 1. Verified v38 via official housing.ucsb.edu."
+      }
     },
     "coach": {
       "name": "Tim Vom Steeg",
@@ -405,7 +409,11 @@
       "academicLabs": "Kinesiology labs: biomechanics motion capture, exercise physiology metabolic testing. Learn-by-doing curriculum includes practicum placements at SLO physical therapy and rehabilitation clinics.",
       "extras": "San Luis Obispo — consistently ranked best college town in California. Wine country (Paso Robles 30 min), Pismo Beach (20 min), hiking Los Padres National Forest. Low cost of living. Bike-able campus. No gridlock traffic. Cal Poly Rec Center — Olympic pool, fitness facilities.",
       "rating": "Very Good",
-      "note": "Large-capacity shared stadium with quality surface. Football-first but 11,075 seats provides excellent atmosphere potential for soccer. Cal Poly Partners Plaza adds premium hospitality experience."
+      "note": "Large-capacity shared stadium with quality surface. Football-first but 11,075 seats provides excellent atmosphere potential for soccer. Cal Poly Partners Plaza adds premium hospitality experience.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for all first-time first-years; residency requirement extends to 2 years for all colleges starting with the 2026-27 admit class. Verified v38 via official housing.calpoly.edu."
+      }
     },
     "culture": {
       "vibe": "Cal Poly SLO — the most beloved college town in California. Hands-on, practical, no-pretension culture. 'Learn by doing' is a genuine institutional identity, not a slogan. Agriculture, engineering, and kinesiology all share the same practical ethos.",
@@ -675,7 +683,11 @@
       "academicLabs": "Exercise Biology labs: anatomy, physiology, biomechanics, motor control. UC Davis is ranked top-15 globally in biological sciences — the academic infrastructure is genuinely elite for pre-PT pathway.",
       "extras": "Davis is one of the most bike-friendly cities in the USA. Sacramento (30 min drive) — major city with Kings NBA, Sacramento Republic (USL), and major healthcare hub. Lake Tahoe day trip (2 hrs). Napa Valley wine country (1 hr).",
       "rating": "Good",
-      "note": "UC Davis' best asset is the combination of Tier 1 research-university academic infrastructure and UC Davis Medical Center clinical access — both well above what the soccer program's profile would suggest."
+      "note": "UC Davis' best asset is the combination of Tier 1 research-university academic infrastructure and UC Davis Medical Center clinical access — both well above what the soccer program's profile would suggest.",
+      "housing": {
+        "available": true,
+        "note": "Not mandatory but guaranteed for freshmen (under 24) and transfers who meet deadlines for fall quarter entry; 90%+ of freshmen choose on-campus. Verified v38 via official housing.ucdavis.edu."
+      }
     },
     "culture": {
       "vibe": "UC Davis is California's most relaxed major research university — bike-centric, agricultural roots, warm inland climate. Strong international student community. Academia-first but athletes are respected. Soccer team has surprising tournament pedigree.",
@@ -950,7 +962,11 @@
       "academicLabs": "Exercise Science labs: physiology, biomechanics, motor learning. UCI Health DPT articulation pathway available. CHOC (Children's Hospital of Orange County — top-10 USA) is 10 min from campus.",
       "extras": "Orange County — Huntington Beach (5 miles), Newport Beach (10 min), Laguna Beach (15 min). Disneyland (3 miles). LA access via I-405. LAFC, LA Galaxy, LAFC training grounds all accessible. Year-round warm weather. Irvine is consistently rated the safest large city in the USA.",
       "rating": "Good",
-      "note": "UCI's combination of 2025 Big West championship, UCI Health clinical access, and Orange County location creates the best lifestyle-academic package in the Big West below UCSB."
+      "note": "UCI's combination of 2025 Big West championship, UCI Health clinical access, and Orange County location creates the best lifestyle-academic package in the Big West below UCSB.",
+      "housing": {
+        "available": true,
+        "note": "Not mandatory but guaranteed for all first-year students; must live on campus the full first year to remain eligible for the 2nd-year guarantee. Verified v38 via official housing.uci.edu."
+      }
     },
     "culture": {
       "vibe": "UC Irvine is a rapidly rising research university in one of the most desirable locations in America. Irvine is clean, planned, and safe — the most liveable suburban city in Southern California. Strong international student community (30%+ international). Soccer program is on the rise.",
@@ -1218,7 +1234,11 @@
       "academicLabs": "Kinesiology labs: anatomy, exercise physiology, biomechanics. UCR is the most accessible UC campus for international athletes — scholarship packages are competitive.",
       "extras": "Inland Empire — Palm Springs (45 min), beaches (Orange County 60 min, San Diego 90 min), Coachella Valley. LA accessible via I-10. Riverside Mission Inn (historic landmark). UCR Botanic Gardens.",
       "rating": "Solid",
-      "note": "UC Riverside is the minutes-first option in the Big West. Lower soccer pedigree but real D1 platform, UC degree, and Southern California location. For an international recruit who needs to play, UCR offers the clearest pathway."
+      "note": "UC Riverside is the minutes-first option in the Big West. Lower soccer pedigree but real D1 platform, UC degree, and Southern California location. For an international recruit who needs to play, UCR offers the clearest pathway.",
+      "housing": {
+        "available": true,
+        "note": "Not mandatory but guaranteed for newly admitted single freshmen who meet deadlines (over 75% of freshmen live on campus); freshmen may only live in the dorms during their first year. Verified v38 via official housing.ucr.edu."
+      }
     },
     "culture": {
       "vibe": "UC Riverside is the most accessible and diverse UC campus — strong international and first-generation student community. Inland Empire location means hot summers and mild winters. Less prestigious than coastal UCs but same UC degree framework and R1 research infrastructure.",
@@ -1488,7 +1508,11 @@
       "academicLabs": "Exercise and Rehabilitative Sciences labs: anatomy, physiology, biomechanics, clinical rehabilitation. UCSD School of Medicine and UCSD Health create the best pre-DPT academic environment in the Big West. Multiple DPT programs in San Diego — Touro (UCSD partnership), USD, and SDSU all accessible.",
       "extras": "La Jolla — most beautiful UC campus setting. Pacific Ocean 5 min from campus. Black's Beach (clothing-optional, beneath campus cliff). La Jolla Cove snorkelling. Torrey Pines Golf (US Open venue). San Diego Zoo (20 min). Balboa Park museums. Tijuana border (30 min — weekend trip). San Diego Padres MLB (NL), San Diego FC (MLS 2025 expansion).",
       "rating": "Good",
-      "note": "RIMAC complex provides 12,000sqft weight room and expanding 20,000sqft recreation space (completion 2026-27). Outstanding playing surface but small stadium capacity limits atmosphere. Strong UC San Diego athletic support ecosystem."
+      "note": "RIMAC complex provides 12,000sqft weight room and expanding 20,000sqft recreation space (completion 2026-27). Outstanding playing surface but small stadium capacity limits atmosphere. Strong UC San Diego athletic support ecosystem.",
+      "housing": {
+        "available": true,
+        "note": "2-year on-campus housing guarantee for the incoming class, but students must live on campus for the entirety of their first (admit) year to retain it. Verified v38 via official hdhughousing.ucsd.edu."
+      }
     },
     "culture": {
       "vibe": "UCSD is the most academic UC campus after Berkeley and UCLA — strong research identity, Nobel Prize history, Scripps Institution of Oceanography, Salk Institute all on campus. La Jolla is affluent and beautiful — Pacific Ocean views from the library. Soccer program is building under new Division I infrastructure.",
@@ -1759,7 +1783,11 @@
       "academicLabs": "Kinesiology labs: anatomy, physiology, biomechanics, motor learning. Pre-PT pathway through OC clinical network. CSUF is the largest campus in the CSUF system — more resources than smaller CSU schools.",
       "extras": "Fullerton in the heart of Orange County — Disneyland (3 min), Knott's Berry Farm (10 min), Huntington Beach (15 min), Newport Beach (20 min), Angels Stadium and Honda Center (10 min). LA Galaxy/LAFC (30-45 min). Cost of living is slightly elevated due to OC demand but still far below LA or SF.",
       "rating": "Solid",
-      "note": "CSUF is the value play in the Big West — lowest cost, most accessible GPA, most realistic minutes, and an Orange County location that delivers on Olivier's warm/city lifestyle preference at the lowest possible price."
+      "note": "CSUF is the value play in the Big West — lowest cost, most accessible GPA, most realistic minutes, and an Orange County location that delivers on Olivier's warm/city lifestyle preference at the lowest possible price.",
+      "housing": {
+        "available": "limited",
+        "note": "No live-on requirement and — unlike every UC in this guide — no housing guarantee at all; on-campus space is first-come, first-served and can fill before an international recruit's admission is finalised. Verified v38 via official fullerton.edu/housing."
+      }
     },
     "culture": {
       "vibe": "CSUF is a large commuter-oriented CSU campus with a growing residential and international student community. Titan soccer culture is building. OC setting means the lifestyle is genuinely excellent — sun, beaches, theme parks, and LA accessibility — despite the program being at developing tier.",

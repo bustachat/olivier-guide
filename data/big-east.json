@@ -100,7 +100,11 @@
       "academicLabs": "St. John's School of Education Human Performance: exercise physiology lab, anatomy lab, biomechanics teaching space. NYC clinical placement network is extraordinary — students can access HSS, NYU Langone, and NY Presbyterian for DPT observation hours without leaving the city.",
       "extras": "Barclays Center and Madison Square Garden — two of the world's great arenas within 30 minutes. NYCFC and NY Red Bulls training ground access for players with agent connections. NYC's unmatched cultural offering: every museum, park, restaurant, and music venue. Metropolitan Museum of Art, Central Park, Brooklyn Bridge all accessible by subway.",
       "rating": "Very Good",
-      "note": "Belson Stadium and the athletic facilities are functional but not elite by D1 standards. The extraordinary differentiator is the NYC clinical network — Hospital for Special Surgery is the #1 orthopaedic hospital in the world and St. John's players can access it for clinical observation."
+      "note": "Belson Stadium and the athletic facilities are functional but not elite by D1 standards. The extraordinary differentiator is the NYC clinical network — Hospital for Special Surgery is the #1 orthopaedic hospital in the world and St. John's players can access it for clinical observation.",
+      "housing": {
+        "available": true,
+        "note": "Not an explicit blanket requirement, but first-year students are assigned to dedicated freshman halls and must complete the housing deposit/selection process to secure a space. Verified v38 via official stjohns.edu residence life pages."
+      }
     },
     "coach": {
       "name": "Dr Dave Masur",
@@ -389,7 +393,11 @@
       "academicLabs": "Exercise Science labs: physiology lab, biomechanics lab. Creighton Health Sciences campus integration for pre-PT pathway.",
       "extras": "Omaha is a genuine, affordable Midwest city — College World Series host, TD Ameritrade ballpark, Old Market district. 8 hours to Chicago. Creighton Jesuit ethos creates strong alumni community.",
       "rating": "Excellent",
-      "note": "Morrison Stadium is the best dedicated soccer facility in this Big East batch. Omaha's low cost of living maximises aid package value. CHI Health provides a solid pre-PT environment."
+      "note": "Morrison Stadium is the best dedicated soccer facility in this Big East batch. Omaha's low cost of living maximises aid package value. CHI Health provides a solid pre-PT environment.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for freshmen and sophomores (2 years) unless commuting from immediate Omaha area; exemptions require an explicit request. Verified v38 via official creighton.edu/student-experience/housing."
+      }
     },
     "culture": {
       "vibe": "Jesuit university with a tight-knit community. Omaha is a genuinely liveable Midwest city — low cost, friendly, safe. College World Series culture every June. Creighton athletics pride is high.",
@@ -663,7 +671,11 @@
       "academicLabs": "Health Policy and Management: health sciences labs, research methods labs. Pre-PT pathway requires external clinical placements — Providence city and Boston access helpful.",
       "extras": "Providence is a genuine New England city — RISD (Rhode Island School of Design) creates vibrant arts culture. Boston 50 min by car/train. Thayer Street and Federal Hill restaurant scene.",
       "rating": "Good",
-      "note": "Small Catholic college facilities without elite extras. The location (Providence, Boston access) and Big East soccer platform are the key assets."
+      "note": "Small Catholic college facilities without elite extras. The location (Providence, Boston access) and Big East soccer platform are the key assets.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for freshmen, sophomores, and juniors; only seniors, married students, and local commuters living with parents may live off-campus. Housing is guaranteed for all 4 years if desired. Verified v38 via official residence-life.providence.edu."
+      }
     },
     "culture": {
       "vibe": "Small tight-knit Catholic college town feel despite being in a real city. Providence is genuinely charming — East Coast character, walkable, safe, with a massive arts and food scene. PC community is close and loyal.",
@@ -935,7 +947,11 @@
       "academicLabs": "Exercise Science labs on campus. Pre-PT pathway relies partly on NYC clinical placements — commuting 30 min to Manhattan opens HSS, NYU Langone access.",
       "extras": "New York City 30 min by NJ Transit — Manhattan, Red Bulls Arena, Barclays Center all accessible. South Orange is a pleasant NJ suburb. Seton Hall basketball (Big East powerhouse) creates excellent athletics culture.",
       "rating": "Good",
-      "note": "SHU's facilities are modest but NYC proximity elevates clinical value enormously. Red Bulls and NYCFC access for players. Hackensack Meridian Health for sports medicine."
+      "note": "SHU's facilities are modest but NYC proximity elevates clinical value enormously. Red Bulls and NYCFC access for players. Hackensack Meridian Health for sports medicine.",
+      "housing": {
+        "available": true,
+        "note": "No blanket residency requirement, but housing is guaranteed for full-time students who complete the application and deposit by May 1. Verified v38 via official shu.edu/residence-life."
+      }
     },
     "culture": {
       "vibe": "Catholic university in a pleasant NJ suburb with New York City 30 minutes away. Campus is quiet and leafy but NYC is the real backyard. Big East basketball culture (Seton Hall is a basketball school) elevates athletics identity.",
@@ -1204,7 +1220,11 @@
       "academicLabs": "Exercise Science: anatomy lab, physiology lab, biomechanics lab. IU Health clinical placement pathway available through Butler pre-health advising.",
       "extras": "Butler Bowl on one of the most beautiful small university campuses in America. Indiana Pacers, Indianapolis Colts proximity. Indianapolis Motor Speedway (Indy 500). Butler Bulldogs basketball is a Big East powerhouse.",
       "rating": "Good",
-      "note": "Butler's campus is genuinely beautiful — described as one of the best small university campuses in the USA. IU Health clinical access makes this strong for Olivier's PT pathway. Indianapolis medical district is a genuine asset."
+      "note": "Butler's campus is genuinely beautiful — described as one of the best small university campuses in the USA. IU Health clinical access makes this strong for Olivier's PT pathway. Indianapolis medical district is a genuine asset.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory 6-semester (3-year) residency requirement for full-time undergrads, including all first-years not living with a parent locally; guaranteed for first-years who deposit by May 1. Verified v38 via official butler.edu/student-life/housing-dining."
+      }
     },
     "culture": {
       "vibe": "Intimate, beautiful private university campus in the middle of a real Midwest city. Butler has an outsized athletics culture for its size — Big East basketball powerhouse. Indianapolis is a genuine sports city.",
@@ -1475,7 +1495,11 @@
       "academicLabs": "Exercise Science labs: physiology, biomechanics. Cincinnati Children's Hospital (one of the top 5 children's hospitals in USA) creates research adjacency for health science students.",
       "extras": "FC Cincinnati MLS (TQL Stadium, 6,000 cap) is 10 min from campus. Cincinnati is a genuine Midwest city with a growing food and arts scene. Cincinnati Zoo, Eden Park, Columbia Tusculum neighbourhood.",
       "rating": "Good",
-      "note": "Xavier's best differentiator is FC Cincinnati proximity — real MLS access. Cincinnati Medical Center for pre-PT. Small campus, tight community."
+      "note": "Xavier's best differentiator is FC Cincinnati proximity — real MLS access. Cincinnati Medical Center for pre-PT. Small campus, tight community.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory live-on requirement, extended from 2 to 3 years starting Fall 2026, for unmarried students aged 17-21 not living with a guardian within 35 miles of campus. Verified v38 via official xavier.edu/residence-life."
+      }
     },
     "culture": {
       "vibe": "Small Jesuit university with a punching-above-weight athletics culture. Xavier is known for basketball but soccer is building. Cincinnati has become a genuinely liveable Midwest city with a strong culture.",
@@ -1747,7 +1771,11 @@
       "academicLabs": "Kinesiology Building: exercise physiology lab, biomechanics lab, motor control lab. UConn Health Center clinical placements accessible.",
       "extras": "Hartford (40 min) and Boston (2hr) provide city access. UConn's other Big East titles give enormous program credibility. Husky Nation basketball creates exceptional Big East athletics culture.",
       "rating": "Very Good",
-      "note": "UConn is the strongest Big East soccer program outside Georgetown and Notre Dame. DeLuca Field is a solid dedicated facility. UConn Health for pre-PT is the academic differentiator. Rural Storrs is the main lifestyle trade-off."
+      "note": "UConn is the strongest Big East soccer program outside Georgetown and Notre Dame. DeLuca Field is a solid dedicated facility. UConn Health for pre-PT is the academic differentiator. Rural Storrs is the main lifestyle trade-off.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for on-time first-time freshmen (including international students) for the full first year; exemptions include commuting within 60 miles, financial hardship, medical needs, or age 20+. Verified v38 via official campushousing.uconn.edu."
+      }
     },
     "culture": {
       "vibe": "Large public research university with a strong athletics culture. Husky basketball is legendary — UConn is a true Big East athletics school. Storrs is a quintessential isolated New England college campus.",
@@ -2017,7 +2045,11 @@
       "academicLabs": "Health Sciences labs on campus. Chicago's medical district proximity is the differentiator — Rush, Northwestern Medicine, Lurie Children's all within commuting distance for clinical hours.",
       "extras": "Lincoln Park location — DePaul is IN Chicago. Chicago Fire MLS (Wintrust Arena), restaurants, music venues, Lake Michigan shoreline, Art Institute of Chicago, Second City comedy. Chicago is world class.",
       "rating": "Good",
-      "note": "DePaul's facilities are modest but Chicago Lincoln Park location is genuinely exceptional. Rush University Medical Center partnership for health sciences. Best Big East lifestyle location after Georgetown."
+      "note": "DePaul's facilities are modest but Chicago Lincoln Park location is genuinely exceptional. Rush University Medical Center partnership for health sciences. Best Big East lifestyle location after Georgetown.",
+      "housing": {
+        "available": true,
+        "note": "No strict first-year requirement — DePaul is one of the more flexible Big East schools on this point — but on-campus housing (with meal plan) is available and commonly chosen. Verified v38 via official offices.depaul.edu/housing."
+      }
     },
     "culture": {
       "vibe": "DePaul is the only Big East soccer program actually located IN a world-class city — Lincoln Park, Chicago. Campus culture blends Vincentian Catholic ethos with Chicago's diverse, creative energy. City IS the campus.",
@@ -2286,7 +2318,11 @@
       "academicLabs": "Exercise Science labs: physiology, biomechanics. Pre-PT pathway through Philadelphia medical district — CHOP (Children's Hospital of Philadelphia — top 2 USA) and Penn Medicine accessible.",
       "extras": "Main Line Philadelphia — one of the most prestigious suburban locations in the USA. Philadelphia Eagles, 76ers, Phillies, Union (MLS) all nearby. King of Prussia (largest mall east of Mississippi, 10 min). Philadelphia cultural district.",
       "rating": "Good",
-      "note": "Villanova's academic prestige and Philadelphia medical access are the key assets. Soccer is the weakest element — three consecutive last-place East finishes. Expensive for the program tier."
+      "note": "Villanova's academic prestige and Philadelphia medical access are the key assets. Soccer is the weakest element — three consecutive last-place East finishes. Expensive for the program tier.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory 2-year live-on requirement for resident students, with a 3-year (6-semester) housing guarantee. Verified v38 via official villanova.edu/university/residence-life."
+      }
     },
     "culture": {
       "vibe": "Prestigious small Catholic university on Philadelphia's Main Line — one of the most affluent, culturally rich suburban corridors in the USA. Villanova athletics culture is basketball-dominant (Wildcats are Big East royalty) but soccer is building.",
@@ -2558,7 +2594,11 @@
       "academicLabs": "Exercise Science labs: exercise physiology, biomechanics, motor learning. MCW and Froedtert Health clinical placements available. Strong pre-PT pathway — Marquette has DPT articulation history.",
       "extras": "Milwaukee — genuine mid-size city with strong professional and cultural scene. Fiserv Forum (NBA Bucks), American Family Field (MLB Brewers), Milwaukee Art Museum, Lake Michigan waterfront. Chicago (90 min drive) adds major-city proximity.",
       "rating": "Very Good",
-      "note": "KBS Soccer Pavilion (2011, 3,000sqft) — dedicated locker rooms for men's and women's programs. $3.6M seasonal dome (2017) over FieldTurf field for climate-controlled winter training and competition. Strong year-round training setup."
+      "note": "KBS Soccer Pavilion (2011, 3,000sqft) — dedicated locker rooms for men's and women's programs. $3.6M seasonal dome (2017) over FieldTurf field for climate-controlled winter training and competition. Strong year-round training setup.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory for first- and second-year single students (2 years); exemptions for local family within 35 miles, age 21+, or 2+ years since high school. Verified v38 via official marquette.edu/residence-life."
+      }
     },
     "culture": {
       "vibe": "Jesuit Catholic university — academic rigour, community service ethos, Milwaukee city campus. Marquette basketball (Final Four history) dominates the athletic culture but soccer punches above its weight. Strong alumni network (law, business, health professions).",
@@ -2816,7 +2856,11 @@
       "sportsMed": "Georgetown Athletics full-time AT staff. Georgetown University Hospital proximity means access to some of the best sports medicine and physical therapy clinicians in the US for clinical observation hours.",
       "extras": "D.C. internship access (political, media, NGO, healthcare) is unmatched. Georgetown neighborhood — one of the most desirable in America. Proximity to major MLS market (DC United).",
       "rating": "Very Good",
-      "note": "Georgetown's location in D.C. is its unique differentiator — access to world-class hospitals for clinical hours, MLS connections through DC United, and an elite academic environment. The trade-off is cost and cold winters."
+      "note": "Georgetown's location in D.C. is its unique differentiator — access to world-class hospitals for clinical hours, MLS connections through DC United, and an elite academic environment. The trade-off is cost and cold winters.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory 3-year on-campus residency requirement for full-time undergrads (exemptions available, e.g. living with family within commuting distance); first-years are guaranteed housing. Verified v38 via official residentialliving.georgetown.edu."
+      }
     },
     "coach": {
       "name": "Brian Wiese",

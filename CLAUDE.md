@@ -288,7 +288,7 @@ Captures whether a school's midfield spots are typically filled by true incoming
 | `guideVersion` | Explore tab header version badge only |
 | `budgetAUD` or `fxRate` | **No longer affects fitOlivier** (v37.1 removed Cost from the Fit Score) — only affects the `value` lens (`affordabilityScore`) and the Financial Model tab. Re-store `lensScores.value` for all schools if changed. |
 | `scoreWeights` | ALL fitOlivier recalculate → all lensScores.overall must be manually recalculated |
-| `shortlist[]` | Dashboard shortlist panel, Coaches Outreach tracker, ★ Top Pick filter in Explore |
+| `shortlist[]` | **Since v37.9: Dashboard map "in shortlist" dot highlight ONLY.** The Dashboard's "Top 8" panel no longer pins these schools — it's a strict fitOlivier ranking (see §6 state snapshot). Does NOT drive the Coaches Outreach tracker (that's `outreach[]`) or Explore's ★ Top Pick filter (that's the static `u.top` field on each school) — this row previously claimed both incorrectly. |
 | `outreach[]` | Coaches Outreach tracker only |
 | `pathways[]` | Pathways tab only |
 | `coachQuestions[]` | Pathways tab — questions section only |
@@ -662,6 +662,7 @@ Full per-version history lives in **CHANGELOG.md** — moved out of this file in
 - All 93 full-profile schools have `kinRank` populated (v36.7 backfilled the 45 that were missing it).
 - Compare tab's GPA row is live via `dynamicGpaStatus()` (v36.5) instead of a stored value — still relevant since GPA remains a first-class filter/toggle, just not a Fit Score input.
 - **v37.3 — all data fetches use `{ cache: 'no-store' }`** (`fetchWithRetry()` in app.js, the olivier.json fetch in dashboard.js). Discovered live: after the v37.1 schema change, Chrome kept serving a cached pre-v37.1 `athletes/olivier.json` even after closing the browser and Ctrl+Shift+R, producing NaN fit scores (new JS + old JSON, missing the new `soccerQuality` weight key) — Edge was unaffected. A hard reload reliably busts cache for `<script>` tags but not for `fetch()`-initiated requests in every browser. **Any new data-fetching code must keep `cache: 'no-store'`** — don't remove it for a caching "optimization" without solving this class of bug another way first.
+- **v37.9 — Dashboard "Top 8" panel is now strictly fitOlivier-ranked, no manual pinning.** The old `updateShortlist()` merged pinned `shortlist[]` entries first (★ TOP badge) then auto-filled remaining slots up to a cap of 8 by fitOlivier — but the pinned list had grown to 10 entries, already exceeding the cap, so the auto-fill-by-fit half never actually ran (JUCOs, or any non-pinned school regardless of score, could never appear). Owner chose to go fully dynamic rather than trim the pinned list. Removed with it: the per-card contact-status pill/dropdown (`saveSlStatus`/`getSlStatus`/`SL_STATUSES` — now dead code, deleted) — contact-status tracking lives in the separate Coaches Outreach tracker (`outreach[]`), unaffected. `shortlist[]` in olivier.json still exists and still drives the Dashboard map's "in shortlist" dot highlight — it just no longer pins cards in the Top 8 panel.
 
 ### v36 fix backlog — CLOSED (July 2026)
 

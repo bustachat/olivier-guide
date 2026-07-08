@@ -2,8 +2,12 @@
 // dashboard.js  —  Olivier Scholarship Guide v18
 // Reads: unis[] / LENSES[] (set by app.js / scores.js)
 // Own state: dashGpa, dashBudget, dashAthlete
-// v18: updateShortlist() now dynamic — ranks all full-profile schools by
-//      fitOlivier, shows top 8. olivier.json shortlist = pinned/starred.
+// v37.9: updateShortlist() is fully dynamic — ranks all full-profile schools
+//      by fitOlivier, shows top 8. No manual pinning (removed — the old
+//      10-entry pinned shortlist[] silently disabled the auto-fill-by-fit
+//      logic since it already exceeded the 8-slot cap). olivier.json
+//      shortlist[] still drives the Dashboard map's "in shortlist" dot
+//      highlight only.
 // ═══════════════════════════════════════════════════════════════════════
 
 let dashGpa     = 2.8;
@@ -57,54 +61,11 @@ function dashReachable(u) {
   return dashGpa >= gpaMin && costNum <= dashBudget;
 }
 
-// ─── Shortlist status helpers ─────────────────────────────────────────────────
-const SL_STATUSES = ['Not contacted','Email sent','In conversation','Offer received','Eliminated'];
-const SL_STATUS_COLOR = {
-  'Not contacted':  { bg:'var(--surface2)',  text:'var(--muted)' },
-  'Email sent':     { bg:'var(--sky3)',      text:'var(--sky)' },
-  'In conversation':{ bg:'var(--indigo3)',   text:'var(--indigo)' },
-  'Offer received': { bg:'var(--emerald3)',  text:'var(--emerald)' },
-  'Eliminated':     { bg:'var(--rose3)',     text:'var(--rose)' },
-};
-
-function slStatusKey() { return 'olivier_sl_status'; }
-
-function loadSlStatuses() {
-  try { return JSON.parse(localStorage.getItem(slStatusKey()) || '{}'); } catch(_) { return {}; }
-}
-
-function saveSlStatus(id, status) {
-  const map = loadSlStatuses();
-  map[id] = status;
-  localStorage.setItem(slStatusKey(), JSON.stringify(map));
-  if (typeof showToast === 'function') showToast('Status saved: ' + status, 'ok');
-  // Update in-memory dashAthlete shortlist
-  if (dashAthlete.shortlist) {
-    dashAthlete.shortlist = dashAthlete.shortlist.map(entry => {
-      const entryId = typeof entry === 'string' ? entry : entry.id;
-      if (entryId === id) return { id: entryId, status };
-      return typeof entry === 'string' ? { id: entry, status: 'Not contacted' } : entry;
-    });
-  }
-  updateShortlist();
-}
-
-function getSlStatus(id) {
-  const saved = loadSlStatuses();
-  if (saved[id]) return saved[id];
-  // Fall back to JSON value if it exists
-  const entry = (dashAthlete.shortlist || []).find(e => (typeof e === 'string' ? e : e.id) === id);
-  if (entry && typeof entry === 'object') return entry.status || 'Not contacted';
-  return 'Not contacted';
-}
-
+// v37.9: shortlist[] only drives the Dashboard map's "in shortlist" dot
+// highlight now (see updateMapDots()) — just needs each entry's id.
 function normaliseShortlist(raw) {
   if (!Array.isArray(raw)) return [];
-  const saved = loadSlStatuses();
-  return raw.map(entry => {
-    if (typeof entry === 'string') return { id: entry, status: saved[entry] || 'Not contacted' };
-    return { id: entry.id, status: saved[entry.id] || entry.status || 'Not contacted' };
-  });
+  return raw.map(entry => ({ id: typeof entry === 'string' ? entry : entry.id }));
 }
 
 // ─── Entry point ──────────────────────────────────────────────────────────────
@@ -184,7 +145,7 @@ function buildDashboardShell() {
     <div class="dash-sc"><span class="dash-sc-num emerald dash-sc-name" id="ds-best">—</span><div class="dash-sc-right"><div class="dash-sc-lbl">Best fit reachable</div></div></div>
   </div>
 
-  <div class="dash-sec-lbl">Shortlist — ★ pinned · ranked by fit score · auto-updates as data grows</div>
+  <div class="dash-sec-lbl">Top 8 — ranked by fit score · auto-updates as data grows</div>
   <div class="dash-shortlist-row" id="dash-shortlist"></div>
 
   <div class="dash-sec-lbl">Best per lens — dims when GPA or budget rules out current #1</div>
@@ -441,46 +402,29 @@ function updateStatStrip() {
   if (budRes) budRes.textContent = inBudget + ' of ' + unis.length + ' within budget';
 }
 
-// ─── 2. Shortlist cards — DYNAMIC ────────────────────────────────────────────
-// Shows top 8 full-profile schools ranked by fitOlivier.
-// Schools in olivier.json shortlist[] are pinned first with ★ TOP badge.
-// Auto-updates whenever unis[] changes — new schools appear automatically.
+// ─── 2. Shortlist cards — FULLY DYNAMIC (v37.9) ─────────────────────────────
+// Shows top 8 full-profile schools ranked strictly by fitOlivier — no manual
+// pinning. olivier.json shortlist[] is no longer read here (it was silently
+// dead anyway: 10 pinned entries already exceeded the 8-slot cap, so the
+// auto-fill-by-fit half of the old merge logic never actually ran). Contact
+// status tracking lives in the separate Coaches Outreach tracker
+// (athleteConfig.outreach[]), unaffected by this change.
 function updateShortlist() {
   const el = document.getElementById('dash-shortlist');
   if (!el) return;
 
-  const pinnedEntries = (dashAthlete.shortlist || []).map(e =>
-    typeof e === 'string' ? { id: e, status: getSlStatus(e) } : e
-  );
-  const pinnedIds  = pinnedEntries.map(e => e.id);
-  const pinnedSet  = new Set(pinnedIds);
   const fullSchools = unis.filter(u => u.profileDepth === 'full' && !u.noVarsity);
 
-  // Pinned schools in order, carrying their status
-  const pinned = pinnedEntries
-    .map(entry => { const u = fullSchools.find(s => s.id === entry.id); return u ? { u, status: entry.status } : null; })
-    .filter(Boolean);
-
-  // Remaining top schools by fitOlivier (no status)
-  const autoTop = [...fullSchools]
-    .filter(u => !pinnedSet.has(u.id))
+  const display = [...fullSchools]
     .sort((a, b) => (b.fitOlivier || 0) - (a.fitOlivier || 0))
-    .map(u => ({ u, status: null }));
-
-  // Merge to 8 total
-  const display = [...pinned];
-  for (const item of autoTop) {
-    if (display.length >= 8) break;
-    display.push(item);
-  }
+    .slice(0, 8);
 
   if (!display.length) {
     el.innerHTML = '<p style="font-size:13px;color:var(--hint)">No schools loaded yet.</p>';
     return;
   }
 
-  el.innerHTML = display.map(({ u, status }, idx) => {
-    const isPinned   = pinnedSet.has(u.id);
+  el.innerHTML = display.map((u, idx) => {
     const gpaMin     = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
     const costNum    = u.fin?.costNum ?? 0;
     const overBudget = costNum > dashBudget;
@@ -490,26 +434,11 @@ function updateShortlist() {
     const fitColor  = (u.fitOlivier||0) >= 90 ? 'var(--emerald)' : (u.fitOlivier||0) >= 80 ? 'var(--amber)' : 'var(--rose)';
     const acuColor  = (u.acuAlign||0) >= 14 ? 'var(--emerald)' : (u.acuAlign||0) >= 10 ? 'var(--sky)' : 'var(--amber)';
 
-    const badge = isPinned
-      ? `<div class="dash-sl-star">★ TOP</div>`
-      : `<div class="dash-sl-star" style="background:var(--surface3);color:var(--muted);border:1px solid var(--border)">#${idx + 1}</div>`;
+    const badge = `<div class="dash-sl-star" style="background:var(--surface3);color:var(--muted);border:1px solid var(--border)">#${idx + 1}</div>`;
 
     let warn = '';
     if (ineligible) warn = '<div class="dash-sl-warn gpa">GPA below entry minimum</div>';
     else if (overBudget) warn = '<div class="dash-sl-warn budget">Above current budget</div>';
-
-    // Status pill — only on pinned shortlist schools
-    let statusHtml = '';
-    if (isPinned && status !== null) {
-      const sc = SL_STATUS_COLOR[status] || SL_STATUS_COLOR['Not contacted'];
-      const opts = SL_STATUSES.map(s =>
-        `<option value="${s}"${s === status ? ' selected' : ''}>${s}</option>`
-      ).join('');
-      statusHtml = `<div class="dash-sl-status-row">
-        <select class="dash-sl-status-sel" style="background:${sc.bg};color:${sc.text}"
-          onchange="saveSlStatus('${u.id}', this.value)">${opts}</select>
-      </div>`;
-    }
 
     return `<div class="dash-sl-card${overBudget?' over-budget':''}${ineligible?' ineligible':''}">
       ${badge}
@@ -533,7 +462,6 @@ function updateShortlist() {
         <div class="dash-sl-sc" style="color:var(--muted)">~$${Math.round(costNum/1000)}k</div>
       </div>
       ${warn}
-      ${statusHtml}
       <div class="dash-sl-btns">
         <button class="dash-sl-btn primary" onclick="openDetail('${u.id}')">Details</button>
         <button class="dash-sl-btn" onclick="toggleCompare('${u.id}',this)">Compare</button>

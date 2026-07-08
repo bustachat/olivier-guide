@@ -103,6 +103,7 @@
       "academicLabs": "SMC Kinesiology Department: anatomy and physiology teaching labs, computer exercise physiology suite. UCLA's transfer pathway means students who thrive at SMC often access UCLA's world-class labs from Year 3 — the JUCO → UCLA lab upgrade is significant.",
       "extras": "Santa Monica Beach (100m from campus — not a typo). Venice Beach boardwalk (2km). Third Street Promenade. Santa Monica Pier. Entire LA accessible by Metro Expo Line from campus. Google, Apple, and major tech campuses in Santa Monica for career networking. The best JUCO location in America.",
       "rating": "Solid",
+      "housing": { "available": false, "note": "Santa Monica College has no on-campus student housing at all. Students arrange their own accommodation in the surrounding area — SMC provides housing search resources but no dorms." },
       "note": "SMC's own facilities are JUCO standard — functional, not impressive. The differentiator is location: 100m from one of the world's great beaches, Metro access to all of LA, and a proven pipeline to UCLA where the facilities become elite. Think of this as 2 years at the beach before upgrading to a top-10 facility."
     },
     "coach": {
@@ -357,6 +358,7 @@
       "academicLabs": "MDC Health Sciences: anatomy lab, physiology teaching labs. MDC's proximity to UM Health and Jackson Memorial provides motivated pre-health students extraordinary clinical observation access as a community member of Miami.",
       "extras": "All of Miami — South Beach, Wynwood, Little Havana, Brickell. Inter Miami CF (Chase Stadium) 10 min from health sciences campus. Miami Heat (Kaseya Center) 15 min. No other JUCO in the USA is embedded in a city of this global calibre.",
       "rating": "Solid",
+      "housing": { "available": false, "note": "Miami Dade College does not provide or supervise student housing (confirmed via MDC's own FAQ). Students arrange off-campus housing independently." },
       "note": "MDC's own facilities are basic JUCO standard. Miami is the facility — proximity to Jackson Memorial for clinical access, Inter Miami for professional soccer exposure, and UM Health for pre-PT pathway development means motivated students can build extraordinary CVs in 2 years."
     },
     "coach": {
@@ -616,6 +618,7 @@
       "academicLabs": "Kinesiology lab for foundational anatomy and physiology coursework. Health Sciences programme designed to articulate with 4-year Bachelor's programs. Transfer agreements with Iowa, Iowa State, Drake University, and Creighton documented.",
       "extras": "Omaha metro (5 min) — major league sports (Creighton basketball Big East, UNO hockey, College World Series in June). Henry Doorly Zoo (world's best aquarium). Old Market dining and arts district. Council Bluffs riverboat entertainment.",
       "rating": "Good",
+      "housing": { "available": true, "note": "On-campus housing available — suites, apartments, and a traditional residence hall (Reiver Suites I & II, Reiver Tower, Reiver Village). 24/7 staff support." },
       "note": "New $9M Wiebe Complex (Fall 2024) + 5 full-time ATs + 92,248 sqft wellness centre is genuinely strong for JUCO level. Iowa Western's value proposition is the transfer pathway — low cost + regional transfer network into D1/D2. Climate is the significant drawback versus SMC for a Sydney-raised player."
     },
     "coach": {
@@ -873,6 +876,7 @@
       "academicLabs": "Standard community college science labs. Biology, Chemistry, and Anatomy lab access supports pre-req completion. Limited compared to 4-year universities.",
       "extras": "Being an Australian in rural Nebraska is unusual — Olivier would stand out immediately and likely be a local story. The team bond from shared international experience is genuinely strong based on roster composition.",
       "rating": "Solid",
+      "housing": { "available": true, "note": "On-campus housing available — 3 residence halls plus 2 apartment buildings, 545 students living on campus." },
       "note": "Northeast CC is evaluated as a stepping stone — not a destination. The value is the 2-year cost savings, immediate playing time, NJCAA DII competition level, and transfer pathway."
     },
     "coach": {
@@ -1030,7 +1034,7 @@
     "top": false,
     "juco2yr": true,
     "jucoTier": "Elite",
-    "jucoTierNote": "3x NJCAA DI National Champions (2021-2023); 2024 runner-up — \"NJCAA\\u2019s most dominant JUCO program nationally\"",
+    "jucoTierNote": "3x NJCAA DI National Champions (2021-2023); 2024 runner-up — \"NJCAA's most dominant JUCO program nationally\"",
     "njcaaRegion": "Region 15",
     "njcaaRegionArea": "Lower New York",
     "profileDepth": "full",
@@ -1124,6 +1128,7 @@
       "academicLabs": "Monroe College offers Associate programs in business, healthcare, and IT. Biology and anatomy prerequisites available. Transfer pathway to 4-year Exercise Science program is the DPT route.",
       "extras": "The championship culture is real — players from Monroe's national title teams have gone on to professional contracts. NYC accessibility (30 min by train) is unmatched at JUCO level. Proximity to NYCFC and NY Red Bulls for watching professional soccer.",
       "rating": "Good",
+      "housing": { "available": true, "note": "On-campus housing available — 3 residence halls (Allison, Gaddy, Locust), capacity for ~1,000 students, apartment-style with private bathrooms." },
       "note": "Monroe's value proposition is the championship soccer development environment + NYC metro lifestyle + Australian connection. Academic facilities are JUCO-level — plan the transfer to a 4-year program carefully."
     },
     "coach": {
@@ -1391,6 +1396,7 @@
     },
     "facilityDetails": {
       "rating": "Good",
+      "housing": { "available": true, "note": "On-campus housing available — 5 residence halls at the Ottumwa campus (Wapello, Cooper-Creek, Oak Hall, Trustee Hall), apartment-style and traditional double rooms." },
       "stadium": "Indian Hills CC Athletic Complex — Ottumwa campus. National champion program with ongoing facilities investment.",
       "trainingFields": "Campus training fields. Championship program invests in quality training environment.",
       "strengthConditioning": "Campus fitness centre — upgraded to support national championship-level demands.",
@@ -1727,6 +1733,7 @@
     },
     "facilityDetails": {
       "rating": "Good",
+      "housing": { "available": true, "note": "On-campus housing available — 8 residence halls, 1,100+ students housed. Claridge Hall and Sledge Hall specifically house TJC soccer program athletes alongside other sports." },
       "stadium": "Ornelas Athletic Complex — TJC natural grass facility. NJCAA-standard, well-maintained campus complex.",
       "trainingFields": "On-campus training fields. East Texas warm climate allows outdoor training 12 months per year.",
       "strengthConditioning": "TJC Athletic Complex — functional JUCO weight room with free weights and conditioning equipment.",
@@ -1977,6 +1984,7 @@
     },
     "facilityDetails": {
       "rating": "Good",
+      "housing": { "available": "limited", "note": "Only 1 residence hall (opened 2022), 67 residential units total. Confirmed full with an extensive waiting list for Spring 2026 — do not assume a spot is available without checking directly with the college first." },
       "stadium": "DSC Athletic Complex — natural grass facility for NJCAA soccer. Florida climate enables year-round outdoor play.",
       "trainingFields": "On-campus training fields. Daytona Beach warm Florida climate allows outdoor training 12 months per year.",
       "strengthConditioning": "DSC Athletic weight room — functional JUCO standard with free weights and conditioning equipment.",
@@ -2234,6 +2242,7 @@
     ],
     "facilityDetails": {
       "rating": "Good",
+      "housing": { "available": true, "note": "On-campus housing available — capacity for 440 residents, ADA-compliant rooms, free laundry and kitchen facilities." },
       "stadium": "Barton Outdoor Athletics Complex — dedicated lit soccer field, no fixed seating capacity published. Standard NJCAA DI facility.",
       "trainingFields": "On-campus training pitch adjacent to the match field. Kansas climate requires indoor options November–March.",
       "strengthConditioning": "Barton Athletics weight room — standard JUCO strength facility shared across programs.",
@@ -2493,6 +2502,7 @@
     ],
     "facilityDetails": {
       "rating": "Good",
+      "housing": { "available": true, "note": "On-campus housing available — 6-7 residence halls housing 500+ students across the Arkansas City and Sumner (Wellington) campuses." },
       "stadium": "Cowley Soccer Complex in Arkansas City, with soccer also using the Mark A. Phillips Track & Field Complex — no fixed seating capacity published.",
       "trainingFields": "On-campus training pitches. Kansas climate requires indoor options in winter months.",
       "strengthConditioning": "Cowley Athletics weight room — standard JUCO strength facility.",
@@ -2745,6 +2755,7 @@
     ],
     "facilityDetails": {
       "rating": "Good",
+      "housing": { "available": true, "note": "On-campus housing available — 3 residence halls (DeAnza, Garces, Kino), suite-style rooms with private bathrooms; DeAnza (168 beds) opened recently." },
       "stadium": "Arizona Western College Soccer Field — dedicated lit pitch built in 2013, sited at the crest of a hill on campus; no fixed seating capacity published.",
       "trainingFields": "Dedicated on-campus soccer field doubles as the training venue. Yuma's desert climate allows outdoor training year-round.",
       "strengthConditioning": "AWC Athletics weight room — standard JUCO strength facility.",
@@ -3003,6 +3014,7 @@
     ],
     "facilityDetails": {
       "rating": "Excellent",
+      "housing": { "available": true, "note": "On-campus housing available — 2 residence halls at the Melbourne Campus, 96 beds each (~192 total), furnished 4-bedroom suites." },
       "stadium": "Titan Soccer Complex — a 1,000-seat, soccer-specific stadium built in 2013, with a lighted FIFA-regulation-size (120×75 yard) Bermuda grass playing surface, an air-conditioned press box, and handicap-accessible bleachers. Notably hosted the NJCAA Division I Women's Soccer National Championship (2014-2016) and Orlando City B (USL) matches in 2016, when capacity was expanded to 3,500.",
       "trainingFields": "Adjacent FIFA-regulation-size practice field alongside the match stadium. Florida climate allows year-round outdoor training.",
       "strengthConditioning": "EFSC Athletics weight room — standard JUCO strength facility, with locker room and concession building on-site at the soccer complex.",

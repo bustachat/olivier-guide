@@ -513,7 +513,8 @@ mapX, mapY,
 profileDepth: "full",
 minutesOutlook{ available: true/false, … },
 facilityDetails{ rating, stadium, trainingFields, strengthConditioning,
-                 sportsScience, sportsMed, academicLabs, extras, note },
+                 sportsScience, sportsMed, academicLabs, extras, note,
+                 housing: { available: true/false/"limited", note } },  ← added v37.7, optional
 culture{ vibe, thingsToDo, socialScene, olivierMatch, lifestyleTags },
 confRecord[{ yr, pos, note }],
 titles[], proPlayers{}
@@ -529,6 +530,7 @@ For **NJCAA-affiliated** JUCO schools, also add `"njcaaRegion": "Region N"` + `"
 - `minutesOutlook.recruit_risk` — must be exactly `Low` | `Medium` | `High`. The renderers have no branch for anything else: `Very High`, `Medium-High`, `Moderate`, or sentence-style values all fall through to the green "Open" label — the opposite of the researched meaning.
 - Stored `fitOlivier` / `lensScores.overall` must always equal the live scores.js formula output (`calculateFitScore()` — Soccer Priority formula since v37.1). `recalculateAllScores()` runs on every page load (`initApp()`), so any drift shows up immediately, not just when some toggle is touched. `node validate_consistency.js` checks this (Phase 4).
 - `juco2yr: true` is the ONLY flag renderACUTable() uses to exclude JUCOs from the ACU Alignment tab — `div: "JUCO"` alone does NOT exclude.
+- `facilityDetails.housing` (added v37.7) — **display is silent-unless-flagged, by design.** The card/modal only show a tag when `available === false` or `"limited"`; `available: true` (or the field simply being absent/unresearched) renders nothing. This mirrors the `top`/`jucoTier==='Elite'` pattern — don't add a "has housing" positive-case tag, it would clutter every card for the expected default. As of v37.7 only the 12 JUCO schools are researched (2 confirmed no housing: Santa Monica, Miami Dade; 1 limited: Daytona State — only 67 units, waitlisted). The 81 non-JUCO schools are unresearched (field absent, so silent) — do not assume all of them have housing without checking; a missing field means "not yet researched," not "confirmed available."
 
 ### School object (listed-profile)
 Same fields but `profileDepth: "listed"`.

@@ -648,6 +648,14 @@ function buildCard(u){
   const locShort=u.loc.split(',').slice(-2).join(',').trim();
   const topBadge=u.top?'<div class="tp-badge">★ TOP PICK</div>':'';
   const eliteJucoChip=(u.div==='JUCO'&&u.jucoTier==='Elite')?'<span class="elite-juco-chip" title="'+(u.jucoTierNote||'').replace(/"/g,'&quot;')+'">🏆 Elite JUCO</span>':'';
+  // Silent when housing is available (the expected default) — only flag the exception,
+  // same pattern as Top Pick / Elite JUCO. Avoids stacking a tag on every single card.
+  const housing = u.facilityDetails && u.facilityDetails.housing;
+  const housingChip = (housing && housing.available === false)
+    ? '<span class="housing-warn-chip" title="'+(housing.note||'').replace(/"/g,'&quot;')+'">🏠 No on-campus housing</span>'
+    : (housing && housing.available === 'limited')
+      ? '<span class="housing-warn-chip" title="'+(housing.note||'').replace(/"/g,'&quot;')+'">🏠 Limited housing</span>'
+      : '';
   const inSchol=selectedIds.has(u.id);
 
   el.innerHTML=
@@ -661,7 +669,7 @@ function buildCard(u){
           '<span style="color:var(--hint)">'+confShort+'</span>'+
           (u.njcaaRegion?'<span style="color:var(--hint)" title="'+(u.njcaaRegionArea||'')+'">· '+u.njcaaRegion+'</span>':'')+
           '<span>📍'+locShort+'</span>'+
-          warmTag+cityTag+eliteJucoChip+
+          warmTag+cityTag+eliteJucoChip+housingChip+
         '</div>'+
       '</div>'+
     '</div>'+
@@ -1390,6 +1398,7 @@ function buildDetailBody(u){
         <div class="fac-block"><h5>📡 Sports Science & Technology</h5><p>${u.facilityDetails.sportsScience}</p></div>
         <div class="fac-block"><h5>🏥 Sports Medicine & Recovery</h5><p>${u.facilityDetails.sportsMed}</p></div>
         <div class="fac-block"><h5>🔬 Academic Labs & Clinical Access</h5><p>${u.facilityDetails.academicLabs}</p></div>
+        ${u.facilityDetails.housing?`<div class="fac-block"><h5>🏠 On-Campus Housing</h5><p>${u.facilityDetails.housing.available===false?'Not available — ':u.facilityDetails.housing.available==='limited'?'Limited — ':''}${u.facilityDetails.housing.note||''}</p></div>`:''}
       </div>
       <div class="fac-block" style="margin-bottom:1rem"><h5>🎁 Extras & Unique Perks</h5><p>${u.facilityDetails.extras}</p></div>
       <div class="fac-note"><p><strong>Facilities verdict:</strong> ${u.facilityDetails.note}</p></div>

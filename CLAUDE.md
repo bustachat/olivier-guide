@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v40.2 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v40.4 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -669,7 +669,7 @@ Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are delibera
 
 ## 6. Version History & Current State
 
-**Current version: v40.2 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
+**Current version: v40.4 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
@@ -722,7 +722,6 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
 - **Northeast CC still listed in `data/pipeline.json`'s non-Elite JUCO group** (found while updating pipeline.json for the v39 batch, pre-existing and NOT caused by this session) — `jucoTier` was upgraded Standard→Elite back in v38.9 after its 2024 NJCAA DII National Championship was found, but the corresponding pipeline.json "Elite JUCO" combined-entry group was never updated to move it out of the "Santa Monica / Miami Dade / Northeast CC" row. Per scope discipline (§7 Phase 1 "Scope discipline during research"), not fixed in this session since Northeast CC wasn't the school being worked on — flagging for a future data-update session.
 - **CLAUDE.md §7 Phase 5's "score breakdown tooltip" checklist item describes a feature that does not exist anywhere in the current build** — checked both new (Phoenix College) and pre-existing (Barton CC) schools; the fit score display (`#modal-fit-score`, `#fit-[id]`) has no `onclick`/tooltip behavior on either the card or the modal. Either the feature was removed without updating the checklist, or it was never built. Needs a doc correction once confirmed which.
 - **[ENHANCEMENT, not a bug — owner explicitly deferred, do not fix without being asked]** `soccerLevel` display-text format is inconsistent across 3 pre-existing JUCO schools (found while answering an owner question, not caused by this session) — Northeast CC, Monroe, and Indian Hills use `"JUCO — NJCAA Division X (detail)"`; the other 9 pre-existing JUCOs and all 17 added this session use `"NJCAA Division X — Conference/Region"`. Purely cosmetic (the field isn't read by scores.js). Tracked in the `ux_improvement_backlog.md` memory as item D1.
-- **2 pre-existing schools have map dots off the drawn landmass, found incidentally while fixing the v39 batch's coordinates**: `ucirvine` and `vermont`. Not caused by this session and not fixed (out of scope — neither was being worked on) — same class of bug as the v39 batch's original mapX/mapY error, just never caught before now. Fix using the `isPointInFill` method documented in the mapX/mapY guidance above.
 
 ---
 

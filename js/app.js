@@ -252,7 +252,7 @@ function toggleDivSection(btn){
 
 // ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
-  {key:'overall',   label:'Best Overall',     desc:"Olivier's Fit Score — soccer program quality, minutes outlook, climate, and city lifestyle combined. GPA, cost, and ACU alignment are handled separately (ATAR/budget toggles, Financial Model, ACU Alignment tab)."},
+  {key:'overall',   label:'Best Overall',     desc:"Olivier's Fit Score — soccer program quality, minutes outlook, climate, and city lifestyle combined, minus a housing penalty where a school has no or unguaranteed on-campus housing. GPA, cost, and ACU alignment are handled separately (ATAR/budget toggles, Financial Model, ACU Alignment tab)."},
   {key:'academic',  label:'Academic-First',   desc:'Weights ACU BESS unit alignment (85%) plus a baseline. UF tops this list but cannot be played at — flagged accordingly.'},
   {key:'minutes',   label:'Minutes Outlook',  desc:'2027-entry roster opportunity. Higher = more midfielder slots opening up before Olivier arrives.'},
   {key:'lifestyle', label:'Lifestyle-First',  desc:'Climate (warm), city access, and cultural match for Sydney-raised Olivier.'},
@@ -705,7 +705,7 @@ function buildCard(u){
     '</div>'+
     ivyWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item" data-tip="Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). 90%+ = excellent soccer/lifestyle opportunity."><div class="ss-val" id="fit-'+u.id+'" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item" data-tip="Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined — minus a penalty (−6/−3) where on-campus housing is missing or unguaranteed. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). 90%+ = excellent soccer/lifestyle opportunity."><div class="ss-val" id="fit-'+u.id+'" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item" data-tip="Dev Score: Average of 3 soccer development sub-scores — Tactical, Technical, and Fitness Programming. Reflects how well the program will develop Olivier as a player."><div class="ss-val" style="color:'+(devAvg===null?'var(--hint)':sc(devAvg))+'">'+(devAvg===null?'—':devAvg+'%')+'</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item" data-tip="ACU Alignment: How many of Olivier\'s 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial."><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+

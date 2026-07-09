@@ -73,9 +73,27 @@ function soccerQualityScore(school) {
   return (devAvg * 0.6) + (mlsFactor * 0.3) + (divStrength * 0.1);
 }
 
+// ── Housing penalty (added v41.0, owner-approved) ────────────────────────────
+// On-campus housing is a feasibility issue for a 17-18yo international —
+// no dorms means sourcing off-campus rent, transport, and utilities alone in
+// a foreign country. Flat deduction after the weighted total: −6 when the
+// school has no on-campus housing, −3 when housing exists but is limited /
+// unguaranteed (first-come-first-served, waitlisted). available:true costs
+// nothing. A missing housing field also costs nothing here, but the field is
+// required on every full profile since v41 (enforced by validate_consistency.js),
+// so "absent" can only mean a data error the validator will flag anyway.
+function housingPenalty(school) {
+  const h = school.facilityDetails && school.facilityDetails.housing;
+  if (!h) return 0;
+  if (h.available === false) return 6;
+  if (h.available === 'limited') return 3;
+  return 0;
+}
+
 // ── MAIN: Calculate Fit Score ────────────────────────────────────────────────
 // Returns 0–100 integer. Soccer Program Quality 40% + Minutes Outlook 35% +
-// Climate 15% + City 10% (weights in athletes/olivier.json scoreWeights).
+// Climate 15% + City 10% (weights in athletes/olivier.json scoreWeights),
+// minus the flat housing penalty (v41.0) — see housingPenalty() above.
 // Same formula for JUCO and non-JUCO — ACU was never in it, so there's
 // nothing to redistribute.
 function calculateFitScore(school, athlete) {
@@ -87,7 +105,7 @@ function calculateFitScore(school, athlete) {
     city:           cityScore(school, athlete)    * w.city,
   };
   const total = Object.values(components).reduce((a, b) => a + b, 0);
-  return Math.min(100, Math.max(0, Math.round(total)));
+  return Math.min(100, Math.max(0, Math.round(total) - housingPenalty(school)));
 }
 
 // ── Recalculate all scores and update cards ──────────────────────────────────

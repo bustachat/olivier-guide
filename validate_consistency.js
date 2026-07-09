@@ -68,6 +68,12 @@ schools.filter(s => s.profileDepth === 'full').forEach(s => {
     if (dk !== 'fitness,tactical,technical') note('DEV', `${s.id} devScores keys: ${dk}`);
   }
   if (s.kinRank === undefined) note('KINRANK', `${s.id} missing kinRank (renders 'undefined' in modal Degree tab)`);
+  // HOUSING (v41.0): facilityDetails.housing is REQUIRED on every full profile — it feeds the
+  // Fit Score housing penalty (−6 none / −3 limited), so an absent field silently skips the
+  // penalty. This check is the enforcement gate for future New School sessions (§7 Phase 1H).
+  const h = s.facilityDetails && s.facilityDetails.housing;
+  if (!h) note('HOUSING', `${s.id} missing facilityDetails.housing — required since v41.0 (feeds the Fit Score housing penalty; research via official residence-life page, §7 Phase 1H)`);
+  else if (![true, false, 'limited'].includes(h.available)) note('HOUSING', `${s.id} housing.available='${h.available}' — must be exactly true | false | "limited"`);
 });
 
 // ── fin component sums ──
@@ -174,12 +180,20 @@ function moScore(s) {
   const y1 = (t[0] ? t[0].pct : 50) / 100, y2 = (t[1] ? t[1].pct : t[0].pct) / 100; return Math.min(1, y1 * 0.6 + y2 * 0.4);
 }
 const wantsWarm = athlete.lifestylePrefs.includes('warm'), wantsCity = athlete.lifestylePrefs.includes('city');
+// mirrors scores.js housingPenalty() (v41.0): −6 no on-campus housing, −3 limited/unguaranteed
+function housingPenalty(s) {
+  const h = s.facilityDetails && s.facilityDetails.housing;
+  if (!h) return 0;
+  if (h.available === false) return 6;
+  if (h.available === 'limited') return 3;
+  return 0;
+}
 const fitMismatches = [];
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
   const w = athlete.scoreWeights;
   const total = soccerQualityScore(s) * w.soccerQuality + moScore(s) * w.minutesOutlook
     + (wantsCity ? (s.city ? 1 : 0.3) : 1) * w.city + (wantsWarm ? (s.warm ? 1 : 0.2) : 1) * w.climate;
-  const fit = Math.min(100, Math.max(0, Math.round(total)));
+  const fit = Math.min(100, Math.max(0, Math.round(total) - housingPenalty(s)));
   if (Math.abs(fit - (s.fitOlivier || 0)) > 1) fitMismatches.push(`${s.id} (${s._file}): stored ${s.fitOlivier}, live formula ${fit}`);
 });
 if (fitMismatches.length) {

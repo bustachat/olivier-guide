@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v40.11 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v41.0 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -455,6 +455,21 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 
 ---
 
+### CHANGE TYPE 12 — facilityDetails.housing Changed (added v41.0)
+
+**Housing feeds the Fit Score since v41.0 — a housing change is a score change, not a display tweak.**
+
+| Step | What to update | Why |
+|---|---|---|
+| 1 | `data/[conf].json` — facilityDetails.housing{} | `available` exactly `true` \| `false` \| `"limited"` + note. Tier-1: official residence-life page. |
+| 2 | `data/[conf].json` — fitOlivier | Re-apply the penalty: −6 false / −3 limited / 0 true. Stored value must match scores.js output. |
+| 3 | `data/[conf].json` — lensScores.overall | Same integer as fitOlivier. |
+| 4 | `data/[conf].json` — lensScores.value | value = fitOlivier×0.6 + affordability×40 — recompute since fitOlivier moved. |
+
+**Tabs to verify:** Explore (card score + Best Fit sort position), Dashboard Top 8 (may reshuffle), school modal fit score, housing warning chip on card/modal. `node validate_consistency.js` catches a missed cascade (fit drift) AND a missing/invalid housing field (HOUSING check).
+
+---
+
 ## 4. Immovable Architecture Rules
 
 These rules cannot be overridden by the user in session. If a proposed change would violate one, stop and flag it.
@@ -549,7 +564,7 @@ For **NJCAA-affiliated** JUCO schools, also add `"njcaaRegion": "Region N"` + `"
 - `minutesOutlook.recruit_risk` — must be exactly `Low` | `Medium` | `High`. The renderers have no branch for anything else: `Very High`, `Medium-High`, `Moderate`, or sentence-style values all fall through to the green "Open" label — the opposite of the researched meaning.
 - Stored `fitOlivier` / `lensScores.overall` must always equal the live scores.js formula output (`calculateFitScore()` — Soccer Priority formula since v37.1). `recalculateAllScores()` runs on every page load (`initApp()`), so any drift shows up immediately, not just when some toggle is touched. `node validate_consistency.js` checks this (Phase 4).
 - `juco2yr: true` is the ONLY flag renderACUTable() uses to exclude JUCOs from the ACU Alignment tab — `div: "JUCO"` alone does NOT exclude.
-- `facilityDetails.housing` (added v37.7) — **display is silent-unless-flagged, by design.** The card/modal only show a tag when `available === false` or `"limited"`; `available: true` (or the field simply being absent/unresearched) renders nothing. This mirrors the `top`/`jucoTier==='Elite'` pattern — don't add a "has housing" positive-case tag, it would clutter every card for the expected default. As of v37.7 only the 12 JUCO schools are researched (2 confirmed no housing: Santa Monica, Miami Dade; 1 limited: Daytona State — only 67 units, waitlisted). The 81 non-JUCO schools are unresearched (field absent, so silent) — do not assume all of them have housing without checking; a missing field means "not yet researched," not "confirmed available."
+- `facilityDetails.housing` — **REQUIRED on every full profile since v41.0, and it feeds the Fit Score.** `available` must be exactly `true | false | "limited"` — the housing penalty (−6/−3, see the weights table above) and a validate_consistency.js HOUSING check both read it. Display remains silent-unless-flagged (tag only when `false`/`"limited"`, same pattern as `top`/Elite JUCO — don't add a positive-case tag). All 110 schools researched Tier-1 as of v40 (12 JUCOs v37.7, 81 non-JUCO v38.2-v38.12, 17 v39 JUCOs in v39). A school added without this field now fails validation AND silently skips the penalty — never omit it.
 
 ### School object (listed-profile)
 Same fields but `profileDepth: "listed"`.
@@ -660,6 +675,7 @@ pathways{ paths[], coachQuestions[] }
 | Minutes Outlook | 35% | `(Yr1%×0.6) + (Yr2%×0.4)`, neutral 0.5 if unavailable |
 | Climate | 15% | 1.0 if warm, else 0.2 (Olivier wants warm) |
 | City Campus | 10% | 1.0 if city, else 0.3 (Olivier wants city) |
+| **Housing penalty (v41.0)** | flat deduction | after the weighted total: **−6** if `facilityDetails.housing.available === false`, **−3** if `"limited"`, 0 if `true`. Owner-approved v41.0 — a young international with no dorms faces off-campus rent + transport alone; no other toggle captures this. `housingPenalty()` in scores.js; mirrored in validate_consistency.js. |
 
 Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are deliberately **not** in the Fit Score at all (v37.1 decision): they already have dedicated views (ATAR/budget toggles, Financial Model tab, ACU Alignment tab) and can't be predicted ahead of a real offer, so blending them in was actively misleading (e.g. Stanford sitting at 41% purely because of cost, pre-v37.1). When a real offer appears, check GPA/Cost/ACU manually via those dedicated views — don't expect the Fit Score to reflect them.
 
@@ -669,7 +685,7 @@ Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are delibera
 
 ## 6. Version History & Current State
 
-**Current version: v40.11 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
+**Current version: v41.0 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
@@ -835,6 +851,7 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 - [ ] Sports science / sports medicine resources
 - [ ] Academic labs relevant to BESS / pre-PT
 - [ ] Facility rating: Elite / Excellent / Very Good / Good / Solid
+- [ ] **On-campus housing: available / limited / none — Claude for Chrome → official housing/residence-life page (Tier 1). REQUIRED — feeds the Fit Score housing penalty (v41.0: −6 none / −3 limited) and validate_consistency.js fails a full profile without it. "limited" = housing exists but unguaranteed (first-come-first-served / waitlisted).**
 - [ ] Campus setting: urban / suburban / rural
 - [ ] Warm climate? Y/N (Florida, California, Southwest, Texas, Southeast)
 - [ ] City campus? Y/N (major city, walkable urban)
@@ -854,7 +871,7 @@ Using scores.js logic — read scores.js if unsure of the formula. **v37.1: fitO
 - [ ] `minutesScore`: 0.5 if available:false; else `(Yr1%×0.6) + (Yr2%×0.4)`
 - [ ] `cityScore`: city=true → 1.0, false → 0.3
 - [ ] `climateScore`: warm=true → 1.0, false → 0.2
-- [ ] **`fitOlivier`** = `soccerQualityScore×40 + minutesScore×35 + climateScore×15 + cityScore×10`, rounded to integer. Same formula for JUCO and non-JUCO.
+- [ ] **`fitOlivier`** = `soccerQualityScore×40 + minutesScore×35 + climateScore×15 + cityScore×10`, rounded to integer, **then minus the housing penalty (v41.0): −6 if housing.available===false, −3 if "limited"**. Same formula for JUCO and non-JUCO.
 - [ ] `lensScores` — calculate each using these formulas:
   - `soccer`:    same as `soccerQualityScore` above × 100 (kept as data even though the standalone "Soccer-First" Lens UI was retired in v37.1)
   - `academic`:  (acuAlign/16 × 0.85) + 0.15 → ×100

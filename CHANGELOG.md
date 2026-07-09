@@ -6,7 +6,7 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
-### v40.1 – v40.9 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed, Northeast CC Elite JUCO pipeline fix, Keiser location correction, Region 1 social/contact verification
+### v40.1 – v40.10 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed, Northeast CC Elite JUCO pipeline fix, Keiser location correction, Region 1 social/contact verification
 
 Found during the v40 session's browser verification pass over the v39 work (the pass v39.7 had skipped — a concurrent session held the preview slot then). The v39 work itself verified clean; the new find was **pre-existing**:
 
@@ -26,9 +26,11 @@ Found during the v40 session's browser verification pass over the v39 work (the 
 
 - **v40.9 — Region 11 (IA) social media + coach contact verification, batch 3.** Southeastern CC: program-specific X `@SCCIowa_Soccer` (confirmed active) + dept FB `southeastern.blackhawks`; coaches page publishes names only (Henrique Vieira confirmed still head coach) — contact stays `null`. Iowa Lakes CC: **program-specific IG `@iowalakessoccer` ("Iowa Lakes Men's Soccer", confirmed active)** + men's-soccer FB page + dept X/YT; coach Ben MacRae Tier-1 confirmed (bmacrae@iowalakes.edu / 712-580-8609, official coaches page), synced across both files.
 
+- **v40.10 — Region 14 (TX/LA) social media + coach contact verification, batch 4.** Blinn: dept FB `BuccaneerSports` only; coach Michael McBride confirmed (michael.mcBride@blinn.edu / 979-830-4922, official staff directory). Coastal Bend: college FB only (site sat behind a Cloudflare challenge that eventually cleared in the real browser — same behavior v39.5 documented); coach Justin Rodriguez confirmed (jrrodriguez7@coastalbend.edu / 361-354-2744). Angelina: **program-specific IG `@angelinamsoc` + X `@AngelinaMSOC`**, both confirmed active; coaches page publishes names only (Martin Melchor confirmed still head coach) — contact stays `null`. LSU Eunice: **program-specific X `@LSUEBengalsMSOC` + FB `LSUEMensSoccer`** + dept IG `lsuebengals`; coach John Plumbar confirmed (jplumbar@lsue.edu / 337-457-6138 — the official directory itself lists LSUEBengalsMSOC as the program's X, double-confirming the handle). All coach contacts synced across both files, staff arrays clean.
+
 Full v40 session kickoff detail: the v39 verification pass confirmed all 358 trajectory chips render real years, 110 map dots with only the 2 known deferred off-land (ucirvine, vermont — fixed in v40.4 above), coach ranks 1–110 sequential, all 24 conference cards, Phoenix College modal all 9 tabs, zero console errors.
 
-- guideVersion bumped v39.6 → v40.9 across the session.
+- guideVersion bumped v39.6 → v40.10 across the session.
 
 ---
 

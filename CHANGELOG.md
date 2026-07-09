@@ -6,7 +6,7 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
-### v40.1 – v40.6 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed, Northeast CC Elite JUCO pipeline fix, Keiser location correction
+### v40.1 – v40.7 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed, Northeast CC Elite JUCO pipeline fix, Keiser location correction, Region 1 social/contact verification
 
 Found during the v40 session's browser verification pass over the v39 work (the pass v39.7 had skipped — a concurrent session held the preview slot then). The v39 work itself verified clean; the new find was **pre-existing**:
 
@@ -20,9 +20,11 @@ Found during the v40 session's browser verification pass over the v39 work (the 
 
 - **v40.6 — Keiser University location corrected Fort Lauderdale → West Palm Beach** (deferred since v38.11, when housing research found the athletics campus — Seahawks, Vecellio Field, residential Flagship Campus — is in West Palm Beach, not Fort Lauderdale as 12 field occurrences claimed). All 12 corrected across `loc`, `culture` (vibe/thingsToDo/socialScene/olivierMatch/lifestyleTags), `facilityDetails` (stadium/trainingFields/extras), `coach.profile`, `rec`, and the housing note's discrepancy flag (now resolved). Lifestyle references and distances (Fort Lauderdale 45 min, Miami 90 min, Palm Beach Island beaches) kept consistent with PBA's already-verified West Palm Beach profile. `mapX`/`mapY` (475,299) → (478,303) via `isPointInFill()`, just inland of PBA (481,304) matching the Flagship Campus's Military Trail position — all 110 dots still on-land. `warm`/`city` booleans unchanged (West Palm Beach is equally warm and a real city, same as PBA) → **zero score cascade**, fitOlivier stays 51. Two intentional "Fort Lauderdale" mentions remain as nearby-destination distances, mirroring PBA's framing.
 
+- **v40.7 — Region 1 (AZ) social media + coach contact verification, batch 1 of the v39 research-debt pass** (Chrome MCP per §15, the tool v39 skipped). Social accounts harvested from each official athletics site and the IG/X accounts navigated + confirmed active per §7 Phase 1I: Phoenix College (IG/X/FB/YT — dept accounts), Pima CC (IG/X/FB/YT — dept accounts), Mohave CC (college-wide accounts, linked from the athletics site's own footer — no athletics-specific accounts exist), Glendale CC (X only — no IG/FB/YT found anywhere on the site). Coach contacts Tier-1 confirmed from official coaches pages and synced across both files (two-file rule): Phoenix David Cameron (david.cameron@phoenixcollege.edu / 602-285-7665), Pima David Cosgrove (dcosgrove@pima.edu / 520-370-3717), Glendale Jeff Perry (jeff.perry@gccaz.edu / 623-845-3782). Mohave's coaches page publishes names only — email/phone honestly stay `null`. One self-inflicted bug caught and fixed before commit: the first scripted edit wrote the head-coach email into a staff[] member's null email field (staff nulls precede contact{} in coaches.json) — repaired, verified staff arrays clean + both files in exact sync. 13 schools (Regions 6/11/14/15) remain for future batches.
+
 Full v40 session kickoff detail: the v39 verification pass confirmed all 358 trajectory chips render real years, 110 map dots with only the 2 known deferred off-land (ucirvine, vermont — fixed in v40.4 above), coach ranks 1–110 sequential, all 24 conference cards, Phoenix College modal all 9 tabs, zero console errors.
 
-- guideVersion bumped v39.6 → v40.6 across the session.
+- guideVersion bumped v39.6 → v40.7 across the session.
 
 ---
 

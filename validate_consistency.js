@@ -80,12 +80,39 @@ schools.filter(s => s.fin && s.fin.costNum > 0).forEach(s => {
 });
 
 // ── minutesOutlook / recruit_risk enum ──
+// MO-KEYS (added v40.2): exact key-name audit. Both the v39.7 bug (trajectory "yr" instead of
+// "year", 19 schools) and the v40.1 bug ("mf_total_2026" instead of "mf_total_2025", 7 schools;
+// missing rising_senior_2027_count, 2 schools) were schema-adjacent key names that every other
+// check accepted — they render as the literal text "undefined" in the Minutes Outlook UI.
+const MO_KEYS_AVAILABLE = new Set(['available', 'mf_total_2025', 'cleared_before_2027', 'cleared_names',
+  'rising_senior_2027_count', 'rising_senior_2027_names', 'rising_junior_2027_count', 'rising_junior_2027_names',
+  'recruit_risk', 'trajectory', 'trajectoryNote', 'recruit_pathway', 'recruit_pathway_note',
+  'australianNote']); // australianNote: one-off narrative field, present in live data
+const MO_KEYS_UNAVAILABLE = new Set(['available', 'note', 'reason']);
+const MO_REQUIRED = ['mf_total_2025', 'cleared_before_2027', 'rising_senior_2027_count', 'rising_junior_2027_count', 'recruit_risk', 'trajectory'];
+const TRAJ_KEYS = ['year', 'yr_label', 'pct', 'label'];
+// Honest researched gaps, not bugs — tracked in CLAUDE.md §6 deferred items (v40.1): re-scrape Sept–Nov 2026.
+// Renderers guard these with '—' since v40.1. Remove from this whitelist once researched.
+const MO_MISSING_OK = new Set(['notredame:rising_senior_2027_count', 'georgetown:rising_senior_2027_count']);
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
   const mo = s.minutesOutlook;
   if (!mo) { note('MO', `${s.id} missing minutesOutlook`); return; }
   if (mo.available) {
     if (!Array.isArray(mo.trajectory) || !mo.trajectory.length) note('MO', `${s.id} available:true but no trajectory`);
     if (mo.recruit_risk && !['Low', 'Medium', 'High'].includes(mo.recruit_risk)) note('MO', `${s.id} recruit_risk='${mo.recruit_risk}' — renderers only understand Low|Medium|High; this displays as green 'Open'`);
+    Object.keys(mo).filter(k => !MO_KEYS_AVAILABLE.has(k)).forEach(k =>
+      note('MO-KEYS', `${s.id} unknown minutesOutlook key '${k}' — misnamed keys render as literal 'undefined' (schema: CLAUDE.md §5)`));
+    MO_REQUIRED.filter(k => mo[k] === undefined && !MO_MISSING_OK.has(s.id + ':' + k)).forEach(k =>
+      note('MO-KEYS', `${s.id} missing required minutesOutlook key '${k}'`));
+    (mo.trajectory || []).forEach((t, i) => {
+      Object.keys(t).filter(k => !TRAJ_KEYS.includes(k)).forEach(k =>
+        note('MO-KEYS', `${s.id} trajectory[${i}] unknown key '${k}' (schema keys: ${TRAJ_KEYS.join(', ')})`));
+      TRAJ_KEYS.filter(k => t[k] === undefined).forEach(k =>
+        note('MO-KEYS', `${s.id} trajectory[${i}] missing key '${k}' — renders as 'undefined' in trajectory rows`));
+    });
+  } else {
+    Object.keys(mo).filter(k => !MO_KEYS_UNAVAILABLE.has(k)).forEach(k =>
+      note('MO-KEYS', `${s.id} unknown minutesOutlook key '${k}' on an available:false object`));
   }
 });
 

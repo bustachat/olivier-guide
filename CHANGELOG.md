@@ -6,7 +6,7 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
-### v40.1 – v40.10 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed, Northeast CC Elite JUCO pipeline fix, Keiser location correction, Region 1 social/contact verification
+### v40.1 – v40.11 (July 2026) — v39 aftermath cleanup: Minutes Outlook undefined fixes, MO-KEYS validator check, docs reconciliation, map dots, Northeast CC pipeline, Keiser location, and the full 17-school social/contact verification pass
 
 Found during the v40 session's browser verification pass over the v39 work (the pass v39.7 had skipped — a concurrent session held the preview slot then). The v39 work itself verified clean; the new find was **pre-existing**:
 
@@ -28,9 +28,11 @@ Found during the v40 session's browser verification pass over the v39 work (the 
 
 - **v40.10 — Region 14 (TX/LA) social media + coach contact verification, batch 4.** Blinn: dept FB `BuccaneerSports` only; coach Michael McBride confirmed (michael.mcBride@blinn.edu / 979-830-4922, official staff directory). Coastal Bend: college FB only (site sat behind a Cloudflare challenge that eventually cleared in the real browser — same behavior v39.5 documented); coach Justin Rodriguez confirmed (jrrodriguez7@coastalbend.edu / 361-354-2744). Angelina: **program-specific IG `@angelinamsoc` + X `@AngelinaMSOC`**, both confirmed active; coaches page publishes names only (Martin Melchor confirmed still head coach) — contact stays `null`. LSU Eunice: **program-specific X `@LSUEBengalsMSOC` + FB `LSUEMensSoccer`** + dept IG `lsuebengals`; coach John Plumbar confirmed (jplumbar@lsue.edu / 337-457-6138 — the official directory itself lists LSUEBengalsMSOC as the program's X, double-confirming the handle). All coach contacts synced across both files, staff arrays clean.
 
+- **v40.11 — Region 15 (NY) social media + coach contact verification, batch 5 of 5 — pass COMPLETE for all 17 v39 schools.** Nassau: dept IG/X `lionsncc` (IG confirmed active) + FB; coach Dan Fisher confirmed (Daniel.Fisher@ncc.edu / 516-572-7522). Ulster: **official site links a dead Instagram ("Profile isn't available") — left `null`, proof the Phase 1I navigation check matters**; X `@UlsterSenators` confirmed active + FB/YT; coach Jamal Lis-Simmons confirmed (lissimmj@sunyulster.edu / 845-687-5013). Suffolk: dept IG `sunysflkathletics` (confirmed active) + X; coaches page names-only (Keith Ginsberg confirmed still head coach) — contact stays `null`. Westchester: dept FB only; coach Alfio Carrabotta confirmed (alfio.carrabotta@gmail.com — as published on the official directory / 914-606-7895). All contacts synced across both files, staff arrays clean.
+
 Full v40 session kickoff detail: the v39 verification pass confirmed all 358 trajectory chips render real years, 110 map dots with only the 2 known deferred off-land (ucirvine, vermont — fixed in v40.4 above), coach ranks 1–110 sequential, all 24 conference cards, Phoenix College modal all 9 tabs, zero console errors.
 
-- guideVersion bumped v39.6 → v40.10 across the session.
+- guideVersion bumped v39.6 → v40.11 across the session.
 
 ---
 

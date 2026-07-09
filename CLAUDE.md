@@ -56,7 +56,7 @@ For data work, read the specific conference file:
 | Ivy League | `data/ivy.json` | Princeton, Yale (2) |
 | D2, NAIA, D3 | `data/d2.json` | Nova SE, Barry, Lynn, PBA, Cal State LA, St. Edward's, Georgian Court, U of Charleston, Columbia College, Oklahoma City, Keiser, Chapman (12) |
 
-### School → File Reference Table (93 schools)
+### School → File Reference Table (110 schools)
 
 **Maintenance rule: update this table whenever a school is added, removed, or changes conference file.**
 This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (commit checklist).
@@ -64,10 +64,12 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | School | File | ID | Div | Conference |
 |---|---|---|---|---|
 | Akron | `data/d1-other.json` | `akron` | D1 | MAC |
+| Angelina College | `data/juco.json` | `angelina_college` | JUCO | NJCAA DI / Region 14 |
 | Arizona Western | `data/juco.json` | `arizona_western` | JUCO | NJCAA DI / ACCAC |
 | Army | `data/aac.json` | `army` | D1 | AAC |
 | Barry | `data/d2.json` | `barry` | D2 | Sunshine State (SSC) |
 | Barton CC | `data/juco.json` | `barton_cc` | JUCO | NJCAA DI / KJCCC |
+| Blinn College | `data/juco.json` | `blinn_college` | JUCO | NJCAA DI / Region 14 |
 | Butler | `data/big-east.json` | `butler` | D1 | Big East |
 | Cal | `data/acc.json` | `cal` | D1 | ACC |
 | Cal Poly | `data/big-west.json` | `calpoly` | D1 | Big West |
@@ -76,6 +78,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Charleston | `data/caa.json` | `charleston` | D1 | CAA |
 | Charlotte | `data/aac.json` | `charlotte` | D1 | AAC |
 | Clemson | `data/acc.json` | `clemson` | D1 | ACC |
+| Coastal Bend College | `data/juco.json` | `coastal_bend_cc` | JUCO | NJCAA DI / Region 14 |
 | Columbia College | `data/d2.json` | `columbia_college` | NAIA | AMC |
 | Cowley CC | `data/juco.json` | `cowley_cc` | JUCO | NJCAA DI / KJCCC |
 | Creighton | `data/big-east.json` | `creighton` | D1 | Big East |
@@ -84,6 +87,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Delaware | `data/caa.json` | `delaware` | D1 | CAA |
 | Denver | `data/d1-other.json` | `denver` | D1 | WCC (from 2026) |
 | DePaul | `data/big-east.json` | `depaul` | D1 | Big East |
+| Dodge City CC | `data/juco.json` | `dodge_city_cc` | JUCO | NJCAA DI / KJCCC |
 | Drexel | `data/caa.json` | `drexel` | D1 | CAA |
 | Duke | `data/acc.json` | `duke` | D1 | ACC |
 | Eastern Florida State | `data/juco.json` | `efsc` | JUCO | NJCAA DI / FCSAA Region 8 |
@@ -93,12 +97,16 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | GCU | `data/d1-other.json` | `gcu` | D1 | WAC |
 | Georgetown | `data/big-east.json` | `georgetown` | D1 | Big East |
 | Georgian Court | `data/d2.json` | `georgian_court` | D2 | CACC |
+| Glendale CC | `data/juco.json` | `glendale_cc_az` | JUCO | NJCAA DII / ACCAC |
 | Hofstra | `data/caa.json` | `hofstra` | D1 | CAA |
 | Indian Hills | `data/juco.json` | `indian_hills` | JUCO | NJCAA DI |
 | Indiana | `data/big-ten.json` | `indiana` | D1 | Big Ten |
+| Iowa Lakes CC | `data/juco.json` | `iowa_lakes_cc` | JUCO | NJCAA DII / ICCAC |
 | Iowa Western | `data/juco.json` | `iowa_western` | JUCO | NJCAA DI |
+| Johnson County CC | `data/juco.json` | `johnson_county_cc` | JUCO | NJCAA DII / KJCCC |
 | Keiser | `data/d2.json` | `keiser` | NAIA | Sun Conference |
 | Louisville | `data/acc.json` | `louisville` | D1 | ACC |
+| LSU Eunice | `data/juco.json` | `lsu_eunice` | JUCO | NJCAA DI / Region 14 |
 | Lynn | `data/d2.json` | `lynn` | D2 | SSC |
 | Marquette | `data/big-east.json` | `marquette` | D1 | Big East |
 | Maryland | `data/big-ten.json` | `maryland` | D1 | Big Ten |
@@ -107,10 +115,13 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Miami Dade | `data/juco.json` | `miami_dade` | JUCO | NJCAA |
 | Michigan | `data/big-ten.json` | `michigan` | D1 | Big Ten |
 | Michigan State | `data/big-ten.json` | `michiganstate` | D1 | Big Ten |
+| Mohave CC | `data/juco.json` | `mohave_cc` | JUCO | NJCAA DI / ACCAC |
 | Monmouth | `data/caa.json` | `monmouth` | D1 | CAA |
 | Monroe | `data/juco.json` | `monroe_college` | JUCO | NJCAA DI |
+| Nassau CC | `data/juco.json` | `nassau_cc` | JUCO | NJCAA DI / Region 15 |
 | Navy | `data/aac.json` | `navy` | D1 | AAC |
 | NC State | `data/acc.json` | `ncstate` | D1 | ACC |
+| Neosho County CC | `data/juco.json` | `neosho_county_cc` | JUCO | NJCAA DII / KJCCC |
 | Northeast CC | `data/juco.json` | `northeast_cc` | JUCO | NJCAA DII |
 | Northeastern | `data/caa.json` | `northeastern` | D1 | CAA |
 | Northwestern | `data/big-ten.json` | `northwestern` | D1 | Big Ten |
@@ -120,6 +131,8 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Oklahoma City | `data/d2.json` | `ocu` | NAIA | SAC |
 | PBA | `data/d2.json` | `pba` | D2 | SSC |
 | Penn State | `data/big-ten.json` | `pennstate` | D1 | Big Ten |
+| Phoenix College | `data/juco.json` | `phoenix_college` | JUCO | NJCAA DII / ACCAC |
+| Pima CC | `data/juco.json` | `pima_cc` | JUCO | NJCAA DII / ACCAC |
 | Pittsburgh | `data/acc.json` | `pittsburgh` | D1 | ACC |
 | Princeton | `data/ivy.json` | `princeton` | IVY | Ivy League |
 | Providence | `data/big-east.json` | `providence` | D1 | Big East |
@@ -127,10 +140,12 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Santa Monica | `data/juco.json` | `smc` | JUCO | CCCAA / SCFA |
 | Seton Hall | `data/big-east.json` | `setonhall` | D1 | Big East |
 | SMU | `data/acc.json` | `smu` | D1 | ACC |
+| Southeastern CC | `data/juco.json` | `southeastern_cc_ia` | JUCO | NJCAA DII / ICCAC |
 | St. Edward's | `data/d2.json` | `stedwards` | D2 | Lone Star (LSC) |
 | St. John's | `data/big-east.json` | `stjohns` | D1 | Big East |
 | Stanford | `data/acc.json` | `stanford` | D1 | ACC |
 | Stony Brook | `data/caa.json` | `stonybrook` | D1 | CAA |
+| Suffolk CC | `data/juco.json` | `suffolk_cc` | JUCO | NJCAA DI / Region 15 |
 | Syracuse | `data/acc.json` | `syracuse` | D1 | ACC |
 | Temple | `data/aac.json` | `temple` | D1 | AAC |
 | Tulsa | `data/aac.json` | `tulsa` | D1 | AAC |
@@ -145,6 +160,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | UCLA | `data/big-ten.json` | `ucla` | D1 | Big Ten |
 | UConn | `data/big-east.json` | `uconn` | D1 | Big East |
 | UCSB | `data/big-west.json` | `ucsb` | D1 | Big West |
+| Ulster County CC | `data/juco.json` | `ulster_cc` | JUCO | NJCAA DI / Region 15 |
 | UNC | `data/acc.json` | `unc` | D1 | ACC |
 | USF | `data/aac.json` | `usf` | D1 | AAC |
 | UVA | `data/acc.json` | `virginia` | D1 | ACC |
@@ -152,6 +168,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Villanova | `data/big-east.json` | `villanova` | D1 | Big East |
 | Wake Forest | `data/acc.json` | `wakeforest` | D1 | ACC |
 | Washington | `data/big-ten.json` | `washington` | D1 | Big Ten |
+| Westchester CC | `data/juco.json` | `westchester_cc` | JUCO | NJCAA DI / Region 15 |
 | William & Mary | `data/caa.json` | `william_mary` | D1 | CAA |
 | Wisconsin | `data/big-ten.json` | `wisconsin` | D1 | Big Ten |
 | Xavier | `data/big-east.json` | `xavier` | D1 | Big East |
@@ -652,13 +669,17 @@ Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are delibera
 
 ## 6. Version History & Current State
 
-**Current version: v38.12 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`.
+**Current version: v39.4 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. **Not yet committed as of this snapshot — 6+ files modified locally, awaiting owner review/commit.**
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
 ### State snapshot (update only when it changes)
-- 93 schools, all full-profile, across 10 conference JSON files. 93 coaches in coaches.json, ranked 1–93.
-- JUCO section: 12 schools. All 12 correctly flagged `juco2yr:true` (v36.6 fixed the 3 that were missing it). Fit Score formula (v37.1) is identical for JUCO and non-JUCO — no weight redistribution, since ACU was removed from the formula entirely.
+- 110 schools, all full-profile, across 10 conference JSON files. 110 coaches in coaches.json, ranked 1–110.
+- JUCO section: 29 schools, spanning all 6 NJCAA regions represented in the guide (Region 1 AZ, Region 6 KS, Region 8 FL — capped at 3, only 3 of 28 FCSAA colleges field men's soccer, Region 11 IA/NE, Region 14 TX/LA, Region 15 NY) plus Santa Monica (CCCAA, non-NJCAA). All 29 correctly flagged `juco2yr:true`. Fit Score formula (v37.1) is identical for JUCO and non-JUCO — no weight redistribution, since ACU was removed from the formula entirely.
+- **v39.1-v39.4 — JUCO region sub-sections (Explore tab) + 17 new JUCO schools added toward a top-5-per-region target:** Explore tab's JUCO section now groups cards by NJCAA region with collapsible sub-headers that correctly hide/show under search and filters (`js/app.js` `renderCards()`). 17 new schools added: Phoenix College (2025 NJCAA DII National Champions — most decorated current JUCO in the guide), Pima CC, Mohave CC, Glendale CC (Region 1); Dodge City CC, Neosho County CC, Johnson County CC (Region 6); Southeastern CC, Iowa Lakes CC (Region 11); Blinn College, Coastal Bend College, Angelina College, LSU Eunice (Region 14); Nassau CC, Ulster County CC, Suffolk CC, Westchester CC (Region 15). All Tier-1 sourced (njcaa.org rankings, official athletics/admissions sites). `data/conf-prestige.json` and `data/pipeline.json`'s combined "Elite JUCO" / regional-competitiveness rows were both updated to include the new schools — these two files are easy to miss (§7 Phase 3B/3F) since neither is touched by most other change types.
+  - Known gaps in this batch: social media (Instagram/Twitter/Facebook/YouTube) not verified for any of the 17 — all four fields set `null` rather than guessed, but the verification step itself (navigate to the account, confirm active) was skipped this session. Coach email/phone confirmed for only 1 of 17 (Johnson County CC's Jeff Cole) — the rest are `null` per the "never guess" rule.
+  - jucoTier "Elite" classification for the new schools is based on being nationally ranked in the Oct 20, 2025 NJCAA DI/DII top-20 — a point-in-time snapshot; re-verify each season rather than assuming it's still current.
+  - **Remediation pass (same session, after owner asked "did Claude follow the SDLC" then "is standings/roster research complete"):** two real gaps were found and closed. (1) `confRecord` had only been researched for 2025 on 13 of 17 schools — 2021-2024 were honestly-labeled `"Not re-verified this session"` placeholders rather than the 5-6 years of actual Tier-1 standings §7 Phase 1E requires. Re-researched all 4 missing years for every school via the conference standings archives (accac.org, kjccc.org, iccac.org, njcaaregion14.com, region15athletics.com) — all 17 now have real data for every year the program was a recognized conference member (some years are honestly "not a conference member yet," e.g. Mohave CC pre-2024, LSU Eunice pre-2024-25, never guessed). (2) The initial roster research had used `WebSearch`/`WebFetch` instead of the Claude for Chrome MCP tool §15's Research Intelligence table specifically mandates for "Roster scraping" and "Conference standings" — re-attempting the 4 "unavailable" rosters with the correct tool immediately fixed 2 of them (Southeastern CC: 17 MFs, Coastal Bend CC: 8 CMs — both had failed via WebFetch on a Sidearm/Cloudflare-protected page that a real browser renders fine) and confirmed the other 2 (Suffolk CC, Westchester CC) are genuinely missing position data even in a real browser, not a tooling artifact.
 - **v37.1 — Fit Score simplified to Soccer Priority only:** GPA, Cost, and ACU Alignment removed from fitOlivier entirely (they have dedicated views: ATAR/budget toggles, Financial Model, ACU Alignment tab). fitOlivier = Soccer Program Quality 40% + Minutes Outlook 35% + Climate 15% + City 10% (see §5 weights table). The With Minutes / Base Fit score-mode toggle and the "Soccer-First" Lens were both retired as redundant. `recalculateAllScores()` runs once on page load (`initApp()`) — no ATAR-slider dependency anymore since GPA isn't in the formula.
 - `recruit_pathway` / `recruit_pathway_note` schema added v34; populated only for the 4 v35 JUCO adds. Full 93-school pass deferred; this field carries no scoring weight and was never folded into fitOlivier (see CHANGELOG.md v34 notes) — now doubly moot since GPA-adjacent factors are out of the Fit Score entirely.
 - All 93 full-profile schools have `kinRank` populated (v36.7 backfilled the 45 that were missing it).
@@ -692,6 +713,15 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
 - recruit_pathway full pass across all 93 schools (see CHANGELOG.md v34)
 - **Keiser University location mislabel (found v38.11)** — `loc` says "Fort Lauderdale, FL" but the actual athletics campus (Seahawks, Vecellio Field, residential Flagship Campus) is in West Palm Beach. 12 occurrences of "Fort Lauderdale" across `loc`, `culture.vibe`/`thingsToDo`/`socialScene`/`lifestyleTags`, `facilityDetails.stadium`/`trainingFields`/`extras`, `coach.profile`, and `rec` all need correcting, plus `mapX`/`mapY` recalculated for West Palm Beach and verified on the Dashboard map. Housing itself was verified correctly at the real campus in v38.11 — only the surrounding text/location fields are wrong.
 - Older-year (2021-2023) `confRecord` entries for Temple, Georgian Court, Columbia College (MO), and Charleston (WV) are marked "not re-verified v38" — 2024/2025 (and 2021 for Charleston) were Tier-1 confirmed during the v38.10 pass, but the middle years were left as retained-from-prior-session rather than guessed. Low priority — informational only.
+- **Social media verification for the 17 v39.1-v39.4 JUCO adds** — all four SOCIAL fields (`js/app.js`) are `null` for every one of the 17; the "navigate to the account and confirm it's active" step (§7 Phase 1I) was skipped, not just left null because no account exists. Needs a dedicated pass.
+- **Coach email/phone for 16 of the 17 v39.1-v39.4 JUCO adds** — only Johnson County CC's Jeff Cole has a Tier-1 confirmed email/phone; the other 16 are `null` because no email/phone was published on the official site at time of research, not because it wasn't looked for. Re-check each program's staff directory periodically — JUCO staff pages change contact info more often than D1 programs.
+- **minutesOutlook unavailable for 2 of the 17 v39.1-v39.4 JUCO adds** — Suffolk CC and Westchester CC. Confirmed genuinely absent (not a tooling artifact): re-checked via Claude for Chrome MCP (real browser render, not WebFetch) and both sites publish class year but no position column for any player. (Southeastern CC and Coastal Bend CC were also on this list initially — WebFetch had failed on both, but Claude for Chrome MCP got full rosters with positions on the first real-browser attempt, confirming those two were a tooling mistake, not a genuine data gap. See [[feedback-sdlc-compliance]].)
+- **Coastal Bend CC coaching transition** — the program's #14 national ranking (2025) was earned under interim coach Manuel Iwabuchi; Justin Rodriguez was hired as permanent Head Coach in March 2026. Program direction under the new coach is unverified.
+- **Southeastern CC has an interim head coach (Henrique Vieira)** — same leadership-uncertainty caveat as Coastal Bend, flagged inline in the school's `coach.profile` but worth tracking for a future update once a permanent hire (if any) is announced.
+- **Northeast CC still listed in `data/pipeline.json`'s non-Elite JUCO group** (found while updating pipeline.json for the v39 batch, pre-existing and NOT caused by this session) — `jucoTier` was upgraded Standard→Elite back in v38.9 after its 2024 NJCAA DII National Championship was found, but the corresponding pipeline.json "Elite JUCO" combined-entry group was never updated to move it out of the "Santa Monica / Miami Dade / Northeast CC" row. Per scope discipline (§7 Phase 1 "Scope discipline during research"), not fixed in this session since Northeast CC wasn't the school being worked on — flagging for a future data-update session.
+- **CLAUDE.md §7 Phase 5's "score breakdown tooltip" checklist item describes a feature that does not exist anywhere in the current build** — checked both new (Phoenix College) and pre-existing (Barton CC) schools; the fit score display (`#modal-fit-score`, `#fit-[id]`) has no `onclick`/tooltip behavior on either the card or the modal. Either the feature was removed without updating the checklist, or it was never built. Needs a doc correction once confirmed which.
+- **[ENHANCEMENT, not a bug — owner explicitly deferred, do not fix without being asked]** `soccerLevel` display-text format is inconsistent across 3 pre-existing JUCO schools (found while answering an owner question, not caused by this session) — Northeast CC, Monroe, and Indian Hills use `"JUCO — NJCAA Division X (detail)"`; the other 9 pre-existing JUCOs and all 17 added this session use `"NJCAA Division X — Conference/Region"`. Purely cosmetic (the field isn't read by scores.js). Tracked in the `ux_improvement_backlog.md` memory as item D1.
+- **2 pre-existing schools have map dots off the drawn landmass, found incidentally while fixing the v39 batch's coordinates**: `ucirvine` and `vermont`. Not caused by this session and not fixed (out of scope — neither was being worked on) — same class of bug as the v39 batch's original mapX/mapY error, just never caught before now. Fix using the `isPointInFill` method documented in the mapX/mapY guidance above.
 
 ---
 
@@ -744,7 +774,7 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 - [ ] Athletics URL (men's soccer page) — for `url`
 - [ ] University homepage URL — for `SITE_URLS`
 - [ ] Athletics domain (for favicon) — use the domain of the ATHLETICS SITE, not the main university domain. JUCOs often have a separate athletics site (e.g. apacheathletics.com for TJC, not tjc.edu). Verify by loading the favicon: `https://[domain]/favicon.ico`
-- [ ] Latitude / longitude → calculate `mapX` / `mapY` (formula: mapX = (lon+124.5)/(124.5-67)×640, mapY = (49.5-lat)/(49.5-25)×390)
+- [ ] `mapX` / `mapY` — **do not use the lat/lon linear formula below to finalize these; verify against the actual map instead.** The formula is a rough starting guess only: `js/dashboard.js`'s `drawMapBase()` renders the Dashboard map as a hand-drawn, heavily simplified SVG polygon (not a real geographic projection), so a mathematically-correct lat/lon conversion routinely lands schools in the "ocean" — confirmed live in the v39.5 session for 6 of 17 new schools (all Gulf Coast TX/LA and outer Long Island NY) plus one pre-existing school (Arizona Western) that had never been caught. **Correct method:** load the Dashboard tab in a browser preview, get `document.getElementById('dash-map-svg').querySelectorAll('path')`, and test candidate coordinates with `path.isPointInFill(new DOMPoint(x,y))` — iterate until true, keeping the point directionally sensible relative to known-good nearby schools (same state/region). Never just check `0 ≤ x ≤ 640 && 0 ≤ y ≤ 390` — that only confirms the point is within the SVG viewBox, not on the drawn landmass. Rough formula for an initial guess only: mapX = (lon+124.5)/(124.5-67)×640, mapY = (49.5-lat)/(49.5-25)×390.
 - [ ] Undergraduate enrollment (for `size`)
 
 **1C — Academic**

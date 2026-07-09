@@ -2297,13 +2297,74 @@
     "licence": "USSF C, FA Level 2"
   },
   {
+    "id": "cameron_phoenix",
+    "schoolId": "phoenix_college",
+    "name": "David Cameron",
+    "school": "Phoenix College",
+    "div": "JUCO",
+    "conf": "NJCAA DII / ACCAC",
+    "rank": 50,
+    "rankClass": "rk-strong",
+    "overallScore": 68,
+    "devScore": 73,
+    "tacticalScore": 78,
+    "ptPathScore": 0,
+    "yearsHC": 21,
+    "record": "2025 NJCAA DII National Champions; ranked #1 nationally for 7 consecutive weeks (2025); 3 consecutive Region I titles (2021-2023); 6 straight national tournament appearances",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "David Cameron enters his 21st season as Head Coach at Phoenix College — one of the most successful active JUCO men's soccer coaches nationally. Winner of the 2025 NJCAA DII National Championship while ranked #1 nationally for 7 consecutive weeks, with 3 consecutive Region I titles (2021-2023) and 6 straight national tournament appearances. Named 2025 ACCAC Coach of the Year.",
+    "strengths": [
+      "2025 NJCAA DII National Champions",
+      "21-year tenured head coach — deepest institutional experience of any JUCO coach in the guide",
+      "6 straight national tournament appearances",
+      "Confirmed dedicated Exercise Science degree on campus"
+    ],
+    "staff": [
+      {
+        "name": "Carmen Esnal",
+        "role": "Assistant Coach (Goalkeepers)",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Ethan Dougherty",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Sergio Campos",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Tafadzwa Semwayo",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://pcbearsathletics.com/sports/msoc/coaches/cameron_dave",
+    "color": [
+      "#fef3c7",
+      "#92400e"
+    ]
+  },
+  {
     "id": "avery_smc",
     "schoolId": "smc",
     "name": "Lee Avery",
     "school": "Santa Monica College",
     "div": "JUCO",
     "conf": "CCCAA / SCFA",
-    "rank": 50,
+    "rank": 51,
     "rankClass": "rk-strong",
     "overallScore": 66,
     "devScore": 65,
@@ -2342,7 +2403,7 @@
     "yearsHC": 1,
     "record": "1st season 2026 — inheriting 2024 NCAA National Champions",
     "mlsPlayers": 2,
-    "rank": 51,
+    "rank": 52,
     "rankClass": "rk-strong",
     "overallScore": 66,
     "tacticalScore": 65,
@@ -2376,6 +2437,49 @@
     "licence": null
   },
   {
+    "id": "mcbride_blinn",
+    "schoolId": "blinn_college",
+    "name": "Michael McBride",
+    "school": "Blinn College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / Region 14",
+    "rank": 53,
+    "rankClass": "rk-strong",
+    "overallScore": 66,
+    "devScore": 69,
+    "tacticalScore": 73,
+    "ptPathScore": 0,
+    "yearsHC": 6,
+    "record": "65-43-8 career record at Blinn; ranked #8 nationally (NJCAA DI, Oct 2025); 26 years of collegiate coaching experience",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Michael McBride enters his 6th season as Head Coach at Blinn College, holding a 65-43-8 record and 26 years of collegiate coaching experience. Assistant coach Jacob Beerman holds a Bachelor of Science in Exercise Science (2015).",
+    "strengths": [
+      "26 years of collegiate coaching experience",
+      "65-43-8 record over 6 seasons at Blinn",
+      "Ranked #8 nationally (NJCAA DI, 2025)",
+      "On-campus RELLIS pathway to a BS in Kinesiology/Sport Management"
+    ],
+    "staff": [
+      {
+        "name": "Jacob Beerman",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": "B.S. Exercise Science (2015)"
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://blinn.prestosports.com/sports/msoc/coaches/Jacob_Beerman",
+    "color": [
+      "#fef2f2",
+      "#7f1d1d"
+    ]
+  },
+  {
     "id": "lenahan_northwestern",
     "schoolId": "northwestern",
     "name": "Tim Lenahan",
@@ -2385,7 +2489,7 @@
     "yearsHC": 18,
     "record": "Long-tenured Northwestern coach",
     "mlsPlayers": 1,
-    "rank": 52,
+    "rank": 54,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2428,7 +2532,7 @@
     "yearsHC": 14,
     "record": "154-64-38 career at Charlotte; 11 NCAA Tournament appearances; Conference USA CoY 2016; 16 pros developed",
     "mlsPlayers": 1,
-    "rank": 53,
+    "rank": 55,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 65,
@@ -2471,7 +2575,7 @@
     "yearsHC": 8,
     "record": "Building CAA competitive program in Boston",
     "mlsPlayers": 1,
-    "rank": 54,
+    "rank": 56,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 60,
@@ -2514,7 +2618,7 @@
     "yearsHC": 5,
     "record": "Multiple CAA titles (2022, 2025); building Elon into one of the most competitive mid-major soccer programs in the Southeast",
     "mlsPlayers": 1,
-    "rank": 55,
+    "rank": 57,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2554,7 +2658,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 56,
+    "rank": 58,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "devScore": 65,
@@ -2614,7 +2718,7 @@
     "yearsHC": 3,
     "record": "Competitive CAA program; player development focus; building Blue Hens into a consistent conference threat",
     "mlsPlayers": 2,
-    "rank": 57,
+    "rank": 59,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2648,6 +2752,49 @@
     "licence": null
   },
   {
+    "id": "chadderton_neosho",
+    "schoolId": "neosho_county_cc",
+    "name": "Elliot Chadderton",
+    "school": "Neosho County Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DII / KJCCC",
+    "rank": 60,
+    "rankClass": "rk-strong",
+    "overallScore": 65,
+    "devScore": 68,
+    "tacticalScore": 72,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "Ranked #4 nationally (NJCAA DII, Oct 2025); 2025 NJCAA DII national tournament at-large bid; Region 6/9 tournament runner-up",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Elliot Chadderton is Head Men's Soccer Coach at Neosho County Community College, leading a #4-nationally-ranked (NJCAA DII, 2025) and heavily international roster spanning England, Japan, Denmark, Germany, and Colombia. Assistant coach: Sam Hall.",
+    "strengths": [
+      "Ranked #4 nationally (NJCAA DII, 2025) — strongest of the guide's newest JUCO additions",
+      "2025 NJCAA DII national tournament at-large bid",
+      "Confirmed on-campus housing across two residence halls",
+      "Athletic Training academic program on campus"
+    ],
+    "staff": [
+      {
+        "name": "Sam Hall",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://goneosho.com/sports/mens-soccer/coaches",
+    "color": [
+      "#fef9c3",
+      "#854d0e"
+    ]
+  },
+  {
     "id": "bhatt_marquette",
     "schoolId": "marquette",
     "name": "David Korn",
@@ -2657,7 +2804,7 @@
     "yearsHC": 2,
     "record": "8yrs HC at D2 Maryville (98-38-26, 6 consecutive NCAA tournaments, 3 GLVC titles); D1 debut at Marquette 2024",
     "mlsPlayers": 2,
-    "rank": 58,
+    "rank": 61,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "tacticalScore": 63,
@@ -2697,7 +2844,7 @@
     "school": "Georgian Court University",
     "div": "D2",
     "conf": "CACC",
-    "rank": 59,
+    "rank": 62,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 66,
@@ -2742,7 +2889,7 @@
     "yearsHC": 10,
     "record": "Multiple Big West Coach of the Year awards; conference titles; consistent NCAA berths; 2025 Big West Tournament Champions",
     "mlsPlayers": 1,
-    "rank": 60,
+    "rank": 63,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "tacticalScore": 64,
@@ -2785,7 +2932,7 @@
     "yearsHC": 8,
     "record": "LIU-Post (D2) 139-30-15, 4x NCAA East Region champ; Seton Hall HC since Dec 2017",
     "mlsPlayers": 1,
-    "rank": 61,
+    "rank": 64,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "tacticalScore": 63,
@@ -2825,7 +2972,7 @@
     "school": "Arizona Western College",
     "div": "JUCO",
     "conf": "NJCAA DI / ACCAC",
-    "rank": 62,
+    "rank": 65,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 74,
@@ -2880,6 +3027,61 @@
     ]
   },
   {
+    "id": "cosgrove_pima",
+    "schoolId": "pima_cc",
+    "name": "David Cosgrove",
+    "school": "Pima Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DII / ACCAC",
+    "rank": 66,
+    "rankClass": "rk-solid",
+    "overallScore": 64,
+    "devScore": 69,
+    "tacticalScore": 74,
+    "ptPathScore": 0,
+    "yearsHC": 27,
+    "record": "433 career wins (most in program history); 2021 and 2018 NJCAA national championships; ranked #6 nationally (NJCAA DII, Oct 2025)",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "David Cosgrove has coached at Pima Community College since 1998, winning NJCAA national championships in 2018 and 2021 and holding the most wins (433) in program history.",
+    "strengths": [
+      "433 career wins — most in program history",
+      "Two NJCAA national championships (2018, 2021)",
+      "27-year tenured head coach",
+      "Ranked #6 nationally (NJCAA DII, 2025)"
+    ],
+    "staff": [
+      {
+        "name": "Conner Cosgrove",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Gabe Mendoza",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Nils Roth",
+        "role": "Assistant Coach (Goalkeepers)",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://pimaaztecs.com/sports/msoc/coaches/Cosgrove_David_bio",
+    "color": [
+      "#dcfce7",
+      "#166534"
+    ]
+  },
+  {
     "id": "walsh_xavier",
     "schoolId": "xavier",
     "name": "John Higgins",
@@ -2889,7 +3091,7 @@
     "yearsHC": 4,
     "record": "12yrs HC at D2 Univ of Indianapolis (150-56-29); Xavier HC since March 2022",
     "mlsPlayers": 2,
-    "rank": 63,
+    "rank": 67,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -2932,7 +3134,7 @@
     "yearsHC": 15,
     "record": "Long-tenured CAA competitive program",
     "mlsPlayers": 2,
-    "rank": 64,
+    "rank": 68,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -2975,7 +3177,7 @@
     "yearsHC": 8,
     "record": "Mid-table Big East, NCAA Tournament appearances",
     "mlsPlayers": 1,
-    "rank": 65,
+    "rank": 69,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -3015,7 +3217,7 @@
     "school": "North Carolina State University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 66,
+    "rank": 70,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -3054,7 +3256,7 @@
     "yearsHC": 6,
     "record": "6th-place finishes in Big Ten",
     "mlsPlayers": 2,
-    "rank": 67,
+    "rank": 71,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -3094,7 +3296,7 @@
     "school": "Miami Dade College",
     "div": "JUCO",
     "conf": "NJCAA",
-    "rank": 68,
+    "rank": 72,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -3130,7 +3332,7 @@
     "school": "Cowley County Community College",
     "div": "JUCO",
     "conf": "NJCAA DI / KJCCC",
-    "rank": 69,
+    "rank": 73,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 72,
@@ -3176,7 +3378,7 @@
     "yearsHC": 31,
     "record": "293-210-63 career; 12 conference titles; 12 NCAA appearances incl. quarterfinals; 10+ 10-win seasons",
     "mlsPlayers": 1,
-    "rank": 70,
+    "rank": 74,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "tacticalScore": 62,
@@ -3219,7 +3421,7 @@
     "yearsHC": 29,
     "record": "Multiple Big West titles; consistent NCAA appearances; 2024 Big West Tournament Champions; one of the most respected veteran coaches in the conference",
     "mlsPlayers": 1,
-    "rank": 71,
+    "rank": 75,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "tacticalScore": 61,
@@ -3253,56 +3455,13 @@
     "licence": null
   },
   {
-    "id": "sarachan_butler",
-    "schoolId": "butler",
-    "name": "Ian Sarachan",
-    "school": "Butler University",
-    "div": "D1",
-    "conf": "Big East",
-    "yearsHC": 1,
-    "record": "First season at Butler (2026) — hired Nov 2025",
-    "mlsPlayers": 0,
-    "rank": 78,
-    "rankClass": "rk-solid",
-    "overallScore": 58,
-    "tacticalScore": 60,
-    "devScore": 58,
-    "ptPathScore": 0,
-    "ausConnection": false,
-    "bio": "Ian Sarachan enters his first season as Butler's 7th head coach after 5 seasons as a Creighton assistant (2022 NCAA College Cup), stints at Wisconsin and Santa Clara, and most recently as an assistant with MLS's Colorado Rapids. No Butler head-coaching record yet, but a strong player-development pedigree. The Indianapolis campus has excellent pre-PT pathways through Indiana University Health and the IU School of Medicine. Butler is a small selective liberal arts college with very high academic standards.",
-    "strengths": [
-      "Strong MLS/NCAA assistant pedigree",
-      "IU Health access",
-      "Small academic culture",
-      "Indianapolis city"
-    ],
-    "staff": [
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "msoccer@butler.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "contact": {
-      "email": null,
-      "phone": null
-    },
-    "url": "https://butlersports.com/sports/mens-soccer",
-    "color": [
-      "#fef9c3",
-      "#1e3a8a"
-    ],
-    "licence": null
-  },
-  {
     "id": "solomon_mercyhurst",
     "schoolId": "mercyhurst",
     "name": "Austin Solomon",
     "school": "Mercyhurst University",
     "div": "D1",
     "conf": "NEC",
-    "rank": 72,
+    "rank": 76,
     "rankClass": "rk-solid",
     "overallScore": 62,
     "devScore": 60,
@@ -3348,6 +3507,67 @@
     "licence": null
   },
   {
+    "id": "macrae_iowalakes",
+    "schoolId": "iowa_lakes_cc",
+    "name": "Ben MacRae",
+    "school": "Iowa Lakes Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DII / ICCAC",
+    "rank": 77,
+    "rankClass": "rk-solid",
+    "overallScore": 62,
+    "devScore": 68,
+    "tacticalScore": 70,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "First-ever ICCAC regular season championship (2025); ranked #7 nationally (NJCAA DII, Oct 2025)",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Ben MacRae is Head Men's Soccer Coach at Iowa Lakes Community College, leading the program to its first-ever ICCAC regular season championship and a #7 national ranking (NJCAA DII, 2025). Staff: Bryan Marshall (assistant), Garrett Barnes (GA), Jesse Kuehler (JV HC), Nick Erdmann (goalkeepers).",
+    "strengths": [
+      "First-ever ICCAC regular season championship (2025)",
+      "Ranked #7 nationally (NJCAA DII, 2025)",
+      "Confirmed dedicated Exercise Science & Kinesiology Transfer Major",
+      "Large, well-resourced coaching staff (5 coaches including JV program)"
+    ],
+    "staff": [
+      {
+        "name": "Bryan Marshall",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Garrett Barnes",
+        "role": "Graduate Assistant",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Jesse Kuehler",
+        "role": "JV Head Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Nick Erdmann",
+        "role": "Assistant Coach (Goalkeepers)",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://iowalakesathletics.com/sports/msoc/coaches/index",
+    "color": [
+      "#cffafe",
+      "#0e7490"
+    ]
+  },
+  {
     "id": "rensing_michiganstate",
     "schoolId": "michiganstate",
     "name": "Damon Rensing",
@@ -3357,7 +3577,7 @@
     "yearsHC": 12,
     "record": "Consistent Big Ten mid-table",
     "mlsPlayers": 2,
-    "rank": 73,
+    "rank": 78,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "tacticalScore": 60,
@@ -3397,7 +3617,7 @@
     "school": "University of Louisville",
     "div": "D1",
     "conf": "ACC",
-    "rank": 74,
+    "rank": 79,
     "rankClass": "rk-solid",
     "overallScore": 61,
     "devScore": 60,
@@ -3428,6 +3648,77 @@
     "licence": null
   },
   {
+    "id": "espinal_dodgecity",
+    "schoolId": "dodge_city_cc",
+    "name": "Juan Espinal",
+    "school": "Dodge City Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / KJCCC",
+    "rank": 80,
+    "rankClass": "rk-solid",
+    "overallScore": 61,
+    "devScore": 68,
+    "tacticalScore": 70,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "Ranked #12 nationally (NJCAA DI, Oct 2025)",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Juan Espinal is Head Men's Soccer Coach at Dodge City Community College, leading a nationally-ranked (#12 DI, 2025) and heavily international roster spanning Japan, Jamaica, Italy, New Zealand, Honduras, South Africa, and Grenada. No detailed coaching tenure/record is published on the official athletics site.",
+    "strengths": [
+      "Ranked #12 nationally (NJCAA DI, 2025)",
+      "Genuinely international roster and recruiting network",
+      "5,000-seat Memorial Stadium with synthetic turf",
+      "Cheapest tuition in the guide's newest JUCO batch"
+    ],
+    "staff": [],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://goconqs.com/staff-directory",
+    "color": [
+      "#fee2e2",
+      "#991b1b"
+    ]
+  },
+  {
+    "id": "cole_johnsoncounty",
+    "schoolId": "johnson_county_cc",
+    "name": "Jeff Cole",
+    "school": "Johnson County Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DII / KJCCC",
+    "rank": 81,
+    "rankClass": "rk-solid",
+    "overallScore": 61,
+    "devScore": 66,
+    "tacticalScore": 68,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "2025 NJCAA DII Region 6/9 tournament champions; ranked #15 nationally (NJCAA DII, Oct 2025)",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Jeff Cole is Head Men's Soccer Coach at Johnson County Community College, leading the program to the 2025 NJCAA DII Region 6/9 tournament title (defeating previously-unbeaten Neosho County CC in the final) and a #15 national ranking.",
+    "strengths": [
+      "2025 NJCAA DII Region 6/9 tournament champions",
+      "Ranked #15 nationally (NJCAA DII, 2025)",
+      "Overland Park, KS — genuine Kansas City metro campus location"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "jcole53@jccc.edu",
+      "phone": "913-469-8500 ext. 4624"
+    },
+    "url": "https://www.jcccathletics.com/sports/msoc/coaches/index",
+    "color": [
+      "#e0e7ff",
+      "#312e81"
+    ]
+  },
+  {
     "id": "vossman_depaul",
     "schoolId": "depaul",
     "name": "Mark Plotkin",
@@ -3437,7 +3728,7 @@
     "yearsHC": 6,
     "record": "Lower Big East, Chicago location",
     "mlsPlayers": 1,
-    "rank": 75,
+    "rank": 82,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "tacticalScore": 59,
@@ -3480,7 +3771,7 @@
     "yearsHC": 5,
     "record": "Penn State Abington Hall of Fame inductee; strong international recruiting pipeline; program culture builder",
     "mlsPlayers": 1,
-    "rank": 76,
+    "rank": 83,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "tacticalScore": 58,
@@ -3520,7 +3811,7 @@
     "school": "Eastern Florida State College",
     "div": "JUCO",
     "conf": "NJCAA DI / FCSAA Region 8",
-    "rank": 77,
+    "rank": 84,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "devScore": 72,
@@ -3575,6 +3866,186 @@
     ]
   },
   {
+    "id": "vieira_southeastern",
+    "schoolId": "southeastern_cc_ia",
+    "name": "Henrique Vieira",
+    "school": "Southeastern Community College (Iowa)",
+    "div": "JUCO",
+    "conf": "NJCAA DII / ICCAC",
+    "rank": 85,
+    "rankClass": "rk-solid",
+    "overallScore": 60,
+    "devScore": 69,
+    "tacticalScore": 72,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "Ranked #5 nationally (NJCAA DII, Oct 2025) — interim role",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Henrique Vieira serves as Interim Head Coach for Southeastern Community College men's soccer, leading a #5-nationally-ranked (NJCAA DII, 2025) program. Assistant coaches: Anthony Schroder, Emily Murphy.",
+    "strengths": [
+      "Ranked #5 nationally (NJCAA DII, 2025)",
+      "Confirmed dedicated Exercise Science Transfer Major on campus",
+      "University of Iowa 2+2 transfer pathway"
+    ],
+    "staff": [
+      {
+        "name": "Anthony Schroder",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Emily Murphy",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://www.sccblackhawks.com/sports/msoc/index",
+    "color": [
+      "#dbeafe",
+      "#1e40af"
+    ]
+  },
+  {
+    "id": "ginsberg_suffolk",
+    "schoolId": "suffolk_cc",
+    "name": "Keith Ginsberg",
+    "school": "Suffolk County Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / Region 15",
+    "rank": 86,
+    "rankClass": "rk-solid",
+    "overallScore": 60,
+    "devScore": 67,
+    "tacticalScore": 70,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "2025 NJCAA Region 15 Champions (defeated Ulster County CC 2-0)",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Keith Ginsberg is Head Men's & Women's Soccer Coach at Suffolk County Community College, leading the men's program to the 2025 NJCAA Region 15 Championship. Assistant coaches: Frankie Guzman, Melany Pagan-Rosario, Paige Palazzolo.",
+    "strengths": [
+      "2025 NJCAA Region 15 Champions",
+      "Confirmed dedicated Exercise Science A.S. degree on campus",
+      "Also leads the women's program — dual-role institutional trust"
+    ],
+    "staff": [
+      {
+        "name": "Frankie Guzman",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Melany Pagan-Rosario",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Paige Palazzolo",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://www.sunysuffolkathletics.com/sports/msoc/coaches/index",
+    "color": [
+      "#fee2e2",
+      "#7f1d1d"
+    ]
+  },
+  {
+    "id": "perry_glendale",
+    "schoolId": "glendale_cc_az",
+    "name": "Jeff Perry",
+    "school": "Glendale Community College (Arizona)",
+    "div": "JUCO",
+    "conf": "NJCAA DII / ACCAC",
+    "rank": 87,
+    "rankClass": "rk-solid",
+    "overallScore": 59,
+    "devScore": 65,
+    "tacticalScore": 65,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "Ranked #20 nationally (NJCAA DII, Oct 2025)",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Jeff Perry is Head Men's Soccer Coach at Glendale Community College, leading a 2025 roster ranked #20 nationally (NJCAA DII). No detailed coaching tenure/record is published on the official athletics site.",
+    "strengths": [
+      "Ranked #20 nationally (NJCAA DII, 2025)",
+      "Confirmed dedicated Exercise Science degree on campus",
+      "On-campus NAU BS Health Sciences completion pathway"
+    ],
+    "staff": [],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://www.gauchoathletics.com/sports/msoc/coaches/index",
+    "color": [
+      "#ede9fe",
+      "#5b21b6"
+    ]
+  },
+  {
+    "id": "sarachan_butler",
+    "schoolId": "butler",
+    "name": "Ian Sarachan",
+    "school": "Butler University",
+    "div": "D1",
+    "conf": "Big East",
+    "yearsHC": 1,
+    "record": "First season at Butler (2026) — hired Nov 2025",
+    "mlsPlayers": 0,
+    "rank": 88,
+    "rankClass": "rk-solid",
+    "overallScore": 58,
+    "tacticalScore": 60,
+    "devScore": 58,
+    "ptPathScore": 0,
+    "ausConnection": false,
+    "bio": "Ian Sarachan enters his first season as Butler's 7th head coach after 5 seasons as a Creighton assistant (2022 NCAA College Cup), stints at Wisconsin and Santa Clara, and most recently as an assistant with MLS's Colorado Rapids. No Butler head-coaching record yet, but a strong player-development pedigree. The Indianapolis campus has excellent pre-PT pathways through Indiana University Health and the IU School of Medicine. Butler is a small selective liberal arts college with very high academic standards.",
+    "strengths": [
+      "Strong MLS/NCAA assistant pedigree",
+      "IU Health access",
+      "Small academic culture",
+      "Indianapolis city"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "msoccer@butler.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://butlersports.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "hc_ucsd",
     "schoolId": "ucsd",
     "name": "Jon Pascale",
@@ -3584,7 +4055,7 @@
     "yearsHC": 18,
     "record": "Multiple CCAA titles; led UCSD through D2-to-D1 transition; competitive Big West performances post-elevation",
     "mlsPlayers": 2,
-    "rank": 79,
+    "rank": 89,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 58,
@@ -3627,7 +4098,7 @@
     "yearsHC": 12,
     "record": "Multiple NCAA Tournament appearances (2022 at-large, 2023); rebuilt program from mid-major obscurity; first 10+ win seasons in modern era",
     "mlsPlayers": 1,
-    "rank": 80,
+    "rank": 90,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 57,
@@ -3670,7 +4141,7 @@
     "yearsHC": 4,
     "record": "20+ years D1 experience; Associate HC at Louisville (3 NCAA appearances, ACC title); HC at Belmont",
     "mlsPlayers": 1,
-    "rank": 81,
+    "rank": 91,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 58,
@@ -3713,7 +4184,7 @@
     "yearsHC": 4,
     "record": "Rebuilding — 2nd North CAA 2025 (after 0-6-2 in 2024)",
     "mlsPlayers": 1,
-    "rank": 82,
+    "rank": 92,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 58,
@@ -3753,7 +4224,7 @@
     "school": "Northeast Community College",
     "div": "JUCO",
     "conf": "NJCAA ICCAC",
-    "rank": 83,
+    "rank": 93,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 60,
@@ -3789,7 +4260,7 @@
     "school": "Barton Community College",
     "div": "JUCO",
     "conf": "NJCAA DI / KJCCC",
-    "rank": 84,
+    "rank": 94,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 69,
@@ -3832,6 +4303,101 @@
     ]
   },
   {
+    "id": "valencia_mohave",
+    "schoolId": "mohave_cc",
+    "name": "Camilo Valencia",
+    "school": "Mohave Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / ACCAC",
+    "rank": 95,
+    "rankClass": "rk-solid",
+    "overallScore": 58,
+    "devScore": 67,
+    "tacticalScore": 66,
+    "ptPathScore": 0,
+    "yearsHC": 4,
+    "record": "Ranked #16 nationally (NJCAA DI, Oct 2025) — first national ranking in program history",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Camilo Valencia joined Mohave Community College in August 2022 as founding Director of Soccer Programs and Head Coach, building the program from scratch to a #16 national ranking by 2025. Holds a master's degree in Exercise Science and Health Promotion (California University of Pennsylvania, 2016).",
+    "strengths": [
+      "Built the program from scratch to a national ranking in 3 seasons",
+      "Own graduate Exercise Science background",
+      "Access to new 126,500 sqft Anderson Auto Group Fieldhouse (2019)"
+    ],
+    "staff": [],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://athletics.mohave.edu/sports/msoc/coaches/index",
+    "color": [
+      "#e0f2fe",
+      "#0369a1"
+    ]
+  },
+  {
+    "id": "fisher_nassau",
+    "schoolId": "nassau_cc",
+    "name": "Dan Fisher",
+    "school": "Nassau Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / Region 15",
+    "rank": 96,
+    "rankClass": "rk-solid",
+    "overallScore": 58,
+    "devScore": 66,
+    "tacticalScore": 68,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "Best 2025 regular-season record in NJCAA Region 15 (10-2)",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Dan Fisher is Head Men's Soccer Coach at Nassau Community College, leading the program to the best regular-season record in NJCAA Region 15 for 2025 (10-2). Staff: Christian Turizo, Damiano Diliberti, John Paul Hughes, Jordan Russolillo.",
+    "strengths": [
+      "Best regular-season record in Region 15 (2025)",
+      "Large 5-person coaching staff",
+      "Garden City, NY — genuine NYC-metro access"
+    ],
+    "staff": [
+      {
+        "name": "Christian Turizo",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Damiano Diliberti",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "John Paul Hughes",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Jordan Russolillo",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://nassaulions.com/sports/mens-soccer/coaches",
+    "color": [
+      "#e0e7ff",
+      "#3730a3"
+    ]
+  },
+  {
     "id": "hc_uab",
     "schoolId": "uab",
     "name": "David Lilly",
@@ -3841,7 +4407,7 @@
     "yearsHC": 2,
     "record": "SoCon Regular Season title + Coach of the Year at ETSU (2023); back-to-back NAIA Tournaments at Milligan",
     "mlsPlayers": 1,
-    "rank": 85,
+    "rank": 97,
     "rankClass": "rk-solid",
     "overallScore": 56,
     "tacticalScore": 56,
@@ -3875,13 +4441,47 @@
     "licence": null
   },
   {
+    "id": "melchor_angelina",
+    "schoolId": "angelina_college",
+    "name": "Martin Melchor",
+    "school": "Angelina College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / Region 14",
+    "rank": 98,
+    "rankClass": "rk-solid",
+    "overallScore": 56,
+    "devScore": 64,
+    "tacticalScore": 65,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "11-5-1 overall (2025), 3rd Region 14 South Division",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Martin Melchor is Head Men's Soccer Coach at Angelina College, leading a 2025 roster to a solid 11-5-1 record (3rd in Region 14 South). No detailed coaching tenure/record is published on the official athletics site.",
+    "strengths": [
+      "Solid 2025 regional record (11-5-1)",
+      "Plays in the guide's newest dedicated soccer stadium (Larry Phillips Family Sports Complex, 2022)"
+    ],
+    "staff": [],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://www.angelinaathletics.com/sports/msoc/coaches/index",
+    "color": [
+      "#ffedd5",
+      "#9a3412"
+    ]
+  },
+  {
     "id": "mason_columbia",
     "schoolId": "columbia_college",
     "name": "Nathan Mason",
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 86,
+    "rank": 99,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -3917,13 +4517,182 @@
     "licence": "USSF D, NSCAA Advanced National"
   },
   {
+    "id": "rodriguez_coastalbend",
+    "schoolId": "coastal_bend_cc",
+    "name": "Justin Rodriguez",
+    "school": "Coastal Bend College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / Region 14",
+    "rank": 100,
+    "rankClass": "rk-solid",
+    "overallScore": 55,
+    "devScore": 64,
+    "tacticalScore": 66,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "Ranked #14 nationally (NJCAA DI, Oct 2025) — under prior interim staff; hired March 2026",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Justin Rodriguez was announced as Head Men's Soccer Coach at Coastal Bend College in March 2026, succeeding interim coach Manuel Iwabuchi (appointed August 2025). Previously coached at Missouri Southern State University (2024) and as an assistant at University of the Ozarks (2021); collegiate player at Schreiner University (2017-2021).",
+    "strengths": [
+      "New head coach bringing fresh Division-level coaching experience",
+      "Inherits a #14-nationally-ranked (NJCAA DI, 2025) program"
+    ],
+    "staff": [],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://cbc.prestosports.com/sports/msoc/coaches/index",
+    "color": [
+      "#ecfccb",
+      "#3f6212"
+    ]
+  },
+  {
+    "id": "lissimmons_ulster",
+    "schoolId": "ulster_cc",
+    "name": "Jamal Lis-Simmons",
+    "school": "Ulster County Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / Region 15",
+    "rank": 101,
+    "rankClass": "rk-solid",
+    "overallScore": 55,
+    "devScore": 65,
+    "tacticalScore": 66,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "9-1-2 regular season; 2025 Region 15 Championship runner-up",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Jamal Lis-Simmons is Head Men's Soccer Coach at Ulster County Community College, leading the program to a 2025 Region 15 Championship final appearance (9-1-2 regular season, lost 2-0 to Suffolk CC). Assistant coach: Sal DeRosa.",
+    "strengths": [
+      "2025 Region 15 Championship final appearance",
+      "Strong local Hudson Valley recruiting network"
+    ],
+    "staff": [
+      {
+        "name": "Sal DeRosa",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://athletics.sunyulster.edu/sports/mens-soccer/coaches",
+    "color": [
+      "#d1fae5",
+      "#065f46"
+    ]
+  },
+  {
+    "id": "plumbar_lsueunice",
+    "schoolId": "lsu_eunice",
+    "name": "John Plumbar",
+    "school": "LSU Eunice",
+    "div": "JUCO",
+    "conf": "NJCAA DI / Region 14",
+    "rank": 102,
+    "rankClass": "rk-solid",
+    "overallScore": 54,
+    "devScore": 63,
+    "tacticalScore": 62,
+    "ptPathScore": 0,
+    "yearsHC": 2,
+    "record": "6-8-1 overall (2025), 2nd season as Head Coach",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "John Plumbar was hired as Head Men's Soccer Coach at LSU Eunice in July 2024, entering his 2nd season in 2025-26. Assistant coaches: Braeden Hoppough, Lane Woodall.",
+    "strengths": [
+      "Genuinely international roster recruiting network",
+      "Bengal Village — well-resourced on-campus housing (216 beds)"
+    ],
+    "staff": [
+      {
+        "name": "Braeden Hoppough",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Lane Woodall",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://athletics.lsue.edu/sports/mens-soccer/coaches",
+    "color": [
+      "#fef9c3",
+      "#713f12"
+    ]
+  },
+  {
+    "id": "carrabotta_westchester",
+    "schoolId": "westchester_cc",
+    "name": "Alfio Carrabotta",
+    "school": "Westchester Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DI / Region 15",
+    "rank": 103,
+    "rankClass": "rk-solid",
+    "overallScore": 53,
+    "devScore": 64,
+    "tacticalScore": 65,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "9-1-2 conference record (2025), T-3rd/4th in Region 15",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Alfio Carrabotta is Head Men's Soccer Coach at Westchester Community College, leading a 2025 roster to a 9-1-2 conference record (tied for 3rd/4th in Region 15). Assistant coaches: Carlos Zabarbaru, Luis Lua.",
+    "strengths": [
+      "Solid 2025 regular-season record (9-1-2)",
+      "Valhalla, NY — genuine Westchester County / NYC-metro access"
+    ],
+    "staff": [
+      {
+        "name": "Carlos Zabarbaru",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      },
+      {
+        "name": "Luis Lua",
+        "role": "Assistant Coach",
+        "email": null,
+        "bg": null
+      }
+    ],
+    "contact": {
+      "email": null,
+      "phone": null
+    },
+    "url": "https://gowccvikings.com/staff.aspx",
+    "color": [
+      "#f3e8ff",
+      "#6b21a8"
+    ]
+  },
+  {
     "id": "johnson_chapman",
     "schoolId": "chapman",
     "name": "Dustin Johnson",
     "school": "Chapman University",
     "div": "D3",
     "conf": "SCIAC Conference",
-    "rank": 87,
+    "rank": 104,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 55,
@@ -3962,7 +4731,7 @@
     "yearsHC": 6,
     "record": "Building competitive CAA program at the NJ Shore; strong regional and international recruiting presence",
     "mlsPlayers": 0,
-    "rank": 88,
+    "rank": 105,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "tacticalScore": 52,
@@ -4005,7 +4774,7 @@
     "yearsHC": 11,
     "record": "30+ year D1 veteran; built UC Irvine into Big West power before joining Fullerton; 12 MLS players developed; multiple Big West titles across programs",
     "mlsPlayers": 0,
-    "rank": 89,
+    "rank": 106,
     "rankClass": "rk-solid",
     "overallScore": 50,
     "tacticalScore": 49,
@@ -4048,7 +4817,7 @@
     "yearsHC": 2,
     "record": "Former MLS player (Vancouver 2011); Villanova assoc HC 2019-23; led Drexel 9-2-5 (2023); Villanova HC since Nov 2023",
     "mlsPlayers": 1,
-    "rank": 90,
+    "rank": 107,
     "rankClass": "rk-solid",
     "overallScore": 48,
     "tacticalScore": 47,
@@ -4091,7 +4860,7 @@
     "yearsHC": 8,
     "record": "Building competitive Big West program at UCR; Pac-12/Big West partnership announced 2025",
     "mlsPlayers": 0,
-    "rank": 91,
+    "rank": 108,
     "rankClass": "rk-solid",
     "overallScore": 48,
     "tacticalScore": 47,
@@ -4134,7 +4903,7 @@
     "yearsHC": 1,
     "record": "First season at Navy (2026) — service academy program",
     "mlsPlayers": 0,
-    "rank": 92,
+    "rank": 109,
     "rankClass": "rk-solid",
     "overallScore": 42,
     "tacticalScore": 50,
@@ -4177,7 +4946,7 @@
     "yearsHC": 5,
     "record": "Lower AAC — service academy program",
     "mlsPlayers": 0,
-    "rank": 93,
+    "rank": 110,
     "rankClass": "rk-solid",
     "overallScore": 40,
     "tacticalScore": 48,

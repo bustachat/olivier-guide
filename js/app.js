@@ -548,17 +548,47 @@ function renderCards(){
     el.className='conf-section div-collapsed';
     el.dataset.div=secUnis[0]?.div||'D1';
     el.dataset.confkey=sec.key;
-    el.innerHTML=
+    const headHtml=
       `<div class="section-head">` +
         `<h2>${sec.label}${countNote}</h2>` +
         `<span class="dbadge d-${secUnis[0]?.div||'D1'}" style="font-size:9px">${sec.tier}</span>` +
         `<button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Show/hide this conference">Show</button>` +
       `</div>` +
-      `<div class="section-intro">${sec.intro}</div>` +
-      `<div class="cards-grid" id="grid-${sec.key}"></div>`;
-    container.appendChild(el);
-    const grid=el.querySelector(`#grid-${sec.key}`);
-    secUnis.forEach(u=>grid.appendChild(buildCard(u)));
+      `<div class="section-intro">${sec.intro}</div>`;
+
+    if(sec.divFilter==='JUCO'){
+      // Group by NJCAA region — schools without an njcaaRegion (e.g. CCCAA-affiliated) get their own bucket
+      const groups={};
+      secUnis.forEach(u=>{
+        const rk=u.njcaaRegion||'CCCAA';
+        (groups[rk]=groups[rk]||[]).push(u);
+      });
+      const regionKeys=Object.keys(groups).sort((a,b)=>{
+        if(a==='CCCAA') return 1;
+        if(b==='CCCAA') return -1;
+        return parseInt(a.replace('Region ',''),10)-parseInt(b.replace('Region ',''),10);
+      });
+      let bodyHtml='';
+      regionKeys.forEach((rk,i)=>{
+        const list=groups[rk];
+        const area=list[0].njcaaRegionArea;
+        const label=rk==='CCCAA' ? 'CCCAA — California (non-NJCAA)' : `NJCAA ${rk}${area?' — '+area:''}`;
+        bodyHtml+=
+          `<div class="region-subhead"><h3>${label}</h3><span class="region-count">${list.length} school${list.length>1?'s':''}</span></div>` +
+          `<div class="cards-grid region-grid" id="grid-${sec.key}-${i}"></div>`;
+      });
+      el.innerHTML=headHtml+bodyHtml;
+      container.appendChild(el);
+      regionKeys.forEach((rk,i)=>{
+        const grid=el.querySelector(`#grid-${sec.key}-${i}`);
+        groups[rk].forEach(u=>grid.appendChild(buildCard(u)));
+      });
+    } else {
+      el.innerHTML=headHtml+`<div class="cards-grid" id="grid-${sec.key}"></div>`;
+      container.appendChild(el);
+      const grid=el.querySelector(`#grid-${sec.key}`);
+      secUnis.forEach(u=>grid.appendChild(buildCard(u)));
+    }
   });
 
   // Update the filter summary count now that all cards are rendered
@@ -847,6 +877,23 @@ const DOMAINS = {
   barton_cc:    'bartonsports.com',
   cowley_cc:    'cowleytigers.com',
   arizona_western: 'awcmatadors.com',
+  phoenix_college: 'pcbearsathletics.com',
+  pima_cc:      'pimaaztecs.com',
+  mohave_cc:    'athletics.mohave.edu',
+  glendale_cc_az: 'gauchoathletics.com',
+  dodge_city_cc: 'goconqs.com',
+  neosho_county_cc: 'goneosho.com',
+  southeastern_cc_ia: 'sccblackhawks.com',
+  iowa_lakes_cc: 'iowalakesathletics.com',
+  blinn_college: 'buccaneersports.com',
+  coastal_bend_cc: 'cbcathletics.com',
+  angelina_college: 'angelinaathletics.com',
+  lsu_eunice: 'athletics.lsue.edu',
+  nassau_cc: 'nassaulions.com',
+  ulster_cc: 'athletics.sunyulster.edu',
+  suffolk_cc: 'sunysuffolkathletics.com',
+  westchester_cc: 'gowccvikings.com',
+  johnson_county_cc: 'jcccathletics.com',
   efsc:         'efsctitans.com',
   duke:           'goduke.com',
   ncstate:        'gopack.com',
@@ -943,6 +990,23 @@ const SITE_URLS = {
   barton_cc:    'https://www.bartonccc.edu',
   cowley_cc:    'https://www.cowley.edu',
   arizona_western: 'https://www.azwestern.edu',
+  phoenix_college: 'https://www.phoenixcollege.edu',
+  pima_cc:      'https://www.pima.edu',
+  mohave_cc:    'https://www.mohave.edu',
+  glendale_cc_az: 'https://www.gccaz.edu',
+  dodge_city_cc: 'https://dc3.edu',
+  neosho_county_cc: 'https://neosho.edu',
+  southeastern_cc_ia: 'https://www.scciowa.edu',
+  iowa_lakes_cc: 'https://iowalakes.edu',
+  blinn_college: 'https://www.blinn.edu',
+  coastal_bend_cc: 'https://www.coastalbend.edu',
+  angelina_college: 'https://www.angelina.edu',
+  lsu_eunice: 'https://www.lsue.edu',
+  nassau_cc: 'https://www.ncc.edu',
+  ulster_cc: 'https://www.sunyulster.edu',
+  suffolk_cc: 'https://www.sunysuffolk.edu',
+  westchester_cc: 'https://www.sunywcc.edu',
+  johnson_county_cc: 'https://www.jccc.edu',
   efsc:         'https://www.easternflorida.edu',
   duke:           'https://www.duke.edu',
   ncstate:        'https://www.ncsu.edu',
@@ -1051,6 +1115,23 @@ const SOCIAL = {
   barton_cc:      ['https://instagram.com/bccmenssoccer',      'https://x.com/barton_msoccer',       null,                                    null],
   cowley_cc:      ['https://instagram.com/cowleymsoccer',      null,                                 null,                                    null],
   arizona_western:['https://instagram.com/awcmenssoccer',      'https://x.com/AWCMatadors',          null,                                    null],
+  phoenix_college:[null, null, null, null],
+  pima_cc:        [null, null, null, null],
+  mohave_cc:      [null, null, null, null],
+  glendale_cc_az: [null, null, null, null],
+  dodge_city_cc:  [null, null, null, null],
+  neosho_county_cc:[null, null, null, null],
+  southeastern_cc_ia:[null, null, null, null],
+  iowa_lakes_cc:  [null, null, null, null],
+  blinn_college:  [null, null, null, null],
+  coastal_bend_cc:[null, null, null, null],
+  angelina_college:[null, null, null, null],
+  lsu_eunice:     [null, null, null, null],
+  nassau_cc:      [null, null, null, null],
+  ulster_cc:      [null, null, null, null],
+  suffolk_cc:     [null, null, null, null],
+  westchester_cc: [null, null, null, null],
+  johnson_county_cc:[null, null, null, null],
   efsc:           ['https://instagram.com/efscmenssoccer',     'https://x.com/efscmenssoccer',       null,                                    null],
   duke:           ['https://instagram.com/dukemenssoccer',    'https://x.com/DukeMSOC',            'https://facebook.com/DukeMensSoccer',  'https://youtube.com/dukebluedevils'],
   ncstate:        ['https://instagram.com/ncstatemsoc',       'https://x.com/NCStateMSOC',         'https://facebook.com/NCStateSoccer',   'https://youtube.com/ncstateathletics'],
@@ -1714,6 +1795,14 @@ function applyFilters(){
     const hasVisible=[...sec.querySelectorAll('.ucard')].some(c=>c.style.display!=='none');
     sec.style.display=hasVisible?'':'none';
   });
+  // Show/hide region sub-headers whose group has no visible cards left
+  document.querySelectorAll('.region-subhead').forEach(head=>{
+    const grid=head.nextElementSibling;
+    if(grid && grid.classList.contains('region-grid')){
+      const hasVisible=[...grid.querySelectorAll('.ucard')].some(c=>c.style.display!=='none');
+      head.style.display=hasVisible?'':'none';
+    }
+  });
   updateFilterSummary(visible);
   const hasAny = Object.values(activeFilters).some(s=>s.size>0) || !!searchKeyword;
   const clearBtn = document.getElementById('filter-clear-btn');
@@ -1749,6 +1838,7 @@ function clearAllFilters(){
   if(container){
     container.querySelectorAll('.ucard').forEach(c=>c.style.display='');
     container.querySelectorAll('.conf-section').forEach(s=>s.style.display='');
+    container.querySelectorAll('.region-subhead').forEach(h=>h.style.display='');
     const total = container.querySelectorAll('.ucard').length;
     const el = document.getElementById('filter-active-summary');
     if(el) el.innerHTML = 'Showing all <strong>'+total+'</strong> schools';

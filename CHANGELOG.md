@@ -6,6 +6,48 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v39.5 (July 2026) — Standings/roster remediation for the 17 v39.1-v39.4 JUCO adds (NOT YET COMMITTED)
+
+Direct follow-up to v39.1-v39.4's own remediation entry. Owner asked a second direct question after reviewing the first fix: "and all standings/titles/roster research minutes outlook completed?" Answer was no — checked the actual data rather than re-asserting completeness:
+
+- **confRecord depth:** only 2025 had been genuinely researched for 13 of 17 schools; 2021-2024 were honest `"Not re-verified this session"` placeholders, not the 5-6 years of real Tier-1 standings §7 Phase 1E requires. This is not a documentation gap — Phase 1E is explicit ("Never use placeholder text... actual position and record are required") — it's an execution gap.
+- **Root cause, once traced:** roster/standings research this session had used `WebSearch`/`WebFetch` throughout instead of the Claude for Chrome MCP tool §15's Research Intelligence table names specifically for "Roster scraping" and "Conference standings" (with WebSearch/aggregators explicitly listed in the "Avoid" column for both). Loaded the tool and redid the research properly.
+
+**Standings fixed:** navigated to each region's own conference standings archive (accac.org, kjccc.org, iccac.org, njcaaregion14.com, region15athletics.com) for 2021-22 through 2024-25 and pulled real conference + overall records for all 17 schools, one page per region per year (5 conferences × 4 years = 20 page visits, each covering every school in that conference for that season in one shot). All 17 now have real data for every year their program was a recognized conference member — some years are honestly "not a conference member yet" (Mohave CC's ACCAC record starts 2024; LSU Eunice's Region 14 record starts 2024-25; Iowa Lakes' and Ulster's ICCAC/Region 15 records don't go back to 2021-22) rather than guessed. One data quirk flagged rather than silently resolved: Iowa Lakes' 2023-24 and 2024-25 ICCAC standings pages show byte-for-byte identical records (6-1-1, 16-3-3) — noted inline as a possible conference-site templating artifact rather than presented as two independently-confirmed seasons.
+
+**Rosters fixed:** re-attempted the 4 schools whose minutesOutlook was `available: false`. Southeastern CC's roster page had rendered empty via WebFetch — Claude for Chrome MCP got the full 17-midfielder roster on the first try (real browser render vs. WebFetch's static-HTML fetch). Coastal Bend CC's roster was behind a Cloudflare bot-check that WebFetch received as a 403 — Chrome MCP passed the challenge automatically and got the full 8-central-midfielder roster. Both now have real `minutesOutlook` data, and their `fitOlivier`/`lensScores.minutes` recalculated accordingly (Southeastern 43→44, Coastal Bend 53→60 — the minutesOutlook default-0.5 penalty for `available:false` was costing Coastal Bend more than expected). Suffolk CC and Westchester CC were also re-checked via Chrome MCP and confirmed genuinely missing position data even in a real browser — not a tooling artifact, correctly left `available: false`.
+
+`node validate_consistency.js` held at the 1 known baseline issue throughout. Live-verified in browser: both fit scores match hand-calculated values exactly, Minutes tab renders real roster data for the 2 newly-fixed schools, Standings tab shows real years with no placeholder text remaining.
+
+- guideVersion bumped v39.4 → v39.5.
+- **Still not committed** — this entry, like v39.1-v39.4, is part of the same held batch awaiting owner review.
+
+---
+
+### v39.1 – v39.4 (July 2026) — JUCO region sub-sections + 17 new JUCO schools (NOT YET COMMITTED at time of writing)
+
+Two-part request: (1) group the Explore tab's JUCO section by NJCAA region instead of one flat grid, (2) build out "top 5 JUCOs per region" for the 6 NJCAA regions already represented in the guide, which required identifying and adding 17 new schools (93 → 110 total schools).
+
+**Part 1 (v39.1, UI only):** `js/app.js` `renderCards()` now groups the JUCO section by `njcaaRegion`, with a `CCCAA` bucket for Santa Monica (not NJCAA-affiliated). Sub-headers hide/show correctly under search and filters (`applyFilters()`/`clearAllFilters()` updated to toggle `.region-subhead` alongside `.conf-section`). New CSS in `index.html` for `.region-subhead`/`.region-grid`.
+
+**Part 2 (v39.1-v39.4, data):** Shortlist built from live NJCAA.org rankings + each region's own conference site (Tier-1 throughout). Region 8 (Florida) confirmed capped at its existing 3 schools — verified via thefcsaasports.com that only 3 of 28 FCSAA member colleges field a men's soccer team at all, no DII bracket exists. 17 schools added across the other 5 regions:
+- **Region 1 (AZ):** Phoenix College (2025 NJCAA DII National Champions, #1 nationally 7 straight weeks — most decorated current JUCO in the guide), Pima CC, Mohave CC, Glendale CC
+- **Region 6 (KS):** Dodge City CC, Neosho County CC, Johnson County CC (2025 Region 6/9 tournament champions)
+- **Region 11 (IA):** Southeastern CC, Iowa Lakes CC (first-ever ICCAC regular season title, 2025)
+- **Region 14 (TX/LA):** Blinn College, Coastal Bend College, Angelina College, LSU Eunice
+- **Region 15 (NY):** Nassau CC, Ulster County CC, Suffolk CC (2025 Region 15 Champions), Westchester CC
+
+Full profiles built per §7 Phase 1's field list (coach, roster-derived minutesOutlook, tuition, degree/ACU alignment, facilities, housing, culture, financial model). Where Tier-1 data genuinely wasn't obtainable, fields were left `null`/`available:false` with a documented reason rather than guessed — see §6 deferred items for the specific gaps (4 schools with no roster data, 16 of 17 coaches with no confirmed email/phone, all 17 with unverified social media) — the roster/standings sub-gaps here were themselves further remediated in v39.5 immediately above.
+
+**Process gap, caught mid-session and partially remediated:** the §7 Universal Change Workflow was not followed as a structured process during the batch-building work — no explicit Phase 0/Phase 2 written sign-off before starting, and Phase 3's file checklist was executed from memory/pattern-matching rather than checked off item-by-item. Two real files were skipped entirely on the first pass: `data/conf-prestige.json` and `data/pipeline.json` (Phase 3B/3F) — both required updates for a New School Added change type and neither was touched until the owner asked a direct compliance question. `conferences.json`'s `desc`/`olivierNote` prose was also left stale (still said "12 guide schools" after 17 were added). All three were corrected retroactively before commit, along with a fuller Phase 5 browser-test pass (map dots, Coach Rankings badges, Financial Model selector, Compare tab, all 5 lens pills, ATAR-slider-shouldn't-change-fit-score regression check) that had only been partially run the first time. `validate_schools.py` could not run (no Python interpreter in this environment, same constraint as v38); manual node-script equivalents were substituted for the acuAlign/covered-count and fin-component-sum checks specifically, but this is not a full substitute for what that script validates (e.g. `facilityDetails.rating` enum, empty-trajectory-when-available:true). `node validate_consistency.js` held at the 1 known baseline issue (Stony Brook coach name) throughout — zero regressions from any of the new schools.
+
+Also discovered in passing (pre-existing, not caused by this session, not fixed — see §6 deferred items): `data/pipeline.json`'s combined JUCO row still lists Northeast CC under the non-Elite group even though `jucoTier` was upgraded Standard→Elite back in v38.9; and §7 Phase 5's "score breakdown tooltip" checklist item describes a feature that doesn't exist anywhere in the current build (checked both a new school and pre-existing Barton CC).
+
+- guideVersion bumped v38.12 → v39.4 in athletes/olivier.json across the session.
+- **Not committed or pushed as of this entry** — owner asked to hold all commits until the full batch (and this remediation pass) could be reviewed together.
+
+---
+
 ### v38.2 – v38.12 (July 2026) — Housing research for all 81 non-JUCO schools + 2 more Standings/Titles gap sweeps
 Direct continuation of the v38.1 accuracy work. Two threads:
 

@@ -1,8 +1,8 @@
 # Olivier — US College Soccer & Exercise Science Scholarship Guide
 
-**Version 26** | Multi Skilled Contractors × Sydney, AUS
+**Version 40.11** | Multi Skilled Contractors × Sydney, AUS
 
-A personalised scholarship research tool covering 97 US universities across 18 conference sections — financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, culture guides, 6-lens dynamic ranking, 2027-entry Minutes Outlook analysis, and a live Dashboard with interactive USA school map.
+A personalised scholarship research tool covering 110 US universities and colleges across 17 conference sections — financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, culture guides, 6-lens dynamic ranking, 2027-entry Minutes Outlook analysis, and a live Dashboard with interactive USA school map.
 
 **Live URL:** https://bustachat.github.io/olivier-guide
 
@@ -48,9 +48,16 @@ Key rules at a glance:
 
 ## Version History
 
+Full per-version detail lives in **CHANGELOG.md** (this table went unmaintained v27–v39; restored as era summaries in v40).
+
 | Version | Status | Key Changes |
 |-|-|-|
-| **v26** | ✅ Current (June 2026) | ACU Alignment tab: fixed stale summary cards, removed UF references, excluded JUCOs (soccer development is the metric for 2yr programs). Minutes Outlook: Yr1+Yr2-only ranking formula (apples-to-apples JUCO vs 4yr), JUCO adjusted factor 1.2, JUCO Yr1/Yr2 recalibrated based on Macarthur Bulls A-League academy context vs high school JUCO recruits. CLAUDE.md: minutesOutlook roster research now mandatory for full profile upgrades. |
+| **v40** | ✅ Current (July 2026) | v39-aftermath cleanup: 9 schools' "undefined" Minutes Outlook stats fixed, MO-KEYS key-name validator check added, docs reconciled with git, all 110 map dots on-land for the first time, Northeast CC Elite JUCO pipeline fix, Keiser location corrected to West Palm Beach, full 17-school social media + coach contact verification pass (12 coach contacts Tier-1 confirmed). |
+| **v39** | Superseded (July 2026) | JUCO region sub-sections in Explore + 17 new JUCO schools (93 → 110) across NJCAA Regions 1/6/11/14/15. Standings/roster remediation. See v39_session_failures_summary.md for the process incident log. |
+| **v38** | Superseded (July 2026) | Standings & Titles accuracy pass (Cal State LA 2021 D2 National Champions and Charleston WV 2024 runner-up found mislabeled) + housing research for all 81 non-JUCO schools. |
+| **v37** | Superseded (July 2026) | Fit Score redesigned to Soccer Priority only (GPA/Cost/ACU removed — they have dedicated views). JUCO tiering (Elite badge), NJCAA region tags, housing indicators, Pro Pipeline JUCO representation. `cache: 'no-store'` on all data fetches. |
+| **v27–v36** | Superseded (June–July 2026) | Encoding fixes, minutesOutlook rollout to all conferences, COA accuracy passes, dynamic cost display, v35.1 full code review + v36 174-issue backlog cleared (validate_consistency.js added), 4 JUCO adds (v35). See CHANGELOG.md. |
+| **v26** | Superseded (June 2026) | ACU Alignment tab: fixed stale summary cards, removed UF references, excluded JUCOs (soccer development is the metric for 2yr programs). Minutes Outlook: Yr1+Yr2-only ranking formula (apples-to-apples JUCO vs 4yr), JUCO adjusted factor 1.2, JUCO Yr1/Yr2 recalibrated based on Macarthur Bulls A-League academy context vs high school JUCO recruits. CLAUDE.md: minutesOutlook roster research now mandatory for full profile upgrades. |
 | **v25** | Superseded (June 2026) | All 55 listed-profile schools upgraded to full profile across ACC, Big East, Big West, AAC, CAA, America East. FSU removed (no men's soccer). 95 coaches in coaches.json. All schools now full-profile. |
 | **v24** | Superseded (June 2026) | internationalNote populated for all schools. Indian Hills CC added (2025 NJCAA DI National Champions). coaching licence field added to all coaches. APP_VERSION driven dynamically from olivier.json. |
 | **v23** | Superseded (June 2026) | CAA + Big Ten confRecord verification. minutesOutlook for SMC + MDC. 6 coaches added (40 total). Financial model corrected: athletic slider 0–100%, academic aid as fixed dollars, Glossary scholarships section. Misleading internationalNote text fixed for SMU/Wake Forest/UCLA. export_schools.py tool added. |

@@ -6,7 +6,7 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
-### v40.1 – v40.7 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed, Northeast CC Elite JUCO pipeline fix, Keiser location correction, Region 1 social/contact verification
+### v40.1 – v40.8 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed, Northeast CC Elite JUCO pipeline fix, Keiser location correction, Region 1 social/contact verification
 
 Found during the v40 session's browser verification pass over the v39 work (the pass v39.7 had skipped — a concurrent session held the preview slot then). The v39 work itself verified clean; the new find was **pre-existing**:
 
@@ -22,9 +22,11 @@ Found during the v40 session's browser verification pass over the v39 work (the 
 
 - **v40.7 — Region 1 (AZ) social media + coach contact verification, batch 1 of the v39 research-debt pass** (Chrome MCP per §15, the tool v39 skipped). Social accounts harvested from each official athletics site and the IG/X accounts navigated + confirmed active per §7 Phase 1I: Phoenix College (IG/X/FB/YT — dept accounts), Pima CC (IG/X/FB/YT — dept accounts), Mohave CC (college-wide accounts, linked from the athletics site's own footer — no athletics-specific accounts exist), Glendale CC (X only — no IG/FB/YT found anywhere on the site). Coach contacts Tier-1 confirmed from official coaches pages and synced across both files (two-file rule): Phoenix David Cameron (david.cameron@phoenixcollege.edu / 602-285-7665), Pima David Cosgrove (dcosgrove@pima.edu / 520-370-3717), Glendale Jeff Perry (jeff.perry@gccaz.edu / 623-845-3782). Mohave's coaches page publishes names only — email/phone honestly stay `null`. One self-inflicted bug caught and fixed before commit: the first scripted edit wrote the head-coach email into a staff[] member's null email field (staff nulls precede contact{} in coaches.json) — repaired, verified staff arrays clean + both files in exact sync. 13 schools (Regions 6/11/14/15) remain for future batches.
 
+- **v40.8 — Region 6 (KS) social media + coach contact verification, batch 2.** Dodge City CC: dept IG/FB (`GoConqs` — no soccer-specific accounts, footer lists per-sport handles for other sports only) + coach Juan Espinal Tier-1 confirmed (jespinal@dc3.edu / 620-227-9299, official staff directory). Neosho County CC: **program-specific** X `@GoNeoshoMSOC` + FB `neoshomsoccer`, both navigated and confirmed active. Johnson County CC: dept X/FB/YT (`JCCCAthletics` — no Instagram exists anywhere on the site); coach contact already confirmed in v39. **Major find: Neosho's official staff directory lists Sam Hall as Head Men's Soccer Coach, not the stored Elliot Chadderton (v39 research)** — a real coaching change requiring full Change Type 2 treatment (new bio/score research + full re-rank), deliberately not half-fixed in a contact pass; flagged as a high-priority deferred item in §6.
+
 Full v40 session kickoff detail: the v39 verification pass confirmed all 358 trajectory chips render real years, 110 map dots with only the 2 known deferred off-land (ucirvine, vermont — fixed in v40.4 above), coach ranks 1–110 sequential, all 24 conference cards, Phoenix College modal all 9 tabs, zero console errors.
 
-- guideVersion bumped v39.6 → v40.7 across the session.
+- guideVersion bumped v39.6 → v40.8 across the session.
 
 ---
 

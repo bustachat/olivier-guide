@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v40.5 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v40.6 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -669,7 +669,7 @@ Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are delibera
 
 ## 6. Version History & Current State
 
-**Current version: v40.5 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
+**Current version: v40.6 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
@@ -695,7 +695,7 @@ Full per-version history lives in **CHANGELOG.md** — moved out of this file in
 - **v38.1-v38.12 — Standings/Titles accuracy pass + housing research for all 81 non-JUCO schools (all informational, zero Fit Score impact):**
   - `facilityDetails.housing` now populated for **all 93 schools** (81 non-JUCO added v38.2-v38.12, closing the item deferred since v37.7) — Tier-1 verified via each school's official housing/residence-life page. Two genuine `"limited"` flags: **CSU Fullerton** and **Cal State LA** — both have real housing but no live-on requirement and no guarantee (first-come-first-served on explicitly commuter-heavy campuses), unlike every UC/most 4-year schools in this guide which guarantee at least first-year housing.
   - `confRecord[]`/`titles[]` corrected for 12 schools where a scan for the original v38.1 gap pattern (a generic label repeated identically across every year, indicating unresearched placeholder data rather than a real record) had been missed: 5 JUCOs (v38.1), Iowa Western + Northeast CC (v38.9), and Temple/Cal State LA/Charleston WV/Georgian Court/Columbia College MO (v38.10). Two of these were major finds requiring correction beyond the confRecord window: **Cal State LA** is the actual 2021 NCAA Division II National Champions (was "Mid CCAA" for all 5 years) and **Charleston (WV)** is the 2024 D2 national runner-up plus one of the most decorated D2 programs nationally — 6 title-game appearances since 2014 (was "Mid MEC" for all 5 years).
-  - **Known residual gap, deferred (see below):** Keiser University's `loc`/`culture`/`facilityDetails`/`coach.profile`/`rec` fields all say "Fort Lauderdale," but the school's actual athletics campus (Seahawks, Vecellio Field) is in West Palm Beach — found while researching housing, flagged inline in the housing note rather than fixed inline (12 occurrences + map coordinates is a separate task).
+  - Keiser University's location fields all said "Fort Lauderdale," but the school's actual athletics campus (Seahawks, Vecellio Field) is in West Palm Beach — found while researching housing, flagged inline in the housing note rather than fixed inline; **corrected in v40.6** (12 text occurrences + mapX/mapY).
 
 ### v36 fix backlog — CLOSED (July 2026)
 
@@ -712,7 +712,6 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
 - UCI roomBoard ($19,500) and total COA, and OCU costNum, are estimates pending Tier-1 confirmation
 - 6 Big East coach licence fields `null` — verify when contacting programs
 - recruit_pathway full pass across all 93 schools (see CHANGELOG.md v34)
-- **Keiser University location mislabel (found v38.11)** — `loc` says "Fort Lauderdale, FL" but the actual athletics campus (Seahawks, Vecellio Field, residential Flagship Campus) is in West Palm Beach. 12 occurrences of "Fort Lauderdale" across `loc`, `culture.vibe`/`thingsToDo`/`socialScene`/`lifestyleTags`, `facilityDetails.stadium`/`trainingFields`/`extras`, `coach.profile`, and `rec` all need correcting, plus `mapX`/`mapY` recalculated for West Palm Beach and verified on the Dashboard map. Housing itself was verified correctly at the real campus in v38.11 — only the surrounding text/location fields are wrong.
 - Older-year (2021-2023) `confRecord` entries for Temple, Georgian Court, Columbia College (MO), and Charleston (WV) are marked "not re-verified v38" — 2024/2025 (and 2021 for Charleston) were Tier-1 confirmed during the v38.10 pass, but the middle years were left as retained-from-prior-session rather than guessed. Low priority — informational only.
 - **Social media verification for the 17 v39.1-v39.4 JUCO adds** — all four SOCIAL fields (`js/app.js`) are `null` for every one of the 17; the "navigate to the account and confirm it's active" step (§7 Phase 1I) was skipped, not just left null because no account exists. Needs a dedicated pass.
 - **Coach email/phone for 16 of the 17 v39.1-v39.4 JUCO adds** — only Johnson County CC's Jeff Cole has a Tier-1 confirmed email/phone; the other 16 are `null` because no email/phone was published on the official site at time of research, not because it wasn't looked for. Re-check each program's staff directory periodically — JUCO staff pages change contact info more often than D1 programs.

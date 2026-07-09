@@ -1973,7 +1973,7 @@
     "id": "keiser",
     "name": "Keiser",
     "full": "Keiser University",
-    "loc": "Fort Lauderdale, FL",
+    "loc": "West Palm Beach, FL",
     "region": "south",
     "div": "NAIA",
     "conf": "Sun Conference",
@@ -2054,25 +2054,25 @@
       "internationalNote": "NAIA full ride possible. Keiser clinical science scholarships available for health-track students. Strong package for the right student."
     },
     "culture": {
-      "vibe": "Health-sciences-first campus culture — clinical, professional, and purposeful. Keiser attracts students who know exactly what career they want. Campus social life is moderate but Fort Lauderdale is an excellent lifestyle city outside the gates.",
-      "thingsToDo": "Fort Lauderdale beach, Las Olas Boulevard, Wilton Manors entertainment district, Miami (30 min), Everglades, Palm Beach (45 min), Port Everglades cruise terminal. Fort Lauderdale is excellent for outdoor and waterfront activities.",
-      "socialScene": "Professional and career-focused culture. Students respect each other's clinical ambitions. Less social than a typical university but the Fort Lauderdale environment makes up for it. International students present in health science programs.",
-      "olivierMatch": "★★★ Keiser is functionally excellent for PT pathway but limited campus culture. Fort Lauderdale lifestyle is great. Best if Olivier's priority is maximising clinical hours and academic preparation over social campus experience.",
-      "lifestyleTags": "Clinical culture, Fort Lauderdale, purposeful"
+      "vibe": "Health-sciences-first campus culture — clinical, professional, and purposeful. Keiser attracts students who know exactly what career they want. Campus social life is moderate but West Palm Beach is an excellent lifestyle city outside the gates.",
+      "thingsToDo": "West Palm Beach waterfront, Clematis Street restaurants and nightlife, Palm Beach Island beaches (20 min), Norton Museum of Art, Fort Lauderdale (45 min), Miami (90 min), Everglades. West Palm Beach is excellent for outdoor and waterfront activities.",
+      "socialScene": "Professional and career-focused culture. Students respect each other's clinical ambitions. Less social than a typical university but the West Palm Beach environment makes up for it. International students present in health science programs.",
+      "olivierMatch": "★★★ Keiser is functionally excellent for PT pathway but limited campus culture. West Palm Beach lifestyle is great. Best if Olivier's priority is maximising clinical hours and academic preparation over social campus experience.",
+      "lifestyleTags": "Clinical culture, West Palm Beach, purposeful"
     },
     "facilityDetails": {
-      "stadium": "Keiser University Soccer Complex — FieldTurf, 1,200 capacity, lights. Fort Lauderdale location. Sun Conference NAIA standard.",
-      "trainingFields": "2 FieldTurf practice fields on Keiser campus. Year-round Fort Lauderdale climate — ideal training environment.",
+      "stadium": "Vecellio Field (Keiser University Soccer Complex) — FieldTurf, 1,200 capacity, lights. Flagship Campus, West Palm Beach. Sun Conference NAIA standard.",
+      "trainingFields": "2 FieldTurf practice fields on Keiser campus. Year-round West Palm Beach climate — ideal training environment.",
       "strengthConditioning": "Keiser Athletics Performance Center — 7,000 sq ft, well-equipped for NAIA. Olympic platforms, free weights, cable systems. Sports science programming through Keiser's health sciences faculty — the depth of clinical knowledge on staff is the differentiator.",
       "sportsScience": "GPS tracking for sessions. Video analysis (Hudl). Keiser's clinical simulation labs — normally reserved for health science clinical training — are occasionally accessible to soccer athletes for performance testing.",
       "sportsMed": "Keiser Athletics certified athletic trainer. Broward Health sports medicine partnership. Keiser's own health sciences faculty (including exercise physiology and anatomy professors) provide an unusually deep sports medicine advisory support structure for NAIA level.",
       "academicLabs": "Keiser Clinical Simulation Centre — the standout facility. Features: high-fidelity patient simulation mannequins (including respiratory and cardiac scenarios), anatomy lab (preserved cadavers — rare at NAIA level), clinical nursing suites, rehabilitation simulation rooms. Pre-PT students get hands-on patient simulation experience before entering graduate school — unavailable at most US undergraduate programs.",
-      "extras": "Fort Lauderdale beach (15 min). Las Olas Boulevard. Broward Center for the Performing Arts. Miami 30 min. NAIA's flexible schedule (fewer travel days than D1/D2) means more time for clinical observation and study.",
+      "extras": "Palm Beach Island beaches (20 min). Clematis Street and Rosemary Square downtown. Kravis Center for the Performing Arts. Fort Lauderdale 45 min, Miami 90 min. NAIA's flexible schedule (fewer travel days than D1/D2) means more time for clinical observation and study.",
       "rating": "Good",
       "note": "Keiser's standout differentiator is the Clinical Simulation Centre — cadaver anatomy lab and patient simulation at NAIA level is genuinely rare. For a student targeting DPT or Chiropractic, this hands-on pre-graduate experience is more valuable than a bigger weight room.",
       "housing": {
         "available": true,
-        "note": "On-campus residential housing exists at Keiser's Flagship Campus, which official Keiser Seahawks athletics sources (kuseahawks.com, Vecellio Field) place in West Palm Beach, not Fort Lauderdale as this profile's loc/culture/facilities text currently states — see flagged discrepancy below. Verified v38 via official residential.keiseruniversity.edu, but the location mismatch means this profile's Fort Lauderdale-specific lifestyle claims need re-verification, not just this housing field."
+        "note": "On-campus residential housing exists at Keiser's Flagship Campus, in West Palm Beach — verified v38 via official residential.keiseruniversity.edu and kuseahawks.com (Vecellio Field). Profile location fields corrected Fort Lauderdale -> West Palm Beach in v40.6."
       }
     },
     "coach": {
@@ -2080,7 +2080,7 @@
       "title": "Head Men's Soccer Coach",
       "email": "athletics@keiseruniversity.edu",
       "phone": "954-776-4476",
-      "profile": "Head Men's Soccer Coach at Keiser University. Staff includes Assistant Coach Joe Barber, Goalkeeping Coach Leo Camacho, and Athletic Trainer Vittoria Giordano. Keiser is a health sciences university — clinical simulation labs and pre-PT academic environment are core strengths. Fort Lauderdale campus, warm year-round climate, NAIA Sun Conference with generous scholarship potential."
+      "profile": "Head Men's Soccer Coach at Keiser University. Staff includes Assistant Coach Joe Barber, Goalkeeping Coach Leo Camacho, and Athletic Trainer Vittoria Giordano. Keiser is a health sciences university — clinical simulation labs and pre-PT academic environment are core strengths. West Palm Beach campus (residential Flagship Campus), warm year-round climate, NAIA Sun Conference with generous scholarship potential."
     },
     "devScores": {
       "tactical": 74,
@@ -2105,7 +2105,7 @@
       "EXS 310 — Exercise Physiology",
       "EXS 400 — Clinical Applications"
     ],
-    "rec": "Keiser is fundamentally a health sciences university. Fort Lauderdale warm and cosmopolitan. Clinical Simulation Centre provides patient care experience before grad school. Best if academics are the priority over professional soccer.",
+    "rec": "Keiser is fundamentally a health sciences university. West Palm Beach warm and cosmopolitan. Clinical Simulation Centre provides patient care experience before grad school. Best if academics are the priority over professional soccer.",
     "url": "https://keiseruniversity.edu/athletics",
     "lensScores": {
       "overall": 51,
@@ -2174,8 +2174,8 @@
     },
     "profileDepth": "full",
     "confKey": "other",
-    "mapX": 475,
-    "mapY": 299,
+    "mapX": 478,
+    "mapY": 303,
     "domain": "keiseruniversity.edu",
     "acuUnits": [
       {

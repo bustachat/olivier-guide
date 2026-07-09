@@ -6,7 +6,29 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
-### v39.5 (July 2026) — Standings/roster remediation for the 17 v39.1-v39.4 JUCO adds (NOT YET COMMITTED)
+### v40.1 – v40.2 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook + validator check to end this bug class
+
+Found during the v40 session's browser verification pass over the v39 work (the pass v39.7 had skipped — a concurrent session held the preview slot then). The v39 work itself verified clean; the new find was **pre-existing**:
+
+- **v40.1 (commit `80dc75a`) — 9 schools showed the literal text "undefined" in their Minutes Outlook stat boxes, live since v28.1/V16.** 7 schools (Cal Poly, UC Davis, William & Mary, Hofstra, Drexel, Delaware, Elon) used the key `mf_total_2026` where the renderer and §5 schema read `mf_total_2025` — introduced by the v28.1 scrape; key renamed in place, values untouched. Notre Dame and Georgetown are missing `rising_senior_2027_count` entirely (v21-era research, honest gap — never guessed): renderers now guard with '—' instead of printing "undefined", and the modal summary says "An unconfirmed number of seniors" instead of falsely claiming "0 seniors". Actual counts deferred to a Sept–Nov roster re-scrape (§15 off-season rule; see §6 deferred items). No score cascade — scores.js never reads these fields. Browser-verified: Minutes tab stat boxes, both modals, zero "undefined" page-wide, fit scores unchanged.
+- **v40.2 (commit `c83ba68`) — MO-KEYS check added to `validate_consistency.js`.** Both the v39.7 bug (trajectory `yr` vs `year`, 19 schools) and v40.1 were schema-adjacent key names that every existing check accepted. The validator now audits every minutesOutlook object's keys exactly: unknown keys, missing required keys, and exact trajectory keys (`year`/`yr_label`/`pct`/`label`), with the ND/Georgetown gap explicitly whitelisted (`MO_MISSING_OK` — remove once researched). Tested by injecting a `yr` key: flagged twice; clean data holds the 1-issue baseline.
+
+Full v40 session kickoff detail: the v39 verification pass confirmed all 358 trajectory chips render real years, 110 map dots with only the 2 known deferred off-land (ucirvine, vermont), coach ranks 1–110 sequential, all 24 conference cards, Phoenix College modal all 9 tabs, zero console errors.
+
+- guideVersion bumped v39.6 → v40.2 across the two commits.
+
+---
+
+### v39.6 – v39.7 (July 2026) — RETROACTIVE ENTRIES (shipped but never logged here — gap #6 in v39_session_failures_summary.md)
+
+These two entries are written after the fact by the v40 session. The v39.1–v39.5 entries below were drafted before commit and never revised, so their "NOT YET COMMITTED" labels went stale — corrected inline below.
+
+- **v39.6 (part of commit `c456259`, which squashed v39.1–v39.6):** two fixes that existed only in the commit message until now. (1) **Map coordinates for 7 schools placed off the drawn landmass** — the lat/lon linear formula doesn't match the hand-drawn SVG Dashboard map; 6 of the 17 new JUCO schools plus pre-existing Arizona Western (wrong since v35) were re-placed using `isPointInFill()` against the real SVG paths. 2 more pre-existing off-map schools (ucirvine, vermont) were found and correctly deferred (still open — §6 deferred items). (2) **Phoenix College's `facilityDetails.rating` was inflated to "Excellent"** based on the team's national championship rather than facility substance; corrected to "Good" per the §4 rating scale.
+- **v39.7 (commits `09c2ab7` + `69cfc55`):** fixed every JUCO school's Minutes Outlook showing `undefined · Yr 1` — 19 schools' trajectory objects in `data/juco.json` used the key `"yr"` instead of `"year"` (4 from the v35 batch, 15 of the 17 v39 adds). The original bug report blamed the render code; investigation showed the code was correct and matched 101 other schools — changing the code would have broken those 101. Renamed the 38 bad keys via a regex scoped to objects followed by `"yr_label"`, leaving `confRecord`'s 151 legitimate `"yr"` fields untouched. Pure display fix, no score cascade (`calcMinutesScore()` only reads `t.pct`). Live browser verification was not possible that session (preview slot held by a concurrent session) — a Node simulation was substituted; the v40 session later live-verified all 358 trajectory chips render real years. `69cfc55` added `v39_session_failures_summary.md`, the incident log for the whole v39 arc.
+
+---
+
+### v39.5 (July 2026) — Standings/roster remediation for the 17 v39.1-v39.4 JUCO adds (committed in `c456259` — label corrected by v40, see v39.6 entry above)
 
 Direct follow-up to v39.1-v39.4's own remediation entry. Owner asked a second direct question after reviewing the first fix: "and all standings/titles/roster research minutes outlook completed?" Answer was no — checked the actual data rather than re-asserting completeness:
 
@@ -20,11 +42,11 @@ Direct follow-up to v39.1-v39.4's own remediation entry. Owner asked a second di
 `node validate_consistency.js` held at the 1 known baseline issue throughout. Live-verified in browser: both fit scores match hand-calculated values exactly, Minutes tab renders real roster data for the 2 newly-fixed schools, Standings tab shows real years with no placeholder text remaining.
 
 - guideVersion bumped v39.4 → v39.5.
-- **Still not committed** — this entry, like v39.1-v39.4, is part of the same held batch awaiting owner review.
+- ~~Still not committed~~ **Committed as part of `c456259`** (v39.1–v39.6 squashed) — this label was stale from before the commit; corrected by the v40 session.
 
 ---
 
-### v39.1 – v39.4 (July 2026) — JUCO region sub-sections + 17 new JUCO schools (NOT YET COMMITTED at time of writing)
+### v39.1 – v39.4 (July 2026) — JUCO region sub-sections + 17 new JUCO schools (committed in `c456259` — label corrected by v40)
 
 Two-part request: (1) group the Explore tab's JUCO section by NJCAA region instead of one flat grid, (2) build out "top 5 JUCOs per region" for the 6 NJCAA regions already represented in the guide, which required identifying and adding 17 new schools (93 → 110 total schools).
 
@@ -44,7 +66,7 @@ Full profiles built per §7 Phase 1's field list (coach, roster-derived minutesO
 Also discovered in passing (pre-existing, not caused by this session, not fixed — see §6 deferred items): `data/pipeline.json`'s combined JUCO row still lists Northeast CC under the non-Elite group even though `jucoTier` was upgraded Standard→Elite back in v38.9; and §7 Phase 5's "score breakdown tooltip" checklist item describes a feature that doesn't exist anywhere in the current build (checked both a new school and pre-existing Barton CC).
 
 - guideVersion bumped v38.12 → v39.4 in athletes/olivier.json across the session.
-- **Not committed or pushed as of this entry** — owner asked to hold all commits until the full batch (and this remediation pass) could be reviewed together.
+- ~~Not committed or pushed as of this entry~~ **Committed as part of `c456259`** (v39.1–v39.6 squashed, pushed to main) — this label was stale from before the commit; corrected by the v40 session.
 
 ---
 

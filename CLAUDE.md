@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v38.12 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v40.2 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -669,7 +669,7 @@ Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are delibera
 
 ## 6. Version History & Current State
 
-**Current version: v39.4 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. **Not yet committed as of this snapshot — 6+ files modified locally, awaiting owner review/commit.**
+**Current version: v40.2 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
@@ -706,6 +706,7 @@ The full 174-issue baseline from the v35.1 code review (previously listed here) 
 Lower-priority (code quality, still deferred — none were in v36's named scope): `atarToGpa` defined in both scores.js and app.js (app.js wins by script load order — do not reorder the script tags); `DATA_BASE_URL` means `./data/` in app.js but site root in dashboard.js; olivier.json fetched twice per page load; `selectSchoolFromBar()` button-highlight matcher can never match (arrow-fn toString); dashboard `filterToConf('other')` scrolls to the Ivy section (5 Explore sections share `data-confkey="other"`, plus 5 duplicate `id="grid-other"` elements); search keyword echoed unescaped into the filter-summary HTML (self-XSS); stale Explore section intro texts in CONF_SECTIONS ("Stanford and Duke among 14 listed programs" etc. — everything is full-profile since v25); Glossary Minutes Score text says Yr1 45/Yr2 30/Yr3 15/Yr4 10 but code is Yr1 60/Yr2 40; FX slider sublabels say 1.30–1.80 but the range is 1.20–1.70. (The old `costScore()` falsy-zero-for-service-academies issue is now moot — cost was removed from fitOlivier entirely in v37.1.)
 
 ### Deferred items (carried forward)
+- **Notre Dame + Georgetown `rising_senior_2027_count` unresearched (found v40.1)** — both schools' v21-era minutesOutlook never captured rising-senior counts (and `cleared_names` is empty for both). Renderers guard with '—' and the modal summary says "An unconfirmed number of seniors" since v40.1, and the gap is whitelisted in `validate_consistency.js`'s `MO_MISSING_OK`. Re-scrape both rosters Sept–Nov 2026 (§15 off-season rule), then remove the whitelist entries.
 - Stony Brook coach name AND minutesOutlook — site down / off-season; coach still placeholder, minutesOutlook still `available: false`
 - Navy + Army — service academies, intentionally `available: false`
 - UCI roomBoard ($19,500) and total COA, and OCU costNum, are estimates pending Tier-1 confirmation
@@ -1052,7 +1053,7 @@ Catches: duplicate school IDs, acuAlign vs covered:true mismatch, wrong lens/dev
 ```bash
 node validate_consistency.js
 ```
-Catches what validate_schools.py doesn't: stored fitOlivier vs live scores.js formula drift, conferences.json tier strings vs renderer buckets, coach name sync (conf JSON vs coaches.json), recruit_risk / gpa.status enum drift, missing kinRank / juco2yr, DOMAINS / SITE_URLS / SOCIAL coverage, fin component sums, confKey vs CONF_SECTIONS, shortlist/outreach orphans, map coords. **v36 backlog cleared July 2026: 174 → 1 issue** (see §6 and CHANGELOG.md's v36 entry). The 1 remaining line (Stony Brook coach name) is a genuine data gap, not a bug — the count must never increase from a session's changes.
+Catches what validate_schools.py doesn't: stored fitOlivier vs live scores.js formula drift, conferences.json tier strings vs renderer buckets, coach name sync (conf JSON vs coaches.json), recruit_risk / gpa.status enum drift, missing kinRank / juco2yr, DOMAINS / SITE_URLS / SOCIAL coverage, fin component sums, confKey vs CONF_SECTIONS, shortlist/outreach orphans, map coords, and (since v40.2) exact minutesOutlook/trajectory key names (MO-KEYS — the "right shape, wrong key name" class behind the v39.7 `yr`/`year` and v40.1 `mf_total_2026` bugs, which render as literal 'undefined' and which no other check sees). **v36 backlog cleared July 2026: 174 → 1 issue** (see §6 and CHANGELOG.md's v36 entry). The 1 remaining line (Stony Brook coach name) is a genuine data gap, not a bug — the count must never increase from a session's changes.
 
 ```bash
 python -m json.tool data/[conf].json

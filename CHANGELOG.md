@@ -6,7 +6,7 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
-### v40.1 – v40.4 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed
+### v40.1 – v40.5 (July 2026) — Fix 9 schools rendering 'undefined' in Minutes Outlook, validator check to end this bug class, docs reconciliation, last 2 off-map dots fixed, Northeast CC Elite JUCO pipeline fix
 
 Found during the v40 session's browser verification pass over the v39 work (the pass v39.7 had skipped — a concurrent session held the preview slot then). The v39 work itself verified clean; the new find was **pre-existing**:
 
@@ -16,9 +16,11 @@ Found during the v40 session's browser verification pass over the v39 work (the 
 - **v40.3 (commit `a1f51cd`) — docs reconciled with git reality** (closes gap #6 in v39_session_failures_summary.md): retroactive v39.6/v39.7 CHANGELOG entries, stale "NOT YET COMMITTED" labels corrected, CLAUDE.md §1/§6 version claims fixed, new deferred item for the ND/Georgetown gap.
 - **v40.4 — the last 2 off-map Dashboard dots fixed**: `ucirvine` (100,208 → 103,213) and `vermont` (548,92 → 544,112), the two pre-existing bugs found-but-deferred during v39.6. Both re-placed via `isPointInFill()` against the live SVG, geographically sensible vs neighbors (Irvine between Fullerton and La Jolla; Burlington north of Yale). Browser-verified: **all 110 dots on the drawn landmass, zero off-land — first time the map has been fully clean.** Deferred item removed from §6.
 
+- **v40.5 — Northeast CC moved to its rightful Elite JUCO position in `data/pipeline.json`** (deferred since v38.9, when its 2024 NJCAA DII National Championship — first in program history — was found missing and `jucoTier` was upgraded Standard→Elite, but pipeline.json was never touched). Three fixes: its individual `ncaaD2[]` row upgraded from generic "Transfer pathway" to Elite JUCO badge + "2024 NJCAA DII champion" chip-green (and moved up beside the other champion programs); added to the Elite JUCO combined `mlsDraft` row; removed from the non-Elite "Santa Monica / Miami Dade / ..." row. Browser-verified on the Pro Pipeline tab, zero console errors. Deferred item removed from §6.
+
 Full v40 session kickoff detail: the v39 verification pass confirmed all 358 trajectory chips render real years, 110 map dots with only the 2 known deferred off-land (ucirvine, vermont — fixed in v40.4 above), coach ranks 1–110 sequential, all 24 conference cards, Phoenix College modal all 9 tabs, zero console errors.
 
-- guideVersion bumped v39.6 → v40.4 across the session.
+- guideVersion bumped v39.6 → v40.5 across the session.
 
 ---
 

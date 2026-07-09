@@ -1272,9 +1272,11 @@ function buildMinutesModalTab(u){
   const cleared = mo.cleared_before_2027 || 0;
   const juniors = mo.rising_junior_2027_count || 0;
   const seniors = mo.rising_senior_2027_count || 0;
+  // rising_senior_2027_count is genuinely unresearched for some schools — say so rather than claiming 0
+  const seniorsTxt = mo.rising_senior_2027_count === undefined ? 'An unconfirmed number of seniors' : `${seniors} senior${seniors!==1?'s':''}`;
   const yr1label = traj[0] ? traj[0].label : '—';
   const summary = `${cleared} midfielder${cleared!==1?'s':''} clear out before Olivier arrives. `+
-    `${seniors} senior${seniors!==1?'s':''} and ${juniors} junior${juniors!==1?'s':''} remain as direct competition in 2027. `+
+    `${seniorsTxt} and ${juniors} junior${juniors!==1?'s':''} remain as direct competition in 2027. `+
     `Expected year-1 role: <strong>${yr1label}</strong>.`;
 
   let trajHtml = traj.map(t=>{
@@ -1303,7 +1305,7 @@ function buildMinutesModalTab(u){
       <div class="mo-trajectory" style="margin-bottom:1rem">${trajHtml}</div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:.75rem">
         <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
-          <div style="font-size:1.3rem;font-weight:800;color:var(--text)">${mo.mf_total_2025}</div>
+          <div style="font-size:1.3rem;font-weight:800;color:var(--text)">${mo.mf_total_2025 ?? '—'}</div>
           <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">MFs 2025</div>
         </div>
         <div style="background:var(--emerald3);border-radius:8px;padding:7px;text-align:center;border:1px solid #a7f3d0">
@@ -3087,9 +3089,9 @@ function buildMinutesHtml(cardsOnly){
       cardsHtml +=
           '</div>'+
           '<div class="mo-stats">'+
-            '<div class="mo-stat"><div class="mo-stat-num">'+mo.mf_total_2025+'</div><div class="mo-stat-lbl">MFs (2025)</div></div>'+
-            '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--emerald)">'+mo.cleared_before_2027+'</div><div class="mo-stat-lbl">Cleared by 2027</div></div>'+
-            '<div class="mo-stat"><div class="mo-stat-num">'+mo.rising_senior_2027_count+'</div><div class="mo-stat-lbl">2027 Seniors</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num">'+(mo.mf_total_2025 ?? '—')+'</div><div class="mo-stat-lbl">MFs (2025)</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--emerald)">'+(mo.cleared_before_2027 ?? '—')+'</div><div class="mo-stat-lbl">Cleared by 2027</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num">'+(mo.rising_senior_2027_count ?? '—')+'</div><div class="mo-stat-lbl">2027 Seniors</div></div>'+
             '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div><div class="mo-stat-lbl">2027 Juniors</div></div>'+
             '<div class="mo-stat"><div class="mo-stat-num" style="color:'+riskColor+';font-size:13px;font-weight:800">'+riskLabel+'</div><div class="mo-stat-lbl">Entry Competition</div></div>'+
           '</div>';

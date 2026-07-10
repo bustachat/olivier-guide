@@ -851,6 +851,14 @@ So `nextLevelFactor()` returns **0.5 (neutral) when data is unavailable**, mirro
 
 The metric discriminates: Tyler and Arizona Western both carry `jucoTier: "Elite"` and dev-avg 74, yet differ 7× on D1 placement rate. That spread is precisely the signal `devScores` was being distorted to carry. **Divisor still unset — needs more of the 40.**
 
+### The canonical example — why `mlsPicks5yr` is the wrong metric for a JUCO
+
+Northeast CC publishes a Dec-2025 release: **Edouard Nys, 2nd round, 40th overall, FC Dallas, 2025 MLS SuperDraft.** He played two seasons at Northeast (2023–24), transferred to **UIC**, led the NCAA in goals per game, and was drafted **out of UIC**.
+
+So Northeast's stored `mlsPicks5yr: 0` is **factually correct** — and that is exactly the indictment. Northeast's real next-level output was *a D1 transfer that became an MLS second-round pick*, and the current formula scores it **zero**. UIC banks the credit, and UIC is not even in this guide. Do not "fix" this by crediting the draft pick to Northeast; fix it by measuring the D1 transfer, which is what `d1TransferRate` does.
+
+This is also the cleanest validation of the §5a split: Northeast is the 2024 NJCAA DII National Champion *and* holds the lowest dev-avg of all 29 JUCOs (57). Both can be true. The title and the pro alumnus are **results** — they belong in `titles[]` and `nextLevelOutput`, not in `tactical`.
+
 ---
 
 ## 5c. fundingPathway (v42 — designed, NOT yet implemented)
@@ -933,7 +941,9 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
   **Modelled impact of §5a's ceilings alone** (before any re-scoring): 24 schools above ceiling, 86 in-band, none below floor. Mean dev drop across the affected 24 is ≈4.9 points ⇒ ≈1.2 Fit points (dev = 60% of Soccer Quality = 24% of Fit). Worst: Chapman −10, Indian Hills −10, PBA/St. Edward's/Oklahoma City/Daytona State −8.
 
   **Still open:** `DIV_STRENGTH` NJCAA DI (0.6) vs DII split (e.g. 0.55 — effect <1 Fit point, cosmetic) — note §5a deliberately puts the DI/DII distinction *here* and in `nextLevelOutput`, not in the dev bands. Consider a soft dev-score sanity REPORT script (sorted cross-division table for eyeballing) — not a hard validator check, since dev scores are judgment values. Related, owner aware but undecided: Elite JUCO bar tightening (21 of 29 currently Elite; strict v37.4 criteria would demote ~7 — Glendale, Mohave, Johnson County, Coastal Bend, Dodge City, Blinn, Iowa Lakes).
-- **Northeast CC's stored `url` is DEAD (found v42.2)** — `https://athletics.northeast.edu/sports/mens-soccer` does not resolve (NXDOMAIN); `northeast.edu` itself resolves fine. The "Visit Site" link on Northeast CC's card and modal is broken on the live site. Find the current athletics URL (Tier-1) and update `data/juco.json` `url` + the `SITE_URLS` entry in `js/app.js`. Not fixed inline in v42.2 — wrong blast radius for a docs commit, same call made for Keiser's location in v38.
+- **Northeast CC dead `url` — CLOSED (v42.4).** `athletics.northeast.edu` was NXDOMAIN; correct host is `northeasthawks.com` (surfaced by the owner). Only `data/juco.json` was wrong — `SITE_URLS` and `DOMAINS` in app.js were already correct. **Tooling note:** `curl` receives HTTP 403 from `northeasthawks.com` (Cloudflare UA block) while WebFetch/a real browser render it fine — a 403 from these athletics hosts means "exists", not "dead". Only a `000`/NXDOMAIN proves a host is gone.
+
+- **`rosterUrl()` 404 on 17 JUCOs — CLOSED (v42.5).** The helper appended `/roster` to program URLs already ending in `/index`, yielding `.../sports/msoc/index/roster`. Verified: that 404s, and so does `.../sports/msoc/roster`; only the season-scoped `.../sports/msoc/2025-26/roster` resolves, and that slug rots each August. Now falls back to the program page when the URL ends in `/index` — always resolves, carries its own current-season roster link, zero annual maintenance. **Do not "improve" this by hardcoding season slugs.**
 
 - **Tyler JC's "#1 D1 Transfer Feeder Nationally — all-time record" claim is UNVERIFIED and may be program marketing (found v42.1).** It is stored in Tyler's `soccerLevel` string and repeated in `proPlayers.notable[]`. Tyler's own "Next Level" page lists **74** D1 alumni (2012–2023); Iowa Western's "Former Reivers" page lists **87** (2004–2026). Tyler leads on *rate* (6.2/yr vs 4.0/yr) but trails on raw count — so the unqualified "#1 all-time" claim is not supported by the two schools' own pages. Either qualify it ("highest D1 placement rate among JUCOs in this guide", if the Step-2 research bears that out) or remove it. Do not repeat a program's self-description as fact.
 

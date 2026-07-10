@@ -828,9 +828,28 @@ proPlayers.nextLevel {
 Absence of `nextLevel` ⇒ fall back to `min(1, mlsPicks5yr/10)`. **The field's presence gates the new behaviour**, so `scores.js` can ship before any data exists and move zero scores — the same one-way-door pattern as `devScoresNote` (§5a).
 
 ### Sourcing (Tier-1, per school)
-Each program's own alumni page. **Naming is inconsistent** — Tyler JC calls it *"Next Level"*, Iowa Western *"Former Reivers"* — so each school needs discovery, not a URL pattern. **Indian Hills returns HTTP 403 to WebFetch** (Cloudflare/Sidearm). Per §15, use the Claude for Chrome MCP for these scrapes; the v39 session lost two rosters to exactly this WebFetch failure mode and recovered both on the first real-browser attempt.
+
+Each program's own alumni page. **Naming is inconsistent at every school** — four variants found in a sample of eight: *"Next Level"* (Tyler JC), *"Former Reivers"* (Iowa Western), *"Matadors Moving On"* (Arizona Western), *"Athletes Moving On"* (Phoenix College). Discovery per school; there is no URL pattern. **Indian Hills returns HTTP 403 to WebFetch and Monroe renders empty** (Cloudflare/Sidearm). Per §15, use the Claude for Chrome MCP for these scrapes; the v39 session lost two rosters to exactly this WebFetch failure mode and recovered both on the first real-browser attempt.
 
 **Do not calibrate the divisor before gathering a real sample.** A guessed constant shipped into `scores.js` is indistinguishable from the inflation this whole effort exists to remove.
+
+### Missing data ⇒ neutral 0.5, never 0 (owner-approved v42.2)
+
+**Roughly half of JUCOs publish no alumni page at all.** Barton CC offers only an alumni *submission form*; Daytona State — the **2025 NJCAA DI National Champions** — publishes nothing. Scoring them 0 would reproduce the precise "absence of data = absence of quality" error this whole step exists to remove.
+
+So `nextLevelFactor()` returns **0.5 (neutral) when data is unavailable**, mirroring `minutesOutlookScore()`, which already returns 0.5 with the comment *"neutral — not penalised."* Unknown ≠ zero. The `nextLevel.note` must record that the value is **neutral, not measured**.
+
+**Known consequence, accepted:** a researched-but-weak program can score *below* an unresearched one. Arizona Western's measured 0.86 D1/yr would land near 0.14 — worse than the 0.5 a school with no page receives. This is inherent to any neutral default (`minutesOutlook` has the identical property) and is the honest trade: we do not punish a program for its webmaster, and we do not reward one for hiding. Do **not** "fix" this by lowering the default — that just re-creates the zeroing bug.
+
+### Calibration sample (v42.2, incomplete — 3 of 40)
+
+| School | D1 alumni | Window | D1/yr |
+|---|---|---|---|
+| Tyler JC | 74 | 2012–2023 (12 yr) | **6.2** |
+| Iowa Western | 87 | 2004–2026 (22 yr) | **4.0** |
+| Arizona Western | 18 (of 117) | 2003–2023 (21 yr) | **0.86** |
+
+The metric discriminates: Tyler and Arizona Western both carry `jucoTier: "Elite"` and dev-avg 74, yet differ 7× on D1 placement rate. That spread is precisely the signal `devScores` was being distorted to carry. **Divisor still unset — needs more of the 40.**
 
 ---
 
@@ -914,6 +933,8 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
   **Modelled impact of §5a's ceilings alone** (before any re-scoring): 24 schools above ceiling, 86 in-band, none below floor. Mean dev drop across the affected 24 is ≈4.9 points ⇒ ≈1.2 Fit points (dev = 60% of Soccer Quality = 24% of Fit). Worst: Chapman −10, Indian Hills −10, PBA/St. Edward's/Oklahoma City/Daytona State −8.
 
   **Still open:** `DIV_STRENGTH` NJCAA DI (0.6) vs DII split (e.g. 0.55 — effect <1 Fit point, cosmetic) — note §5a deliberately puts the DI/DII distinction *here* and in `nextLevelOutput`, not in the dev bands. Consider a soft dev-score sanity REPORT script (sorted cross-division table for eyeballing) — not a hard validator check, since dev scores are judgment values. Related, owner aware but undecided: Elite JUCO bar tightening (21 of 29 currently Elite; strict v37.4 criteria would demote ~7 — Glendale, Mohave, Johnson County, Coastal Bend, Dodge City, Blinn, Iowa Lakes).
+- **Northeast CC's stored `url` is DEAD (found v42.2)** — `https://athletics.northeast.edu/sports/mens-soccer` does not resolve (NXDOMAIN); `northeast.edu` itself resolves fine. The "Visit Site" link on Northeast CC's card and modal is broken on the live site. Find the current athletics URL (Tier-1) and update `data/juco.json` `url` + the `SITE_URLS` entry in `js/app.js`. Not fixed inline in v42.2 — wrong blast radius for a docs commit, same call made for Keiser's location in v38.
+
 - **Tyler JC's "#1 D1 Transfer Feeder Nationally — all-time record" claim is UNVERIFIED and may be program marketing (found v42.1).** It is stored in Tyler's `soccerLevel` string and repeated in `proPlayers.notable[]`. Tyler's own "Next Level" page lists **74** D1 alumni (2012–2023); Iowa Western's "Former Reivers" page lists **87** (2004–2026). Tyler leads on *rate* (6.2/yr vs 4.0/yr) but trails on raw count — so the unqualified "#1 all-time" claim is not supported by the two schools' own pages. Either qualify it ("highest D1 placement rate among JUCOs in this guide", if the Step-2 research bears that out) or remove it. Do not repeat a program's self-description as fact.
 
 - **Notre Dame + Georgetown `rising_senior_2027_count` unresearched (found v40.1)** — both schools' v21-era minutesOutlook never captured rising-senior counts (and `cleared_names` is empty for both). Renderers guard with '—' and the modal summary says "An unconfirmed number of seniors" since v40.1, and the gap is whitelisted in `validate_consistency.js`'s `MO_MISSING_OK`. Re-scrape both rosters Sept–Nov 2026 (§15 off-season rule), then remove the whitelist entries.

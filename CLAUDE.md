@@ -844,24 +844,31 @@ So `nextLevelFactor()` returns **0.5 (neutral) when data is unavailable**, mirro
 
 **Known consequence, accepted:** a researched-but-weak program can score *below* an unresearched one. Arizona Western's measured 0.86 D1/yr would land near 0.14 — worse than the 0.5 a school with no page receives. This is inherent to any neutral default (`minutesOutlook` has the identical property) and is the honest trade: we do not punish a program for its webmaster, and we do not reward one for hiding. Do **not** "fix" this by lowering the default — that just re-creates the zeroing bug.
 
-### MANDATORY: classify destination divisions yourself — never trust the scrape
+### MANDATORY: classify every destination's division yourself — the source page is not authoritative on this
 
-**Alumni pages differ in whether they label divisions, and an extractor will silently guess when they don't.** Indian Hills' page ("Next Level Warriors") has no division headers; the first extraction returned **17 D1**, of which **7 were Eastern New Mexico University — an NCAA Division II school** (Lone Star Conference). Real count ≈10, and the school's rate fell from 1.0 to 0.59 D1/yr — a 40% error that would have shipped.
+**A school's own alumni page will confidently state the wrong division.** Indian Hills' "Next Level Warriors" page has a proper `Level` column and prints **24 NCAA DI** destinations. Read in a real browser and checked school-by-school, only **15** are actually D1:
 
-Rule: for every destination, verify the division against an authoritative source (ncaa.com / the school's own athletics site) before counting it. Pages **with** explicit division sections (Tyler JC, Cowley CC) can be trusted as published; pages **without** them (Indian Hills, Arizona Western, Iowa Western) must be classified by hand. Record which kind the source was in `nextLevel.note`.
+- **Eastern New Mexico University is labelled "NCAA DI" in 10 separate rows.** ENMU plays in the Lone Star Conference — it is **NCAA Division II**.
+- One row (Alcides Duarte → "Eastern New Mexico + Liberty | NCAA DI + NCAA DII") has the pairing **inverted**: Liberty is the D1 school, ENMU the D2 one.
 
-### Calibration sample (v42.7, incomplete — 6 of 29 JUCOs)
+Indian Hills' true rate is **0.88 D1/yr**, not the 1.41 its page implies. **This metric is a rate of D1 placements — a mislabelled destination corrupts it directly.** For every destination, verify the receiving school's division independently (ncaa.com or that school's own athletics site). Never accept the alumni page's own `Level` column, and never accept a summarizer's inference. Record the count you verified, and note any page-vs-truth discrepancies, in `nextLevel.note`.
 
-| School | D1 alumni | Window | **D1/yr** | Source quality |
+**Use the Claude for Chrome MCP for these pages (§15).** `WebFetch` does not return the page — it returns a small model's *summary* of the page, which infers and compresses. Two facts in the v42.7 pass came back wrong from WebFetch and were only caught by reading the rendered text in a real browser: it reported that this page "has no division headers" (it does), and it reported the D1 count as 17 (it prints 24; 15 are real). **Never store a fact obtained from a WebFetch summary.**
+
+### Calibration sample (v42.9, incomplete — 6 of 29 JUCOs)
+
+| School | D1 alumni | Window | **D1/yr** | Verification status |
 |---|---|---|---|---|
-| Tyler JC | 74 | 2012–2023 (12 yr) | **6.2** | ✅ division headers on page |
-| Iowa Western | 87 | 2004–2026 (22 yr) | **4.0** | ⚠️ divisions inferred — needs hand-check |
-| Cowley CC | 24 | 2017/18–2023/24 (7 yr) | **3.43** | ✅ division sections on page |
+| Tyler JC | 74 | 2012–2023 (12 yr) | **6.2** | ⚠️ WebFetch figure — re-verify via Chrome MCP |
+| Iowa Western | 87 | 2004–2026 (22 yr) | **4.0** | ⚠️ WebFetch figure — re-verify via Chrome MCP |
+| Cowley CC | 24 | 2017/18–2023/24 (7 yr) | **3.43** | ⚠️ WebFetch figure — re-verify via Chrome MCP |
 | Phoenix College | 3 | 2024-25 (**1 yr**) | **3.0** | ⚠️ single-year PDF — noisy, n=1 |
-| Arizona Western | 18 (of 117) | 2003–2023 (21 yr) | **0.86** | ⚠️ divisions inferred — needs hand-check |
-| Indian Hills | ~10 (not 17) | 2008–2024 (17 yr) | **0.59** | ✅ corrected: −7 ENMU (D2) |
+| Indian Hills | **15** (page prints 24) | 2008–2024 (17 yr) | **0.88** | ✅ **Chrome MCP, every destination hand-checked** |
+| Arizona Western | 18 (of 117) | 2003–2023 (21 yr) | **0.86** | ⚠️ WebFetch figure — re-verify via Chrome MCP |
 
-**The metric discriminates, emphatically.** Indian Hills carries the **highest dev-avg of any JUCO (78 — tied with Syracuse)** and places roughly **one player per year** in D1. Tyler places **six**. Tyler and Arizona Western are both `jucoTier: "Elite"` with identical dev-avg 74, yet differ **7×** on D1 placement rate. That spread is precisely the signal `devScores` was being distorted to carry.
+**Treat every ⚠️ row as provisional.** Indian Hills is the only row read from the real page, and it moved twice under scrutiny (1.00 → 0.59 → 0.88). Assume the others carry the same error bar until re-read.
+
+**The metric discriminates, emphatically.** Indian Hills carries the **highest dev-avg of any JUCO (78 — tied with Syracuse)** and places **0.88 players per year** in D1. Tyler's page claims **six**. Tyler and Arizona Western are both `jucoTier: "Elite"` with identical dev-avg 74, yet their published pages differ **7×** on D1 placement rate. That spread is precisely the signal `devScores` was being distorted to carry — but note the Tyler and Arizona Western figures are themselves unverified WebFetch summaries, and Indian Hills' printed figure was 60% too high once checked.
 
 **Divisor deliberately still unset.** Do not anchor it on Tyler's 6.2 — with n=6 and only one school near the top, a single unresearched program could exceed it and force a re-cascade. Research all 29 first, then set the divisor from the finished distribution (e.g. the 90th percentile), then compute factors once.
 
@@ -952,7 +959,7 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
   **Sequence — REORDERED v42.1 (owner-approved). `nextLevelOutput` now lands BEFORE the JUCO re-score**, so no school ever displays a score that is down only because the offsetting upside hasn't been built yet. A JUCO losing ~2 Fit points of dev inflation while its ~10 Fit points of real transfer output remain unbuilt would be a temporarily false ranking shown to a live user.
   - **Step 0 — DONE (v42.0, `a9d5a61`):** rubric committed to §5a/§5b/§5c. Doc-only; no score or code moved.
   - **Step 1 — DONE (v42.1, `d668a20`):** `devScoresNote` field + `DEV-RUBRIC` validator check, gated on note presence so the issue baseline held at 1. Also: dev sub-scores must be integers 0–100; placeholder notes (<20 chars) rejected.
-  - **Step 2 — `nextLevelOutput` (§5b), the 29 JUCOs.** Scope went 29 → 40 (v42.2) → **back to 29 (v42.7)**: D2/NAIA/D3 keep `mlsPicks5yr`, whose 0 is a *measured* zero since MLS SuperDraft results are public record. Sub-steps: **(a) research all 29 alumni pages — 6 done** (Tyler 6.2, Iowa Western 4.0, Cowley 3.43, Phoenix 3.0, Arizona Western 0.86, Indian Hills 0.59 D1/yr; 5 confirmed to publish nothing); **(b) hand-verify every destination's division** — never trust the scrape, see the ENMU trap above; **(c) set the divisor from the finished distribution**, not from Tyler; **(d)** `scores.js` + validator mirror, gated on field presence so it ships moving zero scores; **(e)** populate + cascade in batches.
+  - **Step 2 — `nextLevelOutput` (§5b), the 29 JUCOs.** Scope went 29 → 40 (v42.2) → **back to 29 (v42.7)**: D2/NAIA/D3 keep `mlsPicks5yr`, whose 0 is a *measured* zero since MLS SuperDraft results are public record. Sub-steps: **(a) research all 29 alumni pages via Claude for Chrome MCP — 1 verified, 5 provisional** (Indian Hills 0.88 ✅ MCP-verified; Tyler 6.2 / Iowa Western 4.0 / Cowley 3.43 / Phoenix 3.0 / Arizona Western 0.86 all ⚠️ WebFetch summaries needing re-read; 5 confirmed to publish nothing); **(b) hand-verify every destination's division** — the alumni page itself gets this wrong (ENMU labelled NCAA DI ten times on Indian Hills' page); **(c) set the divisor from the finished distribution**, not from Tyler; **(d)** `scores.js` + validator mirror, gated on field presence so it ships moving zero scores; **(e)** populate + cascade in batches.
   - **Step 3 — re-score the 29 JUCOs against §5a.** Now safe: dev drops and pipeline gains land together. (24 of 110 sit above their new ceiling; all 24 are non-D1.) Cascade `fitOlivier` → `lensScores.overall` → `lensScores.value` per §3a Type 13.
   - **Step 4 — implement `fundingPathway` (§5c)** — `scores.js` penalty + data field + Glossary + validator mirror. Includes correcting the known-wrong `aid` strings on Santa Monica, Phoenix, Pima, Glendale, Johnson County. 23 schools need Tier-1 aid research; the 87 `full` schools do not.
   - **Step 5+:** re-score the remaining 81 schools against §5a, **conference file by conference file** (the proven v38-housing batching pattern — one file per commit, validator green each time, full §3a Type 11 regression per batch).
@@ -1636,6 +1643,20 @@ Always set `available: true` when populating and include all 4 trajectory year o
 
 ---
 
+### RULE 0 — Claude for Chrome MCP is the tool for ALL research. No exceptions. (owner-directed, v42.9)
+
+**`WebFetch` does not return a web page. It returns a small model's summary of a web page.** That summary infers, compresses, and silently fills gaps — and you cannot see what it dropped. **Never store a fact that came from a WebFetch or WebSearch summary.**
+
+This rule has now been broken twice, with measurable cost:
+- **v39:** two JUCO rosters were marked "unavailable" after WebFetch failed on Cloudflare/Sidearm pages. Chrome MCP rendered both on the first attempt.
+- **v42.7:** the Indian Hills alumni page was read via WebFetch. It reported "no division headers" (the page has a `Level` column) and a D1 count of 17 (the page prints 24; only **15** are truly D1). The resulting rate was wrong three times over — 1.00, then a "corrected" 0.59, before Chrome MCP gave the real **0.88**.
+
+`WebSearch` remains acceptable for **discovery only** — finding *which URL* to open. The moment a fact is to be recorded, open the page in Chrome MCP (`tabs_context_mcp` → `navigate` → `get_page_text`) and read it. If Chrome MCP `navigate` is blocked for a domain, see the fallback note in the scraping-process memory — but a WebFetch fallback result must be labelled provisional and re-verified before it is committed.
+
+**Corollary — a Tier-1 page can still be wrong.** Indian Hills' own site labels Eastern New Mexico University (NCAA Division II, Lone Star Conference) as "NCAA DI" in ten rows, and inverts the Liberty/ENMU pairing in an eleventh. Tier-1 means *authoritative about itself*, not *correct about third parties*. Verify any claim a page makes about **another** institution.
+
+---
+
 ### Tool Hierarchy
 
 | Task | Primary Tool | Why | Never Use |
@@ -1649,6 +1670,8 @@ Always set `available: true` when populating and include all 4 trajectory year o
 | Conference standings | Claude for Chrome → official conference website | Source of truth for exact finish positions | Wikipedia, ESPN |
 | MLS picks | Claude for Chrome → official MLS SuperDraft results | Authoritative | Any aggregator — often incomplete for recent years |
 | Social media handles | Claude for Chrome → navigate to the account directly; confirm it's active | Verify account is real and active | Guessing from school name pattern |
+| **Alumni / next-level pages (§5b)** | Claude for Chrome → the program's own alumni page; then verify EACH destination's division independently | Naming varies per school; the page's own division column is unreliable (see Rule 0) | WebFetch summaries, transfer-tracker aggregators |
+| **Coach appointment year / record** | Claude for Chrome → the school's own words in a dated article or release | Staff-directory bios blur program history with the coach's tenure; summaries invent an appointment year | WebFetch summary of a staff directory |
 | Map coordinates (lat/long) | WebSearch acceptable | Coordinates don't change | — |
 
 ---

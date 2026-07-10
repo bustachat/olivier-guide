@@ -563,6 +563,12 @@ acuAlignNote, soccerLevel, cost, aid, fin{},
 size, prePT, kinRank, coach{}, gpa{},
 facilities[] (brief array — 3 bullet strings for card display; full-profile schools also require facilityDetails{}),
 devScores{ tactical, technical, fitness },   ← 3 keys only — ptPath removed in v22
+devScoresNote,                               ← added v42.0 — cites the Tier-1 evidence the
+                                                dev scores were drawn from. Its PRESENCE means
+                                                "scored against the §5a rubric" and activates
+                                                validate_consistency.js's DEV-RUBRIC ceiling
+                                                check for this school. Absent = legacy score,
+                                                pending re-baseline (§6). Min 20 chars.
 fitOlivier (0–100),
 lensScores{ overall, soccer, academic, minutes, lifestyle, value },  ← 6 keys — pt removed v22
 tags[], facilities[], courses[], rec, url,
@@ -571,7 +577,9 @@ profileDepth: "full",
 minutesOutlook{ available: true/false, … },
 facilityDetails{ rating, stadium, trainingFields, strengthConditioning,
                  sportsScience, sportsMed, academicLabs, extras, note,
-                 housing: { available: true/false/"limited", note } },  ← added v37.7, optional
+                 housing: { available: true/false/"limited", note } },  ← added v37.7; REQUIRED
+                                                since v41.0 (feeds the Fit Score housing penalty;
+                                                validate_consistency.js HOUSING check enforces it)
 culture{ vibe, thingsToDo, socialScene, olivierMatch, lifestyleTags },
 confRecord[{ yr, pos, note }],
 titles[], proPlayers{}

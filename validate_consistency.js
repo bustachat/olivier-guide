@@ -168,6 +168,39 @@ function calcDevAvg(s) {
   const vals = Object.values(s.devScores);
   return Math.round(vals.reduce((a, b) => a + b, 0) / vals.length);
 }
+
+// ── DEV-RUBRIC (added v42.0): dev score ceilings per CLAUDE.md §5a ──
+// The sub-scores themselves are judgment values and are deliberately NOT checkable here.
+// What IS mechanically checkable is the division environment ceiling — and only for schools
+// that claim to have been scored against the rubric. `devScoresNote` is that claim: it cites
+// the Tier-1 evidence (athletics staff directory + facilities pages) the score was drawn from.
+//
+// Schools with no devScoresNote predate the v42 rubric. They are the re-baseline backlog
+// (CLAUDE.md §6 Steps 2 and 5) and are reported as PROGRESS, not as issues — so adding this
+// check cannot inflate the issue baseline on day one. As each school is re-scored, adding its
+// note activates the ceiling check for it permanently. A note is therefore a one-way door:
+// once written, that school can never drift back above its ceiling unnoticed.
+const DEV_CEILING = { D1: 95, IVY: 88, D2: 76, NAIA: 72, JUCO: 68, D3: 66 };
+let devRebaselined = 0, devLegacyOverCeiling = 0;
+schools.filter(s => s.profileDepth === 'full' && s.devScores).forEach(s => {
+  const ceiling = DEV_CEILING[s.div];
+  if (ceiling === undefined) { note('DEV-RUBRIC', `${s.id} div='${s.div}' has no §5a ceiling`); return; }
+  const avg = calcDevAvg(s);
+  const scored = typeof s.devScoresNote === 'string' && s.devScoresNote.trim().length >= 20;
+
+  if (!scored) {
+    if (s.devScoresNote !== undefined) note('DEV-RUBRIC', `${s.id} devScoresNote present but not a substantive citation (needs the Tier-1 evidence observed, §5a)`);
+    if (avg > ceiling) devLegacyOverCeiling++;
+    return;                                     // legacy score — backlog, not an issue
+  }
+
+  devRebaselined++;
+  if (avg > ceiling) note('DEV-RUBRIC', `${s.id} devAvg=${avg} exceeds the ${s.div} ceiling of ${ceiling} (CLAUDE.md §5a) — dev measures the training environment, not results`);
+  Object.entries(s.devScores).forEach(([k, v]) => {
+    if (!Number.isInteger(v) || v < 0 || v > 100) note('DEV-RUBRIC', `${s.id} devScores.${k}=${v} — must be an integer 0–100`);
+  });
+});
+
 const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
 function soccerQualityScore(s) {
   const devAvg = calcDevAvg(s) / 100;
@@ -207,5 +240,7 @@ for (let i = 0; i < pr.length; i++) if (pr[i] !== i + 1) { note('PRESTIGE', `con
 
 // ── report ──
 console.log(`Schools: ${schools.length}, Coaches: ${coaches.length}, Conferences: ${conferences.length}, Prestige rows: ${prestige.length}`);
+const devTotal = schools.filter(s => s.profileDepth === 'full' && s.devScores).length;
+console.log(`Dev rubric (§5a): ${devRebaselined}/${devTotal} re-baselined · ${devLegacyOverCeiling} legacy schools still above their division ceiling (backlog, not counted as issues)`);
 console.log(`Issues: ${issues.length}  (July 2026 baseline: 174 — see CLAUDE.md §6 v36 backlog; must never increase, target zero)`);
 issues.forEach(i => console.log(i));

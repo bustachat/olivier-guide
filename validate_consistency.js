@@ -201,6 +201,37 @@ schools.filter(s => s.profileDepth === 'full' && s.devScores).forEach(s => {
   });
 });
 
+// ── CONFRECORD backlog counter (added v42.8) ─────────────────────────────────
+// The v38 "zero-variation" scan only caught confRecords where EVERY year carried
+// the same label. That missed Mercyhurst — 2021-24 all read "PSAC" while 2025 read
+// "8th NEC", so the record varied — yet 2024 was in fact their FIRST D1 season and
+// they WON the NEC regular-season title. Four years of real history recorded as a
+// generic placeholder (fixed v42.8).
+//
+// The correct signature is a RUN of >=3 identical GENERIC labels. Generic = the
+// label names no finishing position and no title. Conference names must be stripped
+// before testing for a rank, or "Pac-12" and "B1G" read as ranks because of their
+// digits — the same string-matching trap that made an NCAA D2 school (Eastern New
+// Mexico) count as a D1 transfer destination during the v42.7 alumni research.
+//
+// Reported as BACKLOG, not as an issue: this is pre-existing debt, not a regression,
+// and the issue baseline must not jump for work nobody has done yet (same gating
+// rationale as DEV-RUBRIC above).
+const CONF_TOKENS = /pac-?12|b1g|c-?usa|big ?west|big ?east|big ?ten|njcaa d?i{1,3}|sun conf|caa|acc|aac|ssc|lsc|cacc|psac|nec|wac|asun|iccac|mec|region ?\d+/gi;
+const NAMES_A_RANK = /\b\d+(st|nd|rd|th)?\b|champ|runner|semifinal|\bfinal\b|tourn/i;
+let confRecordBacklog = 0;
+schools.forEach(s => {
+  const cr = s.confRecord || [];
+  if (cr.length < 3) return;
+  let best = 1, cur = 1, label = cr[0].pos;
+  for (let i = 1; i < cr.length; i++) {
+    if (cr[i].pos === cr[i - 1].pos) { cur++; if (cur > best) { best = cur; label = cr[i].pos; } }
+    else cur = 1;
+  }
+  if (best < 3) return;
+  if (!NAMES_A_RANK.test(String(label).replace(CONF_TOKENS, ''))) confRecordBacklog++;
+});
+
 const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
 function soccerQualityScore(s) {
   const devAvg = calcDevAvg(s) / 100;
@@ -242,5 +273,6 @@ for (let i = 0; i < pr.length; i++) if (pr[i] !== i + 1) { note('PRESTIGE', `con
 console.log(`Schools: ${schools.length}, Coaches: ${coaches.length}, Conferences: ${conferences.length}, Prestige rows: ${prestige.length}`);
 const devTotal = schools.filter(s => s.profileDepth === 'full' && s.devScores).length;
 console.log(`Dev rubric (§5a): ${devRebaselined}/${devTotal} re-baselined · ${devLegacyOverCeiling} legacy schools still above their division ceiling (backlog, not counted as issues)`);
+console.log(`confRecord: ${confRecordBacklog} schools with a run of >=3 repeated generic labels — unresearched conference history (backlog, not counted as issues)`);
 console.log(`Issues: ${issues.length}  (July 2026 baseline: 174 — see CLAUDE.md §6 v36 backlog; must never increase, target zero)`);
 issues.forEach(i => console.log(i));

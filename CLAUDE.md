@@ -800,11 +800,14 @@ Replaces the `mlsPicks5yr` term inside `soccerQualityScore()`. Measures **does t
 
 ### Metric: a RATE, never a raw count (owner-approved v42.1)
 
-| Division | Metric | Normalised by |
-|---|---|---|
-| D1 / Ivy | MLS SuperDraft picks + pro signings, 5yr | `min(1, picks/10)` — unchanged |
-| D2 / NAIA / D3 | Pro signings (MLS / MLS NEXT Pro / USL) per year | divisor calibrated from evidence |
-| JUCO | **D1 transfer commitments per year** | divisor calibrated from evidence |
+| Division | Metric | Normalised by | Missing data |
+|---|---|---|---|
+| D1 / Ivy / **D2 / NAIA / D3** | MLS SuperDraft picks, 5yr | `min(1, picks/10)` — unchanged | n/a — see below |
+| **JUCO (29 schools)** | **D1 transfer commitments per year** | divisor set after all 29 are researched | neutral **0.5** |
+
+**D2/NAIA/D3 keep `mlsPicks5yr`, and their 0 is a MEASURED zero (owner-approved v42.7).** MLS SuperDraft results are public record, so `mlsPicks5yr: 0` for Barry means Barry genuinely has no draft picks — it is not a data gap, and neutral 0.5 must **not** be applied. Establishing this closed a real hazard: **Barry, 4× D2 national champions, publishes no alumni or pro-signings tracking at all**, and neither will the other 11. Blanket-applying neutral 0.5 would have handed those 12 schools **+6 Fit points each on no evidence**, purely because their websites are quiet — the identical "website quality as proxy" error that forced the rate-based design in the first place. What is genuinely unmeasurable for them is *non-draft* pro signings (USL, MLS NEXT Pro), which no central source publishes; that is an accepted, documented limitation, not something to paper over with a default.
+
+**Consequence: §5b's scope is the 29 JUCOs only.** The v42.2 "all 40 non-D1 schools" scope is superseded.
 
 **Raw counts are forbidden, and this nearly trapped the v42.1 session.** Schools publish wildly different windows of history:
 
@@ -841,15 +844,31 @@ So `nextLevelFactor()` returns **0.5 (neutral) when data is unavailable**, mirro
 
 **Known consequence, accepted:** a researched-but-weak program can score *below* an unresearched one. Arizona Western's measured 0.86 D1/yr would land near 0.14 — worse than the 0.5 a school with no page receives. This is inherent to any neutral default (`minutesOutlook` has the identical property) and is the honest trade: we do not punish a program for its webmaster, and we do not reward one for hiding. Do **not** "fix" this by lowering the default — that just re-creates the zeroing bug.
 
-### Calibration sample (v42.2, incomplete — 3 of 40)
+### MANDATORY: classify destination divisions yourself — never trust the scrape
 
-| School | D1 alumni | Window | D1/yr |
-|---|---|---|---|
-| Tyler JC | 74 | 2012–2023 (12 yr) | **6.2** |
-| Iowa Western | 87 | 2004–2026 (22 yr) | **4.0** |
-| Arizona Western | 18 (of 117) | 2003–2023 (21 yr) | **0.86** |
+**Alumni pages differ in whether they label divisions, and an extractor will silently guess when they don't.** Indian Hills' page ("Next Level Warriors") has no division headers; the first extraction returned **17 D1**, of which **7 were Eastern New Mexico University — an NCAA Division II school** (Lone Star Conference). Real count ≈10, and the school's rate fell from 1.0 to 0.59 D1/yr — a 40% error that would have shipped.
 
-The metric discriminates: Tyler and Arizona Western both carry `jucoTier: "Elite"` and dev-avg 74, yet differ 7× on D1 placement rate. That spread is precisely the signal `devScores` was being distorted to carry. **Divisor still unset — needs more of the 40.**
+Rule: for every destination, verify the division against an authoritative source (ncaa.com / the school's own athletics site) before counting it. Pages **with** explicit division sections (Tyler JC, Cowley CC) can be trusted as published; pages **without** them (Indian Hills, Arizona Western, Iowa Western) must be classified by hand. Record which kind the source was in `nextLevel.note`.
+
+### Calibration sample (v42.7, incomplete — 6 of 29 JUCOs)
+
+| School | D1 alumni | Window | **D1/yr** | Source quality |
+|---|---|---|---|---|
+| Tyler JC | 74 | 2012–2023 (12 yr) | **6.2** | ✅ division headers on page |
+| Iowa Western | 87 | 2004–2026 (22 yr) | **4.0** | ⚠️ divisions inferred — needs hand-check |
+| Cowley CC | 24 | 2017/18–2023/24 (7 yr) | **3.43** | ✅ division sections on page |
+| Phoenix College | 3 | 2024-25 (**1 yr**) | **3.0** | ⚠️ single-year PDF — noisy, n=1 |
+| Arizona Western | 18 (of 117) | 2003–2023 (21 yr) | **0.86** | ⚠️ divisions inferred — needs hand-check |
+| Indian Hills | ~10 (not 17) | 2008–2024 (17 yr) | **0.59** | ✅ corrected: −7 ENMU (D2) |
+
+**The metric discriminates, emphatically.** Indian Hills carries the **highest dev-avg of any JUCO (78 — tied with Syracuse)** and places roughly **one player per year** in D1. Tyler places **six**. Tyler and Arizona Western are both `jucoTier: "Elite"` with identical dev-avg 74, yet differ **7×** on D1 placement rate. That spread is precisely the signal `devScores` was being distorted to carry.
+
+**Divisor deliberately still unset.** Do not anchor it on Tyler's 6.2 — with n=6 and only one school near the top, a single unresearched program could exceed it and force a re-cascade. Research all 29 first, then set the divisor from the finished distribution (e.g. the 90th percentile), then compute factors once.
+
+### Alumni-page discovery: five naming variants in nine schools, no URL pattern
+`Next Level` (Tyler JC) · `Former Reivers` (Iowa Western) · `Matadors Moving On` (Arizona Western) · `Athletes Moving On` (Phoenix College — a **school-wide PDF**, all sports, single year; the real file sits on CloudFront, `/information/moving_on.pdf` is only a viewer page) · `Alumni` (Cowley CC) · `Next Level Warriors` (Indian Hills). Confirmed to publish **nothing**: Barton CC (alumni *submission* form only), Daytona State, EFSC, Northeast CC, Monroe.
+
+**Tooling:** `indianhills.edu` 403s but `indianhillsathletics.com` serves fine — always try the athletics host before concluding a site is blocked. PDFs need `pdfplumber`/`pypdf` (both installed); naive stream extraction returns CID glyph IDs, not text.
 
 ### The canonical example — why `mlsPicks5yr` is the wrong metric for a JUCO
 
@@ -933,7 +952,7 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
   **Sequence — REORDERED v42.1 (owner-approved). `nextLevelOutput` now lands BEFORE the JUCO re-score**, so no school ever displays a score that is down only because the offsetting upside hasn't been built yet. A JUCO losing ~2 Fit points of dev inflation while its ~10 Fit points of real transfer output remain unbuilt would be a temporarily false ranking shown to a live user.
   - **Step 0 — DONE (v42.0, `a9d5a61`):** rubric committed to §5a/§5b/§5c. Doc-only; no score or code moved.
   - **Step 1 — DONE (v42.1, `d668a20`):** `devScoresNote` field + `DEV-RUBRIC` validator check, gated on note presence so the issue baseline held at 1. Also: dev sub-scores must be integers 0–100; placeholder notes (<20 chars) rejected.
-  - **Step 2 — `nextLevelOutput` (§5b), ALL 40 non-D1 schools** (owner-approved v42.1 — scope corrected from 29 JUCOs after measuring that every D2/NAIA/D3 is zeroed too). Order within: (a) research a calibration sample via Chrome MCP, (b) derive the divisors from that sample, (c) `scores.js` + validator mirror, gated on field presence so it ships moving zero scores, (d) populate + cascade in batches. Expect ~40 alumni-page scrapes; likely 2 sessions.
+  - **Step 2 — `nextLevelOutput` (§5b), the 29 JUCOs.** Scope went 29 → 40 (v42.2) → **back to 29 (v42.7)**: D2/NAIA/D3 keep `mlsPicks5yr`, whose 0 is a *measured* zero since MLS SuperDraft results are public record. Sub-steps: **(a) research all 29 alumni pages — 6 done** (Tyler 6.2, Iowa Western 4.0, Cowley 3.43, Phoenix 3.0, Arizona Western 0.86, Indian Hills 0.59 D1/yr; 5 confirmed to publish nothing); **(b) hand-verify every destination's division** — never trust the scrape, see the ENMU trap above; **(c) set the divisor from the finished distribution**, not from Tyler; **(d)** `scores.js` + validator mirror, gated on field presence so it ships moving zero scores; **(e)** populate + cascade in batches.
   - **Step 3 — re-score the 29 JUCOs against §5a.** Now safe: dev drops and pipeline gains land together. (24 of 110 sit above their new ceiling; all 24 are non-D1.) Cascade `fitOlivier` → `lensScores.overall` → `lensScores.value` per §3a Type 13.
   - **Step 4 — implement `fundingPathway` (§5c)** — `scores.js` penalty + data field + Glossary + validator mirror. Includes correcting the known-wrong `aid` strings on Santa Monica, Phoenix, Pima, Glendale, Johnson County. 23 schools need Tier-1 aid research; the 87 `full` schools do not.
   - **Step 5+:** re-score the remaining 81 schools against §5a, **conference file by conference file** (the proven v38-housing batching pattern — one file per commit, validator green each time, full §3a Type 11 regression per batch).

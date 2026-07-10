@@ -779,18 +779,58 @@ Justified on **staffing and facility limits**, both verifiable per-school from a
 
 ---
 
-## 5b. nextLevelOutput (v42 — designed, NOT yet implemented)
+## 5b. nextLevelOutput (v42 — designed + scoped, NOT yet implemented)
 
-Replaces the `mlsPicks5yr` term inside `soccerQualityScore()`. Measures, over a 5-year window, **does this program move a player up a level** — the thing dev scores were being abused to express.
+Replaces the `mlsPicks5yr` term inside `soccerQualityScore()`. Measures **does this program move a player up a level** — the thing dev scores were being abused to express.
 
-| Division | Metric |
-|---|---|
-| D1 / Ivy / D2 / NAIA / D3 | MLS SuperDraft picks + professional signings |
-| JUCO | D1 / D2 transfer commitments |
+### The bug it fixes is larger than the JUCOs (measured v42.1)
 
-**Why this is needed:** every JUCO except Monroe currently has `mlsPicks5yr: 0`, which structurally zeroes 30% of its Soccer Program Quality. Tyler JC's own record already concedes the problem — `"draftRank": "JUCO level — D1 transfer pipeline is the primary metric"` — while the formula has nowhere to put it. With this term, Tyler JC's *#1 D1 transfer feeder nationally* scores **here, on cited evidence**, instead of being laundered through `tactical`.
+`mlsPicks5yr` is a **D1-shaped metric applied to a guide where 40 of 110 schools are not D1.**
 
-Divisor calibrated during the Phase 1 re-baseline. Implementation is a `scores.js` change and therefore a full cascade — its own commit series, **after** the rubric lands.
+| Division | Schools | `mlsPicks5yr > 0` | Pipeline term stuck at 0 |
+|---|---|---|---|
+| D1 | 67 | 58 | 9 |
+| Ivy | 2 | 2 | 0 |
+| **D2** | 8 | **0** | **8 — all** |
+| **NAIA** | 3 | **0** | **3 — all** |
+| **D3** | 1 | **0** | **1 — all** |
+| **JUCO** | 29 | 1 (Monroe) | **28** |
+
+**40 schools can never access 12 Fit points** (0.3 × 40 weight), no matter how many players they send up. Barry — 4× D2 national champions, the most decorated D2 program in the country — carries the same zeroed pipeline term as a bottom-table JUCO. Tyler JC's own record already conceded the problem: `"draftRank": "JUCO level — D1 transfer pipeline is the primary metric"`, while the formula had nowhere to put it. This is *why* past sessions inflated `tactical` — it was the only lever left.
+
+### Metric: a RATE, never a raw count (owner-approved v42.1)
+
+| Division | Metric | Normalised by |
+|---|---|---|
+| D1 / Ivy | MLS SuperDraft picks + pro signings, 5yr | `min(1, picks/10)` — unchanged |
+| D2 / NAIA / D3 | Pro signings (MLS / MLS NEXT Pro / USL) per year | divisor calibrated from evidence |
+| JUCO | **D1 transfer commitments per year** | divisor calibrated from evidence |
+
+**Raw counts are forbidden, and this nearly trapped the v42.1 session.** Schools publish wildly different windows of history:
+
+| School | Page name | D1 alumni | Window | **Per year** |
+|---|---|---|---|---|
+| Tyler JC | "Next Level" | 74 | 2012–2023 (12 yr) | **6.2** |
+| Iowa Western | "Former Reivers" | 87 | 2004–2026 (22 yr) | **4.0** |
+
+Iowa Western has *more* D1 alumni over a window nearly twice as long. **A raw 5-year count rewards whoever publishes the most history, not whoever develops the most players** — it is a website-quality proxy, exactly the class of error §5a exists to prevent. Store `d1Count`, `yearsCovered`, `years`, `perYear`, and `sourceUrl`; score off `perYear`.
+
+### Schema (proposed)
+```
+proPlayers.nextLevel {
+  metric: "d1TransferRate" | "proSigningRate" | "mlsPicks5yr",
+  d1Count, totalCount,          ← raw, for display + audit
+  yearsCovered: "2012-2023",
+  years, perYear,               ← perYear = d1Count / years
+  sourceUrl, note
+}
+```
+Absence of `nextLevel` ⇒ fall back to `min(1, mlsPicks5yr/10)`. **The field's presence gates the new behaviour**, so `scores.js` can ship before any data exists and move zero scores — the same one-way-door pattern as `devScoresNote` (§5a).
+
+### Sourcing (Tier-1, per school)
+Each program's own alumni page. **Naming is inconsistent** — Tyler JC calls it *"Next Level"*, Iowa Western *"Former Reivers"* — so each school needs discovery, not a URL pattern. **Indian Hills returns HTTP 403 to WebFetch** (Cloudflare/Sidearm). Per §15, use the Claude for Chrome MCP for these scrapes; the v39 session lost two rosters to exactly this WebFetch failure mode and recovered both on the first real-browser attempt.
+
+**Do not calibrate the divisor before gathering a real sample.** A guessed constant shipped into `scores.js` is indistinguishable from the inflation this whole effort exists to remove.
 
 ---
 
@@ -863,17 +903,19 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
 
   **Three-part design, owner-approved v42.0:** (1) `devScores` = environment only, absolute, D1-anchored — §5a. (2) `nextLevelOutput` replaces `mlsPicks5yr` — §5b. (3) `fundingPathway` flat penalty — §5c.
 
-  **Sequence — do not reorder:**
-  - **Step 0 — DONE (v42.0):** rubric committed to §5a/§5b/§5c. Doc-only; no score or code moved.
-  - **Step 1:** add `devScoresNote` to the schema (new field, 110 schools, currently absent) + a validator check. Without it the rubric is unenforceable — nothing records what evidence produced a score.
-  - **Step 2:** re-score the **29 JUCOs** against §5a (worst-affected; 24 of the 110 sit above their new division ceiling and all 24 are non-D1). Cascade `fitOlivier` → `lensScores.overall` → `lensScores.value` per §3a.
-  - **Step 3:** implement `fundingPathway` (§5c) — `scores.js` penalty + data field + Glossary + validator mirror. Includes correcting the known-wrong `aid` strings on Santa Monica, Phoenix, Pima, Glendale, Johnson County. 23 schools need Tier-1 aid research; the 87 `full` schools do not.
-  - **Step 4:** implement `nextLevelOutput` (§5b) — `scores.js` change, calibrate the divisor, research per-school transfer/pro output. Full cascade.
+  **Sequence — REORDERED v42.1 (owner-approved). `nextLevelOutput` now lands BEFORE the JUCO re-score**, so no school ever displays a score that is down only because the offsetting upside hasn't been built yet. A JUCO losing ~2 Fit points of dev inflation while its ~10 Fit points of real transfer output remain unbuilt would be a temporarily false ranking shown to a live user.
+  - **Step 0 — DONE (v42.0, `a9d5a61`):** rubric committed to §5a/§5b/§5c. Doc-only; no score or code moved.
+  - **Step 1 — DONE (v42.1, `d668a20`):** `devScoresNote` field + `DEV-RUBRIC` validator check, gated on note presence so the issue baseline held at 1. Also: dev sub-scores must be integers 0–100; placeholder notes (<20 chars) rejected.
+  - **Step 2 — `nextLevelOutput` (§5b), ALL 40 non-D1 schools** (owner-approved v42.1 — scope corrected from 29 JUCOs after measuring that every D2/NAIA/D3 is zeroed too). Order within: (a) research a calibration sample via Chrome MCP, (b) derive the divisors from that sample, (c) `scores.js` + validator mirror, gated on field presence so it ships moving zero scores, (d) populate + cascade in batches. Expect ~40 alumni-page scrapes; likely 2 sessions.
+  - **Step 3 — re-score the 29 JUCOs against §5a.** Now safe: dev drops and pipeline gains land together. (24 of 110 sit above their new ceiling; all 24 are non-D1.) Cascade `fitOlivier` → `lensScores.overall` → `lensScores.value` per §3a Type 13.
+  - **Step 4 — implement `fundingPathway` (§5c)** — `scores.js` penalty + data field + Glossary + validator mirror. Includes correcting the known-wrong `aid` strings on Santa Monica, Phoenix, Pima, Glendale, Johnson County. 23 schools need Tier-1 aid research; the 87 `full` schools do not.
   - **Step 5+:** re-score the remaining 81 schools against §5a, **conference file by conference file** (the proven v38-housing batching pattern — one file per commit, validator green each time, full §3a Type 11 regression per batch).
 
   **Modelled impact of §5a's ceilings alone** (before any re-scoring): 24 schools above ceiling, 86 in-band, none below floor. Mean dev drop across the affected 24 is ≈4.9 points ⇒ ≈1.2 Fit points (dev = 60% of Soccer Quality = 24% of Fit). Worst: Chapman −10, Indian Hills −10, PBA/St. Edward's/Oklahoma City/Daytona State −8.
 
   **Still open:** `DIV_STRENGTH` NJCAA DI (0.6) vs DII split (e.g. 0.55 — effect <1 Fit point, cosmetic) — note §5a deliberately puts the DI/DII distinction *here* and in `nextLevelOutput`, not in the dev bands. Consider a soft dev-score sanity REPORT script (sorted cross-division table for eyeballing) — not a hard validator check, since dev scores are judgment values. Related, owner aware but undecided: Elite JUCO bar tightening (21 of 29 currently Elite; strict v37.4 criteria would demote ~7 — Glendale, Mohave, Johnson County, Coastal Bend, Dodge City, Blinn, Iowa Lakes).
+- **Tyler JC's "#1 D1 Transfer Feeder Nationally — all-time record" claim is UNVERIFIED and may be program marketing (found v42.1).** It is stored in Tyler's `soccerLevel` string and repeated in `proPlayers.notable[]`. Tyler's own "Next Level" page lists **74** D1 alumni (2012–2023); Iowa Western's "Former Reivers" page lists **87** (2004–2026). Tyler leads on *rate* (6.2/yr vs 4.0/yr) but trails on raw count — so the unqualified "#1 all-time" claim is not supported by the two schools' own pages. Either qualify it ("highest D1 placement rate among JUCOs in this guide", if the Step-2 research bears that out) or remove it. Do not repeat a program's self-description as fact.
+
 - **Notre Dame + Georgetown `rising_senior_2027_count` unresearched (found v40.1)** — both schools' v21-era minutesOutlook never captured rising-senior counts (and `cleared_names` is empty for both). Renderers guard with '—' and the modal summary says "An unconfirmed number of seniors" since v40.1, and the gap is whitelisted in `validate_consistency.js`'s `MO_MISSING_OK`. Re-scrape both rosters Sept–Nov 2026 (§15 off-season rule), then remove the whitelist entries.
 - Stony Brook coach name AND minutesOutlook — site down / off-season; coach still placeholder, minutesOutlook still `available: false`
 - Navy + Army — service academies, intentionally `available: false`

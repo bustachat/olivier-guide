@@ -470,6 +470,29 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 
 ---
 
+### CHANGE TYPE 13 — devScores Changed (added v42.0)
+
+**A dev score is 60% of Soccer Program Quality, which is 40% of Fit — so `devScores` drives 24% of `fitOlivier`. A 10-point dev move is a 2.4-point Fit move. This is never a display-only edit.**
+
+**Before touching any sub-score, read §5a.** Score against the written rubric and its anchors — never from feel, never off a ranking site, never from a team's results.
+
+| Step | What to update | Why |
+|---|---|---|
+| 1 | `data/[conf].json` — `devScores{tactical, technical, fitness}` | Each 0–100, absolute national scale, Tier-1 evidence from the school's own athletics staff directory + facilities pages |
+| 2 | `data/[conf].json` — `devScoresNote` | Cite the evidence observed. A score with no note is unverifiable and will be re-litigated next session |
+| 3 | Confirm `devAvg` ≤ the division ceiling (§5a) | D1 95 · Ivy 88 · D2 76 · NAIA 72 · JUCO 68 · D3 66 |
+| 4 | `data/[conf].json` — `fitOlivier` | Recompute; must match `scores.js` output exactly |
+| 5 | `data/[conf].json` — `lensScores.overall` | Same integer as `fitOlivier` |
+| 6 | `data/[conf].json` — `lensScores.value` | `fitOlivier×0.6 + affordability×40` — recompute, `fitOlivier` moved |
+
+**Tabs to verify:** Explore (card Dev Score stat, card Fit score, Best Fit sort position, Soccer lens ranking), Dashboard Top 8 (may reshuffle), school modal Overview + the three dev sub-score bars, Compare tab's Tactical Dev row.
+
+**Glossary rule applies.** `index.html`'s "Development Sub-Scores" section hardcodes anchor schools in prose. It currently names *"Virginia (Gelnovatch), Indiana (Yeagley) and FIU (Russell)"* and cites sports-science departments at *"Indiana, UCLA, UF"* — **UF is not one of the 110 schools; Florida fields no men's soccer program.** Any dev-score change that moves an anchor must fix that block in the same commit.
+
+`node validate_consistency.js` catches a missed cascade (fit drift). It does **not** and should not check the sub-scores themselves — they are judgment values, not derivable.
+
+---
+
 ## 4. Immovable Architecture Rules
 
 These rules cannot be overridden by the user in session. If a proposed change would violate one, stop and flag it.
@@ -683,6 +706,110 @@ Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are delibera
 
 ---
 
+## 5a. Dev Score Rubric (v42 — the written standard; score against this, never from feel)
+
+**Status: standard adopted v42.0 (doc-only). The 110 stored `devScores` have NOT yet been re-scored against it.** Until the re-baseline lands, stored dev scores predate this rubric and should be treated as unverified.
+
+### What Dev Score is
+
+The quality of the **daily training environment** a player trains in, expressed on an absolute national scale anchored at the top of D1. It answers: *"how much will Olivier develop here, measured against the best environment available in US college soccer?"* — never *"how good is this program for its division?"*
+
+### What Dev Score is NOT
+
+| Not this | It lives here instead |
+|---|---|
+| Team results, rankings, titles | `titles[]` / `confRecord[]` |
+| Transfer or professional output | `nextLevelOutput` (§5b) |
+| Scholarship availability | `fundingPathway` (§5c) |
+| Level of competition faced | `DIV_STRENGTH` in scores.js |
+| Playing time | `minutesOutlook` |
+
+**Every historical dev-score drift came from smuggling one of the above into a sub-score.** The v39 JUCO batch scored dev off 2025 results and rankings; the result was Indian Hills (JUCO) tying Syracuse (2022 NCAA champions) at 78, and Phoenix College (NJCAA DII) out-rating Tyler JC (NJCAA DI, 6 national titles). **If the evidence you are holding is a *result*, it does not belong in a dev score.**
+
+### Sub-scores — each 0–100, absolute, averaged to `devAvg`
+
+| Sub-score | Measures | Tier-1 evidence required |
+|---|---|---|
+| `tactical` | Coaching system quality for a central midfielder | Number of full-time coaches; head-coach tenure and playing/coaching pedigree; documented system of play; whether position-specific coaching exists |
+| `technical` | Training environment | Soccer-specific vs shared facility; pitch standard; video-analysis staff; GPS/wearable technology |
+| `fitness` | Sports science integration | S&C coach dedicated to soccer vs shared across sports; sports-performance staff listed in the athletics directory; nutrition and rehab access |
+
+**Source discipline:** the school's own athletics staff directory and facilities pages. **Never a ranking site** — a ranking site measures results, which is the exact category error this rubric exists to prevent. Record what was observed in `devScoresNote`.
+
+### Anchors — calibrate against these; do not re-score them casually
+
+- **90–95** — Clemson, Indiana, Maryland, Georgetown, UVA. Full-time staff, sports-science personnel dedicated to soccer, soccer-specific stadium *and* training ground.
+- **~75** — Creighton. Solid D1, shared S&C, no dedicated sports science.
+- **~60** — DePaul. D1 membership, modest program investment.
+
+**Conference is NOT a proxy for development environment.** Big East membership does not give DePaul's soccer program Indiana's sports-science department; basketball money does not reach the pitch. Score the program, not the letterhead. (This was tested: banding D1 by conference put 37 schools below their own floor — DePaul 60, Villanova 61, Xavier 63, Seton Hall 64 — because the band was wrong, not the scores.)
+
+### Division ceilings — a ceiling, not a target
+
+Justified on **staffing and facility limits**, both verifiable per-school from an athletics staff directory. Not on scholarship rules — scholarships are a funding fact and live in §5c.
+
+| Division | Ceiling | Structural reason |
+|---|---|---|
+| D1 | **95** | anchor tier |
+| Ivy | **88** | high-major staffing and facilities, but no spring competitive season |
+| D2 | **76** | 1–2 full-time coaches, shared S&C, shared facilities |
+| NAIA | **72** | 1–2 coaches, minimal support staff |
+| JUCO | **68** | 1–2 coaches, rarely any S&C or sports science, often shared/municipal fields |
+| D3 | **66** | often part-time coaches, no dedicated S&C |
+
+**D1 has no floor.** A weakly-invested D1 program scoring 55 is a valid outcome, not a data error.
+
+**No JUCO DI/DII dev split.** A DII JUCO may legitimately out-score a DI JUCO on *environment* if its facilities and staff are genuinely better. Where NJCAA DI pulls ahead is `nextLevelOutput` and `DIV_STRENGTH` — not here. Corollary, and it is counter-intuitive: **Northeast CC (2024 NJCAA DII National Champion) holding the lowest dev score of all 29 JUCOs is not necessarily wrong.** A national title is a result. It belongs in `titles[]` and `nextLevelOutput`, and it says nothing about whether the program employs a strength coach.
+
+### Process per school
+
+1. Gather Tier-1 evidence for all three sub-scores from the school's own site.
+2. Score each sub-score 0–100 against the anchors above.
+3. Compute `devAvg`; confirm it sits at or below the division ceiling.
+4. Write `devScoresNote` citing the evidence observed.
+5. Cascade: `fitOlivier` → `lensScores.overall` → `lensScores.value` (see §3a Change Type 13).
+
+---
+
+## 5b. nextLevelOutput (v42 — designed, NOT yet implemented)
+
+Replaces the `mlsPicks5yr` term inside `soccerQualityScore()`. Measures, over a 5-year window, **does this program move a player up a level** — the thing dev scores were being abused to express.
+
+| Division | Metric |
+|---|---|
+| D1 / Ivy / D2 / NAIA / D3 | MLS SuperDraft picks + professional signings |
+| JUCO | D1 / D2 transfer commitments |
+
+**Why this is needed:** every JUCO except Monroe currently has `mlsPicks5yr: 0`, which structurally zeroes 30% of its Soccer Program Quality. Tyler JC's own record already concedes the problem — `"draftRank": "JUCO level — D1 transfer pipeline is the primary metric"` — while the formula has nowhere to put it. With this term, Tyler JC's *#1 D1 transfer feeder nationally* scores **here, on cited evidence**, instead of being laundered through `tactical`.
+
+Divisor calibrated during the Phase 1 re-baseline. Implementation is a `scores.js` change and therefore a full cascade — its own commit series, **after** the rubric lands.
+
+---
+
+## 5c. fundingPathway (v42 — designed, NOT yet implemented)
+
+A flat penalty applied after the weighted total, exactly like `housingPenalty()` (v41.0). Owner-approved v42.0.
+
+**The distinction that justifies it:** *cost* is a price tag (COA in dollars, varies yearly, has the Financial Model and budget slider — correctly removed from `fitOlivier` in v37.1). ***Scholarship availability* is a structural property of the program** — a CCCAA or D3 school cannot offer athletic money to anyone, ever, at any price. v37.1 removed the price tag; it never ruled on structural availability. Two schools with identical Fit should not rank equal when one can fund an athlete for playing and the other is forbidden to.
+
+| Value | Meaning | Divisions | Penalty | Count |
+|---|---|---|---|---|
+| `full` | Full athletic ride structurally possible | D1, NJCAA DI | **0** | 87 |
+| `capped` | Permitted but limited by rule | D2 (9 equiv.), NAIA (12 equiv.), NJCAA DII (no room & board) | **−3** | 19 |
+| `none` | No athletic scholarships permitted | Ivy, NCAA D3, CCCAA | **−8** | 4 |
+
+**Stacks with `housingPenalty()` — owner-approved v42.0.** Santa Monica: −6 housing, −8 funding = −14. Deliberate: no on-campus housing *and* no athletic money means the family pays rent unaided.
+
+**The penalty ranks; the note discloses.** `aid` display strings stay fully descriptive. Princeton's *"Need-based ONLY — no athletic scholarships (can cover 100% for qualifying families)"* must remain visible in the modal — the −8 reflects that the aid is means-tested and carries no coach leverage, not that Princeton is unaffordable. Owner considered and rejected a `need-only` exemption tier (v42.0): the platform's premise is flagging *scholarship* opportunities.
+
+**Scope note:** because `full` carries a zero penalty, *House*-settlement opt-in status does **not** need researching for the 60 D1 schools — it cannot change a score. Default D1 → `full`. Only the 23 `capped`/`none` schools need Tier-1 aid research.
+
+**Known data errors this will fix** (found v42.0, not yet corrected): Santa Monica stores `aid: "Athletic Grants + Need"` though CCCAA prohibits athletic scholarships outright; Phoenix, Pima, Glendale and Johnson County store a bare `aid: "Athletic"` though NJCAA DII covers tuition/fees/books only. These strings render on the card, the Compare row, and the modal.
+
+Division rules (Tier-1, verified v42.0): NCAA D1 post-*House* (July 1 2025) replaced sport-specific scholarship limits with a 28-player roster cap, all fundable, at opt-in schools — [ncaa.org](https://www.ncaa.org/news/2025/6/23/media-center-di-board-of-directors-formally-adopts-changes-to-roster-limits.aspx). NJCAA DI: tuition, fees, books, room & board. DII: tuition, fees, books only. DIII: none — [njcaa.org](https://www.njcaa.org/member_colleges/Divisional_Structure). Ivy League: need-based aid only, no athletic scholarships in any sport. CCCAA: athletic scholarships prohibited.
+
+---
+
 ## 6. Version History & Current State
 
 **Current version: v41.0 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
@@ -722,7 +849,23 @@ The full 174-issue baseline from the v35.1 code review (previously listed here) 
 Lower-priority (code quality, still deferred — none were in v36's named scope): `atarToGpa` defined in both scores.js and app.js (app.js wins by script load order — do not reorder the script tags); `DATA_BASE_URL` means `./data/` in app.js but site root in dashboard.js; olivier.json fetched twice per page load; `selectSchoolFromBar()` button-highlight matcher can never match (arrow-fn toString); dashboard `filterToConf('other')` scrolls to the Ivy section (5 Explore sections share `data-confkey="other"`, plus 5 duplicate `id="grid-other"` elements); search keyword echoed unescaped into the filter-summary HTML (self-XSS); stale Explore section intro texts in CONF_SECTIONS ("Stanford and Duke among 14 listed programs" etc. — everything is full-profile since v25); Glossary Minutes Score text says Yr1 45/Yr2 30/Yr3 15/Yr4 10 but code is Yr1 60/Yr2 40; FX slider sublabels say 1.30–1.80 but the range is 1.20–1.70. (The old `costScore()` falsy-zero-for-service-academies issue is now moot — cost was removed from fitOlivier entirely in v37.1.)
 
 ### Deferred items (carried forward)
-- **JUCO devScores re-baseline (owner-directed, NEXT SESSION FOCUS — raised at end of v41.0 session).** The stored devScores don't respect NJCAA division reality and are noisy in both directions: Phoenix College (DII) dev-avg 75 out-rates Tyler JC (DI, 6 national titles, 74), Arizona Western (DI, 74), Monroe (DI, 3× national champions, 72), and Iowa Western (DI, 68); CCCAA Santa Monica (73) out-rates five DI Elite programs; while Northeast CC — the actual 2024 NJCAA DII National Champion — has the LOWEST dev-avg of all 29 JUCOs (57). Root-cause suspicion: the v39 batch scored dev off 2025 results/rankings without normalizing for DII-vs-DI competition level (same habit as the Phoenix facility-rating inflation caught in v39.6). **Owner-expanded scope (end of v41.0 session): ALL 110 schools, phased.** devScores are hand-researched stored values, not computed — a rubric is a written standard to score against, not code, so every school must be individually re-assessed. The same cross-era drift risk exists guide-wide (ACC scored in v19-era sessions, the 55-school v25 wave, v39's batch — none against a written anchor). Plan: **(0) write the rubric FIRST, once, global** — one absolute national scale anchored at the top (e.g. national-title D1 programs ≈ 90s) with explicit banding guidance per division so a DII JUCO can't score 75 unless genuinely comparable to a 75 D1 environment; commit the rubric to CLAUDE.md before touching any score. **(1) Phase 1: the 29 JUCOs** (known-bad, evidence above). **(2) Phase 2+: conference file by conference file for the other 81** (the proven v38-housing batching pattern — one file per commit, validator green each time). Each batch: fitOlivier/lensScores.overall/value cascade for changed schools, full regression per §3a Type 11. Also in phase 1: decide DIV_STRENGTH NJCAA DI (0.6) vs DII split (e.g. 0.55 — effect <1 fit point, cosmetic). Consider a soft dev-score sanity REPORT script (sorted cross-division table for eyeballing) — not a hard validator check, since dev scores are judgment values. Related, owner aware but undecided: Elite JUCO bar tightening (21 of 29 currently Elite; strict v37.4 criteria would demote ~7 — Glendale, Mohave, Johnson County, Coastal Bend, Dodge City, Blinn, Iowa Lakes).
+- **devScores re-baseline — ALL 110 schools, phased. Step 0 COMPLETE (v42.0): the rubric is written, see §5a.** Remaining work below.
+
+  **Diagnosis (settled v42.0, supersedes the earlier "cap the JUCOs" framing).** The stored devScores are incoherent because `devAvg` was being asked two incompatible questions at once: *(a)* how good is the daily training environment, and *(b)* does this program move a player up a level. Some schools were scored on (a), some on (b). That is why Indian Hills (JUCO) tied Syracuse at 78, why Phoenix College (NJCAA DII) out-rated Tyler JC (NJCAA DI, 6 titles), and why PBA/St. Edward's (D2) tied Princeton at 84. **The fix is not a cap — it is a split**, plus filling the hole that forced the conflation in the first place: `mlsPicks5yr` is 0 for every JUCO but Monroe, structurally zeroing 30% of their Soccer Program Quality, so past sessions expressed "Tyler JC develops players" the only way the schema allowed — by inflating `tactical`.
+
+  **Three-part design, owner-approved v42.0:** (1) `devScores` = environment only, absolute, D1-anchored — §5a. (2) `nextLevelOutput` replaces `mlsPicks5yr` — §5b. (3) `fundingPathway` flat penalty — §5c.
+
+  **Sequence — do not reorder:**
+  - **Step 0 — DONE (v42.0):** rubric committed to §5a/§5b/§5c. Doc-only; no score or code moved.
+  - **Step 1:** add `devScoresNote` to the schema (new field, 110 schools, currently absent) + a validator check. Without it the rubric is unenforceable — nothing records what evidence produced a score.
+  - **Step 2:** re-score the **29 JUCOs** against §5a (worst-affected; 24 of the 110 sit above their new division ceiling and all 24 are non-D1). Cascade `fitOlivier` → `lensScores.overall` → `lensScores.value` per §3a.
+  - **Step 3:** implement `fundingPathway` (§5c) — `scores.js` penalty + data field + Glossary + validator mirror. Includes correcting the known-wrong `aid` strings on Santa Monica, Phoenix, Pima, Glendale, Johnson County. 23 schools need Tier-1 aid research; the 87 `full` schools do not.
+  - **Step 4:** implement `nextLevelOutput` (§5b) — `scores.js` change, calibrate the divisor, research per-school transfer/pro output. Full cascade.
+  - **Step 5+:** re-score the remaining 81 schools against §5a, **conference file by conference file** (the proven v38-housing batching pattern — one file per commit, validator green each time, full §3a Type 11 regression per batch).
+
+  **Modelled impact of §5a's ceilings alone** (before any re-scoring): 24 schools above ceiling, 86 in-band, none below floor. Mean dev drop across the affected 24 is ≈4.9 points ⇒ ≈1.2 Fit points (dev = 60% of Soccer Quality = 24% of Fit). Worst: Chapman −10, Indian Hills −10, PBA/St. Edward's/Oklahoma City/Daytona State −8.
+
+  **Still open:** `DIV_STRENGTH` NJCAA DI (0.6) vs DII split (e.g. 0.55 — effect <1 Fit point, cosmetic) — note §5a deliberately puts the DI/DII distinction *here* and in `nextLevelOutput`, not in the dev bands. Consider a soft dev-score sanity REPORT script (sorted cross-division table for eyeballing) — not a hard validator check, since dev scores are judgment values. Related, owner aware but undecided: Elite JUCO bar tightening (21 of 29 currently Elite; strict v37.4 criteria would demote ~7 — Glendale, Mohave, Johnson County, Coastal Bend, Dodge City, Blinn, Iowa Lakes).
 - **Notre Dame + Georgetown `rising_senior_2027_count` unresearched (found v40.1)** — both schools' v21-era minutesOutlook never captured rising-senior counts (and `cleared_names` is empty for both). Renderers guard with '—' and the modal summary says "An unconfirmed number of seniors" since v40.1, and the gap is whitelisted in `validate_consistency.js`'s `MO_MISSING_OK`. Re-scrape both rosters Sept–Nov 2026 (§15 off-season rule), then remove the whitelist entries.
 - Stony Brook coach name AND minutesOutlook — site down / off-season; coach still placeholder, minutesOutlook still `available: false`
 - Navy + Army — service academies, intentionally `available: false`

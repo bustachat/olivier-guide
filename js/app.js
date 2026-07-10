@@ -823,7 +823,15 @@ function rosterUrl(u){
     miami_dade: 'https://athletics.mdc.edu/sports/mens-soccer/roster',
   };
   if(overrides[u.id]) return overrides[u.id];
-  return u.url.replace(/\/$/, '') + '/roster';
+  const base = (u.url || '').replace(/\/$/, '');
+  if(!base) return '#';
+  // v42.5: 17 JUCOs store their program page as .../sports/msoc/index (Sidearm).
+  // Appending '/roster' there 404s, and so does .../sports/msoc/roster — Sidearm
+  // requires a season slug (.../sports/msoc/2025-26/roster), which rots every
+  // August and would silently 404 again. Fall back to the program page instead:
+  // it always resolves and carries its own current-season roster link.
+  if(/\/index$/.test(base)) return base;
+  return base + '/roster';
 }
 
 

@@ -872,6 +872,23 @@ Indian Hills' true rate is **0.88 D1/yr**, not the 1.41 its page implies. **This
 
 **Divisor deliberately still unset.** Do not anchor it on Tyler's 6.2 — with n=6 and only one school near the top, a single unresearched program could exceed it and force a re-cascade. Research all 29 first, then set the divisor from the finished distribution (e.g. the 90th percentile), then compute factors once.
 
+### Alumni-page URLs already discovered (v42.7–v42.9) — do not re-discover these
+
+Open each with Claude for Chrome MCP (`tabs_context_mcp` → `navigate` → `get_page_text`), then verify **every destination school's division independently** before counting.
+
+| School | Alumni page URL | Status |
+|---|---|---|
+| Indian Hills | `indianhillsathletics.com/sports/msoc/alums/index` | ✅ verified — 15 real D1 / 17 yr = **0.88/yr** (page prints 24) |
+| Tyler JC | `apacheathletics.com/sports/msoc/Sites/Mens_Soccer_Next_Level` | ⚠️ WebFetch only — re-read |
+| Iowa Western | `goreivers.com/sports/msoc/former` | ⚠️ WebFetch only — re-read |
+| Arizona Western | `awcmatadors.com/sports/msoc/MSOC_Moving_On` | ⚠️ WebFetch only — re-read |
+| Cowley CC | `cowleytigers.com/sports/msoc/alumni` | ⚠️ WebFetch only — re-read |
+| Phoenix College | PDF: `d2o2figo6ddd0g.cloudfront.net/p/q/rwrkzf3a0lwf0k/moving_on.pdf` | ⚠️ **school-wide, all sports, single year (2024-25)**. `/information/moving_on.pdf` is only a viewer page — the real PDF is the CloudFront URL. Extract with `pdfplumber`, not raw stream decode. 2024-25 men's soccer: 3→Grand Canyon (D1), 1→Salem (D2) |
+
+**Confirmed to publish nothing** (→ neutral 0.5 per the missing-data policy, do not re-check): **Barton CC** (alumni *submission form* only), **Daytona State**, **Eastern Florida State**, **Northeast CC**, **Monroe College**.
+
+**Remaining to discover: 18 of the 29 JUCOs.** Naming has no pattern — search each program's own site nav for Alumni / Former / Next Level / Moving On.
+
 ### Alumni-page discovery: five naming variants in nine schools, no URL pattern
 `Next Level` (Tyler JC) · `Former Reivers` (Iowa Western) · `Matadors Moving On` (Arizona Western) · `Athletes Moving On` (Phoenix College — a **school-wide PDF**, all sports, single year; the real file sits on CloudFront, `/information/moving_on.pdf` is only a viewer page) · `Alumni` (Cowley CC) · `Next Level Warriors` (Indian Hills). Confirmed to publish **nothing**: Barton CC (alumni *submission* form only), Daytona State, EFSC, Northeast CC, Monroe.
 

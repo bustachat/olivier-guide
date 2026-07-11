@@ -114,11 +114,12 @@
       "profile": "6th season as HC 2025. Overall record: 27-31-18, CAA: 10-19-8. 2024 best season: 10-6-2, ranked #23 nationally Sep 2024. CofC alum (2000-04) — holds school records for career GAA (0.99), wins (41), shutouts (23), saves (269). Played 7 seasons for Charleston Battery (USL). Was assistant/assoc HC under Ralph Lundy for 11 seasons before taking over 2019."
     },
     "devScores": {
-      "tactical": 76,
-      "technical": 78,
-      "fitness": 74
+      "tactical": 74,
+      "technical": 76,
+      "fitness": 72
     },
-    "fitOlivier": 62,
+    "devScoresNote": "v42.21 §5a re-baseline (training environment only). Live cofcsports.com MSOC staff: 4 coaches (HC Wiggans + 3 assts) + dedicated Asst Dir of Sports Performance (Wibbenmeyer) + MUSC athletic trainer. Statsports GPS (2023) + Hudl video; $6.5M dedicated 5,000-seat natural-grass stadium (off-campus 7 mi). Best-resourced CAA environment; results excluded.",
+    "fitOlivier": 61,
     "tags": [
       "warm",
       "city",
@@ -138,12 +139,12 @@
     "rec": "Charleston is one of America's most beautiful cities — historic waterfront, warm climate. Keith Wiggans played for the local pro team (Charleston Battery). Best if Olivier values city lifestyle and a developing D1 program with personal coaching.",
     "url": "https://cofcsports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 62,
+      "overall": 61,
       "soccer": 58,
       "academic": 68,
       "minutes": 41,
       "lifestyle": 80,
-      "value": 48
+      "value": 47
     },
     "minutesOutlook": {
       "available": true,
@@ -367,10 +368,11 @@
       "draftRank": "Consistent CAA pipeline"
     },
     "devScores": {
-      "tactical": 62,
-      "technical": 60,
-      "fitness": 65
+      "tactical": 66,
+      "technical": 62,
+      "fitness": 66
     },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live tribeathletics.com MSOC staff: 4 coaches (HC + 3 assts) + dedicated Sports Performance Coach (Mollin); on-campus Martin Family Stadium; Sentara med. No documented GPS/video. NB: live directory HC = Chris Norris; stored coach name is stale — flagged for a separate Change Type 2, not fixed in this dev commit.",
     "coach": {
       "name": "Shaun Tsakiris",
       "title": "Head Coach",
@@ -590,14 +592,14 @@
     },
     "mapX": 535,
     "mapY": 152,
-    "fitOlivier": 41,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 41,
+      "overall": 42,
       "soccer": 65,
       "academic": 55,
       "minutes": 19,
       "lifestyle": 50,
-      "value": 25
+      "value": 26
     },
     "confRecord": [
       {
@@ -641,10 +643,11 @@
       "draftRank": "NYC market proximity"
     },
     "devScores": {
-      "tactical": 68,
-      "technical": 65,
+      "tactical": 70,
+      "technical": 66,
       "fitness": 70
     },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live gohofstra.com MSOC staff: HC + Associate HC + assistant + dedicated MSOC Athletic Trainer (Choxi) + dedicated Asst S&C Coach (Melgar); on-campus dedicated stadium. No documented GPS/video. 4 CAA titles are results, excluded. NB: live HC = Stephen Roche; stored coach name stale — flagged Change Type 2.",
     "coach": {
       "name": "Scott Coufal",
       "title": "Head Coach",
@@ -911,10 +914,11 @@
       "draftRank": "Developing pipeline"
     },
     "devScores": {
-      "tactical": 60,
-      "technical": 58,
-      "fitness": 62
+      "tactical": 62,
+      "technical": 56,
+      "fitness": 58
     },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live gonu.com/nuhuskies.com MSOC staff: HC + 2 assts + dedicated Goalkeepers Coach (position-specific), but no team-assigned S&C/AT; urban shared off-campus Parsons Field (Brookline). Elite academic/medical city but modest soccer-specific environment. NB: live HC = Jeremy Bonomo; stored coach name stale — flagged Change Type 2.",
     "coach": {
       "name": "Brian Ainscough",
       "title": "Head Coach",
@@ -1189,10 +1193,11 @@
       "draftRank": "Developing pipeline"
     },
     "devScores": {
-      "tactical": 58,
+      "tactical": 60,
       "technical": 56,
-      "fitness": 60
+      "fitness": 58
     },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live drexeldragons.com MSOC staff: HC Castellanos + 3 assts (4 coaches) + dedicated Athletic Trainer; urban Vidas Athletic Complex; co-op clinical med. No documented GPS/video or soccer-assigned S&C. 2021 CAA title is a result, excluded.",
     "coach": {
       "name": "David Castellanos",
       "title": "Head Coach",
@@ -1417,14 +1422,14 @@
     },
     "mapX": 525,
     "mapY": 164,
-    "fitOlivier": 37,
+    "fitOlivier": 38,
     "lensScores": {
-      "overall": 37,
+      "overall": 38,
       "soccer": 65,
       "academic": 62,
       "minutes": 30,
       "lifestyle": 0,
-      "value": 33
+      "value": 34
     },
     "confRecord": [
       {
@@ -1467,10 +1472,11 @@
       "draftRank": "Consistent pipeline"
     },
     "devScores": {
-      "tactical": 65,
-      "technical": 62,
-      "fitness": 67
+      "tactical": 68,
+      "technical": 64,
+      "fitness": 68
     },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live bluehens.com MSOC staff: deepest CAA staff — HC McMenemy + Associate HC + 2 assts + Director of Soccer Operations + dedicated Athletic Trainer. Whitney Athletic Center 10,000-sqft S&C + nutrition + sports med; on-campus dedicated Grant Stadium. Strong large-public environment; no documented GPS/video.",
     "coach": {
       "name": "Tommy McMenemy",
       "title": "Head Coach",
@@ -1686,14 +1692,14 @@
     },
     "mapX": 497,
     "mapY": 211,
-    "fitOlivier": 31,
+    "fitOlivier": 30,
     "lensScores": {
-      "overall": 31,
+      "overall": 30,
       "soccer": 58,
       "academic": 58,
       "minutes": 12,
       "lifestyle": 0,
-      "value": 21
+      "value": 20
     },
     "confRecord": [
       {
@@ -1734,10 +1740,11 @@
       "draftRank": "Limited pipeline"
     },
     "devScores": {
-      "tactical": 64,
+      "tactical": 60,
       "technical": 62,
-      "fitness": 68
+      "fitness": 60
     },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live elonphoenix.com MSOC staff: only 2 coaches (HC Reeves + Associate HC), no team-assigned support staff listed; dedicated on-campus soccer complex; Exercise Science labs; Alamance med. The 2022/2025 CAA titles are results and were excluded — the prior fitness 68 had no environment evidence and was trimmed to 60.",
     "coach": {
       "name": "Marc Reeves",
       "title": "Head Coach",
@@ -2014,10 +2021,11 @@
       "draftRank": "Limited pipeline"
     },
     "devScores": {
-      "tactical": 55,
-      "technical": 52,
-      "fitness": 58
+      "tactical": 56,
+      "technical": 54,
+      "fitness": 55
     },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live monmouthhawks.com MSOC staff: HC McCourt + Associate HC + Director of Soccer Ops; AT shared with track; athletic-performance staffer assigned to other sports (not MSOC); on-campus Hesse Field (FieldTurf) + OceanFirst Bank Center S&C. Developing program, leanest CAA environment.",
     "coach": {
       "name": "Robert McCourt",
       "title": "Head Coach (6th season)",
@@ -2281,10 +2289,11 @@
       "draftRank": "Long Island/NYC market"
     },
     "devScores": {
-      "tactical": 60,
+      "tactical": 58,
       "technical": 58,
       "fitness": 62
     },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Official site (stonybrookseawolves.com) unreachable — DNS resolves but port 443 times out — so scored from stored Tier-1 facilityDetails: LaValle Stadium SHARED with football (no dedicated soccer stadium), large SUNY athletics S&C, Kinesiology labs, on-campus Stony Brook Medicine for rehab. Live staff depth not verifiable; coach remains TBD.",
     "coach": {
       "name": "TBD",
       "title": "Head Coach",

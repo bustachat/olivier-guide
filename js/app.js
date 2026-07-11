@@ -940,7 +940,7 @@ const DOMAINS = {
   army:           'goarmywestpoint.com',
   charlotte:      'charlotte49ers.com',
   william_mary:   'tribeathletics.com',
-  hofstra:        'hofstraathletics.com',
+  hofstra:        'gohofstra.com',
   northeastern:   'gonu.com',
   drexel:         'drexeldragons.com',
   delaware:       'bluehens.com',

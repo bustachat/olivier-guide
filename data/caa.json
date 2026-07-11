@@ -372,13 +372,13 @@
       "technical": 62,
       "fitness": 66
     },
-    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live tribeathletics.com MSOC staff: 4 coaches (HC + 3 assts) + dedicated Sports Performance Coach (Mollin); on-campus Martin Family Stadium; Sentara med. No documented GPS/video. NB: live directory HC = Chris Norris; stored coach name is stale — flagged for a separate Change Type 2, not fixed in this dev commit.",
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live tribeathletics.com MSOC staff: 4 coaches (HC + 3 assts) + dedicated Sports Performance Coach (Mollin); on-campus Martin Family Stadium; Sentara med. No documented GPS/video.",
     "coach": {
-      "name": "Shaun Tsakiris",
+      "name": "Chris Norris",
       "title": "Head Coach",
-      "email": "sxtsakiris@wm.edu",
-      "phone": "",
-      "profile": "Shaun Tsakiris is one of the longest-tenured coaches in the CAA — building W&M consistently as a competitive conference program. Small campus with strong academic community. Sentara Healthcare provides pre-PT clinical access. GPA 3.0+ required — above Olivier's current level."
+      "email": "cmnorr@wm.edu",
+      "phone": "(757) 221-3385",
+      "profile": "Chris Norris is one of the longest-tenured coaches in Division I — a W&M graduate and former Tribe defender now in his 23rd season as head coach, with CAA Championships in 2010 and 2017 and a 2010 Sweet Sixteen run. Small campus with strong academic community. Sentara Healthcare provides pre-PT clinical access. GPA 3.0+ required — above Olivier's current level."
     },
     "tags": [
       "acad",
@@ -473,10 +473,10 @@
     },
     "staff": [
       {
-        "name": "Shaun Tsakiris",
+        "name": "Chris Norris",
         "role": "Head Coach",
-        "email": "sxtsakiris@wm.edu",
-        "bg": "Long-tenured W&M head coach. One of the most experienced coaches in the CAA. Program consistently competitive under his tenure."
+        "email": "cmnorr@wm.edu",
+        "bg": "1995 W&M graduate and former Tribe defender, in his 23rd season as head coach (36th on staff). 166-169-60 record with CAA titles in 2010 and 2017, four NCAA appearances and a 2010 Sweet Sixteen; 2010 CAA Coach of the Year."
       },
       {
         "name": "Assistant Coach",
@@ -647,13 +647,13 @@
       "technical": 66,
       "fitness": 70
     },
-    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live gohofstra.com MSOC staff: HC + Associate HC + assistant + dedicated MSOC Athletic Trainer (Choxi) + dedicated Asst S&C Coach (Melgar); on-campus dedicated stadium. No documented GPS/video. 4 CAA titles are results, excluded. NB: live HC = Stephen Roche; stored coach name stale — flagged Change Type 2.",
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live gohofstra.com MSOC staff: HC + Associate HC + assistant + dedicated MSOC Athletic Trainer (Choxi) + dedicated Asst S&C Coach (Melgar); on-campus dedicated stadium. No documented GPS/video. 4 CAA titles are results, excluded.",
     "coach": {
-      "name": "Scott Coufal",
+      "name": "Stephen Roche",
       "title": "Head Coach",
-      "email": "scoufal@hofstra.edu",
-      "phone": "",
-      "profile": "Scott Coufal has built Hofstra into the dominant CAA force — 4 consecutive CAA Tournament titles (2022-25). NYC proximity via LIRR (30 min to Penn Station) is an exceptional recruitment advantage. CAA's elite program for development pathway."
+      "email": "stephen.roche@hofstra.edu",
+      "phone": "(516) 463-6562",
+      "profile": "Stephen Roche was promoted to head coach in January 2026 after a decade on staff as the tactical and recruiting lead behind Hofstra's four straight CAA titles (2021-24). NYC proximity via LIRR (30 min to Penn Station) is an exceptional recruitment advantage. CAA's elite program for development pathway."
     },
     "tags": [
       "city",
@@ -670,7 +670,7 @@
       "HSCI 400 — Clinical Practicum (NYC hospital network)"
     ],
     "rec": "NYC proximity via LIRR is the main appeal. Solid CAA program. Expensive for the tier.",
-    "url": "https://hofstraathletics.com/sports/mens-soccer",
+    "url": "https://gohofstra.com/sports/mens-soccer",
     "domain": "hofstra.edu",
     "minutesOutlook": {
       "available": true,
@@ -747,10 +747,10 @@
     },
     "staff": [
       {
-        "name": "Scott Coufal",
+        "name": "Stephen Roche",
         "role": "Head Coach",
-        "email": "scoufal@hofstra.edu",
-        "bg": "4 consecutive CAA Tournament titles (2022-25). Built Hofstra into the CAA's dominant program. NYC market recruiter with international student experience."
+        "email": "stephen.roche@hofstra.edu",
+        "bg": "Promoted to head coach January 2026 after 10 seasons on staff as tactical/recruiting lead. Architect of four straight CAA titles (2021-24) and a 114-47-31 run; Dublin native and former League of Ireland pro; developed six MLS draftees."
       },
       {
         "name": "Assistant Coach",
@@ -918,13 +918,13 @@
       "technical": 56,
       "fitness": 58
     },
-    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live gonu.com/nuhuskies.com MSOC staff: HC + 2 assts + dedicated Goalkeepers Coach (position-specific), but no team-assigned S&C/AT; urban shared off-campus Parsons Field (Brookline). Elite academic/medical city but modest soccer-specific environment. NB: live HC = Jeremy Bonomo; stored coach name stale — flagged Change Type 2.",
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live gonu.com/nuhuskies.com MSOC staff: HC + 2 assts + dedicated Goalkeepers Coach (position-specific), but no team-assigned S&C/AT; urban shared off-campus Parsons Field (Brookline). Elite academic/medical city but modest soccer-specific environment.",
     "coach": {
-      "name": "Brian Ainscough",
+      "name": "Jeremy Bonomo",
       "title": "Head Coach",
-      "email": "b.ainscough@northeastern.edu",
+      "email": "j.bonomo@northeastern.edu",
       "phone": "",
-      "profile": "Brian Ainscough has built Northeastern as a competitive CAA program in one of the US's premier academic cities. The co-op model provides paid clinical work placements in Boston's world-class hospital network — unmatched pre-PT pathway. GPA 3.0+ required — above Olivier's current level."
+      "profile": "Jeremy Bonomo, a New England native, is in his third season leading Northeastern after arriving in 2024 from Green Bay, where he was a two-time Horizon League Coach of the Year. The co-op model provides paid clinical work placements in Boston's world-class hospital network — unmatched pre-PT pathway. GPA 3.0+ required — above Olivier's current level."
     },
     "tags": [
       "city",
@@ -1024,10 +1024,10 @@
     },
     "staff": [
       {
-        "name": "Brian Ainscough",
+        "name": "Jeremy Bonomo",
         "role": "Head Coach",
-        "email": "b.ainscough@northeastern.edu",
-        "bg": "Northeastern head coach — building CAA competitive program in Boston. Co-op model and Boston medical corridor are key selling points for pre-PT track athletes."
+        "email": "j.bonomo@northeastern.edu",
+        "bg": "Hired February 2024; two-time Horizon League Coach of the Year across nine seasons at Green Bay (75 wins, 2023 NCAA Tournament). Defensively organized; Boston co-op and medical corridor are key selling points for pre-PT track athletes."
       },
       {
         "name": "Assistant Coach",

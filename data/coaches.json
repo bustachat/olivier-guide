@@ -1659,56 +1659,13 @@
     "licence": null
   },
   {
-    "id": "coufal_hofstra",
-    "schoolId": "hofstra",
-    "name": "Scott Coufal",
-    "school": "Hofstra University",
-    "div": "D1",
-    "conf": "CAA",
-    "yearsHC": 10,
-    "record": "4 consecutive CAA Tournament titles (2022-25)",
-    "mlsPlayers": 2,
-    "rank": 36,
-    "rankClass": "rk-strong",
-    "overallScore": 74,
-    "tacticalScore": 74,
-    "devScore": 70,
-    "ptPathScore": 65,
-    "ausConnection": false,
-    "bio": "Scott Coufal has built Hofstra into the CAA's dominant program — 4 consecutive CAA Tournament titles (2022-25) and 9 total NCAA appearances. NYC via LIRR (30 min) is an extraordinary competitive advantage. No.7 NCAA seed in 2024.",
-    "strengths": [
-      "4 consecutive CAA titles",
-      "NYC proximity",
-      "NYC clinical access",
-      "No.7 NCAA seed 2024"
-    ],
-    "staff": [
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "soccer@hofstra.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "contact": {
-      "email": "scoufal@hofstra.edu",
-      "phone": ""
-    },
-    "url": "https://hofstraathletics.com/sports/mens-soccer",
-    "color": [
-      "#dbeafe",
-      "#1e3a8a"
-    ],
-    "licence": null
-  },
-  {
     "id": "mcarthur_nova",
     "schoolId": "nova",
     "name": "Matt McArthur",
     "school": "Nova Southeastern University",
     "div": "D2",
     "conf": "Sunshine State Conference (SSC)",
-    "rank": 37,
+    "rank": 36,
     "rankClass": "rk-strong",
     "overallScore": 74,
     "devScore": 74,
@@ -1744,7 +1701,7 @@
     "school": "Daytona State College (Falcons)",
     "div": "JUCO",
     "conf": "NJCAA Division I / FCSAA",
-    "rank": 38,
+    "rank": 37,
     "rankClass": "rk-strong",
     "yearsHC": 2023,
     "record": "2025 NJCAA DI National Championship finalists (lost 1-0 to Indian Hills)",
@@ -1783,7 +1740,7 @@
     "yearsHC": 4,
     "record": "UConn 2025 Big East Final; 6yrs HC at Northeastern; Hermann Trophy 2000; #1 MLS pick 2002",
     "mlsPlayers": 8,
-    "rank": 39,
+    "rank": 38,
     "rankClass": "rk-strong",
     "overallScore": 73,
     "tacticalScore": 72,
@@ -1810,6 +1767,49 @@
       "phone": ""
     },
     "url": "https://uconnhuskies.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
+    "id": "roche_hofstra",
+    "schoolId": "hofstra",
+    "name": "Stephen Roche",
+    "school": "Hofstra University",
+    "div": "D1",
+    "conf": "CAA",
+    "yearsHC": 1,
+    "record": "Tactical lead for 4 straight CAA titles (2021-24); HC since 2026",
+    "mlsPlayers": 6,
+    "rank": 39,
+    "rankClass": "rk-strong",
+    "overallScore": 72,
+    "tacticalScore": 74,
+    "devScore": 71,
+    "ptPathScore": 65,
+    "ausConnection": false,
+    "bio": "Stephen Roche was promoted to head coach in January 2026 after 10 seasons on staff — the tactical and recruiting lead behind Hofstra's four straight CAA titles (2021-24) and a 114-47-31 run. A Dublin native and former League of Ireland pro, he has developed six MLS draftees (incl. Sean Nealis, Ryan Carmichael, Eliot Goldthorp) and multiple All-Americans. NYC via LIRR (30 min) is an extraordinary competitive advantage.",
+    "strengths": [
+      "Architect of 4 CAA titles (2021-24)",
+      "6 MLS draftees developed",
+      "NYC proximity",
+      "Tactical & recruiting specialist"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@hofstra.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "stephen.roche@hofstra.edu",
+      "phone": "(516) 463-6562"
+    },
+    "url": "https://gohofstra.com/sports/mens-soccer",
     "color": [
       "#dbeafe",
       "#1e3a8a"
@@ -2480,6 +2480,49 @@
     ]
   },
   {
+    "id": "bonomo_northeastern",
+    "schoolId": "northeastern",
+    "name": "Jeremy Bonomo",
+    "school": "Northeastern University",
+    "div": "D1",
+    "conf": "CAA",
+    "yearsHC": 3,
+    "record": "3rd season at NU; 2x Horizon League COY & 75 wins in 9 seasons at Green Bay",
+    "mlsPlayers": 2,
+    "rank": 54,
+    "rankClass": "rk-strong",
+    "overallScore": 66,
+    "tacticalScore": 64,
+    "devScore": 60,
+    "ptPathScore": 85,
+    "ausConnection": false,
+    "bio": "Jeremy Bonomo, a New England native, is in his third season leading Northeastern after being hired in February 2024. A two-time Horizon League Coach of the Year, he won 75 games over nine seasons as head coach at Green Bay — taking the Phoenix to the 2023 NCAA Tournament and a 2017 regular-season title — and previously head-coached Assumption. His defensively organized sides pair with Northeastern's co-op model, the best pre-PT clinical pathway in the CAA via paid rotations in Boston's hospital system (MGH, Brigham & Women's, Boston Children's).",
+    "strengths": [
+      "2x Horizon League COY",
+      "2023 NCAA Tournament (Green Bay)",
+      "Boston co-op clinical",
+      "Defensive organization"
+    ],
+    "staff": [
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@northeastern.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "j.bonomo@northeastern.edu",
+      "phone": ""
+    },
+    "url": "https://gonu.com/sports/mens-soccer",
+    "color": [
+      "#fee2e2",
+      "#991b1b"
+    ],
+    "licence": null
+  },
+  {
     "id": "lenahan_northwestern",
     "schoolId": "northwestern",
     "name": "Tim Lenahan",
@@ -2489,7 +2532,7 @@
     "yearsHC": 18,
     "record": "Long-tenured Northwestern coach",
     "mlsPlayers": 1,
-    "rank": 54,
+    "rank": 55,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2532,7 +2575,7 @@
     "yearsHC": 14,
     "record": "154-64-38 career at Charlotte; 11 NCAA Tournament appearances; Conference USA CoY 2016; 16 pros developed",
     "mlsPlayers": 1,
-    "rank": 55,
+    "rank": 56,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 65,
@@ -2562,49 +2605,6 @@
     "color": [
       "#dbeafe",
       "#16a34a"
-    ],
-    "licence": null
-  },
-  {
-    "id": "ainscough_northeastern",
-    "schoolId": "northeastern",
-    "name": "Brian Ainscough",
-    "school": "Northeastern University",
-    "div": "D1",
-    "conf": "CAA",
-    "yearsHC": 8,
-    "record": "Building CAA competitive program in Boston",
-    "mlsPlayers": 1,
-    "rank": 56,
-    "rankClass": "rk-strong",
-    "overallScore": 65,
-    "tacticalScore": 60,
-    "devScore": 58,
-    "ptPathScore": 85,
-    "ausConnection": false,
-    "bio": "Brian Ainscough runs the best pre-PT clinical pathway in the CAA via Northeastern's co-op model — paid rotations in Boston's world-class hospital system (MGH, Brigham & Women's, Boston Children's). Soccer is mid-CAA but the academic pathway is extraordinary.",
-    "strengths": [
-      "Boston co-op clinical",
-      "MGH/BWH/BCH access",
-      "Boston academic culture",
-      "Paid clinical terms"
-    ],
-    "staff": [
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "soccer@northeastern.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "contact": {
-      "email": "b.ainscough@northeastern.edu",
-      "phone": ""
-    },
-    "url": "https://gonu.com/sports/mens-soccer",
-    "color": [
-      "#fee2e2",
-      "#991b1b"
     ],
     "licence": null
   },
@@ -3125,28 +3125,28 @@
     "licence": null
   },
   {
-    "id": "tsakiris_williammary",
+    "id": "norris_williammary",
     "schoolId": "william_mary",
-    "name": "Shaun Tsakiris",
+    "name": "Chris Norris",
     "school": "College of William & Mary",
     "div": "D1",
     "conf": "CAA",
-    "yearsHC": 15,
-    "record": "Long-tenured CAA competitive program",
+    "yearsHC": 23,
+    "record": "166-169-60 (22 seasons); 2 CAA titles (2010, 2017), 4 NCAA appearances",
     "mlsPlayers": 2,
     "rank": 68,
     "rankClass": "rk-solid",
     "overallScore": 63,
-    "tacticalScore": 62,
+    "tacticalScore": 63,
     "devScore": 60,
     "ptPathScore": 58,
     "ausConnection": false,
-    "bio": "Shaun Tsakiris is one of the most experienced coaches in the CAA — building W&M consistently as a competitive conference program. One of the most selective public universities in the US. GPA 3.0+ required. Historic Williamsburg campus.",
+    "bio": "Chris Norris is one of the longest-tenured coaches in Division I — a 1995 W&M graduate and former Tribe defender, now in his 23rd season as head coach (36th on staff overall). He owns a 166-169-60 record with CAA Championships in 2010 and 2017, four NCAA Tournament berths and a 2010 Sweet Sixteen run, and was 2010 CAA Coach of the Year. One of the most selective public universities in the US; GPA 3.0+ required. Historic Williamsburg campus.",
     "strengths": [
-      "Long tenure",
-      "Academic rigor",
-      "CAA competitive",
-      "Williamsburg setting"
+      "23-year tenure",
+      "2 CAA titles (2010, 2017)",
+      "2010 Sweet Sixteen",
+      "Academic rigor"
     ],
     "staff": [
       {
@@ -3157,8 +3157,8 @@
       }
     ],
     "contact": {
-      "email": "sxtsakiris@wm.edu",
-      "phone": ""
+      "email": "cmnorr@wm.edu",
+      "phone": "(757) 221-3385"
     },
     "url": "https://tribeathletics.com/sports/mens-soccer",
     "color": [

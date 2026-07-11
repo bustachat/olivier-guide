@@ -127,11 +127,11 @@
       "profile": "Head Coach Lee Avery has built SMC into the premier JUCO transfer pathway to UCLA. The 2025-26 roster of 26 players reflects a diverse recruiting network — predominantly Latin American and Spanish-speaking players, with international recruits including a French player (Leo Blanchet), a Brazilian (Daniel Loff Fernandes), and a pair of Greek twins (George and Greg Georgantellis). Avery's documented relationships with UCLA transfer advisors make SMC the #1 JUCO feeder in California. The entire current roster turns over before Olivier arrives in August 2027 — ask Avery directly: 'How many central midfielders are in your 2026 class?'"
     },
     "devScores": {
-      "tactical": 72,
-      "technical": 74,
-      "fitness": 72
+      "tactical": 54,
+      "technical": 52,
+      "fitness": 52
     },
-    "fitOlivier": 69,
+    "fitOlivier": 64,
     "tags": [
       "warm",
       "city",
@@ -152,12 +152,12 @@
     "rec": "THE best JUCO option for Sydney lifestyle match. Santa Monica is the most Sydney-like location in America. Best transfer record to UCLA in California. 2 years at ~$9k to prove GPA and soccer ability, then step up.",
     "url": "https://www.smccorsairs.com/sports/msoc/index",
     "lensScores": {
-      "overall": 69,
+      "overall": 64,
       "soccer": 51,
       "academic": 52,
       "minutes": 73,
       "lifestyle": 100,
-      "value": 74
+      "value": 71
     },
     "minutesOutlook": {
       "available": true,
@@ -265,7 +265,8 @@
         "unit": "EXSC398",
         "covered": false
       }
-    ]
+    ],
+    "devScoresNote": "Live staff directory: HC + Associate HC (2). Solid Corsair Field (grass); strength via SMC fitness center, but strong sports-med access (AT + Providence Saint John's partnership) and Kinesiology teaching labs."
   },
   {
     "id": "miami_dade",
@@ -395,11 +396,11 @@
       "profile": "Head Coach at Miami Dade College. Strong South American recruiting network — 2025-26 roster draws from Argentina, Italy, Brazil, France, Spain. Son Matteo DePalo on 2025-26 roster. Transfer connections to FIU and Barry."
     },
     "devScores": {
-      "tactical": 68,
-      "technical": 70,
-      "fitness": 70
+      "tactical": 58,
+      "technical": 58,
+      "fitness": 50
     },
-    "fitOlivier": 67,
+    "fitOlivier": 64,
     "tags": [
       "warm",
       "city",
@@ -420,12 +421,12 @@
     "rec": "Miami gateway to South Florida 4-year ecosystem. Transfer into Barry for kinesiology degree and pre-PT seminar. Warm city, massive international student body.",
     "url": "https://mdcathletics.com/sports/msoc/index",
     "lensScores": {
-      "overall": 67,
+      "overall": 64,
       "soccer": 47,
       "academic": 42,
       "minutes": 70,
       "lifestyle": 92,
-      "value": 71
+      "value": 69
     },
     "minutesOutlook": {
       "available": true,
@@ -536,7 +537,8 @@
         "unit": "EXSC398",
         "covered": false
       }
-    ]
+    ],
+    "devScoresNote": "Live staff directory: HC + 3 assistants + a dedicated Video Analyst (Reginaldo Collazo) — a real technical asset rare at JUCO level. On-campus fields, shared weight room, standard AT."
   },
   {
     "id": "iowa_western",
@@ -671,10 +673,10 @@
     },
     "devScores": {
       "tactical": 65,
-      "technical": 68,
-      "fitness": 70
+      "technical": 66,
+      "fitness": 67
     },
-    "fitOlivier": 69,
+    "fitOlivier": 68,
     "tags": [
       "soccer"
     ],
@@ -692,12 +694,12 @@
     "rec": "Iowa Western CC is the Midwest transfer pathway school — the Council Bluffs/Omaha equivalent of Santa Monica College. Extremely affordable at ~$14k/yr with open admission. Best strategic use: bridge GPA to 2.8+ eligibility floor, gain 2 years of NJCAA D1 soccer film, then transfer to target D1 or D2 program. Cold climate is a significant lifestyle mismatch for a Sydney-raised player. Primary value is financial and eligibility access, not lifestyle fit.",
     "url": "https://iwcc.edu/athletics",
     "lensScores": {
-      "overall": 69,
+      "overall": 68,
       "soccer": 58,
       "academic": 40,
       "minutes": 79,
       "lifestyle": 50,
-      "value": 71
+      "value": 70
     },
     "minutesOutlook": {
       "available": true,
@@ -810,7 +812,8 @@
         "unit": "EXSC398",
         "covered": true
       }
-    ]
+    ],
+    "devScoresNote": "Live staff directory: 6-person staff incl. a dedicated Director of Performance (Grant Johannes) + GK coach — plus the $9M John & Harriet Wiebe complex (2024), 5 full-time ATs and a Game Ready recovery room. The one JUCO with near-D1 environment; top of the group."
   },
   {
     "id": "northeast_cc",
@@ -943,19 +946,19 @@
       "profile": "Adam Potter coaches the Northeast Community College Hawks (NJCAA Division II). He has built one of the most internationally diverse rosters in American junior college soccer — 29 players from Denmark, Germany, England, Netherlands, Italy, Austria, Brazil, Japan, Ecuador, Chile, Iceland, Spain, Canada, USA, and Australia. Australian Isaac Jordaan (Bridgewater, Fr·Defender) is on the current roster. Potter is experienced with international recruitment. Contact: athletics@northeast.edu or 402-844-7000. Ask specifically about midfielder openings for 2027 class and what transfer outcomes his athletes have achieved."
     },
     "devScores": {
-      "tactical": 55,
-      "technical": 60,
-      "fitness": 55
+      "tactical": 48,
+      "technical": 50,
+      "fitness": 46
     },
     "lensScores": {
-      "overall": 49,
+      "overall": 47,
       "soccer": 55,
       "academic": 42,
       "minutes": 64,
       "lifestyle": 0,
-      "value": 56
+      "value": 55
     },
-    "fitOlivier": 49,
+    "fitOlivier": 47,
     "tags": [
       "soccer"
     ],
@@ -1075,7 +1078,8 @@
         "year": "Freshman (2025–26) — will have departed before Olivier arrives"
       }
     ],
-    "confKey": "other"
+    "confKey": "other",
+    "devScoresNote": "Live staff directory: a single head coach (Adam Potter), no assistants or support staff listed. Solid grass field, shared weight room, limited sports science — the leanest environment of the 29; the 2024 DII title is a result, excluded from dev per §5a."
   },
   {
     "id": "monroe_college",
@@ -1208,19 +1212,19 @@
       "profile": "Marcus DiBernardo is the architect of Monroe's dynasty — 3× NJCAA Division I National Championships (2021, 2022, 2023) with the Mustangs. Staff: Jay Myers (Assistant), Dario Villafana (Recruiting Coordinator), Massimo Gargiulo (Assistant), Matvey Pierrot (Student Assistant). Athletic Trainer: Kimberly Mata (kmata@monroeu.edu, 914-740-6790). Current Australians: Sebastian Sayers (Hillarys WA, So.) and Edward Mackle (Perth WA, Fr.). First contact: mdibernardo@monroeu.edu or 914-740-6898. Dario Villafana coordinates international recruitment."
     },
     "devScores": {
-      "tactical": 72,
-      "technical": 75,
-      "fitness": 70
+      "tactical": 62,
+      "technical": 56,
+      "fitness": 52
     },
     "lensScores": {
-      "overall": 63,
+      "overall": 59,
       "soccer": 72,
       "academic": 42,
       "minutes": 73,
       "lifestyle": 50,
-      "value": 50
+      "value": 48
     },
-    "fitOlivier": 63,
+    "fitOlivier": 59,
     "tags": [
       "soccer",
       "city"
@@ -1356,7 +1360,8 @@
         "year": "Freshman (2025–26)"
       }
     ],
-    "confKey": "other"
+    "confKey": "other",
+    "devScoresNote": "Live staff directory: HC Marcus DiBernardo + 3 assistants + student assistant, and a dedicated AT (Kimberly Mata) on soccer support staff. Plays at Iona's Mazzella Field (quality shared) with an upgraded weight room — best-invested NY-area JUCO staff."
   },
   {
     "id": "indian_hills",
@@ -1496,18 +1501,18 @@
       "profile": "Zac Newton is one of the fastest-rising JUCO coaches in the country. Appointed at Indian Hills in July 2024, he took the Warriors to their first-ever No. 1 national ranking (5 consecutive weeks) and first-ever national semifinal in his debut season (2024-25). In 2025-26, Newton delivered the 2025 NJCAA DI National Championship, defeating Daytona State 1-0 in the final. Named United Soccer Coaches Midwest Region Staff of the Year (2024). Previously won the 2021 NJCAA DII National Championship at Southeastern Community College. 11 players committed to 4-year universities in 2024-25. Education: B.S. Sport Management, Niagara University. USSF C License."
     },
     "devScores": {
-      "tactical": 80,
-      "technical": 78,
-      "fitness": 76
+      "tactical": 54,
+      "technical": 56,
+      "fitness": 50
     },
-    "fitOlivier": 55,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 55,
+      "overall": 49,
       "soccer": 80,
       "academic": 32,
       "minutes": 73,
       "lifestyle": 22,
-      "value": 57
+      "value": 53
     },
     "tags": [
       "juco",
@@ -1627,7 +1632,8 @@
         "unit": "EXSC398",
         "covered": false
       }
-    ]
+    ],
+    "devScoresNote": "Live staff directory: HC Zac Newton + one assistant only (2). Good campus complex and video, but no S&C or sports-science staff listed — environment is modest; the prior 78 reflected national-title results, which §5a excludes."
   },
   {
     "id": "tyler_jc",
@@ -1744,18 +1750,18 @@
       "status": "eligible"
     },
     "devScores": {
-      "tactical": 74,
-      "technical": 75,
-      "fitness": 73
+      "tactical": 56,
+      "technical": 54,
+      "fitness": 56
     },
-    "fitOlivier": 76,
+    "fitOlivier": 71,
     "lensScores": {
-      "overall": 76,
+      "overall": 71,
       "soccer": 50,
       "academic": 42,
       "minutes": 73,
       "lifestyle": 50,
-      "value": 68
+      "value": 65
     },
     "tags": [
       "juco",
@@ -1896,7 +1902,8 @@
     "njcaaRegion": "Region 14",
     "njcaaRegionArea": "Eastern Texas",
     "acRank": "NJCAA Level",
-    "kinRank": "Associate degree — transfer prerequisite pathway"
+    "kinRank": "Associate degree — transfer prerequisite pathway",
+    "devScoresNote": "Live staff directory: HC + assistant + a named Strength & Conditioning coach (Jake Carney) assigned to the team — dedicated S&C is uncommon at JUCO. Ornelas Complex natural grass, warm year-round; video only."
   },
   {
     "id": "daytona_state",
@@ -2013,18 +2020,18 @@
       "status": "eligible"
     },
     "devScores": {
-      "tactical": 76,
-      "technical": 77,
-      "fitness": 75
+      "tactical": 54,
+      "technical": 54,
+      "fitness": 48
     },
-    "fitOlivier": 73,
+    "fitOlivier": 68,
     "lensScores": {
-      "overall": 73,
+      "overall": 68,
       "soccer": 78,
       "academic": 36,
       "minutes": 75,
       "lifestyle": 82,
-      "value": 71
+      "value": 68
     },
     "tags": [
       "juco",
@@ -2161,7 +2168,8 @@
     "njcaaRegion": "Region 8",
     "njcaaRegionArea": "Florida",
     "acRank": "NJCAA Level",
-    "kinRank": "Associate degree — transfer prerequisite pathway"
+    "kinRank": "Associate degree — transfer prerequisite pathway",
+    "devScoresNote": "Facility record (Tier-1): standard JUCO weight room and AT, year-round Florida grass, video. Small staff; scored on environment, not the 2025 NJCAA DI final appearance."
   },
   {
     "id": "barton_cc",
@@ -2337,18 +2345,18 @@
       "profile": "Rafael Simmons enters his 4th season as Head Coach with a 44-16-8 record, guiding Barton to a 2025 NJCAA DI National Tournament berth and a #4 national ranking. Assistant coaches Scott Gray and Carlos Sanchez (both 1st season). The 2025-26 roster (36 players) draws heavily from Brazil, Japan, Germany, France, and Spain — a genuinely international recruiting network. No individual staff email/phone is published on the official athletics site; general admissions contact is webinquiry@bartonccc.edu / (800) 748-7594."
     },
     "devScores": {
-      "tactical": 68,
-      "technical": 70,
-      "fitness": 68
+      "tactical": 54,
+      "technical": 54,
+      "fitness": 54
     },
-    "fitOlivier": 53,
+    "fitOlivier": 50,
     "lensScores": {
-      "overall": 53,
+      "overall": 50,
       "soccer": 47,
       "academic": 63,
       "minutes": 68,
       "lifestyle": 0,
-      "value": 59
+      "value": 57
     },
     "tags": [
       "soccer",
@@ -2434,7 +2442,8 @@
       "recruit_pathway_note": "12 of the 16 current MFs (75%) are true freshmen with no prior college listed — Barton's heavy direct-from-high-school international recruiting (Brazil, Japan, Germany, France, Spain) suggests freshman entry is the norm rather than the exception, unlike transfer/JUCO-portal-heavy programs."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Exercise Science — dedicated 2yr program"
+    "kinRank": "Exercise Science — dedicated 2yr program",
+    "devScoresNote": "Live staff directory: HC + assistant (2). Well-staffed sports medicine (Head AT Kelsey Feist + assistant AT + aide + student) and an Exercise Science program; dedicated lit field, video."
   },
   {
     "id": "cowley_cc",
@@ -2611,18 +2620,18 @@
       "profile": "Marcos Vinicius Longo Ribeiro leads a Cowley program with 5× KJCCC, 5× Region VI, and 5× Plains District titles — one of the most decorated conference records among guide JUCOs. Assistant coach Eusebio \"Chevi\" Plaza. The 2025-26 roster is heavily Japanese and Brazilian, with additional depth from Mexico, Denmark, Spain, and France. No individual staff email/phone published on the official athletics site; general admissions contact is 800-593-2222 / admissions@cowley.edu."
     },
     "devScores": {
-      "tactical": 74,
-      "technical": 72,
-      "fitness": 70
+      "tactical": 54,
+      "technical": 54,
+      "fitness": 48
     },
-    "fitOlivier": 56,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 56,
+      "overall": 52,
       "soccer": 49,
       "academic": 42,
       "minutes": 64,
       "lifestyle": 0,
-      "value": 57
+      "value": 55
     },
     "tags": [
       "soccer"
@@ -2698,7 +2707,8 @@
       "recruit_pathway_note": "5 of the 8 current MFs (63%) are true freshmen with no prior college listed, drawn directly from Japan, Denmark, and France — suggests direct high-school-to-JUCO recruiting is the norm here, not portal/transfer recycling."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Associate degree — transfer prerequisite pathway"
+    "kinRank": "Associate degree — transfer prerequisite pathway",
+    "devScoresNote": "Live staff directory: HC + one assistant (2). Cowley Soccer Complex plus use of the Mark A. Phillips track complex, video; shared strength facility, standard AT."
   },
   {
     "id": "arizona_western",
@@ -2876,18 +2886,18 @@
       "profile": "Kenny Dale leads a 5-person coaching staff — Assistant Bello Alhassan, Assistant/Recruiting Coordinator Admir Balicevac, Assistant Coach/Europe Tim Dennison, and Volunteer Assistant Tom vonAhlefeld — one of the most structured recruiting operations among guide JUCOs, with a dedicated European recruiting pipeline. The 2025-26 roster (30 players) draws from France, Japan, Canada, Ghana, Senegal, Brazil, Switzerland, Netherlands, Italy, Colombia, and Ethiopia. General college contact: 928-317-6000."
     },
     "devScores": {
-      "tactical": 76,
-      "technical": 74,
-      "fitness": 72
+      "tactical": 64,
+      "technical": 56,
+      "fitness": 48
     },
-    "fitOlivier": 64,
+    "fitOlivier": 60,
     "lensScores": {
-      "overall": 64,
+      "overall": 60,
       "soccer": 50,
       "academic": 58,
       "minutes": 70,
       "lifestyle": 50,
-      "value": 66
+      "value": 64
     },
     "tags": [
       "warm",
@@ -2971,7 +2981,8 @@
       "recruit_pathway_note": "8 of the 13 current MFs (62%) are true freshmen with no prior college listed, recruited directly from Senegal, Brazil, Japan, Colombia, and Ethiopia — the dedicated European/international recruiting staff appears to source largely direct-from-home-country freshmen rather than transfer/portal players."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Exercise, Wellness and Nutrition — dedicated 2yr program"
+    "kinRank": "Exercise, Wellness and Nutrition — dedicated 2yr program",
+    "devScoresNote": "Live staff directory: 5-person staff incl. a recruiting coordinator and a dedicated Europe recruiting coach (Kenny Dale HC). Dedicated lit on-campus pitch (2013), video; S&C shared, no sports-science staff."
   },
   {
     "id": "efsc",
@@ -3150,18 +3161,18 @@
       "profile": "Bart Sasnett led EFSC to consecutive NJCAA DI National Tournament appearances (2024-25 Final Four, 2025-26) and a 2021 Region 8 title. Staff includes Assistant Adrian Moreno, Goalkeeper Coach Calvin Dixon, and Assistants Jean Ganter and Taylor Pitts. The 2025-26 roster (27 players) is internationally diverse — England, Germany, Netherlands, Brazil, South Korea, Uganda, Italy, Japan, Colombia — alongside a strong core of Florida locals. General athletics contact: 321-632-1111."
     },
     "devScores": {
-      "tactical": 72,
-      "technical": 73,
-      "fitness": 70
+      "tactical": 62,
+      "technical": 66,
+      "fitness": 48
     },
-    "fitOlivier": 65,
+    "fitOlivier": 62,
     "lensScores": {
-      "overall": 65,
+      "overall": 62,
       "soccer": 49,
       "academic": 42,
       "minutes": 66,
       "lifestyle": 50,
-      "value": 61
+      "value": 59
     },
     "tags": [
       "warm",
@@ -3238,7 +3249,8 @@
       "recruit_pathway_note": "All 4 incoming-freshman MFs (Josh Rayfield, Kazuma Matsumoto, Diego Sanders, Davi Arujo) are true freshmen with no prior college listed, drawn from England, Japan, and two Florida locals — suggests direct freshman recruiting rather than transfer/portal reliance, though the sample (4 players) is small."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Associate degree — transfer prerequisite pathway"
+    "kinRank": "Associate degree — transfer prerequisite pathway",
+    "devScoresNote": "Live staff directory: 5 coaches incl. a GK specialist (Calvin Dixon). Titan Soccer Complex is a 1,000-seat soccer-specific FIFA-regulation stadium with an adjacent regulation practice field — best pure soccer facility of the 29; strength/sports-med only standard JUCO."
   },
   {
     "id": "phoenix_college",
@@ -3414,18 +3426,18 @@
       "profile": "David Cameron enters his 21st season as Head Coach at Phoenix College, one of the most successful junior college men's soccer coaches nationally. Under Cameron, Phoenix College won 3 consecutive Region I titles (2021-2023), made 6 straight national tournament appearances (Final Four 2022, National Championship Finalist 2023), and captured the 2025 NJCAA Division II National Championship while ranked #1 nationally for 7 consecutive weeks. Named 2025 ACCAC Coach of the Year. Assistant coaches: Carmen Esnal (goalkeepers), Ethan Dougherty, Sergio Campos, Tafadzwa Semwayo. No individual staff email/phone published on the official athletics site."
     },
     "devScores": {
-      "tactical": 78,
-      "technical": 74,
-      "fitness": 72
+      "tactical": 62,
+      "technical": 52,
+      "fitness": 48
     },
-    "fitOlivier": 72,
+    "fitOlivier": 67,
     "lensScores": {
-      "overall": 72,
+      "overall": 67,
       "soccer": 51,
       "academic": 63,
       "minutes": 73,
       "lifestyle": 100,
-      "value": 65
+      "value": 62
     },
     "tags": [
       "warm",
@@ -3504,7 +3516,8 @@
       "recruit_pathway_note": "3 of 7 current MFs (43%) are true freshmen. Small sample, but consistent with direct high-school recruiting rather than heavy transfer-portal reliance."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Exercise Science — dedicated 2yr program, ASU/NAU-aligned"
+    "kinRank": "Exercise Science — dedicated 2yr program, ASU/NAU-aligned",
+    "devScoresNote": "Live staff directory: 4 coaches incl. an Associate HC and a GK coach (David Cameron HC) — deep staff. No named soccer-specific stadium (shared), shared strength facility, video; dev held to environment, not the 2025 title."
   },
   {
     "id": "pima_cc",
@@ -3679,18 +3692,18 @@
       "profile": "David Cosgrove has coached at Pima Community College since 1998, winning NJCAA national championships in 2018 and 2021, and holding the most wins (433) in program history. Assistant coaches: Conner Cosgrove, Gabe Mendoza, Nils Roth (goalkeepers). No individual staff email/phone published on the official athletics site."
     },
     "devScores": {
-      "tactical": 74,
-      "technical": 70,
-      "fitness": 68
+      "tactical": 60,
+      "technical": 56,
+      "fitness": 48
     },
-    "fitOlivier": 66,
+    "fitOlivier": 62,
     "lensScores": {
-      "overall": 66,
+      "overall": 62,
       "soccer": 48,
       "academic": 42,
       "minutes": 66,
       "lifestyle": 100,
-      "value": 62
+      "value": 60
     },
     "tags": [
       "warm",
@@ -3770,7 +3783,8 @@
       "recruit_pathway_note": "Half of current MFs are freshmen (5/10) and half sophomores — a balanced recruiting pattern rather than heavy freshman-only or transfer-heavy intake."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "General transfer pathway — dedicated Fitness/Sport Sciences program inactive"
+    "kinRank": "General transfer pathway — dedicated Fitness/Sport Sciences program inactive",
+    "devScoresNote": "Live staff directory: 4 coaches under a 27-year tenured HC (David Cosgrove). West Campus Aztec Field in the Chapman Automotive Sports Complex, video; S&C shared, standard AT."
   },
   {
     "id": "mohave_cc",
@@ -3944,18 +3958,18 @@
       "profile": "Camilo Valencia joined Mohave Community College in August 2022 as founding Director of Soccer Programs and Head Coach, building the program from scratch to a #16 national ranking by 2025. Holds a master's degree in Exercise Science and Health Promotion (California University of Pennsylvania, 2016) — directly relevant academic background for a Pre-PT/Exercise Science-focused athlete. No individual staff email/phone published on the official athletics site."
     },
     "devScores": {
-      "tactical": 66,
-      "technical": 68,
-      "fitness": 66
+      "tactical": 56,
+      "technical": 58,
+      "fitness": 52
     },
-    "fitOlivier": 63,
+    "fitOlivier": 60,
     "lensScores": {
-      "overall": 63,
+      "overall": 60,
       "soccer": 46,
       "academic": 36,
       "minutes": 70,
       "lifestyle": 50,
-      "value": 65
+      "value": 63
     },
     "tags": [
       "warm",
@@ -4030,7 +4044,8 @@
       "recruit_pathway_note": "Roster skews heavily sophomore (6/8 MFs) — consistent with a young program still building depth at each class level."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
+    "devScoresNote": "Live staff directory: Director of Soccer Programs/HC + assistant + a Head Athletic Trainer listed on the soccer staff. 126,500 sqft Anderson Auto Group Fieldhouse (2019) indoor facility; HC holds an Exercise Science background."
   },
   {
     "id": "glendale_cc_az",
@@ -4204,18 +4219,18 @@
       "profile": "Jeff Perry is Head Men's Soccer Coach at Glendale Community College, leading a 2025 roster ranked #20 nationally (NJCAA DII). No individual staff email/phone or detailed coaching tenure/record is published on the official athletics site."
     },
     "devScores": {
-      "tactical": 65,
-      "technical": 66,
-      "fitness": 64
+      "tactical": 52,
+      "technical": 52,
+      "fitness": 46
     },
-    "fitOlivier": 63,
+    "fitOlivier": 59,
     "lensScores": {
-      "overall": 63,
+      "overall": 59,
       "soccer": 45,
       "academic": 63,
       "minutes": 60,
       "lifestyle": 100,
-      "value": 53
+      "value": 51
     },
     "tags": [
       "warm",
@@ -4299,7 +4314,8 @@
       "recruit_pathway_note": "13 of 14 current MFs (93%) are true freshmen — strongly direct-from-high-school recruiting, mostly from the Phoenix metro area (Peoria, Glendale, Surprise, El Mirage)."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Exercise Science — dedicated 2yr program, ASU/NAU-aligned (on-campus NAU completion option)"
+    "kinRank": "Exercise Science — dedicated 2yr program, ASU/NAU-aligned (on-campus NAU completion option)",
+    "devScoresNote": "Live staff directory: one HC shared across men's & women's + 2 shared assistants — coaching not dedicated to the men's side. Sartoris Field shared with football/track; shared strength, video."
   },
   {
     "id": "dodge_city_cc",
@@ -4473,18 +4489,18 @@
       "profile": "Juan Espinal is Head Men's Soccer Coach at Dodge City Community College, leading a nationally-ranked (#12 DI, 2025) and heavily international roster spanning Japan, Jamaica, Italy, New Zealand, Honduras, South Africa, and Grenada. No individual staff email/phone or detailed coaching tenure/record is published on the official athletics site."
     },
     "devScores": {
-      "tactical": 70,
-      "technical": 68,
-      "fitness": 67
+      "tactical": 50,
+      "technical": 58,
+      "fitness": 46
     },
-    "fitOlivier": 55,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 55,
+      "overall": 51,
       "soccer": 47,
       "academic": 36,
       "minutes": 75,
       "lifestyle": 0,
-      "value": 62
+      "value": 60
     },
     "tags": [
       "soccer"
@@ -4556,7 +4572,8 @@
       "recruit_pathway_note": "Evenly split between freshmen and sophomores (3/3) — a balanced recruiting pattern."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
+    "devScoresNote": "Live staff directory: single listed head coach (Juan Espinal). Strong facilities for a JUCO — 5,000-seat Memorial Stadium (turf) plus a dedicated full-length turf practice field; shared strength, standard AT."
   },
   {
     "id": "neosho_county_cc",
@@ -4732,18 +4749,18 @@
       "profile": "Elliot Chadderton is Head Men's Soccer Coach at Neosho County Community College, leading a #4-nationally-ranked (NJCAA DII, 2025) and heavily international roster spanning England, Japan, Denmark, Germany, and Colombia. Assistant coach: Sam Hall. No individual staff email/phone or detailed coaching tenure/record is published on the official athletics site."
     },
     "devScores": {
-      "tactical": 72,
-      "technical": 68,
-      "fitness": 67
+      "tactical": 52,
+      "technical": 52,
+      "fitness": 48
     },
-    "fitOlivier": 51,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 51,
+      "overall": 47,
       "soccer": 47,
       "academic": 47,
       "minutes": 62,
       "lifestyle": 0,
-      "value": 56
+      "value": 54
     },
     "tags": [
       "soccer",
@@ -4824,7 +4841,8 @@
       "recruit_pathway_note": "8 of 13 current MFs (62%) are true freshmen, drawn heavily from England (5 of 8) — suggests a strong direct-recruiting pipeline from the UK alongside domestic Kansas recruits."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Athletic Training program — adjacent anatomy/physiology coursework, not dedicated Exercise Science"
+    "kinRank": "Athletic Training program — adjacent anatomy/physiology coursework, not dedicated Exercise Science",
+    "devScoresNote": "Facility record (Tier-1): on-campus field, shared strength facility; college runs an Athletic Training academic program giving some adjacent exposure. Small staff; standard JUCO environment."
   },
   {
     "id": "southeastern_cc_ia",
@@ -4998,18 +5016,18 @@
       "profile": "Henrique Vieira serves as Interim Head Coach for Southeastern Community College men's soccer, leading a #5-nationally-ranked (NJCAA DII, 2025) program. Assistant coaches: Anthony Schroder, Emily Murphy. Coaching tenure/record not published on the official athletics site — flagged as an interim role, a genuine caveat for a prospective 2026 enrollee given uncertainty over permanent leadership."
     },
     "devScores": {
-      "tactical": 72,
-      "technical": 70,
-      "fitness": 68
+      "tactical": 54,
+      "technical": 52,
+      "fitness": 48
     },
-    "fitOlivier": 44,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 44,
+      "overall": 40,
       "soccer": 48,
       "academic": 63,
       "minutes": 54,
       "lifestyle": 0,
-      "value": 51
+      "value": 49
     },
     "tags": [
       "acad"
@@ -5094,7 +5112,8 @@
       "recruit_pathway_note": "12 of 17 current MFs (71%) are true freshmen, drawn heavily from Western Europe and Japan — suggests strong direct international recruiting rather than transfer/portal reliance."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Exercise Science Transfer Major — dedicated 2yr program, University of Iowa 2+2"
+    "kinRank": "Exercise Science Transfer Major — dedicated 2yr program, University of Iowa 2+2",
+    "devScoresNote": "Live staff directory: HC + a GK coach (2). On-campus field; Health Professions Center labs for adjacent exercise-science access; shared Blackhawk Rec Center strength, video."
   },
   {
     "id": "iowa_lakes_cc",
@@ -5269,18 +5288,18 @@
       "profile": "Ben MacRae is Head Men's Soccer Coach at Iowa Lakes Community College, leading the program to its first-ever ICCAC regular season championship and a #7 national ranking (NJCAA DII, 2025). Staff: Bryan Marshall (assistant), Garrett Barnes (graduate assistant), Jesse Kuehler (JV head coach), Nick Erdmann (goalkeepers). A genuinely international roster spans Japan, Spain, Germany, France, Ghana, England, Colombia, Chile, Netherlands, Brazil, and South Africa."
     },
     "devScores": {
-      "tactical": 70,
-      "technical": 68,
-      "fitness": 68
+      "tactical": 60,
+      "technical": 52,
+      "fitness": 46
     },
-    "fitOlivier": 52,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 52,
+      "overall": 49,
       "soccer": 47,
       "academic": 63,
       "minutes": 66,
       "lifestyle": 0,
-      "value": 58
+      "value": 56
     },
     "tags": [
       "acad",
@@ -5360,7 +5379,8 @@
       "recruit_pathway_note": "Roster skews sophomore-heavy (7/11) in the current MF group — consistent with a program that recruits internationally at scale and develops players over both JUCO years."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Exercise Science & Kinesiology Transfer Major — dedicated 2yr program, Iowa Regent Universities pathway"
+    "kinRank": "Exercise Science & Kinesiology Transfer Major — dedicated 2yr program, Iowa Regent Universities pathway",
+    "devScoresNote": "Live staff directory: 5-person staff incl. a GK coach, a reserve-team coach and a grad assistant — genuine coaching depth. On-campus field, shared strength facility, video; standard AT."
   },
   {
     "id": "blinn_college",
@@ -5535,18 +5555,18 @@
       "profile": "Michael McBride enters his 6th season as Head Coach at Blinn College, holding a 65-43-8 record and 26 years of collegiate coaching experience. Assistant coach Jacob Beerman holds a Bachelor of Science in Exercise Science (2015). Led the program to a #8 national ranking and Region 14 South Division lead in 2025."
     },
     "devScores": {
-      "tactical": 73,
-      "technical": 70,
-      "fitness": 68
+      "tactical": 54,
+      "technical": 54,
+      "fitness": 48
     },
-    "fitOlivier": 63,
+    "fitOlivier": 59,
     "lensScores": {
-      "overall": 63,
+      "overall": 59,
       "soccer": 48,
       "academic": 63,
       "minutes": 62,
       "lifestyle": 50,
-      "value": 54
+      "value": 52
     },
     "tags": [
       "warm",
@@ -5628,7 +5648,8 @@
       "recruit_pathway_note": "Split fairly evenly between freshmen and sophomores, with several dual-position (M/D) players — suggests a flexible, possession-based system rather than rigid positional slots."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Kinesiology — dedicated 2yr program, on-campus RELLIS BS completion (Tarleton State)"
+    "kinRank": "Kinesiology — dedicated 2yr program, on-campus RELLIS BS completion (Tarleton State)",
+    "devScoresNote": "Live roster/program pages: large multi-campus program; an assistant holds an Exercise Science degree. On-campus field, shared strength facility, video; standard AT."
   },
   {
     "id": "coastal_bend_cc",
@@ -5802,18 +5823,18 @@
       "profile": "Justin Rodriguez was announced as Head Men's Soccer Coach at Coastal Bend College in March 2026, succeeding interim coach Manuel Iwabuchi (appointed August 2025). Rodriguez previously coached at Missouri Southern State University (2024) and served as an assistant at University of the Ozarks (2021), with high school coaching experience at Alice High School (2018-2019); he was a collegiate student-athlete at Schreiner University (2017-2021). The #14 national ranking (2025) was achieved under the prior interim staff — a genuine leadership-transition caveat for a prospective 2026 enrollee."
     },
     "devScores": {
-      "tactical": 66,
-      "technical": 64,
-      "fitness": 63
+      "tactical": 50,
+      "technical": 50,
+      "fitness": 46
     },
-    "fitOlivier": 64,
+    "fitOlivier": 61,
     "lensScores": {
-      "overall": 64,
+      "overall": 61,
       "soccer": 45,
       "academic": 36,
       "minutes": 68,
       "lifestyle": 50,
-      "value": 65
+      "value": 63
     },
     "tags": [
       "warm"
@@ -5886,7 +5907,8 @@
       "recruit_pathway_note": "Evenly split between freshmen and sophomores (4/4) — a balanced recruiting pattern under the prior coaching staff; may shift under new Head Coach Justin Rodriguez (hired March 2026)."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "General transfer pathway (Math, Science & Kinesiology division) — no dedicated Exercise Science program confirmed"
+    "kinRank": "General transfer pathway (Math, Science & Kinesiology division) — no dedicated Exercise Science program confirmed",
+    "devScoresNote": "Live staff directory: HC + one assistant (2). On-campus field, shared strength facility; standard JUCO sports-med, specifics unpublished."
   },
   {
     "id": "angelina_college",
@@ -6060,18 +6082,18 @@
       "profile": "Martin Melchor is Head Men's Soccer Coach at Angelina College, leading a 2025 roster to a solid 11-5-1 record (3rd in Region 14 South). No detailed coaching tenure/record is published on the official athletics site."
     },
     "devScores": {
-      "tactical": 65,
-      "technical": 65,
-      "fitness": 63
+      "tactical": 50,
+      "technical": 54,
+      "fitness": 44
     },
-    "fitOlivier": 58,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 58,
+      "overall": 55,
       "soccer": 45,
       "academic": 36,
       "minutes": 61,
       "lifestyle": 50,
-      "value": 65
+      "value": 63
     },
     "tags": [
       "warm"
@@ -6148,7 +6170,8 @@
       "recruit_pathway_note": "Exactly split between freshmen and sophomores (6/6), with a genuinely international mix (Japan, Brazil, Germany) alongside East Texas locals."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Health and Physical Education — general transfer pathway, no dedicated Exercise Science program"
+    "kinRank": "Health and Physical Education — general transfer pathway, no dedicated Exercise Science program",
+    "devScoresNote": "Live staff directory: 1 paid head coach + 2 volunteer assistants — thin staffing. New (2022) soccer-specific Larry Phillips stadium lifts the pitch/technical side; shared strength, standard AT."
   },
   {
     "id": "lsu_eunice",
@@ -6322,18 +6345,18 @@
       "profile": "John Plumbar was hired as Head Men's Soccer Coach at LSU Eunice in July 2024, entering his 2nd season in 2025-26. Assistant coaches: Braeden Hoppough, Lane Woodall. Leads a genuinely international roster spanning England, Denmark, Colombia, France, Ireland, Germany, Zimbabwe, and Australia."
     },
     "devScores": {
-      "tactical": 62,
-      "technical": 64,
-      "fitness": 62
+      "tactical": 52,
+      "technical": 50,
+      "fitness": 46
     },
-    "fitOlivier": 67,
+    "fitOlivier": 64,
     "lensScores": {
-      "overall": 67,
+      "overall": 64,
       "soccer": 44,
       "academic": 36,
       "minutes": 77,
       "lifestyle": 50,
-      "value": 65
+      "value": 63
     },
     "tags": [
       "warm"
@@ -6404,7 +6427,8 @@
       "recruit_pathway_note": "Small sample (5 players) skews sophomore (3/5) — the program appears to carry a lean, senior-heavy MF corps rather than recruiting a large freshman class at this position."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
+    "devScoresNote": "Live staff directory: HC John Plumbar + one assistant (2). On-campus field, shared strength facility, warm year-round; standard AT."
   },
   {
     "id": "nassau_cc",
@@ -6578,18 +6602,18 @@
       "profile": "Dan Fisher is Head Men's Soccer Coach at Nassau Community College, leading the program to the best regular-season record in NJCAA Region 15 for 2025 (10-2). Staff: Christian Turizo, Damiano Diliberti, John Paul Hughes, Jordan Russolillo (assistants) — a genuinely large 5-person coaching staff for the JUCO level."
     },
     "devScores": {
-      "tactical": 68,
-      "technical": 66,
-      "fitness": 65
+      "tactical": 58,
+      "technical": 52,
+      "fitness": 46
     },
-    "fitOlivier": 55,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 55,
+      "overall": 52,
       "soccer": 46,
       "academic": 36,
       "minutes": 73,
       "lifestyle": 50,
-      "value": 52
+      "value": 50
     },
     "tags": [
       "city"
@@ -6662,7 +6686,8 @@
       "recruit_pathway_note": "6 of 7 current MFs (86%) are true freshmen, drawn heavily from the immediate Long Island/NYC-metro area — suggests strong local direct recruiting."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
+    "devScoresNote": "Live staff directory: HC Dan Fisher + 4 assistants (5) — well-resourced coaching for the level. On-campus field, shared strength facility, video; standard AT."
   },
   {
     "id": "ulster_cc",
@@ -6836,18 +6861,18 @@
       "profile": "Jamal Lis-Simmons is Head Men's Soccer Coach at Ulster County Community College, leading the program to a 2025 Region 15 Championship final appearance (9-1-2 regular season, lost 2-0 to Suffolk CC). Assistant coach: Sal DeRosa."
     },
     "devScores": {
-      "tactical": 66,
-      "technical": 65,
-      "fitness": 64
+      "tactical": 52,
+      "technical": 50,
+      "fitness": 46
     },
-    "fitOlivier": 47,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 47,
+      "overall": 43,
       "soccer": 45,
       "academic": 36,
       "minutes": 70,
       "lifestyle": 0,
-      "value": 49
+      "value": 47
     },
     "tags": [],
     "facilities": [
@@ -6919,7 +6944,8 @@
       "recruit_pathway_note": "6 of 8 current MFs (75%) are true freshmen, drawn heavily from local Hudson Valley towns — suggests strong regional direct recruiting."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
+    "devScoresNote": "Live staff directory: HC + one assistant + one volunteer. On-campus field, shared strength facility; standard JUCO sports-med."
   },
   {
     "id": "suffolk_cc",
@@ -7093,18 +7119,18 @@
       "profile": "Keith Ginsberg is Head Men's & Women's Soccer Coach at Suffolk County Community College, leading the men's program to the 2025 NJCAA Region 15 Championship (defeating Ulster County CC 2-0 in the final). Assistant coaches: Frankie Guzman, Melany Pagan-Rosario, Paige Palazzolo."
     },
     "devScores": {
-      "tactical": 70,
-      "technical": 68,
-      "fitness": 66
+      "tactical": 56,
+      "technical": 52,
+      "fitness": 48
     },
-    "fitOlivier": 41,
+    "fitOlivier": 37,
     "lensScores": {
-      "overall": 41,
+      "overall": 37,
       "soccer": 47,
       "academic": 63,
       "minutes": 50,
       "lifestyle": 0,
-      "value": 43
+      "value": 41
     },
     "tags": [
       "acad"
@@ -7146,7 +7172,8 @@
       "note": "The official 2025-26 roster page lists jersey numbers, names, and class years but the position ('Pos.') column was not populated at time of automated fetch. Not guessed; revisit with direct browser access in a future session."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Exercise Science — dedicated 2yr program (Physical Education and Exercise Science department)"
+    "kinRank": "Exercise Science — dedicated 2yr program (Physical Education and Exercise Science department)",
+    "devScoresNote": "Live staff directory: HC (men's & women's) + 3 assistants (4). Confirmed Exercise Science department for classroom/lab access; on-campus field, shared strength facility, video."
   },
   {
     "id": "westchester_cc",
@@ -7320,18 +7347,18 @@
       "profile": "Alfio Carrabotta is Head Men's Soccer Coach at Westchester Community College, leading a 2025 roster to a 9-1-2 conference record (tied for 3rd/4th in Region 15). Assistant coaches: Carlos Zabarbaru, Luis Lua."
     },
     "devScores": {
-      "tactical": 65,
-      "technical": 64,
-      "fitness": 63
+      "tactical": 52,
+      "technical": 50,
+      "fitness": 46
     },
-    "fitOlivier": 47,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 47,
+      "overall": 43,
       "soccer": 44,
       "academic": 47,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 49
+      "value": 47
     },
     "tags": [
       "city"
@@ -7372,7 +7399,8 @@
       "note": "The official roster page lists jersey numbers, names, and class years but does not publish player positions. Not guessed; revisit with direct browser access in a future session."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Health and Human Performance — adjacent field, no dedicated Exercise Science program confirmed"
+    "kinRank": "Health and Human Performance — adjacent field, no dedicated Exercise Science program confirmed",
+    "devScoresNote": "Live staff directory: HC (gmail contact, part-time pattern) + 2 assistants. On-campus field, shared strength facility; standard JUCO sports-med."
   },
   {
     "id": "johnson_county_cc",
@@ -7547,18 +7575,18 @@
       "profile": "Jeff Cole is Head Men's Soccer Coach at Johnson County Community College, leading the program to the 2025 NJCAA DII Region 6/9 tournament title (defeating previously-unbeaten Neosho County CC in the final) and a #15 national ranking. One of the few coaches in this guide's JUCO section with a directly published email and phone number."
     },
     "devScores": {
-      "tactical": 68,
-      "technical": 66,
-      "fitness": 65
+      "tactical": 54,
+      "technical": 52,
+      "fitness": 46
     },
-    "fitOlivier": 49,
+    "fitOlivier": 46,
     "lensScores": {
-      "overall": 49,
+      "overall": 46,
       "soccer": 46,
       "academic": 36,
       "minutes": 56,
       "lifestyle": 50,
-      "value": 43
+      "value": 41
     },
     "tags": [
       "city"
@@ -7640,6 +7668,7 @@
       "recruit_pathway_note": "Skews sophomore-heavy (9/15) in the most recently available roster — consistent with a program that develops players over both JUCO years rather than relying on a single large freshman intake."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
+    "devScoresNote": "Live staff directory: HC + one assistant (2). On-campus field, shared Cavaliers strength facility, video; standard AT."
   }
 ]

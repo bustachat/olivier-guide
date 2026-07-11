@@ -129,10 +129,36 @@ function housingPenalty(school) {
   return 0;
 }
 
+// ── Funding pathway penalty (added v42.18, owner-approved — CLAUDE.md §5c) ────
+// Scholarship availability is a STRUCTURAL property of the program, distinct
+// from cost. Cost is a price tag (COA in dollars, correctly removed from the Fit
+// Score in v37.1 — it has the Financial Model tab and budget slider). Scholarship
+// availability is a fixed rule: a D3, Ivy, or CCCAA program is FORBIDDEN to offer
+// athletic money to anyone at any price; a D2 / NAIA / NJCAA-DII program may but
+// is capped by rule (e.g. NJCAA DII covers tuition/fees/books, no room & board).
+// Two schools with identical Fit should not rank equal when one can fund an
+// athlete for playing and the other structurally cannot. Flat deduction applied
+// after the weighted total, STACKS with housingPenalty() (owner-approved):
+//   none   (Ivy, NCAA D3, CCCAA)   → −8
+//   capped (D2, NAIA, NJCAA DII)   → −3
+//   full   (D1, NJCAA DI)          →  0
+// Gated on the field: absent ⇒ 0, so the 67 D1 schools default to full and need
+// no field (§5c scope note). Every non-D1 full profile declares it explicitly,
+// since div alone can't split NJCAA DI (full) / DII (capped) / CCCAA (none) —
+// all three carry div:"JUCO". validate_consistency.js enforces that (FUNDING check).
+function fundingPenalty(school) {
+  switch (school.fundingPathway) {
+    case 'none':   return 8;
+    case 'capped': return 3;
+    default:       return 0;   // 'full' or absent
+  }
+}
+
 // ── MAIN: Calculate Fit Score ────────────────────────────────────────────────
 // Returns 0–100 integer. Soccer Program Quality 40% + Minutes Outlook 35% +
 // Climate 15% + City 10% (weights in athletes/olivier.json scoreWeights),
-// minus the flat housing penalty (v41.0) — see housingPenalty() above.
+// minus the flat housing penalty (v41.0) and funding penalty (v42.18) — see
+// housingPenalty() and fundingPenalty() above; the two stack.
 // Same formula for JUCO and non-JUCO — ACU was never in it, so there's
 // nothing to redistribute.
 function calculateFitScore(school, athlete) {
@@ -144,7 +170,7 @@ function calculateFitScore(school, athlete) {
     city:           cityScore(school, athlete)    * w.city,
   };
   const total = Object.values(components).reduce((a, b) => a + b, 0);
-  return Math.min(100, Math.max(0, Math.round(total) - housingPenalty(school)));
+  return Math.min(100, Math.max(0, Math.round(total) - housingPenalty(school) - fundingPenalty(school)));
 }
 
 // ── Recalculate all scores and update cards ──────────────────────────────────

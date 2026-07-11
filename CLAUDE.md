@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v41.0 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v42.18 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -493,6 +493,22 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 
 ---
 
+### CHANGE TYPE 14 — fundingPathway Changed / New Non-D1 School (added v42.18)
+
+**`fundingPathway` feeds the Fit Score funding penalty (§5c) — changing it is a score change. It only changes when a school changes division (rare), or when a new non-D1 school is added.** The value is determined by division rule, never researched: D1 / NJCAA DI → `full`; D2 / NAIA / NJCAA DII → `capped`; Ivy / NCAA D3 / CCCAA → `none`.
+
+| Step | What to update | Why |
+|---|---|---|
+| 1 | `data/[conf].json` — `fundingPathway` | `"full"` \| `"capped"` \| `"none"` per the division rule above. REQUIRED on every non-D1 full profile (div alone can't split NJCAA DI/DII/CCCAA — all are `div:"JUCO"`). D1 omits it (absent ⇒ full ⇒ 0). |
+| 2 | `data/[conf].json` — `aid` display string | For NJCAA DII, don't leave a bare `"Athletic"` — it can't cover room & board; use the capped framing. Do NOT touch `maxAthletic`/`aidType` (DII/D2/NAIA *do* offer athletic aid, so the Financial Model slider stays unlocked). `none` schools set `maxAthletic:0`/`aidType:"need-only"` to lock the slider. |
+| 3 | `data/[conf].json` — `fitOlivier` | Re-apply the penalty: −8 `none` / −3 `capped` / 0 `full`. Stacks with the housing penalty. Stored value must match scores.js output. |
+| 4 | `data/[conf].json` — `lensScores.overall` | Same integer as `fitOlivier`. |
+| 5 | `data/[conf].json` — `lensScores.value` | `fitOlivier×0.6 + affordability×40` — recompute since `fitOlivier` moved. |
+
+**Tabs to verify:** Explore (card Fit score + Best Fit sort position), Dashboard Top 8 (may reshuffle), school modal fit score + Aid string. `node validate_consistency.js` catches a missed cascade (FIT drift) AND a missing/invalid `fundingPathway` on a non-D1 full profile (FUNDING check).
+
+---
+
 ## 4. Immovable Architecture Rules
 
 These rules cannot be overridden by the user in session. If a proposed change would violate one, stop and flag it.
@@ -560,6 +576,12 @@ id, name, full, loc, region, div, conf, confKey, domain,
 warm, city, top, color[],
 degreeTitle, acuAlign (int 1–16), acuUnits[] (16 objects),
 acuAlignNote, soccerLevel, cost, aid, fin{},
+fundingPathway ("full" | "capped" | "none"),  ← added v42.18 (§5c). REQUIRED on every
+                                                 non-D1 full profile (div alone can't split
+                                                 NJCAA DI/DII/CCCAA — all are div:"JUCO");
+                                                 feeds the Fit Score funding penalty (−8/−3/0).
+                                                 D1 omits it (absent ⇒ full ⇒ 0). validate_
+                                                 consistency.js FUNDING check enforces it.
 size, prePT, kinRank, coach{}, gpa{},
 facilities[] (brief array — 3 bullet strings for card display; full-profile schools also require facilityDetails{}),
 devScores{ tactical, technical, fitness },   ← 3 keys only — ptPath removed in v22
@@ -707,6 +729,7 @@ pathways{ paths[], coachQuestions[] }
 | Climate | 15% | 1.0 if warm, else 0.2 (Olivier wants warm) |
 | City Campus | 10% | 1.0 if city, else 0.3 (Olivier wants city) |
 | **Housing penalty (v41.0)** | flat deduction | after the weighted total: **−6** if `facilityDetails.housing.available === false`, **−3** if `"limited"`, 0 if `true`. Owner-approved v41.0 — a young international with no dorms faces off-campus rent + transport alone; no other toggle captures this. `housingPenalty()` in scores.js; mirrored in validate_consistency.js. |
+| **Funding penalty (v42.18)** | flat deduction | after the weighted total, **stacks** with housing: **−8** if `fundingPathway === "none"` (Ivy, NCAA D3, CCCAA — structurally forbidden to offer athletic aid), **−3** if `"capped"` (D2, NAIA, NJCAA DII), 0 if `"full"`/absent (D1, NJCAA DI). Owner-approved v42.0 (§5c) — scholarship *availability* is a structural program property, distinct from cost. `fundingPenalty()` in scores.js; mirrored in validate_consistency.js (FUNDING check requires the field on every non-D1 full profile). |
 
 Same formula for JUCO and non-JUCO — GPA, Cost, and ACU Alignment are deliberately **not** in the Fit Score at all (v37.1 decision): they already have dedicated views (ATAR/budget toggles, Financial Model tab, ACU Alignment tab) and can't be predicted ahead of a real offer, so blending them in was actively misleading (e.g. Stanford sitting at 41% purely because of cost, pre-v37.1). When a real offer appears, check GPA/Cost/ACU manually via those dedicated views — don't expect the Fit Score to reflect them.
 
@@ -1025,7 +1048,9 @@ This is also the cleanest validation of the §5a split: Northeast is the 2024 NJ
 
 ---
 
-## 5c. fundingPathway (v42 — designed, NOT yet implemented)
+## 5c. fundingPathway (v42 — ✅ IMPLEMENTED v42.18)
+
+**Status: shipped v42.18.** `fundingPenalty()` lives in `js/scores.js` (mirrored in `validate_consistency.js`): −8 `none` / −3 `capped` / 0 `full`|absent, applied after the weighted total and **stacking** with `housingPenalty()`. `fundingPathway` is stored on all **43 non-D1 full profiles** (20 NJCAA DI JUCOs = `full`, no score change; 19 `capped`; 4 `none`) — D1 defaults to `full` via the absent-⇒-0 gate and carries no field. The 23 `capped`/`none` schools had `fitOlivier` + `lensScores.overall` + `lensScores.value` recomputed and re-stored. The 8 NJCAA DII bare-`aid:"Athletic"` strings were corrected to a capped framing (`"Athletic (NJCAA DII: tuition, fees & books; no room/board)"`) — this extended §5c's named 4 (Phoenix/Pima/Glendale/Johnson County) to all 8 DII schools, the same error class. `validate_consistency.js` gained a `FUNDING` check enforcing a valid value on every non-D1 full profile. Glossary Fit-Score card updated. Remaining §6 sequence work: Step 5 (re-score the 81 non-JUCO schools against §5a).
 
 A flat penalty applied after the weighted total, exactly like `housingPenalty()` (v41.0). Owner-approved v42.0.
 
@@ -1043,7 +1068,7 @@ A flat penalty applied after the weighted total, exactly like `housingPenalty()`
 
 **Scope note:** because `full` carries a zero penalty, *House*-settlement opt-in status does **not** need researching for the 60 D1 schools — it cannot change a score. Default D1 → `full`. Only the 23 `capped`/`none` schools need Tier-1 aid research.
 
-**Known data errors this will fix** (found v42.0, not yet corrected): Santa Monica stores `aid: "Athletic Grants + Need"` though CCCAA prohibits athletic scholarships outright; Phoenix, Pima, Glendale and Johnson County store a bare `aid: "Athletic"` though NJCAA DII covers tuition/fees/books only. These strings render on the card, the Compare row, and the modal.
+**Known data errors this fixed** (found v42.0): Santa Monica stored `aid: "Athletic Grants + Need"` though CCCAA prohibits athletic scholarships outright (corrected v42.16); Phoenix, Pima, Glendale and Johnson County stored a bare `aid: "Athletic"` though NJCAA DII covers tuition/fees/books only (corrected v42.18, along with the other 4 DII schools Northeast/Neosho/Southeastern/Iowa Lakes). These strings render on the card, the Compare row, and the modal.
 
 Division rules (Tier-1, verified v42.0): NCAA D1 post-*House* (July 1 2025) replaced sport-specific scholarship limits with a 28-player roster cap, all fundable, at opt-in schools — [ncaa.org](https://www.ncaa.org/news/2025/6/23/media-center-di-board-of-directors-formally-adopts-changes-to-roster-limits.aspx). NJCAA DI: tuition, fees, books, room & board. DII: tuition, fees, books only. DIII: none — [njcaa.org](https://www.njcaa.org/member_colleges/Divisional_Structure). Ivy League: need-based aid only, no athletic scholarships in any sport. CCCAA: athletic scholarships prohibited.
 
@@ -1051,7 +1076,7 @@ Division rules (Tier-1, verified v42.0): NCAA D1 post-*House* (July 1 2025) repl
 
 ## 6. Version History & Current State
 
-**Current version: v41.0 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
+**Current version: v42.18 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
@@ -1110,7 +1135,7 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
   - **Step 1 — DONE (v42.1, `d668a20`):** `devScoresNote` field + `DEV-RUBRIC` validator check, gated on note presence so the issue baseline held at 1. Also: dev sub-scores must be integers 0–100; placeholder notes (<20 chars) rejected.
   - **Step 2 — `nextLevelOutput` (§5b), the 29 JUCOs.** Scope went 29 → 40 (v42.2) → **back to 29 (v42.7)**: D2/NAIA/D3 keep `mlsPicks5yr`, whose 0 is a *measured* zero since MLS SuperDraft results are public record. Sub-steps: **(a) research all 29 alumni pages via Claude for Chrome MCP — 1 verified, 5 provisional** (Indian Hills 0.88 ✅ MCP-verified; Tyler 6.2 / Iowa Western 4.0 / Cowley 3.43 / Phoenix 3.0 / Arizona Western 0.86 all ⚠️ WebFetch summaries needing re-read; 5 confirmed to publish nothing); **(b) hand-verify every destination's division** — the alumni page itself gets this wrong (ENMU labelled NCAA DI ten times on Indian Hills' page); **(c) set the divisor from the finished distribution**, not from Tyler; **(d)** `scores.js` + validator mirror, gated on field presence so it ships moving zero scores; **(e)** populate + cascade in batches.
   - **Step 3 — re-score the 29 JUCOs against §5a.** Now safe: dev drops and pipeline gains land together. (24 of 110 sit above their new ceiling; all 24 are non-D1.) Cascade `fitOlivier` → `lensScores.overall` → `lensScores.value` per §3a Type 13.
-  - **Step 4 — implement `fundingPathway` (§5c)** — `scores.js` penalty + data field + Glossary + validator mirror. Santa Monica's structurally-wrong athletic-aid data was corrected early (v42.16): CCCAA prohibits athletic scholarships, so it now stores `maxAthletic:0` + `aidType:"need-only"` (this both fixes the card's Aid string and auto-locks the Financial Model athletic slider via the existing `aidType==='need-only' || maxAthletic===0` gate — the same lock Chapman/Princeton/Yale already used). **Still to correct here:** the imprecise bare `"Athletic"` strings on the NJCAA DII schools Phoenix, Pima, Glendale, Johnson County — those DO offer athletic aid but *capped* (tuition/fees/books, no room & board), so their slider correctly stays unlocked; only the label needs the `capped` framing. 23 schools need Tier-1 aid research; the 87 `full` schools do not.
+  - **Step 4 — ✅ DONE (v42.18):** `fundingPathway` (§5c) implemented — `fundingPenalty()` in `scores.js` (−8/−3/0, stacks with housing), mirrored in `validate_consistency.js` with a `FUNDING` presence check on non-D1 full profiles, Glossary card updated. Field stored on all 43 non-D1 full profiles (20 DI JUCO `full` no-op, 19 `capped`, 4 `none`); 23 `capped`/`none` schools re-scored + re-stored. Santa Monica was corrected early (v42.16): `maxAthletic:0` + `aidType:"need-only"` (auto-locks the Financial Model athletic slider via the `aidType==='need-only' || maxAthletic===0` gate — same lock Chapman/Princeton/Yale use). The bare `"Athletic"` strings on **all 8 NJCAA DII schools** (§5c named 4 — Phoenix/Pima/Glendale/Johnson County — extended to Northeast/Neosho/Southeastern/Iowa Lakes, same error class) got the `capped` framing; their sliders correctly stay unlocked (DII *does* offer athletic aid). All 23 divisions were determined from division rules (no Tier-1 aid research needed — the rules are structural).
   - **Step 5+:** re-score the remaining 81 schools against §5a, **conference file by conference file** (the proven v38-housing batching pattern — one file per commit, validator green each time, full §3a Type 11 regression per batch).
 
   **Modelled impact of §5a's ceilings alone** (before any re-scoring): 24 schools above ceiling, 86 in-band, none below floor. Mean dev drop across the affected 24 is ≈4.9 points ⇒ ≈1.2 Fit points (dev = 60% of Soccer Quality = 24% of Fit). Worst: Chapman −10, Indian Hills −10, PBA/St. Edward's/Oklahoma City/Daytona State −8.

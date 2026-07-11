@@ -79,6 +79,7 @@
     "soccerLevel": "CCCAA — Competitive",
     "cost": "~$9k/yr",
     "aid": "Need + CA College Promise (no athletic)",
+    "fundingPathway": "none",
     "size": 30000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -131,7 +132,7 @@
       "technical": 52,
       "fitness": 52
     },
-    "fitOlivier": 64,
+    "fitOlivier": 56,
     "tags": [
       "warm",
       "city",
@@ -152,12 +153,12 @@
     "rec": "THE best JUCO option for Sydney lifestyle match. Santa Monica is the most Sydney-like location in America. Best transfer record to UCLA in California. 2 years at ~$9k to prove GPA and soccer ability, then step up.",
     "url": "https://www.smccorsairs.com/sports/msoc/index",
     "lensScores": {
-      "overall": 64,
+      "overall": 56,
       "soccer": 51,
       "academic": 52,
       "minutes": 73,
       "lifestyle": 100,
-      "value": 71
+      "value": 67
     },
     "minutesOutlook": {
       "available": true,
@@ -348,6 +349,7 @@
     "soccerLevel": "NJCAA",
     "cost": "~$11k/yr",
     "aid": "Athletic + Need",
+    "fundingPathway": "full",
     "size": 165000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -624,6 +626,7 @@
     "soccerLevel": "NJCAA Division I — competitive JUCO",
     "cost": "~$14k/yr",
     "aid": "Athletic grants + need-based",
+    "fundingPathway": "full",
     "size": 5000,
     "prePT": "Foundation — transfer pathway to DPT-prep program",
     "gpa": {
@@ -897,7 +900,8 @@
     "acuAlignNote": "Northeast CC's A.S. in Exercise Science (60 credits) prepares students for ACSM/NASM national certification and transfer to 4-year Exercise Science programs. Confirmed ACU-relevant content: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology (ACSM-prep core) → EXSC225; Kinesiology / Human Movement → EXSC224; Introduction to Exercise Science → EXSC122. The ACSM certification path requires exercise physiology and anatomy as core components — these are not electives but program requirements. WES evaluation required for ACU credit recognition. Confirm exact course titles with Northeast CC academic advisor before transfer planning.",
     "soccerLevel": "JUCO — NJCAA Division II",
     "cost": "~$18k/yr",
-    "aid": "Athletic",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 3200,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -951,14 +955,14 @@
       "fitness": 46
     },
     "lensScores": {
-      "overall": 47,
+      "overall": 44,
       "soccer": 55,
       "academic": 42,
       "minutes": 64,
       "lifestyle": 0,
-      "value": 55
+      "value": 53
     },
-    "fitOlivier": 47,
+    "fitOlivier": 44,
     "tags": [
       "soccer"
     ],
@@ -1164,6 +1168,7 @@
     "soccerLevel": "JUCO — NJCAA Division I (3× National Champions)",
     "cost": "~$36k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 7000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -1453,6 +1458,7 @@
     "soccerLevel": "JUCO — NJCAA Division I (2025 National Champions)",
     "cost": "~$21k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 3000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -1724,6 +1730,7 @@
     "soccerLevel": "NJCAA Division I — #1 D1 Transfer Feeder Nationally",
     "cost": "~$22k/yr",
     "aid": "Athletic Grants + Need",
+    "fundingPathway": "full",
     "fin": {
       "costNum": 22230,
       "tuition": 5752,
@@ -1994,6 +2001,7 @@
     "soccerLevel": "NJCAA Division I — 2025 National Championship Runners-Up, Top-5 D1 Transfer Feeder",
     "cost": "~$16k/yr",
     "aid": "Athletic Grants + Need",
+    "fundingPathway": "full",
     "fin": {
       "costNum": 16000,
       "tuition": 9000,
@@ -2269,6 +2277,7 @@
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
     "cost": "~$16.2k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 4700,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -2543,6 +2552,7 @@
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
     "cost": "~$22.0k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 4500,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -2808,6 +2818,7 @@
     "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
     "cost": "~$16.3k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 8500,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -3082,6 +3093,7 @@
     "soccerLevel": "NJCAA Division I — FCSAA Region 8",
     "cost": "~$22.4k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 24000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -3349,7 +3361,8 @@
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
     "cost": "~$23.5k/yr",
-    "aid": "Athletic",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 9500,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -3430,14 +3443,14 @@
       "technical": 52,
       "fitness": 48
     },
-    "fitOlivier": 67,
+    "fitOlivier": 64,
     "lensScores": {
-      "overall": 67,
+      "overall": 64,
       "soccer": 51,
       "academic": 63,
       "minutes": 73,
       "lifestyle": 100,
-      "value": 62
+      "value": 60
     },
     "tags": [
       "warm",
@@ -3616,7 +3629,8 @@
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
     "cost": "~$22.3k/yr",
-    "aid": "Athletic",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 20000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -3696,14 +3710,14 @@
       "technical": 56,
       "fitness": 48
     },
-    "fitOlivier": 62,
+    "fitOlivier": 59,
     "lensScores": {
-      "overall": 62,
+      "overall": 59,
       "soccer": 48,
       "academic": 42,
       "minutes": 66,
       "lifestyle": 100,
-      "value": 60
+      "value": 58
     },
     "tags": [
       "warm",
@@ -3884,6 +3898,7 @@
     "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
     "cost": "~$16k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 4500,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -4144,7 +4159,8 @@
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
     "cost": "~$32.2k/yr",
-    "aid": "Athletic",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 15000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -4223,14 +4239,14 @@
       "technical": 52,
       "fitness": 46
     },
-    "fitOlivier": 59,
+    "fitOlivier": 56,
     "lensScores": {
-      "overall": 59,
+      "overall": 56,
       "soccer": 45,
       "academic": 63,
       "minutes": 60,
       "lifestyle": 100,
-      "value": 51
+      "value": 49
     },
     "tags": [
       "warm",
@@ -4415,6 +4431,7 @@
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
     "cost": "~$13.6k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 2200,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -4672,7 +4689,8 @@
     ],
     "soccerLevel": "NJCAA Division II — KJCCC (Kansas Jayhawk Community College Conference)",
     "cost": "~$18.6k/yr",
-    "aid": "Athletic",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 2000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -4753,14 +4771,14 @@
       "technical": 52,
       "fitness": 48
     },
-    "fitOlivier": 47,
+    "fitOlivier": 44,
     "lensScores": {
-      "overall": 47,
+      "overall": 44,
       "soccer": 47,
       "academic": 47,
       "minutes": 62,
       "lifestyle": 0,
-      "value": 54
+      "value": 52
     },
     "tags": [
       "soccer",
@@ -4941,7 +4959,8 @@
     ],
     "soccerLevel": "NJCAA Division II — ICCAC (Iowa Community College Athletic Conference)",
     "cost": "~$19.6k/yr",
-    "aid": "Athletic",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 2000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -5020,14 +5039,14 @@
       "technical": 52,
       "fitness": 48
     },
-    "fitOlivier": 40,
+    "fitOlivier": 37,
     "lensScores": {
-      "overall": 40,
+      "overall": 37,
       "soccer": 48,
       "academic": 63,
       "minutes": 54,
       "lifestyle": 0,
-      "value": 49
+      "value": 47
     },
     "tags": [
       "acad"
@@ -5212,7 +5231,8 @@
     ],
     "soccerLevel": "NJCAA Division II — ICCAC (Iowa Community College Athletic Conference)",
     "cost": "~$16.5k/yr",
-    "aid": "Athletic",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 3200,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -5292,14 +5312,14 @@
       "technical": 52,
       "fitness": 46
     },
-    "fitOlivier": 49,
+    "fitOlivier": 46,
     "lensScores": {
-      "overall": 49,
+      "overall": 46,
       "soccer": 47,
       "academic": 63,
       "minutes": 66,
       "lifestyle": 0,
-      "value": 56
+      "value": 55
     },
     "tags": [
       "acad",
@@ -5480,6 +5500,7 @@
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
     "cost": "~$30.5k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 18000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -5749,6 +5770,7 @@
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
     "cost": "~$17.4k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 3500,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -6008,6 +6030,7 @@
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
     "cost": "~$12.8k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 4000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -6271,6 +6294,7 @@
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
     "cost": "~$19.2k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 3200,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -6528,6 +6552,7 @@
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
     "cost": "~$27.1k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 15000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -6787,6 +6812,7 @@
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
     "cost": "~$23.8k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 2600,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -7045,6 +7071,7 @@
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
     "cost": "~$28.1k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 21000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -7273,6 +7300,7 @@
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
     "cost": "~$24.5k/yr",
     "aid": "Athletic",
+    "fundingPathway": "full",
     "size": 11000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -7499,7 +7527,8 @@
     ],
     "soccerLevel": "NJCAA Division II — KJCCC (Kansas Jayhawk Community College Conference)",
     "cost": "~$33.6k/yr",
-    "aid": "Athletic",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 19000,
     "prePT": "Transfer Pathway",
     "gpa": {
@@ -7579,14 +7608,14 @@
       "technical": 52,
       "fitness": 46
     },
-    "fitOlivier": 46,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 46,
+      "overall": 43,
       "soccer": 46,
       "academic": 36,
       "minutes": 56,
       "lifestyle": 50,
-      "value": 41
+      "value": 40
     },
     "tags": [
       "city"

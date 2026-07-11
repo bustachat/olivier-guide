@@ -262,14 +262,34 @@ function housingPenalty(s) {
   if (h.available === 'limited') return 3;
   return 0;
 }
+// mirrors scores.js fundingPenalty() (v42.18 §5c): −8 none, −3 capped, 0 full/absent
+function fundingPenalty(s) {
+  if (s.fundingPathway === 'none') return 8;
+  if (s.fundingPathway === 'capped') return 3;
+  return 0;
+}
 const fitMismatches = [];
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
   const w = athlete.scoreWeights;
   const total = soccerQualityScore(s) * w.soccerQuality + moScore(s) * w.minutesOutlook
     + (wantsCity ? (s.city ? 1 : 0.3) : 1) * w.city + (wantsWarm ? (s.warm ? 1 : 0.2) : 1) * w.climate;
-  const fit = Math.min(100, Math.max(0, Math.round(total) - housingPenalty(s)));
+  const fit = Math.min(100, Math.max(0, Math.round(total) - housingPenalty(s) - fundingPenalty(s)));
   if (Math.abs(fit - (s.fitOlivier || 0)) > 1) fitMismatches.push(`${s.id} (${s._file}): stored ${s.fitOlivier}, live formula ${fit}`);
 });
+
+// ── FUNDING (v42.18 §5c): structural scholarship availability feeds the Fit Score
+// funding penalty. D1 defaults to full (0) and needs no field; every non-D1 full
+// profile must declare fundingPathway explicitly, since div alone can't split
+// NJCAA DI (full) / DII (capped) / CCCAA (none) — all three carry div:"JUCO".
+const FUNDING_VALUES = new Set(['full', 'capped', 'none']);
+schools.filter(s => s.profileDepth === 'full' && s.div !== 'D1').forEach(s => {
+  if (s.fundingPathway === undefined) note('FUNDING', `${s.id} (${s.div}) missing fundingPathway — required on non-D1 full profiles (§5c: full|capped|none)`);
+  else if (!FUNDING_VALUES.has(s.fundingPathway)) note('FUNDING', `${s.id} fundingPathway='${s.fundingPathway}' — must be full|capped|none`);
+});
+// A stray fundingPathway on a D1 school would be silently ignored by the penalty
+// (D1 is always full=0) — flag it so it can't hide a misclassification.
+schools.filter(s => s.div === 'D1' && s.fundingPathway !== undefined && s.fundingPathway !== 'full')
+  .forEach(s => note('FUNDING', `${s.id} is D1 but fundingPathway='${s.fundingPathway}' — D1 is structurally full; remove or set 'full'`));
 if (fitMismatches.length) {
   note('FIT', `${fitMismatches.length} schools where stored fitOlivier differs >1 from the live scores.js formula:`);
   fitMismatches.forEach(m => note('FIT', '  ' + m));

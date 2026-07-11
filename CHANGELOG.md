@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v42.18 (July 2026) — fundingPathway penalty implemented (§5c, owner-approved) — Step 4 of the devScores re-baseline sequence
+
+Implements CLAUDE.md §5c: scholarship availability is a **structural** property of a program (a D3/Ivy/CCCAA school is forbidden to offer athletic money to anyone at any price; a D2/NAIA/NJCAA-DII school may but is capped by rule), which is distinct from *cost* (a price tag, correctly removed from the Fit Score in v37.1). Two schools with identical Fit shouldn't rank equal when one can fund an athlete for playing and the other structurally cannot.
+
+- **Mechanism:** new `fundingPenalty()` in `js/scores.js`, applied as a flat deduction after the weighted total, **stacking** with `housingPenalty()` (owner-approved): **−8** `none` (Ivy, NCAA D3, CCCAA) · **−3** `capped` (D2, NAIA, NJCAA DII) · **0** `full` (D1, NJCAA DI). Gated on the `fundingPathway` field: absent ⇒ 0, so the 67 D1 schools default to `full` and need no field.
+- **Data — `fundingPathway` stored on all 43 non-D1 full profiles** (div alone can't split NJCAA DI/DII/CCCAA — all carry `div:"JUCO"`): 20 NJCAA DI JUCOs = `full` (field added, **no score change**); 19 `capped` (8 NJCAA DII + 8 D2 + 3 NAIA, −3 each); 4 `none` (2 Ivy + Chapman D3 + Santa Monica CCCAA, −8 each). Counts match §5c exactly.
+- **23 schools re-scored** (`fitOlivier` + `lensScores.overall` + `lensScores.value` recomputed): `none` −8 → Princeton 50→42, Yale 55→47, Chapman 56→48, Santa Monica 64→56 (now −6 housing −8 funding = −14, as §5c intends). `capped` −3 → Barry 69→66, PBA/St. Edward's/Phoenix 67→64, OCU 64→61, CS-LA 63→60, Nova 61→58, Pima 62→59, Lynn 58→55, Keiser/UC-Charleston 51→48, Northeast/Neosho 47→44, Iowa Lakes 49→46, Johnson County 46→43, Southeastern 40→37, Columbia College 38→35, Georgian Court 30→27. The 20 `full` JUCO-DI schools' scores are byte-for-byte unchanged (only the field was added; pre-existing ±1 `value` rounding noise deliberately left untouched — out of scope, and `value` isn't validated).
+- **Aid-string disclosure fix — all 8 NJCAA DII schools** (extends §5c's named 4: Phoenix/Pima/Glendale/Johnson County → also Northeast/Neosho/Southeastern/Iowa Lakes, the same error class, all being touched this session anyway): bare `aid: "Athletic"` → `"Athletic (NJCAA DII: tuition, fees & books; no room/board)"`. NJCAA DI JUCOs keep bare `"Athletic"` (they *can* offer a full ride, so it's accurate). No `maxAthletic`/`aidType` change — DII schools *do* offer athletic aid, so the Financial Model slider correctly stays unlocked (§5c). Santa Monica's structural fix was already done in v42.16.
+- **Enforcement (validator mirror):** `validate_consistency.js` mirrors `fundingPenalty()` in its fit-drift check, adds a `FUNDING` check requiring a valid `fundingPathway` on every non-D1 full profile, and flags any D1 school carrying a non-`full` value (a silent misclassification). Held at the **1-issue baseline** (Stony Brook coach name — the known genuine gap).
+- **Glossary:** index.html Fit Score card gained a "Funding penalty (v42)" paragraph beside the housing one.
+- **Browser-verified (full regression, headless Chromium):** all 110 cards render; live fit scores exactly match the recomputed stored values (smc 56, princeton 42, yale 47, chapman 48, phoenix 64, barry 66, stedwards 64; D1/full unchanged — tyler 71, clemson 67, indiana 55); phoenix modal shows the new capped aid string; **zero JS page errors** (only sandbox-blocked external favicons/socials). `validate_schools.py` PASS (110 schools, pre-existing warnings only); `node --check` clean on scores.js + validator.
+- guideVersion v42.17 → v42.18.
+- **Sequence note:** this is Step 4 of the §6 devScores re-baseline sequence. Step 5 (re-score the 81 non-JUCO schools against §5a, conference-file by conference-file) remains open.
+
+---
+
 ### v41.0 (July 2026) — Housing penalty added to the Fit Score (owner-approved)
 
 Owner-initiated: on-campus housing is a feasibility issue for a 17-18yo international (off-campus rent + transport alone in a foreign country), and unlike GPA/Cost/ACU it had no dedicated toggle — just a small warning chip, while a no-dorms commuter college (Phoenix College) sat #3 on the Dashboard.

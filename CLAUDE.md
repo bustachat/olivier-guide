@@ -803,9 +803,9 @@ Replaces the `mlsPicks5yr` term inside `soccerQualityScore()`. Measures **does t
 | Division | Metric | Normalised by | Missing data |
 |---|---|---|---|
 | D1 / Ivy / **D2 / NAIA / D3** | MLS SuperDraft picks, 5yr | `min(1, picks/10)` — unchanged | n/a — see below |
-| **JUCO (29 schools)** | **D1 transfer commitments per year** | divisor set after all 29 are researched | neutral **0.5** |
+| **JUCO (29 schools)** | **D1 transfer commitments per year** | `min(1, perYear/5.0594)` — divisor = p90, set v42.12 | neutral **0.3773** |
 
-**D2/NAIA/D3 keep `mlsPicks5yr`, and their 0 is a MEASURED zero (owner-approved v42.7).** MLS SuperDraft results are public record, so `mlsPicks5yr: 0` for Barry means Barry genuinely has no draft picks — it is not a data gap, and neutral 0.5 must **not** be applied. Establishing this closed a real hazard: **Barry, 4× D2 national champions, publishes no alumni or pro-signings tracking at all**, and neither will the other 11. Blanket-applying neutral 0.5 would have handed those 12 schools **+6 Fit points each on no evidence**, purely because their websites are quiet — the identical "website quality as proxy" error that forced the rate-based design in the first place. What is genuinely unmeasurable for them is *non-draft* pro signings (USL, MLS NEXT Pro), which no central source publishes; that is an accepted, documented limitation, not something to paper over with a default.
+**D2/NAIA/D3 keep `mlsPicks5yr`, and their 0 is a MEASURED zero (owner-approved v42.7).** MLS SuperDraft results are public record, so `mlsPicks5yr: 0` for Barry means Barry genuinely has no draft picks — it is not a data gap, and the neutral must **not** be applied. Establishing this closed a real hazard: **Barry, 4× D2 national champions, publishes no alumni or pro-signings tracking at all**, and neither will the other 11. Blanket-applying the neutral would have handed those 12 schools **~+4.5 Fit points each on no evidence** (0.3773 × 0.3 × 40), purely because their websites are quiet — the identical "website quality as proxy" error that forced the rate-based design in the first place. What is genuinely unmeasurable for them is *non-draft* pro signings (USL, MLS NEXT Pro), which no central source publishes; that is an accepted, documented limitation, not something to paper over with a default.
 
 **Consequence: §5b's scope is the 29 JUCOs only.** The v42.2 "all 40 non-D1 schools" scope is superseded.
 
@@ -836,13 +836,15 @@ Each program's own alumni page. **Naming is inconsistent at every school** — f
 
 **Do not calibrate the divisor before gathering a real sample.** A guessed constant shipped into `scores.js` is indistinguishable from the inflation this whole effort exists to remove.
 
-### Missing data ⇒ neutral 0.5, never 0 (owner-approved v42.2)
+### Missing data ⇒ neutral, never 0 (owner-approved v42.2; neutral VALUE revised v42.12)
 
-**Roughly half of JUCOs publish no alumni page at all.** Barton CC offers only an alumni *submission form*; Daytona State — the **2025 NJCAA DI National Champions** — publishes nothing. Scoring them 0 would reproduce the precise "absence of data = absence of quality" error this whole step exists to remove.
+**Two-thirds of JUCOs publish no usable alumni data — 21 of 29, confirmed by reading all of them.** Barton CC and LSU Eunice offer only a *submission form*; Nassau and Westchester only a *survey*; Glendale's "Alumni" page lists All-Conference honours; Santa Monica's transfer page is an empty stub; Daytona State — the **2025 NJCAA DI National Champions** — publishes nothing. Scoring them 0 would reproduce the precise "absence of data = absence of quality" error this whole step exists to remove.
 
-So `nextLevelFactor()` returns **0.5 (neutral) when data is unavailable**, mirroring `minutesOutlookScore()`, which already returns 0.5 with the comment *"neutral — not penalised."* Unknown ≠ zero. The `nextLevel.note` must record that the value is **neutral, not measured**.
+So `nextLevelFactor()` returns the **neutral constant when data is unavailable**, in the spirit of `minutesOutlookScore()`'s *"neutral — not penalised."* **Unknown ≠ zero.** The `nextLevel.note` must record that the value is **neutral, not measured**.
 
-**Known consequence, accepted:** a researched-but-weak program can score *below* an unresearched one. Arizona Western's measured 0.86 D1/yr would land near 0.14 — worse than the 0.5 a school with no page receives. This is inherent to any neutral default (`minutesOutlook` has the identical property) and is the honest trade: we do not punish a program for its webmaster, and we do not reward one for hiding. Do **not** "fix" this by lowering the default — that just re-creates the zeroing bug.
+**The neutral is `NEXT_LEVEL_NEUTRAL = 0.3773` (median measured factor), NOT 0.5.** See "Divisor and neutral" above. v42.2 set it at 0.5 by analogy with `minutesOutlookScore()`; once all 29 schools were read, 0.5 proved to sit well above the median real program (0.377) and thus *rewarded* silence — 4 of the 7 researched schools scored below it. Owner revised it to the measured median in v42.12.
+
+**Known consequence, still accepted:** a researched-but-weak program can score *below* an unresearched one. Indian Hills (0.174), Arizona Western (0.141) and Southeastern CC (0.028) all land under the 0.377 neutral. This is inherent to any neutral default (`minutesOutlook` has the identical property) and is the honest trade: we do not punish a program for its webmaster, and we do not reward one for hiding. The neutral is now anchored to the *observed median* rather than an arbitrary midpoint, which is the most defensible form of that trade. Do **not** push it toward 0 — that re-creates the zeroing bug.
 
 ### MANDATORY: classify every destination's division yourself — the source page is not authoritative on this
 
@@ -853,46 +855,163 @@ So `nextLevelFactor()` returns **0.5 (neutral) when data is unavailable**, mirro
 
 Indian Hills' true rate is **0.88 D1/yr**, not the 1.41 its page implies. **This metric is a rate of D1 placements — a mislabelled destination corrupts it directly.** For every destination, verify the receiving school's division independently (ncaa.com or that school's own athletics site). Never accept the alumni page's own `Level` column, and never accept a summarizer's inference. Record the count you verified, and note any page-vs-truth discrepancies, in `nextLevel.note`.
 
+**The seven ways an alumni page lies (all observed, v42.7–v42.12):**
+1. **No division headers at all.** Tyler JC's 2012–2021 are undivided name lists mixing D1/D2/D3/NAIA.
+   A summarizer counts *names*. That is where the phantom "74 D1" came from.
+2. **A division column that is wrong about third parties.** Indian Hills labels Eastern New Mexico
+   "NCAA DI" in ten rows (it is D2, Lone Star), and inverts a Liberty/ENMU pairing in an eleventh.
+3. **Institution division ≠ sport sponsorship.** *Arizona Western prints "NCAA DI" 25 times; only 15 are
+   real.* Arizona, Arizona State, Northern Arizona, Southern Utah and New Mexico State are D1
+   **institutions that sponsor no varsity men's soccer**. Tier-1 proof: nauathletics.com's own sport nav
+   lists soccer under **Women's** Sports only. Always ask "does this school field a men's soccer team?",
+   not "is this school D1?"
+4. **Division at time of transfer ≠ division today.** UC San Diego, California Baptist, UMass Lowell,
+   Nebraska-Omaha, Grand Canyon, UT Tyler, St. Thomas (MN), Southern Indiana and Dixie State/Utah Tech
+   all changed division inside these windows. Saint Francis (PA) went D1→D3. St. Francis Brooklyn and
+   Notre Dame College ceased athletics outright.
+5. **Cross-sport contamination.** Phoenix's and Angelina's sources are all-sports; count men's soccer only.
+6. **Right nav label, wrong content.** Glendale's `/sports/msoc/alumni` lists All-Conference honours, not
+   destinations. Santa Monica's transfer page is an empty stub.
+7. **Substring collisions when matching school names.** "Point University" (NAIA, GA) is not "High Point
+   University" (D1). "Xavier University of Louisiana" (NAIA) is not "Xavier University" (D1). "Monroe
+   University" is NJCAA, not the NCAA D2 that Angelina's release calls it. Match the full official name.
+
+**Use the NCAA member directory as the independent authority** (JSON, one call per division):
+`web3.ncaa.org/directory/api/directory/memberList?type=12&division={I,II,III}&sportCode=MSO`
+
 **Use the Claude for Chrome MCP for these pages (§15).** `WebFetch` does not return the page — it returns a small model's *summary* of the page, which infers and compresses. Two facts in the v42.7 pass came back wrong from WebFetch and were only caught by reading the rendered text in a real browser: it reported that this page "has no division headers" (it does), and it reported the D1 count as 17 (it prints 24; 15 are real). **Never store a fact obtained from a WebFetch summary.**
 
-### Calibration sample (v42.9, incomplete — 6 of 29 JUCOs)
+### Calibration sample — ✅ COMPLETE, all 29 JUCOs (v42.12)
 
-| School | D1 alumni | Window | **D1/yr** | Verification status |
+**Division authority used for every destination:** the NCAA's own member directory, filtered to men's soccer —
+`web3.ncaa.org/directory/api/directory/memberList?type=12&division={I,II,III}&sportCode=MSO`
+(D1 = 213, D2 = 202, D3 = 406 programs). **Absence from all three ⇒ NAIA / NJCAA / no varsity program.**
+Caveat: the directory reflects the CURRENT year. Judge division **at time of transfer** — Cincinnati, New Mexico
+and Bowling Green have since dropped men's soccer; Notre Dame College and St. Francis Brooklyn ceased athletics.
+
+#### Measured, multi-year (7) — the ONLY rows eligible for the divisor
+| School | d1Count | Window | yr | **D1/yr** | Was (WebFetch) |
+|---|---|---|---|---|---|
+| Tyler JC | 79 | 2012–2023 | 12 | **6.58** | 6.2 ↑ |
+| Iowa Western | 93 | 2004–2026 | 23 | **4.04** | 4.0 ≈ |
+| Cowley CC | 25 | 2017-18–2023-24 | 7 | **3.57** | 3.43 ↑ |
+| Pima CC | 21 | 2015–2025 | 11 | **1.91** | *(was assumed to publish nothing)* |
+| Indian Hills | 15 | 2008–2024 | 17 | **0.88** | 0.88 = |
+| Arizona Western | 15 | 2003–2023 | 21 | **0.71** | 0.86 ↓ |
+| Southeastern CC (IA) | 1 | 2018–2024 | 7 | **0.14** | *(newly found)* |
+
+**Every provisional figure moved, in BOTH directions.** WebFetch summaries are not conservatively biased —
+three went up, one down. Do not treat an unverified summary as a lower bound.
+
+#### Single-year sources (2) — owner-approved v42.12
+| School | d1Count | Window | D1/yr | Treatment |
 |---|---|---|---|---|
-| Tyler JC | 74 | 2012–2023 (12 yr) | **6.2** | ⚠️ WebFetch figure — re-verify via Chrome MCP |
-| Iowa Western | 87 | 2004–2026 (22 yr) | **4.0** | ⚠️ WebFetch figure — re-verify via Chrome MCP |
-| Cowley CC | 24 | 2017/18–2023/24 (7 yr) | **3.43** | ⚠️ WebFetch figure — re-verify via Chrome MCP |
-| Phoenix College | 3 | 2024-25 (**1 yr**) | **3.0** | ⚠️ single-year PDF — noisy, n=1 |
-| Indian Hills | **15** (page prints 24) | 2008–2024 (17 yr) | **0.88** | ✅ **Chrome MCP, every destination hand-checked** |
-| Arizona Western | 18 (of 117) | 2003–2023 (21 yr) | **0.86** | ⚠️ WebFetch figure — re-verify via Chrome MCP |
+| Phoenix College | 3 | 2024-25 | 3.00 | **Store `perYear: 3.0` (factor 0.593) with an `n=1` note; EXCLUDE from the divisor.** Its PDF is an annual series. |
+| Angelina College | 2 | 2025-26 | 2.00 | **→ neutral 0.3773.** A one-off news release, not a maintained page; its own text says "the list (so far)". Record the finding in `note`, not in `perYear`. |
 
-**Treat every ⚠️ row as provisional.** Indian Hills is the only row read from the real page, and it moved twice under scrutiny (1.00 → 0.59 → 0.88). Assume the others carry the same error bar until re-read.
+A 1-year window is not comparable to Tyler's 12 or Iowa Western's 23; at ~3.0 it would sit near the top and
+distort any percentile.
 
-**The metric discriminates, emphatically.** Indian Hills carries the **highest dev-avg of any JUCO (78 — tied with Syracuse)** and places **0.88 players per year** in D1. Tyler's page claims **six**. Tyler and Arizona Western are both `jucoTier: "Elite"` with identical dev-avg 74, yet their published pages differ **7×** on D1 placement rate. That spread is precisely the signal `devScores` was being distorted to carry — but note the Tyler and Arizona Western figures are themselves unverified WebFetch summaries, and Indian Hills' printed figure was 60% too high once checked.
+#### The metric discriminates, emphatically — and now on verified numbers
+Indian Hills carries the **highest dev-avg of any JUCO (78, tied with Syracuse)** and places **0.88** players/yr
+in D1. Tyler places **6.58** — a **7.5×** spread over Arizona Western (0.71), and both are `jucoTier: "Elite"`
+with identical dev-avg 74. That spread is precisely the signal `devScores` was being distorted to carry.
 
-**Divisor deliberately still unset.** Do not anchor it on Tyler's 6.2 — with n=6 and only one school near the top, a single unresearched program could exceed it and force a re-cascade. Research all 29 first, then set the divisor from the finished distribution (e.g. the 90th percentile), then compute factors once.
+### Divisor and neutral — SET (owner-approved v42.12)
 
-### Alumni-page URLs already discovered (v42.7–v42.9) — do not re-discover these
+```
+D1_RATE_DIVISOR = 5.0594     // 90th percentile of the 7 multi-year schools
+NEXT_LEVEL_NEUTRAL = 0.3773  // median measured factor — NOT 0.5
+nextLevelFactor = min(1, perYear / D1_RATE_DIVISOR)   // when nextLevel is present
+                = NEXT_LEVEL_NEUTRAL                   // when it is absent
+```
 
-Open each with Claude for Chrome MCP (`tabs_context_mcp` → `navigate` → `get_page_text`), then verify **every destination school's division independently** before counting.
+Distribution of the 7: `0.1429, 0.7143, 0.8824, 1.9091, 3.5714, 4.0435, 6.5833` → p90 = **5.0594**.
+Robust: if Tyler were 6.42 (excluding the two 2013 Grand Canyon reclass rows) p90 = 4.99.
 
-| School | Alumni page URL | Status |
+| School | perYear | factor |
 |---|---|---|
-| Indian Hills | `indianhillsathletics.com/sports/msoc/alums/index` | ✅ verified — 15 real D1 / 17 yr = **0.88/yr** (page prints 24) |
-| Tyler JC | `apacheathletics.com/sports/msoc/Sites/Mens_Soccer_Next_Level` | ⚠️ WebFetch only — re-read |
-| Iowa Western | `goreivers.com/sports/msoc/former` | ⚠️ WebFetch only — re-read |
-| Arizona Western | `awcmatadors.com/sports/msoc/MSOC_Moving_On` | ⚠️ WebFetch only — re-read |
-| Cowley CC | `cowleytigers.com/sports/msoc/alumni` | ⚠️ WebFetch only — re-read |
-| Phoenix College | PDF: `d2o2figo6ddd0g.cloudfront.net/p/q/rwrkzf3a0lwf0k/moving_on.pdf` | ⚠️ **school-wide, all sports, single year (2024-25)**. `/information/moving_on.pdf` is only a viewer page — the real PDF is the CloudFront URL. Extract with `pdfplumber`, not raw stream decode. 2024-25 men's soccer: 3→Grand Canyon (D1), 1→Salem (D2) |
+| Tyler JC | 6.5833 | **1.000** (capped) |
+| Iowa Western | 4.0435 | 0.799 |
+| Cowley CC | 3.5714 | 0.706 |
+| Phoenix College | 3.0000 | 0.593 *(n=1 — stored, but excluded from the divisor)* |
+| Pima CC | 1.9091 | 0.377 |
+| Indian Hills | 0.8824 | 0.174 |
+| Arizona Western | 0.7143 | 0.141 |
+| Southeastern CC (IA) | 0.1429 | 0.028 |
+| *21 schools with no data* | — | **0.377 (neutral)** |
 
-**Confirmed to publish nothing** (→ neutral 0.5 per the missing-data policy, do not re-check): **Barton CC** (alumni *submission form* only), **Daytona State**, **Eastern Florida State**, **Northeast CC**, **Monroe College**.
+#### Why the neutral is 0.3773, not 0.5 — REVERSES part of the v42.2 ruling
+At divisor 5.06, **four of the seven researched schools fell below a 0.5 neutral**. §5b had anticipated
+this for Arizona Western alone and called it "the honest trade"; once all 29 were read it became the
+*majority* case. The measured distribution is right-skewed (median perYear 1.91), so **0.5 is not
+"middle" — it is well above typical**, and it handed ~+1.4 Fit points to a school for having a quiet
+website. That is precisely the "absence of data = absence of quality" error inverted, and exactly the
+class of error this whole effort exists to remove.
 
-**Remaining to discover: 18 of the 29 JUCOs.** Naming has no pattern — search each program's own site nav for Alumni / Former / Next Level / Moving On.
+**Owner ruling (v42.12): the neutral is the MEDIAN MEASURED FACTOR — "unknown = typical", not
+"unknown = half the cap."** This *lowers* the default from 0.5 → 0.3773 and therefore supersedes the
+v42.2 sentence *"Do not 'fix' this by lowering the default — that just re-creates the zeroing bug."*
+That warning was about lowering the default **toward zero**; 0.3773 is the observed median of real
+measured programs, not zero. **Unknown ≠ zero still holds.** The neutral coincidentally equals Pima's
+factor exactly, because Pima *is* the median school.
 
-### Alumni-page discovery: five naming variants in nine schools, no URL pattern
-`Next Level` (Tyler JC) · `Former Reivers` (Iowa Western) · `Matadors Moving On` (Arizona Western) · `Athletes Moving On` (Phoenix College — a **school-wide PDF**, all sports, single year; the real file sits on CloudFront, `/information/moving_on.pdf` is only a viewer page) · `Alumni` (Cowley CC) · `Next Level Warriors` (Indian Hills). Confirmed to publish **nothing**: Barton CC (alumni *submission* form only), Daytona State, EFSC, Northeast CC, Monroe.
+**Lowering the DIVISOR to flatter the data remains forbidden** — that is reverse-engineering the
+constant, the same error as the original dev-score inflation.
 
-**Tooling:** `indianhills.edu` 403s but `indianhillsathletics.com` serves fine — always try the athletics host before concluding a site is blocked. PDFs need `pdfplumber`/`pypdf` (both installed); naive stream extraction returns CID glyph IDs, not text.
+**Recompute both constants if any school's `perYear` changes.** They are derived, not chosen.
+
+### Alumni-page URLs — ✅ ALL 29 RESOLVED (v42.12). Do not re-discover.
+
+All 9 pages below were read in Claude for Chrome and **every destination's division hand-checked**
+against the NCAA directory. Do not re-read them; do not trust a summary of them.
+
+| School | Alumni page URL | Result |
+|---|---|---|
+| Tyler JC | `apacheathletics.com/sports/msoc/Sites/Mens_Soccer_Next_Level` | ✅ 79 D1 / 12 yr = **6.58** |
+| Iowa Western | `goreivers.com/sports/msoc/former` | ✅ 93 D1 / 23 yr = **4.04** |
+| Cowley CC | `cowleytigers.com/sports/msoc/alumni` | ✅ 25 D1 / 7 yr = **3.57** |
+| Pima CC | `pimaaztecs.com/sports/msoc/movingon` | ✅ 21 D1 / 11 yr = **1.91** |
+| Indian Hills | `indianhillsathletics.com/sports/msoc/alums/index` | ✅ 15 D1 / 17 yr = **0.88** (page prints 24) |
+| Arizona Western | `awcmatadors.com/sports/msoc/MSOC_Moving_On` | ✅ 15 D1 / 21 yr = **0.71** (page prints 25) |
+| Southeastern CC (IA) | `sccblackhawks.com/sports/msoc/Men-s_Soccer_Alumni` | ✅ 1 D1 / 7 yr = **0.14** |
+| Phoenix College | PDF: `d2o2figo6ddd0g.cloudfront.net/p/q/rwrkzf3a0lwf0k/moving_on.pdf` | ⚠️ n=1 — 3 D1 (2024-25). Real PDF is the CloudFront URL; `/information/moving_on.pdf` is only a viewer. Chrome's PDF plugin exposes NO text — download + `pdfplumber`. |
+| Angelina College | `angelinaathletics.com/sports/bsb/2025-26/releases/20260528fiungj` | ⚠️ n=1 — 2 D1. A news release, not a maintained page; says "list (so far)". |
+
+**Confirmed to publish NOTHING usable (20) → neutral 0.3773. Do not re-check:**
+Barton CC (submission form only) · Daytona State · Eastern Florida State · Northeast CC · Monroe ·
+**Glendale CC (AZ)** · Johnson County CC · Mohave CC · Dodge City CC · Neosho County CC · Iowa Lakes CC ·
+Blinn College · Coastal Bend College · LSU Eunice (form only) · Nassau CC (survey only) · Ulster CC ·
+Suffolk CC · Westchester CC · **Santa Monica** · Miami Dade.
+
+**Angelina College also takes the neutral (owner-approved v42.12)** — a one-off news release that
+self-declares incompleteness ("the list (so far)") is not a maintained alumni page. **Phoenix College
+keeps its measured 0.593**, because its PDF is an annual series; it is merely excluded from the divisor.
+
+7 measured + 1 stored-but-excluded (Phoenix) + 21 neutral (20 + Angelina) = **29** ✓
+
+### Alumni-page discovery: SEVEN naming variants, no URL pattern
+`Next Level` (Tyler) · `Former Reivers` (Iowa Western) · `Matadors Moving On` (Arizona Western) ·
+`Moving On` (Pima) · `Athletes Moving On` (Phoenix — school-wide PDF) · `Alumni` (Cowley, Glendale) ·
+`Next Level Warriors` (Indian Hills) · `Soccer Alumni` (Southeastern CC) ·
+`Where did SMC athletes transfer to?` (Santa Monica).
+
+**Two of those nav links are decoys.** Glendale's `/sports/msoc/alumni` lists **All-Conference honours,
+not destinations**. Santa Monica's transfer page is an **empty stub** (nav + a Twitter widget, zero content).
+A nav label matching "alumni" is not evidence that next-level data exists — open it and read it.
+
+### Tooling (hard-won; re-read before scraping)
+- `indianhills.edu` 403s but `indianhillsathletics.com` serves fine — always try the athletics host.
+- **`navigate` returns BEFORE the page renders.** A `javascript_tool`/`find` call batched immediately after it
+  runs against an empty DOM. **Control test that proved this:** `goreivers.com/sports/msoc/index` — a page
+  known to have a "Former Reivers" link — reported `totalLinks: 0`. **Pima and Angelina were both first
+  recorded as "no alumni page"; both have one.** Navigate and read must be SEPARATE tool calls; before
+  trusting a negative, assert `document.readyState === 'complete'` and a sane link count (>20).
+- Cloudflare "Just a moment…" (Coastal Bend, `cbc.prestosports.com`): load the site root
+  (`/landing/index`) first to clear the challenge, then the sport page.
+- PDFs need `pdfplumber`/`pypdf` (both installed); naive stream extraction returns CID glyph IDs, not text.
+- **NXDOMAIN is the only proof a host is dead.** A 403 means "exists but blocked"; a *resolving* host can
+  still serve a parked lander (Monroe). Check content, not just DNS.
 
 ### The canonical example — why `mlsPicks5yr` is the wrong metric for a JUCO
 
@@ -967,6 +1086,17 @@ The full 174-issue baseline from the v35.1 code review (previously listed here) 
 Lower-priority (code quality, still deferred — none were in v36's named scope): `atarToGpa` defined in both scores.js and app.js (app.js wins by script load order — do not reorder the script tags); `DATA_BASE_URL` means `./data/` in app.js but site root in dashboard.js; olivier.json fetched twice per page load; `selectSchoolFromBar()` button-highlight matcher can never match (arrow-fn toString); dashboard `filterToConf('other')` scrolls to the Ivy section (5 Explore sections share `data-confkey="other"`, plus 5 duplicate `id="grid-other"` elements); search keyword echoed unescaped into the filter-summary HTML (self-XSS); stale Explore section intro texts in CONF_SECTIONS ("Stanford and Duke among 14 listed programs" etc. — everything is full-profile since v25); Glossary Minutes Score text says Yr1 45/Yr2 30/Yr3 15/Yr4 10 but code is Yr1 60/Yr2 40; FX slider sublabels say 1.30–1.80 but the range is 1.20–1.70. (The old `costScore()` falsy-zero-for-service-academies issue is now moot — cost was removed from fitOlivier entirely in v37.1.)
 
 ### Deferred items (carried forward)
+- **✅ FIXED v42.13 — three dead athletics hosts (owner supplied the correct URLs).** Blast radius was 4 spots across 3 files, not just `juco.json` (found via repo-wide grep of the dead hosts):
+  | id | old host | new `url` (juco.json) | also fixed |
+  |---|---|---|---|
+  | `smc` | `athletics.smc.edu` (NXDOMAIN) | `https://www.smccorsairs.com/sports/msoc/index` | `DOMAINS` (was `smcathletics.com`, a generic Sidearm redirect) + `coaches.json` url |
+  | `miami_dade` | `athletics.mdc.edu` (NXDOMAIN) | `https://mdcathletics.com/sports/msoc/index` | `DOMAINS`; **removed the dead `rosterUrl()` override** — new url ends `/index`, so the v42.5 fallback returns the program page like the other 17 JUCOs |
+  | `monroe_college` | `monroemustangs.com` (GoDaddy parked lander) | `https://www.monroeumustangs.com/sports/mens-soccer/` | `DOMAINS` was already correct |
+
+  **Lesson banked (see [[feedback-scraping-process]]):** DNS alone is insufficient — Monroe *resolves* to a parked page; and `athletics@mdc.edu` (a valid email) will false-match a naive grep for `athletics.mdc.edu`. A separate Monroe **Bronx** campus exists at `monroeexpress.com` — the guide's Monroe is **New Rochelle**. The other 26 JUCO hosts are live. **Still open: no validator check exists for dead `url`s; a full-repo sweep of all 110 school `url`s + `SITE_URLS` remains a good idea.**
+
+- **🚩 Monroe is leaving JUCO — but not yet; `div: "JUCO"` is CURRENTLY CORRECT (verified v42.12).** Tier-1, Monroe's own release (`monroeumustangs.com/sports/2026/5/26/monroe-university-new-rochelle-announces-pursuit-of-ncaa-division-ii-membership.aspx`): *"the transition from **NJCAA Division I** competition toward NCAA Division II membership."* Applies by **Oct 1 2026**; Provisional Yr 1 **2027-28**; Provisional Yr 2 **2028-29**; **full NCAA D2 in 2029-30**. Men's soccer already plays a 2026 "CACC scheduling alliance" schedule, and Monroe is absent from the NCAA men's soccer directory. **Do not change `div` now.** Revisit ~2027; it will cascade into `jucoTier`, `njcaaRegion`, `fundingPathway` (§5c), DIV_STRENGTH and §5b's "29 JUCOs" scope. (Angelina College's release already calls Monroe "NCAA Division II" — it is wrong, another Tier-1 page erring about a third party.)
+
 - **devScores re-baseline — ALL 110 schools, phased. Step 0 COMPLETE (v42.0): the rubric is written, see §5a.** Remaining work below.
 
   **Diagnosis (settled v42.0, supersedes the earlier "cap the JUCOs" framing).** The stored devScores are incoherent because `devAvg` was being asked two incompatible questions at once: *(a)* how good is the daily training environment, and *(b)* does this program move a player up a level. Some schools were scored on (a), some on (b). That is why Indian Hills (JUCO) tied Syracuse at 78, why Phoenix College (NJCAA DII) out-rated Tyler JC (NJCAA DI, 6 titles), and why PBA/St. Edward's (D2) tied Princeton at 84. **The fix is not a cap — it is a split**, plus filling the hole that forced the conflation in the first place: `mlsPicks5yr` is 0 for every JUCO but Monroe, structurally zeroing 30% of their Soccer Program Quality, so past sessions expressed "Tyler JC develops players" the only way the schema allowed — by inflating `tactical`.

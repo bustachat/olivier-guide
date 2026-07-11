@@ -717,7 +717,7 @@ function buildCard(u){
       '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+costDisplay(u)+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+u.aid+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePT.split('—')[0].trim()+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">MLS Picks (5yr)</div><div class="ig2-val">'+(u.proPlayers&&u.proPlayers.mlsPicks5yr!==undefined?u.proPlayers.mlsPicks5yr+' picks':'—')+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">'+(u.proPlayers&&u.proPlayers.nextLevel?'D1 Transfers':'MLS Picks (5yr)')+'</div><div class="ig2-val">'+nlGridDisplay(u)+'</div></div>'+
       (isListed
         ? '<div class="ig2-item"><div class="ig2-label">Profile</div><div class="ig2-val" style="color:var(--hint);font-size:10px">Listed — full data pending</div></div>'
         : '<div class="ig2-item"><div class="ig2-label">Facilities</div><div class="ig2-val"><span class="fac-card-badge fac-'+facRating+'">'+facEmoji+' '+facLabel+'</span></div></div>')+
@@ -767,7 +767,7 @@ function renderComparePage(){
     }],
     ['Conference (last 6yr)',u=>`<div>${u.confRecord.map(r=>`<div style="font-size:11px;margin-bottom:2px"><span class="sy ${posColor(r.pos)}" style="margin-right:4px">${r.yr}</span>${r.pos}</div>`).join('')}</div>`],
     ['Titles',u=>`<div>${u.titles.slice(0,3).map(t=>`<span class="title-chip" style="display:block;margin-bottom:2px;font-size:10px">${t}</span>`).join('')}</div>`],
-    ['MLS Picks 5yr',u=>`<div style="font-size:18px;font-weight:800;color:var(--indigo)">${u.proPlayers.mlsPicks5yr}</div><div style="font-size:11px;color:var(--muted)">${u.proPlayers.draftRank.slice(0,45)}</div>`],
+    ['Next-Level Output',u=>{const nl=u.proPlayers.nextLevel;if(nl){const r=nlRate(nl);return `<div style="font-size:18px;font-weight:800;color:var(--indigo)">${r?r+' <span style="font-size:11px;font-weight:600">D1/yr</span>':'—'}</div><div style="font-size:11px;color:var(--muted)">${r?'D1 transfer rate':'not measured — JUCO neutral'}</div>`;}return `<div style="font-size:18px;font-weight:800;color:var(--indigo)">${u.proPlayers.mlsPicks5yr}</div><div style="font-size:11px;color:var(--muted)">MLS picks (5yr) — ${u.proPlayers.draftRank.slice(0,40)}</div>`;}],
     ['Notable Pro Players',u=>`<div>${(u.proPlayers.notable||[]).slice(0,2).map(n=>`<div style="font-size:11px;color:var(--muted);margin-bottom:3px">• ${n}</div>`).join('')}</div>`],
     ['Pre-PT Path',u=>`<div class="cval good">${u.prePT}</div>`],
     ['Facilities Rating',u=>`<div><span class="fac-rating-badge fac-${(u.facilityDetails?.rating||'Solid').toLowerCase().replace(' ','')}" style="margin-bottom:4px;display:inline-block">${u.facilityDetails?.rating||'—'}</span></div>`],
@@ -1240,6 +1240,65 @@ function buildSocialStrip(u){
   el.innerHTML = html;
 }
 
+// ── Next-level output display (v42.14, CLAUDE.md §5b) ────────────────────────
+// A school carrying proPlayers.nextLevel (all 29 JUCOs) is shown on its D1-transfer
+// RATE, not MLS picks — the same truth the Fit Score now scores on. Schools with no
+// maintained alumni page are shown honestly as "not measured" (scored at the JUCO
+// neutral), never a fake 0. Non-JUCO schools have no nextLevel field and keep the
+// MLS-picks display unchanged. Function declarations hoist, so the card builder,
+// the modal, and the Compare tab can all call these.
+function nlRate(nl){                 // formatted per-year rate string, or null if unmeasured
+  if(!nl || typeof nl.perYear!=='number' || !isFinite(nl.perYear)) return null;
+  return nl.perYear>=1 ? nl.perYear.toFixed(1) : nl.perYear.toFixed(2);
+}
+function nlGridDisplay(u){            // info-grid value: rate, "Not measured", or MLS picks
+  const pp=u.proPlayers, nl=pp&&pp.nextLevel;
+  if(nl){ const r=nlRate(nl); return r ? r+' / yr' : 'Not measured'; }
+  return pp&&pp.mlsPicks5yr!==undefined ? pp.mlsPicks5yr+' picks' : '—';
+}
+function proPipelineHead(u){         // modal Pro Pipeline tab heading + stat box + evidence
+  const pp=u.proPlayers, nl=pp&&pp.nextLevel;
+  const draft=`<p style="font-size:13px;color:var(--muted);line-height:1.7">${pp.draftRank}</p>`;
+  if(!nl){
+    return `<h4>Professional Pipeline</h4>
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:1rem">
+          <div style="text-align:center;background:var(--indigo3);border-radius:10px;padding:12px 16px">
+            <div style="font-size:2.5rem;font-weight:800;color:var(--indigo);line-height:1">${pp.mlsPicks5yr}</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:4px">MLS picks<br>2022–2026</div>
+          </div>
+          ${draft}
+        </div>`;
+  }
+  const r=nlRate(nl);
+  const box = r
+    ? `<div style="text-align:center;background:var(--indigo3);border-radius:10px;padding:12px 16px;min-width:92px">
+         <div style="font-size:2.5rem;font-weight:800;color:var(--indigo);line-height:1">${r}</div>
+         <div style="font-size:11px;color:var(--muted);margin-top:4px">D1 transfers<br>per year</div>
+       </div>`
+    : `<div style="text-align:center;background:var(--surface2);border-radius:10px;padding:12px 16px;min-width:92px">
+         <div style="font-size:1.3rem;font-weight:800;color:var(--muted);line-height:1.15">Not<br>measured</div>
+         <div style="font-size:11px;color:var(--muted);margin-top:4px">D1 transfer rate</div>
+       </div>`;
+  let detail;
+  if(r){
+    const src = nl.sourceUrl ? ` · <a href="${nl.sourceUrl}" target="_blank" rel="noopener" style="color:var(--indigo)">source ↗</a>` : '';
+    detail = `<div style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:1rem">
+        <strong>${nl.d1Count}</strong> D1 transfers verified over <strong>${nl.yearsCovered}</strong> (${nl.years} yr)${src}
+        ${nl.note ? `<div style="margin-top:5px;font-style:italic">${nl.note}</div>` : ''}
+      </div>`;
+  } else {
+    detail = `<div style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:1rem;font-style:italic">
+        ${nl.note || 'No maintained alumni page — scored at the JUCO neutral, not zero.'}
+      </div>`;
+  }
+  return `<h4>Next-Level Output — D1 Transfer Rate</h4>
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:.75rem">
+          ${box}
+          ${draft}
+        </div>
+        ${detail}`;
+}
+
 function openDetail(id){
   const u=unis.find(x=>x.id===id);if(!u)return;
   currentModalId = id;
@@ -1411,14 +1470,7 @@ function buildDetailBody(u){
     </div>
     <div class="mtab-content" id="tab-pro">
       <div class="detail-block" style="margin-bottom:1rem">
-        <h4>Professional Pipeline</h4>
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:1rem">
-          <div style="text-align:center;background:var(--indigo3);border-radius:10px;padding:12px 16px">
-            <div style="font-size:2.5rem;font-weight:800;color:var(--indigo);line-height:1">${u.proPlayers.mlsPicks5yr}</div>
-            <div style="font-size:11px;color:var(--muted);margin-top:4px">MLS picks<br>2022–2026</div>
-          </div>
-          <p style="font-size:13px;color:var(--muted);line-height:1.7">${u.proPlayers.draftRank}</p>
-        </div>
+        ${proPipelineHead(u)}
         <h4 style="margin-bottom:8px">Notable Players</h4>
         <ul class="subject-list">${(u.proPlayers.notable||[]).map(n=>`<li>${n}</li>`).join('')}</ul>
       </div>

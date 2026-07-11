@@ -820,7 +820,6 @@ function rosterUrl(u){
     csula:      'https://calstatela.edu/athletics/mens-soccer/roster',
     keiser:     'https://keiseruniversity.edu/athletics/mens-soccer/roster',
     ocu:        'https://okcu.edu/athletics/soccer/roster',
-    miami_dade: 'https://athletics.mdc.edu/sports/mens-soccer/roster',
   };
   if(overrides[u.id]) return overrides[u.id];
   const base = (u.url || '').replace(/\/$/, '');
@@ -859,8 +858,8 @@ const DOMAINS = {
   ocu:          'ocusports.com',
   keiser:       'kuseahawks.com',
   chapman:      'chapmanathletics.com',
-  smc:          'smcathletics.com',
-  miami_dade:   'athletics.mdc.edu',
+  smc:          'smccorsairs.com',
+  miami_dade:   'mdcathletics.com',
   uc_charleston:'ucgoldeneagles.com',
   iowa_western:  'goreivers.com',
   indian_hills:  'indianhills.edu',

@@ -779,7 +779,9 @@ Justified on **staffing and facility limits**, both verifiable per-school from a
 
 ---
 
-## 5b. nextLevelOutput (v42 — designed + scoped, NOT yet implemented)
+## 5b. nextLevelOutput (v42 — ✅ IMPLEMENTED v42.14)
+
+**Status: shipped v42.14.** `nextLevelFactor()` lives in `js/scores.js` (mirrored in `validate_consistency.js`), gated on `proPlayers.nextLevel` presence — the one-way door: absent ⇒ legacy `min(1, mlsPicks5yr/10)`, present-with-`perYear` ⇒ `min(1, perYear/5.0594)`, present-without ⇒ neutral `0.3773`. All 29 JUCOs populated from the verified table below (7 measured + Phoenix n=1 + 21 neutral) and their `fitOlivier`/`lensScores.overall`/`lensScores.value` cascaded. Glossary Fit-Score prose (index.html ×2) updated "MLS pipeline" → "next-level output". `nextLevel` is stored but **not yet displayed** in any modal/card — the `nextLevelOutput` display block is still a future step. D2/NAIA/D3 keep `mlsPicks5yr` (measured zeros — no `nextLevel` field).
 
 Replaces the `mlsPicks5yr` term inside `soccerQualityScore()`. Measures **does this program move a player up a level** — the thing dev scores were being abused to express.
 

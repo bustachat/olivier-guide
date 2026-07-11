@@ -233,11 +233,21 @@ schools.forEach(s => {
 });
 
 const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
+// mirrors scores.js nextLevelFactor() (v42 §5b): gated on proPlayers.nextLevel.
+// Absent ⇒ legacy mlsPicks5yr/10; present with a measured perYear ⇒ rate/divisor;
+// present without ⇒ neutral. Constants must match scores.js exactly.
+const D1_RATE_DIVISOR = 5.0594, NEXT_LEVEL_NEUTRAL = 0.3773;
+function nextLevelFactor(s) {
+  const pp = s.proPlayers, nl = pp && pp.nextLevel;
+  if (!nl) return Math.min(1, ((pp && pp.mlsPicks5yr) || 0) / 10);
+  if (typeof nl.perYear !== 'number' || !isFinite(nl.perYear)) return NEXT_LEVEL_NEUTRAL;
+  return Math.min(1, nl.perYear / D1_RATE_DIVISOR);
+}
 function soccerQualityScore(s) {
   const devAvg = calcDevAvg(s) / 100;
-  const mlsFactor = Math.min(1, ((s.proPlayers && s.proPlayers.mlsPicks5yr) || 0) / 10);
+  const nextLevel = nextLevelFactor(s);
   const divStrength = DIV_STRENGTH[s.div] || 0.5;
-  return (devAvg * 0.6) + (mlsFactor * 0.3) + (divStrength * 0.1);
+  return (devAvg * 0.6) + (nextLevel * 0.3) + (divStrength * 0.1);
 }
 function moScore(s) {
   const mo = s.minutesOutlook; if (!mo || !mo.available) return 0.5; const t = mo.trajectory; if (!t || !t.length) return 0.5;

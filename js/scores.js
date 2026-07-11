@@ -63,14 +63,53 @@ function calcDevAvg(school) {
   return Math.round(vals.reduce((a, b) => a + b, 0) / vals.length);
 }
 
-// ── Soccer program quality — dev scores + MLS pipeline + division strength ──
+// ── Next-level output factor (v42 — CLAUDE.md §5b) ───────────────────────────
+// The 30% "pipeline" term inside soccerQualityScore(). It answers: does this
+// program move a player UP A LEVEL. The old term used raw mlsPicks5yr, which is
+// a D1-shaped metric — 40 of 110 schools (all JUCOs, all D2/NAIA/D3) sit at 0 on
+// it no matter how many players they send up, and can therefore never reach 12
+// Fit points (0.3 × 40). nextLevel measures the real thing as a RATE, never a raw
+// count (a raw count just rewards whoever publishes the most history — a
+// website-quality proxy, the exact error §5a exists to prevent).
+//
+// GATE — the PRESENCE of proPlayers.nextLevel switches on the new behaviour, so
+// this ships before any nextLevel data exists and moves ZERO scores (one-way
+// door, same pattern as devScoresNote in §5a). Three cases:
+//
+//   • no nextLevel field          → legacy min(1, mlsPicks5yr/10)  (unchanged)
+//   • nextLevel with a measured rate → min(1, perYear / D1_RATE_DIVISOR)
+//   • nextLevel without one          → NEXT_LEVEL_NEUTRAL  (unknown ≠ zero, §5b)
+//
+// Both constants are DERIVED, not chosen (§5b), from all 29 JUCOs read in a real
+// browser with every destination's division hand-verified against the NCAA member
+// directory: the divisor is the 90th percentile of the 7 multi-year measured
+// schools; the neutral is the MEDIAN measured factor — deliberately NOT 0.5, which
+// sat above the median real program and so rewarded a quiet website. 21 JUCOs
+// publish no usable alumni data and take the neutral. Recompute BOTH if any
+// school's perYear changes — they are derived, not chosen.
+const D1_RATE_DIVISOR    = 5.0594;   // p90 of the 7 multi-year measured JUCOs
+const NEXT_LEVEL_NEUTRAL = 0.3773;   // median measured factor — NOT 0.5
+
+function nextLevelFactor(school) {
+  const pp = school.proPlayers;
+  const nl = pp && pp.nextLevel;
+  // Field absent ⇒ legacy path. Keeps every school unchanged until data lands.
+  if (!nl) return Math.min(1, ((pp && pp.mlsPicks5yr) || 0) / 10);
+  // Field present but no measured rate ⇒ neutral (NOT zero — §5b "unknown ≠ zero").
+  // The 21 JUCOs with no usable alumni page store perYear:null and land here.
+  if (typeof nl.perYear !== 'number' || !isFinite(nl.perYear)) return NEXT_LEVEL_NEUTRAL;
+  // Measured per-year rate (d1TransferRate / proSigningRate).
+  return Math.min(1, nl.perYear / D1_RATE_DIVISOR);
+}
+
+// ── Soccer program quality — dev scores + next-level output + division strength ──
 const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
 
 function soccerQualityScore(school) {
   const devAvg = calcDevAvg(school) / 100;
-  const mlsFactor = Math.min(1, ((school.proPlayers && school.proPlayers.mlsPicks5yr) || 0) / 10);
+  const nextLevel = nextLevelFactor(school);
   const divStrength = DIV_STRENGTH[school.div] || 0.5;
-  return (devAvg * 0.6) + (mlsFactor * 0.3) + (divStrength * 0.1);
+  return (devAvg * 0.6) + (nextLevel * 0.3) + (divStrength * 0.1);
 }
 
 // ── Housing penalty (added v41.0, owner-approved) ────────────────────────────

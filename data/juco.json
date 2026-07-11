@@ -59,7 +59,17 @@
         "Transfer to UCLA then MLS draft is a proven pathway",
         "JUCO value = stepping stone to D1 MLS-producing programs"
       ],
-      "draftRank": "JUCO — value is pathway program to D1"
+      "draftRank": "JUCO — value is pathway program to D1",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "CCCAA (not NJCAA); \"Where did SMC athletes transfer to?\" page is an empty stub (nav + a Twitter widget, zero content) — neutral, NOT measured."
+      }
     },
     "acRank": "Top Transfer College",
     "kinRank": "Kinesiology Transfer Pathway",
@@ -121,7 +131,7 @@
       "technical": 74,
       "fitness": 72
     },
-    "fitOlivier": 64,
+    "fitOlivier": 69,
     "tags": [
       "warm",
       "city",
@@ -142,12 +152,12 @@
     "rec": "THE best JUCO option for Sydney lifestyle match. Santa Monica is the most Sydney-like location in America. Best transfer record to UCLA in California. 2 years at ~$9k to prove GPA and soccer ability, then step up.",
     "url": "https://www.smccorsairs.com/sports/msoc/index",
     "lensScores": {
-      "overall": 64,
+      "overall": 69,
       "soccer": 51,
       "academic": 52,
       "minutes": 73,
       "lifestyle": 100,
-      "value": 71
+      "value": 74
     },
     "minutesOutlook": {
       "available": true,
@@ -317,7 +327,17 @@
       "notable": [
         "Transfer to Barry (D2 4 national titles) is the primary pro pathway"
       ],
-      "draftRank": "JUCO — pathway program"
+      "draftRank": "JUCO — pathway program",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "acRank": "Transfer College",
     "kinRank": "Health Science Transfer Prep",
@@ -379,7 +399,7 @@
       "technical": 70,
       "fitness": 70
     },
-    "fitOlivier": 63,
+    "fitOlivier": 67,
     "tags": [
       "warm",
       "city",
@@ -400,12 +420,12 @@
     "rec": "Miami gateway to South Florida 4-year ecosystem. Transfer into Barry for kinesiology degree and pre-PT seminar. Warm city, massive international student body.",
     "url": "https://mdcathletics.com/sports/msoc/index",
     "lensScores": {
-      "overall": 63,
+      "overall": 67,
       "soccer": 47,
       "academic": 42,
       "minutes": 70,
       "lifestyle": 92,
-      "value": 69
+      "value": 71
     },
     "minutesOutlook": {
       "available": true,
@@ -582,7 +602,17 @@
         "Transfer pathway — multiple players moved to D1 programs",
         "Iowa, Iowa State, Creighton transfer connections"
       ],
-      "draftRank": "JUCO — transfer pathway, not MLS pipeline"
+      "draftRank": "JUCO — transfer pathway, not MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": 93,
+        "totalCount": null,
+        "yearsCovered": "2004-2026",
+        "years": 23,
+        "perYear": 4.0435,
+        "sourceUrl": "https://goreivers.com/sports/msoc/former",
+        "note": "Verified in a real browser against the NCAA directory: 93 D1 transfers over 2004-2026 (23 yr) = 4.04/yr. More total D1 alumni than Tyler but over nearly double the window — scored on the rate, not the raw count."
+      }
     },
     "acRank": "Community College",
     "kinRank": "Kinesiology / Health Sciences — transfer pathway",
@@ -644,7 +674,7 @@
       "technical": 68,
       "fitness": 70
     },
-    "fitOlivier": 59,
+    "fitOlivier": 69,
     "tags": [
       "soccer"
     ],
@@ -662,12 +692,12 @@
     "rec": "Iowa Western CC is the Midwest transfer pathway school — the Council Bluffs/Omaha equivalent of Santa Monica College. Extremely affordable at ~$14k/yr with open admission. Best strategic use: bridge GPA to 2.8+ eligibility floor, gain 2 years of NJCAA D1 soccer film, then transfer to target D1 or D2 program. Cold climate is a significant lifestyle mismatch for a Sydney-raised player. Primary value is financial and eligibility access, not lifestyle fit.",
     "url": "https://iwcc.edu/athletics",
     "lensScores": {
-      "overall": 59,
+      "overall": 69,
       "soccer": 58,
       "academic": 40,
       "minutes": 79,
       "lifestyle": 50,
-      "value": 65
+      "value": 71
     },
     "minutesOutlook": {
       "available": true,
@@ -845,7 +875,17 @@
         "JUCO transfer pathway — alumni at D1 and D2 programs",
         "International pipeline: Denmark, Germany, England, Netherlands, Brazil, Japan and more"
       ],
-      "draftRank": "N/A — JUCO pathway program"
+      "draftRank": "N/A — JUCO pathway program",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "2024 NJCAA DII National Champion; real next-level output (Edouard Nys → UIC → 40th overall 2025 MLS SuperDraft) was banked by UIC, not Northeast. No maintained per-year destination page — neutral, NOT measured."
+      }
     },
     "acRank": "Community College",
     "kinRank": "Associate degree only — transfer prerequisite pathway",
@@ -908,14 +948,14 @@
       "fitness": 55
     },
     "lensScores": {
-      "overall": 44,
+      "overall": 49,
       "soccer": 55,
       "academic": 42,
       "minutes": 64,
       "lifestyle": 0,
-      "value": 53
+      "value": 56
     },
-    "fitOlivier": 44,
+    "fitOlivier": 49,
     "tags": [
       "soccer"
     ],
@@ -1100,7 +1140,17 @@
         "NYC metro pipeline — proximity to NYCFC, NY Red Bulls, and international academies",
         "3× national champions produce USL/professional-calibre graduates"
       ],
-      "draftRank": "JUCO level — USL/USL League Two pathway"
+      "draftRank": "JUCO level — USL/USL League Two pathway",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Sidearm page renders empty / parked lander; publishes no usable per-year D1 destination data. mlsPicks5yr is retained for display but the pipeline factor is neutral, NOT measured."
+      }
     },
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree only — transfer prerequisite pathway",
@@ -1163,14 +1213,14 @@
       "fitness": 70
     },
     "lensScores": {
-      "overall": 61,
+      "overall": 63,
       "soccer": 72,
       "academic": 42,
       "minutes": 73,
       "lifestyle": 50,
-      "value": 49
+      "value": 50
     },
-    "fitOlivier": 61,
+    "fitOlivier": 63,
     "tags": [
       "soccer",
       "city"
@@ -1378,7 +1428,17 @@
         "All-Americans: Daniel Mulero and Lucas Bauer (2024), Fabian Arroyo (2025)",
         "Consistent transfer pipeline to D1/D2 universities"
       ],
-      "draftRank": "JUCO level — 4-year university transfer pathway"
+      "draftRank": "JUCO level — 4-year university transfer pathway",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": 15,
+        "totalCount": null,
+        "yearsCovered": "2008-2024",
+        "years": 17,
+        "perYear": 0.8824,
+        "sourceUrl": "https://indianhillsathletics.com/sports/msoc/alums/index",
+        "note": "Page PRINTS 24 \"NCAA DI\" destinations; only 15 are truly D1 when each is checked against the NCAA directory. Eastern New Mexico is labelled \"NCAA DI\" in 10 rows but plays D2 (Lone Star); one Liberty/ENMU pairing is inverted. True rate 15/17 = 0.88/yr, not the 1.41 the page implies. Highest JUCO dev-avg (78) yet a low placement rate — exactly the signal dev scores were being distorted to carry."
+      }
     },
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree — transfer prerequisite pathway",
@@ -1440,14 +1500,14 @@
       "technical": 78,
       "fitness": 76
     },
-    "fitOlivier": 53,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 53,
+      "overall": 55,
       "soccer": 80,
       "academic": 32,
       "minutes": 73,
       "lifestyle": 22,
-      "value": 56
+      "value": 57
     },
     "tags": [
       "juco",
@@ -1688,14 +1748,14 @@
       "technical": 75,
       "fitness": 73
     },
-    "fitOlivier": 64,
+    "fitOlivier": 76,
     "lensScores": {
-      "overall": 64,
+      "overall": 76,
       "soccer": 50,
       "academic": 42,
       "minutes": 73,
       "lifestyle": 50,
-      "value": 61
+      "value": 68
     },
     "tags": [
       "juco",
@@ -1818,7 +1878,17 @@
       "notable": [
         "#1 JUCO D1 transfer feeder nationally — all-time record",
         "Alumni transferred to D1 programs across all major conferences"
-      ]
+      ],
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": 79,
+        "totalCount": null,
+        "yearsCovered": "2012-2023",
+        "years": 12,
+        "perYear": 6.5833,
+        "sourceUrl": "https://apacheathletics.com/sports/msoc/Sites/Mens_Soccer_Next_Level",
+        "note": "Verified in a real browser, every destination checked against the NCAA member directory: 79 D1 transfers over 2012-2023 (12 yr) = 6.58/yr. The undivided 2012-2021 name lists mix D1/D2/D3/NAIA; men’s soccer only, D1 only counted. p90 anchor of the 7 multi-year JUCOs."
+      }
     },
     "juco2yr": true,
     "jucoTier": "Elite",
@@ -1947,14 +2017,14 @@
       "technical": 77,
       "fitness": 75
     },
-    "fitOlivier": 69,
+    "fitOlivier": 73,
     "lensScores": {
-      "overall": 69,
+      "overall": 73,
       "soccer": 78,
       "academic": 36,
       "minutes": 75,
       "lifestyle": 82,
-      "value": 69
+      "value": 71
     },
     "tags": [
       "juco",
@@ -2073,7 +2143,17 @@
         "2025 NJCAA DI National Championship finalists — elite program credibility",
         "Top-5 JUCO D1 transfer feeder nationally",
         "Florida pathway to USF, FAU, FIU, UCF, and programs nationally"
-      ]
+      ],
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "2025 NJCAA DI National Champions, yet publishes no usable alumni/transfer destination data. A title is a result and lives in titles[], not here — neutral, NOT measured."
+      }
     },
     "juco2yr": true,
     "jucoTier": "Elite",
@@ -2237,7 +2317,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Alumni page is a submission form only — no destination data published."
+      }
     },
     "coach": {
       "name": "Rafael Simmons",
@@ -2251,14 +2341,14 @@
       "technical": 70,
       "fitness": 68
     },
-    "fitOlivier": 49,
+    "fitOlivier": 53,
     "lensScores": {
-      "overall": 49,
+      "overall": 53,
       "soccer": 47,
       "academic": 63,
       "minutes": 68,
       "lifestyle": 0,
-      "value": 57
+      "value": 59
     },
     "tags": [
       "soccer",
@@ -2501,7 +2591,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — value is the D1/transfer pathway from a nationally ranked program"
       ],
-      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": 25,
+        "totalCount": null,
+        "yearsCovered": "2017-18 to 2023-24",
+        "years": 7,
+        "perYear": 3.5714,
+        "sourceUrl": "https://cowleytigers.com/sports/msoc/alumni",
+        "note": "Verified in a real browser against the NCAA directory: 25 D1 transfers over 7 seasons = 3.57/yr."
+      }
     },
     "coach": {
       "name": "Marcos Vinicius Longo Ribeiro",
@@ -2515,14 +2615,14 @@
       "technical": 72,
       "fitness": 70
     },
-    "fitOlivier": 48,
+    "fitOlivier": 56,
     "lensScores": {
-      "overall": 48,
+      "overall": 56,
       "soccer": 49,
       "academic": 42,
       "minutes": 64,
       "lifestyle": 0,
-      "value": 52
+      "value": 57
     },
     "tags": [
       "soccer"
@@ -2756,7 +2856,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — value is the D1 transfer pathway from a top-2 nationally ranked program"
       ],
-      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": 15,
+        "totalCount": null,
+        "yearsCovered": "2003-2023",
+        "years": 21,
+        "perYear": 0.7143,
+        "sourceUrl": "https://awcmatadors.com/sports/msoc/MSOC_Moving_On",
+        "note": "Page prints \"NCAA DI\" 25 times; only 15 are real. Arizona, Arizona State, Northern Arizona, Southern Utah and New Mexico State are D1 institutions that sponsor NO varsity men’s soccer (nauathletics.com lists soccer under Women’s only). Institution division ≠ sport sponsorship. True rate 15/21 = 0.71/yr."
+      }
     },
     "coach": {
       "name": "Kenny Dale",
@@ -2770,14 +2880,14 @@
       "technical": 74,
       "fitness": 72
     },
-    "fitOlivier": 63,
+    "fitOlivier": 64,
     "lensScores": {
-      "overall": 63,
+      "overall": 64,
       "soccer": 50,
       "academic": 58,
       "minutes": 70,
       "lifestyle": 50,
-      "value": 65
+      "value": 66
     },
     "tags": [
       "warm",
@@ -3020,7 +3130,17 @@
         "13 players advanced to 4-year programs in 2025 — strong transfer pipeline",
         "Titan Soccer Complex hosted Orlando City B (USL) matches in 2016, evidence of pro-level facility standards even though not a direct player pipeline"
       ],
-      "draftRank": "JUCO — strong D1 transfer pipeline (13 transfers in 2025), not an MLS pipeline"
+      "draftRank": "JUCO — strong D1 transfer pipeline (13 transfers in 2025), not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No maintained alumni destination page (2025 \"13 transfers\" figure is a count without verifiable D1 destinations) — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Bart Sasnett",
@@ -3034,14 +3154,14 @@
       "technical": 73,
       "fitness": 70
     },
-    "fitOlivier": 61,
+    "fitOlivier": 65,
     "lensScores": {
-      "overall": 61,
+      "overall": 65,
       "soccer": 49,
       "academic": 42,
       "minutes": 66,
       "lifestyle": 50,
-      "value": 59
+      "value": 61
     },
     "tags": [
       "warm",
@@ -3274,7 +3394,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1/D2 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — nationally elite D1/D2 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — nationally elite D1/D2 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": 3,
+        "totalCount": null,
+        "yearsCovered": "2024-25",
+        "years": 1,
+        "perYear": 3,
+        "sourceUrl": "https://d2o2figo6ddd0g.cloudfront.net/p/q/rwrkzf3a0lwf0k/moving_on.pdf",
+        "note": "n=1: single 2024-25 \"Athletes Moving On\" PDF (school-wide; men’s soccer only counted), 3 D1 = 3.0/yr, factor 0.593. STORED but EXCLUDED from the p90 divisor — a 1-year window is not comparable to Tyler’s 12 or Iowa Western’s 23 and would distort the percentile. Extracted with pdfplumber (Chrome’s PDF plugin exposes no text)."
+      }
     },
     "coach": {
       "name": "David Cameron",
@@ -3288,14 +3418,14 @@
       "technical": 74,
       "fitness": 72
     },
-    "fitOlivier": 65,
+    "fitOlivier": 72,
     "lensScores": {
-      "overall": 65,
+      "overall": 72,
       "soccer": 51,
       "academic": 63,
       "minutes": 73,
       "lifestyle": 100,
-      "value": 61
+      "value": 65
     },
     "tags": [
       "warm",
@@ -3529,7 +3659,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1/D2 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — nationally competitive D1/D2 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — nationally competitive D1/D2 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": 21,
+        "totalCount": null,
+        "yearsCovered": "2015-2025",
+        "years": 11,
+        "perYear": 1.9091,
+        "sourceUrl": "https://pimaaztecs.com/sports/msoc/movingon",
+        "note": "Verified in a real browser against the NCAA directory: 21 D1 transfers over 2015-2025 (11 yr) = 1.91/yr. Pima is the median school — its factor equals the neutral. Initially assumed to publish nothing; a \"Moving On\" page does exist (navigate returns before render — read as a separate call)."
+      }
     },
     "coach": {
       "name": "David Cosgrove",
@@ -3543,14 +3683,14 @@
       "technical": 70,
       "fitness": 68
     },
-    "fitOlivier": 61,
+    "fitOlivier": 66,
     "lensScores": {
-      "overall": 61,
+      "overall": 66,
       "soccer": 48,
       "academic": 42,
       "minutes": 66,
       "lifestyle": 100,
-      "value": 59
+      "value": 62
     },
     "tags": [
       "warm",
@@ -3784,7 +3924,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed — a brand-new program (launched 2022) without a pro-pipeline track record yet"
       ],
-      "draftRank": "JUCO — new program, D1 transfer pathway"
+      "draftRank": "JUCO — new program, D1 transfer pathway",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "New program (launched 2022), no destination track record published — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Camilo Valencia",
@@ -3798,14 +3948,14 @@
       "technical": 68,
       "fitness": 66
     },
-    "fitOlivier": 58,
+    "fitOlivier": 63,
     "lensScores": {
-      "overall": 58,
+      "overall": 63,
       "soccer": 46,
       "academic": 36,
       "minutes": 70,
       "lifestyle": 50,
-      "value": 62
+      "value": 65
     },
     "tags": [
       "warm",
@@ -4034,7 +4184,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1/D2 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — D1/D2 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — D1/D2 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Nav link /sports/msoc/alumni is a decoy — lists All-Conference honours, not transfer destinations — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Jeff Perry",
@@ -4048,14 +4208,14 @@
       "technical": 66,
       "fitness": 64
     },
-    "fitOlivier": 58,
+    "fitOlivier": 63,
     "lensScores": {
-      "overall": 58,
+      "overall": 63,
       "soccer": 45,
       "academic": 63,
       "minutes": 60,
       "lifestyle": 100,
-      "value": 50
+      "value": 53
     },
     "tags": [
       "warm",
@@ -4293,7 +4453,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Juan Espinal",
@@ -4307,14 +4477,14 @@
       "technical": 68,
       "fitness": 67
     },
-    "fitOlivier": 51,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 51,
+      "overall": 55,
       "soccer": 47,
       "academic": 36,
       "minutes": 75,
       "lifestyle": 0,
-      "value": 60
+      "value": 62
     },
     "tags": [
       "soccer"
@@ -4542,7 +4712,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D2 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Elliot Chadderton",
@@ -4556,14 +4736,14 @@
       "technical": 68,
       "fitness": 67
     },
-    "fitOlivier": 47,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 47,
+      "overall": 51,
       "soccer": 47,
       "academic": 47,
       "minutes": 62,
       "lifestyle": 0,
-      "value": 54
+      "value": 56
     },
     "tags": [
       "soccer",
@@ -4798,7 +4978,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D2 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": 1,
+        "totalCount": null,
+        "yearsCovered": "2018-2024",
+        "years": 7,
+        "perYear": 0.1429,
+        "sourceUrl": "https://sccblackhawks.com/sports/msoc/Men-s_Soccer_Alumni",
+        "note": "Verified in a real browser against the NCAA directory: only 1 true D1 transfer over 2018-2024 = 0.14/yr. Lands below the neutral — accepted: we do not reward a program for a quiet website, nor punish it for an honest one."
+      }
     },
     "coach": {
       "name": "Henrique Vieira",
@@ -5059,7 +5249,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D2 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Ben MacRae",
@@ -5073,14 +5273,14 @@
       "technical": 68,
       "fitness": 68
     },
-    "fitOlivier": 48,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 48,
+      "overall": 52,
       "soccer": 47,
       "academic": 63,
       "minutes": 66,
       "lifestyle": 0,
-      "value": 56
+      "value": 58
     },
     "tags": [
       "acad",
@@ -5315,7 +5515,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — nationally competitive D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — nationally competitive D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Michael McBride",
@@ -5329,14 +5539,14 @@
       "technical": 70,
       "fitness": 68
     },
-    "fitOlivier": 59,
+    "fitOlivier": 63,
     "lensScores": {
-      "overall": 59,
+      "overall": 63,
       "soccer": 48,
       "academic": 63,
       "minutes": 62,
       "lifestyle": 50,
-      "value": 52
+      "value": 54
     },
     "tags": [
       "warm",
@@ -5572,7 +5782,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — nationally competitive D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — nationally competitive D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page (Cloudflare-fronted; site root clears the challenge but the sport page carries no destination data) — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Justin Rodriguez",
@@ -5586,14 +5806,14 @@
       "technical": 64,
       "fitness": 63
     },
-    "fitOlivier": 60,
+    "fitOlivier": 64,
     "lensScores": {
-      "overall": 60,
+      "overall": 64,
       "soccer": 45,
       "academic": 36,
       "minutes": 68,
       "lifestyle": 50,
-      "value": 63
+      "value": 65
     },
     "tags": [
       "warm"
@@ -5820,7 +6040,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Only a one-off news release (2 D1, 2025-26) that self-declares incompleteness (\"the list (so far)\") — not a maintained alumni page. Owner-approved neutral, NOT measured (finding recorded here, not in perYear)."
+      }
     },
     "coach": {
       "name": "Martin Melchor",
@@ -5834,14 +6064,14 @@
       "technical": 65,
       "fitness": 63
     },
-    "fitOlivier": 54,
+    "fitOlivier": 58,
     "lensScores": {
-      "overall": 54,
+      "overall": 58,
       "soccer": 45,
       "academic": 36,
       "minutes": 61,
       "lifestyle": 50,
-      "value": 63
+      "value": 65
     },
     "tags": [
       "warm"
@@ -6072,7 +6302,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Alumni page is a submission form only — no destination data published — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "John Plumbar",
@@ -6086,14 +6326,14 @@
       "technical": 64,
       "fitness": 62
     },
-    "fitOlivier": 62,
+    "fitOlivier": 67,
     "lensScores": {
-      "overall": 62,
+      "overall": 67,
       "soccer": 44,
       "academic": 36,
       "minutes": 77,
       "lifestyle": 50,
-      "value": 62
+      "value": 65
     },
     "tags": [
       "warm"
@@ -6318,7 +6558,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Alumni page is a survey only — no destination data published — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Dan Fisher",
@@ -6332,14 +6582,14 @@
       "technical": 66,
       "fitness": 65
     },
-    "fitOlivier": 51,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 51,
+      "overall": 55,
       "soccer": 46,
       "academic": 36,
       "minutes": 73,
       "lifestyle": 50,
-      "value": 50
+      "value": 52
     },
     "tags": [
       "city"
@@ -6566,7 +6816,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Jamal Lis-Simmons",
@@ -6580,14 +6840,14 @@
       "technical": 65,
       "fitness": 64
     },
-    "fitOlivier": 43,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 43,
+      "overall": 47,
       "soccer": 45,
       "academic": 36,
       "minutes": 70,
       "lifestyle": 0,
-      "value": 47
+      "value": 49
     },
     "tags": [],
     "facilities": [
@@ -6813,7 +7073,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Keith Ginsberg",
@@ -6827,14 +7097,14 @@
       "technical": 68,
       "fitness": 66
     },
-    "fitOlivier": 36,
+    "fitOlivier": 41,
     "lensScores": {
-      "overall": 36,
+      "overall": 41,
       "soccer": 47,
       "academic": 63,
       "minutes": 50,
       "lifestyle": 0,
-      "value": 40
+      "value": 43
     },
     "tags": [
       "acad"
@@ -7030,7 +7300,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Alfio Carrabotta",
@@ -7044,14 +7324,14 @@
       "technical": 64,
       "fitness": 63
     },
-    "fitOlivier": 42,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 42,
+      "overall": 47,
       "soccer": 44,
       "academic": 47,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 46
+      "value": 49
     },
     "tags": [
       "city"
@@ -7247,7 +7527,17 @@
       "notable": [
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D2 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline"
+      "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No usable alumni destination page — neutral, NOT measured."
+      }
     },
     "coach": {
       "name": "Jeff Cole",
@@ -7261,14 +7551,14 @@
       "technical": 66,
       "fitness": 65
     },
-    "fitOlivier": 45,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 45,
+      "overall": 49,
       "soccer": 46,
       "academic": 36,
       "minutes": 56,
       "lifestyle": 50,
-      "value": 41
+      "value": 43
     },
     "tags": [
       "city"

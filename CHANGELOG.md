@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v42.29 (July 2026) — 8 stale head-coach corrections (Change Type 2) + 2 staff-only edits + global coach re-rank
+
+Reconciles the head-coach names surfaced (but deliberately left untouched) during the v42.26–v42.28 devScore re-baseline, plus older deferred coach changes — all confirmed live via Chrome MCP against each school's official staff directory/bio page. No Fit cascade (coach score is independent of `fitOlivier`); only the Coaches Rankings reshuffled.
+
+- **4 primary HC changes** (all were *long-standing stored errors*, not fresh hires — the incumbents had been gone for years): Cal `Colin Carmichael → Leonard Griffin` (HC since 2022; 2023 Pac-12 COY) · Penn State `Bob Warming → Rob Dow` (hired Dec 2025 from Vermont; 2024 NCAA National Champion, 129-41-21) · Northwestern `Tim Lenahan → Russell Payne` (HC since 2021; ex-USMNT GK coach) · Wisconsin `John Trask → Neil Jones` (HC since 2022; ex-Loyola Chicago).
+- **4 older deferred HC changes:** Temple — conf JSON still carried Rowland's email/profile though the name was already Green (fixed email→"", profile, staff) · Army `"Head Coach" placeholder → Brian Plotkin` (2022 Patriot League COY, USSF 'A') · Cal Poly `Steve Sampson → Oige Kennedy` (2024 Big West COY; stored profile wrongly credited Sampson with Kennedy's titles) · Neosho CC `Elliot Chadderton → Sam Hall` (confirmed Head Men's Coach via official staff directory; individual bio page unpublished, so scored/described conservatively).
+- **2 staff-only edits** (`staff[]` + coaches.json bio, no re-rank score change): Wake Forest — Steve Armas departed, replaced by Zack Schilawski; Dane Brenner elevated. UCLA — Erik Holt → Kary Whitney.
+- **`overallScore` (fresh assessments — a new person, not drift):** Dow 76→85 (elite; national champion) · Payne 65→79 · Griffin 69→75 · Kennedy 68→73 · Jones 63→71 · Plotkin 40→70 (the 40 was a "no-data" placeholder floor) · Hall 65→60 (new HC, thin published record) · Green unchanged 58. **All 110 coaches re-ranked by `overallScore` desc** (gapless 1–110; rankClass re-banded elite ≥80 / strong 65–79 / solid ≤64).
+- **Two-file rule honoured** for all 8: conf JSON `coach{}`+`staff[]` and `data/coaches.json` kept in sync (validate_consistency.js COACH-SYNC clean).
+- **Validated:** `validate_schools.py` PASS (110 schools; only new warnings are Penn State + Temple "coach contact unverified" — both because a now-invalid published email was honestly emptied, real HC emails aren't published). `validate_consistency.js` held at the **1-issue baseline** (Stony Brook placeholder — the known genuine gap; unchanged).
+- **Browser-verified (local, Chrome MCP):** Coaches → Rankings shows all 110 gapless with every changed coach correct (Dow #18, Payne #30, Griffin #36, Kennedy #41, Jones #46, Plotkin #49, Hall #82, Green #92); Profiles renders the new bios + staff (Brad Cole, Oscar Umar, Zack Schilawski, Kary Whitney, JR DeRose, Nate Boyden) with no stale Armas/Holt; Explore modal Coach & Contact (Cal) shows Griffin + Pac-12 COY profile + `calsoccer@berkeley.edu`; Dashboard Top 8 fit scores unchanged (no fit drift); zero app console errors.
+- **Newly discovered deferrals (logged, not fixed):** (1) **Vermont** (`data/d1-other.json`) HC is now stale — Rob Dow left it for Penn State; needs its own Change Type 2 pass. (2) **Navy / John Hackworth** sits at coach score 42 despite a stronger CV than several coaches now above him (ex-Philadelphia Union MLS HC, USMNT U-17) — surfaced by scoring Plotkin on merit; a service-academy re-score to consider. (3) CHANGELOG had no entries for v42.19–v42.28 (dev re-baseline sessions committed to git without appending here) — a pre-existing docs-drift gap.
+- guideVersion v42.28 → v42.29.
+
+---
+
 ### v42.18 (July 2026) — fundingPathway penalty implemented (§5c, owner-approved) — Step 4 of the devScores re-baseline sequence
 
 Implements CLAUDE.md §5c: scholarship availability is a **structural** property of a program (a D3/Ivy/CCCAA school is forbidden to offer athletic money to anyone at any price; a D2/NAIA/NJCAA-DII school may but is capped by rule), which is distinct from *cost* (a price tag, correctly removed from the Fit Score in v37.1). Two schools with identical Fit shouldn't rank equal when one can fund an athlete for playing and the other structurally cannot.

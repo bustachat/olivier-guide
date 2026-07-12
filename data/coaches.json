@@ -269,7 +269,7 @@
     "devScore": 90,
     "ptPathScore": 95,
     "ausConnection": false,
-    "bio": "Ryan Jorden enters his 7th season at UCLA in 2025. He won the 2025 Big Ten Tournament, defeating Michigan 5-0 in the final. Holds a PhD in Biomechanics from Northern Colorado. His 2026 staff includes Sergi Nus and Erik Holt (hired Jan 2026, former Real Salt Lake MLS player and UCLA team captain) as assistant coaches.",
+    "bio": "Ryan Jorden enters his 7th season at UCLA in 2025. He won the 2025 Big Ten Tournament, defeating Michigan 5-0 in the final. Holds a PhD in Biomechanics from Northern Colorado. His 2026 staff includes Sergi Nus and Kary Whitney as assistant coaches.",
     "strengths": [
       "Technical development",
       "MLS pipeline",
@@ -284,7 +284,7 @@
         "bg": "Full-time assistant coach."
       },
       {
-        "name": "Erik Holt",
+        "name": "Kary Whitney",
         "role": "Assistant Coach",
         "email": "msoccer@athletics.ucla.edu",
         "bg": "Full-time assistant coach."
@@ -770,7 +770,7 @@
     "devScore": 88,
     "ptPathScore": 75,
     "ausConnection": false,
-    "bio": "Bobby Muuss enters his 11th season at Wake Forest in 2025. His record of 152 wins in first 10 seasons is more than any D1 program in that span. 2025 staff: Steve Armas (Assoc HC, armasas@wfu.edu), Dane Brenner (Assoc HC, brennerd@wfu.edu), Ade Taiwo (Asst, taiwoa@wfu.edu). HC email: muussrp@wfu.edu",
+    "bio": "Bobby Muuss enters his 11th season at Wake Forest in 2025. His record of 152 wins in first 10 seasons is more than any D1 program in that span. 2026 staff: Dane Brenner (Assoc HC / Recruiting, brennerd@wfu.edu), Zack Schilawski (Asst / Player Development, Schilazj@wfu.edu), Ade Taiwo (Asst, taiwoa@wfu.edu). HC email: muussrp@wfu.edu",
     "strengths": [
       "Possession system",
       "4 picks in one draft",
@@ -779,16 +779,16 @@
     ],
     "staff": [
       {
-        "name": "Steve Armas",
-        "role": "Associate Head Coach",
-        "email": "armasas@wfu.edu",
-        "bg": "Associate Head Coach. Recruiting and player development."
-      },
-      {
         "name": "Dane Brenner",
         "role": "Associate Head Coach",
         "email": "brennerd@wfu.edu",
-        "bg": "Associate Head Coach. Recruiting and player development."
+        "bg": "Associate Head Coach / Director of Recruiting & Player Identification / Director of Goalkeeping."
+      },
+      {
+        "name": "Zack Schilawski",
+        "role": "Assistant Coach",
+        "email": "Schilazj@wfu.edu",
+        "bg": "Assistant Coach / Director of Player Development."
       },
       {
         "name": "Ade Taiwo",
@@ -913,13 +913,68 @@
     "licence": "USSF A, NSCAA Advanced National"
   },
   {
+    "id": "dow_pennstate",
+    "schoolId": "pennstate",
+    "name": "Rob Dow",
+    "school": "Pennsylvania State University",
+    "div": "D1",
+    "conf": "Big Ten",
+    "yearsHC": 1,
+    "record": "Named Penn State HC Dec 2025. At Vermont (2016-25): 129-41-21, 2024 NCAA National Champion, 5 straight NCAA Tournaments, 9th-best active win % (5+ seasons).",
+    "mlsPlayers": 3,
+    "rank": 18,
+    "rankClass": "rk-elite",
+    "overallScore": 85,
+    "tacticalScore": 85,
+    "devScore": 84,
+    "ptPathScore": 58,
+    "ausConnection": false,
+    "bio": "Rob Dow was named Penn State's head coach in December 2025 after nine seasons at Vermont, where he compiled a 129-41-21 record, reached five consecutive NCAA Tournaments and won the 2024 NCAA National Championship. He holds the nation's ninth-best win percentage among active coaches with 5+ seasons and was back-to-back America East Coaching Staff of the Year (2024, 2025). Dow inherits Penn State's 2013 NCAA finalist program and a newly renovated $21.25M Jeffrey Field complex.",
+    "strengths": [
+      "2024 NCAA National Champion",
+      "9th-best active win % (5+ yrs)",
+      "Elite program builder",
+      "Back-to-back Staff of the Year"
+    ],
+    "staff": [
+      {
+        "name": "Brad Cole",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Oscar Umar",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Owen Jack",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "",
+      "phone": ""
+    },
+    "url": "https://gopsusports.com/sports/mens-soccer",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": null
+  },
+  {
     "id": "kerr_duke",
     "schoolId": "duke",
     "name": "John Kerr",
     "school": "Duke University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 18,
+    "rank": 19,
     "rankClass": "rk-elite",
     "overallScore": 84,
     "devScore": 86,
@@ -958,7 +1013,7 @@
     "yearsHC": 17,
     "record": "194-54-31 (.751) at Lynn. Career 498-150-55 across 4 schools. 3 NCAA D2 National Championships (2012, 2014, 2024).",
     "mlsPlayers": 0,
-    "rank": 19,
+    "rank": 20,
     "rankClass": "rk-elite",
     "overallScore": 84,
     "tacticalScore": 82,
@@ -998,7 +1053,7 @@
     "school": "University of Denver",
     "div": "D1",
     "conf": "WCC",
-    "rank": 20,
+    "rank": 21,
     "rankClass": "rk-elite",
     "overallScore": 84,
     "devScore": 86,
@@ -1037,7 +1092,7 @@
     "yearsHC": 4,
     "record": "31-18-8 in 3 seasons. 2023 SSC regular season + tournament double — first time in program history.",
     "mlsPlayers": 0,
-    "rank": 21,
+    "rank": 22,
     "rankClass": "rk-elite",
     "overallScore": 83,
     "tacticalScore": 84,
@@ -1098,7 +1153,7 @@
     "yearsHC": 10,
     "record": "3 consecutive Big Ten titles 2022-24",
     "mlsPlayers": 2,
-    "rank": 22,
+    "rank": 23,
     "rankClass": "rk-elite",
     "overallScore": 82,
     "tacticalScore": 80,
@@ -1141,7 +1196,7 @@
     "yearsHC": 5,
     "record": "HC since 2020-21. 2024: 14-2-4, SAC Tournament champs, NAIA Tournament 2nd round.",
     "mlsPlayers": 0,
-    "rank": 23,
+    "rank": 24,
     "rankClass": "rk-elite",
     "overallScore": 82,
     "tacticalScore": 82,
@@ -1193,7 +1248,7 @@
     "school": "Stanford University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 24,
+    "rank": 25,
     "rankClass": "rk-elite",
     "overallScore": 81,
     "devScore": 85,
@@ -1233,7 +1288,7 @@
     "yearsHC": 35,
     "record": "468-213-118 career (.660). 415-192-112 at SJU. 1996 NCAA champion. 2nd-winningest active D1 HC.",
     "mlsPlayers": 2,
-    "rank": 25,
+    "rank": 26,
     "rankClass": "rk-elite",
     "overallScore": 80,
     "tacticalScore": 80,
@@ -1273,7 +1328,7 @@
     "school": "Syracuse University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 26,
+    "rank": 27,
     "rankClass": "rk-strong",
     "overallScore": 79,
     "devScore": 78,
@@ -1309,7 +1364,7 @@
     "school": "Grand Canyon University",
     "div": "D1",
     "conf": "WAC",
-    "rank": 27,
+    "rank": 28,
     "rankClass": "rk-strong",
     "overallScore": 79,
     "devScore": 80,
@@ -1345,7 +1400,7 @@
     "school": "Tyler Junior College (Apaches)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region XIV",
-    "rank": 28,
+    "rank": 29,
     "rankClass": "rk-strong",
     "yearsHC": 24,
     "record": "408-57-23 at TJC; 554-90-26 total career",
@@ -1375,6 +1430,61 @@
     }
   },
   {
+    "id": "payne_northwestern",
+    "schoolId": "northwestern",
+    "name": "Russell Payne",
+    "school": "Northwestern University",
+    "div": "D1",
+    "conf": "Big Ten",
+    "yearsHC": 5,
+    "record": "5th season at Northwestern (since 2021); back-to-back winning seasons 2023-24, ranked as high as No. 9 nationally. Prior 11 seasons HC at Army West Point.",
+    "mlsPlayers": 2,
+    "rank": 30,
+    "rankClass": "rk-strong",
+    "overallScore": 79,
+    "tacticalScore": 78,
+    "devScore": 76,
+    "ptPathScore": 72,
+    "ausConnection": false,
+    "bio": "Russell Payne has led Northwestern since 2021, guiding the Wildcats to back-to-back winning seasons in 2023-24 and a No. 9 national ranking. A former USMNT goalkeepers coach (2015-17) and U-23 assistant at the 2024 Paris Olympics, he spent 11 seasons as head coach at Army West Point and was an assistant on Maryland's national-championship staffs. Payne is a top-25 national recruiter (No. 5 class in 2022); Chicago proximity and Northwestern Medicine make it a strong pre-PT environment.",
+    "strengths": [
+      "USMNT & Olympic coaching pedigree",
+      "Top-25 national recruiting",
+      "Chicago / Northwestern Medicine access",
+      "Goalkeeper & player development"
+    ],
+    "staff": [
+      {
+        "name": "JR DeRose",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Assistant Coach / Director of Player Development."
+      },
+      {
+        "name": "Flo Liu",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Joe Moulden",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "msoccer@northwestern.edu",
+      "phone": ""
+    },
+    "url": "https://nusports.com/sports/mens-soccer",
+    "color": [
+      "#f3e8ff",
+      "#7c3aed"
+    ],
+    "licence": null
+  },
+  {
     "id": "daley_michigan",
     "schoolId": "michigan",
     "name": "Chaka Daley",
@@ -1384,7 +1494,7 @@
     "yearsHC": 8,
     "record": "2025 Big Ten Tournament Final",
     "mlsPlayers": 3,
-    "rank": 29,
+    "rank": 31,
     "rankClass": "rk-strong",
     "overallScore": 78,
     "tacticalScore": 79,
@@ -1424,7 +1534,7 @@
     "school": "Yale University",
     "div": "IVY",
     "conf": "Ivy League",
-    "rank": 30,
+    "rank": 32,
     "rankClass": "rk-strong",
     "overallScore": 78,
     "devScore": 80,
@@ -1454,49 +1564,6 @@
     "licence": "USSF A"
   },
   {
-    "id": "warming_pennstate",
-    "schoolId": "pennstate",
-    "name": "Bob Warming",
-    "school": "Pennsylvania State University",
-    "div": "D1",
-    "conf": "Big Ten",
-    "yearsHC": 20,
-    "record": "Multiple Big Ten titles, 2013 NCAA Final",
-    "mlsPlayers": 4,
-    "rank": 31,
-    "rankClass": "rk-strong",
-    "overallScore": 76,
-    "tacticalScore": 76,
-    "devScore": 74,
-    "ptPathScore": 58,
-    "ausConnection": false,
-    "bio": "Bob Warming is one of the most experienced coaches in Big Ten history. He led Penn State to the 2013 NCAA Final and has built a consistent program from State College. His long tenure and multiple Big Ten title runs make him a respected figure in US college soccer.",
-    "strengths": [
-      "Long tenure",
-      "Big Ten titles",
-      "2013 NCAA finalist",
-      "Mid-Atlantic recruiting"
-    ],
-    "staff": [
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "msoccer@psu.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "contact": {
-      "email": "bwarming@psu.edu",
-      "phone": ""
-    },
-    "url": "https://gopsusports.com/sports/mens-soccer",
-    "color": [
-      "#dbeafe",
-      "#1e3a8a"
-    ],
-    "licence": null
-  },
-  {
     "id": "wiggans",
     "schoolId": "charleston",
     "name": "Keith Wiggans",
@@ -1506,7 +1573,7 @@
     "yearsHC": 6,
     "record": "27-31-18 overall, 10-19-8 CAA. 2024 best season: 10-6-2, ranked #23 nationally.",
     "mlsPlayers": 0,
-    "rank": 32,
+    "rank": 33,
     "rankClass": "rk-strong",
     "overallScore": 76,
     "tacticalScore": 76,
@@ -1552,7 +1619,7 @@
     "school": "University of Pittsburgh",
     "div": "D1",
     "conf": "ACC",
-    "rank": 33,
+    "rank": 34,
     "rankClass": "rk-strong",
     "overallScore": 76,
     "devScore": 78,
@@ -1589,7 +1656,7 @@
     "school": "Indian Hills CC (Warriors)",
     "div": "JUCO",
     "conf": "NJCAA DI",
-    "rank": 34,
+    "rank": 35,
     "rankClass": "rk-strong",
     "yearsHC": 2,
     "record": "2025 NJCAA DI National Champions; 2024 national semifinal; first-ever No. 1 national ranking",
@@ -1616,6 +1683,61 @@
     "licence": "USSF C"
   },
   {
+    "id": "griffin_cal",
+    "schoolId": "cal",
+    "name": "Leonard Griffin",
+    "school": "University of California, Berkeley",
+    "div": "D1",
+    "conf": "ACC",
+    "rank": 36,
+    "rankClass": "rk-strong",
+    "overallScore": 75,
+    "devScore": 74,
+    "tacticalScore": 75,
+    "ptPathScore": 65,
+    "mlsPlayers": 5,
+    "yearsHC": 4,
+    "ausConnection": false,
+    "record": "2023 Pac-12 Coach of the Year. Led Cal's 2025 ACC Tournament semi-final run. Prior HC at Grand Canyon (2021 WAC title, NCAA berth) and San Francisco.",
+    "bio": "Leonard Griffin, the 2023 Pac-12 Coach of the Year, has led Cal since 2022, guiding the Golden Bears through their transition from the Pac-12 into the ACC. A UCLA national champion as a player (2002) and former MLS pro (Chicago Fire, LA Galaxy), he has developed 35+ players into the professional ranks and previously was head coach at Grand Canyon (2021 WAC title, NCAA berth) and San Francisco. Strong Bay Area recruiting network; UCSF clinical access supports a pre-PT pathway.",
+    "strengths": [
+      "2023 Pac-12 Coach of the Year",
+      "35+ players developed to the pros",
+      "Bay Area recruiting network",
+      "MLS playing pedigree"
+    ],
+    "staff": [
+      {
+        "name": "Ricardo Gutierrez",
+        "role": "Assistant Coach",
+        "email": "ricardo.gutierrez@berkeley.edu",
+        "bg": "Full-time assistant coach."
+      },
+      {
+        "name": "Jacob Wilson",
+        "role": "Assistant Coach",
+        "email": "jake.wilson@berkeley.edu",
+        "bg": "Full-time assistant coach."
+      },
+      {
+        "name": "Henry Foulk",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant coach."
+      }
+    ],
+    "contact": {
+      "email": "calsoccer@berkeley.edu",
+      "phone": "510-643-5533"
+    },
+    "url": "https://calbears.com/sports/mens-soccer",
+    "color": [
+      "#fffbeb",
+      "#003262"
+    ],
+    "licence": null
+  },
+  {
     "id": "miller_creighton",
     "schoolId": "creighton",
     "name": "Johnny Torres",
@@ -1625,7 +1747,7 @@
     "yearsHC": 7,
     "record": "49-39-19 overall; NCAA Tournament 2021-22; 2022 College Cup (Final 8)",
     "mlsPlayers": 3,
-    "rank": 35,
+    "rank": 37,
     "rankClass": "rk-strong",
     "overallScore": 74,
     "tacticalScore": 73,
@@ -1665,7 +1787,7 @@
     "school": "Nova Southeastern University",
     "div": "D2",
     "conf": "Sunshine State Conference (SSC)",
-    "rank": 36,
+    "rank": 38,
     "rankClass": "rk-strong",
     "overallScore": 74,
     "devScore": 74,
@@ -1701,7 +1823,7 @@
     "school": "Daytona State College (Falcons)",
     "div": "JUCO",
     "conf": "NJCAA Division I / FCSAA",
-    "rank": 37,
+    "rank": 39,
     "rankClass": "rk-strong",
     "yearsHC": 2023,
     "record": "2025 NJCAA DI National Championship finalists (lost 1-0 to Indian Hills)",
@@ -1740,7 +1862,7 @@
     "yearsHC": 4,
     "record": "UConn 2025 Big East Final; 6yrs HC at Northeastern; Hermann Trophy 2000; #1 MLS pick 2002",
     "mlsPlayers": 8,
-    "rank": 38,
+    "rank": 40,
     "rankClass": "rk-strong",
     "overallScore": 73,
     "tacticalScore": 72,
@@ -1774,6 +1896,55 @@
     "licence": null
   },
   {
+    "id": "kennedy_calpoly",
+    "schoolId": "calpoly",
+    "name": "Oige Kennedy",
+    "school": "California Polytechnic State University",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "yearsHC": 4,
+    "record": "2024 Big West Coach of the Year. Back-to-back Big West regular-season titles (2024 program's first, 2025). Prior Stanford assistant during the Cardinal's national-championship era.",
+    "mlsPlayers": 2,
+    "rank": 41,
+    "rankClass": "rk-strong",
+    "overallScore": 73,
+    "tacticalScore": 73,
+    "devScore": 72,
+    "ptPathScore": 55,
+    "ausConnection": false,
+    "bio": "Oige Kennedy, the 2024 Big West Coach of the Year, has led Cal Poly since 2022, directing the Mustangs to back-to-back Big West regular-season titles in 2024 (the program's first) and 2025 — the 2025 side matched a program record with 10 shutouts. A former Stanford assistant on Jeremy Gunn's staff during the Cardinal's national-championship era, he helped develop multiple MLS draft picks. San Luis Obispo's learn-by-doing kinesiology model pairs strong lab experience with soccer development.",
+    "strengths": [
+      "2024 Big West Coach of the Year",
+      "Back-to-back Big West titles",
+      "Stanford national-champion pedigree",
+      "SLO lifestyle & learn-by-doing model"
+    ],
+    "staff": [
+      {
+        "name": "Zach Watson",
+        "role": "Assistant Coach",
+        "email": "zwatso01@calpoly.edu",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Brandon Bautista",
+        "role": "Assistant Coach",
+        "email": "bbauti11@calpoly.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "contact": {
+      "email": "mensoccer@calpoly.edu",
+      "phone": ""
+    },
+    "url": "https://gopoly.com/sports/mens-soccer",
+    "color": [
+      "#dcfce7",
+      "#166534"
+    ],
+    "licence": null
+  },
+  {
     "id": "roche_hofstra",
     "schoolId": "hofstra",
     "name": "Stephen Roche",
@@ -1783,7 +1954,7 @@
     "yearsHC": 1,
     "record": "Tactical lead for 4 straight CAA titles (2021-24); HC since 2026",
     "mlsPlayers": 6,
-    "rank": 39,
+    "rank": 42,
     "rankClass": "rk-strong",
     "overallScore": 72,
     "tacticalScore": 74,
@@ -1823,7 +1994,7 @@
     "school": "Monroe University — Mustangs (New Rochelle)",
     "div": "JUCO",
     "conf": "NJCAA Region 15",
-    "rank": 40,
+    "rank": 43,
     "rankClass": "rk-strong",
     "overallScore": 72,
     "devScore": 74,
@@ -1875,7 +2046,7 @@
     "school": "University of Central Arkansas",
     "div": "D1",
     "conf": "ASUN",
-    "rank": 41,
+    "rank": 44,
     "rankClass": "rk-strong",
     "overallScore": 72,
     "devScore": 72,
@@ -1933,7 +2104,7 @@
     "school": "Florida Atlantic University",
     "div": "D1",
     "conf": "American Athletic Conference (AAC)",
-    "rank": 42,
+    "rank": 45,
     "rankClass": "rk-strong",
     "overallScore": 72,
     "devScore": 72,
@@ -1964,6 +2135,55 @@
     "licence": "USSF B"
   },
   {
+    "id": "jones_wisconsin",
+    "schoolId": "wisconsin",
+    "name": "Neil Jones",
+    "school": "University of Wisconsin-Madison",
+    "div": "D1",
+    "conf": "Big Ten",
+    "yearsHC": 4,
+    "record": "HC at Wisconsin since 2022 (8-win 2025 season). Prior 9 seasons at Loyola Chicago: 82-54-26, two Missouri Valley titles, NCAA Tournament appearances.",
+    "mlsPlayers": 2,
+    "rank": 46,
+    "rankClass": "rk-strong",
+    "overallScore": 71,
+    "tacticalScore": 70,
+    "devScore": 70,
+    "ptPathScore": 50,
+    "ausConnection": false,
+    "bio": "Neil Jones has led Wisconsin since 2022, improving the Badgers to an eight-win 2025 season. An Auckland, New Zealand native and former New Zealand youth international, he spent nine seasons as head coach at Loyola Chicago (82-54-26, two Missouri Valley Conference titles), was part of UC Santa Barbara's 2006 NCAA Championship staff and served as Northwestern's associate head coach during its Big Ten title runs. USSF-licensed with USA national-team scouting experience; Madison offers strong minutes and UW Health clinical access.",
+    "strengths": [
+      "Two MVC titles at Loyola Chicago",
+      "UCSB '06 national-champion pedigree",
+      "Oceania / New Zealand connection",
+      "Madison lifestyle & UW Health access"
+    ],
+    "staff": [
+      {
+        "name": "Nate Boyden",
+        "role": "Assistant Coach",
+        "email": "NBB@athletics.wisc.edu",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Simon Brown",
+        "role": "Assistant Coach",
+        "email": "SJB@athletics.wisc.edu",
+        "bg": "Assistant Coach / Recruiting."
+      }
+    ],
+    "contact": {
+      "email": "wisconsinmsoc@athletics.wisc.edu",
+      "phone": ""
+    },
+    "url": "https://uwbadgers.com/sports/mens-soccer",
+    "color": [
+      "#fef9c3",
+      "#92400e"
+    ],
+    "licence": null
+  },
+  {
     "id": "mcelderry_rutgers",
     "schoolId": "rutgers",
     "name": "Jim McElderry",
@@ -1973,7 +2193,7 @@
     "yearsHC": 15,
     "record": "Multiple Big East titles, 2025 RPI #38",
     "mlsPlayers": 2,
-    "rank": 43,
+    "rank": 47,
     "rankClass": "rk-strong",
     "overallScore": 70,
     "tacticalScore": 68,
@@ -2013,7 +2233,7 @@
     "school": "Cal State LA",
     "div": "D2",
     "conf": "CCAA Conference",
-    "rank": 44,
+    "rank": 48,
     "rankClass": "rk-strong",
     "overallScore": 70,
     "devScore": 70,
@@ -2064,84 +2284,53 @@
     "licence": null
   },
   {
-    "id": "carmichael_cal",
-    "schoolId": "cal",
-    "name": "Colin Carmichael",
-    "school": "University of California, Berkeley",
+    "id": "plotkin_army",
+    "schoolId": "army",
+    "name": "Brian Plotkin",
+    "school": "United States Military Academy",
     "div": "D1",
-    "conf": "ACC",
-    "rank": 45,
+    "conf": "AAC",
+    "yearsHC": 6,
+    "record": "2022 Patriot League Coach of the Year; won program's first Patriot League regular-season title in 26 years (2022). 6th season in 2026.",
+    "mlsPlayers": 0,
+    "rank": 49,
     "rankClass": "rk-strong",
-    "overallScore": 69,
-    "devScore": 70,
-    "tacticalScore": 72,
-    "ptPathScore": 65,
-    "mlsPlayers": 3,
-    "yearsHC": 5,
+    "overallScore": 70,
+    "tacticalScore": 70,
+    "devScore": 68,
+    "ptPathScore": 20,
     "ausConnection": false,
-    "record": "Led Cal through Pac-12 to ACC transition. 2025 ACC Tournament semi-final.",
-    "bio": "Colin Carmichael is leading Cal through one of the most significant structural transitions in the program's history — from a Pac-12 powerhouse to a new ACC competitor. The 2025 ACC Tournament semi-final run (beating Duke and Pitt en route) showed the program's quality. Carmichael has maintained Cal's strong West Coast recruiting pipeline and player development culture while adapting to the increased competitive standard of the ACC.",
+    "bio": "Brian Plotkin, the 2022 Patriot League Coach of the Year, enters his sixth season leading Army West Point, having won the program's first Patriot League regular-season title in 26 years in 2022. A two-time national champion as a player at Indiana (2003, 2004), All-American and MLS Cup winner, he holds a USSF 'A' license and coached previously at Notre Dame and Dartmouth. ⚠ Service academy — a 5-year US Army service commitment post-graduation makes it incompatible with a DPT/Chiro or MLS pathway; listed for completeness.",
     "strengths": [
-      "Bay Area recruiting network",
-      "Pac-12 program tradition",
-      "Berkeley academic prestige",
-      "California lifestyle match",
-      "UCSF clinical access"
-    ],
-    "staff": [],
-    "contact": {
-      "email": "ccarmichael@berkeley.edu",
-      "phone": "510-643-5533"
-    },
-    "url": "https://calbears.com/sports/mens-soccer",
-    "color": [
-      "#fffbeb",
-      "#003262"
-    ],
-    "licence": null
-  },
-  {
-    "id": "sampson_calpoly",
-    "schoolId": "calpoly",
-    "name": "Steve Sampson",
-    "school": "California Polytechnic State University",
-    "div": "D1",
-    "conf": "Big West Conference",
-    "yearsHC": 10,
-    "record": "Back-to-back Big West Reg Season titles 2023-24",
-    "mlsPlayers": 1,
-    "rank": 46,
-    "rankClass": "rk-strong",
-    "overallScore": 68,
-    "tacticalScore": 67,
-    "devScore": 66,
-    "ptPathScore": 55,
-    "ausConnection": false,
-    "bio": "Steve Sampson has built Cal Poly into a perennial Big West top-2 program with back-to-back regular season titles (2023, 2024). SLO is consistently ranked the most liveable college town in California. Learn-by-doing kinesiology model means strong lab and practical experience alongside soccer development.",
-    "strengths": [
-      "Big West titles",
-      "SLO lifestyle",
-      "Learn-by-doing model",
-      "Low cost"
+      "2022 Patriot League Coach of the Year",
+      "USSF 'A' license",
+      "2× national champion as a player (Indiana)",
+      "Notre Dame & Dartmouth coaching pedigree"
     ],
     "staff": [
       {
-        "name": "Assistant Coach",
+        "name": "Jonathan Delano",
+        "role": "Associate Head Coach",
+        "email": "jonathan.delano@westpoint.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Chris Koch",
         "role": "Assistant Coach",
-        "email": "msoccer@calpoly.edu",
+        "email": "christopher.koch@westpoint.edu",
         "bg": "Full-time assistant."
       }
     ],
     "contact": {
-      "email": "ssampson@calpoly.edu",
+      "email": "Brian.Plotkin@westpoint.edu",
       "phone": ""
     },
-    "url": "https://gopoly.com/sports/mens-soccer",
+    "url": "https://goarmywestpoint.com/sports/mens-soccer",
     "color": [
       "#dcfce7",
       "#166534"
     ],
-    "licence": null
+    "licence": "USSF 'A' License"
   },
   {
     "id": "clark_washington",
@@ -2153,7 +2342,7 @@
     "yearsHC": 8,
     "record": "Multiple Pac-12 titles, beat UCLA 2025",
     "mlsPlayers": 2,
-    "rank": 47,
+    "rank": 50,
     "rankClass": "rk-strong",
     "overallScore": 68,
     "tacticalScore": 68,
@@ -2193,7 +2382,7 @@
     "school": "Keiser University",
     "div": "NAIA",
     "conf": "Sun Conference",
-    "rank": 48,
+    "rank": 51,
     "rankClass": "rk-strong",
     "overallScore": 68,
     "devScore": 68,
@@ -2246,7 +2435,7 @@
     "school": "University of Charleston",
     "div": "D2",
     "conf": "MEC",
-    "rank": 49,
+    "rank": 52,
     "rankClass": "rk-strong",
     "overallScore": 68,
     "devScore": 68,
@@ -2303,7 +2492,7 @@
     "school": "Phoenix College",
     "div": "JUCO",
     "conf": "NJCAA DII / ACCAC",
-    "rank": 50,
+    "rank": 53,
     "rankClass": "rk-strong",
     "overallScore": 68,
     "devScore": 73,
@@ -2364,7 +2553,7 @@
     "school": "Santa Monica College",
     "div": "JUCO",
     "conf": "CCCAA / SCFA",
-    "rank": 51,
+    "rank": 54,
     "rankClass": "rk-strong",
     "overallScore": 66,
     "devScore": 65,
@@ -2403,7 +2592,7 @@
     "yearsHC": 1,
     "record": "1st season 2026 — inheriting 2024 NCAA National Champions",
     "mlsPlayers": 2,
-    "rank": 52,
+    "rank": 55,
     "rankClass": "rk-strong",
     "overallScore": 66,
     "tacticalScore": 65,
@@ -2443,7 +2632,7 @@
     "school": "Blinn College",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 14",
-    "rank": 53,
+    "rank": 56,
     "rankClass": "rk-strong",
     "overallScore": 66,
     "devScore": 69,
@@ -2489,7 +2678,7 @@
     "yearsHC": 3,
     "record": "3rd season at NU; 2x Horizon League COY & 75 wins in 9 seasons at Green Bay",
     "mlsPlayers": 2,
-    "rank": 54,
+    "rank": 57,
     "rankClass": "rk-strong",
     "overallScore": 66,
     "tacticalScore": 64,
@@ -2523,49 +2712,6 @@
     "licence": null
   },
   {
-    "id": "lenahan_northwestern",
-    "schoolId": "northwestern",
-    "name": "Tim Lenahan",
-    "school": "Northwestern University",
-    "div": "D1",
-    "conf": "Big Ten",
-    "yearsHC": 18,
-    "record": "Long-tenured Northwestern coach",
-    "mlsPlayers": 1,
-    "rank": 55,
-    "rankClass": "rk-strong",
-    "overallScore": 65,
-    "tacticalScore": 64,
-    "devScore": 62,
-    "ptPathScore": 72,
-    "ausConnection": false,
-    "bio": "Tim Lenahan has managed Northwestern's unique dual mandate of Big Ten athletics and elite academics for nearly two decades. Chicago proximity creates strong pre-professional networking. Northwestern Medicine is one of the best clinical environments in the guide for pre-PT/Chiro pathway.",
-    "strengths": [
-      "Academic-athletic balance",
-      "Chicago access",
-      "Northwestern Medicine",
-      "Long tenure"
-    ],
-    "staff": [
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "nusoccer@northwestern.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "contact": {
-      "email": "tlenahan@northwestern.edu",
-      "phone": ""
-    },
-    "url": "https://nusports.com/sports/mens-soccer",
-    "color": [
-      "#f3e8ff",
-      "#7c3aed"
-    ],
-    "licence": null
-  },
-  {
     "id": "hc_charlotte",
     "schoolId": "charlotte",
     "name": "Kevin Langan",
@@ -2575,7 +2721,7 @@
     "yearsHC": 14,
     "record": "154-64-38 career at Charlotte; 11 NCAA Tournament appearances; Conference USA CoY 2016; 16 pros developed",
     "mlsPlayers": 1,
-    "rank": 56,
+    "rank": 58,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 65,
@@ -2618,7 +2764,7 @@
     "yearsHC": 5,
     "record": "Multiple CAA titles (2022, 2025); building Elon into one of the most competitive mid-major soccer programs in the Southeast",
     "mlsPlayers": 1,
-    "rank": 57,
+    "rank": 59,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2658,7 +2804,7 @@
     "school": "Iowa Western CC",
     "div": "JUCO",
     "conf": "NJCAA Region XI",
-    "rank": 58,
+    "rank": 60,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "devScore": 65,
@@ -2718,7 +2864,7 @@
     "yearsHC": 3,
     "record": "Competitive CAA program; player development focus; building Blue Hens into a consistent conference threat",
     "mlsPlayers": 2,
-    "rank": 59,
+    "rank": 61,
     "rankClass": "rk-strong",
     "overallScore": 65,
     "tacticalScore": 64,
@@ -2752,49 +2898,6 @@
     "licence": null
   },
   {
-    "id": "chadderton_neosho",
-    "schoolId": "neosho_county_cc",
-    "name": "Elliot Chadderton",
-    "school": "Neosho County Community College",
-    "div": "JUCO",
-    "conf": "NJCAA DII / KJCCC",
-    "rank": 60,
-    "rankClass": "rk-strong",
-    "overallScore": 65,
-    "devScore": 68,
-    "tacticalScore": 72,
-    "ptPathScore": 0,
-    "yearsHC": null,
-    "record": "Ranked #4 nationally (NJCAA DII, Oct 2025); 2025 NJCAA DII national tournament at-large bid; Region 6/9 tournament runner-up",
-    "mlsPlayers": 0,
-    "ausConnection": false,
-    "licence": null,
-    "bio": "Elliot Chadderton is Head Men's Soccer Coach at Neosho County Community College, leading a #4-nationally-ranked (NJCAA DII, 2025) and heavily international roster spanning England, Japan, Denmark, Germany, and Colombia. Assistant coach: Sam Hall.",
-    "strengths": [
-      "Ranked #4 nationally (NJCAA DII, 2025) — strongest of the guide's newest JUCO additions",
-      "2025 NJCAA DII national tournament at-large bid",
-      "Confirmed on-campus housing across two residence halls",
-      "Athletic Training academic program on campus"
-    ],
-    "staff": [
-      {
-        "name": "Sam Hall",
-        "role": "Assistant Coach",
-        "email": null,
-        "bg": null
-      }
-    ],
-    "contact": {
-      "email": null,
-      "phone": null
-    },
-    "url": "https://goneosho.com/sports/mens-soccer/coaches",
-    "color": [
-      "#fef9c3",
-      "#854d0e"
-    ]
-  },
-  {
     "id": "bhatt_marquette",
     "schoolId": "marquette",
     "name": "David Korn",
@@ -2804,7 +2907,7 @@
     "yearsHC": 2,
     "record": "8yrs HC at D2 Maryville (98-38-26, 6 consecutive NCAA tournaments, 3 GLVC titles); D1 debut at Marquette 2024",
     "mlsPlayers": 2,
-    "rank": 61,
+    "rank": 62,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "tacticalScore": 63,
@@ -2844,7 +2947,7 @@
     "school": "Georgian Court University",
     "div": "D2",
     "conf": "CACC",
-    "rank": 62,
+    "rank": 63,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 66,
@@ -2889,7 +2992,7 @@
     "yearsHC": 10,
     "record": "Multiple Big West Coach of the Year awards; conference titles; consistent NCAA berths; 2025 Big West Tournament Champions",
     "mlsPlayers": 1,
-    "rank": 63,
+    "rank": 64,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "tacticalScore": 64,
@@ -2932,7 +3035,7 @@
     "yearsHC": 8,
     "record": "LIU-Post (D2) 139-30-15, 4x NCAA East Region champ; Seton Hall HC since Dec 2017",
     "mlsPlayers": 1,
-    "rank": 64,
+    "rank": 65,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "tacticalScore": 63,
@@ -2972,7 +3075,7 @@
     "school": "Arizona Western College",
     "div": "JUCO",
     "conf": "NJCAA DI / ACCAC",
-    "rank": 65,
+    "rank": 66,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 74,
@@ -3033,7 +3136,7 @@
     "school": "Pima Community College",
     "div": "JUCO",
     "conf": "NJCAA DII / ACCAC",
-    "rank": 66,
+    "rank": 67,
     "rankClass": "rk-solid",
     "overallScore": 64,
     "devScore": 69,
@@ -3091,7 +3194,7 @@
     "yearsHC": 4,
     "record": "12yrs HC at D2 Univ of Indianapolis (150-56-29); Xavier HC since March 2022",
     "mlsPlayers": 2,
-    "rank": 67,
+    "rank": 68,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -3134,7 +3237,7 @@
     "yearsHC": 23,
     "record": "166-169-60 (22 seasons); 2 CAA titles (2010, 2017), 4 NCAA appearances",
     "mlsPlayers": 2,
-    "rank": 68,
+    "rank": 69,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 63,
@@ -3177,7 +3280,7 @@
     "yearsHC": 8,
     "record": "Mid-table Big East, NCAA Tournament appearances",
     "mlsPlayers": 1,
-    "rank": 69,
+    "rank": 70,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "tacticalScore": 62,
@@ -3217,7 +3320,7 @@
     "school": "North Carolina State University",
     "div": "D1",
     "conf": "ACC",
-    "rank": 70,
+    "rank": 71,
     "rankClass": "rk-solid",
     "overallScore": 63,
     "devScore": 62,
@@ -3243,49 +3346,6 @@
     "color": [
       "#fff1f2",
       "#990000"
-    ],
-    "licence": null
-  },
-  {
-    "id": "trask_wisconsin",
-    "schoolId": "wisconsin",
-    "name": "John Trask",
-    "school": "University of Wisconsin-Madison",
-    "div": "D1",
-    "conf": "Big Ten",
-    "yearsHC": 6,
-    "record": "6th-place finishes in Big Ten",
-    "mlsPlayers": 2,
-    "rank": 71,
-    "rankClass": "rk-solid",
-    "overallScore": 63,
-    "tacticalScore": 62,
-    "devScore": 60,
-    "ptPathScore": 50,
-    "ausConnection": false,
-    "bio": "John Trask is developing Wisconsin in a competitive Big Ten field. Consistent 6th-place finishes show a stable program with realistic minutes for recruited internationals. Madison is one of the most liveable college cities in the Midwest.",
-    "strengths": [
-      "Stable mid-tier program",
-      "Madison lifestyle",
-      "UW Health access",
-      "Minutes opportunity"
-    ],
-    "staff": [
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "msoccer@wisc.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "contact": {
-      "email": "jtrask@wisc.edu",
-      "phone": ""
-    },
-    "url": "https://uwbadgers.com/sports/mens-soccer",
-    "color": [
-      "#fef9c3",
-      "#92400e"
     ],
     "licence": null
   },
@@ -3719,6 +3779,42 @@
     ]
   },
   {
+    "id": "hall_neosho",
+    "schoolId": "neosho_county_cc",
+    "name": "Sam Hall",
+    "school": "Neosho County Community College",
+    "div": "JUCO",
+    "conf": "NJCAA DII / KJCCC",
+    "rank": 82,
+    "rankClass": "rk-solid",
+    "overallScore": 60,
+    "devScore": 60,
+    "tacticalScore": 60,
+    "ptPathScore": 0,
+    "yearsHC": null,
+    "record": "Head Men's Soccer Coach (confirmed via official staff directory), succeeding Elliot Chadderton. Program ranked #4 nationally (NJCAA DII) in 2025.",
+    "mlsPlayers": 0,
+    "ausConnection": false,
+    "licence": null,
+    "bio": "Sam Hall is Head Men's Soccer Coach at Neosho County Community College — confirmed via the official athletics staff directory (shall@neosho.edu), succeeding Elliot Chadderton. He inherits a program that ranked #4 nationally (NJCAA DII) in 2025 with a heavily international roster spanning England, Japan, Denmark, Germany and Colombia. Detailed coaching tenure and career record are not yet published on the official athletics site.",
+    "strengths": [
+      "Inherits a #4-nationally-ranked NJCAA DII program",
+      "Heavily international roster",
+      "Confirmed on-campus housing (two residence halls)",
+      "Athletic Training academic program on campus"
+    ],
+    "staff": [],
+    "contact": {
+      "email": "shall@neosho.edu",
+      "phone": null
+    },
+    "url": "https://goneosho.com/sports/mens-soccer/coaches",
+    "color": [
+      "#fef9c3",
+      "#854d0e"
+    ]
+  },
+  {
     "id": "vossman_depaul",
     "schoolId": "depaul",
     "name": "Mark Plotkin",
@@ -3728,7 +3824,7 @@
     "yearsHC": 6,
     "record": "Lower Big East, Chicago location",
     "mlsPlayers": 1,
-    "rank": 82,
+    "rank": 83,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "tacticalScore": 59,
@@ -3771,7 +3867,7 @@
     "yearsHC": 5,
     "record": "Penn State Abington Hall of Fame inductee; strong international recruiting pipeline; program culture builder",
     "mlsPlayers": 1,
-    "rank": 83,
+    "rank": 84,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "tacticalScore": 58,
@@ -3811,7 +3907,7 @@
     "school": "Eastern Florida State College",
     "div": "JUCO",
     "conf": "NJCAA DI / FCSAA Region 8",
-    "rank": 84,
+    "rank": 85,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "devScore": 72,
@@ -3872,7 +3968,7 @@
     "school": "Southeastern Community College (Iowa)",
     "div": "JUCO",
     "conf": "NJCAA DII / ICCAC",
-    "rank": 85,
+    "rank": 86,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "devScore": 69,
@@ -3920,7 +4016,7 @@
     "school": "Suffolk County Community College",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 15",
-    "rank": 86,
+    "rank": 87,
     "rankClass": "rk-solid",
     "overallScore": 60,
     "devScore": 67,
@@ -3974,7 +4070,7 @@
     "school": "Glendale Community College (Arizona)",
     "div": "JUCO",
     "conf": "NJCAA DII / ACCAC",
-    "rank": 87,
+    "rank": 88,
     "rankClass": "rk-solid",
     "overallScore": 59,
     "devScore": 65,
@@ -4012,7 +4108,7 @@
     "yearsHC": 1,
     "record": "First season at Butler (2026) — hired Nov 2025",
     "mlsPlayers": 0,
-    "rank": 88,
+    "rank": 89,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 60,
@@ -4055,7 +4151,7 @@
     "yearsHC": 18,
     "record": "Multiple CCAA titles; led UCSD through D2-to-D1 transition; competitive Big West performances post-elevation",
     "mlsPlayers": 2,
-    "rank": 89,
+    "rank": 90,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 58,
@@ -4098,7 +4194,7 @@
     "yearsHC": 12,
     "record": "Multiple NCAA Tournament appearances (2022 at-large, 2023); rebuilt program from mid-major obscurity; first 10+ win seasons in modern era",
     "mlsPlayers": 1,
-    "rank": 90,
+    "rank": 91,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 57,
@@ -4141,7 +4237,7 @@
     "yearsHC": 4,
     "record": "20+ years D1 experience; Associate HC at Louisville (3 NCAA appearances, ACC title); HC at Belmont",
     "mlsPlayers": 1,
-    "rank": 91,
+    "rank": 92,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 58,
@@ -4184,7 +4280,7 @@
     "yearsHC": 4,
     "record": "Rebuilding — 2nd North CAA 2025 (after 0-6-2 in 2024)",
     "mlsPlayers": 1,
-    "rank": 92,
+    "rank": 93,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "tacticalScore": 58,
@@ -4224,7 +4320,7 @@
     "school": "Northeast Community College",
     "div": "JUCO",
     "conf": "NJCAA ICCAC",
-    "rank": 93,
+    "rank": 94,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 60,
@@ -4260,7 +4356,7 @@
     "school": "Barton Community College",
     "div": "JUCO",
     "conf": "NJCAA DI / KJCCC",
-    "rank": 94,
+    "rank": 95,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 69,
@@ -4309,7 +4405,7 @@
     "school": "Mohave Community College",
     "div": "JUCO",
     "conf": "NJCAA DI / ACCAC",
-    "rank": 95,
+    "rank": 96,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 67,
@@ -4344,7 +4440,7 @@
     "school": "Nassau Community College",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 15",
-    "rank": 96,
+    "rank": 97,
     "rankClass": "rk-solid",
     "overallScore": 58,
     "devScore": 66,
@@ -4407,7 +4503,7 @@
     "yearsHC": 2,
     "record": "SoCon Regular Season title + Coach of the Year at ETSU (2023); back-to-back NAIA Tournaments at Milligan",
     "mlsPlayers": 1,
-    "rank": 97,
+    "rank": 98,
     "rankClass": "rk-solid",
     "overallScore": 56,
     "tacticalScore": 56,
@@ -4447,7 +4543,7 @@
     "school": "Angelina College",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 14",
-    "rank": 98,
+    "rank": 99,
     "rankClass": "rk-solid",
     "overallScore": 56,
     "devScore": 64,
@@ -4481,7 +4577,7 @@
     "school": "Columbia College",
     "div": "NAIA",
     "conf": "AMC",
-    "rank": 99,
+    "rank": 100,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 55,
@@ -4523,7 +4619,7 @@
     "school": "Coastal Bend College",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 14",
-    "rank": 100,
+    "rank": 101,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 64,
@@ -4557,7 +4653,7 @@
     "school": "Ulster County Community College",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 15",
-    "rank": 101,
+    "rank": 102,
     "rankClass": "rk-solid",
     "overallScore": 55,
     "devScore": 65,
@@ -4598,7 +4694,7 @@
     "school": "LSU Eunice",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 14",
-    "rank": 102,
+    "rank": 103,
     "rankClass": "rk-solid",
     "overallScore": 54,
     "devScore": 63,
@@ -4645,7 +4741,7 @@
     "school": "Westchester Community College",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 15",
-    "rank": 103,
+    "rank": 104,
     "rankClass": "rk-solid",
     "overallScore": 53,
     "devScore": 64,
@@ -4692,7 +4788,7 @@
     "school": "Chapman University",
     "div": "D3",
     "conf": "SCIAC Conference",
-    "rank": 104,
+    "rank": 105,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 55,
@@ -4731,7 +4827,7 @@
     "yearsHC": 6,
     "record": "Building competitive CAA program at the NJ Shore; strong regional and international recruiting presence",
     "mlsPlayers": 0,
-    "rank": 105,
+    "rank": 106,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "tacticalScore": 52,
@@ -4774,7 +4870,7 @@
     "yearsHC": 11,
     "record": "30+ year D1 veteran; built UC Irvine into Big West power before joining Fullerton; 12 MLS players developed; multiple Big West titles across programs",
     "mlsPlayers": 0,
-    "rank": 106,
+    "rank": 107,
     "rankClass": "rk-solid",
     "overallScore": 50,
     "tacticalScore": 49,
@@ -4817,7 +4913,7 @@
     "yearsHC": 2,
     "record": "Former MLS player (Vancouver 2011); Villanova assoc HC 2019-23; led Drexel 9-2-5 (2023); Villanova HC since Nov 2023",
     "mlsPlayers": 1,
-    "rank": 107,
+    "rank": 108,
     "rankClass": "rk-solid",
     "overallScore": 48,
     "tacticalScore": 47,
@@ -4860,7 +4956,7 @@
     "yearsHC": 8,
     "record": "Building competitive Big West program at UCR; Pac-12/Big West partnership announced 2025",
     "mlsPlayers": 0,
-    "rank": 108,
+    "rank": 109,
     "rankClass": "rk-solid",
     "overallScore": 48,
     "tacticalScore": 47,
@@ -4903,7 +4999,7 @@
     "yearsHC": 1,
     "record": "First season at Navy (2026) — service academy program",
     "mlsPlayers": 0,
-    "rank": 109,
+    "rank": 110,
     "rankClass": "rk-solid",
     "overallScore": 42,
     "tacticalScore": 50,
@@ -4933,49 +5029,6 @@
     "color": [
       "#dbeafe",
       "#1e3a8a"
-    ],
-    "licence": null
-  },
-  {
-    "id": "hc_army",
-    "schoolId": "army",
-    "name": "Head Coach",
-    "school": "United States Military Academy",
-    "div": "D1",
-    "conf": "AAC",
-    "yearsHC": 5,
-    "record": "Lower AAC — service academy program",
-    "mlsPlayers": 0,
-    "rank": 110,
-    "rankClass": "rk-solid",
-    "overallScore": 40,
-    "tacticalScore": 48,
-    "devScore": 43,
-    "ptPathScore": 20,
-    "ausConnection": false,
-    "bio": "⚠ SERVICE ACADEMY: West Point is fully funded D1 soccer with a 5-year US Army service commitment post-graduation. West Point on the Hudson River — stunning setting. Not compatible with DPT/Chiro career pathway or MLS goals. Listed for completeness — not recommended for Olivier.",
-    "strengths": [
-      "Fully funded",
-      "Hudson River setting",
-      "Leadership development",
-      "Military elite conditioning"
-    ],
-    "staff": [
-      {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "soccer@westpoint.edu",
-        "bg": "Full-time assistant."
-      }
-    ],
-    "contact": {
-      "email": "soccer@westpoint.edu",
-      "phone": ""
-    },
-    "url": "https://goarmywestpoint.com/sports/mens-soccer",
-    "color": [
-      "#dcfce7",
-      "#166534"
     ],
     "licence": null
   }

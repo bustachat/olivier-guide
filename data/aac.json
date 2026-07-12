@@ -1249,9 +1249,9 @@
     "coach": {
       "name": "Bryan Green",
       "title": "Head Coach (4th season)",
-      "email": "browland@temple.edu",
-      "phone": "",
-      "profile": "Brian Rowland is developing Temple in the AAC from their Philadelphia campus. Temple University Hospital and Jefferson Health (Philadelphia's largest healthcare systems) provide strong pre-PT clinical access. Philadelphia Union (MLS) proximity and the city's rich sports culture are key professional networking assets."
+      "email": "",
+      "profile": "Bryan Green is developing Temple in the AAC from their Philadelphia campus, in his fourth season since being hired in December 2022. Before Temple he was associate head coach at Louisville (three NCAA Tournament appearances, 2021 ACC Atlantic title) and head coach at Belmont, with earlier stops at Drexel and West Virginia (2006 Big East Coaching Staff of the Year); he holds a USSF 'B' license. Temple University Hospital and Jefferson Health provide strong pre-PT clinical access, and Philadelphia Union (MLS) proximity is a key professional networking asset.",
+      "phone": ""
     },
     "tags": [
       "city",
@@ -1293,15 +1293,27 @@
     ],
     "staff": [
       {
-        "name": "Brian Rowland",
+        "name": "Bryan Green",
         "role": "Head Coach",
-        "email": "browland@temple.edu",
-        "bg": "Head Coach. Developing Temple in AAC. Philadelphia Union proximity is key professional networking asset."
+        "email": "",
+        "bg": "Head Coach. Former Louisville associate HC; USSF 'B' license."
       },
       {
-        "name": "Assistant Coach",
+        "name": "John Velasco",
         "role": "Assistant Coach",
-        "email": "msoccer@temple.edu",
+        "email": "john.velasco@temple.edu",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Rich Kessler",
+        "role": "Assistant Coach",
+        "email": "richard.kessler@temple.edu",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "John Zuidema",
+        "role": "Assistant Coach",
+        "email": "john.zuidema@temple.edu",
         "bg": "Full-time assistant."
       }
     ],
@@ -2031,11 +2043,11 @@
     },
     "devScoresNote": "v42.24 §5a re-baseline (training environment only). Live goarmywestpoint.com MSOC staff: HC Brian Plotkin + Assoc HC Delano + Asst Koch (3 coaches), support lists an AT; no soccer-listed S&C (academy conditioning is shared/elite). Stored Tier-1 facilityDetails: dedicated Holleder facility, elite academy physical conditioning, no GPS/sports-science tech. A notch below Navy on coaching pedigree and soccer-listed S&C. NB: stored coach.name is placeholder 'Head Coach' — live HC is Brian Plotkin; separate Change Type 2 fix pending.",
     "coach": {
-      "name": "Head Coach",
+      "name": "Brian Plotkin",
       "title": "Head Coach",
-      "email": "soccer@westpoint.edu",
+      "email": "Brian.Plotkin@westpoint.edu",
       "phone": "",
-      "profile": "⚠ SERVICE ACADEMY: West Point soccer is a fully funded D1 program with a 5-year US Army service commitment post-graduation. International recruits require citizenship waiver. Not compatible with DPT/Chiro career pathway or MLS goals. Listed for completeness — not a recommended pathway for Olivier."
+      "profile": "Brian Plotkin, the 2022 Patriot League Coach of the Year, enters his sixth season leading Army West Point, having won the program's first Patriot League regular-season title in 26 years in 2022. A two-time national champion as a player at Indiana (2003, 2004), All-American and MLS Cup winner, he holds a USSF 'A' license and coached previously at Notre Dame and Dartmouth. ⚠ SERVICE ACADEMY: West Point soccer is a fully funded D1 program with a 5-year US Army service commitment post-graduation; international recruits require a citizenship waiver. Not compatible with a DPT/Chiro career pathway or MLS goals — listed for completeness only."
     },
     "tags": [
       "soccer"
@@ -2076,10 +2088,22 @@
     ],
     "staff": [
       {
-        "name": "Head Coach",
+        "name": "Brian Plotkin",
         "role": "Head Coach",
-        "email": "soccer@westpoint.edu",
-        "bg": "West Point head coach. Service academy — 5-year Army commitment post-graduation required."
+        "email": "Brian.Plotkin@westpoint.edu",
+        "bg": "Head Coach. 2022 Patriot League Coach of the Year. Service academy — 5-year Army commitment post-graduation required."
+      },
+      {
+        "name": "Jonathan Delano",
+        "role": "Associate Head Coach",
+        "email": "jonathan.delano@westpoint.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Chris Koch",
+        "role": "Assistant Coach",
+        "email": "christopher.koch@westpoint.edu",
+        "bg": "Full-time assistant."
       }
     ],
     "rec": "⚠ Service academy — requires 5-year US Army commitment post-graduation. Not compatible with DPT/Chiro or MLS goals. Listed for completeness only.",

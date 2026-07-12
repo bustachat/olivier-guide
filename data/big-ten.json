@@ -211,10 +211,10 @@
         "bg": "Full-time assistant. Recruiting and player development."
       },
       {
-        "name": "Erik Holt",
+        "name": "Kary Whitney",
         "role": "Assistant Coach",
         "email": "msoccer@athletics.ucla.edu",
-        "bg": "Hired Jan 2026. UCLA alum and former team captain. 6-yr MLS career with Real Salt Lake. Previously assistant at LMU 2025."
+        "bg": "Full-time assistant coach."
       },
       {
         "name": "Graeme Jorden",
@@ -679,11 +679,11 @@
     },
     "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live gopsusports.com MSOC staff: HC Rob Dow + Brad Cole (Assoc HC) + Oscar Umar (Asst) + Owen Jack (Asst) = 4 full-time coaches, plus Adam Gahm (Athletic Performance Coach) and Brandon Hall (Athletic Trainer) listed on the MSOC page — dedicated performance and medical support. Stored Tier-1 facilities: Jeffrey Field Soccer Complex 5,000 dedicated, undergoing a $21.25M renovation (new locker rooms, S&C, hydrotherapy) completing Oct 2025. A well-invested environment — dedicated (renovated) stadium + dedicated performance coach + dedicated ATC — sits above the Creighton ~75 reference. Raised to 78/79/80. (HC change Bob Warming -> Rob Dow is a separate Change Type 2.)",
     "coach": {
-      "name": "Bob Warming",
+      "name": "Rob Dow",
       "title": "Head Coach",
-      "email": "bwarming@psu.edu",
+      "email": "",
       "phone": "",
-      "profile": "One of the most decorated coaches in Big Ten history. Led Penn State to 2013 NCAA Final. Multiple Big Ten titles. Deep recruiting network in Pennsylvania and Mid-Atlantic."
+      "profile": "Rob Dow was named Penn State's head coach in December 2025 after nine seasons at Vermont, where he went 129-41-21, reached five straight NCAA Tournaments and won the 2024 NCAA National Championship. He owns the nation's ninth-best win percentage among active coaches with 5+ seasons and was back-to-back America East Coaching Staff of the Year (2024, 2025). Dow inherits Penn State's 2013 NCAA finalist program and its newly renovated $21.25M Jeffrey Field complex."
     },
     "tags": [
       "acad",
@@ -725,15 +725,27 @@
     ],
     "staff": [
       {
-        "name": "Bob Warming",
+        "name": "Rob Dow",
         "role": "Head Coach",
-        "email": "bwarming@psu.edu",
-        "bg": "Head Coach. One of the most experienced Big Ten coaches."
+        "email": "",
+        "bg": "Head Coach. Won the 2024 NCAA National Championship at Vermont."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Brad Cole",
+        "role": "Associate Head Coach",
+        "email": "",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Oscar Umar",
         "role": "Assistant Coach",
-        "email": "msoccer@psu.edu",
+        "email": "",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Owen Jack",
+        "role": "Assistant Coach",
+        "email": "",
         "bg": "Full-time assistant."
       }
     ],
@@ -1748,11 +1760,11 @@
     },
     "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live nusports.com MSOC staff: HC Russell Payne + JR DeRose (Asst/Dir Player Development) + Flo Liu (Asst) + Joe Moulden (Asst) = 4 full-time coaches, plus Jordan Betterman (Director of Analytics) and Tyler Sylvester (Assoc Athletic Trainer). Stored Tier-1 facilities: Martin Stadium 2,500 dedicated natural grass; standard Big Ten S&C; Kinesiology labs. The old 65 was conference/results banding — the actual environment (4 coaches + an analytics director + a dedicated stadium + Big Ten S&C) is materially stronger, comparable to the committed Charlotte +9 correction. Corrected up to 73/72/72. (HC change Tim Lenahan -> Russell Payne is a separate Change Type 2.)",
     "coach": {
-      "name": "Tim Lenahan",
+      "name": "Russell Payne",
       "title": "Head Coach",
-      "email": "tlenahan@northwestern.edu",
+      "email": "msoccer@northwestern.edu",
       "phone": "",
-      "profile": "Long-tenured Northwestern coach. Manages recruitment at the intersection of elite academics and Big Ten athleticism. Chicago proximity creates strong pre-professional networking for players."
+      "profile": "Russell Payne has led Northwestern since 2021, posting back-to-back winning seasons in 2023-24 and climbing as high as No. 9 in the national rankings. A former USMNT goalkeepers coach (2015-17) and U-23 assistant at the 2024 Paris Olympics, he spent 11 seasons as head coach at Army West Point and was an assistant on Maryland's national-championship staffs. Payne is a top-25 national recruiter (No. 5 class in 2022) with deep professional and international coaching pedigree; Chicago proximity adds strong pre-professional networking for players."
     },
     "tags": [
       "city",
@@ -1795,15 +1807,27 @@
     ],
     "staff": [
       {
-        "name": "Tim Lenahan",
+        "name": "Russell Payne",
         "role": "Head Coach",
-        "email": "tlenahan@northwestern.edu",
-        "bg": "Head Coach. Long-tenured NU coach managing elite academic + Big Ten athletic dual mandate."
+        "email": "msoccer@northwestern.edu",
+        "bg": "Head Coach. Former USMNT goalkeepers coach; 11 seasons head coach at Army."
       },
       {
-        "name": "Assistant Coach",
+        "name": "JR DeRose",
         "role": "Assistant Coach",
-        "email": "nusoccer@northwestern.edu",
+        "email": "",
+        "bg": "Assistant Coach / Director of Player Development."
+      },
+      {
+        "name": "Flo Liu",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Joe Moulden",
+        "role": "Assistant Coach",
+        "email": "",
         "bg": "Full-time assistant."
       }
     ],
@@ -2014,11 +2038,11 @@
     },
     "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live uwbadgers.com MSOC staff: HC Neil Jones + Nate Boyden (Asst) + Simon Brown (Asst/Recruiting) + Tyler Smith (Asst) = 4 full-time coaches, plus George Ikemizu (Assistant S&C, shared M-Soccer/Track) and Chris Peroutka (Athletic Trainer, Men's Soccer). Stored Tier-1 facilities: McClimon Soccer Complex 3,000 dedicated artificial turf; McClain Center shared flagship S&C; Kinesiology labs. Old 66 was conference/results banding; the actual environment (4 coaches + dedicated turf stadium + Big Ten S&C + dedicated ATC) sits near the Creighton reference. Corrected up to 72/70/72. (HC change John Trask -> Neil Jones is a separate Change Type 2.)",
     "coach": {
-      "name": "John Trask",
+      "name": "Neil Jones",
       "title": "Head Coach",
-      "email": "jtrask@wisc.edu",
+      "email": "wisconsinmsoc@athletics.wisc.edu",
       "phone": "",
-      "profile": "Developing Wisconsin program in a competitive Big Ten field. Consistent 6th-place finishes in the Big Ten show a stable mid-tier program with realistic minutes for recruited internationals."
+      "profile": "Neil Jones has led Wisconsin since 2022, improving the Badgers to an eight-win 2025 season. An Auckland, New Zealand native and former New Zealand youth international, he spent nine seasons as head coach at Loyola Chicago (82-54-26, two Missouri Valley titles, NCAA Tournament appearances) and was part of UC Santa Barbara's 2006 NCAA Championship staff and Northwestern's Big Ten title runs as associate head coach. USSF-licensed with USA national-team scouting experience."
     },
     "tags": [
       "soccer"
@@ -2059,16 +2083,22 @@
     ],
     "staff": [
       {
-        "name": "John Trask",
+        "name": "Neil Jones",
         "role": "Head Coach",
-        "email": "jtrask@wisc.edu",
-        "bg": "Head Coach. Developing Wisconsin in competitive Big Ten environment."
+        "email": "wisconsinmsoc@athletics.wisc.edu",
+        "bg": "Head Coach. Prior nine seasons head coach at Loyola Chicago."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Nate Boyden",
         "role": "Assistant Coach",
-        "email": "msoccer@wisc.edu",
+        "email": "NBB@athletics.wisc.edu",
         "bg": "Full-time assistant."
+      },
+      {
+        "name": "Simon Brown",
+        "role": "Assistant Coach",
+        "email": "SJB@athletics.wisc.edu",
+        "bg": "Assistant Coach / Recruiting."
       }
     ],
     "rec": "Lower-cost Big Ten option. Best for minutes opportunity among mid-tier programs. Cold Wisconsin winters are a significant drawback.",

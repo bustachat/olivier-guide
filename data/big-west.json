@@ -392,11 +392,11 @@
     },
     "devScoresNote": "v42.23 §5a re-baseline (environment only). Live gopoly.com MSOC staff: 3 coaches (HC + 2 assts) + Asst Sports Medicine Director assigned to soccer (shared w/ wrestling); no GK coach, no dedicated S&C. Stored Tier-1: shared 11,075-seat FieldTurf football stadium, shared S&C, no documented GPS/video. Modest-solid D1 environment. NOTE (Change Type 2, NOT fixed here - needs coaches.json sync + re-rank): stored HC 'Steve Sampson' is STALE; live official directory lists HC 'Oige Kennedy'.",
     "coach": {
-      "name": "Steve Sampson",
+      "name": "Oige Kennedy",
       "title": "Head Coach",
-      "email": "ssampson@calpoly.edu",
+      "email": "mensoccer@calpoly.edu",
       "phone": "",
-      "profile": "Steve Sampson has built Cal Poly into a perennial Big West top-2 program with back-to-back regular season titles (2023, 2024). San Luis Obispo is consistently ranked the most liveable college town in California. Learn-by-doing kinesiology model means strong lab and practical experience alongside soccer development."
+      "profile": "Oige Kennedy, the 2024 Big West Coach of the Year, has led Cal Poly since 2022 and directed the Mustangs to back-to-back Big West regular-season titles in 2024 (the program's first) and 2025. A former Stanford assistant on Jeremy Gunn's staff during the Cardinal's national-championship era, he developed multiple MLS draft picks there. San Luis Obispo is consistently ranked the most liveable college town in California, and the learn-by-doing kinesiology model pairs strong lab and practical experience with soccer development."
     },
     "tags": [
       "warm",
@@ -438,15 +438,21 @@
     ],
     "staff": [
       {
-        "name": "Steve Sampson",
+        "name": "Oige Kennedy",
         "role": "Head Coach",
-        "email": "ssampson@calpoly.edu",
-        "bg": "Head Coach. Back-to-back Big West regular season titles 2023-24. SLO campus is one of California's best athletic environments."
+        "email": "mensoccer@calpoly.edu",
+        "bg": "Head Coach. 2024 Big West Coach of the Year; back-to-back Big West titles 2024-25."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Zach Watson",
         "role": "Assistant Coach",
-        "email": "msoccer@calpoly.edu",
+        "email": "zwatso01@calpoly.edu",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Brandon Bautista",
+        "role": "Assistant Coach",
+        "email": "bbauti11@calpoly.edu",
         "bg": "Full-time assistant."
       }
     ],

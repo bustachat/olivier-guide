@@ -114,11 +114,12 @@
       "profile": "35th season at St Johns 2025. 39th season as HC overall. 468-213-118 (.660) career record. 415-192-112 at SJU. 1996 NCAA National Champion. 4 College Cups. 23 NCAA Tournaments including 15 consecutive 1992-2006. 9 Big East Tournament titles. 2x National CoY (1996, 2001). 3x Big East CoY. Doctor of Education from St Johns. 2025: returned to NCAA Tournament for first time since 2021, 9-6-4 record. 2nd-winningest active D1 HC."
     },
     "devScores": {
-      "tactical": 80,
-      "technical": 82,
-      "fitness": 78
+      "tactical": 76,
+      "technical": 74,
+      "fitness": 75
     },
-    "fitOlivier": 44,
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live redstormsports.com MSOC staff: HC Dr. David Masur (also Associate AD, 30+ yr tenure) + David Janezic (Assoc HC) + Seth Roland (Asst) + Richard Ongaro (Asst) = 4 full-time coaches. Stored Tier-1 facilities: Belson Stadium 2,168 dedicated FieldTurf; a dedicated performance coach for soccer. The old 82 technical was incoherent versus the Creighton anchor's technical 73 for a far larger stadium (Morrison 7,500) — St. John's smaller 2,168 venue must not exceed it. Masur's exceptional tenure keeps the program level with Creighton overall; trimmed from 80/82/78 to 76/74/75 (tied with the ~75 Creighton anchor, technical fixed down).",
+    "fitOlivier": 43,
     "tags": [
       "city",
       "soccer"
@@ -137,12 +138,12 @@
     "rec": "NYC = Hospital for Special Surgery, NYU Langone, NY Presbyterian — best clinical DPT access in the country. Big East soccer is tough. Cool climate. City lifestyle partially compensates.",
     "url": "https://redstormsports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 44,
+      "overall": 43,
       "soccer": 65,
       "academic": 68,
       "minutes": 15,
       "lifestyle": 50,
-      "value": 26
+      "value": 25
     },
     "minutesOutlook": {
       "available": true,
@@ -373,6 +374,7 @@
       "technical": 73,
       "fitness": 76
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). ANCHOR — held. Live gocreighton.com MSOC staff: HC Johnny Torres + Mitch Kavanagh + Nico Luque + Michael Gabb (3 Asst) = 4 full-time coaches, plus Scott Bankers (Assistant Coach, Athletic Performance — dedicated) and James Benzel (Assistant ATC, MSOC) on the MSOC page. Stored Tier-1 facilities: Morrison Stadium 7,500 (substantial, FieldTurf); standard D1 S&C; no GPS/dedicated sport scientist. This confirms the §5a ~75 reference: 4 coaches + a dedicated performance coach + a dedicated ATC + a big stadium, but no sports-science layer. Held at 75/73/76.",
     "coach": {
       "name": "Johnny Torres",
       "title": "Head Coach",
@@ -647,10 +649,11 @@
       "draftRank": "Limited pipeline"
     },
     "devScores": {
-      "tactical": 67,
-      "technical": 65,
-      "fitness": 70
+      "tactical": 68,
+      "technical": 66,
+      "fitness": 69
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live friars.com MSOC staff: HC Craig Stewart + John Mark Andrade (Assoc HC) + Dave DeMello (Asst) + Dominik Machado (Asst) + Kevin Bacher (Director of Soccer & Program Development) = 4 full-time coaches plus a development director. Stored Tier-1 facilities: Glay Field 1,500 modest natural grass; standard small-school D1 S&C. Providence's 2015 national title is a result and excluded. Decent coaching depth but a modest facility places it in the lower-middle between the DePaul (60) and Creighton (75) anchors. Held near current at 68/66/69.",
     "coach": {
       "name": "Craig Stewart",
       "title": "Head Coach",
@@ -875,14 +878,14 @@
     },
     "mapX": 532,
     "mapY": 156,
-    "fitOlivier": 49,
+    "fitOlivier": 48,
     "lensScores": {
-      "overall": 49,
+      "overall": 48,
       "soccer": 62,
       "academic": 55,
       "minutes": 43,
       "lifestyle": 50,
-      "value": 29
+      "value": 28
     },
     "confRecord": [
       {
@@ -924,9 +927,10 @@
     },
     "devScores": {
       "tactical": 63,
-      "technical": 61,
-      "fitness": 67
+      "technical": 62,
+      "fitness": 65
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live shupirates.com MSOC staff: HC Andreas Lindberg + Jeff Matteo (Assoc HC) + Nico Andersen (Asst) + Søren Jensen (Volunteer Goalkeepers Coach) = 3 full-time coaches plus a volunteer; no dedicated S&C/ATC listed on the MSOC page. Stored Tier-1 facilities: Owen T. Carroll Field 1,500 dedicated artificial turf; standard suite. A modest program — 3 full-time coaches and standard facilities — sitting just above the DePaul (60) modest-investment anchor. Held at 63/62/65.",
     "coach": {
       "name": "Andreas Lindberg",
       "title": "Head Coach",
@@ -1196,10 +1200,11 @@
       "draftRank": "Developing pipeline"
     },
     "devScores": {
-      "tactical": 65,
-      "technical": 64,
-      "fitness": 68
+      "tactical": 68,
+      "technical": 67,
+      "fitness": 69
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live butlersports.com MSOC staff: HC Ian Sarachan + Perry Kitchen (Asst, ex-MLS/USMNT) + Guillermo Laguna (Asst) + Alexis Diaz (Asst/Goalkeepers) = 4 full-time coaches including a goalkeeper coach, plus Bryce Small (Strength & Conditioning) and Olivia Hall (Athletic Trainer). Stored Tier-1 facilities: Butler Bowl 5,000 natural grass (shared football, a genuinely good venue). Four coaches incl GK + dedicated S&C + ATC + a decent-sized stadium had been slightly under-scored. Raised to 68/67/69.",
     "coach": {
       "name": "Ian Sarachan",
       "title": "Head Coach",
@@ -1471,10 +1476,11 @@
       "draftRank": "Limited pipeline"
     },
     "devScores": {
-      "tactical": 63,
-      "technical": 61,
-      "fitness": 65
+      "tactical": 64,
+      "technical": 62,
+      "fitness": 64
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live goxavier.com MSOC staff: HC John Higgins + Shaun Mahoney (Assoc HC) + Alex Kamphaus (Asst) + Jovin Grewal (Asst) = 4 full-time coaches, plus Spencer Furlich (Athletic Trainer) and Brandon Ray (Assistant S&C). Stored Tier-1 facilities: Corcoran Field 1,000 (the smallest Big East soccer venue) natural grass; standard small suite. Decent staff depth (4 coaches + ATC + S&C) offset by the smallest stadium. Held near current at 64/62/64.",
     "coach": {
       "name": "John Higgins",
       "title": "Head Coach",
@@ -1749,9 +1755,10 @@
     },
     "devScores": {
       "tactical": 73,
-      "technical": 71,
+      "technical": 72,
       "fitness": 75
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live uconnhuskies.com MSOC staff: HC Chris Gbandi + Stefan Defregger (Assoc HC) + Kamali Webson (Asst) + Robbie Montanaro (Asst) = 4 full-time coaches, plus a Director of Operations, James Petrella (Director of Soccer Quality Control = analytics), Chris West (Assoc Head Strength & Conditioning) and an Associate Head ATC. Stored Tier-1 facilities: Joseph Morrone Stadium at the Rizza Performance Center 3,000 dedicated, with a dedicated strength coach. A deep environment (4 coaches + quality-control/analytics + a dedicated performance center) but a smaller stadium than Creighton — sits just below the anchor. Held at 73/72/75.",
     "coach": {
       "name": "Chris Gbandi",
       "title": "Head Coach",
@@ -2025,6 +2032,7 @@
       "technical": 58,
       "fitness": 63
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). ANCHOR — held. Live depaulbluedemons.com MSOC staff: HC Mark Plotkin + Scott Bratt (Assoc HC) + Martin Alba (Asst) + a volunteer instructional assistant + a student assistant = 3 full-time coaches, plus Rachel Wilhelm (Athletic Trainer) and Nathan Johnson (Asst Director of Sports Performance). Stored Tier-1 facilities: Wish Field modest dedicated field; Ray Meyer Fitness Center standard suite. This confirms the §5a modest-investment anchor: only 3 full-time coaches, volunteer/student assistants, standard facilities. Held at 60/58/63.",
     "coach": {
       "name": "Mark Plotkin",
       "title": "Head Coach",
@@ -2246,14 +2254,14 @@
     },
     "mapX": 522,
     "mapY": 160,
-    "fitOlivier": 45,
+    "fitOlivier": 46,
     "lensScores": {
-      "overall": 45,
+      "overall": 46,
       "soccer": 62,
       "academic": 65,
       "minutes": 36,
       "lifestyle": 50,
-      "value": 27
+      "value": 28
     },
     "confRecord": [
       {
@@ -2294,10 +2302,11 @@
       "draftRank": "Limited pipeline"
     },
     "devScores": {
-      "tactical": 60,
-      "technical": 59,
+      "tactical": 62,
+      "technical": 61,
       "fitness": 64
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live villanova.com MSOC staff: HC Mark Fetrow + Alex Balog (Assoc HC) + Josh West (Asst) + Antoine Hoppenot (Asst, ex-MLS) + Brian McDaid (Dir of Operations) = 4 full-time coaches, plus Matthew Mitchell (Athletic Trainer) and Nick Triano (Sports Performance Coach). Stored Tier-1 facilities: Villanova Soccer Complex 1,500 dedicated natural grass; standard suite. One more full-time coach than DePaul plus a sports-performance coach places it slightly above the DePaul (60) anchor. Raised to 62/61/64.",
     "coach": {
       "name": "Mark Fetrow",
       "title": "Head Coach",
@@ -2571,9 +2580,10 @@
     },
     "devScores": {
       "tactical": 70,
-      "technical": 68,
-      "fitness": 73
+      "technical": 69,
+      "fitness": 72
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live gomarquette.com MSOC staff: HC David Korn (2nd yr) + Jordan Grant (Assoc HC) + Sean Clancy (Asst) + Zach Neiberger (Asst) = 4 full-time coaches, plus Emily Jacobson (Asst Director of Sports Performance, shared across WVB/WSOC/MSOC) and a shared ATC. Stored Tier-1 facilities: Valley Fields 1,750 natural grass + an adjacent FieldTurf practice field; Athletics S&C renovated 2022. A solid mid-band environment — 4 coaches, a small dedicated stadium, shared performance staff — between the DePaul (60) and Creighton (75) anchors. Held at 70/69/72.",
     "coach": {
       "name": "David Korn",
       "title": "Head Coach",
@@ -2874,6 +2884,7 @@
       "technical": 94,
       "fitness": 88
     },
+    "devScoresNote": "v42.28 §5a re-baseline (training environment only). ANCHOR — held. Live guhoyas.com MSOC staff: HC Brian Wiese (2019 national champion) + Connor Klekota (Asst) + Mike Montross (Asst) + Brian Bouhl (Asst/Dir of Operations) = 4 full-time coaches, plus Sean Foster (Associate AD for Sports Performance). Stored Tier-1 facilities: Shaw Field 1,625 (small) BUT a well-resourced S&C with GPS tracking (Catapult) and video analysis (Hudl). The sports-science layer (GPS + video + a sports-performance AD) and title-program coaching justify anchor status despite the small stadium. Held at 92/94/88.",
     "fitOlivier": 55,
     "tags": [
       "city",

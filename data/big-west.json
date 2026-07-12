@@ -114,11 +114,12 @@
       "profile": "27th season at UCSB 2025. Career record 324-152-76. 2006 NCAA National Champion. National CoY 2004 and 2006. 4x Big West CoY. 14 Big West Championships (12 reg season + 2 tourn). 32 MLS draftees including Manu Duah #1 overall 2025. UCSB alum BA History 1989, MA 2000. His four sons all played for UCSB. 2025 Big West Regular Season Champions."
     },
     "devScores": {
-      "tactical": 82,
-      "technical": 85,
-      "fitness": 80
+      "tactical": 80,
+      "technical": 82,
+      "fitness": 72
     },
-    "fitOlivier": 64,
+    "devScoresNote": "v42.23 §5a re-baseline (training environment only). Live ucsbgauchos.com MSOC staff: 4 coaches (HC Vom Steeg + Assoc HC Wilson + position-specific Goalkeeping Coach Fernandez + asst) + Dir of Ops; no dedicated soccer S&C listed. Stored Tier-1 facilityDetails: 17,000-seat soccer-specific Harder Stadium (College Cup host 2010/2018, shares w/ USL club) + 2-3 practice fields, Statsports GPS + Hudl video, dedicated AT, shared UC S&C. Strongest Big West environment; 2006 title / #1 pick are results, excluded.",
+    "fitOlivier": 63,
     "tags": [
       "warm",
       "city",
@@ -138,12 +139,12 @@
     "rec": "Mediterranean climate identical to Sydney. Manu Duah #1 pick proves D1 pro calibre. Strong kinesiology. Beach campus lifestyle match.",
     "url": "https://ucsbgauchos.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 64,
+      "overall": 63,
       "soccer": 69,
       "academic": 73,
       "minutes": 34,
       "lifestyle": 95,
-      "value": 38
+      "value": 37
     },
     "minutesOutlook": {
       "available": true,
@@ -337,14 +338,14 @@
     },
     "mapX": 81,
     "mapY": 198,
-    "fitOlivier": 52,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 52,
+      "overall": 51,
       "soccer": 65,
       "academic": 65,
       "minutes": 42,
       "lifestyle": 85,
-      "value": 46
+      "value": 45
     },
     "confRecord": [
       {
@@ -385,10 +386,11 @@
       "draftRank": "Developing pipeline"
     },
     "devScores": {
-      "tactical": 65,
-      "technical": 65,
-      "fitness": 68
+      "tactical": 62,
+      "technical": 60,
+      "fitness": 64
     },
+    "devScoresNote": "v42.23 §5a re-baseline (environment only). Live gopoly.com MSOC staff: 3 coaches (HC + 2 assts) + Asst Sports Medicine Director assigned to soccer (shared w/ wrestling); no GK coach, no dedicated S&C. Stored Tier-1: shared 11,075-seat FieldTurf football stadium, shared S&C, no documented GPS/video. Modest-solid D1 environment. NOTE (Change Type 2, NOT fixed here - needs coaches.json sync + re-rank): stored HC 'Steve Sampson' is STALE; live official directory lists HC 'Oige Kennedy'.",
     "coach": {
       "name": "Steve Sampson",
       "title": "Head Coach",
@@ -659,10 +661,11 @@
       "draftRank": "Developing pipeline"
     },
     "devScores": {
-      "tactical": 62,
+      "tactical": 60,
       "technical": 60,
-      "fitness": 65
+      "fitness": 64
     },
+    "devScoresNote": "v42.23 §5a re-baseline (environment only). Live ucdavisaggies.com MSOC staff: 3 coaches (HC Shaffer + Assoc HC Hotaling + asst) + dedicated MSOC Asst Athletic Trainer (Bermudez); no GK coach, no dedicated soccer S&C listed. Stored Tier-1: 1,500-seat dedicated natural-grass stadium, shared UC S&C, no documented GPS/video.",
     "coach": {
       "name": "Dwayne Shaffer",
       "title": "Head Coach (29th season)",
@@ -937,10 +940,11 @@
       "draftRank": "OC/LA market access"
     },
     "devScores": {
-      "tactical": 65,
-      "technical": 63,
-      "fitness": 67
+      "tactical": 62,
+      "technical": 62,
+      "fitness": 68
     },
+    "devScoresNote": "v42.23 §5a re-baseline (environment only). Live ucirvinesports.com MSOC staff: 3 coaches (HC Raz + Assoc HC Rodriguez + asst) + team-assigned Strength & Conditioning Coach (Williams) AND Certified Athletic Trainer (Capili) both listed; no GK coach. Best sports-science staffing in the group after UCSB. Stored Tier-1: 1,500-seat dedicated grass Peter Aldrich Field, no documented GPS/video.",
     "coach": {
       "name": "Yossi Raz",
       "title": "Head Coach (10th+ season)",
@@ -1210,10 +1214,11 @@
       "draftRank": "Developing pipeline"
     },
     "devScores": {
-      "tactical": 52,
-      "technical": 50,
-      "fitness": 55
+      "tactical": 56,
+      "technical": 52,
+      "fitness": 50
     },
+    "devScoresNote": "v42.23 §5a re-baseline (environment only). Live gohighlanders.com MSOC staff: 4 coaches (HC Cupello + 3 assts) but ZERO support staff listed - no AT, no S&C, no GK coach assigned to soccer. Stored Tier-1: dedicated on-campus natural-grass stadium, shared UC S&C suite only, no documented GPS/video. Lowest support environment in the group.",
     "coach": {
       "name": "Tim Cupello",
       "title": "Head Coach",
@@ -1482,10 +1487,11 @@
       "draftRank": "Growing pipeline — program elevating quickly"
     },
     "devScores": {
-      "tactical": 60,
-      "technical": 62,
-      "fitness": 63
+      "tactical": 62,
+      "technical": 64,
+      "fitness": 62
     },
+    "devScoresNote": "v42.23 §5a re-baseline (environment only). Live ucsdtritons.com MSOC staff: 4 coaches (HC Pascale + Assoc HC Hernandez + 2 assts) + Data Analytics staffer (video/data investment); no GK coach, no AT/S&C listed on page. Stored Tier-1: renovated RIMAC S&C (12k sqft, shared), small (750/1,750) stadium with top West Coast playing surface. Newer D1 program still elevating.",
     "coach": {
       "name": "Jon Pascale",
       "title": "Head Coach (18th+ season)",
@@ -1710,14 +1716,14 @@
     },
     "mapX": 102,
     "mapY": 211,
-    "fitOlivier": 51,
+    "fitOlivier": 53,
     "lensScores": {
-      "overall": 51,
+      "overall": 53,
       "soccer": 55,
       "academic": 50,
       "minutes": 42,
       "lifestyle": 74,
-      "value": 49
+      "value": 50
     },
     "confRecord": [
       {
@@ -1758,10 +1764,11 @@
       "draftRank": "Limited pipeline"
     },
     "devScores": {
-      "tactical": 50,
-      "technical": 48,
-      "fitness": 53
+      "tactical": 60,
+      "technical": 54,
+      "fitness": 56
     },
+    "devScoresNote": "v42.23 §5a re-baseline (environment only). Live fullertontitans.com MSOC staff: 4 coaches (HC Kuntz 11th yr + 2 assts + position-specific Goalkeepers Coach Puglia) + Dir of Ops + team-assigned Asst Athletic Trainer (Hoang, shared w/ water polo); more coaching depth (incl GK specialist) than most UCs here. Stored Tier-1: on-campus natural-grass Titan Stadium, shared CSU S&C, no documented GPS/video. Prior 50 was depressed by weak pipeline/results (excluded from dev per §5a); re-scored on environment alone.",
     "coach": {
       "name": "George Kuntz",
       "title": "Head Coach (11th+ season)",

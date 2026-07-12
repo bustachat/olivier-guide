@@ -114,10 +114,11 @@
       "profile": "Head Men's Soccer Coach at UCA. Staff includes assistants Joe LaCasto and Will Montgomery, plus Director of Soccer Operations Travis Crane. International recruiting focus — 2025 roster draws from Europe (France, Portugal, Czech Republic, Russia, Italy, Spain, Denmark, Japan), North America, and Central America. Graduate student heavy squad with 67% of MFs clearing before 2027. UCA also runs a reserve/JV team for additional development minutes."
     },
     "devScores": {
-      "tactical": 72,
-      "technical": 74,
-      "fitness": 76
+      "tactical": 71,
+      "technical": 71,
+      "fitness": 70
     },
+    "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live ucasports.com MSOC staff: HC Kyle Segebart + 2 Asst (LaCasto, Montgomery) + Dir of Soccer Ops — 3 coaches, no GK coach; support = one shared AT (Hull: M Soccer/Stunt/Off-Season). Stored Tier-1 facilityDetails: Estes Stadium (1,500, shared multi-use FieldTurf), shared 10k sq ft weight room, basic GPS, Hudl, kinesiology labs (academic). Modest ASUN mid-major environment, everything shared — sits just below the Creighton ~75 anchor; near-unchanged from prior 74.",
     "fitOlivier": 61,
     "tags": [
       "warm",
@@ -357,18 +358,19 @@
     },
     "acRank": "Regional Strong — Kinesiology with pre-health emphasis",
     "devScores": {
-      "tactical": 82,
-      "technical": 80,
-      "fitness": 85
+      "tactical": 74,
+      "technical": 83,
+      "fitness": 78
     },
-    "fitOlivier": 70,
+    "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live gculopes.com MSOC staff: HC Jamie Davies + 2 Asst (McCall, Garrihy) + Coordinator of Operations — 3 coaches, no GK coach (shallower coaching than Akron/Denver). Stored Tier-1 facilityDetails: dedicated 6,000-seat GCU Soccer Stadium (2016, one of the best mid-major venues), 65,554 sq ft Lopes Performance Center (shared all athletics) + satellite sports med at the soccer stadium, documented GPS/Hudl/HR monitoring — elite facilities drive a high technical score. Shared S&C and thin coaching pull the average below the facility level; prior devAvg 82 over-weighted fitness at 85.",
+    "fitOlivier": 69,
     "lensScores": {
-      "overall": 70,
+      "overall": 69,
       "soccer": 80,
       "academic": 75,
       "lifestyle": 55,
       "minutes": 52,
-      "value": 53
+      "value": 52
     },
     "coach": {
       "name": "Jamie Davies",
@@ -627,18 +629,19 @@
     },
     "acRank": "Strong — Exercise Science with explicit Pre-PT concentration",
     "devScores": {
-      "tactical": 86,
-      "technical": 84,
-      "fitness": 85
+      "tactical": 84,
+      "technical": 82,
+      "fitness": 74
     },
-    "fitOlivier": 60,
+    "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live gozips.com MSOC staff: HC Jared Embick + Assoc HC Coppinger + 2 Asst (Nanchoff [ex-Akron/MLS], Schmidt) + a General Manager — deep, decorated full-time coaching. Sports Performance is a shared 3-person department (Sahlfeld/Walker/Poptic) across all athletics, NO soccer-dedicated S&C or sports scientist; Sports Med does list a dedicated MSOC assistant trainer (Draper) + dietician. Stored Tier-1 facilityDetails: FirstEnergy Soccer Complex — dedicated 5,800-seat soccer-specific stadium on a 23-acre complex + indoor winter facility. 2010 national title + MLS pipeline are results, excluded — prior devAvg 85 had smuggled them in; fitness trimmed to reflect shared (not dedicated) S&C.",
+    "fitOlivier": 59,
     "lensScores": {
-      "overall": 60,
+      "overall": 59,
       "soccer": 90,
       "academic": 82,
       "lifestyle": 50,
       "minutes": 48,
-      "value": 51
+      "value": 50
     },
     "coach": {
       "name": "Jared Embick",
@@ -900,18 +903,19 @@
     },
     "acRank": "Strong — new kinesiology program (2023) with NSCA certification pathway",
     "devScores": {
-      "tactical": 85,
-      "technical": 84,
-      "fitness": 82
+      "tactical": 80,
+      "technical": 80,
+      "fitness": 78
     },
-    "fitOlivier": 56,
+    "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live denverpioneers.com MSOC staff: HC Jamie Franks (endowed Weinberg chair, ex-Wake Forest technical pedigree) + Assoc HC Brad Franks + Asst Arenas + a dedicated Goalkeeper Coach (Lissek) — 4 full-time incl position-specific coaching. Stored Tier-1 facilityDetails: dedicated CIBER Field soccer stadium (2009) + indoor turf + a purpose-built 10,000 sq ft S&C facility built UNDER the stadium seating (a genuinely dedicated soccer S&C space, above the shared norm) + GPS/video. Strong environment; prior devAvg 84 was partly results-driven.",
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 56,
+      "overall": 55,
       "soccer": 86,
       "academic": 72,
       "lifestyle": 50,
       "minutes": 43,
-      "value": 34
+      "value": 33
     },
     "coach": {
       "name": "Jamie Franks",
@@ -1171,10 +1175,11 @@
     },
     "acRank": "Good — UVM Medical Center pre-PT access",
     "devScores": {
-      "tactical": 72,
+      "tactical": 74,
       "technical": 70,
-      "fitness": 78
+      "fitness": 72
     },
+    "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live uvmathletics.com MSOC staff: HC Adrian Dubois + Assoc HC Brent + 2 Asst (Twomey, Vargas) + Dir of Ops — a deep 4-coach staff (no GK coach); support = shared AT (Tremel: M Soccer/Skiing) + a shared Assistant Athletic Performance Coach (Fleischman). Stored Tier-1 facilityDetails: Virtue Field — dedicated 2,600 natural-grass venue, indoor facility essential for Vermont winters, no GPS listed. Solid America East environment; near-unchanged from prior 73 (fitness trimmed from 78 to reflect shared, not dedicated, performance staff).",
     "fitOlivier": 54,
     "lensScores": {
       "overall": 54,
@@ -1479,19 +1484,20 @@
       "profile": "Austin Solomon has been Mercyhurst's men's head coach since 2023, and led the Lakers to the NEC regular-season title in the program's first D1 season (2024) — his staff was named NEC Coaching Staff of the Year, and Dylan Sumner was NEC Player of the Year. A fall to 8th followed in 2025. Staff includes Andrew Bennett (Assistant Coach), Logan McFadden (Player Development), and Ethan Kinyo (Goalkeeper Coach). The program has recruited internationally including two Australians from Sydney — Ryan Mrvcic (Jr.) and Jared Rimmer (Sr., departing). Solomon is building a competitive NEC identity from a strong D2 PSAC foundation."
     },
     "devScores": {
-      "tactical": 68,
-      "technical": 70,
-      "fitness": 72
+      "tactical": 66,
+      "technical": 62,
+      "fitness": 62
     },
+    "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live hurstathletics.com MSOC staff: HC Austin Solomon + Asst Bennett + Asst/Player-Development (McFadden) + a GK Coach (Kinyo) — 4 coaches incl position-specific, decent for the level; support lists only an Equipment Manager (no soccer AT or S&C). Stored Tier-1 facilityDetails: small dedicated 500-seat Mercyhurst Soccer Complex + 2 practice fields + indoor, shared Hammermill Center weight room, Exercise Science academic labs (students assist), no GPS/video. Genuinely modest former-D2 program reclassifying to D1/NEC — D1 has no floor. Reclassification status and results excluded; prior devAvg 70 over-rated the environment.",
     "lensScores": {
-      "overall": 35,
+      "overall": 33,
       "soccer": 78,
       "academic": 70,
       "minutes": 23,
       "lifestyle": 0,
-      "value": 21
+      "value": 20
     },
-    "fitOlivier": 35,
+    "fitOlivier": 33,
     "tags": [
       "acad",
       "soccer"

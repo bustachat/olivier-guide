@@ -116,10 +116,11 @@
       "profile": "7th season at UCLA 2025. 150-113-35 (.562) overall record. 13 MLS draftees. PhD Biomechanics from Northern Colorado. Won 2025 Big Ten Tournament over Michigan 5-0. USSF A License. Former Pacific Tigers HC — led largest single-season D1 turnaround. NCCAA National CoY 2011 and 2012 at Cal Baptist."
     },
     "devScores": {
-      "tactical": 90,
+      "tactical": 87,
       "technical": 88,
-      "fitness": 85
+      "fitness": 86
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). §5a Glossary sports-science exemplar — held high. Live uclabruins.com MSOC staff: HC Ryan Jorden (7th yr) + Sergi Nus (Asst) + Kary Whitney (Asst) + Graeme Jorden (GA) = 3 full-time coaches. Stored Tier-1 facilities: Wallis Annenberg Stadium, dedicated soccer-only venue opened 2018 (FieldTurf, LED videoboard, Musco lighting); Acosta Athletic Center with an Olympic-sports strength coach assigned EXCLUSIVELY to soccer (a genuinely dedicated S&C). UCLA's record NCAA-title history is a result and excluded. Tactical trimmed 90->87 to match the 4-coach ACC elite tier (Stanford/ND) — 3 coaches here; technical/fitness held high (88/86) for the dedicated modern stadium and soccer-exclusive S&C, keeping UCLA a clear sports-science exemplar. (Staff: stored Erik Holt -> live Kary Whitney, minor.)",
     "fitOlivier": 65,
     "tags": [
       "warm",
@@ -412,6 +413,7 @@
       "technical": 88,
       "fitness": 92
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). ANCHOR — held. Live iuhoosiers.com MSOC staff: HC Todd Yeagley (16th yr) + Christian Lomeli + Tanner Thompson + Jacob Bushue (3 Asst) = 4 full-time coaches. Stored Tier-1 facilities: Bill Armstrong Stadium 6,500 dedicated soccer-only natural grass (single-season attendance record 36,735 in 2025); Athletic Performance Center 22,000 sq ft with dedicated S&C coaches for soccer. Named §5a anchor (most NCAA men's titles); held at 93/88/92.",
     "fitOlivier": 55,
     "tags": [
       "acad",
@@ -620,14 +622,14 @@
     },
     "mapX": 502,
     "mapY": 153,
-    "fitOlivier": 52,
+    "fitOlivier": 53,
     "lensScores": {
-      "overall": 52,
+      "overall": 53,
       "soccer": 75,
       "academic": 65,
       "minutes": 53,
       "lifestyle": 0,
-      "value": 31
+      "value": 32
     },
     "confRecord": [
       {
@@ -672,9 +674,10 @@
     },
     "devScores": {
       "tactical": 78,
-      "technical": 74,
+      "technical": 79,
       "fitness": 80
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live gopsusports.com MSOC staff: HC Rob Dow + Brad Cole (Assoc HC) + Oscar Umar (Asst) + Owen Jack (Asst) = 4 full-time coaches, plus Adam Gahm (Athletic Performance Coach) and Brandon Hall (Athletic Trainer) listed on the MSOC page — dedicated performance and medical support. Stored Tier-1 facilities: Jeffrey Field Soccer Complex 5,000 dedicated, undergoing a $21.25M renovation (new locker rooms, S&C, hydrotherapy) completing Oct 2025. A well-invested environment — dedicated (renovated) stadium + dedicated performance coach + dedicated ATC — sits above the Creighton ~75 reference. Raised to 78/79/80. (HC change Bob Warming -> Rob Dow is a separate Change Type 2.)",
     "coach": {
       "name": "Bob Warming",
       "title": "Head Coach",
@@ -896,14 +899,14 @@
     },
     "mapX": 448,
     "mapY": 150,
-    "fitOlivier": 45,
+    "fitOlivier": 44,
     "lensScores": {
-      "overall": 45,
+      "overall": 44,
       "soccer": 76,
       "academic": 85,
       "minutes": 36,
       "lifestyle": 0,
-      "value": 27
+      "value": 26
     },
     "confRecord": [
       {
@@ -946,10 +949,11 @@
       "draftRank": "Strong Big Ten pipeline"
     },
     "devScores": {
-      "tactical": 82,
-      "technical": 80,
-      "fitness": 83
+      "tactical": 79,
+      "technical": 78,
+      "fitness": 81
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live mgoblue.com MSOC staff: HC Chaka Daley + Sean Hughes (Assoc HC) + Jhojan Obando (Asst) + Mauro Fuzetti (Asst) = 4 full-time coaches. Stored Tier-1 facilities: Michigan Soccer Stadium 3,000 dedicated natural grass (NCAA host); elite Big Ten S&C complex with a dedicated S&C coach for soccer; School of Kinesiology movement-science labs. Solid environment — 4 coaches + dedicated stadium + Big Ten S&C — but a smaller/older stadium and no dedicated sport scientist verified live. Trimmed from 82/80/83 to 79/78/81 (Duke/Wake tier).",
     "coach": {
       "name": "Chaka Daley",
       "title": "Head Coach",
@@ -1161,14 +1165,14 @@
     },
     "mapX": 454,
     "mapY": 146,
-    "fitOlivier": 39,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 39,
+      "overall": 40,
       "soccer": 65,
       "academic": 58,
       "minutes": 31,
       "lifestyle": 0,
-      "value": 23
+      "value": 24
     },
     "confRecord": [
       {
@@ -1209,10 +1213,11 @@
       "draftRank": "Moderate pipeline"
     },
     "devScores": {
-      "tactical": 68,
-      "technical": 65,
-      "fitness": 72
+      "tactical": 72,
+      "technical": 70,
+      "fitness": 73
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live msuspartans.com MSOC staff: HC Damon Rensing + Reid Friedrichs (Asst) + Nick Barry (Asst) + Zach Carroll (Asst) = 4 full-time coaches, plus Vince Del Valle (Athletic Trainer, Men's Soccer) and Dustin Steider (Assistant Director, Athletic Performance). Stored Tier-1 facilities: DeMartin Soccer Stadium 3,000 dedicated natural grass; standard Big Ten S&C suite; Kinesiology labs. The old 68 reflected conference/results banding; the actual environment (4 coaches + dedicated stadium + dedicated ATC + performance staffer) sits near the Creighton ~75 reference. Corrected up to 72/70/73.",
     "coach": {
       "name": "Damon Rensing",
       "title": "Head Coach",
@@ -1423,14 +1428,14 @@
     },
     "mapX": 467,
     "mapY": 166,
-    "fitOlivier": 53,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 53,
+      "overall": 54,
       "soccer": 72,
       "academic": 60,
       "minutes": 45,
       "lifestyle": 50,
-      "value": 32
+      "value": 33
     },
     "confRecord": [
       {
@@ -1473,10 +1478,11 @@
       "draftRank": "Developing MLS pipeline"
     },
     "devScores": {
-      "tactical": 76,
-      "technical": 74,
-      "fitness": 78
+      "tactical": 78,
+      "technical": 76,
+      "fitness": 80
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live ohiostatebuckeyes.com MSOC staff: HC Brian Maisonneuve + Matt Foldesy (Assoc HC) + Travis Morris (Assoc HC) + Corey Brueggeman (Asst) = 4 full-time coaches, plus a deep dedicated support group on the MSOC page: Patrick Brayfield (Director, Athletic Training), Rebecca Freiburger (Asst S&C), Claire Reinking (Performance Dietitian) and Paul Jones (Associate Sport Scientist). Stored Tier-1 facilities: Jesse Owens Stadium north-end soccer facility 10,000 (shared venue); Woody Hayes flagship S&C. A dedicated sport scientist + dietitian is a real plus; the shared stadium limits the facility score. Raised to 78/76/80.",
     "coach": {
       "name": "Brian Maisonneuve",
       "title": "Head Coach",
@@ -1688,14 +1694,14 @@
     },
     "mapX": 420,
     "mapY": 147,
-    "fitOlivier": 47,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 47,
+      "overall": 49,
       "soccer": 62,
       "academic": 90,
       "minutes": 41,
       "lifestyle": 50,
-      "value": 28
+      "value": 29
     },
     "confRecord": [
       {
@@ -1736,10 +1742,11 @@
       "draftRank": "Small pipeline — academic-first program"
     },
     "devScores": {
-      "tactical": 64,
-      "technical": 62,
-      "fitness": 68
+      "tactical": 73,
+      "technical": 72,
+      "fitness": 72
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live nusports.com MSOC staff: HC Russell Payne + JR DeRose (Asst/Dir Player Development) + Flo Liu (Asst) + Joe Moulden (Asst) = 4 full-time coaches, plus Jordan Betterman (Director of Analytics) and Tyler Sylvester (Assoc Athletic Trainer). Stored Tier-1 facilities: Martin Stadium 2,500 dedicated natural grass; standard Big Ten S&C; Kinesiology labs. The old 65 was conference/results banding — the actual environment (4 coaches + an analytics director + a dedicated stadium + Big Ten S&C) is materially stronger, comparable to the committed Charlotte +9 correction. Corrected up to 73/72/72. (HC change Tim Lenahan -> Russell Payne is a separate Change Type 2.)",
     "coach": {
       "name": "Tim Lenahan",
       "title": "Head Coach",
@@ -1953,14 +1960,14 @@
     },
     "mapX": 407,
     "mapY": 136,
-    "fitOlivier": 45,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 45,
+      "overall": 47,
       "soccer": 62,
       "academic": 62,
       "minutes": 49,
       "lifestyle": 0,
-      "value": 27
+      "value": 28
     },
     "confRecord": [
       {
@@ -2001,10 +2008,11 @@
       "draftRank": "Moderate pipeline"
     },
     "devScores": {
-      "tactical": 65,
-      "technical": 63,
-      "fitness": 70
+      "tactical": 72,
+      "technical": 70,
+      "fitness": 72
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live uwbadgers.com MSOC staff: HC Neil Jones + Nate Boyden (Asst) + Simon Brown (Asst/Recruiting) + Tyler Smith (Asst) = 4 full-time coaches, plus George Ikemizu (Assistant S&C, shared M-Soccer/Track) and Chris Peroutka (Athletic Trainer, Men's Soccer). Stored Tier-1 facilities: McClimon Soccer Complex 3,000 dedicated artificial turf; McClain Center shared flagship S&C; Kinesiology labs. Old 66 was conference/results banding; the actual environment (4 coaches + dedicated turf stadium + Big Ten S&C + dedicated ATC) sits near the Creighton reference. Corrected up to 72/70/72. (HC change John Trask -> Neil Jones is a separate Change Type 2.)",
     "coach": {
       "name": "John Trask",
       "title": "Head Coach",
@@ -2215,14 +2223,14 @@
     },
     "mapX": 531,
     "mapY": 153,
-    "fitOlivier": 55,
+    "fitOlivier": 56,
     "lensScores": {
-      "overall": 55,
+      "overall": 56,
       "soccer": 65,
       "academic": 55,
       "minutes": 53,
       "lifestyle": 50,
-      "value": 33
+      "value": 34
     },
     "confRecord": [
       {
@@ -2265,10 +2273,11 @@
       "draftRank": "Moderate pipeline"
     },
     "devScores": {
-      "tactical": 67,
-      "technical": 65,
-      "fitness": 72
+      "tactical": 73,
+      "technical": 72,
+      "fitness": 74
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live scarletknights.com MSOC staff: HC Jim McElderry + Gavin Wyse (Assoc HC) + Tyler Stakiwicz (Assoc HC) + Joe Mortarulo (Asst) = 4 full-time coaches, plus a Director of Operations. Stored Tier-1 facilities: Yurcak Field 5,000 dedicated artificial turf (larger than the NW/Wisc/MSU venues); RWJ Barnabas Health Athletic Performance Center (strong dedicated Big Ten S&C). Old 68 was conference/results banding; the larger dedicated stadium + strong performance center place it slightly above the NW/Wisc/MSU cluster. Corrected up to 73/72/74.",
     "coach": {
       "name": "Jim McElderry",
       "title": "Head Coach",
@@ -2480,14 +2489,14 @@
     },
     "mapX": 87,
     "mapY": 101,
-    "fitOlivier": 49,
+    "fitOlivier": 50,
     "lensScores": {
-      "overall": 49,
+      "overall": 50,
       "soccer": 68,
       "academic": 65,
       "minutes": 38,
       "lifestyle": 50,
-      "value": 29
+      "value": 30
     },
     "confRecord": [
       {
@@ -2530,10 +2539,11 @@
       "draftRank": "Consistent Pacific pipeline"
     },
     "devScores": {
-      "tactical": 70,
-      "technical": 68,
+      "tactical": 74,
+      "technical": 73,
       "fitness": 74
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). Live gohuskies.com MSOC staff: HC Jamie Clark + Mark Collings (Assoc HC) + Richard Reece (Asst) + Ryan Fahey (Asst) = 4 full-time coaches, plus a Director of Operations and a shared Assistant Athletic Trainer. Stored Tier-1 facilities: Husky Soccer Stadium 2,200 dedicated, brand-new natural-grass surface installed summer 2025; Dempsey Indoor; dedicated strength coach for soccer. A strong head coach (Clark, multiple College Cup appearances) plus a brand-new dedicated stadium place it slightly above the NW/Wisc/MSU cluster. Corrected up to 74/73/74.",
     "coach": {
       "name": "Jamie Clark",
       "title": "Head Coach",
@@ -2823,6 +2833,7 @@
       "technical": 91,
       "fitness": 90
     },
+    "devScoresNote": "v42.27 §5a re-baseline (training environment only). ANCHOR — held. Live umterps.com MSOC staff: HC Sasho Cirovski + Brian Rowland (Assoc HC) + Steve Armas (Assoc HC) + Michael Gould (Asst) = 4 full-time coaches, plus a genuinely dedicated support ecosystem listed on the MSOC page: Ben Hoffman (Strength & Conditioning), Katelyn Engen (Athletic Trainer), Paula Karamihas (Sports Nutrition), a mental-health counselor and a student-athlete-development lead. Stored Tier-1 facilities: Ludwig Field 5,000, world-class Xfinity S&C, full sports science — GPS (Catapult) + video (Hudl + XO). Named §5a anchor; held at 93/91/90.",
     "fitOlivier": 55,
     "tags": [
       "city",

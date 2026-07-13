@@ -2293,19 +2293,19 @@
       "technical": 58,
       "fitness": 62
     },
-    "devScoresNote": "v42.21 §5a re-baseline (environment only). Official site (stonybrookseawolves.com) unreachable — DNS resolves but port 443 times out — so scored from stored Tier-1 facilityDetails: LaValle Stadium SHARED with football (no dedicated soccer stadium), large SUNY athletics S&C, Kinesiology labs, on-campus Stony Brook Medicine for rehab. Live staff depth not verifiable; coach remains TBD.",
+    "devScoresNote": "v42.21 §5a re-baseline (environment only); LIVE-VERIFIED v42.34 via stonybrookathletics.com (the working host — the stored stonybrookseawolves.com is a dead alias, which is why v42.21 could not reach it). Live MSOC staff = HC Ryan Anatol + 2 assistants (Delcid, Fernandes) + a goalie consultant (Zapata), plus a dedicated MSOC athletic trainer (Cecchett); no soccer-dedicated S&C or sport scientist. Facilities (stored Tier-1): Kenneth P. LaValle Stadium SHARED with football (no dedicated soccer stadium), large SUNY athletics S&C, Kinesiology labs, on-campus Stony Brook Medicine for rehab. Live check confirms the shared-facility mid-major environment — devScores 58/58/62 unchanged.",
     "coach": {
-      "name": "TBD",
+      "name": "Ryan Anatol",
       "title": "Head Coach",
-      "email": "soccer@stonybrook.edu",
-      "phone": "",
-      "profile": "Stony Brook is a high-value CAA option — SUNY's flagship research university with on-campus Stony Brook Medicine (Level 1 trauma, nationally ranked). Low cost ($38k out-of-state). Strong bounce-back 2025 season after winless 2024. NYC by LIRR (1.5 hr)."
+      "email": "ryan.anatol@stonybrook.edu",
+      "phone": "631-632-7203",
+      "profile": "Ryan Anatol has led Stony Brook since 2011 (15 seasons) and is the winningest coach in program history, holding a USSF 'A' license. He won the 2011 America East Championship, the 2018 AEC regular-season title (AEC Coaching Staff of the Year) and 2023 CAA Coach of the Year, and in 2025 guided the Seawolves to 9-5-5 and the program's first-ever CAA Championship game (beating #1 Hofstra on the road). Career HC record 98-116-39 reflects a rebuilding mid-major, but the recent trajectory is strong. Stony Brook pairs this with SUNY pricing (~$38k) and on-campus Stony Brook Medicine (Level 1 trauma) — the best pre-PT value in the CAA. NYC by LIRR (1.5 hr)."
     },
     "tags": [
       "soccer"
     ],
     "facilities": [
-      "Kenneth P"
+      "Kenneth P. LaValle Stadium (shared with football)"
     ],
     "courses": [
       "AMS 102 — Fundamentals of Anatomy",
@@ -2315,7 +2315,7 @@
       "HPH 450 — Clinical Practicum (Stony Brook Medicine)"
     ],
     "rec": "Strong value — low cost, research university, Stony Brook Medicine for pre-PT. Rural Long Island campus. NYC access via LIRR.",
-    "url": "https://stonybrookseawolves.com/sports/mens-soccer",
+    "url": "https://stonybrookathletics.com/sports/mens-soccer",
     "domain": "stonybrook.edu",
     "minutesOutlook": {
       "available": false
@@ -2348,16 +2348,28 @@
     },
     "staff": [
       {
-        "name": "Head Coach",
+        "name": "Ryan Anatol",
         "role": "Head Coach",
-        "email": "soccer@stonybrook.edu",
-        "bg": "Stony Brook Seawolves head coach. Rebuilding CAA program at SUNY's flagship research university. Stony Brook Medicine on campus is exceptional pre-PT recruitment asset."
+        "email": "ryan.anatol@stonybrook.edu",
+        "bg": "Winningest coach in program history (HC since 2011); USSF 'A' license; 2011 AEC champion, 2023 CAA Coach of the Year, 2025 CAA finalist."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Carlos Delcid",
         "role": "Assistant Coach",
-        "email": "soccer@stonybrook.edu",
+        "email": "carlos.delcid@stonybrook.edu",
         "bg": "Full-time assistant."
+      },
+      {
+        "name": "Gabriel Fernandes",
+        "role": "Assistant Coach",
+        "email": "gabriel.fernandes@stonybrook.edu",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Jon Zapata",
+        "role": "Goalie Consultant",
+        "email": "",
+        "bg": "Goalkeeping consultant."
       }
     ],
     "acuUnits": [

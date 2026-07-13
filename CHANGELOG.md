@@ -6,6 +6,19 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v42.34 (July 2026) — Stony Brook coach resolved (Ryan Anatol) — validator baseline reaches 0/174 🎯
+
+Closes the longest-standing deferral: Stony Brook's head coach was a `TBD`/`Head Coach` placeholder (the sole remaining `validate_consistency.js` issue, a COACH-SYNC gap open since the v36 review). Owner supplied the working link; verified Tier-1 via **stonybrookathletics.com** (the stored `stonybrookseawolves.com` is a dead alias — same failure class as Pittsburgh's `pittPanthers.com`, and why prior sessions couldn't reach it).
+
+- **Coach filled in (Change Type 2):** **Ryan Anatol** — HC since 2011 (15 seasons), winningest in program history, USSF "A" license; 2011 America East champion, 2018 AEC Coaching Staff of the Year, **2023 CAA Coach of the Year**, 2025 first-ever CAA Championship-game appearance (9-5-5, beat #1 Hofstra away); career 98-116-39. Updated `data/caa.json` coach{} + `data/coaches.json` (name, email `soccer@`→`ryan.anatol@stonybrook.edu`, phone `631-632-7203`, bio, record, `yearsHC` 4→15, staff). Renamed the placeholder coaches.json id `hc_stonybrook` → `anatol_stonybrook` (confirmed unreferenced elsewhere).
+- **overallScore held at 58 — deliberately NOT re-scored** (Solomon/Mercyhurst precedent: correcting a data-gap coach's facts shouldn't move the ranking against 109 unaudited peers). His credentials may warrant a bump — deferred to the v43 coach rubric. No overallScore change ⇒ no re-rank.
+- **Dead-host fix (all instances):** `stonybrookseawolves.com` → `stonybrookathletics.com` in caa.json url, coaches.json url, and **app.js DOMAINS** (favicon).
+- **Bug fixed in passing:** caa.json brief `facilities[]` had a truncated `"Kenneth P"` → `"Kenneth P. LaValle Stadium (shared with football)"`. Live staff (HC + 2 assistants + goalie consultant + dedicated MSOC AT, no soccer-dedicated sports science) confirms the environment → **devScores 58/58/62 unchanged**; devScoresNote updated.
+- **Validated:** `node --check js/app.js` OK; `validate_schools.py` PASS (110); **`validate_consistency.js` Issues: 0** (down from the July-2026 baseline of 174 — the count is clean for the first time). Browser-verified.
+- guideVersion v42.33 → v42.34.
+
+---
+
 ### v42.33 (July 2026) — Pittsburgh live-verify (resolves deferral) + index.html glossary UF/FIU fixes
 
 Two deferred items closed.

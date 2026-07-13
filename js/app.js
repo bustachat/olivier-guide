@@ -946,7 +946,7 @@ const DOMAINS = {
   delaware:       'bluehens.com',
   elon:           'elonphoenix.com',
   monmouth:       'monmouthhawks.com',
-  stonybrook:     'stonybrookseawolves.com',
+  stonybrook:     'stonybrookathletics.com',
 };
 
 const SITE_URLS = {

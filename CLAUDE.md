@@ -1076,7 +1076,7 @@ Division rules (Tier-1, verified v42.0): NCAA D1 post-*House* (July 1 2025) repl
 
 ## 6. Version History & Current State
 
-**Current version: v42.29 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. (v42.19–v42.28 = the §5a devScore re-baseline batches + the v42.22 CAA coach fix; v42.29 = the 8-coach Change-Type-2 reconciliation. **Note: CHANGELOG.md has entries for v42.18 and v42.29 but not v42.19–v42.28 — those batch sessions committed to git without appending to CHANGELOG; a docs-drift gap to backfill from `git log` if history is ever needed.**) All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
+**Current version: v42.32 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. (v42.19–v42.28 = the §5a devScore re-baseline batches + the v42.22 CAA coach fix; v42.29 = the 8-coach Change-Type-2 reconciliation; v42.30–v42.31 = Vermont HC timeline correction; v42.32 = Navy/Hackworth coach re-score. CHANGELOG.md now has a gapless v42.18→v42.32 history.) All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 

@@ -6,6 +6,21 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v42.30 (July 2026) — Vermont head-coach reconciliation (Change Type 2) — resolves the v42.29 Vermont deferral
+
+Resolves the Vermont deferral logged in v42.29. Live-verified against uvmathletics.com's own season-filtered coaching-staff pages that **Adrian Dubois is the real Vermont HC** (his name was already correct in the guide) — but the surrounding details wrongly assumed Rob Dow left a year later than he did. Tier-1 timeline: **2024** = Dow (NCAA championship, his final season); **2025** = Dubois's debut (14-1-5, won the America East title, NCAA 1st round exit vs Hofstra).
+
+- **`coach{}` corrections** (`data/d1-other.json` + `data/coaches.json`, two-file rule): email `soccer@uvm.edu` → `mens.soccer@uvm.edu` (the old address was a guess, not published); title/profile/bio/record "appointed 2026 / 1st season 2026" → **2025**, rewritten to reflect his completed championship debut rather than "inheriting under pressure."
+- **`staff[]`** — replaced the lone `"Assistant Coach"` placeholder with the real 2025 staff: Travis Brent (Associate HC), Rory Twomey (Asst, retained through the transition), Edgar Vargas (Asst), Eric Bissell (Dir of Ops).
+- **`confRecord` 2025 note** "Dow's final season" → corrected: America East champions (beat Bryant 2-0), 14-1-5, NCAA 1st round, **Dubois's 1st season**. Championship facts (AEC 2024+2025, 2024 national title) were verified correct and unchanged.
+- Stale "new coach" framing refreshed in `rec`, `gpa.note`, `fin.internationalNote`.
+- **No score change** — dev/fit/lens untouched, so no re-rank reorder; `overallScore` 66 held. Both files kept in sync (COACH-SYNC clean).
+- **Validated:** `validate_schools.py` PASS (110); `validate_consistency.js` held at the **1-issue baseline** (Stony Brook only) — no new issues, no fit drift. Local browser smoke test: Vermont modal renders all corrected data, old strings gone, zero console errors.
+- **New deferral logged:** the Penn State `dow_pennstate` record (v42.29) states Dow was "hired Dec 2025 ... AEC Coaching Staff of the Year (2024, 2025)" — contradicted here (Dow's Vermont tenure ended after 2024; the 2025 AEC credit is Dubois's). Left untouched this session (scope discipline); flagged for a Penn State pass.
+- guideVersion v42.29 → v42.30.
+
+---
+
 ### v42.29 (July 2026) — 8 stale head-coach corrections (Change Type 2) + 2 staff-only edits + global coach re-rank
 
 Reconciles the head-coach names surfaced (but deliberately left untouched) during the v42.26–v42.28 devScore re-baseline, plus older deferred coach changes — all confirmed live via Chrome MCP against each school's official staff directory/bio page. No Fit cascade (coach score is independent of `fitOlivier`); only the Coaches Rankings reshuffled.

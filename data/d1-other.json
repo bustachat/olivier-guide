@@ -1115,7 +1115,7 @@
     "gpa": {
       "minEntry": "2.8+",
       "minSchol": "3.0+",
-      "note": "Selective public university. Athletic scholarship available. New head coach Adrian Dubois in 2026 after Rob Dow departed post-championship.",
+      "note": "Selective public university. Athletic scholarship available. Adrian Dubois took over as head coach for the 2025 season after Rob Dow departed following the 2024 national championship.",
       "status": "eligible"
     },
     "fin": {
@@ -1126,13 +1126,13 @@
       "maxAthletic": 0.7,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state + international tuition is high at Vermont (~$66k/yr 2025-26). Athletic scholarship reduces this significantly. New coach — scholarship packages may change."
+      "internationalNote": "Out-of-state + international tuition is high at Vermont (~$66k/yr 2025-26). Athletic scholarship reduces this significantly. Coaching staff changed for 2025 (Dubois) — scholarship packages may shift under the new staff."
     },
     "confRecord": [
       {
         "yr": 2025,
         "pos": "AEC Champs",
-        "note": "America East Champions. NCAA Tournament — Dow's final season."
+        "note": "America East Champions (beat Bryant 2-0 in final). 14-1-5 overall; NCAA Tournament 1st round (L 3-2 OT vs Hofstra). Adrian Dubois's 1st season."
       },
       {
         "yr": 2024,
@@ -1191,10 +1191,10 @@
     },
     "coach": {
       "name": "Adrian Dubois",
-      "title": "Head Coach (2026, 1st season)",
-      "email": "soccer@uvm.edu",
+      "title": "Head Coach (appointed 2025)",
+      "email": "mens.soccer@uvm.edu",
       "phone": "802-656-4604",
-      "profile": "Adrian Dubois was appointed in 2026 after Rob Dow departed following the 2024 national championship. Dow built an extraordinary culture at Vermont — the 2024 title over Marshall in OT remains one of the biggest upsets in college soccer history. Dubois inherits a program with strong momentum but significant graduation losses from the championship squad."
+      "profile": "Adrian Dubois was appointed head coach ahead of the 2025 season, succeeding Rob Dow, who departed after guiding Vermont to the 2024 NCAA National Championship — the first title in any UVM sport outside skiing. In his debut 2025 season Dubois led Vermont to a 14-1-5 record and a second straight America East title before a first-round NCAA Tournament exit, sustaining the program's momentum despite heavy graduation losses from the championship squad."
     },
     "tags": [
       "soccer"
@@ -1215,15 +1215,33 @@
     "staff": [
       {
         "name": "Adrian Dubois",
-        "role": "Head Coach (2026, 1st season)",
-        "email": "soccer@uvm.edu",
-        "bg": "Appointed 2026 after Rob Dow departed post-championship. Inherits a program that won the 2024 NCAA National Championship — the only men's soccer national title in UVM history. Large graduation losses from championship squad."
+        "role": "Head Coach (appointed 2025)",
+        "email": "mens.soccer@uvm.edu",
+        "bg": "Took over for the 2025 season after Rob Dow departed post-championship, and immediately led Vermont to a second straight America East title (14-1-5) and an NCAA Tournament berth."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Travis Brent",
+        "role": "Associate Head Coach",
+        "email": "mens.soccer@uvm.edu",
+        "bg": "Associate head coach on Dubois's 2025 America East championship staff."
+      },
+      {
+        "name": "Rory Twomey",
         "role": "Assistant Coach",
-        "email": "soccer@uvm.edu",
-        "bg": "Full-time assistant."
+        "email": "mens.soccer@uvm.edu",
+        "bg": "Assistant coach retained through the 2024-to-2025 coaching transition — on staff for both the 2024 national title and the 2025 America East title."
+      },
+      {
+        "name": "Edgar Vargas",
+        "role": "Assistant Coach",
+        "email": "mens.soccer@uvm.edu",
+        "bg": "Assistant coach on the 2025 America East championship staff."
+      },
+      {
+        "name": "Eric Bissell",
+        "role": "Director of Operations",
+        "email": "mens.soccer@uvm.edu",
+        "bg": "Director of operations for 2025; previously a team student manager during the 2024 championship season."
       }
     ],
     "acuUnits": [
@@ -1292,7 +1310,7 @@
         "covered": false
       }
     ],
-    "rec": "Vermont is in the guide primarily due to the 2024 NCAA Championship and strong America East soccer tradition. However, Burlington VT is cold (long harsh winters), not a major city, and the lifestyle match for a Sydney-raised player is poor. Rob Dow has departed — new coach Dubois inherits a program under pressure to follow a once-in-a-generation season. Listed depth only — worth monitoring if Olivier's profile is developing and the new coach has Australian connections, but not a priority target.",
+    "rec": "Vermont is in the guide primarily due to the 2024 NCAA Championship and strong America East soccer tradition. However, Burlington VT is cold (long harsh winters), not a major city, and the lifestyle match for a Sydney-raised player is poor. Rob Dow has departed; Adrian Dubois took over for 2025 and immediately retained the America East title (14-1-5, NCAA berth), so the program remains strong on the field. Listed depth only — worth monitoring if Olivier's profile is developing and the new coach has Australian connections, but not a priority target.",
     "url": "https://uvmathletics.com/sports/mens-soccer",
     "domain": "uvm.edu",
     "mapX": 544,

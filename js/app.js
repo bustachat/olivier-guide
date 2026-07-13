@@ -2451,7 +2451,6 @@ function buildCoachCard(c){
         <div class="cstat"><span class="cv">${c.yearsHC}</span><span class="cl">Yrs HC</span></div>
         <div class="cstat"><span class="cv">${c.mlsPlayers}</span><span class="cl">MLS Picks</span></div>
         <div class="cstat"><span class="cv" style="color:${c.overallScore>=90?'var(--emerald)':c.overallScore>=80?'var(--amber)':'var(--rose)'}">${c.overallScore}</span><span class="cl">Overall</span></div>
-        <div class="cstat"><span class="cv" style="color:var(--emerald)">${c.ptPathScore}</span><span class="cl">PT Path</span></div>
       </div>
       <div class="coach-bio">${c.bio.slice(0,280)}${c.bio.length>280?'…':''}</div>
       <div class="coach-strengths">${strHtml}</div>

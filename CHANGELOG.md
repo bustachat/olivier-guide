@@ -6,6 +6,19 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v43.0 (July 2026) — Coach overallScore Rubric written (§5d, Step 0, doc-only) + "PT Path" badge deprecated
+
+Opens the v43 coach-scoring series. Coach `overallScore` was a hand-assigned judgment value with no written standard (110 values scored across many sessions/eras against no anchor) — the identical failure mode §5a fixed for school dev scores. This commit writes the standard; it moves **no** score and **no** rank. Owner-approved design (three decisions taken this session).
+
+- **§5d Coach overallScore Rubric added to CLAUDE.md.** A single holistic 0–100 coaching-quality score, defined directly (not a sub-score average), formed from two evidence pillars — **coaching pedigree/system** + **player development/next-level output** — weighed against named anchors (Gelnovatch 98 / Noonan 97 … down through the strong/solid bands). Key design points: **no hard division ceiling** (deliberate difference from §5a — coaching is a *person* attribute, not a program-bounded environment; **Hackworth/Navy 74** is the worked anchor for an elite CV at a constrained program); explicit "what it is NOT" table (tenure, Aus-fit, team results, the school's environment/`devScores`, and the program's `nextLevelOutput` all live elsewhere); and the Solomon rule — **re-score all 110 in one campaign, re-rank once**, never partially.
+- **No `fitOlivier` cascade.** Confirmed `scores.js` reads only school-level `devScores`, never `coaches.json`; the eventual re-score touches only the coach rank order + the card "Overall" badge. Much lower risk than the §5a re-baseline.
+- **`ptPathScore` "PT Path" card badge deprecated (owner-approved).** Removed the stat from the coach card in `js/app.js` (`buildCoachCard` — card now shows Yrs HC / MLS Picks / Overall). The label collided with the schools' *Pre-PT Path* physical-therapy meaning, which ACU Alignment already covers, and it rendered a bare "0" for 22 new coaches. The field stays in the data as inert legacy (no longer scored or displayed). §5 schema note updated for `ptPathScore`/`tacticalScore`/`devScore` (retired) and the incoming `overallScoreNote`.
+- **Sequence recorded (§5d + §6):** Step 1 = add `overallScoreNote` field + gated validator check; Step 2 = re-score all 110 batched by conference file, then one global re-rank.
+- **Validated:** `node --check js/app.js` OK; `validate_consistency.js` **Issues: 0** (unchanged — no drift); browser-verified live (110 cards render, stats `[Yrs HC, MLS Picks, Overall]`, no "PT Path" badge on any card, no console errors).
+- guideVersion v42.34 → v43.0.
+
+---
+
 ### v42.34 (July 2026) — Stony Brook coach resolved (Ryan Anatol) — validator baseline reaches 0/174 🎯
 
 Closes the longest-standing deferral: Stony Brook's head coach was a `TBD`/`Head Coach` placeholder (the sole remaining `validate_consistency.js` issue, a COACH-SYNC gap open since the v36 review). Owner supplied the working link; verified Tier-1 via **stonybrookathletics.com** (the stored `stonybrookseawolves.com` is a dead alias — same failure class as Pittsburgh's `pittPanthers.com`, and why prior sessions couldn't reach it).

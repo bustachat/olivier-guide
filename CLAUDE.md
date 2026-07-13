@@ -661,7 +661,9 @@ EXSC187, EXSC230, EXSC122, EXSC398
 id, schoolId, name, school, div, conf,
 rank, rankClass (rk-elite | rk-strong | rk-solid),   ← HYPHENS not underscores
 yearsHC, record, mlsPlayers, overallScore,
-ptPathScore (deprecated — set to 0 for new coaches; retained for legacy data),
+ptPathScore (deprecated — no longer rendered as of v43.0 §5d; retained as inert legacy data, not scored/displayed),
+tacticalScore, devScore (legacy sub-scores — retired from the §5d standard v43.0; stored but not scored/displayed. Do not reason about them),
+overallScoreNote (added in v43 Step 1 — cites the §5d Tier-1 CV/development evidence; its presence marks a coach as re-scored against the rubric),
 ausConnection (bool), licence (string or null),
 bio, strengths[], staff[],
 contact{ email, phone }
@@ -1074,9 +1076,78 @@ Division rules (Tier-1, verified v42.0): NCAA D1 post-*House* (July 1 2025) repl
 
 ---
 
+## 5d. Coach overallScore Rubric (v43 — the written standard; score against this, never from feel)
+
+**Status: standard adopted v43.0 (doc-only). The 110 stored coach `overallScore` values have NOT yet been re-scored against it — they remain hand-assigned across many sessions/eras and should be treated as unverified until the v43 re-baseline (§6) lands.** This section is to coach scores what §5a is to school dev scores: it exists because `overallScore` is the identical failure mode — a judgment value scored on different questions, by different sessions, against no anchor (see the Solomon worked example in §6).
+
+**Design owner-approved v43.0 (three decisions):** (1) `overallScore` is a **single holistic 0–100 score**, defined directly — *not* a computed average of sub-scores. (2) It measures **two things only: coaching pedigree/system + player development/next-level output.** (3) The legacy sub-scores `tacticalScore`, `devScore`, `ptPathScore` are **retired from the standard** — do not score, display, or reason about them (see the deprecation note at the end).
+
+### What overallScore is
+
+An absolute, national-scale rating of **coaching quality** — how good the coach is at developing and leading a central midfielder like Olivier, measured against the best head coaches in US college soccer. It answers *"how good is this coach, as a coach?"* — never *"how good is this coach for their division / program / conference?"* and never *"how good was last season?"*
+
+### What overallScore is NOT
+
+| Not this | It lives here instead |
+|---|---|
+| Tenure / job security / "safe bet" | `yearsHC`, `record` (display fields only — a strong CV is not floored for a low `yearsHC`; a long `yearsHC` is not a score by itself) |
+| Fit for Olivier specifically (Aus link, licence) | `ausConnection` (bool), `licence` (string) — display fields, not scored |
+| Team results / titles / a good season | `record`, and the school's `titles[]` / `confRecord[]` |
+| The school's training environment (facilities, S&C, sports science) | the **school's** `devScores` (§5a) — orthogonal: that scores the *building and support staff*, this scores the *person*. A great coach can sit in a modest environment (see Hackworth anchor) and vice-versa. **Never let one leak into the other.** |
+| The school's recent program pipeline | the school's `nextLevelOutput` (§5b) — a *program* metric any coach at that school inherits. Pillar B below scores the coach's *own career-long* development record, not the program's current feed. |
+
+**Every historical `overallScore` drift came from smuggling one of the above into the number** — most often prestige-halo (a big-conference name scored high on the letterhead) or a single good/bad season. If the evidence you are holding is a *team result*, a *facility*, or a *program's* pipeline, it does not belong in the coach's score.
+
+### The two pillars — one holistic judgment, roughly balanced
+
+`overallScore` is a single integer, but it is formed by weighing two pillars of Tier-1 evidence (aim for a rough 50/50 balance; they are not separately stored):
+
+**Pillar A — Coaching pedigree & system.**
+- Playing career level (pro / full international / college).
+- Coaching CV: head-coach stops and their level; assistant pedigree; who they trained under; whether they have a documented coaching tree.
+- Licence held (USSF/UEFA Pro > A > B) — a genuine credential, not a display trophy.
+- Documented style of play and **position-specific coaching for a central midfielder** (does a dedicated midfield/technical coach exist on staff?).
+- Full-time staff depth.
+- National coaching recognition (Coach-of-the-Year honours) — allowed as *coach-level* recognition, but weigh it as pedigree, not as a proxy for the team's win-loss.
+
+**Pillar B — Player development & next-level output.**
+- The coach's **own career-long** fingerprint for moving players up a level: MLS/pro signings, full internationals, and (for JUCO/lower divisions) D1-transfer production *attributable to this coach across all their stops* — not the current program's inherited pipeline.
+- Documented individual-player improvement / notable players they personally developed.
+
+**Source discipline (Tier-1):** the school's own men's-soccer staff/bio page for the coach's CV, licence, playing career, and named developed players; reputable coaching records for career stops. **Never a ranking site, never last season's table.** Record what was observed in `overallScoreNote` (companion field — see Process).
+
+### Absolute scale & named anchors — calibrate against these; do not re-score them casually
+
+Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79, solid ≤ 64), so a re-score does not require re-defining badge thresholds.
+
+- **90–98 — national-elite.** Gelnovatch (UVA, 98), Noonan (Clemson, 97), Cirovski (Maryland, 96), Wiese (Georgetown, 95), Yeagley (Indiana, 95). NCAA-champion pedigree, deep coaching trees, prolific pro/international producers, top licences, dedicated position coaching.
+- **80–89 — elite.** Somoano (UNC, 88 — 2011 national title, strong pro output), Embick (Akron, 88), Hudson (SMU, 89). Proven high-major winners and developers, clear pro pipeline attributable to them.
+- **65–79 — strong.** Solid D1 head coaches with a good CV and some pro output; mid-major standouts; and the **ceiling-free cases**: an elite-CV coach at a structurally constrained program — **Hackworth (Navy, 74)** is the worked anchor (ex-MLS head coach, USMNT U-17, USL title; anchored *below* national-champ college coaches and mentor Vidovich (Pitt 76), *above* Plotkin (Army 70) — a service-academy ceiling on the *program* does not cap the *coach's* CV). A genuinely strong JUCO/lower-division developer with real D1-transfer/pro production belongs here too.
+- **48–64 — solid.** Early-career D1 coaches, lower-resource programs, thin or undocumented pedigree, limited attributable next-level output. Most JUCO/D2/D3 coaches sit here **on evidence, not by rule.**
+
+**No hard division ceiling — this is the deliberate difference from §5a.** §5a caps dev scores by division because *environment* is bounded by a program's staffing/facilities budget. **Coaching quality is a property of the person, not the program**, so a coach is scored on their own CV and development record regardless of where they currently work — Hackworth is precisely why. In practice the top bands are D1-dominated because the deepest CVs and the most verifiable pro output concentrate there, but that is an *evidence* outcome, not a cap. A JUCO coach reaching `rk-strong` (65+) is legitimate if the personal record supports it.
+
+**Prestige is not a proxy for coaching quality.** A big conference does not make its coach elite (the same error §5a flags for conference-banding dev scores). Score the CV, not the crest — the results-halo strip already applied to *school* scores (ND, Duke, Syracuse) is the same discipline applied to *coaches*.
+
+### Process per coach
+
+1. Gather Tier-1 evidence for both pillars from the school's own men's-soccer staff/bio page (+ reputable records for prior stops).
+2. Weigh Pillar A and Pillar B against the named anchors above.
+3. Assign one integer 0–100.
+4. Write **`overallScoreNote`** (companion field, to be added in Step 1 of the re-baseline — the analog of `devScoresNote`) citing the CV and development evidence observed. Its **presence** marks the coach as scored against §5d and gates any future validator check; absent = legacy value, pending re-score. Min ~20 chars.
+5. **Do not partially re-score.** Correcting one coach's facts and re-scoring only them (the Solomon trap — see §6) moves the ranking without making it more correct. Re-score **all 110 in one campaign**, then re-rank once by `overallScore` descending (sequential, no gaps) and update every `rank` + `rankClass`.
+
+### v43 sequence (mirrors the §5a/§6 devScore roll-out)
+
+- **Step 0 — this commit (v43.0, doc-only):** rubric written to §5d. No score or rank moved. Also deprecates the `ptPathScore` "PT Path" badge from the coach card (owner-approved v43.0 — the label collided with the schools' *Pre-PT Path* physical-therapy meaning, which ACU Alignment already covers; the field stays in the data as inert legacy, no longer rendered).
+- **Step 1 — add `overallScoreNote`** to the coaches.json schema (§5) + a gated validator check (present-⇒-check, absent-⇒-skip), so the campaign can begin without moving the baseline.
+- **Step 2 — re-score all 110 against §5d**, batched (by conference file, the proven v38/§5a pattern — one file per commit, validator green each time), then a single global re-rank. Coach scores have **no `fitOlivier` cascade** (scores.js reads only school-level `devScores`, never coaches.json), so unlike the §5a re-baseline this campaign cannot move any school's Fit rank — the only outputs are the coach rank order and the "Overall" badge.
+
+---
+
 ## 6. Version History & Current State
 
-**Current version: v42.32 (July 2026).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. (v42.19–v42.28 = the §5a devScore re-baseline batches + the v42.22 CAA coach fix; v42.29 = the 8-coach Change-Type-2 reconciliation; v42.30–v42.31 = Vermont HC timeline correction; v42.32 = Navy/Hackworth coach re-score. CHANGELOG.md now has a gapless v42.18→v42.32 history.) All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
+**Current version: v43.0 (July 2026) — opens the coach `overallScore` rubric series (§5d).** Always confirm with `git log --oneline -1` and `guideVersion` in `athletes/olivier.json`. (v42.19–v42.28 = the §5a devScore re-baseline batches + the v42.22 CAA coach fix; v42.29 = the 8-coach Change-Type-2 reconciliation; v42.30–v42.31 = Vermont HC timeline correction; v42.32 = Navy/Hackworth coach re-score; v42.33–v42.34 = dead-host fixes + Stony Brook coach → validator Issues 0. **v43.0 = §5d Coach Rubric written (doc-only, Step 0) + `ptPathScore` "PT Path" card badge deprecated.** CHANGELOG.md now has a gapless v42.18→v43.0 history.) All v39 work is committed and pushed (`c456259` = v39.1–v39.6 squashed, `09c2ab7` = v39.7, `69cfc55` = failures summary); v40.1/v40.2 followed. See `v39_session_failures_summary.md` for the v39 incident log.
 
 Full per-version history lives in **CHANGELOG.md** — moved out of this file in v35.2 to cut per-session context cost (this file is read at the start of every session; the changelog is read only when history is needed). Phase 8 appends new version notes to CHANGELOG.md, not here.
 
@@ -1144,7 +1215,7 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
   **Modelled impact of §5a's ceilings alone** (before any re-scoring): 24 schools above ceiling, 86 in-band, none below floor. Mean dev drop across the affected 24 is ≈4.9 points ⇒ ≈1.2 Fit points (dev = 60% of Soccer Quality = 24% of Fit). Worst: Chapman −10, Indian Hills −10, PBA/St. Edward's/Oklahoma City/Daytona State −8.
 
   **Still open:** `DIV_STRENGTH` NJCAA DI (0.6) vs DII split (e.g. 0.55 — effect <1 Fit point, cosmetic) — note §5a deliberately puts the DI/DII distinction *here* and in `nextLevelOutput`, not in the dev bands. Consider a soft dev-score sanity REPORT script (sorted cross-division table for eyeballing) — not a hard validator check, since dev scores are judgment values. Related, owner aware but undecided: Elite JUCO bar tightening (21 of 29 currently Elite; strict v37.4 criteria would demote ~7 — Glendale, Mohave, Johnson County, Coastal Bend, Dodge City, Blinn, Iowa Lakes).
-- **COACH overallScore NEEDS A RUBRIC — v43 (owner-directed, v42.10).** `overallScore` is a hand-assigned judgment value with no written standard, scored across many sessions and eras. **This is precisely the condition that produced the devScores incoherence §5a exists to fix** (see §6's devScores diagnosis: values scored on different questions, by different sessions, against no anchor). Austin Solomon (Mercyhurst) is the worked example: his stored bio claimed he was a first-year coach "building the roster from scratch," when he had won the NEC regular-season title in the program's first D1 season and taken 2024 NEC Coaching Staff of the Year. **v42.8 corrected the facts and deliberately left `overallScore` at 62 (rank 76)** — re-scoring one coach on corrected facts while 109 others rest on unaudited ones moves the ranking without making it more correct. Do coaches the way §5a did dev scores: write the rubric first (one absolute scale, named anchors, explicit evidence requirements per sub-score: `devScore`, `tacticalScore`, `ptPathScore`), commit it, then re-score all 110 and re-rank once.
+- **COACH overallScore RUBRIC — v43. STEP 0 DONE (v43.0): rubric written, see §5d.** `overallScore` was a hand-assigned judgment value with no written standard, scored across many sessions and eras — the identical condition that produced the devScores incoherence §5a fixed. Austin Solomon (Mercyhurst) is the worked example: his stored bio claimed a first-year coach "building the roster from scratch," when he had won the NEC regular-season title in the program's first D1 season and taken 2024 NEC Coaching Staff of the Year. **v42.8 corrected the facts and deliberately left `overallScore` at 62 (rank 76)** — re-scoring one coach while 109 rest on unaudited facts moves the ranking without making it more correct. **Design settled & owner-approved v43.0 (see §5d):** single holistic score (not a sub-score average); measures coaching pedigree/system + player development/next-level output only; legacy `tacticalScore`/`devScore`/`ptPathScore` retired from the standard; **no** hard division ceiling (coaching is a person attribute — Hackworth is the anchor); **no `fitOlivier` cascade** (scores.js never reads coaches.json — this campaign moves only the coach rank order + "Overall" badge). Remaining: **Step 1** — add `overallScoreNote` field + gated validator check. **Step 2** — re-score all 110 against §5d (batched by conference file, validator green each time), then one global re-rank.
 
 - **COACH BIO AUDIT — men's/women's conflation risk, v43 (owner-directed, v42.10).** `coaches.json` stated Austin Solomon was "appointed 2025 following Rich Wall's departure to Youngstown State." **Rich Wall coached Mercyhurst's WOMEN'S team and left for Youngstown State WOMEN'S soccer — he never coached the men.** An entire men's coach record was built from the women's programme's staffing history. This was found by accident while correcting `confRecord`; **no systematic search for other instances has been done.** Suggested first pass: script a screen flagging any coach entry whose `yearsHC` conflicts with a dated statement in `bio`/`record`, or whose bio names a coach who does not appear on that school's current men's staff directory. Then verify each hit via Chrome MCP against the school's own men's-soccer pages (§15 Rule 0 — a staff-directory *summary* invented Solomon's appointment year as 2022; only the school's own dated article, "second-year head coach," Nov 2024, was correct).
 

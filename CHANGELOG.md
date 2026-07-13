@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v42.32 (July 2026) — Navy / John Hackworth coach re-score (Change Type 2) — resolves the v42.29 under-score deferral + stale-staff fix
+
+Resolves the v42.29 deferral that Navy's John Hackworth was floored on service-academy program context rather than coach quality. Verified his full career Tier-1 from navysports.com's own bio (named Navy HC Dec 2025, first season 2026): D1 HC at USF (1998 Conference USA title + Coach of the Year), MLS HC (Philadelphia Union), USL Championship winner (Louisville City, 2018), USMNT U-17 World Cup head coach, 2025 MLS NEXT Pro Coach of the Year.
+
+- **`overallScore` 42 → 74** (`data/coaches.json`, `hackworth_navy`), rank **110 → 40**, rankClass rk-solid → rk-strong. Owner-approved. Anchored against real neighbors: set **below** his Wake Forest mentor Jay Vidovich (Pittsburgh, 76 — a national champion) and the active national-champion college coaches (McIntyre/Syracuse 79), but well **above** Army's Plotkin (70) given a far stronger head-coaching/international pedigree. The service-academy recruiting ceiling and a 25-year gap since his last college HC job (2001) keep him strong-tier, not elite. `tacticalScore` 50→76, `devScore` 45→72; `record`/`bio`/`strengths` rewritten to his real CV (bio keeps the mandatory ⚠ service-academy warning). Placeholder staff replaced with the real Navy staff (Risbridger, Chiles, Wilson).
+- **All 110 coaches re-ranked** by overallScore desc (stable tiebreak = prior rank): only Hackworth's rankClass changed (0 pre-existing band mismatches under elite≥80 / strong 65-79 / solid≤64), 71 rank numbers shifted by the single insertion, ranks gapless 1–110. coaches.json rewritten via the verified byte-identical json.dump round-trip (indent=2, ensure_ascii=False; no float fields to corrupt).
+- **Stale-staff bug fixed** (`data/aac.json`): Navy's school-level `staff[]` still listed **Chris Kampe** (the previous head coach) as HC — never updated when the `coach{}` block moved to Hackworth. Replaced with the current staff (Hackworth + Risbridger + Chiles + Wilson) and enriched the `coach.profile` with Hackworth's pedigree (service-academy + congressional-nomination warnings retained). Two-file rule honoured; COACH-SYNC clean.
+- **Validated:** `validate_schools.py` PASS (110); `validate_consistency.js` held at the **1-issue baseline** (Stony Brook). Browser smoke test: Coaches Rankings shows Hackworth at rank 40 / 74 / rk-strong with gapless numbering; Navy modal shows the corrected staff (no Kampe); zero console errors. No fitOlivier impact (coach score is independent of the Fit Score).
+- guideVersion v42.31 → v42.32.
+
+---
+
 ### v42.31 (July 2026) — CORRECTION of v42.30: Dow coached Vermont through 2025; Dubois is a 2026 appointee
 
 **v42.30 mis-attributed the 2025 Vermont season and must be corrected.** While doing the Penn State follow-up, gopsusports.com's official Dec 11 2025 hiring release proved the timeline v42.30 got wrong: *"[Dow] comes to Happy Valley after serving as the head coach at Vermont for the last nine years... In 2025, Vermont finished the regular season without a loss (12-0-5)... claim the conference title... a program-record 13 all-conference honors under his watch."* **Rob Dow coached Vermont through the 2025 season (won the 2025 America East title), then left for Penn State in December 2025.** Adrian Dubois is his successor, appointed for the **2026** season — he has not yet coached a Vermont game.

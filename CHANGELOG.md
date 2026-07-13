@@ -62,6 +62,66 @@ Reconciles the head-coach names surfaced (but deliberately left untouched) durin
 
 ---
 
+### v42.28 (July 2026) — devScore re-baseline §5a: Big East — COMPLETES the 110/110 re-baseline
+
+Change Type 13 — training-environment-only re-score of all 11 Big East schools against §5a, from live men's-soccer staff directories + Tier-1 facilities. Three anchors held and live-confirmed: Georgetown 92/94/88 (GPS Catapult + video), Creighton 75/73/76 (the ~75 reference), DePaul 60/58/63 (modest-investment reference). St. John's 80→75 (technical score exceeded the Creighton anchor despite a much smaller stadium); Butler 66→68 (4 coaches incl GK + 5,000 venue). UConn/Marquette/Providence/Seton Hall/Xavier/Villanova held within ±2 (the Big East was already anchored by DePaul). No Glossary edit. **This batch completes the §6 devScore re-baseline: validate_consistency.js reports 110/110 re-baselined, 0 over division ceiling, Issues:1 (Stony Brook).** guideVersion v42.27 → v42.28.
+
+---
+
+### v42.27 (July 2026) — devScore re-baseline §5a: Big Ten
+
+Change Type 13 — all 11 Big Ten schools re-scored against §5a. Anchors held: Indiana 93/88/92, Maryland 93/91/90; UCLA held 87 (Glossary sports-science exemplar; tactical trimmed to the 4-coach elite tier). Michigan 82→79 (no dedicated sport scientist); Penn State 77→79, Ohio State 76→78 (dedicated performance staff). Conference/results banding corrected **up** for the mid-tier: Northwestern 65→72, Wisconsin 66→71, Michigan State 68→72, Rutgers 68→73, Washington 71→74 — each has a dedicated soccer stadium + 4 full-time coaches + Big Ten S&C. Cascaded fit→overall→value; Issues:1, 99/110 re-baselined. Live staff surfaced coach changes (Warming→Dow PSU, Lenahan→Payne NW, Trask→Jones Wisc) — logged as separate Change Type 2, resolved in v42.29. guideVersion v42.26 → v42.27.
+
+---
+
+### v42.26 (July 2026) — devScore re-baseline §5a: ACC
+
+Change Type 13 — all 13 ACC schools. Anchors held and confirmed live, unmoved: Virginia 95/90/88, Clemson 95/93/92. Results-halo stripped from the environment score: SMU 88→87, Stanford 88→86, Notre Dame 90→86, UNC 87→85, Wake Forest 87→84, Duke 85→82, Syracuse 78→74, Pittsburgh 77→74; Louisville 70→74 (dedicated Lynn Stadium under-credited); Cal 76→77, NC State 72→73 held near current. Cascaded; Issues:1, 88/110 re-baselined. **Pittsburgh live staff not re-verified** (pittpanthers.com rendered blank in both browsers) — scored from stored Tier-1. guideVersion v42.25 → v42.26.
+
+---
+
+### v42.25 (July 2026) — devScore re-baseline §5a: non-major D1 (d1-other)
+
+Change Type 13 — all 6 non-major D1 schools (Akron, GCU, Denver, Vermont, Mercyhurst, UCA), environment-only. devAvg → fitOlivier: UCA 74→71 / fit 61 (unch); GCU 82→78 / 70→69; Akron 85→80 / 60→59; Denver 84→79 / 56→55; Vermont 73→72 / 54 (unch); Mercyhurst 70→63 / 35→33 (results-halo removed). Cascaded fit→overall→value; Issues:1, ~65/110 re-baselined. *(This commit landed in git with no message; entry reconstructed from the diff during the v42.32 backfill.)* guideVersion v42.24 → v42.25.
+
+---
+
+### v42.24 (July 2026) — devScore re-baseline §5a: AAC
+
+Change Type 13 — all 10 AAC programs re-scored from each program's live men's-soccer staff directory. Notable: FIU 88→75 and USF 87→78 (results-inflation removed), Charlotte 65→74 (deepest AAC staff, previously under-scored). devScoresNote added citing live staffing + Tier-1 facilities; cascaded fit→overall→value. Issues:1, 59→69/110 re-baselined. guideVersion v42.23 → v42.24.
+
+---
+
+### v42.23 (July 2026) — devScore re-baseline §5a: Big West
+
+Change Type 13 — all 7 Big West schools, environment-only. dev moves: UCSB 82→78, Cal Poly 66→62, UC Davis 62→61, UC Irvine 65→64, UC Riverside 52→53, UC San Diego 62→63, CSU Fullerton 50→57. The one real correction is **CSU Fullerton +7** — its prior 50 was depressed by weak pipeline/results (which §5a excludes); on environment alone (4 coaches incl a GK specialist + team AT) it out-staffs several UCs. CSUF's housing "limited" −3 preserved through the cascade (dev +7 → fit only +2). Issues:1, 52→59/110. Found in passing (deferred, resolved v42.29): Cal Poly stored HC 'Steve Sampson' stale vs live 'Oige Kennedy'. guideVersion v42.22 → v42.23.
+
+---
+
+### v42.22 (July 2026) — correct 3 stale CAA head coaches (Change Type 2) + dead Hofstra URL
+
+Replaced 3 stored head-coach names, verified live against each school's own staff directory: William & Mary Tsakiris → **Chris Norris** (23rd yr, 2 CAA titles; ov 63); Hofstra Coufal → **Stephen Roche** (promoted Jan 2026, tactical lead for 4 straight CAA titles; ov 74→72, first-year); Northeastern Ainscough → **Jeremy Bonomo** (2× Horizon COY; ov 65→66). Two-file rule applied (caa.json coach{}/staff[] + coaches.json); all 110 re-ranked (7 shifts, sequence intact). Fixed dead host hofstraathletics.com (NXDOMAIN) → gohofstra.com in caa.json url, coaches.json url, and app.js DOMAINS. Issues:1. guideVersion v42.21 → v42.22.
+
+---
+
+### v42.21 (July 2026) — devScore re-baseline §5a: CAA
+
+Change Type 13 — all 9 CAA schools, environment-only. dev moves: Charleston 76→74, William & Mary 62→65, Hofstra 68→69, Northeastern 60→59, Drexel 58 (unch), Delaware 65→67, Elon 65→61 (title-inflated fitness trimmed), Monmouth 55 (unch), Stony Brook 60→59. Fit moves ±1 (these D1 programs were never results-inflated like the JUCOs). Cascaded; Issues:1, 43→52/110. Found in passing (fixed next in v42.22): stale HCs at William & Mary / Hofstra / Northeastern. Stony Brook coach still TBD (official site unreachable). guideVersion v42.20 → v42.21.
+
+---
+
+### v42.20 (July 2026) — devScore re-baseline §5a: D2 / NAIA / D3
+
+Change Type 13 — all 12 D2/NAIA/D3 schools; every devAvg now sits at or below its division ceiling (D2 76 · NAIA 72 · D3 66), dropping the validator's "legacy above ceiling" count 8→0. devAvg → fit: PBA 84→75 / 64→61, St. Edward's 84→73 / 64→61, Barry 84→73 / 66→63 (national titles are results — removed), Lynn 82→73 / 55→53, Nova 77→75 / 58→57, Cal State LA 76→72 / 60→59, Oklahoma City (NAIA) 80→69 / 61→59, Keiser 77→71 / 48→47, Chapman (D3) 76→66 / 48→45 (held at the hard D3 ceiling), Charleston WV 70→72 / 48→49, Georgian Court 64 (unch, re-scored on evidence), Columbia College 58→57. Also fixed uc_charleston's malformed URL. Cascaded; Issues:1. guideVersion v42.19 → v42.20.
+
+---
+
+### v42.19 (July 2026) — devScore re-baseline §5a: Ivy (Princeton, Yale)
+
+Change Type 13 — Step 5 Ivy batch, scored on the absolute national scale from browsed athletics staff directories + v38 Tier-1 facility data (environment only). Ivy ceiling 88. Princeton 88/85/80 → 85/82/77 (devAvg 84→81; fitOlivier 42→41); Yale 82/80/79 (devAvg 80, unchanged — evidence confirms the existing score). devScoresNote added to both (activates the validator DEV-RUBRIC ceiling check). Issues:1. guideVersion v42.18 → v42.19.
+
+---
+
 ### v42.18 (July 2026) — fundingPathway penalty implemented (§5c, owner-approved) — Step 4 of the devScores re-baseline sequence
 
 Implements CLAUDE.md §5c: scholarship availability is a **structural** property of a program (a D3/Ivy/CCCAA school is forbidden to offer athletic money to anyone at any price; a D2/NAIA/NJCAA-DII school may but is capped by rule), which is distinct from *cost* (a price tag, correctly removed from the Fit Score in v37.1). Two schools with identical Fit shouldn't rank equal when one can fund an athlete for playing and the other structurally cannot.

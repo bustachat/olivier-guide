@@ -132,11 +132,40 @@ for (let i = 0; i < ranks.length; i++) if (ranks[i] !== i + 1) { note('COACH', `
 coaches.forEach(c => {
   if (!idSet.has(c.schoolId)) note('COACH', `${c.name} schoolId '${c.schoolId}' not a school`);
   if (!['rk-elite', 'rk-strong', 'rk-solid'].includes(c.rankClass)) note('COACH', `${c.name} rankClass='${c.rankClass}'`);
+  // rankClass ↔ overallScore band coherence (GLOBAL — a badge colour that contradicts the
+  // score is always wrong). Bands §5d = the existing cutoffs: elite ≥80 / strong 65-79 / solid ≤64.
+  if (typeof c.overallScore === 'number' && ['rk-elite', 'rk-strong', 'rk-solid'].includes(c.rankClass)) {
+    const band = c.overallScore >= 80 ? 'rk-elite' : c.overallScore >= 65 ? 'rk-strong' : 'rk-solid';
+    if (c.rankClass !== band) note('COACH', `${c.name} overallScore=${c.overallScore} implies ${band} but rankClass='${c.rankClass}' (§5d bands: elite ≥80 / strong 65-79 / solid ≤64)`);
+  }
   const s = schools.find(x => x.id === c.schoolId);
   if (s && s.coach && s.coach.name && s.coach.name !== c.name) note('COACH-SYNC', `${c.schoolId}: conf JSON coach '${s.coach.name}' vs coaches.json '${c.name}' — two-file rule violated`);
 });
 const coachSchoolIds = new Set(coaches.map(c => c.schoolId));
 schools.filter(s => s.profileDepth === 'full' && !coachSchoolIds.has(s.id)).forEach(s => note('COACH', `${s.id} full-profile but no coaches.json entry`));
+
+// ── COACH-RUBRIC (added v43.0 / §5d Step 1): the coach overallScore standard ──
+// overallScore is a holistic judgment value and is deliberately NOT recomputable here —
+// §5d chose a single holistic score, not a sub-score average, so there is no formula to mirror
+// (unlike fitOlivier). What IS checkable, and only for coaches that CLAIM to have been scored
+// against §5d, is that the score is a clean integer 0–100. The claim is `overallScoreNote`: it
+// cites the Tier-1 CV/development evidence the score was drawn from.
+//
+// Coaches with no overallScoreNote predate the v43 rubric — the re-score backlog (CLAUDE.md §6 /
+// §5d Step 2), reported as PROGRESS, not issues, so this check cannot inflate the baseline on day
+// one (no coach carries a note yet). Each note activates the check permanently: a one-way door,
+// exactly like devScoresNote (§5a). The rankClass↔band coherence check above is separate and GLOBAL.
+let coachRescored = 0, coachLegacy = 0;
+coaches.forEach(c => {
+  const scored = typeof c.overallScoreNote === 'string' && c.overallScoreNote.trim().length >= 20;
+  if (!scored) {
+    if (c.overallScoreNote !== undefined) note('COACH-RUBRIC', `${c.name} overallScoreNote present but not a substantive citation (needs the Tier-1 CV/development evidence observed, §5d)`);
+    coachLegacy++;
+    return;                                     // legacy score — backlog, not an issue
+  }
+  coachRescored++;
+  if (!Number.isInteger(c.overallScore) || c.overallScore < 0 || c.overallScore > 100) note('COACH-RUBRIC', `${c.name} overallScore=${c.overallScore} — must be an integer 0–100 (§5d)`);
+});
 
 // ── athlete config ──
 const sumW = o => Object.values(o).reduce((a, b) => a + b, 0);
@@ -303,6 +332,7 @@ for (let i = 0; i < pr.length; i++) if (pr[i] !== i + 1) { note('PRESTIGE', `con
 console.log(`Schools: ${schools.length}, Coaches: ${coaches.length}, Conferences: ${conferences.length}, Prestige rows: ${prestige.length}`);
 const devTotal = schools.filter(s => s.profileDepth === 'full' && s.devScores).length;
 console.log(`Dev rubric (§5a): ${devRebaselined}/${devTotal} re-baselined · ${devLegacyOverCeiling} legacy schools still above their division ceiling (backlog, not counted as issues)`);
+console.log(`Coach rubric (§5d): ${coachRescored}/${coaches.length} re-scored · ${coachLegacy} legacy pending (backlog, not counted as issues)`);
 console.log(`confRecord: ${confRecordBacklog} schools with a run of >=3 repeated generic labels — unresearched conference history (backlog, not counted as issues)`);
 console.log(`Issues: ${issues.length}  (July 2026 baseline: 174 — see CLAUDE.md §6 v36 backlog; must never increase, target zero)`);
 issues.forEach(i => console.log(i));

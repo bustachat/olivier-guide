@@ -6,6 +6,19 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v43.1 (July 2026) — Coach Rubric Step 1: `overallScoreNote` field + gated `COACH-RUBRIC` validator (baseline held at 0)
+
+Builds the guardrail for the §5d re-score campaign without moving the baseline — the coach analog of §5a's Step 1 (`devScoresNote`, v42.1). No coach score or rank changed.
+
+- **`overallScoreNote` added to the coaches.json schema (§5).** A substantive note (string, ≥20 chars) citing the Tier-1 CV/development evidence marks a coach as re-scored against §5d. Presence is a **one-way door**, exactly like `devScoresNote`: once written it permanently activates the check for that coach.
+- **`COACH-RUBRIC` check added to `validate_consistency.js`** — gated on the note. Scored coach ⇒ verify `overallScore` is an integer 0–100. Note present but <20 chars ⇒ flagged non-substantive. No note ⇒ legacy, reported as backlog **progress, not an issue** — so day one holds at `0/110 re-scored · 110 legacy pending`, Issues unchanged. (overallScore is holistic per §5d — there is no formula to recompute, so unlike fitOlivier it is not recalculated, only range/integer-checked.)
+- **Global rankClass↔score band-coherence check added** (all 110, not gated): elite ≥80 / strong 65-79 / solid ≤64. A badge colour that contradicts the score is always wrong; current data is fully coherent, so it holds at zero — and it will catch a re-rank slip during Step 2.
+- **New progress line** in the validator report: `Coach rubric (§5d): X/110 re-scored · Y legacy pending`.
+- **Verified:** `node --check validate_consistency.js` OK; full run **Issues: 0** (unchanged); gate proven on a scratchpad copy across 5 cases (baseline, valid note, placeholder note, band mismatch, non-integer score) — each fired exactly as designed; real `coaches.json` never touched.
+- Not observable in the browser (validator-only + schema doc). guideVersion v43.0 → v43.1.
+
+---
+
 ### v43.0 (July 2026) — Coach overallScore Rubric written (§5d, Step 0, doc-only) + "PT Path" badge deprecated
 
 Opens the v43 coach-scoring series. Coach `overallScore` was a hand-assigned judgment value with no written standard (110 values scored across many sessions/eras against no anchor) — the identical failure mode §5a fixed for school dev scores. This commit writes the standard; it moves **no** score and **no** rank. Owner-approved design (three decisions taken this session).

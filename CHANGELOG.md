@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v43.2 (July 2026) — Coach Rubric Step 2, Batch 1/10: ACC 12 coaches re-scored vs §5d (Rhythm B — no re-rank yet)
+
+First re-score batch of the §5d campaign. Rhythm decided this session: **commit scores per batch, re-rank ONCE at the end (Batch 10)** — the committed §5d "re-rank once" / Solomon rule. §5a's per-batch pattern does not transfer because devScores are absolute per-school while coach `overallScore` feeds a *relative* global ranking that is only truthful once all 110 sit on the same yardstick. So this batch edits `overallScore` + `overallScoreNote` + `rankClass` only; the stored `rank` ordinals are deliberately left stale until the global re-rank (the validator checks rank is a 1..110 permutation, not that order matches score — stays green).
+
+- **12 of 13 ACC coaches re-scored** against §5d, each with a Tier-1 `overallScoreNote` from the school's own men's-soccer bio page (Chrome MCP, §15 Rule 0).
+  - **Anchors confirmed & held:** Gelnovatch 98, Noonan 97, Somoano 88.
+  - **Held on evidence:** Muuss 86, Griffin 75, Hayden 61.
+  - **Halos stripped (down):** Riley 91→84 (ND prestige/poll halo), Hudson 89→85, Kerr 84→82 (Duke-brand halo).
+  - **Under-scores corrected (up):** **Gunn 81→95** (3 consecutive NCAA titles 2015-17 — only he and Arena ever; Jordan Morris/USMNT; prior 81 scored recent form, an inverse halo) and **McIntyre 79→83** (2022 national champion + two full internationals developed — Robinson/USMNT, Buchanan/Canada; rk-strong→rk-elite).
+  - **Vidovich (Pitt) held at 76** — bio prose would not render (WMT event-widget trap on this host); cross-referenced Tier-1 (2007 Wake Forest title, coaching tree). **Flagged as a likely upward-re-score candidate** for a session that can render the bio; 76 also preserves the §5d Hackworth<mentor-Vidovich marker.
+- **13th ACC coach deferred:** NC State's baseline coach **Kelly Findley has departed — Marc Hubbard is now HC** (confirmed on the current 2026 roster). Per owner decision, coach changes discovered mid-campaign are handled as **dedicated Change Type 2 fixes**, not folded into a re-score batch. Findley left as legacy (no §5d note, no score change) pending that fix. So ACC = **12/13 re-scored**.
+- Only one `rankClass` change (McIntyre rk-strong→rk-elite); all others stayed in-band. Coach scores have **no fitOlivier cascade** — no school Fit rank moved.
+- **Verified:** `node validate_consistency.js` → **Issues: 0**, `Coach rubric (§5d): 12/110 re-scored`. Browser (localhost:8787): 110 coach cards render, `coachData` reflects new scores/notes/rankClass, Findley confirmed legacy (note-length 0), no console errors. guideVersion v43.1 → v43.2.
+
+---
+
 ### v43.1 (July 2026) — Coach Rubric Step 1: `overallScoreNote` field + gated `COACH-RUBRIC` validator (baseline held at 0)
 
 Builds the guardrail for the §5d re-score campaign without moving the baseline — the coach analog of §5a's Step 1 (`devScoresNote`, v42.1). No coach score or rank changed.

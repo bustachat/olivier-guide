@@ -905,7 +905,7 @@ const DOMAINS = {
   duke:           'goduke.com',
   ncstate:        'gopack.com',
   louisville:     'gocards.com',
-  pittsburgh:     'pittpanthers.com',
+  pittsburgh:     'pittsburghpanthers.com',
   stanford:       'gostanford.com',
   syracuse:       'cuse.com',
   cal:            'calbears.com',

@@ -1739,11 +1739,11 @@
       "technical": 73,
       "fitness": 74
     },
-    "devScoresNote": "v42.26 §5a re-baseline (training environment only). LIVE STAFF NOT RE-VERIFIED — pittpanthers.com rendered blank in both the in-app browser and real Chrome this session (JS/SPA render failure, not a dead host). Scored from Tier-1 stored data: HC Jay Vidovich (elite pedigree — 2007 national title at Wake Forest; Pitt reached the 2020 & 2021 College Cup finals, which are results and excluded). Stored facilities: Ambrose Urbanic Field at the Petersen Sports Complex, 735-seat FieldTurf SHARED with baseball/softball/lacrosse (not soccer-specific), Trees Hall shared S&C. Modest shared multi-use facility with a strong coach; trimmed slightly from 78/76/77 to reflect the non-soccer-specific home venue under the environment lens.",
+    "devScoresNote": "v42.26 §5a re-baseline; LIVE-VERIFIED v42.33 via pittsburghpanthers.com (the working host — the stored pittPanthers.com is a dead alias that blanks, which is why v42.26 scored it from stored data). Live MSOC staff = HC Jay Vidovich + 3 assistants (Cregan, Marshall, Dambrot): a deep 4-coach staff, but NO soccer-dedicated S&C or sports-science staffer listed. HC pedigree elite (2007 Wake Forest national title; results excluded). Facilities: Ambrose Urbanic Field (735-seat FieldTurf, SHARED with baseball/softball/lacrosse — not soccer-specific), Trees Hall department-shared S&C. The facilityDetails GPS-Catapult / video / exercise-science-lab / UPMC resources are department-wide, not soccer-dedicated staff, so under §5a they do not lift the fitness sub-score. Live check confirms the conservative 75/73/74 — unchanged.",
     "coach": {
       "name": "Jay Vidovich",
       "title": "Head Coach",
-      "email": "jvidovich@pitt.edu",
+      "email": "msoccer@athletics.pitt.edu",
       "phone": "412-648-8240",
       "profile": "Experienced ACC coach who led Wake Forest to the 2007 NCAA Championship. At Pitt since ~2022, immediately establishing the program as an ACC contender — 2024 ACC Regular Season Champions in his tenure. Known for possession-based, technically refined soccer. Former Wake Forest success shows his ability to build elite programs at private ACC schools."
     },
@@ -1752,7 +1752,7 @@
       "soccer"
     ],
     "facilities": [
-      "Ambrose Urbanic Field (3,500 cap)",
+      "Ambrose Urbanic Field (735 cap)",
       "UPMC Sports Medicine Access",
       "Trees Hall S&C Centre"
     ],
@@ -1764,7 +1764,7 @@
       "EXSC 1920 — Clinical Exercise Testing"
     ],
     "rec": "Pittsburgh punches above its weight — a genuine city with one of the best sports medicine environments in the world via UPMC. 2024 ACC Regular Season Champions shows the soccer quality. Cold winters are a real lifestyle challenge for Olivier. UPMC's pre-PT access is unmatched.",
-    "url": "https://pittPanthers.com/sports/mens-soccer",
+    "url": "https://pittsburghpanthers.com/sports/mens-soccer",
     "domain": "pitt.edu",
     "culture": {
       "vibe": "Pittsburgh is a genuinely great city that has undergone a remarkable renaissance — the 'most liveable city' moniker is earned. The university sits in Oakland, a vibrant student-and-medical district shared by Carnegie Mellon, UPMC, and Pitt. The city is architecturally beautiful, walkable, multicultural, and passionate about its sports (Steelers, Pirates, Penguins).",

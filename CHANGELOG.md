@@ -6,6 +6,23 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v42.33 (July 2026) — Pittsburgh live-verify (resolves deferral) + index.html glossary UF/FIU fixes
+
+Two deferred items closed.
+
+**Pittsburgh dev-score live-verify (Change Type 13 verify — no score change).** Resolves the v42.26 deferral where Pittsburgh was scored from stored Tier-1 because the site blanked. Root cause found: the stored host `pittPanthers.com` is a dead alias; the working official host is **pittsburghpanthers.com**. Verified live there: MSOC staff = HC Jay Vidovich + 3 assistants (Bryce Cregan, Will Marshall, Robby Dambrot) — a deep 4-coach staff, but **no soccer-dedicated S&C or sports-science staffer listed**. Under §5a (soccer-dedicated staff, not department-wide UPMC/GPS/lab resources) the conservative **devScores 75/73/74 hold — unchanged, no cascade**. devScoresNote rewritten to record the live check.
+- **Dead-host fix (all instances):** `pittPanthers.com` → `pittsburghpanthers.com` in `data/acc.json` url, `data/coaches.json` url, and **`js/app.js` DOMAINS** (the favicon source — was broken).
+- **Tier-1 corrections found in passing:** coach email `jvidovich@pitt.edu` (a guess) → `msoccer@athletics.pitt.edu` (the site-listed contact) in acc.json coach{} + coaches.json (two-file rule; no overallScore change → no re-rank). Populated coaches.json `staff[]` (was empty) with the 3 verified assistants. Fixed the brief `facilities[]` capacity 3,500 → **735** to match `facilityDetails` (internal inconsistency).
+
+**index.html glossary drift (Change Type 11, smoke-tested).**
+- Academic-First lens said *"UF tops this lens despite having no men's varsity soccer"* — UF (Florida) fields no men's soccer and isn't one of the 110 schools. Replaced with the real ACU-alignment leaders: **"Indiana and FAU top this lens"** (both acuAlign 15). *(The other UF the backlog flagged — the sports-science line — was already corrected to "Maryland" in an earlier session.)*
+- Tactical Dev block still named **FIU (Russell)** as a top-tactical example, stale since FIU's dev dropped 88→75 in v42.24 (§5a mandates fixing moved anchors in this block). Replaced with **Clemson** (tactical 95).
+
+- **Validated:** `node --check js/app.js` OK; `validate_schools.py` PASS (110); `validate_consistency.js` held at the **1-issue baseline** (Stony Brook), COACH-SYNC clean, no fit drift. Browser-verified: Pitt modal shows the new staff/email/capacity and favicon loads; glossary shows the corrected lens text.
+- guideVersion v42.32 → v42.33.
+
+---
+
 ### v42.32 (July 2026) — Navy / John Hackworth coach re-score (Change Type 2) — resolves the v42.29 under-score deferral + stale-staff fix
 
 Resolves the v42.29 deferral that Navy's John Hackworth was floored on service-academy program context rather than coach quality. Verified his full career Tier-1 from navysports.com's own bio (named Navy HC Dec 2025, first season 2026): D1 HC at USF (1998 Conference USA title + Coach of the Year), MLS HC (Philadelphia Union), USL Championship winner (Louisville City, 2018), USMNT U-17 World Cup head coach, 2025 MLS NEXT Pro Coach of the Year.

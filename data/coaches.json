@@ -1637,12 +1637,31 @@
       "UPMC sports medicine environment",
       "Real city — Pittsburgh"
     ],
-    "staff": [],
+    "staff": [
+      {
+        "name": "Bryce Cregan",
+        "role": "Assistant Coach",
+        "email": "bcregan@athletics.pitt.edu",
+        "bg": "Full-time assistant on Vidovich's Pitt staff."
+      },
+      {
+        "name": "Will Marshall",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      },
+      {
+        "name": "Robby Dambrot",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Full-time assistant."
+      }
+    ],
     "contact": {
-      "email": "jvidovich@pitt.edu",
+      "email": "msoccer@athletics.pitt.edu",
       "phone": "412-648-8240"
     },
-    "url": "https://pittPanthers.com/sports/mens-soccer",
+    "url": "https://pittsburghpanthers.com/sports/mens-soccer",
     "color": [
       "#fef9c3",
       "#003087"

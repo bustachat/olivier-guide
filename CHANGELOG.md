@@ -6,6 +6,19 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v42.31 (July 2026) — CORRECTION of v42.30: Dow coached Vermont through 2025; Dubois is a 2026 appointee
+
+**v42.30 mis-attributed the 2025 Vermont season and must be corrected.** While doing the Penn State follow-up, gopsusports.com's official Dec 11 2025 hiring release proved the timeline v42.30 got wrong: *"[Dow] comes to Happy Valley after serving as the head coach at Vermont for the last nine years... In 2025, Vermont finished the regular season without a loss (12-0-5)... claim the conference title... a program-record 13 all-conference honors under his watch."* **Rob Dow coached Vermont through the 2025 season (won the 2025 America East title), then left for Penn State in December 2025.** Adrian Dubois is his successor, appointed for the **2026** season — he has not yet coached a Vermont game.
+
+- **Root cause of the v42.30 error:** the uvmathletics.com coaches page, filtered to "2025," showed Dubois — but after a coaching change a Sidearm coaches page shows the *current* staff under the latest available season bucket (there is no "2026" bucket yet), NOT who actually coached that fall. The reliable signal was the destination school's hiring release, not the outgoing school's season-labelled staff page. (Lesson banked in memory.)
+- **What v42.30 got right and is kept:** email `soccer@uvm.edu` → `mens.soccer@uvm.edu` (confirmed on both the 2024 and current UVM staff pages); the 2025 stat facts (14-1-5, beat Bryant 2-0 in the AEC final, NCAA 1st-round loss to Hofstra) — but **re-attributed to Dow**, not Dubois.
+- **Corrected** (`data/d1-other.json` + `data/coaches.json`): coach title back to "Head Coach (2026, 1st season)"; profile/bio rewritten — Dubois appointed for 2026, succeeding Dow (→ Penn State, Dec 2025), has yet to coach a game; confRecord 2025 note re-attributed to "Rob Dow's final season before leaving for Penn State"; staff bg text no longer credits Dubois's current staff with Dow's 2025 title (Twomey noted as retained from the 2024 championship staff); `gpa.note`, `fin.internationalNote`, `rec` re-worded to "2026 appointee." coaches.json `record`/`bio`/`strengths` restored to program-inheritance framing; `overallScore` 66 unchanged.
+- **Penn State (`dow_pennstate`) confirmed CORRECT as stored in v42.29 — no change made.** All its claims verified against the PSU release: Dec 2025 hire, nine seasons, 129-41-21, five straight NCAA Tournaments, 2024 national title, 9th-best active win %, back-to-back AEC Staff of the Year (2024, 2025). The v42.30 note that flagged it as a "timeline bug" was itself mistaken.
+- **Validated:** `validate_schools.py` PASS (110); `validate_consistency.js` held at the **1-issue baseline** (Stony Brook); no fit drift (no score change). Browser smoke test clean.
+- guideVersion v42.30 → v42.31.
+
+---
+
 ### v42.30 (July 2026) — Vermont head-coach reconciliation (Change Type 2) — resolves the v42.29 Vermont deferral
 
 Resolves the Vermont deferral logged in v42.29. Live-verified against uvmathletics.com's own season-filtered coaching-staff pages that **Adrian Dubois is the real Vermont HC** (his name was already correct in the guide) — but the surrounding details wrongly assumed Rob Dow left a year later than he did. Tier-1 timeline: **2024** = Dow (NCAA championship, his final season); **2025** = Dubois's debut (14-1-5, won the America East title, NCAA 1st round exit vs Hofstra).

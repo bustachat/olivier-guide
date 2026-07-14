@@ -6,6 +6,28 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v43.5 (July 2026) — Coach Rubric Step 2, Batch 4/10: AAC 10 coaches re-scored vs §5d (Rhythm B — no re-rank yet)
+
+Fourth re-score batch; all 10 AAC coaches (grouped by `aac.json` schoolId) verified live via claude-in-chrome MCP against each school's own men's-soccer bio page (§15 Rule 0). Edits `overallScore` + `overallScoreNote` + `rankClass` only; stored `rank` left stale until the Batch-10 global re-rank (Rhythm B). No coach-change deferrals — all 10 baseline names matched the live 2026 staff pages (Army = **Brian** Plotkin, distinct from DePaul's Mark Plotkin; Temple = Bryan Green — both confirmed). Coach rubric now **44/110 re-scored**, validator Issues **0**, global band coherence intact.
+
+**Anchors confirmed & held:** Hackworth (Navy, 74 — the §5d worked anchor: ex-MLS HC Philadelphia Union, 2018 USL Championship, USMNT U-17 World Cup HC, 2025 MLS NEXT Pro CoY, USF 1998 CUSA title; elite CV at a service-academy program). Plotkin (Army, 70 — the named §5d sub-anchor below Hackworth: 2× Indiana national champ as a player, MLS Cup, USSF 'A', Notre Dame/Dartmouth pedigree, capped by the service-academy ceiling).
+
+**Corrections (down — halos stripped):**
+- **Kyle Russell (FIU) 91→73 (rk-elite→rk-strong)** — a prestige/results halo (the Jorden/UCLA pattern). fiusports.com: 52-33-18 (.592) over 6 seasons, 2021 CUSA CoY, 3 conf finals, but ceiling = 2022 Sweet 16 with a clear 2024-25 decline (.500/.447); USL-level playing career. Pillar B modest — Afrifa (8th overall MLS 2022) + Appiah (3rd rd); the stored "14 MLS draftees" is FIU's program-cumulative total, NOT under Russell.
+- **George Kiefer (USF) 88→83 (stays rk-elite)** — a deep 24-season, multi-program résumé (230-151-82, 14 NCAA apps, **2 Elite Eights** at USF, 5 conf titles; 2025 WAC title + Sweet 16 at GCU; D2 national champ as a player; UConn 2000 national-champ staff), but the Elite-Eight ceiling (no College Cup) + moderate pro output sit him just below the national-title anchors (below Masur 85).
+- **Joey Worthen (FAU) 72→62 (rk-strong→rk-solid)** — corrects a factual error: the stored "debut season"/`yearsHC=1` is WRONG (fausports.com: he completed his **ninth** season in 2025, HC since Feb 2017). The 2025 AAC double + first NCAA berth is real, but 8 prior seasons without an NCAA appearance, a mid-table C-USA history, and **no documented pro output** cap him mid-solid.
+- **Bryan Green (Temple) 58→56** — his standout credentials (Louisville associate HC through a 2019 Sweet 16 + 2021 ACC title) are ASSISTANT-level; his own D1 HC record is poor (22-69-13 / .267 across Belmont + Temple).
+
+**Corrections (up — under-scored):**
+- **Kevin Langan (Charlotte) 65→74** — a mid-major standout under-scored at the strong-band floor. charlotte49ers.com: 154-64-38 (.679) over 14 seasons, **11 NCAA appearances**, multiple conf titles, 2016 CUSA CoY, **16 players in the pros**, 5 All-Americans (stored `mlsPlayers=1` badly undercounts); ceiling is the NCAA 2nd round (no Sweet 16), keeping him upper-strong not elite.
+- **Tom McIntosh (Tulsa) 62→68 (rk-solid→rk-strong)** — deeper NCAA runs than Langan/Russell: 31st season, 293-210-63, 12 conf titles, 12 NCAA appearances incl. **2 Elite Eights (2004/09) + 3 Sweet 16s**. Held low-strong by a college-only playing career, a thin pro pipeline, and recent decline (3-9-3 in 2024).
+- **Richard Mulrooney (Memphis) 58→64 (top of solid)** — elite playing pedigree (3 MLS Cups, USMNT 2002 Gold Cup winner + World Cup alternate, Creighton 1996 College Cup) + a genuine program rebuild (back-to-back NCAA 2022-23, first-ever NCAA win, 2024 AAC reg-season title); held below strong by ~3 NCAA apps (none pre-2022) and thin pro development.
+- **David Lilly (UAB) held 56** — early-career D1 with a positive but low/mid-major record (2023 SoCon title + CoY at ETSU, Milligan NAIA), no D1 NCAA berth as HC.
+
+**Deferred data fixes (out of Rhythm-B scope this batch):** (1) Worthen `yearsHC` 1→9/10 + rewrite the false "debut season" record field (Change Type 2). (2) **UAB dead-host alias** — `blazerssports.com` → `uabsports.com` (in coaches.json `url`, aac.json `url`, and app.js DOMAINS favicon); the third dead-alias of the Pitt/Stony Brook pattern. (3) Russell record field: "14 MLS draftees" is program-cumulative, not under him.
+
+---
+
 ### v43.4 (July 2026) — Coach Rubric Step 2, Batch 3/10: Big East 11 coaches re-scored vs §5d (Rhythm B — no re-rank yet)
 
 Third re-score batch of the §5d campaign; all 11 Big East coaches (grouped by `big-east.json` schoolId) verified live via claude-in-chrome MCP against each school's own men's-soccer bio page (§15 Rule 0). Edits `overallScore` + `overallScoreNote` + `rankClass` only; stored `rank` left stale until the Batch-10 global re-rank (Rhythm B). No coach-change deferrals — all 11 baseline names matched the live 2026 rosters. Coach rubric now **34/110 re-scored**, validator Issues **0**.

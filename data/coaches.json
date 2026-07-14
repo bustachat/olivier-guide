@@ -373,8 +373,8 @@
     "record": "7th season 2026. 2021 CUSA CoY. 3 AAC Championship Finals in 4 seasons (2022,2024,2025). 14 MLS draftees.",
     "mlsPlayers": 3,
     "rank": 8,
-    "rankClass": "rk-elite",
-    "overallScore": 91,
+    "rankClass": "rk-strong",
+    "overallScore": 73,
     "tacticalScore": 90,
     "devScore": 88,
     "ptPathScore": 88,
@@ -415,7 +415,8 @@
       "#e0f2fe",
       "#0284c7"
     ],
-    "licence": null
+    "licence": null,
+    "overallScoreNote": "§5d re-score 91->73, stripping a prestige/results halo. FIU bio: 52-33-18 (.592) over 6 seasons, 2021 CUSA CoY, 3 conf finals, ceiling = 2022 Sweet 16, but a clear 2024-25 decline (.500/.447); USL-level playing career; strong 10-yr Coastal Carolina assistant pedigree. Pillar B modest: Afrifa (8th overall MLS 2022) + Appiah (3rd rd 2025); the stored '14 MLS draftees' is FIU's program-cumulative total, NOT under Russell. Strong mid-major, below Torres/Creighton 75, just above nothing-special."
   },
   {
     "id": "vomsteeg",
@@ -658,7 +659,7 @@
     "mlsPlayers": 3,
     "rank": 13,
     "rankClass": "rk-elite",
-    "overallScore": 88,
+    "overallScore": 83,
     "tacticalScore": 88,
     "devScore": 84,
     "ptPathScore": 88,
@@ -705,7 +706,8 @@
       "#d1fae5",
       "#059669"
     ],
-    "licence": "USSF A"
+    "licence": "USSF A",
+    "overallScoreNote": "§5d re-score 88->83. USF bio: 230-151-82 over 24 seasons, 14 NCAA apps, 2 Elite Eights (2008/11 at USF), 5 conf titles; 2025 WAC title + Sweet 16 at GCU; D2 national champ as a player (Southern Conn), part of UConn's 2000 national-champ staff, USSF A. Deep multi-program resume, but ceiling is Elite Eight (no College Cup) with moderate pro output -> top-of-strong/bottom-of-elite, below Masur/St. John's 85 (a national champion)."
   },
   {
     "id": "barlow",
@@ -1945,7 +1947,8 @@
       "#dbeafe",
       "#1e3a8a"
     ],
-    "licence": null
+    "licence": null,
+    "overallScoreNote": "§5d anchor - HOLD 74 (re-confirmed v42.32 + Batch 4). Navy bio 2026 confirms current HC: elite pro-coaching CV - MLS HC (Philadelphia Union), 2018 USL Championship (Louisville City), USMNT U-17 World Cup HC (developed Dest/Sargent/Weah), 2025 MLS NEXT Pro CoY, USF D1 (1998 CUSA title + CoY). Elite CV at a service-academy program (recruiting ceiling is on the program, not the coach); anchored above Plotkin/Army 70, below national-champ college coaches."
   },
   {
     "id": "watkins_uconn",
@@ -2201,8 +2204,8 @@
     "div": "D1",
     "conf": "American Athletic Conference (AAC)",
     "rank": 46,
-    "rankClass": "rk-strong",
-    "overallScore": 72,
+    "rankClass": "rk-solid",
+    "overallScore": 62,
     "devScore": 72,
     "tacticalScore": 70,
     "ptPathScore": 96,
@@ -2228,7 +2231,8 @@
       "#e0f2fe",
       "#003366"
     ],
-    "licence": "USSF B"
+    "licence": "USSF B",
+    "overallScoreNote": "§5d re-score 72->62, correcting a factual error: the stored 'debut season'/yearsHC=1 is WRONG - FAU bio says Worthen completed his NINTH season in 2025 (HC since Feb 2017). His 2025 AAC regular+tournament double + first NCAA berth is real, but 8 prior seasons without an NCAA appearance, a mostly mid-table C-USA history, a South Carolina (SEC) assistant pedigree, USSF B, and NO documented pro/next-level output (coaching file is all-conference + academic honors only) cap him mid-solid. [DEFER data fix: yearsHC 1->9/10 + rewrite the 'debut season' record field.]"
   },
   {
     "id": "jones_wisconsin",
@@ -2428,7 +2432,8 @@
       "#dcfce7",
       "#166534"
     ],
-    "licence": "USSF 'A' License"
+    "licence": "USSF 'A' License",
+    "overallScoreNote": "§5d anchor - HOLD 70. Army bio 2026 confirms current HC (Brian Plotkin): 6th season, 2022 Patriot League CoY + program's first regular-season title in 26 yrs; elite playing CV (2x Indiana national champ 2003/04, All-American, MLS Cup), USSF 'A', Notre Dame + Dartmouth assistant pedigree. Elite player + good pedigree, capped by the service-academy recruiting ceiling + limited pro output (military commitment); banked below Hackworth 74."
   },
   {
     "id": "clark_washington",
@@ -2840,7 +2845,7 @@
     "mlsPlayers": 1,
     "rank": 59,
     "rankClass": "rk-strong",
-    "overallScore": 65,
+    "overallScore": 74,
     "tacticalScore": 65,
     "devScore": 62,
     "ptPathScore": 60,
@@ -2869,7 +2874,8 @@
       "#dbeafe",
       "#16a34a"
     ],
-    "licence": null
+    "licence": null,
+    "overallScoreNote": "§5d re-score 65->74 (was under-scored). Charlotte bio: 154-64-38 (.679) over 14 seasons, 11 NCAA appearances, multiple conf titles (A-10/C-USA/American), 2016 CUSA CoY, 16 players in the pros, 5 All-Americans; pro playing career + USSF licence. Ceiling = NCAA 2nd round (never a Sweet 16) caps him below elite, but the consistency + pro output (16 pros; stored mlsPlayers=1 undercounts) make him an upper-strong mid-major standout, just above Russell 73."
   },
   {
     "id": "hc_elon",
@@ -3560,8 +3566,8 @@
     "record": "293-210-63 career; 12 conference titles; 12 NCAA appearances incl. quarterfinals; 10+ 10-win seasons",
     "mlsPlayers": 1,
     "rank": 75,
-    "rankClass": "rk-solid",
-    "overallScore": 62,
+    "rankClass": "rk-strong",
+    "overallScore": 68,
     "tacticalScore": 62,
     "devScore": 60,
     "ptPathScore": 55,
@@ -3590,7 +3596,8 @@
       "#fef9c3",
       "#1d4ed8"
     ],
-    "licence": null
+    "licence": null,
+    "overallScoreNote": "§5d re-score 62->68 (solid->strong). Tulsa bio: 31st season, 293-210-63 (.577), 12 conf titles, 12 NCAA appearances with real depth - 2 Elite Eights (2004/09) + 3 Sweet 16s (2012/21/22). That tournament ceiling + title volume clear the solid band; a college-only playing career, a thin/undocumented pro pipeline (Pillar B), and a pronounced recent decline (3-9-3 in 2024) keep him low-strong, below the more consistent, pro-productive Langan 74."
   },
   {
     "id": "hc_ucdavis",
@@ -4321,7 +4328,7 @@
     "mlsPlayers": 1,
     "rank": 92,
     "rankClass": "rk-solid",
-    "overallScore": 58,
+    "overallScore": 64,
     "tacticalScore": 57,
     "devScore": 56,
     "ptPathScore": 55,
@@ -4350,7 +4357,8 @@
       "#dbeafe",
       "#1e3a8a"
     ],
-    "licence": null
+    "licence": null,
+    "overallScoreNote": "§5d re-score 58->64 (top of solid). Memphis bio: elite playing pedigree - 12-yr MLS career, 3 MLS Cups (2001/03/07), 3x All-Star, USMNT 2001-04 (2002 Gold Cup winner, 2002 World Cup alternate), Creighton 1996 College Cup + All-American; Stanford (Bret Simon) College-Cup assistant. As HC rebuilt Memphis: back-to-back NCAA (2022 first at-large, 2023 first NCAA win) + 2024 AAC reg-season title. Held below strong by ~3 NCAA apps (none pre-2022), no Sweet 16, and thin documented pro development."
   },
   {
     "id": "hc_temple",
@@ -4364,7 +4372,7 @@
     "mlsPlayers": 1,
     "rank": 93,
     "rankClass": "rk-solid",
-    "overallScore": 58,
+    "overallScore": 56,
     "tacticalScore": 58,
     "devScore": 56,
     "ptPathScore": 60,
@@ -4393,7 +4401,8 @@
       "#fee2e2",
       "#dc2626"
     ],
-    "licence": null
+    "licence": null,
+    "overallScoreNote": "§5d re-score 58->56. Temple bio: standout credentials are ASSISTANT-level - Louisville associate HC through a 2019 Sweet 16 + 2021 ACC Atlantic title, plus Drexel/WVU NCAA stops, USSF B, D3 All-American as a player. His own D1 head-coaching record is poor: 22-69-13 (.267) across Belmont + Temple, with thin HC-level development. Assistant pedigree is not an HC achievement; mid-solid."
   },
   {
     "id": "anatol_stonybrook",
@@ -4671,7 +4680,8 @@
       "#dbeafe",
       "#065f46"
     ],
-    "licence": null
+    "licence": null,
+    "overallScoreNote": "§5d re-score - HOLD 56. UAB bio (via uabsports.com; the stored blazerssports.com is a DEAD host alias): 3rd season at UAB; prior ETSU HC 2022-23 (17-11-6, 2023 SoCon title + best league record), Milligan NAIA back-to-back tournaments + 2020 AAC CoY, ETSU assistant 2010-17 (3 NCAA apps). Early-career D1 with a positive but low/mid-major record, a modest USL playing career, no D1 NCAA berth as HC, and thin pro development -> solid band. [DEFER data fix: dead host blazerssports->uabsports in url + app.js DOMAINS.]"
   },
   {
     "id": "melchor_angelina",

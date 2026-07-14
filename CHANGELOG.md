@@ -6,6 +6,21 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v43.3 (July 2026) — Coach Rubric Step 2, Batch 2/10: Big Ten 11 coaches re-scored vs §5d (Rhythm B — no re-rank yet)
+
+Second re-score batch of the §5d campaign; all 11 Big Ten coaches (grouped by `big-ten.json` schoolId) verified live via claude-in-chrome MCP against each school's own men's-soccer bio page (§15 Rule 0). Edits `overallScore` + `overallScoreNote` + `rankClass` only; stored `rank` left stale until the Batch-10 global re-rank (Rhythm B). No coach-change deferrals — all 11 baseline names matched the live 2026 rosters. Coach rubric now **23/110 re-scored**, validator Issues **0**.
+
+**Anchors confirmed & held:** Cirovski (Maryland, 96 — 3× NCAA champ, 464 wins, 59 MLS picks, 6 World Cup players), Yeagley (Indiana, 95 — 2012 champ, 5 College Cups, 11 Big Ten titles, 44 MLS selections). **Held on evidence:** Dow (Penn State, 85 — freshly-set 2024 Vermont national champion, confirmed), Maisonneuve (Ohio State, 82 — full US international + Hermann winner + 2024 College Cup semifinal), Payne (Northwestern, 79 — USMNT GK coach, developed Steffen), Daley (Michigan, 78 — Big Ten COY, 8 MLS picks), Jones (Wisconsin, 71 — 2 MVC titles), McElderry (Rutgers, 70 — solid Big Ten HC).
+
+**Corrections:**
+- **Jamie Clark (Washington) 68 → 92 (rk-strong → rk-elite).** The batch's biggest find — his own gohuskies.com bio shows Washington are the **2025 NCAA National Champions** under Clark, plus 2021 NCAA finalist, 4× Pac-12 COY, 5 NCAA quarterfinals, 190 wins/.708 at UW, 30 MLS players developed. A reigning national champion was sitting at solid/strong 68 (a recent-form inverse halo, same class as ACC's Gunn 81→95). National-elite, below the multi-title anchors. **NB the stored coaches.json bio is stale** ("beat UCLA 2025" completely misses the title) — flagged for a Change Type 2 bio refresh.
+- **Damon Rensing (Michigan State) 61 → 72 (rk-solid → rk-strong).** Under-scored: msuspartans.com bio shows a 2018 College Cup semifinal (first in 50 years) + 3 Elite Eights, a 2012 Big Ten Tournament title, NSCAA Regional COY, and a strong Pillar B — 16 MLS draftees recruited/coached incl. Fatai Alashe (4th overall) and first-rounders Jones/Sierakowski/Nielsen. Stored 61 was depressed by a recent 5-year slump (recent form ≠ career fingerprint).
+- **Ryan Jorden (UCLA) 93 → 84 (stays rk-elite).** UCLA-crest prestige halo stripped per §5d. His uclabruins.com bio shows real credentials (2 high-major conference titles — 2023 Pac-12, 2025 Big Ten — 17 MLS incl. two top-10 picks, 5 straight NCAAs, PhD biomechanics) but NO NCAA title and a best NCAA result of the 3rd round (his 2× "national titles" are NCCAA, a minor division). The 93 implied the NCAA-champion pedigree the rubric reserves for that band; low-elite 84 fits, below national champions Dow (85) and Somoano (88). Jorden was a "hold unless contradicted" baseline — the evidence contradicted, and leaving a no-NCAA-title coach above reigning champion Clark would be incoherent.
+
+rankClass band changes: Clark (strong→elite), Rensing (solid→strong). Two deferred items carried forward: (1) Clark's stale bio (Change Type 2 refresh — add the 2025 national title), (2) the campaign-wide global re-rank still owed at Batch 10.
+
+---
+
 ### v43.2 (July 2026) — Coach Rubric Step 2, Batch 1/10: ACC 12 coaches re-scored vs §5d (Rhythm B — no re-rank yet)
 
 First re-score batch of the §5d campaign. Rhythm decided this session: **commit scores per batch, re-rank ONCE at the end (Batch 10)** — the committed §5d "re-rank once" / Solomon rule. §5a's per-batch pattern does not transfer because devScores are absolute per-school while coach `overallScore` feeds a *relative* global ranking that is only truthful once all 110 sit on the same yardstick. So this batch edits `overallScore` + `overallScoreNote` + `rankClass` only; the stored `rank` ordinals are deliberately left stale until the global re-rank (the validator checks rank is a 1..110 permutation, not that order matches score — stays green).

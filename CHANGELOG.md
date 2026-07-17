@@ -6,6 +6,27 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v43.6 (July 2026) — Coach Rubric Step 2, Batch 5/10: Big West 7 coaches re-scored vs §5d (Rhythm B — no re-rank yet)
+
+Fifth re-score batch; all 7 Big West coaches (grouped by `big-west.json` schoolId) verified live via claude-in-chrome MCP against each school's own men's-soccer bio page (§15 Rule 0). Edits `overallScore` + `overallScoreNote` + `rankClass` only; stored `rank` left stale until the Batch-10 global re-rank (Rhythm B). No coach-change deferrals — all 7 baseline names matched the live 2026 staff pages. Coach rubric now **51/110 re-scored**, validator Issues **0**, global band coherence intact.
+
+**Anchor held:** Vom Steeg (UCSB, 90 — national-elite floor: 2006 NCAA National Champion + 2004 College Cup finalist, 2× National Coach of the Year, 15 NCAA apps with real depth — 8 Sweet 16s / 3 Elite Eights / 2 College Cups — and a prolific pipeline of 32 MLS draftees incl. Manu Duah #1 overall 2024; single title + USSF B licence keep him at the band floor, not higher).
+
+**Corrections (up — under-scored veterans / data-gap, the Gunn/Clark/Kuntz pattern):**
+- **George Kuntz (CSU Fullerton) 50→68 (rk-solid→rk-strong)** — biggest correction; a recent-form inverse halo (2021-24 Fullerton dip) had him at 50/last. fullertontitans.com: 28-yr D1 veteran, 388 career wins; **built UC Irvine into a Big West power 1995-2013** (4 NCAA, Round of 16 in 2008) then 3 more NCAA berths at Fullerton = **7 Big West Tournament titles, 8 conference championships, 7 NCAA appearances, 4× Big West CoY + 2× NSCAA Far West CoY, USSF 'A' licence, 12 MLS players**.
+- **Tim Cupello (UC Riverside) 48→65 (rk-solid→rk-strong)** — a data-gap under-score (stored bio omitted every achievement); had him at 48/last. gohighlanders.com: 14th season, 2022 Big West CoY, 2 Big West Tournament titles (2018/22) → 2 NCAA apps; standout Pillar B — developed **Aaron Long (LAFC, USMNT captain + 2022 FIFA World Cup)** plus a dozen+ pros.
+- **Dwayne Shaffer (UC Davis) 62→68 (rk-solid→rk-strong)** — 29-yr veteran, 317 career wins (top-15 active winningest), 5 NCAA apps, 4× Conference CoY, strong 3-yr Clemson associate-HC pedigree, pro pipeline headlined by Max Arfsten (2023 MLS Cup + 2025 USMNT).
+- **Yossi Raz (UC Irvine) 64→66 (rk-solid→rk-strong)** — 3 Big West Championships → 3 NCAA apps, 3× Big West CoY, a 2015 NCAA D2 National Runner-Up at Cal Poly Pomona. (Note: Raz *succeeded* Kuntz at UCI in 2017 — he did not build the program.)
+
+**Correction (down — inflation trimmed):**
+- **Oige Kennedy (Cal Poly) 73→67 (stays rk-strong)** — 2 Big West *regular-season* titles + 2024 CoY but **no D1 NCAA berth** in 4 D1 seasons; strong D2 record (Fort Lewis .723) + Stanford national-champ-era assistant pedigree (20 MLS picks, shared credit) keep him low-strong, not 73.
+
+**Held:** Jon Pascale (UCSD 58) — strong D2 record (3× CCAA CoY, 2016 NCAA D2 National Semifinal) but a poor D1 era (5 straight losing Big West seasons since the 2021 elevation) + thin pro pipeline; the stored "competitive Big West performances post-elevation" is inaccurate.
+
+**Deferred data fixes (out of Rhythm-B scope):** (1) Kuntz `licence` None→USSF A. (2) Cupello `yearsHC` 8→14. (3) **Two more dead-host aliases** (Pitt/Stony Brook/UAB pattern, now 5 total): UC Irvine `ucirvineantares.com`→`ucirvinesports.com` and UC Riverside `ucrhighlanders.com`→`gohighlanders.com` (both error/blank; fix coaches.json url + big-west.json url + app.js DOMAINS). A full 110-school url sweep is now clearly overdue.
+
+---
+
 ### v43.5 (July 2026) — Coach Rubric Step 2, Batch 4/10: AAC 10 coaches re-scored vs §5d (Rhythm B — no re-rank yet)
 
 Fourth re-score batch; all 10 AAC coaches (grouped by `aac.json` schoolId) verified live via claude-in-chrome MCP against each school's own men's-soccer bio page (§15 Rule 0). Edits `overallScore` + `overallScoreNote` + `rankClass` only; stored `rank` left stale until the Batch-10 global re-rank (Rhythm B). No coach-change deferrals — all 10 baseline names matched the live 2026 staff pages (Army = **Brian** Plotkin, distinct from DePaul's Mark Plotkin; Temple = Bryan Green — both confirmed). Coach rubric now **44/110 re-scored**, validator Issues **0**, global band coherence intact.

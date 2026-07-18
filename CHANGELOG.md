@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.3 (July 2026) — confRecord backlog Batch 2/? : AAC file researched (Change Type 6)
+
+Batch 2 of the confRecord campaign. All **9 flagged schools** in `data/aac.json` (USF, Tulsa, Memphis, Temple, Charlotte, FAU, UAB, Army, Navy) had their `confRecord` (2020–2025) rewritten from official standings. The validate_consistency.js confRecord counter dropped **33 → 24**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings — baseline). This file needed **three** sources because men's-soccer conference ≠ the guide's primary-conference grouping:
+- **theamerican.org** (AAC) — USF/Tulsa/Memphis/Temple all years; Charlotte/FAU/UAB from 2022.
+- **conferenceusa.com** (C-USA) — Charlotte/FAU/UAB for 2020 & 2021.
+- **patriotleague.org** (Patriot League) — **Army & Navy, all years**.
+
+**Major corrections surfaced (not just placeholders filled):**
+- **Tulsa 2021** was labeled "Mid AAC conference play" — they actually **won the AAC regular season** (8-1-1, 25 pts, No. 1 seed, hosted the championship). The 2021–2024 generic run hid a conference title.
+- **Charlotte** labeled "Mid AAC" — actually **2nd in 2023** (6-2) and **1st/co-champions in 2025**; and its 2020–2022 were wrong: Charlotte/FAU/UAB were **already AAC in 2022** (men's soccer moved a year before their full 2023 membership), C-USA only in 2020–2021.
+- **Army & Navy do NOT play AAC men's soccer** — both compete in the **Patriot League** (Army even **won the 2022 Patriot League regular season**). Their entire "AAC conference play" history was wrong. confRecord now shows Patriot League standings with a clarifying note; they remain filed in `aac.json` (AAC is their primary-athletics conference).
+- Memphis (correct 2024 title kept), Temple's three "exact standings not re-verified" years (2021–2023) now researched, UAB's mislabeled "first AAC season"/"joined 2023" notes corrected.
+
+**Deferred (out of scope, flag for owner):** Army & Navy men's soccer = Patriot League, not AAC — same structural class as the Akron (Big East) and Delaware (Summit) findings; the confRecord is now correct but the guide's conference *grouping* of these schools for men's soccer is a separate Change-Type question.
+
+Splice method identical to Batch 1 (CRLF-preserving, region-only replacement guarded to change only the 9 target confRecords; aac.json has floats + CRLF so no full-file json.dump). Files: `data/aac.json`, `athletes/olivier.json` (v44.2→v44.3), `CHANGELOG.md`, `CLAUDE.md` §6 marker.
+
+---
+
 ### v44.2 (July 2026) — confRecord backlog campaign, Batch 1/? : Big East researched (Change Type 6)
 
 **Start of a new campaign** to clear the pre-existing `confRecord` "thin/generic conference history" backlog — the debt tracked by `validate_consistency.js`'s confRecord counter (added v42.8), which stood at **38 schools**. Owner scope decision (2026-07-18): **"true placeholders only"** — fix schools whose conference history is genuinely empty/generic filler, not terse-but-accurate power-conference schools. Batched **by conference** because every placeholder school in a conference shares ONE authoritative standings source, so one research pass fills the whole file.

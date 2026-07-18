@@ -247,7 +247,6 @@
       "College of Charleston (SC)",
       "Hofstra (Hempstead, NY)",
       "Stony Brook (Stony Brook, NY)",
-      "Delaware (Newark, DE)",
       "Elon (Elon, NC)",
       "William & Mary (Williamsburg, VA)",
       "Northeastern (Boston, MA)",
@@ -255,8 +254,8 @@
       "Monmouth (West Long Branch, NJ)"
     ],
     "otherSchools": [],
-    "desc": "The CAA is a mid-major D1 conference spanning the East Coast. It now includes 9 fully-profiled guide schools — the most diverse conference coverage in the guide. Hofstra has won 4 consecutive CAA Tournament titles (2022-25) and earned a No.7 NCAA seed in 2024. Elon won the 2022 and 2025 CAA titles. Charleston's Keith Wiggans (Battery USL connection) is building steadily. Note: Delaware moved to CUSA in July 2025.",
-    "olivierNote": "9 CAA guide schools with full profiles. Hofstra is the dominant program — 4 consecutive titles, NYC access via LIRR, best development environment in the conference. Northeastern (Boston co-op clinical) and Drexel (Philly co-op) offer the best pre-PT pathways. Stony Brook has the best cost-to-clinical-access ratio (Stony Brook Medicine on campus, SUNY pricing). Charleston remains the only warm-climate CAA pick.",
+    "desc": "The CAA is a mid-major D1 conference spanning the East Coast. It now includes 8 fully-profiled guide schools — among the most diverse conference coverage in the guide. Hofstra has won 4 consecutive CAA Tournament titles (2022-25) and earned a No.7 NCAA seed in 2024. Elon won the 2022 and 2025 CAA titles. Charleston's Keith Wiggans (Battery USL connection) is building steadily. Delaware left the CAA in 2025 — its men's soccer now competes in the Summit League (filed separately in this guide).",
+    "olivierNote": "8 CAA guide schools with full profiles. Hofstra is the dominant program — 4 consecutive titles, NYC access via LIRR, best development environment in the conference. Northeastern (Boston co-op clinical) and Drexel (Philly co-op) offer the best pre-PT pathways. Stony Brook has the best cost-to-clinical-access ratio (Stony Brook Medicine on campus, SUNY pricing). Charleston remains the only warm-climate CAA pick.",
     "color": [
       "#0c4a6e",
       "#38bdf8"
@@ -724,6 +723,36 @@
     "color": [
       "#dbeafe",
       "#1d4ed8"
+    ]
+  },
+  {
+    "id": "summit",
+    "name": "Summit League",
+    "abbr": "Summit",
+    "tier": "Mid-Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Mid-major — Midwest/Plains base with East Coast men's soccer affiliates",
+    "founded": 1982,
+    "teams": 8,
+    "soccerTeams": 6,
+    "ncaaTitles": 0,
+    "mlsPipeline": "Developing — Denver (departed to the WCC in 2026) drove the league's recent pipeline (Cole Bassett to USMNT, Shinyashiki = 2019 MLS Rookie of the Year)",
+    "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer)",
+    "guideSchools": [
+      "Delaware (Newark, DE) — joined for men's soccer in 2025; reached the 2025 Summit League semifinals"
+    ],
+    "otherSchools": [
+      "Kansas City",
+      "Omaha",
+      "Oral Roberts",
+      "St. Thomas",
+      "UMass (affiliate)"
+    ],
+    "desc": "The Summit League is an NCAA Division I conference founded in 1982 (as the Association of Mid-Continent Universities; renamed The Summit League in 2007), headquartered in Sioux Falls, SD, with a membership based in the Midwest and Plains. Six schools sponsor men's soccer: Kansas City, Omaha, Oral Roberts and St. Thomas, plus East Coast affiliates Delaware and UMass. Delaware joined in 2025 when its all-sports move to Conference USA left men's soccer without a home (CUSA does not sponsor the sport). Denver — five straight Summit titles 2021–2025 and a 2024 College Cup Final Four — departed for the West Coast Conference in 2026.",
+    "olivierNote": "Delaware is the only Summit League school in this guide, filed here rather than under the CAA because its men's soccer competes in the Summit from 2025. Delaware is a strong value target — low ~$38k cost, a dedicated Kinesiology & Applied Physiology degree, a record-breaking 2025 (12-2-3, #24 nationally under HC Tommy McMenemy) and 25-minute access to the Philadelphia Union MLS ecosystem. Newark, DE is a classic college town but not a warm/city lifestyle match. Best-value East-Coast mid-major pick for Olivier.",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
     ]
   },
   {

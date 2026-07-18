@@ -1661,5 +1661,275 @@
       }
     ],
     "confKey": "nec"
+  },
+  {
+    "id": "delaware",
+    "profileDepth": "full",
+    "name": "Delaware",
+    "full": "University of Delaware",
+    "loc": "Newark, DE",
+    "div": "D1",
+    "conf": "Summit League",
+    "confKey": "summit",
+    "region": "northeast",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "kinRank": "Good (Kinesiology and Applied Physiology, dedicated department)",
+    "degreeTitle": "B.S. Kinesiology and Applied Physiology",
+    "acuAlign": 11,
+    "acuAlignNote": "Strong kinesiology and applied physiology — anatomy, physiology, biomechanics, exercise science well-covered. Pre-PT pathway supported.",
+    "soccerLevel": "Summit League — Mid-Major D1",
+    "cost": "~$38k/yr",
+    "fin": {
+      "costNum": 38000,
+      "internationalNote": "Delaware out-of-state COA is ~$38k/yr (2025-26). Athletic scholarship can cover 40–60% of COA. Merit aid available for international students with 3.0+ GPA. Newark, DE has moderate cost of living. Strong academic reputation and health science programs.",
+      "tuition": 28000,
+      "roomBoard": 8000,
+      "fees": 2000,
+      "maxAthletic": 0.85,
+      "maxAcademic": 8000,
+      "aidType": "athletic"
+    },
+    "aid": "Athletic",
+    "size": 23000,
+    "prePT": "Good",
+    "gpa": {
+      "minEntry": "2.5",
+      "minSchol": "2.8+",
+      "note": "Public university with strong academics. Athletic scholarship pathway established.",
+      "status": "eligible"
+    },
+    "mapX": 525,
+    "mapY": 164,
+    "fitOlivier": 38,
+    "lensScores": {
+      "overall": 38,
+      "soccer": 65,
+      "academic": 62,
+      "minutes": 30,
+      "lifestyle": 0,
+      "value": 34
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Summit SF",
+        "note": "First Summit League season (men's soccer) — reached the 2025 Summit League semifinals; 12-2-3, #24 nationally, Rich Monath = Summit League Midfielder of the Year."
+      },
+      {
+        "yr": 2024,
+        "pos": "CAA play",
+        "note": "Final CAA season before the 2025 move to the Summit League (men's soccer)."
+      },
+      {
+        "yr": 2023,
+        "pos": "CAA play",
+        "note": "CAA conference play."
+      },
+      {
+        "yr": 2022,
+        "pos": "CAA play",
+        "note": "CAA conference play."
+      },
+      {
+        "yr": 2021,
+        "pos": "CAA play",
+        "note": "CAA conference play."
+      },
+      {
+        "yr": 2020,
+        "pos": "CAA play",
+        "note": "COVID-shortened season."
+      }
+    ],
+    "titles": [
+      "CAA Champions multiple"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [],
+      "draftRank": "Consistent pipeline"
+    },
+    "devScores": {
+      "tactical": 68,
+      "technical": 64,
+      "fitness": 68
+    },
+    "devScoresNote": "v42.21 §5a re-baseline (environment only). Live bluehens.com MSOC staff: deepest CAA staff — HC McMenemy + Associate HC + 2 assts + Director of Soccer Operations + dedicated Athletic Trainer. Whitney Athletic Center 10,000-sqft S&C + nutrition + sports med; on-campus dedicated Grant Stadium. Strong large-public environment; no documented GPS/video.",
+    "coach": {
+      "name": "Tommy McMenemy",
+      "title": "Head Coach",
+      "email": "tommymc@udel.edu",
+      "phone": "",
+      "profile": "Delaware is a consistently competitive CAA program — strong kinesiology and applied physiology degree. Low cost ($38k out-of-state) with accessible GPA. Newark is a classic college town with Philly 25 min south. Note: Delaware's July 2025 all-sports move to Conference USA does NOT include men's soccer, which competes in The Summit League (CUSA does not sponsor men's soccer) — the Blue Hens reached the 2025 Summit League semifinals in their first season."
+    },
+    "tags": [
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Delaware Soccer Stadium"
+    ],
+    "courses": [
+      "KAAP 201 — Anatomy and Physiology I",
+      "KAAP 202 — Anatomy and Physiology II",
+      "KAAP 310 — Biomechanics",
+      "KAAP 420 — Applied Exercise Physiology",
+      "KAAP 460 — Pre-PT Clinical Practicum"
+    ],
+    "rec": "Strong kinesiology degree. Consistent mid-major D1 soccer (CAA through 2024, Summit League from 2025). Low cost. Newark is a smaller college town — limited lifestyle.",
+    "url": "https://bluehens.com/sports/mens-soccer",
+    "domain": "udel.edu",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 4,
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Rich Monath",
+        "Rocco Pastore"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Liam Penny",
+        "Freddy Jeffreys"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Regular contributor"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "Small 4-player MF pool — 2 clear, 2 remain (both So). Only 2 competitors in Year 1, suggesting real starting potential for a quality CMF like Olivier."
+    },
+    "color": [
+      "#fef9c3",
+      "#1e3a8a"
+    ],
+    "facilityDetails": {
+      "stadium": "Stuart & Suzanne Grant Stadium — 1,400 capacity, on-campus dedicated soccer complex in Newark, DE.",
+      "trainingFields": "Delaware Athletic Complex. Full D1 training infrastructure on main campus.",
+      "strengthConditioning": "Whitney Athletic Center — 10,000 sq ft S&C area, large training room with sports medicine facilities, kitchen and nutrition education space, auditorium. Built into Delaware Stadium (west side). Strong D1-level infrastructure.",
+      "sportsScience": "Kinesiology and Applied Physiology labs — strong research focus. Pre-PT pathway well-established.",
+      "sportsMed": "Christiana Care Health System (major Wilmington/Newark regional hospital) — pre-PT clinical access. Philadelphia hospitals 25 min north.",
+      "academicLabs": "Kinesiology and Applied Physiology labs. Anatomy, physiology, biomechanics, exercise science all well-covered.",
+      "extras": "Philadelphia 25 min by SEPTA. Union (MLS) accessible. Newark College Town — affordable, contained. Delaware beaches 90 min. Washington DC 2 hr. Note: Delaware's July 2025 all-sports move to Conference USA does NOT include men's soccer (CUSA sponsors none) — the Blue Hens compete in the Summit League from 2025.",
+      "rating": "Very Good",
+      "note": "Whitney Athletic Center is the facility highlight — 10,000 sqft S&C + sports med is strong for a public mid-major. Conference: the July 2025 all-sports move to CUSA excludes men's soccer (CUSA sponsors none); the men's team competes in the Summit League from 2025.",
+      "housing": {
+        "available": true,
+        "note": "Mandatory and guaranteed for all newly admitted first-years the year of admittance; exemption only for living with a parent/guardian within 30 miles, established by May 1. Verified v38 via official udel.edu/students/reslife."
+      }
+    },
+    "culture": {
+      "vibe": "Classic large public university college town. University of Delaware dominates Newark, DE — it's a college town built around the university. Blue Hen pride is strong. Soccer culture competitive.",
+      "thingsToDo": "Philadelphia (25 min SEPTA), Delaware beaches (90 min), DC (2 hr). Newark Downtown — bars, restaurants, main street culture. Philadelphia Union MLS.",
+      "socialScene": "Large public university scene — Greek life, sports culture, college town bars and restaurants on Main Street, Newark.",
+      "olivierMatch": "Borderline GPA (2.5+). Strong value option for Olivier — low cost, strong kinesiology degree, competitive mid-major D1 soccer, Philly access. Non-warm campus, not city, but good value proposition.",
+      "lifestyleTags": "College town, low cost, strong kinesiology, Philly proximity, Summit League (MSOC 2025+)"
+    },
+    "staff": [
+      {
+        "name": "Head Coach",
+        "role": "Head Coach",
+        "email": "soccer@udel.edu",
+        "bg": "Delaware Blue Hens head coach. Strong Applied Physiology program; competitive soccer history (CAA through 2024, Summit League from 2025)."
+      },
+      {
+        "name": "Assistant Coach",
+        "role": "Assistant Coach",
+        "email": "soccer@udel.edu",
+        "bg": "Full-time assistant."
+      }
+    ],
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ]
   }
 ]

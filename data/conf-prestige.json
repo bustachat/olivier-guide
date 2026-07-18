@@ -123,11 +123,11 @@
     "fullName": "Colonial Athletic",
     "div": "D1",
     "divBadge": "d-D1",
-    "programsInGuide": "College of Charleston, Hofstra, Stony Brook, Delaware, Elon, William & Mary, Northeastern, Drexel, Monmouth",
+    "programsInGuide": "College of Charleston, Hofstra, Stony Brook, Elon, William & Mary, Northeastern, Drexel, Monmouth",
     "mlsPipeline": "★★ Developing",
     "scholarships": "Up to 9.9 equivalencies",
     "confKey": "caa",
-    "relevance": "9 guide schools — complete CAA coverage. Hofstra dominant (4 consecutive CAA titles 2022–2025, NYC access via LIRR). Northeastern (Boston, co-op clinical placements). Drexel (Philadelphia, co-op program). William & Mary (Williamsburg). Delaware note: moved to Conference USA July 2025 — confirm current standing. Note: College of Charleston SC is distinct from U of Charleston WV (D2 MEC)."
+    "relevance": "8 guide schools — complete CAA coverage. Hofstra dominant (4 consecutive CAA titles 2022–2025, NYC access via LIRR). Northeastern (Boston, co-op clinical placements). Drexel (Philadelphia, co-op program). William & Mary (Williamsburg). Delaware left the CAA in 2025 — men's soccer now competes in the Summit League (filed separately). Note: College of Charleston SC is distinct from U of Charleston WV (D2 MEC)."
   },
   {
     "rank": 11,
@@ -287,5 +287,20 @@
     "mlsPipelineWarning": true,
     "scholarships": "NAIA — athletic aid, no equivalency cap",
     "relevance": "⚠ Columbia College MO — NO Exercise Science degree (Healthcare Management only). New HC Nathan Mason rebuilding. Best value cost (7k/yr) in guide. Mizzou college-town atmosphere. DPT pathway requires extra planning."
+  },
+  {
+    "rank": 23,
+    "rankClass": null,
+    "name": "Summit",
+    "fullName": "The Summit League",
+    "div": "D1",
+    "divBadge": "D1",
+    "programsInGuide": "Delaware (Newark, DE)",
+    "programsInGuideWarning": false,
+    "mlsPipeline": "Developing — Denver drove the league's pipeline before leaving for the WCC in 2026",
+    "mlsPipelineWarning": false,
+    "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer)",
+    "confKey": "summit",
+    "relevance": "Delaware (Newark, DE) — its men's soccer joined the Summit League in 2025 after the school's all-sports move to Conference USA, which does not sponsor the sport; reached the 2025 Summit League semifinals (12-2-3, #24 nationally). Only Summit school in the guide, filed here rather than under the CAA. Strong Kinesiology & Applied Physiology degree; low ~$38k cost; Philadelphia Union (MLS) 25 min north."
   }
 ]

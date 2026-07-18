@@ -6,6 +6,26 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.4 (July 2026) — confRecord backlog Batch 3/? : Big West file researched (Change Type 6)
+
+Batch 3. All **5 flagged** `data/big-west.json` schools (CS Fullerton, UC Davis, UC Irvine, UC Riverside, UC San Diego) plus the 2 already-detailed schools (UCSB, Cal Poly, rewritten in the same pass to fix their fabricated 2020 rows) had `confRecord` (2020–2025) rewritten from official **bigwest.org** standings (season IDs 185/170/154/140/127/117) + the Wikipedia Big West Tournament champions table. Counter **24 → 19**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings — baseline).
+
+bigwest.org **times out in the in-app browser** (bot-block) but serves fine to `curl` (200, ~1s) — fetched the server-rendered standings HTML directly and parsed the tables.
+
+**Major corrections (placeholders were hiding conference titles):**
+- **CS Fullerton won the 2023 Big West regular season** (1st, 6-2-1, 19 pts) — every year was "Lower BW conference play."
+- **UC Riverside won BOTH the 2022 regular season and the 2022 Big West Tournament** (double champions, beat UCSB 1-0) — also buried under "Lower BW."
+- **UC Irvine** won the 2023 (8-7 on penalties over UC Davis) and 2025 tournaments; was 2nd in the regular season both years (labeled "Mid").
+- **UCSB** corrected: 2021 was a regular-season + tournament double (labeled "2nd"); 2024 was 2nd not "Big West Champions."
+- **The entire 2020-21 season was cancelled by the Big West due to COVID-19** — every school's fabricated 2020 row ("2nd", "Big West conference play", etc.) replaced with the cancellation note.
+- UC San Diego's "first Big West season (2024)" note corrected — UCSD joined the Big West in its 2020 D1 move; first *played* season was 2021 (2020 cancelled), full member from 2025.
+
+Tournament champions verified: 2021 UCSB, 2022 UC Riverside, 2023 UC Irvine, 2024 UC Davis, 2025 UC Irvine (no 2020 tournament — season cancelled).
+
+Splice method identical to Batches 1–2 (CRLF-preserving region-only replacement, guarded). Files: `data/big-west.json`, `athletes/olivier.json` (v44.3→v44.4), `CHANGELOG.md`, `CLAUDE.md` §6 marker.
+
+---
+
 ### v44.3 (July 2026) — confRecord backlog Batch 2/? : AAC file researched (Change Type 6)
 
 Batch 2 of the confRecord campaign. All **9 flagged schools** in `data/aac.json` (USF, Tulsa, Memphis, Temple, Charlotte, FAU, UAB, Army, Navy) had their `confRecord` (2020–2025) rewritten from official standings. The validate_consistency.js confRecord counter dropped **33 → 24**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings — baseline). This file needed **three** sources because men's-soccer conference ≠ the guide's primary-conference grouping:

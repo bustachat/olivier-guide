@@ -1496,8 +1496,8 @@ function buildDetailBody(u){
       ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League coaches cannot offer athletic scholarships. Contact should still go through your agent — coach relationships matter for roster spots.</div>`:''}
       <div class="contact-block"><h4>${u.coach.name}</h4>
         <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
-        <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
-        <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone}</div></div>
+        <div class="contact-row"><div class="ci">Email</div><div class="cv">${u.coach.email?`<a href="mailto:${u.coach.email}">${u.coach.email}</a>`:'<span style="color:var(--hint)">—</span>'}</div></div>
+        <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone||'<span style="color:var(--hint)">—</span>'}</div></div>
 
       </div>
       <div class="detail-block" style="margin-bottom:1rem"><h4>Coach Profile</h4><p style="font-size:12.5px;color:var(--muted);line-height:1.7">${u.coach.profile}</p></div>
@@ -1966,8 +1966,8 @@ function renderContacts(){
     <h4 style="display:flex;align-items:center;gap:8px"><span class="dbadge d-${u.div}">${u.div}</span>${u.full} — ${u.coach.name}</h4>
     <div style="font-size:11px;color:var(--hint);margin-bottom:8px">${u.loc} · ${u.conf}</div>
     <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
-    <div class="contact-row"><div class="ci">Email</div><div class="cv"><a href="mailto:${u.coach.email}">${u.coach.email}</a></div></div>
-    <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone}</div></div>
+    <div class="contact-row"><div class="ci">Email</div><div class="cv">${u.coach.email?`<a href="mailto:${u.coach.email}">${u.coach.email}</a>`:'<span style="color:var(--hint)">—</span>'}</div></div>
+    <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone||'<span style="color:var(--hint)">—</span>'}</div></div>
 
     ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
   container.innerHTML=html;
@@ -2456,7 +2456,7 @@ function buildCoachCard(c){
       <div class="coach-strengths">${strHtml}</div>
       <div class="staff-section"><h5>Known Staff & Background</h5>${staffHtml}</div>
       <div class="coach-contact-strip">
-        <a href="mailto:${c.contact.email}" class="coach-cta coach-cta-email" title="Send email">✉ ${c.contact.email}</a>
+        ${c.contact.email?`<a href="mailto:${c.contact.email}" class="coach-cta coach-cta-email" title="Send email">✉ ${c.contact.email}</a>`:''}
         ${c.contact.phone?`<a href="tel:${c.contact.phone}" class="coach-cta coach-cta-phone" title="Call">📞 ${c.contact.phone}</a>`:''}
 
       </div>

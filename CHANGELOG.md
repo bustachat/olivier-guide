@@ -6,6 +6,50 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.0 (July 2026) — Delaware reclassified CAA → Summit League (men's soccer conference correction)
+
+Delaware's July 2025 all-sports move to Conference USA does **not** include men's
+soccer (CUSA sponsors no men's soccer), so the team competes in **The Summit League**
+from 2025 (reached the 2025 Summit League semifinals; 12-2-3, #24 nationally). The
+guide had it filed under the CAA. This creates a new single-school Summit League
+conference (the established pattern for MAC/WAC/WCC/ASUN/AEC/NEC) and moves Delaware
+into it. **Display/grouping only — no score cascade** (`conf`/`confKey`/file location
+don't feed `fitOlivier`; `div` stays D1; `fundingPathway` stays `full`). Delaware's Fit
+holds at **38**; coach rank/score unchanged (McMenemy rank 67, overallScore 66).
+
+**Tier-1 verification:** thesummitleague.org 2026 Men's Soccer Standings lists exactly
+six men's soccer members — Kansas City, UMass, Omaha, **Delaware**, Oral Roberts,
+St. Thomas (Denver having left for the WCC in 2026, matching the guide).
+
+**Files (8):**
+- `data/caa.json` — Delaware object removed (CAA 9 → 8 schools).
+- `data/d1-other.json` — Delaware object added; `conf` → "Summit League", `confKey` →
+  `summit`; `confRecord` 2025 corrected ("Left CAA" → "Summit SF" semifinal run); all
+  stale "moved to CUSA / filed under CAA (historic)" notes in `soccerLevel`, `extras`,
+  facility `note`, `olivierMatch`, `lifestyleTags`, `staff[].bg` and `rec` rewritten to
+  the accurate Summit framing. (Moved at byte level to preserve float formatting/CRLF.)
+- `js/app.js` — new `CONF_SECTIONS` entry `{key:'summit', …}` (without it Delaware would
+  be invisible in Explore).
+- `data/conferences.json` — new Summit League conference card (tier "Mid-Major (D1)");
+  Delaware removed from CAA `guideSchools`; CAA `desc`/`olivierNote` counts 9 → 8.
+- `data/conf-prestige.json` — Summit League row appended (rank 23, matching how NEC/CACC/
+  AMC were appended rather than renumbering); Delaware removed from CAA `programsInGuide`;
+  CAA `relevance` count 9 → 8 and the stale "confirm current standing" note replaced.
+- `data/coaches.json` — McMenemy `conf` "CAA" → "Summit"; `record` CAA reference updated.
+  No re-rank (overallScore unchanged).
+- `validate_consistency.js` — added `'summit'` to the hardcoded `sectionKeys` mirror of
+  CONF_SECTIONS (else the CONFKEY check false-flags Delaware).
+- `CLAUDE.md` — School→File table + §2 file-map (CAA 9→8, d1-other +Delaware/Summit 6→7).
+
+**Validation:** `validate_schools.py` PASS (110 schools); `validate_consistency.js`
+Issues: **0** (Conferences 24→25, Prestige rows 22→23). Live-verified on a local server:
+`grid-summit` renders 1 card (Delaware), `grid-caa` now 8; Conferences tab shows the
+Summit League card; Delaware modal badge reads "D1 · Summit League · Newark, DE" with the
+corrected confRecord and no stale CUSA text; Coaches tab shows McMenemy under Summit;
+Fit 38% unchanged; zero console errors.
+
+---
+
 ### v43.12 (July 2026) — Deferred-backlog closeout: 3 coach swaps (→ §5d 110/110 complete), Tyler JC staffing, dead-host & data fixes
 
 Clears the deferred backlog accumulated across the v43 §5d campaign, in three commits.

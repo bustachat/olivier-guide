@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.2 (July 2026) — confRecord backlog campaign, Batch 1/? : Big East researched (Change Type 6)
+
+**Start of a new campaign** to clear the pre-existing `confRecord` "thin/generic conference history" backlog — the debt tracked by `validate_consistency.js`'s confRecord counter (added v42.8), which stood at **38 schools**. Owner scope decision (2026-07-18): **"true placeholders only"** — fix schools whose conference history is genuinely empty/generic filler, not terse-but-accurate power-conference schools. Batched **by conference** because every placeholder school in a conference shares ONE authoritative standings source, so one research pass fills the whole file.
+
+**Batch 1 — Big East** (`data/big-east.json`, Change Type 6, display-only — no fitOlivier/lensScores cascade): all **11** Big East schools' `confRecord` (2020–2025) rewritten from the official **bigeast.com** archived standings (season IDs 1120/1110/30/1035/14/1036) + the Big East tournament-champions history. The counter dropped **38 → 33** (5 flagged Big East schools cleared: Providence, St. John's, Creighton, Seton Hall, Marquette, UConn had runs of ≥3 generic labels).
+
+Every year now carries the exact conference W-L-T record + overall record + finishing position (division-aware: East/Midwest divisions in 2020-21 and 2023-25, single table in 2021/2022) + tournament/title context. **Real errors corrected during verification, not just placeholders filled:**
+- **UConn 2023** claimed "Big East regular season title" — fabricated; UConn was **4th in the East** (Georgetown won it). Removed.
+- **Providence 2024** was labeled "Mid BE" — actually **won the East Division** (5-1-2) and were **Big East Tournament runners-up** (lost the final to Georgetown 2-1).
+- **Seton Hall's** tournament title was mis-dated to **2021** — it was the **2020** (2020-21 COVID) season; their real fall-2021 season was **last place** (2-7-1, 11th).
+- **St. John's 2022** "Upper Big East / NCAA Tourn" — actually **8th** (4-8-5, no NCAA).
+- Tournament champions verified: 2020 Seton Hall, 2021 Georgetown, 2022 Creighton, 2023 Xavier (first in program history, beat Georgetown on penalties), 2024 Georgetown (beat Providence), 2025 Georgetown.
+
+**Also surfaced (deferred, out of scope):** Akron plays men's soccer in the Big East (Midwest Division) since 2023 — its guide entry is filed as MAC in `data/d1-other.json` (the same class of issue as the Delaware→Summit fix in v44.0); its confRecord should be reviewed against Big East standings, not the MAC.
+
+Validators: `validate_schools.py` PASS (110), `validate_consistency.js` **Issues: 0** (unchanged), JSON valid. Files: `data/big-east.json` (11 confRecord arrays spliced via a CRLF-preserving, region-only replacement — non-confRecord bytes/floats untouched, guarded by an assert that only the 11 confRecords changed), `athletes/olivier.json` (v44.1→v44.2), `CHANGELOG.md`, `CLAUDE.md` §6 marker.
+
+---
+
 ### v44.1 (July 2026) — Coach-card staff rendering: fix "null"/"undefined" rows, add email fallback (Change Type 11)
 
 `buildCoachCard()` (js/app.js) rendered each `coaches.json` staff row as

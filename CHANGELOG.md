@@ -6,6 +6,41 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v43.12 (July 2026) — Deferred-backlog closeout: 3 coach swaps (→ §5d 110/110 complete), Tyler JC staffing, dead-host & data fixes
+
+Clears the deferred backlog accumulated across the v43 §5d campaign, in three commits.
+
+**(1) Tyler JC staffing + graceful null contacts.** Added Jake Carney (Strength &
+Conditioning Coach) to the Tyler JC staff and named him in the coach profile;
+guarded the three coach-contact render paths so a null email/phone shows "—"
+instead of the literal "null" (fixes 15 coach cards / 12 school modals).
+
+**(2) Data-quality backfills** (no score change). Corrected 10 dead/wrong athletics
+hosts across coaches.json url, conf-JSON url/domain, and app.js DOMAINS/roster maps
+(UAB, UC Irvine, UC Riverside, Northeastern, Cal State LA, Keiser, Georgian Court,
+Columbia College, Daytona State, Blinn, plus Chapman chapmanathletics→athletics.chapman.edu).
+yearsHC corrected to current-program tenure for 11 coaches; licence backfills for 11
+(incl. Martorana NSCAA-diploma→USSF D); mlsPlayers backfills (Fisher 15, McBride 18,
+McCourt 10). Bio corrections: Washington/Clark now carries the 2025 NCAA title;
+Delaware men's soccer competes in The Summit League, not CUSA (verified bluehens.com).
+
+**(3) Three coach swaps (Change Type 2) → §5d campaign 110/110 COMPLETE.** Each
+verified live on the school's own staff/bio page and scored vs §5d, then a final
+global re-rank of all 110:
+  • NC State: Kelly Findley → **Marc Hubbard 83 (rk-elite, rank 20)** — in two seasons
+    took NC State to its first-ever national championship game (2025) + a 2024 Sweet
+    Sixteen, developed the 2025 MAC Hermann Trophy winner and the No. 1 overall 2026
+    MLS pick (6 draftees in 2 years); elite-caliber ceiling + development, placed at
+    the elite floor given the short 2-season sample.
+  • Chapman: Dustin Johnson (stale/erroneous baseline) → **Eddie Carrillo '90 61
+    (rk-solid)** — winningest & longest-tenured HC in program history (31st season,
+    268-216-62, 8 NCAA DIII appearances, 2 SCIAC titles); D3/no-pipeline caps solid.
+  • Santa Monica: Lee Avery (stale baseline; Pierce has been HC since 2012) → **Tim
+    Pierce 63 (rk-solid)** — UCLA All-American/national-champion as a player, 2018 WSC
+    title + 2× WSC CoY, premier SMC→UCLA transfer pipeline.
+Coach rubric now **110/110 re-scored, 0 legacy** — the §5d yardstick applies to every
+coach. Validator Issues 0; ranks a gapless 1–110 permutation, all bands coherent.
+
 ### v43.11 (July 2026) — Coach Rubric Step 2, Batch 10/10 (FINAL): JUCO coaches re-scored vs §5d + single global re-rank of all 110
 
 Tenth and final re-score batch of the §5d campaign. **28 of the 29 `juco.json` coaches re-scored** (each verified live via the in-app Browser against the school's own men's-soccer bio page, §15 Rule 0), then **Phase B: the single global re-rank of all 110 coaches** by `overallScore` descending (gapless 1–110, tie-break = prior stored rank; every `rank` + `rankClass` re-set). This resolves the Rhythm-B provisional state — for the first time all 110 coaches sit on the same §5d yardstick and the live ranking is truthful. **One coach-change deferral — Santa Monica:** the current HC on smccorsairs.com is **Tim Pierce** (pierce_timothy@smc.edu), not the stored `avery_smc` (Lee Avery) — left legacy (no note, ov 66 unchanged), flagged as a Change Type 2 swap → batch ships **28/29**. **The campaign's dominant data-gap pattern dominated this batch — stored JUCO bios had systematically omitted national titles and pro pipelines, badly under-scoring genuine developers:** **Fisher (Nassau) 58→76** (biggest correction — 2015 National Champion + TEN National Final Fours + 285-61-9 + **15 future MLS/pro/international players**; stored bio cited only a 2025 10-2 record), **Cosgrove (Pima) 64→76** (2 NJCAA DI titles + NJCAA Hall of Fame + 451 wins + 2× National CoY), **MacRae (Iowa Lakes) 62→73** (2023 DII National Champion + MLS/USL alumni + 2024 National Staff of the Year), **Brown (Iowa Western) 65→75** (2 NJCAA DI titles 2021/24 + a Barton national runner-up + D1 assistant pedigree), **Potter (Northeast) 58→68** (2024 DII National Champion, first in school history), **McBride (Blinn) 66→71** (292 career wins + 13 CoY + 18 pros incl. a full Canadian international), **DiBernardo (Monroe) 72→77** (a 3-DI-title/.760/16-yr dynasty), **Cameron (Phoenix) 68→72** (2025 DII champion + 2× National CoY + 89 D1 transfers), **Dale (AWC) 64→68** (2 national runner-ups + 299 wins + NJCAA Legacy Award), **Sasnett (EFSC) 60→65**, **Melchor (Angelina) 56→60**, **Carrabotta (Westchester) 53→56**. **Elite:** **Clements (Tyler JC) 79→80 (rk-strong→rk-elite)** — the single JUCO coach placed in the elite band (at the floor, rank 22, below all D1 coaches): 7 national titles as HC, 554 wins (2nd all-time NJCAA), NJCAA Hall of Fame, and a real pipeline (100+ pro contracts / 10 MLS / 17 first-division), satisfying the Rootes test (winning + a clear pro pipeline = elite; Rootes 79 was held at top-of-strong precisely for lacking a pipeline). **Halo trimmed:** **Avallone (Daytona State) 74→66** (2025 DI national finalist is real, but only ~3 college HC seasons + a developmental USL/PDL background — the 74 was inflated). The remaining JUCO coaches (first-year/early-career or data-gap-with-no-published-CV) held near baseline in solid (DePalo 63, Ribeiro 61, Cole 61, Ginsberg 61, Simmons/Espinal/Vieira/Hall 60, Lis-Simmons 58, Perry 58, Valencia 57, Plumbar 54, Rodriguez 53). Coach rubric now **107/110 re-scored** (3 legacy = the deferred coach-swaps NC State/Findley, Chapman/Johnson, Santa Monica/Avery); validator Issues **0**; ranks are a gapless 1–110 permutation and all 110 `rankClass` bands are coherent. **§5d re-score campaign COMPLETE.** **Deferred data fixes** (out of scope): dead/wrong host aliases (daytona_state generic→`dscfalcons.com`, blinn coach.url points to the assistant→`buccaneersports.com/.../michael-mcbride/100`); `yearsHC` errors (dibernardo 5→16, brown 5→7, dale null→~20, fisher null→~21, valencia/cosgrove verify); `mlsPlayers`/`licence` backfills (fisher 0→15 + USSF National; mcbride 0→18; clements/depalo confirmed). Next natural focus = the deferred coach swaps (Chapman, NC State, Santa Monica) + the ~10 dead host aliases campaign-wide.

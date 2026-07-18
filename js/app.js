@@ -857,7 +857,7 @@ const DOMAINS = {
   stedwards:    'gohilltoppers.com',
   ocu:          'ocusports.com',
   keiser:       'kuseahawks.com',
-  chapman:      'chapmanathletics.com',
+  chapman:      'athletics.chapman.edu',
   smc:          'smccorsairs.com',
   miami_dade:   'mdcathletics.com',
   uc_charleston:'ucgoldeneagles.com',

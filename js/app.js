@@ -2429,7 +2429,11 @@ function buildCoachCard(c){
     const cls=s.toLowerCase().includes('aus')?'cs-aus':s.toLowerCase().includes('pro')||s.toLowerCase().includes('mls')||s.toLowerCase().includes('pipeline')?'cs-pro':s.toLowerCase().includes('tactic')||s.toLowerCase().includes('system')?'cs-tac':s.toLowerCase().includes('dev')?'cs-dev':'cs-rec';
     return`<span class="cs-tag ${cls}">${s}</span>`;
   }).join('');
-  const staffHtml=c.staff.map(s=>`<div class="staff-row"><div><div class="staff-name">${s.name}</div><div class="staff-role">${s.role}</div></div><div class="staff-bg">${s.bg}</div></div>`).join('');
+  const staffHtml=c.staff.map(s=>{
+    if(typeof s==='string'){const[nm,...rest]=s.split(' — ');return`<div class="staff-row"><div><div class="staff-name">${nm}</div><div class="staff-role">${rest.join(' — ')}</div></div><div class="staff-bg"></div></div>`;}
+    const bg=s.bg||[s.email,s.phone].filter(Boolean).join(' · ')||'';
+    return`<div class="staff-row"><div><div class="staff-name">${s.name||''}</div><div class="staff-role">${s.role||''}</div></div><div class="staff-bg">${bg}</div></div>`;
+  }).join('');
   const rankColors={rk_elite:'background:#fef08a;color:#713f12',rk_strong:'background:var(--sky3);color:var(--sky)',rk_solid:'background:var(--emerald3);color:var(--emerald)'};
   const rkcss=c.rankClass==='rk-elite'?rankColors.rk_elite:c.rankClass==='rk-strong'?rankColors.rk_strong:rankColors.rk_solid;
   el.innerHTML=`

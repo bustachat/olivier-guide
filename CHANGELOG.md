@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.1 (July 2026) — Coach-card staff rendering: fix "null"/"undefined" rows, add email fallback (Change Type 11)
+
+`buildCoachCard()` (js/app.js) rendered each `coaches.json` staff row as
+`${s.name}/${s.role}/${s.bg}` with no guards. Against the real data (196 staff rows
+across 110 coaches) that produced garbage:
+
+- **25 rows with `bg: null`** → literal **"null"**; **9 email-only rows (no `bg`)** →
+  literal **"undefined"** (36 garbage cells total).
+- **2 string-format rows** (Indian Hills: `"Zac Newton — Head Coach"`) → name AND role
+  rendered **"undefined"** (the map assumed objects).
+- 17 empty-`bg` rows rendered a blank line.
+
+**Fix (single renderer, one function):** handle string entries by splitting on `" — "`
+into name/role; guard `name`/`role` with `|| ''`; and fall back the background slot to
+`email · phone` when `bg` is absent/null/empty, else render clean-empty (never "null"/
+"undefined"). No data or schema change; display-only.
+
+**Verified** on a local server (Coaches tab, 110 cards / 196 staff rows): "null" 25→0,
+"undefined" bg 11→0, "undefined" name 2→0; the 143 real-`bg` rows are unchanged; 6 rows
+now surface an assistant email instead of garbage; the two Indian Hills rows now read
+"Zac Newton / Head Coach" and "Felix Vu / Assistant Coach"; zero console errors.
+`node --check` clean; `validate_consistency.js` Issues 0. (School-object `staff[]` arrays
+in the conf JSONs are not rendered anywhere — confirmed the coach card is the only staff
+renderer — so no other surface was affected.)
+
+---
+
 ### v44.0 (July 2026) — Delaware reclassified CAA → Summit League (men's soccer conference correction)
 
 Delaware's July 2025 all-sports move to Conference USA does **not** include men's

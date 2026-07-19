@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.7 (July 2026) — confRecord backlog Batch 6/? : d1-other + Drexel researched (Change Type 6)
+
+Batch 6 — the first "scattered" batch (schools span 4 different conferences). Rewrote `confRecord` (2020–2025) for **4 flagged schools**: UCA (ASUN), GCU (WAC), Delaware (CAA→Summit) in `data/d1-other.json`, and **Drexel** (CAA, the lone `data/caa.json` flag — folded in since it shares Delaware's CAA source). Counter **10 → 6**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). This was the first batch run **MCP-browser-first** (owner directive) — asunsports.org, caasports.org, thesummitleague.org all loaded in the in-app browser; only **wacsports.com** bot-blocked (redirects to the football conference for both the browser AND curl), so GCU's WAC standings came from the Wikipedia WAC standings templates.
+
+**Major corrections:**
+- **GCU won the WAC regular season in BOTH 2020 (7-0-0, undefeated) and 2021 (9-2-0)** — buried under "WAC play"; and its 2025 was 3rd + won the **final** WAC Tournament (automatic NCAA bid).
+- **UCA has been consistently 2nd in the ASUN** (2021, 2022) and 2nd in its division in 2025 — labeled "Mid ASUN"; and its 2022 was 2nd, not the "3rd" the old note claimed. (UCA joined the ASUN for men's soccer in 2021; the 2020-21 season predates that.)
+- **Drexel was 2nd in the CAA in 2024** (5-2-1) and a steady tournament qualifier — vague notes replaced with exact finishes.
+- **Delaware's** CAA→Summit move now has real data: 9th/last (winless, 2021) and 10th/last (2022) in the CAA, then a strong 3rd (12-2-3) in its first Summit season with a tournament-semifinal run.
+
+Splice method identical (CRLF-preserving region-only replacement, guarded). Files: `data/d1-other.json`, `data/caa.json`, `athletes/olivier.json` (v44.6→v44.7), `CHANGELOG.md`, `CLAUDE.md` §6 marker.
+
+---
+
 ### v44.6 (July 2026) — confRecord backlog Batch 5/? : ACC file researched (Change Type 6)
 
 Batch 5. The **4 flagged** `data/acc.json` schools (Cal, Louisville, NC State, Stanford) had `confRecord` (2020–2025) rewritten from official standings. Counter **14 → 10**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). Sources:

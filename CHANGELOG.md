@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.9 (July 2026) — confRecord backlog Batch 8/8 (FINAL): JUCO researched — CAMPAIGN COMPLETE, counter 38 → 0 ✅
+
+Final batch. Rewrote `confRecord` for the last **3 flagged** `data/juco.json` schools. Counter **3 → 0** — the validate_consistency.js confRecord backlog is fully cleared (started at 38). `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). MCP-browser-first; iccac.org, thefcsaasports.com and njcaa.org all bot-blocked/404'd the browser → curl + the schools' own Sidearm sites.
+
+- **Indian Hills** (ICCAC / NJCAA Region XI): the three "ICCAC play — pre-Newton era" placeholder years filled from iccac.org — 2021 5th/last (1-6-1, 7-11-2), 2022 2nd (4-3-1, 12-9-1), 2023 1st (2-0, 10-3-5). The 2024 national-semifinal and **2025 NJCAA DI National Championship** rows were preserved byte-for-byte (verified by an assert).
+- **LSU Eunice** (NJCAA DI): corrected the framing — LSUE is **not** a new program but a longstanding **NJCAA DI independent** (a Region 14 scheduling partner not carried in the conference standings table). The three "Not in Region 14 standings" rows now show its real overall records as an independent (2021 8-6-2, 2022 11-4, 2023 13-4-1, from athletics.lsue.edu); 2024/2025 Region 14 rows preserved.
+- **Miami Dade** (FCSAA / NJCAA Region 8): confirmed via official FCSAA standings that its **men's-soccer program began in 2024-25** (absent from the 2022-23 & 2023-24 standings, which listed the other Region 8 schools). Trimmed the fabricated 2020–2023 "Mid NJCAA"/"COVID" rows to the two real seasons: 2024 1st (2-1-1, 13-5-2, first season) and 2025 3rd (1-3, 6-11-2).
+
+**Campaign summary (v44.2–v44.9, 8 batches):** every one of the 110 schools' `confRecord` (2020–2025) now carries a real, sourced conference finish + record instead of "Mid/Lower/conference play" placeholders. Along the way, verification exposed and corrected a large number of *wrong* (not just thin) entries — hidden conference titles (Tulsa 2021 AAC, Penn State 2021 Big Ten, Washington 2022 Pac-12, Stanford 2020 Pac-12, GCU 2020/2021 WAC, CS Fullerton 2023 & UC Riverside 2022 Big West, Keiser's Sun Conference dominance), fabricated results (UConn's 2023 "regular-season title", Seton Hall's mis-dated tournament title), and several structural findings where a school's men's-soccer conference differs from its guide grouping (Army/Navy → Patriot League, Akron → Big East). No score cascade (confRecord is display-only). Splice method throughout: CRLF-preserving, region-only replacement guarded so only the target `confRecord` arrays change.
+
+Files: `data/juco.json`, `athletes/olivier.json` (v44.8→v44.9), `CHANGELOG.md`, `CLAUDE.md` §6 marker.
+
+---
+
 ### v44.8 (July 2026) — confRecord backlog Batch 7/? : d2 file researched (Change Type 6)
 
 Batch 7. Rewrote `confRecord` (2020–2025) for the **3 flagged** `data/d2.json` schools — Nova SE (Sunshine State Conf), Keiser (Sun Conference / NAIA), Georgian Court (CACC). Counter **6 → 3**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). MCP-browser-first: sunshinestateconference.com and thesunconference.com loaded in the in-app browser; **caccathletics.org bot-blocked** (timed out) → curl.

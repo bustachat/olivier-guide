@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.11 (July 2026) — Explore search UX: working clear (✕) button + typeahead autosuggest (Change Type 11)
+
+Two enhancements to the Explore Schools search box, both requested by the owner. UX/JS only, no data.
+
+**1. Robust clear button.** The ✕ button existed but was wired through a fragile inline `oninput` expression. Replaced with a dedicated `onSearchInput(inp)` handler that reliably toggles the button (`display:flex` when the field has text, `none` when empty). The button is now a rounded hit-target that fills with the rose accent on hover. `clearSearch()` also closes the dropdown and refocuses the field.
+
+**2. Autosuggest / typeahead.** Typing now shows a dropdown of up to 6 matching schools, ranked: school-name starts-with → full-name starts-with → name contains → full-name/location contains. Each row shows the school name + its conference. Interactions: click (or Enter) selects a school — fills the search, filters the grid to it, and opens its Details modal; ↑/↓ move the highlight; Enter picks the highlighted (or first) result; Esc closes the dropdown (or clears the field if already closed); clicking outside closes it. Fully keyboard-accessible (`role="combobox"`/`listbox"`/`option"`, `aria-expanded`), HTML-escaped, and theme-aware.
+
+Files: `js/app.js` (search input markup + `onSearchInput`/`renderSearchSuggest`/`hlSuggest`/`pickSuggest`/`onSearchKey`/`closeSuggest` + outside-click listener; `clearSearch` extended), `index.html` (`.search-suggest` dropdown styles + clear-button restyle), `athletes/olivier.json` (v44.10→v44.11). Live-verified: typing "a" lists Akron/Angelina/Arizona Western/Army/Barry with the ✕ visible; "ak" narrows to Akron first; ↓ highlights Akron; selecting opens the Akron modal; clear empties the field and restores all 110 cards; zero console errors.
+
+---
+
 ### v44.10 (July 2026) — Men's-soccer conference reclassification: Akron → Big East, Army & Navy → Patriot League
 
 Follows the **Delaware → Summit** precedent (v44.0): the guide groups schools by the conference their *men's soccer* plays in, so three schools whose men's-soccer conference differs from their primary-athletics home were regrouped. Display/grouping only — **no Fit-score cascade** (confKey/conf/confRecord don't feed `fitOlivier`). `validate_consistency.js` **Issues: 0**, `validate_schools.py` PASS (110), confRecord counter still 0.

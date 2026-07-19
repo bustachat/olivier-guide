@@ -356,9 +356,11 @@ function renderLensControls(){
         ).join('')+
       '</div>'+
       '<div class="search-schools-wrap" style="margin-left:auto">'+
-        '<input id="search-schools" type="text" placeholder="Search schools…" '+
-          'oninput="filterBySearch(this.value);document.getElementById(\'search-clear-btn\').style.display=this.value?\'\':\'none\'">'+
-        '<button id="search-clear-btn" onclick="clearSearch()" title="Clear search">✕</button>'+
+        '<input id="search-schools" type="text" placeholder="Search schools…" autocomplete="off" '+
+          'role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-suggest" '+
+          'oninput="onSearchInput(this)" onkeydown="onSearchKey(event)" onfocus="onSearchInput(this)">'+
+        '<button id="search-clear-btn" onclick="clearSearch()" title="Clear search" aria-label="Clear search">✕</button>'+
+        '<div id="search-suggest" class="search-suggest" role="listbox"></div>'+
       '</div>'+
     '</div>';
 }
@@ -1772,7 +1774,96 @@ function clearSearch() {
   applyFilters();
   const clearBtn = document.getElementById('search-clear-btn');
   if (clearBtn) clearBtn.style.display = 'none';
+  closeSuggest();
+  if (inp) inp.focus();
 }
+
+/* ── v44.11: search autosuggest (typeahead) ─────────────────────── */
+let suggestList = [];   // school objects currently shown
+let suggestIdx  = -1;   // highlighted suggestion (-1 = none)
+
+function onSearchInput(inp){
+  const v = inp.value;
+  searchKeyword = v.toLowerCase().trim();
+  const clr = document.getElementById('search-clear-btn');
+  if (clr) clr.style.display = v ? 'flex' : 'none';
+  applyFilters();
+  renderSearchSuggest(v);
+}
+
+function renderSearchSuggest(v){
+  const box = document.getElementById('search-suggest');
+  const inp = document.getElementById('search-schools');
+  if(!box) return;
+  const q = (v||'').toLowerCase().trim();
+  suggestIdx = -1;
+  if(q.length < 1){ closeSuggest(); return; }
+  // rank: name starts-with (0) > full starts-with (1) > name contains (2) > full/loc contains (3)
+  const scored = unis.map(u=>{
+    const name=(u.name||'').toLowerCase(), full=(u.full||'').toLowerCase(), loc=(u.loc||'').toLowerCase();
+    const s = name.startsWith(q)?0 : full.startsWith(q)?1 : name.includes(q)?2 : (full.includes(q)||loc.includes(q))?3 : -1;
+    return {u,s};
+  }).filter(x=>x.s>=0).sort((a,b)=> a.s-b.s || a.u.name.localeCompare(b.u.name)).slice(0,6);
+  suggestList = scored.map(x=>x.u);
+  if(inp) inp.setAttribute('aria-expanded','true');
+  const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  if(!suggestList.length){
+    box.innerHTML = '<div class="suggest-empty">No schools match “'+esc(v)+'”</div>';
+    box.classList.add('open');
+    return;
+  }
+  box.innerHTML = suggestList.map((u,i)=>
+    '<div class="suggest-item" role="option" data-i="'+i+'" '+
+      'onmousedown="event.preventDefault();pickSuggest(\''+u.id+'\')" onmousemove="hlSuggest('+i+')">'+
+      '<span class="suggest-name">'+esc(u.name)+'</span>'+
+      '<span class="suggest-meta">'+esc(u.conf||u.div||'')+'</span>'+
+    '</div>'
+  ).join('');
+  box.classList.add('open');
+}
+
+function hlSuggest(i){
+  suggestIdx = i;
+  const box = document.getElementById('search-suggest');
+  if(!box) return;
+  const items = box.querySelectorAll('.suggest-item');
+  items.forEach((el,idx)=> el.classList.toggle('hl', idx===i));
+  if(items[i]) items[i].scrollIntoView({block:'nearest'});
+}
+
+function pickSuggest(id){
+  const u = unis.find(x=>x.id===id);
+  const inp = document.getElementById('search-schools');
+  if(u && inp){ inp.value = u.name; searchKeyword = u.name.toLowerCase().trim(); }
+  const clr = document.getElementById('search-clear-btn'); if(clr) clr.style.display='flex';
+  closeSuggest();
+  applyFilters();
+  if(typeof openDetail==='function') openDetail(id);
+}
+
+function onSearchKey(e){
+  const box = document.getElementById('search-suggest');
+  const open = box && box.classList.contains('open') && suggestList.length;
+  if(e.key==='ArrowDown'){ if(!open) return; e.preventDefault(); hlSuggest((suggestIdx+1)%suggestList.length); }
+  else if(e.key==='ArrowUp'){ if(!open) return; e.preventDefault(); hlSuggest((suggestIdx-1+suggestList.length)%suggestList.length); }
+  else if(e.key==='Enter'){
+    if(open){ e.preventDefault(); const pick = suggestIdx>=0 ? suggestList[suggestIdx] : suggestList[0]; if(pick) pickSuggest(pick.id); }
+  }
+  else if(e.key==='Escape'){ if(open){ e.preventDefault(); closeSuggest(); } else { clearSearch(); } }
+}
+
+function closeSuggest(){
+  const box = document.getElementById('search-suggest');
+  const inp = document.getElementById('search-schools');
+  if(box){ box.classList.remove('open'); box.innerHTML=''; }
+  if(inp) inp.setAttribute('aria-expanded','false');
+  suggestList = []; suggestIdx = -1;
+}
+
+// Close the suggestion dropdown when clicking anywhere outside the search box
+document.addEventListener('click', function(e){
+  if(!(e.target.closest && e.target.closest('.search-schools-wrap'))) closeSuggest();
+});
 
 function showAllCards() {
   document.querySelectorAll('.conf-section').forEach(sec => {

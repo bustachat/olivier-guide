@@ -6,6 +6,27 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.5 (July 2026) — confRecord backlog Batch 4/? : Big Ten file researched (Change Type 6)
+
+Batch 4. The **5 flagged** `data/big-ten.json` schools (Michigan, Northwestern, Penn State, Rutgers, Washington) had `confRecord` (2020–2025) rewritten from official standings. Counter **19 → 14**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). Sources:
+- **bigten.org** (new Next.js site — parsed the embedded `__NEXT_DATA__` JSON; only carries 2022–2025).
+- **Wikipedia** season pages for Big Ten 2020 & 2021 (the newer site lacks them) and Washington's Pac-12 years.
+- The **Washington program page** for its 2020/2021 Pac-12 finishes.
+
+Washington needed two conferences (Pac-12 2020–2023, Big Ten 2024–2025) — same realignment pattern as the AAC batch.
+
+**Major corrections:**
+- **Penn State won the 2021 Big Ten** — regular-season AND tournament champions (6-2-0, 13-7-1) — labeled "Mid B1G conference play." Also 2nd in 2020 (tournament runners-up to Indiana) and 2nd in 2023.
+- **Washington won the 2022 Pac-12 regular season** (7-1-2) and went **18-2-2 (2nd Pac-12) in 2021** — all buried under "Pac-12 conference play"; and its 2025 Big Ten finish was 2nd, not "Lower B1G."
+- **Northwestern was 3rd in the Big Ten in 2023** (top-half) and **Rutgers 3rd in 2022** — both "Mid B1G."
+- Michigan's 2022 was last (9th), not "Mid"; the fabricated/vague notes for Michigan/Rutgers 2021–2024 replaced with exact records.
+
+The Big Ten *did* play the 2020-21 season (spring 2021), unlike the Big West — 2020 rows carry the real spring-2021 standings.
+
+Splice method identical to prior batches (CRLF-preserving region-only replacement, guarded; also asserts no validate_schools placeholder-phrase verbs). Files: `data/big-ten.json`, `athletes/olivier.json` (v44.4→v44.5), `CHANGELOG.md`, `CLAUDE.md` §6 marker.
+
+---
+
 ### v44.4 (July 2026) — confRecord backlog Batch 3/? : Big West file researched (Change Type 6)
 
 Batch 3. All **5 flagged** `data/big-west.json` schools (CS Fullerton, UC Davis, UC Irvine, UC Riverside, UC San Diego) plus the 2 already-detailed schools (UCSB, Cal Poly, rewritten in the same pass to fix their fabricated 2020 rows) had `confRecord` (2020–2025) rewritten from official **bigwest.org** standings (season IDs 185/170/154/140/127/117) + the Wikipedia Big West Tournament champions table. Counter **24 → 19**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings — baseline).

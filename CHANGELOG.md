@@ -6,6 +6,14 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.13 (July 2026) — Coaches tab: add D3 and JUCO filter buttons (Change Type 11)
+
+The Coaches → Profiles filter row was missing **D3** and **JUCO**, so those coaches (1 D3, 29 JUCO) couldn't be isolated. Added both buttons — D3 in the NCAA-division group (D1 · D2 · D3 · NAIA), JUCO after Ivy League. The row is now: All Coaches · D1 · D2 · D3 · NAIA · Ivy League · JUCO · 🇦🇺 Aus Connections · 🏆 Pro Pipeline.
+
+No JS change needed — `filterCoaches(type)` already matches `card.dataset.div===type`, and the coach cards carry the exact `div` values (`"D3"`, `"JUCO"`) from `coaches.json`. `index.html` (2 buttons), `athletes/olivier.json` v44.12→v44.13. Live-verified: JUCO → 29 coach cards, D3 → 1, All → 110; zero console errors.
+
+---
+
 ### v44.12 (July 2026) — Search: Enter filters instead of auto-opening a school (Change Type 11)
 
 Follow-up to v44.11. The autosuggest was auto-selecting the first result and opening its modal on Enter, which was jarring. The search is now a pure filter/finder — **it never auto-opens the Details modal.**

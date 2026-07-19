@@ -6,6 +6,26 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.14 (July 2026) — Pro Pipeline tab reconciliation: 9 missing NCAA D1 titles, 2 JUCO titles, 2 MLS pipelines + UNC titles factual fix (Change Type 7)
+
+Queued from the confRecord campaign session (2026-07-19): cross-referencing every school's own `titles[]`/`confRecord` against `data/pipeline.json` found the Pro Pipeline tab badly stale, plus a standalone factual error in UNC's own `titles[]`.
+
+**`ncaaD1` table** — was missing 9 schools' real, undisputed NCAA D1 men's titles already documented in their own `titles[]`: Clemson (2021, 2023), Vermont (2024, reigning champion), Georgetown (2019), Syracuse (2022), Notre Dame (2013), Stanford (2015/16/17), Maryland (2005/08/18), Duke (1986), Navy (1964, program's only title). Table re-sorted by title count (tiebreak: most recent title) — all 15 ranked entries renumbered 1–15; medal ranks 1–3 (Indiana/Virginia/UCLA) unchanged.
+
+**JUCO section** (`ncaaD2`'s unranked "NAIA, D3 & JUCO" group) — added Phoenix College (2025 NJCAA DII National Champion) and Pima CC (2018, 2021 NJCAA champion), both already carrying `chip-green` title claims in their own school JSON that the table never surfaced.
+
+**`mlsDraft` table** — added Akron (rank 5, 5 picks/5yr — Jaaskelainen #7 overall 2024, 18 picks under Coppinger) and NC State (rank 17, 1 pick/5yr — Nikola Markovic #1 overall 2026, Donavan Phillip 2025 Hermann Trophy, both developed by Marc Hubbard in 2 seasons), both previously absent despite documented pipelines called out elsewhere in the guide. Ranks 5–21 renumbered to accommodate both insertions.
+
+**UNC factual error (independent of staleness)** — `data/acc.json`'s `titles[]` read *"Dorrance era 4 D1 NCAA Championships (1978, 1979, 2001 — men's + women's dynasty)."* Anson Dorrance is UNC's **women's** soccer coach (21 women's titles); this is a men's soccer guide, and UNC men's actual HC is Carlos Somoano. Verified via NCAA.com + Wikipedia: UNC men's soccer's only two national titles are **2001** (Elmar Bolowich, program's first) and **2011** (Somoano's first year as HC, beat Charlotte 1-0). Corrected in both `acc.json`'s `titles[]` and `pipeline.json`'s UNC `mlsDraft` row (which repeated the same "Dorrance dynasty legacy" framing).
+
+Display-only, Change Type 7 — verified `js/scores.js` never reads `titles` or `pipeline.json`, so no `fitOlivier`/`lensScores` cascade. `validate_schools.py` PASS (18 pre-existing unrelated warnings only), `node validate_consistency.js` Issues:0. `athletes/olivier.json` v44.13→v44.14.
+
+**Tabs verified (local browser, targeted scope):** Pro Pipeline — all three sub-tabs (NCAA D1, NCAA D2, MLS SuperDraft) render the new/renumbered rows correctly; UNC's `mlsDraft` row shows the corrected "2× national champions (2001, 2011)" text; Akron and NC State both render at their new ranks with correct coach-card cross-references. Zero console errors.
+
+**Deferred (found, not fixed — different Change Type, out of this session's scope):** `data/coaches.json`'s Somoano `record` field also says *"Dorrance dynasty legacy program"* — same wrong claim, but fixing it is Change Type 2 territory (two-file rule + mandatory full coach re-rank), not Change Type 7. Flagged for its own session.
+
+---
+
 ### v44.13 (July 2026) — Coaches tab: add D3 and JUCO filter buttons (Change Type 11)
 
 The Coaches → Profiles filter row was missing **D3** and **JUCO**, so those coaches (1 D3, 29 JUCO) couldn't be isolated. Added both buttons — D3 in the NCAA-division group (D1 · D2 · D3 · NAIA), JUCO after Ivy League. The row is now: All Coaches · D1 · D2 · D3 · NAIA · Ivy League · JUCO · 🇦🇺 Aus Connections · 🏆 Pro Pipeline.

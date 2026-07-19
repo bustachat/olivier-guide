@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.6 (July 2026) — confRecord backlog Batch 5/? : ACC file researched (Change Type 6)
+
+Batch 5. The **4 flagged** `data/acc.json` schools (Cal, Louisville, NC State, Stanford) had `confRecord` (2020–2025) rewritten from official standings. Counter **14 → 10**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). Sources:
+- **theacc.com** (Sidearm) — full ACC standings 2020–2025 (Atlantic/Coastal **divisions** 2020–2023, single table 2024–2025).
+- **Wikipedia** Pac-12 standings templates/season pages + Stanford's program page — for Cal & Stanford's Pac-12 years (2020–2023).
+
+Cal & Stanford moved Pac-12 → ACC in 2024 (the same realignment split as Washington/Cal-Stanford in the AAC and Big Ten batches).
+
+**Major corrections:**
+- **Stanford won the 2020 Pac-12** (7-2-1, 10-3-1) — labeled "Pac-12 conference play"; and its 2024 was 7th, not the "top ACC seed" the old note claimed.
+- **Louisville was 2nd (2021), 3rd (2020, 2022) in the ACC Atlantic Division** and 4th in 2023 — all buried under "Lower ACC finish."
+- **NC State's** 2025 (3rd ACC, 16-2-3) now notes its run to the **NCAA Championship final** (national runners-up); its 2021–2024 vague "Mid ACC" replaced with exact ACC Atlantic finishes.
+- Removed misplaced claims from Stanford's rows (the "3 NCAA titles 2015-17" and a dubious "2023 NCAA runner-up" note that sat on the wrong years).
+
+Splice method identical to prior batches (CRLF-preserving region-only replacement, guarded). Files: `data/acc.json`, `athletes/olivier.json` (v44.5→v44.6), `CHANGELOG.md`, `CLAUDE.md` §6 marker.
+
+---
+
 ### v44.5 (July 2026) — confRecord backlog Batch 4/? : Big Ten file researched (Change Type 6)
 
 Batch 4. The **5 flagged** `data/big-ten.json` schools (Michigan, Northwestern, Penn State, Rutgers, Washington) had `confRecord` (2020–2025) rewritten from official standings. Counter **19 → 14**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). Sources:

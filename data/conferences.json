@@ -78,7 +78,7 @@
     "prestige": "Very Strong — #3-4 nationally, NYC-anchored",
     "founded": 1979,
     "teams": 11,
-    "soccerTeams": 11,
+    "soccerTeams": 12,
     "ncaaTitles": 6,
     "mlsPipeline": "Strong — Georgetown 42 MLS signings under Wiese. Multiple Red Bulls/NYCFC connections from St John's.",
     "scholarships": "Up to 9.9 athletic equivalencies",
@@ -93,11 +93,12 @@
       "Butler",
       "Seton Hall",
       "DePaul",
-      "Xavier"
+      "Xavier",
+      "Akron (Akron, OH) — joined for men's soccer in 2023; won the Big East Midwest Division in 2024 & 2025"
     ],
     "otherSchools": [],
     "desc": "The Big East features many urban campuses across the East Coast, making it culturally diverse and clinically connected for students targeting health careers. Georgetown won the 2019 national championship under Brian Wiese. St. John's in Queens NYC has access to the Hospital for Special Surgery — the #1 orthopaedic hospital in the world. Creighton in Omaha is consistently top-10 nationally.",
-    "olivierNote": "All 11 Big East schools now fully profiled. Georgetown (2019 champion, 42 MLS signings) and St. John's (NYC, Hospital for Special Surgery access) remain the top Olivier targets. Creighton is consistently top-10 nationally. UConn under Ray Reid is the strongest program in the Northeast. Big East is extremely competitive — strong highlights required. Marquette (Milwaukee) and Butler (Indianapolis) are the most accessible entry points for international recruits.",
+    "olivierNote": "All 11 Big East schools now fully profiled. Georgetown (2019 champion, 42 MLS signings) and St. John's (NYC, Hospital for Special Surgery access) remain the top Olivier targets. Creighton is consistently top-10 nationally. UConn under Ray Reid is the strongest program in the Northeast. Big East is extremely competitive — strong highlights required. Marquette (Milwaukee) and Butler (Indianapolis) are the most accessible entry points for international recruits. Akron is a Big East men's-soccer affiliate from 2023 (its other sports remain in the MAC) — a top-20 MLS pipeline and the best Pre-PT value in the guide.",
     "color": [
       "#1e3a5f",
       "#7dd3fc"
@@ -142,7 +143,7 @@
     "prestige": "Very Strong — #5-6 nationally, rising fast",
     "founded": 2013,
     "teams": 14,
-    "soccerTeams": 12,
+    "soccerTeams": 10,
     "ncaaTitles": 0,
     "mlsPipeline": "Strong and growing — FIU and USF are consistent MLS producers. FAU 2025 AAC Tournament Champions.",
     "scholarships": "Up to 9.9 athletic equivalencies",
@@ -154,9 +155,7 @@
       "Tulsa (Tulsa, OK)",
       "Memphis (Memphis, TN)",
       "Temple (Philadelphia, PA)",
-      "UAB (Birmingham, AL)",
-      "Navy (Annapolis, MD)",
-      "Army (West Point, NY)"
+      "UAB (Birmingham, AL)"
     ],
     "otherSchools": [],
     "desc": "The American Athletic Conference has emerged as a genuine high-major conference in soccer. FIU reached the AAC Championship Final in 2024 and 2025. FAU won the 2025 AAC Tournament. USF rebuilding under Kiefer (second tenure). The conference offers warm-climate campuses, strong exercise science degrees, and accessible D1 competition.",
@@ -291,40 +290,6 @@
     "color": [
       "#1e3a5f",
       "#60a5fa"
-    ]
-  },
-  {
-    "id": "mac",
-    "name": "Mid-American Conference",
-    "abbr": "MAC",
-    "tier": "Mid-Major (D1)",
-    "tierClass": "tier-d1",
-    "prestige": "Strong mid-major — Akron is top-20 MLS producer historically",
-    "founded": 1946,
-    "teams": 12,
-    "soccerTeams": 10,
-    "ncaaTitles": 1,
-    "mlsPipeline": "Strong — Akron dominant MAC producer. 18 MLS picks under Coppinger era. Emil Jaaskelainen #7 overall 2024.",
-    "scholarships": "Up to 9.9 athletic equivalencies",
-    "guideSchools": [
-      "Akron (fully profiled)"
-    ],
-    "otherSchools": [
-      "Ohio",
-      "Kent State",
-      "Western Michigan",
-      "Ball State",
-      "Buffalo",
-      "Miami (OH)",
-      "Central Michigan",
-      "Eastern Michigan",
-      "Northern Illinois"
-    ],
-    "desc": "The Mid-American Conference is the strongest mid-major soccer conference in the Midwest. Akron under Jared Embick (contract through 2035) is the dominant program — multiple MAC titles, 2021 College Cup Final Four, 18 MLS picks under Coppinger. The Cleveland Clinic partnership for pre-PT placement is a standout academic benefit.",
-    "olivierNote": "Akron is the value pick of this entire guide. Top-20 MLS pipeline, explicit Pre-PT degree, Cleveland Clinic clinical access, coach to 2035. Cold Ohio winters are the only drawback. If Olivier prioritises career development over lifestyle, this is elite value at ~$32k/yr.",
-    "color": [
-      "#003087",
-      "#cc0000"
     ]
   },
   {
@@ -814,6 +779,40 @@
     "color": [
       "#fef9c3",
       "#a16207"
+    ]
+  },
+  {
+    "id": "patriot",
+    "name": "Patriot League",
+    "abbr": "Patriot",
+    "tier": "Mid-Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Mid-major — Midwest/Plains base with East Coast men's soccer affiliates",
+    "founded": 1982,
+    "teams": 10,
+    "soccerTeams": 10,
+    "ncaaTitles": 0,
+    "mlsPipeline": "Developing — service academies and northeastern privates",
+    "scholarships": "Army & Navy: full federal scholarships; other members: up to 9.9 equivalencies",
+    "guideSchools": [
+      "Army West Point (West Point, NY) — men's soccer plays the Patriot League; full federal scholarship",
+      "Navy (Annapolis, MD) — men's soccer plays the Patriot League; full federal scholarship"
+    ],
+    "otherSchools": [
+      "Boston University",
+      "Bucknell",
+      "Colgate",
+      "Holy Cross",
+      "Lafayette",
+      "Lehigh",
+      "Loyola Maryland",
+      "American"
+    ],
+    "desc": "The Patriot League is an NCAA Division I conference of academically selective northeastern schools plus the Army and Navy service academies. It sponsors men's soccer with ten teams. Army West Point and Navy compete here for men's soccer even though their primary-athletics home for other sports is the American Athletic Conference (AAC) — an affiliate arrangement common to the service academies. Boston University, Bucknell and Colgate are the league's recent men's-soccer standard-bearers.",
+    "olivierNote": "Army and Navy are filed under the Patriot League because that is where their men's soccer competes (not the AAC, where the guide previously listed them). Both offer a full federal scholarship — zero cost — but a mandatory military service commitment that is not compatible with Olivier's DPT/Chiropractic goal or an MLS pathway. Included for completeness and pipeline reference rather than as a target.",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
     ]
   }
 ]

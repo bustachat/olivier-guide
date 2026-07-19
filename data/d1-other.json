@@ -545,8 +545,9 @@
     "loc": "Akron, OH",
     "region": "midwest",
     "div": "D1",
-    "conf": "MAC",
-    "confKey": "mac",
+    "conf": "Big East",
+    "confKey": "big-east",
+    "confMoveNote": "Akron's men's-soccer team joined the Big East (Midwest Division) in 2023, when the MAC discontinued the sport. Akron's other sports remain in the MAC.",
     "warm": false,
     "city": true,
     "top": false,
@@ -583,33 +584,33 @@
     "confRecord": [
       {
         "yr": 2025,
-        "pos": "MAC Champs",
-        "note": "MAC Regular Season and Tournament Champions. NCAA Tournament — continued Embick dynasty."
+        "pos": "1st Big East Midwest",
+        "note": "5-2-1 Big East (16 pts, 13-5-3 overall). 1st in the Big East Midwest Division. Verified 2026 via bigeast.com official standings."
       },
       {
         "yr": 2024,
-        "pos": "MAC Top 2",
-        "note": "NCAA Tournament. MAC Championship Final."
+        "pos": "1st Big East Midwest",
+        "note": "7-0-1 Big East (22 pts, 12-5-4). 1st in the Big East Midwest Division, undefeated in conference play."
       },
       {
         "yr": 2023,
-        "pos": "MAC Champs",
-        "note": "MAC Tournament Champions. NCAA Tournament Sweet 16."
+        "pos": "3rd Big East Midwest",
+        "note": "2-1-5 Big East (11 pts, 9-2-7). 3rd in the Big East Midwest Division - Akron's first Big East men's-soccer season."
       },
       {
         "yr": 2022,
-        "pos": "MAC Top 3",
-        "note": "NCAA Tournament. Strong MAC showing."
+        "pos": "1st MAC",
+        "note": "5-0-3 MAC (11-4-5 overall). MAC regular-season champions, undefeated in conference play - the MAC's final men's-soccer season before the conference discontinued the sport."
       },
       {
         "yr": 2021,
-        "pos": "MAC Champs",
-        "note": "MAC Tournament Champions. NCAA Tournament College Cup (Final Four)."
+        "pos": "6th MAC",
+        "note": "2-3-1 MAC (9-5-3 overall). 6th in the MAC."
       },
       {
         "yr": 2020,
-        "pos": "MAC play",
-        "note": "COVID-shortened season."
+        "pos": "MAC (no season)",
+        "note": "The MAC did not hold a 2020-21 men's-soccer season (COVID-19)."
       }
     ],
     "titles": [

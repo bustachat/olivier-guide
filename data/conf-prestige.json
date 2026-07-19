@@ -32,11 +32,11 @@
     "fullName": "Big East (East)",
     "div": "D1",
     "divBadge": "d-D1",
-    "programsInGuide": "St. John's, Georgetown, Creighton, UConn, Providence, Villanova, Marquette, Butler, Seton Hall, DePaul, Xavier",
+    "programsInGuide": "St. John's, Georgetown, Creighton, UConn, Providence, Villanova, Marquette, Butler, Seton Hall, DePaul, Xavier, Akron",
     "mlsPipeline": "★★★★ Very Strong",
     "scholarships": "Up to 9.9 equivalencies",
     "confKey": "big-east",
-    "relevance": "11 guide schools — complete Big East coverage. Georgetown (2019 champion, 42 MLS signings) and St. John's (NYC, Hospital for Special Surgery proximity) are Olivier's top fits. Creighton consistently in NCAA Tournaments. UConn, Providence, Villanova all improving. Strong northeast urban clinical networks across every school."
+    "relevance": "11 guide schools — complete Big East coverage. Georgetown (2019 champion, 42 MLS signings) and St. John's (NYC, Hospital for Special Surgery proximity) are Olivier's top fits. Creighton consistently in NCAA Tournaments. UConn, Providence, Villanova all improving. Strong northeast urban clinical networks across every school. Akron joined the Big East for men's soccer in 2023 (the MAC discontinued the sport) and won the Big East Midwest Division in 2024 and 2025 — a top-20 all-time MLS pipeline, Cleveland Clinic clinical network, coach Jared Embick contracted through 2035."
   },
   {
     "rank": 4,
@@ -45,11 +45,11 @@
     "fullName": "American Athletic",
     "div": "D1",
     "divBadge": "d-D1",
-    "programsInGuide": "FIU, USF, FAU, Charlotte, Tulsa, Memphis, Temple, UAB, Navy, Army",
+    "programsInGuide": "FIU, USF, FAU, Charlotte, Tulsa, Memphis, Temple, UAB",
     "mlsPipeline": "★★★★ Strong",
     "scholarships": "Up to 9.9 equivalencies",
     "confKey": "aac",
-    "relevance": "10 guide schools — the most complete AAC coverage in the guide. Florida trio (FIU, USF, FAU) are Olivier's top AAC fits — warm climate, accessible GPA thresholds, strong exercise science programs. Charlotte ranked No.24 nationally in 2025. Navy and Army included as service academy options (unique financial model — full ride, no athletic scholarship cap)."
+    "relevance": "10 guide schools — the most complete AAC coverage in the guide. Florida trio (FIU, USF, FAU) are Olivier's top AAC fits — warm climate, accessible GPA thresholds, strong exercise science programs. Charlotte ranked No.24 nationally in 2025."
   },
   {
     "rank": 5,
@@ -67,19 +67,6 @@
   {
     "rank": 6,
     "rankClass": "rk-strong",
-    "name": "MAC",
-    "fullName": "Mid-American Conference (Midwest)",
-    "div": "D1",
-    "divBadge": "d-D1",
-    "programsInGuide": "Akron",
-    "mlsPipeline": "★★★ Strong",
-    "scholarships": "Up to 9.9 equivalencies",
-    "confKey": "mac",
-    "relevance": "Top-20 MLS pipeline all-time — 18 picks under the Coppinger era, Emil Jaaskelainen #7 overall 2024. HC Jared Embick contracted through 2035. Explicit Pre-PT degree concentration with Cleveland Clinic network. Cold Ohio winters are the trade-off."
-  },
-  {
-    "rank": 7,
-    "rankClass": "rk-strong",
     "name": "WCC",
     "fullName": "West Coast Conference (West)",
     "div": "D1",
@@ -91,7 +78,7 @@
     "relevance": "Denver won 5 consecutive Summit League titles 2021–2025 and reached the 2024 College Cup Final Four. Moved to WCC in 2026 — a significant elevation in conference profile. HC Jamie Franks is one of the most technically precise developers in D1. Excellent city; cold winters the trade-off."
   },
   {
-    "rank": 8,
+    "rank": 7,
     "rankClass": "rk-strong",
     "name": "WAC",
     "fullName": "Western Athletic Conference (Southwest)",
@@ -104,7 +91,7 @@
     "relevance": "GCU won the 2025 WAC title and reached the NCAA Sweet 16 (beating UCLA and San Diego). Jamie Davies appointed December 2025. Phoenix — best warm major-city D1 campus outside Florida and California. Kinesiology with Banner Health clinical network."
   },
   {
-    "rank": 9,
+    "rank": 8,
     "rankClass": "rk-strong",
     "name": "Ivy League",
     "fullName": "Ivy League (East)",
@@ -117,7 +104,7 @@
     "relevance": "Princeton surging — 2024+2025 Ivy Tournament doubles. No athletic scholarships — need-based financial aid only. Yale strong academically. GPA and SAT improvement essential for both programs."
   },
   {
-    "rank": 10,
+    "rank": 9,
     "rankClass": "rk-strong",
     "name": "CAA",
     "fullName": "Colonial Athletic",
@@ -130,7 +117,7 @@
     "relevance": "8 guide schools — complete CAA coverage. Hofstra dominant (4 consecutive CAA titles 2022–2025, NYC access via LIRR). Northeastern (Boston, co-op clinical placements). Drexel (Philadelphia, co-op program). William & Mary (Williamsburg). Delaware left the CAA in 2025 — men's soccer now competes in the Summit League (filed separately). Note: College of Charleston SC is distinct from U of Charleston WV (D2 MEC)."
   },
   {
-    "rank": 11,
+    "rank": 10,
     "rankClass": "rk-strong",
     "name": "ASUN",
     "fullName": "ASUN Conference (South)",
@@ -143,7 +130,7 @@
     "relevance": "Mid-major D1. UCA has the best central midfielder opening of any D1 in this guide — 6 of 9 MFs clear before 2027. Affordable at ~$28k/yr. Warm climate. UAMS clinical network for pre-PT."
   },
   {
-    "rank": 12,
+    "rank": 11,
     "rankClass": "rk-solid",
     "name": "SSC",
     "fullName": "Sunshine State (Florida)",
@@ -156,7 +143,7 @@
     "relevance": "Best D2 conference nationally. PBA ranked #2 nationally 2025. Florida climate matches Sydney. Strong pipeline to USL Championship and international leagues."
   },
   {
-    "rank": 13,
+    "rank": 12,
     "rankClass": "rk-solid",
     "name": "LSC",
     "fullName": "Lone Star Conference (Texas)",
@@ -169,7 +156,7 @@
     "relevance": "Austin FC connection unique. Austin-based program under HC Brian Young. Possession-based style in D2 LSC."
   },
   {
-    "rank": 14,
+    "rank": 13,
     "rankClass": "rk-solid",
     "name": "CCAA",
     "fullName": "California Collegiate Athletic",
@@ -182,7 +169,7 @@
     "relevance": "Most affordable LA option. Strong academic environment for PT pathway."
   },
   {
-    "rank": 15,
+    "rank": 14,
     "rankClass": "rk-solid",
     "name": "MEC",
     "fullName": "Mountain East Conference (WV)",
@@ -195,7 +182,7 @@
     "relevance": "D2 regional conference. UC Charleston has Australian on current roster (Jack Allan, Cape Schanck VIC). CAMC hospital clinical partnership for pre-PT. Note: distinct from College of Charleston SC (D1 CAA)."
   },
   {
-    "rank": 16,
+    "rank": 15,
     "rankClass": "rk-solid",
     "name": "SAC",
     "fullName": "Sooner Athletic (NAIA)",
@@ -208,7 +195,7 @@
     "relevance": "Billy Martin is HC (since 2020). NAIA program with generous scholarships. Program founder Brian Harvey (NAIA HOF) played professionally in Australia — historical connection. Warm spring climate."
   },
   {
-    "rank": 17,
+    "rank": 16,
     "rankClass": "rk-dev",
     "name": "Sun Conference",
     "fullName": "Sun Conference (NAIA Florida)",
@@ -221,7 +208,7 @@
     "relevance": "Health sciences pathway is the priority over pro soccer at Keiser."
   },
   {
-    "rank": 18,
+    "rank": 17,
     "rankClass": "rk-dev",
     "name": "SCIAC",
     "fullName": "Southern CA Intercollegiate (D3)",
@@ -234,7 +221,7 @@
     "relevance": "Chapman's Pre-PT required course KIN405 is unique value. Academic-first choice."
   },
   {
-    "rank": 19,
+    "rank": 18,
     "rankClass": "rk-dev",
     "name": "CCCAA/NJCAA",
     "fullName": "Junior College Conferences",
@@ -247,7 +234,7 @@
     "relevance": "29 guide JUCO schools spanning all 6 NJCAA regions the guide covers (Region 1 AZ, Region 6 KS, Region 8 FL, Region 11 IA/NE, Region 14 TX/LA, Region 15 NY) plus Santa Monica (CCCAA, non-NJCAA) — all 2-year transfer platforms. Phoenix College are the 2025 NJCAA DII National Champions (ranked #1 nationally for 7 straight weeks). Indian Hills are 2025 NJCAA DI National Champions. Suffolk County CC won the 2025 NJCAA Region 15 Championship; Johnson County CC won the 2025 Region 6/9 title. Daytona State are 2025 NJCAA DI finalists — top-5 D1 transfer feeder. Tyler JC is the #1 D1 transfer feeder all-time. SMC → UCLA proven pipeline. Monroe are 3× NJCAA DI champions, NYC metro. Arizona Western pairs a #2 national ranking (2025) with a genuine Exercise/Wellness/Nutrition degree. Eastern Florida State plays in a 1,000-seat dedicated stadium. 100% roster turnover before 2027 at all schools — clean slate entry for Olivier."
   },
   {
-    "rank": 20,
+    "rank": 19,
     "rankClass": null,
     "name": "NEC",
     "fullName": "Northeast Conference",
@@ -261,7 +248,7 @@
     "relevance": "Mercyhurst University (Erie, PA) — joined the NEC in Fall 2024 and won the NEC regular-season title in that first D1 season; 8th in 2025. Provisional D1 member — no NCAA postseason until 2028–29. HC Austin Solomon, building on a strong D2 PSAC base (back-to-back West titles 2021–22). Exercise Science B.S. with 500hr clinical. 2 Australians previously on roster."
   },
   {
-    "rank": 21,
+    "rank": 20,
     "rankClass": null,
     "name": "CACC",
     "fullName": "Central Atlantic Collegiate Conference",
@@ -275,7 +262,7 @@
     "relevance": "Georgian Court University (Lakewood, NJ) — Dino Raso (13 seasons, 2024 CACC Coach of Year). B.S. Exercise Science Wellness & Sports with explicit Pre-PT/OT/PA tracks. Jersey Shore 20 min, NYC 90 min."
   },
   {
-    "rank": 22,
+    "rank": 21,
     "rankClass": null,
     "name": "AMC",
     "fullName": "American Midwest Conference",
@@ -289,7 +276,7 @@
     "relevance": "⚠ Columbia College MO — NO Exercise Science degree (Healthcare Management only). New HC Nathan Mason rebuilding. Best value cost (7k/yr) in guide. Mizzou college-town atmosphere. DPT pathway requires extra planning."
   },
   {
-    "rank": 23,
+    "rank": 22,
     "rankClass": null,
     "name": "Summit",
     "fullName": "The Summit League",
@@ -302,5 +289,20 @@
     "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer)",
     "confKey": "summit",
     "relevance": "Delaware (Newark, DE) — its men's soccer joined the Summit League in 2025 after the school's all-sports move to Conference USA, which does not sponsor the sport; reached the 2025 Summit League semifinals (12-2-3, #24 nationally). Only Summit school in the guide, filed here rather than under the CAA. Strong Kinesiology & Applied Physiology degree; low ~$38k cost; Philadelphia Union (MLS) 25 min north."
+  },
+  {
+    "rank": 23,
+    "rankClass": null,
+    "name": "Patriot League",
+    "fullName": "Patriot League (East)",
+    "div": "D1",
+    "divBadge": "D1",
+    "programsInGuide": "Army West Point, Navy",
+    "programsInGuideWarning": false,
+    "mlsPipeline": "Developing — service-academy programs; limited pro pathway",
+    "mlsPipelineWarning": false,
+    "scholarships": "Full federal scholarships (service academies) — no athletic-aid cap",
+    "confKey": "patriot",
+    "relevance": "Army West Point and Navy compete in the Patriot League for men's soccer — their AAC membership is for other sports. Both are service academies (full federal scholarship, zero cost) but carry a military service commitment incompatible with Olivier's DPT/MLS path — a narrative warning, not a soccer knock. Army won the 2022 Patriot League regular season; Navy plays a full Patriot schedule from a strong east-coast base."
   }
 ]

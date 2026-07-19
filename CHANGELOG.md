@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.10 (July 2026) — Men's-soccer conference reclassification: Akron → Big East, Army & Navy → Patriot League
+
+Follows the **Delaware → Summit** precedent (v44.0): the guide groups schools by the conference their *men's soccer* plays in, so three schools whose men's-soccer conference differs from their primary-athletics home were regrouped. Display/grouping only — **no Fit-score cascade** (confKey/conf/confRecord don't feed `fitOlivier`). `validate_consistency.js` **Issues: 0**, `validate_schools.py` PASS (110), confRecord counter still 0.
+
+**The trigger — a data error the confRecord counter missed.** Akron's record read "MAC Champions / MAC Tournament Champions" for **2023, 2024, 2025** — but the **MAC discontinued men's soccer after 2022**, and Akron actually played those years in the **Big East (Midwest Division)**, finishing 3rd, 1st, 1st. Its 2021 row also fabricated a "MAC title + College Cup" — Akron was really **6th in the MAC** (2-3-1); the College Cup was 2018, not 2021. The counter never flagged this because "MAC Champs" *names a title*, so it read as researched, not generic — a real blind spot in the generic-placeholder detector.
+
+**Akron confRecord rewritten** from official standings: 2020 (MAC held no season, COVID), 2021 6th MAC (2-3-1), 2022 1st MAC (5-0-3, the MAC's final men's-soccer season), 2023 3rd / 2024 1st / 2025 1st Big East Midwest. `conf` MAC→Big East, `confKey` mac→big-east.
+
+**Army & Navy → Patriot League.** Both service academies play men's soccer in the **Patriot League**, not the AAC (their AAC membership is for other sports). `conf` AAC→Patriot League, `confKey` aac→patriot. Their confRecords already showed Patriot standings (fixed in v44.3).
+
+**New `confMoveNote` field** — a per-school string rendered as a callout in the **Standings & Titles** tab, explaining each move (e.g. "Akron's men's-soccer team joined the Big East (Midwest Division) in 2023, when the MAC discontinued the sport…"). Added to `js/app.js`'s standings render.
+
+**Files:** `data/d1-other.json` (Akron), `data/aac.json` (Army/Navy), `data/coaches.json` (3 coach `conf` strings), `data/conferences.json` (MAC card removed, Patriot card added, Big East +Akron, AAC −Army/Navy), `data/conf-prestige.json` (**Conference Rankings**: MAC row removed, Patriot League added at rank 23, Big East +Akron, AAC −Army/Navy, all ranks resequenced 1–23), `js/app.js` (CONF_SECTIONS: `mac` removed, `patriot` added, Big East intro; + `confMoveNote` render), `validate_consistency.js` (sectionKeys −mac +patriot), `CLAUDE.md`, `athletes/olivier.json` (v44.9→v44.10). Schools stay in their original conf FILE (d1-other.json / aac.json) — grouping is by `confKey`, not file. **Live-verified:** Akron renders in the Big East section with the MAC→Big East standings + note; Army & Navy render in a new Patriot League section with notes; MAC section gone; Conferences tab + Conference Rankings show the Patriot League; zero console errors.
+
+---
+
 ### v44.9 (July 2026) — confRecord backlog Batch 8/8 (FINAL): JUCO researched — CAMPAIGN COMPLETE, counter 38 → 0 ✅
 
 Final batch. Rewrote `confRecord` for the last **3 flagged** `data/juco.json` schools. Counter **3 → 0** — the validate_consistency.js confRecord backlog is fully cleared (started at 38). `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). MCP-browser-first; iccac.org, thefcsaasports.com and njcaa.org all bot-blocked/404'd the browser → curl + the schools' own Sidearm sites.

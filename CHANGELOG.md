@@ -6,6 +6,14 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.15 (July 2026) — Coaches tab: relabel coach-card stat "MLS Picks" → "MLS Players Dev" (Change Type 11)
+
+Owner asked why Steve Clements (Tyler JC) shows "10 MLS Picks" on his coach card while the Pro Pipeline tab's `mlsDraft` table shows Tyler JC at 0 picks. Not a bug — two different metrics with a misleading shared label. The coach card was reading `coaches.json`'s `mlsPlayers` field (a coach's career-long count of players personally developed who reached MLS/pro, regardless of which school they were drafted from) but labelling it "MLS Picks" — the same wording used by the Pro Pipeline tab's `picks5yr` (MLS SuperDraft picks credited to whichever school the player was drafted *from*, last 5 years only). JUCO players are almost always drafted after transferring to a D1 program, so the pick credit lands on the D1 school, not the JUCO — this is the exact `nextLevelOutput` problem documented in CLAUDE.md §5b (the Northeast CC/Edouard Nys worked example).
+
+`js/app.js:2554` — coach profile card stat relabelled from "MLS Picks" to "MLS Players Dev", now consistent with the Rankings table header (`index.html:1098`, already correctly worded) and the school-level Pipeline label (`app.js:723`, already correctly worded "MLS Picks (5yr)"). No data or score change — display-only label fix. `athletes/olivier.json` v44.14→v44.15. `node --check js/app.js` OK, `validate_consistency.js` Issues:0. Live-verified: coach card (Gelnovatch, rank #1) renders "MLS Players Dev", zero console errors.
+
+---
+
 ### v44.14 (July 2026) — Pro Pipeline tab reconciliation: 9 missing NCAA D1 titles, 2 JUCO titles, 2 MLS pipelines + UNC titles factual fix (Change Type 7)
 
 Queued from the confRecord campaign session (2026-07-19): cross-referencing every school's own `titles[]`/`confRecord` against `data/pipeline.json` found the Pro Pipeline tab badly stale, plus a standalone factual error in UNC's own `titles[]`.

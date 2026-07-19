@@ -6,6 +6,19 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.8 (July 2026) — confRecord backlog Batch 7/? : d2 file researched (Change Type 6)
+
+Batch 7. Rewrote `confRecord` (2020–2025) for the **3 flagged** `data/d2.json` schools — Nova SE (Sunshine State Conf), Keiser (Sun Conference / NAIA), Georgian Court (CACC). Counter **6 → 3**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). MCP-browser-first: sunshinestateconference.com and thesunconference.com loaded in the in-app browser; **caccathletics.org bot-blocked** (timed out) → curl.
+
+**Major corrections:**
+- **Keiser is a Sun Conference power** — 1st (2020 undefeated, 2022, 2024, 2025 undefeated) or 2nd (2021, 2023) every single year, and the **2021 NAIA National Champions** — all buried under "Mid Sun Conf."
+- **Georgian Court's full CACC history recovered** — the three "exact standings not re-verified" years (2021 4th, 2022 9th, 2023 7th) now researched, and **its missing 2025 season added** (the row didn't exist before; the school had only 2020–2024).
+- **Nova SE's** "Mid SSC" years filled with exact finishes (4th–5th), including a 17-3-3 NCAA D2 Tournament season in 2021.
+
+Splice method identical (CRLF-preserving region-only replacement, guarded). Files: `data/d2.json`, `athletes/olivier.json` (v44.7→v44.8), `CHANGELOG.md`, `CLAUDE.md` §6 marker. **One batch (JUCO, 3 schools) remains before the confRecord counter is fully cleared.**
+
+---
+
 ### v44.7 (July 2026) — confRecord backlog Batch 6/? : d1-other + Drexel researched (Change Type 6)
 
 Batch 6 — the first "scattered" batch (schools span 4 different conferences). Rewrote `confRecord` (2020–2025) for **4 flagged schools**: UCA (ASUN), GCU (WAC), Delaware (CAA→Summit) in `data/d1-other.json`, and **Drexel** (CAA, the lone `data/caa.json` flag — folded in since it shares Delaware's CAA source). Counter **10 → 6**; `Issues: 0`, `validate_schools.py` PASS (110, 18 warnings). This was the first batch run **MCP-browser-first** (owner directive) — asunsports.org, caasports.org, thesummitleague.org all loaded in the in-app browser; only **wacsports.com** bot-blocked (redirects to the football conference for both the browser AND curl), so GCU's WAC standings came from the Wikipedia WAC standings templates.

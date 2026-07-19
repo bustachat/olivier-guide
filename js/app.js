@@ -1831,6 +1831,7 @@ function hlSuggest(i){
   if(items[i]) items[i].scrollIntoView({block:'nearest'});
 }
 
+// Selecting a suggestion narrows the grid to that one school's card — it does NOT open the modal.
 function pickSuggest(id){
   const u = unis.find(x=>x.id===id);
   const inp = document.getElementById('search-schools');
@@ -1838,7 +1839,7 @@ function pickSuggest(id){
   const clr = document.getElementById('search-clear-btn'); if(clr) clr.style.display='flex';
   closeSuggest();
   applyFilters();
-  if(typeof openDetail==='function') openDetail(id);
+  if(inp) inp.focus();
 }
 
 function onSearchKey(e){
@@ -1847,7 +1848,11 @@ function onSearchKey(e){
   if(e.key==='ArrowDown'){ if(!open) return; e.preventDefault(); hlSuggest((suggestIdx+1)%suggestList.length); }
   else if(e.key==='ArrowUp'){ if(!open) return; e.preventDefault(); hlSuggest((suggestIdx-1+suggestList.length)%suggestList.length); }
   else if(e.key==='Enter'){
-    if(open){ e.preventDefault(); const pick = suggestIdx>=0 ? suggestList[suggestIdx] : suggestList[0]; if(pick) pickSuggest(pick.id); }
+    // Plain Enter = run the search (grid is already filtered by the typed text) — just close the dropdown, no auto-select.
+    // Enter only narrows to a specific school when one is deliberately highlighted via the arrow keys.
+    e.preventDefault();
+    if(open && suggestIdx>=0){ pickSuggest(suggestList[suggestIdx].id); }
+    else { closeSuggest(); }
   }
   else if(e.key==='Escape'){ if(open){ e.preventDefault(); closeSuggest(); } else { clearSearch(); } }
 }

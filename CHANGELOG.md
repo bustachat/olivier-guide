@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.12 (July 2026) — Search: Enter filters instead of auto-opening a school (Change Type 11)
+
+Follow-up to v44.11. The autosuggest was auto-selecting the first result and opening its modal on Enter, which was jarring. The search is now a pure filter/finder — **it never auto-opens the Details modal.**
+
+- **Enter** (after typing, nothing highlighted) → runs the search: the grid stays filtered to *all* matches and the dropdown just closes (e.g. type "a" + Enter → the 76 schools containing "a"). No modal.
+- **Selecting a specific school** — clicking a suggestion, or ↑/↓ to highlight one then Enter → narrows the grid to that one school's card (sets the search to its name). No modal.
+- To open a school's details, use its **Details** button on the card, as before.
+
+`js/app.js`: `pickSuggest()` no longer calls `openDetail` (it filters + refocuses the field); `onSearchKey` Enter only picks a school when one is deliberately highlighted, otherwise just closes the dropdown. `athletes/olivier.json` v44.11→v44.12. Live-verified: "a"+Enter → 76 cards, no modal; "ak"+↓+Enter → Akron card only, no modal; clicking Tulsa → Tulsa card only, no modal; zero console errors.
+
+---
+
 ### v44.11 (July 2026) — Explore search UX: working clear (✕) button + typeahead autosuggest (Change Type 11)
 
 Two enhancements to the Explore Schools search box, both requested by the owner. UX/JS only, no data.

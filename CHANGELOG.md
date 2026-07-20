@@ -6,6 +6,29 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.21 (July 2026) — recruit_pathway data pass, CAA batch 6/10 (Change Type 3 companion field)
+
+Sixth batch of the recruit_pathway backlog (see v44.16 for design context). All 8 CAA schools researched live via Chrome MCP (current roster):
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| Charleston | Freshman-friendly | 8/10 MFs true freshmen; 2 transfers (1 JUCO — North Idaho College) |
+| William & Mary | Freshman-friendly | 11/12 MFs true freshmen; 1 transfer (VCU) |
+| Hofstra | **Portal/JUCO-heavy** | Only 5/12 MFs (42%) true freshmen; 7 transfers incl. 2 direct JUCO (Tyler JC) + 5 from 4-year programs, several grad/MBA transfers |
+| Northeastern | Freshman-friendly | All MFs show HS/club-academy background only, no transfer indicators |
+| Drexel | Freshman-friendly | All 15 MFs (heavily international) show HS-only background, no transfers |
+| Elon | Freshman-friendly | All 17 MF/D-MF/F-MF show HS/club background only, no transfers |
+| Monmouth | Freshman-friendly | All 8 MFs show HS-only background, no transfers |
+| Stony Brook | *(informational only — see note)* | All 10 MFs show HS-only background, no transfers — but `minutesOutlook.available` is still `false` (site data incomplete pending full off-season scrape), so `recruit_pathway` could not be added without violating the schema (only valid alongside `available:true`); deferred with the rest of Stony Brook's minutesOutlook data |
+
+**Notable finding:** Hofstra is the CAA's dominant program (4 consecutive tournament titles) and also its clearest transfer-heavy case — only 42% of its midfield roster is true freshmen, the rest built via grad-transfer and portal recruiting (including two JUCO transfers from the same feeder school, Tyler Junior College). This is a second confirmation, after CSU Fullerton (v44.20), that a program's competitive dominance can be built substantially on transfer recruiting rather than true-freshman development — worth remembering when evaluating "prestige" programs generally. The other 7 CAA schools were uniformly Freshman-friendly, several with heavily international rosters (Drexel, Elon) built entirely off HS/club recruiting with zero visible transfers.
+
+Data-only, `recruit_pathway`/`recruit_pathway_note` companion field (§3a Change Type 3) — no scoring cascade (`lensScores`/`fitOlivier` untouched). `python validate_schools.py` PASS (110 schools, 18 pre-existing warnings unchanged). `node validate_consistency.js` Issues: 0 (unchanged) — note the validator's `MO-KEYS` check rejects `recruit_pathway` on an `available:false` minutesOutlook object, which is why Stony Brook was left out. `guideVersion` v44.20→v44.21.
+
+**Remaining backlog:** ~4 more conference files — d1-other (partial — 3 of 7 schools already populated v35-v39.6), d2, ivy, and JUCO's remaining 6 schools (23 of 29 already populated).
+
+---
+
 ### v44.20 (July 2026) — recruit_pathway data pass, Big West batch 5/10 (Change Type 3 companion field)
 
 Fifth batch of the recruit_pathway backlog (see v44.16 for design context). All 7 Big West schools researched live via Chrome MCP (current roster):

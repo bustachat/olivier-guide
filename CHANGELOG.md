@@ -6,6 +6,28 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.22 (July 2026) — recruit_pathway data pass, d1-other batch 7/10 (Change Type 3 companion field)
+
+Seventh batch of the recruit_pathway backlog (see v44.16 for design context). All 7 d1-other schools researched live via Chrome MCP (current roster). Note: 3 of these (GCU, Akron, Denver) already had a `recruit_pathway_note` field from earlier work, but it described coaching-transition/prestige risk, not the freshman-vs-transfer split this field is meant to capture — those notes were extended (not replaced) with the actual roster research.
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| UCA | Freshman-friendly | 8/10 MFs true freshmen; 2 transfers (Robert Morris, Utah Tech) |
+| GCU | Freshman-friendly | 5/6 MFs true freshmen; 1 transfer (Washington) |
+| Akron | Freshman-friendly | 7/9 MFs true freshmen; 2 transfers (St. John's, Saint Louis) |
+| Denver | Freshman-friendly | All 10 MFs show HS/club background only, no transfer indicators |
+| Vermont | Freshman-friendly | 10/11 MFs true freshmen; 1 transfer (Providence College) |
+| Mercyhurst | Freshman-friendly | ~16/20 MF-type spots true freshmen; ~4 transfers incl. 1 JUCO (Lane Community College) |
+| Delaware | Freshman-friendly | 8/9 MFs true freshmen; 1 transfer (Temple) |
+
+**Notable finding:** unlike the CAA and Big West batches (each of which turned up at least one Portal/JUCO-heavy or Mixed program), **all 7 d1-other schools came back uniformly Freshman-friendly** — including mid-major and newly-D1 programs (Mercyhurst, GCU) that might be expected to lean on the portal to compete faster. Several rosters (UCA, Mercyhurst, Vermont) are unusually international but still built on true-freshman recruiting rather than transfers. This is a useful counter-example to the pattern seen in Hofstra/CSU Fullerton — transfer-heavy building is a program-specific choice, not a function of being a smaller or newer D1 program.
+
+Data-only, `recruit_pathway`/`recruit_pathway_note` companion field (§3a Change Type 3) — no scoring cascade (`lensScores`/`fitOlivier` untouched). `python validate_schools.py` PASS (110 schools, 18 pre-existing warnings unchanged). `node validate_consistency.js` Issues: 0 (unchanged). `guideVersion` v44.21→v44.22.
+
+**Remaining backlog:** d2, ivy, and JUCO's remaining 6 schools (23 of 29 already populated).
+
+---
+
 ### v44.21 (July 2026) — recruit_pathway data pass, CAA batch 6/10 (Change Type 3 companion field)
 
 Sixth batch of the recruit_pathway backlog (see v44.16 for design context). All 8 CAA schools researched live via Chrome MCP (current roster):

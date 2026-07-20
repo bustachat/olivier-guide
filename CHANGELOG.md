@@ -6,6 +6,32 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.19 (July 2026) — recruit_pathway data pass, Big Ten batch 4/10 (Change Type 3 companion field)
+
+Fourth batch of the recruit_pathway backlog (see v44.16 for design context). All 11 Big Ten schools researched live via Chrome MCP (2025 roster; Penn State's 2026 default was an incomplete new-coach signee list, corrected to 2025 via the season dropdown):
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| UCLA | Freshman-friendly | 8/10 MFs (80%) freshman-recruited, 2 transfers (UNC Greensboro→Louisville, Washington) |
+| Indiana | Freshman-friendly | 5/8 MFs (62%) freshman-recruited, 3 transfers (Michigan State, Marquette, Evansville) |
+| Penn State | Freshman-friendly | 8/8 MFs (100%) freshman-recruited, zero transfers (2025 season, pre-Rob Dow) |
+| Michigan | Freshman-friendly | 15/15 MFs (100%) freshman-recruited, zero transfers |
+| Michigan State | Freshman-friendly | 8/9 MFs (89%) freshman-recruited, 1 transfer (Incarnate Word) |
+| Ohio State | Freshman-friendly | 8/8 MFs (100%) freshman-recruited, zero transfers |
+| Northwestern | Freshman-friendly | 9/13 MFs (69%) freshman-recruited, 4 transfers (Maryland, La Salle, Evansville, Coastal Carolina) |
+| Wisconsin | Mixed | 3/7 MFs (43%) freshman-recruited, 4 transfers (Oregon State, Colgate, Louisville, Niagara) — the only Big Ten school with a majority-transfer midfield |
+| Rutgers | Freshman-friendly | 10/11 MFs (91%) freshman-recruited, 1 JUCO transfer (Indian Hills CC) |
+| Washington | Freshman-friendly | 14/14 MFs (100%) freshman-recruited — zero transfers anywhere on the entire 2025 national-championship roster |
+| Maryland | Freshman-friendly | 7/9 MFs (78%) freshman-recruited, 2 transfers (UMBC, Eastern Florida State JUCO) |
+
+**10 of 11 Big Ten schools came back Freshman-friendly, only Wisconsin Mixed** — the strongest lean toward freshman recruiting of any conference batch so far (AAC: mixed; Big East: uniform Freshman-friendly; ACC: mostly Freshman-friendly with 2 Mixed). Consistent with the Big Ten's mix of blue-blood recruiting brands (Indiana, Maryland, UCLA, Washington) that don't need the portal.
+
+Data-only — `data/big-ten.json` is the only file touched, no UI renders this field. `python -m json.tool` PASS, `validate_schools.py` PASS (18 pre-existing unrelated warnings), `node validate_consistency.js` Issues:0 (unchanged). `athletes/olivier.json` v44.18→v44.19.
+
+**Remaining backlog:** ~6 more conference files (Big West, CAA, d1-other's remaining 4 schools, d2, ivy). Continue batched by conference file, one commit per batch.
+
+---
+
 ### v44.18 (July 2026) — recruit_pathway data pass, ACC batch 3/10 (Change Type 3 companion field)
 
 Third batch of the recruit_pathway backlog (see v44.16 for design context, v44.17 for the Big East batch). All 13 ACC schools researched live via Chrome MCP (current 2025/2026 roster depending on program):

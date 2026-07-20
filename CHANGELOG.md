@@ -6,6 +6,28 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.20 (July 2026) — recruit_pathway data pass, Big West batch 5/10 (Change Type 3 companion field)
+
+Fifth batch of the recruit_pathway backlog (see v44.16 for design context). All 7 Big West schools researched live via Chrome MCP (current roster):
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| UCSB | Freshman-friendly | 9/11 MFs (82%) true freshmen; 2 JUCO transfers (Tyler JC, Barton CC) |
+| Cal Poly | Freshman-friendly | 5/6 MF/D-MF true freshmen (incl. 2 straight from MLS academy sides); 1 grad transfer (Columbia) |
+| UC Davis | Freshman-friendly | 8/9 MF/D-MF true freshmen; 1 transfer (Gonzaga) |
+| UC Irvine | Freshman-friendly | 6/7 MFs true freshmen; 1 JUCO transfer (Herkimer College) |
+| UC Riverside | Mixed | 5/7 CMs true freshmen, 2 transfers (UNLV, Cerritos College JUCO) — ~29% transfer |
+| UC San Diego | Mixed | 7/12 MFs true freshmen, 5 4-year transfers (UNC Wilmington, Duke, Saint Mary's, Santa Clara, Loyola Chicago) — 42% transfer, no JUCO |
+| CS Fullerton | **Portal/JUCO-heavy** | Only 3/12 MF/D-MF/M-F spots (25%) are true freshmen; 9 transfers incl. 2 direct JUCO (Long Beach CC ×2) + 1 more (College of the Desert) and 6 4-year transfers (Grand Canyon, Coastal Carolina/UNC Asheville, Robert Morris, CCSU, Oregon St., UC Santa Cruz) |
+
+**Notable finding:** CSU Fullerton is the clearest Portal/JUCO-heavy case found across all 5 conference batches to date — 75% of its midfield roster came via transfer, including two direct JUCO transfers from the same feeder school (Long Beach City College). This lines up with the school's existing profile as the Big West's lowest-cost, most GPA-accessible D1 option — heavy portal/JUCO recruiting appears to substitute for a true-freshman recruiting budget. The other 4 UC campuses (UCSB, UC Davis, UC Irvine) plus Cal Poly stayed solidly Freshman-friendly (all ≥80% true-freshman midfield rosters), while UC Riverside and UCSD sit in the Mixed band on genuinely different bases — UCR mixes in a JUCO transfer, UCSD leans on 4-year grad transfers only, consistent with a program rapidly building depth after its 2020 D1 elevation.
+
+Data-only, `recruit_pathway`/`recruit_pathway_note` companion field (§3a Change Type 3) — no scoring cascade (`lensScores`/`fitOlivier` untouched). `python validate_schools.py` PASS (110 schools, 18 pre-existing warnings unchanged). `node validate_consistency.js` Issues: 0 (unchanged). `guideVersion` v44.19→v44.20.
+
+**Remaining backlog:** ~5 more conference files — CAA, d1-other (partial — 3 of 7 schools already populated from earlier v35-v39.6 work), d2, ivy, and JUCO's remaining 6 schools (23 of 29 already populated v35/v39.1-v39.6).
+
+---
+
 ### v44.19 (July 2026) — recruit_pathway data pass, Big Ten batch 4/10 (Change Type 3 companion field)
 
 Fourth batch of the recruit_pathway backlog (see v44.16 for design context). All 11 Big Ten schools researched live via Chrome MCP (2025 roster; Penn State's 2026 default was an incomplete new-coach signee list, corrected to 2025 via the season dropdown):

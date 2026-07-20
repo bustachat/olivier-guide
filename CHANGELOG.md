@@ -6,6 +6,27 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.24 (July 2026) — recruit_pathway data pass COMPLETE: JUCO final batch + campaign closeout (Change Type 3 companion field)
+
+Final batch of the recruit_pathway backlog (see v44.16 for design context). Researched the last 4 JUCO schools that still lacked the field (23 of 29 JUCOs were already populated from earlier v35-v39.6 work):
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| Santa Monica College | Mixed | Stored 2025-26 roster: 4 So + 5 Fr MFs — a fairly even split |
+| Miami Dade | Mixed | Stored 2025-26 roster: 7 So + 5 Fr MFs |
+| Northeast CC | Freshman-friendly | Live roster: 8 Fr + 2 So MFs (80% freshman) |
+| Monroe University | Freshman-friendly | Live roster: 8 Fr + 5 So MFs (62% freshman), zero transfer-college indicators found on a 30+ player international roster |
+
+**Note on JUCO methodology:** for JUCOs, `recruit_pathway` was scored on freshman-vs-sophomore roster balance (per the convention already established in the 23 previously-populated JUCOs), not on 4-year-transfer share — a JUCO's own incoming recruits are almost always straight from HS, so the meaningful variable is whether the coach's recruiting class skews younger (Freshman-friendly) or the roster carries more returning second-years (Mixed).
+
+**Two Ivy League schools (Princeton, Yale) and 2 JUCOs (Suffolk CC, Westchester CC) remain permanently out of scope**: all four have `minutesOutlook.available: false` (no roster data collected), and `validate_consistency.js`'s `MO-KEYS` check only permits `recruit_pathway`/`recruit_pathway_note` on an `available: true` object — the same constraint discovered and reverted for Stony Brook in the CAA batch (v44.21). These will only become eligible once their full minutesOutlook data is researched in a future session.
+
+**CAMPAIGN COMPLETE.** All 103 of 110 schools with `minutesOutlook.available: true` now have `recruit_pathway`/`recruit_pathway_note` populated (verified via a full-repo scan across all 10 conference/division files). The remaining 7 schools (Stony Brook, Princeton, Yale, Suffolk CC, Westchester CC, plus 2 more `available:false` cases) are structurally blocked, not skipped. Batches: AAC (v44.16) → Big East (v44.17) → ACC (v44.18) → Big Ten (v44.19) → Big West (v44.20) → CAA (v44.21) → d1-other (v44.22) → d2/NAIA/D3 (v44.23) → JUCO final (v44.24). Field remains purely informational throughout — zero `lensScores`/`fitOlivier` cascade in any batch, confirmed by `node validate_consistency.js` Issues:0 at every step.
+
+`python validate_schools.py` PASS (110 schools, 18 pre-existing warnings unchanged). `node validate_consistency.js` Issues: 0 (unchanged). `guideVersion` v44.23→v44.24.
+
+---
+
 ### v44.23 (July 2026) — recruit_pathway data pass, d2/NAIA/D3 batch 8/10 (Change Type 3 companion field)
 
 Eighth batch of the recruit_pathway backlog (see v44.16 for design context). All 12 d2.json schools researched live via Chrome MCP (current roster).

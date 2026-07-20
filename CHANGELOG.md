@@ -6,6 +6,16 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.25 (July 2026) — Somoano (UNC) bio/record factual fix (Change Type 2)
+
+Fixed a deferred data-quality bug: `coaches.json`'s Somoano `record` field and `acc.json`'s `coach.profile` field both said "Dorrance dynasty legacy program" — a leftover conflation of UNC's women's program (Anson Dorrance, a separate team) with the men's program Somoano actually coaches. This was the same error class already fixed in `pipeline.json`'s `titles[]` in v44.14 (which wrongly credited Dorrance with 1978/1979 men's titles), but the two coach-record fields hadn't been touched.
+
+**Fix:** both fields now correctly state UNC's real men's soccer title record — 2× NCAA D1 National Champions (2001 under Elmar Bolowich, 2011 in Somoano's very first year as HC). This is a genuine accomplishment that the old text was actively erasing by attributing all program prestige to the (unrelated) women's dynasty. Also added "2011 NCAA National Champion (1st year as HC)" to Somoano's `strengths[]` — previously missing entirely from his profile.
+
+Two-file rule applied: `data/coaches.json` (record, bio, strengths) + `data/acc.json` (coach.profile). `overallScore` (88) and `rank` (9, rk-elite) were NOT changed — this was a factual-text correction only, already consistent with the §5d anchor ("Somoano, UNC, 88 — 2011 national title, strong pro output"), so no re-rank was required. `python validate_schools.py` PASS. `node validate_consistency.js` Issues: 0 (COACH-SYNC clean). `guideVersion` v44.24→v44.25.
+
+---
+
 ### v44.24 (July 2026) — recruit_pathway data pass COMPLETE: JUCO final batch + campaign closeout (Change Type 3 companion field)
 
 Final batch of the recruit_pathway backlog (see v44.16 for design context). Researched the last 4 JUCO schools that still lacked the field (23 of 29 JUCOs were already populated from earlier v35-v39.6 work):

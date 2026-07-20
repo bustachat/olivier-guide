@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.23 (July 2026) — recruit_pathway data pass, d2/NAIA/D3 batch 8/10 (Change Type 3 companion field)
+
+Eighth batch of the recruit_pathway backlog (see v44.16 for design context). All 12 d2.json schools researched live via Chrome MCP (current roster).
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| PBA | Transfer-preferred | 6/10 MFs grad/4-year transfers (no JUCO); only 4 true freshmen |
+| Lynn | Mixed | ≥4/13 MFs from a prior tertiary institution (Oldenburg, Mainz, Mars Hill, Salvador) |
+| Barry | Portal/JUCO-heavy | 7/13 MFs (54%) transfer, incl. 1 JUCO (Northeast CC) |
+| Nova SE | Portal/JUCO-heavy | 7/12 MFs (58%) transfer, incl. 2 JUCO (Monroe College, CCBC Essex) |
+| Cal State LA | Freshman-friendly | 6/7 MFs true freshmen; 1 transfer (Cal Baptist) |
+| St. Edward's | Freshman-friendly | No MF (incl. grad-student internationals) shows a transfer background |
+| Oklahoma City | Portal/JUCO-heavy | 6/12 MFs (50%) transfer, 4 direct JUCO |
+| Keiser | Mixed | 5/17 MFs (29%) transfer, incl. 2 JUCO |
+| Chapman | Freshman-friendly | All 12 MFs true freshmen — D3, no athletic scholarships |
+| U of Charleston (WV) | Freshman-friendly *(lower confidence)* | Roster page publishes no HS/Previous-School data at all; classified on structural grounds (broad direct-international recruiting) — flagged for re-verification |
+| Georgian Court | Freshman-friendly | ~4/25 MF-type spots transfer; large 64-player squad overwhelmingly true-freshman |
+| Columbia College (MO) | Portal/JUCO-heavy | 6/13 MFs (46%) transfer, 5 of 6 direct JUCO |
+
+**Notable finding:** the SSC Florida D2 cluster (PBA, Barry, Nova SE) and the two rebuilding NAIA programs (Oklahoma City, Columbia College) are the heaviest transfer-reliant group found across all 8 batches so far — all five landed Portal/JUCO-heavy or Transfer-preferred. This looks like a division-level pattern rather than a program-specific one: D2/NAIA programs competing for immediate results seem to lean on the transfer/JUCO pipeline more than the D1 conferences researched earlier, plausibly because grad/JUCO transfers offer proven, low-risk immediate contributors at a level where recruiting budgets are tighter. Chapman (D3, no athletic scholarships) and St. Edward's were the cleanest Freshman-friendly cases, consistent with structurally reduced transfer incentives.
+
+Data-only, `recruit_pathway`/`recruit_pathway_note` companion field (§3a Change Type 3) — no scoring cascade (`lensScores`/`fitOlivier` untouched). `python validate_schools.py` PASS (110 schools, 18 pre-existing warnings unchanged). `node validate_consistency.js` Issues: 0 (unchanged). `guideVersion` v44.22→v44.23.
+
+**Remaining backlog:** ivy (2 schools) and JUCO's remaining 6 schools (23 of 29 already populated).
+
+---
+
 ### v44.22 (July 2026) — recruit_pathway data pass, d1-other batch 7/10 (Change Type 3 companion field)
 
 Seventh batch of the recruit_pathway backlog (see v44.16 for design context). All 7 d1-other schools researched live via Chrome MCP (current roster). Note: 3 of these (GCU, Akron, Denver) already had a `recruit_pathway_note` field from earlier work, but it described coaching-transition/prestige risk, not the freshman-vs-transfer split this field is meant to capture — those notes were extended (not replaced) with the actual roster research.

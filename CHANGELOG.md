@@ -6,6 +6,34 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.18 (July 2026) — recruit_pathway data pass, ACC batch 3/10 (Change Type 3 companion field)
+
+Third batch of the recruit_pathway backlog (see v44.16 for design context, v44.17 for the Big East batch). All 13 ACC schools researched live via Chrome MCP (current 2025/2026 roster depending on program):
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| Virginia | Freshman-friendly | 6/8 MFs (75%) freshman-recruited, 2 transfers both from Boston College |
+| Wake Forest | Freshman-friendly | 13/13 MFs (100%) freshman-recruited, zero MF transfers |
+| SMU | Mixed | 6/10 MFs (60%) freshman-recruited, 4 transfers from 4 different programs incl. 1 JUCO (Dallas College Richland) |
+| Duke | Freshman-friendly | 10/14 MFs (71%) freshman-recruited, 4 transfers (Georgetown, Harvard, College of Charleston, Northeastern) |
+| NC State | Mixed | 7/12 MFs (58%) freshman-recruited, 5 transfers incl. 2 multi-stop JUCO pathways — consistent with new HC Hubbard's rapid portal-driven rebuild |
+| Louisville | Freshman-friendly | 8/9 MFs (89%) freshman-recruited, 1 transfer (Limestone) |
+| Pittsburgh | Freshman-friendly | 9/10 MFs (90%) freshman-recruited, 1 transfer (Oregon State) |
+| Stanford | Freshman-friendly (lower confidence) | Roster template publishes no prior-school data; classified on structural grounds (Stanford's own 3.7+ GPA/13% acceptance undergrad admissions apply equally to transfers) |
+| Syracuse | Freshman-friendly | 7/10 MFs (70%) freshman-recruited, 3 transfers incl. 1 JUCO (Daytona State) |
+| Cal | Freshman-friendly | 11/15 MFs (73%) freshman-recruited, 4 transfers (UCLA, UC Santa Cruz, USF, Pomona-Pitzer) |
+| Clemson | Freshman-friendly (lower confidence) | Roster template (same WMT style as Stanford) publishes no HS/prior-school data; classified on the visible pattern of direct-from-country international hometowns consistent with Noonan's known club-academy recruiting network |
+| Notre Dame | Freshman-friendly | 11/12 MFs (92%) freshman-recruited, 1 transfer — cross-referenced by name/hometown/HS to confirm Vlad Walent transferred in from Wake Forest |
+| UNC | Freshman-friendly | 7/10 MFs (70%) freshman-recruited, 3 transfers (SIU-Edwardsville, San Diego, USF) |
+
+**Two schools (Stanford, Clemson) got an explicitly lower-confidence classification** — both use a newer WMT-template roster page that doesn't publish HS/prior-school data for any player (unlike the Sidearm-style templates used by the other 11 schools), and bio subpages didn't render further detail via this session's tooling. Rather than skip the field or guess with false precision, each was classified on the best structural/pattern evidence available and flagged in its own note for re-verification if a better source turns up — consistent with the "never guess, document why" research discipline (§15).
+
+Data-only — `data/acc.json` is the only file touched, no UI renders this field. `python -m json.tool` PASS, `validate_schools.py` PASS (18 pre-existing unrelated warnings), `node validate_consistency.js` Issues:0 (unchanged). `athletes/olivier.json` v44.17→v44.18.
+
+**Remaining backlog:** ~7 more conference files (Big Ten, Big West, CAA, d1-other's remaining 4 schools, d2, ivy). Continue batched by conference file, one commit per batch.
+
+---
+
 ### v44.17 (July 2026) — recruit_pathway data pass, Big East batch 2/10 (Change Type 3 companion field)
 
 Second batch of the recruit_pathway backlog (see v44.16 for the design context). All 11 Big East schools researched live via Chrome MCP (current 2025 roster; St. John's/DePaul default to 2025 since 2026 wasn't checked, others explicitly 2025 season):

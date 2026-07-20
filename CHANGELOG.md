@@ -6,6 +6,29 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.16 (July 2026) — recruit_pathway data pass, AAC batch 1/10 (Change Type 3 companion field)
+
+Resumed the `recruit_pathway`/`recruit_pathway_note` backlog (schema added v34, previously mis-logged in CLAUDE.md §6 as "0/220 populated" — a stale audit claim corrected this session; the field was actually already populated for 26 JUCO/d1-other schools). Design question settled first: `recruit_pathway` stays **informational only, permanently** — the NCAA's 5th-year/grad-transfer eligibility extension makes a roster-snapshot classification too unstable to fold into `fitOlivier` (a concrete FIU example showed only a 3-5 point swing even under a hypothetical dampening model, not worth the added instability). Owner confirmed: populate data, no scoring cascade, no new UI element this batch (schema-only field, never rendered — confirmed via grep of app.js/dashboard.js).
+
+Researched all 8 non-service-academy AAC schools live via Chrome MCP (current or most-recent-published roster; Navy/Army excluded — service academies, `minutesOutlook.available: false`, no roster data collected):
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| FIU | Transfer-preferred | 6/9 MFs (67%) transfers (AIC, St. John's, Hofstra, Siena, Concord, Seton Hall); 2026 roster |
+| USF | Freshman-friendly | 5/7 MFs (71%) freshman-recruited; new HC Kiefer's GCU transfer wave hit D/F, not midfield; 2026 roster |
+| Tulsa | Freshman-friendly | 6/8 MFs (75%) freshman-recruited, 3 local; 2025 roster (2026 unpublished, matches existing trajectoryNote) |
+| Memphis | Transfer-preferred | 7/10 MFs (70%) transfers incl. 1 JUCO (Iowa Lakes CC); 2025 roster |
+| Temple | Freshman-friendly | 11/12 MFs (92%) freshman-recruited, only 1 transfer; 2025 roster |
+| UAB | Freshman-friendly | 4/6 MFs (67%) freshman-recruited; 2025 roster |
+| Charlotte | Freshman-friendly | 4/6 MFs (67%) freshman-recruited; 2025 roster |
+| FAU | Mixed | 4/7 MFs (57%) transfers incl. 1 JUCO (Iowa Western); 2025 roster |
+
+Data-only — `data/aac.json` is the only file touched, no UI renders this field (confirmed before starting, so no Phase 5 browser test applies). `python -m json.tool` PASS, `validate_schools.py` PASS (18 pre-existing unrelated warnings), `node validate_consistency.js` Issues:0 (unchanged). `athletes/olivier.json` v44.15→v44.16.
+
+**Remaining backlog:** recruit_pathway still unpopulated for the other ~9 conference files (ACC, Big Ten, Big East, Big West, CAA, d1-other's remaining 4, d2, ivy — juco.json and 3 of d1-other's 7 are already done from v35-v39.6). Continue batched by conference file, one commit per batch, same pattern as the confRecord campaign.
+
+---
+
 ### v44.15 (July 2026) — Coaches tab: relabel coach-card stat "MLS Picks" → "MLS Players Dev" (Change Type 11)
 
 Owner asked why Steve Clements (Tyler JC) shows "10 MLS Picks" on his coach card while the Pro Pipeline tab's `mlsDraft` table shows Tyler JC at 0 picks. Not a bug — two different metrics with a misleading shared label. The coach card was reading `coaches.json`'s `mlsPlayers` field (a coach's career-long count of players personally developed who reached MLS/pro, regardless of which school they were drafted from) but labelling it "MLS Picks" — the same wording used by the Pro Pipeline tab's `picks5yr` (MLS SuperDraft picks credited to whichever school the player was drafted *from*, last 5 years only). JUCO players are almost always drafted after transferring to a D1 program, so the pick credit lands on the D1 school, not the JUCO — this is the exact `nextLevelOutput` problem documented in CLAUDE.md §5b (the Northeast CC/Edouard Nys worked example).

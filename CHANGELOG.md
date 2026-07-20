@@ -6,6 +6,32 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.17 (July 2026) — recruit_pathway data pass, Big East batch 2/10 (Change Type 3 companion field)
+
+Second batch of the recruit_pathway backlog (see v44.16 for the design context). All 11 Big East schools researched live via Chrome MCP (current 2025 roster; St. John's/DePaul default to 2025 since 2026 wasn't checked, others explicitly 2025 season):
+
+| School | recruit_pathway | Basis |
+|---|---|---|
+| St. John's | Freshman-friendly | 11/12 MFs (92%) freshman-recruited, 1 JUCO transfer (Cowley CC) |
+| Creighton | Freshman-friendly | 11/14 MFs (79%) freshman-recruited, 3 transfers incl. 1 JUCO (Iowa Western CC→UIC) |
+| Providence | Freshman-friendly | 7/9 MFs (78%) freshman-recruited, 2 transfers incl. 1 JUCO (Monroe College) |
+| Seton Hall | Freshman-friendly | 11/12 MFs (92%) freshman-recruited, 1 transfer (SMU) |
+| Butler | Freshman-friendly | 8/9 MFs (89%) freshman-recruited, 1 transfer (UNC-Asheville) |
+| Xavier | Freshman-friendly | 7/10 MFs (70%) freshman-recruited, 3 transfers (Syracuse, Bellarmine, Monroe University) |
+| UConn | Freshman-friendly | 10/11 MFs (91%) freshman-recruited, 1 transfer (Villanova) |
+| DePaul | Freshman-friendly | 10/10 MFs (100%) freshman-recruited, zero transfers |
+| Villanova | Freshman-friendly | 8/8 MFs (100%) freshman-recruited, zero transfers |
+| Marquette | Freshman-friendly | 9/10 MFs (90%) freshman-recruited, 1 JUCO transfer (Salt Lake CC) |
+| Georgetown | Freshman-friendly | 18/18 MFs (100%) freshman-recruited, zero transfers |
+
+**Notable finding: the entire Big East batch classified `Freshman-friendly`** — a real result, not a research shortcut (every school shows real variation in transfer share, 0%–30%, just none crossing the 50% threshold used for `Transfer-preferred`/`Mixed`). Contrasts with the AAC batch (v44.16), which had a genuine mix (FIU/Memphis transfer-preferred, FAU mixed). Consistent with the Big East's older, more prestige-driven recruiting culture vs. the AAC's higher transfer-portal reliance at several programs.
+
+Data-only — `data/big-east.json` is the only file touched, no UI renders this field. `python -m json.tool` PASS, `validate_schools.py` PASS (18 pre-existing unrelated warnings), `node validate_consistency.js` Issues:0 (unchanged). `athletes/olivier.json` v44.16→v44.17.
+
+**Remaining backlog:** ~8 more conference files (ACC, Big Ten, Big West, CAA, d1-other's remaining 4 schools, d2, ivy). Continue batched by conference file, one commit per batch.
+
+---
+
 ### v44.16 (July 2026) — recruit_pathway data pass, AAC batch 1/10 (Change Type 3 companion field)
 
 Resumed the `recruit_pathway`/`recruit_pathway_note` backlog (schema added v34, previously mis-logged in CLAUDE.md §6 as "0/220 populated" — a stale audit claim corrected this session; the field was actually already populated for 26 JUCO/d1-other schools). Design question settled first: `recruit_pathway` stays **informational only, permanently** — the NCAA's 5th-year/grad-transfer eligibility extension makes a roster-snapshot classification too unstable to fold into `fitOlivier` (a concrete FIU example showed only a 3-5 point swing even under a hypothetical dampening model, not worth the added instability). Owner confirmed: populate data, no scoring cascade, no new UI element this batch (schema-only field, never rendered — confirmed via grep of app.js/dashboard.js).

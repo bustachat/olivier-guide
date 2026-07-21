@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.28 (July 2026) — Removed athlete-specific personalization from all coach bios (Change Type 2)
+
+Owner spotted a factual error in Castellanos's (Drexel) bio, surfaced right after the v44.27 architecture consolidation: *"...aligns well with Olivier's profile as a Belgian international recruit."* Olivier is Australian, not Belgian. Fixing that single word led to a bigger question from the owner: coach bios shouldn't name the specific athlete at all, since `coaches.json` is meant to be athlete-agnostic (the project's own architecture supports onboarding additional athletes under `athletes/`, each with their own config — a coach bio hardcoding "Olivier" by name, or a date tied to his specific `targetDeparture` (August 2027), would be stale or wrong for any other athlete using the same guide).
+
+**Grepped all 110 bios for "Olivier" — found 15, not just Drexel**, and genericized every one:
+- Named-athlete references ("...for Olivier", "for a player like Olivier", "Olivier's profile as...") → rewritten to describe the *type* of recruit the point applies to (e.g. "a player targeting a DPT/OT/PA pathway", "an international recruit's profile", "a technical central midfielder") — same substance, no name.
+- Career-goal mentions (Navy's service-commitment incompatibility, FAU/Chapman/Keiser/Michigan/UNC's pre-PT-pathway fit) → kept the actual analysis, dropped the name.
+- Hardcoded date mentions (SMC, Iowa Western, Miami Dade JUCO bios said "before Olivier arrives in August 2027") → genericized to "before a new recruit's first season" — the specific date was tied to Olivier's own `targetDeparture` field and would be wrong for a different athlete's timeline.
+- Coaches touched: `wiese` (Georgetown), `somoano` (UNC), `daley_michigan`, `stannard_yale`, `hackworth_navy`, `worthen` (FAU, 2 mentions), `oldham` (Keiser), `smee` (UC Charleston), `pierce_smc`, `brown_iowa` (Iowa Western), `depalo_mdc` (Miami Dade), `hc_drexel`, `potter_northeast`, `mason_columbia`, `carrillo_chapman`.
+
+Verified zero remaining "Olivier" occurrences in `data/coaches.json` (`grep -c` returns 0). `python -m json.tool` valid, `python validate_schools.py` PASS, `node validate_consistency.js` Issues: 0. Text-only — no score/rank/fitOlivier impact. `guideVersion` v44.27→v44.28.
+
+---
+
 ### v44.27 (July 2026) — Coach data architecture consolidation: coaches.json is now the SOLE source (Change Type 2, structural)
 
 Prompted by the user noticing the Details modal's "Coach & Contact" tab and the Coaches & Staff ranking card showed different profile text for the same coach (Pittsburgh's Jay Vidovich) — confirmed as genuine duplication, not a display bug: the school's own conf JSON `coach{}` sub-object (name/title/email/phone/profile) and `coaches.json` (rank/overallScore/bio/strengths/staff/contact/etc.) had always been two independently hand-maintained copies of overlapping facts, kept in sync only by the "two-file rule" and a `COACH-SYNC` validator check.

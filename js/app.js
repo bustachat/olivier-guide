@@ -192,6 +192,7 @@ function initApp() {
   renderComparePage();
   renderConferences();
   renderPathways();
+  renderRecruitPathwaySummary();
   renderPipelineTables();
   renderConferencePrestige();
   renderACUTable();
@@ -2178,6 +2179,58 @@ function renderPathways() {
         ${questions}
       </div>`;
   } catch(e) { console.error('renderPathways failed:', e); }
+}
+
+// Recruit-pathway summary — how each school's midfield roster is actually filled
+// (true freshmen vs transfer/JUCO portal), grouped from live minutesOutlook.recruit_pathway
+// data (added v34, populated across 103/110 schools v44.16-v44.24). Informational only —
+// no fitOlivier/lensScores cascade. Computed live from `unis` on every load, so it never
+// goes stale when a school is added/removed or a recruit_pathway value is edited; an
+// off-enum value is caught by validate_consistency.js's RECRUIT_PATHWAY_VALUES check
+// (schools with a bad value are silently excluded here rather than crashing the tab).
+const RECRUIT_PATHWAY_BUCKETS = [
+  { key: 'Freshman-friendly', color: 'emerald', desc: 'Midfield mostly filled by true incoming freshmen, not the transfer portal.' },
+  { key: 'Mixed', color: 'amber', desc: 'Roughly even split between freshmen and transfers.' },
+  { key: 'Transfer-preferred', color: 'sky', desc: 'Built mainly on grad and 4-year transfers, not high-schoolers.' },
+  { key: 'Portal/JUCO-heavy', color: 'rose', desc: 'Majority of spots came via portal or JUCO transfer — a harder freshman entry point.' }
+];
+
+function renderRecruitPathwaySummary() {
+  try {
+    const container = document.getElementById('pathways-container');
+    if (!container || !Array.isArray(unis)) return;
+
+    const grouped = {};
+    RECRUIT_PATHWAY_BUCKETS.forEach(b => grouped[b.key] = []);
+    unis.forEach(u => {
+      const rp = u.minutesOutlook && u.minutesOutlook.recruit_pathway;
+      if (rp && grouped[rp]) grouped[rp].push(u);
+    });
+
+    const cards = RECRUIT_PATHWAY_BUCKETS.map(b => {
+      const schools = grouped[b.key].slice().sort((a, c) => a.name.localeCompare(c.name));
+      const chips = schools.map(u => {
+        const note = ((u.minutesOutlook && u.minutesOutlook.recruit_pathway_note) || '').replace(/"/g, '&quot;');
+        return `<span class="pathway-chip" title="${note}" onclick="openDetail('${u.id}')">${u.name}</span>`;
+      }).join('');
+      return `
+        <div class="path-card" style="border-color:var(--${b.color});">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+            <span style="font-size:1.05rem;font-weight:700;color:var(--navy);">${b.key}</span>
+            <span class="pathway-count-badge" style="background:var(--${b.color}3);color:var(--${b.color});">${schools.length} school${schools.length === 1 ? '' : 's'}</span>
+          </div>
+          <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:10px;">${b.desc}</p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">${chips || '<span style="font-size:12px;color:var(--hint);">None yet researched</span>'}</div>
+        </div>`;
+    }).join('');
+
+    container.insertAdjacentHTML('beforeend', `
+      <div class="section-head"><h2>Recruiting Pathway by School</h2></div>
+      <p style="font-size:13px;color:var(--muted);margin:-.5rem 0 1rem;">How midfield spots actually get filled — grouped from live roster research. Informational only, not a Fit Score factor.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:2rem;">
+        ${cards}
+      </div>`);
+  } catch(e) { console.error('renderRecruitPathwaySummary failed:', e); }
 }
 
 // ══════════════════════════════════════════════════

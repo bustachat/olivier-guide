@@ -6,6 +6,23 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.26 (July 2026) — Pathways tab: new "Recruiting Pathway by School" section (Change Type 11, UX/JS)
+
+Surfaced the `recruit_pathway` data (completed v44.16–v44.24) for the first time — until now it was populated in JSON but rendered nowhere. Added a new section to the Pathways tab, below the existing Path A–D cards and coach questions, grouping all 103 populated schools into 4 cards by `minutesOutlook.recruit_pathway` value (Freshman-friendly / Mixed / Transfer-preferred / Portal/JUCO-heavy). Each card shows a count badge and a chip per school; clicking a chip opens that school's existing detail modal (`openDetail(id)`). Hovering a chip shows its `recruit_pathway_note` as a tooltip.
+
+**This is architecturally new for this tab** — `renderPathways()` (js/app.js) has always been pure static config from `athletes/olivier.json`'s `pathways` object and never touched the 110-school arrays; this is the first time the Pathways tab reads live school data. Implemented as a separate function (`renderRecruitPathwaySummary()`, computed from the global `unis` array) that appends into `#pathways-container` rather than modifying `renderPathways()` itself — keeps the two data sources cleanly separated.
+
+**Future-proofing (per owner request — this needs to stay correct as schools are added/removed/re-scraped):**
+- The summary is fully computed live from `unis` on every page load — no hardcoded school list or count anywhere, so it can never go stale when a school is added, removed, or its `recruit_pathway` value is edited.
+- Added a new validator check in `validate_consistency.js` (`RECRUIT_PATHWAY_VALUES` enum + a check alongside the existing `recruit_risk` enum check) that flags any `recruit_pathway` value outside the 4 allowed strings — without this, a typo'd or new value would silently vanish from every bucket instead of erroring, the same failure mode the `recruit_risk` check was built to prevent (§4 field gotchas).
+- Schools without `recruit_pathway` (the 7 `available:false` cases) are simply absent from all 4 buckets — no error, no "unknown" bucket needed.
+
+New CSS: `.pathway-chip` (clickable school tag) and `.pathway-count-badge` (per-bucket count), matching the existing `.elite-juco-chip`/`.housing-warn-chip` pattern — reused the app's existing `--emerald/--amber/--sky/--rose` semantic color tokens (safest → hardest entry).
+
+Verified live via local preview (Phase 5, targeted scope): section renders with correct counts (74 Freshman-friendly + 20 Mixed + 3 Transfer-preferred + 6 Portal/JUCO-heavy = 103), chip click opens the correct modal, tooltip shows the real research note, zero console errors, `python validate_schools.py` PASS, `node validate_consistency.js` Issues: 0. No `fitOlivier`/`lensScores` cascade (purely additive, display-only). `guideVersion` v44.25→v44.26.
+
+---
+
 ### v44.25 (July 2026) — Somoano (UNC) bio/record factual fix (Change Type 2)
 
 Fixed a deferred data-quality bug: `coaches.json`'s Somoano `record` field and `acc.json`'s `coach.profile` field both said "Dorrance dynasty legacy program" — a leftover conflation of UNC's women's program (Anson Dorrance, a separate team) with the men's program Somoano actually coaches. This was the same error class already fixed in `pipeline.json`'s `titles[]` in v44.14 (which wrongly credited Dorrance with 1978/1979 men's titles), but the two coach-record fields hadn't been touched.

@@ -97,6 +97,11 @@ const MO_KEYS_AVAILABLE = new Set(['available', 'mf_total_2025', 'cleared_before
 const MO_KEYS_UNAVAILABLE = new Set(['available', 'note', 'reason']);
 const MO_REQUIRED = ['mf_total_2025', 'cleared_before_2027', 'rising_senior_2027_count', 'rising_junior_2027_count', 'recruit_risk', 'trajectory'];
 const TRAJ_KEYS = ['year', 'yr_label', 'pct', 'label'];
+// recruit_pathway enum (added v34, schema: CLAUDE.md §5). Feeds the Pathways tab's
+// recruit-pathway summary (added v44.26, js/app.js renderRecruitPathwaySummary()) —
+// an off-enum value would silently drop a school from every bucket with no error,
+// so this check exists to catch a typo/new value before it ships silently.
+const RECRUIT_PATHWAY_VALUES = ['Freshman-friendly', 'Transfer-preferred', 'Portal/JUCO-heavy', 'Mixed'];
 // Honest researched gaps, not bugs — tracked in CLAUDE.md §6 deferred items (v40.1): re-scrape Sept–Nov 2026.
 // Renderers guard these with '—' since v40.1. Remove from this whitelist once researched.
 const MO_MISSING_OK = new Set(['notredame:rising_senior_2027_count', 'georgetown:rising_senior_2027_count']);
@@ -106,6 +111,7 @@ schools.filter(s => s.profileDepth === 'full').forEach(s => {
   if (mo.available) {
     if (!Array.isArray(mo.trajectory) || !mo.trajectory.length) note('MO', `${s.id} available:true but no trajectory`);
     if (mo.recruit_risk && !['Low', 'Medium', 'High'].includes(mo.recruit_risk)) note('MO', `${s.id} recruit_risk='${mo.recruit_risk}' — renderers only understand Low|Medium|High; this displays as green 'Open'`);
+    if (mo.recruit_pathway && !RECRUIT_PATHWAY_VALUES.includes(mo.recruit_pathway)) note('MO', `${s.id} recruit_pathway='${mo.recruit_pathway}' — must be exactly one of ${RECRUIT_PATHWAY_VALUES.join(' | ')}; an off-enum value silently vanishes from the Pathways tab summary instead of erroring`);
     Object.keys(mo).filter(k => !MO_KEYS_AVAILABLE.has(k)).forEach(k =>
       note('MO-KEYS', `${s.id} unknown minutesOutlook key '${k}' — misnamed keys render as literal 'undefined' (schema: CLAUDE.md §5)`));
     MO_REQUIRED.filter(k => mo[k] === undefined && !MO_MISSING_OK.has(s.id + ':' + k)).forEach(k =>

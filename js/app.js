@@ -734,7 +734,7 @@ function buildCard(u){
       titlesNote+
     '</div>'+
     '<div class="card-footer2">'+
-      '<div class="card-coach">Coach: <strong>'+u.coach.name+'</strong></div>'+
+      '<div class="card-coach">Coach: <strong>'+(getCoach(u.id)?.name||'—')+'</strong></div>'+
       '<div class="card-btns">'+
         '<button class="compare-btn'+(inSchol?' selected':'')+'" id="cbtn-'+u.id+'" onclick="toggleCompare(\''+u.id+'\',this)">'+(inSchol?'✓':'+')+' Compare</button>'+
         (isListed?'<button class="detail-btn listed-btn" disabled>Preview</button>':'<button class="detail-btn" onclick="openDetail(\''+u.id+'\')">Details →</button>')+
@@ -779,7 +779,7 @@ function renderComparePage(){
     ['Strength & Conditioning',u=>`<div style="font-size:11px;color:var(--muted);line-height:1.5">${u.facilityDetails?.strengthConditioning?.slice(0,120)||'—'}${(u.facilityDetails?.strengthConditioning?.length||0)>120?'…':''}</div>`],
     ['Sports Science Tech',u=>`<div style="font-size:11px;color:var(--muted);line-height:1.5">${u.facilityDetails?.sportsScience?.slice(0,120)||'—'}${(u.facilityDetails?.sportsScience?.length||0)>120?'…':''}</div>`],
     ['Academic Labs',u=>`<div style="font-size:11px;color:var(--muted);line-height:1.5">${u.facilityDetails?.academicLabs?.slice(0,130)||'—'}${(u.facilityDetails?.academicLabs?.length||0)>130?'…':''}</div>`],
-    ['Head Coach',u=>`<div class="cval">${u.coach.name}</div>`],
+    ['Head Coach',u=>`<div class="cval">${getCoach(u.id)?.name||'—'}</div>`],
     ['Climate',u=>`<div class="cval">${u.warm?'☀ Warm':'⛅ Mixed'}</div>`],
     ['City Campus',u=>`<div class="cval ${u.city?'good':''}">${u.city?'✅ Yes':'⚠ Smaller'}</div>`],
     ['Overall Fit',u=>{const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
@@ -1400,6 +1400,9 @@ function buildMinutesModalTab(u){
 }
 
 function buildDetailBody(u){
+  const coach=getCoach(u.id)||{};
+  const coachContact=coach.contact||{};
+  const coachRankBadge=coach.rank?`<span class="coach-rank-badge" style="position:static;display:inline-block;margin-left:8px;${RANK_BADGE_CSS[coach.rankClass]||RANK_BADGE_CSS['rk-solid']}">Rank #${coach.rank}</span>`:'';
   return`
     <div class="modal-tabs">
       <button class="mtab active" onclick="switchTab(this,'overview')">Overview</button>
@@ -1499,13 +1502,13 @@ function buildDetailBody(u){
     </div>
     <div class="mtab-content" id="tab-contact">
       ${u.div==='IVY'?`<div class="ivy-warning">⚠ Ivy League coaches cannot offer athletic scholarships. Contact should still go through your agent — coach relationships matter for roster spots.</div>`:''}
-      <div class="contact-block"><h4>${u.coach.name}</h4>
-        <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
-        <div class="contact-row"><div class="ci">Email</div><div class="cv">${u.coach.email?`<a href="mailto:${u.coach.email}">${u.coach.email}</a>`:'<span style="color:var(--hint)">—</span>'}</div></div>
-        <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone||'<span style="color:var(--hint)">—</span>'}</div></div>
+      <div class="contact-block"><h4>${coach.name||'—'}${coachRankBadge}</h4>
+        <div class="contact-row"><div class="ci">Title</div><div class="cv">${coach.title||'Head Coach'}</div></div>
+        <div class="contact-row"><div class="ci">Email</div><div class="cv">${coachContact.email?`<a href="mailto:${coachContact.email}">${coachContact.email}</a>`:'<span style="color:var(--hint)">—</span>'}</div></div>
+        <div class="contact-row"><div class="ci">Phone</div><div class="cv">${coachContact.phone||'<span style="color:var(--hint)">—</span>'}</div></div>
 
       </div>
-      <div class="detail-block" style="margin-bottom:1rem"><h4>Coach Profile</h4><p style="font-size:12.5px;color:var(--muted);line-height:1.7">${u.coach.profile}</p></div>
+      <div class="detail-block" style="margin-bottom:1rem"><h4>Coach Profile</h4><p style="font-size:12.5px;color:var(--muted);line-height:1.7">${coach.bio||'—'}</p></div>
       <div class="tip-box"><p><strong>Agent recommends:</strong> All contact should be coordinated through your agent. Coach introductions via a platform carry significantly more weight than cold emails. Include Olivier's highlights link, academic profile, and Australian background.</p></div>
       <div class="tip-box"><p><strong>What coaches want from an 8/10 midfielder:</strong> Pressing intensity, passing range, composure under pressure, work rate off the ball. Show defensive recovery, winning duels, variety — not just assists and goals.</p></div>
     </div>
@@ -2059,18 +2062,6 @@ function filterWarm(btn){}
 function filterGPA(bucket,btn){}
 
 function updateSections(){document.querySelectorAll('.conf-section').forEach(sec=>{const hasVisible=[...sec.querySelectorAll('.ucard')].some(c=>c.style.display!=='none');sec.style.display=hasVisible?'':'none';});}
-function renderContacts(){
-  const container=document.getElementById('contacts-list');let html='';
-  unis.forEach(u=>{html+=`<div class="contact-block" style="margin-bottom:1rem">
-    <h4 style="display:flex;align-items:center;gap:8px"><span class="dbadge d-${u.div}">${u.div}</span>${u.full} — ${u.coach.name}</h4>
-    <div style="font-size:11px;color:var(--hint);margin-bottom:8px">${u.loc} · ${u.conf}</div>
-    <div class="contact-row"><div class="ci">Title</div><div class="cv">${u.coach.title}</div></div>
-    <div class="contact-row"><div class="ci">Email</div><div class="cv">${u.coach.email?`<a href="mailto:${u.coach.email}">${u.coach.email}</a>`:'<span style="color:var(--hint)">—</span>'}</div></div>
-    <div class="contact-row"><div class="ci">Phone</div><div class="cv">${u.coach.phone||'<span style="color:var(--hint)">—</span>'}</div></div>
-
-    ${u.div==='IVY'?'<div style="font-size:11px;color:var(--gold);font-weight:600;margin-top:4px">⚠ Ivy League — no athletic scholarships, need-based only</div>':''}</div>`;});
-  container.innerHTML=html;
-}
 
 // ══════════════════════════════════════════════════
 // FILTER CHIPS — conference row rendered from unis data
@@ -2570,6 +2561,12 @@ function renderConferences(){
 // ══════════════════════════════════════════════════
 
 
+// Coach lookup by schoolId — coaches.json is the SOLE source of coach data since v44.27
+// (school objects no longer carry their own coach{} sub-object). Any renderer needing
+// coach info must go through this helper rather than reading a school's own field.
+function getCoach(schoolId){ return (coachData||[]).find(c=>c.schoolId===schoolId); }
+const RANK_BADGE_CSS={'rk-elite':'background:#fef08a;color:#713f12','rk-strong':'background:var(--sky3);color:var(--sky)','rk-solid':'background:var(--emerald3);color:var(--emerald)'};
+
 function buildCoachCard(c){
   const u=unis.find(x=>x.id===c.schoolId)||{};
   const el=document.createElement('div');
@@ -2584,8 +2581,7 @@ function buildCoachCard(c){
     const bg=s.bg||[s.email,s.phone].filter(Boolean).join(' · ')||'';
     return`<div class="staff-row"><div><div class="staff-name">${s.name||''}</div><div class="staff-role">${s.role||''}</div></div><div class="staff-bg">${bg}</div></div>`;
   }).join('');
-  const rankColors={rk_elite:'background:#fef08a;color:#713f12',rk_strong:'background:var(--sky3);color:var(--sky)',rk_solid:'background:var(--emerald3);color:var(--emerald)'};
-  const rkcss=c.rankClass==='rk-elite'?rankColors.rk_elite:c.rankClass==='rk-strong'?rankColors.rk_strong:rankColors.rk_solid;
+  const rkcss=RANK_BADGE_CSS[c.rankClass]||RANK_BADGE_CSS['rk-solid'];
   el.innerHTML=`
     <div class="coach-card-head">
       <div class="coach-av-lg" style="background:${u.color?u.color[0]:'var(--surface3)'};color:${u.color?u.color[1]:'var(--muted)'}">${c.name.split(' ').map(x=>x[0]).join('').slice(0,2)}</div>

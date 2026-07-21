@@ -23,7 +23,7 @@ REQUIRED_ACU_UNITS = [
 FULL_REQUIRED_FIELDS = [
     'id','name','full','loc','div','conf','confKey',
     'degreeTitle','acuAlign','acuAlignNote','soccerLevel',
-    'cost','aid','fin','coach','gpa','devScores','fitOlivier',
+    'cost','aid','fin','gpa','devScores','fitOlivier',
     'lensScores','minutesOutlook','profileDepth','mapX','mapY',
     'facilityDetails','culture','acuUnits',
 ]
@@ -49,6 +49,12 @@ def validate_school(s, filename):
         err(sid, f'Duplicate ID — also in {seen_ids[sid]}')
     else:
         seen_ids[sid] = filename
+
+    # coach{} was removed from school objects in v44.27 — coaches.json is now the sole
+    # source (looked up by schoolId). A stray coach{} here means it's silently drifting
+    # from coaches.json again with no sync mechanism to catch it.
+    if 'coach' in s:
+        err(sid, 'has a "coach" key — coach data was moved to coaches.json (sole source, v44.27); remove this field, do not populate it')
 
     depth = s.get('profileDepth')
     if depth not in VALID_DEPTHS:
@@ -167,12 +173,6 @@ def validate_school(s, filename):
                     warn(sid, f'confRecord entry yr={entry.get("yr","?")} looks like placeholder text: "{entry.get("pos","")}"')
                     break
 
-        # Coach contact check
-        coach = s.get('coach', {})
-        if isinstance(coach, dict):
-            if not coach.get('email') and not coach.get('phone'):
-                warn(sid, 'coach.email and coach.phone are both null — contacts unverified')
-
     elif depth == 'listed':
         # devScores must be null for listed profiles
         ds = s.get('devScores')
@@ -209,6 +209,14 @@ def validate_coaches():
         score = c.get('overallScore')
         if score is not None and not (0 <= score <= 100):
             errors.append(f'  ERROR [coach:{cid}] overallScore={score} — must be 0–100')
+        # title required (added v44.27 — coaches.json is now the sole source for this)
+        if not c.get('title'):
+            warn(cid, 'missing title (e.g. "Head Coach") — required since coach data moved fully into coaches.json in v44.27')
+        # Coach contact check (moved here from school-object check in v44.27)
+        contact = c.get('contact', {})
+        if isinstance(contact, dict):
+            if not contact.get('email') and not contact.get('phone'):
+                warn(cid, 'contact.email and contact.phone are both null — contacts unverified')
 
 
 def main():

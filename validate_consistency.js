@@ -144,8 +144,12 @@ coaches.forEach(c => {
     const band = c.overallScore >= 80 ? 'rk-elite' : c.overallScore >= 65 ? 'rk-strong' : 'rk-solid';
     if (c.rankClass !== band) note('COACH', `${c.name} overallScore=${c.overallScore} implies ${band} but rankClass='${c.rankClass}' (§5d bands: elite ≥80 / strong 65-79 / solid ≤64)`);
   }
+  // coach{} was removed from school objects in v44.27 — coaches.json is now the sole
+  // source (looked up by schoolId via getCoach() in js/app.js). A stray coach{} means
+  // it's silently drifting again with nothing to catch it (this replaces the old
+  // COACH-SYNC check, which compared the two sources — there's only one now).
   const s = schools.find(x => x.id === c.schoolId);
-  if (s && s.coach && s.coach.name && s.coach.name !== c.name) note('COACH-SYNC', `${c.schoolId}: conf JSON coach '${s.coach.name}' vs coaches.json '${c.name}' — two-file rule violated`);
+  if (s && s.coach) note('COACH-SYNC', `${c.schoolId} still has a school-object "coach" key — coach data was moved to coaches.json (sole source, v44.27); remove it`);
 });
 const coachSchoolIds = new Set(coaches.map(c => c.schoolId));
 schools.filter(s => s.profileDepth === 'full' && !coachSchoolIds.has(s.id)).forEach(s => note('COACH', `${s.id} full-profile but no coaches.json entry`));

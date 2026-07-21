@@ -106,13 +106,6 @@
         "note": "Guaranteed for all incoming freshmen for the first year (not strictly mandatory); no guarantee beyond year 1. Verified v38 via official housing.ucsb.edu."
       }
     },
-    "coach": {
-      "name": "Tim Vom Steeg",
-      "title": "Head Coach (27th season 2025)",
-      "email": "tvomsteeg@athletics.ucsb.edu",
-      "phone": "805-893-8320",
-      "profile": "27th season at UCSB 2025. Career record 324-152-76. 2006 NCAA National Champion. National CoY 2004 and 2006. 4x Big West CoY. 14 Big West Championships (12 reg season + 2 tourn). 32 MLS draftees including Manu Duah #1 overall 2025. UCSB alum BA History 1989, MA 2000. His four sons all played for UCSB. 2025 Big West Regular Season Champions."
-    },
     "devScores": {
       "tactical": 80,
       "technical": 82,
@@ -393,13 +386,6 @@
       "fitness": 64
     },
     "devScoresNote": "v42.23 §5a re-baseline (environment only). Live gopoly.com MSOC staff: 3 coaches (HC + 2 assts) + Asst Sports Medicine Director assigned to soccer (shared w/ wrestling); no GK coach, no dedicated S&C. Stored Tier-1: shared 11,075-seat FieldTurf football stadium, shared S&C, no documented GPS/video. Modest-solid D1 environment. NOTE (Change Type 2, NOT fixed here - needs coaches.json sync + re-rank): stored HC 'Steve Sampson' is STALE; live official directory lists HC 'Oige Kennedy'.",
-    "coach": {
-      "name": "Oige Kennedy",
-      "title": "Head Coach",
-      "email": "mensoccer@calpoly.edu",
-      "phone": "",
-      "profile": "Oige Kennedy, the 2024 Big West Coach of the Year, has led Cal Poly since 2022 and directed the Mustangs to back-to-back Big West regular-season titles in 2024 (the program's first) and 2025. A former Stanford assistant on Jeremy Gunn's staff during the Cardinal's national-championship era, he developed multiple MLS draft picks there. San Luis Obispo is consistently ranked the most liveable college town in California, and the learn-by-doing kinesiology model pairs strong lab and practical experience with soccer development."
-    },
     "tags": [
       "warm",
       "soccer"
@@ -676,13 +662,6 @@
       "fitness": 64
     },
     "devScoresNote": "v42.23 §5a re-baseline (environment only). Live ucdavisaggies.com MSOC staff: 3 coaches (HC Shaffer + Assoc HC Hotaling + asst) + dedicated MSOC Asst Athletic Trainer (Bermudez); no GK coach, no dedicated soccer S&C listed. Stored Tier-1: 1,500-seat dedicated natural-grass stadium, shared UC S&C, no documented GPS/video.",
-    "coach": {
-      "name": "Dwayne Shaffer",
-      "title": "Head Coach (29th season)",
-      "email": "ucdavissoccer@ucdavis.edu",
-      "phone": "(530) 752-8892",
-      "profile": "UC Davis program won the 2024 Big West Tournament Championship. UC Davis Medical Center (one of the top research hospitals in California) is available for pre-PT clinical placements. Davis is a bike-friendly college town adjacent to Sacramento — warm, clean, and affordable relative to Bay Area UC campuses."
-    },
     "tags": [
       "warm",
       "soccer"
@@ -957,13 +936,6 @@
       "fitness": 68
     },
     "devScoresNote": "v42.23 §5a re-baseline (environment only). Live ucirvinesports.com MSOC staff: 3 coaches (HC Raz + Assoc HC Rodriguez + asst) + team-assigned Strength & Conditioning Coach (Williams) AND Certified Athletic Trainer (Capili) both listed; no GK coach. Best sports-science staffing in the group after UCSB. Stored Tier-1: 1,500-seat dedicated grass Peter Aldrich Field, no documented GPS/video.",
-    "coach": {
-      "name": "Yossi Raz",
-      "title": "Head Coach (10th+ season)",
-      "email": "yraz@uci.edu",
-      "phone": "(949) 824-9224",
-      "profile": "UC Irvine claimed the 2025 Big West Tournament Championship, beating UCSB 2-1 in the final. UCI Medical Center (nationally ranked academic medical centre) provides exceptional pre-PT clinical access. Orange County location — warm, coastal proximity, 5 miles from Huntington Beach."
-    },
     "tags": [
       "warm",
       "city",
@@ -1233,13 +1205,6 @@
       "fitness": 50
     },
     "devScoresNote": "v42.23 §5a re-baseline (environment only). Live gohighlanders.com MSOC staff: 4 coaches (HC Cupello + 3 assts) but ZERO support staff listed - no AT, no S&C, no GK coach assigned to soccer. Stored Tier-1: dedicated on-campus natural-grass stadium, shared UC S&C suite only, no documented GPS/video. Lowest support environment in the group.",
-    "coach": {
-      "name": "Tim Cupello",
-      "title": "Head Coach",
-      "email": "tim.cupello@ucr.edu",
-      "phone": "951-827-5022",
-      "profile": "UC Riverside is a developing Big West program. Consistently lower-half Big West — best minutes opportunity in the conference for an international recruit. Inland Southern California location — warm and dry. UC Riverside Medical Centre available for pre-PT clinical access. LA and Orange County accessible by car (60-90 min)."
-    },
     "tags": [
       "warm",
       "soccer"
@@ -1508,13 +1473,6 @@
       "fitness": 62
     },
     "devScoresNote": "v42.23 §5a re-baseline (environment only). Live ucsdtritons.com MSOC staff: 4 coaches (HC Pascale + Assoc HC Hernandez + 2 assts) + Data Analytics staffer (video/data investment); no GK coach, no AT/S&C listed on page. Stored Tier-1: renovated RIMAC S&C (12k sqft, shared), small (750/1,750) stadium with top West Coast playing surface. Newer D1 program still elevating.",
-    "coach": {
-      "name": "Jon Pascale",
-      "title": "Head Coach (18th+ season)",
-      "email": "jpascale@ucsd.edu",
-      "phone": "858-534-8165",
-      "profile": "UCSD is a rapidly elevating program — recently elevated to full Division I research university status. The Exercise and Rehabilitative Sciences degree is among the most PT-aligned in the UC system. UCSD Health (top-15 nationally for research) provides exceptional pre-PT/Chiro clinical access. La Jolla is one of the most beautiful campus settings in US college soccer."
-    },
     "tags": [
       "warm",
       "city",
@@ -1787,13 +1745,6 @@
       "fitness": 56
     },
     "devScoresNote": "v42.23 §5a re-baseline (environment only). Live fullertontitans.com MSOC staff: 4 coaches (HC Kuntz 11th yr + 2 assts + position-specific Goalkeepers Coach Puglia) + Dir of Ops + team-assigned Asst Athletic Trainer (Hoang, shared w/ water polo); more coaching depth (incl GK specialist) than most UCs here. Stored Tier-1: on-campus natural-grass Titan Stadium, shared CSU S&C, no documented GPS/video. Prior 50 was depressed by weak pipeline/results (excluded from dev per §5a); re-scored on environment alone.",
-    "coach": {
-      "name": "George Kuntz",
-      "title": "Head Coach (11th+ season)",
-      "email": "gkuntz@fullerton.edu",
-      "phone": "(657) 278-3244",
-      "profile": "CSUF is a developing Big West program in Orange County — the most accessible minutes option in the Big West. Lowest-cost D1 program in Southern California at ~$28k/yr. Orange County location means warm weather, beaches (Huntington Beach 15 min), Disneyland (3 min), and CHOC (Children's Hospital of OC) clinical access."
-    },
     "tags": [
       "warm",
       "city",

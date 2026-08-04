@@ -6,6 +6,35 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.31 (August 2026) — Notre Dame's dead `url` fixed, plus two more dead hosts found by a full 333-URL sweep
+
+**The reported bug.** `notredame.url` was `https://fightingirish.com/sports/mens-soccer` → **HTTP 404**. Notre Dame uses the `/sports/msoc` path convention. The same dead string was also stored on the coach entry in `data/coaches.json`, so both were corrected.
+
+**Bare path, not `/index` — and the reason matters.** 20 schools store `/sports/msoc/index`; **all 20 are JUCO/Sidearm**, and `rosterUrl()` (js/app.js) deliberately *stops* at the program page for any URL ending in `/index` (v42.5 — Sidearm requires a season slug that rots every August). Storing Notre Dame bare matches **Virginia**, the only other non-JUCO msoc school, and lets `rosterUrl()` build `https://fightingirish.com/sports/msoc/roster` — verified 200 and rendering the live 2026-27 squad in a real browser.
+
+**Three consumers, not one.** The report described this as the "Visit Site" link; it is actually not that. `SITE_URLS[u.id]` drives Visit Site (the globe link, `nd.edu`, unaffected). `u.url` drives three other things, all of which were broken and are now verified working in-browser: the modal Links row **"Men's Soccer →"** (app.js:1228), the **Compare tab "Visit →"** row (app.js:802), and **`rosterUrl()`** → the Minutes Outlook "📋 Roster →" button (app.js:3282).
+
+**The sweep — 111 `url` + 111 `SITE_URLS` + 111 `DOMAINS`.** Two further genuinely dead hosts, both proven **NXDOMAIN**:
+
+| id | field | stored (dead) | corrected |
+|---|---|---|---|
+| `tyler_jc` | `url` (juco.json) | `www.apacheathletics.com` — NXDOMAIN | `apacheathletics.com` (bare host resolves, renders TJC Men's Soccer) |
+| `setonhall` | `DOMAINS` (app.js) | `shupiratesl.com` — NXDOMAIN, stray trailing `l` | `shupirates.com` |
+
+Seton Hall's was **silently** broken: `DOMAINS[u.id]` feeds the modal-header logo via Google's favicon service, which returns a *generic globe* rather than an error for an unresolvable domain. Measured: old host → **404, 726 B** placeholder; new host → **200, 1360 B** real icon. Nothing in the UI or the validators would ever have flagged this.
+
+**Blocked ≠ dead — the rule that kept the sweep honest.** A naive status check would have condemned ~15 live hosts. Cloudflare returns **202 with an empty body** (`jcccathletics.com`, `efsctitans.com`, `goreivers.com`) and **403** (`iwcc.edu`, `indianhills.edu`, plus `umd.edu`/`unc.edu`/`umich.edu`/`uakron.edu` and friends in SITE_URLS) to scripted requests. Python `requests` additionally threw `SSLError` on `rutgers.edu` and `uncc.edu` and `ConnectTimeout` on `chapman.edu` — all three resolve and serve fine. **Only NXDOMAIN was treated as proof of death**, per the standard set in v42.13/v42.4.
+
+**Deferred, not guessed — `DOMAINS.gcu = 'lopes.com'`.** It *resolves* (so it fails the NXDOMAIN test) but times out in both a scripted client and a real browser at 300 s. `gculopes.com` is what GCU's own school-object `url` uses and its favicon returns 200. Strong suspicion, not proof, so it is logged in §6 rather than changed — same discipline as the Monroe parked-lander case.
+
+**No scoring change.** `url` and `DOMAINS` are not read by `scores.js`. Notre Dame's `fitOlivier` holds at **45** and its `lensScores.value` at **27** — which is exactly `round(0.6 × 45)`, correct under v44.30's new VALUE check since Notre Dame's $91,986 is above budget and floors affordability at 0. No cascade, no coach re-rank.
+
+**Validation.** `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings (unchanged). `node validate_consistency.js` → **Issues: 0**, re-run after rebasing onto v44.30 so the new VALUE check was live. `node --check js/app.js`, `python -m json.tool` on all three edited JSONs. Browser: all 11 tabs render, zero console errors, both corrected modals and every `u.url` consumer confirmed pointing at a live URL.
+
+**Still open:** no validator check exists for dead `url`s. The sweep is a throwaway script, not a repo fixture — a host can die tomorrow and nothing will notice. Worth considering as a periodic manual sweep rather than a CI check, since ~15 hosts bot-block and would produce permanent false positives.
+
+---
+
 ### v44.30 (August 2026) — Wake Forest value-lens drift fixed + a VALUE check so it can't recur silently (Change Type 4 + 11)
 
 **The bug.** `wakeforest.lensScores.value` was stored as **50**; the formula (`fitOlivier×0.6 + affordability×40`, CLAUDE.md §7 Phase 1J) yields **29**. Wake Forest's `costNum` is $91,000 against a budget of ~$51.6–52k, so `costRatio` caps at 1.0 and affordability floors at **0** — meaning its value lens should equal `0.6 × fitOlivier` exactly, with no affordability credit at all. Corrected to 29.

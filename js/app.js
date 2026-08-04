@@ -925,7 +925,7 @@ const DOMAINS = {
   creighton:      'gocreighton.com',
   marquette:      'marquette.edu',
   providence:     'friars.com',
-  setonhall:      'shupiratesl.com',
+  setonhall:      'shupirates.com',
   butler:         'butlersports.com',
   xavier:         'goxavier.com',
   uconn:          'uconnhuskies.com',

@@ -334,6 +334,41 @@ if (fitMismatches.length) {
   fitMismatches.forEach(m => note('FIT', '  ' + m));
 }
 
+// ── VALUE (added v44.30): the value lens is DERIVED, but nothing recomputes it ──
+// value = fitOlivier*0.6 + affordability*40, where affordability = 1 − min(1, costNum/budgetUSD)
+// (CLAUDE.md §7 Phase 1J). Unlike fitOlivier — which scores.js recalculates on every page load,
+// so drift surfaces immediately — lensScores.value is stored-only: no runtime code recomputes it,
+// it is just read by the Value-First lens sort and the Dashboard lens panel. That makes it the one
+// derived school score that can drift silently and indefinitely, which is exactly what happened to
+// Wake Forest (stored 50 vs formula 29 — a 21-point error that put a $91k school, the single most
+// expensive in the guide, mid-table on the lens whose entire job is flagging affordability).
+// Both cascade rows that own this field (§3a Change Types 4 and 12) are manual steps, so the only
+// thing standing between a missed recalculation and a wrong ranking was someone noticing by eye.
+//
+// Tolerance >1 matches the FIT check above and absorbs the two defensible readings of budgetUSD:
+// the stored athlete field (52000) vs. budgetAUD/fxRate (80000/1.55 = 51612.90). Across all 111
+// schools those two differ by at most 1 point (temple: 38 vs 37).
+//
+// costNum === 0 is EXEMPT — service academies (Army, Navy) only. Per CLAUDE.md §4 their fin{}
+// numerics are all zeroed by rule, which saturates affordability at 1.0 and would hand them the
+// full +40. Their stored values (navy 47 / army 45, both ≈ fit+3) deliberately decline that credit,
+// because the "free" tuition is paid for with a 5-year service commitment — a real cost the dollar
+// figure cannot express, and §4 is explicit that these schools are incompatible with Olivier's
+// DPT/MLS pathway. Whether the value lens SHOULD credit a $0 sticker price is an owner design
+// question (CLAUDE.md §6 deferred items), not drift — so this check declines to rule on it rather
+// than reporting two intentional values as errors.
+const budgetUSD = athlete.budgetUSD || (athlete.budgetAUD / athlete.fxRate);
+const valueMismatches = [];
+schools.filter(s => s.profileDepth === 'full' && s.fin && s.fin.costNum > 0 && s.lensScores).forEach(s => {
+  const affordability = 1 - Math.min(1, s.fin.costNum / budgetUSD);
+  const value = Math.round((s.fitOlivier || 0) * 0.6 + affordability * 40);
+  if (Math.abs(value - (s.lensScores.value || 0)) > 1) valueMismatches.push(`${s.id} (${s._file}): stored ${s.lensScores.value}, formula ${value} (fit ${s.fitOlivier}, costNum ${s.fin.costNum})`);
+});
+if (valueMismatches.length) {
+  note('VALUE', `${valueMismatches.length} schools where stored lensScores.value differs >1 from fitOlivier*0.6 + affordability*40 (§7 Phase 1J) — re-run the §3a Type 4 cascade:`);
+  valueMismatches.forEach(m => note('VALUE', '  ' + m));
+}
+
 // ── prestige rank sequence ──
 const pr = prestige.map(p => p.rank).sort((a, b) => a - b);
 for (let i = 0; i < pr.length; i++) if (pr[i] !== i + 1) { note('PRESTIGE', `conf-prestige rank sequence broken at ${pr[i]}`); break; }

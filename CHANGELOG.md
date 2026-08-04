@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.34 (August 2026) — the last 4 broken `coaches.json` URLs cleared; that field is now 108/108 live
+
+Closes the §6 item opened by v44.33. All four researched Tier-1 in a real browser, not guessed.
+
+| schoolId | stored (broken) | now | Tier-1 confirmation |
+|---|---|---|---|
+| `stedwards` | `sehawks.com/sports/mens-soccer` — NXDOMAIN | `gohilltoppers.com/sports/mens-soccer` | 2026 staff page: *"Brian Young · Head Men's Soccer Coach"* |
+| `setonhall` | `shupiratesl.com/sports/mens-soccer` — NXDOMAIN | `shupirates.com/sports/mens-soccer` | 2026 coaches page: *"Andreas Lindberg · Head Coach"* |
+| `virginia` | `virginiasports.com/sports/mens-soccer` — 404 | `virginiasports.com/sports/msoc` | program page names Gelnovatch; UVA is the known non-JUCO `msoc` school (v44.31) |
+| `ncstate` | `…/roster/coaches/marc-hubbard/**5258**` — 404 | `gopack.com/sports/mens-soccer` | coaches page: *"Marc Hubbard · Head Coach"* |
+
+**The NC State case proves the rot hypothesis outright.** Its stored deep link carried bio id **5258**; the live page now serves Hubbard at **5017**. The coach never changed — the id rotated underneath the link. All four are therefore stored as **program pages**, matching the dominant convention (81 of 108 entries) and leaving only 3 deep links in the file. **Do not store `/roster/coaches/<slug>/<id>` URLs — they rot.**
+
+**Finding St. Edward's required real research, and one candidate was a trap.** `sehawks.com` is gone and `stedwardsathletics.com`/`sehilltoppers.com` don't resolve. `goseu.com` *does* resolve with HTTP 200 — and serves a Chinese video-streaming site. A status-code-only check would have stored it. Content had to be read, exactly as the Monroe parked-lander lesson (v42.13) requires. The real host is `gohilltoppers.com` (title: *"St. Edward's University Athletics"*).
+
+**A cross-check worth recording: every corrected URL already existed, correct, in the school object.** `stedwards.url`, `setonhall.url`, `virginia.url` and `ncstate.url` each already held exactly the address independent research arrived at, and `DOMAINS`/`SITE_URLS` were correct too. The two dead hosts appeared **nowhere else in the repo** — `grep` for `sehawks`/`shupiratesl` hit only these two `coaches.json` lines. That is the v44.33 diagnosis confirmed from the other direction: `coaches.json.url` was the one stored-link field no sweep had ever covered, so it alone drifted while every swept field stayed right.
+
+**Result: a full re-sweep of all 111 coach entries returns 108 × HTTP 200, 0 × 404, 0 × NXDOMAIN.** The remaining 3 have no `url` at all (`tyler_jc`, `indian_hills`, `murray_state_ok`) — a data gap, not breakage, and unchanged here.
+
+**Scope note — no UI change, and none was possible.** `coaches.json.url` has **no consumer in any renderer** (verified by enumerating every field read off a coach object in js/app.js: `name`, `contact`, `rank`, `overallScore`, `yearsHC`, `licence`, `mlsPlayers`, `strengths`, `scholarships`, `rankClass`, `otherSchools` — no `url`). It is stored reference data. So this commit fixes correctness of the data, not anything on screen, and the browser check below is a regression smoke test rather than a visual confirmation.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0**. `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings. `python -m json.tool data/coaches.json`. CRLF preserved (5407 CRLF, 0 bare LF). Browser: all 11 tabs render, `coachData` loads 111 entries, all four corrected coaches resolve via `getCoach()`, zero console errors.
+
+**Found while verifying, NOT changed — two coach-contact discrepancies (Change Type 2 territory).** St. Edward's live staff page lists **`briany@stedwards.edu` / 512-448-8507**; the guide stores `byoung@stedwards.edu` / 512-448-8415 — *both* fields differ, so outreach mail may be bouncing today. Seton Hall's live page lists **(973) 275-6429** where the guide stores an empty phone. Logged in §6 rather than applied: a contact change is Change Type 2, and this commit was scoped to URLs.
+
+---
+
 ### v44.33 (August 2026) — `rosterUrl()`'s override map deleted (all 4 entries were no-ops or dead) + OCU coach URL fixed
 
 **Found by the 2026-27 availability survey**, not by a bug report: OCU's roster probe returned **HTTP 404** while every other school resolved.

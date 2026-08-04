@@ -6,6 +6,37 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.32 (August 2026) — `mf_total_2025` → `mf_total` + `roster_season` (2026-27 roster refresh campaign, Session 0)
+
+**Why this had to land before any roster work.** The 2026-27 refresh campaign writes this field for all 111 schools. Renaming it afterwards would mean migrating every record twice, so it is the campaign's Session 0 blocker (the other two — Wake Forest's `lensScores.value` and Notre Dame's `url` — cleared in v44.30/v44.31).
+
+**The bug it fixes was already live, not hypothetical.** `minutesOutlook.mf_total_2025` carried a season in its *key name*, while the value is simply "midfielders on whichever roster was last scraped." Murray State (added v44.29) was researched off its **2026-27** roster, so its Minutes Outlook stat box read **"MFs (2025): 14"** on a 2026-27 count. The label was wrong the day it shipped, and Wave 1 would have made it wrong for ~55 more schools. Logged as a deferred item in v44.30; closed here.
+
+**The fix — the season travels with the count instead of living in the renderer.**
+
+| Before | After |
+|---|---|
+| `"mf_total_2025": 14` | `"mf_total": 14`<br>`"roster_season": "2026-27"` |
+| label hardcoded `MFs (2025)` in two renderers | label derived per school from `roster_season` |
+
+104 schools migrated (every `minutesOutlook.available: true` school — 103 as of v44.24 plus Murray State). **`roster_season` was not guessed.** 103 → `2025-26`, sourced from what the data already asserts: CLAUDE.md §5 documented the field as the 2025 count and `MO-KEYS` has enforced that key name repo-wide since v40.2, plus per-school confirmation where it exists (`smc`: *"Stored 2025-26 roster"*; `tulsa`: *"the live 2025 roster … 2026 roster remains unpublished"*). 1 → `2026-27` (`murray_state_ok`, whose own note reads *"On the 2026-27 roster, 17 of 23 players are listed Fr."*).
+
+**Migration method.** Line-level edit preserving CRLF, indentation and key order, with `roster_season` inserted directly after `mf_total` — a `json.load`/`json.dump` round-trip would have reformatted all nine data files, buried the real diff and risked re-encoding the mojibake already present in the data. Diff is exactly 104 lines replaced by 208.
+
+**Two renderers, both updated** — `js/app.js:1381` (school modal, ⏱ Minutes tab) and `js/app.js:3304` (Minutes Outlook tab card). Both fall back to a season-neutral `"Midfielders"` if `roster_season` is ever absent, rather than printing `MFs (undefined)`.
+
+**Validator.** `MO_KEYS_AVAILABLE` and `MO_REQUIRED` updated; `roster_season` is now **required** on every `available:true` school, plus a new format check pinning it to the academic-year form `YYYY-YY`. That format check is not pedantry — campaign trap 2 is that athletics sites label fall 2026 as `"2026"` at calendar-year schools and `"2026-27"` at academic-year ones, and this string renders verbatim, so an unnormalised scrape would put "MFs (2026)" next to "MFs (2026-27)" on the same tab. **Both new checks were negative-tested** (bad format → 1 issue; key removed → 1 issue) before being trusted, then the file was restored.
+
+**No scoring cascade.** `scores.js`'s `minutesOutlookScore()` reads only `trajectory[].pct` — it has never read `mf_total`. No `fitOlivier`, no `lensScores`, no coach re-rank.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0** (111 schools, 111 coaches). `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings (unchanged). `python -m json.tool` on all 14 data files, `node --check` on both edited JS files.
+
+**Browser-verified, not inferred.** All **104** Minutes Outlook cards expanded and swept: 103 × `MFs (2025-26)`, 1 × `MFs (2026-27)`, zero fallbacks, zero `undefined`. Modal path checked independently (it is a different function): Murray State `MFs (2026-27) 14`, FIU `MFs (2025-26) 9`. All 11 tabs render, zero console errors.
+
+**What this gives the campaign for free.** `roster_season` doubles as a refresh ledger — after each wave, the Minutes Outlook tab shows at a glance which schools are on 2026-27 data and which are still on 2025-26, without cross-referencing a scratch file.
+
+---
+
 ### v44.31 (August 2026) — Notre Dame's dead `url` fixed, plus two more dead hosts found by a full 333-URL sweep
 
 **The reported bug.** `notredame.url` was `https://fightingirish.com/sports/mens-soccer` → **HTTP 404**. Notre Dame uses the `/sports/msoc` path convention. The same dead string was also stored on the coach entry in `data/coaches.json`, so both were corrected.

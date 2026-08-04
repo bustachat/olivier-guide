@@ -1363,6 +1363,9 @@ function buildMinutesModalTab(u){
 
   const clearedNames = (mo.cleared_names||[]).join(', ');
   const blockerNames = (mo.rising_junior_2027_names||[]).join(', ');
+  // The MF count is only meaningful alongside the roster season it was taken from — some
+  // schools are on 2026-27, the rest still on 2025-26. Season-neutral fallback if absent.
+  const mfLabel = mo.roster_season ? `MFs (${mo.roster_season})` : 'Midfielders';
 
   return `
     <div class="detail-block" style="margin-bottom:1rem">
@@ -1378,8 +1381,8 @@ function buildMinutesModalTab(u){
       <div class="mo-trajectory" style="margin-bottom:1rem">${trajHtml}</div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:.75rem">
         <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
-          <div style="font-size:1.3rem;font-weight:800;color:var(--text)">${mo.mf_total_2025 ?? '—'}</div>
-          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">MFs 2025</div>
+          <div style="font-size:1.3rem;font-weight:800;color:var(--text)">${mo.mf_total ?? '—'}</div>
+          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">${mfLabel}</div>
         </div>
         <div style="background:var(--emerald3);border-radius:8px;padding:7px;text-align:center;border:1px solid #a7f3d0">
           <div style="font-size:1.3rem;font-weight:800;color:var(--emerald)">${cleared}</div>
@@ -3301,7 +3304,7 @@ function buildMinutesHtml(cardsOnly){
       cardsHtml +=
           '</div>'+
           '<div class="mo-stats">'+
-            '<div class="mo-stat"><div class="mo-stat-num">'+(mo.mf_total_2025 ?? '—')+'</div><div class="mo-stat-lbl">MFs (2025)</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num">'+(mo.mf_total ?? '—')+'</div><div class="mo-stat-lbl">'+(mo.roster_season ? 'MFs ('+mo.roster_season+')' : 'Midfielders')+'</div></div>'+
             '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--emerald)">'+(mo.cleared_before_2027 ?? '—')+'</div><div class="mo-stat-lbl">Cleared by 2027</div></div>'+
             '<div class="mo-stat"><div class="mo-stat-num">'+(mo.rising_senior_2027_count ?? '—')+'</div><div class="mo-stat-lbl">2027 Seniors</div></div>'+
             '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div><div class="mo-stat-lbl">2027 Juniors</div></div>'+

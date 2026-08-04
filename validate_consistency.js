@@ -90,12 +90,21 @@ schools.filter(s => s.fin && s.fin.costNum > 0).forEach(s => {
 // "year", 19 schools) and the v40.1 bug ("mf_total_2026" instead of "mf_total_2025", 7 schools;
 // missing rising_senior_2027_count, 2 schools) were schema-adjacent key names that every other
 // check accepted — they render as the literal text "undefined" in the Minutes Outlook UI.
-const MO_KEYS_AVAILABLE = new Set(['available', 'mf_total_2025', 'cleared_before_2027', 'cleared_names',
+// v44.32: `mf_total_2025` → `mf_total` + `roster_season`. The year in the old key name was a
+// standing lie waiting to happen — the count is whatever season was last scraped, and Murray
+// State was already on 2026-27 while the UI label still read "MFs (2025)". The season now
+// travels WITH the count instead of being hardcoded in the renderer, so the 2026-27 roster
+// refresh updates both together and no future August needs another rename.
+const MO_KEYS_AVAILABLE = new Set(['available', 'mf_total', 'roster_season', 'cleared_before_2027', 'cleared_names',
   'rising_senior_2027_count', 'rising_senior_2027_names', 'rising_junior_2027_count', 'rising_junior_2027_names',
   'recruit_risk', 'trajectory', 'trajectoryNote', 'recruit_pathway', 'recruit_pathway_note',
   'australianNote']); // australianNote: one-off narrative field, present in live data
 const MO_KEYS_UNAVAILABLE = new Set(['available', 'note', 'reason']);
-const MO_REQUIRED = ['mf_total_2025', 'cleared_before_2027', 'rising_senior_2027_count', 'rising_junior_2027_count', 'recruit_risk', 'trajectory'];
+const MO_REQUIRED = ['mf_total', 'roster_season', 'cleared_before_2027', 'rising_senior_2027_count', 'rising_junior_2027_count', 'recruit_risk', 'trajectory'];
+// Always the academic-year form ("2026-27"), never the calendar-year form some athletics sites
+// use ("2026") — the stored value is a label rendered verbatim in the Minutes Outlook stat box,
+// so a mixed format shows as "MFs (2026)" next to "MFs (2026-27)" on the same tab.
+const ROSTER_SEASON_RE = /^\d{4}-\d{2}$/;
 const TRAJ_KEYS = ['year', 'yr_label', 'pct', 'label'];
 // recruit_pathway enum (added v34, schema: CLAUDE.md §5). Feeds the Pathways tab's
 // recruit-pathway summary (added v44.26, js/app.js renderRecruitPathwaySummary()) —
@@ -112,6 +121,7 @@ schools.filter(s => s.profileDepth === 'full').forEach(s => {
     if (!Array.isArray(mo.trajectory) || !mo.trajectory.length) note('MO', `${s.id} available:true but no trajectory`);
     if (mo.recruit_risk && !['Low', 'Medium', 'High'].includes(mo.recruit_risk)) note('MO', `${s.id} recruit_risk='${mo.recruit_risk}' — renderers only understand Low|Medium|High; this displays as green 'Open'`);
     if (mo.recruit_pathway && !RECRUIT_PATHWAY_VALUES.includes(mo.recruit_pathway)) note('MO', `${s.id} recruit_pathway='${mo.recruit_pathway}' — must be exactly one of ${RECRUIT_PATHWAY_VALUES.join(' | ')}; an off-enum value silently vanishes from the Pathways tab summary instead of erroring`);
+    if (mo.roster_season !== undefined && !ROSTER_SEASON_RE.test(mo.roster_season)) note('MO', `${s.id} roster_season='${mo.roster_season}' — must be the academic-year form YYYY-YY (e.g. "2026-27"); this string renders verbatim as the Minutes Outlook stat label`);
     Object.keys(mo).filter(k => !MO_KEYS_AVAILABLE.has(k)).forEach(k =>
       note('MO-KEYS', `${s.id} unknown minutesOutlook key '${k}' — misnamed keys render as literal 'undefined' (schema: CLAUDE.md §5)`));
     MO_REQUIRED.filter(k => mo[k] === undefined && !MO_MISSING_OK.has(s.id + ':' + k)).forEach(k =>

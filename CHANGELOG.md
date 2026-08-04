@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.30 (August 2026) — Wake Forest value-lens drift fixed + a VALUE check so it can't recur silently (Change Type 4 + 11)
+
+**The bug.** `wakeforest.lensScores.value` was stored as **50**; the formula (`fitOlivier×0.6 + affordability×40`, CLAUDE.md §7 Phase 1J) yields **29**. Wake Forest's `costNum` is $91,000 against a budget of ~$51.6–52k, so `costRatio` caps at 1.0 and affordability floors at **0** — meaning its value lens should equal `0.6 × fitOlivier` exactly, with no affordability credit at all. Corrected to 29.
+
+**Why it mattered — this was not cosmetic.** The Value-First lens exists to surface affordability. At the stored 50, Wake Forest ranked **30th of 111** on that lens while **71 schools that are genuinely cheaper ranked below it** — the 6th most expensive school in the guide sitting mid-table on the one lens whose entire job is flagging cost. It now ranks 81st. Verified in-browser: the lens-aware Best Fit sort places it correctly in the ACC section (29, between NC State 34 and Virginia 27); at 50 it had been sorting to the top of the conference.
+
+**New `VALUE` check in `validate_consistency.js`.** The root cause is structural, not a typo. `fitOlivier` is recomputed by `scores.js` on every page load (`recalculateAllScores()` in `initApp()`), so drift there surfaces immediately and the validator's FIT check catches it. **`lensScores.value` is stored-only — no runtime code recomputes it.** It is written by hand during the §3a Type 4 and Type 12 cascades and thereafter only read (Value-First lens sort, Dashboard lens panel). That made it the one derived school score that could drift silently and indefinitely, with nothing but eyeballing between a missed cascade step and a wrong ranking. The check mirrors the FIT check's structure and its `>1` tolerance, which also absorbs the two defensible readings of the budget (`budgetUSD` 52000 vs `budgetAUD/fxRate` = 51612.90 — across all 111 schools those differ by at most 1 point, on Temple). Proven to fire: reverting Wake Forest to 50 produces `[VALUE] wakeforest (acc): stored 50, formula 29`, and restoring 29 returns Issues to 0.
+
+**Two more outliers found, deliberately NOT changed — Army and Navy.** The same sweep flagged `navy` (stored 47, formula 66) and `army` (stored 45, formula 65). These are the §4 service academies, whose `fin{}` numerics are **all zeroed by rule** — which saturates affordability at 1.0 and hands them the full +40. Their stored values (both ≈ `fit+3`) deliberately decline that credit, because the "free" tuition is paid for with a 5-year military service commitment: a real cost the dollar figure cannot express, and §4 is explicit that these schools are incompatible with Olivier's DPT/MLS pathway. Applying the formula would have promoted them to roughly 6th and 8th on the Value lens. That is an owner design question, not drift, so the check **exempts `costNum === 0`** rather than reporting two intentional values as errors — and the question is logged in CLAUDE.md §6 deferred items. Scope discipline per §7 Phase 1: found while researching, not fixed in the same session.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0** (unchanged from baseline). `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings (unchanged). `node --check validate_consistency.js`, `python -m json.tool` on both edited JSONs. Browser: zero console errors, 111 schools loaded, Value lens + lens-aware sort + Dashboard lens panel all exercised.
+
+**Also noted, not fixed:** `README.md`'s header still reads "Version 40.11" and "110 universities", and its version table has no rows for v41–v44 — pre-existing drift across four versions. Header and count corrected this session; the missing v41–v43 era rows are logged as deferred rather than back-filled with summaries of work this session didn't do.
+
+---
+
 ### v44.29 (August 2026) — Added Murray State College (OK) as a full-profile JUCO (Change Type 1 + 14)
 
 New school: **Murray State College (Aggies)**, Tishomingo, Oklahoma — NJCAA Division I, Region II. `murray_state_ok`, 111th school in the guide and the 30th JUCO. Owner-approved as a full profile (not listed) on the strength of the program and the recruiting pathway.

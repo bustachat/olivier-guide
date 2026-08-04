@@ -1,8 +1,8 @@
 # Olivier — US College Soccer & Exercise Science Scholarship Guide
 
-**Version 40.11** | Multi Skilled Contractors × Sydney, AUS
+**Version 44.30** | Multi Skilled Contractors × Sydney, AUS
 
-A personalised scholarship research tool covering 110 US universities and colleges across 17 conference sections — financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, culture guides, 6-lens dynamic ranking, 2027-entry Minutes Outlook analysis, and a live Dashboard with interactive USA school map.
+A personalised scholarship research tool covering 111 US universities and colleges across 17 conference sections — financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, culture guides, 6-lens dynamic ranking, 2027-entry Minutes Outlook analysis, and a live Dashboard with interactive USA school map.
 
 **Live URL:** https://bustachat.github.io/olivier-guide
 
@@ -52,7 +52,8 @@ Full per-version detail lives in **CHANGELOG.md** (this table went unmaintained 
 
 | Version | Status | Key Changes |
 |-|-|-|
-| **v40** | ✅ Current (July 2026) | v39-aftermath cleanup: 9 schools' "undefined" Minutes Outlook stats fixed, MO-KEYS key-name validator check added, docs reconciled with git, all 110 map dots on-land for the first time, Northeast CC Elite JUCO pipeline fix, Keiser location corrected to West Palm Beach, full 17-school social media + coach contact verification pass (12 coach contacts Tier-1 confirmed). |
+| **v41–v44** | ✅ Current (July–August 2026) | Housing and funding penalties added to the Fit Score (§5c), the §5a devScore and §5d coach-score rubrics written and re-baselined across all schools/coaches, `nextLevelOutput` replacing `mlsPicks5yr` for JUCOs (§5b), the confRecord accuracy campaign, coach data consolidated into `coaches.json` as the sole source, the `recruit_pathway` pass, and Murray State College added as the 111th school. **This table has no per-version rows for this era — see CHANGELOG.md for full detail.** |
+| **v40** | Superseded (July 2026) | v39-aftermath cleanup: 9 schools' "undefined" Minutes Outlook stats fixed, MO-KEYS key-name validator check added, docs reconciled with git, all 110 map dots on-land for the first time, Northeast CC Elite JUCO pipeline fix, Keiser location corrected to West Palm Beach, full 17-school social media + coach contact verification pass (12 coach contacts Tier-1 confirmed). |
 | **v39** | Superseded (July 2026) | JUCO region sub-sections in Explore + 17 new JUCO schools (93 → 110) across NJCAA Regions 1/6/11/14/15. Standings/roster remediation. See v39_session_failures_summary.md for the process incident log. |
 | **v38** | Superseded (July 2026) | Standings & Titles accuracy pass (Cal State LA 2021 D2 National Champions and Charleston WV 2024 runner-up found mislabeled) + housing research for all 81 non-JUCO schools. |
 | **v37** | Superseded (July 2026) | Fit Score redesigned to Soccer Priority only (GPA/Cost/ACU removed — they have dedicated views). JUCO tiering (Elite badge), NJCAA region tags, housing indicators, Pro Pipeline JUCO representation. `cache: 'no-store'` on all data fetches. |

@@ -7484,5 +7484,259 @@
     "acRank": "NJCAA Level",
     "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
     "devScoresNote": "Live staff directory: HC + one assistant (2). On-campus field, shared Cavaliers strength facility, video; standard AT."
+  },
+  {
+    "id": "murray_state_ok",
+    "name": "Murray State (OK)",
+    "full": "Murray State College (Aggies)",
+    "loc": "Tishomingo, OK",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region II",
+    "confKey": "other",
+    "domain": "mscaggies.com",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "color": [
+      "#dbeafe",
+      "#083579"
+    ],
+    "degreeTitle": "A.S. Health, Wellness & Human Performance (Athletic Training option)",
+    "acuAlign": 6,
+    "acuAlignNote": "Murray State's Associate of Science in Health, Wellness & Human Performance is a genuine 2-year exercise-science transfer degree rather than a generic transfer A.A. Mapped against the college's own 2025-26 degree check sheet: AP 1113 Applied Anatomy covers ANAT100; BIO 1114 General Biology covers BIOL125; HWP 2963 Introduction to Kinesiology covers EXSC224 (mechanical bases of movement); HWP 1011 Strength and Conditioning covers EXSC216; and PSY 2213 Wellness, Exercise, and Sports Psychology covers both EXSC199 and EXSC296. The gap that matters most for Olivier: the degree contains no exercise-physiology course at all, so EXSC225 and EXSC322 — two of the four units WES is most likely to credit directly — are NOT covered here, and neither is research methods (EXSC122). The program core does add HWP 2713 Care and Prevention of Athletic Injuries and HWP 2213 First Aid, both useful pre-PT context. An Athletic Training Option of the same degree swaps in HWP 2972 Athletic Training Practicum, which would add supervised clinical hours in the EXSC398 mould — worth raising with the program chair if pre-PT is the goal. Confirm all equivalences with an MSC advisor and a formal WES evaluation before transfer planning.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region II champions 2024 & 2025, National Tournament both years",
+    "cost": "~$18.5k/yr",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "fin": {
+      "costNum": 18508,
+      "tuition": 9306,
+      "roomBoard": 8032,
+      "fees": 1170,
+      "maxAthletic": 0.6,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "One of the cheapest full profiles in the guide, priced from the college's own 2026-27 campus tuition schedule: non-resident tuition and fees are $5,238 per semester at 15 credit hours ($10,476/yr), and on-campus room ($1,920) plus the 15-meal plan ($2,096) is $4,016 per semester ($8,032/yr) — about $18.5k/yr all-in before any aid. As NJCAA Division I, Murray State faces no structural cap on athletic scholarships; the college's 2025 federal EADA filing reports $451,392 of men's athletic aid spread across 132 male athletes, so full rides are not the norm. Budget for a partial package of roughly 40-60% and around $8-11k/yr out of pocket. Two-year total before aid: approximately $37k."
+    },
+    "size": 2949,
+    "prePT": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No published minimum — open admission (Oklahoma public 2-year)",
+      "minSchol": "2.0+ to hold NJCAA athletic eligibility",
+      "note": "Murray State publishes no GPA cut-off for admission; the application asks only for transcripts, medical records and ACT/SAT scores. The degree check sheet sets a 2.0 minimum GPA to graduate. Olivier's 2.8 clears both comfortably. International admissions are handled by the Registrar (registrar@mscok.edu).",
+      "status": "eligible"
+    },
+    "devScores": {
+      "tactical": 50,
+      "technical": 46,
+      "fitness": 42
+    },
+    "devScoresNote": "Live staff directory (Aug 2026): Chris Spear is head coach of BOTH the men's and women's programs, with a single assistant (Grace Houchin) also shared across both — there is no soccer-only full-time coach and no position-specific coaching. No strength & conditioning coach appears anywhere in the athletics staff directory; the department lists two athletic trainers (Rhonda Wood, Kimberly Smith) covering roughly 230 athletes across 13+ sports. The facilities section names an unbranded 'Soccer Field (Men's and Women's Soccer)' with no capacity, surface or description published, alongside a shared Beames Fieldhouse and Performance Center. No video-analysis or GPS/wearable provision is documented anywhere on the site. Scored on training environment only — the 2024 and 2025 National Tournament runs are results and live in titles[]/confRecord[].",
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 45,
+      "academic": 47,
+      "minutes": 68,
+      "lifestyle": 50,
+      "value": 62
+    },
+    "tags": [
+      "juco",
+      "transfer",
+      "warm",
+      "oklahoma"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "The most freshman-open pathway in the guide's JUCO set: 17 of the 23 players on the 2026-27 roster are true freshmen and every single one entered from a high school or secondary school — not one JUCO or 4-year transfer on the sheet. That intake includes an Australian, Zachary Britton of North Manly, Sydney. On the pitch it is a genuinely strong NJCAA Division I program: Region II champions in 2024 and 2025 and National Tournament qualifiers both years, with district titles in 2023, 2024 and 2025. At ~$18.5k/yr before aid it is also among the cheapest full profiles here. The trade-offs are real — Tishomingo is a remote rural town of about 3,000, the head coach splits his time across the men's and women's programs, there is no strength & conditioning coach on staff, and the degree covers no exercise physiology.",
+    "url": "https://mscaggies.com/sports/mens-soccer",
+    "mapX": 322,
+    "mapY": 238,
+    "profileDepth": "full",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total_2025": 14,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Mateus Valsecchi Ribeiro (So·D/M)",
+        "Jost Remic (So·M/D)",
+        "James Owen (So·M)",
+        "Pedro Massei (So·M/F)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "recruit_risk": "Medium",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "The clearest freshman-entry signal of any school in the guide. On the 2026-27 roster, 17 of 23 players are listed Fr., and the 'previous school' column is 100% high schools and secondary schools — Lycee Les 7 Mares, Colegio Sao Jose, Fatima College, Gimnazija Kranj and so on — with zero JUCO or 4-year transfers. That is a change from 2025-26, which did carry transfers in from Indian Hills, Iowa Western, Monroe College and Salt Lake CC. The intake is overwhelmingly international (Brazil, France, Japan, Portugal, Trinidad, Morocco, Korea, Colombia, Slovenia) and includes an Australian true freshman, Zachary Britton, from North Manly in Sydney via Freshwater Senior Campus — a direct precedent for Olivier's exact profile.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 62,
+          "label": "Compete for starts — near-total annual roster reset"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 78,
+          "label": "Key midfielder — D1 transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "Counts are taken from the 2026-27 roster, the newest Murray State has published. Of 14 midfield-capable players on it, 4 are sophomores who clear before Olivier arrives in August 2027; the other 10 are freshmen who would in principle return as sophomores. In practice Murray State turns its roster over almost completely each year — only 4 of roughly 24 freshmen from the 2025-26 squad reappear on the 2026-27 sheet, a retention rate near 17% — so the realistic competition in 2027 is a handful of returners plus whatever class Spear recruits. Entry is genuinely open, but this is a National-Tournament program, so the incoming class will be competitive. Key question for the coach: 'How many central midfielders are in your 2027 recruiting class, and how many of this year's freshmen do you expect back?'"
+    },
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing available and plainly signposted — four options (Aggie Flatts, Aggie Suites, McKee Hall, Patton Hall) run by a Director of Resident Life, Kevin Morgan. Room plus the mandatory 15-meal plan is $4,016 per semester on the 2026-27 schedule. IPEDS confirms campus housing. No indication of a waitlist or first-come-first-served restriction."
+      },
+      "stadium": "'Soccer Field' — an unnamed, uncapacitied on-campus pitch shared by the men's and women's programs. The athletics site publishes a photo gallery for it and no written detail at all: no capacity, no surface, no lighting information.",
+      "trainingFields": "The same shared soccer field serves as the training ground. Southern Oklahoma's mild winters allow year-round outdoor work, though the region does get occasional ice storms.",
+      "strengthConditioning": "Beames Fieldhouse and a Performance Center are listed among the athletics facilities, but no strength & conditioning coach appears anywhere in the staff directory — weight-room access without dedicated programming staff.",
+      "sportsScience": "None documented. No sports scientist, no video-analysis staff, and no GPS or wearable provision is mentioned anywhere on the athletics site.",
+      "sportsMed": "Two athletic trainers department-wide — Rhonda Wood (Head) and Kimberly Smith (Assistant) — covering approximately 230 athletes across 13+ varsity programs.",
+      "academicLabs": "Health Science school facilities support the Health, Wellness & Human Performance degree and the college's Physical Therapist Assistant and Occupational Therapy Assistant programs — meaning real allied-health teaching space is on campus, unusual for a college of this size.",
+      "extras": "Tishomingo is a town of roughly 3,000 in southern Oklahoma; IPEDS classifies the campus as 'Rural: Remote'. Dallas-Fort Worth is about a two-hour drive south, which is the nearest major airport and the nearest MLS football. The college also runs an Ardmore campus about 40 minutes west.",
+      "note": "Facilities are the weakest part of this profile and the honest reason the dev scores sit where they do: an unnamed shared pitch, no S&C coach, no sports science. The value here is the pathway and the price, not the building."
+    },
+    "culture": {
+      "vibe": "A small rural community college of about 2,900 students where athletics is a large part of campus identity — 230 varsity athletes across 13+ sports, including rodeo, livestock judging and shooting sports alongside the traditional programs. The men's soccer squad is almost entirely international, which makes it an unusually cosmopolitan group inside a very small-town Oklahoma setting.",
+      "thingsToDo": "Tishomingo sits on the Washita and Blue rivers near Lake Texoma, so the outdoor draw is fishing, boating and hiking; the Chickasaw National Recreation Area is nearby. The town itself is tiny — a main street, not a nightlife scene. Dallas-Fort Worth is roughly two hours south for city trips, concerts and MLS matches, and the college's Ardmore campus town is 40 minutes west.",
+      "socialScene": "Team-centred by necessity. With a squad drawn from Brazil, France, Japan, Portugal, Trinidad, Morocco and beyond, the international players largely form their own social unit, and campus housing keeps everyone together. For a player who wants to focus for two years and then move up, the lack of distraction is arguably a feature.",
+      "olivierMatch": "★★★ A strong sporting and financial match held back by location. The freshman-entry pathway is the most proven in the guide — an Australian from Sydney's northern beaches is on the current roster — the climate is mild, and the cost is among the lowest anywhere here. But Tishomingo is genuinely remote and small, with no city life, and the training environment lacks the S&C and sports-science support Olivier would get at a larger program. Best read as a two-year springboard, not a destination.",
+      "lifestyleTags": "Warm, rural, international squad, very affordable, transfer pathway"
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "1st",
+        "note": "9-1-2 conference, 12-4-3 overall. Region II regular-season champions and Mid-South District champions — reached the NJCAA DI National Tournament, losing the opener to the No. 3 seed."
+      },
+      {
+        "yr": 2024,
+        "pos": "1st",
+        "note": "11-1-1 conference, 17-2-2 overall per Region II (the college's own schedule page records 18-2-1). Region II and Mid-West District champions — NJCAA DI National Tournament qualifiers."
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd",
+        "note": "7-4-1 conference, 14-5-1 overall. District title year per the program's own honours list."
+      },
+      {
+        "yr": 2022,
+        "pos": "5th",
+        "note": "5-5 conference, 6-6 overall — the last season before the program's rise."
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd",
+        "note": "8-2-1 conference, 9-2-2 overall, behind Northern Oklahoma College-Tonkawa."
+      },
+      {
+        "yr": 2020,
+        "pos": "3rd",
+        "note": "7-3 conference, 8-4 overall in the COVID-affected season, played on a shortened schedule."
+      }
+    ],
+    "titles": [
+      "NJCAA DI National Tournament qualifiers 2024 and 2025 (back-to-back)",
+      "Region II champions 2024 and 2025; district champions 2023, 2024 and 2025",
+      "2025 NJCAA All-American — Dariel Contrera"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "draftRank": "JUCO level — the D1 transfer pathway is the metric that matters, not the MLS draft",
+      "notable": [
+        "Dariel Contrera — 2025 NJCAA All-American",
+        "Back-to-back NJCAA DI National Tournament appearances (2024, 2025)"
+      ],
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Murray State publishes no alumni, 'next level' or signings page — the men's soccer section carries only a news archive. Verified by enumerating every link on the men's soccer landing page: no next-level/alumni/transfer destination page exists. Neutral, NOT measured."
+      }
+    },
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "Back-to-back NJCAA DI National Tournament qualifiers (2024, 2025); Region II champions 2024 and 2025; Mid-South District champions 2025; 2025 NJCAA All-American Dariel Contrera",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma / western Arkansas",
+    "acRank": "NJCAA Level",
+    "kinRank": "Associate degree — transfer prerequisite pathway"
   }
 ]

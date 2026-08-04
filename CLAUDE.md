@@ -56,7 +56,7 @@ For data work, read the specific conference file:
 | Ivy League | `data/ivy.json` | Princeton, Yale (2) |
 | D2, NAIA, D3 | `data/d2.json` | Nova SE, Barry, Lynn, PBA, Cal State LA, St. Edward's, Georgian Court, U of Charleston, Columbia College, Oklahoma City, Keiser, Chapman (12) |
 
-### School → File Reference Table (110 schools)
+### School → File Reference Table (111 schools)
 
 **Maintenance rule: update this table whenever a school is added, removed, or changes conference file.**
 This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (commit checklist).
@@ -107,6 +107,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Keiser | `data/d2.json` | `keiser` | NAIA | Sun Conference |
 | Louisville | `data/acc.json` | `louisville` | D1 | ACC |
 | LSU Eunice | `data/juco.json` | `lsu_eunice` | JUCO | NJCAA DI / Region 14 |
+| Murray State (OK) | `data/juco.json` | `murray_state_ok` | JUCO | NJCAA DI / Region II |
 | Lynn | `data/d2.json` | `lynn` | D2 | SSC |
 | Marquette | `data/big-east.json` | `marquette` | D1 | Big East |
 | Maryland | `data/big-ten.json` | `maryland` | D1 | Big Ten |

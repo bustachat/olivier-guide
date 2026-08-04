@@ -818,14 +818,15 @@ function removeCompare(id){
 
 // ═══ Roster URL helper ═══════════════════════════════════════════════════════
 function rosterUrl(u){
-  // A few schools need custom roster paths
-  const overrides = {
-    lynn:       'https://lynnfightingknights.com/sports/mens-soccer/roster',
-    csula:      'https://lagoldeneagles.com/sports/mens-soccer/roster',
-    keiser:     'https://kuseahawks.com/sports/mens-soccer/roster',
-    ocu:        'https://okcu.edu/athletics/soccer/roster',
-  };
-  if(overrides[u.id]) return overrides[u.id];
+  // v44.33: the per-school `overrides` map was REMOVED after auditing all four entries.
+  // Three (lynn, csula, keiser) were byte-identical to what the rule below already
+  // derives — pure no-ops. The fourth (ocu) was the only one that changed anything,
+  // and it was dead: 'https://okcu.edu/athletics/soccer/roster' returned HTTP 404
+  // (the generic university page), while the school object's own url already pointed
+  // at the live ocusports.com. Same resolution as the Miami Dade override in v42.13 —
+  // delete it and let the rule work. Do not re-add per-school roster URLs here: a
+  // hardcoded override silently masks the school object's url and cannot be seen by
+  // either validator or by the §15 URL sweep, which checks url/SITE_URLS/DOMAINS only.
   const base = (u.url || '').replace(/\/$/, '');
   if(!base) return '#';
   // v42.5: 17 JUCOs store their program page as .../sports/msoc/index (Sidearm).

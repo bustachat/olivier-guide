@@ -6,6 +6,35 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.33 (August 2026) — `rosterUrl()`'s override map deleted (all 4 entries were no-ops or dead) + OCU coach URL fixed
+
+**Found by the 2026-27 availability survey**, not by a bug report: OCU's roster probe returned **HTTP 404** while every other school resolved.
+
+**All four overrides audited. Not one of them was doing useful work.**
+
+| id | override | what the rule derives without it | verdict |
+|---|---|---|---|
+| `lynn` | `lynnfightingknights.com/sports/mens-soccer/roster` | *identical string* | no-op |
+| `csula` | `lagoldeneagles.com/sports/mens-soccer/roster` | *identical string* | no-op |
+| `keiser` | `kuseahawks.com/sports/mens-soccer/roster` | *identical string* | no-op |
+| `ocu` | `okcu.edu/athletics/soccer/roster` → **404** | `www.ocusports.com/sports/mens-soccer/roster` → **200** | **dead** |
+
+Three were byte-identical to what `rosterUrl()`'s own rule already produces, and the only one that changed anything was pointing at a dead address. So the entire `overrides` map and its lookup were **removed** rather than patched — same resolution as the Miami Dade override in v42.13. OCU's school object already stored the correct `www.ocusports.com/sports/mens-soccer`, so deleting the override is the whole fix.
+
+**Why this hid for so long, and the lesson worth keeping.** A hardcoded override **silently masks the school object's `url`**, and neither validator can see it. v44.31's 333-link sweep checked `url` + `SITE_URLS` + `DOMAINS` — it never touched the four `rosterUrl()` overrides, so OCU's dead link sat behind a correct-looking school record. The new comment in `rosterUrl()` says not to re-add per-school roster URLs for exactly this reason.
+
+**Second defect, same school.** `data/coaches.json`'s OCU entry stored `https://okcu.edu/athletics/soccer` — also **404**. Corrected to Billy Martin's live bio page, `https://www.ocusports.com/sports/mens-soccer/roster/coaches/billy-martin/1173`, Tier-1 verified in-browser (page title: *"Billy Martin - Head men's and women's soccer coach"*). The legacy entry id `finnegan` was left alone (known, documented in v43.10).
+
+**A third gap this exposed — logged in §6, NOT fixed here.** Sweeping all 108 `coaches.json` URLs found **5 broken**: `ocu` (fixed here), plus `virginia` 404, `ncstate` 404, `stedwards` NXDOMAIN, and **`setonhall` still carrying the exact `shupiratesl.com` typo v44.31 fixed in `DOMAINS` but never mirrored here**. Verified candidate corrections are recorded in §6 for three of them; St. Edward's needs real research. Out of scope for a fix that was meant to be one override line.
+
+**No scoring impact.** `rosterUrl()` and `coaches.json.url` are not read by `scores.js`.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0**. `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings. `node --check js/app.js`, `python -m json.tool data/coaches.json`. CRLF preserved in coaches.json (5407 CRLF, 0 bare LF).
+
+**Browser-verified.** `rosterUrl()` output re-checked for all four ex-override schools plus regression cases: OCU now `www.ocusports.com/.../roster`; lynn/csula/keiser **unchanged**, byte-identical to before; the v42.5 JUCO `/index` fallback still returns the program page (`tyler_jc`, `miami_dade`) rather than a 404ing `/index/roster`. All seven derived URLs return **200**. Rendered "📋 Roster →" hrefs confirmed on both the Minutes Outlook card and the school modal. Zero console errors.
+
+---
+
 ### v44.32 (August 2026) — `mf_total_2025` → `mf_total` + `roster_season` (2026-27 roster refresh campaign, Session 0)
 
 **Why this had to land before any roster work.** The 2026-27 refresh campaign writes this field for all 111 schools. Renaming it afterwards would mean migrating every record twice, so it is the campaign's Session 0 blocker (the other two — Wake Forest's `lensScores.value` and Notre Dame's `url` — cleared in v44.30/v44.31).

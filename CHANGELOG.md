@@ -31,7 +31,13 @@ Seton Hall's was **silently** broken: `DOMAINS[u.id]` feeds the modal-header log
 
 **Validation.** `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings (unchanged). `node validate_consistency.js` → **Issues: 0**, re-run after rebasing onto v44.30 so the new VALUE check was live. `node --check js/app.js`, `python -m json.tool` on all three edited JSONs. Browser: all 11 tabs render, zero console errors, both corrected modals and every `u.url` consumer confirmed pointing at a live URL.
 
-**Still open:** no validator check exists for dead `url`s. The sweep is a throwaway script, not a repo fixture — a host can die tomorrow and nothing will notice. Worth considering as a periodic manual sweep rather than a CI check, since ~15 hosts bot-block and would produce permanent false positives.
+**Deployed and verified live** (Phase 7, `bustachat.github.io/olivier-guide`): all four corrected values served, v44.31 in the title, 111 schools, Notre Dame's modal "Men's Soccer →" and Minutes Outlook "📋 Roster →" resolving to `/sports/msoc` and `/sports/msoc/roster`, Seton Hall's logo requesting the live host, 11/11 tabs rendering, zero console errors.
+
+**Found during live verification, logged NOT fixed — `tyler_jc`'s two domain fields are inverted.** Chasing why TJC's modal logo requested `tjc.edu` surfaced that there are two independent domain stores holding deliberately different values: `DOMAINS` (app.js) = **athletics** host → modal logo; the school object's `domain` = **university** host → Dashboard logo. 73 of 111 differ, and 72 of those splits are correct by design. Tyler JC alone is reversed (app.js `tjc.edu`, school `apacheathletics.com`), which is exactly the swap §7 Phase 1B warns about by name — the v-era domain fix was applied to the school object and never mirrored into `DOMAINS`. Cosmetic, both hosts resolve, no scoring impact; one-token fix logged in §6. Scope discipline per §7 Phase 1 — found while verifying, not fixed in a landed session.
+
+**Also updated for the next session:** `README.md` header v44.30 → v44.31; CLAUDE.md §1's "Current version" line, which had sat stale at **v42.18 for 13 versions** (§6's snapshot was correct throughout — §1 is now fixed and annotated as the less reliable of the two); and a new **§15 "Checking whether a stored URL is dead"** subsection recording the sweep method, since the script itself is throwaway.
+
+**Still open:** no validator check for dead `url`s — and deliberately so. ~15 hosts bot-block permanently, so a CI check would be a standing false-positive generator that trains everyone to ignore the validator. Periodic manual sweep is the right shape; the method is now in §15.
 
 ---
 

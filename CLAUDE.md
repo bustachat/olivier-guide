@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v42.18 (July 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth
+- Current version: **v44.31 (August 2026)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31 — the §6 state snapshot is the more reliable of the two)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -1215,6 +1215,8 @@ Lower-priority (code quality, still deferred — none were in v36's named scope)
 
 - **🚩 OPEN (v44.31) — `DOMAINS.gcu = 'lopes.com'` is probably wrong, but is NOT provably dead.** It resolves (216.40.34.37, a parking-adjacent range) yet times out in both a scripted client and a real browser at 300 s. `gculopes.com` is the host GCU's own school-object `url` uses and its favicon returns 200. Deliberately **not** changed — per the Monroe parked-lander lesson, a resolving host needs its *content* checked before being declared dead, and that check couldn't complete. Verify in a browser next time GCU is touched; if `lopes.com` is parked or dead, switch `DOMAINS.gcu` to `gculopes.com` (favicon only — no cascade).
 
+- **🚩 OPEN (v44.31) — `tyler_jc` is the ONE school whose two domain fields are inverted (cosmetic, favicon only).** There are two separate domain stores and they legitimately hold *different* values: **`DOMAINS` in `js/app.js` holds the ATHLETICS host** (feeds the modal-header logo, app.js:1202) and **the school object's own `domain` field holds the UNIVERSITY host** (feeds the Dashboard logo, dashboard.js:448). 73 of 111 schools differ between the two, and for 72 of them that split is correct and deliberate (`virginia`: app.js `virginiasports.com` / school `virginia.edu`). **Tyler JC is backwards** — app.js has `tjc.edu` and the school object has `apacheathletics.com` — so its modal shows the university favicon and its Dashboard entry shows the athletics one, precisely the swap §7 Phase 1B names as the mistake (*"apacheathletics.com for TJC, not tjc.edu"*). CHANGELOG shows the domain fix was applied to the school object but never mirrored into `DOMAINS`. **Nothing is broken** — both hosts resolve, no validator can see it, and there is no scoring impact. Fix is one token: `DOMAINS.tyler_jc` → `'apacheathletics.com'`. **Do not "fix" the other 72** — the split is by design.
+
 - **🚩 Monroe is leaving JUCO — but not yet; `div: "JUCO"` is CURRENTLY CORRECT (verified v42.12).** Tier-1, Monroe's own release (`monroeumustangs.com/sports/2026/5/26/monroe-university-new-rochelle-announces-pursuit-of-ncaa-division-ii-membership.aspx`): *"the transition from **NJCAA Division I** competition toward NCAA Division II membership."* Applies by **Oct 1 2026**; Provisional Yr 1 **2027-28**; Provisional Yr 2 **2028-29**; **full NCAA D2 in 2029-30**. Men's soccer already plays a 2026 "CACC scheduling alliance" schedule, and Monroe is absent from the NCAA men's soccer directory. **Do not change `div` now.** Revisit ~2027; it will cascade into `jucoTier`, `njcaaRegion`, `fundingPathway` (§5c), DIV_STRENGTH and §5b's "29 JUCOs" scope. (Angelina College's release already calls Monroe "NCAA Division II" — it is wrong, another Tier-1 page erring about a third party.)
 
 - **✅ RESOLVED — devScores re-baseline, ALL 110 schools.** `node validate_consistency.js` confirms **110/110 re-baselined, 0 legacy schools above their division ceiling**. The phased plan below (Steps 0–5) is historical detail on how it was done, kept for reference.
@@ -2016,6 +2018,24 @@ Document it in this table before finishing the session (Phase 8 End of Session P
 - **Always verify** coach name against the official staff page for the current season. Coaching changes happen in December–February; aggregators lag by months.
 - **Always check** that a men's soccer program is active before researching any other data point. (Wichita State and Hawaii were fully researched and added before being removed in v26.)
 - **For MLS picks**: the official MLS SuperDraft record is the only authoritative source. Many programs claim players who went undrafted or signed as free agents.
+
+### Checking whether a stored URL is dead (added v44.31 — the sweep method)
+
+**Only NXDOMAIN proves a host is dead.** Every other failure a scripted client reports is a false positive on these domains. Measured across all 333 stored links (111 school `url` + 111 `SITE_URLS` + 111 `DOMAINS`):
+
+| Symptom | Means | Examples seen |
+|---|---|---|
+| **NXDOMAIN** (`getaddrinfo failed`) | genuinely dead | `www.apacheathletics.com`, `shupiratesl.com` |
+| **HTTP 202, empty body** | Cloudflare challenge — alive | `jcccathletics.com`, `efsctitans.com`, `goreivers.com` |
+| **HTTP 403** | bot block — alive | `iwcc.edu`, `indianhills.edu`, `umd.edu`, `unc.edu`, `umich.edu`, `uakron.edu` |
+| **`SSLError` / `ConnectTimeout`** | client-side quirk — alive, renders fine in a browser | `rutgers.edu`, `uncc.edu`, `chapman.edu` |
+| **Resolves, but parked / hangs** | needs a CONTENT check, not a DNS check | `monroemustangs.com` (v42.13), `lopes.com` (still open, §6) |
+
+Run the sweep with a **browser User-Agent** — without one the Cloudflare hosts multiply. A 404 on a *path* (Notre Dame's `/sports/mens-soccer`) is a real dead link even though the host is alive, so check the full stored URL, not just the host.
+
+**`DOMAINS` failures are invisible and no validator can see them.** The modal logo goes through Google's favicon service, which returns a **generic globe rather than an error** for an unresolvable domain — Seton Hall's had been silently broken. To test one, compare payload size: a dead host returns ~726 B/404, a live one ~1360 B/200 at `https://www.google.com/s2/favicons?domain=HOST&sz=64`.
+
+**Do not add a CI check for this.** ~15 hosts bot-block permanently, so it would be a standing false-positive generator. Re-run the sweep manually every so often instead.
 
 ### Conflicting Tier 1 Sources
 

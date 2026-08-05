@@ -6,6 +6,49 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.46 (August 2026) — Wave 1 Session 3 of the 2026-27 roster refresh: d2, 4 schools refreshed, 2 deferred, ivy dropped from scope
+
+**Availability survey re-run first** (`python roster_survey.py d2 ivy`, now argv-driven). 8 of 14 schools flipped to 2026-27 — exactly matching the 2026-08-04 wave list, **zero churn**, unlike the 55→70 movement the previous survey saw in a single day. A stale list is still the default assumption; this time it happened not to have moved.
+
+**`ivy` is out of scope by owner ruling.** Mid-session: *"I dont care about Yale and Princeton. They are unattainable as they dont offer scholarships."* Both rosters had already been fetched and parse cleanly (princeton 15 MFs of 31, yale 10 of 27), and both remain `minutesOutlook.available:false` and untouched. **Not a removal** — `ivy.json` is unchanged and both schools stay in the guide with their `fundingPathway:"none"` −8 penalty. Recorded in memory so future campaigns skip the file. **Known and accepted consequence:** an `available:false` school scores the neutral 0.5 minutes value, so Princeton's stored fit 41 and Yale's 47 are mildly *flattering* — the same neutral that cost Stony Brook 43→34 when it was finally populated in v44.41.
+
+**Refreshed (Change Type 3, full cascade each):**
+
+| school | mf_total | clears by 2027 | opp | fit | minutes | value |
+|---|---|---|---|---|---|---|
+| `columbia_college` | 12 | 5 | 12.5 | 35→**36** | 45→48 | 40→40 |
+| `ocu` | 5 | 2 | 6.0 | 59→**50** | 50→26 | 35→30 |
+| `pba` | 10 | 7 | 14.0 | 61→**62** | 52→53 | 47→48 |
+| `stedwards` | 9 | 4 | 8.5 | 61→**54** | 52→33 | 44→40 |
+
+`ocu` and `stedwards` fall because their stored trajectories were flat, optimistic and unsupported by the current squad (OCU's stored Yr1–Yr3 were all 50); `pba` rises because **7 of its 10 midfielders clear before Olivier arrives** — the largest midfield turnover in the file, driven by a graduate-transfer roster model (12 of 28 players are listed `Gr.`).
+
+**`recruit_pathway`: 1 reclassified, 2 re-derived and confirmed, 1 retained.** `columbia_college` **Portal/JUCO-heavy → Mixed** — it publishes Hometown, High School and Previous School as three *separate* columns, so the split is directly readable rather than inferred, and only 3 of 12 midfielders (25%) are transfers. `ocu` (both MF transfers are JUCOs, and the wider squad repeats the pattern) and `pba` (6 of 10 from four-year programs, no JUCOs) confirmed. `stedwards` publishes no previous-school column at all, so its Freshman-friendly value is retained and the note marks itself lower-confidence.
+
+**No coach changed at any of the 6 schools researched** — no Change Type 2 and no re-rank.
+
+#### Two schools deferred to Wave 2 — published but not populated (instances 4 and 5)
+
+- **`keiser`** — the 2026 page renders its **full coaching staff and ZERO players**. Browser-confirmed, and control-tested in the same browser: its own 2025 page returns 34 players with positions through the identical read. The raw HTML told the same story (62 `sidearm-roster-player` hits and **0** position classes, against 1615/136 on the 2025 page). This is the `tulsa` shape exactly.
+- **`barry`** — **21 players against 34 in 2025**, browser-confirmed at 21, and the shape is the giveaway: **one goalkeeper**, 5 defenders, and **12 of 21 listed midfield-capable**. No real D2 squad carries a single keeper. Refreshed as-is it would have produced 12 MFs with **zero** clearing before 2027 — a plausible-looking number and a fabricated opportunity score, which is exactly why shape 3 is the dangerous one.
+
+**New diagnostic worth keeping: check the goalkeeper count.** Squad-size ratio alone was ambiguous for Barry (21/34 = 62%, against Pittsburgh's deferred 50%), but a positional breakdown showing 1 GK is unambiguous. Add it to the prior-season count comparison rather than replacing it.
+
+#### Disclosed data caveat — a blank *position* cell is not a parse failure
+
+`ocu` publishes **3 of 25** players and `stedwards` **6 of 39** with an empty position cell. Verified as genuine, not a parser artifact: the rendered card view shows no position, and all six St. Edward's **player bio pages carry no position field either**. `mf_total` therefore counts only confirmed midfielders, and both notes say so. Materiality was checked rather than assumed — for `ocu` the worst case moves opportunity 6.0 → 7.0 and stays inside the same trajectory row, so the outlook is unaffected either way; for `stedwards` it would move 8.5 → 5.5 and **cross a row**, so that note flags it for re-check once the school completes its data. This is a *field-level* gap, distinct from the roster-level gap that got Keiser and Barry deferred.
+
+#### Tooling
+
+- `roster_survey.py` now takes conference files as **argv** (defaulting to the Session 2 set) and names its output after them — each wave re-runs it without editing the script.
+- `roster_extract.py` learned **`Fy.`**, the Ivy label for a first-year. It had been falling through to `unknown`, breaking the `mf_total` invariant and understating `returning`. **Same silent-failure class as Session 2's `4th`-ordinal bug**, and found the same way: by the standing control test, which reproduced all 8 committed Session-1 schools *exactly* both before and after the fix.
+
+**Gates:** `python -m json.tool` OK · `node validate_consistency.js` **Issues: 0** · `python validate_schools.py` PASS (111 schools, 17 pre-existing warnings). Local browser test: all four cards render `MFS (2026-27)` with correct counts, names and trajectories; zero `undefined`; zero JS errors; all local fetches 200.
+
+**Refresh ledger: 60 schools on 2026-27, 45 on 2025-26.**
+
+---
+
 ### v44.45 (August 2026) — Conference filter chips: 6 schools had no chip, 1 sat in the wrong one
 
 Owner asked whether the chip counts were dynamic. **They are** — `renderFilterChips()` computes them live from `unis`. But two bugs underneath meant the row was wrong regardless, and it summed to **105 of 111** with nothing anywhere reporting the gap.

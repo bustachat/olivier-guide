@@ -471,6 +471,64 @@ for (const [file, src] of PROSE_SOURCES) {
   }
 }
 
+// ── CHIPS (added v44.45): every school must land in a conference filter chip ──
+// The Explore conference filter row is built by renderFilterChips() from each
+// school's `conf` string via resolveConfGroup(). Two silent failure modes, both
+// real and both found by the owner eyeballing the row rather than by any check:
+//   • An unmapped conference produced a key no chip rendered, so the school was
+//     invisible in the row AND unfilterable. Six schools were in this state
+//     (army, navy, delaware, mercyhurst, uc_charleston, columbia_college) and
+//     the row summed to 105 of 111 with nothing reporting the gap.
+//   • A substring alias collision mis-filed a school into the WRONG chip: UCA's
+//     conf is "ASUN Conference", and the old bare .includes() matched the longer
+//     alias "sun conference" inside "a|sun conference|", filing a D1 ASUN school
+//     under the NAIA Sun Conference. Wrong counts on BOTH chips, and nothing
+//     looked broken — the row still added up.
+// This check mirrors resolveConfGroup() exactly, so it fails if either recurs.
+const aliasBlock = appjs.slice(appjs.indexOf('const CONF_ALIAS_MAP = {'));
+const CONF_ALIAS = {};
+for (const m of aliasBlock.slice(0, aliasBlock.indexOf('\n};')).matchAll(/'([^']+)':\s*'([^']+)'/g)) CONF_ALIAS[m[1]] = m[2];
+const labelBlock = appjs.slice(appjs.indexOf('const CONF_CHIP_LABELS = {'));
+const CONF_LABELS = {};
+for (const m of labelBlock.slice(0, labelBlock.indexOf('\n};')).matchAll(/'([^']+)':\s*'([^']+)'/g)) CONF_LABELS[m[1]] = m[2];
+const orderBlock = appjs.slice(appjs.indexOf('const CONF_CHIP_ORDER = ['));
+const CONF_ORDER = [...orderBlock.slice(0, orderBlock.indexOf('];')).matchAll(/'([^']+)'/g)].map(m => m[1]);
+
+const aliasesByLen = Object.entries(CONF_ALIAS).sort((a, b) => b[0].length - a[0].length);
+function resolveConfGroupMirror(conf) {
+  const norm = (conf || '').toLowerCase().trim();
+  if (CONF_ALIAS[norm]) return CONF_ALIAS[norm];
+  const hit = aliasesByLen.find(([a]) => new RegExp('\\b' + a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(norm));
+  return hit ? hit[1] : norm.replace(/\s+/g, '-');
+}
+// resolveConfGroupMirror reimplements the intended matching rather than reading
+// app.js's implementation, so it validates the DATA but is blind to the resolver
+// itself regressing. Guard that directly: the bare .includes() form is the exact
+// shape that caused the UCA/Sun Conference collision.
+const resolverBody = appjs.slice(appjs.indexOf('function resolveConfGroup('), appjs.indexOf('function resolveConfGroup(') + 1200);
+if (/\.find\(\(\[alias\]\)\s*=>\s*norm\.includes\(alias\)\)/.test(resolverBody)) {
+  note('CHIPS', 'resolveConfGroup() matches aliases with bare norm.includes() — substring collision risk. "sun conference" matches inside "asun conference" and mis-files UCA into the NAIA Sun Conference chip (v44.45). Use word-boundary matching.');
+}
+if (!Object.keys(CONF_ALIAS).length || !CONF_ORDER.length) {
+  note('CHIPS', 'could not parse CONF_ALIAS_MAP / CONF_CHIP_ORDER out of js/app.js — this check is not running');
+} else {
+  const chipCounts = {};
+  schools.forEach(s => {
+    const key = resolveConfGroupMirror(s.conf);
+    chipCounts[key] = (chipCounts[key] || 0) + 1;
+    if (!CONF_LABELS[key]) note('CHIPS', `${s.id} (${s._file}) conf='${s.conf}' resolves to '${key}' which has no CONF_CHIP_LABELS entry — no filter chip, school unfilterable by conference`);
+    else if (!CONF_ORDER.includes(key)) note('CHIPS', `${s.id} (${s._file}) resolves to '${key}' which is labelled but missing from CONF_CHIP_ORDER`);
+  });
+  const charted = CONF_ORDER.filter(k => chipCounts[k]).reduce((a, k) => a + chipCounts[k], 0);
+  if (charted !== schools.length) note('CHIPS', `conference chips account for ${charted} schools but the guide holds ${schools.length}`);
+  // Division sanity: a chip should not mix divisions — that is what the UCA/Sun
+  // Conference collision looked like from the outside.
+  Object.keys(chipCounts).filter(k => CONF_LABELS[k]).forEach(k => {
+    const divs = [...new Set(schools.filter(s => resolveConfGroupMirror(s.conf) === k).map(s => s.div))];
+    if (divs.length > 1) note('CHIPS', `chip '${CONF_LABELS[k]}' mixes divisions ${divs.join('/')} — likely an alias collision (see UCA/Sun Conference, v44.45)`);
+  });
+}
+
 // ── prestige rank sequence ──
 const pr = prestige.map(p => p.rank).sort((a, b) => a - b);
 for (let i = 0; i < pr.length; i++) if (pr[i] !== i + 1) { note('PRESTIGE', `conf-prestige rank sequence broken at ${pr[i]}`); break; }

@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.45 (August 2026) — Conference filter chips: 6 schools had no chip, 1 sat in the wrong one
+
+Owner asked whether the chip counts were dynamic. **They are** — `renderFilterChips()` computes them live from `unis`. But two bugs underneath meant the row was wrong regardless, and it summed to **105 of 111** with nothing anywhere reporting the gap.
+
+**Bug 1 — six schools had no chip and could not be filtered by conference.** Their conferences were absent from `CONF_ALIAS_MAP`/`CONF_CHIP_LABELS`, so `resolveConfGroup()` fell through to a derived key (`'patriot-league'`, `'summit-league'`, `'northeast-conference-(nec)'`…) that `renderFilterChips()` then skipped via its `if (CONF_CHIP_LABELS[key])` guard: **army, navy** (Patriot), **delaware** (Summit), **mercyhurst** (NEC), **uc_charleston** (MEC), **columbia_college** (AMC).
+
+**Bug 2 — a substring alias collision put a D1 school inside a NAIA chip.** UCA's `conf` is `"ASUN Conference"`. The alias scan sorted longest-first and tested with bare `.includes()`, so **`"sun conference"` (14 chars) matched inside `"a|sun conference|"`** and beat `"asun"` (4). UCA was counted *and filtered* under the NAIA **Sun Conference** chip — which is exactly why the row showed **Sun Conf (2)** and **no ASUN chip at all**. Two wrong counts, and nothing looked broken because the row still added up. Same class as §5b trap 7 (substring collisions in school names).
+
+**Fixes:** the six conferences added across all three tables; `resolveConfGroup()` now matches on **word boundaries** (`\bsun conference\b` cannot match inside `asun conference`); and `renderFilterChips()` now counts **every** school and appends any unmapped key at the end with a derived label and a `console.warn`, so a future gap degrades visibly instead of vanishing.
+
+**New `CHIPS` validator check** — every school must resolve to a labelled key, that key must be in `CONF_CHIP_ORDER`, the chips must sum to the school count, and no chip may mix divisions (which is what the UCA collision looked like from the outside). All negative-tested by restoring the original bugs. It also carries a **code-shape guard** that fails if the bare `.includes()` form returns: the check reimplements the intended matching rather than reading `app.js`'s implementation, so without that guard it validates the data but is blind to the resolver itself regressing — a gap the negative test exposed.
+
+Verified live: 25 chips, sum 111 = `unis.length`, zero mismatches against the page's own resolver, and each new chip filters to exactly the right schools. Issues: 0.
+
+---
+
 ### v44.44 (August 2026) — New `PROSE` validator check: UI copy that hard-codes a school or roster fact
 
 Owner-requested straight after v44.43: *"need to add that check for the info panels to be updated when there is a change to schools or roster."* A CLAUDE.md checklist row would not have held — prose is exactly what nobody re-reads, which is the failure mode the SDLC-compliance rule already warns about. So this is mechanical.

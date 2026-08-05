@@ -1748,6 +1748,14 @@ const CONF_ALIAS_MAP = {
   'wcc': 'wcc', 'west coast': 'wcc',
   'asun': 'asun',
   'america east': 'america-east', 'america-east': 'america-east',
+  // v44.45: these six were MISSING, so Army, Navy, Delaware, Mercyhurst,
+  // U of Charleston and Columbia College fell through to a derived key that no
+  // chip renders — invisible in the conference filter row and unfilterable.
+  'patriot league': 'patriot', 'patriot': 'patriot',
+  'summit league': 'summit', 'summit': 'summit',
+  'northeast conference': 'nec', 'nec': 'nec',
+  'mountain east': 'mec', 'mec': 'mec',
+  'american midwest': 'amc', 'amc': 'amc',
   'ivy league': 'ivy-league', 'ivy': 'ivy-league',
   'ssc': 'ssc', 'sunshine state': 'ssc',
   'ccaa': 'ccaa', 'california collegiate': 'ccaa',
@@ -1760,12 +1768,17 @@ const CONF_ALIAS_MAP = {
   'njcaa': 'njcaa',
 };
 function resolveConfGroup(conf) {
-  const norm = conf.toLowerCase().trim();
+  const norm = (conf || '').toLowerCase().trim();
   if (CONF_ALIAS_MAP[norm]) return CONF_ALIAS_MAP[norm];
-  // Sort by alias length descending so longer/more-specific aliases win (e.g. "ccaa" beats "acc")
+  // Longest alias first so a more specific one wins (e.g. "ccaa" beats "acc").
+  // v44.45: match on WORD BOUNDARIES, not bare .includes(). The substring form
+  // mis-filed UCA — its conf is "ASUN Conference", and "sun conference" (14
+  // chars) is a substring of "a|sun conference|", so it beat "asun" (4) on the
+  // length sort and put a D1 ASUN school inside the NAIA Sun Conference chip.
+  // \b refuses that match because "sun" there is preceded by the word char "a".
   const match = Object.entries(CONF_ALIAS_MAP)
     .sort((a, b) => b[0].length - a[0].length)
-    .find(([alias]) => norm.includes(alias));
+    .find(([alias]) => new RegExp('\\b' + alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(norm));
   return match ? match[1] : norm.replace(/\s+/g, '-');
 }
 
@@ -2090,6 +2103,9 @@ const CONF_CHIP_LABELS = {
   'wcc':              'WCC',
   'asun':             'ASUN',
   'america-east':     'Am. East',
+  'patriot':          'Patriot',
+  'summit':           'Summit',
+  'nec':              'NEC',
   // Ivy
   'ivy-league':       'Ivy League',
   // D2
@@ -2097,9 +2113,11 @@ const CONF_CHIP_LABELS = {
   'ccaa':             'CCAA',
   'cacc':             'CACC',
   'lsc':              'LSC',
+  'mec':              'MEC',
   // NAIA
   'sac':              'SAC',
   'sun-conference':   'Sun Conf',
+  'amc':              'AMC',
   // D3
   'sciac':            'SCIAC',
   // JUCO
@@ -2110,10 +2128,10 @@ const CONF_CHIP_LABELS = {
 // Ordered by tier — P4 first, then mid-major D1, Ivy, D2, NAIA, D3, JUCO
 const CONF_CHIP_ORDER = [
   'sec','acc','big-ten','big-east','aac','big-west',
-  'caa','wac','mac','wcc','asun','america-east',
+  'caa','wac','mac','wcc','asun','america-east','patriot','summit','nec',
   'ivy-league',
-  'ssc','ccaa','cacc','lsc',
-  'sac','sun-conference',
+  'ssc','ccaa','cacc','lsc','mec',
+  'sac','sun-conference','amc',
   'sciac',
   'cccaa','njcaa',
 ];
@@ -2123,16 +2141,25 @@ function renderFilterChips() {
     const container = document.getElementById('conf-filter-chips');
     if (!container) return;
 
-    // Count schools per conf-group key
+    // Count schools per conf-group key.
+    // v44.45: count EVERY school, not just those with a known label. The old
+    // `if (CONF_CHIP_LABELS[key])` guard meant an unmapped conference vanished
+    // in silence — six schools (Army, Navy, Delaware, Mercyhurst, U of
+    // Charleston, Columbia College) were unfilterable and the row summed to 105
+    // of 111 with nothing anywhere reporting it.
     const keyCounts = {};
     unis.forEach(u => {
       const key = resolveConfGroup(u.conf || '');
-      if (CONF_CHIP_LABELS[key]) keyCounts[key] = (keyCounts[key] || 0) + 1;
+      keyCounts[key] = (keyCounts[key] || 0) + 1;
     });
 
-    // Render in prestige order, only keys that have schools
-    CONF_CHIP_ORDER.filter(k => keyCounts[k]).forEach(ck => {
-      const label = CONF_CHIP_LABELS[ck] || ck.toUpperCase();
+    // Ordered keys first, then any unmapped key so a new conference always shows
+    // up (unstyled and last, but visible) instead of disappearing.
+    const unordered = Object.keys(keyCounts).filter(k => !CONF_CHIP_ORDER.includes(k)).sort();
+    if (unordered.length) console.warn('renderFilterChips: unmapped conference key(s), add to CONF_ALIAS_MAP/CONF_CHIP_LABELS/CONF_CHIP_ORDER:', unordered);
+
+    CONF_CHIP_ORDER.filter(k => keyCounts[k]).concat(unordered).forEach(ck => {
+      const label = CONF_CHIP_LABELS[ck] || ck.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       const count = keyCounts[ck];
       const btn = document.createElement('button');
       btn.className = 'fchip';

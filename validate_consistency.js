@@ -113,7 +113,8 @@ const TRAJ_KEYS = ['year', 'yr_label', 'pct', 'label'];
 const RECRUIT_PATHWAY_VALUES = ['Freshman-friendly', 'Transfer-preferred', 'Portal/JUCO-heavy', 'Mixed'];
 // Honest researched gaps, not bugs — tracked in CLAUDE.md §6 deferred items (v40.1): re-scrape Sept–Nov 2026.
 // Renderers guard these with '—' since v40.1. Remove from this whitelist once researched.
-const MO_MISSING_OK = new Set(['notredame:rising_senior_2027_count', 'georgetown:rising_senior_2027_count']);
+// notredame cleared v44.37 — its 2026-27 roster gives 3 rising seniors (Schroeder, Shaul, Hilden).
+const MO_MISSING_OK = new Set(['georgetown:rising_senior_2027_count']);
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
   const mo = s.minutesOutlook;
   if (!mo) { note('MO', `${s.id} missing minutesOutlook`); return; }

@@ -114,7 +114,7 @@
       "fitness": 88
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). ANCHOR — held near current. Live virginiasports.com MSOC staff: HC George Gelnovatch (30th yr) + Assoc HC Matt Chulis + Asst Jermaine Birriel + Asst Johnny Fenwick = 4 full-time coaches. Stored Tier-1 facilities: Klöckner Stadium 8,000-seat dedicated natural-grass soccer venue + 3 dedicated practice fields (2 grass, 1 turf) + 73,000 sq ft indoor (Lannigan Field). Anchor-tier full-time staff + soccer-specific stadium AND training ground; UVA is a named §5a anchor (90–95) so held at 95/90/88.",
-    "fitOlivier": 45,
+    "fitOlivier": 42,
     "tags": [
       "acad",
       "soccer"
@@ -134,60 +134,60 @@
     "rec": "Most storied men's soccer program in the USA. 7 NCAA titles. Top-5 MLS producer. Charlottesville is not a major city and climate is cool — less lifestyle match for Sydney. Fierce competition for spots.",
     "url": "https://virginiasports.com/sports/msoc",
     "lensScores": {
-      "overall": 45,
+      "overall": 42,
       "soccer": 82,
       "academic": 84,
-      "minutes": 30,
+      "minutes": 21,
       "lifestyle": 0,
-      "value": 27
+      "value": 25
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 9,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 2,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
         "Brendan Lambe",
-        "Marco Dos Santos"
+        "Marco Dos Santos",
+        "Drew Serafino"
       ],
       "rising_senior_2027_count": 1,
       "rising_senior_2027_names": [
         "Luke Burns"
       ],
-      "rising_junior_2027_count": 4,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Ethan Martinez",
         "Sami Oulouheu",
         "Bacary Tandjigora",
         "Emmanuel Akinkoye"
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "6 of 8 current MFs (75%) recruited directly from HS/club with no prior college, per the live 2026 virginiasports.com roster. 2 transferred in, both from Boston College (Marco Dos Santos, Drew Serafino).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 virginiasports.com roster (12 MFs of 29). Only 3 of 12 list a previous college (Santa Clara, Boston College x2); the other 9 came straight from high school or club. Freshmen are a third of the midfield group, so a true freshman can still enter here — the constraint is depth, not the recruiting route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 30,
-          "label": "Squad rotation"
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "Yr1/Yr2 flat: 4 rising juniors maintain competition. Yr3 jump as Olivier establishes and juniors clear."
@@ -392,7 +392,7 @@
       "fitness": 83
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). Live godeacs.com MSOC staff: HC Bobby Muuss + Dane Brenner (Assoc HC/Dir Recruiting/Dir of Goalkeeping) + Zack Schilawski (Asst/Dir Player Development) + Ade Taiwo (Asst/Player Welfare) = 4 full-time coaches incl goalkeeping and a player-development director, PLUS Michael White (dedicated Assistant Athletic Trainer) and David Bass (Sports Performance) both listed on the MSOC staff page. Stored Tier-1 facilities: Spry Soccer Stadium 3,000 dedicated natural grass + 2 practice fields + training complex. Genuinely deep coaching plus a dedicated ATC and a dedicated sports-performance staffer; the modest 3,000 stadium and absence of documented GPS/video-analysis staff keep it below the elite tier. Trimmed from 90/88/82 (tactical 90 was near-anchor / reputation-driven).",
-    "fitOlivier": 48,
+    "fitOlivier": 47,
     "tags": [
       "acad",
       "soccer"
@@ -411,59 +411,56 @@
     "rec": "ACC powerhouse. 4 MLS picks in one draft. Small campus means strong faculty relationships for DPT applications. Winston-Salem is not a major city. GPA 2.8 may be admission challenge.",
     "url": "https://godeacs.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 48,
+      "overall": 47,
       "soccer": 74,
       "academic": 73,
-      "minutes": 37,
+      "minutes": 33,
       "lifestyle": 0,
-      "value": 29
+      "value": 28
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 14,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 6,
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
-        "Nico Rabiu",
-        "Vlad Walent",
         "Jose Perez",
         "Jeffrey White",
-        "Pierce Bateson",
-        "Tate Lorentz"
+        "Tate Lorentz",
+        "Pierce Bateson"
       ],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Harvey Sarajian",
+        "Marcos Miranda",
         "Joel Torbic"
       ],
-      "rising_junior_2027_count": 4,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
         "David Nguema",
         "Alfred Debah",
-        "Chandler Young",
-        "Bret Russell"
+        "Chandler Young"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "All 13 current MFs (100%) recruited directly from HS/club with no prior college, per the live 2025 godeacs.com roster — the program's lone visible transfer (Ethan Subachan, from Louisville) plays forward, not midfield.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 godeacs.com roster (13 MFs of 31). Just 1 of 13 MFs lists a previous college (Marcos Miranda, John Brown) — the other 12 arrived directly from high school or academy sides (Toronto FC, Barca Residency Academy, Asanska FC, Orange County SC). One of the purest freshman-intake midfields in the batch.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -685,7 +682,7 @@
       "fitness": 86
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). Live smumustangs.com MSOC staff: HC Kevin Hudson + Michael King (Assoc HC/Recruiting) + Jaime Ibarra-Perez (Assoc HC/Goalkeeping) + Ross Fitzpatrick (Asst) + Alejandro Radilla (Director of Sports Science and Analytics) + Trey Nickel (GA) + Becky Riegle (Assoc ATC). Deep staff incl a dedicated goalkeeping coach and — rare at this level — a soccer-dedicated Sports Science & Analytics director, plus a dedicated ATC. Stored Tier-1 facilities: Washburne Stadium 2,577 shared with track (NOT soccer-specific), 2 dedicated practice fields, warm Dallas climate. Top of the non-anchor band on staffing/sports-science; the shared-track stadium is the limiter. Trimmed from 92/88/85 — the old tactical carried results-halo from SMU's recent rise.",
-    "fitOlivier": 70,
+    "fitOlivier": 67,
     "tags": [
       "warm",
       "city",
@@ -708,25 +705,27 @@
     "rec": "SMU is a genuine sleeper pick. 2025 ACC Tournament Champions. Warm Dallas city campus. Luchi Gonzalez (FC Dallas HC) is an SMU alum — direct pro pathway. Top-25 consistently nationally. Strong soccer + good academics combination.",
     "url": "https://smumustangs.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 70,
+      "overall": 67,
       "soccer": 80,
       "academic": 68,
-      "minutes": 40,
+      "minutes": 33,
       "lifestyle": 72,
-      "value": 42
+      "value": 40
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 7,
-      "roster_season": "2025-26",
+      "mf_total": 9,
+      "roster_season": "2026-27",
       "cleared_before_2027": 2,
       "cleared_names": [
         "Alex Salvo",
         "Jaylinn Mitchell"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
+        "Tweneboa Kodua",
         "Nick Harshaw",
+        "Dunes Nielsen",
         "Andre Philibbosian"
       ],
       "rising_junior_2027_count": 3,
@@ -737,25 +736,25 @@
       ],
       "recruit_risk": "Low",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "6 of 10 current MFs (60%) recruited directly from HS/club with no prior college, per the live 2025 smumustangs.com roster; 4 transferred in from four different programs — Central Arkansas, Dallas College Richland (JUCO), Cal Poly, Oral Roberts.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 smumustangs.com roster (9 MFs of 32). 5 of 9 arrived as 4-year transfers (Oral Roberts, Gardner-Webb, Bellarmine, Utah Tech, Seattle U) and 4 have no previous college — a genuine split, hence Mixed. No JUCO intake, and notably no true freshman midfielders at all on this roster, so freshman entry is possible but not the primary route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -908,14 +907,14 @@
     },
     "mapX": 502,
     "mapY": 205,
-    "fitOlivier": 43,
+    "fitOlivier": 39,
     "lensScores": {
-      "overall": 43,
+      "overall": 39,
       "soccer": 85,
       "academic": 90,
-      "minutes": 33,
+      "minutes": 21,
       "lifestyle": 0,
-      "value": 25
+      "value": 23
     },
     "confRecord": [
       {
@@ -1010,41 +1009,54 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 15,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 7,
-      "cleared_names": [],
-      "rising_senior_2027_count": 2,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 6,
-      "rising_junior_2027_names": [],
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Nikolai Ronaldo Bull Jorgensen",
+        "Thomas Vold"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Jamie Kabuusu",
+        "Jonah Wolf",
+        "Julius Suber"
+      ],
+      "rising_junior_2027_count": 5,
+      "rising_junior_2027_names": [
+        "Maxwell Simpson",
+        "Ian Hecker",
+        "Hugo Hill",
+        "Emmanuel Frimpong",
+        "Casey Bag"
+      ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "10 of 14 current MFs (71%) recruited directly from HS/club with no prior college, per the live 2025 goduke.com roster. 4 transferred in — from Georgetown, Harvard, College of Charleston, and Northeastern.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 goduke.com roster (13 MFs of 28). 3 of 13 are 4-year transfers (Saint Francis, Northeastern, Pacific); the remaining 10 came from high school or club sides (New England Revolution, Colorado Rapids 2, Boston Bolts, Yokogawa Musashino FC). Freshman-friendly on route, but the midfield is deep and young — 8 of 13 are underclassmen who all return through 2029.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
-          "label": "Coming off bench"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 55,
-          "label": "Regular starter"
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "7 of 15 cleared, but 6 Fr remain as Jrs competing directly with Olivier through Yr1-2. Duke recruits elite midfielders every cycle — squad competition is very high. Roster count verified by browser; names not captured."
@@ -1410,14 +1422,14 @@
     },
     "mapX": 431,
     "mapY": 198,
-    "fitOlivier": 71,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 71,
+      "overall": 55,
       "soccer": 70,
       "academic": 55,
-      "minutes": 57,
+      "minutes": 14,
       "lifestyle": 62,
-      "value": 43
+      "value": 33
     },
     "confRecord": [
       {
@@ -1510,40 +1522,47 @@
     "minutesOutlook": {
       "available": true,
       "mf_total": 9,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 6,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 0,
       "cleared_names": [],
-      "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Giacomo Zizza",
+        "Håkon Edstrøm",
+        "Jack Lewis"
+      ],
       "rising_junior_2027_count": 2,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_names": [
+        "Braydon Sellers",
+        "Fernando Sanchez"
+      ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of 9 current MFs (89%) recruited directly from HS/club with no prior college, per the live 2025 gocards.com roster — only Bilal Camara transferred in (Limestone, D2).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gocards.com roster (9 MFs of 27). 3 of 9 are 4-year transfers (Saint Louis University, Lehigh, Evansville); 4 of 9 are true freshmen who came straight in. Note NO midfielder graduates before Olivier's 2027 entry — the entire group returns, which is why the opportunity score is the lowest in this batch despite the freshman-friendly recruiting route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
-          "label": "Key player"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "6 of 9 MFs cleared before 2027. Strong opportunity for an ACC program — 2 rising juniors provide peer competition. Roster count verified; names not captured."
@@ -1910,14 +1929,14 @@
     },
     "mapX": 70,
     "mapY": 179,
-    "fitOlivier": 57,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 57,
+      "overall": 55,
       "soccer": 88,
       "academic": 95,
-      "minutes": 26,
+      "minutes": 19,
       "lifestyle": 50,
-      "value": 34
+      "value": 33
     },
     "confRecord": [
       {
@@ -2015,52 +2034,53 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 2,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "TJ Kahoalii",
-        "Trevor Islam"
+        "Dylan Groeneveld"
       ],
-      "rising_senior_2027_count": 4,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Tim Logan",
-        "Victor Fung",
-        "Aidan Reilly",
-        "Dillon Logan"
+        "Trevor Islam",
+        "Alex Chow",
+        "TJ Kahoalii"
       ],
-      "rising_junior_2027_count": 2,
+      "rising_junior_2027_count": 5,
       "rising_junior_2027_names": [
-        "Yujin Kikuchi",
-        "Logan Tsopanoglou"
+        "Brad Bennett",
+        "Joshua Partal",
+        "Jude Stone",
+        "Jack Pymm",
+        "Tim Logan"
       ],
       "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 gostanford.com roster template does not publish prior-school data for any player (unlike most other schools' rosters), so individual transfer status could not be directly verified. Classified Freshman-friendly on structural grounds: Stanford's own undergraduate admissions (3.7+ GPA, 13% acceptance) are separate from athletics and apply equally to transfers, making transfer-in unusually rare compared to any other school in this guide. Lower confidence than other entries — flag for re-verification if a more detailed source is found.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gostanford.com roster (11 MFs of 28). No MF lists a previous college — Stanford recruits its midfield directly out of high school. Entry is freshman-friendly by route but the group is very young: 7 of 11 are freshmen or sophomores who return through 2029, and only 1 senior clears before 2027.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development squad"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 50,
-          "label": "Regular starter"
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "Only 2 MFs clear (Kahoalii Jr, Islam R-Jr). 4 So compete as Srs in Yr1 — midfield is congested. Stanford's elite recruiting cycle maintains perpetual competition."
@@ -2177,12 +2197,12 @@
     },
     "mapX": 518,
     "mapY": 139,
-    "fitOlivier": 38,
+    "fitOlivier": 36,
     "lensScores": {
-      "overall": 38,
+      "overall": 36,
       "soccer": 68,
       "academic": 62,
-      "minutes": 24,
+      "minutes": 16,
       "lifestyle": 0,
       "value": 22
     },
@@ -2279,40 +2299,49 @@
     "minutesOutlook": {
       "available": true,
       "mf_total": 10,
-      "roster_season": "2025-26",
+      "roster_season": "2026-27",
       "cleared_before_2027": 1,
-      "cleared_names": [],
-      "rising_senior_2027_count": 4,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 5,
-      "rising_junior_2027_names": [],
+      "cleared_names": [
+        "Jackson Miller"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Nathan Scott",
+        "Quinn Olcott"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Kelvin Da Costa",
+        "Sachiel Ming",
+        "Kristjan Fortier"
+      ],
       "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "7 of 10 current MFs (70%) recruited directly from HS/club with no prior college, per the live 2025 cuse.com roster. 3 transferred in — Nathan Scott (UC Riverside), Carlos Zambrano (Daytona State, JUCO), Tim Noeding (Bethel, NAIA).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 cuse.com roster (10 MFs of 28). Syracuse's roster table publishes only #, Name, Class, Pos and Hometown — there is no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster. Classification retained from the earlier research pass; 4 of the 10 MFs are freshmen, which is consistent with it. Treat as lower-confidence than schools that publish a previous-school field.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development squad"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 25,
-          "label": "Development squad"
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 50,
-          "label": "Regular starter"
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "Only 1 MF clears before 2027. 4 So and 5 Fr remain — midfield extremely crowded in Yr1-2. Patience required; Yr3 breakthrough as seniors clear. Roster count verified; names not captured."
@@ -2429,14 +2458,14 @@
     },
     "mapX": 67,
     "mapY": 176,
-    "fitOlivier": 67,
+    "fitOlivier": 71,
     "lensScores": {
-      "overall": 67,
+      "overall": 71,
       "soccer": 72,
       "academic": 88,
-      "minutes": 47,
+      "minutes": 58,
       "lifestyle": 72,
-      "value": 40
+      "value": 43
     },
     "confRecord": [
       {
@@ -2531,23 +2560,22 @@
     "minutesOutlook": {
       "available": true,
       "mf_total": 12,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 7,
       "cleared_names": [
-        "Gaku Nishimura",
-        "Cam Wilkerson",
-        "Rohan McEligot",
-        "Allan Juarez",
-        "Adrian Jacobs",
         "Giancarlo Mota",
-        "Kai Djerbaka",
         "Jack Bowers",
-        "Nik Laredo"
+        "Brendan Bell",
+        "Nik Laredo",
+        "Isaiah Thomas",
+        "Wisdom Onuoma",
+        "Adrian Jacobs"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
         "Junhwan Park",
-        "Kieran Bracken Serra"
+        "Kieran Bracken Serra",
+        "Malcolm Zalayet"
       ],
       "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
@@ -2555,30 +2583,30 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "11 of 15 current MFs (73%) recruited directly from HS/club with no prior college, per the live 2025 calbears.com roster. 4 transferred in — Cam Wilkerson (UCLA), Adrian Jacobs (UC Santa Cruz), Junhwan Park (University of San Francisco), Nik Laredo (Pomona-Pitzer).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 calbears.com roster (12 MFs of 27). Cal's card layout carries a previous-school field but publishes it empty for every midfielder, so the transfer-vs-freshman split cannot be re-derived; classification retained from the earlier pass. The headline finding is turnover, not pathway: 7 of 12 MFs (6 seniors + 1 graduate) clear before Olivier's 2027 entry and only 2 underclassmen remain — the largest midfield opening in this batch by a wide margin.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Coming off bench"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ],
@@ -3047,7 +3075,7 @@
       "fitness": 85
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). Live fightingirish.com MSOC staff: HC Chad Riley (endowed McFarland Family Head Coach) + Mike Graczyk (Asst) + Jeff Rowland (Asst) + Sam Biek (Asst/Dir of Ops) = 4 coaches (no dedicated GK coach). Endowed head coach and endowed grants-in-aid. Stored Tier-1 facilities: Alumni Stadium 2,500 dedicated natural grass (modest size), world-class shared S&C (with football), documented full GPS (Catapult); Indiana winters limit outdoor training Nov–Feb. GPS + elite shared S&C support a high score, but modest stadium + winter limitation + no soccer-dedicated sports science keep it below anchor. Trimmed from 91/90/89 — strip the 2013-title halo.",
-    "fitOlivier": 45,
+    "fitOlivier": 48,
     "tags": [
       "acad",
       "soccer"
@@ -3068,51 +3096,65 @@
     "rec": "Notre Dame is elite soccer with a 2013 national championship and 2023 runner-up — Chad Riley has maintained the program's elite status. Pre-health science pathway prepares well for DPT programs. However the degree alignment is lower than dedicated exercise science programs (9/16 ACU units), winters are cold, the campus is not a city, and GPA 2.8 is a significant challenge for 13% acceptance rate. Best for Olivier if athletic offer is on the table and he is comfortable with a non-warm-climate experience.",
     "url": "https://fightingirish.com/sports/msoc",
     "lensScores": {
-      "overall": 45,
+      "overall": 48,
       "soccer": 93,
       "academic": 95,
       "lifestyle": 0,
-      "minutes": 30,
-      "value": 27
+      "minutes": 38,
+      "value": 29
     },
     "minutesOutlook": {
       "available": true,
-      "cleared_before_2027": 2,
-      "cleared_names": [],
-      "mf_total": 11,
-      "roster_season": "2025-26",
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Nico Bartlett",
+        "Nolan Spicer",
+        "Leo Brummell",
+        "Vlad Walent"
+      ],
+      "mf_total": 12,
+      "roster_season": "2026-27",
       "recruit_risk": "High",
-      "rising_junior_2027_count": 4,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Karson Baquero",
+        "Diego Green"
+      ],
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "11 of 12 current MFs (92%) recruited directly from HS with no prior college, per the live 2026-27 fightingirish.com roster — only Vlad Walent transferred in (cross-referenced by name/hometown/HS against Wake Forest's 2025 roster, confirming a grad transfer from Wake Forest).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 fightingirish.com roster (12 MFs of 28). Not one of the 12 MFs lists a previous college — the entire midfield was recruited straight out of high school (Culver Military Academy, Shattuck St. Mary's, Montclair Kimberley). Notre Dame does not use the transfer portal for midfielders.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development — elite squad depth"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 45,
-          "label": "Breaking into rotation"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Regular contributor"
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
           "pct": 85,
-          "label": "Key player"
+          "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "Notre Dame is consistently a top-25 program with a deep, talented squad. MF competition is elite-level. Years 1-2 would be developmental with meaningful minutes expected from Year 3."
+      "trajectoryNote": "Notre Dame is consistently a top-25 program with a deep, talented squad. MF competition is elite-level. Years 1-2 would be developmental with meaningful minutes expected from Year 3.",
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Will Schroeder",
+        "Ian Shaul",
+        "Brady Hilden"
+      ]
     },
     "profileDepth": "full",
     "confKey": "acc",
@@ -3302,7 +3344,7 @@
       "fitness": 85
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). Live goheels.com MSOC staff: HC Carlos Somoano + 3 Asst (Michael Callahan, Michael Harrington, Jeff Negalha) = 4 full-time coaches (no GK coach) + Director of Operations + Director of Student-Athlete Development + Dir Alumni Relations. Stored Tier-1 facilities: Dorrance Field 4,200 chairback, a dedicated soccer/lacrosse stadium opened 2019 with LED video board, world-class shared S&C, Chapel Hill 9+ month outdoor season. Strong modern environment with deep operations staff and a warm climate; no soccer-dedicated sports scientist. Trimmed from 88/87/86 to strip the 2011-title halo.",
-    "fitOlivier": 59,
+    "fitOlivier": 52,
     "tags": [
       "warm",
       "city",
@@ -3327,60 +3369,60 @@
     "rec": "UNC is an excellent fit for Olivier — one of the strongest ACU degree alignments of any new school added (13/16), warm(ish) climate, world-class clinical placement through UNC Health and Duke Medical, and a top-25 ACC soccer program under a long-tenured coach. The Research Triangle setting provides city access without a full urban environment. The main challenges are selective admission (GPA 2.8 is borderline) and competition for playing time in a perennial ACC contender.",
     "url": "https://goheels.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 59,
+      "overall": 52,
       "soccer": 88,
       "academic": 87,
       "lifestyle": 50,
-      "minutes": 37,
-      "value": 35
+      "minutes": 16,
+      "value": 31
     },
     "minutesOutlook": {
       "available": true,
-      "cleared_before_2027": 2,
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Joschi Schelb",
-        "Ryan Zellefrow"
+        "Evans Dapaah"
       ],
-      "mf_total": 5,
-      "roster_season": "2025-26",
+      "mf_total": 10,
+      "roster_season": "2026-27",
       "recruit_risk": "High",
-      "rising_junior_2027_count": 1,
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Jonathan Luna Sabando"
+        "Charlie Antonelius",
+        "Nico Loebus"
       ],
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "7 of 10 current MFs (70%) recruited directly from HS/club with no prior college, per the live 2025 goheels.com roster. 3 transferred in — Nacho Abeal (SIU-Edwardsville), Jack Sandmeyer (University of San Diego), Gabriel Bracken Serra (USF).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 goheels.com roster (10 MFs of 31). The previous-school column is mostly CLUBS, not colleges (KCCA FC, IF Brommapojkarna, Houston Dynamo, Stade Brestois 29, Charlotte FC, Follo FK); only 3 of 10 are genuine college transfers (Vermont x2, Campbell). Half the midfield are freshmen, and UNC recruits internationals directly from club academies — the closest profile in this batch to Olivier's own route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
+          "pct": 10,
           "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Breaking into rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 75,
-          "label": "Regular starter"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 88,
-          "label": "Key player"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "UNC is a consistent top-25 ACC program. MF competition is strong but slightly more accessible than Clemson or Georgetown. Olivier's box-to-box profile suits Somoano's style — years 2-3 are realistic for meaningful minutes.",
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Charlie Antonelius",
-        "Nico Loebus"
+        "David Molina",
+        "Ryan Zellefrow"
       ]
     },
     "profileDepth": "full",

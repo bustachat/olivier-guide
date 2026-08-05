@@ -227,6 +227,7 @@ A change is NOT complete until every item in the impact map for that change type
 | `js/app.js — SITE_URLS` | Visit Site link in modal breaks without this |
 | `js/app.js — SOCIAL` | Social pills in modal are blank without this (4-element array, nulls ok) |
 | `js/app.js — CONF_SECTIONS` | School is invisible in Explore if confKey has no matching section |
+| `js/app.js — CONF_SECTIONS` **intro text** (added v44.44) | The section intro states a **program count**, and adding a school makes it wrong. Count by `confKey`, not by conference FILE — Akron sits in `d1-other.json` but groups into the Big East section (12, not 11), and Army/Navy sit in `aac.json` but group into Patriot (so the AAC section is 8, not 10). `validate_consistency.js`'s PROSE check enforces this. |
 
 **Tabs to verify after adding:**
 - Dashboard — map dot present, budget bracket bar present, shortlist panel (if on shortlist)
@@ -273,6 +274,7 @@ A change is NOT complete until every item in the impact map for that change type
 | 2 | `data/[conf].json` — lensScores.minutes | Minutes lens score derived from minutesOutlook |
 | 3 | `data/[conf].json` — lensScores.overall | Overall lens includes minutes score |
 | 4 | `data/[conf].json` — fitOlivier | Minutes = 20% of fitOlivier — must recalculate |
+| 5 | **UI PROSE that quotes a roster fact (added v44.44)** | `js/app.js` `CONF_SECTIONS` intros and the Minutes Outlook key are string literals — **no other check in this file reads them, so a refresh can falsify them silently and indefinitely.** This is not hypothetical: v44.42 refreshed UCA to 0-of-9 midfielders clearing while the ASUN intro still read *"6 of 9 MFs clearing before Olivier arrives"*, and the Minutes Outlook key was written in a 2025 roster's class years, which **inverts** once a school moves to 2026-27. `node validate_consistency.js`'s **PROSE** check now catches both classes automatically — but if you write new copy, phrase it against the **normalised 2027 buckets** (`cleared_before_2027` / `rising_senior_2027` / `rising_junior_2027`), never against a scrape-season class year. |
 
 **Tabs to verify after changing:**
 - Minutes Outlook tab — card now renders with trajectory chart, Yr1/Yr2 percentages
@@ -430,6 +432,7 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 | `data/pipeline.json` | Only if school had entries — remove from relevant table |
 | `athletes/olivier.json` — shortlist[] | Remove if present — orphaned shortlist entry causes display error |
 | `athletes/olivier.json` — outreach[] | Remove if present |
+| `js/app.js — CONF_SECTIONS` **intro text** (added v44.44) | The section intro states a program count and may name the removed school by name. Recount by `confKey`. PROSE check catches the count; it cannot catch a dangling name, so re-read the intro. |
 
 **Tabs to verify after removing:**
 - Explore Schools — school card gone, no ghost card, total count is N-1
@@ -1624,7 +1627,15 @@ Catches: duplicate school IDs, acuAlign vs covered:true mismatch, wrong lens/dev
 ```bash
 node validate_consistency.js
 ```
-Catches what validate_schools.py doesn't: stored fitOlivier vs live scores.js formula drift, conferences.json tier strings vs renderer buckets, coach name sync (conf JSON vs coaches.json), recruit_risk / gpa.status enum drift, missing kinRank / juco2yr, DOMAINS / SITE_URLS / SOCIAL coverage, fin component sums, confKey vs CONF_SECTIONS, shortlist/outreach orphans, map coords, and (since v40.2) exact minutesOutlook/trajectory key names (MO-KEYS — the "right shape, wrong key name" class behind the v39.7 `yr`/`year` and v40.1 `mf_total_2026` bugs, which render as literal 'undefined' and which no other check sees). **v36 backlog cleared July 2026: 174 → 1 issue** (see §6 and CHANGELOG.md's v36 entry). The 1 remaining line (Stony Brook coach name) is a genuine data gap, not a bug — the count must never increase from a session's changes.
+Catches what validate_schools.py doesn't: stored fitOlivier vs live scores.js formula drift, conferences.json tier strings vs renderer buckets, coach name sync (conf JSON vs coaches.json), recruit_risk / gpa.status enum drift, missing kinRank / juco2yr, DOMAINS / SITE_URLS / SOCIAL coverage, fin component sums, confKey vs CONF_SECTIONS, shortlist/outreach orphans, map coords, and (since v40.2) exact minutesOutlook/trajectory key names (MO-KEYS — the "right shape, wrong key name" class behind the v39.7 `yr`/`year` and v40.1 `mf_total_2026` bugs, which render as literal 'undefined' and which no other check sees).
+
+**PROSE (added v44.44) — the only check here that reads UI COPY rather than JSON.** Every other check reads data; the Explore section intros and the Minutes Outlook key are string literals in `js/app.js`, so a data change could contradict them forever with nothing to catch it. Four sub-checks, all negative-tested (each was made to fire before being trusted):
+1. **Section program counts** — a `CONF_SECTIONS` intro claiming "N programs" is compared against the real count for that `confKey`. Count by confKey, not by file: Akron makes the Big East section 12, and Army/Navy leaving for Patriot makes the AAC section 8.
+2. **Roster claims** — any `"N of M MFs"` in copy must match a real school's `mf_total`/`cleared_before_2027`. This is the exact UCA failure: the ASUN intro claimed 6 of 9 clearing after a refresh made it 0 of 9.
+3. **Scrape-season class years** — flags `"2025 Jr"`-style phrasing and `"based on 20XX rosters"`. Such copy **inverts** when a school moves to a newer roster (a 2026-27 junior is a 2027 senior, not cleared). Write against the normalised 2027 buckets instead. `"2027 seniors"` is fine — that IS the bucket.
+4. **Phantom school anchors** — a small explicit list of names that appear in copy but field no team in this guide (`USC`, `UF`). Deliberately a denylist rather than fuzzy name-matching, because clubs, cities, hospitals and conferences all legitimately appear in these strings. **Add to `PHANTOM_SCHOOLS` whenever a new one is found.**
+
+Whole-line `//` comments are stripped before scanning, so a comment that quotes a past copy bug (there is one in `renderMinutesOutlook`) does not re-trip sub-check 3. **v36 backlog cleared July 2026: 174 → 1 issue** (see §6 and CHANGELOG.md's v36 entry). The 1 remaining line (Stony Brook coach name) is a genuine data gap, not a bug — the count must never increase from a session's changes.
 
 ```bash
 python -m json.tool data/[conf].json

@@ -383,6 +383,94 @@ if (valueMismatches.length) {
   valueMismatches.forEach(m => note('VALUE', '  ' + m));
 }
 
+// ── PROSE (added v44.44): UI copy that hard-codes a school/roster fact ────────
+// Why this exists: the v44.42 roster refresh silently falsified two live panels,
+// and NOTHING could see it. Every other check in this file reads JSON; the
+// Explore section intros and the Minutes Outlook key are string literals inside
+// js/app.js, so a data change can contradict them indefinitely. Two real cases:
+//   • CONF_SECTIONS 'asun' said UCA had "6 of 9 MFs clearing before Olivier
+//     arrives"; that same session's refresh made it 0 of 9 (opp 0.0, fit 61→43).
+//   • The Minutes Outlook key was written in a 2025 roster's class years
+//     ("2025 Jr → graduate after 2026 → cleared"), which INVERTS once a school
+//     moves to a 2026-27 roster — a 2026-27 junior is a 2027 senior, not cleared.
+// Plus two long-lived ones: 'big-ten' named USC and the Glossary names UF, neither
+// of which fields a team in this guide, and six intros still used the pre-v25
+// "listed programs" framing after every school became full-profile.
+//
+// Scope discipline: only assertions that can be mechanically checked against the
+// data are flagged. Prose is judgment-heavy and a noisy check gets ignored (the
+// same reason §15 explicitly refuses a dead-URL CI check), so nothing here fires
+// on style — only on a number or a name that the data contradicts.
+const indexhtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+// Strip whole-line `//` comments before scanning: a comment explaining a past
+// copy bug legitimately QUOTES the bad phrasing (the fix note in
+// renderMinutesOutlook does exactly that) and must not re-trip check C. Only
+// full-line comments are dropped, so `https://` inside a string is untouched.
+const deComment = src => src.split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n');
+const PROSE_SOURCES = [['js/app.js', deComment(appjs)], ['index.html', deComment(indexhtml)]];
+
+// A. CONF_SECTIONS intros: a claimed program count must match the real one.
+const sectionBlock = appjs.slice(appjs.indexOf('const CONF_SECTIONS=['));
+const sectionEnd = sectionBlock.indexOf('\n  ];');
+for (const m of sectionBlock.slice(0, sectionEnd).matchAll(/\{key:'([^']+)'(?:,\s*divFilter:'([^']+)')?[^}]*?intro:'((?:[^'\\]|\\.)*)'/g)) {
+  const [, key, divFilter, intro] = m;
+  const actual = schools.filter(s => s.confKey === key && (!divFilter || s.div === divFilter)).length;
+  // (?<![-\w]) keeps "perennial top-10 programs" from reading as a count claim.
+  for (const c of intro.matchAll(/(?<![-\w])(\d+)\s+(?:fully[- ]profiled\s+)?(?:programs?|schools?)\b/gi)) {
+    if (parseInt(c[1], 10) !== actual) {
+      note('PROSE', `CONF_SECTIONS '${key}' intro claims ${c[1]} programs but the section holds ${actual} — "${c[0]}"`);
+    }
+  }
+  if (/\blisted programs?\b/i.test(intro)) {
+    note('PROSE', `CONF_SECTIONS '${key}' intro still uses the retired "listed programs" framing — every school has been full-profile since v25`);
+  }
+}
+
+// B. Any "N of M MFs" roster claim in UI copy must match a real school.
+for (const [file, src] of PROSE_SOURCES) {
+  for (const m of src.matchAll(/(\d+)\s+of\s+(\d+)\s+MFs?\b/gi)) {
+    const [cleared, total] = [parseInt(m[1], 10), parseInt(m[2], 10)];
+    const hit = schools.some(s => s.minutesOutlook && s.minutesOutlook.mf_total === total
+      && s.minutesOutlook.cleared_before_2027 === cleared);
+    if (!hit) note('PROSE', `${file} asserts "${m[0]}" but no school has mf_total=${total} with cleared_before_2027=${cleared} — stale after a roster refresh`);
+  }
+}
+
+// C. Copy must not be written against a SCRAPE season's class years. The stored
+// buckets (cleared_before_2027 / rising_senior_2027 / rising_junior_2027) are
+// already normalised to Olivier's entry year whatever season was scraped, so
+// prose should describe those. "2027 seniors" is fine — that IS the bucket.
+for (const [file, src] of PROSE_SOURCES) {
+  for (const m of src.matchAll(/\b20\d{2}\s+(?:Sr|Jr|So|Fr)\b\.?|based on 20\d{2} rosters?/gi)) {
+    note('PROSE', `${file} hard-codes a roster season's class years — "${m[0]}". Write copy against the normalised 2027 buckets instead; this phrasing inverts when a school is refreshed onto a newer roster.`);
+  }
+}
+
+// D. Phantom anchors — schools named in prose that are not in the guide at all.
+// Explicit list rather than fuzzy name-matching, so it cannot false-positive on
+// clubs, cities, hospitals or conferences (all of which legitimately appear).
+// ADD TO THIS LIST whenever a phantom is found; both entries below were real.
+// The lookaheads are load-bearing: "USC Upstate" and "USC Aiken" are REAL schools
+// that legitimately appear as previous-school names in recruit_pathway_note text.
+const PHANTOM_SCHOOLS = [
+  [/\bUSC\b(?!\s+(?:Upstate|Aiken|Beaufort|Sumter|Lancaster|Salkehatchie))/,
+    'USC — fields no team in this guide (removed from the big-ten intro, v44.43)'],
+  [/\bUF\b(?!\s*[—-]\s*academic reference)/,
+    'UF — Florida fields no men\'s soccer program (CLAUDE.md §5a flags this in the Glossary)'],
+];
+// SCOPE: js/app.js and index.html ONLY — do NOT broaden this to data/*.json.
+// Three legitimate hits live there and would all become false positives:
+// conferences.json correctly states that USC joined the Big Ten in 2024 (a true
+// fact about the conference, not a claim the school is in the guide); its
+// otherSchools[] carries an explicit, correct "⚠ UF — academic reference only
+// (no men's varsity soccer)" chip; and several recruit_pathway_note strings name
+// USC Upstate / USC Aiken as real transfer origins.
+for (const [file, src] of PROSE_SOURCES) {
+  for (const [re, why] of PHANTOM_SCHOOLS) {
+    if (re.test(src)) note('PROSE', `${file} names ${why}`);
+  }
+}
+
 // ── prestige rank sequence ──
 const pr = prestige.map(p => p.rank).sort((a, b) => a - b);
 for (let i = 0; i < pr.length; i++) if (pr[i] !== i + 1) { note('PRESTIGE', `conf-prestige rank sequence broken at ${pr[i]}`); break; }

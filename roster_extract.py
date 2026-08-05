@@ -89,7 +89,10 @@ def bucket(cls):
         return 'rising_sr'
     if re.search(r'\bSO\b|\bSOPH|SOPHOMORE', c):
         return 'rising_jr'
-    if re.search(r'\bFR\b|FRESH|FRESHMAN', c):
+    # 'Fy.' is Yale's (and the Ivies' generally) label for a first-year. Same
+    # silent-failure class as the ordinal labels above: without this it lands in
+    # 'unknown', breaks the mf_total invariant, and understates `returning`.
+    if re.search(r'\bFR\b|\bFY\b|FRESH|FRESHMAN|FIRST[\s\-]?YEAR', c):
         return 'returning'
     return 'unknown'
 
@@ -265,7 +268,7 @@ def main():
         return sid, dict(conf=conf, name=s['name'], url=cur,
                          cur=cur_r, prev=prev_r)
 
-    path = r'%s\rosters_s2.json' % sys.path[0]
+    path = os.environ.get('ROSTER_OUT') or os.path.join(ROOT, 'rosters_s2.json')
     try:                                  # merge, don't clobber earlier runs
         out = json.loads(io.open(path, encoding='utf-8').read())
     except Exception:

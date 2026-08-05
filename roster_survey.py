@@ -1,15 +1,19 @@
-"""Wave 1 Session 2 availability survey — big-ten, big-west, caa, d1-other.
+"""2026-27 roster-refresh availability survey.  Usage: python roster_survey.py [conf ...]
+
+Defaults to the Wave 1 Session 2 set (big-ten, big-west, caa, d1-other) when no
+conference file is named. Re-run it before EVERY wave — schools flip throughout
+August and a list more than a day or two old is stale.
 
 Mirrors js/app.js rosterUrl() exactly (v44.33: no overrides map).
 Classifies the season from the server-rendered <title>, hyphenated spans FIRST
 so 2025-26 never reads as a 2026 season.
 """
-import io, json, re, sys
+import io, json, os, re, sys
 import concurrent.futures as cf
 import urllib.request, urllib.error
 
-ROOT = r'C:\Claude Code Space\Scholarship Guide\Github Clone\olivier-guide'
-CONFS = ['big-ten', 'big-west', 'caa', 'd1-other']
+ROOT = os.path.dirname(os.path.abspath(__file__))
+CONFS = sys.argv[1:] or ['big-ten', 'big-west', 'caa', 'd1-other']
 UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36')
 
@@ -108,8 +112,10 @@ def main():
               % (r['conf'], r['id'], r['label'], r['season'] or '-',
                  r['stored_season'] or '-', r['players'], r['status'], r['title']))
 
-    io.open(r'%s\survey_s2.json' % sys.path[0], 'w', encoding='utf-8').write(
+    out = os.path.join(ROOT, 'survey_%s.json' % '_'.join(CONFS))
+    io.open(out, 'w', encoding='utf-8').write(
         json.dumps(rows, indent=2, ensure_ascii=False))
+    print('\nwrote %s' % out)
 
     from collections import Counter
     print('\nTOTALS:', dict(Counter(r['label'] for r in rows)), ' n=%d' % len(rows))

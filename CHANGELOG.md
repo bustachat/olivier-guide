@@ -6,6 +6,43 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.36–v44.38 (August 2026) — Wave 1 Session 1: 2026-27 roster refresh, aac + acc + big-east (Change Type 3)
+
+**27 of 31 schools refreshed to the 2026-27 season.** All read in a real browser (Chrome MCP) off each school's own roster page, Tier 1. `mf_total` and `roster_season` written in the same edit every time, per the v44.32 rule; the full Type 3 cascade (`minutesOutlook{}` → `lensScores.minutes` → `fitOlivier` → `lensScores.overall` → `lensScores.value`) run on every one. Issues: 0 at every gate.
+
+| commit | file | schools |
+|---|---|---|
+| v44.36 | `data/aac.json` | fau, fiu, memphis, temple, uab, usf (6) |
+| v44.36b | `data/aac.json` | trajectory-rule correction, no new research |
+| v44.37 | `data/acc.json` | virginia, wakeforest, smu, duke, louisville, notredame, stanford, syracuse, unc, cal (10) |
+| v44.38 | `data/big-east.json` | butler, creighton, depaul, georgetown, marquette, providence, setonhall, stjohns, uconn, villanova, xavier (11) |
+
+**Both §6 `MO_MISSING_OK` whitelist entries are now closed.** `notredame` and `georgetown` had been missing `rising_senior_2027_count` since the v21 era. Their 2026-27 rosters give 3 (Schroeder, Shaul, Hilden) and 4 (Godinho, Urrutia, Brown, Ahmed). The Set is now empty but deliberately **kept**, with a comment marking it as the escape hatch for a genuine research gap — never for silencing a skipped cascade.
+
+**Two schools deferred to Wave 2, both for the same class of reason — a published season page is not a populated one.**
+- `tulsa`: the 2026 page renders coaches and support staff and **zero players**. Control-tested against `/roster/2025`, which returns 29 players / 8 MFs through the identical extractor, so the page is genuinely unpopulated rather than mis-scraped.
+- `pittsburgh`: the 2026 page lists **13 players against 26 on its 2025 page** — half-published. Using it would have produced a fabricated opportunity score.
+
+Both keep their stored 2025-26 data and their `roster_season: "2025-26"` label, which correctly describes where the stored count came from. `army`/`navy` untouched — `available:false` by design (§4).
+
+**A method inconsistency was caught and fixed mid-session (v44.36b).** §14's Opportunity Score table gives a *range* per row, and the first six schools had those ranges resolved by feel — `fau` (opp 5.0, bottom of its row) and `fiu` (opp 7.0, top of the same row) had both landed on the identical trajectory. Position within a row is now interpolated linearly from where opp sits in the row's own opp range, rounded to the nearest 5, and the trajectory is **derived from the researched counts** rather than hand-entered: patches carry the returning-competition count and `apply_roster_refresh.py` computes `opp = cleared×2 + rising_sr×1 − max(0, returning−3)×0.5`. Same opp now always yields the same trajectory. Re-ran the AAC under the uniform rule: fau 55→52, memphis 64→63, temple 42→44, usf 59→58; fiu and uab unmoved.
+
+**Two `recruit_pathway` reclassifications**, both off a previous-school column read directly:
+- `memphis` Transfer-preferred → **Portal/JUCO-heavy** — 8 of 10 MFs list a prior college, including 2 from JUCO (Barton County CC, Indian Hills CC).
+- `xavier` Freshman-friendly → **Mixed** — 4 of 10 list a prior college and three of those are two-year programs (Iowa Western CC, Snow College, Monroe).
+
+Rendered Pathways-tab buckets afterwards: Freshman-friendly 74 · Mixed 21 · Portal/JUCO-heavy 7 · Transfer-preferred 2, matching the data exactly.
+
+**Largest score moves.** `louisville` 71→55 — not one of its 9 midfielders graduates before Olivier's 2027 entry, dropping opp to 1.5. `cal` 67→71 the other way — 7 of 12 MFs (6 seniors + a graduate) clear at once, the biggest single-school opening in the batch. `butler` (opp 0.0) and `stjohns` (opp 0.5) bottom out for the same reason as Louisville: nobody leaves.
+
+**Eleven schools publish no previous-school column at all** (fau, syracuse, cal, georgetown, stjohns, uconn, villanova, depaul, marquette, setonhall — plus villanova/cal which have the field but leave it empty). Their `recruit_pathway` was **retained, not re-derived**, and each note now says so explicitly and flags itself as lower-confidence. Retaining a prior classification is correct here; inventing one from hometown/high-school text would not be.
+
+**No coach changed at any of the 29 schools researched.** All confirmed against each school's own staff page — so no Change Type 2, no re-rank, and no §5a `tactical` review was triggered.
+
+**New roster layout documented** (§15): the WMT `roster-card-item` template used by virginia and stanford, whose academic year sits in an *unlabelled* `--basic` profile field rather than a labelled one. A labelled-field-only extractor silently returns players with no class year.
+
+---
+
 ### v44.35 (August 2026) — St. Edward's coach contact corrected + Seton Hall phone added (Change Type 2, contact only)
 
 Closes the §6 item opened by v44.34. Both re-verified Tier-1 **immediately before writing**, not carried over from the earlier session — the project rule is never to guess coach contact info, and the previous read was a side effect of URL work.

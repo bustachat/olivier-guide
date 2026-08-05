@@ -139,6 +139,8 @@ def main(conf):
         mo = s['minutesOutlook']
         before = (s['fitOlivier'], s['lensScores']['minutes'], s['lensScores']['value'])
 
+        mo['available'] = True    # Wave 1 S2: stonybrook flips false->true here,
+                                  # so mo_score() must see the real trajectory.
         mo['mf_total'] = p['mf_total']
         mo['roster_season'] = p['roster_season']          # same edit as mf_total (v44.32)
         mo['cleared_before_2027'] = len(p['cleared'])
@@ -498,6 +500,363 @@ PATCHES = {
                          "retained. The midfield is strongly international (Norway, Italy, Germany, Sweden) with 3 "
                          "freshmen, consistent with direct club/academy recruiting — a close profile match to "
                          "Olivier's own route.",
+        ),
+    },
+
+    # ═══ WAVE 1 SESSION 2 ═══════════════════════════════════════════════════
+    # big-ten / big-west / caa / d1-other, researched 2026-08-05 off each
+    # school's live 2026-27 roster. Rosters on these hosts are SERVER-RENDERED
+    # (position, academic year and previous-school column all in raw HTML), so
+    # they were parsed rather than browsed; the extractor was control-tested
+    # against 8 committed Session-1 schools and reproduced all 8 exactly.
+    # `recruit_risk` is RETAINED from the stored value throughout — it is
+    # unscored, and re-deriving 27 judgment values by a newly-invented rule was
+    # not in this session's scope.
+    'big-ten': {
+        'indiana': dict(
+            mf_total=7, roster_season='2026-27',
+            cleared=['Alex Matthews', 'Jacopo Fedrizzi', 'Justin Shreffler', 'EJ Dreher', 'Wes Carnevale'],
+            rising_sr=['Grant Paskus', 'Charlie Heuer'],
+            rising_jr=[],
+            returning=0, recruit_risk='Medium',
+            pathway='Transfer-preferred',
+            pathway_note="Reclassified from Freshman-friendly on the live 2026-27 iuhoosiers.com roster (7 MFs of "
+                         "30). 4 of 7 list a previous 4-year college (Missouri State, Evansville, NIU, Cornell) "
+                         "and there is NOT ONE first- or second-year player in the entire midfield — every MF is a "
+                         "3rd, 4th or 5th year. Indiana is currently rebuilding its midfield through the portal "
+                         "rather than through freshman intake. Note the shape cuts both ways: it produces the "
+                         "largest opening in this batch (5 of 7 clear before 2027) but the route in is a transfer "
+                         "slot, not a freshman one.",
+        ),
+        'maryland': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=['Leon Koehl', 'Albi Ndrenika', 'Zack Harris', 'Kenny Quist-Therson'],
+            rising_sr=[],
+            rising_jr=['Henry Bernstein'],
+            returning=5, recruit_risk='High',
+            pathway_note="Re-confirmed on the live 2026-27 umterps.com roster (9 MFs of 25). Only 1 of 9 lists a "
+                         "previous college (Zack Harris, CSUN); 4 of 9 are freshmen or redshirt freshmen recruited "
+                         "straight in (DC United Academy, Ashanti/Exulted FC). Note NO midfielder is a junior, so "
+                         "4 clear before Olivier's 2027 entry and the rest are all underclassmen.",
+        ),
+        'michigan': dict(
+            mf_total=13, roster_season='2026-27',
+            cleared=["Patrick O'Toole", 'Nico Pendleton', 'Michael Haikal', 'Duilio Herrera',
+                     'Stefan Momcilovic', 'Murphy Parker', 'Joao Paulo Ramos', 'Dylan Davis'],
+            rising_sr=['Kamau Brame'],
+            rising_jr=['Joah Reyna'],
+            returning=4, recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 mgoblue.com roster (13 MFs of 32). Michigan's table publishes "
+                         "no previous-school column, so the transfer-vs-freshman split cannot be re-derived; "
+                         "classification retained from the earlier research pass and treated as lower-confidence. "
+                         "The headline finding is turnover rather than pathway: 8 of 13 MFs clear before 2027, the "
+                         "second-largest midfield opening in this batch.",
+        ),
+        'michiganstate': dict(
+            mf_total=11, roster_season='2026-27',
+            cleared=['Miles Merritt', 'Colin Arce'],
+            rising_sr=['Jared Smid'],
+            rising_jr=['Luke Spadafora', 'Peter Soudan', 'Justin Cassell', 'Kayden Hudson',
+                       'Thatcher Hogan', 'Leo Conneh'],
+            returning=8, recruit_risk='Medium',
+            pathway_note="Re-confirmed on the live 2026-27 msuspartans.com roster (11 MFs of 28). Just 1 of 11 lists "
+                         "a previous college (Miles Merritt, Incarnate Word) — the other 10 came directly from high "
+                         "school or club. Freshman-friendly on route, but the group is very young: 6 of 11 are "
+                         "sophomores who all return through 2029, so early minutes are unlikely.",
+        ),
+        'northwestern': dict(
+            mf_total=13, roster_season='2026-27',
+            cleared=['Andrew Millar', 'Tyler Glassberg', 'Yuval Nimrodi', 'Marco Silva',
+                     'Baraka Tarleton', 'Peter Riesz'],
+            rising_sr=['Gabriel Smyth', 'James Spatzek'],
+            rising_jr=['Sam Nagano', "Aidan O'Neill", 'Evrit Fisher'],
+            returning=5, recruit_risk='High',
+            pathway='Mixed',
+            pathway_note="Reclassified from Freshman-friendly on the live 2026-27 nusports.com roster (13 MFs of "
+                         "31). 5 of 13 MFs arrived as 4-year transfers (Vermont, St. John's, La Salle, Pittsburgh, "
+                         "Evansville) and 8 came straight from high school or club — a genuine two-route midfield "
+                         "rather than a freshman-intake one. No JUCO intake among current MFs. 6 of 13 clear before "
+                         "2027, so both routes are live for a 2027 entry.",
+        ),
+        'ohiostate': dict(
+            mf_total=10, roster_season='2026-27',
+            cleared=['Andre Roberts', 'Ryan Hannosh', 'Jacob Maisonneuve'],
+            rising_sr=['Victor Labite', 'Nick Skubis', 'Cole Evans'],
+            rising_jr=['Aaron Hurge'],
+            returning=4, recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 ohiostatebuckeyes.com roster (10 MFs of 27). The roster table "
+                         "publishes no previous-school column, so the split cannot be re-derived; classification "
+                         "retained from the earlier pass and flagged lower-confidence. Shape favours a 2028 entry "
+                         "over 2027: 3 MFs clear before Olivier arrives but 3 more graduate the year after.",
+        ),
+        'rutgers': dict(
+            mf_total=10, roster_season='2026-27',
+            cleared=['William Pierce', 'Amer Lukovic', 'Francesco Di Ponzio'],
+            rising_sr=['Lenny Aviles', 'Thomas Angelone', 'Dylan Carlson'],
+            rising_jr=['Puis Ssebulime', 'Zach Mastrodimos', 'Jude Essuman', 'Joshua Jerome'],
+            returning=4, recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 scarletknights.com roster (10 MFs of 32). Rutgers' table "
+                         "carries no previous-school column, so the split cannot be re-derived; classification "
+                         "retained and treated as lower-confidence. Same 2028-over-2027 shape as Ohio State — 3 "
+                         "clear now, 3 more the following year, against 4 returning sophomores.",
+        ),
+        'washington': dict(
+            mf_total=10, roster_season='2026-27',
+            cleared=['Cameron Cruz', 'Connor Lofy', 'Wyatt Lewis', 'Chad Sovde'],
+            rising_sr=['Zach Ramsey', 'Alex Hall'],
+            rising_jr=['Clarens Dollin', 'Kevin Hernandez', 'Osato Enabulele'],
+            returning=4, recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 gohuskies.com roster (10 MFs of 29). Washington publishes no "
+                         "previous-school column, so the split cannot be re-derived; classification retained, "
+                         "lower-confidence. Washington labels class years by ELIGIBILITY ORDINAL (1st–5th) rather "
+                         "than Fr./So./Jr./Sr. — 4 of 10 MFs are 4th or 5th years clearing before 2027.",
+        ),
+        'wisconsin': dict(
+            mf_total=7, roster_season='2026-27',
+            cleared=['Robert Kaemmerer', 'Gianluca Del Priore'],
+            rising_sr=['Julian Kuhr', 'Matthew Zachemski', 'Joon Han'],
+            rising_jr=['Aidan Martinez'],
+            returning=2, recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 uwbadgers.com roster (7 MFs of 27). No previous-school column "
+                         "is published, so the Mixed classification is retained rather than re-derived and should "
+                         "be treated as lower-confidence. Small, top-heavy midfield: 5 of 7 are seniors or juniors, "
+                         "leaving only 2 underclassmen behind them.",
+        ),
+    },
+
+    'big-west': {
+        'calpoly': dict(
+            mf_total=5, roster_season='2026-27',
+            cleared=['Brandon Newman', 'Benji Jimenez'],
+            rising_sr=['Diego Guerra', 'Rylan Firouznam'],
+            rising_jr=['Cole Aman'],
+            returning=1, recruit_risk='Medium',
+            pathway_note="Re-confirmed on the live 2026-27 gopoly.com roster (5 MFs of 26). Cal Poly's column is "
+                         "headed 'Previous School/Club' and all 5 MFs have an entry, but 4 of them are CLUBS, not "
+                         "colleges (Portland Timbers2, San Jose Earthquakes II, Pateadores SC x2). Only Brandon "
+                         "Newman (Columbia) is a genuine college transfer, so the midfield is club/academy-sourced "
+                         "and the Freshman-friendly classification holds. Smallest midfield group in the batch.",
+        ),
+        'ucdavis': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=['Declan Horio'],
+            rising_sr=['Gabriel Haggerty', 'Tristan Wouters', 'Rafael Matiello', 'Ben Elkins'],
+            rising_jr=['Derrick Green', 'Ensio Sardans', 'Jackson Richardson', 'Kota Brown'],
+            returning=4, recruit_risk='High',
+            pathway_note="Re-confirmed on the live 2026-27 ucdavisaggies.com roster (9 MFs of 36 — the largest squad "
+                         "in the batch outside Mercyhurst). Only 1 of 9 lists a previous college (Ben Elkins, "
+                         "Gonzaga); the other 8 came straight from high school or club. Strongly 2028-shaped: just "
+                         "1 MF clears before 2027, but 4 more graduate the following year.",
+        ),
+        'ucirvine': dict(
+            mf_total=10, roster_season='2026-27',
+            cleared=['Hunny Yoo', 'Ferri Duran', 'Isaac Powell', 'Braden Ferreira'],
+            rising_sr=['Isaiahs Gutierrez', 'Cade Williams'],
+            rising_jr=[],
+            returning=4, recruit_risk='Low',
+            pathway_note="Re-confirmed on the live 2026-27 ucirvinesports.com roster (10 MFs of 28). 3 of 10 list a "
+                         "previous school but only 2 are US college transfers, and BOTH are JUCO (Herkimer College, "
+                         "Irvine Valley College) — Ferri Duran's Universitat Autonoma de Barcelona is a Spanish "
+                         "university, not a US soccer transfer. The other 7 came direct, 4 of them current "
+                         "freshmen, so Freshman-friendly holds, but note the live JUCO channel.",
+        ),
+        'ucriverside': dict(
+            mf_total=8, roster_season='2026-27',
+            cleared=['Jona Martinez', 'Ethan Gonzalez', 'Diego Ramirez'],
+            rising_sr=['Tarek Hamideh', 'Diego Esquivel', 'Noa Wada'],
+            rising_jr=['Adrian Diaz'],
+            returning=2, recruit_risk='Low',
+            pathway_note="Re-confirmed on the live 2026-27 gohighlanders.com roster (8 MFs of 32). 2 of 8 are "
+                         "college transfers and they split across both routes — Ethan Gonzalez from UNLV (4-year) "
+                         "and Diego Esquivel from Cuyamaca CC (JUCO) — which is exactly the Mixed profile already "
+                         "stored. The other 6 arrived from high school or club sides.",
+        ),
+    },
+
+    'caa': {
+        'charleston': dict(
+            mf_total=11, roster_season='2026-27',
+            cleared=['Arnau Olle', 'Ezequiel Emanuele Goetzke', 'Hogan Walker'],
+            rising_sr=['Stian Bendvold', 'Ramsey Ray'],
+            rising_jr=['Dan Toulson', 'Federico Bellisi', 'Bemanzi Alibaruho', 'Reeves Cates', 'Paul Killeen'],
+            returning=6, recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 cofcsports.com roster (11 MFs of 28). Charleston's table "
+                         "publishes no previous-school column, so the split cannot be re-derived; classification "
+                         "retained and flagged lower-confidence. 5 of 11 are sophomores returning through 2029, so "
+                         "the queue behind the 3 departing seniors is long.",
+        ),
+        'drexel': dict(
+            mf_total=15, roster_season='2026-27',
+            cleared=['Tiago Lima-Bittencourt', 'Will Starker', 'Max Haberl', 'Julian Pittaoulis'],
+            rising_sr=['Tomislav Vrdoljak', 'Morgan Worsfold-Gregg', 'Sharif Mohammed', 'Mo Diallo',
+                       'Gonzalo Alberola'],
+            rising_jr=['Gianluca Grubic', 'Daniel Celso', 'Leon Park'],
+            returning=6, recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 drexeldragons.com roster (15 MFs of 29 — the largest midfield "
+                         "group in this batch). No previous-school column is published, so the classification is "
+                         "retained rather than re-derived and treated as lower-confidence. 4 clear before 2027 and "
+                         "5 more the year after, but 15 midfielders in a 29-man squad is heavy competition.",
+        ),
+        'elon': dict(
+            mf_total=12, roster_season='2026-27',
+            cleared=['Martin Kozak', 'Jahmir Flowers', 'Ryan Manna'],
+            rising_sr=['Weston Jonke', 'Daire McCarthy', 'Dominik Renz', 'Noah Sonne Kargo',
+                       'JP Quigley', 'Ben Madore'],
+            rising_jr=['Oscar Tonidandel'],
+            returning=3, recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 elonphoenix.com roster (12 MFs of 29). Elon publishes no "
+                         "previous-school column, so the split cannot be re-derived; classification retained, "
+                         "lower-confidence. Unusually top-heavy: 9 of 12 MFs are seniors or juniors, so only 3 "
+                         "underclassmen sit behind them — a strong 2028 entry point.",
+        ),
+        'hofstra': dict(
+            mf_total=12, roster_season='2026-27',
+            cleared=['Sean Keane', 'David Citron'],
+            rising_sr=['Henri Poll', 'Marc Perkuhn', 'Charlie Blair', 'Owen Haviland'],
+            rising_jr=['Jack Benham', 'Axel Ruben'],
+            returning=6, recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 gohofstra.com roster (12 MFs of 27 — doubled from the 6 "
+                         "recorded on the 2025-26 roster). No previous-school column is published, so the stored "
+                         "Portal/JUCO-heavy classification is retained rather than re-derived and should be treated "
+                         "as lower-confidence — note it is the one non-freshman-friendly value in the CAA file, so "
+                         "it is worth re-testing when Hofstra next publishes the column.",
+        ),
+        'monmouth': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=['Sean Cadigan', 'Javier Losa', 'Ian Brunet'],
+            rising_sr=['Brendan Tansey'],
+            rising_jr=['Jessy Bichler'],
+            returning=5, recruit_risk='Low',
+            pathway_note="Re-read on the live 2026-27 monmouthhawks.com roster (9 MFs of 26, up from 5 a year ago). "
+                         "Monmouth's table carries no previous-school column, so the split cannot be re-derived; "
+                         "classification retained, lower-confidence. 3 of 9 clear before 2027 against only 1 rising "
+                         "senior, so the group behind is young.",
+        ),
+        'northeastern': dict(
+            mf_total=14, roster_season='2026-27',
+            cleared=['Matty Gardner'],
+            rising_sr=['Ethan Kang', 'Richard Conces', 'Ignacio Doglioli'],
+            rising_jr=['Julius Rüger', 'Derian Berisha', 'Will Schmidt', 'Asiah Carroll', 'Anthony Rapo'],
+            returning=10, recruit_risk='Low',
+            pathway_note="Re-confirmed on the live 2026-27 nuhuskies.com roster (14 MFs of 27). 13 of 14 MFs have a "
+                         "previous-school entry, but almost every one is a CLUB or academy rather than a college — "
+                         "Houston Dynamo (MLS NEXT), Toronto FC, Barca Residency Academy, Minnesota United II, "
+                         "Atlanta United Academy, SC Verl II, Blau Weiss Gottschee. Only Ignacio Doglioli lists a "
+                         "college (Bellarmine). That is direct academy recruiting, so Freshman-friendly is strongly "
+                         "confirmed — but only 1 MF clears before 2027 against 10 returning underclassmen.",
+        ),
+        'stonybrook': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=['Kyle Smith', 'Justin Jean-Louis', 'Alex Fleury'],
+            rising_sr=['Scemar Webb'],
+            rising_jr=['Nokkvi Hjorvarsson', 'Kristoffer Aarflot'],
+            returning=5, recruit_risk='Medium',
+            # No `pathway`: Stony Brook publishes no previous-school column AND has no
+            # prior classification to retain (this record was available:false until now),
+            # so there is nothing to re-derive from and nothing to carry forward.
+            pathway_note="FIRST population of this record — Stony Brook was minutesOutlook.available:false since "
+                         "v21 because the athletics site was unreachable/off-season at every prior attempt (see "
+                         "CLAUDE.md 6). Its live 2026-27 stonybrookathletics.com roster now renders normally: 9 MFs "
+                         "of a 29-man squad, 3 clearing before Olivier's 2027 entry. The roster publishes no "
+                         "previous-school column, so recruit_pathway is deliberately left UNSET rather than "
+                         "guessed — there is no prior value to retain either.",
+        ),
+        'william_mary': dict(
+            mf_total=11, roster_season='2026-27',
+            cleared=['Hamilton Howes', 'Gabe Ruitenberg', 'Alexandros Katsari-Hoefer', 'Kai Feng'],
+            rising_sr=['Thor Sigurjonsson'],
+            rising_jr=['Beckham Harris', 'JT Quinter'],
+            returning=6, recruit_risk='High',
+            pathway_note="Re-confirmed on the live 2026-27 tribeathletics.com roster (11 MFs of 28). Only 1 of 11 "
+                         "lists a previous college (Kai Feng, VCU); the other 10 arrived directly from high school "
+                         "or club. 4 clear before 2027 against just 1 rising senior.",
+        ),
+    },
+
+    'd1-other': {
+        'akron': dict(
+            mf_total=11, roster_season='2026-27',
+            cleared=['Jack Sullivan', 'Francisco Tolaba', 'Matt Dreas'],
+            rising_sr=['Tyler Morck', 'Jack Roman'],
+            rising_jr=['Thomas O’Rourke', 'Braxton Hayes'],
+            returning=6, recruit_risk='Medium',
+            pathway_note="Re-confirmed on the live 2026-27 gozips.com roster (11 MFs of 29). NOT ONE of the 11 MFs "
+                         "lists a previous college — the previous-school column is published and is empty for every "
+                         "midfielder. That is the purest freshman-intake midfield in this batch and the strongest "
+                         "possible confirmation of the stored classification. Akron does not use the portal for "
+                         "midfielders.",
+        ),
+        'delaware': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=['Rich Monath', 'Jayden Jackson'],
+            rising_sr=['Freddy Jeffreys', 'Rocco Pastore'],
+            rising_jr=['Liam Penny'],
+            returning=5, recruit_risk='Medium',
+            pathway_note="Re-confirmed on the live 2026-27 bluehens.com roster (9 MFs of 29, up from 4 a year ago). "
+                         "Just 1 of 9 lists a previous college (Jayden Jackson, Temple); the other 8 came straight "
+                         "from high school, and the roster is heavily Mid-Atlantic-sourced (Philadelphia Union "
+                         "Academy, Calvert Hall), consistent with direct high-school recruiting.",
+        ),
+        'denver': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=['David Biggers', 'Luke Schultz', 'Holger Olsson'],
+            rising_sr=[],
+            rising_jr=['Andrew Mann', 'Hudson Tate', 'Anthony Masino'],
+            returning=6, recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 denverpioneers.com roster (9 MFs of 28). Denver publishes no "
+                         "previous-school column, so the split cannot be re-derived; classification retained and "
+                         "flagged lower-confidence. Note NO midfielder is a junior — 3 clear before 2027 and the "
+                         "remaining 6 are all sophomores and freshmen who return through 2029 and beyond.",
+        ),
+        'gcu': dict(
+            mf_total=7, roster_season='2026-27',
+            cleared=['Martin Luala', 'Jorge Lopez'],
+            rising_sr=['Damon Rouse', 'Cruzeiro Cruz'],
+            rising_jr=['Toto Salama'],
+            returning=3, recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 gculopes.com roster (7 MFs of 26). GCU's table carries no "
+                         "previous-school column, so the classification is retained rather than re-derived and "
+                         "should be treated as lower-confidence. Small midfield group with an even spread — 2 "
+                         "clear, 2 rising seniors, 3 underclassmen.",
+        ),
+        'mercyhurst': dict(
+            mf_total=18, roster_season='2026-27',
+            cleared=['Alvar Silva', 'Jo Hanamoto'],
+            rising_sr=['Ronny Wakelin', 'Santiago Bustamante', 'Jero Bencomo', 'Rowan Slater',
+                       'Paul Shaw', 'Kyle Joyce', 'Harrison Frearson'],
+            rising_jr=['Santiago Giraldo', 'Tyler Prex', 'Vincent Armstrong', 'Tyler Hunter'],
+            returning=9, recruit_risk='High',
+            pathway_note="Re-confirmed on the live 2026-27 hurstathletics.com roster — 18 MFs inside a 57-man "
+                         "squad, by far the largest roster in the guide (verified twice, via the card layout and "
+                         "the roster table independently). Only 2 of 18 list a previous college: Santiago "
+                         "Bustamante (Francis Marion, 4-year) and Jo Hanamoto (Lane Community College, JUCO). The "
+                         "other 16 came directly from high school or club, so Freshman-friendly holds — but with a "
+                         "57-man squad and only 2 midfielders clearing before 2027, minutes are the constraint.",
+        ),
+        'uca': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=[],
+            rising_sr=['Rico Duggan', 'Tristan Amezcua'],
+            rising_jr=['Garner Wolfe', 'Vaclav Kozeny', 'Samuel Switzer'],
+            returning=7, recruit_risk='High',
+            pathway_note="Re-confirmed on the live 2026-27 ucasports.com roster (9 MFs of 27). UCA combines "
+                         "hometown and previous club in one column, and 7 of the 9 entries are CLUBS (New Mexico "
+                         "United, SalPa, FK Dukla Prague, Grindavik, Kungsangens IF, GFI Academy, Little Rock "
+                         "Rangers). Only 2 are colleges — William Carey (NAIA) and Irvine Valley College (JUCO) — "
+                         "so the international-club route dominates and Freshman-friendly holds. Note NO midfielder "
+                         "graduates before Olivier's 2027 entry: the whole group returns, which drives the "
+                         "opportunity score to zero despite the accessible recruiting route.",
+        ),
+        'vermont': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=['Ezra Widman', 'Halim Bangura', 'Noel Bjork', 'Jeremy Tsang'],
+            rising_sr=['Gabriel Chavez', 'Luis Vetter', 'Nash Barlow'],
+            rising_jr=['Shalom Adja'],
+            returning=2, recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 uvmathletics.com roster (9 MFs of 30). Vermont publishes no "
+                         "previous-school column, so the split cannot be re-derived; classification retained, "
+                         "lower-confidence. Strong 2027 shape: 4 of 9 clear before Olivier arrives and 3 more are "
+                         "rising seniors, leaving only 2 underclassmen behind them.",
         ),
     },
 }

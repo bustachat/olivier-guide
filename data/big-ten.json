@@ -426,54 +426,55 @@
       "overall": 55,
       "soccer": 82,
       "academic": 95,
-      "minutes": 50,
+      "minutes": 48,
       "lifestyle": 0,
       "value": 33
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 3,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
+        "Alex Matthews",
         "Jacopo Fedrizzi",
-        "Seth Stewart",
-        "Noah Joseph"
-      ],
-      "rising_senior_2027_count": 3,
-      "rising_senior_2027_names": [
-        "Charlie Heuer",
         "Justin Shreffler",
-        "EJ Dreher"
+        "EJ Dreher",
+        "Wes Carnevale"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Grant Paskus",
+        "Charlie Heuer"
       ],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
       "recruit_risk": "Medium",
-      "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "5 of 8 current MFs (62%) recruited directly from HS with no prior college, per the live 2025 iuhoosiers.com roster. 3 transferred in — Cristiano Bruletti (Michigan State), Jack Wagoner (Marquette), Jacopo Fedrizzi (Evansville).",
+      "recruit_pathway": "Transfer-preferred",
+      "recruit_pathway_note": "Reclassified from Freshman-friendly on the live 2026-27 iuhoosiers.com roster (7 MFs of 30). 4 of 7 list a previous 4-year college (Missouri State, Evansville, NIU, Cornell) and there is NOT ONE first- or second-year player in the entire midfield — every MF is a 3rd, 4th or 5th year. Indiana is currently rebuilding its midfield through the portal rather than through freshman intake. Note the shape cuts both ways: it produces the largest opening in this batch (5 of 7 clear before 2027) but the route in is a transfer slot, not a freshman one.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
+          "pct": 60,
           "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ]
@@ -899,14 +900,14 @@
     },
     "mapX": 448,
     "mapY": 150,
-    "fitOlivier": 44,
+    "fitOlivier": 53,
     "lensScores": {
-      "overall": 44,
+      "overall": 53,
       "soccer": 76,
       "academic": 85,
-      "minutes": 36,
+      "minutes": 58,
       "lifestyle": 0,
-      "value": 26
+      "value": 32
     },
     "confRecord": [
       {
@@ -1011,40 +1012,53 @@
     "domain": "umich.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 15,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 9,
-      "cleared_names": [],
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Patrick O'Toole",
+        "Nico Pendleton",
+        "Michael Haikal",
+        "Duilio Herrera",
+        "Stefan Momcilovic",
+        "Murphy Parker",
+        "Joao Paulo Ramos",
+        "Dylan Davis"
+      ],
       "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 5,
-      "rising_junior_2027_names": [],
+      "rising_senior_2027_names": [
+        "Kamau Brame"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Joah Reyna"
+      ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "All 15 current MFs (100%) recruited directly from HS/club with no prior college — no transfers among midfielders, per the live 2025 mgoblue.com roster.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 mgoblue.com roster (13 MFs of 32). Michigan's table publishes no previous-school column, so the transfer-vs-freshman split cannot be re-derived; classification retained from the earlier research pass and treated as lower-confidence. The headline finding is turnover rather than pathway: 8 of 13 MFs clear before 2027, the second-largest midfield opening in this batch.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
-          "label": "Coming off bench"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ],
@@ -1161,14 +1175,14 @@
     },
     "mapX": 454,
     "mapY": 146,
-    "fitOlivier": 40,
+    "fitOlivier": 36,
     "lensScores": {
-      "overall": 40,
+      "overall": 36,
       "soccer": 65,
       "academic": 58,
-      "minutes": 31,
+      "minutes": 19,
       "lifestyle": 0,
-      "value": 24
+      "value": 22
     },
     "confRecord": [
       {
@@ -1270,41 +1284,53 @@
     "domain": "msu.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 9,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 3,
-      "cleared_names": [],
-      "rising_senior_2027_count": 5,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 1,
-      "rising_junior_2027_names": [],
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Miles Merritt",
+        "Colin Arce"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Jared Smid"
+      ],
+      "rising_junior_2027_count": 6,
+      "rising_junior_2027_names": [
+        "Luke Spadafora",
+        "Peter Soudan",
+        "Justin Cassell",
+        "Kayden Hudson",
+        "Thatcher Hogan",
+        "Leo Conneh"
+      ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of 9 current MFs (89%) recruited directly from HS/club with no prior college, per the live 2025 msuspartans.com roster — only Miles Merritt transferred in (Incarnate Word).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 msuspartans.com roster (11 MFs of 28). Just 1 of 11 lists a previous college (Miles Merritt, Incarnate Word) — the other 10 came directly from high school or club. Freshman-friendly on route, but the group is very young: 6 of 11 are sophomores who all return through 2029, so early minutes are unlikely.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
-          "label": "Development squad"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
-          "label": "Coming off bench"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "5 So compete as Srs in Yr1 — congested midfield for first season. Opens significantly in Yr2 as 5 seniors exit. Roster count verified; names not captured."
@@ -1420,14 +1446,14 @@
     },
     "mapX": 467,
     "mapY": 166,
-    "fitOlivier": 54,
+    "fitOlivier": 50,
     "lensScores": {
-      "overall": 54,
+      "overall": 50,
       "soccer": 72,
       "academic": 60,
-      "minutes": 45,
+      "minutes": 33,
       "lifestyle": 50,
-      "value": 33
+      "value": 30
     },
     "confRecord": [
       {
@@ -1532,35 +1558,45 @@
     "domain": "osu.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 4,
-      "cleared_names": [],
-      "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 3,
-      "rising_junior_2027_names": [],
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Andre Roberts",
+        "Ryan Hannosh",
+        "Jacob Maisonneuve"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Victor Labite",
+        "Nick Skubis",
+        "Cole Evans"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Aaron Hurge"
+      ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "All 8 current MFs (100%) recruited directly from HS with no prior college — no transfers visible anywhere on the roster, per the live 2025 ohiostatebuckeyes.com roster.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 ohiostatebuckeyes.com roster (10 MFs of 27). The roster table publishes no previous-school column, so the split cannot be re-derived; classification retained from the earlier pass and flagged lower-confidence. Shape favours a 2028 entry over 2027: 3 MFs clear before Olivier arrives but 3 more graduate the year after.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Coming off bench"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
-          "label": "Regular starter"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -1682,14 +1718,14 @@
     },
     "mapX": 420,
     "mapY": 147,
-    "fitOlivier": 49,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 49,
+      "overall": 54,
       "soccer": 62,
       "academic": 90,
-      "minutes": 41,
+      "minutes": 53,
       "lifestyle": 50,
-      "value": 29
+      "value": 32
     },
     "confRecord": [
       {
@@ -1806,39 +1842,53 @@
     "minutesOutlook": {
       "available": true,
       "mf_total": 13,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 7,
-      "cleared_names": [],
-      "rising_senior_2027_count": 0,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 6,
-      "rising_junior_2027_names": [],
+      "roster_season": "2026-27",
+      "cleared_before_2027": 6,
+      "cleared_names": [
+        "Andrew Millar",
+        "Tyler Glassberg",
+        "Yuval Nimrodi",
+        "Marco Silva",
+        "Baraka Tarleton",
+        "Peter Riesz"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Gabriel Smyth",
+        "James Spatzek"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Sam Nagano",
+        "Aidan O'Neill",
+        "Evrit Fisher"
+      ],
       "recruit_risk": "High",
-      "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "9 of 13 current MFs (69%) recruited directly from HS with no prior college, per the live 2025 nusports.com roster. 4 transferred in — Joe Suchecki (Maryland), Yuval Nimrodi (La Salle), Baraka Tarleton (Evansville), Doug Hainer (Coastal Carolina).",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Reclassified from Freshman-friendly on the live 2026-27 nusports.com roster (13 MFs of 31). 5 of 13 MFs arrived as 4-year transfers (Vermont, St. John's, La Salle, Pittsburgh, Evansville) and 8 came straight from high school or club — a genuine two-route midfield rather than a freshman-intake one. No JUCO intake among current MFs. 6 of 13 clear before 2027, so both routes are live for a 2027 entry.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Coming off bench"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 45,
-          "label": "Coming off bench"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ],
@@ -1956,14 +2006,14 @@
     },
     "mapX": 407,
     "mapY": 136,
-    "fitOlivier": 47,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 47,
+      "overall": 40,
       "soccer": 62,
       "academic": 62,
-      "minutes": 49,
+      "minutes": 31,
       "lifestyle": 0,
-      "value": 28
+      "value": 24
     },
     "confRecord": [
       {
@@ -2071,40 +2121,49 @@
     "domain": "wisc.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 6,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 3,
-      "cleared_names": [],
-      "rising_senior_2027_count": 2,
-      "rising_senior_2027_names": [],
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Robert Kaemmerer",
+        "Gianluca Del Priore"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Julian Kuhr",
+        "Matthew Zachemski",
+        "Joon Han"
+      ],
       "rising_junior_2027_count": 1,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_names": [
+        "Aidan Martinez"
+      ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "3 of 7 current MFs (43%) recruited directly from HS/club with no prior college, per the live 2025 uwbadgers.com roster; 4 transferred in — Robert Kaemmerer (Oregon State), Alejandro Coury (Colgate), Ola Arntsen (Louisville), Gianluca Del Priore (Niagara).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 uwbadgers.com roster (7 MFs of 27). No previous-school column is published, so the Mixed classification is retained rather than re-derived and should be treated as lower-confidence. Small, top-heavy midfield: 5 of 7 are seniors or juniors, leaving only 2 underclassmen behind them.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 45,
-          "label": "Coming off bench"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 65,
-          "label": "Likely starter"
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
@@ -2221,14 +2280,14 @@
     },
     "mapX": 531,
     "mapY": 153,
-    "fitOlivier": 56,
+    "fitOlivier": 48,
     "lensScores": {
-      "overall": 56,
+      "overall": 48,
       "soccer": 65,
       "academic": 55,
-      "minutes": 53,
+      "minutes": 33,
       "lifestyle": 50,
-      "value": 34
+      "value": 29
     },
     "confRecord": [
       {
@@ -2333,35 +2392,48 @@
     "domain": "rutgers.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 5,
-      "cleared_names": [],
-      "rising_senior_2027_count": 2,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 1,
-      "rising_junior_2027_names": [],
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "William Pierce",
+        "Amer Lukovic",
+        "Francesco Di Ponzio"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Lenny Aviles",
+        "Thomas Angelone",
+        "Dylan Carlson"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Puis Ssebulime",
+        "Zach Mastrodimos",
+        "Jude Essuman",
+        "Joshua Jerome"
+      ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "10 of 11 current MFs (91%) recruited directly from HS/club with no prior college, per the live 2025 scarletknights.com roster — only Francesco Di Ponzio transferred in (Indian Hills CC, JUCO).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 scarletknights.com roster (10 MFs of 32). Rutgers' table carries no previous-school column, so the split cannot be re-derived; classification retained and treated as lower-confidence. Same 2028-over-2027 shape as Ohio State — 3 clear now, 3 more the following year, against 4 returning sophomores.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 50,
-          "label": "Regular starter"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Key player"
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -2595,35 +2667,47 @@
     "domain": "uw.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 13,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 8,
-      "cleared_names": [],
-      "rising_senior_2027_count": 5,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Cameron Cruz",
+        "Connor Lofy",
+        "Wyatt Lewis",
+        "Chad Sovde"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Zach Ramsey",
+        "Alex Hall"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Clarens Dollin",
+        "Kevin Hernandez",
+        "Osato Enabulele"
+      ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "All 14 current MFs (100%) recruited directly from HS/club with no prior college — zero transfers anywhere on the entire 2025 roster, per the live gohuskies.com roster. Notable given Washington won the 2025 NCAA national title (Jamie Clark's first) built entirely through direct recruiting, not the transfer portal.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 gohuskies.com roster (10 MFs of 29). Washington publishes no previous-school column, so the split cannot be re-derived; classification retained, lower-confidence. Washington labels class years by ELIGIBILITY ORDINAL (1st–5th) rather than Fr./So./Jr./Sr. — 4 of 10 MFs are 4th or 5th years clearing before 2027.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
           "pct": 30,
-          "label": "Squad rotation"
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 45,
-          "label": "Coming off bench"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -2817,7 +2901,7 @@
       "fitness": 90
     },
     "devScoresNote": "v42.27 §5a re-baseline (training environment only). ANCHOR — held. Live umterps.com MSOC staff: HC Sasho Cirovski + Brian Rowland (Assoc HC) + Steve Armas (Assoc HC) + Michael Gould (Asst) = 4 full-time coaches, plus a genuinely dedicated support ecosystem listed on the MSOC page: Ben Hoffman (Strength & Conditioning), Katelyn Engen (Athletic Trainer), Paula Karamihas (Sports Nutrition), a mental-health counselor and a student-athlete-development lead. Stored Tier-1 facilities: Ludwig Field 5,000, world-class Xfinity S&C, full sports science — GPS (Catapult) + video (Hudl + XO). Named §5a anchor; held at 93/91/90.",
-    "fitOlivier": 55,
+    "fitOlivier": 54,
     "tags": [
       "city",
       "acad",
@@ -2840,12 +2924,12 @@
     "rec": "Maryland is the most decorated professional pipeline program in the entire guide — 49 MLS picks and 6 World Cup players under Cirovski. The B.S. Kinesiology is top-20 nationally with excellent pre-PT preparation and world-class clinical access through the Baltimore/DC hospital network. College Park is adjacent to D.C. providing city lifestyle. Cold winters and lack of warm climate are the main negatives for Olivier. Elite choice if climate is not the priority.",
     "url": "https://umterps.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 55,
+      "overall": 54,
       "soccer": 95,
       "academic": 88,
       "lifestyle": 50,
       "minutes": 31,
-      "value": 33
+      "value": 32
     },
     "minutesOutlook": {
       "available": true,
@@ -2853,43 +2937,42 @@
       "cleared_names": [
         "Leon Koehl",
         "Albi Ndrenika",
-        "Joseph Umberto Picotto",
+        "Zack Harris",
         "Kenny Quist-Therson"
       ],
-      "mf_total": 6,
-      "roster_season": "2025-26",
+      "mf_total": 9,
+      "roster_season": "2026-27",
       "recruit_risk": "High",
-      "rising_junior_2027_count": 2,
+      "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
-        "Luke Burdett",
         "Henry Bernstein"
       ],
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "7 of 9 current MFs (78%) recruited directly from HS/club with no prior college, per the live 2025 umterps.com roster. 2 transferred in — Joseph Umberto Picotto (UMBC) and Chris Steinleitner (Eastern Florida State College, JUCO).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 umterps.com roster (9 MFs of 25). Only 1 of 9 lists a previous college (Zack Harris, CSUN); 4 of 9 are freshmen or redshirt freshmen recruited straight in (DC United Academy, Ashanti/Exulted FC). Note NO midfielder is a junior, so 4 clear before Olivier's 2027 entry and the rest are all underclassmen.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development — elite squad"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 48,
-          "label": "Breaking into rotation"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
-          "label": "Regular contributor"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 86,
-          "label": "Key player"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "Maryland has consistently produced MLS first-round picks. Squad depth is elite. Cirovski recruits nationally and internationally. Olivier would need 1-2 development years before meaningful minutes are realistic.",

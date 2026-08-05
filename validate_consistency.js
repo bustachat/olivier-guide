@@ -111,10 +111,13 @@ const TRAJ_KEYS = ['year', 'yr_label', 'pct', 'label'];
 // an off-enum value would silently drop a school from every bucket with no error,
 // so this check exists to catch a typo/new value before it ships silently.
 const RECRUIT_PATHWAY_VALUES = ['Freshman-friendly', 'Transfer-preferred', 'Portal/JUCO-heavy', 'Mixed'];
-// Honest researched gaps, not bugs — tracked in CLAUDE.md §6 deferred items (v40.1): re-scrape Sept–Nov 2026.
-// Renderers guard these with '—' since v40.1. Remove from this whitelist once researched.
-// notredame cleared v44.37 — its 2026-27 roster gives 3 rising seniors (Schroeder, Shaul, Hilden).
-const MO_MISSING_OK = new Set(['georgetown:rising_senior_2027_count']);
+// Both v21-era gaps here were closed by the Wave 1 Session 1 roster refresh (Aug 2026), off each
+// school's live 2026-27 roster: notredame v44.37 (3 rising seniors — Schroeder, Shaul, Hilden) and
+// georgetown v44.38 (4 — Godinho, Urrutia, Brown, Ahmed). The set is deliberately kept rather than
+// deleted: it is the documented escape hatch for an honestly-unresearched minutesOutlook key, and
+// the renderers still guard those keys with '—'. Add an 'id:key' entry only for a real research
+// gap, never to silence a cascade you skipped.
+const MO_MISSING_OK = new Set([]);
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
   const mo = s.minutesOutlook;
   if (!mo) { note('MO', `${s.id} missing minutesOutlook`); return; }

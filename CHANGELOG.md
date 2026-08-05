@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.44 (August 2026) — New `PROSE` validator check: UI copy that hard-codes a school or roster fact
+
+Owner-requested straight after v44.43: *"need to add that check for the info panels to be updated when there is a change to schools or roster."* A CLAUDE.md checklist row would not have held — prose is exactly what nobody re-reads, which is the failure mode the SDLC-compliance rule already warns about. So this is mechanical.
+
+**Why nothing could see the v44.43 bugs:** every other check in `validate_consistency.js` reads JSON. The `CONF_SECTIONS` intros and the Minutes Outlook key are **string literals inside `js/app.js`**, so a data change can contradict them indefinitely.
+
+**Four sub-checks, every one negative-tested** (deliberately made to fire before being trusted — the v44.32 precedent):
+- **A — section program counts.** A `"N programs"` claim is compared against the real count for that `confKey`. **Count by confKey, not by conference file**: Akron lives in `d1-other.json` but groups into the Big East section, and Army/Navy live in `aac.json` but group into Patriot.
+- **B — roster claims.** Any `"N of M MFs"` in copy must match some school's `mf_total`/`cleared_before_2027`. This is precisely the UCA failure.
+- **C — scrape-season class years.** Flags `"2025 Jr"`-style phrasing and `"based on 20XX rosters"`, which **invert** when a school moves to a newer roster. `"2027 seniors"` passes — that is the normalised bucket.
+- **D — phantom school anchors.** A small explicit denylist (`USC`, `UF`) of names appearing in copy for schools that field no team here. Deliberately not fuzzy name-matching, because clubs, cities, hospitals and conferences all legitimately appear in these strings.
+
+**Three real errors it caught on its first run, all fixed:**
+1. `big-east` intro said **11 programs**; the section renders **12** (Akron).
+2. `aac` intro said **10 programs** and still claimed Army and Navy; the section holds **8** — both moved to Patriot in v44.10. Reworded to point at the Patriot League.
+3. The **Academic-First lens description said "UF tops this list but cannot be played at"** — Florida fields no men's soccer. Rewritten to name no school at all, so it cannot go stale again.
+
+**Two false positives found in the check itself and fixed:**
+- *"perennial top-10 programs"* parsed as a count claim → `(?<![-\w])` guard.
+- The explanatory comment in `renderMinutesOutlook` **quotes the old bad phrasing** to explain the v44.43 fix, re-tripping sub-check C → whole-line `//` comments are stripped before scanning (URLs inside string literals are untouched, since those lines do not start with `//`).
+
+**Scope is `js/app.js` + `index.html` ONLY, and the in-file comment says why it must not be broadened.** `data/*.json` holds three legitimate hits that would all become false positives: `conferences.json` correctly states USC joined the Big Ten in 2024 (a true fact about the *conference*, not a claim about the guide); its `otherSchools[]` carries a correct, self-flagging *"⚠ UF — academic reference only (no men's varsity soccer)"* chip; and several `recruit_pathway_note` strings name the genuinely real **USC Upstate** and **USC Aiken** as transfer origins. The `USC`/`UF` patterns carry lookaheads for the same reason.
+
+CLAUDE.md: `PROSE` documented in §7 Phase 4; new impact-map rows on Change Types 1, 3 and 10. Issues: 0.
+
+---
+
 ### v44.43 (August 2026) — Two stale UI panels the roster refresh outdated (Change Type 11, display-only)
 
 Both spotted by the owner immediately after the v44.39–v44.42 push. No data or score changed; `node --check js/app.js` clean, Issues: 0.

@@ -6,6 +6,44 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.48 (August 2026) — NAIA: eight strings told the user there is no scholarship cap while the model penalises one
+
+The UI claimed NAIA has no scholarship cap. §5c classifies NAIA as `fundingPathway: "capped"` and applies a **−3 Fit penalty for exactly that cap**. The guide was contradicting its own scoring model — **in the athlete's favour, on a recruiting-decision fact.** Found while fixing an unrelated Keiser string on the same line in v44.47 and logged rather than rushed; fixed here on the owner's instruction.
+
+**The distinction that was being lost.** NAIA men's soccer has a **12-equivalency TEAM cap** — more generous than D1 (9.9) and D2 (9.0), but a cap. What NAIA does *not* have is a **PER-PLAYER** cap, so a coach may concentrate the pool into a full ride for one athlete. Eight strings collapsed "no per-player cap" into "no cap".
+
+**The guide already stated it correctly in two places**, which is what everything else should have matched:
+
+| location | text | status |
+|---|---|---|
+| `index.html` Glossary, equivalency block | *"NAIA has 12 with no per-player cap"* | ✅ already correct |
+| `index.html` Glossary, funding-penalty block | NAIA listed under the −3 `capped` tier | ✅ already correct |
+
+**Fixed (8):**
+
+| file | where | was |
+|---|---|---|
+| `index.html` | Financial Model explainer | *"NAIA has no cap."* |
+| `js/app.js` | Coaches NAIA tier intro | *"No scholarship maximum in NAIA — full packages possible."* |
+| `data/conferences.json` | SAC `desc` | *"generous scholarship packages not limited by equivalency caps"* |
+| `data/conferences.json` | AMC `scholarships` | *"no equivalency cap"* |
+| `data/conf-prestige.json` | AMC `scholarships` | *"no equivalency cap"* |
+| `data/coaches.json` | Mason (Columbia College) `bio` | *"full-scholarship NAIA potential with no equivalency cap"* |
+| `data/d2.json` | OCU `fin.internationalNote` | *"NAIA has NO maximum scholarship cap"* |
+| `data/d2.json` | OCU `facilityDetails.note` | *"scholarship flexibility (no cap)"* |
+
+**Deliberately left alone, because they are accurate:** the *"Up to equivalent of full ride (NAIA)"* strings in `conferences.json` and `conf-prestige.json`, Oldham's *"NAIA full scholarship potential"*, and Keiser's *"NAIA full ride possible"*. A full ride genuinely is attainable for an individual — and **the stored data already encodes the distinction**: `ocu` and `keiser` both carry `maxAthletic: 1.0` **alongside** `fundingPathway: "capped"`. That pairing is not a contradiction; it is the team-cap/per-player-cap split stated in data.
+
+**Text only.** No `fundingPathway`, `maxAthletic`, `costNum`, `fitOlivier` or `lensScores` value was touched, and none should be — **the −3 penalty was always correct; it was the copy that was wrong.** Verified post-change: OCU still fit 50, `capped`, `maxAthletic` 1.0.
+
+**Method note, reinforcing v44.47b's lesson — search several phrasings, not one.** A `no cap|no maximum` pattern found **5**. Querying the *equivalency* angle surfaced a **6th and 7th**. The SAC `desc`'s *"not limited by equivalency caps"* only fell out of a **third** pattern. A single regex read as exhaustive would have left three live claims in the guide — the same shape of error as the truncated grep in v44.47, arriving by a different route. **Vary the wording, then confirm with a negative sweep.**
+
+**Newly logged in §6, NOT fixed:** `index.html` states **"9.9 equivalencies for D1 soccer"** in two places. §5c records that D1 post-*House* (July 1 2025) replaced sport-specific limits with a 28-player fully-fundable roster cap **at opt-in schools**, so 9.9 holds only for non-opt-in programs. Correct copy needs per-school opt-in status, which the guide deliberately does not track (§5c: unnecessary, since `full` carries a zero penalty). Left for a decision rather than silently dropped — 9.9 is still right for part of the field.
+
+**Gates:** `python -m json.tool` on all 4 changed JSONs OK · `node --check js/app.js` OK · `node validate_consistency.js` **Issues: 0** · `python validate_schools.py` PASS (111 schools, 17 pre-existing warnings). Local browser test: Financial Model, Conferences, Coaches and Explore all re-rendered — **zero NAIA no-cap claims remain in the DOM**, and the Financial Model explainer now matches the Glossary's already-correct wording.
+
+---
+
 ### v44.47 (August 2026) — Two pre-existing UI copy errors fixed (Change Type 11, display-only)
 
 Both were surfaced by v44.46's Change Type 3 prose sweep, both pre-dated that refresh, and **neither was catchable by any validator**. Owner asked for them first, ahead of Session 4.

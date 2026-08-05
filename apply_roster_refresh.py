@@ -859,6 +859,80 @@ PATCHES = {
                          "rising seniors, leaving only 2 underclassmen behind them.",
         ),
     },
+
+    # ── Wave 1 Session 3 (2026-08-05) ────────────────────────────────────────
+    # d2 only. ivy (princeton, yale) is OUT OF SCOPE by owner ruling — the Ivy
+    # League offers no athletic scholarships, so both stay available:false and
+    # are not researched, even though their 2026-27 rosters parse cleanly.
+    # 2 of the 6 flipped d2 schools were DEFERRED to Wave 2 as published-but-
+    # not-populated (see the session notes): keiser (staff, zero players) and
+    # barry (21 players vs 34, with ONE goalkeeper and 12 of 21 midfield-capable
+    # — not a real squad shape).
+    'd2': {
+        'columbia_college': dict(
+            mf_total=12, roster_season='2026-27',
+            cleared=['Daniel Kent', 'Joshua Peterson', 'Alex Gatto', 'Charles McClain', 'Cooper Hayes'],
+            rising_sr=['Tyler Kromer', 'Layton Dahl', 'Christian Goforth'],
+            rising_jr=['Charlie Lafata', 'Bodie Rollins'],
+            returning=4, recruit_risk='Low',
+            pathway='Mixed',
+            pathway_note="Re-derived from the live 2026-27 columbiacougars.com roster (12 MFs of 33). Columbia "
+                         "publishes Hometown, High School and Previous School as three SEPARATE columns, so the "
+                         "transfer split is directly readable: only 3 of 12 midfielders (25%) arrived as transfers "
+                         "— Webber International (NAIA) plus two JUCOs, St. Louis CC and Jefferson College. The "
+                         "other 9 have an empty previous-school cell, i.e. no prior college. Reclassified "
+                         "Portal/JUCO-heavy -> Mixed: the JUCO route is real but is a minority of the midfield, "
+                         "not its dominant source. Strong 2027 shape — 5 of 12 clear and 3 more are rising seniors.",
+        ),
+        'ocu': dict(
+            mf_total=5, roster_season='2026-27',
+            cleared=['Matheus Ambrozio', 'Kenz Toms'],
+            rising_sr=['Hannan Ashraf', 'Ethan Zeinalpor'],
+            rising_jr=[],
+            returning=1, recruit_risk='High',
+            pathway_note="Re-confirmed on the live 2026-27 ocusports.com roster (5 MFs of 25, down from 10 of 29 "
+                         "in 2025). OCU publishes a Prev. School column and it is emphatically JUCO-fed: both "
+                         "midfielders with a previous college came from JUCOs (Seward County CC, Neosho County CC), "
+                         "and the wider squad repeats the pattern (Hillsborough CC, Rose State College, Middle "
+                         "Georgia, Pellissippi State CC, Lewis and Clark CC). Portal/JUCO-heavy confirmed, not "
+                         "merely retained. CAVEAT: 3 of the 25 players are published with a BLANK position cell "
+                         "(Joao Figueredo, Sebastian Castillo, Asher Trent), so mf_total counts only confirmed "
+                         "midfielders; if all 3 were MFs the opportunity score moves 6.0 -> 7.0, which stays "
+                         "inside the same trajectory row, so the outlook is unaffected either way.",
+        ),
+        'pba': dict(
+            mf_total=10, roster_season='2026-27',
+            cleared=['Niklas Mahler', 'Fabio Reck', 'Clement Scaccia', 'Titus Beuckman',
+                     'Quinlan van Arkel', 'Marcel Duffau', 'Ugo Drieu'],
+            rising_sr=[],
+            rising_jr=['Julian Walby'],
+            returning=3, recruit_risk='High',
+            pathway_note="Re-confirmed on the live 2026-27 pbasailfish.com roster (10 MFs of 28). PBA publishes a "
+                         "dedicated Previous School column and 6 of 10 midfielders arrived from another four-year "
+                         "program (Grand View, Spring Hill, Hawaii Pacific, Mercy, Bridgeport, plus a German "
+                         "institution) — no JUCOs among them, so Transfer-preferred is confirmed rather than "
+                         "Portal/JUCO-heavy. The squad runs on graduate transfers: 12 of 28 players are listed "
+                         "Gr., and SEVEN of the 10 midfielders clear before Olivier's 2027 entry, leaving three "
+                         "underclassmen behind them. This is the largest midfield turnover in the d2 file.",
+        ),
+        'stedwards': dict(
+            mf_total=9, roster_season='2026-27',
+            cleared=['Shunji Watanabe', 'Holden Rabb', 'Matthew Devaney', 'Nico Weigandt'],
+            rising_sr=['Jud Anderson'],
+            rising_jr=['Filip Adamski', 'Armando Don Juan'],
+            returning=4, recruit_risk='Low',
+            pathway_note="Re-read on the live 2026-27 gohilltoppers.com roster (9 MFs of 39, up from 6 in 2025). "
+                         "St. Edward's publishes no previous-school column at all — only Hometown / High School — "
+                         "so the transfer-vs-freshman split cannot be re-derived; the Freshman-friendly "
+                         "classification is RETAINED from the earlier pass and should be treated as "
+                         "lower-confidence. CAVEAT: 6 of the 39 players are published with a BLANK position cell "
+                         "(Rangel, Watterworth, Navarro, Baroldy, Ramirez Siliezar, Guajardo) and their player "
+                         "bio pages carry no position field either, so mf_total counts only confirmed midfielders. "
+                         "All 6 are Fr./So. and so could only add to the returning group: if every one were a "
+                         "midfielder the opportunity score would fall 8.5 -> 5.5, which crosses a trajectory row. "
+                         "Re-check once St. Edward's completes its position data.",
+        ),
+    },
 }
 
 if __name__ == '__main__':

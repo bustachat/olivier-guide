@@ -14,13 +14,24 @@ Both were surfaced by v44.46's Change Type 3 prose sweep, both pre-dated that re
 
 **Rewritten to describe the mechanism rather than name a winner**, and that is the durable part of the fix. Hardcoding a #1 school is the same defect class the `PROSE` check exists for, and **Session 4 refreshes all 30 JUCOs — exactly the schools at the top of this lens** — so any named school would be stale within one session. The rewrite also drops the *"7 of 13 MFs"* figure, which was accurate against Barry's stored 2025-26 data and passing `PROSE`, but which goes stale the instant Barry is refreshed in Wave 2. **Rule established: lens and ranking copy explains what the lens rewards, never which school currently wins it.**
 
-**2. Keiser was still "Fort Lauderdale" — in three places, not the two logged.** v40.6 moved Keiser to **West Palm Beach** across 12 occurrences plus `mapX`/`mapY`, but missed:
+**2. Keiser was still "Fort Lauderdale" — in EIGHT places, not the two logged.** v40.6 moved Keiser to **West Palm Beach** across 12 occurrences plus `mapX`/`mapY`, but missed:
 
 - `js/app.js` — `CONF_SECTIONS` NAIA section intro (Explore tab)
 - `js/app.js` — NAIA tier intro (Coaches tab)
-- `data/aac.json` — **FAU's `culture.olivierMatch`**, which the §6 note had not found. It read *"adjacent to Fort Lauderdale (Keiser) and Miami"* — wrong twice over: wrong city, **and wrong direction**, since West Palm Beach is ~30 min *north* of Boca Raton while Fort Lauderdale is south. Rewritten to place Keiser and PBA north and Fort Lauderdale/Miami south, consistent with the distances already stored on Lynn and Keiser.
+- `data/aac.json` — **FAU's `culture.olivierMatch`**, which the §6 note had not found. It read *"adjacent to Fort Lauderdale (Keiser) and Miami"* — wrong twice over: wrong city, **and wrong direction**, since West Palm Beach is ~30 min *north* of Boca Raton while Fort Lauderdale is south. Rewritten to place Keiser and PBA north and Fort Lauderdale/Miami south.
+- `data/conferences.json` — `sun.guideSchools[0]`, the string **rendered as the school chip on the Conferences tab**: *"Keiser University (Fort Lauderdale)"*.
+- `data/conferences.json` — `sun.olivierNote`: *"Fort Lauderdale warm and cosmopolitan."*
+- `data/coaches.json` — Oldham's `bio`: *"leads the Keiser University men's soccer program in Fort Lauderdale"* (and a second sentence crediting Fort Lauderdale for Inter Miami proximity, generalised to "South Florida").
+- `data/coaches.json` — Oldham's `strengths[2]`: *"Fort Lauderdale climate"*.
+- `data/pipeline.json` — the Keiser row in `ncaaD2[]`: *"Fort Lauderdale warm climate."*
 
-**Lesson: re-grep when closing a "two known instances" copy item.** The original note was written from a `js`/`html` glob, so `data/` was never swept and the third instance sat unrecorded. Every remaining "Fort Lauderdale" in the repo was then checked and all are legitimate — Nova Southeastern genuinely is in Fort Lauderdale, and Lynn and Keiser both cite it as a nearby destination with correct distances (20 min / 45 min).
+**Two lessons, and the second is the uncomfortable one.**
+
+*First:* **re-grep when closing a "N known instances" copy item.** The §6 note said "two `js/app.js` strings" and was written from a js/html glob, so `data/` had never been swept at all.
+
+*Second, and recorded deliberately:* the first pass at this fix (commit `37a5627`) claimed *"swept every remaining Fort Lauderdale in the repo: all are legitimate"* and reported three instances. **That claim was false** — it rested on a grep whose output had been truncated to the first 12 results, so most of `data/` was never actually examined. The remaining five were found only because the **live DOM still rendered a cached `js/app.js`** (the v37.3 caching gotcha), and the old strings it printed exposed data-file instances the truncated grep had hidden. **A truncated search that is read as exhaustive is indistinguishable from a clean result.** The corrected sweep walks every string in `data/` and `athletes/` with a script that attributes each occurrence to its owning record, so all 39 could be judged individually rather than skimmed — that is the method to reuse.
+
+The **5 Keiser mentions that remain are correct and deliberate**: two cite Fort Lauderdale as a 45-minute destination (`culture.thingsToDo`, `facilityDetails.extras`), one is the housing note recording the v40.6 correction itself, and two are the rewritten FAU and Sun-Conference strings. Every other occurrence in the repo belongs to **Nova Southeastern**, which genuinely is in Fort Lauderdale, or to FAU/Lynn/PBA/FIU citing correct distances.
 
 No scoring impact — none of these strings is read by `scores.js`.
 

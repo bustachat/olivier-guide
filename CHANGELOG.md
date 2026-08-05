@@ -6,6 +6,41 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.39–v44.42 (August 2026) — Wave 1 Session 2: 2026-27 roster refresh, big-ten + big-west + caa + d1-other (Change Type 3)
+
+**28 of 33 schools refreshed to the 2026-27 season**, one conference file per commit, Issues: 0 at every gate. `mf_total` + `roster_season` written in the same edit every time (v44.32 rule); full Type 3 cascade on every school; trajectory *derived* from the researched counts by `apply_roster_refresh.py`, never typed (v44.36b).
+
+**Method change worth keeping: these rosters were PARSED, not browsed.** A probe found that on all four files' hosts the roster table is **server-rendered** — position, academic year *and* the previous-school column are all present in raw HTML; only the `<title>`'s season year is injected client-side. So a Python extractor replaced Session 1's per-school browser work. It was **control-tested against 8 already-committed Session-1 schools (louisville, duke, georgetown, wakeforest, providence, smu, unc, syracuse) and reproduced all 8 bucket sets exactly**, and it independently re-derived that georgetown and syracuse publish no previous-school column — matching the v44.38 finding. The browser was still required for 3 schools on other templates.
+
+**Four roster templates now on record (§15), not three.** New this session: **WMT list view** — `.roster-list-item` with semantic per-field classes (`--class-level`, `--position`, `--previous-school`), used by northwestern; and Penn State's `.player-list-item` variant. Mercyhurst is a Sidearm **card** layout whose companion table omits the Name column entirely, so counts parse but names do not — it was extracted twice by independent paths (cards + table) and both agreed at 18 MFs.
+
+**Two extractor bugs the control test caught before any data shipped:**
+1. **Short header names.** A substring search for the class column matched nothing at Louisville (`CL`) and Duke (`Yr.`), silently bucketing every midfielder as "unknown". Fixed by matching letters-only headers **exactly first**, then falling back to substring — a plain substring rule would match `Club` (UC Riverside publishes one) and mis-read every class year.
+2. **Ordinal eligibility labels.** Indiana and Washington label class years `1st`–`5th` instead of `Fr./So./Jr./Sr.`. `5th` matched by luck; **`4th` — a graduating senior — fell through to "unknown" and vanished from `cleared`**, understating both schools' opportunity. Ordinals are now parsed first.
+
+**`pennstate` DEFERRED to Wave 2 — the third instance of "published but not populated".** Its 2026 page renders 8 players and **zero midfielders** beside a complete coaching and support staff; its 2025 page returns a full squad with real MFs through the same read. Same class as `tulsa` (staff, no players) and `pittsburgh` (13 of 26) in Session 1. It keeps its 2025-26 data and label. **The prior-season comparison is what caught it** — always run it.
+
+**`stonybrook` populated for the first time**, closing a gap open since v21 (§6: site unreachable/off-season at every prior attempt). Its live 2026-27 roster renders normally — 9 MFs of 29, 3 clearing before 2027. `minutesOutlook.available` flips `false → true`, so **its Fit falls 43 → 34**: the real outlook (minutes 26) is simply worse than the neutral 0.5 placeholder it had been carrying. That is the neutral behaving as designed, not a regression. `recruit_pathway` is deliberately left **unset** — the roster publishes no previous-school column *and* there was no prior classification to retain, so there is nothing to derive from and nothing to carry forward.
+
+**`recruit_pathway`: 2 reclassified, 14 re-derived and confirmed, 13 retained.**
+- **indiana → Transfer-preferred** (from Freshman-friendly): 4 of 7 MFs are 4-year transfers (Missouri State, Evansville, NIU, Cornell) and the midfield contains **no first- or second-year player at all** — every MF is a 3rd, 4th or 5th year. This also gives Indiana the batch's joint-highest opportunity score, so the opening is real but the route in is a transfer slot.
+- **northwestern → Mixed** (from Freshman-friendly): 5 of 13 MFs are 4-year transfers against 8 direct entries — the same two-route shape that moved xavier in Session 1.
+- **13 schools publish no previous-school column** (michigan, ohiostate, rutgers, washington, wisconsin, charleston, drexel, elon, hofstra, monmouth, denver, gcu, vermont); classification retained, each note says so and flags itself lower-confidence — the v44.38 precedent.
+
+**The previous-school column lies in a new way: it holds CLUBS.** Three schools would have been misclassified by reading it naively. **calpoly**'s column is headed *"Previous School/Club"* and all 5 MFs have an entry, but 4 are clubs (Portland Timbers2, San Jose Earthquakes II, Pateadores SC ×2) — only Columbia is a college. **northeastern** has 13 of 14 MFs populated, almost entirely academies (Houston Dynamo MLS NEXT, Toronto FC, Barca Residency, Minnesota United II, Atlanta United Academy); exactly one lists a college. **uca** combines hometown and club in one field, 7 of 9 clubs. All three are genuinely Freshman-friendly; a transfer-count heuristic would have flipped every one of them.
+
+**`akron` is the campaign's cleanest confirmation:** it *publishes* a previous-school column and it is **empty for all 11 midfielders** — Freshman-friendly proven on positive evidence rather than on the absence of a column.
+
+**No coach changed at any of the 29 schools researched** — every head coach on every live roster/staff page matched `coaches.json` (Michigan's had to be read off its separate `/coaches` page, which the roster page omits). So no Change Type 2, no re-rank, and no `devScores.tactical` review fired.
+
+**`recruit_risk` was RETAINED, not re-derived**, on all 27 schools that had one. It is unscored, and re-deriving 27 judgment values against a newly-invented rule was not in this session's scope — flagged here so a later pass knows it is untouched, particularly where the midfield group size moved a lot (hofstra 6→12, delaware 4→9, monmouth 5→9, william_mary 7→11).
+
+**Refresh ledger after this session: 56 schools on 2026-27, 49 still on 2025-26** (verified live on the Minutes Outlook tab: 56 × "MFs (2026-27)", 49 × "MFs (2025-26)", zero bare-year labels, zero `undefined`/`NaN`/`null`).
+
+Untouched by design: `ucla`, `csuf`, `ucsb`, `ucsd` are all still serving 2025 rosters (Wave 2).
+
+---
+
 ### v44.36–v44.38 (August 2026) — Wave 1 Session 1: 2026-27 roster refresh, aac + acc + big-east (Change Type 3)
 
 **27 of 31 schools refreshed to the 2026-27 season.** All read in a real browser (Chrome MCP) off each school's own roster page, Tier 1. `mf_total` and `roster_season` written in the same edit every time, per the v44.32 rule; the full Type 3 cascade (`minutesOutlook{}` → `lensScores.minutes` → `fitOlivier` → `lensScores.overall` → `lensScores.value`) run on every one. Issues: 0 at every gate.

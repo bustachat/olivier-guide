@@ -334,14 +334,14 @@
     },
     "mapX": 81,
     "mapY": 198,
-    "fitOlivier": 51,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 51,
+      "overall": 47,
       "soccer": 65,
       "academic": 65,
-      "minutes": 42,
+      "minutes": 26,
       "lifestyle": 85,
-      "value": 45
+      "value": 44
     },
     "confRecord": [
       {
@@ -450,53 +450,52 @@
     "domain": "calpoly.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 6,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 4,
+      "mf_total": 5,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Diego Guerra",
-        "Rylan Firouznam",
         "Brandon Newman",
         "Benji Jimenez"
       ],
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Cole Aman"
+        "Diego Guerra",
+        "Rylan Firouznam"
       ],
       "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
-        "Liam Lambert"
+        "Cole Aman"
       ],
       "recruit_risk": "Medium",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Regular contributor"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
-          "label": "Key contributor"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
+          "pct": 60,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "4 of 6 MFs clear (R-Jr×2, Gr, Sr). Only 1 rising senior and 1 rising junior remain — good entry opportunity. Cal Poly's compact squad means Olivier could feature regularly from Year 1.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 gopoly.com roster: of 6 MF/D-MF spots, only 1 is a transfer (Newman, a grad transfer from Columbia) — the other 5 (Guerra, Firouznam, Jimenez, Lambert, Aman) arrived as true freshmen, several straight from MLS academy/USL sides (Portland Timbers2, San Jose Earthquakes II) rather than 4-year or JUCO transfer."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gopoly.com roster (5 MFs of 26). Cal Poly's column is headed 'Previous School/Club' and all 5 MFs have an entry, but 4 of them are CLUBS, not colleges (Portland Timbers2, San Jose Earthquakes II, Pateadores SC x2). Only Brandon Newman (Columbia) is a genuine college transfer, so the midfield is club/academy-sourced and the Freshman-friendly classification holds. Smallest midfield group in the batch."
     },
     "acuUnits": [
       {
@@ -609,14 +608,14 @@
     },
     "mapX": 77,
     "mapY": 172,
-    "fitOlivier": 44,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 44,
+      "overall": 47,
       "soccer": 62,
       "academic": 70,
-      "minutes": 21,
+      "minutes": 26,
       "lifestyle": 60,
-      "value": 26
+      "value": 28
     },
     "confRecord": [
       {
@@ -721,55 +720,56 @@
     "domain": "ucdavis.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 3,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Gabriel Haggerty",
-        "Declan Horio",
-        "Cole Powell"
+        "Declan Horio"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
-        "Jackson Richardson",
-        "Cole McLemore"
+        "Gabriel Haggerty",
+        "Tristan Wouters",
+        "Rafael Matiello",
+        "Ben Elkins"
       ],
-      "rising_junior_2027_count": 3,
+      "rising_junior_2027_count": 4,
       "rising_junior_2027_names": [
-        "Diego Orosco",
-        "Ronaldo Melgoza",
-        "Chris Aguilar"
+        "Derrick Green",
+        "Ensio Sardans",
+        "Jackson Richardson",
+        "Kota Brown"
       ],
       "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 12,
-          "label": "Fringe squad"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 25,
-          "label": "Regular contributor"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
-          "label": "Key contributor"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 75,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "Only 3 of 8 MFs clear — 5 remain across Year 1-2 including 3 rising juniors. Competitive midfield at a strong academic school. Opportunity opens more in Year 3+.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 ucdavisaggies.com roster: of 9 MF/D-MF spots, only 1 (Elkins, a transfer from Gonzaga) came via transfer — the rest, including international recruit Matiello (Brazil), arrived as true freshmen straight from HS. UC Davis' selective UC academics don't appear to suppress freshman midfield recruiting."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 ucdavisaggies.com roster (9 MFs of 36 — the largest squad in the batch outside Mercyhurst). Only 1 of 9 lists a previous college (Ben Elkins, Gonzaga); the other 8 came straight from high school or club. Strongly 2028-shaped: just 1 MF clears before 2027, but 4 more graduate the following year."
     },
     "acuUnits": [
       {
@@ -888,7 +888,7 @@
       "overall": 59,
       "soccer": 65,
       "academic": 68,
-      "minutes": 42,
+      "minutes": 38,
       "lifestyle": 84,
       "value": 35
     },
@@ -997,20 +997,19 @@
     "domain": "uci.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 7,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 5,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
         "Hunny Yoo",
-        "Isaiahs Gutierrez",
-        "Justin Conyers",
+        "Ferri Duran",
         "Isaac Powell",
         "Braden Ferreira"
       ],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Luis Gomez",
-        "Matt Hagan"
+        "Isaiahs Gutierrez",
+        "Cade Williams"
       ],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
@@ -1020,19 +1019,19 @@
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
           "pct": 30,
-          "label": "Regular contributor"
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 50,
-          "label": "Key contributor"
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Likely starter"
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -1043,7 +1042,7 @@
       ],
       "trajectoryNote": "⚠️ 2025 roster (+1 applied). 5 of 7 MFs clear — only 2 Freshmen (now So) remain. Strong opportunity window. UCI is Anteaters — warm Irvine campus, OC lifestyle.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025 ucirvinesports.com roster: of 7 MFs, only 1 (Yoo, a transfer from Herkimer College, an NJCAA JUCO) came via the portal — the other 6 (Gutierrez, Gomez, Conyers, Powell, Ferreira, Hagan) are true freshmen. Notable contrast with UCI's defense/forward lines, which carry several 4-year transfers (NC State, Pitt, Tulsa) — the transfer emphasis at UCI is not midfield-specific."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 ucirvinesports.com roster (10 MFs of 28). 3 of 10 list a previous school but only 2 are US college transfers, and BOTH are JUCO (Herkimer College, Irvine Valley College) — Ferri Duran's Universitat Autonoma de Barcelona is a Spanish university, not a US soccer transfer. The other 7 came direct, 4 of them current freshmen, so Freshman-friendly holds, but note the live JUCO channel."
     },
     "acuUnits": [
       {
@@ -1161,7 +1160,7 @@
       "overall": 48,
       "soccer": 55,
       "academic": 60,
-      "minutes": 42,
+      "minutes": 38,
       "lifestyle": 55,
       "value": 29
     },
@@ -1266,42 +1265,43 @@
     "domain": "ucr.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 7,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 5,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Tarek Hamideh",
-        "Ethan Gonzalez",
         "Jona Martinez",
-        "Diego Ramirez",
-        "Kevin Meza"
+        "Ethan Gonzalez",
+        "Diego Ramirez"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Silvio Termini",
+        "Tarek Hamideh",
+        "Diego Esquivel",
+        "Noa Wada"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
         "Adrian Diaz"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
       "recruit_risk": "Low",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
           "pct": 30,
-          "label": "Regular contributor"
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 50,
-          "label": "Key contributor"
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Likely starter"
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -1312,7 +1312,7 @@
       ],
       "trajectoryNote": "⚠️ 2025 roster (+1 applied). 5 of 7 CMs/MFs clear — strong turnover. Only 2 Freshmen (now So) compete in Year 1. Riverside campus inland SoCal, warm.",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Live 2026 gohighlanders.com roster: of 7 CM spots, 2 came via transfer (Gonzalez from UNLV, Meza from Cerritos College, a JUCO) — the other 5 (Hamideh, Martinez, Termini, Ramirez, Diaz) are true freshmen. UCR's roster overall leans heavily on transfers at other positions (Keiser, Mt. SAC, USC Aiken all represented), but the CM group itself splits close to 70/30 freshman-to-transfer."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gohighlanders.com roster (8 MFs of 32). 2 of 8 are college transfers and they split across both routes — Ethan Gonzalez from UNLV (4-year) and Diego Esquivel from Cuyamaca CC (JUCO) — which is exactly the Mixed profile already stored. The other 6 arrived from high school or club sides."
     },
     "acuUnits": [
       {

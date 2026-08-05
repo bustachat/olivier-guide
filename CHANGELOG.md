@@ -6,6 +6,30 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.47 (August 2026) — Two pre-existing UI copy errors fixed (Change Type 11, display-only)
+
+Both were surfaced by v44.46's Change Type 3 prose sweep, both pre-dated that refresh, and **neither was catchable by any validator**. Owner asked for them first, ahead of Session 4.
+
+**1. The Glossary's Minutes Outlook lens named a #1 that was never #1.** It read *"Barry D2 consistently ranks #1 under this lens — 7 of 13 midfielders clear before Olivier arrives."* Barry's `lensScores.minutes` is **59**. The lens is led by `iowa_western` **79**, then lsu_eunice 77, dodge_city_cc and daytona_state 75, and five more JUCOs at 73. Barry has never topped it on the stored numbers.
+
+**Rewritten to describe the mechanism rather than name a winner**, and that is the durable part of the fix. Hardcoding a #1 school is the same defect class the `PROSE` check exists for, and **Session 4 refreshes all 30 JUCOs — exactly the schools at the top of this lens** — so any named school would be stale within one session. The rewrite also drops the *"7 of 13 MFs"* figure, which was accurate against Barry's stored 2025-26 data and passing `PROSE`, but which goes stale the instant Barry is refreshed in Wave 2. **Rule established: lens and ranking copy explains what the lens rewards, never which school currently wins it.**
+
+**2. Keiser was still "Fort Lauderdale" — in three places, not the two logged.** v40.6 moved Keiser to **West Palm Beach** across 12 occurrences plus `mapX`/`mapY`, but missed:
+
+- `js/app.js` — `CONF_SECTIONS` NAIA section intro (Explore tab)
+- `js/app.js` — NAIA tier intro (Coaches tab)
+- `data/aac.json` — **FAU's `culture.olivierMatch`**, which the §6 note had not found. It read *"adjacent to Fort Lauderdale (Keiser) and Miami"* — wrong twice over: wrong city, **and wrong direction**, since West Palm Beach is ~30 min *north* of Boca Raton while Fort Lauderdale is south. Rewritten to place Keiser and PBA north and Fort Lauderdale/Miami south, consistent with the distances already stored on Lynn and Keiser.
+
+**Lesson: re-grep when closing a "two known instances" copy item.** The original note was written from a `js`/`html` glob, so `data/` was never swept and the third instance sat unrecorded. Every remaining "Fort Lauderdale" in the repo was then checked and all are legitimate — Nova Southeastern genuinely is in Fort Lauderdale, and Lynn and Keiser both cite it as a nearby destination with correct distances (20 min / 45 min).
+
+No scoring impact — none of these strings is read by `scores.js`.
+
+**Newly found, logged in §6 and deliberately NOT fixed:** the Coaches-tab NAIA tier intro (same line as one of the Keiser strings) says *"No scholarship maximum in NAIA — full packages possible."* NAIA men's soccer is capped at **12 equivalencies**, which is why §5c classifies NAIA as `fundingPathway: "capped"` and applies a **−3** Fit penalty. The UI therefore tells the user there is no cap while the model penalises them for one. That is a scoring-model contradiction rather than a stale fact, so it belongs in a deliberate rewrite alongside the D2/NAIA aid strings, not in a two-line copy commit.
+
+**Gates:** `node --check js/app.js` OK · `python -m json.tool data/aac.json` OK · `node validate_consistency.js` **Issues: 0** · `python validate_schools.py` PASS (111 schools, 17 pre-existing warnings). Local browser test: Glossary copy, both NAIA intros and the FAU modal string verified in the rendered DOM; zero Keiser/Fort-Lauderdale collocations remain; zero JS errors.
+
+---
+
 ### v44.46 (August 2026) — Wave 1 Session 3 of the 2026-27 roster refresh: d2, 4 schools refreshed, 2 deferred, ivy dropped from scope
 
 **Availability survey re-run first** (`python roster_survey.py d2 ivy`, now argv-driven). 8 of 14 schools flipped to 2026-27 — exactly matching the 2026-08-04 wave list, **zero churn**, unlike the 55→70 movement the previous survey saw in a single day. A stale list is still the default assumption; this time it happened not to have moved.

@@ -6,6 +6,34 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.35 (August 2026) — St. Edward's coach contact corrected + Seton Hall phone added (Change Type 2, contact only)
+
+Closes the §6 item opened by v44.34. Both re-verified Tier-1 **immediately before writing**, not carried over from the earlier session — the project rule is never to guess coach contact info, and the previous read was a side effect of URL work.
+
+| school | field | was | now |
+|---|---|---|---|
+| `stedwards` | email | `byoung@stedwards.edu` | **`briany@stedwards.edu`** |
+| `stedwards` | phone | `512-448-8415` | **`512-448-8507`** |
+| `setonhall` | phone | `""` (blank) | **`973-275-6429`** |
+
+**Evidence is as strong as this gets.** St. Edward's 2026 staff page carries `briany@stedwards.edu` as a real `mailto:` href and `512-448-8507` as a `tel:` href — not display text that could be stale. The colleague addresses on the same page (`cmille13@`, `vdelgad7@`) establish the institutional pattern, and `briany@` fits it while the stored `byoung@` does not.
+
+**A third location was carrying the old address.** Beyond `contact.email`, the St. Edward's **`bio` string ends with a hardcoded `"Email: byoung@stedwards.edu"`**. Fixed in the same commit — a repo-wide grep for `byoung@stedwards`/`512-448-8415` now returns nothing anywhere.
+
+**Seton Hall's email was deliberately NOT changed, and that restraint is the point.** The live coaches page publishes a phone for Lindberg but **no email at all**, and the stored `alindberg@shu.edu` appears nowhere on the site. It is also the only `shu.edu` address in the whole file, and it does not match the `firstname.lastname@shu.edu` pattern every colleague uses (`jeffrey.matteo@`, `nicolai.andersen@`). So it is **suspicious but unprovable** — deriving `andreas.lindberg@shu.edu` from a pattern would be exactly the guess §7 forbids. Logged in §6 instead. Phone normalised to the file's dominant `123-456-7890` convention (65 of 74 non-blank entries).
+
+**No re-rank.** `overallScore` did not move for either coach, so the §3a Type 2 "re-rank ALL" trigger does not fire. Names unchanged, so the Dashboard shortlist panel is untouched.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0**. `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings. `python -m json.tool data/coaches.json`. CRLF preserved (5407 CRLF, 0 bare LF). Diff is 4 lines.
+
+**Browser-verified on every surface §3a Type 2 lists.** Coaches → **Profiles**: both new values render, zero occurrences of the old email or old phone. School **modals** (Coach & Contact tab): St. Edward's `briany@stedwards.edu` / `512-448-8507`, Seton Hall `973-275-6429` where it previously had none. Coaches → **Rankings**: unaffected, as expected for a contact-only change.
+
+**Worth knowing — the Outreach tracker renders ONLY the 10 shortlisted schools** (FIU, PBA, Lynn, UCSB, USF, Barry, Clemson, UNC, FAU, SMU), confirmed live. Neither school here is shortlisted, so neither appears there. The bad address was therefore visible in the Profiles tab and the school modal, not in the outreach list.
+
+**Found while verifying, pre-existing, NOT fixed — 13 coach cards render a literal `"null"` for Yrs HC.** `yearsHC: null` on 13 entries in `coaches.json` prints as the string `null` in the Profiles stat block. Confirmed pre-existing by checking `HEAD` before this edit (13 nulls in the committed data, exactly matching the 13 rendered). Same defect class as the null-contact guard added in v43.12 — that fix guarded email/phone but not this stat. Logged in §6.
+
+---
+
 ### v44.34 (August 2026) — the last 4 broken `coaches.json` URLs cleared; that field is now 108/108 live
 
 Closes the §6 item opened by v44.33. All four researched Tier-1 in a real browser, not guessed.

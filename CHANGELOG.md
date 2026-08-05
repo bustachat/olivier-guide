@@ -6,6 +6,21 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.43 (August 2026) — Two stale UI panels the roster refresh outdated (Change Type 11, display-only)
+
+Both spotted by the owner immediately after the v44.39–v44.42 push. No data or score changed; `node --check js/app.js` clean, Issues: 0.
+
+**1. The Minutes Outlook key was written in terms of a 2025 roster's class years — and the refresh INVERTED it.** It read *"2025 Jr → graduate after 2026 → ✅ cleared before he arrives"*. That mapping shifts by a year the moment a school moves to a newer roster: on a 2026-27 roster a junior does **not** clear before Olivier arrives, they are a 2027 senior with a 1-year overlap. With 56 schools now on 2026-27 data, the key actively contradicted the majority of the cards beneath it. The stored fields (`cleared_before_2027`, `rising_senior_2027_*`, `rising_junior_2027_*`) were already normalised to his entry year regardless of the season scraped, so **the key now describes those buckets instead of raw class years** — "Cleared by 2027 / 2027 seniors / 2027 juniors", which matches each card's own stat labels verbatim and stays correct for both seasons. A comment in `renderMinutesOutlook()` warns against re-introducing a hardcoded roster year. The intro line and the methodology footer ("the 2026 freshman class is being recruited now") were stale the same way and were made season-agnostic.
+
+**2. Seven `CONF_SECTIONS` intros were stale — one of them falsified by this very session.** This closes a §6 lower-priority item that had been open since v25.
+- **`asun` claimed UCA was the "best D1 central midfielder opening in the guide with 6 of 9 MFs clearing before Olivier arrives".** The v44.42 refresh found the exact opposite: **0 of 9 clear**, the whole midfield returns, opportunity score 0.0 — which is why UCA's Fit fell 61 → 43 in that commit. Rewritten to state the real shape.
+- **`big-ten` named "USC", which fields no team in this guide** — the identical phantom-anchor error §5a already flags for "UF" in the Glossary.
+- The remaining five (`acc`, `big-east`, `aac`, `big-west`, `caa`, `america-east`) all carried pre-v25 "fully profiled vs listed" framing; every school in the guide has been full-profile since v25. The ACC panel — the one the owner screenshotted — also under-counted its own conference at "6 fully-profiled schools" plus "14 listed programs" against an actual 13.
+
+**Lesson banked in §6: a conference intro can hard-code a ROSTER FACT.** A Change Type 3 refresh that materially moves a school's opportunity should sweep `CONF_SECTIONS` intros too — neither validator can see prose.
+
+---
+
 ### v44.39–v44.42 (August 2026) — Wave 1 Session 2: 2026-27 roster refresh, big-ten + big-west + caa + d1-other (Change Type 3)
 
 **28 of 33 schools refreshed to the 2026-27 season**, one conference file per commit, Issues: 0 at every gate. `mf_total` + `roster_season` written in the same edit every time (v44.32 rule); full Type 3 cascade on every school; trajectory *derived* from the researched counts by `apply_roster_refresh.py`, never typed (v44.36b).

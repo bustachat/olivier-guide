@@ -510,16 +510,16 @@ function renderCards(){
 
   // Group by conference key — prevents the 71-card D1 wall
   const CONF_SECTIONS=[
-    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'Elite D1 soccer — strongest conference in the guide. 6 fully-profiled schools: Virginia (7 NCAA titles), Wake Forest (2024 ACC Tourn champs), SMU (2025 ACC Tournament Champions — first ever), Clemson (2× recent NCAA champions, nation-leading 4 first-round picks in 2026 draft), Notre Dame (27 MLS picks), UNC (ACC Regular Season champs 2023). Stanford and Duke among 14 listed programs.'},
-    {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'Most prolific MLS-producing conference all-time. UCLA on the West Coast, Indiana in the Midwest (8 NCAA titles), Maryland (most MLS picks of any program ever — 49 + 7 homegrown under Cirovski). Penn State, Michigan, USC all elite listed programs.'},
-    {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference. St. John\'s and Georgetown both fully profiled. Georgetown are 2019 national champions under Wiese — 42 MLS signings, D.C. United + NYCFC pipeline. Creighton and UConn are perennial top-10 programs. Strong clinical network in major cities. Akron joined the Big East for men\'s soccer in 2023 (the MAC dropped the sport) and won the Midwest Division in 2024 and 2025.'},
-    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'FIU and USF both fully profiled in the AAC. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Navy and Army offer full federal scholarships (zero cost).'},
-    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1. UCSB fully profiled — Manu Duah went #1 overall in 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine all competitive. Pacific lifestyle matches Sydney.'},
-    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston fully profiled with Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern round out a competitive conference.'},
-    {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major D1 spanning the South and Southeast. UCA (Conway, AR) is fully profiled — best D1 central midfielder opening in the guide with 6 of 9 MFs clearing before Olivier arrives. Strong Kinesiology program with UAMS clinical network. Most affordable D1 in the guide at ~$28k/yr.'},
+    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'Elite D1 soccer — strongest conference in the guide, and all 13 programs here are fully profiled: Virginia (7 NCAA titles), Wake Forest (2024 ACC Tourn champs), SMU (2025 ACC Tournament Champions — first ever), Clemson (2× recent NCAA champions, nation-leading 4 first-round picks in 2026 draft), Notre Dame (27 MLS picks) and UNC (ACC Regular Season champs 2023), alongside Stanford, Duke, NC State, Louisville, Pitt, Syracuse and Cal.'},
+    {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'Most prolific MLS-producing conference all-time. UCLA on the West Coast, Indiana in the Midwest (8 NCAA titles), Maryland (most MLS picks of any program ever — 49 + 7 homegrown under Cirovski). Washington are the reigning 2025 national champions. All 11 programs here are fully profiled, Penn State and Michigan included.'},
+    {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference, all 11 programs fully profiled. Georgetown are 2019 national champions under Wiese — 42 MLS signings, D.C. United + NYCFC pipeline. Creighton and UConn are perennial top-10 programs. Strong clinical network in major cities. Akron joined the Big East for men\'s soccer in 2023 (the MAC dropped the sport) and won the Midwest Division in 2024 and 2025.'},
+    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'FIU and USF headline an AAC group in which all 10 programs are fully profiled. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Navy and Army offer full federal scholarships (zero cost).'},
+    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1, all 7 programs fully profiled. UCSB — Manu Duah went #1 overall in the 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego and CS Fullerton round it out. Pacific lifestyle matches Sydney.'},
+    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1, all 8 programs fully profiled. College of Charleston has a Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern, Drexel, Elon, Monmouth and Stony Brook round out a competitive conference.'},
+    {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major D1 spanning the South and Southeast. UCA (Conway, AR) is fully profiled — strong Kinesiology program with UAMS clinical network, and the most affordable D1 in the guide at ~$28k/yr. Note its 2026-27 midfield returns intact: no midfielder graduates before Olivier arrives, so the immediate opening is limited despite an accessible recruiting route.'},
     {key:'wac',      label:'WAC — Western Athletic Conference',   tier:'Mid-Major · D1', intro:'GCU (Phoenix, AZ) fully profiled — Jamie Davies appointed December 2025. Warm major city campus, Kinesiology with Banner Health clinical network. 2025 WAC champions and NCAA Sweet 16. Best warm D1 city campus outside Florida and California.'},
     {key:'wcc',      label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Denver (University of Denver) fully profiled — 5 consecutive Summit League titles 2021-2025, College Cup 2024, moving to WCC in 2026. Kinesiology launched 2023. Denver city is excellent — outdoor lifestyle, 300 days sunshine, Colorado Rapids MLS. Cold winters the main drawback.'},
-    {key:'america-east', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Vermont (Burlington, VT) listed — 2024 NCAA National Champions. New coach Adrian Dubois in 2026. Burlington is cold — not a lifestyle match for Olivier. Listed for pipeline reference.'},
+    {key:'america-east', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Vermont (Burlington, VT) is fully profiled — 2024 NCAA National Champions. New coach Adrian Dubois in 2026. Burlington is cold — not a lifestyle match for Olivier, so it is carried mainly for pipeline reference.'},
     {key:'nec',      label:'NEC — Northeast Conference',          tier:'Mid-Major · D1', intro:'Mid-major D1. Mercyhurst University (Erie, PA) joined the NEC in Fall 2024 and won the NEC regular-season title in that first D1 season under HC Austin Solomon, before finishing 8th in 2025. Provisional D1 — no NCAA postseason until 2028-29. B.S. Exercise Science with 500-hour clinical internship. High cost (~$63k) offset by 93% of students receiving aid averaging $31k.'},
     {key:'summit',   label:'Summit League',                       tier:'Mid-Major · D1', intro:'Mid-major D1. Delaware (Newark, DE) is fully profiled — the men\'s soccer team joined the Summit League in 2025 after the school\'s all-sports move to Conference USA (CUSA sponsors no men\'s soccer), and reached the 2025 Summit League semifinals in its debut season (12-2-3, #24 nationally). Strong kinesiology degree, low ~$38k cost, Philadelphia 25 min north. The Summit is a 6-team men\'s soccer league (Delaware and UMass join four Midwest/Plains programs).'},
     {key:'patriot',  label:'Patriot League',                      tier:'Mid-Major · D1', intro:'Army West Point and Navy play their men\'s soccer in the Patriot League — their AAC membership covers their other sports. Both are service academies with full federal scholarships (zero cost) but a mandatory military service commitment that is not compatible with a DPT/Chiropractic goal or an MLS pathway. Army won the 2022 Patriot League regular season. Filed here (rather than the AAC) because that is where their men\'s soccer competes; included for completeness rather than as a target.'},
@@ -3180,14 +3180,23 @@ function buildMinutesHtml(cardsOnly){
           '<strong>Roster-Based:</strong> Ranks purely on squad numbers and trajectory — how open the roster is regardless of who Olivier is. Same methodology for every player.'+
         '</div>'+
         '<p style="color:var(--muted);font-size:13px;line-height:1.6;margin:.6rem 0 .5rem">'+
-          'Olivier enters US college soccer in <strong>August 2027</strong>. Trajectories project realistic playing time across all 4 years based on 2025 rosters and how players age out.'+
+          'Olivier enters US college soccer in <strong>August 2027</strong>. Trajectories project realistic playing time across all 4 years from each school\'s most recent published roster and how those players age out. '+
+          'Schools are refreshed on a rolling basis, so the roster season each count came from is shown on its own card.'+
         '</p>'+
+        // v44.43: this key used to be written in terms of a 2025 roster's class
+        // years ("2025 Jr → graduate after 2026 → cleared"). That mapping shifts
+        // by a year the moment a school is refreshed onto a newer roster, and it
+        // INVERTED for the 56 schools now on 2026-27 data — a 2026-27 junior does
+        // NOT clear before Olivier arrives, they are a 2027 senior. The stored
+        // fields (cleared_before_2027 / rising_senior_2027 / rising_junior_2027)
+        // are already normalised to his entry year regardless of which season was
+        // scraped, so the key now describes those buckets and stays correct for
+        // both seasons. Do not re-introduce a hardcoded roster year here.
         '<div class="mo-key">'+
-          '<div class="mo-key-item"><strong>2025 Sr/Gr</strong> → already gone, irrelevant</div>'+
-          '<div class="mo-key-item"><strong>2025 Jr</strong> → graduate after 2026 → ✅ <em>cleared before he arrives</em></div>'+
-          '<div class="mo-key-item"><strong>2025 So</strong> → become 2027 Sr → 1-yr overlap with Olivier</div>'+
-          '<div class="mo-key-item"><strong>2025 Fr</strong> → become 2027 Jr → ❌ <em>primary 2-year competition</em></div>'+
-          '<div class="mo-key-item"><strong>+ Unknown 2026 class</strong> (coach call needed)</div>'+
+          '<div class="mo-key-item"><strong>Cleared by 2027</strong> → ✅ <em>graduated before he arrives</em></div>'+
+          '<div class="mo-key-item"><strong>2027 seniors</strong> → 1-yr overlap with Olivier</div>'+
+          '<div class="mo-key-item"><strong>2027 juniors</strong> → ❌ <em>primary 2-year competition</em></div>'+
+          '<div class="mo-key-item"><strong>+ Incoming classes still unknown</strong> (coach call needed)</div>'+
         '</div>'+
       '</div>'+
       '<div id="mo-toolbar-wrap"></div>'+
@@ -3196,8 +3205,8 @@ function buildMinutesHtml(cardsOnly){
       '<div class="mo-footer">'+
         '<p style="color:var(--muted);font-size:12px;line-height:1.6;margin-top:1.5rem">'+
           '<strong>Methodology caveat:</strong> Outlook assumes typical recruiting class sizes (3–5 MFs/yr). '+
-          'The 2026 freshman class is being recruited now and is unknown. '+
-          'Refine Yr1–2 projections by asking each coach: <em>"How many central midfielders are in your 2026 and 2027 classes, and what is your projected 2027 starting XI?"</em>'+
+          'The classes recruited after each roster was read are unknown. '+
+          'Refine Yr1–2 projections by asking each coach: <em>"How many central midfielders are in your 2027 and 2028 classes, and what is your projected 2027 starting XI?"</em>'+
         '</p>'+
       '</div>';
 

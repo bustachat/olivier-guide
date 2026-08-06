@@ -6,6 +6,36 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.52 (August 2026) — `sweep.py`: the exhaustive-search discipline becomes a command instead of a virtue
+
+**Three consecutive sessions closed a copy/data item on a count that turned out to be a lower bound:**
+
+| session | the note said | reality |
+|---|---|---|
+| v44.47 — Keiser "Fort Lauderdale" | 2 | **8** |
+| v44.48 — NAIA "no scholarship cap" | 1 | **8** |
+| v44.49 — D1 "9.9 equivalencies" | 2 (the owner's brief) | **29** |
+
+None of those figures was written carelessly — each was accurate for the surface someone had looked at, and stale for every surface they hadn't. The failure mode is nasty because **a truncated search read as exhaustive is indistinguishable from a clean result**: no error, no warning, just fewer rows.
+
+The walker that finally got v44.47 and v44.49 right was hand-written and thrown away **both times**. It is now committed at the repo root.
+
+**What it does that a grep does not:**
+- **Never truncates.** No `--limit`, no `head`. Closure requires all rows.
+- **Attributes every hit** in `data/` + `athletes/` to its owning record and JSON path (`d2.json  ocu  fin.internationalNote`), so 39 hits become 39 individual judgements instead of a skim. That attribution is exactly what separated the 5 genuine Keiser errors from ~30 legitimate mentions of Fort Lauderdale.
+- **Takes several patterns at once and counts each**, because a factual error is a *claim* and a claim has many phrasings. v44.48 needed three patterns; one untruncated regex would still have left three live.
+- **Case-insensitive by default** (`-s` to opt out) — v44.50's bug was a case-sensitive `.split('Up to')` missing `"up to"`.
+- **Excludes docs by default** (`--docs` to include): CLAUDE.md and CHANGELOG.md quote past bugs verbatim, so they inflate every count and bury the live strings.
+- **Warns when a pattern matches nothing**, so a typo'd regex can't masquerade as a clean sweep.
+
+**Control-tested on creation, the same discipline the roster extractor uses.** Its 42 hits for `9\.9` matched an independent grep over the same file set **exactly** (39 structured + 3 code), and the delta from v44.49's 29 reconciled line-by-line: **+14** new `maxAid` fields (v44.50), **−2** removed D1 comparisons in `js/app.js` and `d2.json` (v44.49), **+1** new Glossary line. A walker whose count you cannot reconcile is not yet trustworthy.
+
+**Its first real run taught its own lesson, which is now in the docstring.** Sweeping `no cap|uncapped` for leftover NAIA claims returned 2 hits — both false: `"no cap"` matched **"no capacity"** and `uncapped` matched **"uncapacitied"**, in `murray_state_ok`'s stadium description. Zero real hits, so v44.48's fix holds. But a count alone would have sent someone hunting two scholarship errors that do not exist, or "fixing" them. **Read the rows, not the total** — your own pattern collides too. Same class as v44.45's `"sun conference"` matching inside `"asun conference"`.
+
+Documented in CLAUDE.md §15 ("Closing a copy or data item: use `sweep.py`, not a grep"). No runtime file touched — the guide is byte-identical; this is a dev tool like `validate_consistency.js`. Validator **Issues: 0**, `validate_schools.py` PASS.
+
+---
+
 ### v44.51 (August 2026) — the validator stops reimplementing the Fit Score and calls the real `scores.js`
 
 **The check that guards every ranking in the guide could not do its job, and this is a demonstration rather than a theory.**

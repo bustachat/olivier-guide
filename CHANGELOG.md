@@ -56,6 +56,18 @@ Probing all 19 reachable browser-only JUCOs on their season-scoped 2026-27 URL f
 
 Ten schools **are** populated on 2026-27 (`miami_dade` 31 · `northeast_cc` 35 · `daytona_state` 30 · `efsc` 35 · `iowa_lakes_cc` 17 · `angelina_college` 22 · `johnson_county_cc` 29 · `glendale_cc_az` 35 · `arizona_western` 12 · `cowley_cc` 27) but **none has had its MF extraction or coach check yet** — those are squad sizes, not midfield counts. Three carry a season label that needs checking first: `northeast_cc`'s title has **no year**, `angelina_college`'s says **"2027"**, `cowley_cc`'s says **"Standings"**. Three more were not reachable by the standard shape: `tyler_jc` (SPA shell, `innerText.length` 0), `coastal_bend_cc` (PrestoSports), `iowa_western` (non-`/sports/msoc` URL).
 
+#### Rule scoping — RULE 0 was broken by applying another rule's scope
+
+Three research rules looked like they conflicted. They don't; they are scoped to different page types, and §15 now says so in a table: **rosters/alumni/staff ⇒ Chrome MCP, full stop**; **conference standings ⇒ in-app Browser MCP first, `curl` on bot-block** (the confRecord refinement — *standings sites only*); **discovery of which URL ⇒ WebSearch**. This session generalised the standings refinement to rosters and then stretched it to a bespoke Python fetcher, which no rule sanctions.
+
+Session 2's *"probe whether the roster is server-rendered before reaching for a browser"* is likewise now scoped to hosts with **no prior determination** — where a campaign has already classified a host set (JUCOs = browser-only, v44.29), that classification wins; challenge it openly rather than testing around it.
+
+**And the inference that caused the historical damage, now stated as a rule: a 403/202 is a NETWORK verdict, never a DATA verdict.** These hosts CloudFront-block datacenter IPs — Suffolk 403'd a script *and* the in-app browser while rendering perfectly in the owner's real Chrome. **A blocked fetch and a genuinely missing field are indistinguishable from a script**, which is exactly how v39 wrote off two JUCO rosters that Chrome returned on the first attempt. Never record "field absent" or "roster unavailable" from a non-200; prove it in a rendered page and name the browser and date in the note.
+
+§3a Type 3 also gained a JUCO warning block: the class-year inversion, and "do not recompute a JUCO trajectory from §14 — use `facts_only`".
+
+**Refresh ledger: 62 on 2026-27, 43 on 2025-26, 6 `available:false`** (re-counted from the data files).
+
 Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings.
 
 ---

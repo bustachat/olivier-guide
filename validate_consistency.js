@@ -19,6 +19,51 @@ const conferences = load('data/conferences.json');
 const prestige = load('data/conf-prestige.json');
 const athlete = load('athletes/olivier.json');
 
+// ── js/scores.js is the SINGLE SOURCE OF TRUTH for the Fit Score (added v44.51) ──
+// This file used to REIMPLEMENT calculateFitScore() and five of its helpers
+// (soccerQualityScore, minutesOutlookScore, nextLevelFactor, housingPenalty,
+// fundingPenalty) plus DIV_STRENGTH and the §5b constants. That made the FIT check
+// structurally incapable of its own job: change a formula in js/scores.js and miss
+// the copy here, and this validator would compare all 111 stored scores against its
+// own stale mirror and cheerfully report Issues: 0 while every ranking in the guide
+// was wrong. Exactly the blindness CHIPS (v44.45) and MAXAID (v44.50) needed
+// code-shape guards for — except what is guarded here is the score itself.
+//
+// scores.js is a plain browser script with no module system (§4: vanilla JS, no build
+// step — do NOT add module.exports to it just to satisfy this file), so it is
+// evaluated in a vm sandbox and the real functions are pulled out. Safe to do:
+// every scoring function in it is pure. Its one DOM-touching function,
+// recalculateAllScores(), is a function *declaration*, so loading the file never
+// executes it and nothing here calls it.
+//
+// There is deliberately NO fallback copy of the formula. If this loader fails it
+// throws, because a validator that silently falls back to a local mirror is the
+// precise bug this replaced.
+const vm = require('vm');
+const SCORES = (() => {
+  const src = fs.readFileSync(path.join(ROOT, 'js/scores.js'), 'utf8');
+  const wanted = ['calculateFitScore', 'soccerQualityScore', 'minutesOutlookScore',
+    'nextLevelFactor', 'housingPenalty', 'fundingPenalty', 'calcDevAvg',
+    'climateScore', 'cityScore'];
+  let api;
+  try {
+    api = vm.runInContext(`${src}\n;({${wanted.join(',')}})`,
+      vm.createContext({ console }), { filename: 'js/scores.js' });
+  } catch (e) {
+    throw new Error(`SCORES-SRC: could not evaluate js/scores.js to validate against the REAL Fit Score formula.\n`
+      + `  ${e.message}\n`
+      + `  If scores.js gained a top-level reference to document/window, move it inside a function —\n`
+      + `  the scoring functions must stay pure so they can be verified outside a browser.`);
+  }
+  const missing = wanted.filter(k => typeof api[k] !== 'function');
+  if (missing.length) {
+    throw new Error(`SCORES-SRC: js/scores.js no longer provides: ${missing.join(', ')}.\n`
+      + `  The FIT check cannot run without them and will NOT fall back to a local copy.\n`
+      + `  If they were renamed, update the 'wanted' list here in the SAME commit as the rename.`);
+  }
+  return api;
+})();
+
 const issues = [];
 const note = (cat, msg) => issues.push(`[${cat}] ${msg}`);
 
@@ -238,13 +283,9 @@ schools.filter(s => s.gpa).forEach(s => {
   if (s.gpa.status && s.gpa.status !== comp) note('GPA', `${s.id} stored gpa.status='${s.gpa.status}' vs computed@2.8='${comp}' (minEntry: ${s.gpa.minEntry}) — Compare tab renders the stored value`);
 });
 
-// ── fitOlivier recompute (Soccer Priority — the only Fit Score since v37.1) —
-// mirrors scores.js's calculateFitScore()/soccerQualityScore() exactly ──
-function calcDevAvg(s) {
-  if (!s.devScores) return 0;
-  const vals = Object.values(s.devScores);
-  return Math.round(vals.reduce((a, b) => a + b, 0) / vals.length);
-}
+// Dev average — the REAL scores.js implementation, not a copy (see the SCORES loader
+// at the top of this file). Used by DEV-RUBRIC's ceiling check below.
+const calcDevAvg = SCORES.calcDevAvg;
 
 // ── DEV-RUBRIC (added v42.0): dev score ceilings per CLAUDE.md §5a ──
 // The sub-scores themselves are judgment values and are deliberately NOT checkable here.
@@ -309,48 +350,17 @@ schools.forEach(s => {
   if (!NAMES_A_RANK.test(String(label).replace(CONF_TOKENS, ''))) confRecordBacklog++;
 });
 
-const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
-// mirrors scores.js nextLevelFactor() (v42 §5b): gated on proPlayers.nextLevel.
-// Absent ⇒ legacy mlsPicks5yr/10; present with a measured perYear ⇒ rate/divisor;
-// present without ⇒ neutral. Constants must match scores.js exactly.
-const D1_RATE_DIVISOR = 5.0594, NEXT_LEVEL_NEUTRAL = 0.3773;
-function nextLevelFactor(s) {
-  const pp = s.proPlayers, nl = pp && pp.nextLevel;
-  if (!nl) return Math.min(1, ((pp && pp.mlsPicks5yr) || 0) / 10);
-  if (typeof nl.perYear !== 'number' || !isFinite(nl.perYear)) return NEXT_LEVEL_NEUTRAL;
-  return Math.min(1, nl.perYear / D1_RATE_DIVISOR);
-}
-function soccerQualityScore(s) {
-  const devAvg = calcDevAvg(s) / 100;
-  const nextLevel = nextLevelFactor(s);
-  const divStrength = DIV_STRENGTH[s.div] || 0.5;
-  return (devAvg * 0.6) + (nextLevel * 0.3) + (divStrength * 0.1);
-}
-function moScore(s) {
-  const mo = s.minutesOutlook; if (!mo || !mo.available) return 0.5; const t = mo.trajectory; if (!t || !t.length) return 0.5;
-  const y1 = (t[0] ? t[0].pct : 50) / 100, y2 = (t[1] ? t[1].pct : t[0].pct) / 100; return Math.min(1, y1 * 0.6 + y2 * 0.4);
-}
-const wantsWarm = athlete.lifestylePrefs.includes('warm'), wantsCity = athlete.lifestylePrefs.includes('city');
-// mirrors scores.js housingPenalty() (v41.0): −6 no on-campus housing, −3 limited/unguaranteed
-function housingPenalty(s) {
-  const h = s.facilityDetails && s.facilityDetails.housing;
-  if (!h) return 0;
-  if (h.available === false) return 6;
-  if (h.available === 'limited') return 3;
-  return 0;
-}
-// mirrors scores.js fundingPenalty() (v42.18 §5c): −8 none, −3 capped, 0 full/absent
-function fundingPenalty(s) {
-  if (s.fundingPathway === 'none') return 8;
-  if (s.fundingPathway === 'capped') return 3;
-  return 0;
-}
+// ── FIT: stored fitOlivier vs the REAL scores.js calculateFitScore() ──
+// Calls the actual production function (see the SCORES loader at the top). Every
+// local reimplementation — DIV_STRENGTH, the §5b constants, nextLevelFactor,
+// soccerQualityScore, moScore, housingPenalty, fundingPenalty and the inline
+// weighted-total formula — was DELETED in v44.51. Do not reintroduce any of them:
+// a second copy of the formula is precisely what let this check pass while being
+// wrong. If a weight or penalty changes, it changes in ONE place and this check
+// picks it up for free.
 const fitMismatches = [];
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
-  const w = athlete.scoreWeights;
-  const total = soccerQualityScore(s) * w.soccerQuality + moScore(s) * w.minutesOutlook
-    + (wantsCity ? (s.city ? 1 : 0.3) : 1) * w.city + (wantsWarm ? (s.warm ? 1 : 0.2) : 1) * w.climate;
-  const fit = Math.min(100, Math.max(0, Math.round(total) - housingPenalty(s) - fundingPenalty(s)));
+  const fit = SCORES.calculateFitScore(s, athlete);
   if (Math.abs(fit - (s.fitOlivier || 0)) > 1) fitMismatches.push(`${s.id} (${s._file}): stored ${s.fitOlivier}, live formula ${fit}`);
 });
 

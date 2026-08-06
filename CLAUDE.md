@@ -1185,7 +1185,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v44.54 (August 2026).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v44.58 (August 2026).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 **Version history is NOT kept in this file.** Every version from v35 onward has a full entry in **CHANGELOG.md**, newest first and in more detail than any summary here ever carried. Phase 8 appends there, never here. This section holds two things only: the current state snapshot, and the open-items list.
 
@@ -1259,30 +1259,48 @@ Campaign plan and session-by-session detail live in the `roster_refresh_campaign
 
 #### D2. COA campaign — UNFINISHED since v33.1, restarted v44.56
 
-**🚩 53 of 111 schools still carry the "ballpark" cost figures the v31–v33.1 COA passes were meant to replace.** Those four commits (`7ee5a4b`, `8296450` v31, `b8166d3` v33, `0ebe6b2` v33.1) explicitly corrected `costNum` *"from ballpark to verified 2025-26 COA"* — and then stopped after roughly **17 schools**. (17 is a **lower bound**: it comes from scanning each commit's diff for the nearest preceding `"id"`, so treat it as approximate.)
+**🚩 40 of 111 schools still carry the "ballpark" cost figures the v31–v33.1 COA passes were meant to replace** (down from 53; 13 done across v44.56–v44.58). **Nothing is blocked — all three held schools were cleared in v44.58, and two of the three blockers turned out not to exist.**
 
-**How to spot the unresearched ones — they announce themselves.** A ballpark record has *round* components summing to a round total (`clemson` was 38,000 + 12,000 + 2,000 = 52,000; `pba` is 26,000 + 10,000 + 2,000 = 38,000, and `fees: 2000` is a shared placeholder). A researched one does not (`duke` 73,740 + 22,029 + 7,411 = 103,180). Split: **53 round vs 53 exact**, plus 2 zeroed service academies.
+**Remaining worklist, re-derived from the data files at v44.58 — treat the clusters as the running order:**
 
-**Priority order — the damage is concentrated where it matters most:**
-1. **7 of the 10 SHORTLISTED schools were ballpark** — ✅ `clemson` · ✅ `pba` · ✅ `lynn` · ✅ `ucsb` done (v44.56–57); remaining: `usf`, `fau` (both blocked, see below) and `barry` (blocked by a cookie-consent gate — its tuition page renders only 723 chars until the banner is dismissed, so it was **deferred rather than guessed**).
+| cluster | n | schools |
+|---|---|---|
+| `$38,000` | 6 | charleston · delaware · gcu · keiser · memphis · stonybrook |
+| `$28,000` | 5 | charlotte · csuf · csula · uab · uca |
+| `$58,000` | 4 | pittsburgh · stjohns · ucdavis · xavier |
+| `$72,000` | 3 | chapman · providence · villanova |
+| `$32,000` ·`$42,000` ·`$62,000` ·`$68,000` ·`$78,000` ·`$82,000` | 2 each | akron/calpoly · stedwards/temple · denver/hofstra · michigan/setonhall · northeastern/syracuse · northwestern/virginia |
+| singletons | 10 | smc · miami_dade · iowa_western · daytona_state · indian_hills · uc_charleston · elon · ucla · stanford · wakeforest |
 
-  **Results so far — every single one was UNDERSTATED, several severely:**
+**⚠ THE LESSON FROM v44.58 — two of the three "blockers" were reading errors, not data gaps.** v44.56 recorded that FAU and USF publish *only* a per-credit-hour non-resident rate, and that an annual figure would need a fabricated credit-load assumption the owner had to rule on. **Both schools publish a complete non-resident full-time budget on that very page**, behind an accordion that had not been expanded — FAU's `ESTIMATED DIRECT COSTS` row and USF's `Total Billable Expenses` row. The per-credit table sat directly above and was mistaken for the whole page. **Expand every accordion/tab before recording an absence** — this is the same family as §15's "a 403 is a NETWORK verdict, never a DATA verdict". Barry's consent gate was real; `Reject All` cleared it and no consent was accepted.
+
+**Origin.** Four commits (`7ee5a4b`, `8296450` v31, `b8166d3` v33, `0ebe6b2` v33.1) explicitly corrected `costNum` *"from ballpark to verified 2025-26 COA"* — and then stopped after roughly **17 schools**. (17 is a **lower bound**: it comes from scanning each commit's diff for the nearest preceding `"id"`, so treat it as approximate.) 53 were left behind.
+
+**How to spot the unresearched ones — they announce themselves.** A ballpark record has *round* components summing to a round total (`clemson` was 38,000 + 12,000 + 2,000 = 52,000; `pba` was 26,000 + 10,000 + 2,000 = 38,000, and `fees: 2000` is a shared placeholder). A researched one does not (`duke` 73,740 + 22,029 + 7,411 = 103,180). The split opened at **53 round vs 53 exact** plus 2 zeroed service academies; at v44.58 it is **40 round vs 69 exact**.
+
+**✅ CLEARED — all 10 SHORTLISTED schools and the whole `$52,000` cluster are now researched.** Every one of the 13 was wrong.
 
   | school | stored | actual | gap | value lens |
   |---|---|---|---|---|
   | `pba` | $38,000 | **$60,300** | **+$22,300** | **48 → 37** |
+  | `monmouth` | $52,000 | **$69,662** | +$17,662 | 19 → 19 |
   | `lynn` | $47,000 | **$64,400** | +$17,400 | 36 → 32 |
   | `ucsb` | $66,000 | **$80,928** | +$14,928 | 37 → 38 |
-  | `clemson` | $52,000 | **$58,732** | +$6,732 | 40 (unchanged) |
+  | `washington` | $52,000 | **$65,114** | +$13,114 | 30 → 30 |
+  | `ohiostate` | $52,000 | **$63,004** | +$11,004 | 30 → 30 |
+  | `michiganstate` | $52,000 | **$59,701** | +$7,701 | 22 → 22 |
+  | `uconn` | $52,000 | **$59,426** | +$7,426 | 22 → 22 |
+  | `clemson` | $52,000 | **$58,732** | +$6,732 | 40 → 40 |
+  | `fau` | $32,000 | **$38,720** | +$6,720 | **47 → 41** |
+  | `barry` | $44,000 | **$50,310** | +$6,310 | **44 → 39** |
+  | `usf` | $38,000 | **$34,254** | **−$3,746** | **46 → 48** |
+  | `ncstate` | $52,000 | **$50,383** | **−$1,617** | 34 → 35 |
 
-  **The bias is systematic, not random — the ballparks were optimistic in every case.** PBA is the one that matters most: it looked like the best-value shortlisted school at $38k and is not. `fitOlivier` correctly did not move for any of them.
-
-2. **The `$52,000` cluster is literally Olivier's budget** — `ncstate`, `clemson` ✅, `uconn`, `michiganstate`, `ohiostate`, `washington`, `monmouth`. Someone typed the budget as a placeholder, and it lands exactly on the affordability cliff. Other placeholder clusters: `$38,000` ×8, `$28,000` ×5, `$58,000` ×4, `$32,000` ×3, `$72,000` ×3.
-3. Remaining **40 D1** ballparks (the expensive ones), then D2 ×6, JUCO ×5, NAIA ×1, D3 ×1.
+  **The bias is systematic — 11 of 13 were optimistic**, i.e. the guide has been making schools look cheaper than they are. `usf` and `ncstate` are the only overstatements. **PBA matters most**: it looked like the best-value shortlisted school at $38k and is not. **The four `$52,000` schools cannot move on the Value lens** — sitting exactly on the budget, their affordability term was already 0, so any increase leaves `value` unchanged. `fitOlivier` correctly did not move for any of the 13.
 
 **Why no validator can see it:** `costNum` reconciles with `tuition + roomBoard + fees` for **all 111**, because the components were estimated together. Everything agrees with everything — **internal consistency is not accuracy**, and the `VALUE` check only proves the formula was applied to whatever number is stored.
 
-**⚠ Method wrinkle found on the first batch — the Florida publics need a decision before they are touched.** Clemson publishes a clean non-resident COA budget table. **FAU does not**: it publishes a *Florida-resident* budget plus a non-resident **per-credit-hour** rate ($799.72 undergrad) with tuition and fees combined, so deriving an annual figure requires assuming a credit load — which is exactly the fabricated precision this campaign exists to remove. Expect the same at `fiu` and `usf`. **Do not guess a credit load; decide the rule (e.g. 30 credits/yr, stated in the note) with the owner first.**
+**📌 Conventions settled by the first 13 — apply them, do not re-derive them.** Look for the school's own **direct-billed** row: five schools publish it verbatim (UConn `Subtotal Direct Costs`, Monmouth `Direct Cost (Billed by MU)`, FAU `Estimated Direct Costs`, USF `Total Billable Expenses`, PBA's stated total), and each matched `tuition + roomBoard + fees` exactly. Where tuition and fees are published **combined** (`ncstate`, `ohiostate`, `usf`, `fau`), store the combined figure under `tuition`, set `fees: 0`, and say so in the note. Skip bursar per-credit tables and go to the financial-aid office's COA page. Prefer **2026-27**; `michiganstate` is the one school stored on 2025-26, because it has published 2026-27 tuition but not a 2026-27 budget, and a mixed-year total is worse than a coherent older one.
 
 **Two dead cost fields should be cleaned up alongside this.** `u.cost` (top-level string, all 111) is referenced exactly **once**, as a fallback that can never fire because `costNum` is defined everywhere; `fin.cost` (5 schools) is referenced **nowhere**. Both carry stale contradictory values — **`tulsa` has three different costs**: `u.cost` "~$45k", `fin.cost` "~$70k", `costNum` $77,346. Also `ucirvine` "~$73k" vs $81,292 and `ocu` "~$49k" vs $56,720. Same silent-drift class as `coaches.json.url`. §3a Type 4 already says never to hand-edit the display string.
 

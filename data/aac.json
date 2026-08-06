@@ -363,14 +363,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 38000,
-      "tuition": 22000,
-      "roomBoard": 13000,
-      "fees": 3000,
+      "costNum": 34254,
+      "tuition": 18846,
+      "roomBoard": 15408,
+      "fees": 0,
       "maxAthletic": 0.9,
       "maxAcademic": 12000,
       "aidType": "athletic+need",
-      "internationalNote": "USF Green & Gold Scholars program — merit aid available to international students with 3.0+ GPA. Athletic aid can stack with academic."
+      "internationalNote": "USF non-Florida-resident direct billed cost $34,254 (2026-27, Tier-1 verified from USF Financial Aid's official 2026-27 Students Living On Campus table): tuition and fees $18,846 + housing $9,638 + food $5,770 — which is exactly USF's own 'Total Billable Expenses' row. USF publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0; the sum invariant still holds. USF's own headline total COA is $40,134, adding books, transport and personal allowances that this guide excludes. IMPORTANT: USF's tuition line is built on ITS OWN stated standard load of 28 credit hours a year (14 per semester), not a 30-credit assumption made here — a student carrying 30 credits would pay somewhat more. The previous stored $38,000 was an unresearched ballpark and OVERstated the cost by $3,746, making this only the second school in the campaign to be overstated. USF Green & Gold Scholars program — merit aid available to international students with 3.0+ GPA. Athletic aid can stack with academic."
     },
     "culture": {
       "vibe": "Urban Tampa campus with a mix of commuter and residential students. USF has grown significantly in recent years and now has genuine campus energy. Bulls athletics culture is building. Tampa is a genuine city with major league sports.",
@@ -426,7 +426,7 @@
       "academic": 84,
       "minutes": 19,
       "lifestyle": 82,
-      "value": 46
+      "value": 48
     },
     "minutesOutlook": {
       "available": true,
@@ -2505,14 +2505,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 32000,
-      "tuition": 22000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 38720,
+      "tuition": 22888,
+      "roomBoard": 15832,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state tuition ~$22k — very competitive for a D1 program in South Florida. Athletic scholarship + merit aid creates excellent value. FAU is in Boca Raton — same city as Lynn University, giving comparable lifestyle at D1 level."
+      "internationalNote": "FAU non-Florida-resident direct billed cost $38,720 (2026-27, Tier-1 verified from FAU Financial Aid's official Cost of Attendance page, Non-Florida Residents / undergraduate / on campus): tuition and fees $22,888 + housing $10,524 + food $5,308 — which is exactly FAU's own 'Estimated Direct Costs, payable to FAU and reflected on the student's bill' row. FAU publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0; the sum invariant still holds. FAU's own headline total is $47,934, adding books, transport and personal expenses that this guide excludes. NOTE: no credit-load assumption was needed — the per-credit-hour rate ($799.72 non-resident) published on the same page is NOT what this figure comes from; FAU publishes a full-time nine-month budget alongside it. The previous stored $32,000 was an unresearched ballpark and understated the cost by $6,720. Still very competitive for a D1 program in South Florida; athletic scholarship + merit aid creates good value. FAU is in Boca Raton — same city as Lynn University, giving comparable lifestyle at D1 level."
     },
     "culture": {
       "vibe": "Vibrant South Florida campus in Boca Raton — 45 minutes north of Miami, 20 minutes north of Fort Lauderdale. Warm year-round climate, beach access, diverse international community. FAU is a growing university with a strong athletics culture — AAC move brings increased prestige. Soccer gaining momentum under new coach.",
@@ -2573,7 +2573,7 @@
       "academic": 80,
       "lifestyle": 85,
       "minutes": 21,
-      "value": 47
+      "value": 41
     },
     "minutesOutlook": {
       "available": true,

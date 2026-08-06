@@ -6,6 +6,39 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.58 (August 2026) — COA batch 3: the `$52,000` cluster is cleared and all three blocked schools are unblocked — two of the blockers did not exist
+
+Change Type 4 on seven schools. All Tier-1, read in a real browser from each school's own cost page. **No `fitOlivier` moved** (correct — cost has not fed the Fit Score since v37.1); only `lensScores.value` can move, and for the four `$52,000` schools it provably cannot, because they were sitting *exactly* on the budget and their affordability term was already 0.
+
+| school | stored | actual | gap | value |
+|---|---|---|---|---|
+| `monmouth` | $52,000 | **$69,662** | **+$17,662** | 19 → 19 |
+| `washington` | $52,000 | **$65,114** | +$13,114 | 30 → 30 |
+| `ohiostate` | $52,000 | **$63,004** | +$11,004 | 30 → 30 |
+| `michiganstate` | $52,000 | **$59,701** | +$7,701 | 22 → 22 |
+| `fau` | $32,000 | **$38,720** | +$6,720 | **47 → 41** |
+| `barry` | $44,000 | **$50,310** | +$6,310 | **44 → 39** |
+| `usf` | $38,000 | **$34,254** | **−$3,746** | **46 → 48** |
+
+**The `$52,000` placeholder cluster is now fully researched** (`ncstate`, `clemson`, `uconn` in v44.56–57; these four here). Every one of the seven was a ballpark, and every one was wrong — by between $1,617 and $17,662.
+
+**⚠ The most important finding is that TWO OF THE THREE BLOCKERS WERE NOT REAL.** Both were recorded as genuine data gaps and both dissolved on a real-browser read:
+
+- **The Florida-publics credit-load blocker never existed.** v44.56 concluded that FAU "publishes no non-resident COA budget table — only a Florida-*resident* budget plus a non-resident **per-credit-hour** rate ($799.72)", and that deriving an annual figure would need a fabricated 30-credit assumption. **FAU publishes a complete non-resident nine-month budget on that same page**, behind a *Non-Florida Residents* accordion, with an explicit `ESTIMATED DIRECT COSTS: Payable To FAU And Reflected On Student's Bill` row of **$38,720**. The per-credit table sits directly above it and was mistaken for the whole page. **USF is the same** — a `Total Billable Expenses` row of **$34,254**. No assumption was needed at either school, and the owner decision that was being waited on was never required. *Lesson: an accordion or tab that has not been expanded is not evidence that the data is absent — the same failure mode as reading a 403 as a data verdict (§15).*
+- **Barry's cookie gate is real but yields to `Reject All`.** The page renders in full the moment the banner is dismissed with the privacy-preserving option; no consent was accepted. Barry publishes no COA budget, so `roomBoard` is built from its own rate tables, and the note states the assumption outright: the **standard double with shared bath** at $3,940/semester (the most widely published double rate, in 5 of its 11 halls) plus the mandatory residential meal plan at $2,915/semester. Doubles span $3,570–$4,560 and singles $4,900–$5,600, so a single would add roughly $2,400–$3,300 a year — stated in the note rather than hidden in the number.
+
+**`usf` is the first genuinely CHEAPER correction in the campaign** ($3,746 below the ballpark) and the second overstatement after `ncstate`. It also carries the campaign's clearest credit-load disclosure: USF's own tuition line is built on **its own** stated standard load of 28 credit hours a year (14 per semester), not on an assumption made here — a student carrying 30 would pay somewhat more. The note says so.
+
+**Three schools confirm the direct-billed convention in the school's own words** — Monmouth's `Direct Cost (Billed by MU)` = $69,662, FAU's `Estimated Direct Costs` = $38,720, USF's `Total Billable Expenses` = $34,254, each matching `tuition + roomBoard + fees` exactly. That is now five such confirmations (with UConn's `Subtotal Direct Costs` and PBA's published total).
+
+Two schools publish tuition and fees **combined** (`ohiostate`, and both Florida publics), so the combined figure is stored under `tuition` with `fees: 0`, per the NC State convention. Michigan State is the one school stored on **2025-26** rather than 2026-27: it has published a Fall 2026/Spring 2027 non-resident flat tuition ($45,040, +$740) but has not yet reissued the COA budget, and a mixed-year total would be worse than a coherent older one — the note records both.
+
+Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings; local preview 111 cards, 0 NaN, 114/114 images, every touched Fit score held. Dashboard "within budget" count moves 59 → **55 of 111**, which is the campaign working as intended.
+
+**Remaining: 40 of 53.** Next clusters per §6 D2: `$38,000` ×6 (memphis, charleston, stonybrook, gcu, delaware, keiser), `$28,000` ×5, `$58,000` ×4, `$32,000` ×2, `$72,000` ×3.
+
+---
+
 ### v44.57 (August 2026) — COA batch 1: three more shortlisted schools researched, and every ballpark was understated
 
 Change Type 4 on `ucsb`, `pba`, `lynn` — all Tier-1 from each school's own **2026-27** cost page, read in a real browser. `fitOlivier` moved for none of them (correct: cost has not fed the Fit Score since v37.1); only `lensScores.value` moves.

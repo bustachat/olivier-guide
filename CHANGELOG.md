@@ -6,6 +6,44 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.50 (August 2026) — the Conferences card's "Max Aid" stat stops parsing prose; `maxAid` becomes a stored field
+
+Closes the item v44.49 found and logged. `renderConferences()` derived the stat tile from `conferences.json`'s `scholarships` **sentence**:
+
+```js
+c.scholarships.split('Up to')[1]?.trim().split(' ')[0] || c.scholarships.split(' ')[0]
+```
+
+The split is **case-sensitive**, so any string not starting with a literal `"Up to"` fell through to "first word of the sentence". **10 of 25 conference cards rendered a word where a number belongs:**
+
+| rendered | conferences | their string starts |
+|---|---|---|
+| `NCAA` | NEC, Summit, CACC | `"NCAA D1 — up to 9.9 …"` (lowercase `up to` never matched) |
+| `Army` | Patriot | `"Army & Navy: full federal scholarships; …"` |
+| `NAIA` | AMC | `"NAIA — 12 equivalencies, …"` |
+| `equivalent` | SAC, Sun | `"Up to equivalent of full ride (NAIA)"` |
+| `ZERO` | Ivy, SCIAC | `"ZERO athletic scholarships — …"` |
+
+**The deeper defect was the coupling, not the ten wrong tiles.** A displayed figure was a function of prose, so **any copy edit could silently change a number** — v44.49 appended a House-settlement qualifier to 14 of those very strings and had to measure the parse before and after to prove it hadn't moved. That is not a property a data file should have.
+
+**Fix — in the renderer, never the copy.** A `maxAid` token is now stored on **all 25** conferences and the renderer is `${c.maxAid||'—'}`. Values were authored per conference rather than mechanically derived: `"9.9"` (D1, ×14) · `"9.0"` (D2, ×5) · `"12"` (NAIA team cap, ×3) · `"None"` (Ivy, SCIAC) · `"Varies"` (JUCO — one value genuinely cannot express NJCAA DI vs DII vs CCCAA, which differ by rule).
+
+**Reshaping the ten prose strings to satisfy the parser was explicitly rejected** — it inverts the dependency, and the next copy edit re-breaks it.
+
+**Two currently-*working* values were changed on purpose:**
+- **D2 `"9"` → `"9.0"`** — matches the `9.9` format, so it reads as a scholarship equivalency rather than a count of something.
+- **Ivy/SCIAC `"ZERO"` → `"None"`** — `"ZERO"` was never an authored value; it was the parser grabbing the first word of *"ZERO athletic scholarships…"*. It happened to be readable, which is why it survived.
+
+**New `MAXAID` check in `validate_consistency.js`, in two halves — the second is the one that makes it durable.** (1) Data: `maxAid` must be a non-empty string of ≤12 chars, so nobody stuffs a sentence into a stat tile. (2) **Code shape: it greps `js/app.js` and fails if `scholarships.split(` reappears.** Without that, the check would pass contentedly while the renderer regressed — the same blindness the CHIPS check needed its own code-shape guard for in v44.45.
+
+**All five branches negative-tested** (missing field · empty string · wrong type · over-length · renderer regressed). **One test-quality lesson, and it is the most transferable thing here: the first negative test PASSED and proved nothing.** It patched a `"maxAid"` line indented 6 spaces when the file uses 4, so the mutation silently never applied and the resulting `Issues: 0` looked exactly like a working check on clean data. It was caught only by asking why the *other* mutations fired and that one didn't. **Assert the mutation actually landed — count the field before and after — before reading a validator's silence as a result.** Same family as v44.45's "ask what the test actually proves".
+
+Also in this version: `README.md` version header 44.48 → 44.50, and its v41–v44 era row now mentions the UI-copy accuracy run (NAIA cap, Keiser's location, the 9.9 figure). Per-version rows for that era are still deliberately not back-filled.
+
+Validator: **Issues: 0**. `validate_schools.py` PASS (111 schools). Verified in a local preview by reading the rendered DOM: **all 25 cards, every tile a sensible token, zero `—` fallbacks, zero words where a number belongs** (was 15 numeric / 10 words, now 25 / 0). Zero JS console errors, 19/19 own-site resources loaded, 111 schools + 25 conferences parsed. Screenshots were unavailable this session (the Browser pane was not compositing), so the DOM read is the verification of record.
+
+---
+
 ### v44.49 (August 2026) — the D1 "9.9 equivalencies" figure made opt-in-aware; 29 strings, not the 2 logged
 
 Closes the item v44.48 logged and deliberately declined to rush. The guide asserted a flat **9.9 equivalencies for D1 men's soccer** everywhere, which the *House v. NCAA* settlement (effective 1 July 2025) made a **partial** truth: schools that have **not** opted in still run the 9.9 cap, while **opt-in schools carry a 28-player roster on which every spot may be funded**. §5c has recorded this since v42.18 with an ncaa.org citation — the fix was propagating the project's own already-sourced fact into the UI, **not new research** (§15 Rule 0: no facts were taken from a summary).

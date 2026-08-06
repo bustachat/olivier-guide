@@ -115,13 +115,23 @@ def round5(x):
     return math.floor(x / 5 + 0.5) * 5
 
 
-def trajectory_for(opp):
+def trajectory_for(opp, juco=False):
+    """juco=True truncates to TWO years.
+
+    A 2-year college has no Yr 3 / Yr 4 to project, and every stored JUCO
+    trajectory in the guide is 2 rows (murray_state_ok, tyler_jc, ...). Writing
+    the 4-row 4-year shape here would invent two seasons the athlete cannot
+    play and would silently change the Minutes score, which weights Yr1 60% /
+    Yr2 40% over whatever rows it finds.
+    """
     f = math.floor(opp)
     row = ROWS[0] if f >= 12 else ROWS[1] if f >= 8 else ROWS[2] if f >= 5 else ROWS[3] if f >= 1 else ROWS[4]
     lo, hi = row[0], row[1]
     t = min(1.0, max(0.0, (opp - lo) / float(hi - lo)))
     pcts = [round5(a + t * (b - a)) for (a, b) in row[2:]]
     yrs = [(2027, 'Yr 1 (Fr.)'), (2028, 'Yr 2 (So.)'), (2029, 'Yr 3 (Jr.)'), (2030, 'Yr 4 (Sr.)')]
+    if juco:
+        pcts, yrs = pcts[:2], yrs[:2]
     return pcts, [{'year': y, 'yr_label': lab, 'pct': p, 'label': label_for(p)}
                   for (y, lab), p in zip(yrs, pcts)]
 
@@ -151,12 +161,26 @@ def main(conf):
         mo['rising_junior_2027_names'] = p['rising_jr']
         mo['recruit_risk'] = p['recruit_risk']
         opp = opportunity_score(len(p['cleared']), len(p['rising_sr']), p['returning'])
-        pcts, traj = trajectory_for(opp)
-        mo['trajectory'] = traj
         if 'pathway' in p:
             mo['recruit_pathway'] = p['pathway']
         if 'pathway_note' in p:
             mo['recruit_pathway_note'] = p['pathway_note']
+
+        # ── facts_only (owner-approved Session 4) ────────────────────────────
+        # Refresh the FACTUAL roster fields and leave `trajectory` (and so every
+        # score) untouched. Used for JUCOs: §14's Opportunity Score table tops
+        # out at Yr1 40-50% while every stored JUCO Yr1 is 56-72, so the table
+        # cannot reproduce a single JUCO anchor and applying it would crater all
+        # 30. scores.js reads ONLY trajectory[].pct, so skipping the trajectory
+        # means this branch provably moves no score. See CLAUDE.md §6 open item.
+        if p.get('facts_only'):
+            print('%-18s mf=%-3s opp=%-5s FACTS ONLY - trajectory untouched, '
+                  'fit %s / minutes %s / value %s unchanged'
+                  % (sid, p['mf_total'], opp, before[0], before[1], before[2]))
+            continue
+
+        pcts, traj = trajectory_for(opp, juco=p.get('juco', False))
+        mo['trajectory'] = traj
 
         # ── cascade ──
         s['lensScores']['minutes'] = js_round(mo_score(s) * 100)
@@ -176,6 +200,48 @@ def main(conf):
 
 
 PATCHES = {
+    # ── Wave 1 Session 4 — JUCO ──────────────────────────────────────────────
+    # juco=True truncates the trajectory to 2 years (see trajectory_for()).
+    # Class-year semantics INVERT vs a 4-year school: a SOPHOMORE on a 2026-27
+    # JUCO roster graduates spring 2027 and is gone before Olivier arrives, so
+    # they are `cleared`; a FRESHMAN becomes a sophomore in 2027-28 and returns.
+    'juco': {
+        'lsu_eunice': dict(
+            mf_total=8, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Tungamirai Kagoro (So·MID)', 'Caden Hickox (So·MID/FOR)'],
+            rising_sr=[], rising_jr=[], returning=6,
+            recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 athletics.lsue.edu roster (8 MFs of 27, up from 5 of "
+                         "the prior season). LSU Eunice publishes only a Hometown / High School column and no "
+                         "previous-school column, so the transfer-vs-freshman split cannot be re-derived from "
+                         "the roster alone; the existing 'Mixed' classification is RETAINED, not re-derived, and "
+                         "should be treated as lower-confidence. Roster shape did change materially: 6 of the 8 "
+                         "MFs are freshmen who return in 2027-28, so only 2 clear before Olivier arrives. "
+                         "⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` is still the "
+                         "prior-season projection and was deliberately NOT recomputed — §14's Opportunity Score "
+                         "table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every "
+                         "stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. "
+                         "Trajectory and the Minutes score are pending the JUCO calibration item in CLAUDE.md §6.",
+        ),
+        'neosho_county_cc': dict(
+            mf_total=13, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Danny Carroll (So·MID)', 'Adam Larkin (So·MID)', 'Keane Hazeldine (So·MID)',
+                     'Giezi Gonzalez (So·MID)', 'Yuki Suzuki (So·MID)'],
+            rising_sr=[], rising_jr=[], returning=8,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 goneosho.com roster (13 MFs of 33). Neosho publishes only "
+                         "a Hometown / High School column and no previous-school column, so the existing "
+                         "'Freshman-friendly' classification is RETAINED, not re-derived, and is lower-confidence. "
+                         "The 2026-27 shape is consistent with it: 8 of 13 MFs are freshmen. Unlike the prior "
+                         "season — when all 13 MFs cleared — only 5 (the sophomores) graduate before Olivier "
+                         "arrives, so he now competes with 8 returning midfielders. "
+                         "⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` is still the "
+                         "prior-season projection and was deliberately NOT recomputed — §14's Opportunity Score "
+                         "table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every "
+                         "stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. "
+                         "Trajectory and the Minutes score are pending the JUCO calibration item in CLAUDE.md §6.",
+        ),
+    },
     'aac': {
         'fau': dict(
             mf_total=5, roster_season='2026-27',

@@ -6,6 +6,54 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.55 (August 2026) — JUCO Session 4, part 1: Suffolk + Westchester proven, and §14 turns out not to fit JUCOs at all
+
+#### The owner's sub-task: both schools re-tested in a real browser, and the answer is "genuinely absent"
+
+`suffolk_cc` and `westchester_cc` have been `available:false` since v39 on the claim that they publish no player positions. The owner asked why, because **the two records disagreed about how hard that had been tested** — Suffolk's own note said *"not populated at time of automated fetch… revisit with direct browser access"* while §6 claimed both were *"re-checked via Chrome MCP."* The `?jsRendering=true` in the owner's link suggested a client-side render, i.e. the v39 failure mode.
+
+**Re-tested properly; the claim holds, but neither record had the reason right.**
+
+| school | layout | finding |
+|---|---|---|
+| `suffolk_cc` | **table** (`NO. \| NAME \| POS. \| CL. \| HIGH SCHOOL`) | `POS.` column exists, **empty for all 24 rows**; `CL.` publishes fine (FR/SO). **No player bio pages exist at all** and no position words appear anywhere on the page. Newest season **2025-26**. |
+| `westchester_cc` | Sidearm **cards** | 24 cards, each with a `.sidearm-roster-player-position` element, **all 24 empty**. A player bio page carries **no position field either** — the `stedwards` dead-end. Newest season **2025**. |
+
+**The `?jsRendering=true` hint was a red herring, and why matters: Suffolk CloudFront-403s datacenter IPs.** A scripted fetch and the in-app browser both fail there; only the real Chrome (residential IP) reached it. **A network block and a missing column look identical from a script** — do not read a 403/202 from these hosts as evidence about the data.
+
+**Neither Fit score moved, and that is the correct outcome.** §6 predicted both would fall, but that assumed positions were recoverable. Both stay `available:false`, keep the neutral `lensScores.minutes: 50`, and hold `fitOlivier` 37 / 43. Both notes were rewritten to state what was tried, in which browser, on what date.
+
+#### The blocker: §14's Opportunity Score table cannot reproduce a single stored JUCO trajectory
+
+The table caps **Yr1 at 40–50%**. **Every** stored JUCO Yr1 is **56–72** (`murray_state_ok` 62, `tyler_jc` 68, `lsu_eunice` 72, `neosho_county_cc` 56). §14's documented *"JUCO adjustment (v26): ×1.2"* does not close it either — murray's own shape (4 cleared, 10 returning ⇒ opp 4.5 ⇒ 5.4) maps to the **15–25% / 30–40%** row against its stored **62/78**.
+
+**Applying it was tried, measured and reverted:** `lsu_eunice` fit **64 → 43** (minutes 77 → 19), `neosho_county_cc` **44 → 33** (minutes 62 → 31), with ~28 more similar — JUCOs would have dropped from the top of the Minutes lens to the bottom.
+
+**Why it stayed hidden until now:** `trajectory[].pct` is stored-only judgment data that nothing recomputes and no validator checks against §14 — the same silent-drift class as the Wake Forest `lensScores.value` bug. Sessions 1–3 refreshed 4-year schools, where the table *is* the calibration; this is the campaign's first 2-year college.
+
+**Owner decision: facts now, calibration later.** A new `facts_only` branch in `apply_roster_refresh.py` refreshes the factual fields and skips the trajectory and the entire cascade. Since `scores.js` reads **only** `trajectory[].pct`, that provably moves no score — **verified by diffing `data/juco.json` for any changed scoring field: 0 hits.**
+
+| school | mf_total | season | clears |
+|---|---|---|---|
+| `lsu_eunice` | 5 → **8** | 2025-26 → **2026-27** | 2 of 8 |
+| `neosho_county_cc` | 13 → **13** | 2025-26 → **2026-27** | 5 of 13 |
+
+Both notes carry a **⚠ MIXED VINTAGE** disclosure. An independent confirmation that the season really advanced: **Tungamirai Kagoro moved `(Fr·M)` → `(So·MID)`** between the stored and live rosters.
+
+#### Tooling
+
+- **`roster_extract.py` — `--juco` and `--juco-prior`.** JUCO class semantics **invert** vs a 4-year school: a sophomore on a 2026-27 JUCO roster graduates spring 2027 and is **gone** before Olivier arrives, so they are `cleared`, not returning; a freshman returns. Kept as **two separate flags** so the 2026-27 mapping can never be applied to a prior-season page by accident — they are opposites for the sophomore bucket. **Control-tested before use:** reproduces `murray_state_ok` (mf 14 / cleared 4 / rsSr 0 / rsJr 0) exactly, plus four committed D1 schools (louisville, duke, georgetown, wakeforest).
+- **The control test earned its keep again**, flagging two things a summary would have hidden: `monroe_college` needs 4-year semantics despite living in `juco.json` (it is a 4-year university), and `nassau_cc`'s live page now shows 8 MFs against a stored 7. Both are still on prior-season pages, so both were left untouched and logged as drift.
+- **"JUCO is browser-only" is wrong as stated: it is 21 of 30, not all 30.** The nine schools whose `url` is `/sports/mens-soccer` (rather than `/index`) parse fine by script. The other 21 return 202-empty/403 to a script, and for them only the **season-scoped** slug resolves in a browser (`/sports/msoc/2026-27/roster`) — `/sports/msoc/roster` 404s, exactly as v42.5 documented.
+
+#### Coach review
+
+Ten JUCO head coaches verified against their live staff pages — **all unchanged**: Ginsberg (Suffolk, name *and* title), Carrabotta (Westchester), DiBernardo (Monroe), Espinal (Dodge City), Hall (Neosho), Fisher (Nassau), Lis-Simmons (Ulster), Plumbar (LSU Eunice), McBride (Blinn, pending), Spear (Murray State). **No Change Type 2 and no re-rank fired.** Suffolk publishes no coach email or phone, consistent with the stored nulls.
+
+Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings.
+
+---
+
 ### v44.54 (August 2026) — CLAUDE.md §6 split: the standing-orders file stops carrying its own changelog
 
 Docs only. No runtime file, data file or score touched.

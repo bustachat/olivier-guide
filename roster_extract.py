@@ -67,12 +67,48 @@ def pos_unknown(pos):
 
 
 # ── class-year normalisation, relative to the 2026-27 season ─────────────────
+JUCO_MODE = False        # --juco       : reading a 2026-27 JUCO roster
+JUCO_PRIOR_MODE = False  # --juco-prior : reading a 2025-26 JUCO roster
+
+
 def bucket(cls):
     """-> 'cleared' | 'rising_sr' | 'rising_jr' | 'returning' | 'unknown'"""
     if not cls:
         return 'unknown'
     c = cls.upper().replace('.', ' ')
     c = re.sub(r'\s+', ' ', c).strip()
+    # ── JUCO prior-season mode (--juco-prior) ────────────────────────────────
+    # On a 2025-26 JUCO roster EVERY class clears before August 2027: a
+    # sophomore graduates spring 2026, and a freshman becomes a sophomore in
+    # 2026-27 and graduates spring 2027. That is why 26 of the 30 stored JUCOs
+    # have mf_total == cleared_before_2027. Kept as a SEPARATE flag from --juco
+    # so the 2026-27 mapping can never be applied to a prior-season page by
+    # accident — the two are opposites for the sophomore bucket.
+    if JUCO_PRIOR_MODE:
+        if re.search(r'\bSO\b|SOPH|\bFR\b|\bFY\b|FRESH|FIRST[\s\-]?YEAR'
+                     r'|\bJR\b|JUNIOR|\bSR\b|SENIOR|\bGRAD|\bGR\b'
+                     r'|\b[12](?:ST|ND)?\b|\bR[\s\-]*FR\b', c):
+            return 'cleared'
+        return 'unknown'
+    # ── JUCO mode (--juco, added Session 4) ──────────────────────────────────
+    # A 2-year college has no juniors or seniors, and the 4-year mapping below
+    # is WRONG for one bucket that matters most: a SOPHOMORE on a 2026-27 JUCO
+    # roster graduates in spring 2027 and is GONE before Olivier arrives in
+    # August 2027, so they are `cleared` — not `rising_jr`/returning. A freshman
+    # becomes a sophomore in 2027-28 and IS still there, so they return.
+    # Getting this backwards inverts the whole opportunity picture; it is the
+    # same season-inversion class as the v44.43 Minutes Outlook key bug.
+    if JUCO_MODE:
+        if re.search(r'\bSO\b|SOPH|SOPHOMORE|\b2(?:ND)?\b|\bR[\s\-]*FR\b', c):
+            return 'cleared'
+        if re.search(r'\bFR\b|\bFY\b|FRESH|FIRST[\s\-]?YEAR|\b1(?:ST)?\b', c):
+            return 'returning'
+        # A JUCO listing Jr./Sr. is a data error or a 4-year label leaking in;
+        # treat as cleared (they cannot be enrolled at a 2-year college in
+        # 2027-28) but it is worth eyeballing when it appears.
+        if re.search(r'\bJR\b|JUNIOR|\bSR\b|SENIOR|\bGRAD|\bGR\b', c):
+            return 'cleared'
+        return 'unknown'
     # Ordinal eligibility labels (Indiana, Washington use these instead of
     # Fr./So./Jr./Sr.). Checked FIRST — '4th' is a graduating senior and would
     # otherwise fall through to 'unknown' and silently vanish from `cleared`.
@@ -251,10 +287,13 @@ def analyse(url):
 
 
 def main():
-    ids = sys.argv[1:]
+    global JUCO_MODE, JUCO_PRIOR_MODE
+    ids = [a for a in sys.argv[1:] if not a.startswith('--')]
+    JUCO_MODE = '--juco' in sys.argv
+    JUCO_PRIOR_MODE = '--juco-prior' in sys.argv
     schools = {}
     for conf in ['big-ten', 'big-west', 'caa', 'd1-other',
-                 'aac', 'acc', 'big-east', 'd2', 'ivy']:
+                 'aac', 'acc', 'big-east', 'd2', 'ivy', 'juco']:
         for s in json.loads(io.open('%s/data/%s.json' % (ROOT, conf),
                                     encoding='utf-8').read()):
             schools[s['id']] = (conf, s)

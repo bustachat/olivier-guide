@@ -4698,22 +4698,14 @@
     "minutesOutlook": {
       "available": true,
       "mf_total": 13,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "Giezi Gonzalez (So·M)",
-        "Keane Hazeldine (So·M)",
-        "Adam Larkin (So·M)",
-        "Yuki Suzuki (So·M)",
-        "Danny Carroll (So·M)",
-        "Andres Cisneros-Salas (Fr·M)",
-        "Greyson Davis (Fr·M)",
-        "Gabe Green (Fr·M)",
-        "Carrick Kelly (Fr·M)",
-        "Ryuto Kondo (Fr·M)",
-        "Lochlan McKenzie-Smith (Fr·M)",
-        "Dylan Parry Jones (Fr·M)",
-        "Noah Storrer (Fr·M)"
+        "Danny Carroll (So·MID)",
+        "Adam Larkin (So·MID)",
+        "Keane Hazeldine (So·MID)",
+        "Giezi Gonzalez (So·MID)",
+        "Yuki Suzuki (So·MID)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
@@ -4736,7 +4728,7 @@
       ],
       "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (13 MFs: 5 So + 8 Fr) clears before Olivier's August 2027 start. Zero roster overlap, but the large current MF group signals a competitive incoming recruiting class to enter. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of 13 current MFs (62%) are true freshmen, drawn heavily from England (5 of 8) — suggests a strong direct-recruiting pipeline from the UK alongside domestic Kansas recruits."
+      "recruit_pathway_note": "Re-read on the live 2026-27 goneosho.com roster (13 MFs of 33). Neosho publishes only a Hometown / High School column and no previous-school column, so the existing 'Freshman-friendly' classification is RETAINED, not re-derived, and is lower-confidence. The 2026-27 shape is consistent with it: 8 of 13 MFs are freshmen. Unlike the prior season — when all 13 MFs cleared — only 5 (the sophomores) graduate before Olivier arrives, so he now competes with 8 returning midfielders. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` is still the prior-season projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. Trajectory and the Minutes score are pending the JUCO calibration item in CLAUDE.md §6."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Athletic Training program — adjacent anatomy/physiology coursework, not dedicated Exercise Science",
@@ -6261,21 +6253,18 @@
     "rec": "LSU Eunice offers warm Louisiana climate and one of the better on-campus housing setups in this batch (Bengal Village, 216 beds), plus a genuinely international roster. It isn't nationally ranked and has no dedicated Exercise Science degree, and the 2nd-year head coach adds some program uncertainty — best framed as a housing/lifestyle pick rather than a program-prestige one.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 5,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 5,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Chase Duvernay (So·M)",
-        "Roko Rujevcan (So·M)",
-        "Juan Arrieta (So·M)",
-        "Nathan Martinez (RFr·M)",
-        "Tungamirai Kagoro (Fr·M)"
+        "Tungamirai Kagoro (So·MID)",
+        "Caden Hickox (So·MID/FOR)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "recruit_risk": "Medium",
       "trajectory": [
         {
           "year": 2027,
@@ -6292,7 +6281,7 @@
       ],
       "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (5 MFs: 3 So + 1 redshirt-Fr + 1 Fr) clears before Olivier's August 2027 start. Zero roster overlap. The smallest MF group of any school added this session — a genuine opportunity if the coach recruits a similarly lean 2026 class. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Small sample (5 players) skews sophomore (3/5) — the program appears to carry a lean, senior-heavy MF corps rather than recruiting a large freshman class at this position."
+      "recruit_pathway_note": "Re-read on the live 2026-27 athletics.lsue.edu roster (8 MFs of 27, up from 5 of the prior season). LSU Eunice publishes only a Hometown / High School column and no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster alone; the existing 'Mixed' classification is RETAINED, not re-derived, and should be treated as lower-confidence. Roster shape did change materially: 6 of the 8 MFs are freshmen who return in 2027-28, so only 2 clear before Olivier arrives. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` is still the prior-season projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. Trajectory and the Minutes score are pending the JUCO calibration item in CLAUDE.md §6."
     },
     "acRank": "NJCAA Level",
     "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
@@ -7021,7 +7010,7 @@
     "rec": "Suffolk is the strongest package among this batch's Lower New York additions — 2025 Region 15 Champions, and the only school in the group with a confirmed dedicated Exercise Science A.S. degree. The trade-offs are the lack of on-campus housing and the highest cost in this batch (~$28.1k/yr). Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": false,
-      "note": "The official 2025-26 roster page lists jersey numbers, names, and class years but the position ('Pos.') column was not populated at time of automated fetch. Not guessed; revisit with direct browser access in a future session."
+      "note": "RE-TESTED IN A REAL BROWSER 2026-08-06 (Claude for Chrome, full JS render) — the missing positions are GENUINE, not a fetch artifact. The 2025-26 roster is a TABLE with headers NO. | NAME | POS. | CL. | HIGH SCHOOL and 24 rows: the POS. column exists and is EMPTY for all 24 players, as is HIGH SCHOOL, while CL. is fully published (FR/SO). There is nowhere else to look — Suffolk publishes no player bio pages at all (zero /roster/<slug>/<id> links) and the words Goalkeeper/Midfielder/Defender/Forward appear nowhere on the page. The season selector confirms 2025-26 is the newest published season; no 2026-27 roster exists. Midfielders therefore cannot be counted and minutesOutlook stays unavailable. Note the site CloudFront-403s datacenter IPs, so a scripted fetch and the in-app browser both fail here — that is a network block, NOT evidence about the data. Re-check only if Suffolk starts publishing positions."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Exercise Science — dedicated 2yr program (Physical Education and Exercise Science department)",
@@ -7242,7 +7231,7 @@
     "rec": "Westchester offers genuine NYC-metro access from Valhalla (Westchester County) and a solid 2025 regular-season record (9-1-2), but is the only school in this batch with zero housing or meal plan options of any kind — a real practical barrier for an international athlete. No dedicated Exercise Science degree is confirmed. Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": false,
-      "note": "The official roster page lists jersey numbers, names, and class years but does not publish player positions. Not guessed; revisit with direct browser access in a future session."
+      "note": "RE-TESTED IN A REAL BROWSER 2026-08-06 (full JS render) — the missing positions are GENUINE, not a fetch artifact. The roster uses Sidearm player CARDS: 24 cards render, each containing a .sidearm-roster-player-position element, and ALL 24 of those elements are empty, while class year (Fr./So.) and hometown/high school are published normally. A player bio page was opened as well (miguel-diaz/1357) and it carries no position field either — the same dead-end as the stedwards precedent. The season selector confirms 2025 is the newest published season; no 2026 roster exists. Midfielders therefore cannot be counted and minutesOutlook stays unavailable. Re-check only if Westchester starts publishing positions."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Health and Human Performance — adjacent field, no dedicated Exercise Science program confirmed",

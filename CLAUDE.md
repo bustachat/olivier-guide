@@ -1965,6 +1965,22 @@ This rule has now been broken twice, with measurable cost:
 
 **Corollary — a Tier-1 page can still be wrong.** Indian Hills' own site labels Eastern New Mexico University (NCAA Division II, Lone Star Conference) as "NCAA DI" in ten rows, and inverts the Liberty/ENMU pairing in an eleventh. Tier-1 means *authoritative about itself*, not *correct about third parties*. Verify any claim a page makes about **another** institution.
 
+#### Which tool, when the rules appear to conflict (scoped after Session 4, 2026-08-06)
+
+Three rules in this file and the scraping memory look like they disagree. They do not — they are **scoped to different page types**, and Session 4 broke Rule 0 by applying the wrong one's scope:
+
+| Page type | Tool | Source of the rule |
+|---|---|---|
+| **Rosters, alumni pages, staff/coach pages** | **Claude for Chrome MCP. Full stop.** | RULE 0 + the Research Intelligence table below |
+| **Conference standings archives** | in-app Browser MCP first, `curl` raw HTML only on bot-block | owner refinement, confRecord campaign (2026-07-19) |
+| **Discovery — *which* URL to open** | `WebSearch` | RULE 0 |
+
+**The confRecord "curl is acceptable" refinement is about STANDINGS SITES, not rosters. Do not generalise it.** In Session 4 it was generalised to JUCO rosters and then stretched further to a bespoke Python fetcher — which no rule sanctions — costing a detour before the work landed in Chrome anyway.
+
+**"Probe whether the roster is server-rendered before reaching for a browser" (Session 2) is scoped to hosts with NO prior determination.** Where a campaign has already classified a host set (the JUCOs were classified browser-only in v44.29), that classification wins; re-deriving it is re-litigating a settled decision. If you believe the classification is wrong, say so and get it changed — do not quietly test around it.
+
+**⚠️ A 403/202 is a NETWORK verdict, never a DATA verdict.** These hosts CloudFront-block datacenter IPs, so a script and the in-app browser can both fail on a page that renders perfectly in the user's real Chrome — Suffolk did exactly that in Session 4. **A blocked fetch and a genuinely missing field are indistinguishable from a script**, which is precisely how v39 wrote off two JUCO rosters that Chrome then returned on the first attempt. **Never record "field absent" / "roster unavailable" from a non-200.** Prove it in a rendered page, and say in the note which browser proved it and on what date.
+
 ---
 
 ### Tool Hierarchy

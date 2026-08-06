@@ -6,6 +6,50 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.54 (August 2026) — CLAUDE.md §6 split: the standing-orders file stops carrying its own changelog
+
+Docs only. No runtime file, data file or score touched.
+
+**The problem, measured.** CLAUDE.md is read at the start of every session; CHANGELOG.md is read only when history is needed. That split was made in v35.2 and had quietly collapsed: §6 had grown back into **a single ~6,000-word paragraph chaining 22 `PRIOR:` version summaries**, every one of them a shorter, lossier copy of an entry CHANGELOG.md already carried — plus roughly **30 items marked ✅ RESOLVED** that were being re-read every session forever. The file grew 36,604 → 39,381 words in the session that diagnosed the bloat, and 41,043 by the start of this one.
+
+**The evidence that it had stopped being read is inside the section itself.** Three facts sat wrong in the state snapshot while the repo said otherwise:
+
+| §6 claimed | Reality |
+|---|---|
+| 110 schools, 110 coaches, ranked 1–110 | **111 / 111** since v44.29 |
+| JUCO section: 29 schools | **30** since v44.29 |
+| `recruit_pathway`: 103 populated | **104** — Stony Brook was populated in v44.41 |
+
+Two items were **stale-open**, which is worse than stale-closed — each would have sent a future session to redo finished work. Both were verified against the repo, not the list: *"Notre Dame + Georgetown `rising_senior_2027_count` unresearched … whitelisted in `MO_MISSING_OK`"* — `MO_MISSING_OK` is now `new Set([])`, both closed in v44.38. And *"NEOSHO COUNTY CC COACH CHANGE (HIGH PRIORITY)"* — `coaches.json` already stores **Sam Hall**, `shall@neosho.edu`.
+
+**§6: 15,977 → 3,854 words. CLAUDE.md: 41,043 → ~29,400 words (−28%).**
+
+#### Rules were promoted BEFORE the history was deleted
+
+The resolved entries were not pure history — several were the only place a standing rule was written down. Each was moved into the section that owns it first, and the deletion happened after:
+
+- **§4** — `rosterUrl()` derives every roster link from the school object's `url`: never hardcode a season slug (they rot each August, v42.5) and never re-add a per-school `overrides` map (it masks the school object's `url` and is invisible to both validators *and* §15's sweep, v44.33).
+- **§3a Type 2** — on a contact change, grep the `bio` strings too; St. Edward's had its email hardcoded in `bio` as well as `contact{}` (v44.35).
+- **§14 (PROSE)** — lens and ranking copy must describe what a lens *rewards*, never name the school that currently wins it (v44.47), plus an explicit statement of what PROSE cannot see: a wrong city, a wrong superlative, or a merely stale claim.
+- **§15** — store a program page, never a per-coach bio deep link (NC State's id rotated 5258 → 5017); and `coaches.json.url` has no renderer consumer, so only a sweep can ever find a fault in it (v44.34).
+
+#### Deleting the history exposed four stale forward-references
+
+§6's resolved entries had been silently *correcting* older sections. With them gone, the errors stood alone — so they were fixed rather than left:
+
+- **§5d** said the coach `overallScore` values *"have NOT yet been re-scored"* and listed Step 2 as pending. The validator reports **111/111 re-scored, 0 legacy** (campaign finished v43.12).
+- **§5c** ended *"Remaining §6 sequence work: Step 5 (re-score the 81 non-JUCO schools against §5a)"*. The validator reports **111/111 re-baselined, 0 above ceiling**.
+- **§5** schema said `devScoresNote` absent = *"pending re-baseline (§6)"* — none remain.
+- **§5d Process step 5** pointed at a "Solomon trap — see §6" worked example that no longer existed; the lesson is now stated inline instead of pointed at.
+
+#### Open items, regrouped
+
+The surviving items are now grouped **A–G** (prose-parsing renderers · coach data · roster-campaign deferrals · stored links · scoring/design questions for the owner · data gaps & watch items · docs & code quality) and tagged `🚩` needs a decision, `⏳` waiting on an external event, `📌` reference recorded so it is not re-derived. Nothing open was dropped.
+
+**Gates:** `node validate_consistency.js` → **Issues: 0** (111 schools, 111 coaches, 25 conferences); `python validate_schools.py` → **PASS**, 17 pre-existing warnings. Every state-snapshot figure in the new §6 was re-derived from the data files rather than copied forward — which is how the 103-vs-104 error was caught.
+
+---
+
 ### v44.53 (August 2026) — `negtest.py`, and an audit that found a live instance of the Max Aid defect: `Target: Notre`
 
 Two parts, both descended from v44.50.

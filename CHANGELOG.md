@@ -6,6 +6,37 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.51 (August 2026) — the validator stops reimplementing the Fit Score and calls the real `scores.js`
+
+**The check that guards every ranking in the guide could not do its job, and this is a demonstration rather than a theory.**
+
+`validate_consistency.js`'s FIT check reconciles all 111 stored `fitOlivier` values against "the live scores.js formula". It did so against **its own copy** of that formula: local reimplementations of `calculateFitScore`, `soccerQualityScore`, `minutesOutlookScore`, `nextLevelFactor`, `housingPenalty`, `fundingPenalty`, plus `DIV_STRENGTH` and both §5b constants (`D1_RATE_DIVISOR`, `NEXT_LEVEL_NEUTRAL`).
+
+So a formula change in `js/scores.js` that missed the mirror would be **blessed**: the validator would compare 111 stored scores against a stale copy, agree with itself, and print `Issues: 0` while every ranking Olivier sees was wrong.
+
+**Measured before/after.** `housingPenalty` changed `6` → `10` in `js/scores.js`, nothing else touched, both validators run from the repo root:
+
+| validator | result |
+|---|---|
+| **old** (own mirror, `git show HEAD`) | **`Issues: 0`** — completely blind |
+| **new** (loads the real file) | **`Issues: 11`** — 10 drifted schools + summary |
+
+**Fix: one source of truth, no fallback.** All 48 lines of duplicated formula logic are deleted. `js/scores.js` is read and evaluated in a `vm` sandbox and its real functions are called. **No change to production scoring code** — `js/scores.js` is byte-identical to HEAD (SHA verified, since it was mutated and restored four times during testing).
+
+Why a sandbox rather than `module.exports`: `scores.js` is a plain browser script and §4 forbids build-step creep, so **adding exports to it purely to satisfy a dev tool was rejected**. Loading it works because every scoring function in it is pure; its only DOM-touching function, `recalculateAllScores()`, is a function *declaration*, so evaluating the file never executes it and the validator never calls it.
+
+**The loader THROWS rather than falling back**, and that is deliberate: a validator that quietly reverts to a local mirror when it can't load the real thing *is* the bug being removed. Two failure paths, both negative-tested:
+- **a scoring function renamed** → `SCORES-SRC: could not evaluate js/scores.js … housingPenalty is not defined`
+- **a top-level `document` reference added** (breaking purity) → same error class, with guidance to move it inside a function
+
+**Four negative tests, each asserting the mutation actually landed first** — the v44.50 lesson applied immediately, since a patch that silently fails to apply produces a passing test that proves nothing. (It caught a broken test harness here too: the first before/after run reported nothing from *either* validator, because `ROOT = __dirname` meant a copy executed from `/tmp` failed every data load. The fix was to run both from the repo root — not to believe the silence.)
+
+**Incidental good news, now proven rather than assumed:** swapping the mirror for the real functions left `Issues: 0`, so the mirror had not yet drifted. There were no hidden score errors — the exposure was latent, not realised.
+
+No runtime file changed, so there is nothing browser-observable to verify and no preview was started. Validator **Issues: 0**, `validate_schools.py` PASS (111 schools), and zero remaining reimplementations of any `scores.js` symbol in the validator.
+
+---
+
 ### v44.50 (August 2026) — the Conferences card's "Max Aid" stat stops parsing prose; `maxAid` becomes a stored field
 
 Closes the item v44.49 found and logged. `renderConferences()` derived the stat tile from `conferences.json`'s `scholarships` **sentence**:

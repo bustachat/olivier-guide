@@ -1153,14 +1153,14 @@
     "soccerLevel": "ACC — Competitive (mid-tier)",
     "cost": "~$52k/yr",
     "fin": {
-      "costNum": 52000,
-      "tuition": 29000,
-      "roomBoard": 16000,
-      "fees": 7000,
+      "costNum": 50383,
+      "tuition": 34961,
+      "roomBoard": 15422,
+      "fees": 0,
       "maxAthletic": 0.95,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "NC State out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Raleigh cost of living is moderate. Research Triangle location with strong career pathways."
+      "internationalNote": "NC State non-resident direct billed cost $50,383 (2026-27, Tier-1 verified from NC State's official Undergraduate Estimated Cost of Attendance table, out-of-state column): tuition & fees $34,961 + housing $8,738 + food $6,684. NC State publishes tuition and fees COMBINED and does not split them, so the combined figure is stored under `tuition` and `fees` is 0 — the sum invariant still holds. NC State's own headline out-of-state total is $54,779, which adds books, personal, transport and loan fees that this guide excludes by convention. The previous stored $52,000 was an unresearched ballpark and slightly OVERstated the direct cost. Athletic scholarship can cover 35-55%; merit aid available for international students with 3.0+ GPA. Raleigh cost of living is moderate."
     },
     "aid": "Athletic",
     "size": 37000,
@@ -1180,7 +1180,7 @@
       "academic": 60,
       "minutes": 57,
       "lifestyle": 50,
-      "value": 34
+      "value": 35
     },
     "confRecord": [
       {

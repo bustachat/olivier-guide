@@ -1264,7 +1264,19 @@ Campaign plan and session-by-session detail live in the `roster_refresh_campaign
 **How to spot the unresearched ones — they announce themselves.** A ballpark record has *round* components summing to a round total (`clemson` was 38,000 + 12,000 + 2,000 = 52,000; `pba` is 26,000 + 10,000 + 2,000 = 38,000, and `fees: 2000` is a shared placeholder). A researched one does not (`duke` 73,740 + 22,029 + 7,411 = 103,180). Split: **53 round vs 53 exact**, plus 2 zeroed service academies.
 
 **Priority order — the damage is concentrated where it matters most:**
-1. **7 of the 10 SHORTLISTED schools are ballpark** — `pba` · `lynn` · `ucsb` · `usf` · `barry` · `clemson` ✅done · `fau`. These are the schools actually being pursued.
+1. **7 of the 10 SHORTLISTED schools were ballpark** — ✅ `clemson` · ✅ `pba` · ✅ `lynn` · ✅ `ucsb` done (v44.56–57); remaining: `usf`, `fau` (both blocked, see below) and `barry` (blocked by a cookie-consent gate — its tuition page renders only 723 chars until the banner is dismissed, so it was **deferred rather than guessed**).
+
+  **Results so far — every single one was UNDERSTATED, several severely:**
+
+  | school | stored | actual | gap | value lens |
+  |---|---|---|---|---|
+  | `pba` | $38,000 | **$60,300** | **+$22,300** | **48 → 37** |
+  | `lynn` | $47,000 | **$64,400** | +$17,400 | 36 → 32 |
+  | `ucsb` | $66,000 | **$80,928** | +$14,928 | 37 → 38 |
+  | `clemson` | $52,000 | **$58,732** | +$6,732 | 40 (unchanged) |
+
+  **The bias is systematic, not random — the ballparks were optimistic in every case.** PBA is the one that matters most: it looked like the best-value shortlisted school at $38k and is not. `fitOlivier` correctly did not move for any of them.
+
 2. **The `$52,000` cluster is literally Olivier's budget** — `ncstate`, `clemson` ✅, `uconn`, `michiganstate`, `ohiostate`, `washington`, `monmouth`. Someone typed the budget as a placeholder, and it lands exactly on the affordability cliff. Other placeholder clusters: `$38,000` ×8, `$28,000` ×5, `$58,000` ×4, `$32,000` ×3, `$72,000` ×3.
 3. Remaining **40 D1** ballparks (the expensive ones), then D2 ×6, JUCO ×5, NAIA ×1, D3 ×1.
 

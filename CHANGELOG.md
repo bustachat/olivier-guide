@@ -6,6 +6,27 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.57 (August 2026) — COA batch 1: three more shortlisted schools researched, and every ballpark was understated
+
+Change Type 4 on `ucsb`, `pba`, `lynn` — all Tier-1 from each school's own **2026-27** cost page, read in a real browser. `fitOlivier` moved for none of them (correct: cost has not fed the Fit Score since v37.1); only `lensScores.value` moves.
+
+| school | stored | actual | gap | value |
+|---|---|---|---|---|
+| `pba` | $38,000 | **$60,300** | **+$22,300** | **48 → 37** |
+| `lynn` | $47,000 | **$64,400** | +$17,400 | 36 → 32 |
+| `ucsb` | $66,000 | **$80,928** | +$14,928 | 37 → 38 |
+| `clemson` (v44.56) | $52,000 | **$58,732** | +$6,732 | 40 → 40 |
+
+**The bias is systematic: all four ballparks were optimistic.** The one that matters is **PBA** — it presented as the best-value shortlisted school at $38,000 and is actually $60,300, dropping 11 points on the Value lens. Two of the three sums land exactly on the school's own published total (PBA states $60,300; Lynn states $64,400), which is a strong check that the guide's direct-billed convention matches how these schools bill.
+
+`ucsb` also quietly corrected a **1-point value drift** (stored 37, formula 38) that had been sitting inside the `VALUE` check's ±1 tolerance.
+
+**Deferred, not guessed — `barry`.** Its tuition page renders only 723 characters behind a cookie-consent overlay. Accepting a consent banner is not something to do unprompted, so it was left for the owner or a later pass. **`usf` and `fau` remain blocked** on the Florida-publics credit-load question from v44.56.
+
+Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings.
+
+---
+
 ### v44.56 (August 2026) — the COA campaign restarts: it was abandoned at v33.1 with 53 schools still on "ballpark" figures
 
 Owner spotted that the cost chips looked wrong. They were — but not for the reason either of us first guessed.

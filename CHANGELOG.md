@@ -6,6 +6,37 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.49 (August 2026) — the D1 "9.9 equivalencies" figure made opt-in-aware; 29 strings, not the 2 logged
+
+Closes the item v44.48 logged and deliberately declined to rush. The guide asserted a flat **9.9 equivalencies for D1 men's soccer** everywhere, which the *House v. NCAA* settlement (effective 1 July 2025) made a **partial** truth: schools that have **not** opted in still run the 9.9 cap, while **opt-in schools carry a 28-player roster on which every spot may be funded**. §5c has recorded this since v42.18 with an ncaa.org citation — the fix was propagating the project's own already-sourced fact into the UI, **not new research** (§15 Rule 0: no facts were taken from a summary).
+
+**The owner's brief named `index.html` ×2. The sweep found 29.** Attributed with the v44.47b whole-string walker, and three separate wordings were tried per [[feedback-exhaustive-search]] (`9\.9`, `equivalenc`, `roster cap|28[- ]player|scholarship (limit|cap|maximum)`, `\bhouse\b`):
+
+| location | count | visible? | action |
+|---|---|---|---|
+| `data/conferences.json` `scholarships` | 14 | **No** — only the parsed number reaches the UI (see the parse bug below) | qualifier appended (stored-record accuracy) |
+| `data/conf-prestige.json` `scholarships` | 11 | Yes — Conferences → prestige table, Scholarships column | qualifier appended |
+| `index.html` | 2 | Yes — Financial Model explainer + Glossary | rewritten, see below |
+| `js/app.js` NAIA tier intro | 1 | Yes — Conferences tab tier header | stale D1 comparison dropped |
+| `data/d2.json` OCU `fin.internationalNote` | 1 | Yes — OCU modal | stale D1 comparison dropped |
+
+**The judgment call the owner delegated ("your call on how to word it, or whether the distinction is too fine for that card"): the distinction stays, but it is sized to its surface.**
+
+- **Glossary gets the canonical explanation** — a new *"The House Settlement (from 1 July 2025)"* entry states both models, says outright that **this guide deliberately does not track opt-in status**, explains why that is defensible (it cannot move a Fit Score — D1 scores no funding penalty either way, §5c), and turns the gap into two questions to ask a coach. It also draws the distinction that actually matters to a recruit: **permission to fund 28 is not the same as funding 28** — men's soccer is a non-revenue sport and most programs sit well below their ceiling.
+- **The Financial Model card gets one clause and a pointer**, not the full treatment — that card was already long, and the owner's instinct that a stat-sized surface can't carry a settlement caveat was right.
+- **The 25 table cells get a compact suffix** (`"— 28 funded roster spots if House opt-in"`), because they are one-line comparison cells. **9.9 was deliberately NOT dropped** — it is still correct for part of the field (v44.48's standing instruction).
+- **Two comparative claims were the genuinely misleading ones.** The NAIA intro and OCU's note both argued *"12 equivalencies — more than D1 (9.9) or D2 (9.0)"*. Post-*House* that comparison is unreliable against an opt-in D1 school, so **the D1 half was dropped and the D2 half kept** — D2's 9.0 is untouched by the settlement, so the NAIA-vs-D2 point still stands. This is the same defect class as v44.48 itself: the guide's copy resting on a cap that had moved.
+
+**Text only. No `fundingPathway`, `maxAthletic`, `costNum`, `fitOlivier` or lens score moved, and none should** — §5c is explicit that opt-in status *"does not need researching for the D1 schools because it cannot change a score."* That reasoning is unchanged; what was wrong was telling the *user* a single flat number.
+
+**NEWLY FOUND, deliberately NOT fixed (logged in §6): the Conferences-card "Max Aid" stat is derived by string-splitting the prose, and is broken for 10 of 25 conferences.** `js/app.js:2576` does `c.scholarships.split('Up to')[1]?.trim().split(' ')[0] || c.scholarships.split(' ')[0]`, so the stat tile renders **"NCAA" (NEC, Summit, CACC), "Army" (Patriot), "NAIA" (AMC), "equivalent" (SAC, Sun), "Athletic" (JUCO)** and "ZERO" (Ivy, SCIAC). Pre-existing and unrelated to this change — proven by running the exact expression against `HEAD`'s strings before editing anything, and re-checked after: **the same 10 values, unchanged.** Not fixed here because the real defect is the renderer, not the copy, and **reshaping 10 prose strings to satisfy a fragile parser is backwards** — the next copy edit would re-break it. It is also why the `conferences.json` half of this change is invisible: that field's full text reaches no renderer.
+
+**Method note worth keeping: "N known instances" has now been an undercount three sessions running** — v44.47 (2 logged → 8 real), v44.48 (1 → 8), v44.49 (2 → 29). The suffix append was scripted line-anchored on `"scholarships"` rather than hand-edited 25 times, and re-run idempotently; the `Max Aid` parse was tested *before* the edit so "unchanged" is a measurement, not an assumption.
+
+Validator: **Issues: 0**. `validate_schools.py` PASS (111 schools, 17 pre-existing contact warnings). Verified in a local preview by reading the rendered DOM: all 11 prestige cells, both `index.html` blocks, the new Glossary entry in the correct position, the NAIA tier intro, OCU's modal note, and all 15 numeric `Max Aid` stats still reading `9.9`/`9`. Zero JS console errors (the console's `ERR_NAME_NOT_RESOLVED`/404 entries are all external logo hosts, no localhost resources, and `document.images` reports 0 broken after load).
+
+---
+
 ### v44.48 (August 2026) — NAIA: eight strings told the user there is no scholarship cap while the model penalises one
 
 The UI claimed NAIA has no scholarship cap. §5c classifies NAIA as `fundingPathway: "capped"` and applies a **−3 Fit penalty for exactly that cap**. The guide was contradicting its own scoring model — **in the athlete's favour, on a recruiting-decision fact.** Found while fixing an unrelated Keiser string on the same line in v44.47 and logged rather than rushed; fixed here on the owner's instruction.

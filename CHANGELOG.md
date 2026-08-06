@@ -50,6 +50,12 @@ Both notes carry a **⚠ MIXED VINTAGE** disclosure. An independent confirmation
 
 Ten JUCO head coaches verified against their live staff pages — **all unchanged**: Ginsberg (Suffolk, name *and* title), Carrabotta (Westchester), DiBernardo (Monroe), Espinal (Dodge City), Hall (Neosho), Fisher (Nassau), Lis-Simmons (Ulster), Plumbar (LSU Eunice), McBride (Blinn, pending), Spear (Murray State). **No Change Type 2 and no re-rank fired.** Suffolk publishes no coach email or phone, consistent with the stored nulls.
 
+#### The survey finding that should set the timing: Session 4 ran too early
+
+Probing all 19 reachable browser-only JUCOs on their season-scoped 2026-27 URL found **7 that publish a 2026-27 page with ZERO players** — `pima_cc`, `barton_cc`, `phoenix_college`, `smc`, `indian_hills`, `mohave_cc`, `southeastern_cc_ia`. That is instances **6–12** of "published ≠ populated", more than doubling the five already on record. `pima_cc` was control-tested: **0 rows / 646 bytes on 2026-27 against 35 rows / 3367 bytes on 2025-26** through the identical read.
+
+Ten schools **are** populated on 2026-27 (`miami_dade` 31 · `northeast_cc` 35 · `daytona_state` 30 · `efsc` 35 · `iowa_lakes_cc` 17 · `angelina_college` 22 · `johnson_county_cc` 29 · `glendale_cc_az` 35 · `arizona_western` 12 · `cowley_cc` 27) but **none has had its MF extraction or coach check yet** — those are squad sizes, not midfield counts. Three carry a season label that needs checking first: `northeast_cc`'s title has **no year**, `angelina_college`'s says **"2027"**, `cowley_cc`'s says **"Standings"**. Three more were not reachable by the standard shape: `tyler_jc` (SPA shell, `innerText.length` 0), `coastal_bend_cc` (PrestoSports), `iowa_western` (non-`/sports/msoc` URL).
+
 Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings.
 
 ---

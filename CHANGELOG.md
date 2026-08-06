@@ -6,6 +6,41 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.53 (August 2026) — `negtest.py`, and an audit that found a live instance of the Max Aid defect: `Target: Notre`
+
+Two parts, both descended from v44.50.
+
+#### `negtest.py` — a validator's silence is only evidence if you proved the mutation landed
+
+v44.50 negative-tested MAXAID's five branches, and **the first test passed while proving nothing.** The patch string used a 6-space indent where `data/conferences.json` uses 4, so `str.replace()` was a silent no-op: the file never changed, the validator ran against clean data, and it printed `Issues: 0` — which is precisely what a working check on clean data prints. It was caught only by noticing that the other four mutations fired and that one didn't.
+
+**An unapplied patch and a broken check are indistinguishable from the outside.** `negtest.py` removes that ambiguity mechanically:
+
+- **Asserts the file actually changed, and refuses to run the validator otherwise** — reporting `VOID / MUTATION-NOOP` with the v44.50 story attached, so a no-op can never be read as a pass.
+- Separates **`CHECK-SILENT`** (mutation applied, check did *not* fire — the real failure) from **`PASS`**.
+- Refuses to start on a file with uncommitted changes unless `--force`, so a crash can't lose work.
+- **Always restores in a `finally` block**, then re-runs the validator and warns if the `Issues:` count no longer matches the baseline it recorded at the start.
+
+Proven on itself: run against a suite deliberately containing the v44.50 6-space patch, it reported 5 `ok` and that one case as `VOID`.
+
+`negtests/checks.json` is the committed suite — **8 cases, all proven**: MAXAID ×5 (missing / empty / wrong type / over-length / renderer regressed), TIER, FIT and SCORES-SRC. Add a case whenever a check is added. **The FIT case is a permanent regression test for v44.51**: it perturbs `housingPenalty` in `js/scores.js` and requires FIT to fire, so if anyone reintroduces a local mirror of the Fit formula, that case goes silent and the suite fails.
+
+#### The audit — one real bug, two cosmetic, one verified-clean
+
+Every prose extraction in the renderers (`.split` / `.match` / `parseFloat` over a data field) was run across **all 111 schools** looking for absurd output — the same method that exposed Max Aid.
+
+**FIXED — `Target: Notre` and `Target: Georgetown` were live on those cards.** The card GPA strip did `u.gpa.minSchol.split(' ')[0]`. `minSchol` is free prose: usually it opens with the threshold (*"3.5+ for academic merit"*), but at need-blind schools it is a whole sentence — *"Notre Dame meets 100% of demonstrated need"* → `Notre`. Also `Target: N/A` on `smc`/`miami_dade`. Fixed with a guarded extraction: take a GPA only when the string actually opens with one, otherwise `—`, because at those schools there is no GPA scholarship threshold to display. Exactly **4 of 111** cards change; verified live that all 111 now show a GPA number or `—`, and Clemson still reads `3.5+`.
+
+**LOGGED, not fixed (CLAUDE.md §6)** — both cosmetic, no scoring impact, same `split('—')[0]` shape:
+- **"Soccer Level" stat, 7 schools.** 6 show a bare division token where others show a level (`mercyhurst`→`D1`, `georgian_court`→`D2`, `columbia_college`→`NAIA`, `northeast_cc`/`monroe_college`/`indian_hills`→`JUCO`, against `tyler_jc`'s correct `NJCAA Division I`), and **`denver` renders a 59-character sentence into a compact stat**. This is the mechanism behind the long-deferred `soccerLevel` formatting item (UX backlog D1, owner-deferred — not touched), but the Denver overflow is new and is a rendering problem rather than a formatting preference.
+- **"Pre-PT Path" stat**: `keiser` (33 chars) and `chapman` (40 chars) overflow the slot.
+
+**VERIFIED CLEAN, recorded so it isn't re-audited** — the GPA *filter* extraction (`dashboard.js:59/378/428`, `parseFloat(gpa.minEntry.match(/[\d.]+/))`) returns a plausible GPA or 0-for-open-admission on all 111 schools. Prose-parsed *and* correct.
+
+Validator **Issues: 0**, `validate_schools.py` PASS. `js/app.js` is the only runtime file touched and its change was verified in a local preview.
+
+---
+
 ### v44.52 (August 2026) — `sweep.py`: the exhaustive-search discipline becomes a command instead of a virtue
 
 **Three consecutive sessions closed a copy/data item on a count that turned out to be a lower bound:**

@@ -6,6 +6,40 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.56 (August 2026) — the COA campaign restarts: it was abandoned at v33.1 with 53 schools still on "ballpark" figures
+
+Owner spotted that the cost chips looked wrong. They were — but not for the reason either of us first guessed.
+
+**The wrong hypothesis, ruled out first:** that the chips read a stale field while the bars read a fresh one. They don't — the Financial Model chips (`js/app.js:2848`), the cost rows (`:2959`) and the comparison bars (`:3009`) all read the **same** `u.fin.costNum`. No renderer is stale.
+
+**What actually happened is in the history.** Four commits — `7ee5a4b`, `8296450` (v31), `b8166d3` (v33), `0ebe6b2` (v33.1) — corrected `costNum` *"from ballpark to verified 2025-26 COA"*, reached roughly **17 schools**, and stopped. **53 of 111 still carry the ballpark figures**, and they announce themselves: round components summing to a round total (`clemson` 38,000 + 12,000 + 2,000 = 52,000; `pba` 26,000 + 10,000 + 2,000 = 38,000, sharing a `fees: 2000` placeholder) against a researched record like `duke` (73,740 + 22,029 + 7,411 = 103,180). Exactly **53 round vs 53 exact**, plus the 2 zeroed service academies.
+
+**Where the damage is concentrated:**
+- **7 of the 10 shortlisted schools are ballpark** — pba, lynn, ucsb, usf, barry, clemson, fau.
+- **The `$52,000` cluster is literally the athlete's budget** (ncstate, clemson, uconn, michiganstate, ohiostate, washington, monmouth) — a placeholder that lands exactly on the affordability cliff. Other clusters: $38,000 ×8, $28,000 ×5, $58,000 ×4.
+- **40 of the 53 are D1** — the most expensive schools are the least researched.
+
+**No validator can see it:** `costNum` reconciles with `tuition + roomBoard + fees` for all 111, because the components were estimated together. Internal consistency is not accuracy.
+
+#### First school done — Clemson, and it moved
+
+Tier-1 from Clemson's own Estimated Cost of Attendance table, and better than the old pass's vintage: the **2026-27** figures are published. Non-South-Carolina resident, on/off campus — tuition **$42,020**, fees **$1,832**, housing $9,304 + food $5,576 = roomBoard **$14,880** ⇒ `costNum` **$58,732**, against a stored $52,000 that understated it by ~$6.7k. `lensScores.value` holds at 40 (Clemson was already at/over budget, so affordability was 0 before and after) and no other score moves.
+
+#### Two rules locked so the remaining 52 stay consistent
+
+- **`costNum` = `tuition + roomBoard + fees` = DIRECT BILLED COST.** It excludes books, transport, personal and loan fees, so a school's headline COA is usually higher — Clemson publishes **$66,180** where the guide stores **$58,732**. The headline figure now goes in `internationalNote` so the gap is visible and nobody re-opens it.
+- **§3a Type 4's cascade table was STALE and is corrected.** It claimed *"Cost = 20% of fitOlivier — recalculate"*. False since **v37.1**, which removed cost from the Fit Score entirely; `js/scores.js` contains no reference to `costNum` or `affordability`. **A cost change moves `lensScores.value` and nothing else.** Left uncorrected it would have had this campaign needlessly recomputing 53 schools' Fit scores.
+
+#### Blocking wrinkle for the Florida publics — decide before touching them
+
+Clemson publishes a clean non-resident budget table. **FAU does not**: a Florida-*resident* budget plus a non-resident **per-credit-hour** rate ($799.72) with tuition and fees combined, so an annual figure requires assuming a credit load — the exact fabricated precision this campaign exists to remove. `fiu` and `usf` are likely the same. **Not guessed; logged for an owner decision on the credit-load rule.**
+
+Also logged: **two dead cost fields**. `u.cost` (all 111) is referenced once as a fallback that can never fire; `fin.cost` (5 schools) is referenced nowhere. Both drift — **`tulsa` carries three different costs**: "~$45k", "~$70k", and $77,346.
+
+Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings.
+
+---
+
 ### v44.55 (August 2026) — JUCO Session 4, part 1: Suffolk + Westchester proven, and §14 turns out not to fit JUCOs at all
 
 #### The owner's sub-task: both schools re-tested in a real browser, and the answer is "genuinely absent"

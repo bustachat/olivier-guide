@@ -302,9 +302,10 @@ Captures whether a school's midfield spots are typically filled by true incoming
 | `data/[conf].json` — fin.costNum, tuition, roomBoard, fees | Raw cost data |
 | `data/[conf].json` — cost display string | **REDUNDANT since v32** — cost display is now computed dynamically from `costNum` via `costDisplay()` in app.js. The `cost` field in JSON is kept as a fallback only. Do NOT update it manually — fix `costNum` instead. |
 | `data/[conf].json` — fin.internationalNote | Text must match realistic aid framing (25–50% athletic for D1) |
-| `data/[conf].json` — lensScores.value | Value lens = 60% fit + 40% affordability — recalculate |
-| `data/[conf].json` — lensScores.overall | Cost = 20% of fitOlivier — recalculate |
-| `data/[conf].json` — fitOlivier | Recalculate from scratch |
+| `data/[conf].json` — lensScores.value | **The only score that moves.** `value = fitOlivier×0.6 + affordability×40`, where `affordability = 1 − min(1, costNum/budget)`. Stored-only — nothing recomputes it at runtime, so a missed update drifts silently (the v44.30 Wake Forest bug). The `VALUE` check catches it. |
+| ~~`lensScores.overall`~~ / ~~`fitOlivier`~~ | **DO NOT recalculate — corrected v44.56.** This table used to say *"Cost = 20% of fitOlivier"*. That has been false since **v37.1**, which removed cost, GPA and ACU from the Fit Score entirely (`fitOlivier` = Soccer Quality 40 + Minutes 35 + Climate 15 + City 10). `js/scores.js` contains no reference to `costNum` or `affordability`. A cost change moves **`lensScores.value` and nothing else.** |
+
+**Convention for `costNum` — locked v44.56, do not "correct" it to a school's headline number.** `costNum = tuition + roomBoard + fees`, i.e. **direct billed cost**. This invariant holds for all 111 records. It deliberately **excludes** books, transport, personal expenses and loan fees, so a school's own published "TOTAL cost of attendance" will usually be higher — Clemson publishes $66,180 where this guide stores $58,732. Record the school's headline figure in `internationalNote` so the difference is visible and nobody re-opens it. Use the **non-resident / international** rate, and the newest published academic year.
 
 **Tabs to verify after changing:**
 - Financial Model — school selector shows new cost, comparison bars shift, scenario breakdowns correct
@@ -1255,6 +1256,23 @@ Campaign plan and session-by-session detail live in the `roster_refresh_campaign
 - **🚩 `DOMAINS.gcu = 'lopes.com'` is probably wrong, but is NOT provably dead (v44.31).** It resolves (216.40.34.37, a parking-adjacent range) yet times out in both a scripted client and a real browser at 300 s. `gculopes.com` is the host GCU's own school-object `url` uses, and its favicon returns 200. Deliberately not changed — per the Monroe parked-lander lesson a resolving host needs its *content* checked before being declared dead, and that check couldn't complete. Verify in a browser next time GCU is touched; if `lopes.com` is parked or dead, switch to `gculopes.com` (favicon only — no cascade).
 - **🚩 `tyler_jc` is the ONE school whose two domain fields are inverted (cosmetic, favicon only).** The two stores legitimately hold *different* values: **`DOMAINS` in `js/app.js` holds the ATHLETICS host** (modal-header logo, app.js:1202) and **the school object's `domain` holds the UNIVERSITY host** (Dashboard logo, dashboard.js:448). 73 of 111 schools differ between the two, and for 72 the split is correct and deliberate (`virginia`: `virginiasports.com` / `virginia.edu`). **Tyler JC is backwards** — app.js has `tjc.edu`, the school object has `apacheathletics.com` — so its modal shows the university favicon and its Dashboard entry the athletics one. Nothing is broken, both hosts resolve, no validator can see it. Fix is one token: `DOMAINS.tyler_jc` → `'apacheathletics.com'`. **Do not "fix" the other 72** — the split is by design.
 - **📌 3 `coaches.json` entries have no `url` at all** — `tyler_jc`, `indian_hills`, `murray_state_ok`. A gap, not breakage; that field sweeps 108/108 live otherwise.
+
+#### D2. COA campaign — UNFINISHED since v33.1, restarted v44.56
+
+**🚩 53 of 111 schools still carry the "ballpark" cost figures the v31–v33.1 COA passes were meant to replace.** Those four commits (`7ee5a4b`, `8296450` v31, `b8166d3` v33, `0ebe6b2` v33.1) explicitly corrected `costNum` *"from ballpark to verified 2025-26 COA"* — and then stopped after roughly **17 schools**. (17 is a **lower bound**: it comes from scanning each commit's diff for the nearest preceding `"id"`, so treat it as approximate.)
+
+**How to spot the unresearched ones — they announce themselves.** A ballpark record has *round* components summing to a round total (`clemson` was 38,000 + 12,000 + 2,000 = 52,000; `pba` is 26,000 + 10,000 + 2,000 = 38,000, and `fees: 2000` is a shared placeholder). A researched one does not (`duke` 73,740 + 22,029 + 7,411 = 103,180). Split: **53 round vs 53 exact**, plus 2 zeroed service academies.
+
+**Priority order — the damage is concentrated where it matters most:**
+1. **7 of the 10 SHORTLISTED schools are ballpark** — `pba` · `lynn` · `ucsb` · `usf` · `barry` · `clemson` ✅done · `fau`. These are the schools actually being pursued.
+2. **The `$52,000` cluster is literally Olivier's budget** — `ncstate`, `clemson` ✅, `uconn`, `michiganstate`, `ohiostate`, `washington`, `monmouth`. Someone typed the budget as a placeholder, and it lands exactly on the affordability cliff. Other placeholder clusters: `$38,000` ×8, `$28,000` ×5, `$58,000` ×4, `$32,000` ×3, `$72,000` ×3.
+3. Remaining **40 D1** ballparks (the expensive ones), then D2 ×6, JUCO ×5, NAIA ×1, D3 ×1.
+
+**Why no validator can see it:** `costNum` reconciles with `tuition + roomBoard + fees` for **all 111**, because the components were estimated together. Everything agrees with everything — **internal consistency is not accuracy**, and the `VALUE` check only proves the formula was applied to whatever number is stored.
+
+**⚠ Method wrinkle found on the first batch — the Florida publics need a decision before they are touched.** Clemson publishes a clean non-resident COA budget table. **FAU does not**: it publishes a *Florida-resident* budget plus a non-resident **per-credit-hour** rate ($799.72 undergrad) with tuition and fees combined, so deriving an annual figure requires assuming a credit load — which is exactly the fabricated precision this campaign exists to remove. Expect the same at `fiu` and `usf`. **Do not guess a credit load; decide the rule (e.g. 30 credits/yr, stated in the note) with the owner first.**
+
+**Two dead cost fields should be cleaned up alongside this.** `u.cost` (top-level string, all 111) is referenced exactly **once**, as a fallback that can never fire because `costNum` is defined everywhere; `fin.cost` (5 schools) is referenced **nowhere**. Both carry stale contradictory values — **`tulsa` has three different costs**: `u.cost` "~$45k", `fin.cost` "~$70k", `costNum` $77,346. Also `ucirvine` "~$73k" vs $81,292 and `ocu` "~$49k" vs $56,720. Same silent-drift class as `coaches.json.url`. §3a Type 4 already says never to hand-edit the display string.
 
 #### E. Scoring & design questions for the owner
 

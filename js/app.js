@@ -2573,7 +2573,7 @@ function renderConferences(){
           <div class="conf-stat-row">
             <div class="conf-stat"><span class="csv">${c.soccerTeams}</span><span class="csl">Soccer Teams</span></div>
             <div class="conf-stat"><span class="csv">${c.ncaaTitles}</span><span class="csl">NCAA Titles</span></div>
-            <div class="conf-stat"><span class="csv">${c.scholarships.split('Up to')[1]?.trim().split(' ')[0]||c.scholarships.split(' ')[0]}</span><span class="csl">Max Aid</span></div>
+            <div class="conf-stat"><span class="csv">${c.maxAid||'—'}</span><span class="csl">Max Aid</span></div>
           </div>
           <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:5px">Schools In This Guide</div>
           <div class="conf-schools">${guideChips}</div>

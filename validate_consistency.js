@@ -146,6 +146,30 @@ schools.filter(s => s.profileDepth === 'full').forEach(s => {
 const rendererTiers = new Set(['Power 5 (D1)', 'High Major (D1)', 'Ivy League (D1)', 'Mid-Major (D1)', 'Division II', 'NAIA', 'Division III', 'Junior College']);
 conferences.forEach(c => { if (!rendererTiers.has(c.tier)) note('TIER', `conferences.json '${c.id || c.name}' tier='${c.tier}' matches no renderer bucket — card hidden on Conferences tab`); });
 
+// ── MAXAID (added v44.50) — the conference card's "Max Aid" stat must come from a
+// stored field, never from parsing the `scholarships` prose.
+// History: renderConferences() used to derive the tile with
+//   c.scholarships.split('Up to')[1]?.trim().split(' ')[0] || c.scholarships.split(' ')[0]
+// which rendered a WORD for 10 of 25 conferences — "NCAA" (NEC/Summit/CACC, whose strings
+// begin "NCAA D1 — up to …"; the split is case-sensitive so lowercase "up to" never matched),
+// "Army" (Patriot), "NAIA" (AMC), "equivalent" (SAC/Sun), "Athletic" (JUCO). It also meant any
+// copy edit to `scholarships` could silently change a displayed number — v44.49 appended a
+// House-settlement qualifier to 14 of those strings and had to measure the parse before and
+// after to prove it hadn't. Two checks below: the data must be present and tile-sized, AND
+// the renderer must not go back to parsing (the string check is what makes this durable —
+// re-adding the split would otherwise pass every data check here).
+conferences.forEach(c => {
+  const v = c.maxAid;
+  if (typeof v !== 'string' || !v.trim()) {
+    note('MAXAID', `conferences.json '${c.abbr || c.name}' has no maxAid — the Conferences card's Max Aid tile renders '—'`);
+  } else if (v.length > 12) {
+    note('MAXAID', `conferences.json '${c.abbr || c.name}' maxAid='${v}' is ${v.length} chars — that tile is a compact stat, keep it under 12 (put the nuance in 'scholarships')`);
+  }
+});
+if (/scholarships\s*\.\s*split\s*\(/.test(appjs)) {
+  note('MAXAID', `js/app.js parses c.scholarships with .split() again — the Max Aid tile must read the stored c.maxAid field, not the prose (see CLAUDE.md §6, v44.50)`);
+}
+
 // ── coaches ──
 const ranks = coaches.map(c => c.rank).sort((a, b) => a - b);
 for (let i = 0; i < ranks.length; i++) if (ranks[i] !== i + 1) { note('COACH', `rank sequence broken at ${ranks[i]} (expected ${i + 1}); total ${coaches.length}`); break; }

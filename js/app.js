@@ -659,7 +659,15 @@ function buildCard(u){
     const statusIcon=u.gpa.status==='eligible'?'✅':u.gpa.status==='borderline'?'⚠️':'❌';
     const isOpen=u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open');
     const entryText=isOpen?'Open entry ✅':u.gpa.minEntry+' '+statusIcon;
-    const targetShort=u.gpa.minSchol.split(' ')[0];
+    // `gpa.minSchol` is free prose. It USUALLY opens with the threshold ("3.5+ for
+    // academic merit"), but at need-blind schools it is a whole sentence — so the old
+    // .split(' ')[0] rendered "Target: Notre" and "Target: Georgetown" on those two
+    // cards, and "Target: N/A" on smc/miami_dade. Same defect class as the Max Aid tile
+    // (v44.50): a display value parsed out of prose that is free to be phrased any way.
+    // Extract a GPA only when the string actually opens with one; otherwise there is no
+    // GPA threshold to display, so show '—' rather than the first word of a sentence.
+    const gpaTargetMatch=(u.gpa.minSchol||'').match(/^\s*(\d(?:\.\d+)?\+?)/);
+    const targetShort=gpaTargetMatch?gpaTargetMatch[1]:'—';
     gpaHtml='<div class="gpa-compact">'
       +'<span class="gpa-c-label">GPA</span>'
       +'<span class="gpa-c-val" style="color:'+statusColor+'">'+entryText+'</span>'

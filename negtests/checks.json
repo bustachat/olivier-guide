@@ -1,0 +1,58 @@
+[
+  {
+    "name": "MAXAID / missing field",
+    "file": "data/conferences.json",
+    "find": "    \"maxAid\": \"9.9\",\n",
+    "replace": "",
+    "expect": "MAXAID"
+  },
+  {
+    "name": "MAXAID / empty string",
+    "file": "data/conferences.json",
+    "find": "\"maxAid\": \"9.9\",",
+    "replace": "\"maxAid\": \"\",",
+    "expect": "MAXAID"
+  },
+  {
+    "name": "MAXAID / wrong type (number not string)",
+    "file": "data/conferences.json",
+    "find": "\"maxAid\": \"9.9\",",
+    "replace": "\"maxAid\": 9.9,",
+    "expect": "MAXAID"
+  },
+  {
+    "name": "MAXAID / over-length for a compact stat tile",
+    "file": "data/conferences.json",
+    "find": "\"maxAid\": \"9.9\",",
+    "replace": "\"maxAid\": \"9.9 equivalencies or 28 spots\",",
+    "expect": "MAXAID"
+  },
+  {
+    "name": "MAXAID / renderer regresses to parsing the prose (code-shape guard)",
+    "file": "js/app.js",
+    "find": "${c.maxAid||'—'}",
+    "replace": "${c.scholarships.split('Up to')[1]}",
+    "expect": "MAXAID"
+  },
+  {
+    "name": "TIER / conference tier matches no renderer bucket",
+    "file": "data/conferences.json",
+    "find": "\"tier\": \"Power 5 (D1)\",",
+    "replace": "\"tier\": \"Power Five\",",
+    "expect": "TIER"
+  },
+  {
+    "name": "FIT / stored fitOlivier drifts from the real scores.js formula",
+    "file": "js/scores.js",
+    "find": "if (h.available === false) return 6;",
+    "replace": "if (h.available === false) return 10;",
+    "expect": "FIT"
+  },
+  {
+    "name": "SCORES-SRC / a scoring function is renamed in scores.js",
+    "file": "js/scores.js",
+    "find": "function housingPenalty(school) {",
+    "replace": "function housingDeduction(school) {",
+    "expect": "SCORES-SRC"
+  }
+]

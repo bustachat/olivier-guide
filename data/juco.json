@@ -335,14 +335,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 11000,
-      "tuition": 6000,
-      "roomBoard": 4000,
-      "fees": 1000,
+      "costNum": 27812,
+      "tuition": 7947,
+      "roomBoard": 18150,
+      "fees": 1715,
       "maxAthletic": 0.5,
       "maxAcademic": 3000,
       "aidType": "athletic+need",
-      "internationalNote": "JUCO — very low cost. Florida residency discounts may apply after 1 year. Transfer pathway to Barry or FIU is the value proposition."
+      "internationalNote": "Miami Dade non-resident cost $27,812 (Tier-1 verified from MDC's official Tuition & Fees rate table and its published Cost of Attendance chart, Associate programs / Non-Resident / Students Living Independently): tuition and out-of-state fee $331.11 a credit × 24 credits = $7,947 + student services, financial aid, capital improvement, technology and parking fees $71.40 a credit = $1,715 — together MDC's own $4,831 a term — plus room and board $9,075 a term = $18,150. NO credit-load assumption was needed: MDC publishes 'Cost per Term (12 credits)' itself. ⚠ READ THE HOUSING LINE: MDC provides and supervises NO student housing, so the $18,150 is MDC's own living-independently allowance, NOT a college charge; it is stored under `roomBoard` because a player must still live in Miami and a tuition-only figure would badly mislead. ⚠ MDC's COA page says its figures are per term and should be doubled for a year, but its own 'Total' row doubles only the OTHER expenses and leaves tuition at one term — that total is internally inconsistent, so the components were doubled instead. Books ($1,500) and personal/transport are excluded by convention. The previous stored $11,000 was an unresearched ballpark and understated the cost by $16,812. The transfer pathway to Barry or FIU remains the value proposition, but Miami living costs are the story here, not tuition."
     },
     "culture": {
       "vibe": "Massive urban community college — functional, diverse, and Miami-flavoured. MDC is one of the largest colleges in America with 6 campuses across Miami. The culture is pure Miami — Latin, energetic, and aspirational.",
@@ -397,7 +397,7 @@
       "academic": 42,
       "minutes": 70,
       "lifestyle": 92,
-      "value": 69
+      "value": 57
     },
     "minutesOutlook": {
       "available": true,
@@ -608,14 +608,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 14000,
-      "tuition": 7000,
-      "roomBoard": 5500,
-      "fees": 1500,
+      "costNum": 14860,
+      "tuition": 6900,
+      "roomBoard": 7450,
+      "fees": 510,
       "maxAthletic": 0.8,
       "maxAcademic": 4000,
       "aidType": "athletic+need",
-      "internationalNote": "Iowa Western has an established international student pipeline — including Australian and European players. Athletic scholarships available. Very low tuition — one of the most affordable options in the entire guide. Financial pathway: 2yr Iowa Western ($14k) → 2yr transfer D1/D2 (negotiated aid) = significant long-term savings."
+      "internationalNote": "Iowa Western non-resident/international direct billed cost $14,860 (Tier-1 verified from IWCC's official Paying for College costs page): tuition $230 a credit × 30 credits = $6,900 + college service fees $17 a credit = $510 + Village Double housing AND food $3,725 a semester = $7,450. NO credit-load assumption was needed — IWCC states that 'completing an associate's degree in 2 years requires a student to take 15 credits each semester', and its housing table says outright that the figures are 'the total costs for housing and food in each housing facility per semester'. IWCC charges internationals barely above the Iowa resident rate ($230 vs $225 a credit), which is why this stays one of the cheapest options in the guide. A Tower double (males only) is $3,300 a semester, $850 a year cheaper; singles run $4,380-$5,575 a semester. A one-time $35 first-enrolment fee and books (~$500 a semester) are excluded. The previous stored $14,000 was an unresearched ballpark and understated the cost by only $860 — the CLOSEST any ballpark came in the whole campaign. Athletic scholarships are available and the established Australian/European pipeline is real."
     },
     "culture": {
       "vibe": "Community college atmosphere — diverse student body from multiple backgrounds and ages. Iowa Western has a strong athletic culture — football is king in Iowa but soccer is growing. Council Bluffs is directly across the Missouri River from Omaha, Nebraska — giving access to a genuine metro area of 900,000 people.",
@@ -667,7 +667,7 @@
       "academic": 40,
       "minutes": 79,
       "lifestyle": 50,
-      "value": 70
+      "value": 69
     },
     "minutesOutlook": {
       "available": true,
@@ -1426,14 +1426,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 21000,
-      "tuition": 6120,
-      "roomBoard": 12792,
-      "fees": 2088,
+      "costNum": 14340,
+      "tuition": 7650,
+      "roomBoard": 6390,
+      "fees": 300,
       "maxAthletic": 0.7,
       "maxAcademic": 3000,
       "aidType": "athletic",
-      "internationalNote": "Indian Hills out-of-state/international COA is ~$21k/yr — among the most affordable programs in the guide. Athletic scholarship can cover 40-70% of COA. Ottumwa cost of living is very low. 2-year total before aid: ~$42k. After a realistic athletic package: potentially $15-25k total for 2 years."
+      "internationalNote": "Indian Hills INTERNATIONAL direct billed cost $14,340 (2025-26, Tier-1 verified from IHCC's official Tuition & Fees table, Internationals column): tuition $7,650 a year + Web & ICN fees $300 + housing $2,640 a year (double) + the Maroon meal plan $3,750, which is the plan international students are charged. IHCC's own 'Total Direct Costs' for internationals is $17,007, but that row INCLUDES $800 of books and the $1,867 mandatory international health insurance, both excluded by this guide's convention — the insurance is a real extra cost for an international student and should be budgeted separately. ⚠ DO NOT use IHCC's Cost of Attendance PDF for this school: it prices at $300 a credit × 8 credits × 4 terms and states in its own footnote that 'no additional adjustments were made for out-of-state tuition' — it is the IOWA RESIDENT budget. The itemised international table is the right source. The previous stored $21,000 was an unresearched ballpark and OVERstated the cost by $6,660. Ottumwa living costs are very low; athletic scholarship can cover a large share, so the real outlay is lower again."
     },
     "culture": {
       "vibe": "Indian Hills is a small community college in Ottumwa, a river city of ~25,000 in southeast Iowa. The men's soccer program is now the flagship of Indian Hills athletics after winning the 2025 NJCAA DI National Championship in just Newton's second season. Tight-knit, competitive squad culture with a highly international roster.",
@@ -1469,7 +1469,7 @@
       "academic": 32,
       "minutes": 73,
       "lifestyle": 22,
-      "value": 53
+      "value": 58
     },
     "tags": [
       "juco",
@@ -1949,14 +1949,14 @@
     "aid": "Athletic Grants + Need",
     "fundingPathway": "full",
     "fin": {
-      "costNum": 16000,
-      "tuition": 9000,
-      "roomBoard": 6000,
-      "fees": 1000,
+      "costNum": 23777,
+      "tuition": 11995,
+      "roomBoard": 11782,
+      "fees": 0,
       "maxAthletic": 0.65,
       "maxAcademic": 3000,
       "aidType": "athletic+need",
-      "internationalNote": "Daytona State out-of-state/international COA is ~$16k/yr — affordable Florida JUCO. Athletic scholarship can cover 40-65% of COA. Florida Bright Futures scholarship not available to international students but athletic grants are competitive. 2-year total before aid: ~$32k. After realistic athletic package: $11-20k total."
+      "internationalNote": "Daytona State out-of-state cost $23,777 (2025-26, Tier-1 verified from DSC Financial Aid's official Estimated Cost of Attendance chart, Associate Degree / Out-of-State / On campus): tuition and fees $11,995 + housing $7,158 + food $4,624. DSC publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0. Based on DSC's own stated 15 credits in each of Fall and Spring. Its headline out-of-state on-campus total is $29,375, adding books, personal expenses and transport that this guide excludes. ⚠ THE ON-CAMPUS FIGURE MAY NOT BE AVAILABLE: DSC has ONE residence hall (opened 2022, 67 units) and it was confirmed full with a waiting list for Spring 2026 — the off-campus budget puts housing at $12,312 instead of $7,158, which would raise the cost to about $28,931. Check availability before treating $23,777 as the number. This is 2025-26 data, the newest DSC publishes; it has frozen tuition and associated fees for 15 consecutive years, so 2026-27 should be close. The previous stored $16,000 was an unresearched ballpark and understated the cost by $7,777."
     },
     "size": 17000,
     "prePT": "Transfer Pathway",
@@ -1978,7 +1978,7 @@
       "academic": 36,
       "minutes": 75,
       "lifestyle": 82,
-      "value": 68
+      "value": 63
     },
     "tags": [
       "juco",

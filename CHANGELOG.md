@@ -6,9 +6,9 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
-### v44.59 (August 2026) — COA batches 4–8: 32 schools researched in one pass; **45 of 53 done, 8 left**
+### v44.59 (August 2026) — COA batches 4–10: **the cost-of-attendance campaign is COMPLETE.** 40 schools in one session; 53 of 53 ballparks replaced
 
-Change Type 4 on 32 schools across five commits, one per cluster. All Tier-1, read in a real browser. **No `fitOlivier` moved anywhere** — cost has not fed the Fit Score since v37.1.
+Change Type 4 on **40 schools across seven commits**, one per cluster. All Tier-1, read in a real browser. **No `fitOlivier` moved anywhere** — cost has not fed the Fit Score since v37.1. Together with v44.56–v44.58 this closes the pass abandoned at v33.1: **every one of the 111 schools now carries a researched, sourced `costNum`.**
 
 | cluster | schools | headline |
 |---|---|---|
@@ -44,7 +44,26 @@ Dashboard **"within budget" moves 59 → 49 of 111** across v44.58–v44.59. Tha
 
 Gates: `validate_consistency.js` **Issues: 0** after every batch; the `tuition + roomBoard + fees = costNum` invariant and the value-lens formula re-derived for all 32; local preview 111 cards, 0 NaN, 114/114 images, every touched Fit score held.
 
-**Remaining: 8** — `wakeforest` (deferred *within* this session: its COA itemisation does not render in the DOM and its meal-plan rates are not published, so it was left rather than guessed), `stedwards`, `uc_charleston`, and the five JUCOs `smc`, `miami_dade`, `iowa_western`, `daytona_state`, `indian_hills`.
+**Batches 9–10 finished the last 8 and the campaign is COMPLETE** — **zero round-number `costNum` values remain**: 109 exact + 2 zeroed service academies = 111.
+
+| school | stored | actual | gap | value |
+|---|---|---|---|---|
+| `stedwards` | $42,000 | **$67,176** | **+$25,176** | 40 → 32 |
+| `smc` | $9,000 | **$25,658** | +$16,658 | 67 → 54 |
+| `miami_dade` | $11,000 | **$27,812** | +$16,812 | 69 → 57 |
+| `uc_charleston` | $36,000 | **$48,296** | +$12,296 | 42 → 32 |
+| `daytona_state` | $16,000 | **$23,777** | +$7,777 | 68 → 63 |
+| `indian_hills` | $21,000 | **$14,340** | **−$6,660** | 53 → 58 |
+| `wakeforest` | $91,000 | **$92,938** | +$1,938 | 28 → 28 |
+| `iowa_western` | $14,000 | **$14,860** | +$860 | 70 → 69 |
+
+**St. Edward's is the second-largest error in the campaign** behind Cal Poly: its housing and meal rates are billed PER SEMESTER, which doubles what the summary page implies, and freshmen must live on campus and may pick only meal plan A or B. **Santa Monica is the largest PROPORTIONAL error** — nearly threefold.
+
+**⚠ THE VALIDATOR CAUGHT A REAL PAGE ERROR, not just a typo.** University of Charleston's own "Total fixed charges" row reads $47,796, which is exactly tuition + housing + meals and therefore **omits its own $500 fee line**. The `FIN` invariant (`tuition + roomBoard + fees == costNum`) failed on the first run and exposed it; the stored figure is the correct $48,296. That is the third Tier-1 page found wrong **about itself** this session, after Memphis's international total and Miami Dade's COA total (which doubles only its "other expenses" row). **Reconciling components against the published total is what finds these — it is not optional arithmetic.**
+
+**Two JUCO-specific traps, both now documented:** Indian Hills' Cost of Attendance PDF is the **Iowa resident** budget — its own footnote says *"no additional adjustments were made for out-of-state tuition"* — so the itemised Internationals column on the tuition page is the right source, and its "Total Direct Costs" row there includes books and the $1,867 mandatory international health insurance, both excluded by convention. **SMC and Miami Dade have NO campus housing at all**, so their `roomBoard` is the college's own published living allowance rather than a bill; both notes say so outright, because a tuition-only figure would have made two big-city JUCOs look like the cheapest options in the guide when they are the opposite.
+
+**Final campaign tally: 47 of 53 ballparks were optimistic.** The six overstatements: `gcu` (−$8,718), `indian_hills` (−$6,660), `memphis` (−$5,575), `virginia` (−$3,864), `usf` (−$3,746), `ncstate` (−$1,617). Dashboard **"within budget" 59 → 48 of 111** — eleven schools that looked affordable were not.
 
 ---
 

@@ -89,14 +89,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 9000,
-      "tuition": 5000,
-      "roomBoard": 3000,
-      "fees": 1000,
+      "costNum": 25658,
+      "tuition": 11664,
+      "roomBoard": 13869,
+      "fees": 125,
       "maxAthletic": 0,
       "maxAcademic": 3000,
       "aidType": "need-only",
-      "internationalNote": "JUCO — minimal cost. As a CCCAA (California community college) program, Santa Monica cannot offer athletic scholarships at all — aid is need-based (the California College Promise Grant covers tuition for eligible residents) plus modest academic/foundation awards. Most affordable option to build GPA for transfer."
+      "internationalNote": "Santa Monica College F-1 international cost $25,658 (2026-27, Tier-1 verified from SMC's official International Student Tuition & Fees page for Fall 2026 - Summer 2027): non-resident tuition $486 a unit × 24 units = $11,664 + SMC health $56, Associated Students resource $20, student benefits $45 and student representation $4 = $125 in fees + SMC's published living-expenses allowance $13,869. NO credit-load assumption was needed — SMC states the basis itself (24 units across 2 semesters, the F-1 minimum of 12 a semester). ⚠ READ THE HOUSING LINE CAREFULLY: SMC has NO on-campus housing at all, so the $13,869 is NOT billed by the college — it is SMC's own 9-month living-expenses estimate based on a HOMESTAY WITH TWO MEALS A DAY, and SMC's page says a student with free room and board locally may deduct it in full. It is stored under `roomBoard` because a player still has to live somewhere and a tuition-only figure would badly understate the real outlay. Mandatory F-1 health insurance ($2,310) is excluded by convention, as are books ($1,064) and personal expenses ($4,968); SMC's own total for the year is $34,000. The previous stored $9,000 was an unresearched ballpark and understated the cost by $16,658 — nearly threefold, the largest PROPORTIONAL error in the campaign. As a CCCAA program Santa Monica cannot offer athletic scholarships at all, so this figure is very close to what is actually paid."
     },
     "culture": {
       "vibe": "Community college culture — diverse, no-nonsense, goal-oriented. Santa Monica College is famous for transfer students who are serious about getting to UCLA or another UC. The campus is workmanlike but Santa Monica itself is extraordinary.",
@@ -151,7 +151,7 @@
       "academic": 52,
       "minutes": 73,
       "lifestyle": 100,
-      "value": 67
+      "value": 54
     },
     "minutesOutlook": {
       "available": true,

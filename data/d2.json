@@ -1478,14 +1478,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 42000,
-      "tuition": 30000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 67176,
+      "tuition": 51498,
+      "roomBoard": 14778,
+      "fees": 900,
       "maxAthletic": 0.9,
       "maxAcademic": 12000,
       "aidType": "athletic+merit",
-      "internationalNote": "St. Edward's Holy Cross mission scholarship stacks with athletic. Moderate cost + strong aid = good value. Austin lifestyle premium worth it."
+      "internationalNote": "St. Edward's direct billed cost $67,176 (2026-27, Tier-1 verified from SEU Student Financial Services' official Fall 2026 & Spring 2027 rates and its 2026-27 On-Campus Housing and Meal Plan Rates table): full-time flat-rate tuition $25,749 a term = $51,498 + the comprehensive fee $450 a term = $900 + a residence hall DOUBLE $4,519 a term = $9,038 + meal plan B $2,870 a term = $5,740. New freshmen are REQUIRED to live on campus and hold a meal plan, and freshmen may choose only plan A ($3,490) or B ($2,870), so plan B is the cheapest permitted — not a free choice. Housing and meals are billed PER SEMESTER (confirmed on SEU's own rates page), which is what makes the arithmetic double what the summary page's single figures suggest. Required-unless-waived health insurance ($1,371 a semester) is excluded by convention, as are books. The comprehensive fee is SEU's consolidation of technology, printing, lab, facilities, tutoring and activity fees. The previous stored $42,000 was an unresearched ballpark and understated the cost by $25,176 — the SECOND-LARGEST error found anywhere in this campaign, behind Cal Poly. St. Edward's is a full-price Austin private, not a cheap D2."
     },
     "culture": {
       "vibe": "Small, friendly Austin campus with an artistic, creative vibe. St. Edward's sits on a hill overlooking downtown Austin — the views are stunning and you can walk to Congress Avenue. Austin's culture bleeds onto campus constantly.",
@@ -1543,7 +1543,7 @@
       "academic": 73,
       "minutes": 33,
       "lifestyle": 78,
-      "value": 40
+      "value": 32
     },
     "minutesOutlook": {
       "available": true,
@@ -2579,14 +2579,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 36000,
-      "tuition": 24000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 48296,
+      "tuition": 33990,
+      "roomBoard": 13806,
+      "fees": 500,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "UC has a growing international program. Athletic scholarship packages for D2 are strong — up to 9 equivalencies split across roster. Merit aid stacks on top. Charleston WV cost of living is very low."
+      "internationalNote": "University of Charleston direct billed cost $47,796 (2026-27, Tier-1 verified from UC's official Cost Sheet, Undergraduate Charleston Campus / Living On Campus): tuition $33,990 + housing $8,506 + meals $5,300 + comprehensive and activity fees $500 — ⚠ UC's own 'Total fixed charges' row reads $47,796, which is its tuition + housing + meals EXACTLY and therefore OMITS its own $500 fee line — a page arithmetic error, caught here by the validator's tuition+roomBoard+fees invariant. The correct direct billed figure including fees is $48,296, which is what is stored. Same class as Memphis's wrong international total: a Tier-1 page can be wrong about itself. Housing and food are based on the median of actual costs. Its headline total cost of attendance budget is $53,228, adding loan fees, books, transportation and personal expenses that this guide excludes; parking and lab fees are extra. The previous stored $36,000 was an unresearched ballpark and understated the cost by $11,796. West Virginia living costs are low and D2 athletic aid plus merit still make this competitive — but the sticker is a third higher than the guide has been showing."
     },
     "culture": {
       "vibe": "Small private university with a health sciences focus. UC has reinvested in athletics and academics since 2010. Campus is compact and community-focused — everyone knows each other. Charleston WV is the state capital, giving it a city feel disproportionate to its size.",
@@ -2640,7 +2640,7 @@
       "academic": 74,
       "minutes": 52,
       "lifestyle": 50,
-      "value": 42
+      "value": 32
     },
     "minutesOutlook": {
       "available": true,

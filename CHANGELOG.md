@@ -6,6 +6,48 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.59 (August 2026) — COA batches 4–8: 32 schools researched in one pass; **45 of 53 done, 8 left**
+
+Change Type 4 on 32 schools across five commits, one per cluster. All Tier-1, read in a real browser. **No `fitOlivier` moved anywhere** — cost has not fed the Fit Score since v37.1.
+
+| cluster | schools | headline |
+|---|---|---|
+| `$38,000` ×6 | delaware, charleston, stonybrook, keiser, gcu, memphis | splits BOTH ways — 4 badly understated, 2 overstated |
+| `$28,000` ×5 | uab, csuf, csula, charlotte, uca | all understated; UAB's value falls 15 points |
+| `$58,000`/`$72,000` ×7 | villanova, stjohns, ucdavis, chapman, providence, xavier, pittsburgh | all understated; six can't move on the value lens |
+| pairs & singletons ×14 | calpoly, denver, elon, temple, hofstra, akron, michigan, northeastern, northwestern, syracuse, setonhall, stanford, ucla, virginia | calpoly +$26,854 is the campaign record |
+
+**The five largest errors in the whole campaign, all found here:** `calpoly` +$26,854 · `delaware` +$23,634 · `denver` +$22,119 · `stjohns` +$21,758 · `ucdavis` +$21,690.
+
+**⚠ THE BIGGEST STRUCTURAL FINDING — universities price tuition BY SCHOOL/COLLEGE, and taking the headline figure is wrong five times over.** This did not appear once in batches 1–3 and then appeared in five of the fourteen schools in batches 7–8:
+- **Pittsburgh** — Exercise Science is in the School of Education ($43,328), not Health and Rehabilitation Sciences ($55,070). Wrong pick = +$11,742.
+- **Temple** — Kinesiology is College of Public Health ($43,218), $5,520 above the College of Liberal Arts figure Temple shows in the *example* on its own summary COA page.
+- **Michigan** — Movement Science is School of Kinesiology ($35,411/term); U-M's published non-resident budget is built on LSA rates and its own footnote admits it.
+- **UVA** — Kinesiology is School of Education and Human Development, priced separately from Arts & Sciences.
+- **Cal Poly** — Kinesiology is College of Science and Mathematics, $1,038 below Engineering/Architecture/Agriculture.
+
+**Runner-up finding — a fee hidden in a second table.** Cal Poly charges non-Californians a **$8,804/yr Opportunity Fee** on top of the $471/unit surcharge, in a separate "in addition to the fees above" table. Missing it is most of that school's $26,854 error.
+
+**⚠ METHOD WARNING that nearly produced wrong data.** On UNC Charlotte's page the accessibility tree returned **"$2,018"** for tuition and **"$662"** for meals — both had silently lost their leading digits ($22,018 and $5,662). The tell was that the components did not sum to the page's own published total. **Standing rule from here: reconcile components against the school's published total, and read money off a screenshot rather than the a11y tree.** The same guard caught a bad Wake Forest read (a11y said housing $12,900; the finance page's actual double-room rate is $12,372) and led to Wake Forest being deferred rather than guessed.
+
+**Traps avoided, each recorded in the school's note:** Hofstra's advertised "$66,466 tuition and fees" is the **voluntary four-year locked-in rate**, not the standard rate. UAB counts books and required health insurance inside its own "Total Direct Costs", so that row was NOT used. Memphis's COA page has a **wrong international TOTAL column** (it repeats the out-of-state totals), so the components were used instead. Xavier's billable "Day One" charge is books and is excluded — which lands the figure exactly on the $69,760 Xavier itself quotes.
+
+**Schools that confirm the direct-billed convention in their own words are now ELEVEN** — Stony Brook `Total Direct Costs`, Delaware `BILLABLE ACADEMIC YEAR TOTAL`, Denver `Billable Costs` subtotal, Elon's published `Total`, Northwestern's `Direct Costs charged by Northwestern`, UVA's `Subtotal`, plus Monmouth/FAU/USF/UConn/PBA from earlier batches.
+
+**Where credit-load assumptions were needed, the note says whose they are.** CSUF (13 units/semester), Cal Poly ("30u @ $471/unit"), UCA (30 hours, reconciling exactly with its own "add $9,010" note), USF (28 hours) all publish their own basis. **`csula` remains the ONE derived figure in the campaign** and is labelled as such.
+
+**Two schools carry an explicit vintage warning.** `keiser` publishes nothing newer than a **Fall 2023** disclosure (its public College Financing Plan is from 2018-19), so its $51,898 is stored as a disclosed FLOOR. `michiganstate` (v44.58) is on 2025-26 for the same reason.
+
+**Bias update: 40 of 45 corrections were optimistic.** Only five schools were OVERstated by their ballpark — `gcu` (−$8,718), `memphis` (−$5,575), `virginia` (−$3,864), `usf` (−$3,746) and `ncstate` (−$1,617). GCU — a private with campus tuition frozen at $16,500 since 2009 — is now the cheapest four-year school in the guide; Northwestern at $96,003 is the most expensive, ahead of Princeton.
+
+Dashboard **"within budget" moves 59 → 49 of 111** across v44.58–v44.59. That is the campaign working: ten schools that looked affordable were not.
+
+Gates: `validate_consistency.js` **Issues: 0** after every batch; the `tuition + roomBoard + fees = costNum` invariant and the value-lens formula re-derived for all 32; local preview 111 cards, 0 NaN, 114/114 images, every touched Fit score held.
+
+**Remaining: 8** — `wakeforest` (deferred *within* this session: its COA itemisation does not render in the DOM and its meal-plan rates are not published, so it was left rather than guessed), `stedwards`, `uc_charleston`, and the five JUCOs `smc`, `miami_dade`, `iowa_western`, `daytona_state`, `indian_hills`.
+
+---
+
 ### v44.58 (August 2026) — COA batch 3: the `$52,000` cluster is cleared and all three blocked schools are unblocked — two of the blockers did not exist
 
 Change Type 4 on seven schools. All Tier-1, read in a real browser from each school's own cost page. **No `fitOlivier` moved** (correct — cost has not fed the Fit Score since v37.1); only `lensScores.value` can move, and for the four `$52,000` schools it provably cannot, because they were sitting *exactly* on the budget and their affordability term was already 0.

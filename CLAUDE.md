@@ -1185,7 +1185,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v44.58 (August 2026).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v44.59 (August 2026).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 **Version history is NOT kept in this file.** Every version from v35 onward has a full entry in **CHANGELOG.md**, newest first and in more detail than any summary here ever carried. Phase 8 appends there, never here. This section holds two things only: the current state snapshot, and the open-items list.
 
@@ -1259,26 +1259,30 @@ Campaign plan and session-by-session detail live in the `roster_refresh_campaign
 
 #### D2. COA campaign — UNFINISHED since v33.1, restarted v44.56
 
-**🚩 40 of 111 schools still carry the "ballpark" cost figures the v31–v33.1 COA passes were meant to replace** (down from 53; 13 done across v44.56–v44.58). **Nothing is blocked — all three held schools were cleared in v44.58, and two of the three blockers turned out not to exist.**
+**🚩 8 of 111 schools still carry the "ballpark" cost figures the v31–v33.1 COA passes were meant to replace** (down from 53; **45 done across v44.56–v44.59**). Nothing is blocked.
 
-**Remaining worklist, re-derived from the data files at v44.58 — treat the clusters as the running order:**
+**Remaining worklist, re-derived from the data files at v44.59:**
 
-| cluster | n | schools |
+| school | stored ballpark | note |
 |---|---|---|
-| `$38,000` | 6 | charleston · delaware · gcu · keiser · memphis · stonybrook |
-| `$28,000` | 5 | charlotte · csuf · csula · uab · uca |
-| `$58,000` | 4 | pittsburgh · stjohns · ucdavis · xavier |
-| `$72,000` | 3 | chapman · providence · villanova |
-| `$32,000` ·`$42,000` ·`$62,000` ·`$68,000` ·`$78,000` ·`$82,000` | 2 each | akron/calpoly · stedwards/temple · denver/hofstra · michigan/setonhall · northeastern/syracuse · northwestern/virginia |
-| singletons | 10 | smc · miami_dade · iowa_western · daytona_state · indian_hills · uc_charleston · elon · ucla · stanford · wakeforest |
+| `wakeforest` | $91,000 | **deferred, not missed** — its COA itemisation does not render in the DOM (the table body is empty) and its meal-plan rates are not published on any page found. Tuition $71,894 and the standard-double room $12,372 ARE confirmed from `finance.wfu.edu`; only the food line is missing. Finish via the Academic Bulletin or by asking Deacon Dining. |
+| `stedwards` | $42,000 | D2, private, Austin TX |
+| `uc_charleston` | $36,000 | D2, private, Charleston WV |
+| `smc` · `miami_dade` · `iowa_western` · `daytona_state` · `indian_hills` | $9k–$21k | the five JUCOs; expect per-credit rates and out-of-district/international tiers |
 
-**⚠ THE LESSON FROM v44.58 — two of the three "blockers" were reading errors, not data gaps.** v44.56 recorded that FAU and USF publish *only* a per-credit-hour non-resident rate, and that an annual figure would need a fabricated credit-load assumption the owner had to rule on. **Both schools publish a complete non-resident full-time budget on that very page**, behind an accordion that had not been expanded — FAU's `ESTIMATED DIRECT COSTS` row and USF's `Total Billable Expenses` row. The per-credit table sat directly above and was mistaken for the whole page. **Expand every accordion/tab before recording an absence** — this is the same family as §15's "a 403 is a NETWORK verdict, never a DATA verdict". Barry's consent gate was real; `Reject All` cleared it and no consent was accepted.
+#### ⚠ The three lessons that cost the most, in order of how often they bit
+
+1. **UNIVERSITIES PRICE TUITION BY SCHOOL/COLLEGE — check where the stored `degreeTitle` actually lives before taking a headline number.** Five hits in one session: **Pittsburgh** (Exercise Science is School of Education $43,328, *not* Health & Rehabilitation Sciences $55,070 — a $11,742 swing), **Temple** (Kinesiology is College of Public Health, $5,520 above the Liberal Arts figure Temple uses in its own summary example), **Michigan** (Movement Science is School of Kinesiology; U-M's published budget is LSA-based and its footnote says so), **UVA** (School of Education and Human Development), **Cal Poly** (College of Science and Mathematics).
+2. **THE ACCESSIBILITY TREE SILENTLY TRUNCATES LEADING DIGITS ON MONEY.** UNC Charlotte returned `$2,018` for a $22,018 tuition and `$662` for $5,662 of meals. **Always reconcile the components against the school's own published total, and read figures off a SCREENSHOT, not `read_page`/`find`.** The same guard caught a wrong Wake Forest housing figure and is why Wake Forest was deferred instead of guessed.
+3. **AN UNEXPANDED ACCORDION IS NOT EVIDENCE OF ABSENCE (v44.58).** FAU and USF were both recorded as publishing only a per-credit-hour rate needing an owner ruling on credit load; both publish a full non-resident budget on the same page, one click away. Same family as §15's "a 403 is a NETWORK verdict, never a DATA verdict". Barry's consent gate was real; `Reject All` cleared it and no consent was accepted.
+
+**Other traps worth re-reading before the last 8:** a school's own "direct costs" row may include things this guide excludes (**UAB** counts books and required health insurance; **Xavier** and **Villanova** count books). An advertised tuition figure may be an *optional* product (**Hofstra**'s $66,466 is the voluntary four-year locked-in rate). A fee can hide in a second table (**Cal Poly**'s $8,804 non-resident Opportunity Fee). A Tier-1 page can be wrong about ITSELF (**Memphis**'s international TOTAL column repeats the out-of-state totals). Where a credit load is unavoidable, use the school's OWN published basis and say so — CSUF 13 units/sem, Cal Poly "30u @ $471/unit", UCA 30 hours, USF 28 hours. **`csula` is the only DERIVED figure in the campaign and is labelled as such in its note.** **`keiser` and `michiganstate` carry explicit vintage warnings** (newest published data is 2023-24 and 2025-26 respectively).
 
 **Origin.** Four commits (`7ee5a4b`, `8296450` v31, `b8166d3` v33, `0ebe6b2` v33.1) explicitly corrected `costNum` *"from ballpark to verified 2025-26 COA"* — and then stopped after roughly **17 schools**. (17 is a **lower bound**: it comes from scanning each commit's diff for the nearest preceding `"id"`, so treat it as approximate.) 53 were left behind.
 
 **How to spot the unresearched ones — they announce themselves.** A ballpark record has *round* components summing to a round total (`clemson` was 38,000 + 12,000 + 2,000 = 52,000; `pba` was 26,000 + 10,000 + 2,000 = 38,000, and `fees: 2000` is a shared placeholder). A researched one does not (`duke` 73,740 + 22,029 + 7,411 = 103,180). The split opened at **53 round vs 53 exact** plus 2 zeroed service academies; at v44.58 it is **40 round vs 69 exact**.
 
-**✅ CLEARED — all 10 SHORTLISTED schools and the whole `$52,000` cluster are now researched.** Every one of the 13 was wrong.
+**✅ CLEARED — all 10 SHORTLISTED schools and the whole `$52,000` cluster are now researched (v44.56–58); the biggest remaining clusters followed in v44.59.** The 13 schools below are the shortlist + `$52,000` set; every one was wrong. Full per-school detail for all 45 is in CHANGELOG.md v44.56–v44.59.
 
   | school | stored | actual | gap | value lens |
   |---|---|---|---|---|

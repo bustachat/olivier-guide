@@ -874,14 +874,14 @@
     "soccerLevel": "AAC — Competitive",
     "cost": "~$38k/yr",
     "fin": {
-      "costNum": 38000,
-      "tuition": 25000,
-      "roomBoard": 11000,
-      "fees": 2000,
+      "costNum": 32425,
+      "tuition": 20664,
+      "roomBoard": 11761,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic",
-      "internationalNote": "Memphis out-of-state COA is ~$38k/yr (2025-26) — affordable for a D1 program. Athletic scholarship can cover 40–65% of COA. Merit aid available for international students. Memphis has very low cost of living — net cost is manageable."
+      "internationalNote": "Memphis INTERNATIONAL direct billed cost $32,425 (2025-26, Tier-1 verified from Memphis's official Financial Aid Cost of Attendance table, undergraduate / International / On Campus): tuition and fees $20,664 + housing and food $11,761. Memphis publishes a distinct international rate ($20,664) above its out-of-state rate ($15,960), with tuition and fees COMBINED in a single column — so the combined figure is stored under `tuition` and `fees` is 0; the sum invariant still holds. ⚠ The page's own international TOTAL column is WRONG: it repeats the out-of-state totals ($35,240) instead of summing the international components (which give $39,944). The components were used, not the total — a Tier-1 page can still err about itself. The previous stored $38,000 was an unresearched ballpark and OVERstated the cost by $5,575. Athletic scholarship can cover 40–65% of COA. Merit aid available for international students. Memphis has very low cost of living — net cost is manageable."
     },
     "aid": "Athletic",
     "size": 22000,
@@ -901,7 +901,7 @@
       "academic": 48,
       "minutes": 48,
       "lifestyle": 80,
-      "value": 49
+      "value": 53
     },
     "confRecord": [
       {

@@ -4431,10 +4431,6 @@
         "bg": "Full-time assistant."
       }
     ],
-    "contact": {
-      "email": null,
-      "phone": null
-    },
     "url": "https://butlersports.com/sports/mens-soccer",
     "color": [
       "#fef9c3",
@@ -4442,7 +4438,11 @@
     ],
     "licence": null,
     "overallScoreNote": "butlersports.com bio: first-year Butler HC (hired Nov 2025), no head-coaching record. Strong assistant pedigree — Creighton 5 yrs (2022 College Cup, McGuire's Hermann season), Colorado Rapids MLS assistant, Wisconsin/Santa Clara, LA Galaxy academy; son of ex-USMNT manager Dave Sarachan. HOLD 58 (mid-solid: real pedigree, unproven as a HC).",
-    "title": "Head Coach"
+    "title": "Head Coach",
+    "contact": {
+      "email": "isarachan@butler.edu",
+      "phone": null
+    }
   },
   {
     "id": "hc_ucsd",

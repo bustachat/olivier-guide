@@ -6,6 +6,930 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.61 (August 2026) — the last two prose-parsing card stats are fixed: `soccerLevelShort` + `prePTShort`
+
+Closes §6 group A. The card's **"Soccer Level"** and **"Pre-PT Path"** stats were produced by `u.soccerLevel.split('—')[0]` and `u.prePT.split('—')[0]` — free prose sliced at the first em-dash, so the stat showed whatever happened to sit in front of it. Same defect class as the Max Aid tile (v44.50) and the `Target: Notre` GPA bug (v44.53), and fixed the same way: **short authored fields read directly**, never by reshaping copy to please a parser.
+
+**⚠ Both counts in §6 were LOW — measured, not trusted.** §6 said 6 schools for Soccer Level and 2 for Pre-PT. The real figures are **7 and 4**:
+
+| stat | school | rendered before | now |
+|---|---|---|---|
+| Soccer Level | `denver` | `Summit League (2025), moving to West Coast Conference (2026)` (60 chars in a compact slot) | `Summit → WCC 2026` |
+| | `mercyhurst` | `D1` | `NEC` |
+| | `georgian_court` | `D2` | `CACC` |
+| | `columbia_college` | `NAIA` | `AMC` |
+| | `northeast_cc` | `JUCO` | `NJCAA Division II` |
+| | `monroe_college` | `JUCO` | `NJCAA Division I` |
+| | `indian_hills` | `JUCO` | `NJCAA Division I` |
+| Pre-PT Path | `chapman` | `Excellent (KIN 405 Pre-PT Prep required)` | `Excellent` |
+| | `keiser` | `Strong (clinical simulation labs)` | `Strong` |
+| | `princeton`, `yale` | `Strong via science pathway` | `Strong` |
+
+The bare-token cases were the worst of it: a stat labelled *Soccer Level* that read `D1` or `JUCO` told the reader nothing the card did not already show, on exactly the schools where the level is least obvious. `miami_dade` was deliberately left as `NJCAA` — terse, but a real league name rather than a division token, and its NJCAA division is not published on its own athletics site (checked 2026-08-07).
+
+**The other 101 schools are byte-identical to what they rendered before.** The migration derived each default from the existing parse, so only the 11 broken values moved. Line-level insert, not a JSON round-trip (the v44.32 lesson), with each file re-parsed and diffed key-by-key before writing.
+
+**`prePTShort` is ENUM-LOCKED** to the eight values already in use — Outstanding · Excellent · Very Strong · Strong · Good · Foundation · Poor · Transfer Pathway. It is a real ordinal scale, and free text there would quietly reintroduce the overflow. Qualifiers belong in the long `prePT` field, which still renders in full in the Compare table, the school modal and the DPT-pathway paragraph.
+
+**New `SHORTFIELDS` check, four halves, all negative-tested** (clean baseline silent, each mutation fires): both fields present, `soccerLevelShort` ≤24 chars, `prePTShort` on the scale, and a comment-stripped grep of **both** `js/app.js` and `js/dashboard.js` for `soccerLevel.split(` / `prePT.split(`. Without the code half the data would stay valid while someone rewired the renderer back.
+
+**📌 Consequence worth recording: the long `soccerLevel` string now has NO renderer consumer at all** — the same outcome as `conferences.json.scholarships` after v44.50. It is stored reference data. Note this also makes the long-deferred UX-D1 *formatting* question moot for display purposes: the inconsistent `"JUCO — NJCAA Division X"` vs `"NJCAA Division X — Region"` shapes no longer reach the UI. **The owner's deferral stands — nothing was reformatted.**
+
+Gates: `validate_consistency.js` **Issues: 0**, `validate_schools.py` **PASS** (17 pre-existing warnings; both new fields added to `FULL_REQUIRED_FIELDS`), local preview 111 cards / 0 NaN / 0 "undefined" / 114-of-114 images, all 11 fixed values confirmed on their cards, three control schools unchanged, and the Dashboard hover panel confirmed on `chapman`/`keiser`/`princeton`.
+
+---
+
+### v44.60 (August 2026) — the two dead cost display fields are DELETED, and the last two estimated costs are now sourced
+
+**Two jobs, both closing out the v44.56–v44.59 cost campaign.**
+
+**1. `u.cost` and `fin.cost` deleted — 116 lines across 10 data files.** Every school carried a free-text display string like `"~$52k/yr"`, and 5 also had a `fin.cost`. **Nothing rendered either of them**: `costDisplay()` fell back to `u.cost` only when `costNum` was undefined, which never happened on any of the 111, and `fin.cost` had no reader at all.
+
+**Because nothing read them, they drifted — and this session made it acute.** After the cost campaign corrected 53 `costNum` values, **50 of 111 display strings were more than $4,000 out**: `stjohns` said "~$58k" against $79,758, `temple` "~$42k" against $62,854, `uab` "~$28k" against $46,700. `tulsa` carried **three different costs** — `u.cost` "~$45k", `fin.cost` "~$70k", `costNum` $77,346. Updating them was rejected: §3a Type 4 already says never to hand-edit the display string, so a field that must never be edited and is never read should not exist. Same silent-drift class as `coaches.json.url`.
+
+Deletion was **line-level, not a JSON round-trip**, to preserve CRLF and key order (the v44.32 migration lesson), and each file was re-parsed and diffed key-by-key against its original before being written. `validate_schools.py` drops `cost` from `FULL_REQUIRED_FIELDS`; `costDisplay()` now returns `'—'` in the unreachable branch.
+
+**New `COSTSTR` check, in two halves — the second is what makes it durable.** The data half fails if any school reintroduces `u.cost`/`fin.cost`; the code half greps `js/app.js` for `u.cost`, because the data check alone would pass while someone restored the renderer fallback. Same code-shape guard `MAXAID` and `CHIPS` needed.
+
+**⚠ The negative test caught a bug in the check itself — and it is a reusable one.** The clean baseline fired, because the regex was matching **the explanatory comment above the check**. A rule about what the *code* does must not be tripped by the comment that explains the rule. Fixed by hoisting the existing `deComment()` helper (previously defined below, for `PROSE`) above both consumers. Re-tested: clean = 0 issues, data mutation fires, code mutation fires.
+
+**2. `ucirvine` and `ocu` — the last two costs §6 had flagged as estimates since v38.** Both were non-round so they escaped the campaign's ballpark test, but neither was sourced.
+
+| school | stored | actual | gap | value |
+|---|---|---|---|---|
+| `ocu` | $56,720 | **$49,662** | **−$7,058** | 30 → 32 |
+| `ucirvine` | $81,292 | **$80,203** | −$1,089 | 35 → 35 |
+
+Both were **overstated**, taking the campaign's overstatement count to eight. UCI is stored on the same basis as UCSB, UCLA and UC Davis (systemwide $15,588 + non-resident $39,270 + housing/food + campus fees); its `roomBoard` was the flagged round $19,500 and is now $20,926. OCU's $49,662 is exactly its own **"Total Billable Costs"** row — the thirteenth school to confirm the direct-billed convention in its own words — with health insurance, books and transport excluded as OCU itself classes them discretionary. **Every cost in the guide is now Tier-1 sourced; no estimates remain.**
+
+Gates: `validate_consistency.js` **Issues: 0**, `validate_schools.py` **PASS** (17 pre-existing warnings), local preview 111 cards / 0 NaN / **0 "undefined"** / 114-of-114 images, service academies still render "Fully funded". Dashboard "within budget" 48 → **49 of 111** (OCU crosses back under).
+
+---
+
+### v44.59 (August 2026) — COA batches 4–10: **the cost-of-attendance campaign is COMPLETE.** 40 schools in one session; 53 of 53 ballparks replaced
+
+Change Type 4 on **40 schools across seven commits**, one per cluster. All Tier-1, read in a real browser. **No `fitOlivier` moved anywhere** — cost has not fed the Fit Score since v37.1. Together with v44.56–v44.58 this closes the pass abandoned at v33.1: **every one of the 111 schools now carries a researched, sourced `costNum`.**
+
+| cluster | schools | headline |
+|---|---|---|
+| `$38,000` ×6 | delaware, charleston, stonybrook, keiser, gcu, memphis | splits BOTH ways — 4 badly understated, 2 overstated |
+| `$28,000` ×5 | uab, csuf, csula, charlotte, uca | all understated; UAB's value falls 15 points |
+| `$58,000`/`$72,000` ×7 | villanova, stjohns, ucdavis, chapman, providence, xavier, pittsburgh | all understated; six can't move on the value lens |
+| pairs & singletons ×14 | calpoly, denver, elon, temple, hofstra, akron, michigan, northeastern, northwestern, syracuse, setonhall, stanford, ucla, virginia | calpoly +$26,854 is the campaign record |
+
+**The five largest errors in the whole campaign, all found here:** `calpoly` +$26,854 · `delaware` +$23,634 · `denver` +$22,119 · `stjohns` +$21,758 · `ucdavis` +$21,690.
+
+**⚠ THE BIGGEST STRUCTURAL FINDING — universities price tuition BY SCHOOL/COLLEGE, and taking the headline figure is wrong five times over.** This did not appear once in batches 1–3 and then appeared in five of the fourteen schools in batches 7–8:
+- **Pittsburgh** — Exercise Science is in the School of Education ($43,328), not Health and Rehabilitation Sciences ($55,070). Wrong pick = +$11,742.
+- **Temple** — Kinesiology is College of Public Health ($43,218), $5,520 above the College of Liberal Arts figure Temple shows in the *example* on its own summary COA page.
+- **Michigan** — Movement Science is School of Kinesiology ($35,411/term); U-M's published non-resident budget is built on LSA rates and its own footnote admits it.
+- **UVA** — Kinesiology is School of Education and Human Development, priced separately from Arts & Sciences.
+- **Cal Poly** — Kinesiology is College of Science and Mathematics, $1,038 below Engineering/Architecture/Agriculture.
+
+**Runner-up finding — a fee hidden in a second table.** Cal Poly charges non-Californians a **$8,804/yr Opportunity Fee** on top of the $471/unit surcharge, in a separate "in addition to the fees above" table. Missing it is most of that school's $26,854 error.
+
+**⚠ METHOD WARNING that nearly produced wrong data.** On UNC Charlotte's page the accessibility tree returned **"$2,018"** for tuition and **"$662"** for meals — both had silently lost their leading digits ($22,018 and $5,662). The tell was that the components did not sum to the page's own published total. **Standing rule from here: reconcile components against the school's published total, and read money off a screenshot rather than the a11y tree.** The same guard caught a bad Wake Forest read (a11y said housing $12,900; the finance page's actual double-room rate is $12,372) and led to Wake Forest being deferred rather than guessed.
+
+**Traps avoided, each recorded in the school's note:** Hofstra's advertised "$66,466 tuition and fees" is the **voluntary four-year locked-in rate**, not the standard rate. UAB counts books and required health insurance inside its own "Total Direct Costs", so that row was NOT used. Memphis's COA page has a **wrong international TOTAL column** (it repeats the out-of-state totals), so the components were used instead. Xavier's billable "Day One" charge is books and is excluded — which lands the figure exactly on the $69,760 Xavier itself quotes.
+
+**Schools that confirm the direct-billed convention in their own words are now ELEVEN** — Stony Brook `Total Direct Costs`, Delaware `BILLABLE ACADEMIC YEAR TOTAL`, Denver `Billable Costs` subtotal, Elon's published `Total`, Northwestern's `Direct Costs charged by Northwestern`, UVA's `Subtotal`, plus Monmouth/FAU/USF/UConn/PBA from earlier batches.
+
+**Where credit-load assumptions were needed, the note says whose they are.** CSUF (13 units/semester), Cal Poly ("30u @ $471/unit"), UCA (30 hours, reconciling exactly with its own "add $9,010" note), USF (28 hours) all publish their own basis. **`csula` remains the ONE derived figure in the campaign** and is labelled as such.
+
+**Two schools carry an explicit vintage warning.** `keiser` publishes nothing newer than a **Fall 2023** disclosure (its public College Financing Plan is from 2018-19), so its $51,898 is stored as a disclosed FLOOR. `michiganstate` (v44.58) is on 2025-26 for the same reason.
+
+**Bias update: 40 of 45 corrections were optimistic.** Only five schools were OVERstated by their ballpark — `gcu` (−$8,718), `memphis` (−$5,575), `virginia` (−$3,864), `usf` (−$3,746) and `ncstate` (−$1,617). GCU — a private with campus tuition frozen at $16,500 since 2009 — is now the cheapest four-year school in the guide; Northwestern at $96,003 is the most expensive, ahead of Princeton.
+
+Dashboard **"within budget" moves 59 → 49 of 111** across v44.58–v44.59. That is the campaign working: ten schools that looked affordable were not.
+
+Gates: `validate_consistency.js` **Issues: 0** after every batch; the `tuition + roomBoard + fees = costNum` invariant and the value-lens formula re-derived for all 32; local preview 111 cards, 0 NaN, 114/114 images, every touched Fit score held.
+
+**Batches 9–10 finished the last 8 and the campaign is COMPLETE** — **zero round-number `costNum` values remain**: 109 exact + 2 zeroed service academies = 111.
+
+| school | stored | actual | gap | value |
+|---|---|---|---|---|
+| `stedwards` | $42,000 | **$67,176** | **+$25,176** | 40 → 32 |
+| `smc` | $9,000 | **$25,658** | +$16,658 | 67 → 54 |
+| `miami_dade` | $11,000 | **$27,812** | +$16,812 | 69 → 57 |
+| `uc_charleston` | $36,000 | **$48,296** | +$12,296 | 42 → 32 |
+| `daytona_state` | $16,000 | **$23,777** | +$7,777 | 68 → 63 |
+| `indian_hills` | $21,000 | **$14,340** | **−$6,660** | 53 → 58 |
+| `wakeforest` | $91,000 | **$92,938** | +$1,938 | 28 → 28 |
+| `iowa_western` | $14,000 | **$14,860** | +$860 | 70 → 69 |
+
+**St. Edward's is the second-largest error in the campaign** behind Cal Poly: its housing and meal rates are billed PER SEMESTER, which doubles what the summary page implies, and freshmen must live on campus and may pick only meal plan A or B. **Santa Monica is the largest PROPORTIONAL error** — nearly threefold.
+
+**⚠ THE VALIDATOR CAUGHT A REAL PAGE ERROR, not just a typo.** University of Charleston's own "Total fixed charges" row reads $47,796, which is exactly tuition + housing + meals and therefore **omits its own $500 fee line**. The `FIN` invariant (`tuition + roomBoard + fees == costNum`) failed on the first run and exposed it; the stored figure is the correct $48,296. That is the third Tier-1 page found wrong **about itself** this session, after Memphis's international total and Miami Dade's COA total (which doubles only its "other expenses" row). **Reconciling components against the published total is what finds these — it is not optional arithmetic.**
+
+**Two JUCO-specific traps, both now documented:** Indian Hills' Cost of Attendance PDF is the **Iowa resident** budget — its own footnote says *"no additional adjustments were made for out-of-state tuition"* — so the itemised Internationals column on the tuition page is the right source, and its "Total Direct Costs" row there includes books and the $1,867 mandatory international health insurance, both excluded by convention. **SMC and Miami Dade have NO campus housing at all**, so their `roomBoard` is the college's own published living allowance rather than a bill; both notes say so outright, because a tuition-only figure would have made two big-city JUCOs look like the cheapest options in the guide when they are the opposite.
+
+**Final campaign tally: 47 of 53 ballparks were optimistic.** The six overstatements: `gcu` (−$8,718), `indian_hills` (−$6,660), `memphis` (−$5,575), `virginia` (−$3,864), `usf` (−$3,746), `ncstate` (−$1,617). Dashboard **"within budget" 59 → 48 of 111** — eleven schools that looked affordable were not.
+
+---
+
+### v44.58 (August 2026) — COA batch 3: the `$52,000` cluster is cleared and all three blocked schools are unblocked — two of the blockers did not exist
+
+Change Type 4 on seven schools. All Tier-1, read in a real browser from each school's own cost page. **No `fitOlivier` moved** (correct — cost has not fed the Fit Score since v37.1); only `lensScores.value` can move, and for the four `$52,000` schools it provably cannot, because they were sitting *exactly* on the budget and their affordability term was already 0.
+
+| school | stored | actual | gap | value |
+|---|---|---|---|---|
+| `monmouth` | $52,000 | **$69,662** | **+$17,662** | 19 → 19 |
+| `washington` | $52,000 | **$65,114** | +$13,114 | 30 → 30 |
+| `ohiostate` | $52,000 | **$63,004** | +$11,004 | 30 → 30 |
+| `michiganstate` | $52,000 | **$59,701** | +$7,701 | 22 → 22 |
+| `fau` | $32,000 | **$38,720** | +$6,720 | **47 → 41** |
+| `barry` | $44,000 | **$50,310** | +$6,310 | **44 → 39** |
+| `usf` | $38,000 | **$34,254** | **−$3,746** | **46 → 48** |
+
+**The `$52,000` placeholder cluster is now fully researched** (`ncstate`, `clemson`, `uconn` in v44.56–57; these four here). Every one of the seven was a ballpark, and every one was wrong — by between $1,617 and $17,662.
+
+**⚠ The most important finding is that TWO OF THE THREE BLOCKERS WERE NOT REAL.** Both were recorded as genuine data gaps and both dissolved on a real-browser read:
+
+- **The Florida-publics credit-load blocker never existed.** v44.56 concluded that FAU "publishes no non-resident COA budget table — only a Florida-*resident* budget plus a non-resident **per-credit-hour** rate ($799.72)", and that deriving an annual figure would need a fabricated 30-credit assumption. **FAU publishes a complete non-resident nine-month budget on that same page**, behind a *Non-Florida Residents* accordion, with an explicit `ESTIMATED DIRECT COSTS: Payable To FAU And Reflected On Student's Bill` row of **$38,720**. The per-credit table sits directly above it and was mistaken for the whole page. **USF is the same** — a `Total Billable Expenses` row of **$34,254**. No assumption was needed at either school, and the owner decision that was being waited on was never required. *Lesson: an accordion or tab that has not been expanded is not evidence that the data is absent — the same failure mode as reading a 403 as a data verdict (§15).*
+- **Barry's cookie gate is real but yields to `Reject All`.** The page renders in full the moment the banner is dismissed with the privacy-preserving option; no consent was accepted. Barry publishes no COA budget, so `roomBoard` is built from its own rate tables, and the note states the assumption outright: the **standard double with shared bath** at $3,940/semester (the most widely published double rate, in 5 of its 11 halls) plus the mandatory residential meal plan at $2,915/semester. Doubles span $3,570–$4,560 and singles $4,900–$5,600, so a single would add roughly $2,400–$3,300 a year — stated in the note rather than hidden in the number.
+
+**`usf` is the first genuinely CHEAPER correction in the campaign** ($3,746 below the ballpark) and the second overstatement after `ncstate`. It also carries the campaign's clearest credit-load disclosure: USF's own tuition line is built on **its own** stated standard load of 28 credit hours a year (14 per semester), not on an assumption made here — a student carrying 30 would pay somewhat more. The note says so.
+
+**Three schools confirm the direct-billed convention in the school's own words** — Monmouth's `Direct Cost (Billed by MU)` = $69,662, FAU's `Estimated Direct Costs` = $38,720, USF's `Total Billable Expenses` = $34,254, each matching `tuition + roomBoard + fees` exactly. That is now five such confirmations (with UConn's `Subtotal Direct Costs` and PBA's published total).
+
+Two schools publish tuition and fees **combined** (`ohiostate`, and both Florida publics), so the combined figure is stored under `tuition` with `fees: 0`, per the NC State convention. Michigan State is the one school stored on **2025-26** rather than 2026-27: it has published a Fall 2026/Spring 2027 non-resident flat tuition ($45,040, +$740) but has not yet reissued the COA budget, and a mixed-year total would be worse than a coherent older one — the note records both.
+
+Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings; local preview 111 cards, 0 NaN, 114/114 images, every touched Fit score held. Dashboard "within budget" count moves 59 → **55 of 111**, which is the campaign working as intended.
+
+**Remaining: 40 of 53.** Next clusters per §6 D2: `$38,000` ×6 (memphis, charleston, stonybrook, gcu, delaware, keiser), `$28,000` ×5, `$58,000` ×4, `$32,000` ×2, `$72,000` ×3.
+
+---
+
+### v44.57 (August 2026) — COA batch 1: three more shortlisted schools researched, and every ballpark was understated
+
+Change Type 4 on `ucsb`, `pba`, `lynn` — all Tier-1 from each school's own **2026-27** cost page, read in a real browser. `fitOlivier` moved for none of them (correct: cost has not fed the Fit Score since v37.1); only `lensScores.value` moves.
+
+| school | stored | actual | gap | value |
+|---|---|---|---|---|
+| `pba` | $38,000 | **$60,300** | **+$22,300** | **48 → 37** |
+| `lynn` | $47,000 | **$64,400** | +$17,400 | 36 → 32 |
+| `ucsb` | $66,000 | **$80,928** | +$14,928 | 37 → 38 |
+| `clemson` (v44.56) | $52,000 | **$58,732** | +$6,732 | 40 → 40 |
+
+**The bias is systematic: all four ballparks were optimistic.** The one that matters is **PBA** — it presented as the best-value shortlisted school at $38,000 and is actually $60,300, dropping 11 points on the Value lens. Two of the three sums land exactly on the school's own published total (PBA states $60,300; Lynn states $64,400), which is a strong check that the guide's direct-billed convention matches how these schools bill.
+
+`ucsb` also quietly corrected a **1-point value drift** (stored 37, formula 38) that had been sitting inside the `VALUE` check's ±1 tolerance.
+
+**Deferred, not guessed — `barry`.** Its tuition page renders only 723 characters behind a cookie-consent overlay. Accepting a consent banner is not something to do unprompted, so it was left for the owner or a later pass. **`usf` and `fau` remain blocked** on the Florida-publics credit-load question from v44.56.
+
+Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings.
+
+---
+
+### v44.56 (August 2026) — the COA campaign restarts: it was abandoned at v33.1 with 53 schools still on "ballpark" figures
+
+Owner spotted that the cost chips looked wrong. They were — but not for the reason either of us first guessed.
+
+**The wrong hypothesis, ruled out first:** that the chips read a stale field while the bars read a fresh one. They don't — the Financial Model chips (`js/app.js:2848`), the cost rows (`:2959`) and the comparison bars (`:3009`) all read the **same** `u.fin.costNum`. No renderer is stale.
+
+**What actually happened is in the history.** Four commits — `7ee5a4b`, `8296450` (v31), `b8166d3` (v33), `0ebe6b2` (v33.1) — corrected `costNum` *"from ballpark to verified 2025-26 COA"*, reached roughly **17 schools**, and stopped. **53 of 111 still carry the ballpark figures**, and they announce themselves: round components summing to a round total (`clemson` 38,000 + 12,000 + 2,000 = 52,000; `pba` 26,000 + 10,000 + 2,000 = 38,000, sharing a `fees: 2000` placeholder) against a researched record like `duke` (73,740 + 22,029 + 7,411 = 103,180). Exactly **53 round vs 53 exact**, plus the 2 zeroed service academies.
+
+**Where the damage is concentrated:**
+- **7 of the 10 shortlisted schools are ballpark** — pba, lynn, ucsb, usf, barry, clemson, fau.
+- **The `$52,000` cluster is literally the athlete's budget** (ncstate, clemson, uconn, michiganstate, ohiostate, washington, monmouth) — a placeholder that lands exactly on the affordability cliff. Other clusters: $38,000 ×8, $28,000 ×5, $58,000 ×4.
+- **40 of the 53 are D1** — the most expensive schools are the least researched.
+
+**No validator can see it:** `costNum` reconciles with `tuition + roomBoard + fees` for all 111, because the components were estimated together. Internal consistency is not accuracy.
+
+#### First school done — Clemson, and it moved
+
+Tier-1 from Clemson's own Estimated Cost of Attendance table, and better than the old pass's vintage: the **2026-27** figures are published. Non-South-Carolina resident, on/off campus — tuition **$42,020**, fees **$1,832**, housing $9,304 + food $5,576 = roomBoard **$14,880** ⇒ `costNum` **$58,732**, against a stored $52,000 that understated it by ~$6.7k. `lensScores.value` holds at 40 (Clemson was already at/over budget, so affordability was 0 before and after) and no other score moves.
+
+#### Two rules locked so the remaining 52 stay consistent
+
+- **`costNum` = `tuition + roomBoard + fees` = DIRECT BILLED COST.** It excludes books, transport, personal and loan fees, so a school's headline COA is usually higher — Clemson publishes **$66,180** where the guide stores **$58,732**. The headline figure now goes in `internationalNote` so the gap is visible and nobody re-opens it.
+- **§3a Type 4's cascade table was STALE and is corrected.** It claimed *"Cost = 20% of fitOlivier — recalculate"*. False since **v37.1**, which removed cost from the Fit Score entirely; `js/scores.js` contains no reference to `costNum` or `affordability`. **A cost change moves `lensScores.value` and nothing else.** Left uncorrected it would have had this campaign needlessly recomputing 53 schools' Fit scores.
+
+#### Blocking wrinkle for the Florida publics — decide before touching them
+
+Clemson publishes a clean non-resident budget table. **FAU does not**: a Florida-*resident* budget plus a non-resident **per-credit-hour** rate ($799.72) with tuition and fees combined, so an annual figure requires assuming a credit load — the exact fabricated precision this campaign exists to remove. `fiu` and `usf` are likely the same. **Not guessed; logged for an owner decision on the credit-load rule.**
+
+Also logged: **two dead cost fields**. `u.cost` (all 111) is referenced once as a fallback that can never fire; `fin.cost` (5 schools) is referenced nowhere. Both drift — **`tulsa` carries three different costs**: "~$45k", "~$70k", and $77,346.
+
+Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings.
+
+---
+
+### v44.55 (August 2026) — JUCO Session 4, part 1: Suffolk + Westchester proven, and §14 turns out not to fit JUCOs at all
+
+#### The owner's sub-task: both schools re-tested in a real browser, and the answer is "genuinely absent"
+
+`suffolk_cc` and `westchester_cc` have been `available:false` since v39 on the claim that they publish no player positions. The owner asked why, because **the two records disagreed about how hard that had been tested** — Suffolk's own note said *"not populated at time of automated fetch… revisit with direct browser access"* while §6 claimed both were *"re-checked via Chrome MCP."* The `?jsRendering=true` in the owner's link suggested a client-side render, i.e. the v39 failure mode.
+
+**Re-tested properly; the claim holds, but neither record had the reason right.**
+
+| school | layout | finding |
+|---|---|---|
+| `suffolk_cc` | **table** (`NO. \| NAME \| POS. \| CL. \| HIGH SCHOOL`) | `POS.` column exists, **empty for all 24 rows**; `CL.` publishes fine (FR/SO). **No player bio pages exist at all** and no position words appear anywhere on the page. Newest season **2025-26**. |
+| `westchester_cc` | Sidearm **cards** | 24 cards, each with a `.sidearm-roster-player-position` element, **all 24 empty**. A player bio page carries **no position field either** — the `stedwards` dead-end. Newest season **2025**. |
+
+**The `?jsRendering=true` hint was a red herring, and why matters: Suffolk CloudFront-403s datacenter IPs.** A scripted fetch and the in-app browser both fail there; only the real Chrome (residential IP) reached it. **A network block and a missing column look identical from a script** — do not read a 403/202 from these hosts as evidence about the data.
+
+**Neither Fit score moved, and that is the correct outcome.** §6 predicted both would fall, but that assumed positions were recoverable. Both stay `available:false`, keep the neutral `lensScores.minutes: 50`, and hold `fitOlivier` 37 / 43. Both notes were rewritten to state what was tried, in which browser, on what date.
+
+#### The blocker: §14's Opportunity Score table cannot reproduce a single stored JUCO trajectory
+
+The table caps **Yr1 at 40–50%**. **Every** stored JUCO Yr1 is **56–72** (`murray_state_ok` 62, `tyler_jc` 68, `lsu_eunice` 72, `neosho_county_cc` 56). §14's documented *"JUCO adjustment (v26): ×1.2"* does not close it either — murray's own shape (4 cleared, 10 returning ⇒ opp 4.5 ⇒ 5.4) maps to the **15–25% / 30–40%** row against its stored **62/78**.
+
+**Applying it was tried, measured and reverted:** `lsu_eunice` fit **64 → 43** (minutes 77 → 19), `neosho_county_cc` **44 → 33** (minutes 62 → 31), with ~28 more similar — JUCOs would have dropped from the top of the Minutes lens to the bottom.
+
+**Why it stayed hidden until now:** `trajectory[].pct` is stored-only judgment data that nothing recomputes and no validator checks against §14 — the same silent-drift class as the Wake Forest `lensScores.value` bug. Sessions 1–3 refreshed 4-year schools, where the table *is* the calibration; this is the campaign's first 2-year college.
+
+**Owner decision: facts now, calibration later.** A new `facts_only` branch in `apply_roster_refresh.py` refreshes the factual fields and skips the trajectory and the entire cascade. Since `scores.js` reads **only** `trajectory[].pct`, that provably moves no score — **verified by diffing `data/juco.json` for any changed scoring field: 0 hits.**
+
+| school | mf_total | season | clears |
+|---|---|---|---|
+| `lsu_eunice` | 5 → **8** | 2025-26 → **2026-27** | 2 of 8 |
+| `neosho_county_cc` | 13 → **13** | 2025-26 → **2026-27** | 5 of 13 |
+
+Both notes carry a **⚠ MIXED VINTAGE** disclosure. An independent confirmation that the season really advanced: **Tungamirai Kagoro moved `(Fr·M)` → `(So·MID)`** between the stored and live rosters.
+
+#### Tooling
+
+- **`roster_extract.py` — `--juco` and `--juco-prior`.** JUCO class semantics **invert** vs a 4-year school: a sophomore on a 2026-27 JUCO roster graduates spring 2027 and is **gone** before Olivier arrives, so they are `cleared`, not returning; a freshman returns. Kept as **two separate flags** so the 2026-27 mapping can never be applied to a prior-season page by accident — they are opposites for the sophomore bucket. **Control-tested before use:** reproduces `murray_state_ok` (mf 14 / cleared 4 / rsSr 0 / rsJr 0) exactly, plus four committed D1 schools (louisville, duke, georgetown, wakeforest).
+- **The control test earned its keep again**, flagging two things a summary would have hidden: `monroe_college` needs 4-year semantics despite living in `juco.json` (it is a 4-year university), and `nassau_cc`'s live page now shows 8 MFs against a stored 7. Both are still on prior-season pages, so both were left untouched and logged as drift.
+- **"JUCO is browser-only" is wrong as stated: it is 21 of 30, not all 30.** The nine schools whose `url` is `/sports/mens-soccer` (rather than `/index`) parse fine by script. The other 21 return 202-empty/403 to a script, and for them only the **season-scoped** slug resolves in a browser (`/sports/msoc/2026-27/roster`) — `/sports/msoc/roster` 404s, exactly as v42.5 documented.
+
+#### Coach review
+
+Ten JUCO head coaches verified against their live staff pages — **all unchanged**: Ginsberg (Suffolk, name *and* title), Carrabotta (Westchester), DiBernardo (Monroe), Espinal (Dodge City), Hall (Neosho), Fisher (Nassau), Lis-Simmons (Ulster), Plumbar (LSU Eunice), McBride (Blinn, pending), Spear (Murray State). **No Change Type 2 and no re-rank fired.** Suffolk publishes no coach email or phone, consistent with the stored nulls.
+
+#### The survey finding that should set the timing: Session 4 ran too early
+
+Probing all 19 reachable browser-only JUCOs on their season-scoped 2026-27 URL found **7 that publish a 2026-27 page with ZERO players** — `pima_cc`, `barton_cc`, `phoenix_college`, `smc`, `indian_hills`, `mohave_cc`, `southeastern_cc_ia`. That is instances **6–12** of "published ≠ populated", more than doubling the five already on record. `pima_cc` was control-tested: **0 rows / 646 bytes on 2026-27 against 35 rows / 3367 bytes on 2025-26** through the identical read.
+
+Ten schools **are** populated on 2026-27 (`miami_dade` 31 · `northeast_cc` 35 · `daytona_state` 30 · `efsc` 35 · `iowa_lakes_cc` 17 · `angelina_college` 22 · `johnson_county_cc` 29 · `glendale_cc_az` 35 · `arizona_western` 12 · `cowley_cc` 27) but **none has had its MF extraction or coach check yet** — those are squad sizes, not midfield counts. Three carry a season label that needs checking first: `northeast_cc`'s title has **no year**, `angelina_college`'s says **"2027"**, `cowley_cc`'s says **"Standings"**. Three more were not reachable by the standard shape: `tyler_jc` (SPA shell, `innerText.length` 0), `coastal_bend_cc` (PrestoSports), `iowa_western` (non-`/sports/msoc` URL).
+
+#### Rule scoping — RULE 0 was broken by applying another rule's scope
+
+Three research rules looked like they conflicted. They don't; they are scoped to different page types, and §15 now says so in a table: **rosters/alumni/staff ⇒ Chrome MCP, full stop**; **conference standings ⇒ in-app Browser MCP first, `curl` on bot-block** (the confRecord refinement — *standings sites only*); **discovery of which URL ⇒ WebSearch**. This session generalised the standings refinement to rosters and then stretched it to a bespoke Python fetcher, which no rule sanctions.
+
+Session 2's *"probe whether the roster is server-rendered before reaching for a browser"* is likewise now scoped to hosts with **no prior determination** — where a campaign has already classified a host set (JUCOs = browser-only, v44.29), that classification wins; challenge it openly rather than testing around it.
+
+**And the inference that caused the historical damage, now stated as a rule: a 403/202 is a NETWORK verdict, never a DATA verdict.** These hosts CloudFront-block datacenter IPs — Suffolk 403'd a script *and* the in-app browser while rendering perfectly in the owner's real Chrome. **A blocked fetch and a genuinely missing field are indistinguishable from a script**, which is exactly how v39 wrote off two JUCO rosters that Chrome returned on the first attempt. Never record "field absent" or "roster unavailable" from a non-200; prove it in a rendered page and name the browser and date in the note.
+
+§3a Type 3 also gained a JUCO warning block: the class-year inversion, and "do not recompute a JUCO trajectory from §14 — use `facts_only`".
+
+**Refresh ledger: 62 on 2026-27, 43 on 2025-26, 6 `available:false`** (re-counted from the data files).
+
+Gates: `validate_consistency.js` **Issues: 0**; `validate_schools.py` **PASS**, 17 pre-existing warnings.
+
+---
+
+### v44.54 (August 2026) — CLAUDE.md §6 split: the standing-orders file stops carrying its own changelog
+
+Docs only. No runtime file, data file or score touched.
+
+**The problem, measured.** CLAUDE.md is read at the start of every session; CHANGELOG.md is read only when history is needed. That split was made in v35.2 and had quietly collapsed: §6 had grown back into **a single ~6,000-word paragraph chaining 22 `PRIOR:` version summaries**, every one of them a shorter, lossier copy of an entry CHANGELOG.md already carried — plus roughly **30 items marked ✅ RESOLVED** that were being re-read every session forever. The file grew 36,604 → 39,381 words in the session that diagnosed the bloat, and 41,043 by the start of this one.
+
+**The evidence that it had stopped being read is inside the section itself.** Three facts sat wrong in the state snapshot while the repo said otherwise:
+
+| §6 claimed | Reality |
+|---|---|
+| 110 schools, 110 coaches, ranked 1–110 | **111 / 111** since v44.29 |
+| JUCO section: 29 schools | **30** since v44.29 |
+| `recruit_pathway`: 103 populated | **104** — Stony Brook was populated in v44.41 |
+
+Two items were **stale-open**, which is worse than stale-closed — each would have sent a future session to redo finished work. Both were verified against the repo, not the list: *"Notre Dame + Georgetown `rising_senior_2027_count` unresearched … whitelisted in `MO_MISSING_OK`"* — `MO_MISSING_OK` is now `new Set([])`, both closed in v44.38. And *"NEOSHO COUNTY CC COACH CHANGE (HIGH PRIORITY)"* — `coaches.json` already stores **Sam Hall**, `shall@neosho.edu`.
+
+**§6: 15,977 → 3,854 words. CLAUDE.md: 41,043 → ~29,400 words (−28%).**
+
+#### Rules were promoted BEFORE the history was deleted
+
+The resolved entries were not pure history — several were the only place a standing rule was written down. Each was moved into the section that owns it first, and the deletion happened after:
+
+- **§4** — `rosterUrl()` derives every roster link from the school object's `url`: never hardcode a season slug (they rot each August, v42.5) and never re-add a per-school `overrides` map (it masks the school object's `url` and is invisible to both validators *and* §15's sweep, v44.33).
+- **§3a Type 2** — on a contact change, grep the `bio` strings too; St. Edward's had its email hardcoded in `bio` as well as `contact{}` (v44.35).
+- **§14 (PROSE)** — lens and ranking copy must describe what a lens *rewards*, never name the school that currently wins it (v44.47), plus an explicit statement of what PROSE cannot see: a wrong city, a wrong superlative, or a merely stale claim.
+- **§15** — store a program page, never a per-coach bio deep link (NC State's id rotated 5258 → 5017); and `coaches.json.url` has no renderer consumer, so only a sweep can ever find a fault in it (v44.34).
+
+#### Deleting the history exposed four stale forward-references
+
+§6's resolved entries had been silently *correcting* older sections. With them gone, the errors stood alone — so they were fixed rather than left:
+
+- **§5d** said the coach `overallScore` values *"have NOT yet been re-scored"* and listed Step 2 as pending. The validator reports **111/111 re-scored, 0 legacy** (campaign finished v43.12).
+- **§5c** ended *"Remaining §6 sequence work: Step 5 (re-score the 81 non-JUCO schools against §5a)"*. The validator reports **111/111 re-baselined, 0 above ceiling**.
+- **§5** schema said `devScoresNote` absent = *"pending re-baseline (§6)"* — none remain.
+- **§5d Process step 5** pointed at a "Solomon trap — see §6" worked example that no longer existed; the lesson is now stated inline instead of pointed at.
+
+#### Open items, regrouped
+
+The surviving items are now grouped **A–G** (prose-parsing renderers · coach data · roster-campaign deferrals · stored links · scoring/design questions for the owner · data gaps & watch items · docs & code quality) and tagged `🚩` needs a decision, `⏳` waiting on an external event, `📌` reference recorded so it is not re-derived. Nothing open was dropped.
+
+**Gates:** `node validate_consistency.js` → **Issues: 0** (111 schools, 111 coaches, 25 conferences); `python validate_schools.py` → **PASS**, 17 pre-existing warnings. Every state-snapshot figure in the new §6 was re-derived from the data files rather than copied forward — which is how the 103-vs-104 error was caught.
+
+---
+
+### v44.53 (August 2026) — `negtest.py`, and an audit that found a live instance of the Max Aid defect: `Target: Notre`
+
+Two parts, both descended from v44.50.
+
+#### `negtest.py` — a validator's silence is only evidence if you proved the mutation landed
+
+v44.50 negative-tested MAXAID's five branches, and **the first test passed while proving nothing.** The patch string used a 6-space indent where `data/conferences.json` uses 4, so `str.replace()` was a silent no-op: the file never changed, the validator ran against clean data, and it printed `Issues: 0` — which is precisely what a working check on clean data prints. It was caught only by noticing that the other four mutations fired and that one didn't.
+
+**An unapplied patch and a broken check are indistinguishable from the outside.** `negtest.py` removes that ambiguity mechanically:
+
+- **Asserts the file actually changed, and refuses to run the validator otherwise** — reporting `VOID / MUTATION-NOOP` with the v44.50 story attached, so a no-op can never be read as a pass.
+- Separates **`CHECK-SILENT`** (mutation applied, check did *not* fire — the real failure) from **`PASS`**.
+- Refuses to start on a file with uncommitted changes unless `--force`, so a crash can't lose work.
+- **Always restores in a `finally` block**, then re-runs the validator and warns if the `Issues:` count no longer matches the baseline it recorded at the start.
+
+Proven on itself: run against a suite deliberately containing the v44.50 6-space patch, it reported 5 `ok` and that one case as `VOID`.
+
+`negtests/checks.json` is the committed suite — **8 cases, all proven**: MAXAID ×5 (missing / empty / wrong type / over-length / renderer regressed), TIER, FIT and SCORES-SRC. Add a case whenever a check is added. **The FIT case is a permanent regression test for v44.51**: it perturbs `housingPenalty` in `js/scores.js` and requires FIT to fire, so if anyone reintroduces a local mirror of the Fit formula, that case goes silent and the suite fails.
+
+#### The audit — one real bug, two cosmetic, one verified-clean
+
+Every prose extraction in the renderers (`.split` / `.match` / `parseFloat` over a data field) was run across **all 111 schools** looking for absurd output — the same method that exposed Max Aid.
+
+**FIXED — `Target: Notre` and `Target: Georgetown` were live on those cards.** The card GPA strip did `u.gpa.minSchol.split(' ')[0]`. `minSchol` is free prose: usually it opens with the threshold (*"3.5+ for academic merit"*), but at need-blind schools it is a whole sentence — *"Notre Dame meets 100% of demonstrated need"* → `Notre`. Also `Target: N/A` on `smc`/`miami_dade`. Fixed with a guarded extraction: take a GPA only when the string actually opens with one, otherwise `—`, because at those schools there is no GPA scholarship threshold to display. Exactly **4 of 111** cards change; verified live that all 111 now show a GPA number or `—`, and Clemson still reads `3.5+`.
+
+**LOGGED, not fixed (CLAUDE.md §6)** — both cosmetic, no scoring impact, same `split('—')[0]` shape:
+- **"Soccer Level" stat, 7 schools.** 6 show a bare division token where others show a level (`mercyhurst`→`D1`, `georgian_court`→`D2`, `columbia_college`→`NAIA`, `northeast_cc`/`monroe_college`/`indian_hills`→`JUCO`, against `tyler_jc`'s correct `NJCAA Division I`), and **`denver` renders a 59-character sentence into a compact stat**. This is the mechanism behind the long-deferred `soccerLevel` formatting item (UX backlog D1, owner-deferred — not touched), but the Denver overflow is new and is a rendering problem rather than a formatting preference.
+- **"Pre-PT Path" stat**: `keiser` (33 chars) and `chapman` (40 chars) overflow the slot.
+
+**VERIFIED CLEAN, recorded so it isn't re-audited** — the GPA *filter* extraction (`dashboard.js:59/378/428`, `parseFloat(gpa.minEntry.match(/[\d.]+/))`) returns a plausible GPA or 0-for-open-admission on all 111 schools. Prose-parsed *and* correct.
+
+Validator **Issues: 0**, `validate_schools.py` PASS. `js/app.js` is the only runtime file touched and its change was verified in a local preview.
+
+---
+
+### v44.52 (August 2026) — `sweep.py`: the exhaustive-search discipline becomes a command instead of a virtue
+
+**Three consecutive sessions closed a copy/data item on a count that turned out to be a lower bound:**
+
+| session | the note said | reality |
+|---|---|---|
+| v44.47 — Keiser "Fort Lauderdale" | 2 | **8** |
+| v44.48 — NAIA "no scholarship cap" | 1 | **8** |
+| v44.49 — D1 "9.9 equivalencies" | 2 (the owner's brief) | **29** |
+
+None of those figures was written carelessly — each was accurate for the surface someone had looked at, and stale for every surface they hadn't. The failure mode is nasty because **a truncated search read as exhaustive is indistinguishable from a clean result**: no error, no warning, just fewer rows.
+
+The walker that finally got v44.47 and v44.49 right was hand-written and thrown away **both times**. It is now committed at the repo root.
+
+**What it does that a grep does not:**
+- **Never truncates.** No `--limit`, no `head`. Closure requires all rows.
+- **Attributes every hit** in `data/` + `athletes/` to its owning record and JSON path (`d2.json  ocu  fin.internationalNote`), so 39 hits become 39 individual judgements instead of a skim. That attribution is exactly what separated the 5 genuine Keiser errors from ~30 legitimate mentions of Fort Lauderdale.
+- **Takes several patterns at once and counts each**, because a factual error is a *claim* and a claim has many phrasings. v44.48 needed three patterns; one untruncated regex would still have left three live.
+- **Case-insensitive by default** (`-s` to opt out) — v44.50's bug was a case-sensitive `.split('Up to')` missing `"up to"`.
+- **Excludes docs by default** (`--docs` to include): CLAUDE.md and CHANGELOG.md quote past bugs verbatim, so they inflate every count and bury the live strings.
+- **Warns when a pattern matches nothing**, so a typo'd regex can't masquerade as a clean sweep.
+
+**Control-tested on creation, the same discipline the roster extractor uses.** Its 42 hits for `9\.9` matched an independent grep over the same file set **exactly** (39 structured + 3 code), and the delta from v44.49's 29 reconciled line-by-line: **+14** new `maxAid` fields (v44.50), **−2** removed D1 comparisons in `js/app.js` and `d2.json` (v44.49), **+1** new Glossary line. A walker whose count you cannot reconcile is not yet trustworthy.
+
+**Its first real run taught its own lesson, which is now in the docstring.** Sweeping `no cap|uncapped` for leftover NAIA claims returned 2 hits — both false: `"no cap"` matched **"no capacity"** and `uncapped` matched **"uncapacitied"**, in `murray_state_ok`'s stadium description. Zero real hits, so v44.48's fix holds. But a count alone would have sent someone hunting two scholarship errors that do not exist, or "fixing" them. **Read the rows, not the total** — your own pattern collides too. Same class as v44.45's `"sun conference"` matching inside `"asun conference"`.
+
+Documented in CLAUDE.md §15 ("Closing a copy or data item: use `sweep.py`, not a grep"). No runtime file touched — the guide is byte-identical; this is a dev tool like `validate_consistency.js`. Validator **Issues: 0**, `validate_schools.py` PASS.
+
+---
+
+### v44.51 (August 2026) — the validator stops reimplementing the Fit Score and calls the real `scores.js`
+
+**The check that guards every ranking in the guide could not do its job, and this is a demonstration rather than a theory.**
+
+`validate_consistency.js`'s FIT check reconciles all 111 stored `fitOlivier` values against "the live scores.js formula". It did so against **its own copy** of that formula: local reimplementations of `calculateFitScore`, `soccerQualityScore`, `minutesOutlookScore`, `nextLevelFactor`, `housingPenalty`, `fundingPenalty`, plus `DIV_STRENGTH` and both §5b constants (`D1_RATE_DIVISOR`, `NEXT_LEVEL_NEUTRAL`).
+
+So a formula change in `js/scores.js` that missed the mirror would be **blessed**: the validator would compare 111 stored scores against a stale copy, agree with itself, and print `Issues: 0` while every ranking Olivier sees was wrong.
+
+**Measured before/after.** `housingPenalty` changed `6` → `10` in `js/scores.js`, nothing else touched, both validators run from the repo root:
+
+| validator | result |
+|---|---|
+| **old** (own mirror, `git show HEAD`) | **`Issues: 0`** — completely blind |
+| **new** (loads the real file) | **`Issues: 11`** — 10 drifted schools + summary |
+
+**Fix: one source of truth, no fallback.** All 48 lines of duplicated formula logic are deleted. `js/scores.js` is read and evaluated in a `vm` sandbox and its real functions are called. **No change to production scoring code** — `js/scores.js` is byte-identical to HEAD (SHA verified, since it was mutated and restored four times during testing).
+
+Why a sandbox rather than `module.exports`: `scores.js` is a plain browser script and §4 forbids build-step creep, so **adding exports to it purely to satisfy a dev tool was rejected**. Loading it works because every scoring function in it is pure; its only DOM-touching function, `recalculateAllScores()`, is a function *declaration*, so evaluating the file never executes it and the validator never calls it.
+
+**The loader THROWS rather than falling back**, and that is deliberate: a validator that quietly reverts to a local mirror when it can't load the real thing *is* the bug being removed. Two failure paths, both negative-tested:
+- **a scoring function renamed** → `SCORES-SRC: could not evaluate js/scores.js … housingPenalty is not defined`
+- **a top-level `document` reference added** (breaking purity) → same error class, with guidance to move it inside a function
+
+**Four negative tests, each asserting the mutation actually landed first** — the v44.50 lesson applied immediately, since a patch that silently fails to apply produces a passing test that proves nothing. (It caught a broken test harness here too: the first before/after run reported nothing from *either* validator, because `ROOT = __dirname` meant a copy executed from `/tmp` failed every data load. The fix was to run both from the repo root — not to believe the silence.)
+
+**Incidental good news, now proven rather than assumed:** swapping the mirror for the real functions left `Issues: 0`, so the mirror had not yet drifted. There were no hidden score errors — the exposure was latent, not realised.
+
+No runtime file changed, so there is nothing browser-observable to verify and no preview was started. Validator **Issues: 0**, `validate_schools.py` PASS (111 schools), and zero remaining reimplementations of any `scores.js` symbol in the validator.
+
+---
+
+### v44.50 (August 2026) — the Conferences card's "Max Aid" stat stops parsing prose; `maxAid` becomes a stored field
+
+Closes the item v44.49 found and logged. `renderConferences()` derived the stat tile from `conferences.json`'s `scholarships` **sentence**:
+
+```js
+c.scholarships.split('Up to')[1]?.trim().split(' ')[0] || c.scholarships.split(' ')[0]
+```
+
+The split is **case-sensitive**, so any string not starting with a literal `"Up to"` fell through to "first word of the sentence". **10 of 25 conference cards rendered a word where a number belongs:**
+
+| rendered | conferences | their string starts |
+|---|---|---|
+| `NCAA` | NEC, Summit, CACC | `"NCAA D1 — up to 9.9 …"` (lowercase `up to` never matched) |
+| `Army` | Patriot | `"Army & Navy: full federal scholarships; …"` |
+| `NAIA` | AMC | `"NAIA — 12 equivalencies, …"` |
+| `equivalent` | SAC, Sun | `"Up to equivalent of full ride (NAIA)"` |
+| `ZERO` | Ivy, SCIAC | `"ZERO athletic scholarships — …"` |
+
+**The deeper defect was the coupling, not the ten wrong tiles.** A displayed figure was a function of prose, so **any copy edit could silently change a number** — v44.49 appended a House-settlement qualifier to 14 of those very strings and had to measure the parse before and after to prove it hadn't moved. That is not a property a data file should have.
+
+**Fix — in the renderer, never the copy.** A `maxAid` token is now stored on **all 25** conferences and the renderer is `${c.maxAid||'—'}`. Values were authored per conference rather than mechanically derived: `"9.9"` (D1, ×14) · `"9.0"` (D2, ×5) · `"12"` (NAIA team cap, ×3) · `"None"` (Ivy, SCIAC) · `"Varies"` (JUCO — one value genuinely cannot express NJCAA DI vs DII vs CCCAA, which differ by rule).
+
+**Reshaping the ten prose strings to satisfy the parser was explicitly rejected** — it inverts the dependency, and the next copy edit re-breaks it.
+
+**Two currently-*working* values were changed on purpose:**
+- **D2 `"9"` → `"9.0"`** — matches the `9.9` format, so it reads as a scholarship equivalency rather than a count of something.
+- **Ivy/SCIAC `"ZERO"` → `"None"`** — `"ZERO"` was never an authored value; it was the parser grabbing the first word of *"ZERO athletic scholarships…"*. It happened to be readable, which is why it survived.
+
+**New `MAXAID` check in `validate_consistency.js`, in two halves — the second is the one that makes it durable.** (1) Data: `maxAid` must be a non-empty string of ≤12 chars, so nobody stuffs a sentence into a stat tile. (2) **Code shape: it greps `js/app.js` and fails if `scholarships.split(` reappears.** Without that, the check would pass contentedly while the renderer regressed — the same blindness the CHIPS check needed its own code-shape guard for in v44.45.
+
+**All five branches negative-tested** (missing field · empty string · wrong type · over-length · renderer regressed). **One test-quality lesson, and it is the most transferable thing here: the first negative test PASSED and proved nothing.** It patched a `"maxAid"` line indented 6 spaces when the file uses 4, so the mutation silently never applied and the resulting `Issues: 0` looked exactly like a working check on clean data. It was caught only by asking why the *other* mutations fired and that one didn't. **Assert the mutation actually landed — count the field before and after — before reading a validator's silence as a result.** Same family as v44.45's "ask what the test actually proves".
+
+Also in this version: `README.md` version header 44.48 → 44.50, and its v41–v44 era row now mentions the UI-copy accuracy run (NAIA cap, Keiser's location, the 9.9 figure). Per-version rows for that era are still deliberately not back-filled.
+
+Validator: **Issues: 0**. `validate_schools.py` PASS (111 schools). Verified in a local preview by reading the rendered DOM: **all 25 cards, every tile a sensible token, zero `—` fallbacks, zero words where a number belongs** (was 15 numeric / 10 words, now 25 / 0). Zero JS console errors, 19/19 own-site resources loaded, 111 schools + 25 conferences parsed. Screenshots were unavailable this session (the Browser pane was not compositing), so the DOM read is the verification of record.
+
+---
+
+### v44.49 (August 2026) — the D1 "9.9 equivalencies" figure made opt-in-aware; 29 strings, not the 2 logged
+
+Closes the item v44.48 logged and deliberately declined to rush. The guide asserted a flat **9.9 equivalencies for D1 men's soccer** everywhere, which the *House v. NCAA* settlement (effective 1 July 2025) made a **partial** truth: schools that have **not** opted in still run the 9.9 cap, while **opt-in schools carry a 28-player roster on which every spot may be funded**. §5c has recorded this since v42.18 with an ncaa.org citation — the fix was propagating the project's own already-sourced fact into the UI, **not new research** (§15 Rule 0: no facts were taken from a summary).
+
+**The owner's brief named `index.html` ×2. The sweep found 29.** Attributed with the v44.47b whole-string walker, and three separate wordings were tried per [[feedback-exhaustive-search]] (`9\.9`, `equivalenc`, `roster cap|28[- ]player|scholarship (limit|cap|maximum)`, `\bhouse\b`):
+
+| location | count | visible? | action |
+|---|---|---|---|
+| `data/conferences.json` `scholarships` | 14 | **No** — only the parsed number reaches the UI (see the parse bug below) | qualifier appended (stored-record accuracy) |
+| `data/conf-prestige.json` `scholarships` | 11 | Yes — Conferences → prestige table, Scholarships column | qualifier appended |
+| `index.html` | 2 | Yes — Financial Model explainer + Glossary | rewritten, see below |
+| `js/app.js` NAIA tier intro | 1 | Yes — Conferences tab tier header | stale D1 comparison dropped |
+| `data/d2.json` OCU `fin.internationalNote` | 1 | Yes — OCU modal | stale D1 comparison dropped |
+
+**The judgment call the owner delegated ("your call on how to word it, or whether the distinction is too fine for that card"): the distinction stays, but it is sized to its surface.**
+
+- **Glossary gets the canonical explanation** — a new *"The House Settlement (from 1 July 2025)"* entry states both models, says outright that **this guide deliberately does not track opt-in status**, explains why that is defensible (it cannot move a Fit Score — D1 scores no funding penalty either way, §5c), and turns the gap into two questions to ask a coach. It also draws the distinction that actually matters to a recruit: **permission to fund 28 is not the same as funding 28** — men's soccer is a non-revenue sport and most programs sit well below their ceiling.
+- **The Financial Model card gets one clause and a pointer**, not the full treatment — that card was already long, and the owner's instinct that a stat-sized surface can't carry a settlement caveat was right.
+- **The 25 table cells get a compact suffix** (`"— 28 funded roster spots if House opt-in"`), because they are one-line comparison cells. **9.9 was deliberately NOT dropped** — it is still correct for part of the field (v44.48's standing instruction).
+- **Two comparative claims were the genuinely misleading ones.** The NAIA intro and OCU's note both argued *"12 equivalencies — more than D1 (9.9) or D2 (9.0)"*. Post-*House* that comparison is unreliable against an opt-in D1 school, so **the D1 half was dropped and the D2 half kept** — D2's 9.0 is untouched by the settlement, so the NAIA-vs-D2 point still stands. This is the same defect class as v44.48 itself: the guide's copy resting on a cap that had moved.
+
+**Text only. No `fundingPathway`, `maxAthletic`, `costNum`, `fitOlivier` or lens score moved, and none should** — §5c is explicit that opt-in status *"does not need researching for the D1 schools because it cannot change a score."* That reasoning is unchanged; what was wrong was telling the *user* a single flat number.
+
+**NEWLY FOUND, deliberately NOT fixed (logged in §6): the Conferences-card "Max Aid" stat is derived by string-splitting the prose, and is broken for 10 of 25 conferences.** `js/app.js:2576` does `c.scholarships.split('Up to')[1]?.trim().split(' ')[0] || c.scholarships.split(' ')[0]`, so the stat tile renders **"NCAA" (NEC, Summit, CACC), "Army" (Patriot), "NAIA" (AMC), "equivalent" (SAC, Sun), "Athletic" (JUCO)** and "ZERO" (Ivy, SCIAC). Pre-existing and unrelated to this change — proven by running the exact expression against `HEAD`'s strings before editing anything, and re-checked after: **the same 10 values, unchanged.** Not fixed here because the real defect is the renderer, not the copy, and **reshaping 10 prose strings to satisfy a fragile parser is backwards** — the next copy edit would re-break it. It is also why the `conferences.json` half of this change is invisible: that field's full text reaches no renderer.
+
+**Method note worth keeping: "N known instances" has now been an undercount three sessions running** — v44.47 (2 logged → 8 real), v44.48 (1 → 8), v44.49 (2 → 29). The suffix append was scripted line-anchored on `"scholarships"` rather than hand-edited 25 times, and re-run idempotently; the `Max Aid` parse was tested *before* the edit so "unchanged" is a measurement, not an assumption.
+
+Validator: **Issues: 0**. `validate_schools.py` PASS (111 schools, 17 pre-existing contact warnings). Verified in a local preview by reading the rendered DOM: all 11 prestige cells, both `index.html` blocks, the new Glossary entry in the correct position, the NAIA tier intro, OCU's modal note, and all 15 numeric `Max Aid` stats still reading `9.9`/`9`. Zero JS console errors (the console's `ERR_NAME_NOT_RESOLVED`/404 entries are all external logo hosts, no localhost resources, and `document.images` reports 0 broken after load).
+
+---
+
+### v44.48 (August 2026) — NAIA: eight strings told the user there is no scholarship cap while the model penalises one
+
+The UI claimed NAIA has no scholarship cap. §5c classifies NAIA as `fundingPathway: "capped"` and applies a **−3 Fit penalty for exactly that cap**. The guide was contradicting its own scoring model — **in the athlete's favour, on a recruiting-decision fact.** Found while fixing an unrelated Keiser string on the same line in v44.47 and logged rather than rushed; fixed here on the owner's instruction.
+
+**The distinction that was being lost.** NAIA men's soccer has a **12-equivalency TEAM cap** — more generous than D1 (9.9) and D2 (9.0), but a cap. What NAIA does *not* have is a **PER-PLAYER** cap, so a coach may concentrate the pool into a full ride for one athlete. Eight strings collapsed "no per-player cap" into "no cap".
+
+**The guide already stated it correctly in two places**, which is what everything else should have matched:
+
+| location | text | status |
+|---|---|---|
+| `index.html` Glossary, equivalency block | *"NAIA has 12 with no per-player cap"* | ✅ already correct |
+| `index.html` Glossary, funding-penalty block | NAIA listed under the −3 `capped` tier | ✅ already correct |
+
+**Fixed (8):**
+
+| file | where | was |
+|---|---|---|
+| `index.html` | Financial Model explainer | *"NAIA has no cap."* |
+| `js/app.js` | Coaches NAIA tier intro | *"No scholarship maximum in NAIA — full packages possible."* |
+| `data/conferences.json` | SAC `desc` | *"generous scholarship packages not limited by equivalency caps"* |
+| `data/conferences.json` | AMC `scholarships` | *"no equivalency cap"* |
+| `data/conf-prestige.json` | AMC `scholarships` | *"no equivalency cap"* |
+| `data/coaches.json` | Mason (Columbia College) `bio` | *"full-scholarship NAIA potential with no equivalency cap"* |
+| `data/d2.json` | OCU `fin.internationalNote` | *"NAIA has NO maximum scholarship cap"* |
+| `data/d2.json` | OCU `facilityDetails.note` | *"scholarship flexibility (no cap)"* |
+
+**Deliberately left alone, because they are accurate:** the *"Up to equivalent of full ride (NAIA)"* strings in `conferences.json` and `conf-prestige.json`, Oldham's *"NAIA full scholarship potential"*, and Keiser's *"NAIA full ride possible"*. A full ride genuinely is attainable for an individual — and **the stored data already encodes the distinction**: `ocu` and `keiser` both carry `maxAthletic: 1.0` **alongside** `fundingPathway: "capped"`. That pairing is not a contradiction; it is the team-cap/per-player-cap split stated in data.
+
+**Text only.** No `fundingPathway`, `maxAthletic`, `costNum`, `fitOlivier` or `lensScores` value was touched, and none should be — **the −3 penalty was always correct; it was the copy that was wrong.** Verified post-change: OCU still fit 50, `capped`, `maxAthletic` 1.0.
+
+**Method note, reinforcing v44.47b's lesson — search several phrasings, not one.** A `no cap|no maximum` pattern found **5**. Querying the *equivalency* angle surfaced a **6th and 7th**. The SAC `desc`'s *"not limited by equivalency caps"* only fell out of a **third** pattern. A single regex read as exhaustive would have left three live claims in the guide — the same shape of error as the truncated grep in v44.47, arriving by a different route. **Vary the wording, then confirm with a negative sweep.**
+
+**Newly logged in §6, NOT fixed:** `index.html` states **"9.9 equivalencies for D1 soccer"** in two places. §5c records that D1 post-*House* (July 1 2025) replaced sport-specific limits with a 28-player fully-fundable roster cap **at opt-in schools**, so 9.9 holds only for non-opt-in programs. Correct copy needs per-school opt-in status, which the guide deliberately does not track (§5c: unnecessary, since `full` carries a zero penalty). Left for a decision rather than silently dropped — 9.9 is still right for part of the field.
+
+**Gates:** `python -m json.tool` on all 4 changed JSONs OK · `node --check js/app.js` OK · `node validate_consistency.js` **Issues: 0** · `python validate_schools.py` PASS (111 schools, 17 pre-existing warnings). Local browser test: Financial Model, Conferences, Coaches and Explore all re-rendered — **zero NAIA no-cap claims remain in the DOM**, and the Financial Model explainer now matches the Glossary's already-correct wording.
+
+---
+
+### v44.47 (August 2026) — Two pre-existing UI copy errors fixed (Change Type 11, display-only)
+
+Both were surfaced by v44.46's Change Type 3 prose sweep, both pre-dated that refresh, and **neither was catchable by any validator**. Owner asked for them first, ahead of Session 4.
+
+**1. The Glossary's Minutes Outlook lens named a #1 that was never #1.** It read *"Barry D2 consistently ranks #1 under this lens — 7 of 13 midfielders clear before Olivier arrives."* Barry's `lensScores.minutes` is **59**. The lens is led by `iowa_western` **79**, then lsu_eunice 77, dodge_city_cc and daytona_state 75, and five more JUCOs at 73. Barry has never topped it on the stored numbers.
+
+**Rewritten to describe the mechanism rather than name a winner**, and that is the durable part of the fix. Hardcoding a #1 school is the same defect class the `PROSE` check exists for, and **Session 4 refreshes all 30 JUCOs — exactly the schools at the top of this lens** — so any named school would be stale within one session. The rewrite also drops the *"7 of 13 MFs"* figure, which was accurate against Barry's stored 2025-26 data and passing `PROSE`, but which goes stale the instant Barry is refreshed in Wave 2. **Rule established: lens and ranking copy explains what the lens rewards, never which school currently wins it.**
+
+**2. Keiser was still "Fort Lauderdale" — in EIGHT places, not the two logged.** v40.6 moved Keiser to **West Palm Beach** across 12 occurrences plus `mapX`/`mapY`, but missed:
+
+- `js/app.js` — `CONF_SECTIONS` NAIA section intro (Explore tab)
+- `js/app.js` — NAIA tier intro (Coaches tab)
+- `data/aac.json` — **FAU's `culture.olivierMatch`**, which the §6 note had not found. It read *"adjacent to Fort Lauderdale (Keiser) and Miami"* — wrong twice over: wrong city, **and wrong direction**, since West Palm Beach is ~30 min *north* of Boca Raton while Fort Lauderdale is south. Rewritten to place Keiser and PBA north and Fort Lauderdale/Miami south.
+- `data/conferences.json` — `sun.guideSchools[0]`, the string **rendered as the school chip on the Conferences tab**: *"Keiser University (Fort Lauderdale)"*.
+- `data/conferences.json` — `sun.olivierNote`: *"Fort Lauderdale warm and cosmopolitan."*
+- `data/coaches.json` — Oldham's `bio`: *"leads the Keiser University men's soccer program in Fort Lauderdale"* (and a second sentence crediting Fort Lauderdale for Inter Miami proximity, generalised to "South Florida").
+- `data/coaches.json` — Oldham's `strengths[2]`: *"Fort Lauderdale climate"*.
+- `data/pipeline.json` — the Keiser row in `ncaaD2[]`: *"Fort Lauderdale warm climate."*
+
+**Two lessons, and the second is the uncomfortable one.**
+
+*First:* **re-grep when closing a "N known instances" copy item.** The §6 note said "two `js/app.js` strings" and was written from a js/html glob, so `data/` had never been swept at all.
+
+*Second, and recorded deliberately:* the first pass at this fix (commit `37a5627`) claimed *"swept every remaining Fort Lauderdale in the repo: all are legitimate"* and reported three instances. **That claim was false** — it rested on a grep whose output had been truncated to the first 12 results, so most of `data/` was never actually examined. The remaining five were found only because the **live DOM still rendered a cached `js/app.js`** (the v37.3 caching gotcha), and the old strings it printed exposed data-file instances the truncated grep had hidden. **A truncated search that is read as exhaustive is indistinguishable from a clean result.** The corrected sweep walks every string in `data/` and `athletes/` with a script that attributes each occurrence to its owning record, so all 39 could be judged individually rather than skimmed — that is the method to reuse.
+
+The **5 Keiser mentions that remain are correct and deliberate**: two cite Fort Lauderdale as a 45-minute destination (`culture.thingsToDo`, `facilityDetails.extras`), one is the housing note recording the v40.6 correction itself, and two are the rewritten FAU and Sun-Conference strings. Every other occurrence in the repo belongs to **Nova Southeastern**, which genuinely is in Fort Lauderdale, or to FAU/Lynn/PBA/FIU citing correct distances.
+
+No scoring impact — none of these strings is read by `scores.js`.
+
+**Newly found, logged in §6 and deliberately NOT fixed:** the Coaches-tab NAIA tier intro (same line as one of the Keiser strings) says *"No scholarship maximum in NAIA — full packages possible."* NAIA men's soccer is capped at **12 equivalencies**, which is why §5c classifies NAIA as `fundingPathway: "capped"` and applies a **−3** Fit penalty. The UI therefore tells the user there is no cap while the model penalises them for one. That is a scoring-model contradiction rather than a stale fact, so it belongs in a deliberate rewrite alongside the D2/NAIA aid strings, not in a two-line copy commit.
+
+**Gates:** `node --check js/app.js` OK · `python -m json.tool data/aac.json` OK · `node validate_consistency.js` **Issues: 0** · `python validate_schools.py` PASS (111 schools, 17 pre-existing warnings). Local browser test: Glossary copy, both NAIA intros and the FAU modal string verified in the rendered DOM; zero Keiser/Fort-Lauderdale collocations remain; zero JS errors.
+
+---
+
+### v44.46 (August 2026) — Wave 1 Session 3 of the 2026-27 roster refresh: d2, 4 schools refreshed, 2 deferred, ivy dropped from scope
+
+**Availability survey re-run first** (`python roster_survey.py d2 ivy`, now argv-driven). 8 of 14 schools flipped to 2026-27 — exactly matching the 2026-08-04 wave list, **zero churn**, unlike the 55→70 movement the previous survey saw in a single day. A stale list is still the default assumption; this time it happened not to have moved.
+
+**`ivy` is out of scope by owner ruling.** Mid-session: *"I dont care about Yale and Princeton. They are unattainable as they dont offer scholarships."* Both rosters had already been fetched and parse cleanly (princeton 15 MFs of 31, yale 10 of 27), and both remain `minutesOutlook.available:false` and untouched. **Not a removal** — `ivy.json` is unchanged and both schools stay in the guide with their `fundingPathway:"none"` −8 penalty. Recorded in memory so future campaigns skip the file. **Known and accepted consequence:** an `available:false` school scores the neutral 0.5 minutes value, so Princeton's stored fit 41 and Yale's 47 are mildly *flattering* — the same neutral that cost Stony Brook 43→34 when it was finally populated in v44.41.
+
+**Refreshed (Change Type 3, full cascade each):**
+
+| school | mf_total | clears by 2027 | opp | fit | minutes | value |
+|---|---|---|---|---|---|---|
+| `columbia_college` | 12 | 5 | 12.5 | 35→**36** | 45→48 | 40→40 |
+| `ocu` | 5 | 2 | 6.0 | 59→**50** | 50→26 | 35→30 |
+| `pba` | 10 | 7 | 14.0 | 61→**62** | 52→53 | 47→48 |
+| `stedwards` | 9 | 4 | 8.5 | 61→**54** | 52→33 | 44→40 |
+
+`ocu` and `stedwards` fall because their stored trajectories were flat, optimistic and unsupported by the current squad (OCU's stored Yr1–Yr3 were all 50); `pba` rises because **7 of its 10 midfielders clear before Olivier arrives** — the largest midfield turnover in the file, driven by a graduate-transfer roster model (12 of 28 players are listed `Gr.`).
+
+**`recruit_pathway`: 1 reclassified, 2 re-derived and confirmed, 1 retained.** `columbia_college` **Portal/JUCO-heavy → Mixed** — it publishes Hometown, High School and Previous School as three *separate* columns, so the split is directly readable rather than inferred, and only 3 of 12 midfielders (25%) are transfers. `ocu` (both MF transfers are JUCOs, and the wider squad repeats the pattern) and `pba` (6 of 10 from four-year programs, no JUCOs) confirmed. `stedwards` publishes no previous-school column at all, so its Freshman-friendly value is retained and the note marks itself lower-confidence.
+
+**No coach changed at any of the 6 schools researched** — no Change Type 2 and no re-rank.
+
+#### Two schools deferred to Wave 2 — published but not populated (instances 4 and 5)
+
+- **`keiser`** — the 2026 page renders its **full coaching staff and ZERO players**. Browser-confirmed, and control-tested in the same browser: its own 2025 page returns 34 players with positions through the identical read. The raw HTML told the same story (62 `sidearm-roster-player` hits and **0** position classes, against 1615/136 on the 2025 page). This is the `tulsa` shape exactly.
+- **`barry`** — **21 players against 34 in 2025**, browser-confirmed at 21, and the shape is the giveaway: **one goalkeeper**, 5 defenders, and **12 of 21 listed midfield-capable**. No real D2 squad carries a single keeper. Refreshed as-is it would have produced 12 MFs with **zero** clearing before 2027 — a plausible-looking number and a fabricated opportunity score, which is exactly why shape 3 is the dangerous one.
+
+**New diagnostic worth keeping: check the goalkeeper count.** Squad-size ratio alone was ambiguous for Barry (21/34 = 62%, against Pittsburgh's deferred 50%), but a positional breakdown showing 1 GK is unambiguous. Add it to the prior-season count comparison rather than replacing it.
+
+#### Disclosed data caveat — a blank *position* cell is not a parse failure
+
+`ocu` publishes **3 of 25** players and `stedwards` **6 of 39** with an empty position cell. Verified as genuine, not a parser artifact: the rendered card view shows no position, and all six St. Edward's **player bio pages carry no position field either**. `mf_total` therefore counts only confirmed midfielders, and both notes say so. Materiality was checked rather than assumed — for `ocu` the worst case moves opportunity 6.0 → 7.0 and stays inside the same trajectory row, so the outlook is unaffected either way; for `stedwards` it would move 8.5 → 5.5 and **cross a row**, so that note flags it for re-check once the school completes its data. This is a *field-level* gap, distinct from the roster-level gap that got Keiser and Barry deferred.
+
+#### Tooling
+
+- `roster_survey.py` now takes conference files as **argv** (defaulting to the Session 2 set) and names its output after them — each wave re-runs it without editing the script.
+- `roster_extract.py` learned **`Fy.`**, the Ivy label for a first-year. It had been falling through to `unknown`, breaking the `mf_total` invariant and understating `returning`. **Same silent-failure class as Session 2's `4th`-ordinal bug**, and found the same way: by the standing control test, which reproduced all 8 committed Session-1 schools *exactly* both before and after the fix.
+
+**Gates:** `python -m json.tool` OK · `node validate_consistency.js` **Issues: 0** · `python validate_schools.py` PASS (111 schools, 17 pre-existing warnings). Local browser test: all four cards render `MFS (2026-27)` with correct counts, names and trajectories; zero `undefined`; zero JS errors; all local fetches 200.
+
+**Refresh ledger: 60 schools on 2026-27, 45 on 2025-26.**
+
+---
+
+### v44.45 (August 2026) — Conference filter chips: 6 schools had no chip, 1 sat in the wrong one
+
+Owner asked whether the chip counts were dynamic. **They are** — `renderFilterChips()` computes them live from `unis`. But two bugs underneath meant the row was wrong regardless, and it summed to **105 of 111** with nothing anywhere reporting the gap.
+
+**Bug 1 — six schools had no chip and could not be filtered by conference.** Their conferences were absent from `CONF_ALIAS_MAP`/`CONF_CHIP_LABELS`, so `resolveConfGroup()` fell through to a derived key (`'patriot-league'`, `'summit-league'`, `'northeast-conference-(nec)'`…) that `renderFilterChips()` then skipped via its `if (CONF_CHIP_LABELS[key])` guard: **army, navy** (Patriot), **delaware** (Summit), **mercyhurst** (NEC), **uc_charleston** (MEC), **columbia_college** (AMC).
+
+**Bug 2 — a substring alias collision put a D1 school inside a NAIA chip.** UCA's `conf` is `"ASUN Conference"`. The alias scan sorted longest-first and tested with bare `.includes()`, so **`"sun conference"` (14 chars) matched inside `"a|sun conference|"`** and beat `"asun"` (4). UCA was counted *and filtered* under the NAIA **Sun Conference** chip — which is exactly why the row showed **Sun Conf (2)** and **no ASUN chip at all**. Two wrong counts, and nothing looked broken because the row still added up. Same class as §5b trap 7 (substring collisions in school names).
+
+**Fixes:** the six conferences added across all three tables; `resolveConfGroup()` now matches on **word boundaries** (`\bsun conference\b` cannot match inside `asun conference`); and `renderFilterChips()` now counts **every** school and appends any unmapped key at the end with a derived label and a `console.warn`, so a future gap degrades visibly instead of vanishing.
+
+**New `CHIPS` validator check** — every school must resolve to a labelled key, that key must be in `CONF_CHIP_ORDER`, the chips must sum to the school count, and no chip may mix divisions (which is what the UCA collision looked like from the outside). All negative-tested by restoring the original bugs. It also carries a **code-shape guard** that fails if the bare `.includes()` form returns: the check reimplements the intended matching rather than reading `app.js`'s implementation, so without that guard it validates the data but is blind to the resolver itself regressing — a gap the negative test exposed.
+
+Verified live: 25 chips, sum 111 = `unis.length`, zero mismatches against the page's own resolver, and each new chip filters to exactly the right schools. Issues: 0.
+
+---
+
+### v44.44 (August 2026) — New `PROSE` validator check: UI copy that hard-codes a school or roster fact
+
+Owner-requested straight after v44.43: *"need to add that check for the info panels to be updated when there is a change to schools or roster."* A CLAUDE.md checklist row would not have held — prose is exactly what nobody re-reads, which is the failure mode the SDLC-compliance rule already warns about. So this is mechanical.
+
+**Why nothing could see the v44.43 bugs:** every other check in `validate_consistency.js` reads JSON. The `CONF_SECTIONS` intros and the Minutes Outlook key are **string literals inside `js/app.js`**, so a data change can contradict them indefinitely.
+
+**Four sub-checks, every one negative-tested** (deliberately made to fire before being trusted — the v44.32 precedent):
+- **A — section program counts.** A `"N programs"` claim is compared against the real count for that `confKey`. **Count by confKey, not by conference file**: Akron lives in `d1-other.json` but groups into the Big East section, and Army/Navy live in `aac.json` but group into Patriot.
+- **B — roster claims.** Any `"N of M MFs"` in copy must match some school's `mf_total`/`cleared_before_2027`. This is precisely the UCA failure.
+- **C — scrape-season class years.** Flags `"2025 Jr"`-style phrasing and `"based on 20XX rosters"`, which **invert** when a school moves to a newer roster. `"2027 seniors"` passes — that is the normalised bucket.
+- **D — phantom school anchors.** A small explicit denylist (`USC`, `UF`) of names appearing in copy for schools that field no team here. Deliberately not fuzzy name-matching, because clubs, cities, hospitals and conferences all legitimately appear in these strings.
+
+**Three real errors it caught on its first run, all fixed:**
+1. `big-east` intro said **11 programs**; the section renders **12** (Akron).
+2. `aac` intro said **10 programs** and still claimed Army and Navy; the section holds **8** — both moved to Patriot in v44.10. Reworded to point at the Patriot League.
+3. The **Academic-First lens description said "UF tops this list but cannot be played at"** — Florida fields no men's soccer. Rewritten to name no school at all, so it cannot go stale again.
+
+**Two false positives found in the check itself and fixed:**
+- *"perennial top-10 programs"* parsed as a count claim → `(?<![-\w])` guard.
+- The explanatory comment in `renderMinutesOutlook` **quotes the old bad phrasing** to explain the v44.43 fix, re-tripping sub-check C → whole-line `//` comments are stripped before scanning (URLs inside string literals are untouched, since those lines do not start with `//`).
+
+**Scope is `js/app.js` + `index.html` ONLY, and the in-file comment says why it must not be broadened.** `data/*.json` holds three legitimate hits that would all become false positives: `conferences.json` correctly states USC joined the Big Ten in 2024 (a true fact about the *conference*, not a claim about the guide); its `otherSchools[]` carries a correct, self-flagging *"⚠ UF — academic reference only (no men's varsity soccer)"* chip; and several `recruit_pathway_note` strings name the genuinely real **USC Upstate** and **USC Aiken** as transfer origins. The `USC`/`UF` patterns carry lookaheads for the same reason.
+
+CLAUDE.md: `PROSE` documented in §7 Phase 4; new impact-map rows on Change Types 1, 3 and 10. Issues: 0.
+
+---
+
+### v44.43 (August 2026) — Two stale UI panels the roster refresh outdated (Change Type 11, display-only)
+
+Both spotted by the owner immediately after the v44.39–v44.42 push. No data or score changed; `node --check js/app.js` clean, Issues: 0.
+
+**1. The Minutes Outlook key was written in terms of a 2025 roster's class years — and the refresh INVERTED it.** It read *"2025 Jr → graduate after 2026 → ✅ cleared before he arrives"*. That mapping shifts by a year the moment a school moves to a newer roster: on a 2026-27 roster a junior does **not** clear before Olivier arrives, they are a 2027 senior with a 1-year overlap. With 56 schools now on 2026-27 data, the key actively contradicted the majority of the cards beneath it. The stored fields (`cleared_before_2027`, `rising_senior_2027_*`, `rising_junior_2027_*`) were already normalised to his entry year regardless of the season scraped, so **the key now describes those buckets instead of raw class years** — "Cleared by 2027 / 2027 seniors / 2027 juniors", which matches each card's own stat labels verbatim and stays correct for both seasons. A comment in `renderMinutesOutlook()` warns against re-introducing a hardcoded roster year. The intro line and the methodology footer ("the 2026 freshman class is being recruited now") were stale the same way and were made season-agnostic.
+
+**2. Seven `CONF_SECTIONS` intros were stale — one of them falsified by this very session.** This closes a §6 lower-priority item that had been open since v25.
+- **`asun` claimed UCA was the "best D1 central midfielder opening in the guide with 6 of 9 MFs clearing before Olivier arrives".** The v44.42 refresh found the exact opposite: **0 of 9 clear**, the whole midfield returns, opportunity score 0.0 — which is why UCA's Fit fell 61 → 43 in that commit. Rewritten to state the real shape.
+- **`big-ten` named "USC", which fields no team in this guide** — the identical phantom-anchor error §5a already flags for "UF" in the Glossary.
+- The remaining five (`acc`, `big-east`, `aac`, `big-west`, `caa`, `america-east`) all carried pre-v25 "fully profiled vs listed" framing; every school in the guide has been full-profile since v25. The ACC panel — the one the owner screenshotted — also under-counted its own conference at "6 fully-profiled schools" plus "14 listed programs" against an actual 13.
+
+**Lesson banked in §6: a conference intro can hard-code a ROSTER FACT.** A Change Type 3 refresh that materially moves a school's opportunity should sweep `CONF_SECTIONS` intros too — neither validator can see prose.
+
+---
+
+### v44.39–v44.42 (August 2026) — Wave 1 Session 2: 2026-27 roster refresh, big-ten + big-west + caa + d1-other (Change Type 3)
+
+**28 of 33 schools refreshed to the 2026-27 season**, one conference file per commit, Issues: 0 at every gate. `mf_total` + `roster_season` written in the same edit every time (v44.32 rule); full Type 3 cascade on every school; trajectory *derived* from the researched counts by `apply_roster_refresh.py`, never typed (v44.36b).
+
+**Method change worth keeping: these rosters were PARSED, not browsed.** A probe found that on all four files' hosts the roster table is **server-rendered** — position, academic year *and* the previous-school column are all present in raw HTML; only the `<title>`'s season year is injected client-side. So a Python extractor replaced Session 1's per-school browser work. It was **control-tested against 8 already-committed Session-1 schools (louisville, duke, georgetown, wakeforest, providence, smu, unc, syracuse) and reproduced all 8 bucket sets exactly**, and it independently re-derived that georgetown and syracuse publish no previous-school column — matching the v44.38 finding. The browser was still required for 3 schools on other templates.
+
+**Four roster templates now on record (§15), not three.** New this session: **WMT list view** — `.roster-list-item` with semantic per-field classes (`--class-level`, `--position`, `--previous-school`), used by northwestern; and Penn State's `.player-list-item` variant. Mercyhurst is a Sidearm **card** layout whose companion table omits the Name column entirely, so counts parse but names do not — it was extracted twice by independent paths (cards + table) and both agreed at 18 MFs.
+
+**Two extractor bugs the control test caught before any data shipped:**
+1. **Short header names.** A substring search for the class column matched nothing at Louisville (`CL`) and Duke (`Yr.`), silently bucketing every midfielder as "unknown". Fixed by matching letters-only headers **exactly first**, then falling back to substring — a plain substring rule would match `Club` (UC Riverside publishes one) and mis-read every class year.
+2. **Ordinal eligibility labels.** Indiana and Washington label class years `1st`–`5th` instead of `Fr./So./Jr./Sr.`. `5th` matched by luck; **`4th` — a graduating senior — fell through to "unknown" and vanished from `cleared`**, understating both schools' opportunity. Ordinals are now parsed first.
+
+**`pennstate` DEFERRED to Wave 2 — the third instance of "published but not populated".** Its 2026 page renders 8 players and **zero midfielders** beside a complete coaching and support staff; its 2025 page returns a full squad with real MFs through the same read. Same class as `tulsa` (staff, no players) and `pittsburgh` (13 of 26) in Session 1. It keeps its 2025-26 data and label. **The prior-season comparison is what caught it** — always run it.
+
+**`stonybrook` populated for the first time**, closing a gap open since v21 (§6: site unreachable/off-season at every prior attempt). Its live 2026-27 roster renders normally — 9 MFs of 29, 3 clearing before 2027. `minutesOutlook.available` flips `false → true`, so **its Fit falls 43 → 34**: the real outlook (minutes 26) is simply worse than the neutral 0.5 placeholder it had been carrying. That is the neutral behaving as designed, not a regression. `recruit_pathway` is deliberately left **unset** — the roster publishes no previous-school column *and* there was no prior classification to retain, so there is nothing to derive from and nothing to carry forward.
+
+**`recruit_pathway`: 2 reclassified, 14 re-derived and confirmed, 13 retained.**
+- **indiana → Transfer-preferred** (from Freshman-friendly): 4 of 7 MFs are 4-year transfers (Missouri State, Evansville, NIU, Cornell) and the midfield contains **no first- or second-year player at all** — every MF is a 3rd, 4th or 5th year. This also gives Indiana the batch's joint-highest opportunity score, so the opening is real but the route in is a transfer slot.
+- **northwestern → Mixed** (from Freshman-friendly): 5 of 13 MFs are 4-year transfers against 8 direct entries — the same two-route shape that moved xavier in Session 1.
+- **13 schools publish no previous-school column** (michigan, ohiostate, rutgers, washington, wisconsin, charleston, drexel, elon, hofstra, monmouth, denver, gcu, vermont); classification retained, each note says so and flags itself lower-confidence — the v44.38 precedent.
+
+**The previous-school column lies in a new way: it holds CLUBS.** Three schools would have been misclassified by reading it naively. **calpoly**'s column is headed *"Previous School/Club"* and all 5 MFs have an entry, but 4 are clubs (Portland Timbers2, San Jose Earthquakes II, Pateadores SC ×2) — only Columbia is a college. **northeastern** has 13 of 14 MFs populated, almost entirely academies (Houston Dynamo MLS NEXT, Toronto FC, Barca Residency, Minnesota United II, Atlanta United Academy); exactly one lists a college. **uca** combines hometown and club in one field, 7 of 9 clubs. All three are genuinely Freshman-friendly; a transfer-count heuristic would have flipped every one of them.
+
+**`akron` is the campaign's cleanest confirmation:** it *publishes* a previous-school column and it is **empty for all 11 midfielders** — Freshman-friendly proven on positive evidence rather than on the absence of a column.
+
+**No coach changed at any of the 29 schools researched** — every head coach on every live roster/staff page matched `coaches.json` (Michigan's had to be read off its separate `/coaches` page, which the roster page omits). So no Change Type 2, no re-rank, and no `devScores.tactical` review fired.
+
+**`recruit_risk` was RETAINED, not re-derived**, on all 27 schools that had one. It is unscored, and re-deriving 27 judgment values against a newly-invented rule was not in this session's scope — flagged here so a later pass knows it is untouched, particularly where the midfield group size moved a lot (hofstra 6→12, delaware 4→9, monmouth 5→9, william_mary 7→11).
+
+**Refresh ledger after this session: 56 schools on 2026-27, 49 still on 2025-26** (verified live on the Minutes Outlook tab: 56 × "MFs (2026-27)", 49 × "MFs (2025-26)", zero bare-year labels, zero `undefined`/`NaN`/`null`).
+
+Untouched by design: `ucla`, `csuf`, `ucsb`, `ucsd` are all still serving 2025 rosters (Wave 2).
+
+---
+
+### v44.36–v44.38 (August 2026) — Wave 1 Session 1: 2026-27 roster refresh, aac + acc + big-east (Change Type 3)
+
+**27 of 31 schools refreshed to the 2026-27 season.** All read in a real browser (Chrome MCP) off each school's own roster page, Tier 1. `mf_total` and `roster_season` written in the same edit every time, per the v44.32 rule; the full Type 3 cascade (`minutesOutlook{}` → `lensScores.minutes` → `fitOlivier` → `lensScores.overall` → `lensScores.value`) run on every one. Issues: 0 at every gate.
+
+| commit | file | schools |
+|---|---|---|
+| v44.36 | `data/aac.json` | fau, fiu, memphis, temple, uab, usf (6) |
+| v44.36b | `data/aac.json` | trajectory-rule correction, no new research |
+| v44.37 | `data/acc.json` | virginia, wakeforest, smu, duke, louisville, notredame, stanford, syracuse, unc, cal (10) |
+| v44.38 | `data/big-east.json` | butler, creighton, depaul, georgetown, marquette, providence, setonhall, stjohns, uconn, villanova, xavier (11) |
+
+**Both §6 `MO_MISSING_OK` whitelist entries are now closed.** `notredame` and `georgetown` had been missing `rising_senior_2027_count` since the v21 era. Their 2026-27 rosters give 3 (Schroeder, Shaul, Hilden) and 4 (Godinho, Urrutia, Brown, Ahmed). The Set is now empty but deliberately **kept**, with a comment marking it as the escape hatch for a genuine research gap — never for silencing a skipped cascade.
+
+**Two schools deferred to Wave 2, both for the same class of reason — a published season page is not a populated one.**
+- `tulsa`: the 2026 page renders coaches and support staff and **zero players**. Control-tested against `/roster/2025`, which returns 29 players / 8 MFs through the identical extractor, so the page is genuinely unpopulated rather than mis-scraped.
+- `pittsburgh`: the 2026 page lists **13 players against 26 on its 2025 page** — half-published. Using it would have produced a fabricated opportunity score.
+
+Both keep their stored 2025-26 data and their `roster_season: "2025-26"` label, which correctly describes where the stored count came from. `army`/`navy` untouched — `available:false` by design (§4).
+
+**A method inconsistency was caught and fixed mid-session (v44.36b).** §14's Opportunity Score table gives a *range* per row, and the first six schools had those ranges resolved by feel — `fau` (opp 5.0, bottom of its row) and `fiu` (opp 7.0, top of the same row) had both landed on the identical trajectory. Position within a row is now interpolated linearly from where opp sits in the row's own opp range, rounded to the nearest 5, and the trajectory is **derived from the researched counts** rather than hand-entered: patches carry the returning-competition count and `apply_roster_refresh.py` computes `opp = cleared×2 + rising_sr×1 − max(0, returning−3)×0.5`. Same opp now always yields the same trajectory. Re-ran the AAC under the uniform rule: fau 55→52, memphis 64→63, temple 42→44, usf 59→58; fiu and uab unmoved.
+
+**Two `recruit_pathway` reclassifications**, both off a previous-school column read directly:
+- `memphis` Transfer-preferred → **Portal/JUCO-heavy** — 8 of 10 MFs list a prior college, including 2 from JUCO (Barton County CC, Indian Hills CC).
+- `xavier` Freshman-friendly → **Mixed** — 4 of 10 list a prior college and three of those are two-year programs (Iowa Western CC, Snow College, Monroe).
+
+Rendered Pathways-tab buckets afterwards: Freshman-friendly 74 · Mixed 21 · Portal/JUCO-heavy 7 · Transfer-preferred 2, matching the data exactly.
+
+**Largest score moves.** `louisville` 71→55 — not one of its 9 midfielders graduates before Olivier's 2027 entry, dropping opp to 1.5. `cal` 67→71 the other way — 7 of 12 MFs (6 seniors + a graduate) clear at once, the biggest single-school opening in the batch. `butler` (opp 0.0) and `stjohns` (opp 0.5) bottom out for the same reason as Louisville: nobody leaves.
+
+**Eleven schools publish no previous-school column at all** (fau, syracuse, cal, georgetown, stjohns, uconn, villanova, depaul, marquette, setonhall — plus villanova/cal which have the field but leave it empty). Their `recruit_pathway` was **retained, not re-derived**, and each note now says so explicitly and flags itself as lower-confidence. Retaining a prior classification is correct here; inventing one from hometown/high-school text would not be.
+
+**No coach changed at any of the 29 schools researched.** All confirmed against each school's own staff page — so no Change Type 2, no re-rank, and no §5a `tactical` review was triggered.
+
+**New roster layout documented** (§15): the WMT `roster-card-item` template used by virginia and stanford, whose academic year sits in an *unlabelled* `--basic` profile field rather than a labelled one. A labelled-field-only extractor silently returns players with no class year.
+
+---
+
+### v44.35 (August 2026) — St. Edward's coach contact corrected + Seton Hall phone added (Change Type 2, contact only)
+
+Closes the §6 item opened by v44.34. Both re-verified Tier-1 **immediately before writing**, not carried over from the earlier session — the project rule is never to guess coach contact info, and the previous read was a side effect of URL work.
+
+| school | field | was | now |
+|---|---|---|---|
+| `stedwards` | email | `byoung@stedwards.edu` | **`briany@stedwards.edu`** |
+| `stedwards` | phone | `512-448-8415` | **`512-448-8507`** |
+| `setonhall` | phone | `""` (blank) | **`973-275-6429`** |
+
+**Evidence is as strong as this gets.** St. Edward's 2026 staff page carries `briany@stedwards.edu` as a real `mailto:` href and `512-448-8507` as a `tel:` href — not display text that could be stale. The colleague addresses on the same page (`cmille13@`, `vdelgad7@`) establish the institutional pattern, and `briany@` fits it while the stored `byoung@` does not.
+
+**A third location was carrying the old address.** Beyond `contact.email`, the St. Edward's **`bio` string ends with a hardcoded `"Email: byoung@stedwards.edu"`**. Fixed in the same commit — a repo-wide grep for `byoung@stedwards`/`512-448-8415` now returns nothing anywhere.
+
+**Seton Hall's email was deliberately NOT changed, and that restraint is the point.** The live coaches page publishes a phone for Lindberg but **no email at all**, and the stored `alindberg@shu.edu` appears nowhere on the site. It is also the only `shu.edu` address in the whole file, and it does not match the `firstname.lastname@shu.edu` pattern every colleague uses (`jeffrey.matteo@`, `nicolai.andersen@`). So it is **suspicious but unprovable** — deriving `andreas.lindberg@shu.edu` from a pattern would be exactly the guess §7 forbids. Logged in §6 instead. Phone normalised to the file's dominant `123-456-7890` convention (65 of 74 non-blank entries).
+
+**No re-rank.** `overallScore` did not move for either coach, so the §3a Type 2 "re-rank ALL" trigger does not fire. Names unchanged, so the Dashboard shortlist panel is untouched.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0**. `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings. `python -m json.tool data/coaches.json`. CRLF preserved (5407 CRLF, 0 bare LF). Diff is 4 lines.
+
+**Browser-verified on every surface §3a Type 2 lists.** Coaches → **Profiles**: both new values render, zero occurrences of the old email or old phone. School **modals** (Coach & Contact tab): St. Edward's `briany@stedwards.edu` / `512-448-8507`, Seton Hall `973-275-6429` where it previously had none. Coaches → **Rankings**: unaffected, as expected for a contact-only change.
+
+**Worth knowing — the Outreach tracker renders ONLY the 10 shortlisted schools** (FIU, PBA, Lynn, UCSB, USF, Barry, Clemson, UNC, FAU, SMU), confirmed live. Neither school here is shortlisted, so neither appears there. The bad address was therefore visible in the Profiles tab and the school modal, not in the outreach list.
+
+**Found while verifying, pre-existing, NOT fixed — 13 coach cards render a literal `"null"` for Yrs HC.** `yearsHC: null` on 13 entries in `coaches.json` prints as the string `null` in the Profiles stat block. Confirmed pre-existing by checking `HEAD` before this edit (13 nulls in the committed data, exactly matching the 13 rendered). Same defect class as the null-contact guard added in v43.12 — that fix guarded email/phone but not this stat. Logged in §6.
+
+---
+
+### v44.34 (August 2026) — the last 4 broken `coaches.json` URLs cleared; that field is now 108/108 live
+
+Closes the §6 item opened by v44.33. All four researched Tier-1 in a real browser, not guessed.
+
+| schoolId | stored (broken) | now | Tier-1 confirmation |
+|---|---|---|---|
+| `stedwards` | `sehawks.com/sports/mens-soccer` — NXDOMAIN | `gohilltoppers.com/sports/mens-soccer` | 2026 staff page: *"Brian Young · Head Men's Soccer Coach"* |
+| `setonhall` | `shupiratesl.com/sports/mens-soccer` — NXDOMAIN | `shupirates.com/sports/mens-soccer` | 2026 coaches page: *"Andreas Lindberg · Head Coach"* |
+| `virginia` | `virginiasports.com/sports/mens-soccer` — 404 | `virginiasports.com/sports/msoc` | program page names Gelnovatch; UVA is the known non-JUCO `msoc` school (v44.31) |
+| `ncstate` | `…/roster/coaches/marc-hubbard/**5258**` — 404 | `gopack.com/sports/mens-soccer` | coaches page: *"Marc Hubbard · Head Coach"* |
+
+**The NC State case proves the rot hypothesis outright.** Its stored deep link carried bio id **5258**; the live page now serves Hubbard at **5017**. The coach never changed — the id rotated underneath the link. All four are therefore stored as **program pages**, matching the dominant convention (81 of 108 entries) and leaving only 3 deep links in the file. **Do not store `/roster/coaches/<slug>/<id>` URLs — they rot.**
+
+**Finding St. Edward's required real research, and one candidate was a trap.** `sehawks.com` is gone and `stedwardsathletics.com`/`sehilltoppers.com` don't resolve. `goseu.com` *does* resolve with HTTP 200 — and serves a Chinese video-streaming site. A status-code-only check would have stored it. Content had to be read, exactly as the Monroe parked-lander lesson (v42.13) requires. The real host is `gohilltoppers.com` (title: *"St. Edward's University Athletics"*).
+
+**A cross-check worth recording: every corrected URL already existed, correct, in the school object.** `stedwards.url`, `setonhall.url`, `virginia.url` and `ncstate.url` each already held exactly the address independent research arrived at, and `DOMAINS`/`SITE_URLS` were correct too. The two dead hosts appeared **nowhere else in the repo** — `grep` for `sehawks`/`shupiratesl` hit only these two `coaches.json` lines. That is the v44.33 diagnosis confirmed from the other direction: `coaches.json.url` was the one stored-link field no sweep had ever covered, so it alone drifted while every swept field stayed right.
+
+**Result: a full re-sweep of all 111 coach entries returns 108 × HTTP 200, 0 × 404, 0 × NXDOMAIN.** The remaining 3 have no `url` at all (`tyler_jc`, `indian_hills`, `murray_state_ok`) — a data gap, not breakage, and unchanged here.
+
+**Scope note — no UI change, and none was possible.** `coaches.json.url` has **no consumer in any renderer** (verified by enumerating every field read off a coach object in js/app.js: `name`, `contact`, `rank`, `overallScore`, `yearsHC`, `licence`, `mlsPlayers`, `strengths`, `scholarships`, `rankClass`, `otherSchools` — no `url`). It is stored reference data. So this commit fixes correctness of the data, not anything on screen, and the browser check below is a regression smoke test rather than a visual confirmation.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0**. `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings. `python -m json.tool data/coaches.json`. CRLF preserved (5407 CRLF, 0 bare LF). Browser: all 11 tabs render, `coachData` loads 111 entries, all four corrected coaches resolve via `getCoach()`, zero console errors.
+
+**Found while verifying, NOT changed — two coach-contact discrepancies (Change Type 2 territory).** St. Edward's live staff page lists **`briany@stedwards.edu` / 512-448-8507**; the guide stores `byoung@stedwards.edu` / 512-448-8415 — *both* fields differ, so outreach mail may be bouncing today. Seton Hall's live page lists **(973) 275-6429** where the guide stores an empty phone. Logged in §6 rather than applied: a contact change is Change Type 2, and this commit was scoped to URLs.
+
+---
+
+### v44.33 (August 2026) — `rosterUrl()`'s override map deleted (all 4 entries were no-ops or dead) + OCU coach URL fixed
+
+**Found by the 2026-27 availability survey**, not by a bug report: OCU's roster probe returned **HTTP 404** while every other school resolved.
+
+**All four overrides audited. Not one of them was doing useful work.**
+
+| id | override | what the rule derives without it | verdict |
+|---|---|---|---|
+| `lynn` | `lynnfightingknights.com/sports/mens-soccer/roster` | *identical string* | no-op |
+| `csula` | `lagoldeneagles.com/sports/mens-soccer/roster` | *identical string* | no-op |
+| `keiser` | `kuseahawks.com/sports/mens-soccer/roster` | *identical string* | no-op |
+| `ocu` | `okcu.edu/athletics/soccer/roster` → **404** | `www.ocusports.com/sports/mens-soccer/roster` → **200** | **dead** |
+
+Three were byte-identical to what `rosterUrl()`'s own rule already produces, and the only one that changed anything was pointing at a dead address. So the entire `overrides` map and its lookup were **removed** rather than patched — same resolution as the Miami Dade override in v42.13. OCU's school object already stored the correct `www.ocusports.com/sports/mens-soccer`, so deleting the override is the whole fix.
+
+**Why this hid for so long, and the lesson worth keeping.** A hardcoded override **silently masks the school object's `url`**, and neither validator can see it. v44.31's 333-link sweep checked `url` + `SITE_URLS` + `DOMAINS` — it never touched the four `rosterUrl()` overrides, so OCU's dead link sat behind a correct-looking school record. The new comment in `rosterUrl()` says not to re-add per-school roster URLs for exactly this reason.
+
+**Second defect, same school.** `data/coaches.json`'s OCU entry stored `https://okcu.edu/athletics/soccer` — also **404**. Corrected to Billy Martin's live bio page, `https://www.ocusports.com/sports/mens-soccer/roster/coaches/billy-martin/1173`, Tier-1 verified in-browser (page title: *"Billy Martin - Head men's and women's soccer coach"*). The legacy entry id `finnegan` was left alone (known, documented in v43.10).
+
+**A third gap this exposed — logged in §6, NOT fixed here.** Sweeping all 108 `coaches.json` URLs found **5 broken**: `ocu` (fixed here), plus `virginia` 404, `ncstate` 404, `stedwards` NXDOMAIN, and **`setonhall` still carrying the exact `shupiratesl.com` typo v44.31 fixed in `DOMAINS` but never mirrored here**. Verified candidate corrections are recorded in §6 for three of them; St. Edward's needs real research. Out of scope for a fix that was meant to be one override line.
+
+**No scoring impact.** `rosterUrl()` and `coaches.json.url` are not read by `scores.js`.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0**. `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings. `node --check js/app.js`, `python -m json.tool data/coaches.json`. CRLF preserved in coaches.json (5407 CRLF, 0 bare LF).
+
+**Browser-verified.** `rosterUrl()` output re-checked for all four ex-override schools plus regression cases: OCU now `www.ocusports.com/.../roster`; lynn/csula/keiser **unchanged**, byte-identical to before; the v42.5 JUCO `/index` fallback still returns the program page (`tyler_jc`, `miami_dade`) rather than a 404ing `/index/roster`. All seven derived URLs return **200**. Rendered "📋 Roster →" hrefs confirmed on both the Minutes Outlook card and the school modal. Zero console errors.
+
+---
+
+### v44.32 (August 2026) — `mf_total_2025` → `mf_total` + `roster_season` (2026-27 roster refresh campaign, Session 0)
+
+**Why this had to land before any roster work.** The 2026-27 refresh campaign writes this field for all 111 schools. Renaming it afterwards would mean migrating every record twice, so it is the campaign's Session 0 blocker (the other two — Wake Forest's `lensScores.value` and Notre Dame's `url` — cleared in v44.30/v44.31).
+
+**The bug it fixes was already live, not hypothetical.** `minutesOutlook.mf_total_2025` carried a season in its *key name*, while the value is simply "midfielders on whichever roster was last scraped." Murray State (added v44.29) was researched off its **2026-27** roster, so its Minutes Outlook stat box read **"MFs (2025): 14"** on a 2026-27 count. The label was wrong the day it shipped, and Wave 1 would have made it wrong for ~55 more schools. Logged as a deferred item in v44.30; closed here.
+
+**The fix — the season travels with the count instead of living in the renderer.**
+
+| Before | After |
+|---|---|
+| `"mf_total_2025": 14` | `"mf_total": 14`<br>`"roster_season": "2026-27"` |
+| label hardcoded `MFs (2025)` in two renderers | label derived per school from `roster_season` |
+
+104 schools migrated (every `minutesOutlook.available: true` school — 103 as of v44.24 plus Murray State). **`roster_season` was not guessed.** 103 → `2025-26`, sourced from what the data already asserts: CLAUDE.md §5 documented the field as the 2025 count and `MO-KEYS` has enforced that key name repo-wide since v40.2, plus per-school confirmation where it exists (`smc`: *"Stored 2025-26 roster"*; `tulsa`: *"the live 2025 roster … 2026 roster remains unpublished"*). 1 → `2026-27` (`murray_state_ok`, whose own note reads *"On the 2026-27 roster, 17 of 23 players are listed Fr."*).
+
+**Migration method.** Line-level edit preserving CRLF, indentation and key order, with `roster_season` inserted directly after `mf_total` — a `json.load`/`json.dump` round-trip would have reformatted all nine data files, buried the real diff and risked re-encoding the mojibake already present in the data. Diff is exactly 104 lines replaced by 208.
+
+**Two renderers, both updated** — `js/app.js:1381` (school modal, ⏱ Minutes tab) and `js/app.js:3304` (Minutes Outlook tab card). Both fall back to a season-neutral `"Midfielders"` if `roster_season` is ever absent, rather than printing `MFs (undefined)`.
+
+**Validator.** `MO_KEYS_AVAILABLE` and `MO_REQUIRED` updated; `roster_season` is now **required** on every `available:true` school, plus a new format check pinning it to the academic-year form `YYYY-YY`. That format check is not pedantry — campaign trap 2 is that athletics sites label fall 2026 as `"2026"` at calendar-year schools and `"2026-27"` at academic-year ones, and this string renders verbatim, so an unnormalised scrape would put "MFs (2026)" next to "MFs (2026-27)" on the same tab. **Both new checks were negative-tested** (bad format → 1 issue; key removed → 1 issue) before being trusted, then the file was restored.
+
+**No scoring cascade.** `scores.js`'s `minutesOutlookScore()` reads only `trajectory[].pct` — it has never read `mf_total`. No `fitOlivier`, no `lensScores`, no coach re-rank.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0** (111 schools, 111 coaches). `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings (unchanged). `python -m json.tool` on all 14 data files, `node --check` on both edited JS files.
+
+**Browser-verified, not inferred.** All **104** Minutes Outlook cards expanded and swept: 103 × `MFs (2025-26)`, 1 × `MFs (2026-27)`, zero fallbacks, zero `undefined`. Modal path checked independently (it is a different function): Murray State `MFs (2026-27) 14`, FIU `MFs (2025-26) 9`. All 11 tabs render, zero console errors.
+
+**What this gives the campaign for free.** `roster_season` doubles as a refresh ledger — after each wave, the Minutes Outlook tab shows at a glance which schools are on 2026-27 data and which are still on 2025-26, without cross-referencing a scratch file.
+
+---
+
+### v44.31 (August 2026) — Notre Dame's dead `url` fixed, plus two more dead hosts found by a full 333-URL sweep
+
+**The reported bug.** `notredame.url` was `https://fightingirish.com/sports/mens-soccer` → **HTTP 404**. Notre Dame uses the `/sports/msoc` path convention. The same dead string was also stored on the coach entry in `data/coaches.json`, so both were corrected.
+
+**Bare path, not `/index` — and the reason matters.** 20 schools store `/sports/msoc/index`; **all 20 are JUCO/Sidearm**, and `rosterUrl()` (js/app.js) deliberately *stops* at the program page for any URL ending in `/index` (v42.5 — Sidearm requires a season slug that rots every August). Storing Notre Dame bare matches **Virginia**, the only other non-JUCO msoc school, and lets `rosterUrl()` build `https://fightingirish.com/sports/msoc/roster` — verified 200 and rendering the live 2026-27 squad in a real browser.
+
+**Three consumers, not one.** The report described this as the "Visit Site" link; it is actually not that. `SITE_URLS[u.id]` drives Visit Site (the globe link, `nd.edu`, unaffected). `u.url` drives three other things, all of which were broken and are now verified working in-browser: the modal Links row **"Men's Soccer →"** (app.js:1228), the **Compare tab "Visit →"** row (app.js:802), and **`rosterUrl()`** → the Minutes Outlook "📋 Roster →" button (app.js:3282).
+
+**The sweep — 111 `url` + 111 `SITE_URLS` + 111 `DOMAINS`.** Two further genuinely dead hosts, both proven **NXDOMAIN**:
+
+| id | field | stored (dead) | corrected |
+|---|---|---|---|
+| `tyler_jc` | `url` (juco.json) | `www.apacheathletics.com` — NXDOMAIN | `apacheathletics.com` (bare host resolves, renders TJC Men's Soccer) |
+| `setonhall` | `DOMAINS` (app.js) | `shupiratesl.com` — NXDOMAIN, stray trailing `l` | `shupirates.com` |
+
+Seton Hall's was **silently** broken: `DOMAINS[u.id]` feeds the modal-header logo via Google's favicon service, which returns a *generic globe* rather than an error for an unresolvable domain. Measured: old host → **404, 726 B** placeholder; new host → **200, 1360 B** real icon. Nothing in the UI or the validators would ever have flagged this.
+
+**Blocked ≠ dead — the rule that kept the sweep honest.** A naive status check would have condemned ~15 live hosts. Cloudflare returns **202 with an empty body** (`jcccathletics.com`, `efsctitans.com`, `goreivers.com`) and **403** (`iwcc.edu`, `indianhills.edu`, plus `umd.edu`/`unc.edu`/`umich.edu`/`uakron.edu` and friends in SITE_URLS) to scripted requests. Python `requests` additionally threw `SSLError` on `rutgers.edu` and `uncc.edu` and `ConnectTimeout` on `chapman.edu` — all three resolve and serve fine. **Only NXDOMAIN was treated as proof of death**, per the standard set in v42.13/v42.4.
+
+**Deferred, not guessed — `DOMAINS.gcu = 'lopes.com'`.** It *resolves* (so it fails the NXDOMAIN test) but times out in both a scripted client and a real browser at 300 s. `gculopes.com` is what GCU's own school-object `url` uses and its favicon returns 200. Strong suspicion, not proof, so it is logged in §6 rather than changed — same discipline as the Monroe parked-lander case.
+
+**No scoring change.** `url` and `DOMAINS` are not read by `scores.js`. Notre Dame's `fitOlivier` holds at **45** and its `lensScores.value` at **27** — which is exactly `round(0.6 × 45)`, correct under v44.30's new VALUE check since Notre Dame's $91,986 is above budget and floors affordability at 0. No cascade, no coach re-rank.
+
+**Validation.** `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings (unchanged). `node validate_consistency.js` → **Issues: 0**, re-run after rebasing onto v44.30 so the new VALUE check was live. `node --check js/app.js`, `python -m json.tool` on all three edited JSONs. Browser: all 11 tabs render, zero console errors, both corrected modals and every `u.url` consumer confirmed pointing at a live URL.
+
+**Deployed and verified live** (Phase 7, `bustachat.github.io/olivier-guide`): all four corrected values served, v44.31 in the title, 111 schools, Notre Dame's modal "Men's Soccer →" and Minutes Outlook "📋 Roster →" resolving to `/sports/msoc` and `/sports/msoc/roster`, Seton Hall's logo requesting the live host, 11/11 tabs rendering, zero console errors.
+
+**Found during live verification, logged NOT fixed — `tyler_jc`'s two domain fields are inverted.** Chasing why TJC's modal logo requested `tjc.edu` surfaced that there are two independent domain stores holding deliberately different values: `DOMAINS` (app.js) = **athletics** host → modal logo; the school object's `domain` = **university** host → Dashboard logo. 73 of 111 differ, and 72 of those splits are correct by design. Tyler JC alone is reversed (app.js `tjc.edu`, school `apacheathletics.com`), which is exactly the swap §7 Phase 1B warns about by name — the v-era domain fix was applied to the school object and never mirrored into `DOMAINS`. Cosmetic, both hosts resolve, no scoring impact; one-token fix logged in §6. Scope discipline per §7 Phase 1 — found while verifying, not fixed in a landed session.
+
+**Also updated for the next session:** `README.md` header v44.30 → v44.31; CLAUDE.md §1's "Current version" line, which had sat stale at **v42.18 for 13 versions** (§6's snapshot was correct throughout — §1 is now fixed and annotated as the less reliable of the two); and a new **§15 "Checking whether a stored URL is dead"** subsection recording the sweep method, since the script itself is throwaway.
+
+**Still open:** no validator check for dead `url`s — and deliberately so. ~15 hosts bot-block permanently, so a CI check would be a standing false-positive generator that trains everyone to ignore the validator. Periodic manual sweep is the right shape; the method is now in §15.
+
+---
+
+### v44.30 (August 2026) — Wake Forest value-lens drift fixed + a VALUE check so it can't recur silently (Change Type 4 + 11)
+
+**The bug.** `wakeforest.lensScores.value` was stored as **50**; the formula (`fitOlivier×0.6 + affordability×40`, CLAUDE.md §7 Phase 1J) yields **29**. Wake Forest's `costNum` is $91,000 against a budget of ~$51.6–52k, so `costRatio` caps at 1.0 and affordability floors at **0** — meaning its value lens should equal `0.6 × fitOlivier` exactly, with no affordability credit at all. Corrected to 29.
+
+**Why it mattered — this was not cosmetic.** The Value-First lens exists to surface affordability. At the stored 50, Wake Forest ranked **30th of 111** on that lens while **71 schools that are genuinely cheaper ranked below it** — the 6th most expensive school in the guide sitting mid-table on the one lens whose entire job is flagging cost. It now ranks 81st. Verified in-browser: the lens-aware Best Fit sort places it correctly in the ACC section (29, between NC State 34 and Virginia 27); at 50 it had been sorting to the top of the conference.
+
+**New `VALUE` check in `validate_consistency.js`.** The root cause is structural, not a typo. `fitOlivier` is recomputed by `scores.js` on every page load (`recalculateAllScores()` in `initApp()`), so drift there surfaces immediately and the validator's FIT check catches it. **`lensScores.value` is stored-only — no runtime code recomputes it.** It is written by hand during the §3a Type 4 and Type 12 cascades and thereafter only read (Value-First lens sort, Dashboard lens panel). That made it the one derived school score that could drift silently and indefinitely, with nothing but eyeballing between a missed cascade step and a wrong ranking. The check mirrors the FIT check's structure and its `>1` tolerance, which also absorbs the two defensible readings of the budget (`budgetUSD` 52000 vs `budgetAUD/fxRate` = 51612.90 — across all 111 schools those differ by at most 1 point, on Temple). Proven to fire: reverting Wake Forest to 50 produces `[VALUE] wakeforest (acc): stored 50, formula 29`, and restoring 29 returns Issues to 0.
+
+**Two more outliers found, deliberately NOT changed — Army and Navy.** The same sweep flagged `navy` (stored 47, formula 66) and `army` (stored 45, formula 65). These are the §4 service academies, whose `fin{}` numerics are **all zeroed by rule** — which saturates affordability at 1.0 and hands them the full +40. Their stored values (both ≈ `fit+3`) deliberately decline that credit, because the "free" tuition is paid for with a 5-year military service commitment: a real cost the dollar figure cannot express, and §4 is explicit that these schools are incompatible with Olivier's DPT/MLS pathway. Applying the formula would have promoted them to roughly 6th and 8th on the Value lens. That is an owner design question, not drift, so the check **exempts `costNum === 0`** rather than reporting two intentional values as errors — and the question is logged in CLAUDE.md §6 deferred items. Scope discipline per §7 Phase 1: found while researching, not fixed in the same session.
+
+**Validation.** `node validate_consistency.js` → **Issues: 0** (unchanged from baseline). `python validate_schools.py` → PASS, 111 schools, 17 pre-existing warnings (unchanged). `node --check validate_consistency.js`, `python -m json.tool` on both edited JSONs. Browser: zero console errors, 111 schools loaded, Value lens + lens-aware sort + Dashboard lens panel all exercised.
+
+**Also noted, not fixed:** `README.md`'s header still reads "Version 40.11" and "110 universities", and its version table has no rows for v41–v44 — pre-existing drift across four versions. Header and count corrected this session; the missing v41–v43 era rows are logged as deferred rather than back-filled with summaries of work this session didn't do.
+
+---
+
+### v44.29 (August 2026) — Added Murray State College (OK) as a full-profile JUCO (Change Type 1 + 14)
+
+New school: **Murray State College (Aggies)**, Tishomingo, Oklahoma — NJCAA Division I, Region II. `murray_state_ok`, 111th school in the guide and the 30th JUCO. Owner-approved as a full profile (not listed) on the strength of the program and the recruiting pathway.
+
+**Why it earns a full profile.** Back-to-back NJCAA DI National Tournament qualifiers (2024, 2025), Region II champions both years, district champions 2023/2024/2025, and a 2025 NJCAA All-American (Dariel Contrera). More decisive for this athlete: it is the most freshman-open intake in the guide's JUCO set — **17 of the 23 players on the 2026-27 roster are true freshmen and every single previous-school entry is a high school or secondary school**, with zero JUCO or 4-year transfers. That intake includes an Australian, Zachary Britton (North Manly, Sydney, via Freshwater Senior Campus) — a direct precedent for Olivier's exact profile. This is a change from 2025-26, which did carry transfers in from Indian Hills, Iowa Western, Monroe College and Salt Lake CC.
+
+**Roster year — new standing practice.** Owner direction this session: *"Claude now needs to check 2026-2027 rosters as they become available."* Murray's `minutesOutlook` and `recruit_pathway` are therefore built from the **2026-27** roster, not 2025-26. Two traps were hit and avoided in the process, both worth recording:
+- **`get_page_text` returned only page chrome for both the 2025-26 and 2026-27 rosters**, which is indistinguishable from a genuinely unpublished season. Both were fully populated. The reliable test is a DOM read (`article.innerText.split('View Full Bio').length`). This is exactly the control-test rule in §15 — a "no results" scrape is a claim, not a fact.
+- **Head coach had changed.** The 2025-26 roster's staff block lists Sam Winning; the 2026-27 block and the live staff directory both list **Chris Spear**. Confirmed via the program's own news archive: Winning left for an NCAA D2 job (5/4/2026) after being named District Coach of the Year (2/7/2026), and Spear was appointed 2 June 2026.
+
+**Coach — Chris Spear, `overallScore` 56 (`rk-solid`), rank 107.** Scored against §5d as a new appointment, deliberately excluding the program's 2024/2025 tournament runs (those are Winning's results and live in the school's `titles[]`/`confRecord[]`). Pillar A is long but shallow at collegiate level — 25+ years coaching, but one collegiate assistant stop (Jacksonville College 2023-24) and this is his first collegiate head-coaching role; no licence documented; head coach of the men's AND women's programs with one shared assistant, so no position-specific coaching. Pillar B rests on the college's claim of 89 players placed into college soccer — real, but club-level, with no pro signings attributable to him. All 111 coaches re-ranked; only 4 pre-existing coaches moved, each by one place.
+
+**Dev scores 50/46/42 (devAvg 46, JUCO ceiling 68).** Scored on environment only, per §5a. Evidence: no strength & conditioning coach appears anywhere in the athletics staff directory; two athletic trainers cover ~230 athletes across 13+ sports; the soccer venue is an unnamed "Soccer Field" shared by the men's and women's programs with no capacity, surface or lighting detail published; no video-analysis or GPS/wearable provision documented.
+
+**Fit Score 60**, reconciled against the live `scores.js` formula in-browser. `fundingPathway: "full"` (NJCAA DI → no penalty, Change Type 14); `facilityDetails.housing.available: true` (four residence halls → no housing penalty). Cost is among the lowest in the guide at **$18,508/yr** — taken from the college's own 2026-27 tuition schedule ($5,238/sem non-resident tuition & fees at 15 hours, $4,016/sem room + 15-meal plan), with the men's athletic-aid total cross-checked against the 2025 federal EADA filing.
+
+**ACU alignment 6/16.** The A.S. Health, Wellness & Human Performance is a genuine exercise-science transfer degree, mapped course-by-course off the 2025-26 degree check sheet PDF. The gap that matters: the degree contains no exercise-physiology course, so EXSC225 and EXSC322 — two of the four units WES is most likely to credit — are not covered.
+
+**Map coordinates — caught in verification.** The lat/lon formula gave (310, 243). The `isPointInFill` test passed, but that only proves the point is on the US landmass, not in the right *state*: interpolating between Oklahoma City (326, 224) and Dallas (317, 255) puts the OK/TX border at y≈242, so (310, 243) rendered Tishomingo **in Texas**, and 12px too far west. Corrected to **(322, 238)** by local interpolation at Tishomingo's exact latitude fraction between the two known-state anchors. A global lat/lon regression over 12 anchors was tried and rejected — residuals ran to ±28px, confirming the hand-drawn map is not a projection and only *local* anchors are trustworthy.
+
+**Also updated:** `conferences.json` (guideSchools 29→30, desc and olivierNote — the guide now spans **7** NJCAA regions, Region 2 being new), `conf-prestige.json` (programsInGuide + relevance), `js/app.js` DOMAINS/SITE_URLS/SOCIAL (Instagram `mscmsoccer` and X `MSCmenssoccer` both navigated to and confirmed live) and the JUCO `CONF_SECTIONS` intro (stale "All 12 JUCO programs" → 30), CLAUDE.md School → File Reference Table (110→111 schools). `guideVersion` v44.28→v44.29.
+
+**Validation:** `python -m json.tool` valid on all four data files, `node --check` clean on app.js and scores.js, `validate_schools.py` PASS (111 schools, 17 pre-existing warnings, none for Murray State), `validate_consistency.js` **Issues: 0** with 111/111 on both the §5a dev rubric and the §5d coach rubric. Verified live in a local preview: card in the JUCO section under a new auto-generated "NJCAA Region 2 — Oklahoma / Western Arkansas" subhead, all 9 modal tabs populated, Development shows exactly 3 bars, Coaches/Conferences/Minutes/Financial/Pathways/Compare all render, zero console errors. ACU Alignment correctly omits it — that tab excludes all JUCOs by design (verified against 4 other JUCOs).
+
+**Deferred (not fixed — out of session scope):** (1) `wakeforest` `lensScores.value` is 50 where the formula every other school follows gives 29; found while validating the value-lens formula across 108 schools (107 matched within ±1). (2) `minutesOutlook.mf_total_2025` is season-stamped and its "MFs 2025" UI label is now wrong for Murray State, whose counts are 2026-27; needs a season-neutral key as more schools move to newer rosters.
+
+---
+
 ### v44.28 (July 2026) — Removed athlete-specific personalization from all coach bios (Change Type 2)
 
 Owner spotted a factual error in Castellanos's (Drexel) bio, surfaced right after the v44.27 architecture consolidation: *"...aligns well with Olivier's profile as a Belgian international recruit."* Olivier is Australian, not Belgian. Fixing that single word led to a bigger question from the owner: coach bios shouldn't name the specific athlete at all, since `coaches.json` is meant to be athlete-agnostic (the project's own architecture supports onboarding additional athletes under `athletes/`, each with their own config — a coach bio hardcoding "Olivier" by name, or a date tied to his specific `targetDeparture` (August 2027), would be stale or wrong for any other athlete using the same guide).

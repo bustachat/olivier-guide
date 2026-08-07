@@ -64,10 +64,11 @@
     "acuAlign": 10,
     "acuAlignNote": "Core kinesiology covered. Charleston's program is solid but smaller than major research universities. Good for a student who prioritises lifestyle and city over research facilities.",
     "soccerLevel": "CAA — Competitive (improving)",
-    "cost": "~$38k/yr",
+    "soccerLevelShort": "CAA",
     "aid": "Athletic + Need",
     "size": 11000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0 NCAA core (min)",
       "minSchol": "3.0 for merit layer",
@@ -75,14 +76,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 38000,
-      "tuition": 24000,
-      "roomBoard": 11000,
-      "fees": 3000,
+      "costNum": 55291,
+      "tuition": 39344,
+      "roomBoard": 15237,
+      "fees": 710,
       "maxAthletic": 0.9,
       "maxAcademic": 10000,
       "aidType": "athletic+need",
-      "internationalNote": "Affordable D1. Athletic scholarship can cover most costs. Academic merit available for 3.0+ GPA."
+      "internationalNote": "College of Charleston out-of-state direct billed cost $55,291 (2026-27, Tier-1 verified from the College's official Cost of Attendance table, out-of-state non-resident column): tuition $39,344 + housing and food $15,237 + tech/athletic/library fee $710. Housing and food is the College's weighted average, based on double occupancy and a 19-meals-a-week plan. Its own headline out-of-state total is $63,856, adding personal, transportation, books and loan fees that this guide excludes. Based on the College's stated 12 hours a semester. The previous stored $38,000 was an unresearched ballpark and understated the cost by $17,291 — this is NOT the affordable D1 the old note described. Athletic scholarship can cover a large share; academic merit available for 3.0+ GPA."
     },
     "culture": {
       "vibe": "One of America's most beautiful and charming cities. The College of Charleston sits in the heart of the historic district — cobblestone streets, antebellum architecture, and waterfront beauty. The campus atmosphere matches the city — relaxed, social, and genuinely enjoyable.",
@@ -112,7 +113,7 @@
       "fitness": 72
     },
     "devScoresNote": "v42.21 §5a re-baseline (training environment only). Live cofcsports.com MSOC staff: 4 coaches (HC Wiggans + 3 assts) + dedicated Asst Dir of Sports Performance (Wibbenmeyer) + MUSC athletic trainer. Statsports GPS (2023) + Hudl video; $6.5M dedicated 5,000-seat natural-grass stadium (off-campus 7 mi). Best-resourced CAA environment; results excluded.",
-    "fitOlivier": 61,
+    "fitOlivier": 58,
     "tags": [
       "warm",
       "city",
@@ -132,26 +133,32 @@
     "rec": "Charleston is one of America's most beautiful cities — historic waterfront, warm climate. Keith Wiggans played for the local pro team (Charleston Battery). Best if Olivier values city lifestyle and a developing D1 program with personal coaching.",
     "url": "https://cofcsports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 61,
+      "overall": 58,
       "soccer": 58,
       "academic": 68,
-      "minutes": 41,
+      "minutes": 31,
       "lifestyle": 80,
-      "value": 47
+      "value": 35
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 2,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
+        "Arnau Olle",
         "Ezequiel Emanuele Goetzke",
         "Hogan Walker"
       ],
-      "rising_senior_2027_count": 0,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 4,
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Stian Bendvold",
+        "Ramsey Ray"
+      ],
+      "rising_junior_2027_count": 5,
       "rising_junior_2027_names": [
         "Dan Toulson",
+        "Federico Bellisi",
         "Bemanzi Alibaruho",
         "Reeves Cates",
         "Paul Killeen"
@@ -161,14 +168,14 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
@@ -179,13 +186,13 @@
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "Yr1 competitive: 4 rising juniors present. Yr2 Olivier proves himself while juniors become seniors. Yr3 major clearance opens leadership role.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 cofcsports.com roster: of 10 MF/D-MF spots, only 2 came via transfer (Bellisi from North Idaho College, a JUCO; Olle from Lenoir-Rhyne) — the other 8, including several internationals (Goetzke from Ecuador), arrived as true freshmen."
+      "recruit_pathway_note": "Re-read on the live 2026-27 cofcsports.com roster (11 MFs of 28). Charleston's table publishes no previous-school column, so the split cannot be re-derived; classification retained and flagged lower-confidence. 5 of 11 are sophomores returning through 2029, so the queue behind the 3 departing seniors is long."
     },
     "profileDepth": "full",
     "confKey": "caa",
@@ -291,7 +298,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology and health sciences pathway. Pre-PT advising available. Williamsburg is near Sentara Healthcare for clinical access.",
     "soccerLevel": "CAA — Strong",
-    "cost": "~$73k/yr",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 72628,
       "internationalNote": "William & Mary out-of-state COA is ~$73k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. Williamsburg, VA has moderate cost of living. One of the most selective public universities in the US.",
@@ -305,6 +312,7 @@
     "aid": "Athletic",
     "size": 6000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.2+",
@@ -313,14 +321,14 @@
     },
     "mapX": 509,
     "mapY": 188,
-    "fitOlivier": 36,
+    "fitOlivier": 39,
     "lensScores": {
-      "overall": 36,
+      "overall": 39,
       "soccer": 65,
       "academic": 70,
-      "minutes": 28,
+      "minutes": 31,
       "lifestyle": 0,
-      "value": 22
+      "value": 23
     },
     "confRecord": [
       {
@@ -387,42 +395,43 @@
     "domain": "wm.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
-      "cleared_before_2027": 3,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
-        "Diego Garciarena",
-        "Landon Cartwright",
-        "Gabe Ruitenberg"
+        "Hamilton Howes",
+        "Gabe Ruitenberg",
+        "Alexandros Katsari-Hoefer",
+        "Kai Feng"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 1,
       "rising_senior_2027_names": [
-        "Alex Garrison",
-        "Max Cooper"
+        "Thor Sigurjonsson"
       ],
       "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Clem Cartwright",
-        "Aiden Sena"
+        "Beckham Harris",
+        "JT Quinter"
       ],
       "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 18,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 32,
-          "label": "Regular contributor"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 58,
-          "label": "Likely starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -433,7 +442,7 @@
       ],
       "trajectoryNote": "3 of 7 MFs clear before Olivier arrives (Sr×2, Gr×1). 4 remain including 2 rising juniors — competitive but manageable for a quality recruit.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 tribeathletics.com roster: of 12 MF/D-MF spots, only 1 (Feng, a transfer from VCU) came via transfer — the other 11, including several internationals (Sigurjonsson from Iceland), arrived as true freshmen."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 tribeathletics.com roster (11 MFs of 28). Only 1 of 11 lists a previous college (Kai Feng, VCU); the other 10 arrived directly from high school or club. 4 clear before 2027 against just 1 rising senior."
     },
     "color": [
       "#dbeafe",
@@ -560,13 +569,13 @@
     "acuAlign": 10,
     "acuAlignNote": "Health Sciences covers anatomy, physiology. NYC proximity (30 min via LIRR) opens extensive clinical placement for pre-PT.",
     "soccerLevel": "CAA — Strong",
-    "cost": "~$62k/yr",
+    "soccerLevelShort": "CAA",
     "fin": {
-      "costNum": 62000,
-      "internationalNote": "Hofstra full COA is ~$62k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Merit aid available for international students. Long Island suburban campus with proximity to NYC — moderate-to-high living costs. Strong sports science and health programs.",
-      "tuition": 48000,
-      "roomBoard": 12000,
-      "fees": 2000,
+      "costNum": 80550,
+      "internationalNote": "Hofstra direct billed cost $80,550 (2026-27, Tier-1 verified from the Hofstra Bursar's official 2026-2027 Tuition & Fees schedule): full-time tuition $30,468 a term = $60,936 + university fee $392, technology fee $115 and activity fee $80 a term = $1,174 + Towers Double $6,300 a term = $12,600 + dining Option 5 $2,920 a term = $5,840. Room and dining are itemised separately by Hofstra rather than budgeted, so the combination used is stated here: a standard Towers Double and Option 5, which is the cheapest dining plan available to a first- or second-year (Options 2-4 are restricted to juniors and above). A suite without a lounge would be $114 a year more. ⚠ Do NOT use Hofstra's advertised $66,466 'tuition and fees' figure — that is the VOLUNTARY four-year locked-in rate ($32,726 a term), an optional hedge against future increases, not the standard rate. The previous stored $62,000 was an unresearched ballpark and understated the cost by $18,550. Long Island living costs are high; athletic and academic aid stack.",
+      "tuition": 60936,
+      "roomBoard": 18440,
+      "fees": 1174,
       "maxAthletic": 0.85,
       "maxAcademic": 10000,
       "aidType": "athletic"
@@ -574,6 +583,7 @@
     "aid": "Athletic",
     "size": 7000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -582,14 +592,14 @@
     },
     "mapX": 535,
     "mapY": 152,
-    "fitOlivier": 42,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 42,
+      "overall": 47,
       "soccer": 65,
       "academic": 55,
-      "minutes": 19,
+      "minutes": 31,
       "lifestyle": 50,
-      "value": 26
+      "value": 28
     },
     "confRecord": [
       {
@@ -657,52 +667,55 @@
     "domain": "hofstra.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 6,
+      "mf_total": 12,
+      "roster_season": "2026-27",
       "cleared_before_2027": 2,
       "cleared_names": [
-        "Henri Poll",
-        "Charlie Blair"
+        "Sean Keane",
+        "David Citron"
       ],
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
+        "Henri Poll",
+        "Marc Perkuhn",
+        "Charlie Blair",
         "Owen Haviland"
       ],
-      "rising_junior_2027_count": 3,
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "James York",
-        "Hayes Laibe",
-        "Konstantinos Karageorgis"
+        "Jack Benham",
+        "Axel Ruben"
       ],
       "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 12,
-          "label": "Fringe squad"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 22,
+          "pct": 40,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 48,
-          "label": "Key contributor"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 75,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "Only 2 of 6 MFs clear. Heavy rebuild load with 3 rising juniors (Jr by 2027) — Olivier would enter a crowded midfield. Note: James York (#14) is Australian from Melbourne.",
       "recruit_pathway": "Portal/JUCO-heavy",
-      "recruit_pathway_note": "Live 2026 gohofstra.com roster: of 12 MF spots, 7 (58%) came via transfer — including 2 direct JUCO transfers from the same feeder school (Tyler Junior College) plus 5 from 4-year programs (University of Queensland, Auburn Montgomery, Fort Lewis College, McKendree, Stevenson). Only 5 MFs (York, Hoey, Blair, Laibe, Karageorgis — the last two straight from academy/MLS Next) are true freshmen. Hofstra's dominant CAA program (4 straight titles) appears to be built substantially on grad-transfer and portal recruiting rather than a true-freshman pipeline — several transfers are graduate/MBA students."
+      "recruit_pathway_note": "Re-read on the live 2026-27 gohofstra.com roster (12 MFs of 27 — doubled from the 6 recorded on the 2025-26 roster). No previous-school column is published, so the stored Portal/JUCO-heavy classification is retained rather than re-derived and should be treated as lower-confidence — note it is the one non-freshman-friendly value in the CAA file, so it is worth re-testing when Hofstra next publishes the column."
     },
     "color": [
       "#dbeafe",
@@ -829,13 +842,13 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong health sciences and neuroscience pathways. Co-op program provides real clinical placement in Boston hospital system — excellent for pre-PT.",
     "soccerLevel": "CAA — Competitive",
-    "cost": "~$78k/yr",
+    "soccerLevelShort": "CAA",
     "fin": {
-      "costNum": 78000,
-      "internationalNote": "Northeastern full COA is ~$78k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Co-op program provides paid work placements that can significantly offset costs over the degree. Merit aid available. Boston living costs are high.",
-      "tuition": 62000,
-      "roomBoard": 14000,
-      "fees": 2000,
+      "costNum": 95522,
+      "internationalNote": "Northeastern direct billed cost $95,522 (2026-27, Tier-1 verified from Northeastern Undergraduate Admissions' official Estimated Cost of Attendance, Boston Campus, first-year students): tuition $71,050 + housing $13,612 + food $9,210 + fees $1,650. Its headline total is $98,322, adding books, personal expenses and transportation that this guide excludes. From Fall 2026 Northeastern consolidates the student activity, campus recreation, undergraduate student, student centre and lab fees into a single comprehensive fee, which is the $1,650 line. All estimates are subject to Board of Trustee approval. The previous stored $78,000 was an unresearched ballpark and understated the cost by $17,522. Note Northeastern's co-op model means paid work terms can offset part of the cost — but it also extends the degree, which matters for a four-year athletic eligibility clock.",
+      "tuition": 71050,
+      "roomBoard": 22822,
+      "fees": 1650,
       "maxAthletic": 0.85,
       "maxAcademic": 12000,
       "aidType": "athletic"
@@ -843,6 +856,7 @@
     "aid": "Athletic",
     "size": 17000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.2+",
@@ -851,14 +865,14 @@
     },
     "mapX": 544,
     "mapY": 136,
-    "fitOlivier": 51,
+    "fitOlivier": 37,
     "lensScores": {
-      "overall": 51,
+      "overall": 37,
       "soccer": 60,
       "academic": 75,
-      "minutes": 56,
+      "minutes": 14,
       "lifestyle": 50,
-      "value": 31
+      "value": 22
     },
     "confRecord": [
       {
@@ -924,57 +938,56 @@
     "domain": "northeastern.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
-      "cleared_before_2027": 10,
+      "mf_total": 14,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Jaden Prado",
-        "Alec Kenison",
-        "Kade Tepe",
-        "Fraser Brown",
-        "Christoph Schurz",
-        "Tomas Sciarra",
-        "Bryce Flowers",
-        "Richard Conces",
-        "Gus Mendieta",
-        "Brady Elmblad"
+        "Matty Gardner"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Derian Berisha",
-        "Shai Saarony"
+        "Ethan Kang",
+        "Richard Conces",
+        "Ignacio Doglioli"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 5,
+      "rising_junior_2027_names": [
+        "Julius Rüger",
+        "Derian Berisha",
+        "Will Schmidt",
+        "Asiah Carroll",
+        "Anthony Rapo"
+      ],
       "recruit_risk": "Low",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 45,
-          "label": "Key contributor"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 80,
-          "label": "Captain candidate"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 90,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "⚠️ 2025 roster (+1 applied). Massive 10/12 MF turnover — only 2 Freshmen remain by Fall 2027. Elite opportunity window. Northeastern's co-op model means fewer players per year.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 nuhuskies.com roster: all MFs list only an HS/club background (MLS Next academies, Toronto FC, Minnesota United II, Atlanta United Academy) with no 'Previous School' transfer indicator anywhere in the group — a true-freshman recruiting pattern built off club-academy pipelines domestically and internationally, not the transfer portal."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 nuhuskies.com roster (14 MFs of 27). 13 of 14 MFs have a previous-school entry, but almost every one is a CLUB or academy rather than a college — Houston Dynamo (MLS NEXT), Toronto FC, Barca Residency Academy, Minnesota United II, Atlanta United Academy, SC Verl II, Blau Weiss Gottschee. Only Ignacio Doglioli lists a college (Bellarmine). That is direct academy recruiting, so Freshman-friendly is strongly confirmed — but only 1 MF clears before 2027 against 10 returning underclassmen."
     },
     "color": [
       "#fee2e2",
@@ -1101,7 +1114,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Health Sciences covers anatomy, physiology. Co-op program provides clinical placements in Philadelphia hospital network for pre-PT.",
     "soccerLevel": "CAA — Competitive",
-    "cost": "~$86k/yr",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 86353,
       "internationalNote": "Drexel full COA is ~$86k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Co-op program provides paid work placements that can offset costs meaningfully. Merit aid available. Philadelphia cost of living is moderate for a major US city.",
@@ -1115,6 +1128,7 @@
     "aid": "Athletic",
     "size": 14000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -1123,14 +1137,14 @@
     },
     "mapX": 524,
     "mapY": 159,
-    "fitOlivier": 38,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 38,
+      "overall": 47,
       "soccer": 58,
       "academic": 62,
-      "minutes": 21,
+      "minutes": 43,
       "lifestyle": 50,
-      "value": 23
+      "value": 28
     },
     "confRecord": [
       {
@@ -1197,26 +1211,27 @@
     "domain": "drexel.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
-      "cleared_before_2027": 5,
+      "mf_total": 15,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
         "Tiago Lima-Bittencourt",
         "Will Starker",
-        "Zain Akhtar",
         "Max Haberl",
         "Julian Pittaoulis"
       ],
-      "rising_senior_2027_count": 4,
+      "rising_senior_2027_count": 5,
       "rising_senior_2027_names": [
-        "Levi Christie",
+        "Tomislav Vrdoljak",
         "Morgan Worsfold-Gregg",
+        "Sharif Mohammed",
         "Mo Diallo",
         "Gonzalo Alberola"
       ],
       "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
         "Gianluca Grubic",
-        "Jack Shannon",
+        "Daniel Celso",
         "Leon Park"
       ],
       "recruit_risk": "High",
@@ -1224,31 +1239,31 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 12,
-          "label": "Fringe squad"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 25,
-          "label": "Regular contributor"
+          "pct": 55,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
-          "label": "Key contributor"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 75,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "5 of 12 MFs clear — but 7 remain across Year 1 and 2. Deep MF corps makes early minutes competitive. Opportunity improves Year 3+ as classes turn over.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 drexeldragons.com roster: every MF on the roster (15 total, heavily international — Brazil, Germany, France, Spain, Ghana) lists only an HS/academy background with no 'Previous School' transfer indicator anywhere in the group. Purely a true-freshman recruiting pipeline despite the international spread."
+      "recruit_pathway_note": "Re-read on the live 2026-27 drexeldragons.com roster (15 MFs of 29 — the largest midfield group in this batch). No previous-school column is published, so the classification is retained rather than re-derived and treated as lower-confidence. 4 clear before 2027 and 5 more the year after, but 15 midfielders in a 29-man squad is heavy competition."
     },
     "color": [
       "#fef9c3",
@@ -1375,13 +1390,13 @@
     "acuAlign": 9,
     "acuAlignNote": "Exercise science covers core subjects. Pre-PT advising available. Small beautiful campus.",
     "soccerLevel": "CAA — Competitive",
-    "cost": "~$48k/yr",
+    "soccerLevelShort": "CAA",
     "fin": {
-      "costNum": 48000,
-      "internationalNote": "Elon full COA is ~$48k/yr (2025-26). Athletic scholarship can cover 30–50% of COA. Merit scholarships available for international students with strong academic record. Small suburban campus in North Carolina with moderate cost of living.",
-      "tuition": 36000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 68903,
+      "internationalNote": "Elon direct billed cost $68,903 (2026-27, Tier-1 verified from Elon's official 2026-2027 Newly Admitted Student Cost figures, cross-checked against the Student Financial Services rate schedule): tuition $50,386 + student activity fee $292 + health and wellness fee $690 + food and housing $17,535 — and $68,903 is exactly the 'Total' Elon itself publishes for tuition, fees, food and housing. Food and housing is based on an average room cost and the All-Access Basic meal plan; Elon has a TWO-YEAR residency requirement, so the on-campus figure is the applicable one. Books, personal expenses and transportation are excluded by convention. The previous stored $48,000 was an unresearched ballpark and understated the cost by $20,903 — Elon markets itself as a best-value private, and it may well be on net price, but its sticker is not low. Rates are based on full-time enrolment of 12-18 hours a semester.",
+      "tuition": 50386,
+      "roomBoard": 17535,
+      "fees": 982,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic"
@@ -1389,6 +1404,7 @@
     "aid": "Athletic",
     "size": 7000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1397,14 +1413,14 @@
     },
     "mapX": 497,
     "mapY": 211,
-    "fitOlivier": 30,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 30,
+      "overall": 43,
       "soccer": 58,
       "academic": 58,
-      "minutes": 12,
+      "minutes": 48,
       "lifestyle": 0,
-      "value": 20
+      "value": 26
     },
     "confRecord": [
       {
@@ -1468,63 +1484,57 @@
     "domain": "elon.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 17,
-      "cleared_before_2027": 7,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Jordin Wilson",
+        "Martin Kozak",
+        "Jahmir Flowers",
+        "Ryan Manna"
+      ],
+      "rising_senior_2027_count": 6,
+      "rising_senior_2027_names": [
+        "Weston Jonke",
         "Daire McCarthy",
         "Dominik Renz",
+        "Noah Sonne Kargo",
         "JP Quigley",
-        "Ben Madore",
-        "Carlos Levy",
-        "Noah Sonne Kargo"
+        "Ben Madore"
       ],
-      "rising_senior_2027_count": 5,
-      "rising_senior_2027_names": [
-        "Alex Wharton",
-        "Tønnes Daland",
-        "Oscar Tonidandel",
-        "Will Dunn",
-        "Graham Jones"
-      ],
-      "rising_junior_2027_count": 5,
+      "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
-        "Diego Thompson",
-        "Mohamed Kallon",
-        "Tristan D'Adamo",
-        "Henry Mertsch",
-        "Robbie Reeves"
+        "Oscar Tonidandel"
       ],
       "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 8,
-          "label": "Fringe squad"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 15,
-          "label": "Squad rotation"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 35,
-          "label": "Regular contributor"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 90,
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "Large 17-player MF pool with 10 remaining by Fall 2027. Highly competitive environment — Olivier would need exceptional performance to break through. Opportunity grows Year 3+ as pool thins.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 elonphoenix.com roster: every MF/D-MF/F-MF (17 total) lists only an HS/club background with no 'Previous School' transfer indicator — a pure true-freshman recruiting model despite the international recruiting spread (Ireland, Chile, Germany, Norway, Japan)."
+      "recruit_pathway_note": "Re-read on the live 2026-27 elonphoenix.com roster (12 MFs of 29). Elon publishes no previous-school column, so the split cannot be re-derived; classification retained, lower-confidence. Unusually top-heavy: 9 of 12 MFs are seniors or juniors, so only 3 underclassmen sit behind them — a strong 2028 entry point."
     },
     "color": [
       "#fed7aa",
@@ -1651,13 +1661,13 @@
     "acuAlign": 9,
     "acuAlignNote": "Health studies covers core anatomy and physiology. NJ Shore location with NYC access for clinical placements.",
     "soccerLevel": "CAA — Developing",
-    "cost": "~$52k/yr",
+    "soccerLevelShort": "CAA",
     "fin": {
-      "costNum": 52000,
-      "internationalNote": "Monmouth full COA is ~$52k/yr (2025-26). Athletic scholarship can cover 25–50% of COA. Merit aid available for international students. NJ shore location with moderate-to-high living costs. Strong sports science pathway.",
-      "tuition": 38000,
-      "roomBoard": 12000,
-      "fees": 2000,
+      "costNum": 69662,
+      "internationalNote": "Monmouth direct billed cost $69,662 (2026-27, Tier-1 verified from Monmouth's official Cost of Attendance Budgets table, first-year student living on campus, 12-18 credits, non-BSN): tuition $48,894 + housing and food $19,668 + fees $1,100. Monmouth publishes this exact figure as its own 'Direct Cost (Billed by MU)' row, which matches this guide's convention precisely — the second school after UConn to confirm it in the school's own words. Its headline Total Cost of Attendance is $75,656, adding books, travel, personal expenses and loan fees that this guide excludes. Monmouth is private, so there is no resident/non-resident split. The previous stored $52,000 was an unresearched ballpark and understated the cost by $17,662. Athletic scholarship can cover 25–50% of COA. Merit aid available for international students. NJ shore location with moderate-to-high living costs. Strong sports science pathway.",
+      "tuition": 48894,
+      "roomBoard": 19668,
+      "fees": 1100,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic"
@@ -1665,6 +1675,7 @@
     "aid": "Athletic",
     "size": 6000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.3",
       "minSchol": "2.5+",
@@ -1673,14 +1684,14 @@
     },
     "mapX": 531,
     "mapY": 156,
-    "fitOlivier": 42,
+    "fitOlivier": 32,
     "lensScores": {
-      "overall": 42,
+      "overall": 32,
       "soccer": 52,
       "academic": 48,
-      "minutes": 56,
+      "minutes": 26,
       "lifestyle": 0,
-      "value": 25
+      "value": 19
     },
     "confRecord": [
       {
@@ -1744,50 +1755,52 @@
     "domain": "monmouth.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 5,
-      "cleared_before_2027": 4,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Elias Stingl",
-        "Victor Andersson",
-        "Otto Moosbrugger",
-        "Kevin DeCapua"
+        "Sean Cadigan",
+        "Javier Losa",
+        "Ian Brunet"
       ],
       "rising_senior_2027_count": 1,
       "rising_senior_2027_names": [
-        "Tommy Damiano"
+        "Brendan Tansey"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Jessy Bichler"
+      ],
       "recruit_risk": "Low",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 45,
-          "label": "Key contributor"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 80,
-          "label": "Captain candidate"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 90,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "⚠️ 2025 roster (+1 applied). Elite window — 4 of 5 MFs clear before Olivier arrives. Only 1 rising senior remains in Year 1. Monmouth actively rebuilding CAA program.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 monmouthhawks.com roster: all 8 MF/D-MF spots list only an HS background (several international — Spain, Norway) with no 'Previous School' transfer indicator anywhere on the entire roster. Purely a true-freshman recruiting model."
+      "recruit_pathway_note": "Re-read on the live 2026-27 monmouthhawks.com roster (9 MFs of 26, up from 5 a year ago). Monmouth's table carries no previous-school column, so the split cannot be re-derived; classification retained, lower-confidence. 3 of 9 clear before 2027 against only 1 rising senior, so the group behind is young."
     },
     "color": [
       "#dbeafe",
@@ -1914,13 +1927,13 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Stony Brook Medicine is a top research medical centre — strong pre-PT access.",
     "soccerLevel": "CAA — Competitive",
-    "cost": "~$38k/yr",
+    "soccerLevelShort": "CAA",
     "fin": {
-      "costNum": 38000,
-      "internationalNote": "Stony Brook out-of-state COA is ~$38k/yr (2025-26). Athletic scholarship can cover 40–60% of COA. SUNY system rates are more affordable than private NY universities. Merit aid available. Long Island location with moderate-to-high living costs.",
-      "tuition": 27000,
-      "roomBoard": 9000,
-      "fees": 2000,
+      "costNum": 54651,
+      "internationalNote": "Stony Brook out-of-state direct billed cost $54,651 (2026-27, Tier-1 verified from Stony Brook Financial Aid's official Cost of Attendance table, Out of State Resident column): tuition $31,050 + fees $3,860 + housing $12,291 + meal plan $7,450 — which is exactly the university's own 'Total Direct Costs (On-campus Students)' row. Its headline yearly COA is $58,799, adding books, transport and personal expenses that this guide excludes; billed health insurance is waivable with proof of cover and is also excluded. ⚠ SUNY sets tuition each June and the page marks these figures 'estimated as of 02/20/2026' pending final SUNY approval, so re-check when Stony Brook publishes final rates. The previous stored $38,000 was an unresearched ballpark and understated the cost by $16,651 — SUNY rates are cheaper than private NY universities but not this cheap. Athletic scholarship can cover 40–60% of COA. Merit aid available. Long Island location with moderate-to-high living costs.",
+      "tuition": 31050,
+      "roomBoard": 19741,
+      "fees": 3860,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic"
@@ -1928,6 +1941,7 @@
     "aid": "Athletic",
     "size": 26000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1936,14 +1950,14 @@
     },
     "mapX": 538,
     "mapY": 150,
-    "fitOlivier": 43,
+    "fitOlivier": 34,
     "lensScores": {
-      "overall": 43,
+      "overall": 34,
       "soccer": 60,
       "academic": 62,
-      "minutes": 50,
+      "minutes": 26,
       "lifestyle": 0,
-      "value": 36
+      "value": 20
     },
     "confRecord": [
       {
@@ -2006,7 +2020,52 @@
     "url": "https://stonybrookathletics.com/sports/mens-soccer",
     "domain": "stonybrook.edu",
     "minutesOutlook": {
-      "available": false
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Kyle Smith",
+        "Justin Jean-Louis",
+        "Alex Fleury"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Scemar Webb"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Nokkvi Hjorvarsson",
+        "Kristoffer Aarflot"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_pathway_note": "FIRST population of this record — Stony Brook was minutesOutlook.available:false since v21 because the athletics site was unreachable/off-season at every prior attempt (see CLAUDE.md 6). Its live 2026-27 stonybrookathletics.com roster now renders normally: 9 MFs of a 29-man squad, 3 clearing before Olivier's 2027 entry. The roster publishes no previous-school column, so recruit_pathway is deliberately left UNSET rather than guessed — there is no prior value to retain either."
     },
     "color": [
       "#fee2e2",

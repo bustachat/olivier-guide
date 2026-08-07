@@ -68,10 +68,11 @@
     "acuAlign": 14,
     "acuAlignNote": "Very strong — STEM-designated degree with anatomy, physiology, biomechanics, exercise prescription, resistance training, sport psych, and internship. FIU PT dept has DPT articulation for graduates.",
     "soccerLevel": "AAC — Elite (5 conf titles in 4 years)",
-    "cost": "~$40k/yr",
+    "soccerLevelShort": "AAC",
     "aid": "Athletic + Need",
     "size": 55000,
     "prePT": "Strong",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "2.0 NCAA core (min)",
       "minSchol": "3.0 for academic scholarship layer",
@@ -116,7 +117,7 @@
       "fitness": 74
     },
     "devScoresNote": "v42.24 §5a re-baseline (training environment only). Live fiusports.com MSOC staff: HC Kyle Russell + Assoc HC Merida + Asst Gasperoni (3 full-time) + volunteer GK coach; support staff = student managers only, no soccer-dedicated S&C or sports scientist. Stored Tier-1 facilityDetails: dedicated 2,000-seat FieldTurf soccer stadium + 2 dedicated training fields, Statsports GPS + Hudl individual dashboards (strongest tech in AAC), 2021 $4.2M performance centre (Olympic-shared coaches). 5 conference titles are results, excluded — prior devAvg 88 had smuggled them in.",
-    "fitOlivier": 66,
+    "fitOlivier": 61,
     "tags": [
       "warm",
       "city",
@@ -139,54 +140,57 @@
     "rec": "FIU is the sleeper pick of the guide. Miami city campus, tropical climate, and Kyle Russell has turned this into an AAC powerhouse. STEM exercise science degree. Inter Miami CF connections. Very affordable. Strong case as THE best overall package for Olivier.",
     "url": "https://fiusports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 66,
+      "overall": 61,
       "soccer": 76,
       "academic": 89,
-      "minutes": 43,
+      "minutes": 31,
       "lifestyle": 92,
-      "value": 49
+      "value": 46
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 1,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
+        "Jad Benjelloun",
+        "Owen Barnett",
+        "Thomas Sellwood"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
         "Leonardo Consoloni"
       ],
-      "rising_senior_2027_count": 3,
-      "rising_senior_2027_names": [
-        "Dominic Brady",
-        "Lukas Pareja",
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
         "Martin Piedeleu"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
       "recruit_risk": "Medium",
       "recruit_pathway": "Transfer-preferred",
-      "recruit_pathway_note": "6 of 9 current MFs (67%) are transfers from other 4-year programs (American International College, St. John's, Hofstra, Siena, Concord University, Seton Hall) rather than true freshmen — confirmed via the live 2026 fiusports.com roster. The 3 true freshmen who did make the roster (Carrasco, Watt, Stickler) came directly from club academies in Spain/England/Miami, not JUCO. No JUCO transfers among current MFs.",
+      "recruit_pathway_note": "5 of 7 current MFs (71%) on the live 2026-27 fiusports.com roster arrived as transfers from other 4-year programs (American International College, St. John's, Hofstra, Siena, Seton Hall) rather than as true freshmen. The 2 true freshmen (Carrasco, Watt) came directly from club academies in Spain and England (Salamanca CF, Wingate FC), not JUCO. No JUCO transfers among current MFs.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
+          "pct": 65,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ]
@@ -349,10 +353,11 @@
     "acuAlign": 13,
     "acuAlignNote": "Full coverage of anatomy, physiology, biomechanics, exercise prescription, strength training, sport psych, research, and 12cr internship. Motor development less explicit.",
     "soccerLevel": "AAC — Very Competitive",
-    "cost": "~$38k/yr",
+    "soccerLevelShort": "AAC",
     "aid": "Athletic + Need",
     "size": 50000,
     "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
     "gpa": {
       "minEntry": "2.3 NCAA core (min)",
       "minSchol": "3.0+ for academic aid stacking",
@@ -360,14 +365,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 38000,
-      "tuition": 22000,
-      "roomBoard": 13000,
-      "fees": 3000,
+      "costNum": 34254,
+      "tuition": 18846,
+      "roomBoard": 15408,
+      "fees": 0,
       "maxAthletic": 0.9,
       "maxAcademic": 12000,
       "aidType": "athletic+need",
-      "internationalNote": "USF Green & Gold Scholars program — merit aid available to international students with 3.0+ GPA. Athletic aid can stack with academic."
+      "internationalNote": "USF non-Florida-resident direct billed cost $34,254 (2026-27, Tier-1 verified from USF Financial Aid's official 2026-27 Students Living On Campus table): tuition and fees $18,846 + housing $9,638 + food $5,770 — which is exactly USF's own 'Total Billable Expenses' row. USF publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0; the sum invariant still holds. USF's own headline total COA is $40,134, adding books, transport and personal allowances that this guide excludes. IMPORTANT: USF's tuition line is built on ITS OWN stated standard load of 28 credit hours a year (14 per semester), not a 30-credit assumption made here — a student carrying 30 credits would pay somewhat more. The previous stored $38,000 was an unresearched ballpark and OVERstated the cost by $3,746, making this only the second school in the campaign to be overstated. USF Green & Gold Scholars program — merit aid available to international students with 3.0+ GPA. Athletic aid can stack with academic."
     },
     "culture": {
       "vibe": "Urban Tampa campus with a mix of commuter and residential students. USF has grown significantly in recent years and now has genuine campus energy. Bulls athletics culture is building. Tampa is a genuine city with major league sports.",
@@ -397,7 +402,7 @@
       "fitness": 80
     },
     "devScoresNote": "v42.24 §5a re-baseline (training environment only). Live gousfbulls.com MSOC staff: HC Kiefer + 2 Assoc HCs (De Oliveira, Marshall) + Asst Madero + DoO (deepest full-time coaching in AAC), and support block lists a Sports Science Coordinator (Bunk-Andersen), Director of Sports Nutrition, Olympic Sports Performance, and a team AT. Stored Tier-1 facilityDetails: dedicated Corbett Stadium (3,000) + Catapult GPS on all sessions + Kinesiology Research Complex (8 labs). Best-resourced AAC environment; prior devAvg 87 partly reflected results.",
-    "fitOlivier": 70,
+    "fitOlivier": 58,
     "tags": [
       "warm",
       "city",
@@ -418,59 +423,58 @@
     "rec": "Kiefer returning is a huge signal — USF rebuilding to prominence. Tampa city + warm. Strong kinesiology degree. Affordable D1 Florida school. Ground floor opportunity with a proven builder.",
     "url": "https://gousfbulls.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 70,
+      "overall": 58,
       "soccer": 72,
       "academic": 84,
-      "minutes": 52,
+      "minutes": 19,
       "lifestyle": 82,
-      "value": 53
+      "value": 48
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 10,
-      "cleared_before_2027": 4,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
         "Pedro Faife",
-        "Tyler Richardson",
-        "Michael Owens",
-        "Yanis Lasri"
+        "Tyler Richardson"
       ],
-      "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [
-        "Asher Jones"
-      ],
-      "rising_junior_2027_count": 2,
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 4,
       "rising_junior_2027_names": [
-        "Jacobo Gonzalez",
-        "Luka Zujovic"
+        "Luka Zujovic",
+        "Diego Sanchez",
+        "Jakob Auby",
+        "Abeselom Weldegiorgis"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "5 of 7 current MFs (71%) were recruited directly from HS/club with no prior college, per the live 2026 gousfbulls.com roster. New HC George Kiefer's 2026 arrival brought a heavy transfer wave from his previous program (Grand Canyon University) at other positions (D/F), but the midfield core itself stayed freshman-friendly by comparison — only 2 of 7 MFs (Sanchez, Weldegiorgis) came via transfer (GCU, Western Oregon).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gousfbulls.com roster (7 MFs of 28). 5 of 7 MFs are club/academy-sourced (Florida Premier FC ECNL, Inter Miami CF MLS Next Pro, Sarpsborg FK, Jacksonville FC MLS Next, Club Blooming) and only 2 are college transfers (Grand Canyon, Western Oregon). Note the depth chart is young — 4 of 7 are sophomores who all return through 2029, so freshman-friendly recruiting does not mean early minutes.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
-          "label": "Established starter"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ]
     },
@@ -594,7 +598,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Exercise and Sport Science covers anatomy, physiology, biomechanics. Pre-PT pathway available.",
     "soccerLevel": "AAC — Competitive",
-    "cost": "~$45k/yr",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 77346,
       "tuition": 50760,
@@ -603,12 +607,12 @@
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic",
-      "internationalNote": "Tulsa 2025-26 federal COA is $77,346/yr on-campus (tuition $50,760 + room/board $16,700 + indirect costs $9,886). Athletic scholarship can cover 30-50% of COA. Merit aid available for international students. Tulsa has very low cost of living relative to COA. Small campus with strong coaching investment.",
-      "cost": "~$70k/yr"
+      "internationalNote": "Tulsa 2025-26 federal COA is $77,346/yr on-campus (tuition $50,760 + room/board $16,700 + indirect costs $9,886). Athletic scholarship can cover 30-50% of COA. Merit aid available for international students. Tulsa has very low cost of living relative to COA. Small campus with strong coaching investment."
     },
     "aid": "Athletic",
     "size": 4000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -732,7 +736,8 @@
     "domain": "utulsa.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
+      "mf_total": 8,
+      "roster_season": "2025-26",
       "cleared_before_2027": 7,
       "cleared_names": [
         "Gyuwon Chong",
@@ -869,20 +874,21 @@
     "acuAlign": 10,
     "acuAlignNote": "Exercise and sport science pathway. Methodist Le Bonheur Healthcare provides clinical access for pre-PT.",
     "soccerLevel": "AAC — Competitive",
-    "cost": "~$38k/yr",
+    "soccerLevelShort": "AAC",
     "fin": {
-      "costNum": 38000,
-      "tuition": 25000,
-      "roomBoard": 11000,
-      "fees": 2000,
+      "costNum": 32425,
+      "tuition": 20664,
+      "roomBoard": 11761,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic",
-      "internationalNote": "Memphis out-of-state COA is ~$38k/yr (2025-26) — affordable for a D1 program. Athletic scholarship can cover 40–65% of COA. Merit aid available for international students. Memphis has very low cost of living — net cost is manageable."
+      "internationalNote": "Memphis INTERNATIONAL direct billed cost $32,425 (2025-26, Tier-1 verified from Memphis's official Financial Aid Cost of Attendance table, undergraduate / International / On Campus): tuition and fees $20,664 + housing and food $11,761. Memphis publishes a distinct international rate ($20,664) above its out-of-state rate ($15,960), with tuition and fees COMBINED in a single column — so the combined figure is stored under `tuition` and `fees` is 0; the sum invariant still holds. ⚠ The page's own international TOTAL column is WRONG: it repeats the out-of-state totals ($35,240) instead of summing the international components (which give $39,944). The components were used, not the total — a Tier-1 page can still err about itself. The previous stored $38,000 was an unresearched ballpark and OVERstated the cost by $5,575. Athletic scholarship can cover 40–65% of COA. Merit aid available for international students. Memphis has very low cost of living — net cost is manageable."
     },
     "aid": "Athletic",
     "size": 22000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.3",
       "minSchol": "2.5+",
@@ -891,14 +897,14 @@
     },
     "mapX": 425,
     "mapY": 231,
-    "fitOlivier": 62,
+    "fitOlivier": 63,
     "lensScores": {
-      "overall": 62,
+      "overall": 63,
       "soccer": 62,
       "academic": 48,
-      "minutes": 47,
+      "minutes": 48,
       "lifestyle": 80,
-      "value": 48
+      "value": 53
     },
     "confRecord": [
       {
@@ -1005,54 +1011,53 @@
     "domain": "memphis.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
-      "cleared_before_2027": 7,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "Saad Chaouki",
-        "Dino Stavros",
+        "Henrique Cruz",
         "Christian Piccolotto",
-        "Ryan Ruguaru",
-        "Thomas Mancuso",
-        "Arlo McIntyre",
-        "Jin Tokishi"
+        "Saad Chaouki",
+        "Keanan Bader",
+        "Joshua Owens"
       ],
-      "rising_senior_2027_count": 4,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Carson Banham",
-        "Ignacio Escamilla",
-        "Mathias Krohnstad",
-        "Miller Lashlee"
+        "Thomas Mancuso",
+        "Alessandro Peruz"
       ],
-      "rising_junior_2027_count": 1,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Ben Mulrooney"
+        "Anthony Grudko",
+        "Ignacio Escamilla",
+        "Mathias Krohnstad"
       ],
       "recruit_risk": "High",
-      "recruit_pathway": "Transfer-preferred",
-      "recruit_pathway_note": "7 of 10 current MFs (70%) are transfers, per the live 2025 gotigersgo.com roster — from other 4-year programs (Montevallo, Rider/Portland, St. Mary's TX, Duquesne, Lehigh, Malone) and one JUCO (Iowa Lakes CC). Only 3 of 10 (30%) came in as true freshmen recruits.",
+      "recruit_pathway": "Portal/JUCO-heavy",
+      "recruit_pathway_note": "8 of 10 current MFs (80%) on the live 2026-27 gotigersgo.com roster list a previous college, including 2 sourced from JUCO (Barton County CC, Indian Hills CC) and 6 from 4-year programs (ETSU, Rider/Portland, UNCG/South Carolina, Holy Cross, Montevallo, Malone, Old Dominion). Only 2 MFs (Grudko, Escamilla) have no prior college. Reclassified from Transfer-preferred on this read: the intake is portal-dominated with live JUCO recruiting, not just 4-year transfer preference.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
           "pct": 40,
-          "label": "Coming off bench"
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ],
@@ -1147,20 +1152,21 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology program covers anatomy, physiology, biomechanics. Temple University Hospital for pre-PT clinical access in Philadelphia.",
     "soccerLevel": "AAC — Competitive",
-    "cost": "~$42k/yr",
+    "soccerLevelShort": "AAC",
     "fin": {
-      "costNum": 42000,
-      "tuition": 30000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 62854,
+      "tuition": 43218,
+      "roomBoard": 19636,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic",
-      "internationalNote": "Temple out-of-state COA is ~$42k/yr (2025-26) — affordable for a D1 program in a major city. Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Philadelphia cost of living is moderate."
+      "internationalNote": "Temple out-of-state direct billed cost $62,854 (2026-27, Tier-1 verified from Temple Student Financial Services' official 2026-27 Master Undergraduate Cost of Attendance breakdown, College of PUBLIC HEALTH column): tuition and fees $43,218 + housing $14,084 + food $5,552. Temple publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0. IMPORTANT — Temple prices tuition BY COLLEGE and its Kinesiology degree sits in the College of Public Health, which is $5,520 a year MORE than the College of Liberal Arts figure ($37,698) shown in the summary example on Temple's main COA page. Using the headline example would have understated the cost. Temple's own Public Health out-of-state total is $69,904, adding books, transportation and personal expenses that this guide excludes. Housing is the median of 2026-27 rates and food is the J&H Unlimited plan; on-campus and off-campus students receive the same budget. Tuition is set by the Board of Trustees each July. The previous stored $42,000 was an unresearched ballpark and understated the cost by $20,854."
     },
     "aid": "Athletic",
     "size": 29000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.3",
       "minSchol": "2.5+",
@@ -1169,14 +1175,14 @@
     },
     "mapX": 524,
     "mapY": 159,
-    "fitOlivier": 50,
+    "fitOlivier": 44,
     "lensScores": {
-      "overall": 50,
+      "overall": 44,
       "soccer": 62,
       "academic": 52,
-      "minutes": 49,
+      "minutes": 31,
       "lifestyle": 65,
-      "value": 38
+      "value": 26
     },
     "confRecord": [
       {
@@ -1295,51 +1301,53 @@
     "domain": "temple.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 5,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
         "Rocco Haeufgloeckner",
-        "Paolo Kampula",
-        "George Medill",
-        "Alex O'Leary",
+        "George Medill"
+      ],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Jayden Jackson",
+        "Lukas Egarter",
+        "Aiden O'Sullivan",
         "Harrison Dandridge"
       ],
-      "rising_senior_2027_count": 2,
-      "rising_senior_2027_names": [
-        "Chase Jackson",
-        "Michael Siravo"
-      ],
-      "rising_junior_2027_count": 2,
+      "rising_junior_2027_count": 4,
       "rising_junior_2027_names": [
-        "Dylan Kaye",
-        "Simon Jordheim"
+        "Teo Strand",
+        "Anthony Perez",
+        "Chase Jackson",
+        "Cohen Williams"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "11 of 12 current MFs (92%) came directly from HS/club with no prior college, per the live 2025 owlsports.com roster — only Aiden O'Sullivan transferred in (from Radford). One of the most freshman-recruited midfields in the AAC, consistent with a young, rebuilding roster (0-8 AAC in 2025).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 owlsports.com roster (12 MFs of 28). The roster's previous-school column holds clubs and academies, not colleges — Matchfit Academy, Wolfsberger AC, FSV Mainz 05, PDA, Sporting KC, VBR Star, Seacoast United. Zero college transfers among current MFs, so the midfield is built from direct freshman intake.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 45,
-          "label": "Coming off bench"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 65,
-          "label": "Likely starter"
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
@@ -1434,20 +1442,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong exercise science — UAB Hospital is one of the best research medical centres in the Southeast. Excellent pre-PT clinical access.",
     "soccerLevel": "AAC — Competitive",
-    "cost": "~$28k/yr",
+    "soccerLevelShort": "AAC",
     "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 46700,
+      "tuition": 32490,
+      "roomBoard": 14210,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "UAB out-of-state COA is ~$28k/yr (2025-26) — among the most affordable D1 programs in the guide. Athletic scholarship can cover 40–70% of COA. Merit aid available for international students. Birmingham has very low cost of living — net cost is highly competitive."
+      "internationalNote": "UAB INTERNATIONAL direct billed cost $46,700 (2026-27, Tier-1 verified from UAB's official Estimated Costs (Undergraduate) table, On Campus – Freshmen, International column): tuition and fees $32,490 + housing $8,480 + meal plan $5,730. UAB publishes a distinct international rate ($32,490) above its out-of-state rate ($29,820), with tuition and fees COMBINED — stored under `tuition` with `fees` 0; the sum invariant holds. ⚠ Do NOT use UAB's own 'Total Direct Costs' row ($51,046): UAB counts books ($1,200) and required health insurance ($3,146) as direct, both of which this guide excludes by convention. Its headline international total is $57,211. Freshmen are required to live on campus, so the on-campus figure is the applicable one; based on UAB's stated 15 credit hours a semester. The previous stored $28,000 was an unresearched ballpark and understated the cost by $18,700 — UAB is not the cheap D1 the old figure implied. Athletic scholarship can cover a large share; merit aid available for international students."
     },
     "aid": "Athletic",
     "size": 21000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0",
       "minSchol": "2.5+",
@@ -1456,14 +1465,14 @@
     },
     "mapX": 445,
     "mapY": 240,
-    "fitOlivier": 59,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 59,
+      "overall": 54,
       "soccer": 60,
       "academic": 55,
-      "minutes": 43,
+      "minutes": 26,
       "lifestyle": 75,
-      "value": 54
+      "value": 36
     },
     "confRecord": [
       {
@@ -1573,49 +1582,46 @@
     "domain": "uab.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
+      "mf_total": 7,
+      "roster_season": "2026-27",
       "cleared_before_2027": 3,
       "cleared_names": [
         "Gael Zackrisson",
         "Justin Vallejo",
         "Alan Melendez"
       ],
-      "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [
-        "Matthew Garcia"
-      ],
-      "rising_junior_2027_count": 3,
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
-        "Diego Quevedo",
-        "Brody Pike",
-        "Guillermo Martin"
+        "Matthew Garcia"
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "4 of 6 current MFs (67%) were recruited directly from HS/homeschool with no prior college, per the live 2025 uabsports.com roster. 2 transferred in — Ivan Jolivet (grad transfer, University of Mobile) and Gael Zackrisson (Gardner-Webb).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 uabsports.com roster (7 MFs of 29). Only 2 MFs are US 4-year transfers (Gardner-Webb, USC Upstate); 4 of 7 list no previous college at all and 3 of the 7 are true freshmen (Quevedo, Pike, Martin), so a freshman can still win a midfield place here. Quevedo's listed UNIR is a Spanish online university, not a US soccer transfer.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Coming off bench"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
-          "label": "Regular starter"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 60,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
@@ -1711,7 +1717,7 @@
     "acuAlign": 8,
     "acuAlignNote": "Service academy curriculum — some science coverage but not kinesiology-specific. Pre-PT pathway not standard.",
     "soccerLevel": "AAC — Competitive",
-    "cost": "~$0/yr (fully funded)",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 0,
       "tuition": 0,
@@ -1725,6 +1731,7 @@
     "aid": "Full tuition + stipend",
     "size": 4500,
     "prePT": "Poor",
+    "prePTShort": "Poor",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.5+",
@@ -1947,7 +1954,7 @@
     "acuAlign": 8,
     "acuAlignNote": "Service academy curriculum. Pre-PT pathway not standard.",
     "soccerLevel": "AAC — Competitive",
-    "cost": "~$0/yr (fully funded)",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 0,
       "tuition": 0,
@@ -1961,6 +1968,7 @@
     "aid": "Full tuition + stipend",
     "size": 4400,
     "prePT": "Poor",
+    "prePTShort": "Poor",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.5+",
@@ -2177,20 +2185,21 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Atrium Health in Charlotte provides strong clinical access for pre-PT.",
     "soccerLevel": "AAC — Competitive",
-    "cost": "~$28k/yr",
+    "soccerLevelShort": "AAC",
     "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 41165,
+      "tuition": 22018,
+      "roomBoard": 15862,
+      "fees": 3285,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "Charlotte out-of-state COA is ~$28k/yr (2025-26) — affordable for a D1 program. Athletic scholarship can cover 40–70% of COA. Merit aid available for international students. Charlotte has a growing international student community and moderate cost of living."
+      "internationalNote": "UNC Charlotte non-resident direct billed cost $41,165 (2026-27, Tier-1 verified from Charlotte's official Undergraduate Cost of Attendance table, Non-Residents of NC, living on campus): tuition $22,018 + fees $3,285 + housing $10,200 + meals $5,662. Its own headline non-resident total is $46,578, adding books, transportation, a computer allowance, miscellaneous and loan fees that this guide excludes. All costs are subject to NC legislative approval. The previous stored $28,000 was an unresearched ballpark and understated the cost by $13,165. Athletic scholarship can cover a large share; merit aid available for international students with 3.0+ GPA. Charlotte is a large, fast-growing metro with moderate living costs."
     },
     "aid": "Athletic",
     "size": 30000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0",
       "minSchol": "2.5+",
@@ -2206,7 +2215,7 @@
       "academic": 48,
       "minutes": 49,
       "lifestyle": 65,
-      "value": 57
+      "value": 47
     },
     "confRecord": [
       {
@@ -2313,7 +2322,8 @@
     "domain": "charlotte49ers.com",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 4,
+      "mf_total": 4,
+      "roster_season": "2025-26",
       "cleared_before_2027": 2,
       "cleared_names": [
         "Natsuki Ogata",
@@ -2492,10 +2502,11 @@
     "acuAlign": 15,
     "acuAlignNote": "Outstanding alignment — FAU's Pre-PT/OT concentration of the Exercise Science degree covers virtually all ACU BESS units plus adds 9 credit hours of internship explicitly designed to meet PT/OT school prerequisites. The formal articulation agreement with FIU's Doctor of Physical Therapy program gives FAU students a guaranteed early interview if academic score ≥82. This is the most direct DPT pathway of any school in the guide. Boca Raton is in the same city as Lynn University. South Florida warm climate perfectly matches Sydney.",
     "soccerLevel": "AAC Conference — D1. 2025 AAC Tournament Champions. Growing program.",
-    "cost": "~$32k/yr (out-of-state)",
+    "soccerLevelShort": "AAC Conference",
     "aid": "Athletic + Merit",
     "size": 33000,
     "prePT": "Outstanding — explicit Pre-PT/OT concentration + guaranteed early interview at FIU DPT program",
+    "prePTShort": "Outstanding",
     "gpa": {
       "minEntry": "2.5+ (accessible, ~65% acceptance)",
       "minSchol": "3.0+ for academic merit",
@@ -2503,18 +2514,18 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 32000,
-      "tuition": 22000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 38720,
+      "tuition": 22888,
+      "roomBoard": 15832,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state tuition ~$22k — very competitive for a D1 program in South Florida. Athletic scholarship + merit aid creates excellent value. FAU is in Boca Raton — same city as Lynn University, giving comparable lifestyle at D1 level."
+      "internationalNote": "FAU non-Florida-resident direct billed cost $38,720 (2026-27, Tier-1 verified from FAU Financial Aid's official Cost of Attendance page, Non-Florida Residents / undergraduate / on campus): tuition and fees $22,888 + housing $10,524 + food $5,308 — which is exactly FAU's own 'Estimated Direct Costs, payable to FAU and reflected on the student's bill' row. FAU publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0; the sum invariant still holds. FAU's own headline total is $47,934, adding books, transport and personal expenses that this guide excludes. NOTE: no credit-load assumption was needed — the per-credit-hour rate ($799.72 non-resident) published on the same page is NOT what this figure comes from; FAU publishes a full-time nine-month budget alongside it. The previous stored $32,000 was an unresearched ballpark and understated the cost by $6,720. Still very competitive for a D1 program in South Florida; athletic scholarship + merit aid creates good value. FAU is in Boca Raton — same city as Lynn University, giving comparable lifestyle at D1 level."
     },
     "culture": {
       "vibe": "Vibrant South Florida campus in Boca Raton — 45 minutes north of Miami, 20 minutes north of Fort Lauderdale. Warm year-round climate, beach access, diverse international community. FAU is a growing university with a strong athletics culture — AAC move brings increased prestige. Soccer gaining momentum under new coach.",
-      "olivierMatch": "★★★★★ FAU is arguably Olivier's best overall fit. Warm South Florida climate matches Sydney lifestyle. Boca Raton is a beautiful, safe, affluent coastal city. The degree is the most DPT-aligned in the entire guide (15/16 ACU units + FIU DPT guaranteed pathway). Same city as Lynn University, adjacent to Fort Lauderdale (Keiser) and Miami. AAC D1 provides legitimate competitive level. GPA 2.8 is accessible for admission.",
+      "olivierMatch": "★★★★★ FAU is arguably Olivier's best overall fit. Warm South Florida climate matches Sydney lifestyle. Boca Raton is a beautiful, safe, affluent coastal city. The degree is the most DPT-aligned in the entire guide (15/16 ACU units + FIU DPT guaranteed pathway). Same city as Lynn University, with Keiser and PBA 30 minutes north in West Palm Beach and Fort Lauderdale and Miami to the south. AAC D1 provides legitimate competitive level. GPA 2.8 is accessible for admission.",
       "socialScene": "South Florida beach culture — relaxed, international, warm year-round. Boca Raton is affluent and safe. Miami 45min for nightlife and culture. Fort Lauderdale 20min. Strong Brazilian, Venezuelan and international communities. Australian community present in South Florida.",
       "thingsToDo": "Boca Raton beaches (5min). Fort Lauderdale (20min) — Las Olas Boulevard, Riverwalk, Fort Lauderdale Beach. Miami (45min) — South Beach, Wynwood, Brickell, Bayside. Inter Miami games. Miami Grand Prix. Everglades National Park. Florida Keys.",
       "lifestyleTags": "Warm year-round, beach city, South Florida lifestyle, Sydney-equivalent climate"
@@ -2540,7 +2551,7 @@
       "fitness": 66
     },
     "devScoresNote": "v42.24 §5a re-baseline (training environment only). Live fausports.com MSOC staff: HC Worthen + Assoc HC Harman + Asst Shore + GA (3 coaches + GA), support lists Director of Sports Medicine/Head AT only; no GK coach, no S&C/sports-science listed. Stored Tier-1 facilityDetails: small dedicated 1,000-seat stadium, developing S&C/GPS under AAC transition, Hudl video, warm 12-month outdoor training. Developing environment; 2025 AAC tournament title + DPT pathway are results/academic, excluded — prior devAvg 72 was inflated.",
-    "fitOlivier": 68,
+    "fitOlivier": 52,
     "tags": [
       "warm",
       "city",
@@ -2566,61 +2577,58 @@
     "rec": "FAU is the standout discovery of the Tier 1 research — the Pre-PT/OT concentration with guaranteed early interview at FIU's DPT program is the most direct physical therapy pathway of any school in the entire guide (15/16 ACU alignment). Combined with warm South Florida lifestyle (best Sydney climate match), accessible admission (GPA 2.8 is fine), competitive AAC D1 soccer, affordable cost (~$32k/yr out-of-state), and the same city as Lynn University, FAU deserves to be on Olivier's shortlist. The soccer program is developing but just won the 2025 AAC Tournament in the coach's debut season.",
     "url": "https://fausports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 68,
+      "overall": 52,
       "soccer": 68,
       "academic": 80,
       "lifestyle": 85,
-      "minutes": 67,
-      "value": 56
+      "minutes": 21,
+      "value": 41
     },
     "minutesOutlook": {
       "available": true,
-      "cleared_before_2027": 5,
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Matthew Alfred",
-        "Felipe Santos",
-        "Sebastian Zettl",
-        "Ednilson Voiles",
-        "Ethan Schumaker"
+        "Felipe Santos"
       ],
-      "mf_total_2025": 7,
+      "mf_total": 5,
+      "roster_season": "2026-27",
       "recruit_risk": "Medium",
-      "rising_junior_2027_count": 1,
-      "rising_junior_2027_names": [
-        "Elias Asikainen"
-      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "4 of 7 current MFs (57%) are transfers, per the live 2025 fausports.com roster — including one JUCO (Matthew Alfred, Iowa Western) plus Marshall, Southern Indiana, and USF. The remaining 3 (43%, incl. captain Zettl) came in as true freshmen. A genuinely balanced mix under Worthen's rebuilding staff.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 fausports.com roster (5 MFs of 30). FAU's roster table publishes only a Hometown / High School column and no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster alone — the listed entries are secondary schools (Hosoda Gaguen, Haugesund toppidrettgymnas), not colleges. Classification retained from the earlier research pass; treat as lower-confidence than schools whose roster publishes a previous-school field.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 60,
-          "label": "Competitive for starting spot"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 78,
-          "label": "Established starter"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 88,
-          "label": "Key player"
+          "pct": 55,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 94,
-          "label": "Captain / leader"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "FAU is a developing AAC program under a new coach — significant MF turnover before 2027 and a coach actively building his roster creates a genuine opportunity for Olivier to compete for immediate minutes. The 2025 AAC title shows the program has momentum. Best minutes outlook of any D1 in the Tier 1 group.",
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "David Jesus"
+        "Manato Ogawa",
+        "David Jesus",
+        "Jonas Sundli-Hardig"
       ]
     },
     "profileDepth": "full",

@@ -66,10 +66,11 @@
     "acuAlign": 13,
     "acuAlignNote": "Strong — anatomy, physiology, biomechanics, motor control, sport psych all covered. UVA Health System gives extraordinary clinical placement access for pre-PT students.",
     "soccerLevel": "ACC — Elite (7 NCAA titles)",
-    "cost": "~$82k/yr",
+    "soccerLevelShort": "ACC",
     "aid": "Athletic + Merit",
     "size": 25000,
     "prePT": "Strong",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "3.0+ strongly preferred",
       "minSchol": "3.5+ for merit aid",
@@ -77,14 +78,14 @@
       "status": "borderline"
     },
     "fin": {
-      "costNum": 82000,
-      "tuition": 59000,
-      "roomBoard": 18000,
-      "fees": 5000,
+      "costNum": 78136,
+      "tuition": 57432,
+      "roomBoard": 16070,
+      "fees": 4634,
       "maxAthletic": 0.8,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "UVA out-of-state COA is ~$82k/yr (2025-26) — tuition alone is ~$59-63k for Arts & Sciences. Athletic scholarship is the primary lever. Academic merit aid limited for internationals. Even a 50% athletic package brings net cost to ~$41k."
+      "internationalNote": "UVA non-Virginian direct billed cost $78,136 (2026-27, Tier-1 verified from UVA Student Financial Services' official Estimated Undergraduate Cost of Attendance, rates approved by the Board of Visitors 16 April 2026): tuition $57,432 + required fees $4,634 (UVA's own 'Subtotal' of $62,066) + housing $8,730 + food $7,340. IMPORTANT — UVA prices BY SCHOOL and the rate used is the SCHOOL OF EDUCATION AND HUMAN DEVELOPMENT, where its Kinesiology degree sits, first-year non-Virginian. Housing is the first-year figure; all other years budget $9,894 (+$1,164). UVA's headline first-year non-Virginian total is $83,298-$84,988 depending on the travel allowance by region, adding books, personal expenses, travel and loan fees that this guide excludes; the $4,220 student health plan is required only where a student's own cover is not comparable. The previous stored $82,000 was an unresearched ballpark and OVERstated the cost by $3,864."
     },
     "culture": {
       "vibe": "Academically prestigious, tradition-heavy, slightly formal. UVA has one of the most storied university cultures in America — founded by Thomas Jefferson, the 'Lawn' is a UNESCO World Heritage site. Students take academic pride seriously. Social life centres on the Corner bar district and Greek life.",
@@ -114,7 +115,7 @@
       "fitness": 88
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). ANCHOR — held near current. Live virginiasports.com MSOC staff: HC George Gelnovatch (30th yr) + Assoc HC Matt Chulis + Asst Jermaine Birriel + Asst Johnny Fenwick = 4 full-time coaches. Stored Tier-1 facilities: Klöckner Stadium 8,000-seat dedicated natural-grass soccer venue + 3 dedicated practice fields (2 grass, 1 turf) + 73,000 sq ft indoor (Lannigan Field). Anchor-tier full-time staff + soccer-specific stadium AND training ground; UVA is a named §5a anchor (90–95) so held at 95/90/88.",
-    "fitOlivier": 45,
+    "fitOlivier": 42,
     "tags": [
       "acad",
       "soccer"
@@ -134,59 +135,60 @@
     "rec": "Most storied men's soccer program in the USA. 7 NCAA titles. Top-5 MLS producer. Charlottesville is not a major city and climate is cool — less lifestyle match for Sydney. Fierce competition for spots.",
     "url": "https://virginiasports.com/sports/msoc",
     "lensScores": {
-      "overall": 45,
+      "overall": 42,
       "soccer": 82,
       "academic": 84,
-      "minutes": 30,
+      "minutes": 21,
       "lifestyle": 0,
-      "value": 27
+      "value": 25
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 2,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
         "Brendan Lambe",
-        "Marco Dos Santos"
+        "Marco Dos Santos",
+        "Drew Serafino"
       ],
       "rising_senior_2027_count": 1,
       "rising_senior_2027_names": [
         "Luke Burns"
       ],
-      "rising_junior_2027_count": 4,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Ethan Martinez",
         "Sami Oulouheu",
         "Bacary Tandjigora",
         "Emmanuel Akinkoye"
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "6 of 8 current MFs (75%) recruited directly from HS/club with no prior college, per the live 2026 virginiasports.com roster. 2 transferred in, both from Boston College (Marco Dos Santos, Drew Serafino).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 virginiasports.com roster (12 MFs of 29). Only 3 of 12 list a previous college (Santa Clara, Boston College x2); the other 9 came straight from high school or club. Freshmen are a third of the midfield group, so a true freshman can still enter here — the constraint is depth, not the recruiting route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 30,
-          "label": "Squad rotation"
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "Yr1/Yr2 flat: 4 rising juniors maintain competition. Yr3 jump as Olivier establishes and juniors clear."
@@ -343,10 +345,11 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong — anatomy, physiology, biomechanics, sport psych, exercise prescription covered. Wake Forest Baptist Medical Centre proximity unique for DPT clinical hours. Motor development less structured.",
     "soccerLevel": "ACC — Very Strong (2007 champ)",
-    "cost": "~$91k/yr",
+    "soccerLevelShort": "ACC",
     "aid": "Athletic + Merit",
     "size": 8500,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "3.0 NCAA core",
       "minSchol": "3.3+ for merit aid consideration",
@@ -354,14 +357,14 @@
       "status": "borderline"
     },
     "fin": {
-      "costNum": 91000,
-      "tuition": 68000,
-      "roomBoard": 21000,
-      "fees": 2000,
+      "costNum": 92938,
+      "tuition": 71894,
+      "roomBoard": 19768,
+      "fees": 1276,
       "maxAthletic": 0.85,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "Wake Forest full COA is ~$91k/yr (2025-26) — one of the most expensive in the guide. Athletic scholarship is the primary lever. A realistic package for an international recruit is 25–50% athletic ($23k–$46k), bringing net cost to ~$45k–$68k before any institutional aid. Private university means the coach has flexibility to request additional institutional grants to sweeten the deal — but this requires a strong athletic profile to justify the investment."
+      "internationalNote": "Wake Forest direct billed cost $92,938 (2026-27, Tier-1 verified from Wake Forest's official Academic Bulletin tuition-and-fees schedule, cross-checked against `finance.wfu.edu`): tuition $71,894 + double room $6,186 a semester = $12,372 + the Base meal plan $3,698 a semester = $7,396 + mandatory Deacon Health $312, Student Activity $115 and Wellness $211 a semester = $1,276. Wake Forest itemises rather than publishing a usable budget breakdown, so the combination is stated: a standard DOUBLE and the Base plan (all resident students must hold a meal plan). Deacon Place rooms run $15,158 and singles/apartments $14,590, so a different room adds $2,200-$2,800. The waivable health-insurance premium, the one-time $380 orientation fee and the off-campus-only $80 technology fee are excluded, as are books and personal expenses; Wake Forest's headline total cost of attendance is $98,730. ⚠ NOTE FOR ANY RE-CHECK: the itemised table on `financialaid.wfu.edu` does NOT render (its table body is empty in the DOM) and the accessibility tree returns a housing figure ($12,900) that does not match the published double-room rate — use the Bulletin, not that page. The previous stored $91,000 was an unresearched ballpark and understated the cost by $1,938, the smallest gap found in the campaign."
     },
     "culture": {
       "vibe": "Small, tight-knit, academically intense. With only 8,500 undergrads, everyone knows each other — professors know student names, teams socialise together, and campus life is genuinely close. Winston-Salem has limited nightlife but strong arts culture.",
@@ -391,7 +394,7 @@
       "fitness": 83
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). Live godeacs.com MSOC staff: HC Bobby Muuss + Dane Brenner (Assoc HC/Dir Recruiting/Dir of Goalkeeping) + Zack Schilawski (Asst/Dir Player Development) + Ade Taiwo (Asst/Player Welfare) = 4 full-time coaches incl goalkeeping and a player-development director, PLUS Michael White (dedicated Assistant Athletic Trainer) and David Bass (Sports Performance) both listed on the MSOC staff page. Stored Tier-1 facilities: Spry Soccer Stadium 3,000 dedicated natural grass + 2 practice fields + training complex. Genuinely deep coaching plus a dedicated ATC and a dedicated sports-performance staffer; the modest 3,000 stadium and absence of documented GPS/video-analysis staff keep it below the elite tier. Trimmed from 90/88/82 (tactical 90 was near-anchor / reputation-driven).",
-    "fitOlivier": 48,
+    "fitOlivier": 47,
     "tags": [
       "acad",
       "soccer"
@@ -410,58 +413,56 @@
     "rec": "ACC powerhouse. 4 MLS picks in one draft. Small campus means strong faculty relationships for DPT applications. Winston-Salem is not a major city. GPA 2.8 may be admission challenge.",
     "url": "https://godeacs.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 48,
+      "overall": 47,
       "soccer": 74,
       "academic": 73,
-      "minutes": 37,
+      "minutes": 33,
       "lifestyle": 0,
-      "value": 50
+      "value": 28
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 14,
-      "cleared_before_2027": 6,
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
-        "Nico Rabiu",
-        "Vlad Walent",
         "Jose Perez",
         "Jeffrey White",
-        "Pierce Bateson",
-        "Tate Lorentz"
+        "Tate Lorentz",
+        "Pierce Bateson"
       ],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Harvey Sarajian",
+        "Marcos Miranda",
         "Joel Torbic"
       ],
-      "rising_junior_2027_count": 4,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
         "David Nguema",
         "Alfred Debah",
-        "Chandler Young",
-        "Bret Russell"
+        "Chandler Young"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "All 13 current MFs (100%) recruited directly from HS/club with no prior college, per the live 2025 godeacs.com roster — the program's lone visible transfer (Ethan Subachan, from Louisville) plays forward, not midfield.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 godeacs.com roster (13 MFs of 31). Just 1 of 13 MFs lists a previous college (Marcos Miranda, John Brown) — the other 12 arrived directly from high school or academy sides (Toronto FC, Barca Residency Academy, Asanska FC, Orange County SC). One of the purest freshman-intake midfields in the batch.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -635,10 +636,11 @@
     "acuAlign": 10,
     "acuAlignNote": "Solid core — anatomy, physiology, biomechanics, exercise prescription covered. Health management focus is slightly different from ACU BESS exercise science curriculum but pre-PT pathway is available.",
     "soccerLevel": "ACC — Elite (2025 ACC Tourn champs)",
-    "cost": "~$96k/yr",
+    "soccerLevelShort": "ACC",
     "aid": "Athletic + Merit",
     "size": 12000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5 NCAA core (min)",
       "minSchol": "3.3+ for merit scholarship",
@@ -683,7 +685,7 @@
       "fitness": 86
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). Live smumustangs.com MSOC staff: HC Kevin Hudson + Michael King (Assoc HC/Recruiting) + Jaime Ibarra-Perez (Assoc HC/Goalkeeping) + Ross Fitzpatrick (Asst) + Alejandro Radilla (Director of Sports Science and Analytics) + Trey Nickel (GA) + Becky Riegle (Assoc ATC). Deep staff incl a dedicated goalkeeping coach and — rare at this level — a soccer-dedicated Sports Science & Analytics director, plus a dedicated ATC. Stored Tier-1 facilities: Washburne Stadium 2,577 shared with track (NOT soccer-specific), 2 dedicated practice fields, warm Dallas climate. Top of the non-anchor band on staffing/sports-science; the shared-track stadium is the limiter. Trimmed from 92/88/85 — the old tactical carried results-halo from SMU's recent rise.",
-    "fitOlivier": 70,
+    "fitOlivier": 67,
     "tags": [
       "warm",
       "city",
@@ -706,24 +708,27 @@
     "rec": "SMU is a genuine sleeper pick. 2025 ACC Tournament Champions. Warm Dallas city campus. Luchi Gonzalez (FC Dallas HC) is an SMU alum — direct pro pathway. Top-25 consistently nationally. Strong soccer + good academics combination.",
     "url": "https://smumustangs.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 70,
+      "overall": 67,
       "soccer": 80,
       "academic": 68,
-      "minutes": 40,
+      "minutes": 33,
       "lifestyle": 72,
-      "value": 42
+      "value": 40
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
+      "mf_total": 9,
+      "roster_season": "2026-27",
       "cleared_before_2027": 2,
       "cleared_names": [
         "Alex Salvo",
         "Jaylinn Mitchell"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
+        "Tweneboa Kodua",
         "Nick Harshaw",
+        "Dunes Nielsen",
         "Andre Philibbosian"
       ],
       "rising_junior_2027_count": 3,
@@ -734,25 +739,25 @@
       ],
       "recruit_risk": "Low",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "6 of 10 current MFs (60%) recruited directly from HS/club with no prior college, per the live 2025 smumustangs.com roster; 4 transferred in from four different programs — Central Arkansas, Dallas College Richland (JUCO), Cal Poly, Oral Roberts.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 smumustangs.com roster (9 MFs of 32). 5 of 9 arrived as 4-year transfers (Oral Roberts, Gardner-Webb, Bellarmine, Utah Tech, Seattle U) and 4 have no previous college — a genuine split, hence Mixed. No JUCO intake, and notably no true freshman midfielders at all on this roster, so freshman entry is possible but not the primary route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -883,7 +888,7 @@
     "acuAlign": 12,
     "acuAlignNote": "Strong kinesiology and exercise science. Duke Medical Center proximity gives excellent pre-PT clinical access. Biomechanics, exercise physiology, motor control, and sport psychology all covered. Duke's DPT program is top-5 nationally — pre-PT advising pipeline is the best in the ACC.",
     "soccerLevel": "ACC — Elite (1986 NCAA champion)",
-    "cost": "~$103k/yr",
+    "soccerLevelShort": "ACC",
     "fin": {
       "costNum": 103180,
       "tuition": 73740,
@@ -897,6 +902,7 @@
     "aid": "Athletic + Need",
     "size": 17000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.7",
       "minSchol": "3.8+",
@@ -905,14 +911,14 @@
     },
     "mapX": 502,
     "mapY": 205,
-    "fitOlivier": 43,
+    "fitOlivier": 39,
     "lensScores": {
-      "overall": 43,
+      "overall": 39,
       "soccer": 85,
       "academic": 90,
-      "minutes": 33,
+      "minutes": 21,
       "lifestyle": 0,
-      "value": 25
+      "value": 23
     },
     "confRecord": [
       {
@@ -1007,40 +1013,54 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 15,
-      "cleared_before_2027": 7,
-      "cleared_names": [],
-      "rising_senior_2027_count": 2,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 6,
-      "rising_junior_2027_names": [],
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Nikolai Ronaldo Bull Jorgensen",
+        "Thomas Vold"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Jamie Kabuusu",
+        "Jonah Wolf",
+        "Julius Suber"
+      ],
+      "rising_junior_2027_count": 5,
+      "rising_junior_2027_names": [
+        "Maxwell Simpson",
+        "Ian Hecker",
+        "Hugo Hill",
+        "Emmanuel Frimpong",
+        "Casey Bag"
+      ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "10 of 14 current MFs (71%) recruited directly from HS/club with no prior college, per the live 2025 goduke.com roster. 4 transferred in — from Georgetown, Harvard, College of Charleston, and Northeastern.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 goduke.com roster (13 MFs of 28). 3 of 13 are 4-year transfers (Saint Francis, Northeastern, Pacific); the remaining 10 came from high school or club sides (New England Revolution, Colorado Rapids 2, Boston Bolts, Yokogawa Musashino FC). Freshman-friendly on route, but the midfield is deep and young — 8 of 13 are underclassmen who all return through 2029.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
-          "label": "Coming off bench"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 55,
-          "label": "Regular starter"
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "7 of 15 cleared, but 6 Fr remain as Jrs competing directly with Olivier through Yr1-2. Duke recruits elite midfielders every cycle — squad competition is very high. Roster count verified by browser; names not captured."
@@ -1135,20 +1155,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics, and motor control covered. Pre-PT pathway available through kinesiology advising at NC State. Raleigh's growing healthcare sector (WakeMed, UNC Health) provides clinical placement access.",
     "soccerLevel": "ACC — Competitive (mid-tier)",
-    "cost": "~$52k/yr",
+    "soccerLevelShort": "ACC",
     "fin": {
-      "costNum": 52000,
-      "tuition": 29000,
-      "roomBoard": 16000,
-      "fees": 7000,
+      "costNum": 50383,
+      "tuition": 34961,
+      "roomBoard": 15422,
+      "fees": 0,
       "maxAthletic": 0.95,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "NC State out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Raleigh cost of living is moderate. Research Triangle location with strong career pathways."
+      "internationalNote": "NC State non-resident direct billed cost $50,383 (2026-27, Tier-1 verified from NC State's official Undergraduate Estimated Cost of Attendance table, out-of-state column): tuition & fees $34,961 + housing $8,738 + food $6,684. NC State publishes tuition and fees COMBINED and does not split them, so the combined figure is stored under `tuition` and `fees` is 0 — the sum invariant still holds. NC State's own headline out-of-state total is $54,779, which adds books, personal, transport and loan fees that this guide excludes by convention. The previous stored $52,000 was an unresearched ballpark and slightly OVERstated the direct cost. Athletic scholarship can cover 35-55%; merit aid available for international students with 3.0+ GPA. Raleigh cost of living is moderate."
     },
     "aid": "Athletic",
     "size": 37000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -1164,7 +1185,7 @@
       "academic": 60,
       "minutes": 57,
       "lifestyle": 50,
-      "value": 34
+      "value": 35
     },
     "confRecord": [
       {
@@ -1255,7 +1276,8 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
+      "mf_total": 7,
+      "roster_season": "2025-26",
       "cleared_before_2027": 5,
       "cleared_names": [],
       "rising_senior_2027_count": 1,
@@ -1383,7 +1405,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise science covering anatomy, physiology, biomechanics. UofL Health System provides strong clinical pre-PT access — one of the largest regional medical centres in the South. Pre-PT advising available through the Exercise Science department.",
     "soccerLevel": "ACC — Competitive (rebuilding phase)",
-    "cost": "~$52k/yr",
+    "soccerLevelShort": "ACC",
     "fin": {
       "costNum": 52316,
       "tuition": 28978,
@@ -1397,6 +1419,7 @@
     "aid": "Athletic",
     "size": 23000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1405,14 +1428,14 @@
     },
     "mapX": 431,
     "mapY": 198,
-    "fitOlivier": 71,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 71,
+      "overall": 55,
       "soccer": 70,
       "academic": 55,
-      "minutes": 57,
+      "minutes": 14,
       "lifestyle": 62,
-      "value": 43
+      "value": 33
     },
     "confRecord": [
       {
@@ -1504,40 +1527,48 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 6,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 0,
       "cleared_names": [],
-      "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Giacomo Zizza",
+        "Håkon Edstrøm",
+        "Jack Lewis"
+      ],
       "rising_junior_2027_count": 2,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_names": [
+        "Braydon Sellers",
+        "Fernando Sanchez"
+      ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of 9 current MFs (89%) recruited directly from HS/club with no prior college, per the live 2025 gocards.com roster — only Bilal Camara transferred in (Limestone, D2).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gocards.com roster (9 MFs of 27). 3 of 9 are 4-year transfers (Saint Louis University, Lehigh, Evansville); 4 of 9 are true freshmen who came straight in. Note NO midfielder graduates before Olivier's 2027 entry — the entire group returns, which is why the opportunity score is the lowest in this batch despite the freshman-friendly recruiting route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
-          "label": "Key player"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "6 of 9 MFs cleared before 2027. Strong opportunity for an ACC program — 2 rising juniors provide peer competition. Roster count verified; names not captured."
@@ -1632,20 +1663,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Exercise Science covers anatomy, physiology, biomechanics, motor control, and sport psychology. UPMC partnership gives Pitt athletes access to world-class sports medicine infrastructure — one of the top 5 sports medicine systems globally. Pre-PT pathway is among the strongest in this guide.",
     "soccerLevel": "ACC — Strong (2024 Regular Season Champions)",
-    "cost": "~$58k/yr",
+    "soccerLevelShort": "ACC",
     "fin": {
-      "costNum": 58000,
-      "tuition": 36000,
-      "roomBoard": 16000,
-      "fees": 6000,
+      "costNum": 61972,
+      "tuition": 43328,
+      "roomBoard": 16492,
+      "fees": 2152,
       "maxAthletic": 1.0,
       "maxAcademic": 12000,
       "aidType": "athletic+merit",
-      "internationalNote": "Pitt out-of-state COA is ~$58k/yr (2025-26). Athletic scholarship can cover 30–50% of COA. Merit aid available for international students. Pittsburgh has affordable urban cost of living compared to eastern coastal cities. Strong health sciences pathway."
+      "internationalNote": "Pitt out-of-state direct billed cost $61,972 (2026-27, Tier-1 verified from Pitt's official Undergraduate Cost of Attendance page for the Pittsburgh campus, board-approved rates): tuition $43,328 + mandatory fees $2,152 + housing $10,374 + food $6,118. IMPORTANT — Pitt prices tuition BY SCHOOL. The rate used is the one for the School of Education, which is where Pitt's B.S. in Exercise Science actually sits (Department of Health and Human Development); it is the same $43,328 as the Dietrich School of Arts and Sciences. The School of Health and Rehabilitation Sciences charges $55,070 out-of-state, so a switch into an SHRS degree would add $11,742 a year — worth raising with admissions before committing to a major. Books, personal expenses and transportation are excluded by convention (Pitt's other-expenses total is $20,654). Athletic scholarship can cover a large share. UPMC partnership gives Pitt one of the strongest sports-medicine environments in the guide."
     },
     "aid": "Athletic",
     "size": 28000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -1661,7 +1693,7 @@
       "academic": 65,
       "minutes": 57,
       "lifestyle": 50,
-      "value": 34
+      "value": 35
     },
     "confRecord": [
       {
@@ -1753,7 +1785,8 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 5,
+      "mf_total": 5,
+      "roster_season": "2025-26",
       "cleared_before_2027": 4,
       "cleared_names": [],
       "rising_senior_2027_count": 1,
@@ -1881,20 +1914,21 @@
     "acuAlign": 13,
     "acuAlignNote": "Exceptional — Stanford's Human Biology major covers anatomy, physiology, biomechanics, neuroscience, and motor control at research depth. 13 of 16 ACU units have direct equivalents. Stanford Medical Center's DPT program is top-5 nationally — pre-PT students can access clinical hours and mentorship unavailable anywhere else in the guide.",
     "soccerLevel": "ACC — Elite (3× NCAA Champion 2015–17)",
-    "cost": "~$88k/yr",
+    "soccerLevelShort": "ACC",
     "fin": {
-      "costNum": 88000,
-      "tuition": 65000,
-      "roomBoard": 22000,
-      "fees": 1000,
+      "costNum": 93285,
+      "tuition": 67731,
+      "roomBoard": 22944,
+      "fees": 2610,
       "maxAthletic": 1.0,
       "maxAcademic": 0,
       "aidType": "athletic+need",
-      "internationalNote": "Stanford full COA is ~$88k/yr (2025-26). Athletic scholarship + need-based aid can combine to substantially reduce costs — Stanford runs one of the most generous need-based aid programs in the US. Bay Area living costs are high but packages reflect this. Highly selective."
+      "internationalNote": "Stanford direct billed cost $93,285 (2026-27, Tier-1 verified from Stanford Financial Aid's official undergraduate Student Budget): tuition $67,731 + housing and food $22,944 + student fees allowance $2,610. Stanford HELD UNDERGRADUATE TUITION FLAT for 2026-27 by decision of its Board of Trustees; standard room and board rose 3.5%. Its headline budget total is $97,545, adding books and personal expenses that this guide excludes (travel is listed as 'Varies'). The previous stored $88,000 was an unresearched ballpark and understated the cost by $5,285. Stanford meets full demonstrated need for those who qualify, but international students face the tightest need-based aid competition in the guide; athletic scholarship is the realistic lever."
     },
     "aid": "Athletic + Need",
     "size": 17000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.7",
       "minSchol": "3.9+",
@@ -1903,14 +1937,14 @@
     },
     "mapX": 70,
     "mapY": 179,
-    "fitOlivier": 57,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 57,
+      "overall": 55,
       "soccer": 88,
       "academic": 95,
-      "minutes": 26,
+      "minutes": 19,
       "lifestyle": 50,
-      "value": 34
+      "value": 33
     },
     "confRecord": [
       {
@@ -2008,51 +2042,53 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
-      "cleared_before_2027": 2,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "TJ Kahoalii",
-        "Trevor Islam"
+        "Dylan Groeneveld"
       ],
-      "rising_senior_2027_count": 4,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Tim Logan",
-        "Victor Fung",
-        "Aidan Reilly",
-        "Dillon Logan"
+        "Trevor Islam",
+        "Alex Chow",
+        "TJ Kahoalii"
       ],
-      "rising_junior_2027_count": 2,
+      "rising_junior_2027_count": 5,
       "rising_junior_2027_names": [
-        "Yujin Kikuchi",
-        "Logan Tsopanoglou"
+        "Brad Bennett",
+        "Joshua Partal",
+        "Jude Stone",
+        "Jack Pymm",
+        "Tim Logan"
       ],
       "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 gostanford.com roster template does not publish prior-school data for any player (unlike most other schools' rosters), so individual transfer status could not be directly verified. Classified Freshman-friendly on structural grounds: Stanford's own undergraduate admissions (3.7+ GPA, 13% acceptance) are separate from athletics and apply equally to transfers, making transfer-in unusually rare compared to any other school in this guide. Lower confidence than other entries — flag for re-verification if a more detailed source is found.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gostanford.com roster (11 MFs of 28). No MF lists a previous college — Stanford recruits its midfield directly out of high school. Entry is freshman-friendly by route but the group is very young: 7 of 11 are freshmen or sophomores who return through 2029, and only 1 senior clears before 2027.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development squad"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 50,
-          "label": "Regular starter"
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "Only 2 MFs clear (Kahoalii Jr, Islam R-Jr). 4 So compete as Srs in Yr1 — midfield is congested. Stanford's elite recruiting cycle maintains perpetual competition."
@@ -2147,20 +2183,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Exercise Science through Falk College covers anatomy, physiology, biomechanics, motor control, and sport psychology. Pre-PT pathway available through kinesiology advising. Upstate Medical University affiliation gives clinical access above typical D1 standard.",
     "soccerLevel": "ACC — Strong (2022 NCAA Champions)",
-    "cost": "~$78k/yr",
+    "soccerLevelShort": "ACC",
     "fin": {
-      "costNum": 78000,
-      "tuition": 57000,
-      "roomBoard": 17000,
-      "fees": 4000,
+      "costNum": 91629,
+      "tuition": 69180,
+      "roomBoard": 20580,
+      "fees": 1869,
       "maxAthletic": 1.0,
       "maxAcademic": 15000,
       "aidType": "athletic+merit",
-      "internationalNote": "Syracuse full COA is ~$78k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Merit aid available for strong academic records. Upstate NY has moderate cost of living. Strong international student community and sports management programs."
+      "internationalNote": "Syracuse direct billed cost $91,629 (2026-27, Tier-1 verified from Syracuse's official 2026-27 Cost of Attendance, Undergraduate Students Living On Campus): tuition $69,180 + housing and food (average) $20,580 + miscellaneous fees $1,869. Its headline total is $95,676, adding books, transportation, personal expenses and loan fees that this guide excludes. Incoming first-year students are REQUIRED to live in university housing for two years, so the on-campus figure is the applicable one. Costs are estimates until the Board of Trustees approves them each May, and cost of attendance can vary by programme because of special fees. The previous stored $78,000 was an unresearched ballpark and understated the cost by $13,629."
     },
     "aid": "Athletic",
     "size": 22000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -2169,12 +2206,12 @@
     },
     "mapX": 518,
     "mapY": 139,
-    "fitOlivier": 38,
+    "fitOlivier": 36,
     "lensScores": {
-      "overall": 38,
+      "overall": 36,
       "soccer": 68,
       "academic": 62,
-      "minutes": 24,
+      "minutes": 16,
       "lifestyle": 0,
       "value": 22
     },
@@ -2270,40 +2307,50 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 10,
+      "mf_total": 10,
+      "roster_season": "2026-27",
       "cleared_before_2027": 1,
-      "cleared_names": [],
-      "rising_senior_2027_count": 4,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 5,
-      "rising_junior_2027_names": [],
+      "cleared_names": [
+        "Jackson Miller"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Nathan Scott",
+        "Quinn Olcott"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Kelvin Da Costa",
+        "Sachiel Ming",
+        "Kristjan Fortier"
+      ],
       "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "7 of 10 current MFs (70%) recruited directly from HS/club with no prior college, per the live 2025 cuse.com roster. 3 transferred in — Nathan Scott (UC Riverside), Carlos Zambrano (Daytona State, JUCO), Tim Noeding (Bethel, NAIA).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 cuse.com roster (10 MFs of 28). Syracuse's roster table publishes only #, Name, Class, Pos and Hometown — there is no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster. Classification retained from the earlier research pass; 4 of the 10 MFs are freshmen, which is consistent with it. Treat as lower-confidence than schools that publish a previous-school field.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development squad"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 25,
-          "label": "Development squad"
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 50,
-          "label": "Regular starter"
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "Only 1 MF clears before 2027. 4 So and 5 Fr remain — midfield extremely crowded in Yr1-2. Patience required; Yr3 breakthrough as seniors clear. Roster count verified; names not captured."
@@ -2398,7 +2445,7 @@
     "acuAlign": 12,
     "acuAlignNote": "Excellent — Integrative Human Physiology covers anatomy, physiology, motor control, biomechanics, neuroscience. Berkeley's research depth is world-class. 12 of 16 ACU units have direct equivalents. UCSF Health connection provides exceptional pre-PT clinical placement access.",
     "soccerLevel": "ACC — Competitive (strong Pac-12 history)",
-    "cost": "~$94k/yr",
+    "soccerLevelShort": "ACC",
     "fin": {
       "costNum": 93740,
       "tuition": 57486,
@@ -2412,6 +2459,7 @@
     "aid": "Athletic",
     "size": 42000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.3+",
@@ -2420,14 +2468,14 @@
     },
     "mapX": 67,
     "mapY": 176,
-    "fitOlivier": 67,
+    "fitOlivier": 71,
     "lensScores": {
-      "overall": 67,
+      "overall": 71,
       "soccer": 72,
       "academic": 88,
-      "minutes": 47,
+      "minutes": 58,
       "lifestyle": 72,
-      "value": 40
+      "value": 43
     },
     "confRecord": [
       {
@@ -2521,23 +2569,23 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
-      "cleared_before_2027": 9,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 7,
       "cleared_names": [
-        "Gaku Nishimura",
-        "Cam Wilkerson",
-        "Rohan McEligot",
-        "Allan Juarez",
-        "Adrian Jacobs",
         "Giancarlo Mota",
-        "Kai Djerbaka",
         "Jack Bowers",
-        "Nik Laredo"
+        "Brendan Bell",
+        "Nik Laredo",
+        "Isaiah Thomas",
+        "Wisdom Onuoma",
+        "Adrian Jacobs"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
         "Junhwan Park",
-        "Kieran Bracken Serra"
+        "Kieran Bracken Serra",
+        "Malcolm Zalayet"
       ],
       "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
@@ -2545,30 +2593,30 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "11 of 15 current MFs (73%) recruited directly from HS/club with no prior college, per the live 2025 calbears.com roster. 4 transferred in — Cam Wilkerson (UCLA), Adrian Jacobs (UC Santa Cruz), Junhwan Park (University of San Francisco), Nik Laredo (Pomona-Pitzer).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 calbears.com roster (12 MFs of 27). Cal's card layout carries a previous-school field but publishes it empty for every midfielder, so the transfer-vs-freshman split cannot be re-derived; classification retained from the earlier pass. The headline finding is turnover, not pathway: 7 of 12 MFs (6 seniors + 1 graduate) clear before Olivier's 2027 entry and only 2 underclassmen remain — the largest midfield opening in this batch by a wide margin.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Coming off bench"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
-          "label": "Likely starter"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ],
@@ -2713,10 +2761,11 @@
     "acuAlign": 5,
     "acuAlignNote": "Partial alignment — Clemson's Health Science: Preprofessional degree is a public-health pathway, not exercise science. Required courses cover anatomy (BIOL 2220/2230), human biology, statistics, research methods, and a health internship — but there is no exercise physiology, no biomechanics, no resistance training, no sport psychology, and no motor control in the required curriculum. Strong for PT school admission prerequisites (MUSC DPT pathway is a genuine clinical advantage), but structurally different from ACU BESS.",
     "soccerLevel": "ACC Conference — D1 Elite. 2× recent NCAA Champions.",
-    "cost": "~$52k/yr (out-of-state)",
+    "soccerLevelShort": "ACC Conference",
     "aid": "Athletic + Merit",
     "size": 28000,
     "prePT": "Good — pre-health public pathway covers PT school prerequisites. Degree is not exercise-science based. MUSC DPT pathway is the main clinical advantage.",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "3.0+ recommended",
       "minSchol": "3.5+ for academic merit",
@@ -2724,14 +2773,14 @@
       "status": "borderline"
     },
     "fin": {
-      "costNum": 52000,
-      "tuition": 38000,
-      "roomBoard": 12000,
-      "fees": 2000,
+      "costNum": 58732,
+      "tuition": 42020,
+      "roomBoard": 14880,
+      "fees": 1832,
       "maxAthletic": 0.9,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state tuition ~$38k. Athletic scholarship can cover majority. Clemson has strong international student support. Merit aid available for high academic performers."
+      "internationalNote": "Out-of-state tuition $42,020 (2026-27, Tier-1 verified from Clemson's official Estimated Cost of Attendance table, non-South Carolina resident, on/off campus). Direct billed cost is $58,732 = tuition + housing $9,304 + food $5,576 + fees $1,832; Clemson's own headline COA of $66,180 additionally includes books, transport and personal expenses, which this guide excludes by convention. Athletic scholarship can cover the majority. Merit aid available for high academic performers; strong international student support."
     },
     "culture": {
       "vibe": "Large, spirited Southern university with intense athletic culture. Clemson is famous for its football program but soccer carries real prestige — 2× recent national champions. Campus is in a small college town (Clemson, SC) but Atlanta is 2hrs away.",
@@ -2800,7 +2849,8 @@
         "Gabriel Santuari",
         "Mason Jimenez"
       ],
-      "mf_total_2025": 11,
+      "mf_total": 11,
+      "roster_season": "2025-26",
       "recruit_risk": "High",
       "rising_junior_2027_count": 6,
       "rising_junior_2027_names": [
@@ -2988,10 +3038,11 @@
     "acuAlign": 9,
     "acuAlignNote": "Partial-strong alignment — Notre Dame does not have a dedicated Exercise Science or Kinesiology degree. Pre-health Biology pathway covers anatomy, physiology, research methods and some sport psych electives. Missing dedicated biomechanics, motor control, resistance training, and exercise-specific clinical units. Strong for pre-med/pre-PT prerequisites but not as directly aligned as USF, FIU or Indiana. Students pursuing PT should complement with specific electives and clinical observation hours.",
     "soccerLevel": "ACC Conference — D1 Elite. 2013 National Champions. Perennial top-25.",
-    "cost": "~$92k/yr",
+    "soccerLevelShort": "ACC Conference",
     "aid": "Athletic + Need-based (Notre Dame meets 100% of demonstrated need)",
     "size": 9000,
     "prePT": "Good — strong pre-PT science pathway, University Health System access",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "3.8+ typical (extremely selective, 13% acceptance)",
       "minSchol": "Notre Dame meets 100% of demonstrated need",
@@ -3036,7 +3087,7 @@
       "fitness": 85
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). Live fightingirish.com MSOC staff: HC Chad Riley (endowed McFarland Family Head Coach) + Mike Graczyk (Asst) + Jeff Rowland (Asst) + Sam Biek (Asst/Dir of Ops) = 4 coaches (no dedicated GK coach). Endowed head coach and endowed grants-in-aid. Stored Tier-1 facilities: Alumni Stadium 2,500 dedicated natural grass (modest size), world-class shared S&C (with football), documented full GPS (Catapult); Indiana winters limit outdoor training Nov–Feb. GPS + elite shared S&C support a high score, but modest stadium + winter limitation + no soccer-dedicated sports science keep it below anchor. Trimmed from 91/90/89 — strip the 2013-title halo.",
-    "fitOlivier": 45,
+    "fitOlivier": 48,
     "tags": [
       "acad",
       "soccer"
@@ -3055,52 +3106,67 @@
       "Pre-PT advising through Biology/Science dept"
     ],
     "rec": "Notre Dame is elite soccer with a 2013 national championship and 2023 runner-up — Chad Riley has maintained the program's elite status. Pre-health science pathway prepares well for DPT programs. However the degree alignment is lower than dedicated exercise science programs (9/16 ACU units), winters are cold, the campus is not a city, and GPA 2.8 is a significant challenge for 13% acceptance rate. Best for Olivier if athletic offer is on the table and he is comfortable with a non-warm-climate experience.",
-    "url": "https://fightingirish.com/sports/mens-soccer",
+    "url": "https://fightingirish.com/sports/msoc",
     "lensScores": {
-      "overall": 45,
+      "overall": 48,
       "soccer": 93,
       "academic": 95,
       "lifestyle": 0,
-      "minutes": 30,
-      "value": 27
+      "minutes": 38,
+      "value": 29
     },
     "minutesOutlook": {
       "available": true,
-      "cleared_before_2027": 2,
-      "cleared_names": [],
-      "mf_total_2025": 11,
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Nico Bartlett",
+        "Nolan Spicer",
+        "Leo Brummell",
+        "Vlad Walent"
+      ],
+      "mf_total": 12,
+      "roster_season": "2026-27",
       "recruit_risk": "High",
-      "rising_junior_2027_count": 4,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Karson Baquero",
+        "Diego Green"
+      ],
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "11 of 12 current MFs (92%) recruited directly from HS with no prior college, per the live 2026-27 fightingirish.com roster — only Vlad Walent transferred in (cross-referenced by name/hometown/HS against Wake Forest's 2025 roster, confirming a grad transfer from Wake Forest).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 fightingirish.com roster (12 MFs of 28). Not one of the 12 MFs lists a previous college — the entire midfield was recruited straight out of high school (Culver Military Academy, Shattuck St. Mary's, Montclair Kimberley). Notre Dame does not use the transfer portal for midfielders.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development — elite squad depth"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 45,
-          "label": "Breaking into rotation"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Regular contributor"
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
           "pct": 85,
-          "label": "Key player"
+          "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "Notre Dame is consistently a top-25 program with a deep, talented squad. MF competition is elite-level. Years 1-2 would be developmental with meaningful minutes expected from Year 3."
+      "trajectoryNote": "Notre Dame is consistently a top-25 program with a deep, talented squad. MF competition is elite-level. Years 1-2 would be developmental with meaningful minutes expected from Year 3.",
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Will Schroeder",
+        "Ian Shaul",
+        "Brady Hilden"
+      ]
     },
     "profileDepth": "full",
     "confKey": "acc",
@@ -3242,10 +3308,11 @@
     "acuAlign": 12,
     "acuAlignNote": "Strong alignment — UNC's Exercise and Sport Science required core covers anatomy & physiology (EXSS 155/256), exercise physiology (EXSS 376 Physiological Basis of Human Performance), biomechanics (EXSS 385), neuromuscular control and learning (EXSS 380), sport & exercise psychology (EXSS 181), and research methods (EXSS 273). Gaps: exercise prescription, resistance training, and clinical practicum are not in the required core — available via the fitness professional track only. Chapel Hill / Durham / Raleigh clinical access via Duke Medical and UNC Health remains world-class.",
     "soccerLevel": "ACC Conference — D1 Elite. Dorrance dynasty legacy. Consistent top-25.",
-    "cost": "~$70k/yr (out-of-state)",
+    "soccerLevelShort": "ACC Conference",
     "aid": "Athletic + Merit",
     "size": 32000,
     "prePT": "Excellent — degree explicitly designed for PT pathway + UNC Health / Duke Medical clinical access",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.5+ recommended (UNC is selective, ~19% acceptance)",
       "minSchol": "3.5+ for academic merit",
@@ -3290,7 +3357,7 @@
       "fitness": 85
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). Live goheels.com MSOC staff: HC Carlos Somoano + 3 Asst (Michael Callahan, Michael Harrington, Jeff Negalha) = 4 full-time coaches (no GK coach) + Director of Operations + Director of Student-Athlete Development + Dir Alumni Relations. Stored Tier-1 facilities: Dorrance Field 4,200 chairback, a dedicated soccer/lacrosse stadium opened 2019 with LED video board, world-class shared S&C, Chapel Hill 9+ month outdoor season. Strong modern environment with deep operations staff and a warm climate; no soccer-dedicated sports scientist. Trimmed from 88/87/86 to strip the 2011-title halo.",
-    "fitOlivier": 59,
+    "fitOlivier": 52,
     "tags": [
       "warm",
       "city",
@@ -3315,59 +3382,60 @@
     "rec": "UNC is an excellent fit for Olivier — one of the strongest ACU degree alignments of any new school added (13/16), warm(ish) climate, world-class clinical placement through UNC Health and Duke Medical, and a top-25 ACC soccer program under a long-tenured coach. The Research Triangle setting provides city access without a full urban environment. The main challenges are selective admission (GPA 2.8 is borderline) and competition for playing time in a perennial ACC contender.",
     "url": "https://goheels.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 59,
+      "overall": 52,
       "soccer": 88,
       "academic": 87,
       "lifestyle": 50,
-      "minutes": 37,
-      "value": 35
+      "minutes": 16,
+      "value": 31
     },
     "minutesOutlook": {
       "available": true,
-      "cleared_before_2027": 2,
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Joschi Schelb",
-        "Ryan Zellefrow"
+        "Evans Dapaah"
       ],
-      "mf_total_2025": 5,
+      "mf_total": 10,
+      "roster_season": "2026-27",
       "recruit_risk": "High",
-      "rising_junior_2027_count": 1,
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Jonathan Luna Sabando"
+        "Charlie Antonelius",
+        "Nico Loebus"
       ],
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "7 of 10 current MFs (70%) recruited directly from HS/club with no prior college, per the live 2025 goheels.com roster. 3 transferred in — Nacho Abeal (SIU-Edwardsville), Jack Sandmeyer (University of San Diego), Gabriel Bracken Serra (USF).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 goheels.com roster (10 MFs of 31). The previous-school column is mostly CLUBS, not colleges (KCCA FC, IF Brommapojkarna, Houston Dynamo, Stade Brestois 29, Charlotte FC, Follo FK); only 3 of 10 are genuine college transfers (Vermont x2, Campbell). Half the midfield are freshmen, and UNC recruits internationals directly from club academies — the closest profile in this batch to Olivier's own route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
+          "pct": 10,
           "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Breaking into rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 75,
-          "label": "Regular starter"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 88,
-          "label": "Key player"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "UNC is a consistent top-25 ACC program. MF competition is strong but slightly more accessible than Clemson or Georgetown. Olivier's box-to-box profile suits Somoano's style — years 2-3 are realistic for meaningful minutes.",
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Charlie Antonelius",
-        "Nico Loebus"
+        "David Molina",
+        "Ryan Zellefrow"
       ]
     },
     "profileDepth": "full",

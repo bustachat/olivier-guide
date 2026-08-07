@@ -11,7 +11,8 @@
     "soccerTeams": 16,
     "ncaaTitles": 28,
     "mlsPipeline": "Highest in college soccer — leads all conferences in MLS picks 2020–2026",
-    "scholarships": "Up to 9.9 athletic equivalencies split across roster",
+    "scholarships": "Up to 9.9 athletic equivalencies split across roster — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "Virginia (UVA)",
       "Wake Forest",
@@ -47,7 +48,8 @@
     "soccerTeams": 14,
     "ncaaTitles": 12,
     "mlsPipeline": "Top 5 — Indiana all-time leader; Maryland most all-time picks; UCLA strong West Coast pipeline",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "UCLA (West)",
       "Indiana",
@@ -81,7 +83,8 @@
     "soccerTeams": 12,
     "ncaaTitles": 6,
     "mlsPipeline": "Strong — Georgetown 42 MLS signings under Wiese. Multiple Red Bulls/NYCFC connections from St John's.",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "St. John's",
       "Georgetown",
@@ -116,7 +119,8 @@
     "soccerTeams": 6,
     "ncaaTitles": 2,
     "mlsPipeline": "Growing — Texas A&M consistent SEC producer. Gyasi Zardes (Columbus Crew, USMNT) most famous alum.",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "Texas A&M (fully profiled)",
       "⚠ UF — academic reference only (no men's varsity)"
@@ -146,7 +150,8 @@
     "soccerTeams": 10,
     "ncaaTitles": 0,
     "mlsPipeline": "Strong and growing — FIU and USF are consistent MLS producers. FAU 2025 AAC Tournament Champions.",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "FIU (Miami)",
       "USF (Tampa)",
@@ -177,7 +182,8 @@
     "soccerTeams": 10,
     "ncaaTitles": 1,
     "mlsPipeline": "Solid — Manu Duah #1 overall 2025 is the marquee recent example",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "UCSB — UC Santa Barbara",
       "Cal Poly SLO",
@@ -210,6 +216,7 @@
     "ncaaTitles": 0,
     "mlsPipeline": "Growing — Princeton 5 MLS players under Barlow. Kevin O'Toole (NYCFC 2022) most recent.",
     "scholarships": "ZERO athletic scholarships — need-based financial aid only",
+    "maxAid": "None",
     "guideSchools": [
       "Princeton",
       "Yale"
@@ -241,7 +248,8 @@
     "soccerTeams": 8,
     "ncaaTitles": 0,
     "mlsPipeline": "Developing — Charleston Battery (USL) connection is the pro draw",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "College of Charleston (SC)",
       "Hofstra (Hempstead, NY)",
@@ -272,7 +280,8 @@
     "soccerTeams": 11,
     "ncaaTitles": 0,
     "mlsPipeline": "Limited — USL League One/Two connections building at UCA",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "University of Central Arkansas (UCA)"
     ],
@@ -304,7 +313,8 @@
     "soccerTeams": 8,
     "ncaaTitles": 0,
     "mlsPipeline": "Developing — Dayne St. Clair (Minnesota United, USMNT) most famous WAC alum. GCU pipeline growing.",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "GCU — Grand Canyon University (fully profiled)"
     ],
@@ -335,7 +345,8 @@
     "soccerTeams": 8,
     "ncaaTitles": 2,
     "mlsPipeline": "Growing — Denver is the dominant new member. Cole Bassett (Colorado Rapids, USMNT) most famous recent alum.",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "Denver — University of Denver (fully profiled, joining WCC 2026)"
     ],
@@ -367,7 +378,8 @@
     "soccerTeams": 8,
     "ncaaTitles": 1,
     "mlsPipeline": "Developing — Vermont's 2024 championship launched Kissel and Papp into MLS. Growing pipeline.",
-    "scholarships": "Up to 9.9 athletic equivalencies",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "Vermont (Burlington, VT) — 2024 NCAA Champions"
     ],
@@ -399,6 +411,7 @@
     "ncaaTitles": 4,
     "mlsPipeline": "Best non-MLS pipeline — USL2, international pro signings annually from multiple SSC teams",
     "scholarships": "Up to 9 athletic equivalencies (D2 maximum)",
+    "maxAid": "9.0",
     "guideSchools": [
       "PBA (West Palm Beach)",
       "Lynn (Boca Raton)",
@@ -432,6 +445,7 @@
     "ncaaTitles": 0,
     "mlsPipeline": "Developing — Austin FC (MLS) connections via St Edward's proximity",
     "scholarships": "Up to 9 athletic equivalencies",
+    "maxAid": "9.0",
     "guideSchools": [
       "St. Edward's (Austin TX)"
     ],
@@ -463,6 +477,7 @@
     "ncaaTitles": 0,
     "mlsPipeline": "Limited MLS; strong sport science career placement in LA",
     "scholarships": "Up to 9 athletic equivalencies",
+    "maxAid": "9.0",
     "guideSchools": [
       "Cal State LA"
     ],
@@ -494,6 +509,7 @@
     "ncaaTitles": 0,
     "mlsPipeline": "Limited — USL pathway developing. UC Charleston has Australian connection (Jack Allan).",
     "scholarships": "Up to 9 athletic equivalencies",
+    "maxAid": "9.0",
     "guideSchools": [
       "University of Charleston WV"
     ],
@@ -524,6 +540,7 @@
     "ncaaTitles": 0,
     "mlsPipeline": "NAIA level — semi-pro and international pathways",
     "scholarships": "Up to equivalent of full ride (NAIA)",
+    "maxAid": "12",
     "guideSchools": [
       "Oklahoma City University"
     ],
@@ -533,7 +550,7 @@
       "Southern Nazarene",
       "Wayland Baptist"
     ],
-    "desc": "The Sooner Athletic Conference is a competitive NAIA conference in the South Central region. Oklahoma City University has a strong soccer tradition built by founder coach Brian Harvey (NAIA Hall of Fame) who played professionally in Australia. Billy Martin took over in 2020 continuing that legacy. NAIA offers generous scholarship packages not limited by equivalency caps.",
+    "desc": "The Sooner Athletic Conference is a competitive NAIA conference in the South Central region. Oklahoma City University has a strong soccer tradition built by founder coach Brian Harvey (NAIA Hall of Fame) who played professionally in Australia. Billy Martin took over in 2020 continuing that legacy. NAIA is more generous than the NCAA at 12 equivalencies, and with no per-player cap a full ride is possible — though the team total is still capped.",
     "olivierNote": "OCU is the NAIA pick — Brian Finnegan's historical Australian connections, generous scholarships, warm Oklahoma City. Not a major coastal city lifestyle but solid soccer development and strong kinesiology pathway.",
     "color": [
       "#1c1917",
@@ -553,8 +570,9 @@
     "ncaaTitles": 0,
     "mlsPipeline": "Limited — health sciences pathway is the priority",
     "scholarships": "Up to equivalent of full ride (NAIA)",
+    "maxAid": "12",
     "guideSchools": [
-      "Keiser University (Fort Lauderdale)"
+      "Keiser University (West Palm Beach)"
     ],
     "otherSchools": [
       "Embry-Riddle",
@@ -564,7 +582,7 @@
       "Webber International"
     ],
     "desc": "The Sun Conference is a NAIA conference primarily in Florida. Keiser University is primarily a health sciences institution — the Clinical Simulation Centre at Keiser provides hands-on patient care simulation before graduate school, which is extremely rare at undergraduate level.",
-    "olivierNote": "Keiser is the right choice if PT/Chiro pathway is the absolute priority over soccer profile. Fort Lauderdale warm and cosmopolitan. Clinical Simulation Centre gives pre-grad experience unavailable at most US programs.",
+    "olivierNote": "Keiser is the right choice if PT/Chiro pathway is the absolute priority over soccer profile. West Palm Beach warm and cosmopolitan, with Fort Lauderdale 45 minutes south. Clinical Simulation Centre gives pre-grad experience unavailable at most US programs.",
     "color": [
       "#4c1d95",
       "#c4b5fd"
@@ -583,6 +601,7 @@
     "ncaaTitles": 0,
     "mlsPipeline": "None (D3) — academic/PT pathway focus",
     "scholarships": "ZERO athletic scholarships — merit and need-based aid only",
+    "maxAid": "None",
     "guideSchools": [
       "Chapman University"
     ],
@@ -614,6 +633,7 @@
     "ncaaTitles": "N/A",
     "mlsPipeline": "Pathway — SMC → UCLA transfer pipeline is the most proven in California",
     "scholarships": "Athletic grants + need-based aid (varies by state)",
+    "maxAid": "Varies",
     "guideSchools": [
       "Santa Monica College (CCCAA)",
       "Miami Dade College (NJCAA)",
@@ -643,14 +663,15 @@
       "Ulster County Community College (NJCAA DI / Region 15) — Stone Ridge, NY",
       "Suffolk County Community College (NJCAA DI / Region 15) — Selden, NY",
       "Westchester Community College (NJCAA DI / Region 15) — Valhalla, NY",
-      "Johnson County Community College (NJCAA DII / KJCCC) — Overland Park, KS"
+      "Johnson County Community College (NJCAA DII / KJCCC) — Overland Park, KS",
+      "Murray State College (NJCAA DI / Region II) — Tishomingo, OK"
     ],
     "otherSchools": [
       "Pasadena City College",
       "Cuyamaca College"
     ],
-    "desc": "Community college and junior college programs serve as 2-year transfer platforms. 29 guide schools now span all 6 NJCAA regions represented in the guide (Region 1 AZ, Region 6 KS, Region 8 FL, Region 11 IA/NE, Region 14 TX/LA, Region 15 NY), plus Santa Monica College (CCCAA, non-NJCAA). Phoenix College (Phoenix, AZ) are the 2025 NJCAA DII National Champions, ranked #1 nationally for 7 straight weeks. Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton. Daytona State College (Daytona Beach, FL) were the 2025 NJCAA DI finalists — top-5 D1 transfer feeder, warm Florida lifestyle. Tyler Junior College (Tyler, TX) is the #1 JUCO D1 transfer feeder nationally. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Santa Monica College (Santa Monica, CA) has the best documented transfer pipeline to UCLA in California at ~$9k/yr. Suffolk County CC (Selden, NY) won the 2025 NJCAA Region 15 Championship. Arizona Western College is ranked #2 nationally (2025) with a genuine Exercise, Wellness and Nutrition degree. Eastern Florida State plays in a 1,000-seat stadium-grade facility with back-to-back national tournament runs.",
-    "olivierNote": "Phoenix College is now the guide's most decorated current JUCO — 2025 national champions, warm major-city Arizona campus, confirmed dedicated Exercise Science degree. Indian Hills is the DI national champion — elite performance play, cold rural Iowa. Daytona State is the best lifestyle JUCO — warm Florida beach city, 2025 national finalist, top-5 D1 transfer feeder. Tyler JC is the #1 D1 transfer record nationally — warm East Texas city. Monroe is NYC metro lifestyle with 3× NJCAA DI titles; Suffolk County CC (also NYC metro, 2025 Region 15 champions) is the only Lower New York JUCO with a confirmed dedicated Exercise Science degree. Santa Monica is the Sydney-lifestyle match — ocean, LA culture, → UCLA pipeline. Arizona Western pairs a #2 national ranking with warm desert climate and a real Exercise/Wellness/Nutrition degree. Eastern Florida State has the best dedicated soccer stadium (1,000 seats) among guide JUCOs plus warm Space Coast lifestyle. Cowley, Barton, Dodge City, and Neosho County (all Kansas) are nationally ranked but a poor climate fit; Johnson County CC (Overland Park, KS) offers the same conference at a genuine Kansas City metro campus. 29 guide schools — all 2-year transfer platforms.",
+    "desc": "Community college and junior college programs serve as 2-year transfer platforms. 30 guide schools now span all 7 NJCAA regions represented in the guide (Region 1 AZ, Region 2 OK, Region 6 KS, Region 8 FL, Region 11 IA/NE, Region 14 TX/LA, Region 15 NY), plus Santa Monica College (CCCAA, non-NJCAA). Phoenix College (Phoenix, AZ) are the 2025 NJCAA DII National Champions, ranked #1 nationally for 7 straight weeks. Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton. Daytona State College (Daytona Beach, FL) were the 2025 NJCAA DI finalists — top-5 D1 transfer feeder, warm Florida lifestyle. Tyler Junior College (Tyler, TX) is the #1 JUCO D1 transfer feeder nationally. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Santa Monica College (Santa Monica, CA) has the best documented transfer pipeline to UCLA in California at ~$9k/yr. Suffolk County CC (Selden, NY) won the 2025 NJCAA Region 15 Championship. Arizona Western College is ranked #2 nationally (2025) with a genuine Exercise, Wellness and Nutrition degree. Eastern Florida State plays in a 1,000-seat stadium-grade facility with back-to-back national tournament runs.",
+    "olivierNote": "Phoenix College is now the guide's most decorated current JUCO — 2025 national champions, warm major-city Arizona campus, confirmed dedicated Exercise Science degree. Indian Hills is the DI national champion — elite performance play, cold rural Iowa. Daytona State is the best lifestyle JUCO — warm Florida beach city, 2025 national finalist, top-5 D1 transfer feeder. Tyler JC is the #1 D1 transfer record nationally — warm East Texas city. Monroe is NYC metro lifestyle with 3× NJCAA DI titles; Suffolk County CC (also NYC metro, 2025 Region 15 champions) is the only Lower New York JUCO with a confirmed dedicated Exercise Science degree. Santa Monica is the Sydney-lifestyle match — ocean, LA culture, → UCLA pipeline. Arizona Western pairs a #2 national ranking with warm desert climate and a real Exercise/Wellness/Nutrition degree. Eastern Florida State has the best dedicated soccer stadium (1,000 seats) among guide JUCOs plus warm Space Coast lifestyle. Cowley, Barton, Dodge City, and Neosho County (all Kansas) are nationally ranked but a poor climate fit; Johnson County CC (Overland Park, KS) offers the same conference at a genuine Kansas City metro campus. 29 guide schools — all 2-year transfer platforms. Murray State College (Tishomingo, OK) is the guide's most freshman-open JUCO: all 17 freshmen on the 2026-27 roster entered from high school with no JUCO or 4-year transfers, and the squad includes an Australian from Sydney. Back-to-back National Tournament qualifiers at roughly $18.5k/yr — the trade-off is a remote rural campus and no strength & conditioning staff.",
     "color": [
       "#1e3a5f",
       "#94a3b8"
@@ -668,7 +689,8 @@
     "soccerTeams": 10,
     "ncaaTitles": 0,
     "mlsPipeline": "Developing — NEC programs feed regional USL and NPSL pipelines",
-    "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer)",
+    "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer); 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "Mercyhurst University (Erie, PA) — joined the NEC in Fall 2024; won the NEC regular-season title in that first D1 season"
     ],
@@ -702,7 +724,8 @@
     "soccerTeams": 6,
     "ncaaTitles": 0,
     "mlsPipeline": "Developing — Denver (departed to the WCC in 2026) drove the league's recent pipeline (Cole Bassett to USMNT, Shinyashiki = 2019 MLS Rookie of the Year)",
-    "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer)",
+    "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer); 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "Delaware (Newark, DE) — joined for men's soccer in 2025; reached the 2025 Summit League semifinals"
     ],
@@ -733,6 +756,7 @@
     "ncaaTitles": 0,
     "mlsPipeline": "Regional USL and NPSL pathway",
     "scholarships": "NCAA D2 — up to 9.0 equivalencies (men's soccer)",
+    "maxAid": "9.0",
     "guideSchools": [
       "Georgian Court University (Lakewood, NJ) — Dino Raso, 2024 CACC Coach of the Year"
     ],
@@ -763,7 +787,8 @@
     "soccerTeams": 8,
     "ncaaTitles": 0,
     "mlsPipeline": "NAIA level — USL League Two pathway",
-    "scholarships": "NAIA — athletic aid available, no equivalency cap",
+    "scholarships": "NAIA — 12 equivalencies, no per-player cap",
+    "maxAid": "12",
     "guideSchools": [
       "Columbia College (Columbia, MO) — ⚠ No Exercise Science degree"
     ],
@@ -793,7 +818,8 @@
     "soccerTeams": 10,
     "ncaaTitles": 0,
     "mlsPipeline": "Developing — service academies and northeastern privates",
-    "scholarships": "Army & Navy: full federal scholarships; other members: up to 9.9 equivalencies",
+    "scholarships": "Army & Navy: full federal scholarships; other members: up to 9.9 equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
     "guideSchools": [
       "Army West Point (West Point, NY) — men's soccer plays the Patriot League; full federal scholarship",
       "Navy (Annapolis, MD) — men's soccer plays the Patriot League; full federal scholarship"

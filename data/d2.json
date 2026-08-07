@@ -61,11 +61,12 @@
     "acuAlign": 14,
     "acuAlignNote": "HIGHEST ACADEMIC MATCH in guide. Pre-PT is in the degree concentration title. NSCA accredited. Internships at Jupiter Medical Center, Orlando Health, Paley Advanced Orthopedic Institute built into degree. Mandatory clinical placement aligns with ACU EXSC398.",
     "soccerLevel": "SSC D2 — #2 nationally 2025",
-    "cost": "~$38k/yr",
+    "soccerLevelShort": "SSC D2",
     "aid": "Athletic + Academic",
     "fundingPathway": "capped",
     "size": 3500,
     "prePT": "Excellent — Pre-PT in degree title",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "2.0 min (Christian mission)",
       "minSchol": "3.0 for academic scholarship",
@@ -73,14 +74,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 38000,
-      "tuition": 26000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 60300,
+      "tuition": 43000,
+      "roomBoard": 15750,
+      "fees": 1550,
       "maxAthletic": 0.9,
       "maxAcademic": 12000,
       "aidType": "athletic+academic",
-      "internationalNote": "PBA Christian mission scholarship adds to athletic package. Presidential Scholarship for 3.5+ GPA. Athletic + academic stacks to near-full coverage possible."
+      "internationalNote": "PBA direct billed cost $60,300 (2026-27, Tier-1 verified from PBA's official Tuition & Fees page, day undergraduate): tuition $43,000 + fees $1,550 + room $8,200 + meals $7,550 — which is exactly PBA's own stated total of $60,300. Previous stored figure ($38,000) was an unresearched ballpark and understated the cost by $22,300, the largest gap found in the campaign so far. PBA Christian mission scholarship adds to the athletic package; Presidential Scholarship for 3.5+ GPA. Athletic + academic can still stack toward substantial coverage, but the starting sticker is far higher than previously shown."
     },
     "culture": {
       "vibe": "Faith-based Christian university with a tight-knit, values-driven community. PBA is small (3,500 students) but West Palm Beach is a full city outside the gates. The campus atmosphere is warm, supportive, and personally focused — coaches and professors know every student.",
@@ -110,7 +111,7 @@
       "fitness": 76
     },
     "devScoresNote": "Scored §5a (environment only; D2 ceiling 76). Staff dir (pbasailfish.com, browsed): HC Martorana + 4 full-time assistants = deep 5-coach staff, 2025 SSC Staff of Year -> tactical 76. PBA Soccer/Lacrosse Field dedicated (1,500, Bermuda grass) + turf training field, GPS Statsports + Hudl -> technical 74. NSCA-accredited Health & Human Performance Center (2022) with VO2/DEXA/force-plate testing + Jupiter Medical clinical partnership embedded in the degree — strongest sports-science environment in this D2 group -> fitness 76. National #2 ranking is a RESULT, excluded.",
-    "fitOlivier": 61,
+    "fitOlivier": 62,
     "tags": [
       "warm",
       "city",
@@ -134,57 +135,63 @@
     "rec": "PBA is the single best academic match for Olivier's goals in the entire guide. \"Pre-Physical Therapy\" is literally in the degree concentration title. Ranked #2 nationally in D2 in 2025. West Palm Beach is warm, coastal, and cosmopolitan — close to Sydney lifestyle. Mandatory clinical internship at Jupiter Medical Centre and Orlando Health.",
     "url": "https://pbasailfish.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 61,
+      "overall": 62,
       "soccer": 63,
       "academic": 89,
-      "minutes": 52,
+      "minutes": 53,
       "lifestyle": 86,
-      "value": 47
+      "value": 37
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 1,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 7,
       "cleared_names": [
-        "Quinlan van Arkel"
+        "Niklas Mahler",
+        "Fabio Reck",
+        "Clement Scaccia",
+        "Titus Beuckman",
+        "Quinlan van Arkel",
+        "Marcel Duffau",
+        "Ugo Drieu"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 2,
+      "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
-        "Julian Walby",
-        "Lucas Velazco"
+        "Julian Walby"
       ],
       "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Likely starter"
-        },
-        {
-          "year": 2029,
-          "yr_label": "Yr 3 (Jr.)",
           "pct": 65,
           "label": "Established starter"
         },
         {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        },
+        {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "Yr1 corrected: 2 juniors still present limits immediate ceiling. Steady improvement as Olivier proves himself and juniors clear.",
       "recruit_pathway": "Transfer-preferred",
-      "recruit_pathway_note": "Live 2026 pbasailfish.com roster: of 10 MFs, 6 arrived as grad/transfer students holding a prior degree from a 4-year institution (Vrije Universiteit Amsterdam, Grand View University, Spring Hill College, Hawaii Pacific University, University of Bridgeport, plus one Chilean university) — only 4 are true freshmen. No JUCO transfers detected; PBA's #2-nationally roster is built substantially via graduate/4-year transfer recruiting rather than true freshmen."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 pbasailfish.com roster (10 MFs of 28). PBA publishes a dedicated Previous School column and 6 of 10 midfielders arrived from another four-year program (Grand View, Spring Hill, Hawaii Pacific, Mercy, Bridgeport, plus a German institution) — no JUCOs among them, so Transfer-preferred is confirmed rather than Portal/JUCO-heavy. The squad runs on graduate transfers: 12 of 28 players are listed Gr., and SEVEN of the 10 midfielders clear before Olivier's 2027 entry, leaving three underclassmen behind them. This is the largest midfield turnover in the d2 file."
     },
     "profileDepth": "full",
     "confKey": "other",
@@ -350,11 +357,12 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong — anatomy, physiology, biomechanics, exercise prescription covered. Small campus means personal advising for DPT applications. South Florida clinical network good.",
     "soccerLevel": "SSC D2 — Top 10 nationally",
-    "cost": "~$47k/yr",
+    "soccerLevelShort": "SSC D2",
     "aid": "Athletic + Merit",
     "fundingPathway": "capped",
     "size": 3200,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0 min",
       "minSchol": "3.0 for academic layer",
@@ -362,14 +370,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 47000,
-      "tuition": 32000,
-      "roomBoard": 12000,
-      "fees": 3000,
+      "costNum": 64400,
+      "tuition": 46950,
+      "roomBoard": 15700,
+      "fees": 1750,
       "maxAthletic": 0.9,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "Lynn actively recruits international students. Merit aid available. Coach Grant has placed Australians with strong overall packages. Net cost after good offer: ~$15-20k."
+      "internationalNote": "Lynn direct billed cost $64,400 (2026-27, Tier-1 verified from Lynn's official undergraduate Tuition rates and fees table, on campus): tuition $46,950 + fees $1,750 (student services $1,000 + technology $750) + housing and food $15,700 — which is exactly Lynn's own stated estimated total of $64,400. Lynn's fuller on-campus figure of $73,811 additionally includes books, personal and transportation, which this guide excludes by convention. Previous stored figure ($47,000) was an unresearched ballpark and understated the cost by $17,400. Athletic aid is the primary lever at this price point."
     },
     "culture": {
       "vibe": "International, sophisticated, and intentionally global. Lynn University's student body is ~45% international — it is one of the most globally diverse universities in the USA. Boca Raton is an affluent, polished South Florida city 20 minutes from the beach.",
@@ -427,11 +435,12 @@
       "academic": 73,
       "minutes": 30,
       "lifestyle": 85,
-      "value": 36
+      "value": 32
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 13,
+      "mf_total": 13,
+      "roster_season": "2025-26",
       "cleared_before_2027": 1,
       "cleared_names": [
         "Myles Petrie"
@@ -629,11 +638,12 @@
     "acuAlign": 13,
     "acuAlignNote": "Strong — includes dedicated HPS 450 Pre-Physical Therapy Seminar as formal degree requirement (rare at D2 level). Anatomy, physiology, biomechanics, exercise prescription, resistance training all covered.",
     "soccerLevel": "SSC D2 — 4× National Champions (most ever)",
-    "cost": "~$44k/yr",
+    "soccerLevelShort": "SSC D2",
     "aid": "Athletic + Academic",
     "fundingPathway": "capped",
     "size": 8600,
     "prePT": "Excellent — explicit HPS 450 Pre-PT Seminar in degree",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "2.0 min",
       "minSchol": "3.0+ for academic scholarship",
@@ -641,14 +651,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 44000,
-      "tuition": 30000,
-      "roomBoard": 11000,
-      "fees": 3000,
+      "costNum": 50310,
+      "tuition": 35600,
+      "roomBoard": 13710,
+      "fees": 1000,
       "maxAthletic": 0.9,
       "maxAcademic": 10000,
       "aidType": "athletic+academic",
-      "internationalNote": "Barry Miami location — high academic aid stack possible. HPS Pre-PT degree has academic scholarship tracks. Total package can be very competitive."
+      "internationalNote": "Barry direct billed cost $50,310 (2026-27, Tier-1 verified from Barry's official Tuition and Fees page): tuition $17,800/semester = $35,600 + mandatory Student Services Fee $500/semester = $1,000 + housing $3,940/semester and the mandatory residential meal plan $2,915/semester = $13,710. Barry publishes no single COA budget, so the room figure is the standard DOUBLE with shared bath — the most widely published double rate, appearing in 5 of its 11 halls; doubles range $3,570 (community bath) to $4,560 (private bath) per semester and singles run $4,900–$5,600, so a single would add roughly $2,400–$3,300 a year. Barry is private, so there is no resident/non-resident split. The previous stored $44,000 was an unresearched ballpark and understated the cost by $6,310. Miami location — high academic aid stack possible. HPS Pre-PT degree has academic scholarship tracks. Total package can still be very competitive."
     },
     "culture": {
       "vibe": "Urban Miami Shores campus with a Latin American-influenced energy. Barry is small but Miami permeates everything — the culture, the food, the music, the people. Small campus means tight personal community while the city provides endless stimulation.",
@@ -705,11 +715,12 @@
       "academic": 84,
       "minutes": 59,
       "lifestyle": 88,
-      "value": 44
+      "value": 39
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 13,
+      "mf_total": 13,
+      "roster_season": "2025-26",
       "cleared_before_2027": 7,
       "cleared_names": [
         "Humberto Benavidez",
@@ -925,11 +936,12 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong core — anatomy, physiology, biomechanics, sport psych covered. NSU is primarily a health sciences university; degree has strong clinical health science integration. Neuroscience faculty prominent.",
     "soccerLevel": "SSC D2 — Competitive",
-    "cost": "~$40k/yr",
+    "soccerLevelShort": "SSC D2",
     "aid": "Athletic + Academic",
     "fundingPathway": "capped",
     "size": 25600,
     "prePT": "Strong",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "2.5 min",
       "minSchol": "3.0+ for academic scholarship",
@@ -944,8 +956,7 @@
       "maxAthletic": 0.85,
       "maxAcademic": 12000,
       "aidType": "athletic+academic",
-      "internationalNote": "NSU health sciences university has strong academic merit programs. Athletic + NSU Presidential Scholarship combination possible.",
-      "cost": "~$60k/yr"
+      "internationalNote": "NSU health sciences university has strong academic merit programs. Athletic + NSU Presidential Scholarship combination possible."
     },
     "culture": {
       "vibe": "Large health sciences university with a professional, career-focused culture. NSU is bigger than Barry or PBA but Fort Lauderdale provides a great backdrop. The campus vibe is more professional-school than party school — students are here to become health professionals.",
@@ -1005,7 +1016,8 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
+      "mf_total": 12,
+      "roster_season": "2025-26",
       "cleared_before_2027": 3,
       "cleared_names": [
         "Andres Morral Rosales",
@@ -1191,11 +1203,12 @@
     "acuAlign": 11,
     "acuAlignNote": "Good core coverage. School of Kinesiology and Nutritional Science is a dedicated college — strong exercise science identity. LA internship network for DPT applications is extraordinary.",
     "soccerLevel": "CCAA — Competitive",
-    "cost": "~$28k/yr",
+    "soccerLevelShort": "CCAA",
     "aid": "Athletic + Need",
     "fundingPathway": "capped",
     "size": 28000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0 CSU min",
       "minSchol": "3.2+ for CSU fee grant",
@@ -1203,14 +1216,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 28000,
-      "tuition": 15000,
-      "roomBoard": 11000,
-      "fees": 2000,
+      "costNum": 41838,
+      "tuition": 20184,
+      "roomBoard": 21654,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic+need",
-      "internationalNote": "Most affordable in guide. Cal State system charges lower fees. Academic aid limited for internationals but base cost is already very low."
+      "internationalNote": "Cal State LA non-resident direct billed cost $41,838 (2026-27) — ⚠ THE ONE DERIVED FIGURE IN THIS CAMPAIGN; read the basis before changing it. Tier-1 from Cal State LA Financial Aid's official 2026-2027 Cost of Attendance table (Undergraduate, On Campus): tuition and mandatory fees $7,938 + housing $13,682 + food $7,972. That table is labelled 'CA Resident TOTAL' and Cal State LA publishes NO non-resident total — only the statewide surcharge of $471 a unit. The surcharge is annualised here at 26 units ($12,246), which is the basis its sister CSU campus Fullerton publishes for the identical $471 rate (13 units a semester), giving tuition $20,184. A 24-unit floor would be $11,304 (−$942) and a 30-unit load $14,130 (+$1,884), so the plausible band is roughly $40,900–$43,700. The previous stored $28,000 was an unresearched ballpark and understated the cost by $13,838, far more than the width of that band — which is why the derivation was made rather than deferred. Replace it the moment Cal State LA publishes a non-resident budget. LA living costs are high; D2 athletic aid plus need-based aid is the realistic package."
     },
     "culture": {
       "vibe": "Commuter-heavy urban Los Angeles campus. Cal State LA has a strong local community feel — many students commute from greater LA. The campus itself is functional rather than beautiful. The city is the true campus for CSULA students.",
@@ -1268,11 +1281,12 @@
       "academic": 73,
       "minutes": 56,
       "lifestyle": 82,
-      "value": 54
+      "value": 43
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
+      "mf_total": 8,
+      "roster_season": "2025-26",
       "cleared_before_2027": 1,
       "cleared_names": [
         "Diego Arvizu"
@@ -1456,11 +1470,12 @@
     "acuAlign": 11,
     "acuAlignNote": "Good core coverage — anatomy, physiology, biomechanics, exercise prescription all present. Austin's booming health sector and Dell Medical School proximity make clinical hour access excellent.",
     "soccerLevel": "LSC — Very Competitive",
-    "cost": "~$42k/yr",
+    "soccerLevelShort": "LSC",
     "aid": "Athletic + Merit",
     "fundingPathway": "capped",
     "size": 4400,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0 min",
       "minSchol": "3.0+ for merit scholarship",
@@ -1468,14 +1483,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 42000,
-      "tuition": 30000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 67176,
+      "tuition": 51498,
+      "roomBoard": 14778,
+      "fees": 900,
       "maxAthletic": 0.9,
       "maxAcademic": 12000,
       "aidType": "athletic+merit",
-      "internationalNote": "St. Edward's Holy Cross mission scholarship stacks with athletic. Moderate cost + strong aid = good value. Austin lifestyle premium worth it."
+      "internationalNote": "St. Edward's direct billed cost $67,176 (2026-27, Tier-1 verified from SEU Student Financial Services' official Fall 2026 & Spring 2027 rates and its 2026-27 On-Campus Housing and Meal Plan Rates table): full-time flat-rate tuition $25,749 a term = $51,498 + the comprehensive fee $450 a term = $900 + a residence hall DOUBLE $4,519 a term = $9,038 + meal plan B $2,870 a term = $5,740. New freshmen are REQUIRED to live on campus and hold a meal plan, and freshmen may choose only plan A ($3,490) or B ($2,870), so plan B is the cheapest permitted — not a free choice. Housing and meals are billed PER SEMESTER (confirmed on SEU's own rates page), which is what makes the arithmetic double what the summary page's single figures suggest. Required-unless-waived health insurance ($1,371 a semester) is excluded by convention, as are books. The comprehensive fee is SEU's consolidation of technology, printing, lab, facilities, tutoring and activity fees. The previous stored $42,000 was an unresearched ballpark and understated the cost by $25,176 — the SECOND-LARGEST error found anywhere in this campaign, behind Cal Poly. St. Edward's is a full-price Austin private, not a cheap D2."
     },
     "culture": {
       "vibe": "Small, friendly Austin campus with an artistic, creative vibe. St. Edward's sits on a hill overlooking downtown Austin — the views are stunning and you can walk to Congress Avenue. Austin's culture bleeds onto campus constantly.",
@@ -1505,7 +1520,7 @@
       "fitness": 73
     },
     "devScoresNote": "Scored §5a (environment only; D2 ceiling 76). Staff dir (gohilltoppers.com 2026, browsed): HC Young (9 conference titles, ex-Brown assistant to 4 Ivy titles) + Associate HC Miller — strong pedigree but thin 2-coach staff -> tactical 73. Butler Sports Complex dedicated (1,500, FieldTurf) + GPS Statsports + Hudl dashboards + Austin Bold FC (USL2) analytics-sharing partnership -> technical 74. Performance Center 8,000 sqft (2021) + Dell Medical School sports-med partnership -> fitness 73. Conference titles are RESULTS, excluded.",
-    "fitOlivier": 61,
+    "fitOlivier": 54,
     "tags": [
       "warm",
       "city",
@@ -1528,49 +1543,51 @@
     "rec": "Austin is one of USA's fastest-growing cities. Possession system suits an 8/10. Small campus = personal development. Austin FC pipeline is a real professional pathway. Dell Medical School nearby for clinical placements.",
     "url": "https://gohilltoppers.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 61,
+      "overall": 54,
       "soccer": 62,
       "academic": 73,
-      "minutes": 52,
+      "minutes": 33,
       "lifestyle": 78,
-      "value": 44
+      "value": 32
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
-      "cleared_before_2027": 2,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
+        "Shunji Watanabe",
         "Holden Rabb",
-        "Matthew Devaney"
+        "Matthew Devaney",
+        "Nico Weigandt"
       ],
       "rising_senior_2027_count": 1,
       "rising_senior_2027_names": [
         "Jud Anderson"
       ],
-      "rising_junior_2027_count": 3,
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
         "Filip Adamski",
-        "Armando Don Juan",
-        "Jonathan Marks Jr."
+        "Armando Don Juan"
       ],
       "recruit_risk": "Low",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 70,
           "label": "Established starter"
         },
         {
@@ -1582,7 +1599,7 @@
       ],
       "trajectoryNote": "Low recruit risk means no incoming flood. Small 7-man MF unit means Olivier contributes immediately and grows into leadership.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 gohilltoppers.com roster: no MF (including several Graduate Student internationals from France, Japan, and Germany) lists a 'Previous School' transfer indicator — even the grad students' prior institution is a foreign club or HS, not a US transfer college. Purely a true-freshman recruiting model."
+      "recruit_pathway_note": "Re-read on the live 2026-27 gohilltoppers.com roster (9 MFs of 39, up from 6 in 2025). St. Edward's publishes no previous-school column at all — only Hometown / High School — so the transfer-vs-freshman split cannot be re-derived; the Freshman-friendly classification is RETAINED from the earlier pass and should be treated as lower-confidence. CAVEAT: 6 of the 39 players are published with a BLANK position cell (Rangel, Watterworth, Navarro, Baroldy, Ramirez Siliezar, Guajardo) and their player bio pages carry no position field either, so mf_total counts only confirmed midfielders. All 6 are Fr./So. and so could only add to the returning group: if every one were a midfielder the opportunity score would fall 8.5 -> 5.5, which crosses a trajectory row. Re-check once St. Edward's completes its position data."
     },
     "profileDepth": "full",
     "confKey": "other",
@@ -1730,11 +1747,12 @@
     "acuAlign": 10,
     "acuAlignNote": "Good core coverage for NAIA level. Pre-PT seminar built in. Good core kinesiology coverage for NAIA level. Pre-PT seminar built in.",
     "soccerLevel": "SAC — Nationally Ranked NAIA",
-    "cost": "~$35k/yr",
+    "soccerLevelShort": "SAC",
     "aid": "Athletic + Academic",
     "fundingPathway": "capped",
     "size": 3600,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "No minimum listed (NAIA)",
       "minSchol": "2.5+ for academic aid layer",
@@ -1742,15 +1760,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 56720,
+      "costNum": 49662,
       "tuition": 30698,
-      "roomBoard": 13314,
-      "fees": 12708,
+      "roomBoard": 13714,
+      "fees": 5250,
       "maxAthletic": 1,
       "maxAcademic": 10000,
       "aidType": "athletic+academic",
-      "internationalNote": "NAIA has NO maximum scholarship cap — full athletic ride possible. OCU Christian mission aid adds further. Best scholarship value for Australian player.",
-      "cost": "~$49k/yr"
+      "internationalNote": "Oklahoma City University direct billed cost $49,662 (2026-27, Tier-1 verified from OCU's official Undergraduate Costs page, New First-Year column): block tuition $30,698 + general fees $5,250 + housing and food $13,714 — which is exactly OCU's own 'Total Billable Costs' row, the thirteenth school to confirm the direct-billed convention in its own words. Block tuition covers 12-16 credit hours a semester. OCU classes health insurance ($2,458), books, transport and personal expenses as DISCRETIONARY, and all are excluded here; its full billable-plus-discretionary total is $57,120. NOTE returning students (year two onward) are budgeted $16,426 for housing and food, $2,712 more, taking billable costs to $52,375. ⚠ This replaces a figure §6 had flagged since v38 as an ESTIMATE pending Tier-1 confirmation; the old $56,720 was OVERstated by $7,058. NAIA allows a 12-equivalency team cap — more than D2's 9.0 — with no per-player cap, so a full athletic ride is possible even though the team total is capped. OCU Christian mission aid adds further."
     },
     "culture": {
       "vibe": "Faith-based city campus with a passionate performing arts culture. OCU is famous for its dance, musical theatre, and arts programs — the energy on campus is creative and performative. The soccer program brings a hard-working athletic culture to balance the arts.",
@@ -1768,7 +1785,7 @@
       "academicLabs": "OCU Division of Kinesiology: exercise physiology lab, anatomy lab. Oklahoma City University performing arts facilities (world-renowned) accessible for all students. Oklahoma City's growing healthcare sector provides clinical observation opportunities for pre-PT students.",
       "extras": "Paycom Center (OKC Thunder NBA) — one of the best arena atmospheres in the NBA — 10 minutes from campus. Scissortail Park. Bricktown entertainment district. Oklahoma City arts district (Paseo). OCU has a welcoming Christian community culture.",
       "rating": "Solid",
-      "note": "OCU facilities are functional NAIA standard. The NAIA scholarship flexibility (no cap), Oklahoma City's improving city environment, and the program's strong Christian community culture make this a genuine option for the right player. Billy Martin (HC since 2020) continues the 34-year legacy of founder Brian Harvey.",
+      "note": "OCU facilities are functional NAIA standard. The NAIA scholarship flexibility (12 equivalencies, no per-player cap), Oklahoma City's improving city environment, and the program's strong Christian community culture make this a genuine option for the right player. Billy Martin (HC since 2020) continues the 34-year legacy of founder Brian Harvey.",
       "housing": {
         "available": true,
         "note": "Mandatory for single, full-time undergraduates under 21 for the first 3 academic years; exemptions for living with a parent/guardian within 30 miles, marriage, military, or age 22+. Verified v38 via official okcu.edu/campus-life/housing-residence-life."
@@ -1780,7 +1797,7 @@
       "fitness": 68
     },
     "devScoresNote": "Scored §5a (environment only; NAIA ceiling 72). Staff dir (ocusports.com, browsed): HC Martin (SAC Tournament title 2024) + 2 shared men's/women's assistants + GK coach -> tactical 70. OCU Soccer Field dedicated (1,000, grass) + basic Polar team GPS + Hudl -> technical 68. Freede Center 7,000 sqft shared weight room + Mercy Hospital OKC partnership -> fitness 68.",
-    "fitOlivier": 59,
+    "fitOlivier": 50,
     "tags": [
       "warm",
       "city",
@@ -1801,26 +1818,25 @@
     "rec": "NAIA program with generous scholarships. Billy Martin (HC since 2020) is an OCU alumnus who served as Brian Harvey assistant for 17 years. Strong NAIA soccer tradition. Oklahoma City warm spring climate. No specific Australian player pathway currently documented.",
     "url": "https://www.ocusports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 59,
+      "overall": 50,
       "soccer": 57,
       "academic": 68,
-      "minutes": 50,
+      "minutes": 26,
       "lifestyle": 52,
-      "value": 35
+      "value": 32
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 10,
-      "cleared_before_2027": 3,
+      "mf_total": 5,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Chris McDonald",
         "Matheus Ambrozio",
         "Kenz Toms"
       ],
-      "rising_senior_2027_count": 3,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
         "Hannan Ashraf",
-        "Ethan Taylor",
         "Ethan Zeinalpor"
       ],
       "rising_junior_2027_count": 0,
@@ -1830,30 +1846,30 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
+          "pct": 60,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "recruit_pathway": "Portal/JUCO-heavy",
-      "recruit_pathway_note": "Live 2025 ocusports.com roster: of 12 MFs, 6 (50%) came via transfer — 4 direct JUCO (Copiah-Lincoln CC, State Fair CC, Seward County CC, Neosho County CC) plus 2 from 4-year programs (West Texas A&M/Kentucky Wesleyan, Union College KY). The whole roster (not just MFs) leans heavily on JUCO transfers — several defenders and forwards also list JUCO/community-college backgrounds."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 ocusports.com roster (5 MFs of 25, down from 10 of 29 in 2025). OCU publishes a Prev. School column and it is emphatically JUCO-fed: both midfielders with a previous college came from JUCOs (Seward County CC, Neosho County CC), and the wider squad repeats the pattern (Hillsborough CC, Rose State College, Middle Georgia, Pellissippi State CC, Lewis and Clark CC). Portal/JUCO-heavy confirmed, not merely retained. CAVEAT: 3 of the 25 players are published with a BLANK position cell (Joao Figueredo, Sebastian Castillo, Asher Trent), so mf_total counts only confirmed midfielders; if all 3 were MFs the opportunity score moves 6.0 -> 7.0, which stays inside the same trajectory row, so the outlook is unaffected either way."
     },
     "profileDepth": "full",
     "confKey": "other",
@@ -2012,11 +2028,12 @@
     "acuAlign": 10,
     "acuAlignNote": "Good clinical integration for NAIA level — Clinical Simulation Centre provides hands-on patient experience rare at undergraduate level. Directly relevant to DPT applications.",
     "soccerLevel": "Sun Conference",
-    "cost": "~$38k/yr",
+    "soccerLevelShort": "Sun Conference",
     "aid": "Athletic + Merit",
     "fundingPathway": "capped",
     "size": 2000,
     "prePT": "Strong (clinical simulation labs)",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "No minimum listed (NAIA)",
       "minSchol": "2.5+ for academic scholarship",
@@ -2024,14 +2041,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 38000,
-      "tuition": 26000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 51898,
+      "tuition": 35276,
+      "roomBoard": 14354,
+      "fees": 2268,
       "maxAthletic": 1,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "NAIA full ride possible. Keiser clinical science scholarships available for health-track students. Strong package for the right student."
+      "internationalNote": "Keiser Flagship (residential) direct billed cost $51,898 — ⚠ 2023-24 FIGURES, TREAT AS A FLOOR. Tier-1 from Keiser's own 'Flagship (Residential) Campus Undergraduate Tuition and Fee Disclosure' addendum: tuition $17,638/semester (12–17.99 credits) = $35,276 + education fee $864/sem and technology fee $270/sem = $2,268 + Stauffer Hall double occupancy $3,610/sem and the mandatory 19-meals-a-week residential plan $3,567/sem = $14,354. Keiser publishes NOTHING NEWER: the disclosure is stamped 'Effective Fall Semester 2023' (revised 12/2/22) and its public College Financing Plan is from 2018-19, so the true 2026-27 figure is certainly higher and this is a lower bound — re-check whenever a newer disclosure appears. Lakeside Residence Hall doubles run $4,258/sem (+$1,296/yr). Waivable health insurance ($1,995/yr) is excluded by convention. All freshmen and sophomores must live on campus unless with a parent or relative within 50 miles, so the residential figure is the applicable one. The previous stored $38,000 was an unresearched ballpark and understated even the 2023-24 cost by $13,898. NAIA full ride possible — the 12-equivalency team cap has no per-player cap. Keiser clinical science scholarships available for health-track students."
     },
     "culture": {
       "vibe": "Health-sciences-first campus culture — clinical, professional, and purposeful. Keiser attracts students who know exactly what career they want. Campus social life is moderate but West Palm Beach is an excellent lifestyle city outside the gates.",
@@ -2087,11 +2104,12 @@
       "academic": 68,
       "minutes": 15,
       "lifestyle": 88,
-      "value": 39
+      "value": 28
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 17,
+      "mf_total": 17,
+      "roster_season": "2025-26",
       "cleared_before_2027": 2,
       "cleared_names": [
         "Xabi Souto",
@@ -2285,11 +2303,12 @@
     "acuAlign": 12,
     "acuAlignNote": "Good alignment — explicit Pre-PT track with KIN 405 Pre-Physical Therapy Prep as required course. Orange County clinical network (Hoag Hospital, CHOC) is very strong for DPT applications.",
     "soccerLevel": "SCIAC D3",
-    "cost": "~$72k/yr (before aid)",
+    "soccerLevelShort": "SCIAC D3",
     "aid": "Merit + Need (no athletic)",
     "fundingPathway": "none",
     "size": 10000,
     "prePT": "Excellent (KIN 405 Pre-PT Prep required)",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.5+ for D3 consideration",
       "minSchol": "3.7+ for merit scholarship (no athletic)",
@@ -2297,14 +2316,14 @@
       "status": "below"
     },
     "fin": {
-      "costNum": 72000,
-      "tuition": 50000,
-      "roomBoard": 17000,
-      "fees": 5000,
+      "costNum": 89294,
+      "tuition": 69990,
+      "roomBoard": 18900,
+      "fees": 404,
       "maxAthletic": 0,
       "maxAcademic": 35000,
       "aidType": "need-only",
-      "internationalNote": "D3 — NO athletic scholarships. Merit and need-based aid only. Chapman Provost Scholarship for 3.75+ GPA. Net cost can be reduced but full coverage unlikely without very strong financial need."
+      "internationalNote": "Chapman direct billed cost $89,294 (2026-27, Tier-1 verified from Chapman's official Undergraduate Cost of Attendance table, On Campus: First-Time Freshman column): tuition $69,990 + housing $12,818 + food $6,082 + fees $404. Chapman's headline first-year total is $94,376, adding books, personal expenses, transportation and loan fees that this guide excludes; mandatory health insurance is not automatically included in its COA and is extra. NOTE the freshman column was used deliberately — continuing on-campus students are budgeted at $15,618 for housing, which would raise the direct cost to about $92,094 from year two. Based on full-time enrolment of 12-18 credits. The previous stored $72,000 was an unresearched ballpark and understated the cost by $17,294. Chapman is a high-sticker private in Orange County; D2 athletic aid plus merit is the realistic package and the KIN 405 Pre-PT preparation track is a genuine draw."
     },
     "culture": {
       "vibe": "Small, creative, film-industry-adjacent Orange County campus. Chapman is known for its film school (Dodge College of Film) and arts culture — creative energy is everywhere. Orange is a charming historic town and the campus is beautiful.",
@@ -2366,7 +2385,8 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
+      "mf_total": 12,
+      "roster_season": "2025-26",
       "cleared_before_2027": 2,
       "cleared_names": [
         "Connor Kilde",
@@ -2554,11 +2574,12 @@
     "acuAlign": 12,
     "acuAlignNote": "Strong alignment — UC's Exercise Science degree covers anatomy, exercise physiology, biomechanics, resistance training, sport psychology, and includes clinical practicum hours. Pre-PT concentration maps well to ACU BESS structure. Research Methods coverage partial.",
     "soccerLevel": "Mountain East Conference — D2 Regional",
-    "cost": "~$36k/yr",
+    "soccerLevelShort": "Mountain East Conference",
     "aid": "Athletic + Merit",
     "fundingPathway": "capped",
     "size": 2500,
     "prePT": "Strong — Pre-PT Concentration",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "2.5+ preferred",
       "minSchol": "2.8+ for athletic package",
@@ -2566,14 +2587,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 36000,
-      "tuition": 24000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 48296,
+      "tuition": 33990,
+      "roomBoard": 13806,
+      "fees": 500,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "UC has a growing international program. Athletic scholarship packages for D2 are strong — up to 9 equivalencies split across roster. Merit aid stacks on top. Charleston WV cost of living is very low."
+      "internationalNote": "University of Charleston direct billed cost $47,796 (2026-27, Tier-1 verified from UC's official Cost Sheet, Undergraduate Charleston Campus / Living On Campus): tuition $33,990 + housing $8,506 + meals $5,300 + comprehensive and activity fees $500 — ⚠ UC's own 'Total fixed charges' row reads $47,796, which is its tuition + housing + meals EXACTLY and therefore OMITS its own $500 fee line — a page arithmetic error, caught here by the validator's tuition+roomBoard+fees invariant. The correct direct billed figure including fees is $48,296, which is what is stored. Same class as Memphis's wrong international total: a Tier-1 page can be wrong about itself. Housing and food are based on the median of actual costs. Its headline total cost of attendance budget is $53,228, adding loan fees, books, transportation and personal expenses that this guide excludes; parking and lab fees are extra. The previous stored $36,000 was an unresearched ballpark and understated the cost by $11,796. West Virginia living costs are low and D2 athletic aid plus merit still make this competitive — but the sticker is a third higher than the guide has been showing."
     },
     "culture": {
       "vibe": "Small private university with a health sciences focus. UC has reinvested in athletics and academics since 2010. Campus is compact and community-focused — everyone knows each other. Charleston WV is the state capital, giving it a city feel disproportionate to its size.",
@@ -2627,11 +2648,12 @@
       "academic": 74,
       "minutes": 52,
       "lifestyle": 50,
-      "value": 42
+      "value": 32
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 13,
+      "mf_total": 13,
+      "roster_season": "2025-26",
       "cleared_before_2027": 4,
       "cleared_names": [
         "Sam Newell (Sr·M)",
@@ -2828,11 +2850,12 @@
     "acuAlign": 11,
     "acuAlignNote": "GCU Exercise Science Wellness & Sports has explicit Pre-PT, Pre-OT, and Pre-PA tracks built into the curriculum. Strong anatomy, physiology, biomechanics, motor learning, kinesiology, and clinical practicum coverage. One of the better Pre-DPT aligned programs in the CACC.",
     "soccerLevel": "D2 — CACC",
-    "cost": "~$56k/yr",
+    "soccerLevelShort": "CACC",
     "aid": "Athletic + Merit",
     "fundingPathway": "capped",
     "size": 2100,
     "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
     "gpa": {
       "minEntry": "2.0 NCAA D2 minimum; 2.5+ recommended for merit",
       "minSchol": "2.8+ for academic merit stacking",
@@ -2971,7 +2994,8 @@
     ],
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 16,
+      "mf_total": 16,
+      "roster_season": "2025-26",
       "cleared_before_2027": 5,
       "cleared_names": [
         "Senior MF ×5 departing 2025–26"
@@ -3089,11 +3113,12 @@
     "acuAlign": 3,
     "acuAlignNote": "⚠ CRITICAL: Columbia College MO does NOT offer a Bachelor of Exercise Science. Available degrees are Healthcare Management and General Studies. ACU alignment is minimal — only basic biology prerequisites covered. This is a major limitation for Olivier's DPT pathway and must be factored into any decision.",
     "soccerLevel": "NAIA — AMC",
-    "cost": "~$28k/yr",
+    "soccerLevelShort": "AMC",
     "aid": "Athletic + Merit",
     "fundingPathway": "capped",
     "size": 1100,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "2.0 NAIA minimum",
       "minSchol": "2.5+ for merit aid",
@@ -3139,14 +3164,14 @@
     },
     "devScoresNote": "Scored §5a (environment only; NAIA ceiling 72). Staff dir (columbiacougars.com 2026, browsed): new HC Mason (2nd season, ex-UIC assistant) + 1 assistant + manager — thin, rebuilding staff -> tactical 56. Larry K. Clark Field grass (compact) + standard NAIA weight room, no GPS/analytics -> technical 57. Standard NAIA weight room + athletic trainer; NO Exercise Science department or labs (Healthcare Management degree only) -> fitness 58. Weakest environment in this group; devAvg 57 well under ceiling. NB stored url host cougarathletics.ccis.edu is dead — correct host is columbiacougars.com (deferred fix).",
     "lensScores": {
-      "overall": 35,
+      "overall": 36,
       "soccer": 50,
       "academic": 25,
-      "minutes": 45,
+      "minutes": 48,
       "lifestyle": 0,
       "value": 40
     },
-    "fitOlivier": 35,
+    "fitOlivier": 36,
     "tags": [
       "soccer"
     ],
@@ -3230,48 +3255,55 @@
     ],
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 10,
-      "cleared_before_2027": 8,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "Massive senior exodus — most of 2024 squad departing",
-        "Nathan Mason rebuilding roster"
+        "Daniel Kent",
+        "Joshua Peterson",
+        "Alex Gatto",
+        "Charles McClain",
+        "Cooper Hayes"
       ],
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "1 remaining junior → senior by 2027"
+        "Tyler Kromer",
+        "Layton Dahl",
+        "Christian Goforth"
       ],
       "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Incoming freshmen → sophomores by 2027"
+        "Charlie Lafata",
+        "Bodie Rollins"
       ],
       "recruit_risk": "Low",
-      "recruit_pathway": "Portal/JUCO-heavy",
-      "recruit_pathway_note": "Live 2026 columbiacougars.com roster: of 13 MFs, 6 (46%) came via transfer — 5 direct JUCO (Dallas College Richland, St. Louis CC ×2, Jefferson College, Western Iowa Tech, Allen County CC) plus 1 four-year transfer (Webber International). Consistent with the coach's rebuild strategy of packaging aid for transfer-ready recruits rather than relying on a true-freshman pipeline.",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Re-derived from the live 2026-27 columbiacougars.com roster (12 MFs of 33). Columbia publishes Hometown, High School and Previous School as three SEPARATE columns, so the transfer split is directly readable: only 3 of 12 midfielders (25%) arrived as transfers — Webber International (NAIA) plus two JUCOs, St. Louis CC and Jefferson College. The other 9 have an empty previous-school cell, i.e. no prior college. Reclassified Portal/JUCO-heavy -> Mixed: the JUCO route is real but is a minority of the midfield, not its dominant source. Strong 2027 shape — 5 of 12 clear and 3 more are rising seniors.",
       "trajectoryNote": "Columbia College is in a rebuild under new coach Nathan Mason with massive 2024 roster turnover. Olivier arrives into a near-clean slate in 2027. Immediate minutes are very realistic at NAIA AMC level. Best-case scenario for early playing time in the entire guide — but weighed against the degree limitation.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Immediate roster role"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 60,
-          "label": "Regular starter"
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 75,
-          "label": "Key player"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain / focal point"
+          "pct": 90,
+          "label": "Captain candidate"
         }
       ]
     },

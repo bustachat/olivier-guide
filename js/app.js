@@ -254,7 +254,7 @@ function toggleDivSection(btn){
 // ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
   {key:'overall',   label:'Best Overall',     desc:"Olivier's Fit Score — soccer program quality, minutes outlook, climate, and city lifestyle combined, minus a housing penalty where a school has no or unguaranteed on-campus housing. GPA, cost, and ACU alignment are handled separately (ATAR/budget toggles, Financial Model, ACU Alignment tab)."},
-  {key:'academic',  label:'Academic-First',   desc:'Weights ACU BESS unit alignment (85%) plus a baseline. UF tops this list but cannot be played at — flagged accordingly.'},
+  {key:'academic',  label:'Academic-First',   desc:'Weights ACU BESS unit alignment (85%) plus a baseline — the more of the 16 ACU units a degree covers, the higher it ranks.'},
   {key:'minutes',   label:'Minutes Outlook',  desc:'2027-entry roster opportunity. Higher = more midfielder slots opening up before Olivier arrives.'},
   {key:'lifestyle', label:'Lifestyle-First',  desc:'Climate (warm), city access, and cultural match for Sydney-raised Olivier.'},
   {key:'value',     label:'Value-First',      desc:'Fit score per dollar of cost. Best fit-to-cost ratio.'},
@@ -510,24 +510,24 @@ function renderCards(){
 
   // Group by conference key — prevents the 71-card D1 wall
   const CONF_SECTIONS=[
-    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'Elite D1 soccer — strongest conference in the guide. 6 fully-profiled schools: Virginia (7 NCAA titles), Wake Forest (2024 ACC Tourn champs), SMU (2025 ACC Tournament Champions — first ever), Clemson (2× recent NCAA champions, nation-leading 4 first-round picks in 2026 draft), Notre Dame (27 MLS picks), UNC (ACC Regular Season champs 2023). Stanford and Duke among 14 listed programs.'},
-    {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'Most prolific MLS-producing conference all-time. UCLA on the West Coast, Indiana in the Midwest (8 NCAA titles), Maryland (most MLS picks of any program ever — 49 + 7 homegrown under Cirovski). Penn State, Michigan, USC all elite listed programs.'},
-    {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference. St. John\'s and Georgetown both fully profiled. Georgetown are 2019 national champions under Wiese — 42 MLS signings, D.C. United + NYCFC pipeline. Creighton and UConn are perennial top-10 programs. Strong clinical network in major cities. Akron joined the Big East for men\'s soccer in 2023 (the MAC dropped the sport) and won the Midwest Division in 2024 and 2025.'},
-    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'FIU and USF both fully profiled in the AAC. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Navy and Army offer full federal scholarships (zero cost).'},
-    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1. UCSB fully profiled — Manu Duah went #1 overall in 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine all competitive. Pacific lifestyle matches Sydney.'},
-    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1. College of Charleston fully profiled with Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern round out a competitive conference.'},
-    {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major D1 spanning the South and Southeast. UCA (Conway, AR) is fully profiled — best D1 central midfielder opening in the guide with 6 of 9 MFs clearing before Olivier arrives. Strong Kinesiology program with UAMS clinical network. Most affordable D1 in the guide at ~$28k/yr.'},
+    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'Elite D1 soccer — strongest conference in the guide, and all 13 programs here are fully profiled: Virginia (7 NCAA titles), Wake Forest (2024 ACC Tourn champs), SMU (2025 ACC Tournament Champions — first ever), Clemson (2× recent NCAA champions, nation-leading 4 first-round picks in 2026 draft), Notre Dame (27 MLS picks) and UNC (ACC Regular Season champs 2023), alongside Stanford, Duke, NC State, Louisville, Pitt, Syracuse and Cal.'},
+    {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'Most prolific MLS-producing conference all-time. UCLA on the West Coast, Indiana in the Midwest (8 NCAA titles), Maryland (most MLS picks of any program ever — 49 + 7 homegrown under Cirovski). Washington are the reigning 2025 national champions. All 11 programs here are fully profiled, Penn State and Michigan included.'},
+    {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'NYC-dominated conference, all 12 programs fully profiled. Georgetown are 2019 national champions under Wiese — 42 MLS signings, D.C. United + NYCFC pipeline. Creighton and UConn are perennial top-10 programs. Strong clinical network in major cities. Akron joined the Big East for men\'s soccer in 2023 (the MAC dropped the sport) and won the Midwest Division in 2024 and 2025.'},
+    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'FIU and USF headline an AAC group in which all 8 programs are fully profiled. Most accessible Power-conference D1 for internationals — warm climate, strong exercise science degrees. FIU reached the 2025 AAC Championship Final. Army and Navy are filed under the Patriot League, where their men\'s soccer actually competes.'},
+    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast D1, all 7 programs fully profiled. UCSB — Manu Duah went #1 overall in the 2025 MLS Draft from here. Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego and CS Fullerton round it out. Pacific lifestyle matches Sydney.'},
+    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major D1, all 8 programs fully profiled. College of Charleston has a Charleston Battery (USL) connection. William & Mary, Hofstra, Northeastern, Drexel, Elon, Monmouth and Stony Brook round out a competitive conference.'},
+    {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major D1 spanning the South and Southeast. UCA (Conway, AR) is fully profiled — strong Kinesiology program with UAMS clinical network, and the most affordable D1 in the guide at ~$28k/yr. Note its 2026-27 midfield returns intact: no midfielder graduates before Olivier arrives, so the immediate opening is limited despite an accessible recruiting route.'},
     {key:'wac',      label:'WAC — Western Athletic Conference',   tier:'Mid-Major · D1', intro:'GCU (Phoenix, AZ) fully profiled — Jamie Davies appointed December 2025. Warm major city campus, Kinesiology with Banner Health clinical network. 2025 WAC champions and NCAA Sweet 16. Best warm D1 city campus outside Florida and California.'},
     {key:'wcc',      label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Denver (University of Denver) fully profiled — 5 consecutive Summit League titles 2021-2025, College Cup 2024, moving to WCC in 2026. Kinesiology launched 2023. Denver city is excellent — outdoor lifestyle, 300 days sunshine, Colorado Rapids MLS. Cold winters the main drawback.'},
-    {key:'america-east', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Vermont (Burlington, VT) listed — 2024 NCAA National Champions. New coach Adrian Dubois in 2026. Burlington is cold — not a lifestyle match for Olivier. Listed for pipeline reference.'},
+    {key:'america-east', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Vermont (Burlington, VT) is fully profiled — 2024 NCAA National Champions. New coach Adrian Dubois in 2026. Burlington is cold — not a lifestyle match for Olivier, so it is carried mainly for pipeline reference.'},
     {key:'nec',      label:'NEC — Northeast Conference',          tier:'Mid-Major · D1', intro:'Mid-major D1. Mercyhurst University (Erie, PA) joined the NEC in Fall 2024 and won the NEC regular-season title in that first D1 season under HC Austin Solomon, before finishing 8th in 2025. Provisional D1 — no NCAA postseason until 2028-29. B.S. Exercise Science with 500-hour clinical internship. High cost (~$63k) offset by 93% of students receiving aid averaging $31k.'},
     {key:'summit',   label:'Summit League',                       tier:'Mid-Major · D1', intro:'Mid-major D1. Delaware (Newark, DE) is fully profiled — the men\'s soccer team joined the Summit League in 2025 after the school\'s all-sports move to Conference USA (CUSA sponsors no men\'s soccer), and reached the 2025 Summit League semifinals in its debut season (12-2-3, #24 nationally). Strong kinesiology degree, low ~$38k cost, Philadelphia 25 min north. The Summit is a 6-team men\'s soccer league (Delaware and UMass join four Midwest/Plains programs).'},
     {key:'patriot',  label:'Patriot League',                      tier:'Mid-Major · D1', intro:'Army West Point and Navy play their men\'s soccer in the Patriot League — their AAC membership covers their other sports. Both are service academies with full federal scholarships (zero cost) but a mandatory military service commitment that is not compatible with a DPT/Chiropractic goal or an MLS pathway. Army won the 2022 Patriot League regular season. Filed here (rather than the AAC) because that is where their men\'s soccer competes; included for completeness rather than as a target.'},
     {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships — need-based aid only. Princeton won the 2024 and 2025 Ivy League Tournaments back-to-back under Jim Barlow. Yale won 2023. Both require 3.9+ GPA. Kinesiology degrees are not available but Ivy credentials carry enormous DPT school credibility. Only viable if GPA climbs to 3.5+.'},
     {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
-    {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in Fort Lauderdale has clinical simulation labs and a warm Florida campus close to MLS action.'},
+    {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in West Palm Beach has clinical simulation labs and a warm Florida campus close to MLS action.'},
     {key:'other', divFilter:'D3',      label:'NCAA Division III',        tier:'D3',            intro:'Chapman University (Orange, CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 pre-physical therapy pathway in the guide. D3 schools offer no athletic scholarships but provide strong academics and competitive soccer.'},
-    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Tyler Junior College (Tyler, TX) is the #1 JUCO D1 transfer feeder nationally — all-time record for D1 placements. Daytona State College (Daytona Beach, FL) are the 2025 NJCAA DI National Championship runners-up and a top-5 D1 transfer feeder — warm Florida beach city. Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Santa Monica College ($9k/yr) has the best UCLA transfer pipeline in California. Cowley County CC and Barton CC (both KS) are ranked in the current national top-5. Arizona Western College (#2 nationally, 2025) pairs a genuine Exercise/Wellness/Nutrition degree with a warm desert climate. Eastern Florida State plays in a 1,000-seat stadium-grade facility on Florida\'s Space Coast. All 12 JUCO programs are 2-year transfer platforms.'},
+    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Tyler Junior College (Tyler, TX) is the #1 JUCO D1 transfer feeder nationally — all-time record for D1 placements. Daytona State College (Daytona Beach, FL) are the 2025 NJCAA DI National Championship runners-up and a top-5 D1 transfer feeder — warm Florida beach city. Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Santa Monica College ($9k/yr) has the best UCLA transfer pipeline in California. Cowley County CC and Barton CC (both KS) are ranked in the current national top-5. Arizona Western College (#2 nationally, 2025) pairs a genuine Exercise/Wellness/Nutrition degree with a warm desert climate. Eastern Florida State plays in a 1,000-seat stadium-grade facility on Florida\'s Space Coast. Murray State College (Tishomingo, OK) are back-to-back NJCAA DI National Tournament qualifiers (2024, 2025) and the guide\'s most freshman-open intake — all 17 freshmen on the 2026-27 roster entered straight from high school, including an Australian from Sydney. All 30 JUCO programs are 2-year transfer platforms.'},
   ];
 
   // Also include Ivy League under acc or as standalone — they are in other.json
@@ -659,7 +659,15 @@ function buildCard(u){
     const statusIcon=u.gpa.status==='eligible'?'✅':u.gpa.status==='borderline'?'⚠️':'❌';
     const isOpen=u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open');
     const entryText=isOpen?'Open entry ✅':u.gpa.minEntry+' '+statusIcon;
-    const targetShort=u.gpa.minSchol.split(' ')[0];
+    // `gpa.minSchol` is free prose. It USUALLY opens with the threshold ("3.5+ for
+    // academic merit"), but at need-blind schools it is a whole sentence — so the old
+    // .split(' ')[0] rendered "Target: Notre" and "Target: Georgetown" on those two
+    // cards, and "Target: N/A" on smc/miami_dade. Same defect class as the Max Aid tile
+    // (v44.50): a display value parsed out of prose that is free to be phrased any way.
+    // Extract a GPA only when the string actually opens with one; otherwise there is no
+    // GPA threshold to display, so show '—' rather than the first word of a sentence.
+    const gpaTargetMatch=(u.gpa.minSchol||'').match(/^\s*(\d(?:\.\d+)?\+?)/);
+    const targetShort=gpaTargetMatch?gpaTargetMatch[1]:'—';
     gpaHtml='<div class="gpa-compact">'
       +'<span class="gpa-c-label">GPA</span>'
       +'<span class="gpa-c-val" style="color:'+statusColor+'">'+entryText+'</span>'
@@ -720,12 +728,12 @@ function buildCard(u){
     '<div class="info-grid2">'+
       '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+costDisplay(u)+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+u.aid+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePT.split('—')[0].trim()+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePTShort+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">'+(u.proPlayers&&u.proPlayers.nextLevel?'D1 Transfers':'MLS Picks (5yr)')+'</div><div class="ig2-val">'+nlGridDisplay(u)+'</div></div>'+
       (isListed
         ? '<div class="ig2-item"><div class="ig2-label">Profile</div><div class="ig2-val" style="color:var(--hint);font-size:10px">Listed — full data pending</div></div>'
         : '<div class="ig2-item"><div class="ig2-label">Facilities</div><div class="ig2-val"><span class="fac-card-badge fac-'+facRating+'">'+facEmoji+' '+facLabel+'</span></div></div>')+
-      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px">'+u.soccerLevel.split('—')[0].trim()+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px">'+u.soccerLevelShort+'</div></div>'+
     '</div>'+
     gpaHtml+
     '<div class="conf-strip">'+
@@ -818,14 +826,15 @@ function removeCompare(id){
 
 // ═══ Roster URL helper ═══════════════════════════════════════════════════════
 function rosterUrl(u){
-  // A few schools need custom roster paths
-  const overrides = {
-    lynn:       'https://lynnfightingknights.com/sports/mens-soccer/roster',
-    csula:      'https://lagoldeneagles.com/sports/mens-soccer/roster',
-    keiser:     'https://kuseahawks.com/sports/mens-soccer/roster',
-    ocu:        'https://okcu.edu/athletics/soccer/roster',
-  };
-  if(overrides[u.id]) return overrides[u.id];
+  // v44.33: the per-school `overrides` map was REMOVED after auditing all four entries.
+  // Three (lynn, csula, keiser) were byte-identical to what the rule below already
+  // derives — pure no-ops. The fourth (ocu) was the only one that changed anything,
+  // and it was dead: 'https://okcu.edu/athletics/soccer/roster' returned HTTP 404
+  // (the generic university page), while the school object's own url already pointed
+  // at the live ocusports.com. Same resolution as the Miami Dade override in v42.13 —
+  // delete it and let the rule work. Do not re-add per-school roster URLs here: a
+  // hardcoded override silently masks the school object's url and cannot be seen by
+  // either validator or by the §15 URL sweep, which checks url/SITE_URLS/DOMAINS only.
   const base = (u.url || '').replace(/\/$/, '');
   if(!base) return '#';
   // v42.5: 17 JUCOs store their program page as .../sports/msoc/index (Sidearm).
@@ -905,6 +914,7 @@ const DOMAINS = {
   suffolk_cc: 'sunysuffolkathletics.com',
   westchester_cc: 'gowccvikings.com',
   johnson_county_cc: 'jcccathletics.com',
+  murray_state_ok: 'mscaggies.com',
   efsc:         'efsctitans.com',
   duke:           'goduke.com',
   ncstate:        'gopack.com',
@@ -924,7 +934,7 @@ const DOMAINS = {
   creighton:      'gocreighton.com',
   marquette:      'marquette.edu',
   providence:     'friars.com',
-  setonhall:      'shupiratesl.com',
+  setonhall:      'shupirates.com',
   butler:         'butlersports.com',
   xavier:         'goxavier.com',
   uconn:          'uconnhuskies.com',
@@ -1018,6 +1028,7 @@ const SITE_URLS = {
   suffolk_cc: 'https://www.sunysuffolk.edu',
   westchester_cc: 'https://www.sunywcc.edu',
   johnson_county_cc: 'https://www.jccc.edu',
+  murray_state_ok: 'https://www.mscok.edu',
   efsc:         'https://www.easternflorida.edu',
   duke:           'https://www.duke.edu',
   ncstate:        'https://www.ncsu.edu',
@@ -1143,6 +1154,7 @@ const SOCIAL = {
   suffolk_cc:     ['https://instagram.com/sunysflkathletics', 'https://x.com/scccathletics', null, null],
   westchester_cc: [null, null, 'https://facebook.com/westchesterccathletics', null],
   johnson_county_cc:[null, 'https://x.com/JCCCAthletics', 'https://facebook.com/JCCC-Athletics-138327252498', 'https://youtube.com/user/JCCCAthletics'],
+  murray_state_ok:['https://instagram.com/mscmsoccer', 'https://x.com/MSCmenssoccer', null, null],
   efsc:           ['https://instagram.com/efscmenssoccer',     'https://x.com/efscmenssoccer',       null,                                    null],
   duke:           ['https://instagram.com/dukemenssoccer',    'https://x.com/DukeMSOC',            'https://facebook.com/DukeMensSoccer',  'https://youtube.com/dukebluedevils'],
   ncstate:        ['https://instagram.com/ncstatemsoc',       'https://x.com/NCStateMSOC',         'https://facebook.com/NCStateSoccer',   'https://youtube.com/ncstateathletics'],
@@ -1360,6 +1372,9 @@ function buildMinutesModalTab(u){
 
   const clearedNames = (mo.cleared_names||[]).join(', ');
   const blockerNames = (mo.rising_junior_2027_names||[]).join(', ');
+  // The MF count is only meaningful alongside the roster season it was taken from — some
+  // schools are on 2026-27, the rest still on 2025-26. Season-neutral fallback if absent.
+  const mfLabel = mo.roster_season ? `MFs (${mo.roster_season})` : 'Midfielders';
 
   return `
     <div class="detail-block" style="margin-bottom:1rem">
@@ -1375,8 +1390,8 @@ function buildMinutesModalTab(u){
       <div class="mo-trajectory" style="margin-bottom:1rem">${trajHtml}</div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:.75rem">
         <div style="background:var(--bg);border-radius:8px;padding:7px;text-align:center;border:1px solid var(--border)">
-          <div style="font-size:1.3rem;font-weight:800;color:var(--text)">${mo.mf_total_2025 ?? '—'}</div>
-          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">MFs 2025</div>
+          <div style="font-size:1.3rem;font-weight:800;color:var(--text)">${mo.mf_total ?? '—'}</div>
+          <div style="font-size:9px;color:var(--hint);text-transform:uppercase;letter-spacing:.07em;margin-top:2px">${mfLabel}</div>
         </div>
         <div style="background:var(--emerald3);border-radius:8px;padding:7px;text-align:center;border:1px solid #a7f3d0">
           <div style="font-size:1.3rem;font-weight:800;color:var(--emerald)">${cleared}</div>
@@ -1741,6 +1756,14 @@ const CONF_ALIAS_MAP = {
   'wcc': 'wcc', 'west coast': 'wcc',
   'asun': 'asun',
   'america east': 'america-east', 'america-east': 'america-east',
+  // v44.45: these six were MISSING, so Army, Navy, Delaware, Mercyhurst,
+  // U of Charleston and Columbia College fell through to a derived key that no
+  // chip renders — invisible in the conference filter row and unfilterable.
+  'patriot league': 'patriot', 'patriot': 'patriot',
+  'summit league': 'summit', 'summit': 'summit',
+  'northeast conference': 'nec', 'nec': 'nec',
+  'mountain east': 'mec', 'mec': 'mec',
+  'american midwest': 'amc', 'amc': 'amc',
   'ivy league': 'ivy-league', 'ivy': 'ivy-league',
   'ssc': 'ssc', 'sunshine state': 'ssc',
   'ccaa': 'ccaa', 'california collegiate': 'ccaa',
@@ -1753,12 +1776,17 @@ const CONF_ALIAS_MAP = {
   'njcaa': 'njcaa',
 };
 function resolveConfGroup(conf) {
-  const norm = conf.toLowerCase().trim();
+  const norm = (conf || '').toLowerCase().trim();
   if (CONF_ALIAS_MAP[norm]) return CONF_ALIAS_MAP[norm];
-  // Sort by alias length descending so longer/more-specific aliases win (e.g. "ccaa" beats "acc")
+  // Longest alias first so a more specific one wins (e.g. "ccaa" beats "acc").
+  // v44.45: match on WORD BOUNDARIES, not bare .includes(). The substring form
+  // mis-filed UCA — its conf is "ASUN Conference", and "sun conference" (14
+  // chars) is a substring of "a|sun conference|", so it beat "asun" (4) on the
+  // length sort and put a D1 ASUN school inside the NAIA Sun Conference chip.
+  // \b refuses that match because "sun" there is preceded by the word char "a".
   const match = Object.entries(CONF_ALIAS_MAP)
     .sort((a, b) => b[0].length - a[0].length)
-    .find(([alias]) => norm.includes(alias));
+    .find(([alias]) => new RegExp('\\b' + alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(norm));
   return match ? match[1] : norm.replace(/\s+/g, '-');
 }
 
@@ -2083,6 +2111,9 @@ const CONF_CHIP_LABELS = {
   'wcc':              'WCC',
   'asun':             'ASUN',
   'america-east':     'Am. East',
+  'patriot':          'Patriot',
+  'summit':           'Summit',
+  'nec':              'NEC',
   // Ivy
   'ivy-league':       'Ivy League',
   // D2
@@ -2090,9 +2121,11 @@ const CONF_CHIP_LABELS = {
   'ccaa':             'CCAA',
   'cacc':             'CACC',
   'lsc':              'LSC',
+  'mec':              'MEC',
   // NAIA
   'sac':              'SAC',
   'sun-conference':   'Sun Conf',
+  'amc':              'AMC',
   // D3
   'sciac':            'SCIAC',
   // JUCO
@@ -2103,10 +2136,10 @@ const CONF_CHIP_LABELS = {
 // Ordered by tier — P4 first, then mid-major D1, Ivy, D2, NAIA, D3, JUCO
 const CONF_CHIP_ORDER = [
   'sec','acc','big-ten','big-east','aac','big-west',
-  'caa','wac','mac','wcc','asun','america-east',
+  'caa','wac','mac','wcc','asun','america-east','patriot','summit','nec',
   'ivy-league',
-  'ssc','ccaa','cacc','lsc',
-  'sac','sun-conference',
+  'ssc','ccaa','cacc','lsc','mec',
+  'sac','sun-conference','amc',
   'sciac',
   'cccaa','njcaa',
 ];
@@ -2116,16 +2149,25 @@ function renderFilterChips() {
     const container = document.getElementById('conf-filter-chips');
     if (!container) return;
 
-    // Count schools per conf-group key
+    // Count schools per conf-group key.
+    // v44.45: count EVERY school, not just those with a known label. The old
+    // `if (CONF_CHIP_LABELS[key])` guard meant an unmapped conference vanished
+    // in silence — six schools (Army, Navy, Delaware, Mercyhurst, U of
+    // Charleston, Columbia College) were unfilterable and the row summed to 105
+    // of 111 with nothing anywhere reporting it.
     const keyCounts = {};
     unis.forEach(u => {
       const key = resolveConfGroup(u.conf || '');
-      if (CONF_CHIP_LABELS[key]) keyCounts[key] = (keyCounts[key] || 0) + 1;
+      keyCounts[key] = (keyCounts[key] || 0) + 1;
     });
 
-    // Render in prestige order, only keys that have schools
-    CONF_CHIP_ORDER.filter(k => keyCounts[k]).forEach(ck => {
-      const label = CONF_CHIP_LABELS[ck] || ck.toUpperCase();
+    // Ordered keys first, then any unmapped key so a new conference always shows
+    // up (unstyled and last, but visible) instead of disappearing.
+    const unordered = Object.keys(keyCounts).filter(k => !CONF_CHIP_ORDER.includes(k)).sort();
+    if (unordered.length) console.warn('renderFilterChips: unmapped conference key(s), add to CONF_ALIAS_MAP/CONF_CHIP_LABELS/CONF_CHIP_ORDER:', unordered);
+
+    CONF_CHIP_ORDER.filter(k => keyCounts[k]).concat(unordered).forEach(ck => {
+      const label = CONF_CHIP_LABELS[ck] || ck.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       const count = keyCounts[ck];
       const btn = document.createElement('button');
       btn.className = 'fchip';
@@ -2518,7 +2560,7 @@ function renderConferences(){
     {key:'Ivy League (D1)',label:'Ivy League — Academic Elite, No Athletic Scholarships',cls:'tier-ivy',intro:'Unique financial model: no athletic scholarships, need-based aid only. Princeton is surging. GPA improvement essential.'},
     {key:'Mid-Major (D1)',label:'Mid-Major D1 — Competitive Regional Programs',cls:'tier-d1',intro:'Genuine D1 competition at more accessible scholarship levels. Charleston is the lifestyle pick.'},
     {key:'Division II',label:'Division II Conferences — Best Overall Value',cls:'tier-d2',intro:'Often the best overall balance for international athletes: real scholarships, playing time from year 1, strong academic programs, warm climates in Florida and Texas.'},
-    {key:'NAIA',label:'NAIA — Generous Scholarships, Personal Development',cls:'tier-naia',intro:'No scholarship maximum in NAIA — full packages possible. Billy Martin at OCU continues a strong NAIA soccer tradition. Keiser in Fort Lauderdale has clinical simulation labs.'},
+    {key:'NAIA',label:'NAIA — Generous Scholarships, Personal Development',cls:'tier-naia',intro:'NAIA coaches get a 12-equivalency team cap — more than D2 (9.0) — and there is no per-player cap, so a full ride is possible even though the team total is capped. Billy Martin at OCU continues a strong NAIA soccer tradition. Keiser in West Palm Beach has clinical simulation labs.'},
     {key:'Division III',label:'Division III — Academic Focus, No Athletic Scholarships',cls:'tier-juco',intro:'No athletic scholarships. Best for athletes where PT/Chiro grad school GPA is the primary goal.'},
     {key:'Junior College',label:'Junior College — 2-Year Transfer Pathway',cls:'tier-juco',intro:'Starting point not a destination. Santa Monica College → UCLA is the proven pipeline.'},
   ];
@@ -2539,7 +2581,7 @@ function renderConferences(){
           <div class="conf-stat-row">
             <div class="conf-stat"><span class="csv">${c.soccerTeams}</span><span class="csl">Soccer Teams</span></div>
             <div class="conf-stat"><span class="csv">${c.ncaaTitles}</span><span class="csl">NCAA Titles</span></div>
-            <div class="conf-stat"><span class="csv">${c.scholarships.split('Up to')[1]?.trim().split(' ')[0]||c.scholarships.split(' ')[0]}</span><span class="csl">Max Aid</span></div>
+            <div class="conf-stat"><span class="csv">${c.maxAid||'—'}</span><span class="csl">Max Aid</span></div>
           </div>
           <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:5px">Schools In This Guide</div>
           <div class="conf-schools">${guideChips}</div>
@@ -2791,7 +2833,12 @@ let finCurrentSchool = null;
 function fmt(n){return '$'+Math.round(n).toLocaleString('en-US');}
 function fmtAUD(n,fx){return 'A$'+Math.round(n*fx).toLocaleString('en-US');}
 function costDisplay(u){
-  if(!u.fin||u.fin.costNum===undefined) return u.cost||'—';
+  // v44.60: the old `u.cost` display string was deleted. It was a fallback that
+  // could never fire (costNum is defined on all 111) and it had drifted badly —
+  // 50 of 111 were more than $4k out after the v44.56-59 cost campaign, and
+  // tulsa carried three different costs across u.cost, fin.cost and costNum.
+  // Cost is now derived from costNum and nowhere else. Do not reintroduce it.
+  if(!u.fin||u.fin.costNum===undefined) return '—';
   if(u.fin.costNum===0) return 'Fully funded';
   return fmt(u.fin.costNum)+'/yr';
 }
@@ -3173,14 +3220,23 @@ function buildMinutesHtml(cardsOnly){
           '<strong>Roster-Based:</strong> Ranks purely on squad numbers and trajectory — how open the roster is regardless of who Olivier is. Same methodology for every player.'+
         '</div>'+
         '<p style="color:var(--muted);font-size:13px;line-height:1.6;margin:.6rem 0 .5rem">'+
-          'Olivier enters US college soccer in <strong>August 2027</strong>. Trajectories project realistic playing time across all 4 years based on 2025 rosters and how players age out.'+
+          'Olivier enters US college soccer in <strong>August 2027</strong>. Trajectories project realistic playing time across all 4 years from each school\'s most recent published roster and how those players age out. '+
+          'Schools are refreshed on a rolling basis, so the roster season each count came from is shown on its own card.'+
         '</p>'+
+        // v44.43: this key used to be written in terms of a 2025 roster's class
+        // years ("2025 Jr → graduate after 2026 → cleared"). That mapping shifts
+        // by a year the moment a school is refreshed onto a newer roster, and it
+        // INVERTED for the 56 schools now on 2026-27 data — a 2026-27 junior does
+        // NOT clear before Olivier arrives, they are a 2027 senior. The stored
+        // fields (cleared_before_2027 / rising_senior_2027 / rising_junior_2027)
+        // are already normalised to his entry year regardless of which season was
+        // scraped, so the key now describes those buckets and stays correct for
+        // both seasons. Do not re-introduce a hardcoded roster year here.
         '<div class="mo-key">'+
-          '<div class="mo-key-item"><strong>2025 Sr/Gr</strong> → already gone, irrelevant</div>'+
-          '<div class="mo-key-item"><strong>2025 Jr</strong> → graduate after 2026 → ✅ <em>cleared before he arrives</em></div>'+
-          '<div class="mo-key-item"><strong>2025 So</strong> → become 2027 Sr → 1-yr overlap with Olivier</div>'+
-          '<div class="mo-key-item"><strong>2025 Fr</strong> → become 2027 Jr → ❌ <em>primary 2-year competition</em></div>'+
-          '<div class="mo-key-item"><strong>+ Unknown 2026 class</strong> (coach call needed)</div>'+
+          '<div class="mo-key-item"><strong>Cleared by 2027</strong> → ✅ <em>graduated before he arrives</em></div>'+
+          '<div class="mo-key-item"><strong>2027 seniors</strong> → 1-yr overlap with Olivier</div>'+
+          '<div class="mo-key-item"><strong>2027 juniors</strong> → ❌ <em>primary 2-year competition</em></div>'+
+          '<div class="mo-key-item"><strong>+ Incoming classes still unknown</strong> (coach call needed)</div>'+
         '</div>'+
       '</div>'+
       '<div id="mo-toolbar-wrap"></div>'+
@@ -3189,8 +3245,8 @@ function buildMinutesHtml(cardsOnly){
       '<div class="mo-footer">'+
         '<p style="color:var(--muted);font-size:12px;line-height:1.6;margin-top:1.5rem">'+
           '<strong>Methodology caveat:</strong> Outlook assumes typical recruiting class sizes (3–5 MFs/yr). '+
-          'The 2026 freshman class is being recruited now and is unknown. '+
-          'Refine Yr1–2 projections by asking each coach: <em>"How many central midfielders are in your 2026 and 2027 classes, and what is your projected 2027 starting XI?"</em>'+
+          'The classes recruited after each roster was read are unknown. '+
+          'Refine Yr1–2 projections by asking each coach: <em>"How many central midfielders are in your 2027 and 2028 classes, and what is your projected 2027 starting XI?"</em>'+
         '</p>'+
       '</div>';
 
@@ -3298,7 +3354,7 @@ function buildMinutesHtml(cardsOnly){
       cardsHtml +=
           '</div>'+
           '<div class="mo-stats">'+
-            '<div class="mo-stat"><div class="mo-stat-num">'+(mo.mf_total_2025 ?? '—')+'</div><div class="mo-stat-lbl">MFs (2025)</div></div>'+
+            '<div class="mo-stat"><div class="mo-stat-num">'+(mo.mf_total ?? '—')+'</div><div class="mo-stat-lbl">'+(mo.roster_season ? 'MFs ('+mo.roster_season+')' : 'Midfielders')+'</div></div>'+
             '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--emerald)">'+(mo.cleared_before_2027 ?? '—')+'</div><div class="mo-stat-lbl">Cleared by 2027</div></div>'+
             '<div class="mo-stat"><div class="mo-stat-num">'+(mo.rising_senior_2027_count ?? '—')+'</div><div class="mo-stat-lbl">2027 Seniors</div></div>'+
             '<div class="mo-stat"><div class="mo-stat-num" style="color:var(--rose)">'+mo.rising_junior_2027_count+'</div><div class="mo-stat-lbl">2027 Juniors</div></div>'+

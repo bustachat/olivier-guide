@@ -77,11 +77,12 @@
     "acuAlign": 7,
     "acuAlignNote": "2-year degree. IGETC transfer curriculum covers biology, chemistry, anatomy basics. After transfer to UCLA/UCSB, full alignment achieved. Not a terminal degree — value is the transfer pipeline.",
     "soccerLevel": "CCCAA — Competitive",
-    "cost": "~$9k/yr",
+    "soccerLevelShort": "CCCAA",
     "aid": "Need + CA College Promise (no athletic)",
     "fundingPathway": "none",
     "size": 30000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "N/A — JUCO grants only",
@@ -89,14 +90,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 9000,
-      "tuition": 5000,
-      "roomBoard": 3000,
-      "fees": 1000,
+      "costNum": 25658,
+      "tuition": 11664,
+      "roomBoard": 13869,
+      "fees": 125,
       "maxAthletic": 0,
       "maxAcademic": 3000,
       "aidType": "need-only",
-      "internationalNote": "JUCO — minimal cost. As a CCCAA (California community college) program, Santa Monica cannot offer athletic scholarships at all — aid is need-based (the California College Promise Grant covers tuition for eligible residents) plus modest academic/foundation awards. Most affordable option to build GPA for transfer."
+      "internationalNote": "Santa Monica College F-1 international cost $25,658 (2026-27, Tier-1 verified from SMC's official International Student Tuition & Fees page for Fall 2026 - Summer 2027): non-resident tuition $486 a unit × 24 units = $11,664 + SMC health $56, Associated Students resource $20, student benefits $45 and student representation $4 = $125 in fees + SMC's published living-expenses allowance $13,869. NO credit-load assumption was needed — SMC states the basis itself (24 units across 2 semesters, the F-1 minimum of 12 a semester). ⚠ READ THE HOUSING LINE CAREFULLY: SMC has NO on-campus housing at all, so the $13,869 is NOT billed by the college — it is SMC's own 9-month living-expenses estimate based on a HOMESTAY WITH TWO MEALS A DAY, and SMC's page says a student with free room and board locally may deduct it in full. It is stored under `roomBoard` because a player still has to live somewhere and a tuition-only figure would badly understate the real outlay. Mandatory F-1 health insurance ($2,310) is excluded by convention, as are books ($1,064) and personal expenses ($4,968); SMC's own total for the year is $34,000. The previous stored $9,000 was an unresearched ballpark and understated the cost by $16,658 — nearly threefold, the largest PROPORTIONAL error in the campaign. As a CCCAA program Santa Monica cannot offer athletic scholarships at all, so this figure is very close to what is actually paid."
     },
     "culture": {
       "vibe": "Community college culture — diverse, no-nonsense, goal-oriented. Santa Monica College is famous for transfer students who are serious about getting to UCLA or another UC. The campus is workmanlike but Santa Monica itself is extraordinary.",
@@ -151,11 +152,12 @@
       "academic": 52,
       "minutes": 73,
       "lifestyle": 100,
-      "value": 67
+      "value": 54
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
+      "mf_total": 9,
+      "roster_season": "2025-26",
       "cleared_before_2027": 9,
       "cleared_names": [
         "Jonathan Sanchez (So·M)",
@@ -322,11 +324,12 @@
     "acuAlign": 5,
     "acuAlignNote": "2-year intro. Value is the transfer pipeline into Barry, FIU, or UM. Barry has HPS 450 Pre-PT Seminar — that is the target after MDC.",
     "soccerLevel": "NJCAA",
-    "cost": "~$11k/yr",
+    "soccerLevelShort": "NJCAA",
     "aid": "Athletic + Need",
     "fundingPathway": "full",
     "size": 165000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "N/A — JUCO grants only",
@@ -334,14 +337,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 11000,
-      "tuition": 6000,
-      "roomBoard": 4000,
-      "fees": 1000,
+      "costNum": 27812,
+      "tuition": 7947,
+      "roomBoard": 18150,
+      "fees": 1715,
       "maxAthletic": 0.5,
       "maxAcademic": 3000,
       "aidType": "athletic+need",
-      "internationalNote": "JUCO — very low cost. Florida residency discounts may apply after 1 year. Transfer pathway to Barry or FIU is the value proposition."
+      "internationalNote": "Miami Dade non-resident cost $27,812 (Tier-1 verified from MDC's official Tuition & Fees rate table and its published Cost of Attendance chart, Associate programs / Non-Resident / Students Living Independently): tuition and out-of-state fee $331.11 a credit × 24 credits = $7,947 + student services, financial aid, capital improvement, technology and parking fees $71.40 a credit = $1,715 — together MDC's own $4,831 a term — plus room and board $9,075 a term = $18,150. NO credit-load assumption was needed: MDC publishes 'Cost per Term (12 credits)' itself. ⚠ READ THE HOUSING LINE: MDC provides and supervises NO student housing, so the $18,150 is MDC's own living-independently allowance, NOT a college charge; it is stored under `roomBoard` because a player must still live in Miami and a tuition-only figure would badly mislead. ⚠ MDC's COA page says its figures are per term and should be doubled for a year, but its own 'Total' row doubles only the OTHER expenses and leaves tuition at one term — that total is internally inconsistent, so the components were doubled instead. Books ($1,500) and personal/transport are excluded by convention. The previous stored $11,000 was an unresearched ballpark and understated the cost by $16,812. The transfer pathway to Barry or FIU remains the value proposition, but Miami living costs are the story here, not tuition."
     },
     "culture": {
       "vibe": "Massive urban community college — functional, diverse, and Miami-flavoured. MDC is one of the largest colleges in America with 6 campuses across Miami. The culture is pure Miami — Latin, energetic, and aspirational.",
@@ -396,11 +399,12 @@
       "academic": 42,
       "minutes": 70,
       "lifestyle": 92,
-      "value": 69
+      "value": 57
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
+      "mf_total": 12,
+      "roster_season": "2025-26",
       "cleared_before_2027": 12,
       "cleared_names": [
         "Joao Pedro Dos Santos Oliveira (So·M)",
@@ -594,11 +598,12 @@
     "acuAlign": 8,
     "acuAlignNote": "Partial alignment — Iowa Western covers anatomy, physiology basics, and health sciences foundations. Exercise physiology and biomechanics partially covered. Designed as a 2-year transfer pathway — upper-division ACU units align better after transfer to 4-year program.",
     "soccerLevel": "NJCAA Division I — competitive JUCO",
-    "cost": "~$14k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic grants + need-based",
     "fundingPathway": "full",
     "size": 5000,
     "prePT": "Foundation — transfer pathway to DPT-prep program",
+    "prePTShort": "Foundation",
     "gpa": {
       "minEntry": "No minimum — open admission",
       "minSchol": "2.0+ for athletic aid",
@@ -606,14 +611,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 14000,
-      "tuition": 7000,
-      "roomBoard": 5500,
-      "fees": 1500,
+      "costNum": 14860,
+      "tuition": 6900,
+      "roomBoard": 7450,
+      "fees": 510,
       "maxAthletic": 0.8,
       "maxAcademic": 4000,
       "aidType": "athletic+need",
-      "internationalNote": "Iowa Western has an established international student pipeline — including Australian and European players. Athletic scholarships available. Very low tuition — one of the most affordable options in the entire guide. Financial pathway: 2yr Iowa Western ($14k) → 2yr transfer D1/D2 (negotiated aid) = significant long-term savings."
+      "internationalNote": "Iowa Western non-resident/international direct billed cost $14,860 (Tier-1 verified from IWCC's official Paying for College costs page): tuition $230 a credit × 30 credits = $6,900 + college service fees $17 a credit = $510 + Village Double housing AND food $3,725 a semester = $7,450. NO credit-load assumption was needed — IWCC states that 'completing an associate's degree in 2 years requires a student to take 15 credits each semester', and its housing table says outright that the figures are 'the total costs for housing and food in each housing facility per semester'. IWCC charges internationals barely above the Iowa resident rate ($230 vs $225 a credit), which is why this stays one of the cheapest options in the guide. A Tower double (males only) is $3,300 a semester, $850 a year cheaper; singles run $4,380-$5,575 a semester. A one-time $35 first-enrolment fee and books (~$500 a semester) are excluded. The previous stored $14,000 was an unresearched ballpark and understated the cost by only $860 — the CLOSEST any ballpark came in the whole campaign. Athletic scholarships are available and the established Australian/European pipeline is real."
     },
     "culture": {
       "vibe": "Community college atmosphere — diverse student body from multiple backgrounds and ages. Iowa Western has a strong athletic culture — football is king in Iowa but soccer is growing. Council Bluffs is directly across the Missouri River from Omaha, Nebraska — giving access to a genuine metro area of 900,000 people.",
@@ -665,11 +670,12 @@
       "academic": 40,
       "minutes": 79,
       "lifestyle": 50,
-      "value": 70
+      "value": 69
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
+      "mf_total": 12,
+      "roster_season": "2025-26",
       "cleared_before_2027": 12,
       "cleared_names": [
         "Jin Ichikawa (So·M)",
@@ -862,11 +868,12 @@
     "acuAlign": 5,
     "acuAlignNote": "Northeast CC's A.S. in Exercise Science (60 credits) prepares students for ACSM/NASM national certification and transfer to 4-year Exercise Science programs. Confirmed ACU-relevant content: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology (ACSM-prep core) → EXSC225; Kinesiology / Human Movement → EXSC224; Introduction to Exercise Science → EXSC122. The ACSM certification path requires exercise physiology and anatomy as core components — these are not electives but program requirements. WES evaluation required for ACU credit recognition. Confirm exact course titles with Northeast CC academic advisor before transfer planning.",
     "soccerLevel": "JUCO — NJCAA Division II",
-    "cost": "~$18k/yr",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 3200,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "2.0 NJCAA minimum",
       "minSchol": "2.5+ recommended for athletic aid",
@@ -1002,7 +1009,8 @@
     ],
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
+      "mf_total": 8,
+      "roster_season": "2025-26",
       "cleared_before_2027": 8,
       "cleared_names": [
         "100% of current roster clears before Olivier arrives (JUCO 2yr rule)"
@@ -1124,11 +1132,12 @@
     "acuAlign": 5,
     "acuAlignNote": "Monroe's A.S. in Exercise Science (School of Allied Health Professions, 62 credits) covers ACU prerequisites directly: SC-114/116 Human Anatomy & Physiology I & II map to ANAT100; EX-200 Principles of Kinesiology maps to EXSC224 (Human Movement); EX-250 Exercise Programming covers Exercise Physiology content (EXSC225); EX-101 Introduction to Exercise Science maps to EXSC122. Also includes EX-110 Foundations of Personal Fitness, EX-210 Prevention & Care of Athletic Injuries, and SC-107 Physical Conditioning & Nutrition. WES evaluation required — confirm course equivalences with Monroe academic advisor before relying on this count.",
     "soccerLevel": "JUCO — NJCAA Division I (3× National Champions)",
-    "cost": "~$36k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 7000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "2.0 NJCAA minimum",
       "minSchol": "2.5+ for athletic aid consideration",
@@ -1265,7 +1274,8 @@
     ],
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 11,
+      "mf_total": 11,
+      "roster_season": "2025-26",
       "cleared_before_2027": 8,
       "cleared_names": [
         "Carlos Furutani (So·M — departing)",
@@ -1409,11 +1419,12 @@
     "acuAlign": 4,
     "acuAlignNote": "Indian Hills' A.A. in Exercise Science & Kinesiology covers ACU science prerequisites: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology coursework → EXSC225; Kinesiology & Human Movement → EXSC224. The degree name explicitly includes 'Exercise Science & Kinesiology' — both are program requirements, not electives. Also includes Physical Therapist Assistant pathway coursework (A.A.S. available). WES evaluation required for ACU credit recognition. Confirm specific course equivalences with Indian Hills academic advisor.",
     "soccerLevel": "JUCO — NJCAA Division I (2025 National Champions)",
-    "cost": "~$21k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 3000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "2.0 NJCAA minimum",
       "minSchol": "2.5+ for athletic aid consideration",
@@ -1421,14 +1432,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 21000,
-      "tuition": 6120,
-      "roomBoard": 12792,
-      "fees": 2088,
+      "costNum": 14340,
+      "tuition": 7650,
+      "roomBoard": 6390,
+      "fees": 300,
       "maxAthletic": 0.7,
       "maxAcademic": 3000,
       "aidType": "athletic",
-      "internationalNote": "Indian Hills out-of-state/international COA is ~$21k/yr — among the most affordable programs in the guide. Athletic scholarship can cover 40-70% of COA. Ottumwa cost of living is very low. 2-year total before aid: ~$42k. After a realistic athletic package: potentially $15-25k total for 2 years."
+      "internationalNote": "Indian Hills INTERNATIONAL direct billed cost $14,340 (2025-26, Tier-1 verified from IHCC's official Tuition & Fees table, Internationals column): tuition $7,650 a year + Web & ICN fees $300 + housing $2,640 a year (double) + the Maroon meal plan $3,750, which is the plan international students are charged. IHCC's own 'Total Direct Costs' for internationals is $17,007, but that row INCLUDES $800 of books and the $1,867 mandatory international health insurance, both excluded by this guide's convention — the insurance is a real extra cost for an international student and should be budgeted separately. ⚠ DO NOT use IHCC's Cost of Attendance PDF for this school: it prices at $300 a credit × 8 credits × 4 terms and states in its own footnote that 'no additional adjustments were made for out-of-state tuition' — it is the IOWA RESIDENT budget. The itemised international table is the right source. The previous stored $21,000 was an unresearched ballpark and OVERstated the cost by $6,660. Ottumwa living costs are very low; athletic scholarship can cover a large share, so the real outlay is lower again."
     },
     "culture": {
       "vibe": "Indian Hills is a small community college in Ottumwa, a river city of ~25,000 in southeast Iowa. The men's soccer program is now the flagship of Indian Hills athletics after winning the 2025 NJCAA DI National Championship in just Newton's second season. Tight-knit, competitive squad culture with a highly international roster.",
@@ -1464,7 +1475,7 @@
       "academic": 32,
       "minutes": 73,
       "lifestyle": 22,
-      "value": 53
+      "value": 58
     },
     "tags": [
       "juco",
@@ -1479,7 +1490,8 @@
     "domain": "indianhills.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 13,
+      "mf_total": 13,
+      "roster_season": "2025-26",
       "cleared_before_2027": 13,
       "cleared_names": [
         "Alessandro Peruz (So. - Italy)",
@@ -1674,7 +1686,7 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — #1 D1 Transfer Feeder Nationally",
-    "cost": "~$22k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic Grants + Need",
     "fundingPathway": "full",
     "fin": {
@@ -1689,6 +1701,7 @@
     },
     "size": 15000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrollment)",
       "minSchol": "2.0+ for athletic aid consideration",
@@ -1719,13 +1732,14 @@
     "facilities": [],
     "courses": [],
     "rec": "6x NJCAA National Champions (2009, 2010, 2012, 2014, 2016, 2017) and #1 JUCO program nationally for D1 transfers. 100+ players have signed professional contracts, 10 MLS draftees. Tyler, TX is warm East Texas (~105k) with low cost of living. Pure pathway play: ~$22k/yr before aid, then transfer to D1/D2 on Clements' national network.",
-    "url": "https://www.apacheathletics.com/sports/msoc/index",
+    "url": "https://apacheathletics.com/sports/msoc/index",
     "mapX": 337,
     "mapY": 258,
     "profileDepth": "full",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 13,
+      "mf_total": 13,
+      "roster_season": "2025-26",
       "cleared_before_2027": 13,
       "cleared_names": [
         "Unathi Radebe (So·M)",
@@ -1938,21 +1952,22 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — 2025 National Championship Runners-Up, Top-5 D1 Transfer Feeder",
-    "cost": "~$16k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic Grants + Need",
     "fundingPathway": "full",
     "fin": {
-      "costNum": 16000,
-      "tuition": 9000,
-      "roomBoard": 6000,
-      "fees": 1000,
+      "costNum": 23777,
+      "tuition": 11995,
+      "roomBoard": 11782,
+      "fees": 0,
       "maxAthletic": 0.65,
       "maxAcademic": 3000,
       "aidType": "athletic+need",
-      "internationalNote": "Daytona State out-of-state/international COA is ~$16k/yr — affordable Florida JUCO. Athletic scholarship can cover 40-65% of COA. Florida Bright Futures scholarship not available to international students but athletic grants are competitive. 2-year total before aid: ~$32k. After realistic athletic package: $11-20k total."
+      "internationalNote": "Daytona State out-of-state cost $23,777 (2025-26, Tier-1 verified from DSC Financial Aid's official Estimated Cost of Attendance chart, Associate Degree / Out-of-State / On campus): tuition and fees $11,995 + housing $7,158 + food $4,624. DSC publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0. Based on DSC's own stated 15 credits in each of Fall and Spring. Its headline out-of-state on-campus total is $29,375, adding books, personal expenses and transport that this guide excludes. ⚠ THE ON-CAMPUS FIGURE MAY NOT BE AVAILABLE: DSC has ONE residence hall (opened 2022, 67 units) and it was confirmed full with a waiting list for Spring 2026 — the off-campus budget puts housing at $12,312 instead of $7,158, which would raise the cost to about $28,931. Check availability before treating $23,777 as the number. This is 2025-26 data, the newest DSC publishes; it has frozen tuition and associated fees for 15 consecutive years, so 2026-27 should be close. The previous stored $16,000 was an unresearched ballpark and understated the cost by $7,777."
     },
     "size": 17000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrollment)",
       "minSchol": "2.0+ for athletic aid consideration",
@@ -1971,7 +1986,7 @@
       "academic": 36,
       "minutes": 75,
       "lifestyle": 82,
-      "value": 68
+      "value": 63
     },
     "tags": [
       "juco",
@@ -1990,7 +2005,8 @@
     "profileDepth": "full",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
+      "mf_total": 7,
+      "roster_season": "2025-26",
       "cleared_before_2027": 7,
       "cleared_names": [
         "Abdoulie Jallow (So·M)",
@@ -2207,11 +2223,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
-    "cost": "~$16.2k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 4700,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -2332,7 +2349,8 @@
     "rec": "Barton is a nationally competitive NJCAA DI program (#4 ranked, 2025 national tournament qualifier) with a genuinely dedicated Exercise Science degree — a rarer combination among JUCOs, most of which offer only a generic health-sciences transfer track. The trade-off is rural, cold-winter central Kansas, a poor lifestyle match for Olivier's warm-city preference. Best framed as a high-performance, low-cost 2-year stepping stone if lifestyle is deprioritised in favour of program strength and academic fit.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 16,
+      "mf_total": 16,
+      "roster_season": "2025-26",
       "cleared_before_2027": 16,
       "cleared_names": [
         "Jaiko Miguelez (Fr·M)",
@@ -2475,11 +2493,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
-    "cost": "~$22.0k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 4500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -2599,7 +2618,8 @@
     "rec": "Cowley is arguably the most decorated JUCO soccer program in the guide by title count (5× KJCCC, 5× Region VI, 5× Plains District) and is currently ranked in the national top 5. The trade-off is a generic Health Professions transfer degree (no dedicated Exercise Science track) and a higher cost profile than most JUCOs (~$22k/yr), plus the same rural, cold-winter Kansas lifestyle mismatch as sister KJCCC program Barton.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
+      "mf_total": 8,
+      "roster_season": "2025-26",
       "cleared_before_2027": 8,
       "cleared_names": [
         "Keitatsu Yoshida (So·M)",
@@ -2734,11 +2754,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
-    "cost": "~$16.3k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 8500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -2862,7 +2883,8 @@
     "rec": "Arizona Western pairs a genuinely relevant Exercise, Wellness and Nutrition degree with a nationally ranked (#2, 2025), well-resourced program — a 5-person coaching staff including a dedicated European recruiting coach — at one of the most affordable price points in the guide (~$16.3k/yr), plus a warm, sunny desert climate that matches Olivier's lifestyle preference far better than the Kansas JUCOs. The trade-off is Yuma's modest city size rather than a major metro.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 13,
+      "mf_total": 13,
+      "roster_season": "2025-26",
       "cleared_before_2027": 13,
       "cleared_names": [
         "Ishmael Mensah (So·M)",
@@ -3002,11 +3024,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — FCSAA Region 8",
-    "cost": "~$22.4k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 24000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -3129,7 +3152,8 @@
     "rec": "EFSC offers a genuinely stadium-grade home facility (the 1,000-seat Titan Soccer Complex, with a documented pro-USL hosting history) and a program on a back-to-back NJCAA DI National Tournament run (Final Four 2024-25), in a warm, coastal Space Coast setting that suits Olivier's lifestyle preference well. The trade-off is the absence of a dedicated Exercise Science degree — the transfer pathway runs through a general A.A. rather than a specialised program — and a cost profile (~$22.4k/yr) toward the higher end of the guide's JUCO section.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
+      "mf_total": 8,
+      "roster_season": "2025-26",
       "cleared_before_2027": 8,
       "cleared_names": [
         "Louis Munn (So·M)",
@@ -3264,11 +3288,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
-    "cost": "~$23.5k/yr",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 9500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -3391,7 +3416,8 @@
     "rec": "Phoenix College is the strongest current JUCO soccer program in this guide by results — 2025 NJCAA DII National Champions, #1 nationally for 7 straight weeks, and a 21-year tenured coach with 3 Region titles and 6 straight national tournament runs. Combined with a confirmed, university-aligned Exercise Science degree and a warm central-Phoenix campus, this is a genuinely elite package. The trade-off is no on-campus housing — an Australian arriving without a local network would need to arrange off-campus living in a major metro area.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
+      "mf_total": 7,
+      "roster_season": "2025-26",
       "cleared_before_2027": 7,
       "cleared_names": [
         "Cruzeiro Cruz (So·M)",
@@ -3525,11 +3551,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
-    "cost": "~$22.3k/yr",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 20000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -3649,7 +3676,8 @@
     "rec": "Pima brings genuine soccer pedigree — two NJCAA national championships under a 27-year tenured coach — and a warm Tucson university-city setting. The real caveat is academic: Pima's dedicated Fitness and Sport Sciences degree has been inactivated and is not admitting new students, so a 2026 enrollee would follow a general transfer pathway rather than a purpose-built Exercise Science track. Best framed as a soccer-pedigree-first option rather than an academic-first one.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 10,
+      "mf_total": 10,
+      "roster_season": "2025-26",
       "cleared_before_2027": 10,
       "cleared_names": [
         "Robert Castaneda (So·M)",
@@ -3786,11 +3814,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
-    "cost": "~$16k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 4500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -3906,7 +3935,8 @@
     "rec": "Mohave is the guide's newest JUCO soccer program — launched from scratch in 2022 by a coach with his own Exercise Science graduate background, and already nationally ranked (#16 DI, 2025). New facilities (2019 fieldhouse, 2024 housing) show genuine institutional investment. The trade-off is no dedicated Exercise Science degree yet and a small, remote Colorado River city far from Arizona's major metros.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
+      "mf_total": 8,
+      "roster_season": "2025-26",
       "cleared_before_2027": 8,
       "cleared_names": [
         "Erik Nava (So·M)",
@@ -4041,11 +4071,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
-    "cost": "~$32.2k/yr",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 15000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -4164,7 +4195,8 @@
     "rec": "Glendale CC pairs a confirmed, university-aligned Exercise Science degree with a rare on-campus NAU bachelor's-completion partnership — a genuinely strong academic package for a JUCO. Soccer results (#20 nationally) are solid but the least decorated of the three ranked Maricopa ACCAC programs in this batch. Best framed as an academics-forward pick within the Arizona JUCO cluster.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 14,
+      "mf_total": 14,
+      "roster_season": "2025-26",
       "cleared_before_2027": 14,
       "cleared_names": [
         "Augustin Mulongo (So·M)",
@@ -4305,11 +4337,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
-    "cost": "~$13.6k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 2200,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -4424,7 +4457,8 @@
     "rec": "Dodge City offers one of the guide's best value propositions among the newly-added JUCOs — a #12-nationally-ranked program, a genuinely strong 5,000-seat stadium with synthetic turf, confirmed on-campus housing, and the cheapest tuition in this batch (~$5,850 combined). The trade-off is the same as Barton/Cowley in the same conference: rural, cold-winter Kansas is a poor lifestyle match for a warm-city-preferring athlete, and there is no dedicated Exercise Science degree.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 6,
+      "mf_total": 6,
+      "roster_season": "2025-26",
       "cleared_before_2027": 6,
       "cleared_names": [
         "Soma Kanazawa (So·M)",
@@ -4557,11 +4591,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — KJCCC (Kansas Jayhawk Community College Conference)",
-    "cost": "~$18.6k/yr",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 2000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -4680,22 +4715,15 @@
     "rec": "Neosho County is the strongest-ranked new JUCO addition in this batch — #4 nationally (DII), a 2025 NJCAA DII national tournament at-large bid, with confirmed on-campus housing across two residence halls and a genuine Athletic Training academic program offering real anatomy/physiology overlap. The trade-off mirrors Barton and Cowley in the same conference: rural, cold-winter Kansas is a poor lifestyle match for a warm-city-preferring athlete.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 13,
-      "cleared_before_2027": 13,
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "Giezi Gonzalez (So·M)",
-        "Keane Hazeldine (So·M)",
-        "Adam Larkin (So·M)",
-        "Yuki Suzuki (So·M)",
-        "Danny Carroll (So·M)",
-        "Andres Cisneros-Salas (Fr·M)",
-        "Greyson Davis (Fr·M)",
-        "Gabe Green (Fr·M)",
-        "Carrick Kelly (Fr·M)",
-        "Ryuto Kondo (Fr·M)",
-        "Lochlan McKenzie-Smith (Fr·M)",
-        "Dylan Parry Jones (Fr·M)",
-        "Noah Storrer (Fr·M)"
+        "Danny Carroll (So·MID)",
+        "Adam Larkin (So·MID)",
+        "Keane Hazeldine (So·MID)",
+        "Giezi Gonzalez (So·MID)",
+        "Yuki Suzuki (So·MID)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
@@ -4718,7 +4746,7 @@
       ],
       "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (13 MFs: 5 So + 8 Fr) clears before Olivier's August 2027 start. Zero roster overlap, but the large current MF group signals a competitive incoming recruiting class to enter. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of 13 current MFs (62%) are true freshmen, drawn heavily from England (5 of 8) — suggests a strong direct-recruiting pipeline from the UK alongside domestic Kansas recruits."
+      "recruit_pathway_note": "Re-read on the live 2026-27 goneosho.com roster (13 MFs of 33). Neosho publishes only a Hometown / High School column and no previous-school column, so the existing 'Freshman-friendly' classification is RETAINED, not re-derived, and is lower-confidence. The 2026-27 shape is consistent with it: 8 of 13 MFs are freshmen. Unlike the prior season — when all 13 MFs cleared — only 5 (the sophomores) graduate before Olivier arrives, so he now competes with 8 returning midfielders. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` is still the prior-season projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. Trajectory and the Minutes score are pending the JUCO calibration item in CLAUDE.md §6."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Athletic Training program — adjacent anatomy/physiology coursework, not dedicated Exercise Science",
@@ -4820,11 +4848,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ICCAC (Iowa Community College Athletic Conference)",
-    "cost": "~$19.6k/yr",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 2000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -4941,7 +4970,8 @@
     "rec": "Southeastern pairs a #5-national-ranking (NJCAA DII) with a genuinely dedicated Exercise Science Transfer Major and a University of Iowa 2+2 pathway — a strong academic-athletic package. The real caveats are an interim head coach (leadership uncertainty for 2026) and rural, cold-winter southeast Iowa, a poor lifestyle match for a warm-city-preferring athlete. Roster data was not available via the official site this session, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 17,
+      "mf_total": 17,
+      "roster_season": "2025-26",
       "cleared_before_2027": 17,
       "cleared_names": [
         "Pelayo Alonso (So·M)",
@@ -5085,11 +5115,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ICCAC (Iowa Community College Athletic Conference)",
-    "cost": "~$16.5k/yr",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 3200,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -5208,7 +5239,8 @@
     "rec": "Iowa Lakes had a genuine breakout 2025 season — first-ever ICCAC regular season championship and a #7 national ranking — backed by a confirmed dedicated Exercise Science & Kinesiology degree and multi-campus on-campus housing. The trade-off is the same as every ICCAC program in this guide: rural, cold-winter Iowa is a poor lifestyle match for a warm-city-preferring athlete.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 11,
+      "mf_total": 11,
+      "roster_season": "2025-26",
       "cleared_before_2027": 11,
       "cleared_names": [
         "Sunao Midorikawa (So·M)",
@@ -5346,11 +5378,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
-    "cost": "~$30.5k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 18000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -5470,7 +5503,8 @@
     "rec": "Blinn offers one of the strongest overall packages in this batch — a #8-nationally-ranked program under a 26-year veteran coach, warm Texas climate with Houston and Austin both under 90 minutes away, and a genuinely rare on-campus RELLIS pathway to a full bachelor's degree in Kinesiology. The trade-off is cost — at ~$30.5k/yr this is the most expensive school in Batch 2, reflecting its larger multi-campus institution status rather than a typical small rural JUCO.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
+      "mf_total": 12,
+      "roster_season": "2025-26",
       "cleared_before_2027": 12,
       "cleared_names": [
         "Angel Guzman (So·M)",
@@ -5609,11 +5643,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
-    "cost": "~$17.4k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 3500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -5727,7 +5762,8 @@
     "rec": "Coastal Bend offers warm South Texas climate with Gulf Coast access via nearby Corpus Christi and a 2025 #14 national ranking, but enters 2026 under a brand-new head coach (hired March 2026) after the ranking was earned under prior interim leadership — a genuine risk factor. No dedicated Exercise Science degree is confirmed. Roster data was not accessible via the official site this session (blocked/empty on repeated attempts), so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
+      "mf_total": 8,
+      "roster_season": "2025-26",
       "cleared_before_2027": 8,
       "cleared_names": [
         "Kyle Delaney (So·CM)",
@@ -5862,11 +5898,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
-    "cost": "~$12.8k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 4000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -5980,7 +6017,8 @@
     "rec": "Angelina is the most affordable school in Batch 2 (~$12.8k/yr) and plays in the guide's newest dedicated soccer stadium (Larry Phillips Family Sports Complex, 2022) in a warm East Texas setting. It isn't nationally ranked and has no dedicated Exercise Science degree, making it more of a value/facilities pick than a program-prestige or academic-first one within this batch.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
+      "mf_total": 12,
+      "roster_season": "2025-26",
       "cleared_before_2027": 12,
       "cleared_names": [
         "Shota Tokuhisa (So·M)",
@@ -6119,11 +6157,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
-    "cost": "~$19.2k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 3200,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -6238,20 +6277,18 @@
     "rec": "LSU Eunice offers warm Louisiana climate and one of the better on-campus housing setups in this batch (Bengal Village, 216 beds), plus a genuinely international roster. It isn't nationally ranked and has no dedicated Exercise Science degree, and the 2nd-year head coach adds some program uncertainty — best framed as a housing/lifestyle pick rather than a program-prestige one.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 5,
-      "cleared_before_2027": 5,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Chase Duvernay (So·M)",
-        "Roko Rujevcan (So·M)",
-        "Juan Arrieta (So·M)",
-        "Nathan Martinez (RFr·M)",
-        "Tungamirai Kagoro (Fr·M)"
+        "Tungamirai Kagoro (So·MID)",
+        "Caden Hickox (So·MID/FOR)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "recruit_risk": "Medium",
       "trajectory": [
         {
           "year": 2027,
@@ -6268,7 +6305,7 @@
       ],
       "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (5 MFs: 3 So + 1 redshirt-Fr + 1 Fr) clears before Olivier's August 2027 start. Zero roster overlap. The smallest MF group of any school added this session — a genuine opportunity if the coach recruits a similarly lean 2026 class. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Small sample (5 players) skews sophomore (3/5) — the program appears to carry a lean, senior-heavy MF corps rather than recruiting a large freshman class at this position."
+      "recruit_pathway_note": "Re-read on the live 2026-27 athletics.lsue.edu roster (8 MFs of 27, up from 5 of the prior season). LSU Eunice publishes only a Hometown / High School column and no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster alone; the existing 'Mixed' classification is RETAINED, not re-derived, and should be treated as lower-confidence. Roster shape did change materially: 6 of the 8 MFs are freshmen who return in 2027-28, so only 2 clear before Olivier arrives. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` is still the prior-season projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. Trajectory and the Minutes score are pending the JUCO calibration item in CLAUDE.md §6."
     },
     "acRank": "NJCAA Level",
     "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
@@ -6370,11 +6407,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
-    "cost": "~$27.1k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 15000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -6489,7 +6527,8 @@
     "rec": "Nassau had the best regular-season record in all of Region 15 in 2025 (10-2) under a well-resourced 5-person coaching staff, and offers genuine NYC-metro access from Garden City. The real trade-offs are the lack of on-campus housing (commuter college, though a limited Adelphi partnership exists), no dedicated Exercise Science degree, and the highest overall cost in this batch.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
+      "mf_total": 7,
+      "roster_season": "2025-26",
       "cleared_before_2027": 7,
       "cleared_names": [
         "Juan Sanchez De los Santos (So·M)",
@@ -6623,11 +6662,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
-    "cost": "~$23.8k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 2600,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -6740,7 +6780,8 @@
     "rec": "Ulster reached the 2025 Region 15 Championship final (9-1-2), a strong on-field result, but the trade-offs are real: no on-campus housing, no dedicated Exercise Science degree, and a genuinely rural Hudson Valley setting further from NYC than the guide's other Lower New York JUCOs.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
+      "mf_total": 8,
+      "roster_season": "2025-26",
       "cleared_before_2027": 8,
       "cleared_names": [
         "Steven Hernandez (So·M)",
@@ -6875,11 +6916,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
-    "cost": "~$28.1k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 21000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -6995,7 +7037,7 @@
     "rec": "Suffolk is the strongest package among this batch's Lower New York additions — 2025 Region 15 Champions, and the only school in the group with a confirmed dedicated Exercise Science A.S. degree. The trade-offs are the lack of on-campus housing and the highest cost in this batch (~$28.1k/yr). Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": false,
-      "note": "The official 2025-26 roster page lists jersey numbers, names, and class years but the position ('Pos.') column was not populated at time of automated fetch. Not guessed; revisit with direct browser access in a future session."
+      "note": "RE-TESTED IN A REAL BROWSER 2026-08-06 (Claude for Chrome, full JS render) — the missing positions are GENUINE, not a fetch artifact. The 2025-26 roster is a TABLE with headers NO. | NAME | POS. | CL. | HIGH SCHOOL and 24 rows: the POS. column exists and is EMPTY for all 24 players, as is HIGH SCHOOL, while CL. is fully published (FR/SO). There is nowhere else to look — Suffolk publishes no player bio pages at all (zero /roster/<slug>/<id> links) and the words Goalkeeper/Midfielder/Defender/Forward appear nowhere on the page. The season selector confirms 2025-26 is the newest published season; no 2026-27 roster exists. Midfielders therefore cannot be counted and minutesOutlook stays unavailable. Note the site CloudFront-403s datacenter IPs, so a scripted fetch and the in-app browser both fail here — that is a network block, NOT evidence about the data. Re-check only if Suffolk starts publishing positions."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Exercise Science — dedicated 2yr program (Physical Education and Exercise Science department)",
@@ -7097,11 +7139,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
-    "cost": "~$24.5k/yr",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 11000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -7216,7 +7259,7 @@
     "rec": "Westchester offers genuine NYC-metro access from Valhalla (Westchester County) and a solid 2025 regular-season record (9-1-2), but is the only school in this batch with zero housing or meal plan options of any kind — a real practical barrier for an international athlete. No dedicated Exercise Science degree is confirmed. Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": false,
-      "note": "The official roster page lists jersey numbers, names, and class years but does not publish player positions. Not guessed; revisit with direct browser access in a future session."
+      "note": "RE-TESTED IN A REAL BROWSER 2026-08-06 (full JS render) — the missing positions are GENUINE, not a fetch artifact. The roster uses Sidearm player CARDS: 24 cards render, each containing a .sidearm-roster-player-position element, and ALL 24 of those elements are empty, while class year (Fr./So.) and hometown/high school are published normally. A player bio page was opened as well (miguel-diaz/1357) and it carries no position field either — the same dead-end as the stedwards precedent. The season selector confirms 2025 is the newest published season; no 2026 roster exists. Midfielders therefore cannot be counted and minutesOutlook stays unavailable. Re-check only if Westchester starts publishing positions."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Health and Human Performance — adjacent field, no dedicated Exercise Science program confirmed",
@@ -7318,11 +7361,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — KJCCC (Kansas Jayhawk Community College Conference)",
-    "cost": "~$33.6k/yr",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 19000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -7439,7 +7483,8 @@
     "rec": "Johnson County offers the most urban Kansas setting in this guide's JUCO section — genuine Kansas City metro access from Overland Park — backed by a 2025 Region 6/9 tournament title and a #15 national ranking. The trade-offs are no on-campus housing, no dedicated Exercise Science degree, and the highest cost of attendance (~$33.6k/yr) of any school added this session, reflecting Kansas City-metro living costs.",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 15,
+      "mf_total": 15,
+      "roster_season": "2025-26",
       "cleared_before_2027": 15,
       "cleared_names": [
         "Dominic Zuniga (So·M)",
@@ -7484,5 +7529,261 @@
     "acRank": "NJCAA Level",
     "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
     "devScoresNote": "Live staff directory: HC + one assistant (2). On-campus field, shared Cavaliers strength facility, video; standard AT."
+  },
+  {
+    "id": "murray_state_ok",
+    "name": "Murray State (OK)",
+    "full": "Murray State College (Aggies)",
+    "loc": "Tishomingo, OK",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region II",
+    "confKey": "other",
+    "domain": "mscaggies.com",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "color": [
+      "#dbeafe",
+      "#083579"
+    ],
+    "degreeTitle": "A.S. Health, Wellness & Human Performance (Athletic Training option)",
+    "acuAlign": 6,
+    "acuAlignNote": "Murray State's Associate of Science in Health, Wellness & Human Performance is a genuine 2-year exercise-science transfer degree rather than a generic transfer A.A. Mapped against the college's own 2025-26 degree check sheet: AP 1113 Applied Anatomy covers ANAT100; BIO 1114 General Biology covers BIOL125; HWP 2963 Introduction to Kinesiology covers EXSC224 (mechanical bases of movement); HWP 1011 Strength and Conditioning covers EXSC216; and PSY 2213 Wellness, Exercise, and Sports Psychology covers both EXSC199 and EXSC296. The gap that matters most for Olivier: the degree contains no exercise-physiology course at all, so EXSC225 and EXSC322 — two of the four units WES is most likely to credit directly — are NOT covered here, and neither is research methods (EXSC122). The program core does add HWP 2713 Care and Prevention of Athletic Injuries and HWP 2213 First Aid, both useful pre-PT context. An Athletic Training Option of the same degree swaps in HWP 2972 Athletic Training Practicum, which would add supervised clinical hours in the EXSC398 mould — worth raising with the program chair if pre-PT is the goal. Confirm all equivalences with an MSC advisor and a formal WES evaluation before transfer planning.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region II champions 2024 & 2025, National Tournament both years",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "fin": {
+      "costNum": 18508,
+      "tuition": 9306,
+      "roomBoard": 8032,
+      "fees": 1170,
+      "maxAthletic": 0.6,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "One of the cheapest full profiles in the guide, priced from the college's own 2026-27 campus tuition schedule: non-resident tuition and fees are $5,238 per semester at 15 credit hours ($10,476/yr), and on-campus room ($1,920) plus the 15-meal plan ($2,096) is $4,016 per semester ($8,032/yr) — about $18.5k/yr all-in before any aid. As NJCAA Division I, Murray State faces no structural cap on athletic scholarships; the college's 2025 federal EADA filing reports $451,392 of men's athletic aid spread across 132 male athletes, so full rides are not the norm. Budget for a partial package of roughly 40-60% and around $8-11k/yr out of pocket. Two-year total before aid: approximately $37k."
+    },
+    "size": 2949,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No published minimum — open admission (Oklahoma public 2-year)",
+      "minSchol": "2.0+ to hold NJCAA athletic eligibility",
+      "note": "Murray State publishes no GPA cut-off for admission; the application asks only for transcripts, medical records and ACT/SAT scores. The degree check sheet sets a 2.0 minimum GPA to graduate. Olivier's 2.8 clears both comfortably. International admissions are handled by the Registrar (registrar@mscok.edu).",
+      "status": "eligible"
+    },
+    "devScores": {
+      "tactical": 50,
+      "technical": 46,
+      "fitness": 42
+    },
+    "devScoresNote": "Live staff directory (Aug 2026): Chris Spear is head coach of BOTH the men's and women's programs, with a single assistant (Grace Houchin) also shared across both — there is no soccer-only full-time coach and no position-specific coaching. No strength & conditioning coach appears anywhere in the athletics staff directory; the department lists two athletic trainers (Rhonda Wood, Kimberly Smith) covering roughly 230 athletes across 13+ sports. The facilities section names an unbranded 'Soccer Field (Men's and Women's Soccer)' with no capacity, surface or description published, alongside a shared Beames Fieldhouse and Performance Center. No video-analysis or GPS/wearable provision is documented anywhere on the site. Scored on training environment only — the 2024 and 2025 National Tournament runs are results and live in titles[]/confRecord[].",
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 45,
+      "academic": 47,
+      "minutes": 68,
+      "lifestyle": 50,
+      "value": 62
+    },
+    "tags": [
+      "juco",
+      "transfer",
+      "warm",
+      "oklahoma"
+    ],
+    "facilities": [],
+    "courses": [],
+    "rec": "The most freshman-open pathway in the guide's JUCO set: 17 of the 23 players on the 2026-27 roster are true freshmen and every single one entered from a high school or secondary school — not one JUCO or 4-year transfer on the sheet. That intake includes an Australian, Zachary Britton of North Manly, Sydney. On the pitch it is a genuinely strong NJCAA Division I program: Region II champions in 2024 and 2025 and National Tournament qualifiers both years, with district titles in 2023, 2024 and 2025. At ~$18.5k/yr before aid it is also among the cheapest full profiles here. The trade-offs are real — Tishomingo is a remote rural town of about 3,000, the head coach splits his time across the men's and women's programs, there is no strength & conditioning coach on staff, and the degree covers no exercise physiology.",
+    "url": "https://mscaggies.com/sports/mens-soccer",
+    "mapX": 322,
+    "mapY": 238,
+    "profileDepth": "full",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 14,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Mateus Valsecchi Ribeiro (So·D/M)",
+        "Jost Remic (So·M/D)",
+        "James Owen (So·M)",
+        "Pedro Massei (So·M/F)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "recruit_risk": "Medium",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "The clearest freshman-entry signal of any school in the guide. On the 2026-27 roster, 17 of 23 players are listed Fr., and the 'previous school' column is 100% high schools and secondary schools — Lycee Les 7 Mares, Colegio Sao Jose, Fatima College, Gimnazija Kranj and so on — with zero JUCO or 4-year transfers. That is a change from 2025-26, which did carry transfers in from Indian Hills, Iowa Western, Monroe College and Salt Lake CC. The intake is overwhelmingly international (Brazil, France, Japan, Portugal, Trinidad, Morocco, Korea, Colombia, Slovenia) and includes an Australian true freshman, Zachary Britton, from North Manly in Sydney via Freshwater Senior Campus — a direct precedent for Olivier's exact profile.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 62,
+          "label": "Compete for starts — near-total annual roster reset"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 78,
+          "label": "Key midfielder — D1 transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "Counts are taken from the 2026-27 roster, the newest Murray State has published. Of 14 midfield-capable players on it, 4 are sophomores who clear before Olivier arrives in August 2027; the other 10 are freshmen who would in principle return as sophomores. In practice Murray State turns its roster over almost completely each year — only 4 of roughly 24 freshmen from the 2025-26 squad reappear on the 2026-27 sheet, a retention rate near 17% — so the realistic competition in 2027 is a handful of returners plus whatever class Spear recruits. Entry is genuinely open, but this is a National-Tournament program, so the incoming class will be competitive. Key question for the coach: 'How many central midfielders are in your 2027 recruiting class, and how many of this year's freshmen do you expect back?'"
+    },
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing available and plainly signposted — four options (Aggie Flatts, Aggie Suites, McKee Hall, Patton Hall) run by a Director of Resident Life, Kevin Morgan. Room plus the mandatory 15-meal plan is $4,016 per semester on the 2026-27 schedule. IPEDS confirms campus housing. No indication of a waitlist or first-come-first-served restriction."
+      },
+      "stadium": "'Soccer Field' — an unnamed, uncapacitied on-campus pitch shared by the men's and women's programs. The athletics site publishes a photo gallery for it and no written detail at all: no capacity, no surface, no lighting information.",
+      "trainingFields": "The same shared soccer field serves as the training ground. Southern Oklahoma's mild winters allow year-round outdoor work, though the region does get occasional ice storms.",
+      "strengthConditioning": "Beames Fieldhouse and a Performance Center are listed among the athletics facilities, but no strength & conditioning coach appears anywhere in the staff directory — weight-room access without dedicated programming staff.",
+      "sportsScience": "None documented. No sports scientist, no video-analysis staff, and no GPS or wearable provision is mentioned anywhere on the athletics site.",
+      "sportsMed": "Two athletic trainers department-wide — Rhonda Wood (Head) and Kimberly Smith (Assistant) — covering approximately 230 athletes across 13+ varsity programs.",
+      "academicLabs": "Health Science school facilities support the Health, Wellness & Human Performance degree and the college's Physical Therapist Assistant and Occupational Therapy Assistant programs — meaning real allied-health teaching space is on campus, unusual for a college of this size.",
+      "extras": "Tishomingo is a town of roughly 3,000 in southern Oklahoma; IPEDS classifies the campus as 'Rural: Remote'. Dallas-Fort Worth is about a two-hour drive south, which is the nearest major airport and the nearest MLS football. The college also runs an Ardmore campus about 40 minutes west.",
+      "note": "Facilities are the weakest part of this profile and the honest reason the dev scores sit where they do: an unnamed shared pitch, no S&C coach, no sports science. The value here is the pathway and the price, not the building."
+    },
+    "culture": {
+      "vibe": "A small rural community college of about 2,900 students where athletics is a large part of campus identity — 230 varsity athletes across 13+ sports, including rodeo, livestock judging and shooting sports alongside the traditional programs. The men's soccer squad is almost entirely international, which makes it an unusually cosmopolitan group inside a very small-town Oklahoma setting.",
+      "thingsToDo": "Tishomingo sits on the Washita and Blue rivers near Lake Texoma, so the outdoor draw is fishing, boating and hiking; the Chickasaw National Recreation Area is nearby. The town itself is tiny — a main street, not a nightlife scene. Dallas-Fort Worth is roughly two hours south for city trips, concerts and MLS matches, and the college's Ardmore campus town is 40 minutes west.",
+      "socialScene": "Team-centred by necessity. With a squad drawn from Brazil, France, Japan, Portugal, Trinidad, Morocco and beyond, the international players largely form their own social unit, and campus housing keeps everyone together. For a player who wants to focus for two years and then move up, the lack of distraction is arguably a feature.",
+      "olivierMatch": "★★★ A strong sporting and financial match held back by location. The freshman-entry pathway is the most proven in the guide — an Australian from Sydney's northern beaches is on the current roster — the climate is mild, and the cost is among the lowest anywhere here. But Tishomingo is genuinely remote and small, with no city life, and the training environment lacks the S&C and sports-science support Olivier would get at a larger program. Best read as a two-year springboard, not a destination.",
+      "lifestyleTags": "Warm, rural, international squad, very affordable, transfer pathway"
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "1st",
+        "note": "9-1-2 conference, 12-4-3 overall. Region II regular-season champions and Mid-South District champions — reached the NJCAA DI National Tournament, losing the opener to the No. 3 seed."
+      },
+      {
+        "yr": 2024,
+        "pos": "1st",
+        "note": "11-1-1 conference, 17-2-2 overall per Region II (the college's own schedule page records 18-2-1). Region II and Mid-West District champions — NJCAA DI National Tournament qualifiers."
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd",
+        "note": "7-4-1 conference, 14-5-1 overall. District title year per the program's own honours list."
+      },
+      {
+        "yr": 2022,
+        "pos": "5th",
+        "note": "5-5 conference, 6-6 overall — the last season before the program's rise."
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd",
+        "note": "8-2-1 conference, 9-2-2 overall, behind Northern Oklahoma College-Tonkawa."
+      },
+      {
+        "yr": 2020,
+        "pos": "3rd",
+        "note": "7-3 conference, 8-4 overall in the COVID-affected season, played on a shortened schedule."
+      }
+    ],
+    "titles": [
+      "NJCAA DI National Tournament qualifiers 2024 and 2025 (back-to-back)",
+      "Region II champions 2024 and 2025; district champions 2023, 2024 and 2025",
+      "2025 NJCAA All-American — Dariel Contrera"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "draftRank": "JUCO level — the D1 transfer pathway is the metric that matters, not the MLS draft",
+      "notable": [
+        "Dariel Contrera — 2025 NJCAA All-American",
+        "Back-to-back NJCAA DI National Tournament appearances (2024, 2025)"
+      ],
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Murray State publishes no alumni, 'next level' or signings page — the men's soccer section carries only a news archive. Verified by enumerating every link on the men's soccer landing page: no next-level/alumni/transfer destination page exists. Neutral, NOT measured."
+      }
+    },
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "Back-to-back NJCAA DI National Tournament qualifiers (2024, 2025); Region II champions 2024 and 2025; Mid-South District champions 2025; 2025 NJCAA All-American Dariel Contrera",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma / western Arkansas",
+    "acRank": "NJCAA Level",
+    "kinRank": "Associate degree — transfer prerequisite pathway"
   }
 ]

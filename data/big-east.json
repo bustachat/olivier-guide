@@ -64,10 +64,11 @@
     "acuAlign": 10,
     "acuAlignNote": "Core exercise science covered. NYC location provides extraordinary clinical placement access for DPT applications — Hospital for Special Surgery, NYU Langone, NY Presbyterian all accessible.",
     "soccerLevel": "Big East — Competitive",
-    "cost": "~$58k/yr",
+    "soccerLevelShort": "Big East",
     "aid": "Athletic + Need",
     "size": 21000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0 NCAA core (min)",
       "minSchol": "3.0 for academic aid layer",
@@ -75,14 +76,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 58000,
-      "tuition": 40000,
-      "roomBoard": 14000,
-      "fees": 4000,
+      "costNum": 79758,
+      "tuition": 56140,
+      "roomBoard": 21958,
+      "fees": 1660,
       "maxAthletic": 0.8,
       "maxAcademic": 12000,
       "aidType": "athletic+need",
-      "internationalNote": "St. John's offers multiple merit scholarship programs. Athletic + Catholic Mission Scholarship can stack well for international students."
+      "internationalNote": "St. John's direct billed cost $79,758 (2026-27, Tier-1 verified from St. John's official 2026-27 Estimated Annual Cost of Attendance table, full-time living on the Queens campus): tuition $56,140 + housing $13,728 + food/meals $8,230 + fees $1,660. Its own headline total is $83,790, adding books, personal expenses, transportation and loan fees that this guide excludes. Tuition reflects standard full-time enrolment of 12-18 credits a semester; the fee line includes a one-time $250 freshman orientation charge. The previous stored $58,000 was an unresearched ballpark and understated the cost by $21,758 — St. John's is a full-price NYC private, not a mid-priced one. Athletic aid is the main lever; New York City living costs are high."
     },
     "culture": {
       "vibe": "New York City campus culture — fast-paced, ambitious, diverse, and never dull. Queens is genuine NYC — the most ethnically diverse urban county in the world. Campus itself is a green oasis but step outside and you're in one of the world's great cities.",
@@ -112,7 +113,7 @@
       "fitness": 75
     },
     "devScoresNote": "v42.28 §5a re-baseline (training environment only). Live redstormsports.com MSOC staff: HC Dr. David Masur (also Associate AD, 30+ yr tenure) + David Janezic (Assoc HC) + Seth Roland (Asst) + Richard Ongaro (Asst) = 4 full-time coaches. Stored Tier-1 facilities: Belson Stadium 2,168 dedicated FieldTurf; a dedicated performance coach for soccer. The old 82 technical was incoherent versus the Creighton anchor's technical 73 for a far larger stadium (Morrison 7,500) — St. John's smaller 2,168 venue must not exceed it. Masur's exceptional tenure keeps the program level with Creighton overall; trimmed from 80/82/78 to 76/74/75 (tied with the ~75 Creighton anchor, technical fixed down).",
-    "fitOlivier": 43,
+    "fitOlivier": 42,
     "tags": [
       "city",
       "soccer"
@@ -131,63 +132,59 @@
     "rec": "NYC = Hospital for Special Surgery, NYU Langone, NY Presbyterian — best clinical DPT access in the country. Big East soccer is tough. Cool climate. City lifestyle partially compensates.",
     "url": "https://redstormsports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 43,
+      "overall": 42,
       "soccer": 65,
       "academic": 68,
-      "minutes": 15,
+      "minutes": 12,
       "lifestyle": 50,
       "value": 25
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
-      "cleared_before_2027": 2,
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Jad Benjelloun",
-        "Takuto Kawase"
+        "Camron Boumsong"
       ],
-      "rising_senior_2027_count": 3,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Gabe Smyth",
-        "Kaief Tomlinson",
-        "Bradyn Cobb"
+        "Alexander Romero",
+        "Kaief Tomlinson"
       ],
-      "rising_junior_2027_count": 6,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Guilherme Gomes",
+        "Jace Sais",
         "Andrew Porucznik",
-        "Jayden Montgomery",
-        "Dylan Gugin",
-        "Jorian Michelis",
         "Charlie Joyce"
       ],
       "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "11 of 12 current MFs (92%) recruited directly from HS with no prior college, per the live 2025 redstormsports.com roster — only Takuto Kawase transferred in (Cowley County CC, JUCO). Consistent with Dr. Masur's long-tenured recruiting-driven program.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 redstormsports.com roster (13 MFs of 31). The table publishes only #, Name, Class, Pos and Hometown — no previous-school column — so the split cannot be re-derived; classification retained. 7 of the 13 MFs are freshmen (including three Norwegians recruited together), which is strongly consistent with it. Only 1 MF clears before 2027 against 10 returning underclassmen, so the queue ahead is long.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 15,
-          "label": "Bench / development"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 15,
-          "label": "Bench / development"
+          "label": "Development year"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 65,
+          "label": "Established starter"
         }
       ]
     },
@@ -293,7 +290,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics covered. CHI Health and Creighton Medical have strong pre-PT placement.",
     "soccerLevel": "Big East — Strong",
-    "cost": "~$69k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
       "costNum": 68663,
       "tuition": 48700,
@@ -307,6 +304,7 @@
     "aid": "Athletic",
     "size": 9000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.2+",
@@ -315,12 +313,12 @@
     },
     "mapX": 346,
     "mapY": 166,
-    "fitOlivier": 48,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 48,
+      "overall": 49,
       "soccer": 75,
       "academic": 62,
-      "minutes": 26,
+      "minutes": 31,
       "lifestyle": 50,
       "value": 29
     },
@@ -427,55 +425,53 @@
     "domain": "creighton.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 12,
-      "cleared_before_2027": 5,
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
         "Diego Ferruzzi",
-        "Toraji Narazaki",
-        "Allan Juarez",
         "Edward Morales",
-        "Miguel Angel Lopez"
+        "Allan Juarez"
       ],
-      "rising_senior_2027_count": 4,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Lucas Cavalcante",
-        "Ayden Kokoszka",
-        "Ange Gbe",
+        "Miguel \"Angel\" Lopez",
+        "Toraji Narazaki",
         "Brady Bragg"
       ],
       "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Carter Derksen",
-        "Carter Tavares-Roche",
-        "Mario Albert"
+        "Lucas Cavalcante",
+        "Ayden Kokoszka",
+        "Ange Gbe"
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "11 of 14 current MFs (79%) recruited directly from HS/club with no prior college, per the live 2025 gocreighton.com roster. 3 transferred in, including Luka Nedic via JUCO (Iowa Western CC) then UIC, plus Omar Ramadan (DePaul) and Diego Ferruzzi (Central Arkansas).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gocreighton.com roster (13 MFs of 29). 9 of 13 came straight from high school; 4 list a previous college — 2 of them from the same JUCO (Iowa Western), plus Central Arkansas and California. So the freshman route dominates, but Creighton does run a repeat JUCO channel worth knowing about.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development year"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
-          "label": "Breaking into rotation"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
-          "label": "Regular starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
           "pct": 80,
-          "label": "Key player"
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "5 of 12 MFs clear before Olivier arrives. 7 remain — 4 as seniors in Yr1, 3 as juniors for 2 years. Head coach is Johnny Torres (appointed 2025). Creighton has a solid Big East history with active JUCO transfer pipeline."
@@ -569,20 +565,21 @@
     "acuAlign": 10,
     "acuAlignNote": "Health policy and management pathway. Pre-PT advising available but less structured than kinesiology-specific programs.",
     "soccerLevel": "Big East — Competitive",
-    "cost": "~$72k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
-      "costNum": 72000,
-      "tuition": 55000,
-      "roomBoard": 14000,
-      "fees": 3000,
+      "costNum": 88320,
+      "tuition": 67470,
+      "roomBoard": 19690,
+      "fees": 1160,
       "maxAthletic": 0.8,
       "maxAcademic": 10000,
       "aidType": "athletic",
-      "internationalNote": "Providence full COA is ~$72k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Catholic mission scholarship may stack. Providence, RI has moderate cost of living. Merit aid available for strong academic records."
+      "internationalNote": "Providence direct billed cost $88,320 (2026-27, Tier-1 verified from the Providence College Bursar's official Undergraduate Tuition, Room, Board & Fees schedule, first-year student): tuition $67,470 + general tech fee $500 + activity fee $510 + resident laundry fee $150 + Traditional Residence Hall $11,060 + the Anytime Dining 7 Day plan $8,630. Both the residence hall and that meal plan are REQUIRED of first-year students, so this is the applicable combination rather than a chosen one. The waivable $2,066 student health insurance is excluded by convention, as are books and personal expenses. Health Sciences majors pay an extra $850 program fee in the first year. The previous stored $72,000 was an unresearched ballpark and understated the cost by $16,320 — Providence is now among the three most expensive schools in this guide. Athletic aid is the main lever."
     },
     "aid": "Athletic",
     "size": 4000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -591,14 +588,14 @@
     },
     "mapX": 541,
     "mapY": 139,
-    "fitOlivier": 43,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 43,
+      "overall": 42,
       "soccer": 65,
       "academic": 58,
-      "minutes": 24,
+      "minutes": 21,
       "lifestyle": 50,
-      "value": 26
+      "value": 25
     },
     "confRecord": [
       {
@@ -701,53 +698,53 @@
     "domain": "providence.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 10,
-      "cleared_before_2027": 4,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
         "Fernando Garcia Gil",
-        "Diego Batista",
-        "Cameron Yriondo",
-        "Pearse O'Brien"
+        "Caleb Williams"
       ],
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
+        "Alvaro Maneiro",
         "Brian Garrepy"
       ],
       "rising_junior_2027_count": 5,
       "rising_junior_2027_names": [
-        "Giuseppe Ciampa",
-        "Michael Vella",
-        "Angelo Ventrella",
         "Jeremy Munoz",
-        "Connor Winters"
+        "Angelo Ventrella",
+        "Luis Gutierrez",
+        "Giuseppe Ciampa",
+        "Michael Vella"
       ],
       "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "7 of 9 current MFs (78%) recruited directly from HS/club with no prior college, per the live 2025 friars.com roster. 2 transferred in — Diego Batista (Monroe College, JUCO) and Cameron Yriondo (University of Virginia, ACC).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 friars.com roster (10 MFs of 25). Only 2 of 10 are US college transfers (Iona, Hofstra) and one more came from a Spanish club B side (UCAM Murcia B); the other 7 arrived directly from high school. Half the midfield are sophomores who return through 2029.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Competition with 5 rising juniors"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 30,
-          "label": "Building into squad"
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
-          "label": "Regular starter"
+          "pct": 55,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 82,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "5 strong rising juniors dominate MF competition in Yr1–Yr2, departing after 2028-29. Providence had a strong 2025 (4th Big East, beat Georgetown semi). Coach Craig Stewart confirmed."
@@ -841,20 +838,21 @@
     "acuAlign": 10,
     "acuAlignNote": "Exercise science program covers core anatomy and physiology. NYC proximity (30 min) opens extensive clinical placement options for pre-PT.",
     "soccerLevel": "Big East — Competitive",
-    "cost": "~$68k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
-      "costNum": 68000,
-      "tuition": 52000,
-      "roomBoard": 13000,
-      "fees": 3000,
+      "costNum": 76520,
+      "tuition": 53840,
+      "roomBoard": 19200,
+      "fees": 3480,
       "maxAthletic": 0.8,
       "maxAcademic": 10000,
       "aidType": "athletic",
-      "internationalNote": "Seton Hall full COA is ~$68k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Catholic mission scholarship may stack. NJ proximity to NYC raises living costs. Merit aid available. Strong health science and pre-professional programs."
+      "internationalNote": "Seton Hall direct billed cost $76,520 (2026-27, Tier-1 verified from the Seton Hall Bursar's official Academic Year 2027 rates, Fall 2026 - Summer 2027): full-time tuition $26,920 a semester = $53,840 + university fee $1,145 and mobile computing fee $335 a semester + the $260-a-semester international student fee = $3,480 in fees + an on-campus residence hall double $6,550 a semester = $13,100 + meal plan U $3,050 a semester = $6,100. Seton Hall itemises rather than publishing a budget, so the combination used is stated: a standard double and the base unlimited meal plan. A one-time $380 new-student fee and waivable health insurance are excluded, as are books and personal expenses. The previous stored $68,000 was an unresearched ballpark and understated the cost by $8,520. Seton Hall notes that its tuition and fees generally rise about 3% a year."
     },
     "aid": "Athletic",
     "size": 10000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -863,14 +861,14 @@
     },
     "mapX": 532,
     "mapY": 156,
-    "fitOlivier": 48,
+    "fitOlivier": 44,
     "lensScores": {
-      "overall": 48,
+      "overall": 44,
       "soccer": 62,
       "academic": 55,
-      "minutes": 43,
+      "minutes": 31,
       "lifestyle": 50,
-      "value": 28
+      "value": 26
     },
     "confRecord": [
       {
@@ -973,50 +971,52 @@
     "domain": "shu.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
-      "cleared_before_2027": 6,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Til Kauschke",
-        "Nico Rubio",
-        "Hannes Ottosson",
-        "Akira Bofinger",
-        "Sivert Ryssdalsnes",
-        "Matthew Iriarte"
+        "Matthew Iriarte",
+        "Nico Rubio"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
-        "Sammy Sansone",
-        "Giacomo Mana"
+        "Sivert Ryssdalsnes",
+        "Til Kauschke",
+        "Hannes Ottosson",
+        "Akira Bofinger"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Giacomo Mana",
+        "Sammy Sansone"
+      ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "11 of 12 current MFs (92%) recruited directly from HS/club with no prior college, per the live 2025 shupirates.com roster — only Hannes Ottosson transferred in (SMU).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 shupirates.com roster (11 MFs of 28). Seton Hall's table carries no previous-school column, so the split cannot be re-derived; classification retained. The midfield is strongly international (Norway, Italy, Germany, Sweden) with 3 freshmen, consistent with direct club/academy recruiting — a close profile match to Olivier's own route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Competing for minutes"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Established in squad"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
-          "label": "Regular starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Key player / captain"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "6 of 8 MFs clear before Olivier arrives — only Sansone and Mana remain as Yr1 seniors. Spring 2026 squad is very small; recruiting class will shape competition. Program in transition under new head coach Andreas Lindberg."
@@ -1110,7 +1110,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong exercise science program. Indianapolis medical district nearby — IU Health and Ascension provide pre-PT clinical access.",
     "soccerLevel": "Big East — Competitive",
-    "cost": "~$72k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
       "costNum": 72060,
       "tuition": 48900,
@@ -1124,6 +1124,7 @@
     "aid": "Athletic",
     "size": 5000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -1132,14 +1133,14 @@
     },
     "mapX": 425,
     "mapY": 173,
-    "fitOlivier": 44,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 44,
+      "overall": 40,
       "soccer": 65,
       "academic": 62,
-      "minutes": 25,
+      "minutes": 12,
       "lifestyle": 50,
-      "value": 26
+      "value": 24
     },
     "confRecord": [
       {
@@ -1242,14 +1243,17 @@
     "domain": "butler.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 2,
-      "cleared_names": [
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 0,
+      "cleared_names": [],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
         "Haato Efune",
         "Jaden Hancock"
       ],
-      "rising_senior_2027_count": 6,
-      "rising_senior_2027_names": [
+      "rising_junior_2027_count": 6,
+      "rising_junior_2027_names": [
         "Luca Raso",
         "Nacho de Miguel",
         "Charlie Hosier",
@@ -1257,37 +1261,33 @@
         "Max Klein",
         "Braden Benyr"
       ],
-      "rising_junior_2027_count": 1,
-      "rising_junior_2027_names": [
-        "Alec Sexton"
-      ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of 9 current MFs (89%) recruited directly from HS/club with no prior college, per the live 2025 butlersports.com roster — only Sam Pitts-Eckersall transferred in (UNC-Asheville).",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 butlersports.com roster (9 MFs of 26). 6 of 9 came straight from high school, so the freshman route still dominates, but the 3 transfers all arrived via two-year programs (Monroe CC, El Camino via Xavier) plus St. Louis University. Note NO midfielder graduates before Olivier's 2027 entry — the whole group returns, which drives the opportunity score to zero despite the accessible recruiting route.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 15,
-          "label": "Deep competition — 6 senior MFs"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
-          "label": "Major Yr2 opening — seniors depart"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
-          "label": "Regular starter"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 82,
-          "label": "Captain candidate"
+          "pct": 65,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "Only 2 MFs clear before arrival, BUT 6 are rising seniors who all depart after Yr1 — creating a major opening in Yr2. Butler is Big East mid-lower tier. IU Health clinical access is the academic draw."
@@ -1381,20 +1381,21 @@
     "acuAlign": 10,
     "acuAlignNote": "Exercise science covers anatomy, physiology, biomechanics. Xavier's pre-health advising connects to Cincinnati medical district clinical options.",
     "soccerLevel": "Big East — Competitive",
-    "cost": "~$58k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
-      "costNum": 58000,
-      "tuition": 43000,
-      "roomBoard": 12000,
-      "fees": 3000,
+      "costNum": 69760,
+      "tuition": 54530,
+      "roomBoard": 14920,
+      "fees": 310,
       "maxAthletic": 0.8,
       "maxAcademic": 10000,
       "aidType": "athletic",
-      "internationalNote": "Xavier full COA is ~$58k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Catholic mission scholarship may stack. Cincinnati has affordable cost of living — package goes further. Merit aid available for international students with strong academic records."
+      "internationalNote": "Xavier direct billed cost $69,760 (2026-27, Tier-1 verified from Xavier Student Financial Services' official Cost of Attendance table, Freshman On Campus): tuition $54,530 + housing and food $14,920 + student activity and ID fees $310 — and $69,760 is exactly the figure Xavier itself quotes for a student in Husman Hall in a double room on the Musketeer Unlimited plan. The $700 Day One/Books and Supplies charge is billed but is books, so it is excluded by convention, as are personal expenses and transport; Xavier's headline freshman total is $74,523. Upperclassmen pay $15,720 for housing and food (+$800). The previous stored $58,000 was an unresearched ballpark and understated the cost by $11,760. Athletic aid plus Jesuit merit scholarships; Cincinnati living costs are low."
     },
     "aid": "Athletic",
     "size": 7000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1403,14 +1404,14 @@
     },
     "mapX": 461,
     "mapY": 176,
-    "fitOlivier": 44,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 44,
+      "overall": 42,
       "soccer": 62,
       "academic": 58,
-      "minutes": 31,
+      "minutes": 26,
       "lifestyle": 50,
-      "value": 26
+      "value": 25
     },
     "confRecord": [
       {
@@ -1513,52 +1514,51 @@
     "domain": "xavier.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 5,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Efraims Valutadatils",
         "Nathan Trickett",
-        "Fred Cotta",
-        "Immanuel Wayoro",
         "Alejandro Silvestrini"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Ryan D'urso",
-        "Johnny Gourley"
+        "Efraims Valutadatils",
+        "Fred Cotta",
+        "Immanuel Wayoro"
       ],
       "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Julian Fitzgerald",
-        "Beckham Williams"
+        "Ryan D'urso",
+        "Johnny Gourley"
       ],
       "recruit_risk": "Medium",
-      "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "7 of 10 current MFs (70%) recruited directly from HS with no prior college, per the live 2025 goxavier.com roster. 3 transferred in — Ezra Widman (Syracuse), Cooper Forcellini (Bellarmine), Alejandro Silvestrini (Monroe University).",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Reclassified from Freshman-friendly on the live 2026-27 goxavier.com roster (10 MFs of 30). 4 of 10 MFs list a previous college and three of those are two-year programs — Iowa Western CC, Snow College and Monroe (plus Rockhurst). The other 6 came straight from high school, 3 of them current freshmen. That is a genuine two-route midfield rather than a freshman-intake one, and the JUCO channel is the single busiest in this batch.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
-          "label": "Competing for rotation"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
-          "label": "Building into squad"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 62,
-          "label": "Regular starter"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 82,
-          "label": "Key player"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "5 of 9 MFs clear. Xavier is lower-half Big East but won Midwest Division in 2023. FC Cincinnati MLS (10 min from campus) is a program asset. Head coach confirmed: John Higgins."
@@ -1652,20 +1652,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics. UConn Health Center provides strong pre-PT clinical pathway.",
     "soccerLevel": "Big East — Strong",
-    "cost": "~$52k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
-      "costNum": 52000,
-      "tuition": 38000,
-      "roomBoard": 11000,
-      "fees": 3000,
+      "costNum": 59426,
+      "tuition": 39678,
+      "roomBoard": 15184,
+      "fees": 4564,
       "maxAthletic": 0.8,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "UConn out-of-state COA is ~$52k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. Connecticut cost of living is moderate. Strong health sciences and kinesiology pathway relevant to Olivier's DPT goals."
+      "internationalNote": "UConn (Storrs) out-of-state direct billed cost $59,426 (2026-27, Tier-1 verified from UConn's official Direct Costs and Cost of Attendance table, full-time undergraduate out-of-state): tuition $39,678 + university and student fees $4,564 + on-campus housing $8,288 + meal plan $6,896. UConn publishes this exact figure as its 'Subtotal Direct Costs', which matches this guide's convention precisely. Waivable health insurance ($3,214) and the Husky Book Bundle ($570) are excluded, as are books/personal/transport. The previous stored $52,000 was an unresearched ballpark and understated the cost by $7,426. Athletic aid is the primary lever."
     },
     "aid": "Athletic",
     "size": 19000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -1679,7 +1680,7 @@
       "overall": 37,
       "soccer": 70,
       "academic": 60,
-      "minutes": 19,
+      "minutes": 21,
       "lifestyle": 0,
       "value": 22
     },
@@ -1785,51 +1786,52 @@
     "domain": "uconn.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
-      "cleared_before_2027": 3,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Max Gummesson",
-        "Nicolas Tomerius",
-        "Aidan Sheppela"
+        "Max Gummesson"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
         "Matias Paredes",
+        "Aidan Sheppela",
+        "Yotaro Furutani",
         "Mateo DePinho"
       ],
       "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Xavier Perez",
+        "Jacques Mason",
         "Preston Alessio",
         "Jack Ryan"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "10 of 11 current MFs (91%) recruited directly from HS/club with no prior college, per the live 2025 uconnhuskies.com roster — only Balthazar Saunders transferred in (Villanova, fellow Big East program).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 uconnhuskies.com roster (10 MFs of 27). UConn's table carries no previous-school column, so the split cannot be re-derived; classification retained. Shape of the group favours a 2028 entry over 2027: only 1 MF clears before Olivier arrives, but 4 more graduate the year after.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
           "pct": 15,
-          "label": "Development — deep, elite squad"
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 25,
-          "label": "Breaking into rotation"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 55,
-          "label": "Likely regular"
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
           "pct": 80,
-          "label": "Key player"
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "UConn reached the 2025 Big East Final (lost to Georgetown 1–3). 5 MFs remain on arrival plus strong incoming recruits. Yr3 is the realistic starting point. Head coach confirmed: Chris Gbandi."
@@ -1923,7 +1925,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Health Sciences pathway covers anatomy, physiology, nutrition. Chicago medical district provides outstanding pre-PT clinical access.",
     "soccerLevel": "Big East — Competitive",
-    "cost": "~$69k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
       "costNum": 69027,
       "tuition": 46776,
@@ -1937,6 +1939,7 @@
     "aid": "Athletic",
     "size": 14000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1945,14 +1948,14 @@
     },
     "mapX": 420,
     "mapY": 150,
-    "fitOlivier": 49,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 49,
+      "overall": 43,
       "soccer": 62,
       "academic": 60,
-      "minutes": 47,
+      "minutes": 31,
       "lifestyle": 50,
-      "value": 29
+      "value": 26
     },
     "confRecord": [
       {
@@ -2055,50 +2058,52 @@
     "domain": "depaul.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
-      "cleared_before_2027": 5,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Eli Wachs",
-        "Max Padua",
         "Noeh Hernandez",
         "Chase Stegall",
         "Jordan Clagette"
       ],
-      "rising_senior_2027_count": 3,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
+        "Eli Wachs",
+        "Max Padua"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
         "Ronan Selbo",
         "Tyler Flowers",
         "Nathan Laird"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
       "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "10 of 10 current MFs (100%) recruited directly from HS/club with no prior college — no transfers at all on the current roster, per the live 2025 depaulbluedemons.com roster. The most freshman-built midfield in the Big East batch.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 depaulbluedemons.com roster (11 MFs of 29). DePaul's table publishes only #, Name, Class, Pos and Hometown — no previous-school column — so the split cannot be re-derived; classification retained. 3 of 11 MFs are freshmen and the roster is heavily Illinois-sourced, consistent with direct high-school recruiting.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Competing from arrival"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 58,
-          "label": "Established starter"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 72,
-          "label": "Regular starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain / key player"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "Best minutes opportunity in the Big East — 5 of 8 MFs clear. Only 3 senior MFs remain in Yr1 then depart. DePaul is weakest Big East Midwest program (last place twice). Chicago Lincoln Park location is the main draw. Olivier at A-League U18 level can compete immediately."
@@ -2192,20 +2197,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Exercise science and human services pathways. Philadelphia medical district (30 min) for pre-PT clinical access.",
     "soccerLevel": "Big East — Competitive",
-    "cost": "~$72k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
-      "costNum": 72000,
-      "tuition": 55000,
-      "roomBoard": 14000,
-      "fees": 3000,
+      "costNum": 93368,
+      "tuition": 72990,
+      "roomBoard": 19354,
+      "fees": 1024,
       "maxAthletic": 0.8,
       "maxAcademic": 10000,
       "aidType": "athletic",
-      "internationalNote": "Villanova full COA is ~$72k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Catholic mission scholarship may stack. Main Line Philadelphia has moderate-to-high living costs. Merit aid available for strong academic records."
+      "internationalNote": "Villanova direct billed cost $93,368 (2026-27, Tier-1 verified from Villanova's official Cost of Attendance table, Traditional Undergraduate Full-Time Day Program, on/off campus): tuition $72,990 + housing $10,314 + food/meals $9,040 + student services fee $1,024. Villanova lists a $600 books line as billable, but books are excluded by convention; its headline total estimated cost of attendance is $96,886. The previous stored $72,000 was an unresearched ballpark and understated the cost by $21,368 — this makes Villanova the SECOND most expensive school in the guide, behind Princeton. Housing and food are estimates that vary with the room and meal plan chosen, and some programs carry additional fees. Athletic aid is the main lever."
     },
     "aid": "Athletic",
     "size": 7000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.2+",
@@ -2214,14 +2220,14 @@
     },
     "mapX": 522,
     "mapY": 160,
-    "fitOlivier": 46,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 46,
+      "overall": 42,
       "soccer": 62,
       "academic": 65,
-      "minutes": 36,
+      "minutes": 26,
       "lifestyle": 50,
-      "value": 28
+      "value": 25
     },
     "confRecord": [
       {
@@ -2324,12 +2330,12 @@
     "domain": "villanova.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
-      "cleared_before_2027": 4,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
         "Marcello Mazzola",
         "Josh Oladele",
-        "Michael teDuits",
         "Mikhail Zaretser"
       ],
       "rising_senior_2027_count": 1,
@@ -2344,31 +2350,31 @@
       ],
       "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "All 8 current MFs (100%) recruited directly from HS/academy with no prior college — no transfers on the roster, per the live 2025 villanova.com roster.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 villanova.com roster (9 MFs of 25). Villanova's card layout carries a previous-school field but publishes it empty for every midfielder, so the split cannot be re-derived; classification retained. 3 of 9 MFs clear before 2027 against a small returning group, which is a reasonable ratio for a squad this size.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Competing for minutes"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 45,
-          "label": "Pushing into squad"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
-          "label": "Regular starter"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 82,
-          "label": "Key player"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "3 consecutive last-place East Division finishes mean competition quality is lower. 4 MFs clear. 3 rising juniors provide 2 years of competition before departing. Philadelphia medical district (CHOP, Penn Medicine) is the academic draw despite weak soccer."
@@ -2462,7 +2468,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Exercise Science covers anatomy, physiology, biomechanics. Froedtert & Medical College of Wisconsin provides pre-PT clinical access.",
     "soccerLevel": "Big East — Strong",
-    "cost": "~$74k/yr",
+    "soccerLevelShort": "Big East",
     "fin": {
       "costNum": 73840,
       "tuition": 52070,
@@ -2476,6 +2482,7 @@
     "aid": "Athletic",
     "size": 8000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -2484,14 +2491,14 @@
     },
     "mapX": 413,
     "mapY": 140,
-    "fitOlivier": 47,
+    "fitOlivier": 45,
     "lensScores": {
-      "overall": 47,
+      "overall": 45,
       "soccer": 72,
       "academic": 60,
-      "minutes": 31,
+      "minutes": 26,
       "lifestyle": 55,
-      "value": 28
+      "value": 27
     },
     "confRecord": [
       {
@@ -2596,49 +2603,49 @@
     "domain": "marquette.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
-      "cleared_before_2027": 5,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
         "Mateo Stoka",
-        "David Siemionko",
         "Jonathan Monreal-Herrera",
-        "Clayton Hamler",
-        "Hudson Torrez"
+        "Clayton Hamler"
       ],
-      "rising_senior_2027_count": 0,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 3,
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "David Siemionko"
+      ],
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Rio Pehar",
-        "Enkido Hacka",
-        "Liam Cahill"
+        "Hudson Torrez",
+        "Emilio Maldonado Frei"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "9 of 10 current MFs (90%) recruited directly from HS/club with no prior college, per the live 2025 gomarquette.com roster — only Gabriel Miranda transferred in (Salt Lake CC, JUCO).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 gomarquette.com roster (9 MFs of 29). Marquette's table carries no previous-school column, so the split cannot be re-derived; classification retained. 3 of 9 MFs are freshmen, including two internationals (Sweden, Switzerland) recruited straight in, which is consistent with it. 3 of 9 clear before 2027.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
-          "label": "Competing with junior class"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
-          "label": "Building into squad"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 62,
-          "label": "Regular starter"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 82,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
@@ -2780,10 +2787,11 @@
     "acuAlign": 12,
     "acuAlignNote": "Strong alignment — Georgetown's Exercise Science degree covers anatomy, exercise physiology, biomechanics, sport psychology, motor control, research methods and nutrition. Pre-PT advising track explicitly prepares students for DPT admission. DC location provides world-class clinical placement opportunities (Georgetown Hospital, MedStar, GW Hospital). Misses some ACU-specific advanced units and professional experience hours format differs.",
     "soccerLevel": "Big East — D1 Elite. 2019 National Champions. Perennial top-10 program.",
-    "cost": "~$101k/yr",
+    "soccerLevelShort": "Big East",
     "aid": "Athletic + Need-based (Georgetown meets 100% of demonstrated need)",
     "size": 7500,
     "prePT": "Excellent — DC medical network + Georgetown Hospital clinical access",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.5+ recommended (highly selective)",
       "minSchol": "Georgetown meets 100% of need — GPA drives academic standing",
@@ -2828,7 +2836,7 @@
       "fitness": 88
     },
     "devScoresNote": "v42.28 §5a re-baseline (training environment only). ANCHOR — held. Live guhoyas.com MSOC staff: HC Brian Wiese (2019 national champion) + Connor Klekota (Asst) + Mike Montross (Asst) + Brian Bouhl (Asst/Dir of Operations) = 4 full-time coaches, plus Sean Foster (Associate AD for Sports Performance). Stored Tier-1 facilities: Shaw Field 1,625 (small) BUT a well-resourced S&C with GPS tracking (Catapult) and video analysis (Hudl). The sports-science layer (GPS + video + a sports-performance AD) and title-program coaching justify anchor status despite the small stadium. Held at 92/94/88.",
-    "fitOlivier": 55,
+    "fitOlivier": 59,
     "tags": [
       "city",
       "acad",
@@ -2851,50 +2859,69 @@
     "rec": "Georgetown is an elite D.C. program — 2019 national champions, perennial top-10, world-class city location with unmatched clinical placement access. The Exercise Science degree explicitly prepares for DPT programs. The challenge is GPA (2.8 is borderline for admission to a 17% acceptance rate university) and cost ($85k sticker though need-based aid can help). If Olivier's GPA improves to 3.0+ and he can secure an athletic scholarship, Georgetown offers one of the best combinations of soccer, academics, and PT pathway in the country.",
     "url": "https://guhoyas.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 55,
+      "overall": 59,
       "soccer": 92,
       "academic": 95,
       "lifestyle": 50,
-      "minutes": 32,
-      "value": 33
+      "minutes": 43,
+      "value": 35
     },
     "minutesOutlook": {
       "available": true,
-      "cleared_before_2027": 3,
-      "cleared_names": [],
-      "mf_total_2025": 10,
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Eric Howard",
+        "Matthew Van Horn",
+        "Mateo Ponce Ocampo",
+        "Matthew Helfrich",
+        "Jack Heaps"
+      ],
+      "mf_total": 18,
+      "roster_season": "2026-27",
       "recruit_risk": "High",
-      "rising_junior_2027_count": 3,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Casey Milliken",
+        "Noah Satriano",
+        "Loukas Maroutsis",
+        "Charlie Rosenthal"
+      ],
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "All 18 current MFs (100%) recruited directly from HS with no prior college — zero transfers on the roster, per the live 2025 guhoyas.com roster. Consistent with Wiese's long-tenured, nationally/internationally recruiting-driven program (2019 NCAA champions).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 guhoyas.com roster — 18 MFs of a 28-man squad, by far the largest midfield group in this batch. Georgetown's roster table publishes no previous-school column, so the transfer-vs-freshman split cannot be re-derived directly; every one of the 18 lists a high school rather than a college (Shattuck Saint Mary's, St. Alban's, Royal Russell), which is consistent with the retained classification. 5 of 18 are freshmen.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Development year — deep squad"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
-          "label": "Breaking into rotation"
+          "pct": 55,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 72,
-          "label": "Regular starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
           "pct": 85,
-          "label": "Key player"
+          "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "Georgetown is a perennial Big East champion with a deep, technically elite squad. MF competition is intense. Wiese recruits nationally and internationally — Olivier would need to be exceptional to break in early. Years 3-4 are the realistic peak opportunity."
+      "trajectoryNote": "Georgetown is a perennial Big East champion with a deep, technically elite squad. MF competition is intense. Wiese recruits nationally and internationally — Olivier would need to be exceptional to break in early. Years 3-4 are the realistic peak opportunity.",
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Aidan Godinho",
+        "David Urrutia",
+        "Jack Brown",
+        "Zayan Ahmed"
+      ]
     },
     "profileDepth": "full",
     "confKey": "big-east",

@@ -64,10 +64,11 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong alignment — UCA Kinesiology covers anatomy, exercise physiology, biomechanics, resistance training, motor control, and sport psychology. Research methods included. Clinical practicum through UAMS (University of Arkansas for Medical Sciences) network. Missing: environmental physiology and some ACU-specific professional experience hours.",
     "soccerLevel": "ASUN Conference — D1 Mid-Major",
-    "cost": "~$28k/yr",
+    "soccerLevelShort": "ASUN Conference",
     "aid": "Athletic + Merit",
     "size": 11000,
     "prePT": "Strong — UAMS clinical network",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "2.5+ for admission",
       "minSchol": "3.0+ for full academic merit",
@@ -75,14 +76,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 31382,
+      "tuition": 19394,
+      "roomBoard": 11988,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "UCA has a strong international student recruiting history. D1 athletic scholarship combined with academic merit aid creates strong value. Arkansas cost of living is very low — $28k/yr budget stretches significantly further than California or Florida equivalents."
+      "internationalNote": "UCA out-of-state direct billed cost $31,382 (2026-27, Tier-1 verified from UCA Financial Aid's official Cost of Attendance 2026-2027 sheet plus UCA Student Accounts' Fall 2026/Spring 2027 Statement of Fees by Hour): institutional tuition and fees $11,384 + the out-of-state tuition surcharge $8,010 (30 credit hours × $267.00) = $19,394, plus institutional housing and meals $11,988. UCA publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0. NO credit-load assumption was needed: UCA's COA line of $11,384 is exactly 2 × its published 15-hour rate of $5,692, and 30 × $267 = $8,010 reconciles with the COA sheet's own note to 'add $9,010 for Out of State Tuition and Out of State Transportation' — leaving $1,000 of out-of-state transportation, which this guide excludes as indirect. UCA's headline out-of-state on-campus total is about $40,247. The previous stored $28,000 was an unresearched ballpark and understated the cost by $3,382 — the closest any ballpark has come. Still one of the cheapest D1 options in the guide. Athletic + merit aid stack well; Conway, AR has very low living costs."
     },
     "culture": {
       "vibe": "Mid-sized regional university with strong school spirit. Conway is a growing suburb of Little Rock (20 min) — giving reasonable city access without big-city prices. UCA has a tight-knit campus community with strong athletic culture. Kinesiology and health sciences are flagship programs with dedicated student cohorts.",
@@ -112,7 +113,7 @@
       "fitness": 70
     },
     "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live ucasports.com MSOC staff: HC Kyle Segebart + 2 Asst (LaCasto, Montgomery) + Dir of Soccer Ops — 3 coaches, no GK coach; support = one shared AT (Hull: M Soccer/Stunt/Off-Season). Stored Tier-1 facilityDetails: Estes Stadium (1,500, shared multi-use FieldTurf), shared 10k sq ft weight room, basic GPS, Hudl, kinesiology labs (academic). Modest ASUN mid-major environment, everything shared — sits just below the Creighton ~75 anchor; near-unchanged from prior 74.",
-    "fitOlivier": 61,
+    "fitOlivier": 43,
     "tags": [
       "warm",
       "acad",
@@ -133,61 +134,58 @@
     "rec": "UCA is an accessible warm-climate D1 option with a genuinely strong Kinesiology programme and the UAMS clinical network for pre-PT students. Conway is not a major city but Little Rock is 20 minutes away. The $28k/yr price point is among the best in D1. ASUN Conference provides legitimate D1 credentials. Best fit for an athlete who needs affordable D1 entry with strong academic pre-PT infrastructure and a warm climate.",
     "url": "https://ucasports.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 61,
+      "overall": 43,
       "soccer": 62,
       "academic": 72,
-      "minutes": 62,
+      "minutes": 12,
       "lifestyle": 50,
-      "value": 55
+      "value": 42
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
-      "cleared_before_2027": 6,
-      "cleared_names": [
-        "Lucas Shearer (Gr·MID)",
-        "Matheo Francou (Gr·MID)",
-        "Claudel Ngongang (Gr·MID)",
-        "Aby Gomez (Sr·MID)",
-        "Kaisei Matsudo (Jr·D/M)",
-        "Jordan Gaona (Jr·MID)"
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 0,
+      "cleared_names": [],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Rico Duggan",
+        "Tristan Amezcua"
       ],
-      "rising_senior_2027_count": 0,
-      "rising_senior_2027_names": [],
       "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Vaclav Kozeny (Fr·MID)",
-        "Samuel Switzer (Fr·MID)",
-        "Garner Wolfe (Fr·MID)"
+        "Garner Wolfe",
+        "Vaclav Kozeny",
+        "Samuel Switzer"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025 ucasports.com roster: of 10 MFs, only 2 came via transfer (Shearer from Robert Morris, Gomez from Utah Tech) — the other 8, a heavily international group (Belgium, France, Czech Republic, Japan), arrived as true freshmen.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 ucasports.com roster (9 MFs of 27). UCA combines hometown and previous club in one column, and 7 of the 9 entries are CLUBS (New Mexico United, SalPa, FK Dukla Prague, Grindavik, Kungsangens IF, GFI Academy, Little Rock Rangers). Only 2 are colleges — William Carey (NAIA) and Irvine Valley College (JUCO) — so the international-club route dominates and Freshman-friendly holds. Note NO midfielder graduates before Olivier's 2027 entry: the whole group returns, which drives the opportunity score to zero despite the accessible recruiting route.",
       "trajectoryNote": "Outstanding opening — 6 of 9 MFs (67%) clear before Olivier arrives, including 3 graduate students. Zero current sophomores in MF means NO 2027 seniors blocking him. Coach must recruit 4-6 central midfielders in 2026+2027 classes — Olivier can position himself as the standout international recruit for those spots. Highest MF opportunity of any D1 in the guide. High recruit risk = real competition for those open spots from the portal.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 55,
-          "label": "Competitive for immediate starts"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 72,
-          "label": "Established starter"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 85,
-          "label": "Key player"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 92,
-          "label": "Captain candidate"
+          "pct": 65,
+          "label": "Established starter"
         }
       ]
     },
@@ -285,10 +283,11 @@
     "acuAlign": 14,
     "acuAlignNote": "Full alignment — GCU's BS Exercise Science: Pre-Physical Therapy emphasis is purpose-built for DPT pathways. Required courses include anatomy with cadavers (BIO-210/211), exercise physiology (EXS-340), kinesiology/biomechanics (EXS-335 + lab), resistance training (EXS-250), motor control and learning (EXS-305 — standalone required course), lifespan development (PSY-357), corrective exercise (EXS-318), research methods (EXS-485), and special populations (EXS-344). Sport psychology is partially covered via health promotion (EXS-430). Only gap is no mandatory clinical practicum equivalent to EXSC398. Banner Health clinical network provides strong placement access.",
     "soccerLevel": "WAC Conference — D1 Mid-Major",
-    "cost": "~$38k/yr",
+    "soccerLevelShort": "WAC Conference",
     "aid": "Athletic + Merit",
     "size": 25000,
     "prePT": "Strong — Banner Health clinical network",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "2.5+",
       "minSchol": "3.0+ for academic merit",
@@ -296,14 +295,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 38000,
-      "tuition": 28000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 29282,
+      "tuition": 16500,
+      "roomBoard": 11362,
+      "fees": 1420,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "GCU actively recruits international athletes and provides strong athletic scholarship packages. Online degree option available (not recommended for athlete experience). Campus cost of living in Phoenix is moderate."
+      "internationalNote": "GCU direct billed cost $29,282 (2026-27, effective Fall 2026, Tier-1 verified from GCU's official Cost of Attendance table, Traditional On-Campus undergraduate / General / Living On Campus): tuition $16,500 + housing $7,962 + food $3,400 + other fees (student activity, facility, health, technology) $1,420. GCU's own headline academic-year total is $33,646, adding books, personal expenses, transport and a loan-origination fee that this guide excludes. GCU is PRIVATE with a flat block rate and NO resident/non-resident split — its campus tuition has been frozen at $16,500 since 2009, which is why it is now the cheapest four-year school in this guide by direct cost. NOTE: some programs carry a 'program premium' of $500 or $2,000 a year on top; confirm against the chosen degree. The previous stored $38,000 was an unresearched ballpark and OVERstated the cost by $8,718. GCU actively recruits international athletes and provides strong athletic scholarship packages; more than 92% of traditional students receive institutional scholarships. Phoenix cost of living is moderate."
     },
     "confRecord": [
       {
@@ -358,14 +357,14 @@
       "fitness": 78
     },
     "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live gculopes.com MSOC staff: HC Jamie Davies + 2 Asst (McCall, Garrihy) + Coordinator of Operations — 3 coaches, no GK coach (shallower coaching than Akron/Denver). Stored Tier-1 facilityDetails: dedicated 6,000-seat GCU Soccer Stadium (2016, one of the best mid-major venues), 65,554 sq ft Lopes Performance Center (shared all athletics) + satellite sports med at the soccer stadium, documented GPS/Hudl/HR monitoring — elite facilities drive a high technical score. Shared S&C and thin coaching pull the average below the facility level; prior devAvg 82 over-weighted fitness at 85.",
-    "fitOlivier": 69,
+    "fitOlivier": 60,
     "lensScores": {
-      "overall": 69,
+      "overall": 60,
       "soccer": 80,
       "academic": 75,
       "lifestyle": 55,
-      "minutes": 52,
-      "value": 52
+      "minutes": 26,
+      "value": 53
     },
     "tags": [
       "warm",
@@ -392,50 +391,50 @@
     "mapY": 231,
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 6,
-      "cleared_before_2027": 4,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
         "Martin Luala",
-        "Jorge Lopez",
+        "Jorge Lopez"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
         "Damon Rouse",
         "Cruzeiro Cruz"
       ],
-      "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [
-        "Toto Salama"
-      ],
       "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
-        "Joao Goncalinho"
+        "Toto Salama"
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 gculopes.com roster: of 6 MFs, only 1 (Luala, a transfer from Washington) came via the portal — the other 5 (Cruz, Goncalinho, Lopez, Rouse, Salama) arrived as true freshmen. Separate from this pathway classification: new coach will reshape the roster — recruiting risk assessment reflects this coaching transition.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 gculopes.com roster (7 MFs of 26). GCU's table carries no previous-school column, so the classification is retained rather than re-derived and should be treated as lower-confidence. Small midfield group with an even spread — 2 clear, 2 rising seniors, 3 underclassmen.",
       "trajectoryNote": "Davies' rebuild means 2026 recruiting class is entirely his own vision. Roster reset under new coach creates opportunity but also uncertainty. GCU has history of signing international players — Olivier profile fits the recruitment pattern.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 45,
-          "label": "Squad rotation — new-coach rebuild"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 62,
-          "label": "Regular contributor"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 76,
+          "pct": 60,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 88,
-          "label": "Key player"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ]
     },
@@ -550,10 +549,11 @@
     "acuAlign": 13,
     "acuAlignNote": "Strong alignment — Akron Exercise Science covers anatomy, exercise physiology, biomechanics, motor control, resistance training, sport psychology, and research methods. Explicit Pre-PT concentration available. Cleveland Clinic and Summa Health System provide clinical placement — among the best pre-PT clinical networks in the Midwest.",
     "soccerLevel": "MAC Conference — D1 elite program, historically top-10 nationally",
-    "cost": "~$32k/yr",
+    "soccerLevelShort": "MAC Conference",
     "aid": "Athletic + Merit",
     "size": 19000,
     "prePT": "Excellent — Cleveland Clinic + Summa Health clinical network",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "2.0 (very accessible)",
       "minSchol": "2.5+ for merit aid",
@@ -561,14 +561,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 32000,
-      "tuition": 20000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 35222,
+      "tuition": 21826,
+      "roomBoard": 13396,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "Akron has strong scholarship packages for international athletes. Public university pricing is very competitive — one of the best value D1 options in the guide. Ohio cost of living is moderate."
+      "internationalNote": "Akron out-of-state direct billed cost $35,222 (2026-27, Tier-1 verified from Akron's official Cost of Attendance page, 2026-27 Main Campus Out-of-State, on campus): tuition and fees $21,826 + food and housing $13,396. Akron publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0; the sum invariant still holds. Its headline out-of-state on-campus total is $40,050, adding books, transportation and personal expenses that this guide excludes. The previous stored $32,000 was an unresearched ballpark and understated the cost by $3,222. Akron remains one of the cheapest D1 options in the guide. Athletic scholarship can cover a large share; note Akron's Tuition Guarantee (four years of fixed rates) applies to OHIO residents only."
     },
     "confRecord": [
       {
@@ -624,14 +624,14 @@
       "fitness": 74
     },
     "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live gozips.com MSOC staff: HC Jared Embick + Assoc HC Coppinger + 2 Asst (Nanchoff [ex-Akron/MLS], Schmidt) + a General Manager — deep, decorated full-time coaching. Sports Performance is a shared 3-person department (Sahlfeld/Walker/Poptic) across all athletics, NO soccer-dedicated S&C or sports scientist; Sports Med does list a dedicated MSOC assistant trainer (Draper) + dietician. Stored Tier-1 facilityDetails: FirstEnergy Soccer Complex — dedicated 5,800-seat soccer-specific stadium on a 23-acre complex + indoor winter facility. 2010 national title + MLS pipeline are results, excluded — prior devAvg 85 had smuggled them in; fitness trimmed to reflect shared (not dedicated) S&C.",
-    "fitOlivier": 59,
+    "fitOlivier": 53,
     "lensScores": {
-      "overall": 59,
+      "overall": 53,
       "soccer": 90,
       "academic": 82,
       "lifestyle": 50,
-      "minutes": 48,
-      "value": 50
+      "minutes": 31,
+      "value": 45
     },
     "tags": [
       "city",
@@ -658,53 +658,51 @@
     "mapY": 156,
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 10,
-      "cleared_before_2027": 5,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Joshua Bartels",
-        "Tyler Morck",
         "Jack Sullivan",
-        "Matt Dreas",
-        "Jack Roman"
+        "Francisco Tolaba",
+        "Matt Dreas"
       ],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Braxton Hayes",
-        "Thomas O'Rourke"
+        "Tyler Morck",
+        "Jack Roman"
       ],
-      "rising_junior_2027_count": 3,
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Leo Morana",
-        "Noa Testa",
-        "Londen Sears"
+        "Thomas O’Rourke",
+        "Braxton Hayes"
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 gozips.com roster: of 9 MFs, only 2 came via transfer (Morck from St. John's, Sullivan from Saint Louis) — the other 7, including a Swiss international (Testa), arrived as true freshmen. Elite program with high international recruiting competition, but the pathway in is still predominantly freshman recruiting, not the portal.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gozips.com roster (11 MFs of 29). NOT ONE of the 11 MFs lists a previous college — the previous-school column is published and is empty for every midfielder. That is the purest freshman-intake midfield in this batch and the strongest possible confirmation of the stored classification. Akron does not use the portal for midfielders.",
       "trajectoryNote": "Akron's MLS pipeline means roster competition is genuine. However, MAC quality is accessible for an 8/10 international CM — Embick regularly develops international players into starters. Years 1-2 rotation realistic if Olivier impresses in preseason.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Squad rotation — competitive roster"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 60,
-          "label": "Regular contributor"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 75,
-          "label": "Likely starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 88,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ]
@@ -819,10 +817,11 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong alignment — Denver Kinesiology covers anatomy, exercise physiology, biomechanics, motor control, sport psychology, and research methods. NSCA certification preparation integrated. Note: degree launched 2023 — newer program with growing infrastructure. Clinical placement developing through Swedish Medical Center and Denver Health.",
     "soccerLevel": "Summit League (2025), moving to West Coast Conference (2026) — D1 elite",
-    "cost": "~$62k/yr",
+    "soccerLevelShort": "Summit → WCC 2026",
     "aid": "Athletic + Merit",
     "size": 12000,
     "prePT": "Good — Swedish Medical Center clinical network",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8+",
       "minSchol": "3.0+ for merit aid",
@@ -830,14 +829,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 62000,
-      "tuition": 48000,
-      "roomBoard": 12000,
-      "fees": 2000,
+      "costNum": 84119,
+      "tuition": 63720,
+      "roomBoard": 18815,
+      "fees": 1584,
       "maxAthletic": 0.85,
       "maxAcademic": 15000,
       "aidType": "athletic+merit",
-      "internationalNote": "DU is a private university with a strong merit aid program. Athletic + academic scholarships can be stacked. Denver cost of living is moderate-high. International students well-supported — DU has a large international student community (~15%)."
+      "internationalNote": "Denver direct billed cost $84,119 (2026-27, Tier-1 verified from DU Financial Aid's official Cost of Attendance example, Enrolled Full Time and Living On Campus, academic year): tuition $63,720 + fees $1,584 + housing $11,283 + food $7,532 — which is exactly DU's own 'Billable Costs' subtotal row. DU runs on QUARTERS (fall, winter, spring): the flat full-time rate is $21,240 a quarter for 12-18 credits, so the annual figure is three quarters, not two semesters. Its headline cost of attendance is $87,581, adding books, transportation, personal expenses and loan fees that this guide excludes; the $2,200 health insurance is billable but waivable with other cover and is also excluded. The previous stored $62,000 was an unresearched ballpark and understated the cost by $22,119. Denver is a high-sticker private; athletic aid is the main lever."
     },
     "confRecord": [
       {
@@ -892,14 +891,14 @@
       "fitness": 78
     },
     "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live denverpioneers.com MSOC staff: HC Jamie Franks (endowed Weinberg chair, ex-Wake Forest technical pedigree) + Assoc HC Brad Franks + Asst Arenas + a dedicated Goalkeeper Coach (Lissek) — 4 full-time incl position-specific coaching. Stored Tier-1 facilityDetails: dedicated CIBER Field soccer stadium (2009) + indoor turf + a purpose-built 10,000 sq ft S&C facility built UNDER the stadium seating (a genuinely dedicated soccer S&C space, above the shared norm) + GPS/video. Strong environment; prior devAvg 84 was partly results-driven.",
-    "fitOlivier": 55,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 55,
+      "overall": 47,
       "soccer": 86,
       "academic": 72,
       "lifestyle": 50,
-      "minutes": 43,
-      "value": 33
+      "minutes": 21,
+      "value": 28
     },
     "tags": [
       "city",
@@ -925,54 +924,50 @@
     "mapY": 192,
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 11,
-      "cleared_before_2027": 4,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
         "David Biggers",
-        "Holger Olsson",
         "Luke Schultz",
-        "Aidan Semelsberger"
+        "Holger Olsson"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 7,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Brett Phan",
-        "Ethan Orchard",
         "Andrew Mann",
         "Hudson Tate",
-        "Logan Isaacson",
-        "Jon Fritcher",
         "Anthony Masino"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 denverpioneers.com roster: all MFs (10, including internationals from Sweden and New Zealand) list only an HS/club background — no 'Previous School' transfer indicator anywhere on the roster. Elite program — WCC move elevates competition, but recruiting remains true-freshman-driven, not portal-based.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 denverpioneers.com roster (9 MFs of 28). Denver publishes no previous-school column, so the split cannot be re-derived; classification retained and flagged lower-confidence. Note NO midfielder is a junior — 3 clear before 2027 and the remaining 6 are all sophomores and freshmen who return through 2029 and beyond.",
       "trajectoryNote": "DU's move to WCC in 2026 raises the program's ambition and recruiting level. Olivier would enter a program in transition to a higher conference — opportunity if he earns trust early, but competition will intensify.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Squad rotation — strong roster"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Breaking into rotation"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 72,
-          "label": "Regular contributor"
+          "pct": 55,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Key player"
+          "pct": 75,
+          "label": "Established starter"
         }
       ]
     },
@@ -1086,10 +1081,11 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong alignment — UVM Kinesiology covers anatomy, exercise physiology, biomechanics, sport psychology, and research methods. UVM Medical Center provides clinical access. Reasonable pre-PT pathway.",
     "soccerLevel": "America East Conference — D1, 2024 NCAA National Champions",
-    "cost": "~$66k/yr",
+    "soccerLevelShort": "America East Conference",
     "aid": "Athletic + Merit",
     "size": 13000,
     "prePT": "Good — UVM Medical Center",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8+",
       "minSchol": "3.0+",
@@ -1158,14 +1154,14 @@
       "fitness": 72
     },
     "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live uvmathletics.com MSOC staff: HC Adrian Dubois + Assoc HC Brent + 2 Asst (Twomey, Vargas) + Dir of Ops — a deep 4-coach staff (no GK coach); support = shared AT (Tremel: M Soccer/Skiing) + a shared Assistant Athletic Performance Coach (Fleischman). Stored Tier-1 facilityDetails: Virtue Field — dedicated 2,600 natural-grass venue, indoor facility essential for Vermont winters, no GPS listed. Solid America East environment; near-unchanged from prior 73 (fitness trimmed from 78 to reflect shared, not dedicated, performance staff).",
-    "fitOlivier": 54,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 54,
+      "overall": 52,
       "soccer": 72,
       "academic": 62,
       "lifestyle": 50,
-      "minutes": 49,
-      "value": 32
+      "minutes": 43,
+      "value": 31
     },
     "tags": [
       "soccer"
@@ -1288,55 +1284,55 @@
     "mapY": 112,
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 11,
-      "cleared_before_2027": 5,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
-        "Connor Thompson",
-        "Andrew Millar",
-        "Niels Hartman",
-        "Marcos Blasco",
+        "Ezra Widman",
+        "Halim Bangura",
+        "Noel Bjork",
         "Jeremy Tsang"
       ],
       "recruit_risk": "Medium",
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
         "Gabriel Chavez",
+        "Luis Vetter",
         "Nash Barlow"
       ],
-      "rising_junior_2027_count": 2,
+      "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
-        "Shalom Adja",
-        "Gavin Stevenson"
+        "Shalom Adja"
       ],
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Squad rotation — 5 MF slots clearing"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 62,
-          "label": "Regular contributor"
+          "pct": 55,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 78,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 88,
-          "label": "Key player"
+          "pct": 85,
+          "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "5 of 11 MF (3 Gr + R-Jr + Jr) clear before 2027. Loebus + Zellefrow transferred to UNC; net 2 rising jr, 2 rising sr remaining.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025 uvmathletics.com roster: of 11 MFs, only 1 (Chavez, a transfer from Providence College) came via the portal — the other 10, a heavily international group (Gibraltar, Spain, Germany, Hong Kong), arrived as true freshmen. Note: Loebus and Zellefrow are listed elsewhere as departing TO UNC, which is a roster outflow, not part of this incoming-pathway count."
+      "recruit_pathway_note": "Re-read on the live 2026-27 uvmathletics.com roster (9 MFs of 30). Vermont publishes no previous-school column, so the split cannot be re-derived; classification retained, lower-confidence. Strong 2027 shape: 4 of 9 clear before Olivier arrives and 3 more are rising seniors, leaving only 2 underclassmen behind them."
     },
     "culture": {
       "vibe": "Small New England university with exceptional natural beauty and a campus that rallied behind its soccer team to produce a historic national championship. Burlington is a progressive, outdoorsy college town on Lake Champlain.",
@@ -1425,10 +1421,11 @@
     "acuAlign": 9,
     "acuAlignNote": "Strong coverage of anatomy, physiology, biomechanics, exercise testing, and clinical internship. School of Health Professions provides direct Pre-DPT advising. Missing some ACU elective units.",
     "soccerLevel": "D1 — NEC. Won the NEC regular-season title in its first D1 season (2024). Provisional D1 until 2028–29.",
-    "cost": "~$64k/yr",
+    "soccerLevelShort": "NEC",
     "aid": "Athletic + Merit",
     "size": 3200,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.3 NCAA D1 core minimum",
       "minSchol": "2.8+ for merit stacking",
@@ -1474,14 +1471,14 @@
     },
     "devScoresNote": "v42.25 §5a re-baseline (training environment only). Live hurstathletics.com MSOC staff: HC Austin Solomon + Asst Bennett + Asst/Player-Development (McFadden) + a GK Coach (Kinyo) — 4 coaches incl position-specific, decent for the level; support lists only an Equipment Manager (no soccer AT or S&C). Stored Tier-1 facilityDetails: small dedicated 500-seat Mercyhurst Soccer Complex + 2 practice fields + indoor, shared Hammermill Center weight room, Exercise Science academic labs (students assist), no GPS/video. Genuinely modest former-D2 program reclassifying to D1/NEC — D1 has no floor. Reclassification status and results excluded; prior devAvg 70 over-rated the environment.",
     "lensScores": {
-      "overall": 33,
+      "overall": 37,
       "soccer": 78,
       "academic": 70,
-      "minutes": 23,
+      "minutes": 33,
       "lifestyle": 0,
-      "value": 20
+      "value": 22
     },
-    "fitOlivier": 33,
+    "fitOlivier": 37,
     "tags": [
       "acad",
       "soccer"
@@ -1567,48 +1564,58 @@
     ],
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 14,
-      "cleared_before_2027": 4,
+      "mf_total": 18,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Jared Rimmer (Sr·M)",
-        "Senior MF departing ×3"
+        "Alvar Silva",
+        "Jo Hanamoto"
       ],
-      "rising_senior_2027_count": 3,
+      "rising_senior_2027_count": 7,
       "rising_senior_2027_names": [
-        "2025 juniors → seniors by 2027"
+        "Ronny Wakelin",
+        "Santiago Bustamante",
+        "Jero Bencomo",
+        "Rowan Slater",
+        "Paul Shaw",
+        "Kyle Joyce",
+        "Harrison Frearson"
       ],
       "rising_junior_2027_count": 4,
       "rising_junior_2027_names": [
-        "2025 sophomores → juniors by 2027"
+        "Santiago Giraldo",
+        "Tyler Prex",
+        "Vincent Armstrong",
+        "Tyler Hunter"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 hurstathletics.com roster (large squad, ~20 MF/D-MF/MF-F spots): roughly 4 came via transfer (Santos from D'Youville, Bustamante from Francis Marion, Hanamoto from Lane Community College — a JUCO, Corletto from St. Bonaventure) — the large majority arrived as true freshmen from an unusually wide international spread (UK, Colombia, Spain, Japan, Italy, Argentina, South Africa). Consistent with a program that recruits broadly rather than relying on the portal.",
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 hurstathletics.com roster — 18 MFs inside a 57-man squad, by far the largest roster in the guide (verified twice, via the card layout and the roster table independently). Only 2 of 18 list a previous college: Santiago Bustamante (Francis Marion, 4-year) and Jo Hanamoto (Lane Community College, JUCO). The other 16 came directly from high school or club, so Freshman-friendly holds — but with a 57-man squad and only 2 midfielders clearing before 2027, minutes are the constraint.",
       "trajectoryNote": "Now in its D1 era (NEC since Fall 2024), Mercyhurst is actively expanding roster quality after an 8th-place 2025 followed the title-winning 2024. Ryan Mrvcic (Sydney, Jr.) continues through Yr 1 of Olivier's arrival. Established D1 MF depth limits immediate minutes — trajectory improves as the program settles. NEC is a competitive but not elite D1 conference. Year 3–4 opportunity is real for a quality CM.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 17,
-          "label": "Squad rotation — D1 adjustment"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 32,
-          "label": "Building case for starts"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 70,
-          "label": "Senior leadership role"
+          "pct": 85,
+          "label": "Captain candidate"
         }
       ]
     },
@@ -1648,13 +1655,13 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong kinesiology and applied physiology — anatomy, physiology, biomechanics, exercise science well-covered. Pre-PT pathway supported.",
     "soccerLevel": "Summit League — Mid-Major D1",
-    "cost": "~$38k/yr",
+    "soccerLevelShort": "Summit League",
     "fin": {
-      "costNum": 38000,
-      "internationalNote": "Delaware out-of-state COA is ~$38k/yr (2025-26). Athletic scholarship can cover 40–60% of COA. Merit aid available for international students with 3.0+ GPA. Newark, DE has moderate cost of living. Strong academic reputation and health science programs.",
-      "tuition": 28000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 61634,
+      "internationalNote": "Delaware non-resident direct billed cost $61,634 (2026-27, Tier-1 verified from UD Student Financial Services' official Cost of Attendance table, Newark Campus / Non-Resident column): tuition $42,470 + mandatory full-time fees $2,550 + standard housing $9,286 + standard food $7,328 — which is exactly UD's own 'BILLABLE ACADEMIC YEAR TOTAL' row. Its headline total COA is $65,884, adding books, personal, transport and loan fees that this guide excludes. The previous stored $38,000 was an unresearched ballpark and understated the cost by $23,634 — the LARGEST error found anywhere in this campaign, ahead of PBA's $22,300. Delaware is an expensive out-of-state public, not a cheap one. Athletic scholarship can cover 40–60% of COA. Merit aid available for international students with 3.0+ GPA. Newark, DE has moderate cost of living. Strong academic reputation and health science programs. Lerner College programs carry an extra differential charge.",
+      "tuition": 42470,
+      "roomBoard": 16614,
+      "fees": 2550,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic"
@@ -1662,6 +1669,7 @@
     "aid": "Athletic",
     "size": 23000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1670,14 +1678,14 @@
     },
     "mapX": 525,
     "mapY": 164,
-    "fitOlivier": 38,
+    "fitOlivier": 36,
     "lensScores": {
-      "overall": 38,
+      "overall": 36,
       "soccer": 65,
       "academic": 62,
-      "minutes": 30,
+      "minutes": 21,
       "lifestyle": 0,
-      "value": 34
+      "value": 22
     },
     "confRecord": [
       {
@@ -1744,37 +1752,40 @@
     "domain": "udel.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 4,
+      "mf_total": 9,
+      "roster_season": "2026-27",
       "cleared_before_2027": 2,
       "cleared_names": [
         "Rich Monath",
-        "Rocco Pastore"
+        "Jayden Jackson"
       ],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Liam Penny",
-        "Freddy Jeffreys"
+        "Freddy Jeffreys",
+        "Rocco Pastore"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Liam Penny"
+      ],
       "recruit_risk": "Medium",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Squad rotation"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
-          "label": "Regular contributor"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
@@ -1786,7 +1797,7 @@
       ],
       "trajectoryNote": "Small 4-player MF pool — 2 clear, 2 remain (both So). Only 2 competitors in Year 1, suggesting real starting potential for a quality CMF like Olivier.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 bluehens.com roster: of 9 MFs, only 1 (Jackson, a transfer from Temple) came via the portal — the other 8 arrived as true freshmen."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 bluehens.com roster (9 MFs of 29, up from 4 a year ago). Just 1 of 9 lists a previous college (Jayden Jackson, Temple); the other 8 came straight from high school, and the roster is heavily Mid-Atlantic-sourced (Philadelphia Union Academy, Calvert Hall), consistent with direct high-school recruiting."
     },
     "color": [
       "#fef9c3",

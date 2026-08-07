@@ -64,10 +64,11 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong — anatomy, physiology, biomechanics, sport psych all covered. Motor development/control less structured than at UF or Indiana.",
     "soccerLevel": "Big West — Competitive",
-    "cost": "~$66k/yr",
+    "soccerLevelShort": "Big West",
     "aid": "Athletic + Merit",
     "size": 26000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5 NCAA core (min)",
       "minSchol": "3.3+ for UC fee waiver programs",
@@ -75,14 +76,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 66000,
-      "tuition": 44000,
-      "roomBoard": 18000,
-      "fees": 4000,
+      "costNum": 80928,
+      "tuition": 54858,
+      "roomBoard": 23985,
+      "fees": 2085,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic+merit",
-      "internationalNote": "UCSB out-of-state COA is ~$66k/yr (2025-26). UC nonresident tuition increase applies — same regents policy as UCLA. International students qualify for athletic aid. Athletic package is primary lever. Santa Barbara living costs moderate vs LA."
+      "internationalNote": "UCSB non-resident direct billed cost $80,928 (2026-27, Tier-1 verified from UCSB's official Undergraduate Cost of Attendance Budget, incoming freshman in residence halls): tuition & student services fee $15,588 + non-resident supplemental tuition $39,270 = $54,858, plus rent $13,203 + food $10,782 = $23,985, plus campus-based fees $2,085. UCSB's own headline non-resident total is $90,216, which additionally includes books, transport, health-care allowance and personal expenses that this guide excludes by convention. Previous stored figure ($66,000) was an unresearched ballpark and understated the cost by ~$14,900. International students qualify for athletic aid; the athletic package is the primary lever."
     },
     "culture": {
       "vibe": "Laid-back Californian surf culture. UCSB is famous for its relaxed vibe — students study hard but also surf, bike to class, and socialise on the beach. Isla Vista (adjacent neighbourhood) is one of the most social student areas in California.",
@@ -137,11 +138,12 @@
       "academic": 73,
       "minutes": 34,
       "lifestyle": 95,
-      "value": 37
+      "value": 38
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 11,
+      "mf_total": 11,
+      "roster_season": "2025-26",
       "cleared_before_2027": 3,
       "cleared_names": [
         "Justin Gomes",
@@ -311,20 +313,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong kinesiology — learn-by-doing philosophy. Anatomy, physiology, biomechanics all covered with strong lab component.",
     "soccerLevel": "Big West — Competitive",
-    "cost": "~$32k/yr",
+    "soccerLevelShort": "Big West",
     "fin": {
-      "costNum": 32000,
-      "tuition": 22000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 58854,
+      "tuition": 37616,
+      "roomBoard": 20338,
+      "fees": 900,
       "maxAthletic": 0.85,
       "maxAcademic": 5000,
       "aidType": "athletic",
-      "internationalNote": "Cal Poly out-of-state COA is ~$32k/yr (2025-26). CSU nonresident tuition is lower than UC campuses. Athletic scholarship can cover a significant portion of costs. Academic merit aid is limited for international students under CSU policy. San Luis Obispo has lower living costs than LA or the Bay Area."
+      "internationalNote": "Cal Poly SLO non-resident direct billed cost $58,854 (2026-27, Tier-1 verified from Cal Poly Financial Aid's official Undergraduate Costs of Attendance 2026-27, New Student enrolling fall 2026, Residence Hall): California base tuition and fees $14,682 for the College of Science and Mathematics (where Kinesiology sits) + non-CA resident tuition $14,130 + the non-CA Resident Opportunity Fee $8,804 = $37,616, plus housing $12,682 and meals $7,656, plus the $450-per-semester international student fee ($900). NO credit-load assumption was needed — Cal Poly itself labels the line '30u @ $471/unit'. ⚠ THE OPPORTUNITY FEE IS THE STORY: $8,804 a year charged only to non-California residents, on top of the per-unit surcharge, and it is easy to miss because it sits in a separate 'in addition to the fees above' table. Cal Poly's own headline non-resident total for this college is $63,238; mandatory international health insurance is extra and excluded by convention. Engineering, Architecture and Agriculture pay $1,038 more. The previous stored $32,000 was an unresearched ballpark and understated the cost by $26,854 — the LARGEST error found anywhere in this campaign. Cal Poly is not a cheap CSU for a non-resident; the value lens falls 44 to 28 accordingly."
     },
     "aid": "Athletic",
     "size": 22000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -333,14 +336,14 @@
     },
     "mapX": 81,
     "mapY": 198,
-    "fitOlivier": 51,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 51,
+      "overall": 47,
       "soccer": 65,
       "academic": 65,
-      "minutes": 42,
+      "minutes": 26,
       "lifestyle": 85,
-      "value": 45
+      "value": 28
     },
     "confRecord": [
       {
@@ -449,52 +452,52 @@
     "domain": "calpoly.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 6,
-      "cleared_before_2027": 4,
+      "mf_total": 5,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Diego Guerra",
-        "Rylan Firouznam",
         "Brandon Newman",
         "Benji Jimenez"
       ],
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Cole Aman"
+        "Diego Guerra",
+        "Rylan Firouznam"
       ],
       "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
-        "Liam Lambert"
+        "Cole Aman"
       ],
       "recruit_risk": "Medium",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Regular contributor"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
-          "label": "Key contributor"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
+          "pct": 60,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "4 of 6 MFs clear (R-Jr×2, Gr, Sr). Only 1 rising senior and 1 rising junior remain — good entry opportunity. Cal Poly's compact squad means Olivier could feature regularly from Year 1.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 gopoly.com roster: of 6 MF/D-MF spots, only 1 is a transfer (Newman, a grad transfer from Columbia) — the other 5 (Guerra, Firouznam, Jimenez, Lambert, Aman) arrived as true freshmen, several straight from MLS academy/USL sides (Portland Timbers2, San Jose Earthquakes II) rather than 4-year or JUCO transfer."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gopoly.com roster (5 MFs of 26). Cal Poly's column is headed 'Previous School/Club' and all 5 MFs have an entry, but 4 of them are CLUBS, not colleges (Portland Timbers2, San Jose Earthquakes II, Pateadores SC x2). Only Brandon Newman (Columbia) is a genuine college transfer, so the midfield is club/academy-sourced and the Freshman-friendly classification holds. Smallest midfield group in the batch."
     },
     "acuUnits": [
       {
@@ -585,20 +588,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Exercise Biology covers anatomy, physiology, biomechanics, motor learning. UC Davis Medical Center provides strong clinical access for pre-PT.",
     "soccerLevel": "Big West — Competitive",
-    "cost": "~$58k/yr",
+    "soccerLevelShort": "Big West",
     "fin": {
-      "costNum": 58000,
-      "tuition": 42000,
-      "roomBoard": 13000,
-      "fees": 3000,
+      "costNum": 79690,
+      "tuition": 54858,
+      "roomBoard": 22157,
+      "fees": 2675,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "UC Davis out-of-state COA is ~$58k/yr (2025-26). UC nonresident tuition surcharge applies. Athletic scholarship can cover 30–50% of COA. Academic merit limited for international students under UC policy. Davis has moderate cost of living relative to Bay Area campuses."
+      "internationalNote": "UC Davis non-resident direct billed cost $79,690 (2026-27, Tier-1 verified from UC Davis Financial Aid's official Cost of Attendance for students entering 2026-27, on-campus residence hall column): systemwide tuition and fees $15,588 + non-resident supplemental tuition $39,270 = $54,858, plus campus housing and food $22,157, plus campus-based fees $2,490 and the $185 document fee. Stored on the same basis as UCSB. UC Davis' own headline non-resident total is $88,279, which adds books, personal expenses, transportation and the waivable $3,924 health-insurance premium that this guide excludes. UC's Tuition Stability Plan freezes SYSTEMWIDE tuition and fees for up to six years from first enrolment — campus fees, housing and insurance are not covered and still rise annually. The previous stored $58,000 was an unresearched ballpark and understated the cost by $21,690. International students are ineligible for federal and California state aid, so athletic scholarship is the only real lever."
     },
     "aid": "Athletic",
     "size": 39000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -607,14 +611,14 @@
     },
     "mapX": 77,
     "mapY": 172,
-    "fitOlivier": 44,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 44,
+      "overall": 47,
       "soccer": 62,
       "academic": 70,
-      "minutes": 21,
+      "minutes": 26,
       "lifestyle": 60,
-      "value": 26
+      "value": 28
     },
     "confRecord": [
       {
@@ -719,54 +723,56 @@
     "domain": "ucdavis.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 8,
-      "cleared_before_2027": 3,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Gabriel Haggerty",
-        "Declan Horio",
-        "Cole Powell"
+        "Declan Horio"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
-        "Jackson Richardson",
-        "Cole McLemore"
+        "Gabriel Haggerty",
+        "Tristan Wouters",
+        "Rafael Matiello",
+        "Ben Elkins"
       ],
-      "rising_junior_2027_count": 3,
+      "rising_junior_2027_count": 4,
       "rising_junior_2027_names": [
-        "Diego Orosco",
-        "Ronaldo Melgoza",
-        "Chris Aguilar"
+        "Derrick Green",
+        "Ensio Sardans",
+        "Jackson Richardson",
+        "Kota Brown"
       ],
       "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 12,
-          "label": "Fringe squad"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 25,
-          "label": "Regular contributor"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
-          "label": "Key contributor"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 75,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "Only 3 of 8 MFs clear — 5 remain across Year 1-2 including 3 rising juniors. Competitive midfield at a strong academic school. Opportunity opens more in Year 3+.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2026 ucdavisaggies.com roster: of 9 MF/D-MF spots, only 1 (Elkins, a transfer from Gonzaga) came via transfer — the rest, including international recruit Matiello (Brazil), arrived as true freshmen straight from HS. UC Davis' selective UC academics don't appear to suppress freshman midfield recruiting."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 ucdavisaggies.com roster (9 MFs of 36 — the largest squad in the batch outside Mercyhurst). Only 1 of 9 lists a previous college (Ben Elkins, Gonzaga); the other 8 came straight from high school or club. Strongly 2028-shaped: just 1 MF clears before 2027, but 4 more graduate the following year."
     },
     "acuUnits": [
       {
@@ -857,21 +863,21 @@
     "acuAlign": 11,
     "acuAlignNote": "Exercise science covers anatomy, physiology, biomechanics. UC Irvine Medical Center provides strong pre-PT clinical access.",
     "soccerLevel": "Big West — Competitive",
-    "cost": "~$55k/yr",
+    "soccerLevelShort": "Big West",
     "fin": {
-      "costNum": 81292,
-      "tuition": 56682,
-      "roomBoard": 19500,
-      "fees": 5110,
+      "costNum": 80203,
+      "tuition": 54858,
+      "roomBoard": 20926,
+      "fees": 4419,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "UC Irvine nonresident COA is ~$81k/yr (2025-26 federal COA including room, board, and indirect costs). UC nonresident tuition surcharge applies. Athletic scholarship can cover 30-50% of COA. Academic merit limited for international students under UC policy. Orange County location with moderate-to-high living costs.",
-      "cost": "~$73k/yr"
+      "internationalNote": "UC Irvine non-resident direct billed cost $80,203 (2026-27, Tier-1 verified from UCI Financial Aid's official Estimated Budgets for 2026-27 New Undergraduate Students, Living On Campus column): systemwide fees $15,588 + non-resident tuition and fees $39,270 = $54,858, plus housing and food $20,926, plus campus fees $4,419. Stored on the same basis as UCSB, UCLA and UC Davis. UCI's own resident total for this column is $46,007, so the non-resident total is $85,277; the difference from the figure here is books, personal expenses and transportation, excluded by convention. UCI's budget table lists no separate health-insurance line, so UC SHIP is not deducted here — confirm whether it sits inside the $4,419 campus fees before budgeting. ⚠ This replaces a figure §6 had flagged since v38 as an ESTIMATE pending Tier-1 confirmation (roomBoard was a round $19,500); the old $81,292 was overstated by $1,089 and the components were all slightly wrong. International students are ineligible for federal and California state aid, so athletic scholarship is the only real lever; Orange County living costs are high."
     },
     "aid": "Athletic",
     "size": 36000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -885,7 +891,7 @@
       "overall": 59,
       "soccer": 65,
       "academic": 68,
-      "minutes": 42,
+      "minutes": 38,
       "lifestyle": 84,
       "value": 35
     },
@@ -994,19 +1000,19 @@
     "domain": "uci.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
-      "cleared_before_2027": 5,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
         "Hunny Yoo",
-        "Isaiahs Gutierrez",
-        "Justin Conyers",
+        "Ferri Duran",
         "Isaac Powell",
         "Braden Ferreira"
       ],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Luis Gomez",
-        "Matt Hagan"
+        "Isaiahs Gutierrez",
+        "Cade Williams"
       ],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
@@ -1016,19 +1022,19 @@
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
           "pct": 30,
-          "label": "Regular contributor"
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 50,
-          "label": "Key contributor"
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Likely starter"
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -1039,7 +1045,7 @@
       ],
       "trajectoryNote": "⚠️ 2025 roster (+1 applied). 5 of 7 MFs clear — only 2 Freshmen (now So) remain. Strong opportunity window. UCI is Anteaters — warm Irvine campus, OC lifestyle.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025 ucirvinesports.com roster: of 7 MFs, only 1 (Yoo, a transfer from Herkimer College, an NJCAA JUCO) came via the portal — the other 6 (Gutierrez, Gomez, Conyers, Powell, Ferreira, Hagan) are true freshmen. Notable contrast with UCI's defense/forward lines, which carry several 4-year transfers (NC State, Pitt, Tulsa) — the transfer emphasis at UCI is not midfield-specific."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 ucirvinesports.com roster (10 MFs of 28). 3 of 10 list a previous school but only 2 are US college transfers, and BOTH are JUCO (Herkimer College, Irvine Valley College) — Ferri Duran's Universitat Autonoma de Barcelona is a Spanish university, not a US soccer transfer. The other 7 came direct, 4 of them current freshmen, so Freshman-friendly holds, but note the live JUCO channel."
     },
     "acuUnits": [
       {
@@ -1130,7 +1136,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Developing program — pre-PT support available.",
     "soccerLevel": "Big West — Developing",
-    "cost": "~$82k/yr",
+    "soccerLevelShort": "Big West",
     "fin": {
       "costNum": 82441,
       "tuition": 52536,
@@ -1144,6 +1150,7 @@
     "aid": "Athletic",
     "size": 26000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1157,7 +1164,7 @@
       "overall": 48,
       "soccer": 55,
       "academic": 60,
-      "minutes": 42,
+      "minutes": 38,
       "lifestyle": 55,
       "value": 29
     },
@@ -1262,41 +1269,43 @@
     "domain": "ucr.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 7,
-      "cleared_before_2027": 5,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Tarek Hamideh",
-        "Ethan Gonzalez",
         "Jona Martinez",
-        "Diego Ramirez",
-        "Kevin Meza"
+        "Ethan Gonzalez",
+        "Diego Ramirez"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Silvio Termini",
+        "Tarek Hamideh",
+        "Diego Esquivel",
+        "Noa Wada"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
         "Adrian Diaz"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
       "recruit_risk": "Low",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
           "pct": 30,
-          "label": "Regular contributor"
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
           "pct": 50,
-          "label": "Key contributor"
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Likely starter"
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -1307,7 +1316,7 @@
       ],
       "trajectoryNote": "⚠️ 2025 roster (+1 applied). 5 of 7 CMs/MFs clear — strong turnover. Only 2 Freshmen (now So) compete in Year 1. Riverside campus inland SoCal, warm.",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Live 2026 gohighlanders.com roster: of 7 CM spots, 2 came via transfer (Gonzalez from UNLV, Meza from Cerritos College, a JUCO) — the other 5 (Hamideh, Martinez, Termini, Ramirez, Diaz) are true freshmen. UCR's roster overall leans heavily on transfers at other positions (Keiser, Mt. SAC, USC Aiken all represented), but the CM group itself splits close to 70/30 freshman-to-transfer."
+      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gohighlanders.com roster (8 MFs of 32). 2 of 8 are college transfers and they split across both routes — Ethan Gonzalez from UNLV (4-year) and Diego Esquivel from Cuyamaca CC (JUCO) — which is exactly the Mixed profile already stored. The other 6 arrived from high school or club sides."
     },
     "acuUnits": [
       {
@@ -1398,7 +1407,7 @@
     "acuAlign": 12,
     "acuAlignNote": "Exercise and Rehabilitative Sciences — one of the most PT-aligned degrees in the UC system. Anatomy, physiology, biomechanics, clinical rehabilitation all covered. UCSD Health for clinical access.",
     "soccerLevel": "Big West — Competitive",
-    "cost": "~$80k/yr",
+    "soccerLevelShort": "Big West",
     "fin": {
       "costNum": 79808,
       "tuition": 51204,
@@ -1412,6 +1421,7 @@
     "aid": "Athletic",
     "size": 33000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.2+",
@@ -1532,7 +1542,8 @@
     "domain": "ucsd.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 9,
+      "mf_total": 9,
+      "roster_season": "2025-26",
       "cleared_before_2027": 7,
       "cleared_names": [
         "Nolan Sanchez",
@@ -1670,20 +1681,21 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Orange County clinical network for pre-PT placement.",
     "soccerLevel": "Big West — Developing",
-    "cost": "~$28k/yr",
+    "soccerLevelShort": "Big West",
     "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 42292,
+      "tuition": 19084,
+      "roomBoard": 21530,
+      "fees": 1678,
       "maxAthletic": 0.85,
       "maxAcademic": 4000,
       "aidType": "athletic",
-      "internationalNote": "CSUF out-of-state COA is ~$28k/yr (2025-26) — one of the more affordable D1 options. CSU nonresident tuition is capped lower than the UC system. Athletic scholarship can cover a significant portion. Academic merit is limited for international students under CSU policy."
+      "internationalNote": "Cal State Fullerton non-resident direct billed cost $42,292 (2026-27, Tier-1 verified from CSUF Financial Aid's official 2026-27 Undergraduate Cost of Attendance table, Non-California Resident Students / On-Campus residence hall column): non-resident tuition $12,246 + mandatory tuition $6,838 (stored together under `tuition` = $19,084, as the CSU splits the systemwide base from the per-unit non-resident surcharge) + campus fees $1,678 + housing $14,890 + food $6,640. CSUF's own headline on-campus non-resident total is $48,394, adding books, miscellaneous, transportation and loan fees that this guide excludes. The non-resident surcharge is $471 a unit and the $12,246 reflects CSUF's OWN stated basis of 13 units a semester — not an assumption made here; a 15-unit load would add about $1,884 a year. The previous stored $28,000 was an unresearched ballpark and understated the cost by $14,292. Orange County living costs are high. Athletic aid is the main lever; CSU merit aid is limited."
     },
     "aid": "Athletic",
     "size": 40000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0",
       "minSchol": "2.3+",
@@ -1699,7 +1711,7 @@
       "academic": 50,
       "minutes": 42,
       "lifestyle": 74,
-      "value": 50
+      "value": 39
     },
     "confRecord": [
       {
@@ -1803,7 +1815,8 @@
     "domain": "fullerton.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total_2025": 10,
+      "mf_total": 10,
+      "roster_season": "2025-26",
       "cleared_before_2027": 7,
       "cleared_names": [
         "Matthew Sacristan",

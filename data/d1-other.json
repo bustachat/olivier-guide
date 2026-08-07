@@ -75,14 +75,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 31382,
+      "tuition": 19394,
+      "roomBoard": 11988,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "UCA has a strong international student recruiting history. D1 athletic scholarship combined with academic merit aid creates strong value. Arkansas cost of living is very low — $28k/yr budget stretches significantly further than California or Florida equivalents."
+      "internationalNote": "UCA out-of-state direct billed cost $31,382 (2026-27, Tier-1 verified from UCA Financial Aid's official Cost of Attendance 2026-2027 sheet plus UCA Student Accounts' Fall 2026/Spring 2027 Statement of Fees by Hour): institutional tuition and fees $11,384 + the out-of-state tuition surcharge $8,010 (30 credit hours × $267.00) = $19,394, plus institutional housing and meals $11,988. UCA publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0. NO credit-load assumption was needed: UCA's COA line of $11,384 is exactly 2 × its published 15-hour rate of $5,692, and 30 × $267 = $8,010 reconciles with the COA sheet's own note to 'add $9,010 for Out of State Tuition and Out of State Transportation' — leaving $1,000 of out-of-state transportation, which this guide excludes as indirect. UCA's headline out-of-state on-campus total is about $40,247. The previous stored $28,000 was an unresearched ballpark and understated the cost by $3,382 — the closest any ballpark has come. Still one of the cheapest D1 options in the guide. Athletic + merit aid stack well; Conway, AR has very low living costs."
     },
     "culture": {
       "vibe": "Mid-sized regional university with strong school spirit. Conway is a growing suburb of Little Rock (20 min) — giving reasonable city access without big-city prices. UCA has a tight-knit campus community with strong athletic culture. Kinesiology and health sciences are flagship programs with dedicated student cohorts.",
@@ -138,7 +138,7 @@
       "academic": 72,
       "minutes": 12,
       "lifestyle": 50,
-      "value": 44
+      "value": 42
     },
     "minutesOutlook": {
       "available": true,

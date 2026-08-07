@@ -1440,14 +1440,14 @@
     "soccerLevel": "AAC — Competitive",
     "cost": "~$28k/yr",
     "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 46700,
+      "tuition": 32490,
+      "roomBoard": 14210,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "UAB out-of-state COA is ~$28k/yr (2025-26) — among the most affordable D1 programs in the guide. Athletic scholarship can cover 40–70% of COA. Merit aid available for international students. Birmingham has very low cost of living — net cost is highly competitive."
+      "internationalNote": "UAB INTERNATIONAL direct billed cost $46,700 (2026-27, Tier-1 verified from UAB's official Estimated Costs (Undergraduate) table, On Campus – Freshmen, International column): tuition and fees $32,490 + housing $8,480 + meal plan $5,730. UAB publishes a distinct international rate ($32,490) above its out-of-state rate ($29,820), with tuition and fees COMBINED — stored under `tuition` with `fees` 0; the sum invariant holds. ⚠ Do NOT use UAB's own 'Total Direct Costs' row ($51,046): UAB counts books ($1,200) and required health insurance ($3,146) as direct, both of which this guide excludes by convention. Its headline international total is $57,211. Freshmen are required to live on campus, so the on-campus figure is the applicable one; based on UAB's stated 15 credit hours a semester. The previous stored $28,000 was an unresearched ballpark and understated the cost by $18,700 — UAB is not the cheap D1 the old figure implied. Athletic scholarship can cover a large share; merit aid available for international students."
     },
     "aid": "Athletic",
     "size": 21000,
@@ -1467,7 +1467,7 @@
       "academic": 55,
       "minutes": 26,
       "lifestyle": 75,
-      "value": 51
+      "value": 36
     },
     "confRecord": [
       {
@@ -2180,14 +2180,14 @@
     "soccerLevel": "AAC — Competitive",
     "cost": "~$28k/yr",
     "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 41165,
+      "tuition": 22018,
+      "roomBoard": 15862,
+      "fees": 3285,
       "maxAthletic": 0.85,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "Charlotte out-of-state COA is ~$28k/yr (2025-26) — affordable for a D1 program. Athletic scholarship can cover 40–70% of COA. Merit aid available for international students. Charlotte has a growing international student community and moderate cost of living."
+      "internationalNote": "UNC Charlotte non-resident direct billed cost $41,165 (2026-27, Tier-1 verified from Charlotte's official Undergraduate Cost of Attendance table, Non-Residents of NC, living on campus): tuition $22,018 + fees $3,285 + housing $10,200 + meals $5,662. Its own headline non-resident total is $46,578, adding books, transportation, a computer allowance, miscellaneous and loan fees that this guide excludes. All costs are subject to NC legislative approval. The previous stored $28,000 was an unresearched ballpark and understated the cost by $13,165. Athletic scholarship can cover a large share; merit aid available for international students with 3.0+ GPA. Charlotte is a large, fast-growing metro with moderate living costs."
     },
     "aid": "Athletic",
     "size": 30000,
@@ -2207,7 +2207,7 @@
       "academic": 48,
       "minutes": 49,
       "lifestyle": 65,
-      "value": 57
+      "value": 47
     },
     "confRecord": [
       {

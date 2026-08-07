@@ -1678,14 +1678,14 @@
     "soccerLevel": "Big West — Developing",
     "cost": "~$28k/yr",
     "fin": {
-      "costNum": 28000,
-      "tuition": 18000,
-      "roomBoard": 8000,
-      "fees": 2000,
+      "costNum": 42292,
+      "tuition": 19084,
+      "roomBoard": 21530,
+      "fees": 1678,
       "maxAthletic": 0.85,
       "maxAcademic": 4000,
       "aidType": "athletic",
-      "internationalNote": "CSUF out-of-state COA is ~$28k/yr (2025-26) — one of the more affordable D1 options. CSU nonresident tuition is capped lower than the UC system. Athletic scholarship can cover a significant portion. Academic merit is limited for international students under CSU policy."
+      "internationalNote": "Cal State Fullerton non-resident direct billed cost $42,292 (2026-27, Tier-1 verified from CSUF Financial Aid's official 2026-27 Undergraduate Cost of Attendance table, Non-California Resident Students / On-Campus residence hall column): non-resident tuition $12,246 + mandatory tuition $6,838 (stored together under `tuition` = $19,084, as the CSU splits the systemwide base from the per-unit non-resident surcharge) + campus fees $1,678 + housing $14,890 + food $6,640. CSUF's own headline on-campus non-resident total is $48,394, adding books, miscellaneous, transportation and loan fees that this guide excludes. The non-resident surcharge is $471 a unit and the $12,246 reflects CSUF's OWN stated basis of 13 units a semester — not an assumption made here; a 15-unit load would add about $1,884 a year. The previous stored $28,000 was an unresearched ballpark and understated the cost by $14,292. Orange County living costs are high. Athletic aid is the main lever; CSU merit aid is limited."
     },
     "aid": "Athletic",
     "size": 40000,
@@ -1705,7 +1705,7 @@
       "academic": 50,
       "minutes": 42,
       "lifestyle": 74,
-      "value": 50
+      "value": 39
     },
     "confRecord": [
       {

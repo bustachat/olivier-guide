@@ -68,9 +68,11 @@
     "acuAlign": 14,
     "acuAlignNote": "Very strong — STEM-designated degree with anatomy, physiology, biomechanics, exercise prescription, resistance training, sport psych, and internship. FIU PT dept has DPT articulation for graduates.",
     "soccerLevel": "AAC — Elite (5 conf titles in 4 years)",
+    "soccerLevelShort": "AAC",
     "aid": "Athletic + Need",
     "size": 55000,
     "prePT": "Strong",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "2.0 NCAA core (min)",
       "minSchol": "3.0 for academic scholarship layer",
@@ -351,9 +353,11 @@
     "acuAlign": 13,
     "acuAlignNote": "Full coverage of anatomy, physiology, biomechanics, exercise prescription, strength training, sport psych, research, and 12cr internship. Motor development less explicit.",
     "soccerLevel": "AAC — Very Competitive",
+    "soccerLevelShort": "AAC",
     "aid": "Athletic + Need",
     "size": 50000,
     "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
     "gpa": {
       "minEntry": "2.3 NCAA core (min)",
       "minSchol": "3.0+ for academic aid stacking",
@@ -594,6 +598,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Exercise and Sport Science covers anatomy, physiology, biomechanics. Pre-PT pathway available.",
     "soccerLevel": "AAC — Competitive",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 77346,
       "tuition": 50760,
@@ -607,6 +612,7 @@
     "aid": "Athletic",
     "size": 4000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -868,6 +874,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Exercise and sport science pathway. Methodist Le Bonheur Healthcare provides clinical access for pre-PT.",
     "soccerLevel": "AAC — Competitive",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 32425,
       "tuition": 20664,
@@ -881,6 +888,7 @@
     "aid": "Athletic",
     "size": 22000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.3",
       "minSchol": "2.5+",
@@ -1144,6 +1152,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology program covers anatomy, physiology, biomechanics. Temple University Hospital for pre-PT clinical access in Philadelphia.",
     "soccerLevel": "AAC — Competitive",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 62854,
       "tuition": 43218,
@@ -1157,6 +1166,7 @@
     "aid": "Athletic",
     "size": 29000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.3",
       "minSchol": "2.5+",
@@ -1432,6 +1442,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong exercise science — UAB Hospital is one of the best research medical centres in the Southeast. Excellent pre-PT clinical access.",
     "soccerLevel": "AAC — Competitive",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 46700,
       "tuition": 32490,
@@ -1445,6 +1456,7 @@
     "aid": "Athletic",
     "size": 21000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0",
       "minSchol": "2.5+",
@@ -1705,6 +1717,7 @@
     "acuAlign": 8,
     "acuAlignNote": "Service academy curriculum — some science coverage but not kinesiology-specific. Pre-PT pathway not standard.",
     "soccerLevel": "AAC — Competitive",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 0,
       "tuition": 0,
@@ -1718,6 +1731,7 @@
     "aid": "Full tuition + stipend",
     "size": 4500,
     "prePT": "Poor",
+    "prePTShort": "Poor",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.5+",
@@ -1940,6 +1954,7 @@
     "acuAlign": 8,
     "acuAlignNote": "Service academy curriculum. Pre-PT pathway not standard.",
     "soccerLevel": "AAC — Competitive",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 0,
       "tuition": 0,
@@ -1953,6 +1968,7 @@
     "aid": "Full tuition + stipend",
     "size": 4400,
     "prePT": "Poor",
+    "prePTShort": "Poor",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.5+",
@@ -2169,6 +2185,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Atrium Health in Charlotte provides strong clinical access for pre-PT.",
     "soccerLevel": "AAC — Competitive",
+    "soccerLevelShort": "AAC",
     "fin": {
       "costNum": 41165,
       "tuition": 22018,
@@ -2182,6 +2199,7 @@
     "aid": "Athletic",
     "size": 30000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0",
       "minSchol": "2.5+",
@@ -2484,9 +2502,11 @@
     "acuAlign": 15,
     "acuAlignNote": "Outstanding alignment — FAU's Pre-PT/OT concentration of the Exercise Science degree covers virtually all ACU BESS units plus adds 9 credit hours of internship explicitly designed to meet PT/OT school prerequisites. The formal articulation agreement with FIU's Doctor of Physical Therapy program gives FAU students a guaranteed early interview if academic score ≥82. This is the most direct DPT pathway of any school in the guide. Boca Raton is in the same city as Lynn University. South Florida warm climate perfectly matches Sydney.",
     "soccerLevel": "AAC Conference — D1. 2025 AAC Tournament Champions. Growing program.",
+    "soccerLevelShort": "AAC Conference",
     "aid": "Athletic + Merit",
     "size": 33000,
     "prePT": "Outstanding — explicit Pre-PT/OT concentration + guaranteed early interview at FIU DPT program",
+    "prePTShort": "Outstanding",
     "gpa": {
       "minEntry": "2.5+ (accessible, ~65% acceptance)",
       "minSchol": "3.0+ for academic merit",

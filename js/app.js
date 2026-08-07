@@ -728,12 +728,12 @@ function buildCard(u){
     '<div class="info-grid2">'+
       '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+costDisplay(u)+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+u.aid+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePT.split('—')[0].trim()+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePTShort+'</div></div>'+
       '<div class="ig2-item"><div class="ig2-label">'+(u.proPlayers&&u.proPlayers.nextLevel?'D1 Transfers':'MLS Picks (5yr)')+'</div><div class="ig2-val">'+nlGridDisplay(u)+'</div></div>'+
       (isListed
         ? '<div class="ig2-item"><div class="ig2-label">Profile</div><div class="ig2-val" style="color:var(--hint);font-size:10px">Listed — full data pending</div></div>'
         : '<div class="ig2-item"><div class="ig2-label">Facilities</div><div class="ig2-val"><span class="fac-card-badge fac-'+facRating+'">'+facEmoji+' '+facLabel+'</span></div></div>')+
-      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px">'+u.soccerLevel.split('—')[0].trim()+'</div></div>'+
+      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px">'+u.soccerLevelShort+'</div></div>'+
     '</div>'+
     gpaHtml+
     '<div class="conf-strip">'+

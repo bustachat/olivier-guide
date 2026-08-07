@@ -77,10 +77,12 @@
     "acuAlign": 7,
     "acuAlignNote": "2-year degree. IGETC transfer curriculum covers biology, chemistry, anatomy basics. After transfer to UCLA/UCSB, full alignment achieved. Not a terminal degree — value is the transfer pipeline.",
     "soccerLevel": "CCCAA — Competitive",
+    "soccerLevelShort": "CCCAA",
     "aid": "Need + CA College Promise (no athletic)",
     "fundingPathway": "none",
     "size": 30000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "N/A — JUCO grants only",
@@ -322,10 +324,12 @@
     "acuAlign": 5,
     "acuAlignNote": "2-year intro. Value is the transfer pipeline into Barry, FIU, or UM. Barry has HPS 450 Pre-PT Seminar — that is the target after MDC.",
     "soccerLevel": "NJCAA",
+    "soccerLevelShort": "NJCAA",
     "aid": "Athletic + Need",
     "fundingPathway": "full",
     "size": 165000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "N/A — JUCO grants only",
@@ -594,10 +598,12 @@
     "acuAlign": 8,
     "acuAlignNote": "Partial alignment — Iowa Western covers anatomy, physiology basics, and health sciences foundations. Exercise physiology and biomechanics partially covered. Designed as a 2-year transfer pathway — upper-division ACU units align better after transfer to 4-year program.",
     "soccerLevel": "NJCAA Division I — competitive JUCO",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic grants + need-based",
     "fundingPathway": "full",
     "size": 5000,
     "prePT": "Foundation — transfer pathway to DPT-prep program",
+    "prePTShort": "Foundation",
     "gpa": {
       "minEntry": "No minimum — open admission",
       "minSchol": "2.0+ for athletic aid",
@@ -862,10 +868,12 @@
     "acuAlign": 5,
     "acuAlignNote": "Northeast CC's A.S. in Exercise Science (60 credits) prepares students for ACSM/NASM national certification and transfer to 4-year Exercise Science programs. Confirmed ACU-relevant content: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology (ACSM-prep core) → EXSC225; Kinesiology / Human Movement → EXSC224; Introduction to Exercise Science → EXSC122. The ACSM certification path requires exercise physiology and anatomy as core components — these are not electives but program requirements. WES evaluation required for ACU credit recognition. Confirm exact course titles with Northeast CC academic advisor before transfer planning.",
     "soccerLevel": "JUCO — NJCAA Division II",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 3200,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "2.0 NJCAA minimum",
       "minSchol": "2.5+ recommended for athletic aid",
@@ -1124,10 +1132,12 @@
     "acuAlign": 5,
     "acuAlignNote": "Monroe's A.S. in Exercise Science (School of Allied Health Professions, 62 credits) covers ACU prerequisites directly: SC-114/116 Human Anatomy & Physiology I & II map to ANAT100; EX-200 Principles of Kinesiology maps to EXSC224 (Human Movement); EX-250 Exercise Programming covers Exercise Physiology content (EXSC225); EX-101 Introduction to Exercise Science maps to EXSC122. Also includes EX-110 Foundations of Personal Fitness, EX-210 Prevention & Care of Athletic Injuries, and SC-107 Physical Conditioning & Nutrition. WES evaluation required — confirm course equivalences with Monroe academic advisor before relying on this count.",
     "soccerLevel": "JUCO — NJCAA Division I (3× National Champions)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 7000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "2.0 NJCAA minimum",
       "minSchol": "2.5+ for athletic aid consideration",
@@ -1409,10 +1419,12 @@
     "acuAlign": 4,
     "acuAlignNote": "Indian Hills' A.A. in Exercise Science & Kinesiology covers ACU science prerequisites: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology coursework → EXSC225; Kinesiology & Human Movement → EXSC224. The degree name explicitly includes 'Exercise Science & Kinesiology' — both are program requirements, not electives. Also includes Physical Therapist Assistant pathway coursework (A.A.S. available). WES evaluation required for ACU credit recognition. Confirm specific course equivalences with Indian Hills academic advisor.",
     "soccerLevel": "JUCO — NJCAA Division I (2025 National Champions)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 3000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "2.0 NJCAA minimum",
       "minSchol": "2.5+ for athletic aid consideration",
@@ -1674,6 +1686,7 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — #1 D1 Transfer Feeder Nationally",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic Grants + Need",
     "fundingPathway": "full",
     "fin": {
@@ -1688,6 +1701,7 @@
     },
     "size": 15000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrollment)",
       "minSchol": "2.0+ for athletic aid consideration",
@@ -1938,6 +1952,7 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — 2025 National Championship Runners-Up, Top-5 D1 Transfer Feeder",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic Grants + Need",
     "fundingPathway": "full",
     "fin": {
@@ -1952,6 +1967,7 @@
     },
     "size": 17000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrollment)",
       "minSchol": "2.0+ for athletic aid consideration",
@@ -2207,10 +2223,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 4700,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -2475,10 +2493,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 4500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -2734,10 +2754,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 8500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -3002,10 +3024,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — FCSAA Region 8",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 24000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -3264,10 +3288,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 9500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -3525,10 +3551,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 20000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -3786,10 +3814,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 4500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -4041,10 +4071,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 15000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -4305,10 +4337,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 2200,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -4557,10 +4591,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — KJCCC (Kansas Jayhawk Community College Conference)",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 2000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -4812,10 +4848,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ICCAC (Iowa Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 2000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -5077,10 +5115,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — ICCAC (Iowa Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 3200,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -5338,10 +5378,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 18000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -5601,10 +5643,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 3500,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -5854,10 +5898,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 4000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -6111,10 +6157,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 14 (South Division)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 3200,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -6359,10 +6407,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 15000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -6612,10 +6662,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 2600,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -6864,10 +6916,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 21000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -7085,10 +7139,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
     "fundingPathway": "full",
     "size": 11000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -7305,10 +7361,12 @@
       }
     ],
     "soccerLevel": "NJCAA Division II — KJCCC (Kansas Jayhawk Community College Conference)",
+    "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
     "fundingPathway": "capped",
     "size": 19000,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No minimum (open enrolment)",
       "minSchol": "2.0 NJCAA minimum for athletic eligibility",
@@ -7559,6 +7617,7 @@
       }
     ],
     "soccerLevel": "NJCAA Division I — Region II champions 2024 & 2025, National Tournament both years",
+    "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic + Merit",
     "fundingPathway": "full",
     "fin": {
@@ -7573,6 +7632,7 @@
     },
     "size": 2949,
     "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
     "gpa": {
       "minEntry": "No published minimum — open admission (Oklahoma public 2-year)",
       "minSchol": "2.0+ to hold NJCAA athletic eligibility",

@@ -66,9 +66,11 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong — no named kinesiology major but Physiol Sci covers anatomy, physiology, biomechanics fully. Motor control/development less explicit.",
     "soccerLevel": "Big Ten — Elite",
+    "soccerLevelShort": "Big Ten",
     "aid": "Athletic + Merit",
     "size": 46000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.0 NCAA core (min)",
       "minSchol": "3.5+ for merit aid stacking",
@@ -354,9 +356,11 @@
     "acuAlign": 15,
     "acuAlignNote": "Near-full alignment — anatomy, physiology, biomechanics, motor control (dedicated lab), motor development, resistance training, sport psych, research, internship. Best motor control coverage of any program in guide.",
     "soccerLevel": "Big Ten — 8× NCAA Champion",
+    "soccerLevelShort": "Big Ten",
     "aid": "Athletic + Academic",
     "size": 40000,
     "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
     "gpa": {
       "minEntry": "2.3 NCAA core (min)",
       "minSchol": "3.0+ for academic scholarship",
@@ -591,6 +595,7 @@
     "acuAlign": 12,
     "acuAlignNote": "Strong kinesiology — anatomy, physiology, biomechanics, motor control all covered. Pre-PT advising integrated into kinesiology program.",
     "soccerLevel": "Big Ten — Strong",
+    "soccerLevelShort": "Big Ten",
     "fin": {
       "costNum": 62328,
       "tuition": 42860,
@@ -604,6 +609,7 @@
     "aid": "Athletic",
     "size": 46000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.2+",
@@ -875,6 +881,7 @@
     "acuAlign": 13,
     "acuAlignNote": "Excellent — U of M School of Kinesiology is one of the top 3 in the nation. Movement Science covers anatomy, physiology, biomechanics, motor control, sport psychology. Michigan Medicine provides elite pre-PT clinical access.",
     "soccerLevel": "Big Ten — Strong",
+    "soccerLevelShort": "Big Ten",
     "fin": {
       "costNum": 88042,
       "tuition": 70822,
@@ -888,6 +895,7 @@
     "aid": "Athletic",
     "size": 47000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.3+",
@@ -1149,6 +1157,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. Pre-PT pathway available through kinesiology advising.",
     "soccerLevel": "Big Ten — Competitive",
+    "soccerLevelShort": "Big Ten",
     "fin": {
       "costNum": 59701,
       "tuition": 44300,
@@ -1162,6 +1171,7 @@
     "aid": "Athletic",
     "size": 50000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1419,6 +1429,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise science — anatomy, physiology, biomechanics covered. Ohio State Wexner Medical Center provides strong clinical access for pre-PT pathway.",
     "soccerLevel": "Big Ten — Strong",
+    "soccerLevelShort": "Big Ten",
     "fin": {
       "costNum": 63004,
       "tuition": 47374,
@@ -1432,6 +1443,7 @@
     "aid": "Athletic",
     "size": 61000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -1690,6 +1702,7 @@
     "acuAlign": 12,
     "acuAlignNote": "Strong human sciences and kinesiology pathways. Adjacent to Chicago — access to top-tier PT programs and clinical facilities.",
     "soccerLevel": "Big Ten — Competitive",
+    "soccerLevelShort": "Big Ten",
     "fin": {
       "costNum": 96003,
       "tuition": 71802,
@@ -1703,6 +1716,7 @@
     "aid": "Athletic + Need",
     "size": 8000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.5",
       "minSchol": "3.7+",
@@ -1976,6 +1990,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Solid exercise and movement science — anatomy, physiology, biomechanics, sport psychology covered. UW Health access for clinical placements.",
     "soccerLevel": "Big Ten — Competitive",
+    "soccerLevelShort": "Big Ten",
     "fin": {
       "costNum": 60505,
       "tuition": 44191,
@@ -1989,6 +2004,7 @@
     "aid": "Athletic",
     "size": 47000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -2249,6 +2265,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Solid exercise science program. NYC proximity means excellent clinical placement opportunities for pre-PT pathway.",
     "soccerLevel": "Big Ten — Competitive",
+    "soccerLevelShort": "Big Ten",
     "fin": {
       "costNum": 61635,
       "tuition": 35758,
@@ -2262,6 +2279,7 @@
     "aid": "Athletic",
     "size": 50000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -2523,6 +2541,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. UW Medicine provides strong clinical access for pre-PT pathway.",
     "soccerLevel": "Big Ten — Competitive",
+    "soccerLevelShort": "Big Ten",
     "fin": {
       "costNum": 65114,
       "tuition": 44580,
@@ -2536,6 +2555,7 @@
     "aid": "Athletic",
     "size": 47000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -2842,9 +2862,11 @@
     "acuAlign": 13,
     "acuAlignNote": "Strong alignment — Maryland's Kinesiology program is top-20 nationally and covers the vast majority of ACU BESS units including anatomy, biomechanics, exercise physiology, motor control, resistance training, sport psychology and research methods. Strong pre-PT advising track. Baltimore/DC hospital network provides exceptional clinical observation hours. Missing a few ACU-specific advanced units.",
     "soccerLevel": "Big Ten — D1 Elite. 3× National Champions. Cirovski era dominant.",
+    "soccerLevelShort": "Big Ten",
     "aid": "Athletic + Merit",
     "size": 40000,
     "prePT": "Excellent — top kinesiology program + Baltimore/DC hospital clinical network",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.0+ recommended",
       "minSchol": "3.5+ for academic merit",

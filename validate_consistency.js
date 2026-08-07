@@ -422,6 +422,39 @@ if (valueMismatches.length) {
 // this check's own explanatory comment until it was stripped (negative-tested).
 const deComment = src => src.split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n');
 
+// ── SHORTFIELDS (added v44.61): two card stats must not go back to parsing prose ──
+// The card's "Soccer Level" and "Pre-PT Path" stats used to be produced by
+// `u.soccerLevel.split('—')[0]` and `u.prePT.split('—')[0]`. Both fields are free
+// prose, so the split returned whatever happened to sit before the first em-dash:
+// seven schools rendered a bare DIVISION token the card already showed elsewhere
+// ("D1", "D2", "NAIA", "JUCO" ×3), `denver` rendered a 60-character sentence into
+// a compact stat, and four prePT values rendered a parenthetical
+// ("Excellent (KIN 405 Pre-PT Prep required)"). Same defect class as the Max Aid
+// tile (v44.50) and the `Target: Notre` GPA bug (v44.53).
+//
+// Fixed the way those were: short AUTHORED fields read directly. `prePTShort` is
+// enum-locked, because its vocabulary is a real ordinal scale and a free-text
+// value there would quietly reintroduce the problem.
+//
+// Two halves. The data half alone would pass while someone rewired the renderer
+// back to the prose field, so the second greps both renderers — the code-shape
+// guard MAXAID, CHIPS and COSTSTR all needed.
+const PREPT_SCALE = new Set(['Outstanding', 'Excellent', 'Very Strong', 'Strong',
+  'Good', 'Foundation', 'Poor', 'Transfer Pathway']);
+schools.filter(s => s.profileDepth === 'full').forEach(s => {
+  const sl = s.soccerLevelShort;
+  if (typeof sl !== 'string' || !sl.trim()) note('SHORTFIELDS', `${s.id} missing soccerLevelShort (added v44.61 — the card stat reads it directly; do NOT go back to splitting soccerLevel)`);
+  else if (sl.length > 24) note('SHORTFIELDS', `${s.id} soccerLevelShort is ${sl.length} chars ("${sl}") — it renders into a compact stat slot, keep it ≤24`);
+  const pp = s.prePTShort;
+  if (typeof pp !== 'string' || !pp.trim()) note('SHORTFIELDS', `${s.id} missing prePTShort (added v44.61)`);
+  else if (!PREPT_SCALE.has(pp)) note('SHORTFIELDS', `${s.id} prePTShort="${pp}" is not on the scale (${[...PREPT_SCALE].join(' | ')}) — put any qualifier in the long prePT field instead`);
+});
+for (const [file, src] of [['js/app.js', deComment(appjs)], ['js/dashboard.js', deComment(fs.readFileSync(path.join(ROOT, 'js/dashboard.js'), 'utf8'))]]) {
+  if (/\b(soccerLevel|prePT)\s*\.\s*split\s*\(/.test(src)) {
+    note('SHORTFIELDS', `${file} splits soccerLevel/prePT prose for a displayed value — read soccerLevelShort / prePTShort instead (v44.61).`);
+  }
+}
+
 // ── COSTSTR (added v44.60): the deleted cost display strings must not come back ──
 // `u.cost` (111 schools) and `fin.cost` (5) were free-text display strings like
 // "~$52k/yr". Nothing rendered them: costDisplay() only fell back to u.cost when

@@ -64,9 +64,11 @@
     "acuAlign": 10,
     "acuAlignNote": "Core kinesiology covered. Charleston's program is solid but smaller than major research universities. Good for a student who prioritises lifestyle and city over research facilities.",
     "soccerLevel": "CAA — Competitive (improving)",
+    "soccerLevelShort": "CAA",
     "aid": "Athletic + Need",
     "size": 11000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.0 NCAA core (min)",
       "minSchol": "3.0 for merit layer",
@@ -296,6 +298,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology and health sciences pathway. Pre-PT advising available. Williamsburg is near Sentara Healthcare for clinical access.",
     "soccerLevel": "CAA — Strong",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 72628,
       "internationalNote": "William & Mary out-of-state COA is ~$73k/yr (2025-26). Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. Williamsburg, VA has moderate cost of living. One of the most selective public universities in the US.",
@@ -309,6 +312,7 @@
     "aid": "Athletic",
     "size": 6000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.2+",
@@ -565,6 +569,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Health Sciences covers anatomy, physiology. NYC proximity (30 min via LIRR) opens extensive clinical placement for pre-PT.",
     "soccerLevel": "CAA — Strong",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 80550,
       "internationalNote": "Hofstra direct billed cost $80,550 (2026-27, Tier-1 verified from the Hofstra Bursar's official 2026-2027 Tuition & Fees schedule): full-time tuition $30,468 a term = $60,936 + university fee $392, technology fee $115 and activity fee $80 a term = $1,174 + Towers Double $6,300 a term = $12,600 + dining Option 5 $2,920 a term = $5,840. Room and dining are itemised separately by Hofstra rather than budgeted, so the combination used is stated here: a standard Towers Double and Option 5, which is the cheapest dining plan available to a first- or second-year (Options 2-4 are restricted to juniors and above). A suite without a lounge would be $114 a year more. ⚠ Do NOT use Hofstra's advertised $66,466 'tuition and fees' figure — that is the VOLUNTARY four-year locked-in rate ($32,726 a term), an optional hedge against future increases, not the standard rate. The previous stored $62,000 was an unresearched ballpark and understated the cost by $18,550. Long Island living costs are high; athletic and academic aid stack.",
@@ -578,6 +583,7 @@
     "aid": "Athletic",
     "size": 7000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -836,6 +842,7 @@
     "acuAlign": 11,
     "acuAlignNote": "Strong health sciences and neuroscience pathways. Co-op program provides real clinical placement in Boston hospital system — excellent for pre-PT.",
     "soccerLevel": "CAA — Competitive",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 95522,
       "internationalNote": "Northeastern direct billed cost $95,522 (2026-27, Tier-1 verified from Northeastern Undergraduate Admissions' official Estimated Cost of Attendance, Boston Campus, first-year students): tuition $71,050 + housing $13,612 + food $9,210 + fees $1,650. Its headline total is $98,322, adding books, personal expenses and transportation that this guide excludes. From Fall 2026 Northeastern consolidates the student activity, campus recreation, undergraduate student, student centre and lab fees into a single comprehensive fee, which is the $1,650 line. All estimates are subject to Board of Trustee approval. The previous stored $78,000 was an unresearched ballpark and understated the cost by $17,522. Note Northeastern's co-op model means paid work terms can offset part of the cost — but it also extends the degree, which matters for a four-year athletic eligibility clock.",
@@ -849,6 +856,7 @@
     "aid": "Athletic",
     "size": 17000,
     "prePT": "Excellent",
+    "prePTShort": "Excellent",
     "gpa": {
       "minEntry": "3.0",
       "minSchol": "3.2+",
@@ -1106,6 +1114,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Health Sciences covers anatomy, physiology. Co-op program provides clinical placements in Philadelphia hospital network for pre-PT.",
     "soccerLevel": "CAA — Competitive",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 86353,
       "internationalNote": "Drexel full COA is ~$86k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Co-op program provides paid work placements that can offset costs meaningfully. Merit aid available. Philadelphia cost of living is moderate for a major US city.",
@@ -1119,6 +1128,7 @@
     "aid": "Athletic",
     "size": 14000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.8",
       "minSchol": "3.0+",
@@ -1380,6 +1390,7 @@
     "acuAlign": 9,
     "acuAlignNote": "Exercise science covers core subjects. Pre-PT advising available. Small beautiful campus.",
     "soccerLevel": "CAA — Competitive",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 68903,
       "internationalNote": "Elon direct billed cost $68,903 (2026-27, Tier-1 verified from Elon's official 2026-2027 Newly Admitted Student Cost figures, cross-checked against the Student Financial Services rate schedule): tuition $50,386 + student activity fee $292 + health and wellness fee $690 + food and housing $17,535 — and $68,903 is exactly the 'Total' Elon itself publishes for tuition, fees, food and housing. Food and housing is based on an average room cost and the All-Access Basic meal plan; Elon has a TWO-YEAR residency requirement, so the on-campus figure is the applicable one. Books, personal expenses and transportation are excluded by convention. The previous stored $48,000 was an unresearched ballpark and understated the cost by $20,903 — Elon markets itself as a best-value private, and it may well be on net price, but its sticker is not low. Rates are based on full-time enrolment of 12-18 hours a semester.",
@@ -1393,6 +1404,7 @@
     "aid": "Athletic",
     "size": 7000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",
@@ -1649,6 +1661,7 @@
     "acuAlign": 9,
     "acuAlignNote": "Health studies covers core anatomy and physiology. NJ Shore location with NYC access for clinical placements.",
     "soccerLevel": "CAA — Developing",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 69662,
       "internationalNote": "Monmouth direct billed cost $69,662 (2026-27, Tier-1 verified from Monmouth's official Cost of Attendance Budgets table, first-year student living on campus, 12-18 credits, non-BSN): tuition $48,894 + housing and food $19,668 + fees $1,100. Monmouth publishes this exact figure as its own 'Direct Cost (Billed by MU)' row, which matches this guide's convention precisely — the second school after UConn to confirm it in the school's own words. Its headline Total Cost of Attendance is $75,656, adding books, travel, personal expenses and loan fees that this guide excludes. Monmouth is private, so there is no resident/non-resident split. The previous stored $52,000 was an unresearched ballpark and understated the cost by $17,662. Athletic scholarship can cover 25–50% of COA. Merit aid available for international students. NJ shore location with moderate-to-high living costs. Strong sports science pathway.",
@@ -1662,6 +1675,7 @@
     "aid": "Athletic",
     "size": 6000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.3",
       "minSchol": "2.5+",
@@ -1913,6 +1927,7 @@
     "acuAlign": 10,
     "acuAlignNote": "Kinesiology covers anatomy, physiology, biomechanics. Stony Brook Medicine is a top research medical centre — strong pre-PT access.",
     "soccerLevel": "CAA — Competitive",
+    "soccerLevelShort": "CAA",
     "fin": {
       "costNum": 54651,
       "internationalNote": "Stony Brook out-of-state direct billed cost $54,651 (2026-27, Tier-1 verified from Stony Brook Financial Aid's official Cost of Attendance table, Out of State Resident column): tuition $31,050 + fees $3,860 + housing $12,291 + meal plan $7,450 — which is exactly the university's own 'Total Direct Costs (On-campus Students)' row. Its headline yearly COA is $58,799, adding books, transport and personal expenses that this guide excludes; billed health insurance is waivable with proof of cover and is also excluded. ⚠ SUNY sets tuition each June and the page marks these figures 'estimated as of 02/20/2026' pending final SUNY approval, so re-check when Stony Brook publishes final rates. The previous stored $38,000 was an unresearched ballpark and understated the cost by $16,651 — SUNY rates are cheaper than private NY universities but not this cheap. Athletic scholarship can cover 40–60% of COA. Merit aid available. Long Island location with moderate-to-high living costs.",
@@ -1926,6 +1941,7 @@
     "aid": "Athletic",
     "size": 26000,
     "prePT": "Good",
+    "prePTShort": "Good",
     "gpa": {
       "minEntry": "2.5",
       "minSchol": "2.8+",

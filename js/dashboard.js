@@ -644,7 +644,7 @@ function showHoverInfo(u) {
       <div class="dash-hi-sc" style="color:${fitColor}">${u.fitOlivier||'—'}% <span>fit</span></div>
       <div class="dash-hi-sc" style="color:${acuColor}">${u.acuAlign||'—'}/16 <span>ACU</span></div>
       <div class="dash-hi-sc" style="color:var(--amber)">$${Math.round(costNum/1000)}k <span>/yr</span></div>
-      <div class="dash-hi-sc" style="color:var(--muted)">${u.prePT ? u.prePT.split('—')[0].trim() : '—'} <span>pre-PT</span></div>
+      <div class="dash-hi-sc" style="color:var(--muted)">${u.prePTShort || '—'} <span>pre-PT</span></div>
     </div>
     <div style="display:flex;gap:8px;margin-top:5px;flex-wrap:wrap">
       <span style="font-size:9px;font-weight:600;color:var(--muted)">${climate}</span>

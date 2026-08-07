@@ -6,6 +6,39 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.61 (August 2026) — the last two prose-parsing card stats are fixed: `soccerLevelShort` + `prePTShort`
+
+Closes §6 group A. The card's **"Soccer Level"** and **"Pre-PT Path"** stats were produced by `u.soccerLevel.split('—')[0]` and `u.prePT.split('—')[0]` — free prose sliced at the first em-dash, so the stat showed whatever happened to sit in front of it. Same defect class as the Max Aid tile (v44.50) and the `Target: Notre` GPA bug (v44.53), and fixed the same way: **short authored fields read directly**, never by reshaping copy to please a parser.
+
+**⚠ Both counts in §6 were LOW — measured, not trusted.** §6 said 6 schools for Soccer Level and 2 for Pre-PT. The real figures are **7 and 4**:
+
+| stat | school | rendered before | now |
+|---|---|---|---|
+| Soccer Level | `denver` | `Summit League (2025), moving to West Coast Conference (2026)` (60 chars in a compact slot) | `Summit → WCC 2026` |
+| | `mercyhurst` | `D1` | `NEC` |
+| | `georgian_court` | `D2` | `CACC` |
+| | `columbia_college` | `NAIA` | `AMC` |
+| | `northeast_cc` | `JUCO` | `NJCAA Division II` |
+| | `monroe_college` | `JUCO` | `NJCAA Division I` |
+| | `indian_hills` | `JUCO` | `NJCAA Division I` |
+| Pre-PT Path | `chapman` | `Excellent (KIN 405 Pre-PT Prep required)` | `Excellent` |
+| | `keiser` | `Strong (clinical simulation labs)` | `Strong` |
+| | `princeton`, `yale` | `Strong via science pathway` | `Strong` |
+
+The bare-token cases were the worst of it: a stat labelled *Soccer Level* that read `D1` or `JUCO` told the reader nothing the card did not already show, on exactly the schools where the level is least obvious. `miami_dade` was deliberately left as `NJCAA` — terse, but a real league name rather than a division token, and its NJCAA division is not published on its own athletics site (checked 2026-08-07).
+
+**The other 101 schools are byte-identical to what they rendered before.** The migration derived each default from the existing parse, so only the 11 broken values moved. Line-level insert, not a JSON round-trip (the v44.32 lesson), with each file re-parsed and diffed key-by-key before writing.
+
+**`prePTShort` is ENUM-LOCKED** to the eight values already in use — Outstanding · Excellent · Very Strong · Strong · Good · Foundation · Poor · Transfer Pathway. It is a real ordinal scale, and free text there would quietly reintroduce the overflow. Qualifiers belong in the long `prePT` field, which still renders in full in the Compare table, the school modal and the DPT-pathway paragraph.
+
+**New `SHORTFIELDS` check, four halves, all negative-tested** (clean baseline silent, each mutation fires): both fields present, `soccerLevelShort` ≤24 chars, `prePTShort` on the scale, and a comment-stripped grep of **both** `js/app.js` and `js/dashboard.js` for `soccerLevel.split(` / `prePT.split(`. Without the code half the data would stay valid while someone rewired the renderer back.
+
+**📌 Consequence worth recording: the long `soccerLevel` string now has NO renderer consumer at all** — the same outcome as `conferences.json.scholarships` after v44.50. It is stored reference data. Note this also makes the long-deferred UX-D1 *formatting* question moot for display purposes: the inconsistent `"JUCO — NJCAA Division X"` vs `"NJCAA Division X — Region"` shapes no longer reach the UI. **The owner's deferral stands — nothing was reformatted.**
+
+Gates: `validate_consistency.js` **Issues: 0**, `validate_schools.py` **PASS** (17 pre-existing warnings; both new fields added to `FULL_REQUIRED_FIELDS`), local preview 111 cards / 0 NaN / 0 "undefined" / 114-of-114 images, all 11 fixed values confirmed on their cards, three control schools unchanged, and the Dashboard hover panel confirmed on `chapman`/`keiser`/`princeton`.
+
+---
+
 ### v44.60 (August 2026) — the two dead cost display fields are DELETED, and the last two estimated costs are now sourced
 
 **Two jobs, both closing out the v44.56–v44.59 cost campaign.**

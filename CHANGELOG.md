@@ -6,6 +6,40 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.63 (2026-08-08) — Financial Model tab UX redesign (Change Type 11)
+
+Owner flagged the Financial Model tab as taking up too much real estate: the 4 always-open `fin-explainer` info cards and the always-rendered wall of ~111 `fin-school-selector` buttons (all 111 schools are full-profile as of the COA campaign, so this had grown to the entire roster) dominated the page before any interaction.
+
+**Info cards** — collapsed behind a single `fin-info-toggle` button (`toggleFinInfo()`), closed by default. Same explanatory text, just hidden until asked for.
+
+**School selector** — replaced the static 111-button grid with a search box (`#fin-search` → `onFinSearchInput()`) plus an A-Z letter strip (`renderFinAzStrip()` / `selectFinLetter()`), both filtering the same underlying list so they never fight each other. Letters with no matching school name are disabled. Default state (no search, no letter) shows a prompt instead of the full wall; if a school is already selected it shows just that one. `renderFinSchoolSelector()` keeps its name/call-site but now renders the strip + filtered results instead of all 111 buttons.
+
+**Comparison bars** — the "Full-Profile Schools — Cost Comparison by Bracket" section is now collapsed behind a `fin-bars-toggle-btn` toggle, closed by default. Within each bracket, only the first 6 rows render; a `Show all N (+M more)` button (`toggleFcbarBracket()`) reveals the rest. Removed the stale "Listed-depth schools will appear here once fully profiled" line — there are no listed-depth schools left.
+
+**Bug fixes found and fixed in passing (both directly in the code being rewritten):**
+- The conference-average summary at the bottom of the comparison bars only computed averages for 7 hardcoded confKeys (`acc, big-ten, big-east, aac, big-west, caa, other`), silently excluding every JUCO, D2, NAIA, D3, Ivy, ASUN, WAC, WCC, America East, NEC, Summit and Patriot school (~40 schools) from ever appearing. Replaced with a dynamic grouping (`finConfGroupKey()`, `FIN_CONF_GROUP_LABELS`) that splits the shared `other` confKey by division — now shows all groups actually present in the data (Patriot is absent only because Army/Navy have `costNum:0`, correctly filtered out).
+- `selectSchoolFromBar()` used `[...document.querySelectorAll('.fin-school-btn')].find(b=>b.onclick.toString().includes(...))` to find and highlight the clicked school's button — this could never match (arrow-function `.toString()` returns source text like `u.id`, not the interpolated id value), so clicking a bar to jump into the model always loaded the right school but never highlighted it. Now `selectFinSchool(id)` (called without a button element) syncs the search/letter selector to the target school and highlights it directly.
+
+**⚠ This change was originally built and pushed on 2026-08-07 against a corrupted `origin/main`** — a prior same-day session had accidentally reset past a merge commit and force-pushed a version of `main` missing all of v44.29–v44.61 (65 commits: the entire COA cost-of-attendance campaign, the 2026-27 roster refresh, and several validator/UI fixes). This entry has been rebuilt on top of the recovered, correct history (merge commit `18e42ad`, still intact in this repo's own object database) and re-verified against the real 111-school dataset rather than the truncated one. See the recovery note below and CLAUDE.md §6 for the incident detail.
+
+Verified live in a local preview: default collapsed states confirmed via computed `display`; letter-click and search filtering confirmed against real data; school selection confirmed via `fin-model-wrapper` visibility + title text; bracket show/collapse confirmed; conference-average fix confirmed; `selectSchoolFromBar` fix confirmed by clicking a bar for a school not in the visible selector and checking it switched tabs, loaded the model, and highlighted correctly. `validate_schools.py` (111 schools, pre-existing warnings only) and `node validate_consistency.js` (Issues: 0, same baseline) both pass — pure UI change, no data/score cascade.
+
+Also fixed: the workspace's `.claude/launch.json` (outside this repo, at the parent `Scholarship Guide` folder) had its `olivier-guide` preview config pointing at a stale second clone (`Github Clone/olivier-guide`). Added a new `olivier-guide-live` entry pointing at the correct directory rather than editing the existing ones.
+
+---
+
+### v44.62 (2026-08-07) — Coach card null rendering + Butler HC email (Change Type 2/11, recovered)
+
+Two small fixes made in the same session that triggered the history-loss incident above; the code survived (it was never lost — only its CHANGELOG/CLAUDE.md §6 documentation was discarded in the reset). Restored here from the original commit message.
+
+**13 coach cards rendered a literal `"null"` for Yrs HC** — `yearsHC: null` on 13 `coaches.json` entries printed as the string `null` in the Coaches → Profiles stat block. Fixed the renderer with the nullish-coalescing operator (`??`) to display an em-dash (`—`) instead (`js/app.js`). Affected: Marcos Vinicius Longo Ribeiro (Cowley CC), Ben MacRae (Iowa Lakes), Juan Espinal (Dodge City), Jeff Cole (Johnson County), Sam Hall (Neosho County), Bart Sasnett (Eastern Florida State), Henrique Vieira (Southeastern CC), Keith Ginsberg (Suffolk CC), Jeff Perry (Glendale CC), Martin Melchor (Angelina College), Justin Rodriguez (Coastal Bend), Jamal Lis-Simmons (Ulster CC), Alfio Carrabotta (Westchester CC).
+
+**Butler HC email populated.** Ian Sarachan's email `isarachan@butler.edu` verified Tier-1 (butlersports.com/sports/msoc/coaches) and added to `coaches.json` contact info. No re-rank (`overallScore` unchanged). `memphis` and `temple` carry the same validator warning but genuinely publish no email, so those two remain honest gaps, not fixable ones.
+
+`guideVersion` v44.61 → v44.62 (and now → v44.63 above).
+
+---
+
 ### v44.61 (August 2026) — the last two prose-parsing card stats are fixed: `soccerLevelShort` + `prePTShort`
 
 Closes §6 group A. The card's **"Soccer Level"** and **"Pre-PT Path"** stats were produced by `u.soccerLevel.split('—')[0]` and `u.prePT.split('—')[0]` — free prose sliced at the first em-dash, so the stat showed whatever happened to sit in front of it. Same defect class as the Max Aid tile (v44.50) and the `Target: Notre` GPA bug (v44.53), and fixed the same way: **short authored fields read directly**, never by reshaping copy to please a parser.
@@ -927,7 +961,6 @@ New school: **Murray State College (Aggies)**, Tishomingo, Oklahoma — NJCAA Di
 **Validation:** `python -m json.tool` valid on all four data files, `node --check` clean on app.js and scores.js, `validate_schools.py` PASS (111 schools, 17 pre-existing warnings, none for Murray State), `validate_consistency.js` **Issues: 0** with 111/111 on both the §5a dev rubric and the §5d coach rubric. Verified live in a local preview: card in the JUCO section under a new auto-generated "NJCAA Region 2 — Oklahoma / Western Arkansas" subhead, all 9 modal tabs populated, Development shows exactly 3 bars, Coaches/Conferences/Minutes/Financial/Pathways/Compare all render, zero console errors. ACU Alignment correctly omits it — that tab excludes all JUCOs by design (verified against 4 other JUCOs).
 
 **Deferred (not fixed — out of session scope):** (1) `wakeforest` `lensScores.value` is 50 where the formula every other school follows gives 29; found while validating the value-lens formula across 108 schools (107 matched within ±1). (2) `minutesOutlook.mf_total_2025` is season-stamped and its "MFs 2025" UI label is now wrong for Murray State, whose counts are 2026-27; needs a season-neutral key as more schools move to newer rosters.
-
 ---
 
 ### v44.28 (July 2026) — Removed athlete-specific personalization from all coach bios (Change Type 2)

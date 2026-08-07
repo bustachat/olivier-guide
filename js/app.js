@@ -2843,21 +2843,115 @@ function costDisplay(u){
   return fmt(u.fin.costNum)+'/yr';
 }
 
+// ── Financial Model school selector: search box + A-Z strip ──
+// Replaces the old always-rendered wall of ~110 school buttons — now only the
+// schools matching the active search text or letter are ever in the DOM.
+let finSearchQuery = '';
+let finActiveLetter = null;
+
+function finFullSchoolList(){
+  return [...unis].filter(u=>u.fin && u.profileDepth !== 'listed').sort((a,b)=>a.name.localeCompare(b.name));
+}
+
+function finFirstLetter(name){
+  return (name.match(/[A-Za-z]/)||[''])[0].toUpperCase();
+}
+
 function renderFinSchoolSelector(){
-  const container = document.getElementById('fin-school-selector');
-  container.innerHTML = '';
-  [...unis].sort((a,b)=>a.name.localeCompare(b.name)).forEach(u=>{
-    if(!u.fin || u.profileDepth === 'listed') return;
-    const btn = document.createElement('button');
-    btn.className = 'fin-school-btn' + (finCurrentSchool&&finCurrentSchool.id===u.id?' selected':'');
-    btn.innerHTML = `<div class="fsb-name">${u.name}</div><div class="fsb-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span> ${fmt(u.fin.costNum)}/yr full cost</div>`;
-    btn.onclick = ()=>selectFinSchool(u.id, btn);
-    container.appendChild(btn);
-  });
+  renderFinAzStrip();
+  renderFinSchoolResults();
+}
+
+function renderFinAzStrip(){
+  const strip = document.getElementById('fin-az-strip');
+  if(!strip) return;
+  const lettersWithSchools = new Set(finFullSchoolList().map(u=>finFirstLetter(u.name)));
+  strip.innerHTML = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(L=>{
+    const has = lettersWithSchools.has(L);
+    const active = finActiveLetter===L;
+    return `<button class="fin-az-btn${active?' active':''}" ${has?'':'disabled'} onclick="selectFinLetter('${L}')">${L}</button>`;
+  }).join('');
+}
+
+function selectFinLetter(L){
+  finActiveLetter = (finActiveLetter===L) ? null : L;
+  finSearchQuery = '';
+  const inp = document.getElementById('fin-search');
+  if(inp) inp.value = '';
+  renderFinAzStrip();
+  renderFinSchoolResults();
+}
+
+function onFinSearchInput(){
+  const inp = document.getElementById('fin-search');
+  finSearchQuery = inp.value.trim().toLowerCase();
+  if(finSearchQuery) finActiveLetter = null;
+  renderFinAzStrip();
+  renderFinSchoolResults();
+}
+
+function renderFinSchoolResults(){
+  const label = document.getElementById('fin-selector-label');
+  const grid = document.getElementById('fin-school-selector');
+  if(!label || !grid) return;
+  const list = finFullSchoolList();
+  let filtered, labelText;
+
+  if(finSearchQuery){
+    filtered = list.filter(u=>u.name.toLowerCase().includes(finSearchQuery) || u.full.toLowerCase().includes(finSearchQuery));
+    labelText = filtered.length ? `${filtered.length} match${filtered.length!==1?'es':''} for "${finSearchQuery}"` : `No school matches "${finSearchQuery}"`;
+  } else if(finActiveLetter){
+    filtered = list.filter(u=>finFirstLetter(u.name)===finActiveLetter);
+    labelText = `${finActiveLetter} — ${filtered.length} school${filtered.length!==1?'s':''}`;
+  } else {
+    filtered = finCurrentSchool ? [finCurrentSchool] : [];
+    labelText = finCurrentSchool ? 'Currently modelling — search or tap a letter to change' : `Type a school name or tap a letter to browse ${list.length} schools`;
+  }
+
+  label.textContent = labelText;
+  grid.innerHTML = filtered.map(u=>{
+    const sel = finCurrentSchool && finCurrentSchool.id===u.id;
+    return `<button class="fin-school-btn${sel?' selected':''}" data-id="${u.id}" onclick="selectFinSchool('${u.id}', this)">
+      <div class="fsb-name">${u.name}</div>
+      <div class="fsb-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span> ${fmt(u.fin.costNum)}/yr full cost</div>
+    </button>`;
+  }).join('');
+}
+
+function toggleFinInfo(){
+  const panel = document.getElementById('fin-explainer');
+  const btn = document.getElementById('fin-info-toggle-btn');
+  const chev = document.getElementById('fin-info-chevron');
+  const open = panel.style.display !== 'none';
+  panel.style.display = open ? 'none' : '';
+  chev.classList.toggle('fin-chevron-open', !open);
+  btn.setAttribute('aria-expanded', String(!open));
+}
+
+function toggleFinBars(){
+  const panel = document.getElementById('fin-bars-panel');
+  const btn = document.getElementById('fin-bars-toggle-btn');
+  const chev = document.getElementById('fin-bars-chevron');
+  const open = panel.style.display !== 'none';
+  panel.style.display = open ? 'none' : '';
+  chev.classList.toggle('fin-chevron-open', !open);
+  btn.setAttribute('aria-expanded', String(!open));
 }
 
 function selectFinSchool(id, btnEl){
   finCurrentSchool = unis.find(u=>u.id===id);
+  if(!finCurrentSchool) return;
+  if(!btnEl){
+    // Programmatic selection (e.g. from the comparison bars) — sync the
+    // search/letter selector to show this school, then find its button.
+    finSearchQuery = '';
+    const inp = document.getElementById('fin-search');
+    if(inp) inp.value = '';
+    finActiveLetter = finFirstLetter(finCurrentSchool.name);
+    renderFinAzStrip();
+    renderFinSchoolResults();
+    btnEl = document.querySelector(`.fin-school-btn[data-id="${id}"]`);
+  }
   document.querySelectorAll('.fin-school-btn').forEach(b=>b.classList.remove('selected'));
   if(btnEl) btnEl.classList.add('selected');
 
@@ -3003,6 +3097,19 @@ function updateFinModel(){
   document.getElementById('fin-tips').innerHTML = tips;
 }
 
+const FCBAR_SHOWN_PER_BRACKET = 6;
+
+// Group labels for the conference-average summary. Keyed on confKey, except
+// the shared 'other' confKey (Ivy/D2/NAIA/D3/JUCO) which is split by div —
+// otherwise those five divisions would collapse into one misleading average.
+const FIN_CONF_GROUP_LABELS = {
+  'acc':'ACC', 'big-ten':'Big Ten', 'big-east':'Big East', 'aac':'AAC', 'big-west':'Big West',
+  'caa':'CAA', 'asun':'ASUN', 'wac':'WAC', 'wcc':'WCC', 'america-east':'America East', 'nec':'NEC',
+  'summit':'Summit', 'patriot':'Patriot',
+  'other-IVY':'Ivy League', 'other-D2':'D2', 'other-NAIA':'NAIA', 'other-D3':'D3', 'other-JUCO':'JUCO',
+};
+function finConfGroupKey(u){ return u.confKey==='other' ? 'other-'+u.div : u.confKey; }
+
 function renderFinComparisonBars(){
   const container = document.getElementById('fin-comparison-bars');
   const fx = currentFx;
@@ -3023,11 +3130,14 @@ function renderFinComparisonBars(){
 
   const maxNet = data[data.length-1].net;
 
-  // Conference average lines
+  // Conference average lines — grouped across ALL confKeys present in the
+  // data (previously hardcoded to 7 keys, silently dropping every JUCO,
+  // D2, NAIA, D3, Ivy, ASUN, WAC, WCC, America East, NEC, Summit and
+  // Patriot school from this summary).
   const confAvgs = {};
-  ['acc','big-ten','big-east','aac','big-west','caa','other'].forEach(ck=>{
-    const inConf = data.filter(d=>d.u.confKey===ck);
-    if(inConf.length) confAvgs[ck] = Math.round(inConf.reduce((s,d)=>s+d.net,0)/inConf.length);
+  data.forEach(d=>{
+    const ck = finConfGroupKey(d.u);
+    (confAvgs[ck] = confAvgs[ck] || []).push(d.net);
   });
 
   // Cost brackets
@@ -3040,15 +3150,26 @@ function renderFinComparisonBars(){
 
   let html = '<div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.25rem">';
 
-  brackets.forEach(b=>{
+  brackets.forEach((b,bi)=>{
     const inBracket = data.filter(d=>d.cost>=b.min&&d.cost<=b.max);
     if(!inBracket.length) return;
 
     // Conference average for this bracket's schools
-    const bracketConfKeys=[...new Set(inBracket.map(d=>d.u.confKey))];
+    const bracketConfKeys=[...new Set(inBracket.map(d=>finConfGroupKey(d.u)))];
     const confAvgLine = bracketConfKeys.length>1
       ? Math.round(inBracket.reduce((s,d)=>s+d.net,0)/inBracket.length)
       : null;
+
+    const rowHtml = ({u,net})=>`<div class="fcbar-row" onclick="selectSchoolFromBar('${u.id}')" style="cursor:pointer">
+        <div class="fcbar-name" title="${u.full}">${u.name}</div>
+        <span class="fcbar-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span></span>
+        <div class="fcbar-track" style="position:relative">
+          <div class="fcbar-fill" style="width:${Math.round((net/maxNet)*100)}%;background:${b.color};opacity:.85;min-width:${net>0?'40px':'0'}">${net>0?fmt(net):''}</div>
+          ${net===0?'<span style="position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:700;color:var(--emerald)">FULL RIDE</span>':''}
+          ${confAvgLine?`<div style="position:absolute;top:0;bottom:0;left:${Math.round((confAvgLine/maxNet)*100)}%;width:1.5px;background:var(--navy);opacity:.25;pointer-events:none"></div>`:''}
+        </div>
+        <div class="fcbar-amt">${fmtAUD(net,fx)}<br><span style="font-size:9px;color:var(--hint)">AUD/yr</span></div>
+      </div>`;
 
     html+=`<div style="margin-bottom:1.5rem">
       <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem">
@@ -3057,19 +3178,14 @@ function renderFinComparisonBars(){
         ${confAvgLine?`<span style="font-size:10px;color:var(--muted);margin-left:auto">Bracket avg: <strong style="color:${b.color}">${fmt(confAvgLine)}</strong>/yr net</span>`:''}
       </div>`;
 
-    inBracket.forEach(({u,net})=>{
-      const pct = Math.round((net/maxNet)*100);
-      html+=`<div class="fcbar-row" onclick="selectSchoolFromBar('${u.id}')" style="cursor:pointer">
-        <div class="fcbar-name" title="${u.full}">${u.name}</div>
-        <span class="fcbar-div"><span class="dbadge d-${u.div}" style="font-size:9px">${u.div}</span></span>
-        <div class="fcbar-track" style="position:relative">
-          <div class="fcbar-fill" style="width:${pct}%;background:${b.color};opacity:.85;min-width:${net>0?'40px':'0'}">${net>0?fmt(net):''}</div>
-          ${net===0?'<span style="position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:700;color:var(--emerald)">FULL RIDE</span>':''}
-          ${confAvgLine?`<div style="position:absolute;top:0;bottom:0;left:${Math.round((confAvgLine/maxNet)*100)}%;width:1.5px;background:var(--navy);opacity:.25;pointer-events:none"></div>`:''}
-        </div>
-        <div class="fcbar-amt">${fmtAUD(net,fx)}<br><span style="font-size:9px;color:var(--hint)">AUD/yr</span></div>
-      </div>`;
-    });
+    const shown = inBracket.slice(0, FCBAR_SHOWN_PER_BRACKET);
+    const rest  = inBracket.slice(FCBAR_SHOWN_PER_BRACKET);
+    html += shown.map(rowHtml).join('');
+    if(rest.length){
+      html += `<div class="fcbar-extra" id="fcbar-extra-${bi}" style="display:none">${rest.map(rowHtml).join('')}</div>
+        <button class="fcbar-more-btn" onclick="toggleFcbarBracket(${bi},this)"
+          data-more-label="Show all ${inBracket.length} (+${rest.length} more) ▾" data-less-label="Show fewer ▴">Show all ${inBracket.length} (+${rest.length} more) ▾</button>`;
+    }
     html+='</div>';
   });
 
@@ -3077,14 +3193,23 @@ function renderFinComparisonBars(){
   html+=`<div style="background:var(--surface2);border-radius:9px;padding:.75rem 1rem;margin-top:.5rem">
     <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:.5rem">Conference Averages (net cost at 50% athletic scholarship)</div>
     <div style="display:flex;flex-wrap:wrap;gap:.5rem">`;
-  Object.entries(confAvgs).forEach(([ck,avg])=>{
-    const label={acc:'ACC',['big-ten']:'Big Ten',['big-east']:'Big East',aac:'AAC',['big-west']:'Big West',caa:'CAA',other:'D2/NAIA'}[ck]||ck;
+  Object.entries(confAvgs).forEach(([ck,nets])=>{
+    const avg = Math.round(nets.reduce((s,n)=>s+n,0)/nets.length);
+    const label = FIN_CONF_GROUP_LABELS[ck] || ck;
     html+=`<span style="font-size:11px;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:3px 10px"><strong>${label}</strong> ${fmt(avg)}/yr</span>`;
   });
   html+=`</div></div>`;
 
   html += '<div style="font-size:11px;color:var(--hint);margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border)">Assumes 50% athletic scholarship + $7,500 USD living costs. Full-profile schools only. Sorted by cost bracket, lowest first. Click any bar to model in detail above.</div></div>';
   container.innerHTML = html;
+}
+
+function toggleFcbarBracket(bi, btn){
+  const extra = document.getElementById('fcbar-extra-'+bi);
+  if(!extra) return;
+  const open = extra.style.display !== 'none';
+  extra.style.display = open ? 'none' : '';
+  btn.textContent = open ? btn.dataset.moreLabel : btn.dataset.lessLabel;
 }
 
 function selectSchoolFromBar(id){
@@ -3099,9 +3224,9 @@ function selectSchoolFromBar(id){
   document.getElementById('page-finance').classList.add('active');
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(b=>{if(b.textContent.includes('Financial'))b.classList.add('active');});
-  // Select the school
-  const btn = [...document.querySelectorAll('.fin-school-btn')].find(b=>b.onclick.toString().includes(`'${id}'`));
-  selectFinSchool(id, btn);
+  // Select the school — selectFinSchool syncs the search/letter selector UI
+  // to it when no button element is passed.
+  selectFinSchool(id);
   document.getElementById('fin-model-wrapper').scrollIntoView({behavior:'smooth'});
 }
 

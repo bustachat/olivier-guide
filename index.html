@@ -611,6 +611,8 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .fcbar-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;color:#fff;transition:width .4s;}
 .fcbar-amt{font-size:12px;font-weight:700;color:var(--muted);width:80px;text-align:right;flex-shrink:0;}
 .fcbar-div{font-size:10px;color:var(--hint);width:50px;flex-shrink:0;}
+.fcbar-more-btn{background:none;border:1px dashed var(--border2);color:var(--muted);width:100%;padding:6px;border-radius:7px;font-size:11px;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;margin-top:2px;}
+.fcbar-more-btn:hover{border-color:var(--indigo2);color:var(--indigo);border-style:solid;}
 .scenario-tabs{display:flex;gap:6px;margin-bottom:1rem;flex-wrap:wrap;}
 .sc-tab{background:var(--surface);border:1px solid var(--border2);color:var(--muted);padding:6px 14px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .15s;}
 .sc-tab:hover{border-color:var(--indigo);color:var(--indigo);}
@@ -618,6 +620,22 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .aud-notice{background:var(--amber3);border:1px solid #fde68a;border-radius:9px;padding:.75rem 1rem;font-size:12px;color:var(--amber);font-weight:600;margin-bottom:1rem;}
 .fin-tip{background:var(--indigo3);border-radius:9px;padding:.75rem 1rem;font-size:12px;color:#374151;line-height:1.7;margin-top:.75rem;border:1px solid #c7d2fe;}
 .fin-tip strong{color:var(--navy);}
+.fin-info-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:9px 14px;font-size:12px;font-weight:600;color:var(--text);font-family:'Outfit',sans-serif;cursor:pointer;transition:border-color .12s;margin-bottom:1.25rem;}
+.fin-info-toggle:hover{border-color:var(--indigo2);}
+.fin-chevron{font-size:12px;color:var(--hint);transition:transform .2s;display:inline-block;}
+.fin-chevron-open{transform:rotate(180deg);}
+.fin-selector-controls{margin-bottom:.6rem;}
+.fin-search-wrap{position:relative;margin-bottom:8px;}
+#fin-search{width:100%;box-sizing:border-box;padding:8px 12px 8px 32px;border:1.5px solid var(--border2);border-radius:10px;font-size:12px;font-family:'Outfit',sans-serif;color:var(--text);background:var(--bg);outline:none;transition:border-color .12s;}
+#fin-search:focus{border-color:var(--indigo2);}
+#fin-search::placeholder{color:var(--hint);}
+.fin-search-wrap::before{content:'🔎';position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:11px;pointer-events:none;opacity:.55;}
+.fin-az-strip{display:flex;flex-wrap:wrap;gap:3px;}
+.fin-az-btn{width:24px;height:24px;border:1px solid var(--border2);border-radius:5px;background:var(--surface2);color:var(--muted);font-size:10px;font-weight:700;font-family:'Outfit',sans-serif;cursor:pointer;transition:all .12s;}
+.fin-az-btn:hover:not(:disabled){border-color:var(--indigo2);color:var(--indigo);}
+.fin-az-btn.active{background:var(--indigo);border-color:var(--indigo);color:#fff;}
+.fin-az-btn:disabled{opacity:.35;cursor:default;}
+.fin-selector-label{font-size:10px;font-weight:700;color:var(--hint);text-transform:uppercase;letter-spacing:.06em;margin:.75rem 0 .5rem;}
 
 .conf-tier{margin-bottom:2.5rem;}
 .conf-tier-head{display:flex;align-items:center;gap:12px;margin-bottom:1rem;padding:.75rem 1.1rem;border-radius:12px;border:1px solid var(--border);}
@@ -992,7 +1010,11 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
       </div>
     </div>
   </div>
-  <div class="fin-explainer">
+  <button class="fin-info-toggle" id="fin-info-toggle-btn" onclick="toggleFinInfo()" aria-expanded="false" aria-controls="fin-explainer">
+    <span>ℹ️ How athletic aid, academic aid &amp; living costs work</span>
+    <span class="fin-chevron" id="fin-info-chevron">▾</span>
+  </button>
+  <div class="fin-explainer" id="fin-explainer" style="display:none">
     <div class="fin-exp-card"><h4 style="color:var(--indigo)">What is Athletic Scholarship?</h4><p>In D1 and D2, coaches have a scholarship "pool" they split across their roster — 9.0 equivalencies at D2, and 9.9 at D1 schools that have <em>not</em> opted into the House settlement. Opt-in D1 schools are no longer capped by equivalency: they carry a 28-player roster in which every spot may be funded (see the Glossary — this guide does not track which schools have opted in). A "full athletic scholarship" covers tuition, room, board, and fees. Team travel — buses, hotels, meals, and team flights for away games — is fully covered by the program and is not an out-of-pocket cost. Personal flights home to Australia are legally excluded from scholarships. In practice, international players often receive 25–75% athletic aid — men's soccer is a non-revenue sport and is rarely funded to its ceiling, whichever cap a school sits under. NAIA carries a 12-equivalency team cap and no per-player cap, so a coach can concentrate the pool into a full ride for one player. D3 and Ivy League = zero athletic scholarships.</p></div>
     <div class="fin-exp-card"><h4 style="color:var(--emerald)">What is Academic Scholarship?</h4><p>Separate from athletic aid — awarded for GPA, SAT/ACT, and academic achievement. Can stack on top of athletic scholarships. For Olivier at GPA 2.8, academic merit aid is limited but available at some schools (typically requires 3.0+). As GPA improves, more academic aid becomes accessible.</p></div>
     <div class="fin-exp-card"><h4 style="color:var(--amber)">What are Living Expenses?</h4><p>Beyond tuition, room &amp; board: <strong>flights home</strong> (2×/yr — $800–$3,200 USD depending on season and region; legally excluded from scholarships), personal spending, phone, books, and supplemental health insurance (~$35–60/month for non-university coverage). Books are generally excluded from scholarships but are often passed down from older teammates — budget $0–$800/yr. One-time setup costs: F-1 student visa $535 USD · NCAA registration $135 (or NAIA $170, postponed until offer stage) · SAT $111 if required by your school.</p></div>
@@ -1000,6 +1022,13 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
   </div>
 
   <div class="section-head"><h2>Step 1 — Select a School to Model</h2></div>
+  <div class="fin-selector-controls">
+    <div class="fin-search-wrap">
+      <input type="text" id="fin-search" placeholder="Search 110 schools…" autocomplete="off" oninput="onFinSearchInput()">
+    </div>
+    <div class="fin-az-strip" id="fin-az-strip"></div>
+  </div>
+  <div class="fin-selector-label" id="fin-selector-label"></div>
   <div class="fin-school-selector" id="fin-school-selector"></div>
 
   <div id="fin-model-wrapper" style="display:none">
@@ -1066,9 +1095,15 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     </div>
   </div>
 
-  <div class="section-head" style="margin-top:1rem"><h2>Full-Profile Schools — Cost Comparison by Bracket</h2></div>
-  <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">Full-profile schools only, grouped by cost bracket. Assumes 50% athletic scholarship as a planning baseline. Conference average reference lines shown per bracket. Click any bar to model in detail above. Listed-depth schools will appear here once fully profiled.</p>
-  <div id="fin-comparison-bars"></div>
+  <button class="fin-info-toggle" id="fin-bars-toggle-btn" onclick="toggleFinBars()" aria-expanded="false" aria-controls="fin-bars-panel" style="margin-top:1rem">
+    <span>📊 Compare cost brackets across all schools</span>
+    <span class="fin-chevron" id="fin-bars-chevron">▾</span>
+  </button>
+  <div id="fin-bars-panel" style="display:none">
+    <div class="section-head"><h2>Full-Profile Schools — Cost Comparison by Bracket</h2></div>
+    <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">Grouped by cost bracket. Assumes 50% athletic scholarship as a planning baseline. Conference average reference lines shown per bracket. Click any bar to model in detail above.</p>
+    <div id="fin-comparison-bars"></div>
+  </div>
 </div>
 
 <div class="page" id="page-conferences">

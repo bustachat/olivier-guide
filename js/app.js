@@ -2833,7 +2833,12 @@ let finCurrentSchool = null;
 function fmt(n){return '$'+Math.round(n).toLocaleString('en-US');}
 function fmtAUD(n,fx){return 'A$'+Math.round(n*fx).toLocaleString('en-US');}
 function costDisplay(u){
-  if(!u.fin||u.fin.costNum===undefined) return u.cost||'—';
+  // v44.60: the old `u.cost` display string was deleted. It was a fallback that
+  // could never fire (costNum is defined on all 111) and it had drifted badly —
+  // 50 of 111 were more than $4k out after the v44.56-59 cost campaign, and
+  // tulsa carried three different costs across u.cost, fin.cost and costNum.
+  // Cost is now derived from costNum and nowhere else. Do not reintroduce it.
+  if(!u.fin||u.fin.costNum===undefined) return '—';
   if(u.fin.costNum===0) return 'Fully funded';
   return fmt(u.fin.costNum)+'/yr';
 }

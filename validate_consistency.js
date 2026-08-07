@@ -417,6 +417,34 @@ if (valueMismatches.length) {
   valueMismatches.forEach(m => note('VALUE', '  ' + m));
 }
 
+// Shared by COSTSTR and PROSE. A rule about what the CODE does must not be
+// tripped by the comment that explains the rule — the clean baseline fired on
+// this check's own explanatory comment until it was stripped (negative-tested).
+const deComment = src => src.split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n');
+
+// ── COSTSTR (added v44.60): the deleted cost display strings must not come back ──
+// `u.cost` (111 schools) and `fin.cost` (5) were free-text display strings like
+// "~$52k/yr". Nothing rendered them: costDisplay() only fell back to u.cost when
+// costNum was undefined, which never happened, and fin.cost had no reader at all.
+// Because nothing read them they drifted silently — after the v44.56-59 cost
+// campaign 50 of 111 were more than $4k out, and `tulsa` carried THREE different
+// costs (u.cost "~$45k", fin.cost "~$70k", costNum $77,346). Same silent-drift
+// class as coaches.json.url. Both fields were deleted in v44.60; cost is derived
+// from costNum alone.
+//
+// Two halves, and the second is what makes it durable: the data check alone would
+// pass while someone reintroduced the renderer fallback, so this also greps app.js
+// for `u.cost` — the same code-shape guard MAXAID and CHIPS needed.
+const costStrSchools = schools.filter(s => s.cost !== undefined || (s.fin && s.fin.cost !== undefined))
+  .map(s => `${s.id} (${s._file})`);
+if (costStrSchools.length) {
+  note('COSTSTR', `${costStrSchools.length} schools reintroduced a free-text cost string (u.cost / fin.cost) — deleted in v44.60, derive from fin.costNum instead:`);
+  costStrSchools.forEach(m => note('COSTSTR', '  ' + m));
+}
+if (/\bu\.cost\b(?!Num)/.test(deComment(appjs))) {
+  note('COSTSTR', 'js/app.js references u.cost — the deleted display string. costDisplay() must derive from fin.costNum alone (v44.60).');
+}
+
 // ── PROSE (added v44.44): UI copy that hard-codes a school/roster fact ────────
 // Why this exists: the v44.42 roster refresh silently falsified two live panels,
 // and NOTHING could see it. Every other check in this file reads JSON; the
@@ -440,7 +468,6 @@ const indexhtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 // copy bug legitimately QUOTES the bad phrasing (the fix note in
 // renderMinutesOutlook does exactly that) and must not re-trip check C. Only
 // full-line comments are dropped, so `https://` inside a string is untouched.
-const deComment = src => src.split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n');
 const PROSE_SOURCES = [['js/app.js', deComment(appjs)], ['index.html', deComment(indexhtml)]];
 
 // A. CONF_SECTIONS intros: a claimed program count must match the real one.

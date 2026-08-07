@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.60 (August 2026) — the two dead cost display fields are DELETED, and the last two estimated costs are now sourced
+
+**Two jobs, both closing out the v44.56–v44.59 cost campaign.**
+
+**1. `u.cost` and `fin.cost` deleted — 116 lines across 10 data files.** Every school carried a free-text display string like `"~$52k/yr"`, and 5 also had a `fin.cost`. **Nothing rendered either of them**: `costDisplay()` fell back to `u.cost` only when `costNum` was undefined, which never happened on any of the 111, and `fin.cost` had no reader at all.
+
+**Because nothing read them, they drifted — and this session made it acute.** After the cost campaign corrected 53 `costNum` values, **50 of 111 display strings were more than $4,000 out**: `stjohns` said "~$58k" against $79,758, `temple` "~$42k" against $62,854, `uab` "~$28k" against $46,700. `tulsa` carried **three different costs** — `u.cost` "~$45k", `fin.cost` "~$70k", `costNum` $77,346. Updating them was rejected: §3a Type 4 already says never to hand-edit the display string, so a field that must never be edited and is never read should not exist. Same silent-drift class as `coaches.json.url`.
+
+Deletion was **line-level, not a JSON round-trip**, to preserve CRLF and key order (the v44.32 migration lesson), and each file was re-parsed and diffed key-by-key against its original before being written. `validate_schools.py` drops `cost` from `FULL_REQUIRED_FIELDS`; `costDisplay()` now returns `'—'` in the unreachable branch.
+
+**New `COSTSTR` check, in two halves — the second is what makes it durable.** The data half fails if any school reintroduces `u.cost`/`fin.cost`; the code half greps `js/app.js` for `u.cost`, because the data check alone would pass while someone restored the renderer fallback. Same code-shape guard `MAXAID` and `CHIPS` needed.
+
+**⚠ The negative test caught a bug in the check itself — and it is a reusable one.** The clean baseline fired, because the regex was matching **the explanatory comment above the check**. A rule about what the *code* does must not be tripped by the comment that explains the rule. Fixed by hoisting the existing `deComment()` helper (previously defined below, for `PROSE`) above both consumers. Re-tested: clean = 0 issues, data mutation fires, code mutation fires.
+
+**2. `ucirvine` and `ocu` — the last two costs §6 had flagged as estimates since v38.** Both were non-round so they escaped the campaign's ballpark test, but neither was sourced.
+
+| school | stored | actual | gap | value |
+|---|---|---|---|---|
+| `ocu` | $56,720 | **$49,662** | **−$7,058** | 30 → 32 |
+| `ucirvine` | $81,292 | **$80,203** | −$1,089 | 35 → 35 |
+
+Both were **overstated**, taking the campaign's overstatement count to eight. UCI is stored on the same basis as UCSB, UCLA and UC Davis (systemwide $15,588 + non-resident $39,270 + housing/food + campus fees); its `roomBoard` was the flagged round $19,500 and is now $20,926. OCU's $49,662 is exactly its own **"Total Billable Costs"** row — the thirteenth school to confirm the direct-billed convention in its own words — with health insurance, books and transport excluded as OCU itself classes them discretionary. **Every cost in the guide is now Tier-1 sourced; no estimates remain.**
+
+Gates: `validate_consistency.js` **Issues: 0**, `validate_schools.py` **PASS** (17 pre-existing warnings), local preview 111 cards / 0 NaN / **0 "undefined"** / 114-of-114 images, service academies still render "Fully funded". Dashboard "within budget" 48 → **49 of 111** (OCU crosses back under).
+
+---
+
 ### v44.59 (August 2026) — COA batches 4–10: **the cost-of-attendance campaign is COMPLETE.** 40 schools in one session; 53 of 53 ballparks replaced
 
 Change Type 4 on **40 schools across seven commits**, one per cluster. All Tier-1, read in a real browser. **No `fitOlivier` moved anywhere** — cost has not fed the Fit Score since v37.1. Together with v44.56–v44.58 this closes the pass abandoned at v33.1: **every one of the 111 schools now carries a researched, sourced `costNum`.**

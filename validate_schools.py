@@ -23,7 +23,7 @@ REQUIRED_ACU_UNITS = [
 FULL_REQUIRED_FIELDS = [
     'id','name','full','loc','div','conf','confKey',
     'degreeTitle','acuAlign','acuAlignNote','soccerLevel',
-    'cost','aid','fin','gpa','devScores','fitOlivier',
+    'aid','fin','gpa','devScores','fitOlivier',
     'lensScores','minutesOutlook','profileDepth','mapX','mapY',
     'facilityDetails','culture','acuUnits',
 ]

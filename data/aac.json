@@ -1151,14 +1151,14 @@
     "soccerLevel": "AAC — Competitive",
     "cost": "~$42k/yr",
     "fin": {
-      "costNum": 42000,
-      "tuition": 30000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 62854,
+      "tuition": 43218,
+      "roomBoard": 19636,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic",
-      "internationalNote": "Temple out-of-state COA is ~$42k/yr (2025-26) — affordable for a D1 program in a major city. Athletic scholarship can cover 35–55% of COA. Merit aid available for international students with 3.0+ GPA. Philadelphia cost of living is moderate."
+      "internationalNote": "Temple out-of-state direct billed cost $62,854 (2026-27, Tier-1 verified from Temple Student Financial Services' official 2026-27 Master Undergraduate Cost of Attendance breakdown, College of PUBLIC HEALTH column): tuition and fees $43,218 + housing $14,084 + food $5,552. Temple publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0. IMPORTANT — Temple prices tuition BY COLLEGE and its Kinesiology degree sits in the College of Public Health, which is $5,520 a year MORE than the College of Liberal Arts figure ($37,698) shown in the summary example on Temple's main COA page. Using the headline example would have understated the cost. Temple's own Public Health out-of-state total is $69,904, adding books, transportation and personal expenses that this guide excludes. Housing is the median of 2026-27 rates and food is the J&H Unlimited plan; on-campus and off-campus students receive the same budget. Tuition is set by the Board of Trustees each July. The previous stored $42,000 was an unresearched ballpark and understated the cost by $20,854."
     },
     "aid": "Athletic",
     "size": 29000,
@@ -1178,7 +1178,7 @@
       "academic": 52,
       "minutes": 31,
       "lifestyle": 65,
-      "value": 34
+      "value": 26
     },
     "confRecord": [
       {

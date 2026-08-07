@@ -558,14 +558,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 32000,
-      "tuition": 20000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 35222,
+      "tuition": 21826,
+      "roomBoard": 13396,
+      "fees": 0,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "Akron has strong scholarship packages for international athletes. Public university pricing is very competitive — one of the best value D1 options in the guide. Ohio cost of living is moderate."
+      "internationalNote": "Akron out-of-state direct billed cost $35,222 (2026-27, Tier-1 verified from Akron's official Cost of Attendance page, 2026-27 Main Campus Out-of-State, on campus): tuition and fees $21,826 + food and housing $13,396. Akron publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0; the sum invariant still holds. Its headline out-of-state on-campus total is $40,050, adding books, transportation and personal expenses that this guide excludes. The previous stored $32,000 was an unresearched ballpark and understated the cost by $3,222. Akron remains one of the cheapest D1 options in the guide. Athletic scholarship can cover a large share; note Akron's Tuition Guarantee (four years of fixed rates) applies to OHIO residents only."
     },
     "confRecord": [
       {
@@ -628,7 +628,7 @@
       "academic": 82,
       "lifestyle": 50,
       "minutes": 31,
-      "value": 47
+      "value": 45
     },
     "tags": [
       "city",
@@ -825,14 +825,14 @@
       "status": "eligible"
     },
     "fin": {
-      "costNum": 62000,
-      "tuition": 48000,
-      "roomBoard": 12000,
-      "fees": 2000,
+      "costNum": 84119,
+      "tuition": 63720,
+      "roomBoard": 18815,
+      "fees": 1584,
       "maxAthletic": 0.85,
       "maxAcademic": 15000,
       "aidType": "athletic+merit",
-      "internationalNote": "DU is a private university with a strong merit aid program. Athletic + academic scholarships can be stacked. Denver cost of living is moderate-high. International students well-supported — DU has a large international student community (~15%)."
+      "internationalNote": "Denver direct billed cost $84,119 (2026-27, Tier-1 verified from DU Financial Aid's official Cost of Attendance example, Enrolled Full Time and Living On Campus, academic year): tuition $63,720 + fees $1,584 + housing $11,283 + food $7,532 — which is exactly DU's own 'Billable Costs' subtotal row. DU runs on QUARTERS (fall, winter, spring): the flat full-time rate is $21,240 a quarter for 12-18 credits, so the annual figure is three quarters, not two semesters. Its headline cost of attendance is $87,581, adding books, transportation, personal expenses and loan fees that this guide excludes; the $2,200 health insurance is billable but waivable with other cover and is also excluded. The previous stored $62,000 was an unresearched ballpark and understated the cost by $22,119. Denver is a high-sticker private; athletic aid is the main lever."
     },
     "confRecord": [
       {

@@ -569,11 +569,11 @@
     "soccerLevel": "CAA — Strong",
     "cost": "~$62k/yr",
     "fin": {
-      "costNum": 62000,
-      "internationalNote": "Hofstra full COA is ~$62k/yr (2025-26). Athletic scholarship can cover 25–45% of COA. Merit aid available for international students. Long Island suburban campus with proximity to NYC — moderate-to-high living costs. Strong sports science and health programs.",
-      "tuition": 48000,
-      "roomBoard": 12000,
-      "fees": 2000,
+      "costNum": 80550,
+      "internationalNote": "Hofstra direct billed cost $80,550 (2026-27, Tier-1 verified from the Hofstra Bursar's official 2026-2027 Tuition & Fees schedule): full-time tuition $30,468 a term = $60,936 + university fee $392, technology fee $115 and activity fee $80 a term = $1,174 + Towers Double $6,300 a term = $12,600 + dining Option 5 $2,920 a term = $5,840. Room and dining are itemised separately by Hofstra rather than budgeted, so the combination used is stated here: a standard Towers Double and Option 5, which is the cheapest dining plan available to a first- or second-year (Options 2-4 are restricted to juniors and above). A suite without a lounge would be $114 a year more. ⚠ Do NOT use Hofstra's advertised $66,466 'tuition and fees' figure — that is the VOLUNTARY four-year locked-in rate ($32,726 a term), an optional hedge against future increases, not the standard rate. The previous stored $62,000 was an unresearched ballpark and understated the cost by $18,550. Long Island living costs are high; athletic and academic aid stack.",
+      "tuition": 60936,
+      "roomBoard": 18440,
+      "fees": 1174,
       "maxAthletic": 0.85,
       "maxAcademic": 10000,
       "aidType": "athletic"
@@ -1387,11 +1387,11 @@
     "soccerLevel": "CAA — Competitive",
     "cost": "~$48k/yr",
     "fin": {
-      "costNum": 48000,
-      "internationalNote": "Elon full COA is ~$48k/yr (2025-26). Athletic scholarship can cover 30–50% of COA. Merit scholarships available for international students with strong academic record. Small suburban campus in North Carolina with moderate cost of living.",
-      "tuition": 36000,
-      "roomBoard": 10000,
-      "fees": 2000,
+      "costNum": 68903,
+      "internationalNote": "Elon direct billed cost $68,903 (2026-27, Tier-1 verified from Elon's official 2026-2027 Newly Admitted Student Cost figures, cross-checked against the Student Financial Services rate schedule): tuition $50,386 + student activity fee $292 + health and wellness fee $690 + food and housing $17,535 — and $68,903 is exactly the 'Total' Elon itself publishes for tuition, fees, food and housing. Food and housing is based on an average room cost and the All-Access Basic meal plan; Elon has a TWO-YEAR residency requirement, so the on-campus figure is the applicable one. Books, personal expenses and transportation are excluded by convention. The previous stored $48,000 was an unresearched ballpark and understated the cost by $20,903 — Elon markets itself as a best-value private, and it may well be on net price, but its sticker is not low. Rates are based on full-time enrolment of 12-18 hours a semester.",
+      "tuition": 50386,
+      "roomBoard": 17535,
+      "fees": 982,
       "maxAthletic": 0.85,
       "maxAcademic": 8000,
       "aidType": "athletic"
@@ -1414,7 +1414,7 @@
       "academic": 58,
       "minutes": 48,
       "lifestyle": 0,
-      "value": 29
+      "value": 26
     },
     "confRecord": [
       {

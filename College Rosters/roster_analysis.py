@@ -33,14 +33,6 @@ except ImportError:
     sys.exit(1)
 
 
-# Disable urllib3 SSL warnings when we fall back to verify=False
-try:
-    import urllib3
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-except Exception:
-    pass
-
-
 # ---------------------------------------------------------------------------
 # 1. SCHOOL ROSTER URL CONFIG (corrected from v1)
 # ---------------------------------------------------------------------------
@@ -79,19 +71,14 @@ HEADERS = {
 # ---------------------------------------------------------------------------
 
 def fetch(url, timeout=20):
-    """Fetch URL. On SSL error, retry without verification (some athletics sites have cert issues)."""
+    """Fetch URL. Certificate verification is always enforced."""
     try:
         r = requests.get(url, headers=HEADERS, timeout=timeout)
         if r.status_code == 200:
             return r.text
         return None
-    except requests.exceptions.SSLError:
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=timeout, verify=False)
-            if r.status_code == 200:
-                return r.text
-        except Exception:
-            pass
+    except requests.exceptions.SSLError as e:
+        print(f"    [WARN] SSL error, skipping: {str(e)[:120]}")
         return None
     except Exception as e:
         print(f"    [WARN] fetch error: {type(e).__name__}: {str(e)[:120]}")

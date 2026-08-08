@@ -24,10 +24,12 @@ Fetch-based data loading — **never open index.html via file://**. Use `npx ser
 
 ### Step 1 — Read the repo state
 ```bash
-git log --oneline -10          # What version is live? What changed last?
-git status                     # Any uncommitted changes?
-git diff                       # If changes exist — what are they exactly?
+git fetch origin                # Is local behind origin? "git log -10" alone can't tell you this.
+git log --oneline -10           # What version is live? What changed last?
+git status                      # Any uncommitted changes? (post-fetch, this also shows ahead/behind)
+git diff                        # If changes exist — what are they exactly?
 ```
+**`git fetch origin` first, always — not optional.** On 2026-08-07 a session skipped this, worked from a local `main` that was 16 days / 65 commits behind `origin/main`, and after a `git pull` correctly merged the real history back in, reset past that merge and force-pushed the stale-based commit — silently dropping the entire COA cost campaign and roster refresh from `origin/main` for about a day (recovered 2026-08-08, see §6). `git log --oneline -10` on a stale local branch looks completely normal; it will not tell you 65 commits are missing. A fetch will.
 
 ### Step 2 — Read every file you will touch
 For every file you plan to modify, read it in full before proposing any change.

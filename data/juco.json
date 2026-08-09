@@ -7785,5 +7785,172 @@
     "njcaaRegionArea": "Oklahoma / western Arkansas",
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree — transfer prerequisite pathway"
+  },
+  {
+    "id": "lewis_clark_cc",
+    "name": "Lewis & Clark CC",
+    "full": "Lewis and Clark Community College",
+    "loc": "Godfrey, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 24",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "Four straight NJCAA DI Region 24 regular-season titles (2021-2024) plus the 2024 region tournament title and a 2024 Midwest District final appearance (one win from the NJCAA DI national tournament); leading Region 24 again through the fall 2025 portion of 2025-26 (12-5-1 overall, 5-2 in region). No confirmed 2025 NJCAA national top-5 ranking or All-America selection found at time of research, so classified Standard rather than Elite despite the consistent regional record. Verified via official njcaaregion24.com standings (2021-22 through 2025-26) and head coach John Dunn's official bio.",
+    "njcaaRegion": "Region 24",
+    "njcaaRegionArea": "Illinois",
+    "profileDepth": "full",
+    "color": ["#dbeafe", "#1e3a8a"],
+    "mapX": 389,
+    "mapY": 196,
+    "domain": "lc.edu",
+    "url": "https://www.trailblazers.lc.edu/sports/msoc/index",
+    "degreeTitle": "Associate in Applied Science (AAS) — Exercise Science",
+    "acuAlign": 11,
+    "acuAlignNote": "Lewis & Clark offers a genuine dedicated Exercise Science AAS (60 credit hours, Tier-1: 2026-27 catalog, catalog.lc.edu) covering exercise physiology (XSCI 135), biomechanics (XSCI 145), exercise assessment & prescription (XSCI 140), exercise for special populations (XSCI 220), sport and exercise psychology (XSCI 200/240), nutrition (BIOL 161), anatomy-physiology (BIOL 141, an alternative to BIOL 132), and a supervised Exercise Science Internship (XSCI 271) — plus articulated transfer agreements to SIUE and Missouri Baptist University for students continuing to a 4-year degree. Meaningfully stronger and more direct alignment with ACU's BESS units than the 'Athletic Training-adjacent' pattern typical of most JUCOs in this guide, though it remains a 2-year AAS without upper-division exercise-science coursework.",
+    "acuUnits": [
+      {"unit": "ANAT100", "covered": true},
+      {"unit": "EXSC222", "covered": true},
+      {"unit": "BIOL125", "covered": true},
+      {"unit": "EXSC225", "covered": true},
+      {"unit": "EXSC322", "covered": true},
+      {"unit": "EXSC394", "covered": false},
+      {"unit": "EXSC224", "covered": true},
+      {"unit": "EXSC321", "covered": true},
+      {"unit": "EXSC204", "covered": false},
+      {"unit": "EXSC216", "covered": true},
+      {"unit": "EXSC199", "covered": true},
+      {"unit": "EXSC296", "covered": false},
+      {"unit": "EXSC187", "covered": false},
+      {"unit": "EXSC230", "covered": true},
+      {"unit": "EXSC122", "covered": true},
+      {"unit": "EXSC398", "covered": false}
+    ],
+    "soccerLevel": "NJCAA Division I — Region 24 (Illinois)",
+    "soccerLevelShort": "NJCAA DI — Region 24",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "2943",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Lewis & Clark is a public community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 17141,
+      "tuition": 7616,
+      "roomBoard": 8685,
+      "fees": 840,
+      "maxAthletic": 0.6,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Lewis & Clark's 2026-27 out-of-state/international tuition rate is $272/credit hour plus $30/credit hour in mandatory fees (Tier-1: lc.edu/pay-for-college/tuition.html) — $302/credit hour combined. At the college's own 28-credit/year full-time Cost of Attendance basis (catalog.lc.edu Financial Aid section, 2026-27 catalog), that is tuition $7,616 + fees $840. L&C has NO on-campus housing (commuter college — see facilityDetails.housing), so `roomBoard` uses the college's own official Independent-Student 'Living Expenses (Food & Housing)' allowance of $8,685/yr from that same COA table, not a housing bill. Direct billed cost: $17,141/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board, though with no campus housing bill the practical benefit is mostly tuition/fee coverage plus help toward the student's own off-campus living costs; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {"yr": 2025, "pos": "1st Region 24 D1 (12-5-1)", "note": "12-5-1 overall (.694), 5-2 in Region 24 play through the fall 2025 portion of the season; a 6-game spring 2026 slate against 4-year opposition (Lindenwood, Maryville, Harris-Stowe, McKendree, UMSL, SIUE) followed. Verified via official njcaaregion24.com 2025-26 standings."},
+      {"yr": 2024, "pos": "1st Region 24 D1 — Region Champs (15-5)", "note": "15-5 overall; won the Region 24 regular season AND the post-season region tournament; reached the NJCAA DI Midwest District final, one win short of the national tournament. Verified via official njcaaregion24.com 2024-25 standings and head coach John Dunn's official bio."},
+      {"yr": 2023, "pos": "1st Region 24 D1 (10-3-4)", "note": "10-3-4 overall (.706); won the Region 24 regular season. Verified via official njcaaregion24.com standings and head coach John Dunn's official bio."},
+      {"yr": 2022, "pos": "1st Region 24 D1 (8-5-2)", "note": "8-5-2 overall; won the Region 24 regular season in John Dunn's first season as head coach. Source: John Dunn's official Lewis & Clark coaching-record table (njcaaregion24.com's 2022-23 standings page returned duplicate 2023-24 data at time of research — a site display bug, not used)."},
+      {"yr": 2021, "pos": "1st Region 24 D1 (12-5-1)", "note": "12-5-1 overall, 6-0-1 in Region 24 play (.929) — the top regional record, under the prior head coach (pre-dates John Dunn's 2022 arrival). Verified via official njcaaregion24.com 2021-22 standings."}
+    ],
+    "titles": [
+      "NJCAA DI Region 24 regular-season champions 2021-2024 (four straight)",
+      "2024 NJCAA DI Region 24 post-season tournament champions",
+      "2024 NJCAA DI Midwest District finalist — one win from the national tournament",
+      "Leading Region 24 again through the fall 2025 portion of 2025-26 (12-5-1)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": ["No MLS SuperDraft picks confirmed in the last 5 years — head coach John Dunn has personally sent 6+ players to NCAA D1 programs plus top NCAA D2/D3/NAIA programs across his tenure (per his official bio); the program's value is the 4-year transfer pathway, not a pro pipeline."],
+      "draftRank": "JUCO — four straight NJCAA DI Region 24 regular-season titles (2021-2024) under head coach John Dunn; primary value is the NCAA D1/D2 transfer pipeline, not an MLS pathway.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No alumni/next-level tracking page found anywhere on trailblazers.lc.edu (checked the full site nav). Head coach John Dunn's official bio states he has sent '6+' players to NCAA D1 plus top D2/D3/NAIA programs, but with no dated window or per-year breakdown to compute a rate from. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 64,
+      "technical": 58,
+      "fitness": 62
+    },
+    "devScoresNote": "Tier-1: head coach John Dunn holds a USSF 'C' License, multiple prior head-coaching stops (WVU Tech, Indiana Tech) with national-tournament experience and 2x conference Coach of the Year, plus a dedicated goalkeeping coach (Hunter Deeken) and assistant (Parker Medina) — genuinely deep staffing for a JUCO. Games are hosted on a natural grass and turf soccer-specific field at Glazebrook Park (no video-analysis/GPS technology mentioned on the official facilities page). A dedicated HEAD strength & conditioning coach (Dustin Duncan) runs individualized, periodized programming for all athletes with testing three times a year (Aug/Dec/May) — notably above typical JUCO S&C provision.",
+    "fitOlivier": 48,
+    "lensScores": {
+      "overall": 48,
+      "soccer": 54,
+      "academic": 73,
+      "minutes": 75,
+      "lifestyle": 0,
+      "value": 56
+    },
+    "tags": ["soccer", "acad"],
+    "facilities": [
+      "Glazebrook Park — dedicated grass and turf soccer field",
+      "Dedicated head strength & conditioning coach (individualized, periodized programs)",
+      "Exercise Science AAS with SIUE and Missouri Baptist transfer agreements"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Glazebrook Park, Godfrey, IL — dedicated grass and turf soccer field shared with women's soccer; official facilities page does not publish fixed seating capacity.",
+      "trainingFields": "Same Glazebrook Park complex; both grass and turf fields used for training and matches.",
+      "strengthConditioning": "Dedicated HEAD strength & conditioning coach (Dustin Duncan) serving all athletes, with individualized periodized programming and testing three times a year (August, December, May) — notably above typical JUCO S&C provision.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages. The testing-based S&C program is the main sports-science element.",
+      "sportsMed": "Standard JUCO athletic training support; a $2.48M facilities project (Illinois Business Journal, Feb 2021) added a new weight room and training room to the college's River Bend Arena complex.",
+      "academicLabs": "Genuine Exercise Science AAS coursework (anatomy-physiology, exercise physiology, biomechanics) gives real classroom/lab exposure relevant to the ACU pathway.",
+      "extras": "Godfrey is a small Mississippi River town directly across from St. Louis, MO.",
+      "note": "A dedicated head S&C coach and a real Exercise Science degree are genuine strengths for a JUCO; the trade-offs are a small-town, cold-winter setting and zero on-campus housing.",
+      "housing": {
+        "available": false,
+        "note": "No on-campus residence halls found anywhere on lc.edu — the Campus Life section (Student Clubs & Organizations, Student Government, Recreational Facilities) has no housing/residence-life entry at all, and student housing near campus (e.g. Trailblazer Commons) is privately operated, not college-run. Consistent with L&C being a commuter community college."
+      }
+    },
+    "culture": {
+      "vibe": "Godfrey, Illinois is a small town on the Mississippi River bluffs, directly across from St. Louis, Missouri — a genuinely rural/suburban commuter-college setting, not a city campus. The soccer program recruits heavily internationally (Spain, Latvia, Japan, South Korea, France, Colombia, Argentina, Scotland, Ireland, Ghana, Northern Ireland, Israel and Germany are all represented on the 2026-27 roster), so an Australian would join an already globally diverse squad.",
+      "thingsToDo": "Limited on-campus social life given the commuter-college setup; St. Louis, Missouri — with its own professional sports and nightlife scene — is a roughly 25-30 minute drive across the river, the main outlet for off-campus life.",
+      "socialScene": "No on-campus residence halls — the team's social fabric runs through training and the locker room rather than dorm life; some players use privately-operated off-campus housing near campus.",
+      "olivierMatch": "★★ Cold-winter, non-city, no-on-campus-housing Godfrey is a genuine lifestyle mismatch for a warm-city-preferring Sydney athlete, but it trades that off against one of the strongest coaching CVs and most consistent regional winning records of any JUCO in the guide, plus a real Exercise Science degree with named transfer pathways.",
+      "lifestyleTags": "Rural/small-town, cold winters, international squad, strong coaching, no campus housing"
+    },
+    "courses": [
+      "XSCI 135 — Exercise Physiology",
+      "XSCI 145 — Intro to Biomechanics",
+      "XSCI 140 — Assessment & Exercise Prescription",
+      "XSCI 271 — Exercise Science Internship"
+    ],
+    "rec": "Lewis & Clark Community College offers one of the strongest coaching environments among JUCOs in this guide: head coach John Dunn holds a USSF 'C' License, has led four straight NJCAA DI Region 24 regular-season titles (2021-2024) plus the 2024 region tournament and a Midwest District final appearance, and has personally sent 6+ players on to NCAA D1 programs. The program plays on a dedicated grass-and-turf soccer field and gets genuine sports-science support from a dedicated head strength & conditioning coach. Academically, L&C runs a real Exercise Science AAS with direct transfer agreements to SIUE and Missouri Baptist. The trade-off is stark: Godfrey is a small, cold-winter Midwestern town with no on-campus housing at all, a significant lifestyle and logistics mismatch for a warm-city-preferring Sydney athlete.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": ["Raitis Bomis (So·MID)", "Cade Galaway (So·MID)", "David Sanchez (So·MID)"],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": ["Hugo Jesse (Fr·MID)", "Jackson Kiser (Fr·MID)", "Takumi Uerea (Fr·MID)", "Craig Moore (R.Fr·MID)"],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {"year": 2027, "yr_label": "Yr 1", "pct": 70, "label": "Established starter"},
+        {"year": 2028, "yr_label": "Yr 2", "pct": 83, "label": "Captain candidate"}
+      ],
+      "trajectoryNote": "JUCO 2-year program — of the 7 midfielders on the 2026-27 roster, 3 sophomores (Bomis, Galaway, Sanchez) clear before Olivier's August 2027 start; the other 4 (3 true freshmen plus one redshirt-freshman) return as sophomores/finalists in 2027-28, directly competing with Olivier in his Yr1. Smallest midfield pool and smallest returning-competitor count of any JUCO in the guide. ⚠ Set by direct comparison against peer JUCOs' stored trajectories rather than CLAUDE.md's §14 Opportunity Score table, which is a documented, unresolved gap for JUCOs (CLAUDE.md §6 group E) — that table cannot reproduce ANY of the 30 pre-existing JUCOs' stored Yr1/Yr2 values (its literal output for this roster would be Yr1≈20%, drastically out of line with every peer). Owner-approved approach (2026-08-09): match the real-world judgment scale the other 30 JUCOs were set on, pending the same recalibration they are all pending. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "L&C's roster page labels its column 'Hometown/High School' but it genuinely doubles as a previous-school field for transfers — 4 of 30 players on the 2026-27 roster show a prior college (Ruelke from Southwest Mississippi CC, Nakagawa from Cowley College, Curto from William Carey University, Marin from Connors State College), none of them midfielders. All 7 midfielders came directly from high school or a prep academy with zero JUCO/4-year transfers — a clean freshman-entry signal at the midfield position specifically, even though the roster overall does carry transfers at other positions."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Genuine dedicated Exercise Science AAS with real transfer agreements (SIUE, Missouri Baptist) — stronger academic alignment than most JUCOs in the guide."
   }
 ]

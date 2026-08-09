@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v44.63 (2026-08-08)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v44.65 (2026-08-09)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -58,7 +58,7 @@ For data work, read the specific conference file:
 | Ivy League | `data/ivy.json` | Princeton, Yale (2) |
 | D2, NAIA, D3 | `data/d2.json` | Nova SE, Barry, Lynn, PBA, Cal State LA, St. Edward's, Georgian Court, U of Charleston, Columbia College, Oklahoma City, Keiser, Chapman (12) |
 
-### School → File Reference Table (111 schools)
+### School → File Reference Table (112 schools)
 
 **Maintenance rule: update this table whenever a school is added, removed, or changes conference file.**
 This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (commit checklist).
@@ -107,6 +107,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Iowa Western | `data/juco.json` | `iowa_western` | JUCO | NJCAA DI |
 | Johnson County CC | `data/juco.json` | `johnson_county_cc` | JUCO | NJCAA DII / KJCCC |
 | Keiser | `data/d2.json` | `keiser` | NAIA | Sun Conference |
+| Lewis & Clark CC | `data/juco.json` | `lewis_clark_cc` | JUCO | NJCAA DI / Region 24 |
 | Louisville | `data/acc.json` | `louisville` | D1 | ACC |
 | LSU Eunice | `data/juco.json` | `lsu_eunice` | JUCO | NJCAA DI / Region 14 |
 | Murray State (OK) | `data/juco.json` | `murray_state_ok` | JUCO | NJCAA DI / Region II |
@@ -1187,7 +1188,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v44.63 (2026-08-08).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v44.65 (2026-08-09).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1197,8 +1198,8 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ### State snapshot (update only when it changes)
 
-- **111 schools**, all full-profile, across 10 conference JSON files. **111 coaches** in `coaches.json`, ranked 1–111.
-- **JUCO section: 30 schools**, spanning 7 NJCAA regions (1 AZ, 2 OK, 6 KS, 8 FL — capped at 3, only 3 of 28 FCSAA colleges field men's soccer, 11 IA/NE, 14 TX/LA, 15 NY) plus Santa Monica, which competes in **CCCAA, not NJCAA, and therefore deliberately has no `njcaaRegion`**. All 30 flagged `juco2yr:true`. The Fit Score formula is identical for JUCO and non-JUCO — no weight redistribution, since ACU was removed from the formula entirely.
+- **112 schools**, all full-profile, across 10 conference JSON files. **112 coaches** in `coaches.json`, ranked 1–112.
+- **JUCO section: 31 schools**, spanning 8 NJCAA regions (1 AZ, 2 OK, 6 KS, 8 FL — capped at 3, only 3 of 28 FCSAA colleges field men's soccer, 11 IA/NE, 14 TX/LA, 15 NY, 24 IL) plus Santa Monica, which competes in **CCCAA, not NJCAA, and therefore deliberately has no `njcaaRegion`**. All 31 flagged `juco2yr:true`. The Fit Score formula is identical for JUCO and non-JUCO — no weight redistribution, since ACU was removed from the formula entirely. **v44.65 added Lewis & Clark CC (Godfrey, IL, Region 24)** — first Illinois JUCO in the guide. Its `minutesOutlook.trajectory` (Yr1 70% / Yr2 83%) was set by direct analogy to peer JUCOs' stored numbers, not from §14's Opportunity Score table — that table still cannot reproduce any of the 30 pre-existing JUCOs' stored anchors (open item, group E below), and applying it literally here would have given Yr1≈20%, a stark outlier against every peer for no real reason. Owner-approved 2026-08-09.
 - **Fit Score (v37.1) = Soccer Program Quality 40% + Minutes Outlook 35% + Climate 15% + City 10%.** GPA, cost and ACU alignment are **not** inputs — each has its own dedicated view (ATAR/budget toggles, Financial Model, ACU Alignment tab). The With Minutes / Base Fit score-mode toggle and the Soccer-First lens were both retired as redundant. `recalculateAllScores()` runs once on page load from `initApp()`.
 - **Validator baseline: `Issues: 0`.** It has read 0 since v42.34, when the last line (a Stony Brook coach-name gap) cleared. **The count must never increase from a session's changes.** The v36 code-review backlog that opened at 174 issues was cleared across v36.1–v36.8; see CHANGELOG.md's v36 entry.
 - **`roster_season` doubles as the roster-refresh ledger** — the Minutes Outlook tab shows at a glance which schools are on 2026-27 data and which are still on 2025-26. Current: **62 on 2026-27, 43 on 2025-26, 6 `available:false`** (re-counted from the data files v44.55).

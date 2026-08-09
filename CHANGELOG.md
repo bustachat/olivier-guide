@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.65 (2026-08-09) — Add Lewis & Clark Community College (JUCO, Change Type 1)
+
+**New school: Lewis & Clark CC (Godfrey, IL), NJCAA Division I, Region 24 — the guide's 31st JUCO and first Illinois JUCO.** Full profile, all fields Tier-1 researched via Claude for Chrome (the in-app browser CloudFront-403'd trailblazers.lc.edu, matching Suffolk CC's known failure mode — real Chrome reached it fine). `fitOlivier` 48, coach John Dunn ranked 62nd of 112 (`overallScore` 68, `rk-strong`).
+
+**Notable findings:**
+- Head coach John Dunn has one of the deepest CVs of any JUCO coach in the guide — three prior head-coaching stops (WVU Tech, Indiana Tech, both NAIA), an NCAA D1 assistant year at SIUE, a USSF 'C' License, and four straight NJCAA DI Region 24 regular-season titles (2021-2024) plus a 2024 Midwest District final appearance (one win from Nationals).
+- LC runs a genuine dedicated Exercise Science AAS (not "Athletic Training-adjacent" like most JUCOs in the guide), with real transfer agreements to SIUE and Missouri Baptist — `acuAlign` 11/16, well above the JUCO norm.
+- No on-campus housing anywhere at LC (confirmed by the absence of any housing/residence-life page across lc.edu's Campus Life section) — `housing.available: false`, −6 Fit penalty applied.
+- **Roster class-year semantics resolved cleanly for a fresh 2026-27 pull**: 3 of 7 midfielders (sophomores) clear before Olivier's Aug 2027 arrival; the other 4 (3 true freshmen + 1 redshirt-freshman) return as finalists directly competing in his Yr1.
+- **Hit the documented, unresolved §14 JUCO trajectory gap.** §14's Opportunity Score table cannot reproduce any of the 30 pre-existing JUCOs' stored Yr1/Yr2 trajectory values — applying it literally to this roster gives Yr1≈20%, drastically out of line with every peer (56-72%). Owner-approved resolution (2026-08-09): set `trajectory` by direct analogy to peer JUCOs with a similar roster shape (smallest MF pool and smallest returning-competitor count of any JUCO in the guide → Yr1 70% / Yr2 83%), consistent with the real-world judgment scale the other 30 were set on, pending the same §14 recalibration they are all pending. This does not resolve the underlying gap — see CLAUDE.md §6 group E.
+
+**Files touched:** `data/juco.json` (new school object), `data/coaches.json` (new coach + full re-rank, 111→112), `data/conferences.json` (guideSchools[], desc, olivierNote: 30→31 JUCOs, 7→8 NJCAA regions), `data/conf-prestige.json` (programsInGuide, relevance), `js/app.js` (DOMAINS, SITE_URLS, SOCIAL, CONF_SECTIONS intro count), `CLAUDE.md` (School → File Reference Table, school/coach counts, §6 JUCO trajectory note).
+
+**Gates:** `validate_schools.py` PASS (16 pre-existing warnings, 0 new), `node validate_consistency.js` → **Issues: 0** (112 schools, 112 coaches, all cascades — FIT, HOUSING, FUNDING, FIN, MO-KEYS, PROSE, CHIPS — clean on first pass), `node --check` on all touched JS files, full local preview test (all 9 modal tabs render with no `undefined`/`NaN`, map dot verified on land via `isPointInFill`, Coaches Rankings/Conferences/Financial Model/Minutes Outlook all confirmed correct, ACU Alignment correctly excludes the school via `juco2yr`, regression-checked an untouched JUCO).
+
+`guideVersion` v44.64 → v44.65.
+
+---
+
 ### v44.64 (2026-08-09) — fix: self-XSS in Explore search filter summary (Change Type 11, security)
 
 Security review (`/security-review`, full-codebase pass since the repo has no git diff to review from a clean `main`) found one real issue: `updateFilterSummary()` in `js/app.js` interpolated the raw, unescaped `searchKeyword` (sourced directly from the Explore Schools search box) into an `innerHTML` assignment, while every other user-text sink in the file (the autocomplete dropdown) already passed through an `esc()` helper. A payload typed into the search box — e.g. `<img src=x onerror=alert(1)>` — would execute. No URL/hash/query-string reflection exists anywhere in the codebase, so this was self-XSS only (requires the victim to type/paste the payload into their own browser), not exploitable against another user; already tracked as a known low-priority item in CLAUDE.md §6 group G before this fix.

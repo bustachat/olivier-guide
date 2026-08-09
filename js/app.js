@@ -1990,12 +1990,17 @@ function applyFilters(){
     const hasVisible=[...sec.querySelectorAll('.ucard')].some(c=>c.style.display!=='none');
     sec.style.display=hasVisible?'':'none';
   });
-  // Show/hide region sub-headers whose group has no visible cards left
+  // Show/hide region sub-headers AND their grids whose group has no visible cards left.
+  // Hiding only the header left an empty but still-laid-out .region-grid behind — its own
+  // margin-bottom (24px) doesn't collapse away just because it has zero visible children,
+  // so N empty regions stacked N*24px of dead space between the conference intro and the
+  // next visible region (found live, v44.69: 7 empty NJCAA regions = ~168px gap).
   document.querySelectorAll('.region-subhead').forEach(head=>{
     const grid=head.nextElementSibling;
     if(grid && grid.classList.contains('region-grid')){
       const hasVisible=[...grid.querySelectorAll('.ucard')].some(c=>c.style.display!=='none');
       head.style.display=hasVisible?'':'none';
+      grid.style.display=hasVisible?'':'none';
     }
   });
   updateFilterSummary(visible);

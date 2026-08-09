@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.69 (2026-08-09) — fix: empty NJCAA-region grids left ~24px of dead margin each after a search filter
+
+**Owner caught this by looking at the live Explore tab** — searching for a single school (e.g. "Lewis & Clark CC") inside the expanded JUCO section left a large blank gap between the conference intro tile and the one visible school card.
+
+**Root cause, found by measuring the live DOM:** `applyFilters()` groups JUCOs into per-NJCAA-region sub-grids (`.region-grid`, one `.region-subhead` header each). When a search/filter leaves a region with zero visible cards, the code hid the region's *header* (`head.style.display='none'`) but never touched the *grid* itself — an empty `.region-grid` still renders as `display:grid` with `height:0`, but its own `margin-bottom:24px` doesn't collapse away just because it has no visible children. With 7 of 9 NJCAA regions empty (only Region 24/Illinois matched "Lewis & Clark"), that stacked 7×24px ≈ 168px of pure dead space — matching what was visible live.
+
+**Fix:** `js/app.js` `applyFilters()` now also sets `grid.style.display='none'` alongside the header whenever a region has no visible cards. One line.
+
+**Verified live in local preview:** measured the actual gap before (`introRect.bottom` to `region24Rect.top` = ~188px) and after (24px — the single intended header margin) using the exact repro (expand all sections, then search "lewis & clark cc"). Regression-checked: clearing the search correctly restores all 9 region grids/headers to visible. `Issues: 0` unaffected (display-only CSS fix, no data touched).
+
+`guideVersion` v44.68 → v44.69.
+
+---
+
 ### v44.68 (2026-08-09) — fix: "Not measured" Pro Pipeline tile text overflowed its own box
 
 **Owner caught this by looking at the live tile after v44.67** — the "Not measured" stat box (shown for JUCOs with a real cross-checked name but not enough hits for a rate, e.g. Lewis & Clark) rendered the word "measured" spilling past the box's right edge. Measured the actual DOM: the box is a fixed `min-width:92px` (60px of usable width after padding), but "measured" at the box's `font-size:1.3rem` bold renders at ~96px — a 36px overflow, visible as text clipping past the rounded border.

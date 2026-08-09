@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.67 (2026-08-09) — process fix + full audit: 22 pre-existing neutral JUCOs cross-checked for real D1 transfers
+
+**Owner follow-up to v44.66: "I dont want to miss this D1 Transfer / MLS step for future builds. I have noticed other Collages with similar stats."** Two-part request, both closed this session: (1) a permanent process rule so a `nextLevel` neutral never again ships with generic boilerplate, (2) a full audit of the other 21 pre-existing neutral JUCOs (the 20 CLAUDE.md already listed as "publish nothing usable" plus Angelina College) using the same cross-check method that worked for Lewis & Clark.
+
+**Process fix (CLAUDE.md §5b + §7 Phase 1E).** New permanent rule: before finalizing `notable[]`/`nextLevel.note` on any JUCO landing on the neutral factor, cross-check the school's exact name against TopDrawerSoccer's annual D1 transfer-tracker articles (discovery only, Rule 0), Tier-1-verify any hit on the *destination* school's own roster, and fold a confirmed name into the prose even when the number correctly stays neutral. New sub-rule: when a cross-check turns up **multiple** confirmed transfers for one school across the two tracker years, that clears the same bar as Phoenix College's existing n=1 precedent — store it as a real measured `perYear`, but always exclude it from `D1_RATE_DIVISOR` (it's a partial two-year cross-check, not the comprehensive alumni-page census the divisor was built from).
+
+**Audit results — all 22 checked by exact name against the 2024 and 2025 trackers, every hit Tier-1-verified before use, unconfirmable leads dropped rather than guessed:**
+- **Promoted to a real measured rate** (Phoenix precedent, excluded from divisor): **Eastern Florida State** — 3 confirmed 2025 transfers (Achermann-Stanfield→Tulsa, Emmanuel→SMU, McCoy→USF), `perYear` 3.0, Fit 62→65. **Monroe College** — 4 confirmed 2024-25 (Jinkinson→Missouri State, Weir→Wisconsin-Milwaukee, Lee & Silvestrini→Xavier), `perYear` 2.0, Fit unchanged at 59 (its `lensScores.soccer` was independently found stale at 72 — pre-existing drift from before `nextLevel` existed, unrelated to this change — and corrected to 52 in the same cascade, since it was already being recomputed).
+- **One confirmed name, stays neutral, prose enriched, no score change:** Johnson County CC (Zuñiga→Wisconsin-Milwaukee), LSU Eunice (Jeanfreau→Presbyterian), Angelina College (Traore→Memphis), Daytona State (Zambrano→Syracuse).
+- **Genuinely nothing found across both tracker years, unchanged:** the other 16 — Santa Monica, Miami Dade, Northeast CC, Barton CC, Mohave CC, Glendale CC, Dodge City CC, Neosho County CC, Iowa Lakes CC, Blinn College, Coastal Bend College, Nassau CC, Ulster CC, Suffolk CC, Westchester CC, Murray State (OK). This is a legitimate research outcome (16 of 22), not a shortfall — matches the base rate already established when only 8 of the original 29 JUCOs had any measurable alumni data even with a *dedicated* alumni page.
+
+**Verified live in local preview**: EFSC and Monroe's Pro Pipeline tiles now show a real "X.X D1 transfers per year" figure instead of "Not measured"; the four prose-only schools show the confirmed name in Notable Players; `Issues: 0` confirmed the hand-computed EFSC/Monroe cascade (devAvg → soccerQualityScore → fitOlivier → lensScores.overall/soccer/value) matches the live `scores.js` formula exactly.
+
+Full detail: CLAUDE.md §5b "Neutral is a correct NUMBER" section and `feedback_neutral_fields_still_need_real_content` memory.
+
+`guideVersion` v44.66 → v44.67.
+
+---
+
 ### v44.66 (2026-08-09) — fix: Lewis & Clark's Pro Pipeline tab was factually thin, not just "neutral"
 
 **Owner caught this by looking at the live app** — the newly-added Lewis & Clark CC (v44.65) showed a bare "Not measured" tile on Pro Pipeline with generic prose, no different from any other JUCO with no alumni page. Asked directly why the MLS Pipeline analysis "wasn't done."

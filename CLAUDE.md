@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v44.66 (2026-08-09)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v44.67 (2026-08-09)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -1046,17 +1046,27 @@ against the NCAA directory. Do not re-read them; do not trust a summary of them.
 | Phoenix College | PDF: `d2o2figo6ddd0g.cloudfront.net/p/q/rwrkzf3a0lwf0k/moving_on.pdf` | ⚠️ n=1 — 3 D1 (2024-25). Real PDF is the CloudFront URL; `/information/moving_on.pdf` is only a viewer. Chrome's PDF plugin exposes NO text — download + `pdfplumber`. |
 | Angelina College | `angelinaathletics.com/sports/bsb/2025-26/releases/20260528fiungj` | ⚠️ n=1 — 2 D1. A news release, not a maintained page; says "list (so far)". |
 
-**Confirmed to publish NOTHING usable (20) → neutral 0.3773. Do not re-check:**
-Barton CC (submission form only) · Daytona State · Eastern Florida State · Northeast CC · Monroe ·
-**Glendale CC (AZ)** · Johnson County CC · Mohave CC · Dodge City CC · Neosho County CC · Iowa Lakes CC ·
-Blinn College · Coastal Bend College · LSU Eunice (form only) · Nassau CC (survey only) · Ulster CC ·
-Suffolk CC · Westchester CC · **Santa Monica** · Miami Dade.
+**None of these 9 have a dedicated alumni page. 20 more were confirmed to publish nothing usable either** (Barton CC, Daytona State, Eastern Florida State, Northeast CC, Monroe, Glendale CC (AZ), Johnson County CC, Mohave CC, Dodge City CC, Neosho County CC, Iowa Lakes CC, Blinn College, Coastal Bend College, LSU Eunice, Nassau CC, Ulster CC, Suffolk CC, Westchester CC, Santa Monica, Miami Dade) — **that finding stands; it is a claim about alumni PAGES, not about transfer-tracker cross-checks (see next section), which is a separate, later-added check.**
 
-**Angelina College also takes the neutral (owner-approved v42.12)** — a one-off news release that
-self-declares incompleteness ("the list (so far)") is not a maintained alumni page. **Phoenix College
-keeps its measured 0.593**, because its PDF is an annual series; it is merely excluded from the divisor.
+7 measured (this table) + 1 stored-but-excluded (Phoenix, n=1) + 2 more stored-but-excluded via tracker cross-check (EFSC, Monroe — see below) + 21 pure-neutral (the 20 above + Angelina) = **31** ✓
 
-7 measured + 1 stored-but-excluded (Phoenix) + 21 neutral (20 + Angelina) = **29** ✓
+### Neutral is a correct NUMBER, not an excuse for empty prose (added v44.67, prompted by a v44.66 owner catch)
+
+**"No dedicated alumni page" only settles whether `perYear` gets a value. It does NOT excuse the surrounding `notable[]`/`nextLevel.note` text from being generic boilerplate.** Found live v44.66: Lewis & Clark CC's Pro Pipeline tile correctly showed the neutral factor, but the prose next to it was pure template language ("no alumni page found... neutral, not measured") — the owner looked at the live app and asked directly why the analysis "wasn't done." The number was right; the tile still read as empty. The owner then asked for the full fix: a permanent process rule, plus an immediate audit of the other 21 pre-existing neutral JUCOs.
+
+**Permanent required step for every JUCO that lands on the neutral, whether newly added or already in the guide:** before finalizing `notable[]`/`nextLevel.note`, cross-check the school's exact name against a national third-party D1 transfer tracker (TopDrawerSoccer's annual "Men's Division I Transfer Tracker" articles — one per year, search-engine discoverable) — **discovery only, per RULE 0**, never store a fact from the tracker itself. Watch for name-collision traps (Lewis & Clark **Community College** vs Lewis & Clark **College**, Portland OR — same trap class as §5b's "seven ways an alumni page lies"). If a hit survives the name check, **Tier-1-verify it on the *destination* school's own official roster** (it will usually list the JUCO as "previous school" or "last school") before using it anywhere. A season-scoped roster URL (`/roster/2025`, `/roster/2024`) often finds a transferred player the *current* roster no longer shows — but if even that fails, the lead is unconfirmed and gets dropped, not guessed.
+
+**One confirmed hit ≠ a measured rate; MULTIPLE confirmed hits across the tracker's own years CAN become one, on the Phoenix College precedent.** A single tracker-year hit is crowd-sourced, self-declared incomplete evidence — fold it into `notable[]`/`draftRank` as color, leave `perYear` null, no score movement. But when cross-checking the *same two tracker years* independently turns up **multiple** confirmed transfers for one school, that clears the same bar Phoenix College's single annual PDF cleared (v42.12): store a real `perYear`, but **always EXCLUDE it from `D1_RATE_DIVISOR`** — it is a partial cross-check of two specific years, not the comprehensive multi-year alumni-page census the divisor's 7 schools were built from, so it must never be allowed to pull that constant around.
+
+**Audit of all 22 pre-existing neutral JUCOs (the 20 "publish nothing" + Angelina + Lewis & Clark): CLOSED v44.67, both tracker years (2024, 2025) checked by exact name.**
+
+| Outcome | Schools | Detail |
+|---|---|---|
+| **Promoted to measured, excluded from divisor** (Phoenix precedent) | **Eastern Florida State** (3 confirmed 2025 transfers: Achermann-Stanfield→Tulsa, Emmanuel→SMU, McCoy→USF; `perYear` 3.0), **Monroe** (4 confirmed 2024-25: Jinkinson→Missouri State, Weir→Wisconsin-Milwaukee, Lee & Silvestrini→Xavier; `perYear` 2.0) | Fit Score moved: EFSC 62→65, Monroe unchanged at 59 (its stale `lensScores.soccer` — 72, pre-existing drift unrelated to this change — corrected to 52 in the same cascade) |
+| **One confirmed name, stays neutral** | Johnson County CC (Zuñiga→Wisconsin-Milwaukee, 2025), LSU Eunice (Jeanfreau→Presbyterian, 2024), Angelina College (Traore→Memphis, 2025), Daytona State (Zambrano→Syracuse, 2024) | `notable[]`/`draftRank`/`nextLevel.note` enriched with the real name; `perYear` stays null, **no score change** |
+| **Genuinely nothing found, stays neutral** | Santa Monica, Miami Dade, Northeast CC, Barton CC, Mohave CC, Glendale CC (AZ), Dodge City CC, Neosho County CC, Iowa Lakes CC, Blinn College, Coastal Bend College, Nassau CC, Ulster CC, Suffolk CC, Westchester CC, Murray State (OK) | No changes — this is a legitimate research outcome (16 of 22), not a gap. Leads that didn't survive verification and were correctly dropped: Lezzar→CSUN (LSU Eunice, roster had no explicit previous-school field), Thallinger→Tulsa (Monroe, not on current roster), Hennah/Verdirosi→Missouri State (Northeast CC / EFSC, not on current roster), Smith→Oral Roberts (Angelina, page content didn't load the name), Zuniga→Wisconsin-Milwaukee (Daytona State, not on current roster) |
+
+See `feedback_neutral_fields_still_need_real_content` memory for the incident this originated from.
 
 ### Alumni-page discovery: SEVEN naming variants, no URL pattern
 `Next Level` (Tyler) · `Former Reivers` (Iowa Western) · `Matadors Moving On` (Arizona Western) ·
@@ -1188,7 +1198,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v44.66 (2026-08-09).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v44.67 (2026-08-09).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1391,8 +1401,9 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 - [ ] Soccer level description (free text for `soccerLevel`)
 - [ ] confRecord: last 5–6 years standings — Claude for Chrome → official conference website (Tier 1). For NJCAA: navigate to njcaaregion[N].com/sports/msoc/[YEAR]/standings. Never use placeholder text like "NJCAA DI play" — actual position and record are required.
 - [ ] Conference titles and notable finishes (for `titles[]`)
-- [ ] MLS picks last 5 years — Claude for Chrome → official MLS SuperDraft records (Tier 1)
+- [ ] MLS picks last 5 years — Claude for Chrome → official MLS SuperDraft records (Tier 1). Check the actual archive — do not infer `mlsPicks5yr` from general search absence.
 - [ ] Notable alumni and draft history
+- [ ] **JUCO only, before writing generic "neutral, not measured" text (§5b, added v44.67):** cross-check the school's exact name against a national D1 transfer tracker (discovery only, Rule 0), Tier-1-verify any hit on the destination school's own roster, fold a confirmed name into `notable[]`/`draftRank` — even when `nextLevel.perYear` correctly stays neutral.
 - [ ] Pro pipeline narrative
 
 **1F — Coach (all from official athletics staff page — Tier 1 only, never guess)**

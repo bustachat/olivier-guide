@@ -1110,20 +1110,21 @@
     "proPlayers": {
       "mlsPicks5yr": 2,
       "notable": [
+        "4 confirmed D1 transfers 2024-2025, Tier-1-verified on each destination school's own roster: Hugo Jinkinson (Missouri State, 2024), Ollie Weir (Wisconsin-Milwaukee, 2025), Gun Ha Lee and Alejandro Silvestrini (both Xavier, 2025).",
         "Monroe alumni have signed with USL Championship, USL League One, and MLS Next Pro clubs",
         "NYC metro pipeline — proximity to NYCFC, NY Red Bulls, and international academies",
         "3× national champions produce USL/professional-calibre graduates"
       ],
-      "draftRank": "JUCO level — USL/USL League Two pathway",
+      "draftRank": "JUCO — confirmed D1 transfer pipeline (4 named transfers 2024-2025) alongside a USL/USL League Two pathway",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
+        "d1Count": 4,
+        "totalCount": 4,
+        "yearsCovered": "2024-2025",
+        "years": 2,
+        "perYear": 2.0,
         "sourceUrl": null,
-        "note": "Sidearm page renders empty / parked lander; publishes no usable per-year D1 destination data. mlsPicks5yr is retained for display but the pipeline factor is neutral, NOT measured."
+        "note": "Sidearm alumni page renders empty / parked lander; publishes no usable per-year D1 destination data. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (discovery only, Rule 0) and Tier-1-verified 4 on their destination schools' own rosters: Jinkinson (Missouri State, 2024), Weir (Wisconsin-Milwaukee, 2025), Lee and Silvestrini (both Xavier, 2025). A fifth 2024 lead (Thallinger→Tulsa) could not be confirmed on Tulsa's current roster and is not counted. ⚠️ 2-year cross-check, not a comprehensive alumni-page census — EXCLUDED from the D1_RATE_DIVISOR, same treatment as Phoenix College's n=1 precedent (§5b)."
       }
     },
     "acRank": "NJCAA Level",
@@ -1183,7 +1184,7 @@
     },
     "lensScores": {
       "overall": 59,
-      "soccer": 72,
+      "soccer": 52,
       "academic": 42,
       "minutes": 73,
       "lifestyle": 50,
@@ -2101,8 +2102,9 @@
     ],
     "proPlayers": {
       "mlsPicks5yr": 0,
-      "draftRank": "JUCO level — D1 transfer pipeline and national championship pedigree",
+      "draftRank": "JUCO level — D1 transfer pipeline and national championship pedigree (confirmed 2024 D1 transfer: Syracuse)",
       "notable": [
+        "Carlos Zambrano transferred to NCAA D1 Syracuse for the 2024 season — confirmed on Syracuse's own official roster (\"Last School: Daytona State\").",
         "2025 NJCAA DI National Championship finalists — elite program credibility",
         "Top-5 JUCO D1 transfer feeder nationally",
         "Florida pathway to USF, FAU, FIU, UCF, and programs nationally"
@@ -2115,7 +2117,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "2025 NJCAA DI National Champions, yet publishes no usable alumni/transfer destination data. A title is a result and lives in titles[], not here — neutral, NOT measured."
+        "note": "2025 NJCAA DI National Champions, yet publishes no usable alumni/transfer destination data. A title is a result and lives in titles[], not here. Cross-checked TopDrawerSoccer's 2024/2025 D1 transfer trackers by name (discovery only, Rule 0) and Tier-1-verified one real transfer: Carlos Zambrano to Syracuse for 2024 (confirmed on Syracuse's own roster). A second 2025 lead (Zuniga→Wisconsin-Milwaukee) could not be confirmed on UWM's current roster and is not counted. One confirmed name from a non-exhaustive tracker isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
       }
     },
     "juco2yr": true,
@@ -3083,20 +3085,20 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [
+        "3 confirmed 2025 D1 transfers, Tier-1-verified on each destination school's own roster: Luc Achermann-Stanfield (Tulsa), Mukisa Emmanuel (SMU), Marcellus McCoy (South Florida) — a real, named subset of the program's own claimed '13 transfers in 2025' figure.",
         "No MLS SuperDraft picks confirmed in the last 5 years",
-        "13 players advanced to 4-year programs in 2025 — strong transfer pipeline",
         "Titan Soccer Complex hosted Orlando City B (USL) matches in 2016, evidence of pro-level facility standards even though not a direct player pipeline"
       ],
-      "draftRank": "JUCO — strong D1 transfer pipeline (13 transfers in 2025), not an MLS pipeline",
+      "draftRank": "JUCO — confirmed D1 transfer pipeline (3 named 2025 transfers verified, program claims 13 total that year), not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
+        "d1Count": 3,
+        "totalCount": 3,
+        "yearsCovered": "2025",
+        "years": 1,
+        "perYear": 3.0,
         "sourceUrl": null,
-        "note": "No maintained alumni destination page (2025 \"13 transfers\" figure is a count without verifiable D1 destinations) — neutral, NOT measured."
+        "note": "No maintained alumni destination page exists — the school's own '13 transfers in 2025' claim has no verifiable per-player breakdown. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (discovery only, Rule 0) and Tier-1-verified 3 for 2025 on their destination schools' own rosters: Achermann-Stanfield (Tulsa), Emmanuel (SMU), McCoy (South Florida). ⚠️ n=1 year, same treatment as Phoenix College's precedent (§5b) — stored as a real measured rate but EXCLUDED from the D1_RATE_DIVISOR (a single cross-checked year is not the comprehensive multi-year alumni-page census the divisor's 7 schools were built from, and the school's own '13' figure suggests this 3 is itself an undercount, not an overcount)."
       }
     },
     "devScores": {
@@ -3104,14 +3106,14 @@
       "technical": 66,
       "fitness": 48
     },
-    "fitOlivier": 62,
+    "fitOlivier": 65,
     "lensScores": {
-      "overall": 62,
-      "soccer": 49,
+      "overall": 65,
+      "soccer": 59,
       "academic": 42,
       "minutes": 66,
       "lifestyle": 50,
-      "value": 59
+      "value": 62
     },
     "tags": [
       "warm",
@@ -5954,9 +5956,10 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [
+        "Abdallah Traore transferred to NCAA D1 Memphis for the 2025 season — confirmed on Memphis's own official roster (\"Previous School: Angelina College\").",
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
+      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline (confirmed 2025 D1 transfer: Memphis)",
       "nextLevel": {
         "metric": "d1TransferRate",
         "d1Count": null,
@@ -5965,7 +5968,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Only a one-off news release (2 D1, 2025-26) that self-declares incompleteness (\"the list (so far)\") — not a maintained alumni page. Owner-approved neutral, NOT measured (finding recorded here, not in perYear)."
+        "note": "Only a one-off news release (2 D1, 2025-26) that self-declares incompleteness (\"the list (so far)\") — not a maintained alumni page; still owner-approved neutral (v42.12). Separately cross-checked TopDrawerSoccer's 2025 D1 transfer tracker by name (discovery only, Rule 0) and Tier-1-verified one real transfer: Abdallah Traore to Memphis for 2025 (confirmed on Memphis's own roster) — likely one of the release's own '2 D1' figure, not additional to it. One confirmed name from a non-exhaustive source isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
       }
     },
     "devScores": {
@@ -6213,9 +6216,10 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [
+        "Ryan Jeanfreau transferred to NCAA D1 Presbyterian College for the 2024 season — confirmed on Presbyterian's own official roster (\"Holy Cross / LSU Eunice\" as previous school).",
         "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the D1 transfer pathway, not a pro pipeline"
       ],
-      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
+      "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline (confirmed 2024 D1 transfer: Presbyterian)",
       "nextLevel": {
         "metric": "d1TransferRate",
         "d1Count": null,
@@ -6224,7 +6228,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Alumni page is a submission form only — no destination data published — neutral, NOT measured."
+        "note": "Alumni page is a submission form only — no destination data published. Cross-checked TopDrawerSoccer's 2024/2025 D1 transfer trackers by name (discovery only, Rule 0) and Tier-1-verified one real transfer: Ryan Jeanfreau to Presbyterian for 2024 (confirmed on Presbyterian's own roster). A second 2024 lead (Lezzar→CSUN) could not be cleanly confirmed — CSUN's roster shows him with a transfer marker but no explicit \"LSU Eunice\" text, so it is not counted. One confirmed name from a non-exhaustive tracker isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
       }
     },
     "devScores": {

@@ -1792,6 +1792,8 @@ function resolveConfGroup(conf) {
 
 
 
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
 let searchKeyword = '';
 
 function filterBySearch(keyword) {
@@ -1838,7 +1840,6 @@ function renderSearchSuggest(v){
   }).filter(x=>x.s>=0).sort((a,b)=> a.s-b.s || a.u.name.localeCompare(b.u.name)).slice(0,6);
   suggestList = scored.map(x=>x.u);
   if(inp) inp.setAttribute('aria-expanded','true');
-  const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   if(!suggestList.length){
     box.innerHTML = '<div class="suggest-empty">No schools match “'+esc(v)+'”</div>';
     box.classList.add('open');
@@ -2059,7 +2060,7 @@ function updateFilterSummary(count){
     html += `<span class="active-filter-tag">${label}<button class="active-filter-rm" aria-label="Remove ${label} filter" onclick="removeFilter('${type}','${val}',this)">×</button></span>`;
   });
   if(searchKeyword){
-    html += `<span class="active-filter-tag">Search: ${searchKeyword}<button class="active-filter-rm" aria-label="Clear search" onclick="clearSearch()">×</button></span>`;
+    html += `<span class="active-filter-tag">Search: ${esc(searchKeyword)}<button class="active-filter-rm" aria-label="Clear search" onclick="clearSearch()">×</button></span>`;
   }
   el.innerHTML = html;
 }

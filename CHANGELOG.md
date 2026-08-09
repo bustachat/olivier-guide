@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.64 (2026-08-09) — fix: self-XSS in Explore search filter summary (Change Type 11, security)
+
+Security review (`/security-review`, full-codebase pass since the repo has no git diff to review from a clean `main`) found one real issue: `updateFilterSummary()` in `js/app.js` interpolated the raw, unescaped `searchKeyword` (sourced directly from the Explore Schools search box) into an `innerHTML` assignment, while every other user-text sink in the file (the autocomplete dropdown) already passed through an `esc()` helper. A payload typed into the search box — e.g. `<img src=x onerror=alert(1)>` — would execute. No URL/hash/query-string reflection exists anywhere in the codebase, so this was self-XSS only (requires the victim to type/paste the payload into their own browser), not exploitable against another user; already tracked as a known low-priority item in CLAUDE.md §6 group G before this fix.
+
+**Fix required two passes.** The first attempt just wrapped the value in `esc(searchKeyword)` and broke the page — `esc()` was a `const` scoped locally inside `renderSearchSuggest()`, invisible to `updateFilterSummary()`, throwing `ReferenceError: esc is not defined` on every keystroke. Caught via browser console during verification, not by static reading. Fixed by hoisting `esc()` to a top-level function (near the `searchKeyword` declaration) and removing the now-redundant local copy.
+
+Verified live in a local preview (`olivier-guide-live`, port 8790): typed the XSS payload into the search box and confirmed it now renders as escaped inert text (`&lt;img src=x onerror=alert('xss')&gt;`) with no alert and no console errors; confirmed `esc` is a defined global in the page context; confirmed normal search (typed "Clemson") still filters correctly with no regression. `node --check js/app.js` passes.
+
+`guideVersion` v44.63 → v44.64.
+
+---
+
 ### v44.63 (2026-08-08) — Financial Model tab UX redesign (Change Type 11)
 
 Owner flagged the Financial Model tab as taking up too much real estate: the 4 always-open `fin-explainer` info cards and the always-rendered wall of ~111 `fin-school-selector` buttons (all 111 schools are full-profile as of the COA campaign, so this had grown to the entire roster) dominated the page before any interaction.

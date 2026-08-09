@@ -7868,8 +7868,8 @@
     ],
     "proPlayers": {
       "mlsPicks5yr": 0,
-      "notable": ["No MLS SuperDraft picks confirmed in the last 5 years — head coach John Dunn has personally sent 6+ players to NCAA D1 programs plus top NCAA D2/D3/NAIA programs across his tenure (per his official bio); the program's value is the 4-year transfer pathway, not a pro pipeline."],
-      "draftRank": "JUCO — four straight NJCAA DI Region 24 regular-season titles (2021-2024) under head coach John Dunn; primary value is the NCAA D1/D2 transfer pipeline, not an MLS pathway.",
+      "notable": ["Daniel Freire (D, Rio de Janeiro, Brazil) transferred from Lewis & Clark to NCAA D1 Eastern Illinois for the 2025 season — confirmed on EIU's own official roster, which lists 'Lewis & Clark CC (Ill.)' as his previous school. No MLS SuperDraft picks confirmed in the last 5 years — head coach John Dunn's official bio states he has personally sent 6+ players to NCAA D1 programs plus top NCAA D2/D3/NAIA programs across his tenure; Freire is the one publicly confirmed name found via cross-checking national D1 transfer trackers. The program's value is the 4-year transfer pathway, not a pro pipeline."],
+      "draftRank": "JUCO — four straight NJCAA DI Region 24 regular-season titles (2021-2024) under head coach John Dunn, with confirmed NCAA D1 transfer output (Daniel Freire, Eastern Illinois, 2025); primary value is the NCAA D1/D2 transfer pipeline, not an MLS pathway.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "d1Count": null,
@@ -7878,7 +7878,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No alumni/next-level tracking page found anywhere on trailblazers.lc.edu (checked the full site nav). Head coach John Dunn's official bio states he has sent '6+' players to NCAA D1 plus top D2/D3/NAIA programs, but with no dated window or per-year breakdown to compute a rate from. Neutral — NOT measured."
+        "note": "No alumni/next-level tracking page found anywhere on trailblazers.lc.edu (checked the full site nav). Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's soccer transfer trackers by name and found one real, Tier-1-verifiable transfer: Daniel Freire to Eastern Illinois for 2025 (confirmed on EIU's own roster, which names Lewis & Clark CC as his previous school). That confirms real D1 output exists, but a single external tracker list is not an exhaustive record of every transfer in a given year (it is crowd-sourced and its own header says to report additions) — so it is deliberately NOT stored as a measured per-year rate, since one lucky match would understate head coach John Dunn's own claimed '6+' total transfers if treated as the whole picture. Neutral — NOT measured as a rate; see `notable[]` for the confirmed name."
       }
     },
     "devScores": {

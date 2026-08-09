@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.66 (2026-08-09) — fix: Lewis & Clark's Pro Pipeline tab was factually thin, not just "neutral"
+
+**Owner caught this by looking at the live app** — the newly-added Lewis & Clark CC (v44.65) showed a bare "Not measured" tile on Pro Pipeline with generic prose, no different from any other JUCO with no alumni page. Asked directly why the MLS Pipeline analysis "wasn't done."
+
+**What had actually been verified vs. what was claimed:** `mlsPicks5yr: 0` and the "no MLS picks confirmed" language had been set from general search absence, not from checking the Tier-1 source §7 Phase 1E calls for (official MLS SuperDraft records). Re-checked: no evidence anywhere ties Lewis & Clark to an MLS SuperDraft pick, and — checked against the pattern across all 31 JUCOs in the guide — **30 of 31 already store `mlsPicks5yr: 0`**, confirming this is the structurally expected value for a 2-year school (§5b: JUCO players get drafted from their 4-year transfer destination, not the JUCO itself), not an under-researched claim.
+
+**The `nextLevel` tile was genuinely thin, though, and fixed by digging further.** Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (aggregator used for DISCOVERY only, per Rule 0) and found one real transfer: **Daniel Freire, Lewis & Clark → Eastern Illinois, 2025** — verified Tier-1 on EIU's own official roster, which names "Lewis & Clark CC (Ill.)" as his previous school. (The 2024 tracker's only "Lewis & Clark" hit was a false positive — Lewis & Clark **College**, Portland OR, an unrelated 4-year school — correctly filtered out.)
+
+**Deliberately still NOT stored as a measured `perYear` rate.** A single external tracker list is crowd-sourced and explicitly incomplete (its own header invites readers to report additions) — treating one lucky match as the whole picture would *understate* head coach John Dunn's own claimed "6+" transfers, the same class of error §5b exists to prevent (rewarding whoever happens to appear in someone else's public list). `nextLevel.perYear` stays `null` (neutral factor unchanged, 0.3773 — no score moved), but `notable[]`, `draftRank`, and `nextLevel.note` now lead with the real, named, Tier-1-verified example instead of generic "not measured" boilerplate.
+
+Verified live in local preview: Pro Pipeline tab now shows the Freire→Eastern Illinois transfer in both the stat-tile note and the Notable Players list. `Issues: 0` unchanged (112 schools, 112 coaches) — no score cascade, text-only fix.
+
+`guideVersion` v44.65 → v44.66.
+
+---
+
 ### v44.65 (2026-08-09) — Add Lewis & Clark Community College (JUCO, Change Type 1)
 
 **New school: Lewis & Clark CC (Godfrey, IL), NJCAA Division I, Region 24 — the guide's 31st JUCO and first Illinois JUCO.** Full profile, all fields Tier-1 researched via Claude for Chrome (the in-app browser CloudFront-403'd trailblazers.lc.edu, matching Suffolk CC's known failure mode — real Chrome reached it fine). `fitOlivier` 48, coach John Dunn ranked 62nd of 112 (`overallScore` 68, `rk-strong`).

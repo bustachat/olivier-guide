@@ -1294,8 +1294,8 @@ function proPipelineHead(u){         // modal Pro Pipeline tab heading + stat bo
          <div style="font-size:2.5rem;font-weight:800;color:var(--indigo);line-height:1">${r}</div>
          <div style="font-size:11px;color:var(--muted);margin-top:4px">D1 transfers<br>per year</div>
        </div>`
-    : `<div style="text-align:center;background:var(--surface2);border-radius:10px;padding:12px 16px;min-width:92px">
-         <div style="font-size:1.3rem;font-weight:800;color:var(--muted);line-height:1.15">Not<br>measured</div>
+    : `<div style="text-align:center;background:var(--surface2);border-radius:10px;padding:12px 16px;min-width:116px">
+         <div style="font-size:1.1rem;font-weight:800;color:var(--muted);line-height:1.15">Not<br>measured</div>
          <div style="font-size:11px;color:var(--muted);margin-top:4px">D1 transfer rate</div>
        </div>`;
   let detail;

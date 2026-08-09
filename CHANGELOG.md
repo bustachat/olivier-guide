@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.68 (2026-08-09) — fix: "Not measured" Pro Pipeline tile text overflowed its own box
+
+**Owner caught this by looking at the live tile after v44.67** — the "Not measured" stat box (shown for JUCOs with a real cross-checked name but not enough hits for a rate, e.g. Lewis & Clark) rendered the word "measured" spilling past the box's right edge. Measured the actual DOM: the box is a fixed `min-width:92px` (60px of usable width after padding), but "measured" at the box's `font-size:1.3rem` bold renders at ~96px — a 36px overflow, visible as text clipping past the rounded border.
+
+**Fix:** widened the box to `min-width:116px` and reduced the text to `font-size:1.1rem`, verified by testing both dimensions live in the browser before committing to values — 84px available vs 84px needed, an exact fit with zero overflow. The numeric-value box (e.g. EFSC's "3.0 D1/yr", `background:var(--indigo3)`) is a separate, untouched branch — confirmed unaffected, still renders at its original 92px.
+
+`js/app.js` only — no data changed, `Issues: 0` unaffected.
+
+`guideVersion` v44.67 → v44.68.
+
+---
+
 ### v44.67 (2026-08-09) — process fix + full audit: 22 pre-existing neutral JUCOs cross-checked for real D1 transfers
 
 **Owner follow-up to v44.66: "I dont want to miss this D1 Transfer / MLS step for future builds. I have noticed other Collages with similar stats."** Two-part request, both closed this session: (1) a permanent process rule so a `nextLevel` neutral never again ships with generic boilerplate, (2) a full audit of the other 21 pre-existing neutral JUCOs (the 20 CLAUDE.md already listed as "publish nothing usable" plus Angelina College) using the same cross-check method that worked for Lewis & Clark.

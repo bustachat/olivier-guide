@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v44.71 (2026-08-11)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v44.72 (2026-08-11)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -58,7 +58,7 @@ For data work, read the specific conference file:
 | Ivy League | `data/ivy.json` | Princeton, Yale (2) |
 | D2, NAIA, D3 | `data/d2.json` | Nova SE, Barry, Lynn, PBA, Cal State LA, St. Edward's, Georgian Court, U of Charleston, Columbia College, Oklahoma City, Keiser, Chapman (12) |
 
-### School → File Reference Table (118 schools)
+### School → File Reference Table (122 schools)
 
 **Maintenance rule: update this table whenever a school is added, removed, or changes conference file.**
 This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (commit checklist).
@@ -84,6 +84,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | College of Southern Nevada | `data/juco.json` | `csn_college` | JUCO | NJCAA DI / ACCAC |
 | Columbia College | `data/d2.json` | `columbia_college` | NAIA | AMC |
 | Community Christian College | `data/juco.json` | `community_christian_college` | JUCO | NJCAA DI / ACCAC |
+| Connors State College | `data/juco.json` | `connors_state` | JUCO | NJCAA DI / Region 2 |
 | Cowley CC | `data/juco.json` | `cowley_cc` | JUCO | NJCAA DI / KJCCC |
 | Creighton | `data/big-east.json` | `creighton` | D1 | Big East |
 | CS Fullerton | `data/big-west.json` | `csuf` | D1 | Big West |
@@ -96,6 +97,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Duke | `data/acc.json` | `duke` | D1 | ACC |
 | Eastern Arizona College | `data/juco.json` | `eastern_arizona` | JUCO | NJCAA DI / ACCAC |
 | Eastern Florida State | `data/juco.json` | `efsc` | JUCO | NJCAA DI / FCSAA Region 8 |
+| Eastern Oklahoma State College | `data/juco.json` | `eastern_oklahoma_state` | JUCO | NJCAA DI / Region 2 |
 | Elon | `data/caa.json` | `elon` | D1 | CAA |
 | FAU | `data/aac.json` | `fau` | D1 | AAC |
 | FIU | `data/aac.json` | `fiu` | D1 | AAC |
@@ -132,6 +134,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Neosho County CC | `data/juco.json` | `neosho_county_cc` | JUCO | NJCAA DII / KJCCC |
 | Northeast CC | `data/juco.json` | `northeast_cc` | JUCO | NJCAA DII |
 | Northeastern | `data/caa.json` | `northeastern` | D1 | CAA |
+| Northeastern Oklahoma A&M | `data/juco.json` | `neo_am` | JUCO | NJCAA DI / Region 2 |
 | Northwestern | `data/big-ten.json` | `northwestern` | D1 | Big Ten |
 | Notre Dame | `data/acc.json` | `notredame` | D1 | ACC |
 | Nova SE | `data/d2.json` | `nova` | D2 | SSC |
@@ -145,6 +148,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Pittsburgh | `data/acc.json` | `pittsburgh` | D1 | ACC |
 | Princeton | `data/ivy.json` | `princeton` | IVY | Ivy League |
 | Providence | `data/big-east.json` | `providence` | D1 | Big East |
+| Rose State College | `data/juco.json` | `rose_state` | JUCO | NJCAA DI / Region 2 |
 | Rutgers | `data/big-ten.json` | `rutgers` | D1 | Big Ten |
 | Santa Monica | `data/juco.json` | `smc` | JUCO | CCCAA / SCFA |
 | Seton Hall | `data/big-east.json` | `setonhall` | D1 | Big East |
@@ -1213,11 +1217,11 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ### State snapshot (update only when it changes)
 
-- **118 schools**, all full-profile, across 10 conference JSON files. **118 coaches** in `coaches.json`, ranked 1–118.
-- **JUCO section: 37 schools**, spanning 10 NJCAA regions (1 AZ/NV/CA, 2 OK, 6 KS, 8 FL — capped at 3, only 3 of 28 FCSAA colleges field men's soccer, 9 CO, 11 IA/NE, 14 TX/LA, 15 NY, 20 MD, 24 IL) plus Santa Monica, which competes in **CCCAA, not NJCAA, and therefore deliberately has no `njcaaRegion`**. All 37 flagged `juco2yr:true`. **v44.71 (2026-08-11) added the NJCAA DI Gap-Fill campaign's Batch 2 — Yavapai College, Eastern Arizona College, College of Southern Nevada, Community Christian College (all NJCAA DI / ACCAC, Region 1)** — see the `njcaa_di_gap_fill_campaign` memory for full detail, including a genuine server-side TLS handshake failure on Yavapai's primary domain (`goroughriders.com`, worked around via the Wayback Machine for its 2025-26 roster/staff data) and the discovery that Community Christian College fields multiple geographically separate teams under one institutional brand. The Fit Score formula is identical for JUCO and non-JUCO — no weight redistribution, since ACU was removed from the formula entirely. **v44.65 added Lewis & Clark CC (Godfrey, IL, Region 24)** — first Illinois JUCO in the guide. Its `minutesOutlook.trajectory` (Yr1 70% / Yr2 83%) was set by direct analogy to peer JUCOs' stored numbers, not from §14's Opportunity Score table — that table still cannot reproduce any of the 30 pre-existing JUCOs' stored anchors (open item, group E below), and applying it literally here would have given Yr1≈20%, a stark outlier against every peer for no real reason. Owner-approved 2026-08-09.
+- **122 schools**, all full-profile, across 10 conference JSON files. **122 coaches** in `coaches.json`, ranked 1–122.
+- **JUCO section: 41 schools**, spanning 10 NJCAA regions (1 AZ/NV/CA, 2 OK, 6 KS, 8 FL — capped at 3, only 3 of 28 FCSAA colleges field men's soccer, 9 CO, 11 IA/NE, 14 TX/LA, 15 NY, 20 MD, 24 IL) plus Santa Monica, which competes in **CCCAA, not NJCAA, and therefore deliberately has no `njcaaRegion`**. All 41 flagged `juco2yr:true`. **v44.72 (2026-08-11) added the NJCAA DI Gap-Fill campaign's Batch 3 — Eastern Oklahoma State College, Connors State College, Northeastern Oklahoma A&M College, Rose State College (all NJCAA DI / Region 2), joining Murray State College as Region 2's five guide schools** — see the `njcaa_di_gap_fill_campaign` memory for full detail, including a genuine head-coaching vacancy at Connors State (founding coach departed April 2026, national search ongoing at time of research) and an interim coach at Northeastern Oklahoma A&M named one day before this research. **v44.71 (2026-08-11) added the NJCAA DI Gap-Fill campaign's Batch 2 — Yavapai College, Eastern Arizona College, College of Southern Nevada, Community Christian College (all NJCAA DI / ACCAC, Region 1)** — see the `njcaa_di_gap_fill_campaign` memory for full detail, including a genuine server-side TLS handshake failure on Yavapai's primary domain (`goroughriders.com`, worked around via the Wayback Machine for its 2025-26 roster/staff data) and the discovery that Community Christian College fields multiple geographically separate teams under one institutional brand. The Fit Score formula is identical for JUCO and non-JUCO — no weight redistribution, since ACU was removed from the formula entirely. **v44.65 added Lewis & Clark CC (Godfrey, IL, Region 24)** — first Illinois JUCO in the guide. Its `minutesOutlook.trajectory` (Yr1 70% / Yr2 83%) was set by direct analogy to peer JUCOs' stored numbers, not from §14's Opportunity Score table — that table still cannot reproduce any of the 30 pre-existing JUCOs' stored anchors (open item, group E below), and applying it literally here would have given Yr1≈20%, a stark outlier against every peer for no real reason. Owner-approved 2026-08-09.
 - **Fit Score (v37.1) = Soccer Program Quality 40% + Minutes Outlook 35% + Climate 15% + City 10%.** GPA, cost and ACU alignment are **not** inputs — each has its own dedicated view (ATAR/budget toggles, Financial Model, ACU Alignment tab). The With Minutes / Base Fit score-mode toggle and the Soccer-First lens were both retired as redundant. `recalculateAllScores()` runs once on page load from `initApp()`.
 - **Validator baseline: `Issues: 0`.** It has read 0 since v42.34, when the last line (a Stony Brook coach-name gap) cleared. **The count must never increase from a session's changes.** The v36 code-review backlog that opened at 174 issues was cleared across v36.1–v36.8; see CHANGELOG.md's v36 entry.
-- **`roster_season` doubles as the roster-refresh ledger** — the Minutes Outlook tab shows at a glance which schools are on 2026-27 data and which are still on 2025-26. Current: **62 on 2026-27, 43 on 2025-26, 6 `available:false`** (re-counted from the data files v44.55).
+- **`roster_season` doubles as the roster-refresh ledger** — the Minutes Outlook tab shows at a glance which schools are on 2026-27 data and which are still on 2025-26. Current: **63 on 2026-27, 46 on 2025-26, 6 `available:false`** (re-counted from the data files v44.55; +4 from Batch 3 — 1 on 2026-27, 3 on 2025-26 — not independently re-verified since).
 - `recruit_pathway` / `recruit_pathway_note`: **104 of 111 populated** (re-counted v44.54 — §6 had said 103 since v44.24, from before Stony Brook was populated). **105 schools have `minutesOutlook.available:true`**; the other 6 are structurally excluded, since `MO-KEYS` forbids the field on an `available:false` object. That leaves exactly **one** deliberate gap: **`stonybrook`, left unset because it publishes no previous-school column and had no prior classification to retain** — there is nothing to derive from and nothing to carry forward. Populate it only if the school starts publishing the column. Informational only — the field carries no scoring weight and was never folded into `fitOlivier`.
 - `facilityDetails.housing` is populated for every full-profile school. `jucoTier`, `njcaaRegion` and `njcaaRegionArea` are populated on the JUCOs. All three JUCO UI elements (Elite chip, region tag, housing chip) live in the **flexible metadata row on cards, not the compact stat grid** — that grid compresses badly at mobile width, learned live through prototype iteration with the owner. Elite and housing badges are **silent unless flagged**, the same pattern as `top`/Top Pick.
 - **`jucoTier: "Elite"` is a point-in-time NJCAA-ranking snapshot** — re-verify each season rather than assuming it still holds.
@@ -1237,6 +1241,7 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
 
 - **✅ RESOLVED v44.61 — "Soccer Level" and "Pre-PT Path" no longer parse prose.** Both now read short AUTHORED fields, `soccerLevelShort` (≤24 chars) and `prePTShort` (enum-locked to Outstanding · Excellent · Very Strong · Strong · Good · Foundation · Poor · Transfer Pathway). **Both counts logged here were LOW — the real figures were 7 and 4, not 6 and 2** (`yale`/`princeton` "Strong via science pathway" had been missed). The new `SHORTFIELDS` check has four halves including a comment-stripped grep of `js/app.js` AND `js/dashboard.js`. **📌 The long `soccerLevel` string now has NO renderer consumer** — stored reference data, like `conferences.json.scholarships` after v44.50. That also makes the long-deferred UX-D1 *formatting* item moot for display: the inconsistent JUCO shapes no longer reach the UI. **The owner's deferral stands — nothing was reformatted, and `miami_dade` was deliberately left as `NJCAA`** (a real league name, not a division token; its NJCAA division is unpublished on its own site).
 - **📌 The GPA *filter* extraction is sound — verified v44.53, do NOT re-audit.** `js/dashboard.js:59/378/428` derive a filter number via `parseFloat(u.gpa.minEntry.match(/[\d.]+/))`. Checked against all 111 schools: every result is a plausible GPA (1.0–4.0) or 0 for an open-admission school, which is the intended reading. Prose-parsed *and* correct.
+- **🚩 Found v44.72, not fixed (out of scope for a data-only session): `index.html:1027` hardcodes `placeholder="Search 110 schools…"` on the Financial Model search box.** Not a prose-parsing bug (nothing reads it back) but the same stale-hardcoded-count family — the guide has carried 111+ schools since well before this session and the box still says 110. The Financial Model page's own body text correctly says "122 SCHOOLS" a few lines above it — only the placeholder is stale. Fix by reading `unis.length` at render time (same pattern as the MAXAID fix), in the next session that touches `index.html` or the Financial Model tab.
 
 #### B. Coach data
 

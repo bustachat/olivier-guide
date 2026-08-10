@@ -9525,5 +9525,991 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "General Liberal Arts AA only — no Exercise Science/Kinesiology coursework of any kind"
+  },
+  {
+    "id": "eastern_oklahoma_state",
+    "name": "Eastern Oklahoma State College",
+    "full": "Eastern Oklahoma State College (Mountaineers)",
+    "loc": "Wilburton, OK",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 2",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "Three consecutive Region 2 postseason runner-up finishes (2023 South District runner-up, 2024 and 2025 Region 2 runner-up) — all three losses coming to eventual region champion Murray State College. A genuinely strong, consistent program short of an actual title: 2025 conference record 8-1-3 (.792), 2024 8-4-1, 2023 11-1. No national tournament appearance found. Verified via official eoscathletics.com 2023-24/2024-25/2025-26 schedule pages.",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma / western Arkansas",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1e3a5f"
+    ],
+    "mapX": 325,
+    "mapY": 232,
+    "domain": "eoscathletics.com",
+    "url": "https://www.eoscathletics.com/sports/msoc/index",
+    "degreeTitle": "A.S. Life Science (Pre-Professional option)",
+    "acuAlign": 2,
+    "acuAlignNote": "Eastern Oklahoma State's catalog (2025-26 Science & Mathematics degree plans) offers no dedicated Exercise Science or Kinesiology program — the closest fit is the A.S. in Life Science, Pre-Professional option, a genuine pre-health transfer track. Its required Natural Sciences general-education slot is satisfied by BIOL 1114 General Biology (covers BIOL125), and its 21-25 hour Pre-Professional Option block lets a student select five advisor-approved courses including BIOL 2114 Human Anatomy (covers ANAT100) alongside BIOL 2214 Human Physiology, Microbiology, Organic Chemistry and Nutrition. No dedicated Exercise Physiology, Kinesiology theory, or Strength & Conditioning course exists anywhere in the catalog, so the remaining 14 ACU units are not covered. Full WES evaluation and advisor confirmation required before relying on this count.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 2 (Oklahoma)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 1331,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Eastern Oklahoma State College is a public Oklahoma community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 13879,
+      "tuition": 8189,
+      "roomBoard": 5690,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Eastern's 2025-26 Board-approved combined Tuition & Fees rate for non-resident students is $272.96 per credit hour (Tier-1: eosc.edu Tuition & Fees page, effective 07-01-25) — already inclusive of all mandatory fees, so `fees` is stored as $0 to avoid double-counting. At a 30-credit/year full-time load: $8,189/yr. The school's own site notes non-resident tuition 'will be waived for most students attending Eastern' but does not specify international/F-1 eligibility for that waiver, so the full non-resident rate is used here as the conservative figure. Housing (Choctaw/Johnston Hall, double occupancy, 18-meal plan): $2,845/semester = $5,690/yr. Direct billed cost: $13,879/yr — one of the more affordable JUCOs in the guide. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Region 2 Runner-Up (8-1-3 conf, .792)",
+        "note": "9-4-3 overall, 8-1-3 in conference play (.792) — the best winning percentage of the three seasons shown. Beat Northeastern Oklahoma A&M 3-2 in the Region 2 semifinal before losing 1-0 to Murray State College in the Region 2 Championship. Verified via official eoscathletics.com 2025-26 schedule/results."
+      },
+      {
+        "yr": 2024,
+        "pos": "Region 2 Runner-Up (8-4-1 conf)",
+        "note": "10-6-3 overall, 8-4-1 in conference play. Beat Connors State 2-0 in the Region 2 Tournament quarterfinal and Northeastern Oklahoma A&M 5-0 in the semifinal, before drawing 0-0 with Murray State College in the final (lost on tiebreaker/PKs). Verified via official eoscathletics.com 2024-25 schedule/results."
+      },
+      {
+        "yr": 2023,
+        "pos": "South District Runner-Up (11-1 conf)",
+        "note": "13-4 overall, 11-1 in conference play. Beat Rose State 2-0 in the South District semifinal before losing 3-0 to Murray State College in the South District final. Verified via official eoscathletics.com 2023-24 schedule/results."
+      }
+    ],
+    "titles": [
+      "Three consecutive Region 2 / South District postseason runner-up finishes (2023, 2024, 2025), each time losing to eventual champion Murray State College",
+      "2025 conference record 8-1-3 (.792) — the strongest single-season conference winning percentage in this profile's 3-year sample"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Mauricio Jimenez committed to Radford University (NCAA Division I, Big South Conference) in March 2026 — confirmed via the program's own official news release.",
+        "No dedicated alumni/next-level tracking page found on eoscathletics.com; other 2026 transfer commitments (Fahmi Juneydi to North American University, Hedley McGhan to Southwestern Christian University, Noah Platt to Felician University) are to NAIA/D2 programs."
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; one confirmed 2026 NCAA D1 transfer commitment (Radford University) found via the program's own news page.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on eoscathletics.com (checked site nav — only a '4-Year Signings' page exists, which is an image-based graphic with no extractable text, not a maintained data page). One confirmed 2026 D1 transfer (Mauricio Jimenez to Radford University) found via the program's own news release, insufficient on its own to establish a measured rate. Neutral — NOT measured; see notable[] for the confirmed name."
+      }
+    },
+    "devScores": {
+      "tactical": 52,
+      "technical": 45,
+      "fitness": 40
+    },
+    "devScoresNote": "Live staff directory (eoscathletics.com): Jake Cottage serves as Head Coach of BOTH the men's and women's soccer programs, with a single shared assistant (Caitlin Hirst) — no soccer-only full-time coach and no position-specific coaching. Athletic Training: one department-wide Head Athletic Trainer (Emilee Burdge) covering all sports, operating out of the 4,800 sq ft Glen Stone Athletic Training Center (renovated 2020) inside the C.C. Dunlap Field House — a genuine dedicated facility, though shared across the whole athletics department. No dedicated strength & conditioning coach or sports-science staff confirmed anywhere on the official site.",
+    "fitOlivier": 59,
+    "lensScores": {
+      "overall": 59,
+      "soccer": 45,
+      "academic": 26,
+      "minutes": 65,
+      "lifestyle": 50,
+      "value": 65
+    },
+    "tags": [
+      "warm"
+    ],
+    "facilities": [
+      "On-campus soccer venue, Wilburton, OK — capacity not published on eoscathletics.com",
+      "Glen Stone Athletic Training Center — 4,800 sq ft, renovated 2020, inside C.C. Dunlap Field House",
+      "Three straight Region 2/South District postseason runner-up finishes (2023-2025)"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing confirmed via the official 2025-26 Tuition & Fees page: Choctaw and Johnston Halls (traditional dorms), Regents Court Apartments, and East Campus Apartments, all with mandatory meal plans. Double-occupancy Choctaw/Johnston with the 18-meal plan is $2,845/semester ($5,690/yr)."
+      },
+      "stadium": "Home soccer venue not itemized by name or capacity on eoscathletics.com.",
+      "trainingFields": "Not itemized separately from the match venue on the official site.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach confirmed on the official athletics site; weight-room access exists via the shared athletics facilities but no programming staff is named.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "One department-wide Head Athletic Trainer (Emilee Burdge) operating out of the 4,800 sq ft Glen Stone Athletic Training Center (renovated 2020) inside the C.C. Dunlap Field House.",
+      "academicLabs": "No dedicated Exercise Science labs — general transfer coursework only (Life Science degree).",
+      "extras": "Wilburton is a small town (Fall 2023 total headcount 1,331 across the whole college) in the Kiamichi foothills of southeastern Oklahoma, roughly 2.5 hours from both Oklahoma City and Dallas-Fort Worth.",
+      "note": "A genuinely dedicated athletic training facility and a program with three straight strong postseason runs, offset by a shared head coach (men's and women's), no dedicated soccer strength & conditioning staff, and limited published facility detail beyond the training center."
+    },
+    "culture": {
+      "vibe": "A small rural community college (1,331 total students, Fall 2023) in the Kiamichi foothills of southeastern Oklahoma. The soccer program is a genuine regional contender — three straight postseason runner-up finishes — under a head coach with an unusually strong multi-title CV from outside the NJCAA system.",
+      "thingsToDo": "Wilburton is a very small town; Robbers Cave State Park is nearby for outdoor recreation. Oklahoma City and Dallas-Fort Worth are each roughly 2.5 hours away for a bigger-city option.",
+      "socialScene": "On-campus residence halls (Choctaw, Johnston, Regents Court, East Campus Apartments) give the program a genuine dorm-based social base.",
+      "olivierMatch": "★★★ A consistently competitive program (three straight region finals) with real on-campus housing and one of the more affordable cost profiles in the guide, held back by Wilburton's very small, remote setting and a shared men's/women's coaching staff with no dedicated strength & conditioning support.",
+      "lifestyleTags": "Warm, rural, affordable, on-campus housing, consistent postseason contender"
+    },
+    "courses": [
+      "A.S. Life Science (Pre-Professional option)",
+      "BIOL 2114 Human Anatomy (advisor-approved elective)",
+      "BIOL 1114 General Biology (required)"
+    ],
+    "rec": "Eastern Oklahoma State enters 2026-27 as the most consistently competitive program in this batch on results alone — three straight Region 2/South District postseason finals (2023, 2024, 2025), each time falling only to region powerhouse Murray State College, and a 2025 conference record (8-1-3, .792) that is the best single-season mark of the three years reviewed. Head coach Jake Cottage brings a genuinely strong CV from outside the NJCAA system: back-to-back-to-back regular season and tournament titles and a 2020 national championship at Randall University (NCCAA), plus a USSF National C license. The trade-offs are real: no dedicated Exercise Science degree (a general Life Science Pre-Professional track is the closest fit), Cottage splits his time as head coach of both the men's and women's programs, and there is no dedicated soccer strength & conditioning staff. At $13,879/yr direct billed cost, it is also one of the more affordable full profiles in the guide, with genuine on-campus housing.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Pelayo Prietro (So·M)",
+        "Isaac Bailey (So·M)",
+        "Rayhaan Barderdien (So·M)",
+        "Ronaldo Martinez (So·M)",
+        "Ben Reikmann (So·M)",
+        "Antonio Baca (So·M)",
+        "Shaun Marapanga (So·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Obryan Marks (Fr·M)",
+        "Osee Barona (Fr·M)",
+        "Jaylon Riley (Fr·M)"
+      ],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 58,
+          "label": "Likely starter — 7 of 10 spots open up"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 75,
+          "label": "Established starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2026-27 roster (checked live, fully populated — 36 players, 4 goalkeepers, healthy squad shape): 10 midfield-capable players, 7 sophomores who clear before Olivier's August 2027 start and 3 freshmen who would return as 2027-28 sophomores. A genuinely open midfield picture given 70% of the current group clears. Ask the coach: 'How many central midfielders are in the 2027 recruiting class, and how many of the three returning sophomores project as starters?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2026-27 roster shows a mix of freshman and sophomore entries across the squad with no previous-school/transfer column published, so the true freshman-vs-transfer split cannot be independently verified from the roster page alone."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+  },
+  {
+    "id": "connors_state",
+    "name": "Connors State College",
+    "full": "Connors State College (Cowboys)",
+    "loc": "Warner, OK",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 2",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A brand-new program (launched Spring 2023, first competed Fall 2023) that reached the NJCAA Region 2 Tournament in all three of its seasons (2023, 2024, 2025) — including as a first-year program in 2023 — but has never finished better than a Quarterfinal loss and has posted a losing conference record in 2 of its 3 seasons (2023: 3-7-2, 2024: 3-8-1, 2025: 2-8-2). Four 2nd Team All-Region honorees under founding coach Adam Skolnick. Verified via official connorsathletics.com schedule pages and the program's own April 2026 coaching-change release.",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma / western Arkansas",
+    "profileDepth": "full",
+    "color": [
+      "#fef3c7",
+      "#78350f"
+    ],
+    "mapX": 325,
+    "mapY": 223,
+    "domain": "connorsathletics.com",
+    "url": "https://www.connorsathletics.com/sports/msoc/index",
+    "degreeTitle": "A.S. Multidisciplinary Studies in S.T.E.M.",
+    "acuAlign": 1,
+    "acuAlignNote": "Connors State's 2025-26 catalog offers no dedicated Exercise Science or Kinesiology program. The Division of Mathematics and Sciences' A.S. in Multidisciplinary Studies in S.T.E.M. is a math/physics/chemistry-heavy transfer degree — its own sample 4-semester plan includes Calculus I & II, Physics I & II, and Chemistry I & II with no biology sequence at all. Biology IS listed among the degree's 10-22 hour 'Guided Electives' category, and the Division of Nursing and Allied Health separately confirms Connors offers BIOL 1314/1324 Anatomy & Physiology I/II and BIOL 2104/2114 Human Anatomy/Physiology (required for its Nursing and Occupational Therapy Assistant programs) — so a S.T.E.M. student COULD select Anatomy & Physiology as their guided-elective biology courses with advisor approval, covering ANAT100, but this is optional and not part of the degree's own sample plan of study. Full WES evaluation and advisor confirmation required.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 2 (Oklahoma)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 2617,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Connors State College is a public Oklahoma community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 15471,
+      "tuition": 9563,
+      "roomBoard": 5908,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Connors' FY2025 Fee Schedule (effective Fall 2024, the newest published — Tier-1: connorsstate.edu/bo/fees) prices combined non-resident Tuition & Fees at $4,781.40/semester at 15 credit hours ($9,563/yr); fees are stored under `tuition` since the schedule bundles them, so `fees` is $0 here to avoid double-counting. Housing: McClarren Hall double occupancy is $1,287/semester, with a mandatory meal plan (200 Block Meals, $1,667/semester) — combined $2,954/semester = $5,908/yr. Direct billed cost: $15,471/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package given the program's currently modest resourcing."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Region 2 Quarterfinal (2-8-2 conf)",
+        "note": "4-9-2 overall, 2-8-2 in conference play (.250). Lost 2-1 in OT to Northeastern Oklahoma A&M in the Region 2 Quarterfinal. Verified via official connorsathletics.com 2025 schedule/results."
+      },
+      {
+        "yr": 2024,
+        "pos": "Region 2 Quarterfinal (3-8-1 conf)",
+        "note": "5-9-1 overall, 3-8-1 in conference play (.292). Lost 2-0 to Eastern Oklahoma State in the Region 2 Tournament Quarterfinal. Verified via official connorsathletics.com 2024-25 schedule/results."
+      },
+      {
+        "yr": 2023,
+        "pos": "Region II Quarterfinal, inaugural season (3-7-2 conf)",
+        "note": "4-10-2 overall, 3-7-2 in conference play (.333) in the program's first-ever season. Lost 3-2 in OT to Rose State in the Region II Quarterfinal — a Region tournament berth in year one. Verified via official connorsathletics.com 2023-24 schedule/results."
+      }
+    ],
+    "titles": [
+      "Reached the NJCAA Region 2 Tournament in all three seasons of program history (2023, 2024, 2025), including as a first-year program",
+      "Four 2nd Team All-Region student-athletes under founding head coach Adam Skolnick (2023-2026)",
+      "Over 40 combined men's and women's soccer All-Academic honorees; men's program posted a top-10 national GPA in 2024-25"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Miguel Gonzalez transferred to Central Connecticut State University (NCAA Division I) — one of 9 men's soccer players from the program's 2024-25 sophomore class who continued at 4-year schools (May 2025 release: 12 combined men's/women's transfers, 214 combined starts, 35 goals, 18 assists).",
+        "Other confirmed 2025 men's transfers: Alvaro Becerril (Webber International, NAIA), Álvaro Pradillo (Marian University, NAIA), Brandon Gomez (Bethany College, NAIA), David Manresa (Mid-America Christian, NAIA), Giovanni Rech (North Central University, NCAA D3), Jelan Ward (Oakland City University, NAIA), Ransford Manu (John Brown University, NAIA), Yaw Frimpong (Oakland City University, NAIA)."
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks; one confirmed 2025 NCAA D1 transfer (Central Connecticut State) among 9 men's players who continued to 4-year programs, mostly NAIA.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated multi-year alumni/next-level tracking page found on connorsathletics.com — only a single May 2025 news release naming the outgoing sophomore class's destinations. One confirmed D1 transfer (Miguel Gonzalez to Central Connecticut State) found in that release, insufficient on its own (a single year, not a maintained page) to establish a measured rate. Neutral — NOT measured; see notable[] for the confirmed names."
+      }
+    },
+    "devScores": {
+      "tactical": 32,
+      "technical": 30,
+      "fitness": 28
+    },
+    "devScoresNote": "As of research (Aug 2026), the Men's and Women's Soccer head coaching position is VACANT — founding coach Adam Skolnick resigned effective early May 2026 to join MLS Next club Michigan Jaguars (official April 30, 2026 release: 'A national search for the next Head Men's and Women's Soccer Coach has begun'). The official staff directory (connorsathletics.com/information/directory) lists a 'Men's and Women's Soccer' section with zero names, and the prior assistant's bio page ('Benge Joins Connors State Coaching Staff') is unpublished. No 2026-27 news has been posted at all. Facilities: the program's own January 2026 news story is about replacing a storage shed at the practice field after tornado damage, personally funded by the college's president (Dr. Ramming) — the clearest signal available of how modestly resourced this program still is. Home matches in 2025 were played at Hilldale Hornet Stadium, an off-campus venue. No athletic trainer or S&C coach appears in the department-wide staff directory for any sport. Scored at the low end reflecting the current coaching vacancy and minimal published infrastructure — re-score once a permanent hire is announced.",
+    "fitOlivier": 52,
+    "lensScores": {
+      "overall": 52,
+      "soccer": 35,
+      "academic": 20,
+      "minutes": 57,
+      "lifestyle": 50,
+      "value": 59
+    },
+    "tags": [
+      "warm"
+    ],
+    "facilities": [
+      "Hilldale Hornet Stadium (off-campus, Hilldale, OK) — 2025 home venue",
+      "On-campus practice field, Warner, OK — equipment shed replaced Jan 2026 after storm damage",
+      "Reached the Region 2 Tournament in all 3 seasons of program history (2023-2025)"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing confirmed via the official FY2025 fee schedule: McClarren Hall (double/single occupancy) and Millers Crossing Student Housing (four-plex units, honors dorms, and family housing), all with a mandatory meal plan. McClarren double occupancy is $1,287/semester ($2,574/yr) plus a required meal plan."
+      },
+      "stadium": "Home matches in 2025 were played at Hilldale Hornet Stadium, an off-campus venue in nearby Hilldale, OK — not itemized for capacity on the official site. The team's on-campus practice field at Warner has an equipment shed (replaced January 2026, personally funded by the college president after September 2025 tornado damage) but no other published detail.",
+      "trainingFields": "On-campus practice field at the Warner campus — described only via a January 2026 news story about its equipment shed, no capacity/surface detail published.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach confirmed; no S&C staff appears in the department-wide staff directory for any sport.",
+      "sportsScience": "None documented on the official athletics site.",
+      "sportsMed": "No athletic trainer listed in the department-wide staff directory (unlike EOSC and NEO, which both list a Head Athletic Trainer) — a genuine gap, not an omission from this profile.",
+      "academicLabs": "No dedicated Exercise Science labs — general S.T.E.M. transfer coursework only.",
+      "extras": "Warner, OK is a very small town (population under 2,000) in eastern Oklahoma. Connors' main athletics program (2,617 total students, 2023-24) is agriculture-focused; soccer is one of the newest varsity sports on campus.",
+      "note": "A young program (est. 2023) that has already reached the Region 2 Tournament every season, currently navigating a genuine head-coaching vacancy with minimal published facility infrastructure — the most under-resourced program found in this batch."
+    },
+    "culture": {
+      "vibe": "A small, agriculture-focused rural community college (2,617 total students) building a brand-new soccer program from scratch since 2023. The soccer roster is heavily international (England, Spain, Germany, Brazil, Japan, Israel, and more), and the program has already sent 9 men's players to 4-year schools in its first two graduating classes.",
+      "thingsToDo": "Warner is a very small eastern Oklahoma town; Tulsa is roughly 45 minutes away for a genuine city option (dining, shopping, an MLS NEXT Pro/USL-adjacent soccer scene).",
+      "socialScene": "On-campus housing (McClarren Hall, Millers Crossing) gives the program a dorm-based social base typical of a small rural JUCO.",
+      "olivierMatch": "★★☆ A young, internationally-flavoured program with a genuine (if early) track record of sending players to 4-year schools, undercut right now by a real head-coaching vacancy and the thinnest published facility infrastructure in this batch — worth revisiting once the national coaching search concludes.",
+      "lifestyleTags": "Warm, rural, small program, coaching search ongoing"
+    },
+    "courses": [
+      "A.S. Multidisciplinary Studies in S.T.E.M.",
+      "BIOL 1314/1324 Anatomy & Physiology I/II (guided elective, advisor-approved)"
+    ],
+    "rec": "Connors State is the youngest program in this guide's JUCO set — founded in Spring 2023 by Adam Skolnick, who built it from 40 recruited athletes into a team that reached the NJCAA Region 2 Tournament in all three of its seasons, including as a first-year program, and produced four 2nd Team All-Region honorees plus a top-10 national team GPA (2024-25). The program's honest current state, though, is in transition: Skolnick resigned in April 2026 to join MLS Next club Michigan Jaguars, the head coaching position is genuinely vacant as of this research (national search ongoing, no interim named), and facilities remain minimal — the program's biggest recent news story was replacing a storm-damaged equipment shed. At $15,471/yr it sits mid-pack on cost, with real on-campus housing. This is a school to watch once the coaching search resolves, not one to commit to blind.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 3,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Bartlomeij Lukasik (So·M)",
+        "Jayden Blum (So·M)",
+        "Max Temple (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 50,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 68,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (17 players total, the newest fully populated season — the 2026-27 page is not yet published pending the coaching hire): only 3 midfield-capable players, all clearing before Olivier's August 2027 start under the standard JUCO 2-year eligibility window. A small pool means real opportunity, but recruit_risk is set High given the genuine head-coaching vacancy — the 2027 recruiting class, and therefore the real competition Olivier would face, is entirely unknown until a permanent hire is made.",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster's Hometown/High School column shows secondary schools and club academies for every player (no 4-year or JUCO transfer names), consistent with a young program still building through direct high-school/academy recruiting rather than the transfer portal — though this may change entirely once a new head coach is hired."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+  },
+  {
+    "id": "neo_am",
+    "name": "Northeastern Oklahoma A&M",
+    "full": "Northeastern Oklahoma A&M College (Norsemen)",
+    "loc": "Miami, OK",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 2",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "Two consecutive strong regular seasons (2024: 9-4-1, .679; 2025: 7-7-4, .583, 3rd in Region) with Region 2 Tournament appearances both years — a 2024 semifinal loss to Eastern Oklahoma State (5-0) and a 2025 Quarterfinal win before elimination. No national tournament appearance found. Verified via official neoathletics.com 2024-25/2025-26 schedule pages.",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma / western Arkansas",
+    "profileDepth": "full",
+    "color": [
+      "#e0e7ff",
+      "#312e81"
+    ],
+    "mapX": 330,
+    "mapY": 201,
+    "domain": "neoathletics.com",
+    "url": "https://neoathletics.com/sports/msoc/index",
+    "degreeTitle": "A.S. Physical Education",
+    "acuAlign": 3,
+    "acuAlignNote": "NEO offers a genuine A.S. in Physical Education (Department of Nursing, Allied Health & Physical Education) designed to transfer into a health, wellness, coaching, or PE bachelor's program, with access to a fitness center, core fitness room, pool, and gymnasium. Per the 2022-24 catalog degree plan (the newest published), the required core includes HHP 1753 Introduction to Physical Education (covers EXSC224 — foundational kinesiology) and HHP 2603 Total Wellness (covers EXSC199), and the required 4-hour Life Science general-education slot is satisfied by a BIOL-prefix course (covers BIOL125). HHP 2663 Care and Prevention of Athletic Injuries is also required but does not map cleanly to any of the 16 ACU units. No dedicated Anatomy or Exercise Physiology course is confirmed as required or catalog-listed for this specific program. Full WES evaluation and advisor confirmation required, and the degree plan should be re-checked against the current catalog (only 2022-24 was accessible).",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 2 (Oklahoma)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 1962,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Northeastern Oklahoma A&M's own homepage states 'Everyone who applies is accepted' — open enrolment, no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 19445,
+      "tuition": 11513,
+      "roomBoard": 7932,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "NEO's official Tuition & Fees page (Tier-1, as of 08/01/2026) prices combined non-resident Tuition & Fees at $383.75/credit hour, already inclusive of mandatory fees (`fees` stored as $0 to avoid double-counting); at 30 credits/year: $11,513/yr. The page notes an out-of-state tuition waiver is available for 'qualifying students' without specifying international/F-1 eligibility, so the full non-resident rate is used as the conservative figure. Housing: Milligan Hall double occupancy ($1,800/semester) plus the required minimum 12-meal plan ($2,012/semester) plus the $154/semester housing maintenance fee = $3,966/semester = $7,932/yr. Direct billed cost: $19,445/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "3rd in Region 2 (6-4-2 conf, .583)",
+        "note": "7-7-4 overall, 6-4-2 in conference/region play (.583). Won the Region 2 Tournament Quarterfinal before elimination (per official news headlines). Verified via official neoathletics.com 2025-26 schedule page."
+      },
+      {
+        "yr": 2024,
+        "pos": "Region 2 Semifinal (8-3-1 conf, .708)",
+        "note": "9-4-1 overall, 8-3-1 in conference/region play (.708) — the strongest single-season record in this profile's 2-year sample. Lost 5-0 to Eastern Oklahoma State in the Region 2 Tournament semifinal. Verified via official neoathletics.com 2024-25 schedule page."
+      }
+    ],
+    "titles": [
+      "2024 Region 2 Tournament semifinalist (9-4-1 overall, 8-3-1 conference, .708)",
+      "2025 Region 2 Tournament Quarterfinal winner, 3rd-place regular-season finish"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No dedicated alumni/next-level tracking page found on neoathletics.com. The college's own homepage cites an institution-wide (all-sports) claim of '250+ athletes earned D1 scholarships & 35+ went to play sports professionally' — not soccer-specific and not independently verifiable per program."
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated men's soccer alumni/transfer tracking page found.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on neoathletics.com (checked the men's soccer news archive and site nav). Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 45,
+      "technical": 42,
+      "fitness": 45
+    },
+    "devScoresNote": "Live staff directory (neoathletics.com) confirms a dedicated department-wide Athletic Training staff — Head Athletic Trainer Kayla Crissman plus Assistant Matt Brannon — a real plus versus the other three schools in this batch. Coaching: Tyler Douthitt was named interim Head Coach on August 10, 2026 (the day before this research), an NEO alumnus (2021-23, First Team Academic All-American both years, 4.0 GPA) who served as the program's assistant coach since 2023 and holds a USSF 'C' License; assistant Wes Dipboye completes the staff — no position-specific coach confirmed. Facilities: the PE program's own page cites a fitness center, core fitness room, six-lane 75-foot pool and gymnasium available to students, though these are general campus facilities rather than a soccer-dedicated weight room. Home venue is Red Robertson Field (per cross-referenced opponent schedules); no capacity or surface detail published.",
+    "fitOlivier": 57,
+    "lensScores": {
+      "overall": 57,
+      "soccer": 44,
+      "academic": 31,
+      "minutes": 62,
+      "lifestyle": 50,
+      "value": 59
+    },
+    "tags": [
+      "warm"
+    ],
+    "facilities": [
+      "Red Robertson Field, Miami, OK — home venue, capacity not published",
+      "Dedicated Athletic Training staff (Head + Assistant Trainer) — department-wide",
+      "2024 Region 2 semifinalist, 2025 Region 2 Quarterfinal winner"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing confirmed via the official Tuition & Fees page: Traditional Residence Halls and Milligan Hall (double/single occupancy), 4-Bedroom and 2-Bedroom Suites, all requiring a meal plan. Milligan Hall double occupancy is $1,800/semester ($3,600/yr) plus a mandatory minimum 12-meal plan."
+      },
+      "stadium": "Red Robertson Field, Miami, OK — capacity and surface not published on neoathletics.com; identified via cross-referenced opponent (Connors State, Eastern Oklahoma State) away-game schedule listings.",
+      "trainingFields": "Not itemized separately from the match venue on the official site.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach confirmed; general campus fitness center and core fitness room are available to Physical Education students but not confirmed as a soccer-specific training resource.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Dedicated department-wide Athletic Training staff: Head Athletic Trainer Kayla Crissman and Assistant Athletic Trainer Matt Brannon — a genuine plus versus most other JUCOs in this batch.",
+      "academicLabs": "A.S. Physical Education program has access to a fitness center, core fitness room, six-lane 75-foot swimming pool, and gymnasium.",
+      "extras": "Miami, OK (population ~13,000) sits in the far northeast corner of Oklahoma near the Kansas and Missouri borders — Tulsa is roughly 90 minutes away, Joplin, MO about 20 minutes.",
+      "note": "The best-staffed athletic training department of the four Region 2 schools in this batch, with genuine on-campus housing and a real Physical Education degree, offset by an interim head coach just one day into the role at time of research and an unnamed strength & conditioning program."
+    },
+    "culture": {
+      "vibe": "A mid-sized Oklahoma community college (1,962 students) in the far northeast corner of the state, with a broad multi-sport athletics department (football, wrestling, basketball, baseball, soccer) and real academic infrastructure including a dedicated Physical Education degree.",
+      "thingsToDo": "Miami, OK is a small town on historic Route 66; Tulsa is roughly 90 minutes away for a genuine city option, and the Grand Lake O' the Cherokees is nearby for outdoor recreation.",
+      "socialScene": "On-campus residence halls (Traditional Halls, Milligan Hall, Suites) support a real dorm-based campus community within a broader multi-sport athletics culture.",
+      "olivierMatch": "★★★ Solid two-year results (a Region 2 semifinal and a Quarterfinal win), the best-staffed athletic training department in this batch, and a genuine Physical Education transfer degree — offset by an interim head coach only one day into the role at time of research and a remote northeast-Oklahoma setting.",
+      "lifestyleTags": "Warm, small town, on-campus housing, dedicated athletic training staff"
+    },
+    "courses": [
+      "A.S. Physical Education",
+      "HHP 1753 Introduction to Physical Education (required)",
+      "HHP 2603 Total Wellness (required)"
+    ],
+    "rec": "Northeastern Oklahoma A&M enters 2026-27 with genuine momentum — a 2024 Region 2 semifinal run (9-4-1, .708 conference) and a 2025 Quarterfinal win (7-7-4, 3rd in Region) — and the best athletic training infrastructure of the four Region 2 schools in this batch, with a dedicated Head and Assistant Athletic Trainer. NEO also offers a genuine A.S. in Physical Education with real facilities access (pool, fitness center, gymnasium). The one live uncertainty: interim head coach Tyler Douthitt, an NEO alumnus and the program's assistant since 2023, was only named to the role on August 10, 2026 — one day before this research — after a strong two-year run under his predecessor. At $19,445/yr it is mid-pack on cost, with genuine on-campus housing.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 9,
+      "cleared_names": [
+        "Daichi Kato (Fr·C)",
+        "Alfie Irving (So·C)",
+        "Jose Varea (So·C)",
+        "Brendan Dalton (Fr·C)",
+        "Julian Lechuga (So·C)",
+        "Caio Rodrigues (Fr·C)",
+        "Edgar Soria (Fr·C)",
+        "Simeon Adair (So·C)",
+        "Zander Floyd (Fr·C)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 55,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 72,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (the newest fully populated season — the 2026-27 page returns zero player rows): 9 center-midfield-listed players (position code 'C'), a mix of 4 sophomores and 5 freshmen. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. Ask the coach: 'How many central midfielders are in the 2027 recruiting class under the new coaching staff?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster mixes true freshmen with hometown/high-school listings (several from Tulsa-area high schools) and internationally-recruited players (Ecuador, Germany, Wales, Japan, Netherlands, Israel, Brazil) with no previous-college column published, so a transfer-vs-freshman split cannot be independently verified from the roster page."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "A.S. Physical Education — genuine transfer pathway, no dedicated Exercise Science/Kinesiology program"
+  },
+  {
+    "id": "rose_state",
+    "name": "Rose State College",
+    "full": "Rose State College (Raiders)",
+    "loc": "Midwest City, OK",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 2",
+    "confKey": "other",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A consistent mid-table Region 2 program across two seasons reviewed (2024: 7-8-2 overall, 4-7-1 conf; 2025: 7-8-3 overall, 5-5-2 conf, .500) that qualifies for the Region 2 Tournament most years but has not advanced past the first round in either season shown (2025: lost on penalties after a scoreless draw; 2024 not itemized past the regular season in this research). Verified via official rscraiders.com 2024-25/2025-26 schedule pages.",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma / western Arkansas",
+    "profileDepth": "full",
+    "color": [
+      "#fee2e2",
+      "#7f1d1d"
+    ],
+    "mapX": 302,
+    "mapY": 224,
+    "domain": "rscraiders.com",
+    "url": "https://rscraiders.com/sports/mens-soccer",
+    "degreeTitle": "A.S. Health & Sport Sciences — Exercise/Fitness Management option",
+    "acuAlign": 5,
+    "acuAlignNote": "Rose State offers the strongest ACU-relevant degree found in this batch: an A.S. in Health & Sport Sciences with a dedicated Exercise/Fitness Management option, whose learning outcomes explicitly include designing physical fitness programs and examining sports nutrition. Required core courses cover EXSC224 (HPER 1213 Introduction to Health & Sports Sciences) and EXSC199 (HPER 1202 Health & Wellness, a general-education requirement). The Support & Related Electives list — advisor-approved, not automatic — includes HPER 2623 Physiology of Exercise (a direct match for EXSC225) and both HPER 2643 Applied Anatomy and HSBC 2114 Human Anatomy (covering ANAT100); the 7-hour Sciences general-education requirement can also be satisfied with a BIOL-prefix course (BIOL125). No dedicated Strength & Conditioning or research-methods course was confirmed. Full WES evaluation and advisor confirmation required before relying on the elective-dependent units (EXSC225, ANAT100).",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 2 (Oklahoma)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 7758,
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Rose State College is a public Oklahoma community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 18855,
+      "tuition": 9220,
+      "roomBoard": 9635,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Rose State's own 2025-26 Cost of Attendance page (Tier-1: rose.edu/affordability/tuition-fees/cost-of-attendance) states its estimates 'cover 24 credit hours' — that basis is used here. Non-resident Associate tuition ($342.28/credit) plus mandatory per-credit fees ($41.05/credit) plus $10/semester flat fees, at 24 credits/year: $9,220/yr (fees bundled into `tuition`, so `fees` is $0 to avoid double-counting). Rose State's own COA table publishes tuition on a RESIDENT basis ($4,099), so the non-resident figure above is used per this guide's convention. Room/Board: the school's own COA table gives $9,635/yr as its official 'Room/Board — Indirect Cost' estimate for a full-time independent student (the exact on-campus rate sheet for The Village at Rose State — the college's only on-campus housing — returned a broken link at time of research, so this official COA allowance is used instead). Direct billed cost: $18,855/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Region 2 First Round (5-5-2 conf, .500)",
+        "note": "7-8-3 overall, 5-5-2 in conference play (.500). Lost in the Region 2 Tournament first round to University of Arkansas Rich Mountain, 0-0 after 2 overtimes, on penalties. Verified via official rscraiders.com 2025-26 schedule page."
+      },
+      {
+        "yr": 2024,
+        "pos": "Mid-table (4-7-1 conf, .375)",
+        "note": "7-8-2 overall, 4-7-1 in conference play (.375). Verified via official rscraiders.com 2024-25 schedule page; postseason result not itemized in the schedule feed for this season."
+      }
+    ],
+    "titles": [
+      "No conference titles or national tournament appearances found in the seasons reviewed (2024-2025)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No dedicated alumni/next-level tracking page found on rscraiders.com."
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated men's soccer alumni/transfer tracking page found.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on rscraiders.com (checked the men's soccer section and facilities/staff-directory nav). Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 50,
+      "technical": 48,
+      "fitness": 50
+    },
+    "devScoresNote": "Live staff directory (rscraiders.com) confirms a dedicated Athletic Trainer/Wellness Director (Chris Leland) plus an Executive Director of Athletics, Wellness and Aquatics (Coty Cooper) and two dedicated Athletic Advisors — a more built-out administrative structure than the other three Region 2 schools in this batch, reflecting Rose State's much larger overall enrolment (7,758 students). Head coach Michael Shanahan (OCU alumnus, B.S. Kinesiology Sports Science 2015) has been with the program since 2016 (assistant, now head coach) with one assistant, Andrew Rundell — no position-specific coaching confirmed. The team plays at Raider Soccer Field, a genuine dedicated on-campus venue with bleacher seating and gated admission — the only named, gated soccer-specific venue confirmed across this batch's four schools.",
+    "fitOlivier": 64,
+    "lensScores": {
+      "overall": 64,
+      "soccer": 47,
+      "academic": 42,
+      "minutes": 59,
+      "lifestyle": 100,
+      "value": 64
+    },
+    "tags": [
+      "warm",
+      "city"
+    ],
+    "facilities": [
+      "Raider Soccer Field — dedicated on-campus venue, bleacher seating, gated admission",
+      "Dedicated Athletic Trainer/Wellness Director on staff",
+      "Midwest City, OK — minutes from downtown Oklahoma City"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing confirmed via the official Residence Life pages: The Village at Rose State, the college's only on-campus housing option, offering apartment- and pod-style floor plans (2-6 residents), first-come first-served. The specific per-semester rate sheet returned a broken link at time of research; the school's own official Cost of Attendance page lists $9,635/yr as its Room/Board indirect-cost estimate, used here."
+      },
+      "stadium": "Raider Soccer Field — a dedicated on-campus venue with bleacher seating, gated admission (cash-only ticketing) and a concession stand. Capacity not published.",
+      "trainingFields": "Not itemized separately from the match venue on the official site.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach confirmed; the Athletic Department is led by an Executive Director of Athletics, Wellness and Aquatics, suggesting a broader wellness/fitness infrastructure than the other three schools in this batch, though not soccer-specific.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Dedicated Athletic Trainer/Wellness Director (Chris Leland) on staff, plus two dedicated Athletic Advisors and an NJCAA Compliance Specialist — the most built-out athletics administration of the four schools in this batch.",
+      "academicLabs": "A.S. Health & Sport Sciences — Exercise/Fitness Management option provides genuine academic infrastructure for fitness programming and sports nutrition coursework.",
+      "extras": "Midwest City is a direct suburb of Oklahoma City, described on the college's own site as 'just minutes east of Oklahoma City' and 'easily accessible off of I-40' — the only school in this batch with genuine access to a major metro area (OKC metro population ~1.4 million).",
+      "note": "The best-resourced athletics administration and the most genuine city-adjacent lifestyle of the four Region 2 schools in this batch, and the only one with a dedicated, named, gated soccer venue — offset by mid-table on-field results across the two seasons reviewed and no national tournament history found."
+    },
+    "culture": {
+      "vibe": "A large, comprehensive community college (7,758 students) in Midwest City, a direct suburb of Oklahoma City — the most genuinely urban-adjacent setting of the four Region 2 schools in this batch, with a real athletics administration (Wellness & Aquatics director, dedicated trainer, athletic advisors, compliance specialist).",
+      "thingsToDo": "Downtown Oklahoma City is a short drive away — MLS-adjacent USL/lower-league soccer, Thunder NBA games, Bricktown entertainment district, and a genuine metro-area food and nightlife scene, a real step up in lifestyle access from the other three Region 2 schools.",
+      "socialScene": "On-campus housing (The Village at Rose State, apartment/pod-style) plus proximity to Oklahoma City gives a broader social scene than a typical small-town JUCO.",
+      "olivierMatch": "★★★★ The strongest overall lifestyle match in this batch — genuine OKC-metro city access, the best-resourced athletics department, a real gated soccer venue, and the best ACU-relevant degree found among these four schools — offset by mid-table on-field results in the two seasons reviewed and no tournament breakthrough yet.",
+      "lifestyleTags": "Warm, city-adjacent (OKC metro), on-campus housing, strongest academic fit in this batch"
+    },
+    "courses": [
+      "A.S. Health & Sport Sciences — Exercise/Fitness Management option",
+      "HPER 2623 Physiology of Exercise (elective)",
+      "HPER 2643 Applied Anatomy (elective)",
+      "HPER 1213 Introduction to Health & Sports Sciences (required)"
+    ],
+    "rec": "Rose State stands apart from the rest of this batch on lifestyle and academics: Midwest City sits directly in the Oklahoma City metro, minutes from downtown, and the college offers the strongest ACU-relevant degree found among these four schools — a genuine Health & Sport Sciences A.S. with an Exercise/Fitness Management option including an actual Physiology of Exercise course. The athletics department is also the best-resourced of the batch, with a dedicated Athletic Trainer/Wellness Director and a genuine gated home venue, Raider Soccer Field. Head coach Michael Shanahan is an Oklahoma City University Kinesiology graduate who has been with the program since 2016. The honest trade-off is on-field form: two mid-table seasons (2024 4-7-1, 2025 5-5-2) with a first-round penalty-shootout exit in 2025 and no tournament breakthrough in the years reviewed. At $18,855/yr it sits mid-pack on cost, with on-campus housing (The Village at Rose State) available.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 10,
+      "cleared_names": [
+        "Bode Durham (So·CM)",
+        "Angelo Tagliente (Fr·CM)",
+        "Noah Eshtehardian (So·CM)",
+        "Lucas Schoenberger (So·CM)",
+        "Eric Gonzalez (CM, class unlisted)",
+        "Jeremiah Jones (Fr·CM)",
+        "Turner Box (Fr·CM)",
+        "Jaxon Hughes (Fr·CM)",
+        "Aden Lino (So·D/CM)",
+        "Lorenzo Cailone (So·D/CM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 52,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 70,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (the newest fully populated season — 27 players, 3 goalkeepers, healthy squad shape): 8 pure Center Midfielders plus 2 Defender/Center Midfielder hybrids (counted per this guide's position-normalisation rule) = 10 midfield-capable players, a mix of sophomores and freshmen. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. One player (Eric Gonzalez) has no class year listed on the roster page — a minor data gap that does not affect the clearing count under this rule. Ask the coach: 'How many central midfielders are in the 2027 recruiting class?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster mixes Oklahoma high-school recruits (Oklahoma City, Tulsa, Edmond, Norman, Choctaw, Mustang) with international players (England, Denmark, Belgium, Italy, Spain, Germany) with no previous-college column published, so a transfer-vs-freshman split cannot be independently verified from the roster page."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "A.S. Health & Sport Sciences (Exercise/Fitness Management) — the strongest ACU-relevant JUCO degree found in this batch"
   }
 ]

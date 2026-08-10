@@ -8583,5 +8583,947 @@
     },
     "acRank": "NJCAA Level — accredited Exercise Science AA",
     "kinRank": "CAAHEP-accredited Exercise Science pathway — Salisbury University transfer"
+  },
+  {
+    "id": "yavapai_college",
+    "name": "Yavapai College",
+    "full": "Yavapai College",
+    "loc": "Prescott, AZ",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / ACCAC",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "Seven-time NJCAA national champion program (per the team's own verified social media/site branding) — genuine recent historical dominance. In fall 2025 the Roughriders finished a modest 2-5-1 in ACCAC Division I regular-season play (4-7-2 overall, .385) but upset #6-ranked Arizona Western on penalties in the playoffs before falling 6-0 to #16 Mohave in the 2025 NJCAA Region 1 DI Championship — a runner-up finish. Three players earned 2025 ACCAC D1 All-Region Team honors. Verified via official accac.org 2025-26 standings/schedule and ycathletics.com/goroughriders.com match reports.",
+    "njcaaRegion": "Region 1",
+    "njcaaRegionArea": "Arizona, California, Southern Nevada",
+    "profileDepth": "full",
+    "color": [
+      "#fef3c7",
+      "#92400e"
+    ],
+    "mapX": 128,
+    "mapY": 202,
+    "domain": "ycathletics.com",
+    "url": "https://ycathletics.com/sports/msoc/index",
+    "degreeTitle": "A.A./A.S. — 2-year transfer degree",
+    "acuAlign": 4,
+    "acuAlignNote": "Yavapai College's catalog (catalog.yc.edu, 2026-27) offers no dedicated Exercise Science, Kinesiology, or Athletic Training AAS — the closest career-technical offering is a stand-alone Fitness Trainer/Instructor Certificate. This profile assumes the general Associate of Science transfer track, whose Major/Elective Studies block allows BIO 181/182 (Human Anatomy & Physiology I/II) as one of several lab-science options, covering foundational anatomy and biology content only. Full WES evaluation and direct advisor confirmation required before relying on this count for transfer planning.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 7428,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Yavapai College is a public community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 16364,
+      "tuition": 3200,
+      "roomBoard": 13164,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Yavapai's 2026-27 Board-approved tuition rate ($116/credit Tier 1 General Education) is genuinely identical for in-state AND out-of-state/international students (Tier-1: yc.edu Nov 2025 Board announcement) — an unusually affordable structure for a JUCO. Tuition and fees are published as a single combined $3,200/yr line on the official 2026-27 Cost of Attendance (Full Time, Living on Campus), so `fees` is stored as $0 to avoid double-counting. Housing and Food (on-campus, Kachina/Marapai residence halls) is $13,164/yr on the same COA table. Direct billed cost: $16,364/yr — well below the guide's median JUCO cost. The college's own full published COA (adding books $1,022 + personal expenses $3,254 + transportation $1,002) totals $21,642/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "2025 NJCAA Region 1 DI Runner-Up (2-5-1 ACCAC)",
+        "note": "2-5-1 in ACCAC D1 regular-season play (4-7-2 overall, .385), finishing outside the top 2 seeds — but upset #6-ranked Arizona Western College on penalties in the semifinal before falling 6-0 to #16 Mohave in the NJCAA Region 1 DI Championship final. Three players (incl. Judah Levy, ACCAC D1 Player of the Week Wk 8) earned 2025 ACCAC D1 All-Region Team honors. Verified via official accac.org 2025-26 standings/schedule and ycathletics.com match reports."
+      },
+      {
+        "yr": 2024,
+        "pos": "3rd ACCAC D1 (5-3-2)",
+        "note": "5-3-2 in conference play (.600), 6-6-2 overall (.500). Verified via official accac.org 2024-25 Division 1 standings archive."
+      }
+    ],
+    "titles": [
+      "Seven-time NJCAA national champion program (historical program record, verified via official team branding/social accounts)",
+      "2025 NJCAA Region 1 DI Runner-Up — upset #6 Arizona Western in the semifinal before falling to #16 Mohave in the final",
+      "3 players named to the 2025 ACCAC D1 All-Region Team"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No confirmed MLS SuperDraft picks in the last 5 years. Older TopDrawerSoccer NCAA D1 transfer trackers name at least two historical D1 transfers out of Yavapai — Zander Glynn to UIC (2021 tracker) and Matthew Ridley to UNLV (2020 tracker) — plus Mael Lopes signing with Binghamton University's 2023 incoming class, whose own release names Yavapai as his previous school. These predate the campaign's required 2024-2025 tracker cross-check window, so are recorded here as historical color rather than folded into a measured rate."
+      ],
+      "draftRank": "JUCO — seven-time national champion program with a long-running D1 transfer history; no current maintained alumni/next-level tracking page found on ycathletics.com or the legacy goroughriders.com.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on ycathletics.com (checked the site nav and news archive). Cross-checked TopDrawerSoccer's transfer-tracker articles by school name; the only confirmed hits (Zander Glynn/UIC 2021, Matthew Ridley/UNLV 2020) fall outside the campaign's required 2024-2025 cross-check window, so are not used to set a measured rate. Neutral — NOT measured; see `notable[]` for the historical names found."
+      }
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 55,
+      "fitness": 50
+    },
+    "devScoresNote": "Live staff directory (ycathletics.com): Head Coach Giorgi Manzula (hired April 2025 — played collegiately at Central Connecticut State and Monroe College, pro/semi-pro in Georgia/Brazil/Poland/USA, previously HC at Monroe College NY where he led a regional championship and top-4 national finish) plus 2 assistants including a dedicated GK coach (Michael Tristani) and a Recruiting Coordinator (Juan Enrique Fernandez) — solid staffing depth for a JUCO. No dedicated strength & conditioning coach or sports-science staff confirmed on the official site.",
+    "fitOlivier": 50,
+    "lensScores": {
+      "overall": 50,
+      "soccer": 50,
+      "academic": 36,
+      "minutes": 70,
+      "lifestyle": 0,
+      "value": 57
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Ken Lindley Field, Prescott — home matches",
+      "Kachina & Marapai Residence Halls — on-campus housing",
+      "7x NJCAA national champion program history"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "housing": {
+        "available": true,
+        "note": "Kachina and Marapai Halls (Prescott campus) provide double-occupancy on-campus housing with free laundry, 24-hour study lounges and common recreation space (Tier-1: yc.edu/residence-life). 2026-27 on-campus Housing & Food is costed at $13,164/yr on the official Cost of Attendance table."
+      },
+      "stadium": "Ken Lindley Field, Prescott, AZ — official capacity not published on ycathletics.com.",
+      "trainingFields": "Not itemized separately from the match venue on the official site.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach or facility confirmed on the official athletics site.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training support (Head Athletic Trainer + Assistant Athletic Trainer listed in the college-wide staff directory); specifics not published for men's soccer.",
+      "academicLabs": "No dedicated Exercise Science labs — general transfer coursework only.",
+      "extras": "Prescott sits at roughly 5,400 ft elevation in Arizona's high country — a genuine four-season mountain climate (cold winters, occasional snow) rather than the desert heat of Phoenix/Tucson/Yuma, a real lifestyle difference from most Arizona JUCOs in this guide.",
+      "note": "A seven-time national champion program with real 2025 postseason success (Region 1 runner-up, an upset of a nationally-ranked rival) and genuine on-campus housing, offset by limited published facility/sports-science detail and Prescott's distinctly cooler, non-desert climate."
+    },
+    "culture": {
+      "vibe": "Prescott is a historic mountain-country city (pop. ~45,000) in central Arizona at ~5,400 ft elevation — genuinely cooler and greener than the desert-city JUCOs elsewhere in this guide, with real seasons including winter snow. The soccer program carries deep historical prestige (seven national titles) and is rebuilding under a new, internationally-experienced head coach.",
+      "thingsToDo": "Small mountain city with a walkable historic downtown (Whiskey Row), Prescott National Forest recreation, and Phoenix is roughly 90 minutes south for a bigger-city option.",
+      "socialScene": "On-campus residence halls (Kachina & Marapai) give the program a genuine dorm-based social base, unusual among this guide's JUCOs.",
+      "olivierMatch": "★★★ A prestigious, historically dominant program with real on-campus housing and a new coach with genuine international pro/college pedigree — but Prescott's cool mountain climate and small-city setting are a real mismatch for a warm-city-preferring Sydney athlete.",
+      "lifestyleTags": "Mountain climate, small city, historic program, on-campus housing"
+    },
+    "courses": [
+      "General A.A./A.S. transfer coursework",
+      "BIO 181/182 — Human Anatomy & Physiology I/II (elective option)"
+    ],
+    "rec": "Yavapai College carries the deepest historical prestige of any Arizona JUCO in this guide — a seven-time NJCAA national champion program — and enters 2026-27 under new head coach Giorgi Manzula, an internationally well-traveled player and coach (Georgia, Brazil, Poland, USA) who immediately led the Roughriders to a 2025 NJCAA Region 1 runner-up finish, including an upset of nationally-ranked Arizona Western. Genuine on-campus housing (Kachina/Marapai Halls) is a real plus most JUCOs can't offer. The trade-offs: no dedicated Exercise Science degree, limited published sports-science infrastructure, and Prescott's cool mountain climate is a distinct lifestyle mismatch from the warm desert cities most of this guide's other Arizona JUCOs sit in.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 8,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Ansel Ledezma (Fr·M)",
+        "Blake Robinson (So·M)",
+        "Cesar da Silva (So·M)",
+        "Iker Villalba (So·M)",
+        "Andres Pulido (So·M)",
+        "Angelo Rana (Fr·M)",
+        "Lukas Pino (Fr·M)",
+        "Rashaad Powery (So·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 65,
+          "label": "Likely starter — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 78,
+          "label": "Established starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 MFs: 5 So + 3 Fr) clears before Olivier's August 2027 start. Zero roster overlap. The current 2026-27 roster (checked live) is only 60% populated (12 of 28 players still show blank position/class data as of early August) — too incomplete to use for minutesOutlook, per this campaign's early-August partial-roster pattern; 2025-26 is the most recently fully-populated season. Ask the coach: 'How many central midfielders are in your 2026 recruiting class under the new coaching staff?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Roster skews sophomore-heavy (5/8 MFs) — consistent with a program that just changed head coaches; hometown/high-school column shows no prior colleges for any of the 8, suggesting freshman-entry has historically been the norm even though the label is 'Mixed' pending the new staff's first full recruiting class."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed"
+  },
+  {
+    "id": "eastern_arizona",
+    "name": "Eastern Arizona College",
+    "full": "Eastern Arizona College",
+    "loc": "Thatcher, AZ",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / ACCAC",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A genuinely new program — men's soccer launched August 2023 (inaugural game vs. College of Southern Nevada) — that reached the 2025 NJCAA Region 1 semifinals in just its 3rd season, going 1-5-2 in ACCAC D1 regular-season play (8-9-3 overall). No confirmed 2025 national ranking or NJCAA All-America selection, so classified Standard rather than Elite despite the fast playoff progress. Verified via official accac.org standings and eacmonsters.com match reports.",
+    "njcaaRegion": "Region 1",
+    "njcaaRegionArea": "Arizona, California, Southern Nevada",
+    "profileDepth": "full",
+    "color": [
+      "#dcfce7",
+      "#166534"
+    ],
+    "mapX": 172,
+    "mapY": 228,
+    "domain": "eacmonsters.com",
+    "url": "https://www.eacmonsters.com/sports/msoc/index",
+    "degreeTitle": "Sports Medicine Professions, Associate of Arts (+ Physical Therapy Technician Certificate)",
+    "acuAlign": 6,
+    "acuAlignNote": "EAC's Human Health and Performance department offers a genuine Sports Medicine Professions AA (CIP 31.0501, catalog.eac.edu program 60502) explicitly preparing students for Athletic Training, Kinesiology, Wellness or related Sports Medicine 4-year majors, PLUS a stand-alone Physical Therapy Technician certificate and a Personal Trainer certificate/AA track — a meaningfully stronger pre-PT-adjacent offering than the generic AS/AA transfer degree found at most Arizona JUCOs. The exact per-course curriculum map is published only as a PDF on catalog.eac.edu that could not be fully extracted this session (the download link served the general 167-page college catalog rather than the program-specific curriculum map); this profile conservatively assumes anatomy/physiology and foundational kinesiology-adjacent coverage only. Direct advisor confirmation and full WES evaluation recommended before relying on this count.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 5213,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Eastern Arizona College is a public community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 17952,
+      "tuition": 9552,
+      "roomBoard": 8400,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Official 2025-26 Cost of Attendance Budget (Freshman/Sophomore, Living On Campus, Non-Resident Academic Year) via eac.edu: Tuition $9,552 (published as a combined tuition-and-fees figure, so `fees` is stored as $0 to avoid double-counting), Food & Housing $8,400. Direct billed cost: $17,952/yr. The college's own full published COA (adding books $1,036 + miscellaneous $2,682 + transportation $1,728) totals $23,398/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "5th ACCAC D1, Region 1 Semifinalist (1-5-2)",
+        "note": "1-5-2 in conference play (.250), 8-9-3 overall (.475) — but advanced to the NJCAA Region 1 DI semifinals in just the program's 3rd season, a real step forward despite the modest regular-season record. Verified via official accac.org 2025-26 standings and eacmonsters.com ('EAC Soccer Set for Region I Semifinals', Oct 27 2025)."
+      },
+      {
+        "yr": 2024,
+        "pos": "5th ACCAC D1 (2-4-3)",
+        "note": "2-4-3 in conference play (.389), 5-5-3 overall (.500) — the program's 2nd season. Verified via official accac.org 2024-25 Division 1 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "Program launch (Aug 2023)",
+        "note": "Men's soccer's first-ever season at EAC — inaugural game Aug 19, 2023 vs. College of Southern Nevada at John Mickelson Field. Verified via official eac.edu program-launch article."
+      }
+    ],
+    "titles": [
+      "NJCAA Region 1 DI semifinalist, 2025 (program's 3rd season)",
+      "Program launched August 2023 — one of the newest men's soccer programs in this guide"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No MLS SuperDraft picks or confirmed D1 transfers found — a brand-new program (launched 2023) without an established pro/transfer pipeline yet. No dedicated alumni/next-level tracking page found on eacmonsters.com."
+      ],
+      "draftRank": "JUCO — brand-new program (2023), too young for an established D1 transfer or pro pipeline",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "New program (launched 2023), no destination track record published — neutral, NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 56,
+      "technical": 52,
+      "fitness": 48
+    },
+    "devScoresNote": "Live staff directory (eacmonsters.com): Head Coach Abe Tizaf (hired 2026 — decade+ coaching CV including HC at Pellissippi State CC and Young Harris College, launched Saint Mary-of-the-Woods College's program in 2017 to a national tournament berth, USCAA National Coach of the Year, former pro player in Morocco with 120+ appearances for KACM Marrakech) plus one assistant coach. Home venue (John Mickelson Field/Stadium) is a shared multi-sport college stadium, not a soccer-dedicated facility. No dedicated strength & conditioning or sports-science staff confirmed for men's soccer specifically.",
+    "fitOlivier": 57,
+    "lensScores": {
+      "overall": 57,
+      "soccer": 49,
+      "academic": 47,
+      "minutes": 57,
+      "lifestyle": 50,
+      "value": 60
+    },
+    "tags": [
+      "warm",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "John Mickelson Field/Stadium, Thatcher — shared multi-sport venue",
+      "On-campus residence halls (traditional + apartment-style)",
+      "Sports Medicine Professions AA + Physical Therapy Technician certificate"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "housing": {
+        "available": true,
+        "note": "EAC's Thatcher campus offers traditional- and apartment-style residence halls for men and women (Tier-1: eac.edu Student Life/Residence Life Office); one 2025-26 COA on-campus living budget from $220/month promotional pricing referenced by the college."
+      },
+      "stadium": "John Mickelson Field/Stadium, Thatcher, AZ — a shared multi-sport college stadium (also hosts football); capacity not published for soccer specifically.",
+      "trainingFields": "Not itemized separately from the match venue on the official site; campus map lists a separate Lower Practice Field and Upper Practice Field used across sports.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach or facility confirmed on the official athletics site.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training support; specifics not published for men's soccer.",
+      "academicLabs": "Genuine Sports Medicine Professions / Physical Therapy Technician coursework gives real classroom exposure relevant to the ACU/PT pathway, though the exact course list could not be fully confirmed this session.",
+      "extras": "Thatcher sits in Arizona's Gila Valley (Graham County), a small rural desert-agricultural community near Safford — genuinely remote relative to Phoenix/Tucson.",
+      "note": "A brand-new program (launched 2023) already reaching a Region 1 semifinal, under a head coach with a genuinely strong development CV, and a real Sports Medicine/PT Technician academic pathway — offset by a shared (not soccer-dedicated) stadium and a very small, remote Gila Valley setting."
+    },
+    "culture": {
+      "vibe": "Thatcher is a small rural town (part of the Safford/Gila Valley area, Graham County) in southeastern Arizona — a genuinely remote, small-community setting, not a city campus. The men's soccer program is brand new (launched 2023) and already building momentum, reaching the Region 1 semifinals in its 3rd season.",
+      "thingsToDo": "Very limited off-campus entertainment given the rural Gila Valley setting; Tucson is roughly 2 hours away, Phoenix roughly 3 hours.",
+      "socialScene": "On-campus residence halls (traditional + apartment-style) give the program a genuine dorm-based social base.",
+      "olivierMatch": "★★ A fast-rising, young program with a strong new head coach and real on-campus housing, but Thatcher's small, remote rural setting is a significant lifestyle mismatch for a warm-city-preferring Sydney athlete — even though the warm desert climate itself is a match.",
+      "lifestyleTags": "Warm, small/rural town, new program, on-campus housing"
+    },
+    "courses": [
+      "Sports Medicine Professions AA coursework",
+      "Physical Therapy Technician Certificate coursework",
+      "Personal Trainer Certificate coursework"
+    ],
+    "rec": "Eastern Arizona College's men's soccer program is one of the youngest in this guide — launched only in August 2023 — but has moved fast, reaching the 2025 NJCAA Region 1 semifinals in just its 3rd season. New head coach Abe Tizaf brings a genuinely strong development CV: a decade-plus of college head-coaching experience, a program-launch and national-tournament berth at Saint Mary-of-the-Woods College, USCAA National Coach of the Year honors, and a professional playing career in Morocco. Academically, EAC's Sports Medicine Professions AA plus a stand-alone Physical Therapy Technician certificate is a genuinely stronger pre-PT-adjacent offering than the generic transfer degrees at most Arizona JUCOs. The trade-offs: a shared (not soccer-dedicated) stadium, no confirmed dedicated sports-science staff, and Thatcher's small, remote rural Gila Valley setting.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 11,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 11,
+      "cleared_names": [
+        "Cristian Martinez (So·M)",
+        "Bamba Sall Ngom (Fr·M)",
+        "Davi Barros (So·M)",
+        "Callum Winkler (Fr·M)",
+        "Ohene Darpoh (Fr·M)",
+        "Kaito Byer (Fr·M)",
+        "Angel Berrios (Redshirt-So·M)",
+        "Marco Cordova (So·M)",
+        "Dusan Cooper (Fr·M)",
+        "Oscar Gomez Sosa (So·M)",
+        "Gianfranco Arguello (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 50,
+          "label": "Squad rotation — clean slate, deep pool"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 68,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster's 11 midfielders (5 So + 5 Fr + 1 Redshirt-So) clear before Olivier's August 2027 start. Zero roster overlap, but 11 is a deeper midfield pool than most guide JUCOs, meaning more incoming-class competition for the open spots even with zero direct overlap. The current 2026-27 roster (checked live) is only 20% populated with positions (5 of 25) as of early August — too incomplete to use, per this campaign's early-August partial-roster pattern. Ask the new coaching staff: 'How many central midfielders are you targeting in your first full recruiting class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "All 11 current midfielders show no prior-college entries in the roster's hometown/high-school column, including several international signings (Brazil, Senegal, Ghana, Japan) — a clean freshman-entry signal, consistent with a brand-new program still building its portal/transfer pipeline."
+    },
+    "acRank": "NJCAA Level — Sports Medicine Professions pathway",
+    "kinRank": "Sports Medicine Professions AA + Physical Therapy Technician certificate — stronger pre-PT alignment than a generic transfer degree"
+  },
+  {
+    "id": "csn_college",
+    "name": "College of Southern Nevada",
+    "full": "College of Southern Nevada",
+    "loc": "Las Vegas, NV",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / ACCAC",
+    "confKey": "other",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "Mid-table ACCAC Division I finishes both recent seasons — 1-6-1 conference (5-6-1 overall, .458) in 2025-26 and 3-5-2 conference (3-9-2 overall, .286) in 2024-25 — with no confirmed 2025 national ranking or NJCAA All-America selection, so classified Standard. The program's academic culture is a genuine strength (multiple student-athletes on 2025-26 NJCAA All-Academic First/Second Team). Verified via official accac.org standings archives.",
+    "njcaaRegion": "Region 1",
+    "njcaaRegionArea": "Arizona, California, Southern Nevada",
+    "profileDepth": "full",
+    "color": [
+      "#f3e8ff",
+      "#6b21a8"
+    ],
+    "mapX": 105,
+    "mapY": 195,
+    "domain": "csncoyotes.com",
+    "url": "https://csncoyotes.com/sports/mens-soccer/index",
+    "degreeTitle": "Physical Therapist Assistant, Associate of Applied Science",
+    "acuAlign": 7,
+    "acuAlignNote": "CSN's Physical Therapist Assistant AAS (csn.edu/physical-therapist-assistant-aas) is a fully accredited, genuinely PT-focused 2-year program covering anatomy/physiology, kinesiology, therapeutic exercise and clinical rehab coursework — a real, direct pathway toward Olivier's DPT career goal, stronger than the generic transfer degrees at most JUCOs in this guide. Important caveat: like most PTA programs nationally, admission is separately competitive/limited-cohort beyond general college enrolment (specific prerequisite GPA and application-cycle requirements not fully confirmed this session) — a student-athlete would need to plan around program admission timing alongside soccer commitments. CSN's general Physical Sciences AS and Health Sciences AAS pathways remain the accessible fallback if the PTA cohort isn't available in a given cycle.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 34000,
+    "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "College of Southern Nevada is a public community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor. Note the separate, competitive PTA-program admission GPA requirement described in acuAlignNote.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 28408,
+      "tuition": 14403,
+      "roomBoard": 14005,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "CSN is a commuter college with NO on-campus housing (see facilityDetails.housing) — the official 2026-27 Cost of Attendance (csn.edu/financial-aid/cost-of-attendance, Off-Campus/Out-of-State, full-time) is the only applicable budget: Tuition/Fees $14,403 (published combined, so `fees` is stored as $0 to avoid double-counting) + Room $8,488 + Food $5,517 = $14,005 living-expense allowance. Direct billed cost: $28,408/yr — the highest of this batch, reflecting Las Vegas's cost of living. The college's own full published COA (adding books $1,320 + personal $3,501 + transportation $3,183 + loan fees $38) totals $36,450/yr. As NJCAA Division I, athletic aid can structurally cover tuition and fees, though with no campus housing bill the practical benefit is mostly tuition/fee coverage plus help toward off-campus living costs; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "5th ACCAC D1 (1-6-1)",
+        "note": "1-6-1 in conference play (.188), 5-6-1 overall (.458). Verified via official accac.org 2025-26 Division 1 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "4th ACCAC D1 (3-5-2)",
+        "note": "3-5-2 in conference play (.400), 3-9-2 overall (.286). Verified via official accac.org 2024-25 Division 1 standings archive."
+      }
+    ],
+    "titles": [
+      "Multiple 2025-26 NJCAA All-Academic First/Second Team student-athletes (soccer program-wide academic culture)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No MLS SuperDraft picks or confirmed D1 transfers found. No dedicated alumni/next-level tracking page found on csncoyotes.com."
+      ],
+      "draftRank": "JUCO — no confirmed pro/D1 transfer pipeline data published",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on csncoyotes.com (checked site nav and news archive). Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 52,
+      "fitness": 62
+    },
+    "devScoresNote": "Live staff directory (csncoyotes.com, 2026 season — the roster page's own cached 2025 staff list is STALE, superseded by a Feb 13, 2026 restructuring): Jocelyn Roach, Director of Soccer / Head Coach Men's & Women's (hired 2020 as women's HC, played college soccer at Western Kentucky University earning Sun Belt All-Conference honors, graduate degree from Texas A&M-Commerce; new to men's program oversight as of Feb 2026) plus Assistant Coach Grant Vermillion AND a dedicated Strength & Conditioning Coach (Christian Sevilla) — genuinely strong for a JUCO. Support staff includes a Head Athletic Trainer (Steve Jacobucci, MS/ATC/LAT/CSCS) plus 2 assistant athletic trainers — the deepest sports-medicine staffing confirmed among this batch's schools.",
+    "fitOlivier": 63,
+    "lensScores": {
+      "overall": 63,
+      "soccer": 52,
+      "academic": 52,
+      "minutes": 66,
+      "lifestyle": 100,
+      "value": 56
+    },
+    "tags": [
+      "warm",
+      "city",
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Cheyenne Sports Complex, North Las Vegas — home matches",
+      "Dedicated Strength & Conditioning Coach + 3-person athletic training staff",
+      "Physical Therapist Assistant AAS — genuine pre-DPT pathway"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "housing": {
+        "available": false,
+        "note": "CSN is a commuter college — the official Cost of Attendance page (csn.edu/financial-aid/cost-of-attendance) publishes only 'Off Campus' and 'With Parent' budget tiers, no on-campus option. Confirmed via multiple independent sources describing CSN as having no residence halls/dorms."
+      },
+      "stadium": "Cheyenne Sports Complex, North Las Vegas, NV — shared multi-sport venue; capacity not published for soccer specifically.",
+      "trainingFields": "Not itemized separately from the match venue on the official site.",
+      "strengthConditioning": "Dedicated Strength & Conditioning Coach (Christian Sevilla) confirmed on the 2026 men's soccer staff directory — genuinely above typical JUCO provision.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages; the dedicated S&C role is the main sports-science asset.",
+      "sportsMed": "A Head Athletic Trainer (MS, ATC, LAT, CSCS) plus 2 assistant athletic trainers are listed on the men's soccer support staff — a genuinely deep sports-medicine team for a JUCO.",
+      "academicLabs": "Genuine Physical Therapist Assistant AAS coursework (anatomy/physiology, kinesiology, therapeutic exercise) gives real classroom/clinical exposure relevant to the ACU/DPT pathway, subject to the program's separate competitive admission.",
+      "extras": "CSN is a large, multi-campus college spanning the Las Vegas valley (Charleston, West Charleston, Henderson, North Las Vegas); soccer plays out of the Cheyenne Sports Complex in North Las Vegas. No on-campus housing anywhere in the system.",
+      "note": "The strongest sports-medicine/S&C staffing and the most directly PT-relevant degree pathway of this batch's schools, in a genuine major warm city — offset by no on-campus housing at all and the highest direct cost in the batch."
+    },
+    "culture": {
+      "vibe": "College of Southern Nevada is a large, multi-campus community college spanning the Las Vegas valley — the only school in this batch located in a genuine major city, matching Olivier's stated warm-city preference closely. The soccer program is mid-table competitively but carries a real academic-culture strength (multiple NJCAA All-Academic honorees).",
+      "thingsToDo": "Las Vegas offers by far the most off-campus city life of any Arizona/Nevada JUCO in this guide — entertainment, nightlife, professional sports (Raiders, Golden Knights, Aces) and year-round warm weather.",
+      "socialScene": "No on-campus housing anywhere in the CSN system — as a fully commuter college, the team's social fabric runs through training and off-campus shared housing rather than dorm life.",
+      "olivierMatch": "★★★★ The closest lifestyle match to Sydney of any JUCO in this batch — a genuine warm major city — undercut by having zero on-campus housing at all and the highest direct cost among these four schools.",
+      "lifestyleTags": "Warm, major city, no campus housing, strong academic culture"
+    },
+    "courses": [
+      "Physical Therapist Assistant AAS coursework",
+      "Anatomy & Physiology I/II",
+      "Therapeutic Exercise / Kinesiology"
+    ],
+    "rec": "College of Southern Nevada is the only school in this batch set in a genuine major city — Las Vegas — closely matching Olivier's stated warm-city lifestyle preference, and backs it with the deepest sports-medicine staffing (a dedicated Strength & Conditioning coach plus a 3-person athletic training team) and the most directly PT-relevant academic pathway (a fully accredited Physical Therapist Assistant AAS) of any school in this batch. The soccer program itself is mid-table in ACCAC play and recently restructured its coaching (Jocelyn Roach, a long-tenured women's-side coach with a Western Kentucky University playing background, was named Director of Soccer over both programs in February 2026 — new to men's oversight). The major trade-off: CSN is a fully commuter college with zero on-campus housing anywhere in its system, and Las Vegas cost of living makes this the most expensive school in the batch.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 5,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Francisco Duran-Andrade (So·CM)",
+        "Omar Ibarra (Fr·CM)",
+        "Jordan Nathan (So·CM)",
+        "Matias Martinez (Fr·CM)",
+        "Arman Chamoyan (Fr·CM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 60,
+          "label": "Likely starter — clean slate, small pool"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 76,
+          "label": "Established starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster's 5 confirmed central midfielders (2 So + 3 Fr) clear before Olivier's August 2027 start. Zero roster overlap, and a genuinely small central-midfield pool (excluding 3 wide RW/LW players and 2 hybrid ST/M players not counted as pure midfielders) means real early opportunity. The current 2026-27 roster page (checked live) published zero players as of early August — too early to use, per this campaign's early-August pattern; 2025-26 is the most recently populated season. Ask the new coaching staff: 'How many central midfielders are you bringing in for your first full recruiting class under the new Director of Soccer structure?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "All 5 current central midfielders are Las Vegas-area high school signings with no prior-college entries — a clean freshman-entry signal, consistent with CSN's roster being built primarily from local Las Vegas Valley high schools."
+    },
+    "acRank": "NJCAA Level — Physical Therapist Assistant AAS pathway",
+    "kinRank": "Fully accredited Physical Therapist Assistant AAS — genuine direct pre-DPT pathway, subject to separate competitive program admission"
+  },
+  {
+    "id": "community_christian_college",
+    "name": "Community Christian College",
+    "full": "Community Christian College",
+    "loc": "San Bernardino, CA",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / ACCAC",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A structurally unusual program: Community Christian College is a small online-first religious college (registered address in Quartzsite, AZ) that fields geographically dispersed athletic teams under the same institutional brand across multiple states. This specific men's soccer team trains out of the San Bernardino, CA-area program and competes in Arizona's ACCAC/NJCAA Region 1 (a separate, unrelated 'Southwest Raiders' team under the same college name plays in Houston, TX under a different league — do not confuse the two). Recent results are winless: 0-8 in ACCAC play (0-8 overall) in 2024-25, and 0-8 conference through the available part of 2025-26 (1-13 overall, .071). No confirmed national ranking or All-America selection. Verified via official accac.org standings and cccollege.edu program pages.",
+    "njcaaRegion": "Region 1",
+    "njcaaRegionArea": "Arizona, California, Southern Nevada",
+    "profileDepth": "full",
+    "color": [
+      "#fee2e2",
+      "#991b1b"
+    ],
+    "mapX": 112,
+    "mapY": 205,
+    "domain": "cccollegeathletics.com",
+    "url": "https://cccollegeathletics.com/sports/mens-soccer/index",
+    "degreeTitle": "Associate of Arts in Liberal Arts",
+    "acuAlign": 2,
+    "acuAlignNote": "Community Christian College publishes exactly one degree program college-wide (cccollege.edu/aa-in-liberal-arts) — a general two-year Associate of Arts in Liberal Arts (90 quarter credits across history, literature, natural sciences, psychology, theology and sociology). No Exercise Science, Kinesiology, Athletic Training or Sports Medicine program exists in any form — the weakest academic alignment of any school in this campaign. The 'natural sciences' general-education requirement is assumed to cover only foundational biology content. Full WES evaluation strongly recommended given how far this program sits from a typical US college curriculum.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — ACCAC (Arizona Community College Athletic Conference)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 350,
+    "prePT": "Poor",
+    "prePTShort": "Poor",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Community Christian College has open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 12400,
+      "tuition": 9675,
+      "roomBoard": 0,
+      "fees": 2725,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Community Christian College's cost structure is genuinely unlike a traditional JUCO's: tuition is billed per quarter-credit ($215/unit, effective Summer Quarter 2026), and the Associate of Arts degree requires 90 quarter credits over 2 years (45 credits/yr), giving an estimated annual tuition of $9,675. There is NO published room & board figure anywhere on the official site — the college publishes no institutional Cost of Attendance table with a living-expense estimate, consistent with there being no on-campus housing at all (see facilityDetails.housing); `roomBoard` is therefore stored as $0, not a verified zero-cost outcome, and a player would need to independently budget for off-campus housing in the San Bernardino, CA area. `fees` includes the mandatory $1,725 in-season + $1,000 off-season athletic participation fee ($2,725/yr total) that funds team travel, equipment and game-day costs; smaller one-time fees (application $45, admissions course $45, graduation $145, science lab $45-300) are excluded as immaterial one-off costs. This is the lowest direct billed figure of any school in this batch, but excludes a real and currently unquantified housing cost."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Last, ACCAC D1 (0-8, partial)",
+        "note": "0-8 in ACCAC conference play, 1-13 overall (.071) through the available part of the 2025-26 season — a winless conference campaign. Verified via official accac.org 2025-26 standings and cccollegeathletics.com schedule."
+      },
+      {
+        "yr": 2024,
+        "pos": "Last, ACCAC D1 (0-8)",
+        "note": "0-8 in conference play (.000), 0-8 overall (.000) — a fully winless season. Verified via official accac.org 2024-25 Division 1 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No MLS SuperDraft picks, confirmed D1 transfers, or any next-level output found. No dedicated alumni/next-level tracking page found on cccollegeathletics.com."
+      ],
+      "draftRank": "JUCO — no confirmed pro/D1 transfer pipeline data published; a consistently winless recent program",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on cccollegeathletics.com. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 42,
+      "technical": 40,
+      "fitness": 38
+    },
+    "devScoresNote": "Official staff directory lists Head Coach Gabriel Mauries (gmauries@cccollege.edu) with no assistant coach found for men's soccer specifically, and no coaching bio/CV published anywhere on cccollegeathletics.com or cccollege.edu. No dedicated strength & conditioning coach, athletic trainer, or sports-science staff confirmed for the program. The thinnest confirmed staffing and facility footprint of any school in this batch, consistent with the program's winless recent record and the college's minimal-campus, multi-state operating model.",
+    "fitOlivier": 46,
+    "lensScores": {
+      "overall": 46,
+      "soccer": 41,
+      "academic": 26,
+      "minutes": 50,
+      "lifestyle": 50,
+      "value": 58
+    },
+    "tags": [
+      "warm"
+    ],
+    "facilities": [
+      "San Bernardino, CA area training location (specific venue not published)",
+      "No confirmed dedicated strength & conditioning or sports-medicine staff",
+      "Associate of Arts in Liberal Arts — the college's only degree program"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": false,
+        "note": "No institutional on-campus housing found anywhere on cccollege.edu or cccollegeathletics.com — the college's own Cost of Attending page publishes no room & board line at all, and the college operates as a small, multi-site, largely online institution rather than a traditional residential campus."
+      },
+      "stadium": "Specific home venue not published on cccollegeathletics.com; the program is based in the San Bernardino, CA area.",
+      "trainingFields": "Not published on the official site.",
+      "strengthConditioning": "No dedicated strength & conditioning coach or facility confirmed.",
+      "sportsScience": "No video-analysis, GPS/wearable technology, or sports-science staff confirmed.",
+      "sportsMed": "No dedicated athletic training staff confirmed for men's soccer specifically.",
+      "academicLabs": "None — the college's sole degree (AA in Liberal Arts) has no laboratory science component confirmed beyond a general natural-sciences requirement.",
+      "extras": "Community Christian College is a small religious online-first college with an unusual multi-state athletics structure — this specific team is one of several geographically separate 'Community Christian College' soccer programs operating under the same institutional brand across different states and leagues.",
+      "note": "The thinnest-resourced program in this batch by a wide margin: no confirmed dedicated staff beyond a head coach, no on-campus housing, a single generic degree program, and a fully winless conference record across the two most recently verified seasons."
+    },
+    "culture": {
+      "vibe": "Community Christian College's ACCAC-affiliated men's soccer program trains in the San Bernardino, CA area (Inland Empire) — a genuinely unusual setup, since the parent institution is a small, multi-state online-first religious college rather than a traditional residential campus. The program has struggled competitively, going winless in ACCAC play across the two most recently verified seasons.",
+      "thingsToDo": "The Inland Empire (San Bernardino/Riverside area) offers real off-campus city amenities, with Los Angeles roughly 60-90 minutes away depending on traffic.",
+      "socialScene": "No on-campus housing or traditional dorm-based student life — players independently arrange off-campus accommodation.",
+      "olivierMatch": "★★ Warm Southern California climate and reasonable proximity to Los Angeles are genuine positives, but the near-total absence of a real academic program, dedicated coaching/sports-science staff, on-campus housing, and any recent competitive success make this the weakest overall fit in this batch.",
+      "lifestyleTags": "Warm, Southern California, minimal academic program, no campus housing, struggling program"
+    },
+    "courses": [
+      "Associate of Arts in Liberal Arts — general education coursework only"
+    ],
+    "rec": "Community Christian College is a structurally unusual program — a small, multi-state online-first religious college whose ACCAC-affiliated men's soccer team trains in the San Bernardino, CA area under Head Coach Gabriel Mauries. Southern California's warm climate and proximity to Los Angeles are the program's only clear positives. Academically, the college offers just one degree college-wide (a general Associate of Arts in Liberal Arts, no science or kinesiology focus at all), and competitively the program has gone winless in ACCAC play across the two most recently verified seasons (2024-25 and the available part of 2025-26). No on-campus housing, no confirmed dedicated coaching or sports-science staff beyond a single head coach. Of this batch's four schools, this is the clearest case for treating with real caution rather than as a serious recruiting target.",
+    "minutesOutlook": {
+      "available": false,
+      "note": "No position data published anywhere on the official roster — checked both the card-based roster listing (13 players, all shown as 'Freshman', no position/hometown fields at all) and an individual player bio page (Jose Magallanes — shows only jersey number, name and class, no position field), so there is nowhere else to look. Set to unavailable rather than guessed."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "General Liberal Arts AA only — no Exercise Science/Kinesiology coursework of any kind"
   }
 ]

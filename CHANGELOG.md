@@ -6,6 +6,38 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.71 (2026-08-11) — NJCAA DI gap-fill Batch 2: Yavapai College, Eastern Arizona College, College of Southern Nevada, Community Christian College added (JUCO)
+
+**Second batch of the NJCAA DI Gap-Fill campaign** (see the `njcaa_di_gap_fill_campaign` memory for the full 13-batch plan) — 4 more NJCAA DI / ACCAC Region 1 schools found missing from `juco.json` via the user-supplied spreadsheet cross-reference. 114 → 118 schools.
+
+- **Yavapai College** (Prescott, AZ) — jucoTier Elite (seven-time NJCAA national champion program; 2025 Region 1 DI runner-up, upsetting #6 Arizona Western before falling to #16 Mohave in the final), coach Giorgi Manzula, fitOlivier 50, acuAlign 4 (no dedicated Exercise Science degree), costNum $16,364, housing available. **`warm:false`** — Prescott sits at ~5,400ft with a genuine four-season mountain climate, a deliberate departure from the "AZ JUCO = warm" default used elsewhere in the guide.
+- **Eastern Arizona College** (Thatcher, AZ) — jucoTier Standard (brand-new program, launched Aug 2023; already a 2025 Region 1 semifinalist), coach Abe Tizaf (decade-plus CV, USCAA National Coach of the Year, prior program-launch success elsewhere, pro playing career in Morocco), fitOlivier 57, acuAlign 6 (genuine Sports Medicine Professions AA + a standalone Physical Therapy Technician certificate).
+- **College of Southern Nevada** (Las Vegas, NV) — jucoTier Standard, fitOlivier 63 (highest of the batch — the only school in this group in a genuine major city). acuAlign 7 (a fully accredited Physical Therapist Assistant AAS, the strongest pre-DPT-relevant degree found anywhere in this campaign to date). `housing:false` — CSN is a fully commuter college with zero dorms system-wide.
+- **Community Christian College** (San Bernardino, CA) — the weakest profile added to date: coach has no published CV anywhere, degree is a single generic Liberal Arts AA college-wide, and the team has gone winless in ACCAC play across both verified seasons. `minutesOutlook.available:false` — the roster publishes zero position data for any player. Turned out to be a structurally unusual multi-state online-first college that fields several geographically separate teams under one institutional brand; the ACCAC-affiliated team is the California-based program, not an unrelated Houston, TX squad sharing the same college name.
+
+**Research incident:** Yavapai's spreadsheet-listed domain (`goroughriders.com`) has a genuine server-side TLS handshake failure, independently confirmed via three different tools. Worked around via the Wayback Machine for the 2025-26 roster/staff data, and separately discovered `ycathletics.com` as the college's actual current live athletics domain — both the school object's `url` and `js/app.js`'s `DOMAINS` entry now point there.
+
+**Scoring bug caught pre-commit:** setting `proPlayers.nextLevel` with `perYear:null` (the correct pattern for an unmeasured JUCO) makes `nextLevelFactor()` return the NEUTRAL constant `0.3773`, not `0` — a manual hand-calculation of all 4 schools' `fitOlivier`/`lensScores` initially assumed 0 and was wrong by several points each. Caught by `validate_consistency.js`'s FIT check (`Issues: 4` before the fix), corrected by computing scores with a script that mirrors `scores.js` exactly.
+
+All 4 coaches added, all 118 coaches re-ranked. `data/conferences.json`, `data/conf-prestige.json` and `js/app.js` (DOMAINS/SITE_URLS/SOCIAL/CONF_SECTIONS intro) updated — `conf-prestige.json` and CLAUDE.md's School → File Reference Table also backfilled Otero College and Montgomery College, which Batch 1 (v44.70) had missed. `validate_schools.py`: 0 errors (17 pre-existing warnings). `validate_consistency.js`: `Issues: 0`. Local preview (port 8790) and the live site both verified: all 118 cards render with correct fit scores, Details modal populates cleanly for a spot-checked school, all 4 new coaches appear correctly ranked, all 4 schools appear in Conferences, JUCOs correctly excluded from ACU Alignment, Financial Model shows the correct cost, and all 4 Dashboard map dots confirmed on land via `isPointInFill()` (Community Christian College's first-guess coordinates initially landed in the ocean and were corrected).
+
+`guideVersion` v44.70 → v44.71.
+
+---
+
+### v44.70 (2026-08-10) — NJCAA DI gap-fill Batch 1: Otero College, Montgomery College added (JUCO)
+
+**First batch of the NJCAA DI Gap-Fill campaign**, cross-referencing a user-supplied `NJCAA_DI_Mens_Soccer_by_Region.xlsx` spreadsheet against `data/juco.json` and finding 54 missing NJCAA DI schools. This batch adds the 2 of those 54 that were also 2025 district champions on the spreadsheet. 112 → 114 schools.
+
+- **Otero College** (La Junta, CO, Region 9) — jucoTier Elite (2025 Region 9 Regular Season + Tournament + Northwest District champions, Otero's first-ever NJCAA DI National Tournament win), coach Alberto Garcia, fitOlivier 51, acuAlign 5, costNum $19,021, housing available.
+- **Montgomery College** (Rockville, MD, Region 20) — jucoTier Elite (2025 Region 20 + MDJUCO + Mid-Atlantic District champions, beat Tyler JC 2-0 at NJCAA DI Nationals), coach Pedro Braz (USSF 'B'/UEFA C licensed), fitOlivier 45, acuAlign 9 (a genuine CAAHEP-accredited Exercise Science AA), costNum $30,902, no on-campus housing.
+
+Both coaches added, all 114 coaches re-ranked. `data/conferences.json` (guideSchools[] + desc/olivierNote) and `js/app.js` (DOMAINS/SITE_URLS/SOCIAL + JUCO CONF_SECTIONS intro) updated. `validate_consistency.js`: `Issues: 0`. Local browser-verified: both cards render in the correct NJCAA-region sub-groups, all 9 modal tabs populate, map dots land on-land.
+
+`guideVersion` v44.69 → v44.70.
+
+---
+
 ### v44.69 (2026-08-09) — fix: empty NJCAA-region grids left ~24px of dead margin each after a search filter
 
 **Owner caught this by looking at the live Explore tab** — searching for a single school (e.g. "Lewis & Clark CC") inside the expanded JUCO section left a large blank gap between the conference intro tile and the one visible school card.

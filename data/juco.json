@@ -7808,7 +7808,10 @@
     "njcaaRegion": "Region 24",
     "njcaaRegionArea": "Illinois",
     "profileDepth": "full",
-    "color": ["#dbeafe", "#1e3a8a"],
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
     "mapX": 389,
     "mapY": 196,
     "domain": "lc.edu",
@@ -7817,22 +7820,70 @@
     "acuAlign": 11,
     "acuAlignNote": "Lewis & Clark offers a genuine dedicated Exercise Science AAS (60 credit hours, Tier-1: 2026-27 catalog, catalog.lc.edu) covering exercise physiology (XSCI 135), biomechanics (XSCI 145), exercise assessment & prescription (XSCI 140), exercise for special populations (XSCI 220), sport and exercise psychology (XSCI 200/240), nutrition (BIOL 161), anatomy-physiology (BIOL 141, an alternative to BIOL 132), and a supervised Exercise Science Internship (XSCI 271) — plus articulated transfer agreements to SIUE and Missouri Baptist University for students continuing to a 4-year degree. Meaningfully stronger and more direct alignment with ACU's BESS units than the 'Athletic Training-adjacent' pattern typical of most JUCOs in this guide, though it remains a 2-year AAS without upper-division exercise-science coursework.",
     "acuUnits": [
-      {"unit": "ANAT100", "covered": true},
-      {"unit": "EXSC222", "covered": true},
-      {"unit": "BIOL125", "covered": true},
-      {"unit": "EXSC225", "covered": true},
-      {"unit": "EXSC322", "covered": true},
-      {"unit": "EXSC394", "covered": false},
-      {"unit": "EXSC224", "covered": true},
-      {"unit": "EXSC321", "covered": true},
-      {"unit": "EXSC204", "covered": false},
-      {"unit": "EXSC216", "covered": true},
-      {"unit": "EXSC199", "covered": true},
-      {"unit": "EXSC296", "covered": false},
-      {"unit": "EXSC187", "covered": false},
-      {"unit": "EXSC230", "covered": true},
-      {"unit": "EXSC122", "covered": true},
-      {"unit": "EXSC398", "covered": false}
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ],
     "soccerLevel": "NJCAA Division I — Region 24 (Illinois)",
     "soccerLevelShort": "NJCAA DI — Region 24",
@@ -7858,11 +7909,31 @@
       "internationalNote": "Lewis & Clark's 2026-27 out-of-state/international tuition rate is $272/credit hour plus $30/credit hour in mandatory fees (Tier-1: lc.edu/pay-for-college/tuition.html) — $302/credit hour combined. At the college's own 28-credit/year full-time Cost of Attendance basis (catalog.lc.edu Financial Aid section, 2026-27 catalog), that is tuition $7,616 + fees $840. L&C has NO on-campus housing (commuter college — see facilityDetails.housing), so `roomBoard` uses the college's own official Independent-Student 'Living Expenses (Food & Housing)' allowance of $8,685/yr from that same COA table, not a housing bill. Direct billed cost: $17,141/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board, though with no campus housing bill the practical benefit is mostly tuition/fee coverage plus help toward the student's own off-campus living costs; budget for a realistic 40-60% package."
     },
     "confRecord": [
-      {"yr": 2025, "pos": "1st Region 24 D1 (12-5-1)", "note": "12-5-1 overall (.694), 5-2 in Region 24 play through the fall 2025 portion of the season; a 6-game spring 2026 slate against 4-year opposition (Lindenwood, Maryville, Harris-Stowe, McKendree, UMSL, SIUE) followed. Verified via official njcaaregion24.com 2025-26 standings."},
-      {"yr": 2024, "pos": "1st Region 24 D1 — Region Champs (15-5)", "note": "15-5 overall; won the Region 24 regular season AND the post-season region tournament; reached the NJCAA DI Midwest District final, one win short of the national tournament. Verified via official njcaaregion24.com 2024-25 standings and head coach John Dunn's official bio."},
-      {"yr": 2023, "pos": "1st Region 24 D1 (10-3-4)", "note": "10-3-4 overall (.706); won the Region 24 regular season. Verified via official njcaaregion24.com standings and head coach John Dunn's official bio."},
-      {"yr": 2022, "pos": "1st Region 24 D1 (8-5-2)", "note": "8-5-2 overall; won the Region 24 regular season in John Dunn's first season as head coach. Source: John Dunn's official Lewis & Clark coaching-record table (njcaaregion24.com's 2022-23 standings page returned duplicate 2023-24 data at time of research — a site display bug, not used)."},
-      {"yr": 2021, "pos": "1st Region 24 D1 (12-5-1)", "note": "12-5-1 overall, 6-0-1 in Region 24 play (.929) — the top regional record, under the prior head coach (pre-dates John Dunn's 2022 arrival). Verified via official njcaaregion24.com 2021-22 standings."}
+      {
+        "yr": 2025,
+        "pos": "1st Region 24 D1 (12-5-1)",
+        "note": "12-5-1 overall (.694), 5-2 in Region 24 play through the fall 2025 portion of the season; a 6-game spring 2026 slate against 4-year opposition (Lindenwood, Maryville, Harris-Stowe, McKendree, UMSL, SIUE) followed. Verified via official njcaaregion24.com 2025-26 standings."
+      },
+      {
+        "yr": 2024,
+        "pos": "1st Region 24 D1 — Region Champs (15-5)",
+        "note": "15-5 overall; won the Region 24 regular season AND the post-season region tournament; reached the NJCAA DI Midwest District final, one win short of the national tournament. Verified via official njcaaregion24.com 2024-25 standings and head coach John Dunn's official bio."
+      },
+      {
+        "yr": 2023,
+        "pos": "1st Region 24 D1 (10-3-4)",
+        "note": "10-3-4 overall (.706); won the Region 24 regular season. Verified via official njcaaregion24.com standings and head coach John Dunn's official bio."
+      },
+      {
+        "yr": 2022,
+        "pos": "1st Region 24 D1 (8-5-2)",
+        "note": "8-5-2 overall; won the Region 24 regular season in John Dunn's first season as head coach. Source: John Dunn's official Lewis & Clark coaching-record table (njcaaregion24.com's 2022-23 standings page returned duplicate 2023-24 data at time of research — a site display bug, not used)."
+      },
+      {
+        "yr": 2021,
+        "pos": "1st Region 24 D1 (12-5-1)",
+        "note": "12-5-1 overall, 6-0-1 in Region 24 play (.929) — the top regional record, under the prior head coach (pre-dates John Dunn's 2022 arrival). Verified via official njcaaregion24.com 2021-22 standings."
+      }
     ],
     "titles": [
       "NJCAA DI Region 24 regular-season champions 2021-2024 (four straight)",
@@ -7872,7 +7943,9 @@
     ],
     "proPlayers": {
       "mlsPicks5yr": 0,
-      "notable": ["Daniel Freire (D, Rio de Janeiro, Brazil) transferred from Lewis & Clark to NCAA D1 Eastern Illinois for the 2025 season — confirmed on EIU's own official roster, which lists 'Lewis & Clark CC (Ill.)' as his previous school. No MLS SuperDraft picks confirmed in the last 5 years — head coach John Dunn's official bio states he has personally sent 6+ players to NCAA D1 programs plus top NCAA D2/D3/NAIA programs across his tenure; Freire is the one publicly confirmed name found via cross-checking national D1 transfer trackers. The program's value is the 4-year transfer pathway, not a pro pipeline."],
+      "notable": [
+        "Daniel Freire (D, Rio de Janeiro, Brazil) transferred from Lewis & Clark to NCAA D1 Eastern Illinois for the 2025 season — confirmed on EIU's own official roster, which lists 'Lewis & Clark CC (Ill.)' as his previous school. No MLS SuperDraft picks confirmed in the last 5 years — head coach John Dunn's official bio states he has personally sent 6+ players to NCAA D1 programs plus top NCAA D2/D3/NAIA programs across his tenure; Freire is the one publicly confirmed name found via cross-checking national D1 transfer trackers. The program's value is the 4-year transfer pathway, not a pro pipeline."
+      ],
       "draftRank": "JUCO — four straight NJCAA DI Region 24 regular-season titles (2021-2024) under head coach John Dunn, with confirmed NCAA D1 transfer output (Daniel Freire, Eastern Illinois, 2025); primary value is the NCAA D1/D2 transfer pipeline, not an MLS pathway.",
       "nextLevel": {
         "metric": "d1TransferRate",
@@ -7900,7 +7973,10 @@
       "lifestyle": 0,
       "value": 56
     },
-    "tags": ["soccer", "acad"],
+    "tags": [
+      "soccer",
+      "acad"
+    ],
     "facilities": [
       "Glazebrook Park — dedicated grass and turf soccer field",
       "Dedicated head strength & conditioning coach (individualized, periodized programs)",
@@ -7940,15 +8016,34 @@
       "mf_total": 7,
       "roster_season": "2026-27",
       "cleared_before_2027": 3,
-      "cleared_names": ["Raitis Bomis (So·MID)", "Cade Galaway (So·MID)", "David Sanchez (So·MID)"],
+      "cleared_names": [
+        "Raitis Bomis (So·MID)",
+        "Cade Galaway (So·MID)",
+        "David Sanchez (So·MID)"
+      ],
       "rising_senior_2027_count": 4,
-      "rising_senior_2027_names": ["Hugo Jesse (Fr·MID)", "Jackson Kiser (Fr·MID)", "Takumi Uerea (Fr·MID)", "Craig Moore (R.Fr·MID)"],
+      "rising_senior_2027_names": [
+        "Hugo Jesse (Fr·MID)",
+        "Jackson Kiser (Fr·MID)",
+        "Takumi Uerea (Fr·MID)",
+        "Craig Moore (R.Fr·MID)"
+      ],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
       "recruit_risk": "Low",
       "trajectory": [
-        {"year": 2027, "yr_label": "Yr 1", "pct": 70, "label": "Established starter"},
-        {"year": 2028, "yr_label": "Yr 2", "pct": 83, "label": "Captain candidate"}
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 70,
+          "label": "Established starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 83,
+          "label": "Captain candidate"
+        }
       ],
       "trajectoryNote": "JUCO 2-year program — of the 7 midfielders on the 2026-27 roster, 3 sophomores (Bomis, Galaway, Sanchez) clear before Olivier's August 2027 start; the other 4 (3 true freshmen plus one redshirt-freshman) return as sophomores/finalists in 2027-28, directly competing with Olivier in his Yr1. Smallest midfield pool and smallest returning-competitor count of any JUCO in the guide. ⚠ Set by direct comparison against peer JUCOs' stored trajectories rather than CLAUDE.md's §14 Opportunity Score table, which is a documented, unresolved gap for JUCOs (CLAUDE.md §6 group E) — that table cannot reproduce ANY of the 30 pre-existing JUCOs' stored Yr1/Yr2 values (its literal output for this roster would be Yr1≈20%, drastically out of line with every peer). Owner-approved approach (2026-08-09): match the real-world judgment scale the other 30 JUCOs were set on, pending the same recalibration they are all pending. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Freshman-friendly",
@@ -7956,5 +8051,537 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "Genuine dedicated Exercise Science AAS with real transfer agreements (SIUE, Missouri Baptist) — stronger academic alignment than most JUCOs in the guide."
+  },
+  {
+    "id": "otero_college",
+    "name": "Otero",
+    "full": "Otero College",
+    "loc": "La Junta, CO",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 9",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2025 NJCAA DI Region 9 Regular Season Champions, Region 9 Tournament Champions, and Northwest District (West Plains) Champions, culminating in the program's first-ever match win at the NJCAA DI National Tournament. Head coach Alberto Garcia became the youngest head coach in NJCAA history to win a Region, District, and Regular Season title in the same season (2025). Also 2023 NJCAA DI Region 9 Regular Season Champions and a 2021 Region 9 tournament finalist. Verified via Garcia's official Tier-1 coaching bio (oterorattlers.com/information/directory/bios/Alberto_Garcia) and official NJCAA DI stats site (njcaastats.prestosports.com/msoc/div1/teams).",
+    "njcaaRegion": "Region 9",
+    "njcaaRegionArea": "Colorado",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1e293b"
+    ],
+    "mapX": 262,
+    "mapY": 206,
+    "domain": "oterorattlers.com",
+    "url": "https://www.oterorattlers.com/sports/msoc/index",
+    "degreeTitle": "Associate of Science in Health Science",
+    "acuAlign": 5,
+    "acuAlignNote": "Otero does not offer a dedicated Exercise Science or Kinesiology degree. The AS in Health Science (Tier-1: 2025-26 catalog, otero.edu) is a genuine pre-health transfer degree built around a two-semester Human Anatomy & Physiology sequence (BIO 2101/BIO 2102) plus General College Biology with lab (BIO 1111), Human Pathophysiology (BIO 2116), Medical Terminology (HPR 1039), and Human Nutrition (HWE 1050). Strong on anatomy/physiology/biology fundamentals but has zero dedicated exercise-specific coursework (no biomechanics, exercise prescription, or exercise psychology units) — comparable to Daytona State's 'Health & Wellness Track', not to a dedicated ExSci/Kinesiology AAS.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 9 (Colorado)",
+    "soccerLevelShort": "NJCAA DI — Region 9",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "2100",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Otero is a public Colorado community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 19021,
+      "tuition": 9192,
+      "roomBoard": 9254,
+      "fees": 575,
+      "maxAthletic": 0.6,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Otero's 2026-27 Non-Resident on-campus rate is $306.40/credit hour (Tier-1: Otero-Tuition-Schedule-2026-27-Revised-6-30.pdf, otero.edu), which at a standard 15-credit/semester full-time load is $4,596/semester tuition plus $269.39 fees + $17.95 reg fee = $4,883.34/semester, i.e. $9,192 tuition + $575 fees/year. Room & board uses the college's own published Double-Wunsch/SS 15-meal-plan rate of $4,627/semester ($9,254/year) from the same official fee schedule — Otero DOES operate real on-campus residence halls (see facilityDetails.housing). Direct billed cost: $19,021/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "1st Region 9 D1 — Reg. Season, Tourney & District Champs (13-5-1)",
+        "note": "13-5-1 overall (.711), 10-1 conference (.909). Won the Region 9 regular season, the Region 9 tournament, and the Northwest District (West Plains) title, then won Otero's first-ever match at the NJCAA DI National Tournament. Verified via the official njcaastats.prestosports.com DI stats site and head coach Alberto Garcia's official Tier-1 bio."
+      },
+      {
+        "yr": 2024,
+        "pos": "Region 9 Runner-Up (7-3-4)",
+        "note": "7-3-4 overall (.643), 5-1-3 conference (.722). Verified via region9athletics.com official 2024-25 stats page and Garcia's official coaching bio."
+      },
+      {
+        "yr": 2023,
+        "pos": "1st Region 9 D1 — Regular Season Champs (12-1-4)",
+        "note": "12-1-4 overall (.824), 7-0-3 conference (.850) — a title-winning season. Verified via region9athletics.com official 2023-24 stats page and Garcia's official coaching bio."
+      },
+      {
+        "yr": 2021,
+        "pos": "Region 9 Tournament Finalist (9-6-2)",
+        "note": "9-6-2 overall (.588), 6-1-1 conference (.813); won the Region 9 tournament quarter-final and semi-final (4-0) before the final. Verified via oterorattlers.com's official 2021-22 team stats/schedule pages."
+      }
+    ],
+    "titles": [
+      "2025 NJCAA DI Region 9 Regular Season Champions",
+      "2025 NJCAA DI Region 9 Tournament Champions",
+      "2025 NJCAA DI Northwest District (West Plains) Champions",
+      "2025 NJCAA DI National Tournament — first match win in program history",
+      "2023 NJCAA DI Region 9 Regular Season Champions"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Marko Stajnko (Vorarlberg, Austria) & Zackarya Oumamass (Quebec, Canada) → University of Memphis (NCAA D1, AAC) — 2026",
+        "Kai Odagiri (Kanagawa, Japan) → Eastern Illinois University (NCAA D1) — 2026",
+        "Manuel Ronaldo Mena (Bogota, Colombia) → Cal State Northridge (NCAA D1) — 2026",
+        "Mohammed Baalbaki (Quebec, Canada) → Florida Gulf Coast University (NCAA D1) — 2026",
+        "A record-breaking class of 13 players signed to four-year programs in July 2026 (5 NCAA D1, 6 NCAA D2, 2 NAIA) — verified via Otero's official July 15, 2026 athletics release."
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks on record, but a genuinely elite and growing NCAA transfer pipeline: 13 players signed to four-year programs in a single 2026 class (5 D1, 6 D2, 2 NAIA), described by the Athletic Director as 'record-breaking'. Primary value is the NCAA D1/D2/NAIA transfer pathway, not a pro pipeline.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": "https://www.oterorattlers.com/sports/msoc/2026-27/releases/20260715op9vn5",
+        "note": "No standing alumni/next-level tracking page found on oterorattlers.com, but the official July 2026 athletics release names all 13 players who signed with four-year programs that year with exact destinations and divisions — a single-year snapshot, not a multi-year tracked rate, so left as a neutral factor rather than a measured perYear (consistent with how other JUCOs without a dedicated tracker page are treated). See notable[] for confirmed names/destinations."
+      }
+    },
+    "devScores": {
+      "tactical": 68,
+      "technical": 56,
+      "fitness": 52
+    },
+    "devScoresNote": "Tier-1: head coach Alberto Garcia (hired 2024) played at Otero himself, then was a NCAA D2 assistant at CSU Pueblo where he won 2x RMAC titles, 2x Super Region 4 titles, and reached an NCAA D2 national final, before returning to Otero and immediately delivering the program's best season on record (2025 Region/Tournament/District champion + first-ever national tournament win) — genuinely elite coaching pedigree for a JUCO, capped at the JUCO ceiling. No dedicated soccer stadium name or video-analysis technology found on official pages; the team plays on an unbranded field in La Junta. Strength & conditioning runs through the general-access Otero College Fitness Center (free weights, Nautilus, treadmills, ellipticals) next to McDivitt Gym — a community facility, not a dedicated athlete-only S&C program, and the 2-person soccer coaching staff (HC + one assistant) has no separate strength coach.",
+    "fitOlivier": 51,
+    "lensScores": {
+      "overall": 51,
+      "soccer": 53,
+      "academic": 42,
+      "minutes": 70,
+      "lifestyle": 0,
+      "value": 56
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Unbranded home soccer field in La Junta, CO — no dedicated/named stadium found on official pages",
+      "Otero College Fitness Center — free weights, Nautilus, treadmills, ellipticals (general campus facility)",
+      "Genuine two-semester Human Anatomy & Physiology sequence (BIO 2101/2102) within the AS in Health Science"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated/branded soccer stadium name found on official Otero athletics pages; home matches are played in La Junta, CO. (Distinct from Tippy Martinez Stadium, the college's separately-named baseball/softball field.)",
+      "trainingFields": "Not separately documented on official pages beyond the primary match field.",
+      "strengthConditioning": "General-access Otero College Fitness Center (free weights, Nautilus equipment, treadmills, ellipticals, aerobics room) next to McDivitt Gym — open to students, athletes, and the community; no dedicated soccer-specific strength coach found (2-person soccer staff: HC + 1 assistant only, per the official staff directory).",
+      "sportsScience": "No video-analysis, GPS/wearable, or other sports-science technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training provision; no dedicated sports medicine facility details published.",
+      "academicLabs": "AS in Health Science includes a genuine two-semester Human Anatomy & Physiology sequence (BIO 2101/2102) plus Human Pathophysiology (BIO 2116) — real lab-based coursework relevant to a pre-PT pathway, though the degree is not a dedicated Exercise Science program.",
+      "extras": "La Junta is a small agricultural town (pop. ~7,000) on Colorado's southeastern high plains, roughly 2.5 hours from Denver/Colorado Springs.",
+      "note": "Elite, history-making results on the field (2025 national tournament win, a Region/Tournament/District sweep) under a young, highly credentialed coach, but modest and largely undocumented facility investment — the trade-off is a small, cold-winter rural town with no branded soccer stadium.",
+      "housing": {
+        "available": true,
+        "note": "Otero College operates real on-campus residence halls (Wunsch/South Site, Conley Complex options, multiple meal plans) — confirmed via the official Living On Campus page (otero.edu/become-a-student/living-on-campus)."
+      }
+    },
+    "culture": {
+      "vibe": "La Junta is a small agricultural town on Colorado's southeastern high plains, about 2.5 hours from Denver/Colorado Springs — a genuinely rural, non-city setting. The 2025-26 roster is internationally diverse (Spain, Japan, Brazil, Colombia, Austria, Germany, Canada alongside recruits from Texas, Florida, Kansas and Colorado).",
+      "thingsToDo": "Limited off-campus entertainment in La Junta itself; Pueblo and Colorado Springs are roughly 1–1.5 hours away for a bigger city trip.",
+      "socialScene": "On-campus residence halls (Wunsch/South Site/Conley Complex) with dining plans give a genuine dorm social scene, unusual for a small JUCO.",
+      "olivierMatch": "★★ A cold-winter, non-city, rural Colorado setting is a real lifestyle mismatch for a warm-city-preferring Sydney athlete, but it trades that off against arguably the most in-form coaching staff of any JUCO in this guide right now — a 2025 NJCAA national tournament win, a Region 9 sweep, and a genuinely 'record-breaking' 13-player 2026 transfer class to NCAA D1/D2/NAIA programs.",
+      "lifestyleTags": "Rural/small-town, cold winters, on-campus housing, international squad, in-form coaching"
+    },
+    "courses": [
+      "BIO 2101 — Human Anatomy & Physiology I",
+      "BIO 2102 — Human Anatomy & Physiology II",
+      "BIO 2116 — Human Pathophysiology",
+      "HPR 1039 — Medical Terminology"
+    ],
+    "rec": "Otero College is having arguably the best season of any JUCO in this guide right now: under 26-year-old head coach Alberto Garcia (an ex-Otero player and former CSU Pueblo NCAA D2 assistant with 2 RMAC titles), the Rattlers swept the 2025 Region 9 Regular Season, Region 9 Tournament, and Northwest District titles, then won the program's first-ever match at the NJCAA DI National Tournament. The transfer pipeline is genuinely elite — 13 players signed to four-year programs in a single 2026 class. The trade-off is stark: La Junta is a small, cold-winter rural Colorado town with no branded soccer facility and no dedicated academic Exercise Science degree (the closest option is an AS in Health Science built around a genuine Anatomy & Physiology sequence). On-campus housing is real, which matters for an 18-year-old moving internationally.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 12,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 12,
+      "cleared_names": [
+        "Mohammed Baalbaki (So·CM)",
+        "Ken Naito (So·CM)",
+        "Seth Michel (So·CM)",
+        "Edgar Marquez (So·CM)",
+        "Diego Algiene (So·CM)",
+        "Arik Diaz (Fr·CM)",
+        "Jayden Bennett (Fr·CM)",
+        "Lyes Yahmi (Fr·CM)",
+        "Kade Fisher (Fr·CM)",
+        "Irvin Prieto (Fr·CM)",
+        "Hikaru Maekawa (Fr·CM)",
+        "Chris Leon (Fr·CM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 64,
+          "label": "Squad rotation to likely starter — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 78,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster's 12 central midfielders (5 So + 7 Fr) clear before Olivier arrives in August 2027, since even the current freshmen complete their 2-year NJCAA eligibility during the 2026-27 season. Zero roster overlap. 12 is one of the larger CM pools among guide JUCOs, meaning Olivier faces a bigger 2026-27 recruiting class for spots than at a smaller-roster school — set Medium recruit risk accordingly. Key question for the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "7 of 12 current CMs (58%) are true freshmen straight from high school (Texas, Colorado, Quebec, Japan); the other 5 are returning sophomores. The 'Hometown' roster column doesn't show a previous-college field, so transfer status for the sophomore cohort can't be independently confirmed from the roster page alone."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Associate degree — transfer prerequisite pathway"
+  },
+  {
+    "id": "montgomery_college",
+    "name": "Montgomery",
+    "full": "Montgomery College",
+    "loc": "Rockville, MD",
+    "region": "east",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 20 (MDJUCO)",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2025 NJCAA DI Region 20 Champions, Maryland JUCO (MDJUCO) Conference Champions, and Mid-Atlantic District Champions, capped by a win over Tyler Junior College (2-0) at the NJCAA DI National Tournament in Daytona Beach before falling to eventual finalist Indian Hills. Also NJCAA DI Region 20 Champions in 2021, 2022 and 2023, and MDJUCO Champions in 2024 (10-0-1 conference) — verified via the official njcaaregion20.org stats site, the official Nov 12 2025 montgomerycollege.edu press release, and the team's official verified Instagram bio (@mc_raptorsmsoccer).",
+    "njcaaRegion": "Region 20",
+    "njcaaRegionArea": "Maryland",
+    "profileDepth": "full",
+    "color": [
+      "#ffedd5",
+      "#9a3412"
+    ],
+    "mapX": 456,
+    "mapY": 178,
+    "domain": "mcraptors.com",
+    "url": "https://mcraptors.com/sports/msoc/index",
+    "degreeTitle": "Associate of Arts — Exercise Science Area of Concentration (CAAHEP-accredited)",
+    "acuAlign": 9,
+    "acuAlignNote": "Montgomery College offers a genuine CAAHEP-accredited (Committee on Accreditation for the Exercise Sciences) AA in Exercise Science (Tier-1: montgomerycollege.edu program page + catalog), built in conjunction with a Salisbury University 4-year exercise science transfer pathway. Coursework covers anatomy, physiology, and biomechanics as they relate to exercise programming, fitness assessment and prescription, and health behavior change — genuinely stronger and more direct ACU alignment than a generic transfer degree, and ranked one of the 'Best Health Degrees' 25 Best Exercise Science and Kinesiology Associate's Degrees for 2021 (#20 nationally).",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "EXSC122",
+        "covered": true
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 20 (Maryland / MDJUCO)",
+    "soccerLevelShort": "NJCAA DI — Region 20",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "16000",
+    "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Montgomery College is a public Maryland community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 30902,
+      "tuition": 13702,
+      "roomBoard": 17200,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Montgomery College's official 2026-27 Cost of Attendance for an Out-of-State resident NOT living at home lists Tuition and Fees combined at $13,702/yr (Tier-1: montgomerycollege.edu/paying-for-college/financial-aid/cost-of-attendance.html). MC has NO on-campus housing (confirmed on the same official page — see facilityDetails.housing), so `roomBoard` uses the college's own official 'Housing & Food' living-expense allowance of $17,200/yr from that same table, not a housing bill. Direct billed cost: $30,902/yr (excludes the college's own separate Books $756, Transportation $3,638, and Personal Expenses $12,238 estimates, which are not billed costs). As NJCAA Division I, athletic aid can structurally cover tuition and fees plus help toward off-campus living costs; budget for a realistic 30-50% package given the high cost-of-living DC-metro location."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "1st Region 20 D1 — Region, MDJUCO & District Champs (16-6-1)",
+        "note": "16-6-1 overall (.717), 11-2 conference (.846). Won the Region 20 title, the MDJUCO conference, and the Mid-Atlantic District (3-0 over Monroe CC), then beat Tyler Junior College 2-0 at the NJCAA DI National Tournament before losing to eventual finalist Indian Hills 5-1. Verified via njcaaregion20.org and the official Nov 12 2025 montgomerycollege.edu press release."
+      },
+      {
+        "yr": 2024,
+        "pos": "MDJUCO Champions (13-1-4)",
+        "note": "13-1-4 overall (.833), 10-0-1 conference (.955) — an unbeaten MDJUCO conference season. Verified via njcaaregion20.org official 2024-25 stats page and the team's official Instagram bio (@mc_raptorsmsoccer)."
+      },
+      {
+        "yr": 2023,
+        "pos": "1st Region 20 D1 — Region Champions",
+        "note": "NJCAA DI Region 20 Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently re-verified this session."
+      },
+      {
+        "yr": 2022,
+        "pos": "1st Region 20 D1 — Region, District & MDJUCO Champs",
+        "note": "NJCAA DI Region 20 Champions, East District Champions, and MDJUCO Conference Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently re-verified this session."
+      },
+      {
+        "yr": 2021,
+        "pos": "1st Region 20 D1 — Region Champions",
+        "note": "NJCAA DI Region 20 Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently re-verified this session."
+      }
+    ],
+    "titles": [
+      "2025 NJCAA DI Region 20 Champions",
+      "2025 MDJUCO Conference Champions",
+      "2025 NJCAA DI Mid-Atlantic District Champions",
+      "2025 NJCAA DI National Tournament — defeated Tyler Junior College 2-0",
+      "2021, 2022, 2023 NJCAA DI Region 20 Champions; 2022, 2025 District Champions; 2012, 2013, 2014, 2024 MDJUCO Champions"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "70 student-athletes continued their soccer careers at NCAA D1, D2, D3, and NAIA programs during head coach Pedro Braz's first tenure alone (2012-2014) — per Braz's official Tier-1 coaching bio.",
+        "Marcelo Martinez-Herrero, Joshua Doffoh and Ernesto Vides-Austin (all current-roster central midfielders) scored the goals in the 3-0 2025 Mid-Atlantic District Championship win — per the official Nov 12 2025 montgomerycollege.edu press release."
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks on record, but a historically strong NCAA transfer pipeline under head coach Pedro Braz (USSF 'B' license, UEFA C license, former pro in Angola/Puerto Rico/USL): 70 alumni reached NCAA D1/D2/D3/NAIA programs in his first three-season tenure alone (2012-2014).",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No current standing alumni/next-level tracking page found on mcraptors.com. The '70 student-athletes' figure is real and Tier-1 (Braz's official bio) but covers his 2012-2014 tenure specifically, not a current or ongoing tracked rate, so left as a neutral factor rather than a measured perYear."
+      }
+    },
+    "devScores": {
+      "tactical": 68,
+      "technical": 64,
+      "fitness": 58
+    },
+    "devScoresNote": "Tier-1: head coach Pedro Braz holds a USSF 'B' license and UEFA C license, played professionally in Angola/Puerto Rico/USL, and returned to MC in 2020 after a five-season NCAA D3 head-coaching stint at Gallaudet University — one of the more credentialed coaching resumes of any JUCO in this guide. The team plays at Alcus Field, a genuinely new (built 2021) award-winning dedicated soccer stadium with synthetic turf and locker rooms (Grunley Construction; Tier-1: official Braz coaching bio + mcraptors.com/information/Facilities). Strength & conditioning runs through a dedicated 'Raptors Student-Athlete Weight Room' plus a separate Cybex Weight Room — commercial-grade equipment, though no dedicated soccer-specific S&C coach is listed (2-person soccer staff: HC + 1 assistant only).",
+    "fitOlivier": 45,
+    "lensScores": {
+      "overall": 45,
+      "soccer": 55,
+      "academic": 63,
+      "minutes": 66,
+      "lifestyle": 0,
+      "value": 43
+    },
+    "tags": [
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Alcus Field — new (2021) award-winning dedicated soccer stadium with synthetic turf and locker rooms",
+      "Raptors Student-Athlete Weight Room + separate Cybex Weight Room",
+      "CAAHEP-accredited AA in Exercise Science with a Salisbury University 4-year transfer pathway"
+    ],
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "Alcus Field, Rockville, MD — a purpose-built, award-winning soccer stadium completed in 2021 with synthetic turf and dedicated locker rooms for men's and women's soccer (Tier-1: head coach Pedro Braz's official bio; Grunley Construction Company project portfolio).",
+      "trainingFields": "Alcus Field doubles as the primary training and match venue for both men's and women's soccer.",
+      "strengthConditioning": "Dedicated 'Raptors Student-Athlete Weight Room' plus a separate Cybex Weight Room (commercial-grade equipment) per the official Facilities page — no dedicated soccer-specific strength coach confirmed (2-person soccer staff: HC Pedro Braz + assistant Scott Payne only).",
+      "sportsScience": "No video-analysis, GPS/wearable, or sports-science technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training provision; no dedicated sports medicine facility details published.",
+      "academicLabs": "CAAHEP-accredited AA in Exercise Science gives genuine lab-based coursework in anatomy, physiology, and biomechanics, with an articulated 4-year transfer pathway to Salisbury University's exercise science degree.",
+      "extras": "Rockville is a Washington DC suburb (Montgomery County, MD) — roughly 20-30 minutes from downtown DC without traffic, giving access to a major metro area despite the campus itself being suburban.",
+      "note": "A genuinely elite, well-resourced JUCO on both the soccer side (new stadium, highly credentialed coach, multiple regional/district titles) and the academic side (accredited Exercise Science degree) — the trade-off is DC-metro cost of living and zero on-campus housing.",
+      "housing": {
+        "available": false,
+        "note": "Confirmed on Montgomery College's own official Cost of Attendance page: 'Montgomery College does NOT offer dormitories/housing.' Students living away from home budget via the college's own published off-campus living-expense allowance."
+      }
+    },
+    "culture": {
+      "vibe": "Rockville, MD is a Washington DC suburb in Montgomery County — a large (~16,000-student), well-resourced community college campus roughly 20-30 minutes from downtown DC. The 2025-26 roster is internationally diverse (France, Spain, Netherlands, Colombia, Guatemala, South Africa, New Zealand, Germany, Venezuela alongside US recruits).",
+      "thingsToDo": "Downtown Washington DC — museums, nightlife, a major metro rail system — is a short drive or Metro ride away, a genuine step up in access to city life versus most other JUCOs in this guide.",
+      "socialScene": "No on-campus residence halls — a genuine commuter campus, so team social life runs through training at Alcus Field and the locker room rather than dorm life.",
+      "olivierMatch": "★★★ No on-campus housing and a cold Mid-Atlantic winter are real drawbacks, but Rockville's proximity to Washington DC is one of the better 'city access' trade-offs among JUCOs in this guide, and the combination of a genuinely elite, history-making soccer program (2025 national tournament win over Tyler JC) with an accredited Exercise Science degree is hard to match.",
+      "lifestyleTags": "DC-suburb, cold winters, no campus housing, international squad, accredited academics, elite coaching"
+    },
+    "courses": [
+      "Anatomy & Physiology sequence (health/exercise programming focus)",
+      "Biomechanics as it relates to exercise programming",
+      "Fitness assessment and exercise prescription",
+      "Health behavior change and program design"
+    ],
+    "rec": "Montgomery College pairs one of the most credentialed coaching staffs of any JUCO in this guide — head coach Pedro Braz holds USSF 'B' and UEFA C licenses and returned in 2020 after a five-season NCAA D3 head-coaching stint — with a genuinely elite academic option: a CAAHEP-accredited AA in Exercise Science with a direct Salisbury University transfer pathway. On the field, the Raptors swept the 2025 Region 20, MDJUCO, and Mid-Atlantic District titles and beat Tyler Junior College at the NJCAA DI National Tournament. The program plays at Alcus Field, a genuinely new, purpose-built stadium. The real trade-off is cost of living: Montgomery College has zero on-campus housing, and Rockville sits in one of the most expensive metro areas in the country — though it does offer unusually good access to Washington DC for a JUCO.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 11,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 11,
+      "cleared_names": [
+        "Boris Agyeman (So·MID)",
+        "Jonathon Koun (So·MID)",
+        "Kenjy Vertil-Dorelus (So·MID)",
+        "Paolo Perez (So·MID)",
+        "Ethan Goldstone (Fr·MID)",
+        "Marcelo Martinez-Herrero (Fr·MID)",
+        "Owen Laborde (Fr·MID)",
+        "Bente Bruns (Fr·MID)",
+        "Nurdaulet Tuimebek (Fr·CDM)",
+        "Joshua Doffoh (Fr·MID)",
+        "Ernesto Vides-Austin (Fr·CAM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 60,
+          "label": "Squad rotation to likely starter — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 74,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster's 11 central-midfield-type players (4 So + 7 Fr, excluding the two wide RW/LW roster spots) clear before Olivier arrives in August 2027, since the current freshmen complete their 2-year NJCAA eligibility during the 2026-27 season. Zero roster overlap. 11 is a mid-sized CM pool among guide JUCOs. Three of these current CMs (Martinez-Herrero, Doffoh, Vides-Austin) scored in the 2025 district championship win, underlining how competitive these spots are even as freshmen — a positive signal for freshman entry, but also evidence of a deep, well-coached midfield group. Key question for the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "All 11 current CMs entered directly from high school, drawn from the US, France, South Africa, Spain, the Netherlands, Kazakhstan, Germany and Montreal — the roster's 'Hometown/High School' column shows no prior colleges for any of them, a clean freshman-entry signal at the midfield position."
+    },
+    "acRank": "NJCAA Level — accredited Exercise Science AA",
+    "kinRank": "CAAHEP-accredited Exercise Science pathway — Salisbury University transfer"
   }
 ]

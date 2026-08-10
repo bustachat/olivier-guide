@@ -527,7 +527,7 @@ function renderCards(){
     {key:'other', divFilter:'D2',      label:'NCAA Division II — SSC',  tier:'D2',            intro:'Best overall PT pathway tier. PBA won the 2025 SSC Regular Season (#1 seed) and is nationally ranked #2. Lynn are the 2024 D2 national champions. Barry has 4 D2 NCAA titles. Nova Southeastern has a DPT program on campus. Cal State LA is the most affordable LA option at ~$28k. St Edwards has an Austin FC pipeline.'},
     {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Generous scholarships, smaller campuses, personal development. Oklahoma City University has a strong NAIA soccer tradition under HC Billy Martin (since 2020), continuing the legacy of founder coach Brian Harvey. Keiser University in West Palm Beach has clinical simulation labs and a warm Florida campus close to MLS action.'},
     {key:'other', divFilter:'D3',      label:'NCAA Division III',        tier:'D3',            intro:'Chapman University (Orange, CA) has a mandatory KIN 405 Pre-PT Prep course — the strongest D3 pre-physical therapy pathway in the guide. D3 schools offer no athletic scholarships but provide strong academics and competitive soccer.'},
-    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Tyler Junior College (Tyler, TX) is the #1 JUCO D1 transfer feeder nationally — all-time record for D1 placements. Daytona State College (Daytona Beach, FL) are the 2025 NJCAA DI National Championship runners-up and a top-5 D1 transfer feeder — warm Florida beach city. Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Santa Monica College ($9k/yr) has the best UCLA transfer pipeline in California. Cowley County CC and Barton CC (both KS) are ranked in the current national top-5. Arizona Western College (#2 nationally, 2025) pairs a genuine Exercise/Wellness/Nutrition degree with a warm desert climate. Eastern Florida State plays in a 1,000-seat stadium-grade facility on Florida\'s Space Coast. Murray State College (Tishomingo, OK) are back-to-back NJCAA DI National Tournament qualifiers (2024, 2025) and the guide\'s most freshman-open intake — all 17 freshmen on the 2026-27 roster entered straight from high school, including an Australian from Sydney. All 31 JUCO programs are 2-year transfer platforms.'},
+    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Tyler Junior College (Tyler, TX) is the #1 JUCO D1 transfer feeder nationally — all-time record for D1 placements, and were beaten by Montgomery College at the 2025 National Tournament. Daytona State College (Daytona Beach, FL) are the 2025 NJCAA DI National Championship runners-up and a top-5 D1 transfer feeder — warm Florida beach city. Indian Hills CC (Ottumwa, IA) are the 2025 NJCAA DI National Champions under Zac Newton. Monroe University Mustangs (New Rochelle, NY) are 3× NJCAA DI National Champions with Australian alumni on roster. Santa Monica College ($9k/yr) has the best UCLA transfer pipeline in California. Cowley County CC and Barton CC (both KS) are ranked in the current national top-5. Arizona Western College (#2 nationally, 2025) pairs a genuine Exercise/Wellness/Nutrition degree with a warm desert climate. Eastern Florida State plays in a 1,000-seat stadium-grade facility on Florida\'s Space Coast. Murray State College (Tishomingo, OK) are back-to-back NJCAA DI National Tournament qualifiers (2024, 2025) and the guide\'s most freshman-open intake — all 17 freshmen on the 2026-27 roster entered straight from high school, including an Australian from Sydney. Otero College (La Junta, CO) swept the 2025 Region 9/Tournament/District titles and won Otero\'s first-ever NJCAA national tournament match. Montgomery College (Rockville, MD) swept the 2025 Region 20/MDJUCO/District titles under USSF \'B\'-licensed HC Pedro Braz and has a CAAHEP-accredited Exercise Science degree. All 33 JUCO programs are 2-year transfer platforms.'},
   ];
 
   // Also include Ivy League under acc or as standalone — they are in other.json
@@ -916,6 +916,8 @@ const DOMAINS = {
   johnson_county_cc: 'jcccathletics.com',
   murray_state_ok: 'mscaggies.com',
   lewis_clark_cc: 'trailblazers.lc.edu',
+  otero_college: 'oterorattlers.com',
+  montgomery_college: 'mcraptors.com',
   efsc:         'efsctitans.com',
   duke:           'goduke.com',
   ncstate:        'gopack.com',
@@ -1031,6 +1033,8 @@ const SITE_URLS = {
   johnson_county_cc: 'https://www.jccc.edu',
   murray_state_ok: 'https://www.mscok.edu',
   lewis_clark_cc: 'https://www.lc.edu',
+  otero_college: 'https://www.otero.edu',
+  montgomery_college: 'https://www.montgomerycollege.edu',
   efsc:         'https://www.easternflorida.edu',
   duke:           'https://www.duke.edu',
   ncstate:        'https://www.ncsu.edu',
@@ -1158,6 +1162,8 @@ const SOCIAL = {
   johnson_county_cc:[null, 'https://x.com/JCCCAthletics', 'https://facebook.com/JCCC-Athletics-138327252498', 'https://youtube.com/user/JCCCAthletics'],
   murray_state_ok:['https://instagram.com/mscmsoccer', 'https://x.com/MSCmenssoccer', null, null],
   lewis_clark_cc: ['https://www.instagram.com/lctrailblazers.msoccer/', null, 'https://www.facebook.com/LCTrailblazers', 'https://www.youtube.com/@LCBlazerAthletics'],
+  otero_college:  ['https://www.instagram.com/oteromsoccer/', null, 'https://www.facebook.com/OteroCollegeMensSoccer/', null],
+  montgomery_college: ['https://www.instagram.com/mc_raptorsmsoccer/', 'https://x.com/mc_raptors', 'https://www.facebook.com/TheRaptorsMC', null],
   efsc:           ['https://instagram.com/efscmenssoccer',     'https://x.com/efscmenssoccer',       null,                                    null],
   duke:           ['https://instagram.com/dukemenssoccer',    'https://x.com/DukeMSOC',            'https://facebook.com/DukeMensSoccer',  'https://youtube.com/dukebluedevils'],
   ncstate:        ['https://instagram.com/ncstatemsoc',       'https://x.com/NCStateMSOC',         'https://facebook.com/NCStateSoccer',   'https://youtube.com/ncstateathletics'],

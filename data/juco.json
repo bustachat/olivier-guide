@@ -14292,7 +14292,7 @@
         "totalCount": 30,
         "yearsCovered": "2002-2025",
         "years": 24,
-        "perYear": 0.0,
+        "perYear": 0,
         "sourceUrl": "https://www.golccc.com/MSOC_Alumni",
         "note": "A genuinely comprehensive, dated alumni page with an explicit destination-and-level column for every recorded transfer from 2002 through 2025 (~30 names) — read in full via Claude for Chrome, every destination's level independently checked against the page's own published column. Zero confirmed NCAA Division I soccer destinations across the entire recorded history (one D1 entry, Chris Hearne to Wyoming football in 2003, is cross-sport contamination per §5b's warning class #5, not a soccer placement). This is a MEASURED zero, not an absence of data — the pipeline is real, just NCAA D2/NAIA-weighted rather than D1."
       }
@@ -14633,5 +14633,940 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "Exercise Science A.S. — required internship, genuine dedicated exercise-science coursework"
+  },
+  {
+    "id": "western_nebraska_cc",
+    "name": "Western Nebraska CC",
+    "full": "Western Nebraska Community College",
+    "loc": "Scottsbluff, NE",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 9",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2024 Region IX Champion (both regular season, 7-1-1/.833, and Region IX Tournament) and NJCAA Northwest Plains District Champion, sending WNCC to its first-ever NJCAA DI National Tournament appearance (Wichita, KS, No. 11 seed, 10-6-2 final record) — verified via WNCC's own dated news releases (Nov 2024). The Cougars won the Sportsmanship Award at that national tournament. A month later, forward Eduardo Oliveira became the program's first-ever NJCAA Division I All-American (Third Team, the only Region IX player named) after being named Region IX Offensive Player of the Year — both individually Tier-1 confirmed via dated December 2024 WNCC news releases. Meets the v37.4 Elite bar directly on national-tournament appearance plus an individual All-American honor, even though the 2025-26 follow-up season regressed sharply (3-4-2 conference, 6th of 10) after the title team's core departed.",
+    "njcaaRegion": "Region 9",
+    "njcaaRegionArea": "Nebraska",
+    "profileDepth": "full",
+    "color": [
+      "#fef2f2",
+      "#7f1d1d"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 261,
+    "mapY": 144,
+    "domain": "wnccathletics.com",
+    "url": "https://wnccathletics.com/sports/msoc/index",
+    "degreeTitle": "Exercise Science, Health & Fitness Studies Option, A.S.",
+    "acuAlign": 5,
+    "acuAlignNote": "WNCC offers a genuine, dedicated Exercise Science A.S. (Health & Fitness Studies option, Tier-1: 2026-27 catalog.wncc.edu) built around a two-course Human Anatomy & Physiology sequence (BIOS 2250/2260, credited to Anatomical Foundations), Designing a Personalized Fitness Program (PHED 1800, a genuine exercise-prescription course), Weight Training (PHED 1551, direct Resistance Training match), Psychology of Sports (PHED 1200, direct Sport Psychology match) and Life Span: Human Growth & Development (PSYC 2150, a direct Lifespan Motor Development match). No dedicated Exercise Physiology, Biomechanics, or Research Methods course, and no internship/practicum requirement — a real, moderate five-unit pathway, not an elite one.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": true
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 9 (Nebraska)",
+    "soccerLevelShort": "NJCAA DI — Region 9",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1676",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "WNCC is a public Nebraska community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 14125,
+      "tuition": 3945,
+      "roomBoard": 9625,
+      "fees": 555,
+      "maxAthletic": 0.6,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "WNCC's official 2026-27 Cost of Attendance table (Tier-1: wncc.edu/admissions-aid/tuition-fees) gives the 'Non-Nebraska Resident Living on Campus' bucket directly: tuition $3,945/yr, fees $555/yr, housing $3,651/yr, food $5,974/yr — the cheapest full profile added in this campaign to date, well below the Wyoming Region 9 peers ($19-21k). Direct billed cost: $14,125/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "6th Region 9 D1 (3-4-2)",
+        "note": "3-4-2 conference (.444), 15 overall (3-7-5). A sharp regression from the 2024 title team, whose core (including first-ever All-American Eduardo Oliveira) had graduated or moved on. Verified via region9athletics.com's official Region 9 D1 standings page."
+      },
+      {
+        "yr": 2024,
+        "pos": "1st Region 9 D1 — Regular Season & Tournament Champion (10-6-2)",
+        "note": "7-1-1 conference (.833, 1st of 10) and Region IX Tournament Champion, also NJCAA Northwest Plains District Champion — WNCC's first-ever NJCAA DI National Tournament appearance (No. 11 seed, Wichita KS). Verified via WNCC's own dated November 2024 news releases and region9athletics.com's official Champions page."
+      },
+      {
+        "yr": 2023,
+        "pos": "4th Region 9 D1 (5-2-2)",
+        "note": "5-2-2 conference (.667), 16 overall (8-5-3). Verified via region9athletics.com's official Region 9 DI standings page."
+      },
+      {
+        "yr": 2022,
+        "pos": "5th Region 9 D1 (4-3-1)",
+        "note": "4-3-1 conference (.563), 12 overall (4-7-1). Verified via region9athletics.com's official Region 9 DI standings page."
+      },
+      {
+        "yr": 2021,
+        "pos": "4th Region 9 D1 (4-2-2)",
+        "note": "4-2-2 conference (.625), 16 overall (8-6-2). Verified via region9athletics.com's official Region 9 standings page."
+      }
+    ],
+    "titles": [
+      "2024 Region IX Regular Season & Tournament Champion, NJCAA Northwest Plains District Champion — first-ever NJCAA DI National Tournament appearance",
+      "First program NJCAA Division I All-American (Eduardo Oliveira, Third Team, Dec 2024) and Region IX Offensive Player of the Year",
+      "2024 NJCAA National Tournament Sportsmanship Award"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Mazmal Babiker (Erie, PA, born in Egypt) — a freshman on the 2024 Region IX title team, transferred to NCAA Division I Mercyhurst University (Erie, PA) for 2025-26, confirmed via a dated May 2025 WNCC news release.",
+        "Eduardo Oliveira (Brazil) — the program's first-ever NJCAA DI All-American (Third Team) and Region IX Offensive Player of the Year, finished his WNCC career with 22 goals (one of only five players in program history over 20); his own next destination was still undecided as of the December 2024 release announcing his award."
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One dated, Tier-1-confirmed 2025 NCAA Division I transfer (Babiker to Mercyhurst) found via WNCC's own news feed, but not a comprehensive multi-year alumni census — the program's own 'Moving On' alumni page stops at 2017 and was not used as current evidence.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://wnccathletics.com/sports/msoc/2024-25/news",
+        "note": "WNCC's own dated news feed names one confirmed 2025 NCAA D1 transfer (Babiker to Mercyhurst) from the 2024 title-team roster, but this is a single data point, not a comprehensive multi-year census — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than extrapolated into a rate. The program's official 'Moving On' alumni-tracker page is stale (last updated 2017) and was not used as current evidence."
+      }
+    },
+    "devScores": {
+      "tactical": 52,
+      "technical": 45,
+      "fitness": 48
+    },
+    "devScoresNote": "Tier-1: the 2024 title team was built under 20-plus-year head coach Todd Rasnic, who stepped aside to lead the women's program in Feb 2025, handing the men's program to his own assistant of two years, program alumnus Eseah Ingram (WNCC 2016-17, transferred to NCAA D2 Shaw University then LSU-Alexandria, graduated 2020) — a genuine internal succession, not an outside hire, but Ingram's first season as head coach (2025-26, 3-4-2) came well off the title-team pace. No dedicated on-campus soccer stadium or strength-and-conditioning facility confirmed on the official site beyond standard campus athletic facilities; no video-analysis/GPS technology confirmed.",
+    "fitOlivier": 42,
+    "lensScores": {
+      "overall": 42,
+      "soccer": 46,
+      "academic": 42,
+      "minutes": 50,
+      "lifestyle": 0,
+      "value": 54
+    },
+    "facilities": [
+      "First-ever NJCAA DI National Tournament appearance (2024) and first program All-American (Eduardo Oliveira)",
+      "Exercise Science A.S. (Health & Fitness Studies) — genuine dedicated coursework, no internship",
+      "On-campus housing (Pioneer, Horizon, Conestoga Halls)"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "No dedicated on-campus soccer stadium confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no soccer-dedicated training facility confirmed.",
+      "strengthConditioning": "Standard campus athletic weight room shared across sports; no soccer-dedicated strength coach identified.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training provision via the WNCC athletics department.",
+      "academicLabs": "Exercise Science A.S. (Health & Fitness Studies) includes a two-course Human Anatomy & Physiology lab sequence (BIOS 2250/2260) and Science of Sports (PHYS 1225, with lab).",
+      "extras": "Scottsbluff sits in Nebraska's Panhandle (the 'WyoBraska' region, per the program's own alumni), a small rural city bordering Wyoming — real cross-state culture but no major-city amenities.",
+      "note": "A genuinely historic 2024 season — first Region IX title since the program's 2003 founding, first National Tournament appearance, first All-American — under 20-plus-year coach Todd Rasnic, who then handed the reins to his own assistant, program alumnus Eseah Ingram, for the 2025-26 rebuild season.",
+      "housing": {
+        "available": true,
+        "note": "WNCC operates on-campus residence halls (Pioneer Hall, Horizon Hall, Conestoga Hall) on the Scottsbluff campus, with a required meal plan for residents — confirmed via the official 2026-27 Tuition & Fees / Housing & Food page (wncc.edu)."
+      }
+    },
+    "culture": {
+      "vibe": "Scottsbluff (pop. ~14,000) sits in Nebraska's rural Panhandle near the Wyoming border — small-town, cold-winter Great Plains setting, a long way from any major city.",
+      "thingsToDo": "Scotts Bluff National Monument, the North Platte River valley, and cross-border day trips into Wyoming ('WyoBraska' as the program's own players call it).",
+      "socialScene": "Three on-campus residence halls give a genuine dorm social scene for a small rural JUCO; a real international mix on the current roster (Brazil, Japan, France, Spain, Canada, Venezuela, Togo, South Africa, Argentina).",
+      "olivierMatch": "★★ Cold Panhandle winters and a small rural town are a real mismatch for a warm-city-preferring Sydney athlete, but the trade-off is the single strongest recent-history story in this campaign's Region 9 additions — a first-ever national tournament run and first program All-American, plus by far the cheapest cost of attendance in the batch.",
+      "lifestyleTags": "Small rural town, cold winters, on-campus housing, international squad, cheapest COA in the batch"
+    },
+    "courses": [
+      "BIOS 2250/2260 — Human Anatomy & Physiology I/II",
+      "PHED 1800 — Designing a Personalized Fitness Program",
+      "PHED 1551 — Weight Training",
+      "PHED 1200 — Psychology of Sports",
+      "PSYC 2150 — Life Span: Human Growth & Development"
+    ],
+    "rec": "Western Nebraska CC's standout story is 2024: a first-ever Region IX regular-season and tournament title, a first-ever NJCAA DI National Tournament appearance (No. 11 seed, Sportsmanship Award), and the program's first-ever NJCAA All-American, Eduardo Oliveira — all under 20-plus-year head coach Todd Rasnic, who then handed the program to his own longtime assistant and WNCC alumnus, Eseah Ingram, for a 2025-26 rebuild season that came in well off that pace (3-4-2). The Exercise Science A.S. is genuine but moderate (five ACU units, no internship). The clearest reason to look here: by far the cheapest cost of attendance of any school added in this campaign ($14,125/yr), and a real, dated 2025 NCAA Division I transfer (Babiker to Mercyhurst) from the title-team roster. minutesOutlook is unavailable — both the 2025-26 and 2026-27 rosters publish zero class-year data for any player, a genuine, cross-season site gap rather than a current-year fluke.",
+    "minutesOutlook": {
+      "available": false,
+      "note": "Both the 2025-26 and 2026-27 WNCC men's soccer roster pages publish full position data for most players but leave the Class (Cl.) column completely blank for every player on both rosters — checked across two consecutive seasons on the same host to confirm this is a genuine, persistent site gap, not a single-season fluke. No usable graduating-class data exists to build a trajectory."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Exercise Science A.S. (Health & Fitness Studies) — genuine dedicated coursework, no internship requirement"
+  },
+  {
+    "id": "lamar_cc",
+    "name": "Lamar CC",
+    "full": "Lamar Community College",
+    "loc": "Lamar, CO",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 9",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "The weakest on-field program of this campaign's Region 9 additions: last place in Region 9 D1 in three of the last four seasons (0-8 in 2022-23, 0-8-1 in 2024-25, 1-8 in 2025-26) and 8th of 10 in the fourth (2-7 in 2023-24) — verified via region9athletics.com's official Region 9 D1 standings pages for all four seasons. New head coach Alieu Kamara (hired fall 2025, a JUCO alumnus of Marshalltown Community College and owner of a Guinea-based youth academy) is in his first head-coaching role at any level, inheriting a program with no recent postseason results.",
+    "njcaaRegion": "Region 9",
+    "njcaaRegionArea": "Colorado",
+    "profileDepth": "full",
+    "color": [
+      "#f0fdf4",
+      "#166534"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 272,
+    "mapY": 204,
+    "domain": "golopes.com",
+    "url": "https://golopes.com/sports/msoc/index",
+    "degreeTitle": "Sports & Exercise Science Plan of Study, A.S.",
+    "acuAlign": 4,
+    "acuAlignNote": "Lamar CC offers a genuine, dedicated Sports & Exercise Science A.S. (Tier-1: lamarcc.edu / catalog.lamarcc.edu 2026-27) explicitly naming Athletic Training, Pre-Physical Therapy and Sports & Conditioning as transfer targets. Real coursework includes a two-course Human Anatomy & Physiology sequence (BIO 2101/2102, credited to Anatomical Foundations), a genuine Athletic Training Practicum I & II sequence (HPE 1088/2088 — credited to the Professional Experience/Internship unit, one of only a handful of JUCOs in this campaign with actual clinical practicum hours), Certified Personal Trainer Preparation (HWE 1068, credited to Exercise Testing & Prescription) and Exercise and Sports Psychology (HWE 2061, direct Sport Psychology match). No dedicated Exercise Physiology or Biomechanics course, and no Strength & Conditioning/Weight Training course found — a genuine four-unit pathway anchored by real clinical hours.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 9 (Colorado)",
+    "soccerLevelShort": "NJCAA DI — Region 9",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "690",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Lamar CC is a public Colorado community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 18566,
+      "tuition": 9192,
+      "roomBoard": 8892,
+      "fees": 482,
+      "maxAthletic": 0.6,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Lamar CC's official 2026-27 tuition page (Tier-1: lamarcc.edu/paying-for-college/tuition-fees) quotes a 'Non-Resident and International Pilot Rate' of $306.40/credit hour — a genuinely discounted rate roughly 47% below the regular non-resident rate ($574.55/credit), specifically offered to international students. At a standard 30-credit/year full-time load: $9,192/yr tuition. Room & board ($8,892) and fees ($482) are from the college's own Cost of Attendance table for on-campus non-resident students (23-24 aid year, the most recent official breakdown found; the tuition figure above is refreshed to the live 2026-27 rate). Direct billed cost: $18,566/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "10th Region 9 D1 (1-8)",
+        "note": "1-8 conference (.111), last of 10, 17 overall (1-16). Verified via region9athletics.com's official Region 9 D1 standings page."
+      },
+      {
+        "yr": 2024,
+        "pos": "10th Region 9 D1 (0-8-1)",
+        "note": "0-8-1 conference (.056), last of 10, 13 overall (0-12-1). Verified via region9athletics.com's official Region 9 D1 standings page."
+      },
+      {
+        "yr": 2023,
+        "pos": "8th Region 9 D1 (2-7)",
+        "note": "2-7 conference (.222), 10 overall (2-14-1). Verified via region9athletics.com's official Region 9 DI standings page."
+      },
+      {
+        "yr": 2022,
+        "pos": "9th Region 9 D1 (0-8)",
+        "note": "0-8 conference (.000), last of 9, 13 overall (0-13). Verified via region9athletics.com's official Region 9 DI standings page."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO — no confirmed NCAA D1 transfer or MLS SuperDraft pick found for the men's program within this batch's research scope. No alumni-tracker page or dated news release naming departing players was found (Lamar's own athletics news feed is thin relative to peer Region 9 schools).",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No comprehensive alumni tracker or dated news release naming a confirmed NCAA D1 transfer was found for the men's program — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+      }
+    },
+    "devScores": {
+      "tactical": 42,
+      "technical": 40,
+      "fitness": 43
+    },
+    "devScoresNote": "Tier-1: head coach Alieu Kamara was hired fall 2025 (his official bio and an Instagram post both confirm 'NEW MEN'S SOCCER COACH') — his own CV is a JUCO alumnus (Marshalltown Community College, IA, holding midfielder) and semi-pro player (Milwaukee Torrent), and he owns/presides over Twin Stars of Guinea, a first-division professional football academy in Guinea, but this is his first head-coaching role at any level. No dedicated on-campus soccer stadium, strength-and-conditioning facility, or sports-science technology confirmed on the official site. The program's four-season on-field record (a combined 3-31-1 in Region 9 conference play, 2022-2025) is the weakest of this campaign's Region 9 additions.",
+    "fitOlivier": 41,
+    "lensScores": {
+      "overall": 41,
+      "soccer": 43,
+      "academic": 36,
+      "minutes": 50,
+      "lifestyle": 0,
+      "value": 50
+    },
+    "facilities": [
+      "Sports & Exercise Science A.S. with a genuine Athletic Training Practicum I & II sequence — real clinical hours",
+      "New head coach Alieu Kamara (fall 2025) — JUCO alumnus and owner of a Guinea-based professional academy",
+      "On-campus housing (Todd Burch Residence Hall + two others, 190+ beds)"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated on-campus soccer stadium confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no soccer-dedicated training facility confirmed.",
+      "strengthConditioning": "Standard campus fitness facilities; no soccer-dedicated strength coach identified.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training provision, reinforced by the Sports & Exercise Science program's own Athletic Training Practicum I & II courses (HPE 1088/2088), giving real on-campus clinical hours.",
+      "academicLabs": "Sports & Exercise Science A.S. includes a two-course Human Anatomy & Physiology lab sequence (BIO 2101/2102) and a genuine athletic-training clinical practicum sequence.",
+      "extras": "Lamar (pop. ~7,500) is a small agricultural town on Colorado's eastern plains, near the Kansas border — no major-city amenities.",
+      "note": "The clearest standout is academic, not athletic: a genuine Athletic Training Practicum I & II clinical sequence is rare in this campaign's JUCO cohort, set against the weakest on-field record (a combined 3-31-1 in Region 9 conference play across the last four seasons) and a first-time head coach.",
+      "housing": {
+        "available": true,
+        "note": "Lamar CC operates three on-campus residence halls including Todd Burch Residence Hall (190+ students) — confirmed via the official Residence Living page (lamarcc.edu)."
+      }
+    },
+    "culture": {
+      "vibe": "Lamar (pop. ~7,500) is a small agricultural town on Colorado's eastern plains near the Kansas border — rural, quiet, a long way from any major city.",
+      "thingsToDo": "Limited off-campus options in a small farming town; campus residence-hall social life and a genuinely international roster are the main draw.",
+      "socialScene": "Three on-campus residence halls, and a roster with a real international mix (players from across the Americas and abroad).",
+      "olivierMatch": "★★ A small, remote plains town and cold winters are a real mismatch for a warm-city-preferring Sydney athlete, and the on-field program is genuinely the weakest of this batch — but the Sports & Exercise Science degree's real clinical Athletic Training practicum hours are a distinctive academic plus, and the international-student tuition pilot rate makes it one of the more affordable options in the guide.",
+      "lifestyleTags": "Small rural town, cold winters, on-campus housing, international squad, discounted international tuition rate"
+    },
+    "courses": [
+      "BIO 2101/2102 — Human Anatomy & Physiology I/II",
+      "HPE 1088/2088 — Athletic Training Practicum I/II",
+      "HWE 1068 — Certified Personal Trainer Preparation",
+      "HWE 2061 — Exercise and Sports Psychology",
+      "HPE 2031 — Care and Prevention of Athletic Injuries"
+    ],
+    "rec": "Lamar CC is a data-driven inclusion, not a results-driven one: the men's soccer program has finished last or near-last in Region 9 in three of the last four seasons under a brand-new, first-time head coach (Alieu Kamara, hired fall 2025). What it does offer is genuine: a Sports & Exercise Science A.S. degree with a real Athletic Training Practicum I & II clinical sequence — rare in this campaign's JUCO cohort — and a discounted international-student tuition pilot rate that makes it one of the more affordable schools in the guide ($18,566/yr). minutesOutlook is unavailable — both the 2025-26 and 2026-27 rosters publish zero position and class data for any player, a genuine, cross-season site gap.",
+    "minutesOutlook": {
+      "available": false,
+      "note": "Both the 2025-26 and 2026-27 Lamar CC men's soccer roster pages list 30 and 0 players respectively, but the Pos. and Cl. columns are completely blank for every player on the populated 2025-26 roster — checked across two consecutive seasons on the same host to confirm this is a genuine, persistent site gap, not a single-season fluke. No usable position or graduating-class data exists to build a trajectory."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Sports & Exercise Science A.S. — genuine Athletic Training Practicum I & II clinical sequence"
+  },
+  {
+    "id": "trinidad_state",
+    "name": "Trinidad State",
+    "full": "Trinidad State College",
+    "loc": "Trinidad, CO",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 9",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A program in a genuine rebuild: bottom-2 in Region 9 D1 in three of the last four seasons (last in 2023-24 at 1-8, 9th of 10 in 2024-25 at 0-7-2, 9th of 10 in 2025-26 at 2-7) — verified via region9athletics.com's official Region 9 D1 standings pages. Former head coach Peter Freeman resigned in February 2025 to take the head job at NCAA D2 Adams State University, a genuine lateral career move confirmed via Trinidad State's own dated news release; his successor, program alumnus Tyler Wilt (TSC 2012-13, then a 4-year head coach at NAIA-affiliated York University in Nebraska), took over in May 2025 explicitly to \"get back on track.\" No confirmed National Tournament appearance, All-American, or Region 9 title in the period researched — held to Standard.",
+    "njcaaRegion": "Region 9",
+    "njcaaRegionArea": "Colorado",
+    "profileDepth": "full",
+    "color": [
+      "#eff6ff",
+      "#1e3a8a"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 251,
+    "mapY": 219,
+    "domain": "tsctrojans.com",
+    "url": "https://tsctrojans.com/sports/msoc/index",
+    "degreeTitle": "AA — General Exercise Science Concentration",
+    "acuAlign": 2,
+    "acuAlignNote": "Trinidad State offers a genuine AA-to-BS Exercise Science concentration with a direct, named transfer agreement into a CSU Pueblo Bachelor of Science — the only school in this batch with a specific named 4-year AA-to-BS pathway confirmed on the program page itself (Tier-1: trinidadstate.edu/exercise-science). Real coursework includes Anatomical Kinesiology (HPR 1170, credited to Anatomical Foundations) and Weight Training I (PED 1002, direct Resistance Training match). No dedicated Exercise Physiology, Biomechanics, Sport Psychology, or internship/practicum course found in the concentration's own 24-credit required list — the campaign's most conservative ACU score to date for a genuinely dedicated, named degree, reflecting real but thin coursework rather than program non-existence.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 9 (Colorado)",
+    "soccerLevelShort": "NJCAA DI — Region 9",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1600",
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Trinidad State is a public Colorado community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 21703,
+      "tuition": 9192,
+      "roomBoard": 11547,
+      "fees": 964,
+      "maxAthletic": 0.6,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Trinidad State's Exercise Science program page confirms the live 2026-27 out-of-state rate at $306.40/credit hour (Tier-1: trinidadstate.edu/exercise-science, same Colorado Community College System rate as sibling schools Lamar CC and NJC), giving $9,192/yr tuition at a standard 30-credit/year full-time load. Room & board ($11,547) is from the college's own official Cost of Attendance PDF (Non-Resident, on-campus scenario) — the highest of this batch's four schools, reflecting Trinidad's own published living-expense estimate rather than a floor. Fees ($964/yr) use the same Colorado Community College System per-semester fee structure confirmed directly on Lamar CC's tuition page. Direct billed cost: $21,703/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "9th Region 9 D1 (2-7)",
+        "note": "2-7 conference (.222), 15 overall (2-13). First season under new head coach Tyler Wilt. Verified via region9athletics.com's official Region 9 D1 standings page."
+      },
+      {
+        "yr": 2024,
+        "pos": "9th Region 9 D1 (0-7-2)",
+        "note": "0-7-2 conference (.111), 14 overall (0-12-2). Verified via region9athletics.com's official Region 9 D1 standings page."
+      },
+      {
+        "yr": 2023,
+        "pos": "10th Region 9 D1 (1-8)",
+        "note": "1-8 conference (.111), last of 10, 15 overall (2-13). Verified via region9athletics.com's official Region 9 DI standings page."
+      },
+      {
+        "yr": 2022,
+        "pos": "6th Region 9 D1 (2-3-3)",
+        "note": "2-3-3 conference (.438), 14 overall (2-9-3). Verified via region9athletics.com's official Region 9 DI standings page."
+      },
+      {
+        "yr": 2021,
+        "pos": "5th Region 9 D1 (2-2-3)",
+        "note": "2-2-3 conference (.500), 11 overall (2-6-3). Verified via region9athletics.com's official Region 9 standings page."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Manning Shareef, a Trinidad State forward, signed with NCAA Division I Northern Colorado for the 2026 class — confirmed via a Cal State Fullerton Athletics social post naming the signing directly.",
+        "Lucas Vandji (Romaneche-Thorins, France), a sophomore on the 2025-26 roster, signed with University of the Southwest (NAIA, Hobbs, NM) for 2026 — confirmed via multiple dated social posts."
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, dated 2026 NCAA Division I signing found (Manning Shareef to Northern Colorado), but not a comprehensive multi-year alumni census.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "One confirmed 2026 NCAA D1 signing (Manning Shareef to Northern Colorado) found via a third-party recruiting-network social post, not the school's own dated release — a real but single data point, insufficient for a measured rate. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 45,
+      "technical": 42,
+      "fitness": 44
+    },
+    "devScoresNote": "Tier-1: new head coach Tyler Wilt (hired May 2025) is a genuine TSC program alumnus (played 2012-13 for founding coach Aaron Miller before finishing his playing career at York University in Nebraska), then spent four years as York's head coach before returning to his alma mater — a real, if modest, coaching CV rather than a first-time hire, but one season removed from predecessor Peter Freeman's departure to a D2 head job. No dedicated on-campus soccer stadium, strength-and-conditioning facility, or sports-science technology confirmed on the official site. Squad depth is thin — the 2025-26 roster carried only 18 players with just 3 confirmed midfielders.",
+    "fitOlivier": 47,
+    "lensScores": {
+      "overall": 47,
+      "soccer": 44,
+      "academic": 26,
+      "minutes": 68,
+      "lifestyle": 0,
+      "value": 52
+    },
+    "facilities": [
+      "New head coach Tyler Wilt — TSC alumnus, returned May 2025 after 4 years as head coach at York University (NE)",
+      "AA-to-BS Exercise Science concentration with a direct, named CSU Pueblo transfer agreement",
+      "On-campus housing (4 residence halls, Trinidad campus)"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated on-campus soccer stadium confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no soccer-dedicated training facility confirmed.",
+      "strengthConditioning": "Standard campus fitness facilities; no soccer-dedicated strength coach identified.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training provision via the Trinidad State athletics department.",
+      "academicLabs": "AA — General Exercise Science Concentration includes Anatomical Kinesiology (HPR 1170) with a direct, named AA-to-BS transfer agreement into CSU Pueblo's Exercise Science BS.",
+      "extras": "Trinidad (pop. ~8,300) is a small former mining town in southern Colorado near the New Mexico border, with real Rocky Mountain foothill scenery but no major-city amenities.",
+      "note": "A program genuinely mid-rebuild: predecessor Peter Freeman left for an NCAA D2 head job in Feb 2025, and program alumnus Tyler Wilt returned in May 2025 explicitly to 'get back on track' after a difficult multi-year stretch in a tough region.",
+      "housing": {
+        "available": true,
+        "note": "Trinidad State operates 4 residence halls on the Trinidad campus (double occupancy) — confirmed via the official Residence Life housing page (trinidadstate.edu)."
+      }
+    },
+    "culture": {
+      "vibe": "Trinidad (pop. ~8,300) is a small former coal-mining town in southern Colorado at the foot of the Rockies, near the New Mexico border — real mountain scenery, but rural and remote.",
+      "thingsToDo": "Fishers Peak State Park, downtown Trinidad's historic district, and easy access into northern New Mexico; limited nightlife in a town of this size.",
+      "socialScene": "4 on-campus residence halls; a genuinely international roster (France, Spain, Albania, Australia, Slovakia, Japan and more across recent seasons).",
+      "olivierMatch": "★★ A small, remote mountain town and cold winters are a real mismatch for a warm-city-preferring Sydney athlete, and the program is genuinely mid-rebuild under a first-year-back coach — but a thin, all-freshman 2025-26 midfield group means a wide-open Minutes Outlook, and the AA-to-BS Exercise Science pathway has the campaign's only named, direct CSU Pueblo transfer agreement.",
+      "lifestyleTags": "Small mountain town, cold winters, on-campus housing, international squad, direct CSU Pueblo AA-to-BS pathway"
+    },
+    "courses": [
+      "HPR 1170 — Anatomical Kinesiology",
+      "PED 1002 — Weight Training I",
+      "HPE 2031 — Care and Prevention of Athletic Injury",
+      "HWE 1050 — Human Nutrition",
+      "HPE 2000 — Perspectives in PE and Sport"
+    ],
+    "rec": "Trinidad State is a program genuinely mid-rebuild: after a difficult multi-year stretch (bottom-2 in Region 9 in three of the last four seasons), predecessor Peter Freeman left for an NCAA D2 head job in February 2025, and TSC's own program alumnus Tyler Wilt returned in May 2025 — after 4 years as head coach at York University in Nebraska — explicitly to \"help the men's soccer team get back on track.\" The 2025-26 midfield group is thin (only 3, all freshmen) but that means a genuinely wide-open Minutes Outlook slate for an incoming player. Academically, the AA — General Exercise Science Concentration has this batch's only named, direct AA-to-BS transfer agreement into a real 4-year program (CSU Pueblo), even though its own required coursework covers just 2 of 16 ACU units.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 3,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Jose Camarillo (Fr·CM)",
+        "Tigran Guevorguian (Fr·CM)",
+        "Kewin Bonilla (Fr·CM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 62,
+          "label": "Likely starter — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 78,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — all 3 confirmed 2025-26 midfielders were freshmen, so 100% clear before Olivier's August 2027 start (their 2-year NJCAA eligibility ends during the 2026-27 season). A genuinely thin squad (only 18 total players on the 2025-26 roster) means low internal competition, but also real uncertainty about the incoming Fall 2026 recruiting class rebuilding the group from scratch — flagged Medium risk rather than Low given the program's overall thinness. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'"
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "AA — General Exercise Science Concentration — direct, named AA-to-BS transfer agreement with CSU Pueblo"
+  },
+  {
+    "id": "northeastern_junior_college",
+    "name": "Northeastern Junior College",
+    "full": "Northeastern Junior College",
+    "loc": "Sterling, CO",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 9",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A generally mid-table Region 9 program with one standout season: 3rd of 9 in 2022-23 (5-1-2 conference, .750), plus a dated 2021 news release confirming a national top-20 ranking. Otherwise finished 6th-7th of 10 in three of the last four seasons — verified via region9athletics.com's official Region 9 D1 standings pages. No confirmed National Tournament appearance, All-American, or Region 9 title in the period researched, and the program is currently led by an Interim Head Coach — held to Standard rather than Elite.",
+    "njcaaRegion": "Region 9",
+    "njcaaRegionArea": "Colorado",
+    "profileDepth": "full",
+    "color": [
+      "#fef3c7",
+      "#92400e"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 266,
+    "mapY": 164,
+    "domain": "gonjc.com",
+    "url": "https://gonjc.com/sports/msoc/index",
+    "degreeTitle": "Sports Medicine-Athletic Training Emphasis",
+    "acuAlign": 5,
+    "acuAlignNote": "NJC offers a genuine, dedicated Sports Medicine-Athletic Training Emphasis (Tier-1: njc.edu/program/athletic-training/sports-medicine-athletic-training-emphasis) — the strongest-branded athletic-training pathway of this batch's four schools. Real coursework includes a two-course Human Anatomy & Physiology sequence (BIO 2101/2102, credited to Anatomical Foundations), a standalone General College Biology I (BIO 1111, direct General/Human Biology match — distinct from the A&P sequence), a dedicated Kinesiology course (HPR 2017, credited to Functional/Applied Anatomy), Health Psychology (PSY 2333, credited to Health & Exercise Psychology) and a genuine Athletic Training Practicum I (HPE 1088, credited to the Professional Experience/Internship unit — real clinical hours, matching Lamar CC's practicum as one of only two in this batch). No Strength & Conditioning/Weight Training or Sport Psychology course found in the required elective list.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 9 (Colorado)",
+    "soccerLevelShort": "NJCAA DI — Region 9",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1650",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "NJC is a public Colorado community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 20328,
+      "tuition": 9192,
+      "roomBoard": 10172,
+      "fees": 964,
+      "maxAthletic": 0.6,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "NJC is a Colorado Community College System school under the same State Board tuition-setting authority as sibling schools Lamar CC and Trinidad State, so the same live 2026-27 out-of-state rate applies ($306.40/credit hour), giving $9,192/yr tuition at a standard 30-credit/year full-time load. Room & board ($10,172) is built from NJC's own official 2026-27 Room and Board Rates page (Tier-1: njc.edu/cashier/room-and-board-rates) — Blue Spruce Hall room ($2,479/semester) plus the full 19-meal-per-week plan ($2,607/semester), both doubled for the year. Fees ($964/yr) use the same Colorado Community College System per-semester fee structure confirmed directly on Lamar CC's tuition page. Direct billed cost: $20,328/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "7th Region 9 D1 (3-5-1)",
+        "note": "3-5-1 conference (.389), 13 overall (4-7-2). Verified via region9athletics.com's official Region 9 D1 standings page."
+      },
+      {
+        "yr": 2024,
+        "pos": "7th Region 9 D1 (3-4-2)",
+        "note": "3-4-2 conference (.444), 12 overall (3-5-4). Verified via region9athletics.com's official Region 9 D1 standings page."
+      },
+      {
+        "yr": 2023,
+        "pos": "6th Region 9 D1 (4-4-2)",
+        "note": "4-4-2 conference (.500), 14 overall (5-7-2). Verified via region9athletics.com's official Region 9 DI standings page."
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd Region 9 D1 (5-1-2)",
+        "note": "5-1-2 conference (.750), 18 overall (12-4-2) — the strongest recent season of this batch's four schools. Verified via region9athletics.com's official Region 9 DI standings page."
+      },
+      {
+        "yr": 2021,
+        "pos": "6th Region 9 D1 (2-4-1)",
+        "note": "2-4-1 conference (.357), 16 overall (6-9-1). Verified via region9athletics.com's official Region 9 standings page."
+      }
+    ],
+    "titles": [
+      "2021 NJCAA national Top-20 ranking (Plainsmen Soccer, per a dated Sept 2021 NJC news release)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Elias Khodri — played two seasons at NJC, posted 11 goals, then signed with NCAA Division I via Gardner-Webb before joining the University of New Hampshire men's soccer program (America East Conference) for 2025 — confirmed via UNH Athletics' own dated January 2025 signing announcement."
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, dated 2025 NCAA Division I signing found (Elias Khodri, via Gardner-Webb to New Hampshire), but not a comprehensive multi-year alumni census.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://unhwildcats.com/news/2025/1/16/mens-soccer-signs-gardner-webb-transfer-elias-khodri",
+        "note": "One confirmed 2025 NCAA D1 signing (Elias Khodri, ultimately to New Hampshire) found via the destination school's own dated news release — a real but single data point, insufficient for a measured rate. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 48,
+      "technical": 44,
+      "fitness": 46
+    },
+    "devScoresNote": "Tier-1: current Interim Head Coach Hubert Blanco has a genuinely substantive coaching CV despite the interim title — 7 years coaching at the high school and club level, including multiple district championships, a regional championship, and a state championship final-four appearance with his HS team, plus pre-ECNL club coaching with multiple tournament wins (per his own official bio, njc.edu). He is himself a JUCO alumnus (McHenry County College, IL) and holds a Bachelor of Science in Sport, Fitness and Education from Florida International University (2008). No dedicated on-campus soccer stadium, strength-and-conditioning facility, or sports-science technology confirmed on the official site. The 'Interim' title itself is a real leadership-continuity flag, same class as the Coastal Bend/Southeastern CC caveats already in this guide.",
+    "fitOlivier": 47,
+    "lensScores": {
+      "overall": 47,
+      "soccer": 45,
+      "academic": 42,
+      "minutes": 66,
+      "lifestyle": 0,
+      "value": 53
+    },
+    "facilities": [
+      "2022 Region 9 3rd-place finish (5-1-2, best recent season of this batch) and a dated 2021 national Top-20 ranking",
+      "Sports Medicine-Athletic Training Emphasis — real Athletic Training Practicum I clinical hours",
+      "On-campus housing (6 named residence halls)"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated on-campus soccer stadium confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no soccer-dedicated training facility confirmed.",
+      "strengthConditioning": "Standard campus fitness facilities; no soccer-dedicated strength coach identified.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training provision, reinforced by the Sports Medicine-Athletic Training Emphasis's own Athletic Training Practicum I course (HPE 1088), giving real on-campus clinical hours.",
+      "academicLabs": "Sports Medicine-Athletic Training Emphasis includes a two-course Human Anatomy & Physiology lab sequence (BIO 2101/2102), a standalone General College Biology I (BIO 1111), and a dedicated Kinesiology course (HPR 2017).",
+      "extras": "Sterling (pop. ~14,000) is northeastern Colorado's largest town — real small-city amenities (Sterling is home to the South Platte River valley) but no major-city scale.",
+      "note": "Currently led by an Interim Head Coach (Hubert Blanco), whose own CV — 7 years coaching including district and regional titles, a state final-four appearance, and pre-ECNL club coaching — is genuinely substantive despite the interim title; re-check once a permanent hire is announced, same caveat class as Coastal Bend CC and Southeastern CC elsewhere in this guide.",
+      "housing": {
+        "available": true,
+        "note": "NJC operates 6 named on-campus residence halls (Blue Spruce, Dowis, Dowis Apartments, GRB, Herbie, Poole, Williams) — confirmed via the official 2026-27 Room and Board Rates page (njc.edu)."
+      }
+    },
+    "culture": {
+      "vibe": "Sterling (pop. ~14,000) is northeastern Colorado's largest town, on the South Platte River — real small-city amenities for a rural JUCO, but a long way from Denver or any major city.",
+      "thingsToDo": "The South Platte River valley, downtown Sterling, and easy access to eastern Colorado's plains; limited nightlife relative to a genuine city.",
+      "socialScene": "6 on-campus residence halls; a genuinely international roster (England, Italy, Ireland, Netherlands, Spain, Japan, Australia, Germany and more across recent seasons).",
+      "olivierMatch": "★★ Cold plains winters and a small-city, non-major setting are a real mismatch for a warm-city-preferring Sydney athlete, but a fully-cleared 2025-26 midfield group (7 of 7 clear before 2027) means a wide-open Minutes Outlook, and the Sports Medicine-Athletic Training Emphasis carries this batch's strongest-branded academic pathway.",
+      "lifestyleTags": "Small city, cold winters, on-campus housing, international squad, real Athletic Training clinical hours"
+    },
+    "courses": [
+      "BIO 2101/2102 — Human Anatomy & Physiology I/II",
+      "BIO 1111 — General College Biology I",
+      "HPR 2017 — Kinesiology",
+      "PSY 2333 — Health Psychology",
+      "HPE 1088 — Athletic Training Practicum I"
+    ],
+    "rec": "Northeastern Junior College's standout season was 2022 (3rd of 9 in Region 9, 5-1-2 conference) alongside a dated 2021 national Top-20 ranking, though results have been mid-table since. The program is currently led by Interim Head Coach Hubert Blanco, whose own CV — 7 years coaching with district and regional titles and a state final-four appearance, a JUCO playing background, and an FIU degree in Sport, Fitness and Education — is genuinely substantive despite the interim title; worth re-checking once a permanent hire is announced. Academically, the Sports Medicine-Athletic Training Emphasis is this batch's strongest-branded pathway, with real clinical Athletic Training Practicum hours. A fully-cleared 2025-26 midfield group (all 7 confirmed midfielders graduate or age out before Olivier's August 2027 arrival) gives a genuinely wide-open Minutes Outlook.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Oliver Stickland (So·CM)",
+        "Harry Marr (Fr·CM)",
+        "Luca Mammi (So·MF/W)",
+        "Taketo Yamazaki (So·MF)",
+        "Jayden Denieffe-Kelly (Fr·MF)",
+        "Warre Mondelaers (So·MF)",
+        "Alec Cracknell (So·MF)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 60,
+          "label": "Likely starter — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 76,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — all 7 confirmed 2025-26 midfielders (5 sophomores + 2 freshmen) clear before Olivier's August 2027 start, since even the 2025-26 freshmen complete their 2-year NJCAA eligibility during the 2026-27 season. A genuinely full clean slate across a reasonably deep midfield group (7, the largest of this batch's four schools) — the unknown is the incoming Fall 2026 recruiting class, especially under an Interim Head Coach. Ask the coach: 'How many central midfielders are in your 2026 recruiting class, and has the interim tag affected recruiting?'"
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Sports Medicine-Athletic Training Emphasis — genuine Athletic Training Practicum I clinical hours"
   }
 ]

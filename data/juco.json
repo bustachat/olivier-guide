@@ -1122,7 +1122,7 @@
         "totalCount": 4,
         "yearsCovered": "2024-2025",
         "years": 2,
-        "perYear": 2.0,
+        "perYear": 2,
         "sourceUrl": null,
         "note": "Sidearm alumni page renders empty / parked lander; publishes no usable per-year D1 destination data. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (discovery only, Rule 0) and Tier-1-verified 4 on their destination schools' own rosters: Jinkinson (Missouri State, 2024), Weir (Wisconsin-Milwaukee, 2025), Lee and Silvestrini (both Xavier, 2025). A fifth 2024 lead (Thallinger→Tulsa) could not be confirmed on Tulsa's current roster and is not counted. ⚠️ 2-year cross-check, not a comprehensive alumni-page census — EXCLUDED from the D1_RATE_DIVISOR, same treatment as Phoenix College's n=1 precedent (§5b)."
       }
@@ -3096,7 +3096,7 @@
         "totalCount": 3,
         "yearsCovered": "2025",
         "years": 1,
-        "perYear": 3.0,
+        "perYear": 3,
         "sourceUrl": null,
         "note": "No maintained alumni destination page exists — the school's own '13 transfers in 2025' claim has no verifiable per-player breakdown. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (discovery only, Rule 0) and Tier-1-verified 3 for 2025 on their destination schools' own rosters: Achermann-Stanfield (Tulsa), Emmanuel (SMU), McCoy (South Florida). ⚠️ n=1 year, same treatment as Phoenix College's precedent (§5b) — stored as a real measured rate but EXCLUDED from the D1_RATE_DIVISOR (a single cross-checked year is not the comprehensive multi-year alumni-page census the divisor's 7 schools were built from, and the school's own '13' figure suggests this 3 is itself an undercount, not an overcount)."
       }
@@ -6322,14 +6322,14 @@
     "loc": "Garden City, NY",
     "region": "east",
     "div": "JUCO",
-    "conf": "NJCAA Division I / Region 15",
+    "conf": "NJCAA Division III / Region 15",
     "confKey": "other",
     "warm": false,
     "city": true,
     "top": false,
     "juco2yr": true,
     "jucoTier": "Standard",
-    "jucoTierNote": "Best regular-season record in NJCAA Region 15 (10-2) for 2025; not nationally ranked in the current NJCAA DI/DII top 20",
+    "jucoTierNote": "Best regular-season record in NJCAA Region 15 DIVISION III (10-2) for 2025. Corrected 2026-08-11 after direct verification against region15athletics.com's own divisional standings: Region 15 has only ONE Division I program (Monroe University – New Rochelle); every other Region 15 school, including Nassau, competes at Division III. Not nationally ranked in the current NJCAA DIII top 20 at time of research.",
     "njcaaRegion": "Region 15",
     "njcaaRegionArea": "Lower New York",
     "profileDepth": "full",
@@ -6410,10 +6410,10 @@
         "covered": false
       }
     ],
-    "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
-    "soccerLevelShort": "NJCAA Division I",
-    "aid": "Athletic",
-    "fundingPathway": "full",
+    "soccerLevel": "NJCAA Division III — Region 15 (Lower New York)",
+    "soccerLevelShort": "NJCAA Division III",
+    "aid": "Merit only (NJCAA DIII — no athletic aid)",
+    "fundingPathway": "none",
     "size": 15000,
     "prePT": "Transfer Pathway",
     "prePTShort": "Transfer Pathway",
@@ -6428,10 +6428,10 @@
       "tuition": 12130,
       "roomBoard": 15000,
       "fees": 0,
-      "maxAthletic": 0.5,
+      "maxAthletic": 0,
       "maxAcademic": 3000,
-      "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state tuition is $12,130/yr (2025, Tier-1 confirmed, ncc.edu). Nassau has no on-campus housing (commuter college) — roomBoard is an off-campus Long Island/NYC-metro estimate, not a Tier-1 confirmed figure. A partnership program allows some students to live in residential housing at nearby Adelphi University, but this is a separate, limited arrangement rather than standard Nassau housing."
+      "aidType": "merit-only",
+      "internationalNote": "IMPORTANT — corrected 2026-08-11: this school is NJCAA Division III, not Division I. Region 15's own official standings (region15athletics.com) show only ONE Division I program in the region (Monroe University – New Rochelle); every other Region 15 school competes at Division III, which under NJCAA rules CANNOT offer any athletic financial aid — only academic/merit or need-based aid. Out-of-state tuition is $12,130/yr (2025, Tier-1 confirmed, ncc.edu). Nassau has no on-campus housing (commuter college) — roomBoard is an off-campus Long Island/NYC-metro estimate, not a Tier-1 confirmed figure. A partnership program allows some students to live in residential housing at nearby Adelphi University, but this is a separate, limited arrangement rather than standard Nassau housing. With no athletic aid available, the realistic ceiling is the school's own merit scholarship (up to $3,000/yr) plus any need-based aid an international student can independently secure — a small fraction of the $27.1k/yr direct cost."
     },
     "confRecord": [
       {
@@ -6461,7 +6461,7 @@
       }
     ],
     "titles": [
-      "Best 2025 regular-season conference record in NJCAA Region 15 (10-2)",
+      "Best 2025 regular-season conference record in NJCAA Region 15 Division III (10-2)",
       "Garden City, NY — Long Island / NYC-metro location"
     ],
     "proPlayers": {
@@ -6486,14 +6486,14 @@
       "technical": 52,
       "fitness": 46
     },
-    "fitOlivier": 52,
+    "fitOlivier": 44,
     "lensScores": {
-      "overall": 52,
-      "soccer": 46,
+      "overall": 44,
+      "soccer": 49,
       "academic": 36,
       "minutes": 73,
       "lifestyle": 50,
-      "value": 50
+      "value": 46
     },
     "tags": [
       "city"
@@ -6516,19 +6516,19 @@
       "sportsMed": "Standard JUCO athletic training staff; specifics not published on the official site.",
       "academicLabs": "No dedicated Exercise Science labs confirmed — general transfer coursework only.",
       "extras": "Garden City is an affluent Long Island suburb roughly 20 miles from Manhattan — genuine NYC-metro access.",
-      "note": "Nassau's standout feature is on-field results — the best regular-season record in Region 15 for 2025 — backed by a large, well-resourced coaching staff, but the lack of on-campus housing and no dedicated Exercise Science degree are real trade-offs against the higher NYC-metro cost of living."
+      "note": "Nassau's standout feature is on-field results — the best regular-season record in Region 15 Division III for 2025 — backed by a large, well-resourced coaching staff, but as a Division III program it cannot offer athletic scholarships. Combined with the lack of on-campus housing and no dedicated Exercise Science degree, these are real trade-offs against the higher NYC-metro cost of living."
     },
     "culture": {
       "vibe": "Nassau Community College sits in Garden City, an affluent Long Island suburb roughly 20 miles from Manhattan — genuine NYC-metro access. The 2025 program had the best regular-season record in all of Region 15.",
       "thingsToDo": "Full NYC-metro access via Long Island Rail Road — Manhattan, Long Island beaches, and everything in between within reach.",
       "socialScene": "Commuter-campus social scene given no on-campus housing, though the NYC-metro location offers extensive off-campus social and cultural options.",
-      "olivierMatch": "★★★ NYC-metro access and the strongest 2025 on-field results in Region 15 are genuine positives, offset by no on-campus housing, no dedicated Exercise Science degree, a cold climate, and the highest cost in this batch.",
+      "olivierMatch": "★★ NYC-metro access and the strongest 2025 on-field results in Region 15 Division III are genuine positives, but this is a Division III program — no athletic scholarship money is available under NJCAA rules, only a small merit award against a $27.1k/yr direct cost. Combined with no standard on-campus housing, no dedicated Exercise Science degree, and a cold climate, this is financially difficult without independent family funding.",
       "lifestyleTags": "Major city access, no housing, strong soccer results, cold winters"
     },
     "courses": [
       "General A.A./A.S. transfer coursework"
     ],
-    "rec": "Nassau had the best regular-season record in all of Region 15 in 2025 (10-2) under a well-resourced 5-person coaching staff, and offers genuine NYC-metro access from Garden City. The real trade-offs are the lack of on-campus housing (commuter college, though a limited Adelphi partnership exists), no dedicated Exercise Science degree, and the highest overall cost in this batch.",
+    "rec": "Nassau had the best regular-season record in all of Region 15 Division III in 2025 (10-2) under a well-resourced 5-person coaching staff, and offers genuine NYC-metro access from Garden City. Its DIII status (corrected 2026-08-11) means NJCAA rules forbid any athletic scholarship money here — only a small merit award (up to $3,000/yr) against a $27,130/yr direct cost. Combined with no on-campus housing (beyond a limited Adelphi partnership) and no dedicated Exercise Science degree, this is now one of the more financially difficult schools in the guide for Olivier despite the strong on-field results.",
     "minutesOutlook": {
       "available": true,
       "mf_total": 7,
@@ -6577,14 +6577,14 @@
     "loc": "Stone Ridge, NY",
     "region": "east",
     "div": "JUCO",
-    "conf": "NJCAA Division I / Region 15",
+    "conf": "NJCAA Division III / Region 15",
     "confKey": "other",
     "warm": false,
     "city": false,
     "top": false,
     "juco2yr": true,
     "jucoTier": "Standard",
-    "jucoTierNote": "2025 Region 15 tournament runner-up (lost the championship final to Suffolk CC, 2-0); not nationally ranked in the current NJCAA DI/DII top 20",
+    "jucoTierNote": "2025 Region 15 Division III tournament runner-up (lost the championship final to Suffolk CC, 2-0). Corrected 2026-08-11 after direct verification against region15athletics.com's own divisional standings: Region 15 has only ONE Division I program (Monroe University – New Rochelle); every other Region 15 school, including Ulster, competes at Division III. Not nationally ranked in the current NJCAA DIII top 20 at time of research.",
     "njcaaRegion": "Region 15",
     "njcaaRegionArea": "Lower New York",
     "profileDepth": "full",
@@ -6665,10 +6665,10 @@
         "covered": false
       }
     ],
-    "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
-    "soccerLevelShort": "NJCAA Division I",
-    "aid": "Athletic",
-    "fundingPathway": "full",
+    "soccerLevel": "NJCAA Division III — Region 15 (Lower New York)",
+    "soccerLevelShort": "NJCAA Division III",
+    "aid": "Merit only (NJCAA DIII — no athletic aid)",
+    "fundingPathway": "none",
     "size": 2600,
     "prePT": "Transfer Pathway",
     "prePTShort": "Transfer Pathway",
@@ -6683,10 +6683,10 @@
       "tuition": 12146,
       "roomBoard": 11700,
       "fees": 0,
-      "maxAthletic": 0.5,
+      "maxAthletic": 0,
       "maxAcademic": 3000,
-      "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state tuition is $12,146/yr (2025, Tier-1 confirmed, SUNY Ulster). Ulster has no on-campus housing — the official published off-campus rent/meal estimate is $11,700/yr (Tier-1 confirmed)."
+      "aidType": "merit-only",
+      "internationalNote": "IMPORTANT — corrected 2026-08-11: this school is NJCAA Division III, not Division I. Region 15's own official standings (region15athletics.com) show only ONE Division I program in the region (Monroe University – New Rochelle); every other Region 15 school competes at Division III, which under NJCAA rules CANNOT offer any athletic financial aid — only academic/merit or need-based aid. Out-of-state tuition is $12,146/yr (2025, Tier-1 confirmed, SUNY Ulster). Ulster has no on-campus housing — the official published off-campus rent/meal estimate is $11,700/yr (Tier-1 confirmed). With no athletic aid available, the realistic ceiling is the school's own merit scholarship (up to $3,000/yr) plus any need-based aid an international student can independently secure — a meaningful fraction of the comparatively lower $23.8k/yr direct cost, the cheapest of the four Region 15 schools in this guide."
     },
     "confRecord": [
       {
@@ -6716,7 +6716,7 @@
       }
     ],
     "titles": [
-      "2025 NJCAA Region 15 tournament runner-up (lost final 2-0 to Suffolk CC)",
+      "2025 NJCAA Region 15 Division III tournament runner-up (lost final 2-0 to Suffolk CC)",
       "9-1-2 regular-season record, 2nd in Region 15"
     ],
     "proPlayers": {
@@ -6741,14 +6741,14 @@
       "technical": 50,
       "fitness": 46
     },
-    "fitOlivier": 43,
+    "fitOlivier": 35,
     "lensScores": {
-      "overall": 43,
-      "soccer": 45,
+      "overall": 35,
+      "soccer": 47,
       "academic": 36,
       "minutes": 70,
       "lifestyle": 0,
-      "value": 47
+      "value": 43
     },
     "tags": [],
     "facilities": [
@@ -6769,19 +6769,19 @@
       "sportsMed": "Standard JUCO athletic training staff; specifics not published on the official site.",
       "academicLabs": "No dedicated Exercise Science labs confirmed — general transfer coursework only.",
       "extras": "Stone Ridge is a small rural Hudson Valley town roughly 90 minutes from Manhattan.",
-      "note": "Ulster's standout feature is on-field results — a 2025 Region 15 Championship final appearance — but it lacks on-campus housing and a dedicated Exercise Science degree, and Stone Ridge is genuinely rural Hudson Valley rather than NYC-metro proper."
+      "note": "Ulster's standout feature is on-field results — a 2025 Region 15 Division III Championship final appearance — but as a Division III program it cannot offer athletic scholarships, and it lacks on-campus housing and a dedicated Exercise Science degree. Its lower cost ($23,846/yr, the cheapest of the guide's four Region 15 schools) partly offsets the absence of athletic aid."
     },
     "culture": {
       "vibe": "Ulster County Community College sits in Stone Ridge, a small rural Hudson Valley town roughly 90 minutes from Manhattan. The roster is drawn heavily from local Hudson Valley towns (Kingston, Newburgh, Pine Bush), with a 2025 Region 15 Championship final run.",
       "thingsToDo": "Rural Hudson Valley — hiking, small-town character, and proximity to the Catskills; genuinely further from NYC than the guide's other Lower New York JUCOs.",
       "socialScene": "No on-campus housing means a commuter-oriented social scene, centred on the local Hudson Valley community.",
-      "olivierMatch": "★★ Cold winters, no on-campus housing, and a genuinely rural Hudson Valley setting are real lifestyle drawbacks, offset by a 2025 Region 15 Championship final appearance.",
+      "olivierMatch": "★★ Cold winters, no on-campus housing, and a genuinely rural Hudson Valley setting are real lifestyle drawbacks, and as a Division III program no athletic scholarship money is available under NJCAA rules — only a small merit award. The lowest direct cost of the guide's four Region 15 schools ($23.8k/yr) makes the funding gap somewhat more manageable than its Region 15 peers, offset by a 2025 Division III Championship final appearance.",
       "lifestyleTags": "Rural, cold winters, no housing, strong 2025 results"
     },
     "courses": [
       "General A.A./A.S. transfer coursework"
     ],
-    "rec": "Ulster reached the 2025 Region 15 Championship final (9-1-2), a strong on-field result, but the trade-offs are real: no on-campus housing, no dedicated Exercise Science degree, and a genuinely rural Hudson Valley setting further from NYC than the guide's other Lower New York JUCOs.",
+    "rec": "Ulster reached the 2025 Region 15 Division III Championship final (9-1-2), a strong on-field result, but its DIII status (corrected 2026-08-11) means NJCAA rules forbid any athletic scholarship money here — only a small merit award (up to $3,000/yr) is available. At $23,846/yr this is the cheapest of the guide's four Region 15 schools, somewhat softening the funding gap, but the trade-offs remain real: no on-campus housing, no dedicated Exercise Science degree, and a genuinely rural Hudson Valley setting further from NYC than the guide's other Lower New York JUCOs.",
     "minutesOutlook": {
       "available": true,
       "mf_total": 8,
@@ -6831,14 +6831,14 @@
     "loc": "Selden, NY",
     "region": "east",
     "div": "JUCO",
-    "conf": "NJCAA Division I / Region 15",
+    "conf": "NJCAA Division III / Region 15",
     "confKey": "other",
     "warm": false,
     "city": false,
     "top": false,
     "juco2yr": true,
     "jucoTier": "Standard",
-    "jucoTierNote": "2025 NJCAA Region 15 Champions (defeated Ulster County CC 2-0 in the final); not nationally ranked in the current NJCAA DI/DII top 20",
+    "jucoTierNote": "2025 NJCAA Region 15 DIVISION III Champions (defeated Ulster County CC 2-0 in the final). Corrected 2026-08-11 after direct verification against region15athletics.com's own divisional standings: Region 15 has only ONE Division I program (Monroe University – New Rochelle); every other Region 15 school, including Suffolk, competes at Division III. Not nationally ranked in the current NJCAA DIII top 20 at time of research.",
     "njcaaRegion": "Region 15",
     "njcaaRegionArea": "Lower New York",
     "profileDepth": "full",
@@ -6919,10 +6919,10 @@
         "covered": false
       }
     ],
-    "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
-    "soccerLevelShort": "NJCAA Division I",
-    "aid": "Athletic",
-    "fundingPathway": "full",
+    "soccerLevel": "NJCAA Division III — Region 15 (Lower New York)",
+    "soccerLevelShort": "NJCAA Division III",
+    "aid": "Merit only (NJCAA DIII — no athletic aid)",
+    "fundingPathway": "none",
     "size": 21000,
     "prePT": "Transfer Pathway",
     "prePTShort": "Transfer Pathway",
@@ -6937,10 +6937,10 @@
       "tuition": 12460,
       "roomBoard": 15593,
       "fees": 0,
-      "maxAthletic": 0.5,
+      "maxAthletic": 0,
       "maxAcademic": 3000,
-      "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state tuition is $12,460/yr (2025, Tier-1 confirmed, sunysuffolk.edu). Suffolk does not offer on-campus housing directly — the official published off-campus cost-of-attendance figure for out-of-state students is $28,053/yr, used here as costNum."
+      "aidType": "merit-only",
+      "internationalNote": "IMPORTANT — corrected 2026-08-11: this school is NJCAA Division III, not Division I. Region 15's own official standings (region15athletics.com) show only ONE Division I program in the region (Monroe University – New Rochelle); every other Region 15 school competes at Division III, which under NJCAA rules CANNOT offer any athletic financial aid — only academic/merit or need-based aid. Out-of-state tuition is $12,460/yr (2025, Tier-1 confirmed, sunysuffolk.edu). Suffolk does not offer on-campus housing directly — the official published off-campus cost-of-attendance figure for out-of-state students is $28,053/yr, used here as costNum. With no athletic aid available, the realistic ceiling is the school's own merit scholarship (up to $3,000/yr) plus any need-based aid an international student can independently secure — a small fraction of the $28k/yr direct cost."
     },
     "confRecord": [
       {
@@ -6970,7 +6970,7 @@
       }
     ],
     "titles": [
-      "2025 NJCAA Region 15 Champions",
+      "2025 NJCAA Region 15 Division III Champions",
       "Confirmed dedicated Exercise Science A.S. degree — the only Lower New York JUCO in this guide with one"
     ],
     "proPlayers": {
@@ -6995,14 +6995,14 @@
       "technical": 52,
       "fitness": 48
     },
-    "fitOlivier": 37,
+    "fitOlivier": 29,
     "lensScores": {
-      "overall": 37,
-      "soccer": 47,
+      "overall": 29,
+      "soccer": 49,
       "academic": 63,
       "minutes": 50,
       "lifestyle": 0,
-      "value": 41
+      "value": 36
     },
     "tags": [
       "acad"
@@ -7025,20 +7025,20 @@
       "sportsMed": "Standard JUCO athletic training staff; specifics not published on the official site.",
       "academicLabs": "Physical Education and Exercise Science department supports the dedicated Exercise Science A.S. coursework directly.",
       "extras": "Selden is a suburban Long Island town; part of a larger 3-campus SUNY Suffolk system (~21,000 students).",
-      "note": "Suffolk's standout feature is the combination of the 2025 Region 15 Championship and the only confirmed dedicated Exercise Science degree among this guide's Lower New York JUCOs — a genuinely strong academic-athletic package let down by the lack of on-campus housing and the highest cost in this batch."
+      "note": "Suffolk's standout feature is the combination of the 2025 Region 15 Division III Championship and the only confirmed dedicated Exercise Science degree among this guide's Lower New York JUCOs — a genuinely strong academic-athletic package, but as a Division III program it cannot offer athletic scholarships, which combined with the lack of on-campus housing and the highest cost in this batch makes it a financially difficult fit without independent funding."
     },
     "culture": {
       "vibe": "Suffolk County Community College's Ammerman campus sits in Selden, a suburban Long Island town, part of a large 3-campus system (~21,000 students). The 2025 Region 15 Championship gives the program real current credibility.",
       "thingsToDo": "Long Island beaches and suburbs nearby; Manhattan is roughly 50 miles away — reachable but not a short commute like Nassau or Westchester.",
       "socialScene": "No on-campus housing means a commuter-oriented social scene; the large student body (~21,000) offers a bigger social pool than smaller rural JUCOs.",
-      "olivierMatch": "★★★ The 2025 Region 15 Championship and a genuinely dedicated Exercise Science degree are strong positives, offset by no on-campus housing, cold winters, and the highest cost of any school added this session.",
+      "olivierMatch": "★★ The 2025 Region 15 Division III Championship and a genuinely dedicated Exercise Science degree are real positives, but this is now understood to be a Division III program — NJCAA rules forbid any athletic scholarship money here, leaving only a small merit award against the highest direct cost in this batch (~$28.1k/yr) and no on-campus housing. A financially difficult option unless family funding covers the gap.",
       "lifestyleTags": "Suburban Long Island, no housing, strong academics, 2025 champions"
     },
     "courses": [
       "Exercise Science (A.S.)",
       "Physical Education and Exercise Science department coursework"
     ],
-    "rec": "Suffolk is the strongest package among this batch's Lower New York additions — 2025 Region 15 Champions, and the only school in the group with a confirmed dedicated Exercise Science A.S. degree. The trade-offs are the lack of on-campus housing and the highest cost in this batch (~$28.1k/yr). Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
+    "rec": "Suffolk's 2025 Region 15 Division III Championship and its confirmed dedicated Exercise Science A.S. degree are real strengths, but the school's DIII status (corrected 2026-08-11) is a major practical downgrade for an international athlete: NJCAA Division III programs cannot offer ANY athletic financial aid, only small merit awards (up to $3,000/yr) against a $28,053/yr direct cost. Combined with no on-campus housing, this is now one of the least financially viable schools in the guide for Olivier specifically, despite the genuine on-field and academic credentials. Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": false,
       "note": "RE-TESTED IN A REAL BROWSER 2026-08-06 (Claude for Chrome, full JS render) — the missing positions are GENUINE, not a fetch artifact. The 2025-26 roster is a TABLE with headers NO. | NAME | POS. | CL. | HIGH SCHOOL and 24 rows: the POS. column exists and is EMPTY for all 24 players, as is HIGH SCHOOL, while CL. is fully published (FR/SO). There is nowhere else to look — Suffolk publishes no player bio pages at all (zero /roster/<slug>/<id> links) and the words Goalkeeper/Midfielder/Defender/Forward appear nowhere on the page. The season selector confirms 2025-26 is the newest published season; no 2026-27 roster exists. Midfielders therefore cannot be counted and minutesOutlook stays unavailable. Note the site CloudFront-403s datacenter IPs, so a scripted fetch and the in-app browser both fail here — that is a network block, NOT evidence about the data. Re-check only if Suffolk starts publishing positions."
@@ -7054,14 +7054,14 @@
     "loc": "Valhalla, NY",
     "region": "east",
     "div": "JUCO",
-    "conf": "NJCAA Division I / Region 15",
+    "conf": "NJCAA Division III / Region 15",
     "confKey": "other",
     "warm": false,
     "city": true,
     "top": false,
     "juco2yr": true,
     "jucoTier": "Standard",
-    "jucoTierNote": "9-1-2 regular season record, tied for 3rd/4th in Region 15 for 2025; not nationally ranked in the current NJCAA DI/DII top 20",
+    "jucoTierNote": "9-1-2 regular season record, tied for 3rd/4th in NJCAA Region 15 DIVISION III for 2025. Corrected 2026-08-11 after direct verification against region15athletics.com's own divisional standings: Region 15 has only ONE Division I program (Monroe University – New Rochelle); every other Region 15 school, including Westchester, competes at Division III. Not nationally ranked in the current NJCAA DIII top 20 at time of research.",
     "njcaaRegion": "Region 15",
     "njcaaRegionArea": "Lower New York",
     "profileDepth": "full",
@@ -7142,10 +7142,10 @@
         "covered": false
       }
     ],
-    "soccerLevel": "NJCAA Division I — Region 15 (Lower New York)",
-    "soccerLevelShort": "NJCAA Division I",
-    "aid": "Athletic",
-    "fundingPathway": "full",
+    "soccerLevel": "NJCAA Division III — Region 15 (Lower New York)",
+    "soccerLevelShort": "NJCAA Division III",
+    "aid": "Merit only (NJCAA DIII — no athletic aid)",
+    "fundingPathway": "none",
     "size": 11000,
     "prePT": "Transfer Pathway",
     "prePTShort": "Transfer Pathway",
@@ -7160,10 +7160,10 @@
       "tuition": 12486,
       "roomBoard": 12000,
       "fees": 0,
-      "maxAthletic": 0.5,
+      "maxAthletic": 0,
       "maxAcademic": 3000,
-      "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state tuition is $12,486/yr (2025, Tier-1 confirmed, sunywcc.edu). Westchester explicitly does not offer housing or meal plans of any kind — roomBoard is an off-campus NYC-metro (Westchester County) estimate, not a Tier-1 confirmed figure."
+      "aidType": "merit-only",
+      "internationalNote": "IMPORTANT — corrected 2026-08-11: this school is NJCAA Division III, not Division I. Region 15's own official standings (region15athletics.com) show only ONE Division I program in the region (Monroe University – New Rochelle); every other Region 15 school competes at Division III, which under NJCAA rules CANNOT offer any athletic financial aid — only academic/merit or need-based aid. Out-of-state tuition is $12,486/yr (2025, Tier-1 confirmed, sunywcc.edu). Westchester explicitly does not offer housing or meal plans of any kind — roomBoard is an off-campus NYC-metro (Westchester County) estimate, not a Tier-1 confirmed figure. With no athletic aid available, the realistic ceiling is the school's own merit scholarship (up to $3,000/yr) plus any need-based aid an international student can independently secure — a small fraction of the $24.5k/yr direct cost."
     },
     "confRecord": [
       {
@@ -7193,7 +7193,7 @@
       }
     ],
     "titles": [
-      "9-1-2 record, tied for 3rd/4th in Region 15 (2025)",
+      "9-1-2 record, T-3rd Region 15 Division III (2025)",
       "Valhalla, NY — Westchester County / NYC-metro location"
     ],
     "proPlayers": {
@@ -7218,14 +7218,14 @@
       "technical": 50,
       "fitness": 46
     },
-    "fitOlivier": 43,
+    "fitOlivier": 35,
     "lensScores": {
-      "overall": 43,
-      "soccer": 44,
+      "overall": 35,
+      "soccer": 47,
       "academic": 47,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 47
+      "value": 42
     },
     "tags": [
       "city"
@@ -7248,19 +7248,19 @@
       "sportsMed": "Standard JUCO athletic training staff; specifics not published on the official site.",
       "academicLabs": "Health and Human Performance A.S. coursework provides some Exercise Physiology/Sports Medicine-adjacent content, though not a dedicated Exercise Science major.",
       "extras": "Valhalla is in central Westchester County, roughly 25 miles from Manhattan.",
-      "note": "Westchester's standout feature is location — genuine NYC-metro access from Westchester County — paired with a solid 2025 regular-season record, but the complete absence of any on-campus housing is a real drawback for an international athlete with no local base."
+      "note": "Westchester's standout feature is location — genuine NYC-metro access from Westchester County — paired with a solid 2025 Division III regular-season record, but as a Division III program it cannot offer athletic scholarships, and the complete absence of any on-campus housing is a real drawback for an international athlete with no local base or independent funding."
     },
     "culture": {
       "vibe": "Westchester Community College sits in Valhalla, central Westchester County, roughly 25 miles from Manhattan — genuine NYC-metro access without being directly in the city. The 2025 program had a solid mid-table Region 15 record.",
       "thingsToDo": "Full Westchester County and NYC-metro access — Manhattan, affluent Westchester suburbs (White Plains, Scarsdale), and Hudson Valley recreation all within reach.",
       "socialScene": "No housing or meal plans at all means a fully commuter social scene — an international athlete would need a self-arranged off-campus living situation from day one.",
-      "olivierMatch": "★★ NYC-metro access is a genuine positive, but the complete absence of on-campus housing is a significant practical barrier for an international athlete arriving without a local network, and there is no dedicated Exercise Science degree.",
+      "olivierMatch": "★★ NYC-metro access is a genuine positive, but this is a Division III program with no athletic scholarship money available under NJCAA rules, combined with the complete absence of on-campus housing and no dedicated Exercise Science degree — a significant financial and practical barrier for an international athlete arriving without a local network or independent funding.",
       "lifestyleTags": "Major city access, no housing at all, cold winters"
     },
     "courses": [
       "A.S. Health and Human Performance"
     ],
-    "rec": "Westchester offers genuine NYC-metro access from Valhalla (Westchester County) and a solid 2025 regular-season record (9-1-2), but is the only school in this batch with zero housing or meal plan options of any kind — a real practical barrier for an international athlete. No dedicated Exercise Science degree is confirmed. Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
+    "rec": "Westchester offers genuine NYC-metro access from Valhalla (Westchester County) and a solid 2025 Division III regular-season record (9-1-2), but its DIII status (corrected 2026-08-11) means NJCAA rules forbid any athletic scholarship money here — only a small merit award (up to $3,000/yr) against a $24,486/yr direct cost, and this is the only school in this batch with zero housing or meal plan options of any kind. No dedicated Exercise Science degree is confirmed either. A financially difficult option for an international athlete without independent family funding. Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": false,
       "note": "RE-TESTED IN A REAL BROWSER 2026-08-06 (full JS render) — the missing positions are GENUINE, not a fetch artifact. The roster uses Sidearm player CARDS: 24 cards render, each containing a .sidearm-roster-player-position element, and ALL 24 of those elements are empty, while class year (Fr./So.) and hometown/high school are published normally. A player bio page was opened as well (miguel-diaz/1357) and it carries no position field either — the same dead-end as the stedwards precedent. The season selector confirms 2025 is the newest published season; no 2026 roster exists. Midfielders therefore cannot be counted and minutesOutlook stays unavailable. Re-check only if Westchester starts publishing positions."

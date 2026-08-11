@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.76 (2026-08-11) — Data correction: Suffolk CC, Nassau CC, Ulster CC, Westchester CC reclassified NJCAA DI → DIII
+
+**Major correction, not a new addition.** While auditing whether the DI Gap-Fill campaign's source spreadsheet was missing genuine DI schools (a Batch 6 side-investigation prompted by user questioning), checking NJCAA Region 15's own official site (region15athletics.com) surfaced a pre-existing data error: all four of the guide's Region 15 JUCOs — `suffolk_cc`, `nassau_cc`, `ulster_cc`, `westchester_cc` — have been stored as NJCAA Division I since the session that added them, but Region 15's own explicit three-tier divisional standings table shows exactly ONE Division I program in the entire region (Monroe University – New Rochelle, already correctly stored as DI). Every other Region 15 school, including all four of these, competes at **Division III**.
+
+This is not cosmetic. NJCAA Division III programs are forbidden from offering ANY athletic financial aid (academic/merit/need-based aid only) — a hard national rule confirmed independently, not a school-specific policy. That cascades into real scoring changes for all four schools, on top of the label fix:
+
+- `conf` / `soccerLevel` / `soccerLevelShort`: "NJCAA Division I" → "NJCAA Division III"
+- `fundingPathway`: `full` → `none` (adds a −8 Fit Score penalty, stacking with the −6 housing penalty all four already carried — all four already lack on-campus housing)
+- `fin.maxAthletic`: 0.5 → 0; `aid` / `fin.aidType` corrected to merit-only
+- `fitOlivier`: suffolk_cc 37→**29**, westchester_cc 43→**35**, nassau_cc 52→**44**, ulster_cc 43→**35**
+
+**Schools were NOT removed.** Their real on-field achievements (Suffolk's 2025 Region 15 Championship, Nassau's best regular-season record in the region, Ulster's tournament runner-up finish, Westchester's solid 9-1-2 season) all remain in the data — they're simply now correctly labeled as Division III results, and `rec` / `culture.olivierMatch` / `facilityDetails.note` / `fin.internationalNote` were rewritten to disclose the no-athletic-aid reality plainly rather than silently. Cascade: `conferences.json` (guideSchools[] + desc/olivierNote), `conf-prestige.json` (relevance), CLAUDE.md's School Reference Table (4 rows) and §6 state snapshot.
+
+**Methodology lesson, worth keeping:** this was found by checking Region 15's own conference site directly, not by trusting njcaa.org's `/div1/teams` or `/div3/teams` "Teams Stats" aggregator pages — those proved unreliable in *both* directions during the investigation that led here (Richard J. Daley College, a confirmed genuine DI school, appears on the DIII stats page from cross-division non-conference games it played; Kingsborough CC, a confirmed genuine DIII school, appears on the DI stats page the same way). **Never treat those aggregated stats-teams pages as a division-of-record source — go to the region's own official conference site instead.** No other already-shipped JUCO has been re-audited against this same risk yet; worth a systematic sweep in a future session.
+
+`validate_schools.py`: 0 errors. `validate_consistency.js`: **Issues: 0**. Local and would-be-live browser-verified: all 4 schools' cards/modals render the corrected division, funding, and fit score cleanly with no undefined/NaN; total card count held at 134 (no regression).
+
+---
+
 ### v44.75 (2026-08-11) — NJCAA DI gap-fill Batch 6: Coffeyville, Garden City, Seward County CC added (JUCO); Pratt CC excluded as NJCAA DII
 
 **Sixth batch of the NJCAA DI Gap-Fill campaign** (see the `njcaa_di_gap_fill_campaign` memory for the full plan) — three NJCAA DI Region 6 (Kansas) schools found missing from `juco.json` via the user-supplied spreadsheet cross-reference. 131 → 134 schools. Region 6 grows to five guide schools alongside Cowley CC and Barton CC.

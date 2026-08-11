@@ -12647,5 +12647,788 @@
       "lifestyle": 50,
       "value": 50
     }
+  },
+  {
+    "id": "coffeyville_cc",
+    "name": "Coffeyville CC",
+    "full": "Coffeyville Community College",
+    "loc": "Coffeyville, KS",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / KJCCC",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A veteran KJCCC program with a genuine high-water mark: Region VI runner-up in 2021 (25 pts, 8-1-1 conference, 18-3-1 overall, .841) under a prior coaching staff. Since head coach Steven Harrison's April 2023 arrival the program has settled into the middle of a strong six-team KJCCC DI table (5th of 6 in both 2024 and 2025, 11 pts each year), not the Elite tier the 2021 season alone would suggest. Classified Standard rather than Elite on the strength of the last two seasons, with the 2021 result noted as historical context. Verified via official kjccc.prestosports.com D1 standings (2021-2025).",
+    "njcaaRegion": "Region 6",
+    "njcaaRegionArea": "Kansas",
+    "profileDepth": "full",
+    "color": [
+      "#fecaca",
+      "#7f1d1d"
+    ],
+    "mapX": 293,
+    "mapY": 196,
+    "domain": "redravenathletics.com",
+    "url": "https://redravenathletics.com/sports/msoc/index",
+    "degreeTitle": "Athletic Training, Associate in Science",
+    "acuAlign": 3,
+    "acuAlignNote": "Coffeyville offers a genuine dedicated Athletic Training AS degree (64 credit hours, Tier-1: 2026-27 catalog, coffeyville.catalog.acalog.com) with real clinical content: BIOL 203 Anatomy and Physiology (a combined 5-credit-hour A&P course), BIOL 101 General Biology, CHEM 103 Principles of Chemistry I, HPER 165 Introduction to Athletic Training, HPER 270 Basic Prevention and Care of Athletic Injuries, HPER 299 Nutrition, and a genuine supervised clinical sequence (HPER 209/210 Practicum in Athletic Training I & II, 4 credit hours combined). Checked unit-by-unit against the real ACU_UNIT_META definitions (js/app.js): ANAT100 and BIOL125 map cleanly to BIOL 203 and BIOL 101 respectively, and the HPER 209/210 practicum sequence is a genuine clinical placement matching EXSC398's 'Internship/Clinical Practicum' definition. No dedicated Sport Psychology, Biomechanics, or Exercise Physiology course was found — PSYC 101/102 are general and developmental psychology, not sport-specific.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1885",
+    "prePT": "Excellent",
+    "prePTShort": "Excellent",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Coffeyville is a public community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 15496,
+      "tuition": 2400,
+      "roomBoard": 7396,
+      "fees": 5700,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Coffeyville's official 2026-27 International Student rate (Tier-1: coffeyville.edu/student-services/costs-fees) is $80/credit-hour tuition + $75/credit-hour mandatory fees + $70/credit-hour international fee = $225/credit-hour combined. At a 36-credit/year full-time basis (the college's own stated full-time load of 18 credit hours per semester), that is tuition $2,880 + fees $5,220 (rounded here to $2,400/$5,700 to reflect a more typical 30-credit/year course load many JUCO athletes actually carry) plus on-campus housing: Powell Hall (men's dorm), 2026-27 rate $7,396/yr including a 17-meal weekly plan and $100/semester Raven Roost credit. Direct billed cost: $15,496/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "5th KJCCC D1 (2-3-5)",
+        "note": "11 pts, 2-3-5 conference (.450), 7-6-6 overall (.526). The men's soccer program was separately named NJCAA Academic Team of the Year for 2025-26 (3.85 team GPA, #1 nationally). Verified via official kjccc.prestosports.com 2025-26 D1 standings."
+      },
+      {
+        "yr": 2024,
+        "pos": "T-5th KJCCC D1 (3-7-2)",
+        "note": "11 pts, 3-7-2 conference (.333), 4-10-5 overall (.342). Verified via official kjccc.prestosports.com 2024-25 D1 standings."
+      },
+      {
+        "yr": 2023,
+        "pos": "9th KJCCC/Region VI (3-7-2)",
+        "note": "11 pts, 3-7-2 conference (.333), 7-8-4 overall (.474), in a combined 14-team D1/D2 table. Verified via official kjccc.prestosports.com 2023-24 standings."
+      },
+      {
+        "yr": 2022,
+        "pos": "T-6th KJCCC/Region VI (5-5)",
+        "note": "15 pts, 5-5 conference (.500), 9-8-1 overall (.528), in a combined 11-team table. Verified via official kjccc.prestosports.com 2022-23 standings."
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd KJCCC/Region VI (8-1-1)",
+        "note": "25 pts, 8-1-1 conference (.850), 18-3-1 overall (.841) — runner-up behind an undefeated Cowley, the program's best season found in this research window, under the pre-Harrison coaching staff. Verified via official kjccc.prestosports.com 2021-22 standings."
+      }
+    ],
+    "titles": [
+      "NJCAA Academic Team of the Year 2025-26 (men's soccer, 3.85 team GPA — #1 nationally among NJCAA men's soccer programs; confirmed via official coffeyville.edu news release, July 30, 2026)",
+      "2021 KJCCC/Region VI runner-up (18-3-1, .841 — the program's strongest season found in this research window, pre-dating head coach Steven Harrison's 2023 arrival)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No MLS SuperDraft picks or confirmed NCAA D1 transfers found in this research window — cross-checked against TopDrawerSoccer's 2025/2026 D1 men's transfer trackers by school name with no match. The program's value proposition is its 2025-26 NJCAA Academic Team of the Year honour and head coach Steven Harrison's 15-year, five-program JUCO coaching résumé, not a documented pro/D1 pipeline."
+      ],
+      "draftRank": "JUCO — 2025-26 NJCAA Academic Team of the Year (men's soccer); no confirmed D1/pro pipeline found in this research window.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No alumni/next-level tracking page found on redravenathletics.com. Cross-checked TopDrawerSoccer's 2025 and 2026 NCAA D1 men's soccer transfer trackers by school name — no confirmed match. Neutral — NOT measured as a rate."
+      }
+    },
+    "devScores": {
+      "tactical": 54,
+      "technical": 50,
+      "fitness": 50
+    },
+    "devScoresNote": "Tier-1: head coach Steven Harrison (hired April 2023) has 15 years of junior-college head-coaching experience across five different programs — Neosho County CC (2005-07 assistant, then HC, 2x KJCCC conference titles, 2015 KJCCC Coach of the Year), Northeast Texas CC (3 seasons HC, three straight Region 14 tournament appearances), Crowder College (2 seasons, Region 16 final both years), and Central Wyoming College (2 seasons, HC of both men's and women's programs, program win-record seasons) before arriving at Coffeyville. A Fontbonne College (MO) alumnus and two-time all-conference player/team captain there, with a master's in media communications from Webster University. Assistant coach Francisco Neto rounds out the staff. Games are hosted at the shared, multi-sport Veterans Memorial Stadium (5,500-seat capacity, FieldTurf) — no dedicated soccer-only facility.",
+    "fitOlivier": 47,
+    "lensScores": {
+      "overall": 47,
+      "soccer": 48,
+      "academic": 31,
+      "minutes": 62,
+      "lifestyle": 0,
+      "value": 56
+    },
+    "tags": [
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Veterans Memorial Stadium — 5,500-seat capacity, FieldTurf, shared multi-sport venue",
+      "NJCAA Academic Team of the Year 2025-26 (men's soccer, 3.85 team GPA)",
+      "Dedicated Athletic Training AS degree with a supervised clinical practicum"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Veterans Memorial Stadium, 1610 Veterans Drive, Coffeyville — 5,500-seat capacity with FieldTurf, shared with football and track & field; official facilities page does not publish a soccer-specific capacity.",
+      "trainingFields": "Same Veterans Memorial Stadium complex, shared with football/track.",
+      "strengthConditioning": "Standard JUCO-level shared weight room; a $2.48M facilities project (2021, per contemporaneous local business-journal reporting) added a new weight room and training room to the River Bend Arena complex.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Genuine dedicated Athletic Training academic program (AS degree, real clinical practicum hours) gives the soccer program direct in-house sports-medicine training exposure beyond typical JUCO athletic-training support.",
+      "academicLabs": "Real Athletic Training coursework (Anatomy & Physiology, Prevention & Care of Athletic Injuries, two supervised practicum courses) — genuine classroom/clinical exposure relevant to the ACU pathway.",
+      "extras": "Coffeyville is a small southeast-Kansas city (pop. ~9,000) near the Oklahoma border. The men's soccer program was named the NJCAA's #1 academic team nationally for 2025-26.",
+      "note": "A genuinely dedicated Athletic Training degree with real clinical practicum hours is a standout academic strength for a JUCO of this size, paired with a veteran, well-travelled head coach; the trade-offs are a small, cold-winter southeast-Kansas town, a shared (not dedicated) stadium, and a program that has settled into mid-table KJCCC results since 2023 rather than the Elite tier its 2021 peak suggested.",
+      "housing": {
+        "available": true,
+        "note": "Two on-campus residence halls confirmed: Powell Hall (men's, opened 2015) and Walker Hall (women's, opened 2007), both official coffeyville.edu Residence Halls pages, 2026-27 rate $7,396/yr including a 17-meal weekly plan."
+      }
+    },
+    "culture": {
+      "vibe": "Coffeyville is a small southeast-Kansas city of roughly 9,000 people near the Oklahoma border — a genuinely small-town, rural setting. The men's soccer program recruits internationally (Japan, Costa Rica, the UK, Belgium, Denmark, Germany, Serbia, Spain, Brazil all represented on the 2026-27 roster) and was named the NJCAA's #1 academic team nationally in 2025-26, giving an incoming Australian a globally diverse, academically serious squad.",
+      "thingsToDo": "Limited on-campus social life given the small-town setting; Tulsa, OK is roughly 90 minutes south for a genuine city outlet, and Wichita, KS is about 2 hours north.",
+      "socialScene": "Two on-campus residence halls (Powell Hall for men, Walker Hall for women) give the program a genuine on-campus community, unlike several commuter JUCOs in this guide.",
+      "olivierMatch": "★★ Small, cold-winter, non-city Coffeyville is a real lifestyle mismatch for a warm-city-preferring Sydney athlete, but it offers on-campus housing, a veteran five-program head coach, and — genuinely unusual for a JUCO — the NJCAA's #1 academically-ranked men's soccer team in the country for 2025-26.",
+      "lifestyleTags": "Small-town, cold winters, international squad, strong academics, on-campus housing"
+    },
+    "courses": [
+      "BIOL 203 — Anatomy and Physiology",
+      "HPER 165 — Introduction to Athletic Training",
+      "HPER 270 — Basic Prevention and Care of Athletic Injuries",
+      "HPER 209/210 — Practicum in Athletic Training I & II"
+    ],
+    "rec": "Coffeyville Community College pairs a genuinely dedicated Athletic Training AS degree — real Anatomy & Physiology, injury-prevention coursework, and a supervised clinical practicum — with a veteran head coach in Steven Harrison, who brings 15 years of junior-college head-coaching experience across five different programs (Neosho County, Northeast Texas CC, Crowder, Central Wyoming) to Coffeyville since April 2023. The program has settled into mid-table KJCCC results since his arrival (5th of 6 in both 2024 and 2025) after a standout 2021 runner-up season under a prior staff, but was named the NJCAA's #1 academically-ranked men's soccer team nationally for 2025-26 — a genuinely rare distinction. On-campus housing (Powell Hall) is confirmed. The trade-off is a small, cold-winter southeast-Kansas town with a shared (not dedicated) stadium — a real lifestyle mismatch for a warm-city-preferring Sydney athlete.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Reo Suzuki (So·MID)",
+        "Alejandro Sevilla (So·MID)",
+        "Thomas Montero (So·MID)"
+      ],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [
+        "Herbie Hilliard (Fr·MID)",
+        "Rodrigo Irueste (Fr·MID)",
+        "Kuraudo Maejima (Fr·MID)",
+        "Henry Gonzalez (Fr·MID)",
+        "Joshua Mely (Fr·MID)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 55,
+          "label": "Rotational contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 72,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — of the 8 midfielders on the 2026-27 roster, 3 sophomores (Suzuki, Sevilla, Montero) clear before Olivier's August 2027 start; the other 5 (all true freshmen) return as sophomores in 2027-28, directly competing with Olivier in his Yr1. A larger returning-competitor group than several peer JUCOs, hence Medium rather than Low recruit risk. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "All 8 midfielders on the 2026-27 roster came directly from high school — zero JUCO/4-year transfers at the position, confirmed against the full 26-man roster (a handful of players at other positions list prior clubs, but none of the midfielders do)."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Genuine dedicated Athletic Training AS degree with a real supervised clinical practicum — one of the stronger direct sports-medicine pathways among this campaign's JUCOs."
+  },
+  {
+    "id": "garden_city_cc",
+    "name": "Garden City CC",
+    "full": "Garden City Community College",
+    "loc": "Garden City, KS",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / KJCCC",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "The Broncbusters' 2025 season was officially billed by the college itself as 'one of the most successful seasons in program history' — 11-6-4 overall, a Region VI Quarterfinal win over Dodge City (3-1), and five All-KJCCC/Region VI honorees (Jaden Grant, First Team; Yanis Aubaret, Thomas Mututala, Nicholas Muniz, and Ilian Badji, Second Team). Classified Standard rather than Elite: no confirmed 2025 NJCAA national ranking or postseason result beyond the Region VI Quarterfinal was found. The program's real historical peak — a 2008 team that finished 4th at the NJCAA DI National Tournament, ranked as high as #4 nationally — predates this dataset's 5-year window but directly shapes the program's present, since that team's own player, Oscar Zelaya, is now head coach. Verified via official gobroncbusters.com release (Nov 7, 2025) and kjccc.prestosports.com standings.",
+    "njcaaRegion": "Region 6",
+    "njcaaRegionArea": "Kansas",
+    "profileDepth": "full",
+    "color": [
+      "#fef3c7",
+      "#78350f"
+    ],
+    "mapX": 262,
+    "mapY": 184,
+    "domain": "gobroncbusters.com",
+    "url": "https://www.gobroncbusters.com/sports/msoc/index",
+    "degreeTitle": "Exercise Science, Associate in Science (EXSC.AS)",
+    "acuAlign": 1,
+    "acuAlignNote": "Garden City offers a genuine, formally-titled Exercise Science AS degree (60 credit hours minimum, Tier-1: 2026-27 catalog.gcccks.edu) with a real named 4-year articulation agreement — Garden City to Sterling University's Pre-Athletic Training program, leading to a Bachelor's and Master's in Athletic Training. Checked unit-by-unit against the real ACU_UNIT_META definitions (js/app.js): the degree's REQUIRED core (HPER 109 First Aid, HPER 281 Intro to Exercise Science, HPER 106 Health Education, HPER 211 Prevention and Care of Athletic Injuries, HPER 115 Basic Nutrition) does not map cleanly to any of the 16 narrow ACU units on its own — HPER 281 is a broad multi-topic survey, not a dedicated exercise-physiology course, so it was deliberately NOT counted (same conservative standard applied throughout this batch). ANAT100 is counted via BIOL 211/212 Anatomy and Physiology I & II, which are PROGRAM ELECTIVES (not required core) but are the clear, standard choice for any student actually following the named Sterling articulation. BIOL125 was not separately counted (same course used for ANAT100, following the Hill College precedent of not double-counting one A&P sequence against two units).",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1919",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Garden City is a public community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 12000,
+      "tuition": 3240,
+      "roomBoard": 6600,
+      "fees": 2160,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Garden City's official 2026-27 International Student rate (Tier-1: gcccks.edu/paying-for-college/tuition-fees.html) is $108/credit-hour tuition + $72/credit-hour fees = $180/credit-hour combined. At a 30-credit/year full-time basis, that is tuition $3,240 + fees $2,160. GCCC's own housing page (gcccks.edu/student_life/residential_life.aspx) does not publish current room & board rates without a student login — the $6,600/yr figure used here is the college's own most recently PUBLICLY reported room & board figure (2023-24, via IPEDS/CollegeFactual), used as a floor rather than an invented current number; the true 2026-27 rate is likely somewhat higher. Direct billed cost: $12,000/yr (partly estimated — see note), genuinely one of the cheapest in this batch. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "4th KJCCC D1 (3-5-2)",
+        "note": "11 pts, 3-5-2 conference (.400), 11-6-4 overall (.619) — officially billed by the college as 'one of the most successful seasons in program history.' Advanced to the Region VI Quarterfinals, beating Dodge City 3-1, before a narrow loss at Cowley in the season finale. Five players earned All-KJCCC/Region VI honors. Verified via official gobroncbusters.com release (Nov 7, 2025) and kjccc.prestosports.com 2025-26 D1 standings."
+      },
+      {
+        "yr": 2024,
+        "pos": "7th KJCCC D1 (2-8-2)",
+        "note": "8 pts, 2-8-2 conference (.250), 7-8-3 overall (.472), last of 7. Verified via official kjccc.prestosports.com 2024-25 D1 standings."
+      },
+      {
+        "yr": 2023,
+        "pos": "11th KJCCC/Region VI (1-8-3)",
+        "note": "6 pts, 1-8-3 conference (.208), 8-8-5 overall (.500), in a combined 14-team table. Verified via official kjccc.prestosports.com 2023-24 standings."
+      },
+      {
+        "yr": 2022,
+        "pos": "T-10th KJCCC/Region VI (2-8)",
+        "note": "6 pts, 2-8 conference (.200), 7-13 overall (.350), in a combined 11-team table. Verified via official kjccc.prestosports.com 2022-23 standings."
+      },
+      {
+        "yr": 2021,
+        "pos": "9th KJCCC/Region VI (2-7-1)",
+        "note": "7 pts, 2-7-1 conference (.250), 8-9-1 overall (.472), in a combined 11-team table. Verified via official kjccc.prestosports.com 2021-22 standings."
+      }
+    ],
+    "titles": [
+      "2025 Region VI Quarterfinalist — 'historic' 11-6-4 season per the college's own official release, five All-KJCCC/Region VI honorees (1 First Team, 4 Second Team)",
+      "2008 team finished 4th at the NJCAA DI National Tournament (Region VI champions, ranked as high as #4 nationally) — the program's high-water mark, and the season that produced its current head coach as a player"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No MLS SuperDraft picks or confirmed NCAA D1 transfers found in this research window — cross-checked against TopDrawerSoccer's 2025/2026 D1 men's transfer trackers by school name with no match. Head coach Oscar Zelaya's own playing pathway (Garden City to NCAA D2 Rogers State, then a multi-league pro career) is the clearest documented next-level pipeline example, though as an alumnus rather than a current-era transfer."
+      ],
+      "draftRank": "JUCO — no confirmed current-era D1/pro pipeline in this research window; head coach is a program alumnus who went on to NCAA D2 and a professional playing career.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No alumni/next-level tracking page found on gobroncbusters.com. Cross-checked TopDrawerSoccer's 2025 and 2026 NCAA D1 men's soccer transfer trackers by school name — no confirmed match. Neutral — NOT measured as a rate."
+      }
+    },
+    "devScores": {
+      "tactical": 60,
+      "technical": 56,
+      "fitness": 54
+    },
+    "devScoresNote": "Tier-1: head coach Oscar Zelaya is a genuine program alumnus — First Team All-KJCCC (2008) as a defender on Garden City's own #4-nationally-ranked NJCAA DI National Tournament team — who went on to two seasons at NCAA D2 Rogers State, a professional career (Southern Premier Soccer League OK, Premier Development League MO, Semi-Pro Indoor League), a Sport Management degree from Rogers State, and an NSCAA diploma, before a 7-year head-coaching stint at Dodge City CC (61-38-12, KJCCC West Coach of the Year 2019, an NJCAA top-20 ranking) prior to returning to Garden City as head coach in March 2024 — a genuine 'returning to complete unfinished business' story per the official hiring release. Assistant coach Yahir Camacho rounds out the staff. Games are hosted at the shared, multi-sport Broncbuster Stadium (official facilities page does not publish seating capacity).",
+    "fitOlivier": 51,
+    "lensScores": {
+      "overall": 51,
+      "soccer": 52,
+      "academic": 20,
+      "minutes": 71,
+      "lifestyle": 0,
+      "value": 61
+    },
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Broncbuster Stadium — shared multi-sport venue (football, soccer, track & field)",
+      "Dennis Perryman Athletic Complex — two weight rooms, dedicated training room",
+      "Exercise Science AS with a named Sterling University Pre-Athletic Training articulation"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Broncbuster Stadium, east of the GCCC campus off Campus Drive — shared with football and track & field; official facilities page does not publish a fixed seating capacity.",
+      "trainingFields": "Same Broncbuster Stadium complex, shared with football/track.",
+      "strengthConditioning": "Dennis Perryman Athletic Complex (DPAC) — houses the athletic department, coaches' offices, locker rooms, Conestoga Arena (volleyball/basketball), two dedicated weight rooms, and a training room.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training support via the DPAC training room; the college's own Sports Medicine Department separately offers clinical-shadowing opportunities for Exercise Science/pre-health students.",
+      "academicLabs": "Genuine Exercise Science AS coursework (human physiology, biomechanics, nutrition, fitness assessment) taught in classes averaging ~12 students, with lab tools for fitness/health-risk assessment; a named Sterling University Pre-Athletic Training articulation for students continuing to a Bachelor's/Master's.",
+      "extras": "Garden City is a small city (~27,000) in southwest Kansas, home to a large beef-packing industry and a genuinely diverse immigrant community — one of the more demographically international small towns in this guide's Kansas cluster.",
+      "note": "A genuine program-alumnus head coach with a strong personal playing and coaching pedigree, a real Exercise Science degree with a named 4-year Athletic Training pipeline, and a 'historic' 2025 season are real strengths; the trade-offs are a small, cold-winter southwest-Kansas setting, a shared (not dedicated) stadium, and an unpublished current room & board rate.",
+      "housing": {
+        "available": true,
+        "note": "Five on-campus residence halls confirmed (494 students housed on-campus per the official Residential Life StarRez portal), with wireless internet, AC/heat, free laundry, and live-in RA staff in every hall. Current room & board pricing is not published without a student login — see fin.internationalNote."
+      }
+    },
+    "culture": {
+      "vibe": "Garden City is a small southwest-Kansas city (~27,000) built around a major beef-processing industry, with a genuinely large and diverse immigrant community — one of the more demographically international small towns in Kansas. The 2025-26 men's soccer roster is heavily international (Brazil, France, Colombia, Spain, Jamaica, Trinidad & Tobago, Uruguay, Portugal, Argentina, Chile, Mexico, South Africa, Serbia, Germany, Nigeria all represented), so an Australian would join an already globally diverse squad.",
+      "thingsToDo": "Rural southwest Kansas — limited urban amenities on-site; Wichita is roughly 3.5 hours away, Denver about 4.5 hours. Social life centres on the five on-campus residence halls (494 students) and campus activities.",
+      "socialScene": "494 students live across five on-campus residence halls with resident assistants and regular Residence Life-hosted events — a genuine on-campus community for a rural JUCO.",
+      "olivierMatch": "★★ Rural, cold-winter, non-city Garden City is a real lifestyle mismatch for a warm-city-preferring Sydney athlete, but it trades that off against a program-alumnus head coach with a genuinely strong personal playing/coaching pedigree, a 'historic' 2025 season, and confirmed on-campus housing across five residence halls.",
+      "lifestyleTags": "Rural, cold winters, international squad, strong coaching, on-campus housing"
+    },
+    "courses": [
+      "HPER 281 — Introduction to Exercise Science",
+      "HPER 211 — Prevention and Care of Athletic Injuries",
+      "BIOL 211/212 — Anatomy and Physiology I & II (Sterling University Pre-Athletic Training elective)",
+      "HPER 115 — Basic Nutrition"
+    ],
+    "rec": "Garden City Community College's standout asset is head coach Oscar Zelaya — a genuine program alumnus who played on the school's own #4-nationally-ranked 2008 NJCAA DI National Tournament team, went on to NCAA D2 and a professional playing career, then spent 7 years as Dodge City CC's head coach (61-38-12, KJCCC West Coach of the Year 2019) before returning to Garden City in March 2024. Under him, 2025 was officially billed as 'one of the most successful seasons in program history' (11-6-4, Region VI Quarterfinalist, five All-Conference honorees). The Exercise Science AS degree carries a genuine named articulation to Sterling University's Bachelor's/Master's Athletic Training program. On-campus housing is confirmed across five residence halls (494 students). The trade-off is a small, cold-winter southwest-Kansas setting and a shared (not dedicated) stadium — a real lifestyle mismatch for a warm-city-preferring Sydney athlete.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 8,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Tyrese Douglas (So·MF)",
+        "Nicolas Muniz (So·MF)",
+        "Jose Navarro (Fr·MF)",
+        "Benjamin Martinez (Fr·MF)",
+        "Samuel Murcia (Fr·MF)",
+        "Francisco Siguenza (Fr·MF)",
+        "Hugo Gomez (Fr·MF)",
+        "Dakalo Tshinyani (Fr·MF)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 65,
+          "label": "Likely starter — clean slate"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 80,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — GCCC's 2026-27 roster page is live but genuinely unpublished at time of research (mid-August, pre-season), so the most recently POPULATED roster (2025-26) is used per this guide's standard practice. All 8 of that roster's midfielders (2 sophomores, 6 true freshmen) complete their 2-year NJCAA eligibility by the end of the 2026-27 season, before Olivier's August 2027 start — zero roster overlap, the same pattern documented at Dodge City CC in this guide. The unknown is the incoming Fall 2026 recruiting class, not yet published. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "6 of the 8 midfielders on the 2025-26 roster (all but the two sophomores) came directly from high school — no JUCO/4-year transfers at the position, confirmed against the full 30-man roster."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Genuine Exercise Science AS with a named 4-year Bachelor's/Master's Athletic Training articulation (Sterling University) — a real, if not fully required-core, pre-health pathway."
+  },
+  {
+    "id": "seward_county_cc",
+    "name": "Seward County CC",
+    "full": "Seward County Community College",
+    "loc": "Liberal, KS",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / KJCCC",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "One of the youngest programs in this campaign — founded by trustee vote in 2022, launched competition in fall 2023 under founding head coach Jaime Beltran. A genuine early trajectory: first-ever program playoff berth in the inaugural 2023 season (8-8-3), then a promising 4th-place, above-.500 2024 season (8-6-5), before a sharp 2025 decline to a winless conference record (0-9-1, last place) and a first-round Region VI Tournament exit to top-seed Cowley. Classified Standard on the strength of the program's real 'firsts' (first playoff berth, first-ever 4-year signee) and Beltran's deep coaching pedigree, despite the 2025 on-field decline. Verified via official kjccc.prestosports.com standings (2023-2025) and head coach Jaime Beltran's official sewardsaints.com bio.",
+    "njcaaRegion": "Region 6",
+    "njcaaRegionArea": "Kansas",
+    "profileDepth": "full",
+    "color": [
+      "#d1fae5",
+      "#065f46"
+    ],
+    "mapX": 262,
+    "mapY": 198,
+    "domain": "sewardsaints.com",
+    "url": "https://sewardsaints.com/sports/msoc/index",
+    "degreeTitle": "Associate of Science in Physical Education",
+    "acuAlign": 2,
+    "acuAlignNote": "Seward County's AS in Physical Education (60 credit hours, Tier-1: catalog.sccc.edu 2026-27 program page) requires real science coursework as CORE, not elective: BI1305 Principles of Biology (5 credit hours, part of the general-education Natural & Physical Sciences requirement in the recommended sequence) and BI2115 Anatomy & Physiology (5 credit hours, required core in the 4th semester). Checked unit-by-unit against the real ACU_UNIT_META definitions (js/app.js): ANAT100 maps cleanly to BI2115, and BIOL125 to BI1305 — both genuinely required, not elective, a stronger footing than several peer schools in this batch. PE1503 'Concepts of Exercise Science' (also required core) was deliberately NOT counted toward EXSC225 'Physiological Bases of Exercise' — it is a broad multi-topic intro survey, not a dedicated exercise-physiology course, the same conservative standard applied to every school in this batch. No dedicated Sport Psychology, Biomechanics, or Resistance Training course was found; BA2013 'Practicum in Sports Management' is a business/administration practicum, not a clinical exercise-science placement, so it was not counted toward EXSC398.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1787",
+    "prePT": "Strong",
+    "prePTShort": "Strong",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Seward County is a public community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 15440,
+      "tuition": 4020,
+      "roomBoard": 8000,
+      "fees": 3420,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Seward County's official 2026-27 International Student rate (Tier-1: catalog.sccc.edu/tuition-and-fees) is $134/credit-hour tuition + $114/credit-hour fees = $248/credit-hour combined — treated identically to out-of-state, with no separate (higher) international surcharge, unlike most peer KJCCC schools. At a 30-credit/year full-time basis, that is tuition $4,020 + fees $3,420, plus on-campus housing: the Student Living Center, 2026-27 double-occupancy rate $3,500/yr room + $4,500/yr for the required 19-meal weekly plan = $8,000/yr (Tier-1: sccc.edu/student-life/student-housing/residence-halls/). Direct billed cost: $15,440/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 40-60% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "6th KJCCC D1 (0-9-1)",
+        "note": "1 pt, 0-9-1 conference (.050), 5-11-1 overall (.324), last of 6. Lost in the first round of the 2025 NJCAA DI Plains District/Region VI Tournament to top-seed Cowley. Verified via official kjccc.prestosports.com 2025-26 D1 standings and sewardsaints.com 2025-26 schedule/results."
+      },
+      {
+        "yr": 2024,
+        "pos": "4th KJCCC D1 (3-4-5)",
+        "note": "14 pts, 3-4-5 conference (.458), 8-6-5 overall (.553) — an above-.500 second season for the young program. Verified via official kjccc.prestosports.com 2024-25 D1 standings."
+      },
+      {
+        "yr": 2023,
+        "pos": "8th KJCCC/Region VI (3-7-2)",
+        "note": "11 pts, 3-7-2 conference (.333), 8-8-3 overall (.500), in a combined 14-team table — the program's inaugural season, including its first-ever playoff berth in the Region VI Tournament. Verified via official kjccc.prestosports.com 2023-24 standings and head coach Jaime Beltran's official sewardsaints.com bio."
+      }
+    ],
+    "titles": [
+      "First-ever program playoff berth, inaugural 2023 season (8-8-3)",
+      "Men's soccer named an NJCAA Academic Team of the Year for 2025-26 (55 Seward student-athletes and 8 teams earned NJCAA All-Academic recognition; 4 men's soccer players — Renan Maestri, Zak McGall, Jevic Mwanza, Felipe Souza Lima — earned individual 4.0 GPA NJCAA First-Team All-Academic honors)",
+      "Santiago Gonzalez-Uribe — the program's first-ever four-year college signee (Shorter University, NCAA D2), per head coach Jaime Beltran's official bio"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Santiago Gonzalez-Uribe transferred from Seward County to NCAA D2 Shorter University (Rome, GA) — the program's first-ever four-year college signee, confirmed on head coach Jaime Beltran's official sewardsaints.com bio. No MLS SuperDraft picks confirmed in the last 5 years; cross-checked TopDrawerSoccer's 2025/2026 D1 men's transfer trackers by school name with no additional match beyond Gonzalez-Uribe."
+      ],
+      "draftRank": "JUCO — one confirmed NCAA D2 transfer (Santiago Gonzalez-Uribe, Shorter University), the program's first-ever four-year signee; primary value is the program's rapid 3-year buildup and 2025-26 NJCAA Academic Team of the Year honour, not a deep pro pipeline.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on sewardsaints.com. One confirmed transfer (Santiago Gonzalez-Uribe to NCAA D2 Shorter University) found via head coach Jaime Beltran's own bio, not an exhaustive tracker — deliberately NOT stored as a measured per-year rate for a 3-year-old program. Neutral — NOT measured as a rate; see notable[] for the confirmed name."
+      }
+    },
+    "devScores": {
+      "tactical": 50,
+      "technical": 48,
+      "fitness": 48
+    },
+    "devScoresNote": "Tier-1: founding head coach Jaime Beltran (hired 2022, program launched fall 2023) brings a genuinely deep ~20-year coaching résumé spanning five programs before Seward — State Fair CC MO (6 seasons, both men's and women's, multiple Region 16 Tournament semifinal runs), Jarvis Christian College TX (2016), Ranger College TX (2011-16, led the men's program to its first-ever Region 5 Championship and NJCAA DI National Tournament appearance in 2013, NJCAA Region 5 Coach of the Year 2013-14), and NAIA University of the Southwest NM (2008-10). Holds a USSF National Coaching License and a Psychology degree from Mars Hill College (1997). A well-staffed program for a 3-year-old JUCO: assistant John Avalos, volunteer assistant Manuel Ortuno, and a team manager. Home games are played at Redskin Field, a shared, off-campus Liberal High School facility — the program does not yet have its own on-campus venue.",
+    "fitOlivier": 46,
+    "lensScores": {
+      "overall": 46,
+      "soccer": 47,
+      "academic": 26,
+      "minutes": 62,
+      "lifestyle": 0,
+      "value": 56
+    },
+    "tags": [
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "NJCAA Academic Team of the Year 2025-26 (men's soccer)",
+      "Founding head coach with a 2013 NJCAA DI Region 5 Championship on his résumé (Ranger College)",
+      "Genuine required Anatomy & Physiology + General Biology coursework in the AS Physical Education degree"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "Redskin Field at Liberal High School — a shared, off-campus venue; the program (founded 2023) does not yet have a dedicated on-campus soccer stadium.",
+      "trainingFields": "Shared with Liberal High School at Redskin Field; no dedicated on-campus training pitch confirmed.",
+      "strengthConditioning": "Students have free access to the campus Wellness Center and Aquatic Center as part of Residence Life amenities; no soccer-dedicated strength facility confirmed.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Standard JUCO athletic training support; specifics not published on the official site.",
+      "academicLabs": "Genuine required Anatomy & Physiology (BI2115) and General Biology (BI1305) coursework within the AS Physical Education degree gives real classroom exposure relevant to the ACU pathway.",
+      "extras": "Liberal is a small southwest-Kansas city (~20,000) near the Oklahoma panhandle. The men's soccer program is only 3 years old (launched fall 2023) but was already named an NJCAA Academic Team of the Year for 2025-26.",
+      "note": "A deeply experienced founding head coach and a genuinely required (not elective) Anatomy & Physiology sequence are real strengths for a still-young program; the trade-offs are a shared off-campus home venue, a steep on-field decline in 2025 (winless in conference), and a small, cold-winter southwest-Kansas setting.",
+      "housing": {
+        "available": true,
+        "note": "Three on-campus coed residence halls confirmed (Student Living Center, Mansions, Hale Court — up to 250 students total), each including a required 19-meal weekly plan. 2026-27 double-occupancy rate: $3,500/yr room + $4,500/yr meal plan (Tier-1: sccc.edu/student-life/student-housing/residence-halls/)."
+      }
+    },
+    "culture": {
+      "vibe": "Liberal is a small southwest-Kansas city (~20,000) near the Oklahoma panhandle. The men's soccer program is genuinely young (launched fall 2023) but has already built one of the largest rosters in this guide (44 players, 20 midfielders on the 2025-26 roster) with a heavily international squad — Brazil, Costa Rica, Italy, the UK, Australia, South Africa, the Dominican Republic, Ecuador, Colombia and Bolivia are all represented, including a genuine Australian teammate (Jevic Mwanza, Melbourne).",
+      "thingsToDo": "Rural southwest Kansas — limited urban amenities on-site; Wichita is roughly 3 hours away, Oklahoma City about 3.5 hours. Social life centres on the three on-campus residence halls (up to 250 students) and campus activities including the Wellness Center and Aquatic Center.",
+      "socialScene": "Up to 250 students live across three on-campus coed residence halls with a required 19-meal weekly plan — a genuine on-campus community for a rural JUCO, plus free access to the shared campus Wellness Center and Aquatic Center.",
+      "olivierMatch": "★★ Rural, cold-winter, non-city Liberal is a real lifestyle mismatch for a warm-city-preferring Sydney athlete, but there is already a genuine Australian teammate on the current roster (Jevic Mwanza, Melbourne), a deeply experienced founding head coach, confirmed on-campus housing, and a real academic honour (2025-26 NJCAA Academic Team of the Year) to offset a rough on-field 2025.",
+      "lifestyleTags": "Rural, cold winters, international squad (incl. an Australian teammate), young program, on-campus housing"
+    },
+    "courses": [
+      "BI2115 — Anatomy & Physiology",
+      "BI1305 — Principles of Biology",
+      "PE2613 — Care & Prevention of Athletic Injuries",
+      "PE1503 — Concepts of Exercise Science"
+    ],
+    "rec": "Seward County Community College is one of the youngest programs in this campaign (launched fall 2023) but is being built by a genuinely elite coaching résumé: founding head coach Jaime Beltran holds a USSF National Coaching License and led Ranger College to its first-ever NJCAA DI Region 5 Championship and National Tournament appearance in 2013, across a ~20-year, five-program career. The program's own early trajectory shows real promise — a first-ever playoff berth in 2023, an above-.500 2024 season — before a sharp 2025 decline (winless in conference). The AS Physical Education degree requires genuine Anatomy & Physiology and General Biology coursework as CORE, not elective, and men's soccer was named an NJCAA Academic Team of the Year for 2025-26. On-campus housing is confirmed across three residence halls, and the current roster already includes an Australian teammate (Jevic Mwanza, Melbourne). The trade-offs are a shared, off-campus home venue and a small, cold-winter southwest-Kansas setting — a real lifestyle mismatch for a warm-city-preferring Sydney athlete, offset somewhat by having a fellow Australian already on the squad.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 20,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 20,
+      "cleared_names": [
+        "Luiz Henrique Moraes Pereira (So·MID)",
+        "Diego Arita (So·MID)",
+        "Fernando Moura Filho (So·MID)",
+        "Renan Maestri (So·MID)",
+        "Simone Pitale (So·MID)",
+        "Msafiri Ebunga (RFr·MID)",
+        "Melvin Soto (Fr·MID)",
+        "Mickael Dualibi Haddad (Fr·MID)",
+        "Ivan Guerrero (Fr·MID)",
+        "Alejandro Novoa (Fr·MID)",
+        "Ryu Ramirez (Fr·MID)",
+        "Jose Alvarado (Fr·MID)",
+        "Nicola Ricciuti (Fr·MID)",
+        "Bernardo Moreira (Fr·MID)",
+        "Alessandro Gotelli (Fr·MID)",
+        "Edward Ramirez Rodriguez (Fr·MID)",
+        "Alexander Caudillo (Fr·MID)",
+        "Martin Dunn (Fr·MID)",
+        "Giezi Gonzales (Fr·MID)",
+        "Kevin Ramos (Fr·MID)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 55,
+          "label": "Rotational contributor"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 72,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "JUCO 2-year program — Seward's 2026-27 roster page is live but genuinely unpublished at time of research (mid-August, pre-season), so the most recently POPULATED roster (2025-26) is used per this guide's standard practice. All 20 of that roster's midfielders complete their NJCAA eligibility by the end of the 2026-27 season, before Olivier's August 2027 start — zero direct roster overlap. However, this is by far the largest midfield pool in the guide (20 of a 44-man roster), signalling the program recruits unusually large classes — the unknown incoming Fall 2026 class could be similarly deep, so Yr1 opportunity is graded Medium rather than Low despite the clean slate. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "14 of the 20 midfielders on the 2025-26 roster were true freshmen with no prior college listed — a clean freshman-entry signal, though the program's overall roster size (44 players) suggests genuinely intense internal competition for minutes regardless of entry pathway."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "AS Physical Education with genuinely REQUIRED (not elective) Anatomy & Physiology and General Biology coursework — a solid, if not dedicated Exercise Science-titled, pre-health foundation."
   }
 ]

@@ -11456,5 +11456,1196 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "Health, PE & Kinesiology, A.S. — named transfer pathway; specific coursework not independently verified this session (campaign's most conservative ACU score)"
+  },
+  {
+    "id": "truman_college",
+    "name": "Harry S. Truman College",
+    "full": "Harry S. Truman College (Falcons)",
+    "loc": "Chicago, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
+    "confKey": "other",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "The standout program of this batch and one of the strongest small-program results found anywhere in this campaign: NJCAA Region 4 Division I Champion for THREE CONSECUTIVE SEASONS (2023, 2024, 2025), confirmed via an official City Colleges of Chicago (CCC) press release dated December 10, 2025. Head coach Maciej Orlowski was named NJCAA Region 4 Division I Coach of the Year in each of those three years running. Michael Makonese was named 2025 Region 4 Division I Player of the Year; Makonese and Nils Stodulka were both NJCAA Division I All-American nominees, with Makonese, Eduardo Ferragut, Stodulka and Oliver Bewell all named to the 2025 All-Region team. 2025-26 record 17-2-1 overall (.875) — by far the best record of any school in this batch. Verified via colleges.ccc.edu (Tier-1 institutional press release) and region4sports.com (the official NJCAA Region 4 results site).",
+    "njcaaRegion": "Region 4",
+    "njcaaRegionArea": "Illinois (Chicago)",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "mapX": 421,
+    "mapY": 148,
+    "domain": "ccc.edu",
+    "url": "https://www.region4sports.com/sports/msoc/2025-26/teams/harrystrumancollege",
+    "degreeTitle": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science program at this campus",
+    "acuAlign": 1,
+    "acuAlignNote": "Harry S. Truman College is a City Colleges of Chicago (CCC) campus with NO dedicated exercise-science/kinesiology program of its own — CCC's real Exercise Sci and Sports Studies (ESSS) department, confirmed via the official district-wide academic catalog (catalog.ccc.edu/courses-az/esss/), is offered exclusively \"At: MX\" (Malcolm X College), CCC's designated Center of Excellence for Health Sciences. Truman's own A.A. Liberal Arts transfer degree requires one Life Sciences course (per catalog.ccc.edu's Associate in Arts natural-science requirement), which covers BIOL125 generically. Because CCC is a single seven-college district — one shared academic catalog, one student portal (my.ccc.edu), one unified application and tuition schedule regardless of physical campus — a Truman-enrolled student can in principle cross-register into Malcolm X's Personal Fitness Trainer coursework, but that requires commuting across the city to a different campus and was not something this guide could verify as a routine, low-friction path; scored at the conservative floor a home-campus program alone supports. Full WES evaluation and advisor confirmation required regardless.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 4 (Illinois, City Colleges of Chicago)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 5186,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "City Colleges of Chicago is a public Illinois community college district with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "tuition": 12912,
+      "roomBoard": 10000,
+      "fees": 0,
+      "costNum": 22912,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "City Colleges of Chicago (CCC) is a single seven-college district with one unified tuition schedule — every campus charges the same rate. Official FY27 (2026-27) international per-credit-hour rate: $538 (ccc.edu/departments/tuition-and-fees/), applied at the 24-credit/year minimum full-time load CCC's own International Student Admission Application requires of F-1 visa students (\"minimum of 12 semester hours per term\"): $538 x 24 = $12,912/yr tuition, no separate mandatory fee line found beyond the per-credit rate. Room & Board uses CCC's own official international-student \"Estimated Budget\" living-expense allowance ($10,000/yr) from the same International Student Admission Application PDF — CCC operates NO on-campus housing at any of its seven colleges (the same document states outright \"the college...cannot arrange housing for international students\"), so this is the standard convention of using the school's own COA living-expense line in place of a dorm bill. Note the PDF's own tuition figure ($481/credit) is visibly dated (roughly 2 budget cycles stale against the current $538 rate), so the living-expense line may itself be a modest floor — flagged, not corrected, per the never-guess rule. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 25-40% package given CCC's own explicit disclosure that \"City Colleges of Chicago does not offer scholarships or any other form of financial assistance\" district-wide — any athletic aid here flows through the team/coach relationship, not a college scholarship office."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Region 4 DI Champion (3rd consecutive title)",
+        "note": "17-2-1 overall (.875), 11-1-1 in Region play. Head coach Maciej Orlowski named Region 4 DI Coach of the Year for the third consecutive year; Michael Makonese named Region 4 DI Player of the Year. Season began Aug 23, 2025 and reached the NJCAA District Quarterfinals (Iowa) on Nov 6, losing 4-1 to Iowa Western CC. Verified via colleges.ccc.edu official press release and region4sports.com."
+      },
+      {
+        "yr": 2024,
+        "pos": "Region 4 DI Champion (2nd consecutive title)",
+        "note": "9-5-4 overall (.611), 9-2-3 in Region play (.750). Verified via region4sports.com official standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "Region 4 DI Champion",
+        "note": "7-3-3 overall (.654), 6-2-3 in Region play (.682) — the first of the three-peat. Verified via region4sports.com official standings archive."
+      }
+    ],
+    "titles": [
+      "NJCAA Region 4 Division I Champion — 2023, 2024, 2025 (three consecutive titles)",
+      "Maciej Orlowski — NJCAA Region 4 Division I Coach of the Year, 2023, 2024, 2025 (three consecutive)",
+      "Michael Makonese — 2025 NJCAA Region 4 Division I Player of the Year, NJCAA DI All-American nominee",
+      "Nils Stodulka — 2025 NJCAA DI All-American nominee, All-Region",
+      "Eduardo Ferragut, Oliver Bewell — 2025 NJCAA Region 4 All-Region Team"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Michael Makonese — 2025 Region 4 DI Player of the Year, NJCAA DI All-American nominee (9g/14a in 2025-26)",
+        "Nils Stodulka — 2025 NJCAA DI All-American nominee, All-Region (8g/10a, team-high 6 game-winners)",
+        "Eduardo Ferragut, Oliver Bewell — 2025 Region 4 All-Region Team selections"
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; the program's real strength is a three-year run of NJCAA Region 4 postseason dominance rather than a documented D1-transfer pipeline. No dedicated alumni/next-level tracking page was found (see nextLevel note).",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found for Harry S. Truman College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Harry S. Truman College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 50,
+      "fitness": 48
+    },
+    "devScoresNote": "Evidence is coaching-CV and program-continuity based rather than facility-based, since citycollegesofchicagoathletics.com (the primary source for staff/facility detail) is entirely dead. Head coach Maciej Orlowski's three-consecutive-year Coach of the Year run (confirmed via colleges.ccc.edu) is genuine evidence of a stable, high-functioning coaching system — reflected in `tactical`. No confirmed dedicated soccer-specific facility, sports-science staff or S&C program was found for `technical`/`fitness` — scored at the modest end consistent with a community-college program with real Home Attendance records (493 total, avg 38/game per region4sports.com) but no verified dedicated venue or strength/conditioning department. This is a program whose quality shows up in sustained results and coaching continuity, not in confirmed infrastructure — do not inflate technical/fitness on the strength of the results alone (per Sec 5a's Northeast CC precedent).",
+    "tags": [
+      "city"
+    ],
+    "facilities": [
+      "NJCAA Region 4 DI Champion three years running (2023-2025)",
+      "Real recorded home attendance (avg 38/game, 2025-26) — no confirmed dedicated stadium name",
+      "Chicago Uptown campus, major-city location"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": false,
+        "note": "City Colleges of Chicago operates NO on-campus housing at any of its seven colleges — confirmed via the official CCC International Student Admission Application, which states plainly that the college \"does not offer scholarships or any other form of financial assistance, nor can the college arrange housing for international students.\" All seven CCC colleges (Truman, Daley, Malcolm X, Kennedy-King, Wright, Harold Washington, Olive-Harvey) are fully commuter campuses."
+      },
+      "stadium": "No dedicated soccer stadium confirmed. The team records real home attendance (region4sports.com: 493 total / 38 avg in 2025-26), implying a consistent home venue, but its name/location could not be independently confirmed once citycollegesofchicagoathletics.com went offline.",
+      "trainingFields": "Not confirmed — no facilities page survives from the dead primary athletics domain.",
+      "strengthConditioning": "Not confirmed.",
+      "sportsScience": "Not confirmed.",
+      "sportsMed": "Not confirmed.",
+      "academicLabs": "No dedicated exercise-science lab at this campus (see acuAlignNote) — CCC's Health Sciences Center of Excellence is at Malcolm X College.",
+      "extras": "Uptown Chicago campus (1145 W Wilson Ave), a short walk/train ride from Lake Michigan and downtown Chicago.",
+      "note": "Facilities detail is genuinely thin because the primary source (citycollegesofchicagoathletics.com) is dead — but the program's on-field results (three-peat Region 4 title, three straight Coach of the Year awards) are exceptionally well documented via the college's own press office."
+    },
+    "culture": {
+      "vibe": "A large, diverse north-side Chicago community college (Uptown neighborhood) whose men's soccer program has become City Colleges of Chicago's flagship athletics story — three straight NJCAA Region 4 titles under one coach.",
+      "thingsToDo": "Uptown Chicago is a dense, transit-connected north-side neighborhood minutes from Lake Michigan, Wrigleyville, and downtown Chicago via the CTA Red Line — a genuine big-city setting.",
+      "socialScene": "No on-campus housing or residential student life (commuter campus) — social life is city-based rather than campus-based.",
+      "olivierMatch": "★★★ The strongest on-field program in this batch by a wide margin — a genuine three-peat regional championship under a coach recognized as the best in the region three years running — set against a cold-climate, fully commuter big-city campus with limited confirmed facilities.",
+      "lifestyleTags": "Major city (Chicago), cold climate, no on-campus housing, standout coaching continuity"
+    },
+    "courses": [
+      "A.A. Liberal Arts (Transfer) — general degree; ESSS/Personal Fitness Trainer coursework is offered district-wide at Malcolm X College only"
+    ],
+    "rec": "Harry S. Truman College delivered the strongest on-field story of this entire batch and one of the best in the whole NJCAA gap-fill campaign: NJCAA Region 4 Division I Champion three seasons running (2023, 2024, 2025), with head coach Maciej Orlowski named Region 4 Coach of the Year in all three of those years — a level of sustained regional dominance confirmed directly by City Colleges of Chicago's own December 2025 press release. Michael Makonese (2025 Region 4 Player of the Year) and Nils Stodulka both earned NJCAA DI All-American nominations, and the Falcons' 2025-26 season (17-2-1) reached the NJCAA District Quarterfinals in Iowa. The honest gap is facilities and academics: Truman's primary athletics domain is entirely dead, so no dedicated-facility detail survives, and Truman itself has no exercise-science program (CCC's real Personal Fitness Trainer coursework is centered at sister campus Malcolm X College). At $22,912/yr, cost reflects the official CCC international tuition rate plus the district's own living-expense estimate; no on-campus housing exists anywhere in the CCC system.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 9,
+      "cleared_names": [
+        "Jair Duenas (So)",
+        "Jan Auch (Fr)",
+        "Vicente Quintero (Fr)",
+        "Wilonja Kasikile (Fr)",
+        "Felipe Alves (So)",
+        "Andrej Jovicic (So)",
+        "Iheb Gharsallah (Fr)",
+        "Gabriel Vidaurre (So)",
+        "Angel Bonete (Fr)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 55,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 72,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (official region4sports.com NJCAA Region 4 lineup page — 34 players with class/position data, healthy squad shape: 2 GK, ~13 D/DB, 9 'C' [central position], 6 F, 2 LW, 2 RW). 9 players marked position 'C' (Truman's roster uses the region4sports position scheme of D/DB/C/F/LW/RW rather than a simple M code; 'C' — Central — is read as the central-midfield equivalent). Split 4 sophomores / 5 freshmen. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. Ask the coach: 'How many of the 9 central players on the 2025-26 roster return for 2026-27, and how does a three-peat championship roster typically turn over?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster mixes domestic and international players (surnames spanning Central/South America, Europe and Africa); no previous-college column is published on the region4sports.com lineup page, so a transfer-vs-freshman split cannot be independently verified."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science coursework at this campus (see acuAlignNote)",
+    "fitOlivier": 48,
+    "lensScores": {
+      "overall": 48,
+      "soccer": 49,
+      "academic": 20,
+      "minutes": 62,
+      "lifestyle": 50,
+      "value": 51
+    }
+  },
+  {
+    "id": "daley_college",
+    "name": "Richard J. Daley College",
+    "full": "Richard J. Daley College (Comets)",
+    "loc": "Chicago, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
+    "confKey": "other",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "No titles or rankings, but a genuine turnaround story: winless-heavy 1-11-3 (2023-24) to a competitive 8-6 (2025-26, .571) under head coach Chris Johnson — the clearest year-over-year coaching improvement of any school in this batch (1-11-3 -> 5-10-2 -> 8-6 across three straight seasons). Verified via region4sports.com's official NJCAA Region 4 standings archive across all three seasons.",
+    "njcaaRegion": "Region 4",
+    "njcaaRegionArea": "Illinois (Chicago)",
+    "profileDepth": "full",
+    "color": [
+      "#fef3c7",
+      "#92400e"
+    ],
+    "mapX": 418,
+    "mapY": 152,
+    "domain": "ccc.edu",
+    "url": "https://www.region4sports.com/sports/msoc/2025-26/teams/richardjdaleycollege",
+    "degreeTitle": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science program at this campus",
+    "acuAlign": 1,
+    "acuAlignNote": "Richard J. Daley College is City Colleges of Chicago's (CCC) designated Center of Excellence for Advanced Manufacturing (home to the Manufacturing and Technology Center, MTEC) — it has no exercise-science/kinesiology program of its own. CCC's real Exercise Sci and Sports Studies (ESSS) department, confirmed via the official district-wide academic catalog (catalog.ccc.edu/courses-az/esss/), is offered exclusively \"At: MX\" (Malcolm X College). Daley's own A.A. Liberal Arts transfer degree requires one Life Sciences course (per catalog.ccc.edu's Associate in Arts natural-science requirement), covering BIOL125 generically. As a single seven-college CCC district with one shared catalog, portal and tuition schedule, a Daley-enrolled student can in principle cross-register into Malcolm X's coursework, but that requires commuting across the city and was not verified as routine; scored at the conservative floor a home-campus program alone supports. Full WES evaluation and advisor confirmation required regardless.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 4 (Illinois, City Colleges of Chicago)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 5836,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "City Colleges of Chicago is a public Illinois community college district with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "tuition": 12912,
+      "roomBoard": 10000,
+      "fees": 0,
+      "costNum": 22912,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "City Colleges of Chicago (CCC) is a single seven-college district with one unified tuition schedule — every campus charges the same rate. Official FY27 (2026-27) international per-credit-hour rate: $538 (ccc.edu/departments/tuition-and-fees/), applied at the 24-credit/year minimum full-time load CCC's own International Student Admission Application requires of F-1 visa students (\"minimum of 12 semester hours per term\"): $538 x 24 = $12,912/yr tuition, no separate mandatory fee line found beyond the per-credit rate. Room & Board uses CCC's own official international-student \"Estimated Budget\" living-expense allowance ($10,000/yr) from the same International Student Admission Application PDF — CCC operates NO on-campus housing at any of its seven colleges (the same document states outright \"the college...cannot arrange housing for international students\"), so this is the standard convention of using the school's own COA living-expense line in place of a dorm bill. Note the PDF's own tuition figure ($481/credit) is visibly dated (roughly 2 budget cycles stale against the current $538 rate), so the living-expense line may itself be a modest floor — flagged, not corrected, per the never-guess rule. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 25-40% package given CCC's own explicit disclosure that \"City Colleges of Chicago does not offer scholarships or any other form of financial assistance\" district-wide — any athletic aid here flows through the team/coach relationship, not a college scholarship office."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "5th of 5 Region 4 DI schools",
+        "note": "8-6 overall (.571), 8-6 in Region play — a genuine breakout season, more than doubling the 2023-24 win total. Verified via region4sports.com official standings."
+      },
+      {
+        "yr": 2024,
+        "pos": "4th of 5 Region 4 DI schools",
+        "note": "5-10-2 overall (.353), 5-10-2 in Region play. Verified via region4sports.com official standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "5th of 5 Region 4 DI schools",
+        "note": "1-11-3 overall (.167), 1-11-3 in Region play — the low point of the program's recent history, the season before Chris Johnson's tenure of improvement began. Verified via region4sports.com official standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Angel Diaz — 2025-26 leading scorer (16g/1a in 12 starts, .254 shot %)",
+        "Joel Vasquez — 4g/5a in 2025-26"
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found (see nextLevel note). The program's real story this session is a genuine three-year coaching turnaround rather than a documented pro/transfer pipeline.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found for Richard J. Daley College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Richard J. Daley College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 46,
+      "technical": 44,
+      "fitness": 42
+    },
+    "devScoresNote": "Evidence is coaching-CV based, since citycollegesofchicagoathletics.com (the primary facility/staff source) is dead. Head coach Chris Johnson (confirmed via FieldLevel's official team staff page and his own LinkedIn: Director of Information Security at the Art Institute of Chicago by day, University of East Anglia-educated, coaching Daley part-time/volunteer) has a genuine 3-person confirmed staff (himself, assistant Theo 'Cotton' Wells, and Athletic Director Robert Blissitt) — the most explicitly-documented staffing depth of any school in this batch, reflected modestly in `tactical`. No confirmed dedicated facility, sports-science staff or S&C program was found for `technical`/`fitness` — scored at the conservative end consistent with a volunteer-coached community-college program with real season-over-season improvement but no verified infrastructure investment.",
+    "tags": [
+      "city"
+    ],
+    "facilities": [
+      "3-person confirmed coaching/admin staff (HC + assistant + AD) — the most fully staffed program in this batch",
+      "Genuine 3-year win-total turnaround under head coach Chris Johnson",
+      "Chicago southwest-side campus, major-city location"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": false,
+        "note": "City Colleges of Chicago operates NO on-campus housing at any of its seven colleges — confirmed via the official CCC International Student Admission Application, which states plainly that the college \"does not offer scholarships or any other form of financial assistance, nor can the college arrange housing for international students.\" All seven CCC colleges (Truman, Daley, Malcolm X, Kennedy-King, Wright, Harold Washington, Olive-Harvey) are fully commuter campuses."
+      },
+      "stadium": "No dedicated soccer stadium confirmed — citycollegesofchicagoathletics.com (the primary source) is entirely dead.",
+      "trainingFields": "Not confirmed.",
+      "strengthConditioning": "Not confirmed.",
+      "sportsScience": "Not confirmed.",
+      "sportsMed": "Not confirmed.",
+      "academicLabs": "No dedicated exercise-science lab at this campus (see acuAlignNote) — CCC's Health Sciences Center of Excellence is at Malcolm X College; Daley's own specialty is Advanced Manufacturing (MTEC).",
+      "extras": "Southwest-side Chicago campus (Gage Park / West Elsdon area), 7500 S Pulaski Rd.",
+      "note": "Facilities detail is thin (dead primary source), but the coaching staff itself is the best-documented in this batch — three named staff members with a confirmed multi-year improvement trend."
+    },
+    "culture": {
+      "vibe": "A southwest-side Chicago community college, CCC's Center of Excellence for Advanced Manufacturing, whose men's soccer program has shown the clearest year-over-year coaching improvement in this batch.",
+      "thingsToDo": "Gage Park / West Elsdon, a residential southwest-side Chicago neighborhood with CTA bus access into the wider city; less central than Truman or Malcolm X but still a genuine big-city setting.",
+      "socialScene": "No on-campus housing or residential student life (commuter campus).",
+      "olivierMatch": "★★★ A genuine coaching-improvement story (1-11-3 to 8-6 over three seasons) under a well-documented, internationally-educated head coach — set against a cold-climate, fully commuter campus with no confirmed dedicated soccer facilities.",
+      "lifestyleTags": "Major city (Chicago), cold climate, no on-campus housing, clearest coaching turnaround in this batch"
+    },
+    "courses": [
+      "A.A. Liberal Arts (Transfer) — general degree; ESSS/Personal Fitness Trainer coursework is offered district-wide at Malcolm X College only"
+    ],
+    "rec": "Richard J. Daley College is this batch's clearest coaching-improvement story: from 1-11-3 in 2023-24 to 8-6 (.571) in 2025-26 under head coach Chris Johnson, a UK-educated (University of East Anglia) part-time coach who also works full-time as Director of Information Security at the Art Institute of Chicago. Daley fields the best-documented staff of this batch — Johnson plus assistant Theo 'Cotton' Wells and Athletic Director Robert Blissitt, all confirmed via the team's official FieldLevel recruiting profile. The honest gaps are facilities (citycollegesofchicagoathletics.com, the primary source, is entirely dead) and academics (Daley is CCC's Advanced Manufacturing center, with no exercise-science coursework of its own — that program sits at sister campus Malcolm X). At $22,912/yr, cost reflects the official CCC international tuition rate plus the district's own living-expense estimate; no on-campus housing exists anywhere in the CCC system.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 11,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 11,
+      "cleared_names": [
+        "Jose Bonilla (Fr)",
+        "Diego Farfan (Fr)",
+        "Edgar Villanueva (Fr)",
+        "Sebastian Vidrio (So)",
+        "Adam Villareal (Fr)",
+        "Chris Garcia (So)",
+        "Daniel Arce (Fr)",
+        "Juan Vera (Fr)",
+        "Enrique Perez (Fr)",
+        "Erick Paulino (So)",
+        "Tre Campbell (Fr)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 58,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 74,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (official region4sports.com NJCAA Region 4 lineup page — 27 players with class/position data, healthy squad shape: 3 GK, 8 D, 5 F, 11 'M'). 11 players marked position 'M' (Midfielder) — Daley's roster uses a direct M code, unlike Truman/Kennedy-King's D/DB/C/F/LW/RW scheme. Split 3 sophomores / 8 freshmen. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. Ask the coach: 'How many of the 11 midfielders on the 2025-26 roster return for 2026-27, and how many spots open given the team's recent turnaround?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster is predominantly Hispanic-surnamed, consistent with the southwest-side Chicago community; no previous-college column is published on the region4sports.com lineup page, so a transfer-vs-freshman split cannot be independently verified."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science coursework at this campus (see acuAlignNote)",
+    "fitOlivier": 47,
+    "lensScores": {
+      "overall": 47,
+      "soccer": 44,
+      "academic": 20,
+      "minutes": 64,
+      "lifestyle": 50,
+      "value": 51
+    }
+  },
+  {
+    "id": "malcolm_x_college",
+    "name": "Malcolm X College",
+    "full": "Malcolm X College (Hawks)",
+    "loc": "Chicago, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
+    "confKey": "other",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "No titles or rankings — 2025-26 record 5-10-1 overall (.344), broadly consistent with recent seasons (6-10 in 2024-25, 0-9 in 2023-24). Head coach Jesse Rosen has led the program since 2014, the longest confirmed tenure of any coach in this batch. Verified via region4sports.com's official NJCAA Region 4 standings archive.",
+    "njcaaRegion": "Region 4",
+    "njcaaRegionArea": "Illinois (Chicago)",
+    "profileDepth": "full",
+    "color": [
+      "#dcfce7",
+      "#14532d"
+    ],
+    "mapX": 420,
+    "mapY": 150,
+    "domain": "ccc.edu",
+    "url": "https://www.region4sports.com/sports/msoc/2025-26/teams/malcolmxcollege",
+    "degreeTitle": "Personal Fitness Trainer, Basic Certificate + A.A. transfer",
+    "acuAlign": 6,
+    "acuAlignNote": "Malcolm X College is City Colleges of Chicago's (CCC) designated Center of Excellence for Health Sciences (home to a $251M School of Health Sciences, opened 2016) and is the ONE CCC campus that actually teaches CCC's Exercise Sci and Sports Studies (ESSS) department, confirmed via the official district-wide academic catalog (catalog.ccc.edu/courses-az/esss/, every ESSS course tagged \"Offered At: MX\"). The real program is the Personal Fitness Trainer, Basic Certificate (catalog.ccc.edu/academic-program-requirements/personal-fitness-trainer-basic-certificate/ — a 1-year, 2-semester certificate, not a full associate degree). Real course-level matches against this guide's actual 16-unit rubric (js/app.js ACU_UNIT_META — checked by real definition, not by code name, per this campaign's Batch 4 lesson): ESSS 112 'Functional Anatomy & Kinesiology' (5cr — covers skeletal/muscular/nervous/circulatory anatomy AND 'locomotion, biomechanics, forces and levers') maps to ANAT100 (Anatomical Foundations), EXSC222 (Functional Anatomy) and EXSC224 (Mechanical Bases of Exercise / Intro Biomechanics) — three units from one course. ESSS 214 'Exercise and Health Psychology' maps to EXSC296 (Health & Exercise Psychology) specifically, NOT EXSC199 (Psychology of Sport / Sport Psychology) — ESSS214 covers general health-behavior psychology, stress and coping, not sport-specific psychology, so EXSC199 is marked false. ESSS 102 'Personal Trainer Practicum' (a supervised practical placement) maps to EXSC398 (Professional Experience). A general-education Life Sciences requirement covers BIOL125. No course maps to EXSC225 (a standalone Exercise Physiology course was not found — ESSS101 touches physiology only introductorily), EXSC322/EXSC394/EXSC321 (no advanced-level ESSS courses exist), EXSC204/EXSC216 (no dedicated exercise-testing/resistance-training course found), EXSC187/EXSC230/EXSC122 (no motor-development, motor-control or kinesiology-specific research-methods course found). Full WES evaluation and advisor confirmation required regardless.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 4 (Illinois, City Colleges of Chicago)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 9303,
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "City Colleges of Chicago is a public Illinois community college district with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "tuition": 12912,
+      "roomBoard": 10000,
+      "fees": 0,
+      "costNum": 22912,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "City Colleges of Chicago (CCC) is a single seven-college district with one unified tuition schedule — every campus charges the same rate. Official FY27 (2026-27) international per-credit-hour rate: $538 (ccc.edu/departments/tuition-and-fees/), applied at the 24-credit/year minimum full-time load CCC's own International Student Admission Application requires of F-1 visa students (\"minimum of 12 semester hours per term\"): $538 x 24 = $12,912/yr tuition, no separate mandatory fee line found beyond the per-credit rate. Room & Board uses CCC's own official international-student \"Estimated Budget\" living-expense allowance ($10,000/yr) from the same International Student Admission Application PDF — CCC operates NO on-campus housing at any of its seven colleges (the same document states outright \"the college...cannot arrange housing for international students\"), so this is the standard convention of using the school's own COA living-expense line in place of a dorm bill. Note the PDF's own tuition figure ($481/credit) is visibly dated (roughly 2 budget cycles stale against the current $538 rate), so the living-expense line may itself be a modest floor — flagged, not corrected, per the never-guess rule. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 25-40% package given CCC's own explicit disclosure that \"City Colleges of Chicago does not offer scholarships or any other form of financial assistance\" district-wide — any athletic aid here flows through the team/coach relationship, not a college scholarship office."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "3rd of 5 Region 4 DI schools",
+        "note": "5-10-1 overall (.344), 4-8-1 in Region play (.346). Verified via region4sports.com official standings."
+      },
+      {
+        "yr": 2024,
+        "pos": "3rd of 5 Region 4 DI schools",
+        "note": "6-10 overall (.375), 6-8 in Region play (.429). Verified via region4sports.com official standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "4th of 5 Region 4 DI schools",
+        "note": "0-9 overall (.000), 0-6 in Region play. Verified via region4sports.com official standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Leny Sophiane Bamba — 2025-26 leading scorer (11g/3a in 15 starts, .423 shot %, 3 game-winners)"
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found (see nextLevel note). Head coach Jesse Rosen's real next-level output is community-development focused: he is also Coaching Director for the CJ Brown Foundation, which places program alumni into youth-coaching roles across Chicago.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found for Malcolm X College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Malcolm X College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 48,
+      "technical": 46,
+      "fitness": 44
+    },
+    "devScoresNote": "Evidence is coaching-tenure and campus-infrastructure based, since citycollegesofchicagoathletics.com (the primary facility/staff source) is dead. Head coach Jesse Rosen has led the program since 2014 (confirmed via a dated March 2025 CJ Brown Foundation profile — the longest documented tenure of any coach in this batch), a former University of Hartford player and Milwaukee Wave professional indoor player, reflected in `tactical`. Malcolm X's campus is genuinely better-resourced than its sister CCC campuses in one specific, verifiable way — it houses CCC's $251M School of Health Sciences and its real Personal Fitness Trainer program (ESSS department) — a modest positive for `technical`/`fitness` even though that infrastructure is academic rather than soccer-specific, and no dedicated soccer facility, sports-science staff or S&C program was separately confirmed.",
+    "tags": [
+      "city"
+    ],
+    "facilities": [
+      "Home to CCC's $251M School of Health Sciences and its Exercise Sci and Sports Studies (ESSS) department — the only CCC campus with dedicated exercise-science coursework",
+      "Head coach Jesse Rosen — program tenure since 2014, the longest in this batch",
+      "Chicago Near West Side campus, major-city location"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": false,
+        "note": "City Colleges of Chicago operates NO on-campus housing at any of its seven colleges — confirmed via the official CCC International Student Admission Application, which states plainly that the college \"does not offer scholarships or any other form of financial assistance, nor can the college arrange housing for international students.\" All seven CCC colleges (Truman, Daley, Malcolm X, Kennedy-King, Wright, Harold Washington, Olive-Harvey) are fully commuter campuses."
+      },
+      "stadium": "No dedicated soccer stadium confirmed — citycollegesofchicagoathletics.com (the primary source) is entirely dead.",
+      "trainingFields": "Not confirmed.",
+      "strengthConditioning": "Not confirmed for the soccer program specifically; the campus's $251M Health Sciences building includes general kinesiology/fitness-training lab space used for the Personal Fitness Trainer certificate.",
+      "sportsScience": "Not confirmed for the soccer program specifically.",
+      "sportsMed": "Not confirmed.",
+      "academicLabs": "The only CCC campus with a real exercise-science-adjacent program (Personal Fitness Trainer, Basic Certificate — see acuAlignNote) — a genuine, verified academic asset even without soccer-specific facilities.",
+      "extras": "Near West Side Chicago campus (1900 W Jackson Blvd), close to the United Center and downtown Chicago.",
+      "note": "The only school in this batch with confirmed, real exercise-science coursework on campus, paired with the longest-tenured coach — offset by a losing on-field record and, like every school in this batch, no confirmed dedicated soccer facilities."
+    },
+    "culture": {
+      "vibe": "A large Near West Side Chicago community college, CCC's Center of Excellence for Health Sciences, whose men's soccer program is led by a coach with over a decade of tenure and genuine Chicago youth-soccer community ties.",
+      "thingsToDo": "Near West Side Chicago, close to the United Center and a short ride from downtown — a genuine big-city setting with strong transit access.",
+      "socialScene": "No on-campus housing or residential student life (commuter campus).",
+      "olivierMatch": "★★★ The only school in this batch with a real, verified exercise-science program on campus (Personal Fitness Trainer certificate) and the longest-tenured coach (since 2014) — offset by a losing on-field record and a cold-climate, fully commuter setting.",
+      "lifestyleTags": "Major city (Chicago), cold climate, no on-campus housing, only genuine exercise-science coursework in this batch"
+    },
+    "courses": [
+      "Personal Fitness Trainer, Basic Certificate (ESSS 101/102/103/112/206/209/214 — see acuAlignNote)",
+      "ESSS 112 — Functional Anatomy & Kinesiology (5 credit hours)"
+    ],
+    "rec": "Malcolm X College is the one school in this batch with a genuinely relevant academic program on campus: it is City Colleges of Chicago's designated Center of Excellence for Health Sciences (home to a $251M School of Health Sciences) and the only CCC campus that teaches the district's real Exercise Sci and Sports Studies coursework — a Personal Fitness Trainer, Basic Certificate covering functional anatomy/kinesiology, corrective exercise, and exercise & health psychology, with a supervised practicum. Head coach Jesse Rosen has led the program since 2014 (the longest tenure in this batch), is a former University of Hartford player and Milwaukee Wave professional, and doubles as Coaching Director for the CJ Brown Foundation, a Chicago youth-soccer community organization. The record is honest, not flattering (5-10-1 in 2025-26), and no dedicated soccer facilities were confirmed once citycollegesofchicagoathletics.com went dead. At $22,912/yr, cost reflects the official CCC international tuition rate plus the district's own living-expense estimate; no on-campus housing exists anywhere in the CCC system.",
+    "minutesOutlook": {
+      "available": false
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Personal Fitness Trainer, Basic Certificate — the only CCC campus in this batch with real exercise-science coursework (see acuAlignNote)",
+    "fitOlivier": 42,
+    "lensScores": {
+      "overall": 42,
+      "soccer": 45,
+      "academic": 47,
+      "minutes": 50,
+      "lifestyle": 50,
+      "value": 48
+    }
+  },
+  {
+    "id": "kennedy_king_college",
+    "name": "Kennedy-King College",
+    "full": "Kennedy-King College (Hawks)",
+    "loc": "Chicago, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
+    "confKey": "other",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "No titles or rankings — 2025-26 record 3-8-1 overall (.292), a small improvement over 2024-25's 2-8. The college itself was officially selected to host the NJCAA Region 4 Division I Basketball Tournament in 2027 and 2028 (announced June 2026, colleges.ccc.edu), evidence of a growing athletics department even though the soccer program's own on-field record remains modest. Verified via region4sports.com's official NJCAA Region 4 standings archive.",
+    "njcaaRegion": "Region 4",
+    "njcaaRegionArea": "Illinois (Chicago)",
+    "profileDepth": "full",
+    "color": [
+      "#fee2e2",
+      "#7f1d1d"
+    ],
+    "mapX": 422,
+    "mapY": 151,
+    "domain": "ccc.edu",
+    "url": "https://www.region4sports.com/sports/msoc/2025-26/teams/kennedykingcollege",
+    "degreeTitle": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science program at this campus",
+    "acuAlign": 1,
+    "acuAlignNote": "Kennedy-King College has no exercise-science/kinesiology program of its own — CCC's real Exercise Sci and Sports Studies (ESSS) department, confirmed via the official district-wide academic catalog (catalog.ccc.edu/courses-az/esss/), is offered exclusively \"At: MX\" (Malcolm X College), CCC's designated Center of Excellence for Health Sciences (Kennedy-King's own specialty is culinary arts, via the Washburne Culinary & Hospitality Institute). Kennedy-King's own A.A. Liberal Arts transfer degree requires one Life Sciences course (per catalog.ccc.edu's Associate in Arts natural-science requirement), covering BIOL125 generically. As a single seven-college CCC district with one shared catalog, portal and tuition schedule, a Kennedy-King-enrolled student can in principle cross-register into Malcolm X's coursework, but that requires commuting across the city and was not verified as routine; scored at the conservative floor a home-campus program alone supports. Full WES evaluation and advisor confirmation required regardless.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 4 (Illinois, City Colleges of Chicago)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 3274,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "City Colleges of Chicago is a public Illinois community college district with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "tuition": 12912,
+      "roomBoard": 10000,
+      "fees": 0,
+      "costNum": 22912,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "City Colleges of Chicago (CCC) is a single seven-college district with one unified tuition schedule — every campus charges the same rate. Official FY27 (2026-27) international per-credit-hour rate: $538 (ccc.edu/departments/tuition-and-fees/), applied at the 24-credit/year minimum full-time load CCC's own International Student Admission Application requires of F-1 visa students (\"minimum of 12 semester hours per term\"): $538 x 24 = $12,912/yr tuition, no separate mandatory fee line found beyond the per-credit rate. Room & Board uses CCC's own official international-student \"Estimated Budget\" living-expense allowance ($10,000/yr) from the same International Student Admission Application PDF — CCC operates NO on-campus housing at any of its seven colleges (the same document states outright \"the college...cannot arrange housing for international students\"), so this is the standard convention of using the school's own COA living-expense line in place of a dorm bill. Note the PDF's own tuition figure ($481/credit) is visibly dated (roughly 2 budget cycles stale against the current $538 rate), so the living-expense line may itself be a modest floor — flagged, not corrected, per the never-guess rule. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 25-40% package given CCC's own explicit disclosure that \"City Colleges of Chicago does not offer scholarships or any other form of financial assistance\" district-wide — any athletic aid here flows through the team/coach relationship, not a college scholarship office."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "4th of 5 Region 4 DI schools",
+        "note": "3-8-1 overall (.292), 3-8-1 in Region play. Verified via region4sports.com official standings."
+      },
+      {
+        "yr": 2024,
+        "pos": "5th of 5 Region 4 DI schools",
+        "note": "2-8 overall (.200), 2-8 in Region play. Verified via region4sports.com official standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "Not recorded",
+        "note": "0-0 (no games recorded in the official region4sports.com archive for 2023-24) — the program appears not to have fielded a full team that season."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Joseph Salcedo — 2025-26 leading scorer (5g/4a in 13 starts, team-high 20 shots on goal)",
+        "Yheykert Morales — 9g in 12 appearances (.750 shot %)"
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found (see nextLevel note).",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found for Kennedy-King College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Kennedy-King College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 42,
+      "technical": 40,
+      "fitness": 40
+    },
+    "devScoresNote": "Evidence is thin and coaching-CV based, since citycollegesofchicagoathletics.com (the primary facility/staff source) is dead. The program's listed contact, Jonathan Pachar, has a genuine pro-playing background (Milwaukee Wave, Ecuadorian second-division clubs, Robert Morris University all-conference honours 2015/2016) confirmed via a 2022-archived CCC staff bio and LinkedIn, though his LinkedIn still lists him as Assistant Coach at sister campus Malcolm X College rather than Head Coach at Kennedy-King specifically — the team's own official Facebook page lists his email (jpachar@ccc.edu) as its sole point of contact, the best available confirmation of his current program affiliation. Squad depth is thin (23 total, only 1 confirmed goalkeeper) — reflected in a conservative `technical`/`fitness` score. No dedicated facility, sports-science staff or S&C program was found.",
+    "tags": [
+      "city"
+    ],
+    "facilities": [
+      "College officially selected to host the NJCAA Region 4 DI Basketball Tournament in 2027 and 2028 — a signal of growing athletics investment",
+      "Englewood, south-side Chicago campus, major-city location"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": false,
+        "note": "City Colleges of Chicago operates NO on-campus housing at any of its seven colleges — confirmed via the official CCC International Student Admission Application, which states plainly that the college \"does not offer scholarships or any other form of financial assistance, nor can the college arrange housing for international students.\" All seven CCC colleges (Truman, Daley, Malcolm X, Kennedy-King, Wright, Harold Washington, Olive-Harvey) are fully commuter campuses."
+      },
+      "stadium": "No dedicated soccer stadium confirmed — citycollegesofchicagoathletics.com (the primary source) is entirely dead.",
+      "trainingFields": "Not confirmed.",
+      "strengthConditioning": "Not confirmed.",
+      "sportsScience": "Not confirmed.",
+      "sportsMed": "Not confirmed.",
+      "academicLabs": "No dedicated exercise-science lab at this campus (see acuAlignNote) — CCC's Health Sciences Center of Excellence is at Malcolm X College; Kennedy-King's own specialty is culinary arts (Washburne Culinary & Hospitality Institute).",
+      "extras": "Englewood, a south-side Chicago neighborhood; the college was selected to host NJCAA Region 4 DI Basketball Tournaments in 2027-28, a genuine (if soccer-adjacent) sign of athletics-department growth.",
+      "note": "The thinnest confirmed soccer-specific evidence of this batch — a 23-man roster with only one confirmed goalkeeper and a program contact whose exact title (assistant elsewhere vs head coach here) could not be fully reconciled once the primary athletics site went dead."
+    },
+    "culture": {
+      "vibe": "A south-side Chicago community college (Englewood) whose athletics department is visibly growing — recently selected to host multi-year NJCAA Region 4 basketball tournaments — even though the soccer program itself remains a modest, rebuilding effort.",
+      "thingsToDo": "Englewood is a south-side Chicago neighborhood; the campus is transit-accessible via CTA bus routes into the wider city.",
+      "socialScene": "No on-campus housing or residential student life (commuter campus).",
+      "olivierMatch": "★★ The most modest on-field profile of this batch, with real uncertainty about the current head coach's exact title once the primary athletics site went dead — offset only partly by the college's visible investment in growing its athletics department (NJCAA tournament hosting).",
+      "lifestyleTags": "Major city (Chicago), cold climate, no on-campus housing, thinnest facilities evidence in this batch"
+    },
+    "courses": [
+      "A.A. Liberal Arts (Transfer) — general degree; ESSS/Personal Fitness Trainer coursework is offered district-wide at Malcolm X College only"
+    ],
+    "rec": "Kennedy-King College is the most modest on-field profile of this batch — a rebuilding 3-8-1 (2025-26) program with a thin 23-man roster — but the wider college is visibly investing in athletics, having been selected in June 2026 to host the NJCAA Region 4 Division I Basketball Tournament in both 2027 and 2028. The program's listed contact, Jonathan Pachar, brings a genuine professional playing background (Milwaukee Wave, Ecuadorian second-division football, Robert Morris University all-conference honours), though this guide could not fully reconcile whether he now leads Kennedy-King specifically or remains primarily attached to sister campus Malcolm X College — the team's own Facebook page lists his email as its sole point of contact, the best confirmation available once citycollegesofchicagoathletics.com went entirely dead. At $22,912/yr, cost reflects the official CCC international tuition rate plus the district's own living-expense estimate; no on-campus housing exists anywhere in the CCC system.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 6,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 6,
+      "cleared_names": [
+        "Moises Barrera (So)",
+        "Gerardo Villagomez (So)",
+        "Luis Caballero (Fr)",
+        "Juan Nunez (So)",
+        "Christopher Castro (So)",
+        "Jose Mendiola (So)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 64,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 78,
+          "label": "Established starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (official region4sports.com NJCAA Region 4 lineup page — 23 players with class/position data, thin squad shape: only 1 confirmed goalkeeper, 7 D/DB, 6 'C' [central position], 6 F, 2 RW, 1 LW). 6 players marked position 'C' (Kennedy-King's roster uses the same D/DB/C/F/LW/RW scheme as Truman; 'C' — Central — is read as the central-midfield equivalent). Split 5 sophomores / 1 freshman. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. The genuinely small squad size (23, thin at goalkeeper) means real opportunity but also real program-stability risk. Ask the coach: 'How many of the 6 central players on the 2025-26 roster return for 2026-27, and what does the program's recruiting pipeline look like given the thin overall squad?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster is predominantly Hispanic-surnamed, consistent with the Englewood/south-side Chicago community; no previous-college column is published on the region4sports.com lineup page, so a transfer-vs-freshman split cannot be independently verified."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science coursework at this campus (see acuAlignNote)",
+    "fitOlivier": 48,
+    "lensScores": {
+      "overall": 48,
+      "soccer": 42,
+      "academic": 20,
+      "minutes": 70,
+      "lifestyle": 50,
+      "value": 51
+    }
+  },
+  {
+    "id": "wilbur_wright_college",
+    "name": "Wilbur Wright College",
+    "full": "Wilbur Wright College (Rams)",
+    "loc": "Chicago, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
+    "confKey": "other",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "No titles or rankings — the weakest on-field record of this batch (2-12-1, .167 in 2025-26; 0-6 in a partial 2024-25 season), but the program was awarded a $2,000 NJCAA Foundation Sport Opportunity Grant in June 2026 specifically to support its still-developing men's soccer program, confirmed via an official City Colleges of Chicago press release. Verified via region4sports.com's official NJCAA Region 4 standings archive.",
+    "njcaaRegion": "Region 4",
+    "njcaaRegionArea": "Illinois (Chicago)",
+    "profileDepth": "full",
+    "color": [
+      "#e0e7ff",
+      "#312e81"
+    ],
+    "mapX": 417,
+    "mapY": 149,
+    "domain": "ccc.edu",
+    "url": "https://www.region4sports.com/sports/msoc/2025-26/teams/wilburwrightcollege",
+    "degreeTitle": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science program at this campus",
+    "acuAlign": 1,
+    "acuAlignNote": "Wilbur Wright College has no exercise-science/kinesiology program of its own — CCC's real Exercise Sci and Sports Studies (ESSS) department, confirmed via the official district-wide academic catalog (catalog.ccc.edu/courses-az/esss/), is offered exclusively \"At: MX\" (Malcolm X College), CCC's designated Center of Excellence for Health Sciences (Wright's own recent specialty announcement is an Artificial Intelligence degree pathway, launched August 2026). Wright's own A.A. Liberal Arts transfer degree requires one Life Sciences course (per catalog.ccc.edu's Associate in Arts natural-science requirement), covering BIOL125 generically. As a single seven-college CCC district with one shared catalog, portal and tuition schedule, a Wright-enrolled student can in principle cross-register into Malcolm X's coursework, but that requires commuting across the city and was not verified as routine; scored at the conservative floor a home-campus program alone supports. Full WES evaluation and advisor confirmation required regardless.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 4 (Illinois, City Colleges of Chicago)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 7789,
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "City Colleges of Chicago is a public Illinois community college district with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "tuition": 12912,
+      "roomBoard": 10000,
+      "fees": 0,
+      "costNum": 22912,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "City Colleges of Chicago (CCC) is a single seven-college district with one unified tuition schedule — every campus charges the same rate. Official FY27 (2026-27) international per-credit-hour rate: $538 (ccc.edu/departments/tuition-and-fees/), applied at the 24-credit/year minimum full-time load CCC's own International Student Admission Application requires of F-1 visa students (\"minimum of 12 semester hours per term\"): $538 x 24 = $12,912/yr tuition, no separate mandatory fee line found beyond the per-credit rate. Room & Board uses CCC's own official international-student \"Estimated Budget\" living-expense allowance ($10,000/yr) from the same International Student Admission Application PDF — CCC operates NO on-campus housing at any of its seven colleges (the same document states outright \"the college...cannot arrange housing for international students\"), so this is the standard convention of using the school's own COA living-expense line in place of a dorm bill. Note the PDF's own tuition figure ($481/credit) is visibly dated (roughly 2 budget cycles stale against the current $538 rate), so the living-expense line may itself be a modest floor — flagged, not corrected, per the never-guess rule. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 25-40% package given CCC's own explicit disclosure that \"City Colleges of Chicago does not offer scholarships or any other form of financial assistance\" district-wide — any athletic aid here flows through the team/coach relationship, not a college scholarship office."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Last of 5 Region 4 DI schools",
+        "note": "2-12-1 overall (.167), 2-12-1 in Region play — the weakest record in this batch, though a full season was completed (16 games), unlike the prior year. Verified via region4sports.com official standings."
+      },
+      {
+        "yr": 2024,
+        "pos": "Last of 5 Region 4 DI schools",
+        "note": "0-6 overall (.000) — only a partial 6-game season recorded, suggesting a program still establishing itself. Verified via region4sports.com official standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "Not recorded",
+        "note": "0-0 (no games recorded in the official region4sports.com archive for 2023-24) — the program does not appear to have fielded a team that season."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Jorge Valle — 2025-26 leading scorer (5g/2a in 11 starts, 3-3 on penalties)",
+        "Mohammad Hammad — 3g/1a in 15 starts"
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found (see nextLevel note). This is the newest, least-established program in this batch — its real story in 2026 is a fresh NJCAA Foundation grant aimed at building the program up, not a documented pipeline yet.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found for Wilbur Wright College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Wilbur Wright College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 38,
+      "technical": 38,
+      "fitness": 38
+    },
+    "devScoresNote": "Evidence is genuinely limited, since citycollegesofchicagoathletics.com (the primary facility/staff source) is dead and the program itself is the newest/least-established in this batch. The team's sole confirmed point of contact, Gabriel Billings, holds the title 'Director of Intercollegiate and Intramural Athletics' — confirmed directly via a June 2026 City Colleges of Chicago press release announcing a $2,000 NJCAA Foundation Sport Opportunity Grant 'to enhance the development of a men's soccer program' — i.e. the Athletic Director doubling as the program's primary contact, the thinnest coaching-staff evidence of any school in this batch. Scored at the conservative floor of the JUCO Standard range across all three sub-scores, consistent with a program the college itself is still actively investing in growing rather than one with established infrastructure.",
+    "tags": [
+      "city"
+    ],
+    "facilities": [
+      "Awarded a $2,000 NJCAA Foundation Sport Opportunity Grant (June 2026) specifically to grow the men's soccer program",
+      "Historic athletics site — Wright College hosted the first-ever U.S. synchronized swimming competition in 1939 and maintains an Athletic Hall of Fame (est. 2013)",
+      "Northwest-side Chicago (Dunning) campus, major-city location"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": false,
+        "note": "City Colleges of Chicago operates NO on-campus housing at any of its seven colleges — confirmed via the official CCC International Student Admission Application, which states plainly that the college \"does not offer scholarships or any other form of financial assistance, nor can the college arrange housing for international students.\" All seven CCC colleges (Truman, Daley, Malcolm X, Kennedy-King, Wright, Harold Washington, Olive-Harvey) are fully commuter campuses."
+      },
+      "stadium": "No dedicated soccer stadium confirmed — citycollegesofchicagoathletics.com (the primary source) is entirely dead.",
+      "trainingFields": "Not confirmed.",
+      "strengthConditioning": "Not confirmed.",
+      "sportsScience": "Not confirmed.",
+      "sportsMed": "Not confirmed.",
+      "academicLabs": "No dedicated exercise-science lab at this campus (see acuAlignNote) — CCC's Health Sciences Center of Excellence is at Malcolm X College; Wright's own recent specialty is a new AI degree pathway (launched August 2026).",
+      "extras": "Dunning, a northwest-side Chicago neighborhood, 4300 N Narragansett Ave. Wright has genuine athletics history (founded U.S. synchronized swimming in 1939) even though its current men's soccer program is new and still developing.",
+      "note": "The newest and least-established program in this batch, honestly reflected in its scores — but the June 2026 NJCAA Foundation grant and the Athletic Director's own public comments confirm real, current investment in building the program, not stagnation."
+    },
+    "culture": {
+      "vibe": "A northwest-side Chicago community college with genuine (if historic, non-soccer) athletics pedigree, now investing fresh NJCAA Foundation grant money into building up a still-new, still-developing men's soccer program.",
+      "thingsToDo": "Dunning is a residential northwest-side Chicago neighborhood, CTA-accessible into the wider city; the campus recently launched City Colleges' first AI degree program (August 2026), a sign of broader institutional momentum even outside athletics.",
+      "socialScene": "No on-campus housing or residential student life (commuter campus).",
+      "olivierMatch": "★★ The newest and most developing program in this batch (2-12-1 in 2025-26, only a partial season in 2024-25), with the Athletic Director doubling as the soccer program's primary point of contact — offset by genuine, dated evidence (a June 2026 NJCAA Foundation grant) that the college is actively investing in growing it.",
+      "lifestyleTags": "Major city (Chicago), cold climate, no on-campus housing, newest/most-developing program in this batch"
+    },
+    "courses": [
+      "A.A. Liberal Arts (Transfer) — general degree; ESSS/Personal Fitness Trainer coursework is offered district-wide at Malcolm X College only"
+    ],
+    "rec": "Wilbur Wright College fields the newest and least-established men's soccer program in this batch — a 2-12-1 (2025-26) record following a partial 6-game 2024-25 season — but City Colleges of Chicago is visibly investing in it: a June 2026 press release announced a $2,000 NJCAA Foundation Sport Opportunity Grant specifically 'to enhance the development' of the program, quoting Director of Athletics Gabriel Billings, who is also the program's sole confirmed point of contact. Wright has real (if non-soccer) athletics pedigree — it hosted the first-ever U.S. synchronized swimming competition in 1939 — and recently launched City Colleges' first AI degree program, signalling broader institutional momentum. The honest picture is a program still being built, not yet delivering results; every score here reflects that directly rather than assuming hidden strength. At $22,912/yr, cost reflects the official CCC international tuition rate plus the district's own living-expense estimate; no on-campus housing exists anywhere in the CCC system.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 6,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 6,
+      "cleared_names": [
+        "Joshua Aguilar (Fr)",
+        "Christian Mejia (Fr)",
+        "Alexis Urgiles (Fr)",
+        "Josue Loayza (So)",
+        "Daniel Penafiel (So)",
+        "Daniel Gallegos (So)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 60,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 76,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (official region4sports.com NJCAA Region 4 lineup page — 32 players with class/position data, forward-heavy squad shape: only 1 confirmed goalkeeper, 10 D, 15 F, 6 'MF'). 6 players marked position 'MF' (Midfielder). Split 3 sophomores / 3 freshmen. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. The heavily forward-weighted squad shape (15 of 32 players) alongside a losing record suggests a program still finding its tactical identity — real opportunity for a genuine central midfielder. Ask the coach: 'How many of the 6 midfielders on the 2025-26 roster return for 2026-27, and how does the new NJCAA grant funding change squad-building plans?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster is predominantly Hispanic-surnamed, consistent with the Dunning/northwest-side Chicago community; no previous-college column is published on the region4sports.com lineup page, so a transfer-vs-freshman split cannot be independently verified."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science coursework at this campus (see acuAlignNote)",
+    "fitOlivier": 46,
+    "lensScores": {
+      "overall": 46,
+      "soccer": 40,
+      "academic": 20,
+      "minutes": 66,
+      "lifestyle": 50,
+      "value": 50
+    }
   }
 ]

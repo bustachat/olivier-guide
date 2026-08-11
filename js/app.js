@@ -251,6 +251,19 @@ function toggleDivSection(btn){
   btn.textContent = collapsed ? 'Show' : 'Hide';
 }
 
+// Section intro (long conference description) show/hide — independent of card
+// visibility (toggleDivSection above). Some intros (JUCO especially) have grown
+// into multi-paragraph batch-history walls of text; default to hidden behind
+// an (i) icon rather than always-on, so the section reads clean until asked for.
+function toggleSectionIntro(btn){
+  const section = btn.closest('.conf-section');
+  const intro = section && section.querySelector('.section-intro');
+  if(!intro) return;
+  const hidden = intro.classList.toggle('intro-hidden');
+  btn.classList.toggle('info-icon-active', !hidden);
+  btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+}
+
 // ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
   {key:'overall',   label:'Best Overall',     desc:"Olivier's Fit Score — soccer program quality, minutes outlook, climate, and city lifestyle combined, minus a housing penalty where a school has no or unguaranteed on-campus housing. GPA, cost, and ACU alignment are handled separately (ATAR/budget toggles, Financial Model, ACU Alignment tab)."},
@@ -555,10 +568,11 @@ function renderCards(){
     const headHtml=
       `<div class="section-head">` +
         `<h2>${sec.label}${countNote}</h2>` +
+        `<button class="info-icon-btn" onclick="toggleSectionIntro(this)" title="About ${sec.label}" aria-label="About ${sec.label}" aria-expanded="false">ⓘ</button>` +
         `<span class="dbadge d-${secUnis[0]?.div||'D1'}" style="font-size:9px">${sec.tier}</span>` +
         `<button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Show/hide this conference">Show</button>` +
       `</div>` +
-      `<div class="section-intro">${sec.intro}</div>`;
+      `<div class="section-intro intro-hidden">${sec.intro}</div>`;
 
     if(sec.divFilter==='JUCO'){
       // Group by NJCAA region — schools without an njcaaRegion (e.g. CCCAA-affiliated) get their own bucket

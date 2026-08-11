@@ -6,6 +6,21 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.78 (2026-08-12) — UX: conference-section intro text collapsed behind an (i) toggle
+
+**Owner-reported (screenshot):** the JUCO section's intro paragraph (`CONF_SECTIONS[...].intro` in `js/app.js`) had grown, batch after batch, into a multi-paragraph wall of text that rendered in full the moment the section was expanded — dominating the page before a user even reached the school cards.
+
+**Fix (Change Type 11, UX/JS):** decoupled the intro's visibility from the existing `div-toggle-btn` Show/Hide control (which still governs the cards grid only). Every conference section header now carries a small ⓘ icon button (`toggleSectionIntro()`) that independently shows/hides `.section-intro`, defaulting to **hidden**. The pre-existing rule that hides the intro whenever the whole section is collapsed (`.conf-section.div-collapsed .section-intro`) is untouched, so there is no reachable state where the intro shows while the cards are hidden.
+
+Applied to **all** `CONF_SECTIONS`, not just JUCO — they share one render path, and every conference's intro will keep accumulating batch-history the same way as more schools are added (ACC, Big Ten etc. are already multi-sentence).
+
+Verified in-browser: ⓘ renders on every section header; clicking it toggles `intro-hidden` and `display:none↔block` correctly, independent of the cards-grid Show/Hide state; collapsing the whole section still force-hides the intro regardless of the ⓘ state; no console errors introduced. `node --check js/app.js` clean. Pure UI change — no data, no score, no validator-checked field touched.
+
+- `index.html` — `.info-icon-btn` + `.info-icon-btn.info-icon-active` + `.section-intro.intro-hidden` CSS rules.
+- `js/app.js` — `toggleSectionIntro()` added; section-head template now emits the ⓘ button; `.section-intro` starts with `intro-hidden` in its class list.
+
+---
+
 ### v44.77 (2026-08-11) — NJCAA DI Gap-Fill campaign Batch 7: Region 9 Wyoming — 5 schools added (JUCO)
 
 Casper College, Northwest College, Central Wyoming College, Laramie County Community College, and Gillette College added (`data/juco.json`), joining Otero College in Region 9 and giving the region its first two-state footprint (CO + WY). 134 → 139 schools; `data/coaches.json` 134 → 139 (5 new coaches, all re-ranked).

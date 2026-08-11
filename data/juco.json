@@ -10511,5 +10511,950 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "A.S. Health & Sport Sciences (Exercise/Fitness Management) — the strongest ACU-relevant JUCO degree found in this batch"
+  },
+  {
+    "id": "national_park",
+    "name": "National Park College",
+    "full": "National Park College (Nighthawks)",
+    "loc": "Hot Springs, AR",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 2",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A genuinely new program (first men's soccer season 2024-25, hired founding coach Jan 2024) that has already produced one solid season: 2025-26 finished 8-4-3 overall (.633), the batch's best raw win total. Region 2 splits its men's soccer conference schedule into two geographic sub-pools for regular-season play; National Park's pool contained only itself and University of Arkansas Cossatot, and winning that 2-team pool (1-0-1) earned an official “Region 2 DII Men's Soccer Champion” banner — a real, publicly announced title, but not the same achievement as the main Region 2 Tournament, which National Park did not qualify for (that 6-team bracket drew only from the larger Oklahoma-school pool; Murray State won it and advanced to the Mid-South District final). Verified via official region2athletics.com 2025-26 standings, team stats, and tournament-bracket pages.",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma / western Arkansas",
+    "profileDepth": "full",
+    "color": [
+      "#e0f2fe",
+      "#075985"
+    ],
+    "mapX": 350,
+    "mapY": 239,
+    "domain": "athletics.np.edu",
+    "url": "https://athletics.np.edu/sports/msoc/index",
+    "degreeTitle": "Exercise Science, A.S.-STEM (transfer pathway to University of Arkansas at Monticello BS Exercise Science)",
+    "acuAlign": 2,
+    "acuAlignNote": "National Park College's Sports Science pathway offers a genuine, formally-titled Exercise Science degree (AS-STEM, 61 NPC credit hours) with an articulated transfer to University of Arkansas at Monticello's BS in Exercise Science (120 total credits) — confirmed via the official course catalog (catalog.np.edu). Checked against this guide's real 16-unit ACU rubric (js/app.js ACU_UNIT_META, not assumed labels): NPC's own BIOL 2224/2234 Anatomy & Physiology I/II covers ANAT100 (Anatomical Foundations), and the Gen Ed Lab Science requirement (BIOL 1024/1114) covers BIOL125 (Human Biology 1). None of NPC's associate-level coursework maps to Functional Anatomy, Physiological Bases of Exercise, Mechanical Bases of Exercise/Biomechanics, Sport Psychology, or Resistance Training — those specialized units are back-loaded into the 59 remaining UAM credit hours after transfer (EXSC10002 Introduction to Exercise Science, PHED 35243 Exercise Physiology, PHED 47143 Sport Administration, etc., all completed post-transfer, not at NPC). Full WES evaluation and advisor confirmation required.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 2 (Arkansas)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 1806,
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "National Park College is a public Arkansas community college with open enrolment — its own official catalog states a cumulative “C” (2.0) average is required for graduation, well below Olivier's 2.8.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 16846,
+      "tuition": 7368,
+      "roomBoard": 9478,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "National Park College's official 2026-27 Tuition and Fees page (Tier-1: np.edu/admissions-aid/financial-aid/tuition-fees) publishes a distinct “International Residents” per-credit-hour rate: $227 tuition + $75 mandatory fee + $10 student activity fee = $312/credit hour ($307/credit before the lab fee, which only applies to lab-based courses and is excluded here); at a standard 24 credits/year that is $7,368/yr (fees bundled into `tuition` to avoid double-counting, so `fees` is $0). Room/Board: the school's own official 2026-27 Cost of Attendance table gives $9,478/yr as its “On Campus Living Expenses: Housing and Food” estimate for a dependent student — independently cross-checked against the actual Dogwood/Redbud Hall per-semester rate sheet (cheapest 4BR/2BA private room: $4,000 Fall + $3,200 Spring = $7,200/yr) plus the mandatory on-campus meal plan ($1,100/semester × 2 = $2,200/yr) = $9,400/yr, a close match. Direct billed cost: $16,846/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Region 2 DII Champion — not a Region 2 Tournament qualifier (1-0-1 conf, .750, in a 2-team sub-pool)",
+        "note": "8-4-3 overall (.633), the best raw win total of this batch. Region 2 splits its men's soccer regular-season conference schedule into two geographic sub-pools; National Park's pool contained only itself and University of Arkansas Cossatot. Did not qualify for the 6-team Region 2 Tournament (drawn from the larger Oklahoma-school pool only), which Murray State won. Verified via official region2athletics.com 2025-26 standings and team stats pages."
+      },
+      {
+        "yr": 2024,
+        "pos": "Inaugural season — program history not itemized in accessible records",
+        "note": "National Park College's men's soccer program was founded with the January 2024 hiring of head coach Corey Irvine; the 2024-25 season predates the earliest team-stats archive found on region2athletics.com (2025-26 is the earliest fully accessible season for this specific school)."
+      }
+    ],
+    "titles": [
+      "2025 Region 2 DII Men's Soccer Champion (2-team sub-pool, not the main Region 2 Tournament) — first title in program history (program founded 2024)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No dedicated alumni/next-level tracking page found on athletics.np.edu — program is too new (founded 2024) to have graduated a transfer class yet."
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks; program founded 2024, too new for alumni tracking.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "Program founded January 2024 — no graduating class old enough yet to have a measured transfer/pro-signing rate. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 48,
+      "technical": 46,
+      "fitness": 45
+    },
+    "devScoresNote": "A genuinely new program (Jan 2024 founding) with a lean staff — head coach Corey Irvine has no listed assistant on the official staff directory, and the athletic department's sole Athletic Trainer (Heidi Balliette) is shared across all sports, not soccer-dedicated. Home matches are played off-campus at Hot Springs World Class High School (per the official 2026-27 schedule page), not a dedicated on-campus venue — the thinnest facility footprint of this batch. Offset by coach Irvine's own strong personal playing/coaching pedigree (see coaches.json).",
+    "fitOlivier": 57,
+    "lensScores": {
+      "overall": 57,
+      "soccer": 45,
+      "academic": 26,
+      "minutes": 61,
+      "lifestyle": 50,
+      "value": 61
+    },
+    "tags": [
+      "warm"
+    ],
+    "facilities": [
+      "Home matches played at Hot Springs World Class High School — no dedicated on-campus soccer venue",
+      "Shared Athletic Trainer (Heidi Balliette) across all sports",
+      "Hot Springs, AR — home of Hot Springs National Park, a well-known Arkansas resort town"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing confirmed via the official Residence Life pages: Dogwood and Redbud Halls, fully furnished apartment-style housing for up to 400 students, with 2-6 bedroom floor plan options. Per-semester rates for the most common 4BR/2BA private-occupancy plan: $4,000 Fall + $3,200 Spring = $7,200/yr, plus a mandatory on-campus resident meal plan ($1,100/semester)."
+      },
+      "stadium": "No dedicated on-campus soccer venue — home matches are played at Hot Springs World Class High School, per the official 2026-27 schedule.",
+      "trainingFields": "Not itemized separately on the official site.",
+      "strengthConditioning": "No dedicated strength & conditioning coach confirmed; no assistant coach listed for men's soccer at all on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "One shared Athletic Trainer (Heidi Balliette) across the entire athletic department, not soccer-dedicated.",
+      "academicLabs": "Exercise Science AS-STEM pathway provides genuine (if back-loaded to the UAM transfer stage) academic infrastructure.",
+      "extras": "Program founded January 2024 with the hiring of head coach Corey Irvine to lead both men's and women's soccer — the newest men's program in the guide's JUCO section after Connors State.",
+      "note": "The thinnest facility and staffing footprint of this Region 2 batch — no assistant coach, no dedicated home venue, a shared trainer — offset by the best raw 2025-26 win total (8-4-3) and a genuinely titled, UAM-articulated Exercise Science degree."
+    },
+    "culture": {
+      "vibe": "A small (1,806-student), genuinely new athletic program in Hot Springs, AR — home to Hot Springs National Park and a well-known Arkansas resort town, but the program itself is bare-bones: no assistant coach, no dedicated home venue.",
+      "thingsToDo": "Hot Springs is a genuine tourist destination — historic bathhouses, Hot Springs National Park hiking trails, Lake Hamilton, and a walkable downtown — a real step up in setting from a typical rural JUCO town, even though the college itself is small.",
+      "socialScene": "On-campus housing (Dogwood/Redbud Halls, up to 400 students) provides a real residential community despite the program's youth.",
+      "olivierMatch": "★★★ A genuinely scenic, tourist-town setting and the batch's best 2025-26 on-field record, offset by the thinnest coaching staff and facility footprint of the four Region 2 Arkansas/Oklahoma schools researched this batch.",
+      "lifestyleTags": "Warm, resort-town setting, on-campus housing, newest program in the guide"
+    },
+    "courses": [
+      "Exercise Science, A.S.-STEM (transfer to UAM BS Exercise Science)",
+      "BIOL 2224/2234 Anatomy & Physiology I/II (required)",
+      "BIOL 1024/1114 Biological Science (Gen Ed Lab Science requirement)"
+    ],
+    "rec": "National Park College is the newest program in this batch — founded January 2024 — and already the best on-field result of the four, going 8-4-3 in 2025-26 and winning a real, publicly announced (if small, 2-team) “Region 2 DII” title. Head coach Corey Irvine brings a genuinely international CV: JUCO playing time at Eastern Oklahoma State and Northeast Texas CC, a D1 season at Georgia Southern, a pro stint in Scotland, and two NJCAA Region 23 Coaching Staff of the Year honors as an assistant before taking over both the men's and women's programs. The honest trade-off is program infrastructure: no assistant coach, a shared (not soccer-dedicated) athletic trainer, and no on-campus soccer venue — home matches are played at a local high school field. Academically, the Exercise Science A.S.-STEM degree is genuinely titled and formally articulated to University of Arkansas at Monticello's BS Exercise Science, though the specialized coursework is back-loaded to the transfer stage rather than available at NPC itself. At $16,846/yr it sits mid-pack on cost, with on-campus housing (Dogwood/Redbud Halls) available.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 8,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Luke Kelly-Woolman (So·CAM/ST)",
+        "Osagie Omoregie (So·CDM)",
+        "Jonathan Amperez (Fr·CM)",
+        "Alexander Reiche (Fr·CM)",
+        "Grayson Owens (So·CAM)",
+        "Julio Patino (Fr·CAM)",
+        "Charlie Hartley-Stead (Fr·CM)",
+        "Arius Garcia (Fr·CAM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 54,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 71,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (region2athletics.com official stats page — 21 field players + goalkeepers, healthy squad shape): 6 pure CM/CAM/CDM players plus 1 CAM/ST hybrid (counted per this guide's position-normalisation rule) = 8 midfield-capable players, split 3 sophomores / 5 freshmen. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. Ask the coach: 'How many central midfielders are in the 2027 recruiting class?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster mixes US high-school recruits with several international players; no previous-college column is published, so a transfer-vs-freshman split cannot be independently verified from the stats page alone."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "A.S.-STEM Exercise Science, articulated to UAM BS Exercise Science — genuinely titled but the ACU-mapped specialization (exercise physiology, biomechanics, sport psychology) is back-loaded to the transfer stage, not at NPC itself"
+  },
+  {
+    "id": "rich_mountain",
+    "name": "University of Arkansas Rich Mountain",
+    "full": "University of Arkansas Rich Mountain (Bucks)",
+    "loc": "Mena, AR",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 2",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A program with real historical prestige (outright Region 2 Champion in 2019 and 2021) that has cooled to mid/lower-table in recent seasons (2025: 4-9-3 overall, 4-6-2 conf, .417) — but still overachieved in the 2025 postseason as the #5 seed, upsetting #4 seed Rose State on penalties (0-0) before falling 4-1 to eventual champion Murray State in the semifinal. Verified via official region2athletics.com 2025-26 standings, team stats, and Region 2 Tournament bracket/Past Champions pages.",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma / western Arkansas",
+    "profileDepth": "full",
+    "color": [
+      "#fef9c3",
+      "#854d0e"
+    ],
+    "mapX": 337,
+    "mapY": 233,
+    "domain": "bucksathletics.com",
+    "url": "https://bucksathletics.com/sports/msoc/index",
+    "degreeTitle": "Kinesiology, A.S. — Arkansas's only two-year Exercise Science-track program, 2+2 pathway to the University of Arkansas",
+    "acuAlign": 2,
+    "acuAlignNote": "UA Rich Mountain publicly bills itself as “the ONLY two-year college in Arkansas offering an Associate of Science in Exercise Science,” with a formally announced (June 2026 news release) 2+2 partnership with the University of Arkansas's Department of Health, Human Performance and Recreation. Checked against this guide's real 16-unit ACU rubric (js/app.js ACU_UNIT_META): the college's official course catalog (most recent full catalog located: 2021-22, predating this new degree's launch) confirms separate, dedicated BIOL2443 Human Anatomy (covers ANAT100) and BIOL1543 Biological Science (covers BIOL125) courses. EXSC2733 “Introduction to Exercise Science” does not map to any of the 16 defined units (it is a general careers/orientation course, not Mechanical Bases of Exercise/Biomechanics or any other specific unit), and BIOL2213 Human Physiology is general systemic physiology rather than the exercise-specific physiology EXSC225 requires. The brand-new Exercise Science AS degree's own specific course list was not found in a currently-published catalog (it launched after the located 2021-22 catalog), so this score is built conservatively from confirmed existing course offerings only — not the new degree's marketing claims. Full WES evaluation and advisor confirmation required.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 2 (Arkansas)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 1100,
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "UA Rich Mountain is a public Arkansas community college (part of the University of Arkansas System) with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 15890,
+      "tuition": 3480,
+      "roomBoard": 10010,
+      "fees": 2400,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "UA Rich Mountain's official 2026-27 Cost of Attendance page (Tier-1: uarichmountain.edu/financial-aid/cost-of-attendance.html), “Dependent Student Living On Campus” tier, publishes Out-of-State Direct Costs explicitly: Tuition $3,480 + Mandatory Fees $2,400 + Housing & Food $10,010 = $15,890/yr Direct Costs (no separate international-specific tier is published; Out-of-State is the highest published tier, used here per this guide's convention). As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Region 2 Tournament Semifinal, #5 seed (4-6-2 conf, .417)",
+        "note": "4-9-3 overall, 4-6-2 in conference play (.417). Upset #4 seed Rose State 0-0 (won on penalties) in the Region 2 Tournament first round, then lost 4-1 to eventual champion and #1 seed Murray State in the semifinal. Verified via official region2athletics.com 2025-26 standings, team stats, and tournament bracket pages."
+      },
+      {
+        "yr": 2021,
+        "pos": "Region 2 Champion",
+        "note": "Outright Region 2 Champion under head coach Casey Weil. Verified via the official region2athletics.com Region 2 Men's Soccer Past Champions page."
+      },
+      {
+        "yr": 2019,
+        "pos": "Region 2 Champion",
+        "note": "Outright Region 2 Champion under head coach Brian Byrd. Verified via the official region2athletics.com Region 2 Men's Soccer Past Champions page."
+      }
+    ],
+    "titles": [
+      "Region 2 Champion (2019, 2021) — no national tournament appearance found on record in either title season",
+      "2025 Region 2 Tournament Semifinalist (#5 seed, upset #4 seed Rose State on penalties)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No dedicated alumni/next-level tracking page found on bucksathletics.com."
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated men's soccer alumni/transfer tracking page found.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on bucksathletics.com. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 52,
+      "technical": 50,
+      "fitness": 50
+    },
+    "devScoresNote": "Two assistant coaches confirmed on the official staff directory (Ian Alexander, Morgan Bean) — the deepest men's soccer staff of this batch's four schools. Head coach Kevin Sherry's own bio (bucksathletics.com) documents an unusually extensive multi-decade, multi-country coaching career (five separate head coaching stints including four different NCAA D1 programs, a Final Four appearance and Athletics Wall of Fame induction at Graceland University, and international academy/pro-club coaching in Japan, the UK and UAE), though the program's on-field 2025-26 results (4-9-3) were modest. No dedicated soccer venue, strength coach, or sports-science technology confirmed on official pages.",
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 48,
+      "academic": 26,
+      "minutes": 50,
+      "lifestyle": 50,
+      "value": 61
+    },
+    "tags": [
+      "warm"
+    ],
+    "facilities": [
+      "Two assistant coaches on staff (Ian Alexander, Morgan Bean) — the deepest men's soccer staff in this batch",
+      "Home venue not itemized separately on the official site",
+      "Mena, AR — small rural Ouachita Mountains town"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing confirmed via the official 2026-27 Cost of Attendance page, which publishes a dedicated “Dependent Student Living On Campus” cost tier (Housing & Food $10,010/yr Out-of-State) distinct from the off-campus/commuter tiers."
+      },
+      "stadium": "Not itemized separately on the official athletics site.",
+      "trainingFields": "Not itemized separately on the official site.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach confirmed.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Not itemized on the public staff directory found for this research.",
+      "academicLabs": "Arkansas's only two-year Exercise Science AS program (newly formalized, June 2026 partnership with the University of Arkansas) provides genuine, if new, academic infrastructure.",
+      "extras": "Mena, AR sits in the Ouachita Mountains of western Arkansas, a small (pop. ~5,600) rural town.",
+      "note": "The deepest coaching staff (2 assistants) and a head coach with an unusually extensive international CV, offset by modest recent on-field results and a program whose glory years (2019, 2021 Region 2 titles) are several seasons back."
+    },
+    "culture": {
+      "vibe": "A very small (1,100-student) rural community college in the Ouachita Mountains of western Arkansas, part of the University of Arkansas System, with real historical soccer prestige (two outright Region 2 titles) now rebuilding under an internationally experienced head coach.",
+      "thingsToDo": "Mena is a small, quiet mountain town — outdoor recreation (Ouachita National Forest, Rich Mountain itself) is the main draw; limited nightlife/urban amenities.",
+      "socialScene": "On-campus housing available; a small, tight-knit rural campus community.",
+      "olivierMatch": "★★★ A program with real past prestige and the batch's most experienced head coach on paper, in a genuinely small, quiet rural setting — the trade-off is modest recent on-field form and limited nightlife.",
+      "lifestyleTags": "Warm, rural mountain setting, on-campus housing, historically the strongest Region 2 program in this batch"
+    },
+    "courses": [
+      "Kinesiology, A.S. — Arkansas's only two-year Exercise Science-track program",
+      "BIOL2443 Human Anatomy",
+      "BIOL1543 Biological Science"
+    ],
+    "rec": "UA Rich Mountain carries real historical weight in Region 2 — outright Region 2 Champions in 2019 and 2021 — and while recent seasons have cooled (4-9-3 in 2025-26), the program overachieved in the 2025 postseason, upsetting #4 seed Rose State on penalties before a competitive semifinal loss to eventual champion Murray State. Head coach Kevin Sherry brings the most extensive coaching CV of this batch by a wide margin: five separate head coaching stints (four NCAA Division I programs plus NAIA and NJCAA), a Final Four appearance and Athletics Wall of Fame induction, and international academy/pro-level experience in Japan, England and the UAE. He is backed by the deepest staff in this batch, with two assistant coaches. Academically, UA Rich Mountain markets itself as Arkansas's only two-year Exercise Science program with a newly formalized 2+2 pathway to the University of Arkansas, though this guide scores conservatively against this guide's specific 16-unit ACU rubric: only a genuine, dedicated Anatomy course and the general-biology requirement clear the bar, since neither the college's Human Physiology course nor its “Introduction to Exercise Science” course map to a specific defined unit. At $15,890/yr it sits mid-pack on cost, with on-campus housing available.",
+    "minutesOutlook": {
+      "available": false,
+      "note": "The 2025-26 roster publishes ZERO position data for any of its 27 outfield/goalkeeper players beyond marking three players “Goalkeeper” — confirmed independently via both the official bucksathletics.com roster page and the region2athletics.com stats/lineup page, neither of which lists a position for any field player. Same pattern as Community Christian College in Batch 2: a genuine, confirmed data gap, not an oversight in this research."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Kinesiology, A.S. — Arkansas's only two-year Exercise Science-track program; confirmed dedicated Anatomy course, but no confirmed exercise-specific physiology, biomechanics, or sport psychology coursework at the associate level"
+  },
+  {
+    "id": "hill_college",
+    "name": "Hill College",
+    "full": "Hill College (Rebels)",
+    "loc": "Hillsboro, TX",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 5 (North Texas JCAC)",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "A genuine turnaround season: winless in conference play in 2024 (0-4) to Region 5 regular-season CHAMPIONS in 2025 (first Regular Season Championship since 2019), advancing to the Region 5 Tournament Final where they lost 5-4 on penalties to Western Texas College after a scoreless draw — two games from the NJCAA DI National Tournament. Head coach Ivan Franco (his first year as HC) was named Region 5 Coach of the Year; Kevin Mejia (17g/6a) was named Region 5 Player of the Year; Luis Barreto earned Second Team All-American honors, one of only two Hill College players in program history to do so. Verified via official hillcollegeathletics.com 2025-26 schedule/standings and the official postseason recap release.",
+    "njcaaRegion": "Region 5",
+    "njcaaRegionArea": "North/Central Texas",
+    "profileDepth": "full",
+    "color": [
+      "#fee2e2",
+      "#991b1b"
+    ],
+    "mapX": 305,
+    "mapY": 278,
+    "domain": "hillcollegeathletics.com",
+    "url": "https://hillcollegeathletics.com/sports/msoc/index",
+    "degreeTitle": "Kinesiology, A.A. — required Anatomy & Physiology I/II plus dedicated PHED coursework (Pre-Physical Therapy A.S. also offered)",
+    "acuAlign": 1,
+    "acuAlignNote": "Hill College's official Kinesiology Associate of Arts degree plan (Tier-1 PDF, hillcollege.edu, revised June 2025) requires BIOL 2401 Anatomy & Physiology I and BIOL 2402 Anatomy & Physiology II as CORE courses (not electives). Checked against this guide's real 16-unit ACU rubric (js/app.js ACU_UNIT_META): this covers ANAT100 (Anatomical Foundations). PHED 1301 Foundations of Kinesiology, PHED 1304 Personal/Community Health, PHED 1306 First Aid and PHED 1338 Concepts of Physical Fitness are all real, dedicated, required PE courses, but none of them map to a specific defined unit (Foundations of Kinesiology is a general survey course, not Mechanical Bases of Exercise/Biomechanics; Personal/Community Health is not Sport Psychology). No standalone general-biology gen-ed is required beyond the A&P sequence itself for this specific degree plan. Hill College also separately offers a Pre-Physical Therapy A.S. (directly matching Olivier's stated DPT career goal) built around the same required BIOL 2401/2402 sequence plus a heavier general-science load (Chemistry I/II, Physics I/II, Trig/Pre-Calc) — genuinely the campaign's most direct pre-PT-titled pathway by name, though its ACU-mapped content is no stronger. Full WES evaluation and advisor confirmation required.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 5 (North Texas)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 3800,
+    "prePT": "Excellent",
+    "prePTShort": "Excellent",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Hill College is a public Texas community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 9390,
+      "tuition": 3310,
+      "roomBoard": 4670,
+      "fees": 1410,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Hill College's official 2026-27 Cost of Attendance / Net Price Calculator page (Tier-1: hillcollege.edu/Admissions_Aid/FinancialAid/NetPriceCalc.html) publishes a distinct “Out of Nation” institutional rate — Tuition $3,310 + Fees $1,410 = $4,720/yr — and a separate “On Campus” Room & Board estimate of $4,670/yr (residency-neutral on that page). Direct billed cost: $9,390/yr, by far the lowest of this batch and one of the most affordable full profiles in the entire guide — a genuine Texas-public-community-college value story. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Region 5 Regular-Season Champion; Region 5 Tournament Runner-Up (lost Final 5-4 on penalties)",
+        "note": "First Regular Season Championship since 2019, a turnaround from a winless (0-4) conference record in 2024. Went 7-0-1 in September. Lost the Region 5 Tournament Final to Western Texas College 5-4 in a penalty shootout after a scoreless draw, two games from the NJCAA DI National Tournament. Head coach Ivan Franco named Region 5 Coach of the Year; Kevin Mejia (17g/6a) named Region 5 Player of the Year. Verified via official hillcollegeathletics.com 2025-26 schedule/standings and postseason recap release."
+      },
+      {
+        "yr": 2024,
+        "pos": "Winless in conference play (0-4 conf, 2-11-3 overall, .219)",
+        "note": "The season immediately preceding the 2025 turnaround, under a different head coach (Dejan Milosevic). Verified via the official hillcollegeathletics.com standings widget."
+      },
+      {
+        "yr": 2023,
+        "pos": "Region V Champion; District Championship (one game short of the National Tournament)",
+        "note": "7-5-4 record; won the regional championship and advanced to the district championship, narrowly missing a national tournament berth — the season Ivan Franco served as assistant coach, immediately before his 2025 head-coaching turnaround. Verified via official hillcollegeathletics.com news archive and Ivan Franco's official coach bio."
+      }
+    ],
+    "titles": [
+      "2025 Region 5 Regular-Season Champion (first since 2019)",
+      "2023 Region V Champion (as assistant coach Ivan Franco's team)",
+      "2025 Region 5 Coach of the Year (Ivan Franco), 2025 Region 5 Player of the Year (Kevin Mejia)",
+      "Luis Barreto — 2025 Second Team All-American, one of only two Hill College players in program history to earn All-American honors"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Kevin Mejia — 2025 Region 5 Player of the Year, 17 goals / 6 assists",
+        "Luis Barreto — 2025 NJCAA Second Team All-American (one of only two in program history)"
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated alumni/transfer tracking page found, but real 2025 individual honors (Player of the Year, All-American) confirmed via the official postseason release.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on hillcollegeathletics.com. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 50,
+      "technical": 50,
+      "fitness": 48
+    },
+    "devScoresNote": "Head coach Ivan Franco is a Hill College alumnus (captain, 2018-20, led the program to a Region V title as a player) who played NCAA D2 at UT Permian Basin and NCAA-tournament-level soccer at Davis & Elkins College, and holds a Bachelor's in Exercise Science plus a Master's in Sports Administration — the strongest formal academic coaching credential found in this batch. At least one assistant coach (Derick Gonzalez) is listed on the official staff directory. No dedicated strength & conditioning coach, sports-science technology, or stadium detail confirmed on official pages; dev score reflects coaching-environment quality only, not the team's 2025 results (per CLAUDE.md §5a, results belong in confRecord/titles, not devScores).",
+    "fitOlivier": 58,
+    "lensScores": {
+      "overall": 58,
+      "soccer": 47,
+      "academic": 20,
+      "minutes": 62,
+      "lifestyle": 50,
+      "value": 68
+    },
+    "tags": [
+      "warm"
+    ],
+    "facilities": [
+      "2025 Region 5 Regular-Season Champion and Tournament Runner-Up",
+      "Head coach Ivan Franco — program alumnus, Bachelor's in Exercise Science + Master's in Sports Administration",
+      "Hillsboro, TX — small North Texas town roughly equidistant from Dallas-Fort Worth and Waco"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing confirmed: Bailey Residence Hall, a 136-bed complex located in the middle of campus, offering double-occupancy rooms with community bathrooms (per the official Residence Life pages and Residence Life Handbook)."
+      },
+      "stadium": "Not itemized separately on the official athletics site.",
+      "trainingFields": "Not itemized separately on the official site.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach confirmed.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
+      "sportsMed": "Not itemized on the public staff directory found for this research.",
+      "academicLabs": "Both a Kinesiology A.A. (required A&P I/II plus dedicated PE coursework) and a Pre-Physical Therapy A.S. are offered — the most directly DPT-relevant named pathway in this batch.",
+      "extras": "Hillsboro, TX sits at the junction of I-35 and Highway 22, within about an hour of both Dallas-Fort Worth and Waco.",
+      "note": "The strongest on-field story of this batch — a genuine worst-to-first turnaround culminating in a Region 5 Tournament Final appearance — combined with by far the lowest cost of attendance ($9,390/yr) and a program-alumnus head coach with real academic credentials in the exact field Olivier is pursuing."
+    },
+    "culture": {
+      "vibe": "A mid-sized (3,800-student) North Texas community college that just completed the most dramatic single-season turnaround researched in this campaign — winless in conference in 2024 to Region 5 regular-season champions and tournament runners-up in 2025, under a first-year head coach who is also a program alumnus.",
+      "thingsToDo": "Hillsboro itself is a small town, but Dallas-Fort Worth and Waco are both within roughly an hour's drive, giving realistic access to major-metro amenities without living directly in a city.",
+      "socialScene": "On-campus housing (Bailey Residence Hall, 136 beds) provides a genuine residential community.",
+      "olivierMatch": "★★★★ The strongest on-field turnaround story and by far the best value of this batch, with the most directly DPT-relevant academic pathway (a genuine Pre-Physical Therapy A.S. alongside the Kinesiology A.A.) — the trade-off is a small home town, an hour's drive from real city amenities.",
+      "lifestyleTags": "Warm, small-town setting with DFW/Waco access, on-campus housing, lowest cost in this batch"
+    },
+    "courses": [
+      "Kinesiology, A.A. (required BIOL 2401/2402 Anatomy & Physiology I/II)",
+      "PHED 1301 Foundations of Kinesiology (required, general survey — not ACU-mapped)",
+      "Pre-Physical Therapy, A.S. (alternate pathway, directly DPT-titled)"
+    ],
+    "rec": "Hill College is the standout story of this batch: a program that went winless in conference play in 2024 (0-4) to Region 5 regular-season CHAMPIONS in 2025 under first-year head coach and program alumnus Ivan Franco, who was named Region 5 Coach of the Year for the turnaround. The Rebels reached the Region 5 Tournament Final — losing 5-4 on penalties to Western Texas College after a scoreless draw — two games from the NJCAA DI National Tournament, with Kevin Mejia named Region 5 Player of the Year (17g/6a) and Luis Barreto earning Second Team All-American honors, one of only two players in program history to do so. Coach Franco holds a Bachelor's in Exercise Science and a Master's in Sports Administration, and Hill College offers both a Kinesiology A.A. (required Anatomy & Physiology I/II, plus dedicated but general PE coursework that doesn't map to this guide's specific ACU units) and a genuinely DPT-titled Pre-Physical Therapy A.S. — the most direct career-goal name-match in this batch, even though its own ACU-mapped content is modest. At $9,390/yr it is by far the most affordable school in this batch and one of the cheapest full profiles in the entire guide, with on-campus housing (Bailey Residence Hall) available.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 9,
+      "cleared_names": [
+        "Daniel Arias (So·CDM/CM)",
+        "Giovani Lopez (So·CM)",
+        "Louis Beaufrere (So·CAM/CF)",
+        "Reyli Angulo (So·CM)",
+        "Daniel Cruz (Fr·CM/RB)",
+        "Matteo Guerrero (Fr·CM/ST)",
+        "Joaquin Iturra (So·CM)",
+        "Stefan Radovanovic (So·CM)",
+        "Eddie Zapata (Fr·LW/CAM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 55,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 72,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (official hillcollegeathletics.com roster page — 27 players with full position/class data, healthy squad shape): 4 pure CM players, 1 CDM/CM hybrid, and 4 further CAM/CM hybrids (CAM/CF, CM/RB, CM/ST, LW/CAM — counted per this guide's position-normalisation rule) = 9 midfield-capable players, split 6 sophomores / 3 freshmen. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. Ask the coach: 'How many central midfielders are in the 2027 recruiting class, after this Region 5 Final run raises the program's profile?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster mixes Texas high-school recruits with international/Latin American players; no previous-college column is published on the official roster, so a transfer-vs-freshman split cannot be independently verified."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Kinesiology, A.A. (required A&P I/II) or Pre-Physical Therapy, A.S. — the campaign's most directly DPT-titled pathway by name, though only Anatomy maps to this guide's specific 16-unit ACU rubric"
+  },
+  {
+    "id": "western_texas",
+    "name": "Western Texas College",
+    "full": "Western Texas College (Westerners)",
+    "loc": "Snyder, TX",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 5 (Western Junior College Athletic Conference)",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2025 Region 5 Tournament CHAMPION (beat Hill College 5-4 on penalties in the Final after a scoreless draw), then advanced to the 2025 NJCAA Mid-South District Championship game, where the Westerners lost to Murray State College (who advanced to the NJCAA DI National Tournament) — the best confirmed postseason result of this entire batch. Head coach Daniel Hoskins won the title in his first season (appointed spring 2025). Verified via official region2athletics.com Region 2/Mid-South District bracket pages and hillcollegeathletics.com's official postseason recap (cross-referencing the opponent's own account of the Final).",
+    "njcaaRegion": "Region 5",
+    "njcaaRegionArea": "West Texas",
+    "profileDepth": "full",
+    "color": [
+      "#dcfce7",
+      "#166534"
+    ],
+    "mapX": 262,
+    "mapY": 267,
+    "domain": "wtcathletics.com",
+    "url": "https://www.wtcathletics.com/sports/msoc/index",
+    "degreeTitle": "Health, PE & Kinesiology, A.S. (transfer pathway degree)",
+    "acuAlign": 0,
+    "acuAlignNote": "Western Texas College offers a named “Health, PE & Kinesiology” transfer degree plan (confirmed via the official wtc.edu Academics/Majors listing), but the specific plan document could not be retrieved during this research (the PDF endpoint returned an access-denied error on repeated attempts) beyond a partial preview confirming only generic core-curriculum courses (Composition I, US History I, College Algebra, Learning Frameworks elective) — none of which map to any ACU-relevant unit. Per this campaign's never-guess rule, this school is scored at the confirmed floor (0) rather than assuming PE-prefix coursework parallel to Hill College's; a future session with direct access to the degree-plan PDF should re-verify and likely raise this score. Full WES evaluation and advisor confirmation required regardless.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 5 (West Texas)",
+    "soccerLevelShort": "NJCAA Division I",
+    "aid": "Athletic",
+    "fundingPathway": "full",
+    "size": 1900,
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Western Texas College is a public Texas community college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 10684,
+      "tuition": 3864,
+      "roomBoard": 5590,
+      "fees": 1230,
+      "maxAthletic": 0.5,
+      "maxAcademic": 2000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Western Texas College's official 2026-27 course catalog (Tier-1: wtc.edu, cross-verified via a Google-cached excerpt after the live PDF endpoint returned an access-denied error) publishes an explicit “Out-of-State and International Residents” tuition rate of $161/credit hour ($483 minimum); at 24 credits/year that is $3,864/yr tuition. The official wtc.edu/page/costs page publishes “Campus Resident, out-of-district” (Texas-resident) at $10,480/yr (tuition+fees+room&board) versus “Commuter, out-of-district” at $4,890/yr (tuition+fees only), isolating a Room & Board component of $5,590/yr. General fees ($1,230/yr) triangulated against a Tier-2 aggregator (Peterson's) as a cross-check, since the live fee table could not be retrieved directly. Direct billed cost: $10,684/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Region 5 Tournament Champion; Mid-South District Runner-Up (lost to Murray State)",
+        "note": "6-6-5 overall (.500), 2-2 conf (.500), 4-2-2 in Region play (.625). Beat Hill College 5-4 on penalties (after a scoreless draw) in the Region 5 Tournament Final, then lost the NJCAA Mid-South District Championship game to Murray State College, who advanced to the NJCAA DI National Tournament. Head coach Daniel Hoskins won the Region 5 title in his first season. Verified via official wtcathletics.com 2025-26 schedule and region2athletics.com's Mid-South District Championship recap."
+      }
+    ],
+    "titles": [
+      "2025 Region 5 Tournament Champion (first season under head coach Daniel Hoskins)",
+      "2025 NJCAA Mid-South District Runner-Up (lost to eventual national-tournament qualifier Murray State College)",
+      "Brian Garcia — 2025 Region 5 Tournament MVP"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Brian Garcia — 2025 Region 5 Tournament MVP, All-Conference/All-Region",
+        "Renson Sayers, Philipp Federer, Myles Taylor — 2025 All-Conference/All-Region honorees"
+      ],
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated alumni/transfer tracking page found, but real 2025 individual postseason honors confirmed via the official coach bio.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "d1Count": null,
+        "totalCount": null,
+        "yearsCovered": null,
+        "years": null,
+        "perYear": null,
+        "sourceUrl": null,
+        "note": "No dedicated alumni/next-level tracking page found on wtcathletics.com. Neutral — NOT measured."
+      }
+    },
+    "devScores": {
+      "tactical": 54,
+      "technical": 55,
+      "fitness": 56
+    },
+    "devScoresNote": "The only school in this batch with an officially confirmed dedicated on-campus soccer complex and a “state-of-the-art Fitness Center” with an indoor track (per the official wtc.edu program overview page). Head coach Daniel Hoskins brings a genuinely international scouting/development pedigree — Head of Scouting and Data Analytics for Gimnàstic de Tarragona (a Spanish third-division professional club) and involvement with TOVO Academy Barcelona since its 2016 founding — though his background skews scouting/analytics/sporting-directorship rather than the traditional playing-and-coaching CV of most peers. One assistant coach (Ramon Chavez) confirmed on staff.",
+    "fitOlivier": 58,
+    "lensScores": {
+      "overall": 58,
+      "soccer": 50,
+      "academic": 15,
+      "minutes": 58,
+      "lifestyle": 50,
+      "value": 67
+    },
+    "tags": [
+      "warm"
+    ],
+    "facilities": [
+      "Dedicated on-campus soccer complex (officially confirmed via wtc.edu)",
+      "State-of-the-art Fitness Center with an indoor track",
+      "2025 Region 5 Tournament Champion, Mid-South District Runner-Up"
+    ],
+    "facilityDetails": {
+      "rating": "Very Good",
+      "housing": {
+        "available": true,
+        "note": "On-campus housing confirmed: Glover Hall and Clinton Hall, first-come first-served with out-of-district freshmen given priority (per the official wtc.edu program overview page). $250 housing deposit required."
+      },
+      "stadium": "A dedicated soccer complex is confirmed on the official wtc.edu overview page (“a soccer complex for our nationally ranked soccer teams”); specific capacity/naming not itemized.",
+      "trainingFields": "Not itemized separately from the soccer complex on official pages.",
+      "strengthConditioning": "A state-of-the-art Fitness Center with an indoor track is confirmed campus-wide (not soccer-exclusive) on the official overview page.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages beyond the Fitness Center.",
+      "sportsMed": "Not itemized on the public staff directory found for this research.",
+      "academicLabs": "A named “Health, PE & Kinesiology” transfer degree plan exists, but its specific coursework could not be verified during this research (see acuAlignNote).",
+      "extras": "Snyder, TX sits in West Texas, within a short drive of Abilene, Lubbock, and Midland per the college's own description.",
+      "note": "The best-resourced facilities of this batch — a dedicated soccer complex and a genuine fitness center — paired with the batch's best confirmed postseason result (Region 5 champion, Mid-South District runner-up), offset by the campaign's most conservative ACU score due to an inaccessible degree-plan document."
+    },
+    "culture": {
+      "vibe": "A small (1,900-student) West Texas community college whose athletics department explicitly markets “nationally ranked soccer teams” backed by a dedicated soccer complex and fitness center — backed up in 2025 by a genuine Region 5 title and a near-miss at the Mid-South District/national-tournament level.",
+      "thingsToDo": "Snyder is a small oil-and-ranching West Texas town; Abilene, Lubbock, and Midland are all described by the college itself as “a short jaunt down the highway,” providing realistic access to larger towns without living in one.",
+      "socialScene": "On-campus housing (Glover Hall, Clinton Hall) plus active student clubs (Fellowship of Christian Athletes, Phi Theta Kappa, Student Government) confirmed on the official site.",
+      "olivierMatch": "★★★★ The best facilities and the best confirmed 2025 postseason result of this batch (Region 5 champion, Mid-South District runner-up), with a genuinely international-pedigreed head coach — offset by an unverified academic pathway and a small, remote West Texas town.",
+      "lifestyleTags": "Warm, remote West Texas setting, on-campus housing, best facilities and postseason result in this batch"
+    },
+    "courses": [
+      "Health, PE & Kinesiology, A.S. (transfer pathway — specific coursework not independently verified this session)"
+    ],
+    "rec": "Western Texas College delivered the best confirmed on-field result of this entire batch: 2025 Region 5 Tournament Champions (beating Hill College 5-4 on penalties in the Final) and NJCAA Mid-South District Runner-Up, falling only to Murray State College, who went on to the national tournament — all in head coach Daniel Hoskins's first season since his spring 2025 appointment. Hoskins brings a genuinely international, if unconventional, pedigree: Head of Scouting and Data Analytics for a Spanish third-division professional club and involvement with TOVO Academy Barcelona since 2016. WTC is also the only school in this batch with an officially confirmed dedicated on-campus soccer complex and a state-of-the-art Fitness Center with an indoor track. The honest gap is academic verification: WTC's “Health, PE & Kinesiology” degree plan is real and named, but its specific coursework could not be retrieved during this research, so this guide scores it at the conservative floor rather than assuming parallel content to peer schools — a genuine open item for a future session, not a judgment on the degree itself. At $10,684/yr it is the second-most affordable school in this batch, with on-campus housing (Glover/Clinton Hall) available.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Gael Barragan (So·M)",
+        "Oumar Berete (So·M)",
+        "Pablo Lobon (So·M)",
+        "Andonie Bobadilla (Fr·M)",
+        "Merci Murama (Fr·M)",
+        "Joshua Diaz (Fr·M)",
+        "Jorge Cruz (Fr·M)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1",
+          "pct": 51,
+          "label": "Squad rotation to likely starter"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2",
+          "pct": 69,
+          "label": "Likely starter — transfer showcase year"
+        }
+      ],
+      "trajectoryNote": "2025-26 roster (official wtcathletics.com roster page — 21 players with class/position data, healthy squad shape): 7 players marked position “M” (Midfielder) — the official roster uses single-letter position codes (G/D/M/F) rather than the granular CM/CAM/CDM breakdown some peer schools publish, so this count is at face value from the official data. Split 3 sophomores / 4 freshmen. Per the standard JUCO 2-year eligibility window, every player on a 2025-26 roster clears before Olivier's August 2027 start regardless of freshman/sophomore status. Ask the coach: 'How many of the 7 midfielders on the 2025-26 roster return for 2026-27, and how many central-midfield spots open in the 2027 recruiting class?'",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "The 2025-26 roster mixes Texas high-school recruits with international players (Germany, Spain, St. Vincent, Mexico); no previous-college column is published on the official roster, so a transfer-vs-freshman split cannot be independently verified."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Health, PE & Kinesiology, A.S. — named transfer pathway; specific coursework not independently verified this session (campaign's most conservative ACU score)"
   }
 ]

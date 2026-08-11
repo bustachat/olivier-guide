@@ -1723,7 +1723,7 @@
       "tuition": 0,
       "roomBoard": 0,
       "fees": 0,
-      "maxAthletic": 1.0,
+      "maxAthletic": 1,
       "maxAcademic": 0,
       "aidType": "athletic",
       "internationalNote": "US Naval Academy provides full tuition, room, board, and monthly stipend — no cost to the athlete. International students require congressional nomination and must commit to US Navy or Marine Corps service post-graduation. Athletic scholarship does not apply — the academy covers all costs."
@@ -1862,7 +1862,8 @@
     "url": "https://navysports.com/sports/mens-soccer",
     "domain": "usna.edu",
     "minutesOutlook": {
-      "available": false
+      "available": false,
+      "reason": "Service academy — international students require congressional nomination and a mandatory post-graduation service commitment, so this is not a viable recruiting target; roster minutes were not researched."
     },
     "acuUnits": [
       {
@@ -1960,7 +1961,7 @@
       "tuition": 0,
       "roomBoard": 0,
       "fees": 0,
-      "maxAthletic": 1.0,
+      "maxAthletic": 1,
       "maxAcademic": 0,
       "aidType": "athletic",
       "internationalNote": "US Military Academy provides full tuition, room, board, and monthly stipend — no cost to the athlete. International students must receive a waiver and commit to US military service post-graduation. Athletic scholarship does not apply — the academy covers all costs."
@@ -2094,7 +2095,8 @@
     "url": "https://goarmywestpoint.com/sports/mens-soccer",
     "domain": "westpoint.edu",
     "minutesOutlook": {
-      "available": false
+      "available": false,
+      "reason": "Service academy — international students require a waiver and a mandatory post-graduation service commitment, so this is not a viable recruiting target; roster minutes were not researched."
     },
     "acuUnits": [
       {

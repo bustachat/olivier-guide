@@ -17563,22 +17563,70 @@
     "acuAlign": 0,
     "acuAlignNote": "Crowder College's Physical Education AA explicitly names teaching, coaching, athletic training, recreation, and health promotion/wellness as transfer-track career outcomes (crowder.edu/program/education/physical-education/) — a genuinely dedicated PE major, not a generic transfer AA. However the specific required-course list sits inside Crowder's 206-page 2026-2027 course catalog PDF, which returned no usable searchable text via the available PDF-viewer tooling this session (the in-browser PDF renderer's find function did not respond, and no standalone program-requirements page equivalent to peer schools' catalog listings was found). Scored at the conservative floor (acuAlign 0) pending a future session with better PDF access — the program's real existence and its explicit athletic-training/health-promotion framing is disclosed here rather than assumed to satisfy any specific ACU unit.",
     "acuUnits": [
-      { "unit": "ANAT100", "covered": false },
-      { "unit": "EXSC222", "covered": false },
-      { "unit": "BIOL125", "covered": false },
-      { "unit": "EXSC225", "covered": false },
-      { "unit": "EXSC322", "covered": false },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": false },
-      { "unit": "EXSC321", "covered": false },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": false },
-      { "unit": "EXSC199", "covered": false },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": false },
-      { "unit": "EXSC122", "covered": false },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ],
     "soccerLevel": "NJCAA Division I — Region 16 (Missouri)",
     "soccerLevelShort": "NJCAA DI — Region 16",
@@ -17765,22 +17813,70 @@
     "acuAlign": 2,
     "acuAlignNote": "Jefferson College holds a genuine, named Articulation Agreement with the University of Central Missouri (UCM) for its Associate of Arts to UCM's Kinesiology, BS (ucmo.edu/current-students/office-of-the-registrar-and-student-records/articulation-agreements/). The AA's 7-hour Natural Science requirement lets a student pick 2 courses from different disciplines, and BIO 211 Anatomy & Physiology I is explicitly one of the listed options, directly mapped by UCM to its own Kinesiology core (BIOL 3401/3402 Human Anatomy/Physiology). Scored conservatively (acuAlign 2, ANAT100 + BIOL125) since A&P I is an ELECTIVE option among several (general Biology, Chemistry, Physics), not a fixed AA requirement — the pathway is real and directly documented by a 4-year institution, but not guaranteed for every AA student.",
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": false },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": false },
-      { "unit": "EXSC322", "covered": false },
-      { "unit": "EXSC394", "covered": false },
-      { "unit": "EXSC224", "covered": false },
-      { "unit": "EXSC321", "covered": false },
-      { "unit": "EXSC204", "covered": false },
-      { "unit": "EXSC216", "covered": false },
-      { "unit": "EXSC199", "covered": false },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": false },
-      { "unit": "EXSC122", "covered": false },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ],
     "soccerLevel": "NJCAA Division I — Region 16 (Missouri)",
     "soccerLevelShort": "NJCAA DI — Region 16",
@@ -17969,22 +18065,70 @@
     "acuAlign": 7,
     "acuAlignNote": "Harcum College offers a genuine, robust Physical Therapist Assistant A.S. degree (77 total credit hours, harcum.edu/PTA) with real clinical experience: a 4-week clinical at the end of Year 1 and two 7-week clinicals at the end of Year 2, leading to national PTA licensure eligibility. The college's own program page lists coursework covering 'anatomy and physiology, electrophysiology, kinesiology, therapeutic exercise, rehabilitation, pathophysiology, and orthopedics.' Mapped conservatively against named course topics: ANAT100 + EXSC222 (anatomy/kinesiology coursework), BIOL125 (foundational biology within A&P), EXSC225 (physiology), EXSC394 + EXSC204 (therapeutic exercise/rehabilitation maps to exercise prescription and delivery), and EXSC398 (the real, required clinical practicum sequence) — a genuinely strong clinical-based academic match, comparable to College of Southern Nevada's PTA program elsewhere in this guide.",
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": false },
-      { "unit": "EXSC394", "covered": true },
-      { "unit": "EXSC224", "covered": false },
-      { "unit": "EXSC321", "covered": false },
-      { "unit": "EXSC204", "covered": true },
-      { "unit": "EXSC216", "covered": false },
-      { "unit": "EXSC199", "covered": false },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": false },
-      { "unit": "EXSC122", "covered": false },
-      { "unit": "EXSC398", "covered": true }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
     ],
     "soccerLevel": "NJCAA Division I — Region 19 (Pennsylvania/Delaware/New Jersey)",
     "soccerLevelShort": "NJCAA DI — Region 19",
@@ -18166,22 +18310,70 @@
     "acuAlign": 4,
     "acuAlignNote": "Hagerstown Community College offers a genuine, dedicated Exercise Science and Health A.S. (hagerstowncc.smartcatalogiq.com, 2026-2027 catalog) that 'serves as a foundation for students pursuing a career in Kinesiology, Exercise Physiology, Physical or Occupational Therapy, Athletic Training, Physical Education, Health Education, Sports Management or Personal/Fitness Training.' The 17-credit Program Requirements block includes EXS-143 Strength Training, EXS-163 Fitness and Conditioning, EXS-230 Foundations of Exercise and Movement, EXS-232 Concepts of Fitness Testing and Program Design, HEA-102 Nutrition, HEA-103 Personal Health, and HEA-105 First Aid. Mapped against named course content: EXSC225 (Foundations of Exercise and Movement), EXSC394 + EXSC204 (Concepts of Fitness Testing and Program Design covers both prescription and delivery), and EXSC216 (Strength Training). No dedicated A&P, biomechanics, sport psychology, or internship course confirmed within the core 17-credit block (a 10-11 credit Restricted Electives block exists but was not individually expanded this session).",
     "acuUnits": [
-      { "unit": "ANAT100", "covered": false },
-      { "unit": "EXSC222", "covered": false },
-      { "unit": "BIOL125", "covered": false },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": false },
-      { "unit": "EXSC394", "covered": true },
-      { "unit": "EXSC224", "covered": false },
-      { "unit": "EXSC321", "covered": false },
-      { "unit": "EXSC204", "covered": true },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": false },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": false },
-      { "unit": "EXSC122", "covered": false },
-      { "unit": "EXSC398", "covered": false }
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
     ],
     "soccerLevel": "NJCAA Division I — Region 20 (Maryland)",
     "soccerLevelShort": "NJCAA DI — Region 20",
@@ -18364,22 +18556,70 @@
     "acuAlign": 8,
     "acuAlignNote": "Harford Community College offers a genuine, comprehensive dedicated Exercise Science A.S. (60 credits, catalog.harford.edu) with a named 4-year articulation pathway to Towson University's B.S. in Exercise Science. Confirmed required coursework: EXSC 101 Introduction to Exercise Science, EXSC 102 Foundations of Resistance Training, BIO 119/120 Biology for Health Professionals, BIO 203/204 Anatomy and Physiology I & II, EXSC 201 Fitness Assessment & Program Design, EXSC 202 Fitness Instruction, PE 229 Advanced Weight Training, and a REQUIRED EXSC 283 Exercise Science Internship. Mapped directly: ANAT100 + EXSC222 (A&P I/II), BIOL125 (Biology for Health Professionals), EXSC225 (Introduction to Exercise Science), EXSC394 + EXSC204 (Fitness Assessment & Program Design + Fitness Instruction), EXSC216 (Resistance Training/Advanced Weight Training), and EXSC398 (the required Internship) — one of the strongest, most directly-mapped academic matches found anywhere in this campaign.",
     "acuUnits": [
-      { "unit": "ANAT100", "covered": true },
-      { "unit": "EXSC222", "covered": true },
-      { "unit": "BIOL125", "covered": true },
-      { "unit": "EXSC225", "covered": true },
-      { "unit": "EXSC322", "covered": false },
-      { "unit": "EXSC394", "covered": true },
-      { "unit": "EXSC224", "covered": false },
-      { "unit": "EXSC321", "covered": false },
-      { "unit": "EXSC204", "covered": true },
-      { "unit": "EXSC216", "covered": true },
-      { "unit": "EXSC199", "covered": false },
-      { "unit": "EXSC296", "covered": false },
-      { "unit": "EXSC187", "covered": false },
-      { "unit": "EXSC230", "covered": false },
-      { "unit": "EXSC122", "covered": false },
-      { "unit": "EXSC398", "covered": true }
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
     ],
     "soccerLevel": "NJCAA Division I — Region 20 (Maryland)",
     "soccerLevelShort": "NJCAA DI — Region 20",
@@ -18539,5 +18779,1913 @@
     "recruit_pathway_note": "All 10 confirmed midfielders on the 2025-26 roster are Fr./So. with no transfer annotation — one of the most genuinely international, true-freshman-entry midfields in the guide (England, France, Denmark, Chile, Cameroon, Brazil, Italy).",
     "acRank": "NJCAA Level",
     "kinRank": "Genuine comprehensive Exercise Science A.S. with a named Towson University B.S. articulation and a required internship"
+  },
+  {
+    "id": "slcc",
+    "name": "Salt Lake CC",
+    "full": "Salt Lake Community College",
+    "loc": "Salt Lake City, UT",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 18 (SWAC)",
+    "confKey": "other",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "The strongest on-field program found anywhere in this entire campaign: an undefeated 17-0 2021 season culminating in the program's first NJCAA Division I Men's Soccer National Championship (2-1 OT over No. 1 Iowa Western, beating already-guide Harford CC 3-0 in pool play en route) — confirmed via SLCC's own site content plus NJCAA's own official YouTube channel highlight videos and Marshall University's own alumni bio for a former SLCC player. Since then: 2022 SWAC champion (9-0-1), 2023 SWAC champion (10-0-2), 2024 SWAC champion (13-0-1, 17-1-1 overall), and 2025 Region 18 Tournament Champion (upset No. 1 seed Snow College 1-0 in the final as the No. 2 seed) before reaching the NJCAA West District Final (lost 2-1 to Mohave College, already a guide school) — two games from a return to Nationals. Head coach Mark Davis's own program bio credits the men's and women's programs combined with 8x SWAC titles, 5x National Tournament appearances, and 1x NJCAA National Coach of the Year across his tenure since 2016.",
+    "njcaaRegion": "Region 18",
+    "njcaaRegionArea": "Utah, Idaho, Colorado, Nevada (Scenic West Athletic Conference)",
+    "profileDepth": "full",
+    "color": [
+      "#fef3c7",
+      "#92400e"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 140,
+    "mapY": 139,
+    "domain": "slccbruins.com",
+    "url": "https://slccbruins.com/sports/mens-soccer",
+    "degreeTitle": "Associate of Science, Exercise Science/Kinesiology",
+    "acuAlign": 7,
+    "acuAlignNote": "Salt Lake Community College offers a genuine, dedicated Exercise Science/Kinesiology A.S. (62 credits, confirmed via catalog.slcc.edu's 2026-2027 program page). Required core (19 credits): BIOL 2320/2325 Human Anatomy + Lab, BIOL 1610/1615 College Biology I + Lab, CHEM 1215 General Chemistry Lab, EXSC 1105/1110/1115 (Cardiorespiratory/Strength/Flexibility Training Principles), EXSC 2500 Introduction to Exercise Science. A rich 14-credit elective pool includes EXSC 2250 Exercise Physiology, EXSC 2425 Evaluation and Assessment of Fitness, EXSC 2430 Designing Training Programs, EXSC 2450 Personal Trainer Internship, and HLTH 2100 Fitness Motivation/Behavioral Response. Mapped directly: ANAT100 (required BIOL 2320/2325), BIOL125 (required BIOL 1610/1615), EXSC225 (elective EXSC 2250 Exercise Physiology), EXSC204 (elective EXSC 2425 + EXSC 2430, testing/prescription), EXSC216 (required EXSC 1110 Principles of Strength Training), EXSC296 (elective HLTH 2100, health/exercise psychology), EXSC398 (elective EXSC 2450 Personal Trainer Internship) — one of the stronger academic matches in the whole campaign, though several units are drawn from the elective pool rather than the required core.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
+    "soccerLevelShort": "NJCAA DI — Region 18",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "17000",
+    "prePT": "Excellent",
+    "prePTShort": "Excellent",
+    "gpa": {
+      "minEntry": "Open enrollment (public community college; state-recognized diploma or GED)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "SLCC is a public community college with open admission — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 32552,
+      "tuition": 15229,
+      "roomBoard": 17323,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "SLCC's own official 2026-27 Cost of Attendance page (slcc.edu/financialaid/educational-expenses.aspx) gives the Non-Resident Independent-student budget: Tuition & Fees $15,229, Housing & Food $17,323 — the correct roomBoard basis since SLCC is a commuter college with no on-campus dormitories (confirmed via the absence of any Housing/Residence Life link on SLCC's own official site navigation and independently via a CollegeVine community answer). Direct billed cost: $32,552/yr — one of the higher costs in this campaign despite the low sticker tuition, driven by Salt Lake City's real cost of living."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "2nd SWAC (10-2-2), Region 18 Tournament Champion",
+        "note": "10-2-2 SWAC (.786, 32 pts, 2nd on tiebreak), 12-4-4 overall (.700). Won the Region 18 Tournament as the No. 2 seed, upsetting No. 1 seed Snow College 1-0 in the final, then reached the NJCAA West District Final (lost 2-1 to Mohave College). Verified via scenicwestsports.com's official 2025 standings and SLCC's own official news articles."
+      },
+      {
+        "yr": 2024,
+        "pos": "1st SWAC — Champion (13-0-1)",
+        "note": "13-0-1 SWAC (.964), 17-1-1 overall (.921). Verified via scenicwestsports.com's official 2024 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "1st SWAC — Champion (10-0-2)",
+        "note": "10-0-2 SWAC (.917), 17-1-2 overall (.900). Verified via scenicwestsports.com's official 2023 standings archive."
+      },
+      {
+        "yr": 2022,
+        "pos": "1st SWAC — Champion (9-0-1)",
+        "note": "9-0-1 SWAC (.950), 12-1-1 overall (.893). Verified via scenicwestsports.com's official 2022 standings archive."
+      },
+      {
+        "yr": 2021,
+        "pos": "1st SWAC — Champion, undefeated (11-0); NJCAA DI National Champion",
+        "note": "Perfect 11-0 SWAC record (1.000), 17-0 overall (1.000, 17-game win streak) — an undefeated national championship season, 2-1 in overtime over No. 1 Iowa Western in the NJCAA DI Men's Soccer National Final, beating already-guide Harford CC 3-0 in pool play en route. Verified via scenicwestsports.com's official 2021 standings archive, SLCC's own site content (Google-cached, original article since redesigned), and NJCAA's own official YouTube channel highlight videos of the tournament."
+      }
+    ],
+    "titles": [
+      "2021 NJCAA Division I Men's Soccer National Champion (undefeated 17-0)",
+      "2021, 2022, 2023, 2024 Scenic West Athletic Conference (Region 18) Champion",
+      "2025 NJCAA Region 18 Tournament Champion"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Taimu Okiyoshi (D/M) — played at SLCC 2020-22 under coach Mark Davis on the 2021 National Championship team, then transferred to NCAA Division I Marshall University, confirmed directly via Marshall Athletics' own official roster bio."
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, Tier-1-confirmed NCAA D1 transfer (Taimu Okiyoshi → Marshall University) named directly in Marshall's own official roster bio, not extrapolated into a measured rate — SLCC's own alumni/transfer tracking is not comprehensively published.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://herdzone.com/sports/mens-soccer/roster/taimu-okiyoshi",
+        "note": "No dedicated multi-year alumni/next-level tracking page found on slccbruins.com. One real, Tier-1-confirmed transfer (Taimu Okiyoshi, 2021 National Championship team, to NCAA D1 Marshall University) found via Marshall's own official roster bio — a single confirmed data point given the program's genuine scale (11X SWAC champion since 2021), not a comprehensive multi-year census, so stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than a measured rate."
+      }
+    },
+    "devScores": {
+      "tactical": 62,
+      "technical": 55,
+      "fitness": 45
+    },
+    "devScoresNote": "Tier-1: head coach Mark Davis has led the program since 2016 (his own program bio credits the combined men's/women's programs with 8x SWAC titles, 5x National Tournament appearances, and 1x NJCAA National Coach of the Year), is also owner/technical director of a real local club infrastructure (Utah United Academy, Utah United USL2), and fields a 2-assistant staff (Trentin Atkin, Drew Hanna). SLCC fields a real dedicated 'Bruin Soccer Field' (confirmed via the athletics site's own facilities section), but no video-analysis, GPS/wearable technology, or dedicated soccer-specific strength & conditioning coach was confirmed on the official staff directory — a program built on coaching continuity and club-pipeline depth rather than confirmed sports-science infrastructure.",
+    "fitOlivier": 57,
+    "lensScores": {
+      "overall": 57,
+      "soccer": 50,
+      "academic": 52,
+      "minutes": 87,
+      "lifestyle": 50,
+      "value": 49
+    },
+    "facilities": [
+      "2021 NJCAA Division I National Champion (undefeated 17-0) — the strongest on-field program in the entire campaign",
+      "2021-2024 four consecutive Scenic West Athletic Conference (Region 18) regular-season titles",
+      "Head coach Mark Davis: 8x SWAC titles, 5x National Tournament appearances, 1x NJCAA National Coach of the Year (combined men's/women's, since 2016)"
+    ],
+    "facilityDetails": {
+      "rating": "Excellent",
+      "stadium": "Bruin Soccer Field — a real, dedicated on-campus soccer facility (confirmed via the athletics site's official facilities section).",
+      "trainingFields": "Dedicated Bruin Soccer Field; no separate secondary training pitch confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the SLCC athletics department.",
+      "academicLabs": "Genuine, dedicated Exercise Science/Kinesiology A.S. (62 credits) with a real elective internship option (EXSC 2450 Personal Trainer Internship).",
+      "extras": "Salt Lake City, UT — the guide's only Utah campus in a genuine major metro area (state capital, ~200k city / ~1.2M metro), with real public transit (TRAX light rail) access.",
+      "note": "The single strongest on-field program found anywhere in this campaign — an undefeated 2021 national championship season and four straight conference titles under 8x-champion head coach Mark Davis — paired with a genuine major-city Utah campus, offset by no on-campus housing and a real major-metro cost of living.",
+      "housing": {
+        "available": false,
+        "note": "Salt Lake Community College is a commuter college with no on-campus dormitories — confirmed via the absence of any Housing/Residence Life link in SLCC's own official site navigation, independently corroborated by a CollegeVine community answer describing SLCC as 'primarily a commuter college' with no on-campus dorms. A first-ever SLCC student housing project (originally planned c.2021, delayed 2022) was investigated but no confirmed operational on-campus housing was found as of this research."
+      }
+    },
+    "culture": {
+      "vibe": "Salt Lake City, UT is a genuine major-city campus — Utah's state capital, roughly 200,000 residents in the city proper and ~1.2M in the metro area, with real public transit (TRAX light rail) connecting the Taylorsville-Redwood campus to downtown.",
+      "thingsToDo": "Downtown Salt Lake City, the Wasatch Mountains (skiing/hiking within 30-45 minutes), Utah Jazz NBA games, and a genuine big-city restaurant/nightlife scene — the guide's most urban Utah option.",
+      "socialScene": "A genuinely international roster (Canada, Brazil, France, Italy, Argentina, Spain confirmed on the 2025-26 roster) built around one of the campaign's most successful programs — 8x SWAC champions, a national title, and a nationally-ranked (No. 18-20) 2025 team.",
+      "olivierMatch": "★★★★★ The single best on-field program found in this entire campaign (a 2021 undefeated national championship, four straight conference titles) in a genuine major city — the clearest combination of soccer pedigree and lifestyle match researched to date, offset only by no on-campus housing and Salt Lake City's real cost of living.",
+      "lifestyleTags": "Major city, national champion program, mountain access, no on-campus housing, internationally diverse roster"
+    },
+    "courses": [
+      "EXSC 2500 Introduction to Exercise Science",
+      "EXSC 1110 Principles of Strength Training",
+      "EXSC 2250 Exercise Physiology",
+      "BIOL 2320/2325 Human Anatomy and Lab"
+    ],
+    "rec": "Salt Lake Community College's story is head coach Mark Davis and a genuinely elite on-field program: an undefeated 17-0 2021 NJCAA Division I National Championship season, four consecutive Scenic West Athletic Conference (Region 18) regular-season titles (2021-2024), and a 2025 Region 18 Tournament Championship that reached the NJCAA West District Final — two games from a return to Nationals. Davis's own program bio credits 8x SWAC titles and 5x National Tournament appearances across his tenure since 2016, and one of his 2021 championship-team players (Taimu Okiyoshi) went on to NCAA Division I Marshall University, confirmed directly via Marshall's own roster bio. SLCC also carries a genuine, dedicated Exercise Science/Kinesiology A.S. Salt Lake City itself is the guide's only Utah campus in a real major metro area, with light-rail access to downtown. The trade-off: no on-campus housing, and the highest direct-billed cost of any Region 18 school researched this batch, driven by Salt Lake City's real cost of living. minutesOutlook is wide open — the entire 2025-26 midfield pool clears NJCAA eligibility before Olivier's Aug 2027 arrival.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Martin Desir (So-MID)",
+        "George Miller (So-MID)",
+        "Braxton Bergholm (R-So-MID)",
+        "Inaki Lambarri (So-MID)",
+        "David Noguera (So-MID)"
+      ],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [
+        "Taylor Kogan (Fr-MID)",
+        "Massimo Juarez (Fr-MID)",
+        "Noa Berthet (Fr-MID)",
+        "Bridger Lucas (Fr-MID)",
+        "Mason Bangerter (Fr-MID)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 90,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "SLCC's own official 2025-26 roster (the most recently populated season) shows 10 midfield-tagged players: 5 sophomores (Desir, Miller, Bergholm, Lambarri, Noguera) who complete their 2-year NJCAA eligibility during the 2025-26 season, and 5 true freshmen (Kogan, Juarez, Berthet, Lucas, Bangerter) who become sophomores in 2026-27 — their final NJCAA season, ending before Olivier's August 2027 start. A genuinely fully-cleared midfield pool. Ask the coach: 'How many central midfielders are in your 2026 recruiting class, given the program's depth and turnover?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "9 of 10 confirmed 2025-26 midfielders are Fr./So. with no transfer annotation, drawn from a genuinely international pool (Canada, France, Argentina) alongside several Utah high-school signings — a program with real true-freshman entry pathways despite its elite recent results.",
+    "acRank": "NJCAA Level",
+    "kinRank": "Genuine dedicated Exercise Science/Kinesiology A.S. with a rich elective pool including a Personal Trainer Internship"
+  },
+  {
+    "id": "snow_college",
+    "name": "Snow College",
+    "full": "Snow College",
+    "loc": "Ephraim, UT",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 18 (SWAC)",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Elite",
+    "jucoTierNote": "2025 Scenic West Athletic Conference (Region 18) regular-season CHAMPION (11-3 SWAC, .786, 33 pts) — the program's first-ever SWAC title, delivered under then-head coach Jack Larter, who departed for NCAA Division I Utah Valley University after the season. Snow reached the Region 18 Tournament Final as the No. 1 seed before losing 1-0 to SLCC. Forward Isaac Stanley earned NJCAA All-American 2nd-Team honors in December 2025 (Elite criterion satisfied directly), and the team was ranked No. 19 nationally in the NJCAA Division I Preseason Poll heading into the 2026 season. Goalkeeper Christensen was named SWAC Goalkeeper of the Year and six players made All-Conference teams. Verified via scenicwestsports.com's official standings archive and Snow's own official news releases.",
+    "njcaaRegion": "Region 18",
+    "njcaaRegionArea": "Utah, Idaho, Colorado, Nevada (Scenic West Athletic Conference)",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1e40af"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 144,
+    "mapY": 161,
+    "domain": "snowbadgers.com",
+    "url": "https://snowbadgers.com/sports/mens-soccer",
+    "degreeTitle": "Associate of Science, Exercise Science",
+    "acuAlign": 1,
+    "acuAlignNote": "Snow College offers a real, dedicated Exercise Science A.S. (60-62 credits, confirmed via catalog.snow.edu's 2026-2027 program requirements page), but the program is academically thin: only EXSC 2010 Introduction to Exercise Science, EXSC 2600 Introduction to Sports Medicine, and EXSC 1543 First Aid/CPR are named exercise-specific courses, plus a choice between a Biology/Anatomy pairing or a Chemistry pairing for the science requirement (not guaranteed anatomy) and HFST 1020 Scientific Foundations of Nutrition. Mapped directly: only EXSC225 (via EXSC 2010 Introduction to Exercise Science). No dedicated biomechanics, sport psychology, or internship course confirmed — the thinnest Exercise Science degree found in Region 18 this batch.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
+    "soccerLevelShort": "NJCAA DI — Region 18",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "5500",
+    "prePT": "Transfer Pathway",
+    "prePTShort": "Transfer Pathway",
+    "gpa": {
+      "minEntry": "Open enrollment (public community college; state-recognized diploma or GED)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Snow College is a public community college with open admission — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 19961,
+      "tuition": 14800,
+      "roomBoard": 4758,
+      "fees": 403,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "Snow College's own official 2026-2027 Tuition & Fees page (snow.edu/admissions/cost.html) gives non-resident tuition $7,400/semester ($14,800/yr) plus Student Fees $201.25/semester ($402.50/yr). Real on-campus housing (snow.edu/offices/housing/cost.html) — Anderson Hall Shared Traditional $1,030/semester plus Plan B meal plan (12 meals/week) $1,349/semester, $2,379/semester = $4,758/yr. Direct billed cost: $19,961/yr — one of the most affordable schools in this campaign, matching Snow's own marketing as 'one of the least expensive schools in the State of Utah.'"
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "1st SWAC — Champion (11-3), Region 18 Tournament Runner-up",
+        "note": "11-3 SWAC (.786, 33 pts, 1st on tiebreak), 14-5 overall. First-ever SWAC regular-season title, then lost the Region 18 Tournament Final 1-0 to SLCC as the No. 1 seed. Verified via scenicwestsports.com's official 2025 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "2nd SWAC (9-3-2)",
+        "note": "9-3-2 SWAC (.714), 13-4-2 overall (.737). Verified via scenicwestsports.com's official 2024 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "5th SWAC (5-6-1)",
+        "note": "5-6-1 SWAC (.458), 7-6-1 overall (.536). Verified via scenicwestsports.com's official 2023 standings archive."
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd SWAC (7-3)",
+        "note": "7-3 SWAC (.700), 12-4 overall (.750). Verified via scenicwestsports.com's official 2022 standings archive."
+      },
+      {
+        "yr": 2021,
+        "pos": "2nd SWAC (8-3)",
+        "note": "8-3 SWAC (.727), 11-5 overall (.688). Verified via scenicwestsports.com's official 2021 standings archive."
+      }
+    ],
+    "titles": [
+      "2025 Scenic West Athletic Conference (Region 18) Champion — first SWAC title in program history"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Forward Isaac Stanley earned NJCAA Division I 2nd-Team All-American honors in December 2025, confirmed via Snow College Athletics' own official news release, but no specific NCAA transfer destination was confirmed for him within this session's research.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://snowbadgers.com/sports/mens-soccer/archives",
+        "note": "No dedicated multi-year alumni/next-level tracking page found on snowbadgers.com within this session's research. Forward Isaac Stanley's December 2025 NJCAA All-American honor is a real, Tier-1-confirmed individual accolade, but stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b since no specific transfer destination or multi-year rate was confirmed."
+      }
+    },
+    "devScores": {
+      "tactical": 48,
+      "technical": 45,
+      "fitness": 40
+    },
+    "devScoresNote": "Tier-1: new head coach Lewis Wilson (born/raised Aberdeen, Scotland; 8 years in the Aberdeen FC Academy; played NCAA at St. Mary's University and University of Central Arkansas, 2x All-American selection; assistant coach at Snow for both men's and women's soccer since summer 2025, promoted to interim HC January 2026 then permanent HC April 2026) is in his first season leading the program — the 2025 SWAC title was delivered under his departed predecessor Jack Larter, who left for NCAA D1 Utah Valley University. A 2-person staff (Wilson + one assistant). No dedicated soccer-specific stadium, video-analysis, or strength & conditioning staff confirmed on the official site beyond the shared Horne Activity Center/Bergeson Athletic Center facilities.",
+    "fitOlivier": 43,
+    "lensScores": {
+      "overall": 43,
+      "soccer": 44,
+      "academic": 20,
+      "minutes": 56,
+      "lifestyle": 0,
+      "value": 50
+    },
+    "facilities": [
+      "2025 Scenic West Athletic Conference (Region 18) Champion — first SWAC title in program history",
+      "Forward Isaac Stanley: December 2025 NJCAA Division I 2nd-Team All-American",
+      "Preseason ranked No. 19 nationally in the NJCAA Division I Poll for the 2026 season"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Terry Foote Stadium — a shared Snow College athletics facility; no soccer-specific dedicated stadium confirmed.",
+      "trainingFields": "Standard campus athletic fields via the Horne Activity Center/Bergeson Athletic Center; no separate dedicated soccer training pitch confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the Snow College athletics department.",
+      "academicLabs": "Real but academically thin Exercise Science A.S. — only Introduction to Exercise Science, Introduction to Sports Medicine, and First Aid/CPR are exercise-specific courses.",
+      "extras": "Ephraim, UT (pop. ~6,500) — a genuine small, rural Sanpete County college town in central Utah.",
+      "note": "A genuinely first-in-program-history SWAC title (2025) and a real NJCAA All-American, delivered under a departed coach — new head coach Lewis Wilson (ex-Aberdeen FC Academy, 2x NCAA All-American as a player) inherits a nationally-ranked (No. 19 preseason) roster in his first season.",
+      "housing": {
+        "available": true,
+        "note": "Snow College operates real on-campus housing (snow.edu/offices/housing/cost.html) — multiple named residence halls including Anderson Hall, Nuttall Hall, Snow Hall, Castilleja Hall, and the Suites at Academy Square, plus married-student housing (Badger Studios, Summit Valley)."
+      }
+    },
+    "culture": {
+      "vibe": "Ephraim, UT is a small, rural Sanpete County town (pop. ~6,500) in central Utah — genuinely quiet, agricultural surroundings, roughly 2 hours south of Salt Lake City.",
+      "thingsToDo": "Campus-centered small-town college life; Salt Lake City (~2hr) and the Wasatch mountain resorts are the nearest bigger-city/ski options.",
+      "socialScene": "A nationally-ranked (No. 19 preseason 2026) team with a real mix of Utah, English, Welsh, and Canadian players on the current roster, built around the program's first-ever SWAC title in 2025.",
+      "olivierMatch": "★★★ A genuinely strong, nationally-ranked program (first-ever SWAC title, an NJCAA All-American) inheriting a new first-time head coach, in a very quiet rural Utah college town — the trade-off is a genuinely competitive midfield (6 of 9 current midfielders return as experienced sophomores in Olivier's first season) and no city/warm-climate lifestyle bonus.",
+      "lifestyleTags": "Small rural Utah town, first-ever conference title, nationally ranked, new head coach, real on-campus housing"
+    },
+    "courses": [
+      "EXSC 2010 Introduction to Exercise Science",
+      "EXSC 2600 Introduction to Sports Medicine",
+      "EXSC 1543 First Aid and CPR",
+      "HFST 1020 Scientific Foundations of Nutrition"
+    ],
+    "rec": "Snow College's story is a program at a genuine high point on the field — the school's first-ever Scenic West Athletic Conference (Region 18) title in 2025, an NJCAA Division I All-American (Isaac Stanley), and a No. 19 national preseason ranking heading into 2026 — now led by a brand-new head coach. Lewis Wilson, an 8-year product of the Aberdeen FC Academy in Scotland and a 2x NCAA All-American at St. Mary's University and University of Central Arkansas, inherits the roster after his predecessor Jack Larter left for NCAA Division I Utah Valley University following the title season. The Exercise Science A.S. is real but academically thin. Ephraim is a genuinely quiet, rural central Utah college town. minutesOutlook shows real entry competition — 3 of 9 current midfielders clear immediately, but 6 return as experienced sophomores directly competing with Olivier in his first season, before the entire pool clears by his second year.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Tom Culverhouse (So-MID)",
+        "Alex Guillory (So-MID)",
+        "Amir Odeh (So-MID)"
+      ],
+      "rising_senior_2027_count": 6,
+      "rising_senior_2027_names": [
+        "Christian Nsa (Fr-MID)",
+        "Michael Martinez (Fr-MID)",
+        "Dylan Meek (Fr-MID)",
+        "Bobby Simmonds (Fr-MID)",
+        "Felix Biederman (Fr-MID)",
+        "Jace Thomson (Fr-MID)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 40,
+          "label": "Squad rotation",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 80,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "Snow's own official 2026-27 roster (current, fully populated with position/class data) shows 9 midfield-tagged players: 3 sophomores (Culverhouse, Guillory, Odeh) who complete their 2-year NJCAA eligibility during the 2026-27 season and clear before Olivier's August 2027 start; the other 6 (Nsa, Martinez, Meek, Simmonds, Biederman, Thomson) are freshmen who return as sophomores in 2027-28, directly competing with Olivier in his first season — but who then complete their own eligibility at the end of that season, opening the pool fully by his second year. Ask the coach: 'Of your six returning midfielders, which are locked into starting roles heading into 2027?'"
+    },
+    "recruit_pathway": "Mixed entry",
+    "recruit_pathway_note": "A genuine mix of true freshmen (Christian Nsa arrives via a Quebec CEGEP, a transfer-adjacent pathway) and true high-school freshmen on the 2026-27 midfield — real competition for Olivier's targeted position, not a clean slate.",
+    "acRank": "NJCAA Level",
+    "kinRank": "Real but academically thin Exercise Science A.S. — Introduction to Exercise Science, Introduction to Sports Medicine, First Aid/CPR only"
+  },
+  {
+    "id": "north_idaho_college",
+    "name": "North Idaho College",
+    "full": "North Idaho College",
+    "loc": "Coeur d'Alene, ID",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 18 (SWAC)",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A consistently competitive but not yet title-winning program in Region 18's 2024-2025 window (its first two seasons in the conference after joining alongside College of Southern Idaho): 3rd place in 2024 (8-3-3 SWAC, 13-4-3 overall) and tied 3rd in 2025 (9-4-1 SWAC, 13-6-1 overall). Goalkeeper Ariel Martinez, a true freshman, made the 2025 Region 18 All-Tournament Team. Verified via scenicwestsports.com's official standings archive and SLCC's own Region 18 championship recap article.",
+    "njcaaRegion": "Region 18",
+    "njcaaRegionArea": "Utah, Idaho, Colorado, Nevada (Scenic West Athletic Conference)",
+    "profileDepth": "full",
+    "color": [
+      "#fee2e2",
+      "#991b1b"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 122,
+    "mapY": 69,
+    "domain": "nicathletics.com",
+    "url": "https://nicathletics.com/sports/msoc/index",
+    "degreeTitle": "Associate of Science, Physical Education, Athletic Training/Exercise Science Emphasis",
+    "acuAlign": 5,
+    "acuAlignNote": "North Idaho College offers a Physical Education A.S. (catalog.nic.edu) with a genuine Athletic Training/Exercise Science recommended emphasis. Core requirements include a choice between BIOL-175 Human Biology or BIOL-227 Human Anatomy & Physiology I, plus 15 credits selected from PE-160/222/223/225/227/228/230/288. The Athletic Training/Exercise Science emphasis specifically recommends BIOL-228 Human Anatomy and Physiology II with Cadaver, PE-248 Athletic Injuries-Sports Medicine, and PE-250 Clinical Athletic Training — a genuine cadaver-based anatomy course and a real clinical practicum. Mapped directly: ANAT100 (via the recommended BIOL-228 cadaver A&P II elective), BIOL125 (via the BIOL-175 Human Biology core option), EXSC225 (via PE-223 Exercise Physiology, one of the 15-credit selections), EXSC199 (via PE-225 Sports Psychology, one of the 15-credit selections), EXSC398 (via PE-250 Clinical Athletic Training, a genuine hands-on clinical course).",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
+    "soccerLevelShort": "NJCAA DI — Region 18",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "4700",
+    "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "Open enrollment (public community college; state-recognized diploma or GED)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "North Idaho College is a public community college with open admission — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 19060,
+      "tuition": 9000,
+      "roomBoard": 9100,
+      "fees": 960,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "North Idaho College's own official 2026 Fall/2027 Spring Tuition & Fees table gives Non-Resident tuition at $375/credit (24 credits/yr = $9,000), plus $19.50/credit in general fees (Athletics, Technology, Health Services, Student Activities) = ~$960/yr. Real on-campus housing (nic.edu/residencehall/rooms-and-cost) — Double Room $2,350/semester plus a mid-tier Double + $2,200 All Flex meal plan, $4,550/semester = $9,100/yr. Direct billed cost: $19,060/yr."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "T-3rd SWAC (9-4-1)",
+        "note": "9-4-1 SWAC (.679, 28 pts), 13-6-1 overall (.675). GK Ariel Martinez named to the Region 18 All-Tournament Team. Verified via scenicwestsports.com's official 2025 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "3rd SWAC (8-3-3)",
+        "note": "8-3-3 SWAC (.679, 27 pts), 13-4-3 overall (.725). North Idaho's debut season in the SWAC/Region 18 conference. Verified via scenicwestsports.com's official 2024 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed within this session's research.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://nicathletics.com/sports/msoc/index",
+        "note": "No dedicated alumni/next-level tracking page found on nicathletics.com within this session's research. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 55,
+      "technical": 52,
+      "fitness": 42
+    },
+    "devScoresNote": "Tier-1: head coach Brad Williams (in his 3rd-4th season, hired ~2023) previously coached at NCAA Division II Concordia University Irvine, is a goalkeeper specialist who runs his own camps, and was a finalist for the 2026 North Idaho Sports Awards Banquet Coach of the Year — a real regional recognition. A 2-person staff (Williams + assistant Gunnar Skindlov). NIC fields a real dedicated soccer facility, Eisenwinter Field, confirmed via the athletics site's own facilities section — distinct from the shared Christianson Gym and city-owned Memorial Field. No video-analysis, GPS, or dedicated soccer strength & conditioning staff confirmed.",
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 47,
+      "academic": 42,
+      "minutes": 87,
+      "lifestyle": 0,
+      "value": 58
+    },
+    "facilities": [
+      "Real, dedicated soccer facility — Eisenwinter Field",
+      "Head coach Brad Williams: prior NCAA Division II experience (Concordia University Irvine), 2026 North Idaho Sports Awards finalist",
+      "Genuine Athletic Training/Exercise Science emphasis with a cadaver-based Human Anatomy & Physiology II course and a required clinical practicum"
+    ],
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "Eisenwinter Field — a real, dedicated on-campus soccer facility (confirmed via the athletics site's official facilities section, distinct from Christianson Gym).",
+      "trainingFields": "Eisenwinter Field; Memorial Field (a nearby city-owned Coeur d'Alene facility) is also used.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the NIC athletics department.",
+      "academicLabs": "Genuine Athletic Training/Exercise Science emphasis within the PE A.S., including a cadaver-based Human Anatomy & Physiology II course and a required Clinical Athletic Training practicum.",
+      "extras": "Coeur d'Alene, ID (pop. ~55,000) — a genuine scenic resort town on Lake Coeur d'Alene in the Idaho Panhandle, close to Spokane, WA (~30 min).",
+      "note": "A steadily competitive, still-building Region 18 program (its first two seasons in the conference) under a coach with real NCAA D2 experience, backed by a genuine dedicated soccer facility and a cadaver-based anatomy/clinical Athletic Training emphasis, in a scenic resort-town setting.",
+      "housing": {
+        "available": true,
+        "note": "North Idaho College operates real on-campus housing (nic.edu/residencehall/rooms-and-cost) with named Single/Double room options and multiple meal-plan tiers."
+      }
+    },
+    "culture": {
+      "vibe": "Coeur d'Alene, ID (pop. ~55,000) is a genuinely scenic Idaho Panhandle resort town on Lake Coeur d'Alene, roughly 30 minutes from Spokane, WA — a real lake-and-mountain lifestyle, not a major metro.",
+      "thingsToDo": "Lake Coeur d'Alene boating/beaches, the Idaho Panhandle's forests and ski resorts (Silver Mountain, Schweitzer within driving range), and Spokane's larger city amenities a short drive away.",
+      "socialScene": "A steadily competitive, still-building Region 18 program in only its second conference season, with a real dedicated home field (Eisenwinter Field).",
+      "olivierMatch": "★★★ A scenic lake-town setting with a real dedicated soccer facility and a genuinely strong Athletic Training/Exercise Science academic pathway (cadaver anatomy, clinical practicum), under a coach with real NCAA D2 experience — offset by a cold Idaho Panhandle climate and no city lifestyle match.",
+      "lifestyleTags": "Scenic lake resort town, dedicated soccer field, cadaver anatomy course, real on-campus housing"
+    },
+    "courses": [
+      "PE-223 Exercise Physiology",
+      "PE-225 Sports Psychology",
+      "PE-250 Clinical Athletic Training",
+      "BIOL-228 Human Anatomy and Physiology II with Cadaver"
+    ],
+    "rec": "North Idaho College is a steadily competitive Region 18 program in only its second conference season (joined in 2024 alongside College of Southern Idaho), finishing 3rd in 2024 and tied 3rd in 2025 under head coach Brad Williams, who brings real prior NCAA Division II experience from Concordia University Irvine and was a finalist for the 2026 North Idaho Sports Awards Banquet Coach of the Year. True freshman goalkeeper Ariel Martinez made the 2025 Region 18 All-Tournament Team. The program plays at a real dedicated facility, Eisenwinter Field, and carries a genuinely strong Athletic Training/Exercise Science emphasis with a cadaver-based anatomy course and a required clinical practicum — one of the stronger academic packages in this batch. Coeur d'Alene is a scenic lake-and-mountain resort town in the Idaho Panhandle, close to Spokane. minutesOutlook is wide open — the entire 15-player 2025-26 midfield pool clears NJCAA eligibility before Olivier's Aug 2027 arrival.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 15,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Ben Innes (So-MID)",
+        "Amani Contreras (So-MID)",
+        "Lorian Aerts (So-MID)",
+        "Daniel Gutierrez (So-MID)",
+        "Isiah Ben (So-MID)",
+        "Drew Hansen (So-MID)",
+        "Judah Straight (So-MID)",
+        "Jose Guzman (So-MID)"
+      ],
+      "rising_senior_2027_count": 7,
+      "rising_senior_2027_names": [
+        "Fabian Arguello (Fr-MID)",
+        "Aidan McGuire (Fr-MID)",
+        "Federico Bellisi (Fr-MID)",
+        "Leonardo Andrejic (Fr-MID)",
+        "Sebastiano Casini (Fr-MID)",
+        "Victor Picard (Fr-MID)",
+        "Luis Velasco (Fr-MID)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 90,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "North Idaho's own official 2025-26 roster (the most recently populated season) shows 15 midfield-tagged players: 8 sophomores who complete their 2-year NJCAA eligibility during the 2025-26 season, and 7 true freshmen who become sophomores in 2026-27 — their final NJCAA season, ending before Olivier's August 2027 start. The largest, and most fully-cleared, midfield pool researched in this batch. Ask the coach: 'With 15 midfielders on the books this year, how many spots typically open for incoming recruits each cycle?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "A genuinely large and international 2025-26 midfield pool (Brazil, Senegal, Belgium, Mongolia, Trinidad & Tobago, Canada represented) with no transfer annotations — a real true-freshman entry pathway.",
+    "acRank": "NJCAA Level",
+    "kinRank": "Genuine Athletic Training/Exercise Science emphasis with a cadaver-based Human Anatomy & Physiology II course and a required clinical practicum"
+  },
+  {
+    "id": "college_of_southern_idaho",
+    "name": "College of Southern Idaho",
+    "full": "College of Southern Idaho",
+    "loc": "Twin Falls, ID",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 18 (SWAC)",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A young program (launched by founding head coach Alex Ferreira in August 2023) showing real year-over-year improvement: 5th of 8 SWAC teams in its 2024 debut season (5-8-1, .393) improving to 4th in 2025 (8-5-1, .607) — no titles or postseason results in the 2021-2025 window, but a genuine upward trajectory in only its second competitive season. Verified via scenicwestsports.com's official standings archive.",
+    "njcaaRegion": "Region 18",
+    "njcaaRegionArea": "Utah, Idaho, Colorado, Nevada (Scenic West Athletic Conference)",
+    "profileDepth": "full",
+    "color": [
+      "#d1fae5",
+      "#065f46"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 112,
+    "mapY": 110,
+    "domain": "athletics.csi.edu",
+    "url": "https://athletics.csi.edu/sports/msoc/index",
+    "degreeTitle": "Associate of Science, Health Science",
+    "acuAlign": 1,
+    "acuAlignNote": "College of Southern Idaho does not offer a dedicated Exercise Science, Kinesiology, or Athletic Training degree; the closest real pathway is a Health Science A.S. (csi.smartcatalogiq.com), which requires BIOL 227 Human Anatomy & Physiology 1 (sophomore fall) AND BIOL 228 Human Anatomy & Physiology 2 (sophomore spring) as a genuine required two-semester sequence, plus ALLH 220 Fundamentals of Nutrition and public-health coursework (not ACU-relevant). A real, separately accredited Physical Therapist Assistant AAS exists at CSI (with genuine clinical education) but was not scored here since it is a selective, licensure-track program rather than a general transfer pathway. Mapped directly: ANAT100 only, via the required BIOL 227/228 sequence — a thin but genuinely required match.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
+    "soccerLevelShort": "NJCAA DI — Region 18",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "8000",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "Open enrollment (public community college; state-recognized diploma or GED)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "College of Southern Idaho is a public community college with open admission — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 13898,
+      "tuition": 7008,
+      "roomBoard": 6890,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "CSI's own official Cost of Attendance page (csi.edu/financial-aid/cost-of-attendance.aspx) gives the on-campus Out-of-State budget: Tuition and Fees $7,008, Housing $2,600, Food $4,290 ($6,890 combined). Direct billed cost: $13,898/yr — one of the cheapest schools found anywhere in this entire campaign."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "4th SWAC (8-5-1)",
+        "note": "8-5-1 SWAC (.607, 25 pts), 8-8-1 overall (.500) — a real improvement from the program's 2024 debut season. Verified via scenicwestsports.com's official 2025 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "5th SWAC (5-8-1)",
+        "note": "5-8-1 SWAC (.393, 16 pts), 6-9-1 overall (.406). CSI's debut season in the SWAC/Region 18 conference, launched by founding head coach Alex Ferreira in August 2023. Verified via scenicwestsports.com's official 2024 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. As a program launched in 2023, no multi-year NCAA transfer history yet exists to confirm.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://athletics.csi.edu/sports/msoc/index",
+        "note": "CSI's men's soccer program was founded in August 2023 — genuinely too young to have a multi-year transfer/alumni history. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 48,
+      "technical": 42,
+      "fitness": 38
+    },
+    "devScoresNote": "Tier-1: founding head coach Alex Ferreira has run the program since its August 2023 launch, explicitly prioritizes recruiting Idaho-born players, and is a visible figure on the national youth-showcase circuit (interviewed by multiple recruiting-content accounts). A 3-person staff (Ferreira, assistant Andrew Zaleski, goalkeeper coach Alex Maia) — real depth for a program in only its third year. No dedicated soccer facility, video-analysis, or strength & conditioning staff confirmed on the official site.",
+    "fitOlivier": 40,
+    "lensScores": {
+      "overall": 40,
+      "soccer": 43,
+      "academic": 20,
+      "minutes": 47,
+      "lifestyle": 0,
+      "value": 53
+    },
+    "facilities": [
+      "Founding head coach Alex Ferreira built the program from its August 2023 launch",
+      "A real year-over-year improvement: 5th in 2024 (debut season) to 4th in 2025",
+      "One of the cheapest costs of attendance found anywhere in this entire campaign ($13,898/yr)"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated stadium name or seating capacity confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no separate dedicated training pitch confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the CSI athletics department.",
+      "academicLabs": "Health Science A.S. with a required two-semester Human Anatomy & Physiology sequence; a separately accredited Physical Therapist Assistant AAS also exists at CSI (selective, not scored here).",
+      "extras": "Twin Falls, ID (pop. ~51,000) — a genuine regional hub in south-central Idaho, home to the Perrine Bridge and Snake River Canyon.",
+      "note": "A young, still-developing program (launched August 2023) showing genuine year-over-year improvement under founding head coach Alex Ferreira, at one of the cheapest costs of attendance found anywhere in this campaign.",
+      "housing": {
+        "available": true,
+        "note": "College of Southern Idaho's own official Cost of Attendance page confirms real on-campus housing ('You live in the CSI dorms or share a CSI apartment with a roommate') with a disclosed $2,600/yr housing charge."
+      }
+    },
+    "culture": {
+      "vibe": "Twin Falls, ID (pop. ~51,000) is a genuine regional hub in south-central Idaho, best known for the Perrine Bridge (a major BASE-jumping site) and the Snake River Canyon — a real small city, not rural isolation.",
+      "thingsToDo": "Shoshone Falls ('Niagara of the West'), the Snake River Canyon, and Twin Falls' own downtown — genuinely more amenities than most Region 18 rural campuses.",
+      "socialScene": "A young, still-building program in only its third year of existence, under a coach explicitly focused on developing Idaho-born talent.",
+      "olivierMatch": "★★★ A genuinely improving young program at one of the cheapest costs of attendance in the entire campaign, in a real regional Idaho hub — offset by a still-thin dev environment and a genuinely competitive current midfield (8 of 10 return as experienced sophomores in Olivier's first season).",
+      "lifestyleTags": "Regional Idaho hub, young program, real on-campus housing, cheapest cost in the batch"
+    },
+    "courses": [
+      "BIOL 227 Human Anatomy & Physiology 1",
+      "BIOL 228 Human Anatomy & Physiology 2",
+      "ALLH 220 Fundamentals of Nutrition",
+      "ALLH 101 Medical Terminology"
+    ],
+    "rec": "College of Southern Idaho is a young program, founded in August 2023 by head coach Alex Ferreira, showing real year-over-year improvement — from 5th of 8 in its 2024 SWAC debut season to 4th in 2025. Ferreira runs a genuine 3-person staff (including a dedicated goalkeeper coach) and is an active presence on the national youth-showcase recruiting circuit. CSI does not offer a dedicated Exercise Science degree, but its Health Science A.S. requires a genuine two-semester Human Anatomy & Physiology sequence. Twin Falls is a real south-central Idaho regional hub, home to the Perrine Bridge and Snake River Canyon, and CSI's cost of attendance ($13,898/yr) is one of the cheapest found anywhere in this entire campaign. minutesOutlook shows real, heavy entry competition — only 2 of 10 current midfielders clear immediately, with 8 returning as experienced sophomores directly competing with Olivier in his first season, before the pool fully clears by his second year.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Wilf Douglas (So-CM)",
+        "Enrique Nevarez (So-CM)"
+      ],
+      "rising_senior_2027_count": 8,
+      "rising_senior_2027_names": [
+        "Juan Porto Pascual (Fr-MID)",
+        "Ilan Portejoie (Fr-MID)",
+        "Max Serrano (Fr-MID)",
+        "Yannick Theis (Fr-MID)",
+        "Wisdom Herrera (Fr-MID)",
+        "Nicolas Anatoh (Fr-MID)",
+        "Yves Mugisha (Fr-MID)",
+        "Gordon Peterson (Fr-MID/DEF)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 25,
+          "label": "Bench / development",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 80,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "CSI's own official 2026 roster (current, fully populated) shows 10 midfield-tagged players: only 2 sophomores (Douglas, Nevarez) who clear before Olivier's August 2027 arrival, and 8 true freshmen who become sophomores in 2027-28 — directly competing with Olivier in his first season — before completing their own eligibility and opening the pool fully by his second year. The most heavily-weighted-toward-freshmen midfield researched in this batch, consistent with a program only in its third year of existence. Ask the coach: 'With 8 sophomores returning in 2027, how many central midfield starting spots do you expect to be genuinely open?'"
+    },
+    "recruit_pathway": "Mixed entry",
+    "recruit_pathway_note": "A genuinely international, almost entirely true-freshman 2026 midfield pool (Spain, France x2, Germany x2, Rwanda) — real depth being built from scratch as the program enters its third year.",
+    "acRank": "NJCAA Level",
+    "kinRank": "No dedicated Exercise Science/Kinesiology degree; Health Science A.S. requires a genuine 2-semester Human Anatomy & Physiology sequence"
+  },
+  {
+    "id": "colorado_northwestern_cc",
+    "name": "Colorado NW CC",
+    "full": "Colorado Northwestern Community College",
+    "loc": "Rangely, CO",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 18 (SWAC)",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "Consistently the weakest program in Region 18/SWAC across the full 2021-2025 research window: 1-9 SWAC in 2021, winless (0-10) in 2022, 3-9 in 2023, 3-11 in 2024, and 2-11-1 in 2025 — a genuine, extended rebuild rather than a single bad season. A new head coach, Dave Brown, was hired for the 2026 season with real coaching pedigree from an NJCAA regional-championship staff at Jones College. Verified via scenicwestsports.com's official standings archive across all five seasons.",
+    "njcaaRegion": "Region 18",
+    "njcaaRegionArea": "Utah, Idaho, Colorado, Nevada (Scenic West Athletic Conference)",
+    "profileDepth": "full",
+    "color": [
+      "#e0e7ff",
+      "#3730a3"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 175,
+    "mapY": 150,
+    "domain": "athletics.cncc.edu",
+    "url": "https://athletics.cncc.edu/sports/mens-soccer",
+    "degreeTitle": "Associate of Science, Biology (general transfer)",
+    "acuAlign": 0,
+    "acuAlignNote": "Colorado Northwestern Community College does not offer a dedicated Exercise Science, Kinesiology, Athletic Training, or Physical Education degree — confirmed via the college's own complete Degrees & Programs listing (cncc.edu/track/degrees) for both the Rangely and Craig campuses, which include Associate of Science tracks in Agricultural Business, Animal Science, Biology, Equine Science, Geology, Math, and Psychology, but none in exercise/kinesiology sciences. A genuine Human Anatomy and Physiology I/II sequence (BIO 2101/2102) exists in the catalog as a required Nursing-AAS prerequisite, but is not part of the general Biology A.S. requirements, so is not counted here. acuAlign scored 0, matching the same honest 'no dedicated program' pattern found at Northwest College, WY (Batch 7).",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
+    "soccerLevelShort": "NJCAA DI — Region 18",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1500",
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "Open enrollment (public community college; state-recognized diploma or GED)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Colorado Northwestern Community College is a public community college with open admission — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 19767,
+      "tuition": 10057,
+      "roomBoard": 9710,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "CNCC's own official 2026-2027 Tuition and Costs page (cncc.edu/admissions/tuition-and-costs) gives Out-of-State Residents Tuition and Fees (30 credit hours) $10,057.40, and Residence Hall and Meal Plan Range $9,710-$11,780 (using the low end, Ross Hall Double $1,818/semester + 14 Meals/Week Plan $3,037/semester = $9,710/yr). Direct billed cost: $19,767/yr."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "8th SWAC (2-11-1)",
+        "note": "2-11-1 SWAC (.179, 7 pts), 2-13-2 overall (.176). Verified via scenicwestsports.com's official 2025 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "7th SWAC (3-11)",
+        "note": "3-11 SWAC (.214, 9 pts), 4-13-1 overall (.250). Verified via scenicwestsports.com's official 2024 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "6th SWAC (3-9)",
+        "note": "3-9 SWAC (.250), 4-12-1 overall (.265). Verified via scenicwestsports.com's official 2023 standings archive."
+      },
+      {
+        "yr": 2022,
+        "pos": "6th SWAC — winless (0-10)",
+        "note": "0-10 SWAC (.000), 0-14-1 overall (.033). Verified via scenicwestsports.com's official 2022 standings archive."
+      },
+      {
+        "yr": 2021,
+        "pos": "5th SWAC (1-9)",
+        "note": "1-9 SWAC (.100), 3-12 overall (.200). Verified via scenicwestsports.com's official 2021 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No NCAA transfer destinations confirmed within this session's research.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://athletics.cncc.edu/sports/mens-soccer",
+        "note": "No dedicated alumni/next-level tracking page found on athletics.cncc.edu within this session's research. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 42,
+      "technical": 38,
+      "fitness": 35
+    },
+    "devScoresNote": "Tier-1: new head coach Dave Brown (hired for the 2026 season, his first as a JUCO head coach) brings genuine prior staff experience at Jones College (NJCAA), where he was part of a coaching staff that won MACCC, NJCAA Region 23, and Gulf South District Championships and was recognized as United Soccer Coaches Junior College Division II South Staff of the Year, plus two seasons as a graduate assistant at NCAA Division II Christian Brothers University. Prior head coaches (Doug Seigle, Justin Motzkus) departed after CNCC's consistently last-place results — genuine coaching turnover reflecting the program's extended rebuild. No dedicated soccer facility, video-analysis, or strength & conditioning staff confirmed.",
+    "fitOlivier": 40,
+    "lensScores": {
+      "overall": 40,
+      "soccer": 40,
+      "academic": 15,
+      "minutes": 50,
+      "lifestyle": 0,
+      "value": 49
+    },
+    "facilities": [
+      "New head coach Dave Brown arrives with real staff experience from an NJCAA regional/district championship program (Jones College)",
+      "A genuine extended program rebuild — consistently last or near-last in Region 18 across all five researched seasons (2021-2025)"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated stadium name or seating capacity confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no separate dedicated training pitch confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the CNCC athletics department.",
+      "academicLabs": "No dedicated Exercise Science/Kinesiology coursework; a real Human Anatomy & Physiology I/II sequence exists in the catalog as a Nursing-AAS prerequisite only.",
+      "extras": "Rangely, CO (pop. ~2,300) — a genuinely remote, small oil-and-gas town in far northwestern Colorado, near the Utah border.",
+      "note": "A program in a genuine, extended multi-season rebuild (last or near-last every year 2021-2025), now under new head coach Dave Brown, who brings real staff experience from an NJCAA regional-championship program — in a very small, remote northwestern Colorado town with no dedicated Exercise Science degree.",
+      "housing": {
+        "available": true,
+        "note": "Colorado Northwestern Community College operates real on-campus housing (Ross Hall, Holland Hall, Holland East Hall, Nichols Hall — confirmed via the college's own Tuition and Costs page with named per-semester room rates)."
+      }
+    },
+    "culture": {
+      "vibe": "Rangely, CO (pop. ~2,300) is a genuinely small, remote oil-and-gas town in far northwestern Colorado, near the Utah border — the most rural, isolated campus researched in this batch.",
+      "thingsToDo": "Dinosaur National Monument and outdoor recreation on the White River are the area's main draws; the nearest larger city (Grand Junction, CO or Vernal, UT) is over an hour away.",
+      "socialScene": "A program in a genuine, extended rebuild now led by a brand-new head coach with real championship-staff pedigree from elsewhere in the NJCAA.",
+      "olivierMatch": "★★ The weakest on-field program researched in this batch, in the most remote setting — a genuine long-shot pick, though the incoming coach brings real credentials and the minutesOutlook picture could not be reliably assessed due to a genuine roster position-data gap.",
+      "lifestyleTags": "Very remote small town, extended program rebuild, new coach with real pedigree, real on-campus housing"
+    },
+    "courses": [
+      "BIO 2101 Anatomy and Physiology I (Nursing-AAS prerequisite, not part of the general Biology A.S.)",
+      "BIO 2102 Anatomy and Physiology II (Nursing-AAS prerequisite, not part of the general Biology A.S.)"
+    ],
+    "rec": "Colorado Northwestern Community College is a program in a genuine, extended rebuild — last or near-last in Region 18/SWAC in every one of the five seasons researched (2021-2025), including a winless 2022. New head coach Dave Brown, hired for 2026, is a genuinely credentialed hire despite the program's results: he was part of a Jones College (NJCAA) coaching staff that won MACCC, Region 23, and Gulf South District Championships and was named United Soccer Coaches Junior College Division II South Staff of the Year, and spent two seasons as a graduate assistant at NCAA Division II Christian Brothers University. He was born in Nairobi, Kenya, raised in Cardiff, Wales, and played JUCO soccer at Lassen Community College before transferring to NCAA Oklahoma Baptist University. CNCC has no dedicated Exercise Science degree. Rangely is a very small, remote oil-and-gas town in far northwestern Colorado. minutesOutlook could not be reliably assessed — most of the 2026-27 roster's ~24 players carry no position tag at all, with only three ambiguously dual-tagged (D/M, M/F) entries.",
+    "minutesOutlook": {
+      "available": false,
+      "reason": "Roster leaves most players untagged by position — only 3 of ~24 carry any midfield-adjacent tag.",
+      "note": "Colorado Northwestern's own official 2026-27 roster publishes position data for only a handful of its ~24 players; the vast majority (including most sophomores) carry no position tag at all. Only three players carry any midfield-adjacent tag, all combined/ambiguous (D/M for Ashton Goldsmith-Breedlove, M/F for Anthony Vergara Amaya and Angel Marquez), all true freshmen. A genuine, current-season data gap — not treated as a clean slate."
+    },
+    "recruit_pathway": null,
+    "recruit_pathway_note": null,
+    "acRank": "NJCAA Level",
+    "kinRank": "No dedicated Exercise Science/Kinesiology/Athletic Training program exists at CNCC"
+  },
+  {
+    "id": "usu_eastern",
+    "name": "Utah State Eastern",
+    "full": "Utah State University Eastern",
+    "loc": "Price, UT",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 18 (SWAC)",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "Consistently competitive but never quite a champion across the full 2021-2025 research window — runner-up twice (2022: 7-2-1, .750; 2023: 8-3-1, .708) and a real 2025 rebound (tied 3rd, 9-4-1, .679) under brand-new head coach Bruce Palmbaum's first season. Midfielder Owen Gaisford made the 2025 Region 18 All-Tournament Team. No titles or postseason results confirmed in this window. Verified via scenicwestsports.com's official standings archive.",
+    "njcaaRegion": "Region 18",
+    "njcaaRegionArea": "Utah, Idaho, Colorado, Nevada (Scenic West Athletic Conference)",
+    "profileDepth": "full",
+    "color": [
+      "#fce7f3",
+      "#9d174d"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 152,
+    "mapY": 158,
+    "domain": "usueasternathletics.com",
+    "url": "https://usueasternathletics.com/sports/msc/index",
+    "degreeTitle": "Bachelor of Science, Health Science (offered on-site at the Price/Eastern campus)",
+    "acuAlign": 7,
+    "acuAlignNote": "Utah State University Eastern is a 2-year branch campus of USU that offers a genuine on-site Bachelor's degree relevant here — Health Science, BS (catalog.usu.edu), confirmed on USU's own 'Explore Degrees' page as available at the Price (USU Eastern) campus specifically (no dedicated Exercise Science/Kinesiology degree is offered at Eastern; Kinesiology itself is Logan-campus-only). The Health Science Core Requirements (45 credits, ALL required) include BIOL 2320 Human Anatomy, BIOL 2420 Human Physiology, and HEP 4600 Health Science Internship (1-3 credits, required). A 24-credit Professional Development elective pool includes real Kinesiology courses: KIN 3250 Anatomical Kinesiology, KIN 4100 Exercise Physiology, KIN 4200 Biomechanics, and (Social Science group) PSY 3110 Health Psychology. Mapped directly: ANAT100 (required BIOL 2320), EXSC225 (required BIOL 2420), EXSC398 (required HEP 4600 Internship), EXSC222 (elective KIN 3250), EXSC322 (elective KIN 4100), EXSC224 (elective KIN 4200), EXSC296 (elective PSY 3110) — one of the strongest academic matches in the entire campaign, notably delivered through a bachelor's degree available on-site at a 2-year JUCO campus.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
+    "soccerLevelShort": "NJCAA DI — Region 18",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "3500",
+    "prePT": "Excellent",
+    "prePTShort": "Excellent",
+    "gpa": {
+      "minEntry": "Open enrollment for the 2-year track (state-recognized diploma or GED); Health Science BS transfer admission requires a 2.75 GPA",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "USU Eastern's 2-year JUCO track is open admission; a 2.75 GPA is required if/when transferring into the on-site Health Science BS as a declared major, well within Olivier's 2.8.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 21086,
+      "tuition": 13566,
+      "roomBoard": 7520,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "USU's own official 2026-27 Cost of Attendance page (usu.edu/financial-support/coa) gives the Eastern/Statewide-campus Non-Resident tuition and fees at $6,783/semester ($13,566/yr), plus an on-campus Housing ($1,960/semester) and Food ($1,800/semester) estimate, $3,760/semester ($7,520/yr). Direct billed cost: $21,086/yr."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "T-3rd SWAC (9-4-1)",
+        "note": "9-4-1 SWAC (.679, 28 pts), 10-5-2 overall (.647). Midfielder Owen Gaisford made the Region 18 All-Tournament Team. Bruce Palmbaum's first season as head coach. Verified via scenicwestsports.com's official 2025 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "4th SWAC (7-5-2)",
+        "note": "7-5-2 SWAC (.571, 23 pts), 7-8-3 overall (.472). Verified via scenicwestsports.com's official 2024 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "2nd SWAC (8-3-1)",
+        "note": "8-3-1 SWAC (.708), 11-4-1 overall (.719). Verified via scenicwestsports.com's official 2023 standings archive."
+      },
+      {
+        "yr": 2022,
+        "pos": "2nd SWAC (7-2-1)",
+        "note": "7-2-1 SWAC (.750), 10-4-1 overall (.700). Verified via scenicwestsports.com's official 2022 standings archive."
+      },
+      {
+        "yr": 2021,
+        "pos": "3rd SWAC (8-4)",
+        "note": "8-4 SWAC (.667), 10-6 overall (.625). Verified via scenicwestsports.com's official 2021 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed within this session's research.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://usueasternathletics.com/sports/msc/index",
+        "note": "No dedicated alumni/next-level tracking page found on usueasternathletics.com within this session's research. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 66,
+      "technical": 50,
+      "fitness": 45
+    },
+    "devScoresNote": "Tier-1: head coach Bruce Palmbaum (hired February 2025) holds a USSF 'A' Coaching License — the highest US coaching credential confirmed anywhere in this entire campaign — plus a 75-58-10 overall collegiate coaching record spanning NCAA Division I (head men's and women's coach at the University of Tulsa), NCAA Division II (Northern Michigan University), and NAIA (Kansas Wesleyan University — led a #246-to-top-30 national-ranking turnaround; Stephens College). His CV also includes professional club coaching (Reno Rattlers, USISL) and international academy coaching at Estudiantes de La Plata in Argentina; he played college soccer at UCLA and the University of Oregon. A 2-assistant staff (Andres Ruiz, Hayden Poll). No dedicated soccer-specific stadium, video-analysis, or strength & conditioning staff confirmed on the official site.",
+    "fitOlivier": 43,
+    "lensScores": {
+      "overall": 43,
+      "soccer": 50,
+      "academic": 52,
+      "minutes": 50,
+      "lifestyle": 0,
+      "value": 49
+    },
+    "facilities": [
+      "Head coach Bruce Palmbaum holds a USSF 'A' Coaching License — the deepest coaching credential found anywhere in this entire campaign",
+      "Palmbaum's CV includes NCAA Division I head coaching (Tulsa), NCAA D2, NAIA, and international academy coaching in Argentina",
+      "A genuine on-site Bachelor's degree (Health Science, BS) with real Kinesiology/Biomechanics/Exercise Physiology elective coursework"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "No dedicated soccer stadium name confirmed on the official athletics site; games are hosted via the shared Bunnell-Dmitirich Athletic Center campus facilities.",
+      "trainingFields": "Standard campus athletic fields; no separate dedicated soccer training pitch confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the USU Eastern athletics department.",
+      "academicLabs": "A genuine on-site Bachelor's degree (Health Science, BS) with a required Human Anatomy/Physiology core and an elective pool including real Kinesiology, Exercise Physiology, and Biomechanics coursework — one of the strongest academic packages in the entire campaign.",
+      "extras": "Price, UT (pop. ~8,500) — a small former coal-mining town in Utah's Carbon County, roughly 2 hours southeast of Salt Lake City.",
+      "note": "One of the deepest individual coaching CVs found anywhere in this campaign (USSF 'A' License, NCAA D1 head coaching experience, international academy coaching in Argentina) in his first season at USU Eastern, paired with a genuine on-site bachelor's-level academic pathway, offset by a genuine current-season minutesOutlook data gap.",
+      "housing": {
+        "available": true,
+        "note": "USU Eastern operates real, named on-campus housing (eastern.usu.edu/housing) — Aaron Jones, Burtenshaw, Sessions, and Tucker residence halls, with amenities including all utilities, free laundry, and an on-campus fitness center."
+      }
+    },
+    "culture": {
+      "vibe": "Price, UT (pop. ~8,500) is a small former coal-mining town in Utah's Carbon County, roughly 2 hours southeast of Salt Lake City — a genuinely quiet, rural setting.",
+      "thingsToDo": "Nearby canyon and desert recreation (the San Rafael Swell, Nine Mile Canyon petroglyphs); Salt Lake City is the nearest bigger-city option, about 2 hours away.",
+      "socialScene": "A steadily competitive Region 18 program (two runner-up finishes 2022-2023) now under an exceptionally credentialed new head coach with a genuine international coaching background.",
+      "olivierMatch": "★★★ One of the deepest individual coaching CVs found anywhere in this entire campaign, paired with a real bachelor's-level academic pathway offered on-site — offset by a small, remote Utah setting and a genuine current-season roster data gap that leaves the Minutes Outlook unmeasured.",
+      "lifestyleTags": "Small rural coal-country town, USSF 'A'-licensed coach, genuine on-site bachelor's degree, real on-campus housing"
+    },
+    "courses": [
+      "BIOL 2320 Human Anatomy (required)",
+      "BIOL 2420 Human Physiology (required)",
+      "HEP 4600 Health Science Internship (required)",
+      "KIN 4100 Exercise Physiology (elective)"
+    ],
+    "rec": "Utah State University Eastern's standout asset is head coach Bruce Palmbaum, hired in February 2025, who holds a USSF 'A' Coaching License — the deepest coaching credential found anywhere in this entire campaign — and a 75-58-10 collegiate coaching record spanning NCAA Division I head coaching at the University of Tulsa, NCAA Division II at Northern Michigan, NAIA head coaching (including a record-breaking turnaround at Kansas Wesleyan), professional club coaching, and international academy coaching at Estudiantes de La Plata in Argentina. The on-field program has been steadily competitive without a title (runner-up in 2022 and 2023) and rebounded to tied-3rd in Palmbaum's first season. USU Eastern also offers a genuine on-site Bachelor's degree, Health Science BS, with a required Human Anatomy/Physiology core and real Kinesiology/Biomechanics elective coursework — one of the strongest academic packages found in this campaign. Price, UT is a small, quiet former coal-mining town. minutesOutlook could not be reliably assessed — the official roster publishes zero position data for any player across multiple seasons checked.",
+    "minutesOutlook": {
+      "available": false,
+      "reason": "Official roster publishes zero position data for any player.",
+      "note": "USU Eastern's own official 2025-26 roster (the most recently populated season; the 2026-27 page exists but was not yet posted at the position level) lists all ~40 players by class/height/hometown only — no Position column exists anywhere in the roster's List, Grid, or Card views. A genuine, confirmed site-wide gap, not a partial or single-season issue."
+    },
+    "recruit_pathway": null,
+    "recruit_pathway_note": null,
+    "acRank": "NJCAA Level",
+    "kinRank": "Genuine on-site Bachelor's degree (Health Science, BS) with required Human Anatomy/Physiology core and real Kinesiology/Biomechanics/Exercise Physiology electives"
+  },
+  {
+    "id": "truckee_meadows_cc",
+    "name": "Truckee Meadows CC",
+    "full": "Truckee Meadows Community College",
+    "loc": "Reno, NV",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 18 (SWAC)",
+    "confKey": "other",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A modest program across the 2021-2025 window with no titles: a real high point in 2023 (4th of 7 SWAC, 5-5-2) under first-year head coach Kyle Kelly, who led the Mighty Lizards to a Region 18 Tournament appearance — their first since the COVID-shortened 2020-21 season — but results have since declined (4-7-3 in 2024, 4-10 in 2025). Verified via scenicwestsports.com's official standings archive and TMCC's own official coach bio.",
+    "njcaaRegion": "Region 18",
+    "njcaaRegionArea": "Utah, Idaho, Colorado, Nevada (Scenic West Athletic Conference)",
+    "profileDepth": "full",
+    "color": [
+      "#ecfccb",
+      "#3f6212"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 68,
+    "mapY": 155,
+    "domain": "tmcclizards.com",
+    "url": "https://tmcclizards.com/sports/mens-soccer",
+    "degreeTitle": "Associate of Science, Public Health — Kinesiology and Sports Medicine Track",
+    "acuAlign": 2,
+    "acuAlignNote": "Truckee Meadows Community College offers a real, dedicated Kinesiology and Sports Medicine track within its Public Health A.S. (catalog.tmcc.edu), which prepares students for the UNR Bachelor of Science in Public Health, Kinesiology Specialization. The 60-credit plan requires BIOL 223 Human Anatomy and Physiology I AND BIOL 224 Human Anatomy and Physiology II (a genuine required two-semester A&P sequence), plus BIOL 190A/189A (Introduction to Cell and Molecular Biology or Fundamentals of Life Science, required), NUTR 121 Human Nutrition, and several Public Health (PBH) courses. Mapped directly: ANAT100 (required BIOL 223/224) and BIOL125 (required BIOL 190A/189A). No dedicated exercise physiology, biomechanics, sport psychology, or internship course confirmed in this specific track.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
+    "soccerLevelShort": "NJCAA DI — Region 18",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "9500",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "Open enrollment (public community college; state-recognized diploma or GED)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Truckee Meadows Community College is a public community college with open admission — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 26950,
+      "tuition": 9550,
+      "roomBoard": 13642,
+      "fees": 3758,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "TMCC's own official Tuition and Fees schedule (catalog.tmcc.edu/tuition-fees) confirms 2026-2027 full-time non-resident tuition at a flat $9,550/yr plus per-credit registration/technology/health fees (~$3,758/yr at a 24-credit course load). No on-campus housing exists at TMCC (a commuter college — international students use homestay via ISP, confirmed via TMCC's own International Student Services page). Direct billed cost is estimated at $26,950/yr, derived from TMCC's own official I-20 visa financial-documentation requirement ($26,300 minimum for the 2025-26 academic year, per tmcc.edu/international-student-services/prospective-students), adjusted for the confirmed 2026-27 tuition increase — the most reliable official total-cost figure available given no dorm-based room & board breakdown exists."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "6th SWAC (4-10)",
+        "note": "4-10 SWAC (.286, 12 pts), 5-12 overall (.294). Verified via scenicwestsports.com's official 2025 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "6th SWAC (4-7-3)",
+        "note": "4-7-3 SWAC (.393, 15 pts), 6-8-4 overall (.444). Verified via scenicwestsports.com's official 2024 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "4th SWAC (5-5-2), Region 18 Tournament appearance",
+        "note": "5-5-2 SWAC (.500), 9-7-3 overall (.553). Head coach Kyle Kelly's first season at the helm; led the Mighty Lizards to a Region 18 Tournament appearance, their first since the COVID-shortened 2020-21 season. Verified via scenicwestsports.com's official 2023 standings archive and TMCC's own official coach bio."
+      },
+      {
+        "yr": 2022,
+        "pos": "5th SWAC (2-7-1)",
+        "note": "2-7-1 SWAC (.250), 3-9-1 overall (.269). Verified via scenicwestsports.com's official 2022 standings archive."
+      },
+      {
+        "yr": 2021,
+        "pos": "5th SWAC (4-6-1)",
+        "note": "4-6-1 SWAC (.409), 6-7-1 overall (.464). Verified via scenicwestsports.com's official 2021 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed within this session's research.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://tmcclizards.com/sports/mens-soccer/roster/coaches/kyle-kelly/33",
+        "note": "No dedicated alumni/next-level tracking page found on tmcclizards.com within this session's research. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 50,
+      "technical": 48,
+      "fitness": 38
+    },
+    "devScoresNote": "Tier-1: head coach Kyle Kelly (joined 2022 as assistant, promoted to HC for 2023) previously spent 4 years as the NAIA head women's soccer coach at Sierra Nevada University, led Truckee High School to three Nevada state titles (Nevada 3A Girls Coach of the Year 2015), and worked 8 years as Program Director for a Seattle youth soccer camp. TMCC fields a real dedicated facility, TMCC Soccer Field, confirmed via the athletics site's own facilities navigation. No video-analysis, GPS, or dedicated soccer strength & conditioning staff confirmed.",
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 44,
+      "academic": 26,
+      "minutes": 87,
+      "lifestyle": 50,
+      "value": 52
+    },
+    "facilities": [
+      "Real, dedicated soccer facility — TMCC Soccer Field",
+      "Head coach Kyle Kelly: prior 4-year NAIA head coaching tenure (Sierra Nevada University), 3x Nevada state HS champion",
+      "Reno, NV — a genuine mid-size city campus"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "TMCC Soccer Field — a real, dedicated on-campus soccer facility (confirmed via the athletics site's own facilities navigation).",
+      "trainingFields": "TMCC Soccer Field; no separate secondary training pitch confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the TMCC athletics department.",
+      "academicLabs": "A real, dedicated Kinesiology and Sports Medicine track within the Public Health A.S., requiring a genuine two-semester Human Anatomy and Physiology sequence.",
+      "extras": "Reno, NV (pop. ~270,000 city / ~500,000 metro) — a genuine mid-size city, the guide's only Region 18 school in a real urban setting alongside Salt Lake City.",
+      "note": "A modest recent on-field record (no titles 2021-2025, a 2023 Region 18 Tournament appearance in coach Kyle Kelly's first season) offset by a real mid-size Reno city campus, a dedicated soccer field, and a genuine Kinesiology/Sports Medicine academic track — the trade-off is no on-campus housing.",
+      "housing": {
+        "available": false,
+        "note": "Truckee Meadows Community College's own official Housing Options page states explicitly that it offers no on-campus housing — only local apartment listings and off-campus resources are provided, and international students are directed to homestay options through the International Student Services office."
+      }
+    },
+    "culture": {
+      "vibe": "Reno, NV (pop. ~270,000 city / ~500,000 metro) is a genuine mid-size city — 'The Biggest Little City in the World' — with real downtown/casino-district amenities and Lake Tahoe roughly 45 minutes away.",
+      "thingsToDo": "Lake Tahoe (skiing, boating), downtown Reno's entertainment district, and easy access to both mountains and a real city core — one of the guide's more genuinely balanced lifestyle settings.",
+      "socialScene": "A modest recent on-field program under a coach with real prior NAIA head-coaching and Nevada high-school championship experience, in a real city setting.",
+      "olivierMatch": "★★★★ A genuine mid-size city campus (Reno) with Lake Tahoe within reach, a dedicated soccer field, and a real Kinesiology/Sports Medicine academic track — offset by a modest recent on-field record and no on-campus housing.",
+      "lifestyleTags": "Genuine mid-size city, Lake Tahoe access, dedicated soccer field, no on-campus housing"
+    },
+    "courses": [
+      "BIOL 223 Human Anatomy and Physiology I (required)",
+      "BIOL 224 Human Anatomy and Physiology II (required)",
+      "NUTR 121 Human Nutrition",
+      "PBH 220 Introduction to Public Health Biology"
+    ],
+    "rec": "Truckee Meadows Community College pairs a genuine mid-size city campus — Reno, NV, with Lake Tahoe roughly 45 minutes away — with a modest but honestly-reported on-field record (no titles across 2021-2025, though head coach Kyle Kelly led the Mighty Lizards to their first Region 18 Tournament appearance since the COVID-shortened 2020-21 season in his first year at the helm, 2023). Kelly brings real prior credentials: 4 years as NAIA head women's soccer coach at Sierra Nevada University and three Nevada state high school titles as Truckee High School's coach. TMCC plays at a real dedicated facility, TMCC Soccer Field, and offers a genuine Kinesiology and Sports Medicine track with a required two-semester Human Anatomy and Physiology sequence. The trade-off: no on-campus housing anywhere in the TMCC system. minutesOutlook is wide open — the entire 2025-26 midfield pool clears NJCAA eligibility before Olivier's Aug 2027 arrival.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 8,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Valentin Linan (So-MID)",
+        "Angel Nava (So-MID)",
+        "Julian Velasquez (So-MID)",
+        "Roberto Castillo (So-MID)"
+      ],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Edwin Ugalde (Fr-MID)",
+        "Salvador Anguiano (Fr-MID)",
+        "Jeremy Lafargue (Fr-MID)",
+        "Antonio Ojeda (Fr-MID)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 90,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "TMCC's own official 2025-26 roster (the most recently populated season) shows 8 midfield-tagged players: 4 sophomores who complete their 2-year NJCAA eligibility during the 2025-26 season, and 4 true freshmen who become sophomores in 2026-27 — their final NJCAA season, ending before Olivier's August 2027 start. A genuinely fully-cleared midfield pool. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "All 8 confirmed 2025-26 midfielders are Fr./So. with no transfer annotation, drawn mostly from the Reno/Sparks area plus one true international freshman (France) — a real true-freshman entry pathway.",
+    "acRank": "NJCAA Level",
+    "kinRank": "Genuine Kinesiology and Sports Medicine track (Public Health A.S.) with a required 2-semester Human Anatomy and Physiology sequence"
+  },
+  {
+    "id": "pacific_northwest_christian_college",
+    "name": "Pacific NW Christian",
+    "full": "Pacific Northwest Christian College",
+    "loc": "Kennewick, WA",
+    "region": "west",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 18 (SWAC, associate schedule)",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "The youngest and least-established program researched in this campaign: winless in two of its first three seasons (0-12 in 2023, 1-13 in 2024, 0-14 in 2025) since launching competition. Genuine coaching turnover (at least three different head coaches across three seasons) reflects a program still finding its footing. Verified via scenicwestsports.com's official standings archive, on which PNWCC appears as a full standings participant alongside SLCC/Snow/NIC/CSI/CNCC/USU Eastern/Truckee Meadows, though Wikipedia does not list it as a formal Scenic West Athletic Conference member — PNWCC plays a complete round-robin schedule against every other Region 18 school.",
+    "njcaaRegion": "Region 18",
+    "njcaaRegionArea": "Utah, Idaho, Colorado, Nevada, Washington (Scenic West Athletic Conference associate schedule)",
+    "profileDepth": "full",
+    "color": [
+      "#fef9c3",
+      "#854d0e"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 68,
+    "mapY": 76,
+    "domain": "pnwccgladiators.com",
+    "url": "https://pnwccgladiators.com/sports/mens-soccer",
+    "degreeTitle": "Bible/Ministry-focused core curriculum (no Exercise Science or Kinesiology program)",
+    "acuAlign": 0,
+    "acuAlignNote": "Pacific Northwest Christian College is a small private Bible/ministry college (core degree requirements taught 'from a biblical worldview' per the college's own Program & Courses page) with no Exercise Science, Kinesiology, or Athletic Training degree of any kind — confirmed via the college's own academic program pages and independent Christian-college directories. A 'Human Performance Fee' appears on the tuition schedule but is a general athletics-participation fee, not evidence of an academic program. acuAlign scored 0, matching other small ministry-focused colleges researched in this campaign.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference associate schedule)",
+    "soccerLevelShort": "NJCAA DI — Region 18",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "300",
+    "prePT": "Poor",
+    "prePTShort": "Poor",
+    "gpa": {
+      "minEntry": "Open enrollment — no stated GPA minimum; high school transcript or GED, SAT/ACT not required",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Pacific Northwest Christian College has open, non-selective admission (confirmed via its own official Admissions page) — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 14350,
+      "tuition": 11000,
+      "roomBoard": 2850,
+      "fees": 500,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "PNWCC's own official Tuition Information page (pnwcc.edu/admissions/tuition) confirms a flat $11,000/yr tuition (no resident/non-resident distinction, a small private college), plus itemized fees (Library, Student Activity, Technology, Science Lab, Human Performance — roughly $500/yr combined) and a disclosed Housing Cost of $2,850/yr plus a $250 non-refundable deposit. Direct billed cost: $14,350/yr — one of the cheapest schools in the entire campaign, though the disclosed housing figure does not clearly itemize a separate meal plan, so actual living costs may run higher than shown."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "8th SWAC — winless (0-14)",
+        "note": "0-14 SWAC (.000, 0 pts), 0-14 overall — a 14-game losing streak. Verified via scenicwestsports.com's official 2025 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "8th SWAC (1-13)",
+        "note": "1-13 SWAC (.071, 3 pts), 1-13 overall (.071). Verified via scenicwestsports.com's official 2024 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "8th SWAC — winless (0-12)",
+        "note": "0-12 SWAC (.000), 0-12 overall — the program's first confirmed competitive season. Verified via scenicwestsports.com's official 2023 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No NCAA transfer destinations confirmed within this session's research for a program this young.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://pnwccgladiators.com/sports/mens-soccer",
+        "note": "PNWCC's men's soccer program is genuinely new (first confirmed competitive season 2023) and has had real coaching turnover — too young and unstable to have a multi-year transfer history. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 32,
+      "technical": 30,
+      "fitness": 30
+    },
+    "devScoresNote": "Tier-1: head coach Maximus VanEaton was hired in March 2026, his first collegiate head-coaching role — real credentials include 2024 SPSL 2A Girls Soccer Coach of the Year (a Washington state high-school league) and a United Soccer Coaches High School Diploma certification; he played college soccer at Linfield University (NCAA D3) and currently plays for Washington Premier FC's men's team (2023-present). A 2-person staff (VanEaton + assistant Nathan Trevino) plus a named athletic trainer (Micaela Trefry). The program has had genuine coaching turnover (at least three different head coaches identified across 2024-2026). No dedicated soccer facility, video-analysis, or strength & conditioning staff confirmed.",
+    "fitOlivier": 51,
+    "lensScores": {
+      "overall": 51,
+      "soccer": 36,
+      "academic": 15,
+      "minutes": 87,
+      "lifestyle": 0,
+      "value": 59
+    },
+    "facilities": [
+      "Brand-new head coach Maximus VanEaton (hired March 2026), a real 2024 Washington state HS Coach of the Year",
+      "One of the cheapest costs of attendance found anywhere in this entire campaign"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated stadium name or seating capacity confirmed on the official athletics site.",
+      "trainingFields": "Standard campus/community fields; no dedicated soccer facility confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "A named Athletic Trainer (Micaela Trefry) is listed on the official coaching staff page.",
+      "academicLabs": "No Exercise Science, Kinesiology, or Athletic Training coursework of any kind — a Bible/ministry-focused core curriculum.",
+      "extras": "Kennewick, WA (part of the Tri-Cities area, pop. ~85,000 city / ~300,000 metro) — a real Eastern Washington metro area, though PNWCC's own campus is a small, low-profile private college within it.",
+      "note": "The youngest and least-established program researched anywhere in this campaign — winless in two of its first three seasons, with genuine coaching turnover — now under a brand-new first-time head coach with a real high-school championship pedigree, at one of the lowest costs of attendance in the guide.",
+      "housing": {
+        "available": true,
+        "note": "PNWCC's own official Tuition Information page discloses a specific annual Housing Cost ($2,850 plus a $250 non-refundable deposit), confirming real institutional housing exists, though the figure does not clearly itemize a separate meal plan."
+      }
+    },
+    "culture": {
+      "vibe": "Kennewick, WA is part of the Tri-Cities area of southeastern Washington (Kennewick/Pasco/Richland, combined metro ~300,000) — a real regional metro area along the Columbia River, though PNWCC itself is a small, low-profile private college within it.",
+      "thingsToDo": "The Columbia and Yakima River waterfronts, Tri-Cities' wine-country surroundings, and a genuine regional-metro amenity base larger than most small-college towns in this batch.",
+      "socialScene": "A very young, still-forming program (winless in two of its first three seasons) under a brand-new first-time head coach — a genuine long-shot, ground-floor opportunity rather than an established culture.",
+      "olivierMatch": "★★ The youngest, least-established program in this entire campaign — real coaching instability and a winless-most-seasons record — offset by the lowest cost of attendance in this batch and a real, if young, head coach with a genuine state-championship credential.",
+      "lifestyleTags": "Young/unstable program, Tri-Cities regional metro, no dedicated academic program, cheapest cost in the batch"
+    },
+    "courses": [],
+    "rec": "Pacific Northwest Christian College is the youngest, least-established program researched anywhere in this campaign — winless in two of its first three competitive seasons (0-12 in 2023, 0-14 in 2025) since launching NJCAA competition, with genuine coaching turnover across that short history. Brand-new head coach Maximus VanEaton, hired in March 2026, brings real if modest credentials: 2024 Washington state 2A Girls Soccer Coach of the Year, a Linfield University (NCAA D3) playing background, and a current playing role with Washington Premier FC's men's team. PNWCC is a small private Bible/ministry college with no Exercise Science or Kinesiology program of any kind. Kennewick sits within the real Tri-Cities regional metro of southeastern Washington. The trade-off for a genuinely long-shot program: one of the cheapest costs of attendance found anywhere in this entire campaign. minutesOutlook is thin but wide open — the program's only two clearly-tagged midfield players (both true freshmen) clear NJCAA eligibility before Olivier's Aug 2027 arrival.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 2,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Quyen Nunamaker (Fr-CM/Wing)",
+        "Carlos Chacope (Fr-CDM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 90,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "PNWCC's own official 2025-26 roster (the current, most recently published season) publishes clear position tags for only a minority of its ~28 players, and just 2 are clearly midfield-tagged (Quyen Nunamaker: CM/Wing; Carlos Chacope: CDM) — both true freshmen this season. Since 2025-26 is the current roster (no 2026-27 roster yet posted), both become sophomores in 2026-27 — their final NJCAA season, which ends before Olivier's August 2027 arrival. A genuinely thin pool, not a large one, but fully clearing. Ask the coach: 'How many true central-midfield recruits are you targeting for the 2026 class?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "Both confirmed 2025-26 midfielders are true freshmen with no transfer annotation, drawn from the local Kennewick/Tri-Cities area — a genuinely open true-freshman entry pathway, reflecting the program's overall youth.",
+    "acRank": "NJCAA Level",
+    "kinRank": "No Exercise Science, Kinesiology, or Athletic Training program exists at PNWCC — a Bible/ministry-focused core curriculum"
   }
 ]

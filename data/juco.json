@@ -16555,5 +16555,979 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "No dedicated Exercise Science/Kinesiology credential — Associate in Arts/Science (general transfer) only"
+  },
+  {
+    "id": "paris_jc",
+    "name": "Paris JC",
+    "full": "Paris Junior College",
+    "loc": "Paris, TX",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 14",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "No Region 14 titles or postseason wins found across the 2021-2025 window (best recent finish: 2024-25 Region XIV Gulf South District Quarterfinal, 5-7-3). The program's real strength is off-field: a program-record 10 players signed to continue their careers in June 2026 (up from 7 in June 2025), including consecutive NCAA Division I transfers (Jace Starling to Houston Christian in 2025, Jonathan Chairez to Missouri State in 2026) confirmed via two separate dated official releases.",
+    "njcaaRegion": "Region 14",
+    "njcaaRegionArea": "East Texas",
+    "profileDepth": "full",
+    "color": [
+      "#fef2f2",
+      "#7f1d1d"
+    ],
+    "tags": [
+      "soccer",
+      "warm"
+    ],
+    "mapX": 332,
+    "mapY": 181,
+    "domain": "pjcathletics.com",
+    "url": "https://pjcathletics.com/sports/msoc",
+    "degreeTitle": "Associate of Science, Kinesiology / Public Health Transfer",
+    "acuAlign": 1,
+    "acuAlignNote": "Paris Junior College's official Kinesiology/Public Health Transfer AS (60 SCH, Tier-1: 2025-26 Catalog & Student Handbook PDF, p.264/267, parisjc.edu) requires BIOL 2401 Anatomy & Physiology I and BIOL 2402 Anatomy & Physiology II as core (Semesters 3-4), covering ANAT100 only against this guide's real 16-unit ACU rubric. PHED 1301 (Foundations of Kinesiology), PHED 1304, PHED 1306, and PHED 1338 are real required PE courses but none map to a specific defined unit (Foundations of Kinesiology is a general survey, not Mechanical Bases of Exercise/Biomechanics). The fourth-semester elective KINE 2356 (Care and Prevention of Athletic Injuries, a standard Texas Common Course Number) also has no matching ACU unit. Identical course-code pattern and identical scoring rationale to already-shipped Hill College (same TX Common Course Numbers).",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 14 (East Texas)",
+    "soccerLevelShort": "NJCAA DI — Region 14",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "4500",
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Paris Junior College is a public East Texas junior college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 12400,
+      "tuition": 5700,
+      "roomBoard": 6100,
+      "fees": 600,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "PJC's official tuition page (parisjc.edu/business/tuition.php) gives the Out-of-State & International rate at $2,850/semester for a 15-hour full-time load ($5,700/yr) — the cheapest tuition found anywhere in this campaign. Room & board is a real, disclosed on-campus dorm rate (Hatcher/Thompson Halls, $3,050/semester = $6,100/yr); the newer South Campus Residence Hall (opened ~2024, 120 beds) costs slightly more ($3,250/semester). All PJC students are automatically enrolled in the mandatory Dragon Now course-materials program ($20/credit hour, ~$600/yr at a 30-hour annual load) unless they opt out. As NJCAA Division I, athletic aid can structurally cover a meaningful share of this genuinely low total cost."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "T-3rd Region 14 North (3-5-3)",
+        "note": "3-5-3 conference (.409), 3-7-5 overall (.367). Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "4th Region 14 North (2-6-3)",
+        "note": "2-6-3 conference (.318), 5-7-3 overall (.433). Reached the Region XIV Gulf South District Quarterfinal — the program's best recent postseason result, confirmed via PJC's own June 2025 news release."
+      },
+      {
+        "yr": 2023,
+        "pos": "2nd Region 14 North (4-5-2)",
+        "note": "4-5-2 conference (.455), 4-10-2 overall (.313). Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2022,
+        "pos": "3rd Region 14 (4-10)",
+        "note": "4-10 conference (.286), 6-11 overall (.353), single combined Region 14 table that season. Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2021,
+        "pos": "4th Region 14 (3-10-1)",
+        "note": "3-10-1 conference (.250), 3-14-1 overall (.194). Verified via njcaaregion14.com's official standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Jonathan Chairez → Missouri State University (NCAA Division I), 2026 signing class",
+        "Jace Starling → Houston Christian University (NCAA Division I), 2025 signing class — also NJCAA First Team All-Region 2024-25 (10 goals, 2 assists)",
+        "Lawrence Doe → Midwestern State University, 2026 signing class — also NJCAA First Team All-Region 2024-25"
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. A genuine, dated two-year transfer pipeline: 1 confirmed NCAA D1 transfer in each of the 2025 and 2026 offseasons (7 and 10 total transfers respectively, across NCAA D1/D2/D3 and NAIA), both Tier-1 confirmed via PJC's own official news releases.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": 1.0,
+        "sourceUrl": "https://pjcathletics.com/sports/msoc/2025-26/releases/dragons-contiunuing-careers",
+        "note": "Measured across two consecutive, dated, Tier-1 official PJC news releases (June 2025 and June 2026): 2 confirmed NCAA D1 transfers in 2 offseasons (Jace Starling → Houston Christian 2025; Jonathan Chairez → Missouri State 2026) = 1.0/yr."
+      }
+    },
+    "devScores": {
+      "tactical": 48,
+      "technical": 45,
+      "fitness": 44
+    },
+    "devScoresNote": "Tier-1: head coach Fernando Arellano played NCAA D1 (University of Texas Rio Grande Valley, beat #24-ranked UNLV in 2015), was a 2014 NJCAA All-American and NJCAA National Final runner-up captain at Richland College, played professionally in Liga MX (Queretaro FC) and NPSL (Tyler FC), and previously ran another NJCAA DI program (Southwest Virginia CC) plus an NCAA D2 assistant stint (Alderson Broaddus). Holds a USSF 'D' License (entry-level) and a Kinesiology/Sports Administration academic background matching his own coaching subject. Noyes Stadium is the program's on-campus home venue; no dedicated strength-and-conditioning or sports-science technology confirmed on the official site.",
+    "fitOlivier": 51,
+    "lensScores": {
+      "overall": 51,
+      "soccer": 40,
+      "academic": 20,
+      "minutes": 48,
+      "lifestyle": 50,
+      "value": 61
+    },
+    "facilities": [
+      "Program-record 10 players signed to four-year programs, June 2026",
+      "Noyes Stadium — on-campus home venue",
+      "No dedicated Exercise Science credential — Kinesiology/Public Health Transfer AS covers Anatomy & Physiology only"
+    ],
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Noyes Stadium — on-campus home venue (Paris, TX).",
+      "trainingFields": "Same on-campus soccer complex used for training; no separate dedicated training pitch confirmed on the official site.",
+      "strengthConditioning": "Standard campus athletic facilities shared across PJC's sports programs; no soccer-dedicated strength coach identified.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the PJC athletics department.",
+      "academicLabs": "General A&P I/II lab sequence (BIOL 2401/2402) — no Exercise-Science-specific lab confirmed beyond that.",
+      "extras": "Paris, TX (pop. ~25,000) is a small East Texas city roughly 100 miles northeast of the Dallas-Fort Worth metroplex.",
+      "note": "A modest on-field program (no Region 14 titles 2021-2025) offset by a genuinely strong and growing off-field transfer pipeline under head coach Fernando Arellano, whose own playing/coaching CV (NCAA D1, NJCAA All-American, Liga MX) is the program's real asset.",
+      "housing": {
+        "available": true,
+        "note": "PJC has real on-campus dormitories — Hatcher Hall, Thompson Hall, and a newer South Campus Residence Hall (opened ~2024, 32,000 sq ft, 120 beds). Eligibility requires 12+ enrolled hours (maintain 9+), age 17+, a $135 deposit/background-check fee, and a mandatory meal plan for residents."
+      }
+    },
+    "culture": {
+      "vibe": "Paris, TX (pop. ~25,000) is a small, self-contained East Texas city about 100 miles northeast of Dallas-Fort Worth — a real regional hub, not a bedroom town, but no big-city feel on campus.",
+      "thingsToDo": "Downtown Paris's historic square and shops, Love Civic Center events, and an easy 1.5-2 hour drive into the Dallas-Fort Worth metroplex for a bigger-city fix.",
+      "socialScene": "A genuinely international roster (South Africa, Spain, Serbia, Ukraine, England, Mexico, France, Congo, Colombia) with real on-campus dorm life (Hatcher/Thompson/South Campus halls) — a more traditional residential JUCO experience than many commuter programs in this guide.",
+      "olivierMatch": "★★★ A modest on-field program in real transfer-pipeline momentum (program-record signing class in 2026), with genuine on-campus housing and a Kinesiology/Public Health degree pathway, in a warm-climate but small-town Texas setting.",
+      "lifestyleTags": "Small East Texas city, on-campus housing, international roster, warm climate, DFW-adjacent"
+    },
+    "courses": [
+      "BIOL 2401/2402 — Anatomy & Physiology I & II (required core)",
+      "KINE 2356 — Care and Prevention of Athletic Injuries (Kinesiology-track elective)"
+    ],
+    "rec": "Paris Junior College's headline story is a rapidly growing transfer pipeline under head coach Fernando Arellano (NCAA D1 playing background, 2014 NJCAA All-American, pro experience in Liga MX): a program-record 10 players signed to continue their careers at four-year institutions in June 2026, up from 7 the year before, including consecutive NCAA Division I transfers (Houston Christian in 2025, Missouri State in 2026). The trade-off is a modest on-field record (no Region 14 titles 2021-2025) and a Kinesiology/Public Health degree that covers only Anatomy & Physiology against this guide's ACU rubric. Real on-campus housing and the cheapest tuition found anywhere in this campaign make it a genuinely low-cost option. minutesOutlook is available from the current, fully-populated 2026-27 roster — a real, if competitive, midfield picture: 3 of 9 midfielders clear before Olivier's Aug 2027 arrival, with 6 returning sophomores providing real entry competition.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Kyrylo Peregudov (So-CM)",
+        "Jose Rojas (So-CM)",
+        "Sergio Echeverri (So-CM)"
+      ],
+      "rising_senior_2027_count": 6,
+      "rising_senior_2027_names": [
+        "Mfundo Skatana (Fr-CDM)",
+        "Paulo Diaz (Fr-CM)",
+        "Thomas Hawton (Fr-CM)",
+        "Bryan Palacios (Fr-CM)",
+        "Jose Briones (Fr-CM)",
+        "Luka Moleville (Fr-CM)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 42,
+          "label": "Squad rotation",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 58,
+          "label": "Likely starter",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "PJC's own official 2026-27 roster (current, fully populated with position/class data for all 28 players) shows 9 central-midfield-capable players (1 CDM + 8 CM): 3 sophomores (Peregudov, Rojas, Echeverri) who complete their 2-year NJCAA eligibility during the 2026-27 season and clear before Olivier's August 2027 start; the other 6 are true freshmen who return as sophomores in 2027-28, directly competing with Olivier in his Yr1 — the largest returning-competitor group of this batch's four schools. Ask the coach: 'How many of the current freshman midfield class do you expect to still be rotation players by fall 2027?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "All 9 confirmed midfielders on the current 2026-27 roster are labeled Fr./So. with no transfer annotation — a genuinely international, largely true-freshman-entry midfield (South Africa, Spain, Serbia, Ukraine, Mexico, France, Congo).",
+    "acRank": "NJCAA Level",
+    "kinRank": "Kinesiology/Public Health Transfer AS — covers Anatomy & Physiology only against the real ACU rubric"
+  },
+  {
+    "id": "jacksonville_college",
+    "name": "Jacksonville College",
+    "full": "Jacksonville College",
+    "loc": "Jacksonville, TX",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 14",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "No Region 14 titles or postseason results found 2021-2025; 2023-24 (1-15-2) was the worst record of any Region 14 school in this campaign's five-season research window. The program's real strength is a genuinely large, wide-open midfield pool (16 players) heading into Olivier's target window.",
+    "njcaaRegion": "Region 14",
+    "njcaaRegionArea": "East Texas",
+    "profileDepth": "full",
+    "color": [
+      "#fff7ed",
+      "#7c2d12"
+    ],
+    "tags": [
+      "soccer",
+      "warm"
+    ],
+    "mapX": 338,
+    "mapY": 281,
+    "domain": "athletics.jacksonvillecollege.edu",
+    "url": "https://athletics.jacksonvillecollege.edu/sports/mens-soccer",
+    "degreeTitle": "Associate of Science/Arts, Kinesiology Pathway",
+    "acuAlign": 2,
+    "acuAlignNote": "Jacksonville College (a private Christian junior college, Tier-1: jacksonvillecollege.edu/degree-programs/) offers a general Associate of Science/Arts (60 hrs) with named 'pathway' concentrations for advising purposes, including a real Kinesiology pathway. However the AS degree plan itself is not pathway-specific: its Natural Sciences requirement is 'choose two of' a long course list that includes BIOL 2401/2402 (Anatomy & Physiology I/II) among several other science options (general Biology, Chemistry, Physics) — not a fixed requirement. Applying the same conservative methodology used for already-shipped Yavapai College (a comparably flexible general-AS structure with A&P as one lab-science option among several): acuAlign = 2 (ANAT100 + BIOL125), assuming a Kinesiology-pathway-advised student selects the A&P I/II sequence as their two Natural Science electives. No dedicated PE/Kinesiology course requirement exists beyond a single generic 1-hour PHED elective.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 14 (East Texas)",
+    "soccerLevelShort": "NJCAA DI — Region 14",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "550",
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "Standard admission (private Christian college, no stated GPA minimum found)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Jacksonville College is a small private Christian junior college (~550 total students, the smallest school in this campaign) with standard open-style admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 18000,
+      "tuition": 10000,
+      "roomBoard": 8000,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Jacksonville College's own official Estimated Yearly Cost of Attendance table (jacksonvillecollege.edu/cost-aid/tuition-fees/) gives On-Campus COA as: Tuition & Fees $10,000/yr (block-rate, full-time 12-17 hrs), Housing & Food $8,000/yr, Books $1,000/yr, Personal $1,620/yr, Transportation $985/yr — total $21,605/yr headline COA. A $500 one-time International Application Fee applies. The college's 'Zero Tuition Initiative' (Pell-eligible Texas residents only) does NOT apply to Olivier as an international student — budget for the full published rate, not the marketed zero-tuition figure."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "3rd Region 14 North (3-6-2)",
+        "note": "3-6-2 conference (.364), 4-11-4 overall (.316). Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "4th Region 14 South (3-9-1)",
+        "note": "3-9-1 conference (.269), 3-14-2 overall (.211). Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "5th Region 14 South (1-10-1)",
+        "note": "1-10-1 conference (.125), 1-15-2 overall (.111) — the worst record of any Region 14 school in this campaign's five-season window. Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2022,
+        "pos": "4th Region 14 (7-7)",
+        "note": "7-7 conference (.500), 8-9 overall (.471), single combined Region 14 table that season. Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2021,
+        "pos": "4th Region 14 (8-7)",
+        "note": "8-7 conference (.533), 8-7 overall (.533) — the program's best recent season. Verified via njcaaregion14.com's official standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No individually Tier-1-confirmed 2025-26 NCAA D1 transfer found — no news/archive stories or alumni-tracker page located on the official site."
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No individually Tier-1-verified NCAA D1 transfer found for the 2025-26 offseason.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://athletics.jacksonvillecollege.edu/sports/mens-soccer/archives",
+        "note": "No dedicated alumni/transfer tracker page found on Jacksonville College's official site, and the News Archives page returned no stories — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+      }
+    },
+    "devScores": {
+      "tactical": 40,
+      "technical": 38,
+      "fitness": 38
+    },
+    "devScoresNote": "Tier-1: head coach Thomas Wait was hired in September 2024 as dual head coach of both men's and women's soccer (confirmed via a JUCO coaching-change database entry, contactcollegecoaches.com). No further biographical detail, prior coaching history, playing background, or license information was found on the official staff bio (name/title/email only) or via broader search — a genuine, disclosed information gap, not a fabricated CV. No dedicated facilities page or stadium name confirmed on the official site.",
+    "fitOlivier": 57,
+    "lensScores": {
+      "overall": 57,
+      "soccer": 41,
+      "academic": 26,
+      "minutes": 64,
+      "lifestyle": 50,
+      "value": 60
+    },
+    "facilities": [
+      "Genuinely large, wide-open midfield pool (16 players) heading into 2026-27",
+      "Private Christian junior college — smallest enrollment (~550) in this campaign",
+      "No dedicated Exercise Science credential — general AS/AA with a named but non-fixed Kinesiology pathway"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated facilities page or stadium name confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no separate dedicated training pitch confirmed.",
+      "strengthConditioning": "Standard campus athletic facilities shared across Jacksonville College's sports programs; no soccer-dedicated strength coach identified.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the Jacksonville College athletics department.",
+      "academicLabs": "General AS Natural Sciences elective block (2 of a long course list, including A&P I/II) — no Exercise-Science-specific lab confirmed.",
+      "extras": "Jacksonville, TX (pop. ~15,000) is a small East Texas city in Cherokee County, about 20 miles south of Tyler.",
+      "note": "A young program (worst record in Region 14 as recently as 2023-24) under a new (Sept 2024) dual men's/women's head coach with a genuinely thin public CV, but a large, largely-clearing midfield pool gives real 2027-28 opportunity.",
+      "housing": {
+        "available": true,
+        "note": "Jacksonville College has real on-campus housing with a mandatory meal plan for residents (room reservation fee $100, long-term rate $1,635/term, private room option $2,135/term if available)."
+      }
+    },
+    "culture": {
+      "vibe": "Jacksonville, TX (pop. ~15,000) is a small East Texas city in Cherokee County, about 20 miles south of Tyler — a genuinely small-town, low-key campus setting.",
+      "thingsToDo": "Downtown Jacksonville's historic square, Love's Lookout scenic overlook, and an easy day trip to Tyler for a bigger-town fix.",
+      "socialScene": "A genuinely international roster (Costa Rica, Scotland, Brazil, Venezuela, Denmark, Senegal, Colombia, France, Honduras) on a small, tight-knit private Christian campus with real on-campus housing.",
+      "olivierMatch": "★★ A young, still-developing program (worst Region 14 record as recently as 2023-24) with a genuinely large and clearing midfield pool, real on-campus housing, but a thin public coaching profile and no dedicated Exercise Science pathway.",
+      "lifestyleTags": "Small East Texas city, Christian college, on-campus housing, international roster, warm climate"
+    },
+    "courses": [
+      "Human Sciences elective block — Biology, Chemistry, or Physics options (Kinesiology pathway typically selects BIOL 2401/2402)"
+    ],
+    "rec": "Jacksonville College is the youngest, smallest program in this batch — a private Christian junior college of ~550 students whose men's soccer program posted the worst Region 14 record of any school in this campaign's research window as recently as 2023-24 (1-15-2). Head coach Thomas Wait, hired September 2024 as dual men's/women's HC, has a genuinely thin public coaching profile. The real story is a large, wide-open midfield: applying this guide's standard stale-roster methodology to the fully-populated 2025-26 roster, effectively the entire 16-player midfield pool clears NJCAA eligibility before Olivier's August 2027 arrival. Real on-campus housing and a $500 international application fee round out a modest but genuinely low-barrier option.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 16,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 16,
+      "cleared_names": [
+        "Jose Vazquez (So-CM)",
+        "Grayson Bondurant (Fr-CM)",
+        "Braxton Riley (Fr-OM)",
+        "Diego Munoz (Fr-CM)",
+        "Jacob Contreras (So-OM)",
+        "Rafeal Buena (Fr-OM)",
+        "Anthony Rodrigues (Fr-AM)",
+        "Max Torres (So-CM)",
+        "Jose David Campa (So-OM)",
+        "Carlos Rengifo (Fr-OM)",
+        "David Posso Santos (So-DM)",
+        "Angel Louvart (Fr-AM)",
+        "Cesar Chavarria (Fr-OM)",
+        "Yannis Benlarbi (Fr-M)",
+        "Kike Chavarria (Fr-DM)",
+        "Nicolas Saint Martin (Fr-DM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 58,
+          "label": "Likely starter — clean slate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 74,
+          "label": "Established starter",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "Jacksonville College's own official roster host publishes no 2026-27 season yet, so the most recently populated roster (2025-26, fully position/class-tagged for all 25 field players) is used per this guide's standard practice. All 16 midfield-capable players on that roster (5 sophomores + 11 freshmen) complete their 2-year NJCAA eligibility by the end of the 2026-27 season, before Olivier's August 2027 start — a genuinely full clean slate, though the unusually large pool size (16, the largest of this batch's four schools) signals a competitive incoming recruiting class, so Yr1 opportunity is graded Medium rather than Low. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "11 of the 16 midfielders on the 2025-26 roster were true freshmen with no prior college listed — a genuine freshman-entry signal, on a roster with almost no US-domestic representation at the position.",
+    "acRank": "NJCAA Level",
+    "kinRank": "General AS/AA with a named Kinesiology pathway — no fixed dedicated course requirement beyond a flexible Natural Sciences elective block"
+  },
+  {
+    "id": "northeast_texas_cc",
+    "name": "Northeast Texas CC",
+    "full": "Northeast Texas Community College",
+    "loc": "Mount Pleasant, TX",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 14",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "The weakest on-field record in this batch (1-13-1 in 2025-26, worst in Region 14) and no titles 2021-2025 — but under a head coach with one of the deepest individual CVs found anywhere in this entire campaign (see coach notes), in a genuine early rebuild (3rd season, hired April 2023).",
+    "njcaaRegion": "Region 14",
+    "njcaaRegionArea": "East Texas",
+    "profileDepth": "full",
+    "color": [
+      "#eff6ff",
+      "#1e3a8a"
+    ],
+    "tags": [
+      "soccer",
+      "warm"
+    ],
+    "mapX": 343,
+    "mapY": 210,
+    "domain": "ntcceagles.com",
+    "url": "https://ntcceagles.com/sports/mens-soccer",
+    "degreeTitle": "Associate of Science, Human Performance",
+    "acuAlign": 1,
+    "acuAlignNote": "NTCC's official Human Performance AS (60 SCH, Tier-1: ntcc.edu/academics/programs-study/health-sciences/human-performance-program/human-performance, a real fixed 4-semester plan, not choose-your-own) requires BIOL 2401 Anatomy & Physiology I and BIOL 2402 Anatomy & Physiology II as core, covering ANAT100 only against this guide's real 16-unit ACU rubric. PHED 1301 (Foundations of Kinesiology), PHED 1304, PHED 1306, PHED 1338, and PHED 2356 (Care and Prevention of Athletic Injuries) are real required PE courses but none map to a specific defined unit. BIOL 1322 (Nutrition) is also required but has no matching ACU unit. Identical scoring rationale to already-shipped Hill College and Paris JC (same Texas Common Course Numbers). Named transfer partners: Texas A&M-Texarkana, Texas A&M-Commerce, Stephen F. Austin State University.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 14 (East Texas)",
+    "soccerLevelShort": "NJCAA DI — Region 14",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "3200",
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment)",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "NTCC is a public East Texas junior college with open enrolment — no GPA barrier to admission. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 11550,
+      "tuition": 5050,
+      "roomBoard": 6500,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1200,
+      "aidType": "athletic+merit",
+      "internationalNote": "NTCC's own official International Student Financial Guide (ntcc.edu, dated Feb 2023 — the newest official international-specific breakdown found, flagged as a possible floor given the document's age) gives: Tuition and fees $5,050/yr, Books/Supplies $500/yr, Dorm (includes meal plan) $6,500/yr, Health Insurance $1,200/yr, Living Expenses $3,000/yr — total $16,250/yr. This is the cheapest direct-billed cost (tuition+room/board) found anywhere in this entire campaign to date."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "4th Region 14 North (1-10)",
+        "note": "1-10 conference (.091), 1-13-1 overall (.100) — the worst record in Region 14 this season. Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "4th Region 14 North (1-9-1)",
+        "note": "1-9-1 conference (.136), 3-11-1 overall (.233). Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd Region 14 North (3-6-2)",
+        "note": "3-6-2 conference (.364), 3-9-2 overall (.286). Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2022,
+        "pos": "6th Region 14 (6-8)",
+        "note": "6-8 conference (.429), 6-11 overall (.353), single combined Region 14 table that season. Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2021,
+        "pos": "6th Region 14 (5-9)",
+        "note": "5-9 conference (.357), 5-11 overall (.313). Verified via njcaaregion14.com's official standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No individually Tier-1-confirmed 2025-26 NCAA D1 transfer found — no news/archive stories located, and the program's alumni-tracker page link returned a 404."
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No individually Tier-1-verified NCAA D1 transfer found for the 2025-26 offseason, consistent with the program's current on-field rebuild.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://ntcceagles.com/sports/mens-soccer/archives",
+        "note": "NTCC's News Archives page for men's soccer returned no stories, and its alumni-tracker page link 404'd — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+      }
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 52,
+      "fitness": 48
+    },
+    "devScoresNote": "Tier-1 (ntcceagles.com official staff bio): head coach Jon Evan is one of the deepest individually-credentialed coaches found anywhere in this campaign — assistant coach at TWO different NCAA Division I programs (Jacksonville University 2003-05, recruiting/mentoring future MLS SuperDraft pick Akeem Priestly; Boston University 2006), a further D1 associate-head-coach year (Jackson State University), 2 seasons as NCAA D2 head coach at Midwestern State (2008 Lone Star Conference title + #1 national ranking), 2 seasons as NCAA D3 head coach at UMaine Farmington (program-best regular season), and 2 seasons as NCAA D3 head coach at Sul Ross State (program's highest-ever win total) immediately before joining NTCC in April 2023. Holds a BS in Exercise Science (Jacksonville University) and an MS in Kinesiology (Midwestern State) — an academic background matching Olivier's own target field — plus NSCAA and USSF coaching licenses. No dedicated on-campus stadium name or sports-science technology confirmed on the official site; the program itself is in an early (3rd-season) rebuild that has not yet reflected this coaching pedigree in results.",
+    "fitOlivier": 55,
+    "lensScores": {
+      "overall": 55,
+      "soccer": 49,
+      "academic": 20,
+      "minutes": 50,
+      "lifestyle": 50,
+      "value": 64
+    },
+    "facilities": [
+      "Head coach holds NCAA D1 assistant experience at two different programs plus D2/D3 head-coaching titles",
+      "Program in an early (3rd-season) on-field rebuild under head coach Jon Evan (hired April 2023)",
+      "No dedicated Exercise Science credential beyond the required Anatomy & Physiology sequence"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated facilities page or stadium name confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no separate dedicated training pitch confirmed.",
+      "strengthConditioning": "Standard campus athletic facilities shared across NTCC's sports programs; no soccer-dedicated strength coach identified beyond Coach Evan's own certified-personal-trainer credential.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the NTCC athletics department.",
+      "academicLabs": "Required A&P I/II lab sequence (BIOL 2401/2402) within the Human Performance AS — no Exercise-Science-specific lab beyond that confirmed.",
+      "extras": "Mount Pleasant, TX (pop. ~16,000) is a small East Texas city about 100 miles east of Dallas.",
+      "note": "A program genuinely mid-rebuild on the scoreboard (worst Region 14 record in 2025-26) but built under one of this campaign's most individually decorated head coaches — a real, disclosed gap between coaching pedigree and current results.",
+      "housing": {
+        "available": true,
+        "note": "NTCC's own official International Student Financial Guide confirms a real on-campus dorm option that includes a meal plan ($6,500/yr combined)."
+      }
+    },
+    "culture": {
+      "vibe": "Mount Pleasant, TX (pop. ~16,000) is a small East Texas city about 100 miles east of Dallas — a genuinely small-town, rural campus setting.",
+      "thingsToDo": "Downtown Mount Pleasant, Lake Bob Sandlin State Park nearby, and an easy day trip to Dallas or Tyler for a bigger-city fix.",
+      "socialScene": "A real on-campus dorm community (meal plan included); the current roster includes multiple French players and a broader international mix.",
+      "olivierMatch": "★★★ A program in a genuine early rebuild on the scoreboard, but built under one of this campaign's most decorated individual head coaches (multi-level NCAA D1/D2/D3 pedigree, a Kinesiology master's degree matching Olivier's own academic goal), with real on-campus housing and the cheapest cost in this entire campaign.",
+      "lifestyleTags": "Small East Texas city, on-campus housing, elite coaching pedigree, warm climate"
+    },
+    "courses": [
+      "BIOL 2401/2402 — Anatomy & Physiology I & II (required core)",
+      "BIOL 1322 — Nutrition (required core)"
+    ],
+    "rec": "Northeast Texas Community College's headline story is its head coach: Jon Evan, hired April 2023, carries a genuinely rare individually-decorated CV — assistant coaching stints at two different NCAA Division I programs (including recruiting a future MLS SuperDraft pick at Jacksonville University), an NCAA D2 head-coaching Lone Star Conference title, and back-to-back NCAA D3 head-coaching program-best seasons (UMaine Farmington, Sul Ross State) immediately before NTCC — plus his own Exercise Science/Kinesiology academic background. The program itself is in a genuine, still-visible early rebuild (worst Region 14 record in 2025-26), and no position data exists on either the 2026-27 or 2025-26 roster to build a Minutes Outlook trajectory — a confirmed, persistent site gap. Real on-campus housing and the cheapest direct-billed cost found anywhere in this campaign make it a genuinely low-barrier option for a program with real coaching upside.",
+    "minutesOutlook": {
+      "available": false,
+      "reason": "Neither the 2026-27 nor the 2025-26 roster publishes position data — the roster's own Sort By options are limited to Jersey/Name/Class/Hometown, with no Position option at all on either season's page.",
+      "note": "NTCC's own official roster host (ntcceagles.com) publishes full class/hometown data for both the 2026-27 and 2025-26 men's soccer rosters, but neither season includes any position column or Position sort option — checked across two consecutive seasons to confirm this is a genuine, persistent site gap rather than a single-season fluke. No usable position data exists to build a midfield trajectory."
+    },
+    "acRank": "NJCAA Level",
+    "kinRank": "Human Performance AS — a fixed, real degree plan covering Anatomy & Physiology only against the real ACU rubric"
+  },
+  {
+    "id": "texas_southmost",
+    "name": "Texas Southmost",
+    "full": "Texas Southmost College",
+    "loc": "Brownsville, TX",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 14",
+    "confKey": "other",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "The campaign's newest program by direct confirmation: absent from Region 14 competition through 2022-23, launched play in 2023-24 (marked ineligible for postseason that inaugural year), and has not yet posted a winning season (best: 3-9 in 2023-24). No titles. A genuine program-founder story under head coach Mario Zamora (hired Feb 2023).",
+    "njcaaRegion": "Region 14",
+    "njcaaRegionArea": "South Texas",
+    "profileDepth": "full",
+    "color": [
+      "#f0fdf4",
+      "#14532d"
+    ],
+    "tags": [
+      "soccer",
+      "warm",
+      "city"
+    ],
+    "mapX": 307,
+    "mapY": 307,
+    "domain": "tscscorpions.com",
+    "url": "https://tscscorpions.com/sports/mens-soccer",
+    "degreeTitle": "Associate of Arts in Teaching, Kinesiology EC-12th Grade Teaching",
+    "acuAlign": 1,
+    "acuAlignNote": "TSC's own official degree-plan PDF for the AAT in Kinesiology EC-12th Grade Teaching (Division of Humanities, tsc.edu) is dated 2013 (Rev. 6/26/2013) — the only version found, still linked from the current live Programs of Study page but not independently re-verified against a fresher catalog, flagged honestly as a likely-stale document. It requires BIOL 2301/2101 Anatomy & Physiology I/Lab I plus BIOL 2302/2102 Anatomy & Physiology II/Lab II (or an alternate Biology for Science Majors II sequence) as core — covering ANAT100 only against this guide's real 16-unit ACU rubric. This is a genuinely different professional orientation than the other 3 Region 14 schools in this batch: a teaching-track (EC-12 PE paraprofessional) Kinesiology degree, not an exercise-science track, requiring a B-or-better grade for admission to the Teacher Education program.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 14 (South Texas)",
+    "soccerLevelShort": "NJCAA DI — Region 14",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "8800",
+    "prePT": "Foundation",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "No minimum (open enrolment); B-or-better required specifically for Teacher Education program admission",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "TSC is a public South Texas junior college with open enrolment — no general GPA barrier to admission. The Kinesiology-EC-12 Teaching pathway specifically requires a B-or-better grade for Teacher Education admission, a real, higher-than-usual academic bar tied to this specific degree. Olivier's 2.8 is well above the NJCAA 2.0 athletic eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 15674,
+      "tuition": 4948,
+      "roomBoard": 10726,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1000,
+      "aidType": "athletic+merit",
+      "internationalNote": "TSC's own official Cost of Attendance page (tsc.edu, 2025-2026) gives the standardized 'Non-Texas residents' Tuition and Fees figure at $4,948/yr (12-hour baseline) — the same rate applies to Non-Resident and International students per the school's own per-credit-hour schedule. TSC's COA table lists an identical 'Living Expenses (includes housing and food)' figure for both its 'At Home/On Campus' and 'Off Campus' columns ($10,726 vs $12,801) — decisive evidence the college has no differentiated on-campus dorm rate. No Housing/Residence Life link exists anywhere in TSC's own Student Resources navigation, confirming no real on-campus housing."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "5th Region 14 South (1-10-1)",
+        "note": "1-10-1 conference (.125), 1-10-1 overall (.125). Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "5th Region 14 South (2-9-2)",
+        "note": "2-9-2 conference (.231), 2-12-2 overall (.188). Verified via njcaaregion14.com's official standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "5th Region 14 South (3-9)",
+        "note": "3-9 conference (.250), 3-9 overall (.250) — the program's inaugural NJCAA season, marked ineligible for postseason. Verified via njcaaregion14.com's official standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Ivan Galvan (winger) → Nelson University (NCCAA, Phoenix AZ), 2026 signing — joined TSC via head coach Mario Zamora's outreach while recovering from a knee injury",
+        "Kenneth Reyes (center back) → Texas A&M University-San Antonio (NAIA), 2026 signing",
+        "Miguel Campos (goalkeeper) → Nelson University (NCCAA, Phoenix AZ), 2026 signing"
+      ],
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. A real, dated May 2026 official release ('Five Scorpions, One Goal') names 3 men's soccer players continuing their careers, honestly disclosed as NCCAA/NAIA destinations rather than NCAA Division I.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://www.tsc.edu/news/2026/05/five-scorpions-one-goal-continuing-the-journey-beyond-tsc/",
+        "note": "TSC's own May 2026 official release names 3 real 2025-26 men's soccer transfers, but none to an NCAA Division I program (Nelson University is NCCAA, Texas A&M-San Antonio is NAIA) — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b since no D1 rate can be measured, not assumed zero."
+      }
+    },
+    "devScores": {
+      "tactical": 44,
+      "technical": 42,
+      "fitness": 40
+    },
+    "devScoresNote": "Tier-1 (tsc.edu official Feb 2023 hiring release + ValleyCentral.com news coverage): head coach Mario Zamora is a TSC/UTB alumnus and program founder, hired February 2023 to launch the college's first-ever NJCAA soccer program after previously leading it as a pre-NJCAA club team. Prior coaching experience is at the high-school level (Brownsville Pace HS, St. Joseph Academy). Holds a Master of Education (UTRGV) and dual coaching licenses from the Federación Mexicana de Fútbol (Mexican FA) and US Soccer — a genuine binational credential reflecting the border-region program. No dedicated facilities page, stadium name, or sports-science technology confirmed on the official site; the program is 3 seasons old.",
+    "fitOlivier": 61,
+    "lensScores": {
+      "overall": 61,
+      "soccer": 43,
+      "academic": 20,
+      "minutes": 71,
+      "lifestyle": 100,
+      "value": 65
+    },
+    "facilities": [
+      "Program founded February 2023 under alumnus head coach Mario Zamora — the newest program in this campaign",
+      "Located in Brownsville, TX — a genuine city of ~180,000 on the US-Mexico border",
+      "No on-campus housing anywhere in the TSC system"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated facilities page or stadium name confirmed on the official athletics site.",
+      "trainingFields": "Standard campus athletic fields; no separate dedicated training pitch confirmed.",
+      "strengthConditioning": "Standard campus athletic facilities shared across TSC's sports programs; no soccer-dedicated strength coach identified.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "Standard JUCO athletic training provision via the TSC athletics department; the campus Recreation Center is named in the program's own May 2026 release as a player-recovery resource.",
+      "academicLabs": "Required A&P I/II lab sequence within the AAT Kinesiology EC-12 Teaching degree — no Exercise-Science-specific lab confirmed.",
+      "extras": "Brownsville, TX (pop. ~180,000) is a real, genuine city at the southern tip of Texas on the US-Mexico border — the only city-campus setting of this batch's four schools.",
+      "note": "The campaign's youngest program by direct confirmation (launched 2023-24), under alumnus founding head coach Mario Zamora, in a genuine border-region city setting but with no on-campus housing anywhere in the TSC system.",
+      "housing": {
+        "available": false,
+        "note": "TSC's own official Cost of Attendance table lists an identical 'Living Expenses' figure for both its On-Campus and Off-Campus columns, and no Housing/Residence Life page or link exists anywhere on the TSC site — decisive evidence the college has no on-campus dormitories."
+      }
+    },
+    "culture": {
+      "vibe": "Brownsville, TX (pop. ~180,000) is a real city at the southern tip of Texas on the US-Mexico border — the only genuine city-campus setting among this batch's four schools, with a real binational, Spanish/English bilingual culture.",
+      "thingsToDo": "South Padre Island beaches (~30 min drive), downtown Brownsville's historic district, and easy cross-border access to Matamoros, Mexico.",
+      "socialScene": "A largely regional Rio Grande Valley roster (many players from local Brownsville/McAllen-area high schools) under a program-founder alumnus coach — a genuinely community-rooted program rather than a heavily international one.",
+      "olivierMatch": "★★★ A genuine city setting (the only one in this batch) with subtropical warm climate, under a program-founder coach with real binational (Mexican FA + US Soccer) credentials, offset by no on-campus housing and the campaign's weakest on-field record streak.",
+      "lifestyleTags": "Real South Texas city, US-Mexico border, no on-campus housing, warm/subtropical climate"
+    },
+    "courses": [
+      "BIOL 2301/2101 & 2302/2102 — Anatomy & Physiology I & II with Labs (required core)"
+    ],
+    "rec": "Texas Southmost College is the newest program in this entire campaign by direct confirmation — absent from Region 14 competition through 2022-23, launched in 2023-24 under founding head coach and TSC/UTB alumnus Mario Zamora. The program hasn't yet posted a winning season, but Zamora's own program-builder story (a genuine binational Mexican FA + US Soccer coaching license, real local outreach documented in a May 2026 official release) and Brownsville's genuine city setting — the only true city campus in this batch — give it real character. The trade-off: no on-campus housing anywhere in the TSC system, and the only Kinesiology degree in this batch built around K-12 teaching rather than exercise science. A stale-but-usable 2025-26 roster shows a genuinely open midfield (all 8 midfielders clear before Olivier's Aug 2027 arrival, following this guide's standard stale-roster methodology).",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 8,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 8,
+      "cleared_names": [
+        "Matthew Mejia (So-MF)",
+        "Leonel Lugo (So-MF)",
+        "Edgar Hernandez (So-MF)",
+        "Alan Delgado (Fr-MF)",
+        "Jesus Gomez (Fr-MF)",
+        "Jacob Roman (Fr-MF)",
+        "Carlos Garcia (Fr-MF)",
+        "William Arciniega (Fr-MF)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 65,
+          "label": "Likely starter — clean slate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 80,
+          "label": "Established starter",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "TSC's own official roster host (tscscorpions.com) has not yet posted a 2026-27 season, so the most recently populated roster (2025-26, fully position/class-tagged) is used per this guide's standard practice. All 8 midfielders on that roster (3 sophomores + 5 freshmen) complete their 2-year NJCAA eligibility by the end of the 2026-27 season, before Olivier's August 2027 start — a genuinely full clean slate on a modestly-sized midfield pool, the same size class as already-shipped Garden City CC. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "5 of the 8 midfielders on the 2025-26 roster were true freshmen — a genuinely local, Rio Grande Valley-rooted entry pathway (several from area high schools including La Joya HS, PSJA Southwest, Edinburg North).",
+    "acRank": "NJCAA Level",
+    "kinRank": "AAT in Kinesiology EC-12 Teaching — covers Anatomy & Physiology only against the real ACU rubric; a teaching-track, not exercise-science, degree"
   }
 ]

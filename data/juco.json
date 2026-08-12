@@ -21403,5 +21403,707 @@
     "recruit_pathway_note": "The 2025-26 midfield pool is overwhelmingly true freshmen (8 of 9) with no transfer-portal annotation on the roster, drawn from a wide international base (France, Spain, Japan, Jordan, Morocco, Trinidad) — a real, wide-open true-freshman entry pathway, reflecting the program's rebuild under a new head coach.",
     "acRank": "NJCAA Level",
     "kinRank": "No Exercise Science, Kinesiology, or Physical Education program exists at Lincoln Trail College — a general Associate in Science transfer degree only"
+  },
+  {
+    "id": "central_georgia_tech",
+    "name": "Central Georgia Tech",
+    "full": "Central Georgia Technical College",
+    "loc": "Warner Robins, GA",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 17 (Georgia Collegiate Athletic Association)",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A genuinely new program (launched 2023, per the college's own Atrium Health Field facility page) improving year over year on the field: 2-9-1 in 2024-25 (0-4 conference) to 5-10-1 in 2025-26 — real, measurable progress, but no title, ranking, or NJCAA All-American found. The Georgia Collegiate Athletic Association's own official standings pages do not list CGTC as a full conference-standings participant despite CGTC's own schedule showing a designated conference fixture against Georgia Military College.",
+    "njcaaRegion": "Region 17",
+    "njcaaRegionArea": "Georgia",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "mapX": 455,
+    "mapY": 269,
+    "domain": "cgtctitans.com",
+    "url": "https://cgtctitans.com/sports/msc",
+    "degreeTitle": "Physical Therapist Assistant, A.S. (CAPTE-accredited)",
+    "acuAlign": 6,
+    "acuAlignNote": "Central Georgia Technical College offers a CAPTE-accredited Physical Therapist Assistant Associate Degree (confirmed via the college's own official Health Sciences program page, chaired by Mary A. Roland, PT, DPT) — genuinely directly relevant to Olivier's DPT career goal. The college's own program description confirms real clinical/anatomical content (functional training, manual therapy, physical agents, mechanical agents, therapeutic exercise, off-campus clinical affiliations) typical of any CAPTE-accredited PTA curriculum, though CGTC did not publish an itemized course-by-course list this session. acuAlign scored 6, reflecting genuine anatomy/physiology, exercise-physiology-adjacent, and clinical-practicum content standard to an accredited PTA program.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 17 (Georgia)",
+    "soccerLevelShort": "NJCAA DI — Region 17",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "5,500",
+    "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "Open enrollment — no stated GPA minimum; high school transcript or GED required",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Central Georgia Technical College has open, non-selective admission (confirmed via its own official Admissions pages) — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 13240,
+      "tuition": 12840,
+      "roomBoard": 0,
+      "fees": 400,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1200,
+      "aidType": "athletic+merit",
+      "internationalNote": "CGTC's own official Tuition & Fees page (centralgatech.edu) confirms international student tuition is set at 4x the Georgia-resident rate ($107/credit-hour resident basis → ~$428/credit international), giving an estimated $12,840/yr at a 30-credit course load, plus modest mandatory fees (~$400/yr estimated, standard TCSG technical-college scale). CGTC's own campus housing (Lofts at Houston Central, a 265-room complex opened in partnership with Trinity School of Medicine) is explicitly disclosed by the college as privately owned and managed — rent is paid directly to the Lofts management company and is not placed on CGTC student accounts — so roomBoard is stored as $0 (not billed by the college)."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "5-10-1 overall (no conference record tracked)",
+        "note": "5-10-1 overall (.538), improving from the prior season. CGTC does not appear as a full standings participant on the Georgia Collegiate Athletic Association's official site despite fielding a designated conference fixture against Georgia Military College. Verified via CGTC's own official 2025-26 schedule/results page."
+      },
+      {
+        "yr": 2024,
+        "pos": "2-9-1 overall, 0-4 conference",
+        "note": "2-9-1 overall (.208), 0-4 in designated conference play (.000) — the program's second competitive season. Verified via CGTC's own official 2024-25 schedule/results page."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO level — no MLS SuperDraft picks confirmed. No dedicated alumni/next-level page found; the program is too young (launched 2023) to have an established transfer track record.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://cgtctitans.com/sports/msc",
+        "note": "CGTC's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer, and the program is too young (launched 2023) to have an established transfer history. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+      }
+    },
+    "devScores": {
+      "tactical": 45,
+      "technical": 42,
+      "fitness": 35
+    },
+    "devScoresNote": "Tier-1: HC Elvar Gudjonsson (from Iceland) arrived at CGTC to build the program from its 2023 launch after a substantial prior head-coaching tenure — corroborated via multiple independent sources (his former program's site history, LinkedIn, a local 41NBC news article on his original hiring, and a 'Knights Around the World' feature) — at Middle Georgia State University (NAIA), where he was head coach for at least 6 seasons. CGTC's own coach page confirms name/title/contact only, with no bio text published. Real dedicated facility: Atrium Health Field, opened in 2023 alongside the program's launch. No dedicated strength & conditioning or sports-science staff confirmed on the official site.",
+    "fitOlivier": 56,
+    "lensScores": {
+      "overall": 56,
+      "soccer": 42,
+      "academic": 47,
+      "minutes": 61,
+      "lifestyle": 50,
+      "value": 63
+    },
+    "facilities": [
+      "Atrium Health Field — a dedicated soccer facility opened in 2023 alongside the program's launch",
+      "CAPTE-accredited Physical Therapist Assistant Associate Degree, chaired by a licensed DPT",
+      "HC Elvar Gudjonsson brings a substantial prior NAIA head-coaching tenure (Middle Georgia State University) to a program he is building from scratch"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "Atrium Health Field — no stated seating capacity confirmed on the official athletics site.",
+      "trainingFields": "Atrium Health Field serves as the program's primary field; no separate dedicated practice facility confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "No athletic trainer named specifically for men's soccer on the official coaches page.",
+      "academicLabs": "A CAPTE-accredited Physical Therapist Assistant program with genuine clinical facilities (part of CGTC's broader Health Sciences division, which includes cardiac catheterization, echocardiography, and computed radiography labs).",
+      "extras": "Warner Robins/Macon, GA — part of the real Middle Georgia/Macon metro area (pop. ~230,000).",
+      "note": "A genuinely new program (launched 2023) improving year over year on the field, paired with the strongest allied-health academic credential (a CAPTE-accredited PTA degree) found among this batch's schools.",
+      "housing": {
+        "available": true,
+        "note": "CGTC's own official page discloses that Lofts at Houston Central — a 265-room student housing complex opened in partnership with Trinity School of Medicine — is privately owned and managed (Young America Realty-style third-party operator), with rent paid directly to the Lofts and not placed on CGTC student accounts."
+      }
+    },
+    "culture": {
+      "vibe": "Warner Robins and Macon, GA sit within the real Middle Georgia metro area (pop. ~230,000) — a genuine mid-size Southern metro with warm-climate year-round soccer weather.",
+      "thingsToDo": "Downtown Macon's music and cultural scene, the Museum of Aviation (Robins Air Force Base), and a real regional metro amenity base.",
+      "socialScene": "A genuinely new program (3rd/4th competitive season) improving steadily under a head coach building it from scratch — real ground-floor energy rather than an established culture.",
+      "olivierMatch": "★★★ A warm-climate program with a genuinely strong allied-health academic credential (CAPTE-accredited PTA) and a real mid-size Southern metro, offset by a very young program still building its on-field identity and facility depth.",
+      "lifestyleTags": "Warm climate, mid-size Southern metro, young/improving program, strong allied-health academics"
+    },
+    "courses": [],
+    "rec": "Central Georgia Technical College is a genuinely new program — launched in 2023 alongside the opening of its dedicated Atrium Health Field — improving steadily on the field (2-9-1 in 2024-25 to 5-10-1 in 2025-26) under HC Elvar Gudjonsson, an Icelandic coach who arrived with a substantial prior NAIA head-coaching tenure at Middle Georgia State University. CGTC pairs this ground-floor athletic opportunity with the strongest allied-health academic credential in this batch: a CAPTE-accredited Physical Therapist Assistant Associate Degree, chaired by a licensed DPT — directly relevant to Olivier's own career goal. Warner Robins/Macon sits within a real warm-climate Southern metro area. The college's own campus-adjacent housing (Lofts at Houston Central) is privately managed but genuinely available and actively promoted by the college. minutesOutlook reflects the program's current-season roster: 3 of 6 midfielders clear before Olivier's Aug 2027 arrival, with the other 3 (all freshmen) returning as sophomores to compete directly with him in his first season before the pool opens fully by his second year.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 6,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Daniel Motino (So-MF)",
+        "Daniel Huato (So-MF)",
+        "Brady Bourke (So-MF)"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Jatniel Ardila (Fr-MF)",
+        "Bryan Cruz (Fr-MF)",
+        "Camren Laris (Fr-MF)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 45,
+          "label": "Squad rotation",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "CGTC's own official 2026-27 roster (the current, already-published season) lists 6 midfielders: 3 sophomores who complete their 2-year NJCAA eligibility during the 2026-27 season and clear before Olivier's August 2027 start, and 3 freshmen who return as sophomores in 2027-28, directly competing with Olivier in his first season before completing their own eligibility and opening the pool fully by his second year. A genuinely balanced (50/50) current-season split. Ask the coach: 'Of your three returning midfielders, which are locked into starting roles heading into 2027?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "The current 2026-27 midfield pool splits evenly between true freshmen and sophomores with no transfer-portal annotation on the roster — a real, open entry pathway reflecting the program's youth.",
+    "acRank": "NJCAA Level",
+    "kinRank": "CAPTE-accredited Physical Therapist Assistant Associate Degree — a genuine clinical allied-health credential, though not a dedicated Exercise Science or Kinesiology program"
+  },
+  {
+    "id": "ranger_college",
+    "name": "Ranger College",
+    "full": "Ranger College",
+    "loc": "Ranger, TX",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 5",
+    "confKey": "other",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A real 3-season above-.500 trend (2023-24 through 2025-26) — 6-2-3 (.682), 8-5-3 (.594, best conference mark 2-1/.667), and 6-5-2 (.538) — but no Region 5 title, national ranking, or NJCAA All-American confirmed in this window. Historically, Ranger won its first-ever NJCAA DI Region 5 Championship and National Tournament berth in 2013 under then-HC Jaime Beltran (now at already-guide Seward County CC per that school's own record), a genuine program high point predating this window. Verified via njcaaregion5.com's official standings (current season) and rangersports.net's own official schedule/results archive for prior seasons.",
+    "njcaaRegion": "Region 5",
+    "njcaaRegionArea": "Texas",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1d4ed8"
+    ],
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "mapX": 287,
+    "mapY": 271,
+    "domain": "rangersports.net",
+    "url": "https://www.rangersports.net/sports/msoc",
+    "degreeTitle": "Associate of Science, A.S. (general transfer degree — no dedicated Exercise Science, Kinesiology, or Physical Education program)",
+    "acuAlign": 1,
+    "acuAlignNote": "Ranger College offers only general Associate of Arts, Associate of Science, and Associate of Arts in Teaching transfer degrees (confirmed via the college's own official Academic Programs page) — no dedicated Exercise Science, Kinesiology, or Physical Education major of any kind. The Associate of Science track's general science coursework (Biology, Chemistry) would satisfy a general Human Biology requirement. acuAlign scored 1, reflecting only that general-biology coverage.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 5 (Texas)",
+    "soccerLevelShort": "NJCAA DI — Region 5",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1,100",
+    "prePT": "Poor",
+    "prePTShort": "Poor",
+    "gpa": {
+      "minEntry": "Open enrollment — no stated GPA minimum; high school transcript or GED required",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Ranger College has open, non-selective admission (confirmed via its own official Tuition & Fees and Admissions pages) — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 13932,
+      "tuition": 8850,
+      "roomBoard": 5082,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1200,
+      "aidType": "athletic+merit",
+      "internationalNote": "Ranger College's own official Tuition and Fees page (rangercollege.edu) confirms an Out-of-State/International combined tuition-and-fee rate of $295/credit hour for 2025-26 (already inclusive of the $10/credit General Service Fee and $35/credit international surcharge on top of the $250/credit base rate), giving $8,850/yr at a 30-credit load. The college's own official Room and Meals page confirms real on-campus housing at $2,541/semester for a double-occupancy room ($5,082/yr) — one of the guide's more traditional small-town dormitory setups."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "6-5-2 overall, 1-3 conference (season in progress)",
+        "note": "6-5-2 overall (.538), 1-3 in conference play (.250) — final 2025-26 record. Verified via rangersports.net's own official 2025-26 schedule/results archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "8-5-3 overall, 2-1 conference",
+        "note": "8-5-3 overall (.594), 2-1 in conference play (.667) — the program's best recent conference mark. Verified via rangersports.net's own official 2024-25 schedule/results archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "6-2-3 overall, 1-2-1 conference",
+        "note": "6-2-3 overall (.682), 1-2-1 in conference play (.375). Verified via rangersports.net's own official 2023-24 schedule/results archive."
+      }
+    ],
+    "titles": [
+      "2013 NJCAA DI Region 5 Champion and National Tournament qualifier (historical, under then-HC Jaime Beltran)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO level — no MLS SuperDraft picks confirmed and no dedicated alumni/next-level page found on the official athletics site.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://www.rangersports.net/sports/msoc",
+        "note": "Ranger College's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+      }
+    },
+    "devScores": {
+      "tactical": 48,
+      "technical": 40,
+      "fitness": 35
+    },
+    "devScoresNote": "Tier-1: HC Ross Anderson (3rd year, from Glasgow, Scotland) played NAIA soccer at Ottawa University (KS) 2014-2017 — a 4-year KCAC All-Conference honoree, 3-year KCAC preseason team member, and top-10 in program history for assists/goals/points as a midfielder — then moved into coaching/analytics at the University of Saint Mary (KS) 2018-2021, helping the program to its highest-ever conference tournament finish (5th, 2019). No dedicated stadium name, strength & conditioning staff, or sports-science resources confirmed on the official site; the coaches page itself is thin (no staff beyond HC and one assistant).",
+    "fitOlivier": 65,
+    "lensScores": {
+      "overall": 65,
+      "soccer": 42,
+      "academic": 20,
+      "minutes": 87,
+      "lifestyle": 50,
+      "value": 68
+    },
+    "facilities": [
+      "3-season above-.500 program trend (2023-24 through 2025-26) under HC Ross Anderson",
+      "Real on-campus housing (double- and single-occupancy dorm options)",
+      "Historical program high point: 2013 NJCAA DI Region 5 Champion and National Tournament qualifier"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated stadium name or seating capacity confirmed on the official athletics site.",
+      "trainingFields": "No dedicated soccer-only training facility confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "No athletic trainer named specifically for men's soccer on the official coaches page.",
+      "academicLabs": "No Exercise Science, Kinesiology, or Physical Education program of any kind — general Associate of Arts/Science transfer degrees only.",
+      "extras": "Ranger, TX (pop. ~2,500) is a small rural West Texas town — the smallest campus setting confirmed among this batch's schools.",
+      "note": "A steady, real, above-.500 program on the field with an experienced, analytically-minded head coach, in a genuinely small rural Texas town with a thin facility and academic profile.",
+      "housing": {
+        "available": true,
+        "note": "Ranger College's own official Room and Meals page confirms real on-campus housing at $2,541/semester double-occupancy or $3,291/semester single-occupancy, plus a $100/year non-refundable Housing Administration Fee — a traditional small-college dormitory setup."
+      }
+    },
+    "culture": {
+      "vibe": "Ranger, TX is a small rural West Texas town (pop. ~2,500) roughly 90 minutes west of Fort Worth — the smallest, most rural campus setting confirmed among this batch's schools.",
+      "thingsToDo": "Limited off-campus amenities in Ranger itself; Fort Worth/Dallas-Fort Worth metro access is a genuine day trip away.",
+      "socialScene": "A steady, consistently above-.500 program (three straight winning-or-near-winning seasons) under an experienced, analytically-minded head coach, with a real historical high point (a 2013 national tournament berth) in program memory.",
+      "olivierMatch": "★★★ A steady, real on-field program with genuine on-campus housing and a warm Texas climate, offset by the most rural small-town setting in this batch and no relevant academic program.",
+      "lifestyleTags": "Warm Texas climate, rural small town, steady above-.500 program, no academic program match"
+    },
+    "courses": [],
+    "rec": "Ranger College has posted a genuinely steady, above-.500 record across the last three seasons (6-2-3 in 2023-24, 8-5-3 with the program's best recent 2-1 conference mark in 2024-25, and 6-5-2 in 2025-26) under HC Ross Anderson, a Glasgow, Scotland native now in his 3rd year, whose own playing career (NAIA All-Conference midfielder at Ottawa University) and coaching/analytics background (University of Saint Mary) are genuinely documented. The program's historical high point — a 2013 NJCAA DI Region 5 Championship and National Tournament berth — came under then-HC Jaime Beltran, now the founding head coach at already-guide Seward County CC. Ranger is a small, rural West Texas town offering real on-campus dormitory housing but no Exercise Science, Kinesiology, or Physical Education program of any kind. minutesOutlook is wide open: all 9 midfielders on the 2025-26 roster clear NJCAA eligibility before Olivier's Aug 2027 arrival.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 9,
+      "cleared_names": [
+        "Jacopo Bonacina (Fr-CDM/CM)",
+        "Brandon Blackshaw (Fr-CAM)",
+        "Marcos Gomez (Fr-CM)",
+        "Kevin Dominguez (So-CM/CAM)",
+        "Sebastian Badillo (So-CDM/CM)",
+        "Juan Condales (So-CDM/CM)",
+        "Luis Contreras (So-CM)",
+        "Samuel Sinfield (Fr-LB/CDM)",
+        "Kosuke Nozawa (Fr-CM)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 90,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "Ranger's own official 2025-26 roster (the current, most recently published season — the 2026-27 page is published but empty) lists 9 midfield-tagged players (using CM/CDM/CAM position codes), a mix of freshmen and sophomores. Since 2025-26 is a stale-by-one-year roster, the entire pool completes NJCAA's 2-year eligibility before Olivier's August 2027 arrival — a fully open pool. Ask the coach: 'How many true central-midfield recruits are you targeting for the 2026 class?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "The 2025-26 midfield pool is a genuine mix of true freshmen and sophomores drawn from a wide international base (no transfer-portal annotation on the roster) — a real, open entry pathway.",
+    "acRank": "NJCAA Level",
+    "kinRank": "No Exercise Science, Kinesiology, or Physical Education program exists at Ranger College — general Associate of Arts/Science transfer degrees only"
+  },
+  {
+    "id": "noc_enid",
+    "name": "NOC Enid",
+    "full": "Northern Oklahoma College - Enid",
+    "loc": "Enid, OK",
+    "region": "south",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 2",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A real coaching transition in progress: a respectable 2024-25 season (10-9-1 overall, .525) under the program's prior long-tenured staff gave way to a difficult 2025-26 debut for new HC Aron Bassoff (1-13-1, .100) — his first season rebuilding the roster. No 2025-season title, national ranking, or NJCAA All-American found. Verified via region2athletics.com's official Region II standings archive.",
+    "njcaaRegion": "Region 2",
+    "njcaaRegionArea": "Oklahoma",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1e40af"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 296,
+    "mapY": 209,
+    "domain": "nocjets.com",
+    "url": "https://www.nocjets.com/sports/msoc",
+    "degreeTitle": "A.S. in Health, Physical Education, and Recreation — Athletic Training Option",
+    "acuAlign": 6,
+    "acuAlignNote": "Northern Oklahoma College offers a genuine A.S. in Health, Physical Education, and Recreation with a dedicated Athletic Training Option, available at the Enid campus (confirmed via the college's own official 2025-2026 program curriculum PDF). Real required coursework includes BIOL 2104 Human Anatomy, BIOL 2204 Human Physiology, HPET 1113 Nutrition, HPET 1223 Health Education & Wellness, and HPET 2382/2482 Athletic Training Practicum I & II — a genuine clinical sequence totaling 75-85 hours of Year 1 observation plus 500 hours of Year 2 clinical work, among the most substantial clinical requirements found in this campaign. acuAlign scored 6, reflecting real anatomy/physiology and an unusually deep clinical-practicum component, offset by no dedicated Biomechanics, Resistance Training, or Sport Psychology course.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": true
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 2 (Oklahoma)",
+    "soccerLevelShort": "NJCAA DI — Region 2",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "1,500",
+    "prePT": "Very Strong",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "Open enrollment — no stated GPA minimum; high school transcript or GED required",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Northern Oklahoma College has open, non-selective admission (confirmed via its own official Admissions pages) — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 18511,
+      "tuition": 10446,
+      "roomBoard": 6280,
+      "fees": 1785,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "NOC's own official 2026-2027 Cost Comparison sheet (noc.edu) confirms an Enid-campus Non-Resident (Out-of-State & International) rate of $10,446/yr tuition plus $1,785/yr fees at a 30-credit annual load. The college's own official Residence Hall rates confirm real on-campus dormitory housing (Jets Hall, Lankard Hall, E.B. Hall) at an estimated ~$6,280/yr for room and a dining plan."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Last, Region 2 (1-10-1)",
+        "note": "1-10-1 conference (.125), 1-13-1 overall (.100) — new HC Aron Bassoff's debut season rebuilding the roster. Verified via region2athletics.com's official 2025-26 Region II standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "Mid-table, Region 2 (4-7-1)",
+        "note": "4-7-1 conference (.375), 10-9-1 overall (.525) — under the program's prior long-tenured coaching staff. Verified via region2athletics.com's official 2024-25 Region II standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO level — no MLS SuperDraft picks confirmed and no dedicated alumni/next-level page found on the official athletics site.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://www.nocjets.com/sports/msoc",
+        "note": "NOC-Enid's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+      }
+    },
+    "devScores": {
+      "tactical": 55,
+      "technical": 65,
+      "fitness": 45
+    },
+    "devScoresNote": "Tier-1: HC Aron Bassoff (2nd season) brings one of the deepest coaching CVs found anywhere in this campaign — 19 seasons of intercollegiate coaching at the NCAA DII, NCAA DIII, and NAIA levels, 18 as a head coach (13 as a head men's coach), 7 nationally-ranked teams, 3 conference/regional championships, 11 second-place finishes, and 3 Conference Players of the Year produced, including a 47-22-6 record over 5 seasons at Davis & Elkins; he holds a B.S. in Sport and Exercise Science (Messiah College) and an M.S. in Sport Management (Nova Southeastern). The program's real standout asset is environmental: the $12 million Advance Soccer Complex (opened 2023) — a 1,500-seat championship artificial turf stadium plus six full-size natural turf practice/tournament fields and an indoor training complex with locker rooms, smart boards, and a training room — one of the best-documented JUCO soccer facilities found in this entire campaign. No dedicated strength & conditioning coach confirmed on the official staff directory.",
+    "fitOlivier": 42,
+    "lensScores": {
+      "overall": 42,
+      "soccer": 50,
+      "academic": 47,
+      "minutes": 46,
+      "lifestyle": 0,
+      "value": 51
+    },
+    "facilities": [
+      "The $12 million Advance Soccer Complex (opened 2023) — a 1,500-seat championship turf stadium plus six full-size natural turf practice fields and an indoor training complex",
+      "HC Aron Bassoff — 19 seasons of intercollegiate coaching experience, 18 as head coach, 3 conference/regional championships",
+      "A.S. in Health, Physical Education, and Recreation, Athletic Training Option — a genuine 500-hour clinical practicum sequence"
+    ],
+    "facilityDetails": {
+      "rating": "Excellent",
+      "stadium": "Advance Soccer Complex — championship artificial turf field, 1,500-seat capacity, opened 2023 as part of a $12 million community-college partnership.",
+      "trainingFields": "Six full-size natural turf fields for practice and tournaments, plus an indoor training complex for inclement weather.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory; the complex includes a dedicated training room.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "A dedicated training room is confirmed within the Advance Soccer Complex; no athletic trainer named specifically for men's soccer on the official coaches page.",
+      "academicLabs": "A.S. in Health, Physical Education, and Recreation — Athletic Training Option, with a genuine 500-hour clinical practicum sequence in Year 2.",
+      "extras": "Enid, OK (pop. ~50,000) — a real regional Oklahoma city with a genuine local youth/club soccer base (over 1,000 combined YMCA and club participants, per the college's own reporting).",
+      "note": "One of the best-documented JUCO soccer facilities in this entire campaign — a genuine $12 million complex — under a deeply experienced head coach in the first full season of a roster rebuild.",
+      "housing": {
+        "available": true,
+        "note": "NOC's own official Residence Hall page confirms real on-campus dormitory housing at the Enid campus (Jets Hall, Lankard Hall, E.B. Hall), with private-room upgrade options and a dining plan."
+      }
+    },
+    "culture": {
+      "vibe": "Enid, OK (pop. ~50,000) is a genuine regional Oklahoma city with an active local soccer community — the city's own YMCA and club soccer programs serve over 1,000 combined youth participants, per the college's own reporting.",
+      "thingsToDo": "A real regional city amenity base for a town this size, with the Advance Soccer Complex itself serving as a genuine community soccer hub beyond just the college program.",
+      "socialScene": "A program in a genuine coaching-driven rebuild — new HC Aron Bassoff's debut season was difficult (1-13-1) but his own CV is one of the deepest in this campaign, and the roster heading into 2026-27 is almost entirely rebuilt.",
+      "olivierMatch": "★★★ One of the best soccer-specific facilities in the entire guide and a deeply experienced head coach, offset by a cold Midwest/Plains climate, a program mid-rebuild, and the heaviest current-season midfield competition found in this batch.",
+      "lifestyleTags": "Elite soccer facility, cold climate, program mid-rebuild, deep coaching CV"
+    },
+    "courses": [],
+    "rec": "Northern Oklahoma College-Enid offers one of the best-documented soccer facilities found anywhere in this entire campaign — the $12 million Advance Soccer Complex, opened in 2023, features a 1,500-seat championship turf stadium, six full-size natural turf practice fields, and an indoor training complex — under HC Aron Bassoff, whose personal coaching CV (19 seasons, 18 as head coach, 3 conference/regional championships, a B.S. in Sport and Exercise Science) is one of the deepest in this guide. The program is in a genuine rebuild: Bassoff's debut 2025-26 season was difficult (1-13-1) following a respectable prior-staff 2024-25 (10-9-1), and his 2026-27 roster is almost entirely new. NOC-Enid pairs this with a genuine A.S. in Health, Physical Education, and Recreation (Athletic Training Option), including a real 500-hour clinical practicum sequence. Enid is a real regional Oklahoma city with an active local soccer community, though its Midwest climate is a poor match for Olivier's warm-climate preference. minutesOutlook reflects the program's genuine rebuild: only 1 of 10 midfielders on the current 2026-27 roster clears before Olivier's Aug 2027 arrival, with the other 9 (all freshmen) returning as sophomores to compete directly with him in his first season before the pool opens fully by his second year — the heaviest current-season midfield competition found anywhere in this batch.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Marco Segovia (So-MF)"
+      ],
+      "rising_senior_2027_count": 9,
+      "rising_senior_2027_names": [
+        "Mateus Perissinotto (Fr-MF)",
+        "Santiago Giminez (Fr-MF)",
+        "Sam Ritchie (Fr-MF)",
+        "Uros Milosavljevic (Fr-MF)",
+        "Andy Hernandez (Fr-MF)",
+        "David Rodriguez (Fr-MF)",
+        "Arturo Michalana (Fr-MF)",
+        "Edwin Loza (Fr-MF)",
+        "Yahir Montes (Fr-MF)"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 20,
+          "label": "Development year",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "NOC-Enid's own official 2026-27 roster (the current, already-published season, reflecting HC Aron Bassoff's near-total roster rebuild) lists 10 midfielders: 9 true freshmen who return as sophomores in 2027-28, directly competing with Olivier for minutes in his first season, and only 1 sophomore (Marco Segovia) who completes his 2-year NJCAA eligibility during 2026-27 and clears before Olivier's August 2027 arrival. The heaviest current-season midfield competition found in this batch — the pool opens fully only once the large freshman class completes its own eligibility at the end of 2027-28. Ask the coach: 'With nine returning sophomores in the midfield, what is the realistic path to minutes for an incoming freshman in 2027?'"
+    },
+    "recruit_pathway": "Portal/JUCO-heavy",
+    "recruit_pathway_note": "The 2026-27 midfield pool is overwhelmingly true freshmen from a wide international base (Brazil, Serbia, Mexico, Morocco/France) with no transfer-portal annotation visible on the roster — the roster reads as a large true-freshman rebuild class rather than a portal-heavy roster, though the sheer size of the incoming class means genuinely heavy internal competition for an incoming recruit.",
+    "acRank": "NJCAA Level",
+    "kinRank": "A.S. in Health, Physical Education, and Recreation — Athletic Training Option, with a genuine 500-hour clinical practicum sequence"
   }
 ]

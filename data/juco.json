@@ -20687,5 +20687,721 @@
     "recruit_pathway_note": "Both confirmed 2025-26 midfielders are true freshmen with no transfer annotation, drawn from the local Kennewick/Tri-Cities area — a genuinely open true-freshman entry pathway, reflecting the program's overall youth.",
     "acRank": "NJCAA Level",
     "kinRank": "No Exercise Science, Kinesiology, or Athletic Training program exists at PNWCC — a Bible/ministry-focused core curriculum"
+  },
+  {
+    "id": "illinois_central",
+    "name": "Illinois Central",
+    "full": "Illinois Central College",
+    "loc": "East Peoria, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 24",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "Real recent on-field strength short of the Elite bar: 2022 NJCAA Region 24 Champion and Midwest District Finalist under HC Gabe Carreno (2022 Region 24 Coach of the Year), then ranked as high as No. 12 nationally in the 2024 NJCAA DI poll (8-4-3). No 2025-season title, top-5 national ranking, or confirmed 2025 NJCAA All-American found — verified via njcaaregion24.com's own 5-season standings archive (2025-26 finished 2nd at 5-2-1) and the coach's own official bio.",
+    "njcaaRegion": "Region 24",
+    "njcaaRegionArea": "Illinois",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 396,
+    "mapY": 169,
+    "domain": "illinoiscentralcougars.com",
+    "url": "https://illinoiscentralcougars.com/sports/mens-soccer",
+    "degreeTitle": "Physical Education, A.S. (transfer degree)",
+    "acuAlign": 4,
+    "acuAlignNote": "Illinois Central College offers a Physical Education Associate in Science transfer degree (60-64 credits) — confirmed via the college's own official course catalog (catalog.icc.edu). Real relevant coursework includes BIOL 140 Human Anatomy and Physiology, BIOL 110 Life Science, PHYED 236 Scientific Basis of Human Movement (a biomechanics-adjacent course), and PHYED 210 Sport Psychology — but no dedicated Exercise Physiology, Biomechanics, Resistance Training, or Internship/Practicum course was found in the program's own listed curriculum. acuAlign scored 4, a real but modest match versus a full Exercise Science degree.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": true
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 24 (Illinois)",
+    "soccerLevelShort": "NJCAA DI — Region 24",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "5,000",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "Open enrollment — no stated GPA minimum; high school transcript or GED required",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Illinois Central College has open, non-selective admission (confirmed via its own official Admissions pages) — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 20310,
+      "tuition": 5010,
+      "roomBoard": 15300,
+      "fees": 0,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1500,
+      "aidType": "athletic+merit",
+      "internationalNote": "ICC's own official 2026-27 international-student Cost of Attendance (icc.edu/admissions/international-students) discloses a flat, residency-blind tuition rate of $167/credit hour (Fall 2026) — genuinely rare for a US community college — combined with fees into a $5,010/yr Tuition & Fees line, plus a $15,300/yr Living Expenses estimate for a student in on-campus housing. Direct billed cost: $20,310/yr, one of the cheaper full-profile JUCOs in the guide. ICC's own campus housing was sold and closed in 2025; it reopened August 2026 as 'Woodside on Campus,' a privately-managed property (Young America Realty) directly adjacent to the East Peoria campus — the college's own official international-student COA page treats it as the on-campus housing option, so it is used as such here, but families should know it is not owned or operated by the college itself."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "2nd Region 24 DI (5-2-1)",
+        "note": "5-2-1 Region (.688, 2nd behind Lewis & Clark), 11-5-4 overall (.650). Verified via njcaaregion24.com's official 2025-26 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "3rd Region 24 DI (3-3-1)",
+        "note": "3-3-1 Region (.500), 8-5-3 overall (.594) — ranked as high as No. 12 nationally in the NJCAA DI poll this season. Verified via njcaaregion24.com's official 2024-25 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "3rd Region 24 DI (4-4)",
+        "note": "4-4 Region (.500), 9-8 overall (.529). Verified via njcaaregion24.com's official 2023-24 standings archive."
+      }
+    ],
+    "titles": [
+      "2022 NJCAA Region 24 Champion (Midwest District Finalist)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "Alejandro Alcaide Fernandez → Grand Canyon University (NCAA D1)",
+        "Lorenzo Battagliarin → University of Wisconsin-Green Bay (NCAA D1)"
+      ],
+      "draftRank": "JUCO level — no MLS SuperDraft picks confirmed. ICC's own 'Players Moving On' page lists roughly 28 transfer destinations, including two confirmed NCAA D1 programs (Grand Canyon, UW-Green Bay), but carries no year windows or division labels for the rest.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://illinoiscentralcougars.com/sports/2021/9/3/players-moving-on-ms",
+        "note": "ICC's own 'Players Moving On' page lists real transfer destinations (confirmed NCAA D1 Grand Canyon and UW-Green Bay among them) but no year windows or division labels for the list as a whole, so no dated rate can be computed. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+      }
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 55,
+      "fitness": 45
+    },
+    "devScoresNote": "Tier-1: HC Gabe Carreno (4th season, 32-18-3 career at ICC) played semi-pro/pro (NASL/USL, Albuquerque Sol PDL/USL2), holds a USSF 'B' License, FA Talent ID Certificate and an MBA in Global Sports Business; prior assistant stops at Otero Junior College (Region IX title, Staff of the Year), Heartland CC, and Illinois Wesleyan University. A 4-person staff (HC + 3 assistants) plus a named Athletic Trainer (Anna Smarjesse). Real dedicated CougarPlex Soccer Field (natural grass, since 2011) plus a separate on-campus practice field a quarter-mile away. No dedicated strength & conditioning coach, video-analysis, or sports-science staff confirmed on the official staff directory.",
+    "fitOlivier": 56,
+    "lensScores": {
+      "overall": 56,
+      "soccer": 49,
+      "academic": 36,
+      "minutes": 87,
+      "lifestyle": 0,
+      "value": 58
+    },
+    "facilities": [
+      "Dedicated CougarPlex Soccer Field (natural grass, since 2011) plus a separate practice field",
+      "Ranked as high as No. 12 nationally in the 2024 NJCAA DI poll under HC Gabe Carreno (2022 Region 24 Coach of the Year)",
+      "Real Physical Education transfer A.S. degree with genuine Human Anatomy & Physiology coursework"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "CougarPlex Soccer Field — natural grass, no stated seating capacity; portable benches added 2018.",
+      "trainingFields": "A separate on-campus practice field roughly a quarter-mile from the competition field.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "A named Athletic Trainer (Anna Smarjesse, OSF HealthCare) is listed on the official coaching/support staff page.",
+      "academicLabs": "Physical Education A.S. transfer degree with real Human Anatomy & Physiology (BIOL 140) and Life Science (BIOL 110) coursework; no dedicated Exercise Science labs confirmed.",
+      "extras": "East Peoria, IL — part of the Peoria metro area (pop. ~400,000), the largest metro in this batch.",
+      "note": "A genuinely competitive, historically ranked NJCAA DI program (No. 12 nationally in 2024, a 2022 Region 24 title) under an experienced, well-credentialed head coach, playing on a real dedicated soccer field since 2011.",
+      "housing": {
+        "available": true,
+        "note": "ICC's own official international-student Cost of Attendance page treats on-campus housing as available, priced into the $26,560 on-campus COA total — though the college's own prior campus housing was sold in 2025 and reopened August 2026 as the privately-managed 'Woodside on Campus' (Young America Realty), directly adjacent to campus, not owned/operated by the college itself."
+      }
+    },
+    "culture": {
+      "vibe": "East Peoria sits in the real Peoria, IL metro area (pop. ~400,000) along the Illinois River — the largest metro area in this batch, with genuine city amenities a short drive from a small-college campus.",
+      "thingsToDo": "The Peoria riverfront, EastSide Centre recreation complex, and a real regional metro amenity base including restaurants, shopping and a minor-league sports scene.",
+      "socialScene": "A genuinely competitive, historically ranked program (No. 12 nationally in 2024) with a stable, well-credentialed head coach now in his 4th season — a program with real momentum rather than a rebuild.",
+      "olivierMatch": "★★★ A real, historically competitive NJCAA DI program with the largest metro area in this batch and a genuinely strong head coach, offset by a cold Midwest climate and only a modest academic (Physical Education, not Exercise Science) match.",
+      "lifestyleTags": "Cold climate, mid-size metro area, historically competitive program, modest academic match"
+    },
+    "courses": [],
+    "rec": "Illinois Central College is a genuinely competitive, historically successful NJCAA DI program — a 2022 Region 24 Championship and Midwest District Finalist run, followed by a No. 12 national ranking in 2024 (8-4-3) — under HC Gabe Carreno, now in his 4th season, whose own CV includes semi-pro/pro playing experience (NASL/USL, Albuquerque Sol) and assistant-coaching stops at Otero Junior College, Heartland CC, and Illinois Wesleyan University. The Cougars play on a real dedicated natural-grass field (CougarPlex Soccer Field) with a separate practice field, though no dedicated strength & conditioning or sports-science staff was confirmed. Illinois Central offers a Physical Education transfer A.S. degree with real (if modest) coverage of ACU-relevant coursework — Human Anatomy & Physiology, Life Science, and a biomechanics-adjacent Scientific Basis of Human Movement course. East Peoria sits within the real Peoria metro area, the largest in this batch. minutesOutlook is wide open: all 11 midfielders on the 2025-26 roster clear NJCAA eligibility before Olivier's Aug 2027 arrival. The trade-off is a genuinely affordable but not free-of-nuance housing situation — the college's own campus housing was sold and reopened in 2026 under private management.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 11,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 11,
+      "cleared_names": [
+        "Alessandro Campos Bellirio (So-MF)",
+        "Nathan Le Roux (So-MF)",
+        "Pierrot Mourton (So-MF)",
+        "Brandon Carrillo (So-MF)",
+        "Rodrigo Urban Castillo (Fr-MF)",
+        "Charlie Taylor (So-MF)",
+        "Victor Sanz Paz (So-MF)",
+        "Connor Lee Benway (Fr-MF)",
+        "Diego Beker (Fr-MF)",
+        "Noah Russow (Fr-MF)",
+        "Leopold Brunnler (Fr-MF)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 90,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "ICC's own official 2025-26 roster (the current, most recently published season — no 2026-27 roster posted yet as of Aug 2026) lists 11 midfielders across a mix of freshmen (5) and sophomores (6). Since 2025-26 is a stale-by-one-year roster, the entire pool completes NJCAA's 2-year eligibility before Olivier's August 2027 arrival — a fully open, wide pool. Ask the coach: 'How many true central-midfield recruits are you targeting for the 2026 class?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "The 2025-26 midfield pool is a genuine mix of true freshmen and sophomores with no transfer-portal annotation on the roster, drawn heavily from international markets (France, Spain, Venezuela, Mexico) alongside domestic recruits — a real, open true-freshman/sophomore entry pathway.",
+    "acRank": "NJCAA Level",
+    "kinRank": "Physical Education transfer A.S. degree with real Human Anatomy & Physiology and Life Science coursework — not a dedicated Exercise Science or Kinesiology program"
+  },
+  {
+    "id": "southwestern_illinois",
+    "name": "Southwestern Illinois",
+    "full": "Southwestern Illinois College",
+    "loc": "Belleville, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 24",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "No Region 24 title in the 2021-2025 window researched — best recent finish was 2nd in Region 24 DI in 2024-25 (3-2-1, 10-8-4 overall). Verified via njcaaregion24.com's official 5-season standings archive, on which SWIC appears in the Division II bracket as recently as 2023-24 before moving up to the Division I bracket for 2024-25 and 2025-26.",
+    "njcaaRegion": "Region 24",
+    "njcaaRegionArea": "Illinois",
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#0369a1"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 391,
+    "mapY": 203,
+    "domain": "swic.edu",
+    "url": "https://www.swic.edu/students/services/student-life/athletics/mens-soccer/",
+    "degreeTitle": "Exercise Science Pre-Major, A.A. (Health/Physical Education transfer pathway)",
+    "acuAlign": 4,
+    "acuAlignNote": "Southwestern Illinois College offers a real Exercise Science pre-major pathway within its Associate in Arts degree (confirmed via the college's own official Academics pages) leading toward a Health/Physical Education major at a four-year school. Real relevant coursework includes HES 170 Introduction to Exercise Science, PSYC 270 Health Psychology, and the optional BIOL 157 Human Anatomy & Physiology I — but no dedicated Biomechanics, advanced Exercise Physiology, Resistance Training, or Internship/Practicum course was found. acuAlign scored 4, matching Illinois Central's real-but-modest coverage.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": true
+      },
+      {
+        "unit": "EXSC225",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 24 (Illinois)",
+    "soccerLevelShort": "NJCAA DI — Region 24",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "10,000",
+    "prePT": "Good",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "Open enrollment — no stated GPA minimum; high school transcript or GED required",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "SWIC has open, non-selective admission (confirmed via its own official Admissions pages) — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 7350,
+      "tuition": 7080,
+      "roomBoard": 0,
+      "fees": 270,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1200,
+      "aidType": "athletic+merit",
+      "internationalNote": "SWIC's own official Tuition Rate & Fees page (swic.edu) confirms an out-of-state/international rate of $236/credit hour starting Fall 2026, plus mandatory Information Technology ($6/credit) and Student Services ($3/credit) fees — one of the lowest sticker tuition rates in the entire guide. SWIC's own official cost documentation states direct costs are limited to 'tuition, fees, and select books and supplies' — the college has no on-campus housing (a genuine commuter college across its Belleville, Granite City, and Red Bud campuses), so roomBoard is stored as $0 and international students must arrange off-campus housing independently."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "3rd Region 24 DI (1-3-1)",
+        "note": "1-3-1 Region (.300), 6-7-4 overall (.471). Verified via njcaaregion24.com's official 2025-26 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "2nd Region 24 DI (3-2-1)",
+        "note": "3-2-1 Region (.583), 10-8-4 overall (.545) — the program's best recent finish. Verified via njcaaregion24.com's official 2024-25 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "Region 24 DII (1-1-2)",
+        "note": "Competed in the Region 24 Division II bracket this season (1-1-2, .500; 9-7-3 overall, .553) before moving up to Division I for 2024-25. Verified via njcaaregion24.com's official 2023-24 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO level — no MLS SuperDraft picks confirmed and no dedicated alumni/next-level page found on the official athletics site.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://www.swic.edu/students/services/student-life/athletics/mens-soccer/",
+        "note": "SWIC's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+      }
+    },
+    "devScores": {
+      "tactical": 50,
+      "technical": 44,
+      "fitness": 40
+    },
+    "devScoresNote": "Tier-1: HC Lindsay Eversmeyer (4th season) brings an extraordinary personal playing/coaching pedigree — played NCAA D1 at Kansas and at Harris-Stowe State (5 offensive scoring records, AMC MVP 2001), was the first and only woman to play men's professional soccer (Major Indoor Soccer League, St. Louis Steamers, 2005), holds a USSF 'B' National Coaching License, and has been inducted into the Missouri Sports HOF (2024), St. Louis Sports HOF (2024) and Illinois Sports HOF (2025) — but the program itself shows no dedicated stadium (home games split across campus sites), no confirmed strength & conditioning staff, and no video-analysis/sports-science resources on the official site. A 3-person staff (HC + assistant + a dedicated goalkeeper coach) is a real, if modest, structure. Per §5a, this score reflects the training ENVIRONMENT, not the coach's own elite personal CV, which is captured in coaches.json instead.",
+    "fitOlivier": 48,
+    "lensScores": {
+      "overall": 48,
+      "soccer": 44,
+      "academic": 36,
+      "minutes": 87,
+      "lifestyle": 0,
+      "value": 63
+    },
+    "facilities": [
+      "HC Lindsay Eversmeyer — the first and only woman to play men's professional soccer (MISL, St. Louis Steamers, 2005), now in her 4th season as HC",
+      "One of the lowest sticker tuition rates in the entire guide ($236/credit hour international)",
+      "A dedicated goalkeeper coach on staff, alongside the head coach and an assistant"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "No dedicated stadium name or seating capacity confirmed; home fixtures have been played at the Belleville West Campus.",
+      "trainingFields": "Standard campus fields across SWIC's Belleville, Granite City, and Red Bud campuses; no dedicated soccer-only facility confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "No athletic trainer named specifically for men's soccer on the official coaches page.",
+      "academicLabs": "A real Exercise Science pre-major pathway with genuine Human Anatomy & Physiology (BIOL 157, optional) and Health Psychology (PSYC 270) coursework; no dedicated Exercise Science labs confirmed.",
+      "extras": "Belleville, IL sits within the Metro East region of the greater St. Louis, MO metro area — real city amenities a short drive away, though SWIC itself is a multi-campus commuter college.",
+      "note": "A modest facility profile carried by an extraordinary head coach — the first woman ever to play men's professional soccer — at one of the lowest sticker tuition rates in the entire guide.",
+      "housing": {
+        "available": false,
+        "note": "SWIC's own official cost documentation confirms direct costs are limited to 'tuition, fees, and select books and supplies' — a multi-campus commuter college (Belleville, Granite City, Red Bud) with no on-campus housing of any kind."
+      }
+    },
+    "culture": {
+      "vibe": "Belleville, IL is part of the Metro East region of the greater St. Louis, MO metropolitan area — a real, sizeable metro (pop. ~2.8M) a short drive across the Mississippi River, though SWIC's own campuses are suburban/commuter in character.",
+      "thingsToDo": "Downtown St. Louis (Gateway Arch, Cardinals/City SC games) roughly 20-25 minutes away, plus Belleville's own historic downtown.",
+      "socialScene": "A modest, still-building program under an extraordinary and deeply decorated head coach — real potential for mentorship and connections (Eversmeyer was on-field Match Day Analyst for St. Louis City SC, the local MLS club) despite a currently thin facility profile.",
+      "olivierMatch": "★★★ A genuinely unique head coach with an extraordinary personal story and MLS-club connections, real St. Louis metro access, and one of the cheapest tuition rates in the guide — offset by no on-campus housing and a currently modest facility/results profile.",
+      "lifestyleTags": "St. Louis metro access, commuter college (no housing), historic head coach, low cost"
+    },
+    "courses": [],
+    "rec": "Southwestern Illinois College is carried by one of the most remarkable coaching stories in this entire guide: HC Lindsay Eversmeyer, now in her 4th season, was the first and only woman ever to play men's professional soccer (Major Indoor Soccer League, St. Louis Steamers, 2005), played NCAA D1 soccer at Kansas, holds a USSF 'B' National Coaching License, and has been inducted into three separate regional Sports Halls of Fame (Missouri 2024, St. Louis 2024, Illinois 2025) — she was also the on-field Match Day Analyst for St. Louis City SC, the local MLS club. The program's on-field results are modest (2nd in Region 24 in 2024-25, 3rd in 2025-26) and its facility profile is thin — no dedicated stadium, S&C, or sports-science staff confirmed — but SWIC pairs a real Exercise Science pre-major pathway with one of the lowest sticker tuition rates in the entire guide ($236/credit international). Belleville sits within the real St. Louis, MO metro area, though SWIC is a multi-campus commuter college with no on-campus housing. minutesOutlook is wide open: all 10 midfielders on the 2025-26 roster clear NJCAA eligibility before Olivier's Aug 2027 arrival.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 10,
+      "cleared_names": [
+        "Chris Munoz (Fr-MF)",
+        "Jude Keller (Fr-MF)",
+        "David Ramos Barnes (So-MF)",
+        "Kyle Gordon (So-MF)",
+        "Mohamed Zenfouri (So-MF)",
+        "Edgar Lopez (Fr-MF)",
+        "Jaylen Wade (Fr-MF)",
+        "Eli Schwehr (So-MF)",
+        "Elijah Layorn (Fr-MF)",
+        "Juan Diego Sanmiguel (So-MF)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 90,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "SWIC's own official 2025 roster (the current, most recently published season) lists 10 midfielders — 5 freshmen, 5 sophomores. Since this is a stale-by-one-year (2025-26) roster, the entire pool completes NJCAA's 2-year eligibility before Olivier's August 2027 arrival — a fully open pool. Ask the coach: 'How many true central-midfield recruits are you targeting for the 2026 class?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "The 2025-26 midfield pool is a genuine mix of true freshmen and sophomores drawn from both domestic (Illinois, Missouri) and international (Spain, Jamaica, France, Colombia, Kenya) markets with no transfer-portal annotation on the roster — a real, open entry pathway.",
+    "acRank": "NJCAA Level",
+    "kinRank": "Exercise Science pre-major pathway with real Human Anatomy & Physiology and Health Psychology coursework, within a general Associate in Arts degree"
+  },
+  {
+    "id": "lincoln_trail",
+    "name": "Lincoln Trail",
+    "full": "Lincoln Trail College",
+    "loc": "Robinson, IL",
+    "region": "midwest",
+    "div": "JUCO",
+    "conf": "NJCAA Division I / Region 24",
+    "confKey": "other",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "juco2yr": true,
+    "jucoTier": "Standard",
+    "jucoTierNote": "A genuinely competitive 2023-24 season (10-3-4 overall, tied atop the Region 24 DI standings by record) preceded a head-coaching change in July 2024 and a real rebuild — 1-4 in 2024-25 and 0-4 in 2025-26 under new HC Luis Dantas. No 2025-season title, top-5 national ranking, or NJCAA All-American found. Verified via njcaaregion24.com's official 5-season standings archive.",
+    "njcaaRegion": "Region 24",
+    "njcaaRegionArea": "Illinois",
+    "profileDepth": "full",
+    "color": [
+      "#fee2e2",
+      "#991b1b"
+    ],
+    "tags": [
+      "soccer"
+    ],
+    "mapX": 416,
+    "mapY": 195,
+    "domain": "ltcathletics.com",
+    "url": "https://www.ltcathletics.com/sports/msoc",
+    "degreeTitle": "Associate in Science, A.S. (general transfer degree — no dedicated Exercise Science, Kinesiology, or Physical Education program)",
+    "acuAlign": 0,
+    "acuAlignNote": "Lincoln Trail College, a small rural campus of Illinois Eastern Community Colleges (IECC), offers no dedicated Exercise Science, Kinesiology, or Physical Education program — confirmed via IECC's own official district-wide Areas of Study filter (iecc.edu), which lists only nursing-adjacent Health & Wellness programs (Nursing, Medical Assistant, Health Careers) with no exercise/movement science pathway at any of its four campuses, and no Physical Therapist Assistant program at Lincoln Trail specifically (that program exists only at IECC's Wabash Valley campus). A student would pursue the generic Associate in Science transfer degree with no exercise-science-specific coursework. acuAlign scored 0, matching other small/rural JUCOs with no relevant program researched in this campaign.",
+    "acuUnits": [
+      {
+        "unit": "ANAT100",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "BIOL125",
+        "covered": false
+      },
+      {
+        "unit": "EXSC225",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC224",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC204",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "EXSC199",
+        "covered": false
+      },
+      {
+        "unit": "EXSC296",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "EXSC122",
+        "covered": false
+      },
+      {
+        "unit": "EXSC398",
+        "covered": false
+      }
+    ],
+    "soccerLevel": "NJCAA Division I — Region 24 (Illinois)",
+    "soccerLevelShort": "NJCAA DI — Region 24",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "full",
+    "size": "600",
+    "prePT": "Poor",
+    "prePTShort": "Poor",
+    "gpa": {
+      "minEntry": "Open enrollment — no stated GPA minimum; high school transcript or GED required",
+      "minSchol": "2.0 NJCAA minimum for athletic eligibility",
+      "note": "Lincoln Trail College has open, non-selective admission (confirmed via IECC's own official Admissions pages) — no GPA barrier to entry. Olivier's 2.8 is well above the NJCAA 2.0 eligibility floor.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 8410,
+      "tuition": 7200,
+      "roomBoard": 0,
+      "fees": 1210,
+      "maxAthletic": 0.5,
+      "maxAcademic": 1200,
+      "aidType": "athletic+merit",
+      "internationalNote": "IECC's own official Tuition & Fee Rates page (iecc.edu) confirms a Non-U.S. Resident tuition rate of $240/credit hour effective Summer 2026, plus mandatory Maintenance ($15/credit), Student Support ($12/credit) and Technology ($9/credit) fees and flat per-semester Activity ($60) and Facilities Usage ($5) fees — one of the lowest sticker tuition rates in the guide. Lincoln Trail College itself has no institutional dormitories; student housing is provided through Statesmen Rentals, LLC, a privately-owned company with properties directly adjacent to campus (marketed as 'dorms,' within walking distance) and elsewhere in Robinson, IL — stored here as roomBoard $0 (not billed by the college) with the housing situation disclosed in facilityDetails.housing."
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Last, Region 24 DI (0-4)",
+        "note": "0-4 Region (.000), 2-10-1 overall (.192) under 2nd-year HC Luis Dantas. Verified via njcaaregion24.com's official 2025-26 standings archive."
+      },
+      {
+        "yr": 2024,
+        "pos": "Last, Region 24 DI (1-4)",
+        "note": "1-4 Region (.200), 3-9-2 overall (.286) — HC Luis Dantas's first season (hired July 2024). Verified via njcaaregion24.com's official 2024-25 standings archive."
+      },
+      {
+        "yr": 2023,
+        "pos": "1st (tie), Region 24 DI (4-2-1)",
+        "note": "4-2-1 Region (.643), 10-3-4 overall (.706) — tied atop the Region 24 DI standings by overall record, the program's strongest recent season, under the prior coaching staff. Verified via njcaaregion24.com's official 2023-24 standings archive."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "JUCO level — no MLS SuperDraft picks confirmed and no dedicated alumni/next-level page found on the official athletics site.",
+      "nextLevel": {
+        "metric": "d1TransferRate",
+        "perYear": null,
+        "sourceUrl": "https://www.ltcathletics.com/sports/msoc",
+        "note": "Lincoln Trail's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+      }
+    },
+    "devScores": {
+      "tactical": 45,
+      "technical": 40,
+      "fitness": 38
+    },
+    "devScoresNote": "Tier-1: HC Luis Dantas (hired July 2024, 2nd season) brings a genuinely deep personal playing/coaching CV — JUCO playing career at Murray State College (OK) and Cowley CC (2 conference titles, a regional title, Defensive Player of the Year), transferred to NCAA D1 Western Illinois University (800+ minutes, started every conference match), then 3 seasons of professional indoor soccer with the Wichita Wings (3 conference titles, 3 national tournament appearances) plus USL League Two/UPSL experience, and assistant-coaching stops at Newman University (NAIA, a Top 25 ranking and the program's first semifinal) and the University of Health Sciences and Pharmacy in St. Louis. The program itself, however, shows no confirmed dedicated stadium beyond 'Statesmen Park,' no strength & conditioning staff, and no video-analysis/sports-science resources on the official site — and is mid-rebuild on the field (0-4 and 1-4 the last two seasons). Per §5a, this score reflects the training ENVIRONMENT, not the coach's own strong personal CV, which is captured in coaches.json instead.",
+    "fitOlivier": 53,
+    "lensScores": {
+      "overall": 53,
+      "soccer": 42,
+      "academic": 15,
+      "minutes": 87,
+      "lifestyle": 0,
+      "value": 65
+    },
+    "facilities": [
+      "HC Luis Dantas — a former NCAA D1 (Western Illinois) and JUCO player plus 3-season professional indoor soccer veteran (Wichita Wings)",
+      "One of the lowest sticker tuition rates in the entire guide ($240/credit hour international)",
+      "Statesmen Park — the program's home venue in Robinson, IL"
+    ],
+    "facilityDetails": {
+      "rating": "Solid",
+      "stadium": "Statesmen Park — no stated seating capacity or surface type confirmed on the official athletics site.",
+      "trainingFields": "Standard campus/community fields; no dedicated soccer-only training facility confirmed.",
+      "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
+      "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
+      "sportsMed": "No athletic trainer named specifically for men's soccer on the official coaches page.",
+      "academicLabs": "No Exercise Science, Kinesiology, or Physical Education program of any kind — a general Associate in Science transfer degree only.",
+      "extras": "Robinson, IL (pop. ~6,000) is a small rural town in southeastern Illinois — the smallest and most rural campus setting in this batch.",
+      "note": "A program mid-rebuild on the field under a genuinely well-traveled head coach (NCAA D1 playing experience, 3 seasons of professional indoor soccer) — real personal coaching pedigree in a still-thin facility environment, at one of the lowest costs of attendance in the guide.",
+      "housing": {
+        "available": true,
+        "note": "Lincoln Trail College has no institutional dormitories; housing is provided through Statesmen Rentals, LLC, a privately-owned company with properties directly adjacent to campus (marketed as 'dorms,' within walking distance of Statesmen Park) and elsewhere in Robinson, IL — not owned or operated by the college itself, but the school's de facto, long-established student housing option in a small town with few other choices."
+      }
+    },
+    "culture": {
+      "vibe": "Robinson, IL (pop. ~6,000) is a small, rural southeastern Illinois town — the most rural, smallest-town setting in this entire batch, roughly 40 minutes from the nearest larger city (Terre Haute, IN).",
+      "thingsToDo": "A small-town setting with limited off-campus amenities; Statesmen Rentals' own properties sit within walking distance of campus and Statesmen Park.",
+      "socialScene": "A program genuinely mid-rebuild — a strong 2023-24 season (10-3-4) gave way to back-to-back losing seasons after a July 2024 coaching change — now led by a head coach with real NCAA D1 and professional playing experience looking to rebuild the culture.",
+      "olivierMatch": "★★ A real long-shot, ground-floor opportunity under a genuinely well-traveled head coach (NCAA D1 + 3 seasons pro indoor soccer), at one of the lowest costs of attendance in the guide, offset by a program mid-rebuild, no academic program match, and the most rural small-town setting in this batch.",
+      "lifestyleTags": "Rural small town, program mid-rebuild, no academic program match, low cost"
+    },
+    "courses": [],
+    "rec": "Lincoln Trail College is a program genuinely mid-rebuild: a strong 2023-24 season (10-3-4 overall, tied atop the Region 24 DI standings) gave way to back-to-back losing seasons (1-4 in 2024-25, 0-4 in 2025-26) following a July 2024 head-coaching change. New HC Luis Dantas brings a genuinely deep personal playing and coaching CV — JUCO stops at Murray State College (OK) and Cowley CC (2 conference titles, Defensive Player of the Year), a transfer to NCAA Division I Western Illinois University, 3 seasons of professional indoor soccer with the Wichita Wings (3 conference titles), and assistant-coaching experience at NAIA Newman University. Lincoln Trail is a small, rural IECC campus in Robinson, IL with no Exercise Science, Kinesiology, or Physical Education program of any kind, and no institutional dormitories — housing runs through a long-established private operator, Statesmen Rentals, with properties directly adjacent to campus. The trade-off for a genuine long-shot, ground-floor program: one of the lowest costs of attendance in the entire guide. minutesOutlook is wide open: all 9 midfielders on the 2025-26 roster clear NJCAA eligibility before Olivier's Aug 2027 arrival.",
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2025-26",
+      "cleared_before_2027": 9,
+      "cleared_names": [
+        "Erick Olmo (MF)",
+        "Joseph Satizabal (Fr-MF)",
+        "Fabian Hernandez (Fr-MF)",
+        "Ryudai Seki (Fr-MF)",
+        "Hugo Cuesta (So-MF)",
+        "Nael Lakhloufi (Fr-MF)",
+        "Aseel Zubayen (Fr-MF)",
+        "Taiga Sugiyama (Fr-MF)",
+        "Daleek Hutchinson (Fr-MF)"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Low",
+      "trajectory": [
+        {
+          "yr_label": "Yr 1",
+          "pct": 85,
+          "label": "Captain candidate",
+          "year": 2027
+        },
+        {
+          "yr_label": "Yr 2",
+          "pct": 90,
+          "label": "Captain candidate",
+          "year": 2028
+        }
+      ],
+      "trajectoryNote": "Lincoln Trail's own official 2025-26 roster (the current, most recently published season) lists 9 midfielders (one player's class year was not published on the official roster; the rest are 8 freshmen and 1 sophomore). Since this is a stale-by-one-year (2025-26) roster, the entire pool completes NJCAA's 2-year eligibility before Olivier's August 2027 arrival regardless of the one missing class year — a fully open pool. Ask the coach: 'How many true central-midfield recruits are you targeting for the 2026 class?'"
+    },
+    "recruit_pathway": "Freshman-friendly",
+    "recruit_pathway_note": "The 2025-26 midfield pool is overwhelmingly true freshmen (8 of 9) with no transfer-portal annotation on the roster, drawn from a wide international base (France, Spain, Japan, Jordan, Morocco, Trinidad) — a real, wide-open true-freshman entry pathway, reflecting the program's rebuild under a new head coach.",
+    "acRank": "NJCAA Level",
+    "kinRank": "No Exercise Science, Kinesiology, or Physical Education program exists at Lincoln Trail College — a general Associate in Science transfer degree only"
   }
 ]

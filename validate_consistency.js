@@ -546,8 +546,10 @@ for (const [file, src] of PROSE_SOURCES) {
 // ADD TO THIS LIST whenever a phantom is found; both entries below were real.
 // The lookaheads are load-bearing: "USC Upstate" and "USC Aiken" are REAL schools
 // that legitimately appear as previous-school names in recruit_pathway_note text.
+// "Sumter/Lancaster/Salkehatchie/Union" are the guide's Region 10 JUCO additions
+// (Batch 9, v44.80) — all four real USC regional campuses now in the guide.
 const PHANTOM_SCHOOLS = [
-  [/\bUSC\b(?!\s+(?:Upstate|Aiken|Beaufort|Sumter|Lancaster|Salkehatchie))/,
+  [/\bUSC\b(?!\s+(?:Upstate|Aiken|Beaufort|Sumter|Lancaster|Salkehatchie|Union))/,
     'USC — fields no team in this guide (removed from the big-ten intro, v44.43)'],
   [/\bUF\b(?!\s*[—-]\s*academic reference)/,
     'UF — Florida fields no men\'s soccer program (CLAUDE.md §5a flags this in the Glossary)'],

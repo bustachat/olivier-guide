@@ -113,7 +113,7 @@
       "fitness": 72
     },
     "devScoresNote": "v42.23 §5a re-baseline (training environment only). Live ucsbgauchos.com MSOC staff: 4 coaches (HC Vom Steeg + Assoc HC Wilson + position-specific Goalkeeping Coach Fernandez + asst) + Dir of Ops; no dedicated soccer S&C listed. Stored Tier-1 facilityDetails: 17,000-seat soccer-specific Harder Stadium (College Cup host 2010/2018, shares w/ USL club) + 2-3 practice fields, Statsports GPS + Hudl video, dedicated AT, shared UC S&C. Strongest Big West environment; 2006 title / #1 pick are results, excluded.",
-    "fitOlivier": 63,
+    "fitOlivier": 59,
     "tags": [
       "warm",
       "city",
@@ -133,48 +133,45 @@
     "rec": "Mediterranean climate identical to Sydney. Manu Duah #1 pick proves D1 pro calibre. Strong kinesiology. Beach campus lifestyle match.",
     "url": "https://ucsbgauchos.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 63,
+      "overall": 59,
       "soccer": 69,
       "academic": 73,
-      "minutes": 34,
+      "minutes": 21,
       "lifestyle": 95,
-      "value": 38
+      "value": 35
     },
     "minutesOutlook": {
       "available": true,
       "mf_total": 11,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 3,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Justin Gomes",
         "Kaden Standish",
-        "Dominick Phanco"
+        "Ethan Senter"
       ],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Mika Ney",
-        "Ethan Senter"
+        "Kalle Rahbek",
+        "Tobi Gerber"
       ],
-      "rising_junior_2027_count": 4,
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
         "Steinar Bjornsson",
-        "Jacob Medina",
-        "Jack Middleton",
-        "Ty Branigan"
+        "Jack Middleton"
       ],
-      "recruit_risk": "Medium",
+      "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
-          "label": "Squad rotation"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
@@ -185,13 +182,13 @@
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "Yr2 improves: 2 rising seniors clear after Yr1, opening spots. Medium risk. Olivier builds on proven Yr1.",
-      "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025-26 ucsbgauchos.com roster: of 11 MFs, only 2 arrived via JUCO transfer (Ney from Tyler JC, Gomes from Barton CC) — the other 9, including several internationals (Bjornsson from Iceland via Vikingur FC academy, Branigan, Middleton), came in as true freshmen straight from HS/club. Consistent with Vom Steeg's long-standing recruiting model."
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Re-read on the live 2026-27 ucsbgauchos.com roster (11 MFs of 29). Reclassified from Freshman-friendly: 4 of 11 MFs (36%) list a genuine 4-year college transfer (Grand Canyon x2, Wofford x2); the rest arrived direct from club (Irvine Strikers FC, Vikingur FC, De Anza Force SC, Sacramento Republic FC). No JUCO intake among MFs specifically (Northeast Community College, a JUCO, appears elsewhere on the roster at goalkeeper). NOTE: the site's card layout initially produced a misaligned read on a first pass (class years came out shifted); re-extracted per-card via each player's own container element and confirmed the corrected numbers before finalizing."
     },
     "profileDepth": "full",
     "confKey": "big-west",
@@ -1430,14 +1427,14 @@
     },
     "mapX": 102,
     "mapY": 218,
-    "fitOlivier": 63,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 63,
+      "overall": 51,
       "soccer": 65,
       "academic": 80,
-      "minutes": 52,
+      "minutes": 14,
       "lifestyle": 95,
-      "value": 38
+      "value": 31
     },
     "confRecord": [
       {
@@ -1543,54 +1540,52 @@
     "minutesOutlook": {
       "available": true,
       "mf_total": 9,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Nolan Sanchez",
-        "Adam Hillis",
-        "Bryce Barnum",
-        "Ryan Namdar",
-        "James Redington",
-        "Keenai Braun",
-        "Mhone Bogonko"
+        "Liam Zubak"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 1,
       "rising_senior_2027_names": [
-        "Tyler Cash",
-        "Sagar Patel"
+        "Woody Brown"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Gary Green",
+        "Sean Ueda",
+        "Masa Fujita",
+        "Tyler Cash"
+      ],
+      "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Key contributor"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 80,
-          "label": "Captain candidate"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 90,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "⚠️ 2025 roster (+1 applied). Exceptional 7 of 9 MF turnover — only 2 Freshmen (now So) remain. Near-elite opportunity. UCSD La Jolla is premium coastal lifestyle.",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Live 2025 ucsdtritons.com roster: of 12 MF spots, 5 came via 4-year transfer (Hillis from UNC Wilmington, Barnum from Duke, Barrett from Saint Mary's, Redington from Santa Clara, Bogonko from Loyola Chicago) — a 42% transfer share, all from 4-year programs (no JUCO). UCSD's rapid elevation to full D1 appears to be leaning on graduate/grad-transfer pickups to fill midfield depth quickly rather than a pure freshman pipeline."
+      "recruit_pathway_note": "Re-read on the live 2026-27 ucsdtritons.com roster (9 MFs of 28). UC San Diego's card layout publishes no previous-school field for any player, so the transfer-vs-freshman split cannot be re-derived; the Mixed classification is RETAINED, not re-derived, and should be treated as lower-confidence. Only 1 MF (a graduate student) clears before Olivier's 2027 entry, against 7 returning underclassmen."
     },
     "acuUnits": [
       {
@@ -1704,14 +1699,14 @@
     },
     "mapX": 102,
     "mapY": 211,
-    "fitOlivier": 53,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 53,
+      "overall": 47,
       "soccer": 55,
       "academic": 50,
-      "minutes": 42,
+      "minutes": 21,
       "lifestyle": 74,
-      "value": 39
+      "value": 36
     },
     "confRecord": [
       {
@@ -1815,56 +1810,55 @@
     "domain": "fullerton.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 10,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 7,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Matthew Sacristan",
-        "Pablo Obrador-Ibanez",
-        "Jose de la Torre",
-        "Fernando Valenzuela",
         "Benjamin Bjorkman",
-        "Cesar Aubour",
-        "Nikolas Wheeler-Quintanilla"
+        "Fernando Valenzuela"
       ],
       "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Alex Lugo",
-        "Aiden Bengard",
-        "Griffin Blair"
+        "Jose de la Torre",
+        "Armin Tehrani",
+        "Ulises Grado"
       ],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Aiden Bengard",
+        "Sam Sery",
+        "Alex Lugo"
+      ],
+      "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
-          "label": "Regular contributor"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 50,
-          "label": "Key contributor"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
       "trajectoryNote": "⚠️ 2025 roster (+1 applied). 7 of 10 MFs clear — only 3 Freshmen (now So) remain. Strong opportunity. Fullerton warm campus near LA/Anaheim. CSUF is already a top scorer for Olivier.",
-      "recruit_pathway": "Portal/JUCO-heavy",
-      "recruit_pathway_note": "Live 2025 fullertontitans.com roster: of 12 MF/D-MF/M-F spots, 9 (75%) arrived via transfer — including 2 direct JUCO transfers (both Grado brothers from Long Beach CC) plus Quintero (College of the Desert JUCO) and 6 more from 4-year programs (Grand Canyon, Coastal Carolina/UNC Asheville, Robert Morris, Central Connecticut State, Oregon St., UC Santa Cruz). Only 3 true freshmen (de la Torre, Valenzuela, Lugo) hold midfield spots. CSUF's low cost and accessible GPA line up with heavy portal/JUCO recruiting rather than a true-freshman pipeline — the clearest Portal/JUCO-heavy case found across all conferences researched so far."
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Re-read on the live 2026-27 fullertontitans.com roster (12 MFs of 34, counting the M/D and M/F hybrid-position players per the guide's own position-normalisation rule; was 10 last season). Reclassified DOWN from Portal/JUCO-heavy: only 4 of 12 MFs (33%) list a transfer, and just 2 of those are JUCO (Irvine Valley College, Long Beach CC) against 2 four-year transfers (Central Connecticut State, Syracuse/Campbell) — real JUCO presence but a minority source, closer to the guide's Mixed profile (compare Xavier's identical shape in the ACC/Big East batch) than a JUCO-heavy one. NOTE: the site's naive per-field array read was misaligned on a first pass — re-extracted via each player's own card container and confirmed the corrected class years/positions."
     },
     "acuUnits": [
       {

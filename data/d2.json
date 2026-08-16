@@ -407,7 +407,7 @@
       "fitness": 72
     },
     "devScoresNote": "Scored §5a (environment only; D2 ceiling 76). Staff dir (lynnfightingknights.com, browsed): HC Rootes has elite pedigree (3 D2 national titles) but only 1 assistant + a shared athletic trainer — thin staff caps tactical 74. Bobby Campbell Stadium dedicated (500, FieldTurf) + GPS Statsports Elite + Hudl individual dashboards -> technical 72. Performance Center 10,000 sqft shared across all varsity, normatec/ice-bath recovery -> fitness 72. National titles are RESULTS, excluded.",
-    "fitOlivier": 53,
+    "fitOlivier": 61,
     "tags": [
       "warm",
       "city",
@@ -430,61 +430,65 @@
     "rec": "Top pick for Australian players specifically. Warm Boca Raton sunshine, large international community, personal coaching on small campus. Coach Grant has Australian connections. Exercise Science to pre-PT pathway available. Best Sydney lifestyle match at D2 level.",
     "url": "https://lynnfightingknights.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 53,
+      "overall": 61,
       "soccer": 61,
       "academic": 73,
-      "minutes": 30,
+      "minutes": 53,
       "lifestyle": 85,
-      "value": 32
+      "value": 37
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 13,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 1,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "Myles Petrie"
+        "Lukas Egarter",
+        "Fabian Vyhnalek",
+        "Robin Muenst",
+        "Rui Ferreira",
+        "Julio Leal"
       ],
       "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Juan Moran Garcia",
-        "Gavin Diaz",
-        "Daniel Barrett"
+        "Daniel Ruiz Carral",
+        "Louis Munn",
+        "Gavin Diaz"
       ],
       "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "TJ Brandt",
-        "Ryan Rodriguez"
+        "Thiago De Carvalho",
+        "TJ Brandt"
       ],
-      "recruit_risk": "High",
+      "recruit_risk": "Low",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ],
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Live 2025 lynnfightingknights.com roster: of 13 MFs, at least 4 arrived holding a prior tertiary qualification (Univ. of Oldenburg, Johannes Gutenberg-Univ. Mainz, Mars Hill University, Universidad del Salvador) — several other Graduate Student MFs list no prior school at all, making the true transfer share hard to pin down precisely. A meaningful international grad/transfer presence consistent with Rootes' elite-pedigree recruiting model, but not a majority."
+      "recruit_pathway_note": "Re-read on the live 2026-27 lynnfightingknights.com roster (11 MFs of 30, down from 13 a year ago). Lynn's roster table publishes no previous-school column, so the split cannot be re-derived; the Mixed classification is RETAINED and should be treated as lower-confidence. Large graduating class: 5 of 11 MFs clear before Olivier's 2027 entry, one of the strongest openings in this batch."
     },
     "profileDepth": "full",
     "confKey": "other",
@@ -2624,7 +2628,7 @@
       "fitness": 71
     },
     "devScoresNote": "Scored §5a (environment only; D2 ceiling 76). Staff dir (ucgoldeneagles.com 2025, browsed): 7-person staff — HC Smee + 3 assistants + Head of Goalkeeping + dedicated Tactical Advisor + Video Analyst — unusually deep and specialized for D2 -> tactical 74. Wehrenberg/Laidley Field off-campus grass ('rebuilding infrastructure'), no GPS noted but dedicated video analyst + Exercise Science biomechanics/physiology labs -> technical 70. Fully-equipped D2 weight room + CAMC hospital partnership + faculty-athlete collaboration -> fitness 71.",
-    "fitOlivier": 49,
+    "fitOlivier": 41,
     "tags": [
       "acad",
       "soccer"
@@ -2643,68 +2647,64 @@
     "rec": "University of Charleston WV is a separate institution from College of Charleston (SC). UC offers a genuine pre-PT track with clinical hospital access through CAMC — a rare D2 advantage. Climate is cooler and city smaller than Olivier's warm-city preference. Best for athletes who prioritise clinical PT access and small-campus community over lifestyle match.",
     "url": "https://ucgoldeneagles.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 49,
+      "overall": 41,
       "soccer": 60,
       "academic": 74,
-      "minutes": 52,
+      "minutes": 31,
       "lifestyle": 50,
-      "value": 32
+      "value": 27
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 13,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 4,
+      "mf_total": 14,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "Sam Newell (Sr·M)",
-        "Jose Suarez Monaco (Jr·M)",
-        "Eduardo Rodrigues (Sr·M)",
-        "Samuel Montes (Jr·M)"
+        "Jose Suarez Monaco",
+        "Caio Moraes",
+        "Joao Felipe Almeida",
+        "Eduardo Rodrigues",
+        "Pedro Arbizu"
       ],
-      "rising_senior_2027_count": 4,
-      "rising_senior_2027_names": [
-        "Paul Hoste (So·M)",
-        "Jiang Ziyue (So·M)",
-        "Arthur Kraemer (So·M)",
-        "Simon Wheeler (So·M)"
-      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
       "rising_junior_2027_count": 5,
       "rising_junior_2027_names": [
-        "Noah Paschalides (Fr·M)",
-        "Andrew Warner (Fr·M)",
-        "Jeronimo Ramirez (Fr·M)",
-        "Mohanad Nahla (Fr·M)",
-        "Will Porter (Fr·M)"
+        "Imtiyaaz Kamaldien",
+        "Noah Paschalides",
+        "Andrew Warner",
+        "Mohanad Nahla",
+        "Jeronimo Ramirez"
       ],
       "recruit_risk": "Medium",
       "australianNote": "Jack Allan (Sr·D, Cape Schanck AUS) on current roster — direct Australian precedent. Mention in outreach to Coach Smee.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025 ucgoldeneagles.com roster: this page publishes only hometown, not HS or 'Previous School', for any player — unlike most other schools' rosters, so individual transfer status could not be directly verified. Classified Freshman-friendly on structural grounds (the extremely broad direct-international recruiting spread — 14+ countries — is consistent with Smee's own stated recruiting network rather than a domestic transfer pipeline). Lower confidence than other entries — flag for re-verification if a more detailed source is found.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 ucgoldeneagles.com roster (14 MFs of 54, up from 13 a year ago). University of Charleston's card layout publishes no previous-school field for any player, so the transfer-vs-freshman split cannot be re-derived; the Freshman-friendly classification is RETAINED and should be treated as lower-confidence. 5 of 14 MFs (3 seniors + 2 graduate students) clear before Olivier's 2027 entry; notably NO current junior in the group, so nobody becomes a rising senior.",
       "trajectoryNote": "Counting pure M positions only (13) — 6 hybrid D/M players excluded as they are primarily defenders. 4 pure MFs clear before Olivier arrives. 9 remain (4 seniors + 5 juniors) plus new recruits. 54-man squad is large for D2 but MF competition more manageable than the raw 19 figure suggested. Australian precedent (Jack Allan) is a direct conversation starter with Coach Smee.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 45,
-          "label": "Squad rotation — 9 MFs + recruits"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 62,
-          "label": "Regular contributor"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 75,
-          "label": "Likely starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 88,
-          "label": "Key leader"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ]
     },
@@ -2901,14 +2901,14 @@
     },
     "devScoresNote": "Scored §5a (environment only; D2 ceiling 76). Staff dir (gculions.com, browsed): HC Raso (13th season, 2024 CACC Coach of the Year) + Associate HC Fitzpatrick (14yr) + 2 assistants + volunteer — good staff depth/tenure for a small D2 -> tactical 65. Compact purpose-built grass field, no team GPS/analytics noted -> technical 64. Shared weight room (standard D2) + Exercise Science practicum labs + Jersey Shore medical network -> fitness 64. devAvg 64 sits well under the D2 ceiling.",
     "lensScores": {
-      "overall": 27,
+      "overall": 42,
       "soccer": 62,
       "academic": 82,
-      "minutes": 16,
+      "minutes": 58,
       "lifestyle": 0,
-      "value": 16
+      "value": 25
     },
-    "fitOlivier": 27,
+    "fitOlivier": 42,
     "tags": [
       "acad",
       "soccer"
@@ -2994,48 +2994,60 @@
     ],
     "minutesOutlook": {
       "available": true,
-      "mf_total": 16,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 5,
+      "mf_total": 15,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 10,
       "cleared_names": [
-        "Senior MF ×5 departing 2025–26"
+        "Jack Pollintine-Smith",
+        "Tim Wilk",
+        "Bryan Sanchez",
+        "Leo Elder",
+        "Joseph Juarez",
+        "Ryley Fine",
+        "Leni Ehikwe",
+        "Marcus Rodrigues",
+        "Lorenzo Adduci",
+        "Mykerson Tribie"
       ],
-      "rising_senior_2027_count": 4,
+      "rising_senior_2027_count": 1,
       "rising_senior_2027_names": [
-        "2025 juniors → seniors by 2027"
+        "Tyler Neves"
       ],
-      "rising_junior_2027_count": 5,
+      "rising_junior_2027_count": 4,
       "rising_junior_2027_names": [
-        "2025 sophomores → juniors by 2027"
+        "Sander Rynning",
+        "Noa Aasheim",
+        "Luke Henstock-Smith",
+        "Ryan Binetti"
       ],
-      "recruit_risk": "High",
+      "recruit_risk": "Low",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025 gculions.com roster (64-player squad): of roughly 25 MF/Center-Mid/Wing spots, only 4 show a clear transfer background (Sanchez from NJIT, Elder from Midway, Calix from Felician, Pedraza from NJCU) — the large majority are true freshmen recruited from NJ-area HS programs and international club sides.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 gculions.com roster (15 MFs of 44, down from 16 a year ago). Only 2 of 15 MFs list a previous college (NJIT, Midway University) — the Freshman-friendly classification is reconfirmed, not just retained. Massive graduating class: 10 of 15 MFs (9 seniors + 1 graduate student) clear before Olivier's 2027 entry — by far the largest midfield turnover in this batch.",
       "trajectoryNote": "GCU carries a large MF squad (64 total players). High roster depth means competition for minutes is real in Yr 1–2. CACC D2 level means Olivier's quality should eventually break through. Year 3–4 is the realistic starting window. Dino Raso (Coach of Year) tends to rotate and develop rather than hand starts to freshmen.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 10,
-          "label": "Fringe squad — learning the system"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 25,
-          "label": "Rotation minutes building"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
-          "label": "Competing for starts"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 70,
-          "label": "Senior starter"
+          "pct": 90,
+          "label": "Captain candidate"
         }
       ]
     },

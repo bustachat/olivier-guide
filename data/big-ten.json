@@ -115,7 +115,7 @@
       "fitness": 86
     },
     "devScoresNote": "v42.27 §5a re-baseline (training environment only). §5a Glossary sports-science exemplar — held high. Live uclabruins.com MSOC staff: HC Ryan Jorden (7th yr) + Sergi Nus (Asst) + Kary Whitney (Asst) + Graeme Jorden (GA) = 3 full-time coaches. Stored Tier-1 facilities: Wallis Annenberg Stadium, dedicated soccer-only venue opened 2018 (FieldTurf, LED videoboard, Musco lighting); Acosta Athletic Center with an Olympic-sports strength coach assigned EXCLUSIVELY to soccer (a genuinely dedicated S&C). UCLA's record NCAA-title history is a result and excluded. Tactical trimmed 90->87 to match the 4-coach ACC elite tier (Stanford/ND) — 3 coaches here; technical/fitness held high (88/86) for the dedicated modern stadium and soccer-exclusive S&C, keeping UCLA a clear sports-science exemplar. (Staff: stored Erik Holt -> live Kary Whitney, minor.)",
-    "fitOlivier": 65,
+    "fitOlivier": 71,
     "tags": [
       "warm",
       "city",
@@ -137,59 +137,62 @@
     "rec": "LA lifestyle closest to Sydney. #1 Kinesiology equivalent nationally. Highly competitive for international athletes — elite highlights required. Extraordinary PT/Chiro grad school access via UCLA Health.",
     "url": "https://uclabruins.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 65,
+      "overall": 71,
       "soccer": 76,
       "academic": 73,
-      "minutes": 30,
+      "minutes": 48,
       "lifestyle": 97,
-      "value": 39
+      "value": 43
     },
     "minutesOutlook": {
       "available": true,
       "mf_total": 10,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 2,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
+        "Diego Martinez",
         "Philip Naef",
+        "David Diez",
         "Sebastian Rincon"
       ],
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
-        "Tamir Ratoviz"
+        "Tamir Ratoviz",
+        "Jaime Amaro",
+        "Zach Neuls",
+        "Albert Ruiz"
       ],
-      "rising_junior_2027_count": 4,
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Zach Mastrodimos",
         "Ander Marticorena",
-        "Dylan Cantafio",
         "Adrian Aguilar"
       ],
       "recruit_risk": "Medium",
-      "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of 10 current MFs (80%) recruited directly from HS/club with no prior college, per the live 2025 uclabruins.com roster. 2 transferred in — Konstantinos Georgallides (UNC Greensboro then Louisville) and Sean Sent (Washington).",
+      "recruit_pathway": "Transfer-preferred",
+      "recruit_pathway_note": "Re-read on the live 2026-27 uclabruins.com roster (10 MFs of 29). Reclassified from the stored value: 6 of 10 MFs (60%) list a genuine university transfer, dominated by international universities (Rey Juan Carlos, University of Wales, La Salle Centro Universitario, Universidad Publica de Navarra — all Spain/Wales) plus 2 US D1 transfers (Bryant, UC Davis). No JUCO intake. Large graduating class (4 Sr/5th-yr + 4 more juniors clearing the year after) drives the opportunity score to the top band, but the transfer-heavy recruiting culture means a true freshman faces real competition for those open spots, not a clear run at them.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 30,
+          "pct": 40,
           "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Squad rotation"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 80,
+          "label": "Captain candidate"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 90,
           "label": "Captain candidate"
         }
       ],

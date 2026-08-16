@@ -2210,14 +2210,14 @@
     },
     "mapX": 490,
     "mapY": 221,
-    "fitOlivier": 65,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 65,
+      "overall": 55,
       "soccer": 62,
       "academic": 48,
-      "minutes": 49,
+      "minutes": 19,
       "lifestyle": 65,
-      "value": 47
+      "value": 41
     },
     "confRecord": [
       {
@@ -2324,48 +2324,50 @@
     "domain": "charlotte49ers.com",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 4,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 2,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Natsuki Ogata",
-        "Larry Noel"
+        "Ben Fisher"
       ],
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Luc Lavielle"
+        "Xavier Holloway",
+        "Tate Asante"
       ],
-      "rising_junior_2027_count": 1,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Samuel Francou"
+        "Diogo Fazenda",
+        "Samuel Francou",
+        "Wiktor Pucilowski"
       ],
-      "recruit_risk": "Medium",
-      "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "4 of 6 current MFs (67%) were recruited directly from HS/club with no prior college, per the live 2025 charlotte49ers.com roster. 2 transferred in — Xavier Holloway (Saint Louis) and Ben Fisher (Virginia Tech).",
+      "recruit_risk": "High",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Re-read on the live 2026-27 charlotte49ers.com roster (8 MFs of 25, up from 4 a year ago). Reclassified from Freshman-friendly: 3 of 8 MFs list a genuine 4-year college transfer (Saint Louis, Hofstra, Virginia Tech) and 1 more a club (Calvary FC); the other 4 came direct. No JUCO intake. Only 1 MF (a redshirt senior) clears before Olivier's 2027 entry, so the queue behind him is long.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 45,
-          "label": "Coming off bench"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 50,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
       "trajectoryNote": "2 Jrs clear before 2027. Luc Lavielle (So→Sr) competes in Yr1. Very small squad — recruiting impact is high."

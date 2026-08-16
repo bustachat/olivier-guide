@@ -1178,14 +1178,14 @@
     },
     "mapX": 503,
     "mapY": 212,
-    "fitOlivier": 56,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 56,
+      "overall": 49,
       "soccer": 70,
       "academic": 60,
-      "minutes": 57,
+      "minutes": 38,
       "lifestyle": 50,
-      "value": 35
+      "value": 31
     },
     "confRecord": [
       {
@@ -1276,35 +1276,47 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 7,
-      "roster_season": "2025-26",
+      "mf_total": 12,
+      "roster_season": "2026-27",
       "cleared_before_2027": 5,
-      "cleared_names": [],
+      "cleared_names": [
+        "Tyler Caton",
+        "Ervin Cruz",
+        "Drew Lovelace",
+        "Caden Tolentino",
+        "Brendan Peeples"
+      ],
       "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 1,
-      "rising_junior_2027_names": [],
-      "recruit_risk": "High",
+      "rising_senior_2027_names": [
+        "Hayato Takayama"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Abdou-Magib So",
+        "Erik Pena",
+        "John Pottle"
+      ],
+      "recruit_risk": "Medium",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "7 of 12 current MFs (58%) recruited directly from HS/club with no prior college, per the live 2025 gopack.com roster; 5 transferred in, including two multi-stop JUCO pathways (Carlos Santamaria: Iowa Western CC→Oral Roberts→Mercer; Thomas Lamaille: Kansas City Kansas CC→Tyler JC→St. John's) plus Georgia State, New Hampshire, and Missouri State. Consistent with new HC Marc Hubbard's rapid 2-season rebuild relying heavily on the transfer portal.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 gopack.com roster (12 MFs of 33, up from 7 a year ago). 3 of 12 MFs list a genuine college transfer — Georgia State, Missouri State (both 4-year), and Hayato Takayama via Iowa Western CC (JUCO) — the other 9 arrived direct from high school or club (Wake FC, Aston Villa, Crown Legacy FC, North Carolina FC, Charlotte FC). Mixed classification reconfirmed, not just retained.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 65,
+          "pct": 50,
           "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Key player"
+          "label": "Established starter"
         },
         {
           "year": 2030,

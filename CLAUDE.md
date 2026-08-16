@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v44.86 (2026-08-16)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v44.90 (2026-08-16)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -1254,7 +1254,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v44.89 (2026-08-16).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v44.90 (2026-08-16).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1314,7 +1314,19 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
 
 #### C. Roster refresh campaign — live deferrals
 
-Campaign plan and session-by-session detail live in the `roster_refresh_campaign_2026` memory. **Next action: the 7 "published but empty" JUCOs, deferred to late August, plus a `tyler_jc` re-check.** (The Batch 1 coach-verification follow-up that previously headed this list is resolved — see the ✅ RESOLVED v44.88 entry below.)
+**The batch plan, written at campaign kickoff (2026-08-16) and never previously committed here — this is the fix for that gap.** A prior session's summary claimed this plan already lived in this section; it didn't, and the owner had to re-paste it from the original kickoff message. Do not let this happen again — this IS the source of truth now, keep it current.
+
+**Tooling correction, confirmed at kickoff:** the CloudFront block that hit Suffolk CC also hits `goreivers.com` — the sandboxed browser pane gets a 403, but the Claude-in-Chrome connector (real browser, residential IP) gets through clean. Use Claude-in-Chrome for every school in this campaign, never the sandboxed pane.
+
+| Batch | Scope | Status |
+|---|---|---|
+| **1** | Quick wins (11 schools, 2026-27 pages already confirmed populated in the Aug 6 survey, just never extracted): `miami_dade`, `northeast_cc`, `daytona_state`, `efsc`, `iowa_lakes_cc`, `angelina_college`, `johnson_county_cc`, `glendale_cc_az`, `arizona_western`, `cowley_cc`, `coastal_bend_cc` | **✅ DONE v44.87** — 10 of 11 refreshed; `efsc` deferred (populated but zero position data, genuinely unextractable) |
+| **2** | Recheck the stale-empty list (12 schools) — JUCOs `pima_cc`, `barton_cc`, `phoenix_college`, `smc`, `indian_hills`, `mohave_cc`, `southeastern_cc`; non-JUCO `tulsa`, `pittsburgh`, `pennstate`, `keiser`, `barry` | **⏳ NOT YET DONE.** What actually shipped as "v44.88 Batch 2" was a coach-verification follow-up on Batch 1, not this. This is the real outstanding Batch 2 — don't confuse the two. Do not retry before late August 2026 per the original deferral. |
+| **3** | Non-JUCO schools never yet attempted (13 schools) — `ncstate`, `clemson`, `ucla`, `charlotte`, `ucsb`, `ucsd`, `csuf`, `lynn`, `nova`, `csula`, `chapman`, `uc_charleston`, `georgian_court`. Not in Wave 1 (2026-08-05) or the Wave-2-deferred list — genuinely never probed. **These are non-JUCO, so unlike JUCO facts-only refreshes, a real refresh here needs the FULL trajectory/score cascade** (§14 Opportunity Score table → `fitOlivier` → `lensScores`) — the JUCO calibration-gap carve-out (§6E) does not apply. | **✅ DONE v44.90 — 9 of 13 refreshed** (ncstate, ucla, charlotte, ucsb, ucsd, csuf, lynn, uc_charleston, georgian_court). **4 not yet published a 2026-27 roster** (clemson, nova, csula, chapman) — confirmed via each site's own season dropdown, left untouched. See CHANGELOG v44.90 for full detail, including a real card-extraction misalignment bug caught and fixed mid-session on ucsb/csuf. |
+| **4** | `tyler_jc` — parked, not prioritized. Likely a site rebuild in progress (VPN required to reach the host at all, then no usable content once reached), not a read-method problem. | Periodic recheck only — do not burn campaign time retrying. |
+| **5** | The 39 newly-added NJCAA gap-fill JUCOs — low priority. They already carry accurate data from add time (2026-08-10–13); nothing here is actually wrong, just unverified since. | Deferred, lowest urgency. |
+
+**Not in scope:** `army`, `navy`, `princeton`, `yale` (permanently excluded — see the `ivy.json` ruling below and §4's service-academy note); ~12 JUCOs with confirmed genuine blank-position data (`suffolk_cc`, `westchester_cc`, `lamar_cc`, etc.) — recheck only if one of those schools starts publishing the missing column.
 
 - **⏳ JUCO Session 4 SURVEY (2026-08-06) — the session ran too early: 7 of 19 probed JUCOs publish a 2026-27 page with ZERO players.** Probe method: real Chrome, season-scoped URL (`/sports/msoc/2026-27/roster` — `/sports/msoc/roster` **404s** on these `/index` hosts, per v42.5), recording title + `tbody tr` count + `body.innerText.length`.
   - **PUBLISHED BUT EMPTY — defer, do not retry before late August (instances 6–12):** `pima_cc` (0 rows / 646 B — **control-tested: its 2025-26 page returns 35 rows / 3367 B through the identical read**), `barton_cc` (0 / 1495), `phoenix_college` (0 / 261), `smc` (0 / 400), `indian_hills` (0 / 1451 — the original trap-4 school, doing it again), `mohave_cc` (0 / 555), `southeastern_cc_ia` (0 / 801). All keep their 2025-26 data and label.

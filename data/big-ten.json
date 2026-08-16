@@ -621,14 +621,14 @@
     },
     "mapX": 502,
     "mapY": 153,
-    "fitOlivier": 53,
+    "fitOlivier": 45,
     "lensScores": {
-      "overall": 53,
+      "overall": 45,
       "soccer": 75,
       "academic": 65,
-      "minutes": 53,
+      "minutes": 33,
       "lifestyle": 0,
-      "value": 32
+      "value": 27
     },
     "confRecord": [
       {
@@ -746,45 +746,40 @@
     "domain": "psu.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 6,
+      "mf_total": 5,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
-        "Ben Liscum",
-        "Freddie Bell",
-        "Caden Grabfelder",
-        "Malick Daouda",
-        "Ben Madore",
-        "Conor Clair"
+        "Luca Sowinski",
+        "Joven Mann",
+        "Grant McIntosh",
+        "Sam Fielding"
       ],
-      "rising_senior_2027_count": 2,
-      "rising_senior_2027_names": [
-        "Nziza Siibo",
-        "Davy Leavey"
-      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Medium",
-      "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "All 8 current MFs (100%) recruited directly from HS with no prior college — no transfers on the 2025 roster (last season under prior coach Jeff Cook, before Rob Dow's Dec 2025 hire), per the live gopsusports.com roster.",
+      "recruit_risk": "Low",
+      "recruit_pathway": "Transfer-preferred",
+      "recruit_pathway_note": "Re-read on the live 2026-27 gopsusports.com roster (5 MFs of 22, real position data now vs the previous check where the page showed players with no midfielders at all). Reclassified from Freshman-friendly: 3 of 5 MFs (60%) list a genuine college transfer (University of British Columbia, Duquesne, Loughborough University). A huge graduating class — 4 of 5 current MFs clear before Olivier's 2027 entry, leaving just 1 freshman behind them — the biggest opening in this batch.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 50,
-          "label": "Regular starter"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Key player"
+          "label": "Established starter"
         },
         {
           "year": 2030,

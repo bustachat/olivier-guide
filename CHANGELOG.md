@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.91 (2026-08-16) — Roster refresh campaign Batch 2: 10 of 12 stale-empty schools now populated (Change Type 3)
+
+Batch 2 rechecks the 12-school "published but empty" group from the 2026-08-06 survey, run at the owner's explicit request ahead of the original "not before late August" deferral. **10 of 12 are now genuinely populated** — real rosters, not the empty pages seen three weeks ago. Only `phoenix_college` and `smc` (Santa Monica) are still empty (0 rows, byte-identical to the original survey), so both stay on stored 2025-26 data.
+
+**7 JUCOs, facts-only refresh** (§6E carve-out — trajectory not recomputed): `pima_cc` (9 MFs, was 10), `barton_cc` (14 MFs, was 16 — required an `https://www.` prefix to clear a TLS/privacy-error interstitial that the bare domain threw), `indian_hills` (13 MFs, was 13 — the long-standing "trap-4" school, finally clean), `mohave_cc` (10 MFs, was 8, required parsing a non-Sidearm custom card layout via regex over `innerText`), `southeastern_cc_ia` (18 MFs on a much larger 61-player squad, was 17). `phoenix_college` and `smc` unchanged.
+
+**5 non-JUCO, full cascade**: `tulsa` (7 MFs, fit 66→53 — passed the goalkeeper/midfielder-share sanity check: 3 GK, 24% MF share), `pittsburgh` (11 MFs, fit 58→52 — fully populated vs the previous half-published page), `pennstate` (5 MFs, fit 53→45 — first real position data ever captured for this school, required scrolling to trigger lazy-loaded coach/roster card rendering on the WMT `.player-list-item` layout), `keiser` (18 MFs, fit 47→60 — first real player data ever captured, previous checks only saw staff), `barry` (12 MFs, fit 63→56 — the school that produced the GK diagnostic in the first place; this read passed cleanly with 3 GKs and a well-formed 32-player squad, confirming the earlier fabricated-looking shape really was a publishing gap, not a data trap).
+
+`recruit_pathway` reclassified on fresh evidence for 2 schools: `pennstate` Freshman-friendly→Transfer-preferred (3 of 5 MFs are genuine university transfers), `barry` Portal/JUCO-heavy→Transfer-preferred (6 of 10 pure-midfield players transferred from 4-year colleges, zero from a JUCO — the old label implied a JUCO pipeline that isn't actually there). Retained without re-derivation for `tulsa`, `pittsburgh`, and `keiser` where the site's previous-school column was absent or blank.
+
+**A standing open item resolved along the way, not the main target of this session:** Southeastern CC's coach Henrique Vieira is now confirmed permanent, not interim — his official coaches page dropped the "Interim" qualifier. `coaches.json`'s `overallScoreNote` had already picked this up in an earlier pass ("now permanent, previously interim") but `title`, `bio`, and `record` still said "Interim" — corrected all three in the same edit; no `overallScore` change, so no re-rank needed. This closes the CLAUDE.md §6 item that had been tracking Vieira's status since his interim appointment.
+
+`validate_schools.py`: 0 errors, 25 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Local browser-verified (`olivier-guide`, port 8787): Keiser's card confirmed against the computed value exactly (Fit 60%, coach Gavin Oldham); Indian Hills' Minutes tab confirmed the facts-only design works as intended — roster facts updated (13 MFs, 4 cleared, correct names) while the Minutes Score stayed at its prior stored value, since JUCO trajectories are deliberately not recomputed pending the §6E calibration item; Southeastern CC's coach card confirmed the "Interim" text is gone from the live Coaches & Staff tab. No console errors.
+
+Files: `data/juco.json`, `data/aac.json`, `data/acc.json`, `data/big-ten.json`, `data/d2.json`, `data/coaches.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status, §6 Vieira item resolved).
+
 ### v44.90 (2026-08-16) — Roster refresh campaign Batch 3: 9 of 13 non-JUCO schools refreshed to 2026-27 (Change Type 3)
 
 The roster refresh campaign's kickoff plan — written at session start but never actually committed into CLAUDE.md §6C — turned out to have gone missing entirely; a `grep` for "batch plan"/"5 batches" across the live file found nothing, and the `project_roster_refresh_campaign` memory's claim that it lived there was wrong. The owner re-supplied the original plan and it is now written into §6C as a real table (see the CLAUDE.md diff this version also carries) so this can't happen again.

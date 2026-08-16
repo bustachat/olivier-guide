@@ -1698,14 +1698,14 @@
     },
     "mapX": 495,
     "mapY": 156,
-    "fitOlivier": 58,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 58,
+      "overall": 52,
       "soccer": 68,
       "academic": 65,
-      "minutes": 57,
+      "minutes": 43,
       "lifestyle": 50,
-      "value": 35
+      "value": 31
     },
     "confRecord": [
       {
@@ -1797,35 +1797,46 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 5,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 4,
-      "cleared_names": [],
-      "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [],
-      "rising_junior_2027_count": 0,
-      "rising_junior_2027_names": [],
-      "recruit_risk": "High",
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Logan Oliver",
+        "Caden Grabfelder",
+        "Cristian LoGrasso",
+        "Anders Bordoy",
+        "Santiago Ferreira"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Miguel Bertran",
+        "Pablo Portero"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Grayson Carter"
+      ],
+      "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "9 of 10 current MFs (90%) recruited directly from HS/club with no prior college, per the live 2025 pittsburghpanthers.com roster — only Tomas Bedouret transferred in (Oregon State).",
+      "recruit_pathway_note": "Re-read on the live 2026-27 pittsburghpanthers.com roster (11 MFs of 25, fully populated now vs the half-published page seen previously). Pitt's roster table publishes no previous-school column, so the transfer-vs-freshman split cannot be re-derived; the Freshman-friendly classification is RETAINED and should be treated as lower-confidence. Large graduating class: 5 of 11 MFs clear before Olivier's 2027 entry.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 55,
-          "label": "Regular starter"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 65,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
           "pct": 70,
-          "label": "Key player"
+          "label": "Established starter"
         },
         {
           "year": 2030,

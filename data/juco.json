@@ -403,31 +403,24 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 12,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 12,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "Joao Pedro Dos Santos Oliveira (So·M)",
-        "Diego Luengo (So·M)",
-        "Martin Jaramillo (So·M)",
-        "Sean Bayard (So·M)",
-        "Javier Prieto (So·M)",
-        "Eduardo Cornejo (So·M)",
-        "Matthew Oliva (So·M)",
-        "Matteo DePalo (Fr·M)",
-        "Emmanuele Serra (Fr·M)",
-        "Lucas DePaula (Fr·M)",
-        "Nico Preciado (Fr·M)",
-        "Josemy Vigil (Fr·M)"
+        "Lucas DePaula (So·M)",
+        "Josemy Vigil (So·M)",
+        "Matteo DePalo (So·M)",
+        "Emanuele Serra (So·M)",
+        "Nico Preciado (So·M)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "recruit_risk": "Medium",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Stored 2025-26 roster: 7 of 12 current MFs are sophomores and 5 are freshmen — leaning slightly sophomore-heavy rather than a fresh freshman-only intake, similar in balance to Pima CC's recruiting pattern.",
-      "trajectoryNote": "JUCO 2-year program — 100% of the current 2025-26 roster finishes before Olivier enters in August 2027. All 12 current MFs (7 So + 5 Fr) are completely gone. Zero roster overlap. Olivier's competition is determined entirely by the 2026 recruiting class. Miami market — diverse international roster (Argentina, Italy, Brazil, France, Spain). HC Giuseppe DePalo has strong South American network. Ask: 'How many central midfielders are in your 2026 class?'",
+      "recruit_pathway_note": "Re-read on the live 2026-27 mdcathletics.com roster (8 MFs, down from 12). The 5 sophomores are exactly the 5 players stored as 2025-26 freshmen (DePaula, Vigil, DePalo, Serra, Preciado) — confirms accurate season-over-season tracking. No previous-school column published, so 'Mixed' is RETAINED, not re-derived.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 mdcathletics.com roster (8 MFs, down from 12): only 5 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 3 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "trajectory": [
         {
           "year": 2027,
@@ -1002,20 +995,24 @@
     ],
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 8,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "100% of current roster clears before Olivier arrives (JUCO 2yr rule)"
+        "Jochem Ostendorp (So·MF)",
+        "Ingu Lee (So·MF)",
+        "Matheus Andrade Gomes (So·MF)",
+        "Charly Wilkening (So·MF)",
+        "Mathias Overgaard (So·MF)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025-26 northeasthawks.com roster: of 10 MFs, 8 are freshmen and only 2 are sophomores — a heavily freshman-loaded intake (80%), consistent with Potter's broad direct-from-HS international recruiting network (Denmark, Netherlands, Germany, Austria, England, Brazil, Chile, Canada) rather than transfer-based roster building.",
-      "trajectoryNote": "JUCO 2-year program — entire current roster completes before Olivier's August 2027 start. Zero overlap. Competition is solely determined by the 2026 recruiting class Coach Potter signs. With near-100% international roster composition, Olivier would fit the squad culture immediately.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 northeasthawks.com roster: MF group grew to 12 (5 So + 7 Fr, up from 10). No previous-school column published, so 'Freshman-friendly' is RETAINED, not re-derived — still consistent with Potter's direct-from-HS international recruiting network (Denmark, Netherlands, Germany, Spain, Japan, Latvia). One roster row (#13, Lucas Renaudot) publishes no position and was excluded from the MF count as an unconfirmed blank-position case (§15).",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 northeasthawks.com roster (12 MFs, up from 10): only 5 (the So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 7 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "trajectory": [
         {
           "year": 2027,
@@ -2000,24 +1997,20 @@
     "minutesOutlook": {
       "available": true,
       "mf_total": 7,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Abdoulie Jallow (So·M)",
-        "Bismark Ayamba (So·M)",
-        "Julian Villegas (So·M)",
-        "Joey Foreman (Fr·M)",
-        "Santiago Apolaro (Fr·M)",
-        "Mamadou Seye (Fr·M)",
-        "Joachim Kyei (Fr·M)"
+        "Haytham Abdalla (So·M)",
+        "Santiago Apolaro (So·M)",
+        "Joey Foreman (So·M)"
       ],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
-      "recruit_risk": "Low",
+      "recruit_risk": "High",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "4 of the 7 current MFs (57%) are true freshmen, split roughly evenly between US high school recruits (New Smyrna Beach FL, Gainesville FL) and African/South American internationals (Gambia, Ghana, Uruguay) — a more balanced US/international freshman intake than Tyler JC or Iowa Western, still freshman-entry-friendly but less internationally academy-heavy.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 dscfalcons.com roster (7 MFs, same total as 2025-26 but different composition). Two of the 3 sophomores (Apolaro, Foreman) are the same names stored as 2025-26 freshmen, confirming accurate tracking. No previous-school column published, so 'Mixed' is RETAINED, not re-derived.",
       "trajectory": [
         {
           "year": 2027,
@@ -2032,7 +2025,7 @@
           "label": "Key midfielder — national finalist program, D1 transfer showcase"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster clears before Olivier arrives in August 2027. All 7 current MFs (3 So + 4 Fr) are completely gone. Zero roster overlap. Only 7 midfielders on the current roster — the smallest MF group among guide JUCOs — meaning Olivier faces competition from a smaller 2026 recruiting class. National Championship finalist credibility (2025) means Avallone recruits quality talent. Warm Florida lifestyle and top-5 D1 transfer pipeline are strong recruitment draws. Key question for coach: 'How many central midfielders are in your 2026 class?'"
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 dscfalcons.com roster (7 MFs): only 3 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 4 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E."
     },
     "facilityDetails": {
       "rating": "Good",
@@ -2613,24 +2606,19 @@
     "rec": "Cowley is arguably the most decorated JUCO soccer program in the guide by title count (5× KJCCC, 5× Region VI, 5× Plains District) and is currently ranked in the national top 5. The trade-off is a generic Health Professions transfer degree (no dedicated Exercise Science track) and a higher cost profile than most JUCOs (~$22k/yr), plus the same rural, cold-winter Kansas lifestyle mismatch as sister KJCCC program Barton.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 8,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Keitatsu Yoshida (So·M)",
-        "Leonardo Leitao (So·M)",
-        "Holden Schaefer (So·M)",
-        "Yusei Suzaki (Fr·M)",
-        "Christian Cabrera (Fr·M)",
-        "Hayato Yoshitake (Fr·M)",
-        "Nino Inchico (Fr·M)",
-        "Shuto Sasaki (Fr·M)"
+        "Nino Inchico (So·MF)",
+        "Shuto Sasaki (So·MF)",
+        "Christian Cabrera (So·MF)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
@@ -2645,9 +2633,9 @@
           "label": "Likely starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 MFs: 3 So + 5 Fr) clears before Olivier's August 2027 start. Zero roster overlap. Cowley's smaller MF group plus its #4-5 national ranking suggests a highly competitive, quality-over-quantity recruiting approach — entry competition is likely higher per slot than roster size alone suggests. Ask the coach: 'How many central midfielders are in your 2026 class?'",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 cowleytigers.com roster (7 MFs). NOTE: this school's site mislabels the season-scoped roster URL's page title as \"Standings\" — the table content is verified genuine roster data (NO./NAME/POSITION/YEAR/HOMETOWN columns), not a mislink. All 3 sophomores (Inchico, Sasaki, Cabrera) are the exact names stored as 2025-26 freshmen, confirming accurate tracking. Only 3 clear before Olivier's August 2027 start, down from the prior season's 100% turnover; the other 4 (Fr.) return as sophomores in 2027-28. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "5 of the 8 current MFs (63%) are true freshmen with no prior college listed, drawn directly from Japan, Denmark, and France — suggests direct high-school-to-JUCO recruiting is the norm here, not portal/transfer recycling."
+      "recruit_pathway_note": "Re-read on the live 2026-27 roster: 4 of 7 (57%) are true freshmen, drawn directly from Japan and Brazil plus one US (LA) recruit — still direct high-school-to-JUCO recruiting, no transfer/portal signal (no previous-school column published)."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree — transfer prerequisite pathway",
@@ -2878,29 +2866,20 @@
     "rec": "Arizona Western pairs a genuinely relevant Exercise, Wellness and Nutrition degree with a nationally ranked (#2, 2025), well-resourced program — a 5-person coaching staff including a dedicated European recruiting coach — at one of the most affordable price points in the guide (~$16.3k/yr), plus a warm, sunny desert climate that matches Olivier's lifestyle preference far better than the Kansas JUCOs. The trade-off is Yuma's modest city size rather than a major metro.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 13,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 13,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
-        "Ishmael Mensah (So·M)",
-        "Ziad Barakat (Fr·M)",
-        "Lucas di Almeida (Fr·M)",
-        "Justin Vallelian (So·M)",
-        "Adam Salma (So·M)",
-        "Daniel Coke (So·M)",
-        "Taikan Naito (Fr·M)",
-        "Takuto Yamaguchi (Fr·M)",
-        "Jackson George (So·M)",
-        "Yusei Nishida (Fr·M)",
-        "Axel Gonzalez (Fr·M)",
-        "Daniel Riascos (Fr·M)",
-        "Mubashir Hilowle (Fr·M)"
+        "Yusei Nishida (So·MF)",
+        "Daniel Riascos (So·MF)",
+        "Takuto Yamaguchi (So·MF)",
+        "Axel Gonzalez (So·MF)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Medium",
+      "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
@@ -2915,9 +2894,9 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (13 MFs: 5 So + 8 Fr) clears before Olivier's August 2027 start. Zero roster overlap. AWC's large, internationally diverse MF pool combined with a #2 national ranking suggests real depth but also real competition for spots. Ask the coach: 'How many central midfielders are in your 2026 class?'",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 awcmatadors.com roster (12 MFs): the 4 sophomores are exactly the 4 players stored as 2025-26 freshmen (Nishida, Riascos, Yamaguchi, Gonzalez) — confirms accurate season-over-season tracking. Only 4 clear before Olivier's August 2027 start, a steep drop from the prior season's 100% turnover; the other 8 (Fr.) return as sophomores in 2027-28. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of the 13 current MFs (62%) are true freshmen with no prior college listed, recruited directly from Senegal, Brazil, Japan, Colombia, and Ethiopia — the dedicated European/international recruiting staff appears to source largely direct-from-home-country freshmen rather than transfer/portal players."
+      "recruit_pathway_note": "Re-read on the live 2026-27 roster: 8 of 12 (67%) are true freshmen, still recruited directly from Japan, Sweden, England, and South Korea. The 'PREVIOUS SCHOOL' header on this roster's Hometown column is misleading — the values are phonetic pronunciation guides, not actual transfer data (§15 name-collision-adjacent trap)."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Exercise, Wellness and Nutrition — dedicated 2yr program",
@@ -3179,7 +3158,7 @@
           "label": "Likely starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 MFs: 4 So + 4 Fr) clears before Olivier's August 2027 start. Zero roster overlap. EFSC's back-to-back national tournament runs suggest a competitive but not oversized MF group. Ask the coach: 'How many central midfielders are in your 2026 class?'",
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 MFs: 4 So + 4 Fr) clears before Olivier's August 2027 start. Zero roster overlap. EFSC's back-to-back national tournament runs suggest a competitive but not oversized MF group. Ask the coach: 'How many central midfielders are in your 2026 class?' DEFERRED 2026-08-16: a live 2026-27 efsctitans.com roster exists (33 players, real Chrome, table + headshot view both checked) but genuinely publishes NO position data for any outfield player — only the 3 goalkeepers show a Position field, confirmed by inspecting the table cell DOM directly (empty text node, not a rendering/extraction failure). This is a field-level gap like the OCU/St Edward's precedent (§15), not a roster-level one — the squad itself is populated. Kept on stored 2025-26 data rather than fabricate an MF count; re-check if EFSC starts publishing positions.",
       "recruit_pathway": "Freshman-friendly",
       "recruit_pathway_note": "All 4 incoming-freshman MFs (Josh Rayfield, Kazuma Matsumoto, Diego Sanders, Davi Arujo) are true freshmen with no prior college listed, drawn from England, Japan, and two Florida locals — suggests direct freshman recruiting rather than transfer/portal reliance, though the sample (4 players) is small."
     },
@@ -4190,30 +4169,26 @@
     "rec": "Glendale CC pairs a confirmed, university-aligned Exercise Science degree with a rare on-campus NAU bachelor's-completion partnership — a genuinely strong academic package for a JUCO. Soccer results (#20 nationally) are solid but the least decorated of the three ranked Maricopa ACCAC programs in this batch. Best framed as an academics-forward pick within the Arizona JUCO cluster.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 14,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 14,
+      "mf_total": 17,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 10,
       "cleared_names": [
-        "Augustin Mulongo (So·M)",
-        "Owen Collins (Fr·M)",
-        "Jordan Yesenski (Fr·M)",
-        "Beani Wammunga (Fr·M)",
-        "Alexis Segura (Fr·M)",
-        "Costa Abdullah (Fr·M)",
-        "Ivan Urias (Fr·M)",
-        "Nathan Johansen (Fr·M)",
-        "Jacob Torres (Fr·M)",
-        "Jacob Engwall (Fr·M)",
-        "Brandon Rincon (Fr·M)",
-        "Francisco Garcia (Fr·M)",
-        "Dezmon Valdivia (Fr·M)",
-        "Ignacio Valenzuela (Fr·M)"
+        "Carlos Torres (So·MF)",
+        "Jordan Yesenski (So·MF)",
+        "Pablo Morquecho (So·MF)",
+        "Michael Essien (So·MF)",
+        "Logan Henley (So·MF)",
+        "Costa Abdallah (So·MF)",
+        "Owen Collins (So·MF)",
+        "Nathan Johansen (So·MF)",
+        "Jacob Engwall (So·MF)",
+        "Jacob Torres (So·MF)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "High",
+      "recruit_risk": "Medium",
       "trajectory": [
         {
           "year": 2027,
@@ -4228,9 +4203,9 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (14 MFs: 1 So + 13 Fr) clears before Olivier's August 2027 start. Zero roster overlap, but the unusually large 2025 freshman MF class (13 players) signals heavy annual recruiting volume at this position — expect a similarly large incoming 2026 class to compete with. Ask the coach: 'How many central midfielders typically enter each recruiting class?'",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 gauchoathletics.com roster (17 MFs, up from 14): 10 (the So. group — several are the same names stored as 2025-26 freshmen, confirming accurate tracking) clear before Olivier's August 2027 start, a majority but well short of the prior season's 100% turnover. The other 7 (Fr.) return as sophomores in 2027-28. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "13 of 14 current MFs (93%) are true freshmen — strongly direct-from-high-school recruiting, mostly from the Phoenix metro area (Peoria, Glendale, Surprise, El Mirage)."
+      "recruit_pathway_note": "Re-read on the live 2026-27 roster: still a heavily local Phoenix-metro high-school recruiting base (Peoria, Glendale, Surprise, Buckeye), though the freshman share fell to 41% (7/17) from the prior season's 93% as more sophomores stayed on."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Exercise Science — dedicated 2yr program, ASU/NAU-aligned (on-campus NAU completion option)",
@@ -5234,27 +5209,19 @@
     "rec": "Iowa Lakes had a genuine breakout 2025 season — first-ever ICCAC regular season championship and a #7 national ranking — backed by a confirmed dedicated Exercise Science & Kinesiology degree and multi-campus on-campus housing. The trade-off is the same as every ICCAC program in this guide: rural, cold-winter Iowa is a poor lifestyle match for a warm-city-preferring athlete.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 11,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 11,
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Sunao Midorikawa (So·M)",
-        "Sam Storey (So·M)",
-        "Kenta Yagi (So·M)",
-        "Joao Costa (So·M)",
-        "Karim Saada (So·M)",
-        "Renato Gonzalez (So·M)",
-        "Per Pekkeriet (So·M)",
-        "Ace Miller (Fr·M)",
-        "Zenn Thiele (Fr·M)",
-        "Braxten Endres (Fr·M)",
-        "Joao Lopes (Fr·M)"
+        "Ace Miller (So·M)",
+        "Matteo Mignano (So·M)",
+        "Romeo Alvarez (So·M)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Medium",
+      "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
@@ -5269,9 +5236,9 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (11 MFs: 7 So + 4 Fr) clears before Olivier's August 2027 start. Zero roster overlap. A moderate-sized, heavily international MF group. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 iowalakesathletics.com roster (13 MFs, up from 11): only 3 (the So. group, including Ace Miller who was a stored 2025-26 freshman — confirms accurate tracking) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 10 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Roster skews sophomore-heavy (7/11) in the current MF group — consistent with a program that recruits internationally at scale and develops players over both JUCO years."
+      "recruit_pathway_note": "Re-read on the live 2026-27 roster: MF group grew to 13 (3 So + 10 Fr), a heavier freshman skew than the 2025-26 roster's sophomore-heavy split. No previous-school column published, so classification stays informational."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Exercise Science & Kinesiology Transfer Major — dedicated 2yr program, Iowa Regent Universities pathway",
@@ -5758,23 +5725,17 @@
     "minutesOutlook": {
       "available": true,
       "mf_total": 8,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Kyle Delaney (So·CM)",
-        "Juan Valencia Vacca (So·CM)",
-        "Ivan Caraballo (So·CM)",
-        "Josh Nicol (So·CM)",
-        "Charlie Pennell (Fr·CM)",
-        "Tamaki Oba (Fr·CM)",
-        "Gonzalo Alvarez (Fr·CM)",
-        "Alfie Stephens (Fr·CM)"
+        "Pablo Albiach (So·M)",
+        "Guilherme Cerci (So·M)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Medium",
+      "recruit_risk": "High",
       "trajectory": [
         {
           "year": 2027,
@@ -5789,9 +5750,9 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 central midfielders: 4 So + 4 Fr, obtained via Claude for Chrome MCP after the site's Cloudflare bot-check blocked automated fetch) clears before Olivier's August 2027 start. Zero roster overlap. Ask the coach: 'How many central midfielders are in your 2026 recruiting class, especially given the March 2026 head coach change?'",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 cbc.prestosports.com roster (8 MFs, same total but a different mix from 2025-26 — full first-year turnover under new HC Justin Rodriguez, hired March 2026). Only 2 (the So. group) clear before Olivier's August 2027 start, a steep drop from the prior season's 100% turnover; the other 6 (Fr.) return as sophomores in 2027-28. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Evenly split between freshmen and sophomores (4/4) — a balanced recruiting pattern under the prior coaching staff; may shift under new Head Coach Justin Rodriguez (hired March 2026)."
+      "recruit_pathway_note": "Re-read on the live 2026-27 roster under new HC Justin Rodriguez: 6 of 8 (75%) are true freshmen — a much heavier freshman intake than the prior 50/50 split, consistent with a new coaching staff rebuilding the roster. No previous-school column published, so classification stays informational."
     },
     "acRank": "NJCAA Level",
     "kinRank": "General transfer pathway (Math, Science & Kinesiology division) — no dedicated Exercise Science program confirmed",
@@ -6013,28 +5974,20 @@
     "rec": "Angelina is the most affordable school in Batch 2 (~$12.8k/yr) and plays in the guide's newest dedicated soccer stadium (Larry Phillips Family Sports Complex, 2022) in a warm East Texas setting. It isn't nationally ranked and has no dedicated Exercise Science degree, making it more of a value/facilities pick than a program-prestige or academic-first one within this batch.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 12,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 12,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
       "cleared_names": [
-        "Shota Tokuhisa (So·M)",
-        "Omar Mora (So·M)",
-        "Kevin Nava (So·M)",
-        "Luan Rangel (So·M)",
-        "Kaito Ueki (So·M)",
-        "Christian Delgado (So·M)",
-        "Lennart Poth (Fr·M)",
-        "Steven Aguirre (Fr·M)",
-        "Ramiro Mendoza (Fr·M)",
-        "Christian Castaneda (Fr·M)",
-        "Jorge Rivera (Fr·M)",
-        "Mark Garcia (Fr·M)"
+        "Gabriel Moore (So·M)",
+        "Sebastian Pacheco (So·M)",
+        "Ryudai Seki (So·M)",
+        "Ethan Narvaez (So·M)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "High",
+      "recruit_risk": "Medium",
       "trajectory": [
         {
           "year": 2027,
@@ -6049,9 +6002,9 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (12 MFs: 6 So + 6 Fr) clears before Olivier's August 2027 start. Zero roster overlap, but a relatively deep, evenly-split current MF group. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 angelinaathletics.com roster (title reads 'Roster 2027' — confirmed to be the 2026-27 season via the season selector; 8 MFs, down from 12): only 4 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 4 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Exactly split between freshmen and sophomores (6/6), with a genuinely international mix (Japan, Brazil, Germany) alongside East Texas locals."
+      "recruit_pathway_note": "Re-read on the live 2026-27 roster: exactly split between freshmen and sophomores (4/4), a genuinely international mix (Spain, Japan, Jamaica) alongside Texas locals. No previous-school column published, so classification stays informational."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Health and Physical Education — general transfer pathway, no dedicated Exercise Science program",
@@ -7482,25 +7435,17 @@
     "rec": "Johnson County offers the most urban Kansas setting in this guide's JUCO section — genuine Kansas City metro access from Overland Park — backed by a 2025 Region 6/9 tournament title and a #15 national ranking. The trade-offs are no on-campus housing, no dedicated Exercise Science degree, and the highest cost of attendance (~$33.6k/yr) of any school added this session, reflecting Kansas City-metro living costs.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 15,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 15,
+      "mf_total": 16,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 7,
       "cleared_names": [
-        "Dominic Zuniga (So·M)",
-        "Andy Sloss (So·M)",
-        "Caleb Brueckner (So·M)",
-        "Brian Aleman (So·M)",
-        "Cade Gassman (So·M)",
-        "Gavin Hudnall (So·M)",
-        "Zach Mall (So·M)",
-        "Jordan Gaona (So·M)",
-        "Ryan Grinstead (So·M)",
-        "Kael Drummond (Fr·M)",
-        "Phillip Mutantika (Fr·M)",
-        "Griffin Heinen (Fr·M/D)",
-        "Parker Hylok (Fr·M)",
-        "Grayson Niswonger (Fr·M/D)",
-        "David Hernandez (Fr·M/D)"
+        "Thomas House (So·MF)",
+        "Brian Andrades-Lara (So·D/MF)",
+        "Khoi Woods (So·MF/F)",
+        "Maclain Dahm (So·MF)",
+        "Sei Fowler (So·MF)",
+        "Enrique Mercado (So·F/MF)",
+        "Marvin Anguiano (So·F/MF)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
@@ -7521,9 +7466,9 @@
           "label": "Likely starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2024-25 roster (15 MFs: 9 So + 6 Fr, including 3 midfielder/defender dual-position players) clears before Olivier's August 2027 start. Zero roster overlap, but this is the largest MF group of any school added this session — expect a similarly competitive incoming recruiting class. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 jcccathletics.com roster (16 MF-capable players incl. hybrid D/MF and F/MF slots, up from 15): only 7 (the So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 9 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Skews sophomore-heavy (9/15) in the most recently available roster — consistent with a program that develops players over both JUCO years rather than relying on a single large freshman intake."
+      "recruit_pathway_note": "Re-read on the live 2026-27 roster: 9 of 16 (56%) are true freshmen — a heavily local Kansas/Missouri high-school recruiting base with a smaller international contingent. No previous-school column published, so classification stays informational."
     },
     "acRank": "NJCAA Level",
     "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",

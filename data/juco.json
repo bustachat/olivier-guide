@@ -663,7 +663,7 @@
       "HHP 220 — Exercise Science Foundations"
     ],
     "rec": "Iowa Western CC is the Midwest transfer pathway school — the Council Bluffs/Omaha equivalent of Santa Monica College. Extremely affordable at ~$14k/yr with open admission. Best strategic use: bridge GPA to 2.8+ eligibility floor, gain 2 years of NJCAA D1 soccer film, then transfer to target D1 or D2 program. Cold climate is a significant lifestyle mismatch for a Sydney-raised player. Primary value is financial and eligibility access, not lifestyle fit.",
-    "url": "https://iwcc.edu/athletics",
+    "url": "https://www.goreivers.com/sports/msoc/index",
     "lensScores": {
       "overall": 68,
       "soccer": 58,
@@ -674,31 +674,24 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 12,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 12,
+      "mf_total": 13,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
       "cleared_names": [
-        "Jin Ichikawa (So·M)",
-        "Toraji Narazaki (So·M)",
-        "Efraims Valutadatils (So·M)",
-        "Kyohei Eguchi (So·M)",
-        "Armand Kadiamba (Fr·M)",
-        "Carlos Casillas-Lopez (Fr·M)",
-        "Guesly Alexandre (Fr·M)",
-        "Amour Baza (Fr·M)",
-        "Alex Guillory (Fr·M)",
-        "Bryan Espadero-Sanchez (Fr·M)",
-        "Diego Espinoza (Fr·M)",
-        "Jonathan Amisi (Fr·M)"
+        "Armand Kadiamba (So·MID)",
+        "Taiji Ikegame (So·MID)",
+        "Carlos Casillas-Lopez (So·MID)",
+        "Bryan Espadero-Sanchez (So·MID)",
+        "Jayson Spencer (RS-So·MID)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "8 of the 12 current MFs (67%) are true freshmen with no prior college listed, recruited from Japan, Latvia, and Canada alongside US high schoolers. 2025 First-Team All-American Efraims Valutadatils (Latvia) came in as a freshman himself, evidencing a real freshman-to-All-American pathway.",
-      "trajectoryNote": "JUCO 2-year program — 100% of the current 2025-26 roster finishes before Olivier enters in August 2027. All 12 current MFs (4 So + 8 Fr) are completely gone. Zero roster overlap whatsoever. Olivier's competition is entirely determined by the 2026 recruiting class that Coach Mike Brown signs now. Ask the coach: 'How many central midfielders are in your 2026 class?' — that is the only relevant question. Trajectory modelled as a strong incoming recruit competing against one unknown class.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 goreivers.com roster (13 MFs). Iowa Western publishes no previous-school column, so the existing 'Freshman-friendly' classification is RETAINED, not re-derived, and stays lower-confidence. Real roster churn is visible in the raw data: 4 of the 8 midfielders who were true freshmen on the 2025-26 roster (Guesly Alexandre, Amour Baza, Alex Guillory, Jonathan Amisi) are no longer on the 2026-27 roster at all.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 goreivers.com roster (13 MFs of 33, up from 12): only 5 (the So./RS-So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 8 (Fr./RS-Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
       "trajectory": [
         {
           "year": 2027,

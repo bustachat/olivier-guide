@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.86 (2026-08-16) — Iowa Western: url fix + facts-only roster refresh to 2026-27 (Change Type 3, JUCO)
+
+`data/juco.json` — `iowa_western`'s stored `url` was wrong (`https://iwcc.edu/athletics`, not a `/sports/msoc` path — it had never been probeable via `rosterUrl()`). Owner supplied the correct athletics URL directly (`https://www.goreivers.com/sports/msoc/index`) after finding it via VPN/manual browsing; corrected. `DOMAINS`/`SITE_URLS` in `js/app.js` were already correct for this school — only the school object's own `url` was stale.
+
+Owner also confirmed Iowa Western's 2026-27 roster is now live and fully populated (33 total players, 13 midfielders) at `goreivers.com/sports/msoc/2026-27/roster` — re-read directly via the Claude-in-Chrome connector after the sandboxed browser pane hit the same CloudFront 403 block documented for Suffolk CC (§15 Rule 0), confirming that block generalises beyond Suffolk. Facts-only refresh applied per the JUCO calibration-gap rule (§6E / `apply_roster_refresh.py`'s `facts_only` branch): `mf_total` 12→13, `roster_season` 2025-26→2026-27, `cleared_before_2027` 12→5 (5 So./RS-So. clear; 8 Fr./RS-Fr. return as sophomores in 2027-28 and compete with Olivier), `recruit_risk` Low→High. Real roster churn confirmed in the raw data — 4 of the 8 midfielders who were true freshmen on the 2025-26 roster (Alexandre, Baza, Guillory, Amisi) are no longer on the 2026-27 roster at all.
+
+`trajectory[].pct` and the score cascade (`fitOlivier` 68, `lensScores.minutes` 79, `lensScores.overall` 68) were deliberately **left untouched** — §14's Opportunity Score table still cannot reproduce any stored JUCO trajectory, so recomputing would fabricate a number (same reasoning as the Session 4 Neosho County refresh, v44.55). `trajectoryNote` carries the ⚠ MIXED VINTAGE disclosure.
+
+`data/juco.json` (url + minutesOutlook facts), `CLAUDE.md` (§6C — logged this resolution and a new `tyler_jc` finding: the athletics site required a VPN to reach and, once reached, still has no usable roster content — likely mid-rebuild rather than a read-method problem; deprioritized in the roster campaign pending a future recheck), `athletes/olivier.json` (guideVersion bump). `validate_schools.py`: PASS, 170 schools, 25 warnings (no new ones). `validate_consistency.js`: **Issues: 0**. Local browser-verified via a temporary local server: `unis[]` shows `iowa_western` with the correct refreshed facts and unchanged score fields; zero console errors.
+
+This is the first commit of a broader roster-refresh campaign resuming after the NJCAA DI Gap-Fill campaign (v44.70–v44.85) — see CLAUDE.md §6C for the batch plan covering the remaining 81 schools still on 2025-26 data.
+
+---
+
 ### v44.85 (2026-08-13) — NJCAA DI Gap-Fill campaign Batch 14 (FINAL BATCH): 3 schools added, 1 excluded (JUCO)
 
 Central Georgia Technical College, Ranger College, Northern Oklahoma College-Enid added (`data/juco.json`). **This is the final batch of the NJCAA DI Gap-Fill campaign** — see the `njcaa_di_gap_fill_campaign` memory for the full multi-session history. 167 → 170 schools; `data/coaches.json` 167 → 170 (3 new coaches, all re-ranked).

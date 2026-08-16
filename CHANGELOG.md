@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.89 (2026-08-16) — Fix: internal process notes leaking into the live Minutes Outlook / Pathways / Financial Model tabs
+
+Owner reported seeing internal engineering commentary directly in the app — a "⚠ MIXED VINTAGE" note under a Minutes Outlook card that referenced "§14's Opportunity Score table", a backtick-quoted `trajectory` field name, and "CLAUDE.md §6E". Investigated and found this was real: `trajectoryNote` and `recruit_pathway_note` (`minutesOutlook`) render verbatim to every visitor via `js/app.js:3692-3693` and `2443-2444` (the latter as a hover tooltip on the Pathways tab), and several roster-refresh sessions had written internal audit-trail language directly into those fields instead of user-facing prose.
+
+Swept every data file for internal references (CLAUDE.md section numbers, `§` citations, ALL-CAPS code constants like `NEXT_LEVEL_NEUTRAL`/`D1_RATE_DIVISOR`, "Rule 0", script names) cross-referenced against which fields the renderers actually touch — confirmed via direct grep of `js/app.js`/`js/dashboard.js`, not assumed from the schema docs. Found and fixed 15 leaking entries across 4 files, all in genuinely rendered fields:
+
+- `data/juco.json` — 12 `trajectoryNote` entries (rewritten to a plain "based on last year's roster, not yet refreshed" caveat, keeping the real roster facts), 2 `recruit_pathway_note` entries (neosho_county_cc, lsu_eunice — dropped the misplaced trajectory caveat entirely), `lewis_clark_cc`'s uniquely-worded `trajectoryNote` (kept the useful "ask the coach" suggestion, dropped the methodology commentary), and 34 `proPlayers.nextLevel.note` entries containing `NEXT_LEVEL_NEUTRAL`/`D1_RATE_DIVISOR`/`§5b`/"Rule 0" (systematic regex fix preserving all real research findings — same coaches/schools/counts, just re-worded to plain English), plus 3 more `recruit_pathway_note`/`trajectoryNote` entries with `(§15...)` citations (northeast_cc, arizona_western, efsc).
+- `data/caa.json` — Stony Brook's `recruit_pathway_note` referenced "CLAUDE.md 6" without even a `§` symbol (caught by widening the sweep pattern after the first pass missed it).
+- `data/big-west.json` / `data/d2.json` — UC Irvine's and Oklahoma City University's `fin.internationalNote` (rendered on the Financial Model tab) each carried a sentence about a stale figure "§6 had flagged... as an ESTIMATE" — removed, the real cost breakdown was already correct and self-sufficient without it.
+
+Confirmed `devScoresNote` (86 entries across all conference files) and `coaches.json`'s `overallScoreNote` (158 entries) are the only two note-shaped fields that are genuinely internal-only — neither has any render call anywhere in `js/app.js`/`js/dashboard.js` (verified by grep, twice, after initially misjudging `proPlayers.nextLevel.note` as unrendered too — it is rendered, at `js/app.js:1494/1498`, which is what caught the 34-entry leak). Left those two untouched; they're legitimate audit-trail fields.
+
+Added a permanent rule to CLAUDE.md §8 CODE Rules (DON'T list) naming every field the renderer actually touches vs. the two that don't, so a future session checks the renderer before writing citation-style language into a note field instead of assuming from the schema doc.
+
+`data/juco.json`, `data/caa.json`, `data/big-west.json`, `data/d2.json`, `athletes/olivier.json` (guideVersion bump), `CLAUDE.md` (§8 — new DON'T rule). `validate_schools.py`: PASS, 170 schools, 25 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. No scoring fields touched — this was pure prose cleanup, verified by a full comprehensive re-sweep (0 leaks in any rendered field afterward) and confirmed live in a local browser: the Miami Dade Minutes Outlook card now ends with plain caveat text instead of the internal jargon the owner originally flagged.
+
+---
+
 ### v44.88 (2026-08-16) — Roster refresh campaign Batch 2: coach-verification follow-up for Batch 1's 9 unconfirmed schools (Change Type 2)
 
 `data/coaches.json` — completed the Change Type 2 spot-check that v44.87's Batch 1 had marked done but hadn't actually performed for 9 of its 10 refreshed schools. Visited each school's official `/coaches` (or equivalent) page via Claude-in-Chrome (Rule 0) and cross-checked name/title against the stored entry: `northeast_cc`, `daytona_state`, `cowley_cc`, `angelina_college`, `iowa_lakes_cc`, `johnson_county_cc`, `glendale_cc_az`, `arizona_western`, `coastal_bend_cc`.

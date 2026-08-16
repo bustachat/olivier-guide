@@ -420,7 +420,7 @@
       "recruit_risk": "Medium",
       "recruit_pathway": "Mixed",
       "recruit_pathway_note": "Re-read on the live 2026-27 mdcathletics.com roster (8 MFs, down from 12). The 5 sophomores are exactly the 5 players stored as 2025-26 freshmen (DePaula, Vigil, DePalo, Serra, Preciado) — confirms accurate season-over-season tracking. No previous-school column published, so 'Mixed' is RETAINED, not re-derived.",
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 mdcathletics.com roster (8 MFs, down from 12): only 5 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 3 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 mdcathletics.com roster (8 MFs, down from 12): only 5 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 3 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "trajectory": [
         {
           "year": 2027,
@@ -684,7 +684,7 @@
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
       "recruit_pathway_note": "Re-read on the live 2026-27 goreivers.com roster (13 MFs). Iowa Western publishes no previous-school column, so the existing 'Freshman-friendly' classification is RETAINED, not re-derived, and stays lower-confidence. Real roster churn is visible in the raw data: 4 of the 8 midfielders who were true freshmen on the 2025-26 roster (Guesly Alexandre, Amour Baza, Alex Guillory, Jonathan Amisi) are no longer on the 2026-27 roster at all.",
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 goreivers.com roster (13 MFs of 33, up from 12): only 5 (the So./RS-So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 8 (Fr./RS-Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 goreivers.com roster (13 MFs of 33, up from 12): only 5 (the So./RS-So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 8 (Fr./RS-Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "trajectory": [
         {
           "year": 2027,
@@ -1011,8 +1011,8 @@
       "rising_junior_2027_names": [],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 northeasthawks.com roster: MF group grew to 12 (5 So + 7 Fr, up from 10). No previous-school column published, so 'Freshman-friendly' is RETAINED, not re-derived — still consistent with Potter's direct-from-HS international recruiting network (Denmark, Netherlands, Germany, Spain, Japan, Latvia). One roster row (#13, Lucas Renaudot) publishes no position and was excluded from the MF count as an unconfirmed blank-position case (§15).",
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 northeasthawks.com roster (12 MFs, up from 10): only 5 (the So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 7 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 northeasthawks.com roster: MF group grew to 12 (5 So + 7 Fr, up from 10). No previous-school column published, so 'Freshman-friendly' is RETAINED, not re-derived — still consistent with Potter's direct-from-HS international recruiting network (Denmark, Netherlands, Germany, Spain, Japan, Latvia). One roster row (#13, Lucas Renaudot) publishes no position and was excluded from the MF count as an unconfirmed blank-position case.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 northeasthawks.com roster (12 MFs, up from 10): only 5 (the So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 7 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "trajectory": [
         {
           "year": 2027,
@@ -1114,7 +1114,7 @@
         "years": 2,
         "perYear": 2,
         "sourceUrl": null,
-        "note": "Sidearm alumni page renders empty / parked lander; publishes no usable per-year D1 destination data. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (discovery only, Rule 0) and Tier-1-verified 4 on their destination schools' own rosters: Jinkinson (Missouri State, 2024), Weir (Wisconsin-Milwaukee, 2025), Lee and Silvestrini (both Xavier, 2025). A fifth 2024 lead (Thallinger→Tulsa) could not be confirmed on Tulsa's current roster and is not counted. ⚠️ 2-year cross-check, not a comprehensive alumni-page census — EXCLUDED from the D1_RATE_DIVISOR, same treatment as Phoenix College's n=1 precedent (§5b)."
+        "note": "Sidearm alumni page renders empty / parked lander; publishes no usable per-year D1 destination data. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (a lead only, not independently verified) and Tier-1-verified 4 on their destination schools' own rosters: Jinkinson (Missouri State, 2024), Weir (Wisconsin-Milwaukee, 2025), Lee and Silvestrini (both Xavier, 2025). A fifth 2024 lead (Thallinger→Tulsa) could not be confirmed on Tulsa's current roster and is not counted. ⚠️ 2-year cross-check, not a comprehensive alumni-page census — EXCLUDED from the comparison benchmark, same treatment as Phoenix College's n=1 precedent."
       }
     },
     "acRank": "NJCAA Level",
@@ -2025,7 +2025,7 @@
           "label": "Key midfielder — national finalist program, D1 transfer showcase"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 dscfalcons.com roster (7 MFs): only 3 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 4 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E."
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 dscfalcons.com roster (7 MFs): only 3 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 4 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet."
     },
     "facilityDetails": {
       "rating": "Good",
@@ -2103,7 +2103,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "2025 NJCAA DI National Champions, yet publishes no usable alumni/transfer destination data. A title is a result and lives in titles[], not here. Cross-checked TopDrawerSoccer's 2024/2025 D1 transfer trackers by name (discovery only, Rule 0) and Tier-1-verified one real transfer: Carlos Zambrano to Syracuse for 2024 (confirmed on Syracuse's own roster). A second 2025 lead (Zuniga→Wisconsin-Milwaukee) could not be confirmed on UWM's current roster and is not counted. One confirmed name from a non-exhaustive tracker isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
+        "note": "2025 NJCAA DI National Champions, yet publishes no usable alumni/transfer destination data. A title is a result and lives in titles[], not here. Cross-checked TopDrawerSoccer's 2024/2025 D1 transfer trackers by name (a lead only, not independently verified) and Tier-1-verified one real transfer: Carlos Zambrano to Syracuse for 2024 (confirmed on Syracuse's own roster). A second 2025 lead (Zuniga→Wisconsin-Milwaukee) could not be confirmed on UWM's current roster and is not counted. One confirmed name from a non-exhaustive tracker isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
       }
     },
     "juco2yr": true,
@@ -2633,7 +2633,7 @@
           "label": "Likely starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 cowleytigers.com roster (7 MFs). NOTE: this school's site mislabels the season-scoped roster URL's page title as \"Standings\" — the table content is verified genuine roster data (NO./NAME/POSITION/YEAR/HOMETOWN columns), not a mislink. All 3 sophomores (Inchico, Sasaki, Cabrera) are the exact names stored as 2025-26 freshmen, confirming accurate tracking. Only 3 clear before Olivier's August 2027 start, down from the prior season's 100% turnover; the other 4 (Fr.) return as sophomores in 2027-28. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 cowleytigers.com roster (7 MFs). NOTE: this school's site mislabels the season-scoped roster URL's page title as \"Standings\" — the table content is verified genuine roster data (NO./NAME/POSITION/YEAR/HOMETOWN columns), not a mislink. All 3 sophomores (Inchico, Sasaki, Cabrera) are the exact names stored as 2025-26 freshmen, confirming accurate tracking. Only 3 clear before Olivier's August 2027 start, down from the prior season's 100% turnover; the other 4 (Fr.) return as sophomores in 2027-28. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "recruit_pathway": "Freshman-friendly",
       "recruit_pathway_note": "Re-read on the live 2026-27 roster: 4 of 7 (57%) are true freshmen, drawn directly from Japan and Brazil plus one US (LA) recruit — still direct high-school-to-JUCO recruiting, no transfer/portal signal (no previous-school column published)."
     },
@@ -2894,9 +2894,9 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 awcmatadors.com roster (12 MFs): the 4 sophomores are exactly the 4 players stored as 2025-26 freshmen (Nishida, Riascos, Yamaguchi, Gonzalez) — confirms accurate season-over-season tracking. Only 4 clear before Olivier's August 2027 start, a steep drop from the prior season's 100% turnover; the other 8 (Fr.) return as sophomores in 2027-28. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 awcmatadors.com roster (12 MFs): the 4 sophomores are exactly the 4 players stored as 2025-26 freshmen (Nishida, Riascos, Yamaguchi, Gonzalez) — confirms accurate season-over-season tracking. Only 4 clear before Olivier's August 2027 start, a steep drop from the prior season's 100% turnover; the other 8 (Fr.) return as sophomores in 2027-28. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 roster: 8 of 12 (67%) are true freshmen, still recruited directly from Japan, Sweden, England, and South Korea. The 'PREVIOUS SCHOOL' header on this roster's Hometown column is misleading — the values are phonetic pronunciation guides, not actual transfer data (§15 name-collision-adjacent trap)."
+      "recruit_pathway_note": "Re-read on the live 2026-27 roster: 8 of 12 (67%) are true freshmen, still recruited directly from Japan, Sweden, England, and South Korea. The 'PREVIOUS SCHOOL' header on this roster's Hometown column is misleading — the values are phonetic pronunciation guides, not actual transfer data."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Exercise, Wellness and Nutrition — dedicated 2yr program",
@@ -3070,7 +3070,7 @@
         "years": 1,
         "perYear": 3,
         "sourceUrl": null,
-        "note": "No maintained alumni destination page exists — the school's own '13 transfers in 2025' claim has no verifiable per-player breakdown. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (discovery only, Rule 0) and Tier-1-verified 3 for 2025 on their destination schools' own rosters: Achermann-Stanfield (Tulsa), Emmanuel (SMU), McCoy (South Florida). ⚠️ n=1 year, same treatment as Phoenix College's precedent (§5b) — stored as a real measured rate but EXCLUDED from the D1_RATE_DIVISOR (a single cross-checked year is not the comprehensive multi-year alumni-page census the divisor's 7 schools were built from, and the school's own '13' figure suggests this 3 is itself an undercount, not an overcount)."
+        "note": "No maintained alumni destination page exists — the school's own '13 transfers in 2025' claim has no verifiable per-player breakdown. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (a lead only, not independently verified) and Tier-1-verified 3 for 2025 on their destination schools' own rosters: Achermann-Stanfield (Tulsa), Emmanuel (SMU), McCoy (South Florida). ⚠️ n=1 year, same treatment as Phoenix College's precedent — stored as a real measured rate but EXCLUDED from the comparison benchmark (a single cross-checked year is not the comprehensive multi-year alumni-page census the divisor's 7 schools were built from, and the school's own '13' figure suggests this 3 is itself an undercount, not an overcount)."
       }
     },
     "devScores": {
@@ -3158,7 +3158,7 @@
           "label": "Likely starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 MFs: 4 So + 4 Fr) clears before Olivier's August 2027 start. Zero roster overlap. EFSC's back-to-back national tournament runs suggest a competitive but not oversized MF group. Ask the coach: 'How many central midfielders are in your 2026 class?' DEFERRED 2026-08-16: a live 2026-27 efsctitans.com roster exists (33 players, real Chrome, table + headshot view both checked) but genuinely publishes NO position data for any outfield player — only the 3 goalkeepers show a Position field, confirmed by inspecting the table cell DOM directly (empty text node, not a rendering/extraction failure). This is a field-level gap like the OCU/St Edward's precedent (§15), not a roster-level one — the squad itself is populated. Kept on stored 2025-26 data rather than fabricate an MF count; re-check if EFSC starts publishing positions.",
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (8 MFs: 4 So + 4 Fr) clears before Olivier's August 2027 start. Zero roster overlap. EFSC's back-to-back national tournament runs suggest a competitive but not oversized MF group. Ask the coach: 'How many central midfielders are in your 2026 class?' DEFERRED 2026-08-16: a live 2026-27 efsctitans.com roster exists (33 players, real Chrome, table + headshot view both checked) but genuinely publishes NO position data for any outfield player — only the 3 goalkeepers show a Position field, confirmed by inspecting the table cell DOM directly (empty text node, not a rendering/extraction failure). This is a field-level gap like the OCU/St Edward's case, not a roster-level one — the squad itself is populated. Kept on stored 2025-26 data rather than fabricate an MF count; re-check if EFSC starts publishing positions.",
       "recruit_pathway": "Freshman-friendly",
       "recruit_pathway_note": "All 4 incoming-freshman MFs (Josh Rayfield, Kazuma Matsumoto, Diego Sanders, Davi Arujo) are true freshmen with no prior college listed, drawn from England, Japan, and two Florida locals — suggests direct freshman recruiting rather than transfer/portal reliance, though the sample (4 players) is small."
     },
@@ -4203,7 +4203,7 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 gauchoathletics.com roster (17 MFs, up from 14): 10 (the So. group — several are the same names stored as 2025-26 freshmen, confirming accurate tracking) clear before Olivier's August 2027 start, a majority but well short of the prior season's 100% turnover. The other 7 (Fr.) return as sophomores in 2027-28. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 gauchoathletics.com roster (17 MFs, up from 14): 10 (the So. group — several are the same names stored as 2025-26 freshmen, confirming accurate tracking) clear before Olivier's August 2027 start, a majority but well short of the prior season's 100% turnover. The other 7 (Fr.) return as sophomores in 2027-28. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "recruit_pathway": "Freshman-friendly",
       "recruit_pathway_note": "Re-read on the live 2026-27 roster: still a heavily local Phoenix-metro high-school recruiting base (Peoria, Glendale, Surprise, Buckeye), though the freshman share fell to 41% (7/17) from the prior season's 93% as more sophomores stayed on."
     },
@@ -4716,7 +4716,7 @@
       ],
       "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (13 MFs: 5 So + 8 Fr) clears before Olivier's August 2027 start. Zero roster overlap, but the large current MF group signals a competitive incoming recruiting class to enter. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 goneosho.com roster (13 MFs of 33). Neosho publishes only a Hometown / High School column and no previous-school column, so the existing 'Freshman-friendly' classification is RETAINED, not re-derived, and is lower-confidence. The 2026-27 shape is consistent with it: 8 of 13 MFs are freshmen. Unlike the prior season — when all 13 MFs cleared — only 5 (the sophomores) graduate before Olivier arrives, so he now competes with 8 returning midfielders. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` is still the prior-season projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. Trajectory and the Minutes score are pending the JUCO calibration item in CLAUDE.md §6."
+      "recruit_pathway_note": "Re-read on the live 2026-27 goneosho.com roster (13 MFs of 33). Neosho publishes only a Hometown / High School column and no previous-school column, so the existing 'Freshman-friendly' classification is RETAINED, not re-derived, and is lower-confidence. The 2026-27 shape is consistent with it: 8 of 13 MFs are freshmen. Unlike the prior season — when all 13 MFs cleared — only 5 (the sophomores) graduate before Olivier arrives, so he now competes with 8 returning midfielders."
     },
     "acRank": "NJCAA Level",
     "kinRank": "Athletic Training program — adjacent anatomy/physiology coursework, not dedicated Exercise Science",
@@ -5236,7 +5236,7 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 iowalakesathletics.com roster (13 MFs, up from 11): only 3 (the So. group, including Ace Miller who was a stored 2025-26 freshman — confirms accurate tracking) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 10 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 iowalakesathletics.com roster (13 MFs, up from 11): only 3 (the So. group, including Ace Miller who was a stored 2025-26 freshman — confirms accurate tracking) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 10 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "recruit_pathway": "Mixed",
       "recruit_pathway_note": "Re-read on the live 2026-27 roster: MF group grew to 13 (3 So + 10 Fr), a heavier freshman skew than the 2025-26 roster's sophomore-heavy split. No previous-school column published, so classification stays informational."
     },
@@ -5750,7 +5750,7 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 cbc.prestosports.com roster (8 MFs, same total but a different mix from 2025-26 — full first-year turnover under new HC Justin Rodriguez, hired March 2026). Only 2 (the So. group) clear before Olivier's August 2027 start, a steep drop from the prior season's 100% turnover; the other 6 (Fr.) return as sophomores in 2027-28. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 cbc.prestosports.com roster (8 MFs, same total but a different mix from 2025-26 — full first-year turnover under new HC Justin Rodriguez, hired March 2026). Only 2 (the So. group) clear before Olivier's August 2027 start, a steep drop from the prior season's 100% turnover; the other 6 (Fr.) return as sophomores in 2027-28. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "recruit_pathway": "Mixed",
       "recruit_pathway_note": "Re-read on the live 2026-27 roster under new HC Justin Rodriguez: 6 of 8 (75%) are true freshmen — a much heavier freshman intake than the prior 50/50 split, consistent with a new coaching staff rebuilding the roster. No previous-school column published, so classification stays informational."
     },
@@ -5922,7 +5922,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Only a one-off news release (2 D1, 2025-26) that self-declares incompleteness (\"the list (so far)\") — not a maintained alumni page; still owner-approved neutral (v42.12). Separately cross-checked TopDrawerSoccer's 2025 D1 transfer tracker by name (discovery only, Rule 0) and Tier-1-verified one real transfer: Abdallah Traore to Memphis for 2025 (confirmed on Memphis's own roster) — likely one of the release's own '2 D1' figure, not additional to it. One confirmed name from a non-exhaustive source isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
+        "note": "Only a one-off news release (2 D1, 2025-26) that self-declares incompleteness (\"the list (so far)\") — not a maintained alumni page; still owner-approved neutral (v42.12). Separately cross-checked TopDrawerSoccer's 2025 D1 transfer tracker by name (a lead only, not independently verified) and Tier-1-verified one real transfer: Abdallah Traore to Memphis for 2025 (confirmed on Memphis's own roster) — likely one of the release's own '2 D1' figure, not additional to it. One confirmed name from a non-exhaustive source isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
       }
     },
     "devScores": {
@@ -6002,7 +6002,7 @@
           "label": "Established starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 angelinaathletics.com roster (title reads 'Roster 2027' — confirmed to be the 2026-27 season via the season selector; 8 MFs, down from 12): only 4 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 4 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 angelinaathletics.com roster (title reads 'Roster 2027' — confirmed to be the 2026-27 season via the season selector; 8 MFs, down from 12): only 4 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 4 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "recruit_pathway": "Mixed",
       "recruit_pathway_note": "Re-read on the live 2026-27 roster: exactly split between freshmen and sophomores (4/4), a genuinely international mix (Spain, Japan, Jamaica) alongside Texas locals. No previous-school column published, so classification stays informational."
     },
@@ -6174,7 +6174,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Alumni page is a submission form only — no destination data published. Cross-checked TopDrawerSoccer's 2024/2025 D1 transfer trackers by name (discovery only, Rule 0) and Tier-1-verified one real transfer: Ryan Jeanfreau to Presbyterian for 2024 (confirmed on Presbyterian's own roster). A second 2024 lead (Lezzar→CSUN) could not be cleanly confirmed — CSUN's roster shows him with a transfer marker but no explicit \"LSU Eunice\" text, so it is not counted. One confirmed name from a non-exhaustive tracker isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
+        "note": "Alumni page is a submission form only — no destination data published. Cross-checked TopDrawerSoccer's 2024/2025 D1 transfer trackers by name (a lead only, not independently verified) and Tier-1-verified one real transfer: Ryan Jeanfreau to Presbyterian for 2024 (confirmed on Presbyterian's own roster). A second 2024 lead (Lezzar→CSUN) could not be cleanly confirmed — CSUN's roster shows him with a transfer marker but no explicit \"LSU Eunice\" text, so it is not counted. One confirmed name from a non-exhaustive tracker isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
       }
     },
     "devScores": {
@@ -6255,7 +6255,7 @@
       ],
       "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (5 MFs: 3 So + 1 redshirt-Fr + 1 Fr) clears before Olivier's August 2027 start. Zero roster overlap. The smallest MF group of any school added this session — a genuine opportunity if the coach recruits a similarly lean 2026 class. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Re-read on the live 2026-27 athletics.lsue.edu roster (8 MFs of 27, up from 5 of the prior season). LSU Eunice publishes only a Hometown / High School column and no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster alone; the existing 'Mixed' classification is RETAINED, not re-derived, and should be treated as lower-confidence. Roster shape did change materially: 6 of the 8 MFs are freshmen who return in 2027-28, so only 2 clear before Olivier arrives. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` is still the prior-season projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory (it caps Yr1 at 40-50% while every stored JUCO Yr1 is 56-72), so re-deriving would have been a fabricated number. Trajectory and the Minutes score are pending the JUCO calibration item in CLAUDE.md §6."
+      "recruit_pathway_note": "Re-read on the live 2026-27 athletics.lsue.edu roster (8 MFs of 27, up from 5 of the prior season). LSU Eunice publishes only a Hometown / High School column and no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster alone; the existing 'Mixed' classification is RETAINED, not re-derived, and should be treated as lower-confidence. Roster shape did change materially: 6 of the 8 MFs are freshmen who return in 2027-28, so only 2 clear before Olivier arrives."
     },
     "acRank": "NJCAA Level",
     "kinRank": "General transfer pathway — no dedicated Exercise Science program confirmed",
@@ -7466,7 +7466,7 @@
           "label": "Likely starter — transfer showcase year"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 jcccathletics.com roster (16 MF-capable players incl. hybrid D/MF and F/MF slots, up from 15): only 7 (the So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 9 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. ⚠ MIXED VINTAGE: the counts above are 2026-27 but `trajectory` below is still the prior-season (2025-26, 100%-clear) projection and was deliberately NOT recomputed — §14's Opportunity Score table cannot reproduce any stored JUCO trajectory, so re-deriving would have been a fabricated number. Trajectory and the Minutes lens score are pending the JUCO calibration item in CLAUDE.md §6E.",
+      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 jcccathletics.com roster (16 MF-capable players incl. hybrid D/MF and F/MF slots, up from 15): only 7 (the So. group) clear before Olivier's August 2027 start — a sharp drop from the prior season's 100% turnover. The other 9 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season. Note: the playing-time percentages below are from last year's roster and haven't been refreshed to match this season's numbers yet.",
       "recruit_pathway": "Mixed",
       "recruit_pathway_note": "Re-read on the live 2026-27 roster: 9 of 16 (56%) are true freshmen — a heavily local Kansas/Missouri high-school recruiting base with a smaller international contingent. No previous-school column published, so classification stays informational."
     },
@@ -7985,7 +7985,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — of the 7 midfielders on the 2026-27 roster, 3 sophomores (Bomis, Galaway, Sanchez) clear before Olivier's August 2027 start; the other 4 (3 true freshmen plus one redshirt-freshman) return as sophomores/finalists in 2027-28, directly competing with Olivier in his Yr1. Smallest midfield pool and smallest returning-competitor count of any JUCO in the guide. ⚠ Set by direct comparison against peer JUCOs' stored trajectories rather than CLAUDE.md's §14 Opportunity Score table, which is a documented, unresolved gap for JUCOs (CLAUDE.md §6 group E) — that table cannot reproduce ANY of the 30 pre-existing JUCOs' stored Yr1/Yr2 values (its literal output for this roster would be Yr1≈20%, drastically out of line with every peer). Owner-approved approach (2026-08-09): match the real-world judgment scale the other 30 JUCOs were set on, pending the same recalibration they are all pending. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "trajectoryNote": "JUCO 2-year program — of the 7 midfielders on the 2026-27 roster, 3 sophomores (Bomis, Galaway, Sanchez) clear before Olivier's August 2027 start; the other 4 (3 true freshmen plus one redshirt-freshman) return as sophomores/finalists in 2027-28, directly competing with Olivier in his Yr1. Smallest midfield pool and smallest returning-competitor count of any JUCO in the guide. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Freshman-friendly",
       "recruit_pathway_note": "L&C's roster page labels its column 'Hometown/High School' but it genuinely doubles as a previous-school field for transfers — 4 of 30 players on the 2026-27 roster show a prior college (Ruelke from Southwest Mississippi CC, Nakagawa from Cowley College, Curto from William Carey University, Marin from Connors State College), none of them midfielders. All 7 midfielders came directly from high school or a prep academy with zero JUCO/4-year transfers — a clean freshman-entry signal at the midfield position specifically, even though the roster overall does carry transfers at other positions."
     },
@@ -13531,7 +13531,7 @@
         "years": 2,
         "perYear": 2.5,
         "sourceUrl": "https://www.caspercollege.edu/news/2026/05/casper-college-mens-soccer-2026/",
-        "note": "No standing alumni-tracker page found, but TWO consecutive dated Casper College news releases (May 2025, May 2026) name every mover's exact destination, division and conference — 2 of 6 movers were NCAA D1 in 2025, 3 of 13 in 2026 (5 of 19 total, 2.5/yr). Stronger evidence than a single-year snapshot, but not the exhaustive multi-year alumni-page census the D1_RATE_DIVISOR's 7 schools were built from — stored as measured but EXCLUDED from the divisor, following the Phoenix College precedent (§5b)."
+        "note": "No standing alumni-tracker page found, but TWO consecutive dated Casper College news releases (May 2025, May 2026) name every mover's exact destination, division and conference — 2 of 6 movers were NCAA D1 in 2025, 3 of 13 in 2026 (5 of 19 total, 2.5/yr). Stronger evidence than a single-year snapshot, but not the exhaustive multi-year alumni-page census the comparison benchmark's 7 schools were built from — stored as measured but EXCLUDED from the divisor, following the Phoenix College precedent."
       }
     },
     "devScores": {
@@ -14238,7 +14238,7 @@
         "years": 24,
         "perYear": 0,
         "sourceUrl": "https://www.golccc.com/MSOC_Alumni",
-        "note": "A genuinely comprehensive, dated alumni page with an explicit destination-and-level column for every recorded transfer from 2002 through 2025 (~30 names) — read in full via Claude for Chrome, every destination's level independently checked against the page's own published column. Zero confirmed NCAA Division I soccer destinations across the entire recorded history (one D1 entry, Chris Hearne to Wyoming football in 2003, is cross-sport contamination per §5b's warning class #5, not a soccer placement). This is a MEASURED zero, not an absence of data — the pipeline is real, just NCAA D2/NAIA-weighted rather than D1."
+        "note": "A genuinely comprehensive, dated alumni page with an explicit destination-and-level column for every recorded transfer from 2002 through 2025 (~30 names) — read in full via Claude for Chrome, every destination's level independently checked against the page's own published column. Zero confirmed NCAA Division I soccer destinations across the entire recorded history (one D1 entry, Chris Hearne to Wyoming football in 2003, is cross-sport contamination, not a soccer placement). This is a MEASURED zero, not an absence of data — the pipeline is real, just NCAA D2/NAIA-weighted rather than D1."
       }
     },
     "devScores": {
@@ -14742,7 +14742,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://wnccathletics.com/sports/msoc/2024-25/news",
-        "note": "WNCC's own dated news feed names one confirmed 2025 NCAA D1 transfer (Babiker to Mercyhurst) from the 2024 title-team roster, but this is a single data point, not a comprehensive multi-year census — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than extrapolated into a rate. The program's official 'Moving On' alumni-tracker page is stale (last updated 2017) and was not used as current evidence."
+        "note": "WNCC's own dated news feed names one confirmed 2025 NCAA D1 transfer (Babiker to Mercyhurst) from the 2024 title-team roster, but this is a single data point, not a comprehensive multi-year census — stored as a neutral rating rather than extrapolated into a rate. The program's official 'Moving On' alumni-tracker page is stale (last updated 2017) and was not used as current evidence."
       }
     },
     "devScores": {
@@ -14955,7 +14955,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No comprehensive alumni tracker or dated news release naming a confirmed NCAA D1 transfer was found for the men's program — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+        "note": "No comprehensive alumni tracker or dated news release naming a confirmed NCAA D1 transfer was found for the men's program — stored as a neutral rating rather than assumed zero."
       }
     },
     "devScores": {
@@ -15176,7 +15176,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "One confirmed 2026 NCAA D1 signing (Manning Shareef to Northern Colorado) found via a third-party recruiting-network social post, not the school's own dated release — a real but single data point, insufficient for a measured rate. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "One confirmed 2026 NCAA D1 signing (Manning Shareef to Northern Colorado) found via a third-party recruiting-network social post, not the school's own dated release — a real but single data point, insufficient for a measured rate. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -15424,7 +15424,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://unhwildcats.com/news/2025/1/16/mens-soccer-signs-gardner-webb-transfer-elias-khodri",
-        "note": "One confirmed 2025 NCAA D1 signing (Elias Khodri, ultimately to New Hampshire) found via the destination school's own dated news release — a real but single data point, insufficient for a measured rate. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "One confirmed 2025 NCAA D1 signing (Elias Khodri, ultimately to New Hampshire) found via the destination school's own dated news release — a real but single data point, insufficient for a measured rate. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -15679,7 +15679,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://usclathletics.com/sports/mens-soccer/archives",
-        "note": "No dedicated alumni/'moving on' tracker page found on USC Lancaster's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+        "note": "No dedicated alumni/'moving on' tracker page found on USC Lancaster's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as a neutral rating rather than assumed zero."
       }
     },
     "devScores": {
@@ -15900,7 +15900,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.uscsalkathletics.com/mens-soccer",
-        "note": "No dedicated alumni/'moving on' tracker page found on USC Salkehatchie's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+        "note": "No dedicated alumni/'moving on' tracker page found on USC Salkehatchie's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as a neutral rating rather than assumed zero."
       }
     },
     "devScores": {
@@ -16148,7 +16148,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://uscfireants.com/sports/msoc/index",
-        "note": "No dedicated alumni/'moving on' tracker page found on USC Sumter's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+        "note": "No dedicated alumni/'moving on' tracker page found on USC Sumter's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as a neutral rating rather than assumed zero."
       }
     },
     "devScores": {
@@ -16404,7 +16404,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://uscunionbantams.com",
-        "note": "No dedicated alumni/'moving on' tracker page found on USC Union's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero, despite the program's genuine 4-year Player of the Year streak."
+        "note": "No dedicated alumni/'moving on' tracker page found on USC Union's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as a neutral rating rather than assumed zero, despite the program's genuine 4-year Player of the Year streak."
       }
     },
     "devScores": {
@@ -16909,7 +16909,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://athletics.jacksonvillecollege.edu/sports/mens-soccer/archives",
-        "note": "No dedicated alumni/transfer tracker page found on Jacksonville College's official site, and the News Archives page returned no stories — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+        "note": "No dedicated alumni/transfer tracker page found on Jacksonville College's official site, and the News Archives page returned no stories — stored as a neutral rating rather than assumed zero."
       }
     },
     "devScores": {
@@ -17167,7 +17167,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://ntcceagles.com/sports/mens-soccer/archives",
-        "note": "NTCC's News Archives page for men's soccer returned no stories, and its alumni-tracker page link 404'd — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+        "note": "NTCC's News Archives page for men's soccer returned no stories, and its alumni-tracker page link 404'd — stored as a neutral rating rather than assumed zero."
       }
     },
     "devScores": {
@@ -17378,7 +17378,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.tsc.edu/news/2026/05/five-scorpions-one-goal-continuing-the-journey-beyond-tsc/",
-        "note": "TSC's own May 2026 official release names 3 real 2025-26 men's soccer transfers, but none to an NCAA Division I program (Nelson University is NCCAA, Texas A&M-San Antonio is NAIA) — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b since no D1 rate can be measured, not assumed zero."
+        "note": "TSC's own May 2026 official release names 3 real 2025-26 men's soccer transfers, but none to an NCAA Division I program (Nelson University is NCCAA, Texas A&M-San Antonio is NAIA) — stored as a neutral rating since no D1 rate can be measured, not assumed zero."
       }
     },
     "devScores": {
@@ -17630,7 +17630,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on crowderathletics.com. One real, Tier-2-corroborated 2026 D1 transfer (Silas Laytham to UMKC) found via TopDrawerSoccer's tracker plus UMKC's own program Instagram — a single data point, not a comprehensive multi-year census, so stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than a measured rate."
+        "note": "No dedicated alumni/next-level tracking page found on crowderathletics.com. One real, Tier-2-corroborated 2026 D1 transfer (Silas Laytham to UMKC) found via TopDrawerSoccer's tracker plus UMKC's own program Instagram — a single data point, not a comprehensive multi-year census, so stored as a neutral rating rather than a measured rate."
       }
     },
     "devScores": {
@@ -17880,7 +17880,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on athletics.jeffco.edu. TopDrawerSoccer's tracker shows real Jefferson College names in both its 2022 (→ SIUE) and 2023 editions, but these were not individually Tier-1-verified on the destination schools' own rosters this session — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than a measured rate."
+        "note": "No dedicated alumni/next-level tracking page found on athletics.jeffco.edu. TopDrawerSoccer's tracker shows real Jefferson College names in both its 2022 (→ SIUE) and 2023 editions, but these were not individually Tier-1-verified on the destination schools' own rosters this session — stored as a neutral rating rather than a measured rate."
       }
     },
     "devScores": {
@@ -18128,7 +18128,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on harcum.edu. One real, Tier-1-verified 2021 D1 transfer (Ryan Kingsford to Akron, confirmed on Akron's own official signing release) found via TopDrawerSoccer's tracker — a single data point predating head coach David Hughes's full tenure, not a comprehensive multi-year census, so stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than a measured rate."
+        "note": "No dedicated alumni/next-level tracking page found on harcum.edu. One real, Tier-1-verified 2021 D1 transfer (Ryan Kingsford to Akron, confirmed on Akron's own official signing release) found via TopDrawerSoccer's tracker — a single data point predating head coach David Hughes's full tenure, not a comprehensive multi-year census, so stored as a neutral rating rather than a measured rate."
       }
     },
     "devScores": {
@@ -18369,7 +18369,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on athletics.hagerstowncc.edu, and a TopDrawerSoccer national transfer-tracker cross-check by exact school name returned no hits — stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than assumed zero."
+        "note": "No dedicated alumni/next-level tracking page found on athletics.hagerstowncc.edu, and a TopDrawerSoccer national transfer-tracker cross-check by exact school name returned no hits — stored as a neutral rating rather than assumed zero."
       }
     },
     "devScores": {
@@ -18623,7 +18623,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.harford.edu/about/get-to-know-harford/news/2025/09-sep/mens-soccer.php",
-        "note": "No dedicated alumni/next-level tracking page found on harfordathletics.com. One real, Tier-1-confirmed 2025 D1 transfer (Alfonso Gilleard Soriano to FIU) named directly in Harford's own official Sept 2025 feature article — a single data point, not a comprehensive multi-year census, so stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than a measured rate."
+        "note": "No dedicated alumni/next-level tracking page found on harfordathletics.com. One real, Tier-1-confirmed 2025 D1 transfer (Alfonso Gilleard Soriano to FIU) named directly in Harford's own official Sept 2025 feature article — a single data point, not a comprehensive multi-year census, so stored as a neutral rating rather than a measured rate."
       }
     },
     "devScores": {
@@ -18881,7 +18881,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://herdzone.com/sports/mens-soccer/roster/taimu-okiyoshi",
-        "note": "No dedicated multi-year alumni/next-level tracking page found on slccbruins.com. One real, Tier-1-confirmed transfer (Taimu Okiyoshi, 2021 National Championship team, to NCAA D1 Marshall University) found via Marshall's own official roster bio — a single confirmed data point given the program's genuine scale (11X SWAC champion since 2021), not a comprehensive multi-year census, so stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b rather than a measured rate."
+        "note": "No dedicated multi-year alumni/next-level tracking page found on slccbruins.com. One real, Tier-1-confirmed transfer (Taimu Okiyoshi, 2021 National Championship team, to NCAA D1 Marshall University) found via Marshall's own official roster bio — a single confirmed data point given the program's genuine scale (11X SWAC champion since 2021), not a comprehensive multi-year census, so stored as a neutral rating rather than a measured rate."
       }
     },
     "devScores": {
@@ -19136,7 +19136,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://snowbadgers.com/sports/mens-soccer/archives",
-        "note": "No dedicated multi-year alumni/next-level tracking page found on snowbadgers.com within this session's research. Forward Isaac Stanley's December 2025 NJCAA All-American honor is a real, Tier-1-confirmed individual accolade, but stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b since no specific transfer destination or multi-year rate was confirmed."
+        "note": "No dedicated multi-year alumni/next-level tracking page found on snowbadgers.com within this session's research. Forward Isaac Stanley's December 2025 NJCAA All-American honor is a real, Tier-1-confirmed individual accolade, but stored as a neutral rating since no specific transfer destination or multi-year rate was confirmed."
       }
     },
     "devScores": {
@@ -19373,7 +19373,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://nicathletics.com/sports/msoc/index",
-        "note": "No dedicated alumni/next-level tracking page found on nicathletics.com within this session's research. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "No dedicated alumni/next-level tracking page found on nicathletics.com within this session's research. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -19616,7 +19616,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://athletics.csi.edu/sports/msoc/index",
-        "note": "CSI's men's soccer program was founded in August 2023 — genuinely too young to have a multi-year transfer/alumni history. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "CSI's men's soccer program was founded in August 2023 — genuinely too young to have a multi-year transfer/alumni history. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -19869,7 +19869,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://athletics.cncc.edu/sports/mens-soccer",
-        "note": "No dedicated alumni/next-level tracking page found on athletics.cncc.edu within this session's research. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "No dedicated alumni/next-level tracking page found on athletics.cncc.edu within this session's research. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -20085,7 +20085,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://usueasternathletics.com/sports/msc/index",
-        "note": "No dedicated alumni/next-level tracking page found on usueasternathletics.com within this session's research. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "No dedicated alumni/next-level tracking page found on usueasternathletics.com within this session's research. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -20304,7 +20304,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://tmcclizards.com/sports/mens-soccer/roster/coaches/kyle-kelly/33",
-        "note": "No dedicated alumni/next-level tracking page found on tmcclizards.com within this session's research. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "No dedicated alumni/next-level tracking page found on tmcclizards.com within this session's research. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -20545,7 +20545,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://pnwccgladiators.com/sports/mens-soccer",
-        "note": "PNWCC's men's soccer program is genuinely new (first confirmed competitive season 2023) and has had real coaching turnover — too young and unstable to have a multi-year transfer history. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "PNWCC's men's soccer program is genuinely new (first confirmed competitive season 2023) and has had real coaching turnover — too young and unstable to have a multi-year transfer history. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -20778,7 +20778,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://illinoiscentralcougars.com/sports/2021/9/3/players-moving-on-ms",
-        "note": "ICC's own 'Players Moving On' page lists real transfer destinations (confirmed NCAA D1 Grand Canyon and UW-Green Bay among them) but no year windows or division labels for the list as a whole, so no dated rate can be computed. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b."
+        "note": "ICC's own 'Players Moving On' page lists real transfer destinations (confirmed NCAA D1 Grand Canyon and UW-Green Bay among them) but no year windows or division labels for the list as a whole, so no dated rate can be computed. Stored as a neutral rating."
       }
     },
     "devScores": {
@@ -21016,7 +21016,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.swic.edu/students/services/student-life/athletics/mens-soccer/",
-        "note": "SWIC's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+        "note": "SWIC's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as a neutral rating — unknown, not zero."
       }
     },
     "devScores": {
@@ -21253,7 +21253,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.ltcathletics.com/sports/msoc",
-        "note": "Lincoln Trail's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+        "note": "Lincoln Trail's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as a neutral rating — unknown, not zero."
       }
     },
     "devScores": {
@@ -21485,7 +21485,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://cgtctitans.com/sports/msc",
-        "note": "CGTC's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer, and the program is too young (launched 2023) to have an established transfer history. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+        "note": "CGTC's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer, and the program is too young (launched 2023) to have an established transfer history. Stored as a neutral rating — unknown, not zero."
       }
     },
     "devScores": {
@@ -21722,7 +21722,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.rangersports.net/sports/msoc",
-        "note": "Ranger College's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+        "note": "Ranger College's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as a neutral rating — unknown, not zero."
       }
     },
     "devScores": {
@@ -21953,7 +21953,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.nocjets.com/sports/msoc",
-        "note": "NOC-Enid's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as neutral (NEXT_LEVEL_NEUTRAL) per §5b — unknown, not zero."
+        "note": "NOC-Enid's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as a neutral rating — unknown, not zero."
       }
     },
     "devScores": {

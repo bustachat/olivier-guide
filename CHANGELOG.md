@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.92 (2026-08-16) — Batch 6: JUCO trajectory calibration campaign — closes the CLAUDE.md §6E open item
+
+Builds and rolls out a real JUCO-specific opportunity→trajectory formula, replacing the ad hoc/undocumented values every JUCO trajectory had carried since v26. Owner-approved (this was a scoring-model design decision, not a data refresh) after a calibration investigation found there was no clean formula to reverse-engineer — see CLAUDE.md §14 for the full history.
+
+**What the investigation found:** across all 77 available-JUCO schools, the stored trajectories came from at least three undocumented, mutually inconsistent sources — 43 schools stored at 100% cleared with Yr1 values scattered 50–68% with no discernible pattern; 12 schools (mostly from the NJCAA gap-fill campaign) sharing the exact same `[85, 90]` trajectory regardless of wildly different actual roster shapes (a copy-pasted default, not a computed value); and most of the remaining schools contaminated by this campaign's own facts-only refreshes, which update `cleared`/`mf_total` but deliberately leave `trajectory` untouched, making any correlation analysis against current facts meaningless.
+
+**The formula** (documented in CLAUDE.md §14): `opp = cleared − 0.6 × max(0, returning − 2)`, then a logistic curve `Yr1 = 32 + 46 / (1 + e^(−(opp−3)/7.8))`, `Yr2 = min(90, Yr1 + 13)`. Anchored on `tyler_jc` (13 of 13 MFs clear → 68% exactly). The other named anchor, `murray_state_ok` (62% despite 10 returners), was deliberately allowed to drift on owner ruling — fitting both anchors exactly forced the whole formula into an unusably narrow 57–70% range for all 77 schools, since the two anchors are close together in output despite very different underlying shapes. Trusting only the cleaner signal (Tyler: zero returners, no ambiguity) produces a genuinely differentiated 41–73% range instead.
+
+**Implementation:** `juco_opportunity_score()` / `juco_yr1()` / `juco_trajectory_for()` added to `apply_roster_refresh.py`, plus a new `recalibrate_juco_trajectories()` batch pass (`python apply_roster_refresh.py juco-recalibrate`) that reads every available JUCO's already-stored `cleared_before_2027`/`mf_total`, recomputes `trajectory`, and cascades `lensScores.minutes` → `fitOlivier` → `lensScores.overall` → `lensScores.value` through the existing `scores.js`-mirroring functions. All 77 schools processed, 0 skipped; re-running is idempotent (deterministic, no drift on a second pass).
+
+**Representative deltas:** `tyler_jc` unchanged (71, the anchor). `harcum_college` 64→55, `hagerstown_cc` 46→40, `slcc` 57→48 (all three previously carried the fake `[85,90]` template — now genuinely differentiated). `murray_state_ok` 60→55 (the drifted anchor, as approved). `seward_county_cc` 46→52 (a large, fully-cleared squad — correctly rewarded now that the formula responds to real shape instead of a flat default).
+
+`validate_schools.py`: 0 errors, 25 warnings (unchanged). `validate_consistency.js`: **Issues: 0** (confirms the cascade matches `scores.js` exactly for all 170 schools). Local browser-verified (`olivier-guide`, port 8787): `tyler_jc`'s card and Minutes tab confirmed against the computed values exactly (Fit 71%, Minutes Score 73, trajectory labels "Established starter"/"Captain candidate" matching 68%/81%); `harcum_college`'s card confirmed the de-templated Fit Score (55%, down from the old fake 64%). No console errors beyond expected offline favicon 404s.
+
+This closes the CLAUDE.md §6E open item that had stood since Session 4 (2026-08-06) blocking every JUCO roster refresh from touching its trajectory. `apply_roster_refresh.py`'s `facts_only` branch remains available for JUCOs but is no longer required — a future roster refresh can recompute trajectory in the same edit via the documented formula instead of leaving it stale.
+
+Files: `data/juco.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§14 new JUCO table, §6E resolved).
+
 ### v44.91 (2026-08-16) — Roster refresh campaign Batch 2: 10 of 12 stale-empty schools now populated (Change Type 3)
 
 Batch 2 rechecks the 12-school "published but empty" group from the 2026-08-06 survey, run at the owner's explicit request ahead of the original "not before late August" deferral. **10 of 12 are now genuinely populated** — real rosters, not the empty pages seen three weeks ago. Only `phoenix_college` and `smc` (Santa Monica) are still empty (0 rows, byte-identical to the original survey), so both stay on stored 2025-26 data.

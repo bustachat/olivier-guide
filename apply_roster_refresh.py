@@ -136,6 +136,76 @@ def trajectory_for(opp, juco=False):
                   for (y, lab), p in zip(yrs, pcts)]
 
 
+# CLAUDE.md 14 "JUCO Opportunity Score -> minutesOutlook table" (v44.92).
+# Separate from the 4-year ROWS/trajectory_for() above: a JUCO career is 2
+# years (Yr1/Yr2 only), and JUCO returners are far less entrenched than a
+# 4-year junior/senior, so the shape is a logistic curve, not the 4-year
+# linear-interpolated bands. Anchored on tyler_jc (68% exactly); murray_
+# state_ok's old stored anchor (62%) was allowed to drift per owner ruling
+# (2026-08-16) rather than forcing the whole curve into an unusably narrow
+# range to hit both exactly. See CLAUDE.md 14 for the full calibration
+# history and rationale.
+def juco_opportunity_score(cleared, mf_total):
+    returning = mf_total - cleared
+    return cleared - 0.6 * max(0, returning - 2)
+
+
+def juco_yr1(opp):
+    return 32 + 46 / (1 + math.exp(-(opp - 3) / 7.8))
+
+
+def juco_trajectory_for(cleared, mf_total):
+    opp = juco_opportunity_score(cleared, mf_total)
+    y1 = round(juco_yr1(opp))
+    y2 = min(90, y1 + 13)
+    pcts = [y1, y2]
+    yrs = [(2027, 'Yr 1 (Fr.)'), (2028, 'Yr 2 (So.)')]
+    return pcts, [{'year': y, 'yr_label': lab, 'pct': p, 'label': label_for(p)}
+                  for (y, lab), p in zip(yrs, pcts)]
+
+
+def recalibrate_juco_trajectories():
+    """Batch 6 (2026-08-16): re-derive trajectory for every available JUCO
+    from its already-stored cleared_before_2027/mf_total via the new formula,
+    then cascade the score chain. Does not touch mf_total/cleared/roster_season
+    -- those facts are already correct from the roster-refresh campaign; only
+    the judgment-based trajectory (previously ad hoc/undocumented) changes.
+    """
+    path = 'data/juco.json'
+    schools = json.loads(io.open(path, encoding='utf-8').read())
+    athlete = json.loads(io.open('athletes/olivier.json', encoding='utf-8').read())
+    budget = athlete.get('budgetUSD') or (athlete['budgetAUD'] / athlete['fxRate'])
+
+    for s in schools:
+        mo = s.get('minutesOutlook')
+        if not mo or not mo.get('available'):
+            continue
+        mf = mo.get('mf_total')
+        cl = mo.get('cleared_before_2027')
+        if not isinstance(mf, int) or not isinstance(cl, int) or mf <= 0:
+            print('SKIP %-25s missing/invalid mf_total or cleared_before_2027' % s['id'])
+            continue
+
+        before = (s['fitOlivier'], s['lensScores']['minutes'], s['lensScores']['value'])
+        pcts, traj = juco_trajectory_for(cl, mf)
+        mo['trajectory'] = traj
+
+        s['lensScores']['minutes'] = js_round(mo_score(s) * 100)
+        s['fitOlivier'] = fit_score(s, athlete)
+        s['lensScores']['overall'] = s['fitOlivier']
+        afford = 1 - min(1, s['fin']['costNum'] / budget)
+        s['lensScores']['value'] = js_round(s['fitOlivier'] * 0.6 + afford * 40)
+
+        after = (s['fitOlivier'], s['lensScores']['minutes'], s['lensScores']['value'])
+        print('%-25s mf=%-3s cl=%-3s traj=%-8s fit %s->%s  minutes %s->%s  value %s->%s'
+              % (s['id'], mf, cl, '/'.join(map(str, pcts)),
+                 before[0], after[0], before[1], after[1], before[2], after[2]))
+
+    io.open(path, 'w', encoding='utf-8', newline='\n').write(
+        json.dumps(schools, indent=2, ensure_ascii=False) + '\n')
+    print('wrote', path)
+
+
 def main(conf):
     patches = PATCHES[conf]
     path = 'data/%s.json' % conf
@@ -1262,4 +1332,7 @@ PATCHES = {
 }
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    if sys.argv[1] == 'juco-recalibrate':
+        recalibrate_juco_trajectories()
+    else:
+        main(sys.argv[1])

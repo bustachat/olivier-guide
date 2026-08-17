@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.02 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch J (FINAL): NJCAA gap-fill Region 24 + close-out (Change Type 3)
+
+Sub-batch J is the last of Batch 5: `illinois_central`, `southwestern_illinois`, `lincoln_trail` (Region 24, added v44.84), plus `ranger_college` and `noc_enid` (Region 5/2, added v44.85 as the final batch of the original gap-fill campaign). All researched live via Claude-in-Chrome per RULE 0. **This closes Batch 5 — all 56 NJCAA gap-fill JUCOs are now re-verified.**
+
+**4 of 5 confirmed genuinely unchanged**, all exact matches: `southwestern_illinois` (10 MFs), `lincoln_trail` (9 MFs), `ranger_college` (9 MFs, a wide mix of hybrid CDM/CM/CAM codes, all matched exactly), `noc_enid` (1 cleared MF). `illinois_central` had real churn (11→10 MFs, fit 51→47) on a fresh calendar-year-labeled "2026" roster.
+
+All 5 coaches spot-checked and confirmed unchanged: Gabe Carreno, Lindsay Eversmeyer, Luis Dantas, Ross Anderson, Aron Bassoff.
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Local browser-verified (`olivier-guide`, port 8787): `illinois_central`'s card confirmed against the computed value exactly (Fit 47%, 10 MFs); total school count confirmed still 170. No console errors beyond expected offline favicon 404s.
+
+**Batch 5 campaign summary (v44.93–v45.02, 10 sub-batches, all 56 schools):** 33 genuinely unchanged (59%) — real evidence the original NJCAA gap-fill research holds up under a second look; 19 with real roster churn as fresh 2026-27 seasons replaced partial or prior-season data; 4 `available:false`→`true` flips, each the first real position data ever captured for that school; 2 coach changes (one vacancy filled, one interim tag dropped). Two tooling/process gaps found and now documented as standing rules: `apply_roster_refresh.py` never updates the hand-authored `trajectoryNote` field (must be fixed manually on every refresh, §6C), and a naive class-year regex silently drops "Redshirt Sophomore/Freshman" players (match the class word anywhere in the string, not just at the start). The `project-roster-refresh-campaign` memory's stale "39 schools" figure was corrected to the real count of 56 early in the batch (v44.93).
+
+Files: `data/juco.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C Batch 5 marked done).
+
 ### v45.01 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch I: NJCAA gap-fill Region 18 (Change Type 3)
 
 Sub-batch I covers all 8 Region 18 (Utah/Idaho/Nevada/Washington) gap-fill JUCOs, added v44.83: `slcc`, `snow_college`, `north_idaho_college`, `college_of_southern_idaho`, `colorado_northwestern_cc`, `usu_eastern`, `truckee_meadows_cc`, `pacific_northwest_christian_college`. All researched live via Claude-in-Chrome per RULE 0.

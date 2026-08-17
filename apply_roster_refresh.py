@@ -621,6 +621,22 @@ PATCHES = {
                          "previous-school column. Only 1 sophomore clears before Olivier's August 2027 arrival; 10 "
                          "freshmen return as sophomores that year — a very crowded incoming group.",
         ),
+
+        # ═══ ROSTER REFRESH CAMPAIGN BATCH 5, SUB-BATCH J — FINAL (2026-08-17) ═══
+        # Region 24 (Illinois) plus ranger_college and noc_enid, closing Batch 5.
+        # southwestern_illinois, lincoln_trail, ranger_college, noc_enid all
+        # re-verified with EXACT matches — no patches needed for those 4.
+        'illinois_central': dict(
+            mf_total=10, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Linus Armbruster (So·MF)', 'Tomas Caceres (So·MF)', 'Rodrigo Urban Castillo (So·MF)',
+                     'Connor Lee Benway (So·MF)', 'Diego Beker (So·MF)'],
+            rising_sr=[], rising_jr=[], returning=5,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026 illinoiscentralcougars.com roster (10 MFs of 25, down from "
+                         "11). The roster publishes no previous-school column, so the existing classification is "
+                         "retained. 5 sophomores clear before Olivier's August 2027 arrival; 5 freshmen return as "
+                         "sophomores that year.",
+        ),
     },
     # ═══ ROSTER REFRESH CAMPAIGN BATCH 3 (2026-08-16) ═══════════════════════
     # 13 non-JUCO schools never previously attempted (CLAUDE.md 6C Batch 3).

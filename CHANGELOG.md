@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.03 (2026-08-17) — UX: roster-freshness badges and filter on the Minutes Outlook tab (Change Type 11)
+
+Owner-requested: with 170 schools and roster refresh cadence varying school to school, there was no way to tell at a glance which cards were on the latest roster data without expanding each one and reading `roster_season` out of the stats grid.
+
+Adds a small badge to every Minutes Outlook card header (visible even when collapsed): green **"✓ 2026-27"** for schools on the newest season present in the data, amber **"⏳ 2025-26"** (or whichever older season) for schools still pending a refresh. Also adds a second toolbar filter row, "Roster:", alongside the existing "Score:" tier filter — **All / ✓ Current / ⏳ Older season**, each with a live count, using the exact same button/active-state CSS pattern as the score tiers. The two filters compose (AND), matching the existing tier-filter behavior.
+
+**The "current" season is derived live from the data each render** (the max `roster_season` string across all available schools), not hardcoded — a hardcoded "2026-27" would go stale the exact same way the underlying roster data does, which is precisely the failure mode this feature exists to make visible. `roster_season`'s `YYYY-YY` format sorts correctly as a plain string comparison.
+
+Verified live (`olivier-guide`, port 8787): badge renders correctly on both current and stale cards; the season filter shows accurate counts (119 current / 39 stale, matching a fresh script-derived count against the same data); clicking each filter button shows only the matching cards with zero leakage; the two filters were verified to genuinely compose with AND logic, not just coincidentally agree (confirmed 0 results for a Score-high + Season-current combination that has no real overlap in the current data, vs 7 results for Score-high + Season-stale). Existing Score-tier filter behavior reconfirmed unaffected. No console errors beyond expected offline favicon 404s.
+
+`node --check js/app.js`: pass. `validate_schools.py`: 0 errors, 24 warnings (unchanged — no data touched). `validate_consistency.js`: **Issues: 0**.
+
+Files: `js/app.js`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (version headers).
+
 ### v45.02 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch J (FINAL): NJCAA gap-fill Region 24 + close-out (Change Type 3)
 
 Sub-batch J is the last of Batch 5: `illinois_central`, `southwestern_illinois`, `lincoln_trail` (Region 24, added v44.84), plus `ranger_college` and `noc_enid` (Region 5/2, added v44.85 as the final batch of the original gap-fill campaign). All researched live via Claude-in-Chrome per RULE 0. **This closes Batch 5 — all 56 NJCAA gap-fill JUCOs are now re-verified.**

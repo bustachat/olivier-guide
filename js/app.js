@@ -3456,6 +3456,7 @@ function calcMinutesScore(u, mode){
 
 let moMode = 'roster';   // ranking mode: 'roster' | 'adjusted'
 let moTier = 'all';      // score tier filter: 'all' | 'high' | 'mid' | 'low'
+let moSeason = 'all';    // roster-freshness filter: 'all' | 'current' | 'stale'
 let moExpanded = {};     // card open/closed state keyed by school id
 
 function moTierOf(score){ return score>=71?'high':score>=31?'mid':'low'; }
@@ -3480,6 +3481,15 @@ function setMoTier(tier){
   ['all','high','mid','low'].forEach(t=>{
     const btn = document.getElementById('mo-tier-'+t);
     if(btn) btn.className = 'mo-tier-btn mo-tier-'+t+(t===tier?' mo-tier-active':'');
+  });
+  buildMinutesHtml(true);
+}
+
+function setMoSeason(season){
+  moSeason = season;
+  ['all','current','stale'].forEach(s=>{
+    const btn = document.getElementById('mo-season-'+s);
+    if(btn) btn.className = 'mo-tier-btn mo-tier-'+s+(s===season?' mo-tier-active':'');
   });
   buildMinutesHtml(true);
 }
@@ -3524,8 +3534,22 @@ function buildMinutesHtml(cardsOnly){
   const cntMid  = ranked.filter(u=>moTierOf(calcMinutesScore(u,moMode))==='mid').length;
   const cntLow  = ranked.filter(u=>moTierOf(calcMinutesScore(u,moMode))==='low').length;
 
-  // Apply tier filter (preserves global rank order)
-  const filtered = moTier==='all' ? ranked : ranked.filter(u=>moTierOf(calcMinutesScore(u,moMode))===moTier);
+  // Roster-freshness: "current" = the newest roster_season present in the data right
+  // now, derived live rather than hardcoded — the guide rolls this forward every time
+  // a new season's rosters start landing, and a hardcoded "2026-27" here would go
+  // stale the exact same way the roster data itself does (see CLAUDE.md §6C).
+  const latestSeason = ranked.reduce((max,u)=>{
+    const s = (u.minutesOutlook||{}).roster_season;
+    return (s && (!max || s > max)) ? s : max;
+  }, null);
+  const isCurrentSeason = u => (u.minutesOutlook||{}).roster_season === latestSeason;
+  const cntCurrent = ranked.filter(isCurrentSeason).length;
+  const cntStale = ranked.length - cntCurrent;
+
+  // Apply tier + season filters together (preserves global rank order)
+  const filtered = ranked
+    .filter(u => moTier==='all' || moTierOf(calcMinutesScore(u,moMode))===moTier)
+    .filter(u => moSeason==='all' || (moSeason==='current') === isCurrentSeason(u));
 
   if(!cardsOnly){
     const introHtml =
@@ -3607,7 +3631,7 @@ function buildMinutesHtml(cardsOnly){
   const toolbarWrap = document.getElementById('mo-toolbar-wrap');
   if(toolbarWrap){
     toolbarWrap.innerHTML =
-      '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem">'+
+      '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.5rem">'+
         '<div style="display:flex;align-items:center;gap:.35rem;flex-wrap:wrap">'+
           '<span style="font-size:11px;font-weight:700;color:var(--hint);margin-right:2px">Score:</span>'+
           '<button id="mo-tier-all"  class="mo-tier-btn mo-tier-all'+(moTier==='all'?' mo-tier-active':'')+'" onclick="setMoTier(\'all\')">All <span class="mo-tier-cnt">'+ranked.length+'</span></button>'+
@@ -3619,6 +3643,12 @@ function buildMinutesHtml(cardsOnly){
           '<button class="mo-showhide-btn" onclick="moShowAll()">Show all</button>'+
           '<button class="mo-showhide-btn" onclick="moHideAll()">Hide all</button>'+
         '</div>'+
+      '</div>'+
+      '<div style="display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;margin-bottom:.75rem">'+
+        '<span style="font-size:11px;font-weight:700;color:var(--hint);margin-right:2px">Roster:</span>'+
+        '<button id="mo-season-all"     class="mo-tier-btn mo-tier-all'+(moSeason==='all'?' mo-tier-active':'')+'" onclick="setMoSeason(\'all\')">All <span class="mo-tier-cnt">'+ranked.length+'</span></button>'+
+        '<button id="mo-season-current" class="mo-tier-btn mo-tier-current'+(moSeason==='current'?' mo-tier-active':'')+'" onclick="setMoSeason(\'current\')">✓ '+(latestSeason||'Current')+' <span class="mo-tier-cnt">'+cntCurrent+'</span></button>'+
+        '<button id="mo-season-stale"   class="mo-tier-btn mo-tier-stale'+(moSeason==='stale'?' mo-tier-active':'')+'" onclick="setMoSeason(\'stale\')">⏳ Older season <span class="mo-tier-cnt">'+cntStale+'</span></button>'+
       '</div>';
   }
 
@@ -3643,6 +3673,14 @@ function buildMinutesHtml(cardsOnly){
     const showAdj = moMode==='adjusted' && divFactor!==1.0;
     const isOpen = moExpanded[u.id] !== false;
     const rankNum = globalIdx+1;
+    const seasonCurrent = mo.roster_season === latestSeason;
+    const seasonBadge = mo.roster_season
+      ? '<span title="'+(seasonCurrent?'Latest roster on file':'A newer roster season may exist — not yet refreshed')+'" style="font-size:9px;font-weight:700;border-radius:4px;padding:1px 6px;white-space:nowrap;'+
+        (seasonCurrent
+          ? 'color:var(--emerald);background:var(--emerald3);border:1px solid #6ee7b7'
+          : 'color:var(--amber);background:var(--amber3);border:1px solid #fcd34d')+
+        '">'+(seasonCurrent?'✓ ':'⏳ ')+mo.roster_season+'</span>'
+      : '';
 
     cardsHtml +=
       '<div class="mo-card'+(globalIdx<3?' mo-top':'')+'">'+
@@ -3650,6 +3688,7 @@ function buildMinutesHtml(cardsOnly){
           '<span class="mo-rank mo-rank-'+Math.min(rankNum,4)+'">#'+rankNum+'</span>'+
           '<span class="dbadge d-'+u.div+'">'+u.div+'</span>'+
           '<span class="mo-school-name">'+u.full+'</span>'+
+          seasonBadge+
           '<div style="display:flex;align-items:center;gap:6px;margin-left:auto">'+
             (showAdj?'<span style="font-size:9px;font-weight:700;color:var(--emerald);background:var(--emerald3);border-radius:4px;padding:1px 6px">×'+divFactor+' adj</span>':'')+
             '<span class="mo-score" style="color:'+scoreColor+'">'+score+'</span>'+
@@ -3728,6 +3767,8 @@ function buildMinutesHtml(cardsOnly){
     .mo-tier-high.mo-tier-active{background:var(--emerald3);color:var(--emerald);border-color:var(--emerald)}
     .mo-tier-mid.mo-tier-active{background:var(--amber3);color:var(--amber);border-color:var(--amber)}
     .mo-tier-low.mo-tier-active{background:var(--rose3);color:var(--rose);border-color:var(--rose)}
+    .mo-tier-current.mo-tier-active{background:var(--emerald3);color:var(--emerald);border-color:var(--emerald)}
+    .mo-tier-stale.mo-tier-active{background:var(--amber3);color:var(--amber);border-color:var(--amber)}
     .mo-showhide-btn{padding:3px 12px;font-size:11px;font-weight:700;border:1px solid var(--border);border-radius:7px;cursor:pointer;background:var(--surface2);font-family:inherit;color:var(--muted);transition:all .15s}
     .mo-showhide-btn:hover{background:var(--surface3);color:var(--text)}
     .mo-card-head{cursor:pointer;display:flex;align-items:center;gap:.5rem;padding:.6rem .75rem;border-radius:inherit}

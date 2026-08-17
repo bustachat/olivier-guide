@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.99 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch G: NJCAA gap-fill Region 14 (Change Type 3)
+
+Sub-batch G covers the 4 Region 14 (Texas) gap-fill JUCOs, added v44.81: `paris_jc`, `jacksonville_college`, `northeast_texas_cc`, `texas_southmost`. All researched live via Claude-in-Chrome per RULE 0.
+
+**All 4 confirmed genuinely unchanged — no data patches needed at all this round.** `paris_jc` (9 MFs including a CDM hybrid, exact match), `jacksonville_college` (16 MFs across a wide tactical-position taxonomy — CM/OM/AM/DM/M all counted, exact 16-of-16 set match), `texas_southmost` (8 MFs, still on the 2025-26 roster with no 2026-27 published yet, exact match). `northeast_texas_cc` re-confirmed still genuinely `available:false` — its 2026-27 roster is now published but, like the 2025-26 one before it, carries zero position data for any player at all.
+
+All 4 coaches spot-checked and confirmed unchanged: Fernando Arellano, Thomas Wait, Jon Evan, Mario Zamora.
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Local browser-verified (`olivier-guide`, port 8787) — no console errors beyond expected offline favicon 404s.
+
+Files: `data/juco.json`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status).
+
 ### v44.98 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch F: NJCAA gap-fill Region 10 (Change Type 3)
 
 Sub-batch F covers the 4 Region 10 (South Carolina, USC regional campuses) gap-fill JUCOs, added v44.80: `usc_lancaster`, `usc_salkehatchie`, `usc_sumter`, `usc_union`. All researched live via Claude-in-Chrome per RULE 0.

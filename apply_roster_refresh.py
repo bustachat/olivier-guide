@@ -559,6 +559,68 @@ PATCHES = {
                          "column, so the existing classification is retained. 2 sophomores clear before Olivier's "
                          "August 2027 arrival; 3 freshmen return as sophomores that year.",
         ),
+
+        # ═══ ROSTER REFRESH CAMPAIGN BATCH 5, SUB-BATCH I (2026-08-17) ═══════
+        # Region 18 (Utah/Idaho/Nevada/Washington). snow_college, north_idaho_college,
+        # pacific_northwest_christian_college all re-verified with EXACT matches (the
+        # latter's new 2026 roster is almost entirely unpopulated -- 9 of 13 players
+        # carry no position at all -- so it's too incomplete to use; stored 2025-26
+        # data stands) — no patches needed for those 3.
+        'slcc': dict(
+            mf_total=12, roster_season='2025-26', juco=True, facts_only=True,
+            cleared=['Martin Desir (So·MID)', 'George Miller (So·MID)', 'Braxton Bergholm (R-So·MID)',
+                     'Inaki Lambarri (So·MID)', 'David Noguera (So·MID)'],
+            rising_sr=[], rising_jr=[], returning=7,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2025-26 slccbruins.com roster (12 MFs of 37, up from 10 — the roster "
+                         "grew mid-season, adding Truman Benson and redshirt freshman Aboyke Bikyeombe). The roster "
+                         "publishes no previous-school column, so the existing classification is retained. 5 clear "
+                         "before Olivier's August 2027 arrival (including one redshirt sophomore); 7 return as "
+                         "sophomores that year.",
+        ),
+        'college_of_southern_idaho': dict(
+            mf_total=8, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=[],
+            rising_sr=[], rising_jr=[], returning=8,
+            recruit_risk='Low',
+            pathway_note="Re-read on the live 2026-27 athletics.csi.edu roster (8 confirmed midfield-capable of "
+                         "27, down from 10 — every one of the 8 is a true freshman, zero returning sophomores from "
+                         "last year's group). The roster publishes no previous-school column. Zero MFs clear before "
+                         "Olivier's August 2027 arrival — an entirely fresh, entirely returning group.",
+        ),
+        'colorado_northwestern_cc': dict(
+            mf_total=9, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Jordan Nunez-Alley (So·M)'],
+            rising_sr=[], rising_jr=[], returning=8,
+            recruit_risk='High',
+            pathway='Freshman-friendly',
+            pathway_note="First real position data captured for this school — the 2026-27 roster (checked live "
+                         "2026-08-17) is fully populated (9 midfield-capable of 23, including one M/F hybrid and "
+                         "one D/M hybrid, all counted per this campaign's hybrid-position convention). All "
+                         "hometown entries show direct signings, no prior college, so Freshman-friendly. Only 1 "
+                         "sophomore clears before Olivier's August 2027 arrival; 8 freshmen return as sophomores "
+                         "that year.",
+        ),
+        'usu_eastern': dict(
+            mf_total=13, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Theo Luis (So·MF)', 'Luis Velasco Perez (So·MF)', 'Mac Jensen (So·MF)', 'Ethan Green (So·MF)'],
+            rising_sr=[], rising_jr=[], returning=9,
+            recruit_risk='High',
+            pathway_note="First real position data captured for this school — the 2026-27 roster (checked live "
+                         "2026-08-17) is fully populated (13 MFs of 35). The roster publishes no previous-school "
+                         "column. 4 sophomores clear before Olivier's August 2027 arrival; 9 freshmen return as "
+                         "sophomores that year.",
+        ),
+        'truckee_meadows_cc': dict(
+            mf_total=11, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Salvador Anguiano (So·M)'],
+            rising_sr=[], rising_jr=[], returning=10,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 tmcclizards.com roster (11 midfield-capable of 27, up from "
+                         "8, including three F/M hybrids and one D/M hybrid). The roster publishes no "
+                         "previous-school column. Only 1 sophomore clears before Olivier's August 2027 arrival; 10 "
+                         "freshmen return as sophomores that year — a very crowded incoming group.",
+        ),
     },
     # ═══ ROSTER REFRESH CAMPAIGN BATCH 3 (2026-08-16) ═══════════════════════
     # 13 non-JUCO schools never previously attempted (CLAUDE.md 6C Batch 3).

@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.01 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch I: NJCAA gap-fill Region 18 (Change Type 3)
+
+Sub-batch I covers all 8 Region 18 (Utah/Idaho/Nevada/Washington) gap-fill JUCOs, added v44.83: `slcc`, `snow_college`, `north_idaho_college`, `college_of_southern_idaho`, `colorado_northwestern_cc`, `usu_eastern`, `truckee_meadows_cc`, `pacific_northwest_christian_college`. All researched live via Claude-in-Chrome per RULE 0.
+
+**A real extraction bug was caught and fixed mid-session.** `slcc`'s roster listed a redshirt sophomore ("Braxton Bergholm... Redshirt Sophomore") that a naive `^(Freshman|Sophomore|Junior|Senior)` regex missed entirely, because "Redshirt Sophomore" doesn't start with one of those four words. Widened to match `(Redshirt\s+)?(Freshman|...)` anywhere in the class-year line for the rest of this sub-batch — this also surfaced a second player ("Aboyke Bikyeombe... Redshirt Freshman") who wasn't in the stored data at all.
+
+**3 confirmed genuinely unchanged**: `snow_college`, `north_idaho_college` (both exact matches). `pacific_northwest_christian_college`'s new "2026" roster is a near-total roster reset — 9 of 13 players carry no position at all, and the two previously-confirmed midfielders are no longer listed — too incomplete to use, so the confirmed 2025-26 data stands.
+
+**3 had real churn**: `slcc` (10→12 MFs, the redshirt-catch above), `college_of_southern_idaho` (10→8 MFs — a striking finding: the new group is entirely true freshmen, zero returning sophomores from the prior cohort), `truckee_meadows_cc` (8→11 MFs).
+
+**2 more `available:false`→`true` flips** — `colorado_northwestern_cc` (9 MFs) and `usu_eastern` (13 MFs) both published real position data for the first time. The stray-key cleanup from v44.97/v44.98 was applied to both in the same edit as the patch, before running the validator, and it passed clean on the first try.
+
+All 8 coaches spot-checked and confirmed unchanged: Mark Davis, Lewis Wilson, Brad Williams, Alex Ferreira, Dave Brown, Bruce Palmbaum, Kyle Kelly, Maximus VanEaton.
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged). `validate_consistency.js`: **Issues: 0** on the first run. Local browser-verified (`olivier-guide`, port 8787): `usu_eastern`'s card confirmed against the computed value exactly (Fit 45%, 13 MFs, `available:true`). No console errors beyond expected offline favicon 404s.
+
+Files: `data/juco.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status).
+
 ### v45.00 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch H: NJCAA gap-fill Regions 16/17/19/20 (Change Type 3)
 
 Sub-batch H groups the remaining small regions together: `crowder_college`, `jefferson_college_mo` (Region 16), `central_georgia_tech` (Region 17), `harcum_college` (Region 19), `hagerstown_cc`, `harford_cc` (Region 20). All 6 researched live via Claude-in-Chrome per RULE 0.

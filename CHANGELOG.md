@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.96 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch D: NJCAA gap-fill Region 6 (Change Type 3)
+
+Sub-batch D covers the 3 new Region 6 (Kansas) gap-fill schools, added v44.75: `coffeyville_cc`, `garden_city_cc`, `seward_county_cc`. All researched live via Claude-in-Chrome per RULE 0.
+
+**All 3 confirmed genuinely unchanged.** `coffeyville_cc`'s live 2026-27 roster matched the 3 stored cleared midfielders exactly. `garden_city_cc` and `seward_county_cc` both still show an empty 2026-27 page (no new season roster published yet), so their stored 2025-26 data was re-verified against the live 2025-26 page instead — both exact matches, including a full 20-of-20 name-set match at `seward_county_cc` (its large squad, verified by set comparison rather than eyeballing an ordered list). All 3 coaches (Steven Harrison, Oscar Zelaya, Jaime Beltran) confirmed unchanged via their official bio pages.
+
+No score or trajectory changes this sub-batch — only re-check notes appended, confirming the data holds up under scrutiny.
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Local browser-verified (`olivier-guide`, port 8787): all 3 schools' `fitOlivier` confirmed unchanged from the pre-session stored values (45/50/52). No console errors beyond expected offline favicon 404s.
+
+Files: `data/juco.json`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status).
+
 ### v44.95 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch C: NJCAA gap-fill Region 4 + Region 5 (Change Type 3)
 
 Sub-batch C covers Region 4 (Chicago City Colleges, added v44.74) and Region 5 (Texas, added v44.73): `truman_college`, `daley_college`, `malcolm_x_college`, `kennedy_king_college`, `wilbur_wright_college`, `hill_college`, `western_texas`. All researched live via Claude-in-Chrome per RULE 0.

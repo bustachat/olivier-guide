@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.94 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch B: NJCAA gap-fill Region 2 (Change Types 2 & 3)
+
+Sub-batch B covers Region 2 (Oklahoma/Arkansas, added v44.72–v44.73): `eastern_oklahoma_state`, `connors_state`, `neo_am`, `rose_state`, `national_park`, `rich_mountain`. All 6 researched live via Claude-in-Chrome per RULE 0.
+
+**All 6 schools' roster facts are genuinely unchanged** — a rarer, useful confirmation for this campaign, since it proves the original add-time research holds up under a real re-check rather than always finding drift:
+- `eastern_oklahoma_state`: already on a fully-published 2026-27 roster; all 10 midfielder names and the So/Fr split matched stored data exactly.
+- `rose_state`: still on 2025-26 (no 2026-27 roster yet); all 10 midfielder names, including the one player with no listed class year, matched exactly.
+- `connors_state`: still on 2025-26 (2026-27 URL returns "not currently set to be published"); the 3 stored midfielders matched exactly.
+- `national_park`: the old 2025-26 roster URL now 404s (site has moved on) and the new 2026-27 page is published but empty — nothing to re-verify against, so the stored 2025-26 facts stand; noted in `trajectoryNote`.
+- `rich_mountain`: re-confirmed still `available:false` — the 2025-26 roster is unchanged, still only marking its 3 goalkeepers with a position and leaving the other 25 players blank; the 2026-27 page is published but entirely empty.
+
+**Two real coach changes found, both Change Type 2, neither moving from a roster refresh:**
+- **`connors_state`**: the head-coaching vacancy flagged in CLAUDE.md (founding coach Adam Skolnick departed May 2026) has been filled by **Steve Moore** — 20+ years of collegiate coaching, founding head coach at Indiana University East (7 seasons, conference tournament appearances all 7) plus stops at Clarke University, Bethany College, and Concordia University Chicago. Scored fresh against §5d (Pillar A: substantial breadth across four head-coaching stops, all lower-division, no D1 stop; Pillar B: real but unspecific — "several student-athletes advanced to professional playing careers" with no names or counts) at **52** (mid rk-solid), replacing the 38-point vacancy placeholder. Full contact info now populated. Triggered a **full re-rank of all 170 coaches** — done via an in-place `rank`/`rankClass` update that preserves the file's existing array order (an initial full `sort()` of the array was caught and reverted before commit — it would have reordered all 170 entries and produced a 5,300-line diff for what should be a ~130-line change).
+- **`neo_am`**: Tyler Douthitt's "Interim" head-coach tag, applied one day before the original research (Aug 10, 2026), has been dropped on the school's own coaches page as of this re-check (Aug 17) — now titled plain "Head Coach." `overallScore` deliberately **not** re-evaluated: still no independent head-coaching results to weigh (a season, wins/losses), so the original conservative §5d read still applies; the entry explicitly says to re-score once a real track record exists, and one week isn't that.
+
+`validate_schools.py`: 0 errors, 24 warnings (down from 25 — `connors_state`'s previously-null contact info is now populated, clearing that warning). `validate_consistency.js`: **Issues: 0**. Local browser-verified (`olivier-guide`, port 8787): both coach records confirmed live via `getCoach()` with correct name/title/rank/score; all 170 ranks confirmed sequential 1–170 with no duplicates; Connors State's card in the Coaches & Staff Rankings tab confirmed rendering at rank #153. No console errors beyond expected offline favicon 404s.
+
+Files: `data/coaches.json`, `data/juco.json`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status).
+
 ### v44.93 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch A: NJCAA gap-fill Region 1 (Change Type 3)
 
 Kicks off Batch 5 of the roster refresh campaign — re-verifying the NJCAA DI Gap-Fill campaign's 56 schools (added v44.71–v44.85), which carried accurate data from add time but have never been re-checked since. Corrects a stale figure along the way: the `project-roster-refresh-campaign` memory and CLAUDE.md §6C both said "39" schools; a direct count against `data/juco.json` (56 pre-campaign JUCOs subtracted from 89 total JUCOs) puts the real figure at 56. Working sub-batches oldest-added first, by NJCAA region.

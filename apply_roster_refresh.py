@@ -533,6 +533,32 @@ PATCHES = {
                          "Only 2 sophomores clear before Olivier's August 2027 arrival; 8 freshmen return as "
                          "sophomores that year.",
         ),
+
+        # ═══ ROSTER REFRESH CAMPAIGN BATCH 5, SUB-BATCH H (2026-08-17) ═══════
+        # Regions 16, 17, 19, 20 grouped together (small remaining regions).
+        # jefferson_college_mo, harcum_college, hagerstown_cc, central_georgia_tech
+        # all re-verified with EXACT matches — no patches needed for those 4.
+        'crowder_college': dict(
+            mf_total=8, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Paul Reh (So·C)', 'Cayden Leavitt (So·C)', 'Elian Hinojoza (So·C)', 'Axel Vasquez (So·C)'],
+            rising_sr=[], rising_jr=[], returning=4,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 crowderathletics.com roster (8 MFs of 30, up from 6). The "
+                         "roster publishes no previous-school column, so the existing classification is retained. "
+                         "4 sophomores clear before Olivier's August 2027 arrival; 4 freshmen return as sophomores "
+                         "that year.",
+        ),
+        'harford_cc': dict(
+            mf_total=5, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Otávio Trevisan (So·M)', 'Mani Awah (So·M)'],
+            rising_sr=[], rising_jr=[], returning=3,
+            recruit_risk='Medium',
+            pathway_note="A genuinely new roster class — the site published a fresh '2026' (2026-27) roster with "
+                         "a mostly turned-over squad (5 confirmed MFs of 29, 5 more players with no position "
+                         "listed yet, down from 10 MFs the prior season). The roster publishes no previous-school "
+                         "column, so the existing classification is retained. 2 sophomores clear before Olivier's "
+                         "August 2027 arrival; 3 freshmen return as sophomores that year.",
+        ),
     },
     # ═══ ROSTER REFRESH CAMPAIGN BATCH 3 (2026-08-16) ═══════════════════════
     # 13 non-JUCO schools never previously attempted (CLAUDE.md 6C Batch 3).

@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.00 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch H: NJCAA gap-fill Regions 16/17/19/20 (Change Type 3)
+
+Sub-batch H groups the remaining small regions together: `crowder_college`, `jefferson_college_mo` (Region 16), `central_georgia_tech` (Region 17), `harcum_college` (Region 19), `hagerstown_cc`, `harford_cc` (Region 20). All 6 researched live via Claude-in-Chrome per RULE 0.
+
+**4 confirmed genuinely unchanged**: `jefferson_college_mo` (6 MFs, exact match), `harcum_college` (5 MFs, exact match), `hagerstown_cc` (8 MFs, exact match), `central_georgia_tech` (required finding the correct URL — the stored `url` field points at `/sports/msc`, a landing shell with no roster link resolvable via that path prefix; the real roster lives at `/sports/msoc/2026-27/roster`, 3 MFs, exact match).
+
+**2 had real churn**: `crowder_college` (6→8 MFs, fit 48→46). `harford_cc` is the most significant find of this sub-batch — its site uses **calendar-year, not academic-year, roster URLs** (`/roster/2026`, not `/2026-27/roster`), and a completely new "2026" roster has been published with a near-total squad turnover: 10→5 confirmed midfielders, plus 5 more players with no position listed yet. Fit 44→40.
+
+All 6 coaches spot-checked and confirmed unchanged: Hunter Gilliam, Luke Schlichting, David Hughes, Joe Mills, Bill Wardle, Elvar Gudjonsson.
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Local browser-verified (`olivier-guide`, port 8787): `harford_cc`'s card confirmed against the computed value exactly (Fit 40%, 5 MFs). No console errors beyond expected offline favicon 404s.
+
+Files: `data/juco.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status).
+
 ### v44.99 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch G: NJCAA gap-fill Region 14 (Change Type 3)
 
 Sub-batch G covers the 4 Region 14 (Texas) gap-fill JUCOs, added v44.81: `paris_jc`, `jacksonville_college`, `northeast_texas_cc`, `texas_southmost`. All researched live via Claude-in-Chrome per RULE 0.

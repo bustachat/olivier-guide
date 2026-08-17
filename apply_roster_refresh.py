@@ -373,6 +373,56 @@ PATCHES = {
                          "on last year's roster and hasn't been updated for the new numbers yet. Only 1 of the "
                          "18 current midfielders clears before Olivier arrives — a very crowded incoming group.",
         ),
+
+        # ═══ ROSTER REFRESH CAMPAIGN BATCH 5, SUB-BATCH A (2026-08-17) ═══════
+        # First re-verification pass on the NJCAA gap-fill campaign's Region 1
+        # schools (added v44.71) — accurate day-one data, unverified since.
+        # facts_only=True here: trajectory is recomputed afterward for all
+        # available JUCOs via `python apply_roster_refresh.py juco-recalibrate`
+        # (the real juco_trajectory_for() formula, v44.92), not the old 4-year
+        # table this branch would otherwise call.
+        'yavapai_college': dict(
+            mf_total=11, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Angelo Rana (So·M)', 'David Marku (So·M)', 'Louis Heising (So·M)', 'Lukas Pino (So·M)'],
+            rising_sr=[], rising_jr=[], returning=7,
+            recruit_risk='High',
+            pathway='Freshman-friendly',
+            pathway_note="Re-read on the live 2026-27 ycathletics.com roster (11 MFs of 27, up from 8 the prior "
+                         "season) — the new coaching staff's first full recruiting class, now fully published. "
+                         "None of the 11 current midfielders list a prior college in the hometown/high-school "
+                         "column, including several international signings (Australia, Argentina, Switzerland, "
+                         "Italy), so this moves from 'Mixed' to a clean Freshman-friendly read. Only 4 sophomores "
+                         "clear before Olivier's August 2027 arrival; 7 freshmen return as sophomores that year, "
+                         "a much more competitive picture than the prior season's fully-cleared roster.",
+        ),
+        'eastern_arizona': dict(
+            mf_total=8, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Rashid Shrouki (So·M)', 'Jose Navarro (So·M)', 'Mouad Idboufous (So·M)',
+                     'Kendall Nelson (So·M)', 'Samuel Murcia (So·M)'],
+            rising_sr=[], rising_jr=[], returning=3,
+            recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 eacmonsters.com roster (8 MFs of 25, down from 11 the "
+                         "prior season — a smaller but now fully-populated group). None of the 8 list a prior "
+                         "college; the midfield is still built entirely from direct international and local "
+                         "signings, so Freshman-friendly is reconfirmed. 5 sophomores clear before Olivier "
+                         "arrives, leaving 3 freshmen behind them.",
+        ),
+        'csn_college': dict(
+            mf_total=6, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Matias Martinez (So·CM)', 'Juan Marco Guerrero (So·M)'],
+            rising_sr=[], rising_jr=[], returning=4,
+            recruit_risk='Medium',
+            pathway_note="Re-read on the live 2026-27 csncoyotes.com roster (6 confirmed central midfielders of "
+                         "25, up slightly from 5 the prior season; 3 wide RW players and 3 hybrid F/M players "
+                         "excluded as before). All 6 are Las Vegas-area high school signings with no prior "
+                         "college, so Freshman-friendly is reconfirmed. 2 sophomores clear before Olivier "
+                         "arrives; 4 freshmen return, a tighter picture than the prior season's fully-cleared "
+                         "roster.",
+        ),
+        # community_christian_college: re-checked live (2025-26 is still the newest published season, no
+        # 2026-27 roster yet) — all 13 players still show "Freshman" with no position or hometown field at
+        # all, byte-identical to the original finding. Stays available:false; no patch needed. See the
+        # available:false note update applied directly to data/juco.json in the same commit.
     },
     # ═══ ROSTER REFRESH CAMPAIGN BATCH 3 (2026-08-16) ═══════════════════════
     # 13 non-JUCO schools never previously attempted (CLAUDE.md 6C Batch 3).

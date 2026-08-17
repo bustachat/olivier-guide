@@ -6,6 +6,31 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.93 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch A: NJCAA gap-fill Region 1 (Change Type 3)
+
+Kicks off Batch 5 of the roster refresh campaign — re-verifying the NJCAA DI Gap-Fill campaign's 56 schools (added v44.71–v44.85), which carried accurate data from add time but have never been re-checked since. Corrects a stale figure along the way: the `project-roster-refresh-campaign` memory and CLAUDE.md §6C both said "39" schools; a direct count against `data/juco.json` (56 pre-campaign JUCOs subtracted from 89 total JUCOs) puts the real figure at 56. Working sub-batches oldest-added first, by NJCAA region.
+
+Sub-batch A covers Region 1 (Arizona/Nevada, added v44.71): `yavapai_college`, `eastern_arizona`, `csn_college`, `community_christian_college`. All 4 researched live via Claude-in-Chrome per RULE 0, using the `[...row.children]` extraction pattern (Sidearm tables with a `<th>` name cell, not `<td>`) and the card-based `.sidearm-roster-player` pattern for CSN.
+
+**3 of 4 had genuine churn** — all had been added off a 2026-27 roster that was still mid-publication at add time (each note said so); a week later all three are now fully populated with real, different numbers:
+- `yavapai_college`: mf_total 8→11, cleared 8→4 (new coaching staff's first full recruiting class — 7 of 11 MFs are freshmen who return in 2027-28, vs. the prior fully-cleared read). Fit 49→46.
+- `eastern_arizona`: mf_total 11→8, cleared 11→5. Fit 62→59.
+- `csn_college`: mf_total 5→6 (position coding also shifted slightly, still counting only pure CM/M, excluding wide and hybrid F/M players as before), cleared 5→2. Fit 62→60.
+
+All three `recruit_pathway` reconfirmed/reclassified to Freshman-friendly — none of the fresh rosters' hometown/high-school columns show a prior college. `community_christian_college` was re-checked and is genuinely still unpublished: the 2025-26 roster (still the newest season on the site) shows the identical 13 "Freshman"-only entries with no position field anywhere, on both the card listing and an individual player bio page — stays `available:false`, note updated to record the 2026-08-17 re-check rather than left silently unconfirmed.
+
+**JUCO trajectory used the real v44.92 formula, not the old table.** The 3 refreshed schools were patched via `apply_roster_refresh.py`'s `facts_only` branch (updates counts/names/roster_season, leaves trajectory alone), then `python apply_roster_refresh.py juco-recalibrate` was re-run to recompute trajectory for every available JUCO from the documented `juco_opportunity_score()`/`juco_yr1()` formula — confirmed idempotent (all 74 previously-processed schools reproduced byte-identical before/after values; only the 3 newly-updated schools' trajectories moved).
+
+**A real gap in the tooling was caught by the Phase 5 browser check, not by any validator.** `apply_roster_refresh.py`'s patch flow updates `recruit_pathway_note` from the `pathway_note` key but never touches `minutesOutlook.trajectoryNote` — a separate, hand-authored field that renders verbatim on the live Minutes Outlook card. After the script ran, `yavapai_college`'s card still told visitors the 2026-27 roster was "only 60% populated... too incomplete to use," a week after that exact roster had been fully re-verified. Fixed by hand for all 3 refreshed schools in the same commit; flagged in CLAUDE.md §6C as a standing gotcha for every future refresh, since no validator reads this field against `roster_season` to catch the next instance.
+
+Coach spot-check (Change Type 3 rule, v44.88) run for all 4 schools via each school's own `/coaches` page: 3 of 4 confirmed exact matches (Giorgi Manzula, Abe Tizaf, Jocelyn Roach). `community_christian_college`'s Gabriel Mauries had a stale `title` ("Head Coach" vs. the live site's "Head Coach Men's Soccer") — corrected in `coaches.json`; no `overallScore` change, so no re-rank needed.
+
+`validate_schools.py`: 0 errors, 25 warnings (unchanged baseline). `validate_consistency.js`: **Issues: 0**. Local browser-verified (`olivier-guide`, port 8787): Yavapai's card confirmed against the computed value exactly (Fit 46%, Minutes 57); the Minutes Outlook tab confirmed the corrected `trajectoryNote` text renders live for all 3 refreshed schools; `community_christian_college` confirmed still correctly sitting in the unavailable section. No console errors beyond expected offline favicon 404s.
+
+**Remaining Batch 5 scope (~52 schools):** Region 2 (OK/AR, 8 schools: `eastern_oklahoma_state`, `connors_state`, `neo_am`, `rose_state`, `national_park`, `rich_mountain`, and the 2 in `noc_enid`/none — actually 6: see CLAUDE.md School→File table), Region 4 (5, Chicago), Region 5 (2), Region 6 (3 new: `coffeyville_cc`, `garden_city_cc`, `seward_county_cc`), Region 9 (9: Wyoming + Nebraska/Colorado), Region 10 (4, USC campuses), Region 14 (4, Texas), Region 16 (2), Region 17/19/20 (5), Region 18 (8, Utah/Idaho), Region 24 (3). Two untracked scratch files (`rosters_s2.json`, `survey_juco.json`) still sit in the repo root, unrelated to this campaign — not actioned, per standing instruction to ask the owner before deleting.
+
+Files: `data/juco.json`, `data/coaches.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status, new tooling-gap flag).
+
 ### v44.92 (2026-08-16) — Batch 6: JUCO trajectory calibration campaign — closes the CLAUDE.md §6E open item
 
 Builds and rolls out a real JUCO-specific opportunity→trajectory formula, replacing the ad hoc/undocumented values every JUCO trajectory had carried since v26. Owner-approved (this was a scoring-model design decision, not a data refresh) after a calibration investigation found there was no clean formula to reverse-engineer — see CLAUDE.md §14 for the full history.

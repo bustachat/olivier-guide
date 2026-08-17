@@ -423,6 +423,25 @@ PATCHES = {
         # 2026-27 roster yet) — all 13 players still show "Freshman" with no position or hometown field at
         # all, byte-identical to the original finding. Stays available:false; no patch needed. See the
         # available:false note update applied directly to data/juco.json in the same commit.
+
+        # ═══ ROSTER REFRESH CAMPAIGN BATCH 5, SUB-BATCH C (2026-08-17) ═══════
+        # Region 4 (Chicago City Colleges) + Region 5 (Texas). All 5 Region 4
+        # schools (truman_college, daley_college, malcolm_x_college,
+        # kennedy_king_college, wilbur_wright_college) and hill_college in
+        # Region 5 were re-verified with EXACT matches to stored data — no
+        # patches needed for those 6. Only western_texas had real churn.
+        'western_texas': dict(
+            mf_total=8, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Andonie Bobadilla (So·M)', 'Jorge Cruz (So·M)', 'Isai Camacho (So·M)'],
+            rising_sr=[], rising_jr=[], returning=5,
+            recruit_risk='High',
+            pathway='Mixed',
+            pathway_note="Re-read on the live 2026-27 wtcathletics.com roster (8 MFs of 29, up from 7 the prior "
+                         "season). Andonie Bobadilla and Jorge Cruz — freshmen midfielders on last year's roster — "
+                         "have returned as sophomores exactly as projected. The hometown column shows only cities, "
+                         "no previous-school data, so Mixed is retained rather than re-derived. 3 sophomores clear "
+                         "before Olivier's August 2027 arrival; 5 freshmen return as sophomores that year.",
+        ),
     },
     # ═══ ROSTER REFRESH CAMPAIGN BATCH 3 (2026-08-16) ═══════════════════════
     # 13 non-JUCO schools never previously attempted (CLAUDE.md 6C Batch 3).

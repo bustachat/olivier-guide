@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.95 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch C: NJCAA gap-fill Region 4 + Region 5 (Change Type 3)
+
+Sub-batch C covers Region 4 (Chicago City Colleges, added v44.74) and Region 5 (Texas, added v44.73): `truman_college`, `daley_college`, `malcolm_x_college`, `kennedy_king_college`, `wilbur_wright_college`, `hill_college`, `western_texas`. All researched live via Claude-in-Chrome per RULE 0.
+
+**New extraction method documented for the Region 4 schools.** `region4sports.com` (the NJCAA Region 4 results site used at add time) is a stats site, not a dedicated roster page — the roster with position/class data lives behind the team page's "Lineup" tab (`?view=lineup` in the URL, landing on a table with `NO./NAME/YR/POS` headers). Confirmed `citycollegesofchicagoathletics.com` is still dead (GoDaddy lander), matching the v44.74 finding.
+
+**6 of 7 schools' roster facts are genuinely unchanged, all exact name-for-name matches:** `truman_college` (9 MFs), `daley_college` (11 MFs), `kennedy_king_college` (6 MFs), `wilbur_wright_college` (6 MFs), `hill_college` (9 MFs, including all hybrid position codes). `malcolm_x_college` re-confirmed still genuinely `available:false` — all 25 players still carry zero position/class data. Two of the confirmations were independently corroborated via a public web search (Truman's Maciej Orlowski cited earning his third straight Region 4 Coach of the Year in a December 2025 article; Daley's Chris Johnson confirmed via multiple current recruiting-site listings).
+
+**`western_texas` had real, predictable churn:** the 2026-27 roster (fully published) shows 8 midfielders, up from 7 — and critically, **Andonie Bobadilla and Jorge Cruz, who were freshmen on last year's stored roster, now show as sophomores**, exactly the progression the prior season's projection implied. 3 sophomores now clear before Olivier's August 2027 arrival; 5 freshmen return. `fitOlivier` 61→58.
+
+**The `trajectoryNote` tooling gap flagged in v44.93 recurred and was caught again** — a script run updating multiple schools' notes crashed partway through (a missing-key error on `malcolm_x_college`, which uses `reason` instead of `note` in its schema, since it's `available:false`) before reaching the file write, silently discarding several already-computed note updates. Caught by explicitly re-verifying every touched school's note field for the "Re-checked" marker after the script ran, rather than trusting the script's print output — re-ran the missed writes individually. Worth remembering: **a Python script that prints success for every item but crashes before its own file-write line has written nothing at all.**
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Local browser-verified (`olivier-guide`, port 8787): Western Texas's card confirmed against the computed value exactly (Fit 58%, mf_total 8). No console errors beyond expected offline favicon 404s.
+
+Files: `data/juco.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status).
+
 ### v44.94 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch B: NJCAA gap-fill Region 2 (Change Types 2 & 3)
 
 Sub-batch B covers Region 2 (Oklahoma/Arkansas, added v44.72–v44.73): `eastern_oklahoma_state`, `connors_state`, `neo_am`, `rose_state`, `national_park`, `rich_mountain`. All 6 researched live via Claude-in-Chrome per RULE 0.

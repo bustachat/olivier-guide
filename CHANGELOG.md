@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.98 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch F: NJCAA gap-fill Region 10 (Change Type 3)
+
+Sub-batch F covers the 4 Region 10 (South Carolina, USC regional campuses) gap-fill JUCOs, added v44.80: `usc_lancaster`, `usc_salkehatchie`, `usc_sumter`, `usc_union`. All researched live via Claude-in-Chrome per RULE 0.
+
+**`usc_salkehatchie` and `usc_union` confirmed genuinely unchanged** (4 and 8 MFs, exact matches — `usc_salkehatchie`'s real roster lives at a separate "Visual Roster" URL, not the generic `/roster` landing page which only shows news/schedule). **`usc_sumter` had real churn** (8→10 MFs, fit 54→50).
+
+**`usc_lancaster` is this sub-batch's `available:false`→`true` flip** — its 2026-27 roster (checked live) is now fully populated with real position data for the first time (8 MFs of 35, all with no prior-college signal in the hometown column, so Freshman-friendly). Applied the same stray-key cleanup the v44.97 flip required (`note`/`reason` removed, `trajectoryNote` added) — this time proactively, and it validated clean on the first run rather than needing a second pass to catch a MO-KEYS error.
+
+All 4 coaches spot-checked and confirmed unchanged: Kenny Halas, William Glass, Adam Howarth, Marc Curlee.
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged). `validate_consistency.js`: **Issues: 0** (first run, no re-fix needed this time). Local browser-verified (`olivier-guide`, port 8787): `usc_lancaster`'s card confirmed against the computed value exactly (Fit 50%, 8 MFs, `available:true`). No console errors beyond expected offline favicon 404s.
+
+Files: `data/juco.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status).
+
 ### v44.97 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch E: NJCAA gap-fill Region 9 (Change Type 3)
 
 Sub-batch E covers all 9 Region 9 (Wyoming/Nebraska/Colorado) gap-fill JUCOs, added v44.77/v44.79: `casper_college`, `northwest_college`, `central_wyoming`, `laramie_county_cc`, `gillette_college`, `western_nebraska_cc`, `lamar_cc`, `trinidad_state`, `northeastern_junior_college`. All researched live via Claude-in-Chrome per RULE 0 — the largest single sub-batch of this campaign so far.

@@ -508,6 +508,31 @@ PATCHES = {
                          "sophomore clears before Olivier's August 2027 arrival; 5 freshmen return as sophomores "
                          "that year — a much tighter picture than the prior season.",
         ),
+
+        # ═══ ROSTER REFRESH CAMPAIGN BATCH 5, SUB-BATCH F (2026-08-17) ═══════
+        # Region 10 (USC regional campuses). usc_salkehatchie and usc_union
+        # both re-verified with EXACT matches — no patches needed for those 2.
+        'usc_lancaster': dict(
+            mf_total=8, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Filippo Minardi (So·MF)', 'Noah Gerbasi (So·MF)'],
+            rising_sr=[], rising_jr=[], returning=6,
+            recruit_risk='High',
+            pathway='Freshman-friendly',
+            pathway_note="First real position data captured for this school — the 2026-27 roster (checked live "
+                         "2026-08-17) is fully populated (8 MFs of 35). All hometown/high-school entries show "
+                         "direct high-school signings, no prior college, so Freshman-friendly. Only 2 sophomores "
+                         "clear before Olivier's August 2027 arrival; 6 freshmen return as sophomores that year.",
+        ),
+        'usc_sumter': dict(
+            mf_total=10, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Florian Pignot (So·M)', 'Brian Arias (So·M)'],
+            rising_sr=[], rising_jr=[], returning=8,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 uscfireants.com roster (10 MFs of 20, up from 8). The "
+                         "roster publishes no previous-school column, so the existing classification is retained. "
+                         "Only 2 sophomores clear before Olivier's August 2027 arrival; 8 freshmen return as "
+                         "sophomores that year.",
+        ),
     },
     # ═══ ROSTER REFRESH CAMPAIGN BATCH 3 (2026-08-16) ═══════════════════════
     # 13 non-JUCO schools never previously attempted (CLAUDE.md 6C Batch 3).

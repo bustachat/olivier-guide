@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v44.97 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch E: NJCAA gap-fill Region 9 (Change Type 3)
+
+Sub-batch E covers all 9 Region 9 (Wyoming/Nebraska/Colorado) gap-fill JUCOs, added v44.77/v44.79: `casper_college`, `northwest_college`, `central_wyoming`, `laramie_county_cc`, `gillette_college`, `western_nebraska_cc`, `lamar_cc`, `trinidad_state`, `northeastern_junior_college`. All researched live via Claude-in-Chrome per RULE 0 — the largest single sub-batch of this campaign so far.
+
+**3 schools genuinely unchanged**: `northwest_college` (9 MFs, exact match, required extracting from a card layout with no `.sidearm-roster-player` class — parsed via the "View More" card text directly), `trinidad_state` (3 MFs, exact match — its fresh 2026-27 page was only 24% position-populated and therefore unusable, so verification fell back to re-confirming 2025-26), `lamar_cc` (still genuinely `available:false` — 30 players, zero position data on 2025-26, 2026-27 page published but empty). `central_wyoming` was also re-confirmed still genuinely `available:false`, but for a different, confirmed reason this time: all 48 players on the fresh 2026-27 roster publish an explicit blank position cell (extraction required noticing an extra hidden leading `<td>` shifting every column index by one — a new layout quirk for this host).
+
+**4 schools had real churn**: `casper_college` (9→8 MFs, fit 51→47), `laramie_county_cc` (12→13 MFs, fit 48→44), `gillette_college` (6→8 MFs, fit 48→45), `northeastern_junior_college` (7→6 MFs, fit 47→43).
+
+**`western_nebraska_cc` is the first true `available:false`→`true` flip of this campaign** — its fresh 2026-27 roster is the first ever to publish real position data (9 midfield-capable players, using this school's detailed tactical position codes: MF/CM/CAM/W-MF hybrids, all counted as midfield-capable per this campaign's established hybrid-position convention). Fit moved 42→47.
+
+**A real MO-KEYS validator error was caught and fixed before commit.** The `western_nebraska_cc` flip left the record with a `trajectoryNote` (correct, for `available:true`) *and* the orphaned `note`/`reason` fields from its prior `available:false` state (the patch script sets `available:true` and adds the new keys but doesn't clean up the old ones) — `validate_consistency.js` correctly flagged both as unknown keys ("misnamed keys render as literal 'undefined'"). Fixed by deleting the two stale keys; re-ran to confirm `Issues: 0`.
+
+All 5 coaches with real roster changes were also spot-checked and confirmed unchanged: Ben McArthur, Rob Hill, Marcus Horwood, Fernando Perez, Spencer Durfee, Eseah Ingram, Tyler Wilt, Alieu Kamara, Hubert Blanco (still titled Interim).
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged). `validate_consistency.js`: **Issues: 0** (after the MO-KEYS fix). Local browser-verified (`olivier-guide`, port 8787): `western_nebraska_cc`'s Minutes Outlook card confirmed rendering correctly with no literal "undefined" anywhere (Fit 47%, 9 MFs, 6 cleared, all 6 names listed). No console errors beyond expected offline favicon 404s.
+
+Files: `data/juco.json`, `apply_roster_refresh.py`, `athletes/olivier.json` (guideVersion), `CLAUDE.md` (§6C batch status).
+
 ### v44.96 (2026-08-17) — Roster refresh campaign Batch 5, Sub-batch D: NJCAA gap-fill Region 6 (Change Type 3)
 
 Sub-batch D covers the 3 new Region 6 (Kansas) gap-fill schools, added v44.75: `coffeyville_cc`, `garden_city_cc`, `seward_county_cc`. All researched live via Claude-in-Chrome per RULE 0.

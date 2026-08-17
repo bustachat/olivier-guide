@@ -442,6 +442,72 @@ PATCHES = {
                          "no previous-school data, so Mixed is retained rather than re-derived. 3 sophomores clear "
                          "before Olivier's August 2027 arrival; 5 freshmen return as sophomores that year.",
         ),
+
+        # ═══ ROSTER REFRESH CAMPAIGN BATCH 5, SUB-BATCH D (2026-08-17) ═══════
+        # Region 6 new schools (coffeyville_cc, garden_city_cc, seward_county_cc)
+        # all re-verified with EXACT matches to stored data — no patches needed.
+
+        # ═══ ROSTER REFRESH CAMPAIGN BATCH 5, SUB-BATCH E (2026-08-17) ═══════
+        # Region 9 (Wyoming/Nebraska/Colorado). northwest_college, trinidad_state,
+        # and lamar_cc (still available:false) all re-verified with EXACT matches
+        # — no patches needed for those 3. central_wyoming re-checked and is
+        # still genuinely available:false (all 48 players on the 2026-27 roster
+        # publish a blank position cell).
+        'casper_college': dict(
+            mf_total=8, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Enoch Joseph (So·M)', 'Kaisei Shibata (So·M)', 'Luca DiGiovanni (So·M)'],
+            rising_sr=[], rising_jr=[], returning=5,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 tbirds.cc roster (8 MFs of 24, down from 9). The roster "
+                         "publishes no previous-school column, so the existing classification is retained rather "
+                         "than re-derived. 3 sophomores clear before Olivier's August 2027 arrival; 5 freshmen "
+                         "return as sophomores that year.",
+        ),
+        'laramie_county_cc': dict(
+            mf_total=13, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Murillo Eric Molina (So·MID)', 'JT Shepperd (So·MID)', 'Sammy Heaney (So·MID)',
+                     'Liam Dols (So·MID)', 'Kyonosuke Chikamoto (So·MID)', 'Francisco Madruga (So·MID)'],
+            rising_sr=[], rising_jr=[], returning=7,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 golccc.com roster (13 MFs of 26, up from 12). The roster "
+                         "publishes no previous-school column, so the existing classification is retained. 6 "
+                         "sophomores clear before Olivier's August 2027 arrival; 7 freshmen return as sophomores "
+                         "that year (including one player listed with a typo'd 'Midfeild' position, folded in).",
+        ),
+        'gillette_college': dict(
+            mf_total=8, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Samuel Nyembwe (So·MID)', 'Oscar Valtierra (So·MID)', 'Duarte Melo (So·MID)'],
+            rising_sr=[], rising_jr=[], returning=5,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 gcpronghorns.com roster (8 MFs of 28, up from 6). The "
+                         "roster publishes no previous-school column, so the existing classification is retained. "
+                         "3 sophomores clear before Olivier's August 2027 arrival; 5 freshmen return as sophomores "
+                         "that year.",
+        ),
+        'western_nebraska_cc': dict(
+            mf_total=9, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['David Ngolo (So·W/MF)', 'Tomoaki Kamiya (So·CAM)', 'Juan Macias (So·MF)',
+                     'Aurele Cuenot (So·MF)', 'Nicolas Selvaggio (So·MF)', 'Giani Nguili (So·MF)'],
+            rising_sr=[], rising_jr=[], returning=3,
+            recruit_risk='Medium',
+            pathway='Freshman-friendly',
+            pathway_note="First real position data captured for this school — the 2026-27 roster (checked live "
+                         "2026-08-17) is fully populated with detailed tactical positions (CM/CAM/W-MF hybrids "
+                         "included as midfield-capable, matching this campaign's convention for hybrid positions "
+                         "elsewhere). All hometown/high-school entries show direct high-school signings, no prior "
+                         "college, so Freshman-friendly. 6 sophomores clear before Olivier's August 2027 arrival; "
+                         "3 freshmen return as sophomores that year.",
+        ),
+        'northeastern_junior_college': dict(
+            mf_total=6, roster_season='2026-27', juco=True, facts_only=True,
+            cleared=['Jayden Denieffe-Kelly (So·MF)'],
+            rising_sr=[], rising_jr=[], returning=5,
+            recruit_risk='High',
+            pathway_note="Re-read on the live 2026-27 gonjc.com roster (6 MFs of 22, down from 7). The roster "
+                         "publishes no previous-school column, so the existing classification is retained. Only 1 "
+                         "sophomore clears before Olivier's August 2027 arrival; 5 freshmen return as sophomores "
+                         "that year — a much tighter picture than the prior season.",
+        ),
     },
     # ═══ ROSTER REFRESH CAMPAIGN BATCH 3 (2026-08-16) ═══════════════════════
     # 13 non-JUCO schools never previously attempted (CLAUDE.md 6C Batch 3).

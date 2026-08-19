@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v45.03 (2026-08-17)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v45.04 (2026-08-19)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -1254,7 +1254,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v45.03 (2026-08-17).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v45.04 (2026-08-19).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1969,9 +1969,17 @@ git push
 ```
 
 ### Skills available
-- `.claude/skills/new-school/SKILL.md` — new school addition checklist
-- `.claude/skills/qa-suite/SKILL.md` — full QA before commit
-- `.claude/skills/add-coach/SKILL.md` — coach add/update (keeps JSON in sync)
+
+All six built and tested against real repo data v45.04 (2026-08-19) — see that CHANGELOG entry for the real bugs each one's testing surfaced. Each `SKILL.md` sequences the matching Change Type from §3a and points at CLAUDE.md by section rather than repeating it, so these don't go stale the way this section itself did (it named these three as if they already existed for who knows how many versions before anyone checked).
+
+- `.claude/skills/qa-suite/SKILL.md` — bundles Phase 4's validation sequence (validate_schools.py, validate_consistency.js, json.tool/node --check on changed files, conditional negtest.py) into one command
+- `.claude/skills/new-school/SKILL.md` — Change Type 1 workflow + a cross-file coverage check (guideSchools/otherSchools, conf-prestige.json, pipeline.json, this file's own School → File Reference Table) that neither validator above covers
+- `.claude/skills/add-coach/SKILL.md` — Change Type 2 workflow + a rank-order/score consistency check and a bio-hygiene sweep (stale embedded emails, hardcoded athlete names — the v44.35/v44.28 bug classes)
+- `.claude/skills/roster-refresh/SKILL.md` — Change Type 3 workflow. `apply_roster_refresh.py` turned out to be a ~1300-line hardcoded campaign log, not a reusable single-school tool — this skill's calculator imports its formula functions directly rather than re-deriving them, and adds arithmetic, JUCO-trajectory-formula, and internal-jargon checks that don't exist anywhere else. Also captures unexpected roster departures to `roster_moves_queue.json` for the next skill.
+- `.claude/skills/transfer-tracking/SKILL.md` — run after a refresh wave (not per-school): a cross-school duplicate-name scan plus a processor for the departure queue above, feeding §5b's `nextLevelOutput` research
+- `.claude/skills/mls-pipeline/SKILL.md` — annual SuperDraft cross-reference against the current roster snapshot and the departure-queue history (kept append-only for exactly this reason)
+
+**A real, unresolved gap all three roster/coach-adjacent skills surfaced:** `coaches.json` has no structured "verified" field anywhere — the word "verified" appears exactly once repo-wide, as free prose inside one `overallScoreNote`. The v44.88 coach spot-check rule (§3a Change Type 3) is real and required, but nothing in the schema can currently prove it happened; today that proof lives only in a session's own commit message. Worth a schema decision (a `verifiedDate` field?) next time this area is touched — not resolved as part of building these skills, deliberately left as a judgment call for the owner (see the `roster-refresh`/`add-coach` skill conversation this was raised in).
 
 ---
 

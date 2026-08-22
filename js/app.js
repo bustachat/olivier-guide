@@ -616,15 +616,17 @@ function renderCards(){
 }
 
 // ── Known-icon overrides ─────────────────────────────────────────────────────
-// A school's real declared <link rel="icon"> sometimes isn't at the default
-// /favicon.ico path (confirmed Tier-1 via a real browser, CLAUDE.md RULE 0) --
-// when known, use it directly rather than guessing or relying on a third-party
-// proxy's degraded rendition of it. tyler_jc (v45.10): apacheathletics.com has
-// no /favicon.ico at all (a genuine 403 there, verified past the CloudFront
-// block); its real icon is this media-path PNG, found via the page's own
-// <link rel="icon"> tag.
+// A school's icon is normally fetched live (favicon.ico or a confirmed real
+// icon URL). Where live fetching can't produce a good result -- a wide non-
+// square banner, a blocked/unreliable host -- a local asset under
+// assets/logos/ is used instead, so the icon always loads instantly and never
+// depends on a third party. tyler_jc (v45.11): apacheathletics.com has no
+// /favicon.ico (403, verified past its CloudFront block) and its real
+// declared icon is a 512x121 banner, not a square mark -- owner supplied the
+// school's actual square Apaches logo directly; stored locally rather than
+// re-fetched from anywhere.
 const ICON_OVERRIDES = {
-  tyler_jc: 'https://apacheathletics.com/media/319af89643-411463289210406312.png',
+  tyler_jc: 'assets/logos/tyler_jc.png',
 };
 
 // ── School emblem logo helper ────────────────────────────────────────────────

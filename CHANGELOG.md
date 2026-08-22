@@ -6,6 +6,30 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.12 (2026-08-22) — Fix: distinct mascot logos for all 5 City Colleges of Chicago schools, correcting 2 wrong mascot names found along the way
+
+Owner-reported, prompted by a separate question about why Duke's modal and card icons differ (answer: by design, two legitimate Duke marks — see that conversation). Following up, owner asked why Truman, Daley, Kennedy-King, Wilbur Wright, and Malcolm X colleges all showed the *exact same* icon everywhere.
+
+**Root cause — structurally different from the `tyler_jc` case (v45.09–v45.11):** all 5 legitimately share `domain: 'ccc.edu'` and `DOMAINS[]: 'region4sports.com'`. City Colleges of Chicago is one district with one central website (no per-college subdomains), and the real per-college athletics domain (`citycollegesofchicagoathletics.com`) has been dead since before this project's own history began. A favicon is fetched at the domain level — five colleges pointing at the same two domains can never look different via live-fetch, regardless of fallback-chain quality. Not fixable by improving fetch logic; only a per-school override can solve it.
+
+**Sourcing, per the owner's suggestion:** rather than continuing to scrape social-media avatars (which had been producing blurry, artifact-ridden crops for `truman_college` in an earlier attempt this session), searched Google Images directly for each college's real mascot logo, then Tier-1 cross-checked each against ≥2 independent sources (the school's own social account, MascotDB.com, Wikipedia's college-mascot list, apparel vendors) before trusting it.
+
+**That verification pass caught two real, pre-existing data errors** — the app was displaying the wrong mascot name for two of the five schools:
+- **Richard J. Daley College** — stored as "(Comets)"; actually the **Bulldogs** (confirmed via the school's own Instagram — "Richie the Bulldog is Daley College's mascot!" — Wikipedia's college-mascot list, and MascotDB.com).
+- **Kennedy-King College** — stored as "(Hawks)"; actually the **Statesmen** (confirmed via @kkcmensbasketball's own "#GoStatesmen", Wikipedia, MascotDB.com, Prep Sportswear's "Kennedy-King Statesmen Apparel"). "Hawks" genuinely belongs to Malcolm X College, the other school in this same batch — both cards claiming the identical mascot simultaneously was itself the signal something was wrong.
+
+Corrected in `data/juco.json` (`full` name) and `data/coaches.json` (both coaches' `school` field, plus the Daley coach's bio text, which referenced "the Comets" by name — same bio-sweep discipline as any Change Type 2 contact correction).
+
+**Added 5 new local assets** under `assets/logos/` (`truman_college.png` 405×405, `daley_college.png`/`kennedy_king_college.png`/`wilbur_wright_college.png`/`malcolm_x_college.png` 200×200 each) and wired them into `ICON_OVERRIDES` (`js/app.js`) — the same mechanism introduced for `tyler_jc` in v45.11, now proven useful for a second, structurally different failure mode (shared domains rather than a wrong/blocked one).
+
+**Verified locally:** all 5 Explore cards and the Daley modal load their own distinct local asset (confirmed via `naturalWidth`/`complete`, not just that a request fired); card headings render the corrected mascot names; no new console errors.
+
+**Files:** `assets/logos/truman_college.png`, `daley_college.png`, `kennedy_king_college.png`, `wilbur_wright_college.png`, `malcolm_x_college.png` (all new), `js/app.js` (`ICON_OVERRIDES`), `data/juco.json` (2 `full` name corrections), `data/coaches.json` (2 `school` field corrections + 1 bio text correction), `CLAUDE.md` (§6D), `athletes/olivier.json` (guideVersion).
+
+`validate_schools.py`: 0 errors, 19 warnings (unchanged — mascot-name corrections don't touch any warning-checked field). `validate_consistency.js`: **Issues: 0**.
+
+---
+
 ### v45.11 (2026-08-22) — Fix: use owner-supplied TJC Apaches logo directly — first local image asset in this project
 
 Three live-fetch attempts in one session, each falling short a different way: v45.08 (contrast-only, didn't touch icon content), v45.09 (swapped onto `tjc.edu`, which turned out to be WordPress's own default icon — caught immediately by the owner via screenshot), v45.10 (`ICON_OVERRIDES` pointed at `apacheathletics.com`'s real declared icon — genuine TJC branding, but a non-square 512×121 banner that still looked sparse in a small square slot). Owner then supplied the school's own official square Apaches logo directly (TJC wordmark + warrior-head mark, 256×256, no transparency) and said to use it as-is — no more searching.

@@ -615,13 +615,26 @@ function renderCards(){
   if(summaryEl) summaryEl.innerHTML = 'Showing all <strong>'+totalCards+'</strong> schools';
 }
 
+// ── Known-icon overrides ─────────────────────────────────────────────────────
+// A school's real declared <link rel="icon"> sometimes isn't at the default
+// /favicon.ico path (confirmed Tier-1 via a real browser, CLAUDE.md RULE 0) --
+// when known, use it directly rather than guessing or relying on a third-party
+// proxy's degraded rendition of it. tyler_jc (v45.10): apacheathletics.com has
+// no /favicon.ico at all (a genuine 403 there, verified past the CloudFront
+// block); its real icon is this media-path PNG, found via the page's own
+// <link rel="icon"> tag.
+const ICON_OVERRIDES = {
+  tyler_jc: 'https://apacheathletics.com/media/319af89643-411463289210406312.png',
+};
+
 // ── School emblem logo helper ────────────────────────────────────────────────
-// Tries the school's own /favicon.ico directly first (v45.06 — Google's s2
-// favicon proxy was found silently failing to serve a real, fetchable icon
-// for 20+ schools; see the icon audit), falls back to Google favicon (64px)
-// if that 404s/errors, then falls back to the coloured text abbreviation if
-// both fail.
+// Tries a known ICON_OVERRIDES entry first, else the school's own /favicon.ico
+// directly (v45.06 — Google's s2 favicon proxy was found silently failing to
+// serve a real, fetchable icon for 20+ schools; see the icon audit), falls
+// back to Google favicon (64px) if that 404s/errors, then falls back to the
+// coloured text abbreviation if both fail.
 function logoUrl(u, size){
+  if(ICON_OVERRIDES[u.id]) return ICON_OVERRIDES[u.id];
   if(!u.domain) return null;
   return 'https://' + u.domain + '/favicon.ico';
 }
@@ -1412,7 +1425,7 @@ const SOCIAL = {
 // Modal logo fallback chain: direct favicon.ico -> Google favicon proxy -> abbreviation text.
 // (v45.06 — same fix as buildEmblemHtml's logoUrl(); see the icon audit.)
 function handleModalLogoError(img, domain){
-  if(img.dataset.stage !== '2'){
+  if(img.dataset.stage !== '2' && domain){
     img.dataset.stage = '2';
     img.src = googleFaviconUrl(domain);
     return;
@@ -1426,9 +1439,10 @@ function buildModalHeader(u){
   const logoEl = document.getElementById('modal-logo');
   const abbrEl = document.getElementById('modal-abbr');
   const domain = DOMAINS[u.id];
-  if(domain){
-    logoEl.innerHTML = `<img src="https://${domain}/favicon.ico" alt="${u.id}"
-      onerror="handleModalLogoError(this,'${domain}')">
+  const iconSrc = ICON_OVERRIDES[u.id] || (domain ? `https://${domain}/favicon.ico` : null);
+  if(iconSrc){
+    logoEl.innerHTML = `<img src="${iconSrc}" alt="${u.id}"
+      onerror="handleModalLogoError(this,'${domain||''}')">
       <span id="modal-abbr" style="display:none;font-size:11px;font-weight:700;color:var(--muted)">${(u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3)}</span>`;
   } else {
     abbrEl.textContent = (u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3);

@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.11 (2026-08-22) — Fix: use owner-supplied TJC Apaches logo directly — first local image asset in this project
+
+Three live-fetch attempts in one session, each falling short a different way: v45.08 (contrast-only, didn't touch icon content), v45.09 (swapped onto `tjc.edu`, which turned out to be WordPress's own default icon — caught immediately by the owner via screenshot), v45.10 (`ICON_OVERRIDES` pointed at `apacheathletics.com`'s real declared icon — genuine TJC branding, but a non-square 512×121 banner that still looked sparse in a small square slot). Owner then supplied the school's own official square Apaches logo directly (TJC wordmark + warrior-head mark, 256×256, no transparency) and said to use it as-is — no more searching.
+
+**This is the first local image asset in this project.** Every icon in the guide has always been fetched live; this establishes a minimal `assets/logos/` convention for the rare case where that genuinely can't work (documented in CLAUDE.md §4, right after the `ICON_OVERRIDES` note added in v45.10).
+
+**Fix:**
+- `assets/logos/tyler_jc.png` (new) — the exact PNG the owner pasted in chat, byte-verified (SHA-256 matched) against the chat attachment before being written to the repo.
+- `js/app.js`: `ICON_OVERRIDES.tyler_jc` now points at the local asset path instead of the external `apacheathletics.com` media URL from v45.10. `domain`/`DOMAINS.tyler_jc` stay `'apacheathletics.com'` (unchanged since v45.10) as an inert last-resort fallback only, never the primary path.
+
+**Verified locally** across all 3 surfaces (Explore card, Details modal, Dashboard shortlist): the local asset loads (256px, `complete: true`) everywhere, no new console errors, 170/170 emblems render.
+
+**Files:** `assets/logos/tyler_jc.png` (new), `js/app.js` (`ICON_OVERRIDES`), `CLAUDE.md` (§4, §6D), `athletes/olivier.json` (guideVersion).
+
+`validate_schools.py`: 0 errors, 19 warnings (unchanged — no data file touched). `validate_consistency.js`: **Issues: 0**.
+
+---
+
 ### v45.10 (2026-08-22) — Fix: revert v45.09's `tyler_jc` swap — it put WordPress's own default icon in front of users; add `ICON_OVERRIDES` for the real one
 
 Owner caught this immediately via screenshot ("wtf is that?"), showing the real TJC Apaches mascot logo — visibly neither of the two icons the app had been choosing between. v45.09's swap put `tjc.edu`'s icon in front of users on cards/Dashboard to fix a sparse-icon complaint, but `tjc.edu/favicon.ico` turns out to **redirect to WordPress's own generic default site icon** (`wp-includes/images/w-logo-blue-white-bg.png`) — not a TJC mark of any kind. The v45.09 fix was worse than what it replaced, not just imperfect.

@@ -28,6 +28,17 @@ regex traps: ordinal years (`1st`-`5th`), `Fy.` (Ivy first-years), and
 `Redshirt Sophomore`-style strings that a `^`-anchored match silently
 drops.
 
+**Also record every player on the page, not just midfielders — this is now
+the standard step, not an extra one.** You're already reading the whole
+roster to find the midfielders; capture the rest (name, position, class,
+hometown, previous school if published) into the patch's `full_roster`
+field alongside the buckets above. Normalize `position` to one of
+`GK`/`D`/`MF`/`F`/`OTHER` — see CLAUDE.md Section 5's "Roster Snapshot
+Archive" for the exact shape and why it exists (it's the raw archive a
+future non-midfielder athlete profile, or a future database migration,
+would be built from). No new browser visit, no extra research time — just
+don't discard what's already on screen.
+
 ### 2. Apply the refresh — the calculator, not hand arithmetic
 
 ```bash
@@ -62,6 +73,12 @@ docstring for the exact shape — `mf_total`, `roster_season`, `cleared`,
 - **Preserves the target file's existing line-ending convention** (LF or
   CRLF — `data/*.json` is not uniform across this repo; forcing one would
   silently mass-convert a file that uses the other).
+- **If the patch includes `full_roster`, archives it** to
+  `data/rosters/{id}/{fetchedAt}.json` and updates `data/rosters/manifest
+  .json` — `fetchedAt` is always today's real date, computed by the script
+  itself, never taken from the patch. Fully optional and additive: a patch
+  without `full_roster` behaves exactly as before this existed. See CLAUDE
+  .md Section 5's "Roster Snapshot Archive" for the schema.
 
 Use `--dry-run` first to see the computed cascade and any detected
 departures without writing anything.
@@ -72,6 +89,7 @@ departures without writing anything.
 python .claude/skills/roster-refresh/scripts/check_roster_arithmetic.py
 python .claude/skills/roster-refresh/scripts/check_juco_trajectory.py   # JUCO only
 python .claude/skills/roster-refresh/scripts/check_no_jargon.py
+python .claude/skills/roster-refresh/scripts/check_roster_snapshot.py   # only if full_roster was used
 ```
 
 - **`check_roster_arithmetic.py`** checks `cleared + rising_sr + rising_jr
@@ -100,6 +118,13 @@ python .claude/skills/roster-refresh/scripts/check_no_jargon.py
   Section 14's real JUCO formula shipped and their numbers were
   recalculated. Both were fixed in the same session this script was built,
   and are now the checker's proof case.
+- **`check_roster_snapshot.py`** — only relevant if you used `full_roster`
+  this session. Validates `data/rosters/manifest.json` and every snapshot
+  file it points at (real file exists, `fetchedAt` is a valid date matching
+  its own filename, every `position` is a valid enum value). Also reports
+  — never fails on — which guide schools have no snapshot yet; that's
+  expected for a long time, since this archive has no backfill and builds
+  up one refresh at a time.
 
 ### 4. Coach spot-check — mandatory, not optional
 

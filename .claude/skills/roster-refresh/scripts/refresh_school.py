@@ -36,9 +36,17 @@ WHAT IT DOES
    never did at all: it always overwrote names in place with no diff.
 4. Preserves the target file's existing line-ending convention (LF or CRLF)
    rather than forcing one — data/*.json is NOT uniform across this repo
-   (ivy.json and coaches.json are CRLF; most conference files are LF), and
-   apply_roster_refresh.py hardcodes LF output, which would silently mass-
-   convert a CRLF file's line endings if ever pointed at one.
+   (ivy.json, coaches.json, and big-ten.json are CRLF; most conference files
+   are LF), and apply_roster_refresh.py hardcodes LF output, which would
+   silently mass-convert a CRLF file's line endings if ever pointed at one.
+5. If the patch includes "full_roster" (optional — every player, every
+   position, not just midfielders), archives it to
+   data/rosters/{id}/{fetchedAt}.json and updates data/rosters/manifest.json.
+   fetchedAt is always today's real date, computed here, never taken from the
+   patch — this is the raw, timestamped source of truth minutesOutlook (and
+   any future position-specific view) gets derived from. Completely optional
+   and additive: a patch without "full_roster" behaves exactly as before this
+   field existed.
 
 WHAT IT DOES NOT DO
 --------------------
@@ -61,26 +69,48 @@ PATCH FILE SHAPE
   "recruit_risk": "Low",
   "juco": false,
   "facts_only": false,
+  "returning": 6,                            (optional — overrides the
+                                                derived "mf_total minus
+                                                every named bucket" count,
+                                                for when untracked-by-name
+                                                freshmen legitimately exist)
   "pathway": "Freshman-friendly",            (optional)
   "pathway_note": "...",                     (optional, plain language — no
                                                 internal jargon; see the
                                                 check_no_jargon.py script)
-  "trajectory_note": "..."                   (optional, same rule)
+  "trajectory_note": "...",                  (optional, same rule)
+  "full_roster": [                           (optional — see below)
+    {"name": "...", "position": "MF", "class": "So.",
+     "hometown": "...", "previousSchool": null}
+  ],
+  "source_url": "...",                       (optional, paired with full_roster)
+  "fetch_method": "claude-in-chrome"         (optional, defaults to
+                                                "claude-in-chrome" — see
+                                                CLAUDE.md Section 15 Rule 0)
 }
 
 `mf_total`, `cleared`, `rising_sr`, `rising_jr` are the four fields the
 cascade needs. Everything else you'd have derived by hand (opportunity score,
 trajectory percentages, the fit/lens score cascade) this script computes.
 
+`full_roster`, if present, is EVERY player on the roster page you already
+read for the midfielder buckets above — not just midfielders. `position`
+must be one of GK/D/MF/F/OTHER (the vocabulary College Rosters/roster_data
+.json already established in this repo). This does not feed any score or
+cascade — it's archived as-is to data/rosters/, see CLAUDE.md Section 5's
+"Roster Snapshot Archive" for the full schema and why it exists.
+
 USAGE
 -----
     python refresh_school.py --file data/juco.json --id tyler_jc --patch patch.json
 
-Exit code 0 on success, 1 if the school id isn't found or the patch is
-missing a required key.
+Exit code 0 on success, 1 if the school id isn't found, the patch is missing
+a required key, or full_roster is present but malformed (bad/missing
+position, missing name).
 """
 
 import argparse
+import datetime as dt
 import io
 import json
 import os
@@ -110,6 +140,9 @@ sys.path.insert(0, ROOT)
 import apply_roster_refresh as arr  # noqa: E402  (needs ROOT on sys.path first)
 
 QUEUE_FILE_DEFAULT = os.path.join(ROOT, "roster_moves_queue.json")
+ROSTERS_DIR = os.path.join(ROOT, "data", "rosters")
+MANIFEST_FILE = os.path.join(ROSTERS_DIR, "manifest.json")
+VALID_POSITIONS = {"GK", "D", "MF", "F", "OTHER"}
 
 
 def detect_newline(path):
@@ -133,6 +166,72 @@ def looks_like_a_name(s):
     words = s.replace("(", " ").replace(")", " ").split()
     cap_words = [w for w in words if w[:1].isupper()]
     return len(cap_words) >= 2
+
+
+def validate_full_roster(full_roster):
+    """Returns an error string if invalid, else None. Fail fast: this is
+    meant to become the trustworthy raw source of truth minutesOutlook gets
+    derived from, so a bad position enum value or missing name should never
+    silently land in the archive."""
+    if not isinstance(full_roster, list) or not full_roster:
+        return "full_roster must be a non-empty array of player objects"
+    for i, p in enumerate(full_roster):
+        if not isinstance(p, dict) or not p.get("name"):
+            return f"full_roster[{i}] is missing a name"
+        pos = p.get("position")
+        if pos not in VALID_POSITIONS:
+            return (f"full_roster[{i}] ({p.get('name')!r}) has position "
+                    f"{pos!r} — must be one of {sorted(VALID_POSITIONS)}")
+    return None
+
+
+def write_roster_snapshot(school_id, school_file_rel, roster_season, full_roster,
+                           source_url, fetch_method, dry_run):
+    """Writes data/rosters/{school_id}/{fetchedAt}.json — the raw, all-
+    positions extraction that minutesOutlook (and any future position-
+    specific view) gets derived from. fetchedAt is the real wall-clock date
+    this script ran, never taken from the patch — that's what keeps it a
+    trustworthy freshness signal rather than something an old patch could
+    backdate. Updates manifest.json in the same read-modify-write pattern
+    the departure queue above already uses. Snapshot files are never
+    overwritten across days — only a same-day re-run replaces that day's
+    file — so history accumulates automatically."""
+    fetched_at = dt.date.today().isoformat()
+    snapshot = {
+        "schoolId": school_id,
+        "schoolFile": school_file_rel,
+        "fetchedAt": fetched_at,
+        "rosterSeason": roster_season,
+        "sourceUrl": source_url,
+        "fetchMethod": fetch_method or "claude-in-chrome",
+        "squadTotal": len(full_roster),
+        "players": full_roster,
+    }
+    school_dir = os.path.join(ROSTERS_DIR, school_id)
+    snapshot_path = os.path.join(school_dir, f"{fetched_at}.json")
+    rel_snapshot_path = os.path.relpath(snapshot_path, ROOT).replace("\\", "/")
+
+    suffix = " (dry-run, not written)" if dry_run else ""
+    print(f"  full_roster: {len(full_roster)} players -> {rel_snapshot_path}{suffix}")
+
+    if dry_run:
+        return
+
+    os.makedirs(school_dir, exist_ok=True)
+    with open(snapshot_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n")
+
+    manifest = {}
+    if os.path.exists(MANIFEST_FILE):
+        manifest = json.loads(open(MANIFEST_FILE, encoding="utf-8").read())
+    manifest[school_id] = {
+        "latestFetchedAt": fetched_at,
+        "latestFile": f"data/rosters/{school_id}/{fetched_at}.json",
+        "rosterSeason": roster_season,
+    }
+    with open(MANIFEST_FILE, "w", encoding="utf-8", newline="\n") as f:
+        f.write(json.dumps(manifest, indent=2, ensure_ascii=False, sort_keys=True) + "\n")
+    print(f"  updated {os.path.relpath(MANIFEST_FILE, ROOT).replace(chr(92), '/')}")
 
 
 def main():
@@ -169,6 +268,13 @@ def main():
     if missing:
         print(f"Patch is missing required key(s): {missing}")
         return 1
+
+    full_roster = patch.get("full_roster")
+    if full_roster is not None:
+        err = validate_full_roster(full_roster)
+        if err:
+            print(f"Patch full_roster is invalid: {err}")
+            return 1
 
     athlete = json.loads(open(args.athlete, encoding="utf-8").read())
     mo = s.setdefault("minutesOutlook", {})
@@ -264,6 +370,18 @@ def main():
             print(f"  wrote {len(candidates)} entrie(s) to {os.path.relpath(args.queue_file, ROOT)}")
     else:
         print("  no unexpected departures detected")
+
+    # ── full-roster archive (optional, additive — see module docstring) ──
+    if full_roster is not None:
+        write_roster_snapshot(
+            school_id=args.id,
+            school_file_rel=os.path.relpath(school_path, ROOT).replace("\\", "/"),
+            roster_season=mo["roster_season"],
+            full_roster=full_roster,
+            source_url=patch.get("source_url"),
+            fetch_method=patch.get("fetch_method"),
+            dry_run=args.dry_run,
+        )
 
     if args.dry_run:
         print("\n--dry-run: nothing written.")

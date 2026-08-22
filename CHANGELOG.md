@@ -6,6 +6,28 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.05 (2026-08-22) — New: append-only roster snapshot archive (`data/rosters/`), groundwork for multi-position/future-DB support
+
+**The gap:** a roster refresh already reads the entire roster page in a real browser (Rule 0), but only ever transcribed midfielders into the patch — every other position, and the exact date the page was read, was discarded. `roster_season` records which *season* a roster describes, never when it was actually *fetched*, so freshness has only ever been tracked by hand (§6C's ledger). Discussed with the owner across several options (Supabase, Cloudflare D1, a spreadsheet review layer, flat-file archive) — chose a zero-new-dependency, git-native append-only snapshot file as the starting point specifically because it captures everything a future database migration would need, without adding a new service today.
+
+**What shipped:**
+- `.claude/skills/roster-refresh/scripts/refresh_school.py` — extended with an optional `full_roster` patch key (every player, every position: `GK`/`D`/`MF`/`F`/`OTHER`, plus `source_url`/`fetch_method`). When present, writes `data/rosters/{id}/{fetchedAt}.json` (fetchedAt = the script's own real wall-clock date, never taken from the patch) and updates `data/rosters/manifest.json` (schoolId → latest snapshot pointer). **Fully additive** — a patch without `full_roster` behaves byte-for-byte as before; verified directly (see below).
+- `check_roster_snapshot.py` (new) — validates every manifest entry resolves to a real, well-formed snapshot file (valid position enum, `fetchedAt` matching its own filename); reports (never fails on) which guide schools have no snapshot yet, since this archive has no backfill and builds up going forward only.
+- `.claude/skills/roster-refresh/SKILL.md` — capturing the full roster is now the **standard step** in the research phase (§9), not opt-in. Also documented `full_roster`/`source_url`/`fetch_method` in `refresh_school.py`'s own docstring, and fixed a pre-existing doc-vs-code drift found during this work (the accepted patch key `returning` was never listed in the docstring's PATCH FILE SHAPE, and the CRLF-file list omitted `big-ten.json`, which is CRLF in this checkout despite being described as one of "most conference files are LF").
+- `CLAUDE.md` §5 — new "Roster Snapshot Archive" subsection documenting the schema, the manifest, and the explicit no-backfill rule (inventing fetch dates for the ~52 schools with partial data in `College Rosters/*.json` would violate the project's own "never guess" rule).
+
+**Verified, not just written:** a real `full_roster` patch was dry-run then applied for real against `cowley_cc` — confirmed the snapshot file and manifest write correctly, and confirmed `data/juco.json`'s scored cascade is **byte-identical** before/after (the feature genuinely has zero effect on `fitOlivier`/`lensScores`). A second patch **without** `full_roster` was run for real against `indian_hills` — confirmed zero `data/rosters/` activity, proving backward compatibility. `check_roster_snapshot.py` was negative-tested by injecting an invalid position value into the snapshot and confirming it fails (exit 1) rather than passing silently. All test artifacts (the snapshot file, manifest, and the `data/juco.json` round-trip) were removed/reverted before commit — nothing in this entry's `data/rosters/` claim ships fake data.
+
+**Cleanup:** deleted `rosters_s2.json` and `survey_juco.json` (untracked, repo root) — both superseded by this convention; neither was ever committed and both held inconsistent/partial pre-dated data (4 schools MF-only; a probe log with zero player names at all).
+
+**Explicitly out of scope this version:** no backfill of any school, no Supabase work, no change to `minutesOutlook`/`fitOlivier`/`lensScores`/UI, no multi-position scoring or UI. This is the raw archive a future position-specific athlete profile or database migration would be built from — not that feature itself.
+
+**Files:** `.claude/skills/roster-refresh/scripts/refresh_school.py`, `.claude/skills/roster-refresh/scripts/check_roster_snapshot.py` (new), `.claude/skills/roster-refresh/SKILL.md`, `CLAUDE.md` (§5, §9, version headers), `athletes/olivier.json` (guideVersion). Deleted: `rosters_s2.json`, `survey_juco.json`.
+
+`validate_schools.py`: 0 errors, 24 warnings (unchanged, pre-existing). `validate_consistency.js`: **Issues: 0**. Full `qa-suite` run: all steps passed (no `data/*.json` or `js/*.js` changes this version, so steps 3-5 were correctly no-ops).
+
+---
+
 ### v45.04 (2026-08-19) — Six project skills built, plus two real bugs their testing surfaced (tooling + Change Type 2 + Change Type 3 prose)
 
 **The prompting question:** CLAUDE.md Section 9 had listed `new-school`, `qa-suite`, and `add-coach` under `.claude/skills/` for an unknown number of prior sessions. None of the three actually existed on disk — confirmed by checking. Every session using this project had been reconstructing those checklists from CLAUDE.md prose by hand instead of invoking a real skill.

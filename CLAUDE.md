@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v45.04 (2026-08-19)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v45.05 (2026-08-22)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -722,6 +722,45 @@ recruit_pathway_note (string)   ← added v34, optional, informational only — 
 
 `recruit_pathway` and `recruit_pathway_note` carry **no scoring weight** — they do not feed lensScores.minutes or fitOlivier. They exist to separate "this school is a good fit on paper" from "this school realistically offers an entry point as an incoming freshman." Populate only when a school's roster is actually researched (Phase 1G) — do not backfill retroactively as a standalone project (that full pass is tracked separately, see backlog below).
 
+### Roster Snapshot Archive (`data/rosters/`) — added v45.05
+
+**A separate, append-only archive from everything else in this section — not athlete-facing, not scored, not validated the way `minutesOutlook` is.** Every field above this one exists because a roster refresh reads the *entire* roster page in a real browser but only ever transcribed the midfielders — everyone else on the page, and the exact date the page was read, was thrown away. `roster_season` (above) records which *season* a roster describes; it has never recorded when the page was actually *fetched*, which is why CLAUDE.md §6C has to maintain a freshness ledger by hand instead of just checking a timestamp. This archive fixes both gaps at once, and — since it captures every position, not just midfielder — is also the groundwork for a future non-midfielder athlete profile, or a future migration off flat JSON entirely (Supabase was evaluated and deliberately deferred; this captures what that migration would need without adding a new service today).
+
+**Layout:**
+```
+data/rosters/
+  manifest.json                       ← schoolId -> latest snapshot pointer
+  {schoolId}/
+    {fetchedAt}.json                  ← one file per scrape, never overwritten across days
+```
+
+**Snapshot file shape:**
+```json
+{
+  "schoolId": "cowley_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-08-22",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://cowleytigers.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 27,
+  "players": [
+    { "name": "Nino Inchico", "position": "MF", "class": "So.", "hometown": "...", "previousSchool": null }
+  ]
+}
+```
+`fetchedAt` is always the real wall-clock date the refresh script actually ran (`datetime.date.today()` inside `refresh_school.py` — never something a patch file can supply), which is what makes it a trustworthy freshness signal rather than something an old patch could backdate. `position` is restricted to `GK | D | MF | F | OTHER` — the exact vocabulary `College Rosters/roster_data.json` already established in this repo, reused rather than inventing a second one. `previousSchool` is nullable — many rosters don't publish it (§15 already documents this).
+
+**manifest.json:**
+```json
+{ "cowley_cc": { "latestFetchedAt": "2026-08-22", "latestFile": "data/rosters/cowley_cc/2026-08-22.json", "rosterSeason": "2026-27" } }
+```
+One flat object, rewritten in full on every snapshot write — the same read-modify-write pattern `refresh_school.py` already used for `roster_moves_queue.json`. Gives an instant single-file freshness check across all schools instead of scanning 170 directories.
+
+**How it's populated — optional patch key, additive only.** `refresh_school.py`'s patch file accepts an optional `full_roster` array (plus optional `source_url`/`fetch_method`) alongside the existing `mf_total`/`cleared`/`rising_sr`/`rising_jr` keys — see the script's own docstring for the exact shape. **A patch without `full_roster` behaves exactly as it always has** — this did not change the existing cascade, the departure queue, or the newline-preservation logic in any way. As of v45.05, capturing the full roster is the **standard step** in the `roster-refresh` skill's research phase (§9) — no new browser visit, just recording what's already on screen instead of discarding everything but one position.
+
+**No backfill.** The ~52 schools with partial roster data scattered across `College Rosters/*.json` (stale, June 2026) predate real fetch timestamps — inventing one for them would violate this project's own "never guess" rule. Coverage builds up naturally as schools get refreshed going forward; `check_roster_snapshot.py` (the `roster-refresh` skill) reports which schools have no snapshot yet as an expected, non-failing state, not a gap to rush-fill.
+
 ### acuUnits[] — all 16 unit codes in order
 ```
 ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394,
@@ -1254,7 +1293,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v45.04 (2026-08-19).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v45.05 (2026-08-22).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1980,7 +2019,7 @@ All six built and tested against real repo data v45.04 (2026-08-19) — see that
 - `.claude/skills/qa-suite/SKILL.md` — bundles Phase 4's validation sequence (validate_schools.py, validate_consistency.js, json.tool/node --check on changed files, conditional negtest.py) into one command
 - `.claude/skills/new-school/SKILL.md` — Change Type 1 workflow + a cross-file coverage check (guideSchools/otherSchools, conf-prestige.json, pipeline.json, this file's own School → File Reference Table) that neither validator above covers
 - `.claude/skills/add-coach/SKILL.md` — Change Type 2 workflow + a rank-order/score consistency check and a bio-hygiene sweep (stale embedded emails, hardcoded athlete names — the v44.35/v44.28 bug classes)
-- `.claude/skills/roster-refresh/SKILL.md` — Change Type 3 workflow. `apply_roster_refresh.py` turned out to be a ~1300-line hardcoded campaign log, not a reusable single-school tool — this skill's calculator imports its formula functions directly rather than re-deriving them, and adds arithmetic, JUCO-trajectory-formula, and internal-jargon checks that don't exist anywhere else. Also captures unexpected roster departures to `roster_moves_queue.json` for the next skill.
+- `.claude/skills/roster-refresh/SKILL.md` — Change Type 3 workflow. `apply_roster_refresh.py` turned out to be a ~1300-line hardcoded campaign log, not a reusable single-school tool — this skill's calculator imports its formula functions directly rather than re-deriving them, and adds arithmetic, JUCO-trajectory-formula, and internal-jargon checks that don't exist anywhere else. Also captures unexpected roster departures to `roster_moves_queue.json` for the next skill, and (since v45.05) archives the full roster — every position, timestamped — to `data/rosters/` via the patch's optional `full_roster` key; see §5's "Roster Snapshot Archive."
 - `.claude/skills/transfer-tracking/SKILL.md` — run after a refresh wave (not per-school): a cross-school duplicate-name scan plus a processor for the departure queue above, feeding §5b's `nextLevelOutput` research
 - `.claude/skills/mls-pipeline/SKILL.md` — annual SuperDraft cross-reference against the current roster snapshot and the departure-queue history (kept append-only for exactly this reason)
 

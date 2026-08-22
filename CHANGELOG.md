@@ -6,6 +6,23 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.09 (2026-08-22) — Fix: swap `tyler_jc`'s DOMAINS/domain fields — the icon content, not just the container, was the problem
+
+Owner follow-up on v45.08: even with the stronger border, Tyler JC's Dashboard/Explore icon still looked like almost nothing — a thin colored sliver, screenshotted and shared directly. Traced it past the container: the actual icon *content* served by `apacheathletics.com` (what `domain` pointed to, driving cards/Dashboard) is ~77% transparent with only a tiny gold accent mark — confirmed by fetching it directly and sampling pixels via canvas. `tjc.edu`'s favicon, by contrast, is a solid white-canvas logo with a real blue mark, and was already loading fine — just in the modal, the lower-traffic surface.
+
+This is exactly the "backwards" state CLAUDE.md's own §6D open item had flagged as cosmetic-only and never fixed: every other school splits `DOMAINS[]` (modal, athletics host) from `domain` (cards/Dashboard, university host); Tyler JC alone had it inverted. **Full swap applied**, not the old note's partial one-token suggestion (which would have dropped the good `tjc.edu` icon from the app entirely rather than moving it to the right surface):
+
+- `js/app.js` `DOMAINS.tyler_jc`: `'tjc.edu'` → `'apacheathletics.com'`
+- `data/juco.json` Tyler JC `domain`: `'apacheathletics.com'` → `'tjc.edu'`
+
+Net effect: cards + Dashboard (the high-traffic views) now show the solid `tjc.edu` logo; the modal (opened one school at a time) shows the sparser `apacheathletics.com` one instead — the better trade given how each surface is actually used.
+
+**Files:** `js/app.js` (`DOMAINS.tyler_jc`), `data/juco.json` (`tyler_jc.domain`), `CLAUDE.md` (§6D), `athletes/olivier.json` (guideVersion).
+
+`validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Verified locally: Dashboard Top 8 card, Explore card, and modal all checked directly post-swap — `tjc.edu` (80px, real content) now renders on cards/Dashboard, `apacheathletics.com` renders in the modal as expected.
+
+---
+
 ### v45.08 (2026-08-22) — Fix: stronger border/shadow on all 3 logo chips — white-background favicons were blending into the card
 
 Owner-reported, following the icon audit: Tyler JC's icon "blends into the background." Traced it to a real, generalizable contrast problem, not a Tyler-specific bug. Tyler's actual favicon (confirmed by fetching both `tjc.edu`'s and `apacheathletics.com`'s directly, and sampling pixels via canvas) is a white-canvas PNG with a small blue/gold mark. The app's own icon-chip containers are near-white too (`--surface2` `#f2f1ee`, `--surface` `#fff`) with only a 1px `var(--border)` edge (`#e2e0db`) — a ~13–16 RGB-point delta against white, effectively invisible. Any school whose real logo has a pale/white background would hit the same problem.

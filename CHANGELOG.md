@@ -6,6 +6,40 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.07 (2026-08-22) — Fix: corrected `DOMAINS.gcu`, backfilled 5 missing `domain` fields (icon audit part 2)
+
+Follow-up to v45.06's fallback-chain fix, closing the data-correction half of the same audit. All research done Tier-1 via Claude-in-Chrome (RULE 0) — no domain was guessed.
+
+**One genuine wrong domain, found and fixed:** `DOMAINS.gcu` was `'lopes.com'`, a long-standing open item (§6D, since v44.31) that had never been provably confirmed dead. Real-browser check now confirms `lopes.com` never loads at all, while `gculopes.com` — the exact host GCU's own school-object `url` field already pointed to — is live with a real favicon at the default path. §6D's open item marked resolved.
+
+**5 schools backfilled with a real `domain` field** (previously absent, meaning their card/Dashboard icon always fell to colored initials): `mercyhurst` → `mercyhurst.edu`, `georgian_court` → `georgian.edu`, `columbia_college` → `ccis.edu`, `northeast_cc` → `northeast.edu`, `monroe_college` → `monroeu.edu`. All confirmed live via direct navigation before being written.
+
+**The other 15 schools the audit flagged were checked and left alone.** Every one of Barton CC, Harcum, Central Georgia Tech, Central Wyoming, Coastal Bend, Eastern Arizona, Laramie County, NOC Enid, Santa Monica, Trinidad State, UCLA, Virginia, Northwestern, and Western Nebraska CC resolved to the correct, live, current athletics site when checked directly in a real browser — the underlying stored domain was never wrong. Two site-specific reasons why they still don't show a favicon via the automated checks: some CDN/WAF-front automated (datacenter-IP) traffic while loading fine for a normal visitor (same pattern as Suffolk CC / `goreivers.com`, already documented in §15); others simply don't expose an icon at the default `/favicon.ico` path (confirmed one concretely — Harcum's real icon lives at `/s/1044/bp20/images/favicon.ico`, not discoverable by a static site with no build step). Neither is a data error; the existing colored-initials fallback is the correct, honest UI for these.
+
+`monroe_college`'s existing `DOMAINS` entry (`monroeumustangs.com`) was also checked and found already correct — a legacy `monroecollegemustangs.com` link on the university's own site redirects to it. No change needed there; v45.06's fallback-chain fix already covers this school.
+
+**Files:** `js/app.js` (`DOMAINS.gcu`), `data/d1-other.json` (`mercyhurst.domain`), `data/d2.json` (`georgian_court.domain`, `columbia_college.domain`), `data/juco.json` (`northeast_cc.domain`, `monroe_college.domain`), `CLAUDE.md` (§6D), `athletes/olivier.json` (guideVersion).
+
+`validate_schools.py`: 0 errors, 19 warnings (5 fewer than before — the missing-domain warnings this version resolves). `validate_consistency.js`: **Issues: 0** (domain/favicon fields carry no scoring weight, so no cascade). Browser-verified locally: all 6 changed schools now render a real fetched icon (not colored initials) on their Explore card, and GCU's modal header now loads a real 32px icon from `gculopes.com`.
+
+---
+
+### v45.06 (2026-08-22) — Fix: favicon fallback chain tries the school's own `/favicon.ico` before Google's proxy (icon audit part 1)
+
+**Prompted by a user-requested audit of all 170 schools' logo/favicon sources.** The scan found 39 schools showing a broken or generic icon somewhere in the app — but critically, **zero of the 36 flagged domain references were actually dead** (none NXDOMAIN). Root-cause breakdown: 20 had a real, directly-fetchable favicon that Google's `s2/favicons` proxy simply wasn't serving; 8 were live sites with no favicon at the default path; 5 were CDN/WAF bot-challenge pages (still alive); 3 resolved in DNS but didn't answer over HTTPS from the audit's own network path (one of which was the already-flagged `DOMAINS.gcu`, addressed in v45.07).
+
+**Fix:** `logoUrl()`/`buildEmblemHtml()` and the new `handleLogoError()` (js/app.js, Explore cards), `buildModalHeader()` and the new `handleModalLogoError()` (js/app.js, Details modal), and the Dashboard shortlist card (js/dashboard.js) now try the school's own `https://{domain}/favicon.ico` directly first, fall back to Google's proxy on error, then to the coloured-initials abbreviation — purely additive, three-stage chain, no school ends up worse off than before regardless of which stage ultimately succeeds.
+
+**Browser-verified, not just read from the diff:** ran a local server and drove it via Claude Browser MCP. Confirmed real, previously-broken icons now load for Charleston, Monmouth, Navy, and UC Irvine's Explore card, and for Drexel's modal header (192px real icon via direct fetch). Confirmed the chain is non-regressive for genuinely dead/blocked domains (Harcum, GCU's `lopes.com` at the time) — they still correctly fall through to the same end state as before, just after a bounded multi-second delay while the direct fetch times out. All 8 shortlist-panel icons on the Dashboard loaded successfully post-change (mix of direct-fetch and Google-fallback stages, zero broken images).
+
+**Not fixed by this version, tracked as a follow-up (landed same day, see v45.07):** the 16 domains where neither direct-fetch nor Google can find a real icon need per-school Tier-1 verification, not a code change — most turned out to have correct domains once checked directly.
+
+**Files:** `js/app.js` (`logoUrl`, `buildEmblemHtml`, `buildModalHeader`, new `googleFaviconUrl`/`handleLogoError`/`handleModalLogoError` helpers), `js/dashboard.js` (shortlist card template).
+
+`validate_schools.py`: 0 errors. `validate_consistency.js`: **Issues: 0**. `node --check` clean on both files. No `fitOlivier`/`lensScores` cascade — favicon source is display-only.
+
+---
+
 ### v45.05 (2026-08-22) — New: append-only roster snapshot archive (`data/rosters/`), groundwork for multi-position/future-DB support
 
 **The gap:** a roster refresh already reads the entire roster page in a real browser (Rule 0), but only ever transcribed midfielders into the patch — every other position, and the exact date the page was read, was discarded. `roster_season` records which *season* a roster describes, never when it was actually *fetched*, so freshness has only ever been tracked by hand (§6C's ledger). Discussed with the owner across several options (Supabase, Cloudflare D1, a spreadsheet review layer, flat-file archive) — chose a zero-new-dependency, git-native append-only snapshot file as the starting point specifically because it captures everything a future database migration would need, without adding a new service today.

@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.10 (2026-08-22) — Fix: revert v45.09's `tyler_jc` swap — it put WordPress's own default icon in front of users; add `ICON_OVERRIDES` for the real one
+
+Owner caught this immediately via screenshot ("wtf is that?"), showing the real TJC Apaches mascot logo — visibly neither of the two icons the app had been choosing between. v45.09's swap put `tjc.edu`'s icon in front of users on cards/Dashboard to fix a sparse-icon complaint, but `tjc.edu/favicon.ico` turns out to **redirect to WordPress's own generic default site icon** (`wp-includes/images/w-logo-blue-white-bg.png`) — not a TJC mark of any kind. The v45.09 fix was worse than what it replaced, not just imperfect.
+
+**Investigated properly this time, with a VPN.** `apacheathletics.com` CloudFront-blocks every automated/datacenter network path this project has access to — including a real Chrome browser without a VPN, a long-documented issue in this project's history for this exact host. With the owner's VPN on, via Claude-in-Chrome, past the block: confirmed `apacheathletics.com` genuinely has **no `/favicon.ico`** (a real 403, not a proxy artifact this time). Its actual declared `<link rel="icon">` tag points to a real, current "TJC" athletics wordmark at a media-hash path (`/media/319af89643-411463289210406312.png`) — screenshotted directly and confirmed legitimate — just shaped as a wide 512×121 banner rather than a square icon, which is exactly why it rendered as a near-invisible sliver through Google's and DuckDuckGo's square-icon-shaped proxies in every prior attempt.
+
+**Fix:**
+- `data/juco.json`: Tyler JC's `domain` reverted `'tjc.edu'` → `'apacheathletics.com'` (undoes v45.09 exactly; `tjc.edu` is never used for Tyler JC again anywhere in the app).
+- `js/app.js`: new `ICON_OVERRIDES` map — a **general mechanism, not a Tyler-only hack** (several other schools flagged in the original icon audit hit this same "real icon isn't at the default `/favicon.ico` path" problem, e.g. Northwestern, UCLA, Virginia — see v45.06/v45.07's entries) — lets a school's confirmed-real icon URL be used directly, skipping the unreliable `/favicon.ico` guess and any third-party proxy's degraded rendition of it. Wired as first-priority into `logoUrl()`, `buildModalHeader()`, and the Dashboard shortlist card (`js/dashboard.js`), with the existing Google/initials fallback chain preserved if it ever fails to load. Currently populated for `tyler_jc` only; available to extend to other schools as their real icon paths get confirmed.
+
+**Verified:** the override URL loads correctly and shows the real wordmark when checked directly in a real browser (Claude-in-Chrome + VPN, past the CloudFront block — screenshotted). Confirmed locally that all 3 surfaces correctly attempt the override first (this sandboxed test environment independently hits the same CloudFront block, so it falls through to the existing Google fallback there — expected, not a code defect, matching the pattern already documented for this exact host).
+
+**Files:** `data/juco.json` (`tyler_jc.domain`), `js/app.js` (`ICON_OVERRIDES`, `logoUrl`, `buildModalHeader`, `handleModalLogoError`), `js/dashboard.js` (shortlist icon chain), `CLAUDE.md` (§6D), `athletes/olivier.json` (guideVersion).
+
+`validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**.
+
+---
+
 ### v45.09 (2026-08-22) — Fix: swap `tyler_jc`'s DOMAINS/domain fields — the icon content, not just the container, was the problem
 
 Owner follow-up on v45.08: even with the stronger border, Tyler JC's Dashboard/Explore icon still looked like almost nothing — a thin colored sliver, screenshotted and shared directly. Traced it past the container: the actual icon *content* served by `apacheathletics.com` (what `domain` pointed to, driving cards/Dashboard) is ~77% transparent with only a tiny gold accent mark — confirmed by fetching it directly and sampling pixels via canvas. `tjc.edu`'s favicon, by contrast, is a solid white-canvas logo with a real blue mark, and was already loading fine — just in the modal, the lower-traffic surface.

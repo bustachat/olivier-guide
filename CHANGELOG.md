@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.08 (2026-08-22) — Fix: stronger border/shadow on all 3 logo chips — white-background favicons were blending into the card
+
+Owner-reported, following the icon audit: Tyler JC's icon "blends into the background." Traced it to a real, generalizable contrast problem, not a Tyler-specific bug. Tyler's actual favicon (confirmed by fetching both `tjc.edu`'s and `apacheathletics.com`'s directly, and sampling pixels via canvas) is a white-canvas PNG with a small blue/gold mark. The app's own icon-chip containers are near-white too (`--surface2` `#f2f1ee`, `--surface` `#fff`) with only a 1px `var(--border)` edge (`#e2e0db`) — a ~13–16 RGB-point delta against white, effectively invisible. Any school whose real logo has a pale/white background would hit the same problem.
+
+**Fix, at the container level, no per-school special-casing:** all three icon-chip surfaces — `.card-emblem` (Explore cards), `.mh-logo` (Details modal), and the Dashboard shortlist icon (inline style in `dashboard.js`) — now use the stronger `var(--border2)` (`#d0cec8`, ~34–55pt delta) plus a subtle inset `box-shadow`, so the chip reads as a bounded surface regardless of whether the logo art itself is white, cream, or any other pale tone.
+
+**Verified, not just read from the diff:** computed styles confirmed live in a local browser show the new border/shadow applied to Tyler JC's icon on all three surfaces (card, modal, Dashboard); `qa-suite` passes; 170/170 Explore cards still render an emblem (0 unintended fallback-to-initials); no new console errors.
+
+**Files:** `index.html` (`.card-emblem`, `.mh-logo`), `js/dashboard.js` (shortlist icon inline style), `athletes/olivier.json` (guideVersion).
+
+`validate_schools.py`: 0 errors, 19 warnings (unchanged — cosmetic-only change, no data touched). `validate_consistency.js`: **Issues: 0**. `negtest.py` correctly skipped (no `js/app.js`/`js/scores.js` change).
+
+---
+
 ### v45.07 (2026-08-22) — Fix: corrected `DOMAINS.gcu`, backfilled 5 missing `domain` fields (icon audit part 2)
 
 Follow-up to v45.06's fallback-chain fix, closing the data-correction half of the same audit. All research done Tier-1 via Claude-in-Chrome (RULE 0) — no domain was guessed.

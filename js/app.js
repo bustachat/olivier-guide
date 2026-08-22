@@ -920,7 +920,7 @@ const DOMAINS = {
   columbia_college: 'columbiacougars.com',
   northeast_cc: 'northeasthawks.com',
   monroe_college: 'monroeumustangs.com',
-  tyler_jc:     'tjc.edu',
+  tyler_jc:     'apacheathletics.com',
   daytona_state: 'dscfalcons.com',
   barton_cc:    'bartonsports.com',
   cowley_cc:    'cowleytigers.com',

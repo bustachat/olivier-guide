@@ -616,11 +616,26 @@ function renderCards(){
 }
 
 // ── School emblem logo helper ────────────────────────────────────────────────
-// Tries Clearbit (high-res PNG) first, falls back to Google favicon (64px),
-// then falls back to the coloured text abbreviation if both fail.
+// Tries the school's own /favicon.ico directly first (v45.06 — Google's s2
+// favicon proxy was found silently failing to serve a real, fetchable icon
+// for 20+ schools; see the icon audit), falls back to Google favicon (64px)
+// if that 404s/errors, then falls back to the coloured text abbreviation if
+// both fail.
 function logoUrl(u, size){
   if(!u.domain) return null;
-  return 'https://www.google.com/s2/favicons?domain=' + u.domain + '&sz=64';
+  return 'https://' + u.domain + '/favicon.ico';
+}
+function googleFaviconUrl(domain){
+  return 'https://www.google.com/s2/favicons?domain=' + domain + '&sz=64';
+}
+function handleLogoError(img){
+  const p = img.parentNode;
+  if(img.dataset.stage !== '2'){
+    img.dataset.stage = '2';
+    img.src = googleFaviconUrl(p.dataset.domain);
+    return;
+  }
+  p.innerHTML = '<div class="card-av2" style="background:'+p.dataset.bg+';color:'+p.dataset.fg+'">'+p.dataset.abbr+'</div>';
 }
 function buildEmblemHtml(u, sizeClass){
   const abbr = u.name.slice(0,4);
@@ -631,8 +646,7 @@ function buildEmblemHtml(u, sizeClass){
   }
   const id = 'emb-'+u.id;
   return '<div class="card-emblem '+sizeClass+'" id="'+id+'" data-abbr="'+abbr+'" data-bg="'+bg+'" data-fg="'+fg+'" data-domain="'+u.domain+'">'+
-    '<img src="'+logoUrl(u)+'" alt="'+u.name+'" '+
-      'onerror="var p=this.parentNode;p.innerHTML=\'<div class=\\\'card-av2\\\' style=\\\'background:\'+p.dataset.bg+\';color:\'+p.dataset.fg+\'\\\'>\'+p.dataset.abbr+\'</div>\'">'+
+    '<img src="'+logoUrl(u)+'" alt="'+u.name+'" onerror="handleLogoError(this)">'+
   '</div>';
 }
 
@@ -1395,14 +1409,26 @@ const SOCIAL = {
 };
 
 
+// Modal logo fallback chain: direct favicon.ico -> Google favicon proxy -> abbreviation text.
+// (v45.06 — same fix as buildEmblemHtml's logoUrl(); see the icon audit.)
+function handleModalLogoError(img, domain){
+  if(img.dataset.stage !== '2'){
+    img.dataset.stage = '2';
+    img.src = googleFaviconUrl(domain);
+    return;
+  }
+  img.style.display = 'none';
+  const abbr = document.getElementById('modal-abbr');
+  if(abbr) abbr.style.display = 'block';
+}
 function buildModalHeader(u){
   // Logo / favicon
   const logoEl = document.getElementById('modal-logo');
   const abbrEl = document.getElementById('modal-abbr');
   const domain = DOMAINS[u.id];
   if(domain){
-    logoEl.innerHTML = `<img src="https://www.google.com/s2/favicons?domain=${domain}&sz=64" alt="${u.id}"
-      onerror="this.style.display='none';document.getElementById('modal-abbr').style.display='block'">
+    logoEl.innerHTML = `<img src="https://${domain}/favicon.ico" alt="${u.id}"
+      onerror="handleModalLogoError(this,'${domain}')">
       <span id="modal-abbr" style="display:none;font-size:11px;font-weight:700;color:var(--muted)">${(u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3)}</span>`;
   } else {
     abbrEl.textContent = (u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3);

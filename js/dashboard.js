@@ -446,7 +446,7 @@ function updateShortlist() {
         <div style="width:34px;height:34px;border-radius:7px;background:var(--surface2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">
           ${u.domain
             ? `<img src="https://logo.clearbit.com/${u.domain}" alt="${u.name}" width="28" height="28" style="object-fit:contain"
-                onerror="this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}">`
+                onerror="this.src='https://${u.domain}/favicon.ico';this.onerror=function(){this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}}">`
             : `<span style="font-size:9px;font-weight:800;color:var(--muted)">${u.name.slice(0,4)}</span>`
           }
         </div>

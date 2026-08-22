@@ -911,7 +911,7 @@ const DOMAINS = {
   maryland:     'umterps.com',
   unc:          'goheels.com',
   fau:          'fausports.com',
-  gcu:          'lopes.com',
+  gcu:          'gculopes.com',
   akron:        'gozips.com',
   denver:       'denverpioneers.com',
   vermont:      'uvmathletics.com',

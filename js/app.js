@@ -627,6 +627,16 @@ function renderCards(){
 // re-fetched from anywhere.
 const ICON_OVERRIDES = {
   tyler_jc: 'assets/logos/tyler_jc.png',
+  // City Colleges of Chicago (v45.12) -- all 5 share domain/DOMAINS (ccc.edu /
+  // region4sports.com, see CLAUDE.md SS6D), so every live-fetched icon was
+  // identical across all 5 schools. Each mascot logo below was Tier-1
+  // verified (official athletics social account or MascotDB.com cross-
+  // checked against >=2 independent sources) before being stored.
+  truman_college: 'assets/logos/truman_college.png',
+  daley_college: 'assets/logos/daley_college.png',
+  kennedy_king_college: 'assets/logos/kennedy_king_college.png',
+  wilbur_wright_college: 'assets/logos/wilbur_wright_college.png',
+  malcolm_x_college: 'assets/logos/malcolm_x_college.png',
 };
 
 // ── School emblem logo helper ────────────────────────────────────────────────

@@ -637,6 +637,13 @@ const ICON_OVERRIDES = {
   kennedy_king_college: 'assets/logos/kennedy_king_college.png',
   wilbur_wright_college: 'assets/logos/wilbur_wright_college.png',
   malcolm_x_college: 'assets/logos/malcolm_x_college.png',
+  // virginia (v45.13, icon audit) -- virginia.edu and www.virginia.edu both
+  // 404/hang on a direct /favicon.ico fetch (a TLS cert-hostname mismatch on
+  // the bare domain slows browsers rather than failing them promptly), but
+  // Google's favicon proxy for virginia.edu returns a real, confirmed-correct
+  // Rotunda icon (verified by hash: NOT the 726B generic-globe placeholder).
+  // Pointing straight at that URL skips the slow/hanging direct attempt.
+  virginia: 'https://www.google.com/s2/favicons?domain=virginia.edu&sz=64',
 };
 
 // ── School emblem logo helper ────────────────────────────────────────────────
@@ -1434,13 +1441,37 @@ const SOCIAL = {
 };
 
 
-// Modal logo fallback chain: direct favicon.ico -> Google favicon proxy -> abbreviation text.
-// (v45.06 — same fix as buildEmblemHtml's logoUrl(); see the icon audit.)
-function handleModalLogoError(img, domain){
-  if(img.dataset.stage !== '2' && domain){
-    img.dataset.stage = '2';
-    img.src = googleFaviconUrl(domain);
+// Modal logo fallback chain (v45.13 — see icon audit, UCLA catch):
+// DOMAINS[] athletics favicon -> school's own .edu favicon -> Google favicon
+// proxy (for the .edu domain, not the athletics one) -> abbreviation text.
+//
+// Athletics-site favicons are frequently unfetchable (uclabruins.com,
+// virginiasports.com, etc. all 404 direct). The old 2-stage chain then fell
+// through to Google's s2 proxy for that SAME broken athletics domain — but
+// Google's proxy returns HTTP 404 with a real, byte-identical ~726B generic
+// globe PNG in the body. A browser <img> tag only looks at whether valid
+// image bytes came back, not the HTTP status, so onerror never fires a
+// second time and the chain silently "succeeds" showing a meaningless
+// placeholder — for exactly 26 schools, confirmed by hashing the response
+// bytes (all 26 byte-identical). The school's own university .edu domain
+// (already used by buildEmblemHtml's logoUrl() for cards) almost always has
+// a real, working favicon that the modal was never trying. Only fall to the
+// Google proxy — and only for the .edu domain, which is far less likely to
+// be broken than the athletics one — as the true last resort before text.
+function handleModalLogoError(img, athDomain, uniDomain){
+  const stage = img.dataset.stage || '0';
+  if(stage === '0' && uniDomain && uniDomain !== athDomain){
+    img.dataset.stage = '1';
+    img.src = 'https://' + uniDomain + '/favicon.ico';
     return;
+  }
+  if(stage !== '2'){
+    img.dataset.stage = '2';
+    const proxyDomain = uniDomain || athDomain;
+    if(proxyDomain){
+      img.src = googleFaviconUrl(proxyDomain);
+      return;
+    }
   }
   img.style.display = 'none';
   const abbr = document.getElementById('modal-abbr');
@@ -1451,10 +1482,10 @@ function buildModalHeader(u){
   const logoEl = document.getElementById('modal-logo');
   const abbrEl = document.getElementById('modal-abbr');
   const domain = DOMAINS[u.id];
-  const iconSrc = ICON_OVERRIDES[u.id] || (domain ? `https://${domain}/favicon.ico` : null);
+  const iconSrc = ICON_OVERRIDES[u.id] || (domain ? `https://${domain}/favicon.ico` : (u.domain ? `https://${u.domain}/favicon.ico` : null));
   if(iconSrc){
     logoEl.innerHTML = `<img src="${iconSrc}" alt="${u.id}"
-      onerror="handleModalLogoError(this,'${domain||''}')">
+      onerror="handleModalLogoError(this,'${domain||''}','${u.domain||''}')">
       <span id="modal-abbr" style="display:none;font-size:11px;font-weight:700;color:var(--muted)">${(u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3)}</span>`;
   } else {
     abbrEl.textContent = (u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3);

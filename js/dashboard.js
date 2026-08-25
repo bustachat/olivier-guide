@@ -424,6 +424,17 @@ function updateShortlist() {
     return;
   }
 
+  // Shortlist card icons follow the SAME chain CLAUDE.md §4 documents for the
+  // Explore card and the Details modal: ICON_OVERRIDES[id] -> the school's own
+  // /favicon.ico -> Google's favicon proxy -> coloured initials.
+  //
+  // v45.14: this surface used to lead with `https://logo.clearbit.com/{domain}`
+  // — a third-party logo API that appeared nowhere in §4, was the only such
+  // dependency in the project, and made the same school render a Clearbit logo
+  // here and a favicon on its own card. Removed so all three surfaces agree.
+  // If real (non-favicon) logos are wanted, that is an ICON_OVERRIDES /
+  // assets/logos decision applied uniformly, not one surface reaching out to an
+  // unpinned external service on its own.
   el.innerHTML = display.map((u, idx) => {
     const gpaMin     = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
     const costNum    = u.fin?.costNum ?? 0;
@@ -448,8 +459,8 @@ function updateShortlist() {
             ? `<img src="${ICON_OVERRIDES[u.id]}" alt="${u.name}" width="28" height="28" style="object-fit:contain"
                 onerror="this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}">`
             : u.domain
-            ? `<img src="https://logo.clearbit.com/${u.domain}" alt="${u.name}" width="28" height="28" style="object-fit:contain"
-                onerror="this.src='https://${u.domain}/favicon.ico';this.onerror=function(){this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}}">`
+            ? `<img src="https://${u.domain}/favicon.ico" alt="${u.name}" width="28" height="28" style="object-fit:contain"
+                onerror="this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}">`
             : `<span style="font-size:9px;font-weight:800;color:var(--muted)">${u.name.slice(0,4)}</span>`
           }
         </div>

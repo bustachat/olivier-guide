@@ -2,7 +2,7 @@
   {
     "name": "MAXAID / missing field",
     "file": "data/conferences.json",
-    "find": "    \"maxAid\": \"9.9\",\r\n",
+    "find": "    \"maxAid\": \"9.9\",\n",
     "replace": "",
     "expect": "MAXAID"
   },

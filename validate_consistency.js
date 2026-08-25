@@ -74,11 +74,21 @@ Object.entries(idCount).filter(([, c]) => c > 1).forEach(([id, c]) => note('DUP'
 
 // ── app.js lookup tables (DOMAINS / SITE_URLS / SOCIAL) ──
 const appjs = fs.readFileSync(path.join(ROOT, 'js/app.js'), 'utf8');
+// Hoisted above every consumer (ICONFALLBACK, COSTSTR, PROSE): a rule about what the CODE
+// does must never be tripped by the comment describing the rule. One copy only.
+const deComment = src => src.split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n');
 function extractKeys(varName) {
   const start = appjs.indexOf(`const ${varName} = {`);
   const end = appjs.indexOf('\n};', start);
   const body = appjs.slice(start, end);
   return [...body.matchAll(/^\s{2}([a-z_][a-z0-9_]*):/gmi)].map(m => m[1]).filter(k => !k.startsWith('_'));
+}
+// The VALUES of the DOMAINS map (athletics hosts), www-normalised — needed by ICONFALLBACK
+// to prove a placeholder-domain entry actually corresponds to a real school host.
+function extractDomainValues() {
+  const start = appjs.indexOf('const DOMAINS = {');
+  const body = appjs.slice(start, appjs.indexOf('\n};', start));
+  return [...body.matchAll(/:\s*'([^']+)'/g)].map(m => m[1].replace(/^www\./, ''));
 }
 const ids = schools.map(s => s.id);
 const idSet = new Set(ids);
@@ -213,6 +223,48 @@ conferences.forEach(c => {
 });
 if (/scholarships\s*\.\s*split\s*\(/.test(appjs)) {
   note('MAXAID', `js/app.js parses c.scholarships with .split() again — the Max Aid tile must read the stored c.maxAid field, not the prose (see CLAUDE.md §6, v44.50)`);
+}
+
+// ── ICONFALLBACK (added v45.15) — PLACEHOLDER_ICON_DOMAINS must stay live and honest.
+// Why the list exists: Google's favicon proxy answers HTTP 404 with a decodable ~726B
+// generic-globe PNG rather than an error, so an <img> onerror never fires a second time and
+// the coloured-initials stage that is supposed to be the last resort is UNREACHABLE for any
+// school reaching the proxy (diagnosed v45.13, fixed v45.15 by skipping the proxy for these
+// domains). Two failure modes, neither visible any other way:
+//   1. A typo'd or stale domain silently matches nothing — the school keeps showing a globe
+//      and the list looks correct. Same class as a stale DOMAINS entry.
+//   2. A chain stops consulting the list — the data is fine and the fix is simply gone.
+// So the data check alone is not enough; the code-shape guard is what makes this durable,
+// exactly as MAXAID (v44.50) and CHIPS (v44.45) needed theirs.
+{
+  const start = appjs.indexOf('const PLACEHOLDER_ICON_DOMAINS = new Set([');
+  if (start < 0) {
+    note('ICONFALLBACK', `js/app.js has no PLACEHOLDER_ICON_DOMAINS set — without it Google's proxy placeholder makes the coloured-initials fallback unreachable (CLAUDE.md §4)`);
+  } else {
+    const body = appjs.slice(start, appjs.indexOf(']);', start));
+    const listed = [...body.matchAll(/'([^']+)'/g)].map(m => m[1]);
+    const known = new Set();
+    schools.forEach(s => { if (s.domain) known.add(String(s.domain).replace(/^www\./, '')); });
+    extractDomainValues().forEach(d => known.add(d));
+    listed.filter(d => !known.has(d)).forEach(d =>
+      note('ICONFALLBACK', `PLACEHOLDER_ICON_DOMAINS lists '${d}' but no school uses that domain — a typo here matches nothing and silently leaves the school showing a generic globe`));
+    if (!listed.length) {
+      note('ICONFALLBACK', `PLACEHOLDER_ICON_DOMAINS is empty — if that is deliberate, delete the set and its call sites rather than leaving dead scaffolding`);
+    }
+  }
+  // Every fallback chain must actually consult the list. js/app.js owns the card
+  // (handleLogoError) and modal (handleModalLogoError) chains; js/dashboard.js owns the
+  // shortlist chain inline. See the per-surface table in CLAUDE.md §4.
+  const dashjs = fs.readFileSync(path.join(ROOT, 'js/dashboard.js'), 'utf8');
+  // Lookbehind excludes the function DECLARATION itself — counting it would let a chain drop
+  // its call while the total still cleared the threshold, i.e. the guard would go silent
+  // exactly when it is needed. (Caught by negative-testing this check, v45.15.)
+  for (const [file, src, n] of [['js/app.js', appjs, 2], ['js/dashboard.js', dashjs, 1]]) {
+    const hits = (deComment(src).match(/(?<!function\s)isPlaceholderIconDomain\s*\(/g) || []).length;
+    if (hits < n) {
+      note('ICONFALLBACK', `${file} calls isPlaceholderIconDomain() ${hits}x, expected at least ${n} — a logo fallback chain stopped consulting the placeholder list, so its coloured-initials stage is unreachable again (CLAUDE.md §4)`);
+    }
+  }
 }
 
 // ── coaches ──
@@ -420,7 +472,6 @@ if (valueMismatches.length) {
 // Shared by COSTSTR and PROSE. A rule about what the CODE does must not be
 // tripped by the comment that explains the rule — the clean baseline fired on
 // this check's own explanatory comment until it was stripped (negative-tested).
-const deComment = src => src.split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n');
 
 // ── SHORTFIELDS (added v44.61): two card stats must not go back to parsing prose ──
 // The card's "Soccer Level" and "Pre-PT Path" stats used to be produced by

@@ -54,5 +54,33 @@
     "find": "function housingPenalty(school) {",
     "replace": "function housingDeduction(school) {",
     "expect": "SCORES-SRC"
+  },
+  {
+    "name": "ICONFALLBACK / a placeholder domain is typo'd (matches no school)",
+    "file": "js/app.js",
+    "find": "  'nocjets.com',             // noc_enid\n",
+    "replace": "  'nocjets-typo.com',        // noc_enid\n",
+    "expect": "ICONFALLBACK"
+  },
+  {
+    "name": "ICONFALLBACK / the placeholder set is removed entirely",
+    "file": "js/app.js",
+    "find": "const PLACEHOLDER_ICON_DOMAINS = new Set([\n",
+    "replace": "const PLACEHOLDER_ICON_DOMAINS_UNUSED = new Set([\n",
+    "expect": "ICONFALLBACK"
+  },
+  {
+    "name": "ICONFALLBACK / the card chain stops consulting the list (code-shape guard)",
+    "file": "js/app.js",
+    "find": "if(img.dataset.stage !== '2' && !isPlaceholderIconDomain(p.dataset.domain)){",
+    "replace": "if(img.dataset.stage !== '2'){",
+    "expect": "ICONFALLBACK"
+  },
+  {
+    "name": "ICONFALLBACK / the shortlist chain stops consulting the list (code-shape guard)",
+    "file": "js/dashboard.js",
+    "find": "    const slLastResort = isPlaceholderIconDomain(u.domain)\n",
+    "replace": "    const slLastResort = false\n",
+    "expect": "ICONFALLBACK"
   }
 ]

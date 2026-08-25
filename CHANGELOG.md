@@ -6,6 +6,36 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.15 (2026-08-25) — Fix: the coloured-initials logo fallback was unreachable on all three surfaces; 15 schools now show legible initials instead of a meaningless globe
+
+v45.13 diagnosed this precisely and then routed around it rather than remediating it; v45.14's audit flagged it as the highest-value item left. This closes it.
+
+**The defect.** `https://www.google.com/s2/favicons?domain=…` does **not** error when it has no icon for a domain — it answers **HTTP 404 with a real, decodable, byte-identical ~726-byte generic-globe PNG in the body**. A browser `<img>` only checks whether valid image bytes arrived, not the status code, so `onerror` never fires a second time. Every logo chain in this project ends at that proxy, which meant the coloured-initials stage that is supposed to be the true last resort was **dead code for any school reaching it** — the 15 schools with no working favicon anywhere (`DOMAINS[id]` === their own `domain`, so no second host to try) rendered a meaningless globe on the card, in the modal, and in the Dashboard shortlist alike.
+
+**The fix — `PLACEHOLDER_ICON_DOMAINS` (js/app.js), an evidence-backed denylist.** The 15 domains were already hash-confirmed during the v45.13 audit, so no new research and no network access was needed. `handleLogoError` (card), `handleModalLogoError` (modal) and the shortlist's inline chain now all skip the proxy stage for those domains and fall straight through to initials. `isPlaceholderIconDomain()` www-normalises so a stored `www.foo.com` and `foo.com` agree. **No size/`naturalWidth` heuristic was used** — that would need a real browser to trust, and none is reachable from a sandboxed session.
+
+**Verified behaviourally, not by eyeballing the diff.** The full `onerror` cascade was simulated against both app.js chains with a DOM stub, and the shortlist template was rendered for all four of its branches:
+
+| Surface | placeholder domain | normal domain (`ucla.edu`) |
+|---|---|---|
+| Card | proxy skipped → **initials** | proxy still tried → initials |
+| Modal | proxy skipped → **initials** | `.edu` direct → proxy → initials |
+| Shortlist | proxy stage omitted from the emitted `onerror` | proxy stage present |
+
+`www.`-prefixed input normalises correctly, the no-`domain` branch is untouched, and no chain loops. **Behaviour for the other 155 schools is unchanged** — this only removes a stage that could never have succeeded.
+
+**`ICONFALLBACK` validator check added, with 4 negative tests.** A list nothing validates will drift, and both of its failure modes are invisible any other way: a typo'd domain silently matches nothing (the school keeps its globe while the list *looks* right), and a chain that stops calling `isPlaceholderIconDomain()` loses the fix entirely while every data check still passes. The check covers both — including a code-shape guard on all three call sites, the same durability MAXAID (v44.50) and CHIPS (v44.45) needed.
+
+**A real bug in that check, caught by negative-testing it rather than by trusting `Issues: 0`.** The first version counted call sites with a naive `/isPlaceholderIconDomain\s*\(/g`, which also matches the function's own **declaration** — so app.js scored 3 against a threshold of 2, and dropping one chain's call would have left 2 hits and kept the guard silent *exactly when it was needed*. Fixed with a `(?<!function\s)` lookbehind and thresholds set to the true call-site counts (2 in app.js, 1 in dashboard.js). Suite now reports **12/12 proven · all branches proven**.
+
+Also hoisted the single `deComment()` definition above its first consumer — the new check needed it and it was declared ~380 lines later, i.e. in the temporal dead zone. Hoisted rather than duplicated, per the SCORES-SRC lesson: never a second copy of a helper.
+
+**Still outstanding for those 15 schools:** real per-school `ICON_OVERRIDES` logos (CLAUDE.md §6D). This upgrades their fallback from a meaningless globe to legible initials; it is not a substitute for the logo work.
+
+Files: `js/app.js`, `js/dashboard.js`, `validate_consistency.js`, `negtests/checks.json`, `CLAUDE.md` (§4, §6D, §15), `CHANGELOG.md`, `athletes/olivier.json` (guideVersion v45.14→v45.15). No data file, scoring field, or school record touched. `validate_schools.py` PASS (170 schools, 19 warnings, unchanged); `validate_consistency.js` **Issues: 0**; negtest **12/12**.
+
+---
+
 ### v45.14 (2026-08-25) — Audit of v45.13: false-passing negative test repaired, unreconciled counts corrected, §4's icon-chain description made true, Clearbit dependency removed
 
 Owner asked for an independent check of the v45.13 icon session. The fix itself held up — `f15cdf8` is genuinely on `origin/main`, `handleModalLogoError`'s stage machine has no logic bug, all 15 "still broken" schools really do have `DOMAINS[]` === `domain` (no fallback possible), and all 7 "fixed" schools really do have a distinct `.edu` domain. `validate_schools.py` PASS (170 schools, 19 warnings) and `validate_consistency.js` **Issues: 0** both reproduce. Four things did not hold up.

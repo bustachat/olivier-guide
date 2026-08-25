@@ -646,6 +646,56 @@ const ICON_OVERRIDES = {
   virginia: 'https://www.google.com/s2/favicons?domain=virginia.edu&sz=64',
 };
 
+// ── Domains Google's favicon proxy has no icon for ───────────────────────────
+// EVIDENCE-BACKED DENYLIST, not a guess list. Do not add a domain here without
+// hash-confirming it first (see below), and never "just in case".
+//
+// Why this has to exist at all: https://www.google.com/s2/favicons?domain=...
+// does NOT error when it has no icon for a domain. It answers HTTP 404 with a
+// real, decodable, byte-identical ~726-byte generic-globe PNG in the body. A
+// browser <img> only checks whether valid image bytes arrived, not the status
+// code, so onerror never fires again and every fallback chain in this project
+// silently "succeeds" on a meaningless globe -- which made the coloured-
+// initials stage that is supposed to be the true last resort UNREACHABLE for
+// any school reaching the proxy (diagnosed v45.13, fixed here in v45.15).
+//
+// Skipping the proxy for these domains lets the chain fall straight through to
+// legible initials instead. That is strictly better than a globe and costs
+// nothing -- it is independent of, and much cheaper than, sourcing a real logo
+// per school (still the proper fix, tracked in CLAUDE.md SS6D).
+//
+// To confirm a domain belongs here, compare the proxy's response bytes against
+// a known-good one -- the placeholder is byte-identical every time:
+//   curl -s "https://www.google.com/s2/favicons?domain=DOMAIN&sz=64" | sha256sum
+// A match with the other entries below = placeholder. Anything else = real
+// icon, so it does NOT belong here.
+//
+// All 15 below are schools where DOMAINS[id] === the school's own `domain`,
+// so there is no second host left to try -- the proxy is genuinely the last
+// stage before initials. Hash-confirmed during the v45.13 icon audit.
+const PLACEHOLDER_ICON_DOMAINS = new Set([
+  'gauchoathletics.com',     // glendale_cc_az
+  'goneosho.com',            // neosho_county_cc
+  'iowalakesathletics.com',  // iowa_lakes_cc
+  'buccaneersports.com',     // blinn_college
+  'cbcathletics.com',        // coastal_bend_cc
+  'angelinaathletics.com',   // angelina_college
+  'eacmonsters.com',         // eastern_arizona
+  'rustlerathletics.com',    // central_wyoming
+  'golccc.com',              // laramie_county_cc
+  'wnccathletics.com',       // western_nebraska_cc
+  'tsctrojans.com',          // trinidad_state
+  'athletics.jeffco.edu',    // jefferson_college_mo
+  'harcum.edu',              // harcum_college
+  'cgtctitans.com',          // central_georgia_tech
+  'nocjets.com',             // noc_enid
+]);
+// Normalises a leading www. so a stored 'www.foo.com' and 'foo.com' agree.
+function isPlaceholderIconDomain(domain){
+  if(!domain) return false;
+  return PLACEHOLDER_ICON_DOMAINS.has(String(domain).replace(/^www\./, ''));
+}
+
 // ── School emblem logo helper ────────────────────────────────────────────────
 // Tries a known ICON_OVERRIDES entry first, else the school's own /favicon.ico
 // directly (v45.06 — Google's s2 favicon proxy was found silently failing to
@@ -662,7 +712,9 @@ function googleFaviconUrl(domain){
 }
 function handleLogoError(img){
   const p = img.parentNode;
-  if(img.dataset.stage !== '2'){
+  // Skip the proxy for domains it only answers with a generic globe, so the
+  // coloured-initials fallback below is actually reachable (v45.15).
+  if(img.dataset.stage !== '2' && !isPlaceholderIconDomain(p.dataset.domain)){
     img.dataset.stage = '2';
     img.src = googleFaviconUrl(p.dataset.domain);
     return;
@@ -1468,7 +1520,9 @@ function handleModalLogoError(img, athDomain, uniDomain){
   if(stage !== '2'){
     img.dataset.stage = '2';
     const proxyDomain = uniDomain || athDomain;
-    if(proxyDomain){
+    // Same skip as handleLogoError: a proxy that answers with a globe instead
+    // of an error would make the text-initials stage below unreachable.
+    if(proxyDomain && !isPlaceholderIconDomain(proxyDomain)){
       img.src = googleFaviconUrl(proxyDomain);
       return;
     }

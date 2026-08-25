@@ -447,6 +447,16 @@ function updateShortlist() {
 
     const badge = `<div class="dash-sl-star" style="background:var(--surface3);color:var(--muted);border:1px solid var(--border)">#${idx + 1}</div>`;
 
+    // Icon fallback stages, built up front so the proxy stage can be omitted
+    // entirely for domains Google only answers with a generic globe — without
+    // that, onerror never fires again and slInitials is unreachable (v45.15,
+    // see PLACEHOLDER_ICON_DOMAINS in js/app.js and CLAUDE.md §4).
+    const slInitials   = `<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>`;
+    const slToInitials = `this.parentNode.innerHTML='${slInitials}'`;
+    const slLastResort = isPlaceholderIconDomain(u.domain)
+      ? slToInitials
+      : `this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){${slToInitials}}`;
+
     let warn = '';
     if (ineligible) warn = '<div class="dash-sl-warn gpa">GPA below entry minimum</div>';
     else if (overBudget) warn = '<div class="dash-sl-warn budget">Above current budget</div>';
@@ -457,10 +467,10 @@ function updateShortlist() {
         <div style="width:34px;height:34px;border-radius:7px;background:var(--surface2);border:1px solid var(--border2);box-shadow:inset 0 0 0 1px rgba(0,0,0,.05);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0">
           ${ICON_OVERRIDES[u.id]
             ? `<img src="${ICON_OVERRIDES[u.id]}" alt="${u.name}" width="28" height="28" style="object-fit:contain"
-                onerror="this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}">`
+                onerror="${slLastResort}">`
             : u.domain
             ? `<img src="https://${u.domain}/favicon.ico" alt="${u.name}" width="28" height="28" style="object-fit:contain"
-                onerror="this.src='https://www.google.com/s2/favicons?domain=${u.domain}&sz=64';this.onerror=function(){this.parentNode.innerHTML='<span style=\\'font-size:9px;font-weight:800;color:var(--muted)\\'>${u.name.slice(0,4)}</span>'}">`
+                onerror="${slLastResort}">`
             : `<span style="font-size:9px;font-weight:800;color:var(--muted)">${u.name.slice(0,4)}</span>`
           }
         </div>

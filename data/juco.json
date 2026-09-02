@@ -1407,10 +1407,10 @@
       }
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Associate degree — transfer prerequisite pathway",
-    "degreeTitle": "A.A. in Exercise Science & Kinesiology (2-year transfer degree)",
-    "acuAlign": 4,
-    "acuAlignNote": "Indian Hills' A.A. in Exercise Science & Kinesiology covers ACU science prerequisites: Human Anatomy & Physiology → ANAT100; Biology foundations → BIOL125; Exercise Physiology coursework → EXSC225; Kinesiology & Human Movement → EXSC224. The degree name explicitly includes 'Exercise Science & Kinesiology' — both are program requirements, not electives. Also includes Physical Therapist Assistant pathway coursework (A.A.S. available). WES evaluation required for ACU credit recognition. Confirm specific course equivalences with Indian Hills academic advisor.",
+    "kinRank": "No Exercise Science or Kinesiology program exists at Indian Hills — a general Associate of Science transfer degree only (Human Anatomy and Biology available as science electives)",
+    "degreeTitle": "Associate of Science, A.S. (general transfer degree — no dedicated Exercise Science, Kinesiology, or Physical Education program)",
+    "acuAlign": 2,
+    "acuAlignNote": "Indian Hills does not offer an Exercise Science or Kinesiology program — confirmed via the college's own official Program Finder (96 programs listed, zero matches for exercise, kinesiology, sports, or fitness) and its Associate of Science general-education requirements. The A.S. transfer degree lets a student choose Human Anatomy (with lab) and General Biology as science electives, which cover ACU's Human Anatomy & Physiology and Biology Foundations prerequisites — but there is no equivalent to Exercise Physiology or Kinesiology & Human Movement outside Indian Hills' separate Physical Therapist Assistant program (A.A.S.), a selective 21-month clinical track with its own admissions testing, clinical observation hours, and background checks — not a realistic fit alongside two years of full-time JUCO soccer. acuAlign scored 2, reflecting only the confirmed Human Anatomy and Biology elective coverage. WES evaluation required for any transferred credit; confirm specific course equivalences with an Indian Hills academic advisor.",
     "soccerLevel": "JUCO — NJCAA Division I (2025 National Champions)",
     "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
@@ -1465,7 +1465,7 @@
     "lensScores": {
       "overall": 43,
       "soccer": 80,
-      "academic": 32,
+      "academic": 26,
       "minutes": 55,
       "lifestyle": 22,
       "value": 55
@@ -1530,7 +1530,7 @@
       },
       {
         "unit": "EXSC225",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -1542,7 +1542,7 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",

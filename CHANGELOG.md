@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.14 (2026-09-03) — Fix: `proPlayers.nextLevel.note` was leaking internal research-audit language on all 89 JUCOs — not just Indian Hills
+
+Owner-reported via a screenshot of Indian Hills' Details modal (Pro Pipeline tab), asking what "Page PRINTS 24... exactly the signal dev scores were being distorted to carry" meant and how many other schools had the same problem.
+
+**Root cause: the same bug class as v44.89, on a field that bug's own fix never touched.** `proPlayers.nextLevel.note` renders verbatim (italic, under the D1-transfer-rate stat box) via `proPipelineHead()` in `js/app.js` — this was already named as a rendered field in the CLAUDE.md §8 DON'T rule added at v44.89, but nobody had actually swept it. Every one of the 89 JUCO schools carrying a `proPlayers.nextLevel` object (added across the §5b campaign, v42.1–v42.12, and the NJCAA gap-fill campaign, v44.71–v44.93) had its `note` field written as a research log for a future Claude session, not as copy for a parent or coach. Indian Hills was the worst example — "exactly the signal dev scores were being distorted to carry" is a direct reference to this guide's own §5a dev-score-calibration history — but roughly 9 other schools carried similarly bad leaks: `tyler_jc` ("p90 anchor of the 7 multi-year JUCOs"), `phoenix_college` ("EXCLUDED from the p90 divisor"), `pima_cc` (a literal browser-automation bug note: "navigate returns before render — read as a separate call"), `monroe_college`/`casper_college` ("same treatment as Phoenix College's n=1 precedent"), `angelina_college` ("owner-approved neutral (v42.12)" — a version number), and `efsc`/`arizona_western`/`iowa_western` (similar "scored on the rate, not the raw count" / benchmark-divisor language). The remaining ~79 used a repeated "neutral, NOT measured" / "Tier-1-verified... TopDrawerSoccer tracker by name (a lead only, not independently verified)" template — readable but still internal sourcing/QA jargon a family has no context for.
+
+**Fix — text-only, no scoring cascade.** All 89 `proPlayers.nextLevel.note` fields in `data/juco.json` were rewritten into plain language: real findings (a confirmed transfer name and destination, a genuinely comprehensive alumni page, a mislabeled NCAA division) are kept and stated plainly; internal accounting (divisor/benchmark/precedent talk, version numbers, tracker-verification methodology, tooling notes) is dropped. `perYear`, `d1Count`, `years`, and `sourceUrl` were not touched — `nextLevel.note` carries no scoring weight, so no `fitOlivier`/`lensScores` recompute was needed or performed.
+
+**Verified:** `python -m json.tool data/juco.json` passes. `validate_schools.py`: 0 errors, 19 warnings (all pre-existing, unrelated). `validate_consistency.js`: **Issues: 0**. Confirmed live in a local browser (`python -m http.server`) — opened Indian Hills' and Tyler JC's Pro Pipeline tabs via `openDetail()`, confirmed the new plain-language note renders correctly in place of the old audit-trail text, confirmed `unis.length === 170` (no data loss), and confirmed zero JavaScript console errors (only expected external favicon-fetch noise from schools without a live network path in this session).
+
+**Files:** `data/juco.json` (89 `proPlayers.nextLevel.note` rewrites — diff is exactly 89 changed lines, nothing else touched), `CLAUDE.md` (§1, §6 current-version lines; §8 DON'T rule extended to record this as a confirmed recurrence and warn that naming a field in the rule is not the same as having swept it), `athletes/olivier.json` (`guideVersion` v45.13 → v45.14).
+
+---
+
 ### v45.13 (2026-08-22) — Fix: modal logo fallback chain — UCLA and 5 other major schools were silently showing a generic placeholder globe
 
 Owner-reported via screenshot: UCLA's school Details modal showed a generic blue globe icon instead of its real logo, and asked directly whether the icon-audit work from the prior sessions (v45.06–v45.12) actually held up under scrutiny.

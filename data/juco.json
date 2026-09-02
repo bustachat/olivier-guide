@@ -68,7 +68,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "CCCAA (not NJCAA); \"Where did SMC athletes transfer to?\" page is an empty stub (nav + a Twitter widget, zero content) — neutral, NOT measured."
+        "note": "Santa Monica doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "acRank": "Top Transfer College",
@@ -315,7 +315,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Miami Dade doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "acRank": "Transfer College",
@@ -582,7 +582,7 @@
         "years": 23,
         "perYear": 4.0435,
         "sourceUrl": "https://goreivers.com/sports/msoc/former",
-        "note": "Verified in a real browser against the NCAA directory: 93 D1 transfers over 2004-2026 (23 yr) = 4.04/yr. More total D1 alumni than Tyler but over nearly double the window — scored on the rate, not the raw count."
+        "note": "93 confirmed D1 transfers over 2004–2026 (23 years) works out to about 4.0 per year. Iowa Western's alumni list is longer than Tyler JC's, but it covers nearly twice as many years — the per-year rate gives a fairer comparison than the raw count."
       }
     },
     "acRank": "Community College",
@@ -845,7 +845,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "2024 NJCAA DII National Champion; real next-level output (Edouard Nys → UIC → 40th overall 2025 MLS SuperDraft) was banked by UIC, not Northeast. No maintained per-year destination page — neutral, NOT measured."
+        "note": "2024 NJCAA DII National Champion. One notable alum, Edouard Nys, transferred to UIC and was picked 40th overall in the 2025 MLS SuperDraft — but that credit officially belongs to UIC, not Northeast. The school doesn't publish an ongoing transfer-destination page, so a year-by-year rate can't be measured."
       }
     },
     "acRank": "Community College",
@@ -1115,7 +1115,7 @@
         "years": 2,
         "perYear": 2,
         "sourceUrl": null,
-        "note": "Sidearm alumni page renders empty / parked lander; publishes no usable per-year D1 destination data. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (a lead only, not independently verified) and Tier-1-verified 4 on their destination schools' own rosters: Jinkinson (Missouri State, 2024), Weir (Wisconsin-Milwaukee, 2025), Lee and Silvestrini (both Xavier, 2025). A fifth 2024 lead (Thallinger→Tulsa) could not be confirmed on Tulsa's current roster and is not counted. ⚠️ 2-year cross-check, not a comprehensive alumni-page census — EXCLUDED from the comparison benchmark, same treatment as Phoenix College's n=1 precedent."
+        "note": "Monroe's own alumni page doesn't list transfer destinations, but 4 recent D1 transfers were confirmed directly on the receiving schools' rosters: Hugo Jinkinson (Missouri State, 2024), Ollie Weir (Wisconsin-Milwaukee, 2025), and Gun Ha Lee and Alejandro Silvestrini (both Xavier, 2025). That's only a 2-year snapshot rather than a full multi-year history, so it's shown as a real rate but treated as less certain than schools with a longer track record."
       }
     },
     "acRank": "NJCAA Level",
@@ -1403,7 +1403,7 @@
         "years": 17,
         "perYear": 0.8824,
         "sourceUrl": "https://indianhillsathletics.com/sports/msoc/alums/index",
-        "note": "Page PRINTS 24 \"NCAA DI\" destinations; only 15 are truly D1 when each is checked against the NCAA directory. Eastern New Mexico is labelled \"NCAA DI\" in 10 rows but plays D2 (Lone Star); one Liberty/ENMU pairing is inverted. True rate 15/17 = 0.88/yr, not the 1.41 the page implies. Highest JUCO dev-avg (78) yet a low placement rate — exactly the signal dev scores were being distorted to carry."
+        "note": "The program's own alumni page lists 24 “NCAA Division I” transfer destinations, but checking each one against the official NCAA directory shows only 15 are actually D1 — Eastern New Mexico, for example, is listed as D1 ten times but actually competes in D2's Lone Star Conference. Using the verified count, Indian Hills sends players to D1 programs at a rate of about 0.88 per year over 2008–2024, notably lower than its dev score (the highest of any JUCO in this guide) alone would suggest."
       }
     },
     "acRank": "NJCAA Level",
@@ -1837,7 +1837,7 @@
         "years": 12,
         "perYear": 6.5833,
         "sourceUrl": "https://apacheathletics.com/sports/msoc/Sites/Mens_Soccer_Next_Level",
-        "note": "Verified in a real browser, every destination checked against the NCAA member directory: 79 D1 transfers over 2012-2023 (12 yr) = 6.58/yr. The undivided 2012-2021 name lists mix D1/D2/D3/NAIA; men’s soccer only, D1 only counted. p90 anchor of the 7 multi-year JUCOs."
+        "note": "79 confirmed D1 transfers over 2012–2023 (12 years) — about 6.6 per year, the strongest D1 transfer rate of any JUCO in this guide. The school's own list mixes players who went to D1, D2, D3, and NAIA programs without labeling which is which; only confirmed D1 men's soccer destinations are counted here."
       }
     },
     "juco2yr": true,
@@ -2096,7 +2096,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "2025 NJCAA DI National Champions, yet publishes no usable alumni/transfer destination data. A title is a result and lives in titles[], not here. Cross-checked TopDrawerSoccer's 2024/2025 D1 transfer trackers by name (a lead only, not independently verified) and Tier-1-verified one real transfer: Carlos Zambrano to Syracuse for 2024 (confirmed on Syracuse's own roster). A second 2025 lead (Zuniga→Wisconsin-Milwaukee) could not be confirmed on UWM's current roster and is not counted. One confirmed name from a non-exhaustive tracker isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
+        "note": "2025 NJCAA DI National Champions — but the program doesn't publish a page tracking where players transfer next. One confirmed D1 transfer was found: Carlos Zambrano, who moved to Syracuse for the 2024 season. That's not enough to calculate a reliable year-by-year rate."
       }
     },
     "juco2yr": true,
@@ -2273,7 +2273,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Alumni page is a submission form only — no destination data published."
+        "note": "Barton's alumni page is just a submission form for former players to fill out — it doesn't publish any actual transfer destinations, so this can't be measured."
       }
     },
     "devScores": {
@@ -2536,7 +2536,7 @@
         "years": 7,
         "perYear": 3.5714,
         "sourceUrl": "https://cowleytigers.com/sports/msoc/alumni",
-        "note": "Verified in a real browser against the NCAA directory: 25 D1 transfers over 7 seasons = 3.57/yr."
+        "note": "25 confirmed D1 transfers over the last 7 seasons — about 3.6 per year."
       }
     },
     "devScores": {
@@ -2793,7 +2793,7 @@
         "years": 21,
         "perYear": 0.7143,
         "sourceUrl": "https://awcmatadors.com/sports/msoc/MSOC_Moving_On",
-        "note": "Page prints \"NCAA DI\" 25 times; only 15 are real. Arizona, Arizona State, Northern Arizona, Southern Utah and New Mexico State are D1 institutions that sponsor NO varsity men’s soccer (nauathletics.com lists soccer under Women’s only). Institution division ≠ sport sponsorship. True rate 15/21 = 0.71/yr."
+        "note": "The program's alumni page lists 25 “NCAA Division I” destinations, but several of those schools — Arizona, Arizona State, Northern Arizona, Southern Utah, and New Mexico State — don't actually field a men's soccer team at all (their D1 status is for other sports). Counting only real men's soccer destinations, the true rate is 15 transfers over 21 years, about 0.71 per year."
       }
     },
     "devScores": {
@@ -3055,7 +3055,7 @@
         "years": 1,
         "perYear": 3,
         "sourceUrl": null,
-        "note": "No maintained alumni destination page exists — the school's own '13 transfers in 2025' claim has no verifiable per-player breakdown. Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's transfer trackers by name (a lead only, not independently verified) and Tier-1-verified 3 for 2025 on their destination schools' own rosters: Achermann-Stanfield (Tulsa), Emmanuel (SMU), McCoy (South Florida). ⚠️ n=1 year, same treatment as Phoenix College's precedent — stored as a real measured rate but EXCLUDED from the comparison benchmark (a single cross-checked year is not the comprehensive multi-year alumni-page census the divisor's 7 schools were built from, and the school's own '13' figure suggests this 3 is itself an undercount, not an overcount)."
+        "note": "EFSC doesn't publish a page tracking individual transfer destinations, though the school has publicly claimed 13 transfers in 2025 without naming them. Three 2025 transfers were independently confirmed on the receiving schools' own rosters: Achermann-Stanfield (Tulsa), Emmanuel (SMU), and McCoy (South Florida) — likely an undercount of the school's real total, since only one season's worth of data could be verified."
       }
     },
     "devScores": {
@@ -3316,7 +3316,7 @@
         "years": 1,
         "perYear": 3,
         "sourceUrl": "https://d2o2figo6ddd0g.cloudfront.net/p/q/rwrkzf3a0lwf0k/moving_on.pdf",
-        "note": "n=1: single 2024-25 \"Athletes Moving On\" PDF (school-wide; men’s soccer only counted), 3 D1 = 3.0/yr, factor 0.593. STORED but EXCLUDED from the p90 divisor — a 1-year window is not comparable to Tyler’s 12 or Iowa Western’s 23 and would distort the percentile. Extracted with pdfplumber (Chrome’s PDF plugin exposes no text)."
+        "note": "Phoenix College publishes one school-wide 'Athletes Moving On' document covering the 2024-25 year, which lists 3 men's soccer players who moved on to D1 programs. That's only one year of data, so it's shown here as an indicator rather than a confirmed long-term rate."
       }
     },
     "devScores": {
@@ -3578,7 +3578,7 @@
         "years": 11,
         "perYear": 1.9091,
         "sourceUrl": "https://pimaaztecs.com/sports/msoc/movingon",
-        "note": "Verified in a real browser against the NCAA directory: 21 D1 transfers over 2015-2025 (11 yr) = 1.91/yr. Pima is the median school — its factor equals the neutral. Initially assumed to publish nothing; a \"Moving On\" page does exist (navigate returns before render — read as a separate call)."
+        "note": "21 confirmed D1 transfers over 2015–2025 (11 years) — about 1.9 per year, right around the typical rate for JUCOs in this guide with a documented transfer history."
       }
     },
     "devScores": {
@@ -3833,7 +3833,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "New program (launched 2022), no destination track record published — neutral, NOT measured."
+        "note": "Mohave's program launched in 2022 and doesn't yet have a published transfer track record to measure."
       }
     },
     "devScores": {
@@ -4087,7 +4087,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Nav link /sports/msoc/alumni is a decoy — lists All-Conference honours, not transfer destinations — neutral, NOT measured."
+        "note": "Glendale's 'Alumni' page lists All-Conference honors, not where players actually transferred to, so this can't be measured from what's published."
       }
     },
     "devScores": {
@@ -4349,7 +4349,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Dodge City doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -4605,7 +4605,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Neosho County doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -4860,7 +4860,7 @@
         "years": 7,
         "perYear": 0.1429,
         "sourceUrl": "https://sccblackhawks.com/sports/msoc/Men-s_Soccer_Alumni",
-        "note": "Verified in a real browser against the NCAA directory: only 1 true D1 transfer over 2018-2024 = 0.14/yr. Lands below the neutral — accepted: we do not reward a program for a quiet website, nor punish it for an honest one."
+        "note": "Only 1 confirmed D1 transfer over 2018–2024 — about 0.14 per year, one of the lowest confirmed rates in this guide. This is a genuinely low measured number, not a case of missing data."
       }
     },
     "devScores": {
@@ -5112,7 +5112,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Iowa Lakes doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -5367,7 +5367,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Blinn doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -5631,7 +5631,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page (Cloudflare-fronted; site root clears the challenge but the sport page carries no destination data) — neutral, NOT measured."
+        "note": "Coastal Bend doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -5881,7 +5881,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Only a one-off news release (2 D1, 2025-26) that self-declares incompleteness (\"the list (so far)\") — not a maintained alumni page; still owner-approved neutral (v42.12). Separately cross-checked TopDrawerSoccer's 2025 D1 transfer tracker by name (a lead only, not independently verified) and Tier-1-verified one real transfer: Abdallah Traore to Memphis for 2025 (confirmed on Memphis's own roster) — likely one of the release's own '2 D1' figure, not additional to it. One confirmed name from a non-exhaustive source isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
+        "note": "Angelina published a single news release naming 2 players who moved to D1 programs in 2025-26, calling it an incomplete 'list so far.' One of those transfers was independently confirmed: Abdallah Traore, who moved to Memphis for 2025. That's not enough to calculate a reliable year-by-year rate."
       }
     },
     "devScores": {
@@ -6133,7 +6133,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Alumni page is a submission form only — no destination data published. Cross-checked TopDrawerSoccer's 2024/2025 D1 transfer trackers by name (a lead only, not independently verified) and Tier-1-verified one real transfer: Ryan Jeanfreau to Presbyterian for 2024 (confirmed on Presbyterian's own roster). A second 2024 lead (Lezzar→CSUN) could not be cleanly confirmed — CSUN's roster shows him with a transfer marker but no explicit \"LSU Eunice\" text, so it is not counted. One confirmed name from a non-exhaustive tracker isn't a measured rate — neutral, NOT measured as a rate; see `notable[]` for the confirmed name."
+        "note": "LSU Eunice's alumni page is just a submission form for former players — it doesn't publish actual destinations. One confirmed D1 transfer was found: Ryan Jeanfreau, who moved to Presbyterian College for 2024. That's not enough to calculate a reliable year-by-year rate."
       }
     },
     "devScores": {
@@ -6383,7 +6383,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Alumni page is a survey only — no destination data published — neutral, NOT measured."
+        "note": "Nassau's alumni page is just a survey for former players — it doesn't publish actual destinations, so this can't be measured."
       }
     },
     "devScores": {
@@ -6638,7 +6638,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Ulster doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -6892,7 +6892,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Suffolk doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -7116,7 +7116,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Westchester doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -7340,7 +7340,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No usable alumni destination page — neutral, NOT measured."
+        "note": "Johnson County doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -7678,7 +7678,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Murray State publishes no alumni, 'next level' or signings page — the men's soccer section carries only a news archive. Verified by enumerating every link on the men's soccer landing page: no next-level/alumni/transfer destination page exists. Neutral, NOT measured."
+        "note": "Murray State's men's soccer site has only a news archive — no dedicated alumni or transfer-destination page — so this can't be measured."
       }
     },
     "juco2yr": true,
@@ -7854,7 +7854,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No alumni/next-level tracking page found anywhere on trailblazers.lc.edu (checked the full site nav). Cross-checked TopDrawerSoccer's 2024 and 2025 NCAA D1 men's soccer transfer trackers by name and found one real, Tier-1-verifiable transfer: Daniel Freire to Eastern Illinois for 2025 (confirmed on EIU's own roster, which names Lewis & Clark CC as his previous school). That confirms real D1 output exists, but a single external tracker list is not an exhaustive record of every transfer in a given year (it is crowd-sourced and its own header says to report additions) — so it is deliberately NOT stored as a measured per-year rate, since one lucky match would understate head coach John Dunn's own claimed '6+' total transfers if treated as the whole picture. Neutral — NOT measured as a rate; see `notable[]` for the confirmed name."
+        "note": "Lewis & Clark CC doesn't publish its own alumni-tracking page, but one confirmed D1 transfer was found: Daniel Freire, who moved to Eastern Illinois for 2025 (confirmed on EIU's own roster). Head coach John Dunn has separately said the program has sent 6+ players on to four-year programs overall, but that broader total couldn't be independently verified, so only the one confirmed name is counted here."
       }
     },
     "devScores": {
@@ -8116,7 +8116,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": "https://www.oterorattlers.com/sports/msoc/2026-27/releases/20260715op9vn5",
-        "note": "No standing alumni/next-level tracking page found on oterorattlers.com, but the official July 2026 athletics release names all 13 players who signed with four-year programs that year with exact destinations and divisions — a single-year snapshot, not a multi-year tracked rate, so left as a neutral factor rather than a measured perYear (consistent with how other JUCOs without a dedicated tracker page are treated). See notable[] for confirmed names/destinations."
+        "note": "Otero doesn't run an ongoing alumni-tracking page, but a July 2026 athletics release named all 13 players who signed with four-year programs that year, with exact destinations. That's a strong single-year snapshot, but not enough years of data to calculate a reliable long-term rate."
       }
     },
     "devScores": {
@@ -8383,7 +8383,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No current standing alumni/next-level tracking page found on mcraptors.com. The '70 student-athletes' figure is real and Tier-1 (Braz's official bio) but covers his 2012-2014 tenure specifically, not a current or ongoing tracked rate, so left as a neutral factor rather than a measured perYear."
+        "note": "Montgomery doesn't run an ongoing alumni-tracking page. The program's coaching staff has cited sending 70 student-athletes on to four-year schools, but that figure covers a specific multi-year coaching tenure (2012–2014) rather than a current, ongoing rate."
       }
     },
     "devScores": {
@@ -8632,7 +8632,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on ycathletics.com (checked the site nav and news archive). Cross-checked TopDrawerSoccer's transfer-tracker articles by school name; the only confirmed hits (Zander Glynn/UIC 2021, Matthew Ridley/UNLV 2020) fall outside the campaign's required 2024-2025 cross-check window, so are not used to set a measured rate. Neutral — NOT measured; see `notable[]` for the historical names found."
+        "note": "Yavapai doesn't run a dedicated alumni-tracking page. Two past D1 transfers were found — Zander Glynn (UIC, 2021) and Matthew Ridley (UNLV, 2020) — but both are several years old, so they aren't used to calculate a current rate."
       }
     },
     "devScores": {
@@ -8875,7 +8875,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "New program (launched 2023), no destination track record published — neutral, NOT measured."
+        "note": "Eastern Arizona's program launched in 2023 and doesn't yet have a published transfer track record to measure."
       }
     },
     "devScores": {
@@ -9116,7 +9116,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on csncoyotes.com (checked site nav and news archive). Neutral — NOT measured."
+        "note": "College of Southern Nevada doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -9353,7 +9353,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on cccollegeathletics.com. Neutral — NOT measured."
+        "note": "Community Christian College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -9567,7 +9567,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on eoscathletics.com (checked site nav — only a '4-Year Signings' page exists, which is an image-based graphic with no extractable text, not a maintained data page). One confirmed 2026 D1 transfer (Mauricio Jimenez to Radford University) found via the program's own news release, insufficient on its own to establish a measured rate. Neutral — NOT measured; see notable[] for the confirmed name."
+        "note": "Eastern Oklahoma State's '4-Year Signings' page is just an image graphic, not searchable data. One confirmed D1 transfer was found through a program news release: Mauricio Jimenez, who moved to Radford University for 2026. That's not enough to calculate a reliable year-by-year rate."
       }
     },
     "devScores": {
@@ -9820,7 +9820,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated multi-year alumni/next-level tracking page found on connorsathletics.com — only a single May 2025 news release naming the outgoing sophomore class's destinations. One confirmed D1 transfer (Miguel Gonzalez to Central Connecticut State) found in that release, insufficient on its own (a single year, not a maintained page) to establish a measured rate. Neutral — NOT measured; see notable[] for the confirmed names."
+        "note": "Connors State doesn't run an ongoing alumni-tracking page — just a single May 2025 news release naming that year's outgoing class. One confirmed D1 transfer from it: Miguel Gonzalez, who moved to Central Connecticut State. That's one year of data, not enough for a reliable rate."
       }
     },
     "devScores": {
@@ -10057,7 +10057,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on neoathletics.com (checked the men's soccer news archive and site nav). Neutral — NOT measured."
+        "note": "NEO A&M doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -10300,7 +10300,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on rscraiders.com (checked the men's soccer section and facilities/staff-directory nav). Neutral — NOT measured."
+        "note": "Rose State doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -10546,7 +10546,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "Program founded January 2024 — no graduating class old enough yet to have a measured transfer/pro-signing rate. Neutral — NOT measured."
+        "note": "National Park College's program launched in January 2024 — no class has been through the program long enough yet to have a transfer track record."
       }
     },
     "devScores": {
@@ -10794,7 +10794,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on bucksathletics.com. Neutral — NOT measured."
+        "note": "UA Rich Mountain doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -11012,7 +11012,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on hillcollegeathletics.com. Neutral — NOT measured."
+        "note": "Hill College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -11253,7 +11253,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on wtcathletics.com. Neutral — NOT measured."
+        "note": "Western Texas College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -11499,7 +11499,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found for Harry S. Truman College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Harry S. Truman College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+        "note": "Truman College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
       }
     },
     "devScores": {
@@ -11744,7 +11744,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found for Richard J. Daley College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Richard J. Daley College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+        "note": "Daley College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
       }
     },
     "devScores": {
@@ -11990,7 +11990,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found for Malcolm X College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Malcolm X College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+        "note": "Malcolm X College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
       }
     },
     "devScores": {
@@ -12201,7 +12201,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found for Kennedy-King College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Kennedy-King College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+        "note": "Kennedy-King College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
       }
     },
     "devScores": {
@@ -12442,7 +12442,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found for Wilbur Wright College (citycollegesofchicagoathletics.com, the district's primary athletics domain, is entirely dead/parked as of this research — confirmed a GoDaddy parked-domain lander on every path tried). Cross-checked Wilbur Wright College by exact name against both the 2025 and 2026 TopDrawerSoccer Men's Division I Transfer Tracker articles (discovery-only, per campaign rule) — zero hits either year. Neutral — NOT measured."
+        "note": "Wilbur Wright College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
       }
     },
     "devScores": {
@@ -12696,7 +12696,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No alumni/next-level tracking page found on redravenathletics.com. Cross-checked TopDrawerSoccer's 2025 and 2026 NCAA D1 men's soccer transfer trackers by school name — no confirmed match. Neutral — NOT measured as a rate."
+        "note": "Coffeyville doesn't publish a page tracking where its players transfer to next, and no confirmed D1 transfers were found elsewhere, so this can't be measured."
       }
     },
     "devScores": {
@@ -12957,7 +12957,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No alumni/next-level tracking page found on gobroncbusters.com. Cross-checked TopDrawerSoccer's 2025 and 2026 NCAA D1 men's soccer transfer trackers by school name — no confirmed match. Neutral — NOT measured as a rate."
+        "note": "Garden City doesn't publish a page tracking where its players transfer to next, and no confirmed D1 transfers were found elsewhere, so this can't be measured."
       }
     },
     "devScores": {
@@ -13207,7 +13207,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on sewardsaints.com. One confirmed transfer (Santiago Gonzalez-Uribe to NCAA D2 Shorter University) found via head coach Jaime Beltran's own bio, not an exhaustive tracker — deliberately NOT stored as a measured per-year rate for a 3-year-old program. Neutral — NOT measured as a rate; see notable[] for the confirmed name."
+        "note": "Seward County doesn't run an alumni-tracking page. One confirmed transfer was found — Santiago Gonzalez-Uribe, who moved to D2's Shorter University — but the program is only 3 years old, too young for a reliable rate."
       }
     },
     "devScores": {
@@ -13473,7 +13473,7 @@
         "years": 2,
         "perYear": 2.5,
         "sourceUrl": "https://www.caspercollege.edu/news/2026/05/casper-college-mens-soccer-2026/",
-        "note": "No standing alumni-tracker page found, but TWO consecutive dated Casper College news releases (May 2025, May 2026) name every mover's exact destination, division and conference — 2 of 6 movers were NCAA D1 in 2025, 3 of 13 in 2026 (5 of 19 total, 2.5/yr). Stronger evidence than a single-year snapshot, but not the exhaustive multi-year alumni-page census the comparison benchmark's 7 schools were built from — stored as measured but EXCLUDED from the divisor, following the Phoenix College precedent."
+        "note": "Casper doesn't run a standing alumni page, but two consecutive news releases (May 2025 and May 2026) named every player who moved on: 2 of 6 movers went D1 in 2025, and 3 of 13 in 2026 — 5 D1 transfers out of 19 total movers, about 2.5 per year. That's two years of real data, stronger than a single snapshot but shorter than the guide's most established transfer-tracking schools."
       }
     },
     "devScores": {
@@ -13712,7 +13712,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No alumni/next-level tracking page found on nwctrappers.com. Neutral — NOT measured as a rate."
+        "note": "Northwest College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -13952,7 +13952,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No alumni/next-level tracking page found on rustlerathletics.com. Neutral — NOT measured as a rate."
+        "note": "Central Wyoming College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -14175,7 +14175,7 @@
         "years": 24,
         "perYear": 0,
         "sourceUrl": "https://www.golccc.com/MSOC_Alumni",
-        "note": "A genuinely comprehensive, dated alumni page with an explicit destination-and-level column for every recorded transfer from 2002 through 2025 (~30 names) — read in full via Claude for Chrome, every destination's level independently checked against the page's own published column. Zero confirmed NCAA Division I soccer destinations across the entire recorded history (one D1 entry, Chris Hearne to Wyoming football in 2003, is cross-sport contamination, not a soccer placement). This is a MEASURED zero, not an absence of data — the pipeline is real, just NCAA D2/NAIA-weighted rather than D1."
+        "note": "Laramie County CC publishes an unusually thorough alumni page tracking roughly 30 transfers from 2002 through 2025, with each destination's division listed. Across that entire history, zero soccer players have moved on to an NCAA Division I program — the one D1 name on the list (Chris Hearne, 2003) went to the football team, not soccer. This is a real, well-documented zero: the program does send players on, just mostly to D2 and NAIA schools rather than D1."
       }
     },
     "devScores": {
@@ -14416,7 +14416,7 @@
         "years": null,
         "perYear": null,
         "sourceUrl": null,
-        "note": "No alumni/next-level tracking page found on gcpronghorns.com. Neutral — NOT measured as a rate."
+        "note": "Gillette College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -14672,7 +14672,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://wnccathletics.com/sports/msoc/2024-25/news",
-        "note": "WNCC's own dated news feed names one confirmed 2025 NCAA D1 transfer (Babiker to Mercyhurst) from the 2024 title-team roster, but this is a single data point, not a comprehensive multi-year census — stored as a neutral rating rather than extrapolated into a rate. The program's official 'Moving On' alumni-tracker page is stale (last updated 2017) and was not used as current evidence."
+        "note": "Western Nebraska CC's news feed confirms one 2025 D1 transfer — Babiker, who moved to Mercyhurst from the 2024 championship roster. The school's official alumni-tracking page hasn't been updated since 2017, so this single confirmed name isn't enough to calculate a current rate."
       }
     },
     "devScores": {
@@ -14916,7 +14916,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No comprehensive alumni tracker or dated news release naming a confirmed NCAA D1 transfer was found for the men's program — stored as a neutral rating rather than assumed zero."
+        "note": "Lamar CC doesn't publish an alumni-tracking page or any news release naming a confirmed D1 transfer, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -15137,7 +15137,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "One confirmed 2026 NCAA D1 signing (Manning Shareef to Northern Colorado) found via a third-party recruiting-network social post, not the school's own dated release — a real but single data point, insufficient for a measured rate. Stored as a neutral rating."
+        "note": "One confirmed 2026 D1 signing was found: Manning Shareef, who committed to Northern Colorado. That's a single confirmed name, not enough on its own to calculate a rate."
       }
     },
     "devScores": {
@@ -15385,7 +15385,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://unhwildcats.com/news/2025/1/16/mens-soccer-signs-gardner-webb-transfer-elias-khodri",
-        "note": "One confirmed 2025 NCAA D1 signing (Elias Khodri, ultimately to New Hampshire) found via the destination school's own dated news release — a real but single data point, insufficient for a measured rate. Stored as a neutral rating."
+        "note": "One confirmed 2025 D1 signing was found: Elias Khodri, who moved on to New Hampshire. That's a single confirmed name, not enough on its own to calculate a rate."
       }
     },
     "devScores": {
@@ -15635,7 +15635,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://usclathletics.com/sports/mens-soccer/archives",
-        "note": "No dedicated alumni/'moving on' tracker page found on USC Lancaster's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as a neutral rating rather than assumed zero."
+        "note": "USC Lancaster doesn't publish an alumni-tracking page, and no confirmed 2025-26 D1 transfers could be found elsewhere, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -15883,7 +15883,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.uscsalkathletics.com/mens-soccer",
-        "note": "No dedicated alumni/'moving on' tracker page found on USC Salkehatchie's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as a neutral rating rather than assumed zero."
+        "note": "USC Salkehatchie doesn't publish an alumni-tracking page, and no confirmed 2025-26 D1 transfers could be found elsewhere, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -16131,7 +16131,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://uscfireants.com/sports/msoc/index",
-        "note": "No dedicated alumni/'moving on' tracker page found on USC Sumter's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as a neutral rating rather than assumed zero."
+        "note": "USC Sumter doesn't publish an alumni-tracking page, and no confirmed 2025-26 D1 transfers could be found elsewhere, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -16381,7 +16381,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://uscunionbantams.com",
-        "note": "No dedicated alumni/'moving on' tracker page found on USC Union's official site, and no individual 2025-26 NCAA D1 transfer could be Tier-1 confirmed via a national tracker cross-check — stored as a neutral rating rather than assumed zero, despite the program's genuine 4-year Player of the Year streak."
+        "note": "USC Union doesn't publish an alumni-tracking page, and no confirmed 2025-26 D1 transfers could be found elsewhere — despite the program producing the conference's Player of the Year four years running, that individual success hasn't been tied to a confirmed D1 transfer yet."
       }
     },
     "devScores": {
@@ -16633,7 +16633,7 @@
         "metric": "d1TransferRate",
         "perYear": 1.0,
         "sourceUrl": "https://pjcathletics.com/sports/msoc/2025-26/releases/dragons-contiunuing-careers",
-        "note": "Measured across two consecutive, dated, Tier-1 official PJC news releases (June 2025 and June 2026): 2 confirmed NCAA D1 transfers in 2 offseasons (Jace Starling → Houston Christian 2025; Jonathan Chairez → Missouri State 2026) = 1.0/yr."
+        "note": "Two consecutive official news releases (June 2025 and June 2026) confirm 2 D1 transfers in 2 years: Jace Starling to Houston Christian (2025) and Jonathan Chairez to Missouri State (2026) — about 1 per year."
       }
     },
     "devScores": {
@@ -16886,7 +16886,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://athletics.jacksonvillecollege.edu/sports/mens-soccer/archives",
-        "note": "No dedicated alumni/transfer tracker page found on Jacksonville College's official site, and the News Archives page returned no stories — stored as a neutral rating rather than assumed zero."
+        "note": "Jacksonville College doesn't publish an alumni-tracking page and its news archive has no relevant stories, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -17144,7 +17144,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://ntcceagles.com/sports/mens-soccer/archives",
-        "note": "NTCC's News Archives page for men's soccer returned no stories, and its alumni-tracker page link 404'd — stored as a neutral rating rather than assumed zero."
+        "note": "Northeast Texas CC's alumni-tracking page link is broken and its news archive has no relevant stories, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -17355,7 +17355,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.tsc.edu/news/2026/05/five-scorpions-one-goal-continuing-the-journey-beyond-tsc/",
-        "note": "TSC's own May 2026 official release names 3 real 2025-26 men's soccer transfers, but none to an NCAA Division I program (Nelson University is NCCAA, Texas A&M-San Antonio is NAIA) — stored as a neutral rating since no D1 rate can be measured, not assumed zero."
+        "note": "A May 2026 official release named 3 real 2025-26 transfers, but none went to an NCAA Division I program — Nelson University is NCCAA and Texas A&M-San Antonio is NAIA. So while the program does move players on, there's no confirmed D1 transfer yet to build a rate from."
       }
     },
     "devScores": {
@@ -17607,7 +17607,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on crowderathletics.com. One real, Tier-2-corroborated 2026 D1 transfer (Silas Laytham to UMKC) found via TopDrawerSoccer's tracker plus UMKC's own program Instagram — a single data point, not a comprehensive multi-year census, so stored as a neutral rating rather than a measured rate."
+        "note": "Crowder doesn't publish an alumni-tracking page. One 2026 D1 transfer was found — Silas Laytham, who moved to UMKC — confirmed via UMKC's own program social media. That's a single confirmed name, not enough on its own to calculate a rate."
       }
     },
     "devScores": {
@@ -17856,7 +17856,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on athletics.jeffco.edu. TopDrawerSoccer's tracker shows real Jefferson College names in both its 2022 (→ SIUE) and 2023 editions, but these were not individually Tier-1-verified on the destination schools' own rosters this session — stored as a neutral rating rather than a measured rate."
+        "note": "Jefferson College doesn't publish an alumni-tracking page. Names linked to Jefferson College appear in national transfer-tracker records for both 2022 (to SIUE) and 2023, but weren't individually confirmed on the receiving schools' own rosters this session, so they aren't used to calculate a rate yet."
       }
     },
     "devScores": {
@@ -18104,7 +18104,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on harcum.edu. One real, Tier-1-verified 2021 D1 transfer (Ryan Kingsford to Akron, confirmed on Akron's own official signing release) found via TopDrawerSoccer's tracker — a single data point predating head coach David Hughes's full tenure, not a comprehensive multi-year census, so stored as a neutral rating rather than a measured rate."
+        "note": "Harcum doesn't publish an alumni-tracking page. One confirmed D1 transfer was found: Ryan Kingsford, who moved to Akron in 2021 (confirmed on Akron's own official signing release) — before current head coach David Hughes's tenure, so it isn't used to represent the program's current output."
       }
     },
     "devScores": {
@@ -18345,7 +18345,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "No dedicated alumni/next-level tracking page found on athletics.hagerstowncc.edu, and a TopDrawerSoccer national transfer-tracker cross-check by exact school name returned no hits — stored as a neutral rating rather than assumed zero."
+        "note": "Hagerstown doesn't publish an alumni-tracking page, and no confirmed D1 transfers were found elsewhere, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -18599,7 +18599,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.harford.edu/about/get-to-know-harford/news/2025/09-sep/mens-soccer.php",
-        "note": "No dedicated alumni/next-level tracking page found on harfordathletics.com. One real, Tier-1-confirmed 2025 D1 transfer (Alfonso Gilleard Soriano to FIU) named directly in Harford's own official Sept 2025 feature article — a single data point, not a comprehensive multi-year census, so stored as a neutral rating rather than a measured rate."
+        "note": "Harford doesn't publish an alumni-tracking page, but its own September 2025 feature article confirmed one D1 transfer: Alfonso Gilleard Soriano, who moved to FIU. That's a single confirmed name, not enough on its own to calculate a rate."
       }
     },
     "devScores": {
@@ -18850,7 +18850,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://herdzone.com/sports/mens-soccer/roster/taimu-okiyoshi",
-        "note": "No dedicated multi-year alumni/next-level tracking page found on slccbruins.com. One real, Tier-1-confirmed transfer (Taimu Okiyoshi, 2021 National Championship team, to NCAA D1 Marshall University) found via Marshall's own official roster bio — a single confirmed data point given the program's genuine scale (11X SWAC champion since 2021), not a comprehensive multi-year census, so stored as a neutral rating rather than a measured rate."
+        "note": "Salt Lake CC doesn't publish an ongoing alumni-tracking page. One confirmed D1 transfer was found: Taimu Okiyoshi, from the 2021 national championship team, who moved to Marshall University (confirmed on Marshall's own roster bio). That's a single confirmed name for a program that has otherwise won its conference 11 times since 2021 — not enough on its own to calculate a rate."
       }
     },
     "devScores": {
@@ -19100,7 +19100,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://snowbadgers.com/sports/mens-soccer/archives",
-        "note": "No dedicated multi-year alumni/next-level tracking page found on snowbadgers.com within this session's research. Forward Isaac Stanley's December 2025 NJCAA All-American honor is a real, Tier-1-confirmed individual accolade, but stored as a neutral rating since no specific transfer destination or multi-year rate was confirmed."
+        "note": "Snow College doesn't publish an alumni-tracking page. Forward Isaac Stanley earned NJCAA All-American honors in December 2025, a real individual achievement, but no confirmed transfer destination was found to calculate a rate from."
       }
     },
     "devScores": {
@@ -19337,7 +19337,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://nicathletics.com/sports/msoc/index",
-        "note": "No dedicated alumni/next-level tracking page found on nicathletics.com within this session's research. Stored as a neutral rating."
+        "note": "North Idaho College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -19580,7 +19580,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://athletics.csi.edu/sports/msoc/index",
-        "note": "CSI's men's soccer program was founded in August 2023 — genuinely too young to have a multi-year transfer/alumni history. Stored as a neutral rating."
+        "note": "College of Southern Idaho's program launched in August 2023 — too young yet to have a multi-year transfer history."
       }
     },
     "devScores": {
@@ -19822,7 +19822,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://athletics.cncc.edu/sports/mens-soccer",
-        "note": "No dedicated alumni/next-level tracking page found on athletics.cncc.edu within this session's research. Stored as a neutral rating."
+        "note": "Colorado Northwestern CC doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -20064,7 +20064,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://usueasternathletics.com/sports/msc/index",
-        "note": "No dedicated alumni/next-level tracking page found on usueasternathletics.com within this session's research. Stored as a neutral rating."
+        "note": "Utah State Eastern doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -20311,7 +20311,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://tmcclizards.com/sports/mens-soccer/roster/coaches/kyle-kelly/33",
-        "note": "No dedicated alumni/next-level tracking page found on tmcclizards.com within this session's research. Stored as a neutral rating."
+        "note": "Truckee Meadows CC doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
       }
     },
     "devScores": {
@@ -20545,7 +20545,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://pnwccgladiators.com/sports/mens-soccer",
-        "note": "PNWCC's men's soccer program is genuinely new (first confirmed competitive season 2023) and has had real coaching turnover — too young and unstable to have a multi-year transfer history. Stored as a neutral rating."
+        "note": "Pacific Northwest Christian College's program is new (first competitive season 2023) and has had coaching turnover — too early yet to have a multi-year transfer history."
       }
     },
     "devScores": {
@@ -20778,7 +20778,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://illinoiscentralcougars.com/sports/2021/9/3/players-moving-on-ms",
-        "note": "ICC's own 'Players Moving On' page lists real transfer destinations (confirmed NCAA D1 Grand Canyon and UW-Green Bay among them) but no year windows or division labels for the list as a whole, so no dated rate can be computed. Stored as a neutral rating."
+        "note": "Illinois Central's own 'Players Moving On' page lists real transfer destinations, including D1 programs Grand Canyon and UW-Green Bay — but doesn't date or label each entry consistently, so a reliable year-by-year rate can't be calculated from it yet."
       }
     },
     "devScores": {
@@ -21011,7 +21011,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.swic.edu/students/services/student-life/athletics/mens-soccer/",
-        "note": "SWIC's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as a neutral rating — unknown, not zero."
+        "note": "Southwestern Illinois doesn't publish a page tracking where its players transfer to next, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -21248,7 +21248,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.ltcathletics.com/sports/msoc",
-        "note": "Lincoln Trail's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as a neutral rating — unknown, not zero."
+        "note": "Lincoln Trail doesn't publish a page tracking where its players transfer to next, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -21480,7 +21480,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://cgtctitans.com/sports/msc",
-        "note": "CGTC's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer, and the program is too young (launched 2023) to have an established transfer history. Stored as a neutral rating — unknown, not zero."
+        "note": "Central Georgia Tech's program launched in 2023 and doesn't yet publish a page tracking transfer destinations — too early to have an established track record."
       }
     },
     "devScores": {
@@ -21717,7 +21717,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.rangersports.net/sports/msoc",
-        "note": "Ranger College's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as a neutral rating — unknown, not zero."
+        "note": "Ranger College doesn't publish a page tracking where its players transfer to next, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {
@@ -21948,7 +21948,7 @@
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://www.nocjets.com/sports/msoc",
-        "note": "NOC-Enid's official athletics site publishes no dedicated alumni or 'next level' page for men's soccer. Stored as a neutral rating — unknown, not zero."
+        "note": "NOC-Enid doesn't publish a page tracking where its players transfer to next, so this can't be measured — that's different from actually having zero transfers."
       }
     },
     "devScores": {

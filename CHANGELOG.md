@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.18 (2026-09-03) — Fix: Lynn University's "B.S. in Exercise Science" was fabricated — Lynn has no Exercise Science, Kinesiology, or Athletic Training program at all
+
+Second §6F Tier 2 school checked. Unlike `chapman` (a real, renamed degree with fabricated course codes), this is a full fabrication in the Indian Hills/Iowa Western mold — the degree itself doesn't exist.
+
+**Confirmed by reading Lynn's complete undergraduate degree list live** (`lynn.edu/academics/areas-of-study/undergraduate` — every major from Aviation through the Conservatory of Music, checked in full): there is no Exercise Science, Kinesiology, or Athletic Training program anywhere at Lynn. The two real, relevant options are **Sports Management, B.S.** (a business major — sports marketing, sports law, risk management, one of Lynn's five largest programs by enrollment) and **Biology, B.S.** (a pre-med track, which does include a genuine Human Anatomy and Physiology course, SCI 260). The fabrication reached further than `degreeTitle` — `courses[]` invented "EX SCI 101," "KIN 302," "KIN 410," "KIN 450"; `facilityDetails.sportsScience`/`.academicLabs` both referenced a "Lynn Kinesiology department" that doesn't exist; `facilities[]` listed "Kinesiology Labs"; `rec` promised an "Exercise Science to pre-PT pathway."
+
+**Fix — Change Type 9 (§3a).** `degreeTitle` corrected to "B.S. in Biology (pre-med track)" — the closer academic match of the two real options, given Olivier's DPT/Chiropractic goal. `kinRank`, `prePT`/`prePTShort`, `acuAlignNote`, `courses[]`, `facilities[]`, `rec`, and the two `facilityDetails` fields all rewritten to state the real picture plainly, naming Sports Management as the business-track alternative. `acuAlign` corrected 11 → 2 (only `ANAT100` and `BIOL125` are genuinely covered by the confirmed Human Anatomy & Physiology + general biology coursework — the same conservative "no dedicated program" pattern used for `indian_hills` in v45.15). Cascaded: `lensScores.academic` 73 → 26. **`fitOlivier`/`lensScores.overall`/`.value` untouched** (61/61/37).
+
+**Verified:** `python -m json.tool data/d2.json` passes. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Confirmed live in a local browser — Lynn's Details modal "Degree & ACU Align" tab renders the corrected title and "2/16" with a plain-language note; `fitOlivier` confirmed unchanged at 61.
+
+**Files:** `data/d2.json` (`lynn` — `degreeTitle`, `kinRank`, `prePT`, `prePTShort`, `acuAlign`, `acuAlignNote`, `acuUnits[]`, `courses[]`, `facilities[]`, `rec`, `facilityDetails.sportsScience`, `facilityDetails.academicLabs`, `lensScores.academic`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.17 → v45.18).
+
+---
+
 ### v45.17 (2026-09-03) — Fix: Chapman's "B.S. in Kinesiology" course list was fabricated (KIN 200/305/320/405/420 don't exist) — real degree is Applied Human Physiology, B.S.; §6F Tier 2 opened
 
 Started Tier 2 of the §6F academic-credential audit (12 D2/NAIA/D3 schools) after closing Tier 1 (22/22 JUCOs). `chapman` was the first Tier 2 school checked, and unlike the two Tier 1 fabrications this one is a **partial** finding — the underlying degree is real, but the specific course codes attached to it were invented.

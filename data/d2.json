@@ -352,17 +352,17 @@
       "draftRank": "Best D2 pipeline for Australian players specifically"
     },
     "acRank": "Regional Strong",
-    "kinRank": "Exercise Science — Strong",
-    "degreeTitle": "B.S. in Exercise Science",
-    "acuAlign": 11,
-    "acuAlignNote": "Strong — anatomy, physiology, biomechanics, exercise prescription covered. Small campus means personal advising for DPT applications. South Florida clinical network good.",
+    "kinRank": "Biology (pre-med) — no dedicated Exercise Science or Kinesiology program",
+    "degreeTitle": "B.S. in Biology (pre-med track)",
+    "acuAlign": 2,
+    "acuAlignNote": "Lynn has no Exercise Science, Kinesiology, or Athletic Training program at all — confirmed against Lynn's own full undergraduate degree list (checked live, every major from Aviation through Music). The two real, relevant options are Sports Management, B.S. (a business major — sports marketing, sports law, risk management) and Biology, B.S. (a pre-med track). Biology is the closer academic match: it includes a genuine Human Anatomy and Physiology course (SCI 260), which covers the anatomy foundation, plus general biology coursework — but nothing resembling exercise physiology, biomechanics, or exercise prescription. Only ANAT100 and BIOL125 are genuinely covered.",
     "soccerLevel": "SSC D2 — Top 10 nationally",
     "soccerLevelShort": "SSC D2",
     "aid": "Athletic + Merit",
     "fundingPathway": "capped",
     "size": 3200,
-    "prePT": "Good",
-    "prePTShort": "Good",
+    "prePT": "Foundation — Biology pre-med track covers anatomy/physiology basics, no dedicated Exercise Science or Kinesiology program",
+    "prePTShort": "Foundation",
     "gpa": {
       "minEntry": "2.0 min",
       "minSchol": "3.0 for academic layer",
@@ -390,9 +390,9 @@
       "stadium": "Bobby Campbell Stadium — 500 capacity, FieldTurf, permanent lighting. Dedicated on Boca Raton campus. SSC D2 standard.",
       "trainingFields": "2 dedicated training fields at Lynn Athletic Complex. Year-round South Florida climate allows unlimited outdoor training. GPS tracking zones on practice fields.",
       "strengthConditioning": "Lynn Athletics Performance Center — 10,000 sq ft, full free weight section, Olympic platforms, cable systems, functional training zone. Recovery station with normatec and ice baths. Shared with all Lynn varsity sports but soccer is the flagship athletic program with priority scheduling.",
-      "sportsScience": "GPS tracking (Statsports GPS Elite) for all training sessions. Video analysis via Hudl with individual player dashboards. Lynn Kinesiology department has exercise physiology and biomechanics teaching labs.",
+      "sportsScience": "GPS tracking (Statsports GPS Elite) for all training sessions. Video analysis via Hudl with individual player dashboards.",
       "sportsMed": "Lynn Athletics certified athletic trainer. Boca Raton Regional Hospital sports medicine partnership. Lynn's close relationship with international players (including Australians) means the athletic trainer is experienced with players from different health systems.",
-      "academicLabs": "Lynn University College of Arts and Sciences: exercise science labs for physiology and biomechanics teaching. Small class sizes (avg 17 students) mean laboratory access is less competitive than at larger universities — guaranteed bench time for every student.",
+      "academicLabs": "Lynn University College of Arts and Sciences: Biology program lab access for anatomy/physiology and general science coursework — no dedicated exercise science or kinesiology lab, since Lynn doesn't offer either program. Small class sizes (avg 17 students) mean laboratory access is less competitive than at larger universities — guaranteed bench time for every student.",
       "extras": "Boca Raton's Mizner Park (10 min) — outdoor restaurants, cinema, cultural events. Red Reef Park beach (10 min drive). FAU Stadium nearby for large-scale events. Fort Lauderdale 20 min. Palm Beach 30 min. Miami 1 hour.",
       "rating": "Good",
       "note": "Lynn's facilities are functional D2 standard — good, not elite. The standout is the small class size advantage in academic labs (guaranteed bench time) and Coach Grant's specific experience integrating international athletes, including Australians, into the program.",
@@ -418,21 +418,20 @@
     "facilities": [
       "Lynn Soccer Complex",
       "Fitness & Wellness Center",
-      "Kinesiology Labs",
+      "College of Arts and Sciences labs",
       "Beach 2 miles"
     ],
     "courses": [
-      "EX SCI 101 — Intro Exercise Science",
-      "KIN 302 — Human Anatomy & Physiology",
-      "KIN 410 — Exercise Physiology",
-      "KIN 450 — Rehabilitation Science"
+      "SCI 260 — Human Anatomy and Physiology and Lab",
+      "SCI 290 — Mendelian and Molecular Genetics",
+      "BUS 125 — Introduction to Sports Management (alternative major)"
     ],
-    "rec": "Top pick for Australian players specifically. Warm Boca Raton sunshine, large international community, personal coaching on small campus. Coach Grant has Australian connections. Exercise Science to pre-PT pathway available. Best Sydney lifestyle match at D2 level.",
+    "rec": "Top pick for Australian players specifically. Warm Boca Raton sunshine, large international community, personal coaching on small campus. Coach Grant has Australian connections. No dedicated Exercise Science or Kinesiology program — Biology (pre-med) is the closest academic fit, or Sports Management as a business-track alternative. Best Sydney lifestyle match at D2 level.",
     "url": "https://lynnfightingknights.com/sports/mens-soccer",
     "lensScores": {
       "overall": 61,
       "soccer": 61,
-      "academic": 73,
+      "academic": 26,
       "minutes": 53,
       "lifestyle": 85,
       "value": 37
@@ -516,7 +515,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -524,11 +523,11 @@
       },
       {
         "unit": "EXSC225",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -536,11 +535,11 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
@@ -552,11 +551,11 @@
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC187",
@@ -568,11 +567,11 @@
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",
-        "covered": true
+        "covered": false
       }
     ]
   },

@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.25 (2026-09-03) — Fix: Stony Brook and UAB both had "Kinesiology"/"Exercise Science" listed as standalone majors when both are really concentrations within a broader degree
+
+Sixth Tier 3 batch: `syracuse`, `temple`, `tulsa` confirmed real as stored (Syracuse's formal title is "Health and Exercise Science, B.S." — close naming match, not correction-worthy).
+
+**`stonybrook`:** Real degree is **Health Science, B.S., with an Exercise Science concentration** — "Kinesiology" is just one required course (HAN 311), not a standalone major. Real courses use the `HAN` prefix, not `HPH` as previously stored.
+
+**`uab`:** Real degree is **Kinesiology, B.S., with Exercise Science as one of three concentrations** (alongside Sports Physiology and Performance, and Exercise Bioenergetics) — the stored claim had the naming backwards ("B.S. Exercise Science" when Exercise Science is the concentration, Kinesiology the major). UAB's own program page confirms the Exercise Science concentration curriculum is designed to align with PT/OT/PA program requirements. The specific `EXSC` course codes previously stored couldn't be verified against UAB's real course index, so `courses[]` was softened to a general description.
+
+Both are the same finding class as `charleston`/`charlotte`/`uab` earlier in this campaign — real, substantive programs with the major/concentration relationship reversed or the wrong name attached. `acuAlign` left unchanged for both (10, 11) — confirmed real content substantiates the existing alignment.
+
+**Verified:** `python -m json.tool` passes on both touched files. `validate_schools.py`: 0 errors, 19 warnings (unchanged).
+
+**Files:** `data/caa.json` (`stonybrook`), `data/aac.json` (`uab`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.24 → v45.25).
+
+---
+
 ### v45.24 (2026-09-03) — Fix: St. John's "B.S. in Human Performance" was fully fabricated — no matching program exists; Seton Hall naming correction
 
 Fifth Tier 3 batch: `pittsburgh`, `princeton`, `providence`, `rutgers`, `smu`, `stanford` confirmed real as stored (no changes).

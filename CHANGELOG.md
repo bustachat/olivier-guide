@@ -6,6 +6,26 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.20 (2026-09-03) — Fix: 4 Tier 3 schools had wrong degree names/course prefixes (Butler, Cal, Charleston, Charlotte) — real programs, inaccurate naming detail
+
+First batch of §6F Tier 3 (69 major D1/Ivy schools). All four are the same finding class as `chapman`/`butler`-style corrections earlier in this campaign: the underlying academic program is real and substantive, but the stored `degreeTitle` used the wrong name and/or the stored `courses[]` used a fabricated course prefix that doesn't match the school's real one.
+
+**`butler`:** Real degree is "Kinesiology, B.S." (Pre-Professional or Applied Human Performance concentrations) — not a standalone "Exercise Science" major (Exercise Science is a career-path reference within Kinesiology, not the degree name). Confirmed real courses use the `KIN` prefix (KIN 127, 240, 253, 324 Exercise Physiology, 326), not the `ES` prefix previously stored. Butler's own FAQ page directly addresses the chiropractic pathway. `acuAlign` (11) left unchanged — substantively confirmed.
+
+**`cal` (UC Berkeley):** No major called "Integrative Human Physiology" exists at Berkeley, and no UC campus offers a Kinesiology major at all (confirmed: "None of the UC's offer a 'Kinesiology major'"). Berkeley also doesn't award a B.S. in this space — the College of Letters & Science awards a B.A. for both relevant biology majors. Closest real match: **Integrative Biology, B.A.**, which does include genuine anatomy/physiology coursework (INTEGBI 131 General Human Anatomy, INTEGBI 132 Physiology) — but the three previously stored "IHP ###" course codes (Biomechanics, Exercise Physiology, Motor Control) don't exist anywhere at Berkeley; "IHP" appears to have been invented to match the fabricated major name itself. `acuAlign` corrected 12 → 3 (only the confirmed real anatomy/biology/physiology coverage). Cascaded: `lensScores.academic` 88 → 31. **`fitOlivier`/`.overall`/`.value` untouched** (71/71/43).
+
+**`charleston` (College of Charleston):** Real degree is "Exercise Science, B.S." (Department of Applied Exercise Science, School of Health Sciences) — not "Kinesiology." Real courses use the `EXSC` prefix (EXSC 201 Foundations in Exercise Science, EXSC 340 Exercise Physiology, EXSC 440 Biomechanics), not `KIN` as previously stored. `acuAlign` (10) left unchanged — substantively confirmed.
+
+**`charlotte` (UNC Charlotte):** Real undergraduate degree is "Exercise Science, B.S." (3 concentrations: Health & Fitness, Pre-Professional, Strength & Conditioning) — "Kinesiology" is the *graduate* degree name only, in the Department of Applied Physiology, Health, and Clinical Sciences (renamed from the Department of Kinesiology in 2021 — confirmed via the department's own news post). Real courses use the `EXER` prefix, not `KINE` as previously stored (EXER 2168L Human Anatomy and Physiology for the Health Professions Lab, EXER 3260 Nutrition & Health Fitness, EXER 4130 Applied Nutrition). `acuAlign` (10) left unchanged — substantively confirmed.
+
+**Pattern emerging across Tier 3:** unlike Tier 1/2's mix of full fabrications and one partial, Tier 3 so far is producing mostly this milder class — a genuinely real, well-matched academic program, but with an inaccurate degree name and/or a fabricated course-code prefix layered on top of real course topics. Worth watching whether full fabrications (Iowa Western/Lynn-style) appear at all in this tier, given these are large, extremely well-documented programs.
+
+**Verified:** `python -m json.tool` passes on all four touched files (`data/big-east.json`, `data/acc.json`, `data/caa.json`, `data/aac.json`). `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Confirmed live in a local browser for `cal` (the only one with a lensScores.academic cascade) — Details modal renders "3/16" with a plain-language note; `fitOlivier` confirmed unchanged at 71.
+
+**Files:** `data/big-east.json` (`butler`), `data/acc.json` (`cal`), `data/caa.json` (`charleston`), `data/aac.json` (`charlotte`) — each: `degreeTitle`, `kinRank`, `acuAlignNote`, `courses[]`; `cal` additionally: `acuAlign`, `acuUnits[]`, `lensScores.academic`, `rec`. `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.19 → v45.20).
+
+---
+
 ### v45.19 (2026-09-03) — Fix: St. Edward's Kinesiology is a B.A., not B.S. (a real, extensive program — degree-type correction, not a fabrication); §6F Tier 2 CLOSED (12/12)
 
 Closes Tier 2 of the §6F academic-credential audit. `stedwards` was the last school checked — a different, milder finding than any prior one this campaign.

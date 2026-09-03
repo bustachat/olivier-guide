@@ -2463,10 +2463,10 @@
       "#fffbeb",
       "#003262"
     ],
-    "kinRank": "Excellent (Integrative Human Physiology — flagship pre-health science major)",
-    "degreeTitle": "B.S. Integrative Human Physiology",
-    "acuAlign": 12,
-    "acuAlignNote": "Excellent — Integrative Human Physiology covers anatomy, physiology, motor control, biomechanics, neuroscience. Berkeley's research depth is world-class. 12 of 16 ACU units have direct equivalents. UCSF Health connection provides exceptional pre-PT clinical placement access.",
+    "kinRank": "Good (Integrative Biology, B.A. — real anatomy/physiology coursework, but no exercise-science-specific major)",
+    "degreeTitle": "B.A. in Integrative Biology",
+    "acuAlign": 3,
+    "acuAlignNote": "Berkeley has no major called \"Integrative Human Physiology,\" and no UC campus offers a Kinesiology major — confirmed against Berkeley's own major list. It also doesn't offer a B.S. in this space; the College of Letters & Science awards a Bachelor of Arts for both relevant biology majors (Molecular and Cell Biology and Integrative Biology). The closest real match is Integrative Biology, B.A., which includes genuine anatomy and physiology coursework (INTEGBI 131 General Human Anatomy, INTEGBI 132 Physiology) — but the three previously stored \"IHP\" course codes (Biomechanics, Exercise Physiology, Motor Control) don't exist anywhere at Berkeley; there is no exercise-science-specific curriculum. Berkeley's research depth and UCSF Health connection remain real strengths for a general pre-health pathway.",
     "soccerLevel": "ACC — Competitive (strong Pac-12 history)",
     "soccerLevelShort": "ACC",
     "fin": {
@@ -2495,7 +2495,7 @@
     "lensScores": {
       "overall": 71,
       "soccer": 72,
-      "academic": 88,
+      "academic": 31,
       "minutes": 58,
       "lifestyle": 72,
       "value": 43
@@ -2559,13 +2559,10 @@
       "UCSF Health Clinical Access"
     ],
     "courses": [
-      "PHYSIOL 3 — Human Physiology",
       "INTEGBI 131 — General Human Anatomy",
-      "IHP 141 — Biomechanics of Human Movement",
-      "IHP 150 — Exercise Physiology",
-      "IHP 160 — Motor Control and Learning"
+      "INTEGBI 132 — Physiology"
     ],
-    "rec": "Bay Area lifestyle is the closest match to Sydney's urban-coastal character in the entire guide. Warm California climate, Oakland/SF access, strong research physiology path for DPT. GPA 2.8 is below Cal's 3.0+ floor — athletic pathway is the only realistic route, and it exists.",
+    "rec": "Bay Area lifestyle is the closest match to Sydney's urban-coastal character in the entire guide. Warm California climate, Oakland/SF access. No dedicated Exercise Science or Kinesiology major, but Integrative Biology gives a real science foundation for a pre-health pathway. GPA 2.8 is below Cal's 3.0+ floor — athletic pathway is the only realistic route, and it exists.",
     "url": "https://calbears.com/sports/mens-soccer",
     "domain": "berkeley.edu",
     "culture": {
@@ -2653,7 +2650,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -2665,19 +2662,19 @@
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
@@ -2685,11 +2682,11 @@
       },
       {
         "unit": "EXSC216",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
@@ -2705,11 +2702,11 @@
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",
-        "covered": true
+        "covered": false
       }
     ]
   },

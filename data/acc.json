@@ -883,10 +883,10 @@
       "#dbeafe",
       "#00356B"
     ],
-    "kinRank": "Excellent (dedicated B.S. Kinesiology, strong pre-health advising pipeline)",
-    "degreeTitle": "B.S. Kinesiology",
-    "acuAlign": 12,
-    "acuAlignNote": "Strong kinesiology and exercise science. Duke Medical Center proximity gives excellent pre-PT clinical access. Biomechanics, exercise physiology, motor control, and sport psychology all covered. Duke's DPT program is top-5 nationally — pre-PT advising pipeline is the best in the ACC.",
+    "kinRank": "Good (Biology, B.S., Anatomy/Physiology/Biomechanics Concentration — no standalone Kinesiology major)",
+    "degreeTitle": "B.S. Biology (Anatomy, Physiology & Biomechanics Concentration)",
+    "acuAlign": 4,
+    "acuAlignNote": "Duke has no Kinesiology major — confirmed against the university's full major list. The real, closest match is the Biology major's Anatomy, Physiology & Biomechanics Concentration, which does cover genuine anatomy, physiology, and biomechanics coursework, but the previously stored \"KINES\" course codes (Sport & Exercise Psychology, Clinical Exercise Physiology) don't exist anywhere at Duke — there's no dedicated exercise-science curriculum. Duke Medical Center proximity remains a real strength for general pre-health clinical access. Duke's DPT program is genuinely top-5 nationally, but that's a graduate program, not evidence of an undergraduate Kinesiology pipeline.",
     "soccerLevel": "ACC — Elite (1986 NCAA champion)",
     "soccerLevelShort": "ACC",
     "fin": {
@@ -915,7 +915,7 @@
     "lensScores": {
       "overall": 39,
       "soccer": 85,
-      "academic": 90,
+      "academic": 31,
       "minutes": 21,
       "lifestyle": 0,
       "value": 23
@@ -980,13 +980,11 @@
       "Kinesiology & Duke Health Labs"
     ],
     "courses": [
-      "KINES 201 — Anatomy & Physiology",
-      "KINES 302 — Exercise Physiology",
-      "KINES 303 — Biomechanics",
-      "KINES 401 — Sport & Exercise Psychology",
-      "KINES 450 — Clinical Exercise Physiology"
+      "Biology gateway courses (2 required)",
+      "Biology Area Menus (3 required, incl. Anatomy/Physiology/Biomechanics)",
+      "Biology electives (5 required)"
     ],
-    "rec": "Elite academics and one of the strongest soccer traditions in the ACC. Duke Health access for pre-PT is unmatched in the conference. Very expensive and extremely selective admission — GPA 2.8 is below Duke's floor. Worth a targeted reach email if Olivier's trajectory is upward.",
+    "rec": "Elite academics and one of the strongest soccer traditions in the ACC. Duke Health access for general pre-health clinical exposure is unmatched in the conference, though there's no dedicated Kinesiology or Exercise Science major — Biology's Anatomy/Physiology/Biomechanics concentration is the closest real fit. Very expensive and extremely selective admission — GPA 2.8 is below Duke's floor. Worth a targeted reach email if Olivier's trajectory is upward.",
     "url": "https://goduke.com/sports/mens-soccer",
     "domain": "duke.edu",
     "culture": {
@@ -1073,7 +1071,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -1085,7 +1083,7 @@
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -1097,19 +1095,19 @@
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC216",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
@@ -1121,11 +1119,11 @@
       },
       {
         "unit": "EXSC230",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",

@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.21 (2026-09-03) — Fix: 3 more Tier 3 schools (Delaware, Duke, GCU) — naming/prefix corrections and one real fabrication (Duke)
+
+Second Tier 3 batch. 12 schools checked this batch total: `clemson`, `creighton`, `csuf`, `denver`, `depaul`, `drexel`, `elon`, `fau`, `fiu` confirmed real as stored (no changes); `delaware`, `duke`, `gcu` needed corrections.
+
+**`delaware`:** Minor — "Kinesiology and Applied Physiology" is the department name (KAAP), not the major title; the real major is just "Kinesiology." Real KAAP courses confirmed use numbers 309/310 for Human Anatomy & Physiology I/II (previously stored as 201/202, unverified). `acuAlign` (11) left unchanged — substance confirmed real.
+
+**`duke` — a genuine fabrication, same class as Cal:** Duke has **no Kinesiology major at all** — confirmed against Duke's full major list. The real, closest match is the **Biology B.S.'s Anatomy, Physiology & Biomechanics Concentration**, which is real and does cover genuine anatomy/physiology/biomechanics coursework — but the previously stored "KINES" course codes (Sport & Exercise Psychology, Clinical Exercise Physiology) don't exist anywhere at Duke. The old copy oversold this hard ("dedicated B.S. Kinesiology," "pre-PT advising pipeline is the best in the ACC") by citing Duke's genuinely excellent graduate DPT program as if it were evidence of an undergraduate Kinesiology pipeline — it isn't. `acuAlign` corrected 12 → 4 (ANAT100, BIOL125, EXSC225, EXSC224 — the units the concentration's own name literally maps to). Cascaded: `lensScores.academic` 90 → 31. **`fitOlivier`/`.overall`/`.value` untouched** (39/39/23).
+
+**`gcu` — the interesting case: two fields already disagreed with each other.** The stored `acuAlignNote` cited detailed, specific "EXS-" prefix courses (EXS-340 Physiology of Exercise, EXS-335 Kinesiology, BIO-210 Anatomy and Physiology) — all confirmed genuinely real on live-checking. But the separate `courses[]` array used an entirely different, fabricated "KIN ###" prefix that contradicted the note sitting right next to it. This looks like sloppy inconsistency (one field researched properly, the other not) rather than a deliberate fabrication of the whole record. Real degree name is also "Exercise Science: Pre-Physical Therapy Emphasis," not "Kinesiology (Exercise Science)" as stored. Fixed `degreeTitle`, `kinRank`, and `courses[]` to match the note's own (already-correct) research — **`acuAlign` (14) and `acuAlignNote` left untouched**, since they were already accurate.
+
+**New process lesson:** always cross-check `acuAlignNote`'s cited course codes against the separate `courses[]` array — they can silently disagree, and when they do, don't assume either one is automatically right without checking both against a live source (as `gcu` shows, the note can be the accurate one).
+
+**Verified:** `python -m json.tool` passes on `data/d1-other.json` and `data/acc.json`. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**.
+
+**Files:** `data/d1-other.json` (`delaware`, `gcu`), `data/acc.json` (`duke`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.20 → v45.21).
+
+---
+
 ### v45.20 (2026-09-03) — Fix: 4 Tier 3 schools had wrong degree names/course prefixes (Butler, Cal, Charleston, Charlotte) — real programs, inaccurate naming detail
 
 First batch of §6F Tier 3 (69 major D1/Ivy schools). All four are the same finding class as `chapman`/`butler`-style corrections earlier in this campaign: the underlying academic program is real and substantive, but the stored `degreeTitle` used the wrong name and/or the stored `courses[]` used a fabricated course prefix that doesn't match the school's real one.

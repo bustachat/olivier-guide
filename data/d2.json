@@ -2300,17 +2300,17 @@
       "draftRank": "D3 — academic pathway program"
     },
     "acRank": "Strong Regional",
-    "kinRank": "Kinesiology Pre-PT — Strong",
-    "degreeTitle": "B.S. in Kinesiology (Pre-Physical Therapy track)",
-    "acuAlign": 12,
-    "acuAlignNote": "Good alignment — explicit Pre-PT track with KIN 405 Pre-Physical Therapy Prep as required course. Orange County clinical network (Hoag Hospital, CHOC) is very strong for DPT applications.",
+    "kinRank": "Applied Human Physiology — Strong (pre-health relevant)",
+    "degreeTitle": "B.S. in Applied Human Physiology",
+    "acuAlign": 5,
+    "acuAlignNote": "Chapman renamed its Kinesiology major to Applied Human Physiology (AHP) some years ago — the program is real and substantive, but the previously stored \"KIN 200/305/320/405/420\" course codes don't exist under either name. Confirmed real AHP courses: AHP 211 Physiology, AHP 301/301L Biomechanics and Functional Anatomy, AHP 420 Applied Exercise Physiology. AHP fulfills admissions requirements for medical, dental, and pharmacy schools, and Chapman's Crean College also runs a genuine Doctor of Physical Therapy program with an Orange County clinical network (Hoag Hospital, CHOC) — but the college's official DPT bridge pathway is built from the separate Health Sciences B.S., not AHP specifically, so this isn't a formally named \"Pre-PT track.\" The 5 units marked covered are the ones directly matched to a real, confirmed course title — the full curriculum wasn't independently re-audited course-by-course, so this should be revisited for a fuller check next time this school is touched.",
     "soccerLevel": "SCIAC D3",
     "soccerLevelShort": "SCIAC D3",
     "aid": "Merit + Need (no athletic)",
     "fundingPathway": "none",
     "size": 10000,
-    "prePT": "Excellent (KIN 405 Pre-PT Prep required)",
-    "prePTShort": "Excellent",
+    "prePT": "Strong — genuine on-campus DPT program and Orange County clinical network, though no formally named Pre-PT track within the AHP major itself",
+    "prePTShort": "Strong",
     "gpa": {
       "minEntry": "3.5+ for D3 consideration",
       "minSchol": "3.7+ for merit scholarship (no athletic)",
@@ -2325,7 +2325,7 @@
       "maxAthletic": 0,
       "maxAcademic": 35000,
       "aidType": "need-only",
-      "internationalNote": "Chapman direct billed cost $89,294 (2026-27, Tier-1 verified from Chapman's official Undergraduate Cost of Attendance table, On Campus: First-Time Freshman column): tuition $69,990 + housing $12,818 + food $6,082 + fees $404. Chapman's headline first-year total is $94,376, adding books, personal expenses, transportation and loan fees that this guide excludes; mandatory health insurance is not automatically included in its COA and is extra. NOTE the freshman column was used deliberately — continuing on-campus students are budgeted at $15,618 for housing, which would raise the direct cost to about $92,094 from year two. Based on full-time enrolment of 12-18 credits. The previous stored $72,000 was an unresearched ballpark and understated the cost by $17,294. Chapman is a high-sticker private in Orange County; D2 athletic aid plus merit is the realistic package and the KIN 405 Pre-PT preparation track is a genuine draw."
+      "internationalNote": "Chapman direct billed cost $89,294 (2026-27, Tier-1 verified from Chapman's official Undergraduate Cost of Attendance table, On Campus: First-Time Freshman column): tuition $69,990 + housing $12,818 + food $6,082 + fees $404. Chapman's headline first-year total is $94,376, adding books, personal expenses, transportation and loan fees that this guide excludes; mandatory health insurance is not automatically included in its COA and is extra. NOTE the freshman column was used deliberately — continuing on-campus students are budgeted at $15,618 for housing, which would raise the direct cost to about $92,094 from year two. Based on full-time enrolment of 12-18 credits. The previous stored $72,000 was an unresearched ballpark and understated the cost by $17,294. Chapman is a high-sticker private in Orange County; no athletic aid at all (D3), so merit and need-based aid is the only realistic package. The genuine draw is Chapman's own on-campus Doctor of Physical Therapy program and Orange County clinical network, not a specific undergraduate course."
     },
     "culture": {
       "vibe": "Small, creative, film-industry-adjacent Orange County campus. Chapman is known for its film school (Dodge College of Film) and arts culture — creative energy is everywhere. Orange is a charming historic town and the campus is beautiful.",
@@ -2364,23 +2364,22 @@
     ],
     "facilities": [
       "Griset Field",
-      "Kinesiology Research Labs",
-      "Pre-PT Advising Office",
+      "Applied Human Physiology Labs",
+      "Crean College pre-health advising",
       "Orange County clinical network"
     ],
     "courses": [
-      "KIN 200 — Anatomy & Physiology",
-      "KIN 305 — Exercise Physiology",
-      "KIN 320 — Biomechanics",
-      "KIN 405 — Pre-Physical Therapy Prep",
-      "KIN 420 — Clinical Kinesiology"
+      "AHP 211 — Physiology",
+      "AHP 301 / 301L — Biomechanics and Functional Anatomy",
+      "AHP 420 — Applied Exercise Physiology, Lecture and Lab",
+      "AHP 499 — Individual Study"
     ],
-    "rec": "Chapman has an explicit Pre-PT required course. Orange County is 30 min from LA. D3 = less schedule pressure — better for building GPA toward PT grad school. No athletic scholarships. Best if long-term academic career is the priority.",
+    "rec": "Chapman's real degree here is Applied Human Physiology (renamed from Kinesiology), and it genuinely fulfills medical/dental/pharmacy admissions requirements. Chapman also runs its own Doctor of Physical Therapy program with a strong Orange County clinical network, though the school's official DPT bridge pathway runs through the separate Health Sciences B.S., not AHP itself. Orange County is 30 min from LA. D3 = less schedule pressure — better for building GPA toward PT grad school. No athletic scholarships. Best if long-term academic career is the priority.",
     "url": "https://athletics.chapman.edu/sports/mens-soccer",
     "lensScores": {
       "overall": 45,
       "soccer": 54,
-      "academic": 79,
+      "academic": 42,
       "minutes": 30,
       "lifestyle": 74,
       "value": 27
@@ -2453,7 +2452,7 @@
       },
       {
         "unit": "BIOL125",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC225",
@@ -2465,7 +2464,7 @@
       },
       {
         "unit": "EXSC394",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC224",
@@ -2473,11 +2472,11 @@
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC216",
@@ -2485,11 +2484,11 @@
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC187",
@@ -2501,7 +2500,7 @@
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",

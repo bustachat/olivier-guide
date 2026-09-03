@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.17 (2026-09-03) — Fix: Chapman's "B.S. in Kinesiology" course list was fabricated (KIN 200/305/320/405/420 don't exist) — real degree is Applied Human Physiology, B.S.; §6F Tier 2 opened
+
+Started Tier 2 of the §6F academic-credential audit (12 D2/NAIA/D3 schools) after closing Tier 1 (22/22 JUCOs). `chapman` was the first Tier 2 school checked, and unlike the two Tier 1 fabrications this one is a **partial** finding — the underlying degree is real, but the specific course codes attached to it were invented.
+
+**What's real:** Chapman's Kinesiology major was formally renamed to Applied Human Physiology (AHP) at some point before 2024 — confirmed both by Chapman's current catalog (Crean College of Health and Behavioral Sciences lists exactly two undergraduate degrees: "Applied Human Physiology, B.S." and "Health Sciences, B.S.," no "Kinesiology" entry) and by a Chapman-affiliated peer-reviewed paper (Sage Journals, 2024) that describes "applied human physiology majors (formerly known as the kinesiology major)." AHP genuinely fulfills medical/dental/pharmacy admissions requirements, and Chapman runs a real on-campus Doctor of Physical Therapy program with an Orange County clinical network (Hoag Hospital, CHOC) — but the college's official DPT bridge pathway is built from the separate Health Sciences B.S., not AHP, so the previously stored "explicit Pre-PT track" framing overstated a specific institutional pathway that doesn't exist under that name.
+
+**What was fabricated:** the school's `courses[]` array cited "KIN 200 — Anatomy & Physiology," "KIN 305 — Exercise Physiology," "KIN 320 — Biomechanics," "KIN 405 — Pre-Physical Therapy Prep," and "KIN 420 — Clinical Kinesiology" — none of which exist; Chapman's real course prefix is `AHP`, not `KIN`. Confirmed real courses: AHP 211 Physiology, AHP 301/301L Biomechanics and Functional Anatomy, AHP 420 Applied Exercise Physiology, AHP 499 Individual Study.
+
+**Fix — Change Type 9 (§3a).** `degreeTitle` corrected to "B.S. in Applied Human Physiology." `kinRank`, `prePT`/`prePTShort`, `acuAlignNote`, `courses[]`, `facilities[]`, `rec`, and `fin.internationalNote` (which separately repeated the fabricated "KIN 405" course, and internally contradicted the school's own `fundingPathway:"none"`/D3 status by calling the aid package "D2 athletic aid plus merit") all rewritten to describe the real program. `acuAlign` corrected 12 → 5 — re-derived from confirmed real course titles only (`ANAT100`, `EXSC222`, `EXSC224`, `EXSC225`, `EXSC322`, matched to AHP 301's "Functional Anatomy"/"Biomechanics" and AHP 211/420's physiology coverage); the note discloses this reflects the courses actually found, not a complete unit-by-unit catalog audit, and flags a fuller recheck for next time. Cascaded: `lensScores.academic` 79 → 42 (a large swing — the 12-unit figure had no supporting evidence found anywhere). **`fitOlivier`/`lensScores.overall`/`.value` untouched** (45/45/27) — confirmed via `js/scores.js` containing no reference to `acuAlign`/`acuUnits`.
+
+**Verified:** `python -m json.tool data/d2.json` passes. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Confirmed live in a local browser — Chapman's Details modal "Degree & ACU Align" tab renders the corrected title and "5/16" with a plain-language note (no internal audit jargon, learned from v45.16's near-miss); `fitOlivier` confirmed unchanged at 45.
+
+**Files:** `data/d2.json` (`chapman` — `degreeTitle`, `kinRank`, `prePT`, `prePTShort`, `acuAlign`, `acuAlignNote`, `acuUnits[]`, `courses[]`, `facilities[]`, `rec`, `fin.internationalNote`, `lensScores.academic`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.16 → v45.17).
+
+---
+
 ### v45.16 (2026-09-03) — Fix: Iowa Western's "A.A. Kinesiology / A.S. Health Sciences" was fabricated — no such programs exist; first find of the §6F Tier 1 audit
 
 Opened the §6F academic-credential audit (started v45.15) at Tier 1 — the 22 JUCOs at highest fabrication risk. `iowa_western` was school #4 checked and the first confirmed fabrication of the campaign.

@@ -6,6 +6,28 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.30 (2026-09-04) — Coach-data audit: same 60 post-RULE-0 schools, checked for stale coach name/title (3 real departures found)
+
+Companion audit to v45.29, run at the owner's request the following session: the same 60 schools added after RULE 0 (v44.71+) were re-checked, this time for `coaches.json` accuracy rather than academic claims — coaching changes happen far more often than degree programs, so this is the higher-churn half of "is this school's record still true."
+
+**Result: 57 of 60 confirmed current and accurate as stored. 3 genuine coach departures found and fixed:**
+
+- **`illinois_central`** — Gabe Carreno left for Pellissippi State CC (Tennessee) in April 2026. **Tacuma Sadlow**, an ICC alumnus (2017 Region 24 Champion as a player) with a real NCAA D1 assistant stop at Western Illinois (2023-24) and two seasons as ICC's own assistant, was named head coach June 1, 2026 — confirmed via ICC's own news release. `overallScore` 62 → 48 (first-year HC, no independent head-coaching track record yet).
+- **`noc_enid`** — Aron Bassoff, one of the deepest CVs in the whole JUCO campaign (19 seasons, 18 as HC, score 70), left for Southwest Baptist University in July 2026 after 3 seasons (19-27-5). **Joe Jolly**, his 2025 assistant, was named interim head coach August 20, 2026 — one week before the season opener. `overallScore` 70 → 44.
+- **`malcolm_x_college`** — Jesse Rosen (head coach since 2014, the longest tenure in this batch) left in May 2026 to become an assistant coach/recruiting director at Chicago State University (NCAA D1), confirmed via Chicago State's own release. **No successor was found** despite an extended search — the position is marked `"Vacant"` with a neutral placeholder score (30, floor of rk-solid) rather than guessing a name. Re-verify when a new hire is announced.
+
+**Security-adjacent finding, not a data question:** `citycollegesofchicagoathletics.com` — the primary athletics domain for all 5 City Colleges of Chicago JUCOs (`daley_college`, `kennedy_king_college`, `malcolm_x_college`, `truman_college`, `wilbur_wright_college`) — now redirects to an unrelated gambling/spam site rather than serving a parked GoDaddy lander as CLAUDE.md's §C previously documented. **Do not navigate to this domain in any future session.** `region4sports.com` and `ccc.edu` remain safe, working alternatives for these 5 schools; both were used throughout this audit.
+
+**One ambiguous case, deliberately left unresolved rather than guessed:** `wilbur_wright_college`'s Gabriel Billings was confirmed as head coach via a dated (2025-11-19) season-wrap article quoting him directly. A June 2026 article about his *new, additional* hire as Eureka College's women's soccer head coach describes his Wright College role in past-tense-leaning language ("most recently... Head Men's Soccer Coach"), which could mean he's stepped back from Wright's men's program — or could just be CV framing for the new job while he keeps both roles (he remains Wright's Athletic Director either way). No clear successor was found, so the existing stored entry (Billings) was left unchanged rather than acted on a genuinely ambiguous signal. Flagged here for a future session to re-check once the 2026-27 Wright roster/coaches page is live.
+
+**Two false alarms, resolved by checking the live official page rather than trusting a search summary — both are useful cautionary examples of a recurring failure mode:** `usc_sumter`'s Adam Howarth appeared to conflict with a "Maxi Rocco hired" article, but Rocco (hired May 2024) was Howarth's *predecessor*, not a more recent hire — resolved instantly by loading `uscfireants.com/sports/msoc/coaches` directly. `usu_eastern`'s Bruce Palmbaum appeared to conflict with an "Easton Ralphs named head coach" headline — Ralphs is USU Eastern's men's *basketball* coach, an unrelated sport. **Neither would have been caught trusting a search engine's AI-composed summary alone; both needed the live source page.**
+
+**Verified:** `python -m json.tool` PASS. `validate_schools.py`: 0 errors, 21 warnings (3 new, expected — the 3 changed coaches' contacts are genuinely unverified, matching this project's established "never guess a contact" rule). `validate_consistency.js`: **Issues: 0**, including the rankClass↔score coherence check on all 3 new scores. All 170 coaches re-ranked by `overallScore` descending per Change Type 2 (§3a) — confirmed live via `getCoach()` for all 3 changed schools and the DOM rendering the "Vacant" state correctly in the Coaches & Staff tab.
+
+Files: `data/coaches.json` (3 entries + full re-rank), `athletes/olivier.json` (`guideVersion`).
+
+---
+
 ### v45.29 (2026-09-03) — Complete the academic-credential audit: post-RULE-0 follow-up on the 60 NJCAA gap-fill schools (0 fabrications, 1 mapping fix)
 
 Closes the follow-up item opened at the end of the 110-school pre-RULE-0 campaign (v45.15–v45.28): the 60 schools added to `data/juco.json` after RULE 0 became mandatory (v44.71 onward, the NJCAA gap-fill campaign) had never been individually checked against a live source under this audit's methodology — RULE 0 was supposed to mean they were verified at add time, but that had never been confirmed.

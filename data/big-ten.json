@@ -1695,10 +1695,10 @@
       "#f3e8ff",
       "#7c3aed"
     ],
-    "kinRank": "Excellent (Human Sciences — selective interdisciplinary pre-health major)",
-    "degreeTitle": "B.S. Human Sciences",
-    "acuAlign": 12,
-    "acuAlignNote": "Strong human sciences and kinesiology pathways. Adjacent to Chicago — access to top-tier PT programs and clinical facilities.",
+    "kinRank": "Good (Biological Sciences, B.A. — no Kinesiology, Exercise Science, or Human Sciences major exists)",
+    "degreeTitle": "B.A. in Biological Sciences",
+    "acuAlign": 3,
+    "acuAlignNote": "Northwestern has no Human Sciences, Kinesiology, or Exercise Science major — confirmed against the university's own course catalog and Weinberg College major list. The previously stored \"MOVESCI\" course codes belong exclusively to the University of Michigan's Kinesiology department, not Northwestern (confirmed: MOVESCI appears nowhere in Northwestern's own Courses A-Z catalog). The real, closest match is Biological Sciences, B.A. (Weinberg College of Arts and Sciences awards a B.A., not a B.S., for this major) — a genuine, rigorous pre-health science foundation, but with no exercise-specific curriculum. Chicago adjacency provides genuine access to top-tier clinical facilities for a general pre-health pathway.",
     "soccerLevel": "Big Ten — Competitive",
     "soccerLevelShort": "Big Ten",
     "fin": {
@@ -1727,7 +1727,7 @@
     "lensScores": {
       "overall": 54,
       "soccer": 62,
-      "academic": 90,
+      "academic": 31,
       "minutes": 53,
       "lifestyle": 50,
       "value": 32
@@ -1809,11 +1809,7 @@
       "Human Sciences Labs"
     ],
     "courses": [
-      "BIOL_SCI 219 — Human Anatomy",
-      "MOVESCI 206 — Exercise Physiology",
-      "MOVESCI 301 — Biomechanics",
-      "MOVESCI 350 — Motor Learning",
-      "MOVESCI 375 — Clinical Exercise Science"
+      "BIOL_SCI 170-PP — Concepts of Biology"
     ],
     "staff": [
       {
@@ -1906,7 +1902,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -1918,7 +1914,7 @@
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -1926,23 +1922,23 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC216",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
@@ -1954,11 +1950,11 @@
       },
       {
         "unit": "EXSC230",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",

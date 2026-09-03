@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.23 (2026-09-03) — Fix: Northwestern's "B.S. Human Sciences" was fabricated — its course list was copy-confused with Michigan's real Kinesiology courses
+
+Fourth Tier 3 batch: `marquette`, `maryland`, `memphis`, `mercyhurst`, `michigan`, `michiganstate`, `monmouth`, `navy`, `ncstate`, `northeastern`, `notredame`, `ohiostate`, `pennstate` all confirmed real as stored (some with minor naming nuances not worth a full correction — e.g. Marquette's formal bulletin title is "Exercise Physiology, BS" though the program is branded "Exercise Science"; Ohio State's is "Exercise Science Education"). `northwestern` needed a real fix.
+
+**`northwestern` — a distinctive fabrication: the fabricated `courses[]` used another school's real course prefix.** Northwestern has no Human Sciences, Kinesiology, or Exercise Science major — confirmed against Northwestern's own Courses A-Z catalog and Weinberg College major list. But the previously stored `courses[]` cited "MOVESCI 206," "MOVESCI 301," "MOVESCI 350," "MOVESCI 375" — and MOVESCI is a **real course prefix, just not Northwestern's**. It belongs exclusively to the **University of Michigan's** Kinesiology department (confirmed: `michigan`'s own real Movement Science major uses this exact prefix, and MOVESCI appears nowhere in Northwestern's catalog). This looks like a copy/mixup between the two Big Ten records rather than an invented-from-nothing prefix like the other cases. Real, closest match: **Biological Sciences, B.A.** (Weinberg College of Arts and Sciences — confirmed the college awards a B.A., not a B.S., for this major). `acuAlign` corrected 12 → 3. Cascaded: `lensScores.academic` 90 → 31. **`fitOlivier`/`.overall`/`.value` untouched** (54/54/32).
+
+**Verified:** `python -m json.tool` passes. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0** (confirmed `acuAlign` matches the `covered:true` count exactly, 3=3, after a targeted line-range Python edit to avoid touching an identical-looking `acuUnits` block elsewhere in the same file).
+
+**Files:** `data/big-ten.json` (`northwestern` — `degreeTitle`, `kinRank`, `acuAlign`, `acuAlignNote`, `acuUnits[]`, `courses[]`, `lensScores.academic`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.22 → v45.23).
+
+---
+
 ### v45.22 (2026-09-03) — Fix: Georgetown's "Exercise Science (Kinesiology & Health Studies)" was fabricated; Louisville's real degree is Exercise Physiology, not Exercise Science
 
 Third Tier 3 batch. `hofstra` and `indiana` confirmed real as stored (no changes).

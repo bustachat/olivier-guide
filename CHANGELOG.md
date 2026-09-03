@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.22 (2026-09-03) — Fix: Georgetown's "Exercise Science (Kinesiology & Health Studies)" was fabricated; Louisville's real degree is Exercise Physiology, not Exercise Science
+
+Third Tier 3 batch. `hofstra` and `indiana` confirmed real as stored (no changes).
+
+**`georgetown` — another real fabrication, same class as Duke and Cal:** Georgetown University (not to be confused with the unrelated Georgetown College in Kentucky, which does have an Exercise Science program and polluted the first search) has no Exercise Science department and no "Kinesiology & Health Studies" department — confirmed against Georgetown's School of Health, which offers exactly three undergraduate majors: Human Science, Global Health, and Health Care Management and Policy. The previously stored "KHS" course codes don't exist. Real, closest match: **Human Science, B.S.**, a broad pre-health science major including HSCI 1000 Human Body Systems (real, covers anatomy/physiology) but no exercise-specific curriculum at all. `acuAlign` corrected 12 → 3. Cascaded: `lensScores.academic` 95 → 31. **`fitOlivier`/`.overall`/`.value` untouched** (59/59/35). The old `rec` text had also oversold the pathway ("The Exercise Science degree explicitly prepares for DPT programs") — corrected to describe the real Human Science foundation instead.
+
+**`louisville`:** Minor — the real degree is **Exercise Physiology, B.S.** (Department of Health and Sport Sciences); "Exercise Science" exists only as a minor there, not a standalone major. Real courses use the `HSS` prefix (HSS 394 Introduction to Exercise Science, HSS 320 Growth and Motor Development, HSS 387 Biomechanics), not `EXSC` as previously stored. `acuAlign` (11) left unchanged — substance confirmed real.
+
+**Verified:** `python -m json.tool` passes on both touched files. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**.
+
+**Files:** `data/big-east.json` (`georgetown`), `data/acc.json` (`louisville`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.21 → v45.22).
+
+---
+
 ### v45.21 (2026-09-03) — Fix: 3 more Tier 3 schools (Delaware, Duke, GCU) — naming/prefix corrections and one real fabrication (Duke)
 
 Second Tier 3 batch. 12 schools checked this batch total: `clemson`, `creighton`, `csuf`, `denver`, `depaul`, `drexel`, `elon`, `fau`, `fiu` confirmed real as stored (no changes); `delaware`, `duke`, `gcu` needed corrections.

@@ -2782,10 +2782,10 @@
       ]
     },
     "acRank": "Strong — B.S. Exercise Science with explicit PT/OT preparation",
-    "kinRank": "B.S. Exercise Science — Kinesiology & Health Studies dept with pre-PT advising track",
-    "degreeTitle": "B.S. Exercise Science (Kinesiology & Health Studies)",
-    "acuAlign": 12,
-    "acuAlignNote": "Strong alignment — Georgetown's Exercise Science degree covers anatomy, exercise physiology, biomechanics, sport psychology, motor control, research methods and nutrition. Pre-PT advising track explicitly prepares students for DPT admission. DC location provides world-class clinical placement opportunities (Georgetown Hospital, MedStar, GW Hospital). Misses some ACU-specific advanced units and professional experience hours format differs.",
+    "kinRank": "Good (Human Science, B.S. — a broad pre-health science major, no dedicated Exercise Science or Kinesiology program)",
+    "degreeTitle": "B.S. in Human Science",
+    "acuAlign": 3,
+    "acuAlignNote": "Georgetown has no Exercise Science or \"Kinesiology & Health Studies\" department — confirmed against the university's own School of Health, which offers Human Science, Global Health, and Health Care Management and Policy as its three undergraduate majors. The previously stored \"KHS\" course codes don't exist anywhere at Georgetown. The real, closest match is Human Science, B.S. — a broad pre-health science major including HSCI 1000 Human Body Systems (real, covers anatomy and physiology), but with no exercise-specific curriculum (no biomechanics, exercise physiology, or motor control courses). DC location genuinely provides strong clinical placement access (Georgetown Hospital, MedStar).",
     "soccerLevel": "Big East — D1 Elite. 2019 National Champions. Perennial top-10 program.",
     "soccerLevelShort": "Big East",
     "aid": "Athletic + Need-based (Georgetown meets 100% of demonstrated need)",
@@ -2848,20 +2848,14 @@
       "D.C. clinical network"
     ],
     "courses": [
-      "KHS 301 — Exercise Physiology",
-      "KHS 304 — Biomechanics",
-      "KHS 306 — Functional Anatomy",
-      "KHS 320 — Motor Control",
-      "KHS 400 — Research Methods",
-      "KHS 423 — Advanced Exercise Physiology",
-      "Medical Terminology + pre-PT advising track"
+      "HSCI 1000 — Human Body Systems"
     ],
-    "rec": "Georgetown is an elite D.C. program — 2019 national champions, perennial top-10, world-class city location with unmatched clinical placement access. The Exercise Science degree explicitly prepares for DPT programs. The challenge is GPA (2.8 is borderline for admission to a 17% acceptance rate university) and cost ($85k sticker though need-based aid can help). If Olivier's GPA improves to 3.0+ and he can secure an athletic scholarship, Georgetown offers one of the best combinations of soccer, academics, and PT pathway in the country.",
+    "rec": "Georgetown is an elite D.C. program — 2019 national champions, perennial top-10, world-class city location with unmatched clinical placement access. No dedicated Exercise Science or Kinesiology major, but Human Science provides a genuine pre-health science foundation. The challenge is GPA (2.8 is borderline for admission to a 17% acceptance rate university) and cost ($85k sticker though need-based aid can help). If Olivier's GPA improves to 3.0+ and he can secure an athletic scholarship, Georgetown offers one of the best combinations of soccer, academics, and city location in the country.",
     "url": "https://guhoyas.com/sports/mens-soccer",
     "lensScores": {
       "overall": 59,
       "soccer": 92,
-      "academic": 95,
+      "academic": 31,
       "lifestyle": 50,
       "minutes": 43,
       "value": 35
@@ -2935,7 +2929,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -2947,19 +2941,19 @@
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
@@ -2967,15 +2961,15 @@
       },
       {
         "unit": "EXSC216",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC187",
@@ -2987,7 +2981,7 @@
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",

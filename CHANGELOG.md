@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.24 (2026-09-03) — Fix: St. John's "B.S. in Human Performance" was fully fabricated — no matching program exists; Seton Hall naming correction
+
+Fifth Tier 3 batch: `pittsburgh`, `princeton`, `providence`, `rutgers`, `smu`, `stanford` confirmed real as stored (no changes).
+
+**`setonhall`:** Minor — real degree is **Interprofessional Health Sciences, B.S.** (major code IPA), with Exercise Science as a track within it — not a standalone "B.S. Exercise Science." Specific course codes previously stored (`EXSC 102/300/315/420/440`) couldn't be independently verified, so `courses[]` was replaced with a plain description of the confirmed real track. `acuAlign` (10) left unchanged — the track's real description ("designed for students planning careers in rehabilitation, wellness or graduate clinical...") substantiates the existing alignment.
+
+**`stjohns` — a genuine fabrication with no good substitute found, unlike prior cases (Duke/Cal/Georgetown/Northwestern all had a real adjacent major to fall back to):** St. John's University (Queens, NY — not to be confused with the several unrelated "St. John" schools that polluted the first few search results: St. John Fisher University, the College of Saint Benedict & Saint John's University in Minnesota, Queens College CUNY) has **no Exercise Science, Kinesiology, or Human Performance program at all** — confirmed by reading the university's full majors listing (40,000+ characters of program text) with zero matches for any of those terms. The previously stored "PEP" course codes don't exist anywhere at St. John's. The university's real health-adjacent programs sit entirely within the College of Pharmacy and Health Sciences (Pharm.D., Clinical Laboratory Sciences), which don't map to any of ACU's exercise-science units. `acuAlign` corrected 10 → **0** — no real course was found that could support even a partial claim. Cascaded: `lensScores.academic` 68 → 15. `prePT`/`prePTShort` corrected from "Good" to "Foundation" for consistency (the old value assumed the fabricated program). **`fitOlivier`/`.overall`/`.value` untouched** (42/42/25).
+
+**Verified:** `python -m json.tool` passes. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**. Confirmed live in a local browser — St. John's Details modal renders "0/16" with a plain-language note; `fitOlivier` confirmed unchanged at 42.
+
+**Files:** `data/big-east.json` (`setonhall` — `degreeTitle`, `kinRank`, `acuAlignNote`, `courses[]`; `stjohns` — `degreeTitle`, `kinRank`, `acuAlign`, `acuAlignNote`, `acuUnits[]`, `courses[]`, `rec`, `prePT`, `prePTShort`, `lensScores.academic`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.23 → v45.24).
+
+---
+
 ### v45.23 (2026-09-03) — Fix: Northwestern's "B.S. Human Sciences" was fabricated — its course list was copy-confused with Michigan's real Kinesiology courses
 
 Fourth Tier 3 batch: `marquette`, `maryland`, `memphis`, `mercyhurst`, `michigan`, `michiganstate`, `monmouth`, `navy`, `ncstate`, `northeastern`, `notredame`, `ohiostate`, `pennstate` all confirmed real as stored (some with minor naming nuances not worth a full correction — e.g. Marquette's formal bulletin title is "Exercise Physiology, BS" though the program is branded "Exercise Science"; Ohio State's is "Exercise Science Education"). `northwestern` needed a real fix.

@@ -59,16 +59,16 @@
       "draftRank": "Consistent D1 producer; NYC clinical network unique advantage"
     },
     "acRank": "Top 150",
-    "kinRank": "Good",
-    "degreeTitle": "B.S. in Human Performance",
-    "acuAlign": 10,
-    "acuAlignNote": "Core exercise science covered. NYC location provides extraordinary clinical placement access for DPT applications — Hospital for Special Surgery, NYU Langone, NY Presbyterian all accessible.",
+    "kinRank": "No dedicated Exercise Science, Kinesiology, or Human Performance program",
+    "degreeTitle": "⚠ No Exercise Science/Kinesiology — Clinical Laboratory Sciences (Pharmacy & Health Sciences)",
+    "acuAlign": 0,
+    "acuAlignNote": "St. John's has no Exercise Science, Kinesiology, or Human Performance program — confirmed against the university's full majors list (40,000+ characters of program listings, no match for any of those terms). The previously stored \"PEP\" course codes don't exist anywhere at St. John's. The university's real health-adjacent programs sit in the College of Pharmacy and Health Sciences (Pharm.D., Clinical Laboratory Sciences, and similar), none of which map to ACU's exercise-science units. NYC location still provides extraordinary clinical exposure generally (Hospital for Special Surgery, NYU Langone, NY Presbyterian), just not through a matching academic program.",
     "soccerLevel": "Big East — Competitive",
     "soccerLevelShort": "Big East",
     "aid": "Athletic + Need",
     "size": 21000,
-    "prePT": "Good",
-    "prePTShort": "Good",
+    "prePT": "Foundation — no Exercise Science or Kinesiology program; strong general NYC clinical exposure only",
+    "prePTShort": "Foundation",
     "gpa": {
       "minEntry": "2.0 NCAA core (min)",
       "minSchol": "3.0 for academic aid layer",
@@ -124,17 +124,14 @@
       "NYC clinical network"
     ],
     "courses": [
-      "PEP 201 — Human Movement",
-      "PEP 305 — Exercise Physiology",
-      "PEP 320 — Kinesiology",
-      "PEP 401 — Rehabilitation Science"
+      "College of Pharmacy and Health Sciences — Clinical Laboratory Sciences and related programs (no Exercise Science/Kinesiology curriculum)"
     ],
-    "rec": "NYC = Hospital for Special Surgery, NYU Langone, NY Presbyterian — best clinical DPT access in the country. Big East soccer is tough. Cool climate. City lifestyle partially compensates.",
+    "rec": "NYC = Hospital for Special Surgery, NYU Langone, NY Presbyterian — strong general clinical exposure, though St. John's has no Exercise Science or Kinesiology program to build on academically. Big East soccer is tough. Cool climate. City lifestyle partially compensates.",
     "url": "https://redstormsports.com/sports/mens-soccer",
     "lensScores": {
       "overall": 42,
       "soccer": 65,
-      "academic": 68,
+      "academic": 15,
       "minutes": 12,
       "lifestyle": 50,
       "value": 25
@@ -204,23 +201,23 @@
     "acuUnits": [
       {
         "unit": "ANAT100",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC225",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -228,11 +225,11 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
@@ -244,11 +241,11 @@
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC187",
@@ -260,7 +257,7 @@
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",
@@ -833,10 +830,10 @@
       "#dbeafe",
       "#1e3a8a"
     ],
-    "kinRank": "Good (Exercise Science, solid pre-health advising)",
-    "degreeTitle": "B.S. Exercise Science",
+    "kinRank": "Good (Interprofessional Health Sciences, B.S., Exercise Science track — no standalone Exercise Science major)",
+    "degreeTitle": "B.S. Interprofessional Health Sciences (Exercise Science track)",
     "acuAlign": 10,
-    "acuAlignNote": "Exercise science program covers core anatomy and physiology. NYC proximity (30 min) opens extensive clinical placement options for pre-PT.",
+    "acuAlignNote": "Seton Hall's real degree is Interprofessional Health Sciences, B.S. (major code IPA) — Exercise Science is a track within it, not a standalone major. Covers core anatomy and physiology. NYC proximity (30 min) opens extensive clinical placement options for pre-PT.",
     "soccerLevel": "Big East — Competitive",
     "soccerLevelShort": "Big East",
     "fin": {
@@ -946,11 +943,8 @@
       "Hackensack Meridian Health"
     ],
     "courses": [
-      "EXSC 102 — Introduction to Exercise Science",
-      "EXSC 300 — Exercise Physiology",
-      "EXSC 315 — Biomechanics",
-      "EXSC 420 — Motor Learning",
-      "EXSC 440 — Clinical Practicum"
+      "Interprofessional Health Sciences core coursework",
+      "Exercise Science track requirements (rehabilitation, wellness, and graduate clinical preparation)"
     ],
     "staff": [
       {

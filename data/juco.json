@@ -10181,8 +10181,8 @@
     "domain": "rscraiders.com",
     "url": "https://rscraiders.com/sports/mens-soccer",
     "degreeTitle": "A.S. Health & Sport Sciences — Exercise/Fitness Management option",
-    "acuAlign": 5,
-    "acuAlignNote": "Rose State offers the strongest ACU-relevant degree found in this batch: an A.S. in Health & Sport Sciences with a dedicated Exercise/Fitness Management option, whose learning outcomes explicitly include designing physical fitness programs and examining sports nutrition. Required core courses cover EXSC224 (HPER 1213 Introduction to Health & Sports Sciences) and EXSC199 (HPER 1202 Health & Wellness, a general-education requirement). The Support & Related Electives list — advisor-approved, not automatic — includes HPER 2623 Physiology of Exercise (a direct match for EXSC225) and both HPER 2643 Applied Anatomy and HSBC 2114 Human Anatomy (covering ANAT100); the 7-hour Sciences general-education requirement can also be satisfied with a BIOL-prefix course (BIOL125). No dedicated Strength & Conditioning or research-methods course was confirmed. Full WES evaluation and advisor confirmation required before relying on the elective-dependent units (EXSC225, ANAT100).",
+    "acuAlign": 3,
+    "acuAlignNote": "Rose State offers a real, dedicated A.S. in Health & Sport Sciences with an Exercise/Fitness Management option, whose learning outcomes include designing physical fitness programs and examining sports nutrition. Two required core courses — HPER 1213 (Introduction to Health & Sports Sciences) and HPER 1202 (Health & Wellness) — are general survey courses and don't match a specific ACU unit closely enough to count. The Support & Related Electives list — advisor-approved, not automatic — includes HPER 2623 Physiology of Exercise (a direct match for EXSC225) and both HPER 2643 Applied Anatomy and HSBC 2114 Human Anatomy (covering ANAT100); the 7-hour Sciences general-education requirement can also be satisfied with a BIOL-prefix course (BIOL125). No dedicated Biomechanics, Sport Psychology, Strength & Conditioning, or research-methods course was confirmed. Full WES evaluation and advisor confirmation required before relying on the elective-dependent units (EXSC225, ANAT100).",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -10210,7 +10210,7 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
@@ -10226,7 +10226,7 @@
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
@@ -10314,7 +10314,7 @@
     "lensScores": {
       "overall": 68,
       "soccer": 47,
-      "academic": 42,
+      "academic": 31,
       "minutes": 70,
       "lifestyle": 100,
       "value": 66

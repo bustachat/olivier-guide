@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.29 (2026-09-03) — Complete the academic-credential audit: post-RULE-0 follow-up on the 60 NJCAA gap-fill schools (0 fabrications, 1 mapping fix)
+
+Closes the follow-up item opened at the end of the 110-school pre-RULE-0 campaign (v45.15–v45.28): the 60 schools added to `data/juco.json` after RULE 0 became mandatory (v44.71 onward, the NJCAA gap-fill campaign) had never been individually checked against a live source under this audit's methodology — RULE 0 was supposed to mean they were verified at add time, but that had never been confirmed.
+
+**Scope.** Diffed every current school id against the data files as they stood at the RULE 0 commit (`97218e9`) — 61 ids came back, but `delaware` is a false positive (it moved from `caa.json` to `d1-other.json` after RULE 0; it's a pre-existing school already covered in the 110-school campaign). Real scope: 60 schools, all in `data/juco.json`.
+
+**Result: 0 fabrications.** 59 of 60 schools' `degreeTitle`/`courses[]` claims confirmed real and accurate against live sources (official program pages, course catalogs, or — for the honest "no dedicated program" disclosures — confirmation that no such program exists). This is a materially different outcome from the pre-RULE-0 campaign (11 fabrications + 1 partial in 110 schools) and is the first real-world confirmation that RULE 0 (mandatory real-browser Tier-1 verification, in force since v42.9) actually changed research quality rather than just adding a compliance step.
+
+**1 mapping correction — `rose_state` (not a fabrication).** Both cited courses are real: HPER 1213 "Introduction to Health & Sports Sciences" and HPER 1202 "Health & Wellness" (Coursicle + Rose State's own 2024-2025 catalog PDF confirmed both). But they were credited against the wrong ACU units — EXSC224 ("Mechanical Bases of Exercise" / Biomechanics per `ACU_UNIT_META`) and EXSC199 ("Psychology of Sport") respectively — and neither general survey course teaches that content. This was a pre-existing, already-flagged open item (CLAUDE.md §6F group A, present since the school was added in the Region 2 batch), not a new find. Fixed: both units set `covered: false`, `acuAlign` 5→3, `acuAlignNote` rewritten, `lensScores.academic` recomputed 42→31 via the standard formula. `fitOlivier`/`lensScores.overall`/`.value` unchanged (68/68/66) — ACU alignment hasn't fed the Fit Score since v37.1.
+
+**Verification coverage:** 53 of 60 checked directly this session via live browser (Bing search → official program/catalog page, cross-checking `degreeTitle` and at least one cited course code per school). The remaining 7 rely on prior, already-documented verification rather than being re-checked from scratch: `trinidad_state`/`illinois_central`/`yavapai_college` (prior-session spot-checks, memory-recorded); `daley_college`/`kennedy_king_college`/`truman_college`/`wilbur_wright_college` (the v44.74 City Colleges of Chicago batch's own documented `catalog.ccc.edu` research); `usc_salkehatchie`/`usc_sumter`/`usc_union` (inherit `usc_lancaster`'s directly-confirmed finding — via `sc.edu`'s own degree-programs page — that all four USC regional campuses share one system-wide associate curriculum: AA / AS / AS-Business / AS-Criminal Justice only, no dedicated Exercise Science associate anywhere in the system).
+
+**No fabrication sub-patterns from the pre-RULE-0 campaign recurred** (no reused-real-prefix cases, no real-degree-fake-courses cases) — every checked school's `degreeTitle` and cited course codes matched a live, official source exactly or near-exactly (a few minor course-numbering-format variances, e.g. Lamar CC's stored "HPE 1088" vs. the catalog's "HPE 188," left unchanged as immaterial).
+
+Files: `data/juco.json` (rose_state only), CLAUDE.md §6F (campaign closure), `athletes/olivier.json` (guideVersion). Validated: `python -m json.tool` PASS, `validate_schools.py` 0 errors/19 warnings (all pre-existing), `node validate_consistency.js` Issues: 0.
+
+---
+
 ### v45.28 (2026-09-03) — Fix: Villanova's "Human Services / Exercise Science" and Washington's "B.S. Kinesiology" were both fabricated — neither school has such a program
 
 Ninth Tier 3 batch: `wakeforest` confirmed real (exact match, dedicated Health and Exercise Science department).

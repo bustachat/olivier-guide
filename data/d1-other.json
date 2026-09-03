@@ -59,10 +59,10 @@
       "draftRank": "Developing D1 — limited MLS pipeline to date"
     },
     "acRank": "Regional Strong — Kinesiology department noted",
-    "kinRank": "B.S. Kinesiology — comprehensive exercise science",
-    "degreeTitle": "B.S. in Kinesiology (Exercise Science Concentration)",
-    "acuAlign": 11,
-    "acuAlignNote": "Strong alignment — UCA Kinesiology covers anatomy, exercise physiology, biomechanics, resistance training, motor control, and sport psychology. Research methods included. Clinical practicum through UAMS (University of Arkansas for Medical Sciences) network. Missing: environmental physiology and some ACU-specific professional experience hours.",
+    "kinRank": "B.S. Exercise Science — comprehensive, real EXSS-prefix curriculum",
+    "degreeTitle": "B.S. in Exercise Science",
+    "acuAlign": 10,
+    "acuAlignNote": "UCA's real degree is B.S. in Exercise Science (a generalist degree) — not \"Kinesiology\" as previously stored; \"Kinesiology and Exercise Science\" is the name of UCA's graduate program, not the undergraduate one. Confirmed live against UCA's own degree plan (uca.edu/exss/bscurriculum): real EXSS-prefix courses include EXSS 2381 Anatomical Kinesiology, EXSS 3303 Exercise Physiology, EXSS 3382 Biomechanics, EXSS 3348/3352 Exercise Prescription, EXSS 2340 Motor Development and Learning, EXSS 1135 Beginning Weight Training, and a required EXSS 4V99 Internship — the previously stored \"KIN\" course codes don't exist. Genuinely strong, well-rounded coverage.",
     "soccerLevel": "ASUN Conference — D1 Mid-Major",
     "soccerLevelShort": "ASUN Conference",
     "aid": "Athletic + Merit",
@@ -125,18 +125,18 @@
       "UAMS Clinical Network"
     ],
     "courses": [
-      "KIN 3320 — Exercise Physiology",
-      "KIN 3360 — Biomechanics",
-      "KIN 4350 — Motor Control and Learning",
-      "KIN 4370 — Sport Psychology",
-      "KIN 4390 — Clinical Practicum (UAMS)"
+      "EXSS 2381 — Anatomical Kinesiology",
+      "EXSS 3303 — Exercise Physiology",
+      "EXSS 3382 — Biomechanics",
+      "EXSS 3352 — Exercise Prescription for Clinical Populations",
+      "EXSS 4V99 — Internship in Exercise Science"
     ],
-    "rec": "UCA is an accessible warm-climate D1 option with a genuinely strong Kinesiology programme and the UAMS clinical network for pre-PT students. Conway is not a major city but Little Rock is 20 minutes away. The $28k/yr price point is among the best in D1. ASUN Conference provides legitimate D1 credentials. Best fit for an athlete who needs affordable D1 entry with strong academic pre-PT infrastructure and a warm climate.",
+    "rec": "UCA is an accessible warm-climate D1 option with a genuinely strong Exercise Science programme and the UAMS clinical network for pre-PT students. Conway is not a major city but Little Rock is 20 minutes away. The $28k/yr price point is among the best in D1. ASUN Conference provides legitimate D1 credentials. Best fit for an athlete who needs affordable D1 entry with strong academic pre-PT infrastructure and a warm climate.",
     "url": "https://ucasports.com/sports/mens-soccer",
     "lensScores": {
       "overall": 43,
       "soccer": 62,
-      "academic": 72,
+      "academic": 68,
       "minutes": 12,
       "lifestyle": 50,
       "value": 42
@@ -201,7 +201,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -213,11 +213,11 @@
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC224",
@@ -225,35 +225,35 @@
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC216",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC187",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC230",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",

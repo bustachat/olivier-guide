@@ -59,10 +59,10 @@
       "draftRank": "Strong regional pipeline"
     },
     "acRank": "Top 50 National",
-    "kinRank": "Strong",
-    "degreeTitle": "B.S. in Kinesiology",
-    "acuAlign": 11,
-    "acuAlignNote": "Strong — anatomy, physiology, biomechanics, sport psych all covered. Motor development/control less structured than at UF or Indiana.",
+    "kinRank": "Foundation — no Kinesiology, Exercise Science, or Human Biology major exists at UCSB",
+    "degreeTitle": "B.S. in Biopsychology",
+    "acuAlign": 1,
+    "acuAlignNote": "UCSB has no Kinesiology, Exercise Science, or Human Biology major — confirmed against the university's full majors and degrees list, and the previously stored \"KINE\" course codes don't exist anywhere at UCSB. The real, closest match is Biopsychology, B.S. (Department of Psychological & Brain Sciences), a genuine major with a biology/chemistry/physics science foundation, but no confirmed anatomy, exercise physiology, or biomechanics coursework specific to ACU's units.",
     "soccerLevel": "Big West — Competitive",
     "soccerLevelShort": "Big West",
     "aid": "Athletic + Merit",
@@ -125,17 +125,14 @@
       "Exercise Science Labs"
     ],
     "courses": [
-      "KINE 1 — The Moving Body",
-      "KINE 105 — Sport Physiology",
-      "KINE 108 — Biomechanics",
-      "KINE 160 — Athletic Training"
+      "Biopsychology core coursework (biology, chemistry, physics, psychology foundation)"
     ],
-    "rec": "Mediterranean climate identical to Sydney. Manu Duah #1 pick proves D1 pro calibre. Strong kinesiology. Beach campus lifestyle match.",
+    "rec": "Mediterranean climate identical to Sydney. Manu Duah #1 pick proves D1 pro calibre. No dedicated Kinesiology or Exercise Science major — Biopsychology is the closest real academic fit. Beach campus lifestyle match.",
     "url": "https://ucsbgauchos.com/sports/mens-soccer",
     "lensScores": {
       "overall": 59,
       "soccer": 69,
-      "academic": 73,
+      "academic": 20,
       "minutes": 21,
       "lifestyle": 95,
       "value": 35
@@ -224,11 +221,11 @@
     "acuUnits": [
       {
         "unit": "ANAT100",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -236,11 +233,11 @@
       },
       {
         "unit": "EXSC225",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -248,11 +245,11 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
@@ -264,11 +261,11 @@
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC187",
@@ -280,11 +277,11 @@
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",
-        "covered": true
+        "covered": false
       }
     ]
   },
@@ -580,10 +577,10 @@
       "#fef9c3",
       "#1e3a8a"
     ],
-    "kinRank": "Good (Exercise Biology, strong biological-sciences emphasis)",
-    "degreeTitle": "B.S. Exercise Biology",
+    "kinRank": "Good (Neurobiology, Physiology, and Behavior, B.S. with Exercise Biology minor)",
+    "degreeTitle": "B.S. Neurobiology, Physiology, and Behavior (NPB) with Exercise Biology minor",
     "acuAlign": 11,
-    "acuAlignNote": "Exercise Biology covers anatomy, physiology, biomechanics, motor learning. UC Davis Medical Center provides strong clinical access for pre-PT.",
+    "acuAlignNote": "\"Exercise Biology\" is a minor at UC Davis, not a standalone major — the real major is Neurobiology, Physiology, and Behavior (NPB), B.S., which students pair with the Exercise Biology minor for exercise-specific coursework. Real courses (NPB and EXB are both genuine UC Davis course subject codes) cover anatomy, physiology, biomechanics, and motor learning. UC Davis Medical Center provides strong clinical access for pre-PT.",
     "soccerLevel": "Big West — Competitive",
     "soccerLevelShort": "Big West",
     "fin": {

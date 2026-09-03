@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.26 (2026-09-03) — Fix: UCSB has no Kinesiology major (fabricated); UCA and UC Davis naming corrections
+
+Seventh Tier 3 batch: `ucirvine` (formal title "Physiology and Exercise Science, B.S." — close match), `uconn` (exact match, real KINS prefix confirmed), `ucriverside` (exact match, genuine Kinesiology B.S.) all confirmed real as stored.
+
+**`uca`:** Real degree is **B.S. in Exercise Science** — the stored "B.S. in Kinesiology (Exercise Science Concentration)" had the relationship backwards; "Kinesiology and Exercise Science" is the name of UCA's *graduate* program, not the undergraduate one. Confirmed live against UCA's own degree plan: real `EXSS`-prefix courses (EXSS 2381 Anatomical Kinesiology, EXSS 3303 Exercise Physiology, EXSS 3382 Biomechanics, a required EXSS 4V99 Internship) replace the fabricated `KIN` codes. Genuinely strong, well-rounded coverage — `acuAlign` corrected 11 → 10 after unit-by-unit re-verification against the real curriculum (a minor decrease, not a fabrication-scale correction). Cascaded: `lensScores.academic` 72 → 68.
+
+**`ucdavis`:** "Exercise Biology" is a **minor** at UC Davis, not a standalone major — the real major is **Neurobiology, Physiology, and Behavior (NPB), B.S.**, typically paired with the Exercise Biology minor. Both NPB and EXB are genuine UC Davis course subject codes, so the underlying course citations were plausible; only the degree name was wrong. `acuAlign` (11) and `courses[]` left unchanged — substance confirmed real.
+
+**`ucsb` — a real fabrication:** UCSB has **no Kinesiology, Exercise Science, or Human Biology major** — confirmed against the university's full majors and degrees list (14,000+ characters, zero matches for any of those terms), and the previously stored "KINE" course codes don't exist anywhere at UCSB. The real, closest match is **Biopsychology, B.S.** (Department of Psychological & Brain Sciences) — a genuine major with a real biology/chemistry/physics foundation, but no confirmed anatomy, exercise physiology, or biomechanics coursework. `acuAlign` corrected 11 → 1 (only `BIOL125`, the one unit a general biology foundation can support without guessing). Cascaded: `lensScores.academic` 73 → 20. **`fitOlivier`/`.overall`/`.value` untouched** (59/59/35).
+
+**Verified:** `python -m json.tool` passes on all three touched files. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0** (confirmed `uca`'s and `ucsb`'s `acuAlign` match their `covered:true` counts exactly after targeted line-range Python edits).
+
+**Files:** `data/d1-other.json` (`uca`), `data/big-west.json` (`ucdavis`, `ucsb`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.25 → v45.26).
+
+---
+
 ### v45.25 (2026-09-03) — Fix: Stony Brook and UAB both had "Kinesiology"/"Exercise Science" listed as standalone majors when both are really concentrations within a broader degree
 
 Sixth Tier 3 batch: `syracuse`, `temple`, `tulsa` confirmed real as stored (Syracuse's formal title is "Health and Exercise Science, B.S." — close naming match, not correction-worthy).

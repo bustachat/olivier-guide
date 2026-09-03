@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.19 (2026-09-03) — Fix: St. Edward's Kinesiology is a B.A., not B.S. (a real, extensive program — degree-type correction, not a fabrication); §6F Tier 2 CLOSED (12/12)
+
+Closes Tier 2 of the §6F academic-credential audit. `stedwards` was the last school checked — a different, milder finding than any prior one this campaign.
+
+**What was found:** St. Edward's Kinesiology program is real, current, and unusually well-documented — six career tracks (Kinesiology, Pre-Athletic Training, Sports Management, Exercise Science, Pre-Physical Therapy, Pre-Occupational Therapy), confirmed live against the university's own program page, each with real named courses (Musculoskeletal Anatomy and Biomechanics, Exercise Physiology, Sports Nutrition, Prevention and Treatment of Athletic Injuries). The only inaccuracy: it's a **Bachelor of Arts**, not the stored "B.S." The specific numeric course codes previously stored (`KIN 3320`, `KIN 3310`, `KIN 4310`, `KIN 3210`) couldn't be independently verified against the current catalog, so `courses[]` was replaced with the confirmed real course titles rather than left with unverifiable codes.
+
+**Fix.** `degreeTitle` corrected to "B.A. in Kinesiology (Exercise Science or Pre-Physical Therapy emphasis)." `kinRank`, `acuAlignNote`, `courses[]` rewritten. **`acuAlign` (11) and `lensScores.academic` left unchanged** — the confirmed real course content substantiates the existing alignment level; this is a degree-type and course-code accuracy fix, not a coverage correction, so no cascade was needed.
+
+**Tier 2 final tally, all 12 D2/NAIA/D3 schools checked:** 9 confirmed real (`barry`, `columbia_college`, `csula`, `georgian_court`, `keiser`, `nova`, `ocu`, `pba`, `uc_charleston`), 2 fixed (`chapman` v45.17 — partial, real renamed degree with fabricated course codes; `lynn` v45.18 — full fabrication), 1 minor correction (`stedwards` — real program, wrong degree type). Next: Tier 3 (69 major D1/Ivy schools).
+
+**Verified:** `python -m json.tool data/d2.json` passes. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0**.
+
+**Files:** `data/d2.json` (`stedwards` — `degreeTitle`, `kinRank`, `acuAlignNote`, `courses[]`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table — Tier 2 closed), `athletes/olivier.json` (`guideVersion` v45.18 → v45.19).
+
+---
+
 ### v45.18 (2026-09-03) — Fix: Lynn University's "B.S. in Exercise Science" was fabricated — Lynn has no Exercise Science, Kinesiology, or Athletic Training program at all
 
 Second §6F Tier 2 school checked. Unlike `chapman` (a real, renamed degree with fabricated course codes), this is a full fabrication in the Indian Hills/Iowa Western mold — the degree itself doesn't exist.

@@ -586,10 +586,10 @@
       }
     },
     "acRank": "Community College",
-    "kinRank": "Kinesiology / Health Sciences — transfer pathway",
-    "degreeTitle": "A.A. Kinesiology / A.S. Health Sciences",
-    "acuAlign": 8,
-    "acuAlignNote": "Partial alignment — Iowa Western covers anatomy, physiology basics, and health sciences foundations. Exercise physiology and biomechanics partially covered. Designed as a 2-year transfer pathway — upper-division ACU units align better after transfer to 4-year program.",
+    "kinRank": "Exercise Science — 2-year transfer pathway (A.S.)",
+    "degreeTitle": "A.S. Exercise Science Transfer Major",
+    "acuAlign": 4,
+    "acuAlignNote": "Iowa Western's real degree here is the Exercise Science Transfer Major, A.S. — a 61-credit, 4-semester program built around First Aid, Health, Weight Training, an intro Sports Medicine course, Care & Prevention of Athletic Injuries, and Personal Trainer coursework rather than an academic kinesiology-science curriculum. It covers Human Anatomy & Physiology I/II (BIO 168/173), Human Biology 1 (BIO 157), Principles of Weight Training (PEH 170), and Sport and Exercise Psychology (PSY 210) — but has no dedicated Exercise Physiology, Biomechanics, or Research Methods course, so ACU alignment is real but limited. Designed as a 2-year transfer pathway — stronger academic-science alignment typically comes after transferring to a 4-year program.",
     "soccerLevel": "NJCAA Division I — competitive JUCO",
     "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic grants + need-based",
@@ -624,9 +624,9 @@
       "stadium": "John and Harriet Wiebe Football and Soccer Complex — opened Fall 2024, $9M facility. Dedicated football/soccer complex with locker rooms, 4 team meeting rooms, coaches offices, athletic training room. Significant recent investment for JUCO level.",
       "trainingFields": "Practice pitches on campus. Council Bluffs/Omaha climate is cold October–March — indoor training essential in winter.",
       "strengthConditioning": "Iowa Western Athletic Weight Room — JUCO standard weights, machines, functional training. Plus: 92,248 sq ft Wellness Center with indoor turf area. 5 full-time certified ATs; 3,300 sq ft recovery room with GAME READY units, STIM+ultrasound, contrast therapy. Exceptional support for JUCO level.",
-      "sportsScience": "Basic sports science support through athletics department. Academic exercise science lab access through Kinesiology programme. Transfer partners (Creighton, Iowa State) provide benchmarking for development standards.",
+      "sportsScience": "Basic sports science support through athletics department. Foundational anatomy/physiology and exercise-programming lab access through the Exercise Science Transfer Major. Transfer partners (Creighton, Iowa State) provide benchmarking for development standards.",
       "sportsMed": "Certified athletic trainer on staff. Regional medical partnerships in Omaha metro. UnityPoint Health and Alegent Creighton Health systems in Omaha provide clinical access.",
-      "academicLabs": "Kinesiology lab for foundational anatomy and physiology coursework. Health Sciences programme designed to articulate with 4-year Bachelor's programs. Transfer agreements with Iowa, Iowa State, Drake University, and Creighton documented.",
+      "academicLabs": "Lab access for the Exercise Science Transfer Major's anatomy/physiology and weight-training coursework. Designed as a 2-year transfer pathway to a 4-year Bachelor's program. Transfer agreements with Iowa, Iowa State, Drake University, and Creighton documented.",
       "extras": "Omaha metro (5 min) — major league sports (Creighton basketball Big East, UNO hockey, College World Series in June). Henry Doorly Zoo (world's best aquarium). Old Market dining and arts district. Council Bluffs riverboat entertainment.",
       "rating": "Good",
       "housing": {
@@ -647,20 +647,21 @@
     "facilities": [
       "Iowa Western Soccer Fields",
       "Athletic Weight Room",
-      "Kinesiology Lab"
+      "92,248 sq ft Wellness Center"
     ],
     "courses": [
-      "KIN 110 — Introduction to Kinesiology",
-      "BIO 168 — Human Anatomy",
-      "BIO 169 — Human Physiology",
-      "HHP 220 — Exercise Science Foundations"
+      "BIO 168 — Human Anatomy and Physiology I",
+      "BIO 173 — Human Anatomy and Physiology II",
+      "BIO 157 — Human Biology 1",
+      "PSY 210 — Sport and Exercise Psychology",
+      "PEH 170 — Principles of Weight Training"
     ],
     "rec": "Iowa Western CC is the Midwest transfer pathway school — the Council Bluffs/Omaha equivalent of Santa Monica College. Extremely affordable at ~$14k/yr with open admission. Best strategic use: bridge GPA to 2.8+ eligibility floor, gain 2 years of NJCAA D1 soccer film, then transfer to target D1 or D2 program. Cold climate is a significant lifestyle mismatch for a Sydney-raised player. Primary value is financial and eligibility access, not lifestyle fit.",
     "url": "https://www.goreivers.com/sports/msoc/index",
     "lensScores": {
       "overall": 61,
       "soccer": 58,
-      "academic": 40,
+      "academic": 36,
       "minutes": 58,
       "lifestyle": 50,
       "value": 65
@@ -720,7 +721,7 @@
       },
       {
         "unit": "EXSC225",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -732,7 +733,7 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
@@ -764,11 +765,11 @@
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",
-        "covered": true
+        "covered": false
       }
     ],
     "devScoresNote": "Live staff directory: 6-person staff incl. a dedicated Director of Performance (Grant Johannes) + GK coach — plus the $9M John & Harriet Wiebe complex (2024), 5 full-time ATs and a Game Ready recovery room. The one JUCO with near-D1 environment; top of the group."

@@ -2186,10 +2186,10 @@
       "#dbeafe",
       "#2563eb"
     ],
-    "kinRank": "Good (Human Services/Exercise Science combined track)",
-    "degreeTitle": "B.S. Human Services / Exercise Science",
-    "acuAlign": 11,
-    "acuAlignNote": "Exercise science and human services pathways. Philadelphia medical district (30 min) for pre-PT clinical access.",
+    "kinRank": "Good (Biology, B.S. — no Human Services, Exercise Science, or Kinesiology major exists at Villanova)",
+    "degreeTitle": "B.S. Biology",
+    "acuAlign": 2,
+    "acuAlignNote": "Villanova has no Human Services, Exercise Science, or Kinesiology major — confirmed against the university's full programs catalog (51,000+ characters, zero matches for any of those terms), and the previously stored \"EXSC\" course codes couldn't be verified anywhere at Villanova. The real, closest match is Biology, B.S. (College of Liberal Arts and Sciences) — a genuine major with foundational biology coursework, but no exercise-specific curriculum. Philadelphia medical district (30 min) remains a real strength for general pre-health clinical access.",
     "soccerLevel": "Big East — Competitive",
     "soccerLevelShort": "Big East",
     "fin": {
@@ -2218,7 +2218,7 @@
     "lensScores": {
       "overall": 42,
       "soccer": 62,
-      "academic": 65,
+      "academic": 26,
       "minutes": 26,
       "lifestyle": 50,
       "value": 25
@@ -2299,11 +2299,7 @@
       "Jefferson Health Sports Med"
     ],
     "courses": [
-      "EXSC 1400 — Foundations of Exercise Science",
-      "EXSC 3200 — Exercise Physiology",
-      "EXSC 3400 — Biomechanics",
-      "EXSC 4200 — Motor Learning",
-      "EXSC 4600 — Clinical Practicum"
+      "Biology core coursework (College of Liberal Arts and Sciences)"
     ],
     "staff": [
       {
@@ -2380,7 +2376,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -2388,11 +2384,11 @@
       },
       {
         "unit": "EXSC225",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -2400,11 +2396,11 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
@@ -2412,11 +2408,11 @@
       },
       {
         "unit": "EXSC216",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
@@ -2428,11 +2424,11 @@
       },
       {
         "unit": "EXSC230",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",

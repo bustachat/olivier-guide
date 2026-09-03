@@ -2530,10 +2530,10 @@
       "#f3e8ff",
       "#6d28d9"
     ],
-    "kinRank": "Good (Kinesiology, strong sports medicine research ties)",
-    "degreeTitle": "B.S. Kinesiology",
-    "acuAlign": 11,
-    "acuAlignNote": "Solid kinesiology — anatomy, physiology, biomechanics covered. UW Medicine provides strong clinical access for pre-PT pathway.",
+    "kinRank": "Good (Biology, Physiology track — no Kinesiology or Exercise Science major exists at UW)",
+    "degreeTitle": "B.S. Biology (Physiology track)",
+    "acuAlign": 2,
+    "acuAlignNote": "UW has no Kinesiology or Exercise Science major — confirmed against the university's official complete undergraduate majors list, and the previously stored \"KIN\" course codes don't exist anywhere at UW. The real, closest match is the Physiology track within Biology (Molecular, Cellular, and Developmental Physiology) — a genuine option, but with no confirmed exercise-specific curriculum. UW Medicine remains a real clinical access strength for a general pre-health pathway.",
     "soccerLevel": "Big Ten — Competitive",
     "soccerLevelShort": "Big Ten",
     "fin": {
@@ -2562,7 +2562,7 @@
     "lensScores": {
       "overall": 50,
       "soccer": 68,
-      "academic": 65,
+      "academic": 26,
       "minutes": 38,
       "lifestyle": 50,
       "value": 30
@@ -2645,11 +2645,7 @@
       "UW Medicine Sports Med"
     ],
     "courses": [
-      "KIN 201 — Anatomical Kinesiology",
-      "KIN 302 — Exercise Physiology",
-      "KIN 403 — Biomechanics of Human Motion",
-      "KIN 407 — Motor Learning",
-      "KIN 475 — Clinical Kinesiology Practicum"
+      "Biology core coursework (Physiology track)"
     ],
     "staff": [
       {
@@ -2724,11 +2720,11 @@
     "acuUnits": [
       {
         "unit": "ANAT100",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -2740,7 +2736,7 @@
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -2748,11 +2744,11 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
@@ -2760,11 +2756,11 @@
       },
       {
         "unit": "EXSC216",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
@@ -2776,11 +2772,11 @@
       },
       {
         "unit": "EXSC230",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",

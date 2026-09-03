@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.28 (2026-09-03) — Fix: Villanova's "Human Services / Exercise Science" and Washington's "B.S. Kinesiology" were both fabricated — neither school has such a program
+
+Ninth Tier 3 batch: `wakeforest` confirmed real (exact match, dedicated Health and Exercise Science department).
+
+**`villanova` — a genuine fabrication:** Villanova has no Human Services, Exercise Science, or Kinesiology major — confirmed against the university's full programs catalog (51,000+ characters, zero matches for any of those terms), and the previously stored "EXSC" course codes couldn't be verified anywhere at Villanova. The real, closest match is **Biology, B.S.** (College of Liberal Arts and Sciences). `acuAlign` corrected 11 → 2. Cascaded: `lensScores.academic` 65 → 26. **`fitOlivier`/`.overall`/`.value` untouched** (42/42/25).
+
+**`virginia`:** Minor — real degree is a **B.S.Ed. in Kinesiology** (School of Education and Human Development), not a plain B.S. — the Kinesiology content itself was accurately described, just the degree-type suffix was missing. Light-touch fix: `degreeTitle` and `acuAlignNote` updated, `acuAlign` (13) left unchanged since the underlying program description was already accurate.
+
+**`washington` (University of Washington, Seattle — not to be confused with Central/Western/State Washington, which all have real Kinesiology programs and polluted the first several search results) — another genuine fabrication:** UW has no Kinesiology or Exercise Science major — confirmed against the university's own official complete undergraduate majors list. The previously stored "KIN" course codes don't exist anywhere at UW. The real, closest match is the **Physiology track within Biology** (Molecular, Cellular, and Developmental Physiology). `acuAlign` corrected 11 → 2. Cascaded: `lensScores.academic` 65 → 26. **`fitOlivier`/`.overall`/`.value` untouched** (50/50/30).
+
+**Verified:** `python -m json.tool` passes on all three touched files. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0** (confirmed `villanova`'s and `washington`'s `acuAlign` match their `covered:true` counts exactly after targeted line-range Python edits).
+
+**Files:** `data/big-east.json` (`villanova`), `data/acc.json` (`virginia`), `data/big-ten.json` (`washington`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.27 → v45.28).
+
+---
+
 ### v45.27 (2026-09-03) — Fix: UCSD's "Exercise and Rehabilitative Sciences" was fabricated — reused a real course prefix (Education Studies) with invented titles; Vermont naming correction
 
 Eighth Tier 3 batch: `ucla`, `unc`, `usf` confirmed real as stored (all exact matches).

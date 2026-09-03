@@ -1396,10 +1396,10 @@
       "#dbeafe",
       "#1e3a8a"
     ],
-    "kinRank": "Excellent (Exercise and Rehabilitative Sciences — degree explicitly built for PT-track students)",
-    "degreeTitle": "B.S. Exercise and Rehabilitative Sciences",
-    "acuAlign": 12,
-    "acuAlignNote": "Exercise and Rehabilitative Sciences — one of the most PT-aligned degrees in the UC system. Anatomy, physiology, biomechanics, clinical rehabilitation all covered. UCSD Health for clinical access.",
+    "kinRank": "Good (Human Biology, B.S. — no Exercise Science or Kinesiology major exists at UCSD)",
+    "degreeTitle": "B.S. Human Biology",
+    "acuAlign": 2,
+    "acuAlignNote": "UCSD has no \"Exercise and Rehabilitative Sciences\" degree — that name appears nowhere associated with the university. The previously stored \"EDS\" course codes are real at UCSD, but EDS stands for Education Studies, a completely unrelated department — the fabrication reused a real prefix with invented course titles (\"EDS 117 — Human Anatomy\" etc. don't exist; real EDS 117 is an Education Studies course). The real, closest match is Human Biology, B.S. (Biological Sciences), which covers human physiology and biochemistry and the molecular basis of disease — but has no confirmed exercise-specific curriculum. UCSD Health remains a genuine clinical resource for a general pre-health pathway.",
     "soccerLevel": "Big West — Competitive",
     "soccerLevelShort": "Big West",
     "fin": {
@@ -1428,7 +1428,7 @@
     "lensScores": {
       "overall": 51,
       "soccer": 65,
-      "academic": 80,
+      "academic": 26,
       "minutes": 14,
       "lifestyle": 95,
       "value": 31
@@ -1511,11 +1511,7 @@
       "Exercise & Rehab Sciences Labs"
     ],
     "courses": [
-      "EDS 117 — Human Anatomy",
-      "EDS 130 — Exercise Physiology",
-      "EDS 132 — Biomechanics",
-      "EDS 135 — Motor Learning",
-      "EDS 175 — Clinical Rehabilitation Practicum"
+      "Human Biology core coursework (human physiology, biochemistry, molecular basis of disease)"
     ],
     "staff": [
       {
@@ -1587,11 +1583,11 @@
     "acuUnits": [
       {
         "unit": "ANAT100",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "BIOL125",
@@ -1603,7 +1599,7 @@
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -1611,23 +1607,23 @@
       },
       {
         "unit": "EXSC224",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC204",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC216",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC199",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC296",
@@ -1639,11 +1635,11 @@
       },
       {
         "unit": "EXSC230",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC122",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC398",

@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.27 (2026-09-03) — Fix: UCSD's "Exercise and Rehabilitative Sciences" was fabricated — reused a real course prefix (Education Studies) with invented titles; Vermont naming correction
+
+Eighth Tier 3 batch: `ucla`, `unc`, `usf` confirmed real as stored (all exact matches).
+
+**`ucsd` — a distinctive fabrication:** UCSD has no "Exercise and Rehabilitative Sciences" degree — that exact phrase appears nowhere associated with the university. More notably, the previously stored "EDS" course codes ARE real at UCSD, but **EDS stands for Education Studies**, a completely unrelated department — the fabrication took a genuine course prefix and attached invented titles to it ("EDS 117 — Human Anatomy" doesn't exist; the real EDS 117 is an Education Studies course). This is the same pattern as `northwestern` (which borrowed Michigan's real `MOVESCI` prefix) — a subtler kind of fabrication than inventing a prefix from nothing. The real, closest match is **Human Biology, B.S.** (Biological Sciences), which covers human physiology, biochemistry, and the molecular basis of disease — but has no confirmed exercise-specific curriculum. `acuAlign` corrected 12 → 2. Cascaded: `lensScores.academic` 80 → 26. **`fitOlivier`/`.overall`/`.value` untouched** (51/51/31).
+
+**`vermont`:** Minor — real degree is **Exercise Science, B.S.**, not "Kinesiology" as previously stored. The previously stored "KINE" course codes matched a *different* university's course numbering (University of British Columbia's real KIN 131 "Systems Physiology I"), not UVM's — UVM's real prefix is `EXSC`, confirmed via its own catalogue. `acuAlign` (11) left unchanged — substance confirmed real.
+
+**Verified:** `python -m json.tool` passes on both touched files. `validate_schools.py`: 0 errors, 19 warnings (unchanged). `validate_consistency.js`: **Issues: 0** (confirmed `ucsd`'s `acuAlign` matches its `covered:true` count exactly after a targeted line-range Python edit).
+
+**Files:** `data/big-west.json` (`ucsd`), `data/d1-other.json` (`vermont`), `CLAUDE.md` (§1, §6 current-version lines; §6F status table), `athletes/olivier.json` (`guideVersion` v45.26 → v45.27).
+
+---
+
 ### v45.26 (2026-09-03) — Fix: UCSB has no Kinesiology major (fabricated); UCA and UC Davis naming corrections
 
 Seventh Tier 3 batch: `ucirvine` (formal title "Physiology and Exercise Science, B.S." — close match), `uconn` (exact match, real KINS prefix confirmed), `ucriverside` (exact match, genuine Kinesiology B.S.) all confirmed real as stored.

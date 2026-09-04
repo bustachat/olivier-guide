@@ -11135,13 +11135,13 @@
     "mapY": 267,
     "domain": "wtcathletics.com",
     "url": "https://www.wtcathletics.com/sports/msoc/index",
-    "degreeTitle": "Health, PE & Kinesiology, A.S. (transfer pathway degree)",
-    "acuAlign": 0,
-    "acuAlignNote": "Western Texas College offers a named “Health, PE & Kinesiology” transfer degree plan (confirmed via the official wtc.edu Academics/Majors listing), but the specific plan document could not be retrieved during this research (the PDF endpoint returned an access-denied error on repeated attempts) beyond a partial preview confirming only generic core-curriculum courses (Composition I, US History I, College Algebra, Learning Frameworks elective) — none of which map to any ACU-relevant unit. Per this campaign's never-guess rule, this school is scored at the confirmed floor (0) rather than assuming PE-prefix coursework parallel to Hill College's; a future session with direct access to the degree-plan PDF should re-verify and likely raise this score. Full WES evaluation and advisor confirmation required regardless.",
+    "degreeTitle": "Associate of Science in Health/Kinesiology",
+    "acuAlign": 1,
+    "acuAlignNote": "Western Texas College's official degree plan PDF (wtc.edu) confirms a real, specific 60-hour Associate of Science in Health/Kinesiology. Required science coursework is BIOL 2401/2402 Human Anatomy & Physiology I/II (4 credit hours each, lab-based) — the same course pairing Hill College offers, scored the same way here: it directly covers ANAT100, but on its own doesn't independently establish the separate general-biology unit (BIOL125). The plan also includes real PE-specific courses — PHED 1301 Foundations of Kinesiology, PHED 1304 Personal and Community Health, PHED/KINE 1306 First Aid, and PHED/KINE 1338 Concepts of Physical Fitness — none of which map closely enough to a specific ACU unit (they're general surveys, not the specialized exercise-physiology, biomechanics, or resistance-training courses those units require) to count on their own. Full WES evaluation and advisor confirmation required.",
     "acuUnits": [
       {
         "unit": "ANAT100",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC222",
@@ -11267,7 +11267,7 @@
     "lensScores": {
       "overall": 58,
       "soccer": 50,
-      "academic": 15,
+      "academic": 20,
       "minutes": 57,
       "lifestyle": 50,
       "value": 67
@@ -11291,9 +11291,9 @@
       "strengthConditioning": "A state-of-the-art Fitness Center with an indoor track is confirmed campus-wide (not soccer-exclusive) on the official overview page.",
       "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages beyond the Fitness Center.",
       "sportsMed": "Not itemized on the public staff directory found for this research.",
-      "academicLabs": "A named “Health, PE & Kinesiology” transfer degree plan exists, but its specific coursework could not be verified during this research (see acuAlignNote).",
+      "academicLabs": "A real, specific Associate of Science in Health/Kinesiology degree plan is confirmed (60 hours, including required Anatomy & Physiology I/II) — see acuAlignNote.",
       "extras": "Snyder, TX sits in West Texas, within a short drive of Abilene, Lubbock, and Midland per the college's own description.",
-      "note": "The best-resourced facilities of this batch — a dedicated soccer complex and a genuine fitness center — paired with the batch's best confirmed postseason result (Region 5 champion, Mid-South District runner-up), offset by the campaign's most conservative ACU score due to an inaccessible degree-plan document."
+      "note": "The best-resourced facilities of this batch — a dedicated soccer complex and a genuine fitness center — paired with the batch's best confirmed postseason result (Region 5 champion, Mid-South District runner-up), and now a confirmed real academic degree plan."
     },
     "culture": {
       "vibe": "A small (1,900-student) West Texas community college whose athletics department explicitly markets “nationally ranked soccer teams” backed by a dedicated soccer complex and fitness center — backed up in 2025 by a genuine Region 5 title and a near-miss at the Mid-South District/national-tournament level.",
@@ -11303,9 +11303,13 @@
       "lifestyleTags": "Warm, remote West Texas setting, on-campus housing, best facilities and postseason result in this batch"
     },
     "courses": [
-      "Health, PE & Kinesiology, A.S. (transfer pathway — specific coursework not independently verified this session)"
+      "BIOL 2401/2402 — Human Anatomy & Physiology I/II (required)",
+      "PHED 1301 — Foundations of Kinesiology (required)",
+      "PHED 1304 — Personal and Community Health (required)",
+      "PHED/KINE 1306 — First Aid (elective)",
+      "PHED/KINE 1338 — Concepts of Physical Fitness (elective)"
     ],
-    "rec": "Western Texas College delivered the best confirmed on-field result of this entire batch: 2025 Region 5 Tournament Champions (beating Hill College 5-4 on penalties in the Final) and NJCAA Mid-South District Runner-Up, falling only to Murray State College, who went on to the national tournament — all in head coach Daniel Hoskins's first season since his spring 2025 appointment. Hoskins brings a genuinely international, if unconventional, pedigree: Head of Scouting and Data Analytics for a Spanish third-division professional club and involvement with TOVO Academy Barcelona since 2016. WTC is also the only school in this batch with an officially confirmed dedicated on-campus soccer complex and a state-of-the-art Fitness Center with an indoor track. The honest gap is academic verification: WTC's “Health, PE & Kinesiology” degree plan is real and named, but its specific coursework could not be retrieved during this research, so this guide scores it at the conservative floor rather than assuming parallel content to peer schools — a genuine open item for a future session, not a judgment on the degree itself. At $10,684/yr it is the second-most affordable school in this batch, with on-campus housing (Glover/Clinton Hall) available.",
+    "rec": "Western Texas College delivered the best confirmed on-field result of this entire batch: 2025 Region 5 Tournament Champions (beating Hill College 5-4 on penalties in the Final) and NJCAA Mid-South District Runner-Up, falling only to Murray State College, who went on to the national tournament — all in head coach Daniel Hoskins's first season since his spring 2025 appointment. Hoskins brings a genuinely international, if unconventional, pedigree: Head of Scouting and Data Analytics for a Spanish third-division professional club and involvement with TOVO Academy Barcelona since 2016. WTC is also the only school in this batch with an officially confirmed dedicated on-campus soccer complex and a state-of-the-art Fitness Center with an indoor track. WTC's Associate of Science in Health/Kinesiology is a real, specific 60-hour degree plan including required Anatomy & Physiology I/II and several PE-specific courses (Foundations of Kinesiology, Personal and Community Health, First Aid, Concepts of Physical Fitness). At $10,684/yr it is the second-most affordable school in this batch, with on-campus housing (Glover/Clinton Hall) available.",
     "minutesOutlook": {
       "available": true,
       "mf_total": 8,
@@ -11340,7 +11344,7 @@
       "recruit_pathway_note": "Re-read on the live 2026-27 wtcathletics.com roster (8 MFs of 29, up from 7 the prior season). Andonie Bobadilla and Jorge Cruz — freshmen midfielders on last year's roster — have returned as sophomores exactly as projected. The hometown column shows only cities, no previous-school data, so Mixed is retained rather than re-derived. 3 sophomores clear before Olivier's August 2027 arrival; 5 freshmen return as sophomores that year."
     },
     "acRank": "NJCAA Level",
-    "kinRank": "Health, PE & Kinesiology, A.S. — named transfer pathway; specific coursework not independently verified this session (campaign's most conservative ACU score)"
+    "kinRank": "Associate of Science in Health/Kinesiology — a real, specific 60-hour degree plan with required Anatomy & Physiology I/II and several PE-specific courses"
   },
   {
     "id": "truman_college",

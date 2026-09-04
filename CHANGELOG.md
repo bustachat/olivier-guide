@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.31 (2026-09-04) — Fix: Western Texas College's degree plan, previously unverifiable, closes real — acuAlign 0 -> 1
+
+Owner supplied the school's own degree-plan PDF directly (`wtc.edu`, "Degree Plan for Associate of Science in Health/Kinesiology"), resolving a gap this guide had already honestly disclosed rather than guessed: `western_texas`'s `acuAlignNote` (written during the NJCAA gap-fill campaign) explicitly said the PDF endpoint returned an access-denied error at the time, scored the school at the conservative floor (`acuAlign: 0`), and predicted *"a future session with direct access to the degree-plan PDF should re-verify and likely raise this score."* This is that re-verification.
+
+**What the PDF shows:** a real, specific 60-hour Associate of Science in Health/Kinesiology — required `BIOL 2401/2402` Human Anatomy & Physiology I/II (4 credit hours each, lab-based), plus PE-specific courses (`PHED 1301` Foundations of Kinesiology, `PHED 1304` Personal and Community Health, `PHED/KINE 1306` First Aid, `PHED/KINE 1338` Concepts of Physical Fitness).
+
+**Scored conservatively against precedent, not generously.** `Hill College` has the identical course codes (`BIOL 2401/2402`) and was credited only for `ANAT100`, not the separate general-biology unit `BIOL125` — the same standard applied here. The PE-specific courses are general surveys, not the specialized exercise-physiology/biomechanics/resistance-training courses the other ACU units require, so none of them were credited either. `acuAlign` 0 → 1. Cascaded: `lensScores.academic` 15 → 20. **`fitOlivier`/`lensScores.overall`/`.value` unchanged** (58/58/67) — confirmed live, ACU alignment hasn't fed the Fit Score since v37.1.
+
+Also updated to remove the now-resolved "document inaccessible" framing: `degreeTitle` (now the PDF's own exact title), `courses[]`, `kinRank`, `facilityDetails.academicLabs`/`.note`, `rec`.
+
+**Verified:** `python -m json.tool` PASS, `validate_schools.py` 0 errors/21 warnings (unchanged), `validate_consistency.js` Issues: 0. Confirmed live via `unis.find()` — `acuAlign` matches `covered:true` count exactly (1=1), `fitOlivier` unchanged.
+
+Files: `data/juco.json` (`western_texas`), `athletes/olivier.json` (`guideVersion`).
+
+---
+
 ### v45.30 (2026-09-04) — Coach-data audit: same 60 post-RULE-0 schools, checked for stale coach name/title (3 real departures found)
 
 Companion audit to v45.29, run at the owner's request the following session: the same 60 schools added after RULE 0 (v44.71+) were re-checked, this time for `coaches.json` accuracy rather than academic claims — coaching changes happen far more often than degree programs, so this is the higher-churn half of "is this school's record still true."

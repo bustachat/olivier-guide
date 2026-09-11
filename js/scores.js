@@ -173,6 +173,65 @@ function calculateFitScore(school, athlete) {
   return Math.min(100, Math.max(0, Math.round(total) - housingPenalty(school) - fundingPenalty(school)));
 }
 
+// ── Climate-Neutral Fit (v45.32) ────────────────────────────────────
+// A LENS, not a second Fit Score. Answers "how would this school rank if warm
+// weather didn't matter?" — the same formula as calculateFitScore() with the
+// climate term dropped and the surviving weights renormalised back to 100, so
+// the result stays on the same 0–100 scale as the canonical Fit Score.
+//
+// Computed LIVE, never stored. A 7th lensScores key would mean editing 170
+// school objects, both validators (validate_schools.py errors and
+// validate_consistency.js flags on anything but the exact 6 keys) and the §5
+// schema — and it would be a stored derived value that nothing recomputes at
+// runtime, which is the lensScores.value drift class (v44.30). Every input here
+// already exists on the school object, so there is nothing to store. Same
+// live-compute precedent as dynamicGpaStatus() (v36.5) and
+// renderRecruitPathwaySummary(), which CLAUDE.md requires to stay self-updating.
+//
+// The housing and funding penalties still apply — neither has anything to do
+// with climate, and dropping them would make this a different question.
+function climateNeutralFit(school, athlete) {
+  const w = (athlete && athlete.scoreWeights) ||
+            { soccerQuality: 40, minutesOutlook: 35, climate: 15, city: 10 };
+  // Renormalise rather than hardcoding 47.1 / 41.2 / 11.8, so this follows
+  // automatically if scoreWeights is ever retuned in athletes/*.json.
+  const kept = w.soccerQuality + w.minutesOutlook + w.city;
+  if (!kept) return 0;
+  const k = 100 / kept;
+  const total = soccerQualityScore(school)  * w.soccerQuality  * k
+              + minutesOutlookScore(school) * w.minutesOutlook * k
+              + cityScore(school, athlete)  * w.city           * k;
+  return Math.min(100, Math.max(0, Math.round(total) - housingPenalty(school) - fundingPenalty(school)));
+}
+
+// ── Fit Score bands + colour (v45.32) ──────────────────────────────
+// One source of truth for the band cuts, shared by the Explore filter chips and
+// the displayed colour, so the filter and the colour can never disagree.
+//
+// Cuts are 58 / 48, set from the real distribution across all 170 schools
+// (min 29, median 48, p75 55, max 71) — roughly a top fifth, a middle third,
+// and the rest. Bands describe the CANONICAL Fit Score; the Climate-Neutral
+// lens changes ordering, not this number, so the two never conflict.
+//
+// This deliberately does NOT touch sc(), which is shared with the Dev Score.
+// Dev scores genuinely reach 93, so they still read on sc()'s 90/80 scale.
+// Fit scores cannot exceed ~71 since v37.1 removed GPA/cost/ACU from the
+// formula, which is why every school on the site rendered sc()'s bottom colour
+// until this split — the thresholds were calibrated for the pre-v37.1 score
+// and were never revisited.
+const FIT_BAND_STRONG = 58;
+const FIT_BAND_MIDDLE = 48;
+
+function fitBand(score) {
+  const n = Number(score) || 0;
+  return n >= FIT_BAND_STRONG ? 'strong' : n >= FIT_BAND_MIDDLE ? 'middle' : 'lower';
+}
+
+function fitColor(score) {
+  const b = fitBand(score);
+  return b === 'strong' ? '#059669' : b === 'middle' ? '#d97706' : '#e11d48';
+}
+
 // ── Recalculate all scores and update cards ──────────────────────────────────
 // Called on load (initApp) and whenever ATAR slider moves. convertedGpa no
 // longer feeds the Fit Score, but the slider still drives the GPA-eligibility
@@ -195,7 +254,7 @@ function recalculateAllScores(athlete) {
     const valEl = document.getElementById('fit-' + school.id);
     if (valEl) {
       valEl.textContent = newFit + '%';
-      valEl.style.color = sc(newFit);
+      valEl.style.color = fitColor(newFit);
     }
 
     // Write back to school object so sort reads updated score
@@ -210,7 +269,7 @@ function recalculateAllScores(athlete) {
       const modalFit = document.getElementById('modal-fit-score');
       if (modalFit) {
         modalFit.textContent = newFit + '%';
-        modalFit.style.color = sc(newFit);
+        modalFit.style.color = fitColor(newFit);
       }
     }
   });

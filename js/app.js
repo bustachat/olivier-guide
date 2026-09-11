@@ -267,6 +267,7 @@ function toggleSectionIntro(btn){
 // ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
   {key:'overall',   label:'Best Overall',     desc:"Olivier's Fit Score — soccer program quality, minutes outlook, climate, and city lifestyle combined, minus a housing penalty where a school has no or unguaranteed on-campus housing. GPA, cost, and ACU alignment are handled separately (ATAR/budget toggles, Financial Model, ACU Alignment tab)."},
+  {key:'climateNeutral', label:'Climate-Neutral', desc:'The Fit Score with climate removed and the remaining weights renormalised — soccer program quality, minutes outlook and city access only. Shows which schools warm weather is carrying, and which it is holding back. Climate still appears on every card and still drives the Lifestyle lens; this view only stops it deciding the order.'},
   {key:'academic',  label:'Academic-First',   desc:'Weights ACU BESS unit alignment (85%) plus a baseline — the more of the 16 ACU units a degree covers, the higher it ranks.'},
   {key:'minutes',   label:'Minutes Outlook',  desc:'2027-entry roster opportunity. Higher = more midfielder slots opening up before Olivier arrives.'},
   {key:'lifestyle', label:'Lifestyle-First',  desc:'Climate (warm), city access, and cultural match for Sydney-raised Olivier.'},
@@ -274,11 +275,20 @@ const LENSES = [
 ];
 let currentLens = 'overall';
 
+// Lens score accessor. Most lenses read a stored lensScores key; Climate-Neutral
+// is computed live from fields every school already has (climateNeutralFit in
+// scores.js), so it needs no stored field and cannot drift out of sync with the
+// data — and neither validator's 6-key lensScores contract has to change.
+function lensValue(u, lensKey){
+  if(lensKey === 'climateNeutral') return climateNeutralFit(u, athleteConfig);
+  return (u.lensScores && u.lensScores[lensKey]) || 0;
+}
+
 function lensRank(lensKey){
   // Full-profile schools only — listed schools have unverified lensScores
   return [...unis].filter(u=>u.profileDepth==='full').sort((a,b)=>{
-    const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
-    const sb = (b.lensScores && b.lensScores[lensKey]) || 0;
+    const sa = lensValue(a, lensKey);
+    const sb = lensValue(b, lensKey);
     if(sb !== sa) return sb - sa;
     const fa = a.fitOlivier || 0;
     const fb = b.fitOlivier || 0;
@@ -295,8 +305,8 @@ function lensRankByDivision(lensKey){
     const inDiv = unis.filter(u=>u.div===div && u.profileDepth==='full');
     if(inDiv.length===0) return;
     const sorted = inDiv.sort((a,b)=>{
-      const sa = (a.lensScores && a.lensScores[lensKey]) || 0;
-      const sb = (b.lensScores && b.lensScores[lensKey]) || 0;
+      const sa = lensValue(a, lensKey);
+      const sb = lensValue(b, lensKey);
       if(sb !== sa) return sb - sa;
       return (b.fitOlivier || 0) - (a.fitOlivier || 0);
     });
@@ -313,8 +323,8 @@ function lensRankByConference(lensKey){
     const inConf = unis.filter(u=>u.confKey===ck && u.profileDepth==='full');
     if(!inConf.length) return;
     const sorted = [...inConf].sort((a,b)=>{
-      const sa = (a.lensScores?.[lensKey])||0;
-      const sb = (b.lensScores?.[lensKey])||0;
+      const sa = lensValue(a, lensKey);
+      const sb = lensValue(b, lensKey);
       return sb - sa;
     });
     out[ck] = sorted.slice(0,3);
@@ -338,8 +348,8 @@ function applySort(key){
   // Best Fit sort is lens-aware: when a lens is active sort by lens score
   const lensAwareFit = (a, b) => {
     if (currentLens && currentLens !== 'overall') {
-      const sa = (a.lensScores?.[currentLens]) || 0;
-      const sb = (b.lensScores?.[currentLens]) || 0;
+      const sa = lensValue(a, currentLens);
+      const sb = lensValue(b, currentLens);
       if (sb !== sa) return sb - sa;
     }
     return (b.fitOlivier || 0) - (a.fitOlivier || 0);
@@ -777,7 +787,7 @@ function buildCard(u){
     '</div>'+
     ivyWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item" data-tip="Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined — minus a penalty (−6/−3) where on-campus housing is missing or unguaranteed. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). 90%+ = excellent soccer/lifestyle opportunity."><div class="ss-val" id="fit-'+u.id+'" style="color:'+sc(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item" data-tip="Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined — minus a penalty (−6/−3) where on-campus housing is missing or unguaranteed. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). Colour bands reflect the real range across the guide (max 71): 58+ strong, 48–57 middle, under 48 lower."><div class="ss-val" id="fit-'+u.id+'" style="color:'+fitColor(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item" data-tip="Dev Score: Average of 3 soccer development sub-scores — Tactical, Technical, and Fitness Programming. Reflects how well the program will develop Olivier as a player."><div class="ss-val" style="color:'+(devAvg===null?'var(--hint)':sc(devAvg))+'">'+(devAvg===null?'—':devAvg+'%')+'</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item" data-tip="ACU Alignment: How many of Olivier\'s 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial."><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
@@ -850,7 +860,7 @@ function renderComparePage(){
     ['Head Coach',u=>`<div class="cval">${getCoach(u.id)?.name||'—'}</div>`],
     ['Climate',u=>`<div class="cval">${u.warm?'☀ Warm':'⛅ Mixed'}</div>`],
     ['City Campus',u=>`<div class="cval ${u.city?'good':''}">${u.city?'✅ Yes':'⚠ Smaller'}</div>`],
-    ['Overall Fit',u=>{const c=sc(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
+    ['Overall Fit',u=>{const c=fitColor(u.fitOlivier);return`<div class="score-bar"><div class="sb-track"><div class="sb-fill" style="width:${u.fitOlivier}%;background:${c}"></div></div><span style="font-size:13px;font-weight:700;color:${c}">${u.fitOlivier}%</span></div>`;}],
     ['Minutes Outlook',u=>{
       const mo=u.minutesOutlook||{};
       if(!mo.available) return '<div style="color:var(--muted);font-size:11px">Not available</div>';
@@ -1784,7 +1794,7 @@ function buildDetailBody(u){
       </div>
       <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
-          <div id="modal-fit-score" style="font-size:2.5rem;font-weight:800;color:${sc(u.fitOlivier)}">${u.fitOlivier}%</div>
+          <div id="modal-fit-score" style="font-size:2.5rem;font-weight:800;color:${fitColor(u.fitOlivier)}">${u.fitOlivier}%</div>
           <p style="font-size:13px;color:var(--muted)">${u.rec||'Fit score based on soccer program quality, minutes outlook, climate, and city lifestyle.'}</p>
         </div>
       </div>
@@ -2239,6 +2249,13 @@ function applyFilters(){
         }
       } else if(type==='lensdivtop'){
         if(c.dataset.lensdivtop !== 'true'){ show=false; break; }
+      } else if(type==='fitband'){
+        // Band cuts live in scores.js (fitBand) so the chip and the rendered
+        // colour can never drift apart. Read the score off unis, not
+        // card.dataset.fitscore — the dataset copy is only written by
+        // recalculateAllScores(), so unis is the value actually on screen.
+        const su = unis.find(x => x.id === (c.id||'').replace('card-',''));
+        if(!su || !vals.has(fitBand(su.fitOlivier))){ show=false; break; }
       } else {
         if(![...vals].some(v=>c.dataset[type]===v)){ show=false; break; }
       }

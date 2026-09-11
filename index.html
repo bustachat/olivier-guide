@@ -906,6 +906,12 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
         <button class="fchip" data-filter="div" data-val="IVY" onclick="toggleFilter(this)">Ivy</button>
       </div>
       <div class="filter-row">
+        <div class="fg-label">Fit Score</div>
+        <button class="fchip" data-filter="fitband" data-val="strong" onclick="toggleFilter(this)">🟢 Strong (58+)</button>
+        <button class="fchip" data-filter="fitband" data-val="middle" onclick="toggleFilter(this)">🟡 Middle (48–57)</button>
+        <button class="fchip" data-filter="fitband" data-val="lower" onclick="toggleFilter(this)">🔴 Lower (under 48)</button>
+      </div>
+      <div class="filter-row">
         <div class="fg-label">Region</div>
         <button class="fchip" data-filter="region" data-val="west" onclick="toggleFilter(this)">🌊 West</button>
         <button class="fchip" data-filter="region" data-val="east" onclick="toggleFilter(this)">🗽 East</button>
@@ -1175,7 +1181,7 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
     <div class="gloss-grid">
       <div class="gloss-item">
         <div class="gloss-term">Fit Score <span class="gloss-range">0–100%</span></div>
-        <div class="gloss-def">How good a soccer + lifestyle opportunity this school is for Olivier. <strong>Deliberately excludes GPA, annual cost, and ACU degree alignment</strong> — those already have dedicated views (the ATAR/budget toggles above, the Financial Model tab, and the ACU Alignment tab) and can't be predicted ahead of a real offer anyway, so blending them into one number was misleading more than it helped. <strong>90%+ = excellent opportunity. 80–89% = strong. Below 70% = meaningful trade-offs on soccer/lifestyle fit.</strong>
+        <div class="gloss-def">How good a soccer + lifestyle opportunity this school is for Olivier. <strong>Deliberately excludes GPA, annual cost, and ACU degree alignment</strong> — those already have dedicated views (the ATAR/budget toggles above, the Financial Model tab, and the ACU Alignment tab) and can't be predicted ahead of a real offer anyway, so blending them into one number was misleading more than it helped. <strong>58%+ = strong fit — the top fifth of the guide. 48–57% = middle. Below 48% = meaningful trade-offs on soccer/lifestyle fit.</strong> Scores top out around 71 and there are no 90s on this scale: once v37.1 took GPA, cost and ACU alignment out of the formula, the reachable range narrowed. The colour on each card and the Fit Score filter chips both use these same cuts.
           <div style="margin-top:.6rem;padding:.7rem .85rem;background:var(--surface2);border-radius:8px;font-size:12px;line-height:1.7">
             <strong>Weights:</strong> Soccer Program Quality 40% (dev scores 60% + next-level output 30% + division strength 10% — richer than division alone) + Minutes Outlook 35% + Climate 15% + City 10% = 100%. Next-level output is MLS SuperDraft picks for four-year schools and the rate of D1 transfer commitments per year for JUCOs (a JUCO's real pipeline is the players it moves up to D1, not the MLS draft). Same formula for every school, JUCO included — there's no ACU weight to redistribute.<br>
             <strong>Housing penalty (v41):</strong> −6 points if a school has no on-campus housing, −3 if housing exists but is limited or unguaranteed (first-come-first-served / waitlisted). For a young international, no dorms means arranging off-campus rent and transport alone — a real cost and feasibility issue no other toggle captures. Schools with normal on-campus housing lose nothing.<br>
@@ -1223,6 +1229,10 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
       <div class="gloss-item">
         <div class="gloss-term">Best Overall</div>
         <div class="gloss-def">Olivier's Fit Score. Soccer program quality (dev average 60% + next-level output 30% + division strength 10%) 40% + Minutes Outlook 35% + Climate 15% + City 10%. Next-level output = MLS SuperDraft picks for four-year schools, D1-transfer rate for JUCOs. GPA, cost, and ACU alignment are checked separately — not part of this number. The default ranking.</div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-term">Climate-Neutral</div>
+        <div class="gloss-def">The same Fit Score with climate taken out and the remaining weights renormalised to 100 — soccer program quality 47%, minutes outlook 41%, city access 12% — minus the same housing and funding penalties. Warm weather is worth up to 12 points in the default ranking, and most of the guide sits in a cold state, so this lens shows which schools the weather is carrying and which it is holding back. It is strongest in D1 and JUCO, where the guide has real depth; the smaller divisions barely move. Climate is still shown on every card and still drives the Lifestyle lens — this view only stops it deciding the order, and it does not change any school’s Fit Score number.</div>
       </div>
       <div class="gloss-item">
         <div class="gloss-term">Academic-First</div>

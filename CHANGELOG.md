@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.33 (2026-09-11) — Fix: the Climate-Neutral lens sorted by a number that wasn't on screen
+
+Owner-reported, one turn after v45.32 shipped: *"why don't the fit scores change when I select climate neutral?"* The honest answer was that **the cards were ordered by a value the user could not see.** The lens sorted by `climateNeutralFit()` while the card kept printing `fitOlivier`, so the visible Fit column went non-monotonic — in the ACC section it read 71, 67, 67, 52, 49, 48, 47, **55, 55**, 42, 39, **52**, 36, with Pittsburgh (52) three places above Louisville and Stanford (55). Nothing was broken, but from the user's side that is indistinguishable from broken.
+
+**Fix: while the Climate-Neutral lens is active, the card's Fit tile shows the climate-neutral value** (label `FIT · NO CLIMATE`, colour re-banded through `fitColor()`) **and the canonical score moves to a chip in the metadata row** — `Standard fit 52 ▼9`, green when the school gains without the climate weighting, red when it loses. Both revert on switching lens. The modal mirrors it: heading gains `· no climate`, and the note opens with `Standard Fit Score: 52%.` so Details can never contradict the card it was opened from.
+
+**Display only.** `school.fitOlivier` is never written, so sorting, Compare, every stored score and both validators stay canonical — verified live: 0 of 170 schools drift from `calculateFitScore()` while the lens is on, and the Fit-band filter chips still filter on the canonical score (Strong still returns exactly 35).
+
+The chip lives in the card metadata row, beside the Warm/City/Elite-JUCO/housing chips, **not** in the `.score-strip` stat grid — that grid is three fixed columns and compresses badly at mobile width, which is why those other chips were put in that row in the first place.
+
+**A real bug was caught mid-build that the test environment would have hidden.** `openDetail()` re-writes `#modal-fit-score` with `u.fitOlivier` inside a `requestAnimationFrame`, *after* the template renders. That would have made the modal flash the climate-neutral value and silently revert to the canonical one in any real browser — while passing every test here, because `requestAnimationFrame` does not fire in a hidden browser pane. Fixed by routing all three Fit display paths (card tile, modal template, `openDetail`'s post-paint write) through a single `displayFit(u)` helper, and re-tested by invoking the rAF write explicitly rather than waiting for a frame that never comes.
+
+**Scope: Climate-Neutral only, by owner decision.** The same "sorts by an invisible number" property applies to every other lens — measured this session, the visible Fit column is out of order in **47 of 135** adjacent-card pairs under Academic-First. It reads as less broken there because an academic ranking is obviously a different axis from Fit, so nobody expects the numbers to line up. Generalising the swap to all six lenses was considered and deliberately deferred.
+
+**Files:** `js/app.js`, `index.html`, `athletes/olivier.json` (version only). No data file, no scoring formula, no stored score.
+
+**Verified locally:** visible Fit column out-of-order pairs under Climate-Neutral **0 of 135** (was scrambled; Best Overall 0, Academic-First 47 for reference); all 6 lenses still sort by their own key with 0 out-of-order pairs; chips 170 on / 0 off; labels and values revert exactly; modal correct on open AND after the forced rAF write; band chips still return 35 under the lens; `validate_schools.py` PASS, `validate_consistency.js` Issues: 0; no JS console errors.
+
 ### v45.32 (2026-09-11) — Feature: Climate-Neutral lens, Fit Score band filter, and a Fit/Dev colour split
 
 Three related Explore-tab changes, all §3a **Change Type 11** (UX/JS). **No data file was touched** beyond the `guideVersion` bump, no scoring formula changed, and no stored score moved — `validate_consistency.js` held at **Issues: 0** throughout.

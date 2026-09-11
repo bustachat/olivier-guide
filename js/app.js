@@ -264,6 +264,14 @@ function toggleSectionIntro(btn){
   btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
 }
 
+// Fit Score tile tooltips. Hoisted to consts because the Climate-Neutral lens swaps
+// the tile's value AND its tooltip, and needs the original text back on lens change.
+const FIT_TIP = "Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined — minus a penalty (−6/−3) where on-campus housing is missing or unguaranteed. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). Colour bands reflect the real range across the guide (max 71): 58+ strong, 48–57 middle, under 48 lower.";
+const FIT_TIP_CN = "Fit · no climate: the same Fit Score with climate removed and the remaining weights "
+  + "renormalised to 100 (soccer 47%, minutes 41%, city 12%), minus the same housing and funding penalties. "
+  + "This is the number the cards are sorted by while this lens is active. The school's standard Fit Score is "
+  + "shown on the chip above.";
+
 // ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
   {key:'overall',   label:'Best Overall',     desc:"Olivier's Fit Score — soccer program quality, minutes outlook, climate, and city lifestyle combined, minus a housing penalty where a school has no or unguaranteed on-campus housing. GPA, cost, and ACU alignment are handled separately (ATAR/budget toggles, Financial Model, ACU Alignment tab)."},
@@ -395,12 +403,58 @@ function currentLensExplainer(){
   return '<div class="lens-desc">'+L.desc+'</div>';
 }
 
+// ── Climate-Neutral display swap (v45.33) ────────────────────────────────
+// Every lens sorts by a score that is NOT the one printed on the card, which leaves the
+// visible Fit column non-monotonic. Harmless for the other lenses (nobody expects an
+// academic ranking to match the Fit number) but actively misleading for Climate-Neutral,
+// which IS the Fit Score reweighted — the column just looks scrambled. So while that lens
+// is active the tile shows the climate-neutral value and the canonical score moves to a
+// chip, keeping both on the card. DISPLAY ONLY — school.fitOlivier is never written, so
+// sorting, Compare, the validators and every stored score stay canonical.
+// The one place that decides which number a Fit display shows. Card tile, modal template
+// AND openDetail()'s post-paint rAF write all route through it — openDetail re-wrote
+// #modal-fit-score with the canonical score after the template had rendered the
+// climate-neutral one, which silently reverted the modal in any browser where rAF fires.
+function displayFit(u){
+  return (currentLens === 'climateNeutral') ? climateNeutralFit(u, athleteConfig) : (u.fitOlivier || 0);
+}
+
+function refreshLensScoreDisplay(){
+  const cn = (currentLens === 'climateNeutral');
+  unis.forEach(u=>{
+    const valEl = document.getElementById('fit-'+u.id);
+    if(!valEl) return;
+    const item = valEl.closest('.ss-item');
+    const lbl  = item && item.querySelector('.ss-lbl');
+    const shown = displayFit(u);
+    valEl.textContent = shown+'%';
+    valEl.style.color = fitColor(shown);
+    if(lbl)  lbl.textContent = cn ? 'Fit · no climate' : 'Fit Score';
+    if(item) item.setAttribute('data-tip', cn ? FIT_TIP_CN : FIT_TIP);
+    const card = document.getElementById('card-'+u.id);
+    const sub  = card && card.querySelector('.card-sub');
+    if(!sub) return;
+    let chip = sub.querySelector('.cn-delta-chip');
+    if(cn){
+      const delta = shown - (u.fitOlivier||0);
+      if(!chip){ chip = document.createElement('span'); chip.className='cn-delta-chip'; sub.appendChild(chip); }
+      chip.classList.toggle('cn-up', delta > 0);
+      chip.classList.toggle('cn-down', delta < 0);
+      chip.textContent = 'Standard fit '+(u.fitOlivier||0)+(delta ? ' '+(delta>0?'▲':'▼')+Math.abs(delta) : '');
+      chip.title = 'This school’s normal Fit Score is '+(u.fitOlivier||0)+'%. Without the climate weighting it '
+                 + (delta>0 ? 'rises to ' : delta<0 ? 'falls to ' : 'stays at ')+shown+'%.';
+    } else if(chip){ chip.remove(); }
+  });
+}
+
 function applyLens(lensKey){
   currentLens = lensKey;
   // Update active lens pill
   document.querySelectorAll('.lens-pill').forEach(b=>{
     b.classList.toggle('active', b.dataset.lens===lensKey);
   });
+  // Swap the Fit tile / chip BEFORE sorting so the visible column matches the new order
+  refreshLensScoreDisplay();
   // Re-sort cards using the now-updated lens (Best Fit is lens-aware)
   applySort(currentSort);
 
@@ -787,7 +841,7 @@ function buildCard(u){
     '</div>'+
     ivyWarn+
     '<div class="score-strip">'+
-      '<div class="ss-item" data-tip="Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined — minus a penalty (−6/−3) where on-campus housing is missing or unguaranteed. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). Colour bands reflect the real range across the guide (max 71): 58+ strong, 48–57 middle, under 48 lower."><div class="ss-val" id="fit-'+u.id+'" style="color:'+fitColor(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
+      '<div class="ss-item" data-tip="'+FIT_TIP+'"><div class="ss-val" id="fit-'+u.id+'" style="color:'+fitColor(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item" data-tip="Dev Score: Average of 3 soccer development sub-scores — Tactical, Technical, and Fitness Programming. Reflects how well the program will develop Olivier as a player."><div class="ss-val" style="color:'+(devAvg===null?'var(--hint)':sc(devAvg))+'">'+(devAvg===null?'—':devAvg+'%')+'</div><div class="ss-lbl">Dev Score</div></div>'+
       '<div class="ss-item" data-tip="ACU Alignment: How many of Olivier\'s 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial."><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
@@ -1615,7 +1669,7 @@ function openDetail(id){
   requestAnimationFrame(() => {
     // Trigger modal fit-score refresh now that DOM is stable
     const fitEl = document.getElementById('modal-fit-score');
-    if (fitEl) fitEl.textContent = (u.fitOlivier || 0) + '%';
+    if (fitEl) { const v = displayFit(u); fitEl.textContent = v + '%'; fitEl.style.color = fitColor(v); }
   });
 }
 
@@ -1792,10 +1846,10 @@ function buildDetailBody(u){
           <div class="fit-num" style="color:${sc(u.devScores[k])}">${u.devScores[k]}</div>
         </div>`).join('') : '<p style="color:var(--muted);font-size:13px">Development ratings not available for this school profile.</p>'}
       </div>
-      <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier</h4>
+      <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier${currentLens==='climateNeutral'?' · no climate':''}</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
-          <div id="modal-fit-score" style="font-size:2.5rem;font-weight:800;color:${fitColor(u.fitOlivier)}">${u.fitOlivier}%</div>
-          <p style="font-size:13px;color:var(--muted)">${u.rec||'Fit score based on soccer program quality, minutes outlook, climate, and city lifestyle.'}</p>
+          <div id="modal-fit-score" style="font-size:2.5rem;font-weight:800;color:${fitColor(displayFit(u))}">${displayFit(u)}%</div>
+          <p style="font-size:13px;color:var(--muted)">${currentLens==='climateNeutral'?'<strong>Standard Fit Score: '+u.fitOlivier+'%.</strong> This view removes the climate weighting. ':''}${u.rec||'Fit score based on soccer program quality, minutes outlook, climate, and city lifestyle.'}</p>
         </div>
       </div>
     </div>

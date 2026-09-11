@@ -121,6 +121,12 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-
 .tp-badge{position:absolute;top:10px;right:10px;background:var(--indigo);color:#fff;font-size:9px;font-weight:800;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.07em;z-index:2;}
 .elite-juco-chip{display:inline-flex;align-items:center;background:var(--gold,#d97706);color:#fff;font-size:9px;font-weight:800;padding:1px 7px;border-radius:8px;letter-spacing:.03em;cursor:help;}
 .housing-warn-chip{display:inline-flex;align-items:center;background:var(--amber3);color:var(--amber);font-size:9px;font-weight:700;padding:1px 7px;border-radius:8px;letter-spacing:.02em;cursor:help;}
+/* Climate-Neutral lens delta chip (v45.33). Lives in the card metadata row, not the
+   .score-strip stat grid — that grid is 3 fixed columns and compresses badly at mobile
+   width, which is why the Elite-JUCO and housing chips were put in this row too. */
+.cn-delta-chip{display:inline-flex;align-items:center;background:var(--border);color:var(--muted);font-size:9px;font-weight:700;padding:1px 7px;border-radius:8px;letter-spacing:.02em;cursor:help;}
+.cn-delta-chip.cn-up{background:var(--emerald3);color:var(--emerald);}
+.cn-delta-chip.cn-down{background:#fee2e2;color:#b91c1c;}
 .pathway-chip{display:inline-flex;align-items:center;background:var(--sky3);color:var(--sky);font-size:12px;font-weight:600;padding:3px 10px;border-radius:8px;cursor:pointer;border:1px solid var(--border);}
 .pathway-chip:hover{background:var(--sky);color:#fff;}
 .pathway-count-badge{font-size:12px;font-weight:700;padding:2px 10px;border-radius:8px;}

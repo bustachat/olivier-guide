@@ -6,6 +6,26 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.34 (2026-09-12) — Fix: the remaining four lenses also sorted by a number that wasn’t on screen
+
+v45.33 fixed this for Climate-Neutral and explicitly deferred the rest, noting Academic-First left the visible Fit column out of order in **47 of 135** adjacent-card pairs. Owner: *"fix the other lenses the same way."* Done — all six lenses now show the score they sort by.
+
+While any non-default lens is active, the card’s Fit tile shows that lens’s own score with its own label (`ACU MATCH` / `MINUTES` / `LIFESTYLE` / `VALUE` / `FIT · NO CLIMATE`) and the canonical score moves to the `.cn-delta-chip` (`Standard fit 52`). The modal mirrors it — heading gains the lens label, and the note opens with `Standard Fit Score: 52%.` naming which lens the big figure belongs to. Everything reverts on returning to Best Overall. **Display only** — `school.fitOlivier` is still never written (verified live: 0 of 170 drift from `calculateFitScore()` under every lens), so sorting, Compare, the band filter and both validators stay canonical.
+
+**Two judgment calls the distributions forced, rather than copying v45.33 mechanically:**
+
+**1. Colour.** `fitColor()`’s 58/48 cuts were calibrated on the Fit distribution (min 29, median 48, max 71). The other lenses have their own ranges — academic 15–95, minutes 12–78, lifestyle 0–100, value 19–69 — so reusing those cuts would silently assert strong/middle/lower bands nobody ever defined (academic would have shown 64 schools green against Fit’s 35). A new `LENS_TILE` map marks the **two** lenses whose score genuinely is a Fit Score on the Fit scale (`overall`, `climateNeutral`); only those use `fitColor()`. The other four render in neutral ink via `displayFitColor()`.
+
+**2. The chip’s delta arrow is now conditional.** `Standard fit 52 ▼9` is meaningful for Climate-Neutral because both numbers are Fit Scores. Subtracting an ACU-alignment score from a Fit Score is arithmetically valid and semantically meaningless, so for the other four the chip shows `Standard fit 52` with no arrow and a plain-language tooltip.
+
+**An inconsistency caught after the first green test run:** `openDetail()`’s post-paint `requestAnimationFrame` write and the modal template were both still calling `fitColor()` directly, so the modal would have coloured an 87% ACU score with Fit bands while the card tile beside it showed neutral. Both now route through `displayFitColor()`. This is the second time this session that the modal’s two Fit-writing paths have needed the same fix as the card — they are easy to miss because the card looks correct on its own.
+
+**Known cosmetic overlap, accepted:** under Academic-First the card shows `ACU MATCH 87%` beside the existing `ACU ALIGN 4/16` tile. Both derive from `acuAlign` — one as the lens’s 0–100 transform, one as the raw unit count. Redundant but not wrong, and fixing the sort legibility was the point.
+
+**Files:** `js/app.js`, `athletes/olivier.json` (version only). No data file, no scoring formula, no stored score.
+
+**Verified locally:** visible Fit column out-of-order pairs now **0 of 135 on all six lenses** (academic was 47); card and modal agree on both value and colour under every lens, on open AND after the forced rAF write; chips appear on all 170 cards under a lens and are removed on Best Overall; labels and values revert exactly; `validate_schools.py` PASS, `validate_consistency.js` Issues: 0; no JS console errors.
+
 ### v45.33 (2026-09-11) — Fix: the Climate-Neutral lens sorted by a number that wasn't on screen
 
 Owner-reported, one turn after v45.32 shipped: *"why don't the fit scores change when I select climate neutral?"* The honest answer was that **the cards were ordered by a value the user could not see.** The lens sorted by `climateNeutralFit()` while the card kept printing `fitOlivier`, so the visible Fit column went non-monotonic — in the ACC section it read 71, 67, 67, 52, 49, 48, 47, **55, 55**, 42, 39, **52**, 36, with Pittsburgh (52) three places above Louisville and Stanford (55). Nothing was broken, but from the user's side that is indistinguishable from broken.

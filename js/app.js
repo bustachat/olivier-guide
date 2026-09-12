@@ -281,6 +281,26 @@ const LENSES = [
   {key:'lifestyle', label:'Lifestyle-First',  desc:'Climate (warm), city access, and cultural match for Sydney-raised Olivier.'},
   {key:'value',     label:'Value-First',      desc:'Fit score per dollar of cost. Best fit-to-cost ratio.'},
 ];
+// ── Per-lens Fit-tile config (v45.34) ────────────────────────────────
+// Every lens sorts by its own score, so the tile must show that score or the visible
+// column reads as scrambled. v45.33 fixed this for Climate-Neutral only; v45.34
+// generalises it, because the defect was never specific to that lens (Academic-First
+// left the Fit column out of order in 47 of 135 adjacent-card pairs).
+//
+// fitScale marks the two lenses whose score IS a Fit Score on the Fit scale — only they
+// may use fitColor(). The 58/48 cuts were calibrated on the Fit distribution (min 29,
+// median 48, max 71); the others have their own ranges (academic 15–95, minutes 12–78,
+// lifestyle 0–100, value 19–69), so colouring them by those cuts would assert
+// strong/middle/lower bands nobody ever defined. They render in neutral ink instead.
+const LENS_TILE = {
+  overall:        { label: 'Fit Score',        fitScale: true  },
+  climateNeutral: { label: 'Fit · no climate', fitScale: true  },
+  academic:       { label: 'ACU Match',        fitScale: false },
+  minutes:        { label: 'Minutes',          fitScale: false },
+  lifestyle:      { label: 'Lifestyle',        fitScale: false },
+  value:          { label: 'Value',            fitScale: false },
+};
+
 let currentLens = 'overall';
 
 // Lens score accessor. Most lenses read a stored lensScores key; Climate-Neutral
@@ -416,34 +436,53 @@ function currentLensExplainer(){
 // #modal-fit-score with the canonical score after the template had rendered the
 // climate-neutral one, which silently reverted the modal in any browser where rAF fires.
 function displayFit(u){
-  return (currentLens === 'climateNeutral') ? climateNeutralFit(u, athleteConfig) : (u.fitOlivier || 0);
+  return (currentLens && currentLens !== 'overall') ? lensValue(u, currentLens) : (u.fitOlivier || 0);
+}
+
+// Colour for the swapped tile. Only a Fit-scale lens may use fitColor() — see LENS_TILE.
+function displayFitColor(v){
+  const cfg = LENS_TILE[currentLens];
+  return (cfg && cfg.fitScale) ? fitColor(v) : 'var(--navy)';
 }
 
 function refreshLensScoreDisplay(){
-  const cn = (currentLens === 'climateNeutral');
+  const key = currentLens || 'overall';
+  const cfg = LENS_TILE[key] || LENS_TILE.overall;
+  const isOverall = (key === 'overall');
+  const lensDesc = (LENSES.find(L=>L.key===key)||{}).desc || '';
+  const tip = isOverall ? FIT_TIP
+            : key === 'climateNeutral' ? FIT_TIP_CN
+            : cfg.label + ': ' + lensDesc + ' The cards are sorted by this value while this lens is active, '
+              + 'which is why it replaces the Fit Score here. The standard Fit Score is on the chip above.';
   unis.forEach(u=>{
     const valEl = document.getElementById('fit-'+u.id);
     if(!valEl) return;
-    const item = valEl.closest('.ss-item');
-    const lbl  = item && item.querySelector('.ss-lbl');
+    const item  = valEl.closest('.ss-item');
+    const lbl   = item && item.querySelector('.ss-lbl');
     const shown = displayFit(u);
     valEl.textContent = shown+'%';
-    valEl.style.color = fitColor(shown);
-    if(lbl)  lbl.textContent = cn ? 'Fit · no climate' : 'Fit Score';
-    if(item) item.setAttribute('data-tip', cn ? FIT_TIP_CN : FIT_TIP);
+    valEl.style.color = displayFitColor(shown);
+    if(lbl)  lbl.textContent = cfg.label;
+    if(item) item.setAttribute('data-tip', tip);
     const card = document.getElementById('card-'+u.id);
     const sub  = card && card.querySelector('.card-sub');
     if(!sub) return;
     let chip = sub.querySelector('.cn-delta-chip');
-    if(cn){
-      const delta = shown - (u.fitOlivier||0);
-      if(!chip){ chip = document.createElement('span'); chip.className='cn-delta-chip'; sub.appendChild(chip); }
-      chip.classList.toggle('cn-up', delta > 0);
-      chip.classList.toggle('cn-down', delta < 0);
-      chip.textContent = 'Standard fit '+(u.fitOlivier||0)+(delta ? ' '+(delta>0?'▲':'▼')+Math.abs(delta) : '');
-      chip.title = 'This school’s normal Fit Score is '+(u.fitOlivier||0)+'%. Without the climate weighting it '
-                 + (delta>0 ? 'rises to ' : delta<0 ? 'falls to ' : 'stays at ')+shown+'%.';
-    } else if(chip){ chip.remove(); }
+    if(isOverall){ if(chip) chip.remove(); return; }
+    const fit = u.fitOlivier || 0;
+    if(!chip){ chip = document.createElement('span'); chip.className='cn-delta-chip'; sub.appendChild(chip); }
+    // A delta is only meaningful when the lens score is in the SAME units as the Fit Score.
+    // academic/minutes/lifestyle/value are different quantities, so subtracting them from
+    // Fit would render an arithmetically valid but meaningless number.
+    const delta = cfg.fitScale ? shown - fit : null;
+    chip.classList.toggle('cn-up',   delta !== null && delta > 0);
+    chip.classList.toggle('cn-down', delta !== null && delta < 0);
+    chip.textContent = 'Standard fit '+fit+(delta ? ' '+(delta>0?'▲':'▼')+Math.abs(delta) : '');
+    chip.title = (delta !== null)
+      ? 'This school’s normal Fit Score is '+fit+'%. Without the climate weighting it '
+        + (delta>0 ? 'rises to ' : delta<0 ? 'falls to ' : 'stays at ')+shown+'%.'
+      : 'This school’s normal Fit Score is '+fit+'%. The big number is its '+cfg.label
+        + ' score, which is what the cards are sorted by under this lens.';
   });
 }
 
@@ -1669,7 +1708,7 @@ function openDetail(id){
   requestAnimationFrame(() => {
     // Trigger modal fit-score refresh now that DOM is stable
     const fitEl = document.getElementById('modal-fit-score');
-    if (fitEl) { const v = displayFit(u); fitEl.textContent = v + '%'; fitEl.style.color = fitColor(v); }
+    if (fitEl) { const v = displayFit(u); fitEl.textContent = v + '%'; fitEl.style.color = displayFitColor(v); }
   });
 }
 
@@ -1846,10 +1885,10 @@ function buildDetailBody(u){
           <div class="fit-num" style="color:${sc(u.devScores[k])}">${u.devScores[k]}</div>
         </div>`).join('') : '<p style="color:var(--muted);font-size:13px">Development ratings not available for this school profile.</p>'}
       </div>
-      <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier${currentLens==='climateNeutral'?' · no climate':''}</h4>
+      <div class="detail-block" style="margin-top:1rem"><h4>Overall Fit for Olivier${(currentLens&&currentLens!=='overall')?' · '+((LENS_TILE[currentLens]||{}).label||''):''}</h4>
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:.75rem">
-          <div id="modal-fit-score" style="font-size:2.5rem;font-weight:800;color:${fitColor(displayFit(u))}">${displayFit(u)}%</div>
-          <p style="font-size:13px;color:var(--muted)">${currentLens==='climateNeutral'?'<strong>Standard Fit Score: '+u.fitOlivier+'%.</strong> This view removes the climate weighting. ':''}${u.rec||'Fit score based on soccer program quality, minutes outlook, climate, and city lifestyle.'}</p>
+          <div id="modal-fit-score" style="font-size:2.5rem;font-weight:800;color:${displayFitColor(displayFit(u))}">${displayFit(u)}%</div>
+          <p style="font-size:13px;color:var(--muted)">${(currentLens&&currentLens!=='overall')?'<strong>Standard Fit Score: '+u.fitOlivier+'%.</strong> The figure above is this school’s '+((LENS_TILE[currentLens]||{}).label||'')+' score — what the '+((LENSES.find(L=>L.key===currentLens)||{}).label||'')+' lens sorts by. ':''}${u.rec||'Fit score based on soccer program quality, minutes outlook, climate, and city lifestyle.'}</p>
         </div>
       </div>
     </div>

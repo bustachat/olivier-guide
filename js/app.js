@@ -266,6 +266,7 @@ function toggleSectionIntro(btn){
 
 // Fit Score tile tooltips. Hoisted to consts because the Climate-Neutral lens swaps
 // the tile's value AND its tooltip, and needs the original text back on lens change.
+const ACU_TIP = "ACU Alignment: How many of Olivier's 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial.";
 const FIT_TIP = "Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined — minus a penalty (−6/−3) where on-campus housing is missing or unguaranteed. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). Colour bands reflect the real range across the guide (max 71): 58+ strong, 48–57 middle, under 48 lower.";
 const FIT_TIP_CN = "Fit · no climate: the same Fit Score with climate removed and the remaining weights "
   + "renormalised to 100 (soccer 47%, minutes 41%, city 12%), minus the same housing and funding penalties. "
@@ -295,7 +296,11 @@ const LENSES = [
 const LENS_TILE = {
   overall:        { label: 'Fit Score',        fitScale: true  },
   climateNeutral: { label: 'Fit · no climate', fitScale: true  },
-  academic:       { label: 'ACU Match',        fitScale: false },
+  // Academic-First's score is (acuAlign/16 x 0.85 + 0.15) x 100 — a pure monotonic transform
+  // of acuAlign, so the swapped tile and the ACU Align tile would show the SAME fact twice
+  // (13/16 and 87%). redundantWith hands that third tile over to the canonical Fit Score
+  // instead, and suppresses the chip, which would otherwise duplicate it right back.
+  academic:       { label: 'ACU Match',        fitScale: false, redundantWith: 'acu' },
   minutes:        { label: 'Minutes',          fitScale: false },
   lifestyle:      { label: 'Lifestyle',        fitScale: false },
   value:          { label: 'Value',            fitScale: false },
@@ -464,12 +469,25 @@ function refreshLensScoreDisplay(){
     valEl.style.color = displayFitColor(shown);
     if(lbl)  lbl.textContent = cfg.label;
     if(item) item.setAttribute('data-tip', tip);
+    const fit = u.fitOlivier || 0;
+    // When the active lens duplicates an existing tile, that tile shows the canonical Fit
+    // Score instead of repeating the lens's own input back at the reader.
+    const acuEl  = document.getElementById('acu-'+u.id);
+    const acuIt  = acuEl && acuEl.closest('.ss-item');
+    const acuLbl = acuIt && acuIt.querySelector('.ss-lbl');
+    const swapAcu = (cfg.redundantWith === 'acu');
+    if(acuEl){
+      acuEl.textContent = swapAcu ? fit+'%' : (u.acuAlign+'/16');
+      acuEl.style.color = swapAcu ? fitColor(fit) : alignColor(u.acuAlign);
+      if(acuLbl) acuLbl.textContent = swapAcu ? 'Fit Score' : 'ACU Align';
+      if(acuIt)  acuIt.setAttribute('data-tip', swapAcu ? FIT_TIP : ACU_TIP);
+    }
     const card = document.getElementById('card-'+u.id);
     const sub  = card && card.querySelector('.card-sub');
     if(!sub) return;
     let chip = sub.querySelector('.cn-delta-chip');
-    if(isOverall){ if(chip) chip.remove(); return; }
-    const fit = u.fitOlivier || 0;
+    // No chip when the Fit Score already has a tile of its own (see redundantWith).
+    if(isOverall || swapAcu){ if(chip) chip.remove(); return; }
     if(!chip){ chip = document.createElement('span'); chip.className='cn-delta-chip'; sub.appendChild(chip); }
     // A delta is only meaningful when the lens score is in the SAME units as the Fit Score.
     // academic/minutes/lifestyle/value are different quantities, so subtracting them from
@@ -882,7 +900,7 @@ function buildCard(u){
     '<div class="score-strip">'+
       '<div class="ss-item" data-tip="'+FIT_TIP+'"><div class="ss-val" id="fit-'+u.id+'" style="color:'+fitColor(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
       '<div class="ss-item" data-tip="Dev Score: Average of 3 soccer development sub-scores — Tactical, Technical, and Fitness Programming. Reflects how well the program will develop Olivier as a player."><div class="ss-val" style="color:'+(devAvg===null?'var(--hint)':sc(devAvg))+'">'+(devAvg===null?'—':devAvg+'%')+'</div><div class="ss-lbl">Dev Score</div></div>'+
-      '<div class="ss-item" data-tip="ACU Alignment: How many of Olivier\'s 16 ACU BESS units are covered by this US degree. 14-16 = Full align (some units may transfer as direct credit). 10-13 = Strong. Below 10 = Partial."><div class="ss-val" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
+      '<div class="ss-item" data-tip="'+ACU_TIP+'"><div class="ss-val" id="acu-'+u.id+'" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
     '</div>'+
     '<div class="degree-band">'+
       '<span class="db-title" title="'+u.degreeTitle+'">'+u.degreeTitle+'</span>'+

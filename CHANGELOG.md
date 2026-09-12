@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.35 (2026-09-12) — Fix: Academic-First showed the same fact twice — the ACU tile now hands over to the Fit Score
+
+**Supersedes v45.34’s "known cosmetic overlap, accepted."** That entry noted the card rendering `ACU MATCH 87%` beside `ACU ALIGN 12/16` and left it; the owner asked for it fixed.
+
+The two were not merely similar — Academic-First’s lens score is `(acuAlign/16 × 0.85 + 0.15) × 100`, a **pure monotonic transform of `acuAlign`**, so the swapped tile and the ACU tile carried identical information in two notations, on a three-tile strip where space is the scarce resource.
+
+**Fix:** a `redundantWith` flag on `LENS_TILE.academic`. When the active lens duplicates an existing tile, that tile shows the **canonical Fit Score** instead of repeating the lens’s own input back at the reader, and the `.cn-delta-chip` is suppressed — it would otherwise duplicate the Fit Score straight back. Under Academic-First the strip now reads **`ACU MATCH 87%` | `DEV SCORE 85%` | `FIT SCORE 52%`**, with no chip. Every other lens is untouched: the ACU tile stays `12/16` and the chip carries the Fit Score as before.
+
+The ACU tile’s value element gained an `id="acu-<schoolId>"` so the swap can target it, and its tooltip was hoisted to an `ACU_TIP` const — the same pattern `FIT_TIP` already used, and for the same reason: a swap that cannot restore the original text is a one-way door.
+
+Generalised rather than special-cased on purpose. `redundantWith` describes the collision, so a future lens that reuses an existing tile’s input declares it in one place instead of growing another `if (currentLens === ...)` branch.
+
+**Files:** `js/app.js`, `athletes/olivier.json` (version only). No data file, no scoring formula, no stored score.
+
+**Verified locally:** under Academic-First all **170** ACU tiles show `Fit Score` and the chip is gone; switching away restores all 170 to `ACU Align N/16` with the chip back; the academic sort stays **0 of 135** out of order on the swapped tile; a round-trip (academic → other lens → academic) is stable; Best Overall restores the strip exactly. `validate_consistency.js` Issues: 0; no JS console errors.
+
 ### v45.34 (2026-09-12) — Fix: the remaining four lenses also sorted by a number that wasn’t on screen
 
 v45.33 fixed this for Climate-Neutral and explicitly deferred the rest, noting Academic-First left the visible Fit column out of order in **47 of 135** adjacent-card pairs. Owner: *"fix the other lenses the same way."* Done — all six lenses now show the score they sort by.

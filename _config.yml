@@ -1,0 +1,28 @@
+# GitHub Pages (Jekyll) configuration.
+#
+# This file exists for ONE reason: to keep the project's internal working docs
+# off the published site. Nothing else about the build should depend on it.
+#
+# WHAT THIS DOES:  bustachat.github.io/olivier-guide/CLAUDE.md now returns 404
+#                  instead of serving the file.
+#
+# WHAT THIS DOES NOT DO:  it does NOT make those files private. This repo is
+#                  public, so both remain readable at github.com/bustachat/
+#                  olivier-guide and raw.githubusercontent.com. Only making the
+#                  repo private changes that, and Pages on a private repo needs
+#                  a paid plan. Owner decision, 2026-09-12: Pages exclude only.
+#
+# Also note: any file the app FETCHES must stay published — data/*.json,
+# athletes/*.json, js/*, index.html. Never add those here. data/coaches.json in
+# particular is client-side-fetched and therefore public by design, not by
+# accident; excluding it would break the live site, not protect anything.
+#
+# Setting `exclude` replaces Jekyll's default exclude list. That is safe here
+# because this repo has no Gemfile, node_modules or vendor/ directory (checked
+# 2026-09-12). If one is ever added, re-add the defaults alongside these.
+#
+# To undo: delete this file and push.
+
+exclude:
+  - CLAUDE.md
+  - CHANGELOG.md

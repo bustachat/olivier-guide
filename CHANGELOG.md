@@ -20,6 +20,8 @@ Generalised rather than special-cased on purpose. `redundantWith` describes the 
 
 **Files:** `js/app.js`, `athletes/olivier.json` (version only). No data file, no scoring formula, no stored score.
 
+**Also shipped in this session, no version bump (deployment config, not guide content): `_config.yml` keeps `CLAUDE.md` and `CHANGELOG.md` off the published site** — both now return 404 at `bustachat.github.io`, while `index.html`, `js/*`, `data/*.json` and `athletes/*.json` all still serve 200 and the app loads normally. **It does not make them private**: the repo is public, so both stay readable at `raw.githubusercontent.com`. The owner reviewed making the repo private (Pages on a private repo needs a paid plan) and chose the exclude alone. Checked first that no hyperlink to either file exists in `index.html`/`js/` — the matches there are code comments citing section numbers, not links.
+
 **Verified locally:** under Academic-First all **170** ACU tiles show `Fit Score` and the chip is gone; switching away restores all 170 to `ACU Align N/16` with the chip back; the academic sort stays **0 of 135** out of order on the swapped tile; a round-trip (academic → other lens → academic) is stable; Best Overall restores the strip exactly. `validate_consistency.js` Issues: 0; no JS console errors.
 
 ### v45.34 (2026-09-12) — Fix: the remaining four lenses also sorted by a number that wasn’t on screen

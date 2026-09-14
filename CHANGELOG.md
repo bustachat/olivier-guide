@@ -31,6 +31,8 @@ Owner-prioritised. Tyler's athletics site has **migrated to a new platform**. Th
 
 **Files:** `data/juco.json`, `data/rosters/` (new), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
 
+**Follow-up, same day (docs only, no version bump): NJCAA stats roster adopted as a secondary step for JUCO refreshes.** Owner-directed. Tyler's data was cross-checked against `njcaa.org/teams/407485412185999056/msoc/2026-27/div1/roster`. **All 34 players match exactly** on name, position and class, including the 14 midfielders and the 7 sophomores who clear. GP 5 confirms the 2026-27 roster is in live use. **Caveat:** Tyler's athletics site now runs on the same platform with the same team ID, so for Tyler this is a consistency check, not an independent source. The process is written into CLAUDE.md §15 ("NJCAA stats roster") and roster-refresh `SKILL.md` step 1, covering both validation and fallback. **Blinn College** was tested to prove the URL pattern works for other schools: the guide holds 2025-26 (12 MFs), while NJCAA shows a populated 2026-27 roster (36 players, 11 M, GP 7). It is a ready fallback-path candidate, not yet refreshed.
+
 ### v45.35 (2026-09-12) — Fix: Academic-First showed the same fact twice — the ACU tile now hands over to the Fit Score
 
 **Supersedes v45.34’s "known cosmetic overlap, accepted."** That entry noted the card rendering `ACU MATCH 87%` beside `ACU ALIGN 12/16` and left it; the owner asked for it fixed.

@@ -39,6 +39,18 @@ future non-midfielder athlete profile, or a future database migration,
 would be built from). No new browser visit, no extra research time — just
 don't discard what's already on screen.
 
+**NJCAA JUCOs only — second read on njcaa.org (added 2026-09-14).** After
+the school's own page, open the team's NJCAA stats roster and compare squad
+count, names, positions and class years. If the school's site is down,
+blocked, or still on an older season, use the NJCAA roster as the source
+instead: set `source_url` to it, and say so in plain language in the note.
+The page has no "last updated" date, so read its **GP (games played)**
+counter: GP > 0 proves the roster is in live use this season. Finding the
+per-school team ID and tenant, the conflict rule, the differing position
+codes, and why a match is NOT independent for schools on the same platform
+(Tyler JC) are all in CLAUDE.md Section 15, "NJCAA stats roster". Record
+the cross-check result in the CHANGELOG entry.
+
 ### 2. Apply the refresh — the calculator, not hand arithmetic
 
 ```bash

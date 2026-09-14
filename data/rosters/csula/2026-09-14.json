@@ -1,0 +1,277 @@
+{
+  "schoolId": "csula",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-09-14",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://lagoldeneagles.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 38,
+  "players": [
+    {
+      "name": "Brayden McClelland",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Tustin",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Lopez",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Lomita",
+      "previousSchool": null
+    },
+    {
+      "name": "Tre Roach",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Oakland",
+      "previousSchool": null
+    },
+    {
+      "name": "Allan Rosales",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Baldwin Park",
+      "previousSchool": "Grand Canyon"
+    },
+    {
+      "name": "Emil Kischka",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Braunschweig, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Ignacio Moreno",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Lima, Peru",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Lopez",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Downey",
+      "previousSchool": "Cerritos College"
+    },
+    {
+      "name": "Felix Alverdale",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Varnamo, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Sandres",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Los Angeles",
+      "previousSchool": null
+    },
+    {
+      "name": "Erick Alamo",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Culver City",
+      "previousSchool": null
+    },
+    {
+      "name": "Saad Faiz",
+      "position": "F",
+      "class": "Gr.",
+      "hometown": "Casablanca, Morocco",
+      "previousSchool": "U of Albany"
+    },
+    {
+      "name": "Abraham Ramirez",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Anaheim",
+      "previousSchool": "Long Beach CC"
+    },
+    {
+      "name": "Emiliano Gutierrez",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Baldwin Park",
+      "previousSchool": "Mt. San Antonio College"
+    },
+    {
+      "name": "Jeancarlo Alvarez",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Los Angeles",
+      "previousSchool": null
+    },
+    {
+      "name": "Franco De Luna",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Winnetka",
+      "previousSchool": "Cal State East Bay"
+    },
+    {
+      "name": "Theo Lind",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Atvidaberg, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Sho Toda",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Tokyo, Japan",
+      "previousSchool": "Eastern Illinois"
+    },
+    {
+      "name": "Diego Bravo",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Compton",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Arvizu",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Santa Monica",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Sunde",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Stavanger, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Orlando Erazo",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Mattawa, Wash.",
+      "previousSchool": "Seattle Pacific"
+    },
+    {
+      "name": "Jacob Cervantes",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Chino Hills",
+      "previousSchool": "Mt. San Antonio College"
+    },
+    {
+      "name": "Michael Rodriguez",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Inglewood",
+      "previousSchool": "San Francisco State"
+    },
+    {
+      "name": "Luc Soler",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Soucieu-en-Jarrest, France",
+      "previousSchool": "Dodge City"
+    },
+    {
+      "name": "Leon Steffen",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Eutin, Germany",
+      "previousSchool": "La Salle"
+    },
+    {
+      "name": "Luke Kahler",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Templeton",
+      "previousSchool": null
+    },
+    {
+      "name": "Geovanni Antuna",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Gardena",
+      "previousSchool": null
+    },
+    {
+      "name": "Evan Yoell",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Brea",
+      "previousSchool": "Fullerton College"
+    },
+    {
+      "name": "Avery Montejano",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Gilroy",
+      "previousSchool": null
+    },
+    {
+      "name": "Taito Yoshihara",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Fukuoka, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Elijah Lopez",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Thousand Oaks",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Ceja",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Sylmar",
+      "previousSchool": "LA Mission College"
+    },
+    {
+      "name": "Oscar Haglund",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Lindingo, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Benyoussef",
+      "position": "D",
+      "class": "So.",
+      "hometown": "North Hills",
+      "previousSchool": "Cal Poly Pomona"
+    },
+    {
+      "name": "Caden Wood",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Long Beach",
+      "previousSchool": null
+    },
+    {
+      "name": "Marcos Lipertis",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Limassol, Cyprus",
+      "previousSchool": "Long Island University"
+    },
+    {
+      "name": "Gustavo Arias",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Los Angeles",
+      "previousSchool": "Cerritos College"
+    },
+    {
+      "name": "Jose Mariscal",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Whittier",
+      "previousSchool": "Cal State Fullerton"
+    }
+  ]
+}

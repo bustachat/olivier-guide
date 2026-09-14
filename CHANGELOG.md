@@ -6,6 +6,40 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.37 (2026-09-14) — Roster refresh Batch 7A: Clemson, Nova Southeastern, Cal State LA, Chapman to 2026-27
+
+Roster refresh campaign Batch 7, Sub-batch A (Change Types 2 and 3). All four 4-year schools that were still on 2025-26 rosters now have a published, complete 2026-27 roster. Each was read first on the school's own site in Claude-in-Chrome (VPN off), then sanity-checked on squad size, goalkeeper count and midfielder share. Each was refreshed with `refresh_school.py` using the full 4-year cascade, and the full roster was archived to `data/rosters/`. There is no NJCAA cross-check here: these are NCAA schools.
+
+| School | Squad / GK / MF | Cleared · rising Sr · rising Jr | Trajectory (Yr1–4) | Fit |
+|---|---|---|---|---|
+| `clemson` | 29 / 3 / 10 | 1 · 2 · 3 (+4 Fr) | 10/25/50/75 (was 25/55/75/88, hand-set) | 67 → **60** |
+| `nova` | 22 / 3 / 11 | 7 · 1 · 3 | 50/70/80/90 | 57 → **64** |
+| `csula` | 38 / 4 / 8 | 4 · 3 · 0 (+1 Fr) | 35/55/70/85 | 59 → **55** |
+| `chapman` | 34 / 3 / 9 | 3 · 4 · 2 | 30/50/70/85 | 45 → **48** |
+
+**Sanity checks:** Nova's 50% midfielder share is above the ~30% warning line, so it was compared with its 2025 roster: 24 players, 3 GK, 11–12 MID. Nova simply labels a lot of players MID; the roster is complete. Chapman's `M/F` (Leo Wells) counts as a midfielder per §15. Hometowns are stored exactly as printed.
+
+**Pathway changes:**
+- `csula` Freshman-friendly → **Mixed**: 3 of 8 midfielders came from California community colleges.
+- `nova` stays Portal/JUCO-heavy: 7 of 11 list a previous college.
+- `clemson` and `chapman` stay Freshman-friendly; no midfielder lists a previous college.
+
+All four notes were rewritten in plain language.
+
+**Departure queue:** `roster_moves_queue.json` is new at the repo root. It holds 3 real departures (`clemson`: Daniel Bunk, Kwaku Agyabeng; `chapman`: Cole Poling). Four false departures were removed. They were players still on the roster in another position or with different spacing in the stored name: Kyle Mattis (now D), Jamie Bulloch, Emil Kischka, Anthony Lopez.
+
+**Coach spot-check (official staff listings, all four visited):**
+- `noonan` (Clemson): name confirmed. Title corrected "Head Men's Soccer Coach" → **"Head Coach"** per his official bio, and `yearsHC` 16 → **17** ("entering his 17th season").
+- `mcarthur_nova`: title corrected "Head Coach" → **"Head Men's Soccer Coach"**. Email corrected `msoccer@nova.edu` → **`mmcarthu@nova.edu`**, as published on the official coaches page. Bio wording aligned.
+- `erush_csula`: title corrected to **"Head Men's Soccer Coach"**; bio wording aligned.
+- `carrillo_chapman`: unchanged. Head Coach, 31st season, confirmed.
+
+No `overallScore` moved, so no re-rank.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; `check_coach_bio.py` PASS for all four; qa-suite `Issues: 0`. Local browser: 170 schools loaded, all four fit scores survive the on-load recalculation. The Minutes Outlook cards show ✓ 2026-27 with the new trajectories, `getCoach()` returns the corrected titles, and there are no script errors.
+
+**Files:** `data/acc.json`, `data/d2.json`, `data/coaches.json`, `data/rosters/` (4 snapshots + manifest), `roster_moves_queue.json` (new), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
+
 ### v45.36 (2026-09-14) — Tyler JC roster refreshed to 2026-27 (the only JUCO still parked in the roster campaign)
 
 Owner-prioritised. Tyler's athletics site has **migrated to a new platform**. The 2026-27 roster now lives at `apacheathletics.com/teams/407485412185999056/msoc/2026-27/roster`. The owner supplied the URL and a pasted copy of the roster, and it was then re-read live in Claude-in-Chrome. The two matched exactly: **34 players, 14 midfielders (7 So. / 7 Fr.), 5 goalkeepers**, so the squad is fully published, not a half-built page.

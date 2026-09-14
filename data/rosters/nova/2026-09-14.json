@@ -1,0 +1,165 @@
+{
+  "schoolId": "nova",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-09-14",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://nsusharks.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 22,
+  "players": [
+    {
+      "name": "Henrik Dahl",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Kristiansand, Norway",
+      "previousSchool": "Limestone University"
+    },
+    {
+      "name": "Sebastian Valdez",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Bamberg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Gordon",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Pembroke Pines, Fla.",
+      "previousSchool": "Florida Atlantic University"
+    },
+    {
+      "name": "Noah Rastrick",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Norwich, England",
+      "previousSchool": "Robert Morris University"
+    },
+    {
+      "name": "Fabio Tajra",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": "Florida National University"
+    },
+    {
+      "name": "Erik Krohnstad",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Bergen, Norway",
+      "previousSchool": "Fordham University"
+    },
+    {
+      "name": "Eduardo Fontán Rodríguez",
+      "position": "F",
+      "class": "Gr.",
+      "hometown": "Santander, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Andres Morral Rosales",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": "Flagler College"
+    },
+    {
+      "name": "Kasper Kitchin",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Edinburgh, Scotland",
+      "previousSchool": null
+    },
+    {
+      "name": "Markus Rokseth",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Birkeland, Agder, Norway",
+      "previousSchool": "Limestone University"
+    },
+    {
+      "name": "Santino Scerbo",
+      "position": "GK",
+      "class": "Gr.",
+      "hometown": "Buenos Aires, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Jamie Bulloch",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Edinburgh, Scotland",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Marshall King",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Ramsbottom, Bury, England, United Kingdom",
+      "previousSchool": "Bryant & Stratton Rochester"
+    },
+    {
+      "name": "Milo Parquet",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Trevor Richter",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Nashville, Tenn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Oscar Fernandez",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": "Miami Dade College"
+    },
+    {
+      "name": "Ricardo Silva Alvarado",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Weston, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Toga Katsuma",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Kobe, Japan",
+      "previousSchool": "CCBC Essex"
+    },
+    {
+      "name": "Alexander Sasser",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Weston, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Olivier Pierre",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Sunrise, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Angelo Ehresman Jr.",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Staten Island, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nikolas Ricardo",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null
+    }
+  ]
+}

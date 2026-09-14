@@ -2826,7 +2826,7 @@
       "fitness": 92
     },
     "devScoresNote": "v42.26 §5a re-baseline (training environment only). ANCHOR — held near current. Live clemsontigers.com MSOC staff: HC Mike Noonan + Assoc HC Phil Jones + Asst Gaye Diadie + Asst Michal Gorszczaryk + Rob Thompson (Director of Strategic Analytics & Operations) + Raz Razayeski (ATC dedicated to M. Soccer) = 4 full-time coaches + analytics + a soccer-dedicated athletic trainer. Stored Tier-1 facilities: historic Riggs Field 8,000 (one of the most famous college soccer venues), world-class shared S&C, GPS (Catapult). Named §5a anchor (90–95); held at 95/93/92.",
-    "fitOlivier": 67,
+    "fitOlivier": 60,
     "tags": [
       "warm",
       "soccer",
@@ -2849,65 +2849,60 @@
     "rec": "Clemson is elite-tier ACC soccer with 2 recent national championships and the best MLS draft pipeline of the last 2 years. The Pre-PT degree is excellent — explicitly designed for physical therapy and medical school pathways with access to MUSC's DPT program. South Carolina climate is warm. The challenge: Clemson is a small college town (not a city), competition for playing time is fierce (4 first-rounders in 2026), and GPA 2.8 is borderline for admission. If Olivier can secure an athletic scholarship offer, this is among the top 3 programs in the entire guide for soccer development.",
     "url": "https://clemsontigers.com/sports/mens-soccer",
     "lensScores": {
-      "overall": 67,
+      "overall": 60,
       "soccer": 97,
       "academic": 82,
       "lifestyle": 50,
-      "minutes": 37,
-      "value": 40
+      "minutes": 16,
+      "value": 36
     },
     "minutesOutlook": {
       "available": true,
-      "cleared_before_2027": 4,
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Misei Yoshizawa",
-        "Nathan Richmond",
-        "Gabriel Santuari",
         "Mason Jimenez"
       ],
-      "mf_total": 11,
-      "roster_season": "2025-26",
+      "mf_total": 10,
+      "roster_season": "2026-27",
       "recruit_risk": "High",
-      "rising_junior_2027_count": 6,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Daniel Bunk",
-        "Kwaku Agyabeng",
         "Cooper Hineline",
         "Abdou Mane",
-        "Caleb George",
-        "Kyle Mattis"
+        "Caleb George"
       ],
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Live 2025-26 clemsontigers.com roster template does not publish HS/prior-school data for any player, so individual transfer status could not be directly verified (bio subpages did not render additional detail either). Classified Freshman-friendly based on the visible pattern: every current MF's hometown is a direct-from-country listing (Ghana, Japan, Italy, Senegal, South Africa) consistent with Noonan's well-documented international club-academy recruiting network, with no transfer indicators anywhere on the roster. Lower confidence than other entries — flag for re-verification if a more detailed source is found.",
+      "recruit_pathway_note": "The 2026-27 roster lists a high school or academy for every midfielder and no previous college, and four of the ten midfielders are freshmen. The midfield is built mainly from players recruited straight out of school or international academies (Ghana, Senegal, South Africa, Serbia, England and Canada among them). The roster does not flag transfers separately, so one could still be among them.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
-          "label": "Squad depth — development year"
+          "pct": 10,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Breaking into squad"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 75,
-          "label": "Regular contributor"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 88,
-          "label": "Key player / starter"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
-      "trajectoryNote": "Clemson is elite — 4 players went in round 1 of the 2026 draft. MF competition is among the toughest in college soccer. Olivier would likely be a development-year player in Year 1, building toward meaningful minutes by Year 2-3. The soccer development value is exceptional but immediate minutes are not guaranteed.",
-      "rising_senior_2027_count": 1,
+      "trajectoryNote": "Only one of Clemson's ten midfielders, senior Mason Jimenez, finishes before Olivier would arrive in August 2027. Two juniors will be seniors that season and seven more midfielders return, so Year 1 is realistically a development year at one of the strongest programs in the country. Real minutes should open up from Year 3, as today's juniors and sophomores graduate.",
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
+        "Malick Daouda",
         "Ransford Gyan"
       ]
     },

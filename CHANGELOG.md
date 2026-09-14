@@ -6,6 +6,31 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.36 (2026-09-14) — Tyler JC roster refreshed to 2026-27 (the only JUCO still parked in the roster campaign)
+
+Owner-prioritised. Tyler's athletics site has **migrated to a new platform**. The 2026-27 roster now lives at `apacheathletics.com/teams/407485412185999056/msoc/2026-27/roster`. The owner supplied the URL and a pasted copy of the roster, and it was then re-read live in Claude-in-Chrome. The two matched exactly: **34 players, 14 midfielders (7 So. / 7 Fr.), 5 goalkeepers**, so the squad is fully published, not a half-built page.
+
+**The opportunity picture flipped.** On last season's roster all 13 midfielders were due to leave before August 2027. On a 2026-27 JUCO roster only the sophomores clear, and the freshmen return as sophomores. That leaves 7 cleared and 7 returning. The Section 14 JUCO formula gives opportunity 4.0 and a trajectory of **56% / 69%** (was 68 / 81).
+
+| Field | Before | After |
+|---|---|---|
+| `mf_total` / `roster_season` | 13 / 2025-26 | 14 / 2026-27 |
+| `cleared_before_2027` | 13 | 7 |
+| `recruit_risk` | Medium | High |
+| `lensScores.minutes` | 73 | 61 |
+| `fitOlivier` / `overall` | 71 | 67 |
+| `lensScores.value` | 66 | 63 |
+
+`trajectoryNote` and `recruit_pathway_note` were rewritten in plain language. The old note's unverified "#1 D1 transfer feeder" wording was not carried over (§6F); it now says "strongest measured D1 transfer record of any JUCO in this guide". `recruit_pathway` stays `Freshman-friendly`: 7 of 14 midfielders are freshmen, and 5 of the 7 sophomores were freshmen on last year's roster. The new page does not publish previous schools, and the note says so. Two Australian midfielders are on the roster (Melbourne and Perth), and both clear before 2027.
+
+**First entry in the roster snapshot archive:** `data/rosters/tyler_jc/2026-09-14.json` holds all 34 players, plus `data/rosters/manifest.json`. No departure-queue entries, since last season's rising-name buckets were empty.
+
+**Coach spot-check: NOT completed.** The new platform has no coaches or staff page. `/sports/msoc/coaches` is a stats stub, the search-indexed `/sports/msoc/coaches/index` returns 404, and `/staff-directory` returns 404. Steve Clements is therefore **unconfirmed** for 2026-27, and `coaches.json` is unchanged. The stored school `url` (`/sports/msoc/index`) still resolves but lands on an empty stats stub. It was left alone because the only working deep link hardcodes a season path (§4). Both are open follow-ups in §6C.
+
+**Verified:** `refresh_school.py` cascade; arithmetic, JUCO-trajectory, jargon and snapshot checks all PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, stored `fitOlivier` 67 survived the on-load `recalculateAllScores()`, and the Minutes Outlook card shows `✓ 2026-27`, 14 MFs, 7 cleared, "High Demand", the 7 named sophomores and the new note. No JS errors; the only console errors are the known favicon-fallback 404s. **Roster ledger: 120 on 2026-27 / 38 on 2025-26 / 12 unavailable.**
+
+**Files:** `data/juco.json`, `data/rosters/` (new), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
+
 ### v45.35 (2026-09-12) — Fix: Academic-First showed the same fact twice — the ACU tile now hands over to the Fit Score
 
 **Supersedes v45.34’s "known cosmetic overlap, accepted."** That entry noted the card rendering `ACU MATCH 87%` beside `ACU ALIGN 12/16` and left it; the owner asked for it fixed.

@@ -2413,10 +2413,12 @@ Run the sweep with a **browser User-Agent** — without one the Cloudflare hosts
 
 **Scope: NJCAA-affiliated schools in `data/juco.json` only.** It does not apply to Santa Monica (CCCAA, not NJCAA) or to any NCAA/NAIA school.
 
-NJCAA runs a stats site where every member team keeps its own roster, and that roster is what feeds its real box scores. Use it for two things on every JUCO roster refresh:
+NJCAA runs a stats site where every member team keeps its own roster, and that roster is what feeds its real box scores. Use it for two things on every JUCO roster refresh.
+
+**⚠️ NEVER START A REFRESH FROM NJCAA (owner ruling, 2026-09-14).** The school's own roster page is always the first read, every time. NJCAA is opened only *after* that read, and only for the two purposes below. An NJCAA page showing a newer season than the guide is **not** a reason to refresh from NJCAA. It only means the school's own site probably has that season too, so go and read the school's site.
 
 1. **Validate.** After reading the school's own roster page, compare it against the NJCAA roster: squad count, names, position and class year. Record the result in the CHANGELOG entry: match, or which fields differ.
-2. **Fall back.** If the school's site is down, blocked, or still showing an older season, the NJCAA roster can be the source. Set `source_url` in the patch to the NJCAA page, and say in plain language in `trajectoryNote` that the roster came from the NJCAA stats site.
+2. **Fall back.** Only after the school's own roster page has actually been opened in a real browser, with the VPN on where required, and shown to be down, blocked, or still on an older season, the NJCAA roster can be the source. Record in the CHANGELOG entry what the school's own page showed and on what date. Set `source_url` in the patch to the NJCAA page, and say in plain language in `trajectoryNote` that the roster came from the NJCAA stats site.
 
 **URL:** `https://www.njcaa.org/teams/{teamId}/msoc/{season}/div1/roster?tenant={tenantId}` (use `div2`/`div3` for those divisions). **`teamId` and `tenantId` are different for every school.** Find both on the division teams list, `njcaa.org/sports/msoc/{season}/div1/teams`, which runs to 4 pages for DI. Its links point at `/stats`; swap that segment for `/roster`. **Use that list for URL discovery only. It is not an authority on a school's division** (see the Region 15 incident in §6).
 
@@ -2434,7 +2436,7 @@ NJCAA runs a stats site where every member team keeps its own roster, and that r
 
 **Proof cases (2026-09-14):**
 - **Tyler JC:** all 34 players matched the v45.36 snapshot exactly on name, position and class (GP 5).
-- **Blinn College:** the guide still holds its 2025-26 roster (12 MFs), while NJCAA already shows a populated 2026-27 squad of 36 players (11 M, 5 GK, GP 7). This is the fallback case in action, and Blinn is a ready candidate for the next refresh.
+- **Blinn College:** the guide still holds its 2025-26 roster (12 MFs), while NJCAA already shows a populated 2026-27 squad of 36 players (11 M, 5 GK, GP 7). Blinn's own site was **not** checked. That makes this proof that the URL pattern works for another school, not a fallback case. It suggests Blinn has published 2026-27, so Blinn's next refresh starts on **Blinn's own roster page**, like every other school.
 
 ### Conflicting Tier 1 Sources
 

@@ -39,11 +39,12 @@ future non-midfielder athlete profile, or a future database migration,
 would be built from). No new browser visit, no extra research time — just
 don't discard what's already on screen.
 
-**NJCAA JUCOs only — second read on njcaa.org (added 2026-09-14).** After
-the school's own page, open the team's NJCAA stats roster and compare squad
-count, names, positions and class years. If the school's site is down,
-blocked, or still on an older season, use the NJCAA roster as the source
-instead: set `source_url` to it, and say so in plain language in the note.
+**NJCAA JUCOs only — second read on njcaa.org (added 2026-09-14).** NEVER
+start a refresh from NJCAA: the school's own roster page is always read first.
+After the school's own page, open the team's NJCAA stats roster and compare squad
+count, names, positions and class years. Only if the school's own page, actually
+opened and read, is down, blocked, or still on an older season, use the NJCAA
+roster as the source instead: set `source_url` to it, and say so in plain language in the note.
 **`njcaa.org` geo-blocks Australian traffic, so ask the owner to turn their VPN on before opening it.** Claude-in-Chrome uses the owner's own network.
 The page has no "last updated" date, so read its **GP (games played)**
 counter: GP > 0 proves the roster is in live use this season. Finding the

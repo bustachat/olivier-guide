@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v45.44 (2026-09-15)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v45.45 (2026-09-15)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -1295,7 +1295,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v45.44 (2026-09-15).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v45.45 (2026-09-15).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1390,7 +1390,7 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
 | **7F — Region 6 (KS)** | `seward_county_cc`, `garden_city_cc`, `dodge_city_cc` | Garden City and Seward had empty 2026-27 pages on Aug 17. Seward has the largest MF group in the batch (20). **✅ v45.42:** all 3 refreshed from their own sites and cross-checked on NJCAA (fit: Seward 52→45, Garden City 50→47, Dodge City 48→44); Garden City's no-forwards labelling disclosed; Dodge City coach title corrected. |
 | **7G — Region 9/18 (West)** | `otero_college`, `northwest_college`, `trinidad_state`, `slcc`, `north_idaho_college`, `pacific_northwest_christian_college` | Watch the redshirt class-year trap at `slcc` (§15). **✅ v45.43:** 4 refreshed (fit: Otero 52→48, Northwest 50→44, Salt Lake CC 48→47, North Idaho 47→47); Trinidad State and Pacific NW Christian kept on 2025-26 (both sources incomplete); 2 coach titles corrected, PNWCC contact filled. |
 | **7H — East (NY/PA/MD/SC)** | `monroe_college`, `nassau_cc`, `ulster_cc`, `harcum_college`, `montgomery_college`, `hagerstown_cc`, `usc_union` | `monroe_college` is mid-transition to NCAA D2 (§6F) and plays a CACC schedule, so its NJCAA page may not exist. `harcum_college`'s stored `url` is a `harcum.edu` CMS page, so find the real athletics roster. `nassau_cc`/`ulster_cc` are NJCAA **DIII** (`div3`). **✅ v45.44:** 5 refreshed (fit: Nassau 42→39, Montgomery 47→43, Hagerstown 40→36, USC Union 55→51, Ulster 34→32; Hagerstown merged sources, Ulster from NJCAA); Monroe (owner: leave) and Harcum (half-published, no NJCAA roster) kept on 2025-26; Nassau coach title corrected. |
-| **7I — Region 24 (IL)** | `southwestern_illinois`, `lincoln_trail` | Small closing batch. |
+| **7I — Region 24 (IL)** | `southwestern_illinois`, `lincoln_trail` | Small closing batch. **✅ v45.45:** Lincoln Trail refreshed from its own site (fit 47→43); Southwestern Illinois kept on 2025-26 (roster page still on 2025, NJCAA has no class years). Batch 7 complete: 30 of 38 refreshed. |
 
 **Per school, in this order, no shortcuts:**
 1. **Open the school's own roster page first**, in Claude-in-Chrome. Pick the 2026-27 season from the page's own selector and wait ~5s before reading. Never start from NJCAA (§15).

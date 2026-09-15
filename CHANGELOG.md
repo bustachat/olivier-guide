@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.45 (2026-09-15) — Region 24 Illinois: Lincoln Trail to 2026-27; Southwestern Illinois unchanged
+
+Roster refresh campaign Batch 7, Sub-batch I (final): NJCAA Region 24, Illinois (Change Type 3). School sites were read first on 2026-09-15 (VPN off), and NJCAA afterwards (VPN on).
+
+- **`lincoln_trail` — refreshed from its own site.** The 2026-27 page lists 23 players, 3 GK and 7 MF. Its class column mixes `So`/`Fr.` with bare `S`/`F`; at a 2-year college these can only mean sophomore/freshman, and they were mapped that way. Position `S` is striker. Jeykol Mosquera's position is blank and is archived as OTHER. NJCAA (GP 3) is **less** complete (18 unique players, most classes blank), but every player it does list agrees on position, so the school site was used.
+- **`southwestern_illinois` — NOT refreshed.** Its own roster page is still titled "Men's Soccer Roster 2025 Season" although the fall 2026 schedule is live with results. The NJCAA 2026-27 roster (GP 5) lists 23 players with positions but class years blank for 22, so there is no way to tell who clears. Stored 2025-26 data kept.
+
+**Batch 7 closes here:** 30 of 38 schools refreshed to 2026-27 (4 four-year in 7A + 26 JUCO), 8 kept on 2025-26 with the reason recorded. The guide now has **150 schools on 2026-27 / 8 on 2025-26 / 12 unavailable**.
+
+| School | Squad | MF (clear / return) | Trajectory Yr1/Yr2 | Fit | NJCAA cross-check |
+|---|---|---|---|---|---|
+| `lincoln_trail` | 23 | 7 (3 / 4) | 53/66 (was 63/76) | 47 → **43** | GP 3: NJCAA LESS COMPLETE: NJCAA lists 18 unique players (missing Martinez Lara, Mosquera, Monadillo, Sousa, Lima) and leaves most classes blank; the players it does list agree on position. School site (23) wins. |
+
+**Coach spot-check:** `coach_lincoln_trail` Luis Dantas (Head Soccer Coach) and `coach_southwestern_illinois` Lindsay Eversmeyer (Head Coach, 4th year) are confirmed on their official pages and match. No edits.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, every stored fit survives the on-load recalculation, the Minutes Outlook cards show ✓ 2026-27, nothing renders `undefined`/`NaN`, and `getCoach()` returns the expected titles.
+
+**Files:** `data/juco.json`, `data/rosters/` (snapshots + manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
+
 ### v45.44 (2026-09-15) — East (Nassau, Montgomery, Hagerstown, USC Union, Ulster) to 2026-27; Monroe and Harcum unchanged
 
 Roster refresh campaign Batch 7, Sub-batch H: NJCAA Regions 10/15/19/20, East (Change Type 3). School sites were read first in Claude-in-Chrome on 2026-09-15 (VPN off), and NJCAA afterwards (VPN on).

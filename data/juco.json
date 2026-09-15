@@ -21121,14 +21121,14 @@
       "fitness": 38
     },
     "devScoresNote": "Tier-1: HC Luis Dantas (hired July 2024, 2nd season) brings a genuinely deep personal playing/coaching CV — JUCO playing career at Murray State College (OK) and Cowley CC (2 conference titles, a regional title, Defensive Player of the Year), transferred to NCAA D1 Western Illinois University (800+ minutes, started every conference match), then 3 seasons of professional indoor soccer with the Wichita Wings (3 conference titles, 3 national tournament appearances) plus USL League Two/UPSL experience, and assistant-coaching stops at Newman University (NAIA, a Top 25 ranking and the program's first semifinal) and the University of Health Sciences and Pharmacy in St. Louis. The program itself, however, shows no confirmed dedicated stadium beyond 'Statesmen Park,' no strength & conditioning staff, and no video-analysis/sports-science resources on the official site — and is mid-rebuild on the field (0-4 and 1-4 the last two seasons). Per §5a, this score reflects the training ENVIRONMENT, not the coach's own strong personal CV, which is captured in coaches.json instead.",
-    "fitOlivier": 47,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 47,
+      "overall": 43,
       "soccer": 42,
       "academic": 15,
-      "minutes": 68,
+      "minutes": 58,
       "lifestyle": 0,
-      "value": 62
+      "value": 59
     },
     "facilities": [
       "HC Luis Dantas — a former NCAA D1 (Western Illinois) and JUCO player plus 3-season professional indoor soccer veteran (Wichita Wings)",
@@ -21161,40 +21161,34 @@
     "rec": "Lincoln Trail College is a program genuinely mid-rebuild: a strong 2023-24 season (10-3-4 overall, tied atop the Region 24 DI standings) gave way to back-to-back losing seasons (1-4 in 2024-25, 0-4 in 2025-26) following a July 2024 head-coaching change. New HC Luis Dantas brings a genuinely deep personal playing and coaching CV — JUCO stops at Murray State College (OK) and Cowley CC (2 conference titles, Defensive Player of the Year), a transfer to NCAA Division I Western Illinois University, 3 seasons of professional indoor soccer with the Wichita Wings (3 conference titles), and assistant-coaching experience at NAIA Newman University. Lincoln Trail is a small, rural IECC campus in Robinson, IL with no Exercise Science, Kinesiology, or Physical Education program of any kind, and no institutional dormitories — housing runs through a long-established private operator, Statesmen Rentals, with properties directly adjacent to campus. The trade-off for a genuine long-shot, ground-floor program: one of the lowest costs of attendance in the entire guide. minutesOutlook is wide open: all 9 midfielders on the 2025-26 roster clear NJCAA eligibility before Olivier's Aug 2027 arrival.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 9,
-      "roster_season": "2025-26",
-      "cleared_before_2027": 9,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Erick Olmo (MF)",
-        "Joseph Satizabal (Fr-MF)",
-        "Fabian Hernandez (Fr-MF)",
-        "Ryudai Seki (Fr-MF)",
-        "Hugo Cuesta (So-MF)",
-        "Nael Lakhloufi (Fr-MF)",
-        "Aseel Zubayen (Fr-MF)",
-        "Taiga Sugiyama (Fr-MF)",
-        "Daleek Hutchinson (Fr-MF)"
+        "Taiga Sugiyama (So·M)",
+        "Jeronimo Aquino (So·M)",
+        "Tommaso Romano (So·M)"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
-      "recruit_risk": "Low",
+      "recruit_risk": "Medium",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 63,
+          "pct": 53,
           "label": "Likely starter"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 76,
+          "pct": 66,
           "label": "Established starter"
         }
       ],
-      "trajectoryNote": "Lincoln Trail's own official 2025-26 roster (the current, most recently published season) lists 9 midfielders (one player's class year was not published on the official roster; the rest are 8 freshmen and 1 sophomore). Since this is a stale-by-one-year (2025-26) roster, the entire pool completes NJCAA's 2-year eligibility before Olivier's August 2027 arrival regardless of the one missing class year — a fully open pool. Ask the coach: 'How many true central-midfield recruits are you targeting for the 2026 class?' Re-checked live 2026-08-17 — all 9 midfielder names matched exactly, no change."
+      "trajectoryNote": "JUCO 2-year program. On the 2026-27 roster, 3 of the 7 midfielders are sophomores who finish in spring 2027 and leave before Olivier would arrive in August 2027, while 4 freshmen return as sophomores. Expect real competition for Year 1 minutes from the returning group plus the 2027 recruiting class."
     },
     "recruit_pathway": "Freshman-friendly",
     "recruit_pathway_note": "The 2025-26 midfield pool is overwhelmingly true freshmen (8 of 9) with no transfer-portal annotation on the roster, drawn from a wide international base (France, Spain, Japan, Jordan, Morocco, Trinidad) — a real, wide-open true-freshman entry pathway, reflecting the program's rebuild under a new head coach.",

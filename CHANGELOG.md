@@ -6,6 +6,27 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.43 (2026-09-15) — Region 9/18 West (Otero, Northwest, Salt Lake CC, North Idaho) to 2026-27; Trinidad State and Pacific NW Christian unchanged
+
+Roster refresh campaign Batch 7, Sub-batch G: NJCAA Regions 9/18, West (Change Type 3). Read first on each school's own site in Claude-in-Chrome on 2026-09-15 (VPN off), cross-checked on NJCAA (VPN on).
+
+- **Refreshed:** `otero_college`, `northwest_college`, `slcc`, `north_idaho_college`. All four have complete 2026-27 rosters on their own sites. They were refreshed with the JUCO formula and archived, with notes rewritten in plain language. Northwest's midfielder Enrique Martinez Collado is listed only as "Redshirt" on the school site (NJCAA says SO) and is counted as returning, disclosed in the note. Salt Lake CC's `R-Fr.` player was mapped as a freshman (redshirt class-year trap, §15). North Idaho's refresh queued 3 genuine departures (Federico Bellisi, Victor Picard, Luis Velasco) to `roster_moves_queue.json`; 4 false ones, players still on the roster, were dropped.
+- **`trinidad_state` — NOT refreshed.** Its own 2026-27 page lists 29 names but only 6–7 have a position or class, and the NJCAA roster (GP 7) has the same gaps. With no complete source, the stored 2025-26 data is kept; re-check later.
+- **`pacific_northwest_christian_college` — NOT refreshed.** Both its own 2026 page and NJCAA (GP 7) list 15 players with 10–11 positions blank and one goalkeeper. With no complete source, the stored 2025-26 data is kept.
+
+| School | Squad | MF (clear / return) | Trajectory Yr1/Yr2 | Fit | NJCAA cross-check |
+|---|---|---|---|---|---|
+| `otero_college` | 32 | 13 (6 / 7) | 55/68 (was 67/80) | 52 → **48** | GP 6: EXACT MATCH: all 32 players, positions and classes identical (13 MF: 6 So, 7 Fr). |
+| `northwest_college` | 34 | 14 (3 / 11) | 47/60 (was 63/76) | 50 → **44** | GP 4: NAMES/CLASSES MATCH (34; Daiki vs Kaiki Misawa spelling), POSITIONS UNUSABLE: NJCAA position column holds class words ("FRESHMAN") for 27 of 34. NJCAA lists Enrique Martinez Collado as SO (school: "Redshirt"). School site wins; Martinez Collado ambiguity disclosed. |
+| `slcc` | 29 | 8 (3 / 5) | 52/65 (was 54/67) | 48 → **47** | GP 6: NEAR MATCH: all 29 school-site players with same positions/classes (8 MF); NJCAA adds Logan Sorensen (D, SO), Salvador Colorado (F, SO), and two blank rows (Jack Dallimore; Ruben Mijangos) plus a duplicate. School site wins. |
+| `north_idaho_college` | 33 | 11 (6 / 5) | 57/70 (was 58/71) | 47 → **47** | GP 9: MEN'S PLAYERS MATCH: all 33 school-site players identical (11 MF); NJCAA entry erroneously also includes ~15 women's-team players. School site wins. |
+
+**Coach spot-check (all six schools' official pages visited):** `coach_northwest_college` Rob Hill, `coach_slcc` Mark Davis, `coach_north_idaho_college` Brad Williams and `coach_trinidad_state` Tyler Wilt are confirmed and match. **`coach_otero_college`: title corrected "Head Coach" → "Men's Soccer Head Coach"** per the official coaches page. **`coach_pacific_northwest_christian_college`: title corrected "Head Men's and Women's Soccer Coach" → "Head Men's Soccer Coach"** per the official bio (`/roster/coaches/max-vaneaton/22`). The bio also publishes contact details, so the null contact was filled with `max.vaneaton@pnwcc.edu` / `253-820-0934`. The stored name "Maximus" was left as is: the page says "Max", but a name change would trigger a full re-rank for what is a nickname. No `overallScore` change. `check_coach_bio.py` PASS for both.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, every stored fit survives the on-load recalculation, the Minutes Outlook cards show ✓ 2026-27, nothing renders `undefined`/`NaN`, and `getCoach()` returns the expected titles.
+
+**Files:** `data/juco.json`, `data/rosters/` (snapshots + manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`, `data/coaches.json`, `roster_moves_queue.json`.
+
 ### v45.42 (2026-09-15) — Region 6 Kansas (Seward County, Garden City, Dodge City) to 2026-27
 
 Roster refresh campaign Batch 7, Sub-batch F: NJCAA Region 6, Kansas (Change Type 3). Seward County and Garden City both had empty 2026-27 pages on Aug 17; all three now publish complete 2026-27 rosters on their own sites. They were read in Claude-in-Chrome on 2026-09-15 with the VPN off, cross-checked on NJCAA with the VPN on, refreshed with the JUCO formula and archived. **Garden City disclosure:** its roster uses only GK/Defense/Midfield labels, with no forwards. So attackers are counted as midfielders, the 22-MF group overstates the real midfield, and the note says so. NJCAA uses the same labels, so the cross-check cannot separate them either. Batch 7 `recruit_risk` rule applied, pathway labels carried over, notes rewritten in plain language.

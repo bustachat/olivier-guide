@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.41 (2026-09-15) — Region 4 Chicago: Daley to 2026-27 via NJCAA fallback; Truman, Kennedy-King, Wright unchanged
+
+Roster refresh campaign Batch 7, Sub-batch E: NJCAA Region 4, City Colleges of Chicago (Change Type 3). **School site first, as required (§15):** on 2026-09-15, `region4sports.com/sports/msoc/index` still showed only 2025-26 standings, and both `/2026-27/teams` and `/2026-27/teams/harrystrumancollege` returned 404. No 2026-27 season was set up, which is outcome (c) and makes the NJCAA stats roster eligible as a fallback. `citycollegesofchicagoathletics.com` was not opened (compromised, §6D). NJCAA was then read with the VPN on:
+
+- **`daley_college` — REFRESHED from NJCAA** (team 418346475345413769, GP 3). 31 players, all with position and class, 3 GK, 12 MF (5 So / 7 Fr). `source_url` points to the NJCAA page, and `trajectoryNote` says in plain language that the roster came from the NJCAA stats site.
+- **`truman_college` — NOT refreshed.** The NJCAA 2026-27 roster (GP 5) lists 28 players with positions but every class year is blank, so there is no way to tell who clears. Classes were deliberately not inferred from last season's names. Stored 2025-26 data kept.
+- **`kennedy_king_college` — NOT refreshed.** The NJCAA roster (GP 2) has positions and classes, but only 1 GK, which counts as partially published (§15 GK test). Stored data kept; re-check later.
+- **`wilbur_wright_college` — NOT refreshed.** NJCAA (GP 3) shows "No roster available." Stored data kept.
+
+| School | Squad | MF (clear / return) | Trajectory Yr1/Yr2 | Fit | NJCAA cross-check |
+|---|---|---|---|---|---|
+| `daley_college` | 31 | 12 (5 / 7) | 54/67 (was 66/79) | 49 → **45** | GP 3: FALLBACK USED: school site has no 2026-27 season; NJCAA 2026-27 roster has positions and classes for all 31 players -> source for refresh. |
+
+**Coach spot-check: NOT completed for any of the four.** No current official soccer staff listing exists: `ccc.edu/wright/departments/athletics/` has no soccer staff text, `ccc.edu/truman|daley/departments/athletics/` redirect to the ccc.edu homepage, `ccc.edu/kennedy-king/...` returns 404, and the NJCAA team pages do not list coaches. A search snippet naming a different Daley coach came from an old ccc.edu page and was deliberately not acted on. `coaches.json` unchanged.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, every stored fit survives the on-load recalculation, the Minutes Outlook cards show ✓ 2026-27, nothing renders `undefined`/`NaN`, and `getCoach()` returns the expected titles.
+
+**Files:** `data/juco.json`, `data/rosters/` (snapshots + manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
+
 ### v45.40 (2026-09-15) — Region 1/8 + CCCAA (Eastern Florida State, Phoenix, Santa Monica) to 2026-27
 
 Roster refresh campaign Batch 7, Sub-batch D: NJCAA Region 8 (EFSC), NJCAA DII Region 1 (Phoenix), and CCCAA (Santa Monica) (Change Type 3). All three now publish a complete 2026-27 roster on their own athletics site, read in Claude-in-Chrome on 2026-09-15. **Both August problems have resolved on the school sites themselves:** EFSC's 2026-27 page now publishes positions for every player (blank in August), and Phoenix's 2026-27 page is now populated (empty in August). So neither needed the NJCAA fallback. Each was refreshed with the JUCO formula and its full roster archived. The Batch 7 `recruit_risk` rule was applied, pathway labels carried over, and notes rewritten in plain language.

@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.38 (2026-09-15) — Roster refresh Batch 7B: Region 2 (Rose State, NEO A&M, National Park, Connors State) to 2026-27
+
+Roster refresh campaign Batch 7, Sub-batch B: NJCAA Region 2, Oklahoma/Arkansas (Change Type 3). All four schools publish a complete 2026-27 roster on their own athletics site. Each was read there first in Claude-in-Chrome on 2026-09-15 with the VPN off, then cross-checked against the team's NJCAA stats-site roster with the VPN on (CLAUDE.md §15). Each was refreshed with `refresh_school.py` using the JUCO formula (§14): on a 2026-27 roster, sophomores clear and freshmen return. The full roster was archived to `data/rosters/`.
+
+| School | Squad | MF (clear / return) | Trajectory Yr1/Yr2 | Fit | NJCAA cross-check |
+|---|---|---|---|---|---|
+| `rose_state` | 30 | 8 (2 / 6) | 50/63 (was 65/78) | 68 → **63** | GP 6: MATCH with minor differences: same squad (NJCAA shows 32 rows incl. 2 duplicate name rows); same 8 MF; NJCAA lists Jose Rodriguez-Mendez D/CM (school: Defender), Asher Lakey D/F (school: Defender), Eric Gonzalez class NA (school So.), Maddox Puig FR (school So.). School site wins. |
+| `neo_am` | 29 | 9 (5 / 4) | 56/69 (was 63/76) | 59 → **57** | GP 6: MATCH on squad (29) with differences: NJCAA publishes no class year for most players (school site does); NJCAA lists Oliver Tomlinson as F (school: CM), so NJCAA shows 8 MF vs school 9; duplicate typo row (Pedro Branquinho/Braquinho). School site wins. |
+| `national_park` | 19 | 5 (5 / 0) | 58/71 (was 62/75) | 59 → **58** | GP 5: EXACT MATCH: all 19 players identical (NJCAA adds a placeholder "TM Team" row); 5 MF all SO. |
+| `connors_state` | 19 | 6 (3 / 3) | 54/67 (was 55/68) | 53 → **53** | GP 4: MATCH on MF count (6) with differences: NJCAA lists Herschel Mukaro as MF (school: F), omits Masa Lannhult, lists Rex Carr FR (school SO); duplicate/typo rows (Josh/Joshua Lamirand, Theo Googall). School site wins. |
+
+**Coach spot-check (official coaches pages, all four visited):** `coach_rose_state` Michael Shanahan, `coach_neo_am` Tyler Douthitt, `coach_national_park` Corey Irvine and `coach_connors_state` Steve Moore are all confirmed, with names and titles matching. No coach edits.
+
+**`recruit_risk` rule applied across Batch 7 JUCOs (unscored; previously retained stale values):** returning midfielders ≥7 → High, 3–6 → Medium, 0–2 → Low. `recruit_pathway` labels were carried over, because none of these rosters lists previous colleges. Both note fields were rewritten in plain language for every school.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, all four stored fit scores survive the on-load recalculation, the Minutes Outlook cards show ✓ 2026-27, and nothing renders `undefined`/`NaN`.
+
+**Files:** `data/juco.json`, `data/rosters/` (4 snapshots + manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
+
 ### v45.37 (2026-09-14) — Roster refresh Batch 7A: Clemson, Nova Southeastern, Cal State LA, Chapman to 2026-27
 
 Roster refresh campaign Batch 7, Sub-batch A (Change Types 2 and 3). All four 4-year schools that were still on 2025-26 rosters now have a published, complete 2026-27 roster. Each was read first on the school's own site in Claude-in-Chrome (VPN off), then sanity-checked on squad size, goalkeeper count and midfielder share. Each was refreshed with `refresh_school.py` using the full 4-year cascade, and the full roster was archived to `data/rosters/`. There is no NJCAA cross-check here: these are NCAA schools.

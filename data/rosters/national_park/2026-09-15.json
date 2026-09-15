@@ -1,0 +1,144 @@
+{
+  "schoolId": "national_park",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-15",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.np.edu/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 19,
+  "players": [
+    {
+      "name": "Joseph Jones",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Hyde, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Svane-Johnslev",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Odense, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Kramer",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Naestved, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolas Saint-Martin",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Toulouse, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Raban Bourceau",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Aachen, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Reiche",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Bad Kosen, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Ashton Robson",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Seaham, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Elian Mulopo",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Heide, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Arius Garcia",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Russellville, AR",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Harris",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Derbyshire, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Hartley-Stead",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Manchester, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Köster",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Berlin, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Anton Klickermann",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Leipzig, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonathan Amperez",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Memphis, TN",
+      "previousSchool": null
+    },
+    {
+      "name": "Efan Anwyl",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Harlech, Wales",
+      "previousSchool": null
+    },
+    {
+      "name": "Nael Baala",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Reims, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Strohm Carlstone",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Frisco, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Nikita Maul",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Mönchengladbach, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Wardrope",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Hampshire, England",
+      "previousSchool": null
+    }
+  ]
+}

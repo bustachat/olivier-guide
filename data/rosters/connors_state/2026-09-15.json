@@ -1,0 +1,144 @@
+{
+  "schoolId": "connors_state",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-15",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.connorsathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 19,
+  "players": [
+    {
+      "name": "Aled Richards",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Louis Guenaire",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Telford",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Rex Carr",
+      "position": "D",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Neill",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Buntingford, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Joshua Lamirand",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Ted Salmon",
+      "position": "F",
+      "class": "So.",
+      "hometown": "New Mills, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Temple",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Pontefract, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Elvin Oliva",
+      "position": "F",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Herschel Mukaro",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Harare, Zimbabwe",
+      "previousSchool": null
+    },
+    {
+      "name": "Timeo Pourtois",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Lukas Randhahn",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Hamburg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Theo-William Goodall",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Eneko Lalinde",
+      "position": "MF",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Nelson Gonzalez",
+      "position": "MF",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Marley Bryden-Campbell",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Masa Lannhult",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Bunn",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Sammy Mejia",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    }
+  ]
+}

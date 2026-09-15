@@ -1,0 +1,263 @@
+{
+  "schoolId": "blinn_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-15",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://buccaneersports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 36,
+  "players": [
+    {
+      "name": "Ian Aitboughima",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Bellaire, TX Episcopal",
+      "previousSchool": null
+    },
+    {
+      "name": "Andre Prieto",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "El Paso, TX East Wood",
+      "previousSchool": null
+    },
+    {
+      "name": "Riccardo Strohhecker",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Milan, Italy Northfield Mount Hermon",
+      "previousSchool": null
+    },
+    {
+      "name": "Jason Alvarez",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bellville, TX Bellville",
+      "previousSchool": null
+    },
+    {
+      "name": "Peter Evans",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Centerville, OH Centerville",
+      "previousSchool": null
+    },
+    {
+      "name": "Lobokola Enduki",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Abilene, TX Wylie",
+      "previousSchool": null
+    },
+    {
+      "name": "Paolo Imeneo",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Toronto, Canada Holy Trinity Catholic",
+      "previousSchool": null
+    },
+    {
+      "name": "Greatiyke Nwosu",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Fulshear, TX Fulshear",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Schroder",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Lincoln, NE Lincoln Southwest",
+      "previousSchool": null
+    },
+    {
+      "name": "Vukasin Ivanovic",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Belgrade, Serbia Hoosac School",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Garcia",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Humble, TX Atascocita",
+      "previousSchool": null
+    },
+    {
+      "name": "Arthur Santos",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Cedar Park, TX Vista Ridge",
+      "previousSchool": null
+    },
+    {
+      "name": "Cole Hernandez",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "San Antonio, TX Marshall",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Mendoza",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "College Station, TX A&M Consolidated",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Muirhead",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Stirling, Scotland Bannockburn",
+      "previousSchool": null
+    },
+    {
+      "name": "Manuel Silva",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Los Fresnos, TX Los Fresnos",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Acosta",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Boynton Beach, FL Acellus Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Micaiah Paice",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Fireston, CO Frederick",
+      "previousSchool": null
+    },
+    {
+      "name": "Malikai Fry",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Liverpool, England North Liverpool Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Udedi",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Houston, TX Williams B Travis",
+      "previousSchool": null
+    },
+    {
+      "name": "Lincoln Wilson",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "The Woodlands, TX College Park",
+      "previousSchool": null
+    },
+    {
+      "name": "Atticus Applebee",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Carterville, IL Carterville",
+      "previousSchool": null
+    },
+    {
+      "name": "Hudson Brawner",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Montgomery, TX Montgomery",
+      "previousSchool": null
+    },
+    {
+      "name": "Kayde Gielinck",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Liverpool, England Oxford Cambridge and RSA",
+      "previousSchool": null
+    },
+    {
+      "name": "Curren Maxon",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Satellite Beach, FL Satellite",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordan Franco",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Pflugerville, TX Hendrickson",
+      "previousSchool": null
+    },
+    {
+      "name": "Mason Sorrels",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Beaumont, TX Sorrels Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Arturo Avila Moran",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Conroe, TX Caney Creek",
+      "previousSchool": null
+    },
+    {
+      "name": "Robbie Paredes",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Cypress, TX Cypress Woods",
+      "previousSchool": null
+    },
+    {
+      "name": "Arnau Pla Alfaras",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Barcelona, Spain INS Baix Montseny",
+      "previousSchool": null
+    },
+    {
+      "name": "Benji Minkette",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Mbao, Senegal Hoosac School",
+      "previousSchool": null
+    },
+    {
+      "name": "Nelson Andrade",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Rio de Janeiro, Brazil Colegio Marilia Mattoso",
+      "previousSchool": null
+    },
+    {
+      "name": "Giovanni Perez",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Navasota, TX Navasota",
+      "previousSchool": null
+    },
+    {
+      "name": "Yiamxel Marino Vega",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Killeen, TX Chaparral",
+      "previousSchool": null
+    },
+    {
+      "name": "Samir Bristol",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Kingstown, Saint Vincent and the Grenadines Troumaca Ontario Secondary",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Smith",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Rosenberg, TX George Ranch",
+      "previousSchool": null
+    }
+  ]
+}

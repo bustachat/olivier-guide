@@ -1,4 +1,9 @@
 {
+  "blinn_college": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/blinn_college/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
   "chapman": {
     "latestFetchedAt": "2026-09-14",
     "latestFile": "data/rosters/chapman/2026-09-14.json",
@@ -19,6 +24,16 @@
     "latestFile": "data/rosters/csula/2026-09-14.json",
     "rosterSeason": "2026-27"
   },
+  "hill_college": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/hill_college/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
+  "jacksonville_college": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/jacksonville_college/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
   "national_park": {
     "latestFetchedAt": "2026-09-15",
     "latestFile": "data/rosters/national_park/2026-09-15.json",
@@ -34,9 +49,19 @@
     "latestFile": "data/rosters/nova/2026-09-14.json",
     "rosterSeason": "2026-27"
   },
+  "ranger_college": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/ranger_college/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
   "rose_state": {
     "latestFetchedAt": "2026-09-15",
     "latestFile": "data/rosters/rose_state/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
+  "texas_southmost": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/texas_southmost/2026-09-15.json",
     "rosterSeason": "2026-27"
   },
   "tyler_jc": {

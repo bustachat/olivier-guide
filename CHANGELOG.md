@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.39 (2026-09-15) — Region 5/14 Texas (Blinn, Hill, Jacksonville, Texas Southmost, Ranger) to 2026-27
+
+Roster refresh campaign Batch 7, Sub-batch C: NJCAA Regions 5/14, Texas (Change Type 3). All five schools publish a complete 2026-27 roster on their own athletics site. Each was read there first in Claude-in-Chrome on 2026-09-15 with the VPN off, then cross-checked against the team's NJCAA stats-site roster with the VPN on. Each was refreshed with the JUCO formula (sophomores clear, freshmen return) and its full roster archived. `recruit_risk` follows the Batch 7 rule (returning MF ≥7 High, 3–6 Medium, 0–2 Low). Pathway labels were carried over and both notes rewritten in plain language. Blinn was read on its own site first (§15), even though NJCAA had shown its 2026-27 roster the day before. Jacksonville's large MF group reflects the program's many OM/AM and CB/CDM listings (hybrid D/M counts as MF per §15).
+
+| School | Squad | MF (clear / return) | Trajectory Yr1/Yr2 | Fit | NJCAA cross-check |
+|---|---|---|---|---|---|
+| `blinn_college` | 36 | 11 (3 / 8) | 50/63 (was 67/80) | 63 → **57** | GP 7: EXACT MATCH: all 36 players, positions and classes identical (11 MF: 3 So, 8 Fr). |
+| `hill_college` | 28 | 9 (7 / 2) | 61/74 (was 63/76) | 61 → **60** | GP 7: MATCH: same 28 players and 9 CM; NJCAA leaves DeShaun Johnson and Eddie Zapata positions blank and has one duplicate row (Marco Gonzalez). School site wins. |
+| `jacksonville_college` | 29 | 15 (2 / 13) | 45/58 (was 71/84) | 61 → **52** | GP not shown: MATCH: same 29 players; same MF count (15) with small position differences (NJCAA: Levi Hilling CB vs school CB/CDM; Juan Valerio LB/OM vs school LB). School site wins. |
+| `texas_southmost` | 27 | 10 (3 / 7) | 51/64 (was 62/75) | 60 → **56** | GP 4: MATCH: same 27 players; one difference - NJCAA lists Jose (Anastacio) Garcia as M (school: Forward), so NJCAA shows 11 MF vs school 10. School site wins. |
+| `ranger_college` | 28 | 10 (4 / 6) | 53/66 (was 63/76) | 59 → **55** | GP 4: EXACT MATCH: all 28 players, positions and classes identical (10 MF: 4 So, 6 Fr). |
+
+**Coach spot-check (all five official pages visited):** `mcbride_blinn` Michael McBride (Head Men's Soccer Coach), `coach_hill_college` Ivan Franco (Head Coach) and `coach_texas_southmost` Mario Zamora (Men's Soccer Head Coach) confirmed on their own bio pages. `coach_jacksonville_college` Thomas Wait (Head Soccer Coach) was confirmed via the athletics staff directory, because the stored bio link renders blank. `coach_ranger_college` Ross Anderson (Head Men's and Women's Soccer Coach) confirmed on the coaches index. No coach edits.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, every stored fit survives the on-load recalculation, the Minutes Outlook cards show ✓ 2026-27, nothing renders `undefined`/`NaN`, and `getCoach()` returns the expected titles.
+
+**Files:** `data/juco.json`, `data/rosters/` (snapshots + manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
+
 ### v45.38 (2026-09-15) — Roster refresh Batch 7B: Region 2 (Rose State, NEO A&M, National Park, Connors State) to 2026-27
 
 Roster refresh campaign Batch 7, Sub-batch B: NJCAA Region 2, Oklahoma/Arkansas (Change Type 3). All four schools publish a complete 2026-27 roster on their own athletics site. Each was read there first in Claude-in-Chrome on 2026-09-15 with the VPN off, then cross-checked against the team's NJCAA stats-site roster with the VPN on (CLAUDE.md §15). Each was refreshed with `refresh_school.py` using the JUCO formula (§14): on a 2026-27 roster, sophomores clear and freshmen return. The full roster was archived to `data/rosters/`.

@@ -1,0 +1,200 @@
+{
+  "schoolId": "texas_southmost",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-15",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://tscscorpions.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 27,
+  "players": [
+    {
+      "name": "Alan Garcia",
+      "position": "GK",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Filiberto Rodriguez",
+      "position": "D",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Esteban Juarez",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Ordonez",
+      "position": "D",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Castro",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Shelbie Razo",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Garcia",
+      "position": "MF",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Omar Garcia",
+      "position": "MF",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Bradley Cervantes Campas",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "William Arciniega",
+      "position": "MF",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Thom Torres",
+      "position": "D",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Jeremiah Tome",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Abraham Segovia",
+      "position": "F",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Nereo Nunez",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Escobedo",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Gerardo Martinez",
+      "position": "D",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Hugo Villafranca",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Carbajal",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Cristian Preciado",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Alec Gonzales",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Jesus Torres",
+      "position": "F",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Eddy Garcia",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Emanuel Ramirez",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Andy Leal",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Anastacio Garcia",
+      "position": "F",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Luca Alvarez",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Dante Buentello",
+      "position": "GK",
+      "class": "So.",
+      "hometown": null,
+      "previousSchool": null
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schoolId": "nassau_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-15",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://nassaulions.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 22,
+  "players": [
+    {
+      "name": "Adryan Campos",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Mineola, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick Delgado",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Long Island City",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Cabrera",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Copiague",
+      "previousSchool": null
+    },
+    {
+      "name": "Ismael Garcia",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Copiague",
+      "previousSchool": null
+    },
+    {
+      "name": "Raymond Zavala",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Uniondale",
+      "previousSchool": null
+    },
+    {
+      "name": "Alexis Gomez",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Corona, Queens",
+      "previousSchool": null
+    },
+    {
+      "name": "Mohamed Alsayedi",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Roslyn, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Andy Londono Cardona",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Queens, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Medina",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Benjamin Perez",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Lawrence",
+      "previousSchool": null
+    },
+    {
+      "name": "Josias Saravia",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Long Beach, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Martinez",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Uniondale",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristhian Ramos Monsalve",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Jackson Heights",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Canelas",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Farmingdale, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Ray Guaman",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Valley Stream",
+      "previousSchool": null
+    },
+    {
+      "name": "Andy Gonzalez",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Roosevelt",
+      "previousSchool": null
+    },
+    {
+      "name": "Josua Banegas",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Queens, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Braeden Konop",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Long Beach, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Makhai Noel",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Elmont, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Edgar Velazquez",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Uniondale",
+      "previousSchool": null
+    },
+    {
+      "name": "Herley Jean",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Hempstead",
+      "previousSchool": null
+    },
+    {
+      "name": "Julio Cuaresma-Arcina",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Nicaragua",
+      "previousSchool": null
+    }
+  ]
+}

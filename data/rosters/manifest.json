@@ -44,6 +44,11 @@
     "latestFile": "data/rosters/garden_city_cc/2026-09-15.json",
     "rosterSeason": "2026-27"
   },
+  "hagerstown_cc": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/hagerstown_cc/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
   "hill_college": {
     "latestFetchedAt": "2026-09-15",
     "latestFile": "data/rosters/hill_college/2026-09-15.json",
@@ -52,6 +57,16 @@
   "jacksonville_college": {
     "latestFetchedAt": "2026-09-15",
     "latestFile": "data/rosters/jacksonville_college/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
+  "montgomery_college": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/montgomery_college/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
+  "nassau_cc": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/nassau_cc/2026-09-15.json",
     "rosterSeason": "2026-27"
   },
   "national_park": {
@@ -122,6 +137,16 @@
   "tyler_jc": {
     "latestFetchedAt": "2026-09-14",
     "latestFile": "data/rosters/tyler_jc/2026-09-14.json",
+    "rosterSeason": "2026-27"
+  },
+  "ulster_cc": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/ulster_cc/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
+  "usc_union": {
+    "latestFetchedAt": "2026-09-15",
+    "latestFile": "data/rosters/usc_union/2026-09-15.json",
     "rosterSeason": "2026-27"
   }
 }

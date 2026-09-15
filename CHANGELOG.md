@@ -6,6 +6,35 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.44 (2026-09-15) — East (Nassau, Montgomery, Hagerstown, USC Union, Ulster) to 2026-27; Monroe and Harcum unchanged
+
+Roster refresh campaign Batch 7, Sub-batch H: NJCAA Regions 10/15/19/20, East (Change Type 3). School sites were read first in Claude-in-Chrome on 2026-09-15 (VPN off), and NJCAA afterwards (VPN on).
+
+- **`nassau_cc` — refreshed from its own site, validated by NJCAA.** The school page lists 22 players with one goalkeeper, which failed the §15 GK test on its own. NJCAA (GP 3) shows the same squad plus a second GK (Victord Lozano) missing from the school page, so the squad is effectively complete. Two position differences are disclosed; the cleared count is 4 either way.
+- **`montgomery_college` and `usc_union` — refreshed from their own sites** and matched on NJCAA. Montgomery's two-way players (D/M, M/F) count as MF per §15. USC Union labels central mids "C", confirmed as its convention in the 2025-26 research. Chris Caro's position cell reads "26", a data error, and is archived as OTHER.
+- **`hagerstown_cc` — refreshed from MERGED sources.** Its own 2026-27 page publishes class years (S/F) but no positions. NJCAA (GP 6) publishes positions but no class years, for the same 24 names. Positions came from NJCAA and classes from the school site. All 6 CM have both fields, so nothing was guessed. Disclosed in the note.
+- **`ulster_cc` — refreshed from NJCAA fallback.** `athletics.sunyulster.edu` returned a CloudFront 403 with the VPN off and rendered a completely blank page with the VPN on. NJCAA (GP 4) has a complete roster: 29 players, 3 GK, positions and classes. Disclosed in the note; `source_url` is the NJCAA page.
+- **`monroe_college` — NOT refreshed (owner ruling 2026-09-15: leave for now).** Its 2026 roster is a 59-player four-year roster (Jr/Sr/5th, four-year transfers), consistent with the NCAA D2 transition (§6F). The JUCO bucket rule cannot apply.
+- **`harcum_college` — NOT refreshed.** The school page lists 17 players with 1 GK (fails the GK test), and NJCAA says "No roster available." Nothing to validate against, so stored 2025-26 data kept.
+
+| School | Squad | MF (clear / return) | Trajectory Yr1/Yr2 | Fit | NJCAA cross-check |
+|---|---|---|---|---|---|
+| `nassau_cc` | 22 | 10 (4 / 6) | 53/66 (was 61/74) | 42 → **39** | GP 3: VALIDATES SQUAD: NJCAA lists the same players plus a second GK (Victord Lozano) missing from the school page, so the 1-GK warning is resolved; same classes; same MF count (10) - NJCAA lists Adryan Campos as M (school: D) and Mohamed Alsayedi as F (school: MF/F); cleared count is 4 either way. School site wins; differences disclosed. |
+| `montgomery_college` | 28 | 16 (7 / 9) | 55/68 (was 66/79) | 47 → **43** | GP 5: MATCH: same 28 players; NJCAA leaves 4 positions blank (Vides Austin, Escobar, Miyahara, Doffoh) and lists Tuimebek M/D; all non-blank positions agree. School site wins. |
+| `hagerstown_cc` | 24 | 6 (2 / 4) | 52/65 (was 62/75) | 40 → **36** | GP 6: FALLBACK USED (MERGED): school site 2026-27 has class (S/F) but no positions; NJCAA 2026-27 has positions but no classes; names identical (24 players; one NJCAA duplicate spelling). Positions from NJCAA + classes from school site. All 6 CM have both fields. |
+| `usc_union` | 31 | 6 (2 / 4) | 52/65 (was 62/75) | 55 → **51** | GP 7: MATCH: same 31 players (NJCAA also uses 'C' for central mids: 6 C), Chris Caro position blank on both; 2 duplicate/typo rows. School site wins. |
+| `ulster_cc` | 29 | 10 (5 / 5) | 55/68 (was 62/75) | 34 → **32** | GP 4: FALLBACK USED: school site 403 (VPN off) and renders a blank page (VPN on); NJCAA 2026-27 roster complete (29 players, 3 GK, positions and classes) -> source for refresh. |
+
+**Coach spot-check:**
+- `coach_montgomery_college` Pedro Braz, `coach_hagerstown_cc` Joe Mills, `coach_usc_union` Marc Curlee, `dibernardo_monroe` Marcus DiBernardo and `coach_harcum_college` David Hughes are confirmed and match.
+- **`fisher_nassau`: title corrected "Head Men's Soccer Coach" → "Head Coach"** per the official bio, with bio wording aligned.
+- `lissimmons_ulster`: **not verifiable**, because the athletics site will not render. Unchanged.
+- No `overallScore` change. `check_coach_bio.py` PASS.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, every stored fit survives the on-load recalculation, the Minutes Outlook cards show ✓ 2026-27, nothing renders `undefined`/`NaN`, and `getCoach()` returns the expected titles.
+
+**Files:** `data/juco.json`, `data/rosters/` (snapshots + manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`, `data/coaches.json`.
+
 ### v45.43 (2026-09-15) — Region 9/18 West (Otero, Northwest, Salt Lake CC, North Idaho) to 2026-27; Trinidad State and Pacific NW Christian unchanged
 
 Roster refresh campaign Batch 7, Sub-batch G: NJCAA Regions 9/18, West (Change Type 3). Read first on each school's own site in Claude-in-Chrome on 2026-09-15 (VPN off), cross-checked on NJCAA (VPN on).

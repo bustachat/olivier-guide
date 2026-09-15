@@ -1,0 +1,228 @@
+{
+  "schoolId": "usc_union",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-15",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.uscunionathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 31,
+  "players": [
+    {
+      "name": "Nathan Kelly",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Woodruff, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Salim Janna",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Cartagena, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Caicedo",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Manizales, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Lane",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Milton Keynes, UK",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Ardila",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bogata, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Carbonnier",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Lakewood Ranch, FL.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Dzadu",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "LIEGE, Belgium",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Blake",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Leigton Buzzard, UK",
+      "previousSchool": null
+    },
+    {
+      "name": "Valentin Dahlem",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Coburg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Rolando Hernandez",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Bluffton, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Hoyos",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Manizales, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Emilio Werned",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Valdivia, Chile",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Chavira",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bluffton, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Muller",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Muenster, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Edar Chavelas",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bluffton, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Henry Poole",
+      "position": "F",
+      "class": "So.",
+      "hometown": "UK",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Chivinos",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Bluffton, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Jordan",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Union, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Ponce",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Lilburn, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Isael Antonio",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Greer, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Massimo Rossi",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Verona, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Juhani Brown",
+      "position": "F",
+      "class": "So.",
+      "hometown": "St. Cathrin, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Aguiar",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Galdar, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Raisel Morales",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Fountain Inn, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Deiringer",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Konstanz, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Chris Caro",
+      "position": "OTHER",
+      "class": "So.",
+      "hometown": "Fountain Inn, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Siede",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Kaiden Roberts",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Hilton Head, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Valerio Cuseina",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Messina, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Pau Manso",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Canubrils, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Khairi Richardson",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Mt. Pleasant, SC",
+      "previousSchool": null
+    }
+  ]
+}

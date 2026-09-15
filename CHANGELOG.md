@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.46 (2026-09-15) — Transfer tracking follow-up: North Idaho pro-pipeline text; Magnason conflict resolved; Harcum moves
+
+**`north_idaho_college` (Change Type 7, text-only):** Federico Bellisi's move to NCAA Division I College of Charleston is now confirmed Tier-1. North Idaho's 2025-26 roster lists him as #14, Bologna / Liceo A Sabin. Charleston's 2026 roster lists him as MF, So., Bologna, with last school "Liceo A Sabin (North Idaho College)". Following the LSU Eunice precedent for a single confirmed transfer (§5b), he is named in `proPlayers.notable[]` and `draftRank`, and `nextLevel.note` was rewritten. `nextLevel.perYear` stays `null` (the neutral value), so **no score moved** (fit 47, lens scores unchanged). The old `draftRank` also carried internal wording ("within this session's research"), a rendered-field jargon leak (§8); it has been replaced.
+
+**Magnason "conflict" — NOT an error, no change.** Clemson's stored `proPlayers.notable` and `pipeline.json` both say Lukas Magnason was a 2026 R1 #13 pick by Real Salt Lake, while Clemson's 2026-27 roster lists him as a junior. Real Salt Lake's own release (Dec 18, 2025) confirms the pick. Clemson's own 2026-27 player bio lists him as Jr. center back and states "Drafted 13th overall in the 2026 MLS SuperDraft to the Real Salt Lake", so he was drafted and returned to college. The stored pick count stays correct. He is a defender, so Clemson's Minutes Outlook is unaffected. RSL's roster page did not fully render and Clemson's 2026 stats URL returned 404, so current match participation was not independently confirmed.
+
+**Harcum moves (duplicate-name scan signals) — likely, one step short of confirmation, no data change.**
+- Shoma Komata is on Barton's 2026-27 roster (#32, MF, So., Tokyo, Japan / Shutoku) and absent from Barton's 2025-26 roster.
+- Zian Hamou-Maamar is on Garden City's 2026-27 roster (So., Versailles, France) and absent from Garden City's 2025-26 roster.
+- Both appear as freshmen in Harcum's stored 2025-26 data, which fits JUCO-to-JUCO moves out of Harcum.
+- Not confirmed: Harcum's own site now shows only 2026-27, NJCAA's 2025-26 pages returned a CloudFront 403 (VPN off), and the old NJCAA stats host is disabled. A search snippet matching both hometowns was not stored (Rule 0).
+- JUCO-to-JUCO moves do not count as next-level output, so there is no scoring relevance.
+
+**Found and flagged, not fixed:** 40 rendered fields across `juco.json`, `d2.json`, `conferences.json` and `aac.json` still contain "this session" wording (draftRank, confRecord notes, rec, acuAlignNote, trajectoryNote and others). This is the same jargon-leak class as v44.89/v45.14. `check_no_jargon.py` does not catch it: it scans only two fields and has no pattern for this phrase. Logged in §6.
+
+**Verified:** qa-suite `Issues: 0`. Local browser: North Idaho's Pro Pipeline heading renders the new text with no `undefined`/`NaN`, and fit stays 47.
+
+**Files:** `data/juco.json`, `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
+
 ### v45.45 (2026-09-15) — Region 24 Illinois: Lincoln Trail to 2026-27; Southwestern Illinois unchanged
 
 Roster refresh campaign Batch 7, Sub-batch I (final): NJCAA Region 24, Illinois (Change Type 3). School sites were read first on 2026-09-15 (VPN off), and NJCAA afterwards (VPN on).

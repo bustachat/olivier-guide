@@ -19205,13 +19205,16 @@
     "titles": [],
     "proPlayers": {
       "mlsPicks5yr": 0,
-      "notable": [],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed within this session's research.",
+      "notable": [
+        "Federico Bellisi transferred to NCAA Division I College of Charleston for the 2026 season — confirmed on Charleston's own official roster, which lists North Idaho College as his last school.",
+        "No MLS SuperDraft picks confirmed in the last 5 years — the program's value is the transfer pathway, not a pro pipeline"
+      ],
+      "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline (confirmed 2026 D1 transfer: College of Charleston)",
       "nextLevel": {
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": "https://nicathletics.com/sports/msoc/index",
-        "note": "North Idaho College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "note": "North Idaho College doesn't publish a page tracking where its players transfer to next. One confirmed Division I transfer was found: Federico Bellisi, who moved to College of Charleston for 2026. One transfer isn't enough to calculate a reliable year-by-year rate."
       }
     },
     "devScores": {

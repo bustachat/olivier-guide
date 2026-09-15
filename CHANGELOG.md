@@ -18,6 +18,7 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 - Both appear as freshmen in Harcum's stored 2025-26 data, which fits JUCO-to-JUCO moves out of Harcum.
 - Not confirmed: Harcum's own site now shows only 2026-27, NJCAA's 2025-26 pages returned a CloudFront 403 (VPN off), and the old NJCAA stats host is disabled. A search snippet matching both hometowns was not stored (Rule 0).
 - JUCO-to-JUCO moves do not count as next-level output, so there is no scoring relevance.
+- **Update 2026-09-16, CONFIRMED (VPN on):** Harford CC's official 9/20/2025 box score vs Harcum lists Harcum #11 Zian Hamou-Maamar (C) and #5 Shoma Komata (C), next to Harcum's Akihiro Fujikawa and Titouan Blot. Both moves are confirmed. NJCAA's platform does not serve Harcum's 2025-26 season (it shows the "Historical team directory"), so the opponent box score was the Tier-1 route.
 
 **Found and flagged, not fixed:** 40 rendered fields across `juco.json`, `d2.json`, `conferences.json` and `aac.json` still contain "this session" wording (draftRank, confRecord notes, rec, acuAlignNote, trajectoryNote and others). This is the same jargon-leak class as v44.89/v45.14. `check_no_jargon.py` does not catch it: it scans only two fields and has no pattern for this phrase. Logged in §6.
 

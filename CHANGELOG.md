@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.40 (2026-09-15) — Region 1/8 + CCCAA (Eastern Florida State, Phoenix, Santa Monica) to 2026-27
+
+Roster refresh campaign Batch 7, Sub-batch D: NJCAA Region 8 (EFSC), NJCAA DII Region 1 (Phoenix), and CCCAA (Santa Monica) (Change Type 3). All three now publish a complete 2026-27 roster on their own athletics site, read in Claude-in-Chrome on 2026-09-15. **Both August problems have resolved on the school sites themselves:** EFSC's 2026-27 page now publishes positions for every player (blank in August), and Phoenix's 2026-27 page is now populated (empty in August). So neither needed the NJCAA fallback. Each was refreshed with the JUCO formula and its full roster archived. The Batch 7 `recruit_risk` rule was applied, pathway labels carried over, and notes rewritten in plain language.
+
+| School | Squad | MF (clear / return) | Trajectory Yr1/Yr2 | Fit | NJCAA cross-check |
+|---|---|---|---|---|---|
+| `efsc` | 32 | 8 (1 / 7) | 48/61 (was 62/75) | 65 → **60** | GP 6: NEAR MATCH: NJCAA lists all 32 school-site players PLUS Diego Sanders (MID, SO) not on the school roster. School site wins (same season); Sanders disclosed, re-check later. |
+| `phoenix_college` | 32 | 12 (2 / 10) | 47/60 (was 61/74) | 62 → **57** | GP 4: MATCH with differences: NJCAA has 30 of the 32 school-site men's players (missing Fredy Alvarez F and Riley Andersen M) and erroneously includes one women's-team player; all shared positions/classes agree. School site wins. |
+| `smc` | 26 | 10 (4 / 6) | 53/66 (was 63/76) | 55 → **51** | n/a: NOT APPLICABLE: Santa Monica competes in the CCCAA, not NJCAA, so no NJCAA roster exists to cross-check. |
+
+**Coach spot-check (all three official pages visited):** `sasnett_efsc` Bart Sasnett (Head Coach) and `pierce_smc` Tim Pierce (Men's Soccer Head Coach) are confirmed and match. **`cameron_phoenix`: title corrected "Head Men's Soccer Coach" → "Head Coach"** per his official bio, which reads "Title: Head Coach" and says he is entering his 21st season. No `overallScore` change, so no re-rank. `check_coach_bio.py` PASS.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, every stored fit survives the on-load recalculation, the Minutes Outlook cards show ✓ 2026-27, nothing renders `undefined`/`NaN`, and `getCoach()` returns the expected titles.
+
+**Files:** `data/juco.json`, `data/rosters/` (snapshots + manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`, `data/coaches.json`.
+
 ### v45.39 (2026-09-15) — Region 5/14 Texas (Blinn, Hill, Jacksonville, Texas Southmost, Ranger) to 2026-27
 
 Roster refresh campaign Batch 7, Sub-batch C: NJCAA Regions 5/14, Texas (Change Type 3). All five schools publish a complete 2026-27 roster on their own athletics site. Each was read there first in Claude-in-Chrome on 2026-09-15 with the VPN off, then cross-checked against the team's NJCAA stats-site roster with the VPN on. Each was refreshed with the JUCO formula (sophomores clear, freshmen return) and its full roster archived. `recruit_risk` follows the Batch 7 rule (returning MF ≥7 High, 3–6 Medium, 0–2 Low). Pathway labels were carried over and both notes rewritten in plain language. Blinn was read on its own site first (§15), even though NJCAA had shown its 2026-27 roster the day before. Jacksonville's large MF group reflects the program's many OM/AM and CB/CDM listings (hybrid D/M counts as MF per §15).

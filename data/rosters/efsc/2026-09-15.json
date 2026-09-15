@@ -1,0 +1,235 @@
+{
+  "schoolId": "efsc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-15",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.efsctitans.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 32,
+  "players": [
+    {
+      "name": "Simone Renna",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Cagliari, Italy",
+      "previousSchool": "Universita di Cagliari"
+    },
+    {
+      "name": "Chandler Draper",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Melbourne, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Blease",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Manchester, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo Polydoro",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Curitiba, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuele Gaglione",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Rome, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Aran Fitzpatrick",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Maryport, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Maxim Root",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Hildesheim, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Tau Lamsee",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Arima, Trinidad and Tobago",
+      "previousSchool": null
+    },
+    {
+      "name": "Diogo Dall Igna",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Criciuma, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Matheus Gazineu",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Salvador, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeremy Obah",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Brugg, Switzerland",
+      "previousSchool": "Peninsula College"
+    },
+    {
+      "name": "Henry Crosthwaite",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Alvin Ssekamate",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Kampala, Uganda",
+      "previousSchool": null
+    },
+    {
+      "name": "Ismail Mukalazi",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Kampala, Uganda",
+      "previousSchool": null
+    },
+    {
+      "name": "Rio Narita",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Kamakura, Japan",
+      "previousSchool": "Monroe University"
+    },
+    {
+      "name": "Matteo Candura",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Comabbio, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Rayfield",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Northampton, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Bickel",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "St. Petersburg, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Yuto Inaba",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Ibaraki, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Fidel Gil",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Buenos Aires, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Salazar Duarte",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Monterrey, Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Kotaro Toshikawa",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Osaka, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Kwame Asante",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Palm Bay, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Yusuke Kobayashi",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Yokohama, Kanagawa, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Lemohang Mokoena",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Johannesburg, South Africa",
+      "previousSchool": null
+    },
+    {
+      "name": "Alfredo Adrian Chan",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Orlando, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Yared Gonzalez",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Indiantown, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Gooden",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Palm Bay, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam McAteer",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Melbourne Beach, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Stephen Nicholas",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Palm Bay, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan McAteer",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Melbourne Beach, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Elazar",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Tel Aviv, Israel",
+      "previousSchool": null
+    }
+  ]
+}

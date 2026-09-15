@@ -1,0 +1,242 @@
+{
+  "schoolId": "seward_county_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-15",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://sewardsaints.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 33,
+  "players": [
+    {
+      "name": "Nicolas Fonseca",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Brasília, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Garcia",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Liberal, Kan.",
+      "previousSchool": null
+    },
+    {
+      "name": "Neri Díaz",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Topeka, Kan.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alessandro Gotelli",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Chile",
+      "previousSchool": null
+    },
+    {
+      "name": "Ricardo Acuna",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Itirapina, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Enrique Vasquez",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Jundiaí, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Guilherme Nascimento",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "São Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Melvin Soto",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "San Carlos, Costa Rica",
+      "previousSchool": null
+    },
+    {
+      "name": "Tobias Huggins",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Newport, Wales",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Siqueira",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "São Pedro, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Alvaro Bravo",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Málaga, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Dunn",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Guayaquil, Ecuador",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas Pedreira",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Montevideo, Uruguay",
+      "previousSchool": null
+    },
+    {
+      "name": "Geordie Milo",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Rome, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Hill",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Eastbourne, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Dal Farra",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Criciúma, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Menchon",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Albatera, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Edward Ramirez Rodriguez",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "previousSchool": null
+    },
+    {
+      "name": "David Valor",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Palmira, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Fernando De Gea",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Cehegín, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Leon Morzinek",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bernau, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Alvarado",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Rolla, Kan.",
+      "previousSchool": null
+    },
+    {
+      "name": "Archie Young",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Deal, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Leonardo Tilocca",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Rome, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Jimenez",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Manizales, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Franklin",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Cambridge, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Felipe Molina",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Santa Cruz de la Sierra, Bolivia",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean Murphy",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": null,
+      "previousSchool": null
+    },
+    {
+      "name": "Leonardo Sapelli Barbosa",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Ribeirao Preto, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Echeverri",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Rionegro, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Dornas",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Belo Horizonte, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Carneiro",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Belo Horizonte, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonathan Wallace",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Enid, Okla.",
+      "previousSchool": null
+    }
+  ]
+}

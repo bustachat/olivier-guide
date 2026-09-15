@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.42 (2026-09-15) — Region 6 Kansas (Seward County, Garden City, Dodge City) to 2026-27
+
+Roster refresh campaign Batch 7, Sub-batch F: NJCAA Region 6, Kansas (Change Type 3). Seward County and Garden City both had empty 2026-27 pages on Aug 17; all three now publish complete 2026-27 rosters on their own sites. They were read in Claude-in-Chrome on 2026-09-15 with the VPN off, cross-checked on NJCAA with the VPN on, refreshed with the JUCO formula and archived. **Garden City disclosure:** its roster uses only GK/Defense/Midfield labels, with no forwards. So attackers are counted as midfielders, the 22-MF group overstates the real midfield, and the note says so. NJCAA uses the same labels, so the cross-check cannot separate them either. Batch 7 `recruit_risk` rule applied, pathway labels carried over, notes rewritten in plain language.
+
+| School | Squad | MF (clear / return) | Trajectory Yr1/Yr2 | Fit | NJCAA cross-check |
+|---|---|---|---|---|---|
+| `seward_county_cc` | 33 | 11 (4 / 7) | 52/65 (was 73/86) | 52 → **45** | GP 7: NEAR MATCH: all 33 school-site players with identical positions/classes (11 MF); NJCAA adds Max Passett (no position, class NA) and duplicate encoding rows for Neri Diaz. School site wins. |
+| `garden_city_cc` | 39 | 22 (8 / 14) | 52/65 (was 62/75) | 50 → **47** | GP 6: NEAR MATCH: NJCAA lists all 39 school-site players (same GK/D/M-only labels, no forwards) PLUS Francisco Sigüenza Peralta (M, class blank) not on school roster; 1 duplicate row (Titoaun/Titouan Oger). School site wins; Sigüenza Peralta disclosed. |
+| `dodge_city_cc` | 30 | 7 (1 / 6) | 49/62 (was 59/72) | 48 → **44** | GP 7: EXACT MATCH: all 30 players, positions and classes identical (7 MF: 1 So, 6 Fr). |
+
+**Coach spot-check (all three official pages visited):** `coach_seward_county_cc` Jaime Beltran (Head Men's Soccer Coach) and `coach_garden_city_cc` Oscar Zelaya (Head Coach) are confirmed and match. **`espinal_dodgecity`: title corrected "Head Men's Soccer Coach" → "Head Coach"** per the official coaches page, and the bio wording was aligned. No `overallScore` change, so no re-rank. `check_coach_bio.py` PASS.
+
+**Verified:** arithmetic, JUCO-trajectory, jargon and snapshot checks PASS; qa-suite `Issues: 0`. Local browser: 170 schools loaded, every stored fit survives the on-load recalculation, the Minutes Outlook cards show ✓ 2026-27, nothing renders `undefined`/`NaN`, and `getCoach()` returns the expected titles.
+
+**Files:** `data/juco.json`, `data/rosters/` (snapshots + manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`, `data/coaches.json`.
+
 ### v45.41 (2026-09-15) — Region 4 Chicago: Daley to 2026-27 via NJCAA fallback; Truman, Kennedy-King, Wright unchanged
 
 Roster refresh campaign Batch 7, Sub-batch E: NJCAA Region 4, City Colleges of Chicago (Change Type 3). **School site first, as required (§15):** on 2026-09-15, `region4sports.com/sports/msoc/index` still showed only 2025-26 standings, and both `/2026-27/teams` and `/2026-27/teams/harrystrumancollege` returned 404. No 2026-27 season was set up, which is outcome (c) and makes the NJCAA stats roster eligible as a fallback. `citycollegesofchicagoathletics.com` was not opened (compromised, §6D). NJCAA was then read with the VPN on:

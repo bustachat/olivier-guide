@@ -5,7 +5,8 @@
     "origin_file": "data/acc.json",
     "seen_in_roster_season": "2025-26",
     "absent_as_of_roster_season": "2026-27",
-    "status": "pending"
+    "status": "resolved-external",
+    "note": "verified 2026-09-15: James Madison University 2026 roster (jmusports.com/sports/mens-soccer/roster/daniel-bunk/24253) - Midfielder, 2nd Year, Wuppertal, Germany, 'Previous: Clemson', 'Played for Clemson in freshman year'. JMU confirmed NCAA DI men's soccer (Sun Belt) via NCAA member directory. D1 -> D1 transfer."
   },
   {
     "name": "Kwaku Agyabeng",
@@ -13,7 +14,8 @@
     "origin_file": "data/acc.json",
     "seen_in_roster_season": "2025-26",
     "absent_as_of_roster_season": "2026-27",
-    "status": "pending"
+    "status": "resolved-external",
+    "note": "verified 2026-09-15: turned pro - Sporting Kansas City's own release (sportingkc.com, Dec 19 2025) confirms 4th overall pick, 1st round, 2026 MLS SuperDraft, from Clemson, Generation adidas; on SKC roster (#20, Midfielder, b. Kumasi, Ghana). Relevant to Clemson proPlayers/pipeline mlsDraft - not edited here (mls-pipeline scope)."
   },
   {
     "name": "Cole Poling",
@@ -21,7 +23,8 @@
     "origin_file": "data/d2.json",
     "seen_in_roster_season": "2025-26",
     "absent_as_of_roster_season": "2026-27",
-    "status": "pending"
+    "status": "could-not-confirm",
+    "note": "2026-09-15: appears on Chapman 2024 and 2025 rosters only; absent from the 2026 roster. No transfer tracker, destination roster or news found via search. Destination unknown (may have left the program) - not guessed."
   },
   {
     "name": "Federico Bellisi (Fr-MID)",
@@ -29,7 +32,8 @@
     "origin_file": "data/juco.json",
     "seen_in_roster_season": "2025-26",
     "absent_as_of_roster_season": "2026-27",
-    "status": "pending"
+    "status": "resolved-in-guide",
+    "note": "verified 2026-09-15: NIC 2025-26 roster #14 Federico Bellisi, M, Fr., Bologna, Italy / Liceo A Sabin; College of Charleston (NCAA D1, CAA) 2026 roster #5 Federico Bellisi, MF, So., Bologna, Italy, Last School 'Liceo A Sabin (North Idaho College)'. JUCO -> D1 move."
   },
   {
     "name": "Victor Picard (Fr-MID)",
@@ -37,7 +41,8 @@
     "origin_file": "data/juco.json",
     "seen_in_roster_season": "2025-26",
     "absent_as_of_roster_season": "2026-27",
-    "status": "pending"
+    "status": "could-not-confirm",
+    "note": "2026-09-15: NIC 2025-26 roster #27, M, Fr., Quebec City, Canada / Cardinal Roy; absent from NIC 2026-27 and NJCAA roster. Search found only his NIC bio; no destination roster found. Not guessed."
   },
   {
     "name": "Luis Velasco (Fr-MID)",
@@ -45,6 +50,7 @@
     "origin_file": "data/juco.json",
     "seen_in_roster_season": "2025-26",
     "absent_as_of_roster_season": "2026-27",
-    "status": "pending"
+    "status": "could-not-confirm",
+    "note": "2026-09-15: NIC 2025-26 roster #31, M, Fr., South Weber, UT / Ogden HS (2025 Standard-Examiner All-Area POY). Absent from NIC 2026-27. Only lead (Palm Beach Atlantic 'Luis Velasco') ruled out - a 2017 senior from Madrid, different person. Not guessed."
   }
 ]

@@ -6,6 +6,32 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.54 (2026-09-17) — Correct Monroe's championship history (no 2024 runner-up; titles were 2019, 2022, 2023)
+
+**Owner request:** fix the Monroe 2024 runner-up error flagged in v45.53.
+
+**What the guide said:** 2024 national runner-up (attempted three-peat), and national champions in 2021, 2022 and 2023.
+
+**What Monroe's own site shows (read in Chrome, monroeumustangs.com):**
+- **2024:** 7-5-1. Beat Monroe Community College 4-0 in the NJCAA East District quarterfinal, then lost 3-2 in overtime at Harcum College in the semifinal, so no national tournament. This agrees with njcaa.org's 2024 final (Iowa Western v Cowley).
+- **2023:** national champions, beat Tyler on penalties after a 2-2 final (release, Nov 18, 2023: "second time in as many seasons ... third time in program history").
+- **2022:** national champions, beat Arizona Western 2-0 (release, Nov 19, 2022: "second time in program history ... second national championship in the past four seasons").
+- **2021:** won the Region 3/15 Championship 4-0, then lost 1-0 in overtime in the East District semifinal. Not a national title.
+- **First title:** 2019.
+
+**Changed:**
+- `data/juco.json` `monroe_college`:
+  - `titles`: "(2021, 2022, 2023)" → "(2019, 2022, 2023)".
+  - Removed the 2024 runner-up title.
+  - Replaced "NJCAA's most dominant JUCO men's soccer program nationally" with "Back-to-back NJCAA Division I titles in 2022 and 2023".
+  - `confRecord` 2024 and 2021 rewritten from the schedules; the 2022 and 2023 notes now name the final opponents.
+- `data/coaches.json` Marcus DiBernardo: `record`, `bio` and `strengths` now say 2019, 2022 and 2023 (the bio's "the premier NJCAA D1 program in the US" is now "one of the leading").
+- `data/pipeline.json`: Monroe's MLS row no longer says "(2021-2023), 2024 runner-up".
+
+The "3× national champions" wording elsewhere was correct and is unchanged. No score moved.
+
+**Verified locally:** Monroe's modal shows the corrected standings and titles, with no "undefined"; validators Issues: 0; `validate_schools.py` PASS; `check_no_jargon.py` PASS.
+
 ### v45.53 (2026-09-17) — Elite JUCO badge limited to 2023-2025 national results; NJCAA division strength split using Massey ratings
 
 **Owner rulings (2026-09-17).**

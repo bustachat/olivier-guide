@@ -279,7 +279,7 @@ const LENSES = [
   {key:'climateNeutral', label:'Climate-Neutral', desc:'The Fit Score with climate removed and the remaining weights renormalised — soccer program quality, minutes outlook and city access only. Shows which schools warm weather is carrying, and which it is holding back. Climate still appears on every card and still drives the Lifestyle lens; this view only stops it deciding the order.'},
   {key:'academic',  label:'Academic-First',   desc:'Weights ACU BESS unit alignment (85%) plus a baseline — the more of the 16 ACU units a degree covers, the higher it ranks.'},
   {key:'minutes',   label:'Minutes Outlook',  desc:'2027-entry roster opportunity. Higher = more midfielder slots opening up before Olivier arrives.'},
-  {key:'lifestyle', label:'Lifestyle-First',  desc:'Climate (warm), city access, and cultural match for Sydney-raised Olivier.'},
+  {key:'lifestyle', label:'Lifestyle-First',  desc:'Warm climate and city access, weighted equally (50 points each).'},
   {key:'value',     label:'Value-First',      desc:'Fit score per dollar of cost. Best fit-to-cost ratio.'},
 ];
 // ── Per-lens Fit-tile config (v45.34) ────────────────────────────────
@@ -1740,7 +1740,7 @@ function buildMinutesModalTab(u){
     </div>`;
   }
   const riskColor = mo.recruit_risk==='High'?'var(--amber)':mo.recruit_risk==='Medium'?'var(--sky)':'var(--emerald)';
-  const riskLabel = mo.recruit_risk==='High'?'High Demand':mo.recruit_risk==='Medium'?'Moderate':'Open';
+  const riskLabel = mo.recruit_risk==='High'?'Crowded':mo.recruit_risk==='Medium'?'Moderate':'Open';
   const score = (u.lensScores||{}).minutes || 0;
   const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
   const traj = mo.trajectory || [];
@@ -3879,7 +3879,7 @@ function buildMinutesHtml(cardsOnly){
     const adjScore = calcMinutesScore(u, 'adjusted');
     const scoreColor = score>=70?'var(--emerald)':score>=50?'var(--amber)':'var(--rose)';
     const riskColor = mo.recruit_risk==='High'?'var(--amber)':mo.recruit_risk==='Medium-High'?'var(--amber)':mo.recruit_risk==='Medium'?'var(--sky)':'var(--emerald)';
-    const riskLabel = (mo.recruit_risk==='High'||mo.recruit_risk==='Medium-High')?'High Demand':mo.recruit_risk==='Medium'?'Moderate':'Open';
+    const riskLabel = (mo.recruit_risk==='High'||mo.recruit_risk==='Medium-High')?'Crowded':mo.recruit_risk==='Medium'?'Moderate':'Open';
     const divFactor = MO_DIV_FACTOR[u.div]||1.0;
     const showAdj = moMode==='adjusted' && divFactor!==1.0;
     const isOpen = moExpanded[u.id] !== false;

@@ -186,19 +186,15 @@ def check_pipeline(root, names):
     return hits
 
 
-def check_claude_md(root, tokens):
+def check_claude_md(root, school_id):
+    # Match the table's ID column exactly. A name-token match counted unrelated
+    # table rows (e.g. the Fit Score weights table) and missed real school rows.
     path = os.path.join(root, CLAUDE_MD)
     if not os.path.exists(path):
         return []
-    hits = []
-    for line in open(path, encoding="utf-8").readlines():
-        if not line.strip().startswith("|"):
-            continue
-        for t in tokens:
-            if re.search(r"\b" + re.escape(t) + r"\b", line, re.IGNORECASE):
-                hits.append(line.strip())
-                break
-    return hits
+    cell = "| `" + school_id + "` |"
+    return [line.strip() for line in open(path, encoding="utf-8").readlines()
+            if line.strip().startswith("|") and cell in line]
 
 
 def main():
@@ -255,8 +251,11 @@ def main():
 
     titles = school.get("titles") or []
     mls_picks = ((school.get("proPlayers") or {}).get("mlsPicks5yr")) or 0
-    print(f"\ndata/pipeline.json (school has titles={len(titles)}, mlsPicks5yr={mls_picks}):")
-    if titles or mls_picks:
+    # CLAUDE.md Change Type 1: pipeline.json is needed only for national titles or MLS
+    # picks. Conference titles also live in titles[], and counting them flagged 85 schools.
+    national = [x for x in titles if re.search(r"national champion", str(x), re.IGNORECASE)]
+    print(f"\ndata/pipeline.json (national titles={len(national)}, mlsPicks5yr={mls_picks}):")
+    if national or mls_picks:
         pipeline_hits = check_pipeline(root, names)
         if pipeline_hits:
             for section, matched in pipeline_hits:
@@ -266,10 +265,10 @@ def main():
                   "found in ncaaD1[]/ncaaD2[]/mlsDraft[]")
             ok = False
     else:
-        print("  (skipped — no titles and mlsPicks5yr is 0, so no pipeline.json entry is expected)")
+        print("  (skipped — no national title and mlsPicks5yr is 0, so no pipeline.json entry is expected)")
 
     print(f"\nCLAUDE.md School -> File Reference Table:")
-    md_hits = check_claude_md(root, names)
+    md_hits = check_claude_md(root, args.id)
     if md_hits:
         print(f"  ok    {len(md_hits)} matching table row(s), e.g.:")
         print(f"        {md_hits[0]}")

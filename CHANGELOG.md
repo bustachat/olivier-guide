@@ -6,6 +6,51 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.55 (2026-09-17) — Full-guide consistency audit: stored lens scores, Entry Competition rule, MLS SuperDraft recount, reference data
+
+**Why this release exists.** The owner asked why every fix kept turning up another item to ask about. The cause was that the validators checked only half of the stored derived values, so drift elsewhere was invisible until someone happened to look. This release ran every audit script and a formula check over every stored value first, fixed everything found in one pass, and added validator checks so each class fails automatically from now on.
+
+**Stored lens scores re-stored to their formulas (§7 Phase 1J).** Only `overall` and `value` were ever validated.
+- `soccer`: 108 of 170 wrong (not rendered, but kept correct).
+- `academic`: 54 wrong. Academic-First sorts by it, so rankings were off; e.g. Clemson stored 82 against 42 after its degree-unit correction.
+- `lifestyle`: 34 wrong. These were hand-set values with an unwritten "cultural" adjustment (e.g. FIU 92 instead of 100, Temple 65 instead of 50). Re-stored to warm x 50 + city x 50, and the lens description now says so.
+- New validator check `LENS` (exact match for soccer, academic, minutes and lifestyle).
+
+**Entry Competition (`recruit_risk`) now follows one rule for every school:** midfielders still on the roster in Olivier's first season (`mf_total − cleared_before_2027`): 7+ High, 3–6 Medium, 0–2 Low.
+- 62 schools re-labelled (20 JUCOs, 42 four-year schools); Monroe already matched.
+- The glossary described the opposite meaning ("High Demand = many spots opening"), while the card colours and most data meant "many players returning". The labels now read **Crowded / Moderate / Open**, and the glossary defines them by returning midfielders.
+- St. Edward's trajectory note quoted an old 7-man midfield and "low recruit risk"; rewritten from its 2026-27 roster (9 midfielders, 4 clear).
+- New validator check `RISK`.
+
+**MLS SuperDraft picks recounted from MLS's official draft trackers and selection pages (2022–2026 drafts).** Draft totals matched the official pick counts (79, 83, 87, 90, 90).
+- `proPlayers.mlsPicks5yr` was wrong for 48 schools, e.g. Washington 2 → 15, Clemson 8 → 19, Maryland 4 → 13, Georgetown 4 → 12, UCSB 3 → 1, Delaware 2 → 0, Monroe 2 → 0 (no score effect for JUCOs).
+- The count feeds the soccer quality part of the Fit Score for four-year schools, so **47 Fit Scores moved**. Largest rises: Washington 50→60, Pittsburgh 52→61, UConn 37→46, Duke 39→47, UNC 52→60, Maryland 54→62. Largest falls: Delaware 36→33, William & Mary 39→36, UCSB 59→56, Memphis 63→60. UCLA is now the highest at 76. `lensScores.overall`, `soccer` and `value` re-stored with them.
+- Pro Pipeline MLS table rebuilt: 51 ranked schools, each with picks by draft year (was 17 rows, with Virginia shown as 6+ against a stored 2).
+- New validator check `MLS-TABLE`: every single-school row must match the school record, and every D1/Ivy school with picks needs a row.
+- Named picks checked against the same trackers and corrected where wrong:
+  - Stephen Afrifa (FIU) was the 2023 draft, not 2022.
+  - Travis Smith Jr. (Wake Forest) went in Round 2, not Round 1.
+  - Removed claims that match no draft: Emil Jaaskelainen #7 2024 (Akron), Jack Lynn (a 2022 Notre Dame pick, listed under Akron), Patrick Rakovsky (Akron), Marcel Papp (Vermont), Ousmane Doumbia (Duke), Romain Gai (Syracuse), and "Ben Bender, MLS career post-Duke" (Bender was Maryland).
+  - Replaced with verified picks: Akron 2024 (Shokalook, Henry, Clapier) and 2026 (Dobrijevic, Agunbiade); Vermont 2025 (Wathuta, Murray) and 2026 (Herceg, Kissel); Duke 2026 (Kenan Hot); Syracuse 2026 (Tomas Hut).
+- Louisville's "3 picks in 5 years" now says 5 (school and coach text), and UConn's coach strength says 9.
+- Akron text no longer lists "Cleveland FC (MLS starting 2026)"; Cleveland has no MLS team.
+
+**Other findings fixed:**
+- Pro Pipeline D2 table: UC Charleston WV (2017) and Cal State LA (2021) are national champions but sat under "No D2 title". Moved into the ranked list.
+- Pro Pipeline JUCO section: added the six Elite JUCOs missing from it (Iowa Lakes, Neosho County, Mohave, Casper, Harford, USC Union).
+- Dashboard lens row: Climate-Neutral read a stored score that doesn't exist, so every school ranked 0 for it. It now uses the same accessor as Explore. Scores were also coloured on the pre-v37.1 90/80 scale (every Fit Score red); only Fit-scale lenses use Fit colours now.
+- Coach records for Suffolk, Nassau, Ulster and Westchester still said NJCAA DI; corrected to DIII.
+- CLAUDE.md School → File table was missing 5 schools (Yavapai, Western Nebraska, Lamar, Trinidad State, Northeastern JC).
+- `check_new_school_coverage.py`: the pipeline rule now requires a national title or MLS picks (it counted conference titles and flagged 85 schools), and the CLAUDE.md check matches the ID column exactly.
+
+**Audit results left as they are, with reasons:**
+- `check_coach_bio.py` flags 10 bio emails. All 10 are assistant or program contacts written into the bio on purpose, not stale head-coach emails.
+- Duplicate-name signals (Komata, Hamou-Maamar) are the confirmed Harcum moves.
+- Monroe's placeholder name in `rising_junior_2027_names` belongs to its parked roster.
+- 138 schools have no roster snapshot yet, which is expected by design.
+
+**Verified:** `validate_consistency.js` Issues: 0; `validate_schools.py` PASS; negtest 13/13 proven; `check_no_jargon.py`, `check_juco_trajectory.py` and `check_coach_ranking.py` PASS. Locally: 170 schools load; Washington, Clemson, Delaware and UConn show the new values; the Dashboard lens row fills all six lenses; the Pro Pipeline tab shows 51 ranked MLS rows and the D2 champions, with no undefined/NaN; Minutes Outlook shows Crowded/Moderate/Open; no console errors.
+
 ### v45.54 (2026-09-17) — Correct Monroe's championship history (no 2024 runner-up; titles were 2019, 2022, 2023)
 
 **Owner request:** fix the Monroe 2024 runner-up error flagged in v45.53.

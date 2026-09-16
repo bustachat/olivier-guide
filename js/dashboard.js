@@ -475,6 +475,13 @@ function updateShortlist() {
 }
 
 // ─── 3. Lens row ──────────────────────────────────────────────────────────────
+// Same accessor as Explore (lensValue in app.js): Climate-Neutral is computed live and has
+// no stored lensScores key, so reading lensScores directly ranked every school at 0 for it.
+function dashLensScore(u, key) {
+  if (typeof lensValue === 'function') return lensValue(u, key);
+  return u.lensScores?.[key] || 0;
+}
+
 function updateLensRow() {
   const el = document.getElementById('dash-lens-row');
   if (!el || typeof LENSES === 'undefined') return;
@@ -482,7 +489,7 @@ function updateLensRow() {
   el.innerHTML = LENSES.map(L => {
     const sorted = [...unis]
       .filter(u => u.profileDepth === 'full')
-      .sort((a,b) => ((b.lensScores?.[L.key]||0) - (a.lensScores?.[L.key]||0)));
+      .sort((a,b) => (dashLensScore(b, L.key) - dashLensScore(a, L.key)));
     const top = sorted[0];
     if (!top) return '';
 
@@ -490,8 +497,11 @@ function updateLensRow() {
     const overBudget = (top.fin?.costNum ?? 0) > dashBudget;
     const ineligible = dashGpa < gpaMin;
     const blocked    = overBudget || ineligible;
-    const score      = top.lensScores?.[L.key] || top.fitOlivier || 0;
-    const scoreColor = score >= 90 ? 'var(--emerald)' : score >= 80 ? 'var(--amber)' : 'var(--rose)';
+    const score      = dashLensScore(top, L.key);
+    // Only Fit-scale lenses have colour bands (same rule as the Explore tile, LENS_TILE.fitScale);
+    // the old 90/80 cut predated v37.1 and turned every Fit Score red.
+    const fitScale   = typeof LENS_TILE !== 'undefined' && LENS_TILE[L.key]?.fitScale;
+    const scoreColor = fitScale ? fitColor(score) : 'var(--navy)';
     const altText    = ineligible ? 'GPA too low' : overBudget ? 'Over budget' : '';
 
     return `<div class="dash-lc${blocked?' blocked':''}">

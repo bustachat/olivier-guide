@@ -68,5 +68,26 @@
     "find": "III: 0.42",
     "replace": "III: 2.0",
     "expect": "FIT"
+  },
+  {
+    "name": "LENS / stored lifestyle score drifts from its formula",
+    "file": "data/acc.json",
+    "find": "\"lifestyle\": 100",
+    "replace": "\"lifestyle\": 99",
+    "expect": "LENS"
+  },
+  {
+    "name": "RISK / Entry Competition label breaks the returning-midfielder rule",
+    "file": "data/acc.json",
+    "find": "\"recruit_risk\": \"High\"",
+    "replace": "\"recruit_risk\": \"Low\"",
+    "expect": "RISK"
+  },
+  {
+    "name": "MLS-TABLE / Pro Pipeline table count disagrees with the school record",
+    "file": "data/pipeline.json",
+    "find": "\"picks5yr\": 19",
+    "replace": "\"picks5yr\": 8",
+    "expect": "MLS-TABLE"
   }
 ]

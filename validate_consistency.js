@@ -435,6 +435,68 @@ if (valueMismatches.length) {
   valueMismatches.forEach(m => note('VALUE', '  ' + m));
 }
 
+// ── LENS (added v45.55): the other stored lens scores are derived too ──
+// Until v45.55 only overall (via FIT) and value were checked. The rest drifted
+// unseen: 108 soccer, 54 academic and 34 lifestyle values no longer matched their
+// §7 Phase 1J formulas (Clemson's academic score read 82 against 42 after its
+// acuAlign was corrected). Academic and lifestyle drive two Explore lenses, so the
+// drift reordered real rankings. Exact match, since each formula is an integer.
+const lensMismatches = [];
+schools.filter(s => s.profileDepth === 'full' && s.lensScores).forEach(s => {
+  const want = {
+    soccer: Math.round(SCORES.soccerQualityScore(s) * 100),
+    academic: Math.round(((s.acuAlign / 16) * 0.85 + 0.15) * 100),
+    minutes: Math.round(SCORES.minutesOutlookScore(s) * 100),
+    lifestyle: (s.warm ? 50 : 0) + (s.city ? 50 : 0),
+  };
+  Object.entries(want).forEach(([k, v]) => {
+    if (s.lensScores[k] !== v) lensMismatches.push(`${s.id} (${s._file}): lensScores.${k} stored ${s.lensScores[k]}, formula ${v}`);
+  });
+});
+if (lensMismatches.length) {
+  note('LENS', `${lensMismatches.length} stored lens scores differ from their §7 Phase 1J formulas — re-store them:`);
+  lensMismatches.forEach(m => note('LENS', '  ' + m));
+}
+
+// ── MLS-TABLE (added v45.55): Pro Pipeline MLS table agrees with the school records ──
+// The table's picks column and each school's proPlayers.mlsPicks5yr (which feeds the
+// Fit Score) are two copies of one fact. Before v45.55 they disagreed (Virginia 6+
+// vs 2) and 34 schools with picks were missing from the table. Every single-school
+// row with a numeric count must match, and every D1/Ivy school with picks needs a row.
+const TABLE_ALIAS = { 'Virginia': 'virginia', "St John's": 'stjohns' };
+const byName = {};
+schools.forEach(s => { byName[s.name] = s; });
+const draftRows = (load('data/pipeline.json').mlsDraft || []).filter(r => r.school && !r.school.includes(' / '));
+const inTable = new Set();
+draftRows.forEach(r => {
+  const s = TABLE_ALIAS[r.school] ? schools.find(x => x.id === TABLE_ALIAS[r.school]) : byName[r.school];
+  if (!s) return;
+  inTable.add(s.id);
+  const stored = (s.proPlayers || {}).mlsPicks5yr;
+  if (typeof r.picks5yr === 'number' && r.picks5yr !== stored) note('MLS-TABLE', `${s.id}: pipeline.json mlsDraft shows ${r.picks5yr} picks, school record stores ${stored}`);
+  if (typeof r.picks5yr !== 'number' && stored > 0) note('MLS-TABLE', `${s.id}: pipeline.json mlsDraft shows '${r.picks5yr}', school record stores ${stored} — use the number`);
+});
+schools.filter(s => (s.div === 'D1' || s.div === 'IVY') && ((s.proPlayers || {}).mlsPicks5yr || 0) > 0 && !inTable.has(s.id))
+  .forEach(s => note('MLS-TABLE', `${s.id} has ${s.proPlayers.mlsPicks5yr} MLS picks but no row in pipeline.json mlsDraft`));
+
+// ── RISK (added v45.55): Entry Competition label follows one written rule ──
+// recruit_risk renders as Crowded / Moderate / Open. It counts the midfielders still
+// on the roster in the recruit's first season (mf_total − cleared_before_2027):
+// 7+ High, 3–6 Medium, 0–2 Low. Before v45.55 half the values were hand-set judgments
+// and the glossary described the opposite meaning.
+const riskMismatches = [];
+schools.forEach(s => {
+  const mo = s.minutesOutlook;
+  if (!mo || !mo.available || typeof mo.mf_total !== 'number') return;
+  const ret = mo.mf_total - (mo.cleared_before_2027 || 0);
+  const want = ret >= 7 ? 'High' : ret >= 3 ? 'Medium' : 'Low';
+  if (mo.recruit_risk !== want) riskMismatches.push(`${s.id} (${s._file}): recruit_risk '${mo.recruit_risk}', rule gives '${want}' (${ret} returning)`);
+});
+if (riskMismatches.length) {
+  note('RISK', `${riskMismatches.length} schools whose recruit_risk does not follow the returning-midfielder rule:`);
+  riskMismatches.forEach(m => note('RISK', '  ' + m));
+}
+
 // Shared by COSTSTR and PROSE. A rule about what the CODE does must not be
 // tripped by the comment that explains the rule — the clean baseline fired on
 // this check's own explanatory comment until it was stripped (negative-tested).

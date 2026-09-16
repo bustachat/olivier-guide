@@ -68,7 +68,7 @@
       "badgeClass": "d-D1",
       "titles": "🏆 1",
       "years": "2024",
-      "notes": "Reigning national champions. America East Champions 2024, 2025. Kissel & Papp 2025 MLS Draft."
+      "notes": "Reigning national champions. America East Champions 2024, 2025. Four SuperDraft picks in 2025-2026 (Wathuta, Murray, Herceg, Kissel)."
     },
     {
       "rank": 8,
@@ -78,7 +78,7 @@
       "badgeClass": "d-D1",
       "titles": "🏆 1",
       "years": "2022",
-      "notes": "Same-year ACC Tournament champions. Romain Gai 2023 SuperDraft."
+      "notes": "Same-year ACC Tournament champions. Tomas Hut 2026 SuperDraft R1."
     },
     {
       "rank": 9,
@@ -138,7 +138,7 @@
       "badgeClass": "d-D1",
       "titles": "🏆 1",
       "years": "1986",
-      "notes": "One of college soccer's most storied programs. Ousmane Doumbia 2023 SuperDraft."
+      "notes": "One of college soccer's most storied programs. Kenan Hot 2026 SuperDraft R2."
     },
     {
       "rank": 15,
@@ -283,6 +283,26 @@
       "notes": "Beat West Chester 2-1. Runner-up 2000. Pre-PT Seminar (HPS450) in degree curriculum."
     },
     {
+      "rank": 4,
+      "rankClass": null,
+      "school": "UC Charleston WV",
+      "badge": "D2 MEC",
+      "badgeClass": "d-D2",
+      "titles": "🏆 1",
+      "years": "2017",
+      "notes": "Beat Lynn on penalties in the 2017 final. Six national final appearances since 2014, including 2024 runner-up. Jack Allan (AUS) on current roster."
+    },
+    {
+      "rank": 5,
+      "rankClass": null,
+      "school": "Cal State LA",
+      "badge": "D2 CCAA",
+      "badgeClass": "d-D2",
+      "titles": "🏆 1",
+      "years": "2021",
+      "notes": "Beat UC Charleston WV 1-0 in the 2021 final, completing a CCAA regular-season, CCAA Tournament and Super Region 4 sweep. Lower-cost Los Angeles option (about $42k/yr)."
+    },
+    {
       "rank": null,
       "rankClass": null,
       "school": null,
@@ -324,30 +344,6 @@
       "years": "LSC contender",
       "yearsStyle": "hint",
       "notes": "Austin FC pipeline. Possession-based coach Brian Young. Strong Texas market."
-    },
-    {
-      "rank": null,
-      "rankClass": null,
-      "school": "Cal State LA",
-      "badge": "D2 CCAA",
-      "badgeClass": "d-D2",
-      "titles": "—",
-      "titlesColor": "muted",
-      "years": "CCAA competitor",
-      "yearsStyle": "hint",
-      "notes": "Lower-cost Los Angeles option (about $42k/yr). Strong academic environment for PT pathway."
-    },
-    {
-      "rank": null,
-      "rankClass": null,
-      "school": "UC Charleston WV",
-      "badge": "D2 MEC",
-      "badgeClass": "d-D2",
-      "titles": "—",
-      "titlesColor": "muted",
-      "years": "MEC competitor",
-      "yearsStyle": "hint",
-      "notes": "Jack Allan (AUS) on current roster. CAMC hospital clinical partnership for pre-PT."
     },
     {
       "rank": null,
@@ -539,6 +535,78 @@
     {
       "rank": null,
       "rankClass": null,
+      "school": "Iowa Lakes CC",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2023 NJCAA DII champion",
+      "yearsStyle": "chip-green",
+      "notes": "Beat Phoenix College on penalties in the 2023 final. Three 2025 NJCAA All-Americans."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Neosho County CC",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2024 NJCAA DII runner-up",
+      "yearsStyle": "chip-purple",
+      "notes": "Lost the 2024 final 2-1 to Northeast CC. Two 2025 NJCAA All-Americans."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Mohave CC",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2025 NJCAA semifinalist",
+      "yearsStyle": "chip-purple",
+      "notes": "Reached the 2025 NJCAA DI national semifinal in a program launched in August 2022. Three 2025 NJCAA All-Americans."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Casper College",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2 2025 All-Americans",
+      "yearsStyle": "chip-purple",
+      "notes": "Justin Godbout-Garon and Roy Nozawa named 2025 NJCAA All-Americans."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "Harford CC",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2 2025 All-Americans",
+      "yearsStyle": "chip-purple",
+      "notes": "Cristian Lopez-Contreras and Joshua Bell named 2025 NJCAA All-Americans, after the program's 2024 Region 20 title."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
+      "school": "USC Union",
+      "badge": "Elite JUCO",
+      "badgeClass": "d-JUCO",
+      "titles": "—",
+      "titlesColor": "muted",
+      "years": "2 2025 All-Americans",
+      "yearsStyle": "chip-purple",
+      "notes": "Max Manzelmann and Pablo Valverde named 2025 NJCAA All-Americans in the program's best season."
+    },
+    {
+      "rank": null,
+      "rankClass": null,
       "school": "Santa Monica",
       "badge": "JUCO",
       "badgeClass": "d-JUCO",
@@ -569,169 +637,509 @@
       "school": "Clemson",
       "badge": "D1 ACC",
       "badgeClass": "d-D1",
-      "picks5yr": 8,
-      "notable": "Kwaku Agyabeng (2026 R1 #4 SKC), Lukas Magnason (2026 R1 #13 RSL), Robbie Robinson (#1 overall 2020 + Hermann)",
+      "picks5yr": 19,
+      "notable": "Kwaku Agyabeng (2026 R1 #4 SKC), Lukas Magnason (2026 R1 #13 RSL), Robbie Robinson (#1 overall 2020 + Hermann). Picks by draft — 2026: 4, 2025: 3, 2024: 3, 2023: 3, 2022: 6.",
       "allTime": "Nation-leading 4 first-round picks in 2026 draft alone. 2× recent national champions."
     },
     {
       "rank": "2",
       "rankClass": "rank-medal medal-2",
-      "school": "Virginia",
-      "badge": "D1 ACC",
+      "school": "Washington",
+      "badge": "D1 Big Ten",
       "badgeClass": "d-D1",
-      "picks5yr": "6+",
-      "notable": "Nick Dang (2025 R2), AJ Smith (2025 R3), Aidan Morris (2021 Columbus Crew, USMNT)",
-      "allTime": "Top 5 all-time MLS producers. 7 NCAA titles."
+      "picks5yr": 15,
+      "notable": "Picks by draft — 2026: 5, 2025: 1, 2024: 2, 2023: 2, 2022: 5.",
+      "allTime": "Consistent Pacific pipeline"
     },
     {
       "rank": "3",
       "rankClass": "rank-medal medal-3",
-      "school": "Indiana",
+      "school": "Maryland",
       "badge": "D1 Big Ten",
       "badgeClass": "d-D1",
-      "picks5yr": "5+",
-      "notable": "Jansen Miller (2025 R1 SKC), Collins Oduro (2025 R2), Samuel Sarver (2025 R2), Aidan Morris (2021)",
-      "allTime": "Top 10 all-time, most decorated program history. 8 NCAA titles."
+      "picks5yr": 13,
+      "notable": "Zack Steffen (USMNT WC goalkeeper), Graham Zusi (2014 WC goal), Omar Gonzalez, Taylor Twellman. Picks by draft — 2026: 4, 2025: 2, 2024: 1, 2023: 4, 2022: 2.",
+      "allTime": "49 MLS picks + 7 homegrown under Cirovski — most all-time of any college program."
     },
     {
       "rank": "4",
       "rankClass": null,
-      "school": "SMU",
-      "badge": "D1 ACC",
+      "school": "Georgetown",
+      "badge": "D1 Big East",
       "badgeClass": "d-D1",
-      "picks5yr": "5+",
-      "notable": "Jaylinn Mitchell (2026 R1), Cesar Ruvalcaba (2025 R2), Garrett McLaughlin (#8 overall 2020), Eddie Munjoma (Hermann Trophy)",
-      "allTime": "ACC elite pipeline, FC Dallas connections. First ever ACC Tourn title 2025."
+      "picks5yr": 12,
+      "notable": "42 MLS signings under Wiese. Multiple DC United + NYCFC connections. Picks by draft — 2026: 2, 2025: 2, 2024: 6, 2023: 1, 2022: 1.",
+      "allTime": "2019 national champions. D.C. MLS market proximity."
     },
     {
       "rank": "5",
       "rankClass": null,
-      "school": "Akron",
-      "badge": "D1 Big East",
+      "school": "Indiana",
+      "badge": "D1 Big Ten",
       "badgeClass": "d-D1",
-      "picks5yr": 5,
-      "notable": "Emil Jaaskelainen (#7 overall 2024 Inter Miami), Jack Lynn (2023 MLS), Patrick Rakovsky (2022 R1)",
-      "allTime": "Top-15 all-time MLS producers. 18 MLS picks under the Coppinger era alone."
+      "picks5yr": 11,
+      "notable": "Jansen Miller (2025 R1 SKC), Collins Oduro (2025 R2), Samuel Sarver (2025 R2), Aidan Morris (2021). Picks by draft — 2026: 1, 2025: 3, 2024: 3, 2023: 3, 2022: 1.",
+      "allTime": "Top 10 all-time, most decorated program history. 8 NCAA titles."
     },
     {
       "rank": "6",
       "rankClass": null,
-      "school": "UCLA",
-      "badge": "D1 Big Ten",
+      "school": "Wake Forest",
+      "badge": "D1 ACC",
       "badgeClass": "d-D1",
-      "picks5yr": 4,
-      "notable": "Nicholas Cavallo (2025 R3), Grayson Doody (2024 R1 CF Montréal), Ahmed Longmire (#10 overall 2022)",
-      "allTime": "Top 8 all-time, LA MLS academy connections. 4 NCAA titles."
+      "picks5yr": 11,
+      "notable": "Travis Smith Jr. (2025 R2 Chicago), Liam O'Gara (2025 R3), Trace Alphin (2025 R2). Picks by draft — 2026: 2, 2025: 4, 2024: 3, 2022: 2.",
+      "allTime": "4 picks in single 2025 draft — highest single-draft rate in ACC that year."
     },
     {
       "rank": "7",
       "rankClass": null,
-      "school": "Wake Forest",
+      "school": "UNC",
       "badge": "D1 ACC",
       "badgeClass": "d-D1",
-      "picks5yr": 4,
-      "notable": "Travis Smith Jr. (2025 R1 Chicago), Liam O'Gara (2025 R3), Trace Alphin (2025 R2)",
-      "allTime": "4 picks in single 2025 draft — highest single-draft rate in ACC that year."
+      "picks5yr": 10,
+      "notable": "Multiple ACC All-Conference players to MLS/USL annually. Somoano building pipeline. Picks by draft — 2026: 3, 2025: 3, 2023: 3, 2022: 1.",
+      "allTime": "2× national champions (2001, 2011). ACC Regular Season Champions 2023."
     },
     {
       "rank": "8",
       "rankClass": null,
-      "school": "Maryland",
-      "badge": "D1 Big Ten",
+      "school": "Pittsburgh",
+      "badge": "D1 ACC",
       "badgeClass": "d-D1",
-      "picks5yr": 4,
-      "notable": "Zack Steffen (USMNT WC goalkeeper), Graham Zusi (2014 WC goal), Omar Gonzalez, Taylor Twellman",
-      "allTime": "49 MLS picks + 7 homegrown under Cirovski — most all-time of any college program."
+      "picks5yr": 9,
+      "notable": "Picks by draft — 2026: 2, 2025: 1, 2024: 1, 2023: 3, 2022: 2.",
+      "allTime": "Developing pipeline with upward trajectory under Jay Vidovich"
     },
     {
       "rank": "9",
       "rankClass": null,
-      "school": "Georgetown",
+      "school": "UConn",
       "badge": "D1 Big East",
       "badgeClass": "d-D1",
-      "picks5yr": 4,
-      "notable": "42 MLS signings under Wiese. Multiple DC United + NYCFC connections.",
-      "allTime": "2019 national champions. D.C. MLS market proximity."
+      "picks5yr": 9,
+      "notable": "Picks by draft — 2026: 3, 2025: 3, 2024: 2, 2023: 1.",
+      "allTime": "Solid New England pipeline"
     },
     {
       "rank": "10",
       "rankClass": null,
-      "school": "FIU",
-      "badge": "D1 AAC",
+      "school": "Akron",
+      "badge": "D1 Big East",
       "badgeClass": "d-D1",
-      "picks5yr": 3,
-      "notable": "Michael Appiah (2025 R3 Inter Miami), Stephen Afrifa (#8 overall 2022 SKC)",
-      "allTime": "14 MLS draft picks all-time. AAC Championship Final 3 of last 4 years."
+      "picks5yr": 8,
+      "notable": "Stefan Dobrijevic and Remi Agunbiade (2026 R2); Shokalook, Henry and Clapier (2024 R2). Picks by draft — 2026: 2, 2025: 1, 2024: 3, 2022: 2.",
+      "allTime": "Top-15 all-time MLS producers. 18 MLS picks under the Coppinger era alone."
     },
     {
       "rank": "11",
       "rankClass": null,
-      "school": "UCSB",
-      "badge": "D1 Big West",
+      "school": "Duke",
+      "badge": "D1 ACC",
       "badgeClass": "d-D1",
-      "picks5yr": 3,
-      "notable": "Manu Duah (#1 overall 2025 — highest ever Big West pick)",
-      "allTime": "Strong Big West pipeline, Pacific MLS market. 1 NCAA title (2006)."
+      "picks5yr": 8,
+      "notable": "Picks by draft — 2026: 1, 2025: 1, 2024: 3, 2023: 1, 2022: 2.",
+      "allTime": "Consistent MLS pipeline from one of college soccer's most storied programs"
     },
     {
       "rank": "12",
+      "rankClass": null,
+      "school": "Syracuse",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "picks5yr": 8,
+      "notable": "Picks by draft — 2026: 1, 2024: 2, 2023: 5.",
+      "allTime": "Growing pipeline — 2022 national championship boosted program visibility"
+    },
+    {
+      "rank": "13",
+      "rankClass": null,
+      "school": "UCLA",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "picks5yr": 8,
+      "notable": "Nicholas Cavallo (2025 R3), Grayson Doody (2024 R1 CF Montréal), Ahmed Longmire (#10 overall 2022). Picks by draft — 2026: 3, 2025: 1, 2024: 2, 2022: 2.",
+      "allTime": "Top 8 all-time, LA MLS academy connections. 4 NCAA titles."
+    },
+    {
+      "rank": "14",
+      "rankClass": null,
+      "school": "Virginia",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "picks5yr": 8,
+      "notable": "Nick Dang (2025 R2), AJ Smith (2025 R3), Nicholas Simmonds (2026 R1 #3), Umberto Pela (2026 R2). Picks by draft — 2026: 2, 2025: 2, 2024: 3, 2023: 1.",
+      "allTime": "Top 5 all-time MLS producers. 7 NCAA titles."
+    },
+    {
+      "rank": "15",
+      "rankClass": null,
+      "school": "NC State",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "picks5yr": 7,
+      "notable": "Nikola Markovic (#1 overall 2026 — first-ever NC State No.1 pick), Donavan Phillip (2025 Hermann Trophy winner). Picks by draft — 2026: 4, 2025: 2, 2022: 1.",
+      "allTime": "Marc Hubbard developed both in just 2 seasons — first-ever national final appearance 2025."
+    },
+    {
+      "rank": "16",
+      "rankClass": null,
+      "school": "Penn State",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "picks5yr": 7,
+      "notable": "Picks by draft — 2025: 2, 2023: 3, 2022: 2.",
+      "allTime": "Consistent Big Ten pipeline"
+    },
+    {
+      "rank": "17",
+      "rankClass": null,
+      "school": "SMU",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "picks5yr": 7,
+      "notable": "Jaylinn Mitchell (2026 R1), Cesar Ruvalcaba (2025 R2), Garrett McLaughlin (#8 overall 2020), Eddie Munjoma (Hermann Trophy). Picks by draft — 2026: 2, 2025: 3, 2024: 1, 2022: 1.",
+      "allTime": "ACC elite pipeline, FC Dallas connections. First ever ACC Tourn title 2025."
+    },
+    {
+      "rank": "18",
+      "rankClass": null,
+      "school": "Notre Dame",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "picks5yr": 6,
+      "notable": "Jon Gallagher (Austin FC), Paul Rothrock (Seattle Sounders), Philip Quinton (RSL). Picks by draft — 2026: 1, 2024: 2, 2022: 3.",
+      "allTime": "27 MLS picks under Bobby Clark era. Chad Riley maintaining elite pipeline."
+    },
+    {
+      "rank": "19",
+      "rankClass": null,
+      "school": "Princeton",
+      "badge": "IVY",
+      "badgeClass": "d-IVY",
+      "picks5yr": 6,
+      "notable": "Kevin O'Toole (2022 R2 NYCFC), 5 total MLS players under Barlow. Picks by draft — 2026: 4, 2025: 1, 2022: 1.",
+      "allTime": "Ivy pipeline growing — 2024–25 form surge. First Ivy League + Tournament double 2025."
+    },
+    {
+      "rank": "20",
+      "rankClass": null,
+      "school": "Stanford",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "picks5yr": 6,
+      "notable": "Picks by draft — 2026: 2, 2024: 3, 2022: 1.",
+      "allTime": "Top 10 all-time MLS producers — consistent pipeline to professional soccer"
+    },
+    {
+      "rank": "21",
+      "rankClass": null,
+      "school": "Vermont",
+      "badge": "D1 America East",
+      "badgeClass": "d-D1",
+      "picks5yr": 6,
+      "notable": "Picks by draft — 2026: 2, 2025: 2, 2023: 1, 2022: 1.",
+      "allTime": "Growing America East pipeline. 2024 championship elevated national profile significantly."
+    },
+    {
+      "rank": "22",
+      "rankClass": null,
+      "school": "Louisville",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "picks5yr": 5,
+      "notable": "Picks by draft — 2026: 1, 2024: 3, 2022: 1.",
+      "allTime": "Growing MLS pipeline — 5 SuperDraft picks in 2022-2026"
+    },
+    {
+      "rank": "23",
+      "rankClass": null,
+      "school": "Xavier",
+      "badge": "D1 Big East",
+      "badgeClass": "d-D1",
+      "picks5yr": 5,
+      "notable": "Picks by draft — 2026: 2, 2025: 1, 2023: 2.",
+      "allTime": "Limited pipeline"
+    },
+    {
+      "rank": "24",
+      "rankClass": null,
+      "school": "Charlotte",
+      "badge": "D1 AAC",
+      "badgeClass": "d-D1",
+      "picks5yr": 4,
+      "notable": "Picks by draft — 2025: 1, 2024: 1, 2023: 2.",
+      "allTime": "Charlotte FC proximity — growing pipeline"
+    },
+    {
+      "rank": "25",
+      "rankClass": null,
+      "school": "St John's",
+      "badge": "D1 Big East",
+      "badgeClass": "d-D1",
+      "picks5yr": 4,
+      "notable": "Multiple Red Bulls / NYCFC academy connections. 1996 D1 national champions. Picks by draft — 2024: 1, 2022: 3.",
+      "allTime": "NYC MLS network strongest of any school in guide. NYCFC + Red Bulls proximity."
+    },
+    {
+      "rank": "26",
+      "rankClass": null,
+      "school": "Cal",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "picks5yr": 3,
+      "notable": "Picks by draft — 2025: 1, 2024: 2.",
+      "allTime": "Strong West Coast MLS pipeline — 3 picks in 5 years with growing ACC visibility"
+    },
+    {
+      "rank": "27",
+      "rankClass": null,
+      "school": "Creighton",
+      "badge": "D1 Big East",
+      "badgeClass": "d-D1",
+      "picks5yr": 3,
+      "notable": "Picks by draft — 2025: 1, 2023: 2.",
+      "allTime": "Solid Midwest pipeline"
+    },
+    {
+      "rank": "28",
+      "rankClass": null,
+      "school": "Denver",
+      "badge": "D1 WCC",
+      "badgeClass": "d-D1",
+      "picks5yr": 3,
+      "notable": "Picks by draft — 2026: 1, 2025: 2.",
+      "allTime": "Strong mid-major pipeline. Moving to WCC 2026 will elevate national profile."
+    },
+    {
+      "rank": "29",
+      "rankClass": null,
+      "school": "GCU",
+      "badge": "D1 WAC",
+      "badgeClass": "d-D1",
+      "picks5yr": 3,
+      "notable": "Picks by draft — 2026: 1, 2022: 2.",
+      "allTime": "Growing WAC pipeline. Sweet 16 run 2025 elevated national profile."
+    },
+    {
+      "rank": "30",
+      "rankClass": null,
+      "school": "Hofstra",
+      "badge": "D1 CAA",
+      "badgeClass": "d-D1",
+      "picks5yr": 3,
+      "notable": "Picks by draft — 2025: 1, 2024: 2.",
+      "allTime": "NYC market proximity"
+    },
+    {
+      "rank": "31",
+      "rankClass": null,
+      "school": "Ohio State",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "picks5yr": 3,
+      "notable": "Picks by draft — 2025: 2, 2024: 1.",
+      "allTime": "Developing MLS pipeline"
+    },
+    {
+      "rank": "32",
+      "rankClass": null,
+      "school": "Providence",
+      "badge": "D1 Big East",
+      "badgeClass": "d-D1",
+      "picks5yr": 3,
+      "notable": "Picks by draft — 2025: 1, 2024: 1, 2022: 1.",
+      "allTime": "Limited pipeline"
+    },
+    {
+      "rank": "33",
+      "rankClass": null,
+      "school": "Rutgers",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "picks5yr": 3,
+      "notable": "Picks by draft — 2025: 2, 2023: 1.",
+      "allTime": "Moderate pipeline"
+    },
+    {
+      "rank": "34",
       "rankClass": null,
       "school": "USF",
       "badge": "D1 AAC",
       "badgeClass": "d-D1",
       "picks5yr": 3,
-      "notable": "Jahiem Wickham (2026 R3), Pedro Faife (2024 USL)",
+      "notable": "Jahiem Wickham (2026 R3), Pedro Faife (2024 USL). Picks by draft — 2026: 1, 2024: 1, 2023: 1.",
       "allTime": "Kiefer returning — 20 MLS draftees in first USF tenure. Rebuilding to AAC prominence."
     },
     {
-      "rank": "13",
+      "rank": "35",
       "rankClass": null,
-      "school": "Notre Dame",
-      "badge": "D1 ACC",
-      "badgeClass": "d-D1",
-      "picks5yr": 3,
-      "notable": "Jon Gallagher (Austin FC), Paul Rothrock (Seattle Sounders), Philip Quinton (RSL)",
-      "allTime": "27 MLS picks under Bobby Clark era. Chad Riley maintaining elite pipeline."
-    },
-    {
-      "rank": "14",
-      "rankClass": null,
-      "school": "UNC",
-      "badge": "D1 ACC",
-      "badgeClass": "d-D1",
-      "picks5yr": 3,
-      "notable": "Multiple ACC All-Conference players to MLS/USL annually. Somoano building pipeline.",
-      "allTime": "2× national champions (2001, 2011). ACC Regular Season Champions 2023."
-    },
-    {
-      "rank": "15",
-      "rankClass": null,
-      "school": "Princeton",
-      "badge": "IVY",
-      "badgeClass": "d-IVY",
-      "picks5yr": 2,
-      "notable": "Kevin O'Toole (2022 R2 NYCFC), 5 total MLS players under Barlow",
-      "allTime": "Ivy pipeline growing — 2024–25 form surge. First Ivy League + Tournament double 2025."
-    },
-    {
-      "rank": "16",
-      "rankClass": null,
-      "school": "St John's",
+      "school": "Butler",
       "badge": "D1 Big East",
       "badgeClass": "d-D1",
-      "picks5yr": "1+",
-      "notable": "Multiple Red Bulls / NYCFC academy connections. 1996 D1 national champions.",
-      "allTime": "NYC MLS network strongest of any school in guide. NYCFC + Red Bulls proximity."
+      "picks5yr": 2,
+      "notable": "Picks by draft — 2024: 1, 2023: 1.",
+      "allTime": "Developing pipeline"
     },
     {
-      "rank": "17",
+      "rank": "36",
       "rankClass": null,
-      "school": "NC State",
-      "badge": "D1 ACC",
+      "school": "FIU",
+      "badge": "D1 AAC",
+      "badgeClass": "d-D1",
+      "picks5yr": 2,
+      "notable": "Michael Appiah (2025 R3 Inter Miami), Stephen Afrifa (#8 overall 2023 SKC). Picks by draft — 2025: 1, 2023: 1.",
+      "allTime": "14 MLS draft picks all-time. AAC Championship Final 3 of last 4 years."
+    },
+    {
+      "rank": "37",
+      "rankClass": null,
+      "school": "Michigan",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "picks5yr": 2,
+      "notable": "Picks by draft — 2026: 1, 2025: 1.",
+      "allTime": "Strong Big Ten pipeline"
+    },
+    {
+      "rank": "38",
+      "rankClass": null,
+      "school": "Tulsa",
+      "badge": "D1 AAC",
+      "badgeClass": "d-D1",
+      "picks5yr": 2,
+      "notable": "Picks by draft — 2026: 1, 2023: 1.",
+      "allTime": "Limited pipeline"
+    },
+    {
+      "rank": "39",
+      "rankClass": null,
+      "school": "Wisconsin",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "picks5yr": 2,
+      "notable": "Picks by draft — 2025: 1, 2024: 1.",
+      "allTime": "Moderate pipeline"
+    },
+    {
+      "rank": "40",
+      "rankClass": null,
+      "school": "CS Fullerton",
+      "badge": "D1 Big West",
       "badgeClass": "d-D1",
       "picks5yr": 1,
-      "notable": "Nikola Markovic (#1 overall 2026 — first-ever NC State No.1 pick), Donavan Phillip (2025 Hermann Trophy winner)",
-      "allTime": "Marc Hubbard developed both in just 2 seasons — first-ever national final appearance 2025."
+      "notable": "Picks by draft — 2026: 1.",
+      "allTime": "Limited pipeline"
+    },
+    {
+      "rank": "41",
+      "rankClass": null,
+      "school": "Drexel",
+      "badge": "D1 CAA",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2022: 1.",
+      "allTime": "Developing pipeline"
+    },
+    {
+      "rank": "42",
+      "rankClass": null,
+      "school": "Elon",
+      "badge": "D1 CAA",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2023: 1.",
+      "allTime": "Limited pipeline"
+    },
+    {
+      "rank": "43",
+      "rankClass": null,
+      "school": "Michigan State",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2022: 1.",
+      "allTime": "Moderate pipeline"
+    },
+    {
+      "rank": "44",
+      "rankClass": null,
+      "school": "Navy",
+      "badge": "D1 Patriot",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2022: 1.",
+      "allTime": "N/A — service commitment prevents MLS"
+    },
+    {
+      "rank": "45",
+      "rankClass": null,
+      "school": "Northwestern",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2025: 1.",
+      "allTime": "Small pipeline — academic-first program"
+    },
+    {
+      "rank": "46",
+      "rankClass": null,
+      "school": "Seton Hall",
+      "badge": "D1 Big East",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2026: 1.",
+      "allTime": "Limited pipeline"
+    },
+    {
+      "rank": "47",
+      "rankClass": null,
+      "school": "UC Davis",
+      "badge": "D1 Big West",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2026: 1.",
+      "allTime": "Developing pipeline"
+    },
+    {
+      "rank": "48",
+      "rankClass": null,
+      "school": "UC Irvine",
+      "badge": "D1 Big West",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2024: 1.",
+      "allTime": "OC/LA market access"
+    },
+    {
+      "rank": "49",
+      "rankClass": null,
+      "school": "UCSB",
+      "badge": "D1 Big West",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Manu Duah (#1 overall 2025 — highest ever Big West pick). Picks by draft — 2025: 1.",
+      "allTime": "Strong Big West pipeline, Pacific MLS market. 1 NCAA title (2006)."
+    },
+    {
+      "rank": "50",
+      "rankClass": null,
+      "school": "Villanova",
+      "badge": "D1 Big East",
+      "badgeClass": "d-D1",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2023: 1.",
+      "allTime": "Limited pipeline"
+    },
+    {
+      "rank": "51",
+      "rankClass": null,
+      "school": "Yale",
+      "badge": "IVY",
+      "badgeClass": "d-IVY",
+      "picks5yr": 1,
+      "notable": "Picks by draft — 2023: 1.",
+      "allTime": "Limited MLS pipeline — academic-first program"
     },
     {
       "rank": "—",
@@ -739,7 +1147,7 @@
       "school": "Monroe College",
       "badge": "JUCO",
       "badgeClass": "d-JUCO",
-      "picks5yr": 2,
+      "picks5yr": 0,
       "notable": "Alumni signed with USL Championship, USL League One, and MLS Next Pro clubs — NYC metro pipeline (NYCFC, NY Red Bulls proximity)",
       "allTime": "3x NJCAA DI National Champions (2019, 2022, 2023) — strongest confirmed pro pipeline of any JUCO in the guide, matching Princeton's recent picks count"
     },
@@ -754,7 +1162,7 @@
       "allTime": "Developing D1 AAC program. Best DPT pathway degree in guide. Warm climate match."
     },
     {
-      "rank": "18",
+      "rank": "52",
       "rankClass": null,
       "school": "Barry / Lynn / PBA / NSU",
       "badge": "D2 SSC",
@@ -764,7 +1172,7 @@
       "allTime": "Best non-MLS pro pipelines in guide. Florida market."
     },
     {
-      "rank": "19",
+      "rank": "53",
       "rankClass": null,
       "school": "UCA",
       "badge": "D1 ASUN",
@@ -774,7 +1182,7 @@
       "allTime": "Whole 2026-27 midfield returns in 2027-28"
     },
     {
-      "rank": "20",
+      "rank": "54",
       "rankClass": null,
       "school": "UC Charleston WV",
       "badge": "D2 MEC",
@@ -784,7 +1192,7 @@
       "allTime": "Australian on squad — international pipeline confirmed"
     },
     {
-      "rank": "21",
+      "rank": "55",
       "rankClass": null,
       "school": "Phoenix College / Tyler JC / Iowa Western / Indian Hills / Daytona State / Cowley CC / Barton CC / Arizona Western / EFSC / Pima CC / Mohave CC / Glendale CC / Dodge City CC / Neosho County CC / Johnson County CC / Southeastern CC / Iowa Lakes CC / Blinn College / Coastal Bend College / Northeast CC",
       "badge": "JUCO",

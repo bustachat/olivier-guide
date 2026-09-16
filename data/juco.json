@@ -16386,7 +16386,7 @@
     "top": false,
     "juco2yr": true,
     "jucoTier": "Standard",
-    "jucoTierNote": "No Region 14 titles or postseason wins found across the 2021-2025 window (best recent finish: 2024-25 Region XIV Gulf South District Quarterfinal, 5-7-3). The program's real strength is off-field: a program-record 10 players signed to continue their careers in June 2026 (up from 7 in June 2025), including consecutive NCAA Division I transfers (Jace Starling to Houston Christian in 2025, Jonathan Chairez to Missouri State in 2026) confirmed via two separate dated official releases.",
+    "jucoTierNote": "No Region 14 titles or postseason wins found across the 2021-2025 window (best recent finish: 2024-25 Region XIV Gulf South District Quarterfinal, 5-7-3). The program's real strength is off-field: a program-record 10 players signed to continue their careers in June 2026 (up from 7 in June 2025), including an NCAA Division I transfer confirmed on the receiving school's own roster (Jace Starling to Houston Christian, 2025) and an announced Division I signing (Jonathan Chairez to Missouri State, June 2026) that does not yet appear on Missouri State's 2026 roster.",
     "njcaaRegion": "Region 14",
     "njcaaRegionArea": "East Texas",
     "profileDepth": "full",
@@ -16525,16 +16525,19 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [
-        "Jonathan Chairez → Missouri State University (NCAA Division I), 2026 signing class",
-        "Jace Starling → Houston Christian University (NCAA Division I), 2025 signing class — also NJCAA First Team All-Region 2024-25 (10 goals, 2 assists)",
+        "Jonathan Chairez → Missouri State University (NCAA Division I), announced by Paris JC in June 2026 — not on Missouri State's 2026 roster or its 14-player signing class as of September 2026, so not yet confirmed",
+        "Jace Starling → Houston Christian University (NCAA Division I), 2025 signing class — confirmed on Houston Christian's own roster, which lists Paris Junior College (2023, 2024) as his prior school; named All-Region after a 10-goal sophomore season",
         "Lawrence Doe → Midwestern State University, 2026 signing class — also NJCAA First Team All-Region 2024-25"
       ],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. A genuine, dated two-year transfer pipeline: 1 confirmed NCAA D1 transfer in each of the 2025 and 2026 offseasons (7 and 10 total transfers respectively, across NCAA D1/D2/D3 and NAIA), both Tier-1 confirmed via PJC's own official news releases.",
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Paris JC placed 7 players at four-year schools in 2025 and a program-record 10 in 2026, across NCAA Division I, II and III and NAIA.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": 1.0,
+        "d1Count": 1,
+        "yearsCovered": "2025-2026",
+        "years": 2,
+        "perYear": null,
         "sourceUrl": "https://pjcathletics.com/sports/msoc/2025-26/releases/dragons-contiunuing-careers",
-        "note": "Two consecutive official news releases (June 2025 and June 2026) confirm 2 D1 transfers in 2 years: Jace Starling to Houston Christian (2025) and Jonathan Chairez to Missouri State (2026) — about 1 per year."
+        "note": "Paris JC publishes yearly signing announcements rather than an alumni-tracking page. One Division I transfer is confirmed on the receiving school's own roster: Jace Starling to Houston Christian (2025). Paris JC also announced Jonathan Chairez's signing with Missouri State in June 2026, but he does not yet appear on Missouri State's 2026 roster. One confirmed transfer isn't enough to calculate a reliable yearly rate, so this program is scored as a typical junior college for now."
       }
     },
     "devScores": {
@@ -16543,14 +16546,14 @@
       "fitness": 44
     },
     "devScoresNote": "Tier-1: head coach Fernando Arellano played NCAA D1 (University of Texas Rio Grande Valley, beat #24-ranked UNLV in 2015), was a 2014 NJCAA All-American and NJCAA National Final runner-up captain at Richland College, played professionally in Liga MX (Queretaro FC) and NPSL (Tyler FC), and previously ran another NJCAA DI program (Southwest Virginia CC) plus an NCAA D2 assistant stint (Alderson Broaddus). Holds a USSF 'D' License (entry-level) and a Kinesiology/Sports Administration academic background matching his own coaching subject. Noyes Stadium is the program's on-campus home venue; no dedicated strength-and-conditioning or sports-science technology confirmed on the official site.",
-    "fitOlivier": 53,
+    "fitOlivier": 56,
     "lensScores": {
-      "overall": 53,
-      "soccer": 40,
+      "overall": 56,
+      "soccer": 45,
       "academic": 20,
       "minutes": 56,
       "lifestyle": 50,
-      "value": 62
+      "value": 64
     },
     "facilities": [
       "Program-record 10 players signed to four-year programs, June 2026",
@@ -16583,7 +16586,7 @@
       "BIOL 2401/2402 — Anatomy & Physiology I & II (required core)",
       "KINE 2356 — Care and Prevention of Athletic Injuries (Kinesiology-track elective)"
     ],
-    "rec": "Paris Junior College's headline story is a rapidly growing transfer pipeline under head coach Fernando Arellano (NCAA D1 playing background, 2014 NJCAA All-American, pro experience in Liga MX): a program-record 10 players signed to continue their careers at four-year institutions in June 2026, up from 7 the year before, including consecutive NCAA Division I transfers (Houston Christian in 2025, Missouri State in 2026). The trade-off is a modest on-field record (no Region 14 titles 2021-2025) and a Kinesiology/Public Health degree that covers only Anatomy & Physiology against this guide's ACU rubric. Real on-campus housing and low tuition make it a genuinely low-cost option. minutesOutlook is available from the current, fully-populated 2026-27 roster — a real, if competitive, midfield picture: 3 of 9 midfielders clear before Olivier's Aug 2027 arrival, with 6 returning sophomores providing real entry competition.",
+    "rec": "Paris Junior College's headline story is a rapidly growing transfer pipeline under head coach Fernando Arellano (NCAA D1 playing background, 2014 NJCAA All-American, pro experience in Liga MX): a program-record 10 players signed to continue their careers at four-year institutions in June 2026, up from 7 the year before, including a confirmed NCAA Division I transfer to Houston Christian in 2025 and an announced Division I signing with Missouri State in 2026. The trade-off is a modest on-field record (no Region 14 titles 2021-2025) and a Kinesiology/Public Health degree that covers only Anatomy & Physiology against this guide's ACU rubric. Real on-campus housing and low tuition make it a genuinely low-cost option. minutesOutlook is available from the current, fully-populated 2026-27 roster — a real, if competitive, midfield picture: 3 of 9 midfielders clear before Olivier's Aug 2027 arrival, with 6 returning sophomores providing real entry competition.",
     "minutesOutlook": {
       "available": true,
       "mf_total": 9,

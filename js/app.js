@@ -1694,7 +1694,7 @@ function proPipelineHead(u){         // modal Pro Pipeline tab heading + stat bo
   if(r){
     const src = nl.sourceUrl ? ` · <a href="${nl.sourceUrl}" target="_blank" rel="noopener" style="color:var(--indigo)">source ↗</a>` : '';
     detail = `<div style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:1rem">
-        <strong>${nl.d1Count}</strong> D1 transfers verified over <strong>${nl.yearsCovered}</strong> (${nl.years} yr)${src}
+        ${nl.d1Count!=null && nl.yearsCovered && nl.years ? `<strong>${nl.d1Count}</strong> D1 transfers verified over <strong>${nl.yearsCovered}</strong> (${nl.years} yr)` : 'D1 transfer rate'}${src}
         ${nl.note ? `<div style="margin-top:5px;font-style:italic">${nl.note}</div>` : ''}
       </div>`;
   } else {
@@ -1960,8 +1960,8 @@ function buildDetailBody(u){
         <div class="fac-block"><h5>🔬 Academic Labs & Clinical Access</h5><p>${u.facilityDetails.academicLabs}</p></div>
         ${u.facilityDetails.housing?`<div class="fac-block"><h5>🏠 On-Campus Housing</h5><p>${u.facilityDetails.housing.available===false?'Not available — ':u.facilityDetails.housing.available==='limited'?'Limited — ':''}${u.facilityDetails.housing.note||''}</p></div>`:''}
       </div>
-      <div class="fac-block" style="margin-bottom:1rem"><h5>🎁 Extras & Unique Perks</h5><p>${u.facilityDetails.extras}</p></div>
-      <div class="fac-note"><p><strong>Facilities verdict:</strong> ${u.facilityDetails.note}</p></div>
+      ${u.facilityDetails.extras?`<div class="fac-block" style="margin-bottom:1rem"><h5>🎁 Extras & Unique Perks</h5><p>${u.facilityDetails.extras}</p></div>`:''}
+      ${u.facilityDetails.note?`<div class="fac-note"><p><strong>Facilities verdict:</strong> ${u.facilityDetails.note}</p></div>`:''}
       `:'<div class="detail-block"><p style="color:var(--muted)">Facility details coming soon.</p></div>'}
     </div>`;
 }

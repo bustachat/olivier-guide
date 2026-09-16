@@ -6,6 +6,41 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.49 (2026-09-16) — Vermont facilities text; Paris JC transfer rate re-verified (Fit 53 → 56); renderer guards for missing fields
+
+**Vermont (`data/d1-other.json`, text only, no score change).** The Facilities tab printed "Extras & Unique Perks undefined" and "Facilities verdict: undefined", because the `extras` and `note` fields had never been written. Both are now filled from UVM's official pages, read in Chrome:
+- the Men's Soccer Facilities page
+- the Virtue Field page
+- the Indoor Turf Facility page (300x100 ft, January 2011)
+- the Athletic Performance Center page (11,000 sq ft, 2005)
+- the Student-Athlete Success Center page
+- UVM's August 2025 release on ESPN SportsCenter broadcasting live from Virtue Field
+
+The same pages showed that the stored `stadium` text was wrong: it said **natural grass**, but Virtue Field is FieldTurf synthetic turf (lights added 2015; 2,600 permanent seats and a press box added 2016). That is now corrected.
+
+**Paris JC (`data/juco.json`, Change Type 7 + score cascade).** The Pro Pipeline tab printed "undefined D1 transfers verified over undefined (undefined yr)" because `nextLevel` stored a rate (1.0/yr) without the counts behind it. Re-verified in Chrome:
+- **Jace Starling:** confirmed on Houston Christian's own roster, prior school Paris JC (2023, 2024).
+- **Jonathan Chairez:** announced by Paris JC's June 2026 release as a Missouri State signee, but on neither Missouri State's full 2026 roster nor its 14-player spring signing class. Not confirmed.
+- **Divisions** checked in the NCAA men's soccer directory. Of the 10 2026 destinations, only Missouri State is Division I (UT Tyler included). Houston Christian is Division I.
+- **2025 total:** Paris JC's official headlines page confirms "seven players transferring". The 2025 release itself was behind a bot challenge and could not be re-read.
+
+One confirmed D1 transfer is not a measured rate (§5b), so **owner ruling**: `perYear` 1.0 → null (neutral), with `d1Count: 1`, `yearsCovered: "2025-2026"`, `years: 2` stored.
+- `fitOlivier` 53 → 56 (about #57 → #34 of 170). Unknown is scored as a typical junior college, and 1.0/yr was below that.
+- `lensScores.overall` 53 → 56; `soccer` 40 → 45; `value` 62 → 64.
+
+The jucoTierNote, notable, draftRank, nextLevel.note and rec text, plus the Region 14 line in `conferences.json` and `conf-prestige.json`, now say one confirmed transfer and one announced signing.
+
+**Renderer (`js/app.js`).** The Extras block and the Facilities verdict are hidden when their field is empty, and the transfer-count line falls back to "D1 transfer rate" when counts are missing. This also stops Akron, Grand Canyon and Denver from printing "undefined" in Extras; their Extras text is still missing and is flagged in CLAUDE.md §6C.
+
+**Verification.**
+- `validate_schools.py` passes.
+- `validate_consistency.js`: Issues: 0.
+- negtest: 8/8 proven, `js/app.js` restored byte-identical.
+- `check_no_jargon.py` passes.
+- Local preview: all 170 Details modals scanned, each read only after the modal showed that school's name. None contains "undefined" or "NaN". Vermont's Facilities tab and Paris JC's Pro Pipeline tab were read as rendered.
+
+---
+
 ### v45.48 (2026-09-16) — Research-batch/campaign comparisons removed from rendered text; checker now fails on them
 
 **What was wrong.** Rendered text compared schools only against the research batch or campaign they happened to be added in: "the cheapest tuition found anywhere in this campaign", "the strongest on-field program in this batch", "the most expensive school in Batch 2". A reader has no idea what "this batch" is, and many of the comparisons were false once measured against the whole guide.

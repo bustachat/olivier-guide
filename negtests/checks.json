@@ -54,5 +54,19 @@
     "find": "function housingPenalty(school) {",
     "replace": "function housingDeduction(school) {",
     "expect": "SCORES-SRC"
+  },
+  {
+    "name": "NJCAA-DIV / division disagrees with fundingPathway",
+    "file": "data/juco.json",
+    "find": "\"njcaaRegion\": \"Region 1\",\r\n    \"njcaaDivision\": \"II\",",
+    "replace": "\"njcaaRegion\": \"Region 1\",\r\n    \"njcaaDivision\": \"I\",",
+    "expect": "NJCAA-DIV"
+  },
+  {
+    "name": "FIT / NJCAA division-strength value changes without re-storing scores",
+    "file": "js/scores.js",
+    "find": "III: 0.42",
+    "replace": "III: 2.0",
+    "expect": "FIT"
   }
 ]

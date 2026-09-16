@@ -377,6 +377,24 @@ schools.filter(s => s.profileDepth === 'full' && s.div !== 'D1').forEach(s => {
 // (D1 is always full=0) — flag it so it can't hide a misclassification.
 schools.filter(s => s.div === 'D1' && s.fundingPathway !== undefined && s.fundingPathway !== 'full')
   .forEach(s => note('FUNDING', `${s.id} is D1 but fundingPathway='${s.fundingPathway}' — D1 is structurally full; remove or set 'full'`));
+
+// ── NJCAA-DIV (added 2026-09-17): njcaaDivision feeds the division-strength term ──
+// scores.js reads njcaaDivision (I|II|III) to split the JUCO division strength
+// (0.6 / 0.55 / 0.42, from Massey ratings). A missing or wrong value silently
+// falls back to 0.6, so every NJCAA school (those with njcaaRegion) must carry it,
+// and it must agree with fundingPathway, which follows the same division rule (§5c).
+// Santa Monica (CCCAA, no njcaaRegion) must not carry it.
+const NJCAA_DIV_FUNDING = { I: 'full', II: 'capped', III: 'none' };
+schools.filter(s => s.div === 'JUCO').forEach(s => {
+  if (!s.njcaaRegion) {
+    if (s.njcaaDivision !== undefined) note('NJCAA-DIV', `${s.id} has njcaaDivision but no njcaaRegion — only NJCAA schools carry it`);
+    return;
+  }
+  if (!NJCAA_DIV_FUNDING[s.njcaaDivision]) note('NJCAA-DIV', `${s.id} njcaaDivision='${s.njcaaDivision}' — must be I|II|III`);
+  else if (s.fundingPathway !== NJCAA_DIV_FUNDING[s.njcaaDivision]) note('NJCAA-DIV', `${s.id} njcaaDivision ${s.njcaaDivision} but fundingPathway='${s.fundingPathway}' — expected '${NJCAA_DIV_FUNDING[s.njcaaDivision]}'`);
+});
+schools.filter(s => s.div !== 'JUCO' && s.njcaaDivision !== undefined)
+  .forEach(s => note('NJCAA-DIV', `${s.id} is ${s.div} but has njcaaDivision — JUCO only`));
 if (fitMismatches.length) {
   note('FIT', `${fitMismatches.length} schools where stored fitOlivier differs >1 from the live scores.js formula:`);
   fitMismatches.forEach(m => note('FIT', '  ' + m));
@@ -402,8 +420,8 @@ if (fitMismatches.length) {
 // full +40. Their stored values (navy 47 / army 45, both ≈ fit+3) deliberately decline that credit,
 // because the "free" tuition is paid for with a 5-year service commitment — a real cost the dollar
 // figure cannot express, and §4 is explicit that these schools are incompatible with Olivier's
-// DPT/MLS pathway. Whether the value lens SHOULD credit a $0 sticker price is an owner design
-// question (CLAUDE.md §6 deferred items), not drift — so this check declines to rule on it rather
+// DPT/MLS pathway. Whether the value lens SHOULD credit a $0 sticker price was an owner design
+// question; the owner ruled on 2026-09-17 to keep the hand-set values — so this check declines to rule on it rather
 // than reporting two intentional values as errors.
 const budgetUSD = athlete.budgetUSD || (athlete.budgetAUD / athlete.fxRate);
 const valueMismatches = [];

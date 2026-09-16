@@ -105,10 +105,23 @@ function nextLevelFactor(school) {
 // ── Soccer program quality — dev scores + next-level output + division strength ──
 const DIV_STRENGTH = { D1: 1.0, IVY: 0.9, D2: 0.8, NAIA: 0.65, D3: 0.5, JUCO: 0.6 };
 
+// NJCAA divisions split the JUCO value (owner-approved 2026-09-17). Division I keeps
+// JUCO's 0.6; II and III are scaled by their average Massey rating against Division I
+// (final 2025 season, all 252 NJCAA teams on one scale: DI 6.50, DII 5.91, DIII 4.57).
+// A JUCO without njcaaDivision (Santa Monica, CCCAA) keeps the plain JUCO value.
+const NJCAA_DIV_STRENGTH = { I: 0.6, II: 0.55, III: 0.42 };
+
+function divisionStrength(school) {
+  if (school.div === 'JUCO' && NJCAA_DIV_STRENGTH[school.njcaaDivision] !== undefined) {
+    return NJCAA_DIV_STRENGTH[school.njcaaDivision];
+  }
+  return DIV_STRENGTH[school.div] || 0.5;
+}
+
 function soccerQualityScore(school) {
   const devAvg = calcDevAvg(school) / 100;
   const nextLevel = nextLevelFactor(school);
-  const divStrength = DIV_STRENGTH[school.div] || 0.5;
+  const divStrength = divisionStrength(school);
   return (devAvg * 0.6) + (nextLevel * 0.3) + (divStrength * 0.1);
 }
 

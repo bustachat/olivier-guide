@@ -6,6 +6,73 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.53 (2026-09-17) — Elite JUCO badge limited to 2023-2025 national results; NJCAA division strength split using Massey ratings
+
+**Owner rulings (2026-09-17).**
+- Army and Navy value scores: no change.
+- Monroe: leave for now.
+- Elite JUCO: apply the written rule, limited in time.
+- Division strength: use Massey ratings as the outside scale.
+
+**New Elite rule.** A junior college is Elite only if, in the last 3 completed seasons (now 2023, 2024, 2025), it:
+- won or finished runner-up at its NJCAA national championship, or
+- had two or more NJCAA All-Americans in one season.
+
+Final Four finishes do not count. The window rolls forward each season. The top-5 final-poll route was approved but could not be applied: NJCAA's rankings page reads "Rankings are temporarily unavailable" and United Soccer Coaches shows only the current season.
+
+**Result: 15 Elite, down from 39.** No school was promoted; 24 were moved to Standard.
+- **Division I:** Indian Hills (2025 champion), Daytona State (2025 runner-up), Iowa Western (2024 champion), Cowley (2024 runner-up), Monroe (2023 champion), Tyler (2023 runner-up); Mohave, Casper, Harford and USC Union on two or more 2025 All-Americans.
+- **Division II:** Phoenix (2025 champion, 2023 runner-up), Northeast (2024 champion), Neosho County (2024 runner-up), Iowa Lakes (2023 champion), Pima (three 2025 All-Americans).
+- **Moved to Standard:** Barton, Arizona Western, EFSC, Glendale, Dodge City, Southeastern, Blinn, Coastal Bend, Johnson County, Murray State, Otero, Montgomery, Yavapai, Hill, Western Texas, Truman, Laramie County, Western Nebraska, USC Lancaster, USC Sumter, Crowder, Harcum, Salt Lake CC, Snow.
+
+**Evidence, read in Chrome with the owner's VPN on:**
+- 2025 DI semifinals (Indian Hills beat Cowley 2-1, Daytona State beat Mohave 3-1): njcaa.org championships results page.
+- 2024 DI final (Iowa Western beat Cowley on penalties) and 2024 DII final (Northeast beat Neosho County 2-1): njcaa.org 2024-25 results pages.
+- 2025 DI and DII All-America teams: njcaa.org all-americans pages.
+- 2023 DI final (Monroe beat Tyler on penalties): Monroe's own release, Nov 18, 2023.
+- 2023 DII final (Iowa Lakes beat Phoenix College 5-3 on penalties after a scoreless double-overtime game): Spencer Daily Reporter, Nov 20, 2023.
+- 2025 DII champion Phoenix College: the NJCAA's own Facebook post title. Phoenix's and CCBC Essex's sites showed a human-verification wall.
+- njcaa.org no longer serves 2023-24 results, and its 2023-24 and 2024-25 All-America pages did not load. So a school qualifying only through 2023 or 2024 All-Americans could have been missed.
+
+**Division strength.** Massey Ratings rates every NJCAA team on one scale (final 2025 season, 252 teams). Average ratings: DI 6.50, DII 5.91, DIII 4.57.
+- `js/scores.js`: new `NJCAA_DIV_STRENGTH` {I: 0.6, II: 0.55, III: 0.42} and `divisionStrength()`. Division I keeps 0.6; II and III are scaled by their rating against Division I. Santa Monica (CCCAA) keeps 0.6.
+- `data/juco.json`: new `njcaaDivision` field on all 88 NJCAA schools, matching each school's existing `fundingPathway`.
+- **Scores moved (Fit / value):**
+  - Neosho County: fit 43 → 42, value 52 → 51
+  - Nassau: fit 39 → 38, value 43 → 42
+  - Ulster: fit 32 → 31, value 41 → 40
+  - Suffolk: fit 29 → 28, value 36 → 35
+  - Westchester: fit 35 → 34, value unchanged at 42
+- Every other score rounds the same.
+- `validate_consistency.js`: new `NJCAA-DIV` check. Every NJCAA school needs a valid division matching its `fundingPathway`, and no non-NJCAA school may carry the field.
+- `negtests/checks.json`: 2 new cases (10/10 proven).
+
+**Facts corrected while checking.**
+- Titles added:
+  - Iowa Western: 2024 DI champion
+  - Cowley: 2024 DI runner-up, replacing "(historical)"; now 2025 national semifinalist instead of the "#4-5 nationally" ranking
+  - Tyler: 2023 DI runner-up
+  - Iowa Lakes: 2023 DII champion, previously missing entirely
+  - Neosho County: 2024 DII runner-up
+  - Phoenix: 2023 DII runner-up
+  - Mohave: 2025 DI semifinalist
+  - Plus the verified 2025 All-American counts
+- Daytona State's remaining "Top-5 JUCO D1 transfer feeder" claim was removed from `rec`, `titles`, `notable` and the coach's strengths.
+- Northeast's note no longer calls CCBC Essex the "eventual champions" (Phoenix won).
+- Cowley's coach record, bio and strengths now cite the 2024 final and 2025 semifinal instead of the October ranking.
+- `pipeline.json` JUCO rows:
+  - Barton, Arizona Western and EFSC no longer carry the Elite badge.
+  - Monroe no longer claims a 2024 runner-up finish.
+  - Iowa Western no longer claims 100% roster turnover.
+  - The internal "(found and corrected v38.9)" stamp was removed.
+  - The grouped MLS row now lists verified national results instead of "all 19 schools are nationally ranked".
+
+**Flagged, not fixed.**
+- Monroe's own `titles` and `confRecord` still say 2024 runner-up and "3x champions 2021-2023". The official 2024 final was Iowa Western v Cowley, and Monroe's 2023 release calls that title its second straight and third in five years. Left per the owner's "leave Monroe" ruling.
+- `lensScores.soccer` is out of date for many older JUCOs (for example, Indian Hills stores 80 against a formula value of 43). Nothing renders it.
+
+**Verified locally:** 170 schools load; exactly 15 Elite chips render; Iowa Lakes and Cowley modals show the new badge tooltip and titles; Barton has no badge; the five DIII/DII scores match. `validate_consistency.js` Issues: 0; `validate_schools.py` PASS; `check_no_jargon.py` PASS.
+
 ### v45.52 (2026-09-16) — National Park College is NJCAA Division II, not Division I (Fit 58 → 55)
 
 **Found while clearing the v45.46 "possible division mismatch" flag.**

@@ -98,15 +98,22 @@ PATTERNS = [
      "a 'research pass' / 'accuracy pass' process reference"),
     (re.compile(r"\bfuture session\b", re.IGNORECASE), "'future session' — a process reference"),
     (re.compile(r"\bClaude(?: for| in)? Chrome\b|\bMCP\b", re.IGNORECASE), "a research-tooling name (Claude for Chrome / MCP)"),
+    # Promoted from WARN in v45.48 once all rendered hits were rewritten.
+    # Comparisons scoped to a research batch mean nothing to a reader.
+    # "campaign" alone is NOT matched: "a winless conference campaign" is
+    # ordinary soccer usage.
+    (re.compile(r"\b(this|the|that|its|of) (entire |whole |final )?(\w+ )?batch(es|'s)?\b|\bBatch \d", re.IGNORECASE),
+     "a research-batch reference ('this batch', 'the batch's', 'Batch 2')"),
+    (re.compile(r"\b(this|the|that) (entire |whole )?(\w+ )?(gap-fill )?campaign('s)?\b(?! season)", re.IGNORECASE),
+     "a research-campaign reference ('this campaign', 'the campaign's')"),
+    (re.compile(r"\baudit-discovered\b|\balready-guide\b", re.IGNORECASE), "internal guide-building wording"),
+    (re.compile(r"\b(previous stored|stored figure)\b[^.]*\bballpark\b", re.IGNORECASE),
+     "internal history of a past data error ('the previous stored $X was an unresearched ballpark')"),
 ]
 
-# Reported, not failing. "this batch" / "this campaign" are the same leak
-# class, but ~180 rendered fields carry them (logged as an open item in
-# CLAUDE.md §6C). Promote these to PATTERNS once that cleanup lands.
-WARN_PATTERNS = [
-    (re.compile(r"\bthis batch\b", re.IGNORECASE), "'this batch'"),
-    (re.compile(r"\bthis campaign\b", re.IGNORECASE), "'this campaign'"),
-]
+# Reported, not failing. Empty since v45.48; keep the mechanism for the next
+# leak class that is too large to fix in the same change it is found.
+WARN_PATTERNS = []
 
 
 def find_repo_root():

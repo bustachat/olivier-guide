@@ -6,6 +6,43 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.48 (2026-09-16) — Research-batch/campaign comparisons removed from rendered text; checker now fails on them
+
+**What was wrong.** Rendered text compared schools only against the research batch or campaign they happened to be added in: "the cheapest tuition found anywhere in this campaign", "the strongest on-field program in this batch", "the most expensive school in Batch 2". A reader has no idea what "this batch" is, and many of the comparisons were false once measured against the whole guide.
+
+**Data (text only; 325 string values changed, no number, boolean or key; verified leaf-by-leaf against HEAD).**
+- **255 sentences with "this batch" / "this campaign"** across `acc`, `big-east`, `big-ten`, `big-west`, `caa`, `d1-other`, `d2`, `juco`, `coaches`, `conferences` and `conf-prestige`.
+- **97 more in variant wording**: "this entire campaign", "the batch's", "Batch 2"/"Batch 6's", "audit-discovered", "already-guide".
+- **45 cost notes describing the guide's own past estimate errors** ("The previous stored $38,000 was an unresearched ballpark and understated the cost by…") were removed from `fin.internationalNote`. Remarks that are still true were kept (St. John's is a full-price NYC private; Elon's sticker price is not low). The "most expensive school in the guide" claims attached to Northwestern, Villanova and Providence were dropped: Duke is the most expensive, and Northwestern is 5th.
+- **How comparisons were rewritten.** Where the batch equals a group a reader can see, and that group is unchanged in the guide, the comparison was re-scoped to it: "the guide's five Chicago schools", "four USC campuses", "five Wyoming schools" and "eight Region 18 schools". Otherwise it became a non-superlative. Every cost or size superlative was checked against the full guide first:
+  - Northeast Texas CC's "cheapest cost in this entire campaign" is 5th cheapest in the guide; it now reads "one of the lowest costs in the guide".
+  - Paris JC's "cheapest tuition anywhere" is 18th among JUCOs.
+  - Jacksonville College is "a very small school". Pacific NW Christian (~300 students) is smaller.
+  - Laramie County's degree is "a strong ACU-aligned degree", not the guide's strongest (acuAlign outside the JUCO top 10).
+- **Malcolm X College:** five fields still said Jesse Rosen "has led the program since 2014". They now say he led it until May 2026 and the position is vacant (CLAUDE.md §6B).
+- A double space left in Cal State LA's note was fixed.
+
+**UI copy (`js/app.js`, the Explore JUCO section intro).** The same wording plus several false guide-wide claims were fixed:
+- CSN was "the guide's only JUCO in a genuine major city".
+- Jacksonville was "the guide's smallest school".
+- Connors State, National Park and Texas Southmost were each called the guide's newest or youngest program.
+- Laramie County had "the guide's strongest ACU-aligned degree".
+
+"these four Region 14 schools" tripped the PROSE check as a claim of "14 schools" (the same false-positive class as v44.85's "Region 2 school"), so it was reworded to "these four".
+
+**Tooling — `check_no_jargon.py`.** "this batch"/"this campaign" moved from WARN to FAIL, widened to the variant forms ("the batch's", "Batch 2", "this entire campaign"). New patterns cover "already-guide" and "audit-discovered" and past-error notes ("previous stored … ballpark"). Bare "campaign" is deliberately not matched, because "a winless conference campaign" is ordinary soccer usage. **Negative test:** against v45.47 data the checker fails with 347 findings; on the fixed data it passes. It still reads data only, not `js/app.js` copy.
+
+**Verification.**
+- `validate_schools.py`: 170 schools pass.
+- `validate_consistency.js`: Issues: 0.
+- `node --check js/app.js`: passes.
+- negtest suite: 8/8 proven, files restored byte-identical.
+- Local preview: all 170 Details modals opened and scanned, plus the full page text. There are no batch/campaign/ballpark leaks.
+
+**Found, not fixed (pre-existing at a7578a3, logged in CLAUDE.md §6C):** `vermont`'s Facilities tab renders "undefined" (no `facilityDetails.extras`/`note`), and `paris_jc`'s Pro Pipeline tab renders "undefined D1 transfers verified over undefined" (`nextLevel` lacks `d1Count`/`yearsCovered`/`years`).
+
+---
+
 ### v45.47 (2026-09-16) — Rendered-field jargon cleanup (recurrence #3); jargon checker now scans every rendered field
 
 **What was wrong.** Text that renders on the public site still contained internal research wording: "this session", "within this session's research", "earlier research pass", "pending a future session with better PDF access", "Roster count verified by browser MCP", code field names in backticks (`` `tuition` ``, `` `fees` ``, `` `roomBoard` ``), and the code constant `ACU_UNIT_META` with a `js/app.js` path. A family reading the guide should never see any of it (§8).

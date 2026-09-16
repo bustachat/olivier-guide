@@ -130,8 +130,11 @@ python .claude/skills/roster-refresh/scripts/check_roster_snapshot.py   # only i
   session", "research pass", "future session") and tooling names
   ("Claude for Chrome", "MCP"). Only confirmed internal-only fields are
   exempt (`devScoresNote`, `overallScoreNote`, `minutesOutlook.note`, the
-  coach-level `note`) plus ids and links. "this batch"/"this campaign" are
-  reported as WARN only until that open cleanup lands (CLAUDE.md §6C).
+  coach-level `note`) plus ids and links. Since v45.48 it also fails on
+  research-batch/campaign comparisons ("this batch", "the batch's",
+  "Batch 2", "this entire campaign"), "already-guide", and notes about a
+  past data error ("the previous stored $X was an unresearched ballpark").
+  It does not read `js/app.js`/`index.html` UI copy; sweep those by hand.
   CLAUDE.md documents this exact bug once already (v44.89) — and while
   building this skill, the check found it had recurred: `neosho_county_cc`
   and `lsu_eunice` were still disclosing a "trajectory deliberately not

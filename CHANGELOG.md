@@ -6,6 +6,32 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.52 (2026-09-16) — National Park College is NJCAA Division II, not Division I (Fit 58 → 55)
+
+**Found while clearing the v45.46 "possible division mismatch" flag.**
+
+**`hagerstown_cc`: no change.** It is listed in Region 20's own 2025-26 **Division I** standings (njcaaregion20.org), alongside Montgomery College and Harford CC.
+
+**`national_park`: stored as NJCAA Division I; it is Division II.** Evidence, read in Chrome:
+- National Park College's own release of September 16, 2025 (np.edu, "Nighthawk Men's Soccer Enters Top 20") says the team entered the **NJCAA Division II** national top 20 and had beaten Northeast CC, the defending Division II champion.
+- region2athletics.com's 2025-26 standings show National Park playing only two conference games, both against UA Cossatot, which is Region 2's Division II group. The school's own title name is "Region 2 DII Men's Soccer Champion".
+- An August 2026 National Park release describes Blinn as "NJCAA Division I No. 10-ranked", the phrasing used for an opponent in a different division.
+
+The stored notes had explained "DII" as a geographic sub-pool. That was wrong.
+
+**Change Type 14 cascade.**
+- **Division fields:** `conf` is now "NJCAA Division II / Region 2", and `soccerLevel`/`soccerLevelShort` now say Division II.
+- **Aid:** `fundingPathway` full → **capped** (−3). `aid` now reads "Athletic (NJCAA DII: tuition, fees & books; no room/board)", the same framing as the guide's other DII schools, and `fin.internationalNote` now says aid can't cover room and board.
+- **Scores:** `fitOlivier` and `lensScores.overall` 58 → **55**; `lensScores.value` 62 → **60** (both recomputed with `js/scores.js`).
+- **Text:** `jucoTierNote`, `confRecord[0]` and `titles[0]` were rewritten to describe the Division II group correctly.
+- **Elsewhere:** the coach entry's `conf`, the CLAUDE.md School → File table, `conferences.json` (roster label, the Region 2 sentence that wrongly grouped Rich Mountain into the small pool, and the school sentence), `conf-prestige.json` and the `js/app.js` JUCO intro.
+
+**Not changed (flagged, not guessed):** William Glass's official bio says he is "entering his 19th season" at USC Salkehatchie, but the bio is undated and its 207-184-21 record is older than the 218-186-24 already stored. The 16-versus-19 tenure conflict stays open in CLAUDE.md.
+
+**Verification.** `validate_schools.py` passes, and `validate_consistency.js` reports Issues: 0: the FIT check flagged 58 vs 55 before the cascade was stored, and the CHIPS check places the school in a conference chip. `check_no_jargon.py` passes, and `node --check js/app.js` passes.
+
+---
+
 ### v45.51 (2026-09-16) — Unsupported superlatives and old ballpark costs removed from shared texts; three UI label fixes
 
 **Claims the data doesn't support.**

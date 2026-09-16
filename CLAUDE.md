@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v45.51 (2026-09-16)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v45.52 (2026-09-16)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -150,7 +150,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Monroe | `data/juco.json` | `monroe_college` | JUCO | NJCAA DI |
 | Montgomery College | `data/juco.json` | `montgomery_college` | JUCO | NJCAA DI / Region 20 |
 | Nassau CC | `data/juco.json` | `nassau_cc` | JUCO | NJCAA DIII / Region 15 |
-| National Park College | `data/juco.json` | `national_park` | JUCO | NJCAA DI / Region 2 |
+| National Park College | `data/juco.json` | `national_park` | JUCO | NJCAA DII / Region 2 |
 | Navy | `data/aac.json` | `navy` | D1 | Patriot League (men's soccer; AAC for other sports — filed in aac.json but grouped Patriot via confKey) |
 | NC State | `data/acc.json` | `ncstate` | D1 | ACC |
 | Neosho County CC | `data/juco.json` | `neosho_county_cc` | JUCO | NJCAA DII / KJCCC |
@@ -1295,7 +1295,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v45.51 (2026-09-16).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v45.52 (2026-09-16).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1418,7 +1418,7 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
 
 **Research note:** NJCAA's current platform does NOT serve Harcum's 2025-26 roster; switching the season lands on a "Historical team directory" page. The old `njcaastats.prestosports.com` host is disabled, Wayback has no 2025 capture of Harcum's roster page, and region19.org shows a human-verification wall. **An opponent's box score was the working Tier-1 route.**
 
-**🚩 New open item — possible division mismatch, verify separately, do NOT act on the NJCAA teams list:** NJCAA's 2026-27 **Division II** men's soccer teams list includes `national_park` and `hagerstown_cc`, both stored as NJCAA DI (`fundingPathway: full`). §6's Region 15 incident showed those team lists mix divisions through cross-division games, so this is a lead, not a finding. Check each school's own region/conference standings for its division of record. A real DII result would cascade into `fundingPathway` (−3) and `aid`.
+**✅ RESOLVED v45.52 — division check for `national_park` and `hagerstown_cc`.** `hagerstown_cc` is Division I (listed in njcaaregion20.org's 2025-26 Division I standings with Montgomery and Harford); no change. `national_park` is **NJCAA Division II**: National Park College's own release (np.edu, Sept 16 2025) says it entered the NJCAA Division II top 20, and its 2025 "Region 2 DII" title came from Region 2's two-team DII group with UA Cossatot. The stored notes had misread "DII" as a geographic sub-pool. Change Type 14 cascade applied: `conf` and `soccerLevel`/`soccerLevelShort` now say Division II, `fundingPathway` full → capped (−3), `aid` uses the DII framing, `fitOlivier`/overall 58 → 55, value 62 → 60; coach `conf`, the reference table, `conferences.json`, `conf-prestige.json` and the `js/app.js` intro updated. Lesson: a school's own title name ("Region 2 DII Champion") can be the division tell; read it literally before explaining it away.
 
 **🚩 `recruit_risk` rule introduced in Batch 7 (unscored field):** returning midfielders ≥7 → High, 3–6 → Medium, 0–2 → Low. It was applied to the 26 Batch 7 JUCOs plus `tyler_jc` (v45.36). All other JUCOs still carry older judgment values; align them the next time each is refreshed.
 

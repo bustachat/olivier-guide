@@ -10342,14 +10342,14 @@
     "loc": "Hot Springs, AR",
     "region": "south",
     "div": "JUCO",
-    "conf": "NJCAA Division I / Region 2",
+    "conf": "NJCAA Division II / Region 2",
     "confKey": "other",
     "warm": true,
     "city": false,
     "top": false,
     "juco2yr": true,
     "jucoTier": "Standard",
-    "jucoTierNote": "A genuinely new program (first men's soccer season 2024-25, hired founding coach Jan 2024) that has already produced one solid season: 2025-26 finished 8-4-3 overall (.633). Region 2 splits its men's soccer conference schedule into two geographic sub-pools for regular-season play; National Park's pool contained only itself and University of Arkansas Cossatot, and winning that 2-team pool (1-0-1) earned an official “Region 2 DII Men's Soccer Champion” banner — a real, publicly announced title, but not the same achievement as the main Region 2 Tournament, which National Park did not qualify for (that 6-team bracket drew only from the larger Oklahoma-school pool; Murray State won it and advanced to the Mid-South District final). Verified via official region2athletics.com 2025-26 standings, team stats, and tournament-bracket pages.",
+    "jucoTierNote": "A genuinely new program (first men's soccer season 2024-25, hired founding coach Jan 2024) that has already produced one solid season: 2025-26 finished 8-4-3 overall (.633). National Park competes in NJCAA Division II (it entered the NJCAA Division II national top 20 in September 2025), and Region 2's Division II group contains only National Park and University of Arkansas Cossatot; winning it (1-0-1) earned the official “Region 2 DII Men's Soccer Champion” title. That is separate from the Region 2 Division I tournament, which Murray State won. Confirmed via region2athletics.com's 2025-26 standings and National Park College's own releases.",
     "njcaaRegion": "Region 2",
     "njcaaRegionArea": "Oklahoma / western Arkansas",
     "profileDepth": "full",
@@ -10430,10 +10430,10 @@
         "covered": false
       }
     ],
-    "soccerLevel": "NJCAA Division I — Region 2 (Arkansas)",
-    "soccerLevelShort": "NJCAA Division I",
-    "aid": "Athletic",
-    "fundingPathway": "full",
+    "soccerLevel": "NJCAA Division II — Region 2 (Arkansas)",
+    "soccerLevelShort": "NJCAA Division II",
+    "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
+    "fundingPathway": "capped",
     "size": 1806,
     "prePT": "Foundation",
     "prePTShort": "Foundation",
@@ -10451,13 +10451,13 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "National Park College's official 2026-27 Tuition and Fees page (source: np.edu/admissions-aid/financial-aid/tuition-fees) publishes a distinct “International Residents” per-credit-hour rate: $227 tuition + $75 mandatory fee + $10 student activity fee = $312/credit hour ($307/credit before the lab fee, which only applies to lab-based courses and is excluded here); at a standard 24 credits/year that is $7,368/yr (fees bundled into tuition to avoid double-counting, so fees are $0). Room/Board: the school's own official 2026-27 Cost of Attendance table gives $9,478/yr as its “On Campus Living Expenses: Housing and Food” estimate for a dependent student — independently cross-checked against the actual Dogwood/Redbud Hall per-semester rate sheet (cheapest 4BR/2BA private room: $4,000 Fall + $3,200 Spring = $7,200/yr) plus the mandatory on-campus meal plan ($1,100/semester × 2 = $2,200/yr) = $9,400/yr, a close match. Direct billed cost: $16,846/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+      "internationalNote": "National Park College's official 2026-27 Tuition and Fees page (source: np.edu/admissions-aid/financial-aid/tuition-fees) publishes a distinct “International Residents” per-credit-hour rate: $227 tuition + $75 mandatory fee + $10 student activity fee = $312/credit hour ($307/credit before the lab fee, which only applies to lab-based courses and is excluded here); at a standard 24 credits/year that is $7,368/yr (fees bundled into tuition to avoid double-counting, so fees are $0). Room/Board: the school's own official 2026-27 Cost of Attendance table gives $9,478/yr as its “On Campus Living Expenses: Housing and Food” estimate for a dependent student — independently cross-checked against the actual Dogwood/Redbud Hall per-semester rate sheet (cheapest 4BR/2BA private room: $4,000 Fall + $3,200 Spring = $7,200/yr) plus the mandatory on-campus meal plan ($1,100/semester × 2 = $2,200/yr) = $9,400/yr, a close match. Direct billed cost: $16,846/yr. As an NJCAA Division II program, athletic aid can cover tuition, fees and books but not room and board, so the living costs above are paid regardless."
     },
     "confRecord": [
       {
         "yr": 2025,
-        "pos": "Region 2 DII Champion — not a Region 2 Tournament qualifier (1-0-1 conf, .750, in a 2-team sub-pool)",
-        "note": "8-4-3 overall (.633). Region 2 splits its men's soccer regular-season conference schedule into two geographic sub-pools; National Park's pool contained only itself and University of Arkansas Cossatot. Did not qualify for the 6-team Region 2 Tournament (drawn from the larger Oklahoma-school pool only), which Murray State won. Verified via official region2athletics.com 2025-26 standings and team stats pages."
+        "pos": "Region 2 Division II Champion (1-0-1 conf, .750)",
+        "note": "8-4-3 overall (.633). Region 2's Division II group contains only National Park and University of Arkansas Cossatot. The separate Division I tournament was won by Murray State. Confirmed via region2athletics.com's 2025-26 standings."
       },
       {
         "yr": 2024,
@@ -10466,7 +10466,7 @@
       }
     ],
     "titles": [
-      "2025 Region 2 DII Men's Soccer Champion (2-team sub-pool, not the main Region 2 Tournament) — first title in program history (program founded 2024)"
+      "2025 NJCAA Region 2 Division II Men's Soccer Champion — first title in program history (program founded 2024)"
     ],
     "proPlayers": {
       "mlsPicks5yr": 0,
@@ -10491,14 +10491,14 @@
       "fitness": 45
     },
     "devScoresNote": "A genuinely new program (Jan 2024 founding) with a lean staff — head coach Corey Irvine has no listed assistant on the official staff directory, and the athletic department's sole Athletic Trainer (Heidi Balliette) is shared across all sports, not soccer-dedicated. Home matches are played off-campus at Hot Springs World Class High School (per the official 2026-27 schedule page), not a dedicated on-campus venue — the thinnest facility footprint of this batch. Offset by coach Irvine's own strong personal playing/coaching pedigree (see coaches.json).",
-    "fitOlivier": 58,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 58,
+      "overall": 55,
       "soccer": 45,
       "academic": 26,
       "minutes": 63,
       "lifestyle": 50,
-      "value": 62
+      "value": 60
     },
     "tags": [
       "warm"

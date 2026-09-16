@@ -121,10 +121,17 @@ python .claude/skills/roster-refresh/scripts/check_roster_snapshot.py   # only i
   trajectory is stored, never that the trajectory itself is right). This
   is a report, not a gate — a mismatch can be a legitimate, disclosed
   `facts_only` state; read the note before treating it as a bug.
-- **`check_no_jargon.py`** sweeps `trajectoryNote`/`recruit_pathway_note`
-  for leaked internal jargon (§-references, `CLAUDE.md`, backtick code
-  identifiers, ALL_CAPS constant names, the internal "MIXED VINTAGE"
-  marker). Both fields render **verbatim** on the live Minutes Outlook tab.
+- **`check_no_jargon.py`** sweeps **every rendered string** in all 10
+  conference files plus `coaches.json`, `conferences.json` and
+  `conf-prestige.json` (since v45.47; it used to read only
+  `trajectoryNote`/`recruit_pathway_note`) for leaked internal jargon:
+  §-references, `CLAUDE.md`, backtick code identifiers, ALL_CAPS constant
+  names, the "MIXED VINTAGE" marker, research-process wording ("this
+  session", "research pass", "future session") and tooling names
+  ("Claude for Chrome", "MCP"). Only confirmed internal-only fields are
+  exempt (`devScoresNote`, `overallScoreNote`, `minutesOutlook.note`, the
+  coach-level `note`) plus ids and links. "this batch"/"this campaign" are
+  reported as WARN only until that open cleanup lands (CLAUDE.md §6C).
   CLAUDE.md documents this exact bug once already (v44.89) — and while
   building this skill, the check found it had recurred: `neosho_county_cc`
   and `lsu_eunice` were still disclosing a "trajectory deliberately not

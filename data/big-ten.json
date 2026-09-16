@@ -1037,7 +1037,7 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 mgoblue.com roster (13 MFs of 32). Michigan's table publishes no previous-school column, so the transfer-vs-freshman split cannot be re-derived; classification retained from the earlier research pass and treated as lower-confidence. The headline finding is turnover rather than pathway: 8 of 13 MFs clear before 2027, the second-largest midfield opening in this batch.",
+      "recruit_pathway_note": "Re-read on the live 2026-27 mgoblue.com roster (13 MFs of 32). Michigan's table publishes no previous-school column, so the transfer-vs-freshman split cannot be re-derived; classification retained from an earlier roster review and treated as lower-confidence. The headline finding is turnover rather than pathway: 8 of 13 MFs clear before 2027, the second-largest midfield opening in this batch.",
       "trajectory": [
         {
           "year": 2027,
@@ -1064,7 +1064,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "9 of 15 MFs cleared, but 5 Fr remain as Jrs creating peer-level competition through Yr1-2. Michigan recruits at Big Ten elite level. Roster count verified by browser MCP; names not captured."
+      "trajectoryNote": "9 of 15 MFs cleared, but 5 Fr remain as Jrs creating peer-level competition through Yr1-2. Michigan recruits at Big Ten elite level. Roster count verified on the official roster page; names not captured."
     },
     "acuUnits": [
       {
@@ -1436,7 +1436,7 @@
       "maxAthletic": 0.8,
       "maxAcademic": 6000,
       "aidType": "athletic",
-      "internationalNote": "Ohio State international direct billed cost $63,004 (2026-27, Tier-1 verified from Ohio State's official Basic Costs table, International students panel): tuition $47,374 + housing and food $15,630. Ohio State publishes tuition with instructional and general fees COMBINED (and it includes a $3,103 annual International Undergraduate Student Fee), so the combined figure is stored under `tuition` and `fees` is 0 — the sum invariant still holds. Mandatory student health insurance ($4,108), books, and personal expenses are additional and excluded by this guide's convention; with all of them the published budget is about $72,178. The previous stored $52,000 was an unresearched ballpark and understated the cost by $11,004. Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. Columbus has affordable cost of living — stretches the package further. Large campus with strong international student support."
+      "internationalNote": "Ohio State international direct billed cost $63,004 (2026-27, Tier-1 verified from Ohio State's official Basic Costs table, International students panel): tuition $47,374 + housing and food $15,630. Ohio State publishes tuition with instructional and general fees COMBINED (and it includes a $3,103 annual International Undergraduate Student Fee), so the combined figure is recorded as tuition, with fees at $0. Mandatory student health insurance ($4,108), books, and personal expenses are additional and excluded by this guide's convention; with all of them the published budget is about $72,178. The previous stored $52,000 was an unresearched ballpark and understated the cost by $11,004. Athletic scholarship can cover 35–55% of COA. Merit aid available for international students. Columbus has affordable cost of living — stretches the package further. Large campus with strong international student support."
     },
     "aid": "Athletic",
     "size": 61000,

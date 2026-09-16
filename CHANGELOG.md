@@ -6,6 +6,30 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.47 (2026-09-16) — Rendered-field jargon cleanup (recurrence #3); jargon checker now scans every rendered field
+
+**What was wrong.** Text that renders on the public site still contained internal research wording: "this session", "within this session's research", "earlier research pass", "pending a future session with better PDF access", "Roster count verified by browser MCP", code field names in backticks (`` `tuition` ``, `` `fees` ``, `` `roomBoard` ``), and the code constant `ACU_UNIT_META` with a `js/app.js` path. A family reading the guide should never see any of it (§8).
+
+**Data (text only, no score or number changed).** 77 string values rewritten across `aac`, `acc`, `big-ten`, `big-west`, `d1-other`, `d2`, `juco` and `conferences.json`. A leaf-by-leaf comparison against HEAD confirmed that only string values changed; every number, boolean and key is identical.
+- **40 "this session" hits**: `draftRank` (daley_college, hagerstown_cc, snow_college, colorado_northwestern_cc, usu_eastern, truckee_meadows_cc, pacific_northwest_christian_college); `rec`, `acuAlignNote`, `kinRank`, `courses[]`, `facilityDetails.note`/`academicLabs` (crowder_college, eastern_arizona, csn_college, hagerstown_cc, central_georgia_tech); `confRecord[].note` (daytona_state, efsc ×2, montgomery_college ×3); `fin.internationalNote`, `facilityDetails.note`, `culture.olivierMatch`, `rec` (johnson_county_cc); `proPlayers.notable[]`/`nextLevel.note` (jefferson_college_mo); `trajectoryNote` (southeastern_cc_ia, lsu_eunice); `housing.note` (pba, georgian_court); `titles[]` (uab); juco `olivierNote` (conferences.json).
+- **38 further leaks found by the widened checker**: 26 `fin.internationalNote` strings with backticked field names (USF, Memphis, Temple, UAB, FAU, Wake Forest, NC State, Ohio State, CSUF, UCA, Akron, and 15 JUCOs), 7 `acuAlignNote` strings citing `ACU_UNIT_META`, 2 `trajectoryNote` strings citing "browser MCP" (ncstate, michigan), 3 `recruit_pathway_note` strings citing "the earlier research pass" (fau, syracuse, michigan).
+- **Comparisons that only made sense inside one research batch were replaced with ones a reader can check.** Johnson County's cost is "one of the highest among the guide's JUCOs" (3rd of 83), not "the highest of any school added this session". Truman is "the strongest on-field program of the guide's five Chicago schools".
+- **Sentences that became false once "this session" was removed were deleted, not kept.** `southeastern_cc_ia` and `coastal_bend_cc` `rec` said no roster data was available, but both now have 2026-27 rosters. Suffolk and Westchester now say plainly that the official roster publishes no player positions (confirmed in a real browser, 2026-08-06).
+
+**Tooling — `.claude/skills/roster-refresh/scripts/check_no_jargon.py`.**
+- Scans every string in all 10 conference files plus `coaches.json`, `conferences.json` and `conf-prestige.json`, instead of only `trajectoryNote`/`recruit_pathway_note`. Fields are exempted by name, not listed as included, so a new rendered field is covered by default.
+- Exempt: `devScoresNote`, `overallScoreNote`, `minutesOutlook.note` and the coach-level `note` (no renderer, confirmed by grep), plus ids and links.
+- New patterns: "this session", "research/accuracy pass", "future session", "Claude for Chrome" / "MCP".
+- The ALL_CAPS constant pattern now skips a course prefix followed by a number (Northwestern's real `BIOL_SCI 215`).
+- "this batch" / "this campaign" are WARN-only (see below).
+- **Negative test:** against HEAD's data the checker fails with 81 findings (40 "this session"); against the fixed data it passes.
+
+**Verification.** qa-suite passes (`validate_schools.py` 170 schools, `validate_consistency.js` Issues: 0, json.tool clean). Local preview: 170 schools load; Details modals for crowder_college, johnson_county_cc, usf, national_park, southeastern_cc_ia, snow_college, pba, montgomery_college and efsc render with no `undefined`/`NaN`, no "this session" and no backticks, and the rewritten text is present.
+
+**Still open (CLAUDE.md §6C):** "this batch"/"this campaign" in ~180 rendered strings; "Verified v38" version stamps in some notes; `southeastern_cc_ia` `rec` still says "interim head coach"; the `southeastern_cc_ia` and `lsu_eunice` `trajectoryNote` still quote 2025-26 MF counts.
+
+---
+
 ### v45.46 (2026-09-15) — Transfer tracking follow-up: North Idaho pro-pipeline text; Magnason conflict resolved; Harcum moves
 
 **`north_idaho_college` (Change Type 7, text-only):** Federico Bellisi's move to NCAA Division I College of Charleston is now confirmed Tier-1. North Idaho's 2025-26 roster lists him as #14, Bologna / Liceo A Sabin. Charleston's 2026 roster lists him as MF, So., Bologna, with last school "Liceo A Sabin (North Idaho College)". Following the LSU Eunice precedent for a single confirmed transfer (§5b), he is named in `proPlayers.notable[]` and `draftRank`, and `nextLevel.note` was rewritten. `nextLevel.perYear` stays `null` (the neutral value), so **no score moved** (fit 47, lens scores unchanged). The old `draftRank` also carried internal wording ("within this session's research"), a rendered-field jargon leak (§8); it has been replaced.

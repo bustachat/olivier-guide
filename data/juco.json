@@ -97,7 +97,7 @@
       "maxAthletic": 0,
       "maxAcademic": 3000,
       "aidType": "need-only",
-      "internationalNote": "Santa Monica College F-1 international cost $25,658 (2026-27, Tier-1 verified from SMC's official International Student Tuition & Fees page for Fall 2026 - Summer 2027): non-resident tuition $486 a unit × 24 units = $11,664 + SMC health $56, Associated Students resource $20, student benefits $45 and student representation $4 = $125 in fees + SMC's published living-expenses allowance $13,869. NO credit-load assumption was needed — SMC states the basis itself (24 units across 2 semesters, the F-1 minimum of 12 a semester). ⚠ READ THE HOUSING LINE CAREFULLY: SMC has NO on-campus housing at all, so the $13,869 is NOT billed by the college — it is SMC's own 9-month living-expenses estimate based on a HOMESTAY WITH TWO MEALS A DAY, and SMC's page says a student with free room and board locally may deduct it in full. It is stored under `roomBoard` because a player still has to live somewhere and a tuition-only figure would badly understate the real outlay. Mandatory F-1 health insurance ($2,310) is excluded by convention, as are books ($1,064) and personal expenses ($4,968); SMC's own total for the year is $34,000. The previous stored $9,000 was an unresearched ballpark and understated the cost by $16,658 — nearly threefold, the largest PROPORTIONAL error in the campaign. As a CCCAA program Santa Monica cannot offer athletic scholarships at all, so this figure is very close to what is actually paid."
+      "internationalNote": "Santa Monica College F-1 international cost $25,658 (2026-27, Tier-1 verified from SMC's official International Student Tuition & Fees page for Fall 2026 - Summer 2027): non-resident tuition $486 a unit × 24 units = $11,664 + SMC health $56, Associated Students resource $20, student benefits $45 and student representation $4 = $125 in fees + SMC's published living-expenses allowance $13,869. NO credit-load assumption was needed — SMC states the basis itself (24 units across 2 semesters, the F-1 minimum of 12 a semester). ⚠ READ THE HOUSING LINE CAREFULLY: SMC has NO on-campus housing at all, so the $13,869 is NOT billed by the college — it is SMC's own 9-month living-expenses estimate based on a HOMESTAY WITH TWO MEALS A DAY, and SMC's page says a student with free room and board locally may deduct it in full. It is counted as room and board because a player still has to live somewhere and a tuition-only figure would badly understate the real outlay. Mandatory F-1 health insurance ($2,310) is excluded by convention, as are books ($1,064) and personal expenses ($4,968); SMC's own total for the year is $34,000. The previous stored $9,000 was an unresearched ballpark and understated the cost by $16,658 — nearly threefold, the largest PROPORTIONAL error in the campaign. As a CCCAA program Santa Monica cannot offer athletic scholarships at all, so this figure is very close to what is actually paid."
     },
     "culture": {
       "vibe": "Community college culture — diverse, no-nonsense, goal-oriented. Santa Monica College is famous for transfer students who are serious about getting to UCLA or another UC. The campus is workmanlike but Santa Monica itself is extraordinary.",
@@ -339,7 +339,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 3000,
       "aidType": "athletic+need",
-      "internationalNote": "Miami Dade non-resident cost $27,812 (Tier-1 verified from MDC's official Tuition & Fees rate table and its published Cost of Attendance chart, Associate programs / Non-Resident / Students Living Independently): tuition and out-of-state fee $331.11 a credit × 24 credits = $7,947 + student services, financial aid, capital improvement, technology and parking fees $71.40 a credit = $1,715 — together MDC's own $4,831 a term — plus room and board $9,075 a term = $18,150. NO credit-load assumption was needed: MDC publishes 'Cost per Term (12 credits)' itself. ⚠ READ THE HOUSING LINE: MDC provides and supervises NO student housing, so the $18,150 is MDC's own living-independently allowance, NOT a college charge; it is stored under `roomBoard` because a player must still live in Miami and a tuition-only figure would badly mislead. ⚠ MDC's COA page says its figures are per term and should be doubled for a year, but its own 'Total' row doubles only the OTHER expenses and leaves tuition at one term — that total is internally inconsistent, so the components were doubled instead. Books ($1,500) and personal/transport are excluded by convention. The previous stored $11,000 was an unresearched ballpark and understated the cost by $16,812. The transfer pathway to Barry or FIU remains the value proposition, but Miami living costs are the story here, not tuition."
+      "internationalNote": "Miami Dade non-resident cost $27,812 (Tier-1 verified from MDC's official Tuition & Fees rate table and its published Cost of Attendance chart, Associate programs / Non-Resident / Students Living Independently): tuition and out-of-state fee $331.11 a credit × 24 credits = $7,947 + student services, financial aid, capital improvement, technology and parking fees $71.40 a credit = $1,715 — together MDC's own $4,831 a term — plus room and board $9,075 a term = $18,150. NO credit-load assumption was needed: MDC publishes 'Cost per Term (12 credits)' itself. ⚠ READ THE HOUSING LINE: MDC provides and supervises NO student housing, so the $18,150 is MDC's own living-independently allowance, NOT a college charge; it is counted as room and board because a player must still live in Miami and a tuition-only figure would badly mislead. ⚠ MDC's COA page says its figures are per term and should be doubled for a year, but its own 'Total' row doubles only the OTHER expenses and leaves tuition at one term — that total is internally inconsistent, so the components were doubled instead. Books ($1,500) and personal/transport are excluded by convention. The previous stored $11,000 was an unresearched ballpark and understated the cost by $16,812. The transfer pathway to Barry or FIU remains the value proposition, but Miami living costs are the story here, not tuition."
     },
     "culture": {
       "vibe": "Massive urban community college — functional, diverse, and Miami-flavoured. MDC is one of the largest colleges in America with 6 campuses across Miami. The culture is pure Miami — Latin, energetic, and aspirational.",
@@ -1937,7 +1937,7 @@
       "maxAthletic": 0.65,
       "maxAcademic": 3000,
       "aidType": "athletic+need",
-      "internationalNote": "Daytona State out-of-state cost $23,777 (2025-26, Tier-1 verified from DSC Financial Aid's official Estimated Cost of Attendance chart, Associate Degree / Out-of-State / On campus): tuition and fees $11,995 + housing $7,158 + food $4,624. DSC publishes tuition and fees COMBINED, so the combined figure is stored under `tuition` and `fees` is 0. Based on DSC's own stated 15 credits in each of Fall and Spring. Its headline out-of-state on-campus total is $29,375, adding books, personal expenses and transport that this guide excludes. ⚠ THE ON-CAMPUS FIGURE MAY NOT BE AVAILABLE: DSC has ONE residence hall (opened 2022, 67 units) and it was confirmed full with a waiting list for Spring 2026 — the off-campus budget puts housing at $12,312 instead of $7,158, which would raise the cost to about $28,931. Check availability before treating $23,777 as the number. This is 2025-26 data, the newest DSC publishes; it has frozen tuition and associated fees for 15 consecutive years, so 2026-27 should be close. The previous stored $16,000 was an unresearched ballpark and understated the cost by $7,777."
+      "internationalNote": "Daytona State out-of-state cost $23,777 (2025-26, Tier-1 verified from DSC Financial Aid's official Estimated Cost of Attendance chart, Associate Degree / Out-of-State / On campus): tuition and fees $11,995 + housing $7,158 + food $4,624. DSC publishes tuition and fees COMBINED, so the combined figure is recorded as tuition, with fees at $0. Based on DSC's own stated 15 credits in each of Fall and Spring. Its headline out-of-state on-campus total is $29,375, adding books, personal expenses and transport that this guide excludes. ⚠ THE ON-CAMPUS FIGURE MAY NOT BE AVAILABLE: DSC has ONE residence hall (opened 2022, 67 units) and it was confirmed full with a waiting list for Spring 2026 — the off-campus budget puts housing at $12,312 instead of $7,158, which would raise the cost to about $28,931. Check availability before treating $23,777 as the number. This is 2025-26 data, the newest DSC publishes; it has frozen tuition and associated fees for 15 consecutive years, so 2026-27 should be close. The previous stored $16,000 was an unresearched ballpark and understated the cost by $7,777."
     },
     "size": 17000,
     "prePT": "Transfer Pathway",
@@ -2051,7 +2051,7 @@
       {
         "yr": 2022,
         "pos": "Tied 1st Region 8 (1-1-1)",
-        "note": "15-3-1 overall — exact tie with Eastern Florida State on conference record (both 1-1-1). Verified v38 via official thefcsaasports.com standings; postseason Region 8 champion for 2022 not separately confirmed this session."
+        "note": "15-3-1 overall — exact tie with Eastern Florida State on conference record (both 1-1-1). Verified v38 via official thefcsaasports.com standings; postseason Region 8 champion for 2022 not separately confirmed."
       },
       {
         "yr": 2021,
@@ -3014,12 +3014,12 @@
       {
         "yr": 2022,
         "pos": "Tied 1st Region 8 (1-1-1)",
-        "note": "7-5-2 overall — exact tie with Daytona State on conference record (both 1-1-1). Verified v38 via official thefcsaasports.com standings; postseason Region 8 champion for 2022 not separately confirmed this session."
+        "note": "7-5-2 overall — exact tie with Daytona State on conference record (both 1-1-1). Verified v38 via official thefcsaasports.com standings; postseason Region 8 champion for 2022 not separately confirmed."
       },
       {
         "yr": 2021,
         "pos": "Region 8 Champions (postseason) — flagged discrepancy",
-        "note": "Existing claim: won Region 8 title 2-0 over Daytona State College. However, v38 verification of the official 2021 regular-season Region 8 standings (thefcsaasports.com) shows EFSC 0-2 vs Daytona State 1st at 2-0 in conference play — i.e. EFSC lost both regular-season meetings that year. The 2-0 championship-game claim may describe a separate postseason tournament result, but this could not be confirmed at Tier-1 this session. Needs direct verification before the next accuracy pass."
+        "note": "Existing claim: won Region 8 title 2-0 over Daytona State College. However, v38 verification of the official 2021 regular-season Region 8 standings (thefcsaasports.com) shows EFSC 0-2 vs Daytona State 1st at 2-0 in conference play — i.e. EFSC lost both regular-season meetings that year. The 2-0 championship-game claim may describe a separate postseason tournament result, but this could not be confirmed from an official source, so treat the title claim as unconfirmed."
       }
     ],
     "titles": [
@@ -4885,7 +4885,7 @@
       "Human Anatomy & Physiology",
       "University of Iowa 2+2 transfer pathway"
     ],
-    "rec": "Southeastern pairs a #5-national-ranking (NJCAA DII) with a genuinely dedicated Exercise Science Transfer Major and a University of Iowa 2+2 pathway — a strong academic-athletic package. The real caveats are an interim head coach (leadership uncertainty for 2026) and rural, cold-winter southeast Iowa, a poor lifestyle match for a warm-city-preferring athlete. Roster data was not available via the official site this session, so Minutes Outlook could not be assessed.",
+    "rec": "Southeastern pairs a #5-national-ranking (NJCAA DII) with a genuinely dedicated Exercise Science Transfer Major and a University of Iowa 2+2 pathway — a strong academic-athletic package. The real caveats are an interim head coach (leadership uncertainty for 2026) and rural, cold-winter southeast Iowa, a poor lifestyle match for a warm-city-preferring athlete.",
     "minutesOutlook": {
       "available": true,
       "mf_total": 18,
@@ -4913,7 +4913,7 @@
           "label": "Likely starter"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (17 MFs: 5 So + 12 Fr, obtained via Claude for Chrome MCP after the site's automated-fetch page rendered empty) clears before Olivier's August 2027 start. Zero roster overlap, but this is the largest MF group of any school added this session — expect a similarly deep incoming recruiting class. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (17 MFs: 5 So + 12 Fr) clears before Olivier's August 2027 start. Zero roster overlap, but this is a large MF group — expect a similarly deep incoming recruiting class. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Freshman-friendly",
       "recruit_pathway_note": "Re-read on the live 2026-27 sccblackhawks.com roster (18 MFs of 61, a much larger squad than the 17 of a smaller roster last season). This projection is still based on last year's roster and hasn't been updated for the new numbers yet. Only 1 of the 18 current midfielders clears before Olivier arrives — a very crowded incoming group."
     },
@@ -5644,7 +5644,7 @@
     "courses": [
       "General A.A./A.S. transfer coursework (Math, Science & Kinesiology division)"
     ],
-    "rec": "Coastal Bend offers warm South Texas climate with Gulf Coast access via nearby Corpus Christi and a 2025 #14 national ranking, but enters 2026 under a brand-new head coach (hired March 2026) after the ranking was earned under prior interim leadership — a genuine risk factor. No dedicated Exercise Science degree is confirmed. Roster data was not accessible via the official site this session (blocked/empty on repeated attempts), so Minutes Outlook could not be assessed.",
+    "rec": "Coastal Bend offers warm South Texas climate with Gulf Coast access via nearby Corpus Christi and a 2025 #14 national ranking, but enters 2026 under a brand-new head coach (hired March 2026) after the ranking was earned under prior interim leadership — a genuine risk factor. No dedicated Exercise Science degree is confirmed.",
     "minutesOutlook": {
       "available": true,
       "mf_total": 8,
@@ -6176,7 +6176,7 @@
           "label": "Likely starter"
         }
       ],
-      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (5 MFs: 3 So + 1 redshirt-Fr + 1 Fr) clears before Olivier's August 2027 start. Zero roster overlap. The smallest MF group of any school added this session — a genuine opportunity if the coach recruits a similarly lean 2026 class. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
+      "trajectoryNote": "JUCO 2-year program — 100% of the 2025-26 roster (5 MFs: 3 So + 1 redshirt-Fr + 1 Fr) clears before Olivier's August 2027 start. Zero roster overlap. A small MF group — a genuine opportunity if the coach recruits a similarly lean 2026 class. Ask the coach: 'How many central midfielders are in your 2026 recruiting class?'",
       "recruit_pathway": "Mixed",
       "recruit_pathway_note": "Re-read on the live 2026-27 athletics.lsue.edu roster (8 MFs of 27, up from 5 of the prior season). LSU Eunice publishes only a Hometown / High School column and no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster alone; the existing 'Mixed' classification is RETAINED, not re-derived, and should be treated as lower-confidence. Roster shape did change materially: 6 of the 8 MFs are freshmen who return in 2027-28, so only 2 clear before Olivier arrives."
     },
@@ -6901,7 +6901,7 @@
       "Exercise Science (A.S.)",
       "Physical Education and Exercise Science department coursework"
     ],
-    "rec": "Suffolk's 2025 Region 15 Division III Championship and its confirmed dedicated Exercise Science A.S. degree are real strengths, but the school's DIII status (corrected 2026-08-11) is a major practical downgrade for an international athlete: NJCAA Division III programs cannot offer ANY athletic financial aid, only small merit awards (up to $3,000/yr) against a $28,053/yr direct cost. Combined with no on-campus housing, this is now one of the least financially viable schools in the guide for Olivier specifically, despite the genuine on-field and academic credentials. Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
+    "rec": "Suffolk's 2025 Region 15 Division III Championship and its confirmed dedicated Exercise Science A.S. degree are real strengths, but the school's DIII status (corrected 2026-08-11) is a major practical downgrade for an international athlete: NJCAA Division III programs cannot offer ANY athletic financial aid, only small merit awards (up to $3,000/yr) against a $28,053/yr direct cost. Combined with no on-campus housing, this is now one of the least financially viable schools in the guide for Olivier specifically, despite the genuine on-field and academic credentials. The official roster does not publish player positions, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": false,
       "note": "RE-TESTED IN A REAL BROWSER 2026-08-06 (Claude for Chrome, full JS render) — the missing positions are GENUINE, not a fetch artifact. The 2025-26 roster is a TABLE with headers NO. | NAME | POS. | CL. | HIGH SCHOOL and 24 rows: the POS. column exists and is EMPTY for all 24 players, as is HIGH SCHOOL, while CL. is fully published (FR/SO). There is nowhere else to look — Suffolk publishes no player bio pages at all (zero /roster/<slug>/<id> links) and the words Goalkeeper/Midfielder/Defender/Forward appear nowhere on the page. The season selector confirms 2025-26 is the newest published season; no 2026-27 roster exists. Midfielders therefore cannot be counted and minutesOutlook stays unavailable. Note the site CloudFront-403s datacenter IPs, so a scripted fetch and the in-app browser both fail here — that is a network block, NOT evidence about the data. Re-check only if Suffolk starts publishing positions.",
@@ -7124,7 +7124,7 @@
     "courses": [
       "A.S. Health and Human Performance"
     ],
-    "rec": "Westchester offers genuine NYC-metro access from Valhalla (Westchester County) and a solid 2025 Division III regular-season record (9-1-2), but its DIII status (corrected 2026-08-11) means NJCAA rules forbid any athletic scholarship money here — only a small merit award (up to $3,000/yr) against a $24,486/yr direct cost, and this is the only school in this batch with zero housing or meal plan options of any kind. No dedicated Exercise Science degree is confirmed either. A financially difficult option for an international athlete without independent family funding. Roster position data was not available via the official site this session, so Minutes Outlook could not be assessed.",
+    "rec": "Westchester offers genuine NYC-metro access from Valhalla (Westchester County) and a solid 2025 Division III regular-season record (9-1-2), but its DIII status (corrected 2026-08-11) means NJCAA rules forbid any athletic scholarship money here — only a small merit award (up to $3,000/yr) against a $24,486/yr direct cost, and this is the only school in this batch with zero housing or meal plan options of any kind. No dedicated Exercise Science degree is confirmed either. A financially difficult option for an international athlete without independent family funding. The official roster does not publish player positions, so Minutes Outlook could not be assessed.",
     "minutesOutlook": {
       "available": false,
       "note": "RE-TESTED IN A REAL BROWSER 2026-08-06 (full JS render) — the missing positions are GENUINE, not a fetch artifact. The roster uses Sidearm player CARDS: 24 cards render, each containing a .sidearm-roster-player-position element, and ALL 24 of those elements are empty, while class year (Fr./So.) and hometown/high school are published normally. A player bio page was opened as well (miguel-diaz/1357) and it carries no position field either — the same dead-end as the stedwards precedent. The season selector confirms 2025 is the newest published season; no 2026 roster exists. Midfielders therefore cannot be counted and minutesOutlook stays unavailable. Re-check only if Westchester starts publishing positions.",
@@ -7250,7 +7250,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 3000,
       "aidType": "athletic+merit",
-      "internationalNote": "Official 2025 out-of-state cost of attendance is $33,636/yr (Tier-1 confirmed, jccc.edu) — the highest-cost school added this session, driven by Overland Park/Kansas City-metro living costs in a federal COA estimate. Out-of-state tuition/fees alone are only $5,913/yr; Johnson County has no on-campus housing, so roomBoard reflects the official published off-campus cost allowance."
+      "internationalNote": "Official 2025 out-of-state cost of attendance is $33,636/yr (Tier-1 confirmed, jccc.edu) — one of the highest costs of attendance among the guide's JUCOs, driven by Overland Park/Kansas City-metro living costs in a federal COA estimate. Out-of-state tuition/fees alone are only $5,913/yr; Johnson County has no on-campus housing, so roomBoard reflects the official published off-campus cost allowance."
     },
     "confRecord": [
       {
@@ -7336,20 +7336,20 @@
       "sportsMed": "Standard JUCO athletic training staff; specifics not published on the official site.",
       "academicLabs": "No dedicated Exercise Science labs confirmed — general transfer coursework only; some non-degree Sports and Recreation continuing-education courses are offered.",
       "extras": "Overland Park is an affluent, major Kansas City metro suburb (~200,000 population) — genuinely urban compared to the guide's other rural Kansas JUCOs.",
-      "note": "Johnson County's standout feature is location — a genuine Kansas City metro campus, unlike the rural settings of Barton, Cowley, and Dodge City in the same conference — backed by a 2025 Region 6/9 tournament title, though the cost of attendance is the highest of any school added this session."
+      "note": "Johnson County's standout feature is location — a genuine Kansas City metro campus, unlike the rural settings of Barton, Cowley, and Dodge City in the same conference — backed by a 2025 Region 6/9 tournament title, though its cost of attendance is one of the highest among the guide's JUCOs."
     },
     "culture": {
       "vibe": "Johnson County Community College sits in Overland Park, an affluent, major Kansas City metro suburb — a genuinely different lifestyle proposition from the guide's rural Kansas JUCOs (Barton, Cowley, Dodge City). The 2025 Region 6/9 tournament title and a top-15 national ranking give the men's program real credibility, alongside a #1-nationally-ranked women's program.",
       "thingsToDo": "Full Kansas City metro access — restaurants, entertainment, professional sports (Chiefs, Royals, Sporting KC) all within reach. The most urban Kansas setting in this guide's JUCO section.",
       "socialScene": "No on-campus housing means a commuter-oriented social scene, though the large student body (~19,000) and Kansas City metro location offer a much bigger social pool than the guide's rural Kansas JUCOs.",
-      "olivierMatch": "★★★ Genuine Kansas City metro city access is a real lifestyle upgrade over the guide's rural Kansas JUCOs, backed by a 2025 tournament title, offset by no on-campus housing, cold winters, and the highest cost of attendance among all schools added this session.",
+      "olivierMatch": "★★★ Genuine Kansas City metro city access is a real lifestyle upgrade over the guide's rural Kansas JUCOs, backed by a 2025 tournament title, offset by no on-campus housing, cold winters, and one of the highest costs of attendance among the guide's JUCOs.",
       "lifestyleTags": "Major city, no housing, cold winters, strong 2025 results"
     },
     "courses": [
       "General A.A./A.S. transfer coursework",
       "Non-degree Sports and Recreation continuing-education courses"
     ],
-    "rec": "Johnson County offers the most urban Kansas setting in this guide's JUCO section — genuine Kansas City metro access from Overland Park — backed by a 2025 Region 6/9 tournament title and a #15 national ranking. The trade-offs are no on-campus housing, no dedicated Exercise Science degree, and the highest cost of attendance (~$33.6k/yr) of any school added this session, reflecting Kansas City-metro living costs.",
+    "rec": "Johnson County offers the most urban Kansas setting in this guide's JUCO section — genuine Kansas City metro access from Overland Park — backed by a 2025 Region 6/9 tournament title and a #15 national ranking. The trade-offs are no on-campus housing, no dedicated Exercise Science degree, and one of the highest costs of attendance among the guide's JUCOs (~$33.6k/yr), reflecting Kansas City-metro living costs.",
     "minutesOutlook": {
       "available": true,
       "mf_total": 16,
@@ -7763,7 +7763,7 @@
       "maxAthletic": 0.6,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "Lewis & Clark's 2026-27 out-of-state/international tuition rate is $272/credit hour plus $30/credit hour in mandatory fees (Tier-1: lc.edu/pay-for-college/tuition.html) — $302/credit hour combined. At the college's own 28-credit/year full-time Cost of Attendance basis (catalog.lc.edu Financial Aid section, 2026-27 catalog), that is tuition $7,616 + fees $840. L&C has NO on-campus housing (commuter college — see facilityDetails.housing), so `roomBoard` uses the college's own official Independent-Student 'Living Expenses (Food & Housing)' allowance of $8,685/yr from that same COA table, not a housing bill. Direct billed cost: $17,141/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board, though with no campus housing bill the practical benefit is mostly tuition/fee coverage plus help toward the student's own off-campus living costs; budget for a realistic 40-60% package."
+      "internationalNote": "Lewis & Clark's 2026-27 out-of-state/international tuition rate is $272/credit hour plus $30/credit hour in mandatory fees (Tier-1: lc.edu/pay-for-college/tuition.html) — $302/credit hour combined. At the college's own 28-credit/year full-time Cost of Attendance basis (catalog.lc.edu Financial Aid section, 2026-27 catalog), that is tuition $7,616 + fees $840. L&C has NO on-campus housing (commuter college — see facilityDetails.housing), so room and board uses the college's own official Independent-Student 'Living Expenses (Food & Housing)' allowance of $8,685/yr from that same COA table, not a housing bill. Direct billed cost: $17,141/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board, though with no campus housing bill the practical benefit is mostly tuition/fee coverage plus help toward the student's own off-campus living costs; budget for a realistic 40-60% package."
     },
     "confRecord": [
       {
@@ -8284,7 +8284,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "Montgomery College's official 2026-27 Cost of Attendance for an Out-of-State resident NOT living at home lists Tuition and Fees combined at $13,702/yr (Tier-1: montgomerycollege.edu/paying-for-college/financial-aid/cost-of-attendance.html). MC has NO on-campus housing (confirmed on the same official page — see facilityDetails.housing), so `roomBoard` uses the college's own official 'Housing & Food' living-expense allowance of $17,200/yr from that same table, not a housing bill. Direct billed cost: $30,902/yr (excludes the college's own separate Books $756, Transportation $3,638, and Personal Expenses $12,238 estimates, which are not billed costs). As NJCAA Division I, athletic aid can structurally cover tuition and fees plus help toward off-campus living costs; budget for a realistic 30-50% package given the high cost-of-living DC-metro location."
+      "internationalNote": "Montgomery College's official 2026-27 Cost of Attendance for an Out-of-State resident NOT living at home lists Tuition and Fees combined at $13,702/yr (Tier-1: montgomerycollege.edu/paying-for-college/financial-aid/cost-of-attendance.html). MC has NO on-campus housing (confirmed on the same official page — see facilityDetails.housing), so room and board uses the college's own official 'Housing & Food' living-expense allowance of $17,200/yr from that same table, not a housing bill. Direct billed cost: $30,902/yr (excludes the college's own separate Books $756, Transportation $3,638, and Personal Expenses $12,238 estimates, which are not billed costs). As NJCAA Division I, athletic aid can structurally cover tuition and fees plus help toward off-campus living costs; budget for a realistic 30-50% package given the high cost-of-living DC-metro location."
     },
     "confRecord": [
       {
@@ -8300,17 +8300,17 @@
       {
         "yr": 2023,
         "pos": "1st Region 20 D1 — Region Champions",
-        "note": "NJCAA DI Region 20 Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently re-verified this session."
+        "note": "NJCAA DI Region 20 Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently confirmed."
       },
       {
         "yr": 2022,
         "pos": "1st Region 20 D1 — Region, District & MDJUCO Champs",
-        "note": "NJCAA DI Region 20 Champions, East District Champions, and MDJUCO Conference Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently re-verified this session."
+        "note": "NJCAA DI Region 20 Champions, East District Champions, and MDJUCO Conference Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently confirmed."
       },
       {
         "yr": 2021,
         "pos": "1st Region 20 D1 — Region Champions",
-        "note": "NJCAA DI Region 20 Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently re-verified this session."
+        "note": "NJCAA DI Region 20 Champions. Verified via the team's official Instagram bio (@mc_raptorsmsoccer); detailed season record not independently confirmed."
       }
     ],
     "titles": [
@@ -8547,7 +8547,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "Yavapai's 2026-27 Board-approved tuition rate ($116/credit Tier 1 General Education) is genuinely identical for in-state AND out-of-state/international students (Tier-1: yc.edu Nov 2025 Board announcement) — an unusually affordable structure for a JUCO. Tuition and fees are published as a single combined $3,200/yr line on the official 2026-27 Cost of Attendance (Full Time, Living on Campus), so `fees` is stored as $0 to avoid double-counting. Housing and Food (on-campus, Kachina/Marapai residence halls) is $13,164/yr on the same COA table. Direct billed cost: $16,364/yr — well below the guide's median JUCO cost. The college's own full published COA (adding books $1,022 + personal expenses $3,254 + transportation $1,002) totals $21,642/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+      "internationalNote": "Yavapai's 2026-27 Board-approved tuition rate ($116/credit Tier 1 General Education) is genuinely identical for in-state AND out-of-state/international students (Tier-1: yc.edu Nov 2025 Board announcement) — an unusually affordable structure for a JUCO. Tuition and fees are published as a single combined $3,200/yr line on the official 2026-27 Cost of Attendance (Full Time, Living on Campus), so fees are recorded as $0 to avoid double-counting. Housing and Food (on-campus, Kachina/Marapai residence halls) is $13,164/yr on the same COA table. Direct billed cost: $16,364/yr — well below the guide's median JUCO cost. The college's own full published COA (adding books $1,022 + personal expenses $3,254 + transportation $1,002) totals $21,642/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
     },
     "confRecord": [
       {
@@ -8698,7 +8698,7 @@
     "url": "https://www.eacmonsters.com/sports/msoc/index",
     "degreeTitle": "Sports Medicine Professions, Associate of Arts (+ Physical Therapy Technician Certificate)",
     "acuAlign": 6,
-    "acuAlignNote": "EAC's Human Health and Performance department offers a genuine Sports Medicine Professions AA (CIP 31.0501, catalog.eac.edu program 60502) explicitly preparing students for Athletic Training, Kinesiology, Wellness or related Sports Medicine 4-year majors, PLUS a stand-alone Physical Therapy Technician certificate and a Personal Trainer certificate/AA track — a meaningfully stronger pre-PT-adjacent offering than the generic AS/AA transfer degree found at most Arizona JUCOs. The exact per-course curriculum map is published only as a PDF on catalog.eac.edu that could not be fully extracted this session (the download link served the general 167-page college catalog rather than the program-specific curriculum map); this profile conservatively assumes anatomy/physiology and foundational kinesiology-adjacent coverage only. Direct advisor confirmation and full WES evaluation recommended before relying on this count.",
+    "acuAlignNote": "EAC's Human Health and Performance department offers a genuine Sports Medicine Professions AA (CIP 31.0501, catalog.eac.edu program 60502) explicitly preparing students for Athletic Training, Kinesiology, Wellness or related Sports Medicine 4-year majors, PLUS a stand-alone Physical Therapy Technician certificate and a Personal Trainer certificate/AA track — a meaningfully stronger pre-PT-adjacent offering than the generic AS/AA transfer degree found at most Arizona JUCOs. The exact per-course curriculum map is published only as a PDF on catalog.eac.edu that could not be fully reviewed (the download link served the general 167-page college catalog rather than the program-specific curriculum map); this profile conservatively assumes anatomy/physiology and foundational kinesiology-adjacent coverage only. Direct advisor confirmation and full WES evaluation recommended before relying on this count.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -8786,7 +8786,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "Official 2025-26 Cost of Attendance Budget (Freshman/Sophomore, Living On Campus, Non-Resident Academic Year) via eac.edu: Tuition $9,552 (published as a combined tuition-and-fees figure, so `fees` is stored as $0 to avoid double-counting), Food & Housing $8,400. Direct billed cost: $17,952/yr. The college's own full published COA (adding books $1,036 + miscellaneous $2,682 + transportation $1,728) totals $23,398/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+      "internationalNote": "Official 2025-26 Cost of Attendance Budget (Freshman/Sophomore, Living On Campus, Non-Resident Academic Year) via eac.edu: Tuition $9,552 (published as a combined tuition-and-fees figure, so fees are recorded as $0 to avoid double-counting), Food & Housing $8,400. Direct billed cost: $17,952/yr. The college's own full published COA (adding books $1,036 + miscellaneous $2,682 + transportation $1,728) totals $23,398/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
     },
     "confRecord": [
       {
@@ -8862,7 +8862,7 @@
       "strengthConditioning": "No dedicated soccer strength & conditioning coach or facility confirmed on the official athletics site.",
       "sportsScience": "No video-analysis or GPS/wearable technology confirmed on official pages.",
       "sportsMed": "Standard JUCO athletic training support; specifics not published for men's soccer.",
-      "academicLabs": "Genuine Sports Medicine Professions / Physical Therapy Technician coursework gives real classroom exposure relevant to the ACU/PT pathway, though the exact course list could not be fully confirmed this session.",
+      "academicLabs": "Genuine Sports Medicine Professions / Physical Therapy Technician coursework gives real classroom exposure relevant to the ACU/PT pathway, though the exact course list could not be fully confirmed.",
       "extras": "Thatcher sits in Arizona's Gila Valley (Graham County), a small rural desert-agricultural community near Safford — genuinely remote relative to Phoenix/Tucson.",
       "note": "A brand-new program (launched 2023) already reaching a Region 1 semifinal, under a head coach with a genuinely strong development CV, and a real Sports Medicine/PT Technician academic pathway — offset by a shared (not soccer-dedicated) stadium and a very small, remote Gila Valley setting."
     },
@@ -8945,7 +8945,7 @@
     "url": "https://csncoyotes.com/sports/mens-soccer/index",
     "degreeTitle": "Physical Therapist Assistant, Associate of Applied Science",
     "acuAlign": 7,
-    "acuAlignNote": "CSN's Physical Therapist Assistant AAS (csn.edu/physical-therapist-assistant-aas) is a fully accredited, genuinely PT-focused 2-year program covering anatomy/physiology, kinesiology, therapeutic exercise and clinical rehab coursework — a real, direct pathway toward Olivier's DPT career goal, stronger than the generic transfer degrees at most JUCOs in this guide. Important caveat: like most PTA programs nationally, admission is separately competitive/limited-cohort beyond general college enrolment (specific prerequisite GPA and application-cycle requirements not fully confirmed this session) — a student-athlete would need to plan around program admission timing alongside soccer commitments. CSN's general Physical Sciences AS and Health Sciences AAS pathways remain the accessible fallback if the PTA cohort isn't available in a given cycle.",
+    "acuAlignNote": "CSN's Physical Therapist Assistant AAS (csn.edu/physical-therapist-assistant-aas) is a fully accredited, genuinely PT-focused 2-year program covering anatomy/physiology, kinesiology, therapeutic exercise and clinical rehab coursework — a real, direct pathway toward Olivier's DPT career goal, stronger than the generic transfer degrees at most JUCOs in this guide. Important caveat: like most PTA programs nationally, admission is separately competitive/limited-cohort beyond general college enrolment (specific prerequisite GPA and application-cycle requirements not fully confirmed) — a student-athlete would need to plan around program admission timing alongside soccer commitments. CSN's general Physical Sciences AS and Health Sciences AAS pathways remain the accessible fallback if the PTA cohort isn't available in a given cycle.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -9033,7 +9033,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "CSN is a commuter college with NO on-campus housing (see facilityDetails.housing) — the official 2026-27 Cost of Attendance (csn.edu/financial-aid/cost-of-attendance, Off-Campus/Out-of-State, full-time) is the only applicable budget: Tuition/Fees $14,403 (published combined, so `fees` is stored as $0 to avoid double-counting) + Room $8,488 + Food $5,517 = $14,005 living-expense allowance. Direct billed cost: $28,408/yr — the highest of this batch, reflecting Las Vegas's cost of living. The college's own full published COA (adding books $1,320 + personal $3,501 + transportation $3,183 + loan fees $38) totals $36,450/yr. As NJCAA Division I, athletic aid can structurally cover tuition and fees, though with no campus housing bill the practical benefit is mostly tuition/fee coverage plus help toward off-campus living costs; budget for a realistic 30-50% package."
+      "internationalNote": "CSN is a commuter college with NO on-campus housing (see facilityDetails.housing) — the official 2026-27 Cost of Attendance (csn.edu/financial-aid/cost-of-attendance, Off-Campus/Out-of-State, full-time) is the only applicable budget: Tuition/Fees $14,403 (published combined, so fees are recorded as $0 to avoid double-counting) + Room $8,488 + Food $5,517 = $14,005 living-expense allowance. Direct billed cost: $28,408/yr — the highest of this batch, reflecting Las Vegas's cost of living. The college's own full published COA (adding books $1,320 + personal $3,501 + transportation $3,183 + loan fees $38) totals $36,450/yr. As NJCAA Division I, athletic aid can structurally cover tuition and fees, though with no campus housing bill the practical benefit is mostly tuition/fee coverage plus help toward off-campus living costs; budget for a realistic 30-50% package."
     },
     "confRecord": [
       {
@@ -9272,7 +9272,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 1000,
       "aidType": "athletic+merit",
-      "internationalNote": "Community Christian College's cost structure is genuinely unlike a traditional JUCO's: tuition is billed per quarter-credit ($215/unit, effective Summer Quarter 2026), and the Associate of Arts degree requires 90 quarter credits over 2 years (45 credits/yr), giving an estimated annual tuition of $9,675. There is NO published room & board figure anywhere on the official site — the college publishes no institutional Cost of Attendance table with a living-expense estimate, consistent with there being no on-campus housing at all (see facilityDetails.housing); `roomBoard` is therefore stored as $0, not a verified zero-cost outcome, and a player would need to independently budget for off-campus housing in the San Bernardino, CA area. `fees` includes the mandatory $1,725 in-season + $1,000 off-season athletic participation fee ($2,725/yr total) that funds team travel, equipment and game-day costs; smaller one-time fees (application $45, admissions course $45, graduation $145, science lab $45-300) are excluded as immaterial one-off costs. This is the lowest direct billed figure of any school in this batch, but excludes a real and currently unquantified housing cost."
+      "internationalNote": "Community Christian College's cost structure is genuinely unlike a traditional JUCO's: tuition is billed per quarter-credit ($215/unit, effective Summer Quarter 2026), and the Associate of Arts degree requires 90 quarter credits over 2 years (45 credits/yr), giving an estimated annual tuition of $9,675. There is NO published room & board figure anywhere on the official site — the college publishes no institutional Cost of Attendance table with a living-expense estimate, consistent with there being no on-campus housing at all (see facilityDetails.housing); room and board is therefore recorded as $0, not a verified zero-cost outcome, and a player would need to independently budget for off-campus housing in the San Bernardino, CA area. Fees include the mandatory $1,725 in-season + $1,000 off-season athletic participation fee ($2,725/yr total) that funds team travel, equipment and game-day costs; smaller one-time fees (application $45, admissions course $45, graduation $145, science lab $45-300) are excluded as immaterial one-off costs. This is the lowest direct billed figure of any school in this batch, but excludes a real and currently unquantified housing cost."
     },
     "confRecord": [
       {
@@ -9477,7 +9477,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "Eastern's 2025-26 Board-approved combined Tuition & Fees rate for non-resident students is $272.96 per credit hour (Tier-1: eosc.edu Tuition & Fees page, effective 07-01-25) — already inclusive of all mandatory fees, so `fees` is stored as $0 to avoid double-counting. At a 30-credit/year full-time load: $8,189/yr. The school's own site notes non-resident tuition 'will be waived for most students attending Eastern' but does not specify international/F-1 eligibility for that waiver, so the full non-resident rate is used here as the conservative figure. Housing (Choctaw/Johnston Hall, double occupancy, 18-meal plan): $2,845/semester = $5,690/yr. Direct billed cost: $13,879/yr — one of the more affordable JUCOs in the guide. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+      "internationalNote": "Eastern's 2025-26 Board-approved combined Tuition & Fees rate for non-resident students is $272.96 per credit hour (Tier-1: eosc.edu Tuition & Fees page, effective 07-01-25) — already inclusive of all mandatory fees, so fees are recorded as $0 to avoid double-counting. At a 30-credit/year full-time load: $8,189/yr. The school's own site notes non-resident tuition 'will be waived for most students attending Eastern' but does not specify international/F-1 eligibility for that waiver, so the full non-resident rate is used here as the conservative figure. Housing (Choctaw/Johnston Hall, double occupancy, 18-meal plan): $2,845/semester = $5,690/yr. Direct billed cost: $13,879/yr — one of the more affordable JUCOs in the guide. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
     },
     "confRecord": [
       {
@@ -9729,7 +9729,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "Connors' FY2025 Fee Schedule (effective Fall 2024, the newest published — Tier-1: connorsstate.edu/bo/fees) prices combined non-resident Tuition & Fees at $4,781.40/semester at 15 credit hours ($9,563/yr); fees are stored under `tuition` since the schedule bundles them, so `fees` is $0 here to avoid double-counting. Housing: McClarren Hall double occupancy is $1,287/semester, with a mandatory meal plan (200 Block Meals, $1,667/semester) — combined $2,954/semester = $5,908/yr. Direct billed cost: $15,471/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package given the program's currently modest resourcing."
+      "internationalNote": "Connors' FY2025 Fee Schedule (effective Fall 2024, the newest published — Tier-1: connorsstate.edu/bo/fees) prices combined non-resident Tuition & Fees at $4,781.40/semester at 15 credit hours ($9,563/yr); fees are recorded as tuition since the schedule bundles them, so fees are $0 here to avoid double-counting. Housing: McClarren Hall double occupancy is $1,287/semester, with a mandatory meal plan (200 Block Meals, $1,667/semester) — combined $2,954/semester = $5,908/yr. Direct billed cost: $15,471/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package given the program's currently modest resourcing."
     },
     "confRecord": [
       {
@@ -9973,7 +9973,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "NEO's official Tuition & Fees page (Tier-1, as of 08/01/2026) prices combined non-resident Tuition & Fees at $383.75/credit hour, already inclusive of mandatory fees (`fees` stored as $0 to avoid double-counting); at 30 credits/year: $11,513/yr. The page notes an out-of-state tuition waiver is available for 'qualifying students' without specifying international/F-1 eligibility, so the full non-resident rate is used as the conservative figure. Housing: Milligan Hall double occupancy ($1,800/semester) plus the required minimum 12-meal plan ($2,012/semester) plus the $154/semester housing maintenance fee = $3,966/semester = $7,932/yr. Direct billed cost: $19,445/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+      "internationalNote": "NEO's official Tuition & Fees page (Tier-1, as of 08/01/2026) prices combined non-resident Tuition & Fees at $383.75/credit hour, already inclusive of mandatory fees (fees recorded as $0 to avoid double-counting); at 30 credits/year: $11,513/yr. The page notes an out-of-state tuition waiver is available for 'qualifying students' without specifying international/F-1 eligibility, so the full non-resident rate is used as the conservative figure. Housing: Milligan Hall double occupancy ($1,800/semester) plus the required minimum 12-meal plan ($2,012/semester) plus the $154/semester housing maintenance fee = $3,966/semester = $7,932/yr. Direct billed cost: $19,445/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
     },
     "confRecord": [
       {
@@ -10213,7 +10213,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "Rose State's own 2025-26 Cost of Attendance page (Tier-1: rose.edu/affordability/tuition-fees/cost-of-attendance) states its estimates 'cover 24 credit hours' — that basis is used here. Non-resident Associate tuition ($342.28/credit) plus mandatory per-credit fees ($41.05/credit) plus $10/semester flat fees, at 24 credits/year: $9,220/yr (fees bundled into `tuition`, so `fees` is $0 to avoid double-counting). Rose State's own COA table publishes tuition on a RESIDENT basis ($4,099), so the non-resident figure above is used per this guide's convention. Room/Board: the school's own COA table gives $9,635/yr as its official 'Room/Board — Indirect Cost' estimate for a full-time independent student (the exact on-campus rate sheet for The Village at Rose State — the college's only on-campus housing — returned a broken link at time of research, so this official COA allowance is used instead). Direct billed cost: $18,855/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+      "internationalNote": "Rose State's own 2025-26 Cost of Attendance page (Tier-1: rose.edu/affordability/tuition-fees/cost-of-attendance) states its estimates 'cover 24 credit hours' — that basis is used here. Non-resident Associate tuition ($342.28/credit) plus mandatory per-credit fees ($41.05/credit) plus $10/semester flat fees, at 24 credits/year: $9,220/yr (fees bundled into tuition, so fees are $0 to avoid double-counting). Rose State's own COA table publishes tuition on a RESIDENT basis ($4,099), so the non-resident figure above is used per this guide's convention. Room/Board: the school's own COA table gives $9,635/yr as its official 'Room/Board — Indirect Cost' estimate for a full-time independent student (the exact on-campus rate sheet for The Village at Rose State — the college's only on-campus housing — returned a broken link at time of research, so this official COA allowance is used instead). Direct billed cost: $18,855/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
     },
     "confRecord": [
       {
@@ -10363,7 +10363,7 @@
     "url": "https://athletics.np.edu/sports/msoc/index",
     "degreeTitle": "Exercise Science, A.S.-STEM (transfer pathway to University of Arkansas at Monticello BS Exercise Science)",
     "acuAlign": 2,
-    "acuAlignNote": "National Park College's Sports Science pathway offers a genuine, formally-titled Exercise Science degree (AS-STEM, 61 NPC credit hours) with an articulated transfer to University of Arkansas at Monticello's BS in Exercise Science (120 total credits) — confirmed via the official course catalog (catalog.np.edu). Checked against this guide's real 16-unit ACU rubric (js/app.js ACU_UNIT_META, not assumed labels): NPC's own BIOL 2224/2234 Anatomy & Physiology I/II covers ANAT100 (Anatomical Foundations), and the Gen Ed Lab Science requirement (BIOL 1024/1114) covers BIOL125 (Human Biology 1). None of NPC's associate-level coursework maps to Functional Anatomy, Physiological Bases of Exercise, Mechanical Bases of Exercise/Biomechanics, Sport Psychology, or Resistance Training — those specialized units are back-loaded into the 59 remaining UAM credit hours after transfer (EXSC10002 Introduction to Exercise Science, PHED 35243 Exercise Physiology, PHED 47143 Sport Administration, etc., all completed post-transfer, not at NPC). Full WES evaluation and advisor confirmation required.",
+    "acuAlignNote": "National Park College's Sports Science pathway offers a genuine, formally-titled Exercise Science degree (AS-STEM, 61 NPC credit hours) with an articulated transfer to University of Arkansas at Monticello's BS in Exercise Science (120 total credits) — confirmed via the official course catalog (catalog.np.edu). Checked against the real definitions of this guide's 16 ACU units, not assumed labels: NPC's own BIOL 2224/2234 Anatomy & Physiology I/II covers ANAT100 (Anatomical Foundations), and the Gen Ed Lab Science requirement (BIOL 1024/1114) covers BIOL125 (Human Biology 1). None of NPC's associate-level coursework maps to Functional Anatomy, Physiological Bases of Exercise, Mechanical Bases of Exercise/Biomechanics, Sport Psychology, or Resistance Training — those specialized units are back-loaded into the 59 remaining UAM credit hours after transfer (EXSC10002 Introduction to Exercise Science, PHED 35243 Exercise Physiology, PHED 47143 Sport Administration, etc., all completed post-transfer, not at NPC). Full WES evaluation and advisor confirmation required.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -10451,7 +10451,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 2000,
       "aidType": "athletic+merit",
-      "internationalNote": "National Park College's official 2026-27 Tuition and Fees page (Tier-1: np.edu/admissions-aid/financial-aid/tuition-fees) publishes a distinct “International Residents” per-credit-hour rate: $227 tuition + $75 mandatory fee + $10 student activity fee = $312/credit hour ($307/credit before the lab fee, which only applies to lab-based courses and is excluded here); at a standard 24 credits/year that is $7,368/yr (fees bundled into `tuition` to avoid double-counting, so `fees` is $0). Room/Board: the school's own official 2026-27 Cost of Attendance table gives $9,478/yr as its “On Campus Living Expenses: Housing and Food” estimate for a dependent student — independently cross-checked against the actual Dogwood/Redbud Hall per-semester rate sheet (cheapest 4BR/2BA private room: $4,000 Fall + $3,200 Spring = $7,200/yr) plus the mandatory on-campus meal plan ($1,100/semester × 2 = $2,200/yr) = $9,400/yr, a close match. Direct billed cost: $16,846/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
+      "internationalNote": "National Park College's official 2026-27 Tuition and Fees page (Tier-1: np.edu/admissions-aid/financial-aid/tuition-fees) publishes a distinct “International Residents” per-credit-hour rate: $227 tuition + $75 mandatory fee + $10 student activity fee = $312/credit hour ($307/credit before the lab fee, which only applies to lab-based courses and is excluded here); at a standard 24 credits/year that is $7,368/yr (fees bundled into tuition to avoid double-counting, so fees are $0). Room/Board: the school's own official 2026-27 Cost of Attendance table gives $9,478/yr as its “On Campus Living Expenses: Housing and Food” estimate for a dependent student — independently cross-checked against the actual Dogwood/Redbud Hall per-semester rate sheet (cheapest 4BR/2BA private room: $4,000 Fall + $3,200 Spring = $7,200/yr) plus the mandatory on-campus meal plan ($1,100/semester × 2 = $2,200/yr) = $9,400/yr, a close match. Direct billed cost: $16,846/yr. As NJCAA Division I, athletic aid can structurally cover tuition, fees, books and room & board; budget for a realistic 30-50% package."
     },
     "confRecord": [
       {
@@ -10602,7 +10602,7 @@
     "url": "https://bucksathletics.com/sports/msoc/index",
     "degreeTitle": "Kinesiology, A.S. — Arkansas's only two-year Exercise Science-track program, 2+2 pathway to the University of Arkansas",
     "acuAlign": 2,
-    "acuAlignNote": "UA Rich Mountain publicly bills itself as “the ONLY two-year college in Arkansas offering an Associate of Science in Exercise Science,” with a formally announced (June 2026 news release) 2+2 partnership with the University of Arkansas's Department of Health, Human Performance and Recreation. Checked against this guide's real 16-unit ACU rubric (js/app.js ACU_UNIT_META): the college's official course catalog (most recent full catalog located: 2021-22, predating this new degree's launch) confirms separate, dedicated BIOL2443 Human Anatomy (covers ANAT100) and BIOL1543 Biological Science (covers BIOL125) courses. EXSC2733 “Introduction to Exercise Science” does not map to any of the 16 defined units (it is a general careers/orientation course, not Mechanical Bases of Exercise/Biomechanics or any other specific unit), and BIOL2213 Human Physiology is general systemic physiology rather than the exercise-specific physiology EXSC225 requires. The brand-new Exercise Science AS degree's own specific course list was not found in a currently-published catalog (it launched after the located 2021-22 catalog), so this score is built conservatively from confirmed existing course offerings only — not the new degree's marketing claims. Full WES evaluation and advisor confirmation required.",
+    "acuAlignNote": "UA Rich Mountain publicly bills itself as “the ONLY two-year college in Arkansas offering an Associate of Science in Exercise Science,” with a formally announced (June 2026 news release) 2+2 partnership with the University of Arkansas's Department of Health, Human Performance and Recreation. Checked against the real definitions of this guide's 16 ACU units: the college's official course catalog (most recent full catalog located: 2021-22, predating this new degree's launch) confirms separate, dedicated BIOL2443 Human Anatomy (covers ANAT100) and BIOL1543 Biological Science (covers BIOL125) courses. EXSC2733 “Introduction to Exercise Science” does not map to any of the 16 defined units (it is a general careers/orientation course, not Mechanical Bases of Exercise/Biomechanics or any other specific unit), and BIOL2213 Human Physiology is general systemic physiology rather than the exercise-specific physiology EXSC225 requires. The brand-new Exercise Science AS degree's own specific course list was not found in a currently-published catalog (it launched after the located 2021-22 catalog), so this score is built conservatively from confirmed existing course offerings only — not the new degree's marketing claims. Full WES evaluation and advisor confirmation required.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -10817,7 +10817,7 @@
     "url": "https://hillcollegeathletics.com/sports/msoc/index",
     "degreeTitle": "Kinesiology, A.A. — required Anatomy & Physiology I/II plus dedicated PHED coursework (Pre-Physical Therapy A.S. also offered)",
     "acuAlign": 1,
-    "acuAlignNote": "Hill College's official Kinesiology Associate of Arts degree plan (Tier-1 PDF, hillcollege.edu, revised June 2025) requires BIOL 2401 Anatomy & Physiology I and BIOL 2402 Anatomy & Physiology II as CORE courses (not electives). Checked against this guide's real 16-unit ACU rubric (js/app.js ACU_UNIT_META): this covers ANAT100 (Anatomical Foundations). PHED 1301 Foundations of Kinesiology, PHED 1304 Personal/Community Health, PHED 1306 First Aid and PHED 1338 Concepts of Physical Fitness are all real, dedicated, required PE courses, but none of them map to a specific defined unit (Foundations of Kinesiology is a general survey course, not Mechanical Bases of Exercise/Biomechanics; Personal/Community Health is not Sport Psychology). No standalone general-biology gen-ed is required beyond the A&P sequence itself for this specific degree plan. Hill College also separately offers a Pre-Physical Therapy A.S. (directly matching Olivier's stated DPT career goal) built around the same required BIOL 2401/2402 sequence plus a heavier general-science load (Chemistry I/II, Physics I/II, Trig/Pre-Calc) — genuinely the campaign's most direct pre-PT-titled pathway by name, though its ACU-mapped content is no stronger. Full WES evaluation and advisor confirmation required.",
+    "acuAlignNote": "Hill College's official Kinesiology Associate of Arts degree plan (Tier-1 PDF, hillcollege.edu, revised June 2025) requires BIOL 2401 Anatomy & Physiology I and BIOL 2402 Anatomy & Physiology II as CORE courses (not electives). Checked against the real definitions of this guide's 16 ACU units: this covers ANAT100 (Anatomical Foundations). PHED 1301 Foundations of Kinesiology, PHED 1304 Personal/Community Health, PHED 1306 First Aid and PHED 1338 Concepts of Physical Fitness are all real, dedicated, required PE courses, but none of them map to a specific defined unit (Foundations of Kinesiology is a general survey course, not Mechanical Bases of Exercise/Biomechanics; Personal/Community Health is not Sport Psychology). No standalone general-biology gen-ed is required beyond the A&P sequence itself for this specific degree plan. Hill College also separately offers a Pre-Physical Therapy A.S. (directly matching Olivier's stated DPT career goal) built around the same required BIOL 2401/2402 sequence plus a heavier general-science load (Chemistry I/II, Physics I/II, Trig/Pre-Calc) — genuinely the campaign's most direct pre-PT-titled pathway by name, though its ACU-mapped content is no stronger. Full WES evaluation and advisor confirmation required.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -11670,7 +11670,7 @@
         "Angel Diaz — 2025-26 leading scorer (16g/1a in 12 starts, .254 shot %)",
         "Joel Vasquez — 4g/5a in 2025-26"
       ],
-      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found (see nextLevel note). The program's real story this session is a genuine three-year coaching turnaround rather than a documented pro/transfer pipeline.",
+      "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found (see nextLevel note). The program's real story is a genuine three-year coaching turnaround rather than a documented pro/transfer pipeline.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "d1Count": null,
@@ -11797,7 +11797,7 @@
     "url": "https://www.region4sports.com/sports/msoc/2025-26/teams/malcolmxcollege",
     "degreeTitle": "Personal Fitness Trainer, Basic Certificate + A.A. transfer",
     "acuAlign": 6,
-    "acuAlignNote": "Malcolm X College is City Colleges of Chicago's (CCC) designated Center of Excellence for Health Sciences (home to a $251M School of Health Sciences, opened 2016) and is the ONE CCC campus that actually teaches CCC's Exercise Sci and Sports Studies (ESSS) department, confirmed via the official district-wide academic catalog (catalog.ccc.edu/courses-az/esss/, every ESSS course tagged \"Offered At: MX\"). The real program is the Personal Fitness Trainer, Basic Certificate (catalog.ccc.edu/academic-program-requirements/personal-fitness-trainer-basic-certificate/ — a 1-year, 2-semester certificate, not a full associate degree). Real course-level matches against this guide's actual 16-unit rubric (js/app.js ACU_UNIT_META — checked by real definition, not by code name, per this campaign's Batch 4 lesson): ESSS 112 'Functional Anatomy & Kinesiology' (5cr — covers skeletal/muscular/nervous/circulatory anatomy AND 'locomotion, biomechanics, forces and levers') maps to ANAT100 (Anatomical Foundations), EXSC222 (Functional Anatomy) and EXSC224 (Mechanical Bases of Exercise / Intro Biomechanics) — three units from one course. ESSS 214 'Exercise and Health Psychology' maps to EXSC296 (Health & Exercise Psychology) specifically, NOT EXSC199 (Psychology of Sport / Sport Psychology) — ESSS214 covers general health-behavior psychology, stress and coping, not sport-specific psychology, so EXSC199 is marked false. ESSS 102 'Personal Trainer Practicum' (a supervised practical placement) maps to EXSC398 (Professional Experience). A general-education Life Sciences requirement covers BIOL125. No course maps to EXSC225 (a standalone Exercise Physiology course was not found — ESSS101 touches physiology only introductorily), EXSC322/EXSC394/EXSC321 (no advanced-level ESSS courses exist), EXSC204/EXSC216 (no dedicated exercise-testing/resistance-training course found), EXSC187/EXSC230/EXSC122 (no motor-development, motor-control or kinesiology-specific research-methods course found). Full WES evaluation and advisor confirmation required regardless.",
+    "acuAlignNote": "Malcolm X College is City Colleges of Chicago's (CCC) designated Center of Excellence for Health Sciences (home to a $251M School of Health Sciences, opened 2016) and is the ONE CCC campus that actually teaches CCC's Exercise Sci and Sports Studies (ESSS) department, confirmed via the official district-wide academic catalog (catalog.ccc.edu/courses-az/esss/, every ESSS course tagged \"Offered At: MX\"). The real program is the Personal Fitness Trainer, Basic Certificate (catalog.ccc.edu/academic-program-requirements/personal-fitness-trainer-basic-certificate/ — a 1-year, 2-semester certificate, not a full associate degree). Real course-level matches against this guide's actual 16-unit rubric (checked by each unit's real definition, not its code name): ESSS 112 'Functional Anatomy & Kinesiology' (5cr — covers skeletal/muscular/nervous/circulatory anatomy AND 'locomotion, biomechanics, forces and levers') maps to ANAT100 (Anatomical Foundations), EXSC222 (Functional Anatomy) and EXSC224 (Mechanical Bases of Exercise / Intro Biomechanics) — three units from one course. ESSS 214 'Exercise and Health Psychology' maps to EXSC296 (Health & Exercise Psychology) specifically, NOT EXSC199 (Psychology of Sport / Sport Psychology) — ESSS214 covers general health-behavior psychology, stress and coping, not sport-specific psychology, so EXSC199 is marked false. ESSS 102 'Personal Trainer Practicum' (a supervised practical placement) maps to EXSC398 (Professional Experience). A general-education Life Sciences requirement covers BIOL125. No course maps to EXSC225 (a standalone Exercise Physiology course was not found — ESSS101 touches physiology only introductorily), EXSC322/EXSC394/EXSC321 (no advanced-level ESSS courses exist), EXSC204/EXSC216 (no dedicated exercise-testing/resistance-training course found), EXSC187/EXSC230/EXSC122 (no motor-development, motor-control or kinesiology-specific research-methods course found). Full WES evaluation and advisor confirmation required regardless.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -12490,7 +12490,7 @@
     "url": "https://redravenathletics.com/sports/msoc/index",
     "degreeTitle": "Athletic Training, Associate in Science",
     "acuAlign": 3,
-    "acuAlignNote": "Coffeyville offers a genuine dedicated Athletic Training AS degree (64 credit hours, Tier-1: 2026-27 catalog, coffeyville.catalog.acalog.com) with real clinical content: BIOL 203 Anatomy and Physiology (a combined 5-credit-hour A&P course), BIOL 101 General Biology, CHEM 103 Principles of Chemistry I, HPER 165 Introduction to Athletic Training, HPER 270 Basic Prevention and Care of Athletic Injuries, HPER 299 Nutrition, and a genuine supervised clinical sequence (HPER 209/210 Practicum in Athletic Training I & II, 4 credit hours combined). Checked unit-by-unit against the real ACU_UNIT_META definitions (js/app.js): ANAT100 and BIOL125 map cleanly to BIOL 203 and BIOL 101 respectively, and the HPER 209/210 practicum sequence is a genuine clinical placement matching EXSC398's 'Internship/Clinical Practicum' definition. No dedicated Sport Psychology, Biomechanics, or Exercise Physiology course was found — PSYC 101/102 are general and developmental psychology, not sport-specific.",
+    "acuAlignNote": "Coffeyville offers a genuine dedicated Athletic Training AS degree (64 credit hours, Tier-1: 2026-27 catalog, coffeyville.catalog.acalog.com) with real clinical content: BIOL 203 Anatomy and Physiology (a combined 5-credit-hour A&P course), BIOL 101 General Biology, CHEM 103 Principles of Chemistry I, HPER 165 Introduction to Athletic Training, HPER 270 Basic Prevention and Care of Athletic Injuries, HPER 299 Nutrition, and a genuine supervised clinical sequence (HPER 209/210 Practicum in Athletic Training I & II, 4 credit hours combined). Checked unit-by-unit against the real ACU unit definitions: ANAT100 and BIOL125 map cleanly to BIOL 203 and BIOL 101 respectively, and the HPER 209/210 practicum sequence is a genuine clinical placement matching EXSC398's 'Internship/Clinical Practicum' definition. No dedicated Sport Psychology, Biomechanics, or Exercise Physiology course was found — PSYC 101/102 are general and developmental psychology, not sport-specific.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -12751,7 +12751,7 @@
     "url": "https://www.gobroncbusters.com/sports/msoc/index",
     "degreeTitle": "Exercise Science, Associate in Science (EXSC.AS)",
     "acuAlign": 1,
-    "acuAlignNote": "Garden City offers a genuine, formally-titled Exercise Science AS degree (60 credit hours minimum, Tier-1: 2026-27 catalog.gcccks.edu) with a real named 4-year articulation agreement — Garden City to Sterling University's Pre-Athletic Training program, leading to a Bachelor's and Master's in Athletic Training. Checked unit-by-unit against the real ACU_UNIT_META definitions (js/app.js): the degree's REQUIRED core (HPER 109 First Aid, HPER 281 Intro to Exercise Science, HPER 106 Health Education, HPER 211 Prevention and Care of Athletic Injuries, HPER 115 Basic Nutrition) does not map cleanly to any of the 16 narrow ACU units on its own — HPER 281 is a broad multi-topic survey, not a dedicated exercise-physiology course, so it was deliberately NOT counted (same conservative standard applied throughout this batch). ANAT100 is counted via BIOL 211/212 Anatomy and Physiology I & II, which are PROGRAM ELECTIVES (not required core) but are the clear, standard choice for any student actually following the named Sterling articulation. BIOL125 was not separately counted (same course used for ANAT100, following the Hill College precedent of not double-counting one A&P sequence against two units).",
+    "acuAlignNote": "Garden City offers a genuine, formally-titled Exercise Science AS degree (60 credit hours minimum, Tier-1: 2026-27 catalog.gcccks.edu) with a real named 4-year articulation agreement — Garden City to Sterling University's Pre-Athletic Training program, leading to a Bachelor's and Master's in Athletic Training. Checked unit-by-unit against the real ACU unit definitions: the degree's REQUIRED core (HPER 109 First Aid, HPER 281 Intro to Exercise Science, HPER 106 Health Education, HPER 211 Prevention and Care of Athletic Injuries, HPER 115 Basic Nutrition) does not map cleanly to any of the 16 narrow ACU units on its own — HPER 281 is a broad multi-topic survey, not a dedicated exercise-physiology course, so it was deliberately NOT counted (same conservative standard applied throughout this batch). ANAT100 is counted via BIOL 211/212 Anatomy and Physiology I & II, which are PROGRAM ELECTIVES (not required core) but are the clear, standard choice for any student actually following the named Sterling articulation. BIOL125 was not separately counted (same course used for ANAT100, following the Hill College precedent of not double-counting one A&P sequence against two units).",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -13010,7 +13010,7 @@
     "url": "https://sewardsaints.com/sports/msoc/index",
     "degreeTitle": "Associate of Science in Physical Education",
     "acuAlign": 2,
-    "acuAlignNote": "Seward County's AS in Physical Education (60 credit hours, Tier-1: catalog.sccc.edu 2026-27 program page) requires real science coursework as CORE, not elective: BI1305 Principles of Biology (5 credit hours, part of the general-education Natural & Physical Sciences requirement in the recommended sequence) and BI2115 Anatomy & Physiology (5 credit hours, required core in the 4th semester). Checked unit-by-unit against the real ACU_UNIT_META definitions (js/app.js): ANAT100 maps cleanly to BI2115, and BIOL125 to BI1305 — both genuinely required, not elective, a stronger footing than several peer schools in this batch. PE1503 'Concepts of Exercise Science' (also required core) was deliberately NOT counted toward EXSC225 'Physiological Bases of Exercise' — it is a broad multi-topic intro survey, not a dedicated exercise-physiology course, the same conservative standard applied to every school in this batch. No dedicated Sport Psychology, Biomechanics, or Resistance Training course was found; BA2013 'Practicum in Sports Management' is a business/administration practicum, not a clinical exercise-science placement, so it was not counted toward EXSC398.",
+    "acuAlignNote": "Seward County's AS in Physical Education (60 credit hours, Tier-1: catalog.sccc.edu 2026-27 program page) requires real science coursework as CORE, not elective: BI1305 Principles of Biology (5 credit hours, part of the general-education Natural & Physical Sciences requirement in the recommended sequence) and BI2115 Anatomy & Physiology (5 credit hours, required core in the 4th semester). Checked unit-by-unit against the real ACU unit definitions: ANAT100 maps cleanly to BI2115, and BIOL125 to BI1305 — both genuinely required, not elective, a stronger footing than several peer schools in this batch. PE1503 'Concepts of Exercise Science' (also required core) was deliberately NOT counted toward EXSC225 'Physiological Bases of Exercise' — it is a broad multi-topic intro survey, not a dedicated exercise-physiology course, the same conservative standard applied to every school in this batch. No dedicated Sport Psychology, Biomechanics, or Resistance Training course was found; BA2013 'Practicum in Sports Management' is a business/administration practicum, not a clinical exercise-science placement, so it was not counted toward EXSC398.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -17358,7 +17358,7 @@
     "url": "https://crowderathletics.com/sports/msoc/index",
     "degreeTitle": "Associate of Arts, Physical Education",
     "acuAlign": 0,
-    "acuAlignNote": "Crowder College's Physical Education AA explicitly names teaching, coaching, athletic training, recreation, and health promotion/wellness as transfer-track career outcomes (crowder.edu/program/education/physical-education/) — a genuinely dedicated PE major, not a generic transfer AA. However the specific required-course list sits inside Crowder's 206-page 2026-2027 course catalog PDF, which returned no usable searchable text via the available PDF-viewer tooling this session (the in-browser PDF renderer's find function did not respond, and no standalone program-requirements page equivalent to peer schools' catalog listings was found). Scored at the conservative floor (acuAlign 0) pending a future session with better PDF access — the program's real existence and its explicit athletic-training/health-promotion framing is disclosed here rather than assumed to satisfy any specific ACU unit.",
+    "acuAlignNote": "Crowder College's Physical Education AA explicitly names teaching, coaching, athletic training, recreation, and health promotion/wellness as transfer-track career outcomes (crowder.edu/program/education/physical-education/) — a genuinely dedicated PE major, not a generic transfer AA. However the specific required-course list sits inside Crowder's 206-page 2026-2027 course catalog PDF, which could not be searched when it was reviewed, and no standalone program-requirements page like peer schools' catalog listings was found. It is rated at an ACU alignment of 0 until the course list can be confirmed — the program's real existence and its explicit athletic-training/health-promotion framing is disclosed here rather than assumed to satisfy any specific ACU unit.",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -17519,9 +17519,9 @@
       "strengthConditioning": "No dedicated soccer strength & conditioning coach identified on the official staff directory.",
       "sportsScience": "No video-analysis or GPS/wearable technology confirmed on the official athletics site.",
       "sportsMed": "Standard JUCO athletic training provision via the Crowder College athletics department; the college's Freeman Family YMCA partnership gives resident students a campus fitness membership.",
-      "academicLabs": "General Physical Education AA — no Exercise-Science-specific lab confirmed via available tooling this session.",
+      "academicLabs": "General Physical Education AA — no Exercise-Science-specific lab confirmed.",
       "extras": "Neosho, MO (pop. ~13,000) is a small southwest Missouri town near the Oklahoma/Arkansas/Kansas borders.",
-      "note": "A genuine 2025 Region 16 title and NJCAA All-American season under a first-year head coach, offset by a thin public facilities profile and an inaccessible academic-catalog PDF this session.",
+      "note": "A genuine 2025 Region 16 title and NJCAA All-American season under a first-year head coach, offset by a thin public facilities profile and a course catalog that could not be reviewed in detail.",
       "housing": {
         "available": true,
         "note": "Crowder College has real on-campus housing: the Brown Complex (traditional-style dorms, all-access meal plan included) and the Roughrider Village Apartments (1- and 2-bedroom, optional meal plans). Confirmed via the college's own current 2026-2027 Housing Rates page."
@@ -17535,9 +17535,9 @@
       "lifestyleTags": "Small Missouri town, on-campus housing, international roster, cold winters, first-year Elite coach"
     },
     "courses": [
-      "Physical Education AA — no Exercise-Science-specific course list confirmed via available tooling this session"
+      "Physical Education AA — no Exercise-Science-specific course list confirmed"
     ],
-    "rec": "Crowder College is this batch's most decorated on-field story: 2025 NJCAA Region 16 Tournament Champion (beating rival Jefferson College 1-0 in the final) and a Plains District Tournament appearance, all in first-year head coach Hunter Gilliam's debut season. Forward Silas Laytham's Region 16 Player of the Year + NJCAA D1 3rd Team All-American season, followed by a real 2026 commitment to NCAA D1 UMKC, is a genuine credential for the program. The trade-off: an inaccessible course catalog left the Physical Education AA's specific ACU alignment unverified this session (scored at the conservative floor), and the program's facilities profile is thin. Real on-campus housing and one of the cheapest costs of attendance in the entire guide ($14,664/yr) round out a genuinely strong package. minutesOutlook is wide open — the entire current 6-player midfield pool clears NJCAA eligibility before Olivier's Aug 2027 arrival.",
+    "rec": "Crowder College is this batch's most decorated on-field story: 2025 NJCAA Region 16 Tournament Champion (beating rival Jefferson College 1-0 in the final) and a Plains District Tournament appearance, all in first-year head coach Hunter Gilliam's debut season. Forward Silas Laytham's Region 16 Player of the Year + NJCAA D1 3rd Team All-American season, followed by a real 2026 commitment to NCAA D1 UMKC, is a genuine credential for the program. The trade-off: an inaccessible course catalog left the Physical Education AA's specific ACU alignment unverified (rated at the lowest ACU alignment level), and the program's facilities profile is thin. Real on-campus housing and one of the cheapest costs of attendance in the entire guide ($14,664/yr) round out a genuinely strong package. minutesOutlook is wide open — the entire current 6-player midfield pool clears NJCAA eligibility before Olivier's Aug 2027 arrival.",
     "minutesOutlook": {
       "available": true,
       "mf_total": 8,
@@ -17574,7 +17574,7 @@
     "recruit_pathway": "Freshman-friendly",
     "recruit_pathway_note": "All 6 confirmed midfielders on the 2025-26 roster are Fr./So. with no transfer annotation — a genuinely international, largely true-freshman-entry midfield (Germany, Spain, Costa Rica, South Korea).",
     "acRank": "NJCAA Level",
-    "kinRank": "Physical Education AA — specific course list unconfirmed via available tooling this session; scored at the conservative ACU floor"
+    "kinRank": "Physical Education AA — specific course list not confirmed; rated at the lowest ACU alignment level until it is"
   },
   {
     "id": "jefferson_college_mo",
@@ -17695,7 +17695,7 @@
       "maxAthletic": 0.5,
       "maxAcademic": 1500,
       "aidType": "athletic+merit",
-      "internationalNote": "Jefferson College's own official 2026-2027 Cost of Attendance page (jeffco.edu/cost-attendance) gives the Out-of-State budget as: Tuition & Fees $9,581 total (breaking out to $9,750 catalog per-credit tuition, netted against the page's own Book Rental $840 + Computer/Tech Supplies $500 as separate line items — folded here into `fees`), Housing $7,653, Food $3,106 — a real, current, official figure. Direct billed cost: $21,849/yr."
+      "internationalNote": "Jefferson College's own official 2026-2027 Cost of Attendance page (jeffco.edu/cost-attendance) gives the Out-of-State budget as: Tuition & Fees $9,581 total (breaking out to $9,750 catalog per-credit tuition, netted against the page's own Book Rental $840 + Computer/Tech Supplies $500 as separate line items — folded here into fees), Housing $7,653, Food $3,106 — a real, current, official figure. Direct billed cost: $21,849/yr."
     },
     "confRecord": [
       {
@@ -17731,14 +17731,14 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [
-        "TopDrawerSoccer's own Men's DI Transfer Tracker lists a real Jefferson College departure to Southern Illinois University Edwardsville (SIUE, NCAA Division I) in its 2022 edition — confirmed as a genuine, recurring D1 outflow pattern rather than a single anomaly, though the specific player name was not independently re-verified on SIUE's own roster this session."
+        "TopDrawerSoccer's own Men's DI Transfer Tracker lists a real Jefferson College departure to Southern Illinois University Edwardsville (SIUE, NCAA Division I) in its 2022 edition — confirmed as a genuine, recurring D1 outflow pattern rather than a single anomaly, though the specific player name was not independently confirmed on SIUE's own roster."
       ],
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Real, recurring NCAA D1 transfer activity found via TopDrawerSoccer's tracker across multiple years, not extrapolated into a measured rate.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "perYear": null,
         "sourceUrl": null,
-        "note": "Jefferson College doesn't publish an alumni-tracking page. Names linked to Jefferson College appear in national transfer-tracker records for both 2022 (to SIUE) and 2023, but weren't individually confirmed on the receiving schools' own rosters this session, so they aren't used to calculate a rate yet."
+        "note": "Jefferson College doesn't publish an alumni-tracking page. Names linked to Jefferson College appear in national transfer-tracker records for both 2022 (to SIUE) and 2023, but weren't individually confirmed on the receiving schools' own rosters, so they aren't used to calculate a rate yet."
       }
     },
     "devScores": {
@@ -18104,7 +18104,7 @@
     "url": "https://athletics.hagerstowncc.edu/sports/msoc/index",
     "degreeTitle": "Associate of Science, Exercise Science and Health",
     "acuAlign": 4,
-    "acuAlignNote": "Hagerstown Community College offers a genuine, dedicated Exercise Science and Health A.S. (hagerstowncc.smartcatalogiq.com, 2026-2027 catalog) that 'serves as a foundation for students pursuing a career in Kinesiology, Exercise Physiology, Physical or Occupational Therapy, Athletic Training, Physical Education, Health Education, Sports Management or Personal/Fitness Training.' The 17-credit Program Requirements block includes EXS-143 Strength Training, EXS-163 Fitness and Conditioning, EXS-230 Foundations of Exercise and Movement, EXS-232 Concepts of Fitness Testing and Program Design, HEA-102 Nutrition, HEA-103 Personal Health, and HEA-105 First Aid. Mapped against named course content: EXSC225 (Foundations of Exercise and Movement), EXSC394 + EXSC204 (Concepts of Fitness Testing and Program Design covers both prescription and delivery), and EXSC216 (Strength Training). No dedicated A&P, biomechanics, sport psychology, or internship course confirmed within the core 17-credit block (a 10-11 credit Restricted Electives block exists but was not individually expanded this session).",
+    "acuAlignNote": "Hagerstown Community College offers a genuine, dedicated Exercise Science and Health A.S. (hagerstowncc.smartcatalogiq.com, 2026-2027 catalog) that 'serves as a foundation for students pursuing a career in Kinesiology, Exercise Physiology, Physical or Occupational Therapy, Athletic Training, Physical Education, Health Education, Sports Management or Personal/Fitness Training.' The 17-credit Program Requirements block includes EXS-143 Strength Training, EXS-163 Fitness and Conditioning, EXS-230 Foundations of Exercise and Movement, EXS-232 Concepts of Fitness Testing and Program Design, HEA-102 Nutrition, HEA-103 Personal Health, and HEA-105 First Aid. Mapped against named course content: EXSC225 (Foundations of Exercise and Movement), EXSC394 + EXSC204 (Concepts of Fitness Testing and Program Design covers both prescription and delivery), and EXSC216 (Strength Training). No dedicated A&P, biomechanics, sport psychology, or internship course confirmed within the core 17-credit block (a 10-11 credit Restricted Electives block exists but was not reviewed course by course).",
     "acuUnits": [
       {
         "unit": "ANAT100",
@@ -18222,7 +18222,7 @@
       "notable": [
         "No individually Tier-1-confirmed NCAA D1 transfer found via a TopDrawerSoccer national transfer-tracker cross-check at time of research — no hits under 'Hagerstown Community College' in any recent tracker edition checked."
       ],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No D1 transfer found via a national transfer-tracker cross-check this session.",
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No D1 transfer found via a national transfer-tracker cross-check.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "perYear": null,
@@ -18969,7 +18969,7 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Forward Isaac Stanley earned NJCAA Division I 2nd-Team All-American honors in December 2025, confirmed via Snow College Athletics' own official news release, but no specific NCAA transfer destination was confirmed for him within this session's research.",
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Forward Isaac Stanley earned NJCAA Division I 2nd-Team All-American honors in December 2025, confirmed via Snow College Athletics' own official news release, but no specific NCAA transfer destination has been confirmed for him.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "perYear": null,
@@ -19684,7 +19684,7 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No NCAA transfer destinations confirmed within this session's research.",
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No NCAA transfer destinations confirmed.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "perYear": null,
@@ -19926,7 +19926,7 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed within this session's research.",
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "perYear": null,
@@ -20173,7 +20173,7 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed within this session's research.",
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "perYear": null,
@@ -20407,7 +20407,7 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No NCAA transfer destinations confirmed within this session's research for a program this young.",
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No NCAA transfer destinations confirmed yet for a program this young.",
       "nextLevel": {
         "metric": "d1TransferRate",
         "perYear": null,
@@ -21230,7 +21230,7 @@
     "url": "https://cgtctitans.com/sports/msc",
     "degreeTitle": "Physical Therapist Assistant, A.S. (CAPTE-accredited)",
     "acuAlign": 6,
-    "acuAlignNote": "Central Georgia Technical College offers a CAPTE-accredited Physical Therapist Assistant Associate Degree (confirmed via the college's own official Health Sciences program page, chaired by Mary A. Roland, PT, DPT) — genuinely directly relevant to Olivier's DPT career goal. The college's own program description confirms real clinical/anatomical content (functional training, manual therapy, physical agents, mechanical agents, therapeutic exercise, off-campus clinical affiliations) typical of any CAPTE-accredited PTA curriculum, though CGTC did not publish an itemized course-by-course list this session. acuAlign scored 6, reflecting genuine anatomy/physiology, exercise-physiology-adjacent, and clinical-practicum content standard to an accredited PTA program.",
+    "acuAlignNote": "Central Georgia Technical College offers a CAPTE-accredited Physical Therapist Assistant Associate Degree (confirmed via the college's own official Health Sciences program page, chaired by Mary A. Roland, PT, DPT) — genuinely directly relevant to Olivier's DPT career goal. The college's own program description confirms real clinical/anatomical content (functional training, manual therapy, physical agents, mechanical agents, therapeutic exercise, off-campus clinical affiliations) typical of any CAPTE-accredited PTA curriculum, though CGTC had not published an itemized course-by-course list when reviewed. acuAlign scored 6, reflecting genuine anatomy/physiology, exercise-physiology-adjacent, and clinical-practicum content standard to an accredited PTA program.",
     "acuUnits": [
       {
         "unit": "ANAT100",

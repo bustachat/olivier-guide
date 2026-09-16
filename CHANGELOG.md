@@ -6,6 +6,55 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.51 (2026-09-16) — Unsupported superlatives and old ballpark costs removed from shared texts; three UI label fixes
+
+**Claims the data doesn't support.**
+- **Tyler JC's "#1 JUCO D1 transfer feeder nationally, all-time record"** (flagged unverified since v42.1) is replaced with "the highest measured NCAA Division I transfer rate of any JUCO in this guide (about 6.6 a year, 2012-2023)". Changed in 13 places: school fields, coach bio and strengths, `conferences.json`, `conf-prestige.json`, `pipeline.json`, `js/app.js`.
+- **Daytona State's "top-5 D1 transfer feeder"** had no measured rate behind it and was removed.
+- **Harcum's "highest cost of attendance in the entire guide"** now reads "of any JUCO" (Duke is higher).
+- **Explore JUCO intro:**
+  - Hill College is "one of the guide's lowest-cost JUCOs", not the lowest (3rd).
+  - "North Idaho 15-of-15 midfielders clear" was removed (stored: 6 of 11).
+  - "CSI … only its second season" and "$12M-adjacent" were removed.
+  - "Cowley and Barton are ranked in the current national top 5" is now dated to 2025.
+  - "Region 6 grows to five guide schools" was dropped (Kansas has 8).
+
+**Old ballpark costs quoted in text (the verified `costNum` was already correct):**
+
+| School | Text said | Verified cost |
+|---|---|---|
+| UCA | ~$28k, "most affordable D1" (GCU is cheaper), "best MF opening, 6 of 9 clear" (stored: 0) | $31.4k |
+| Cal State LA | ~$28k | $41.8k |
+| Delaware | "low ~$38k" | $61.6k |
+| Columbia College | "7,556/yr" / "7k/yr" | $27.6k, the cheapest four-year school in the guide |
+| Santa Monica / Pathway D | ~$9k | $25.7k |
+| Miami Dade | ~$11k | $27.8k |
+| Stony Brook (coach bio) | ~$38k | $54.7k |
+| Denver | ~$62k | $84.1k |
+| FAU | ~$32k | $38.7k |
+
+- **Stale COA figures:** Duke, SMU, Cal, Wisconsin and Louisville quoted an old full COA that was *lower* than their verified billed cost, which is impossible. Each is now stated as the billed cost.
+- **SMU's net-cost example** was recomputed from $96k: about $53k after 35% athletic plus $10k merit, just over the $52k budget.
+- **Louisville** "lowest in the ACC" now says "among the lowest (only NC State is lower)".
+- **Pathway D** said "Iowa Western has 100% MF roster turnover before 2027"; the stored roster has 5 of 13 clearing, so that line was replaced.
+
+**Chapman "KIN 405 Pre-PT required course".** This is one of the course codes the v45.17 audit found fabricated, but it was still rendering in 8 places: the D3 intro, `conferences.json`, `conf-prestige.json`, `pipeline.json`, three `facilityDetails` fields and the coach bio and strengths. All now describe the real Applied Human Physiology degree and Chapman's on-campus DPT program with its Hoag/CHOC clinical network. The `acuAlignNote`'s audit-history wording was also removed.
+
+**UI labels (`index.html`).**
+- The Financial Model search placeholder "Search 110 schools…" is now "Search schools…".
+- The FX slider sublabels read 1.30–1.80 but the slider range is 1.20–1.70; they now read 1.20–1.70.
+- The Glossary said the Minutes Score weights Yr1 45 / Yr2 30 / Yr3 15 / Yr4 10; `minutesOutlookScore()` uses Yr1 60% / Yr2 40%, and the Glossary now says so.
+
+Two long-listed code items (unescaped search keyword, `selectSchoolFromBar` matcher) were already fixed in code; CLAUDE.md now says so.
+
+**Verification.**
+- `validate_schools.py` passes and `validate_consistency.js` reports Issues: 0.
+- `check_no_jargon.py` passes, and `node --check js/app.js` passes.
+- Local preview: all 170 Details modals and every page tab scanned for the removed claims. The only matches are the correct $27,556 Columbia figure.
+- The placeholder and FX labels were read from the rendered page.
+
+---
+
 ### v45.50 (2026-09-16) — Extras for Akron/GCU/Denver; internal stamps removed; prose corrected against stored rosters, coaches and counts; USC Salkehatchie roster refresh (Fit 50 → 47)
 
 **Facilities Extras (`data/d1-other.json`, text only).** Written from each school's official pages, read in Chrome:

@@ -134,6 +134,13 @@ python .claude/skills/roster-refresh/scripts/check_roster_snapshot.py   # only i
   research-batch/campaign comparisons ("this batch", "the batch's",
   "Batch 2", "this entire campaign"), "already-guide", and notes about a
   past data error ("the previous stored $X was an unresearched ballpark").
+  Since v45.50 it also fails on guide version stamps ("Verified v38"),
+  hyphenated source tiers ("Tier-1"), "re-checked live"/"prior session",
+  and data field names used in prose ("minutesOutlook", "acuAlign scored").
+  It checks wording only, not facts: a note can pass and still quote an
+  old roster's midfielder count, so after any refresh re-read every text
+  that mentions the midfield (`rec`, `culture.olivierMatch`, `facilities[]`,
+  `jucoTierNote`, `conferences.json`, the `js/app.js` section intro).
   It does not read `js/app.js`/`index.html` UI copy; sweep those by hand.
   CLAUDE.md documents this exact bug once already (v44.89) — and while
   building this skill, the check found it had recurred: `neosho_county_cc`

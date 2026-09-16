@@ -6,6 +6,59 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.50 (2026-09-16) — Extras for Akron/GCU/Denver; internal stamps removed; prose corrected against stored rosters, coaches and counts; USC Salkehatchie roster refresh (Fit 50 → 47)
+
+**Facilities Extras (`data/d1-other.json`, text only).** Written from each school's official pages, read in Chrome:
+- **Akron:** the Stile Athletics Field House, including its 2023 renovation (Akron Children's Hospital Sports Rehabilitation Center, a refitted 8,000 sq ft S&C center), plus the 2010 natural-grass pitch rebuild and the 3,213 average attendance in the 2010 title season.
+- **GCU:** the stadium's 3,000 shaded chairback seats and berm, the Havocs tailgating platform, locker rooms and satellite training room, and the Student-Athlete Academic Center under the stands.
+- **Denver:** the Pat Bowlen Strength and Conditioning Complex (12 Olympic lifting stations, video room, 66-yard turf track), plus NCAA tournament games hosted 2015–2024.
+
+Denver's `strengthConditioning` text said the complex was "purpose-built for soccer"; DU's dedication release says it serves all 17 varsity programs, so that was corrected.
+
+**Internal stamps removed (344 rendered strings; internal-only fields untouched):**
+- "Verified v38 via official X" became "Confirmed via official X", and "Tier-1 verified from" became "taken from".
+- "corrects prior generic 'X' placeholder" and "retained from prior session pending direct confirmation" were removed or reworded.
+- "Classified Standard per the v37.4 criteria" now states the criteria in plain words.
+- Other internal wording removed: "WebSearch-corroborated", "Google-cached", "Tier-2 discovery", and "re-checked live" (now "Roster last checked August 17, 2026", or September 15 for the six Batch 7 schools still on 2025-26).
+
+**Prose that contradicted the stored data (the bigger find):**
+- **35 Minutes Outlook notes quoted an older roster.** Examples: Memphis "7 of 12 MFs cleared" vs stored 5 of 10, Butler "2 MFs clear" vs 0, Southeastern CC's 2025-26 count of 17. Each roster sentence was rebuilt from the stored `mf_total`/`cleared`/`rising_*` counts; coach and location sentences were kept. The same fix went to Louisville, Cal and UCA (each said 6–9 clear vs stored 0–7).
+- **About 20 school summaries (`rec`, `olivierMatch`, `facilities`, `jucoTierNote`)** had "wide-open midfield / entire N-player pool clears" claims the 2026-27 data contradicts. Examples: Harford "entire 10-player" vs 2 of 5, USC Union "8 of 8" vs 2 of 6, Jacksonville "16-player wide-open" vs 13 of 15 returning, North Idaho "15 of 15" vs 6 of 11, Northeastern JC "fully cleared" vs 1 of 6. Many of these sentences also began with the field name "minutesOutlook".
+- **Coaches:**
+  - Connors State texts said the job was vacant; Steve Moore is now named.
+  - NEO A&M texts called Tyler Douthitt interim, "one day into the role"; that tag was dropped.
+  - NOC-Enid texts credited Aron Bassoff, who left in July 2026; interim coach Joe Jolly is now named.
+  - Illinois Central texts presented Gabe Carreno as current; Tacuma Sadlow has been head coach since June 1, 2026 (confirmed on ICC's live coaches page).
+  - Southeastern CC's "interim coaching situation" line was removed.
+  - Malcolm X's pipeline text no longer describes Jesse Rosen as current.
+- **Illinois Central results:** the tier note said "no 2025-season title". ICC's official 2025 schedule and release show it won the Region 24 Tournament as the No. 2 seed (3-0 over top seed Lewis & Clark), then lost 2-1 in overtime to Indian Hills in the Midwest District. Lewis & Clark's "leading Region 24 again" texts now record the lost final. The Standard tier is unchanged, because a regional title is below the Elite bar.
+- **Conference counts:**
+  - Big Ten "All 14 schools" is now 11.
+  - Big East "All 11 schools" is now 12, including Akron.
+  - AAC "13" and "10 guide schools" are now 8 (Army and Navy are Patriot League).
+  - Region 2 "seven" is now eight (NOC-Enid).
+  - A stale "53 guide schools" fragment was removed.
+  - "the guide's newest/youngest program" claims for Connors State and National Park were softened, and exclusion notes ("A fourth planned school … was excluded") were reworded.
+
+**USC Salkehatchie roster refresh (Change Type 3, score change).** The stored data had 4 of 4 midfielders clearing, although 3 were listed as freshmen on a 2026-27 roster, which is impossible under the JUCO rule. The live 2026-27 visual roster (uscsalkathletics.com, read in Chrome) lists 42 players with 4 goalkeepers and 13 midfielders: 2 sophomores (Clay Sanders, Cheikh Lo Tidiane) and 11 freshmen. The 5 wingers (listed "W") are not counted.
+- **Refresh:** applied with `refresh_school.py` and the full roster archived. Trajectory 56/69 → 46/59, minutes 61 → 51, `fitOlivier`/overall 50 → 47, value 48 → 46, `recruit_risk` Low → High (11 returning).
+- **Coach spot-check:** William Glass is confirmed on the official coach page. That page says "entering his 19th season" while `coaches.json` says 16th; the conflict is flagged, not guessed.
+- **Dependent texts:** summary, lifestyle tags, facilities line, Region 10 conference texts, prestige and `js/app.js` intro no longer describe an open midfield.
+
+**Also:** Harcum's note records that Komata and Hamou-Maamar have moved on, and several coach questions now ask about the 2027 class instead of 2026.
+
+**Tooling.** `check_no_jargon.py` now also fails on guide version stamps, "Tier-1"/"Tier-2", "re-checked live"/"prior session", and data field names in prose. It finds 408 problems on v45.49 data and passes after the fix. `SKILL.md` notes that the checker reads wording, not facts.
+
+**Verification.**
+- `validate_schools.py` passes.
+- `validate_consistency.js`: Issues: 0.
+- `check_roster_arithmetic`, `check_juco_trajectory` (81 JUCOs match the formula) and `check_roster_snapshot` pass.
+- negtest: 8/8 proven, files restored byte-identical.
+- Leaf-by-leaf diff against HEAD: the only non-text values that changed are USC Salkehatchie's eight refresh fields.
+- Local preview: all 170 Details modals scanned (each read after its own school name appears), with no "undefined", "NaN", version stamps, "Tier-1", "this batch" or "minutesOutlook". Every page tab clicked and the full page text scanned.
+
+---
+
 ### v45.49 (2026-09-16) — Vermont facilities text; Paris JC transfer rate re-verified (Fit 53 → 56); renderer guards for missing fields
 
 **Vermont (`data/d1-other.json`, text only, no score change).** The Facilities tab printed "Extras & Unique Perks undefined" and "Facilities verdict: undefined", because the `extras` and `note` fields had never been written. Both are now filled from UVM's official pages, read in Chrome:

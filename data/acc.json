@@ -85,7 +85,7 @@
       "maxAthletic": 0.8,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "UVA non-Virginian direct billed cost $78,136 (2026-27, Tier-1 verified from UVA Student Financial Services' official Estimated Undergraduate Cost of Attendance, rates approved by the Board of Visitors 16 April 2026): tuition $57,432 + required fees $4,634 (UVA's own 'Subtotal' of $62,066) + housing $8,730 + food $7,340. IMPORTANT — UVA prices BY SCHOOL and the rate used is the SCHOOL OF EDUCATION AND HUMAN DEVELOPMENT, where its Kinesiology degree sits, first-year non-Virginian. Housing is the first-year figure; all other years budget $9,894 (+$1,164). UVA's headline first-year non-Virginian total is $83,298-$84,988 depending on the travel allowance by region, adding books, personal expenses, travel and loan fees that this guide excludes; the $4,220 student health plan is required only where a student's own cover is not comparable."
+      "internationalNote": "UVA non-Virginian direct billed cost $78,136 (2026-27, taken from UVA Student Financial Services' official Estimated Undergraduate Cost of Attendance, rates approved by the Board of Visitors 16 April 2026): tuition $57,432 + required fees $4,634 (UVA's own 'Subtotal' of $62,066) + housing $8,730 + food $7,340. IMPORTANT — UVA prices BY SCHOOL and the rate used is the SCHOOL OF EDUCATION AND HUMAN DEVELOPMENT, where its Kinesiology degree sits, first-year non-Virginian. Housing is the first-year figure; all other years budget $9,894 (+$1,164). UVA's headline first-year non-Virginian total is $83,298-$84,988 depending on the travel allowance by region, adding books, personal expenses, travel and loan fees that this guide excludes; the $4,220 student health plan is required only where a student's own cover is not comparable."
     },
     "culture": {
       "vibe": "Academically prestigious, tradition-heavy, slightly formal. UVA has one of the most storied university cultures in America — founded by Thomas Jefferson, the 'Lawn' is a UNESCO World Heritage site. Students take academic pride seriously. Social life centres on the Corner bar district and Greek life.",
@@ -106,7 +106,7 @@
       "note": "Virginia's McCue Center and Sports Performance Lab represent one of the top 5 athletic facilities environments in this entire guide. Combined with Klöckner Stadium's atmosphere and UVA Medical Center access, this is a premier development environment.",
       "housing": {
         "available": true,
-        "note": "Mandatory for all incoming first-years, with only narrow exemptions (married, single parent, non-traditional age). Verified v38 via official housing.virginia.edu."
+        "note": "Mandatory for all incoming first-years, with only narrow exemptions (married, single parent, non-traditional age). Confirmed via official housing.virginia.edu."
       }
     },
     "devScores": {
@@ -364,7 +364,7 @@
       "maxAthletic": 0.85,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "Wake Forest direct billed cost $92,938 (2026-27, Tier-1 verified from Wake Forest's official Academic Bulletin tuition-and-fees schedule, cross-checked against finance.wfu.edu): tuition $71,894 + double room $6,186 a semester = $12,372 + the Base meal plan $3,698 a semester = $7,396 + mandatory Deacon Health $312, Student Activity $115 and Wellness $211 a semester = $1,276. Wake Forest itemises rather than publishing a usable budget breakdown, so the combination is stated: a standard DOUBLE and the Base plan (all resident students must hold a meal plan). Deacon Place rooms run $15,158 and singles/apartments $14,590, so a different room adds $2,200-$2,800. The waivable health-insurance premium, the one-time $380 orientation fee and the off-campus-only $80 technology fee are excluded, as are books and personal expenses; Wake Forest's headline total cost of attendance is $98,730. ⚠ NOTE FOR ANY RE-CHECK: the itemised table on financialaid.wfu.edu does NOT render (its table body is empty in the DOM) and the accessibility tree returns a housing figure ($12,900) that does not match the published double-room rate — use the Bulletin, not that page."
+      "internationalNote": "Wake Forest direct billed cost $92,938 (2026-27, taken from Wake Forest's official Academic Bulletin tuition-and-fees schedule, cross-checked against finance.wfu.edu): tuition $71,894 + double room $6,186 a semester = $12,372 + the Base meal plan $3,698 a semester = $7,396 + mandatory Deacon Health $312, Student Activity $115 and Wellness $211 a semester = $1,276. Wake Forest itemises rather than publishing a usable budget breakdown, so the combination is stated: a standard DOUBLE and the Base plan (all resident students must hold a meal plan). Deacon Place rooms run $15,158 and singles/apartments $14,590, so a different room adds $2,200-$2,800. The waivable health-insurance premium, the one-time $380 orientation fee and the off-campus-only $80 technology fee are excluded, as are books and personal expenses; Wake Forest's headline total cost of attendance is $98,730. ⚠ NOTE FOR ANY RE-CHECK: the itemised table on financialaid.wfu.edu does NOT render (its table body is empty in the DOM) and the accessibility tree returns a housing figure ($12,900) that does not match the published double-room rate — use the Bulletin, not that page."
     },
     "culture": {
       "vibe": "Small, tight-knit, academically intense. With only 8,500 undergrads, everyone knows each other — professors know student names, teams socialise together, and campus life is genuinely close. Winston-Salem has limited nightlife but strong arts culture.",
@@ -385,7 +385,7 @@
       "note": "Wake Forest's standout facility advantage is Wake Forest Baptist Medical Center — its proximity and the kinesiology department's clinical placement relationship make it genuinely unique for a pre-PT student. The athletic performance center is excellent for a small D1 program.",
       "housing": {
         "available": true,
-        "note": "Six-semester (3-year) residency requirement; university guarantees 8 semesters of housing for students in good standing. Exemptions limited (local Forsyth/contiguous-county family address). Verified v38 via official rlh.wfu.edu."
+        "note": "Six-semester (3-year) residency requirement; university guarantees 8 semesters of housing for students in good standing. Exemptions limited (local Forsyth/contiguous-county family address). Confirmed via official rlh.wfu.edu."
       }
     },
     "devScores": {
@@ -676,7 +676,7 @@
       "note": "Westcott Field was renovated for SMU's ACC entry — the stadium infrastructure is improving rapidly. The FC Dallas analytics partnership is a unique professional-standard exposure not found at most D1 programs.",
       "housing": {
         "available": true,
-        "note": "Mandatory for all full-time first-years (one year, reduced from two starting Fall 2025); exemptions rare (local Dallas hardship, married, 21+). Verified v38 via official smu.edu/studentaffairs/housing."
+        "note": "Mandatory for all full-time first-years (one year, reduced from two starting Fall 2025); exemptions rare (local Dallas hardship, married, 21+). Confirmed via official smu.edu/studentaffairs/housing."
       }
     },
     "devScores": {
@@ -1006,7 +1006,7 @@
       "note": "Playing surface renamed Freeman Field 2025. Top-tier Duke athletic infrastructure next door — Cameron Indoor, Wallace Wade football complex with S&C and sports medicine. Strong atmosphere for big ACC matches.",
       "housing": {
         "available": true,
-        "note": "Mandatory 3-year (6-semester) residency requirement, guaranteed for all full-time undergraduates in good standing; seniors may live off-campus. Verified v38 via official students.duke.edu/living/housing."
+        "note": "Mandatory 3-year (6-semester) residency requirement, guaranteed for all full-time undergraduates in good standing; seniors may live off-campus. Confirmed via official students.duke.edu/living/housing."
       }
     },
     "minutesOutlook": {
@@ -1162,7 +1162,7 @@
       "maxAthletic": 0.95,
       "maxAcademic": 10000,
       "aidType": "athletic+merit",
-      "internationalNote": "NC State non-resident direct billed cost $50,383 (2026-27, Tier-1 verified from NC State's official Undergraduate Estimated Cost of Attendance table, out-of-state column): tuition & fees $34,961 + housing $8,738 + food $6,684. NC State publishes tuition and fees COMBINED and does not split them, so the combined figure is recorded as tuition, with fees at $0. NC State's own headline out-of-state total is $54,779, which adds books, personal, transport and loan fees that this guide excludes by convention. Athletic scholarship can cover 35-55%; merit aid available for international students with 3.0+ GPA. Raleigh cost of living is moderate."
+      "internationalNote": "NC State non-resident direct billed cost $50,383 (2026-27, taken from NC State's official Undergraduate Estimated Cost of Attendance table, out-of-state column): tuition & fees $34,961 + housing $8,738 + food $6,684. NC State publishes tuition and fees COMBINED and does not split them, so the combined figure is recorded as tuition, with fees at $0. NC State's own headline out-of-state total is $54,779, which adds books, personal, transport and loan fees that this guide excludes by convention. Athletic scholarship can cover 35-55%; merit aid available for international students with 3.0+ GPA. Raleigh cost of living is moderate."
     },
     "aid": "Athletic",
     "size": 37000,
@@ -1269,7 +1269,7 @@
       "note": "Wolfpack Training Complex adjacent: grass field, turf field, lights, dedicated locker rooms and sports medicine facility. Solid ACC support infrastructure despite shared use with track.",
       "housing": {
         "available": true,
-        "note": "Mandatory for first-year students; exemptions limited to disability/medical need, religious requirements, or living with parents within 15 miles. Verified v38 via official housing.dasa.ncsu.edu."
+        "note": "Mandatory for first-year students; exemptions limited to disability/medical need, religious requirements, or living with parents within 15 miles. Confirmed via official housing.dasa.ncsu.edu."
       }
     },
     "minutesOutlook": {
@@ -1323,7 +1323,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "5 of 7 MFs cleared — near-complete midfield rebuild. Only 2 remain by 2027. Heavy recruiting expected. Roster count verified on the official roster page; names not captured."
+      "trajectoryNote": "On the 2026-27 roster, 5 of 12 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 3 will be juniors and 3 will be sophomores. Heavy recruiting expected."
     },
     "staff": [],
     "acuUnits": [
@@ -1530,7 +1530,7 @@
       "note": "15,320 sqft on-site training centre: dedicated locker rooms, sports medicine room, 830 sqft video/meeting room, indoor warm-up area. One of the best mid-major soccer facility packages in the ACC.",
       "housing": {
         "available": true,
-        "note": "Mandatory first-year live-on requirement; automatic exemptions only for local KY/IN counties or age 21+. Verified v38 via official louisville.edu/housing."
+        "note": "Mandatory first-year live-on requirement; automatic exemptions only for local KY/IN counties or age 21+. Confirmed via official louisville.edu/housing."
       }
     },
     "minutesOutlook": {
@@ -1579,7 +1579,7 @@
           "label": "Established starter"
         }
       ],
-      "trajectoryNote": "6 of 9 MFs cleared before 2027. Strong opportunity for an ACC program — 2 rising juniors provide peer competition. Roster count verified; names not captured."
+      "trajectoryNote": "On the 2026-27 roster, none of the 9 midfielders finish before Olivier arrives in August 2027. In his first season, 3 will be seniors, 2 will be juniors and 4 will be sophomores."
     },
     "staff": [],
     "acuUnits": [
@@ -1680,7 +1680,7 @@
       "maxAthletic": 1.0,
       "maxAcademic": 12000,
       "aidType": "athletic+merit",
-      "internationalNote": "Pitt out-of-state direct billed cost $61,972 (2026-27, Tier-1 verified from Pitt's official Undergraduate Cost of Attendance page for the Pittsburgh campus, board-approved rates): tuition $43,328 + mandatory fees $2,152 + housing $10,374 + food $6,118. IMPORTANT — Pitt prices tuition BY SCHOOL. The rate used is the one for the School of Education, which is where Pitt's B.S. in Exercise Science actually sits (Department of Health and Human Development); it is the same $43,328 as the Dietrich School of Arts and Sciences. The School of Health and Rehabilitation Sciences charges $55,070 out-of-state, so a switch into an SHRS degree would add $11,742 a year — worth raising with admissions before committing to a major. Books, personal expenses and transportation are excluded by convention (Pitt's other-expenses total is $20,654). Athletic scholarship can cover a large share. UPMC partnership gives Pitt one of the strongest sports-medicine environments in the guide."
+      "internationalNote": "Pitt out-of-state direct billed cost $61,972 (2026-27, taken from Pitt's official Undergraduate Cost of Attendance page for the Pittsburgh campus, board-approved rates): tuition $43,328 + mandatory fees $2,152 + housing $10,374 + food $6,118. IMPORTANT — Pitt prices tuition BY SCHOOL. The rate used is the one for the School of Education, which is where Pitt's B.S. in Exercise Science actually sits (Department of Health and Human Development); it is the same $43,328 as the Dietrich School of Arts and Sciences. The School of Health and Rehabilitation Sciences charges $55,070 out-of-state, so a switch into an SHRS degree would add $11,742 a year — worth raising with admissions before committing to a major. Books, personal expenses and transportation are excluded by convention (Pitt's other-expenses total is $20,654). Athletic scholarship can cover a large share. UPMC partnership gives Pitt one of the strongest sports-medicine environments in the guide."
     },
     "aid": "Athletic",
     "size": 28000,
@@ -1788,7 +1788,7 @@
       "note": "3rd floor added 2020 with video room, team lounge and coaches suites. Pitt main athletic S&C facilities accessible across campus. Compact urban campus facility — solid but limited by shared use and small capacity.",
       "housing": {
         "available": true,
-        "note": "Guaranteed (not strictly mandatory) for qualifying first-year fall-term students who meet application/deposit deadlines; guarantee extends to 2 years for incoming classes from Fall 2026. Verified v38 via official pc.pitt.edu (Panther Central)."
+        "note": "Guaranteed (not strictly mandatory) for qualifying first-year fall-term students who meet application/deposit deadlines; guarantee extends to 2 years for incoming classes from Fall 2026. Confirmed via official pc.pitt.edu (Panther Central)."
       }
     },
     "minutesOutlook": {
@@ -1841,7 +1841,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "4 of 5 MFs cleared — near-complete rebuild. Only 1 So remains as Sr in Yr1. Pitt will recruit heavily to fill midfield depth. Roster count verified; names not captured."
+      "trajectoryNote": "On the 2026-27 roster, 5 of 11 midfielders finish before Olivier arrives in August 2027. In his first season, 2 will be seniors, 1 will be a junior and 3 will be sophomores. Pitt will recruit heavily to fill midfield depth."
     },
     "staff": [],
     "acuUnits": [
@@ -1942,7 +1942,7 @@
       "maxAthletic": 1.0,
       "maxAcademic": 0,
       "aidType": "athletic+need",
-      "internationalNote": "Stanford direct billed cost $93,285 (2026-27, Tier-1 verified from Stanford Financial Aid's official undergraduate Student Budget): tuition $67,731 + housing and food $22,944 + student fees allowance $2,610. Stanford HELD UNDERGRADUATE TUITION FLAT for 2026-27 by decision of its Board of Trustees; standard room and board rose 3.5%. Its headline budget total is $97,545, adding books and personal expenses that this guide excludes (travel is listed as 'Varies'). Stanford meets full demonstrated need for those who qualify, but international students face the tightest need-based aid competition in the guide; athletic scholarship is the realistic lever."
+      "internationalNote": "Stanford direct billed cost $93,285 (2026-27, taken from Stanford Financial Aid's official undergraduate Student Budget): tuition $67,731 + housing and food $22,944 + student fees allowance $2,610. Stanford HELD UNDERGRADUATE TUITION FLAT for 2026-27 by decision of its Board of Trustees; standard room and board rose 3.5%. Its headline budget total is $97,545, adding books and personal expenses that this guide excludes (travel is listed as 'Varies'). Stanford meets full demonstrated need for those who qualify, but international students face the tightest need-based aid competition in the guide; athletic scholarship is the realistic lever."
     },
     "aid": "Athletic + Need",
     "size": 17000,
@@ -2056,7 +2056,7 @@
       "note": "Modest stadium capacity but world-class Stanford athletic ecosystem — elite S&C, Rathbun Training Center sports medicine, performance science. Natural grass surface preferred by national teams. Stanford program prestige offsets small stadium.",
       "housing": {
         "available": true,
-        "note": "Mandatory for first-year students (explicit residency requirement); guaranteed housing for 12 quarters across the degree. Verified v38 via official rde.stanford.edu."
+        "note": "Mandatory for first-year students (explicit residency requirement); guaranteed housing for 12 quarters across the degree. Confirmed via official rde.stanford.edu."
       }
     },
     "minutesOutlook": {
@@ -2110,7 +2110,7 @@
           "label": "Established starter"
         }
       ],
-      "trajectoryNote": "Only 2 MFs clear (Kahoalii Jr, Islam R-Jr). 4 So compete as Srs in Yr1 — midfield is congested. Stanford's elite recruiting cycle maintains perpetual competition."
+      "trajectoryNote": "On the 2026-27 roster, 1 of 11 midfielders finishes before Olivier arrives in August 2027. In his first season, 3 will be seniors, 5 will be juniors and 2 will be sophomores. Stanford's elite recruiting cycle maintains perpetual competition."
     },
     "staff": [],
     "acuUnits": [
@@ -2211,7 +2211,7 @@
       "maxAthletic": 1.0,
       "maxAcademic": 15000,
       "aidType": "athletic+merit",
-      "internationalNote": "Syracuse direct billed cost $91,629 (2026-27, Tier-1 verified from Syracuse's official 2026-27 Cost of Attendance, Undergraduate Students Living On Campus): tuition $69,180 + housing and food (average) $20,580 + miscellaneous fees $1,869. Its headline total is $95,676, adding books, transportation, personal expenses and loan fees that this guide excludes. Incoming first-year students are REQUIRED to live in university housing for two years, so the on-campus figure is the applicable one. Costs are estimates until the Board of Trustees approves them each May, and cost of attendance can vary by programme because of special fees."
+      "internationalNote": "Syracuse direct billed cost $91,629 (2026-27, taken from Syracuse's official 2026-27 Cost of Attendance, Undergraduate Students Living On Campus): tuition $69,180 + housing and food (average) $20,580 + miscellaneous fees $1,869. Its headline total is $95,676, adding books, transportation, personal expenses and loan fees that this guide excludes. Incoming first-year students are REQUIRED to live in university housing for two years, so the on-campus figure is the applicable one. Costs are estimates until the Board of Trustees approves them each May, and cost of attendance can vary by programme because of special fees."
     },
     "aid": "Athletic",
     "size": 22000,
@@ -2321,7 +2321,7 @@
       "note": "The 2022 NCAA Championship validates program quality. The SU Soccer Stadium's intimate atmosphere and Falk College's academic reputation make this a well-rounded D1 program — climate is the single Olivier-specific concern.",
       "housing": {
         "available": true,
-        "note": "Mandatory for first- and second-year students (2 years), with a commuting exemption only if immediate family lives in the Syracuse area. Verified v38 via official housingmealplans.syr.edu."
+        "note": "Mandatory for first- and second-year students (2 years), with a commuting exemption only if immediate family lives in the Syracuse area. Confirmed via official housingmealplans.syr.edu."
       }
     },
     "minutesOutlook": {
@@ -2580,7 +2580,7 @@
       "note": "Goldman Field's setting inside historic Edwards Stadium is architecturally distinctive. The Bay Area location and UCSF clinical connection make Cal one of the most lifestyle-positive and clinically-advantaged options in the entire guide for a pre-PT student.",
       "housing": {
         "available": true,
-        "note": "Not mandatory, but incoming first-years (2026-27) are guaranteed a housing offer for their first 2 years if deadlines are met; international students also have access to the dedicated International House community. Verified v38 via official housing.berkeley.edu."
+        "note": "Not mandatory, but incoming first-years (2026-27) are guaranteed a housing offer for their first 2 years if deadlines are met; international students also have access to the dedicated International House community. Confirmed via official housing.berkeley.edu."
       }
     },
     "minutesOutlook": {
@@ -2636,7 +2636,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "9 of 12 MFs cleared (5 Sr, 4 Jr). Heavy recruiting expected. Park and Bracken Serra (So) compete as Srs in Yr1."
+      "trajectoryNote": "On the 2026-27 roster, 7 of 12 midfielders finish before Olivier arrives in August 2027. In his first season, 3 will be seniors, 1 will be a junior and 1 will be a sophomore. Heavy recruiting expected."
     },
     "staff": [],
     "acuUnits": [
@@ -2796,7 +2796,7 @@
       "maxAthletic": 0.9,
       "maxAcademic": 8000,
       "aidType": "athletic+merit",
-      "internationalNote": "Out-of-state tuition $42,020 (2026-27, Tier-1 verified from Clemson's official Estimated Cost of Attendance table, non-South Carolina resident, on/off campus). Direct billed cost is $58,732 = tuition + housing $9,304 + food $5,576 + fees $1,832; Clemson's own headline COA of $66,180 additionally includes books, transport and personal expenses, which this guide excludes by convention. Athletic scholarship can cover the majority. Merit aid available for high academic performers; strong international student support."
+      "internationalNote": "Out-of-state tuition $42,020 (2026-27, taken from Clemson's official Estimated Cost of Attendance table, non-South Carolina resident, on/off campus). Direct billed cost is $58,732 = tuition + housing $9,304 + food $5,576 + fees $1,832; Clemson's own headline COA of $66,180 additionally includes books, transport and personal expenses, which this guide excludes by convention. Athletic scholarship can cover the majority. Merit aid available for high academic performers; strong international student support."
     },
     "culture": {
       "vibe": "Large, spirited Southern university with intense athletic culture. Clemson is famous for its football program but soccer carries real prestige — 2× recent national champions. Campus is in a small college town (Clemson, SC) but Atlanta is 2hrs away.",
@@ -2817,7 +2817,7 @@
       "note": "Clemson offers one of the best overall packages in college soccer — elite facilities, elite coaching, elite degree for PT pathway, warm climate. The trade-off is a small-town setting and high competition for playing time (4 players drafted in first round in 2026 alone).",
       "housing": {
         "available": true,
-        "note": "Mandatory and guaranteed for all first-year/Bridge students; exemption only for living with parents in the 3 counties surrounding campus (Anderson, Pickens, Oconee). Verified v38 via official housing.clemson.edu."
+        "note": "Mandatory and guaranteed for all first-year/Bridge students; exemption only for living with parents in the 3 counties surrounding campus (Anderson, Pickens, Oconee). Confirmed via official housing.clemson.edu."
       }
     },
     "devScores": {
@@ -3089,7 +3089,7 @@
       "note": "Notre Dame is elite in every dimension — facilities, academics, soccer tradition. The main negatives for Olivier are cold winters, non-city setting, and the very high academic bar (GPA 2.8 is challenging for 13% acceptance rate university).",
       "housing": {
         "available": true,
-        "note": "Mandatory on-campus residency for the first 6 semesters (through junior year); exemptions only case-by-case. Verified v38 via official residentiallife.nd.edu."
+        "note": "Mandatory on-campus residency for the first 6 semesters (through junior year); exemptions only case-by-case. Confirmed via official residentiallife.nd.edu."
       }
     },
     "devScores": {
@@ -3359,7 +3359,7 @@
       "note": "New 2019 build with permanent chairback seating, full locker rooms and team offices. Connects to Football Practice Complex providing S&C and sports medicine access. Strong fan atmosphere in Chapel Hill.",
       "housing": {
         "available": true,
-        "note": "Mandatory and guaranteed for all first-year students (on-campus halls or Granville Towers) for the full first academic year. Verified v38 via official housing.unc.edu."
+        "note": "Mandatory and guaranteed for all first-year students (on-campus halls or Granville Towers) for the full first academic year. Confirmed via official housing.unc.edu."
       }
     },
     "devScores": {

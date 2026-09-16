@@ -109,6 +109,14 @@ PATTERNS = [
     (re.compile(r"\baudit-discovered\b|\balready-guide\b", re.IGNORECASE), "internal guide-building wording"),
     (re.compile(r"\b(previous stored|stored figure)\b[^.]*\bballpark\b", re.IGNORECASE),
      "internal history of a past data error ('the previous stored $X was an unresearched ballpark')"),
+    # Added v45.50: guide version stamps and research-process labels.
+    (re.compile(r"\b(verified|corrected|newly added|criteria)\s+(?:per the\s+)?v\d{2}(?:\.\d+)?\b|\bv\d{2}(?:\.\d+)? (?:criteria|verification|Elite bar)", re.IGNORECASE),
+     "a guide version stamp ('Verified v38', 'the v37.4 criteria')"),
+    (re.compile(r"\bTier-[123]\b"), "a source-tier label ('Tier-1'); 'Tier 1 research university' without a hyphen is real usage"),
+    (re.compile(r"\bre-checked live\b|\bprior session\b|\bplaceholder used for all\b", re.IGNORECASE),
+     "research-process wording ('re-checked live', 'prior session')"),
+    (re.compile(r"\bminutesOutlook\b|\bacuAlign (?:scored|=)|\bnextLevel note\b|\blensScores\b|\bfitOlivier\b"),
+     "a data field name used in prose"),
 ]
 
 # Reported, not failing. Empty since v45.48; keep the mechanism for the next

@@ -93,6 +93,22 @@ Section 6 of CLAUDE.md says outright that "no systematic search for
 further instances has been done" for this bug class beyond the two
 originally-found cases.
 
+### 4b. Old-name sweep — required after ANY head-coach change (added v45.56)
+
+```bash
+python .claude/skills/add-coach/scripts/check_coach_rename.py            # vs HEAD
+python .claude/skills/add-coach/scripts/check_coach_rename.py --since <ref>
+```
+
+Lists every school text, conference card, section intro and Glossary line that
+still names the previous coach. `coaches.json` is the only place coach DATA
+lives, but school prose names coaches too, and nothing else reads it. In v45.50
+four schools still presented a departed or interim coach as current (Connors
+State, NEO A&M, NOC-Enid, Illinois Central). Replaying the v45.30 coach change
+through this script finds every one of those mentions. Keep real history
+("succeeded X in 2024"); reword everything that still presents the old coach as
+current.
+
 ### 5. Full validation — qa-suite
 
 ```bash

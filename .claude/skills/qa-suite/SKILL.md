@@ -46,6 +46,15 @@ side by side, so it doesn't matter what the current working directory is.
    that currently has uncommitted changes (that's normal if you're mid-edit
    on `js/scores.js` right now — it will say so and exit non-zero, which is
    the guard working, not a bug).
+6. **Skill audit scripts** (added v45.56; runs right after Step 1, so every
+   audit result is visible at once): `check_no_jargon.py`,
+   `check_juco_trajectory.py`, `check_roster_arithmetic.py`,
+   `check_roster_snapshot.py` and `check_coach_ranking.py` must pass;
+   `check_coach_bio.py` and `scan_duplicate_names.py` are reported for reading
+   (both list known, deliberate cases). These scripts existed before, but nothing
+   ran them together. The v45.47–v45.55 session kept finding problems one fix at
+   a time that they would have reported up front. **Fix every FAIL in one pass**,
+   not one per run.
 
 The script **stops at the first failing step** and tells you exactly what
 failed and where — it does not run later steps on top of a known failure,

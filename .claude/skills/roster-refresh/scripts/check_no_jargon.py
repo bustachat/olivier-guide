@@ -117,7 +117,19 @@ PATTERNS = [
      "research-process wording ('re-checked live', 'prior session')"),
     (re.compile(r"\bminutesOutlook\b|\bacuAlign (?:scored|=)|\bnextLevel note\b|\blensScores\b|\bfitOlivier\b"),
      "a data field name used in prose"),
+    # Added v45.56: "not refreshed yet" caveats outlive the refresh that makes them false.
+    # 16 JUCOs still carried one after every JUCO trajectory had been recalculated.
+    # A refresh caveat belongs in the changelog, not in text a visitor reads.
+    (re.compile(r"haven't been refreshed|hasn't been refreshed|hasn't been updated for the new numbers|"
+                r"still based on last year's roster|not yet been refreshed", re.IGNORECASE),
+     "a 'not refreshed yet' caveat, which goes stale the moment the refresh lands"),
 ]
+
+# UI copy in js/app.js (section intros, lens and label strings) and the index.html
+# Glossary renders to the same visitors. Added v45.56: until then this checker read
+# data files only, and v45.48 had to fix the JUCO section intro by hand.
+UI_STRING_RE = re.compile(r"\b(intro|desc|label)\s*:\s*(['\"`])((?:\\.|(?!\2).)*)\2")
+GLOSS_RE = re.compile(r'<div class="gloss-(?:def|term)">(.*?)</div>', re.S)
 
 # Reported, not failing. Empty since v45.48; keep the mechanism for the next
 # leak class that is too large to fix in the same change it is found.
@@ -181,8 +193,25 @@ def main():
                     if pattern.search(val):
                         warnings.append((rel, why))
 
+    ui = []
+    app_path = os.path.join(root, "js", "app.js")
+    if os.path.exists(app_path):
+        for m in UI_STRING_RE.finditer(open(app_path, encoding="utf-8").read()):
+            ui.append(("js/app.js", m.group(1), m.group(3)))
+    html_path = os.path.join(root, "index.html")
+    if os.path.exists(html_path):
+        for m in GLOSS_RE.finditer(open(html_path, encoding="utf-8").read()):
+            ui.append(("index.html", "glossary", re.sub(r"<[^>]+>", "", m.group(1))))
+    for rel, field, val in ui:
+        checked += 1
+        for pattern, why in PATTERNS:
+            m = pattern.search(val)
+            if m:
+                findings.append((rel, "(UI copy)", field, why, m.group(0)))
+
     print(f"checked {checked} rendered string(s) across "
-          f"{len(CONF_FILES) + len(OTHER_FILES)} data files\n")
+          f"{len(CONF_FILES) + len(OTHER_FILES)} data files, js/app.js UI strings "
+          f"and the index.html Glossary\n")
 
     if warnings:
         counts = {}

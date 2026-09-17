@@ -463,7 +463,8 @@ if (lensMismatches.length) {
 // Fit Score) are two copies of one fact. Before v45.55 they disagreed (Virginia 6+
 // vs 2) and 34 schools with picks were missing from the table. Every single-school
 // row with a numeric count must match, and every D1/Ivy school with picks needs a row.
-const TABLE_ALIAS = { 'Virginia': 'virginia', "St John's": 'stjohns' };
+const TABLE_ALIAS = { 'Virginia': 'virginia', "St John's": 'stjohns', 'FIU (was D2)': 'fiu', 'UC Charleston WV': 'uc_charleston',
+  "St Edward's": 'stedwards', 'OCU': 'ocu', 'Monroe College': 'monroe_college', 'EFSC': 'efsc' };
 const byName = {};
 schools.forEach(s => { byName[s.name] = s; });
 const draftRows = (load('data/pipeline.json').mlsDraft || []).filter(r => r.school && !r.school.includes(' / '));
@@ -478,6 +479,122 @@ draftRows.forEach(r => {
 });
 schools.filter(s => (s.div === 'D1' || s.div === 'IVY') && ((s.proPlayers || {}).mlsPicks5yr || 0) > 0 && !inTable.has(s.id))
   .forEach(s => note('MLS-TABLE', `${s.id} has ${s.proPlayers.mlsPicks5yr} MLS picks but no row in pipeline.json mlsDraft`));
+
+// ═══ Guardrails added v45.56 — one check per lesson from the v45.47–v45.55 session ═══
+// Each of these classes was found by hand, after it had already shipped. See CLAUDE.md
+// §16 for the lesson behind each one.
+const tableSchool = name => TABLE_ALIAS[name] ? schools.find(x => x.id === TABLE_ALIAS[name]) : byName[name];
+const pipeAll = load('data/pipeline.json');
+
+// REFTABLE: the CLAUDE.md School → File Reference Table must list every school, with
+// the right file and division. Five schools were missing for weeks and nothing noticed.
+{
+  const md = fs.readFileSync(path.join(ROOT, 'CLAUDE.md'), 'utf8');
+  const rows = {};
+  for (const m of md.matchAll(/^\| ([^|]+) \| `data\/([^`]+)` \| `([^`]+)` \| ([^|]+) \|/gm)) rows[m[3]] = { file: m[2], div: m[4].trim() };
+  schools.forEach(s => {
+    const r = rows[s.id];
+    if (!r) return note('REFTABLE', `${s.id} has no row in the CLAUDE.md School → File Reference Table`);
+    if (r.file !== s._file + '.json') note('REFTABLE', `${s.id}: table says data/${r.file}, school lives in data/${s._file}.json`);
+    if (r.div !== s.div) note('REFTABLE', `${s.id}: table says div ${r.div}, school record says ${s.div}`);
+  });
+  Object.keys(rows).filter(id => !idSet.has(id)).forEach(id => note('REFTABLE', `CLAUDE.md table row ${id} matches no school`));
+}
+
+// DIV-LABEL: a JUCO's division wording must agree with njcaaDivision, in both the school
+// record and its coach record. National Park said "Division I" and four Division III
+// coaches still said "NJCAA DI" after the schools were corrected.
+{
+  const tok = c => /Division III|\bDIII\b/.test(c) ? 'III' : /Division II\b|\bDII\b/.test(c) ? 'II' : /Division I\b|\bDI\b/.test(c) ? 'I' : null;
+  schools.filter(s => s.njcaaDivision).forEach(s => {
+    const t = tok(s.conf || '');
+    if (t && t !== s.njcaaDivision) note('DIV-LABEL', `${s.id}: conf '${s.conf}' says Division ${t}, njcaaDivision is ${s.njcaaDivision}`);
+    const c = coaches.find(x => x.schoolId === s.id);
+    const ct = c && tok(c.conf || '');
+    if (ct && ct !== s.njcaaDivision) note('DIV-LABEL', `${s.id}: coach conf '${c.conf}' says Division ${ct}, njcaaDivision is ${s.njcaaDivision}`);
+  });
+}
+
+// CONF-COUNT: a conference card claiming "N guide schools" must match guideSchools[].
+// "All 14 Big Ten schools" and "13 guide schools in the AAC" survived several changes.
+// "Region 15 schools" is a region name, not a count, so it is skipped.
+conferences.forEach(c => {
+  ['desc', 'olivierNote'].forEach(f => {
+    for (const m of (c[f] || '').matchAll(/(Region\s+)?\b(?:all\s+)?(\d{1,3})\s+(?:guide\s+|full-profile\s+|fully profiled\s+)?(schools|programs)\b/gi)) {
+      if (m[1]) continue;
+      if (+m[2] !== (c.guideSchools || []).length) note('CONF-COUNT', `${c.id}.${f} says "${m[0].trim()}" but guideSchools has ${(c.guideSchools || []).length}`);
+    }
+  });
+});
+
+// ROSTER-PROSE: "N of M midfielders" / "N-player midfield" in a school's current-roster
+// text must use the stored mf_total. ~55 texts quoted older rosters after refreshes
+// (Harford "entire 10-player midfield clears" against a stored 5). recruit_pathway_note
+// is excluded because it legitimately describes earlier seasons.
+schools.forEach(s => {
+  const mo = s.minutesOutlook;
+  if (!mo || !mo.available) return;
+  const texts = { rec: s.rec, olivierMatch: s.culture && s.culture.olivierMatch, trajectoryNote: mo.trajectoryNote, facilities: (s.facilities || []).join(' | ') };
+  Object.entries(texts).forEach(([f, v]) => {
+    for (const m of (v || '').matchAll(/(\d+) of (?:the |its |their )?(\d+) (?:current |returning |listed )?(?:central )?(?:midfielders|MFs|midfield)\b/gi))
+      if (+m[2] !== mo.mf_total) note('ROSTER-PROSE', `${s.id}.${f}: "${m[0]}" but mf_total is ${mo.mf_total} (${mo.roster_season})`);
+    for (const m of (v || '').matchAll(/(\d+)[- ](?:player|man) midfield/gi))
+      if (+m[1] !== mo.mf_total) note('ROSTER-PROSE', `${s.id}.${f}: "${m[0]}" but mf_total is ${mo.mf_total} (${mo.roster_season})`);
+  });
+});
+
+// COST-PROSE: an approximate yearly cost quoted in a school's own text must be within
+// 15% of costNum. Old ballparks ("~$9k", "low ~$38k") outlived the cost campaign.
+schools.filter(s => s.fin && s.fin.costNum > 0).forEach(s => {
+  const texts = { rec: s.rec, olivierMatch: s.culture && s.culture.olivierMatch, internationalNote: s.fin.internationalNote };
+  Object.entries(texts).forEach(([f, v]) => {
+    for (const m of (v || '').matchAll(/(?:~|about |approximately |around )\$(\d{1,3}(?:\.\d)?)k(?:\/yr| a year| per year|\/year)/gi)) {
+      const k = +m[1] * 1000;
+      if (Math.abs(k - s.fin.costNum) / s.fin.costNum > 0.15) note('COST-PROSE', `${s.id}.${f}: "${m[0]}" but costNum is ${s.fin.costNum}`);
+    }
+  });
+});
+
+// ELITE: the Elite JUCO badge is time-bound (CLAUDE.md §5). Its tooltip note must name a
+// season inside the window, and the Pro Pipeline "Elite JUCO" badges must match the data.
+// Roll ELITE_WINDOW forward each season when the new finals and All-America teams are out.
+const ELITE_WINDOW = [2023, 2024, 2025];
+schools.filter(s => s.jucoTier === 'Elite').forEach(s => {
+  // Ignore the standard closing sentence, which names the window itself and would always pass.
+  const facts = (s.jucoTierNote || '').replace(/Elite status counts results from the \d{4}-\d{4} seasons only\./, '');
+  if (!ELITE_WINDOW.some(y => facts.includes(String(y)))) note('ELITE', `${s.id} is Elite but its jucoTierNote names no ${ELITE_WINDOW[0]}-${ELITE_WINDOW[ELITE_WINDOW.length - 1]} season`);
+});
+{
+  const pipeElite = new Set();
+  (pipeAll.ncaaD2 || []).filter(r => r.badge === 'Elite JUCO').forEach(r => {
+    const s = tableSchool(r.school);
+    if (!s) return note('ELITE', `pipeline.json Elite JUCO row '${r.school}' matches no school`);
+    pipeElite.add(s.id);
+    if (s.jucoTier !== 'Elite') note('ELITE', `pipeline.json badges ${s.id} Elite JUCO but its jucoTier is ${s.jucoTier}`);
+  });
+  schools.filter(s => s.jucoTier === 'Elite' && !pipeElite.has(s.id)).forEach(s => note('ELITE', `${s.id} is Elite but has no Elite JUCO row in pipeline.json ncaaD2`));
+}
+
+// PIPE-TITLE: a school whose titles[] records an NCAA D1/D2 national championship must sit
+// in the ranked (titled) part of that pipeline table. Cal State LA and UC Charleston WV
+// were filed under "No D2 title".
+{
+  const ranked = sec => { const a = []; for (const r of pipeAll[sec] || []) { if (r.sectionDivider) break; const s = tableSchool(r.school); if (s) a.push(s.id); } return a; };
+  const R = { ncaaD1: ranked('ncaaD1'), ncaaD2: ranked('ncaaD2') };
+  schools.forEach(s => (s.titles || []).forEach(t => {
+    if (/NJCAA|pre-NCAA|Intercollegiate Soccer|ISFA|runner|semifinal|appearance/i.test(t)) return;
+    if (!/NCAA (D1|DI|Division I|D2|DII|Division II)\b[^;]*Champions?\b|\b\d{4} NCAA National Champions\b/i.test(t)) return;
+    const sec = /\b(D2|DII|Division II)\b/.test(t) ? 'ncaaD2' : 'ncaaD1';
+    if (!R[sec].includes(s.id)) note('PIPE-TITLE', `${s.id} title "${t.slice(0, 60)}" but the school is not in the ranked part of pipeline.json ${sec}`);
+  }));
+}
+
+// DASH-LENS (code-shape guard): the Dashboard lens row must read lens scores through the
+// shared accessor. Reading lensScores directly ranked every school 0 on Climate-Neutral.
+{
+  const dash = fs.readFileSync(path.join(ROOT, 'js/dashboard.js'), 'utf8').split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n');
+  if (/lensScores\?\.\[L\.key\]\s*\|\|\s*0\)\s*-/.test(dash) || !/function dashLensScore\s*\(/.test(dash)) note('DASH-LENS', 'js/dashboard.js updateLensRow() must use dashLensScore()/lensValue(), not lensScores[L.key] directly');
+}
 
 // ── RISK (added v45.55): Entry Competition label follows one written rule ──
 // recruit_risk renders as Crowded / Moderate / Open. It counts the midfielders still

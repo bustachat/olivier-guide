@@ -35,6 +35,36 @@ entry from two years ago is exactly the kind of hit this exists to find.
 
 ## Sequence
 
+### 0. Annual recount — the part that feeds the Fit Score (added v45.56)
+
+`proPlayers.mlsPicks5yr` on each school counts picks in the **five most recent
+SuperDrafts** (2022–2026 as of v45.55). It feeds the soccer-quality part of every
+four-year school's Fit Score. This skill used to update only the `pipeline.json`
+table, so the school counts went years without a recount: in v45.55, 48 of 170
+were wrong (Washington stored 2, real 15) and 47 Fit Scores moved when corrected.
+
+Every year, after the December draft:
+1. Read all five drafts on mlssoccer.com. Newer years have an "MLS SuperDraft
+   YYYY: Every team's selections" article; older years have
+   `mlssoccer.com/superdraft/YYYY/draft-tracker`, which needs each Round button
+   clicked.
+2. **Check each year's parsed total against the official number of selections
+   before trusting it.** The v45.55 tracker parse first returned 71 of 79 for
+   2022: some picks have no position line, and PASS rows sit in the list.
+3. Attribute a pick to the college MLS lists at draft time; an MLS NEXT club in
+   brackets is not a college. MLS names a draft by the following year (the
+   "2026 SuperDraft" was held in December 2025).
+4. Update `mlsPicks5yr` for every school, re-store `fitOlivier`,
+   `lensScores.overall`, `soccer` and `value`, and rebuild the ranked
+   `mlsDraft` rows.
+5. **Verify every named pick quoted in `notable[]`/`notable` text** against the
+   same trackers. The v45.55 check found seven claims that match no draft, plus
+   wrong years and rounds.
+
+`validate_consistency.js` **MLS-TABLE** fails if a table row disagrees with the
+school record, or if a D1/Ivy school with picks has no row. **FIT** catches a
+count changed without re-storing scores.
+
 ### 1. Get this year's SuperDraft results — Tier-1, per CLAUDE.md Section 15
 
 The official MLS SuperDraft results page is the only authoritative source
@@ -81,10 +111,11 @@ group at the bottom of `ncaaD2[]`, using `years`/`yearsStyle` chips, not the
 - Append the player to the relevant `notable` free-text string either way —
   it's prose, not a structured list, so this is a normal text edit.
 
-Recompute nothing else — a `pipeline.json`/`mlsDraft` change carries no
-score cascade (CLAUDE.md Section 3a Change Type 7 only asks you to
-"consider recalculating" `lensScores.soccer`, and only if MLS picks factor
-meaningfully into that school's profile).
+**This IS a score change when the origin school is a four-year school.**
+Update that school's `proPlayers.mlsPicks5yr` too (it feeds the Fit Score),
+then re-store `fitOlivier`, `lensScores.overall`, `soccer` and `value`. The
+earlier wording here ("recompute nothing else") is how the school counts and the
+table drifted apart. MLS-TABLE and FIT now fail if either is missed.
 
 ## What this skill deliberately does not do
 

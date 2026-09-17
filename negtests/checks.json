@@ -89,5 +89,68 @@
     "find": "\"picks5yr\": 19",
     "replace": "\"picks5yr\": 8",
     "expect": "MLS-TABLE"
+  },
+  {
+    "name": "REFTABLE / a school drops out of the CLAUDE.md reference table",
+    "file": "CLAUDE.md",
+    "find": "| `lamar_cc` |",
+    "replace": "| `lamar_cx` |",
+    "expect": "REFTABLE"
+  },
+  {
+    "name": "DIV-LABEL / coach record keeps an old division label",
+    "file": "data/coaches.json",
+    "find": "\"conf\": \"NJCAA DIII / Region 15\"",
+    "replace": "\"conf\": \"NJCAA DI / Region 15\"",
+    "expect": "DIV-LABEL"
+  },
+  {
+    "name": "CONF-COUNT / conference card quotes a stale school count",
+    "file": "data/conferences.json",
+    "find": "13 guide schools",
+    "replace": "14 guide schools",
+    "expect": "CONF-COUNT"
+  },
+  {
+    "name": "ROSTER-PROSE / school text quotes an old midfield size",
+    "file": "data/d2.json",
+    "find": "Of the 9 midfielders on the 2026-27 roster, 4 clear",
+    "replace": "4 of 12 midfielders clear",
+    "expect": "ROSTER-PROSE"
+  },
+  {
+    "name": "COST-PROSE / school text quotes an old ballpark cost",
+    "file": "data/acc.json",
+    "find": "about $96k a year",
+    "replace": "about $50k a year",
+    "expect": "COST-PROSE"
+  },
+  {
+    "name": "ELITE / Elite note names no season in the window",
+    "file": "data/juco.json",
+    "find": "Two 2025 NJCAA All-Americans (Justin",
+    "replace": "Two NJCAA All-Americans (Justin",
+    "expect": "ELITE"
+  },
+  {
+    "name": "ELITE / pipeline Elite badge disagrees with jucoTier",
+    "file": "data/juco.json",
+    "find": "\"jucoTier\": \"Elite\"",
+    "replace": "\"jucoTier\": \"Standard\"",
+    "expect": "ELITE"
+  },
+  {
+    "name": "PIPE-TITLE / national champion filed outside the ranked table",
+    "file": "data/pipeline.json",
+    "find": "\"school\": \"Cal State LA\"",
+    "replace": "\"school\": \"Cal State Los Angeles\"",
+    "expect": "PIPE-TITLE"
+  },
+  {
+    "name": "DASH-LENS / Dashboard lens row stops using the shared accessor",
+    "file": "js/dashboard.js",
+    "find": "function dashLensScore",
+    "replace": "function dashLensScoreOld",
+    "expect": "DASH-LENS"
   }
 ]

@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v45.55 (2026-09-17)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v45.56 (2026-09-17)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -1300,7 +1300,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v45.55 (2026-09-17).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v45.56 (2026-09-17).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1992,6 +1992,8 @@ Open `http://localhost:8000` (or the serve port).
 | **Targeted** — affected tabs + smoke test others | Single tab UX change, data update to one school |
 | **Smoke** — page loads, no console errors, spot check | Cosmetic text change, coach name only |
 
+**Whole-guide modal scan (lesson v45.49):** when checking every school's Details modal for "undefined"/"NaN", wait until the modal shows the expected school's name before reading it. A fixed 60 ms delay read the previous school's modal and missed three real gaps.
+
 #### Full Test Checklist:
 
 *New / changed school:*
@@ -2558,6 +2560,14 @@ When two Tier 1 sources disagree, use this priority order by data type:
 
 When conflict cannot be resolved with confidence, note the discrepancy, use the more conservative value, and mark as needing verification.
 
+### Sources that failed or misled in the v45.53–v45.55 research (so the next session doesn't rediscover them)
+
+- **njcaa.org** needs the owner's VPN (geo-block, §6C). Its 2023-24 championship pages now return 404, its Rankings page reads "Rankings are temporarily unavailable", and its All-America honor roll for 2023-24 and 2024-25 never finished loading. The 2025-26 All-America pages and the 2024-25 and 2025-26 results pages do work. For older finals, use the school's own dated release, then a dated local newspaper.
+- **United Soccer Coaches** rankings show only the current season, with no archive, so a past final poll cannot be verified there.
+- **Presto/Sidearm school sites** (Phoenix College, CCBC Essex) can show a human-verification wall. Don't try to get past it. The NJCAA's own official social post title is an acceptable fallback for a championship result.
+- **mlssoccer.com** is reliable for SuperDraft picks (see the mls-pipeline skill for parsing traps). A name-year claim like "2022 MLS Draft" usually means the draft *held* that year, so confirm against MLS's naming.
+- **A school's own title name can reveal its division** ("Region 2 DII Champion"). Read it literally before explaining it away (National Park, v45.52).
+
 ### Off-Season Roster Data Gaps
 
 Rosters are often unpublished or showing prior-year data between May and August — after the season ends and before new recruits commit for the following year.
@@ -2565,6 +2575,37 @@ Rosters are often unpublished or showing prior-year data between May and August 
 - **If the roster page shows a prior season's data**: note the data vintage explicitly. Set `minutesOutlook` to `{ "available": false }` and document: "Roster page showed [year] data as of [date scraped]. Defer until current-season roster is published."
 - **Do not use prior-year roster data to populate minutesOutlook** — graduating seniors may already have left and new recruits not yet visible, making opportunity scores unreliable.
 - **Best scraping window**: September–November, once teams have played several games and rosters are finalised.
+
+## 16. Lessons & Guardrails Register (added v45.56)
+
+**One row per failure class that reached the live guide during v45.47–v45.55, and the guard that now stops it.** Before adding a new rule anywhere in this file, check this table: if a class keeps recurring, the fix is a check that fails, not another paragraph. Every validator check listed has a proving case in `negtests/checks.json` (22/22 proven at v45.56).
+
+| # | Lesson (what shipped wrong) | Guardrail | Where |
+|---|---|---|---|
+| 1 | Internal wording rendered to visitors ("this session", "this batch/campaign", "Verified v38", "Tier-1", field names) | FAIL patterns across every rendered data string **and** the `js/app.js` intro/desc/label strings **and** the Glossary | `check_no_jargon.py` |
+| 2 | "Not refreshed yet" caveats outlived the refresh (16 JUCOs) | FAIL pattern; delete the caveat in the same edit as the refresh | `check_no_jargon.py`, roster-refresh SKILL.md step 3 |
+| 3 | Prose quoted older rosters after a refresh (~55 texts) | `ROSTER-PROSE` ("N of M midfielders" / "N-player midfield" must use `mf_total`) | `validate_consistency.js` |
+| 4 | Conference cards quoted stale school counts ("all 14 Big Ten") | `CONF-COUNT` (desc/olivierNote counts must match guideSchools) + existing `PROSE` for section intros | `validate_consistency.js` |
+| 5 | Old ballpark costs in text ("~$9k", "low ~$38k") | `COST-PROSE` (approximate yearly cost within 15% of `costNum`) | `validate_consistency.js` |
+| 6 | School texts named departed/interim coaches after `coaches.json` was fixed | Old-name sweep after any coach change | `check_coach_rename.py`, add-coach SKILL.md step 4b |
+| 7 | Division labels wrong or inconsistent (National Park DI, four DIII coaches "NJCAA DI") | `NJCAA-DIV` (field ↔ fundingPathway) + `DIV-LABEL` (school and coach conf wording ↔ njcaaDivision). **Truth still needs the region's own standings page** (§6 Region 15 incident) | `validate_consistency.js` |
+| 8 | Stored lens scores drifted from formulas (108 soccer, 54 academic, 34 lifestyle) | `LENS` (exact match for soccer, academic, minutes, lifestyle) + existing `FIT`/`VALUE` | `validate_consistency.js` |
+| 9 | `recruit_risk` hand-set; the Glossary defined the opposite meaning | `RISK` (returning midfielders 7+ High / 3–6 Medium / 0–2 Low); labels Crowded/Moderate/Open | `validate_consistency.js`, §5 |
+| 10 | `mlsPicks5yr` never recounted (48 of 170 wrong, 47 Fit Scores moved) because the mls-pipeline skill said "recompute nothing else" | `MLS-TABLE` (table ↔ school record; every D1/Ivy school with picks has a row); annual recount procedure | `validate_consistency.js`, mls-pipeline SKILL.md step 0, §6F |
+| 11 | Named draft picks wrong or invented (7 removed, years/rounds wrong) | Named-pick verification is part of the annual recount; never store a pick name from memory or a summary | mls-pipeline SKILL.md step 0.5 |
+| 12 | Elite JUCO badge on 39 of 89 schools, with no time limit | Written rule limited to the last 3 seasons; `ELITE` (note names an in-window season; pipeline Elite badges ↔ jucoTier). **Roll `ELITE_WINDOW` forward every season** | `validate_consistency.js`, §5 |
+| 13 | National champions filed under "No D2 title" | `PIPE-TITLE` (NCAA champion titles must sit in the ranked pipeline table) | `validate_consistency.js` |
+| 14 | Dashboard lens row read a non-existent stored score and used the pre-v37.1 colour scale | `DASH-LENS` code-shape guard (must use the shared accessor) | `validate_consistency.js` |
+| 15 | 5 schools missing from the §2 School → File table | `REFTABLE` (every school, right file and division) | `validate_consistency.js` |
+| 16 | Audit scripts existed but nothing ran them together, so problems surfaced one fix at a time | QA suite Step 6 runs every skill check up front; **audit first, fix everything in one release** | `run_qa_suite.py`, §6 note, memory `feedback_audit_first_fix_in_one_pass` |
+| 17 | "undefined" in modals from missing optional fields; an early all-modal scan read too soon and missed three schools | Renderers guard optional blocks; **a modal scan must wait until the modal shows the right school name** before reading | §7 Phase 5 |
+| 18 | Unsupported superlatives and facts ("#1 feeder", Monroe "2024 runner-up", "Cleveland FC (MLS)") | No automatic check can prove a claim true. Every superlative or result needs a Tier-1 source at write time; re-verify results when setting a tier or table rank | §15 |
+| 19 | A `git --work-tree=<tmp> checkout <ref> -- <paths>` run to replay history silently staged old files in the live repo's index | Never check out into another work tree from the live repo. Use `git show <ref>:<path> > file` or `git worktree add` | this table |
+| 20 | Heredoc quoting broke multi-line Python/JS repeatedly | Write scripts to the scratchpad with the Write tool, then run them | this table |
+
+**Accepted, not fixable by a check (read by hand):** `check_coach_bio.py`'s 10 flagged bio emails are deliberate assistant/program contacts. `scan_duplicate_names.py`'s Harcum → Barton/Garden City names are confirmed moves.
+
+---
 
 ---
 

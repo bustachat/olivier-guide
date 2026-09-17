@@ -33,7 +33,7 @@ import sys
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-NEGTEST_TRIGGER_FILES = {"js/scores.js", "js/app.js", "validate_consistency.js"}
+NEGTEST_TRIGGER_FILES = {"js/scores.js", "js/app.js", "js/dashboard.js", "validate_consistency.js"}
 
 
 def find_repo_root():
@@ -195,11 +195,51 @@ def step5_negtest(changed):
     return p.returncode == 0
 
 
+SKILL_CHECKS = [
+    # (script, must pass?) — added v45.56. These checks existed, but nothing ran them
+    # together, so a whole v45.47–v45.55 session of fixes kept finding problems one at a
+    # time that these scripts would have reported up front.
+    (".claude/skills/roster-refresh/scripts/check_no_jargon.py", True),
+    (".claude/skills/roster-refresh/scripts/check_juco_trajectory.py", True),
+    (".claude/skills/roster-refresh/scripts/check_roster_arithmetic.py", True),
+    (".claude/skills/roster-refresh/scripts/check_roster_snapshot.py", True),
+    (".claude/skills/add-coach/scripts/check_coach_ranking.py", True),
+    # Reported, not failing: it flags assistant/program emails written into bios on
+    # purpose. Read the list; a real stale head-coach email still needs fixing.
+    (".claude/skills/add-coach/scripts/check_coach_bio.py", False),
+    (".claude/skills/transfer-tracking/scripts/scan_duplicate_names.py", False),
+]
+
+
+def step6_skill_checks():
+    banner(6, "skill audit scripts (wording, trajectories, rosters, coaches)")
+    ok = True
+    for script, required in SKILL_CHECKS:
+        if not os.path.exists(os.path.join(ROOT, script)):
+            print(f"  MISSING  {script}")
+            ok = ok and not required
+            continue
+        p = run([sys.executable, script])
+        tail = [l for l in ((p.stdout or "") + (p.stderr or "")).splitlines() if l.strip()]
+        status = "ok  " if p.returncode == 0 else ("FAIL" if required else "info")
+        print(f"  {status}  {os.path.basename(script)} — {tail[-1] if tail else '(no output)'}")
+        if p.returncode != 0:
+            print("        " + "\n        ".join(tail[-15:]))
+            if required:
+                ok = False
+    return ok
+
+
 def main():
     print(f"QA suite — repo root: {ROOT}")
 
     if not step1_validate_schools():
         print("\n>>> STOPPED at Step 1. Fix the errors above, then re-run the full suite.")
+        return 1
+
+    if not step6_skill_checks():
+        print("\n>>> STOPPED at Step 6 (run early so every audit result is visible at once). "
+              "Fix every FAIL above in one pass, then re-run the full suite.")
         return 1
 
     if not step2_validate_consistency():

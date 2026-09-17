@@ -6,6 +6,39 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.56 (2026-09-17) — Session close-out: lessons register and guardrails for every failure class found in v45.47–v45.55
+
+**Owner request:** close out the session, record every lesson, and put guardrails in place so none of it recurs. Following the new audit-first rule, every existing check was run before anything was added. That audit found one more live error class, fixed here.
+
+**Fixed:** 16 JUCO texts still said their playing-time projection was "from last year's roster and hasn't been refreshed", although every JUCO trajectory has been recalculated from its current roster (`check_juco_trajectory.py` PASS for all 81). The sentences were removed.
+
+**New validator checks** (`validate_consistency.js`, each with a proving case in `negtests/checks.json`; 22/22 proven):
+- `REFTABLE`: CLAUDE.md School → File table lists every school with the right file and division.
+- `DIV-LABEL`: a JUCO's `conf` wording, and its coach's, agree with `njcaaDivision`.
+- `CONF-COUNT`: school counts quoted in conference cards match `guideSchools`.
+- `ROSTER-PROSE`: "N of M midfielders" / "N-player midfield" in current-roster text uses the stored `mf_total`.
+- `COST-PROSE`: approximate yearly costs in a school's own text are within 15% of `costNum`.
+- `ELITE`: Elite notes name a season inside `ELITE_WINDOW` (2023–2025), and the Pro Pipeline Elite badges match `jucoTier`.
+- `PIPE-TITLE`: schools with NCAA national titles sit in the ranked part of the pipeline table.
+- `DASH-LENS`: the Dashboard lens row must use the shared lens accessor.
+- The Elite check ignores the note's standard closing sentence, which names the window and would otherwise always pass.
+
+**Other guardrails:**
+- `check_no_jargon.py` now fails on "not refreshed yet" caveats and also scans `js/app.js` intro/desc/label strings and the Glossary. It had read data files only.
+- New `check_coach_rename.py` (add-coach): lists every text that still names a previous head coach. Replaying the v45.30 coach changes through it finds every stale Bassoff, Carreno and Rosen mention that shipped.
+- `run_qa_suite.py` Step 6 runs every skill audit script up front (wording, JUCO trajectories, roster arithmetic, roster snapshots, coach ranking must pass; coach bio and duplicate-name scans are reported). `js/dashboard.js` now also triggers the negtest suite.
+- Skill docs:
+  - mls-pipeline: new annual recount step. The old "recompute nothing else" wording is corrected; it is why school pick counts drifted.
+  - roster-refresh: rewrite the prose in the same edit.
+  - add-coach: step 4b old-name sweep.
+  - qa-suite: Step 6.
+- CLAUDE.md:
+  - new **§16 Lessons & Guardrails Register** (20 rows: lesson, guard, location);
+  - §7 Phase 5 note on waiting for the right modal during scans;
+  - §15 notes on the sources that failed during research.
+
+**Verified:** `validate_consistency.js` Issues: 0; `validate_schools.py` PASS; negtest 22/22 proven; QA suite Step 6 all required checks PASS.
+
 ### v45.55 (2026-09-17) — Full-guide consistency audit: stored lens scores, Entry Competition rule, MLS SuperDraft recount, reference data
 
 **Why this release exists.** The owner asked why every fix kept turning up another item to ask about. The cause was that the validators checked only half of the stored derived values, so drift elsewhere was invisible until someone happened to look. This release ran every audit script and a formula check over every stored value first, fixed everything found in one pass, and added validator checks so each class fails automatically from now on.

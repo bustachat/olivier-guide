@@ -99,6 +99,21 @@ departures without writing anything.
 
 ### 3. Validate the cascade
 
+**Rewrite the school's prose in the same edit (lesson from v45.50 and v45.56).**
+A refresh changes the counts, but `rec`, `culture.olivierMatch`, `facilities[]`,
+`trajectoryNote`, conference cards and section intros still quote the old
+roster. Three guards now fail on the common forms:
+- `validate_consistency.js` **ROSTER-PROSE**: "N of M midfielders" or an
+  "N-player midfield" whose M isn't the stored `mf_total`.
+- `check_no_jargon.py`: "not refreshed yet" caveats such as "still based on last
+  year's roster". Delete these the moment the refresh lands; 16 JUCOs kept one
+  after every JUCO trajectory had been recalculated.
+- `validate_consistency.js` **RISK**: `recruit_risk` must follow the
+  returning-midfielder rule (7+ High, 3–6 Medium, 0–2 Low). Never hand-set it.
+
+Anything the guards can't read (a named player, a superlative) still needs a read
+of every text that mentions the school.
+
 ```bash
 python .claude/skills/roster-refresh/scripts/check_roster_arithmetic.py
 python .claude/skills/roster-refresh/scripts/check_juco_trajectory.py   # JUCO only

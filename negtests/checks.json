@@ -156,15 +156,15 @@
   {
     "name": "PATHWAY-LOC / recruit_pathway stored on the school object",
     "file": "data/juco.json",
-    "find": "\"juco2yr\": true,\n    \"jucoTier\": \"Standard\",\n    \"jucoTierNote\": \"A brand-new program: 2026 is its first men's soccer season.",
-    "replace": "\"juco2yr\": true,\n    \"recruit_pathway\": \"Mixed\",\n    \"jucoTier\": \"Standard\",\n    \"jucoTierNote\": \"A brand-new program: 2026 is its first men's soccer season.",
+    "find": "\"juco2yr\": true,\r\n    \"jucoTier\": \"Standard\",\r\n    \"jucoTierNote\": \"A brand-new program: 2026 is its first men's soccer season.",
+    "replace": "\"juco2yr\": true,\r\n    \"recruit_pathway\": \"Mixed\",\r\n    \"jucoTier\": \"Standard\",\r\n    \"jucoTierNote\": \"A brand-new program: 2026 is its first men's soccer season.",
     "expect": "PATHWAY-LOC"
   },
   {
     "name": "FIT / one-point drift is no longer tolerated",
     "file": "data/juco.json",
-    "find": "\"fitOlivier\": 49,\n    \"lensScores\": {\n      \"overall\": 49,\n      \"soccer\": 50,\n      \"academic\": 63,",
-    "replace": "\"fitOlivier\": 50,\n    \"lensScores\": {\n      \"overall\": 49,\n      \"soccer\": 50,\n      \"academic\": 63,",
+    "find": "\"fitOlivier\": 49,\r\n    \"lensScores\": {\r\n      \"overall\": 49,\r\n      \"soccer\": 50,\r\n      \"academic\": 63,",
+    "replace": "\"fitOlivier\": 50,\r\n    \"lensScores\": {\r\n      \"overall\": 49,\r\n      \"soccer\": 50,\r\n      \"academic\": 63,",
     "expect": "FIT"
   }
 ]

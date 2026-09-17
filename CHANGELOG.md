@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.57 (2026-09-17) — JUCO division filter chips; standardize NJCAA soccerLevelShort labels
+
+**Owner report:** two Explore Schools card issues. (1) The Division filter row can isolate NCAA D1/D2/D3 but not NJCAA DI/DII/DIII within JUCO. (2) `soccerLevelShort` was inconsistent for the same fact — Miami Dade showed `"NJCAA"`, Daytona State showed `"NJCAA Division I"`, both NJCAA Division I schools.
+
+**Filter fix:** added `JUCO DI` / `JUCO DII` / `JUCO DIII` chips to the Division row, reading the existing `njcaaDivision` field via a new `njcaadiv` card dataset attribute (`js/app.js` `buildCard()`). They stay in the same `div` filter type (not a new type) so Division-row chips keep OR-ing together the way `D1`+`JUCO` already did — `applyFilters()` special-cases a `JUCO-` prefixed value to match `dataset.njcaadiv` instead of `dataset.div`. The Conference row's separate `NJCAA`/`CCCAA` chips are unchanged (different filter dimension — governing body, not competitive tier). Root cause of the owner's original confusion: Division-row chips OR together, but a Division chip and a Conference chip AND together, so `D1` + the Conference row's `NJCAA` chip correctly (if confusingly) returns nothing — no school is both.
+
+**Label fix:** standardized `soccerLevelShort` to `"NJCAA Division I"` / `"II"` / `"III"` for all 88 NJCAA schools in `data/juco.json` (40 corrected: 1 from the bare `"NJCAA"` fallback, 39 from the gap-fill campaign's `"NJCAA DI — Region N"` format), derived from each school's own `njcaaDivision` field. `miami_dade` was the one exception needing fresh verification — v44.61 had deliberately left it as `"NJCAA"` because its division was "unpublished on its own site." Re-checked live in Chrome (RULE 0): Miami Dade's own official athletics Instagram (`@mdcsharksmsoc`) states "NJCAA Division 1" in its bio, so the claim is genuinely published now. `njcaa.org` itself is geo-blocked without the owner's VPN (§6C) and could not be cross-checked directly.
+
+**No scoring cascade** — `soccerLevelShort` is display-only with no scoring consumer.
+
+**Verified:** `validate_schools.py` PASS (0 errors, pre-existing warnings only); `validate_consistency.js` Issues: 0; `node --check js/app.js` OK; local browser test confirmed `JUCO-I` alone → 75 schools, `+JUCO-II` → 84, `D1+JUCO-I` union → 142; Miami Dade and Daytona State cards both render "Soccer Level: NJCAA Division I".
+
 ### v45.56 (2026-09-17) — Session close-out: lessons register and guardrails for every failure class found in v45.47–v45.55
 
 **Owner request:** close out the session, record every lesson, and put guardrails in place so none of it recurs. Following the new audit-first rule, every existing check was run before anything was added. That audit found one more live error class, fixed here.

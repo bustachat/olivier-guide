@@ -98,6 +98,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-
 .fchip:hover{border-color:var(--indigo2);color:var(--indigo);background:var(--indigo3);}
 .fchip.active{background:var(--indigo);border-color:var(--indigo);color:#fff;font-weight:700;}
 .fchip-count{opacity:.7;font-weight:500;font-size:10px;}.fchip.active .fchip-count{opacity:.85;color:#e0e7ff;}
+.fchip-sub{font-size:10px;padding:3px 8px;opacity:.8;margin-left:-2px;}
 .sort-pill{background:var(--bg);border:1.5px solid var(--border2);color:var(--muted);padding:4px 12px;border-radius:14px;font-size:11px;font-weight:500;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .12s;white-space:nowrap;}
 .sort-pill:hover{border-color:var(--indigo2);color:var(--indigo);background:var(--indigo3);}
 .sort-pill.active{background:var(--indigo);border-color:var(--indigo);color:#fff;font-weight:700;}
@@ -909,6 +910,9 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
         <button class="fchip" data-filter="div" data-val="D3" onclick="toggleFilter(this)">D3</button>
         <button class="fchip" data-filter="div" data-val="NAIA" onclick="toggleFilter(this)">NAIA</button>
         <button class="fchip" data-filter="div" data-val="JUCO" onclick="toggleFilter(this)">JUCO</button>
+        <button class="fchip fchip-sub" data-filter="div" data-val="JUCO-I" onclick="toggleFilter(this)">JUCO DI</button>
+        <button class="fchip fchip-sub" data-filter="div" data-val="JUCO-II" onclick="toggleFilter(this)">JUCO DII</button>
+        <button class="fchip fchip-sub" data-filter="div" data-val="JUCO-III" onclick="toggleFilter(this)">JUCO DIII</button>
         <button class="fchip" data-filter="div" data-val="IVY" onclick="toggleFilter(this)">Ivy</button>
       </div>
       <div class="filter-row">

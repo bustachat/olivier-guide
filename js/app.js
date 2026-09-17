@@ -808,6 +808,7 @@ function buildCard(u){
   const el=document.createElement('div');
   el.className='ucard'+(u.top?' top-pick':'');
   el.dataset.div=u.div; el.dataset.region=u.region; el.dataset.warm=u.warm; el.dataset.top=u.top;
+  el.dataset.njcaadiv=u.njcaaDivision||'';
   el.dataset.city=u.city?'true':'false';
   el.dataset.acualign=u.acuAlign>=14?'full':u.acuAlign>=10?'strong':'partial';
   el.dataset.lensdivtop='false';
@@ -2334,6 +2335,19 @@ function toggleFilter(btn){
   applyFilters();
 }
 
+// With JUCO selected, D1/D2/D3 narrow JUCOs to that NJCAA division instead of
+// adding four-year schools: D1+JUCO shows NJCAA Division I JUCOs only.
+const NJCAA_LEVEL = { D1: 'I', D2: 'II', D3: 'III' };
+function divFilterMatch(card, vals){
+  const div = card.dataset.div;
+  const levels = [...vals].filter(v => NJCAA_LEVEL[v]);
+  if (vals.has('JUCO') && levels.length) {
+    if (div === 'JUCO') return levels.some(v => card.dataset.njcaadiv === NJCAA_LEVEL[v]);
+    return !NJCAA_LEVEL[div] && vals.has(div);
+  }
+  return vals.has(div);
+}
+
 function applyFilters(){
   const container = document.getElementById('cards-container');
   const cards = container ? container.querySelectorAll('.ucard') : [];
@@ -2367,6 +2381,8 @@ function applyFilters(){
         // recalculateAllScores(), so unis is the value actually on screen.
         const su = unis.find(x => x.id === (c.id||'').replace('card-',''));
         if(!su || !vals.has(fitBand(su.fitOlivier))){ show=false; break; }
+      } else if(type==='div'){
+        if(!divFilterMatch(c, vals)){ show=false; break; }
       } else {
         if(![...vals].some(v=>c.dataset[type]===v)){ show=false; break; }
       }

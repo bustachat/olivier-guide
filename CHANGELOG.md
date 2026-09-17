@@ -6,6 +6,16 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.58 (2026-09-17) — Division filter: D1/D2/D3 + JUCO narrows JUCOs by NJCAA division
+
+**Owner report:** selecting `D1` + `JUCO` showed every four-year D1 school plus every JUCO, including Division II and III JUCOs. Intended: only NJCAA Division I JUCOs.
+
+**Fix:** new `divFilterMatch()` in `js/app.js`, used by `applyFilters()` for the Division row, plus a `data-njcaadiv` attribute on each card from `njcaaDivision`. When `JUCO` is selected together with any of D1/D2/D3, those levels narrow the JUCOs to the matching NJCAA division and no four-year D1/D2/D3 schools are added. NAIA and Ivy still add. All other combinations are unchanged.
+
+**Verified in a fresh local browser session:** D1 → 67 four-year D1; JUCO → 89; D1+JUCO → 75 (all Division I JUCOs); D2+JUCO → 9; D3+JUCO → 4; D1+D2+JUCO → 84; D1+JUCO+NAIA → 78 (75 + 3 NAIA); D1+D2 → 75 (67 + 8). `validate_schools.py` PASS; `validate_consistency.js` Issues: 0.
+
+**Correction to v45.57:** that entry said the base behaviour already met the owner's ask. It did not; the v45.57 revert note is superseded by this entry.
+
 ### v45.57 (2026-09-17) — Standardize NJCAA soccerLevelShort labels
 
 **Owner report:** `soccerLevelShort` was inconsistent for the identical fact — Miami Dade showed `"NJCAA"`, Daytona State showed `"NJCAA Division I"`, both NJCAA Division I schools.

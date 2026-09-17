@@ -6,6 +6,21 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.61 (2026-09-17) — Explore section intros cut to one short, fixed description each
+
+**Why:** the owner found the Explore ⓘ intros no longer useful. The JUCO intro had grown one sentence per research batch into a long list of school results and contained claims the guide no longer supports (Arizona Western "#2 nationally" and Cowley/Barton "national top 5", which v45.53 found unverifiable, and Monroe "3× national champions with Australian alumni"). No check reads these facts, so they go stale unseen. Owner chose Option B: keep the ⓘ toggle, replace every intro with a short sentence that states only what the group is and its scholarship rules, with no results, rankings, coaches, costs or program counts.
+
+**Changes (`js/app.js` `CONF_SECTIONS` only):**
+- All 18 intros rewritten (owner-approved wording). Season facts stay on the school cards and Details modals.
+- Division II section label "NCAA Division II — SSC" → "NCAA Division II". Only 3 of its schools play in the Sunshine State Conference; Cal State LA, St. Edward's, Georgian Court and U of Charleston do not.
+- No data, score or other file changed. The PROSE check has no program counts left to compare in these intros, which is fine: nothing in them can go stale now.
+
+**Verified:** `validate_consistency.js` Issues: 0; `node --check js/app.js`; local browser (v45.61): all 18 sections show the new text, ⓘ toggles still hidden by default, JUCO intro expands to ~3 lines, "Division II — SSC" no longer appears anywhere on the page.
+
+**Not changed:** the Conferences tab's 8 tier intros (also hand-written) were left as they are.
+
+---
+
 ### v45.60 (2026-09-17) — Add four 2026-27 NJCAA schools; Pathways tab fix for 21 JUCOs; roster tool division-strength fix
 
 **Why:** the owner asked for the four teams on NJCAA's 2026-27 Division I list that the guide lacked. With v45.59's changes the Division I JUCO count now matches NJCAA's list exactly (76).

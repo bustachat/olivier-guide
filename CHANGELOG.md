@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.59 (2026-09-17) — Harford and Hagerstown move to NJCAA Division II; Community Christian has no 2026-27 team found; Financial Model caps Division II athletic aid
+
+**Why:** the owner compared the guide's 75 NJCAA Division I JUCOs with NJCAA's Division I stats list (76). Read in Chrome on njcaa.org's official division team lists: Harford CC and Hagerstown CC were on the **2025-26 Division I** list and are on the **2026-27 Division II** list; Community Christian College is on none of the three 2026-27 lists. Region 20's and the ACCAC's own standings pages showed a human-verification wall and were not read.
+
+**Harford CC and Hagerstown CC (Change Type 14):** `conf`, `njcaaDivision` II, `soccerLevel`/`soccerLevelShort`, `fundingPathway` capped, `aid` (standard Division II wording), a sentence added to `fin.internationalNote` and `rec`; coach `conf` for both. Past Division I results (2021 national tournament, 2022-2025 Region 20 standings) are unchanged, since they were true then. Scores: Harford Fit 40 → 37, value 48 → 46; Hagerstown Fit 36 → 33, value 44 → 42 (soccer lens unchanged after rounding). `conferences.json` (labels, desc, olivierNote), `conf-prestige.json`, the `js/app.js` JUCO intro and the CLAUDE.md reference table updated.
+
+**Community Christian College (owner ruling: keep, add a clear note):** its own 2026-27 schedule lists no games and no 2026-27 roster is published. Note added to `rec`, `culture.olivierMatch`, `minutesOutlook.reason`/`note` and the conference card. Scores and division unchanged, so it still appears under D1 + JUCO.
+
+**Financial Model:** the athletic slider went to 100% of cost for every school with athletic aid, and the tip said "A full athletic ride = 100% athletic slider". NJCAA Division II athletic aid cannot cover housing or food. New `finAthleticCapPct()` stops the slider at (tuition + fees) ÷ cost for NJCAA Division II schools, and the tip says why. Affects all 11 Division II JUCOs (e.g. Harford 45%, Hagerstown 39%, National Park 43%); Division I schools still reach 100%.
+
+**Verified in a fresh local session:** every nav tab (Dashboard, Explore, Compare, Minutes Outlook, Pro Pipeline, ACU Alignment, Pathways, Conferences, Coaches, Financial Model, Glossary) loads with no console errors and no "undefined"/"NaN"; all 9 Details tabs for Harford, Hagerstown, Community Christian, National Park and Tyler; Compare shows all four selected; Financial Model slider caps and tips as above; Explore D1+JUCO 73, D2+JUCO 11; both cards read "NJCAA Division II" with Fit 37% and 33%. `validate_consistency.js` Issues: 0; `validate_schools.py` PASS; `check_no_jargon.py` PASS.
+
+**Still to do (same owner request):** add the four 2026-27 Division I programs not yet in the guide: NorthWest Arkansas CC, Oxford College of Emory, Southern Crescent Technical College, Southwestern Christian College.
+
 ### v45.58 (2026-09-17) — Division filter: D1/D2/D3 + JUCO narrows JUCOs by NJCAA division
 
 **Owner report:** selecting `D1` + `JUCO` showed every four-year D1 school plus every JUCO, including Division II and III JUCOs. Intended: only NJCAA Division I JUCOs.

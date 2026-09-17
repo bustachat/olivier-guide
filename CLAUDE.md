@@ -115,9 +115,9 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Georgian Court | `data/d2.json` | `georgian_court` | D2 | CACC |
 | Gillette College | `data/juco.json` | `gillette_college` | JUCO | NJCAA DI / Region 9 |
 | Glendale CC | `data/juco.json` | `glendale_cc_az` | JUCO | NJCAA DII / ACCAC |
-| Hagerstown CC | `data/juco.json` | `hagerstown_cc` | JUCO | NJCAA DI / Region 20 |
+| Hagerstown CC | `data/juco.json` | `hagerstown_cc` | JUCO | NJCAA DII / Region 20 |
 | Harcum College | `data/juco.json` | `harcum_college` | JUCO | NJCAA DI / Region 19 |
-| Harford CC | `data/juco.json` | `harford_cc` | JUCO | NJCAA DI / Region 20 |
+| Harford CC | `data/juco.json` | `harford_cc` | JUCO | NJCAA DII / Region 20 |
 | Hill College | `data/juco.json` | `hill_college` | JUCO | NJCAA DI / Region 5 |
 | Hofstra | `data/caa.json` | `hofstra` | D1 | CAA |
 | Illinois Central | `data/juco.json` | `illinois_central` | JUCO | NJCAA DI / Region 24 |
@@ -1562,6 +1562,9 @@ The two official windows (confirm exact dates each cycle against the NCAA's own 
 - **📌 Audit first, then fix (owner feedback, v45.55).** Before fixing anything reported, run every audit script (`qa-suite`, `roster-refresh`, `add-coach`, `new-school --id` for each school, `transfer-tracking`) and a formula check of every stored derived value. Fix everything found in one release, and list only what genuinely needs the owner.
 
 #### F. Data gaps & watch items
+
+- **⏳ Found v45.59 — NJCAA division membership changes between seasons; re-check every JUCO's division each August against njcaa.org's division team lists** (`njcaa.org/sports/msoc/{season}/div{1,2,3}/teams`, VPN on, collect every page). Compare the new season's list with the previous one. Harford CC and Hagerstown CC moved Division I → II for 2026-27, and Oxford College of Emory moved II → I, with nothing in the guide noticing. These team lists were consistent across both seasons checked. Still prefer the region's own standings when reachable (Region 15 lesson), but Region 20 and ACCAC now show a human-verification wall.
+- **⏳ `community_christian_college` — no 2026-27 team found (checked 2026-09-17).** Its own 2026-27 schedule lists no games, no 2026-27 roster is published, and it is on none of NJCAA's three 2026-27 team lists. Owner ruling: keep it in the guide with a visible note (rec, olivierMatch, Minutes Outlook reason, conference card). Re-check at the next roster pass; if the college confirms the program is gone, remove it (Change Type 10).
 
 - **✅ CAMPAIGN COMPLETE (v45.15 → v45.29) — degreeTitle/acuAlign fabrication audit, both the 110-school pre-RULE-0 sweep and the 60-school post-RULE-0 follow-up. Full results and methodology preserved below for reference.**
 

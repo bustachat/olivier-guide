@@ -163,6 +163,13 @@ const RECRUIT_PATHWAY_VALUES = ['Freshman-friendly', 'Transfer-preferred', 'Port
 // the renderers still guard those keys with '—'. Add an 'id:key' entry only for a real research
 // gap, never to silence a cascade you skipped.
 const MO_MISSING_OK = new Set([]);
+// PATHWAY-LOC (v45.60): js/app.js reads recruit_pathway only from minutesOutlook. 21 JUCOs stored it
+// on the school object instead and silently never appeared in the Pathways tab summary.
+schools.forEach(s => {
+  ['recruit_pathway', 'recruit_pathway_note'].forEach(k => {
+    if (k in s) note('PATHWAY-LOC', `${s.id} stores ${k} on the school object; the app only reads minutesOutlook.${k}`);
+  });
+});
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
   const mo = s.minutesOutlook;
   if (!mo) { note('MO', `${s.id} missing minutesOutlook`); return; }
@@ -361,7 +368,8 @@ schools.forEach(s => {
 const fitMismatches = [];
 schools.filter(s => s.profileDepth === 'full').forEach(s => {
   const fit = SCORES.calculateFitScore(s, athlete);
-  if (Math.abs(fit - (s.fitOlivier || 0)) > 1) fitMismatches.push(`${s.id} (${s._file}): stored ${s.fitOlivier}, live formula ${fit}`);
+  // Exact since v45.60: a 1-point tolerance hid a stale division-strength copy in apply_roster_refresh.py.
+  if (fit !== s.fitOlivier) fitMismatches.push(`${s.id} (${s._file}): stored ${s.fitOlivier}, live formula ${fit}`);
 });
 
 // ── FUNDING (v42.18 §5c): structural scholarship availability feeds the Fit Score
@@ -396,7 +404,7 @@ schools.filter(s => s.div === 'JUCO').forEach(s => {
 schools.filter(s => s.div !== 'JUCO' && s.njcaaDivision !== undefined)
   .forEach(s => note('NJCAA-DIV', `${s.id} is ${s.div} but has njcaaDivision — JUCO only`));
 if (fitMismatches.length) {
-  note('FIT', `${fitMismatches.length} schools where stored fitOlivier differs >1 from the live scores.js formula:`);
+  note('FIT', `${fitMismatches.length} schools where stored fitOlivier differs from the live scores.js formula:`);
   fitMismatches.forEach(m => note('FIT', '  ' + m));
 }
 

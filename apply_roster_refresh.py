@@ -18,6 +18,13 @@ def js_round(x):
 D1_RATE_DIVISOR = 5.0594
 NEXT_LEVEL_NEUTRAL = 0.3773
 DIV_STRENGTH = {'D1': 1.0, 'IVY': 0.9, 'D2': 0.8, 'NAIA': 0.65, 'D3': 0.5, 'JUCO': 0.6}
+NJCAA_DIV_STRENGTH = {'I': 0.6, 'II': 0.55, 'III': 0.42}
+
+
+def division_strength(s):
+    if s.get('div') == 'JUCO' and s.get('njcaaDivision') in NJCAA_DIV_STRENGTH:
+        return NJCAA_DIV_STRENGTH[s['njcaaDivision']]
+    return DIV_STRENGTH.get(s.get('div'), 0.5)
 
 
 def calc_dev_avg(s):
@@ -40,7 +47,7 @@ def next_level_factor(s):
 
 
 def soccer_quality(s):
-    return (calc_dev_avg(s) / 100 * 0.6) + (next_level_factor(s) * 0.3) + (DIV_STRENGTH.get(s.get('div'), 0.5) * 0.1)
+    return (calc_dev_avg(s) / 100 * 0.6) + (next_level_factor(s) * 0.3) + (division_strength(s) * 0.1)
 
 
 def mo_score(s):

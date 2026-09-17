@@ -1,0 +1,235 @@
+{
+  "schoolId": "nwacc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-09-17",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://nwacceagles.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 32,
+  "players": [
+    {
+      "name": "Jack Munson",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Hadleigh, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Kyan Okoli",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Hockliffe, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Evan Rees",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bridgend, Wales",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Okeh",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Ipswich, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Mikey Murphy",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Escondido, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Clayton Butler",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Asheville, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Rei Tomita",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Musashino, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Bagnall",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Gosport, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Aukele Paikuli-Campbell",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Kailua-Kona, Haw.",
+      "previousSchool": null
+    },
+    {
+      "name": "Josiah Wilson",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Port-of-Spain, Trinidad and Tobago",
+      "previousSchool": null
+    },
+    {
+      "name": "Luc Fangen Hall",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "London, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Byron Adams",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Chelmsford, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorden Moore",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Denham Springs, La.",
+      "previousSchool": null
+    },
+    {
+      "name": "Takumi Hirokawa",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Higashiura, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Gonçalves",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Tavira, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Sota Asano",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Nagoya, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Ivan Contreras",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bentonville, Ark.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brandon Lawson",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bentonville, Ark.",
+      "previousSchool": null
+    },
+    {
+      "name": "Damian Carranza",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Rogers, Ark.",
+      "previousSchool": null
+    },
+    {
+      "name": "Costa Barlas",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Asheville, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alan Mendoza",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Neosho, Mo.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tazizwa Kasambara",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Blantyre, Malawi",
+      "previousSchool": null
+    },
+    {
+      "name": "Tino Le",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Fort Smith, Ark.",
+      "previousSchool": null
+    },
+    {
+      "name": "James Blanco",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Alexandria, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Peters",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Cambridge, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Twine",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Bridgend, Wales",
+      "previousSchool": null
+    },
+    {
+      "name": "Jodon Grey",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Sheffield, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Soto",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Rogers, Ark.",
+      "previousSchool": null
+    },
+    {
+      "name": "Hari Lambe",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Caernarfon, Wales",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Goble",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Aubrey, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Erik Ramos",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Rogers, Ark.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ángel Calix",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Rogers, Ark.",
+      "previousSchool": null
+    }
+  ]
+}

@@ -808,7 +808,6 @@ function buildCard(u){
   const el=document.createElement('div');
   el.className='ucard'+(u.top?' top-pick':'');
   el.dataset.div=u.div; el.dataset.region=u.region; el.dataset.warm=u.warm; el.dataset.top=u.top;
-  el.dataset.njcaadiv=u.njcaaDivision||'';
   el.dataset.city=u.city?'true':'false';
   el.dataset.acualign=u.acuAlign>=14?'full':u.acuAlign>=10?'strong':'partial';
   el.dataset.lensdivtop='false';
@@ -2368,13 +2367,6 @@ function applyFilters(){
         // recalculateAllScores(), so unis is the value actually on screen.
         const su = unis.find(x => x.id === (c.id||'').replace('card-',''));
         if(!su || !vals.has(fitBand(su.fitOlivier))){ show=false; break; }
-      } else if(type==='div'){
-        // A 'JUCO-I'/'JUCO-II'/'JUCO-III' chip narrows to that NJCAA division
-        // (njcaadiv dataset) instead of the div field, which is 'JUCO' for all
-        // 89 JUCOs regardless of division. Values stay in the same 'div' type
-        // as D1/D2/D3/JUCO so multiple selections still OR together.
-        const ok = [...vals].some(v => v.startsWith('JUCO-') ? c.dataset.njcaadiv === v.slice(5) : c.dataset.div === v);
-        if(!ok){ show=false; break; }
       } else {
         if(![...vals].some(v=>c.dataset[type]===v)){ show=false; break; }
       }

@@ -845,6 +845,10 @@ if (!Object.keys(CONF_ALIAS).length || !CONF_ORDER.length) {
     if (typeof c.soccerTeams !== 'number') note('GROUP', `conferences.json '${c.id}' soccerTeams must be a number (the Total Programs figure), got ${JSON.stringify(c.soccerTeams)}`);
     else if (!c.soccerTeamsSource) note('GROUP', `conferences.json '${c.id}' has no soccerTeamsSource — say where the Total Programs figure came from`);
     ['guideSchools', 'olivierNote'].forEach(f => { if (f in c) note('GROUP', `conferences.json '${c.id}' has '${f}' again — the tab derives guide schools live; do not store them`); });
+    const mp = c.mlsPicksByYear;
+    if (!mp || typeof mp !== 'object' || !Object.values(mp).every(v => Number.isInteger(v) && v >= 0)) note('GROUP', `conferences.json '${c.id}' needs mlsPicksByYear (whole numbers per draft year) — the MLS Picks column and card read it`);
+    else if (!c.mlsPicksSource) note('GROUP', `conferences.json '${c.id}' has no mlsPicksSource — say where the MLS pick counts came from`);
+    if ('mlsPipeline' in c) note('GROUP', `conferences.json '${c.id}' has a hand-written mlsPipeline again — MLS picks are counted, not rated`);
   });
   schools.forEach(s => {
     const k = resolveConfGroupMirror(s.conf);
@@ -853,7 +857,7 @@ if (!Object.keys(CONF_ALIAS).length || !CONF_ORDER.length) {
   const sig = g => JSON.stringify(keysOf(g));
   prestige.forEach(p => {
     if (!conferences.some(c => sig(c.group) === sig(p.group))) note('GROUP', `conf-prestige row '${p.name}' group ${sig(p.group)} matches no conferences.json card`);
-    ['programsInGuide', 'relevance'].forEach(f => { if (f in p) note('GROUP', `conf-prestige row '${p.name}' has '${f}' again — Programs in Guide and Summary are derived; do not store them`); });
+    ['programsInGuide', 'relevance', 'mlsPipeline', 'mlsPipelineWarning'].forEach(f => { if (f in p) note('GROUP', `conf-prestige row '${p.name}' has '${f}' again — Programs in Guide and Summary are derived; do not store them`); });
   });
   conferences.forEach(c => {
     const n = schools.filter(s => keysOf(c.group).includes(resolveConfGroupMirror(s.conf))).length;

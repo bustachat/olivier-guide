@@ -180,5 +180,12 @@
     "find": "function confSchools(c){",
     "replace": "function confSchools(c){ if (c.guideSchools) return c.guideSchools;",
     "expect": "GROUP"
+  },
+  {
+    "name": "GROUP / MLS picks stored as hand-written text instead of counts",
+    "file": "data/conferences.json",
+    "find": "\"mlsPicksByYear\": {\r\n      \"2022\": 21,",
+    "replace": "\"mlsPicksByYear\": {\r\n      \"2022\": \"lots\",",
+    "expect": "GROUP"
   }
 ]

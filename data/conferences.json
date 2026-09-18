@@ -12,7 +12,14 @@
     "soccerTeams": 15,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 28,
-    "mlsPipeline": "Highest in college soccer — leads all conferences in MLS picks 2020–2026",
+    "mlsPicksByYear": {
+      "2022": 21,
+      "2023": 18,
+      "2024": 26,
+      "2025": 21,
+      "2026": 25
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies split across roster — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [],
@@ -35,7 +42,14 @@
     "soccerTeams": 11,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 12,
-    "mlsPipeline": "Top 5 — Indiana all-time leader; Maryland most all-time picks; UCLA strong West Coast pipeline",
+    "mlsPicksByYear": {
+      "2022": 13,
+      "2023": 13,
+      "2024": 10,
+      "2025": 16,
+      "2026": 14
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [],
@@ -58,7 +72,14 @@
     "soccerTeams": 12,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 6,
-    "mlsPipeline": "Strong — Georgetown 42 MLS signings under Wiese. Multiple Red Bulls/NYCFC connections from St John's.",
+    "mlsPicksByYear": {
+      "2022": 7,
+      "2023": 8,
+      "2024": 14,
+      "2025": 9,
+      "2026": 10
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [],
@@ -81,7 +102,14 @@
     "soccerTeams": 0,
     "soccerTeamsSource": "secsports.com soccer page (women's only) and NCAA member directory, checked 2026-09-18",
     "ncaaTitles": "N/A",
-    "mlsPipeline": "Not applicable — the SEC has no men's soccer. Kentucky and South Carolina field men's teams that play in the Sun Belt.",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Not applicable — the SEC does not sponsor men's soccer",
     "maxAid": "N/A",
     "otherSchools": [
@@ -107,7 +135,14 @@
     "soccerTeams": 9,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Strong and growing — FIU and USF are consistent MLS producers. FAU 2025 AAC Tournament Champions.",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 5,
+      "2024": 2,
+      "2025": 3,
+      "2026": 2
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [],
@@ -130,7 +165,14 @@
     "soccerTeams": 7,
     "soccerTeamsSource": "bigwest.org 2026 men's soccer standings, checked 2026-09-18",
     "ncaaTitles": 1,
-    "mlsPipeline": "Solid — Manu Duah #1 overall 2025 is the marquee recent example",
+    "mlsPicksByYear": {
+      "2022": 2,
+      "2023": 0,
+      "2024": 2,
+      "2025": 2,
+      "2026": 2
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
@@ -158,7 +200,14 @@
     "soccerTeams": 7,
     "soccerTeamsSource": "pac-12.com 2026 men's soccer standings, checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "New men's soccer lineup from 2026 — see each school's Pro Pipeline tab",
+    "mlsPicksByYear": {
+      "2022": 1,
+      "2023": 2,
+      "2024": 3,
+      "2025": 5,
+      "2026": 2
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
@@ -186,7 +235,14 @@
     "soccerTeams": 6,
     "soccerTeamsSource": "themw.com 2026 men's soccer standings, checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "New men's soccer lineup from 2026 — see each school's Pro Pipeline tab",
+    "mlsPicksByYear": {
+      "2022": 3,
+      "2023": 1,
+      "2024": 1,
+      "2025": 0,
+      "2026": 4
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
@@ -214,7 +270,14 @@
     "soccerTeams": 8,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Growing — Princeton 5 MLS players under Barlow. Kevin O'Toole (NYCFC 2022) most recent.",
+    "mlsPicksByYear": {
+      "2022": 2,
+      "2023": 4,
+      "2024": 1,
+      "2025": 4,
+      "2026": 5
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "ZERO athletic scholarships — need-based financial aid only",
     "maxAid": "None",
     "otherSchools": [
@@ -244,7 +307,14 @@
     "soccerTeams": 10,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Developing — Charleston Battery (USL) connection is the pro draw",
+    "mlsPicksByYear": {
+      "2022": 1,
+      "2023": 3,
+      "2024": 3,
+      "2025": 1,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [],
@@ -267,7 +337,14 @@
     "soccerTeams": 9,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Limited — USL League One/Two connections building at UCA",
+    "mlsPicksByYear": {
+      "2022": 1,
+      "2023": 0,
+      "2024": 2,
+      "2025": 0,
+      "2026": 1
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
@@ -298,7 +375,14 @@
     "soccerTeams": 9,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 2,
-    "mlsPipeline": "Growing — Denver is the dominant new member. Cole Bassett (Colorado Rapids, USMNT) most famous recent alum.",
+    "mlsPicksByYear": {
+      "2022": 4,
+      "2023": 1,
+      "2024": 5,
+      "2025": 8,
+      "2026": 7
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
@@ -329,7 +413,14 @@
     "soccerTeams": 8,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 1,
-    "mlsPipeline": "Developing — Vermont has had four SuperDraft picks since its 2024 title (Wathuta and Murray in 2025, Herceg and Kissel in 2026).",
+    "mlsPicksByYear": {
+      "2022": 2,
+      "2023": 4,
+      "2024": 2,
+      "2025": 2,
+      "2026": 5
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
@@ -359,7 +450,14 @@
     "soccerTeams": 11,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 4,
-    "mlsPipeline": "Best non-MLS pipeline — USL2, international pro signings annually from multiple SSC teams",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9 athletic equivalencies (D2 maximum)",
     "maxAid": "9.0",
     "otherSchools": [
@@ -388,7 +486,14 @@
     "soccerTeams": 12,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Developing — Austin FC (MLS) connections via St Edward's proximity",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9 athletic equivalencies",
     "maxAid": "9.0",
     "otherSchools": [
@@ -418,7 +523,14 @@
     "soccerTeams": 13,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Limited MLS; strong sport science career placement in LA",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 1,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9 athletic equivalencies",
     "maxAid": "9.0",
     "otherSchools": [
@@ -448,7 +560,14 @@
     "soccerTeams": 9,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Limited — USL pathway developing. UC Charleston has Australian connection (Jack Allan).",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9 athletic equivalencies",
     "maxAid": "9.0",
     "otherSchools": [
@@ -477,7 +596,14 @@
     "soccerTeams": 10,
     "soccerTeamsSource": "soonerathletic.org 2026 men's soccer standings, checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "NAIA level — semi-pro and international pathways",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to equivalent of full ride (NAIA)",
     "maxAid": "12",
     "otherSchools": [
@@ -505,7 +631,14 @@
     "soccerTeams": 9,
     "soccerTeamsSource": "thesunconference.com 2026 men's soccer standings, checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Limited — health sciences pathway is the priority",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to equivalent of full ride (NAIA)",
     "maxAid": "12",
     "otherSchools": [
@@ -534,7 +667,14 @@
     "soccerTeams": 10,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "None (D3) — academic/PT pathway focus",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "ZERO athletic scholarships — merit and need-based aid only",
     "maxAid": "None",
     "otherSchools": [
@@ -567,7 +707,14 @@
     "soccerTeams": 336,
     "soccerTeamsSource": "njcaa.org 2026-27 team lists (Division I 76, II 111, III 67) plus cccaasports.org 2026 standings (82), checked 2026-09-18",
     "ncaaTitles": "N/A",
-    "mlsPipeline": "Pathway — players move on to NCAA and NAIA programs; see each school's Pro Pipeline tab",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Athletic grants + need-based aid (varies by state)",
     "maxAid": "Varies",
     "otherSchools": [
@@ -593,7 +740,14 @@
     "soccerTeams": 9,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Developing — NEC programs feed regional USL and NPSL pipelines",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer); 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
@@ -626,7 +780,14 @@
     "soccerTeams": 6,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Developing — Denver (departed to the WCC in 2026) drove the league's recent pipeline (Cole Bassett to USMNT, Shinyashiki = 2019 MLS Rookie of the Year)",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 1,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer); 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
@@ -655,7 +816,14 @@
     "soccerTeams": 11,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Regional USL and NPSL pathway",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "NCAA D2 — up to 9.0 equivalencies (men's soccer)",
     "maxAid": "9.0",
     "otherSchools": [
@@ -685,7 +853,14 @@
     "soccerTeams": 6,
     "soccerTeamsSource": "amcsportsonline.com 2026 men's soccer standings, checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "NAIA level — USL League Two pathway",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "NAIA — 12 equivalencies, no per-player cap",
     "maxAid": "12",
     "otherSchools": [
@@ -714,7 +889,14 @@
     "soccerTeams": 10,
     "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-09-18",
     "ncaaTitles": 0,
-    "mlsPipeline": "Developing — service academies and northeastern privates",
+    "mlsPicksByYear": {
+      "2022": 2,
+      "2023": 0,
+      "2024": 1,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Army & Navy: full federal scholarships; other members: up to 9.9 equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [

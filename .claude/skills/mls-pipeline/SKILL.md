@@ -61,6 +61,19 @@ Every year, after the December draft:
    same trackers. The v45.55 check found seven claims that match no draft, plus
    wrong years and rounds.
 
+### 0b. Conference totals for the Conferences tab (added v45.64)
+
+Each `conferences.json` card stores `mlsPicksByYear` for the last five drafts:
+picks by the conference's CURRENT members (2026-27 membership), from the same
+trackers. Keep `data/mls-draft-picks-2022-2026.json` as the audit list (every
+pick, its college, matched NCAA institution and conference); roll it forward a
+year, match each college to the NCAA member directory
+(`web3.ncaa.org/directory/api/directory/memberList?type=12&division={I,II,III}&sportCode=MSO`,
+`conferenceName` is the sport conference), recount, and update the `YEARS` window
+in `js/app.js` (`CONF_MLS_YEARS`). Picks from MLS NEXT Pro clubs count for no
+conference. Check the sum for guide schools against their `mlsPicks5yr`: in
+v45.64 every guide school matched exactly.
+
 `validate_consistency.js` **MLS-TABLE** fails if a table row disagrees with the
 school record, or if a D1/Ivy school with picks has no row. **FIT** catches a
 count changed without re-storing scores.

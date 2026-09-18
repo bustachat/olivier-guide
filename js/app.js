@@ -2997,6 +2997,20 @@ function confProgramsInGuideText(c){
 function confSchoolChips(list){
   return list.map(u => `<span class="conf-school-chip in-guide" style="cursor:pointer" title="Open ${esc(u.name)} details" onclick="openDetail('${esc(u.id)}')">★ ${esc(u.name)}</span>`).join('');
 }
+// v45.64: MLS SuperDraft picks by the conference's CURRENT members over the last
+// five drafts, stored per year on each card (mlsPicksByYear, sourced by
+// mlsPicksSource). The table and card both read it; nothing is hand-rated.
+const CONF_MLS_YEARS = ['2022', '2023', '2024', '2025', '2026'];
+function confMlsTotal(c){ const b = c.mlsPicksByYear || {}; return CONF_MLS_YEARS.reduce((a, y) => a + (b[y] || 0), 0); }
+function confMlsYearsText(c){ const b = c.mlsPicksByYear || {}; return CONF_MLS_YEARS.map(y => `${y}: ${b[y] || 0}`).join(' · '); }
+function confMlsSentence(c){
+  const n = confMlsTotal(c);
+  const span = `${CONF_MLS_YEARS[0]}–${CONF_MLS_YEARS[CONF_MLS_YEARS.length-1]}`;
+  if (c.soccerTeams === 0) return "No men's soccer, so no MLS draft picks.";
+  if (Array.isArray(c.group) && !n) return `No MLS SuperDraft picks came straight from a junior college in ${span}; players are drafted after moving on to four-year programs.`;
+  if (!n) return `No MLS SuperDraft picks from current members in the ${span} drafts.`;
+  return `${n} MLS SuperDraft pick${n === 1 ? '' : 's'} from current members in the ${span} drafts (${confMlsYearsText(c)}).`;
+}
 const CONF_LABEL_CSS = 'font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:5px';
 
 function renderConferencePrestige() {
@@ -3010,9 +3024,6 @@ function renderConferencePrestige() {
 
     const rows = sorted.map(r => {
       const c = cardFor(r);
-      const pipelineCell = r.mlsPipelineWarning
-        ? `<span style="color:var(--rose)">${r.mlsPipeline}</span>`
-        : r.mlsPipeline;
       const summary = c && c.desc ? (c.desc.match(/^.*?[.!?](\s|$)/) || [c.desc])[0].trim() : '';
       return `<tr>
         <td><span class="rk-num ${r.rankClass}">${r.rank}</span>${r.name}</td>
@@ -3020,7 +3031,7 @@ function renderConferencePrestige() {
         <td><span class="dbadge ${r.divBadge}">${r.div}</span></td>
         <td>${c ? confProgramsInGuideText(c) : '—'}</td>
         <td style="text-align:center;font-weight:700">${c && c.soccerTeams != null ? c.soccerTeams : '—'}</td>
-        <td>${pipelineCell}</td>
+        <td style="text-align:center;font-weight:700" title="${c ? esc(confMlsYearsText(c)) : ''}">${c ? confMlsTotal(c) : '—'}</td>
         <td>${r.scholarships}</td>
         <td>${esc(summary)}</td>
       </tr>`;
@@ -3030,7 +3041,7 @@ function renderConferencePrestige() {
       <table class="ranking-table">
         <thead><tr>
           <th>Rank</th><th>Conference</th><th>Division</th>
-          <th>Programs in Guide</th><th>Total Programs</th><th>MLS Pipeline (5yr)</th>
+          <th>Programs in Guide</th><th>Total Programs</th><th>MLS Picks (${CONF_MLS_YEARS[0]}–${CONF_MLS_YEARS[CONF_MLS_YEARS.length-1].slice(2)})</th>
           <th>Scholarships</th><th>Summary</th>
         </tr></thead>
         <tbody>${rows}</tbody>
@@ -3060,7 +3071,7 @@ function buildConfCard(c){
       <div class="conf-schools">${list.length ? confSchoolChips(list) : '<span style="font-size:12px;color:var(--muted)">None</span>'}</div>`}
       ${others.length ? `<div style="${CONF_LABEL_CSS};margin-top:8px">Other Notable Programs</div>
       <div class="conf-schools">${otherChips}${others.length>6?`<span class="conf-school-chip">+${others.length-6} more</span>`:''}</div>` : ''}
-      <div style="margin-top:.75rem"><div style="${CONF_LABEL_CSS};margin-bottom:4px">Pro Pipeline</div><div class="conf-desc">${c.mlsPipeline}</div></div>
+      <div style="margin-top:.75rem"><div style="${CONF_LABEL_CSS};margin-bottom:4px">MLS Draft Picks</div><div class="conf-desc" title="${esc(c.mlsPicksSource||'')}">${confMlsSentence(c)}</div></div>
     </div>
   </div>`;
 }

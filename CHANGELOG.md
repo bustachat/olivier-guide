@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.64 (2026-09-18) — Conferences tab: MLS Pipeline star ratings replaced with counted draft picks
+
+**Why:** owner asked to clean up the MLS Pipeline column. It held hand-written ratings ("★★★ USL/International", "★ Clinical focus", "Transfer pathway"), and each card's "Pro Pipeline" line was free prose with unsupported claims.
+
+**What it shows now:** MLS SuperDraft picks by each conference's **current members** over the last five drafts (2022–2026, MLS's naming). Stored once per card as `mlsPicksByYear` with `mlsPicksSource`; the table column ("MLS Picks (2022–26)", hover for the per-year split) and the card line ("111 MLS SuperDraft picks from current members in the 2022–2026 drafts (2022: 21 · …)") both read it. `mlsPipeline` removed from `conferences.json`; `mlsPipeline`/`mlsPipelineWarning` removed from `conf-prestige.json`.
+
+**How it was counted (2026-09-18):** every pick read from mlssoccer.com — the 2026 tracker article and 2025 tracker tables (raw HTML), and the 2022–2024 draft trackers in Chrome, round by round. 428 selections (2022: 78, 2023: 83, 2024: 87, 2025: 90, 2026: 90), of which 418 were from colleges; 10 were MLS NEXT Pro clubs and count for no conference. Each college was matched to its 2026-27 men's soccer conference in the NCAA member directory, with a hand-checked name list (the one ambiguous "Loyola" pick, Billy Hency 2023, is Loyola Chicago). Every pick is kept in `data/mls-draft-picks-2022-2026.json` for audit. **Cross-check:** summing picks per guide school reproduces every stored `mlsPicks5yr` exactly.
+
+**Totals:** ACC 111, Big Ten 66, Big East 48, WCC 25, Ivy 16, America East 15, Pac-12 13, AAC 12, Mountain West 9, Big West 8, CAA 8, ASUN 4, Patriot 3, Summit 1, CCAA 1; NEC, the other Division II, NAIA, Division III and junior college conferences 0. SEC shows "no men's soccer" (Kentucky and South Carolina's picks count for the Sun Belt). The 2022 total is 78 against the 79 the mls-pipeline skill quotes; the difference does not touch any guide conference and was not chased further.
+
+**Checks:** the `GROUP` check now requires whole-number `mlsPicksByYear` and a source on every card, and fails if `mlsPipeline` comes back. One negtest case added (27 total). CLAUDE.md Change Type 7 and §5 schemas and the mls-pipeline skill (new step 0b: annual conference recount) updated.
+
+**Verified:** `validate_consistency.js` Issues: 0; local browser: the column reads the counted totals for all 25 rows, cards show the per-year sentence, no "undefined"/"NaN".
+
+**Not changed:** the rankings table's order is still the hand-set prestige rank, so a conference can sit above one with more picks (e.g. Pac-12 at 6 with 13, WCC at 8 with 25).
+
+---
+
 ### v45.63 (2026-09-18) — Conferences tab rebuilt: live guide counts, verified Total Programs, junior colleges by region
 
 **Why:** the owner found the Conferences tab unreadable (the JUCO rankings row alone was 12,000 characters) and asked for Option C with changes: purely conference-based, no fit figures, no "Olivier fit" box, a Total Programs column beside Programs in Guide, and every count automatic.

@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.62 (2026-09-18) — Conference moves for the 2026 men's soccer season; WAC removed; SEC card corrected
+
+**Why:** building a "Total Programs" column for the Conferences tab needed official program counts, and the NCAA's member directory for men's soccer (`web3.ncaa.org/directory/api/directory/memberList?type=12&division={I,II,III}&sportCode=MSO`, academic year 2027 = 2026-27) showed five guide schools filed under the wrong conference. Owner ruling: fix the conferences first, as their own release, and leave Division I schools missing from the guide as visible gaps.
+
+**Verified on each conference's own 2026 men's soccer standings page (Claude-in-Chrome, 2026-09-18):**
+- **Pac-12** (pac-12.com): UC San Diego, UC Riverside, Cal Baptist, Oregon State, Cal Poly, San Diego State, Gonzaga. Founded 1915 (pac-12.com history page).
+- **Mountain West** (themw.com): UNLV, San José State, Grand Canyon, Air Force, Utah Tech, UC Davis.
+- **Big West** (bigwest.org): Utah Valley, UC Santa Barbara, CSUN, Cal State Bakersfield, UC Irvine, Sacramento State, Cal State Fullerton. Cal Poly, UC Riverside and UC San Diego remain Big West members in other sports.
+- **WAC**: wacsports.com redirects to the United Athletic Conference, whose sports list has women's soccer but no men's soccer. Its former men's members moved (GCU and Utah Tech to the Mountain West, UTRGV to the Ohio Valley, per the NCAA directory).
+- **SEC**: its soccer page shows women's results only (e.g. Vanderbilt, Alabama). Kentucky and South Carolina's men's teams are Sun Belt members in the NCAA directory; Texas A&M has no men's team there. The SEC card (added v18, 2026-05-21) had listed Texas A&M as a "fully profiled" guide school since it was written.
+
+**Changes:**
+- `calpoly`, `ucriverside`, `ucsd` → `conf` "Pac-12 Conference", `confKey` `pac-12`; `ucdavis`, `gcu` → "Mountain West Conference", `mountain-west`. Files unchanged (the Akron/Army/Navy precedent: filed by file, grouped by `confKey`). `soccerLevel`/`soccerLevelShort` updated. Present-tense "in the Big West"/"in the WAC" comparisons in these schools' texts rewritten; historical results (`confRecord`, `titles`, coach records) left as they were, since they were true at the time.
+- `coaches.json`: `conf` for the 5 coaches; UC Riverside coach `record`/`bio` rewritten (they described a 2025 Big West/Pac-12 "partnership").
+- `conferences.json`: new Pac-12 and Mountain West cards (Mountain West `founded` left null, not found on its own site; the card now hides "Founded" when blank); WAC card removed; Big West card now lists UCSB, UC Irvine, CSU Fullerton, 7 men's teams; **SEC card kept, per owner, as a reference card saying the SEC has no men's soccer** (no guide schools, Kentucky and South Carolina noted as Sun Belt).
+- `conf-prestige.json`: Pac-12 (6) and Mountain West (7) rows added under the Big West, WAC row removed, ranks renumbered 1–24; Big West row updated.
+- `pipeline.json`: GCU and UC Davis badges now "D1 Mountain West".
+- `js/app.js`: Explore sections, filter-chip aliases/labels/order and Financial Model group labels for `pac-12`/`mountain-west`; WAC removed; Big West intro reworded. `js/dashboard.js` conference labels. `validate_consistency.js` section list.
+- CLAUDE.md reference table rows for the 5 schools and the file table.
+- No score moved: conference is not part of the Fit Score.
+
+**Verified:** `validate_consistency.js` Issues: 0 (after rewording a Pac-12 note the CONF-COUNT check read as "12 schools"); `validate_schools.py` PASS; local browser (v45.62): Explore shows Big West 3, Pac-12 3, Mountain West 2 cards; the Pac-12 chip filters to exactly the 3 schools; all 5 schools' Details modals open with no "undefined"; Conferences tab shows the new cards and rankings rows 5–7 as Big West / Pac-12 / Mountain West.
+
+**Found, not fixed:** Cal Poly's stored 2025 `confRecord` says "3rd in the Big West", but its coach record and bio say back-to-back Big West regular-season titles in 2024 and 2025. Check against bigwest.org's 2025 standings.
+
+---
+
 ### v45.61 (2026-09-17) — Explore section intros cut to one short, fixed description each
 
 **Why:** the owner found the Explore ⓘ intros no longer useful. The JUCO intro had grown one sentence per research batch into a long list of school results and contained claims the guide no longer supports (Arizona Western "#2 nationally" and Cowley/Barton "national top 5", which v45.53 found unverifiable, and Monroe "3× national champions with Australian alumni"). No check reads these facts, so they go stale unseen. Owner chose Option B: keep the ⓘ toggle, replace every intro with a short sentence that states only what the group is and its scholarship rules, with no results, rankings, coaches, costs or program counts.

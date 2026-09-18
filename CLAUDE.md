@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v45.61 (2026-09-17)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v45.62 (2026-09-18)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -51,9 +51,9 @@ For data work, read the specific conference file:
 | Big Ten | `data/big-ten.json` | UCLA, Indiana, Maryland, Penn State, Michigan, Michigan State, Ohio State, Northwestern, Wisconsin, Rutgers, Washington (11) |
 | Big East | `data/big-east.json` | St John's, Georgetown, Creighton, UConn, Providence, Villanova, Marquette, Butler, Seton Hall, DePaul, Xavier (11) |
 | AAC | `data/aac.json` | FIU, USF, FAU, Tulsa, Memphis, Temple, UAB, Navy, Army, Charlotte (10) |
-| Big West | `data/big-west.json` | UCSB, Cal Poly, UC Davis, UC Irvine, UC Riverside, UC San Diego, CSU Fullerton (7) |
+| Big West file (Big West, plus Pac-12 and Mountain West men's soccer from 2026 via confKey) | `data/big-west.json` | UCSB, UC Irvine, CSU Fullerton (Big West); Cal Poly, UC Riverside, UC San Diego (Pac-12); UC Davis (Mountain West) (7) |
 | CAA | `data/caa.json` | Charleston, William & Mary, Hofstra, Northeastern, Drexel, Elon, Monmouth, Stony Brook (8) |
-| Non-major D1 (MAC, WAC, WCC, ASUN, AEC, NEC, Summit) | `data/d1-other.json` | Akron (MAC), GCU (WAC), Denver (WCC), Vermont (AEC), Mercyhurst (NEC), UCA (ASUN), Delaware (Summit) (7) |
+| Non-major D1 (Big East via confKey, Mountain West, WCC, ASUN, AEC, NEC, Summit) | `data/d1-other.json` | Akron (Big East), GCU (Mountain West), Denver (WCC), Vermont (AEC), Mercyhurst (NEC), UCA (ASUN), Delaware (Summit) (7) |
 | JUCO | `data/juco.json` | Tyler JC, Indian Hills, Daytona State, Iowa Western, Santa Monica, Miami Dade, Monroe, Northeast CC, Barton CC, Cowley CC, Arizona Western, Eastern Florida State (12) |
 | Ivy League | `data/ivy.json` | Princeton, Yale (2) |
 | D2, NAIA, D3 | `data/d2.json` | Nova SE, Barry, Lynn, PBA, Cal State LA, St. Edward's, Georgian Court, U of Charleston, Columbia College, Oklahoma City, Keiser, Chapman (12) |
@@ -74,7 +74,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | Blinn College | `data/juco.json` | `blinn_college` | JUCO | NJCAA DI / Region 14 |
 | Butler | `data/big-east.json` | `butler` | D1 | Big East |
 | Cal | `data/acc.json` | `cal` | D1 | ACC |
-| Cal Poly | `data/big-west.json` | `calpoly` | D1 | Big West |
+| Cal Poly | `data/big-west.json` | `calpoly` | D1 | Pac-12 (men's soccer from 2026; Big West for other sports — filed in big-west.json, grouped via confKey) |
 | Central Georgia Tech | `data/juco.json` | `central_georgia_tech` | JUCO | NJCAA DI / Region 17 |
 | Cal State LA | `data/d2.json` | `csula` | D2 | CCAA |
 | Casper College | `data/juco.json` | `casper_college` | JUCO | NJCAA DI / Region 9 |
@@ -110,7 +110,7 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | FAU | `data/aac.json` | `fau` | D1 | AAC |
 | FIU | `data/aac.json` | `fiu` | D1 | AAC |
 | Garden City CC | `data/juco.json` | `garden_city_cc` | JUCO | NJCAA DI / KJCCC |
-| GCU | `data/d1-other.json` | `gcu` | D1 | WAC |
+| GCU | `data/d1-other.json` | `gcu` | D1 | Mountain West (men's soccer from 2026; the WAC, now the United Athletic Conference, no longer sponsors men's soccer) |
 | Georgetown | `data/big-east.json` | `georgetown` | D1 | Big East |
 | Georgian Court | `data/d2.json` | `georgian_court` | D2 | CACC |
 | Gillette College | `data/juco.json` | `gillette_college` | JUCO | NJCAA DI / Region 9 |
@@ -209,10 +209,10 @@ This applies to Change Types 1, 8, and 10 — it is a required step in Phase 6 (
 | U of Charleston | `data/d2.json` | `uc_charleston` | D2 | Mountain East (MEC) |
 | UA Rich Mountain | `data/juco.json` | `rich_mountain` | JUCO | NJCAA DI / Region 2 |
 | UAB | `data/aac.json` | `uab` | D1 | AAC |
-| UC Davis | `data/big-west.json` | `ucdavis` | D1 | Big West |
+| UC Davis | `data/big-west.json` | `ucdavis` | D1 | Mountain West (men's soccer from 2026; Big West for other sports — filed in big-west.json, grouped via confKey) |
 | UC Irvine | `data/big-west.json` | `ucirvine` | D1 | Big West |
-| UC Riverside | `data/big-west.json` | `ucriverside` | D1 | Big West |
-| UC San Diego | `data/big-west.json` | `ucsd` | D1 | Big West |
+| UC Riverside | `data/big-west.json` | `ucriverside` | D1 | Pac-12 (men's soccer from 2026; Big West for other sports — filed in big-west.json, grouped via confKey) |
+| UC San Diego | `data/big-west.json` | `ucsd` | D1 | Pac-12 (men's soccer from 2026; Big West for other sports — filed in big-west.json, grouped via confKey) |
 | UCA | `data/d1-other.json` | `uca` | D1 | ASUN |
 | UCLA | `data/big-ten.json` | `ucla` | D1 | Big Ten |
 | UConn | `data/big-east.json` | `uconn` | D1 | Big East |
@@ -1304,7 +1304,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v45.61 (2026-09-17).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v45.62 (2026-09-18).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1568,6 +1568,7 @@ The two official windows (confirm exact dates each cycle against the NCAA's own 
 #### F. Data gaps & watch items
 
 - **🚩 TO DO (owner request, 2026-09-17) — check the guide's NJCAA Division II JUCOs against NJCAA's 2026-27 Division II team list.** v45.59 compared only the Division I list (76 teams, now matched exactly). The 11 schools stored as Division II are `northeast_cc`, `phoenix_college`, `pima_cc`, `glendale_cc_az`, `neosho_county_cc`, `southeastern_cc_ia`, `iowa_lakes_cc`, `johnson_county_cc`, `national_park`, `hagerstown_cc`, `harford_cc`. Method: owner's VPN on, read every page of `njcaa.org/sports/msoc/2026-27/div2/teams` (111 teams on 2026-09-17; the list is paginated and slow, poll for rows), match names, and for any stored Division II school missing from that list check the Division I and III lists. A real move is a Change Type 14 cascade (division, `fundingPathway`, aid wording, scores, coach `conf`, conference text, reference table), as v45.59 did for Harford and Hagerstown. The same check is worth running for the 5 Division III schools (`nassau_cc`, `ulster_cc`, `suffolk_cc`, `westchester_cc`, `oxford_college_emory`; Oxford is Division III by owner ruling despite NJCAA listing its team in Division I).
+- **⏳ Found v45.62 — NCAA men's soccer conference membership also changes between seasons; re-check every August.** For 2026 the Pac-12 restarted men's soccer, the Mountain West added it and the WAC (renamed the United Athletic Conference) dropped it, moving five guide schools. Check with the NCAA member directory by division and sport (`web3.ncaa.org/directory/api/directory/memberList?type=12&division={I,II,III}&sportCode=MSO`; `conferenceName` is the sport-specific conference, `academicYear` 2027 = 2026-27), then confirm any move on the conference's own standings page. A school's other-sports conference can differ (Cal Poly, UC Riverside, UC San Diego are Big West members but play men's soccer in the Pac-12).
 - **⏳ Found v45.59 — NJCAA division membership changes between seasons; re-check every JUCO's division each August against njcaa.org's division team lists** (`njcaa.org/sports/msoc/{season}/div{1,2,3}/teams`, VPN on, collect every page). Compare the new season's list with the previous one. Harford CC and Hagerstown CC moved Division I → II for 2026-27, and Oxford College of Emory moved II → I, with nothing in the guide noticing. These team lists were consistent across both seasons checked. Still prefer the region's own standings when reachable (Region 15 lesson), but Region 20 and ACCAC now show a human-verification wall.
 - **🚩 `oxford_college_emory` — division conflict, owner ruling applied (v45.60).** NJCAA's 2026-27 team list puts Oxford's men's soccer in Division I (Division II in 2025-26), but Emory's admissions FAQ says Oxford competes in NJCAA Division III and "is not permitted to offer athletic scholarships". Owner ruling: treat and label it Division III (`njcaaDivision: "III"`, `fundingPathway: "none"`). If Emory's page is updated or Oxford announces athletic aid, revisit.
 - **⏳ `southern_crescent_tech` and `southwestern_christian` — no usable roster yet (v45.60).** Southern Crescent publishes no player list (NJCAA lists 11 names with no positions or class years); Southwestern Christian's 2026-27 roster lists 10 defenders and no forwards. Both `minutesOutlook.available:false`. Re-check at the next roster pass. Also re-check NWACC and Southern Crescent coach bios once each has a completed season.

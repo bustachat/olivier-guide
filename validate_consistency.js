@@ -89,7 +89,7 @@ for (const name of ['DOMAINS', 'SITE_URLS', 'SOCIAL']) {
 }
 
 // ── confKey vs CONF_SECTIONS ──
-const sectionKeys = new Set(['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'asun', 'wac', 'wcc', 'america-east', 'nec', 'summit', 'patriot', 'other']);
+const sectionKeys = new Set(['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'caa', 'asun', 'pac-12', 'mountain-west', 'wcc', 'america-east', 'nec', 'summit', 'patriot', 'other']);
 schools.filter(s => !sectionKeys.has(s.confKey)).forEach(s => note('CONFKEY', `${s.id} confKey='${s.confKey}' has no CONF_SECTIONS match — invisible in Explore`));
 
 // ── acuUnits ──

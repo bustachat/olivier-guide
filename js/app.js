@@ -648,10 +648,11 @@ function renderCards(){
     {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'A power conference that spans the country, from the West Coast to the East, with strong MLS draft output.'},
     {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'Mostly private schools in or near large East Coast and Midwest cities. Akron plays its men\'s soccer here, although its other sports are in the MAC.'},
     {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'Warm-weather Division I programs in the South and Southeast. Army and Navy are listed under the Patriot League, where their men\'s soccer competes.'},
-    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'California public universities, most of them in the University of California and Cal State systems.'},
+    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast programs, mostly California public universities.'},
+    {key:'pac-12',   label:'Pac-12 Conference',                   tier:'High Major · D1',intro:'The rebuilt Pac-12, which sponsors men\'s soccer again from the 2026 season, with programs across California and the Pacific Northwest.'},
+    {key:'mountain-west', label:'Mountain West Conference',       tier:'High Major · D1',intro:'Western Division I programs. The Mountain West added men\'s soccer for the 2026 season.'},
     {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major Division I programs along the East Coast, from New England to the Carolinas.'},
     {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major Division I programs across the South and Southeast.'},
-    {key:'wac',      label:'WAC — Western Athletic Conference',   tier:'Mid-Major · D1', intro:'Mid-major Division I programs in the western and southwestern states.'},
     {key:'wcc',      label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Mid-major Division I programs mostly in western states. Denver joined for the 2026 season.'},
     {key:'america-east', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Mid-major Division I programs in the Northeast, where winters are cold.'},
     {key:'nec',      label:'NEC — Northeast Conference',          tier:'Mid-Major · D1', intro:'Mid-major Division I programs in the Northeast, including schools still moving up from Division II.'},
@@ -2159,7 +2160,7 @@ const CONF_ALIAS_MAP = {
   'aac': 'aac', 'american athletic': 'aac',
   'big west': 'big-west', 'big-west': 'big-west',
   'caa': 'caa', 'colonial athletic': 'caa',
-  'wac': 'wac', 'western athletic': 'wac',
+  'pac-12': 'pac-12', 'pac 12': 'pac-12', 'mountain west': 'mountain-west',
   'mac': 'mac', 'mid-american': 'mac',
   'wcc': 'wcc', 'west coast': 'wcc',
   'asun': 'asun',
@@ -2542,7 +2543,8 @@ const CONF_CHIP_LABELS = {
   'big-west':         'Big West',
   // Mid-Major D1
   'caa':              'CAA',
-  'wac':              'WAC',
+  'pac-12':           'Pac-12',
+  'mountain-west':    'Mountain West',
   'mac':              'MAC',
   'wcc':              'WCC',
   'asun':             'ASUN',
@@ -2572,7 +2574,7 @@ const CONF_CHIP_LABELS = {
 // Ordered by tier — P4 first, then mid-major D1, Ivy, D2, NAIA, D3, JUCO
 const CONF_CHIP_ORDER = [
   'sec','acc','big-ten','big-east','aac','big-west',
-  'caa','wac','mac','wcc','asun','america-east','patriot','summit','nec',
+  'pac-12','mountain-west','caa','mac','wcc','asun','america-east','patriot','summit','nec',
   'ivy-league',
   'ssc','ccaa','cacc','lsc','mec',
   'sac','sun-conference','amc',
@@ -3010,7 +3012,7 @@ function renderConferences(){
       const otherChips=(c.otherSchools||[]).slice(0,6).map(s=>`<span class="conf-school-chip">${s}</span>`).join('');
       html+=`<div class="conf-card">
         <div class="conf-card-head">
-          <div><div class="conf-name">${c.name}</div><div class="conf-abbr">${c.abbr} · Founded ${c.founded}</div></div>
+          <div><div class="conf-name">${c.name}</div><div class="conf-abbr">${c.abbr}${c.founded?` · Founded ${c.founded}`:''}</div></div>
           <div class="conf-prestige" style="background:var(--surface3);color:var(--muted);font-size:10px;max-width:120px;text-align:right;line-height:1.3">${c.prestige.split('—')[0].trim()}</div>
         </div>
         <div class="conf-body">
@@ -3555,7 +3557,7 @@ const FCBAR_SHOWN_PER_BRACKET = 6;
 // otherwise those five divisions would collapse into one misleading average.
 const FIN_CONF_GROUP_LABELS = {
   'acc':'ACC', 'big-ten':'Big Ten', 'big-east':'Big East', 'aac':'AAC', 'big-west':'Big West',
-  'caa':'CAA', 'asun':'ASUN', 'wac':'WAC', 'wcc':'WCC', 'america-east':'America East', 'nec':'NEC',
+  'caa':'CAA', 'asun':'ASUN', 'pac-12':'Pac-12', 'mountain-west':'Mountain West', 'wcc':'WCC', 'america-east':'America East', 'nec':'NEC',
   'summit':'Summit', 'patriot':'Patriot',
   'other-IVY':'Ivy League', 'other-D2':'D2', 'other-NAIA':'NAIA', 'other-D3':'D3', 'other-JUCO':'JUCO',
 };

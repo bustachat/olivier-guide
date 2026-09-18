@@ -113,26 +113,21 @@
     "abbr": "SEC",
     "tier": "Power 5 (D1)",
     "tierClass": "tier-p5",
-    "prestige": "Elite academic + athletic brand. Men's soccer at selected schools only.",
+    "prestige": "No men's soccer — the SEC sponsors women's soccer only",
     "founded": 1932,
     "teams": 16,
-    "soccerTeams": 6,
-    "ncaaTitles": 2,
-    "mlsPipeline": "Growing — Texas A&M consistent SEC producer. Gyasi Zardes (Columbus Crew, USMNT) most famous alum.",
-    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
-    "maxAid": "9.9",
-    "guideSchools": [
-      "Texas A&M (fully profiled)",
-      "⚠ UF — academic reference only (no men's varsity)"
-    ],
+    "soccerTeams": 0,
+    "ncaaTitles": "N/A",
+    "mlsPipeline": "Not applicable — the SEC has no men's soccer. Kentucky and South Carolina field men's teams that play in the Sun Belt.",
+    "scholarships": "Not applicable — the SEC does not sponsor men's soccer",
+    "maxAid": "N/A",
+    "guideSchools": [],
     "otherSchools": [
-      "South Carolina",
-      "Kentucky",
-      "Vanderbilt",
-      "Missouri"
+      "Kentucky (men play in the Sun Belt)",
+      "South Carolina (men play in the Sun Belt)"
     ],
-    "desc": "The SEC sponsors men's soccer at only some member schools. Texas A&M is the guide's fully-profiled SEC program — Bobby Shuttleworth was appointed in December 2025 bringing a 2× national championship pedigree from Florida State. Texas A&M has one of the largest kinesiology departments in the US (~3,000 undergrads). UF is retained as an academic reference only — no men's varsity soccer.",
-    "olivierNote": "Texas A&M is the SEC pick — massive kinesiology department, Shuttleworth's championship pedigree, warm climate. College Station is a college town not a major city. Trade-off: lifestyle vs elite academic/soccer development. Worth a contact email from Platform Sports Management.",
+    "desc": "The SEC sponsors women's soccer but not men's soccer. Kentucky and South Carolina are the SEC schools with men's teams, and both play in the Sun Belt Conference. Texas A&M and Florida have no men's varsity team.",
+    "olivierNote": "Not a men's soccer option. Any SEC school with a men's team is listed under the conference it actually plays in.",
     "color": [
       "#1a1a2e",
       "#8b0000"
@@ -179,28 +174,90 @@
     "prestige": "Strong — dominant West Coast regional conference",
     "founded": 1969,
     "teams": 12,
-    "soccerTeams": 10,
+    "soccerTeams": 7,
     "ncaaTitles": 1,
     "mlsPipeline": "Solid — Manu Duah #1 overall 2025 is the marquee recent example",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "guideSchools": [
       "UCSB — UC Santa Barbara",
-      "Cal Poly SLO",
-      "UC Davis",
       "UC Irvine",
-      "UC Riverside",
-      "UC San Diego",
       "CSU Fullerton"
     ],
     "otherSchools": [
-      "CSUN"
+      "Utah Valley",
+      "CSUN",
+      "Cal State Bakersfield",
+      "Sacramento State"
     ],
-    "desc": "The Big West is the premier West Coast conference below the Big Ten. UCSB under Tim Vom Steeg (20+ year coach) produced Manu Duah as the #1 overall 2025 MLS pick — the highest ever Big West draft selection. Pacific coastal lifestyle makes Big West schools lifestyle matches for Sydney-raised players.",
+    "desc": "The Big West is the premier West Coast conference below the Big Ten. UCSB under Tim Vom Steeg (20+ year coach) produced Manu Duah as the #1 overall 2025 MLS pick — the highest ever Big West draft selection. Pacific coastal lifestyle makes Big West schools lifestyle matches for Sydney-raised players. Cal Poly, UC Riverside and UC San Diego moved their men's soccer to the Pac-12 for 2026, and UC Davis moved to the Mountain West.",
     "olivierNote": "UCSB is the Big West pick — Vom Steeg is the most experienced coach in the guide, Mediterranean campus, and Manu Duah #1 overall 2025. The kinesiology degree is strong and the Santa Barbara lifestyle is the closest thing to Sydney in the US.",
     "color": [
       "#0c4a6e",
       "#7dd3fc"
+    ]
+  },
+  {
+    "id": "pac-12",
+    "name": "Pac-12 Conference",
+    "abbr": "Pac-12",
+    "tier": "High Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Rebuilt West Coast conference — men's soccer again from 2026",
+    "founded": 1915,
+    "teams": null,
+    "soccerTeams": 7,
+    "ncaaTitles": 0,
+    "mlsPipeline": "New men's soccer lineup from 2026 — see each school's Pro Pipeline tab",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
+    "guideSchools": [
+      "Cal Poly SLO",
+      "UC Riverside",
+      "UC San Diego"
+    ],
+    "otherSchools": [
+      "California Baptist",
+      "Gonzaga",
+      "Oregon State",
+      "San Diego State"
+    ],
+    "desc": "The rebuilt Pac-12 sponsors men's soccer again from the 2026 season, with programs across California and the Pacific Northwest. Cal Poly, UC Riverside and UC San Diego moved their men's soccer here from the Big West.",
+    "olivierNote": "Warm West Coast locations. Of the guide schools here, Cal Poly has the strongest recent results and UC San Diego the strongest academic and clinical setting.",
+    "color": [
+      "#0f2a44",
+      "#93c5fd"
+    ]
+  },
+  {
+    "id": "mountain-west",
+    "name": "Mountain West Conference",
+    "abbr": "Mountain West",
+    "tier": "High Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Western conference — added men's soccer for 2026",
+    "founded": null,
+    "teams": null,
+    "soccerTeams": 6,
+    "ncaaTitles": 0,
+    "mlsPipeline": "New men's soccer lineup from 2026 — see each school's Pro Pipeline tab",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
+    "guideSchools": [
+      "GCU — Grand Canyon University",
+      "UC Davis"
+    ],
+    "otherSchools": [
+      "UNLV",
+      "San José State",
+      "Air Force",
+      "Utah Tech"
+    ],
+    "desc": "The Mountain West added men's soccer for the 2026 season. GCU moved over from the WAC, which no longer sponsors men's soccer, and UC Davis moved from the Big West.",
+    "olivierNote": "GCU offers a warm major-city campus in Phoenix. UC Davis offers a strong academic setting in a smaller college town.",
+    "color": [
+      "#1e3a5f",
+      "#cbd5e1"
     ]
   },
   {
@@ -299,38 +356,6 @@
     "color": [
       "#1e3a5f",
       "#60a5fa"
-    ]
-  },
-  {
-    "id": "wac",
-    "name": "Western Athletic Conference",
-    "abbr": "WAC",
-    "tier": "Mid-Major (D1)",
-    "tierClass": "tier-d1",
-    "prestige": "Growing mid-major — GCU 2025 Sweet 16 run elevated the conference",
-    "founded": 1962,
-    "teams": 10,
-    "soccerTeams": 8,
-    "ncaaTitles": 0,
-    "mlsPipeline": "Developing — Dayne St. Clair (Minnesota United, USMNT) most famous WAC alum. GCU pipeline growing.",
-    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
-    "maxAid": "9.9",
-    "guideSchools": [
-      "GCU — Grand Canyon University (fully profiled)"
-    ],
-    "otherSchools": [
-      "Utah Valley",
-      "UTRGV",
-      "UT Arlington",
-      "California Baptist",
-      "Sam Houston",
-      "Tarleton State"
-    ],
-    "desc": "The WAC is a growing mid-major conference with teams primarily in the Southwest. GCU's 2025 run to the NCAA Sweet 16 (beating UCLA and San Diego) was the program's most historic achievement. Jamie Davies was appointed December 2025 — bringing an elite turnaround record from UNF. GCU's Phoenix campus is exceptional: 28,000 students, world-class facilities, warm climate, Banner Health clinical network.",
-    "olivierNote": "GCU is the best warm D1 city campus outside Florida and California. Phoenix gives Olivier the closest climate to Sydney of any non-coastal US city. Davies has a proven record of rapid program building. Kinesiology + Banner Health = legitimate pre-PT pathway.",
-    "color": [
-      "#522398",
-      "#c8a951"
     ]
   },
   {

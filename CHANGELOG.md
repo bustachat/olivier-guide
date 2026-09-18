@@ -6,6 +6,16 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.65 (2026-09-18) — Conferences table: "Rank by" toggle for MLS picks
+
+**Why:** owner asked to rank the table by the official conference ranking with a toggle for MLS picks. No official cross-division conference ranking exists: NCAA.com publishes a team RPI (final 2025 list, through Dec. 15), not a conference ranking, and the NAIA and junior college associations publish nothing comparable. Offered an average-RPI ranking; **owner chose to keep the current hand-set order** as the default.
+
+**Change (`js/app.js`, `renderConferencePrestige()` only):** a "Rank by: Conference ranking | MLS picks (2022–26)" pill switch above the table. MLS picks sorts all 25 rows by the counted 2022–26 picks, highest first, ties by the conference ranking. The rank badge keeps showing each conference's ranking in both views. The choice is remembered per browser (`localStorage`, wrapped in try/catch; the table works without it).
+
+**Verified:** local Chrome: default order unchanged (ACC, Big Ten, Big East, AAC, Big West, Pac-12, …); MLS picks order ACC 111, Big Ten 66, Big East 48, WCC 25, Ivy 16, America East 15, Pac-12 13, AAC 12, …, zero-pick conferences last in ranking order; switching back restores the default; `validate_consistency.js` Issues: 0.
+
+---
+
 ### v45.64 (2026-09-18) — Conferences tab: MLS Pipeline star ratings replaced with counted draft picks
 
 **Why:** owner asked to clean up the MLS Pipeline column. It held hand-written ratings ("★★★ USL/International", "★ Clinical focus", "Transfer pathway"), and each card's "Pro Pipeline" line was free prose with unsupported claims.

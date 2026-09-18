@@ -3013,14 +3013,27 @@ function confMlsSentence(c){
 }
 const CONF_LABEL_CSS = 'font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:5px';
 
+// v45.65: the rankings table can be re-sorted by MLS picks. 'rank' keeps the
+// hand-set conference order (owner ruling 2026-09-18: no official cross-division
+// conference ranking exists); 'mls' sorts all rows by the 2022-26 pick count.
+let confTableSort = 'rank';
+try { if (localStorage.getItem('confTableSort') === 'mls') confTableSort = 'mls'; } catch (e) {}
+function setConfTableSort(v){
+  confTableSort = v === 'mls' ? 'mls' : 'rank';
+  try { localStorage.setItem('confTableSort', confTableSort); } catch (e) {}
+  renderConferencePrestige();
+}
+
 function renderConferencePrestige() {
   try {
     const container = document.getElementById('conf-prestige-container');
     if (!container) return;
     if (!Array.isArray(conferencePrestige) || !conferencePrestige.length) return;
 
-    const sorted = [...conferencePrestige].sort((a, b) => a.rank - b.rank);
     const cardFor = r => conferences.find(c => JSON.stringify(confGroupKeys(c)) === JSON.stringify(confGroupKeys(r)));
+    const mlsOf = r => { const c = cardFor(r); return c ? confMlsTotal(c) : -1; };
+    const sorted = [...conferencePrestige].sort((a, b) =>
+      confTableSort === 'mls' ? (mlsOf(b) - mlsOf(a)) || (a.rank - b.rank) : a.rank - b.rank);
 
     const rows = sorted.map(r => {
       const c = cardFor(r);
@@ -3037,7 +3050,13 @@ function renderConferencePrestige() {
       </tr>`;
     }).join('');
 
-    container.innerHTML = `<div style="overflow-x:auto;margin-bottom:2.5rem;">
+    const span = `${CONF_MLS_YEARS[0]}–${CONF_MLS_YEARS[CONF_MLS_YEARS.length-1].slice(2)}`;
+    const toggle = `<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:.6rem">
+      <span style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-right:2px">Rank by</span>
+      <button class="sort-pill${confTableSort === 'rank' ? ' active' : ''}" onclick="setConfTableSort('rank')" aria-pressed="${confTableSort === 'rank'}">Conference ranking</button>
+      <button class="sort-pill${confTableSort === 'mls' ? ' active' : ''}" onclick="setConfTableSort('mls')" aria-pressed="${confTableSort === 'mls'}">MLS picks (${span})</button>
+    </div>`;
+    container.innerHTML = toggle + `<div style="overflow-x:auto;margin-bottom:2.5rem;">
       <table class="ranking-table">
         <thead><tr>
           <th>Rank</th><th>Conference</th><th>Division</th>

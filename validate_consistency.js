@@ -523,17 +523,9 @@ const pipeAll = load('data/pipeline.json');
   });
 }
 
-// CONF-COUNT: a conference card claiming "N guide schools" must match guideSchools[].
-// "All 14 Big Ten schools" and "13 guide schools in the AAC" survived several changes.
-// "Region 15 schools" is a region name, not a count, so it is skipped.
-conferences.forEach(c => {
-  ['desc', 'olivierNote'].forEach(f => {
-    for (const m of (c[f] || '').matchAll(/(Region\s+)?\b(?:all\s+)?(\d{1,3})\s+(?:guide\s+|full-profile\s+|fully profiled\s+)?(schools|programs)\b/gi)) {
-      if (m[1]) continue;
-      if (+m[2] !== (c.guideSchools || []).length) note('CONF-COUNT', `${c.id}.${f} says "${m[0].trim()}" but guideSchools has ${(c.guideSchools || []).length}`);
-    }
-  });
-});
+// CONF-COUNT and GROUP (v45.63) run after CHIPS below — they need its
+// resolveConfGroup mirror, because the Conferences tab now derives every guide
+// school list and count from `group` instead of a stored guideSchools[] array.
 
 // ROSTER-PROSE: "N of M midfielders" / "N-player midfield" in a school's current-roster
 // text must use the stored mf_total. ~55 texts quoted older rosters after refreshes
@@ -829,6 +821,56 @@ if (!Object.keys(CONF_ALIAS).length || !CONF_ORDER.length) {
     if (divs.length > 1) note('CHIPS', `chip '${CONF_LABELS[k]}' mixes divisions ${divs.join('/')} — likely an alias collision (see UCA/Sun Conference, v44.45)`);
   });
 }
+
+// ── GROUP (added v45.63): the Conferences tab derives its school lists and counts ──
+// Every conferences.json card and conf-prestige.json row carries a `group` (the
+// resolveConfGroup key, or an array of keys for the JUCO card). renderConferences()
+// and renderConferencePrestige() list and count guide schools from `unis` by that
+// key, so nothing about guide membership is typed by hand any more. Failure modes:
+//   • a school whose key matches no card never appears on the tab;
+//   • a key on two cards double-counts;
+//   • a prestige row whose group matches no card renders "—";
+//   • the old stored lists (guideSchools / programsInGuide / relevance /
+//     olivierNote) coming back and drifting again, which is what they did.
+{
+  const keysOf = g => (Array.isArray(g) ? g : [g]).filter(Boolean);
+  const owner = {};
+  conferences.forEach(c => {
+    if (!keysOf(c.group).length) { note('GROUP', `conferences.json '${c.id}' has no group — its card cannot list any guide schools`); return; }
+    keysOf(c.group).forEach(k => {
+      if (owner[k]) note('GROUP', `group key '${k}' is on both '${owner[k]}' and '${c.id}' — schools would be counted twice`);
+      owner[k] = c.id;
+      if (!CONF_LABELS[k]) note('GROUP', `conferences.json '${c.id}' group '${k}' is not a known conference key (CONF_CHIP_LABELS)`);
+    });
+    if (typeof c.soccerTeams !== 'number') note('GROUP', `conferences.json '${c.id}' soccerTeams must be a number (the Total Programs figure), got ${JSON.stringify(c.soccerTeams)}`);
+    else if (!c.soccerTeamsSource) note('GROUP', `conferences.json '${c.id}' has no soccerTeamsSource — say where the Total Programs figure came from`);
+    ['guideSchools', 'olivierNote'].forEach(f => { if (f in c) note('GROUP', `conferences.json '${c.id}' has '${f}' again — the tab derives guide schools live; do not store them`); });
+  });
+  schools.forEach(s => {
+    const k = resolveConfGroupMirror(s.conf);
+    if (!owner[k]) note('GROUP', `${s.id} resolves to '${k}', which no conferences.json card covers — the school is missing from the Conferences tab`);
+  });
+  const sig = g => JSON.stringify(keysOf(g));
+  prestige.forEach(p => {
+    if (!conferences.some(c => sig(c.group) === sig(p.group))) note('GROUP', `conf-prestige row '${p.name}' group ${sig(p.group)} matches no conferences.json card`);
+    ['programsInGuide', 'relevance'].forEach(f => { if (f in p) note('GROUP', `conf-prestige row '${p.name}' has '${f}' again — Programs in Guide and Summary are derived; do not store them`); });
+  });
+  conferences.forEach(c => {
+    const n = schools.filter(s => keysOf(c.group).includes(resolveConfGroupMirror(s.conf))).length;
+    if (n > 0 && !prestige.some(p => sig(p.group) === sig(c.group))) note('GROUP', `conferences.json '${c.id}' has ${n} guide school(s) but no conf-prestige row`);
+  });
+  if (/c\.guideSchools|programsInGuide|c\.olivierNote/.test(deComment(appjs))) note('GROUP', 'js/app.js reads a stored guide-school list again (guideSchools / programsInGuide / olivierNote) — derive it from unis by group');
+}
+
+// CONF-COUNT: card text must not state a guide-school count — the tab shows the
+// live count, and typed counts ("All 14 Big Ten schools", "13 guide schools in
+// the AAC") went stale several times. "Region 15 schools" is a region name.
+conferences.forEach(c => {
+  for (const m of (c.desc || '').matchAll(/(Region\s+)?\b(?:all\s+)?(\d{1,3})\s+(?:guide\s+|full-profile\s+|fully profiled\s+)?(schools|programs)\b/gi)) {
+    if (m[1]) continue;
+    note('CONF-COUNT', `${c.id}.desc states a count ("${m[0].trim()}") — remove it; the card shows the live In Guide and Total Programs figures`);
+  }
+});
 
 // ── prestige rank sequence ──
 const pr = prestige.map(p => p.rank).sort((a, b) => a - b);

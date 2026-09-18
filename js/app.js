@@ -2947,6 +2947,58 @@ function togglePipelineSection(btnId) {
 // ══════════════════════════════════════════════════
 
 
+// v45.63: the Conferences tab never stores a school list or count. Each
+// conferences.json card and conf-prestige.json row carries a `group` — the same
+// key resolveConfGroup() gives a school's `conf` for the Explore filter chips
+// (an array for the JUCO card, which spans NJCAA and CCCAA). The schools, the
+// "Programs in Guide" text and every count are derived from `unis` here, so
+// adding, removing or moving a school needs no edit to either file.
+// `soccerTeams` is the stored, sourced TOTAL number of men's programs in the
+// conference (`soccerTeamsSource` says where it came from).
+function confGroupKeys(c){ return Array.isArray(c.group) ? c.group : [c.group]; }
+function confSchools(c){
+  const keys = confGroupKeys(c);
+  return unis.filter(u => keys.includes(resolveConfGroup(u.conf))).sort((a, b) => a.name.localeCompare(b.name));
+}
+function confCardId(c){ return 'conf-card-' + String(c.id).replace(/[^a-z0-9-]/gi, ''); }
+function scrollToConfTarget(id){
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+const US_STATE_NAMES = {AL:'Alabama',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'};
+function schoolStateName(u){
+  const st = String(u.loc || '').split(',').pop().trim();
+  return US_STATE_NAMES[st] || st;
+}
+// JUCO regions: NJCAA schools by njcaaRegion, plus CCCAA (no NJCAA region).
+function jucoRegionGroups(list){
+  const groups = {};
+  list.forEach(u => {
+    const r = u.njcaaRegion || 'CCCAA';
+    (groups[r] = groups[r] || []).push(u);
+  });
+  const num = r => r === 'CCCAA' ? 999 : (parseInt(String(r).replace(/\D/g, ''), 10) || 998);
+  return Object.keys(groups).sort((a, b) => num(a) - num(b)).map(r => ({ region: r, schools: groups[r] }));
+}
+function confProgramsInGuideText(c){
+  const list = confSchools(c);
+  const n = list.length;
+  const id = confCardId(c);
+  if (Array.isArray(c.group)) {
+    const regions = jucoRegionGroups(list);
+    const nj = regions.filter(g => g.region !== 'CCCAA').length;
+    const cc = (regions.find(g => g.region === 'CCCAA') || {schools: []}).schools;
+    const ccTxt = !cc.length ? '' : cc.length <= 2 ? ` + ${cc.map(u => esc(u.name)).join(', ')} (CCCAA)` : ` + ${cc.length} CCCAA`;
+    return `${n} schools across ${nj} NJCAA region${nj === 1 ? '' : 's'}${ccTxt} — <a href="javascript:void(0)" onclick="scrollToConfTarget('juco-regions')">see region cards below</a>`;
+  }
+  if (!n) return 'None';
+  return `${n} school${n === 1 ? '' : 's'} — <a href="javascript:void(0)" onclick="scrollToConfTarget('${id}')">see card below</a>`;
+}
+function confSchoolChips(list){
+  return list.map(u => `<span class="conf-school-chip in-guide" style="cursor:pointer" title="Open ${esc(u.name)} details" onclick="openDetail('${esc(u.id)}')">★ ${esc(u.name)}</span>`).join('');
+}
+const CONF_LABEL_CSS = 'font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:5px';
+
 function renderConferencePrestige() {
   try {
     const container = document.getElementById('conf-prestige-container');
@@ -2954,26 +3006,23 @@ function renderConferencePrestige() {
     if (!Array.isArray(conferencePrestige) || !conferencePrestige.length) return;
 
     const sorted = [...conferencePrestige].sort((a, b) => a.rank - b.rank);
+    const cardFor = r => conferences.find(c => JSON.stringify(confGroupKeys(c)) === JSON.stringify(confGroupKeys(r)));
 
-    const rows = sorted.map(c => {
-      const programsCell = c.programsInGuideWarning
-        ? `<span style="color:var(--rose);font-weight:700">⚠ ${c.programsInGuide}</span>`
-        : c.programsInGuide;
-
-      const pipelineCell = c.mlsPipelineWarning
-        ? `<span style="color:var(--rose)">${c.mlsPipeline}</span>`
-        : c.mlsPipeline;
-
-      const relevanceCell = c.relevance;
-
+    const rows = sorted.map(r => {
+      const c = cardFor(r);
+      const pipelineCell = r.mlsPipelineWarning
+        ? `<span style="color:var(--rose)">${r.mlsPipeline}</span>`
+        : r.mlsPipeline;
+      const summary = c && c.desc ? (c.desc.match(/^.*?[.!?](\s|$)/) || [c.desc])[0].trim() : '';
       return `<tr>
-        <td><span class="rk-num ${c.rankClass}">${c.rank}</span>${c.name}</td>
-        <td>${c.fullName}</td>
-        <td><span class="dbadge ${c.divBadge}">${c.div}</span></td>
-        <td>${programsCell}</td>
+        <td><span class="rk-num ${r.rankClass}">${r.rank}</span>${r.name}</td>
+        <td>${r.fullName}</td>
+        <td><span class="dbadge ${r.divBadge}">${r.div}</span></td>
+        <td>${c ? confProgramsInGuideText(c) : '—'}</td>
+        <td style="text-align:center;font-weight:700">${c && c.soccerTeams != null ? c.soccerTeams : '—'}</td>
         <td>${pipelineCell}</td>
-        <td>${c.scholarships}</td>
-        <td>${relevanceCell}</td>
+        <td>${r.scholarships}</td>
+        <td>${esc(summary)}</td>
       </tr>`;
     }).join('');
 
@@ -2981,8 +3030,8 @@ function renderConferencePrestige() {
       <table class="ranking-table">
         <thead><tr>
           <th>Rank</th><th>Conference</th><th>Division</th>
-          <th>Programs in Guide</th><th>MLS Pipeline (5yr)</th>
-          <th>Scholarships</th><th>Relevance for Olivier</th>
+          <th>Programs in Guide</th><th>Total Programs</th><th>MLS Pipeline (5yr)</th>
+          <th>Scholarships</th><th>Summary</th>
         </tr></thead>
         <tbody>${rows}</tbody>
       </table>
@@ -2990,48 +3039,82 @@ function renderConferencePrestige() {
   } catch(e) { console.error('renderConferencePrestige failed:', e); }
 }
 
+function buildConfCard(c){
+  const list = confSchools(c);
+  const others = c.otherSchools || [];
+  const otherChips = others.slice(0,6).map(s=>`<span class="conf-school-chip">${esc(s)}</span>`).join('');
+  return `<div class="conf-card" id="${confCardId(c)}">
+    <div class="conf-card-head">
+      <div><div class="conf-name">${c.name}</div><div class="conf-abbr">${c.abbr}${c.founded?` · Founded ${c.founded}`:''}</div></div>
+      <div class="conf-prestige" style="background:var(--surface3);color:var(--muted);font-size:10px;max-width:120px;text-align:right;line-height:1.3">${c.prestige.split('—')[0].trim()}</div>
+    </div>
+    <div class="conf-body">
+      <div class="conf-stat-row" style="grid-template-columns:repeat(4,1fr)">
+        <div class="conf-stat" title="${esc(c.soccerTeamsSource||'')}"><span class="csv">${c.soccerTeams}</span><span class="csl">Total Programs</span></div>
+        <div class="conf-stat"><span class="csv">${list.length}</span><span class="csl">In Guide</span></div>
+        <div class="conf-stat"><span class="csv">${c.ncaaTitles}</span><span class="csl">NCAA Titles</span></div>
+        <div class="conf-stat"><span class="csv">${c.maxAid||'—'}</span><span class="csl">Max Aid</span></div>
+      </div>
+      <div class="conf-desc" style="margin-bottom:.75rem">${c.desc}</div>
+      ${Array.isArray(c.group) ? '' : `<div style="${CONF_LABEL_CSS}">Schools In This Guide</div>
+      <div class="conf-schools">${list.length ? confSchoolChips(list) : '<span style="font-size:12px;color:var(--muted)">None</span>'}</div>`}
+      ${others.length ? `<div style="${CONF_LABEL_CSS};margin-top:8px">Other Notable Programs</div>
+      <div class="conf-schools">${otherChips}${others.length>6?`<span class="conf-school-chip">+${others.length-6} more</span>`:''}</div>` : ''}
+      <div style="margin-top:.75rem"><div style="${CONF_LABEL_CSS};margin-bottom:4px">Pro Pipeline</div><div class="conf-desc">${c.mlsPipeline}</div></div>
+    </div>
+  </div>`;
+}
+
+function buildJucoRegionCard(g){
+  const L = g.schools.slice().sort((a, b) => a.name.localeCompare(b.name));
+  const states = [...new Set(L.map(schoolStateName))].sort().join(', ');
+  const dv = {};
+  L.forEach(u => { if (u.njcaaDivision) dv[u.njcaaDivision] = (dv[u.njcaaDivision] || 0) + 1; });
+  const split = ['I','II','III'].filter(d => dv[d]).map(d => `${dv[d]} D${d}`).join(' / ') || 'CCCAA';
+  const elite = L.filter(u => u.jucoTier === 'Elite').length;
+  const title = g.region === 'CCCAA' ? 'CCCAA (California)' : `NJCAA ${g.region}`;
+  return `<div class="conf-card">
+    <div class="conf-card-head">
+      <div><div class="conf-name">${esc(title)}</div><div class="conf-abbr">${esc(states)}</div></div>
+    </div>
+    <div class="conf-body">
+      <div class="conf-stat-row">
+        <div class="conf-stat"><span class="csv">${L.length}</span><span class="csl">In Guide</span></div>
+        <div class="conf-stat"><span class="csv">${split}</span><span class="csl">Division</span></div>
+        <div class="conf-stat"><span class="csv">${elite || '—'}</span><span class="csl">Elite</span></div>
+      </div>
+      <div style="${CONF_LABEL_CSS}">Schools In This Guide</div>
+      <div class="conf-schools">${confSchoolChips(L)}</div>
+    </div>
+  </div>`;
+}
+
 function renderConferences(){
   const container=document.getElementById('conferences-container');
   const tiers=[
-    {key:'Power 5 (D1)',label:'Power 5 Conferences — Elite Division I',cls:'tier-p5',intro:"The 'Big Five' soccer conferences that produce the majority of MLS draft picks. Getting into a Power 5 program requires elite highlights. These programs offer the strongest soccer development but the most competitive roster spots."},
-    {key:'High Major (D1)',label:'High-Major Conferences — Very Strong D1',cls:'tier-d1',intro:'Just below Power 5 in profile but highly competitive. AAC and Big West programs are realistic D1 targets for Olivier with strong highlights — and several are in warm coastal cities.'},
-    {key:'Ivy League (D1)',label:'Ivy League — Academic Elite, No Athletic Scholarships',cls:'tier-ivy',intro:'Unique financial model: no athletic scholarships, need-based aid only. Princeton is surging. GPA improvement essential.'},
-    {key:'Mid-Major (D1)',label:'Mid-Major D1 — Competitive Regional Programs',cls:'tier-d1',intro:'Genuine D1 competition at more accessible scholarship levels. Charleston is the lifestyle pick.'},
-    {key:'Division II',label:'Division II Conferences — Best Overall Value',cls:'tier-d2',intro:'Often the best overall balance for international athletes: real scholarships, playing time from year 1, strong academic programs, warm climates in Florida and Texas.'},
-    {key:'NAIA',label:'NAIA — Generous Scholarships, Personal Development',cls:'tier-naia',intro:'NAIA coaches get a 12-equivalency team cap — more than D2 (9.0) — and there is no per-player cap, so a full ride is possible even though the team total is capped. Billy Martin at OCU continues a strong NAIA soccer tradition. Keiser in West Palm Beach has clinical simulation labs.'},
-    {key:'Division III',label:'Division III — Academic Focus, No Athletic Scholarships',cls:'tier-juco',intro:'No athletic scholarships. Best for athletes where PT/Chiro grad school GPA is the primary goal.'},
-    {key:'Junior College',label:'Junior College — 2-Year Transfer Pathway',cls:'tier-juco',intro:'Starting point not a destination. Santa Monica College → UCLA is the proven pipeline.'},
+    {key:'Power 5 (D1)',label:'Power 5 Conferences — Elite Division I',cls:'tier-p5',intro:'The top Division I soccer conferences, with the most MLS draft picks and the strongest competition.'},
+    {key:'High Major (D1)',label:'High-Major Conferences — Very Strong D1',cls:'tier-d1',intro:'Strong Division I conferences just below the power group, several of them on the West Coast.'},
+    {key:'Ivy League (D1)',label:'Ivy League — Academic Elite, No Athletic Scholarships',cls:'tier-ivy',intro:'No athletic scholarships, only need-based aid, and admission standards far above the athletic minimum.'},
+    {key:'Mid-Major (D1)',label:'Mid-Major D1 — Competitive Regional Programs',cls:'tier-d1',intro:'Division I competition in smaller, mostly regional conferences.'},
+    {key:'Division II',label:'Division II Conferences',cls:'tier-d2',intro:'Athletic scholarships are allowed but capped, so most players get a partial award.'},
+    {key:'NAIA',label:'NAIA',cls:'tier-naia',intro:'NAIA teams share a cap of 12 scholarship equivalencies, more than Division II, and there is no per-player cap, so a full scholarship is possible.'},
+    {key:'Division III',label:'Division III — No Athletic Scholarships',cls:'tier-juco',intro:'No athletic scholarships, only academic and need-based aid.'},
+    {key:'Junior College',label:'Junior College — 2-Year Transfer Pathway',cls:'tier-juco',intro:'Two-year colleges where players move on to four-year programs.'},
   ];
   let html='';
   tiers.forEach(t=>{
     const cfList=conferences.filter(c=>c.tier===t.key);
     if(!cfList.length)return;
     html+=`<div class="conf-tier"><div class="conf-tier-head" style="background:var(--surface2)"><span class="tier-label ${t.cls}">${t.key}</span><div><div style="font-size:13px;font-weight:700;color:var(--navy)">${t.label}</div><div style="font-size:12px;color:var(--muted);margin-top:2px">${t.intro}</div></div></div><div class="conf-cards">`;
-    cfList.forEach(c=>{
-      const guideChips=c.guideSchools.map(s=>`<span class="conf-school-chip in-guide">★ ${s}</span>`).join('');
-      const otherChips=(c.otherSchools||[]).slice(0,6).map(s=>`<span class="conf-school-chip">${s}</span>`).join('');
-      html+=`<div class="conf-card">
-        <div class="conf-card-head">
-          <div><div class="conf-name">${c.name}</div><div class="conf-abbr">${c.abbr}${c.founded?` · Founded ${c.founded}`:''}</div></div>
-          <div class="conf-prestige" style="background:var(--surface3);color:var(--muted);font-size:10px;max-width:120px;text-align:right;line-height:1.3">${c.prestige.split('—')[0].trim()}</div>
-        </div>
-        <div class="conf-body">
-          <div class="conf-stat-row">
-            <div class="conf-stat"><span class="csv">${c.soccerTeams}</span><span class="csl">Soccer Teams</span></div>
-            <div class="conf-stat"><span class="csv">${c.ncaaTitles}</span><span class="csl">NCAA Titles</span></div>
-            <div class="conf-stat"><span class="csv">${c.maxAid||'—'}</span><span class="csl">Max Aid</span></div>
-          </div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:5px">Schools In This Guide</div>
-          <div class="conf-schools">${guideChips}</div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:5px;margin-top:8px">Other Notable Programs</div>
-          <div class="conf-schools">${otherChips}${c.otherSchools&&c.otherSchools.length>6?`<span class="conf-school-chip">+${c.otherSchools.length-6} more</span>`:''}</div>
-          <div style="margin-top:.75rem"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hint);margin-bottom:4px">Pro Pipeline</div><div class="conf-desc">${c.mlsPipeline}</div></div>
-          <div style="margin-top:.75rem" class="conf-desc">${c.desc.slice(0,240)}${c.desc.length>240?'…':''}</div>
-          <div class="conf-olivier"><strong>Olivier fit:</strong> ${c.olivierNote.slice(0,200)}${c.olivierNote.length>200?'…':''}</div>
-        </div>
-      </div>`;
-    });
-    html+='</div></div>';
+    cfList.forEach(c=>{ html+=buildConfCard(c); });
+    html+='</div>';
+    const juco = cfList.find(c=>Array.isArray(c.group));
+    if (juco) {
+      html+=`<div id="juco-regions" style="${CONF_LABEL_CSS};margin:1.25rem 0 .6rem">Junior colleges in this guide, by region</div><div class="conf-cards">`;
+      jucoRegionGroups(confSchools(juco)).forEach(g=>{ html+=buildJucoRegionCard(g); });
+      html+='</div>';
+    }
+    html+='</div>';
   });
   container.innerHTML=html;
 }

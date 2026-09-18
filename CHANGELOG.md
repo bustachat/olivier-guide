@@ -6,6 +6,28 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.63 (2026-09-18) — Conferences tab rebuilt: live guide counts, verified Total Programs, junior colleges by region
+
+**Why:** the owner found the Conferences tab unreadable (the JUCO rankings row alone was 12,000 characters) and asked for Option C with changes: purely conference-based, no fit figures, no "Olivier fit" box, a Total Programs column beside Programs in Guide, and every count automatic.
+
+**How counts work now.** Each `conferences.json` card and `conf-prestige.json` row carries a `group`: the same key `resolveConfGroup()` gives a school's `conf` for the Explore filter chips (an array, `["njcaa","cccaa"]`, for the junior college card). The card's school list, its In Guide figure and the rankings table's Programs in Guide text are all derived from the school data, so adding, removing or moving a school needs no edit to either file. **Removed as stored fields:** `guideSchools`, `olivierNote` (conferences.json), `programsInGuide`, `programsInGuideWarning`, `relevance`, `confKey` (conf-prestige.json).
+
+**Total Programs** (`soccerTeams`, now a number with `soccerTeamsSource`), all checked 2026-09-18:
+- NCAA Division I, II and III conferences: NCAA member directory for men's soccer, 2026-27. ACC 15, Big Ten 11, Big East 12, AAC 9, Big West 7, Pac-12 7, Mountain West 6, Ivy 8, CAA 10, ASUN 9, WCC 9, America East 8, NEC 9, Summit 6, Patriot 10; SSC 11, LSC 12, CCAA 13, MEC 9, CACC 11; SCIAC 10. Big West, Pac-12 and Mountain West also match each conference's own 2026 standings.
+- NAIA, from each conference's 2026 standings page: SAC 10 (soonerathletic.org), Sun 9 (thesunconference.com), AMC 6 (amcsportsonline.com).
+- Junior colleges 336: NJCAA 2026-27 team lists (Division I 76, II 111, III 67; njcaa.org, VPN on) plus CCCAA 82 (cccaasports.org 2026 standings, 13 conferences). The CCCAA site froze the browser tab, so its standings page was read as raw HTML (allowed for standings pages, §15).
+- SEC 0 (no men's soccer).
+
+**Rankings table:** new Total Programs column; Programs in Guide reads "N schools — see card below" (links to the card), and the junior college row reads "93 schools across 17 NJCAA regions + Santa Monica (CCCAA) — see region cards below". "Relevance for Olivier" became "Summary", the first sentence of the card's description. America East, which had a card but no row, got a row. Five malformed rows (NEC, CACC, AMC, Summit, Patriot: no rank colour, broken division badge, listed below the junior colleges) were fixed and moved into their divisions; ranks renumbered 1–25. Scholarship wording normalised by division.
+
+**Cards:** stat row is Total Programs / In Guide / NCAA Titles / Max Aid; one short fixed description (no school counts, no results); school chips open that school's Details; "Olivier fit" box removed; truncation removed. Tier intros rewritten short. The junior college card is followed by one card per NJCAA region plus CCCAA (states, In Guide, division split, Elite count, school chips). Junior college card: "Founded Various" removed, and its unsupported "most proven in California" pipeline claim replaced.
+
+**Checks:** new `GROUP` check in `validate_consistency.js` (every school's conference has exactly one card; every rankings row matches a card; Total Programs is a sourced number; the removed stored fields and a renderer reading them cannot return). `CONF-COUNT` now fails any typed school count in a card description. Two negtest cases added (26 total) and the CONF-COUNT case rewritten. `check_new_school_coverage.py` and CLAUDE.md Change Types 1, 8 and 10, §5 schemas, Phase 3 checklists and §16 updated to match.
+
+**Verified:** `validate_consistency.js` Issues: 0; `validate_schools.py` PASS; `check_no_jargon.py` PASS; local browser (Chrome, localhost): 25 rankings rows with the expected counts and totals; 26 conference cards plus 18 region cards; links scroll to the right card; chips open Details; no "undefined"/"NaN"; Explore still 174 cards, Dashboard map 174 dots, no console errors.
+
+---
+
 ### v45.62 (2026-09-18) — Conference moves for the 2026 men's soccer season; WAC removed; SEC card corrected
 
 **Why:** building a "Total Programs" column for the Conferences tab needed official program counts, and the NCAA's member directory for men's soccer (`web3.ncaa.org/directory/api/directory/memberList?type=12&division={I,II,III}&sportCode=MSO`, academic year 2027 = 2026-27) showed five guide schools filed under the wrong conference. Owner ruling: fix the conferences first, as their own release, and leave Division I schools missing from the guide as visible gaps.

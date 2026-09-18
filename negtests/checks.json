@@ -105,10 +105,10 @@
     "expect": "DIV-LABEL"
   },
   {
-    "name": "CONF-COUNT / conference card quotes a stale school count",
+    "name": "CONF-COUNT / conference card text states a typed guide-school count",
     "file": "data/conferences.json",
-    "find": "13 guide schools",
-    "replace": "14 guide schools",
+    "find": "\"desc\": \"The deepest men's soccer conference in the country, with long records",
+    "replace": "\"desc\": \"All 13 guide schools here. The deepest men's soccer conference in the country, with long records",
     "expect": "CONF-COUNT"
   },
   {
@@ -166,5 +166,19 @@
     "find": "\"fitOlivier\": 49,\r\n    \"lensScores\": {\r\n      \"overall\": 49,\r\n      \"soccer\": 50,\r\n      \"academic\": 63,",
     "replace": "\"fitOlivier\": 50,\r\n    \"lensScores\": {\r\n      \"overall\": 49,\r\n      \"soccer\": 50,\r\n      \"academic\": 63,",
     "expect": "FIT"
+  },
+  {
+    "name": "GROUP / a conference card loses its group key",
+    "file": "data/conferences.json",
+    "find": "\"group\": \"acc\",",
+    "replace": "\"group\": \"acc-typo\",",
+    "expect": "GROUP"
+  },
+  {
+    "name": "GROUP / renderer reads a stored guide-school list again",
+    "file": "js/app.js",
+    "find": "function confSchools(c){",
+    "replace": "function confSchools(c){ if (c.guideSchools) return c.guideSchools;",
+    "expect": "GROUP"
   }
 ]

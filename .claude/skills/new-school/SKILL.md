@@ -1,6 +1,6 @@
 ---
 name: new-school
-description: Sequence CLAUDE.md's Change Type 1 (Section 3a) workflow for adding a new school to this recruitment guide — research (Section 7 Phase 1, subsections 1A-1J), the file-by-file edit checklist (Phase 3, subsections 3A-3F, across 7 files plus CLAUDE.md's own reference table), and two bundled scripts that catch the specific cross-file gaps this repo's own change history keeps citing (a missed duplicate check, a school left in guideSchools/otherSchools limbo, a missing conf-prestige/pipeline/CLAUDE.md-table mention). Use this whenever the user asks to "add a school", "add [school name] to the guide", or wants to research and add a new college/JUCO to olivier-guide — even before they've picked a division or conference, since Phase 1A (confirm it isn't already in the guide) has to happen first.
+description: Sequence CLAUDE.md's Change Type 1 (Section 3a) workflow for adding a new school to this recruitment guide — research (Section 7 Phase 1, subsections 1A-1J), the file-by-file edit checklist (Phase 3, subsections 3A-3F, across 7 files plus CLAUDE.md's own reference table), and two bundled scripts that catch the specific cross-file gaps this repo's own change history keeps citing (a missed duplicate check, a school still listed as an "other notable program", a missing pipeline/CLAUDE.md-table mention). Use this whenever the user asks to "add a school", "add [school name] to the guide", or wants to research and add a new college/JUCO to olivier-guide — even before they've picked a division or conference, since Phase 1A (confirm it isn't already in the guide) has to happen first.
 ---
 
 # New School — olivier-guide Change Type 1
@@ -67,12 +67,14 @@ entry (3B).
 python .claude/skills/new-school/scripts/check_new_school_coverage.py --id <school_id>
 ```
 
-This checks four things neither existing validator checks at all:
-`conferences.json`'s `guideSchools[]` (and that the school isn't *also*
-still sitting in some conference's `otherSchools[]` — the exact "most
-frequently missed step" CLAUDE.md names), `conf-prestige.json`'s
-`programsInGuide` string, `data/pipeline.json` (only checked when the school
-actually has titles/MLS picks), and CLAUDE.md's own reference table.
+This checks three things neither existing validator checks at all: that
+the school isn't still sitting in some conference card's `otherSchools[]`,
+`data/pipeline.json` (only checked when the school actually has titles/MLS
+picks), and CLAUDE.md's own reference table. Since v45.63 the conference
+card's guide-school list and the rankings table's "Programs in Guide" are
+derived live from the school's `conf`, so there is no `guideSchools[]` or
+`programsInGuide` to edit; `validate_consistency.js`'s GROUP check fails if
+the school's conference has no card.
 
 **This script does best-effort substring/word matching, not exact
 structural checks** — `conferences.json` and `conf-prestige.json` don't key

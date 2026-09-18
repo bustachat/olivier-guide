@@ -11,12 +11,12 @@ Run `qa-suite` (or `python validate_schools.py && node validate_consistency.js`
 directly) for all of that — this script deliberately does not repeat it.
 
 What's left, and genuinely unchecked anywhere else in this repo:
-  - conferences.json guideSchools[] — is the school actually listed under some
-    conference card? Is it ALSO still sitting in an otherSchools[] somewhere
-    (the exact "most frequently missed step" CLAUDE.md names for this change
-    type)?
-  - conf-prestige.json programsInGuide — does any conference row's comma-
-    separated string mention this school?
+  - conferences.json otherSchools[] — is the school still sitting in some
+    card's "Other Notable Programs" list after being added to the guide?
+    (Since v45.63 the card's own guide-school list and the rankings table's
+    "Programs in Guide" are DERIVED live from the school's `conf`, so there is
+    no guideSchools[] or programsInGuide to update; validate_consistency.js's
+    GROUP check fails if the school's conference has no card.)
   - data/pipeline.json — if the school has titles[] or mlsPicks5yr > 0, does
     it appear in ncaaD1[]/ncaaD2[]/mlsDraft[]?
   - CLAUDE.md's own "School -> File Reference Table" — is there a row for
@@ -147,27 +147,14 @@ def any_contains(haystacks, tokens):
     return False, None
 
 
-def check_guide_schools(root, school, names):
+def check_other_schools(root, names):
     conf = load_json(os.path.join(root, "data", "conferences.json"))
-    in_guide, in_other = [], []
+    in_other = []
     for c in conf:
-        hit, matched = any_contains(c.get("guideSchools", []), names)
-        if hit:
-            in_guide.append((c.get("id") or c.get("name"), matched))
         hit, matched = any_contains(c.get("otherSchools", []), names)
         if hit:
             in_other.append((c.get("id") or c.get("name"), matched))
-    return in_guide, in_other
-
-
-def check_prestige(root, names):
-    prestige = load_json(os.path.join(root, "data", "conf-prestige.json"))
-    hits = []
-    for row in prestige:
-        hit, matched = any_contains([row.get("programsInGuide", "")], names)
-        if hit:
-            hits.append((row.get("name") or row.get("fullName"), matched))
-    return hits
+    return in_other
 
 
 def check_pipeline(root, names):
@@ -225,29 +212,15 @@ def main():
 
     ok = True
 
-    print("conferences.json guideSchools[] / otherSchools[]:")
-    in_guide, in_other = check_guide_schools(root, school, names)
-    if in_guide:
-        for conf_id, matched in in_guide:
-            print(f"  ok    listed under '{conf_id}' guideSchools[] as {matched!r}")
-    else:
-        print("  MISSING  not found in any conference's guideSchools[] — "
-              "CLAUDE.md Section 3a Change Type 1, step 5")
-        ok = False
+    print("conferences.json otherSchools[] (card lists are derived; the GROUP check covers the card):")
+    in_other = check_other_schools(root, names)
     if in_other:
         for conf_id, matched in in_other:
             print(f"  MISSING  still listed under '{conf_id}' otherSchools[] as {matched!r} "
-                  f"— should have been removed (\"most frequently missed step\")")
+                  f"— remove it now that the school is in the guide")
         ok = False
-
-    print("\nconf-prestige.json programsInGuide:")
-    prestige_hits = check_prestige(root, names)
-    if prestige_hits:
-        for conf_name, matched in prestige_hits:
-            print(f"  ok    mentioned in '{conf_name}' programsInGuide as {matched!r}")
     else:
-        print("  MISSING  not found in any conference row's programsInGuide string")
-        ok = False
+        print("  ok    not listed as an 'other notable program' anywhere")
 
     titles = school.get("titles") or []
     mls_picks = ((school.get("proPlayers") or {}).get("mlsPicks5yr")) or 0

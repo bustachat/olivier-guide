@@ -9,7 +9,7 @@ A multi-file, multi-athlete web application hosted at **bustachat.github.io/oliv
 
 - Athlete: Olivier — Australian central midfielder, ACU BESS degree, targeting DPT/Chiropractic
 - Owner: Multi Skilled Contractors (Platform Sports Management)
-- Current version: **v45.62 (2026-09-18)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
+- Current version: **v45.63 (2026-09-18)** — always verify with `git log --oneline -1` and `athletes/olivier.json` guideVersion; treat any hardcoded version in prose as a hint, not truth (this line itself sat stale at v42.18 for 13 versions until v44.31, which is part of why §6 was cut back in v44.54 — a section nobody finishes reading is a section nobody updates)
 - Strategic intent: platform will be onsold to other agencies. Architecture must stay clean.
 
 Stack: Vanilla HTML/CSS/JS. No framework. No build step. GitHub Pages hosting.
@@ -283,10 +283,9 @@ A change is NOT complete until every item in the impact map for that change type
 | `data/[conf].json` — full school object | All required fields, confKey, acuUnits[16], lensScores[6], minutesOutlook, fitOlivier |
 | `CLAUDE.md` — School → File Reference Table | Add a row for the new school — mandatory, keeps the lookup table accurate |
 | `data/coaches.json` — add coach entry | Full-profile school must have a coaches.json entry. Re-rank ALL coaches after adding. |
-| `data/conferences.json` — guideSchools[] | School chip will not appear in Conferences tab without this |
-| `data/conferences.json` — desc and olivierNote | Update the text to reflect the new school count and program highlights — easy to miss |
+| `data/conferences.json` — card `group` | The card's school list, In Guide count and the rankings table's "Programs in Guide" are derived live from the school's `conf` via the card's `group` (v45.63) — no edit. **A new conference needs a new card with a `group` key and a sourced `soccerTeams` total**, or the GROUP check fails and the school is missing from the tab. |
 | `data/conferences.json` — otherSchools[] | Remove school from otherSchools[] if it was previously listed there |
-| `data/conf-prestige.json` — programsInGuide | Update comma-separated string and relevance text |
+| `data/conf-prestige.json` | Nothing per school since v45.63. A NEW conference needs a row with the same `group` as its card. |
 | `data/pipeline.json` | Only if school has NCAA titles or MLS picks — add to relevant table |
 | `js/app.js — DOMAINS` | Favicon in modal header breaks without this |
 | `js/app.js — SITE_URLS` | Visit Site link in modal breaks without this |
@@ -302,7 +301,7 @@ A change is NOT complete until every item in the impact map for that change type
 - Minutes Outlook — card present (even if available: false)
 - Pro Pipeline — only if titles/MLS picks added to pipeline.json
 - ACU Alignment — row present (non-JUCO full-profile only)
-- Conferences — school chip visible in guideSchools[], prestige table updated
+- Conferences — school chip visible on its conference card, In Guide count and rankings row updated (both automatic)
 - Coaches & Staff — coach card in Rankings, profile in Profiles tab, entry in Outreach tab
 - Financial Model — school in selector, appears in comparison bars
 
@@ -437,8 +436,8 @@ Captures whether a school's midfield spots are typically filled by true incoming
 | 2 | `data/[conf].json` — validate JSON | `python -m json.tool data/[conf].json` — do not proceed if invalid |
 | 3 | `data/coaches.json` — add coach entry | Re-rank ALL coaches after every batch. |
 | 4 | `js/app.js` — DOMAINS, SITE_URLS, SOCIAL | Add entry for each upgraded school. Run `node --check js/app.js` after. |
-| 5 | `data/conferences.json` — guideSchools[] | Move school from `otherSchools[]` into `guideSchools[]`. |
-| 6 | `data/conferences.json` — desc and olivierNote | **Always update these.** Change the school count and add new highlights. Most frequently missed step. |
+| 5 | `data/conferences.json` — otherSchools[] | Remove the school from `otherSchools[]` if listed. Its guide listing is derived live from the school's `conf` via the card's `group` (v45.63) — no edit. |
+| 6 | `data/conferences.json` — desc | Only if the conference description itself is now wrong. **Never write a school count into `desc`** — the card shows the live figure, and the CONF-COUNT check fails a typed one. |
 | 7 | `minutesOutlook` — research and populate roster data | Minutes Outlook is 20% of fitOlivier. Use Claude for Chrome MCP on the official roster page (see §15). Only set `{ "available": false }` if roster cannot be obtained — document why. |
 | 8 | Validate all modified files | `python validate_schools.py` then `python -m json.tool` on each JSON, `node --check` on JS |
 | 9 | Commit with version bump | `vNN.N — [Conference] batch: X listed schools upgraded to full profile` |
@@ -457,13 +456,13 @@ Captures whether a school's midfield spots are typically filled by true incoming
 All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EXSC224, EXSC321, EXSC204, EXSC216, EXSC199, EXSC296, EXSC187, EXSC230, EXSC122, EXSC398`
 
 **Also update after EVERY conference batch:**
-- `data/conf-prestige.json` — `programsInGuide` string and `relevance` text. This is a SEPARATE file and is NOT updated automatically.
+- Nothing in `data/conf-prestige.json` — since v45.63 its "Programs in Guide" and "Summary" columns are derived.
 
 **Tabs to verify after upgrading a batch:**
 - Explore Schools — modal opens with all 9 tabs populated
 - Coaches & Staff → Rankings — new coaches present with correct badge colour
-- Conferences — conference card shows updated guideSchools count and desc/olivierNote
-- Conferences → Rankings table — programsInGuide column shows new school count
+- Conferences — conference card lists the upgraded schools (automatic)
+- Conferences → Rankings table — Programs in Guide shows the new count (automatic)
 - Financial Model — upgraded schools now appear
 - ACU Alignment — rows present for all upgraded schools (non-JUCO only)
 
@@ -502,9 +501,7 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 | `js/app.js — DOMAINS` | Remove entry — stale entry is harmless but creates noise |
 | `js/app.js — SITE_URLS` | Remove entry |
 | `js/app.js — SOCIAL` | Remove entry |
-| `data/conferences.json` — guideSchools[] | Remove school display name from array |
-| `data/conferences.json` — desc and olivierNote | Update school count — most frequently missed step |
-| `data/conf-prestige.json` — programsInGuide | Remove school from comma-separated string |
+| `data/conferences.json` | Nothing per school since v45.63 — the card's list and count are derived. |
 | `data/pipeline.json` | Only if school had entries — remove from relevant table |
 | `athletes/olivier.json` — shortlist[] | Remove if present — orphaned shortlist entry causes display error |
 | `athletes/olivier.json` — outreach[] | Remove if present |
@@ -513,7 +510,7 @@ All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EX
 **Tabs to verify after removing:**
 - Explore Schools — school card gone, no ghost card, total count is N-1
 - Dashboard — map dot gone
-- Conferences — school chip gone from guideSchools, count updated in desc/olivierNote
+- Conferences — school chip gone from its card, counts updated (automatic)
 - Coaches & Staff → Rankings — coach gone, all remaining coaches renumbered correctly
 - ACU Alignment — row gone
 - Minutes Outlook — card gone
@@ -822,9 +819,9 @@ maxAid,   ← added v44.50. The conference card's "Max Aid" stat tile, REQUIRED 
              "equivalent", "Athletic") for 10 of 25 conferences. validate_consistency.js's
              MAXAID check enforces presence + length AND greps js/app.js to fail if the
              old `scholarships.split()` ever returns.
-guideSchools[] — display names (e.g. "Virginia (UVA)") NOT school JSON ids,
+group,   ← v45.63. The resolveConfGroup() key this card covers (an ARRAY for the JUCO card: ["njcaa","cccaa"]). The card's school list, In Guide count and the rankings row's Programs in Guide are DERIVED from `unis` by this key. soccerTeams = verified TOTAL men's programs in the conference, soccerTeamsSource = where it came from. GROUP check enforces all of this and fails if guideSchools/olivierNote reappear.
 otherSchools[],
-desc, olivierNote, color[]
+desc (short, fixed, no school counts), color[]
 ```
 **`scholarships` is free prose and `maxAid` is the display token — never re-derive one from the other.** `scholarships` is the long, nuanced sentence (it carries e.g. v44.49's House-settlement qualifier); `maxAid` is the compact number on the card. Editing the prose must never be able to change a rendered figure, which is exactly the coupling v44.50 removed. Note `conferences.json.scholarships` currently has **no renderer consumer at all** — only `conf-prestige.json.scholarships` is displayed (the prestige table's Scholarships column). It is stored reference data; if you want it on the card, add a labelled block like the existing "Pro Pipeline" one rather than squeezing it into the stat tile.
 **tier field must exactly match renderConferences() bucket keys:** `"Power 5 (D1)"`, `"High Major (D1)"`, `"Ivy League (D1)"`, `"Mid-Major (D1)"`, `"Division II"`, `"NAIA"`, `"Division III"`, `"Junior College"`
@@ -832,10 +829,9 @@ desc, olivierNote, color[]
 ### conf-prestige.json — required fields per entry
 ```
 rank, rankClass, name, fullName, div, divBadge,
-programsInGuide (comma-separated display names),
-programsInGuideWarning (bool),
+group (same key as its conferences.json card — links the row to the card's live count, total and summary),
 mlsPipeline, mlsPipelineWarning (bool),
-scholarships, relevance
+scholarships   ← no programsInGuide / relevance since v45.63 (derived: Programs in Guide from the card's group, Summary = the card's first desc sentence)
 ```
 
 ### pipeline.json — structure
@@ -1304,7 +1300,7 @@ Bands align with the existing `rankClass` cutoffs (elite ≥ 80, strong 65–79,
 
 ## 6. Current State & Open Items
 
-**Current version: v45.62 (2026-09-18).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
+**Current version: v45.63 (2026-09-18).** Always confirm against `git log --oneline -1` and `guideVersion` in `athletes/olivier.json` — do not trust this line alone. It has sat stale for as many as 13 versions at a time, which is the clearest evidence available that a bloated section stops being read.
 
 > **v44.62–v44.63 incident, recorded here rather than as a version narrative because it's a standing risk, not a one-off fact:** on 2026-08-07 a session working from a stale local checkout (16 days behind `origin/main`) committed a small fix on top of the old base, correctly `git pull`-merged the real history back in, then **reset past that merge and force-pushed the stale-based commit**, silently dropping 65 real commits (the full COA cost-of-attendance campaign, the 2026-27 roster refresh, several validator/UI fixes) from `origin/main` for about a day. Recovered by rebuilding from the still-intact merge commit and re-applying v44.63's Financial Model UX work on top. **Before any commit, confirm the local branch isn't behind `origin/main`** (`git fetch && git status`) — this is exactly how it happened, and nothing in the workflow currently checks for it.
 
@@ -1895,10 +1891,9 @@ Read coaches.json in full before editing.
 Read conferences.json in full before editing.
 
 - [ ] Conference card exists for this conference
-- [ ] School added to `guideSchools[]` — use display name (e.g. "Mercyhurst"), NOT school JSON id
+- [ ] Nothing to add for the school itself — the card lists it automatically from its `conf` (v45.63). A new conference needs a card with `group`, `soccerTeams` and `soccerTeamsSource`
 - [ ] School removed from `otherSchools[]` if previously listed
 - [ ] `desc` updated — new school count and highlights; verify text is actually new
-- [ ] `olivierNote` updated — update the literal school count number and add school callout
 - [ ] `tier` exactly matches renderer bucket keys
 - [ ] **A NEW conference entry needs `maxAid`** (added v44.50) — short display token, ≤12 chars, for the card's Max Aid tile. Do NOT expect it to be derived from `scholarships`; the MAXAID check fails a conference without it.
 - [ ] `python -m json.tool data/conferences.json`
@@ -1909,8 +1904,7 @@ Read conf-prestige.json in full before editing.
 
 - [ ] Entry exists for this conference
 - [ ] `div` and `divBadge` correct
-- [ ] `programsInGuide` — comma-separated string updated to include new school name
-- [ ] `relevance` — updated if new school is notable enough to call out
+- [ ] A new conference needs a row here with the same `group` as its card (Programs in Guide and Summary are derived)
 - [ ] `python -m json.tool data/conf-prestige.json`
 
 ---
@@ -1922,9 +1916,9 @@ Read conf-prestige.json in full before editing.
 - [ ] Read coaches.json → remove coach entry → re-rank ALL remaining coaches
 - [ ] `python -m json.tool data/coaches.json`
 - [ ] Read app.js → remove from DOMAINS, SITE_URLS, SOCIAL → `node --check js/app.js`
-- [ ] Read conferences.json → remove from guideSchools[] → update desc and olivierNote counts
+- [ ] conferences.json → nothing to remove (derived); drop the conference's card only if no guide school remains AND the owner wants it gone
 - [ ] `python -m json.tool data/conferences.json`
-- [ ] Read conf-prestige.json → remove from programsInGuide string → update relevance if needed
+- [ ] conf-prestige.json → nothing to remove (derived)
 - [ ] `python -m json.tool data/conf-prestige.json`
 - [ ] Read pipeline.json → remove any entries for this school (if applicable) → `python -m json.tool data/pipeline.json`
 - [ ] Read athletes/olivier.json → remove from shortlist[] and outreach[] if present → `python -m json.tool athletes/olivier.json`
@@ -2020,7 +2014,7 @@ Open `http://localhost:8000` (or the serve port).
 - [ ] Map dot on correct US state — Dashboard tab
 - [ ] Coach in Rankings with correct badge colour (rk-solid = emerald)
 - [ ] All coaches numbered sequentially — no duplicate ranks
-- [ ] Conference card visible, school chip present, count matches updated desc/olivierNote
+- [ ] Conference card visible, school chip present, In Guide count and rankings row correct
 - [ ] Minutes Outlook tab — card present (even if available:false)
 - [ ] ACU Alignment tab — row present (non-JUCO full-profile only)
 - [ ] Financial Model — school in selector, appears in comparison bars
@@ -2190,7 +2184,7 @@ git push
 All six built and tested against real repo data v45.04 (2026-08-19) — see that CHANGELOG entry for the real bugs each one's testing surfaced. Each `SKILL.md` sequences the matching Change Type from §3a and points at CLAUDE.md by section rather than repeating it, so these don't go stale the way this section itself did (it named these three as if they already existed for who knows how many versions before anyone checked).
 
 - `.claude/skills/qa-suite/SKILL.md` — bundles Phase 4's validation sequence (validate_schools.py, validate_consistency.js, json.tool/node --check on changed files, conditional negtest.py) into one command
-- `.claude/skills/new-school/SKILL.md` — Change Type 1 workflow + a cross-file coverage check (guideSchools/otherSchools, conf-prestige.json, pipeline.json, this file's own School → File Reference Table) that neither validator above covers
+- `.claude/skills/new-school/SKILL.md` — Change Type 1 workflow + a cross-file coverage check (otherSchools, pipeline.json, this file's own School → File Reference Table) that neither validator above covers
 - `.claude/skills/add-coach/SKILL.md` — Change Type 2 workflow + a rank-order/score consistency check and a bio-hygiene sweep (stale embedded emails, hardcoded athlete names — the v44.35/v44.28 bug classes)
 - `.claude/skills/roster-refresh/SKILL.md` — Change Type 3 workflow. `apply_roster_refresh.py` turned out to be a ~1300-line hardcoded campaign log, not a reusable single-school tool — this skill's calculator imports its formula functions directly rather than re-deriving them, and adds arithmetic, JUCO-trajectory-formula, and internal-jargon checks that don't exist anywhere else. Also captures unexpected roster departures to `roster_moves_queue.json` for the next skill, and (since v45.05) archives the full roster — every position, timestamped — to `data/rosters/` via the patch's optional `full_roster` key; see §5's "Roster Snapshot Archive."
 - `.claude/skills/transfer-tracking/SKILL.md` — run after a refresh wave (not per-school): a cross-school duplicate-name scan plus a processor for the departure queue above, feeding §5b's `nextLevelOutput` research
@@ -2243,7 +2237,7 @@ The commit protocol is defined in §7 Phases 4–6 and Phase 8. Follow those pha
 | Card visible in Explore | School appears under correct conference section |
 | confKey correct | Details button present on card |
 | Division correct | Not appearing under wrong division section |
-| Conference tab | Conference card visible with school in guideSchools |
+| Conference tab | Conference card visible with the school's chip |
 | Coach Rankings | New coach visible with correct badge |
 | Coach re-ranked | All coaches renumbered sequentially |
 | Map dot | Dot on correct US state on Dashboard |
@@ -2598,7 +2592,7 @@ Rosters are often unpublished or showing prior-year data between May and August 
 | 1 | Internal wording rendered to visitors ("this session", "this batch/campaign", "Verified v38", "Tier-1", field names) | FAIL patterns across every rendered data string **and** the `js/app.js` intro/desc/label strings **and** the Glossary | `check_no_jargon.py` |
 | 2 | "Not refreshed yet" caveats outlived the refresh (16 JUCOs) | FAIL pattern; delete the caveat in the same edit as the refresh | `check_no_jargon.py`, roster-refresh SKILL.md step 3 |
 | 3 | Prose quoted older rosters after a refresh (~55 texts) | `ROSTER-PROSE` ("N of M midfielders" / "N-player midfield" must use `mf_total`) | `validate_consistency.js` |
-| 4 | Conference cards quoted stale school counts ("all 14 Big Ten") | `CONF-COUNT` (desc/olivierNote counts must match guideSchools) + existing `PROSE` for section intros | `validate_consistency.js` |
+| 4 | Conference cards quoted stale school counts ("all 14 Big Ten") | Counts and lists are now DERIVED (v45.63); `CONF-COUNT` fails any typed count in a card's desc, `GROUP` fails a school with no card or a stored list coming back; `PROSE` covers section intros | `validate_consistency.js` |
 | 5 | Old ballpark costs in text ("~$9k", "low ~$38k") | `COST-PROSE` (approximate yearly cost within 15% of `costNum`) | `validate_consistency.js` |
 | 6 | School texts named departed/interim coaches after `coaches.json` was fixed | Old-name sweep after any coach change | `check_coach_rename.py`, add-coach SKILL.md step 4b |
 | 7 | Division labels wrong or inconsistent (National Park DI, four DIII coaches "NJCAA DI") | `NJCAA-DIV` (field ↔ fundingPathway) + `DIV-LABEL` (school and coach conf wording ↔ njcaaDivision). **Truth still needs the region's own standings page** (§6 Region 15 incident) | `validate_consistency.js` |

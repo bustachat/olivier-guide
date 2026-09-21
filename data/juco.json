@@ -1408,10 +1408,10 @@
       }
     },
     "acRank": "NJCAA Level",
-    "kinRank": "No Exercise Science or Kinesiology program exists at Indian Hills — a general Associate of Science transfer degree only (Human Anatomy and Biology available as science electives)",
-    "degreeTitle": "Associate of Science, A.S. (general transfer degree — no dedicated Exercise Science, Kinesiology, or Physical Education program)",
-    "acuAlign": 2,
-    "acuAlignNote": "Indian Hills does not offer an Exercise Science or Kinesiology program — confirmed via the college's own official Program Finder (96 programs listed, zero matches for exercise, kinesiology, sports, or fitness) and its Associate of Science general-education requirements. The A.S. transfer degree lets a student choose Human Anatomy (with lab) and General Biology as science electives, which cover ACU's Human Anatomy & Physiology and Biology Foundations prerequisites — but there is no equivalent to Exercise Physiology or Kinesiology & Human Movement outside Indian Hills' separate Physical Therapist Assistant program (A.A.S.), a selective 21-month clinical track with its own admissions testing, clinical observation hours, and background checks — not a realistic fit alongside two years of full-time JUCO soccer. It is rated 2 of 16 for ACU alignment, reflecting only the confirmed Human Anatomy and Biology elective coverage. WES evaluation required for any transferred credit; confirm specific course equivalences with an Indian Hills academic advisor.",
+    "kinRank": "Associate degree — transfer major for Iowa, Iowa State and Northern Iowa, built on a pre-health science foundation (Ottumwa campus)",
+    "degreeTitle": "A.A. in Exercise Science & Kinesiology (2-year transfer degree)",
+    "acuAlign": 3,
+    "acuAlignNote": "Indian Hills' Exercise Science and Kinesiology A.A. (Ottumwa campus, 64 credits) is a transfer major designed for students moving on to the University of Iowa, Iowa State or Northern Iowa, and it is aimed at pre-physical therapy, athletic training and pre-physician assistant pathways. Three of ACU's 16 units have a clear match: Human Anatomy with lab (BIO 175/176) covers Anatomical Foundations (ANAT100); the General Biology sequence (BIO 120, 121 and 122) covers Human Biology 1 (BIOL125); and Biomechanics for Exercise Science (PET 231) covers Mechanical Bases of Exercise (EXSC224). The plan also includes Human Physiology with lab, Introduction to Nutrition, Wellness Education and Statistics, but it has no required course in exercise physiology, exercise prescription, resistance training, sport psychology or research methods, so those ACU units are not credited. Indian Hills also offers a separate Physical Therapist Assistant A.A.S., which is a selective career program rather than a transfer degree. WES evaluation required for any transferred credit; confirm specific course equivalences with an Indian Hills academic advisor.",
     "soccerLevel": "JUCO — NJCAA Division I (2025 National Champions)",
     "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
@@ -1466,7 +1466,7 @@
     "lensScores": {
       "overall": 43,
       "soccer": 43,
-      "academic": 26,
+      "academic": 31,
       "minutes": 55,
       "lifestyle": 0,
       "value": 55
@@ -1543,7 +1543,7 @@
       },
       {
         "unit": "EXSC224",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC321",

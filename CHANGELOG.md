@@ -6,6 +6,23 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.66 (2026-09-21) — Fix: reverses v45.15 — Indian Hills' Exercise Science and Kinesiology A.A. is a real program
+
+**Why:** the owner pasted the college's own catalog entry, "Exercise Science and Kinesiology, A.A" (Ottumwa campus, 64 credits; `https://ihcc.catalog.acalog.com/preview_program.php?catoid=71&poid=10172`), and asked whether it was the program the guide had listed. It was. The v24.1 degree name was correct all along, and v45.15 wrongly replaced it with "no such program exists" after a Program Finder search returned no match. The v45.15 entry below and CLAUDE.md both said "fabricated"; that was false.
+
+**What changed (`data/juco.json`, `indian_hills` only — Change Type 9):**
+- `degreeTitle` restored to "A.A. in Exercise Science & Kinesiology (2-year transfer degree)". `kinRank` and `acuAlignNote` rewritten from the catalog entry: a transfer major for the University of Iowa, Iowa State and Northern Iowa, aimed at pre-physical therapy, athletic training and pre-physician assistant pathways.
+- ACU mapping redone against the 16-unit rubric using the catalog's full 64-credit course list. Credited: `ANAT100` ← BIO 175/176 Human Anatomy + lab; `BIOL125` ← BIO 120/121/122 General Biology; `EXSC224` ← PET 231 Biomechanics for Exercise Science. Not credited: Human Physiology (BIO 178/179) is general physiology, not exercise physiology; Nutrition, Wellness Education and Statistics have no matching unit; no required course covers exercise physiology, exercise prescription, resistance training, sport psychology or research methods. `acuAlign` 2 → 3. (The original v24.1 value was 4 because it credited `EXSC225` Exercise Physiology, which the catalog does not support, so neither earlier number was right.)
+- `lensScores.academic` 26 → 31 by `(acuAlign/16 × 0.85 + 0.15) × 100`. `fitOlivier`, `lensScores.overall` and `value` are untouched and Fit stays 43, since ACU alignment left the Fit Score in v37.1. The separate Physical Therapist Assistant A.A.S. finding from v45.15 stands (a selective career program, not a transfer degree).
+
+**Verified:** `json.tool` passes; `validate_schools.py` PASS (22 warnings, none new); `validate_consistency.js` Issues: 0; `check_no_jargon.py` PASS. Only 6 lines of `juco.json` changed and its CRLF line endings are intact. In a local browser (port 8787) the Details modal shows the official title, the new blurb and note, "3/16" for ACU units and Fit 43%, with no "undefined" or "NaN"; the console shows only failed favicon fetches (DNS, 404 and certificate errors from the logo fallback chain), no script errors.
+
+**Not verified, and still open:** I did not open the catalog page myself; the source for the new text is the owner's read of it plus the URL above. Why the Program Finder search missed the program was not established: its list renders dynamically, and a quick probe (search box and category filters) returned no list either way, so it was inconclusive. **The other 10 "full fabrication" findings from the v45.15–v45.28 audit rest on the same kind of absence check and have not been re-verified against each school's own catalog** (logged in CLAUDE.md §6F). Tallies corrected there: full fabrications 11 → 10, minor corrections 15 → 16.
+
+**Files:** `data/juco.json` (`indian_hills`: `degreeTitle`, `kinRank`, `acuAlign`, `acuAlignNote`, `acuUnits[EXSC224]`, `lensScores.academic`), `CLAUDE.md` (version lines, §6F origin note, tally table and final tally, methodology caution + open item), `athletes/olivier.json` (`guideVersion` v45.65 → v45.66).
+
+---
+
 ### v45.65 (2026-09-18) — Conferences table: "Rank by" toggle for MLS picks
 
 **Why:** owner asked to rank the table by the official conference ranking with a toggle for MLS picks. No official cross-division conference ranking exists: NCAA.com publishes a team RPI (final 2025 list, through Dec. 15), not a conference ranking, and the NAIA and junior college associations publish nothing comparable. Offered an average-RPI ranking; **owner chose to keep the current hand-set order** as the default.

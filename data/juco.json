@@ -1121,8 +1121,8 @@
     "acRank": "NJCAA Level",
     "kinRank": "Associate degree only — transfer prerequisite pathway",
     "degreeTitle": "A.S. in Exercise Science — School of Allied Health Professions",
-    "acuAlign": 5,
-    "acuAlignNote": "Monroe's A.S. in Exercise Science (School of Allied Health Professions, 62 credits) covers ACU prerequisites directly: SC-114/116 Human Anatomy & Physiology I & II map to EXSC142; EX-200 Principles of Kinesiology maps to EXSC120 (Human Movement); EX-250 Exercise Programming covers Exercise Physiology content (EXSC126); EX-101 Introduction to Exercise Science is also covered. Also includes EX-110 Foundations of Personal Fitness, EX-210 Prevention & Care of Athletic Injuries, and SC-107 Physical Conditioning & Nutrition. WES evaluation required — confirm course equivalences with Monroe academic advisor before relying on this count.",
+    "acuAlign": 6,
+    "acuAlignNote": "Monroe University's A.S. in Exercise Science (School of Allied Health Professions, 62 credits) covers several ACU units directly, re-checked against the program's own course list: SC-114/116 Human Anatomy & Physiology I & II map to Anatomical Foundations; EX-200 Principles of Kinesiology maps to Mechanical Bases of Exercise; EX-250 Exercise Programming covers Exercise Physiology content; and LA-227 Sports Psychology is a required course that directly covers the Psychology of Sport unit. EX-290 Exercise Science Practicum is a required practicum that provides the Professional Experience component. Also includes EX-101 Introduction to Exercise Science, EX-110 Foundations of Personal Fitness and Training, EX-210 Prevention and Care of Athletic Injuries, and SC-107 Physical Conditioning and Nutrition for Athletes. WES evaluation required — confirm course equivalences with a Monroe academic advisor before relying on this count.",
     "soccerLevel": "JUCO — NJCAA Division I (3× National Champions)",
     "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic",
@@ -1176,7 +1176,7 @@
     "lensScores": {
       "overall": 57,
       "soccer": 52,
-      "academic": 42,
+      "academic": 47,
       "minutes": 66,
       "lifestyle": 50,
       "value": 47
@@ -1241,7 +1241,7 @@
       },
       {
         "unit": "",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC249",
@@ -1257,11 +1257,11 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC388/EXSC389",
-        "covered": false
+        "covered": true
       }
     ],
     "minutesOutlook": {
@@ -17940,8 +17940,8 @@
     "domain": "harcum.edu",
     "url": "https://www.harcum.edu/s/1044/bp20/interior.aspx?sid=1044&gid=1&pgid=2095",
     "degreeTitle": "Associate of Science, Physical Therapist Assistant (PTA)",
-    "acuAlign": 7,
-    "acuAlignNote": "Harcum College offers a genuine, robust Physical Therapist Assistant A.S. degree (77 total credit hours, harcum.edu/PTA) with real clinical experience: a 4-week clinical at the end of Year 1 and two 7-week clinicals at the end of Year 2, leading to national PTA licensure eligibility. The college's own program page lists coursework covering 'anatomy and physiology, electrophysiology, kinesiology, therapeutic exercise, rehabilitation, pathophysiology, and orthopedics.' Mapped conservatively against named course topics: EXSC142 + EXSC222 (anatomy/kinesiology coursework), general biology content (within the same A&P sequence), EXSC126 (physiology), EXSC394 + EXSC233 (therapeutic exercise/rehabilitation maps to exercise prescription and delivery), and EXSC388/EXSC389 (the real, required clinical practicum sequence) — a genuinely strong clinical-based academic match, comparable to College of Southern Nevada's PTA program elsewhere in this guide.",
+    "acuAlign": 6,
+    "acuAlignNote": "Harcum College offers a genuine, robust Physical Therapist Assistant A.S. degree (77-79 total credit hours, harcum.edu/PTA) with real clinical experience: a 4-week clinical at the end of Year 1 and two 7-week clinicals at the end of Year 2, leading to national PTA licensure eligibility. Re-checked against the program's own published course sequence: BIO 103/104 Human Anatomy & Physiology I & II cover Anatomical Foundations; PTA 109 Functional Anatomy is a required course that directly covers the Functional Anatomy unit; PTA 114 Applied Kinesiology, a required course on the study of human motion, covers Mechanical Bases of Exercise; PTA 116 Principles of Therapeutic Exercise covers Exercise Prescription content; and PTA 231 Rehabilitation Applications covers Exercise Prescription and Delivery. The three required clinical affiliations (PTA 150, 250 and 251) provide a genuine, extensive Professional Experience component. The same BIO 103/104 sequence already credited above does not separately cover general biology or exercise physiology as distinct units — this program has no course dedicated to either. A genuinely strong clinical-based academic match, comparable to College of Southern Nevada's PTA program elsewhere in this guide.",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -17953,11 +17953,11 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -17969,7 +17969,7 @@
       },
       {
         "unit": "EXSC120",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC321",
@@ -18081,7 +18081,7 @@
     "lensScores": {
       "overall": 55,
       "soccer": 51,
-      "academic": 52,
+      "academic": 47,
       "minutes": 63,
       "lifestyle": 50,
       "value": 35

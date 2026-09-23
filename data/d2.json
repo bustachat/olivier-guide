@@ -58,8 +58,8 @@
     "acRank": "Faith-Based Liberal Arts",
     "kinRank": "NSCA-accredited Applied Physiology & Kinesiology",
     "degreeTitle": "B.S. in Applied Physiology and Kinesiology — Pre-Physical Therapy Concentration",
-    "acuAlign": 14,
-    "acuAlignNote": "HIGHEST ACADEMIC MATCH in guide. Pre-PT is in the degree concentration title. NSCA accredited. Internships at Jupiter Medical Center, Orlando Health, Paley Advanced Orthopedic Institute built into degree. Mandatory clinical placement aligns with ACU EXSC388/EXSC389.",
+    "acuAlign": 10,
+    "acuAlignNote": "Palm Beach Atlantic University's Applied Physiology and Kinesiology, B.S. — Concentration in Pre-Physical Therapy (120 credit hours, West Palm Beach Campus) is a real, dedicated pre-PT degree, re-checked directly against PBA's own course catalog. Ten required courses map directly: BIO 2281/2283 Human Anatomy and Physiology I (Anatomical Foundations); BIO 1101/1103 and BIO 1111/1113 Biology I & II (general biology content); HHP 3263 Physiology of Exercise (Physiological Bases of Exercise); HHP 4203 Advanced Clinical Physiology (Exercise Physiology: Adaptation); HHP 3013 Clinical Exercise for Special Populations (Exercise Prescription); HHP 3233 Kinesiology (Mechanical Bases of Exercise); HHP 4003 Biomechanics (a direct match for the Biomechanics unit); HHP 3423 Personal Fitness Assessment and Exercise Prescription (Exercise Prescription and Delivery); HHP 3343 Research Methods (research-methods content); and HHP 4433 Field Experience Internship, reinforced by HHP 4813 Senior Research (the required internship/clinical component). Several other relevant courses — HHP 3033 Psychology of Sport, HHP 4303 Topics in Strength and Conditioning, and HHP 4023 Motor Development — exist but are only offered as electives (students choose two of nine listed options), so they are not counted here since they are not guaranteed. WES evaluation required for ACU credit recognition; confirm specific course equivalences with a PBA academic advisor before transfer planning.",
     "soccerLevel": "SSC D2 — #2 nationally 2025",
     "soccerLevelShort": "SSC D2",
     "aid": "Athletic + Academic",
@@ -137,7 +137,7 @@
     "lensScores": {
       "overall": 62,
       "soccer": 53,
-      "academic": 89,
+      "academic": 68,
       "minutes": 53,
       "lifestyle": 100,
       "value": 37
@@ -231,7 +231,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
@@ -263,15 +263,15 @@
       },
       {
         "unit": "EXSC216",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC249",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC187",

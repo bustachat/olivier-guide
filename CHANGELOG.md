@@ -6,6 +6,30 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.68 (2026-09-23) — Fix: 3 schools' ACU alignment corrected after re-verifying v45.67's 43-school note fix (gcu, usu_eastern, tyler_jc)
+
+**Why:** owner asked to re-verify that the other 43 schools touched by v45.67 (the ACU code-relabeling pass) still have accurate `acuAlign` scores. Read all 43 notes' course-to-unit claims against each school's own stored `acuUnits[]` data: 41 were internally consistent; `gcu` had a clear contradiction (note and data disagreed); `tyler_jc` and `usu_eastern` both cited a course literally named "Biomechanics" toward the wrong bucket, a pattern worth checking against the real catalog rather than assuming. Owner approved resolving just these 3 against each school's real, current course catalog (RULE 0) — not re-researching the other 40.
+
+**`gcu` (Grand Canyon University):** the note was right, the data was wrong. `EXSC187` (Growth, Motor Development & Ageing) and `EXSC230` (Motor Control & Learning) were stored `covered:false` though the note describes both as covered; `EXSC388/EXSC389` (Professional Experience) was stored `covered:true` with no support in the note. Corrected the data to match the note (note text unchanged). `acuAlign` 14→15, `lensScores.academic` 89→95. `fitOlivier`/`lensScores.overall` confirmed unchanged (60/60) — acuAlign has been informational-only since v37.1.
+
+**`usu_eastern` (Utah State Eastern):** a clean course-label swap. USU's real catalog (catalog.usu.edu, checked live): KIN 3250 "Anatomical Kinesiology" ("study of the anatomical bases of human movement") is the lower-division course and a listed prerequisite for KIN 4200; KIN 4200 "Biomechanics" ("understanding and application of human anatomical kinesiology and biomechanical principles") is upper-division and a direct name match for `EXSC321` ("Biomechanics" in this guide's rubric). The stored note had it backwards — KIN 4200 was credited to `EXSC120` (the lower-division Mechanical Bases bucket) while `EXSC321` sat uncredited, and KIN 3250 was credited to `EXSC222` (Functional Anatomy) instead. Swapped: `EXSC222` → false, `EXSC321` → true (via KIN 4200; KIN 3250 now covers `EXSC120`). Same total count (7 units), so `acuAlign` (7), `lensScores.academic` (52), and `fitOlivier` (45) are all unchanged — a pure accuracy fix, no score cascade.
+
+**`tyler_jc` (Tyler Junior College):** the biggest of the three. The stored note is scoped to the Strength & Conditioning track, but re-reading TJC's real 2026-27 catalog (catalog.tjc.edu, checked live) found the track's actual 6 major courses (PHED 2356, KINE 1164, PHED 1350, PHED 2358, PHED 2360, PHED 2362) don't support 2 of the 5 currently-credited units:
+- `EXSC322` "Exercise Physiology: Adaptation" — no upper-division exercise-physiology course exists in this 2-year AS track.
+- `EXSC120` "Mechanical Bases of Exercise" — credited via KINE 1301 "Foundations of Kinesiology," but that course isn't even in the S&C track (it's General-track-only), and its real description ("overview of the disciplinary knowledge... historical development... career opportunities") is a survey/history course, not mechanics content.
+
+Meanwhile 2 real S&C-track courses went uncredited:
+- PHED 1350 "Fundamentals of Strength and Conditioning" ("core principles and methodologies of strength and conditioning") → `EXSC216` (Resistance Training), a direct match.
+- PHED 2358 "Psychological Aspects of Human Performance" ("psychological factors influencing performance and participation in sports") → the Psychology-of-Sport bucket, a direct match.
+
+The old note also mislabelled `EXSC322` as "Biomechanics" in one clause — it isn't (that's `EXSC321`, per `ACU_UNIT_META`), and TJC's AS-level track has no course reaching that level either. Also removed `HumanBio` credit (was double-counting the same BIOL 2401/2402 Anatomy & Physiology sequence already credited to `EXSC142`, against this guide's established no-double-counting convention). Owner approved applying the corrected mapping. Revised covered set: `EXSC142`, `EXSC126` (via PHED 2362, a general survey — kept as a generous but defensible partial match), `EXSC216`, Psychology-of-Sport = 4 units. `acuAlign` 5→4, `lensScores.academic` 42→36. `fitOlivier` (67) and `lensScores.overall` unaffected — the v37.1 formula (`js/scores.js` `calculateFitScore()`) has no reference to `acuAlign`.
+
+**Verification:** all three schools validated (`python validate_schools.py` — PASS, 174 schools, 22 pre-existing warnings unrelated to this fix; `node validate_consistency.js` — Issues: 0); confirmed via diff that only `acuAlignNote`, `acuUnits[].covered`, `acuAlign`, and `lensScores.academic` changed for each of the 3 schools, nothing else; CRLF line endings intact (`data/juco.json`, `data/d1-other.json` are CRLF-native). **The other 40 schools from v45.67's note-fix list were deliberately NOT re-researched** — this was a bounded, owner-scoped spot-check of 3 flagged schools, not a full re-audit of all 43.
+
+**Files:** `data/juco.json` (`tyler_jc`, `usu_eastern`), `data/d1-other.json` (`gcu`), `CLAUDE.md` (§6F third-pass paragraph), `athletes/olivier.json` (`guideVersion` v45.67 → v45.68).
+
+---
+
 ### v45.67 (2026-09-23) — Fix: ACU rubric corrected guide-wide — the 16-unit `acuUnits[]` table, 43 schools' acuAlignNote, and every rendered "four units" claim no longer cite non-existent ACU codes
 
 **Why:** owner asked to recheck the ACU Bachelor of Exercise and Sports Science course, since ACU has rebuilt it for 2027 entry. Confirmed live (acu.edu.au + the official 2027 Handbook): the redesign is real — 240cp, 20 shared core units, a new choice of major (Sports Performance or Exercise Rehabilitation), roughly 29 real exercise-science unit codes. Checked against this guide's 16-unit `acuUnits[]` rubric: 7 of 16 codes still match a real current ACU unit; 9 of 16 (`ANAT100`, `BIOL125`, `EXSC225`, `EXSC224`, `EXSC204`, `EXSC199`, `EXSC296`, `EXSC122`, `EXSC398`) don't correspond to anything in ACU's real current schedule.

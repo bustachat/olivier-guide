@@ -280,7 +280,7 @@
     "profileDepth": "full",
     "degreeTitle": "B.S. Exercise Science: Pre-Physical Therapy Emphasis",
     "kinRank": "B.S. Exercise Science — Pre-PT emphasis with sport science labs",
-    "acuAlign": 14,
+    "acuAlign": 15,
     "acuAlignNote": "Full alignment — GCU's BS Exercise Science: Pre-Physical Therapy emphasis is purpose-built for DPT pathways. Required courses include anatomy with cadavers (BIO-210/211), exercise physiology (EXS-340), kinesiology/biomechanics (EXS-335 + lab), resistance training (EXS-250), motor control and learning (EXS-305 — standalone required course), lifespan development (PSY-357), corrective exercise (EXS-318), research methods (EXS-485), and special populations (EXS-344). Sport psychology is partially covered via health promotion (EXS-430). Only gap is no mandatory clinical practicum equivalent to EXSC388/EXSC389. Banner Health clinical network provides strong placement access.",
     "soccerLevel": "Mountain West — D1 Mid-Major",
     "soccerLevelShort": "Mountain West",
@@ -361,7 +361,7 @@
     "lensScores": {
       "overall": 60,
       "soccer": 66,
-      "academic": 89,
+      "academic": 95,
       "lifestyle": 100,
       "minutes": 26,
       "value": 53
@@ -509,11 +509,11 @@
       },
       {
         "unit": "EXSC187",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC230",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "",
@@ -521,7 +521,7 @@
       },
       {
         "unit": "EXSC388/EXSC389",
-        "covered": true
+        "covered": false
       }
     ]
   },

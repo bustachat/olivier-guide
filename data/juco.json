@@ -1602,8 +1602,8 @@
       "#92400e"
     ],
     "degreeTitle": "A.S. in Kinesiology (2-year transfer degree)",
-    "acuAlign": 5,
-    "acuAlignNote": "Tyler JC's Kinesiology AS (open enrollment — no GPA minimum) is among the most rigorous JUCO kinesiology programs in Texas. Strength & Conditioning track offers the strongest pre-PT pathway. Career outcomes explicitly include: exercise physiology, biomechanics, sport psychology, and physical therapy pathways. Confirmed ACU-relevant content: Human Anatomy & Physiology → EXSC142; general biology content is also covered; Exercise Physiology → EXSC126; Human Movement / Kinesiology → EXSC120; Biomechanics → EXSC322 (explicitly listed career pathway). ACSM and NSCA certification exam preparation is a program goal — these require exercise physiology and biomechanics as core content. WES evaluation required for ACU credit recognition. Confirm specific course equivalences with TJC academic advisor before transfer planning.",
+    "acuAlign": 4,
+    "acuAlignNote": "Tyler JC's Kinesiology AS (open enrollment — no GPA minimum) offers two tracks; this alignment is scored against the Strength & Conditioning track, the stronger match for exercise-science content. Re-checked against TJC's own 2026-27 course catalog: the track's core curriculum includes BIOL 2401/2402 Anatomy & Physiology I & II, which covers EXSC142. Its major courses include PHED 1350 Fundamentals of Strength and Conditioning (covers EXSC216, Resistance Training) and PHED 2358 Psychological Aspects of Human Performance (covers sport-psychology content). PHED 2362 Foundations of Exercise Science is a general survey course — scientific principles, methodologies, and research as applied to exercise and physical fitness — that offers a reasonable partial match to EXSC126 (Physiological Bases of Exercise), though it is not a dedicated physiology course. No course in either track reaches an upper-division exercise-physiology or biomechanics level, so the advanced Exercise Physiology and Biomechanics units are not credited. General biology content is not counted separately from the Anatomy & Physiology sequence already credited above. WES evaluation required for ACU credit recognition. Confirm specific course equivalences with a TJC academic advisor before transfer planning.",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -1615,7 +1615,7 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC126",
@@ -1623,7 +1623,7 @@
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -1631,7 +1631,7 @@
       },
       {
         "unit": "EXSC120",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
@@ -1643,11 +1643,11 @@
       },
       {
         "unit": "EXSC216",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC249",
@@ -1702,7 +1702,7 @@
     "lensScores": {
       "overall": 67,
       "soccer": 69,
-      "academic": 42,
+      "academic": 36,
       "minutes": 61,
       "lifestyle": 50,
       "value": 63
@@ -19894,7 +19894,7 @@
     "url": "https://usueasternathletics.com/sports/msc/index",
     "degreeTitle": "Bachelor of Science, Health Science (offered on-site at the Price/Eastern campus)",
     "acuAlign": 7,
-    "acuAlignNote": "Utah State University Eastern is a 2-year branch campus of USU that offers a genuine on-site Bachelor's degree relevant here — Health Science, BS (catalog.usu.edu), confirmed on USU's own 'Explore Degrees' page as available at the Price (USU Eastern) campus specifically (no dedicated Exercise Science/Kinesiology degree is offered at Eastern; Kinesiology itself is Logan-campus-only). The Health Science Core Requirements (45 credits, ALL required) include BIOL 2320 Human Anatomy, BIOL 2420 Human Physiology, and HEP 4600 Health Science Internship (1-3 credits, required). A 24-credit Professional Development elective pool includes real Kinesiology courses: KIN 3250 Anatomical Kinesiology, KIN 4100 Exercise Physiology, KIN 4200 Biomechanics, and (Social Science group) PSY 3110 Health Psychology. Mapped directly: EXSC142 (required BIOL 2320), EXSC126 (required BIOL 2420), EXSC388/EXSC389 (required HEP 4600 Internship), EXSC222 (elective KIN 3250), EXSC322 (elective KIN 4100), EXSC120 (elective KIN 4200), health/exercise psychology content (elective PSY 3110) — one of the strongest academic matches among the guide's JUCOs, notably delivered through a bachelor's degree available on-site at a 2-year JUCO campus.",
+    "acuAlignNote": "Utah State University Eastern is a 2-year branch campus of USU that offers a genuine on-site Bachelor's degree relevant here — Health Science, BS (catalog.usu.edu), confirmed on USU's own 'Explore Degrees' page as available at the Price (USU Eastern) campus specifically (no dedicated Exercise Science/Kinesiology degree is offered at Eastern; Kinesiology itself is Logan-campus-only). The Health Science Core Requirements (45 credits, ALL required) include BIOL 2320 Human Anatomy, BIOL 2420 Human Physiology, and HEP 4600 Health Science Internship (1-3 credits, required). A 24-credit Professional Development elective pool includes real Kinesiology courses: KIN 3250 Anatomical Kinesiology, KIN 4100 Exercise Physiology, KIN 4200 Biomechanics, and (Social Science group) PSY 3110 Health Psychology. Mapped directly, re-checked against USU's own course catalog: EXSC142 (required BIOL 2320), EXSC126 (required BIOL 2420), EXSC388/EXSC389 (required HEP 4600 Internship), EXSC120 (elective KIN 3250, which covers the anatomical and mechanical bases of human movement), EXSC321 (elective KIN 4200 Biomechanics, an upper-division course that builds on KIN 3250), EXSC322 (elective KIN 4100 Exercise Physiology, also upper-division), health/exercise psychology content (elective PSY 3110) — one of the strongest academic matches among the guide's JUCOs, notably delivered through a bachelor's degree available on-site at a 2-year JUCO campus.",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -19902,7 +19902,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
@@ -19926,7 +19926,7 @@
       },
       {
         "unit": "EXSC321",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC233",

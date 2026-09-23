@@ -59,7 +59,7 @@
     "kinRank": "NSCA-accredited Applied Physiology & Kinesiology",
     "degreeTitle": "B.S. in Applied Physiology and Kinesiology — Pre-Physical Therapy Concentration",
     "acuAlign": 14,
-    "acuAlignNote": "HIGHEST ACADEMIC MATCH in guide. Pre-PT is in the degree concentration title. NSCA accredited. Internships at Jupiter Medical Center, Orlando Health, Paley Advanced Orthopedic Institute built into degree. Mandatory clinical placement aligns with ACU EXSC398.",
+    "acuAlignNote": "HIGHEST ACADEMIC MATCH in guide. Pre-PT is in the degree concentration title. NSCA accredited. Internships at Jupiter Medical Center, Orlando Health, Paley Advanced Orthopedic Institute built into degree. Mandatory clinical placement aligns with ACU EXSC388/EXSC389.",
     "soccerLevel": "SSC D2 — #2 nationally 2025",
     "soccerLevelShort": "SSC D2",
     "aid": "Athletic + Academic",
@@ -226,7 +226,7 @@
     ],
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -234,11 +234,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -250,7 +250,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -258,7 +258,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": true
       },
       {
@@ -266,11 +266,11 @@
         "covered": true
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": true
       },
       {
@@ -282,11 +282,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": true
       }
     ]
@@ -355,7 +355,7 @@
     "kinRank": "Biology (pre-med) — no dedicated Exercise Science or Kinesiology program",
     "degreeTitle": "B.S. in Biology (pre-med track)",
     "acuAlign": 2,
-    "acuAlignNote": "Lynn has no Exercise Science, Kinesiology, or Athletic Training program at all — confirmed against Lynn's own full undergraduate degree list (checked live, every major from Aviation through Music). The two real, relevant options are Sports Management, B.S. (a business major — sports marketing, sports law, risk management) and Biology, B.S. (a pre-med track). Biology is the closer academic match: it includes a genuine Human Anatomy and Physiology course (SCI 260), which covers the anatomy foundation, plus general biology coursework — but nothing resembling exercise physiology, biomechanics, or exercise prescription. Only ANAT100 and BIOL125 are genuinely covered.",
+    "acuAlignNote": "Lynn has no Exercise Science, Kinesiology, or Athletic Training program at all — confirmed against Lynn's own full undergraduate degree list (checked live, every major from Aviation through Music). The two real, relevant options are Sports Management, B.S. (a business major — sports marketing, sports law, risk management) and Biology, B.S. (a pre-med track). Biology is the closer academic match: it includes a genuine Human Anatomy and Physiology course (SCI 260), which covers the anatomy foundation, plus general biology coursework — but nothing resembling exercise physiology, biomechanics, or exercise prescription. Only the anatomical-foundations and general-biology units are genuinely covered.",
     "soccerLevel": "SSC D2 — Top 10 nationally",
     "soccerLevelShort": "SSC D2",
     "aid": "Athletic + Merit",
@@ -510,7 +510,7 @@
     ],
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -518,11 +518,11 @@
         "covered": false
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": false
       },
       {
@@ -534,7 +534,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": false
       },
       {
@@ -542,7 +542,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -550,11 +550,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": false
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": false
       },
       {
@@ -566,11 +566,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": false
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": false
       }
     ]
@@ -807,7 +807,7 @@
     ],
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -815,11 +815,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -831,7 +831,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -839,7 +839,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": true
       },
       {
@@ -847,11 +847,11 @@
         "covered": true
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": true
       },
       {
@@ -863,11 +863,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": false
       }
     ]
@@ -1078,7 +1078,7 @@
     "domain": "nova.edu",
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -1086,11 +1086,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -1102,7 +1102,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -1110,7 +1110,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -1118,11 +1118,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": true
       },
       {
@@ -1134,11 +1134,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": true
       }
     ]
@@ -1347,7 +1347,7 @@
     "domain": "lagoldeneagles.com",
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -1355,11 +1355,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -1371,7 +1371,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -1379,7 +1379,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -1387,11 +1387,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": true
       },
       {
@@ -1403,11 +1403,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": true
       }
     ]
@@ -1624,7 +1624,7 @@
     ],
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -1632,11 +1632,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -1648,7 +1648,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -1656,7 +1656,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -1664,11 +1664,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": true
       },
       {
@@ -1680,11 +1680,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": true
       }
     ]
@@ -1907,7 +1907,7 @@
     ],
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -1915,11 +1915,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -1931,7 +1931,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -1939,7 +1939,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -1947,11 +1947,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": false
       },
       {
@@ -1963,11 +1963,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": true
       }
     ]
@@ -2180,7 +2180,7 @@
     "domain": "kuseahawks.com",
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -2188,11 +2188,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -2204,7 +2204,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -2212,7 +2212,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -2220,11 +2220,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": false
       },
       {
@@ -2236,11 +2236,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": true
       }
     ]
@@ -2449,7 +2449,7 @@
     "domain": "chapman.edu",
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -2457,11 +2457,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": false
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -2473,7 +2473,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -2481,7 +2481,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -2489,11 +2489,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": false
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": false
       },
       {
@@ -2505,11 +2505,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": false
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": false
       }
     ]
@@ -2718,7 +2718,7 @@
     "domain": "ucwv.edu",
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -2726,11 +2726,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -2742,7 +2742,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -2750,7 +2750,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -2758,11 +2758,11 @@
         "covered": true
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": true
       },
       {
@@ -2774,11 +2774,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": false
       }
     ]
@@ -2931,7 +2931,7 @@
     ],
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -2939,11 +2939,11 @@
         "covered": true
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": true
       },
       {
@@ -2955,7 +2955,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": true
       },
       {
@@ -2963,7 +2963,7 @@
         "covered": true
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": true
       },
       {
@@ -2971,11 +2971,11 @@
         "covered": true
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": false
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": false
       },
       {
@@ -2987,11 +2987,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": false
       }
     ],
@@ -3205,7 +3205,7 @@
     ],
     "acuUnits": [
       {
-        "unit": "ANAT100",
+        "unit": "EXSC142",
         "covered": true
       },
       {
@@ -3213,11 +3213,11 @@
         "covered": false
       },
       {
-        "unit": "BIOL125",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC225",
+        "unit": "EXSC126",
         "covered": false
       },
       {
@@ -3229,7 +3229,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC224",
+        "unit": "EXSC120",
         "covered": false
       },
       {
@@ -3237,7 +3237,7 @@
         "covered": false
       },
       {
-        "unit": "EXSC204",
+        "unit": "EXSC233",
         "covered": false
       },
       {
@@ -3245,11 +3245,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC199",
+        "unit": "",
         "covered": false
       },
       {
-        "unit": "EXSC296",
+        "unit": "EXSC249",
         "covered": false
       },
       {
@@ -3261,11 +3261,11 @@
         "covered": false
       },
       {
-        "unit": "EXSC122",
+        "unit": "",
         "covered": true
       },
       {
-        "unit": "EXSC398",
+        "unit": "EXSC388/EXSC389",
         "covered": false
       }
     ],

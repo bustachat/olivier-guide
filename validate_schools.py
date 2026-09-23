@@ -15,10 +15,14 @@ VALID_DEPTHS = {'full', 'listed'}
 VALID_LENS_KEYS = {'overall', 'soccer', 'academic', 'minutes', 'lifestyle', 'value'}
 VALID_DEV_KEYS = {'tactical', 'technical', 'fitness'}
 VALID_FACILITY_RATINGS = {'Elite', 'Excellent', 'Very Good', 'Good', 'Solid'}
+# `unit` is the real, current ACU code where one exists (verified against ACU's
+# official 2027 Handbook, 2026-09-23), '' where ACU's real curriculum has no
+# standalone unit for that content bucket any more. Must stay in sync with
+# ACU_UNIT_META in js/app.js — see CLAUDE.md §6F "ACU rubric review, 2026-09-23".
 REQUIRED_ACU_UNITS = [
-    'ANAT100','EXSC222','BIOL125','EXSC225','EXSC322','EXSC394',
-    'EXSC224','EXSC321','EXSC204','EXSC216','EXSC199','EXSC296',
-    'EXSC187','EXSC230','EXSC122','EXSC398',
+    'EXSC142','EXSC222','','EXSC126','EXSC322','EXSC394',
+    'EXSC120','EXSC321','EXSC233','EXSC216','','EXSC249',
+    'EXSC187','EXSC230','','EXSC388/EXSC389',
 ]
 FULL_REQUIRED_FIELDS = [
     'id','name','full','loc','div','conf','confKey',

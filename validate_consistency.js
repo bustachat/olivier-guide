@@ -93,7 +93,11 @@ const sectionKeys = new Set(['acc', 'big-ten', 'big-east', 'aac', 'big-west', 'c
 schools.filter(s => !sectionKeys.has(s.confKey)).forEach(s => note('CONFKEY', `${s.id} confKey='${s.confKey}' has no CONF_SECTIONS match — invisible in Explore`));
 
 // ── acuUnits ──
-const CANON = ['ANAT100', 'EXSC222', 'BIOL125', 'EXSC225', 'EXSC322', 'EXSC394', 'EXSC224', 'EXSC321', 'EXSC204', 'EXSC216', 'EXSC199', 'EXSC296', 'EXSC187', 'EXSC230', 'EXSC122', 'EXSC398'];
+// `unit` is the real, current ACU code where one exists (verified against ACU's
+// official 2027 Handbook, 2026-09-23), '' where ACU's real curriculum has no
+// standalone unit for that content bucket any more. Must stay in sync with
+// ACU_UNIT_META in js/app.js — see CLAUDE.md §6F "ACU rubric review, 2026-09-23".
+const CANON = ['EXSC142', 'EXSC222', '', 'EXSC126', 'EXSC322', 'EXSC394', 'EXSC120', 'EXSC321', 'EXSC233', 'EXSC216', '', 'EXSC249', 'EXSC187', 'EXSC230', '', 'EXSC388/EXSC389'];
 schools.forEach(s => {
   if (!Array.isArray(s.acuUnits)) { note('ACU', `${s.id} missing acuUnits[]`); return; }
   if (s.acuUnits.length !== 16) note('ACU', `${s.id} acuUnits length ${s.acuUnits.length}`);

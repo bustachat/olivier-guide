@@ -446,14 +446,14 @@ Captures whether a school's midfield spots are typically filled by true incoming
 
 | acuAlign (trues) | Units to set covered:false |
 |---|---|
-| 13 | EXSC394, EXSC187, EXSC398 |
-| 12 | EXSC394, EXSC296, EXSC187, EXSC398 |
-| 11 | EXSC394, EXSC204, EXSC296, EXSC187, EXSC398 |
-| 10 | EXSC394, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
-| 9 | EXSC394, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
-| 8 | EXSC394, EXSC322, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
+| 13 | EXSC394, EXSC187, EXSC388/EXSC389 |
+| 12 | EXSC394, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 11 | EXSC394, EXSC233, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 10 | EXSC394, EXSC233, EXSC216, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 9 | EXSC394, EXSC120, EXSC233, EXSC216, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 8 | EXSC394, EXSC322, EXSC120, EXSC233, EXSC216, EXSC249, EXSC187, EXSC388/EXSC389 |
 
-All 16 units in order: `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EXSC224, EXSC321, EXSC204, EXSC216, EXSC199, EXSC296, EXSC187, EXSC230, EXSC122, EXSC398`
+All 16 units in order (**corrected 2026-09-23** to ACU's real 2027 codes — see §6F "ACU rubric review, 2026-09-23"; 3 slots have no current ACU code and are left blank rather than fabricated): `EXSC142, EXSC222, (no current code — Human Biology 1), EXSC126, EXSC322, EXSC394, EXSC120, EXSC321, EXSC233, EXSC216, (no current code — Psychology of Sport), EXSC249, EXSC187, EXSC230, (no current code — Research & Ethics), EXSC388/EXSC389`
 
 **Also update after EVERY conference batch:**
 - Nothing in `data/conf-prestige.json` — since v45.63 its "Programs in Guide" and "Summary" columns are derived.
@@ -770,23 +770,25 @@ One flat object, rewritten in full on every snapshot write — the same read-mod
 **No backfill.** The ~52 schools with partial roster data scattered across `College Rosters/*.json` (stale, June 2026) predate real fetch timestamps — inventing one for them would violate this project's own "never guess" rule. Coverage builds up naturally as schools get refreshed going forward; `check_roster_snapshot.py` (the `roster-refresh` skill) reports which schools have no snapshot yet as an expected, non-failing state, not a gap to rush-fill.
 
 ### acuUnits[] — all 16 unit codes in order
+
+**Corrected 2026-09-23** to ACU's real 2027 unit codes (verified against the official ACU Handbook) — see §6F "ACU rubric review, 2026-09-23". 3 slots have no standalone unit in ACU's real current curriculum and are stored as `unit: ""` rather than a fabricated code; never put a made-up code back into one of these.
 ```
-ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394,
-EXSC224, EXSC321, EXSC204, EXSC216, EXSC199, EXSC296,
-EXSC187, EXSC230, EXSC122, EXSC398
+EXSC142, EXSC222, "" (Human Biology 1 — no current code), EXSC126, EXSC322, EXSC394,
+EXSC120, EXSC321, EXSC233, EXSC216, "" (Psychology of Sport — no current code), EXSC249,
+EXSC187, EXSC230, "" (Research & Ethics — no current code), EXSC388/EXSC389
 ```
 
 **Standard false patterns by acuAlign** — count of `covered:true` must equal `acuAlign` integer:
 
 | acuAlign | covered:false units |
 |---|---|
-| 13 | EXSC394, EXSC187, EXSC398 |
-| 12 | EXSC394, EXSC296, EXSC187, EXSC398 |
-| 11 | EXSC394, EXSC204, EXSC296, EXSC187, EXSC398 |
-| 10 | EXSC394, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
-| 9 | EXSC394, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
-| 8 | EXSC394, EXSC322, EXSC224, EXSC204, EXSC216, EXSC296, EXSC187, EXSC398 |
-| 7 or below | Start from the 8-false set above and additionally mark covered:false working backwards from the end of the unit list (EXSC398, EXSC122, EXSC230, EXSC187...) until covered:true count matches acuAlign. Always verify the final count manually. |
+| 13 | EXSC394, EXSC187, EXSC388/EXSC389 |
+| 12 | EXSC394, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 11 | EXSC394, EXSC233, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 10 | EXSC394, EXSC233, EXSC216, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 9 | EXSC394, EXSC120, EXSC233, EXSC216, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 8 | EXSC394, EXSC322, EXSC120, EXSC233, EXSC216, EXSC249, EXSC187, EXSC388/EXSC389 |
+| 7 or below | Start from the 8-false set above and additionally mark covered:false working backwards from the end of the unit list (EXSC388/EXSC389, Research & Ethics [no current code], EXSC230, EXSC187...) until covered:true count matches acuAlign. Always verify the final count manually. |
 
 ### coaches.json — required fields per coach entry
 ```
@@ -1564,6 +1566,10 @@ The two official windows (confirm exact dates each cycle against the NCAA's own 
 
 #### F. Data gaps & watch items
 
+- **🚩 ACU rubric review, 2026-09-23 — owner asked to recheck the ACU course against the live acu.edu.au page and ACU's official 2027 Handbook, since ACU rebuilt the Bachelor of Exercise and Sports Science for 2027 entry.** Confirmed live (acu.edu.au + `acu.edu.au/handbook/Handbook-2027/...`, RULE 0): the course is a genuine ground-up redesign — 240cp, 20 shared core units, plus a new structural choice of major (Sports Performance or Exercise Rehabilitation) that didn't exist before, with roughly 29 real exercise-science unit codes across the core/professional-experience/major schedules (full list and codes in the session transcript, not reproduced here). Checked this guide's 16-unit `acuUnits[]` rubric (§5, `ACU_UNIT_META` in `js/app.js`) against it: **7 of 16 codes match a real current ACU unit exactly or near-exactly** (EXSC222, EXSC321, EXSC216, EXSC187, EXSC230, EXSC322, EXSC394 — though EXSC394's real content shifted to a rehab-major elective); **9 of 16 do not correspond to any real current ACU code** (`ANAT100`, `BIOL125`, `EXSC225`, `EXSC224`, `EXSC204`, `EXSC199`, `EXSC296`, `EXSC122`, `EXSC398`). None of this touches `fitOlivier` — ACU alignment has been informational-only since v37.1 — and no school's `acuAlign`/`lensScores.academic`/`acuUnits[].covered` value needs to change, since those were always scored by matching real US-school content against each bucket's *description*, not by literally checking for a matching ACU transcript code. **Owner ruling (2026-09-23): do not rebuild the 16-unit rubric or re-audit the 174 schools now** — fix only the citations that were visibly wrong. Fixed same day: (1) this Athlete Context line (§13) corrected in place; (2) the Glossary's WES entry in `index.html`, which made the identical wrong claim to real visitors; (3) 43 schools' `acuAlignNote` text (`northeast_cc`, `monroe_college`, `indian_hills`, `tyler_jc`, `daytona_state`, `barton_cc`, `cowley_cc`, `arizona_western`, `efsc`, `murray_state_ok`, `eastern_oklahoma_state`, `connors_state`, `neo_am`, `rose_state`, `national_park`, `rich_mountain`, `hill_college`, `western_texas`, `truman_college`, `daley_college`, `malcolm_x_college`, `kennedy_king_college`, `wilbur_wright_college`, `coffeyville_cc`, `garden_city_cc`, `seward_county_cc`, `paris_jc`, `jacksonville_college`, `northeast_texas_cc`, `texas_southmost`, `jefferson_college_mo`, `harcum_college`, `hagerstown_cc`, `harford_cc`, `slcc`, `snow_college`, `north_idaho_college`, `college_of_southern_idaho`, `usu_eastern`, `truckee_meadows_cc`, `pba`, `lynn`, `gcu`), which cited one of the 9 fake codes directly to the reader (e.g. "Exercise Physiology coursework → EXSC225") — the 5 codes with a clean real replacement were swapped in (`ANAT100`→`EXSC142`, `EXSC225`→`EXSC126`, `EXSC224`→`EXSC120`, `EXSC204`→`EXSC233`, `EXSC398`→`EXSC388`/`EXSC389`); the 4 with no clean current equivalent (`BIOL125`, `EXSC122`, `EXSC199`, `EXSC296` — ACU folded the latter two into one real unit, `EXSC249`) had the fake code dropped and the existing plain-English content description kept, rather than inventing a new citation. Verified: only `acuAlignNote` changed in the diff (43 line-pairs across `data/juco.json`/`d2.json`/`d1-other.json`); every school's `acuAlign`, `acuUnits[]`, `lensScores`, and `fitOlivier` confirmed byte-identical to before against `HEAD`; `validate_schools.py`, `validate_consistency.js` (Issues: 0) and `check_no_jargon.py` all pass; CRLF line endings intact.
+
+  **Follow-up same day — owner reopened the scope after being shown the live table.** The ACU Alignment tab's own master table (`ACU_UNIT_META` in `js/app.js`) still showed the 9 fake codes in its left-hand column for every visitor, guide-wide — not scoped to the 43 schools. Owner: "fix the table too." Done: `ACU_UNIT_META`'s `unit` field relabeled to the same real-code mapping used in the 43 notes (`BIOL125`/`EXSC199`/`EXSC122` left blank, `unit: ""`, since no real current ACU code exists for them); all 174 schools' `acuUnits[].unit` renamed identically at every one of the 16 positions (a pure schema-key rename — `covered`, `acuAlign`, `lensScores`, `fitOlivier` confirmed byte-identical to `HEAD` for all 174); `validate_schools.py`'s `REQUIRED_ACU_UNITS` and `validate_consistency.js`'s `CANON` updated to match (both would otherwise have flagged all 174 schools the moment the data changed). **A real bug was caught and fixed before shipping:** `renderACUTable()`'s "programs covering this unit" matched by `x.unit === meta.unit`, which breaks once 3 rows share the same blank `unit:""` — `.find()` always returns the first blank slot, so the Human Biology 1, Psychology of Sport, and Research & Ethics rows would have silently shown the identical (wrong) school list. Fixed to match by array position instead of value. Two more live occurrences of the "four units most likely to transfer" claim were also found (missed by the first sweep — different phrasing defeated the exact-string pattern): `index.html`'s WES tip box directly under the ACU table, and `js/app.js`'s per-school WES block rendered in every school's Details modal. `athletes/olivier.json`'s `wesTransferableUnits[]` carried the same wrong 4-code list as unused structured data — corrected. See CHANGELOG.md v45.67 for full detail and verification. **Genuinely still open:** `athletes/olivier.json`'s `auUnitsPlanned[]` — Olivier's own personal 16-unit course sequence — cites codes (`EXSC301`...`EXSC390`) that don't match ACU's real catalog either, old or new, and look invented (a suspiciously round ascending sequence). Left untouched: fixing it would mean guessing his actual planned unit-by-unit sequence (which major, which order), not correcting a verifiable fact. Revisit only once someone actually has his real plan.
+
 - **🚩 PLAN (owner request, 2026-09-18) — review the Division I gaps between the guide and each conference's Total Programs.** Owner ruling (v45.62): missing D1 schools stay visible as gaps until reviewed; do not add any without the owner's pick. **Source of the list:** NCAA member directory, men's soccer, academic year 2026-27 (`web3.ncaa.org/directory/api/directory/memberList?type=12&division=I&sportCode=MSO`, `conferenceName` = sport conference). Re-pull it at the start of the review; memberships changed for 2026 and may again. Picks = MLS SuperDraft picks 2022-26 from `data/mls-draft-picks-2022-2026.json`.
 
   **The 67 missing programs in the 15 conferences the guide covers** (guide/total):
@@ -1706,8 +1712,7 @@ Use §15 (Research Intelligence) to select the correct tool and source tier for 
 **1C — Academic**
 - [ ] Exact degree program name — Claude for Chrome → academic catalog (not marketing page)
 - [ ] Course list for that degree
-- [ ] Go through all 16 ACU units one by one — covered / not covered:
-  `ANAT100, EXSC222, BIOL125, EXSC225, EXSC322, EXSC394, EXSC224, EXSC321, EXSC204, EXSC216, EXSC199, EXSC296, EXSC187, EXSC230, EXSC122, EXSC398`
+- [ ] Go through all 16 ACU units one by one — covered / not covered (see §5 "acuUnits[] — all 16 unit codes in order" for the current list; 3 slots have no real current ACU code and are scored by content only)
 - [ ] Count `covered:true` → this is `acuAlign`
 - [ ] Pre-PT quality: Excellent / Very Strong / Good / Solid / Transfer Pathway
 - [ ] GPA admission minimum — Claude for Chrome → official admissions page (Tier 1)
@@ -2308,7 +2313,7 @@ The commit protocol is defined in §7 Phases 4–6 and Phase 8. Follow those pha
 
 Olivier is a central midfielder (box-to-box 8/10), GPA 2.8 progressing, completing an ACU Bachelor of Exercise and Sports Science (BESS). Career goal: Doctor of Physical Therapy or Chiropractic. Lifestyle preference: warm climate, city campus (like Sydney). Agent: Platform Sports Management, Australia. Target departure: August 2027.
 
-ACU BESS has 16 specified units. The four most likely to transfer as direct US credit via WES evaluation: BIOL125, ANAT100, EXSC225, EXSC322.
+ACU BESS has 16 specified units — this guide's own internal content-matching rubric for scoring US schools' `acuUnits[]`, not a literal list of ACU's current transcript codes (**corrected 2026-09-23** — ACU rebuilt this course for 2027 entry with a different unit-code set; see §6F "ACU rubric review, 2026-09-23"). Of the 16, three correspond closely to real, current ACU codes and are the ones most likely to transfer as direct US credit via a WES evaluation: EXSC142 (Anatomical Foundations), EXSC126 (Physiological Foundations of Exercise), EXSC322 (Exercise Physiology: Adaptation). A fourth unit this line previously named, `BIOL125` (general biology), has no standalone equivalent in ACU's real current curriculum and should not be cited in an actual WES conversation.
 
 Fit Score is personal to Olivier. Do not generalise it. When a new athlete is onboarded, they get their own JSON config under athletes/ with their own score weights, pathways, and shortlist.
 

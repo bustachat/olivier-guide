@@ -1882,7 +1882,7 @@ function buildDetailBody(u){
         <ul class="subject-list">${u.courses.map(c=>`<li>${c}</li>`).join('')}</ul>
       </div>
       <div class="detail-block" style="margin-bottom:1rem"><h4>WES Credit Recognition</h4>
-        <p style="font-size:12.5px;color:var(--muted);line-height:1.7">When Olivier transfers mid-degree, World Education Services (WES) will assess completed ACU units. BIOL125 (Human Biology), ANAT100 (Anatomy), EXSC225 (Exercise Physiology), and EXSC322 (Advanced Physiology) are the units most likely to receive direct credit — potentially shortening the US degree by one semester. Your agent should coordinate a formal WES evaluation before finalising the shortlist.</p>
+        <p style="font-size:12.5px;color:var(--muted);line-height:1.7">When Olivier transfers mid-degree, World Education Services (WES) will assess completed ACU units. Anatomical Foundations of Exercise Science (EXSC142), Physiological Foundations of Exercise Science (EXSC126), and Exercise Physiology: Adaptation to Exercise and the Environment (EXSC322) are the units most likely to receive direct credit — potentially shortening the US degree by one semester. Your agent should coordinate a formal WES evaluation before finalising the shortlist.</p>
       </div>
       <div class="detail-block"><h4>DPT Graduate School Requirements</h4>
         <p style="font-size:12.5px;color:var(--muted);line-height:1.7">To become a Doctor of Physical Therapy (DPT) in the USA: bachelor's in Exercise Science or Kinesiology, minimum 3.0–3.3 GPA (competitive programs require 3.5+), 50–100 clinical observation hours, GRE scores, and faculty recommendations. Olivier should plan to raise his GPA above 3.0 during his US degree. Pre-PT rating at ${u.full}: <strong style="color:var(--emerald)">${u.prePT}</strong>.</p>
@@ -2708,23 +2708,27 @@ function renderRecruitPathwaySummary() {
 // ACU ALIGNMENT TABLE — rendered from acuUnits on school objects
 // ══════════════════════════════════════════════════
 
+// `unit` is the real, current ACU code where one exists (verified against ACU's
+// official 2027 Handbook, 2026-09-23) — blank ("") where ACU's real curriculum has
+// no standalone unit for this content bucket any more. Never put a fabricated code
+// back here; see CLAUDE.md §6F "ACU rubric review, 2026-09-23".
 const ACU_UNIT_META = [
-  { unit: "ANAT100", label: "Anatomical Foundations",            usEquiv: "Human/Applied Anatomy",                       coverage: "Full — universal" },
+  { unit: "EXSC142", label: "Anatomical Foundations",            usEquiv: "Human/Applied Anatomy",                       coverage: "Full — universal" },
   { unit: "EXSC222", label: "Functional Anatomy",                usEquiv: "Functional/Applied Anatomy",                   coverage: "Full at D1/top D2" },
-  { unit: "BIOL125", label: "Human Biology 1",                   usEquiv: "General/Human Biology",                        coverage: "Full — universal prerequisite" },
-  { unit: "EXSC225", label: "Physiological Bases of Exercise",   usEquiv: "Introduction to Exercise Physiology",          coverage: "Full — universal" },
+  { unit: "",        label: "Human Biology 1",                   usEquiv: "General/Human Biology",                        coverage: "Full — universal prerequisite" },
+  { unit: "EXSC126", label: "Physiological Bases of Exercise",   usEquiv: "Introduction to Exercise Physiology",          coverage: "Full — universal" },
   { unit: "EXSC322", label: "Exercise Physiology: Adaptation",   usEquiv: "Advanced Exercise Physiology",                 coverage: "Full at D1/strong D2" },
   { unit: "EXSC394", label: "Exercise Prescription",             usEquiv: "Exercise Prescription / Clinical Ex Phys",     coverage: "Full at pre-PT programs" },
-  { unit: "EXSC224", label: "Mechanical Bases of Exercise",      usEquiv: "Introduction to Biomechanics",                 coverage: "Full — universal" },
+  { unit: "EXSC120", label: "Mechanical Bases of Exercise",      usEquiv: "Introduction to Biomechanics",                 coverage: "Full — universal" },
   { unit: "EXSC321", label: "Biomechanics",                      usEquiv: "Advanced/Applied Biomechanics",                coverage: "Full at D1/strong D2" },
-  { unit: "EXSC204", label: "Exercise Prescription & Delivery",  usEquiv: "Exercise Testing and Prescription",            coverage: "Strong — near identical",        partial: true },
+  { unit: "EXSC233", label: "Exercise Prescription & Delivery",  usEquiv: "Exercise Testing and Prescription",            coverage: "Strong — near identical",        partial: true },
   { unit: "EXSC216", label: "Resistance Training",               usEquiv: "Strength & Conditioning / Resistance Training",coverage: "Strong — near identical",        partial: true },
-  { unit: "EXSC199", label: "Psychology of Sport",               usEquiv: "Sport Psychology",                             coverage: "Full — universal" },
-  { unit: "EXSC296", label: "Health & Exercise Psychology",      usEquiv: "Exercise & Health Psychology",                 coverage: "Strong at major programs",       partial: true },
+  { unit: "",        label: "Psychology of Sport",               usEquiv: "Sport Psychology",                             coverage: "Full — universal" },
+  { unit: "EXSC249", label: "Health & Exercise Psychology",      usEquiv: "Exercise & Health Psychology",                 coverage: "Strong at major programs",       partial: true },
   { unit: "EXSC187", label: "Growth, Motor Development & Ageing",usEquiv: "Lifespan Motor Development",                  coverage: "Partial — often split",          amber: true },
   { unit: "EXSC230", label: "Motor Control & Learning",          usEquiv: "Motor Control & Learning / Neuromechanics",   coverage: "Partial — rare standalone",      amber: true },
-  { unit: "EXSC122", label: "Research & Ethics",                 usEquiv: "Research Methods in Kinesiology",              coverage: "Strong — required everywhere",   partial: true },
-  { unit: "EXSC398", label: "Professional Experience (140hrs)",  usEquiv: "Internship / Clinical Practicum",              coverage: "Full at PBA, Indiana, Akron" },
+  { unit: "",        label: "Research & Ethics",                 usEquiv: "Research Methods in Kinesiology",              coverage: "Strong — required everywhere",   partial: true },
+  { unit: "EXSC388/EXSC389", label: "Professional Experience (140hrs)", usEquiv: "Internship / Clinical Practicum",      coverage: "Full at PBA, Indiana, Akron" },
 ];
 
 function renderACUTable() {
@@ -2736,11 +2740,16 @@ function renderACUTable() {
     const fullProfiles = unis.filter(u => u.profileDepth === 'full' && Array.isArray(u.acuUnits) && !u.juco2yr);
     if (!fullProfiles.length) return;
 
-    const rows = ACU_UNIT_META.map(meta => {
+    const rows = ACU_UNIT_META.map((meta, idx) => {
+      // Match by POSITION, not by unit-code value: acuUnits[] is validated to be in
+      // the exact same 16-slot order as ACU_UNIT_META (validate_schools.py), and 3 of
+      // the 16 slots deliberately share the same blank unit:"" value (no real current
+      // ACU code exists for them) -- value-matching would silently collapse those 3
+      // distinct rows onto whichever blank slot happens to come first.
       const covering = fullProfiles
         .filter(u => {
-          const match = u.acuUnits.find(x => x.unit === meta.unit);
-          return match && match.covered;
+          const match = u.acuUnits[idx];
+          return match && match.unit === meta.unit && match.covered;
         })
         .sort((a, b) => (b.acuAlign || 0) - (a.acuAlign || 0));
 
@@ -2761,7 +2770,7 @@ function renderACUTable() {
           : `<span class="align-pill align-full">${meta.coverage}</span>`;
 
       return `<tr>
-        <td>${meta.unit} — ${meta.label}</td>
+        <td>${meta.unit ? meta.unit + ' — ' : ''}${meta.label}</td>
         <td>${meta.usEquiv}</td>
         <td>${chips || '<span style="color:var(--hint);font-size:11px">—</span>'}</td>
         <td>${coverageChip}</td>

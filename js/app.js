@@ -766,6 +766,30 @@ const ICON_OVERRIDES = {
   // Rotunda icon (verified by hash: NOT the 726B generic-globe placeholder).
   // Pointing straight at that URL skips the slow/hanging direct attempt.
   virginia: 'https://www.google.com/s2/favicons?domain=virginia.edu&sz=64',
+  // 15-school icon-audit batch (found v45.13, fixed here) -- every one of
+  // these has DOMAINS[id] === domain (no second host to fall back to), and
+  // for most, that one domain sits behind Cloudflare bot-protection: a
+  // cookie-less image request (exactly what a fresh visitor's <img> tag is)
+  // gets a 202/302 challenge response instead of the icon, confirmed by
+  // fetching each path with and without an established browser session.
+  // Each logo below was Tier-1 verified (official athletics social account,
+  // a labelled conference-standings CDN entry, or >=2 independent sources)
+  // before being stored, same process as the v45.12 Chicago batch.
+  glendale_cc_az: 'assets/logos/glendale_cc_az.png',
+  iowa_lakes_cc: 'assets/logos/iowa_lakes_cc.png',
+  neosho_county_cc: 'assets/logos/neosho_county_cc.png',
+  blinn_college: 'assets/logos/blinn_college.png',
+  coastal_bend_cc: 'assets/logos/coastal_bend_cc.png',
+  angelina_college: 'assets/logos/angelina_college.png',
+  eastern_arizona: 'assets/logos/eastern_arizona.png',
+  central_wyoming: 'assets/logos/central_wyoming.png',
+  laramie_county_cc: 'assets/logos/laramie_county_cc.png',
+  western_nebraska_cc: 'assets/logos/western_nebraska_cc.png',
+  trinidad_state: 'assets/logos/trinidad_state.png',
+  jefferson_college_mo: 'assets/logos/jefferson_college_mo.png',
+  harcum_college: 'assets/logos/harcum_college.png',
+  central_georgia_tech: 'assets/logos/central_georgia_tech.png',
+  noc_enid: 'assets/logos/noc_enid.png',
 };
 
 // ── School emblem logo helper ────────────────────────────────────────────────

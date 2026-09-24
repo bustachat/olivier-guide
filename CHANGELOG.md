@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.71 (2026-09-24) — Fix: 15 schools' broken modal/card icons given real logos via ICON_OVERRIDES
+
+**Why:** open item in CLAUDE.md §6D since v45.13 — 15 schools showed a generic placeholder globe because their `DOMAINS[]` and `domain` fields point at the same single host, so the fallback chain had nowhere else to try.
+
+**Root cause, confirmed this session:** for most of these 15, the icon itself is real and distinct per school (verified by hash — not the shared/generic Sidearm default), but the whole athletics domain sits behind Cloudflare bot-protection. A cookie-less `<img>` request — exactly what a real visitor's browser sends on first load — gets a 202/302 challenge page back instead of the icon. Google's favicon proxy inherits the same failure, since it makes the identical cookie-less request server-side.
+
+**Sourcing, three methods depending on what each host allowed:**
+1. Most schools' own `/assets/favicons/favicon-*.png` or `apple-touch-icon.png` resolved cleanly once fetched with a real browser session, or via `curl -sL` (the underlying asset lives on an open CloudFront distribution one redirect away from the blocked front door) — `glendale_cc_az`, `iowa_lakes_cc`, `neosho_county_cc`, `blinn_college`, `angelina_college`, `jefferson_college_mo`.
+2. Several logos were found pre-labelled with alt text on a same-conference rival's own site (`cdn.prestosports.com/action/cdn/logos/id/*.png` conference-standings widgets, which embed every conference member's logo with its name as `alt`) — `western_nebraska_cc`, `laramie_county_cc`, `trinidad_state`, `eastern_arizona`, `central_wyoming` (the last via its own site's `/images/logos/rusty.png`, found the same way).
+3. `central_georgia_tech`, `harcum_college`, `noc_enid`, `coastal_bend_cc` had no usable school-site asset at all — sourced from each program's own official social account (X/Twitter profile photo, or a Facebook/X post clearly attributed to the athletics department), Tier-1 cross-checked against ≥2 independent sources surfacing in the same search (official Facebook, official X, a sports-news site, or — for `noc_enid` and `coastal_bend_cc` — a recruiting-platform page directly labelled with the school's name).
+
+All 15 stored as local assets under `assets/logos/` (the same `ICON_OVERRIDES` mechanism as the v45.11–v45.12 Tyler JC / City Colleges of Chicago batch), confirmed loading with `complete:true` and the correct `naturalWidth` on both the Explore card and the Details modal via a local preview. `validate_schools.py` PASS (174/174, 22 pre-existing warnings, unchanged), `validate_consistency.js` **Issues: 0** (unchanged) — this was a pure asset/`js/app.js` addition, no JSON data touched.
+
+**Tooling lessons (recorded in CLAUDE.md §6D for next time):** a JS-triggered `fetch()+blob()+anchor.click()` download lands reliably only ONCE per tab — a second download in the same tab silently no-ops, most likely because transient user-activation expires after the first `await`. Opening a fresh tab per download worked every time. Separately, Google Images results can render 2-3 DOM `<img>` elements sharing the identical `alt` text at different scroll positions (grid thumbnail, enlarged preview, a duplicate) — matching by `alt` string alone twice fetched the wrong image (Central Georgia Tech's café signage instead of its Titans helmet logo); always visually verify a downloaded file's actual pixel content before trusting it, never trust the fetch call's reported byte size alone.
+
+**Files:** `js/app.js` (`ICON_OVERRIDES`, 15 new entries), `assets/logos/` (15 new PNGs), `CLAUDE.md` (§6D item marked resolved), `athletes/olivier.json` (guideVersion).
+
+---
+
 ### v45.70 (2026-09-24) — Fix: all remaining 34 schools from the ACU re-verification campaign checked; 18 corrected
 
 **Why:** after v45.69's spot-check found a 50% error rate among schools that had already passed internal-consistency, the owner asked to keep going through the rest rather than leave them unverified. This closes out the campaign started in v45.67.

@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.72 (2026-09-24) — Fix: Malcolm X College's vacant head coach filled (Aziz Tahir)
+
+**Why:** the open item tracking Jesse Rosen's May 2026 departure (§6B) had no successor found despite an extended prior search. The owner pasted a link claiming to show the new coach.
+
+**A domain-safety wrinkle came first.** The owner's link was to `citycollegeofchicagoathletics.com` (singular "college") — one letter off from `citycollegesofchicagoathletics.com` (plural), the domain CLAUDE.md already documents as compromised (redirects to gambling/spam, found v45.30). The two are typo-close enough that the singular form could be a genuine different site or a mistyped/typosquat version of the known-bad one — there was no way to tell without checking, so it wasn't treated as safe by default. An automated safety classifier independently blocked navigation to it before it could be read, confirming the caution was warranted; its content (including an email address that appeared only in a search-result snippet, never directly read) was not used.
+
+**Resolved via independent sources instead.** Three unrelated recruiting platforms (NCSA, SportsRecruits, ProductiveRecruit) all named the same successor — Aziz Tahir — and `directory.ccc.edu`'s employee directory independently confirmed he is a genuine current City Colleges of Chicago employee. No single source was trusted alone, matching this school's own already-documented "no single source" standard from the v45.30 audit.
+
+**What changed and what deliberately didn't:** `coaches.json`'s `name`, `title`, `record`, `bio`, `note` updated to reflect the fill. `overallScore` was **left at 30** (the neutral placeholder floor already in place for the vacancy) — no CV, playing background, or coaching licence has surfaced for Tahir anywhere yet, and §5d forbids scoring without evidence. Contact (`email`/`phone`) stays `null` — unconfirmed, not guessed. No re-rank needed: the score didn't move, so no gap was created among the other 173 coaches. `validate_schools.py` PASS (174/174; one new, expected "contacts unverified" warning for this coach, since it now has a real name to check contact details against), `validate_consistency.js` **Issues: 0**.
+
+**Files:** `data/coaches.json` (1 entry), `CLAUDE.md` (§6B item resolved, §6D gets a new line documenting the singular-domain finding for future sessions), `athletes/olivier.json` (guideVersion).
+
+---
+
 ### v45.71 (2026-09-24) — Fix: 15 schools' broken modal/card icons given real logos via ICON_OVERRIDES
 
 **Why:** open item in CLAUDE.md §6D since v45.13 — 15 schools showed a generic placeholder globe because their `DOMAINS[]` and `domain` fields point at the same single host, so the fallback chain had nowhere else to try.

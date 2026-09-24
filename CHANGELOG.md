@@ -6,6 +6,23 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.73 (2026-09-24) — Audit: NJCAA Division II/III membership checked against live 2026-27 team lists — no moves needed
+
+**Why:** owner request from 2026-09-17 (§6F), left open after v45.59/v45.60 checked Division I only. Division membership can change between seasons and silently affects `fundingPathway`, scores, and the Financial tab's aid cap — this closes the loop for the 11 stored Division II and 5 stored Division III JUCOs.
+
+**Method:** njcaa.org loaded without needing the owner's VPN this session (reachable at the time — access has varied across sessions, so this isn't assumed to hold going forward). Checked each school individually via each division team-stats page's own search box (`njcaa.org/sports/msoc/2026-27/div{1,2,3}/teams`), not the aggregated list — the Region 15 lesson from earlier in this project (a region's own conference site can be more reliable than a national aggregator, and a search box avoids paging through the full 111-team DII / 67-team DIII lists by hand).
+
+**Result: clean across the board.**
+- **Division II (11/11 confirmed unchanged):** `northeast_cc`, `phoenix_college`, `pima_cc`, `glendale_cc_az`, `neosho_county_cc`, `southeastern_cc_ia`, `iowa_lakes_cc`, `johnson_county_cc`, `national_park`, `hagerstown_cc`, `harford_cc`.
+- **Division III (4/5 confirmed unchanged):** `nassau_cc`, `ulster_cc`, `suffolk_cc`, `westchester_cc`.
+- **`oxford_college_emory`:** the known DI-on-NJCAA-vs-DIII-in-guide discrepancy persists exactly as documented in v45.60 — NJCAA's live 2026-27 list still places it in Division I, while the guide correctly stores it as Division III per the owner's ruling (Emory's own admissions FAQ says the program can't offer athletic scholarships). Not a new finding, just confirmation the ruling still holds.
+
+**No data changes** — every stored `njcaaDivision`, `fundingPathway`, and downstream score was already correct. `CLAUDE.md` §6F item marked resolved, and the `project_njcaa_division_list_audit` memory closed out.
+
+**Files:** `CLAUDE.md` (§6F item resolved), `athletes/olivier.json` (guideVersion).
+
+---
+
 ### v45.72 (2026-09-24) — Fix: Malcolm X College's vacant head coach filled (Aziz Tahir)
 
 **Why:** the open item tracking Jesse Rosen's May 2026 departure (§6B) had no successor found despite an extended prior search. The owner pasted a link claiming to show the new coach.

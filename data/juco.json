@@ -851,8 +851,8 @@
     "acRank": "Community College",
     "kinRank": "Associate degree only — transfer prerequisite pathway",
     "degreeTitle": "A.S. in Exercise Science (2-year transfer degree)",
-    "acuAlign": 5,
-    "acuAlignNote": "Northeast CC's A.S. in Exercise Science (60 credits) prepares students for ACSM/NASM national certification and transfer to 4-year Exercise Science programs. Confirmed ACU-relevant content: Human Anatomy & Physiology → EXSC142; general biology content is also covered; Exercise Physiology (ACSM-prep core) → EXSC126; Kinesiology / Human Movement → EXSC120; Introduction to Exercise Science content is also covered. The ACSM certification path requires exercise physiology and anatomy as core components — these are not electives but program requirements. WES evaluation required for ACU credit recognition. Confirm exact course titles with Northeast CC academic advisor before transfer planning.",
+    "acuAlign": 2,
+    "acuAlignNote": "Northeast Community College's A.S. in Exercise Science (66-67 credits, re-checked against the college's own published degree plan, northeast.edu) is a real, dedicated program. BIOS 2250/2260 Anatomy & Physiology I & II (required) cover Anatomical Foundations, and BIOS 1010 General Biology (required, a genuinely separate course) covers general biology content. The program's other named courses — HPER 2210 Introduction to Exercise Science and HPER 2410 Advanced Exercise Science — are broad surveys rather than courses dedicated to a specific ACU unit; no course description confirming exercise-physiology-specific content was found for either, so neither is credited toward Physiological Bases of Exercise or Mechanical Bases of Exercise, the same conservative standard already applied to other schools' identically-named 'Introduction to Exercise Science' courses in this guide. No dedicated biomechanics, sport psychology, resistance training, or research-methods course was found. WES evaluation required for ACU credit recognition; confirm exact course equivalences with a Northeast CC academic advisor before transfer planning.",
     "soccerLevel": "JUCO — NJCAA Division II",
     "soccerLevelShort": "NJCAA Division II",
     "aid": "Athletic (NJCAA DII: tuition, fees & books; no room/board)",
@@ -906,7 +906,7 @@
     "lensScores": {
       "overall": 42,
       "soccer": 46,
-      "academic": 42,
+      "academic": 26,
       "minutes": 59,
       "lifestyle": 0,
       "value": 52
@@ -942,7 +942,7 @@
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -954,7 +954,7 @@
       },
       {
         "unit": "EXSC120",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
@@ -986,7 +986,7 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC388/EXSC389",
@@ -1865,12 +1865,12 @@
       "#1d4ed8"
     ],
     "degreeTitle": "A.A. — Health & Wellness Track (transfer to Exercise Science / Athletic Training)",
-    "acuAlign": 4,
-    "acuAlignNote": "Daytona State's A.A. — Health & Wellness Track is a general transfer degree (not a dedicated Exercise Science A.S.). The School of Health & Wellness provides relevant coursework: Human Anatomy & Physiology (confirmed, dedicated A&P library guide) → EXSC142; Biology (BSC1086C confirmed) content is also covered; Exercise Physiology / Health Science content → EXSC126; Kinesiology / Movement content via PET 2084 Personal Health & Wellness → EXSC120. Also includes PET 2621/2622 Athletic Training (principles + care & prevention of injuries) and HUN 1201/1270 Human Nutrition / Sports Nutrition. The Florida statewide A.A. degree guarantees junior-year entry into Florida 4-year universities (USF, UCF, FIU, FSU) where Exercise Science degrees can be completed. WES evaluation required. Confirm specific course equivalences with DSC academic advisor — coverage may be higher once specific course catalog is reviewed.",
+    "acuAlign": 0,
+    "acuAlignNote": "Daytona State's Associate of Arts is a general transfer degree, not a dedicated Exercise Science track. Re-checked against Daytona State's own site: \"School of Health & Wellness\" is one of several advising departments listed for the same generic A.A. (alongside Schools of Biological & Physical Sciences, Communication, Humanities, and others) rather than a distinct major with its own required course list — the A.A. itself is described only as \"a strong foundation of general education courses in writing, humanities and social science,\" with no fixed science or exercise-science requirement. Courses like Human Anatomy & Physiology, Athletic Training, and Sports Nutrition are genuinely offered by the School of Health & Wellness, but nothing guarantees a given A.A. student takes them rather than a different school's electives, so none of the 16 ACU units is confirmed as guaranteed here. The Florida statewide A.A. degree does guarantee junior-year entry into Florida 4-year universities (USF, UCF, FIU, FSU) where a real Exercise Science degree can be completed. WES evaluation required; confirm actual elective selections with a DSC academic advisor.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
@@ -1878,11 +1878,11 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -1894,7 +1894,7 @@
       },
       {
         "unit": "EXSC120",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
@@ -1965,7 +1965,7 @@
     "lensScores": {
       "overall": 62,
       "soccer": 49,
-      "academic": 36,
+      "academic": 15,
       "minutes": 58,
       "lifestyle": 100,
       "value": 59
@@ -2133,28 +2133,28 @@
     "domain": "bartonsports.com",
     "url": "https://www.bartonsports.com/sports/msoc/index",
     "degreeTitle": "A.S. in Exercise Science (2-year transfer degree)",
-    "acuAlign": 9,
-    "acuAlignNote": "Barton's A.S. in Exercise Science is a confirmed dedicated program (not a generic health-sciences transfer track) — a genuine advantage among JUCOs. Confirmed ACU-relevant coverage: Human Anatomy & Physiology → EXSC142; general biology content is also covered; Exercise Physiology → EXSC126; Kinesiology / Human Movement fundamentals → EXSC321; Introduction to Exercise Science → EXSC222; Motor Learning-type coursework → EXSC230; some sport-psychology content is also present. Full WES evaluation required to confirm exact course-to-unit mapping before relying on this count for transfer planning.",
+    "acuAlign": 0,
+    "acuAlignNote": "Barton Community College's Exercise Science program is a \"Liberal Studies\" Emphasis of Study (Associate in Science, 60 credit hours), not a dedicated major — re-checked against Barton's own official 4-term degree map (docs.bartonccc.edu). Across all 4 terms, only 4 courses are specifically named: PHED 1246 First Aid Emergency Care, PHED 1270 Introduction to Exercise Science, PHED 1253 Care & Prevention of Athletic Injury, and HLTH 1248 Personal & Community Health. Every other credit-bearing slot is an unspecified generic requirement (\"Natural & Physical Science Requirement,\" \"Social & Behavioral Sciences Requirement,\" three \"Suggested Emphasis Elective\" slots, two plain \"Elective\" slots) with no course named, so which science or psychology course a student actually takes is not confirmed. None of the four named courses maps to a specific ACU unit either — Introduction to Exercise Science is a broad survey, the same conservative standard already applied to identically-named courses elsewhere in this guide. No confirmed course exists for Anatomical Foundations, general biology, Exercise Physiology, Biomechanics, Motor Learning, or Sport Psychology. Full WES evaluation required, and any of these units could still be satisfied depending on which electives a student actually selects — confirm with a Barton academic advisor before relying on this count.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC394",
@@ -2166,7 +2166,7 @@
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC233",
@@ -2178,7 +2178,7 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC249",
@@ -2190,11 +2190,11 @@
       },
       {
         "unit": "EXSC230",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC388/EXSC389",
@@ -2283,7 +2283,7 @@
     "lensScores": {
       "overall": 48,
       "soccer": 50,
-      "academic": 63,
+      "academic": 15,
       "minutes": 64,
       "lifestyle": 0,
       "value": 56
@@ -2396,8 +2396,8 @@
     "domain": "cowleytigers.com",
     "url": "https://cowleytigers.com/sports/msoc/index",
     "degreeTitle": "A.S. Health Professions Transfer Pathway (2-year transfer degree)",
-    "acuAlign": 5,
-    "acuAlignNote": "Cowley does not offer a dedicated Exercise Science or Kinesiology degree — the closest fit is the general A.S. Medical/Health Professions transfer pathway (Emergency, Law & Health Professions division). Confirmed general-education overlap: EXSC142, EXSC222, general biology content, EXSC126, EXSC321. This is a foundational transfer degree, not a specialised exercise-science track — expect most ACU-specific units to be completed after transferring to a 4-year Exercise Science program. WES evaluation required to confirm exact course equivalence.",
+    "acuAlign": 2,
+    "acuAlignNote": "Cowley College does not offer a dedicated Exercise Science or Kinesiology degree. Re-checked against Cowley's own program catalog: \"Medical/Health Professions Transfer\" is an umbrella marketing category, not a single degree — it covers named sub-pathways including a real Physical Therapy (PRE) Transfer Pathway (AS), the closest and most specific fit for Olivier's stated career goal, and the one this alignment is scored against. Its required science sequence is BIO4125/4135 General Biology I & II and BIO4150 Human Anatomy & Physiology (one semester), plus Chemistry I/II and Physics I/II — covering Anatomical Foundations and general biology content, both genuinely required. No exercise-physiology, biomechanics, kinesiology, sport-psychology, or resistance-training course exists anywhere in the pathway; PSY6711 General Psychology and PSY6712 Developmental Psychology are both required but are general, not sport-specific. A second Human Anatomy & Physiology course (BIO4149) exists only as an elective pathway option, not guaranteed, so it is not counted. This is a foundational pre-professional transfer degree, not a specialised exercise-science track — expect most ACU-specific units to be completed after transferring to a 4-year Exercise Science program. WES evaluation required to confirm exact course equivalence.",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -2405,7 +2405,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
@@ -2413,7 +2413,7 @@
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -2429,7 +2429,7 @@
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC233",
@@ -2547,7 +2547,7 @@
     "lensScores": {
       "overall": 50,
       "soccer": 58,
-      "academic": 42,
+      "academic": 26,
       "minutes": 58,
       "lifestyle": 0,
       "value": 53
@@ -2653,16 +2653,16 @@
     "domain": "awcmatadors.com",
     "url": "https://awcmatadors.com/sports/msoc/index",
     "degreeTitle": "A.A. in Exercise, Wellness and Nutrition (2-year transfer degree)",
-    "acuAlign": 8,
-    "acuAlignNote": "Arizona Western's A.A. in Exercise, Wellness and Nutrition is a confirmed direct-match transfer degree. Confirmed ACU-relevant coverage: Human Anatomy & Physiology → EXSC142; general biology content is also covered; Exercise Physiology → EXSC126; Kinesiology / Human Movement → EXSC321; Introduction to Exercise Science → EXSC222; foundational movement/wellness coursework → EXSC230, plus some sport-psychology content. WES evaluation required to confirm exact course-to-unit mapping.",
+    "acuAlign": 2,
+    "acuAlignNote": "Arizona Western College's A.A. in Exercise, Wellness and Nutrition (63 credits) is real, re-checked against AWC's own official advisement check sheet. The required major core (19 credits) is EXW 100 Health and Wellness, EXW 101 Concepts of Kinesiology and Physical Education, EXW 212 Exercise Science, MAT 270 Applied Statistics, BIO181 General Biology, and NTR 201 Nutrition. EXW 101 (required) directly covers Mechanical Bases of Exercise, and BIO181 (required) covers general biology content. Beyond the core, students choose a minimum of 9 credits from ONE of two mutually exclusive emphases: Fitness & Exercise (which includes EXW 225 Exercise Physiology) or Health & Fitness (Sports Injury Management/Treatment, Athletic Training Practicum) — so Exercise Physiology is a real course, but only for students who select that specific emphasis, not guaranteed for every graduate, so it is not counted here. No Anatomy & Physiology, Biomechanics, Sport Psychology, Motor Control, Resistance Training, or Research Methods course is confirmed anywhere in the required core or either emphasis track; the remaining 35 credits are Arizona's general AGEC-A transfer curriculum, which references \"the current catalog\" for science electives rather than naming a specific required course. WES evaluation required to confirm exact course-to-unit mapping.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
@@ -2670,7 +2670,7 @@
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -2682,11 +2682,11 @@
       },
       {
         "unit": "EXSC120",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC233",
@@ -2698,7 +2698,7 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC249",
@@ -2710,11 +2710,11 @@
       },
       {
         "unit": "EXSC230",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC388/EXSC389",
@@ -2805,7 +2805,7 @@
     "lensScores": {
       "overall": 55,
       "soccer": 44,
-      "academic": 57,
+      "academic": 26,
       "minutes": 56,
       "lifestyle": 50,
       "value": 60
@@ -2915,24 +2915,24 @@
     "domain": "efsctitans.com",
     "url": "https://www.efsctitans.com/sports/msoc/index",
     "degreeTitle": "A.A. General Studies (2-year transfer degree)",
-    "acuAlign": 5,
-    "acuAlignNote": "EFSC does not offer a dedicated Exercise Science or Kinesiology transfer degree. The general A.A. covers EXSC142, EXSC222, general biology content, EXSC126, EXSC321 at a foundational level. EFSC does separately offer a Physical Therapist Assistant (A.S.) — a 74-credit, 6-semester clinical/terminal program including Functional Anatomy & Kinesiology and Therapeutic Exercise coursework — but it is designed to produce licensed PTAs directly, not as a transfer pathway into a 4-year Exercise Science degree, so it is not used as the basis for this ACU count. WES evaluation required to confirm exact A.A. course equivalence.",
+    "acuAlign": 0,
+    "acuAlignNote": "Eastern Florida State College does not offer a dedicated Exercise Science or Kinesiology transfer degree. Re-checked against EFSC's own catalog: the general A.A. is a Florida-statute-defined 60-credit structure (36 general education credits + 24 \"acceptable elective\" credits) with no fixed, named course list for the elective portion — which courses a student actually takes for their science and elective credits is not predetermined, so no specific ACU unit can be confirmed as covered. EFSC does separately offer a Physical Therapist Assistant (A.S.) — a 74-credit, 6-semester clinical/terminal program including Functional Anatomy & Kinesiology and Therapeutic Exercise coursework — but it is designed to produce licensed PTAs directly, not as a transfer pathway into a 4-year Exercise Science degree, so it is not used as the basis for this ACU count. WES evaluation required, and the actual coverage will depend entirely on which electives a student selects with their advisor.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -2948,7 +2948,7 @@
       },
       {
         "unit": "EXSC321",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC233",
@@ -3068,7 +3068,7 @@
     "lensScores": {
       "overall": 60,
       "soccer": 59,
-      "academic": 42,
+      "academic": 15,
       "minutes": 53,
       "lifestyle": 50,
       "value": 59
@@ -9433,12 +9433,12 @@
     "domain": "eoscathletics.com",
     "url": "https://www.eoscathletics.com/sports/msoc/index",
     "degreeTitle": "A.S. Life Science (Pre-Professional option)",
-    "acuAlign": 2,
-    "acuAlignNote": "Eastern Oklahoma State's catalog (2025-26 Science & Mathematics degree plans) offers no dedicated Exercise Science or Kinesiology program — the closest fit is the A.S. in Life Science, Pre-Professional option, a genuine pre-health transfer track. Its required Natural Sciences general-education slot is satisfied by BIOL 1114 General Biology (general biology content), and its 21-25 hour Pre-Professional Option block lets a student select five advisor-approved courses including BIOL 2114 Human Anatomy (covers EXSC142) alongside BIOL 2214 Human Physiology, Microbiology, Organic Chemistry and Nutrition. No dedicated Exercise Physiology, Kinesiology theory, or Strength & Conditioning course exists anywhere in the catalog, so the remaining 14 ACU units are not covered. Full WES evaluation and advisor confirmation required before relying on this count.",
+    "acuAlign": 1,
+    "acuAlignNote": "Eastern Oklahoma State's catalog (2025-26 Science & Mathematics degree plans) offers no dedicated Exercise Science or Kinesiology program — the closest fit is the A.S. in Life Science, Pre-Professional option, a genuine pre-health transfer track. Its required Natural Sciences general-education slot is satisfied by BIOL 1114 General Biology, so general biology content is guaranteed. Its 21-25 hour Pre-Professional Option block lets a student select five advisor-approved courses including BIOL 2114 Human Anatomy alongside BIOL 2214 Human Physiology, Microbiology, Organic Chemistry and Nutrition — a real option, but only one of several electives, so Anatomical Foundations is not guaranteed and is not counted here. No dedicated Exercise Physiology, Kinesiology theory, or Strength & Conditioning course exists anywhere in the catalog. Full WES evaluation and advisor confirmation required before relying on this count.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
@@ -9573,7 +9573,7 @@
     "lensScores": {
       "overall": 59,
       "soccer": 45,
-      "academic": 26,
+      "academic": 20,
       "minutes": 65,
       "lifestyle": 50,
       "value": 65
@@ -9686,12 +9686,12 @@
     "domain": "connorsathletics.com",
     "url": "https://www.connorsathletics.com/sports/msoc/index",
     "degreeTitle": "A.S. Multidisciplinary Studies in S.T.E.M.",
-    "acuAlign": 1,
-    "acuAlignNote": "Connors State's 2025-26 catalog offers no dedicated Exercise Science or Kinesiology program. The Division of Mathematics and Sciences' A.S. in Multidisciplinary Studies in S.T.E.M. is a math/physics/chemistry-heavy transfer degree — its own sample 4-semester plan includes Calculus I & II, Physics I & II, and Chemistry I & II with no biology sequence at all. Biology IS listed among the degree's 10-22 hour 'Guided Electives' category, and the Division of Nursing and Allied Health separately confirms Connors offers BIOL 1314/1324 Anatomy & Physiology I/II and BIOL 2104/2114 Human Anatomy/Physiology (required for its Nursing and Occupational Therapy Assistant programs) — so a S.T.E.M. student COULD select Anatomy & Physiology as their guided-elective biology courses with advisor approval, covering EXSC142, but this is optional and not part of the degree's own sample plan of study. Full WES evaluation and advisor confirmation required.",
+    "acuAlign": 0,
+    "acuAlignNote": "Connors State's 2025-26 catalog offers no dedicated Exercise Science or Kinesiology program. The Division of Mathematics and Sciences' A.S. in Multidisciplinary Studies in S.T.E.M. is a math/physics/chemistry-heavy transfer degree — its own sample 4-semester plan includes Calculus I & II, Physics I & II, and Chemistry I & II with no biology sequence at all. Biology IS listed among the degree's 10-22 hour 'Guided Electives' category, and the Division of Nursing and Allied Health separately confirms Connors offers BIOL 1314/1324 Anatomy & Physiology I/II and BIOL 2104/2114 Human Anatomy/Physiology (required for its Nursing and Occupational Therapy Assistant programs) — so a S.T.E.M. student COULD select Anatomy & Physiology as their guided-elective biology courses with advisor approval, but this is optional and not part of the degree's own sample plan of study, so it is not counted here. None of the 16 ACU units is confirmed as guaranteed for this program. Full WES evaluation and advisor confirmation required.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
@@ -9827,7 +9827,7 @@
     "lensScores": {
       "overall": 53,
       "soccer": 35,
-      "academic": 20,
+      "academic": 15,
       "minutes": 59,
       "lifestyle": 50,
       "value": 60
@@ -9931,8 +9931,8 @@
     "domain": "neoathletics.com",
     "url": "https://neoathletics.com/sports/msoc/index",
     "degreeTitle": "A.S. Physical Education",
-    "acuAlign": 3,
-    "acuAlignNote": "NEO offers a genuine A.S. in Physical Education (Department of Nursing, Allied Health & Physical Education) designed to transfer into a health, wellness, coaching, or PE bachelor's program, with access to a fitness center, core fitness room, pool, and gymnasium. Per the 2022-24 catalog degree plan (the newest published), the required core includes HHP 1753 Introduction to Physical Education (covers EXSC120 — foundational kinesiology) and HHP 2603 Total Wellness (covers some sport-psychology content), and the required 4-hour Life Science general-education slot is satisfied by a BIOL-prefix course (general biology content). HHP 2663 Care and Prevention of Athletic Injuries is also required but does not map cleanly to any of the 16 ACU units. No dedicated Anatomy or Exercise Physiology course is confirmed as required or catalog-listed for this specific program. Full WES evaluation and advisor confirmation required, and the degree plan should be re-checked against the current catalog (only 2022-24 was accessible).",
+    "acuAlign": 1,
+    "acuAlignNote": "NEO offers a genuine A.S. in Physical Education (Department of Nursing, Allied Health & Physical Education) designed to transfer into a health, wellness, coaching, or PE bachelor's program, with access to a fitness center, core fitness room, pool, and gymnasium. Per the 2022-24 catalog degree plan (the newest published), the required 4-hour Life Science general-education slot is satisfied by a BIOL-prefix course, covering general biology content. HHP 1753 Introduction to Physical Education is required but is a broad introductory survey, so it does not count toward Mechanical Bases of Exercise specifically, and HHP 2603 Total Wellness is a general wellness course rather than sport psychology, so it is not counted toward that unit either. HHP 2663 Care and Prevention of Athletic Injuries is also required but does not map cleanly to any of the 16 ACU units. No dedicated Anatomy or Exercise Physiology course is confirmed as required or catalog-listed for this specific program. Full WES evaluation and advisor confirmation required, and the degree plan should be re-checked against the current catalog (only 2022-24 was accessible).",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -9960,7 +9960,7 @@
       },
       {
         "unit": "EXSC120",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC321",
@@ -9976,7 +9976,7 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC249",
@@ -10065,7 +10065,7 @@
     "lensScores": {
       "overall": 57,
       "soccer": 44,
-      "academic": 31,
+      "academic": 20,
       "minutes": 61,
       "lifestyle": 50,
       "value": 59
@@ -12547,8 +12547,8 @@
     "domain": "redravenathletics.com",
     "url": "https://redravenathletics.com/sports/msoc/index",
     "degreeTitle": "Athletic Training, Associate in Science",
-    "acuAlign": 3,
-    "acuAlignNote": "Coffeyville offers a genuine dedicated Athletic Training AS degree (64 credit hours, source: 2026-27 catalog, coffeyville.catalog.acalog.com) with real clinical content: BIOL 203 Anatomy and Physiology (a combined 5-credit-hour A&P course), BIOL 101 General Biology, CHEM 103 Principles of Chemistry I, HPER 165 Introduction to Athletic Training, HPER 270 Basic Prevention and Care of Athletic Injuries, HPER 299 Nutrition, and a genuine supervised clinical sequence (HPER 209/210 Practicum in Athletic Training I & II, 4 credit hours combined). Checked unit-by-unit against the real ACU unit definitions: BIOL 203 covers EXSC142 (Anatomical Foundations) and BIOL 101 covers general biology content, and the HPER 209/210 practicum sequence is a genuine clinical placement matching EXSC388/EXSC389's 'Internship/Clinical Practicum' definition. No dedicated Sport Psychology, Biomechanics, or Exercise Physiology course was found — PSYC 101/102 are general and developmental psychology, not sport-specific.",
+    "acuAlign": 2,
+    "acuAlignNote": "Coffeyville's Athletic Training Transfer Program is real, re-checked against the athletics department's own official curriculum guide (redravenathletics.com). Its \"Recommended Courses\" list includes BIOL-203 Anatomy and Physiology (covers Anatomical Foundations) and BIOL-101 General Biology (covers general biology content), along with HPER-165 Introduction to Athletic Training, HPER-270 Basic Prevention and Care of Athletic Injuries, and other general-education courses that do not map to a specific ACU unit. HPER-209/210 Practicum in Athletic Training I & II, a real supervised clinical placement, is listed only under a separate \"Additional Courses\" section described as courses to help fulfill graduation requirements, not the primary recommended list, so it is not guaranteed for every student and is not counted toward Professional Experience here. No dedicated Sport Psychology, Biomechanics, or Exercise Physiology course was found — PSYC-101/102 are general and developmental psychology, not sport-specific.",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -12612,7 +12612,7 @@
       },
       {
         "unit": "EXSC388/EXSC389",
-        "covered": true
+        "covered": false
       }
     ],
     "soccerLevel": "NJCAA Division I — KJCCC (Kansas Jayhawk Community College Conference)",
@@ -12696,7 +12696,7 @@
     "lensScores": {
       "overall": 45,
       "soccer": 48,
-      "academic": 31,
+      "academic": 26,
       "minutes": 57,
       "lifestyle": 0,
       "value": 55
@@ -12809,12 +12809,12 @@
     "domain": "gobroncbusters.com",
     "url": "https://www.gobroncbusters.com/sports/msoc/index",
     "degreeTitle": "Exercise Science, Associate in Science (EXSC.AS)",
-    "acuAlign": 1,
-    "acuAlignNote": "Garden City offers a genuine, formally-titled Exercise Science AS degree (60 credit hours minimum, source: 2026-27 catalog.gcccks.edu) with a real named 4-year articulation agreement — Garden City to Sterling University's Pre-Athletic Training program, leading to a Bachelor's and Master's in Athletic Training. Checked unit-by-unit against the real ACU unit definitions: the degree's REQUIRED core (HPER 109 First Aid, HPER 281 Intro to Exercise Science, HPER 106 Health Education, HPER 211 Prevention and Care of Athletic Injuries, HPER 115 Basic Nutrition) does not map cleanly to any of the 16 narrow ACU units on its own — HPER 281 is a broad multi-topic survey, not a dedicated exercise-physiology course, so it was deliberately NOT counted. This guide's Anatomical Foundations unit is counted via BIOL 211/212 Anatomy and Physiology I & II, which are PROGRAM ELECTIVES (not required core) but are the clear, standard choice for any student actually following the named Sterling articulation. general biology content was not separately counted (same course used for anatomical foundations, following the Hill College precedent of not double-counting one A&P sequence against two units).",
+    "acuAlign": 0,
+    "acuAlignNote": "Garden City offers a genuine, formally-titled Exercise Science AS degree (60 credit hours minimum, source: 2026-27 catalog.gcccks.edu) with a real named 4-year articulation agreement — Garden City to Sterling University's Pre-Athletic Training program, leading to a Bachelor's and Master's in Athletic Training. Checked unit-by-unit against the real ACU unit definitions: the degree's REQUIRED core (HPER 109 First Aid, HPER 281 Intro to Exercise Science, HPER 106 Health Education, HPER 211 Prevention and Care of Athletic Injuries, HPER 115 Basic Nutrition) does not map cleanly to any of the 16 narrow ACU units on its own — HPER 281 is a broad multi-topic survey, not a dedicated exercise-physiology course, so it was deliberately NOT counted. BIOL 211/212 Anatomy and Physiology I & II are the clear, standard choice for any student actually following the named Sterling articulation, but they are PROGRAM ELECTIVES, not required core, so Anatomical Foundations is not guaranteed and is not counted here either. None of the 16 ACU units is confirmed as guaranteed for every graduate of this specific degree plan.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
@@ -12958,7 +12958,7 @@
     "lensScores": {
       "overall": 47,
       "soccer": 52,
-      "academic": 20,
+      "academic": 15,
       "minutes": 57,
       "lifestyle": 0,
       "value": 59
@@ -16735,12 +16735,12 @@
     "domain": "athletics.jacksonvillecollege.edu",
     "url": "https://athletics.jacksonvillecollege.edu/sports/mens-soccer",
     "degreeTitle": "Associate of Science/Arts, Kinesiology Pathway",
-    "acuAlign": 2,
-    "acuAlignNote": "Jacksonville College (a private Christian junior college, source: jacksonvillecollege.edu/degree-programs/) offers a general Associate of Science/Arts (60 hrs) with named 'pathway' concentrations for advising purposes, including a real Kinesiology pathway. However the AS degree plan itself is not pathway-specific: its Natural Sciences requirement is 'choose two of' a long course list that includes BIOL 2401/2402 (Anatomy & Physiology I/II) among several other science options (general Biology, Chemistry, Physics) — not a fixed requirement. Scored the same way as Yavapai College (a comparably flexible general-AS structure with A&P as one lab-science option among several): 2 of 16 ACU units (Anatomical Foundations + general biology), assuming a Kinesiology-pathway-advised student selects the A&P I/II sequence as their two Natural Science electives. No dedicated PE/Kinesiology course requirement exists beyond a single generic 1-hour PHED elective.",
+    "acuAlign": 0,
+    "acuAlignNote": "Jacksonville College (a private Christian junior college, source: jacksonvillecollege.edu/degree-programs/) offers a general Associate of Science/Arts (60 hrs) with named 'pathway' concentrations for advising purposes, including a real Kinesiology pathway. However the AS degree plan itself is not pathway-specific: its Natural Sciences requirement is 'choose two of' a long course list that includes BIOL 2401/2402 (Anatomy & Physiology I/II) among several other science options (general Biology, Chemistry, Physics) — not a fixed requirement, so neither Anatomical Foundations nor general biology content is guaranteed even though a Kinesiology-pathway-advised student would likely select the A&P I/II sequence. No dedicated PE/Kinesiology course requirement exists beyond a single generic 1-hour PHED elective. None of the 16 ACU units is confirmed as guaranteed for every graduate of this specific degree plan.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
@@ -16748,7 +16748,7 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC126",
@@ -16877,7 +16877,7 @@
     "lensScores": {
       "overall": 52,
       "soccer": 41,
-      "academic": 26,
+      "academic": 15,
       "minutes": 50,
       "lifestyle": 50,
       "value": 57
@@ -17687,12 +17687,12 @@
     "domain": "athletics.jeffco.edu",
     "url": "https://athletics.jeffco.edu/sports/msoc/index",
     "degreeTitle": "Associate of Arts (general transfer) with a UCM Kinesiology BS articulation pathway",
-    "acuAlign": 2,
-    "acuAlignNote": "Jefferson College holds a genuine, named Articulation Agreement with the University of Central Missouri (UCM) for its Associate of Arts to UCM's Kinesiology, BS (ucmo.edu/current-students/office-of-the-registrar-and-student-records/articulation-agreements/). The AA's 7-hour Natural Science requirement lets a student pick 2 courses from different disciplines, and BIO 211 Anatomy & Physiology I is explicitly one of the listed options, directly mapped by UCM to its own Kinesiology core (BIOL 3401/3402 Human Anatomy/Physiology). Scored conservatively (2 of 16 ACU units, Anatomical Foundations + general biology) since A&P I is an ELECTIVE option among several (general Biology, Chemistry, Physics), not a fixed AA requirement — the pathway is real and directly documented by a 4-year institution, but not guaranteed for every AA student.",
+    "acuAlign": 0,
+    "acuAlignNote": "Jefferson College holds a genuine, named Articulation Agreement with the University of Central Missouri (UCM) for its Associate of Arts to UCM's Kinesiology, BS (ucmo.edu/current-students/office-of-the-registrar-and-student-records/articulation-agreements/). The AA's 7-hour Natural Science requirement lets a student pick 2 courses from different disciplines, and BIO 211 Anatomy & Physiology I is explicitly one of the listed options, directly mapped by UCM to its own Kinesiology core (BIOL 3401/3402 Human Anatomy/Physiology). Since A&P I is an ELECTIVE option among several (general Biology, Chemistry, Physics), not a fixed AA requirement, neither Anatomical Foundations nor general biology content is guaranteed for every AA student, so neither is counted here — the pathway is real and directly documented by a 4-year institution, but is not guaranteed.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
@@ -17700,7 +17700,7 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC126",
@@ -17832,7 +17832,7 @@
     "lensScores": {
       "overall": 45,
       "soccer": 44,
-      "academic": 26,
+      "academic": 15,
       "minutes": 61,
       "lifestyle": 0,
       "value": 50
@@ -18186,12 +18186,12 @@
     "domain": "athletics.hagerstowncc.edu",
     "url": "https://athletics.hagerstowncc.edu/sports/msoc/index",
     "degreeTitle": "Associate of Science, Exercise Science and Health",
-    "acuAlign": 4,
-    "acuAlignNote": "Hagerstown Community College offers a genuine, dedicated Exercise Science and Health A.S. (hagerstowncc.smartcatalogiq.com, 2026-2027 catalog) that 'serves as a foundation for students pursuing a career in Kinesiology, Exercise Physiology, Physical or Occupational Therapy, Athletic Training, Physical Education, Health Education, Sports Management or Personal/Fitness Training.' The 17-credit Program Requirements block includes EXS-143 Strength Training, EXS-163 Fitness and Conditioning, EXS-230 Foundations of Exercise and Movement, EXS-232 Concepts of Fitness Testing and Program Design, HEA-102 Nutrition, HEA-103 Personal Health, and HEA-105 First Aid. Mapped against named course content: EXSC126 (Foundations of Exercise and Movement), EXSC394 + EXSC233 (Concepts of Fitness Testing and Program Design covers both prescription and delivery), and EXSC216 (Strength Training). No dedicated A&P, biomechanics, sport psychology, or internship course confirmed within the core 17-credit block (a 10-11 credit Restricted Electives block exists but was not reviewed course by course).",
+    "acuAlign": 5,
+    "acuAlignNote": "Hagerstown Community College offers a genuine, dedicated Exercise Science and Health A.S. that 'serves as a foundation for students pursuing a career in Kinesiology, Exercise Physiology, Physical or Occupational Therapy, Athletic Training, Physical Education, Health Education, Sports Management or Personal/Fitness Training,' re-checked against HCC's own 2026-2027 catalog. The 17-credit required Program Requirements block includes EXS-143 Strength Training, EXS-163 Fitness and Conditioning, EXS-230 Foundations of Exercise and Movement, EXS-232 Concepts of Fitness Testing and Program Design, HEA-102 Nutrition, HEA-103 Personal Health, and HEA-105 First Aid, mapped directly to Resistance Training (EXS-143), Physiological Bases of Exercise (EXS-230), and Exercise Prescription and Delivery (EXS-232). Separately, the required Biological/Physical Science general-education component requires a student to complete one of two paired course sequences — BIO-113 Principles of Biology I plus BIO-116 Human Anatomy and Physiology for Allied Health, or BIO-203/204 Human Anatomy & Physiology I & II — and both pairings include a genuine anatomy and physiology course, so Anatomical Foundations is guaranteed regardless of which pairing a student takes; general biology content specifically is not guaranteed, since only one of the two pairings includes a separate general-biology course. No dedicated biomechanics, sport psychology, or internship course is confirmed within the required core (a further 10-11 credit Restricted Electives block exists but was not reviewed course by course).",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": false
+        "covered": true
       },
       {
         "unit": "EXSC222",
@@ -18323,7 +18323,7 @@
     "lensScores": {
       "overall": 33,
       "soccer": 40,
-      "academic": 36,
+      "academic": 42,
       "minutes": 57,
       "lifestyle": 0,
       "value": 42
@@ -18427,8 +18427,8 @@
     "domain": "harfordathletics.com",
     "url": "https://harfordathletics.com/sports/mens-soccer/index",
     "degreeTitle": "Associate of Science, Exercise Science",
-    "acuAlign": 8,
-    "acuAlignNote": "Harford Community College offers a genuine, comprehensive dedicated Exercise Science A.S. (60 credits, catalog.harford.edu) with a named 4-year articulation pathway to Towson University's B.S. in Exercise Science. Confirmed required coursework: EXSC 101 Introduction to Exercise Science, EXSC 102 Foundations of Resistance Training, BIO 119/120 Biology for Health Professionals, BIO 203/204 Anatomy and Physiology I & II, EXSC 201 Fitness Assessment & Program Design, EXSC 202 Fitness Instruction, PE 229 Advanced Weight Training, and a REQUIRED EXSC 283 Exercise Science Internship. Mapped directly: EXSC142 + EXSC222 (A&P I/II), general biology content (Biology for Health Professionals), EXSC126 (Introduction to Exercise Science), EXSC394 + EXSC233 (Fitness Assessment & Program Design + Fitness Instruction), EXSC216 (Resistance Training/Advanced Weight Training), and EXSC388/EXSC389 (the required Internship) — one of the strongest, most directly-mapped academic matches among the guide's JUCOs.",
+    "acuAlign": 6,
+    "acuAlignNote": "Harford Community College offers a genuine, comprehensive dedicated Exercise Science A.S. (60 credits), with a named 4-year articulation pathway to Towson University's B.S. in Exercise Science. Re-checked against Harford's own official program requirements (catalog.harford.edu): required coursework includes EXSC 101 Introduction to Exercise Science, EXSC 102 Foundations of Resistance Training, BIO 119/120 (Biology for Health Professionals or General Biology I), BIO 203 Anatomy and Physiology I, BIO 204 Anatomy and Physiology II, EXSC 201 Fitness Assessment & Program Design, EXSC 202 Fitness Instruction, PE 229 Advanced Weight Training, PSY 101 General Psychology, and a required EXSC 283 Exercise Science Internship. Mapped directly: BIO 203 covers Anatomical Foundations; BIO 119/120 is a genuinely separate required course covering general biology content; EXSC 201 Fitness Assessment & Program Design covers Exercise Prescription; EXSC 202 Fitness Instruction covers Exercise Prescription and Delivery; EXSC 102 and PE 229 both directly cover Resistance Training; and EXSC 283 is the required Internship, a direct match for Professional Experience. BIO 204 (Anatomy and Physiology II) continues the same required sequence as BIO 203 rather than being a distinct Functional Anatomy course, so it is not separately counted, the same standard already applied to identical two-course A&P sequences elsewhere in this guide; EXSC 101 is a broad introductory survey, so it is not counted toward Physiological Bases of Exercise specifically; and PSY 101 General Psychology is general rather than sport- or health-specific, so it does not count toward either psychology unit. One of the stronger, most directly-mapped academic matches among the guide's JUCOs.",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -18436,7 +18436,7 @@
       },
       {
         "unit": "EXSC222",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "",
@@ -18444,7 +18444,7 @@
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -18573,7 +18573,7 @@
     "lensScores": {
       "overall": 37,
       "soccer": 49,
-      "academic": 57,
+      "academic": 47,
       "minutes": 58,
       "lifestyle": 0,
       "value": 46
@@ -18679,8 +18679,8 @@
     "domain": "slccbruins.com",
     "url": "https://slccbruins.com/sports/mens-soccer",
     "degreeTitle": "Associate of Science, Exercise Science/Kinesiology",
-    "acuAlign": 7,
-    "acuAlignNote": "Salt Lake Community College offers a genuine, dedicated Exercise Science/Kinesiology A.S. (62 credits, confirmed via catalog.slcc.edu's 2026-2027 program page). Required core (19 credits): BIOL 2320/2325 Human Anatomy + Lab, BIOL 1610/1615 College Biology I + Lab, CHEM 1215 General Chemistry Lab, EXSC 1105/1110/1115 (Cardiorespiratory/Strength/Flexibility Training Principles), EXSC 2500 Introduction to Exercise Science. A rich 14-credit elective pool includes EXSC 2250 Exercise Physiology, EXSC 2425 Evaluation and Assessment of Fitness, EXSC 2430 Designing Training Programs, EXSC 2450 Personal Trainer Internship, and HLTH 2100 Fitness Motivation/Behavioral Response. Mapped directly: EXSC142 (required BIOL 2320/2325), general biology content (required BIOL 1610/1615), EXSC126 (elective EXSC 2250 Exercise Physiology), EXSC233 (elective EXSC 2425 + EXSC 2430, testing/prescription), EXSC216 (required EXSC 1110 Principles of Strength Training), health/exercise psychology content (elective HLTH 2100), EXSC388/EXSC389 (elective EXSC 2450 Personal Trainer Internship) — one of the stronger academic matches among the guide's JUCOs, though several units are drawn from the elective pool rather than the required core.",
+    "acuAlign": 4,
+    "acuAlignNote": "Salt Lake Community College offers a genuine, dedicated Exercise Science/Kinesiology A.S. (62 credits), re-checked against SLCC's own official program page (catalog.slcc.edu). The required courses (19 credits, plus required general-education science) are BIOL 1610/1615 College Biology I + Lab, BIOL 2320/2325 Human Anatomy + Lab, BIOL 2420/2425 Human Physiology + Lab, CHEM 1215 General Chemistry Lab, EXSC 1105/1110/1115 (Cardiorespiratory/Strength/Flexibility Training Principles), and EXSC 2500 Introduction to Exercise Science. Mapped directly: BIOL 2320/2325 covers Anatomical Foundations; BIOL 1610/1615 (a genuinely separate required course) covers general biology content; BIOL 2420/2425 Human Physiology is itself a required course, so it directly covers Physiological Bases of Exercise — a stronger match than previously recorded; and EXSC 1110 Principles of Strength Training directly covers Resistance Training. EXSC 2500 is a broad introductory survey, so it does not count toward a specific unit on its own. A separate 14-credit elective pool (choose from a long list, including EXSC 2200 Kinesiology, EXSC 2250 Exercise Physiology, EXSC 2425/2430 fitness testing and program design, EXSC 2450 Personal Trainer Internship, and HLTH 2100 Fitness Motivation/Behavioral Response) could add Mechanical Bases of Exercise, Exercise Prescription and Delivery, or Professional Experience depending on which electives a student actually selects, but none of these is guaranteed, so none is counted here. WES evaluation required to confirm exact course equivalence.",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -18716,7 +18716,7 @@
       },
       {
         "unit": "EXSC233",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC216",
@@ -18728,7 +18728,7 @@
       },
       {
         "unit": "EXSC249",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC187",
@@ -18744,7 +18744,7 @@
       },
       {
         "unit": "EXSC388/EXSC389",
-        "covered": true
+        "covered": false
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
@@ -18825,7 +18825,7 @@
     "lensScores": {
       "overall": 47,
       "soccer": 50,
-      "academic": 52,
+      "academic": 36,
       "minutes": 57,
       "lifestyle": 50,
       "value": 43
@@ -18932,8 +18932,8 @@
     "domain": "snowbadgers.com",
     "url": "https://snowbadgers.com/sports/mens-soccer",
     "degreeTitle": "Associate of Science, Exercise Science",
-    "acuAlign": 1,
-    "acuAlignNote": "Snow College offers a real, dedicated Exercise Science A.S. (60-62 credits, confirmed via catalog.snow.edu's 2026-2027 program requirements page), but the program is academically thin: only EXSC 2010 Introduction to Exercise Science, EXSC 2600 Introduction to Sports Medicine, and EXSC 1543 First Aid/CPR are named exercise-specific courses, plus a choice between a Biology/Anatomy pairing or a Chemistry pairing for the science requirement (not guaranteed anatomy) and HFST 1020 Scientific Foundations of Nutrition. Mapped directly: only EXSC126 (via EXSC 2010 Introduction to Exercise Science). No dedicated biomechanics, sport psychology, or internship course confirmed — the thinnest Exercise Science degree among the guide's Region 18 schools.",
+    "acuAlign": 0,
+    "acuAlignNote": "Snow College offers a real, dedicated Exercise Science A.S. (60-62 credits, confirmed via catalog.snow.edu's 2026-2027 program requirements page), but the program is academically thin: only EXSC 2010 Introduction to Exercise Science, EXSC 2600 Introduction to Sports Medicine, and EXSC 1543 First Aid/CPR are named exercise-specific courses, plus a choice between a Biology/Anatomy pairing or a Chemistry pairing for the science requirement (not guaranteed anatomy) and HFST 1020 Scientific Foundations of Nutrition. EXSC 2010 is a broad introductory survey, so it does not count toward Physiological Bases of Exercise specifically, the same conservative standard already applied to identically-generic 'Introduction to Exercise Science' courses elsewhere in this guide. No dedicated anatomy, biomechanics, sport psychology, or internship course is confirmed — the thinnest Exercise Science degree among the guide's Region 18 schools.",
     "acuUnits": [
       {
         "unit": "EXSC142",
@@ -18949,7 +18949,7 @@
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -19074,7 +19074,7 @@
     "lensScores": {
       "overall": 43,
       "soccer": 44,
-      "academic": 20,
+      "academic": 15,
       "minutes": 56,
       "lifestyle": 0,
       "value": 50
@@ -19187,12 +19187,12 @@
     "domain": "nicathletics.com",
     "url": "https://nicathletics.com/sports/msoc/index",
     "degreeTitle": "Associate of Science, Physical Education, Athletic Training/Exercise Science Emphasis",
-    "acuAlign": 5,
-    "acuAlignNote": "North Idaho College offers a Physical Education A.S. (catalog.nic.edu) with a genuine Athletic Training/Exercise Science recommended emphasis. Core requirements include a choice between BIOL-175 Human Biology or BIOL-227 Human Anatomy & Physiology I, plus 15 credits selected from PE-160/222/223/225/227/228/230/288. The Athletic Training/Exercise Science emphasis specifically recommends BIOL-228 Human Anatomy and Physiology II with Cadaver, PE-248 Athletic Injuries-Sports Medicine, and PE-250 Clinical Athletic Training — a genuine cadaver-based anatomy course and a real clinical practicum. Mapped directly: EXSC142 (via the recommended BIOL-228 cadaver A&P II elective), general biology content (via the BIOL-175 Human Biology core option), EXSC126 (via PE-223 Exercise Physiology, one of the 15-credit selections), sport-psychology content (via PE-225 Sports Psychology, one of the 15-credit selections), EXSC388/EXSC389 (via PE-250 Clinical Athletic Training, a genuine hands-on clinical course).",
+    "acuAlign": 1,
+    "acuAlignNote": "North Idaho College's Physical Education A.S. is real, re-checked against NIC's own current catalog (catalog.nic.edu). The only guaranteed science requirement is a choice between BIOL-175 Human Biology or BIOL-227 Human Anatomy and Physiology I, so general biology content is credited, but Anatomical Foundations specifically is not, since a student can satisfy the requirement without ever taking anatomy. Beyond that, students select 15 credits from a pool of 8 PE courses (Foundations of Physical Education, Wellness Lifestyles, Fitness Activities and Concepts, Sports Ethics, Exercise Physiology, Sports Psychology, Legal Aspects of Sport and Recreation, First Aid) and a further 5-7 elective credits recommended (not required) from one of several emphasis areas, one of which is Athletic Training/Exercise Science (adding a cadaver-based Human Anatomy and Physiology II, Athletic Injuries-Sports Medicine, and a Clinical Athletic Training practicum). None of these — including Exercise Physiology, Sports Psychology, the cadaver A&P II, or the clinical practicum — is guaranteed for every graduate, since each is one option among several in a flexible selection pool, so none is counted here. WES evaluation required, and actual coverage will depend heavily on which electives and emphasis a student and advisor choose.",
     "acuUnits": [
       {
         "unit": "EXSC142",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC222",
@@ -19204,7 +19204,7 @@
       },
       {
         "unit": "EXSC126",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC322",
@@ -19232,7 +19232,7 @@
       },
       {
         "unit": "",
-        "covered": true
+        "covered": false
       },
       {
         "unit": "EXSC249",
@@ -19252,7 +19252,7 @@
       },
       {
         "unit": "EXSC388/EXSC389",
-        "covered": true
+        "covered": false
       }
     ],
     "soccerLevel": "NJCAA Division I — Region 18 (Scenic West Athletic Conference)",
@@ -19315,7 +19315,7 @@
     "lensScores": {
       "overall": 47,
       "soccer": 47,
-      "academic": 42,
+      "academic": 20,
       "minutes": 62,
       "lifestyle": 0,
       "value": 54

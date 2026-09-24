@@ -6,6 +6,37 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.70 (2026-09-24) — Fix: all remaining 34 schools from the ACU re-verification campaign checked; 18 corrected
+
+**Why:** after v45.69's spot-check found a 50% error rate among schools that had already passed internal-consistency, the owner asked to keep going through the rest rather than leave them unverified. This closes out the campaign started in v45.67.
+
+**Method:** live RULE-0 verification (real catalog per school) for 19 schools; the remaining 9 already had detailed, specific, self-disclosing notes, so they were re-checked mechanically against the two failure patterns already established (rather than re-browsed from scratch) and found to already apply the standard correctly. The 5 City Colleges of Chicago schools were left as-is, resting on the v44.74 batch's own documented verification. `murray_state_ok` came back clean; the other 18 live-checked schools all needed a correction.
+
+**Pattern 1 — generic/flexible degree structures mistaken for guaranteed course lists:**
+- `barton_cc`: `acuAlign` 9→0. The real 4-term degree map shows a Liberal-Studies-style "Emphasis of Study" with only 4 named courses total; every other credit-bearing slot is an unspecified "Requirement" or "Suggested Emphasis Elective." None of the 9 previously-credited units has real support.
+- `efsc`: `acuAlign` 5→0. The general A.A. is a Florida-statute 36+24-credit structure with no fixed elective list at all.
+- `daytona_state`: `acuAlign` 4→0. "A.A. — Health & Wellness Track" turned out to be one of several generic advising-department labels on an ordinary A.A., not a distinct major; the A.A. itself has no science requirement.
+- `northeast_cc`: `acuAlign` 5→2. Two credited units rested on "Introduction to Exercise Science"/"Advanced Exercise Science" survey courses with no confirmed physiology-specific content, plus a unit marked true with no support anywhere. Kept: Anatomical Foundations and general biology, both via genuinely separate required courses.
+- `cowley_cc`: `acuAlign` 5→2. "Medical/Health Professions Transfer" is an umbrella category, not one degree; re-scored against its real, most-specific sub-pathway (Physical Therapy (PRE)). Kept: Anatomical Foundations and general biology, both required.
+- `arizona_western`: `acuAlign` 8→2. Six of eight credited units rested on one of two mutually-exclusive elective emphasis tracks; the real required core has a genuine "Kinesiology" course (EXW 101) that was previously miscredited to the wrong bucket.
+
+**Pattern 2 — a real required course, credited to the wrong bucket, not credited at all, or over-extended past what it supports:**
+- `harford_cc`: `acuAlign` 8→6. Dropped Functional Anatomy (double-counted from the same required A&P sequence already crediting Anatomical Foundations) and Physiological Bases (credited via a generic "Introduction to Exercise Science" course); kept the 6 units with genuine required-course support (Resistance Training via 2 real courses, Exercise Prescription + Delivery, the required internship).
+- `slcc`: `acuAlign` 7→4. Real catalog check found a required Human Physiology course the old note had missed (upgrading Physiological Bases from "elective, not counted" to genuinely required), while 3 other credited units turned out to rest on a 14-credit elective pool and were dropped.
+- `hagerstown_cc`: `acuAlign` 4→5 — the one net increase. The stored note only checked the 17-credit "Program Requirements" block and missed that the separate required Biological/Physical Science general-education component guarantees real Anatomy & Physiology content regardless of which of two course pairings a student takes.
+- `coffeyville_cc`: `acuAlign` 3→2. The program's real source is an athletics-department advising page, not a formal catalog page as claimed; it explicitly separates "Recommended Courses" from a secondary "Additional Courses" list, and the credited clinical practicum sits in the secondary list, not the primary one.
+- `connors_state`, `garden_city_cc`, `jacksonville_college`, `jefferson_college_mo`, `snow_college`: all `acuAlign` →0. Each of these schools' own note already explicitly disclosed the credited unit was elective-only or rested on a generic survey course, but the `covered` flag had never been updated to match. Applying the already-written conclusion, not new research.
+- `neo_am`: `acuAlign` 3→1. Dropped a generic "Introduction to Physical Education" credit and an overreaching "Total Wellness ≈ sport psychology" claim; kept the genuinely required general-biology credit.
+- `eastern_oklahoma_state`: `acuAlign` 2→1. The school's own note already disclosed its Anatomy course is one of five advisor-selected electives, not required; dropped that credit, kept the genuinely required general-biology credit.
+
+`fitOlivier`/`lensScores.overall` confirmed unaffected for every school (acuAlign has been informational-only since v37.1). Validated clean: `validate_schools.py`, `validate_consistency.js` (Issues: 0), `check_no_jargon.py` (20,646 rendered strings checked). CRLF intact. Only `acuAlignNote`, `acuUnits[].covered`, `acuAlign`, and `lensScores.academic` changed per school.
+
+**This closes the ACU re-verification campaign started in v45.67.** Across the full 43-school set touched by that campaign: 3 clean on the first internal-consistency pass had a data/note contradiction (v45.68), 3 more were caught by a spot-check (v45.69), and 18 of the remaining 34 needed a correction (this entry) — a total of 24 of 43 schools (56%) required a real fix once checked against a live source, versus 0 caught by internal-consistency alone. The lesson carried forward: self-consistency between a note and its data is not evidence of accuracy.
+
+**Files:** `data/juco.json` (18 schools), `athletes/olivier.json` (`guideVersion` v45.69 → v45.70).
+
+---
+
 ### v45.69 (2026-09-23) — Fix: 3 more schools' ACU alignment corrected from a spot-check of the 40 unverified schools (pba, harcum_college, monroe_college)
 
 **Why:** after v45.68, the owner asked why the other 40 of the original 43 schools weren't re-verified against live sources — the "internally consistent" check only confirmed the note and the stored `covered` flags agree with each other, not that either is factually correct. That distinction matters here specifically: the earlier fabrication-audit campaign (CLAUDE.md §6F) found 11 schools where a fabricated note and fabricated data agreed with each other perfectly, so self-consistency alone would have missed all of them. Owner asked for a spot-check of 5–8 schools to get a rough sense of the error rate before deciding whether to verify the rest.

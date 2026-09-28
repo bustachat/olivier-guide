@@ -6,6 +6,29 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.76 (2026-09-28) — NAIA conferences re-ordered on national tournament results; stale member lists fixed
+
+**Why:** v45.75 placed the new WHAC at the bottom of the NAIA group as a default, not a judgement. The owner asked for an evidence-based order and approved this one.
+
+**Evidence:** the NAIA's official Men's Soccer Championship Record Book (`naia.org/wp-content/uploads/2026/07/MSOC_Championship-Records.pdf`, every national tournament game from the opening rounds on), checked against naiastats.prestosports.com for 2025. Results counted for each conference's current members, taken from each conference's 2026 standings page (the same basis as the MLS-picks column). Wins include advancing on penalties.
+
+| Conference | Teams | Berths 2021-25 | Wins | Wins/team | Best finish |
+|---|---|---|---|---|---|
+| Sun | 9 | 9 | 14 | 1.56 | 2021 national champion (Keiser), 2023 semifinal (St. Thomas) |
+| AMC | 6 | 6 | 8 | 1.33 | 2021 semifinal (Columbia) |
+| WHAC | 10 | 10 | 8 | 0.80 | Quarterfinals 2021, 2023, 2025 (Indiana Tech) |
+| SAC | 10 | 7 | 4 | 0.40 | 2022 quarterfinal (Mid-America Christian) |
+
+**Change:** `conf-prestige.json` NAIA ranks: Sun 21 (now `rk-solid`, the top NAIA slot's class), AMC 22, WHAC 23, SAC 24 (was SAC 21, Sun 22, AMC 23, WHAC 24). AMC ahead of WHAC is the close call (same win total; AMC higher per team and a semifinal). The SAC's fall is mostly Oklahoma Wesleyan leaving it.
+
+**Fixes found while researching:**
+- `conferences.json` `otherSchools` rewritten from the 2026 standings: SAC dropped Langston, Oklahoma Wesleyan and Southern Nazarene (none are in its 2026 men's soccer standings) and gained Mid-America Christian, John Brown, Science & Arts, Southwestern Christian University, Nelson, Central Christian, Texas Wesleyan and Panhandle State; Sun dropped Embry-Riddle and gained St. Thomas, SCAD Savannah, New College of Florida and Florida Memorial; AMC dropped William Penn, Central Methodist and Culver-Stockton and gained Central Baptist, Williams Baptist and Mission. Each card now sums to its `soccerTeams` (10, 9, 6).
+- `indiana_tech`: the NAIA labels its 2021 loss to Mobile a national quarterfinal, so `titles`, `rec` and the 2021 `confRecord` note now say quarterfinals in 2021, 2023 and 2025. No score change.
+
+**Validation:** `validate_schools.py` PASS (175), `validate_consistency.js` Issues: 0, `check_no_jargon.py` PASS. Local browser: rankings table shows Sun 21 / AMC 22 / WHAC 23 / SAC 24 with 9 / 6 / 10 / 10 total programs; no departed school appears on the Conferences tab; no "undefined"/"NaN"; Indiana Tech modal shows the 2021 quarterfinal.
+
+---
+
 ### v45.75 (2026-09-28) — Add Indiana Tech (NAIA, WHAC); the WHAC joins the guide as a new conference
 
 **Why:** owner request (`/new-school https://indianatechwarriors.com/sports/mens-soccer`). Indiana Tech was not in the guide (duplicate check matched only Indiana University, a different school).

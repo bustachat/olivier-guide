@@ -202,16 +202,6 @@
   {
     "rank": 21,
     "rankClass": "rk-solid",
-    "name": "SAC",
-    "group": "sac",
-    "fullName": "Sooner Athletic (NAIA)",
-    "div": "NAIA",
-    "divBadge": "d-NAIA",
-    "scholarships": "Up to 12 equivalencies, no per-player cap"
-  },
-  {
-    "rank": 22,
-    "rankClass": "rk-dev",
     "name": "Sun Conference",
     "group": "sun-conference",
     "fullName": "Sun Conference (NAIA Florida)",
@@ -220,7 +210,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 23,
+    "rank": 22,
     "rankClass": "rk-dev",
     "name": "AMC",
     "group": "amc",
@@ -230,11 +220,21 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 24,
+    "rank": 23,
     "rankClass": "rk-dev",
     "name": "WHAC",
     "group": "whac",
     "fullName": "Wolverine-Hoosier Athletic (NAIA)",
+    "div": "NAIA",
+    "divBadge": "d-NAIA",
+    "scholarships": "Up to 12 equivalencies, no per-player cap"
+  },
+  {
+    "rank": 24,
+    "rankClass": "rk-dev",
+    "name": "SAC",
+    "group": "sac",
+    "fullName": "Sooner Athletic (NAIA)",
     "div": "NAIA",
     "divBadge": "d-NAIA",
     "scholarships": "Up to 12 equivalencies, no per-player cap"

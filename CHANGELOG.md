@@ -6,6 +6,27 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.75 (2026-09-28) — Add Indiana Tech (NAIA, WHAC); the WHAC joins the guide as a new conference
+
+**Why:** owner request (`/new-school https://indianatechwarriors.com/sports/mens-soccer`). Indiana Tech was not in the guide (duplicate check matched only Indiana University, a different school).
+
+**Research (all read in Claude-in-Chrome from the school's and conference's own sites):**
+- **Roster (2026, 35 players, 5 GK):** 12 midfielders — 4 seniors/grad students clear before 2027, 6 juniors, 1 sophomore, 1 freshman. 10 of the 12 transferred in (6 from junior colleges, 4 from four-year schools), so `recruit_pathway: "Portal/JUCO-heavy"`. Full roster archived to `data/rosters/indiana_tech/2026-09-28.json`.
+- **Coach:** Jack Rose, acting head coach from January 2026, first full season 2026 (assistant 2024-25). Email from the official coaches page; no phone published. Scored 52 (solid) — good assistant pedigree, no head-coaching record yet. Ranks 153 of 175; the 22 coaches below moved down one.
+- **Results (school schedule pages + whac.net standings 2021-22 to 2025-26):** WHAC Tournament champions five straight years (2021-2025), WHAC regular-season champions 2021, NAIA national quarterfinals 2023 and 2025.
+- **Degree:** Exercise Science - Pre-Professional Concentration, B.S. (2026-2027 catalog, poid 5781), written for PT/OT/chiropractic graduate study. 9 of 16 ACU units, counting required courses only; two units depend on in-degree choices (Sport Psychology vs Health Psychology, internship vs research), disclosed in the note. No separate functional anatomy, resistance training, advanced exercise physiology or clinical prescription course.
+- **Cost (2026-27 cost sheet):** tuition $32,872 + Kalbfleisch double $7,350 + full meal plan $5,972 + student services fee $560 + sciences program fee $2,106 = **$48,860**. The sheet does not say whether Exercise Science pays the program fee, so it is included as the conservative value and disclosed ($46,754 without it). Health insurance excluded by convention.
+- **Merit aid:** international merit $5k-$18k/yr by high-school GPA ($12,000 at 2.79-2.99). No published GPA minimum for international admission.
+- **Enrollment:** 1,650 undergraduates (NCES College Navigator, "City: Large"). `city: true` (Fort Wayne, consistent with Akron and Reno), `warm: false`.
+
+**Scores (formula-derived, cross-checked by `refresh_school.py`'s independent cascade):** devScores 62/58/64, Fit **46**, soccer 43, minutes 53 (trajectory 45/65/80/90 from opportunity score 14), academic 63, lifestyle 50, value 30. `fundingPathway: "capped"` (NAIA, −3). Housing available (residence halls on the cost sheet).
+
+**New conference — WHAC:** `conferences.json` card (founded 1992 per whac.net history page; 10 members, all 10 play men's soccer in 2026-27; 0 MLS picks 2022-2026), `conf-prestige.json` row placed at **24, directly after AMC** at the bottom of the NAIA block (SCIAC and JUCO moved to 25 and 26). This placement is a default, not a ranking judgment — move it if you rate the WHAC above other NAIA conferences. `js/app.js`: CONF_ALIAS_MAP (`whac`, `wolverine-hoosier`), CONF_CHIP_LABELS, CONF_CHIP_ORDER, plus DOMAINS/SITE_URLS/SOCIAL for the school (soccer Instagram and X linked from the official athletics site).
+
+**Validation:** `validate_schools.py` PASS (175 schools), `validate_consistency.js` **Issues: 0**, `check_no_jargon.py` PASS, `check_roster_arithmetic.py` PASS, `node --check js/app.js` OK, all touched JSON valid. `new-school` coverage check: its only MISSING was a false positive ("Tech" matched Utah Tech in the Mountain West's other-schools list). **Local browser (port 8787):** 175 schools loaded at v45.75; card in the NAIA section with Fit 46% (matches the live recompute); all 9 modal tabs render with no "undefined"/"NaN"; modal logo loads from `/favicon.ico`; WHAC (1) filter chip present; Conferences tab WHAC card lists Indiana Tech and the rankings row shows 10 total programs; Minutes Outlook card shows ✓ 2026-27 / 53 / Crowded; ACU row present; Financial Model selector includes it; Compare renders with Jack Rose as head coach; map dot (431,153) lands on land.
+
+---
+
 ### v45.74 (2026-09-24) — Fix: 3 of the 8 remaining stale rosters refreshed; a genuine coach vacancy found at Wilbur Wright
 
 **Why:** the 8 schools left on 2025-26 rosters after Batch 7 (v45.45) were re-checked, per the owner's request, rather than assumed permanently stuck. `monroe_college` was excluded per its standing owner ruling (mid-transition to NCAA D2).

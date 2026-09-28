@@ -1097,6 +1097,7 @@ const DOMAINS = {
   mercyhurst:   'hurstathletics.com',
   georgian_court: 'gculions.com',
   columbia_college: 'columbiacougars.com',
+  indiana_tech: 'indianatechwarriors.com',
   northeast_cc: 'northeasthawks.com',
   monroe_college: 'monroeumustangs.com',
   tyler_jc:     'apacheathletics.com',
@@ -1274,6 +1275,7 @@ const SITE_URLS = {
   mercyhurst:   'https://www.mercyhurst.edu',
   georgian_court: 'https://www.georgian.edu',
   columbia_college: 'https://www.ccis.edu',
+  indiana_tech: 'https://www.indianatech.edu',
   northeast_cc: 'https://www.northeast.edu',
   monroe_college: 'https://www.monroeu.edu',
   tyler_jc:     'https://www.tjc.edu',
@@ -1463,6 +1465,7 @@ const SOCIAL = {
   mercyhurst:     ['https://instagram.com/hurstmsoccer',        'https://x.com/hurstmsoccer',        'https://facebook.com/LakersMensSoccer', null],
   georgian_court: ['https://instagram.com/gcu_mens_soccer',   'https://x.com/GCULions',           null,                                    null],
   columbia_college: ['https://instagram.com/columbiacougarsoccer', null,                          null,                                    null],
+  indiana_tech:   ['https://instagram.com/intechmsoccer',     'https://x.com/INTechMSoccer',       'https://www.facebook.com/INTechWarriors', 'https://www.youtube.com/intechwarriors'],
   northeast_cc:   ['https://instagram.com/NortheastHawks',    'https://x.com/NortheastHawks',      'https://facebook.com/northeastcchawks', null],
   monroe_college: ['https://instagram.com/monroemsoc',        'https://x.com/MonroeMustangs',      'https://facebook.com/monroeathletics',  null],
   tyler_jc:       [null,                                       null,                                null,                                    null],
@@ -2197,6 +2200,7 @@ const CONF_ALIAS_MAP = {
   'northeast conference': 'nec', 'nec': 'nec',
   'mountain east': 'mec', 'mec': 'mec',
   'american midwest': 'amc', 'amc': 'amc',
+  'wolverine-hoosier': 'whac', 'whac': 'whac',
   'ivy league': 'ivy-league', 'ivy': 'ivy-league',
   'ssc': 'ssc', 'sunshine state': 'ssc',
   'ccaa': 'ccaa', 'california collegiate': 'ccaa',
@@ -2588,6 +2592,7 @@ const CONF_CHIP_LABELS = {
   'sac':              'SAC',
   'sun-conference':   'Sun Conf',
   'amc':              'AMC',
+  'whac':             'WHAC',
   // D3
   'sciac':            'SCIAC',
   // JUCO
@@ -2601,7 +2606,7 @@ const CONF_CHIP_ORDER = [
   'pac-12','mountain-west','caa','mac','wcc','asun','america-east','patriot','summit','nec',
   'ivy-league',
   'ssc','ccaa','cacc','lsc','mec',
-  'sac','sun-conference','amc',
+  'sac','sun-conference','amc','whac',
   'sciac',
   'cccaa','njcaa',
 ];

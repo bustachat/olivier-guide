@@ -232,6 +232,16 @@
   {
     "rank": 24,
     "rankClass": "rk-dev",
+    "name": "WHAC",
+    "group": "whac",
+    "fullName": "Wolverine-Hoosier Athletic (NAIA)",
+    "div": "NAIA",
+    "divBadge": "d-NAIA",
+    "scholarships": "Up to 12 equivalencies, no per-player cap"
+  },
+  {
+    "rank": 25,
+    "rankClass": "rk-dev",
     "name": "SCIAC",
     "group": "sciac",
     "fullName": "Southern CA Intercollegiate (D3)",
@@ -240,7 +250,7 @@
     "scholarships": "Zero athletic scholarships"
   },
   {
-    "rank": 25,
+    "rank": 26,
     "rankClass": "rk-dev",
     "name": "CCCAA/NJCAA",
     "group": [

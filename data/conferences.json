@@ -877,6 +877,46 @@
     ]
   },
   {
+    "id": "whac",
+    "group": "whac",
+    "name": "Wolverine-Hoosier Athletic Conference",
+    "abbr": "WHAC",
+    "tier": "NAIA",
+    "tierClass": "tier-naia",
+    "prestige": "NAIA",
+    "founded": 1992,
+    "teams": 10,
+    "soccerTeams": 10,
+    "soccerTeamsSource": "whac.net 2026-27 men's soccer standings and member list, checked 2026-09-28",
+    "ncaaTitles": 0,
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026 (data/mls-draft-picks-2022-2026.json): no pick from a current WHAC member; checked 2026-09-28",
+    "scholarships": "NAIA — 12 equivalencies, no per-player cap",
+    "maxAid": "12",
+    "otherSchools": [
+      "Madonna University",
+      "University of Northwestern Ohio",
+      "Lawrence Technological University",
+      "Aquinas College",
+      "Cleary University",
+      "Cornerstone University",
+      "Defiance College",
+      "University of Michigan-Dearborn",
+      "Rochester Christian University"
+    ],
+    "desc": "NAIA programs in Michigan, Indiana and Ohio.",
+    "color": [
+      "#ffedd5",
+      "#ea580c"
+    ]
+  },
+  {
     "id": "patriot",
     "group": "patriot",
     "name": "Patriot League",

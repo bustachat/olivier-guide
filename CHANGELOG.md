@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.77 (2026-10-03) — Akron recruit_pathway_note corrected (label unchanged)
+
+**Why:** the owner asked how many internationals Akron takes directly and how many are JUCO transfers. Reading Akron's own archived rosters showed the stored note ("not one of the 11 MFs lists a previous college... Akron does not use the portal") was wrong. Akron's 2026-27 roster page has no previous-college column, so the empty cells had been read as "no transfer".
+
+**Evidence (gozips.com roster tables, 2022-2025, read in Chrome 2026-10-03):** roughly a third of each roster is international (11, 7, 10, 10 of 30, 30, 30, 28); 5 to 8 players a year transferred in, mostly from NCAA programs; only 4 JUCO players in four seasons (Kawahara and Kingsford, both 2022 only; Sangwa, 2022-23; Kossehasse, 2025-26, all but Kingsford from Iowa Western CC). Of the 11 current midfielders, 2 are confirmed transfers (Morck from St. John's, Sullivan from Saint Louis), 4 are true freshmen, 4 have no previous college listed, 1 (Tolaba) is unknown.
+
+**Changed:** `akron` `minutesOutlook.recruit_pathway_note` in `data/d1-other.json`, rewritten with the real breakdown. `recruit_pathway` stays "Freshman-friendly": about 20 to 25% transfers is not the roughly even split "Mixed" means. No scoring cascade (the field carries no weight). `guideVersion` v45.76 to v45.77.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0, `json.tool` pass.
+
+**Open:** the 2026-27 page hides previous schools, so refresh Akron's breakdown from the 2026 archive page once Akron publishes it.
+
+---
+
 ### v45.76 (2026-09-28) — NAIA conferences re-ordered on national tournament results; stale member lists fixed
 
 **Why:** v45.75 placed the new WHAC at the bottom of the NAIA group as a default, not a judgement. The owner asked for an evidence-based order and approved this one.

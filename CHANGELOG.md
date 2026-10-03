@@ -6,6 +6,26 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.79 (2026-10-03) — Add Missouri State (AAC) and UMKC (Summit League), both in the SoccerWire top 10
+
+**Why:** the SoccerWire poll through September 20 had eight ranked schools missing from the guide. These two (Missouri State No. 9, UMKC No. 8) play in conferences the guide already has a card for. The AAC is now complete at 9 of 9 programs; the Summit League has 2 of 6.
+
+**Missouri State** (`missouristate`, `data/aac.json`): Fit 48, dev 78/74/72, `acuAlign` 11. B.S. Exercise Science (Comprehensive), Pre-Professional option, read from the 2026-27 catalog: the required core includes anatomy, physiology, biomechanics, motor learning, exercise physiology, strength and conditioning, sport psychology, exercise testing and a field experience. Direct billed cost $34,818 (non-resident, on campus: tuition and fees $23,280 + food and housing $11,538). Head coach Michael Seabolt (USSF A, on staff since 2007). 1 MLS pick 2022-26 (Jesus Barea, No. 19 overall). Roster: 13 midfielders, 7 graduating; 26 of the 27 players are from outside the US, and 8 of 27 are transfers (one junior college player from Monroe).
+
+**UMKC** (`umkc`, `data/d1-other.json`): Fit 52, dev 77/76/76, `acuAlign` 5. UMKC has no Exercise Science major (checked in the 2026-27 catalog), so the stored degree is the Bachelor of Health Sciences, with an optional Exercise Science minor noted but not counted. Direct billed cost $49,552 (2025-26, the newest year UMKC publishes: tuition and fees $33,930 + Residential Life $15,622). Head coach Ryan Pore (played seven years pro, drafted 16th overall in 2005; 2024 Summit champions and NCAA Round of 16). 0 MLS picks 2022-26. Roster: 12 midfielders, 5 graduating; 19 of 32 players are from outside the US, and 3 of 32 are junior college transfers (Johnson County CC, Indian Hills, Saint Louis CC). Soccer-specific performance coach, goalkeeping coach and an eight-camera video system.
+
+**Files:** `data/aac.json`, `data/d1-other.json`, `data/coaches.json` (179 coaches, ranks re-assigned), `data/pipeline.json` (Missouri State row; UMKC has no picks so no row), `data/conferences.json` (Kansas City removed from the Summit card's other-schools list), `js/app.js` (DOMAINS, SITE_URLS, SOCIAL, AAC and Summit section intros), `CLAUDE.md` (reference table, file map, counts), `athletes/olivier.json` (v45.79).
+
+**Validation:** `validate_schools.py` pass (179 schools), `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass, coach ranking contiguous, `check_new_school_coverage.py` clean for both. Local browser: 179 schools, live Fit matches stored (48 and 52), both Details modals open all 9 tabs with no "undefined", both map dots on land, AAC section 9 cards and Summit section 2, both on the Conferences, Minutes Outlook, ACU Alignment, Coaches and Financial pages (Missouri State on Pro Pipeline).
+
+**Caveats:**
+- UMKC's Residential Life pages did not state a first-year housing requirement or guarantee, so housing is stored as available with that caveat in the note rather than as limited.
+- Missouri State's `size` is the whole Springfield campus (25,238, fall 2025); UMKC's is undergraduates only (10,594); no undergraduate-only figure was found for Missouri State.
+- UMKC's seating (about 850) comes from an older Kansas City Athletics release; the 2026 upgrade article does not restate it.
+- Utah Valley was left for a later batch.
+
+---
+
 ### v45.78 (2026-10-03) — Add Boston College and Virginia Tech (ACC, D1); the ACC now has all 15 men's soccer programs
 
 **Why:** the owner asked whether the guide held every D1 school in the big conferences. The NCAA member directory (2026-27, men's soccer) showed the Big Ten (11) and Big East (12) complete and the ACC two short: Boston College and Virginia Tech. Both were already listed as gaps in §6F. The guide holds no record of a deliberate decision to leave them out.

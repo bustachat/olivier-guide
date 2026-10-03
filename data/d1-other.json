@@ -1901,5 +1901,270 @@
         "covered": false
       }
     ]
+  },
+  {
+    "id": "umkc",
+    "profileDepth": "full",
+    "name": "UMKC",
+    "full": "University of Missouri-Kansas City (Kansas City Roos)",
+    "loc": "Kansas City, MO",
+    "div": "D1",
+    "conf": "Summit League",
+    "confKey": "summit",
+    "region": "midwest",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#eaf1fb",
+      "#0047ba"
+    ],
+    "kinRank": "Foundation (no Exercise Science major; Bachelor of Health Sciences with an optional Exercise Science minor)",
+    "degreeTitle": "B.H.S. Bachelor of Health Sciences (Exercise Science minor available)",
+    "acuAlign": 5,
+    "acuAlignNote": "UMKC has no Exercise Science or Kinesiology major. The closest degree is the Bachelor of Health Sciences in the School of Nursing and Health Studies. It requires Anatomy & Physiology I and II (HLSC 120 and 160, with a Human Biology course as one alternative), Human Growth and Development (HLSC 252), Research Methods in Health Sciences (HLSC 476) and a 6-credit Health Science Internship (HLSC 494). An optional Exercise Science minor, run jointly with the School of Education, Social Work and Psychological Sciences, can be added, but it is not part of the degree so its courses are not counted here. The required courses do not cover exercise physiology, biomechanics, exercise prescription or sport psychology.",
+    "soccerLevel": "Summit League: back-to-back NCAA Tournaments (2024 Round of 16, 2025 Round of 32) under a head coach who played in MLS",
+    "soccerLevelShort": "Summit League",
+    "fin": {
+      "costNum": 49552,
+      "tuition": 33930,
+      "roomBoard": 15622,
+      "fees": 0,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "UMKC non-resident direct billed cost $49,552 (2025-26, the newest year in UMKC's published undergraduate cost estimates; taken from its Health Studies non-resident table, Living on Campus): tuition and fees $33,930 + Residential Life housing and dining plans $15,622. UMKC publishes tuition and fees combined, so the combined figure is recorded as tuition, with fees at $0. Housing and dining plans vary. Its headline total is $55,676, adding books and supplies ($786), transportation ($1,075) and personal expenses ($4,263) that this guide excludes. Other UMKC programs have different tuition (the base-rate table shows $31,738). An athletic scholarship is the realistic way to fund a place."
+    },
+    "aid": "Athletic",
+    "size": 10594,
+    "prePT": "Foundation: no exercise science major; Bachelor of Health Sciences with an optional Exercise Science minor and pre-health advising",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "2.75 core GPA (17 core courses) for automatic admission",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "UMKC admits first-time students automatically with a 2.75 GPA in the 17 core courses, which Olivier's 2.8 meets. International applicants also need proof of English proficiency and translated academic records. The BHS program itself requires a 2.0 GPA to stay in good standing.",
+      "status": "eligible"
+    },
+    "mapX": 356,
+    "mapY": 197,
+    "fitOlivier": 52,
+    "lensScores": {
+      "overall": 52,
+      "soccer": 56,
+      "academic": 42,
+      "minutes": 48,
+      "lifestyle": 50,
+      "value": 33
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Summit 4-1-1, co-champions",
+        "note": "12-4-5 overall. Summit League regular-season co-champions. Beat Lindenwood 1-0 in the NCAA Tournament in the program's first home NCAA match, ranked as high as No. 18 and finished No. 25 in the national poll."
+      },
+      {
+        "yr": 2024,
+        "pos": "Summit 5-2-1, champions",
+        "note": "14-5-3 overall, a program record for wins. Summit League champions, beating Saint Louis and No. 15 Missouri State in the NCAA Tournament before losing to Pittsburgh in extra time in the Round of 16."
+      },
+      {
+        "yr": 2023,
+        "pos": "Summit 2-3-3",
+        "note": "4-8-6 overall. Won a Summit League semifinal on penalties against No. 23 Denver."
+      },
+      {
+        "yr": 2022,
+        "pos": "Summit 4-1-3",
+        "note": "7-5-5 overall, the first winning season in 12 years. Reached the Summit League championship final for the first time since 2009."
+      },
+      {
+        "yr": 2021,
+        "pos": "Summit 2-2-2",
+        "note": "3-7-5 overall. Lost the Summit League semifinal to top-seeded Denver on penalties after 110 scoreless minutes."
+      },
+      {
+        "yr": 2020,
+        "pos": "Summit 5-4-1, 4th",
+        "note": "5-8-1 overall in the spring 2021 season. Ryan Pore was named Summit League Coach of the Year in his first season."
+      }
+    ],
+    "titles": [
+      "2024 Summit League champions",
+      "2025 Summit League regular-season co-champions",
+      "NCAA Round of 16 (2024)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "No SuperDraft picks in the last five drafts"
+    },
+    "devScores": {
+      "tactical": 77,
+      "technical": 76,
+      "fitness": 76
+    },
+    "devScoresNote": "5a rubric, training environment only. Live kcroos.com MSOC staff (2026): HC Ryan Pore + Rafael Martinez (Assoc HC) + Filippo Errico (Goalkeeping Coach) + Nick McDonald (Asst) = 4 coaches including a dedicated goalkeeping coach. Support listed on the MSOC page: an assistant athletic trainer assigned to men's soccer and a Sports Performance coach for men's and women's soccer, so strength and conditioning is soccer-specific, not Olympic-sports-wide. Facilities: Durwood Soccer Stadium, lighted FieldTurf CORE, shared with women's soccer, with a new Daktronics video board, an eight-camera Spiideo video system (four cameras added summer 2026) and a remodeled men's soccer locker room with a media center. Seating is about 850 per Kansas City Athletics' own earlier release. Scored above Syracuse (76/74/73) on technical and fitness because of the soccer-specific performance coach and the video-analysis system; held below the top ACC staffs by the small stadium. Results excluded.",
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Durwood Soccer Stadium (FieldTurf, lights, new video board)",
+      "Eight-camera Spiideo video system",
+      "Soccer-specific sports performance coach and athletic trainer"
+    ],
+    "courses": [
+      "HLSC 120 / HLSC 160: Anatomy & Physiology I and II",
+      "HLSC 252: Human Growth and Development",
+      "HLSC 110: Personal Wellness",
+      "HLSC 476: Research Methods in Health Sciences",
+      "HLSC 494: Health Science Internship (6 credits)"
+    ],
+    "rec": "UMKC is the most promising mid-major in this part of the guide on the field: back-to-back NCAA Tournaments in 2024 and 2025, a head coach who played in MLS and a roster with 19 of 32 players from outside the US. It also has a soccer-specific performance coach, a goalkeeping coach and an eight-camera video system. The weakness is academic: there is no exercise science or kinesiology major, so the closest degree is a Bachelor of Health Sciences with an optional Exercise Science minor. Kansas City is a real city, with the Country Club Plaza next to campus, and the 2026-27 midfield has 12 players with 5 graduating. Cold winters are the main lifestyle cost.",
+    "url": "https://kcroos.com/sports/mens-soccer",
+    "domain": "umkc.edu",
+    "culture": {
+      "vibe": "UMKC is an urban public university in the middle of Kansas City, Missouri, next to the Country Club Plaza and the Nelson-Atkins Museum. It is a commuter-friendly campus with a growing residential population. Winters are cold and summers are hot and humid.",
+      "thingsToDo": "The Country Club Plaza shopping and dining district is next to campus. Kansas City's jazz and barbecue scene, the Power & Light District, Sporting KC at Children's Mercy Park and the Kauffman and Arrowhead sports complexes are all within a short drive.",
+      "socialScene": "Student life is more city- and commuter-oriented than at a traditional residential campus. The soccer program is highly international, so an international recruit will find many teammates from Europe and Asia. Kansas City is also a host city for the 2026 World Cup.",
+      "olivierMatch": "★★★ A real city and an international squad, with a program on the rise. The academic fit is the weak point because there is no exercise science major, and winters are cold.",
+      "lifestyleTags": "Real city campus, international squad, cold winters, rising program"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Durwood Soccer Stadium on UMKC's campus beside the Country Club Plaza, with a lighted FieldTurf CORE synthetic surface and a four-lane training and recreation track around it. It is shared with women's soccer. Kansas City Athletics describes it as an 850-seat facility, and the 2025 NCAA Tournament home match was a sell-out. Summer 2026 upgrades added a 34-by-17-foot Daktronics video board, four more Spiideo cameras and a remodeled men's soccer locker room with a media center.",
+      "trainingFields": "The official pages name only Durwood Soccer Stadium for men's soccer. No separate training pitch or indoor soccer facility is listed.",
+      "strengthConditioning": "A Sports Performance coach is assigned to men's and women's soccer, so strength and conditioning is soccer-specific rather than shared across all Olympic sports.",
+      "sportsScience": "An eight-camera Spiideo system gives 360-degree coverage of the stadium for in-the-moment film breakdown and training review. No GPS tracking is listed.",
+      "sportsMed": "An assistant athletic trainer is assigned to men's soccer on the staff page.",
+      "academicLabs": "The School of Nursing and Health Studies teaches the Bachelor of Health Sciences, whose required courses include Anatomy & Physiology I and II.",
+      "extras": "Kansas City Athletics invested in a new video board, camera system and locker room in 2026 after back-to-back NCAA Tournament appearances.",
+      "note": "A small but well-equipped stadium for the Summit League, with soccer-specific performance, video-analysis and athletic training support.",
+      "housing": {
+        "available": true,
+        "note": "UMKC runs residence halls with housing and dining plans (Residential Life), and a contract can be submitted once admitted. The Residential Life pages checked do not state a first-year requirement or a guarantee, so students should submit a contract early."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Guille Munoz",
+        "Miguel Fernandez",
+        "Mathias Baucher",
+        "Raphael Kistmann",
+        "Gabriel Santuari"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Gabriele Galluccio",
+        "Elouan Labadie-Vincent",
+        "Kevin Nkumu"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Bryce Outman",
+        "Shotaro Kodama"
+      ],
+      "recruit_risk": "High",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from UMKC's 2026-27 roster, which lists a previous team for each player. Only 2 of the 12 midfielders list a college (Raphael Kistmann from Saint Louis Community College and Gabriel Santuari from Clemson); the others list pro or club academies such as Lyon, Osasuna and Sporting KC, or nothing. Across the whole roster, 6 of 32 players are transfers, 3 of them from junior colleges (Johnson County CC, Indian Hills and Saint Louis CC). 19 of the 32 players are from outside the US.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 40,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 90,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 of 12 midfielders graduate before 2027, including three in their fifth year. Three more (Galluccio, Labadie-Vincent and Nkumu) will be seniors when Olivier arrives, 2 will be juniors and 2 first-year midfielders will be sophomores, so there is room but also real competition from Europeans in the squad."
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": true
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": true
+      }
+    ]
   }
 ]

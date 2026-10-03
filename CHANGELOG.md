@@ -6,6 +6,23 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.80 (2026-10-03) — Add Utah Valley (Big West)
+
+**Why:** Utah Valley was on the §6F gap list for the Big West (the conference now holds 4 of 7 programs) and is a notable JUCO destination: 10 of its 29 players came from junior colleges.
+
+**Utah Valley** (`utahvalley`, `data/big-west.json`): Fit 37, dev 78/77/80, `acuAlign` 10. B.S. Exercise Science read from the university catalog: the required courses include Human Anatomy and Human Physiology with labs, Exercise Physiology with lab, Biomechanics, Kinesiology, Motor Learning, Exercise Testing and Prescription and Research Methods. Direct billed cost $34,617 (2026-27 non-resident: tuition $18,908 + fees $669 + off-campus housing and food $15,040). **Utah Valley has no on-campus housing** (its own housing guide says so), so the 6-point housing penalty applies, which is why Fit is 37 despite a strong degree and support staff. Open admission, no minimum GPA. New head coach Michael Chesler (USSF A, ninth season on staff) since November 2025. Support staff includes a Director of Performance, a sports dietitian, two mental-performance providers and a dedicated athletic trainer; new 3,000-capacity UCCU Stadium opened in 2025. 2 MLS picks 2022-26 (Jojea Kwizera 2022, Isaac Emojong 2026). Roster: 11 midfielders, 3 graduating; 4 of the 11 are JUCO transfers (Pima CC, Highline College, Indian Hills, Daytona State), and 15 of 29 players overall are transfers, 10 of them from junior colleges. 14 of 29 are from outside the US.
+
+**Files:** `data/big-west.json`, `data/coaches.json` (180 coaches, ranks re-assigned), `data/pipeline.json` (Utah Valley row), `data/conferences.json` (Utah Valley removed from the Big West card's other-schools list), `js/app.js` (DOMAINS, SITE_URLS, SOCIAL, Big West section intro), `CLAUDE.md`, `athletes/olivier.json` (v45.80).
+
+**Validation:** `validate_schools.py` pass (180 schools), `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass, coach ranking contiguous. Local browser: 180 schools, live Fit matches stored (37), Details modal opens 9 tabs with no "undefined", map dot on land, Big West section shows 4 cards.
+
+**Notes:**
+- `check_new_school_coverage.py` reported "Utah Tech" under Mountain West other-schools as a match for "Utah Valley". That is a substring false positive on the word "Utah", not a real entry.
+- The stadium's playing surface and lighting are not stated on the pages checked, so the notes do not claim them.
+- Stored `size` (43,000) is the university's overall headcount from its own release; no undergraduate-only figure was used.
+
+---
+
 ### v45.79 (2026-10-03) — Add Missouri State (AAC) and UMKC (Summit League), both in the SoccerWire top 10
 
 **Why:** the SoccerWire poll through September 20 had eight ranked schools missing from the guide. These two (Missouri State No. 9, UMKC No. 8) play in conferences the guide already has a card for. The AAC is now complete at 9 of 9 programs; the Summit League has 2 of 6.

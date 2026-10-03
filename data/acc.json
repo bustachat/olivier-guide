@@ -3519,5 +3519,524 @@
         "covered": true
       }
     ]
+  },
+  {
+    "id": "bostoncollege",
+    "profileDepth": "full",
+    "name": "Boston College",
+    "full": "Boston College (Eagles)",
+    "loc": "Chestnut Hill, MA",
+    "div": "D1",
+    "conf": "ACC",
+    "confKey": "acc",
+    "region": "northeast",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#fdf2f4",
+      "#8a1538"
+    ],
+    "kinRank": "Foundation (no Exercise Science major; Biology B.S. is the pre-health route)",
+    "degreeTitle": "B.S. Biology (pre-health route)",
+    "acuAlign": 1,
+    "acuAlignNote": "Boston College has no Exercise Science or Kinesiology major. The closest routes are the Biology B.S. in the Morrissey College of Arts and Sciences or Applied Psychology and Human Development in the Lynch School. Biology's required courses (Molecules and Cells, Ecology and Evolution, Investigations in Molecular Cell Biology) cover the general biology unit. Human Physiology with Lab is available, but the major only asks students to take one course from a physiology list that also includes Developmental Biology and Ornithology, so it is not counted as guaranteed. Nothing in the required curriculum covers biomechanics, exercise physiology, exercise prescription or sport psychology.",
+    "soccerLevel": "ACC: lower half of the conference in recent seasons, now under an interim head coach",
+    "soccerLevelShort": "ACC",
+    "fin": {
+      "costNum": 95258,
+      "tuition": 75070,
+      "roomBoard": 18834,
+      "fees": 1354,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Boston College direct billed cost $95,258 (2026-27, taken from Boston College's official undergraduate financial aid cost table): tuition $75,070 + housing on Newton or Upper Campus $11,270 + food $7,564 + mandatory fees $1,354. That total matches the university's announced annual cost of attendance of $95,258 (Board of Trustees, May 2026). First-year students also pay a one-time $670 orientation fee and a $50 student ID fee, which are not included here. Boston College says it meets 100% of demonstrated need for domestic students, so need-based aid is not a route for an international recruit and an athletic scholarship is the realistic way to fund a place. Students can adjust the food plan between $6,934 and $8,600."
+    },
+    "aid": "Athletic",
+    "size": 9654,
+    "prePT": "Foundation: no exercise science major; Biology B.S. plus health-professions advising",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "3.8+ typical (extremely selective, 12.7% of applicants admitted for the Class of 2030)",
+      "minSchol": "No merit aid; need-based aid is for domestic students only",
+      "note": "Boston College is among the most selective universities in the US. A 2.8 GPA is a very significant barrier. Athletic scholarship is the main route in, and the coach relationship matters most.",
+      "status": "below"
+    },
+    "mapX": 538,
+    "mapY": 133,
+    "fitOlivier": 47,
+    "lensScores": {
+      "overall": 47,
+      "soccer": 63,
+      "academic": 20,
+      "minutes": 26,
+      "lifestyle": 50,
+      "value": 28
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "ACC 1-6-1",
+        "note": "7-9-1 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "ACC 1-4-3",
+        "note": "6-5-6 overall. Finished the regular season with a 1-0 road win over No. 8 North Carolina, the program's first ranked win since 2019. Lost the ACC Tournament first round at SMU, 0-1."
+      },
+      {
+        "yr": 2023,
+        "pos": "ACC 0-5-3",
+        "note": "3-9-5 overall. Lost the ACC Tournament first round at Duke, 2-3."
+      },
+      {
+        "yr": 2022,
+        "pos": "ACC 1-4-3",
+        "note": "4-7-5 overall. Lost the ACC Tournament first round at North Carolina, 0-1."
+      },
+      {
+        "yr": 2021,
+        "pos": "ACC 2-4-2",
+        "note": "6-7-2 overall. Unbeaten at home (5-0-2), including ACC wins over Syracuse and Wake Forest. Lost the ACC Tournament first round at Virginia Tech, 0-1 in overtime."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "CJ Williams, 2025 SuperDraft (New England Revolution)",
+        "Victor Souza, 2023 SuperDraft (New England Revolution)",
+        "Amos Shapiro-Thompson, 2023 SuperDraft (New York Red Bulls)"
+      ],
+      "draftRank": "Small but steady: 3 SuperDraft picks in the last five drafts (2023 and 2025), two of them by the nearby New England Revolution"
+    },
+    "devScores": {
+      "tactical": 75,
+      "technical": 72,
+      "fitness": 73
+    },
+    "devScoresNote": "5a rubric, training environment only. Live bceagles.com MSOC staff (2026): interim HC Francesco D'Agostino + Braima Samati (Asst) + Luke Perry (Asst) + Pedro Zampilli Ambrosio (Dir of Ops / Goalkeeping Coach) = 4 coaches including a dedicated goalkeeping coach; D'Agostino holds a UEFA A licence and was associate HC for six years, so the staff is stable even though the HC title is interim. Facilities: Newton Campus Lacrosse & Soccer Field, AstroTurf 3D60H, lights, press box, shared with lacrosse; no separate training pitch or indoor soccer facility named. Support: Olympic-sports strength & conditioning department (director + assistants, not soccer-specific), Director of Sports Medicine for Olympic Sports plus a large athletic-training staff, and an Assistant AD of Sports Nutrition in the staff directory. No GPS or video-analysis staff listed on the MSOC page. Scored just under Syracuse's 76/74/73 (similar shared-field profile, but a fourth coach and a goalkeeping coach) and below Duke's 83/82/81. Results excluded.",
+    "tags": [
+      "city",
+      "acad",
+      "soccer"
+    ],
+    "facilities": [
+      "Newton Campus Lacrosse & Soccer Field (AstroTurf, lights)",
+      "Olympic-sports strength & conditioning staff (director plus assistants)",
+      "Sports medicine, sports nutrition and full-time athletic trainers"
+    ],
+    "courses": [
+      "BIOL 2000: Molecules and Cells",
+      "BIOL 2010: Ecology and Evolution",
+      "BIOL 2040: Investigations in Molecular Cell Biology",
+      "BIOL 3030: Introduction to Physiology (one of the physiology options)",
+      "BIOL 4330: Human Physiology with Lab (one of the physiology options)"
+    ],
+    "rec": "Boston College is a strong academic brand in a real city, with an ACC schedule and a 2026-27 midfield of 11 players, only two of whom graduate this year. The soccer program has been in the lower half of the ACC for several seasons and is now under an interim head coach, so the staff situation is unsettled. The biggest obstacle for Olivier is academic: BC is extremely selective, has no exercise science or kinesiology major, and offers need-based aid to domestic students only. The only realistic route is a substantial athletic scholarship and a Biology B.S. as the pre-health route.",
+    "url": "https://bceagles.com/sports/mens-soccer",
+    "domain": "bc.edu",
+    "culture": {
+      "vibe": "Boston College is a Jesuit university on a leafy suburban campus in Chestnut Hill, a few miles west of downtown Boston. The campus is traditional and collegiate, with strong school spirit around football and hockey. Winters are cold and snowy.",
+      "thingsToDo": "The MBTA Green Line connects campus to downtown Boston, Fenway and the Back Bay. Boston Common, the Seaport, the North End and the Charles River esplanade are all easy trips. Cambridge and its universities are close by.",
+      "socialScene": "Student life centres on the campus community, residence halls and clubs. Boston's large student population and city nightlife are a short ride away. International students are a minority, at about 9% of admitted students in the Class of 2030.",
+      "olivierMatch": "★★★ A real city and a prestigious ACC brand, but cold winters and the hardest academic admission standard in this part of the guide. Strong lifestyle fit if the athletic scholarship and admission can be secured.",
+      "lifestyleTags": "Boston-area campus, Jesuit university, cold winters, very selective"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Newton Campus Lacrosse & Soccer Field (885 Centre St., Newton, Mass.) with an AstroTurf 3D60H artificial surface (installed 2014), permanent canopied team benches, lights (added 2003) and a 30-seat press box with a roof-deck filming area. It opened in 1999 as a natural grass pitch and was named College Soccer Field of the Year by the Soccer Managers Association. It is shared with the lacrosse program, and the official facility page does not state a seating capacity.",
+      "trainingFields": "Boston College's official soccer pages name only the Newton Campus field. No separate training pitch or indoor soccer facility is listed.",
+      "strengthConditioning": "A shared Olympic-sports strength and conditioning department: a director, two assistant directors and several assistant coaches are listed in the athletics staff directory. No coach is assigned to men's soccer alone.",
+      "sportsScience": "The men's soccer staff page lists no GPS tracking or video-analysis staff. The athletics staff directory lists a sports nutrition team led by an assistant athletics director.",
+      "sportsMed": "A large sports medicine department: a director for Olympic sports plus more than a dozen associate and assistant directors and resident athletic trainers in the athletics staff directory.",
+      "academicLabs": "Biology laboratories in the Morrissey College of Arts and Sciences. Boston College has no exercise science or kinesiology program to supply exercise-specific laboratories.",
+      "extras": "Three Boston College players were drafted by MLS clubs in the last five SuperDrafts, two of them by the nearby New England Revolution.",
+      "note": "Solid on-campus match facility and a large shared support department, but nothing soccer-specific beyond the field and a four-person coaching staff.",
+      "housing": {
+        "available": true,
+        "note": "First-year students live on Newton Campus or Upper Campus. Most undergraduates receive three years of guaranteed housing with junior year spent off campus, confirmed on Boston College's Residential Life pages."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Jack Burkhardt",
+        "Connor Gibson"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Dylan Mafong",
+        "Bryan Toro",
+        "Alexi Karalis"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "High",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from Boston College's 2026-27 roster table, which lists a previous team for each player. Only 1 of the 11 midfielders lists a college (Alexi Karalis, from Providence); the others list clubs, academies or high schools such as Boston Bolts, New York Red Bulls and North Carolina FC. Six of the 11 are first-year players. Two non-midfielders also list a college as a previous team (Bryce Copeland-Del Toro from Florida Gulf Coast and Tin Vastic from Palm Beach Atlantic).",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "Only 2 of 11 midfielders (Burkhardt and Gibson) graduate before 2027. Three more (Mafong, Toro and Karalis) will be seniors when Olivier arrives and 6 first-year midfielders will be sophomores, so the first year is a development year in a crowded midfield."
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "virginiatech",
+    "profileDepth": "full",
+    "name": "Virginia Tech",
+    "full": "Virginia Tech (Hokies)",
+    "loc": "Blacksburg, VA",
+    "div": "D1",
+    "conf": "ACC",
+    "confKey": "acc",
+    "region": "south",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#fdf1ee",
+      "#861f41"
+    ],
+    "kinRank": "Strong (Exercise and Health Sciences B.S. with required Human Anatomy & Physiology and Exercise Physiology)",
+    "degreeTitle": "B.S. Exercise and Health Sciences",
+    "acuAlign": 5,
+    "acuAlignNote": "Exercise and Health Sciences is a B.S. in the College of Agriculture and Life Sciences (Department of Human Nutrition, Foods and Exercise). Its required courses include Human Anatomy and Physiology I and II with labs (BMSP 2135/2136 and 2145/2146), Exercise Physiology (HNFE 3804), Exercise and Health (HNFE 2804), Principles of Biology (BIOL 1105/1106) and Evidence-Based Practice in Health Science (HNFE 2484). Kinesiology (HNFE 3824), Strength and Conditioning (HNFE 3814) and Prevention and Care of Athletic Injuries (HNFE 2824) are electives, and the major requires only 2 credits of field study, research or study abroad, so biomechanics, resistance training, sport psychology and a guaranteed practicum are not counted.",
+    "soccerLevel": "ACC: NCAA Tournament regular 2016-2021 (Elite Eight in 2016), lower half of the conference since 2022",
+    "soccerLevelShort": "ACC",
+    "fin": {
+      "costNum": 57914,
+      "tuition": 36414,
+      "roomBoard": 17708,
+      "fees": 3792,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Virginia Tech out-of-state direct billed cost $57,914 (2026-27, taken from Virginia Tech's official Estimated Cost of Attendance, Out-of-State Undergraduate On-Campus): tuition $36,414 + fees $3,792 + housing $10,190 + food $7,518. Its headline total is $65,268, which adds course materials ($1,120), personal expenses ($3,150), transportation ($3,014) and direct loan fees ($70) that this guide excludes; new students also get a $2,150 computer budget line. Virginia Tech says actual charges can differ by college, major, residence hall and meal plan. An athletic scholarship is the realistic way to fund a place."
+    },
+    "aid": "Athletic",
+    "size": 31536,
+    "prePT": "Strong: exercise science degree with required Human Anatomy & Physiology and Exercise Physiology",
+    "prePTShort": "Strong",
+    "gpa": {
+      "minEntry": "3.8+ typical (average admitted GPA 4.06; about 55% of applicants admitted for fall 2025)",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Virginia Tech is selective and a 2.8 GPA is a significant barrier. An athletic scholarship plus coach support is the route in.",
+      "status": "below"
+    },
+    "mapX": 479,
+    "mapY": 193,
+    "fitOlivier": 43,
+    "lensScores": {
+      "overall": 43,
+      "soccer": 59,
+      "academic": 42,
+      "minutes": 38,
+      "lifestyle": 0,
+      "value": 26
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "ACC 2-3-3",
+        "note": "7-4-5 overall. Opened with a win over No. 3 Ohio State and climbed to No. 8 in the national coaches' poll."
+      },
+      {
+        "yr": 2024,
+        "pos": "ACC 1-5-2",
+        "note": "7-6-4 overall, the most wins since 2021."
+      },
+      {
+        "yr": 2023,
+        "pos": "ACC 2-5-1",
+        "note": "4-9-4 overall. Beat No. 5 Louisville on Sept. 15."
+      },
+      {
+        "yr": 2022,
+        "pos": "ACC 0-8-0",
+        "note": "3-13-1 overall, no ACC win."
+      },
+      {
+        "yr": 2021,
+        "pos": "ACC 3-4-1",
+        "note": "11-5-4 overall. NCAA Tournament: beat No. 15 Oregon State and lost to No. 6 Seton Hall on penalties in the Sweet 16."
+      },
+      {
+        "yr": 2020,
+        "pos": "ACC 5-5-2",
+        "note": "7-6-4 overall in the spring 2021 season. Reached the NCAA second round."
+      }
+    ],
+    "titles": [
+      "NCAA Elite Eight (2016)",
+      "Six straight NCAA Tournaments (2016-2021)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Daniel Pereira, No. 1 overall pick in the 2021 SuperDraft (Austin FC)",
+        "Kristo Strickler, 2021 SuperDraft second round (Houston Dynamo FC)"
+      ],
+      "draftRank": "One pick in the last five SuperDrafts; the program's peak was 2021, when Pereira went first overall"
+    },
+    "devScores": {
+      "tactical": 77,
+      "technical": 75,
+      "fitness": 76
+    },
+    "devScoresNote": "5a rubric, training environment only. Live hokiesports.com MSOC staff (2026): HC Mike Brizendine + Patrick McSorley (Assoc HC) + Jeff Kinney (Assoc HC) + Kyle Renfro (Asst) = 4 full-time coaches, no goalkeeping coach listed; Brizendine has been HC since 2009 (17 seasons) and has coached 22 pros. Support listed on the MSOC page: Associate AD for S&C (Olympic Sports) and a Director of Sports Medicine assigned to men's soccer (ATC). Facilities: Thompson Field, natural bluegrass, about 2,028 bench-back seats, permanent lights, irrigation and drainage, shared with women's soccer and lacrosse; Beamer-Lawson indoor practice facility on campus. No GPS or video-analysis staff listed. Scored above Syracuse (76/74/73, 3 coaches) because of the 4th coach, dedicated men's-soccer sports medicine and larger seated stadium, and below Duke (83/82/81). Results (2016 Elite Eight, 2022 winless ACC season) excluded.",
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Thompson Field (natural grass, about 2,028 seats, lights)",
+      "Beamer-Lawson Indoor Practice Facility",
+      "Sports medicine director assigned to men's soccer"
+    ],
+    "courses": [
+      "BMSP 2135/2136: Human Anatomy & Physiology (with labs)",
+      "HNFE 2804: Exercise and Health",
+      "HNFE 3804: Exercise Physiology",
+      "HNFE 3824: Kinesiology (elective)",
+      "HNFE 3814: Strength and Conditioning (elective)"
+    ],
+    "rec": "Virginia Tech combines a real exercise science degree (required Human Anatomy & Physiology and Exercise Physiology) with a long-serving coach, Mike Brizendine, who took the Hokies to six straight NCAA Tournaments from 2016 to 2021 and coached the No. 1 overall MLS pick in 2021. Results have slipped to the lower half of the ACC since 2022. The 2026-27 midfield has 12 players, five of them transfers, so experienced older players will compete for minutes. Blacksburg is a small mountain college town with cold winters, so it is a lifestyle trade-off for a player who wants a warm city, but the academic fit is one of the better ones among ACC schools.",
+    "url": "https://hokiesports.com/sports/mens-soccer",
+    "domain": "vt.edu",
+    "culture": {
+      "vibe": "Virginia Tech is a large public university in Blacksburg, a small college town in the Blue Ridge Mountains of southwest Virginia. The campus is built around Hokie football and the surrounding Appalachian outdoors. The student body is large, at over 31,000 undergraduates.",
+      "thingsToDo": "Hiking and mountain biking in the Jefferson National Forest, the Huckleberry Trail and the New River are all close to campus. Downtown Blacksburg has restaurants and bars along Main Street. Roanoke, the nearest city, is about 45 minutes away.",
+      "socialScene": "Football game days at Lane Stadium define the campus calendar, and Greek life and clubs are large. The town is small, so social life revolves around campus. International students are present but this is not a major-city environment.",
+      "olivierMatch": "★★ Good academics and a proven coach, but Blacksburg is a small, cold mountain town, the opposite of the warm city campus Olivier prefers. The soccer and degree fit are strong; the lifestyle fit is the sacrifice.",
+      "lifestyleTags": "Mountain college town, big football culture, cold winters, strong science degree"
+    },
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "Thompson Field, home of men's soccer, women's soccer and lacrosse, across from Lane Stadium. It has a natural bluegrass surface (about 75 by 120 yards) with underground irrigation and drainage, a permanent Hubbell lighting system, a wireless scoreboard, a game operations center with broadcast booths and about 2,028 bench-back seats, with room around the field for roughly 1,500 more fans.",
+      "trainingFields": "Thompson Field is shared with women's soccer and lacrosse. The Beamer-Lawson Indoor Practice Facility is on campus for bad-weather training.",
+      "strengthConditioning": "A shared Olympic-sports strength and conditioning department led by an associate athletics director, listed on the men's soccer support staff page. No coach is assigned to men's soccer alone.",
+      "sportsScience": "The men's soccer staff page lists no GPS tracking or video-analysis staff.",
+      "sportsMed": "The men's soccer support staff includes a Director of Sports Medicine assigned to men's soccer (MSEd, LAT, ATC), which is a dedicated athletic trainer for the program.",
+      "academicLabs": "The Department of Human Nutrition, Foods and Exercise teaches Exercise Physiology and Human Anatomy & Physiology (with labs) as required courses for the Exercise and Health Sciences major.",
+      "extras": "Thompson Field sits across from Lane Stadium, the football stadium, and next to Tech Softball Park, in the center of the Virginia Tech athletics complex.",
+      "note": "A well-supported ACC program with a seated, lit natural-grass field and a dedicated sports medicine director, though the field is shared and the strength coach is not soccer-specific.",
+      "housing": {
+        "available": true,
+        "note": "All first-year students must live on campus and are guaranteed housing, with limited exemptions. Housing is not guaranteed for returning students, although most who request it are offered a place, confirmed on Virginia Tech's Residential Experience pages."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Yanis Belatrache",
+        "Mathias Yohannes",
+        "Thomas Kleinpenning"
+      ],
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Beltran Alvarez",
+        "Alex Perez",
+        "Ian Marcano",
+        "Freddy Ferguson"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Landan Grange"
+      ],
+      "recruit_risk": "High",
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Read from Virginia Tech's 2026-27 roster, which lists previous schools. 5 of the 12 midfielders list a college: Beltran Alvarez (Florida Gulf Coast), Yanis Belatrache (UCF), Mathias Yohannes (Kentucky), Thomas Kleinpenning (Young Harris) and Freddy Ferguson (Houston Christian and VMI). The other 7 are first-year players or list a high school or academy. Across the whole roster, 9 of 29 players are transfers, including one junior college player (Eduardo Cornejo, from Miami Dade College).",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "3 of 12 midfielders (Belatrache, Yohannes and Kleinpenning) graduate before 2027. Four more (Alvarez, Perez, Marcano and Ferguson) will be seniors when Olivier arrives, 1 will be a junior and 4 first-year midfielders will be sophomores. Five of the 12 are transfers, so a freshman should expect to compete with experienced older players."
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

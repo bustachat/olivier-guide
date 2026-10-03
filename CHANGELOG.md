@@ -6,6 +6,27 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.78 (2026-10-03) — Add Boston College and Virginia Tech (ACC, D1); the ACC now has all 15 men's soccer programs
+
+**Why:** the owner asked whether the guide held every D1 school in the big conferences. The NCAA member directory (2026-27, men's soccer) showed the Big Ten (11) and Big East (12) complete and the ACC two short: Boston College and Virginia Tech. Both were already listed as gaps in §6F. The guide holds no record of a deliberate decision to leave them out.
+
+**Boston College** (`bostoncollege`): Fit 47, dev 75/72/73, `acuAlign` 1. Boston College has no Exercise Science or Kinesiology major (checked on its majors list), so the stored degree is the Biology B.S. as the pre-health route and the ACU alignment is correspondingly low. Direct billed cost $95,258 (tuition $75,070, housing $11,270, food $7,564, fees $1,354), which matches the trustees' announced annual total. Interim head coach Francesco D'Agostino since August 3, 2026 (six years as associate head coach, UEFA A). 3 MLS picks 2022-26. Roster: 11 midfielders, 2 graduating, 3 rising seniors; only 1 lists a college as previous school, so Freshman-friendly.
+
+**Virginia Tech** (`virginiatech`): Fit 43, dev 77/75/76, `acuAlign` 5. B.S. Exercise and Health Sciences, whose required courses include Human Anatomy & Physiology with labs and Exercise Physiology. Direct billed cost $57,914 (tuition $36,414, fees $3,792, housing $10,190, food $7,518), read off the university's own cost sheet. Head coach Mike Brizendine since 2009 (six straight NCAA Tournaments 2016-2021, 2016 Elite Eight, 22 pros). 1 MLS pick 2022-26. Roster: 12 midfielders, 3 graduating, 4 rising seniors; 5 of the 12 list a college as previous school, so Mixed.
+
+**Map:** Boston College's dot is at (538,133), 6.7 map units west of Northeastern's (544,136), so the two Boston-area schools no longer overlap.
+
+**Files:** `data/acc.json` (2 schools), `data/coaches.json` (2 coaches; ranks re-assigned, 177 total), `data/pipeline.json` (2 MLS rows, ranks renumbered), `js/app.js` (DOMAINS, SITE_URLS, SOCIAL), `CLAUDE.md` (reference table, ACC file row, counts), `athletes/olivier.json` (`guideVersion`). No Conferences-tab edit: the card's list, In Guide count and Programs in Guide are derived (now 15 of 15). `ACC` `otherSchools[]` was already empty.
+
+**Validation:** `validate_schools.py` pass (177 schools), `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass, coach ranking contiguous. Local browser: 177 cards, ACC grid shows 15, both Details modals open all 9 tabs with no "undefined", live Fit matches stored (47 and 43), both coaches resolve, both map dots on land, both present on Conferences, Minutes Outlook, Pro Pipeline, ACU Alignment, Coaches and Financial Model.
+
+**Notes for next time:**
+- `check_new_school_coverage.py` reported Boston College as still listed under Patriot `otherSchools[]` as "Boston University". That is a substring false positive (the word "Boston"), not a real entry.
+- The ACC's own standings page returned a bot-check page, so Boston College's conference record comes from its own athletics schedule pages and Virginia Tech's from its coach's official bio. Neither is the conference site.
+- The qa-suite's negtest step refuses to run on a dirty working tree, so it did not run before the commit; none of the validators changed in this release.
+
+---
+
 ### v45.77 (2026-10-03) — Akron recruit_pathway_note corrected (label unchanged)
 
 **Why:** the owner asked how many internationals Akron takes directly and how many are JUCO transfers. Reading Akron's own archived rosters showed the stored note ("not one of the 11 MFs lists a previous college... Akron does not use the portal") was wrong. Akron's 2026-27 roster page has no previous-college column, so the empty cells had been read as "no transfer".

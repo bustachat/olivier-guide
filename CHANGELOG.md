@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.82 (2026-10-04) — Add Bryant (America East) and San Diego (WCC)
+
+**Why:** Bryant (No. 25 in the SoccerWire poll, 3 SuperDraft picks in 2026) and the University of San Diego (No. 19, 4 picks in 2025-26) were two ranked schools missing from the guide whose conferences already had cards. Both are filed in `data/d1-other.json`. The guide already holds UC San Diego (`ucsd`, Pac-12), a different school; San Diego here is the University of San Diego (`sandiego`).
+
+**Bryant** (`bryant`, America East): Fit 48, dev 78/74/72, `acuAlign` 7. Exercise and Movement Science B.S. (anatomy and physiology I and II, exercise physiology, kinesiology, strength and conditioning I, an internship; a Healthcare Provider Prep track for physical therapy). Direct billed cost $75,242 (2026-27: tuition $54,934, fees $1,304, double residence hall plus the 210 Block meal plan $19,004), from the Financial Aid tuition table. Head coach Ruben Resendes (2022 NCAA Division II national champion at Franklin Pierce, 43-10-9 at Bryant, score 82, rank 24). Three straight America East finals, NCAA Tournaments in 2023 and 2025 and a 2025 Sweet 16; three first-ever SuperDraft picks in 2026 (Talabi, Jiana, Amaro). Midfield: 12 players, 5 graduate students clearing, 3 rising seniors, 2 rising juniors, 2 first-years; High entry competition.
+
+**San Diego** (`sandiego`, WCC): Fit 71, dev 80/78/70, `acuAlign` 2. USD has no exercise science, kinesiology or health science major (checked across all 135 programs in its undergraduate catalog and its own pre-physical-therapy advising page, which says USD has no physical therapy school or major), so the closest route is the Biology B.S.; only the general biology sequence and the required Research Experience are counted, because anatomy and physiology and exercise physiology are recommended, not required. Direct billed cost $84,399 (2026-27: tuition $64,100, fees $1,099, housing $13,450, meal plan $5,750; the $4,158 health insurance line is excluded), from the Torero Hub cost table. Head coach Brian Quinn (48 US national team caps, four straight WCC titles, 2024 Sweet 16, score 78, rank 31). Torero Stadium holds 6,000. Four SuperDraft picks in the 2025 and 2026 drafts; two of the 2026 picks (James and Wagner) are still on the 2026 roster. Midfield: 13 players, 5 clearing, 4 rising seniors, 2 rising juniors, 2 first-years; High entry competition. Warm city, so lifestyle 100.
+
+**Evidence:** rosters (both 2026-27, read in a real browser), coach bios, standings (americaeast.com and wccsports.com season archives), facility pages, housing and cost pages are all the schools' own pages. MLS slots from `data/mls-draft-picks-2022-2026.json`, names from each school's own draft release.
+
+**Caveats:** (1) The 2023 conference record for San Diego is taken from the WCC standings (5-1-1); the coach's bio describes that season as 6-0-1, which matches the WCC's 2022 row, so the bio claim was not repeated. (2) Bryant `size` is total enrollment (3,548, the only figure its facts page gives); San Diego's is undergraduate (6,049). (3) Neither school states a four-year housing guarantee on the pages checked; both are stored as available. (4) USD athletics publishes no social links I could find, so its SOCIAL entry is all null. (5) English-proficiency minimums are not recorded because the pages checked did not state them.
+
+**Also:** Bryant removed from the NEC card's `otherSchools` (it left that league in 2022); San Diego removed from the WCC card's `otherSchools`. 185 schools, 185 coaches re-ranked 1-185. San Diego map dot nudged to (107, 222) so it does not sit on UC San Diego's.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0, jargon, coach ranking and coverage checks pass; local browser check (185 schools, both cards, both modals free of undefined/NaN, coaches present, map dots on land).
+
 ### v45.81 (2026-10-04) — Add the Sun Belt Conference and South Carolina, Old Dominion and West Virginia
 
 **Why:** South Carolina (No. 1 in the SoccerWire poll through Sept 20), Old Dominion (No. 15) and West Virginia (No. 21) were the three ranked schools missing from the guide whose conference had no card. The Sun Belt (14 members, founded 1976, 10 men's soccer programs including four schools whose other sports play elsewhere) is now a full conference: card, prestige row, filter chip, Explore section and dashboard entry.

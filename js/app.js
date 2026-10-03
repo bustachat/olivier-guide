@@ -1615,7 +1615,7 @@ const SOCIAL = {
   olddominion:    [null,                                      'https://twitter.com/ODUMensSoccer',  'https://www.facebook.com/ODUMensSoccer',   null],
   westvirginia:   ['https://instagram.com/wvumenssoccer',     'https://x.com/WVUMensSoccer',        'https://www.facebook.com/WVUMensSoccer',   null],
   bryant:         ['https://instagram.com/BryantMSoc',        'https://x.com/BryantMenSoccer',     'https://www.facebook.com/BryantMSOC/',     null],
-  sandiego:       [null,                                      null,                                null,                                       null],
+  sandiego:       ['https://instagram.com/usdmsoccer',        'https://x.com/USDmsoccer',          'https://www.facebook.com/USDMensSoccer',   null],
   memphis:        ['https://instagram.com/memphismsoc',       'https://x.com/MemphisMSOC',         null,                                   'https://youtube.com/memphistigers'],
   temple:         ['https://instagram.com/templemsoc',        'https://x.com/TempleMSOC',          null,                                   'https://youtube.com/templeowls'],
   uab:            ['https://instagram.com/uabmsoc',           'https://x.com/UABMensSoccer',       null,                                   'https://youtube.com/uabathletics'],

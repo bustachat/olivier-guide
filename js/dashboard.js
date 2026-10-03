@@ -34,6 +34,7 @@ const CONF_META = {
   'mac':          { label:'MAC',          tier:'Mid-Maj',tierCls:'bhi' },
   'pac-12':       { label:'Pac-12',       tier:'Hi-Maj', tierCls:'bhi' },
   'mountain-west':{ label:'Mtn West',     tier:'Hi-Maj', tierCls:'bhi' },
+  'sun-belt':     { label:'Sun Belt',     tier:'Mid-Maj',tierCls:'bhi' },
   'wcc':          { label:'WCC',          tier:'Mid-Maj',tierCls:'bhi' },
   'america-east': { label:'Am. East',     tier:'Mid-Maj',tierCls:'bhi' },
   'nec':          { label:'NEC',          tier:'Mid-Maj',tierCls:'bhi' },

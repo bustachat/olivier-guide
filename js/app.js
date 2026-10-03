@@ -651,6 +651,7 @@ function renderCards(){
     {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast programs, mostly California public universities, plus Utah Valley, which joined for 2026.'},
     {key:'pac-12',   label:'Pac-12 Conference',                   tier:'High Major · D1',intro:'The rebuilt Pac-12, which sponsors men\'s soccer again from the 2026 season, with programs across California and the Pacific Northwest.'},
     {key:'mountain-west', label:'Mountain West Conference',       tier:'High Major · D1',intro:'Western Division I programs. The Mountain West added men\'s soccer for the 2026 season.'},
+    {key:'sun-belt', label:'Sun Belt Conference',                tier:'Mid-Major · D1', intro:'Programs across the South and Appalachia, including South Carolina and West Virginia, which play men\'s soccer in the Sun Belt although their other sports play in other conferences.'},
     {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major Division I programs along the East Coast, from New England to the Carolinas.'},
     {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major Division I programs across the South and Southeast.'},
     {key:'wcc',      label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Mid-major Division I programs mostly in western states. Denver joined for the 2026 season.'},
@@ -1222,6 +1223,9 @@ const DOMAINS = {
   tulsa:          'tulsahurricane.com',
   missouristate:  'missouristatebears.com',
   utahvalley:     'gouvu.com',
+  southcarolina:  'gamecocksonline.com',
+  olddominion:    'odusports.com',
+  westvirginia:   'wvusports.com',
   memphis:        'gotigersgo.com',
   temple:         'owlsports.com',
   uab:            'uabsports.com',
@@ -1405,6 +1409,9 @@ const SITE_URLS = {
   tulsa:          'https://www.utulsa.edu',
   missouristate:  'https://www.missouristate.edu',
   utahvalley:     'https://www.uvu.edu',
+  southcarolina:  'https://sc.edu',
+  olddominion:    'https://www.odu.edu',
+  westvirginia:   'https://www.wvu.edu',
   memphis:        'https://www.memphis.edu',
   temple:         'https://www.temple.edu',
   uab:            'https://www.uab.edu',
@@ -1600,6 +1607,9 @@ const SOCIAL = {
   tulsa:          ['https://instagram.com/tulsamsoc',         'https://x.com/TulsaMSOC',           null,                                   'https://youtube.com/tulsahurricane'],
   missouristate:  ['https://instagram.com/mostatemsoc',       'https://x.com/MoStateMSOC',         'https://www.facebook.com/MSUBearsMSoccer/', null],
   utahvalley:     ['https://instagram.com/UVUmsoc',           'https://x.com/UVUmsoc',             'https://www.facebook.com/UVUMSOC', null],
+  southcarolina:  ['https://instagram.com/gamecockmsoccer',   'https://twitter.com/GamecockMSoccer', 'https://www.facebook.com/GamecockMSoccer', null],
+  olddominion:    [null,                                      'https://twitter.com/ODUMensSoccer',  'https://www.facebook.com/ODUMensSoccer',   null],
+  westvirginia:   ['https://instagram.com/wvumenssoccer',     'https://x.com/WVUMensSoccer',        'https://www.facebook.com/WVUMensSoccer',   null],
   memphis:        ['https://instagram.com/memphismsoc',       'https://x.com/MemphisMSOC',         null,                                   'https://youtube.com/memphistigers'],
   temple:         ['https://instagram.com/templemsoc',        'https://x.com/TempleMSOC',          null,                                   'https://youtube.com/templeowls'],
   uab:            ['https://instagram.com/uabmsoc',           'https://x.com/UABMensSoccer',       null,                                   'https://youtube.com/uabathletics'],
@@ -2206,6 +2216,7 @@ const CONF_ALIAS_MAP = {
   'mac': 'mac', 'mid-american': 'mac',
   'wcc': 'wcc', 'west coast': 'wcc',
   'asun': 'asun',
+  'sun belt': 'sun-belt',
   'america east': 'america-east', 'america-east': 'america-east',
   // v44.45: these six were MISSING, so Army, Navy, Delaware, Mercyhurst,
   // U of Charleston and Columbia College fell through to a derived key that no
@@ -2588,6 +2599,7 @@ const CONF_CHIP_LABELS = {
   'caa':              'CAA',
   'pac-12':           'Pac-12',
   'mountain-west':    'Mountain West',
+  'sun-belt':         'Sun Belt',
   'mac':              'MAC',
   'wcc':              'WCC',
   'asun':             'ASUN',
@@ -2618,7 +2630,7 @@ const CONF_CHIP_LABELS = {
 // Ordered by tier — P4 first, then mid-major D1, Ivy, D2, NAIA, D3, JUCO
 const CONF_CHIP_ORDER = [
   'sec','acc','big-ten','big-east','aac','big-west',
-  'pac-12','mountain-west','caa','mac','wcc','asun','america-east','patriot','summit','nec',
+  'pac-12','mountain-west','sun-belt','caa','mac','wcc','asun','america-east','patriot','summit','nec',
   'ivy-league',
   'ssc','ccaa','cacc','lsc','mec',
   'sac','sun-conference','amc','whac',
@@ -3724,7 +3736,7 @@ const FCBAR_SHOWN_PER_BRACKET = 6;
 const FIN_CONF_GROUP_LABELS = {
   'acc':'ACC', 'big-ten':'Big Ten', 'big-east':'Big East', 'aac':'AAC', 'big-west':'Big West',
   'caa':'CAA', 'asun':'ASUN', 'pac-12':'Pac-12', 'mountain-west':'Mountain West', 'wcc':'WCC', 'america-east':'America East', 'nec':'NEC',
-  'summit':'Summit', 'patriot':'Patriot',
+  'summit':'Summit', 'patriot':'Patriot', 'sun-belt':'Sun Belt',
   'other-IVY':'Ivy League', 'other-D2':'D2', 'other-NAIA':'NAIA', 'other-D3':'D3', 'other-JUCO':'JUCO',
 };
 function finConfGroupKey(u){ return u.confKey==='other' ? 'other-'+u.div : u.confKey; }

@@ -2166,5 +2166,774 @@
         "covered": true
       }
     ]
+  },
+  {
+    "id": "southcarolina",
+    "profileDepth": "full",
+    "name": "South Carolina",
+    "full": "University of South Carolina (Gamecocks)",
+    "loc": "Columbia, SC",
+    "div": "D1",
+    "conf": "Sun Belt Conference",
+    "confKey": "sun-belt",
+    "region": "south",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#fdf2f2",
+      "#73000a"
+    ],
+    "kinRank": "Good (Exercise Science B.S. with required Anatomy & Physiology, Exercise Physiology, Motor Skills and a 6-credit practicum)",
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 5,
+    "acuAlignNote": "Exercise Science is a B.S. in the Arnold School of Public Health. The 25-hour major requires Anatomy & Physiology I and II with labs (EXSC 223/224), Exercise Physiology with lab (EXSC 330), Acquisition of Motor Skills (EXSC 351), Practicum Preparation (EXSC 401) and a 6-credit Exercise Science Practicum (EXSC 444), plus either Biomechanics of Human Movement (EXSC 335) or Psychology of Physical Activity (EXSC 410). Because biomechanics and sport psychology are alternatives, neither is counted as guaranteed. Resistance training, exercise testing and prescription, and a standalone research methods course are not required, so they are not counted.",
+    "soccerLevel": "Sun Belt (men's soccer only; SEC in other sports): strong 2026 form under a head coach from the MLS academy world",
+    "soccerLevelShort": "Sun Belt",
+    "fin": {
+      "costNum": 57412,
+      "tuition": 38098,
+      "roomBoard": 17334,
+      "fees": 1980,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "South Carolina non-resident direct billed cost $57,412 (2026-27, taken from the University of South Carolina Financial Aid cost-to-attend table, Columbia campus, Non-Resident, On Campus, 12 hours per term): tuition $38,098 + tech fee $400 + weighted average program fees $1,580 + housing $11,432 + food $5,902. The tech and program fees are recorded as fees ($1,980), and housing and food as room and board ($17,334). Its headline total is $66,394, adding books and supplies ($1,522), personal expenses ($4,790) and transportation ($2,670) that this guide excludes. Program fees vary by college and major. An athletic scholarship can cover a large share of this cost."
+    },
+    "aid": "Athletic",
+    "size": 31850,
+    "prePT": "Strong: Exercise Science B.S. with Anatomy & Physiology, Exercise Physiology and a 6-credit practicum",
+    "prePTShort": "Strong",
+    "gpa": {
+      "minEntry": "4.1 or higher typical (middle 50% weighted high school GPA 4.1 to 4.8 for the fall 2025 class)",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "South Carolina is highly selective, with more than 60,000 applications for fall 2025. A 2.8 GPA is a significant barrier. An athletic scholarship plus coach support is the route in.",
+      "status": "below"
+    },
+    "mapX": 488,
+    "mapY": 236,
+    "fitOlivier": 58,
+    "lensScores": {
+      "overall": 58,
+      "soccer": 65,
+      "academic": 42,
+      "minutes": 21,
+      "lifestyle": 100,
+      "value": 35
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Sun Belt 1-6-2",
+        "note": "7-9-2 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "Sun Belt 5-4-0",
+        "note": "10-5-2 overall, the best season in nearly a decade and the first winning conference record since 2016. Lost the Sun Belt Tournament match to Kentucky, 0-1. Ethan Ballek and Jonah Biggar were both selected in the 2025 SuperDraft, the first time two players went in the same draft."
+      },
+      {
+        "yr": 2023,
+        "pos": "6-9-3 overall",
+        "note": "Sun Belt play."
+      },
+      {
+        "yr": 2022,
+        "pos": "5-8-4 overall",
+        "note": "Sun Belt play."
+      },
+      {
+        "yr": 2021,
+        "pos": "5-9-2 overall",
+        "note": "Tony Annan's first season, in Sun Belt play."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Ethan Ballek, 2025 SuperDraft",
+        "Jonah Biggar, 2025 SuperDraft"
+      ],
+      "draftRank": "Two SuperDraft picks in the last five drafts, both in 2025"
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 83,
+      "fitness": 80
+    },
+    "devScoresNote": "5a rubric, training environment only. Live gamecocksonline.com MSOC staff (2026): HC Tony Annan (USSF A, FFF Elite Formation and USSF Academy Director licences; built the Atlanta United academy) + Nat Hubert (Assoc HC) + Josh Bronstorph (Asst) + Jaxsen Wirth (Asst) = 4 coaches, no goalkeeping coach listed. Facilities: Eugene E. Stone III Stadium (1996), listed capacity 5,000, hybrid Bermudagrass, LED floodlights, shared with women's soccer; the Gamecock Soccer Complex (2016, about 11,000 sq ft) has team locker rooms, lounges and study rooms, athletic training therapy tubs, a 3,000 sq ft weight room, a cleat room and a film room. No GPS or sports-science staff named on the MSOC page. Scored on a par with Duke (83/82/81, 4 coaches) for the stadium and dedicated soccer complex, with fitness held lower because no soccer-specific performance staff is named. Results excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Stone Stadium (5,000 capacity, hybrid Bermudagrass, LED lights)",
+      "Gamecock Soccer Complex with locker rooms, 3,000 sq ft weight room and film room",
+      "Athletic training therapy tubs in the soccer complex"
+    ],
+    "courses": [
+      "EXSC 223/223L and 224/224L: Anatomy & Physiology I and II with labs",
+      "EXSC 330/330L: Exercise Physiology with lab",
+      "EXSC 335: Biomechanics of Human Movement (or EXSC 410 Psychology of Physical Activity)",
+      "EXSC 351: Acquisition of Motor Skills",
+      "EXSC 444: Exercise Science Practicum (6 credits)"
+    ],
+    "rec": "South Carolina has a 5,000-seat stadium and a dedicated soccer complex, a head coach who spent six years building the Atlanta United academy, and a roster where 17 of 27 players come from outside the US. It is also a warm Southern city. The Exercise Science B.S. is solid (anatomy and physiology, exercise physiology and a 6-credit practicum) but biomechanics and sport psychology are optional. The obstacle is admission: more than 60,000 students applied for fall 2025 and the middle half of admitted students had weighted GPAs of 4.1 to 4.8, so a 2.8 GPA needs a strong athletic case. The 2026-27 midfield is young (3 first-years and 1 graduating), which means little room in year one.",
+    "url": "https://gamecocksonline.com/sports/msoc/",
+    "domain": "sc.edu",
+    "culture": {
+      "vibe": "The University of South Carolina is a large flagship university in downtown Columbia, the state capital. The historic Horseshoe sits at the centre of a campus that is closely tied to Gamecock athletics. The climate is hot and humid in summer with mild winters.",
+      "thingsToDo": "The Vista and Five Points districts have restaurants and live music, Congaree National Park and Lake Murray are nearby, and Charleston and the Atlantic beaches are about two hours away by road.",
+      "socialScene": "Game days, Greek life and student organisations drive social life. The men's soccer squad is highly international, with players from England, Spain, Costa Rica, Germany, Denmark and elsewhere.",
+      "olivierMatch": "★★★★ A warm city campus with a very international squad and a strong stadium and facilities, and a coach with a development background. The academic fit is decent, not elite, and admission is the main barrier.",
+      "lifestyleTags": "Warm Southern city, flagship university, international squad, hard admission"
+    },
+    "facilityDetails": {
+      "rating": "Excellent",
+      "stadium": "Eugene E. Stone III Stadium, opened in 1996, with a listed capacity of 5,000, a hybrid Bermudagrass surface on a USGA drainage system (replaced in 2009) and LED floodlights. It is shared with women's soccer.",
+      "trainingFields": "The official pages name only Stone Stadium for men's soccer. No separate training pitch is listed.",
+      "strengthConditioning": "The Gamecock Soccer Complex, completed in 2016, includes a 3,000 square foot weight room. No strength coach is assigned to men's soccer on its staff page.",
+      "sportsScience": "The soccer complex has a film room. The men's soccer staff page names no GPS tracking or sports science staff.",
+      "sportsMed": "Athletic training therapy tubs are built into the Gamecock Soccer Complex. No athletic trainer is named on the men's soccer staff page.",
+      "academicLabs": "The Arnold School of Public Health teaches Anatomy & Physiology and Exercise Physiology with laboratory sections for the Exercise Science major.",
+      "extras": "The Gamecock Soccer Complex is an 11,000-square-foot facility next to the stadium with team locker rooms, lounges and study rooms.",
+      "note": "One of the larger stadiums and a purpose-built soccer complex in the guide, though support staff are not soccer-specific.",
+      "housing": {
+        "available": true,
+        "note": "All first-year students are required to live on campus and are guaranteed on-campus housing, confirmed on the University of South Carolina Housing page."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Isaiah Whittaker-Francis"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Alejandro Velazquez-Lopez",
+        "Kieran Karp"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Emil Seedorff"
+      ],
+      "recruit_risk": "Medium",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from South Carolina's 2026-27 roster, which lists each player's previous school. Only 2 of the 7 midfielders list a college (Isaiah Whittaker-Francis from Drexel and Emil Seedorff from Georgia Southern); the other 5 list no previous college. Across the whole roster, 12 of 27 players are transfers, so the squad as a whole leans on transfers more than the midfield does. 17 of the 27 players are from outside the US.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 75,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "Only 1 of 7 midfielders (Whittaker-Francis) graduates before 2027. Two more (Velazquez-Lopez and Karp) will be seniors when Olivier arrives, 1 will be a junior and 3 first-year midfielders will be sophomores, so playing time in the first year is limited."
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "olddominion",
+    "profileDepth": "full",
+    "name": "Old Dominion",
+    "full": "Old Dominion University (Monarchs)",
+    "loc": "Norfolk, VA",
+    "div": "D1",
+    "conf": "Sun Belt Conference",
+    "confKey": "sun-belt",
+    "region": "south",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#eaf1f8",
+      "#003057"
+    ],
+    "kinRank": "Strong (Exercise Science B.S. with required Gross Anatomy, Exercise Physiology I and II, Biomechanics, Exercise Testing and Exercise Prescription)",
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 9,
+    "acuAlignNote": "Exercise Science is a B.S. in the Virginia Health Sciences programs. Its required courses include Anatomy and Physiology I and II (BIOL 240/241 or 250/251), General Biology I (BIOL 121N/122N), Introduction to Exercise Science (EXSC 225), Strength and Conditioning Leadership (EXSC 250), Gross Anatomy for Exercise Science (EXSC 310), Anatomical Kinesiology and Musculoskeletal Injuries (EXSC 322), Exercise Physiology I and II (EXSC 326 and 327), Exercise Testing for Normal and Special Populations (EXSC 415), Biomechanics (EXSC 417) and Exercise Prescription for Chronic Disease (EXSC 428). Research methods (EXSC 420) is only in the Clinical and Research Preparation option, and sport psychology, motor learning, growth and ageing and a guaranteed practicum are not required, so they are not counted.",
+    "soccerLevel": "Sun Belt: mid-table results since rejoining in 2022, after a 2014 Conference USA title",
+    "soccerLevelShort": "Sun Belt",
+    "fin": {
+      "costNum": 51008,
+      "tuition": 35376,
+      "roomBoard": 15632,
+      "fees": 0,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Old Dominion out-of-state direct billed cost $51,008 (taken from ODU's Current Student Costs table, Main Campus Undergraduate, Out of State): tuition and fees $35,376 per academic year (based on 30 credit hours) + food and housing $15,632 (based on average on-campus housing costs). ODU publishes tuition and fees combined, so the combined figure is recorded as tuition, with fees at $0. Its headline total is $56,648, adding books and supplies ($1,830), personal expenses ($2,430) and transportation ($1,380) that this guide excludes. An athletic scholarship can cover a large share of this cost."
+    },
+    "aid": "Athletic",
+    "size": 17500,
+    "prePT": "Very Strong: Exercise Science B.S. prepares students for graduate study in physical therapy, athletic training and occupational therapy",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "No fixed minimum GPA published; weighted high school GPA and SAT or ACT are the main review factors",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Old Dominion's catalog lists the weighted high school GPA and test scores as the primary review factors and does not publish a single minimum. To declare the Exercise Science major, students must earn a C or better in EXSC 225 and a set of science and math courses.",
+      "status": "eligible"
+    },
+    "mapX": 513,
+    "mapY": 193,
+    "fitOlivier": 48,
+    "lensScores": {
+      "overall": 48,
+      "soccer": 55,
+      "academic": 63,
+      "minutes": 38,
+      "lifestyle": 50,
+      "value": 30
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Sun Belt 1-3-5",
+        "note": "5-5-8 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "Sun Belt 3-5-1",
+        "note": "7-8-2 overall. Lost the Sun Belt Tournament match at No. 8 Marshall, 2-3."
+      },
+      {
+        "yr": 2023,
+        "pos": "Sun Belt 2-6-1",
+        "note": "5-7-5 overall. Started 10 matches unbeaten. Lost the Sun Belt Tournament match at Marshall, 0-2."
+      },
+      {
+        "yr": 2022,
+        "pos": "Sun Belt 3-4-1",
+        "note": "6-8-2 overall in the first season back in the Sun Belt. Beat No. 4 Marshall 2-1. Lost the Sun Belt Tournament match to Georgia State, 1-3."
+      },
+      {
+        "yr": 2021,
+        "pos": "C-USA 1-5-2",
+        "note": "3-9-2 overall in Conference USA."
+      }
+    ],
+    "titles": [
+      "2014 Conference USA champions (first in school history)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "No SuperDraft picks in the last five drafts"
+    },
+    "devScores": {
+      "tactical": 74,
+      "technical": 78,
+      "fitness": 74
+    },
+    "devScoresNote": "5a rubric, training environment only. Live odusports.com MSOC staff (2026): HC Tennant McVea (USSF B licence, in the USSF A cohort; Northern Ireland youth international and pro player) + Nathan Jones (Assoc HC) + Josh Spencer (Asst) = 3 coaches, plus a Director of Soccer Operations. Support listed on the MSOC page: Director of Sports Performance for Olympic Sports, an Elite Sports Performance Coach and an assistant athletic trainer. Facilities: ODU Soccer Complex, 4,000 capacity, natural grass, with an adjacent fully floodlit practice field and a soccer building used only by men's and women's soccer (separate wings, offices, locker rooms and lounges). Three coaches and shared performance staff hold tactical and fitness near Syracuse (76/74/73); the dedicated soccer building and separate floodlit practice field lift technical. Results excluded.",
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "ODU Soccer Complex (4,000 capacity, natural grass)",
+      "Separate floodlit natural-grass practice field",
+      "Dedicated men's and women's soccer building"
+    ],
+    "courses": [
+      "EXSC 310: Gross Anatomy for Exercise Science",
+      "EXSC 322: Anatomical Kinesiology and Musculoskeletal Injuries",
+      "EXSC 326/327: Exercise Physiology I and II",
+      "EXSC 415: Exercise Testing for Normal and Special Populations",
+      "EXSC 417: Biomechanics (4 credits)",
+      "EXSC 428: Exercise Prescription for Chronic Disease"
+    ],
+    "rec": "Old Dominion has one of the broadest required exercise science curricula in the guide (gross anatomy, two exercise physiology courses, biomechanics, exercise testing and exercise prescription), a 4,000-seat natural-grass stadium with its own floodlit practice field, and an admissions process with no published minimum GPA. Norfolk is a real Hampton Roads city on the water. On the field the program has been mid-table in the Sun Belt since returning in 2022 and had no SuperDraft picks in the last five drafts. The 2026-27 midfield has 10 players with 5 graduating, so there is room, and the squad has Spanish, Italian, German and English players, plus two junior college transfers on the roster. Winters are mild but not warm.",
+    "url": "https://odusports.com/sports/mens-soccer",
+    "domain": "odu.edu",
+    "culture": {
+      "vibe": "Old Dominion is a large public university on the Elizabeth River in Norfolk, Virginia, part of the Hampton Roads metropolitan area. It has a large commuter and online population and a naval and shipping city setting. Summers are hot and humid and winters are mild.",
+      "thingsToDo": "Virginia Beach and the Atlantic coast are about 30 minutes away, and Norfolk's Waterside, Ghent and Chrysler Museum districts are close to campus. Williamsburg and Richmond are within a couple of hours' drive.",
+      "socialScene": "Student life mixes residential and commuter students. The men's soccer squad has a strong European contingent, with players from England, Italy, Spain and Germany.",
+      "olivierMatch": "★★★ A real coastal city with an unusually broad exercise science degree and strong facilities. The climate is milder than the Northeast but not warm year-round, and the program has not been a Sun Belt contender recently.",
+      "lifestyleTags": "Coastal city, naval port, mild winters, broad exercise science degree"
+    },
+    "facilityDetails": {
+      "rating": "Excellent",
+      "stadium": "The ODU Soccer Complex has hosted men's and women's soccer since 1991 and has hosted conference, NCAA and high school tournaments. Capacity is 4,000, with full-length bleacher seating on the west side, additional bleachers on the north and an open grass area on the east. The surface is natural grass. The complex is shared with women's soccer.",
+      "trainingFields": "A fully floodlit natural-grass practice field adjoins the stadium.",
+      "strengthConditioning": "A Director of Sports Performance for Olympic Sports and an Elite Sports Performance Coach are listed on the men's soccer support staff page.",
+      "sportsScience": "The staff page lists no GPS tracking or video-analysis staff.",
+      "sportsMed": "An assistant athletic trainer is listed on the men's soccer support staff page.",
+      "academicLabs": "The Exercise Science program is part of the Virginia Health Sciences programs and its required courses include Exercise Physiology I with laboratory components and Biomechanics.",
+      "extras": "The soccer building is used only by men's and women's soccer, with separate wings for staff offices, locker rooms and team lounges, and an outdoor patio overlooking the field.",
+      "note": "A large natural-grass stadium with its own practice field and a dedicated soccer building, backed by shared performance staff.",
+      "housing": {
+        "available": true,
+        "note": "Any student who completes an on-campus housing application can be assigned a space, including temporary expanded accommodations if needed, though a specific room is not guaranteed, confirmed on Old Dominion's Housing pages."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 5,
+      "cleared_names": [
+        "Huw Dawson",
+        "Barrett Saul",
+        "Jake Lane",
+        "Miguel Menendez",
+        "Matthew Moffatt"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Kosuke Yoshikawa"
+      ],
+      "recruit_risk": "Medium",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from Old Dominion's 2026-27 roster, which lists previous schools. Only 2 of the 10 midfielders list a college (Barrett Saul from West Virginia and Jake Lane from Bowling Green). Across the whole roster, 7 of 29 players are transfers, 2 of them from junior colleges (Eastern Florida State and Northeast). 11 of the 29 players are from outside the US.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "5 of 10 midfielders graduate before 2027 (Dawson, Saul, Lane, Menendez and Moffatt), and no current junior is in the midfield, so the 2027 midfield has 1 returning junior and 4 first-year or redshirt-freshman players. That leaves real room in the first year."
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "westvirginia",
+    "profileDepth": "full",
+    "name": "West Virginia",
+    "full": "West Virginia University (Mountaineers)",
+    "loc": "Morgantown, WV",
+    "div": "D1",
+    "conf": "Sun Belt Conference",
+    "confKey": "sun-belt",
+    "region": "east",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#fff7e0",
+      "#002855"
+    ],
+    "kinRank": "Good (Exercise Physiology B.S. in the School of Medicine, with Advanced Physiology of Exercise, Kinesiology, Motor Learning and Strength/Conditioning)",
+    "degreeTitle": "B.S. Exercise Physiology",
+    "acuAlign": 7,
+    "acuAlignNote": "Exercise Physiology is a B.S. in the School of Medicine. Its major requirements include Introduction to Exercise Physiology (EXPH 101), Kinesiology (EXPH 364), Strength/Conditioning Methods (EXPH 369), Advanced Physiology of Exercise 1 and 2 with labs (EXPH 386-389), Motor Learning & Control (EXPH 425) and Anatomy for Exercise Physiology (EXPH 440), plus General Biology and Introductory Physiology. Students must pick between a Professional Field Experience and research or a senior thesis, so a guaranteed practicum is not counted. Biomechanics as a standalone course, exercise testing and prescription, and sport psychology are not listed as required. Students need a 2.5 cumulative GPA to remain in the program.",
+    "soccerLevel": "Sun Belt (men's soccer only; Big 12 in other sports): 2024 Sun Belt regular-season and tournament champions, four NCAA Tournaments in five years",
+    "soccerLevelShort": "Sun Belt",
+    "fin": {
+      "costNum": 52776,
+      "tuition": 35808,
+      "roomBoard": 15028,
+      "fees": 1940,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "West Virginia non-resident direct billed cost $52,776 (2026-27, built from WVU's published Morgantown undergraduate tuition table for the School of Medicine, where the Exercise Physiology major sits, plus its cost-and-aid housing figure). Per semester at 12 hours: university tuition $15,408 + college tuition $2,496 = $17,904 (tuition $35,808 for the year), university fees $720 (fees $1,440 for the year), plus the $250 per term Mountaineer Athletics Advantage Fee that WVU bills separately ($500 for the year, recorded with fees: $1,940), plus housing and the Go Anytime dining plan averaged at $15,028. WVU's headline out-of-state figure for most programs is $32,256 for tuition and fees; the School of Medicine adds college tuition, which is why this figure is higher. An athletic scholarship can cover a large share of this cost."
+    },
+    "aid": "Athletic",
+    "size": 23532,
+    "prePT": "Strong: Exercise Physiology B.S. with a Health Professions emphasis option for graduate programs",
+    "prePTShort": "Strong",
+    "gpa": {
+      "minEntry": "No published minimum GPA; admission is rolling",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "West Virginia's fall 2025 first-year class had an average high school GPA of 3.72, but WVU publishes no minimum and does not require SAT or ACT scores. Students in the Exercise Physiology major must keep a 2.5 cumulative GPA to remain in the program.",
+      "status": "eligible"
+    },
+    "mapX": 494,
+    "mapY": 165,
+    "fitOlivier": 41,
+    "lensScores": {
+      "overall": 41,
+      "soccer": 68,
+      "academic": 52,
+      "minutes": 21,
+      "lifestyle": 0,
+      "value": 25
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Sun Belt 7-2-0",
+        "note": "13-5-3 overall. Reached No. 3 in the national poll and the NCAA Tournament round of 32: beat St. John's 4-3, then lost at No. 10 High Point, 2-3. Lost the Sun Belt semifinal to No. 12 Marshall, 2-3 in double overtime."
+      },
+      {
+        "yr": 2024,
+        "pos": "Sun Belt 5-0-4, champions",
+        "note": "13-2-7 overall. Sun Belt regular-season and tournament champions for the first time, unbeaten in conference play, and No. 1 in the national poll for the first time in program history. Three Mountaineers (Marcus Caldeira, Yutaro Tsukada and Jackson Lee) went in the first round of the 2024 SuperDraft, the first three in the school's history."
+      },
+      {
+        "yr": 2023,
+        "pos": "Sun Belt 5-1-3",
+        "note": "17-3-4 overall. Beat Georgia State 3-1 and South Carolina 2-0 in the Sun Belt Tournament, then lost 2-3 at No. 1 Marshall."
+      },
+      {
+        "yr": 2022,
+        "pos": "Sun Belt 3-1-4",
+        "note": "7-7-4 overall. Beat Coastal Carolina 1-0 in the Sun Belt Tournament quarterfinal, then lost at No. 2 Kentucky, 0-3."
+      },
+      {
+        "yr": 2021,
+        "pos": "Sun Belt 4-1-1",
+        "note": "12-3-6 overall. NCAA Tournament: beat Virginia Tech on penalties and No. 6 Tulsa 1-0 in double overtime, then lost on penalties at No. 3 Georgetown in the quarterfinal."
+      }
+    ],
+    "titles": [
+      "2024 Sun Belt regular-season and tournament champions",
+      "NCAA Tournament quarterfinal (2021)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 4,
+      "notable": [
+        "Marcus Caldeira, No. 20 overall in the 2024 SuperDraft (Minnesota United)",
+        "Yutaro Tsukada, No. 25 overall in the 2024 SuperDraft (Orlando City)",
+        "Jackson Lee, No. 28 overall in the 2024 SuperDraft (LAFC)",
+        "Ryan Baer, No. 28 overall in the 2025 SuperDraft (Seattle Sounders)"
+      ],
+      "draftRank": "Four first-round SuperDraft picks in the last five drafts, including the first three in school history in 2024"
+    },
+    "devScores": {
+      "tactical": 78,
+      "technical": 74,
+      "fitness": 78
+    },
+    "devScoresNote": "5a rubric, training environment only. Live wvusports.com MSOC staff (2026): HC Dan Stratford + Andy Wright (Assoc HC) + Nick Noble (Asst) + a volunteer assistant = an associate head coach, an assistant and a volunteer assistant, no goalkeeping coach listed. Support listed on the MSOC page: an athletic trainer, a Strength & Conditioning Coach assigned to men's soccer, a Clinical and Sport Behavioral Health Therapist and a Director of Operations. Facilities: Dick Dlesk Soccer Stadium, 1,650 seats, natural grass, two-level grandstand, five-booth press box, on-site locker rooms, shared with women's soccer; training room on site. No video-analysis or GPS staff named. Scored just above Syracuse (76/74/73) on tactical and fitness because of the soccer-assigned strength coach, athletic trainer and sport behavioral health therapist; technical stays at 74 for the modest stadium. Results (the 2024 title and 2021 run) excluded.",
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Dick Dlesk Soccer Stadium (1,650 seats, natural grass)",
+      "Strength & conditioning coach and athletic trainer assigned to men's soccer",
+      "Clinical and sport behavioral health therapist on the soccer support staff"
+    ],
+    "courses": [
+      "EXPH 101: Introduction to Exercise Physiology",
+      "EXPH 364: Kinesiology",
+      "EXPH 369: Strength/Conditioning Methods",
+      "EXPH 386-389: Advanced Physiology of Exercise 1 and 2 with labs",
+      "EXPH 425: Motor Learning & Control",
+      "EXPH 440: Anatomy for Exercise Physiology"
+    ],
+    "rec": "West Virginia is one of the strongest on-field programs in the guide: Sun Belt champions in 2024, four NCAA Tournaments in five years, a No. 1 national ranking in 2024 and four first-round MLS picks across the 2024 and 2025 drafts, under an alumnus head coach who won two Division II national titles at the University of Charleston. It also has soccer-assigned strength, athletic training and sport psychology support. Morgantown is a cold, hilly college town rather than a warm city, the stadium is small (1,650 seats), and the exercise physiology major sits in the School of Medicine at a higher out-of-state tuition. The 2026-27 midfield is young (9 players, only 1 graduating), so first-year minutes would be limited.",
+    "url": "https://wvusports.com/sports/mens-soccer/",
+    "domain": "wvu.edu",
+    "culture": {
+      "vibe": "West Virginia University is a large public flagship in Morgantown, a college town in the northern West Virginia hills. The campus is spread across the Monongahela River valley and is closely tied to Mountaineer athletics. Winters are cold and snowy.",
+      "thingsToDo": "Hiking, mountain biking and whitewater rafting are close, and Pittsburgh is about 75 miles north. Downtown Morgantown has restaurants and bars along High Street.",
+      "socialScene": "Game days and student organisations drive campus social life. The men's soccer squad is highly international, with players from England, France, Germany, Spain, Argentina, Japan and Singapore.",
+      "olivierMatch": "★★ Strong on-field results and soccer support, but a cold hill-town climate and a small city, the opposite of the warm city Olivier prefers. The degree fit is good rather than elite.",
+      "lifestyleTags": "Appalachian college town, strong soccer program, cold winters, international squad"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Dick Dlesk Soccer Stadium, home of men's and women's soccer, opened in 2004. It is a two-level, 1,650-seat stadium with grandstand bleachers, a five-booth press box, on-site team and official locker rooms, a training room, restrooms and concession stands. The playing surface is natural grass, re-laid in 2010 after the field was laser-leveled. The pages checked do not state whether the field has lights.",
+      "trainingFields": "The official pages name only Dick Dlesk Soccer Stadium for men's soccer.",
+      "strengthConditioning": "A Strength & Conditioning Coach (Tanner Kolb) is listed on the men's soccer support staff.",
+      "sportsScience": "A Clinical and Sport Behavioral Health Therapist is listed on the men's soccer support staff. No GPS tracking or video-analysis staff is listed.",
+      "sportsMed": "An athletic trainer is listed on the men's soccer support staff.",
+      "academicLabs": "The Exercise Physiology major is taught in the School of Medicine and includes Physiology of Exercise laboratory courses.",
+      "extras": "West Virginia plays its men's soccer in the Sun Belt although its other sports play in the Big 12.",
+      "note": "A small, natural-grass stadium but unusually strong soccer-specific support staff for the conference.",
+      "housing": {
+        "available": true,
+        "note": "First-year students and transfers with fewer than 24 transferable credits are required to live in a university residence hall and are guaranteed housing, confirmed on WVU Housing's first-year live-on requirement page."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Sebastian Burke"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Nacho Martinez",
+        "Kanta Ishii",
+        "Isaac Scheer"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Tyler Londono Zapata",
+        "Thomas Bowe",
+        "Juan Alvarez"
+      ],
+      "recruit_risk": "High",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from West Virginia's 2026-27 roster, which lists previous schools. Only 1 of the 9 midfielders lists a college (Kanta Ishii, from Cowley College, a junior college); the other 8 list none. Across the whole roster, 8 of 30 players are transfers, 2 of them from junior colleges (Cowley College and Montgomery College). 16 of the 30 players are from outside the US.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 75,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "Only 1 of 9 midfielders (Burke) graduates before 2027. Three more (Martinez, Ishii and Scheer) will be seniors when Olivier arrives, 3 will be juniors and 2 first-year or redshirt-freshman players will be sophomores, so first-year minutes would be limited."
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

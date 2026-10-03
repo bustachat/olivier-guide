@@ -6,6 +6,32 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.81 (2026-10-04) — Add the Sun Belt Conference and South Carolina, Old Dominion and West Virginia
+
+**Why:** South Carolina (No. 1 in the SoccerWire poll through Sept 20), Old Dominion (No. 15) and West Virginia (No. 21) were the three ranked schools missing from the guide whose conference had no card. The Sun Belt (14 members, founded 1976, 10 men's soccer programs including four schools whose other sports play elsewhere) is now a full conference: card, prestige row, filter chip, Explore section and dashboard entry.
+
+**South Carolina** (`southcarolina`): Fit 58, dev 82/83/80, `acuAlign` 5. Exercise Science B.S. (Anatomy & Physiology I and II, Exercise Physiology, Motor Skills and a 6-credit practicum; biomechanics and sport psychology are alternatives, so neither is counted). Direct billed cost $57,412 (non-resident, on campus). Head coach Tony Annan (USSF A, Academy Director and FFF Elite Formation licences; built the Atlanta United academy). 5,000-capacity Stone Stadium, hybrid Bermudagrass, LED lights and the 2016 Gamecock Soccer Complex. 2 MLS picks 2022-26. Roster: 7 midfielders, 1 graduating; 17 of 27 players from outside the US, 12 of 27 transfers. Admission is hard (middle 50% weighted GPA 4.1-4.8), so the GPA status is "below".
+
+**Old Dominion** (`olddominion`): Fit 48, dev 74/78/74, `acuAlign` 9. Exercise Science B.S. with gross anatomy, Exercise Physiology I and II, biomechanics, exercise testing and exercise prescription all required. Direct billed cost $51,008 (out-of-state). Head coach Tennant McVea (USSF B, in the A cohort; Northern Ireland youth international). 4,000-capacity natural-grass stadium plus a floodlit practice field and a soccer-only building. 0 MLS picks 2022-26. Roster: 10 midfielders, 5 graduating; 2 of 29 are junior college transfers (Eastern Florida State, Northeast).
+
+**West Virginia** (`westvirginia`): Fit 41, dev 78/74/78, `acuAlign` 7. Exercise Physiology B.S. (School of Medicine). Direct billed cost $52,776, built from the School of Medicine's own tuition table because that is where the major sits, plus WVU's housing figure and the $500 a year athletics fee; WVU's generic out-of-state figure ($32,256) is lower because it leaves out the college tuition. Head coach Dan Stratford (two NCAA Division II titles at the University of Charleston; 2024 Sun Belt champions; NCAA Tournament four times in five seasons). Strength coach, athletic trainer and sport behavioral health therapist assigned to men's soccer. 4 MLS picks 2022-26, all first-round. Roster: 9 midfielders, 1 graduating; 16 of 30 from outside the US, 2 junior college transfers (Cowley College, Montgomery College).
+
+**Conference card:** `sun-belt`, tier Mid-Major (D1), 10 men's soccer programs, 29 MLS picks in 2022-26 (4, 6, 7, 7, 5 by draft year, counted from the existing pick audit file by 2026-27 conference). **Placement is a judgment call for the owner:** the hand-set conference ranking has the Sun Belt at #5, directly under the AAC, because it produced more MLS picks than the AAC and Big West over the window; reorder `data/conf-prestige.json` if you disagree.
+
+**Files:** `data/d1-other.json` (3 schools), `data/coaches.json` (183 coaches, ranks re-assigned), `data/pipeline.json` (West Virginia and South Carolina rows), `data/conferences.json` (new Sun Belt card; South Carolina removed from the SEC card's other-schools list), `data/conf-prestige.json` (new row at rank 5, ranks below shifted), `js/app.js` (CONF_SECTIONS, alias map, chip label and order, finance group label, DOMAINS, SITE_URLS, SOCIAL), `js/dashboard.js` (CONF_META), `validate_consistency.js` (`sectionKeys`), `CLAUDE.md`, `athletes/olivier.json` (v45.81).
+
+**Validation:** `validate_schools.py` pass (183 schools), `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass, coach ranking contiguous, coverage check clean for all three. Local browser: 183 schools, live Fit matches stored (58, 48, 41), all three Details modals open 9 tabs with no "undefined", all three map dots on land, Sun Belt filter chip shows 3, Sun Belt section has 3 cards, Conferences tab shows 3 of 10 programs and 29 picks, all three on Minutes Outlook, ACU Alignment, Coaches and Financial, South Carolina and West Virginia on Pro Pipeline.
+
+**Notes for next time:**
+- **A new conference needs its key in `validate_consistency.js` `sectionKeys`** (a hard-coded copy of the CONF_SECTIONS keys). Without it every school in the conference fails the CONFKEY check. Now documented in CLAUDE.md §3a Change Type 1.
+- South Carolina's conference record for 2021-23 is stored as the overall record because the schedule pages did not parse cleanly into a conference record for those seasons.
+- Old Dominion has no Instagram link on its official pages, so that slot is empty. South Carolina's and Old Dominion's tuition year is taken from the pages as labelled (South Carolina 2026-27, Old Dominion "current").
+- Old Dominion housing is stored as available: its pages say any student who completes an application can be assigned a space, including temporary housing, but no guarantee was found.
+- West Virginia's stadium lighting is not stated on the pages checked.
+- The qa-suite negtest step was not run (it refuses a dirty tree); a validator file was edited (`sectionKeys`), so run `python negtest.py --suite negtests/checks.json` after this commit.
+
+---
+
 ### v45.80 (2026-10-03) — Add Utah Valley (Big West)
 
 **Why:** Utah Valley was on the §6F gap list for the Big West (the conference now holds 4 of 7 programs) and is a notable JUCO destination: 10 of its 29 players came from junior colleges.

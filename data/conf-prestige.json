@@ -42,6 +42,16 @@
   {
     "rank": 5,
     "rankClass": "rk-strong",
+    "name": "Sun Belt",
+    "group": "sun-belt",
+    "fullName": "Sun Belt Conference",
+    "div": "D1",
+    "divBadge": "d-D1",
+    "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
+  },
+  {
+    "rank": 6,
+    "rankClass": "rk-strong",
     "name": "Big West",
     "group": "big-west",
     "fullName": "Big West (West Coast)",
@@ -50,7 +60,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 6,
+    "rank": 7,
     "rankClass": "rk-strong",
     "name": "Pac-12",
     "group": "pac-12",
@@ -60,7 +70,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 7,
+    "rank": 8,
     "rankClass": "rk-strong",
     "name": "Mountain West",
     "group": "mountain-west",
@@ -70,7 +80,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 8,
+    "rank": 9,
     "rankClass": "rk-strong",
     "name": "WCC",
     "group": "wcc",
@@ -80,7 +90,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 9,
+    "rank": 10,
     "rankClass": "rk-strong",
     "name": "Ivy League",
     "group": "ivy-league",
@@ -90,7 +100,7 @@
     "scholarships": "Zero athletic scholarships"
   },
   {
-    "rank": 10,
+    "rank": 11,
     "rankClass": "rk-strong",
     "name": "CAA",
     "group": "caa",
@@ -100,7 +110,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 11,
+    "rank": 12,
     "rankClass": "rk-strong",
     "name": "ASUN",
     "group": "asun",
@@ -110,7 +120,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 12,
+    "rank": 13,
     "rankClass": "rk-dev",
     "name": "America East",
     "group": "america-east",
@@ -120,7 +130,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 13,
+    "rank": 14,
     "rankClass": "rk-dev",
     "name": "Patriot League",
     "group": "patriot",
@@ -130,7 +140,7 @@
     "scholarships": "Full federal scholarships (service academies) — no athletic-aid cap"
   },
   {
-    "rank": 14,
+    "rank": 15,
     "rankClass": "rk-dev",
     "name": "NEC",
     "group": "nec",
@@ -140,7 +150,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 15,
+    "rank": 16,
     "rankClass": "rk-dev",
     "name": "Summit",
     "group": "summit",
@@ -150,7 +160,7 @@
     "scholarships": "Up to 9.9 equivalencies — 28 funded roster spots if House opt-in"
   },
   {
-    "rank": 16,
+    "rank": 17,
     "rankClass": "rk-solid",
     "name": "SSC",
     "group": "ssc",
@@ -160,7 +170,7 @@
     "scholarships": "Up to 9 equivalencies"
   },
   {
-    "rank": 17,
+    "rank": 18,
     "rankClass": "rk-solid",
     "name": "LSC",
     "group": "lsc",
@@ -170,7 +180,7 @@
     "scholarships": "Up to 9 equivalencies"
   },
   {
-    "rank": 18,
+    "rank": 19,
     "rankClass": "rk-solid",
     "name": "CCAA",
     "group": "ccaa",
@@ -180,7 +190,7 @@
     "scholarships": "Up to 9 equivalencies"
   },
   {
-    "rank": 19,
+    "rank": 20,
     "rankClass": "rk-solid",
     "name": "MEC",
     "group": "mec",
@@ -190,7 +200,7 @@
     "scholarships": "Up to 9 equivalencies"
   },
   {
-    "rank": 20,
+    "rank": 21,
     "rankClass": "rk-solid",
     "name": "CACC",
     "group": "cacc",
@@ -200,7 +210,7 @@
     "scholarships": "Up to 9 equivalencies"
   },
   {
-    "rank": 21,
+    "rank": 22,
     "rankClass": "rk-solid",
     "name": "Sun Conference",
     "group": "sun-conference",
@@ -210,7 +220,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 22,
+    "rank": 23,
     "rankClass": "rk-dev",
     "name": "AMC",
     "group": "amc",
@@ -220,7 +230,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 23,
+    "rank": 24,
     "rankClass": "rk-dev",
     "name": "WHAC",
     "group": "whac",
@@ -230,7 +240,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 24,
+    "rank": 25,
     "rankClass": "rk-dev",
     "name": "SAC",
     "group": "sac",
@@ -240,7 +250,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 25,
+    "rank": 26,
     "rankClass": "rk-dev",
     "name": "SCIAC",
     "group": "sciac",
@@ -250,7 +260,7 @@
     "scholarships": "Zero athletic scholarships"
   },
   {
-    "rank": 26,
+    "rank": 27,
     "rankClass": "rk-dev",
     "name": "CCCAA/NJCAA",
     "group": [

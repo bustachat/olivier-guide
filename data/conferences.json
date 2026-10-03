@@ -113,8 +113,7 @@
     "scholarships": "Not applicable — the SEC does not sponsor men's soccer",
     "maxAid": "N/A",
     "otherSchools": [
-      "Kentucky (men play in the Sun Belt)",
-      "South Carolina (men play in the Sun Belt)"
+      "Kentucky (men play in the Sun Belt)"
     ],
     "desc": "The SEC sponsors women's soccer but not men's soccer. Kentucky and South Carolina are the SEC schools with men's teams, and both play in the Sun Belt Conference. Texas A&M and Florida have no men's varsity team.",
     "color": [
@@ -959,6 +958,44 @@
     "color": [
       "#dbeafe",
       "#1e3a8a"
+    ]
+  },
+  {
+    "id": "sun-belt",
+    "group": "sun-belt",
+    "name": "Sun Belt Conference",
+    "abbr": "Sun Belt",
+    "tier": "Mid-Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Mid-major with a deep men's soccer pipeline across the South and Appalachia",
+    "founded": 1976,
+    "teams": 14,
+    "soccerTeams": 10,
+    "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-10-03; Sun Belt founding year and 14 members from sunbeltsports.org (July 2026)",
+    "ncaaTitles": 0,
+    "mlsPicksByYear": {
+      "2022": 4,
+      "2023": 6,
+      "2024": 7,
+      "2025": 7,
+      "2026": 5
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
+    "otherSchools": [
+      "Kentucky",
+      "Marshall",
+      "UCF",
+      "Coastal Carolina",
+      "Georgia Southern",
+      "Georgia State",
+      "James Madison"
+    ],
+    "desc": "Men's soccer here combines full Sun Belt members with schools whose other sports play elsewhere, such as South Carolina, West Virginia, Kentucky and UCF.",
+    "color": [
+      "#fef9c3",
+      "#a16207"
     ]
   }
 ]

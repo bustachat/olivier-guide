@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.85 (2026-10-04) — Add New Hampshire, San Diego State, CSUN and San Jose State
+
+**Why:** Batch 2 of the owner's pick from the D1 gap review: the strongest remaining pipelines or warm-climate programs in conferences that already had cards (New Hampshire 5 SuperDraft picks 2022-26, San Diego State 3, CSUN 2, San Jose State 2). New Hampshire and San Diego State are filed in `data/d1-other.json`; CSUN and San Jose State in `data/big-west.json`, like UC Davis, which also plays another conference's men's soccer.
+
+**New Hampshire** (`newhampshire`, America East): Fit 52, dev 76/72/68, `acuAlign` 9. Exercise Science B.S. (exercise physiology, exercise metabolism, applied biomechanics, strength training, exercise testing and prescription, six-credit internship). Direct billed cost $55,652. Head coach Rich Weinrebe (since 2024; score 70, rank 72). Five SuperDraft picks including Moise Bombito at No. 3. Six straight America East regular-season titles 2019-24. Entry competition Medium: 12 midfielders, 7 leaving; heavily transfer-driven.
+
+**San Diego State** (`sandiegostate`, Pac-12 from 2026; WAC in 2024-25): Fit 60, dev 78/70/60, `acuAlign` 9. Kinesiology B.S. with a Prephysical Therapy emphasis. Direct billed cost $48,766, using the non-resident table plus the $3,000 out-of-state and international fee. Head coach Ryan Hopkins (USSF A and National Goalkeeping licences; score 72, rank 61). Three picks (CJ Fodrey No. 13). Entry competition High: 12 midfielders, only 4 leaving; transfer-driven.
+
+**CSUN** (`csun`, Big West): Fit 58, dev 72/62/62, `acuAlign` 10. Kinesiology B.S., Exercise Science option. Direct billed cost $37,778 (tuition and fees published combined, plus the $471-a-unit non-resident charge for 30 units). Head coach Terry Davila (28th season, 16 draft picks; score 70, rank 74). Two picks in five years (Jamar Ricketts No. 13 in the 2024 draft). Entry competition High: 10 midfielders, 3 leaving.
+
+**San Jose State** (`sanjosestate`, Mountain West from 2026; WAC before): Fit 52, dev 62/58/52, `acuAlign` 4. Kinesiology B.S. Direct billed cost $46,595. **Interim head coach Jesus Sanchez** (Simon Tobin retired in August 2026; score 52, rank 174, re-score if he is named permanent). Two picks. Entry competition High: 10 midfielders, 2 leaving, 5 first-years. **`gpa.status` is `borderline`:** SJSU's admissions page asks non-California residents for a 3.0 GPA.
+
+**Caveats:** (1) San Jose State's overall records for 2021-25 were counted from the result lines on its schedule pages (no conference table was available because wacsports.com redirects to the United Athletic Conference), and its conference positions are not shown. (2) SDSU's and CSUN's `size` is total enrollment (SDSU plus Imperial Valley 41,184; CSUN 36,848) because undergraduate-only figures were not found; SJSU is "nearly 40,000" from its newsroom. (3) New Hampshire's stadium description comes from the athletics site's facility project page (artificial turf, lights and a 1,500-seat grandstand); its own facility page is an empty stub and the current capacity was not confirmed. (4) San Diego State and San Jose State housing and food figures are the schools' average budget figures. (5) UNH's undergraduate figure (10,909, fall 2024 census) came from the Institutional Research census PDF named in a search result and was not re-read. (6) The `acuAlign` counts for CSUN and San Diego State count only required courses; Hopkins' and Davila's playing and coaching details come from the schools' own bios. (7) Map dots: New Hampshire (546,127), San Diego State (109,222), CSUN (92,197), San Jose State (74,183), each tested on land.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0, jargon check pass, negative-test suite 27/27, local browser check (196 schools, stored Fit equals the live recalculation, four modals free of undefined/NaN, dots on land).
+
 ### v45.84 (2026-10-04) — Add Portland, LMU, Seattle U and San Francisco (West Coast Conference)
 
 **Why:** The West Coast Conference had the largest remaining SuperDraft pipelines among conferences already on a card (Portland 7 picks, LMU 3, Seattle U 3, San Francisco 2 in 2022-26). All four are filed in `data/d1-other.json` (confKey `wcc`) and come from the owner's pick of batch 1. Seattle U joined the WCC in 2025 and played in the WAC before that.

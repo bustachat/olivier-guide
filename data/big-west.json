@@ -2181,5 +2181,524 @@
         "covered": false
       }
     ]
+  },
+  {
+    "id": "csun",
+    "profileDepth": "full",
+    "name": "CSUN",
+    "full": "California State University, Northridge (Matadors)",
+    "loc": "Northridge, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#fbe8ea",
+      "#c8102e"
+    ],
+    "kinRank": "Very Good (Kinesiology B.S., Exercise Science option, with biomechanics, advanced biomechanics, physiology of exercise, motor learning and motor development required)",
+    "degreeTitle": "B.S. Kinesiology (Exercise Science option)",
+    "acuAlign": 10,
+    "acuAlignNote": "CSUN's Kinesiology B.S., Exercise Science option, requires General Biology with a lab, Human Anatomy with a lab, Human Physiology and a statistics course in the lower division, then Foundations and Analysis of Human Movement, Socio-Psychological Aspects of Physical Activity, Biomechanics with a lab, Physiology of Exercise with a lab and Motor Learning in the upper division, plus Advanced Biomechanics, Research in Exercise Physiology with a lab, Motor Development and Application of Motor Behavior Principles in the option. A pre-allied-health pathway swaps in the Biological Principles series and a two-semester Human Anatomy and Physiology sequence for physical therapy applicants. Those cover the anatomy, functional anatomy, general biology, physiological bases of exercise, advanced exercise physiology, biomechanics, sport psychology, motor development and motor control units. Not counted: exercise testing and prescription, resistance training and an internship, which appear only in the 15 units of advisor-approved electives.",
+    "soccerLevel": "Big West Conference: 16 SuperDraft picks under the current coach including a No. 13 overall pick in 2024, though the team has finished near the bottom of the Big West in three of the last four seasons",
+    "soccerLevelShort": "Big West",
+    "fin": {
+      "costNum": 37778,
+      "tuition": 22458,
+      "roomBoard": 15320,
+      "fees": 0,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "CSUN direct billed cost $37,778 (2026-27, from the financial aid office's cost of attendance tables): tuition and other fees $8,328 for California residents, published combined, plus the non-resident charge of $471 a unit for a typical 30-unit year ($14,130), together $22,458 and recorded as tuition with fees set to 0; plus on-campus housing ($9,152 for a double room without a kitchen) and an all-access meal plan ($6,168), recorded together as room and board ($15,320). Its headline total for living on campus (resident rate) is $29,484, which adds books, transportation and personal expenses; a non-resident student pays the extra non-resident charge on top. CSUN is among the cheaper four-year schools in the guide."
+    },
+    "aid": "Athletic",
+    "size": 36848,
+    "prePT": "Strong: Kinesiology B.S. with a recommended pre-allied-health pathway of two-semester anatomy and physiology and biological principles for physical therapy applicants",
+    "prePTShort": "Strong",
+    "gpa": {
+      "minEntry": "No single minimum GPA published; admission uses an eligibility index that is higher for out-of-state applicants",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "CSUN admits first-time freshmen by an eligibility index built from the CSU-calculated high school GPA, with a higher minimum index for out-of-state applicants. Its freshman admissions are also subject to impaction rules. The size figure is total enrollment (36,848 in fall 2024) because an undergraduate-only figure was not found.",
+      "status": "eligible"
+    },
+    "mapX": 92,
+    "mapY": 197,
+    "fitOlivier": 58,
+    "lensScores": {
+      "overall": 58,
+      "soccer": 55,
+      "academic": 68,
+      "minutes": 31,
+      "lifestyle": 100,
+      "value": 46
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Big West 1-5-3 (9th)",
+        "note": "6-6-6 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "Big West 0-5-4 (10th)",
+        "note": "2-8-7 overall. Jamar Ricketts, who played for CSUN in 2023, was taken 13th overall by the San Jose Earthquakes at the end of that year."
+      },
+      {
+        "yr": 2023,
+        "pos": "Big West 2-3-4 (9th)",
+        "note": "4-6-8 overall. Jorge Solorzano was named Big West Freshman of the Year and Jamar Ricketts made the All-Big West first team."
+      },
+      {
+        "yr": 2022,
+        "pos": "Big West 5-3-1 (4th)",
+        "note": "9-6-4 overall. Reached the Big West tournament semifinals."
+      },
+      {
+        "yr": 2021,
+        "pos": "Big West 3-5-1 (8th)",
+        "note": "4-13-1 overall."
+      }
+    ],
+    "titles": [
+      "Big West champion 2003 and 2005",
+      "Big West tournament champion 2012 and 2016",
+      "Seven NCAA Tournament appearances under the current coach"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Jamar Ricketts, No. 13 overall in the 2024 SuperDraft (San Jose Earthquakes)",
+        "Giovanni Aguilar, second round of the 2022 SuperDraft (Vancouver Whitecaps FC)"
+      ],
+      "draftRank": "Two SuperDraft picks in the last five drafts, in 2022 and 2024, among 16 under the current coach"
+    },
+    "devScores": {
+      "tactical": 72,
+      "technical": 62,
+      "fitness": 62
+    },
+    "devScoresNote": "5a rubric, training environment only. Live gomatadors.com MSOC roster page (2026): HC Terry Davila + assistants Milan Radovic, Rafael Garcia and Marlon Del Valle = 4 coaches; support staff list an Associate Athletic Trainer shared with beach volleyball and indoor track (Patrick Landeros) and an Assistant Sport Performance Coach (Devin Figueroa). Facilities: Matador Soccer Field, 500-seat capacity for 2025 (record crowd 2,300 in 2013), lights since 2010, Bermuda grass, shared with women's soccer. No video or GPS staff named. Scored below San Diego (80/78/70): a 500-seat shared stadium and a shared athletic trainer, partly offset by a named sport performance coach. Results (seven NCAA appearances) excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Matador Soccer Field (500-seat capacity, lights, Bermuda grass, shared with women's soccer)",
+      "Assistant sport performance coach and associate athletic trainer on the men's soccer staff",
+      "Kinesiology laboratories for biomechanics, exercise physiology and motor learning"
+    ],
+    "courses": [
+      "BIOL 101, 211/212 and 281: General Biology, Human Anatomy and Human Physiology",
+      "KIN 345/L and 445: Biomechanics and Advanced Biomechanics",
+      "KIN 346/L and 446/L: Physiology of Exercise and Research in Exercise Physiology",
+      "KIN 377, 477 and 478: Motor Learning, Motor Development and Motor Behavior",
+      "KIN 306: Socio-Psychological Aspects of Physical Activity"
+    ],
+    "rec": "CSUN is one of the cheaper four-year options in a warm Los Angeles setting, with a Kinesiology B.S. (Exercise Science option) that requires biomechanics, advanced biomechanics, exercise physiology, motor learning and motor development, and a head coach in his 28th season who has won six Big West Coach of the Year awards and produced 16 SuperDraft picks, including a No. 13 overall pick in 2024. The drawbacks are recent results and facilities: the team finished 9th, 10th and 9th in the Big West in three of the last four seasons, the stadium holds only about 500, and CSUN's freshman admission uses an eligibility index that is higher for out-of-state applicants. The 2026-27 midfield has 10 players with 3 leaving and a mix of junior-college and four-year transfers, so the first year is crowded.",
+    "url": "https://gomatadors.com/sports/mens-soccer",
+    "domain": "gomatadors.com",
+    "culture": {
+      "vibe": "Cal State Northridge is a very large public university in the San Fernando Valley of Los Angeles.",
+      "thingsToDo": "Los Angeles offers beaches, Hollywood, downtown and MLS, NWSL and international matches across the city, all reachable by car. Summers are hot and dry.",
+      "socialScene": "A large, diverse campus with on-campus housing available. The men's soccer squad of 31 mixes Los Angeles-area high school and academy players with a large group of junior-college and four-year transfers.",
+      "olivierMatch": "★★★★ A warm Los Angeles setting at a low price, with a Kinesiology B.S. and a head coach with a long record of producing professional players. Weaker on recent results and facilities.",
+      "lifestyleTags": "Warm Los Angeles, lower cost, Kinesiology B.S., large public university, long-serving coach"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Matador Soccer Field has been the home of men's and women's soccer since 2002, when both teams moved from North Campus Stadium. The official capacity for 2025 is 500 with bleachers on the west side, the record crowd was more than 2,300 for a 2013 match against UCLA, lights arrived in 2010, and the surface was regraded and re-seeded with Bermuda grass.",
+      "trainingFields": "The athletics site lists Matador Soccer Field as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "An Assistant Sport Performance Coach, Devin Figueroa, is listed on the men's soccer support staff.",
+      "sportsScience": "The staff page lists the head coach and three assistants. No GPS tracking or video analyst is named.",
+      "sportsMed": "Patrick Landeros is listed as Associate Athletic Trainer for men's soccer, beach volleyball and indoor track and field.",
+      "academicLabs": "The Department of Kinesiology teaches laboratory sections for biomechanics, physiology of exercise and research in exercise physiology.",
+      "extras": "Matador Soccer Field's record crowd, more than 2,300, came when a No. 3 CSUN team hosted No. 11 UCLA in 2013.",
+      "note": "A small shared stadium with a named sport performance coach; the athletic trainer is shared with other sports.",
+      "housing": {
+        "available": true,
+        "note": "CSUN Student Housing and Residential Life publishes housing rates, a meal plan and an application for future residents, so on-campus housing is available to new students."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Justin Sosa",
+        "Jorge Solorzano",
+        "Michael Blevins"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Jack Cameron",
+        "Damien Baltierra",
+        "Mika Ney"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Francisco Garibay",
+        "Miles Johnson"
+      ],
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Read from CSUN's 2026-27 roster, which lists each player's previous school. 4 of the 10 midfielders list a previous college (Justin Sosa from Saint Mary's, Jack Cameron from Phoenix College, Damien Baltierra from College of the Desert and Mika Ney from UC Santa Barbara); the other 6 list high schools or academies, including 2 first-years. Across the whole roster, 16 of 31 players list a previous college, 8 of them junior colleges (Phoenix, Otero, Tyler, Santa Monica, College of the Desert and Mira Costa) and 8 four-year schools including Memphis, Dayton, Portland and California Baptist.",
+      "trajectoryNote": "3 of 10 midfielders graduate before 2027 (Sosa, Solorzano and Blevins). Three juniors, two of them junior-college transfers, will be seniors when Olivier arrives, two sophomores will be juniors and two first-years will be sophomores. Most of the group stays, so the midfield is crowded.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "High"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": true
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "sanjosestate",
+    "profileDepth": "full",
+    "name": "San Jose State",
+    "full": "San José State University (Spartans)",
+    "loc": "San Jose, CA",
+    "div": "D1",
+    "conf": "Mountain West Conference",
+    "confKey": "mountain-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e8eef8",
+      "#0055a2"
+    ],
+    "kinRank": "Good (Kinesiology B.S. with required exercise physiology and biomechanics, and specializations in Exercise and Fitness, Rehabilitation Science and others)",
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 4,
+    "acuAlignNote": "San José State's Kinesiology B.S. (a 120-unit degree in the College of Health and Human Sciences) requires Human Anatomy (without a cadaver lab) and Human Physiology in the preparation, then Introduction to Kinesiology, Exercise Physiology, Biomechanics and Measurement and Evaluation in Kinesiology in the core, with Motor Development and Motor Learning split between the core and the student's area of specialization. The areas of specialization are Exercise and Fitness Specialist, Inclusive Physical Activity in Communities, Rehabilitation Science and Sport Management and Culture, among others; the specialization course lists were not read, so no specialization-only course is counted. The required courses cover the anatomy, physiological bases of exercise, introductory biomechanics and exercise testing units. Not counted: functional anatomy, advanced exercise physiology, sport psychology, resistance training, research methods and an internship, none of which is a required standalone course in the core.",
+    "soccerLevel": "Mountain West Conference from 2026 (WAC before that): WAC tournament finals in 2017, 2018, 2022 and 2024, but the head coach retired in August 2026 and an interim coach is leading the team",
+    "soccerLevelShort": "Mountain West",
+    "fin": {
+      "costNum": 46595,
+      "tuition": 20968,
+      "roomBoard": 22912,
+      "fees": 2715,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "San José State direct billed cost $46,595 (2026-27): tuition fee $6,838 plus the non-resident charge of $471 a unit for a typical 30-unit year ($14,130), together $20,968 (from the Bursar's fall 2026 registration fee table); the other mandatory registration fees ($2,715: student association, student union, health center facility, document, student success excel tech, student health and instructionally-related activities fees); and the financial aid office's average campus housing ($15,543) and food ($7,369) budget, recorded together as room and board ($22,912). The housing and food figures are average student budgets, not a rate for a specific room. San José State costs far less than the private schools in the guide, so even a partial athletic scholarship goes a long way."
+    },
+    "aid": "Athletic",
+    "size": 40000,
+    "prePT": "Good: Kinesiology B.S. built on anatomy and physiology with a Rehabilitation Science specialization, though the specialization's course list was not read",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "3.0 minimum high school GPA for non-California residents (2.5 for California residents); admission is competitive",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "SJSU's admissions page sets a 3.0 minimum GPA, calculated from 10th, 11th and 12th grade college-prep courses, for applicants who are not California residents, and says applicants below it will not be considered. Olivier's 2.8 is below that line, so the athletic route would need an exception or an international-applicant equivalent confirmed with admissions. The size figure is nearly 40,000 total students in fall 2025 (undergraduate-only figure not found).",
+      "status": "borderline"
+    },
+    "mapX": 74,
+    "mapY": 183,
+    "fitOlivier": 52,
+    "lensScores": {
+      "overall": 52,
+      "soccer": 50,
+      "academic": 36,
+      "minutes": 21,
+      "lifestyle": 100,
+      "value": 35
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WAC (4th seed in the tournament)",
+        "note": "12-4-4 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "WAC (5th seed in the tournament)",
+        "note": "6-8-7 overall. As the fifth seed, beat Utah Valley and top-seeded San Diego State to reach the WAC tournament final."
+      },
+      {
+        "yr": 2023,
+        "pos": "WAC",
+        "note": "6-8-4 overall."
+      },
+      {
+        "yr": 2022,
+        "pos": "WAC",
+        "note": "10-6-5 overall. Reached the WAC tournament final."
+      },
+      {
+        "yr": 2021,
+        "pos": "WAC",
+        "note": "11-7-4 overall. Simon Tobin was named WAC Coach of the Year."
+      }
+    ],
+    "titles": [
+      "WAC tournament final appearances in 2017, 2018, 2022 and 2024"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Gilberto Rivera, No. 88 overall in the 2026 SuperDraft (Houston Dynamo FC)",
+        "Beau Leroux, No. 42 overall in the 2024 SuperDraft (San Jose Earthquakes), who signed with the first team in 2025"
+      ],
+      "draftRank": "Two SuperDraft picks in the last five drafts, in 2024 and 2026"
+    },
+    "devScores": {
+      "tactical": 62,
+      "technical": 58,
+      "fitness": 52
+    },
+    "devScoresNote": "5a rubric, training environment only. Live sjsuspartans.com MSOC roster page (2026): Interim HC Jesus Sanchez (named Aug 21, 2026 after Simon Tobin retired) + Associate HC Jamie Reid + assistants David Sweeney and Jota Yamaguchi = 4 coaches; no athletic trainer, strength coach, video or GPS staff listed on the program page. Facilities: Spartan Soccer Complex, opened before 2017, about 500 spectators, shared with women's soccer; lighting and surface not confirmed. Scored below the other schools in this group (no named performance staff, a small shared field, and an interim head coach). Results excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Spartan Soccer Complex (about 500 spectators, shared with women's soccer)",
+      "Used for MLS training sessions and World Cup team practices",
+      "Kinesiology laboratories for exercise physiology and biomechanics"
+    ],
+    "courses": [
+      "BIOL 65: Human Anatomy; BIOL 66: Human Physiology",
+      "KIN 155: Exercise Physiology",
+      "KIN 158: Biomechanics",
+      "KIN 175: Measurement and Evaluation in Kinesiology",
+      "KIN 165 and 166: Motor Development and Motor Learning"
+    ],
+    "rec": "San José State is a warm, large-city option at a much lower price than the private schools in the guide, in the heart of Silicon Valley and the Bay Area, with a Kinesiology B.S. that has Exercise and Fitness and Rehabilitation Science specializations. The program reached the WAC tournament final in 2022 and 2024, went 12-4-4 in 2025 and has two SuperDraft picks in five years, and its first Mountain West season is 2026. The main risks are leadership and admissions: head coach Simon Tobin retired in August 2026 and assistant Jesus Sanchez is the interim head coach, SJSU asks non-California residents for a 3.0 high school GPA (Olivier's is 2.8), and the support staff for the program is small. The 2026-27 midfield has 10 players with only 2 leaving and 5 first-years, so the first year is crowded.",
+    "url": "https://sjsuspartans.com/sports/mens-soccer",
+    "domain": "sjsuspartans.com",
+    "culture": {
+      "vibe": "San José State is a very large public university in downtown San Jose, the center of Silicon Valley, with nearly 40,000 students.",
+      "thingsToDo": "Downtown San Jose, the San Jose Earthquakes and Sharks, San Francisco and the Santa Cruz beaches within about an hour, and the Bay Area's food and tech scene.",
+      "socialScene": "A diverse urban campus with on-campus housing available. The men's soccer squad of 29 includes Bay Area players and international players, among them from Japan.",
+      "olivierMatch": "★★★★ A warm Bay Area city at a lower price than the private schools, with Kinesiology and Rehabilitation Science options. The 3.0 GPA minimum for non-residents, a head coaching change and a small support staff are the main risks.",
+      "lifestyleTags": "Warm Bay Area city, lower cost, Kinesiology B.S., large public university, new head coach"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "The Spartan Soccer Complex, opened before the 2017 season, is home to men's and women's soccer. It hosted the 2018 Mountain West Women's Soccer Tournament and has been used for MLS training sessions and World Cup team practices. The athletics site gives an approximate capacity of 500 spectators; lighting and playing surface were not confirmed.",
+      "trainingFields": "The athletics site lists the Spartan Soccer Complex as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists an interim head coach, an associate head coach and two assistants. No GPS tracking, video analyst or sports science staff is named.",
+      "sportsMed": "No athletic trainer is listed on the men's soccer staff page.",
+      "academicLabs": "The Department of Kinesiology teaches laboratory sections in exercise physiology and biomechanics.",
+      "extras": "The complex has hosted Mountain West Conference tournament matches and MLS team training sessions.",
+      "note": "A small shared field with no named support staff on the program page.",
+      "housing": {
+        "available": true,
+        "note": "SJSU's cost of attendance budget lists a campus housing option (about $15,543 a year in housing) and on-campus food, so residence-hall housing is available to new students."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Angel Fernandez",
+        "Dane Pendleton"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Neo Ruiz",
+        "Daniel Fregoso Bautista"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Fernando Duarte"
+      ],
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from San José State's 2026-27 roster, which lists a previous school for transfers. Only 1 of the 10 midfielders lists a previous college (Dane Pendleton, from Skyline College); the other 9 list none, including 5 first-years. Across the whole roster, 6 of 29 players list a previous college (Denver, Skyline College, Utah Tech, De Anza College, Jessup and Cañada College).",
+      "trajectoryNote": "Only 2 of 10 midfielders graduate before 2027 (Fernandez and Pendleton). Two juniors will be seniors when Olivier arrives, one sophomore will be a junior, and the 5 first-years on this year's roster will be sophomores, so the midfield is young and crowded, and the team's coaching situation is unsettled.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 75,
+          "label": "Established starter"
+        }
+      ],
+      "recruit_risk": "High"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

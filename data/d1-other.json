@@ -5011,5 +5011,531 @@
         "covered": false
       }
     ]
+  },
+  {
+    "id": "newhampshire",
+    "profileDepth": "full",
+    "name": "New Hampshire",
+    "full": "University of New Hampshire (Wildcats)",
+    "loc": "Durham, NH",
+    "div": "D1",
+    "conf": "America East Conference",
+    "confKey": "america-east",
+    "region": "east",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#e9edf6",
+      "#003591"
+    ],
+    "kinRank": "Excellent (dedicated Exercise Science B.S. with exercise physiology, applied biomechanics, exercise metabolism, strength training, exercise testing and prescription, and a six-credit internship)",
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 9,
+    "acuAlignNote": "UNH's Exercise Science B.S. (College of Health and Human Services, 84 credits of required courses) requires Human Anatomy and Physiology I and II, Clinical Kinesiology, Physiology of Exercise, Exercise Metabolism: Acute and Chronic Adaptations, Applied Biomechanics, Science and Practice of Strength Training, Clinical Applications of Exercise Testing, Guidelines of Fitness and Graded Exercise Testing, Exercise Prescription and Leadership in Healthy and Special Populations, Cardiopulmonary Pathologies and a six-credit internship, plus a cardiac rehabilitation practicum, chemistry, nutrition and statistics. Those cover the anatomy, functional anatomy, exercise physiology, advanced exercise physiology, exercise prescription and testing, introductory biomechanics, resistance training and internship units. Not counted: general biology, sport psychology, motor development, motor control and a research methods course, none of which is required as a standalone course (the statistics requirement is Psychology or Sociology statistics, not research methods).",
+    "soccerLevel": "America East Conference: six straight regular-season titles from 2019 to 2024, 2021 NCAA Round of 16, five SuperDraft picks in the last five drafts",
+    "soccerLevelShort": "America East",
+    "fin": {
+      "costNum": 55652,
+      "tuition": 37996,
+      "roomBoard": 13788,
+      "fees": 3868,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "New Hampshire direct billed cost $55,652 (2026-27, from the Student Accounts tuition and housing pages): out-of-state tuition $37,996 + mandatory fees $3,626 and a $242 technology fee ($3,868) + the lowest-priced standard room (a triple, $8,164) + the lowest on-campus meal plan (Wildcat Bites, $5,624). Housing and the meal plan are recorded together as room and board ($13,788). A double room costs about $1,250 a year more. UNH costs far less than most private schools in the guide, so even a partial athletic scholarship goes a long way."
+    },
+    "aid": "Athletic",
+    "size": 10909,
+    "prePT": "Excellent: Exercise Science B.S. with clinical kinesiology, cardiopulmonary pathologies and a cardiac rehabilitation practicum, in a college that also teaches occupational therapy and athletic-training pathways",
+    "prePTShort": "Excellent",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is holistic",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "UNH reports an average high school GPA of 3.7 for its incoming class, the highest in its history, so a 2.8 GPA is below the typical admit and needs a strong athletic case.",
+      "status": "eligible"
+    },
+    "mapX": 546,
+    "mapY": 127,
+    "fitOlivier": 52,
+    "lensScores": {
+      "overall": 52,
+      "soccer": 68,
+      "academic": 63,
+      "minutes": 53,
+      "lifestyle": 0,
+      "value": 31
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "AE 3-3-1 (4th)",
+        "note": "5-8-5 overall, the first season in six without a regular-season title."
+      },
+      {
+        "yr": 2024,
+        "pos": "AE 4-1-2 (1st, co-champions)",
+        "note": "7-3-7 overall in Rich Weinrebe's first season as head coach. A conference-record sixth straight regular-season title, ranked No. 39 in the final RPI and seventh in the nation in goals against."
+      },
+      {
+        "yr": 2023,
+        "pos": "AE 4-0-3 (1st)",
+        "note": "13-3-4 overall. Regular-season champions."
+      },
+      {
+        "yr": 2022,
+        "pos": "AE 6-1 (1st)",
+        "note": "15-4-1 overall."
+      },
+      {
+        "yr": 2021,
+        "pos": "AE 7-0-1 (1st)",
+        "note": "17-2-2 overall, a program-record winning percentage. Regular-season champions and No. 16 national seed; beat North Carolina 4-1 in the NCAA second round and reached the Round of 16, losing 1-0 at top-seeded Oregon State."
+      }
+    ],
+    "titles": [
+      "America East regular-season champion 2019 through 2024 (a conference-record six straight)",
+      "America East tournament champion 2018, 2019 and 2020",
+      "NCAA Round of 16 in 2017 and 2021"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 5,
+      "notable": [
+        "Moise Bombito, No. 3 overall in the 2023 SuperDraft (Colorado Rapids), later named to Canada's 2026 World Cup roster",
+        "Yannick Bright, No. 15 overall in the 2024 SuperDraft (Inter Miami CF)",
+        "Jassem Koleilat, No. 58 in the 2023 SuperDraft (Los Angeles FC)",
+        "Tola Showunmi, No. 88 in the 2022 SuperDraft (Atlanta United FC)"
+      ],
+      "draftRank": "Five SuperDraft picks in the last five drafts, three in the 2023 draft alone"
+    },
+    "devScores": {
+      "tactical": 76,
+      "technical": 72,
+      "fitness": 68
+    },
+    "devScoresNote": "5a rubric, training environment only. Live unhwildcats.com MSOC roster page (2026): HC Rich Weinrebe + assistants Ian de Oliveira and Alan Kehoe + a dedicated goalkeeper coach (David Williams) + Director of Operations = 5 staff; support staff list an associate head athletic trainer (Meg Yurista) and a graduate assistant strength and conditioning coach (Connor Smith). Facilities: the athletics site describes a dedicated soccer and lacrosse facility with artificial turf, lights and 1,500-seat grandstand (a facility-project page; current capacity not re-confirmed). No video analyst or GPS named; no full-time soccer strength coach. Scored below San Diego (80/78/70): 5-person staff but no full-time performance staff and a modest stadium. Results (six straight regular-season titles) excluded.",
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Dedicated soccer facility with artificial turf, lights and a grandstand",
+      "Goalkeeper coach, associate head athletic trainer and graduate strength coach on the program staff",
+      "Exercise Science laboratories for exercise testing, strength training and biomechanics"
+    ],
+    "courses": [
+      "BMS 507 and 508: Human Anatomy and Physiology I and II",
+      "EXSC 620: Physiology of Exercise; EXSC 724: Exercise Metabolism",
+      "EXSC 722: Applied Biomechanics; EXSC 720: Strength Training",
+      "EXSC 735, 736 and 737: Exercise Testing and Prescription",
+      "EXSC 650A: Internship in Exercise Science"
+    ],
+    "rec": "New Hampshire is a very strong academic match at a lower price than most private schools in the guide: an Exercise Science B.S. that requires exercise physiology, exercise metabolism, biomechanics, strength training, exercise testing and prescription, and a six-credit internship, at about $55,700 a year before any scholarship. The program won a conference-record six straight America East regular-season titles from 2019 to 2024, reached the 2021 NCAA Round of 16 and has produced five SuperDraft picks in five years, including a No. 3 overall pick. The drawbacks are climate and setting: Durham is a small, cold New England town about an hour from Boston, and the program has become heavily transfer-driven. The 2026-27 midfield has 12 players with 7 leaving, so the first year is more open than at most schools in the guide.",
+    "url": "https://unhwildcats.com/sports/mens-soccer",
+    "domain": "unhwildcats.com",
+    "culture": {
+      "vibe": "The University of New Hampshire is a large public university in the small town of Durham, near the Maine coast and about an hour north of Boston, with about 10,900 undergraduates.",
+      "thingsToDo": "Boston, Portsmouth and the New Hampshire and Maine beaches are within about an hour, and the White Mountains offer skiing and hiking. Winters are long and cold.",
+      "socialScene": "A residential campus where full-time undergraduates under 21 are required to live on campus for their first two years. The men's soccer squad of 27 draws players from Iceland, Germany, Italy, Spain, Japan and across the United States.",
+      "olivierMatch": "★★ A cold, small-town campus rather than a warm city, but a very strong academic match at a lower price than most private schools, plus a winning program with a No. 3 overall draft pick. Strong on academics, soccer and cost; weak on climate and city.",
+      "lifestyleTags": "Small New England town, cold winters, Exercise Science B.S., six straight America East titles, lower cost than most"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "The athletics site describes a dedicated soccer and lacrosse facility with an artificial turf field, lights and grandstand seating for 1,500. NCAA home matches have also been played at Wildcat Stadium, where the 2021 team beat North Carolina in the second round.",
+      "trainingFields": "The athletics site lists the soccer and lacrosse facility as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "A graduate assistant strength and conditioning coach, Connor Smith, is listed on the men's soccer support staff.",
+      "sportsScience": "The staff page lists a goalkeeper coach and a Director of Operations. No GPS tracking or video analyst is named.",
+      "sportsMed": "Meg Yurista is listed as the Associate Head Athletic Trainer on the men's soccer staff page.",
+      "academicLabs": "The Exercise Science program teaches laboratory courses in exercise techniques, electrocardiography and graded exercise testing.",
+      "extras": "The program's own page records the 2021 NCAA second-round win over North Carolina, 4-1, at Wildcat Stadium.",
+      "note": "A solid dedicated facility with a named athletic trainer and a graduate strength coach; no video or GPS staff are listed.",
+      "housing": {
+        "available": true,
+        "note": "UNH requires full-time undergraduates under 21 to live on campus for four semesters unless exempted, confirmed on its On-Campus Housing Requirement page, and its housing rates page lists double, triple and quad rooms."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 7,
+      "cleared_names": [
+        "Daniel Firek",
+        "Ryo Miyata",
+        "Miguel Soto Gonzalez",
+        "Graham Dougald",
+        "Ethan Vermillion",
+        "Arturo McConnochie",
+        "Tyson Amoo-Mensah"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Lukas Kuca"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Gershom Matimano",
+        "Felipe Diniz"
+      ],
+      "recruit_pathway": "Transfer-preferred",
+      "recruit_pathway_note": "Read from UNH's 2026-27 roster, which lists each player's previous club or school. 8 of the 12 midfielders list a previous college (Radford, Lipscomb, Murray State College, Queens, Mount St. Mary's, IU Indy, Monmouth and DePaul); the other 4 list youth clubs or academies, including 2 first-years. Across the whole roster, 12 of 27 players list a previous college, among them UCF, Southern Indiana, Cowley College and Trinity University.",
+      "trajectoryNote": "7 of 12 midfielders graduate before 2027 (three seniors and four graduate students). Kuca will be a senior when Olivier arrives, two sophomores will be juniors and two first-years will be sophomores, so the midfield turns over heavily. The program leans on transfers, which makes first-year minutes harder to project than the roster alone suggests.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 45,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 65,
+          "label": "Established starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 90,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC120",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "sandiegostate",
+    "profileDepth": "full",
+    "name": "San Diego State",
+    "full": "San Diego State University (Aztecs)",
+    "loc": "San Diego, CA",
+    "div": "D1",
+    "conf": "Pac-12 Conference",
+    "confKey": "pac-12",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#f7e8ea",
+      "#a6192e"
+    ],
+    "kinRank": "Very Good (Kinesiology B.S. with a Prephysical Therapy emphasis: exercise physiology, biomechanics, neuroscience of movement and exercise programming for disease populations)",
+    "degreeTitle": "B.S. Kinesiology (Prephysical Therapy emphasis)",
+    "acuAlign": 9,
+    "acuAlignNote": "San Diego State's Kinesiology B.S. has a Prephysical Therapy emphasis designed for students aiming at graduate allied-health programs, which matches Olivier's Doctor of Physical Therapy goal. It requires Human Anatomy, Principles of Cell and Molecular Biology, Applied Kinesiology, Physiology of Exercise with a laboratory, Principles of Human Physiology with a laboratory, Measurement and Evaluation in Kinesiology, Biomechanics of Human Movement, Neuroscience of Movement, two Pathophysiology and Exercise Programming courses, Promoting Physical Activity and Healthy Eating, Psychosocial Aspects of Disease and Injury Rehabilitation and a statistics course, plus a pre-approved international experience. Those cover the anatomy, functional anatomy, general biology, physiological bases of exercise, exercise prescription and testing, introductory biomechanics, health and exercise psychology and motor control units. Not counted: a standalone sport psychology, motor development, resistance training or research methods course, and a full internship (the clinic course is one unit). Admission to the major requires ENS 200 and BIOL 212 first.",
+    "soccerLevel": "Pac-12 Conference from 2026 (WAC in 2024-25): 2024 WAC regular-season champions, three SuperDraft picks in five years including a No. 13 overall pick",
+    "soccerLevelShort": "Pac-12",
+    "fin": {
+      "costNum": 48766,
+      "tuition": 20968,
+      "roomBoard": 21856,
+      "fees": 5942,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "San Diego State direct billed cost $48,766 (2026-27, from the financial aid office's non-resident cost table): CSU basic tuition $6,838 + non-resident tuition $14,130 (together $20,968) + campus fees $2,942 and the $3,000 out-of-state and international student fee ($5,942) + the table's on-campus housing ($14,008) and meal plan ($7,848), recorded together as room and board ($21,856). The housing and meal figures are the averages SDSU uses for students in university housing, not a rate for a specific room. Its headline total is $53,562, which adds books, transportation and personal expenses. San Diego State costs far less than the private schools in the guide, in a warm, large city, so even a partial athletic scholarship goes a long way."
+    },
+    "aid": "Athletic",
+    "size": 41184,
+    "prePT": "Excellent: Kinesiology B.S. with a dedicated Prephysical Therapy emphasis (ENS 200 and BIOL 212 are required before entering the major)",
+    "prePTShort": "Excellent",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is highly selective",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "SDSU reports an average GPA of 3.83 for its fall 2025 first-year admits from a record 95,444 applicants, so a 2.8 GPA is well below the typical admit and needs a strong athletic case. The Kinesiology major also requires ENS 200 and BIOL 212 first. The size figure is combined enrollment at SDSU and SDSU Imperial Valley (41,184 in 2025-26), because an undergraduate-only figure was not found.",
+      "status": "eligible"
+    },
+    "mapX": 109,
+    "mapY": 222,
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 60,
+      "academic": 63,
+      "minutes": 31,
+      "lifestyle": 100,
+      "value": 38
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WAC 3-2-2",
+        "note": "7-9-2 overall. Injuries hit the lineup, and SDSU was in position to win the WAC until a goal conceded in the 89th minute of the final regular-season match."
+      },
+      {
+        "yr": 2024,
+        "pos": "WAC 7-0-1 (1st)",
+        "note": "10-5-3 overall in the first season in the WAC. Regular-season champions, the most wins since 2011; Ryan Hopkins was named WAC Coach of the Year."
+      },
+      {
+        "yr": 2023,
+        "pos": "Pac-12 0-7-3",
+        "note": "6-7-5 overall. Last team in the country to concede a goal, going 651 minutes, and rose to No. 17 in the national rankings."
+      },
+      {
+        "yr": 2022,
+        "pos": "Pac-12 1-6-3",
+        "note": "5-9-4 overall. Earned results at Stanford and Oregon State for the first time in 10 years."
+      },
+      {
+        "yr": 2021,
+        "pos": "Pac-12 2-7-0",
+        "note": "8-7-2 overall. Ranked for most of the season and as high as No. 13 in the national poll."
+      }
+    ],
+    "titles": [
+      "WAC regular-season champion 2024"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "CJ Fodrey, No. 13 overall in the 2023 SuperDraft (Austin FC)",
+        "Reid Fisher, No. 23 overall in the 2025 SuperDraft (Toronto FC)",
+        "Blake Bowen, No. 59 overall in the 2023 SuperDraft"
+      ],
+      "draftRank": "Three SuperDraft picks in the last five drafts, two in the 2023 draft and one in 2025"
+    },
+    "devScores": {
+      "tactical": 78,
+      "technical": 70,
+      "fitness": 60
+    },
+    "devScoresNote": "5a rubric, training environment only. Live goaztecs.com MSOC roster page (2026): HC Ryan Hopkins + assistants Carlos Aguilar and David Diaz + Director of Operations (Ryan Dooley) = 4 staff; no athletic trainer, strength coach, video or GPS staff listed on the program page. Hopkins holds a USSF A licence and a USSF National Goalkeeping Licence and was an assistant at Virginia (2019 NCAA runner-up) and Denver (2016 College Cup). Facilities: SDSU Sports Deck, a $13 million natural-grass field atop a parking structure, lights (2012), video scoreboard (2018), 1,500 seats and 3,000 capacity, shared with women's soccer and track. Scored on Hopkins' pedigree for tactical; modest support staff for fitness. Results (2024 WAC title) excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "SDSU Sports Deck (natural grass, lights, video scoreboard, 1,500 seats and 3,000 capacity)",
+      "Head coach with a USSF A licence and a USSF National Goalkeeping Licence",
+      "Kinesiology laboratories for exercise physiology and biomechanics"
+    ],
+    "courses": [
+      "BIOL 212: Human Anatomy; BIOL 336 and 436: Principles of Human Physiology with laboratory",
+      "ENS 304 and 304L: Physiology of Exercise with laboratory",
+      "ENS 306: Biomechanics of Human Movement; ENS 307: Neuroscience of Movement",
+      "ENS 332 and 333: Pathophysiology and Exercise Programming of Disease Populations I and II",
+      "ENS 438: Psychosocial Aspects of Disease and Injury Rehabilitation"
+    ],
+    "rec": "San Diego State has one of the best combinations of price, climate and city in the guide: about $48,800 a year before any scholarship (far below the private schools), in a warm, large coastal city, with a Kinesiology B.S. that has a Prephysical Therapy emphasis aimed at exactly Olivier's Doctor of Physical Therapy goal. The program won the 2024 WAC regular-season title, ranked in a national poll three times in five years, and has produced a No. 13 overall pick, under a head coach who was an assistant at Virginia and Denver and holds a USSF A licence. The drawbacks are a sub-.500 record under the current coach (37-44-16), a Kinesiology major with prerequisites before entry, and a heavily transfer-driven roster that has not yet shown how it will settle in its first Pac-12 season. The 2026-27 midfield has 12 players with 4 leaving, so the first year is crowded.",
+    "url": "https://goaztecs.com/sports/mens-soccer",
+    "domain": "goaztecs.com",
+    "culture": {
+      "vibe": "San Diego State is a very large public university on a mesa east of downtown San Diego, close to the city's trolley, beaches and Balboa Park.",
+      "thingsToDo": "Beaches, Balboa Park, the Gaslamp Quarter and a large food and music scene are close, and San Diego FC and the NWSL Wave play in the city.",
+      "socialScene": "A big-campus, big-city social scene where first-year students from outside the local area are required to live on campus and buy a meal plan for their first two years. The men's soccer squad of 28 is heavily transfer-based, with players from across California, the United States and Canada.",
+      "olivierMatch": "★★★★★ A far lower cost than the private schools in the guide, in a warm San Diego city, with a Kinesiology B.S. that has a Prephysical Therapy emphasis and a head coach with a Virginia and Denver pedigree. The main risks are a crowded midfield and the prerequisites for the major.",
+      "lifestyleTags": "Warm major city, lower cost than private schools, Pre-PT emphasis, 2024 WAC champions, large public university"
+    },
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "The SDSU Sports Deck is a $13 million facility on top of a two-story parking structure (P7) on Montezuma Road. The soccer field is a natural grass surface with automatic drainage, seats 1,500 with a capacity of 3,000, and has lights (added in 2012) and a video scoreboard (2018). It is shared with women's soccer and the women's track team.",
+      "trainingFields": "The athletics site lists the Sports Deck as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists two assistants and a Director of Operations. No GPS tracking, video analyst or sports science staff is named.",
+      "sportsMed": "No athletic trainer is listed on the men's soccer staff page.",
+      "academicLabs": "The School of Exercise and Nutritional Sciences teaches the exercise physiology, biomechanics and neuroscience of movement laboratories for Kinesiology majors.",
+      "extras": "The Sports Deck is built on top of a parking structure, so the field sits above street level.",
+      "note": "A real, lit facility with a video scoreboard on a natural grass field; no athletic trainer, strength coach or video staff are listed for the program.",
+      "housing": {
+        "available": true,
+        "note": "SDSU requires first-year students from outside its local admissions area to live on campus and buy a meal plan for their first two years, confirmed on its University Residency Requirement page."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 12,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Carson Ballagh",
+        "Yahir Ocampo Navarro",
+        "Sami Tsipena",
+        "Jonah Kawamura"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Max Mair"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Nik Orth",
+        "Greyson Moreno",
+        "Brecken Bowers",
+        "Lucas Caffo"
+      ],
+      "recruit_pathway": "Transfer-preferred",
+      "recruit_pathway_note": "Read from San Diego State's 2026-27 roster, which lists each player's previous school. 7 of the 12 midfielders list a previous college (Oakland, Western Oregon, San Diego, UC San Diego, San Francisco, LMU and Washington); the other 5 list none, including 3 first-years. Across the whole roster, 16 of 28 players list a previous college, among them Southern Indiana, Milwaukee, Cal State Fullerton, Temple and West Virginia.",
+      "trajectoryNote": "4 of 12 midfielders graduate before 2027 (two seniors and two fifth-year players). Max Mair will be a senior when Olivier arrives, four sophomores will be juniors and three first-years will be sophomores, so most of the group stays. The roster leans on transfers, which makes first-year minutes harder to project than the roster alone suggests.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "High"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC120",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": true
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

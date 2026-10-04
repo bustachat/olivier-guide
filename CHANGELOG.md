@@ -6,6 +6,16 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.92 (2026-10-04) — South Carolina's GPA minimum read as 4.1, so the GPA filter could never reach it
+
+**Why:** The Dashboard's slider tops out at a 4.0 GPA (ATAR 99), and the owner noticed it showed "208 of 209 schools GPA-eligible" even at the maximum. The filter takes the first number in each school's `gpa.minEntry`. South Carolina's text, "4.1 or higher typical (middle 50% weighted high school GPA 4.1 to 4.8)", described the admitted-student profile, not a minimum, and it parsed as 4.1. It was the only one of the 209 schools with a parsed value above 4.0.
+
+**Fix (data only):** South Carolina's `minEntry` now reads "No minimum GPA published for first-year applicants; admission is highly selective and based on grades, course rigor and test scores", which is what its 2026-27 academic bulletin says (the only numeric GPA minimum there, 2.0, is for transfer applicants). The 4.1 to 4.8 profile moved into the `note`, and `gpa.status` changed from `below` to `eligible`, the same treatment as other selective schools with no published minimum (San Diego State, San Diego). The Dashboard now reads 209 of 209 at the top of the slider.
+
+**Not changed:** the filter code. Any future school whose `minEntry` begins with a number above 4.0 would hit the same problem; keep admitted-student profiles in the `note`.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass.
+
 ### v45.91 (2026-10-04) — Add Gonzaga (Pac-12)
 
 **Why:** The last school of the Pac-12 gap on the Division I list (208 to 209 schools, 209 coaches). Gonzaga plays men's soccer in the Pac-12 from 2026 (West Coast Conference before that), and it was listed under "other schools" on both the Pac-12 and WCC cards.

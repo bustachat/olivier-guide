@@ -6,6 +6,21 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.90 (2026-10-04) — Batch 5: FGCU, North Florida, Jacksonville and Stetson (ASUN, Florida)
+
+**Why:** Sixth batch from the Division I gap list, the four warm-climate Florida programs in the ASUN (204 to 208 schools, 208 coaches). The ASUN card now lists these four as guide schools automatically.
+
+**Added (all in `d1-other.json`):**
+- **FGCU** (Fort Myers): fit 50. Coach Oliver Twelvetrees (Colorado State-Pueblo 74-21-12, two Division II national championship matches, score 68). Exercise Science B.S., `acuAlign` 11. Cost $40,339. Draft pick O'Vonte Mullings (No. 20, 2022). 11 midfielders, 6 of them transfers.
+- **North Florida** (Jacksonville): fit 56. First-year coach Marlon Montanella (promoted December 2025, score 56). ASUN regular-season and tournament champions in 2024 and 2025; draft pick Jaylen Yearwood (No. 14, 2026). Kinesiology B.S., `acuAlign` 9. Cost $32,600. Admission is selective (middle half 3.96 to 4.51 GPA) with a 2.5 minimum.
+- **Jacksonville** (Jacksonville University): fit 54. Coach Ali Simmons (UEFA B, assistant on two Division II champions, Seton Hall and Elon, score 68). Exercise Science B.S., `acuAlign` 10. Cost $68,130 (private). Soccer-only 400-seat stadium; no draft picks.
+- **Stetson** (DeLand): fit 44. Coach Emmett Rutkowski (2024 ASUN regular-season champions, score 62). No exercise science major, so the degree is the Health Sciences B.S., `acuAlign` 5. Cost $81,913 (private). Soccer is played at the Athletic Training Center; capacity and lights are not stated.
+- Each has a coach, map dot (all four checked on land), domain, site and social entries and a reference-table row; FGCU, Jacksonville and Stetson were removed from the ASUN card's "other schools" list. Draft-pick rows were added for FGCU and North Florida.
+
+**Notes:** Only pure midfield positions count as midfielders. `size` is total enrollment at FGCU (16,803); undergraduates elsewhere (UNF 14,992; Jacksonville 2,946 for fall 2024; Stetson 2,333 for fall 2026). FGCU's head-coach email and phone are not published, so they are blank. The North Alabama entry on the ASUN card's list was left as is (a name collision with "North" made the coverage script flag it).
+
+**Validation:** `validate_schools.py` pass (208 schools), `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass, local browser check (208 schools load, four map dots on land, modals open with no undefined or NaN).
+
 ### v45.89 (2026-10-04) — Batch 4: Pacific, Cal State Bakersfield, UNLV, Utah Tech
 
 **Why:** Fifth batch of West and Southwest programs from the Division I gap list (200 to 204 schools, 204 coaches). The gap list in CLAUDE.md section 6F had gone stale, so the missing programs were recomputed from the NCAA directory (213 Division I men's programs, matched by athletics website) before choosing; Oregon State and several others on the old list were already in the guide.

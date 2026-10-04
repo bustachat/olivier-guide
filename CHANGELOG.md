@@ -6,6 +6,25 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.86 (2026-10-04) — Loose ends from v45.84 and v45.85
+
+**Why:** The owner asked for the 11 follow-up items logged after the two batches to be worked through before starting batch 3. Eight were resolved or corrected; the rest are recorded in CLAUDE.md section 6F.
+
+**Data corrections:**
+- **San Jose State records.** Conference and overall records for 2021-25 now come from the official header on each season's schedule page: 2025 12-4-4 (WAC 3-2-2), 2024 6-8-7 (3-3-3), 2023 6-8-4 (3-4-1), 2022 **10-5-4** (5-2-2) and 2021 **10-7-3** (7-2-2). The earlier result-line counts had 2022 as 10-6-5 and 2021 as 11-7-4.
+- **San Jose State degree.** The Rehabilitation Science specialization (aimed at physical therapy, chiropractic and physician assistant applicants) was read: it requires chemistry, physics, Biomechanical Assessment of Movement, Physiological Assessment, a two-unit internship and both Motor Development and Motor Learning. `acuAlign` 4 to 7, `academic` 36 to 52; degree title and notes updated. SJSU also sets the equivalent of a U.S. 3.0 GPA for international first-year applicants, so the GPA note now says so (status stays `borderline`).
+- **Undergraduate sizes.** San Diego State 36,196 (Common Data Set 2025-26, includes Imperial Valley), CSUN 32,846 (fall 2025 CSUN Profile), San Jose State 27,700+ (By the Numbers). New Hampshire's 10,909 was re-read in the Institutional Research census.
+- **San Francisco titles.** Its history page lists NCAA championships in 1966, 1975, 1976 and 1980, a 1978 title vacated for an ineligible player and a 1950 co-championship (six banners). Added to `pipeline.json` `ncaaD1[]` (rank 4, 4 titles, tied with UCLA; later ranks renumbered) and to its `titles[]`; it also won a 13th WCC title in 2017.
+- **Seattle U cost.** Now uses the published 2026-27 triple-room rate and required residential meal plan: `costNum` $78,384 to $74,886 (`value` lens unchanged at 29).
+- **New Hampshire facility.** The 2025 schedule shows home matches at Wildcat Stadium; the planned soccer and lacrosse facility is described but not confirmed as built.
+- **Seattle U Championship Field.** Its facility page is gone; the 650-seat figure is now worded as reported by an older page. Portland's GPA note no longer says anything about test-optional status.
+
+**Checked and confirmed:** the 2024 SuperDraft picks for LMU (Tyger Smalls No. 14, Charlotte FC), New Hampshire (Yannick Bright No. 15, Inter Miami), CSUN (Jamar Ricketts No. 13, San Jose) and San Jose State (Beau Leroux No. 42) against Wikipedia's draft table (a second source, not the primary MLS page); LMU's 2019 NCAA appearance against LMU's own NCAA-appearance page.
+
+**Still open:** SJSU interim coach (still interim on 2026-10-04) and the GPA question, Portland's placeholder course numbers, New Hampshire's home field, Seattle U's stadium, and school-average housing figures for San Diego State and San Jose State.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0, jargon check pass.
+
 ### v45.85 (2026-10-04) — Add New Hampshire, San Diego State, CSUN and San Jose State
 
 **Why:** Batch 2 of the owner's pick from the D1 gap review: the strongest remaining pipelines or warm-climate programs in conferences that already had cards (New Hampshire 5 SuperDraft picks 2022-26, San Diego State 3, CSUN 2, San Jose State 2). New Hampshire and San Diego State are filed in `data/d1-other.json`; CSUN and San Jose State in `data/big-west.json`, like UC Davis, which also plays another conference's men's soccer.

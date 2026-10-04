@@ -3983,5 +3983,1033 @@
         "covered": true
       }
     ]
+  },
+  {
+    "id": "portland",
+    "profileDepth": "full",
+    "name": "Portland",
+    "full": "University of Portland (Pilots)",
+    "loc": "Portland, OR",
+    "div": "D1",
+    "conf": "West Coast Conference",
+    "confKey": "wcc",
+    "region": "west",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e8eef8",
+      "#2e2a6a"
+    ],
+    "kinRank": "Good (new B.S. in Exercise Science with a Human Performance Lab, built on a two-semester anatomy and physiology series, kinesiology and exercise physiology)",
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 7,
+    "acuAlignNote": "Portland's Exercise Science B.S. (College of Arts and Sciences) requires a two-semester Human Anatomy and Physiology series with labs, Introduction to Molecular and Cellular Biology, Kinesiology and Functional Human Anatomy, Biology of Exercise, Fitness Assessment and Exercise Prescription, Motor Control of Human Movement, Exercise and Sports Nutrition, Research Methods in Exercise Science and a capstone. Those cover the anatomy, functional anatomy, general biology, exercise physiology, exercise testing and prescription, motor control and research units. Not counted: the internship, Principles of Strength and Conditioning and the sport psychology course, which are only options in the six-credit elective pool, and there is no required biomechanics, motor development or advanced exercise physiology course. The 2026-27 catalog shows several Exercise Science course numbers as placeholders (EXS 2XX, 3XX and 4XX), so this is a new major whose course list may still change.",
+    "soccerLevel": "West Coast Conference: 2025 Elite Eight and a No. 1 national ranking, 2022 Elite Eight, 2016 conference title, seven SuperDraft picks in five years",
+    "soccerLevelShort": "WCC",
+    "fin": {
+      "costNum": 79100,
+      "tuition": 61000,
+      "roomBoard": 16750,
+      "fees": 1350,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Portland direct billed cost $79,100 (2026-27, from the Student Accounts undergraduate cost page): tuition $61,000 ($30,500 a semester) + ASUP and campus access fees $1,350 + a shared traditional-hall room $11,500 + the lowest meal plan $5,250. Housing and the meal plan are recorded together as room and board ($16,750). The campus health insurance charge ($2,971 a year, waivable), the optional parking permit and the one-time new student fee are left out, as are books, supplies and personal costs. Portland is expensive, so the size of the athletic scholarship matters a great deal."
+    },
+    "aid": "Athletic",
+    "size": 2700,
+    "prePT": "Good: Exercise Science B.S. lists physical therapy among its graduate pathways and offers an optional pre-professional concentration",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is holistic",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Portland's first-year admissions page lists a transcript as the required academic record and publishes no minimum GPA. Its own admitted-student data was not available on the pages checked, so a 2.8 GPA is rated eligible with the caution that Portland is a selective private university and needs a strong athletic case.",
+      "status": "eligible"
+    },
+    "mapX": 83,
+    "mapY": 117,
+    "fitOlivier": 51,
+    "lensScores": {
+      "overall": 51,
+      "soccer": 77,
+      "academic": 52,
+      "minutes": 19,
+      "lifestyle": 50,
+      "value": 31
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WCC 6-1-2 (2nd)",
+        "note": "14-2-4 overall, the program's best winning percentage since 1988. Reached No. 1 in the United Soccer Coaches poll, earned an NCAA first-round bye as the No. 8 seed and reached the Elite Eight, beating Denver on penalty kicks and Grand Canyon before losing to Furman. Finished No. 6 in the final poll."
+      },
+      {
+        "yr": 2024,
+        "pos": "WCC 4-0-4 (4th)",
+        "note": "7-4-7 overall. Unbeaten in conference play and a 2-0 win over No. 3 San Diego."
+      },
+      {
+        "yr": 2023,
+        "pos": "WCC 5-2 (3rd)",
+        "note": "12-5 overall. Ranked as high as third nationally and earned an NCAA first-round bye."
+      },
+      {
+        "yr": 2022,
+        "pos": "WCC 6-1 (2nd)",
+        "note": "15-3-3 overall and 11-0-2 at home. Reached the NCAA Elite Eight for the first time since 1995, losing 1-0 in extra time to Pittsburgh."
+      },
+      {
+        "yr": 2021,
+        "pos": "WCC 4-2-1 (5th)",
+        "note": "11-7-1 overall. Reached the NCAA Tournament and lost in the second round to Washington."
+      }
+    ],
+    "titles": [
+      "WCC champion 2016",
+      "NCAA Elite Eight 2022 and 2025"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 7,
+      "notable": [
+        "Joe Highfield, No. 11 overall in the 2026 SuperDraft (Houston Dynamo)",
+        "Nikos Clarke-Tosczak, No. 19 overall in the 2026 SuperDraft (Sporting Kansas City)",
+        "Efetobo Aror, No. 12 overall in the 2025 SuperDraft (Colorado Rapids), who returned to Portland",
+        "Kevin Bonilla, No. 18 overall in the 2024 SuperDraft (Real Salt Lake)"
+      ],
+      "draftRank": "Seven SuperDraft picks in the last five drafts, including two first-round picks in 2026"
+    },
+    "devScores": {
+      "tactical": 80,
+      "technical": 76,
+      "fitness": 74
+    },
+    "devScoresNote": "5a rubric, training environment only. Live portlandpilots.com MSOC staff (2026): HC Nick Carlin-Voigt + assistants Ben Simon, Alex Hockborn, John Melito IV = 4 coaches; support staff list an assistant player development coach (Dave van den Bergh), a Director of Soccer Operations, an athletic trainer (Benjamin Shabb) and a Sports Performance Coach (Bryant Ferate). Facilities: Merlo Field at the Clive Charles Soccer Complex, built 1990, 4,892 capacity, natural grass, six light poles, 40-seat press box, shared with women's soccer; adjacent practice field. No GPS or video staff named. Scored just below San Diego (80/78/70) on technical for natural grass and no named video/analysis staff, above it on fitness for a named sports performance coach. Results (Elite Eights, No. 1 ranking) excluded.",
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Merlo Field (4,892 capacity, natural grass, lights, 40-seat press box)",
+      "Sports performance coach and athletic trainer on the men's soccer support staff",
+      "Hosted three NCAA Tournament matches in 2025, including the Elite Eight"
+    ],
+    "courses": [
+      "BIO 305/365 and 306/366: Human Anatomy and Physiology 1 and 2 with labs",
+      "BIO 420: Kinesiology and Functional Human Anatomy (with lab)",
+      "BIO 418: Biology of Exercise (with lab)",
+      "EXS: Fitness Assessment and Exercise Prescription; Motor Control of Human Movement; Exercise and Sports Nutrition; Research Methods; Capstone"
+    ],
+    "rec": "Portland is one of the strongest pipeline schools in the West Coast Conference, alongside San Diego: a 14-2-4 season and an NCAA Elite Eight in 2025, a No. 1 national ranking that fall, seven SuperDraft picks in the last five drafts, and a head coach who spent four years as an associate head coach at UCLA. Merlo Field holds 4,892, the team ranks near the top of the country in attendance, and the staff includes a sports performance coach. The drawbacks are cost and climate: the direct billed cost is about $79,000 a year before any scholarship, and Portland is a cool, wet city, not a warm one. The Exercise Science B.S. is new and gives a sound anatomy, physiology and exercise physiology base. The 2026-27 midfield has 7 players with only 1 leaving, so the first year is competitive, though most of the group are sophomores or first-years who came through academies rather than transfers.",
+    "url": "https://portlandpilots.com/sports/mens-soccer",
+    "domain": "portlandpilots.com",
+    "culture": {
+      "vibe": "The University of Portland is a private Catholic university on a bluff above the Willamette River in North Portland, with a residential campus of about 2,700 undergraduates.",
+      "thingsToDo": "Downtown Portland, the Timbers and Thorns at Providence Park, food carts, hiking in Forest Park and the Columbia River Gorge, and the Oregon coast within about 90 minutes.",
+      "socialScene": "Men's soccer is one of the best-supported sports on campus, ranking in the top 15 nationally in home attendance in 11 of 13 seasons. The squad draws on MLS and USL academies in the Northwest, California and Georgia and includes players from Sweden, Jamaica and Canada.",
+      "olivierMatch": "★★★ A city campus and a nationally ranked program with a real MLS pipeline, but Portland is cool and wet rather than warm, and the price is high. Strong on soccer and development, weaker on climate and cost.",
+      "lifestyleTags": "Major city, Pacific Northwest, Elite Eight in 2025, Catholic private university, new Exercise Science major"
+    },
+    "facilityDetails": {
+      "rating": "Excellent",
+      "stadium": "Harry A. Merlo Field at the Clive Charles Soccer Complex, built in 1990, with a capacity of 4,892, a natural grass surface (80 percent rye, 20 percent Kentucky bluegrass), six light poles and a 40-seat press box. It is shared with women's soccer and hosted the 1994 NCAA Women's Final Four. Portland hosted the second round, Sweet 16 and Elite Eight of the 2025 NCAA Tournament there.",
+      "trainingFields": "The athletics site lists a dedicated practice field at the Clive Charles Soccer Complex next to Merlo Field.",
+      "strengthConditioning": "A Sports Performance Coach, Bryant Ferate, is listed on the men's soccer support staff.",
+      "sportsScience": "The staff list includes an assistant player development coach and a Director of Soccer Operations. No GPS tracking or video analyst is named.",
+      "sportsMed": "Athletic trainer Benjamin Shabb is listed on the men's soccer support staff.",
+      "academicLabs": "The Exercise Science and Human Performance Lab supports the new Exercise Science major, and the Biology department teaches the anatomy and physiology labs.",
+      "extras": "Merlo Field has hosted U.S. Women's National Team matches and the 1994 NCAA Women's Final Four, and the program ranks near the top of the country in home attendance.",
+      "note": "A real stadium with strong crowds and named performance staff; natural grass and no named video staff keep it just under the top tier.",
+      "housing": {
+        "available": true,
+        "note": "Portland's first-year and transfer housing page takes 2026-27 housing applications, and its cost page lists traditional-hall shared and single rooms and meal plans."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Efetobo Aror"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Isaac Emojong",
+        "Tristan Flores"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Christian Mendoza",
+        "Ritvik Karra",
+        "Julian Bretous"
+      ],
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from Portland's 2026-27 roster, which lists each player's previous school. Only 1 of the 7 midfielders lists a previous college (Isaac Emojong, from Utah Valley); the other 6 list MLS or USL academies and clubs. Across the whole roster the picture is different: 15 of 33 players list a previous college, among them Virginia Tech, North Carolina, Michigan, Ohio State, Louisville, Pittsburgh and Tyler Junior College, so the squad as a whole leans on transfers more than the midfield does.",
+      "trajectoryNote": "Only 1 of 7 midfielders graduates before 2027 (Efetobo Aror, a 2025 SuperDraft pick who returned). Two will be seniors when Olivier arrives, three juniors and one a sophomore, so the group is young and deep, and the first year is competitive.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 25,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 75,
+          "label": "Established starter"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "lmu",
+    "profileDepth": "full",
+    "name": "LMU",
+    "full": "Loyola Marymount University (Lions)",
+    "loc": "Los Angeles, CA",
+    "div": "D1",
+    "conf": "West Coast Conference",
+    "confKey": "wcc",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#eaeef7",
+      "#00205b"
+    ],
+    "kinRank": "Moderate (Health and Human Sciences B.S. in the Seaver College of Science and Engineering, with a Human Performance Lab; no exercise science or kinesiology major)",
+    "degreeTitle": "B.S. Health and Human Sciences",
+    "acuAlign": 4,
+    "acuAlignNote": "LMU has no exercise science or kinesiology major. The closest fit is the Health and Human Sciences B.S. in the Seaver College of Science and Engineering, which is built as pre-physical-therapy, occupational therapy and physician assistant preparation. Required courses include General Biology I with lab, a two-semester Human Anatomy and Physiology series with labs, Nutrition, Exercise Physiology with a laboratory (HHSC 3750 and 3756) and Allied Health Internship I (HHSC 3950). Those cover the anatomy, general biology, physiological bases of exercise and internship units. Not counted: kinesiology, biomechanics and exercise testing courses, which appear only as upper-division HHSC options, and Lifespan Development, which is one of two choices alongside Psychopathology. The degree also requires chemistry, physics, statistics and general psychology, so it is a broad pre-health route rather than a sport-science one.",
+    "soccerLevel": "West Coast Conference: 2023 NCAA Elite Eight, NCAA Tournament in 2019 and spring 2021, three first-round SuperDraft picks in three straight drafts (2022-24)",
+    "soccerLevelShort": "WCC",
+    "fin": {
+      "costNum": 88831,
+      "tuition": 68042,
+      "roomBoard": 19741,
+      "fees": 1048,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "LMU direct billed cost $88,831 (2026-27, from the Student Accounts pages): tuition $68,042 + mandatory fees $1,048 (registration, student activity, recreation, media, accident insurance and the international student fee) + the lowest-priced residence hall (Desmond, Doheny, Whelan or Rosecrans, $14,411) + the lowest meal plan (Lion Silver, $5,330). Housing and the meal plan are recorded together as room and board ($19,741). LMU's own headline total is $99,289 for a student living on campus, which adds an average housing and food figure, books, personal and transport costs and loan fees. The mandatory student health insurance ($2,776) is left out because it can be waived with comparable cover. LMU is very expensive, so the size of the athletic scholarship matters a great deal."
+    },
+    "aid": "Athletic",
+    "size": 7020,
+    "prePT": "Good: Health and Human Sciences B.S. is built as pre-physical-therapy, occupational therapy and physician assistant preparation, with a Human Performance Lab",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is holistic",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "LMU's fall 2025 first-year class profile reports an average high school GPA of 4.0 from about 23,000 applications, so a 2.8 GPA is well below the typical admit and needs a strong athletic case.",
+      "status": "eligible"
+    },
+    "mapX": 90,
+    "mapY": 200,
+    "fitOlivier": 60,
+    "lensScores": {
+      "overall": 60,
+      "soccer": 59,
+      "academic": 36,
+      "minutes": 31,
+      "lifestyle": 100,
+      "value": 36
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WCC 1-3-5 (7th)",
+        "note": "5-6-7 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "WCC 3-4-1 (5th)",
+        "note": "6-8-3 overall."
+      },
+      {
+        "yr": 2023,
+        "pos": "WCC 2-3-2 (5th)",
+        "note": "10-5-6 overall. Reached the NCAA Elite Eight, beating James Madison 1-0 in the third round before the run ended at West Virginia."
+      },
+      {
+        "yr": 2022,
+        "pos": "WCC 3-3-1 (4th)",
+        "note": "9-6-3 overall in Kyle Schmid's first season as head coach."
+      },
+      {
+        "yr": 2021,
+        "pos": "WCC 4-2-1 (3rd)",
+        "note": "12-4-2 overall."
+      }
+    ],
+    "titles": [
+      "NCAA Elite Eight 2023",
+      "NCAA Tournament 2019 and spring 2021"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "Tyger Smalls, No. 14 overall in the 2024 SuperDraft (Charlotte FC)",
+        "Noel Caliskan, No. 15 overall in the 2023 SuperDraft (Portland Timbers)",
+        "Jacob Jackson, No. 24 overall in the 2022 SuperDraft (New England Revolution)"
+      ],
+      "draftRank": "Three first-round SuperDraft picks in three straight drafts, 2022 to 2024"
+    },
+    "devScores": {
+      "tactical": 74,
+      "technical": 68,
+      "fitness": 60
+    },
+    "devScoresNote": "5a rubric, training environment only. Live lmulions.com MSOC staff page (2026): HC Kyle Schmid + 3 assistants (Erik Holt, Jack Cybulski, Shion Jahangiri; the athletics site announced three new coaches in Aug 2026) = 4 coaches; no strength coach, athletic trainer, video or GPS staff listed on the program page. Facilities: Sullivan Field, opened 1990, 1,200 capacity, shared with women's soccer; frequent MLS visiting-team practice site. Schmid's pedigree (UC Riverside, CSU Fullerton, LMU associate head coach) lifts tactical; small stadium and no named performance staff keep technical and fitness below San Diego (80/78/70). Results (2023 Elite Eight) excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Sullivan Field (1,200 capacity, opened 1990, shared with women's soccer)",
+      "Frequent practice site for visiting MLS teams",
+      "Human Performance Lab in the Health and Human Sciences department"
+    ],
+    "courses": [
+      "BIOL 1010: General Biology I with lab",
+      "HHSC 1550/1556 and 2550/2556: Human Anatomy and Physiology I and II with labs",
+      "HHSC 3750/3756: Exercise Physiology and Exercise Physiology Laboratory",
+      "HHSC 3950: Allied Health Internship I"
+    ],
+    "rec": "LMU offers a lifestyle fit comparable to San Diego in the West Coast Conference: a warm, large city, a campus in Westchester near the beaches, and a program that reached the 2023 NCAA Elite Eight and produced three first-round SuperDraft picks in three straight drafts. The drawbacks are results, cost and academics: the team has finished 5th, 5th and 7th in the conference in the last three seasons, the direct billed cost is about $88,000 a year before any scholarship (well above most schools in the guide), the degree route is the Health and Human Sciences B.S. rather than an exercise science major, and the 2025 first-year class averaged a 4.0 GPA. The 2026-27 midfield has 7 players with 3 leaving, and the coaching staff is new, so the first year is moderately competitive.",
+    "url": "https://lmulions.com/sports/mens-soccer",
+    "domain": "lmulions.com",
+    "culture": {
+      "vibe": "Loyola Marymount University is a private Jesuit university on a bluff in Westchester, near Los Angeles International Airport, with about 7,000 undergraduates.",
+      "thingsToDo": "Beaches in Playa del Rey and Santa Monica, downtown Los Angeles, Hollywood, and MLS, NWSL and international matches across the city. LA's year-round warm weather suits an outdoor lifestyle.",
+      "socialScene": "A mid-sized, tightly connected campus where 91 percent of first-years live on campus. The men's soccer squad of 30 includes players from Spain, Egypt, South Africa, the United Kingdom and Canada alongside Californians.",
+      "olivierMatch": "★★★★ A warm Los Angeles campus and a program with a record of producing first-round SuperDraft picks. Strong on lifestyle; weaker on recent results, with a very high price and no exercise science major.",
+      "lifestyleTags": "Warm major city, near the beach, 2023 Elite Eight, Jesuit private university, no exercise science major"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Sullivan Field, opened in 1990 with a capacity of 1,200 and a record crowd of 1,500 (a 2-0 win over UCLA in 2002). It is shared with women's soccer and has been a World Cup and Rose Bowl practice site and a frequent training venue for visiting MLS teams.",
+      "trainingFields": "The athletics site lists Sullivan Field as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists the head coach and three assistants. No GPS tracking, video analyst or sports science staff is named.",
+      "sportsMed": "No athletic trainer is listed on the men's soccer staff page.",
+      "academicLabs": "The Health and Human Sciences department runs a Human Performance Lab and teaches the anatomy and physiology and exercise physiology laboratories.",
+      "extras": "Sullivan Field's reputation as an MLS and international training site is built on its location near Los Angeles International Airport.",
+      "note": "A small, shared stadium with no soccer-specific performance staff listed; the location and the Human Performance Lab are the strengths.",
+      "housing": {
+        "available": true,
+        "note": "LMU's 2026-27 housing rates list traditional first-year residence halls (Desmond, Doheny, Whelan, Rosecrans and others), and its first-year class profile reports that 91 percent of first-years live on campus."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Quinn Galvin",
+        "Mati Sacristan",
+        "Lewis Clutton"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Unathi Radebe"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Read from LMU's 2026-27 roster, which lists each player's previous school. 3 of the 7 midfielders list a previous college (Mati Sacristan from Cal State Fullerton, Lewis Clutton from Cardiff Metropolitan and Unathi Radebe from Tyler Junior College); the other 4 list no previous school, including 3 first-years. Across the whole roster, 10 of 30 players list a previous college, among them UCLA (two players), Georgia State, Stony Brook, Central Arkansas, Campbell and Taft College.",
+      "trajectoryNote": "3 of 7 midfielders graduate before 2027 (Galvin, Sacristan and Clutton). Radebe, a Tyler Junior College transfer, will be a senior when Olivier arrives, and the 3 first-years on this year's roster will be sophomores. The staff is also new this season, so the roster could change.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "seattleu",
+    "profileDepth": "full",
+    "name": "Seattle U",
+    "full": "Seattle University (Redhawks)",
+    "loc": "Seattle, WA",
+    "div": "D1",
+    "conf": "West Coast Conference",
+    "confKey": "wcc",
+    "region": "west",
+    "warm": false,
+    "city": true,
+    "top": false,
+    "color": [
+      "#f7e9eb",
+      "#aa0000"
+    ],
+    "kinRank": "Strong (Kinesiology B.S. with required biomechanics, exercise physiology, motor control, exercise programming and a capstone internship)",
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 9,
+    "acuAlignNote": "Seattle University's Kinesiology B.S. (a 68-credit major) requires Applied Human Anatomy and Applied Human Physiology with labs, Biomechanics with a lab, Exercise Physiology with a lab, Motor Control and Learning with a lab, Exercise Psychology, Exercise Programming with a lab, Physical Activity Across the Lifespan, Principles of Human Nutrition, a Research Methods course and a capstone internship (KINE 4950). Those cover the anatomy, physiological bases of exercise, exercise prescription, introductory biomechanics, sport psychology, lifespan motor development, motor control, research and internship units. Not counted: a separate functional anatomy course, advanced exercise physiology or biomechanics, resistance training and general biology, none of which is a required standalone course.",
+    "soccerLevel": "West Coast Conference since 2025 (Western Athletic Conference before that): 2023 WAC champions, NCAA Tournament in 2023 and 2024, 1997 NAIA national champions",
+    "soccerLevelShort": "WCC",
+    "fin": {
+      "costNum": 78384,
+      "tuition": 59400,
+      "roomBoard": 17628,
+      "fees": 1356,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Seattle U direct billed cost $78,384 (2026-27, from the undergraduate cost of attendance page): tuition $59,400 + technology, wellness and activity fees $1,356 + the school's average housing ($11,202) and food ($6,426) budget, recorded together as room and board ($17,628). The school publishes housing and food as average budget figures rather than a per-building bill, so a student in the cheapest hall could pay less. Its headline total is $82,726 for a student living on campus, which adds personal expenses, transportation, books and a loan fee. Seattle U is expensive, so the size of the athletic scholarship matters a great deal."
+    },
+    "aid": "Athletic",
+    "size": 4100,
+    "prePT": "Very Strong: Kinesiology B.S. built on anatomy, physiology, biomechanics and exercise physiology, with athletic training, occupational therapy and physical therapy named as graduate paths",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is holistic",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Seattle U's class profile reports a high school GPA range of 3.4 to 3.88 for the fall 2022 first-year class, so a 2.8 GPA is below the typical admit and needs a strong athletic case.",
+      "status": "eligible"
+    },
+    "mapX": 86,
+    "mapY": 102,
+    "fitOlivier": 48,
+    "lensScores": {
+      "overall": 48,
+      "soccer": 59,
+      "academic": 63,
+      "minutes": 31,
+      "lifestyle": 50,
+      "value": 29
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WCC 2-4-3 (6th)",
+        "note": "4-7-6 overall in the program's first season in the West Coast Conference."
+      },
+      {
+        "yr": 2024,
+        "pos": "WAC 7-1-1 (2nd)",
+        "note": "12-4-4 overall. Beat San Jose State to win the WAC tournament and reach the NCAA Tournament for the second year in a row."
+      },
+      {
+        "yr": 2023,
+        "pos": "WAC 7-0-1 (1st)",
+        "note": "12-4-3 overall. WAC regular-season champions, unbeaten in conference play, ranked as high as 9th and reached the NCAA Tournament. Nate Daligcon was named WAC Coach of the Year in his first season as head coach."
+      },
+      {
+        "yr": 2022,
+        "pos": "WAC 5-4",
+        "note": "7-10-1 overall."
+      },
+      {
+        "yr": 2021,
+        "pos": "WAC 8-3",
+        "note": "13-8-1 overall."
+      }
+    ],
+    "titles": [
+      "WAC regular-season champion 2023",
+      "WAC tournament champion 2024",
+      "NCAA Tournament 2023 and 2024",
+      "NAIA national champion 1997"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "Yeider Zuluaga, No. 59 overall in the 2026 SuperDraft (Vancouver Whitecaps FC)",
+        "Demian Alvarez, second round of the 2025 SuperDraft (Seattle Sounders)",
+        "Hal Uderitz, No. 76 in the 2022 SuperDraft (Seattle Sounders)"
+      ],
+      "draftRank": "Three SuperDraft picks in the last five drafts, in 2022, 2025 and 2026"
+    },
+    "devScores": {
+      "tactical": 74,
+      "technical": 70,
+      "fitness": 58
+    },
+    "devScoresNote": "5a rubric, training environment only. Live goseattleu.com MSOC roster page (2026): HC Nate Daligcon + assistants Jason Farrell and Brooks Hopp + Director of Player Development (Vince Volpe) + a Video Performance Analyst (Armando Castillo) = 5 staff; Daligcon holds a USSF A licence and 10 years as an assistant. Facilities: Championship Field, home since 1994, 650 permanent seats after a 2005 renovation (athletics site summary; surface and lighting not confirmed), shared with women's soccer. No strength coach, athletic trainer or GPS staff named. Scored below San Diego (80/78/70): small stadium, no named performance staff. Results (2023 WAC title, two NCAA berths) excluded.",
+    "tags": [
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Championship Field (650 permanent seats, home since 1994)",
+      "Video performance analyst and director of player development on the men's soccer staff",
+      "Kinesiology laboratories for biomechanics, exercise physiology and motor control"
+    ],
+    "courses": [
+      "KINE 1100/1101 and 1200/1201: Applied Human Anatomy and Physiology with labs",
+      "KINE 2200/2201: Biomechanics with lab",
+      "KINE 2300/2301: Exercise Physiology with lab",
+      "KINE 3200/3201: Exercise Programming with lab",
+      "KINE 4950: Internship"
+    ],
+    "rec": "Seattle U has one of the strongest degree fits in the West Coast Conference: a Kinesiology B.S. that requires biomechanics, exercise physiology, motor control, exercise programming and an internship, and a head coach with a USSF A licence who was an all-American and a pro at center midfield. The program won the 2023 WAC title and reached back-to-back NCAA Tournaments in 2023 and 2024, though it finished 6th in its first West Coast Conference season. The drawbacks are climate and cost: Seattle is cool and wet, the direct billed cost is about $78,000 a year before any scholarship, and the stadium holds only about 650 seats. The 2026-27 midfield has 7 players with 3 leaving, so the first year is moderately competitive.",
+    "url": "https://goseattleu.com/sports/mens-soccer",
+    "domain": "goseattleu.com",
+    "culture": {
+      "vibe": "Seattle University is a private Jesuit university on a compact urban campus near downtown Seattle, with about 4,100 undergraduates.",
+      "thingsToDo": "Downtown, Pike Place Market, the waterfront, hiking in the Cascades and Olympics, and the Sounders, Reign and Kraken in the city. Winters are cool and wet.",
+      "socialScene": "A compact urban campus where first- and second-year students under 21 are required to live on campus, and 86 percent of first-years live in campus housing.",
+      "olivierMatch": "★★★ A real city campus and one of the best degree matches in the conference, but Seattle is cool and wet and the price is high. Good on academics and city; weaker on climate and cost.",
+      "lifestyleTags": "Major city, Pacific Northwest, Kinesiology B.S., two NCAA berths in 2023-24, Jesuit private university"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Championship Field, home to Seattle U men's and women's soccer since 1994, which the athletics site describes as having 650 permanent seats after a major renovation in 2005. It takes its name from the men's team's 1997 NAIA national championship. The playing surface and lighting were not confirmed.",
+      "trainingFields": "The athletics site lists Championship Field as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists a Director of Player Development and a Video Performance Analyst. No GPS tracking staff is named.",
+      "sportsMed": "No athletic trainer is listed on the men's soccer staff page.",
+      "academicLabs": "The Kinesiology department teaches laboratory sections for anatomy, physiology, biomechanics, exercise physiology, motor control and exercise programming.",
+      "extras": "The field is named for the 1997 NAIA national championship won by the men's team.",
+      "note": "A small stadium with a named video analyst; no strength coach or athletic trainer is listed for the program.",
+      "housing": {
+        "available": true,
+        "note": "Seattle U requires first- and second-year students under 21 to live on campus and buy at least the residential meal plan, confirmed on its first-year housing application page; its class profile shows 86 percent of first-years living in campus housing."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Tommy Coughlin",
+        "Nico Wiskel",
+        "Enrique Guerrero"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Cesar Batres",
+        "Edgar Leon"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "trajectoryNote": "3 of 7 midfielders graduate before 2027 (two fifth-year players and a senior). Two juniors will be seniors when Olivier arrives and the 2 first-years on this year's roster will be sophomores. Seattle U's roster page does not list previous schools, so it is not possible to say how many of these players arrived as transfers.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC120",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": true
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "sanfrancisco",
+    "profileDepth": "full",
+    "name": "San Francisco",
+    "full": "University of San Francisco (Dons)",
+    "loc": "San Francisco, CA",
+    "div": "D1",
+    "conf": "West Coast Conference",
+    "confKey": "wcc",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e9f3ee",
+      "#00543c"
+    ],
+    "kinRank": "Strong (Kinesiology B.S. with required motor development, exercise physiology, sport and exercise psychology, motor learning and biomechanics with a lab)",
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 7,
+    "acuAlignNote": "The University of San Francisco's Kinesiology B.S. (a 56-unit major in the College of Arts and Sciences) requires Human Anatomy and Human Physiology with labs, Anatomical Kinesiology, Introduction to Kinesiology, Measurement and Statistics, Motor Development, Exercise Physiology, Sport and Exercise Psychology, Motor Learning and Biomechanics with a laboratory. Those cover the anatomy, functional anatomy, physiological bases of exercise, introductory biomechanics, sport psychology, motor development and motor control units. Not counted: exercise testing and prescription, resistance training, advanced exercise physiology and an internship, none of which is a required course in the major. Measurement and Statistics is a statistics course rather than a research methods course, so the research unit is not counted. The B.S. also asks for chemistry and physics.",
+    "soccerLevel": "West Coast Conference: second in 2024, a 10-win season and national ranking in 2025, and six national championship banners from the program's history",
+    "soccerLevelShort": "WCC",
+    "fin": {
+      "costNum": 83642,
+      "tuition": 63880,
+      "roomBoard": 19150,
+      "fees": 612,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "San Francisco direct billed cost $83,642 (2026-27, USF's own 'direct costs' subtotal on its undergraduate costs page): tuition $63,880 + fees $612 + housing $12,930 + food $6,220. Housing and food are recorded together as room and board ($19,150). Its headline total is $89,298, which adds books, transportation and personal expenses. San Francisco is expensive, so the size of the athletic scholarship matters a great deal."
+    },
+    "aid": "Athletic",
+    "size": 5171,
+    "prePT": "Very Strong: Kinesiology B.S. built on anatomy, physiology, biomechanics, exercise physiology and motor control, with a chemistry and physics requirement that supports physical therapy applications",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is holistic",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "USF's first-year class profile reports an average GPA of 3.61, so a 2.8 GPA is below the typical admit and needs a strong athletic case.",
+      "status": "eligible"
+    },
+    "mapX": 68,
+    "mapY": 178,
+    "fitOlivier": 56,
+    "lensScores": {
+      "overall": 56,
+      "soccer": 60,
+      "academic": 52,
+      "minutes": 21,
+      "lifestyle": 100,
+      "value": 34
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WCC 5-4 (4th)",
+        "note": "10-6-1 overall, the first double-digit win season since 2017 and the first national ranking since 2018. Beat No. 17 Cal 2-1 at Berkeley. Ben Norris was named WCC Freshman of the Year."
+      },
+      {
+        "yr": 2024,
+        "pos": "WCC 5-1-2 (2nd)",
+        "note": "7-6-4 overall and a second-place finish in the conference."
+      },
+      {
+        "yr": 2023,
+        "pos": "WCC 2-3-2 (6th)",
+        "note": "8-4-5 overall. Upset No. 9 Stanford 2-1 on the road and No. 20 LMU 3-1 at home."
+      },
+      {
+        "yr": 2022,
+        "pos": "WCC 0-5-2 (8th)",
+        "note": "7-6-4 overall."
+      },
+      {
+        "yr": 2021,
+        "pos": "WCC 0-6-1 (8th)",
+        "note": "2-13-1 overall in Chris Brown's first season as head coach."
+      }
+    ],
+    "titles": [
+      "Six national championship banners hang at Negoesco Stadium"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 2,
+      "notable": [
+        "Reid Roberts, No. 5 overall in the 2025 SuperDraft (San Jose Earthquakes), the highest pick in school history",
+        "Brayden Beason, No. 73 overall in the 2026 SuperDraft (Real Salt Lake)"
+      ],
+      "draftRank": "Two SuperDraft picks in the last five drafts, one in each of 2025 and 2026"
+    },
+    "devScores": {
+      "tactical": 76,
+      "technical": 74,
+      "fitness": 68
+    },
+    "devScoresNote": "5a rubric, training environment only. Live usfdons.com MSOC roster page (2026): HC Chris Brown + Associate HC Sam Reynolds + Assistant Robbie Rix = 3 coaches; support staff list a Director of Operations and a Head Athletic Trainer/Director of Sport Science (Morgan Batcheller). Facilities: Negoesco Stadium, 3,000 seats, artificial turf (replaced before 2021), shared with women's soccer. No video analyst or GPS named; no soccer-specific strength coach. Scored below San Diego (80/78/70) on tactical for a three-person coaching staff and below it on technical for the 3,000-seat shared stadium, in line with it on fitness through a named sport science director. Results excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Negoesco Stadium (3,000 seats, artificial turf, shared with women's soccer)",
+      "Head athletic trainer who is also the director of sport science",
+      "Six national championship banners hang over the field"
+    ],
+    "courses": [
+      "BIOL 113/114 and 115/116: Human Anatomy and Human Physiology with labs",
+      "KIN 220: Anatomical Kinesiology",
+      "KIN 310: Exercise Physiology",
+      "KIN 350/350L: Biomechanics with laboratory",
+      "KIN 300, 315 and 320: Motor Development, Sport and Exercise Psychology, Motor Learning"
+    ],
+    "rec": "San Francisco has one of the best all-round fits in the West Coast Conference for an exercise science student: a Kinesiology B.S. that requires anatomy, physiology, exercise physiology, biomechanics, motor development, sport psychology and motor learning, a Bay Area city campus, a head coach who captained Boston College and was the ACC goalkeeper of the year, and a program on the way up, with a second-place finish in 2024 and a 10-win season and national ranking in 2025. Negoesco Stadium holds 3,000 and the program has produced a No. 5 overall SuperDraft pick. The drawbacks are cost (about $83,600 a year before any scholarship), a competitive admissions profile (3.61 average GPA) and a young but deep midfield. The 2026-27 midfield has 8 players with 3 leaving, so the first year is moderately competitive.",
+    "url": "https://usfdons.com/sports/mens-soccer",
+    "domain": "usfdons.com",
+    "culture": {
+      "vibe": "The University of San Francisco is a private Jesuit university on a hilltop campus near Golden Gate Park, with about 5,200 undergraduates.",
+      "thingsToDo": "Golden Gate Park, the beaches along the Pacific, Fisherman's Wharf and downtown San Francisco, and Bay Area sport including Earthquakes, Giants and Warriors games.",
+      "socialScene": "A diverse urban campus where first-year full-time students are required to live in university housing. The men's soccer squad has 30 players, several from the San Francisco area.",
+      "olivierMatch": "★★★★ A major city, a coastal California setting, a Kinesiology B.S. that matches the ACU course well and a rising program. Strong on lifestyle and academics; weaker on price and climate, since San Francisco is mild rather than hot.",
+      "lifestyleTags": "Major city, Bay Area, Kinesiology B.S., rising program, Jesuit private university"
+    },
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "Negoesco Stadium on Parker Avenue, home to men's and women's soccer, seats about 3,000 in bleachers and has an artificial turf surface that replaced the original grass in 2016 and was updated before the 2021 season. It is named for Steve Negoesco, the first college coach to reach 500 wins, and six national championship banners and two runner-up banners hang over the field.",
+      "trainingFields": "The athletics site lists Negoesco Stadium as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The support staff list a Head Athletic Trainer who is also the Director of Sport Science, and a Director of Operations. No GPS tracking or video analyst is named.",
+      "sportsMed": "Morgan Batcheller is listed as Head Athletic Trainer and Director of Sport Science on the men's soccer staff page.",
+      "academicLabs": "The Kinesiology department teaches the anatomy, physiology and biomechanics laboratories.",
+      "extras": "The stadium's banners record the program's six national championships and two runner-up finishes.",
+      "note": "A real stadium with a named sport science director; no soccer-specific strength coach or video analyst is listed.",
+      "housing": {
+        "available": true,
+        "note": "USF requires incoming first-year full-time undergraduates to live in on-campus housing, confirmed on its first-year housing page."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Alex Solomis",
+        "Marci Killeen",
+        "Kaleb Afsari"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Ben Norris",
+        "Nico Ruiz",
+        "Jameson Raby",
+        "Imani Watkins"
+      ],
+      "trajectoryNote": "3 of 8 midfielders graduate before 2027 (Solomis, Killeen and Afsari). The four sophomores, including 2025 WCC Freshman of the Year Ben Norris, will be juniors when Olivier arrives, and one first-year (Blaisen Kehr, listed as a midfielder and defender) will be a sophomore. San Francisco's roster page does not list previous schools, so it is not possible to say how many of these players arrived as transfers.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": true
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.84 (2026-10-04) — Add Portland, LMU, Seattle U and San Francisco (West Coast Conference)
+
+**Why:** The West Coast Conference had the largest remaining SuperDraft pipelines among conferences already on a card (Portland 7 picks, LMU 3, Seattle U 3, San Francisco 2 in 2022-26). All four are filed in `data/d1-other.json` (confKey `wcc`) and come from the owner's pick of batch 1. Seattle U joined the WCC in 2025 and played in the WAC before that.
+
+**Portland** (`portland`): Fit 51, dev 80/76/74, `acuAlign` 7. New Exercise Science B.S. (anatomy and physiology series, kinesiology, biology of exercise, fitness assessment and exercise prescription, motor control, research methods). Direct billed cost $79,100 (2026-27). Head coach Nick Carlin-Voigt (since 2016; 2022 and 2025 Elite Eights, No. 1 national ranking in 2025; score 80, rank 27). Seven SuperDraft picks 2022-26 (two in the 2026 first round). Entry competition Medium: 7 midfielders, 1 leaving.
+
+**LMU** (`lmu`): Fit 60, dev 74/68/60, `acuAlign` 4. No exercise science major; the route is the Health and Human Sciences B.S. Direct billed cost $88,831. Head coach Kyle Schmid (since 2022; 2023 NCAA Elite Eight; score 70, rank 71). Three first-round picks in three straight drafts (2022-24). Entry competition Medium: 7 midfielders, 3 leaving, all-new assistants in 2026.
+
+**Seattle U** (`seattleu`): Fit 48, dev 74/70/58, `acuAlign` 9. Kinesiology B.S. (biomechanics, exercise physiology, motor control, exercise programming, internship). Direct billed cost $78,384 using the school's average housing and food budget. Head coach Nate Daligcon (since 2023, USSF A licence, 2023 WAC title; score 68, rank 83). Three picks 2022-26. Entry competition Medium: 7 midfielders, 3 leaving. Its roster page lists no previous schools, so `recruit_pathway` is left unset.
+
+**San Francisco** (`sanfrancisco`): Fit 56, dev 76/74/68, `acuAlign` 7. Kinesiology B.S. Direct billed cost $83,642 (USF's own direct-cost subtotal). Head coach Chris Brown (since 2021; second in the WCC in 2024, 10-6-1 in 2025; score 66, rank 96). Two picks (Reid Roberts No. 5 in 2025). Entry competition Medium: 8 midfielders, 3 leaving. Its roster page lists no previous schools, so `recruit_pathway` is left unset. Named `San Francisco`, not `USF`, which is South Florida.
+
+**Caveats:** (1) Portland's Exercise Science course numbers are placeholders (EXS 2XX/3XX/4XX) in the 2026-27 catalog. (2) Tyger Smalls (LMU, 2024), the 2019 NCAA appearance at LMU and Seattle U's Championship Field capacity (650 seats) came from search summaries of the schools' own pages and were not re-read on the page; Championship Field's surface and lighting are unconfirmed. (3) Seattle U's size (about 4,100) and GPA range come from its fall 2022 class profile. (4) LMU's mandatory student health insurance and the optional items at each school are left out of `costNum`. (5) San Francisco's six national championship banners are noted in text only; its NCAA titles are not yet in the Pro Pipeline champions table, and their years were not verified. (6) Map dots: Portland (83,117), LMU (90,200), Seattle U (86,102) and San Francisco (68,178), each tested on land.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0, jargon check pass, local browser check (192 schools, stored Fit scores equal the live recalculation, four modals free of undefined/NaN, coaches present).
+
 ### v45.83 (2026-10-04) — Add Oregon State (Pac-12), Marshall (Sun Belt) and UNC Wilmington (CAA)
 
 **Why:** These were the four schools receiving votes in SoccerWire's Week 5 poll (Sept 23) that were missing from the guide, after the ranked top 25 was completed in v45.82. Cornell (the fourth, Ivy League) is not added, per the earlier ruling that Ivy schools offer no athletic scholarships. Oregon State and Marshall are filed in `data/d1-other.json` and grouped by `confKey` (Pac-12 and Sun Belt); UNC Wilmington is in `data/caa.json`.

@@ -2954,5 +2954,761 @@
         "covered": false
       }
     ]
+  },
+  {
+    "id": "csbakersfield",
+    "profileDepth": "full",
+    "name": "Cal State Bakersfield",
+    "full": "California State University, Bakersfield (Roadrunners)",
+    "loc": "Bakersfield, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "color": [
+      "#e6edf7",
+      "#003594"
+    ],
+    "kinRank": "Good (Kinesiology B.S. with an Allied Health concentration built around physical therapy, occupational therapy and physician assistant prerequisites: human anatomy, human physiology, functional anatomy, physiology of exercise and biomechanics)",
+    "degreeTitle": "B.S. Kinesiology (Allied Health concentration)",
+    "acuAlign": 7,
+    "acuAlignNote": "Cal State Bakersfield's Kinesiology B.S. has an Allied Health concentration that its catalog says prepares students for physical therapy, occupational therapy and physician assistant programs and includes most of their prerequisite courses. The required courses are Human Anatomy (BIOL 2210), Human Physiology (BIOL 2220), Functional Anatomy in Kinesiology (KINE 3030), Physiology of Exercise (KINE 3040), Biomechanics of Exercise and Sport (KINE 4130), Psychology of Sport and Physical Activity (KINE 3020), Motor Growth and Development Across the Lifespan (KINE 3000), Measurement and Evaluation in Kinesiology (KINE 3010), Sports Medicine I and II, Principles of Nutrition and an Internship and Capstone. Those cover anatomy, functional anatomy, physiology, exercise physiology, biomechanics, sport psychology and motor development. No general biology course is required, exercise prescription and strength and conditioning are only in the separate Applied Exercise Science concentration, Measurement and Evaluation is not a research methods course, and the internship hours were not found, so those units are not counted.",
+    "soccerLevel": "Big West Conference (men's soccer); first NCAA Division I Tournament match in 2011",
+    "soccerLevelShort": "Big West",
+    "fin": {
+      "costNum": 37679,
+      "tuition": 18142,
+      "roomBoard": 17432,
+      "fees": 2105,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Cal State Bakersfield direct billed cost $37,679 (2026-27, from the financial aid office's cost of attendance budget for a non-California resident living on campus): non-resident tuition $11,304 (its basis is 24 units) + the systemwide tuition fee $6,838, together $18,142 and recorded as tuition; mandatory campus fees $2,105; plus on-campus food ($6,220) and housing ($11,212) budgets, recorded together as room and board ($17,432). The housing and food figures are average student budgets, not a rate for a specific room. Its headline total for a non-resident on campus is $43,243, which adds books, transportation, personal expenses and loan fees. Cal State Bakersfield costs far less than the private schools in the guide, so even a partial athletic scholarship goes a long way."
+    },
+    "aid": "Athletic",
+    "size": 8960,
+    "prePT": "Good: Kinesiology B.S. Allied Health concentration designed around physical therapy, occupational therapy and physician assistant prerequisites; anatomy, physiology and biomechanics required",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "2.5 out of 4.0 for international applicants who just completed high school",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Cal State Bakersfield's 2026-27 catalog asks international applicants who have just completed high school for a GPA of at least 2.5 out of 4.0, and Olivier's 2.8 is above that line. The size figure is about 8,960 undergraduates, which is 86% of the 10,419 students the campus reported for spring 2025.",
+      "status": "eligible"
+    },
+    "mapX": 94,
+    "mapY": 198,
+    "fitOlivier": 48,
+    "lensScores": {
+      "overall": 48,
+      "soccer": 45,
+      "academic": 52,
+      "minutes": 33,
+      "lifestyle": 50,
+      "value": 40
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Big West 3-4-2",
+        "note": "3-11-3 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "Big West 4-3-2",
+        "note": "7-6-4 overall. Played for a chance at the regular-season title in the last match of the season."
+      },
+      {
+        "yr": 2023,
+        "pos": "Big West 3-4-2 (7th)",
+        "note": "7-5-5 overall. Coach Adam Grant took over in July 2023 and led the team to a nine-match unbeaten streak."
+      },
+      {
+        "yr": 2022,
+        "pos": "Big West 0-8-1",
+        "note": "2-13-2 overall."
+      },
+      {
+        "yr": 2021,
+        "pos": "Big West 5-4",
+        "note": "6-10-1 overall."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "No SuperDraft picks in the last five drafts"
+    },
+    "devScores": {
+      "tactical": 62,
+      "technical": 64,
+      "fitness": 50
+    },
+    "devScoresNote": "5a rubric, training environment only. Live gorunners.com men's soccer staff page (2026): HC Adam Grant + assistants Ethan Keogh and Carlos Armendariz + an assistant recruiting coordinator and a graduate assistant = 5 staff; no athletic trainer, strength coach, video or GPS staff listed on the program page. Facilities: the Main Soccer Field, a soccer-only natural Bermuda grass facility seating 2,500 with an adjacent practice field, shared only with women's soccer; lights not confirmed. Grant holds USSF C and D licences and coached a USL League 2 side. Results excluded.",
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "facilities": [
+      "Main Soccer Field (soccer-only, 2,500 seats, natural Bermuda grass)",
+      "Adjacent practice field",
+      "Kinesiology B.S. with an Allied Health concentration for physical therapy preparation"
+    ],
+    "courses": [
+      "BIOL 2210: Human Anatomy",
+      "BIOL 2220: Human Physiology",
+      "KINE 3030: Functional Anatomy in Kinesiology",
+      "KINE 3040: Physiology of Exercise",
+      "KINE 4130: Biomechanics of Exercise and Sport",
+      "KINE 4868: Internship and Capstone"
+    ],
+    "rec": "Cal State Bakersfield pairs a low price for a U.S. university and a Kinesiology B.S. with an Allied Health concentration designed for physical therapy applicants with a warm, soccer-only stadium seating 2,500. Its head coach, Adam Grant, has built a steady Big West program since taking over in 2023, with winning records in 2024 and 2023 before a 3-11-3 season in 2025, and the squad includes two players from the Central Coast of Australia. The drawbacks are the inland, mid-sized city setting in the Central Valley, no named support staff for the program and a midfield of 8 in which 4 return for 2027.",
+    "url": "https://gorunners.com/sports/mens-soccer",
+    "domain": "gorunners.com",
+    "culture": {
+      "vibe": "California State University, Bakersfield is a public university in California's Central Valley with about 9,000 undergraduates.",
+      "thingsToDo": "Bakersfield is a mid-sized city in the hot, dry southern Central Valley, a few hours' drive from Los Angeles and the Central Coast.",
+      "socialScene": "A commuter-heavy public campus with a small, international men's soccer squad of 28: players from California, Switzerland, Germany, England, Canada, Israel, Mexico and two from Australia's Central Coast.",
+      "olivierMatch": "★★★ A warm Californian campus with a physical-therapy-oriented degree, a low price, and a soccer-only stadium. Not a big-city setting, and recent results have been mixed.",
+      "lifestyleTags": "Warm Central Valley, public university, low cost, Allied Health Kinesiology B.S."
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "The Main Soccer Field is the primary home of men's and women's soccer, with grandstand and field seating for 2,500. It is a soccer-only facility not shared with other sports and has a natural Bermuda grass surface. A standing-room crowd set the school attendance record in the 2011 NCAA Tournament game against Saint Mary's, the program's first NCAA Division I Tournament match.",
+      "trainingFields": "An adjacent practice field serves multiple teams.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists a head coach, two assistants, an assistant recruiting coordinator and a graduate assistant. No video analyst, GPS tracking or sports science staff is named.",
+      "sportsMed": "No athletic trainer is listed on the men's soccer staff page.",
+      "academicLabs": "The Department of Kinesiology teaches the anatomy, exercise physiology and biomechanics courses in the Allied Health concentration.",
+      "extras": "A crowd of over 2,000 watched a nationally televised match against San Jose State in October 2014.",
+      "note": "A soccer-only grass stadium with a practice field next to it; lights were not confirmed and no support staff are named.",
+      "housing": {
+        "available": true,
+        "note": "Cal State Bakersfield's cost of attendance budget lists on-campus housing and food for non-California residents, and its financial aid site has an 'Actual Housing Cost' page, so on-campus housing is available to new students."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 8,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Jesse Wangusi",
+        "Kevin Rodriguez",
+        "Kevin Estrada",
+        "Dakotah Medina"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Charlie Cazares"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Jakob Lopping",
+        "Jacob Bernauer",
+        "Josh Robinson"
+      ],
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Read from Cal State Bakersfield's 2026-27 roster, which lists each player's previous school. 2 of the 8 midfielders list a previous college (Jakob Lopping from Pittsburgh and Dakotah Medina from Norco College); the others list high schools or academies. Across the whole roster, about 10 of 28 players list a previous college or university.",
+      "trajectoryNote": "4 of 8 midfielders graduate before 2027 (Wangusi, Rodriguez, Estrada and Medina). One junior will be a senior when Olivier arrives and three sophomores will be juniors, so the group is half open. Forwards, defenders and goalkeepers are not counted.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 45,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": true
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "unlv",
+    "profileDepth": "full",
+    "name": "UNLV",
+    "full": "University of Nevada, Las Vegas (Rebels)",
+    "loc": "Las Vegas, NV",
+    "div": "D1",
+    "conf": "Mountain West Conference",
+    "confKey": "mountain-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#fbe8e8",
+      "#cf0a2c"
+    ],
+    "kinRank": "Good (Kinesiology B.S. with a Healthcare and Rehabilitation Sciences concentration aimed at athletic training, physical therapy, occupational therapy and physician assistant programs; anatomical kinesiology, biomechanics, exercise physiology and motor control required)",
+    "degreeTitle": "B.S. Kinesiology (Healthcare and Rehabilitation Sciences concentration)",
+    "acuAlign": 5,
+    "acuAlignNote": "UNLV's Kinesiology B.S. has a Healthcare and Rehabilitation Sciences concentration for students aiming at athletic training, physical therapy, occupational therapy and physician assistant programs. Every Kinesiology major completes a 33-credit foundation: Anatomical Kinesiology (KIN 245), Biomechanics (KIN 346), Exercise Physiology (KIN 391), Motor Control and Learning (KIN 312), Psychology of Exercise and Sport (KIN 350), Emergency Management of Injuries and Illness (KIN 150), Introduction to Kinesiology (KIN 170), Physical Activity and Health (KIN 175), Statistics for the Health Sciences (KIN 200) and Human Nutrition (NUTR 121). Those cover functional anatomy, exercise physiology, biomechanics, sport psychology and motor control. Human anatomy and physiology, general biology, exercise prescription and research methods are not required in the foundation, and the concentration's culminating experience is a choice between an internship and other courses, so those units are not counted.",
+    "soccerLevel": "Mountain West Conference from 2026 (WAC before that); no winning conference record in the last five seasons",
+    "soccerLevelShort": "Mountain West",
+    "fin": {
+      "costNum": 45158,
+      "tuition": 31710,
+      "roomBoard": 13448,
+      "fees": 0,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "UNLV direct billed cost $45,158 (2026-27): the international undergraduate rate for tuition and fees, $31,710 a year (two semesters at $15,755), published combined and recorded as tuition with fees set to 0; plus the cost of attendance table's on-campus housing and utilities ($7,424) and food ($6,024), recorded together as room and board ($13,448). Its headline total for a non-resident living on campus is $50,284, which adds books, transportation and personal expenses. UNLV costs far less than the private schools in the guide, so even a partial athletic scholarship goes a long way."
+    },
+    "aid": "Athletic",
+    "size": 27963,
+    "prePT": "Good: Kinesiology B.S. with a Healthcare and Rehabilitation Sciences concentration designed around physical therapy and similar graduate programs; anatomical kinesiology, biomechanics and exercise physiology required",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "3.0 cumulative GPA, or an SAT score of 1120 or an ACT score of 22, for international first-year applicants",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "UNLV's international undergraduate page asks first-year applicants for a 3.0 cumulative GPA or an SAT score of 1120 or an ACT composite of 22. Olivier's 2.8 is below the GPA line, so he would need a qualifying test score or a confirmed favorable conversion of his Australian results. The size figure is the 27,963 undergraduates in fall 2025.",
+      "status": "borderline"
+    },
+    "mapX": 106,
+    "mapY": 196,
+    "fitOlivier": 52,
+    "lensScores": {
+      "overall": 52,
+      "soccer": 50,
+      "academic": 42,
+      "minutes": 21,
+      "lifestyle": 100,
+      "value": 36
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WAC 1-2-4",
+        "note": "4-6-6 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "WAC 2-2-5",
+        "note": "5-7-5 overall."
+      },
+      {
+        "yr": 2023,
+        "pos": "WAC 3-3-2",
+        "note": "7-8-4 overall."
+      },
+      {
+        "yr": 2022,
+        "pos": "WAC 0-6-3",
+        "note": "1-9-7 overall. BJ Craig's first season as head coach."
+      },
+      {
+        "yr": 2021,
+        "pos": "WAC 3-8",
+        "note": "7-11 overall."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [],
+      "draftRank": "No SuperDraft picks in the last five drafts"
+    },
+    "devScores": {
+      "tactical": 72,
+      "technical": 68,
+      "fitness": 62
+    },
+    "devScoresNote": "5a rubric, training environment only. Live unlvrebels.com men's soccer staff page (2026): HC BJ Craig + Associate HC David Casper + assistants Jesse Ortiz and Marc Ybarra = 4 coaches; support staff lists an athletic trainer, an assistant director of strength and conditioning (shared with softball and volleyball), an assistant director of sports science and an assistant performance dietitian. Facilities: Peter Johann Memorial Field, natural grass, about 2,500 seats, press box, new lights (2024) and new sod (2024), shared with women's soccer. No video or GPS staff listed. Craig was on the staff of the 2013 Notre Dame national champions. Results excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Peter Johann Memorial Field (about 2,500 seats, natural grass, new lights and sod in 2024)",
+      "Named sports science, strength and conditioning and dietitian staff",
+      "Kinesiology B.S. with a Healthcare and Rehabilitation Sciences concentration"
+    ],
+    "courses": [
+      "KIN 245: Anatomical Kinesiology",
+      "KIN 346: Biomechanics",
+      "KIN 391: Exercise Physiology",
+      "KIN 312: Motor Control and Learning",
+      "KIN 350: Psychology of Exercise and Sport",
+      "KIN 101: Introduction to Healthcare and Rehabilitation Sciences"
+    ],
+    "rec": "UNLV offers a warm, big-city setting in Las Vegas, a head coach, BJ Craig, whose CV includes the 2013 Notre Dame national title and an Oregon State team that reached the 2021 Elite Eight, and named sports science, strength and dietitian staff and a lighted 2,500-seat grass field renovated in 2024. The Kinesiology B.S. has a Healthcare and Rehabilitation Sciences concentration built for physical therapy applicants. The drawbacks are results (no winning conference record in five seasons), a 3.0 GPA line that Olivier's 2.8 falls below unless he has a qualifying test score, and a crowded midfield: 9 midfielders with only 2 leaving.",
+    "url": "https://unlvrebels.com/sports/mens-soccer",
+    "domain": "unlvrebels.com",
+    "culture": {
+      "vibe": "UNLV is a large public university in Las Vegas with about 28,000 undergraduates.",
+      "thingsToDo": "Las Vegas offers professional sports, entertainment and year-round warm weather, and the desert and mountains are close by.",
+      "socialScene": "A large public campus. The men's soccer squad of 26 is international, with players from Canada, Spain, Uganda, Norway and others.",
+      "olivierMatch": "★★★★ A warm big-city campus with a coach from top programs and real sports science support. The midfield is crowded and the 3.0 GPA line is a barrier.",
+      "lifestyleTags": "Warm big city, public university, Mountain West newcomer, Kinesiology B.S."
+    },
+    "facilityDetails": {
+      "rating": "Very Good",
+      "stadium": "Peter Johann Memorial Field is the home of men's and women's soccer. Its grandstands seat about 2,500 and it has natural grass, a press box and lights for night matches. New lights were installed in 2024, and a donated renovation in 2024 laid 92,000 square feet of new sod, the first replacement of the field's turf since 1983.",
+      "trainingFields": "The athletics site names Peter Johann Memorial Field as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "An Assistant Director of Strength and Conditioning for Olympic Sports, shared with softball and volleyball, is listed on the men's soccer support staff.",
+      "sportsScience": "The support staff lists an Assistant Director of Sports Science and an Assistant Performance Dietitian. No video analyst or GPS tracking staff is named.",
+      "sportsMed": "An athletic trainer is listed on the men's soccer support staff.",
+      "academicLabs": "The Department of Kinesiology and Nutrition Sciences teaches the biomechanics and exercise physiology courses.",
+      "extras": "The 2024 renovation of the pitch was donated by the UNLV Rebel Soccer Foundation and Par 3 Landscaping.",
+      "note": "A lighted, natural grass 2,500-seat field shared with women's soccer, with named sports science and strength support.",
+      "housing": {
+        "available": true,
+        "note": "UNLV's cost of attendance table prices on-campus housing and utilities at $7,424 and food at $6,024, so on-campus housing is available to new students."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 9,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Andres Robles",
+        "Kai Merrill"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Joaquin Eisenberg",
+        "Yuto Oketani",
+        "Sawyer Crisostomo"
+      ],
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "Read from UNLV's 2026-27 roster, which lists each player's previous team. 3 of the 9 midfielders list a previous college (Andres Robles from Central Arkansas, Joaquin Eisenberg from Portland and Owen Gall from Duquesne); the others came from academies and clubs, including first-year players from Norway and Spain.",
+      "trajectoryNote": "2 of 9 midfielders graduate before 2027 (Robles and Merrill). Three juniors will be seniors when Olivier arrives, and the other four midfielders are first-year or redshirt first-year players who stay, so the group is crowded.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "High"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC126",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "utahtech",
+    "profileDepth": "full",
+    "name": "Utah Tech",
+    "full": "Utah Tech University (Trailblazers)",
+    "loc": "St. George, UT",
+    "div": "D1",
+    "conf": "Mountain West Conference",
+    "confKey": "mountain-west",
+    "region": "west",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "color": [
+      "#f8e9ea",
+      "#ba0c2f"
+    ],
+    "kinRank": "Strong (Exercise Science B.S., Pre-Physical Therapy emphasis: anatomy and physiology with labs, exercise physiology, exercise testing and prescription, biomechanics, strength and power, motor learning, motor development and research methods, with an on-campus Human Performance Center)",
+    "degreeTitle": "B.S. Exercise Science (Pre-Physical Therapy emphasis)",
+    "acuAlign": 11,
+    "acuAlignNote": "Utah Tech's Exercise Science B.S. has a Pre-Physical Therapy emphasis. Its required courses include Human Anatomy with a lab (BIOL 2320 and 2325), Human Physiology with a lab (BIOL 2420 and 2425), Principles of Biology I (BIOL 1610), Physiology of Exercise with a lab (XSCI 3700 and 3705), Exercise Testing and Prescription (XSCI 3370), Biomechanics (XSCI 3730, or Clinical or Quantitative Biomechanics), Physiology and Techniques of Strength and Power (XSCI 4100), Sport and Exercise Psychology (XSCI 2060), Motor Development (XSCI 3352), Motor Learning and Control (XSCI 3054), Measurement, Research and Statistics in Exercise Science (XSCI 3840), Clinical Exercise Physiology (XSCI 4300) and an Exercise Science Internship (XSCI 4600R, 1 to 3 credits). Those cover anatomy, general biology, physiology, exercise physiology, biomechanics, exercise testing, resistance training, sport psychology, motor development, motor control and research methods. Functional anatomy and the 140-hour professional experience are not counted, because no separate functional anatomy course is required and the internship hours were not found.",
+    "soccerLevel": "Mountain West Conference from 2026 (WAC before that); 2025 WAC runner-up (tied for second) and a third straight WAC Tournament appearance",
+    "soccerLevelShort": "Mountain West",
+    "fin": {
+      "costNum": 26428,
+      "tuition": 18576,
+      "roomBoard": 7000,
+      "fees": 852,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Utah Tech direct billed cost $26,428 (2026-27): non-resident tuition $9,288 a semester for the full-time band ($18,576 a year) + student fees $426 a semester ($852) from the catalog's tuition and fee table; plus the lowest shared on-campus room rate ($1,850 a semester at Abby Apartments, $3,700 a year) and the dining office's $1,650 a semester meal plan C ($3,300 a year), recorded together as room and board ($7,000). Other shared rooms cost up to $2,425 a semester and private rooms up to $3,525, and the admissions page's own 2025-26 estimate used a $2,243 shared room. Utah Tech costs far less than the private schools in the guide, so even a partial athletic scholarship goes a long way."
+    },
+    "aid": "Athletic",
+    "size": 13167,
+    "prePT": "Strong: Exercise Science B.S. with a Pre-Physical Therapy emphasis, plus Pre-Athletic Training and Pre-Occupational Therapy emphases; anatomy, physiology, exercise physiology, biomechanics and clinical exercise physiology required",
+    "prePTShort": "Strong",
+    "gpa": {
+      "minEntry": "No minimum GPA; open enrollment",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Utah Tech is an open enrollment university for undergraduates, so Olivier's 2.8 is no barrier. International applicants need proof of secondary school completion and financial support, and are exempt from an English test if they finished school in Australia. The size figure is the 13,167 total students on the university's Fast Facts page and includes graduate students.",
+      "status": "eligible"
+    },
+    "mapX": 122,
+    "mapY": 179,
+    "fitOlivier": 42,
+    "lensScores": {
+      "overall": 42,
+      "soccer": 48,
+      "academic": 73,
+      "minutes": 12,
+      "lifestyle": 50,
+      "value": 45
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WAC 3-1-3 (T-2nd)",
+        "note": "4-7-6 overall. Best-ever WAC finish; Jonny Broadhead was named WAC Coach of the Year and the team reached its first WAC semifinal."
+      },
+      {
+        "yr": 2024,
+        "pos": "WAC 3-4-2 (6th)",
+        "note": "4-10-4 overall."
+      },
+      {
+        "yr": 2023,
+        "pos": "WAC 4-4 (3rd)",
+        "note": "9-9 overall. First WAC Tournament berth and first tournament win, over San Jose State."
+      },
+      {
+        "yr": 2022,
+        "pos": "WAC 2-5-2",
+        "note": "4-12-2 overall, with home wins over Grand Canyon and UNLV."
+      },
+      {
+        "yr": 2021,
+        "pos": "WAC (9th)",
+        "note": "4-13-1 overall."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Stockton Short, a goalkeeper, No. 81 overall in the 2026 SuperDraft (Seattle Sounders FC), the program's first draft pick"
+      ],
+      "draftRank": "One SuperDraft pick in the last five drafts (2026)"
+    },
+    "devScores": {
+      "tactical": 62,
+      "technical": 58,
+      "fitness": 58
+    },
+    "devScoresNote": "5a rubric, training environment only. Live utahtechtrailblazers.com men's soccer staff page (2026): HC Jonny Broadhead + assistants Zac Hales and Nick Vorberg = 3 coaches; support staff lists an athletic trainer shared with women's track and field and a Ph.D. Director of Counseling and Sports Psychology; the Human Performance Center and Trailblazer Sports Medicine facility serve all athletes. Facilities: Greater Zion Stadium, shared with football and track, FieldTurf Revolution surface with a lower grass practice field; lights not confirmed. No video or GPS staff listed. Results excluded.",
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "facilities": [
+      "Greater Zion Stadium (FieldTurf Revolution surface, shared with football and track)",
+      "Human Performance Center and Trailblazer Sports Medicine",
+      "Exercise Science B.S. with a Pre-Physical Therapy emphasis"
+    ],
+    "courses": [
+      "BIOL 2320 and 2325: Human Anatomy with lab",
+      "BIOL 2420 and 2425: Human Physiology with lab",
+      "XSCI 3700 and 3705: Physiology of Exercise with lab",
+      "XSCI 3370: Exercise Testing and Prescription",
+      "XSCI 3730: Biomechanics",
+      "XSCI 3840: Measurement, Research and Statistics in Exercise Science"
+    ],
+    "rec": "Utah Tech offers a strong academic fit, a Pre-Physical Therapy emphasis covering 11 of the 16 ACU units, at a low price (about $26,400 a year before scholarships), with open enrollment and no GPA barrier. It sits in St. George, a warm desert town in southern Utah, and its coach, Jonny Broadhead, was the 2025 WAC Coach of the Year after the Trailblazers' best-ever conference finish. The drawbacks are a small-town setting, a stadium shared with football and track, and a midfield of 7 in which none graduate before 2027, so every spot is taken.",
+    "url": "https://utahtechtrailblazers.com/sports/mens-soccer",
+    "domain": "utahtechtrailblazers.com",
+    "culture": {
+      "vibe": "Utah Tech is a public university in St. George, in the red-rock desert of southern Utah, with about 13,000 students.",
+      "thingsToDo": "Zion National Park is nearby and Las Vegas is about two hours away.",
+      "socialScene": "A mid-sized public campus. The men's soccer squad of 28 is drawn from Utah, the Mountain West and the Pacific Northwest, with several players from Canada and one from Venezuela.",
+      "olivierMatch": "★★★ A warm desert campus with a strong exercise science degree and a very low price. It is a small town rather than a city, and the midfield is full.",
+      "lifestyleTags": "Warm desert town, public university, very low cost, Pre-PT Exercise Science B.S."
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Greater Zion Stadium is the home of Utah Tech football, men's and women's soccer and women's track and field. Its west grandstand seats 6,500, east grandstands added more than 4,000 seats in 2018, and the field is FieldTurf Revolution with 'CoolPlay' infill and a shock-absorbing pad. Lights were not confirmed.",
+      "trainingFields": "A lower grass field next to the stadium, widened to full football size, serves as a practice location for the football and soccer teams.",
+      "strengthConditioning": "The athletics site lists a Human Performance Center for Utah Tech's teams; no strength coach is named on the men's soccer staff page.",
+      "sportsScience": "The support staff lists a Ph.D. Director of Counseling and Sports Psychology. No video analyst or GPS tracking staff is named.",
+      "sportsMed": "An athletic trainer is listed, shared with women's track and field, and the athletics site lists a Trailblazer Sports Medicine facility.",
+      "academicLabs": "The Exercise Science program teaches human anatomy, human physiology and physiology of exercise, each with a lab.",
+      "extras": "In 2025 Utah Tech's goalkeeper Luca Campoli was named WAC Goalkeeper of the Year in his first season.",
+      "note": "A very large stadium shared with football and track, with a modern turf surface and a practice field; the soccer program is one of three tenants.",
+      "housing": {
+        "available": true,
+        "note": "Utah Tech's housing office publishes 2026-27 rent rates for shared and private apartments, and its dining office sells meal plans, so on-campus housing is available to new students."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 0,
+      "cleared_names": [],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Erik Nava"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Zach Taylor",
+        "Jacob Cinelli"
+      ],
+      "trajectoryNote": "None of the 7 midfielders graduates before 2027: one junior will be a senior when Olivier arrives, two sophomores will be juniors and four first-years will be sophomores. One more player is listed as a midfielder-forward and is not counted. Utah Tech's roster page lists hometowns and high schools rather than previous colleges, so it is not possible to say how many players arrived as transfers.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 10,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 35,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 65,
+          "label": "Established starter"
+        }
+      ],
+      "recruit_risk": "High"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": true
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

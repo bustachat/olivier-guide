@@ -6,6 +6,21 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.89 (2026-10-04) — Batch 4: Pacific, Cal State Bakersfield, UNLV, Utah Tech
+
+**Why:** Fifth batch of West and Southwest programs from the Division I gap list (200 to 204 schools, 204 coaches). The gap list in CLAUDE.md section 6F had gone stale, so the missing programs were recomputed from the NCAA directory (213 Division I men's programs, matched by athletics website) before choosing; Oregon State and several others on the old list were already in the guide.
+
+**Added:**
+- **Pacific** (WCC, `d1-other.json`): fit 50. New head coach Andres Ochoa (hired November 2025, six seasons at UCLA, score 60). Health and Exercise Science B.S., `acuAlign` 5. Cost $78,536. Draft pick Erik Centeno (No. 19, 2022). 11 midfielders, 3 leaving (High entry competition).
+- **Cal State Bakersfield** (Big West, `big-west.json`): fit 48. Coach Adam Grant (score 58). Kinesiology B.S. with an Allied Health concentration, `acuAlign` 7. Cost $37,679. Soccer-only 2,500-seat field. Two players from Australia's Central Coast. International GPA minimum 2.5 (Olivier eligible).
+- **UNLV** (Mountain West, `big-west.json`): fit 52. Coach BJ Craig (Notre Dame 2013 title staff, Oregon State 2021 Elite Eight, score 70). Kinesiology B.S. (Healthcare and Rehabilitation Sciences), `acuAlign` 5. Cost $45,158. International first-years need a 3.0 GPA or an SAT of 1120 or an ACT of 22, so Olivier's 2.8 is borderline.
+- **Utah Tech** (Mountain West, `big-west.json`): fit 42. Coach Jonny Broadhead (2025 WAC Coach of the Year, score 64). Exercise Science B.S., Pre-Physical Therapy emphasis, `acuAlign` 11, the highest of the four. Cost $26,428, the lowest paid-cost school in the guide. Open enrollment, so no GPA barrier. None of its 7 midfielders graduates before 2027. The roster publishes no previous schools, so `recruit_pathway` is left unset.
+- Each has a coach, map dot (all four checked on land), domain, site and social entries and a reference-table row; the four were removed from their conference cards' "other schools" lists. Draft-pick rows were added for Pacific and Utah Tech (none for Bakersfield and UNLV, which have no picks).
+
+**Notes:** Only pure "MF" positions count as midfielders at Cal State Bakersfield and Utah Tech; combination positions are named in the notes. `size` is 8,960 at Bakersfield (86% of the 10,419 reported for spring 2025), 27,963 undergraduates at UNLV, 3,074 at Pacific, and 13,167 total students at Utah Tech.
+
+**Validation:** `validate_schools.py` pass (204 schools), `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass, local browser check (204 schools load, four map dots on land, modals open with no undefined or NaN).
+
 ### v45.88 (2026-10-04) — Batch 3: Santa Clara, Saint Mary's, California Baptist, Sacramento State
 
 **Why:** Fourth batch of warm-climate West Coast programs from the Division I gap list (196 to 200 schools, 200 coaches).

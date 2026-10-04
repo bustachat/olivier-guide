@@ -3464,5 +3464,524 @@
         "covered": false
       }
     ]
+  },
+  {
+    "id": "oregonstate",
+    "profileDepth": "full",
+    "name": "Oregon State",
+    "full": "Oregon State University (Beavers)",
+    "loc": "Corvallis, OR",
+    "div": "D1",
+    "conf": "Pac-12 Conference",
+    "confKey": "pac-12",
+    "region": "west",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#fff0e6",
+      "#c4400a"
+    ],
+    "kinRank": "Strong (Kinesiology B.S. with required Anatomical Kinesiology, Biomechanics, Exercise Physiology, Motor Learning and Sport and Exercise Psychology, and a Pre-Therapy and Allied Health option)",
+    "degreeTitle": "B.S. Kinesiology",
+    "acuAlign": 7,
+    "acuAlignNote": "Kinesiology is a B.S. in the School of Exercise, Sport, and Health Sciences. The 38-credit core requires Anatomical Kinesiology (KIN 225), Foundations of Sport and Exercise Psychology (KIN 270), Motor Learning and Skill Acquisition (KIN 311), Biomechanics of Human Movement (KIN 321) and Exercise Physiology (KIN 324), and every student takes a three-term human anatomy and physiology series (BI 231/232/233, the advanced BI 331/332/333, or BI 254/255/256). Fitness Assessment and Exercise Prescription (KIN 325) is one of several laboratory courses of which students choose three, so it is not counted; resistance training, growth and motor development and a stand-alone research methods course are not required. A Pre-Therapy and Allied Health option adds therapeutic modalities and therapeutic exercise.",
+    "soccerLevel": "Pac-12: back in the rebuilt Pac-12 for 2026 after two seasons in the WCC; 2023 College Cup semifinalist",
+    "soccerLevelShort": "Pac-12",
+    "fin": {
+      "costNum": 60525,
+      "tuition": 42459,
+      "roomBoard": 18066,
+      "fees": 0,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Oregon State non-resident billable cost $60,525 (2026-27, Corvallis campus, taken from the Oregon State Financial Aid cost-of-attendance table): tuition and fees $42,459 for 15 credits a term over three terms (published combined, so stored under tuition) + living expenses $18,066. The living figure is Oregon State's average for on- and off-campus students, so an on-campus room and meal plan can differ. Its headline total is $65,013, which adds books ($600), personal expenses ($2,958) and transportation ($930) that this guide excludes. Oregon State offers the Western Undergraduate Exchange as a competitive scholarship for some students, but it does not reduce non-resident tuition by state. An athletic scholarship can cover a large share of this cost."
+    },
+    "aid": "Athletic",
+    "size": 25374,
+    "prePT": "Very Strong: Kinesiology B.S. with a Pre-Therapy and Allied Health option, required anatomy and physiology, exercise physiology and biomechanics",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is holistic and test-optional",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Oregon State publishes no minimum GPA. It reviews grades, course rigor, the personal statement and special talents together, and does not require test scores or recommendation letters, so Olivier's 2.8 GPA is not an automatic barrier. International applicants also need to show English proficiency and documents for the F-1 visa.",
+      "status": "eligible"
+    },
+    "mapX": 78,
+    "mapY": 125,
+    "fitOlivier": 41,
+    "lensScores": {
+      "overall": 41,
+      "soccer": 77,
+      "academic": 52,
+      "minutes": 12,
+      "lifestyle": 0,
+      "value": 25
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WCC 6-1-2 (3rd)",
+        "note": "10-5-2 overall in Jarred Brookins' first season as head coach. Reached the NCAA Tournament with a nine-match unbeaten run and a season-opening win over eventual national champion Washington, and finished ranked No. 19."
+      },
+      {
+        "yr": 2024,
+        "pos": "WCC 5-2-1 (3rd)",
+        "note": "10-5-3 overall. Reached the NCAA Tournament after a seven-match unbeaten run and a 6-2-2 home record."
+      },
+      {
+        "yr": 2023,
+        "pos": "Pac-12 4-1-5",
+        "note": "11-6-5 overall. Won four NCAA Tournament matches and reached the College Cup semifinals, where it lost to Notre Dame. Finished No. 4 in the United Soccer Coaches poll, the highest final ranking in program history."
+      },
+      {
+        "yr": 2022,
+        "pos": "Pac-12 3-1-5",
+        "note": "7-4-6 overall."
+      },
+      {
+        "yr": 2021,
+        "pos": "Pac-12 7-1-2",
+        "note": "14-2-4 overall. Hosted an NCAA Tournament match against St. John's."
+      }
+    ],
+    "titles": [
+      "2023 NCAA College Cup semifinalist",
+      "NCAA Tournament 2021, 2023, 2024 and 2025"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 8,
+      "notable": [
+        "Logan Farrington, No. 3 overall in the 2024 SuperDraft",
+        "Enzo Newman, No. 11 overall in the 2025 SuperDraft",
+        "Sergi Solans, No. 30 overall in the 2025 SuperDraft",
+        "Lucas Fernandez Kim, selected in the 2026 SuperDraft"
+      ],
+      "draftRank": "Eight SuperDraft picks in the last five drafts, including three first-round picks in 2024 and 2025"
+    },
+    "devScores": {
+      "tactical": 74,
+      "technical": 70,
+      "fitness": 68
+    },
+    "devScoresNote": "5a rubric, training environment only. Live osubeavers.com MSOC staff (2026): HC Jarred Brookins + Matt Bersano (Asst) + Michael Behonick (Asst) = 3 coaches, plus a Director of Operations, an assistant athletic trainer for men's soccer and an assistant strength and conditioning coach shared across men's soccer, women's soccer and distance running. Facilities: Paul Lorenz Field at Patrick Wayne Valley Stadium (1996, resurfaced 2012 with natural grass, lights since 2006), 1,500 seats, shared with women's soccer, has hosted NCAA Tournament matches. No dedicated soccer strength coach, GPS or video staff named on the MSOC page. Scored below Bryant (78/74/72) because of three coaches and a shared performance coach, and a 1,500-seat grass stadium. Results (2023 College Cup, 2025 No. 19) excluded.",
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Paul Lorenz Field at Valley Stadium (1,500 seats, natural grass, lights)",
+      "Assistant strength and conditioning coach shared with women's soccer and distance running",
+      "Hosts NCAA Tournament matches"
+    ],
+    "courses": [
+      "BI 231/232/233: Human Anatomy and Physiology I-III (or the BI 331 or BI 254 series)",
+      "KIN 225: Anatomical Kinesiology",
+      "KIN 321: Biomechanics of Human Movement",
+      "KIN 324: Exercise Physiology",
+      "KIN 270: Foundations of Sport and Exercise Psychology",
+      "KIN 311: Motor Learning and Skill Acquisition",
+      "KIN 325: Fitness Assessment and Exercise Prescription (laboratory elective)"
+    ],
+    "rec": "Oregon State is a strong soccer and physical-therapy fit with the wrong climate: the program reached the 2023 College Cup, has sent eight players to the SuperDraft in five years (three in the first round) and is back in the rebuilt Pac-12. The Kinesiology B.S. requires anatomy and physiology, biomechanics, exercise physiology, motor learning and sport psychology and has a Pre-Therapy and Allied Health option, and admission is holistic and test-optional with no published minimum GPA. The costs are a non-resident price of about $60,500 before any scholarship, a rainy Pacific Northwest college town rather than a warm city, and a very young midfield: all 11 midfielders return in 2027, including 6 first-years, so entry competition is heavy.",
+    "url": "https://osubeavers.com/sports/mens-soccer",
+    "domain": "osubeavers.com",
+    "culture": {
+      "vibe": "Oregon State is a large public research university in Corvallis, a college town in the Willamette Valley. Winters are mild and wet and summers are dry and warm.",
+      "thingsToDo": "Hiking and mountain biking in the Coast Range and Cascades, river and coast trips, and a college-town food and music scene; Portland is the nearest big city.",
+      "socialScene": "Student life centres on campus events, Beaver athletics and the outdoors. The men's soccer squad is largely Californian and Pacific Northwest, with players from Spain, Germany, Italy and Canada.",
+      "olivierMatch": "★★ A strong program and degree, but a rainy small-city climate that does not fit the warm-city preference, and a crowded, very young midfield.",
+      "lifestyleTags": "Pacific Northwest college town, mild wet climate, strong pipeline, crowded midfield"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Paul Lorenz Field at Patrick Wayne Valley Stadium, opened in 1996 a block southeast of Reser Stadium. The surface was replaced with natural grass in 2012, lights were installed before the 2006 season, and the stadium seats 1,500 with an enclosed press box. It is shared with women's soccer and has hosted NCAA Tournament matches.",
+      "trainingFields": "The official pages name only Paul Lorenz Field for men's soccer. No separate training pitch is listed.",
+      "strengthConditioning": "An assistant strength and conditioning coach is listed for men's soccer, shared with women's soccer and distance running.",
+      "sportsScience": "The men's soccer staff page lists a Director of Operations. No GPS tracking or video-analysis staff is named.",
+      "sportsMed": "An assistant athletic trainer is assigned to men's soccer on its staff page.",
+      "academicLabs": "The School of Exercise, Sport, and Health Sciences teaches Exercise Physiology, Biomechanics and Anatomical Kinesiology, and the Kinesiology major requires a laboratory-based anatomy and physiology series.",
+      "extras": "Oregon State played in the WCC in 2024 and 2025 and returns to the Pac-12 for 2026.",
+      "note": "A well-used natural-grass stadium with NCAA hosting experience; support staff are shared.",
+      "housing": {
+        "available": true,
+        "note": "First-year students are required to live on campus under the First-Year Experience live-on residency requirement, with exceptions, confirmed on Oregon State's Student Life page."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 11,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 0,
+      "cleared_names": [],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Milo Wray",
+        "Joan Ruiz"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Diego Rodriguez",
+        "Tim Hoffman",
+        "Oliver Hernandez Parra"
+      ],
+      "recruit_risk": "High",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from Oregon State's 2026-27 roster, which lists each player's last and previous school. Only 1 of the 11 midfielders lists a previous college (Milo Wray, from James Madison); 6 are first-year players and the rest list high schools or academies. Across the whole roster, 6 of 29 players are transfers (Notre Dame, James Madison, South Florida, Indiana, Utah Tech and Western Oregon), so the squad leans on freshmen. 7 of the 29 players are from outside the US.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 10,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 35,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 65,
+          "label": "Established starter"
+        }
+      ],
+      "trajectoryNote": "No midfielder graduates before 2027: all 11 return. Two (Wray and Ruiz) will be seniors when Olivier arrives, 3 will be juniors and 6 first-years will be sophomores, so the midfield is young and crowded."
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "marshall",
+    "profileDepth": "full",
+    "name": "Marshall",
+    "full": "Marshall University (Thundering Herd)",
+    "loc": "Huntington, WV",
+    "div": "D1",
+    "conf": "Sun Belt Conference",
+    "confKey": "sun-belt",
+    "region": "east",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#e8f5ec",
+      "#00693c"
+    ],
+    "kinRank": "Strong (Exercise Science B.S. with required Human Anatomy and Physiology, Exercise Physiology, Fitness Assessment and Exercise Prescription, Strength and Conditioning, Motor Learning, Sport Psychology and a 6-credit internship)",
+    "degreeTitle": "B.S. Exercise Science",
+    "acuAlign": 10,
+    "acuAlignNote": "Exercise Science is a B.S. in the Health and Movement Sciences degree program of the College of Health Professions. The major requires Principles of Biology I and II with labs (BSC 120/121), Human Anatomy and Human Physiology with labs (BSC 227/228), Exercise Physiology (ESS 345), Fitness Assessment and Exercise Prescription (ESS 375), Principles of Strength and Conditioning with lab (ESS 442/443), Functional Kinesiology with lab (HS 365), Motor Learning (HS 369), Sport Psychology (HS 405 or PSY 405) and a 6-credit Internship in Exercise Science (ESS 491). Biomechanics is not a separate required course, and PSY 223 is a general behavioral statistics course, so neither is counted as a research methods unit.",
+    "soccerLevel": "Sun Belt: the 2020 NCAA national champions (spring 2021), five straight NCAA Tournaments from 2019 to 2023, and 18 wins in 2023",
+    "soccerLevelShort": "Sun Belt",
+    "fin": {
+      "costNum": 34558,
+      "tuition": 18784,
+      "roomBoard": 12952,
+      "fees": 2822,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Marshall non-resident direct billed cost $34,558 (2026-27, taken from the Marshall Bursar's published undergraduate tuition and fees, Kinesiology program rate): tuition $9,392 per semester ($18,784) + university fees $827 and Kinesiology program fee $584 per semester ($2,822) + the first-year residence halls (North and South) $4,130 per semester ($8,260) + the 10-meals-a-week plan with $500 in dining dollars $2,346 per semester ($4,692). The housing and meal figures are the cheapest first-year options on the pages checked; the housing rates page does not state its year, and other halls and plans cost more. Resident students must have a meal plan. Books and personal expenses are excluded. An athletic scholarship can cover a large share of it."
+    },
+    "aid": "Athletic",
+    "size": 12957,
+    "prePT": "Very Strong: Exercise Science B.S. with required anatomy, physiology, exercise physiology and a 6-credit internship; Marshall also has a Doctor of Physical Therapy program on campus",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "2.00 minimum GPA for international first-year applicants",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Marshall's international admissions page sets a 2.00 minimum GPA (converted by a credential evaluation if the school is outside the US), so Olivier's 2.8 GPA clears the bar. ACT or SAT scores may be required, depending on the program. The Exercise Science major also requires a 2.50 cumulative GPA and a C or better in required courses to graduate.",
+      "status": "eligible"
+    },
+    "mapX": 478,
+    "mapY": 184,
+    "fitOlivier": 47,
+    "lensScores": {
+      "overall": 47,
+      "soccer": 81,
+      "academic": 68,
+      "minutes": 26,
+      "lifestyle": 0,
+      "value": 42
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Sun Belt 6-2-1 (3rd)",
+        "note": "12-4-5 overall in the regular season."
+      },
+      {
+        "yr": 2024,
+        "pos": "Sun Belt 4-0-5 (2nd)",
+        "note": "15-2-7 overall in the regular season."
+      },
+      {
+        "yr": 2023,
+        "pos": "Sun Belt 7-2 (1st)",
+        "note": "18 wins, the most in a season, and a fifth consecutive NCAA Tournament. Matthew Bell was named Sun Belt Player of the Year, Morris Duggan Defensive Player of the Year and Gabriel Perrotta Goalkeeper of the Year."
+      },
+      {
+        "yr": 2022,
+        "pos": "Sun Belt 4-1-3 (2nd)",
+        "note": "11-4-4 overall in the first season in the Sun Belt, a fourth consecutive NCAA Tournament."
+      },
+      {
+        "yr": 2021,
+        "pos": "Conference USA",
+        "note": "At least 11 wins, ranked in the top 25 all season, and an at-large NCAA Tournament bid; the defense set team records with seven straight clean sheets."
+      }
+    ],
+    "titles": [
+      "2020 NCAA national champions (played in spring 2021)",
+      "Conference USA champions 2019 and 2020-21",
+      "NCAA Tournament 2019-2023 (five straight)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 8,
+      "notable": [
+        "Eight SuperDraft picks across the last five drafts: two in 2022, one in 2023, two in 2024 and three in 2025",
+        "Paulo Pita, No. 24 overall in the 2020 SuperDraft (LAFC), the first Marshall player taken in the first round"
+      ],
+      "draftRank": "Eight SuperDraft picks in the last five drafts, including three in 2025"
+    },
+    "devScores": {
+      "tactical": 82,
+      "technical": 74,
+      "fitness": 78
+    },
+    "devScoresNote": "5a rubric, training environment only. Live herdzone.com MSOC staff (2026): HC Chris Grassie + Josh Faga (Assoc HC) + Gabriel Perrotta (Asst) = 3 coaches, plus a Soccer Strength & Conditioning Coach dedicated to soccer (Davi Edwards), a Director of Player Experience and an assistant athletic trainer shared with track and field. Facilities: Hoops Family Field at the Veterans Memorial Soccer Complex (opened 2013, a soccer-specific complex; record crowd 2,126 in 2019). Capacity, surface and lighting not confirmed from a live page. Scored with a documented ball-control system and national-title coaching staff on tactical, fitness lifted by the dedicated soccer strength coach, technical held lower for the modest facility. Results (2020-21 title) excluded.",
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Hoops Family Field at the Veterans Memorial Soccer Complex (opened 2013)",
+      "Soccer strength and conditioning coach on the men's soccer staff",
+      "Record crowd of 2,126 for a 2019 NCAA Tournament match"
+    ],
+    "courses": [
+      "BSC 227/228: Human Anatomy and Human Physiology with labs",
+      "ESS 345: Exercise Physiology",
+      "ESS 375: Fitness Assessment and Exercise Prescription",
+      "ESS 442/443: Principles of Strength and Conditioning with lab",
+      "HS 365: Functional Kinesiology with lab",
+      "HS 369: Motor Learning",
+      "HS 405: Sport Psychology",
+      "ESS 491: Internship in Exercise Science (6 credits)"
+    ],
+    "rec": "Marshall is a strong development and value fit on paper: the 2020 NCAA national champions (spring 2021), five straight NCAA Tournaments, eight SuperDraft picks in five years, a head coach (Chris Grassie) who has been in charge since 2017, and a direct billed cost near $34,600. The Exercise Science B.S. is a strong match for a physical-therapy goal (required anatomy and physiology, exercise physiology, kinesiology, motor learning, sport psychology and a 6-credit internship), the minimum GPA is 2.00, and Marshall has its own Doctor of Physical Therapy program. The costs are a cold, mid-sized Appalachian city rather than a warm one, and a midfield built largely from transfers and international players (22 of 28 on the roster are from outside the US), so a freshman competes with experienced older players.",
+    "url": "https://herdzone.com/sports/mens-soccer",
+    "domain": "herdzone.com",
+    "culture": {
+      "vibe": "Marshall is a public university in Huntington, West Virginia, on the Ohio River, with a compact campus. Winters are cold and summers warm and humid.",
+      "thingsToDo": "The campus sits close to downtown Huntington, with Ohio River and Appalachian outdoor options, and the Mountain State rivalry match with West Virginia is a highlight of the schedule.",
+      "socialScene": "The soccer squad is among the most international in the guide, with players from Brazil, Germany, Canada, Portugal, Spain, Japan, South Korea and elsewhere.",
+      "olivierMatch": "★★★ A national-champion program, strong degree and low cost, but a cold small city and a midfield full of older transfers.",
+      "lifestyleTags": "Appalachian river city, national-title program, low cost, international squad"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Hoops Family Field at the Veterans Memorial Soccer Complex in Huntington, opened in 2013, which Marshall's coach biography describes as the site of record crowds of 2,032 and 2,126 in 2019. Capacity, surface and lighting were not confirmed from a live official page.",
+      "trainingFields": "The official pages name only Hoops Family Field. No separate training pitch is listed.",
+      "strengthConditioning": "A Soccer Strength & Conditioning Coach (Davi Edwards) is listed on the men's soccer staff page.",
+      "sportsScience": "A Director of Player Experience is listed. No GPS tracking or video-analysis staff is named.",
+      "sportsMed": "An assistant athletic trainer is shared between men's soccer and track and field.",
+      "academicLabs": "The College of Health Professions teaches Human Anatomy, Human Physiology, Exercise Physiology and Functional Kinesiology with laboratory sections, and Marshall has a Doctor of Physical Therapy program.",
+      "extras": "Marshall joined the Sun Belt in 2022 after years in Conference USA.",
+      "note": "A purpose-built soccer complex with a dedicated strength coach; the facility details not confirmed are noted above.",
+      "housing": {
+        "available": true,
+        "note": "Marshall has first-year residence halls (North and South) and other halls, and residents must have a meal plan; a first-year residency requirement was not confirmed on the pages checked."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Thiago Apolinario",
+        "Ryan Holmes"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Nikita Pakhomov",
+        "Alvaro Alvarez"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Jack Shannon"
+      ],
+      "recruit_risk": "Medium",
+      "recruit_pathway": "Transfer-preferred",
+      "recruit_pathway_note": "Read from Marshall's 2026-27 roster, which lists each player's previous school. 4 of the 7 midfielders list a previous college: Thiago Apolinario (Cowley College, a junior college), Joao Carvalho (Lakeland), Jack Shannon (UNCG) and Nikita Pakhomov (Oklahoma Wesleyan). Only 2 are first-year players. Across the whole roster, 9 of 28 players are transfers, including Tyler Junior College and Gardner-Webb, and 22 of the 28 are from outside the US.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "trajectoryNote": "2 of 7 midfielders (Apolinario and Holmes) graduate before 2027. Two more (Pakhomov and Alvarez) will be seniors when Olivier arrives, 1 will be a junior and 2 first-year midfielders will be sophomores. Four of the seven are transfers, so a freshman should expect to compete with older, experienced players."
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": true
+      }
+    ]
   }
 ]

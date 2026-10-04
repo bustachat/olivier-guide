@@ -6,6 +6,14 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.93 (2026-10-04) — Dashboard budget slider now reaches $110k
+
+**Why:** The Annual budget slider stopped at $100k, but Duke's direct billed cost is $103,180 (tuition $73,740, room and board $22,029, fees $7,411), so at the top setting the Dashboard read "208 of 209 within budget" and "208 real options". Duke was the only school over $100k.
+
+**Change (`js/dashboard.js`):** the slider's maximum is now $110k (still in $5k steps) and the tick labels read $20k, $50k, $80k and $110k, evenly spaced. At $110k with an ATAR of 99 the Dashboard reads 209 of 209 within budget and 209 real options; at $100k it still reads 208, as before. The default budget and every score are unchanged; no data changed.
+
+**Validation:** `node --check js/dashboard.js`, browser check of the slider range, ticks, the readout and the counts at $100k and $110k, no console errors.
+
 ### v45.92 (2026-10-04) — South Carolina's GPA minimum read as 4.1, so the GPA filter could never reach it
 
 **Why:** The Dashboard's slider tops out at a 4.0 GPA (ATAR 99), and the owner noticed it showed "208 of 209 schools GPA-eligible" even at the maximum. The filter takes the first number in each school's `gpa.minEntry`. South Carolina's text, "4.1 or higher typical (middle 50% weighted high school GPA 4.1 to 4.8)", described the admitted-student profile, not a minimum, and it parsed as 4.1. It was the only one of the 209 schools with a parsed value above 4.0.

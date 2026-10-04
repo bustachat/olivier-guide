@@ -6,6 +6,21 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.88 (2026-10-04) — Batch 3: Santa Clara, Saint Mary's, California Baptist, Sacramento State
+
+**Why:** Fourth batch of warm-climate West Coast programs from the Division I gap list (196 to 200 schools, 200 coaches).
+
+**Added:**
+- **Santa Clara** (WCC, `d1-other.json`): fit 58. Coach Cameron Rast (24 seasons, seven WCC titles, score 74). No exercise science major, so the degree is the Public Health Science B.S. (Health Science emphasis), `acuAlign` 1. Also added to the NCAA champions table (1989 co-champion).
+- **Saint Mary's** (WCC, `d1-other.json`): fit 43. Coach Adam Cooper (score 68). Kinesiology: Exercise Science B.S., `acuAlign` 7. None of its 10 midfielders clears before 2027 (High entry competition).
+- **California Baptist** (Pac-12, `d1-other.json`): fit 46. Coach Coe Michaelson (11th season, 2025 WAC regular-season champions, score 66). Exercise Science B.S., `acuAlign` 8. Cost $55,766 (2025-26, the newest published). Seats just over 500, with room for over 1,000.
+- **Sacramento State** (Big West, `big-west.json`): fit 51. Interim head coach Matt McDougall (score 52) after a long-serving coach retired in July 2026. Exercise Science B.S. (Health Fitness/Strength Conditioning), `acuAlign` 10. Cost $43,998 (2026-27). Needs a 3.0 high school GPA from international applicants, so Olivier's 2.8 is borderline.
+- Each has a coach, pipeline row (MLS draft), map dot (all four checked on land), domain, site and social entries, and a reference-table row; the four were removed from their conference cards' "other schools" lists. Coach ranks re-sorted.
+
+**Notes:** Only pure "MF" positions count as midfielders at California Baptist and Sacramento State; players listed as combination positions are named in the notes. California Baptist `size` and Sacramento State `size` are total enrollment (12,516 and 31,307) because no undergraduate figure was found on their official pages. Sacramento State's lights were not confirmed.
+
+**Validation:** `validate_schools.py` pass (200 schools), `validate_consistency.js` Issues: 0, local browser check (200 schools load, four map dots on land, modals open with no undefined or NaN).
+
 ### v45.87 (2026-10-04) — One logo chain on every surface; ACU Alignment tab now computed from the data
 
 **Why:** The owner noticed that Nova SE's logo differed between the Explore card and the Details modal, and that the ACU Alignment tab said "UC San Diego (12)" when UC San Diego has 2 of 16 units.

@@ -5538,5 +5538,779 @@
         "covered": false
       }
     ]
+  },
+  {
+    "id": "santaclara",
+    "profileDepth": "full",
+    "name": "Santa Clara",
+    "full": "Santa Clara University (Broncos)",
+    "loc": "Santa Clara, CA",
+    "div": "D1",
+    "conf": "West Coast Conference",
+    "confKey": "wcc",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#f9e8e8",
+      "#862633"
+    ],
+    "kinRank": "Limited (no exercise science or kinesiology major; Public Health Science B.S. with a Health Science emphasis and a Health Professions Advising office that supports physical therapy applicants)",
+    "degreeTitle": "B.S. Public Health Science (Health Science emphasis)",
+    "acuAlign": 1,
+    "acuAlignNote": "Santa Clara University has no exercise science or kinesiology major. Its Health Professions Advising office says every major is a pre-health major and supports physical and occupational therapy applicants. The closest route is the Public Health Science B.S. with the Health Science emphasis, which requires the three-course General Biology series (BIOL 1A, 1B and 1C), a chemistry series, a statistics course, public health courses and a 100-hour internship. Only the general biology unit is counted. Human Anatomy and several biomedical courses are approved electives, not requirements, the statistics course is not a research methods course, and the 100-hour internship is below the 140-hour professional experience unit, so none of those is counted.",
+    "soccerLevel": "West Coast Conference: 2021 WCC champions (undefeated in conference), 2023 co-champions, 1989 NCAA national co-champions and eight NCAA Tournaments under the current coach",
+    "soccerLevelShort": "WCC",
+    "fin": {
+      "costNum": 85830,
+      "tuition": 64956,
+      "roomBoard": 20094,
+      "fees": 780,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Santa Clara direct billed cost $85,830 (2026-27, the 'total direct costs' row of the financial aid office's cost of attendance table): tuition $64,956 + the Student Engagement and Well-Being Fee $780 + housing and food $20,094. Housing and food are recorded together as room and board. Its headline total is $92,556 for a student living on campus, which adds books, transportation, personal expenses and loan fees. Santa Clara is very expensive, so the size of the athletic scholarship matters a great deal."
+    },
+    "aid": "Athletic",
+    "size": 6695,
+    "prePT": "Good: Public Health Science B.S. with a Health Science emphasis (biology and chemistry series) and a Health Professions Advising office that supports physical therapy applicants; no exercise science major",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is highly selective and holistic",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Santa Clara reports an average unweighted GPA of about 3.7 for its fall 2025 first-year class from more than 20,000 applications, so a 2.8 GPA is well below the typical admit and needs a strong athletic case.",
+      "status": "eligible"
+    },
+    "mapX": 73,
+    "mapY": 182,
+    "fitOlivier": 58,
+    "lensScores": {
+      "overall": 58,
+      "soccer": 54,
+      "academic": 20,
+      "minutes": 31,
+      "lifestyle": 100,
+      "value": 35
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WCC 3-3-3 (5th)",
+        "note": "6-5-7 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "WCC 2-4-2 (6th)",
+        "note": "5-8-3 overall."
+      },
+      {
+        "yr": 2023,
+        "pos": "WCC 5-1-1 (1st, co-champions)",
+        "note": "7-7-3 overall. Shared the WCC title with San Diego and Cameron Rast was named WCC Coach of the Year."
+      },
+      {
+        "yr": 2022,
+        "pos": "WCC 1-2-4 (5th)",
+        "note": "4-4-7 overall."
+      },
+      {
+        "yr": 2021,
+        "pos": "WCC 5-0-2 (1st)",
+        "note": "12-4-4 overall and undefeated in conference play, with a 13-game unbeaten streak. Reached the NCAA second round and lost to Kentucky."
+      }
+    ],
+    "titles": [
+      "NCAA national champion 1989 (co-champions with Virginia after a tied final)",
+      "WCC champion 2021 and 2023 (seven under the current coach)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Julian Bravo, No. 55 overall in the 2022 SuperDraft (Portland Timbers)",
+        "Erik Hurtado, No. 5 overall in the 2013 SuperDraft, the highest pick under the current coach"
+      ],
+      "draftRank": "One SuperDraft pick in the last five drafts (2022)"
+    },
+    "devScores": {
+      "tactical": 78,
+      "technical": 72,
+      "fitness": 58
+    },
+    "devScoresNote": "5a rubric, training environment only. Live santaclarabroncos.com MSOC roster page (2026): HC Cameron Rast + Associate HC Eric Yamamoto + assistants Riley Hanley and Jack Murphy (also Director of Operations) = 4 coaches; no athletic trainer, strength coach, video or GPS staff listed on the program page. Facilities: Stevens Stadium - Buck Shaw Field, opened 1962, 6,800 seats, shared with women's soccer; playing surface and lights listed as 'coming soon' on the athletics site. Rast is a 1989 national champion and 1992 U.S. Olympic captain. Scored below San Diego (80/78/70) on fitness and technical: no named support staff or confirmed surface. Results (WCC titles, 1989 championship) excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Stevens Stadium - Buck Shaw Field (6,800 seats, opened 1962)",
+      "Head coach is a 1989 NCAA champion and 1992 U.S. Olympic captain",
+      "Health Professions Advising office for pre-physical-therapy students"
+    ],
+    "courses": [
+      "BIOL 1A, 1B and 1C: General Biology series",
+      "CHEM 11, 12 and 31: General and Organic Chemistry",
+      "PHSC 1, 2 and 3 and PHSC 100: Public Health core courses",
+      "PHSC 197: 100-hour internship",
+      "BIOL 104: Human Anatomy (approved biomedical elective)"
+    ],
+    "rec": "Santa Clara has a better soccer record than its recent results suggest: the 1989 NCAA co-championship, eight NCAA Tournaments under the current coach, a head coach in his 24th season who won seven WCC titles including 2021 and 2023, and a 6,800-seat stadium with a long unbeaten home history. It sits in Silicon Valley, a warm, large-city setting. The drawbacks are academic and financial: there is no exercise science or kinesiology major (the route is a Public Health Science B.S. with a pre-health advising office), the price is about $85,800 a year before any scholarship, and the last two seasons finished 5th and 6th in the WCC. The 2026-27 midfield has 10 players with only 2 leaving, so the first year is crowded.",
+    "url": "https://santaclarabroncos.com/sports/mens-soccer",
+    "domain": "santaclarabroncos.com",
+    "culture": {
+      "vibe": "Santa Clara University is a private Jesuit university on a 106-acre campus in Silicon Valley, with about 6,700 undergraduates.",
+      "thingsToDo": "San Jose, San Francisco and the Pacific beaches are within about an hour, with Levi's Stadium and the San Jose Earthquakes and Sharks close by. The weather is warm and dry through most of the year.",
+      "socialScene": "A residential campus where unmarried first-year students must live on campus for their first two years. The men's soccer squad of 28 is largely Bay Area players, with several from Israel, Japan, Germany and Canada.",
+      "olivierMatch": "★★★ A warm Silicon Valley campus and a historic program, but no exercise science major and a very high price. Strong on climate and soccer pedigree; weaker on academics and cost.",
+      "lifestyleTags": "Warm Silicon Valley, 1989 national co-champions, Jesuit private university, no exercise science major"
+    },
+    "facilityDetails": {
+      "rating": "Excellent",
+      "stadium": "Stevens Stadium - Buck Shaw Field opened in 1962 and seats 6,800. It is shared with women's soccer. The men's team once went 43 matches unbeaten there between 1988 and 1992, including five NCAA Tournament home wins. The athletics site lists the playing surface and lights as 'coming soon', so they were not confirmed.",
+      "trainingFields": "The athletics site lists Stevens Stadium as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists the head coach, an associate head coach and two assistants, one of them also Director of Operations. No GPS tracking, video analyst or sports science staff is named.",
+      "sportsMed": "No athletic trainer is listed on the men's soccer staff page.",
+      "academicLabs": "The Biology and Chemistry departments teach the laboratory sections for the General Biology and chemistry series.",
+      "extras": "The stadium has hosted the program's NCAA Tournament home wins in 1989 and 1991, and the men's team's 43-match home unbeaten streak ran from 1988 to 1992.",
+      "note": "A large historic stadium; no support staff are named for the program, and the playing surface was not confirmed.",
+      "housing": {
+        "available": true,
+        "note": "Santa Clara requires all unmarried first-year undergraduates to live on campus for their first two years, confirmed on its University Residency Requirement page."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Niv Berkovitz",
+        "Will Wiersdorf"
+      ],
+      "rising_senior_2027_count": 5,
+      "rising_senior_2027_names": [
+        "Khalil Rashad",
+        "James Saggau",
+        "Ezana Alemayehu",
+        "Jona Starek",
+        "Andrew Sullivan"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Moises Almontes"
+      ],
+      "trajectoryNote": "Only 2 of 10 midfielders graduate before 2027 (Berkovitz and Wiersdorf). Five juniors will be seniors when Olivier arrives, one sophomore will be a junior and two first-years will be sophomores, so the group is established and crowded. Santa Clara's roster page lists hometowns and high schools rather than previous colleges, so it is not possible to say how many players arrived as transfers.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 25,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 40,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 65,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "High"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "saintmarys",
+    "profileDepth": "full",
+    "name": "Saint Mary's",
+    "full": "Saint Mary's College of California (Gaels)",
+    "loc": "Moraga, CA",
+    "div": "D1",
+    "conf": "West Coast Conference",
+    "confKey": "wcc",
+    "region": "west",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "color": [
+      "#e8eef8",
+      "#003a70"
+    ],
+    "kinRank": "Very Good (Kinesiology: Exercise Science B.S. with required anatomy and physiology, exercise physiology with a lab, structural biomechanics, sport and exercise psychology, motor learning and control, and research methods)",
+    "degreeTitle": "B.S. Kinesiology: Exercise Science",
+    "acuAlign": 7,
+    "acuAlignNote": "Saint Mary's Kinesiology: Exercise Science B.S. requires a biology course with lab, a two-semester Human Anatomy and Physiology sequence (BIOL 215 and 225, or BIOL 250 and 251, with labs), a chemistry course, a math or statistics course, and the upper-division courses Introduction to Kinesiology, Research Methods and Writing in Kinesiology, Sport and Exercise Psychology, Structural Biomechanics, Nutrition for Sport and Physical Activity, Exercise Physiology with a lab, and Motor Learning and Control. Those cover the anatomy, general biology, physiological bases of exercise, introductory biomechanics, sport psychology, motor control and research units. Not counted: advanced exercise physiology and biomechanics, exercise testing and prescription, resistance training and an internship, which are only options in the four upper-division electives (Group A includes an internship, Group B includes strength training, fitness assessment and exercise prescription, and athletic injuries).",
+    "soccerLevel": "West Coast Conference: first WCC title and NCAA Elite Eight in 2011, a perfect 7-0 conference season in 2019, but 9th in the WCC in 2025 with a 2-8-6 record",
+    "soccerLevelShort": "WCC",
+    "fin": {
+      "costNum": 80952,
+      "tuition": 61416,
+      "roomBoard": 18900,
+      "fees": 636,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Saint Mary's direct billed cost $80,952 (2026-27, from the financial aid cost of attendance table): tuition $61,416 ($30,708 a semester) + the student body ($216), student enhancement ($320) and student experience ($100) fees $636 + the college's on-campus food and housing figure $18,900, recorded as room and board. The housing and food figure is the college's budget amount for students living on campus, not a rate for a specific room. Its headline total is $87,612, which adds books, personal expenses and transportation. Saint Mary's is very expensive, so the size of the athletic scholarship matters a great deal."
+    },
+    "aid": "Athletic",
+    "size": 2044,
+    "prePT": "Very Strong: Exercise Science B.S. whose own career list starts with physical therapist, with an anatomy and physiology sequence, exercise physiology lab and structural biomechanics",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "No minimum GPA published; admission is holistic",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Saint Mary's 2023-24 Common Data Set reports an average high school GPA of 3.6 for its first-year students, so a 2.8 GPA is below the typical admit and needs a strong athletic case. The size figure is undergraduate headcount from that same Common Data Set (fall 2023).",
+      "status": "eligible"
+    },
+    "mapX": 70,
+    "mapY": 175,
+    "fitOlivier": 43,
+    "lensScores": {
+      "overall": 43,
+      "soccer": 54,
+      "academic": 52,
+      "minutes": 9,
+      "lifestyle": 50,
+      "value": 26
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WCC 2-5-2 (9th)",
+        "note": "2-8-6 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "WCC 1-4-3 (8th)",
+        "note": "2-9-6 overall; six draws were the most in a season in years."
+      },
+      {
+        "yr": 2023,
+        "pos": "WCC 3-4 (4th)",
+        "note": "8-7-2 overall."
+      },
+      {
+        "yr": 2022,
+        "pos": "WCC 2-1-4 (tied 3rd)",
+        "note": "7-6-5 overall. Louis Sterobo was named First Team All-WCC defender and seven Gaels made the All-WCC teams."
+      },
+      {
+        "yr": 2021,
+        "pos": "WCC 4-2-1 (tied 3rd)",
+        "note": "11-6-1 overall."
+      }
+    ],
+    "titles": [
+      "WCC champion 2011 (the program's first) and 2019 (7-0 in conference play)",
+      "NCAA Elite Eight 2011",
+      "NCAA Tournament 2009, 2011, 2018 and 2019"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Riley Lynch, No. 71 overall in the 2024 SuperDraft (San Jose Earthquakes)",
+        "Andre Rawls, third round of the SuperDraft (New York City FC), the first Gael named WCC Goalkeeper of the Year",
+        "Remi Prieur, a goalkeeper drafted into MLS who now coaches on the staff"
+      ],
+      "draftRank": "One SuperDraft pick in the last five drafts (2024), with a record of producing goalkeepers"
+    },
+    "devScores": {
+      "tactical": 72,
+      "technical": 74,
+      "fitness": 62
+    },
+    "devScoresNote": "5a rubric, training environment only. Live smcgaels.com MSOC roster page (2026): HC Adam Cooper + Associate HC Shawn Nicklaw + assistants Remi Prieur (a former MLS-drafted goalkeeper) and Irving Ventura = 4 coaches; support staff list an assistant athletic trainer shared with men's tennis (Emily Brown). No strength coach, video or GPS staff named. Facilities: Saint Mary's Stadium, 5,500 seats, hybrid Bermuda surface, shared with women's soccer and club rugby. Scored below San Diego (80/78/70) on tactical for recent results being excluded and a smaller staff, near it on technical for the 5,500-seat stadium, and lower on fitness for a shared trainer. Results excluded.",
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "facilities": [
+      "Saint Mary's Stadium (5,500 seats, hybrid Bermuda surface)",
+      "Assistant athletic trainer on the men's soccer staff",
+      "Anatomy, physiology and exercise physiology laboratories in the Kinesiology program"
+    ],
+    "courses": [
+      "BIOL 215 and 225 (or 250 and 251): Human Anatomy and Physiology with labs",
+      "KINES 360: Structural Biomechanics",
+      "KINES 460 and 460L: Exercise Physiology with lab",
+      "KINES 303 and 461: Sport and Exercise Psychology; Motor Learning and Control",
+      "KINES 300: Research Methods and Writing in Kinesiology"
+    ],
+    "rec": "Saint Mary's has one of the best degree matches in the West Coast Conference: a Kinesiology: Exercise Science B.S. whose required list covers anatomy and physiology, exercise physiology with a lab, structural biomechanics, sport psychology, motor learning and research methods, on a small Bay Area campus in the hills of Moraga. The program won its first WCC title and reached the NCAA Elite Eight in 2011, went 7-0 in the WCC in 2019 and has long produced goalkeepers for MLS. The drawbacks are recent results and cost: the Gaels finished 9th in the WCC in 2025 and 8th in 2024, and the price is about $81,000 a year before any scholarship. The 2026-27 midfield has 10 players, none graduating, and half are first-years, so first-year minutes will be very hard to win.",
+    "url": "https://smcgaels.com/sports/mens-soccer",
+    "domain": "smcgaels.com",
+    "culture": {
+      "vibe": "Saint Mary's is a small private Catholic college in the hills of Moraga, east of Oakland, with about 2,000 undergraduates.",
+      "thingsToDo": "Berkeley, Oakland and San Francisco are about 30 minutes away by BART or car, with hiking in the East Bay hills and the Bay Area's food, music and sports scene close by.",
+      "socialScene": "A tight-knit residential campus where, starting with students who begin in fall 2026, undergraduates must live on campus for their first two years. The men's soccer squad has 32 players, half of the midfield first-years.",
+      "olivierMatch": "★★★ A warm Bay Area setting and one of the strongest degree matches in the conference, but a small suburban campus, a very high price and a struggling program in recent seasons.",
+      "lifestyleTags": "Warm Bay Area hills, small Catholic college, Exercise Science B.S., 2011 Elite Eight, residential campus"
+    },
+    "facilityDetails": {
+      "rating": "Excellent",
+      "stadium": "Saint Mary's Stadium sits in the southeast corner of campus and seats 5,500, hosting men's and women's soccer and club rugby. A hybrid Bermuda grass surface was laid in 2006.",
+      "trainingFields": "The athletics site lists Saint Mary's Stadium and the SMC Recreation Field on its facilities page. No separate training pitch is named for men's soccer.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists the head coach, an associate head coach and two assistants. No GPS tracking, video analyst or sports science staff is named.",
+      "sportsMed": "Emily Brown is listed as Assistant Athletic Trainer for men's soccer and men's tennis.",
+      "academicLabs": "The Kinesiology program teaches an Exercise Physiology laboratory and the Biology department teaches the anatomy and physiology labs.",
+      "extras": "The stadium looks over the rolling hills of Moraga.",
+      "note": "A real 5,500-seat stadium; the athletic trainer is shared with men's tennis and no strength or video staff are named.",
+      "housing": {
+        "available": true,
+        "note": "Saint Mary's requires first-year students to live on campus and, starting with students who begin in fall 2026, for both their first and second years, confirmed on its Newscenter announcement of the expanded residence requirement."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 10,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 0,
+      "cleared_names": [],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Surafel Abebe"
+      ],
+      "rising_junior_2027_count": 4,
+      "rising_junior_2027_names": [
+        "Jaydon Whittaker",
+        "Cameron Kobey",
+        "Drew Shoji",
+        "Rafael Suarez"
+      ],
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from Saint Mary's 2026-27 roster, which lists a previous school for transfers. Only 1 of the 10 midfielders lists a previous college (Surafel Abebe, from Saint Francis University); the other 9 list none, including 5 first-years and a redshirt freshman. Across the whole roster, 9 of 32 players list a previous college, among them Gonzaga, Fordham, Cal Poly, Kansas City, San Francisco and East Tennessee State.",
+      "trajectoryNote": "None of the 10 midfielders graduates before 2027: there are no seniors in the group. Abebe will be a senior when Olivier arrives, four sophomores will be juniors and five first-years will be sophomores. The midfield is young and entirely returning, so first-year minutes would be very hard to win.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 5,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 35,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 65,
+          "label": "Established starter"
+        }
+      ],
+      "recruit_risk": "High"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "californiabaptist",
+    "profileDepth": "full",
+    "name": "California Baptist",
+    "full": "California Baptist University (Lancers)",
+    "loc": "Riverside, CA",
+    "div": "D1",
+    "conf": "Pac-12 Conference",
+    "confKey": "pac-12",
+    "region": "west",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "color": [
+      "#e8edf5",
+      "#002554"
+    ],
+    "kinRank": "Good (Exercise Science B.S. in the Department of Kinesiology: movement anatomy, anatomy and physiology, biomechanics, exercise physiology with a laboratory, research methods and a field practicum, with a Pre-Physical Therapy recommended course list)",
+    "degreeTitle": "B.S. Exercise Science (Kinesiology)",
+    "acuAlign": 8,
+    "acuAlignNote": "California Baptist's Exercise Science B.S. is taught in its Department of Kinesiology and publishes a Pre-Physical Therapy recommended course list. The required courses include Movement Anatomy (KIN 264), Anatomy and Physiology I and II with laboratories (BIO 153 and 163), General Biology I (BIO 146), Exercise Physiology (KIN 383) with Laboratory Techniques in Exercise Physiology (KIN 340), Biomechanics (KIN 333), Exercise Interventions for Healthy Individuals (KIN 410), a Sports and Activities Practicum (KIN 433), Research Methods and Evaluation in Kinesiology (KIN 473) and Nutrition Science (KIN 300). Those cover anatomy, functional anatomy, general biology, physiology, exercise physiology, biomechanics, exercise testing and research methods. Strength Training and Conditioning (KIN 420) and Lifelong Motor Development (KIN 332) are listed as electives or options, not requirements, so they are not counted. The practicum hours were not found, so professional experience is not counted.",
+    "soccerLevel": "Pac-12 Conference from 2026 (WAC regular-season champions 2025; WAC tournament champions 2022 and 2023; first NCAA Tournament win in 2023)",
+    "soccerLevelShort": "Pac-12",
+    "fin": {
+      "costNum": 55766,
+      "tuition": 40638,
+      "roomBoard": 12668,
+      "fees": 2460,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "California Baptist direct billed cost $55,766 (2025-26, the newest year the financial aid office publishes): tuition $40,638 (13 to 18 units) + fees $2,460 + housing and the minimum first-year meal plan $12,668 (shared room). Its headline total adds books ($600 to $1,000), transportation and personal expenses, and optional health insurance ($1,013 a semester). Science courses carry an extra $210 laboratory fee each. Athletic scholarship is the main route to a lower price."
+    },
+    "aid": "Athletic",
+    "size": 12516,
+    "prePT": "Good: Exercise Science B.S. with a published Pre-Physical Therapy course list; anatomy and physiology with labs, biomechanics, exercise physiology with a lab",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum GPA published for international applicants; the university reviews transcripts",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "CBU's international undergraduate page lists documents and English-test scores but no GPA minimum. Australia is on its list of countries exempt from an English proficiency test. The size figure is total enrollment of 12,516 in fall 2025, which includes graduate and online students.",
+      "status": "eligible"
+    },
+    "mapX": 105,
+    "mapY": 212,
+    "fitOlivier": 46,
+    "lensScores": {
+      "overall": 46,
+      "soccer": 51,
+      "academic": 57,
+      "minutes": 21,
+      "lifestyle": 50,
+      "value": 28
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WAC 4-2-1 (1st, regular-season champions)",
+        "note": "10-4-3 overall. Clinched the title in the last minute against San Diego State and reached the first United Soccer Coaches ranking in program history (No. 25); lost the WAC semifinal in overtime to San Jose State."
+      },
+      {
+        "yr": 2024,
+        "pos": "WAC 4-4-1",
+        "note": "6-8-5 overall. Lost the WAC semifinal 3-1 to Seattle."
+      },
+      {
+        "yr": 2023,
+        "pos": "WAC 5-1-2 (2nd; tournament champions)",
+        "note": "10-6-4 overall. Won the WAC Tournament, then the first NCAA Tournament win in program history on penalty kicks over San Diego; lost to Marshall 3-0."
+      },
+      {
+        "yr": 2022,
+        "pos": "WAC 4-3-2 (5th; tournament champions)",
+        "note": "11-7-3 overall. Hosted and won the WAC Tournament in its first year of eligibility; lost 2-1 at UCLA in the NCAA first round."
+      },
+      {
+        "yr": 2021,
+        "pos": "WAC 6-3-2",
+        "note": "11-4-3 overall, then the best record of the Division I era."
+      }
+    ],
+    "titles": [
+      "WAC regular-season champion 2025",
+      "WAC Tournament champion 2022 and 2023"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Blake D'Agostino, No. 64 overall in the 2026 SuperDraft (Sporting Kansas City)"
+      ],
+      "draftRank": "One SuperDraft pick in the last five drafts (2026)"
+    },
+    "devScores": {
+      "tactical": 68,
+      "technical": 68,
+      "fitness": 52
+    },
+    "devScoresNote": "5a rubric, training environment only. Live cbulancers.com men's soccer staff page (2026): HC Coe Michaelson, Associate HC Stephen Marshall, Assistant Aidan Apodaca and Goalkeeper Coach John Samano = 4 coaches; one athletic trainer shared with women's water polo and women's golf; no strength coach, video or GPS staff listed. Facilities: CBU Soccer Stadium opened 2022 with a hybrid Bermuda sod pitch, Musco LED lights, broadcast wiring, covered press box and a new practice field directly behind it; over 500 seats plus berm and standing room for over 1,000. Results (WAC titles, NCAA win) excluded.",
+    "tags": [
+      "warm",
+      "soccer"
+    ],
+    "facilities": [
+      "CBU Soccer Stadium (opened 2022, over 500 seats, room for over 1,000)",
+      "Hybrid Bermuda pitch, LED lights and a dedicated practice field behind the stadium",
+      "Exercise Science B.S. with a Pre-Physical Therapy course list"
+    ],
+    "courses": [
+      "KIN 264: Movement Anatomy",
+      "BIO 153 and BIO 163: Anatomy and Physiology I and II with laboratories",
+      "KIN 333: Biomechanics",
+      "KIN 383 and KIN 340: Exercise Physiology and laboratory techniques",
+      "KIN 473: Research Methods and Evaluation in Kinesiology",
+      "KIN 433: Sports and Activities Practicum"
+    ],
+    "rec": "California Baptist is a fast-rising program that has just joined the Pac-12. Under an 11th-season head coach it won the 2025 WAC regular-season title, two WAC tournaments (2022 and 2023) and its first NCAA Tournament match win, and it reached its first national ranking last year. The Exercise Science B.S. is a solid academic match with anatomy and physiology labs, biomechanics, exercise physiology and research methods, and it sits in Riverside, an inland Southern California city about an hour from Los Angeles and the beaches. The drawbacks are price (about $55,800 a year before scholarships), a stadium that seats just over 500, and a midfield of 7 in which 5 return for 2027.",
+    "url": "https://cbulancers.com/sports/mens-soccer",
+    "domain": "cbulancers.com",
+    "culture": {
+      "vibe": "California Baptist University is a private Christian university on a 162-acre campus in Riverside's Magnolia Avenue district, with 12,516 students in total and more than 300 international students.",
+      "thingsToDo": "Los Angeles, the beaches and the mountain resorts are within about an hour's drive. The weather is warm through most of the year.",
+      "socialScene": "A faith-based, residential campus with a 5,050-seat events arena and more than 70 clubs. The men's soccer squad of 28 includes players from Cyprus, Austria and the United States.",
+      "olivierMatch": "★★★★ A warm Southern California campus with a real Exercise Science degree and a Pre-PT list, and a program on the rise. Less urban than the coastal schools, and the private price is high.",
+      "lifestyleTags": "Warm inland Southern California, Christian private university, Pac-12 newcomer, Exercise Science B.S."
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "CBU Soccer Stadium opened for the 2022 season with a hybrid Bermuda sod pitch and Musco LED lighting. It holds over 500 fans in the stands, with a berm and standing room for well over 1,000 spectators. It is wired for broadcast and has a covered press box and a Daktronics scoreboard.",
+      "trainingFields": "A new soccer practice field sits directly behind the stadium.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists the head coach, an associate head coach, an assistant and a goalkeeper coach. No video analyst, GPS tracking or sports science staff is named.",
+      "sportsMed": "One athletic trainer is listed, shared with women's water polo and women's golf.",
+      "academicLabs": "The Department of Kinesiology teaches exercise physiology with a laboratory, and the university lists nursing and exercise physiology centers on campus.",
+      "extras": "The stadium hosted the 2022 WAC Tournament, which set a conference attendance record of 1,416.",
+      "note": "A new, purpose-built soccer stadium with lights and a practice field; smaller capacity and thin support staff.",
+      "housing": {
+        "available": true,
+        "note": "California Baptist offers on-campus shared housing at $4,040 to $4,280 a semester, and its cost page prices a first-year residential meal plan."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Stavros Charalampous",
+        "Drew Hardin"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Tizian Marth",
+        "Matteo Costa"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Nico Coope"
+      ],
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from California Baptist's 2026-27 roster, which lists each player's previous team. Only 1 of the 7 midfielders lists a previous college (Matteo Costa, UMass Lowell); the others came from professional club academies (Charalampous from APOEL, Hardin from Inter Miami II, Marth from Admira Wacker) or list none, including two first-year players. Across the whole roster, about 4 of 28 players list a previous college.",
+      "trajectoryNote": "2 of 7 midfielders graduate before 2027 (Charalampous, the 2025 WAC Defender of the Year, and Hardin). Two juniors will be seniors when Olivier arrives, one sophomore will be a junior and two first-years will be sophomores, so five return. Players listed as defender-midfielders or wingers are not counted as midfielders.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

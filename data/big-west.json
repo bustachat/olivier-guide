@@ -2700,5 +2700,259 @@
         "covered": false
       }
     ]
+  },
+  {
+    "id": "sacramentostate",
+    "profileDepth": "full",
+    "name": "Sacramento State",
+    "full": "California State University, Sacramento (Hornets)",
+    "loc": "Sacramento, CA",
+    "div": "D1",
+    "conf": "Big West Conference",
+    "confKey": "big-west",
+    "region": "west",
+    "warm": true,
+    "city": true,
+    "top": false,
+    "color": [
+      "#e6f0ec",
+      "#043927"
+    ],
+    "kinRank": "Very Good (Exercise Science B.S., Health Fitness/Strength Conditioning concentration: anatomy, systemic physiology, biomechanics, exercise physiology, exercise testing and prescription, weight training and motor learning)",
+    "degreeTitle": "B.S. Exercise Science (Health Fitness/Strength Conditioning)",
+    "acuAlign": 10,
+    "acuAlignNote": "Sacramento State's Exercise Science B.S. (Health Fitness/Strength Conditioning concentration, 60 units in the major) is built for students heading to graduate health programs, and its catalog lists chiropractic, sports medicine and athletic training among the careers. The required courses are Basic Biological Concepts (BIO 10), Introductory Human Anatomy (BIO 22), Systemic Physiology (BIO 131), Kinesiology (KINS 151), Biomechanics (KINS 151A), Physiology of Exercise (KINS 152), Fundamentals of Exercise Programs (KINS 152A), Energy Production and Sports Performance (KINS 152S), Analysis of Weight Training and Muscular Fitness (KINS 144), Cardiovascular Testing and Exercise Prescription (KINS 153) and Motor Learning and Control (KINS 158). Those cover anatomy, functional anatomy, general biology, physiology, exercise physiology, exercise prescription, biomechanics, exercise testing, resistance training and motor control. Sport and Exercise Psychology (KINS 160) and the statistics course are only options within the concentration, and there is no required research methods course or field placement, so those units are not counted.",
+    "soccerLevel": "Big West Conference (men's soccer); no conference titles in the last five seasons",
+    "soccerLevelShort": "Big West",
+    "fin": {
+      "costNum": 43998,
+      "tuition": 23786,
+      "roomBoard": 20212,
+      "fees": 0,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Sacramento State direct billed cost $43,998 (2026-27): tuition and mandatory campus fees $9,656 for the year (two semesters at $4,828), published combined, plus the non-resident charge of $471 a unit for a typical 30-unit year ($14,130), together $23,786 and recorded as tuition with fees set to 0; plus the financial aid office's on-campus living expense figure ($20,212), recorded as room and board. Its headline total for living on campus (resident rate) is $36,444, which adds books, transportation and personal expenses; a non-resident student pays the extra non-resident charge on top. Sacramento State costs far less than the private schools in the guide, so even a partial athletic scholarship goes a long way."
+    },
+    "aid": "Athletic",
+    "size": 31307,
+    "prePT": "Very Good: Exercise Science B.S. whose catalog lists chiropractic and sports medicine careers and a Doctor of Physical Therapy program in the same catalog; strong physiology, biomechanics and exercise testing coursework",
+    "prePTShort": "Strong",
+    "gpa": {
+      "minEntry": "3.0 out of 4.0 (or an average of 80% marks) on the high school transcript for international first-year applicants",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Sacramento State's international undergraduate page sets a minimum of 3.0 out of 4.0, or an average of 80% marks, on the high school transcript. Olivier's 2.8 is below that line, so admission would need a favorable conversion of his Australian results confirmed with the international admissions office. The size figure is total fall 2025 enrollment of 31,307 students, which includes graduate students.",
+      "status": "borderline"
+    },
+    "mapX": 79,
+    "mapY": 171,
+    "fitOlivier": 51,
+    "lensScores": {
+      "overall": 51,
+      "soccer": 46,
+      "academic": 68,
+      "minutes": 21,
+      "lifestyle": 100,
+      "value": 37
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "Big West 1-6-2",
+        "note": "2-12-4 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "Big West 3-6",
+        "note": "6-10-2 overall."
+      },
+      {
+        "yr": 2023,
+        "pos": "Big West 1-4-4",
+        "note": "4-10-4 overall."
+      },
+      {
+        "yr": 2022,
+        "pos": "Big West 4-5",
+        "note": "9-8-2 overall."
+      },
+      {
+        "yr": 2021,
+        "pos": "Big West 3-4-2",
+        "note": "5-10-3 overall."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Donovan Sessoms, No. 61 overall in the 2025 SuperDraft (San Diego FC)"
+      ],
+      "draftRank": "One SuperDraft pick in the last five drafts (2025)"
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 58,
+      "fitness": 50
+    },
+    "devScoresNote": "5a rubric, training environment only. Live hornetsports.com men's soccer staff page (2026): Interim HC Matt McDougall + assistants Hector Grajeda and Danny Centeno = 3 coaches, plus an assistant athletic trainer in the support staff; no strength coach, video or GPS staff listed. Facilities: Hornet Field, a permanent stadium since 2002, 1,050 capacity, baby Bermuda grass, shared with women's soccer, new scoreboard 2014 and new locker rooms 2015; it has hosted professional training camps (Newcastle United in 2015). Lights not confirmed. Results excluded.",
+    "tags": [
+      "warm",
+      "city",
+      "soccer"
+    ],
+    "facilities": [
+      "Hornet Field (1,050 capacity, baby Bermuda grass, permanent stadium since 2002)",
+      "New locker rooms (2015) and a 2014 scoreboard",
+      "Exercise Science B.S. with a Health Fitness/Strength Conditioning concentration"
+    ],
+    "courses": [
+      "BIO 22: Introductory Human Anatomy",
+      "BIO 131: Systemic Physiology",
+      "KINS 151A: Biomechanics",
+      "KINS 152: Physiology of Exercise",
+      "KINS 153: Cardiovascular Testing and Exercise Prescription",
+      "KINS 158: Motor Learning and Control"
+    ],
+    "rec": "Sacramento State pairs a strong academic fit with a low price for a U.S. university: an Exercise Science B.S. with a required anatomy, physiology, biomechanics, exercise testing and weight training sequence, a Doctor of Physical Therapy program listed in its catalog, and a total direct cost of about $44,000 a year, in a warm, state-capital city setting. The drawbacks are on the field and in the admission rules: the team has finished near the bottom of the Big West in recent seasons (2-12-4 in 2025), the head coach is interim after a long-serving coach retired in July 2026, the stadium seats 1,050, and a 3.0 high school GPA minimum puts Olivier's 2.8 below the line. Only 4 midfielders are listed as pure midfielders, with 3 returning.",
+    "url": "https://hornetsports.com/sports/mens-soccer",
+    "domain": "hornetsports.com",
+    "culture": {
+      "vibe": "Sacramento State is a public university in California's state capital, with about 31,300 students.",
+      "thingsToDo": "The campus is in Sacramento, California's state capital, in the warm Central Valley.",
+      "socialScene": "A large public campus where most men's soccer players come from California high schools, junior colleges and the Sacramento area, with a few from Haiti and Poland.",
+      "olivierMatch": "★★★ A warm capital-city campus with a strong Exercise Science degree and a low price for a U.S. university. The program has been losing, the coach is interim and the 3.0 GPA line is a barrier.",
+      "lifestyleTags": "Warm state capital, public university, low cost, Exercise Science B.S."
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Hornet Field has been a permanent stadium since July 2002, holds 1,050 and has a baby Bermuda grass surface. It is shared with women's soccer, sits on the northwest corner of campus and has hosted the Sacramento Storm of the Women's Professional Soccer League. Its scoreboard was replaced in 2014 and both teams received new locker rooms in 2015.",
+      "trainingFields": "The athletics site names Hornet Field as the home of men's soccer. No separate training pitch is named.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists an interim head coach and two assistants. No video analyst, GPS tracking or sports science staff is named.",
+      "sportsMed": "The support staff lists an assistant athletic trainer.",
+      "academicLabs": "The Department of Kinesiology teaches the exercise physiology, biomechanics and exercise testing courses in the Exercise Science B.S.",
+      "extras": "The field was a training site for Newcastle United in 2015 and for Mexican professional teams.",
+      "note": "A permanent, international-size stadium with a natural grass pitch; modest capacity and thin staff.",
+      "housing": {
+        "available": true,
+        "note": "Sacramento State's cost of attendance table prices on-campus room and board at $20,212, so on-campus housing is available to new students."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 4,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Gio Ceja"
+      ],
+      "rising_senior_2027_count": 2,
+      "rising_senior_2027_names": [
+        "Hiroshi Yang",
+        "Harrison Emert"
+      ],
+      "rising_junior_2027_count": 1,
+      "rising_junior_2027_names": [
+        "Allbranly Gue"
+      ],
+      "recruit_pathway": "Transfer-preferred",
+      "recruit_pathway_note": "Read from Sacramento State's 2026-27 roster, which lists each player's previous school. 2 of the 4 midfielders list a previous college (Gio Ceja from NC State and Harrison Emert from Highline College). Across the whole roster, 13 of 28 players list a previous college, among them Kentucky, Saint Mary's, Western Oregon, Chico State and four junior colleges.",
+      "trajectoryNote": "1 of 4 midfielders graduates before 2027 (Ceja, a senior). Two juniors will be seniors when Olivier arrives and one sophomore will be a junior. Six more players are listed as combination positions (such as midfield/defender or forward/midfield) and are not counted as midfielders, so the real competition for midfield minutes is larger than the count suggests.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 75,
+          "label": "Established starter"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC120",
+        "covered": true
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

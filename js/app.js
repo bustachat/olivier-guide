@@ -196,6 +196,7 @@ function initApp() {
   renderPipelineTables();
   renderConferencePrestige();
   renderACUTable();
+  renderACUTierSummary();
   renderCoachCards();
   renderCoachTable();
   renderOutreachTracker();
@@ -807,14 +808,35 @@ function logoUrl(u, size){
 function googleFaviconUrl(domain){
   return 'https://www.google.com/s2/favicons?domain=' + domain + '&sz=64';
 }
-function handleLogoError(img){
-  const p = img.parentNode;
-  if(img.dataset.stage !== '2'){
-    img.dataset.stage = '2';
-    img.src = googleFaviconUrl(p.dataset.domain);
-    return;
+// v45.87: ONE icon chain for every surface (Explore card, Details modal, Dashboard
+// shortlist). Before this, the card tried the school's own domain, the modal tried the
+// athletics domain first and the dashboard tried Clearbit first, so the same school could
+// show three different logos. Order: ICON_OVERRIDES, else the school's own domain
+// favicon, then Google's proxy for that domain, then the athletics-site favicon, then
+// initials. Do not give a surface its own chain again.
+function iconChain(u){
+  if(ICON_OVERRIDES[u.id]) return [ICON_OVERRIDES[u.id]];
+  const c = [];
+  if(u.domain) c.push('https://' + u.domain + '/favicon.ico', googleFaviconUrl(u.domain));
+  const ath = DOMAINS[u.id];
+  if(ath && ath !== u.domain) c.push('https://' + ath + '/favicon.ico');
+  return c;
+}
+function iconNext(img, uid, mode){
+  const u = unis.find(x => x.id === uid);
+  const chain = u ? iconChain(u) : [];
+  const i = (parseInt(img.dataset.i || '0', 10)) + 1;
+  if(i < chain.length){ img.dataset.i = i; img.src = chain[i]; return; }
+  if(mode === 'modal'){
+    img.style.display = 'none';
+    const abbr = document.getElementById('modal-abbr');
+    if(abbr) abbr.style.display = 'block';
+  } else if(mode === 'dash'){
+    img.parentNode.innerHTML = '<span style="font-size:9px;font-weight:800;color:var(--muted)">' + (u ? u.name.slice(0,4) : '') + '</span>';
+  } else {
+    const p = img.parentNode;
+    p.innerHTML = '<div class="card-av2" style="background:' + p.dataset.bg + ';color:' + p.dataset.fg + '">' + p.dataset.abbr + '</div>';
   }
-  p.innerHTML = '<div class="card-av2" style="background:'+p.dataset.bg+';color:'+p.dataset.fg+'">'+p.dataset.abbr+'</div>';
 }
 function buildEmblemHtml(u, sizeClass){
   const abbr = u.name.slice(0,4);
@@ -825,7 +847,7 @@ function buildEmblemHtml(u, sizeClass){
   }
   const id = 'emb-'+u.id;
   return '<div class="card-emblem '+sizeClass+'" id="'+id+'" data-abbr="'+abbr+'" data-bg="'+bg+'" data-fg="'+fg+'" data-domain="'+u.domain+'">'+
-    '<img src="'+logoUrl(u)+'" alt="'+u.name+'" onerror="handleLogoError(this)">'+
+    '<img src="'+logoUrl(u)+'" alt="'+u.name+'" onerror="iconNext(this,&quot;'+u.id+'&quot;,&quot;card&quot;)">'+
   '</div>';
 }
 
@@ -1684,34 +1706,14 @@ const SOCIAL = {
 // a real, working favicon that the modal was never trying. Only fall to the
 // Google proxy — and only for the .edu domain, which is far less likely to
 // be broken than the athletics one — as the true last resort before text.
-function handleModalLogoError(img, athDomain, uniDomain){
-  const stage = img.dataset.stage || '0';
-  if(stage === '0' && uniDomain && uniDomain !== athDomain){
-    img.dataset.stage = '1';
-    img.src = 'https://' + uniDomain + '/favicon.ico';
-    return;
-  }
-  if(stage !== '2'){
-    img.dataset.stage = '2';
-    const proxyDomain = uniDomain || athDomain;
-    if(proxyDomain){
-      img.src = googleFaviconUrl(proxyDomain);
-      return;
-    }
-  }
-  img.style.display = 'none';
-  const abbr = document.getElementById('modal-abbr');
-  if(abbr) abbr.style.display = 'block';
-}
 function buildModalHeader(u){
   // Logo / favicon
   const logoEl = document.getElementById('modal-logo');
   const abbrEl = document.getElementById('modal-abbr');
-  const domain = DOMAINS[u.id];
-  const iconSrc = ICON_OVERRIDES[u.id] || (domain ? `https://${domain}/favicon.ico` : (u.domain ? `https://${u.domain}/favicon.ico` : null));
+  const iconSrc = iconChain(u)[0] || null;
   if(iconSrc){
     logoEl.innerHTML = `<img src="${iconSrc}" alt="${u.id}"
-      onerror="handleModalLogoError(this,'${domain||''}','${u.domain||''}')">
+      onerror="iconNext(this,'${u.id}','modal')">
       <span id="modal-abbr" style="display:none;font-size:11px;font-weight:700;color:var(--muted)">${(u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3)}</span>`;
   } else {
     abbrEl.textContent = (u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3);
@@ -2858,11 +2860,15 @@ function renderACUTable() {
         return `<span style="display:inline-block;font-size:10px;font-weight:600;padding:1px 7px;border-radius:5px;margin:2px 2px 0;background:${bg};color:${color}">${u.name}${note}</span>`;
       }).join('');
 
-      const coverageChip = meta.amber
-        ? `<span class="align-pill" style="background:var(--amber3);color:var(--amber)">${meta.coverage}</span>`
-        : meta.partial
-          ? `<span class="align-pill align-strong">${meta.coverage}</span>`
-          : `<span class="align-pill align-full">${meta.coverage}</span>`;
+      // v45.87: coverage is counted from the data. meta.coverage was a hand-typed phrase
+      // (for example "Full at PBA, Indiana, Akron") that went stale after the degree audit.
+      const pct = fullProfiles.length ? covering.length / fullProfiles.length : 0;
+      const coverageText = `${covering.length} of ${fullProfiles.length} programs`;
+      const coverageChip = pct < 0.3
+        ? `<span class="align-pill" style="background:var(--amber3);color:var(--amber)">${coverageText}</span>`
+        : pct < 0.6
+          ? `<span class="align-pill align-strong">${coverageText}</span>`
+          : `<span class="align-pill align-full">${coverageText}</span>`;
 
       return `<tr>
         <td>${meta.unit ? meta.unit + ' — ' : ''}${meta.label}</td>
@@ -2884,6 +2890,45 @@ function renderACUTable() {
       </table>
     </div>`;
   } catch(e) { console.error('renderACUTable failed:', e); }
+}
+
+
+
+// v45.87: the three tier cards at the top of the ACU Alignment tab used to be hand-typed
+// in index.html (school names AND scores). They went stale after the degree audit and
+// never included schools added later, e.g. they listed UC San Diego at 12/16 when its
+// stored acuAlign is 2. They are now computed from the same unis array as the table below.
+function renderACUTierSummary() {
+  try {
+    const box = document.getElementById('acu-tier-cards');
+    if (!box || !Array.isArray(unis) || !unis.length) return;
+    const pool = unis.filter(u => u.profileDepth === 'full' && Array.isArray(u.acuUnits) && !u.juco2yr)
+      .sort((a, b) => (b.acuAlign || 0) - (a.acuAlign || 0) || a.name.localeCompare(b.name));
+    const tiers = [
+      { key: 'full',    label: 'Full alignment (14–16/16 units)',   color: 'var(--emerald)', test: n => n >= 14, lead: 8,
+        blurb: 'The closest structural matches to the ACU BESS: most of the 16 units have a direct required course.' },
+      { key: 'strong',  label: 'Strong alignment (10–13/16 units)', color: 'var(--sky)',     test: n => n >= 10 && n < 14, lead: 8,
+        blurb: 'Core exercise science is covered; some specialist units (motor development, motor control, resistance training) are split across courses or are electives.' },
+      { key: 'partial', label: 'Partial alignment (≤9/16 units)',   color: 'var(--amber)',   test: n => n < 10, lead: 0,
+        blurb: 'Some exercise science or pre-health content is present, but the degree structure differs from the ACU BESS.' },
+    ];
+    const fmt = (u, bold) => (bold ? '<strong>' : '') + u.name + ' (' + u.acuAlign + ')' + (bold ? '</strong>' : '');
+    box.innerHTML = tiers.map(t => {
+      const list = pool.filter(u => t.test(u.acuAlign || 0));
+      const lead = list.slice(0, t.lead).map(u => fmt(u, true));
+      const rest = list.slice(t.lead).map(u => fmt(u, false));
+      let svc = '';
+      const academies = list.filter(u => u.id === 'army' || u.id === 'navy').map(u => u.name);
+      if (academies.length) svc = ' <strong>' + academies.join(' and ') + '</strong> carry a service commitment and are not compatible with the DPT or chiropractic goal.';
+      const body = list.length
+        ? (lead.length ? lead.join(', ') + (rest.length ? '; then ' + rest.join(', ') : '') : rest.join(', '))
+        : 'No programs in this tier.';
+      return '<div style="background:var(--surface);border:1px solid ' + t.color + ';border-radius:12px;padding:1.1rem 1.25rem;">' +
+        '<div style="font-size:11px;font-weight:700;color:' + t.color + ';text-transform:uppercase;letter-spacing:.09em;margin-bottom:6px;">' + t.label + ' — ' + list.length + ' programs</div>' +
+        '<p style="font-size:13px;color:var(--muted);line-height:1.7">' + t.blurb + svc + '</p>' +
+        '<p style="font-size:12px;color:var(--muted);line-height:1.7;margin-top:6px">' + body + '</p></div>';
+    }).join('');
+  } catch (e) { console.error('renderACUTierSummary failed:', e); }
 }
 
 

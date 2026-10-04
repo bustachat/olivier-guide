@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.87 (2026-10-04) — One logo chain on every surface; ACU Alignment tab now computed from the data
+
+**Why:** The owner noticed that Nova SE's logo differed between the Explore card and the Details modal, and that the ACU Alignment tab said "UC San Diego (12)" when UC San Diego has 2 of 16 units.
+
+**Logos.** Three surfaces had three different fallback chains: the card tried the school's own domain then Google, the modal tried the athletics domain first, and the Dashboard shortlist tried Clearbit first. 90 of the 196 schools have different `domain` and `DOMAINS` values, so each could show a different image (Nova SE: nova.edu through Google on the card, nsusharks.com in the modal). All three now call one `iconChain()` / `iconNext()` in `js/app.js`; checked in the browser that card and modal load the same image for Nova SE, UC San Diego, USF, Virginia and Tyler JC.
+
+**ACU Alignment tab.** The three tier cards at the top were hand-typed in `index.html`, with school names and scores that went stale after the degree audit (UC San Diego shown at 12 vs 2 stored; Duke, Georgetown, Northwestern and Cal each shown at 12 vs 3 or 4 stored after the degree audit; PBA shown at 14 vs 10; GCU shown at 14 vs 15) and never included schools added later. They are now built by `renderACUTierSummary()` from the same `unis` array as the table, with live counts: Full 4 programs, Strong 60, Partial 39. The table's "Coverage" column was also a hand-typed phrase per unit (for example "Full at PBA, Indiana, Akron"); it now reads "N of 103 programs" from the data.
+
+**Checked, nothing else found:** a scan of every tab's text for school counts finds only the live figures; `index.html` has no other hand-typed school lists or scores.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0, `node --check` on the changed scripts, browser check of the ACU tab.
+
 ### v45.86 (2026-10-04) — Loose ends from v45.84 and v45.85
 
 **Why:** The owner asked for the 11 follow-up items logged after the two batches to be worked through before starting batch 3. Eight were resolved or corrected; the rest are recorded in CLAUDE.md section 6F.

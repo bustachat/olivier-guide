@@ -61,6 +61,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
@@ -75,6 +76,38 @@ def git_is_clean(relpath):
         return out.stdout.strip() == ""
     except Exception:
         return True  # not a git repo / git unavailable — don't block the test
+
+
+def write_file(target, content, was_clean, attempts=8):
+    """Write `content` to `target`, retrying on transient Windows errors.
+
+    On Windows, open(..., "w") on a large data file can fail with
+    OSError [Errno 22]/PermissionError for a moment after the validator exits
+    (antivirus, the indexer or a file watcher still holding the handle). The
+    restore after a test is the one write that must not fail, so retry with a
+    growing pause. If it still fails and the file was clean in git when the run
+    started, `git checkout` restores it; if the file was dirty (--force), git
+    would discard real work, so save the original beside it and say so instead.
+    """
+    last = None
+    for i in range(attempts):
+        try:
+            with open(target, "w", encoding="utf-8", newline="") as fh:
+                fh.write(content)
+            return
+        except OSError as e:
+            last = e
+            time.sleep(0.25 * (i + 1))
+    rel = os.path.relpath(target, ROOT)
+    if was_clean:
+        r = subprocess.run(["git", "checkout", "--", rel], cwd=ROOT, capture_output=True, text=True)
+        if r.returncode == 0:
+            print(f"  !! could not write {rel} after {attempts} tries ({last}); restored it with git checkout instead")
+            return
+    backup = target + ".negtest-original"
+    with open(backup, "w", encoding="utf-8", newline="") as fh:
+        fh.write(content)
+    raise RuntimeError(f"could not write {rel} ({last}); the original content is saved at {backup}")
 
 
 def run_validator():
@@ -104,6 +137,7 @@ def one_case(case, occurrences, force):
                 f"{rel} has uncommitted changes — commit or stash first, or pass --force "
                 f"(this guard exists so a crash cannot lose your work)", None)
 
+    was_clean = git_is_clean(rel)
     original = open(target, encoding="utf-8", newline="").read()
     try:
         mutated = original.replace(case["find"], case.get("replace", ""), occurrences)
@@ -116,7 +150,7 @@ def one_case(case, occurrences, force):
                     "this test proved NOTHING. Check whitespace/indentation — v44.50's first "
                     "negative test failed exactly here (6-space patch, 4-space file).", None)
 
-        open(target, "w", encoding="utf-8", newline="").write(mutated)
+        write_file(target, mutated, was_clean)
         text, issues = run_validator()
         expect = case["expect"]
         fired = f"[{expect}]" in text or expect in text
@@ -128,7 +162,7 @@ def one_case(case, occurrences, force):
                 f"the check does not cover this case", issues)
     finally:
         # Always restore, even on exception or KeyboardInterrupt.
-        open(target, "w", encoding="utf-8", newline="").write(original)
+        write_file(target, original, was_clean)
 
 
 def main():

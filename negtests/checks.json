@@ -187,5 +187,12 @@
     "find": "\"mlsPicksByYear\": {\r\n      \"2022\": 21,",
     "replace": "\"mlsPicksByYear\": {\r\n      \"2022\": \"lots\",",
     "expect": "GROUP"
+  },
+  {
+    "name": "STATIC-SCORE / a school score typed by hand into index.html",
+    "file": "index.html",
+    "find": "<h2>ACU Units — Which US Programs Cover Each</h2>",
+    "replace": "<h2>ACU Units — Which US Programs Cover Each: Stanford (13)</h2>",
+    "expect": "STATIC-SCORE"
   }
 ]

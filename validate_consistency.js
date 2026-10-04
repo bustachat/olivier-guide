@@ -768,6 +768,24 @@ for (const [file, src] of PROSE_SOURCES) {
   }
 }
 
+// ── STATIC-SCORE (added v45.87): no hand-typed "School (score)" in page text ──────────
+// The ACU Alignment tab's three tier cards were typed by hand in index.html ("Stanford
+// (13), ... UC San Diego (12)"). The degree audit then moved UC San Diego to 2/16, Duke
+// to 4 and Georgetown to 3, and nothing noticed, because no check reads PAGE TEXT against
+// the data. Any "<guide school name> (NN)" or "(NN/16)" or "(NN%)" in index.html's
+// visible text is a stored value typed by hand and will go stale, so it fails. Scores
+// shown to the visitor must be built from `unis` at render time. Scope: index.html only
+// (the renderers in js/ legitimately build "Name (score)" from the data).
+{
+  const names = [...new Set(schools.map(s => s.name).filter(n => n && n.length >= 3))]
+    .sort((a, b) => b.length - a.length)
+    .map(n => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const visible = indexhtml.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<!--[\s\S]*?-->/g, ' ').replace(/<[^>]+>/g, ' ');
+  const re = new RegExp(String.raw`(?:^|[^A-Za-z])(` + names.join('|') + String.raw`)\s*\((\d{1,3})(?:/16|%)?\)`, 'g');
+  const hits = [...visible.matchAll(re)].map(m => m[1] + ' (' + m[2] + ')');
+  if (hits.length) note('STATIC-SCORE', `index.html types a school score by hand (${hits.slice(0, 4).join(', ')}${hits.length > 4 ? ', ...' : ''}) — build it from unis at render time`);
+}
+
 // ── CHIPS (added v44.45): every school must land in a conference filter chip ──
 // The Explore conference filter row is built by renderFilterChips() from each
 // school's `conf` string via resolveConfGroup(). Two silent failure modes, both

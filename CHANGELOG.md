@@ -6,6 +6,16 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.91 (2026-10-04) — Add Gonzaga (Pac-12)
+
+**Why:** The last school of the Pac-12 gap on the Division I list (208 to 209 schools, 209 coaches). Gonzaga plays men's soccer in the Pac-12 from 2026 (West Coast Conference before that), and it was listed under "other schools" on both the Pac-12 and WCC cards.
+
+**Added (`d1-other.json`):** fit 38, the lowest of the recent additions because Spokane is neither warm nor a large city. Coach Chris McGaughey (named November 2025, Tyler JC national champion goalkeeper, four seasons in the Irish Premiership, score 54). Human Physiology B.S., `acuAlign` 7 (Gonzaga's kinesiology program sits in its school of education and was not scored). Cost $76,670. International first-year applicants need a 3.2 GPA, so Olivier's 2.8 is below the line. Draft pick Ben Augee (No. 80, 2025). 7 midfielders, 4 leaving. Removed from the Pac-12 and WCC cards' "other schools" lists; coach, pipeline row, map dot (checked on land), domain, site and social entries and reference-table row added.
+
+**Notes:** The 2023 season page on the athletics site returns the current season, so 2023 was read from the `2023-24` page (3-9-6, WCC 1-5-1). Gonzaga's roster page lists hometowns only, so `recruit_pathway` is left unset.
+
+**Validation:** `validate_schools.py` pass (209 schools), `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass, local browser check (209 schools load, map dot on land, modal opens with no undefined or NaN).
+
 ### v45.90 (2026-10-04) — Batch 5: FGCU, North Florida, Jacksonville and Stetson (ASUN, Florida)
 
 **Why:** Sixth batch from the Division I gap list, the four warm-climate Florida programs in the ASUN (204 to 208 schools, 208 coaches). The ASUN card now lists these four as guide schools automatically.

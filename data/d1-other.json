@@ -7600,5 +7600,257 @@
         "covered": false
       }
     ]
+  },
+  {
+    "id": "gonzaga",
+    "profileDepth": "full",
+    "name": "Gonzaga",
+    "full": "Gonzaga University (Bulldogs)",
+    "loc": "Spokane, WA",
+    "div": "D1",
+    "conf": "Pac-12 Conference",
+    "confKey": "pac-12",
+    "region": "west",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#e8edf5",
+      "#041e42"
+    ],
+    "kinRank": "Good (Human Physiology B.S.: two-semester anatomy and physiology, musculoskeletal dynamics, biomechanics and exercise physiology with labs, and a guided research sequence)",
+    "degreeTitle": "B.S. Human Physiology",
+    "acuAlign": 7,
+    "acuAlignNote": "Gonzaga's kinesiology program sits in its school of education, so this guide scores the Bachelor of Science in Human Physiology (68 credits in the major), which carries the anatomy, biomechanics and exercise physiology laboratories. The required courses are Human Anatomy and Physiology I and II with labs (HPHY 241 and 242), Musculoskeletal Dynamics and Physiology (HPHY 274), Biomechanics with a lab (HPHY 375), Exercise Physiology with a lab (HPHY 376), Information Flow in Biological Systems with a lab (BIOL 105), Experimental Design and Statistics (HPHY 205), Scientific Writing (HPHY 210), and Guided Experimental Design, Guided Research and a Culminating Experience (HPHY 441L, 442L and 499), plus chemistry and physics series. Those cover anatomy, functional anatomy, general biology, physiology, exercise physiology, biomechanics and research methods. No exercise prescription, resistance training, sport psychology, motor control or motor development course is required, and there is no required internship, so those units are not counted.",
+    "soccerLevel": "Pac-12 Conference from 2026 (West Coast Conference before that); no winning conference record in the last five seasons",
+    "soccerLevelShort": "Pac-12",
+    "fin": {
+      "costNum": 76670,
+      "tuition": 58390,
+      "roomBoard": 17160,
+      "fees": 1120,
+      "maxAthletic": 1.0,
+      "maxAcademic": 0,
+      "aidType": "athletic",
+      "internationalNote": "Gonzaga direct billed cost $76,670 (2026-27, the 'total direct costs' row of its cost of attendance table for a student living on campus): tuition $58,390 + required fees $1,120 + housing ($8,940, a weighted average of double rooms) and food ($8,220, the most used meal plan), recorded together as room and board ($17,160). Its headline total is $82,689, which adds books, loan fees, personal expenses and transportation. Gonzaga is very expensive, so the size of the athletic scholarship matters a great deal."
+    },
+    "aid": "Athletic",
+    "size": 4993,
+    "prePT": "Good: Human Physiology B.S. with anatomy and physiology, musculoskeletal dynamics, biomechanics and exercise physiology with labs and a research sequence",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "3.2 cumulative GPA for international first-year applicants, with junior year no lower than 3.1",
+      "minSchol": "No merit minimum found; athletic scholarship is the main route",
+      "note": "Gonzaga's international first-year checklist asks for a 3.2 cumulative GPA with junior year no lower than 3.1, and its incoming class averages about a 3.7 unweighted GPA, so Olivier's 2.8 is below the line and would need a favorable conversion of his Australian results and a strong athletic case. The size figure is the 4,993 undergraduates on its FAQ page.",
+      "status": "below"
+    },
+    "mapX": 116,
+    "mapY": 70,
+    "fitOlivier": 38,
+    "lensScores": {
+      "overall": 38,
+      "soccer": 48,
+      "academic": 52,
+      "minutes": 38,
+      "lifestyle": 0,
+      "value": 23
+    },
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "WCC 2-5-2",
+        "note": "5-8-3 overall, the most WCC points in five seasons, ending with a 5-1 win over LMU. Ben Augee was drafted by FC Cincinnati."
+      },
+      {
+        "yr": 2024,
+        "pos": "WCC 0-8-0",
+        "note": "6-10-2 overall."
+      },
+      {
+        "yr": 2023,
+        "pos": "WCC 1-5-1 (7th)",
+        "note": "3-9-6 overall."
+      },
+      {
+        "yr": 2022,
+        "pos": "WCC 0-4-3",
+        "note": "4-11-3 overall."
+      },
+      {
+        "yr": 2021,
+        "pos": "WCC 2-5",
+        "note": "7-10 overall."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 1,
+      "notable": [
+        "Ben Augee, a midfielder, No. 80 overall (round 3, pick 20) in the 2025 SuperDraft (FC Cincinnati), who began at Grand Canyon before transferring to Gonzaga"
+      ],
+      "draftRank": "One SuperDraft pick in the last five drafts (2025)"
+    },
+    "devScores": {
+      "tactical": 60,
+      "technical": 62,
+      "fitness": 52
+    },
+    "devScoresNote": "5a rubric, training environment only. Live gozags.com men's soccer staff page (2026): HC Chris McGaughey + assistants Christo Michaelson (recruiting coordinator) and Bryan Hernandez = 3 coaches; no athletic trainer, strength coach, video or GPS staff listed on the program page. Facilities: Luger Field, a soccer-only complex opened in 2008 with a practice field, 1,500 capacity, lights added in 2016 and a videoboard in 2017; the main grandstands, locker rooms and concessions are listed as future phases. McGaughey played goalkeeper at Tyler JC (2012 NJCAA champions), UMKC and in the Irish Premiership. Results excluded.",
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Luger Field (soccer-only, 1,500 capacity, lights added 2016)",
+      "Adjacent practice field and a videoboard",
+      "Human Physiology B.S. with biomechanics and exercise physiology labs"
+    ],
+    "courses": [
+      "HPHY 241 and 242: Human Anatomy and Physiology I and II with labs",
+      "HPHY 274: Musculoskeletal Dynamics and Physiology",
+      "HPHY 375: Biomechanics with lab",
+      "HPHY 376: Exercise Physiology with lab",
+      "HPHY 441L and 442L: Guided Experimental Design and Guided Research"
+    ],
+    "rec": "Gonzaga is a well-known private Jesuit university with a soccer-only field that has lights and a practice pitch, a human physiology major with real biomechanics and exercise physiology labs, and a head coach, Chris McGaughey, who was a Tyler JC national champion and Irish Premiership goalkeeper. The drawbacks are large for Olivier: Spokane is cold and not a big city, the price is about $76,700 a year before scholarships, the international GPA line is 3.2, and the Bulldogs have not had a winning conference record in five seasons. The midfield has 7 midfielders with 4 leaving, and the program has just joined the Pac-12.",
+    "url": "https://gozags.com/sports/mens-soccer",
+    "domain": "gozags.com",
+    "culture": {
+      "vibe": "Gonzaga is a private Jesuit university in Spokane, Washington, with about 5,000 undergraduates.",
+      "thingsToDo": "Spokane has the Spokane River, nearby lakes and mountains, with cold winters and warm dry summers.",
+      "socialScene": "A small residential Jesuit campus. The men's soccer squad of 28 is mostly from the Pacific Northwest and the West, with players from Canada, Iceland and the Netherlands.",
+      "olivierMatch": "★★ A well-regarded school with a good physiology degree, but cold, not a big city, very expensive and with a 3.2 GPA line.",
+      "lifestyleTags": "Cold Pacific Northwest, Jesuit private university, Human Physiology B.S., Pac-12 newcomer"
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Luger Field opened in 2008 as the first of four planned phases and has a main field, a practice field, a plaza, a press box, a ticket booth and berms. Lights were added in 2016 and a 24-by-12-foot videoboard in 2017, and the capacity is listed at 1,500. The main grandstands, locker rooms, concessions and restrooms are described as future phases.",
+      "trainingFields": "A practice field was built with the main field in the first phase.",
+      "strengthConditioning": "No strength coach is listed on the men's soccer staff page.",
+      "sportsScience": "The staff page lists a head coach and two assistants. No video analyst, GPS tracking or sports science staff is named.",
+      "sportsMed": "No athletic trainer is listed on the men's soccer staff page.",
+      "academicLabs": "The Department of Human Physiology teaches biomechanics and exercise physiology with laboratory sections.",
+      "extras": "Lights (2016) and a videoboard (2017) were added after the original build.",
+      "note": "A soccer-only field with lights and a practice pitch; the grandstands and locker rooms are still planned and no support staff are named.",
+      "housing": {
+        "available": true,
+        "note": "Gonzaga's cost of attendance table prices on-campus housing at $8,940 and food at $8,220, so on-campus housing is available to new students."
+      }
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 7,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 4,
+      "cleared_names": [
+        "Jon Hjaltason",
+        "Noah Ervin",
+        "Jelle Van Deijck",
+        "Morgan Olson"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Chase Potter"
+      ],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Nico Golesis",
+        "Carlos Murillo Pavon"
+      ],
+      "trajectoryNote": "4 of 7 midfielders graduate before 2027, two of them fifth-year players. One junior will be a senior when Olivier arrives and two sophomores will be juniors, so the group opens up. Seven more players are listed with combined positions (defender-midfielder or midfielder-forward) and are not counted, and the roster page lists hometowns rather than previous colleges, so it is not possible to say how many players arrived as transfers.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 50,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 70,
+          "label": "Established starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 85,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_risk": "Medium"
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ]
   }
 ]

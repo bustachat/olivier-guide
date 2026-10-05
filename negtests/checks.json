@@ -114,8 +114,8 @@
   {
     "name": "ROSTER-PROSE / school text quotes an old midfield size",
     "file": "data/d2.json",
-    "find": "Of the 9 midfielders on the 2026-27 roster, 4 clear",
-    "replace": "4 of 12 midfielders clear",
+    "find": "On the 2026-27 roster, 4 of 10 midfielders finish",
+    "replace": "On the 2026-27 roster, 4 of 12 midfielders finish",
     "expect": "ROSTER-PROSE"
   },
   {

@@ -1,0 +1,244 @@
+{
+  "schoolId": "memphis",
+  "schoolFile": "data/aac.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gotigersgo.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Logan Haddad",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-So.",
+      "hometown": "Memphis, Tenn. / St. George's Independent School",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Kasin",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Jacksonville, Fla. / EdOptions Academy",
+      "previousSchool": "Georgia Southwestern State"
+    },
+    {
+      "name": "Mathias Christensen",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Assentoft, Denmark / Paderup Gymnasium",
+      "previousSchool": "Snow College"
+    },
+    {
+      "name": "Zackarya Oumamass",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Montreal, Quebec, Canada /",
+      "previousSchool": "Otero College"
+    },
+    {
+      "name": "Daman Sangha",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Jr.",
+      "hometown": "Gilbertsville, Pa. / Boyertown Area Senior HS",
+      "previousSchool": "South Carolina | Duquesne"
+    },
+    {
+      "name": "Junior Saint Juste",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Port-au-Prince, Haiti / James Madison HS",
+      "previousSchool": "South Carolina"
+    },
+    {
+      "name": "Ethan Cook",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Ballston Spa, N.Y. / Ballston Spa HS",
+      "previousSchool": "UAlbany"
+    },
+    {
+      "name": "Henrique Cruz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "São Paulo, S.P., Brazil / EE Padre Saboia De Medeiros",
+      "previousSchool": "Barton County CC | ETSU"
+    },
+    {
+      "name": "Miller Lashlee",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Byhalia, Miss. / Lewisburg HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Saad Chaouki",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Montreal, Quebec, Canada / Antoine de Saint Exupery",
+      "previousSchool": "Rider | Portland"
+    },
+    {
+      "name": "Renan Syrio",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Taubaté, São Paulo, Brazil / E.E. Joao Cursino",
+      "previousSchool": "Cowley College"
+    },
+    {
+      "name": "Eben McIntyre",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-Sr.",
+      "hometown": "Charleroi, Pa. / Charleroi HS",
+      "previousSchool": "Pittsburgh"
+    },
+    {
+      "name": "Keanan Bader",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Apex, N.C. / Crossroads FLEX",
+      "previousSchool": "UNCG | South Carolina"
+    },
+    {
+      "name": "Carson Banham",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Tulsa, Okla. / Summit Christian Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Ruguaru",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Memphis, Tenn. / Lausanne Collegiate School",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas Mancuso",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Greensboro, N.C. / Shawnee Mission East HS (Kan.)",
+      "previousSchool": "Holy Cross"
+    },
+    {
+      "name": "Marko Stajnko",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Bregenz, Austria / Landesberufsschule Bregenz 2",
+      "previousSchool": "Otero College"
+    },
+    {
+      "name": "Anthony Grudko",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Simpsonville, S.C. / Hillcrest School",
+      "previousSchool": null
+    },
+    {
+      "name": "Kynu Samuels",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Toronto, Ontario, Canada / Emery Collegiate Institute",
+      "previousSchool": "Georgia Southwestern State"
+    },
+    {
+      "name": "Alessandro Peruz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Calzalo di Cadore, Italy / Istituto Enrico Fermi",
+      "previousSchool": "Indian Hills CC"
+    },
+    {
+      "name": "Ignacio Escamilla",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Bolingbrook, Ill. / Bolingbrook HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Joshua Owens",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Alabaster, Ala. / Hoover-Vestavia Soccer",
+      "previousSchool": "Montevallo"
+    },
+    {
+      "name": "Arlo McIntyre",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Charleroi, Pa. / Charleroi HS",
+      "previousSchool": "Pitt-Greensburg"
+    },
+    {
+      "name": "Dino Stavros",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Atlanta, Ga. / South Forsyth HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Piccolotto",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Hamilton, Ontario, Canada / St. John Henry Newman Catholic Secondary",
+      "previousSchool": "Malone"
+    },
+    {
+      "name": "Mathias Krohnstad",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Geneva, Switzerland /",
+      "previousSchool": "Old Dominion"
+    },
+    {
+      "name": "Ben Mulrooney",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "McKinney, Texas / McKinney North HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jin Tokishi",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Fukuoka, Japan / Oki Gakuen HS",
+      "previousSchool": "Cowley College"
+    },
+    {
+      "name": "Reuben Edgecombe",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Nassau, Bahamas / The Webb School",
+      "previousSchool": null
+    }
+  ]
+}

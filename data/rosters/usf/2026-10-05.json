@@ -1,0 +1,236 @@
+{
+  "schoolId": "usf",
+  "schoolFile": "data/aac.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gousfbulls.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Eric Axtman",
+      "position": "GK",
+      "positionAsListed": "G",
+      "class": "Gr.",
+      "hometown": "Harrisburg, Penn.",
+      "previousSchool": "Lafayette University"
+    },
+    {
+      "name": "Micah Harris",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Missouri City, Texas / Lawrence E. HS and Online Texas Connections Academy",
+      "previousSchool": "Houston Dynamo MLS Next Pro"
+    },
+    {
+      "name": "Felipe Cobian",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Montclair, Calif. / Montclair HS",
+      "previousSchool": "California Connections Academy ; Grand Canyon University"
+    },
+    {
+      "name": "Charles Volcy",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Montreal, Quebec, Canada / Antoine-de-Saint-Exupéry",
+      "previousSchool": "Grand Canyon University ; CF Montreal"
+    },
+    {
+      "name": "Anthony Frasca",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Toronto, Canada",
+      "previousSchool": "Woodbridge Soccer Club"
+    },
+    {
+      "name": "Luka Zujovic",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Tampa, Fla. / Tampa Prep",
+      "previousSchool": "Florida Premier FC ECNL"
+    },
+    {
+      "name": "Geoffrey Oyaka",
+      "position": "F",
+      "positionAsListed": "WF",
+      "class": "Fr.",
+      "hometown": "Kampala, Uganda",
+      "previousSchool": "Uganda Christian University"
+    },
+    {
+      "name": "Pedro Faife",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Miami, Fla. / Miami Senior HS",
+      "previousSchool": "Inter Miami CF MLS Next Pro"
+    },
+    {
+      "name": "Giovanni Cadore",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Santa Cruz De La Sierra, Bolivia",
+      "previousSchool": "Club Blooming"
+    },
+    {
+      "name": "Diego Sanchez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Chino Valley, Ariz. / ASU Preparatory Academy",
+      "previousSchool": "Grand Canyon University ; Barca Residency Academy"
+    },
+    {
+      "name": "Max Kiefer",
+      "position": "F",
+      "positionAsListed": "WF",
+      "class": "So.",
+      "hometown": "Wake Forest, N.C. / Heritage High School",
+      "previousSchool": "Grand Canyon University ; North Carolina FC Academy"
+    },
+    {
+      "name": "Jakob Auby",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Sarpsborg, Norway",
+      "previousSchool": "Sarpsborg FK"
+    },
+    {
+      "name": "Tyler Richardson",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Sr.",
+      "hometown": "Jacksonville, Fla. / Ponte Vedra HS",
+      "previousSchool": "Jacksonville FC MLS Next"
+    },
+    {
+      "name": "Jack Kiefer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Wake Forest, N.C. / Heritage High School",
+      "previousSchool": "Grand Canyon University ; North Carolina FC Academy"
+    },
+    {
+      "name": "Dominic Wilson",
+      "position": "F",
+      "positionAsListed": "WF",
+      "class": "So.",
+      "hometown": "Mechanicsburg, Penn. / Cumberland Valley",
+      "previousSchool": "Nashville SC MLS Next ; Huntsville MLS Next Pro"
+    },
+    {
+      "name": "Micah Williams",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "North Lauderdale, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Matheo Becerra",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Santa Cruz De La Sierra, Bolivia",
+      "previousSchool": "Club Blooming"
+    },
+    {
+      "name": "Serigne Diallo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Thies, Senegal / Northfield Mount Hermon",
+      "previousSchool": "Grand Canyon University"
+    },
+    {
+      "name": "Liam Healy",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Bluffton, S.C. / Bluffton",
+      "previousSchool": "Grand Canyon University"
+    },
+    {
+      "name": "Gianluca Vecchiarelli",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Toronto, Canada",
+      "previousSchool": "Woodbridge Soccer Club"
+    },
+    {
+      "name": "Ilay Bracha",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Givatayim, Israel / Ort Givatayim",
+      "previousSchool": "FC Beitar"
+    },
+    {
+      "name": "Marcelo Mondragon",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Pembroke Pines, Fla. / Pembroke Pines Charter",
+      "previousSchool": "Real Monarchs MLS Next Pro"
+    },
+    {
+      "name": "Rotem Garama",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Ahiezer, Israel / Makif Yehud",
+      "previousSchool": "Hapoel Ramat Hasharon"
+    },
+    {
+      "name": "Abeselom Zemenfes",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Mekelles, Ethiopia",
+      "previousSchool": "Western Oregon University"
+    },
+    {
+      "name": "Baden Wandling",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Clark, N.J. / St. Benedicts Prep School",
+      "previousSchool": "Grand Canyon University"
+    },
+    {
+      "name": "Mikey Guiry",
+      "position": "GK",
+      "positionAsListed": "G",
+      "class": "So.",
+      "hometown": "Jacksonville, Fla. / Fletcher High School",
+      "previousSchool": "United States Military Academy ; Jacksonville FC MLS Next"
+    },
+    {
+      "name": "Marcus Steinhaeuser",
+      "position": "GK",
+      "positionAsListed": "G",
+      "class": "So.",
+      "hometown": "Miami, Fla. / Bishop McCarthy",
+      "previousSchool": "St. Louis University ; Inter Miami MLS Next Pro"
+    },
+    {
+      "name": "Alexis Martin",
+      "position": "GK",
+      "positionAsListed": "G",
+      "class": "Fr.",
+      "hometown": "Montreal, Quebec, Canada /",
+      "previousSchool": "CF Montreal"
+    }
+  ]
+}

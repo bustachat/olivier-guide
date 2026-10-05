@@ -1,0 +1,236 @@
+{
+  "schoolId": "charlotte",
+  "schoolFile": "data/aac.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://charlotte49ers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Eli Mumford",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Jr.",
+      "hometown": "Chapel Hill, N.C.",
+      "previousSchool": "Pittsburgh"
+    },
+    {
+      "name": "Alex Svetanoff",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Sr.",
+      "hometown": "Crown Point, Ind.",
+      "previousSchool": null
+    },
+    {
+      "name": "Xavier Holloway",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Waterford, Conn.",
+      "previousSchool": "Saint Louis"
+    },
+    {
+      "name": "Diogo Veloso",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Torres Vedras, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Andreas Evangelou",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Jr.",
+      "hometown": "Nicosia, Cyprus",
+      "previousSchool": "Omonia Nicosia"
+    },
+    {
+      "name": "Vilmer Brunskog",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Oslo, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Diogo Fazenda",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Portimão, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Francou",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Melbourne, Australia",
+      "previousSchool": "Hofstra"
+    },
+    {
+      "name": "Larry Noel",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Santa Cruz, Trinidad and Tobago",
+      "previousSchool": "Marshall"
+    },
+    {
+      "name": "Natsuki Ogata",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Osaka, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Caue Zanardi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Sao Paolo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Manufor",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "London, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Gilbert Eminem Daru",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Charlotte, N.C.",
+      "previousSchool": "Davis and Elkins"
+    },
+    {
+      "name": "Eirikur Beck",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Kopavogur, Iceland",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Willcox",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Charleston, S.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "James Nyandjo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Huntersville, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Wiktor Pucilowski",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Wroclaw, Poland",
+      "previousSchool": null
+    },
+    {
+      "name": "Ramie Tita",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Durham, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mikey Raggett",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Kilkenny, Ireland",
+      "previousSchool": null
+    },
+    {
+      "name": "Isak Atlason",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Hafnarfjordur, Iceland",
+      "previousSchool": null
+    },
+    {
+      "name": "Landon Petz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Cary, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Fisher",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R-Sr.",
+      "hometown": "Alexandria, Va.",
+      "previousSchool": "Virginia Tech"
+    },
+    {
+      "name": "Luc Lavielle",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Cary, N.C.",
+      "previousSchool": "Campbell"
+    },
+    {
+      "name": "Tom Carmeli",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Ramat Hasharon, Israel",
+      "previousSchool": null
+    },
+    {
+      "name": "Tate Asante",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Calgary, Canada",
+      "previousSchool": "Calvary FC"
+    },
+    {
+      "name": "Zachary Schweighardt",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Hickory, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Elias Arsvoll",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Bryne, Norway",
+      "previousSchool": "Bryne FK"
+    },
+    {
+      "name": "Khadim Diop",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Manchester, England",
+      "previousSchool": null
+    }
+  ]
+}

@@ -193,7 +193,8 @@
           "pct": 80,
           "label": "Captain candidate"
         }
-      ]
+      ],
+      "trajectoryNote": "On the 2026-27 roster, 3 of 7 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 1 will be a junior and 2 will be sophomores."
     },
     "profileDepth": "full",
     "confKey": "aac",
@@ -204,13 +205,13 @@
       {
         "name": "Dannie Merida",
         "role": "Associate Head Coach",
-        "email": "",
+        "email": "dmerida@fiu.edu",
         "bg": "Full-time associate HC. Player development and recruitment."
       },
       {
         "name": "Matteo Gasperoni",
         "role": "Assistant Coach",
-        "email": "",
+        "email": "mgaspero@fiu.edu",
         "bg": "Full-time assistant. Tactical and technical development."
       },
       {
@@ -446,7 +447,7 @@
         "Luka Zujovic",
         "Diego Sanchez",
         "Jakob Auby",
-        "Abeselom Weldegiorgis"
+        "Abeselom Zemenfes"
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
@@ -476,7 +477,8 @@
           "pct": 75,
           "label": "Established starter"
         }
-      ]
+      ],
+      "trajectoryNote": "On the 2026-27 roster, 2 of 7 midfielders finish before Olivier arrives in August 2027. In his first season, none will be seniors, 4 will be juniors and 1 will be a sophomore."
     },
     "profileDepth": "full",
     "confKey": "aac",
@@ -487,26 +489,26 @@
       {
         "name": "Daniel De Oliveira",
         "role": "Associate Head Coach",
-        "email": "",
+        "email": "msoccer@usf.edu",
         "bg": "Joined from GCU where he helped win 2025 WAC title and reach NCAA Sweet 16 under Kiefer."
       },
       {
         "name": "Armanté Marshall",
         "role": "Associate Head Coach",
-        "email": "",
+        "email": "msoccer@usf.edu",
         "bg": "Former USF player under Kiefer first tenure (2007-09). Was Director of Operations under previous staff. Stayed on in new role."
       },
       {
         "name": "AJ Madero",
         "role": "Assistant Coach",
-        "email": "",
+        "email": "msoccer@usf.edu",
         "bg": "Joined from GCU. Was part of 2025 WAC championship and NCAA Sweet 16 staff."
       },
       {
-        "name": "Rima El Brouzi",
+        "name": "Kendall Kiefer",
         "role": "Director of Operations",
-        "email": "",
-        "bg": "Program operations."
+        "email": "kendallkiefer@usf.edu",
+        "bg": "Director of Operations."
       }
     ],
     "acuUnits": [
@@ -721,14 +723,32 @@
       {
         "name": "Tom McIntosh",
         "role": "Head Coach",
-        "email": "tmmcintosh@utulsa.edu",
+        "email": "",
         "bg": "Head Coach. 2025 AAC Semifinalist. Building consistent mid-AAC program."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Brian McCurdy",
+        "role": "Associate Head Coach",
+        "email": "brian-mccurdy@utulsa.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Henry Sach",
         "role": "Assistant Coach",
-        "email": "msoccer@utulsa.edu",
-        "bg": "Full-time assistant."
+        "email": "hms7580@utulsa.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Daniyal Rana",
+        "role": "Goalkeeper Coach",
+        "email": "dar4690@utulsa.edu",
+        "bg": "Goalkeeper Coach."
+      },
+      {
+        "name": "Joao Neves",
+        "role": "Graduate Assistant",
+        "email": "jpn3497@utulsa.edu",
+        "bg": "Graduate Assistant."
       }
     ],
     "rec": "Warm Oklahoma city. Small private university with strong scholarship offers. Mid-tier AAC soccer.",
@@ -754,7 +774,7 @@
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 tulsahurricane.com roster (7 MFs of 29, up from 8 empty on the previous check — the site had been showing a coaching-staff-only page). Only 1 of 7 MFs lists a previous college (Luc Achermann-Stanfield, a transfer from Eastern Florida State — also in this guide); the rest arrived direct. Freshman-friendly classification reconfirmed.",
+      "recruit_pathway_note": "On the 2026-27 tulsahurricane.com roster (7 midfielders in a squad of 28), 2 of the 7 list a previous college: Luc Achermann-Stanfield (Eastern Florida State, also in this guide) and Quentin Christey (Syracuse). The other 5 arrived direct from high school, including both freshmen. Most midfield places still go to first-year recruits.",
       "trajectory": [
         {
           "year": 2027,
@@ -895,14 +915,14 @@
     },
     "mapX": 425,
     "mapY": 231,
-    "fitOlivier": 60,
+    "fitOlivier": 62,
     "lensScores": {
-      "overall": 60,
+      "overall": 62,
       "soccer": 46,
       "academic": 68,
-      "minutes": 48,
+      "minutes": 53,
       "lifestyle": 100,
-      "value": 51
+      "value": 52
     },
     "confRecord": [
       {
@@ -992,16 +1012,22 @@
     ],
     "staff": [
       {
-        "name": "Head Coach",
+        "name": "Richard Mulrooney",
         "role": "Head Coach",
-        "email": "soccer@memphis.edu",
+        "email": "",
         "bg": "Memphis head coach. Building AAC program in warm Southern city."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Tony McManus",
+        "role": "Associate Head Coach",
+        "email": "pmcmnus1@memphis.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Tom Gorman",
         "role": "Assistant Coach",
-        "email": "soccer@memphis.edu",
-        "bg": "Full-time assistant."
+        "email": "igorman@memphis.edu",
+        "bg": "Assistant Coach."
       }
     ],
     "rec": "Best value in the AAC. Warm city. Low academic bar. Soccer is competitive enough for development.",
@@ -1009,19 +1035,20 @@
     "domain": "memphis.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 10,
+      "mf_total": 11,
       "roster_season": "2026-27",
       "cleared_before_2027": 5,
       "cleared_names": [
         "Henrique Cruz",
-        "Christian Piccolotto",
         "Saad Chaouki",
         "Keanan Bader",
-        "Joshua Owens"
+        "Joshua Owens",
+        "Christian Piccolotto"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
         "Thomas Mancuso",
+        "Kynu Samuels",
         "Alessandro Peruz"
       ],
       "rising_junior_2027_count": 3,
@@ -1032,19 +1059,19 @@
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Portal/JUCO-heavy",
-      "recruit_pathway_note": "8 of 10 current MFs (80%) on the live 2026-27 gotigersgo.com roster list a previous college, including 2 sourced from JUCO (Barton County CC, Indian Hills CC) and 6 from 4-year programs (ETSU, Rider/Portland, UNCG/South Carolina, Holy Cross, Montevallo, Malone, Old Dominion). Only 2 MFs (Grudko, Escamilla) have no prior college. Reclassified from Transfer-preferred on this read: the intake is portal-dominated with live JUCO recruiting, not just 4-year transfer preference.",
+      "recruit_pathway_note": "On the 2026-27 gotigersgo.com roster, 9 of 11 midfielders list a previous college. Two came through junior colleges (Barton County CC, Indian Hills CC) and the rest from four-year programs (ETSU, Rider and Portland, UNCG and South Carolina, Holy Cross, Georgia Southwestern State, Montevallo, Malone, Old Dominion). Only 2 midfielders (Grudko, Escamilla) have no previous college. The midfield is built mainly from transfers, including junior college transfers.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2029,
@@ -1059,7 +1086,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 5 of 10 midfielders finish before Olivier arrives in August 2027. In his first season, 2 will be seniors and 3 will be juniors."
+      "trajectoryNote": "On the 2026-27 roster, 5 of 11 midfielders finish before Olivier arrives in August 2027. In his first season, 3 will be seniors, 3 will be juniors and none will be sophomores."
     },
     "acuUnits": [
       {
@@ -1173,14 +1200,14 @@
     },
     "mapX": 524,
     "mapY": 159,
-    "fitOlivier": 42,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 42,
+      "overall": 43,
       "soccer": 47,
       "academic": 68,
-      "minutes": 31,
+      "minutes": 33,
       "lifestyle": 50,
-      "value": 25
+      "value": 26
     },
     "confRecord": [
       {
@@ -1276,10 +1303,10 @@
         "bg": "Head Coach. Former Louisville associate HC; USSF 'B' license."
       },
       {
-        "name": "John Velasco",
+        "name": "Andrew Santos",
         "role": "Assistant Coach",
-        "email": "john.velasco@temple.edu",
-        "bg": "Full-time assistant."
+        "email": "andrew.santos0001@temple.edu",
+        "bg": "Assistant Coach."
       },
       {
         "name": "Rich Kessler",
@@ -1299,30 +1326,25 @@
     "domain": "temple.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 12,
+      "mf_total": 6,
       "roster_season": "2026-27",
       "cleared_before_2027": 2,
       "cleared_names": [
-        "Rocco Haeufgloeckner",
-        "George Medill"
-      ],
-      "rising_senior_2027_count": 4,
-      "rising_senior_2027_names": [
-        "Jayden Jackson",
-        "Lukas Egarter",
         "Aiden O'Sullivan",
         "Harrison Dandridge"
       ],
-      "rising_junior_2027_count": 4,
-      "rising_junior_2027_names": [
+      "rising_senior_2027_count": 4,
+      "rising_senior_2027_names": [
+        "Quint Van Roij",
         "Teo Strand",
         "Anthony Perez",
-        "Chase Jackson",
         "Cohen Williams"
       ],
-      "recruit_risk": "High",
+      "rising_junior_2027_count": 0,
+      "rising_junior_2027_names": [],
+      "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-confirmed on the live 2026-27 owlsports.com roster (12 MFs of 28). The roster's previous-school column holds clubs and academies, not colleges — Matchfit Academy, Wolfsberger AC, FSV Mainz 05, PDA, Sporting KC, VBR Star, Seacoast United. Zero college transfers among current MFs, so the midfield is built from direct freshman intake.",
+      "recruit_pathway_note": "On the 2026 owlsports.com roster (6 midfielders in a squad of 30), only 1 midfielder lists a previous college (Quint Van Roij, Northern Michigan University). Three list a youth club (PDA, Seacoast United, VBR Star) and 2 list nothing. The midfield is built mainly from first-year recruits. Two more players are listed as D/M, one of them a transfer from Northwest College, a junior college in this guide.",
       "trajectory": [
         {
           "year": 2027,
@@ -1333,23 +1355,23 @@
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 70,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 2 of 12 midfielders finish before Olivier arrives in August 2027. In his first season, 4 will be seniors, 4 will be juniors and 2 will be sophomores."
+      "trajectoryNote": "On the 2026-27 roster, 2 of 6 midfielders finish before Olivier arrives in August 2027. In his first season, 4 will be seniors, none will be juniors and none will be sophomores. 2 more players are listed with midfield as a second position (D/M) and are not counted. Two other players (a junior and a freshman) have no position listed on the roster or on their own player pages, so they are not counted either."
     },
     "acuUnits": [
       {
@@ -1559,16 +1581,28 @@
     ],
     "staff": [
       {
-        "name": "Head Coach",
+        "name": "David Lilly",
         "role": "Head Coach",
-        "email": "soccer@uab.edu",
+        "email": "lillyd@uab.edu",
         "bg": "UAB head coach. Lower AAC — best pre-PT clinical access in conference."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Kyle Findlay",
+        "role": "Associate Head Coach",
+        "email": "findlayk@uab.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Harry Roberts",
         "role": "Assistant Coach",
-        "email": "soccer@uab.edu",
-        "bg": "Full-time assistant."
+        "email": "",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Cole Hunter",
+        "role": "Goalkeeper Coach",
+        "email": "ch26@uab.edu",
+        "bg": "Goalkeeper Coach."
       }
     ],
     "rec": "Hidden gem for pre-PT pathway — UAB Hospital is world-class. Warm Birmingham city. Very low cost. Soccer is lower-tier AAC.",
@@ -1581,8 +1615,8 @@
       "cleared_before_2027": 3,
       "cleared_names": [
         "Gael Zackrisson",
-        "Justin Vallejo",
-        "Alan Melendez"
+        "Alan Melendez",
+        "Justin Vallejo"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
@@ -1592,7 +1626,7 @@
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-confirmed on the live 2026-27 uabsports.com roster (7 MFs of 29). Only 2 MFs are US 4-year transfers (Gardner-Webb, USC Upstate); 4 of 7 list no previous college at all and 3 of the 7 are true freshmen (Quevedo, Pike, Martin), so a freshman can still win a midfield place here. Quevedo's listed UNIR is a Spanish online university, not a US soccer transfer.",
+      "recruit_pathway_note": "On the 2026-27 uabsports.com roster (7 midfielders in a squad of 28), only 2 midfielders are transfers from US four-year programs (Gardner-Webb, USC Upstate). Four list no previous college, and 3 of the 7 are freshmen (Quevedo, Pike, Martin), so a freshman can still win a midfield place here. Quevedo's listed UNIR is a Spanish online university, not a US soccer transfer.",
       "trajectory": [
         {
           "year": 2027,
@@ -1619,7 +1653,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "3 Sr/Gr cleared. 3 Fr remain as Jrs (Quevedo, Pike, Martin) creating peer-level midfield depth through Yr1-2. Yr3 opens as they clear."
+      "trajectoryNote": "On the 2026-27 roster, 3 of 7 midfielders finish before Olivier arrives in August 2027. In his first season, none will be seniors, 1 will be a junior and 3 will be sophomores."
     },
     "acuUnits": [
       {
@@ -2298,16 +2332,34 @@
     ],
     "staff": [
       {
-        "name": "Head Coach",
+        "name": "Kevin Langan",
         "role": "Head Coach",
-        "email": "soccer@uncc.edu",
+        "email": "klangan1@charlotte.edu",
         "bg": "Charlotte 49ers head coach. Building AAC program with Charlotte FC MLS proximity as a recruitment and development advantage."
       },
       {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "soccer@uncc.edu",
-        "bg": "Full-time assistant."
+        "name": "Shane Carew",
+        "role": "Associate Head Coach",
+        "email": "scarew1@charlotte.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Charles Rodriguez",
+        "role": "Associate Head Coach",
+        "email": "rodriguez@charlotte.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Mike Ammann",
+        "role": "Goalkeeper Coach",
+        "email": "",
+        "bg": "Goalkeeper Coach."
+      },
+      {
+        "name": "Gage Peffer",
+        "role": "Director of Operations",
+        "email": "",
+        "bg": "Director of Operations."
       }
     ],
     "rec": "Warm city at very low cost. Charlotte FC proximity is a development bonus. Best lifestyle-to-cost ratio in the AAC.",
@@ -2315,7 +2367,7 @@
     "domain": "charlotte49ers.com",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 8,
+      "mf_total": 9,
       "roster_season": "2026-27",
       "cleared_before_2027": 1,
       "cleared_names": [
@@ -2334,7 +2386,7 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Re-read on the live 2026-27 charlotte49ers.com roster (8 MFs of 25, up from 4 a year ago). Reclassified from Freshman-friendly: 3 of 8 MFs list a genuine 4-year college transfer (Saint Louis, Hofstra, Virginia Tech) and 1 more a club (Calvary FC); the other 4 came direct. No JUCO intake. Only 1 MF (a redshirt senior) clears before Olivier's 2027 entry, so the queue behind him is long.",
+      "recruit_pathway_note": "On the 2026-27 charlotte49ers.com roster (9 midfielders in a squad of 28), 3 midfielders are transfers from four-year programs (Saint Louis, Hofstra, Virginia Tech) and 1 more lists a club (Calvary FC). The other 5, including all 3 freshmen, came direct. No junior college transfers. Only 1 midfielder (a redshirt senior) finishes before Olivier's 2027 arrival, so the group ahead of him is large.",
       "trajectory": [
         {
           "year": 2027,
@@ -2361,7 +2413,7 @@
           "label": "Established starter"
         }
       ],
-      "trajectoryNote": "2 Jrs clear before 2027. Luc Lavielle (So→Sr) competes in Yr1. Very small squad — recruiting impact is high."
+      "trajectoryNote": "On the 2026-27 roster, 1 of 9 midfielders finishes before Olivier arrives in August 2027. In his first season, 2 will be seniors, 3 will be juniors and 3 will be sophomores."
     },
     "acuUnits": [
       {
@@ -2591,7 +2643,7 @@
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Re-read on the live 2026-27 fausports.com roster (5 MFs of 30). FAU's roster table publishes only a Hometown / High School column and no previous-school column, so the transfer-vs-freshman split cannot be re-derived from the roster alone — the listed entries are secondary schools (Hosoda Gaguen, Haugesund toppidrettgymnas), not colleges. Classification retained from an earlier roster review; treat as lower-confidence than schools whose roster publishes a previous-school field.",
+      "recruit_pathway_note": "On the 2026-27 fausports.com roster (5 midfielders in a squad of 30). FAU's roster table has no previous-school column, so the split between transfers and first-year recruits cannot be worked out from the roster. The classification is kept from an earlier roster review and is less certain than at schools that publish a previous school.",
       "trajectory": [
         {
           "year": 2027,
@@ -2618,7 +2670,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "FAU is a developing AAC program under a new coach — significant MF turnover before 2027 and a coach actively building his roster creates a genuine opportunity for Olivier to compete for immediate minutes. The 2025 AAC title shows the program has momentum. Best minutes outlook of any D1 in the Tier 1 group.",
+      "trajectoryNote": "On the 2026-27 roster, 1 of 5 midfielders finishes before Olivier arrives in August 2027. In his first season, 3 will be seniors, none will be juniors and 1 will be a sophomore.",
       "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
         "Manato Ogawa",

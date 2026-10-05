@@ -6,6 +6,34 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.03 (2026-10-05) — AAC rosters stored and applied (campaign C0, step 4, fourth batch)
+
+**What:** the 8 AAC rosters still to read in `data/aac.json` (FIU, USF, Tulsa, Memphis, Temple, UAB, Charlotte, FAU) were read on each school's own site, stored with positions as published, and applied from the stored roster. Army and Navy stay out of roster campaigns; Missouri State already had a stored roster. 81 schools' midfielder numbers now come from a stored roster; 118 are still to read.
+
+**Changes:**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Memphis | 10 | 11 | 60 | 62 | Kynu Samuels (Jr., from Georgia Southwestern State) is listed as a midfielder and was not stored |
+| Temple | 12 | 6 | 42 | 43 | The stored list did not match the published 2026 roster: five stored midfielders (Jayden Jackson, Lukas Egarter, Chase Jackson, Rocco Haeufgloeckner, George Medill) are not on it, and Quint Van Roij (Jr., from Northern Michigan) is new. Entry competition goes from Crowded to Moderate |
+| Charlotte | 8 | 9 | 58 | 58 | One more freshman midfielder is listed; no score change |
+
+FIU, USF, Tulsa, UAB and FAU: same numbers as stored. The recruiting pathway notes for Tulsa, Memphis, Temple, UAB, Charlotte and FAU were rewritten to the new counts; no pathway classification changed.
+
+**Temple, two players with no position:** Caleb Davis (Fr.) and Jaden Francis (Jr.) have a blank position on the roster table and on their own player pages. Neither is counted as a midfielder and the Minutes Outlook note says so. Two more players are listed D/M and are not counted (first-listed position rule).
+
+**USF, a renamed player:** the midfielder stored as Abeselom Weldegiorgis is listed as Abeselom Zemenfes (same class, hometown and previous school, Western Oregon). He was not a departure, so his entry was removed from the departure queue. Three Temple names (Jayden Jackson, Lukas Egarter, Chase Jackson) were queued as departures.
+
+**Coach check:** the head coach was confirmed on each school's own 2026 coaches page for all 8 (Russell, Kiefer, McIntosh, Mulrooney, Green, Lilly, Langan, Worthen). No names or titles changed. FAU's head-coach email was corrected from a general address to the one its page publishes (worthenj@fau.edu). No score changed, so no re-rank. The assistant lists in `coaches.json` and in each school's `staff[]` were replaced with the names and emails on each coaches page (Tulsa, Memphis, UAB and Charlotte held placeholders; Temple listed a coach who is no longer on staff; USF's director of operations changed).
+
+**Not published, left as stored:** Tulsa's head-coach email (stored soccer@utulsa.edu), and the head-coach phone numbers stored for FIU, USF and FAU. Memphis and Temple publish no head-coach contact and none is stored.
+
+**Tooling:** `build_patches.py` now recognises the forward labels "WF" (USF) and "For" (FAU), and treats the word "null" in a last-school column (Temple) as empty. This batch was read in the owner's Chrome; the snapshots record that.
+
+**Checks:** `validate_schools.py` pass; `validate_consistency.js` Issues: 0; negative tests 36/36; local browser check of all 8 cards and Details modals (scores match, coach lookups resolve, no "undefined").
+
+---
+
 ### v46.02 (2026-10-05) — Big East rosters stored and applied (campaign C0, step 4, third batch)
 
 **What:** all 11 Big East rosters in `data/big-east.json` were read on each school's own site, stored with positions as published, and applied from the stored roster. 73 schools' midfielder numbers now come from a stored roster; 126 are still to read.

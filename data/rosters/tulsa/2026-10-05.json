@@ -1,0 +1,236 @@
+{
+  "schoolId": "tulsa",
+  "schoolFile": "data/aac.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://tulsahurricane.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Carlito Saylon",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Parrish, Fla. / Olathe East HS (Kan.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Harrison Klamser",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Denver, Colo. / IMG Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Gorecki",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Fr.",
+      "hometown": "Palatine, Ill. / William Fremd HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Mezas",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Austin, Texas / Westlake HS",
+      "previousSchool": "St. Edwards"
+    },
+    {
+      "name": "Druv Pareek",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "North Barrington, Ill. / Barrington HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Cale Saunders",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "New Smyrna Beach, Fla. / New Smyrna Beach HS",
+      "previousSchool": "Daytona State College"
+    },
+    {
+      "name": "Luc Achermann-Stanfield",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "London, England / Acland Burghley School",
+      "previousSchool": "Eastern Florida State"
+    },
+    {
+      "name": "Jared Aguilar",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Jr.",
+      "hometown": "Denton, Texas / Lone Star HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Arnau Pedrola Fortuny",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Tarragona, Spain / INS La Mar de la Frau",
+      "previousSchool": null
+    },
+    {
+      "name": "Quentin Christey",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Waterdown, Ontario / Holy Cross Catholic Academy",
+      "previousSchool": "Syracuse"
+    },
+    {
+      "name": "Kgodiso Sukati",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Johannesburg, South Africa",
+      "previousSchool": "Louisville"
+    },
+    {
+      "name": "Peleg Armendariz",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Austin, Texas / Santa Teresa HS",
+      "previousSchool": "Cleveland State"
+    },
+    {
+      "name": "Heztli Rodriguez",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Oklahoma CIty, Okla. / Epic Charter Schools",
+      "previousSchool": null
+    },
+    {
+      "name": "Dani Gamboa",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Barcelona, Spain / IES Francesc Ribalta",
+      "previousSchool": "Pittsburgh"
+    },
+    {
+      "name": "Jareth Mejia",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Irving, Texas / Allegiance Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Bruno Medina",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Madrid, Spain / IES José García Nieto",
+      "previousSchool": null
+    },
+    {
+      "name": "Chaz Williams",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Plantation, Fla. / Somerset Virtual Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Aiden Hale",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Mustang, Okla. / Mustang HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Joses Chukwu",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Toronto, Ontario / Blyth Academy Downsview Park",
+      "previousSchool": null
+    },
+    {
+      "name": "Omar Flores",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Houston, Texas / Texas Connections Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Cassar",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Rockwall, Texas / Rockwall Heath HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Aimar Membrila",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-Jr.",
+      "hometown": "Tulsa, Okla. / Tulsa Soccer Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Danny Stevens",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Munich, Germany / Nease HS (Fla.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas Cook",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Perth, Western Australia / John Curtin College of the Arts",
+      "previousSchool": "Tyler Junior College"
+    },
+    {
+      "name": "Jake Reich",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Cooper City, Fla. / Cooper City HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Applegate",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Tulsa, Okla. / Bishop Kelley HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick Stoklas",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Farmers Branch, Texas / Allegiance Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Ian McIntosh",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Tulsa, Okla. / Bishop Kelley HS",
+      "previousSchool": null
+    }
+  ]
+}

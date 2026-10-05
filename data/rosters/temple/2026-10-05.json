@@ -1,0 +1,252 @@
+{
+  "schoolId": "temple",
+  "schoolFile": "data/aac.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://owlsports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Jason Villalobos",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Dublin, Ohio",
+      "previousSchool": "Otterbein University"
+    },
+    {
+      "name": "Gavin Atkinson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Allentown, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Caleb Davis",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "South Plainfield, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nore Sumner",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Angelholm, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Siravo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Jenkintown, Pa.",
+      "previousSchool": "Real Jersey FC"
+    },
+    {
+      "name": "Quint Van Roij",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Heeswijk-Dinther, Netherlands",
+      "previousSchool": "Northern Michigan University"
+    },
+    {
+      "name": "Wilson Holman",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Washington, D.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Marin Selak",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Hannover, Germany",
+      "previousSchool": "Daytona State"
+    },
+    {
+      "name": "Adrian Panaite",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Toronto, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Teo Strand",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Tau, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Raz Schwartz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Hadera, Israel",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Perez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Monroe Twp, N.J.",
+      "previousSchool": "PDA"
+    },
+    {
+      "name": "Shota Akima",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Tokyo, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Simon Jordheim",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "So.",
+      "hometown": "Fredrikstad, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Elliot Rigbert",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Vaxholm, Sweden",
+      "previousSchool": "Tibble Gymnasium Täby"
+    },
+    {
+      "name": "Aiden O'Sullivan",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Lancaster, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luc Haller",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "So.",
+      "hometown": "Gaggenau, Germany",
+      "previousSchool": "Northwest College"
+    },
+    {
+      "name": "Lukas Stefaner",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Heiligenkreuz, Austria",
+      "previousSchool": "University of Graz"
+    },
+    {
+      "name": "Chad Endozo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Las Vegas, Nev.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Brown",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Collegeville, Pa",
+      "previousSchool": "FC Delco"
+    },
+    {
+      "name": "Jaden Francis",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Jr.",
+      "hometown": "Williamstown, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Cohen Williams",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Goffstown, N.H.",
+      "previousSchool": "School Seacoast United"
+    },
+    {
+      "name": "Carlos Rojas",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Valencia, Venezuela",
+      "previousSchool": "UCF/Daytona State"
+    },
+    {
+      "name": "Farlley Amaral",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Philadelphia, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Taimoor Hussain",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Harrison, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Esser",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Kennett Square, PA",
+      "previousSchool": null
+    },
+    {
+      "name": "Jalen Williams",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Williamstown, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Harrison Dandridge",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Roanoke, Va.",
+      "previousSchool": "VBR Star"
+    },
+    {
+      "name": "Dylan Kaye",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Orange County, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Aaron Sullivan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Warrenton, Va.",
+      "previousSchool": "Shepherd University"
+    }
+  ]
+}

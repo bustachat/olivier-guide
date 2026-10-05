@@ -1,0 +1,252 @@
+{
+  "schoolId": "fau",
+  "schoolFile": "data/aac.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://fausports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Alfred Mikkelsen",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Soro, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Herbert Kwakye-Amoah",
+      "position": "MF",
+      "positionAsListed": "Mid",
+      "class": "Fr.",
+      "hometown": "Bradenton, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Manato Ogawa",
+      "position": "MF",
+      "positionAsListed": "Mid",
+      "class": "Jr.",
+      "hometown": "Saitama, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "David Roberts",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Jr.",
+      "hometown": "Essex, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Noameshie",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Jr.",
+      "hometown": "Omaha, Nebraska",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Kinina",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Sr.",
+      "hometown": "Birmingham, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Naim Berbar",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Fr.",
+      "hometown": "Lyon, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Yann Ntumba Tiki",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "Fr.",
+      "hometown": "Liege, Belgium",
+      "previousSchool": null
+    },
+    {
+      "name": "Francesco Aiello",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "Sr.",
+      "hometown": "Orlando, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "DJ Koulai",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "Sr.",
+      "hometown": "Lewisville, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaiden Paniagua",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Sr.",
+      "hometown": "Naugatuck, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Andy Dunn",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Jacksonville, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emory Crichlow",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Sr.",
+      "hometown": "Durham, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Ainge",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Jr.",
+      "hometown": "Leicester, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Emil Lausten",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Sonderborg, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Anders Wergeland",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "Jr.",
+      "hometown": "Ostfold, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Xavi Csato",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "Sr.",
+      "hometown": "Stuart, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Colin Beutel",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "So.",
+      "hometown": "Munich, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Enzo Rabot",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Sr.",
+      "hometown": "Montpellier, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Felipe Santos",
+      "position": "MF",
+      "positionAsListed": "Mid",
+      "class": "Sr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Christopher Jean-Francois",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Lauderhill, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Michel Tentchou",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "Jr.",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Agnaldo Germano",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Naugatuck, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrian Esquivel",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Mitchell Rogers",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "So.",
+      "hometown": "Melbourne, Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "David Jesus",
+      "position": "MF",
+      "positionAsListed": "Mid",
+      "class": "Jr.",
+      "hometown": "Deerfield Beach, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Bangura",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "Jr.",
+      "hometown": "Reading, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Olle Lovdahl",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "So.",
+      "hometown": "Bodafors, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Gorbell",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Sr.",
+      "hometown": "Boca Raton, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonas Sundli-Hardig",
+      "position": "MF",
+      "positionAsListed": "Mid",
+      "class": "Jr.",
+      "hometown": "Bergen, Norway",
+      "previousSchool": null
+    }
+  ]
+}

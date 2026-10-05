@@ -39,6 +39,11 @@
     "latestFile": "data/rosters/chapman/2026-09-14.json",
     "rosterSeason": "2026-27"
   },
+  "charlotte": {
+    "latestFetchedAt": "2026-10-05",
+    "latestFile": "data/rosters/charlotte/2026-10-05.json",
+    "rosterSeason": "2026-27"
+  },
   "clemson": {
     "latestFetchedAt": "2026-10-05",
     "latestFile": "data/rosters/clemson/2026-10-05.json",
@@ -94,9 +99,19 @@
     "latestFile": "data/rosters/efsc/2026-09-15.json",
     "rosterSeason": "2026-27"
   },
+  "fau": {
+    "latestFetchedAt": "2026-10-05",
+    "latestFile": "data/rosters/fau/2026-10-05.json",
+    "rosterSeason": "2026-27"
+  },
   "fgcu": {
     "latestFetchedAt": "2026-10-05",
     "latestFile": "data/rosters/fgcu/2026-10-05.json",
+    "rosterSeason": "2026-27"
+  },
+  "fiu": {
+    "latestFetchedAt": "2026-10-05",
+    "latestFile": "data/rosters/fiu/2026-10-05.json",
     "rosterSeason": "2026-27"
   },
   "garden_city_cc": {
@@ -177,6 +192,11 @@
   "maryland": {
     "latestFetchedAt": "2026-10-05",
     "latestFile": "data/rosters/maryland/2026-10-05.json",
+    "rosterSeason": "2026-27"
+  },
+  "memphis": {
+    "latestFetchedAt": "2026-10-05",
+    "latestFile": "data/rosters/memphis/2026-10-05.json",
     "rosterSeason": "2026-27"
   },
   "michigan": {
@@ -424,14 +444,29 @@
     "latestFile": "data/rosters/syracuse/2026-10-05.json",
     "rosterSeason": "2026-27"
   },
+  "temple": {
+    "latestFetchedAt": "2026-10-05",
+    "latestFile": "data/rosters/temple/2026-10-05.json",
+    "rosterSeason": "2026-27"
+  },
   "texas_southmost": {
     "latestFetchedAt": "2026-09-15",
     "latestFile": "data/rosters/texas_southmost/2026-09-15.json",
     "rosterSeason": "2026-27"
   },
+  "tulsa": {
+    "latestFetchedAt": "2026-10-05",
+    "latestFile": "data/rosters/tulsa/2026-10-05.json",
+    "rosterSeason": "2026-27"
+  },
   "tyler_jc": {
     "latestFetchedAt": "2026-09-14",
     "latestFile": "data/rosters/tyler_jc/2026-09-14.json",
+    "rosterSeason": "2026-27"
+  },
+  "uab": {
+    "latestFetchedAt": "2026-10-05",
+    "latestFile": "data/rosters/uab/2026-10-05.json",
     "rosterSeason": "2026-27"
   },
   "ucla": {
@@ -477,6 +512,11 @@
   "usc_union": {
     "latestFetchedAt": "2026-09-15",
     "latestFile": "data/rosters/usc_union/2026-09-15.json",
+    "rosterSeason": "2026-27"
+  },
+  "usf": {
+    "latestFetchedAt": "2026-10-05",
+    "latestFile": "data/rosters/usf/2026-10-05.json",
     "rosterSeason": "2026-27"
   },
   "utahtech": {

@@ -40,7 +40,8 @@ INBOX = os.path.join(os.environ.get("ROSTER_INBOX")
 GK = {"GK", "G", "GOALKEEPER", "KEEPER", "GOALIE"}
 DEF = {"D", "DF", "DEF", "DEFENDER", "DEFENSE", "B", "BACK", "CB", "LB", "RB", "CENTERBACK",
        "CENTREBACK", "FULLBACK", "OUTSIDEBACK", "LEFTBACK", "RIGHTBACK", "WINGBACK"}
-FWD = {"F", "FW", "FWD", "FORWARD", "ST", "STRIKER", "W", "WINGER", "WING", "ATT", "ATTACKER"}
+FWD = {"F", "FW", "FWD", "FORWARD", "ST", "STRIKER", "W", "WINGER", "WING", "ATT", "ATTACKER",
+       "WF", "FOR"}  # WF = wing forward (USF), For = forward (FAU)
 
 
 def first_token(pos):
@@ -70,6 +71,8 @@ def to_full_roster(rec):
         if "/" in prev and (not home or home == prev or prev.startswith(home.split("/")[0].strip())):
             a, _, b = prev.partition("/")
             home, prev = a.strip(), b.strip()
+        if prev.lower() == "null":  # Temple prints the word "null" for an empty last school
+            prev = ""
         out.append({
             "name": p["name"],
             "position": enum_position(p["pos"]),

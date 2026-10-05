@@ -1,0 +1,291 @@
+{
+  "schoolId": "northwestern",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://nusports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 31,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Gino Cervoni",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Graduate Student",
+      "hometown": "Elmont, N.Y.",
+      "previousSchool": "Hofstra",
+      "highSchool": "Carey"
+    },
+    {
+      "name": "Dominic Pereira",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Redshirt Sophomore",
+      "hometown": "Las Vegas, Nev.",
+      "previousSchool": null,
+      "highSchool": "SAI Academy"
+    },
+    {
+      "name": "Sam Nagano",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sophomore",
+      "hometown": "West Torrance, Calif.",
+      "previousSchool": null,
+      "highSchool": "West Torrance"
+    },
+    {
+      "name": "Andrew Johnson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sophomore",
+      "hometown": "Lee's Summit, Mo.",
+      "previousSchool": null,
+      "highSchool": "Pembroke Hill School"
+    },
+    {
+      "name": "Dalton Bulowski",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Redshirt First-Year",
+      "hometown": "North Tustin, Calif.",
+      "previousSchool": null,
+      "highSchool": "Mater Dei"
+    },
+    {
+      "name": "Josue Pfrommer",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "First-Year",
+      "hometown": "Joliet, Ill.",
+      "previousSchool": null,
+      "highSchool": "EdOptions Online Academy"
+    },
+    {
+      "name": "Andrew Millar",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Redshirt Senior",
+      "hometown": "Cambridge, Mass.",
+      "previousSchool": "Vermont",
+      "highSchool": "Cambridge Rindge & Latin"
+    },
+    {
+      "name": "Tyler Glassberg",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Senior",
+      "hometown": "Melville, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Half Hollow Hills HS East"
+    },
+    {
+      "name": "Gabriel Smyth",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Junior",
+      "hometown": "Calgary, Alberta",
+      "previousSchool": "St. John's",
+      "highSchool": "Alberta School"
+    },
+    {
+      "name": "Ethan Nakolo",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Junior",
+      "hometown": "Yukon, Okla.",
+      "previousSchool": "Oklahoma Christian",
+      "highSchool": "Yukon"
+    },
+    {
+      "name": "Yuval Nimrodi",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Senior",
+      "hometown": "Giv'at Shmuel, Israel",
+      "previousSchool": "La Salle",
+      "highSchool": "Ohel Shem"
+    },
+    {
+      "name": "Marco Silva",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Redshirt Senior",
+      "hometown": "Coopersburg, Pa.",
+      "previousSchool": "Pittsburgh",
+      "highSchool": "South Kent"
+    },
+    {
+      "name": "Omar Jallow",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Junior",
+      "hometown": "Atlanta, Ga.",
+      "previousSchool": "Drexel",
+      "highSchool": "Hillgrove"
+    },
+    {
+      "name": "Baraka Tarleton",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Senior",
+      "hometown": "Andover, Minn.",
+      "previousSchool": "Evansville",
+      "highSchool": "Andover"
+    },
+    {
+      "name": "Roy Omo-Obas",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "First-Year",
+      "hometown": "Toronto, Ontario",
+      "previousSchool": null,
+      "highSchool": "International School"
+    },
+    {
+      "name": "Toryn Penders",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "First-Year",
+      "hometown": "Durham, N.C.",
+      "previousSchool": null,
+      "highSchool": "SAI Academy"
+    },
+    {
+      "name": "Peter Riesz",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Senior",
+      "hometown": "Budapest, Hungary",
+      "previousSchool": null,
+      "highSchool": "Alternative Economics Secondary School"
+    },
+    {
+      "name": "Tre Barrett",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Junior",
+      "hometown": "Hampton, Va.",
+      "previousSchool": "William & Mary",
+      "highSchool": "Kecoughtan"
+    },
+    {
+      "name": "Aaron O'Reilly",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sophomore",
+      "hometown": "Naperville, Ill.",
+      "previousSchool": null,
+      "highSchool": "Naperville Central"
+    },
+    {
+      "name": "Fritz Volmar",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Senior",
+      "hometown": "Peoria, Ill.",
+      "previousSchool": null,
+      "highSchool": "Laurel Springs HS"
+    },
+    {
+      "name": "Gavin Baer",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "First-Year",
+      "hometown": "Palmer, Mass.",
+      "previousSchool": null,
+      "highSchool": "Suffield Academy"
+    },
+    {
+      "name": "James Spatzek",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Redshirt Junior",
+      "hometown": "Glencoe, Ill.",
+      "previousSchool": null,
+      "highSchool": "New Trier HS"
+    },
+    {
+      "name": "Aidan O'Neill",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Redshirt Sophomore",
+      "hometown": "Wilmette, Ill.",
+      "previousSchool": null,
+      "highSchool": "New Trier"
+    },
+    {
+      "name": "Italo Addimandi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Redshirt Junior",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null,
+      "highSchool": "Academy for Innovative Education"
+    },
+    {
+      "name": "Kevin Hornik",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Forward",
+      "class": "First-Year",
+      "hometown": "Mount Prospect, Ill.",
+      "previousSchool": null,
+      "highSchool": "Wheeling"
+    },
+    {
+      "name": "Seth Mahlmeister",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Graduate Student",
+      "hometown": "Lima, Ohio",
+      "previousSchool": "Purdue Fort Wayne",
+      "highSchool": "Lima Central Catholic"
+    },
+    {
+      "name": "Bryant Mayer",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Senior",
+      "hometown": "Owings Mills, Md.",
+      "previousSchool": null,
+      "highSchool": "McDonogh School"
+    },
+    {
+      "name": "Jude Bosshardt",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Redshirt Junior",
+      "hometown": "San Antonio, Texas",
+      "previousSchool": null,
+      "highSchool": "George Washington University Online HS"
+    },
+    {
+      "name": "Luca Toro",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "First-Year",
+      "hometown": "Newton, Mass.",
+      "previousSchool": null,
+      "highSchool": "YSC Academy"
+    },
+    {
+      "name": "Evrit Fisher",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sophomore",
+      "hometown": "North Richland Hills, Texas",
+      "previousSchool": null,
+      "highSchool": "Allegiance Academy"
+    },
+    {
+      "name": "Isaac Rosenthal",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "First-Year",
+      "hometown": "Bethesda, Md.",
+      "previousSchool": null,
+      "highSchool": "Sidwell Friends School"
+    }
+  ]
+}

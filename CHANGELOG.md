@@ -6,6 +6,30 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.01 (2026-10-05) — Big Ten rosters stored and applied (campaign C0, step 4, second batch)
+
+**What:** all 11 Big Ten rosters were read on each school's own site, stored with positions as published, and applied from the stored roster. 62 schools' midfielder numbers now come from a stored roster; 137 are still to read.
+
+**Changes:**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| UCLA | 10 | 11 | 76 | 78 | Allan Legaspi (Jr.) is listed as a midfielder and was not stored; entry competition Medium to High |
+| Penn State | 5 | 7 | 49 | 54 | The roster was only partly published when last read; two more seniors and a freshman now appear, and 6 of 7 finish before 2027 |
+| Michigan | 13 | 11 | 52 | 48 | Patrick O'Toole and Dylan Davis are listed defender-first (D/M) |
+| Michigan State | 11 | 10 | 35 | 38 | Kayden Hudson is now listed as a forward; Leo Conneh is now a senior |
+| Ohio State | 10 | 9 | 51 | 50 | Andre Roberts is now listed as a defender |
+
+Indiana, Northwestern, Wisconsin, Rutgers, Washington and Maryland: same numbers as stored. Rutgers' stored "Puis Ssebulime" was a misspelling of Pius Ssebulime and is corrected by the new roster. The pathway notes for UCLA, Penn State, Michigan, Michigan State and Ohio State were rewritten to the new counts, and the squad sizes quoted for Washington and Maryland were corrected.
+
+**Coach check:** the head coach was confirmed on each school's own site for all 11 (Jorden, Yeagley, Dow, Daley, Rensing, Maisonneuve, Payne, Jones, McElderry, Clark, Cirovski). No names or titles changed. Six head-coach contact details were corrected to what each school's coaches page publishes: Indiana phone (812-855-0051), Michigan phone (615-4546, published without an area code), Michigan State email and phone (rensingd@ath.msu.edu, 355-8493), Ohio State email and phone (maisonneuve.2@osu.edu, 292-3139), Washington email and phone (huskysoccer@uw.edu, 206-543-4209), Maryland email and phone (sasho@umd.edu, 301-314-8513). No score changed, so no re-rank. Not published on the school's page and left as stored: the head-coach emails for Indiana, Michigan, Rutgers and UCLA.
+
+**Tooling:** `roster_extractor.js` now reads Penn State's `.player-list-item` layout.
+
+**Checks:** `validate_schools.py` and `validate_consistency.js` pass (Issues: 0); negtest 35/35 proven; roster arithmetic, snapshot and jargon checks pass. Local browser: 213 schools load, the 11 cards show the new Fit Scores, and the Minutes Outlook tab renders the new notes with no "undefined".
+
+**Next:** the Big East (11 schools).
+
 ### v46.00 (2026-10-05) — ACC rosters stored and applied (campaign C0, step 4, first batch)
 
 **What:** the 13 ACC schools whose rosters were not yet stored with positions as published were read on each school's own site and applied from the stored roster. 51 schools' midfielder numbers now come from a stored roster; 148 are still to read.

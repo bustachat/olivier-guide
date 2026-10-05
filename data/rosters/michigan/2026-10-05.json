@@ -1,0 +1,276 @@
+{
+  "schoolId": "michigan",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://mgoblue.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 33,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Beau Barren",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Overland Park, Kan. / Blue Valley North",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaiah Goldson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Oakville, Ontario / Garth Webb Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick O'Toole",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Sr.",
+      "hometown": "Montclair, N.J. / Montclair",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Fisher",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Rochester, Mich. / Blue Valley North",
+      "previousSchool": null
+    },
+    {
+      "name": "Camron Estala",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Westland, Mich. / Salt Lake Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Baker",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Frisco, Texas / Memorial",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Nobles",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Montgomery, Ill. / Salt Lake Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Pendleton",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Shawnee, Kan. / Mill Valley",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Haikal",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "North Easton, Mass. / Oliver Ames",
+      "previousSchool": null
+    },
+    {
+      "name": "Grayson Elmquist",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Lake City, Mich. / Lake City",
+      "previousSchool": null
+    },
+    {
+      "name": "Duilio Herrera",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Sr.",
+      "hometown": "Edinburg, Texas / Johny Economedes",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Ramirez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Chicago, Ill. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonathan Nabaka",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Miami Beach, Fla. / Miami Beach Senior",
+      "previousSchool": null
+    },
+    {
+      "name": "Joah Reyna",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Bedford, N.Y, / Laurel Springs",
+      "previousSchool": null
+    },
+    {
+      "name": "Stefan Momcilovic",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Chicago, Ill. / Lake Forest Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Craig",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Philadelphia, Pa. / YSC Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Murphy Parker",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "London, England / Charterhouse",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Paulo Ramos",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Marietta, Ga. / George Walton",
+      "previousSchool": null
+    },
+    {
+      "name": "Landon Strohmeyer",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Centennial, Colo. / Colorado Rapids Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Austin Su",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Rochester Hills, Mich. / Troy",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick Los",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Plainfield, Ill. / Plainfield North",
+      "previousSchool": null
+    },
+    {
+      "name": "Jake Tatch",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Aliso Viejo, Calif. / JSerra Catholic",
+      "previousSchool": null
+    },
+    {
+      "name": "Kamau Brame",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Grand Rapids, Mich. / St. Stephens Episcopal School",
+      "previousSchool": null
+    },
+    {
+      "name": "Guy Michaeli",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Dallas, Texas / Akiba Yavneh Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Gimple",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Commerce, Mich. / SAI Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Drew Diebolt",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Caledonia, Mich. / Caledonia",
+      "previousSchool": null
+    },
+    {
+      "name": "Tamer Ibsais",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Eden Prairie, Minn. / Eden Prairie",
+      "previousSchool": null
+    },
+    {
+      "name": "Dylan Davis",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Sr.",
+      "hometown": "Rochester, Mich. / Rochester",
+      "previousSchool": null
+    },
+    {
+      "name": "Alen Bean",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Fall Church, Va. / Meridian",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas Fraser",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Saint-Hillaire, Quebec, Canada / Champlain",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Ethridge",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Troy, Mich. / Troy",
+      "previousSchool": null
+    },
+    {
+      "name": "Kian Concepcion",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Austin, Texas / SAI Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebasthian Chavez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "White Plains, N.Y. / Scholar Athletic Leadership Academy",
+      "previousSchool": null
+    }
+  ]
+}

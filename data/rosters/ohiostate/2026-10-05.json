@@ -1,0 +1,244 @@
+{
+  "schoolId": "ohiostate",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://ohiostatebuckeyes.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Patrick McLaughlin",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Cleveland, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Baumgartner",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "New Lenox, Illinois",
+      "previousSchool": null
+    },
+    {
+      "name": "Joel Demian",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Vancouver, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Labite",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Normandy, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Wurschmidt",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Stavern, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Skubis",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Tampa, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Arnesen",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Copenhagen, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Andre Roberts",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Dublin, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaiah Chisolm",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Yorktown, Virginia",
+      "previousSchool": null
+    },
+    {
+      "name": "Aaron Hurge",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Bethesda, Maryland",
+      "previousSchool": null
+    },
+    {
+      "name": "Josué Youta",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Montreal, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Sullivan",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Columbus, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryce Ince-Lovelace",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Cleveland, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Hannosh",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Farmington Hills, Michigan",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Townhill",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Encinitas, California",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Trivisonno",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Cleveland, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Mathew Samways",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "New Albany, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Wayne",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Flowery Branch, Georgia",
+      "previousSchool": null
+    },
+    {
+      "name": "Nyle Waugh",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Miami, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Maisonneuve",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Powell, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin McLaughlin",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Cleveland, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Marko Borkovic",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "5th",
+      "hometown": "Maidenhead, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Dylan Arrison",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "West Chester, Pennsylvania",
+      "previousSchool": null
+    },
+    {
+      "name": "Elijah Bishop",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Aurora, Colorado",
+      "previousSchool": null
+    },
+    {
+      "name": "Cole Evans",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Springboro, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Laramore",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Milford, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Zsombor Onodi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Cleveland, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Justis Olorunto",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Akron, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Slade Hall",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "McDonough, Georgia",
+      "previousSchool": null
+    }
+  ]
+}

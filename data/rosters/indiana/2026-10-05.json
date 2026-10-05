@@ -1,0 +1,252 @@
+{
+  "schoolId": "indiana",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://iuhoosiers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "AJ Piela",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "3rd",
+      "hometown": "Columbus, Ohio / Olentangy Liberty",
+      "previousSchool": "Louisville"
+    },
+    {
+      "name": "Nolan Kinsella",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "3rd",
+      "hometown": "Munster, Ind. / Munster",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Maher",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "3rd",
+      "hometown": "Caseyville, Ill. / Althoff Catholic",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick McHenry",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "3rd",
+      "hometown": "Loveland, Ohio / Loveland",
+      "previousSchool": "Ohio State"
+    },
+    {
+      "name": "Alex Matthews",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "5th",
+      "hometown": "Derbyshire, England / Chellaston Academy",
+      "previousSchool": "Missouri State"
+    },
+    {
+      "name": "Jacopo Fedrizzi",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "4th",
+      "hometown": "Giulia, Italy / Liceo Scientifico Giovani Marinelli",
+      "previousSchool": "Evansville"
+    },
+    {
+      "name": "Oliver Moller-Jensen",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "4th",
+      "hometown": "Atlanta, Ga. /",
+      "previousSchool": "FAU"
+    },
+    {
+      "name": "Stephane Njike",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "3rd",
+      "hometown": "Paris, France / Lycée Jean Monnet",
+      "previousSchool": "Maryland"
+    },
+    {
+      "name": "Bennett Painter",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "4th",
+      "hometown": "Cincinnati, Ohio / Anderson",
+      "previousSchool": "Bowling Green"
+    },
+    {
+      "name": "Collins Oduro",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "4th",
+      "hometown": "Bibiani, Ghana / The Phelps School",
+      "previousSchool": null
+    },
+    {
+      "name": "Grant Paskus",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "3rd",
+      "hometown": "Indianapolis, Ind. / Lawrence North",
+      "previousSchool": "NIU"
+    },
+    {
+      "name": "Alex Barger",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "4th",
+      "hometown": "Naperville, Ill. / Naperville North",
+      "previousSchool": null
+    },
+    {
+      "name": "Easton Bogard",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "3rd",
+      "hometown": "Oak Park, Ill. / Oak Park and River",
+      "previousSchool": null
+    },
+    {
+      "name": "Luka Bezerra",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "5th",
+      "hometown": "Chicago, Ill. / Jones College Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Heuer",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "3rd",
+      "hometown": "Elmhurst, Ill. / York Community",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Shreffler",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "4th",
+      "hometown": "Westlake, Ohio / Westlake",
+      "previousSchool": null
+    },
+    {
+      "name": "Dempsey Resich",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "1st",
+      "hometown": "Palos Verdes, Calif. / Palos Verdes",
+      "previousSchool": null
+    },
+    {
+      "name": "Breckin Minzey",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "5th",
+      "hometown": "Granger, Ind. / Indiana University High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Clay Murador",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "4th",
+      "hometown": "Aledo, Texas / Aledo",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Adu-Gyamfi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "1st",
+      "hometown": "Accra, Ghana / Suffield Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "EJ Dreher",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "4th",
+      "hometown": "Valparaiso, Ind. / Valparaiso",
+      "previousSchool": null
+    },
+    {
+      "name": "Wes Carnevale",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "5th",
+      "hometown": "Pittsburgh, Pa. / Fox Chapel Area",
+      "previousSchool": "Cornell"
+    },
+    {
+      "name": "Owen Sloan",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "2nd",
+      "hometown": "Lake Forest, Ill. / Lake Forest",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Reidell",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "4th",
+      "hometown": "Rochester, N.Y. / Olathe Northwest",
+      "previousSchool": null
+    },
+    {
+      "name": "Drew Gaydosh",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "3rd",
+      "hometown": "Centerville, Ohio / Centerville",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Hess",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "1st",
+      "hometown": "Naperville, Ill. / Naperville North",
+      "previousSchool": null
+    },
+    {
+      "name": "Vincent Uglow",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "1st",
+      "hometown": "Newtown Square, Pa. / Malvern Preparatory School",
+      "previousSchool": null
+    },
+    {
+      "name": "Cooper Johnsen",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "5th",
+      "hometown": "Los Altos Hills, Calif. / Los Altos",
+      "previousSchool": null
+    },
+    {
+      "name": "Michal Mroz",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "3rd",
+      "hometown": "Elk Grove, Ill. / Elk Grove",
+      "previousSchool": "Evansville"
+    },
+    {
+      "name": "Ryan Hunsucker",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "1st",
+      "hometown": "Westfield, Ind. / Westfield",
+      "previousSchool": null
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "schoolId": "pennstate",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gopsusports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 25,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Daniel Peluffo-Wiese",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Freshman",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null,
+      "highSchool": "Homeschooled"
+    },
+    {
+      "name": "Arian Recinos",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Junior",
+      "hometown": "Stamford, Conn.",
+      "previousSchool": "University of New Hampshire"
+    },
+    {
+      "name": "Joe Sheridan",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sophomore",
+      "hometown": "East Grinstead, England",
+      "previousSchool": null,
+      "highSchool": "Sackville School"
+    },
+    {
+      "name": "Noah Förster",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Junior",
+      "hometown": "Cologne, Germany",
+      "previousSchool": null,
+      "highSchool": "Georg Büchner Gymnasium"
+    },
+    {
+      "name": "Luca Sowinski",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Senior",
+      "hometown": "Carlsbad, Calif.",
+      "previousSchool": null,
+      "highSchool": "ASU Prep Casa Grande"
+    },
+    {
+      "name": "Joven Mann",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Senior",
+      "hometown": "Surrey, Canada",
+      "previousSchool": "University of British Columbia",
+      "highSchool": "North Surrey Secondary"
+    },
+    {
+      "name": "Vladislav Cherny",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Senior",
+      "hometown": "Bielefeld, Germany",
+      "previousSchool": null,
+      "highSchool": "International School"
+    },
+    {
+      "name": "Kyler Vojvodic",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sophomore",
+      "hometown": "Port Coquitlam, Canada",
+      "previousSchool": "University of Rhode Island",
+      "highSchool": "University Hill Secondary"
+    },
+    {
+      "name": "Dylan Mirakian",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshman",
+      "hometown": "Fairway, Kan.",
+      "previousSchool": null,
+      "highSchool": "IMG Academy"
+    },
+    {
+      "name": "Justin Ross",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sophomore",
+      "hometown": "West Chester, Pa.",
+      "previousSchool": "Clemson",
+      "highSchool": "Rustin HS"
+    },
+    {
+      "name": "Morgan Marshall",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Senior",
+      "hometown": "Lexington, Ky.",
+      "previousSchool": null,
+      "highSchool": "Henry Clay"
+    },
+    {
+      "name": "Sheridan McNish",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshman",
+      "hometown": "Boston, Mass.",
+      "previousSchool": null,
+      "highSchool": "Prestans Academy"
+    },
+    {
+      "name": "Nehan Hasan",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshman",
+      "hometown": "West Chester, Pa.",
+      "previousSchool": null,
+      "highSchool": "YSC Academy"
+    },
+    {
+      "name": "Moritz Weber",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sophomore",
+      "hometown": "Berlin, Germany",
+      "previousSchool": "NC State",
+      "highSchool": "Hertha BSC"
+    },
+    {
+      "name": "Toby Grant",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Redshirt Sophomore",
+      "hometown": "Kaysville, Utah",
+      "previousSchool": "Vermont",
+      "highSchool": "Farmington"
+    },
+    {
+      "name": "Ryan Sterling",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshman",
+      "hometown": "Montverde, Fla.",
+      "previousSchool": null,
+      "highSchool": "Monteverde Academy"
+    },
+    {
+      "name": "Joe Buckley",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sophomore",
+      "hometown": "Westwood, Mass.",
+      "previousSchool": null,
+      "highSchool": "ASU Prep Casa Grande"
+    },
+    {
+      "name": "Grant McIntosh",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Graduate Student",
+      "hometown": "Plano, Texas",
+      "previousSchool": "Duquesne",
+      "highSchool": "Plano West Senior"
+    },
+    {
+      "name": "Beckham Brown",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshman",
+      "hometown": "Herriman, Utah",
+      "previousSchool": null,
+      "highSchool": "Mountain Ridge HS"
+    },
+    {
+      "name": "Noah Andreas",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Senior",
+      "hometown": "Krefeld, Germany",
+      "previousSchool": null,
+      "highSchool": "International School"
+    },
+    {
+      "name": "Sam Fielding",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Graduate Student",
+      "hometown": "Oundle, United Kingdom",
+      "previousSchool": "Loughborough University",
+      "highSchool": "Arthur Mellows Village"
+    },
+    {
+      "name": "Fredrick Grundin",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Redshirt Junior",
+      "hometown": "Täby, Sweden",
+      "previousSchool": null,
+      "highSchool": "Tibble Gymnasium"
+    },
+    {
+      "name": "Etienne Reck",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Junior",
+      "hometown": "Marl, Germany",
+      "previousSchool": null,
+      "highSchool": "International School"
+    },
+    {
+      "name": "Peter Doran",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Freshman",
+      "hometown": "Wayne, Pa.",
+      "previousSchool": null,
+      "highSchool": "YSC Academy"
+    },
+    {
+      "name": "Amadou Kone",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Senior",
+      "hometown": "Ottawa, Canada",
+      "previousSchool": null,
+      "highSchool": "Paul Desmarais"
+    }
+  ]
+}

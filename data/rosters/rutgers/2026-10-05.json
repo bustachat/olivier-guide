@@ -1,0 +1,268 @@
+{
+  "schoolId": "rutgers",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://scarletknights.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 32,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Rafael Ponce de Leon",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "Pennington, N.J. / Pennington School",
+      "previousSchool": null
+    },
+    {
+      "name": "Simon Gorczowski",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Saddle Brook, N.J. / Saddle Brook",
+      "previousSchool": null
+    },
+    {
+      "name": "Devon Stopek",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Cherry Hill, N.J. / YSC Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Collins",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Mount Olive, N.J. / Gill St. Bernard's",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Kitch",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Medford, N.J. / Shawnee",
+      "previousSchool": null
+    },
+    {
+      "name": "Pius Ssebulime",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Masaka, Uganda /",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Mastrodimos",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Hoboken, N.J. / YSC Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "William Pierce",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Gr.",
+      "hometown": "Christchurch, New Zealand / AF Pacific",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Kitch",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Medford, N.J. / Shawnee",
+      "previousSchool": null
+    },
+    {
+      "name": "Dan Karsten",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Erfurt, Germany /",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Hannawald",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Mannheim, Germany /",
+      "previousSchool": null
+    },
+    {
+      "name": "Lenny Aviles",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "Jr.",
+      "hometown": "East Windsor, N.J. / Notre Dame HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas Angelone",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Boston, Mass. / Buckingham Browne & Nichols",
+      "previousSchool": null
+    },
+    {
+      "name": "Jude Essuman",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Takoradi, Ghana / Woodstock Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Brian Nascimento",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Hillsborough, N.J. / Hillsborough",
+      "previousSchool": null
+    },
+    {
+      "name": "Dylan Carlson",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Sayreville, N.J. / Saint John Vianney",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaeden Gordon",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "West Bay, Grand Cayman / The Darlington School",
+      "previousSchool": null
+    },
+    {
+      "name": "Joshua Jerome",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Freehold, N.J. / Freehold",
+      "previousSchool": null
+    },
+    {
+      "name": "Amer Lukovic",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Gr.",
+      "hometown": "Clifton, N.J. / Clifton",
+      "previousSchool": null
+    },
+    {
+      "name": "Hector Criado",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Madrid, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Jan Ziewiec",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Krakow, Poland / I Liceum Ogólnoksztalcace im. Bartlomieja Nowodworskiego",
+      "previousSchool": null
+    },
+    {
+      "name": "Francesco Di Ponzio",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Oakland, N.J. / Indian Hills",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeffrey Bryjak",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Elmwood Park, N.J. / Elmwood Park",
+      "previousSchool": null
+    },
+    {
+      "name": "Matty Lynch",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Chesterfield, N.J. / The Pennington School",
+      "previousSchool": null
+    },
+    {
+      "name": "Cedric Lemaire",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Williamstown, Mass. / Northwood School",
+      "previousSchool": null
+    },
+    {
+      "name": "Erick Ruiz",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Bloomfield, N.J. / Bloomfield",
+      "previousSchool": null
+    },
+    {
+      "name": "Abubaker Mayanja",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Kampala, Uganda / St. Henry's College Kitovu",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Andrus",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Fallston, Md. / YSC Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Chapman",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Maplewood, N.J. / YSC Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Brown",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Lyman, S.C. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Ailan Panton",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Port-of-Spain, Trinidad and Tobago / The Darlington School",
+      "previousSchool": null
+    },
+    {
+      "name": "Braxton Montgomery",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Scottsdale, Ariz. / Horizon",
+      "previousSchool": null
+    }
+  ]
+}

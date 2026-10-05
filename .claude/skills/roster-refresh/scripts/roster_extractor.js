@@ -17,6 +17,7 @@
 //   listcard   Sidearm list cards      .sidearm-list-card-item
 //   wmtlist    WMT list view           .roster-list-item
 //   wmtcard    WMT card view           .roster-card-item
+//   plist      WMT player list (Penn State) .player-list-item
 //   nextgen    newer Sidearm cards     .s-person-card
 (function (schoolId) {
   const T = el => (el ? el.textContent.replace(/\s+/g, ' ').trim() : '');
@@ -131,6 +132,24 @@
     const cls = info.find(v => CLASS_RE.test(v) && v.length < 22) || '';
     const rest = info.filter(v => v !== cls && !/^\d+[′'’]|lbs\b/i.test(v));
     return { name: first(c, ['.roster-card__title-link', '.roster-card__title']), pos, cls, hometown: rest[0] || '', prev: '', hs: rest[1] || '' };
+  });
+
+  // ── WMT ".player-list-item" view (Penn State): every field is a labelled title/value pair ──
+  tryCards('plist', '.player-list-item', c => {
+    const pos = first(c, ['.player-list-item__position']);
+    if (!pos) return null;
+    const lab = {};
+    c.querySelectorAll('.profile-field-content').forEach(f => {
+      const l = norm(T(f.querySelector('.profile-field-content__title'))), v = T(f.querySelector('.profile-field-content__value'));
+      if (l && !(l in lab)) lab[l] = v;
+    });
+    const prevKey = Object.keys(lab).find(k => /previous|lastschool|priorschool|college/.test(k));
+    if (prevKey) hasPrevCol = true;
+    return {
+      name: first(c, ['.player-list-item__title-link', '.player-list-item__title']), pos,
+      cls: lab.class || lab.academicyear || lab.year || '',
+      hometown: lab.hometown || '', prev: prevKey ? lab[prevKey] : '', hs: lab.highschool || ''
+    };
   });
 
   // ── newer Sidearm ("nextgen") cards: fields are sr-only label + value pairs ──

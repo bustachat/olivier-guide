@@ -1,0 +1,252 @@
+{
+  "schoolId": "washington",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gohuskies.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Kenny Pierpoint",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "2nd",
+      "hometown": "Spokane, Wash. / Gonzaga Preparatory",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Newman",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "1st",
+      "hometown": "Seattle, Wash. / Federal Way Internet Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Stockton Short",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Pleasant View, Utah / Weber HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Harper Mikolasy",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "1st",
+      "hometown": "Woodinville, Wash. / Woodinville HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Harrison Bertos",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "4th",
+      "hometown": "Bedford, Mass. / Brooks HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Egor Akulov",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Redmond, Wash. / The Overlake School",
+      "previousSchool": null
+    },
+    {
+      "name": "Asher Hestad",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "3rd",
+      "hometown": "Seattle, Wash. / Lincoln HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Ramsey",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "3rd",
+      "hometown": "Redmond, Wash. / Mount Si HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Hall",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "3rd",
+      "hometown": "Newcastle, Wash. / Liberty HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Clarens Dollin",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "2nd",
+      "hometown": "Pullman, Wash. / Pullman HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Emmett Layman",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "4th",
+      "hometown": "Clinton, Whidbey Island, Wash. / South Whidbey HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Callum Lugton",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "2nd",
+      "hometown": "Portland, Ore. / Baker City Charter School",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick O'Brien",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "5th",
+      "hometown": "San Jose, Calif. / Archbishop Mitty HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Carter Gay",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "3rd",
+      "hometown": "Everett, Wash. / Cascade HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Hernandez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "2nd",
+      "hometown": "Sunnyside, Wash. / Sunnyside HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Nate Chandler",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "1st",
+      "hometown": "Pleasant Hill, Calif. / De La Salle HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Zack Meier",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "2nd",
+      "hometown": "Kirkland, Wash. / Lake Washington HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Cameron Cruz",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "5th",
+      "hometown": "Seattle, Wash. / Franklin HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ibrahim Rashad",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "1st",
+      "hometown": "Oakland, Calif. / Head-Royce School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jake Goetting",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "1st",
+      "hometown": "Berkeley, Calif. / Berkeley HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordy Dierks",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "1st",
+      "hometown": "Lake Forest Park, Wash. / Laurel Springs HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Osato Enabulele",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "2nd",
+      "hometown": "Murphy, Texas / Wylie HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Shaun Brun",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "1st",
+      "hometown": "West Seattle, Wash. / West Seattle HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Connor Lofy",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "4th",
+      "hometown": "Kirkland, Wash. / O'Dea HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Garcia",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "1st",
+      "hometown": "Wenatchee, Wash. / Wenatchee HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Eashan Patel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "1st",
+      "hometown": "Bellevue, Wash. / Newport HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaeger Felton",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "3rd",
+      "hometown": "Seattle, Wash. / Seattle Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Wyatt Lewis",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "5th",
+      "hometown": "Saint Charles, Mo. / Saint Louis Priory School",
+      "previousSchool": null
+    },
+    {
+      "name": "Chad Sovde",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "4th",
+      "hometown": "Bellevue, Wash. / Newport HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabe Fernandez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "3rd",
+      "hometown": "Port Orchard, Wash. / South Kitsap HS",
+      "previousSchool": null
+    }
+  ]
+}

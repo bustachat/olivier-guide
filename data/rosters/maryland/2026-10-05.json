@@ -1,0 +1,236 @@
+{
+  "schoolId": "maryland",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://umterps.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Nikolaj Bertelsen",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Vejle, Denmark / Campus Vejle",
+      "previousSchool": "Emory & Henry"
+    },
+    {
+      "name": "Luke Burdett",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Fr.",
+      "hometown": "Woodstock, MD / DC United Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Lilian Fichelle",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Attiches, France / Racing Club de Lens",
+      "previousSchool": "Campbell"
+    },
+    {
+      "name": "Jason Atakora",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Ashanti, Ghana / Exulted FC",
+      "previousSchool": null
+    },
+    {
+      "name": "Ljubomir Popovic",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Wolfurt, Austria / Wifi Dornbirn",
+      "previousSchool": "Tyler Junior College"
+    },
+    {
+      "name": "Leon Koehl",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Cologne, Germany / Bayer Leverkusen",
+      "previousSchool": null
+    },
+    {
+      "name": "Antoine Coupland",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Chelsea, Quebec / College Saint-Alexandre de la Gatineau",
+      "previousSchool": null
+    },
+    {
+      "name": "Albi Ndrenika",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Olney, MD / Baltimore Armour",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo Neri",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Madrid, Spain / Athletico Madrid",
+      "previousSchool": null
+    },
+    {
+      "name": "Dominic Ayella",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Gulu, Uganda / Kibuli Secondary School",
+      "previousSchool": "Lindsey Wilson"
+    },
+    {
+      "name": "Rocket Ritarita",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Canton, GA / Charlotte FC Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Maxwell Sekyi",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "Fr.",
+      "hometown": "Accra, Ghana / Ejisuman Senior",
+      "previousSchool": null
+    },
+    {
+      "name": "Zack Harris",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Agoura Hills, CA / Oak Park",
+      "previousSchool": "CSUN"
+    },
+    {
+      "name": "Kenny Quist-Therson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Ellicott City, MD / Baltimore Armour",
+      "previousSchool": null
+    },
+    {
+      "name": "Jace Clark",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Baltimore, MD / Loudoun United",
+      "previousSchool": null
+    },
+    {
+      "name": "Marco Wright",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Gastonia, NC / Gaston Day",
+      "previousSchool": "Campbell"
+    },
+    {
+      "name": "Casey Price",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "R-Fr.",
+      "hometown": "Forest Hill, MD / Pipeline SC / Archbishop Curley",
+      "previousSchool": null
+    },
+    {
+      "name": "Luka Juricic",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Georgetown, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Dennis Kalanzi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Kampala, Uganda / Masaka Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Henry Bernstein",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Gladwyne, PA / Philadelphia Union Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Gassan",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Miami, FL / Western HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Cielewich",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Severna Park, MD / DC United U-18/19",
+      "previousSchool": null
+    },
+    {
+      "name": "Laurin Mack",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Emmendingen, Germany / SC Freiburg",
+      "previousSchool": null
+    },
+    {
+      "name": "Alexander Milosevic",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Vancouver, British Columbia / Vancouver Whitecaps FC",
+      "previousSchool": null
+    },
+    {
+      "name": "Emil Nymann Anderson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Thisted, Denmark / Aalborg BK",
+      "previousSchool": null
+    },
+    {
+      "name": "Franklin Affanyi",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Accra-Nungua, Ghana / Montverde Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Farouk Cisse",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Bonn, Germany / Borussia Dortmund",
+      "previousSchool": null
+    },
+    {
+      "name": "Said El Eyssami",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Merida, Venezuela / Northwood Prep",
+      "previousSchool": null
+    }
+  ]
+}

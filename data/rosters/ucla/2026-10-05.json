@@ -1,0 +1,252 @@
+{
+  "schoolId": "ucla",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://uclabruins.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Wyatt Nelson",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Seattle, Washington",
+      "previousSchool": "Roosevelt High School"
+    },
+    {
+      "name": "Shakir Nixon",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Cerritos, California",
+      "previousSchool": "Cerritos High School"
+    },
+    {
+      "name": "Tre Wright",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": "Lake Travis High School"
+    },
+    {
+      "name": "Victor Ciaurriz",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "5th Yr.",
+      "hometown": "Pamplona, Spain",
+      "previousSchool": "Universidad Publica de Navarra"
+    },
+    {
+      "name": "Mathis Richter",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Neuenkirchen, Germany",
+      "previousSchool": "University of Alabama, Birmingham"
+    },
+    {
+      "name": "Diego Martinez",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "5th Yr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Rey Juan Carlos University"
+    },
+    {
+      "name": "Philip Naef",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Copenhagen, Denmark",
+      "previousSchool": "IS Berne"
+    },
+    {
+      "name": "Tamir Ratoviz",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Los Angeles, California",
+      "previousSchool": "Oak Park High School"
+    },
+    {
+      "name": "Oliver Roche",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Odense, Denmark",
+      "previousSchool": "Virginia Tech"
+    },
+    {
+      "name": "Jaime Amaro",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Bryant University"
+    },
+    {
+      "name": "David de la Vibora",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Marshall University"
+    },
+    {
+      "name": "Zach Neuls",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Beaverton, Oregon",
+      "previousSchool": "UC Davis"
+    },
+    {
+      "name": "Albert Ruiz",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": "University of Wales"
+    },
+    {
+      "name": "David Diez",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "5th Yr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "La Salle Centro Universitario"
+    },
+    {
+      "name": "Allan Legaspi",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Pico Rivera, California",
+      "previousSchool": "California Connections Academy"
+    },
+    {
+      "name": "Sebastian Rincon",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "5th Yr.",
+      "hometown": "Culver City, California",
+      "previousSchool": "Palisades Charter High School"
+    },
+    {
+      "name": "Finot Pie",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "5th Yr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": "London Metropolitan University"
+    },
+    {
+      "name": "Tristan Shaw",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Scottsdale, Arizona",
+      "previousSchool": "Chaparral High School"
+    },
+    {
+      "name": "Marcus Jackson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "West Orange, New Jersey",
+      "previousSchool": "West Orange High School"
+    },
+    {
+      "name": "Ander Marticorena",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Pamplona, Spain",
+      "previousSchool": "Universidad Publica de Navarra"
+    },
+    {
+      "name": "Francis Bonsu",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Kumasi, Ghana",
+      "previousSchool": "Milbrook High School (N.Y.)"
+    },
+    {
+      "name": "Ryan Tiltack",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Toronto, Canada",
+      "previousSchool": "Lawrence Park Collegiate Institute"
+    },
+    {
+      "name": "Logan Hall",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Fort Lauderdale, Florida",
+      "previousSchool": "Jacksonville University"
+    },
+    {
+      "name": "Henry Jeffcott",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "London, England",
+      "previousSchool": "St. John’s School"
+    },
+    {
+      "name": "Diego Castano",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "5th Yr.",
+      "hometown": "Benicasim, Spain",
+      "previousSchool": "Universidad Isabel I"
+    },
+    {
+      "name": "Dylan Hooper",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "5th Yr.",
+      "hometown": "Shawnee, Kansas",
+      "previousSchool": "Stanford"
+    },
+    {
+      "name": "James Lane",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Culver City, California",
+      "previousSchool": "Culver City High School"
+    },
+    {
+      "name": "Adrian Aguilar",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Burbank, California",
+      "previousSchool": "John Burroughs High School"
+    },
+    {
+      "name": "Cameron Arnold",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "5th Yr.",
+      "hometown": "Dusseldorf, Germany",
+      "previousSchool": "James Madison University"
+    },
+    {
+      "name": "Blake Bayless",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Plano, Texas",
+      "previousSchool": "IUniversity Prep"
+    }
+  ]
+}

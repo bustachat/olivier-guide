@@ -1,0 +1,228 @@
+{
+  "schoolId": "wisconsin",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://uwbadgers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Luke Shrivers",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-So.",
+      "hometown": "Centerville, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Robert Kaemmerer",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Torrance, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Brown-Samper",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Mystic, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Kuhr",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Hermosa Beach, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Berghauer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Elm Grove, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Aden Green",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Sydney, Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "Christopher Salazar",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Frisco, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Zachemski",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Itasca, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Markie Hrvojevic",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Wilmette, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristobal Porter",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-Jr.",
+      "hometown": "Concepcion, Chile",
+      "previousSchool": null
+    },
+    {
+      "name": "Emile Kisse",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Toronto, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Banks",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-So.",
+      "hometown": "Edina, Minn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ari van Mol",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Madison, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joaquin Torres",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Albuquerque, N.M.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emory Ortwein",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Milwaukee",
+      "previousSchool": null
+    },
+    {
+      "name": "Roman Eisa",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-Jr.",
+      "hometown": "Elmhurst, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joon Han",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "R-Jr.",
+      "hometown": "Orem, Utah",
+      "previousSchool": null
+    },
+    {
+      "name": "Dominik Baczewski",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Northbrook, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Martinez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Austin, Minn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gianluca Del Priore",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "St. Catherines, ON",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Smith",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Jr.",
+      "hometown": "Whitefish Bay, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Caleb Capone",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "New York",
+      "previousSchool": null
+    },
+    {
+      "name": "Ellis Jones",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Wednesbury, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Chavez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Elmhurst, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Judewellin Michel",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Montreal, Quebec",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Smith",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Hinsdale, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke van Heukelum",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Elmhurst, Ill.",
+      "previousSchool": null
+    }
+  ]
+}

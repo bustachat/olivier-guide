@@ -1,0 +1,228 @@
+{
+  "schoolId": "michiganstate",
+  "schoolFile": "data/big-ten.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://msuspartans.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Jake Grekowicz",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Rochester, Mich. / Rochester Adams",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Eby",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Northville, Mich. / Northville",
+      "previousSchool": null
+    },
+    {
+      "name": "Jared Smid",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Huntsville, Ala. / James Clemens",
+      "previousSchool": null
+    },
+    {
+      "name": "Conner O'Keefe",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "West Seattle, Wash. / Kennedy Catholic",
+      "previousSchool": "Saint Francis"
+    },
+    {
+      "name": "Brandon Munson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Spring Hill, Fla. / Mill Valley",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Norkett",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Naperville, Ill. / Chicago Fire Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Phelan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "San Antonio, Texas / Reagan",
+      "previousSchool": null
+    },
+    {
+      "name": "Miles Merritt",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Albuquerque, N.M. / Sandia Prep",
+      "previousSchool": "Incarnate Word"
+    },
+    {
+      "name": "Andrew Darakdjian",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Commerce Township, Mich. / Walled Lake Northern",
+      "previousSchool": "Oakland"
+    },
+    {
+      "name": "Richie Ludwig",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Clarkston, Mich. / Clarkston",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Spadafora",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Northville, Mich. / Austin FC",
+      "previousSchool": null
+    },
+    {
+      "name": "Innocent Ngabo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Grand Rapids, Mich. / East Kentwood",
+      "previousSchool": null
+    },
+    {
+      "name": "Dom Dono",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Plymouth, Mich.",
+      "previousSchool": null
+    },
+    {
+      "name": "Oscar Huerta",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Melvindale, Mich. / Melvindale",
+      "previousSchool": null
+    },
+    {
+      "name": "Colin Arce",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Utica, Michigan / Utica",
+      "previousSchool": null
+    },
+    {
+      "name": "Peter Soudan",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Western Springs. Ill. / Chicago Fire Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Cassell",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "JEB Knox",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Urbandale, Iowa / Shattuck St. Mary’s",
+      "previousSchool": null
+    },
+    {
+      "name": "Kayden Hudson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Peoria,Ill. / Peoria Notre Dame",
+      "previousSchool": null
+    },
+    {
+      "name": "Thatcher Hogan",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Peoria, Ill. / Peoria Notre Dame",
+      "previousSchool": null
+    },
+    {
+      "name": "Per Bredvei",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Sandefjord, Norway / Sandefjord",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Conneh",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Anoka, Minn. / Liberty",
+      "previousSchool": null
+    },
+    {
+      "name": "Mohamed Saad",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Dearborn Heights, Mich. / Crestwood",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Lusky",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Milford, Mich. / Minnesota United",
+      "previousSchool": null
+    },
+    {
+      "name": "Drew Rensing",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "East Lansing, Mich. / East Lansing",
+      "previousSchool": null
+    },
+    {
+      "name": "Ezra Horlings",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "South Lyon, Mich. / Detroit Catholic Central",
+      "previousSchool": null
+    },
+    {
+      "name": "David Anderson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Fort Wayne, Ind. / Bishop Dwenger",
+      "previousSchool": "St. Johns"
+    }
+  ]
+}

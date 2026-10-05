@@ -1,0 +1,220 @@
+{
+  "schoolId": "monmouth",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://monmouthhawks.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 26,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Matthew Link",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Schnecksville, Pa. / Parkland",
+      "previousSchool": null
+    },
+    {
+      "name": "Herman Johnsen",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Kristiansand S, Norway / Kristiansand Katrdralskole Gimle",
+      "previousSchool": null
+    },
+    {
+      "name": "Raul Garcia",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Madrid, Spain / Instituto Profesor Maximo Trueba",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Carrasco",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain / Nuestra Señora del Buen Consejo",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Zonta",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Palotina, Brazil / EEB Prof Nicolina Tancredo",
+      "previousSchool": null
+    },
+    {
+      "name": "Elias Stingl",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Cape Town, South Africa / Reddam House",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean Cadigan",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Cedar Grove, N.J. / Montclair Kimberley Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Javier Losa",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Valencia, Spain / IES Laurona",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Andersson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Örebro, Sweden / Virginska idrottsgymnasiet",
+      "previousSchool": null
+    },
+    {
+      "name": "Jasen Bottini",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Upper Saddle River, N.J. / Northern Highlands Regional",
+      "previousSchool": null
+    },
+    {
+      "name": "Jessy Bichler",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Quebec, Canada / École secondaire Cardinal-Roy",
+      "previousSchool": null
+    },
+    {
+      "name": "Ian Brunet",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Sr.",
+      "hometown": "Fayetteville, Ga. / Whitewater",
+      "previousSchool": null
+    },
+    {
+      "name": "Aaron Rodrigues",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Fr.",
+      "hometown": "Mountainside, N.J. / Governor Livingston",
+      "previousSchool": null
+    },
+    {
+      "name": "Marco Pantano",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "East Rockaway, N.Y. / Lynbrook",
+      "previousSchool": null
+    },
+    {
+      "name": "Colin Volpe",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Montville, N.J. / Montville Township",
+      "previousSchool": null
+    },
+    {
+      "name": "Marcin Kluz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Monroe, N.Y. / Monroe Woodbury",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrea Croce",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Rome, Italy / Istituto Magistrale Vittorio Gassman",
+      "previousSchool": null
+    },
+    {
+      "name": "Brendan Tansey",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "Jr.",
+      "hometown": "North Bellmore, N.Y. / Mepham",
+      "previousSchool": null
+    },
+    {
+      "name": "Marco Li Vigni",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Fr.",
+      "hometown": "Staten Island, N.Y. / Tottenville",
+      "previousSchool": null
+    },
+    {
+      "name": "JT Lynch",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Mount Siani, N.Y. / Mount Siani",
+      "previousSchool": null
+    },
+    {
+      "name": "Tommy Damiano",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Randolph, NJ / Randolph",
+      "previousSchool": null
+    },
+    {
+      "name": "Brady Orendac",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Lumberton, N.J. / Rancocas Valley Regional",
+      "previousSchool": null
+    },
+    {
+      "name": "Eric Palei",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Brooklyn, N.Y. / Brooklyn Technical",
+      "previousSchool": null
+    },
+    {
+      "name": "Damian Taraska",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Saddle Brook, NJ / Saddle Brook",
+      "previousSchool": null
+    },
+    {
+      "name": "Rokas Jarusevicius",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Jackson, N.J. / Marine Academy of Tech. & Environmental Science",
+      "previousSchool": null
+    },
+    {
+      "name": "Jason King",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Smithtown, N.Y. / Smithtown East",
+      "previousSchool": null
+    }
+  ]
+}

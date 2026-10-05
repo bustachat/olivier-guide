@@ -1,0 +1,244 @@
+{
+  "schoolId": "drexel",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://drexeldragons.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Raphael Bartell",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Rostock, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Levy Lanado",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Mexico City, Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Ignacio Alberola",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Alicante, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Mekhi Wright",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Toronto, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Gustavo Santana",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "São Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Aamir Ketbache",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Frankfurt am Main, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas Wede",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Gothenburg, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Tomislav Vrdoljak",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Moerck",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Vaerloese, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Morgan Worsfold-Gregg",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "London, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Tiago Lima-Bittencourt",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Curitiba, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Combs",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "5th",
+      "hometown": "North Wales, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Starker",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Columbus, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Sharif Mohammed",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Akim Oda, Ghana",
+      "previousSchool": null
+    },
+    {
+      "name": "Gianluca Grubic",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Burlington, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Mo Diallo",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Paris, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Frye",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Doylestown, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brendan Welsh",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Warrington, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brian Salvino",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Western Springs, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Celso",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Porto, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Weller",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "5th",
+      "hometown": "Westminster, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Haberl",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Sr.",
+      "hometown": "Seeham, Austria",
+      "previousSchool": null
+    },
+    {
+      "name": "Leon Park",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Gonzalo Alberola",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Alicante, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Eddie Davis",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Torino, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Peter Punchello",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Jamison, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Niklas Taeger",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Kressberg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "James Fitzgerald",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Flourtown, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Pittaoulis",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "5th",
+      "hometown": "Philadelphia, Pa.",
+      "previousSchool": null
+    }
+  ]
+}

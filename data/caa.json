@@ -141,12 +141,12 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 11,
+      "mf_total": 10,
       "roster_season": "2026-27",
       "cleared_before_2027": 3,
       "cleared_names": [
-        "Arnau Olle",
-        "Ezequiel Emanuele Goetzke",
+        "Arnau Ollé",
+        "Ezequiel Emanuele",
         "Hogan Walker"
       ],
       "rising_senior_2027_count": 2,
@@ -154,11 +154,9 @@
         "Stian Bendvold",
         "Ramsey Ray"
       ],
-      "rising_junior_2027_count": 5,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
-        "Dan Toulson",
         "Federico Bellisi",
-        "Bemanzi Alibaruho",
         "Reeves Cates",
         "Paul Killeen"
       ],
@@ -189,9 +187,9 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "Yr1 competitive: 4 rising juniors present. Yr2 Olivier proves himself while juniors become seniors. Yr3 major clearance opens leadership role.",
+      "trajectoryNote": "On the 2026-27 roster, 3 of 10 midfielders finish before Olivier arrives in August 2027. In his first season, 2 will be seniors, 3 will be juniors and 2 will be sophomores. One more player is listed with midfield as a second position (D/MF) and is not counted.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 cofcsports.com roster (11 MFs of 28). Charleston's table publishes no previous-school column, so the split cannot be re-derived; classification retained and flagged lower-confidence. 5 of 11 are sophomores returning through 2029, so the queue behind the 3 departing seniors is long."
+      "recruit_pathway_note": "On the 2026-27 College of Charleston roster, 10 of 28 players are listed as midfielders. The roster does not publish previous schools, so the freshman-friendly rating is carried over from earlier research and is less certain. Five of the ten are sophomores or freshmen, so the group behind the three departing players is young."
     },
     "profileDepth": "full",
     "confKey": "caa",
@@ -202,14 +200,20 @@
       {
         "name": "Jet Terry",
         "role": "Assistant Coach",
-        "email": "",
+        "email": "terryj@cofc.edu",
         "bg": "Hired March 2025. Charleston native, former CofC player 2016. 2 seasons as assistant at Saginaw Valley State (D2) where he helped win conf title and reach NCAA QF. Previously Director of Soccer Operations at CofC 2022-23."
       },
       {
         "name": "Ernesto Aguinaga-Hernandez",
         "role": "Assistant Coach",
-        "email": "",
+        "email": "aguinagahernandeze@cofc.edu",
         "bg": "Joined July 2025. Previously volunteer assistant at Univ of Wisconsin-Parkside 4 seasons. Helped 2 conference titles, 3 NCAA D2 tournaments. Former trialist Club Leon FC (Mexico)."
+      },
+      {
+        "name": "Jake Douvas",
+        "role": "Assistant Coach",
+        "email": "douvasj@cofc.edu",
+        "bg": "Assistant Coach."
       }
     ],
     "acuUnits": [
@@ -320,14 +324,14 @@
     },
     "mapX": 509,
     "mapY": 188,
-    "fitOlivier": 36,
+    "fitOlivier": 35,
     "lensScores": {
-      "overall": 36,
+      "overall": 35,
       "soccer": 49,
       "academic": 68,
-      "minutes": 31,
+      "minutes": 26,
       "lifestyle": 0,
-      "value": 22
+      "value": 21
     },
     "confRecord": [
       {
@@ -394,11 +398,10 @@
     "domain": "wm.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 11,
+      "mf_total": 10,
       "roster_season": "2026-27",
-      "cleared_before_2027": 4,
+      "cleared_before_2027": 3,
       "cleared_names": [
-        "Hamilton Howes",
         "Gabe Ruitenberg",
         "Alexandros Katsari-Hoefer",
         "Kai Feng"
@@ -417,20 +420,20 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
+          "pct": 20,
           "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 35,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
-          "label": "Established starter"
+          "pct": 60,
+          "label": "Likely starter"
         },
         {
           "year": 2030,
@@ -439,9 +442,9 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 4 of 11 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 2 will be juniors and 4 will be sophomores.",
+      "trajectoryNote": "On the 2026-27 roster, 3 of 10 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 2 will be juniors and 4 will be sophomores. One more player is listed with midfield as a second position (Defender/Midfielder) and is not counted.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-confirmed on the live 2026-27 tribeathletics.com roster (11 MFs of 28). Only 1 of 11 lists a previous college (Kai Feng, VCU); the other 10 arrived directly from high school or club. 4 clear before 2027 against just 1 rising senior."
+      "recruit_pathway_note": "On the 2026-27 William & Mary roster, 10 of 28 players are listed as midfielders. Only one lists a previous college (Kai Feng, VCU); the other nine came straight from high school or club. Three finish before August 2027 and four are freshmen."
     },
     "color": [
       "#dbeafe",
@@ -477,10 +480,22 @@
         "bg": "1995 W&M graduate and former Tribe defender, in his 23rd season as head coach (36th on staff). 166-169-60 record with CAA titles in 2010 and 2017, four NCAA appearances and a 2010 Sweet Sixteen; 2010 CAA Coach of the Year."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Kyle Symczak",
         "role": "Assistant Coach",
-        "email": "soccer@wm.edu",
-        "bg": "Full-time assistant."
+        "email": "ksymczak@wm.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Tyler Doll",
+        "role": "Assistant Coach",
+        "email": "tjdoll@wm.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Jeff Dominguez",
+        "role": "Assistant Coach",
+        "email": "",
+        "bg": "Assistant Coach."
       }
     ],
     "acuUnits": [
@@ -680,10 +695,11 @@
         "Charlie Blair",
         "Owen Haviland"
       ],
-      "rising_junior_2027_count": 2,
+      "rising_junior_2027_count": 3,
       "rising_junior_2027_names": [
         "Jack Benham",
-        "Axel Ruben"
+        "Axel Ruben",
+        "Konstantinos Karageorgis"
       ],
       "recruit_risk": "High",
       "trajectory": [
@@ -712,9 +728,9 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 2 of 12 midfielders finish before Olivier arrives in August 2027. In his first season, 4 will be seniors, 2 will be juniors and 4 will be sophomores.",
+      "trajectoryNote": "On the 2026-27 roster, 2 of 12 midfielders finish before Olivier arrives in August 2027. In his first season, 4 will be seniors, 3 will be juniors and 3 will be sophomores.",
       "recruit_pathway": "Portal/JUCO-heavy",
-      "recruit_pathway_note": "Re-read on the live 2026-27 gohofstra.com roster (12 MFs of 27 — doubled from the 6 recorded on the 2025-26 roster). No previous-school column is published, so the stored Portal/JUCO-heavy classification is retained rather than re-derived and should be treated as lower-confidence — note it is the one non-freshman-friendly value in the CAA file, so it is worth re-testing when Hofstra next publishes the column."
+      "recruit_pathway_note": "On the 2026-27 Hofstra roster, 12 of 27 players are listed as midfielders. The roster does not publish previous schools, so the transfer-heavy rating is carried over from earlier research and is less certain. It is worth re-checking if Hofstra starts publishing previous schools."
     },
     "color": [
       "#dbeafe",
@@ -750,10 +766,22 @@
         "bg": "Promoted to head coach January 2026 after 10 seasons on staff as tactical/recruiting lead. Architect of four straight CAA titles (2021-24) and a 114-47-31 run; Dublin native and former League of Ireland pro; developed six MLS draftees."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Shaun Foster",
+        "role": "Associate Head Coach",
+        "email": "shaun.d.foster@hofstra.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Tom Bowen",
         "role": "Assistant Coach",
-        "email": "soccer@hofstra.edu",
-        "bg": "Full-time assistant."
+        "email": "thomas.bowen@hofstra.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Dennis Mejia",
+        "role": "Volunteer Assistant Coach Trainee",
+        "email": "dennis.e.mejia@hofstra.edu",
+        "bg": "Volunteer Assistant Coach Trainee."
       }
     ],
     "acuUnits": [
@@ -864,14 +892,14 @@
     },
     "mapX": 544,
     "mapY": 136,
-    "fitOlivier": 36,
+    "fitOlivier": 35,
     "lensScores": {
-      "overall": 36,
+      "overall": 35,
       "soccer": 45,
       "academic": 73,
-      "minutes": 14,
+      "minutes": 12,
       "lifestyle": 50,
-      "value": 22
+      "value": 21
     },
     "confRecord": [
       {
@@ -937,12 +965,10 @@
     "domain": "northeastern.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 14,
+      "mf_total": 13,
       "roster_season": "2026-27",
-      "cleared_before_2027": 1,
-      "cleared_names": [
-        "Matty Gardner"
-      ],
+      "cleared_before_2027": 0,
+      "cleared_names": [],
       "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
         "Ethan Kang",
@@ -968,25 +994,25 @@
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 20,
-          "label": "Bench / development"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 45,
+          "pct": 35,
           "label": "Squad rotation"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 75,
+          "pct": 65,
           "label": "Established starter"
         }
       ],
-      "trajectoryNote": "⚠️ 2025 roster (+1 applied). Massive 10/12 MF turnover — only 2 Freshmen remain by Fall 2027. Elite opportunity window. Northeastern's co-op model means fewer players per year.",
+      "trajectoryNote": "On the 2026-27 roster, none of the 13 midfielders finish before Olivier arrives in August 2027. In his first season, 3 will be seniors, 5 will be juniors and 5 will be sophomores. One more player is listed with midfield as a second position (Defense/Midfield) and is not counted.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-confirmed on the live 2026-27 nuhuskies.com roster (14 MFs of 27). 13 of 14 MFs have a previous-school entry, but almost every one is a CLUB or academy rather than a college — Houston Dynamo (MLS NEXT), Toronto FC, Barca Residency Academy, Minnesota United II, Atlanta United Academy, SC Verl II, Blau Weiss Gottschee. Only Ignacio Doglioli lists a college (Bellarmine). That is direct academy recruiting, so Freshman-friendly is strongly confirmed — but only 1 MF clears before 2027 against 10 returning underclassmen."
+      "recruit_pathway_note": "On the 2026-27 Northeastern roster, 13 of 27 players are listed as midfielders. Twelve of the 13 list a club or academy as their previous team (Houston Dynamo, Toronto FC, Barca Residency Academy, Minnesota United II, Atlanta United Academy, SC Verl II and others) and only Ignacio Doglioli lists a college (Bellarmine). That is direct academy recruiting, so the freshman-friendly rating is well supported, but none of the 13 finish before August 2027."
     },
     "color": [
       "#fee2e2",
@@ -1022,10 +1048,22 @@
         "bg": "Hired February 2024; two-time Horizon League Coach of the Year across nine seasons at Green Bay (75 wins, 2023 NCAA Tournament). Defensively organized; Boston co-op and medical corridor are key selling points for pre-PT track athletes."
       },
       {
-        "name": "Assistant Coach",
+        "name": "Jordan Koduah",
         "role": "Assistant Coach",
-        "email": "soccer@northeastern.edu",
-        "bg": "Full-time assistant."
+        "email": "j.koduah@northeastern.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "John Manga",
+        "role": "Assistant Coach",
+        "email": "j.manga@northeastern.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "William Levitsky",
+        "role": "Goalkeepers Coach",
+        "email": "",
+        "bg": "Goalkeepers Coach."
       }
     ],
     "acuUnits": [
@@ -1136,14 +1174,14 @@
     },
     "mapX": 524,
     "mapY": 159,
-    "fitOlivier": 47,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 47,
+      "overall": 43,
       "soccer": 48,
       "academic": 68,
-      "minutes": 43,
+      "minutes": 31,
       "lifestyle": 50,
-      "value": 28
+      "value": 26
     },
     "confRecord": [
       {
@@ -1210,14 +1248,12 @@
     "domain": "drexel.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 15,
+      "mf_total": 13,
       "roster_season": "2026-27",
-      "cleared_before_2027": 4,
+      "cleared_before_2027": 2,
       "cleared_names": [
         "Tiago Lima-Bittencourt",
-        "Will Starker",
-        "Max Haberl",
-        "Julian Pittaoulis"
+        "Will Starker"
       ],
       "rising_senior_2027_count": 5,
       "rising_senior_2027_names": [
@@ -1238,31 +1274,31 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 35,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 70,
+          "pct": 65,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 85,
+          "pct": 80,
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 4 of 15 midfielders finish before Olivier arrives in August 2027. In his first season, 5 will be seniors, 3 will be juniors and 3 will be sophomores. Deep MF corps makes early minutes competitive.",
+      "trajectoryNote": "On the 2026-27 roster, 2 of 13 midfielders finish before Olivier arrives in August 2027. In his first season, 5 will be seniors, 3 will be juniors and 3 will be sophomores. 2 more players are listed with midfield as a second position (D/M, F/M) and are not counted.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 drexeldragons.com roster (15 MFs of 29 — an unusually large midfield group). No previous-school column is published, so the classification is retained rather than re-derived and treated as lower-confidence. 4 clear before 2027 and 5 more the year after, but 15 midfielders in a 29-man squad is heavy competition."
+      "recruit_pathway_note": "On the 2026-27 Drexel roster, 13 of 29 players are listed as midfielders, a large group. The roster does not publish previous schools, so the freshman-friendly rating is carried over from earlier research and is less certain. Two finish before August 2027 and five more a year later."
     },
     "color": [
       "#fef9c3",
@@ -1292,16 +1328,28 @@
     },
     "staff": [
       {
-        "name": "Head Coach",
+        "name": "David Castellanos",
         "role": "Head Coach",
-        "email": "soccer@drexel.edu",
+        "email": "dc3369@drexel.edu",
         "bg": "Drexel Dragons head coach. 2021 CAA Champions program. Philadelphia co-op model provides paid clinical placements for pre-PT track athletes."
       },
       {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "soccer@drexel.edu",
-        "bg": "Full-time assistant."
+        "name": "Ptah Myers",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "pm958@drexel.edu",
+        "bg": "Assistant Men's Soccer Coach."
+      },
+      {
+        "name": "Lukas Fernandes",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "lgf27@drexel.edu",
+        "bg": "Assistant Men's Soccer Coach."
+      },
+      {
+        "name": "Matthew Dabrowski",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "md3732@drexel.edu",
+        "bg": "Assistant Men's Soccer Coach."
       }
     ],
     "acuUnits": [
@@ -1412,14 +1460,14 @@
     },
     "mapX": 497,
     "mapY": 211,
-    "fitOlivier": 43,
+    "fitOlivier": 39,
     "lensScores": {
-      "overall": 43,
+      "overall": 39,
       "soccer": 50,
       "academic": 63,
-      "minutes": 48,
+      "minutes": 38,
       "lifestyle": 0,
-      "value": 26
+      "value": 23
     },
     "confRecord": [
       {
@@ -1483,19 +1531,17 @@
     "domain": "elon.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 12,
+      "mf_total": 10,
       "roster_season": "2026-27",
-      "cleared_before_2027": 3,
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Martin Kozak",
         "Jahmir Flowers",
         "Ryan Manna"
       ],
-      "rising_senior_2027_count": 6,
+      "rising_senior_2027_count": 5,
       "rising_senior_2027_names": [
         "Weston Jonke",
         "Daire McCarthy",
-        "Dominik Renz",
         "Noah Sonne Kargo",
         "JP Quigley",
         "Ben Madore"
@@ -1509,31 +1555,31 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 40,
-          "label": "Squad rotation"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 60,
+          "pct": 50,
           "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 80,
-          "label": "Captain candidate"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 90,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "Large 17-player MF pool with 10 remaining by Fall 2027. Highly competitive environment — Olivier would need exceptional performance to break through. Opportunity grows Year 3+ as pool thins.",
+      "trajectoryNote": "On the 2026-27 roster, 2 of 10 midfielders finish before Olivier arrives in August 2027. In his first season, 5 will be seniors, 1 will be a junior and 2 will be sophomores. 2 more players are listed with midfield as a second position (Forward/Midfielder) and are not counted.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 elonphoenix.com roster (12 MFs of 29). Elon publishes no previous-school column, so the split cannot be re-derived; classification retained, lower-confidence. Unusually top-heavy: 9 of 12 MFs are seniors or juniors, so only 3 underclassmen sit behind them — a strong 2028 entry point."
+      "recruit_pathway_note": "On the 2026-27 Elon roster, 10 of 29 players are listed as midfielders. The roster does not publish previous schools, so the freshman-friendly rating is carried over from earlier research and is less certain. The group is top-heavy: seven of the ten are juniors or older, so only three younger players sit behind them, which opens places from 2028."
     },
     "color": [
       "#fed7aa",
@@ -1563,16 +1609,28 @@
     },
     "staff": [
       {
-        "name": "Head Coach",
+        "name": "Marc Reeves",
         "role": "Head Coach",
-        "email": "soccer@elon.edu",
+        "email": "mreeves3@elon.edu",
         "bg": "Elon Phoenix head coach. 2022 + 2025 CAA Tournament Champions — program punches above its weight. Small private university with excellent campus culture."
       },
       {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "soccer@elon.edu",
-        "bg": "Full-time assistant."
+        "name": "Jay O'Donnell",
+        "role": "Associate Head Coach",
+        "email": "jodonnell14@elon.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Calum Erlenborn",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "cerlenborn@elon.edu",
+        "bg": "Assistant Men's Soccer Coach."
+      },
+      {
+        "name": "Roman Stanula",
+        "role": "Volunteer Goalkeepers Coach",
+        "email": "",
+        "bg": "Volunteer Goalkeepers Coach."
       }
     ],
     "acuUnits": [
@@ -1683,12 +1741,12 @@
     },
     "mapX": 531,
     "mapY": 156,
-    "fitOlivier": 32,
+    "fitOlivier": 31,
     "lensScores": {
-      "overall": 32,
+      "overall": 31,
       "soccer": 43,
       "academic": 63,
-      "minutes": 26,
+      "minutes": 21,
       "lifestyle": 0,
       "value": 19
     },
@@ -1754,18 +1812,15 @@
     "domain": "monmouth.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 9,
+      "mf_total": 5,
       "roster_season": "2026-27",
-      "cleared_before_2027": 3,
+      "cleared_before_2027": 2,
       "cleared_names": [
         "Sean Cadigan",
-        "Javier Losa",
-        "Ian Brunet"
+        "Javier Losa"
       ],
-      "rising_senior_2027_count": 1,
-      "rising_senior_2027_names": [
-        "Brendan Tansey"
-      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
       "rising_junior_2027_count": 1,
       "rising_junior_2027_names": [
         "Jessy Bichler"
@@ -1775,31 +1830,31 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Bench / development"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
-          "label": "Squad rotation"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 3 of 9 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 1 will be a junior and 4 will be sophomores.",
+      "trajectoryNote": "On the 2026-27 roster, 2 of 5 midfielders finish before Olivier arrives in August 2027. In his first season, none will be seniors, 1 will be a junior and 2 will be sophomores. 4 more players are listed with midfield as a second position (D/M, F/M) and are not counted.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 monmouthhawks.com roster (9 MFs of 26, up from 5 a year ago). Monmouth's table carries no previous-school column, so the split cannot be re-derived; classification retained, lower-confidence. 3 of 9 clear before 2027 against only 1 rising senior, so the group behind is young."
+      "recruit_pathway_note": "On the 2026-27 Monmouth roster, 5 of 26 players are listed as midfielders, and four more list midfield as a second position. The roster does not publish previous schools, so the freshman-friendly rating is carried over from earlier research and is less certain. Two of the five finish before August 2027 and none will be seniors in Olivier's first season."
     },
     "color": [
       "#dbeafe",
@@ -1829,16 +1884,22 @@
     },
     "staff": [
       {
-        "name": "Head Coach",
+        "name": "Robert McCourt",
         "role": "Head Coach",
-        "email": "soccer@monmouth.edu",
+        "email": "rmccourt@monmouth.edu",
         "bg": "Monmouth Hawks head coach. Developing CAA program. NJ Shore location and NYC proximity are key recruitment differentiators for international athletes."
       },
       {
-        "name": "Assistant Coach",
-        "role": "Assistant Coach",
-        "email": "soccer@monmouth.edu",
-        "bg": "Full-time assistant."
+        "name": "Hugh MacDonald",
+        "role": "Associate Head Coach",
+        "email": "hmacdona@monmouth.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Otto Moosbrugger",
+        "role": "Student Assistant Goalkeeper Coach",
+        "email": "",
+        "bg": "Student Assistant Goalkeeper Coach."
       }
     ],
     "acuUnits": [
@@ -1949,14 +2010,14 @@
     },
     "mapX": 538,
     "mapY": 150,
-    "fitOlivier": 33,
+    "fitOlivier": 35,
     "lensScores": {
-      "overall": 33,
+      "overall": 35,
       "soccer": 45,
       "academic": 68,
-      "minutes": 26,
+      "minutes": 31,
       "lifestyle": 0,
-      "value": 20
+      "value": 21
     },
     "confRecord": [
       {
@@ -2016,7 +2077,7 @@
     "domain": "stonybrook.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 9,
+      "mf_total": 8,
       "roster_season": "2026-27",
       "cleared_before_2027": 3,
       "cleared_names": [
@@ -2038,20 +2099,20 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
+          "pct": 25,
           "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
+          "pct": 40,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
-          "label": "Likely starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -2060,7 +2121,8 @@
           "label": "Captain candidate"
         }
       ],
-      "recruit_pathway_note": "First data available for this school — the roster was previously unreachable at every prior attempt. The live 2026-27 roster now renders normally: 9 MFs of a 29-man squad, 3 clearing before Olivier's 2027 entry. The roster publishes no previous-school column, so the recruiting pathway is left unclassified rather than guessed."
+      "recruit_pathway_note": "On the 2026-27 Stony Brook roster, 8 of 29 players are listed as midfielders and three finish before August 2027. The roster does not publish previous schools, so the recruiting pathway is left unclassified rather than guessed.",
+      "trajectoryNote": "On the 2026-27 roster, 3 of 8 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 2 will be juniors and 2 will be sophomores."
     },
     "color": [
       "#fee2e2",

@@ -1,0 +1,252 @@
+{
+  "schoolId": "northeastern",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://nuhuskies.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Guthrie Kalotay-Nemec",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Gr.",
+      "hometown": "",
+      "previousSchool": "Northeastern Club Soccer",
+      "highSchool": "HSMSE"
+    },
+    {
+      "name": "Bennet Starcke",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": "SV Werder Bremen",
+      "highSchool": "Ökumenisches Gymnasium zu Bremen"
+    },
+    {
+      "name": "Rohin Kapila",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "",
+      "previousSchool": "Marshall",
+      "highSchool": "University Hill Secondary"
+    },
+    {
+      "name": "Ethan Leary",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "",
+      "previousSchool": "Barcelona Academy",
+      "highSchool": "Desert Vista"
+    },
+    {
+      "name": "Marcus Cooper",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": "Boston Bolts",
+      "highSchool": "Attleboro"
+    },
+    {
+      "name": "Jaden Prado",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "",
+      "previousSchool": "Wisconsin-Green Bay",
+      "highSchool": "The Montfort Academy"
+    },
+    {
+      "name": "Kortay Koç",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": "Houston Dynamo (MLS NEXT)",
+      "highSchool": "Seven Lakes"
+    },
+    {
+      "name": "Julius Rüger",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": "SC Verl II"
+    },
+    {
+      "name": "Shai Saarony",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": "IFA New England",
+      "highSchool": "Buckingham Browne & Nichols"
+    },
+    {
+      "name": "Ethan Kang",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "",
+      "previousSchool": "Toronto FC",
+      "highSchool": "Northview Heights Secondary School"
+    },
+    {
+      "name": "Bryce Flowers",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "NE Revolution II",
+      "previousSchool": "Penn State",
+      "highSchool": "Sharon High School"
+    },
+    {
+      "name": "Uba Ibeanu",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": "Barca Residency Academy",
+      "highSchool": "ASU Prep Casa Grande"
+    },
+    {
+      "name": "Richard Conces",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "",
+      "previousSchool": "CE Apa Poble Sec",
+      "highSchool": "ASU Prep Academy"
+    },
+    {
+      "name": "Derian Berisha",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": "FC Westchester"
+    },
+    {
+      "name": "Will Schmidt",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": "Minnesota United II",
+      "highSchool": "Two Rivers"
+    },
+    {
+      "name": "Asiah Carroll",
+      "position": "MF",
+      "positionAsListed": "Midfield/Forward",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": "Blau Weiss Gottschee",
+      "highSchool": "Copiague High School"
+    },
+    {
+      "name": "Julian Blalock",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": "Atlanta United Academy",
+      "highSchool": "Atlanta International School"
+    },
+    {
+      "name": "Joaquin Villarreal",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": "Bay Area Surf",
+      "highSchool": "Archbishop Mitty"
+    },
+    {
+      "name": "Ignacio Doglioli",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Boston Bolts",
+      "previousSchool": "Bellarmine",
+      "highSchool": "IMG Academy"
+    },
+    {
+      "name": "Ethan Davis",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": "Players Development Academy",
+      "highSchool": "Piscataway"
+    },
+    {
+      "name": "Gus Mendieta",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "",
+      "previousSchool": "Queen City Mutiny",
+      "highSchool": "Carmel Christian"
+    },
+    {
+      "name": "Anthony Rapo",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": "New England Futbol Club",
+      "highSchool": "Dover-Sherborn"
+    },
+    {
+      "name": "Christoph Schurz",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "",
+      "previousSchool": "Wisconsin-Green Bay"
+    },
+    {
+      "name": "Matty Gardner",
+      "position": "D",
+      "positionAsListed": "Defense/Midfield",
+      "class": "Gr.",
+      "hometown": "",
+      "previousSchool": null,
+      "highSchool": "Kimball Union Academy"
+    },
+    {
+      "name": "Brady Elmblad",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "",
+      "previousSchool": "New England Revolution Academy",
+      "highSchool": "Sharon"
+    },
+    {
+      "name": "Tate Duax",
+      "position": "MF",
+      "positionAsListed": "Midfield/Defender",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": "VSA Rush",
+      "highSchool": "Ankeny Centennial"
+    },
+    {
+      "name": "Sergey Balatsko",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": "Blau Weiss Gottschee",
+      "highSchool": "New Dorp High School"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "schoolId": "hofstra",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gohofstra.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Anthony Grodzki",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Queens, NY",
+      "previousSchool": null,
+      "highSchool": "Plainview Old Bethpage JFK"
+    },
+    {
+      "name": "Joel Bona",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": null,
+      "highSchool": "IES Bahia de Almeria/Rhode Island"
+    },
+    {
+      "name": "Jack Benham",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Brisbane, Australia",
+      "previousSchool": null,
+      "highSchool": "Kedron State High School/University of Queensland"
+    },
+    {
+      "name": "Bastian Carlman",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Staffanstorp, Sweden",
+      "previousSchool": null,
+      "highSchool": "Polhemskolan/Fort Hays State"
+    },
+    {
+      "name": "James York",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Melbourne, Australia",
+      "previousSchool": null,
+      "highSchool": "Maribyrnong Secondary College"
+    },
+    {
+      "name": "Lewis Johnson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Milton Keynes, United Kingdom",
+      "previousSchool": null,
+      "highSchool": "The Webber Independent School/Gardner Webb"
+    },
+    {
+      "name": "Milo Risenhoover",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Portland, OR",
+      "previousSchool": null,
+      "highSchool": "Ida B. Wells/University of the Pacific"
+    },
+    {
+      "name": "Sean Keane",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "5th",
+      "hometown": "Blarney, Cork, Ireland",
+      "previousSchool": null,
+      "highSchool": "Scoil Mhuire Gan Smal/Auburn Montgomery"
+    },
+    {
+      "name": "Pietro Santi",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Civitavecchia, Italy",
+      "previousSchool": null,
+      "highSchool": "Istituto di Istruzione Superiore \"Luigi Angeloni\" Frosinone"
+    },
+    {
+      "name": "David Citron",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "5th",
+      "hometown": "Fontaine-le-Comte, France",
+      "previousSchool": null,
+      "highSchool": "La Venise Verte/Fort Lewis College"
+    },
+    {
+      "name": "Jordan Hoey",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Dromana, Australia",
+      "previousSchool": null,
+      "highSchool": "Carey Baptist Grammar School"
+    },
+    {
+      "name": "Henri Poll",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Cologne, Germany",
+      "previousSchool": null,
+      "highSchool": "Apostelgymnasium Koln/McKendree"
+    },
+    {
+      "name": "Marc Perkuhn",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Munich, Germany",
+      "previousSchool": null,
+      "highSchool": "Theodolinden Gymnasium/Tyler Junior College"
+    },
+    {
+      "name": "Tristan Armani",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null,
+      "highSchool": "Millfield School (England)/Loyola Marymount"
+    },
+    {
+      "name": "Ben Schulz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Berlin, Germany",
+      "previousSchool": null,
+      "highSchool": "Wilma-Rudolph-Oberschule"
+    },
+    {
+      "name": "Axel Ruben",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Tyler, TX",
+      "previousSchool": null,
+      "highSchool": "Tyler Legacy/Tyler Junior College"
+    },
+    {
+      "name": "Charlie Blair",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Jr.",
+      "hometown": "Bayside, NY",
+      "previousSchool": null,
+      "highSchool": "Chaminade/MLS Next"
+    },
+    {
+      "name": "Patrick Staszewski",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "London, England",
+      "previousSchool": null,
+      "highSchool": "Kingsmead School"
+    },
+    {
+      "name": "Hayes Laibe",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "New Orleans, LA",
+      "previousSchool": null,
+      "highSchool": "Jesuit"
+    },
+    {
+      "name": "Ryner Boone",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Downingtown, PA",
+      "previousSchool": null,
+      "highSchool": "Downingtown STEM Academy"
+    },
+    {
+      "name": "Lewis Matton",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "5th",
+      "hometown": "Weybridge, Surrey, England",
+      "previousSchool": null,
+      "highSchool": "Heathside School/Mississippi College"
+    },
+    {
+      "name": "Rome Strongin",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Pasadena, CA",
+      "previousSchool": null,
+      "highSchool": "St. Francis/MLS Next"
+    },
+    {
+      "name": "Owen Haviland",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Stony Brook, NY",
+      "previousSchool": null,
+      "highSchool": "Ward Melville/Stevenson"
+    },
+    {
+      "name": "Lucas Menchaca Ruiz-Cuevas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null,
+      "highSchool": "Vermont Academy/Husson"
+    },
+    {
+      "name": "Konstantinos Karageorgis",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "So.",
+      "hometown": "Astoria, NY",
+      "previousSchool": null,
+      "highSchool": "IMG Academy"
+    },
+    {
+      "name": "Dylan Wauchope",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "East Meadow, NY",
+      "previousSchool": null,
+      "highSchool": "East Meadow"
+    },
+    {
+      "name": "Aidan GaNun",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Garden City South, NY",
+      "previousSchool": null,
+      "highSchool": "Chaminade"
+    }
+  ]
+}

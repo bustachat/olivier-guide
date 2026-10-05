@@ -6,6 +6,37 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.05 (2026-10-05) — CAA rosters stored and applied (campaign C0, step 4, sixth batch)
+
+**What:** the 8 rosters still to read in `data/caa.json` (Charleston, William & Mary, Hofstra, Northeastern, Drexel, Elon, Monmouth, Stony Brook) were read on each school's own site, stored with positions as published, and applied from the stored roster. UNC Wilmington already had a stored roster. 96 schools' midfielder numbers now come from a stored roster; 103 are still to read.
+
+**Changes:**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Drexel | 15 | 13 | 47 | 43 | Max Haberl (D/M) and Julian Pittaoulis (F/M) list midfield second and are no longer counted (first-listed position rule); both were in the group finishing before August 2027, which falls from 4 to 2 |
+| Elon | 12 | 10 | 43 | 39 | Martin Kozak and Dominik Renz are listed Forward/Midfielder and are no longer counted |
+| William & Mary | 11 | 10 | 36 | 35 | Hamilton Howes is listed Defender/Midfielder and is no longer counted |
+| Northeastern | 14 | 13 | 36 | 35 | Matty Gardner is listed Defense/Midfield and is no longer counted, so no midfielder finishes before August 2027 |
+| Monmouth | 9 | 5 | 32 | 31 | Four players list midfield second (three D/M, one F/M) and are no longer counted |
+| Stony Brook | 9 | 8 | 33 | 35 | The roster lists 8 midfielders; the three who finish before August 2027 are unchanged |
+| Charleston | 11 | 10 | 58 | 58 | Dan Toulson is listed D/MF and is no longer counted. Bemanzi Alibaruho (R-Fr.) had been stored as a 2027 junior; he will be a sophomore. Two stored names now match the roster's spelling (Arnau Ollé, Ezequiel Emanuele) |
+| Hofstra | 12 | 12 | 48 | 48 | Same count; Konstantinos Karageorgis (M/D, So.) is now named in the 2027 junior group |
+
+**Recruiting pathway:** all 8 notes were rewritten in plain language with the new counts. No classification changed. William & Mary and Northeastern publish previous teams; the other six do not, so their ratings are carried over and the notes say so.
+
+**Departure queue:** nothing queued. Every stored name that left a group is still on the roster at another first-listed position or under a corrected spelling.
+
+**Coach check:** the head coach was confirmed on each school's own coaches page for all 8 (Wiggans, Norris, Roche, Bonomo, Castellanos, Reeves, McCourt, Anatol). Charleston's head-coach contact was corrected to what its page publishes (msoccer@cofc.edu, (843) 953-6724); this settles the Charleston entry on the list of unresolved contact conflicts. Titles corrected to the page wording: Charleston and Monmouth "Head Coach", Drexel "Head Men's Soccer Coach". No score changed, so no re-rank. The placeholder assistant lists for William & Mary, Hofstra, Northeastern, Drexel, Elon and Monmouth (in `coaches.json` and each school's `staff[]`) were replaced with the names and emails on each coaches page; Charleston gained its third assistant and the assistants' emails.
+
+**Not published, left as stored:** Northeastern and Drexel publish no head-coach phone and none is stored. Stony Brook prints its head coach's phone without an area code (632-7203); the stored 631-632-7203 was kept.
+
+**Tooling notes:** Hofstra's list-card layout also returns the seven staff cards as players with no position or class; they were removed before saving. Drexel fills the season into the page title late; it was confirmed on the page heading. Northeastern labels 13 of 27 players Midfield, so the 45% midfielder test was accepted with `--force` after reading the rows.
+
+**Checks:** `validate_schools.py` pass; `validate_consistency.js` Issues: 0; roster arithmetic, wording and snapshot checks pass; local browser check of all 8 cards (scores match, coach lookups resolve) and the Drexel Details modal (no "undefined").
+
+---
+
 ### v46.04 (2026-10-05) — Big West rosters stored and applied (campaign C0, step 4, fifth batch)
 
 **What:** the 7 rosters still to read in `data/big-west.json` (UCSB, UC Irvine, CS Fullerton, Cal Poly, UC Riverside, UC San Diego, UC Davis) were read on each school's own site, stored with positions as published, and applied from the stored roster. 88 schools' midfielder numbers now come from a stored roster; 111 are still to read.

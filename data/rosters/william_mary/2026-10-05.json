@@ -1,0 +1,263 @@
+{
+  "schoolId": "william_mary",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://tribeathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Diego Garciarena",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Asuncion, Paraguay",
+      "previousSchool": "Saint Francis / USF"
+    },
+    {
+      "name": "Hamilton Howes",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "Sr.",
+      "hometown": "Virginia Beach, Va.",
+      "previousSchool": null,
+      "highSchool": "Kellam"
+    },
+    {
+      "name": "Damen Burney",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Leesburg, Va.",
+      "previousSchool": null,
+      "highSchool": "Riverside"
+    },
+    {
+      "name": "Alex Kochell",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Midlothian, Va.",
+      "previousSchool": null,
+      "highSchool": "Midlothian"
+    },
+    {
+      "name": "Noah Hiort-Wright",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Glen Allen, Va.",
+      "previousSchool": null,
+      "highSchool": "Deep Run High School"
+    },
+    {
+      "name": "Landon Cartwright",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Old Greenwich, Conn.",
+      "previousSchool": "Providence",
+      "highSchool": "Greenwich"
+    },
+    {
+      "name": "Aidan Gatchell",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Forward",
+      "class": "Fr.",
+      "hometown": "East Greenbush, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Columbia HS"
+    },
+    {
+      "name": "Beckham Harris",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Summerville, S.C.",
+      "previousSchool": null,
+      "highSchool": "Ashley Ridge"
+    },
+    {
+      "name": "Brown Huffard",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "McLean, Va.",
+      "previousSchool": null,
+      "highSchool": "Washington International School"
+    },
+    {
+      "name": "Gabe Ruitenberg",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Forward",
+      "class": "Sr.",
+      "hometown": "Riverdale, N.J.",
+      "previousSchool": null,
+      "highSchool": "Roxbury"
+    },
+    {
+      "name": "Alexandros Katsari-Hoefer",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Herndon, Va.",
+      "previousSchool": null,
+      "highSchool": "South Lakes"
+    },
+    {
+      "name": "Kai Feng",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Winger",
+      "class": "Sr.",
+      "hometown": "Blackburg, Va.",
+      "previousSchool": "VCU",
+      "highSchool": "Blacksburg HS"
+    },
+    {
+      "name": "Alex Garrison",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Annandale, Va.",
+      "previousSchool": null,
+      "highSchool": "C.G. Woodson"
+    },
+    {
+      "name": "Thor Sigurjonsson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Reyoarfjorour, Iceland",
+      "previousSchool": null,
+      "highSchool": "Flensborg"
+    },
+    {
+      "name": "Sullivan Carter",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Vienna, Va.",
+      "previousSchool": null,
+      "highSchool": "Bishop O'Connell HS"
+    },
+    {
+      "name": "Evan Rabush",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Leonardtown, Md.",
+      "previousSchool": null,
+      "highSchool": "Leonardtown"
+    },
+    {
+      "name": "Clem Cartwright",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Defender",
+      "class": "Fr.",
+      "hometown": "Greenwich, Conn.",
+      "previousSchool": null,
+      "highSchool": "Greenwich HS"
+    },
+    {
+      "name": "Aiden Sena",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Forward",
+      "class": "Fr.",
+      "hometown": "Henderson, Nev.",
+      "previousSchool": null,
+      "highSchool": "Coronado HS"
+    },
+    {
+      "name": "Aaron Jimenez",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Defender",
+      "class": "Fr.",
+      "hometown": "Arlington, Texas",
+      "previousSchool": null,
+      "highSchool": "Allegiance Academy"
+    },
+    {
+      "name": "Ethan Roemisch",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Bedford, Texas",
+      "previousSchool": null,
+      "highSchool": "Allegiance Academy"
+    },
+    {
+      "name": "Reed Gettler",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Coral Gables, Fla.",
+      "previousSchool": null,
+      "highSchool": "Gulliver Preparatory"
+    },
+    {
+      "name": "Luke Tegeris",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Dayton, Md.",
+      "previousSchool": null,
+      "highSchool": "Landon School"
+    },
+    {
+      "name": "Michael DiOrio",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Las Vegas, Nev.",
+      "previousSchool": null,
+      "highSchool": "Coral Academy of Science Sandy Ridge / Liberty High School"
+    },
+    {
+      "name": "Ryan Eapen",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Morris Plains, N.J.",
+      "previousSchool": null,
+      "highSchool": "Morristown"
+    },
+    {
+      "name": "Max Cooper",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Williamsburg, Va.",
+      "previousSchool": null,
+      "highSchool": "Jamestown"
+    },
+    {
+      "name": "JT Quinter",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Harleysville, Pa.",
+      "previousSchool": null,
+      "highSchool": "Germantown Academy"
+    },
+    {
+      "name": "Zander Kosmas",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "New Smyrna Beach, Fla.",
+      "previousSchool": "Stetson",
+      "highSchool": "Northfield HS"
+    },
+    {
+      "name": "Chandril Banerjee",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Saratoga, Calif.",
+      "previousSchool": null,
+      "highSchool": "FC Bay Area Surf Program"
+    }
+  ]
+}

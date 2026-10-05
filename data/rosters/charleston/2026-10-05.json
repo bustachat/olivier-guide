@@ -1,0 +1,236 @@
+{
+  "schoolId": "charleston",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://cofcsports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Marten Brink",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Stuckenbrock, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Javien Rambert",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Powdersville, S.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Jordheim",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Fredrikstad, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Dan Toulson",
+      "position": "D",
+      "positionAsListed": "D/MF",
+      "class": "So.",
+      "hometown": "Harrogate, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Federico Bellisi",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Bologna, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Nacho Ferrer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Sant Andreu de Llavaneres, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Kira Fukuda",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Hiroshima, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Arnau Ollé",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Gr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Michiharu Takanashi",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Tokyo, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Lennon Gill",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Dublin, Ireland",
+      "previousSchool": null
+    },
+    {
+      "name": "Matt Lenert",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Falls Church, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Vasko",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "Jr.",
+      "hometown": "Chicago, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ezequiel Emanuele",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Samborondon, Ecuador",
+      "previousSchool": null
+    },
+    {
+      "name": "Stian Bendvold",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "Jr.",
+      "hometown": "Begby, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Baldwin",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Dallas, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Watson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Chesterfield, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Hogan Walker",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Nashville, Tenn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Marko Mihajlovic",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Baltimore, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ramsey Ray",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Bowie, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Henrik Boer",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Gr.",
+      "hometown": "Oegstgeest, Netherlands",
+      "previousSchool": null
+    },
+    {
+      "name": "Bemanzi Alibaruho",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "R-Fr.",
+      "hometown": "Jacksonville, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luka Gasic",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Clemson, S.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Reeves Cates",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Pinehurst, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "James Watson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Chesterfield, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Paul Killeen",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Tallahassee, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Duske",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Leawood, Kan.",
+      "previousSchool": null
+    },
+    {
+      "name": "Hudson Drum",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Ponte Vedra Beach, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Aiden Butts",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Summerville, S.C.",
+      "previousSchool": null
+    }
+  ]
+}

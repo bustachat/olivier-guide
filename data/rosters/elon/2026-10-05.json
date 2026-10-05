@@ -1,0 +1,269 @@
+{
+  "schoolId": "elon",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://elonphoenix.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Marshall Martin",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Fr.",
+      "hometown": "Albany, N.Y.",
+      "previousSchool": null,
+      "highSchool": "St. Benedict’s"
+    },
+    {
+      "name": "Drew Hartman",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Jr.",
+      "hometown": "Washington, D.C.",
+      "previousSchool": null,
+      "highSchool": "Gonzaga College HS"
+    },
+    {
+      "name": "Caleb Frakes",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "R-Jr.",
+      "hometown": "Fort Thomas, Ky.",
+      "previousSchool": null,
+      "highSchool": "Highlands"
+    },
+    {
+      "name": "Joe Taylor",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Rugby, England",
+      "previousSchool": null,
+      "highSchool": "Ashlawn School"
+    },
+    {
+      "name": "Magnus Jacobsen",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Silkeborg, Denmark",
+      "previousSchool": null,
+      "highSchool": "College360 - Silkeborg"
+    },
+    {
+      "name": "Carlos Levy",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Mexico City, Mexico",
+      "previousSchool": null,
+      "highSchool": "NSU University School"
+    },
+    {
+      "name": "Weston Jonke",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Cleveland, Ohio",
+      "previousSchool": null,
+      "highSchool": "Indian Hill High School"
+    },
+    {
+      "name": "Jordin Wilson",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Nassau, Bahamas",
+      "previousSchool": null
+    },
+    {
+      "name": "Daire McCarthy",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Galway, Ireland",
+      "previousSchool": null
+    },
+    {
+      "name": "Dominik Renz",
+      "position": "F",
+      "positionAsListed": "Forward/Midfielder",
+      "class": "R-Jr.",
+      "hometown": "Ulm, Germany",
+      "previousSchool": null,
+      "highSchool": "Johann-Vanotti-Gymnasium Ehingen"
+    },
+    {
+      "name": "Martin Kozak",
+      "position": "F",
+      "positionAsListed": "Forward/Midfielder",
+      "class": "Sr.",
+      "hometown": "Santiago, Chile",
+      "previousSchool": null,
+      "highSchool": "Craighouse School"
+    },
+    {
+      "name": "Alex Wharton",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-So.",
+      "hometown": "Smyrna, Ga.",
+      "previousSchool": null,
+      "highSchool": "Woodward Academy"
+    },
+    {
+      "name": "Oscar Tonidandel",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-So.",
+      "hometown": "Clemmons, N.C.",
+      "previousSchool": null,
+      "highSchool": "West Forsyth"
+    },
+    {
+      "name": "Mikolaj Lenarcik",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Fr.",
+      "hometown": "Crewe, England",
+      "previousSchool": null,
+      "highSchool": "St. Thomas More Catholic"
+    },
+    {
+      "name": "Kosei Sasaki",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Tokyo, Japan",
+      "previousSchool": null,
+      "highSchool": "Shohei"
+    },
+    {
+      "name": "Tønnes Daland",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Kristiansand, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Thompson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Fr.",
+      "hometown": "Rome, Italy",
+      "previousSchool": null,
+      "highSchool": "Carolina Day School"
+    },
+    {
+      "name": "Henry Mertsch",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Dusseldorf, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Dunn",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-So.",
+      "hometown": "Mechanicsville, Va.",
+      "previousSchool": null,
+      "highSchool": "Mechanicsville"
+    },
+    {
+      "name": "Noah Sonne Kargo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Jr.",
+      "hometown": "Silkeborg, Denmark",
+      "previousSchool": null,
+      "highSchool": "College360"
+    },
+    {
+      "name": "Mohamed Kallon",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-Fr.",
+      "hometown": "Annandale, Va.",
+      "previousSchool": null,
+      "highSchool": "Annandale"
+    },
+    {
+      "name": "JP Quigley",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Jr.",
+      "hometown": "Knoxville, Tenn.",
+      "previousSchool": null,
+      "highSchool": "Webb School of Knoxville"
+    },
+    {
+      "name": "Robbie Reeves",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Blacksburg, Va.",
+      "previousSchool": null,
+      "highSchool": "Grimsley"
+    },
+    {
+      "name": "Jahmir Flowers",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Greensboro, N.C.",
+      "previousSchool": null,
+      "highSchool": "Grimsley"
+    },
+    {
+      "name": "Corbyn Wendorf",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Dallas, Texas",
+      "previousSchool": null,
+      "highSchool": "Jesuit Dallas"
+    },
+    {
+      "name": "Tristan D'Adamo",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Fr.",
+      "hometown": "Tryon, N.C.",
+      "previousSchool": null,
+      "highSchool": "IMG Academy"
+    },
+    {
+      "name": "Ben Madore",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Jr.",
+      "hometown": "Fallston, Md.",
+      "previousSchool": null,
+      "highSchool": "Calvert Hall"
+    },
+    {
+      "name": "Graham Jones",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Vienna, Va.",
+      "previousSchool": null,
+      "highSchool": "SAI Academy"
+    },
+    {
+      "name": "Ryan Manna",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Goshen, N.Y.",
+      "previousSchool": null,
+      "highSchool": "John S. Burke Catholic HS"
+    }
+  ]
+}

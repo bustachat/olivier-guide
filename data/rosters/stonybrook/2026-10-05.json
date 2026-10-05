@@ -1,0 +1,272 @@
+{
+  "schoolId": "stonybrook",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://stonybrookathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Heidar Hermannsson",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Reykjavik, Iceland",
+      "previousSchool": null
+    },
+    {
+      "name": "Scemar Webb",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Toronto, Canada",
+      "previousSchool": null,
+      "highSchool": "Bill Crothers Secondary School"
+    },
+    {
+      "name": "Petur Arnarson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Akureyri, Iceland",
+      "previousSchool": null,
+      "highSchool": "Menntaskólinn á Akureyri"
+    },
+    {
+      "name": "Kyle Smith",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Holbrook, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Sachem East"
+    },
+    {
+      "name": "Nelson Reynoso",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "R-So.",
+      "hometown": "Brooklyn, N.Y.",
+      "previousSchool": null,
+      "highSchool": "James Madison"
+    },
+    {
+      "name": "Nokkvi Hjorvarsson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Akureyri, Iceland",
+      "previousSchool": null,
+      "highSchool": "Menntaskólinn á Akureyri"
+    },
+    {
+      "name": "Kristoffer Aarflot",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Oslo, Norway",
+      "previousSchool": null,
+      "highSchool": "Nydalen Vidregaende"
+    },
+    {
+      "name": "Tobias Hansen",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Tórshavn, Faroe Islands",
+      "previousSchool": null,
+      "highSchool": "Glasir"
+    },
+    {
+      "name": "Ryan Farr",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Saratoga Springs, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Northwood School"
+    },
+    {
+      "name": "Finlay Oliver",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Oneonta, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Oneonta"
+    },
+    {
+      "name": "Justin Jean-Louis",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Baldwin, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Baldwin"
+    },
+    {
+      "name": "Declan McLaughlin",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "R-So.",
+      "hometown": "Tuckahoe, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Eastchester"
+    },
+    {
+      "name": "Dakarai Drakes",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Brooklyn, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Brooklyn Highschool of the Arts"
+    },
+    {
+      "name": "Dylan Lopez",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Ronkonkoma, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Connetquot"
+    },
+    {
+      "name": "Elliot Burgueno",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Stony Brook, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Ward Melville"
+    },
+    {
+      "name": "Shafer Gottlieb",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Savannah, Ga.",
+      "previousSchool": null,
+      "highSchool": "Islands"
+    },
+    {
+      "name": "Sivert Styrmoe Rotevatn",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Oslo, Norway",
+      "previousSchool": null,
+      "highSchool": "Wang Toppidrett"
+    },
+    {
+      "name": "James Schneider",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Farmingville, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Sachem"
+    },
+    {
+      "name": "Alex Fleury",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Lachine, Québec, Canada",
+      "previousSchool": null,
+      "highSchool": "Collège Sainte-Anne"
+    },
+    {
+      "name": "Brayden Walker",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Lake Ronkonkoma, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Sachem North"
+    },
+    {
+      "name": "Eric Tai",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Harlem, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Success Academy"
+    },
+    {
+      "name": "John Caso",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Selden, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Newfield"
+    },
+    {
+      "name": "Daniel Brausch",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-Fr.",
+      "hometown": "Lake Grove, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Ward Melville"
+    },
+    {
+      "name": "Luke McDonough",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Commack, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Commack"
+    },
+    {
+      "name": "Lars Fahre",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Oslo, Norway",
+      "previousSchool": null,
+      "highSchool": "Valle Hovin Videregaende Skole"
+    },
+    {
+      "name": "Sebastian Drummond",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Liverpool, England",
+      "previousSchool": null,
+      "highSchool": "The Blue Coat School"
+    },
+    {
+      "name": "Olsen Aluc",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Gr.",
+      "hometown": "Bohemia, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Connetquot"
+    },
+    {
+      "name": "Kacper Pintal",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Ridgewood Queens, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Grover Cleveland"
+    },
+    {
+      "name": "Gianluca Justincic",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Jr.",
+      "hometown": "Commack, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Commack"
+    }
+  ]
+}

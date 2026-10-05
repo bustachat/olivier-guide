@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.94 (2026-10-05) — Batch 6: Lipscomb, Queens, West Florida and Bellarmine (ASUN)
+
+**Why:** Seventh batch from the Division I gap list, the four ASUN programs still missing (209 to 213 schools, 213 coaches). With these, all nine programs on the NCAA's 2026-27 ASUN men's soccer list are in the guide, so the ASUN card's `otherSchools` list is now empty (this also clears the stale North Alabama, Kennesaw State and Liberty entries logged in v45.90).
+
+**Added (`d1-other.json`):**
+- **Lipscomb** (Nashville): fit 54. Coach Charles Morrow (head coach since 2005, five ASUN Tournament titles, 2018 Sweet 16, score 72). Two top-10 picks in the 2024 draft (Spicer No. 1, Jones No. 8), so it also gets a Pro Pipeline row. Exercise Science B.S. (CAAHEP-accredited, Pre-PT track), `acuAlign` 9. Cost $62,518. 12 midfielders, 2 leaving.
+- **Queens (NC)** (Charlotte): fit 56. Coach Oliver Carias (since 2011, first win over a Power Four team in 2025, score 62). Exercise and Sport Science B.S., `acuAlign` 6. Cost $67,243. 12 midfielders, 5 leaving.
+- **West Florida** (Pensacola): fit 45. Coach Bill Elliott (since 1995, 12 Gulf South titles at Division II, score 68). Exercise Science B.S. (CAAHEP-accredited), `acuAlign` 10. Cost $32,998, the lowest of the four and of the recent ASUN additions. Only 6 midfielders listed, 2 leaving. Its 2021-25 records are Division II (Gulf South) and are labelled that way.
+- **Bellarmine** (Louisville): fit 50. Coach Matt Cannady (promoted after the 2025 ASUN Gold Division title, first-year head coach, score 56). Exercise Science B.A., `acuAlign` 8. Cost $64,030. 14 midfielders, 3 leaving.
+
+Coach ranks re-run across all 213 coaches. Domain, site and social entries, map dots (all four checked on land with `isPointInFill`), CLAUDE.md reference-table rows and the §6F gap list updated.
+
+**Notes:** Costs reconcile to each school's own published total (Lipscomb $69,210, Queens $74,968, Bellarmine $69,338, UWF direct-cost row $32,998; UWF's $37,182 headline uses 24 credit hours). Queens' catalog and Bellarmine's cost sheet are PDFs, read in the browser with pdf.js and a screenshot. No internship was counted toward `acuAlign` because none of the four states hours. Items not confirmed are listed under "Batch 6 loose ends" in CLAUDE.md §6F.
+
+**Validation:** `validate_schools.py` pass (213 schools), `validate_consistency.js` Issues: 0, `check_no_jargon.py`, `check_roster_arithmetic.py` and `check_coach_ranking.py` pass, local browser check (213 schools load, nine ASUN cards, all four modals free of undefined/NaN across every tab, ASUN Conferences card lists nine of nine, Pro Pipeline shows Lipscomb). The qa-suite's negtest step could not run because it refuses uncommitted changes; the new-school coverage script's one "MISSING" for West Florida was a false match on 'West Texas A&M'.
+
 ### v45.93 (2026-10-04) — Dashboard budget slider now reaches $110k
 
 **Why:** The Annual budget slider stopped at $100k, but Duke's direct billed cost is $103,180 (tuition $73,740, room and board $22,029, fees $7,411), so at the top setting the Dashboard read "208 of 209 within budget" and "208 real options". Duke was the only school over $100k.

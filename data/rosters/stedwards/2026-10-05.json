@@ -1,0 +1,324 @@
+{
+  "schoolId": "stedwards",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gohilltoppers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 39,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Kaleo Perez-Francis",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Ramirez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Sr.",
+      "hometown": "Queens, New York",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Loya",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Pflugerville, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Belazri Berthon",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Saint Paul en Jarez, France",
+      "previousSchool": "Francis Marion University"
+    },
+    {
+      "name": "Paolo Vela",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Albuquerque, N.M.",
+      "previousSchool": "Wofford University"
+    },
+    {
+      "name": "Juan Segura",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Birmingham, Ala.",
+      "previousSchool": null
+    },
+    {
+      "name": "Filip Adamski",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R-So.",
+      "hometown": "Poland",
+      "previousSchool": null
+    },
+    {
+      "name": "Izaiah Garza",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "San Antonio, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Armando Don Juan",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Leander, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Nemanja Pavicevic",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Belgrade, Serbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Shunji Watanabe",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Tokyo, Japan",
+      "previousSchool": "Asia Pacific University"
+    },
+    {
+      "name": "Bartek Zabek",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-Jr.",
+      "hometown": "Frisco, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Baker",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Round Rock, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Alessio De Pippo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Santa Cruz de la Sierra, Bolivia",
+      "previousSchool": "Bethany College (WV)"
+    },
+    {
+      "name": "Misael Rangel",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Del Valle, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Holden Rabb",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Watterworth",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Pflugerville, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Ebuka Bright-Osigwe",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Dallas, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Jud Anderson",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": "The University of Alabama at Birmingham"
+    },
+    {
+      "name": "Sebastian Navarro",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "El Paso, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Dean Roggenbauer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Enzo Cornet",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-Fr.",
+      "hometown": "Ermont, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Devaney",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Easton Jones",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Stubbs",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Rosenberg, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Stern",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Celina, Texas",
+      "previousSchool": "Lindenwood University"
+    },
+    {
+      "name": "Riley Baroldy",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "Leander, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Timmy Hollenbeck",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Hutto, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Joey Mediaceja",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Frisco, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Henry Ramirez Siliezar",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Fr.",
+      "hometown": "Kyle, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Garza",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Fr.",
+      "hometown": "Highland Village, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Weigandt",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Dortmund, Germany",
+      "previousSchool": "Texas A&M International"
+    },
+    {
+      "name": "Jake Ciccarello",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": "University of Evansville"
+    },
+    {
+      "name": "Frank Barela",
+      "position": "GK",
+      "positionAsListed": "G",
+      "class": "So.",
+      "hometown": "Albuquerque, N.M.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kasim Merchant",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Dallas, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Zeke Beasley",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Spring, Texas",
+      "previousSchool": "Missouri S&T"
+    },
+    {
+      "name": "Isaac Guajardo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Gael Guerra",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "McAllen, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Eddie Alonzi",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Sr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": "University of West Florida"
+    }
+  ]
+}

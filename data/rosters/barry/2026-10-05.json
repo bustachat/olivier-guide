@@ -1,0 +1,276 @@
+{
+  "schoolId": "barry",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gobarrybucs.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 33,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Henry Obi",
+      "position": "GK",
+      "positionAsListed": "Goal Keeper",
+      "class": "Fr.",
+      "hometown": "Graz, Austria",
+      "previousSchool": "Oeversee"
+    },
+    {
+      "name": "Uros Vulovic",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Belgrade, Serbia",
+      "previousSchool": "Murray State College"
+    },
+    {
+      "name": "Guillermo De Terry",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Sevilla, Spain",
+      "previousSchool": "Colegio Inmaculado"
+    },
+    {
+      "name": "Ricardo De Freitas",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Cerro Largo, Brazil",
+      "previousSchool": "Dom Bosco HS"
+    },
+    {
+      "name": "Aidan de Gannes",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Petit Valley, Trinidad & Tobago",
+      "previousSchool": "Fatima College"
+    },
+    {
+      "name": "Nemanja Vukovic",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Belgrade, Serbia",
+      "previousSchool": "Oklahoma Wesleyan"
+    },
+    {
+      "name": "Yoan Ponio",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "St. Etienne, France",
+      "previousSchool": "Cabrillo College"
+    },
+    {
+      "name": "Jorge Escobar",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Amor de Dios"
+    },
+    {
+      "name": "Austin Collins",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Milton Keynes, England",
+      "previousSchool": "Peninsula College"
+    },
+    {
+      "name": "Biel Vallverdu Campo",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": "Oklahoma Wesleyan"
+    },
+    {
+      "name": "Didier Jean-Baptiste",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Hillside, NJ",
+      "previousSchool": "Daytona State College"
+    },
+    {
+      "name": "Juan Wagner",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Cali, Colombia",
+      "previousSchool": "East Central College"
+    },
+    {
+      "name": "Nikola Momcilovic",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Chicago, IL",
+      "previousSchool": "Upper Iowa"
+    },
+    {
+      "name": "Luka Vidic",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Belgrade, Serbia",
+      "previousSchool": "International School of Belgrade"
+    },
+    {
+      "name": "Matthew Van De Warker",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Lake Worth, FL",
+      "previousSchool": "Park Vista HS"
+    },
+    {
+      "name": "Pierre Fabre",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Cannes, France",
+      "previousSchool": "College of Idaho"
+    },
+    {
+      "name": "Carlos Ramunno",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Caracas, Venezuela",
+      "previousSchool": "Doral Prep"
+    },
+    {
+      "name": "Fabian Correa",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Santiago, Chile",
+      "previousSchool": "FLVS"
+    },
+    {
+      "name": "Filipe Moreira",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Rio De Janiero, Brazil",
+      "previousSchool": "Gardner-Webb"
+    },
+    {
+      "name": "Luke Correia",
+      "position": "MF",
+      "positionAsListed": "Midfield/Forward",
+      "class": "Fr.",
+      "hometown": "Diego Martin, Trinidad & Tobago",
+      "previousSchool": "UIndy"
+    },
+    {
+      "name": "Juan Pablo Gorrin",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Aragua, Venezuela",
+      "previousSchool": "Downtown Doral Charter HS"
+    },
+    {
+      "name": "Linus Wirth",
+      "position": "GK",
+      "positionAsListed": "Goal Keeper",
+      "class": "Jr.",
+      "hometown": "Stuttgart, Germany",
+      "previousSchool": "Protestant Paul Distelbarth HS"
+    },
+    {
+      "name": "Mateo Valencia",
+      "position": "GK",
+      "positionAsListed": "Goal Keeper",
+      "class": "Fr.",
+      "hometown": "Pembroke Pines, FL",
+      "previousSchool": "Pembroke Pines Charter"
+    },
+    {
+      "name": "Kadir Rimola",
+      "position": "F",
+      "positionAsListed": "Forward/Midfield",
+      "class": "Fr.",
+      "hometown": "Pembroke Pines, FL",
+      "previousSchool": "Pines Charter HS"
+    },
+    {
+      "name": "Sebastian Tascon",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Hollywood Beach, FL",
+      "previousSchool": "USC-Aiken"
+    },
+    {
+      "name": "Jayden Byard",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Pembroke Pines, FL",
+      "previousSchool": "Pines Charter HS"
+    },
+    {
+      "name": "Daniel Romero-Ramos",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Miami, FL",
+      "previousSchool": "Georgia Southwestern"
+    },
+    {
+      "name": "Agustin Malec",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Pembroke Pines, FL",
+      "previousSchool": "Somerset Academy"
+    },
+    {
+      "name": "Juan Santana",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Fort Lauderdale, FL",
+      "previousSchool": "Richard Bland CC"
+    },
+    {
+      "name": "Kendry Villafuerte",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Coral Springs, FL",
+      "previousSchool": "Coral Glades HS"
+    },
+    {
+      "name": "Sky Carrizo",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Miami, FL",
+      "previousSchool": "Coral Gables HS"
+    },
+    {
+      "name": "Cameron Garcia",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Lucas, TX",
+      "previousSchool": "Mercyhurst"
+    },
+    {
+      "name": "Madden Arboleda",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Plantation, FL",
+      "previousSchool": "St. Thomas Aquinas HS"
+    }
+  ]
+}

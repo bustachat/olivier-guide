@@ -1,0 +1,188 @@
+{
+  "schoolId": "nova",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://nsusharks.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 22,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Henrik Dahl",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Kristiansand, Norway /",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Valdez",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Gr.",
+      "hometown": "Bamberg, Germany / Dientzenhofer-Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Gordon",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Sr.",
+      "hometown": "Pembroke Pines, Fla. / Pembroke Pines Charter High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Rastrick",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Norwich, England / Norwich School",
+      "previousSchool": null
+    },
+    {
+      "name": "Fabio Tajra",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Sr.",
+      "hometown": "Sao Paulo, Brazil / Colegio Objetivo",
+      "previousSchool": null
+    },
+    {
+      "name": "Erik Krohnstad",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Gr.",
+      "hometown": "Bergen, Norway / Nattlandsfjellet",
+      "previousSchool": null
+    },
+    {
+      "name": "Eduardo Fontán Rodríguez",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Gr.",
+      "hometown": "Santander, Spain / I.E.S. Santa Clara",
+      "previousSchool": null
+    },
+    {
+      "name": "Andres Morral Rosales",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Sr.",
+      "hometown": "Miami, Fla. / American Heritage",
+      "previousSchool": null
+    },
+    {
+      "name": "Kasper Kitchin",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Fr.",
+      "hometown": "Edinburgh, Scotland / The Edinburgh Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Markus Rokseth",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Sr.",
+      "hometown": "Birkeland, Agder, Norway /",
+      "previousSchool": null
+    },
+    {
+      "name": "Santino Scerbo",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "Buenos Aires, Argentina / Belgrano Day School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jamie Bulloch",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Jr.",
+      "hometown": "Edinburgh, Scotland / Broughton High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Marshall King",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Sr.",
+      "hometown": "Ramsbottom, Bury, England, United Kingdom /",
+      "previousSchool": null
+    },
+    {
+      "name": "Milo Parquet",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Miami, Fla. / Florida Virtual School",
+      "previousSchool": null
+    },
+    {
+      "name": "Trevor Richter",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Nashville, Tenn. / IMG Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Oscar Fernandez",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Miami, Fla. / ÍES ARJE",
+      "previousSchool": null
+    },
+    {
+      "name": "Ricardo Silva Alvarado",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Weston, Fla. / Cypress Bay High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Toga Katsuma",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Sr.",
+      "hometown": "Kobe, Japan /",
+      "previousSchool": null
+    },
+    {
+      "name": "Alexander Sasser",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Weston, Fla. / NSU University School",
+      "previousSchool": null
+    },
+    {
+      "name": "Olivier Pierre",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Jr.",
+      "hometown": "Sunrise, Fla. / Plantation High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Angelo Ehresman Jr.",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Staten Island, N.Y. / Asu Prep Digital",
+      "previousSchool": null
+    },
+    {
+      "name": "Nikolas Ricardo",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Miami, Fla. / University School (Fla.)",
+      "previousSchool": null
+    }
+  ]
+}

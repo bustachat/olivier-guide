@@ -1,0 +1,260 @@
+{
+  "schoolId": "lynn",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://lynnfightingknights.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Santiago Jose",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Venado Tuerto, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Marcos",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Tandil, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Ruiz Carral",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Camargo, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Louis Munn",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonas Hoerner",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Karlsruhe, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Marc Vila",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Vilassar de Mar, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Lukas Egarter",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Feffernitz, Austria",
+      "previousSchool": null
+    },
+    {
+      "name": "Fabian Vyhnalek",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Weitersfeld, Austria",
+      "previousSchool": null,
+      "highSchool": "Bundeshandelsakademie Horn"
+    },
+    {
+      "name": "Fabian Wagner",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Heidelberg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Robin Muenst",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Stuttgart, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Pinto",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Aveiro, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Trent Britton",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Lehigh Acres, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luan Barroso Rennstich",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Ingelheim, Germany",
+      "previousSchool": null,
+      "highSchool": "Johanannes Gutenberg-Univ. Mainz"
+    },
+    {
+      "name": "Juan Moran Garcia",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Marbella, Spain",
+      "previousSchool": null,
+      "highSchool": "Swans School International"
+    },
+    {
+      "name": "Rui Ferreira",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Braga, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Gavin Diaz",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Bedford, N.H.",
+      "previousSchool": null,
+      "highSchool": "Bedford HS"
+    },
+    {
+      "name": "Yujin Chu",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Dubai, UAE",
+      "previousSchool": null
+    },
+    {
+      "name": "Dominik N’gatie",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Munich, Germany",
+      "previousSchool": null,
+      "highSchool": "Int’l Univ. of Applied Science"
+    },
+    {
+      "name": "Geir Magnusson",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Wilton, CT.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Zedlitz",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "The Villages, Fla.",
+      "previousSchool": null,
+      "highSchool": "IMG Academy"
+    },
+    {
+      "name": "Thiago De Carvalho",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Umuarama, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "TJ Brandt",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Boca Raton, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Said Mukhtar",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Lagos, Nigeria",
+      "previousSchool": null
+    },
+    {
+      "name": "Nirbhay Patpatpia",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Mumbai, India",
+      "previousSchool": null,
+      "highSchool": "Podar International School"
+    },
+    {
+      "name": "Joao Silva",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Porto, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Rodriguez",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Delray Beach, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Eli Modzeleski",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Dunbarton, New Hampshire",
+      "previousSchool": null
+    },
+    {
+      "name": "Julio Leal",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Marcus Degregorio",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Dix Hills, N.Y",
+      "previousSchool": null
+    },
+    {
+      "name": "Gavin Garlick",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Tampa, Fla.",
+      "previousSchool": null,
+      "highSchool": "Jesuit Tampa"
+    }
+  ]
+}

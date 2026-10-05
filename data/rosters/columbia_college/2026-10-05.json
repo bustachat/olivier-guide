@@ -1,0 +1,289 @@
+{
+  "schoolId": "columbia_college",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://columbiacougars.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 31,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Mason Beck",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "St. Louis, MO",
+      "previousSchool": "University of Missouri",
+      "highSchool": "Chaminade College Prep School"
+    },
+    {
+      "name": "Connor Lovell",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "O'Fallon, MO",
+      "previousSchool": "Lindenwood University",
+      "highSchool": "Fort Zumwalt South HS"
+    },
+    {
+      "name": "Pedro Moutinho",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Rio de Janiero, Brazil",
+      "previousSchool": "Culver-Stockton College"
+    },
+    {
+      "name": "Cooper Allen",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Columbia, MO",
+      "previousSchool": null,
+      "highSchool": "Rock Bridge HS"
+    },
+    {
+      "name": "Daniel Kent",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "London, England",
+      "previousSchool": "Webber International University",
+      "highSchool": "The Coopers Company and Coborn School"
+    },
+    {
+      "name": "Faraj Shee",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Toronto, Ontario, Canada",
+      "previousSchool": "St. Louis CC",
+      "highSchool": "Westview Centennial Secondary"
+    },
+    {
+      "name": "Joshua Peterson",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Olathe, KS",
+      "previousSchool": null,
+      "highSchool": "Blue Valley Southwest HS"
+    },
+    {
+      "name": "Josh Sutton",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Heswall, England",
+      "previousSchool": "John Wood CC",
+      "highSchool": "Calday Grange Grammar School"
+    },
+    {
+      "name": "Grant Buer",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Saint Albans, MO",
+      "previousSchool": "Quincy University",
+      "highSchool": "Marquette HS"
+    },
+    {
+      "name": "Parker Rainwater",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Columbia, MO",
+      "previousSchool": null,
+      "highSchool": "Rock Bridge HS"
+    },
+    {
+      "name": "Alessandro Locatelli",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Milan, Italy",
+      "previousSchool": "Dallas College Richland",
+      "highSchool": "Cavalieri High School"
+    },
+    {
+      "name": "Alex Gatto",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Toronto, Ontario, Canada",
+      "previousSchool": "St. Louis CC",
+      "highSchool": "Westview Centennial Secondary"
+    },
+    {
+      "name": "Charlie Lafata",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "O'Fallon, MO",
+      "previousSchool": null,
+      "highSchool": "St. Dominic HS"
+    },
+    {
+      "name": "Joshua Imhoff",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Columbia, MO",
+      "previousSchool": null,
+      "highSchool": "Rock Bridge HS"
+    },
+    {
+      "name": "Turner Lively",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "O'Fallon, MO",
+      "previousSchool": null,
+      "highSchool": "Liberty HS"
+    },
+    {
+      "name": "Freddie Fenton",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Snows Ride, England",
+      "previousSchool": "Pratt CC",
+      "highSchool": "Gordons"
+    },
+    {
+      "name": "Nick Schneider",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Columbia, MO",
+      "previousSchool": null,
+      "highSchool": "Rock Bridge HS"
+    },
+    {
+      "name": "Tyler Kromer",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Washington, MO",
+      "previousSchool": "Jefferson College",
+      "highSchool": "St. Francis Borgia HS"
+    },
+    {
+      "name": "Camilo Ocampo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Pereira, Colombia",
+      "previousSchool": "Western Iowa Tech",
+      "highSchool": "Colegio Militar General Rafael Reyes"
+    },
+    {
+      "name": "Hunter Nelson",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Jefferson City, MO",
+      "previousSchool": null,
+      "highSchool": "Capital City HS"
+    },
+    {
+      "name": "Layton Dahl",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Lake St. Louis, MO",
+      "previousSchool": null,
+      "highSchool": "Liberty HS"
+    },
+    {
+      "name": "Justin Paluczak",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Troy, MO",
+      "previousSchool": null,
+      "highSchool": "Troy Buchanan HS"
+    },
+    {
+      "name": "Christian Goforth",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Fenton, MO",
+      "previousSchool": null,
+      "highSchool": "Rockwood Summit HS"
+    },
+    {
+      "name": "Trenton Garofalo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Wentzville, MO",
+      "previousSchool": null,
+      "highSchool": "Holt HS"
+    },
+    {
+      "name": "Drew Schlimme",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Columbia, MO",
+      "previousSchool": null,
+      "highSchool": "Rock Bridge HS"
+    },
+    {
+      "name": "Bodie Rollins",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Hannibal, MO",
+      "previousSchool": null,
+      "highSchool": "Hannibal HS"
+    },
+    {
+      "name": "Mason Medellin",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Liberty, MO",
+      "previousSchool": null,
+      "highSchool": "Liberty HS"
+    },
+    {
+      "name": "Charles McClain",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Eureka, MO",
+      "previousSchool": null,
+      "highSchool": "Eureka HS"
+    },
+    {
+      "name": "Cooper Hayes",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Wentzville, MO",
+      "previousSchool": null,
+      "highSchool": "Holt HS"
+    },
+    {
+      "name": "Ricardo Fischbach",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Bochum, Germany",
+      "previousSchool": "Culver-Stockton College"
+    },
+    {
+      "name": "Caden Hof",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Wentzville, MO",
+      "previousSchool": null,
+      "highSchool": "St. Dominic HS"
+    }
+  ]
+}

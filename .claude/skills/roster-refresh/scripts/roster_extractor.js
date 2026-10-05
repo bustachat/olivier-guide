@@ -35,7 +35,7 @@
     const H = hs.map(norm);
     const col = (exact, sub) => { let i = H.findIndex(h => exact.includes(h)); if (i < 0) i = H.findIndex(h => sub.some(s => h.includes(s))); return i; };
     const iPos = col(['pos', 'position'], ['pos']);
-    const iCls = col(['cl', 'yr', 'year', 'class', 'academicyear', 'clyr', 'eligibility', 'acadyr'], ['class', 'year', 'elig']);
+    const iCls = col(['cl', 'yr', 'year', 'class', 'academicyear', 'clyr', 'eligibility', 'acadyr', 'athletic'], ['class', 'year', 'elig']);
     const iName = col(['fullname', 'name', 'playername', 'player'], ['name']);
     if (iPos < 0 || iCls < 0 || iName < 0) return;
     const iHome = col(['hometown', 'hometownhighschool', 'hometownlastschool'], ['hometown']);

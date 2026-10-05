@@ -1,0 +1,318 @@
+{
+  "schoolId": "chapman",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.chapman.edu/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 34,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Otto Richter",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Mukilteo, Wash.",
+      "previousSchool": null,
+      "highSchool": "Kamiak"
+    },
+    {
+      "name": "Gio Marsala",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Chino Hills, Calif.",
+      "previousSchool": null,
+      "highSchool": "Chino Hills"
+    },
+    {
+      "name": "Rhys Lindhorst",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Seattle, Wash.",
+      "previousSchool": null,
+      "highSchool": "Seattle Academy For Arts and Sciences"
+    },
+    {
+      "name": "Reed Leidlein",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Mill Valley, Calif.",
+      "previousSchool": null,
+      "highSchool": "Marin Academy"
+    },
+    {
+      "name": "Ben Leclair",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Sacramento, Calif.",
+      "previousSchool": null,
+      "highSchool": "Oak Ridge"
+    },
+    {
+      "name": "Cooper Haley",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Seattle, Wash.",
+      "previousSchool": null,
+      "highSchool": "Garfield"
+    },
+    {
+      "name": "Brian McKinley",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Tustin, Calif.",
+      "previousSchool": null,
+      "highSchool": "Beckman"
+    },
+    {
+      "name": "Isaac Storms",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Renton, Wash.",
+      "previousSchool": null,
+      "highSchool": "Kentridge"
+    },
+    {
+      "name": "Diego Perez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Roseville, Calif.",
+      "previousSchool": null,
+      "highSchool": "Jesuit"
+    },
+    {
+      "name": "Dane Price",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Tacoma, Wash.",
+      "previousSchool": null,
+      "highSchool": "Bellarmine"
+    },
+    {
+      "name": "Oliver Adams",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Berkeley, Calif.",
+      "previousSchool": null,
+      "highSchool": "Berkeley"
+    },
+    {
+      "name": "Connor Kilde",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Chino, Calif.",
+      "previousSchool": null,
+      "highSchool": "Ayala"
+    },
+    {
+      "name": "Leo Wells",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Sr.",
+      "hometown": "Redmond, Wash.",
+      "previousSchool": null,
+      "highSchool": "Eastlake"
+    },
+    {
+      "name": "Alex Vasquez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Orange, Calif.",
+      "previousSchool": null,
+      "highSchool": "Orange Lutheran"
+    },
+    {
+      "name": "Evan Crownfield",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Huntington Beach, Calif.",
+      "previousSchool": null,
+      "highSchool": "Edison"
+    },
+    {
+      "name": "Grant Shaw",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Sammamish, Wash.",
+      "previousSchool": null,
+      "highSchool": "Eastlake"
+    },
+    {
+      "name": "Evan White",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Tiburon, Calif.",
+      "previousSchool": null,
+      "highSchool": "Redwood"
+    },
+    {
+      "name": "Ethan Roberts",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Seattle, Wash.",
+      "previousSchool": null,
+      "highSchool": "Lincoln"
+    },
+    {
+      "name": "Ryder Kilde",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Chino, Calif.",
+      "previousSchool": null,
+      "highSchool": "Ayala"
+    },
+    {
+      "name": "Peter Hyan",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Los Angeles, Calif.",
+      "previousSchool": null,
+      "highSchool": "Kimball Union"
+    },
+    {
+      "name": "Enzo Lopes",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Pacific Palisades, Calif.",
+      "previousSchool": null,
+      "highSchool": "Crossroads"
+    },
+    {
+      "name": "Winston Ivory",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Montreal, Quebec, Canada",
+      "previousSchool": null,
+      "highSchool": "Tabor Academy"
+    },
+    {
+      "name": "Hudson Weinberger",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Los Angeles, Calif.",
+      "previousSchool": null,
+      "highSchool": "Palisades Charter"
+    },
+    {
+      "name": "Carson Casella",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "West Hills, Calif.",
+      "previousSchool": null,
+      "highSchool": "Oak Park"
+    },
+    {
+      "name": "Carter Kappes",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Phoenix, Ariz.",
+      "previousSchool": null,
+      "highSchool": "Brophy College Prep"
+    },
+    {
+      "name": "Nikita Dreizin",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Bellevue, Wash.",
+      "previousSchool": null,
+      "highSchool": "Overlake"
+    },
+    {
+      "name": "Kirby Winfield",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Seattle, Wash.",
+      "previousSchool": null,
+      "highSchool": "Seattle Prep"
+    },
+    {
+      "name": "Kobe Lee",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Temple City, Calif.",
+      "previousSchool": null,
+      "highSchool": "Temple City"
+    },
+    {
+      "name": "Tyler Yzuel",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Granite Bay, Calif.",
+      "previousSchool": null,
+      "highSchool": "Granite Bay"
+    },
+    {
+      "name": "Bronson Mejia",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Irvine, Calif.",
+      "previousSchool": null,
+      "highSchool": "Beckman"
+    },
+    {
+      "name": "Henry Espeland",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Snoqualmie, Wash.",
+      "previousSchool": null,
+      "highSchool": "Mount Si"
+    },
+    {
+      "name": "Bryan Antov",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Santa Barbara, Calif.",
+      "previousSchool": null,
+      "highSchool": "San Marcos"
+    },
+    {
+      "name": "Austin Hall",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Centennial, Colo.",
+      "previousSchool": null,
+      "highSchool": "Cherry Creek"
+    },
+    {
+      "name": "Benji Leonetti",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Winnetka, Ill.",
+      "previousSchool": null,
+      "highSchool": "North Shore Country Day"
+    }
+  ]
+}

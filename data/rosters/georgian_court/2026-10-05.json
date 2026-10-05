@@ -1,0 +1,608 @@
+{
+  "schoolId": "georgian_court",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gculions.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 68,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Yaseen Mouffok",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "North Brunswick, N.J.",
+      "previousSchool": null,
+      "highSchool": "Noor ul Iman HS"
+    },
+    {
+      "name": "Simon Mortensen",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Egaa, Aarhus, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Ryan",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Barnegat, N.J.",
+      "previousSchool": null,
+      "highSchool": "Barnegat HS"
+    },
+    {
+      "name": "Noah-Maxim Kleiser",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Ravensburg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Pollintine-Smith",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "London, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Felix Kramper",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Sinsheim, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Tim Wilk",
+      "position": "D",
+      "positionAsListed": "Defense/Midfield",
+      "class": "Sr.",
+      "hometown": "Roxbury, N.J.",
+      "previousSchool": null,
+      "highSchool": "Roxbury HS"
+    },
+    {
+      "name": "Sander Rynning",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Raholt, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Alexander Forsyth",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Glasgow, Scotland",
+      "previousSchool": null
+    },
+    {
+      "name": "Lennox Dorn",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Blaustein, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Noa Aasheim",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Bergen, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryan Sanchez",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Toms River, N.J.",
+      "previousSchool": "NJIT",
+      "highSchool": "Toms River South HS"
+    },
+    {
+      "name": "Leo Elder",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "New Plymouth, New Zealand",
+      "previousSchool": "Midway",
+      "highSchool": "New Plymouth Boys HS"
+    },
+    {
+      "name": "Ferdinand Holdhaus",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Gr.",
+      "hometown": "Vienna, Austria",
+      "previousSchool": null
+    },
+    {
+      "name": "Aaron Quarcoo",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Newark, NJ",
+      "previousSchool": null,
+      "highSchool": "North Star Academy Lincoln Park"
+    },
+    {
+      "name": "Joseph Juarez",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "New Brunswick, N.J.",
+      "previousSchool": null,
+      "highSchool": "New Brunswick HS"
+    },
+    {
+      "name": "Anthony Sarkisov",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Manalapan, N.J.",
+      "previousSchool": null,
+      "highSchool": "Manalapan HS"
+    },
+    {
+      "name": "Marcel Novak",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Oberwaltersdorf, Austria",
+      "previousSchool": null
+    },
+    {
+      "name": "Nabeel Khan",
+      "position": "D",
+      "positionAsListed": "Wingback",
+      "class": "Jr.",
+      "hometown": "Auckland, New Zealand",
+      "previousSchool": "Takapuna FC",
+      "highSchool": "Takapuna Grammar School"
+    },
+    {
+      "name": "Morris Bakker",
+      "position": "D",
+      "positionAsListed": "Center Back",
+      "class": "So.",
+      "hometown": "Breda, Netherlands",
+      "previousSchool": "Indian Hills CC",
+      "highSchool": "De Nassau"
+    },
+    {
+      "name": "Chisom Ike",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Newark, NJ",
+      "previousSchool": null,
+      "highSchool": "Technology HS"
+    },
+    {
+      "name": "Nicholas Damiano",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Wall, NJ",
+      "previousSchool": null,
+      "highSchool": "Wall HS"
+    },
+    {
+      "name": "Gijs van Eif",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Kortenhoef, Netherlands",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Sanchez",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Egg Harbor Township, NJ",
+      "previousSchool": "Rosemont College",
+      "highSchool": "Egg Harbor Township HS"
+    },
+    {
+      "name": "Ryley Fine",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Flemington, N.J.",
+      "previousSchool": null,
+      "highSchool": "North Hunterdon HS"
+    },
+    {
+      "name": "Jadyn DeRosa",
+      "position": "F",
+      "positionAsListed": "Foward/Wing",
+      "class": "So.",
+      "hometown": "West Long Branch, NJ",
+      "previousSchool": null,
+      "highSchool": "Shore Regional HS"
+    },
+    {
+      "name": "David Sanchez, Jr.",
+      "position": "D",
+      "positionAsListed": "Center Back",
+      "class": "Jr.",
+      "hometown": "Union N.J.",
+      "previousSchool": null,
+      "highSchool": "Union HS"
+    },
+    {
+      "name": "Tyler Neves",
+      "position": "MF",
+      "positionAsListed": "Center Mid",
+      "class": "Jr.",
+      "hometown": "Linden, N.J.",
+      "previousSchool": null,
+      "highSchool": "Linden HS"
+    },
+    {
+      "name": "Chris McDonald",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Belfast, Ireland",
+      "previousSchool": "Kentucky Wesleyan",
+      "highSchool": "Our Lady and Saint Patrick's"
+    },
+    {
+      "name": "Luke Henstock-Smith",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Coulsdon, United Kingdom",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Vecchioni",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Hamilton, Ontario, Canada",
+      "previousSchool": null,
+      "highSchool": "St. John Henry Newman Catholic Secondary School"
+    },
+    {
+      "name": "Henry Lopez Gonzalez",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "New Brunswick, NJ",
+      "previousSchool": null,
+      "highSchool": "New Brunswick HS"
+    },
+    {
+      "name": "Jason Xu",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Cambridge, England",
+      "previousSchool": "West Virginia Wesleyan",
+      "highSchool": "Long Road Sixth Form College"
+    },
+    {
+      "name": "David Canseco",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "New Brunswick, N.J.",
+      "previousSchool": null,
+      "highSchool": "New Brunswick HS"
+    },
+    {
+      "name": "Santiago Valencia",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Brick, NJ",
+      "previousSchool": null,
+      "highSchool": "Brick Township HS"
+    },
+    {
+      "name": "Christian Chancellor",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Brandon, FL",
+      "previousSchool": null,
+      "highSchool": "Bloomingdale Senior HS"
+    },
+    {
+      "name": "Shermicah Moore",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Staten Island, NY",
+      "previousSchool": null,
+      "highSchool": "Susan E Wagner HS"
+    },
+    {
+      "name": "Mykerson Tribie",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Gr.",
+      "hometown": "Gonaives, Haiti",
+      "previousSchool": null,
+      "highSchool": "North Penn HS"
+    },
+    {
+      "name": "River Rodriguez",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Palm Coast, FL",
+      "previousSchool": null,
+      "highSchool": "Flagler Palm Coast HS"
+    },
+    {
+      "name": "Leni Ehikwe",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Hillside, N.J.",
+      "previousSchool": null,
+      "highSchool": "Hillside HS"
+    },
+    {
+      "name": "Isaac Yllahuaman",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Brick, NJ",
+      "previousSchool": null,
+      "highSchool": "Brick Township HS"
+    },
+    {
+      "name": "Christopher Pedraza",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Lakewood, NJ",
+      "previousSchool": "NJCU",
+      "highSchool": "Lakewood HS"
+    },
+    {
+      "name": "Marcus Rodrigues",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Colonia, N.J.",
+      "previousSchool": null,
+      "highSchool": "Colonia HS"
+    },
+    {
+      "name": "Giovanni Batista",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Jackson, NJ",
+      "previousSchool": "Rutgers-Newark",
+      "highSchool": "Jackson Liberty HS"
+    },
+    {
+      "name": "Nico Propato",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Warrington, PA",
+      "previousSchool": null,
+      "highSchool": "Central Bucks HS"
+    },
+    {
+      "name": "Zachary Zimmer",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Howell, NJ",
+      "previousSchool": null,
+      "highSchool": "Howell HS"
+    },
+    {
+      "name": "Joshua Asubonteng",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Burlington, NJ",
+      "previousSchool": null,
+      "highSchool": "Life Center Academy"
+    },
+    {
+      "name": "Jevon Ryther",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Camaguey, Cuba",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Chavez",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "New Brunswick, N.J.",
+      "previousSchool": null,
+      "highSchool": "New Brunswick HS"
+    },
+    {
+      "name": "James McCoy",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Baldwin, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Holy Trinity HS"
+    },
+    {
+      "name": "Cody McLeod, Jr.",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Manchester, NJ",
+      "previousSchool": null,
+      "highSchool": "Manchester Township HS"
+    },
+    {
+      "name": "Mateo Muniz",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Colonia, NJ",
+      "previousSchool": null,
+      "highSchool": "Colonia HS"
+    },
+    {
+      "name": "Yanis Achouri",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Gr.",
+      "hometown": "Rouen, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Leonor",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Brick, NJ",
+      "previousSchool": null,
+      "highSchool": "Brick Township HS"
+    },
+    {
+      "name": "Lorenzo Adduci",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Little Falls, N.J.",
+      "previousSchool": null,
+      "highSchool": "Don Bosco Prep"
+    },
+    {
+      "name": "Ryan Binetti",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Manalapan, NJ",
+      "previousSchool": null,
+      "highSchool": "Manalapan HS"
+    },
+    {
+      "name": "Fernando Milanesi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Segundo Caguana",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Hillside, N.J.",
+      "previousSchool": null,
+      "highSchool": "Hillside HS"
+    },
+    {
+      "name": "Andre Rodas",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Long Branch, NJ",
+      "previousSchool": null,
+      "highSchool": "Long Branch HS"
+    },
+    {
+      "name": "David Kibe",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Newark, NJ",
+      "previousSchool": "Essix County CC",
+      "highSchool": "West Side HS"
+    },
+    {
+      "name": "Liam Goodrich",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Toms River, NJ",
+      "previousSchool": null,
+      "highSchool": "Pilgrim Academy"
+    },
+    {
+      "name": "Hector De Los Santos",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Lakewood, NJ",
+      "previousSchool": null,
+      "highSchool": "Lakewood HS"
+    },
+    {
+      "name": "Nico Rodriguez",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Leonardo, NJ",
+      "previousSchool": null,
+      "highSchool": "Middletown South HS"
+    },
+    {
+      "name": "Muntag Diallo",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Pemberton, NJ",
+      "previousSchool": null,
+      "highSchool": "Burlington County Institute of Technology"
+    },
+    {
+      "name": "John Heckel",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Forked River, NJ",
+      "previousSchool": null,
+      "highSchool": "Lacey Township HS"
+    },
+    {
+      "name": "Lennox Blue Lebelt",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Berlin, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Robert Baradas",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Chatham, N.J.",
+      "previousSchool": null,
+      "highSchool": "Seton Hall Preparatory School"
+    },
+    {
+      "name": "Michael Angelo",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Pennsville Township, N.J.",
+      "previousSchool": null,
+      "highSchool": "Pennsville Memorial HS"
+    }
+  ]
+}

@@ -38,7 +38,8 @@ UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
 
 # ── position normalisation (CLAUDE.md 15) ────────────────────────────────────
 MF_TOKENS = {'M', 'MF', 'CM', 'DM', 'AM', 'CDM', 'CAM', 'MID', 'MIDFIELD',
-             'MIDFIELDER', 'CENTRALMIDFIELDER', 'CENTERMIDFIELD'}
+             'MIDFIELDER', 'CENTRALMIDFIELDER', 'CENTERMIDFIELD',
+             'CENTERMID'}  # "Center Mid" (Georgian Court)
 KNOWN_NON_MF = {'GK', 'G', 'GOALKEEPER', 'KEEPER', 'D', 'DF', 'DEF', 'DEFENDER',
                 'DEFENSE', 'B', 'BACK', 'F', 'FW', 'FWD', 'FORWARD', 'ST',
                 'STRIKER', 'W', 'WINGER', 'ATT', 'ATTACKER'}

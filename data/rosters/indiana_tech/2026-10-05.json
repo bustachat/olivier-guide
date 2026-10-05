@@ -1,0 +1,312 @@
+{
+  "schoolId": "indiana_tech",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://indianatechwarriors.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 35,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Alan Fleischer",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Colchester, England",
+      "previousSchool": null,
+      "highSchool": "Philip Morant School"
+    },
+    {
+      "name": "Zacharias Younes",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Chesire, England",
+      "previousSchool": "Kansas Wesleyan University"
+    },
+    {
+      "name": "Joao Gustavo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Minas Gerais, Brazil",
+      "previousSchool": "Coffeyville CC"
+    },
+    {
+      "name": "Fernando Cuevas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null,
+      "highSchool": "Universidad Carlos III Madrid"
+    },
+    {
+      "name": "Anderson Junior",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Santa Maria, Brazil",
+      "previousSchool": null,
+      "highSchool": "Guiomar Togan Gusmao Branco"
+    },
+    {
+      "name": "Javier Lopez Medinaceli",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Valencia, Spain",
+      "previousSchool": "Lewis & Clark CC"
+    },
+    {
+      "name": "Matthew Takawira",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Luton, England",
+      "previousSchool": "Loyola University Maryland"
+    },
+    {
+      "name": "Zak El Hannach",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "London, England",
+      "previousSchool": "Neosho CC",
+      "highSchool": "Holland Park School"
+    },
+    {
+      "name": "Filip Maksimovic",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Belgrade, Serbia",
+      "previousSchool": "Florida Atlantic University",
+      "highSchool": "Twelfth Belgrade Gymnasium"
+    },
+    {
+      "name": "Gui Moreira",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Aguim, Portugal",
+      "previousSchool": null,
+      "highSchool": "Escola Secundaria de Anadia"
+    },
+    {
+      "name": "Robin Vezinhet",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Avignon, France",
+      "previousSchool": "Tennesse Wesleyan University"
+    },
+    {
+      "name": "Aydon Curuth",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Chaguanas, Trinidad and Tabago",
+      "previousSchool": "Queens Royal College"
+    },
+    {
+      "name": "Alonso Rosales",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Mexico City, Mexico",
+      "previousSchool": null,
+      "highSchool": "Instituto Educativo Olinca"
+    },
+    {
+      "name": "James Kwakye",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Accra, Ghana",
+      "previousSchool": "University of Mobile",
+      "highSchool": "Ideal College"
+    },
+    {
+      "name": "Jack Kennedy",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Ballymena, Northern Ireland",
+      "previousSchool": null,
+      "highSchool": "Carroll HS"
+    },
+    {
+      "name": "Matija Stupar",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Belgrade, Serbia",
+      "previousSchool": null,
+      "highSchool": "Pascal English HS"
+    },
+    {
+      "name": "Fabian Hauer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Vienna, Austria",
+      "previousSchool": null,
+      "highSchool": "Ballsportgymnasium Vienna"
+    },
+    {
+      "name": "Touhami Bel-Hadj",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Lyon, France",
+      "previousSchool": "Casper College",
+      "highSchool": "Lycee Albert Camus"
+    },
+    {
+      "name": "Aiki Sadaoka",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Kobe, Japan",
+      "previousSchool": "Arizona Western College"
+    },
+    {
+      "name": "Ryan Henry",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Soham, England",
+      "previousSchool": "Snow College"
+    },
+    {
+      "name": "Bruno Gregor",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Asuncion, Paraguay",
+      "previousSchool": "Richard Bland College"
+    },
+    {
+      "name": "Kumbirai Mutamuko",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Harare, Zimbabwe",
+      "previousSchool": "Muskegon CC",
+      "highSchool": "Falcon College"
+    },
+    {
+      "name": "Emre Baris",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Dortmund, Germany",
+      "previousSchool": "Biola University"
+    },
+    {
+      "name": "Justin Vallelian",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Lausanne, Switzerland",
+      "previousSchool": "Arizona Western College",
+      "highSchool": "Gymnase de Beaulieu/"
+    },
+    {
+      "name": "George Lamb",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Kent, England",
+      "previousSchool": "Drury University"
+    },
+    {
+      "name": "Federico Confaloni",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Falerone, Italy",
+      "previousSchool": "Milligan University"
+    },
+    {
+      "name": "Reece Black",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Belfast, Northern Ireland",
+      "previousSchool": "Richard Bland College",
+      "highSchool": "Belfast HS"
+    },
+    {
+      "name": "Isaac Coppinger",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Middlesbrough, England",
+      "previousSchool": null,
+      "highSchool": "Trinity Catholic College"
+    },
+    {
+      "name": "Joaquin Goldman",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Buenos Aires, Argentina",
+      "previousSchool": "North Carolina Wesleyan College"
+    },
+    {
+      "name": "Arnau Lopez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Tortosa, Spain",
+      "previousSchool": null,
+      "highSchool": "Institut Dertosa"
+    },
+    {
+      "name": "Juan Jose Pava",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Cali, Colombia",
+      "previousSchool": null,
+      "highSchool": "Colegio Bolivar"
+    },
+    {
+      "name": "Marvin Kopp",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Berlin, Germany",
+      "previousSchool": null,
+      "highSchool": "Flatow Oberschule"
+    },
+    {
+      "name": "Tim Straubmueller",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Salach, Germany",
+      "previousSchool": "Marshalltown CC"
+    },
+    {
+      "name": "Hunter Maiden",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Santa Clarita, California",
+      "previousSchool": "Oklahoma Christian University"
+    },
+    {
+      "name": "Lennart Wider",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Loeffingen, Germany",
+      "previousSchool": null,
+      "highSchool": "Technisches Gymnasium Donaueschingen"
+    }
+  ]
+}

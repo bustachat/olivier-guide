@@ -1,0 +1,268 @@
+{
+  "schoolId": "keiser",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://kuseahawks.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 32,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Juan Saldarriaga",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "4th Yr.",
+      "hometown": "Medellin, Colombia / Manzanares",
+      "previousSchool": "Universidad EAFIT"
+    },
+    {
+      "name": "Keanu Does",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "2nd Yr.",
+      "hometown": "Rijswijk, Netherlands / Segbroek College",
+      "previousSchool": null
+    },
+    {
+      "name": "Ted Gibbs",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "3rd Yr.",
+      "hometown": "London, England / Millfield School",
+      "previousSchool": null
+    },
+    {
+      "name": "Timo Boomkens",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "4th Yr.",
+      "hometown": "Valkenswaard, Noord-Brabant, Netherlands / Weredi",
+      "previousSchool": null
+    },
+    {
+      "name": "Francis Bolland",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "3rd Yr.",
+      "hometown": "Vienna, Austria / Gymnasium Hollabrunn",
+      "previousSchool": null
+    },
+    {
+      "name": "Eric Neron-Bancel",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "3rd Yr.",
+      "hometown": "Dubai, United Arab Emirates / Greenfield International School",
+      "previousSchool": null
+    },
+    {
+      "name": "Mohammed Mouzoune",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "3rd Yr.",
+      "hometown": "Kenitra, Morocco / Mimosas El Ghareb",
+      "previousSchool": "Georgetown College"
+    },
+    {
+      "name": "Ian Garnero",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Gr.",
+      "hometown": "Berezetegui, Buenos Aires, Argentina / St. George's",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Loureiro",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "3rd Yr.",
+      "hometown": "Rio de Janeiro, Brazil / CEJA Petropolis",
+      "previousSchool": "Eastern Florida State College"
+    },
+    {
+      "name": "Gabi Villafane",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "4th Yr.",
+      "hometown": "Barinas, Venezuela / Arnold Bay High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Fami Konate",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "4th Yr.",
+      "hometown": "Frankfurt, Germany / Hans-Purrmann-Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Mikael Baisotti",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "4th Yr.",
+      "hometown": "Bergen, Norway / Tertnes VGS",
+      "previousSchool": null
+    },
+    {
+      "name": "Eden Barlow",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "2nd Yr.",
+      "hometown": "Surrey, England /",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Duque",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Gr.",
+      "hometown": "Medellin, Colombia / Aspaen Alcazares",
+      "previousSchool": "Universidad EAFIT"
+    },
+    {
+      "name": "Xabi Souto",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "4th Yr.",
+      "hometown": "A Coruña, Spain / Colegio Calasanz",
+      "previousSchool": "Jones College"
+    },
+    {
+      "name": "Victor Mairet",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "3rd Yr.",
+      "hometown": "Paris, France / Raffles World Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Teixeira",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "3rd Yr.",
+      "hometown": "Portugal / Instituto de Ciencias Educativas",
+      "previousSchool": "Indiana Tech"
+    },
+    {
+      "name": "Sergio Padín-Rey",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "2nd Yr.",
+      "hometown": "Coruña, España / Agra do Orzan",
+      "previousSchool": "Southwest Mississippi CC"
+    },
+    {
+      "name": "Fabian Alexander Pisec",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "2nd Yr.",
+      "hometown": "Vienna, Austria / DAS Ballsportgymnasium Wien",
+      "previousSchool": null
+    },
+    {
+      "name": "Enzo Bousin",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "1st",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Finn Froley",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "3rd Yr.",
+      "hometown": "Calabasas, California / Calabasas High School",
+      "previousSchool": "Jacksonville University"
+    },
+    {
+      "name": "Juan Terrasa",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "3rd Yr.",
+      "hometown": "Mallorca, Spain / Colegio Santa Maria",
+      "previousSchool": null
+    },
+    {
+      "name": "Raul Cedillo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "2nd Yr.",
+      "hometown": "Machala, Ecuador /",
+      "previousSchool": null
+    },
+    {
+      "name": "Etyenne Caron",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "1st Yr.",
+      "hometown": "Montreal, Canada / OVS",
+      "previousSchool": null
+    },
+    {
+      "name": "Robbie Reynolds",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "3rd",
+      "hometown": "Monterey, California / Frank W. Cox High School",
+      "previousSchool": "University of Lancashire"
+    },
+    {
+      "name": "Alejandro Molina-Casas",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "2nd Yr.",
+      "hometown": "Medellín, Colombia / The Columbus School",
+      "previousSchool": null
+    },
+    {
+      "name": "Joshua Clark Anderson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "1st Yr.",
+      "hometown": "London, England /",
+      "previousSchool": null
+    },
+    {
+      "name": "Kadmiel Anderson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "4th Yr.",
+      "hometown": "England / Saint Gabriel's College",
+      "previousSchool": "Tusculum University"
+    },
+    {
+      "name": "Nicolaj Kamarin Mahlmann",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "1st Yr.",
+      "hometown": "Fredericia, Denmark / Fredericia Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Harley Dawson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "3rd Yr.",
+      "hometown": "Brighton, England / Cardinal Newman",
+      "previousSchool": null
+    },
+    {
+      "name": "Tom Alexander",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "1st Yr.",
+      "hometown": "Buckinghamshire, England / Haileybury School",
+      "previousSchool": null
+    },
+    {
+      "name": "Edwin Hodzic",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "1st Yr.",
+      "hometown": "Sweden /",
+      "previousSchool": null
+    }
+  ]
+}

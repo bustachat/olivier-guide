@@ -1,0 +1,436 @@
+{
+  "schoolId": "uc_charleston",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://ucgoldeneagles.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 53,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Curro Rodriguez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Islas Canarias, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Alberto Rodriguez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Caracas, Venezuela",
+      "previousSchool": null
+    },
+    {
+      "name": "Tobias Jervelund",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Ringe, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "McKenzie Mason",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Norwich, United Kingdom",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeremy Köppe",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Falkensee, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Montes",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Cali, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Suarez Monaco",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Rosario, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Caio Moraes",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Sao Bernardo De Campo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Atem Kato",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "5th",
+      "hometown": "Kapenguria, Kenya",
+      "previousSchool": null
+    },
+    {
+      "name": "Tomas Petrungaro",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Buenos Aires, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Allan Logrillo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Metz, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Luka Felix",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Obidos, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Haynes",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Sugar Hill, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Eduardo Rodrigues",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "5th",
+      "hometown": "Fortaleza, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Arbizu",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Pamplona, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Mikael Dawit",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Stone Mountain, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Imtiyaaz Kamaldien",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Cape Town, South Africa",
+      "previousSchool": null
+    },
+    {
+      "name": "Yigit Kilic",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Istanbul, Türkiye",
+      "previousSchool": null
+    },
+    {
+      "name": "Hayden Fogel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Lawton, OK",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Felipe Almeida",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Vitória, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Aiden Holbert",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Charleston, WV",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Echarren",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Tandil, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Paschalides",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Brunswick, MD",
+      "previousSchool": null
+    },
+    {
+      "name": "Jude Boyle",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Staten Island, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Niehaus",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Northport, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Haynes",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Stone Mountain, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Theodoros Georgiadis",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Giannitsa, Greece",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Chang",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Liberia, Costa Rica",
+      "previousSchool": null
+    },
+    {
+      "name": "Caleb Rose",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Cleveland, OH",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Marquez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Granada, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Payton Parsons",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Bloomfield Hills, MI",
+      "previousSchool": null
+    },
+    {
+      "name": "Mattia Marini",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Pescara, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrian Medina",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Maracaibo, Venezuela",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Warner",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Huntington, WV",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Panacci",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Caledon, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Tosha Beatty",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Diosd, Hungary",
+      "previousSchool": null
+    },
+    {
+      "name": "Bernardo Lima D'Andrea",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Oakville, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Maxwell Gurnick",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Hamilton, New Zealand",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Mitchell",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Culloden, WV",
+      "previousSchool": null
+    },
+    {
+      "name": "Mohanad Nahla",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Charleston, WV",
+      "previousSchool": null
+    },
+    {
+      "name": "Sammy Clay",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "London, United Kingdom",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Lopez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Valera, Venezuela",
+      "previousSchool": null
+    },
+    {
+      "name": "Connely Sparks",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Philippi, WV",
+      "previousSchool": null
+    },
+    {
+      "name": "Lincoln James",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Surrey, British Columbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Pando",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Cajamarca, Peru",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick Bernard",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Avondale Estates, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastien Harris",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Auckland, New Zealand",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeronimo Ramirez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Tunja, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Alonso Macollunco",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Lima, Peru",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Paschalides",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Brunswick, MD",
+      "previousSchool": null
+    },
+    {
+      "name": "Austin Wood",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Highlands Ranch, CO",
+      "previousSchool": null
+    },
+    {
+      "name": "Nihal Mark",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Westford, MA",
+      "previousSchool": null
+    },
+    {
+      "name": "Aarav Patpatia",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Mumbai, India",
+      "previousSchool": null
+    }
+  ]
+}

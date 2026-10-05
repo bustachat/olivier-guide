@@ -1,0 +1,230 @@
+{
+  "schoolId": "ocu",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.ocusports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 25,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Vittorio Di Carlo",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Castelnuovo Parano, Italy",
+      "previousSchool": "Hillsbourgh CC",
+      "highSchool": "Liceo Scientifico G. Pellecchia"
+    },
+    {
+      "name": "Pieri Mack",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Norwich, England",
+      "previousSchool": "LSU-Shreveport"
+    },
+    {
+      "name": "Harrison Clayden",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Ingatestone, Essex, England",
+      "previousSchool": "Union College (Ky.)",
+      "highSchool": "Brentwood"
+    },
+    {
+      "name": "Rhys Bryant-Jones",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Surrey, England",
+      "previousSchool": "Middle Georgia",
+      "highSchool": "Woking College"
+    },
+    {
+      "name": "Yago Monteagudo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "LaCoruna, Spain",
+      "previousSchool": "Tiffin, Lewis and Clark CC",
+      "highSchool": "Colegio Esclavas"
+    },
+    {
+      "name": "Joao Felippe Dellu",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": "Pellissippi State CC",
+      "highSchool": "Objetivo"
+    },
+    {
+      "name": "Ethan Zeinalpour",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Norman, Okla.",
+      "previousSchool": null,
+      "highSchool": "Norman"
+    },
+    {
+      "name": "Hannan Ashraf",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Edmond, Okla.",
+      "previousSchool": null,
+      "highSchool": "Mercy"
+    },
+    {
+      "name": "Sam Belle",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Verona, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Francisco Miquel",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Bogota, Colombia",
+      "previousSchool": "Copiah-Lincoln CC",
+      "highSchool": "William McKinley"
+    },
+    {
+      "name": "Joao Figueiredo",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Jr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": "Monroe",
+      "highSchool": "E.E. Batista Renzi"
+    },
+    {
+      "name": "Juan Erazo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Cali, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Aden Lino",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Oklahoma City, Okla.",
+      "previousSchool": "Rose State",
+      "highSchool": "Putnam City West HS"
+    },
+    {
+      "name": "Matheus Ambrozio",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": "Seward County CC"
+    },
+    {
+      "name": "Kenz Toms",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Plymouth, England",
+      "previousSchool": "Neosho County CC",
+      "highSchool": "Davenport HS"
+    },
+    {
+      "name": "Noah Ragozzino",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Oklahoma City, Okla.",
+      "previousSchool": null,
+      "highSchool": "Heritage Hall"
+    },
+    {
+      "name": "Martino Di Braida",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Aldeno, Italy",
+      "previousSchool": "Hill College"
+    },
+    {
+      "name": "Sebastian Castillo",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Brayden Souter",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Wichita, Kan.",
+      "previousSchool": null,
+      "highSchool": "Wichita Northwest"
+    },
+    {
+      "name": "Asher Trent",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "Norman, Okla.",
+      "previousSchool": null,
+      "highSchool": "Norman HS"
+    },
+    {
+      "name": "Harrison Knight",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Northampton, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Cooper Stephens",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Edmond, Okla.",
+      "previousSchool": null,
+      "highSchool": "Deer Creek HS"
+    },
+    {
+      "name": "Carter Gebb",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Oklahoma City, Okla.",
+      "previousSchool": null,
+      "highSchool": "Deer Creek HS"
+    },
+    {
+      "name": "Jackson Conell",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Oklahoma City, Okla.",
+      "previousSchool": null,
+      "highSchool": "Putnam City North"
+    },
+    {
+      "name": "Alan Amberson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Newalla, Okla.",
+      "previousSchool": null,
+      "highSchool": "McLoud"
+    }
+  ]
+}

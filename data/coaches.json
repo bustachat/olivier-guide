@@ -1488,14 +1488,19 @@
     "staff": [
       {
         "name": "Anthony Desperito",
-        "role": "Assistant Coach",
-        "email": "",
+        "role": "Assistant Coach, Men's Soccer",
+        "email": "adesperito@lynn.edu",
         "bg": "Former Lynn player. Scored winning goal in 2012 championship as player. Won 2012, 2014, 2024 titles — 2 as player, 2 as coach."
+      },
+      {
+        "name": "Mariana Mazzocca",
+        "role": "Assistant Athletic Trainer",
+        "email": "MMazzoccaRauseo@lynn.edu"
       }
     ],
     "contact": {
       "email": "jrootes@lynn.edu",
-      "phone": "561-237-7665"
+      "phone": "561-237-7245"
     },
     "url": "https://lynnfightingknights.com/sports/mens-soccer",
     "color": [
@@ -1504,7 +1509,7 @@
     ],
     "licence": "USSF A, NSCAA Advanced National",
     "overallScoreNote": "§5d re-score (was 84). lynnfightingknights.com: the batch's strongest resume - THREE NCAA D2 National Championships as HC (2012/14/24), 5 national title-game appearances, 12 NCAA apps, 512-153-57 career / 228-57-35 at Lynn, 2x D2 National Coach of the Year (2014/24), USSF A. Held at the TOP of strong not elite: Pillar B (documented MLS/pro/international pipeline) is thin/absent - the elite band pairs winning with a clear pro pipeline he lacks.",
-    "title": "Head Coach (17th season — since 2008)"
+    "title": "Head Coach, Men's Soccer"
   },
   {
     "id": "payne_northwestern",
@@ -2486,22 +2491,26 @@
     "staff": [
       {
         "name": "Dallas Jaussi",
-        "role": "Associate Head Coach",
+        "role": "Men's Soccer Associate Head Coach",
+        "email": "jjaussi2@calstatela.edu",
         "bg": "Associate HC — recruitment and player development."
       },
       {
         "name": "Erick Lemus",
-        "role": "Assistant Coach",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "elemus21@calstatela.edu",
         "bg": "Assistant coach — technical development."
       },
       {
         "name": "Eduardo Castellanos",
-        "role": "Assistant Coach",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "Ecaste50@calstatela.edu",
         "bg": "Assistant coach — tactical and opposition analysis."
       },
       {
         "name": "Christian Segovia",
-        "role": "Assistant Coach",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "csegovi9@calstatela.edu",
         "bg": "Assistant coach — player welfare and recruitment."
       }
     ],
@@ -2868,9 +2877,29 @@
     "staff": [
       {
         "name": "Corey Miller",
-        "role": "Associate Head Coach",
-        "email": "",
+        "role": "Associate Head Men's Soccer Coach",
+        "email": "cmille13@stedwards.edu",
         "bg": "Promoted March 2025. On staff since 2017. USSF National B License. Former Simpson College captain."
+      },
+      {
+        "name": "Matteo Curioni",
+        "role": "Assistant Coach",
+        "email": ""
+      },
+      {
+        "name": "Brandon Silvera",
+        "role": "Assistant Coach",
+        "email": ""
+      },
+      {
+        "name": "Eric Embry",
+        "role": "Assistant Coach",
+        "email": ""
+      },
+      {
+        "name": "Jake Beerman",
+        "role": "Assistant Coach",
+        "email": ""
       }
     ],
     "contact": {
@@ -2884,7 +2913,7 @@
     ],
     "licence": "USSF A, NSCAA Advanced National",
     "overallScoreNote": "§5d re-score (was 85, halo trimmed). gohilltoppers.com: 19-yr D2 HC, 185-126-45, program all-time wins leader, Heartland Conference Hall of Fame (2019), 3 conference championships (2014/15/16) + 2 D2 Sweet 16s, ~8 Conference CoY, USSF A licence, Brown University D1 assistant pedigree (Ivy titles, Elite 8). Pillar B real-but-modest: 4 pros (English National League/League One, Swedish, NASL - no MLS/internationals). Deep decorated D2 body of work -> upper-strong, below the batch's national-title tier.",
-    "title": "Head Coach (multi-tenure)"
+    "title": "Head Men's Soccer Coach"
   },
   {
     "id": "davies",
@@ -3036,27 +3065,36 @@
       {
         "name": "Corbin Bowers",
         "role": "Assistant Coach",
+        "email": "",
         "bg": "Assistant coach at UC Charleston. International recruitment background."
       },
       {
         "name": "Connor Hartwell",
         "role": "Assistant Coach",
+        "email": "",
         "bg": "Assistant coach contributing to player development."
       },
       {
+        "name": "Tyler Card",
+        "role": "Assistant Coach | Head of Goalkeeping",
+        "email": ""
+      },
+      {
         "name": "Mohammad Rad",
-        "role": "Tactical Advisor",
+        "role": "Volunteer Assistant Coach | Tactical Advisor",
+        "email": "",
         "bg": "Volunteer tactical advisor — professional coaching input on game model."
       },
       {
         "name": "Mattia Vezzoni",
-        "role": "Video Analyst",
+        "role": "Assistant Coach | Match Analyst",
+        "email": "",
         "bg": "Dedicated video analyst — uncommon at D2 level, shows program professionalism."
       }
     ],
     "contact": {
-      "email": "dsmee@ucwv.edu",
-      "phone": "304-357-4800"
+      "email": "ucmenssoccer@ucwv.edu",
+      "phone": "304-347-6972"
     },
     "url": "https://ucgoldeneagles.com/sports/mens-soccer",
     "color": [
@@ -3452,22 +3490,30 @@
       {
         "name": "Joe Barber",
         "role": "Assistant Men's Soccer Coach",
+        "email": "joseph.barber@keiseruniversity.edu",
         "bg": "Assistant coach contributing to player development and recruitment."
       },
       {
         "name": "Leo Camacho",
         "role": "Goalkeeping Coach",
+        "email": "",
         "bg": "Dedicated goalkeeping coach — specialist GK development within the Sun Conference program."
+      },
+      {
+        "name": "Santiago Nebot",
+        "role": "Graduate Assistant Men's Soccer Coach",
+        "email": ""
       },
       {
         "name": "Vittoria Giordano",
         "role": "Assistant Athletic Trainer",
+        "email": "vittoria.giordano@keiseruniversity.edu",
         "bg": "Sports medicine support for men's soccer. Keiser health sciences facilities available to student-athletes."
       }
     ],
     "contact": {
-      "email": "athletics@keiseruniversity.edu",
-      "phone": "954-776-4476"
+      "email": "goldham@keiseruniversity.edu",
+      "phone": "561-315-2777"
     },
     "url": "https://kuseahawks.com/sports/mens-soccer",
     "color": [
@@ -6170,6 +6216,21 @@
         "name": "Robbie Fitzpatrick",
         "role": "Associate Head Coach",
         "email": "rfitzpatrick@georgian.edu"
+      },
+      {
+        "name": "George Kavarakas",
+        "role": "Assistant Coach",
+        "email": "gkavarakas@georgian.edu"
+      },
+      {
+        "name": "Devon Shapiro",
+        "role": "Assistant Coach",
+        "email": ""
+      },
+      {
+        "name": "Elliot Baldwin",
+        "role": "Volunteer Coach",
+        "email": ""
       }
     ],
     "contact": {
@@ -6183,7 +6244,7 @@
     ],
     "licence": "USSF A",
     "overallScoreNote": "§5d re-score (held at 64). gculions.com: first-ever GCU men's HC since 2012 (13th season), program-founder, but a sub-.500 record (94-96-23), one CACC Championship (2016) + first CACC CoY (2024). USSF A licence, 25+ yrs experience, D1 Eastern Illinois assistant pedigree (2005-10). The losing HC record + zero attributable pro output cap the strong pedigree at the top of solid.",
-    "title": "Head Coach"
+    "title": "Head Men's Soccer Coach"
   },
   {
     "id": "hc_memphis",
@@ -6302,7 +6363,7 @@
     "devScore": 80,
     "ptPathScore": 90,
     "ausConnection": false,
-    "bio": "Petsa Ivanovic has been HC at Barry since spring 2022. Previously top assistant at Marshall for 5 years where he helped win the 2020-21 D1 NCAA National Championship. 2025 staff from official roster: Ivan Barriga (Assoc HC, ibarriga@barry.edu, 305-899-3135), Juan Wulf (GK Coach), Ethan Sonis and Jose Santamarina (Volunteer Assistants). Originally from Serbia, played D2 and D1 in USA.",
+    "bio": "Petsa Ivanovic has been HC at Barry since spring 2022. Previously top assistant at Marshall for 5 years where he helped win the 2020-21 D1 NCAA National Championship. His 2026 staff: Juan Pablo Correa (Assistant Coach), Juan Wulf (Keeper Coach) and five volunteer assistants. Originally from Serbia, played D2 and D1 in USA.",
     "strengths": [
       "USSF licensed",
       "Pre-PT seminar in degree",
@@ -6311,33 +6372,46 @@
     ],
     "staff": [
       {
-        "name": "Ivan Barriga",
-        "role": "Associate Head Coach",
-        "email": "ibarriga@barry.edu",
-        "bg": "Associate Head Coach. Recruiting and player development."
+        "name": "Juan Pablo Correa",
+        "role": "Assistant Coach",
+        "email": "jcorrea@barry.edu"
       },
       {
         "name": "Juan Wulf",
-        "role": "Goalkeeper Coach",
-        "email": "",
+        "role": "Keeper Coach",
+        "email": "juan.wulff@mymail.barry.edu",
         "bg": "Goalkeeper specialist on coaching staff."
       },
       {
-        "name": "Ethan Sonis",
-        "role": "Volunteer Assistant",
-        "email": "",
-        "bg": "Full-time assistant coach."
+        "name": "Jerome Kiesewetter",
+        "role": "Volunteer Assistant Coach",
+        "email": "jkiesewetter@barry.edu"
+      },
+      {
+        "name": "Arturo Ernand",
+        "role": "Volunteer Assistant Coach",
+        "email": "aernand@barry.edu"
+      },
+      {
+        "name": "Juan Solorzano",
+        "role": "Volunteer Assistant Coach",
+        "email": "jsolorzano@barry.edu"
+      },
+      {
+        "name": "Adriaan McColl",
+        "role": "Volunteer Assistant Coach",
+        "email": "amccoll@barry.edu"
       },
       {
         "name": "Jose Santamarina",
-        "role": "Volunteer Assistant",
+        "role": "Volunteer Assistant Coach",
         "email": "",
         "bg": "Full-time assistant coach."
       }
     ],
     "contact": {
       "email": "pivanovic@barry.edu",
-      "phone": "305-899-3770"
+      "phone": "305-899-3560"
     },
     "url": "https://gobarrybucs.com/sports/mens-soccer",
     "color": [
@@ -6346,7 +6420,7 @@
     ],
     "licence": null,
     "overallScoreNote": "§5d re-score (was 83, halo). gobarrybucs.com: 3-yr D2 HC, 31-18-8, one 2023 SSC regular+tournament double (first in program history) + NCAA R16, regressed to 6-9-3 / 7th in 2024. Strong ASSISTANT pedigree - 5 yrs top assistant to Grassie at Marshall incl. the 2020 D1 College Cup national title + recruiting lead (4 MLS draftees as an assistant). Serbian 2nd-division pro + D2 Charleston All-American playing career; no HC pro output, no licence stated -> top-solid.",
-    "title": "Head Coach (4th season — since Spring 2022)"
+    "title": "Head Coach"
   },
   {
     "id": "pierce_smc",
@@ -6782,6 +6856,11 @@
         "name": "Jackson Schrum",
         "role": "Assistant Coach",
         "email": "jrschrum1@ccis.edu"
+      },
+      {
+        "name": "Lucas Pardo",
+        "role": "Assistant Coach",
+        "email": "lpardo1@cougars.ccis.edu"
       }
     ],
     "contact": {
@@ -6795,7 +6874,7 @@
     ],
     "licence": "USSF D, NSCAA Advanced National",
     "overallScoreNote": "§5d re-score (was 55, under-scored). columbiacougars.com: NOT a first-year coach - HC at William Woods University 2008-2021 (winningest, 131 career wins, 2017 AMC CoY + undefeated conference + NAIA nationals), then an AMC regular-season title in his first Columbia season (2025). National B/C/D licences + United Soccer Coaches Master Coach cert, D2 McKendree playing career, no pro output. Veteran NAIA body of work -> mid-solid. (Stored yearsHC=1 badly undercounts.)",
-    "title": "Head Coach"
+    "title": "Head Men's Soccer Coach"
   },
   {
     "id": "mcvea_olddominion",
@@ -7226,29 +7305,29 @@
       {
         "name": "Romeo Aguinaldo",
         "role": "Assistant Coach",
-        "bg": ""
+        "email": "aguinald@chapman.edu"
       },
       {
         "name": "Stephen Teal",
-        "role": "Assistant Coach",
-        "bg": ""
+        "role": "Assistant Coach/Recruiting Coordinator",
+        "email": "steal@chapman.edu"
       },
       {
         "name": "Jadenn Carrillo",
         "role": "Assistant Coach",
-        "bg": ""
+        "email": ""
       },
       {
         "name": "Manny Lopez",
-        "role": "Assistant Coach",
-        "bg": ""
+        "role": "Volunteer Assistant Coach",
+        "email": ""
       }
     ],
     "contact": {
       "email": "carrillo@chapman.edu",
       "phone": "(714) 997-6502"
     },
-    "url": "https://athletics.chapman.edu/sports/mens-soccer/roster/coaches/eddie-carrillo-90/507",
+    "url": "https://athletics.chapman.edu/sports/mens-soccer/coaches",
     "color": [
       "#fce7f3",
       "#db2777"
@@ -7314,7 +7393,7 @@
     "devScore": 84,
     "ptPathScore": 97,
     "ausConnection": false,
-    "bio": "Lucas Martorana is head coach at PBA since November 2022. His 2025 staff from the official roster: Pete Arnold, Jake Strachan, Leo Jean-Jacques, Guillermo Falo (all Assistant Coaches). Chuck Maddox Sr. also contributed to the 2025 SSC Staff of Year. Note: the 61-9-6 record often cited was as an ASSISTANT under the previous head coach McMahon, not as HC.",
+    "bio": "Lucas Martorana is head coach at PBA since November 2022. His 2026 staff: assistants Leo Jean-Jacques, Jake Strachan, Chuck Maddox and Giulio Bregu, and goalkeeper coach Matteo Scarduzio. Note: the 61-9-6 record often cited was as an ASSISTANT under the previous head coach McMahon, not as HC.",
     "strengths": [
       "Pre-PT degree integration",
       "Former professional",
@@ -7323,33 +7402,36 @@
     ],
     "staff": [
       {
-        "name": "Pete Arnold",
-        "role": "Assistant Coach",
-        "email": "",
+        "name": "Leo Jean-Jacques",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "leonard_jean-jacques@pba.edu",
         "bg": "Full-time assistant coach."
       },
       {
         "name": "Jake Strachan",
-        "role": "Assistant Coach",
-        "email": "",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "jake_strachan@pba.edu",
         "bg": "Full-time assistant coach."
       },
       {
-        "name": "Leo Jean-Jacques",
-        "role": "Assistant Coach",
-        "email": "",
-        "bg": "Full-time assistant coach."
+        "name": "Chuck Maddox",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "chuck_maddox@pba.edu"
       },
       {
-        "name": "Guillermo Falo",
-        "role": "Assistant Coach",
-        "email": "",
-        "bg": "Full-time assistant coach."
+        "name": "Giulio Bregu",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "giulio_bregu@pba.edu"
+      },
+      {
+        "name": "Matteo Scarduzio",
+        "role": "Goalkeeper Coach",
+        "email": "matteo_scarduzio@pba.edu"
       }
     ],
     "contact": {
-      "email": "lucas.martorana@pba.edu",
-      "phone": "561-803-2000"
+      "email": "lucas_martorana@pba.edu",
+      "phone": "561-803-2530"
     },
     "url": "https://pbasailfish.com/sports/mens-soccer",
     "color": [
@@ -7358,7 +7440,7 @@
     ],
     "licence": "USSF D",
     "overallScoreNote": "§5d re-score (was 86, halo). pbasailfish.com: 4th-yr HC, 33-22-9 (.586), one 2025 SSC regular-season title + first NCAA berth; the four SSC titles / 61-9-6 in the old score were his 2017-22 ASSISTANT years. USSF D licence (NSCAA diplomas aside), semi-pro USL/PDL/MISL playing career, ZERO attributable pro/next-level output. Early-career D2 HC with one strong season -> solid; the 86 sat alongside two-time D1 College-Cup head coaches.",
-    "title": "Head Coach (4th season as HC)"
+    "title": "Head Men's Soccer Coach"
   },
   {
     "id": "finnegan",
@@ -7377,7 +7459,7 @@
     "devScore": 80,
     "ptPathScore": 78,
     "ausConnection": true,
-    "bio": "Billy Martin returned to OCU as head coach in 2020-21. OCU alumnus — played for founder Brian Harvey 1989-91. Was Harvey assistant for 19 years before establishing Rose State mens soccer (74-35-2, 4 Region II titles). 2025 staff from official roster: Harvey Paul (Asst, hlpaul1@okcu.edu, former OCU player from Bristol England), Aiden Twohig (Asst), Thaddeus Caraway (GK Coach). Program URL updated to ocusports.com.",
+    "bio": "Billy Martin returned to OCU as head coach in 2020-21. OCU alumnus — played for founder Brian Harvey 1989-91. Was Harvey assistant for 19 years before establishing Rose State mens soccer (74-35-2, 4 Region II titles). His 2026 staff: Gui Grave (Assistant Coach) and Thaddeus Caraway (Goalkeeper Coach).",
     "strengths": [
       "Australian pro placement specialist",
       "A-League connections",
@@ -7386,16 +7468,9 @@
     ],
     "staff": [
       {
-        "name": "Harvey Paul",
+        "name": "Gui Grave",
         "role": "Assistant Coach",
-        "email": "hlpaul1@okcu.edu",
-        "bg": "Full-time assistant coach."
-      },
-      {
-        "name": "Aiden Twohig",
-        "role": "Assistant Coach",
-        "email": "",
-        "bg": "Full-time assistant coach."
+        "email": "gfgrave@okcu.edu"
       },
       {
         "name": "Thaddeus Caraway",
@@ -7405,17 +7480,17 @@
       }
     ],
     "contact": {
-      "email": "bfinnegan@okcu.edu",
-      "phone": "405-208-5450"
+      "email": "wjmartin@okcu.edu",
+      "phone": "405-208-5165"
     },
-    "url": "https://www.ocusports.com/sports/mens-soccer/roster/coaches/billy-martin/1173",
+    "url": "https://www.ocusports.com/sports/mens-soccer/coaches",
     "color": [
       "#fef3c7",
       "#d97706"
     ],
     "licence": "USSF B",
     "overallScoreNote": "§5d re-score (was 82, halo). ocusports.com confirms Billy Martin is the current HC (id 'finnegan' is a legacy id, no coach change). NAIA: 5-yr men's HC 47-28-10, one 2024 SAC Tournament title + NAIA R16; 19-yr OCU assistant; founded the Rose State JUCO program (74-35-2, 4 NJCAA region titles, 40+ four-year signees, 3x region CoY). USSF B, coaches men's AND women's, no pro pipeline -> solid.",
-    "title": "Head Coach (since 2020-21)"
+    "title": "Head Coach"
   },
   {
     "id": "espinal_dodgecity",
@@ -8978,7 +9053,18 @@
       "South Florida warm climate",
       "Fort Lauderdale location"
     ],
-    "staff": [],
+    "staff": [
+      {
+        "name": "Manuel Perez",
+        "role": "Assistant Men's Soccer Coach",
+        "email": "mperezba@nova.edu"
+      },
+      {
+        "name": "Liam Healy",
+        "role": "Men's Soccer Graduate Assistant",
+        "email": ""
+      }
+    ],
     "contact": {
       "email": "mmcarthu@nova.edu",
       "phone": "954-262-8262"
@@ -9523,21 +9609,30 @@
       {
         "name": "Ethan Vigario",
         "role": "Assistant Coach",
+        "email": "ElVigario@indianatech.net",
         "bg": "Assistant coach for the 2026 season."
-      },
-      {
-        "name": "Aidan Lang",
-        "role": "Goalkeeper Coach",
-        "bg": "Dedicated goalkeeper coach."
       },
       {
         "name": "Mark McDaid",
         "role": "Graduate Assistant",
+        "email": "",
         "bg": "Graduate assistant coach."
       },
       {
+        "name": "Aidan Lang",
+        "role": "Goalkeeper Coach",
+        "email": "",
+        "bg": "Dedicated goalkeeper coach."
+      },
+      {
+        "name": "Jahiem Rose",
+        "role": "Student Assistant Coach",
+        "email": ""
+      },
+      {
         "name": "James Estey",
-        "role": "Assistant Athletic Trainer",
+        "role": "Assistant Athletic Trainer (M/WT&F, MSOC)",
+        "email": "JEEstey@indianatech.edu",
         "bg": "Athletic trainer assigned to men's soccer (shared with track and field)."
       }
     ],

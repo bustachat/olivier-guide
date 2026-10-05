@@ -6,6 +6,38 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.07 (2026-10-05) — D2, NAIA and D3 rosters stored and applied (campaign C0, step 4, eighth batch)
+
+**What:** the 13 rosters in `data/d2.json` (Barry, Chapman, Columbia College, Cal State LA, Georgian Court, Indiana Tech, Keiser, Lynn, Nova SE, Oklahoma City, PBA, St. Edward's, U of Charleston) were read on each school's own site, stored with positions as published, and applied from the stored roster. 116 schools' midfielder numbers now come from a stored roster; 83 are still to read. The coverage list, which also counts schools with no usable roster, shows 4 four-year schools (Army, Navy, Princeton, Yale, all out of the campaign by owner ruling) and 93 junior colleges.
+
+**Changes:**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Keiser | 18 | 15 | 60 | 62 | The 2026 roster lists 32 players and 15 midfielders. Caio Saab and Tristan Silva are no longer listed. Class years are taken from the roster's Athletic (eligibility) column; the Academic column differs for two midfielders |
+| U of Charleston | 14 | 14 | 41 | 44 | Same 14 midfielders, but two juniors (Imtiyaaz Kamaldien, Alonso Macollunco) had not been counted as 2027 seniors, so the stored projection was one table row too low |
+| Columbia College | 12 | 11 | 36 | 38 | The roster lists 11 midfielders; the stored projection was one table row too low for the stored counts |
+| Georgian Court | 15 | 22 | 42 | 42 | The published 2026 roster has 68 players and 22 midfielders (Tyler Neves is listed "Center Mid"). Ten still finish before August 2027, so the projection is unchanged |
+| PBA | 10 | 12 | 62 | 62 | Two more freshmen are listed as midfielders (one as Midfielder/Defender) |
+| Barry | 12 | 11 | 56 | 56 | Kadir Rimola is listed Forward/Midfield and is no longer counted (first-listed position rule) |
+| St. Edward's | 9 | 10 | 54 | 54 | One more freshman midfielder. Only 1 player now has a blank position (was 6) |
+| Oklahoma City | 5 | 6 | 50 | 50 | One more freshman midfielder (Cooper Stephens). 3 players still have a blank position |
+| Lynn, Nova SE, Cal State LA, Chapman, Indiana Tech | same | same | same | same | Exact match |
+
+**Recruiting pathway:** 10 notes were rewritten in plain language from the stored rosters. St. Edward's now publishes previous schools and 4 of its 10 midfielders list a previous college, so it moves from Freshman-friendly to Mixed. No other classification changed. Barry's note had counted Fatima College (a secondary school in Trinidad) as a college; it now reads 6 of 11 from four-year colleges. Indiana Tech's note said one midfielder came straight from secondary school; it is two. Lynn and U of Charleston still publish no previous schools, and their notes say so. Georgian Court's summary now gives its squad as 68 players (was 64).
+
+**Departure queue:** Caio Saab (Keiser) queued. Oklahoma City's "Ethan Zeinalpor" was a stored misspelling of Ethan Zeinalpour, who is still on the roster; the queue entry was removed.
+
+**Coach check:** the head coach was confirmed on each school's own coaches page for all 13 (Martorana, Rootes, Ivanovic, McArthur, Erush, Young, Martin, Oldham, Carrillo, Smee, Raso, Mason, Rose). Contacts corrected to what the page publishes: PBA (lucas_martorana@pba.edu, 561-803-2530), Lynn phone (561-237-7245), Barry phone (305-899-3560), Oklahoma City (wjmartin@okcu.edu, 405-208-5165), Keiser (goldham@keiseruniversity.edu, 561-315-2777; the stored values were a general athletics address and line), U of Charleston (ucmenssoccer@ucwv.edu, 304-347-6972). This settles three of the contact conflicts open since v44.27: Oklahoma City (corrected), Georgian Court and Columbia College (stored values confirmed). Six titles now read as published. No score changed, so no re-rank. Staff lists in `coaches.json` now hold the names on each coaches page for all 13; departed assistants removed (PBA: Pete Arnold, Guillermo Falo; Barry: Ivan Barriga, Ethan Sonis; Oklahoma City: Harvey Paul, Aiden Twohig), and the PBA, Barry and Oklahoma City bios no longer name them. The `staff[]` lists in the school file were corrected the same way where one exists. Oklahoma City's and Chapman's stored coach links now point at the program coaches page.
+
+**Not confirmed:** Nova SE's coaches page publishes no phone for Matt McArthur, so the stored 954-262-8262 is unconfirmed and was left alone.
+
+**Tooling:** `roster_extractor.js` reads Keiser's "Athletic" year column. `roster_extract.py` accepts "Center Mid" as a midfield label, and `build_patches.py` reads Georgian Court's "Foward" spelling as forward.
+
+**Traps met:** Cal State LA's list layout returned its five coaches as players with no position or class (dropped before saving). St. Edward's and Oklahoma City print a height where one player's position should be; the position was stored blank. Georgian Court (68 players) and U of Charleston (53) fail the squad-size test on correct rosters, and Nova SE (11 of 22) and Keiser (15 of 32) the midfielder-share test; each was checked and forced.
+
+**Verified:** `validate_schools.py` PASS (24 warnings, none new); `validate_consistency.js` Issues: 0, roster source 116 backed, 83 pending; jargon, arithmetic, snapshot and coach-ranking checks pass. Local browser: 213 schools load, all 13 cards show the stored Fit Score, Keiser's modal shows the new coach contact with no "undefined" or "NaN", and its Minutes Outlook card shows the new note.
+
 ### v46.06 (2026-10-05) — Non-major D1 rosters stored and applied (campaign C0, step 4, seventh batch)
 
 **What:** the 7 rosters still to read in `data/d1-other.json` (Akron, Delaware, Denver, GCU, Mercyhurst, UCA, Vermont) were read on each school's own site, stored with positions as published, and applied from the stored roster. 103 schools' midfielder numbers now come from a stored roster; 96 are still to read. The coverage list, which also counts schools with no usable roster, shows 17 four-year schools and 93 junior colleges.

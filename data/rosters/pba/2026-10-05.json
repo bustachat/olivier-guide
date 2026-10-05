@@ -1,0 +1,282 @@
+{
+  "schoolId": "pba",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://pbasailfish.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Justin Jobson",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Delray Beach, Fla.",
+      "previousSchool": null,
+      "highSchool": "The King’s Academy"
+    },
+    {
+      "name": "Flavio Giannini",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Gr.",
+      "hometown": "Rome, Italy",
+      "previousSchool": null,
+      "highSchool": "Liceo Labriola"
+    },
+    {
+      "name": "Livio von Holzen",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Baar, Switzerland",
+      "previousSchool": null,
+      "highSchool": "Kantonsschule Alpenquai"
+    },
+    {
+      "name": "Tim Haeussermann",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Berglen, Baden-Württemberg, Germany",
+      "previousSchool": "Hochschule der Medien, Stuttgart",
+      "highSchool": "Lessing Gymnasium Winnenden"
+    },
+    {
+      "name": "Luis Edmondson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Devon, England",
+      "previousSchool": "Wright State University",
+      "highSchool": "Torquay United"
+    },
+    {
+      "name": "Jesse Oostendorp",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Doetinchem, Netherlands",
+      "previousSchool": "Franklin Pierce University",
+      "highSchool": "Rietveld Lyceum"
+    },
+    {
+      "name": "Veit Klement",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Aschaffenburg, Germany",
+      "previousSchool": "TH Aschaffenburg",
+      "highSchool": "Hanns Seidel Gymnasium"
+    },
+    {
+      "name": "Niklas Mahler",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Stuttgart, Germany",
+      "previousSchool": "Deutsche Hochschule für Prävention und Gesundheitsmanagement",
+      "highSchool": "Wilhelmi - Gymnasium"
+    },
+    {
+      "name": "Ole Lichter",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Sankt Augusting, Germany",
+      "previousSchool": null,
+      "highSchool": "Albert Einstein Gymnasium Sankt Augustin"
+    },
+    {
+      "name": "Kobi Thomas",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Coral Springs, Fla.",
+      "previousSchool": null,
+      "highSchool": "Marjory Stoneman Douglas HS"
+    },
+    {
+      "name": "Julian Walby",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Port Saint Lucie, Fla.",
+      "previousSchool": null,
+      "highSchool": "Treasure Coast HS"
+    },
+    {
+      "name": "Michael Florian",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Ocala, Fla.",
+      "previousSchool": "Otero College",
+      "highSchool": "The Villages Charter HS"
+    },
+    {
+      "name": "Fabio Reck",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Sennfeld, Germany",
+      "previousSchool": null,
+      "highSchool": "Celtis Gymnasium"
+    },
+    {
+      "name": "Jayson Lugosi",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Palm Beach Gardens, Fla.",
+      "previousSchool": null,
+      "highSchool": "William T Dwyer HS"
+    },
+    {
+      "name": "Yassir Smlali",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Gr.",
+      "hometown": "Amsterdam, Netherlands",
+      "previousSchool": "Vrije Universiteit Amsterdam",
+      "highSchool": "Cartesius Amsterdam"
+    },
+    {
+      "name": "Clement Scaccia",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Nancy, France",
+      "previousSchool": "Grand View University",
+      "highSchool": "Pont à mousson"
+    },
+    {
+      "name": "Titus Beuckman",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "West Palm Beach, Fla.",
+      "previousSchool": "Spring Hill College",
+      "highSchool": "Palm Beach Central"
+    },
+    {
+      "name": "Fritz Burger",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Puchberg am Schneeberg, Austria",
+      "previousSchool": null,
+      "highSchool": "Liese Prokop Privatschule"
+    },
+    {
+      "name": "Quinlan van Arkel",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Dordrecht, Netherlands",
+      "previousSchool": "Hawaii Pacific University",
+      "highSchool": "Dalton Lyceum"
+    },
+    {
+      "name": "Anthony Anduray",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Merrimack, N.H.",
+      "previousSchool": null,
+      "highSchool": "Nashua North HS"
+    },
+    {
+      "name": "Marcel Duffau",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Santiago, Chile",
+      "previousSchool": "Mercy University",
+      "highSchool": "Dunalastair"
+    },
+    {
+      "name": "Andre Zeron",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null,
+      "highSchool": "Immaculata La Salle"
+    },
+    {
+      "name": "Kylen DeStefano",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Palm Beach Gardens, Fla.",
+      "previousSchool": null,
+      "highSchool": "The King's Academy"
+    },
+    {
+      "name": "Ugo Drieu",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Caen, France",
+      "previousSchool": "University of Bridgeport",
+      "highSchool": "Jean Rostand"
+    },
+    {
+      "name": "Simon Buechte",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Ratingen, Germany",
+      "previousSchool": null,
+      "highSchool": "Lessing Berufskolleg"
+    },
+    {
+      "name": "Robi Lukau",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Ferney, France",
+      "previousSchool": "Auburn Montgomery",
+      "highSchool": "Lycée international Ferney"
+    },
+    {
+      "name": "Nicola Brocca",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Pesaro, Italy",
+      "previousSchool": "East Tennessee State University",
+      "highSchool": "Liceo Classico Giannone"
+    },
+    {
+      "name": "Franco Constantini",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Defender",
+      "class": "Fr.",
+      "hometown": "Curitiba, Brazil",
+      "previousSchool": null,
+      "highSchool": "RPS Academies"
+    },
+    {
+      "name": "Dominic Breidenbach",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Lebanon, Ohio.",
+      "previousSchool": "University of Memphis",
+      "highSchool": "Archbishop Moeller HS"
+    },
+    {
+      "name": "Omar Einarsson",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Reykjavik, Iceland",
+      "previousSchool": null,
+      "highSchool": "Borgarholtsskoli"
+    }
+  ]
+}

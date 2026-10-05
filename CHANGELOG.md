@@ -6,6 +6,51 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.10 (2026-10-06) — 24 more junior college rosters stored and applied; NJCAA used as the source where a college's own page was blocked (campaign C0, step 4, eleventh batch)
+
+**Owner ruling (2026-10-06):** where a college's own roster page shows a human-verification page, use the NJCAA team page as the source. Each college's own page was still opened once first.
+
+**What:** 24 junior colleges were stored with positions as published and applied from the stored roster. 162 schools' midfielder numbers now come from a stored roster; 37 are still to read (47 on the coverage list, which also counts schools with no usable roster).
+
+- **From the college's own roster page (6):** Casper, Barton, Coastal Bend, Jefferson College, Johnson County, Daytona State.
+- **Own page for class years, NJCAA for positions (1):** Hagerstown (its own page lists no positions; names match on both).
+- **From the NJCAA team page, because the college's own page showed the verification page (17):** Angelina, Arizona Western, Central Georgia Tech, Coffeyville, Connors State, Crowder, Eastern Arizona, Eastern Florida State, Garden City, Gillette, Hill, Indian Hills, Iowa Lakes, Iowa Western, Laramie County, Montgomery College, NOC Enid. Each school's Minutes Outlook note says so in plain words. Every NJCAA roster was checked by name against the midfielders and rosters the guide already held for that school before it was used.
+
+**Changes (schools not listed kept the same midfielder count and Fit Score):**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Coastal Bend | 8 | 10 | 56 | 57 | Its own roster lists 10 midfielders, 4 of them sophomores |
+| Johnson County | 16 | 11 | 44 | 43 | Players listed D/MF and F/MF are no longer counted (first-listed position rule) |
+| Daytona State | 7 | 7 | 62 | 61 | Same count; 2 of the 7 are sophomores, not 3 |
+| Arizona Western | 12 | 12 | 55 | 56 | 5 sophomores, not 4. Taikan Naito has no class year listed |
+| Coffeyville | 8 | 9 | 45 | 45 | NJCAA lists 9 midfielders, 3 of them sophomores |
+| Connors State | 6 | 6 | 53 | 54 | 4 sophomores, not 3. Three players have no position listed |
+| Eastern Florida State | 8 | 9 | 60 | 61 | NJCAA lists 9 midfielders, 2 of them sophomores |
+| Garden City | 22 | 23 | 47 | 46 | NJCAA lists 23; Francisco Sigüenza Peralta has no class year listed |
+| Gillette | 8 | 6 | 45 | 46 | NJCAA lists 6 midfielders, 3 of them sophomores |
+| Hill | 9 | 10 | 60 | 60 | NJCAA lists 10; Marco Gonzalez has no class year listed |
+| Iowa Western | 13 | 14 | 61 | 61 | NJCAA lists 14 midfielders, 5 of them sophomores |
+| Laramie County | 13 | 12 | 44 | 44 | NJCAA lists 12; four players have no position listed |
+| Montgomery College | 16 | 13 | 43 | 42 | NJCAA lists 13 with midfield first; four players have no position listed |
+| NOC Enid | 10 | 11 | 44 | 45 | NJCAA lists 11 midfielders, 2 of them sophomores. A stored name was misspelt (Arturo Michelana) |
+
+**Judgement calls:** Crowder labels its midfielders "C"; that label is now counted as midfield, confirmed against the eight names stored from Crowder's own page in September. Hagerstown prints a bare "S" or "F" for class year. Midfielders with no class year on NJCAA (four players at four schools) stay in the count with the year marked unconfirmed. Eastern Arizona's NJCAA page leaves 7 of 25 positions blank; only confirmed midfielders are counted and the note says so.
+
+**NJCAA cross-check of the 22 junior colleges read on 5 October (owed from v46.08 and v46.09): done.** Squad sizes and midfielder counts agree at most schools. Differences: spelling variants; extra names on NJCAA at eight schools (Murray State's NJCAA page mixes in 15 women's-team players); Harcum has no positions on NJCAA; Southwestern Illinois and USC Salkehatchie label several of the college's midfielders as wingers or forwards on NJCAA. The college's own page was kept in every case.
+
+**Not usable from NJCAA:** Glendale (women's players mixed in), Lincoln Trail (five of seven midfielders have no class year), Cowley (26 of 43 positions blank), NWACC (31 of 32 blank), Casper, Central Wyoming and Lamar (all positions blank; Casper's own page was used instead).
+
+**Coach check (2026-10-06):** confirmed on each college's own site at Casper, Barton (Scott Gray removed from its staff list), Coastal Bend (assistant Juan Demichelis added) and Jefferson College (staff block on its roster page; goalkeeper coach Ty Baudendistel added). **Not possible for the other 20:** their sites showed the verification page or a blank coaches page, and NJCAA team pages do not name coaches.
+
+**Still to read (47 on the coverage list):** NJCAA began returning "No roster available" and other teams' rosters after about 90 page loads in a row, so reading stopped there. A reading taken while that was happening is not trusted; only rosters verified by name were used.
+
+**Tooling:** `roster_extract.py` counts "C" (Crowder) as midfield and reads Hagerstown's "S"/"F" class labels in junior college mode; `build_patches.py` recognises DB and CF. Lesson recorded in CLAUDE.md: always print the page's host name with a roster read (one read stored Daytona State's page under Gillette's name; it was caught by comparing names before anything was applied).
+
+**Validation:** `validate_schools.py` PASS (23 warnings, none new); `validate_consistency.js` Issues: 0; JUCO trajectory, jargon, roster arithmetic and snapshot checks pass.
+
+---
+
 ### v46.09 (2026-10-05) — 18 junior college rosters stored and applied (campaign C0, step 4, tenth batch: Sidearm-platform and own-site schools)
 
 **What:** 18 junior colleges whose sites are not on the Presto platform were read on each school's own roster page in Chrome, stored with positions as published, and applied from the stored roster: Blinn, Colorado Northwestern, College of Southern Nevada, Dodge City, Harcum, Harford, Illinois Central, Jacksonville College, LSU Eunice, Nassau, Neosho County, Salt Lake CC, Snow, Southwestern Illinois, Texas Southmost, Truckee Meadows, USC Lancaster and USC Salkehatchie. 138 schools' midfielder numbers now come from a stored roster; 61 are still to read (75 on the coverage list, which also counts schools with no usable roster).

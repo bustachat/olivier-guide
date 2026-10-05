@@ -1,0 +1,204 @@
+{
+  "schoolId": "jefferson_college_mo",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.jeffco.edu/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 24,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Jordan Prater",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Imperial, Missouri",
+      "previousSchool": null
+    },
+    {
+      "name": "Bernardo Lugo",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Ciudad del Carmen, Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Davi Oliveira",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Santo Andre, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Borna Bradic",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Zagreb, Croatia",
+      "previousSchool": null
+    },
+    {
+      "name": "Petar Franjic",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Zagreb, Croatia",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Flood",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "Meath, Ireland",
+      "previousSchool": null
+    },
+    {
+      "name": "Evan Lees",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "St. Helier, Jersey",
+      "previousSchool": null
+    },
+    {
+      "name": "Oscar Jenkins",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "Lincoln, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Lorenzo Gonzalez",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "So",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Penaranda",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "Santo Domingo, Costa Rica",
+      "previousSchool": null
+    },
+    {
+      "name": "Yakis Osseni",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "So",
+      "hometown": "Lille, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Gonzalez",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr",
+      "hometown": "Cuernavaca, Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Canada",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Springfield, Missouri",
+      "previousSchool": null
+    },
+    {
+      "name": "Wyatt Wolf",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "De Soto, Missouri",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Parmer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Fenton, Missouri",
+      "previousSchool": null
+    },
+    {
+      "name": "Carter Blechle",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "So",
+      "hometown": "Perryville, Missouri",
+      "previousSchool": null
+    },
+    {
+      "name": "Callum Elliot",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Renfrew, Scotland",
+      "previousSchool": null
+    },
+    {
+      "name": "Connor Okereke",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "So",
+      "hometown": "Lichfield, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Lazar Stojanovic",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "St. Gallen, Switzerland",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Sveinsson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Varmahlid, Iceland",
+      "previousSchool": null
+    },
+    {
+      "name": "David Vuckovic",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "Fr",
+      "hometown": "Belgrade, Serbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Brady",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr",
+      "hometown": "Craigavon, Ireland",
+      "previousSchool": null
+    },
+    {
+      "name": "Treyton Barnett",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "Fr",
+      "hometown": "Perryville, Missouri",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Vale",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "Fr",
+      "hometown": "Lisbon, Portugal",
+      "previousSchool": null
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "schoolId": "johnson_county_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.jcccathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Daniel Projkovski",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Whitby, Ontario / Donald A. Wilson Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Abe Renze",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Cedar Rapids, Iowa / Xavier",
+      "previousSchool": null
+    },
+    {
+      "name": "Peyton McCawley",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Elkhorn, Neb. / Elkhorn South",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Chandler",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Springfield, Mo. / Glendale",
+      "previousSchool": null
+    },
+    {
+      "name": "Chan Eom",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Seoul, South Korea / Nunggok",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Cantano",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Shawnee, Kan. / St. James Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas House",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So",
+      "hometown": "Overland Park, Kan. / Shawnee Mission South",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Rousselle",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr",
+      "hometown": "Metairie, La. / Jesuit High School of New Orleans",
+      "previousSchool": null
+    },
+    {
+      "name": "Brock Brazeau",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr",
+      "hometown": "Ankeny, Iowa / Ankeny Centennial",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Romero",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Olathe, Kan. / Olathe West",
+      "previousSchool": null
+    },
+    {
+      "name": "Sarang Mathur",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr",
+      "hometown": "Clarington, Ontario / Clarinton Central Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Cesar Franco",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "Fr",
+      "hometown": "Olathe, Kan. / Olathe West",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristiano Palacios Guerrero",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr",
+      "hometown": "Olathe, Kan. / Olathe West",
+      "previousSchool": null
+    },
+    {
+      "name": "Brian Andrades-Lara",
+      "position": "D",
+      "positionAsListed": "D/MF",
+      "class": "So",
+      "hometown": "Overland Park, Kan. / Shawnee Mission West",
+      "previousSchool": null
+    },
+    {
+      "name": "Khoi Woods",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "So",
+      "hometown": "Olathe, Kan. / Olathe North",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Zapata",
+      "position": "D",
+      "positionAsListed": "D/MF",
+      "class": "Fr",
+      "hometown": "Omaha, Neb. / Millard West",
+      "previousSchool": null
+    },
+    {
+      "name": "Maclain Dahm",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So",
+      "hometown": "Olathe, Kan. / Blue Valley Southwest",
+      "previousSchool": null
+    },
+    {
+      "name": "Elias Hernandez",
+      "position": "F",
+      "positionAsListed": "F/MF",
+      "class": "Fr",
+      "hometown": "Papillion, Neb. / Papillion LaVista South",
+      "previousSchool": null
+    },
+    {
+      "name": "Sei Fowler",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So",
+      "hometown": "Waynesville, Mo. / Waynseville",
+      "previousSchool": null
+    },
+    {
+      "name": "Ty Jacob Sisler",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "Fr",
+      "hometown": "Lee's Summit, Mo. / Lee's Summit North",
+      "previousSchool": null
+    },
+    {
+      "name": "Hugo Flores",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Copenhagen, Denmark / Niels Sreensens Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Conor Meyers",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Lake St. Louis, Mo. / St. Dominic",
+      "previousSchool": null
+    },
+    {
+      "name": "Collin Leary",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Merriam, Kan. / Rockhurst",
+      "previousSchool": null
+    },
+    {
+      "name": "Brandon Hamilton",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Topeka, Kan. / Washburn Rural",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristian Aguilar",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Wichita, Kan. / Valley Center",
+      "previousSchool": null
+    },
+    {
+      "name": "Enrique Mercado",
+      "position": "F",
+      "positionAsListed": "F/MF",
+      "class": "So",
+      "hometown": "Newton, Kan. / Newton",
+      "previousSchool": null
+    },
+    {
+      "name": "Hussain Al-Amood",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr",
+      "hometown": "Andover, Kan. / Andover",
+      "previousSchool": null
+    },
+    {
+      "name": "Marvin Anguiano",
+      "position": "F",
+      "positionAsListed": "F/MF",
+      "class": "So",
+      "hometown": "Kansas City, Mo. / Cristo Ray",
+      "previousSchool": null
+    },
+    {
+      "name": "Cooper Burandt",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "Overland Park, Kan. / Blue Valley Northwest",
+      "previousSchool": null
+    }
+  ]
+}

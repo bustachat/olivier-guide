@@ -1,0 +1,228 @@
+{
+  "schoolId": "coastal_bend_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://cbc.prestosports.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Carlos Armendariz",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "FR",
+      "hometown": "Cuidad de Juarez / Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Linley-Jones",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "SO",
+      "hometown": "Manchester / England",
+      "previousSchool": null
+    },
+    {
+      "name": "Hugo Diaz",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Bogota / Columbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Frank Urrutia",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Alice, TX / USA",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolas Nino",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Heredia / Costa Rica",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Sebastian Palomino Garcia",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Palmira, Valle del Cauca / Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Pablo Albiach",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Valencia/Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Jan Casoliva",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Barcelona / Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Vaqcasei Paul-Soleyn",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "London/England",
+      "previousSchool": null
+    },
+    {
+      "name": "Sergei Komarov",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Krasnodar/Russia",
+      "previousSchool": null
+    },
+    {
+      "name": "Sergio Sanchis",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Valencia/Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Cantu",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Cuidad de Juarez / Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Tiago Fialho",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Lisbon/Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Maki Namiki",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Chiba/Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Markiyan Zayarnyy",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Vila Nova De Famalicao / Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Konner Maberry",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Dallas, TX / USA",
+      "previousSchool": null
+    },
+    {
+      "name": "Guilherme Cerci",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Curitiba / Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Kai Hunter",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Melbourne / Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "Fredy Escamilla",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Cucuta / Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Arthur Gibson",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Stockport / England",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Garcia",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Portland, TX / USA",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Robles Castaneda",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Bogota / Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Muro",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Montreal / Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Hernandez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Harlingen, TX / USA",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Campos Pereria",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Bahia / Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Gonzalo Alvarez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Monterrey / Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryo Fujimoto",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "FR",
+      "hometown": "Tokyo / Japan",
+      "previousSchool": null
+    }
+  ]
+}

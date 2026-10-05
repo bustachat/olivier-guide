@@ -1,0 +1,220 @@
+{
+  "schoolId": "casper_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.tbirds.cc/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 26,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Landon Hughes",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Riverton",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Oakey",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Hyrum",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo Hidalgo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Santiago",
+      "previousSchool": null
+    },
+    {
+      "name": "Aoi Yamamoto",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Osaka",
+      "previousSchool": null
+    },
+    {
+      "name": "Roberto Cortes",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Lompoc",
+      "previousSchool": null
+    },
+    {
+      "name": "Kenjiro Gonzalo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Quebec",
+      "previousSchool": null
+    },
+    {
+      "name": "Enoch Joseph",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Devonshire",
+      "previousSchool": null
+    },
+    {
+      "name": "Kaisei Shibata",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Saitama",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Leslie",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Casper",
+      "previousSchool": null
+    },
+    {
+      "name": "Kosei Kitamura",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Kanagawa",
+      "previousSchool": null
+    },
+    {
+      "name": "Hunter Saltsgaver",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Riverton",
+      "previousSchool": null
+    },
+    {
+      "name": "Elden Muheto",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Whitby",
+      "previousSchool": null
+    },
+    {
+      "name": "Beau Barclay",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Casper",
+      "previousSchool": null
+    },
+    {
+      "name": "Yugo Takamatsu",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Aichi",
+      "previousSchool": null
+    },
+    {
+      "name": "Graham Perrine",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Cincinnati",
+      "previousSchool": null
+    },
+    {
+      "name": "Hector Gil",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Santiago",
+      "previousSchool": null
+    },
+    {
+      "name": "Miroslav Mirchev",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Berlin",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Baeza",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Gillette",
+      "previousSchool": null
+    },
+    {
+      "name": "Romario Thompson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Manchester",
+      "previousSchool": null
+    },
+    {
+      "name": "Luca DiGiovanni",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Bolton",
+      "previousSchool": null
+    },
+    {
+      "name": "Zachary Binette",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Quebec",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Bayarri",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Valencia",
+      "previousSchool": null
+    },
+    {
+      "name": "Sawyer Nachazel",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Lander",
+      "previousSchool": null
+    },
+    {
+      "name": "Dallin Hillstead",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Casper",
+      "previousSchool": null
+    },
+    {
+      "name": "Aylan Khoudjat",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Paris",
+      "previousSchool": null
+    },
+    {
+      "name": "Keshaun Bell-Brown",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So (RS)",
+      "hometown": "Denver",
+      "previousSchool": null
+    }
+  ]
+}

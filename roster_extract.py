@@ -41,7 +41,8 @@ MF_TOKENS = {'M', 'MF', 'CM', 'DM', 'AM', 'CDM', 'CAM', 'MID', 'MIDFIELD',
              'MIDFIELDER', 'CENTRALMIDFIELDER', 'CENTERMIDFIELD',
              'CENTERMID',  # "Center Mid" (Georgian Court)
              'CENTERMIDFIELDER',  # "Center Midfielder" (Rose State)
-             'OM'}  # outside / offensive midfielder (Jacksonville College)
+             'OM',  # outside / offensive midfielder (Jacksonville College)
+             'C'}  # centre midfield: Crowder's own label, confirmed against its September roster
 KNOWN_NON_MF = {'GK', 'G', 'GOALKEEPER', 'KEEPER', 'D', 'DF', 'DEF', 'DEFENDER',
                 'DEFENSE', 'B', 'BACK', 'F', 'FW', 'FWD', 'FORWARD', 'ST',
                 'STRIKER', 'W', 'WINGER', 'ATT', 'ATTACKER',
@@ -105,6 +106,10 @@ def bucket(cls):
     # Getting this backwards inverts the whole opportunity picture; it is the
     # same season-inversion class as the v44.43 Minutes Outlook key bug.
     if JUCO_MODE:
+        if c == 'S':   # Hagerstown prints a bare S / F in its class column
+            return 'cleared'
+        if c == 'F':
+            return 'returning'
         if re.search(r'\bSO\b|SOPH|SOPHOMORE|\b2(?:ND)?\b|\bR[\s\-]*FR\b'
                      r'|SECOND[\s\-]?YEAR', c):
             return 'cleared'

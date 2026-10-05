@@ -1,0 +1,324 @@
+{
+  "schoolId": "barton_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.bartonsports.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 39,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Reece Renteria",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "SO",
+      "hometown": "Wichita, KS / Bishop Carroll",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Lisboa",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "SO",
+      "hometown": "Goiania, GO, Brazil / Colegio Atrio",
+      "previousSchool": null
+    },
+    {
+      "name": "Koki Minohara",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Niigata, Japan / Kaishi, Gakuen",
+      "previousSchool": null
+    },
+    {
+      "name": "Haru Nakano",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Kumamoto City, Japan / Tokai University Kumamoto Seisho",
+      "previousSchool": null
+    },
+    {
+      "name": "Henrique Hobold",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-FR",
+      "hometown": "Meleiro, SC, Brazil / EEB Santa Terezinha",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Henrique Jonson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Itapema, SC, Brazil / Colegio Faraos",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaiko Miguelez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Palencia, Spain / Jorge Manrique",
+      "previousSchool": null
+    },
+    {
+      "name": "Koki Kawai",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Hamamatsu, Japan / Iwata Higashi",
+      "previousSchool": null
+    },
+    {
+      "name": "Yuto Saeki",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "FR",
+      "hometown": "Yokohama, Japan / Shohei",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Dunne",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Scotland / Trinity High School Renfrew",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas Meibom",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Helsingor, Denmark / Handelsskole HHX",
+      "previousSchool": null
+    },
+    {
+      "name": "Luca Madiai",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Nancy, France / Georges de la Tour",
+      "previousSchool": null
+    },
+    {
+      "name": "Cooper Shaw",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "FR",
+      "hometown": "Wichita, KS / Maize",
+      "previousSchool": null
+    },
+    {
+      "name": "Yuta Endo",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "FR",
+      "hometown": "Tochigi, Japan / Shohei",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuele Mailer",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Nuremberg, Germany / Lothar-von-Faber-Schule",
+      "previousSchool": null
+    },
+    {
+      "name": "Luan Sakuramoto",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Itapeva, Brazil / Colegio Objetivo De Itapeva",
+      "previousSchool": null
+    },
+    {
+      "name": "Kotaro Kimura",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Fukuoka, Japan / Shohei",
+      "previousSchool": null
+    },
+    {
+      "name": "Pietro Bassani Matos",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "FR",
+      "hometown": "Capao da Canoa, Brazil / Luiz Moschetti",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordy Kaba",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Rose Hill, KS / Rose Hill",
+      "previousSchool": null
+    },
+    {
+      "name": "Emilio Francia",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Hallandale Beach, FL / South Broward",
+      "previousSchool": null
+    },
+    {
+      "name": "Shun Imai",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Chiba, Japan / Tokai University Urayasu",
+      "previousSchool": null
+    },
+    {
+      "name": "Masaki Tsuji",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Tokyo, Japan / Azusa Daichi",
+      "previousSchool": null
+    },
+    {
+      "name": "Helio Martins",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Macae, RJ, Brazil / INSG Castelo",
+      "previousSchool": null
+    },
+    {
+      "name": "Rafael Calmon",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-SO",
+      "hometown": "Joao Pessoa, PB, Brazil / Pembroke Pines Charter",
+      "previousSchool": null
+    },
+    {
+      "name": "Vitor Bertoldo",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Sao Paulo, SP, Brazil / Colegio Marconi",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Miotto",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Concordia, SC, Brazil / Colegio Vasco Da Gama",
+      "previousSchool": null
+    },
+    {
+      "name": "Joaquim Diniz",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Resende, RJ, Brazil / Layton Christian Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Lavery",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "FR",
+      "hometown": "Ipswich, England / West Suffolk College",
+      "previousSchool": null
+    },
+    {
+      "name": "Bruno Passos",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Sao Paulo, SP, Brazil / Escola Estadual Professor Antonio Jose Leite",
+      "previousSchool": null
+    },
+    {
+      "name": "Briac Mathez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Besancon, France / Lycee Louis Pasteur",
+      "previousSchool": null
+    },
+    {
+      "name": "Guilherme Leuenroth",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "FR",
+      "hometown": "Sao Bernardo do Campo, SP, Brazil / Colegio Petropolis",
+      "previousSchool": null
+    },
+    {
+      "name": "Luan Cony",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Rio De Janeiro, RJ, Brazil / Rede Daltro",
+      "previousSchool": null
+    },
+    {
+      "name": "Shoma Komata",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Tokyo, Japan / Shutoku",
+      "previousSchool": null
+    },
+    {
+      "name": "Chandro Wilkin",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-FR",
+      "hometown": "Sint Maarten, Netherlands / Milton Peters College",
+      "previousSchool": null
+    },
+    {
+      "name": "Tomas Gaspar",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Winfield, KS / Winfield",
+      "previousSchool": null
+    },
+    {
+      "name": "Francisco Francisco",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Winfield, KS / Winfield",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo De La Cruz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Dodge City, KS / Dodge City",
+      "previousSchool": null
+    },
+    {
+      "name": "Taiki Sano",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "FR",
+      "hometown": "Takarazuka, Japan / Osaka Gakugei",
+      "previousSchool": null
+    },
+    {
+      "name": "Vadim Sladkov",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Goch, Germany / Berufskolleg Kleve",
+      "previousSchool": null
+    }
+  ]
+}

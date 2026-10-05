@@ -39,9 +39,9 @@ INBOX = os.path.join(os.environ.get("ROSTER_INBOX")
                      "rosters_inbox.json")
 GK = {"GK", "G", "GOALKEEPER", "KEEPER", "GOALIE"}
 DEF = {"D", "DF", "DEF", "DEFENDER", "DEFENSE", "B", "BACK", "CB", "LB", "RB", "CENTERBACK",
-       "CENTREBACK", "FULLBACK", "OUTSIDEBACK", "LEFTBACK", "RIGHTBACK", "WINGBACK"}
+       "CENTREBACK", "DB", "FULLBACK", "OUTSIDEBACK", "LEFTBACK", "RIGHTBACK", "WINGBACK"}
 FWD = {"F", "FW", "FWD", "FORWARD", "ST", "STRIKER", "W", "WINGER", "WING", "ATT", "ATTACKER",
-       "WF", "FOR",  # WF = wing forward (USF), For = forward (FAU)
+       "WF", "FOR", "CF",  # WF = wing forward (USF), For = forward (FAU)
        "S",  # S = striker (UC Riverside; its player bio page prints "Striker")
        "FOWARD",
        "LW", "RW"}  # left / right wing (National Park)  # Georgian Court prints "Foward/Wing" for one forward

@@ -1,0 +1,245 @@
+{
+  "schoolId": "hill_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.njcaa.org/sports/teams/407485411741402810/roster",
+  "fetchMethod": "claude-in-chrome (NJCAA team page)",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Tommy Miller",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Antoine Sureau",
+      "position": "D",
+      "positionAsListed": "LB/RB",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Antonio Soler",
+      "position": "D",
+      "positionAsListed": "CB/LB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Bertram Olesen",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "DeShaun Johnson",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Marco Alcantara",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Marco Gonzalez",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null,
+      "classUnverified": "NJCAA's team page lists no class year for him, and the college's own roster page could not be opened (2026-10-06)"
+    },
+    {
+      "name": "Alejandro Ibarra",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Alfie Stephens",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Mejia",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Cruz",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Thierry Garrick",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacque Watson",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Oumar Bah",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Abenezer Jabir",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Xxavier Graza",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Carvalho",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Chris Cadena",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Brandon Yapp",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Diaz",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Andre Ibanez",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jesus Gonzalez",
+      "position": "D",
+      "positionAsListed": "LB",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Eddie Zapata",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Perez",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Milas Rasmussen",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Hunter Sauser",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Alassane Cisse",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Gil Medel",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Hernandez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    }
+  ]
+}

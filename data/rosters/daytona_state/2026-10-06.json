@@ -1,0 +1,236 @@
+{
+  "schoolId": "daytona_state",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://dscfalcons.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Tiernan Mead",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Freshmen",
+      "hometown": "Melbourne, FL / Coco Beach Jr/Sr High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Heron",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sophomore",
+      "hometown": "Orlando, FL / East River High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryan Ramalho",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshmen",
+      "hometown": "Clermont, FL / Montverde Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevan Dalvand",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshmen",
+      "hometown": "Zurich, Switzerland / Bridgton Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Rui Santos",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sophomore",
+      "hometown": "Faro, Portugal / Escola Secundaria Pinheiro e Rosa",
+      "previousSchool": null
+    },
+    {
+      "name": "Haytham Abdalla",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Freshmen",
+      "hometown": "Clermont, FL / East Ridge High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Shelby Phanor",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sophomore",
+      "hometown": "Gainesville, FL / Sia Tech",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Murg",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Freshmen",
+      "hometown": "Graz, Austria / Ursulinen Graz",
+      "previousSchool": null
+    },
+    {
+      "name": "Piero Leonardi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshmen",
+      "hometown": "San Jose, Uruguay / UTU",
+      "previousSchool": null
+    },
+    {
+      "name": "Matteo Mazzone",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshmen",
+      "hometown": "Lehre, Germany / Eichendorffschule Wolfsburg",
+      "previousSchool": null
+    },
+    {
+      "name": "Waiss Ezami",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshmen",
+      "hometown": "Bonn, Germany / Tannenbuscg Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Mikkel Jensen",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sophomore",
+      "hometown": "Melbourne, FL / Viera High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Masatora Miyazawa",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshmen",
+      "hometown": "Tokyo, Japan / SEIJO GAKUEN HIGH SCHOOL",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Adzah",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sophomore",
+      "hometown": "Accra, Ghana / Ideal College",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Apolaro",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sophomore",
+      "hometown": "Montevideo, Uruguay / Colegio y Liceo Santa Rita",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Blanco",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Freshmen",
+      "hometown": "Lakeland, FL / Colegio Privado Patria Bolivariana",
+      "previousSchool": null
+    },
+    {
+      "name": "Jayden Wright",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshmen",
+      "hometown": "Grand Cayman, Cayman Islands / Montverde Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Joey Foreman",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sophomore",
+      "hometown": "New Smyrna Beach, FL / New Smyrna Beach High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Mazzola",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshmen",
+      "hometown": "DeLand, FL / DeLand High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Arthur Maranhao",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshmen",
+      "hometown": "Lake Nona, FL / Lake Nona High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Ignacio Sosa",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshmen",
+      "hometown": "Maldonado, Uruguay / Liceo N1 San Carlos",
+      "previousSchool": null
+    },
+    {
+      "name": "David Liboyi",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshmen",
+      "hometown": "Nairobi, Kenya / Spring Hill High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Adade",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Freshmen",
+      "hometown": "Daytona Beach, FL / DME Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Zachary Pillion",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Freshmen",
+      "hometown": "St. Petesburg, FL / Osceola Fundamental High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Lorenzo Vivanco",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Freshmen",
+      "hometown": "Clearwater, FL / Clearwater High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Aboudi Ibrahim",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sophomore",
+      "hometown": "Haifa, Israel / Al Carma",
+      "previousSchool": null
+    },
+    {
+      "name": "Pol Garcia",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Freshmen",
+      "hometown": "Girona, Spain / Vedruna Girona",
+      "previousSchool": null
+    },
+    {
+      "name": "Taner Akin",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Freshmen",
+      "hometown": "Tampa, FL / GED",
+      "previousSchool": null
+    }
+  ]
+}

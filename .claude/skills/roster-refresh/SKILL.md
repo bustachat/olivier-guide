@@ -95,6 +95,13 @@ script refuses the patch when they disagree with the roster. The script:
   never taken from the patch. See CLAUDE.md Section 5's "Roster Snapshot
   Archive" for the schema.
 
+**A midfielder whose class year the school does not publish** (St. John's
+prints "Rs." with no year, v46.02): check his bio page and the previous
+season's roster first. If the year is still unknown, add
+`"classUnverified": "<what was checked>"` to his record in the snapshot. He
+stays in `mf_total` and in no class group, and `trajectoryNote` must say so.
+Without the field ROSTER-SRC fails the school. Never guess the year.
+
 To re-check or re-apply a school from its stored roster without visiting
 the website (for example after a counting-rule change):
 

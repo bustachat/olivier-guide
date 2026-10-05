@@ -1,0 +1,284 @@
+{
+  "schoolId": "usu_eastern",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://usueasternathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 34,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Xavier Peregrina",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Ogden, Utah / Ogden High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonas Tunc",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Göppingen, Germany / Kaufmännische Schule Göppingen",
+      "previousSchool": null
+    },
+    {
+      "name": "Uche Kariuki",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Hamburg, Germany / Gymnasium Meiendorf",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Topic",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Stuttgart, Germany / Pro Genius",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucca Sabino",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Rio de Janeiro, Brazil / Layton Christian Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Theo Luis",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Belo Horizonte, Brazil / Layton Christian Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Ismail Shehata",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Koblenz, Germany / Julius Wegeler Schule Koblenz",
+      "previousSchool": null
+    },
+    {
+      "name": "Leandro Suarez Soruco",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Santa Cruz, Bolivia / Seward County Community College",
+      "previousSchool": null
+    },
+    {
+      "name": "Leandro Robles",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "West Jordan, Utah / Copper Hills High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Mateo Schachtschabel",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Stuttgart, Germany / Gottlieb Daimler Schule 1",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Guizar",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Palafox",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "West Jordan, Utah / Bingham High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Heil",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Sandy, Utah / Alta High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Chrisitan Poll",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Lehi, Utah / Skyridge High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Velasco Perez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Ogden, Utah / North Idaho College",
+      "previousSchool": null
+    },
+    {
+      "name": "Mac Jensen",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Kaysville, Utah / Farmington High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Tanner Kunz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "South Jordan, Utah / Alta High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Moritz Tietze",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Abtsteinach, Germany / Überwald Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Jace Rodriguez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Ogden, Utah / Ogden High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Bailey Carless",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Broxbourne, England / Broxbourne School",
+      "previousSchool": null
+    },
+    {
+      "name": "Dan Regan",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Birmingham, England / Walsall Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Zac Wall",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "West Jordan, Utah / Copper Hills High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Green",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Millville, Utah / Ridgeline High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Kash Peterson",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Morgan, Utah / Morgan High School",
+      "previousSchool": null
+    },
+    {
+      "name": "James Porter",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "St. George, Utah /",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo Palacios",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Salina, Kansas / Salina South High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Kalani Mullins",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Auckland, New Zealand /",
+      "previousSchool": null
+    },
+    {
+      "name": "Zion Amado",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Herriman, Utah / Mountain Ridge High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Klingonsmith",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Washington, Utah /",
+      "previousSchool": null
+    },
+    {
+      "name": "Amaru-Murell Franz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Horn-Bad, Meinberg, Germany /",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean Sanchez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "West Jordan, Utah / Copper Hills High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Denny",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "North Pole, Alaska / North Pole High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Sol Bombeck",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Salt Lake City, Utah / East High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Felipe Martin",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Málaga, Spain / San Estanislao de Kostka",
+      "previousSchool": null
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schoolId": "college_of_southern_idaho",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.csi.edu/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Pedro Moco Caridi",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Sao Paulo, Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Jakob Hollon",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Centennial, Colo. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Hoefer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Boise, Idaho /",
+      "previousSchool": null
+    },
+    {
+      "name": "Felipe Argento",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Vargem Grande do Sul, Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Wilf Douglas",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "Farnham, England /",
+      "previousSchool": null
+    },
+    {
+      "name": "Adria Lledo Sampol",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "Fr.",
+      "hometown": "Llucmajor, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Porto Pascual",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Palma de Mallorca, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo Julian Olmos",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "Fr.",
+      "hometown": "Valencia, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Ilan Portejoie",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Massy, France /",
+      "previousSchool": null
+    },
+    {
+      "name": "Jores Louis",
+      "position": "F",
+      "positionAsListed": "W/ST",
+      "class": "So.",
+      "hometown": "Paris, France /",
+      "previousSchool": null
+    },
+    {
+      "name": "Noham Ewang Vang",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Fr.",
+      "hometown": "Noisy-Le-Grand, France /",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Serrano",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Twin Falls, Idaho /",
+      "previousSchool": null
+    },
+    {
+      "name": "Pablo Garcia Fernandez de la Castro",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Valencia, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Jaeger",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Porto Alegre, Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Enrique Nevarez",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "Blackfoot, Idaho /",
+      "previousSchool": null
+    },
+    {
+      "name": "Yannick Theis",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Wiesbaden, Germany /",
+      "previousSchool": null
+    },
+    {
+      "name": "Edward Hill",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "So.",
+      "hometown": "Brisbane, Australia /",
+      "previousSchool": null
+    },
+    {
+      "name": "Wisdom Herrera",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Tenerife, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Owens",
+      "position": "F",
+      "positionAsListed": "ST",
+      "class": "Fr.",
+      "hometown": "Sugar City, Idaho /",
+      "previousSchool": null
+    },
+    {
+      "name": "Louis Grundmann",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Potsdam, Germany /",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolas Anatoh",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Offenburg, Germany /",
+      "previousSchool": null
+    },
+    {
+      "name": "Joe Griesbach",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Glienicke, Germany /",
+      "previousSchool": null
+    },
+    {
+      "name": "Jared Parra",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Rock Springs, Wyo. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Jhovany Quinones",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "Fr.",
+      "hometown": "Jerome, Idaho /",
+      "previousSchool": null
+    },
+    {
+      "name": "Gordon Peterson",
+      "position": "MF",
+      "positionAsListed": "MIID/D",
+      "class": "Fr.",
+      "hometown": "Sugar City, Idaho /",
+      "previousSchool": null
+    },
+    {
+      "name": "Tarsio Almeida Sebastiao",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "Fr.",
+      "hometown": "Antwerp, Belgium /",
+      "previousSchool": null
+    },
+    {
+      "name": "Lasse Brier",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Hamburg, Germany /",
+      "previousSchool": null
+    }
+  ]
+}

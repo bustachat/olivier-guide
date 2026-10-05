@@ -1,0 +1,236 @@
+{
+  "schoolId": "western_texas",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.wtcathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Steven Olinick",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Corpus Christi,TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Triston John",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Saint Vincent and the Grenadines",
+      "previousSchool": null
+    },
+    {
+      "name": "Marco Ruvalcaba",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "El Paso, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Julio Ramirez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Katy, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriano Shelton",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Liverpool, UK",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Arteaga",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "San Antonio, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Zibeon Cunningham",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Saint Vincent and the Grenadines",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Sampedro",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Arriondas, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Alvarez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Katy, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Isiah Charles",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Saint Vincent and the Grenadines",
+      "previousSchool": null
+    },
+    {
+      "name": "Decoi Prince",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Tortola, British Virgin Islands",
+      "previousSchool": null
+    },
+    {
+      "name": "Hector Salazar",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Monterey, Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Vicenzo Quezada",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Austin, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Andonie Bobadilla",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Angleton, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Jesus Armenta",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "El Paso, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonathan Huerta",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "San Antonio, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Eric Vila",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "L'Hospitalet, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Darius Procope",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Trinidad & Tobago",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Lemus",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Fort Worth, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Patino",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "San Antonio, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "William Mahas",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Cruz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Garland, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Ivan Marinov",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Houston, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Josue Martinez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Houston, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Isai Camacho",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "San Antonio, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Djibril Sene",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Zwijndrecht, Belgium",
+      "previousSchool": null
+    },
+    {
+      "name": "Jereth Jones-Cruz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Lake Jackson, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Ikenna Ukah",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Lucan, Ireland",
+      "previousSchool": null
+    }
+  ]
+}

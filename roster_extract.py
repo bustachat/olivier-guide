@@ -42,7 +42,8 @@ MF_TOKENS = {'M', 'MF', 'CM', 'DM', 'AM', 'CDM', 'CAM', 'MID', 'MIDFIELD',
              'CENTERMID',  # "Center Mid" (Georgian Court)
              'CENTERMIDFIELDER',  # "Center Midfielder" (Rose State)
              'OM',  # outside / offensive midfielder (Jacksonville College)
-             'C'}  # centre midfield: Crowder's own label, confirmed against its September roster
+             'C',  # centre midfield: Crowder's own label, confirmed against its September roster
+             'MIID'}  # College of Southern Idaho prints "MIID/D" for one midfielder
 KNOWN_NON_MF = {'GK', 'G', 'GOALKEEPER', 'KEEPER', 'D', 'DF', 'DEF', 'DEFENDER',
                 'DEFENSE', 'B', 'BACK', 'F', 'FW', 'FWD', 'FORWARD', 'ST',
                 'STRIKER', 'W', 'WINGER', 'ATT', 'ATTACKER',

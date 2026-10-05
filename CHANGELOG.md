@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.11 (2026-10-06) — eight more junior college rosters stored and applied (campaign C0, step 4, twelfth batch)
+
+**What:** eight junior colleges were stored with positions as published and applied from the stored roster. 170 schools' midfielder numbers now come from a stored roster; 29 are still to read (39 on the coverage list, which also counts schools with no usable roster).
+
+- **From the college's own roster page (5):** Mohave, Western Texas, Lewis & Clark, College of Southern Idaho, USU Eastern.
+- **From the NJCAA team page, because the college's own page showed the verification page or could not be reached (3):** Otero, Northeast CC, Richard J. Daley College (region4sports.com did not respond). Each note says so.
+
+**Changes (Mohave, Western Texas, USU Eastern, Otero and Daley kept the same count and Fit Score):**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| College of Southern Idaho | 8 | 9 | 41 | 42 | Its own roster lists 9 midfielders (one printed "MIID/D"), 2 of them sophomores; the stored data had none finishing |
+| Lewis & Clark | 7 | 7 | 42 | 43 | Same 7; Craig Moore is listed R. Fr. (second year at the college) and is counted with the sophomores, so 4 finish |
+| Northeast CC | 12 | 13 | 42 | 42 | NJCAA lists 13 midfielders, 5 of them sophomores |
+
+**Stale program addresses corrected:** College of Southern Idaho and USU Eastern both moved their men's soccer pages; the stored addresses returned "page not found". Both now point at `/sports/mens-soccer` (school record and coach record).
+
+**Coach check (each college's own coaches page, 2026-10-06):** Alex Ferreira (Southern Idaho; assistants now Andrew Zaleski, Caique Maia and Angel Navarrete), Bruce Palmbaum (USU Eastern; Asel Rasnakawewa replaces Andres Ruiz), Camilo Valencia (Mohave; title now "Director of Soccer Programs and Men's Head Coach", assistant Jesus Armando Zuleta Zapata added) and Daniel Hoskins (Western Texas) are confirmed. Lewis & Clark's coaches page was blank, and Otero, Northeast CC and Daley could not be opened, so those four are not confirmed today.
+
+**Not usable from NJCAA:** North Idaho and Paris JC (women's-team players are mixed into the men's roster with no class years, and a few of the unlabelled names could be men), Northeast Texas CC (all positions blank).
+
+**Tooling:** `roster_extract.py` reads "MIID" (Southern Idaho's misprint) as midfield.
+
+**Validation:** `validate_schools.py` PASS (23 warnings, none new); `validate_consistency.js` Issues: 0; JUCO trajectory, jargon, roster arithmetic and snapshot checks pass.
+
+---
+
 ### v46.10 (2026-10-06) — 24 more junior college rosters stored and applied; NJCAA used as the source where a college's own page was blocked (campaign C0, step 4, eleventh batch)
 
 **Owner ruling (2026-10-06):** where a college's own roster page shows a human-verification page, use the NJCAA team page as the source. Each college's own page was still opened once first.

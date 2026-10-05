@@ -1,0 +1,244 @@
+{
+  "schoolId": "lewis_clark_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.trailblazers.lc.edu/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Hugo Calvo Munoz",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "Valladolid, Spain / ÍES Núñez de Arce",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Ruelke",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Dusseldorf, Germany / Southwest Mississippi CC",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean McCarthy",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Dublin, Ireland / Le Chéile Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Shoham Litinski",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Jerusalem, Israel / Life Preparatory Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Raitis Bomis",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Riga, Latvia / Riga State Gymnasium No.1",
+      "previousSchool": null
+    },
+    {
+      "name": "David Fontanals Roldan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Badalona, Spain / Assumpció Badalona",
+      "previousSchool": null
+    },
+    {
+      "name": "Arthur Floch",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Locquénolé, France / Baccalauréat",
+      "previousSchool": null
+    },
+    {
+      "name": "Cade Galaway",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Troy, MO / Liberty High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Cooper Ludwig",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "O’Fallon, MO / Liberty High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Palmero",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Valladolid, Spain / IES",
+      "previousSchool": null
+    },
+    {
+      "name": "Simon Algourdin",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Seiches-sur-le-Loir, France / Lycée Saint Aubin La Salle",
+      "previousSchool": null
+    },
+    {
+      "name": "Abdul Razak Abdullai",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Kasoa, Ghana / Juaben Senior High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Hugo Jesse",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Riga, Latvia / Rīgas Hanzas Vidusskola",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryuichi Takeda",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Yokohama, Japan / Yokohama Soei High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Seongyu Kim",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Seongnam, South Korea / Global Vision Christian School",
+      "previousSchool": null
+    },
+    {
+      "name": "David Sanchez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Bogota, Colombia / Life Preparatory Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Andreu Valenzuela Guillem",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Alicante, Spain / Colegio Esclavas de la sagrada familia, Alcoy",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Kiser",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "St. Louis, MO / Oakville High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Brownlee",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Enniskillen, Northern Ireland / South West College",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Cahill",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "St. Louis, MO / Oakville Senior High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Gonzalez Gomez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Toledo, Spain / Ebora formación",
+      "previousSchool": null
+    },
+    {
+      "name": "Hikaru Nakagawa",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Fujimi, Japan / Cowley College",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaemun Lee",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Cheonan, South Korea / Dukyoung High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Takumi Uerea",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Toyota, Japan / Kariya High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Marc Proskey",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "St. Louis, MO / Ladue Horton Watkins",
+      "previousSchool": null
+    },
+    {
+      "name": "Bautista Curto",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Buenos Aires, Argentina / William Carey University",
+      "previousSchool": null
+    },
+    {
+      "name": "Javier Grande Bernal",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Ciudad Real, Spain / IES Juan Carlos I",
+      "previousSchool": null
+    },
+    {
+      "name": "Jesus Marin",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "Castellon, Spain / Connors State College",
+      "previousSchool": null
+    },
+    {
+      "name": "Craig Moore",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R. Fr.",
+      "hometown": "Arbroath, Scotland / St John’s RC High School",
+      "previousSchool": null
+    }
+  ]
+}

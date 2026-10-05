@@ -1,0 +1,212 @@
+{
+  "schoolId": "mohave_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.mohave.edu/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 25,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Chase Radford",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "Sandy, UT",
+      "previousSchool": null
+    },
+    {
+      "name": "Mubashir Hilowle",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Omaha, NE",
+      "previousSchool": null
+    },
+    {
+      "name": "Cy Adams",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Henderson, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Oscar Salgado",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Denver, CO",
+      "previousSchool": null
+    },
+    {
+      "name": "Abdullahi Daud",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Columbus, OH",
+      "previousSchool": null
+    },
+    {
+      "name": "Silvestre Mellin",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Reno, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Lazzar Ramos",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Las Vegas, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Conner Ball",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Yuma, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "Alan Salgado",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Denver, CO",
+      "previousSchool": null
+    },
+    {
+      "name": "Christopher Arvizu",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Tucson, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "Hunter La Pointe",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Las Vegas, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Williams",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "Newberg, OR",
+      "previousSchool": null
+    },
+    {
+      "name": "Kamau Balayi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Nottingham, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Geovanni Cardenas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Lake Havasu City, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "Luigi Ankrom",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Las Vegas, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Vinicius Mikelonis",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Reno, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Vicente Villalobos",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Reno, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Shaun Rehal",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Leicester, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Pablo Pulido",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "San Luis, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Everett",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Portland, OR",
+      "previousSchool": null
+    },
+    {
+      "name": "Raul Sierra",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Casa Grande, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "Jesus Alvarado",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Lake Havasu City, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "Sufyan Chaddadi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Bielefeld, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Garcia",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "San Luis, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "AJ Ruiz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Bullhead City, AZ",
+      "previousSchool": null
+    }
+  ]
+}

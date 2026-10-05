@@ -936,6 +936,38 @@ if (!Object.keys(CONF_ALIAS).length || !CONF_ORDER.length) {
     if (n > 0 && !prestige.some(p => sig(p.group) === sig(c.group))) note('GROUP', `conferences.json '${c.id}' has ${n} guide school(s) but no conf-prestige row`);
   });
   if (/c\.guideSchools|programsInGuide|c\.olivierNote/.test(deComment(appjs))) note('GROUP', 'js/app.js reads a stored guide-school list again (guideSchools / programsInGuide / olivierNote) — derive it from unis by group');
+
+  // ── CONF-TITLES (added v45.96): a Division I card's NCAA Titles figure is a sum ──
+  // Owner rule (2026-10-05): the card counts titles HELD BY CURRENT MEMBERS, whichever
+  // conference they were in when they won. Before this the figures followed no written
+  // rule (ACC 28, Big Ten 12, WCC 2 against 5 in the champions table), and the champions
+  // table itself was missing six title-winning guide schools, including the 2025
+  // champion. ncaaTitles must equal the sum of ncaaTitlesByMember, and every guide
+  // school in the ranked part of pipeline.json ncaaD1 must appear on its own card with
+  // the same count. A member that is not in the guide (Howard on the NEC card) can only
+  // be checked against the NCAA's championship history by hand.
+  const titleRows = [];
+  for (const r of pipeAll.ncaaD1 || []) { if (r.sectionDivider) break; titleRows.push(r); }
+  conferences.filter(c => /\(D1\)/.test(c.tier) && typeof c.ncaaTitles === 'number').forEach(c => {
+    const by = c.ncaaTitlesByMember;
+    if (!by || typeof by !== 'object' || Array.isArray(by)) { note('CONF-TITLES', `conferences.json '${c.id}' needs ncaaTitlesByMember (school -> titles; {} if none) — ncaaTitles is its sum`); return; }
+    if (!c.ncaaTitlesSource) note('CONF-TITLES', `conferences.json '${c.id}' has no ncaaTitlesSource`);
+    const sum = Object.values(by).reduce((a, b) => a + b, 0);
+    if (sum !== c.ncaaTitles) note('CONF-TITLES', `conferences.json '${c.id}' ncaaTitles is ${c.ncaaTitles} but ncaaTitlesByMember adds up to ${sum}`);
+    Object.keys(by).forEach(name => {
+      const s = tableSchool(name);
+      if (s && !keysOf(c.group).includes(resolveConfGroupMirror(s.conf))) note('CONF-TITLES', `conferences.json '${c.id}' credits ${name}, whose conference is '${s.conf}'`);
+      if (s && !titleRows.some(r => r.school === name)) note('CONF-TITLES', `conferences.json '${c.id}' credits ${name} with ${by[name]} title(s) but the school has no ranked row in pipeline.json ncaaD1`);
+    });
+  });
+  titleRows.forEach(r => {
+    const s = tableSchool(r.school);
+    if (!s) return;
+    const n = parseInt(String(r.titles).replace(/\D+/g, ''), 10);
+    const card = conferences.find(c => keysOf(c.group).includes(resolveConfGroupMirror(s.conf)));
+    const got = card && card.ncaaTitlesByMember ? card.ncaaTitlesByMember[r.school] : undefined;
+    if (got !== n) note('CONF-TITLES', `${r.school} has ${n} title(s) in pipeline.json ncaaD1 but its conference card '${card ? card.id : '?'}' credits ${got === undefined ? 'none' : got}`);
+  });
 }
 
 // CONF-COUNT: card text must not state a guide-school count — the tab shows the

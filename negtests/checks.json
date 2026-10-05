@@ -208,5 +208,19 @@
     "find": "const g = parseMinEntry(u.gpa?.minEntry);",
     "replace": "const g = parseFloat(u.gpa?.minEntry?.match(/[\\d.]+/)?.[0] || 0);",
     "expect": "GPA-PARSE"
+  },
+  {
+    "name": "CONF-TITLES / a conference card's NCAA Titles figure typed by hand instead of summed from its members",
+    "file": "data/conferences.json",
+    "find": "\"ncaaTitles\": 5,\r\n    \"ncaaTitlesByMember\": {\r\n      \"San Francisco\": 4,",
+    "replace": "\"ncaaTitles\": 2,\r\n    \"ncaaTitlesByMember\": {\r\n      \"San Francisco\": 4,",
+    "expect": "CONF-TITLES"
+  },
+  {
+    "name": "CONF-TITLES / a champion missing from its conference card",
+    "file": "data/conferences.json",
+    "find": "\r\n      \"Washington\": 1,",
+    "replace": "",
+    "expect": "CONF-TITLES"
   }
 ]

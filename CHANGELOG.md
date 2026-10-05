@@ -6,6 +6,41 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.96 (2026-10-05) — Conference NCAA Titles now count titles held by current members; six champions added to the Pro Pipeline table
+
+**Why:** The owner ruled on the open question from v45.95: a conference card's NCAA Titles figure counts titles held by its current members, whichever conference they were in when they won. Applying that rule to every Division I card, against the NCAA's own championship history (ncaa.com, read 2026-10-05), also showed that the Pro Pipeline champions table was missing six title-winning schools that are in the guide.
+
+**Conference cards (`conferences.json`):** each Division I card now stores `ncaaTitlesByMember` (school to titles) and `ncaaTitlesSource`, and `ncaaTitles` is their sum. A co-championship counts for both schools; vacated titles (Howard 1971, San Francisco 1978) are not counted. Hovering the NCAA Titles figure lists the members.
+
+| Card | Before | Now | Members |
+|---|---|---|---|
+| ACC | 28 | 20 | Virginia 7, Clemson 4, Stanford 3, UNC 2, Syracuse 1, Notre Dame 1, Wake Forest 1, Duke 1 |
+| Big Ten | 12 | 20 | Indiana 8, UCLA 4, Maryland 4, Michigan State 2, Washington 1, Wisconsin 1 |
+| Big East | 6 | 5 | UConn 2, Georgetown 1, Akron 1, St John's 1 |
+| WCC | 2 | 5 | San Francisco 4, Santa Clara 1 |
+| Sun Belt | 0 | 1 | Marshall 1 |
+| NEC | 0 | 1 | Howard 1 (1974; not a guide school) |
+| Patriot | 0 | 1 | Navy 1 |
+| Big West, America East | 1 | 1 | UCSB; Vermont |
+
+The other Division I cards stay at 0. The 68 titles on the NCAA list reconcile: 55 on these cards plus Saint Louis 10, SIU Edwardsville 1, Hartwick 1 and West Chester 1, none of which plays in a conference the guide has a card for.
+
+**Pro Pipeline champions table (`pipeline.json`):**
+- Added: Washington (2025, the reigning champion), UNC (2001, 2011), UConn (1981, 2000), Michigan State (1967 and 1968, both shared), Akron (2010), Wisconsin (1995).
+- Corrected: Clemson 2 to 4 (1984 and 1987 were missing), Maryland 3 to 4 (the shared 1968 title was missing).
+- Vermont's note no longer says "Reigning national champions", and St John's note no longer says it is the only Big East program with a title.
+- Rows re-ranked by titles, then most recent title.
+
+**School and coach records:** `titles[]` gained the NCAA titles for Washington, Wisconsin, Michigan State, UConn, Akron and Clemson (1984, 1987); Maryland's now reads four titles including the shared 1968 one. UConn's coach record said "4x NCAA champions"; it now reads two NCAA titles (1981 and 2000). No score uses any of these fields.
+
+**New check (`validate_consistency.js`):** `CONF-TITLES` requires every Division I card's `ncaaTitles` to equal the sum of `ncaaTitlesByMember`, and every guide school in the ranked part of the champions table to appear on its own conference card with the same count. Two proving cases added to `negtests/checks.json`.
+
+**Not changed:** the Division II, NAIA, Division III and junior college cards keep their existing figures; the owner's rule was applied to the Division I cards only, and those figures have not been checked against a written rule.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0, `negtest.py` suite proven, local browser check of the Conferences tab and Pro Pipeline tab.
+
+---
+
 ### v45.95 (2026-10-05) — Review of v45.77–v45.94: 13 minutes projections corrected, plus the gaps the validators could not see
 
 **Why:** The owner asked for a second look at the last five days of work (38 schools added, the Sun Belt, the shared logo chain, the ACU tab rewrite). Every validator passed, so the review compared the new schools against the established ones and against the guide's own formulas. Everything found is fixed here in one release.

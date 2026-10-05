@@ -3286,7 +3286,7 @@ function buildConfCard(c){
       <div class="conf-stat-row" style="grid-template-columns:repeat(4,1fr)">
         <div class="conf-stat" title="${esc(c.soccerTeamsSource||'')}"><span class="csv">${c.soccerTeams}</span><span class="csl">Total Programs</span></div>
         <div class="conf-stat"><span class="csv">${list.length}</span><span class="csl">In Guide</span></div>
-        <div class="conf-stat"><span class="csv">${c.ncaaTitles}</span><span class="csl">NCAA Titles</span></div>
+        <div class="conf-stat" title="${esc(c.ncaaTitlesByMember ? (Object.entries(c.ncaaTitlesByMember).map(([n,t])=>n+' '+t).join(', ') || 'None') + ' (titles held by current members)' : '')}"><span class="csv">${c.ncaaTitles}</span><span class="csl">NCAA Titles</span></div>
         <div class="conf-stat"><span class="csv">${c.maxAid||'—'}</span><span class="csl">Max Aid</span></div>
       </div>
       <div class="conf-desc" style="margin-bottom:.75rem">${c.desc}</div>

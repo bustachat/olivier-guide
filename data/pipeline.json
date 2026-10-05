@@ -23,6 +23,26 @@
     {
       "rank": 3,
       "rankClass": "rank-medal medal-3",
+      "school": "Clemson",
+      "badge": "D1 ACC",
+      "badgeClass": "d-D1",
+      "titles": "🏆 4",
+      "years": "1984, 1987, 2021, 2023",
+      "notes": "Four titles: 1984 and 1987 under I.M. Ibrahim, 2021 and 2023 under Mike Noonan. Nation-leading 4 first-round MLS picks in 2026 draft alone. Robbie Robinson #1 overall 2020 + Hermann Trophy."
+    },
+    {
+      "rank": 4,
+      "rankClass": null,
+      "school": "Maryland",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "titles": "🏆 4",
+      "years": "1968*, 2005, 2008, 2018",
+      "notes": "49 MLS picks + 7 homegrown under Cirovski — most all-time of any program. 6 FIFA World Cup appearances. The 1968 title was shared with Michigan State after a 2-2 final."
+    },
+    {
+      "rank": 5,
+      "rankClass": null,
       "school": "UCLA",
       "badge": "D1 Big Ten",
       "badgeClass": "d-D1",
@@ -31,7 +51,7 @@
       "notes": "Top 5 all-time. Big Ten Tourn champs 2025. #1 kinesiology nationally."
     },
     {
-      "rank": 4,
+      "rank": 6,
       "rankClass": null,
       "school": "San Francisco",
       "badge": "D1 WCC",
@@ -41,7 +61,7 @@
       "notes": "Program lists six national championships, adding a 1950 Soccer Bowl co-championship with Penn State and a 1978 title later vacated for an ineligible player. Nine College Cups. Steve Negoesco was the first college coach to reach 500 wins."
     },
     {
-      "rank": 5,
+      "rank": 7,
       "rankClass": null,
       "school": "Stanford",
       "badge": "D1 ACC",
@@ -51,37 +71,57 @@
       "notes": "3 titles in 3 years. NCAA runner-up 2019. Jordan Morris (USMNT), Eric Wynalda."
     },
     {
-      "rank": 6,
+      "rank": 8,
       "rankClass": null,
-      "school": "Maryland",
-      "badge": "D1 Big Ten",
-      "badgeClass": "d-D1",
-      "titles": "🏆 3",
-      "years": "2005, 2008, 2018",
-      "notes": "49 MLS picks + 7 homegrown under Cirovski — most all-time of any program. 6 FIFA World Cup appearances."
-    },
-    {
-      "rank": 7,
-      "rankClass": null,
-      "school": "Clemson",
+      "school": "UNC",
       "badge": "D1 ACC",
       "badgeClass": "d-D1",
       "titles": "🏆 2",
-      "years": "2021, 2023",
-      "notes": "2 titles in 3 years. Nation-leading 4 first-round MLS picks in 2026 draft alone. Robbie Robinson #1 overall 2020 + Hermann Trophy."
+      "years": "2001, 2011",
+      "notes": "Won in 2001 under Elmar Bolowich (2-0 final) and in 2011 under Carlos Somoano (1-0 final)."
     },
     {
-      "rank": 8,
+      "rank": 9,
+      "rankClass": null,
+      "school": "UConn",
+      "badge": "D1 Big East",
+      "badgeClass": "d-D1",
+      "titles": "🏆 2",
+      "years": "1981, 2000",
+      "notes": "Won in 1981 under Joe Morrone (2-1 in overtime) and in 2000 under Ray Reid (2-0)."
+    },
+    {
+      "rank": 10,
+      "rankClass": null,
+      "school": "Michigan State",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "titles": "🏆 2",
+      "years": "1967*, 1968*",
+      "notes": "Co-champions in both years under Gene Kenney: with Saint Louis in 1967 (0-0 final) and with Maryland in 1968 (2-2 final)."
+    },
+    {
+      "rank": 11,
+      "rankClass": null,
+      "school": "Washington",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "titles": "🏆 1",
+      "years": "2025",
+      "notes": "Reigning national champions: won the 2025 final 3-2 in overtime under Jamie Clark, the first title in program history."
+    },
+    {
+      "rank": 12,
       "rankClass": null,
       "school": "Vermont",
       "badge": "D1 AEC",
       "badgeClass": "d-D1",
       "titles": "🏆 1",
       "years": "2024",
-      "notes": "Reigning national champions. America East Champions 2024, 2025. Four SuperDraft picks in 2025-2026 (Wathuta, Murray, Herceg, Kissel)."
+      "notes": "National champions in 2024. America East Champions 2024, 2025. Four SuperDraft picks in 2025-2026 (Wathuta, Murray, Herceg, Kissel)."
     },
     {
-      "rank": 9,
+      "rank": 13,
       "rankClass": null,
       "school": "Syracuse",
       "badge": "D1 ACC",
@@ -91,7 +131,7 @@
       "notes": "Same-year ACC Tournament champions. Tomas Hut 2026 SuperDraft R1."
     },
     {
-      "rank": 10,
+      "rank": 14,
       "rankClass": null,
       "school": "Marshall",
       "badge": "D1 Sun Belt",
@@ -101,7 +141,7 @@
       "notes": "Beat Indiana in overtime in the final after knocking out No. 1 seed Clemson on penalties. Five straight NCAA Tournaments 2019-2023. Eight SuperDraft picks 2022-26."
     },
     {
-      "rank": 11,
+      "rank": 15,
       "rankClass": null,
       "school": "Georgetown",
       "badge": "D1 Big East",
@@ -111,7 +151,7 @@
       "notes": "42 MLS signings under Wiese all-time. Dylan Nealis 2019 Hermann Trophy finalist. D.C. MLS market proximity."
     },
     {
-      "rank": 12,
+      "rank": 16,
       "rankClass": null,
       "school": "Notre Dame",
       "badge": "D1 ACC",
@@ -121,7 +161,17 @@
       "notes": "27 MLS picks under Bobby Clark era. Jon Gallagher, Philip Quinton, Paul Rothrock to MLS."
     },
     {
-      "rank": 13,
+      "rank": 17,
+      "rankClass": null,
+      "school": "Akron",
+      "badge": "D1 Big East",
+      "badgeClass": "d-D1",
+      "titles": "🏆 1",
+      "years": "2010",
+      "notes": "Won the 2010 final 1-0 under Caleb Porter."
+    },
+    {
+      "rank": 18,
       "rankClass": null,
       "school": "Wake Forest",
       "badge": "D1 ACC",
@@ -131,7 +181,7 @@
       "notes": "Runner-up 2016. 4 MLS picks in 2025 draft alone. ACC powerhouse."
     },
     {
-      "rank": 14,
+      "rank": 19,
       "rankClass": null,
       "school": "UCSB",
       "badge": "D1 Big West",
@@ -141,17 +191,27 @@
       "notes": "Only Big West D1 title ever. Manu Duah #1 overall 2025 MLS pick."
     },
     {
-      "rank": 15,
+      "rank": 20,
       "rankClass": null,
       "school": "St John's",
       "badge": "D1 Big East",
       "badgeClass": "d-D1",
       "titles": "🏆 1",
       "years": "1996",
-      "notes": "Beat FIU in the 1996 final. Only Big East program to win a D1 title. Dr Dave Masur 2× National CoY."
+      "notes": "Beat FIU in the 1996 final. Dr Dave Masur 2× National CoY."
     },
     {
-      "rank": 16,
+      "rank": 21,
+      "rankClass": null,
+      "school": "Wisconsin",
+      "badge": "D1 Big Ten",
+      "badgeClass": "d-D1",
+      "titles": "🏆 1",
+      "years": "1995",
+      "notes": "Won the 1995 final 2-0 under Jim Launder."
+    },
+    {
+      "rank": 22,
       "rankClass": null,
       "school": "Santa Clara",
       "badge": "D1 WCC",
@@ -161,7 +221,7 @@
       "notes": "Co-champions with Virginia after a 1-1 final that stayed level through two overtimes (the third and last time the NCAA named men's soccer co-champions). Seven WCC titles under Cameron Rast, a 1989 champion as a player."
     },
     {
-      "rank": 17,
+      "rank": 23,
       "rankClass": null,
       "school": "Duke",
       "badge": "D1 ACC",
@@ -171,7 +231,7 @@
       "notes": "One of college soccer's most storied programs. Kenan Hot 2026 SuperDraft R2."
     },
     {
-      "rank": 18,
+      "rank": 24,
       "rankClass": null,
       "school": "Navy",
       "badge": "D1 Patriot",

@@ -194,5 +194,19 @@
     "find": "<h2>ACU Units — Which US Programs Cover Each</h2>",
     "replace": "<h2>ACU Units — Which US Programs Cover Each: Stanford (13)</h2>",
     "expect": "STATIC-SCORE"
+  },
+  {
+    "name": "TRAJ / a four-year trajectory typed by hand instead of taken from the section 14 table",
+    "file": "data/acc.json",
+    "find": "the constraint is depth, not the recruiting route.\",\r\n      \"trajectory\": [\r\n        {\r\n          \"year\": 2027,\r\n          \"yr_label\": \"Yr 1 (Fr.)\",\r\n          \"pct\": 15,",
+    "replace": "the constraint is depth, not the recruiting route.\",\r\n      \"trajectory\": [\r\n        {\r\n          \"year\": 2027,\r\n          \"yr_label\": \"Yr 1 (Fr.)\",\r\n          \"pct\": 30,",
+    "expect": "TRAJ"
+  },
+  {
+    "name": "GPA-PARSE / the Dashboard reading gpa.minEntry with its own regex",
+    "file": "js/dashboard.js",
+    "find": "const g = parseMinEntry(u.gpa?.minEntry);",
+    "replace": "const g = parseFloat(u.gpa?.minEntry?.match(/[\\d.]+/)?.[0] || 0);",
+    "expect": "GPA-PARSE"
   }
 ]

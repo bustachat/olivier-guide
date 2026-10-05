@@ -6,6 +6,63 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.95 (2026-10-05) — Review of v45.77–v45.94: 13 minutes projections corrected, plus the gaps the validators could not see
+
+**Why:** The owner asked for a second look at the last five days of work (38 schools added, the Sun Belt, the shared logo chain, the ACU tab rewrite). Every validator passed, so the review compared the new schools against the established ones and against the guide's own formulas. Everything found is fixed here in one release.
+
+**Scores (the main fix):** 13 of the 38 new schools had a Minutes Outlook projection that the section 14 Opportunity Score table does not produce. The other 103 four-year schools matched it exactly, and so did the additions up to v45.83; the mismatches start at v45.84, so those percentages were typed by hand rather than taken from `refresh_school.py`. Nothing caught it because the FIT check only compares the Fit Score with the stored projection. All 13 were recomputed from their stored roster counts (the counts and the notes were already right), and Fit, overall, minutes and value were re-stored:
+
+| School | Yr1/Yr2 before | Yr1/Yr2 now | Fit before | Fit now |
+|---|---|---|---|---|
+| UNLV | 15/30 | 25/40 | 52 | 56 |
+| Bellarmine | 15/30 | 25/40 | 50 | 54 |
+| Pacific | 25/45 | 35/55 | 50 | 53 |
+| Santa Clara | 25/40 | 30/50 | 58 | 60 |
+| FGCU | 25/40 | 30/50 | 50 | 52 |
+| Cal State Bakersfield | 25/45 | 30/50 | 48 | 49 |
+| California Baptist | 15/30 | 20/35 | 46 | 47 |
+| Saint Mary's | 5/15 | 10/15 | 43 | 44 |
+| CSUN | 25/40 | 25/45 | 58 | 59 |
+| Jacksonville | 25/40 | 25/45 | 54 | 55 |
+| Seattle U | 25/40 | 25/45 | 48 | 48 |
+| Portland | 15/25 | 15/30 | 51 | 51 |
+| Lipscomb | 15/25 | 15/30 | 54 | 54 |
+
+**New checks (`validate_consistency.js`, both with a proving case in `negtests/checks.json`):**
+- `TRAJ`: every four-year school's stored trajectory and labels must equal what the section 14 table gives for its roster counts. Junior colleges keep their own curve and `check_juco_trajectory.py`.
+- `GPA-PARSE`: `js/dashboard.js` may not read `gpa.minEntry` with its own regex.
+
+**Dashboard GPA reader (`js/dashboard.js`):** the Dashboard had four copies of a looser reader that took the first number in the text, so Stetson's "No minimum GPA published; a GPA above 3.0 is typical" counted as a 3.0 minimum there while Explore read it as no minimum. All four now call `parseMinEntry()`, the reader Explore already uses. Three schools change on the Dashboard (Stetson, Murray State College, Utah State Eastern), all to "no minimum", which is what their text says. v45.92 fixed the same problem at South Carolina by rewording one school's text.
+
+**Coaches (`coaches.json`):**
+- Nine coaches added in v45.84–v45.88 had no `title`, so the modal showed the default "Head Coach", which was wrong for San Jose State's interim coach. Each was read on the school's own staff or roster page on 2026-10-05: Santa Clara, San Diego State, LMU, New Hampshire, CSUN and Seattle U "Head Coach"; Saint Mary's "Men's Soccer Head Coach"; San Francisco "Head Men's Soccer Coach"; San Jose State "Interim Head Coach". All nine names were confirmed current at the same time. No score changed, so no re-rank.
+- Four coaches stored a per-coach bio link (Old Dominion, Utah Valley, West Virginia, South Carolina). They now store the program page, per section 15 (bio links rot).
+
+**North Florida logo (`js/app.js`):** its favicon fails to load and Google's proxy answers with its generic grey globe, so every surface showed the globe. `ICON_OVERRIDES` now points at the site's own square logo (from its `og:image` tag). A probe of all 213 schools found no other school on the globe.
+
+**San Francisco recruiting pathway:** the roster's card view lists each player's last school, so the pathway could be read: of 8 midfielders, five came from a high school or academy, one is a college transfer and two list nothing. Stored as Freshman-friendly. Seattle U's roster page has no previous-school field at all, so it stays unset, like Santa Clara, Gonzaga, Utah Tech and West Florida.
+
+**Conference cards (`conferences.json`), from the NCAA member directory for 2026-27, re-pulled 2026-10-05:**
+- America East "other programs": Hartford and Maine removed (neither is on the NCAA list), NJIT and UMass Lowell added.
+- CAA: Campbell added (the card showed 9 of 10 with no missing school named).
+- NEC: replaced with the eight programs on the NCAA list (Central Connecticut, Chicago State, Fairleigh Dickinson, Howard, Le Moyne, LIU, Stonehill, New Haven).
+
+**README.md:** header corrected from version 44.53 and 111 schools.
+
+**Reviewed and left alone:**
+- The shared logo chain, the computed ACU tier cards and the Sun Belt wiring are correct. A school with an `ICON_OVERRIDES` entry now falls straight to initials if that file fails; that is kept, because for the Chicago schools the next step would be a shared district icon.
+- The school-level `staff` array is empty on all 38 new schools, but nothing renders it (coach staff comes from `coaches.json`).
+- MLS pick counts for all 38 match the audit file, and conference pick totals reconcile for every complete conference.
+
+**Still open (logged in CLAUDE.md section 6F):**
+- None of the 38 new schools has a full-roster snapshot in `data/rosters/`. Snapshots carry the date the page was actually read, so they are captured at the next roster refresh, not back-filled.
+- The WCC card shows 2 NCAA titles while the Pro Pipeline table credits current WCC members with 5 (San Francisco 4, Santa Clara 1). The card's counting rule is not written down, so it was not changed.
+- Researched facts for the 38 schools (costs, degrees, coach records) were checked for consistency, not re-read on each school's website.
+
+**Validation:** see the commit; `validate_schools.py` pass (213 schools; the nine missing-title warnings are gone), `validate_consistency.js` Issues: 0, all skill audit scripts pass, `negtest.py` suite proven including the two new cases, local browser check of the 13 schools, the Dashboard GPA slider and the North Florida logo.
+
+---
+
 ### v45.94 (2026-10-05) — Batch 6: Lipscomb, Queens, West Florida and Bellarmine (ASUN)
 
 **Why:** Seventh batch from the Division I gap list, the four ASUN programs still missing (209 to 213 schools, 213 coaches). With these, all nine programs on the NCAA's 2026-27 ASUN men's soccer list are in the guide, so the ASUN card's `otherSchools` list is now empty (this also clears the stale North Alabama, Kennesaw State and Liberty entries logged in v45.90).

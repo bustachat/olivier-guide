@@ -56,9 +56,11 @@ function atarToGpa(a) {
   return a >= 99 ? 4.0 : 2.0;
 }
 
+// gpa.minEntry is read by parseMinEntry() (js/app.js), the same reader Explore uses.
+// Do not parse it here: a looser copy read "a GPA above 3.0 is typical" as a minimum.
 function dashReachable(u) {
   if (u.noVarsity || u.excludeFromCostModel) return false;
-  const gpaMin = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+  const gpaMin = parseMinEntry(u.gpa?.minEntry);
   const costNum = u.fin?.costNum ?? 0;
   return dashGpa >= gpaMin && costNum <= dashBudget;
 }
@@ -377,7 +379,7 @@ function updateDashboard() {
 // ─── 1. Stat strip ────────────────────────────────────────────────────────────
 function updateStatStrip() {
   const eligible = unis.filter(u => {
-    const g = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+    const g = parseMinEntry(u.gpa?.minEntry);
     return dashGpa >= g;
   }).length;
   const inBudget  = unis.filter(u => (u.fin?.costNum ?? 0) <= dashBudget).length;
@@ -427,7 +429,7 @@ function updateShortlist() {
   }
 
   el.innerHTML = display.map((u, idx) => {
-    const gpaMin     = parseFloat(u.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+    const gpaMin     = parseMinEntry(u.gpa?.minEntry);
     const costNum    = u.fin?.costNum ?? 0;
     const overBudget = costNum > dashBudget;
     const ineligible = dashGpa < gpaMin;
@@ -491,7 +493,7 @@ function updateLensRow() {
     const top = sorted[0];
     if (!top) return '';
 
-    const gpaMin     = parseFloat(top.gpa?.minEntry?.match(/[\d.]+/)?.[0] || 0);
+    const gpaMin     = parseMinEntry(top.gpa?.minEntry);
     const overBudget = (top.fin?.costNum ?? 0) > dashBudget;
     const ineligible = dashGpa < gpaMin;
     const blocked    = overBudget || ineligible;

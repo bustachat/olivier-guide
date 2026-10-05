@@ -618,6 +618,56 @@ if (riskMismatches.length) {
   riskMismatches.forEach(m => note('RISK', '  ' + m));
 }
 
+// ── TRAJ (added v45.95): a four-year trajectory follows the §14 table, never feel ──
+// FIT only proves fitOlivier matches the STORED trajectory, so a hand-typed trajectory
+// passed every check: 13 of the 38 schools added in v45.84–v45.94 carried percentages
+// the §14 Opportunity Score table does not produce (UNLV and Bellarmine were 10 points
+// low in Yr1 and 4 Fit points low). This is the same table and interpolation as
+// trajectory_for() in apply_roster_refresh.py, which refresh_school.py uses; it is a
+// lookup table, not a scoring formula, so it is not part of js/scores.js. If §14's
+// table changes, change ROWS there and here in the same commit. JUCOs use their own
+// curve and are checked by check_juco_trajectory.py.
+{
+  const TRAJ_ROWS = [
+    [12, 16, [40, 50], [60, 70], [80, 80], [90, 90]],
+    [8, 11, [25, 35], [45, 55], [70, 70], [85, 85]],
+    [5, 7, [15, 25], [30, 40], [55, 65], [80, 80]],
+    [1, 4, [10, 15], [20, 30], [45, 55], [75, 75]],
+    [-4, 0, [5, 10], [15, 15], [35, 35], [65, 65]],
+  ];
+  const trajLabel = p => p >= 80 ? 'Captain candidate' : p >= 65 ? 'Established starter' : p >= 50 ? 'Likely starter'
+    : p >= 35 ? 'Squad rotation' : p >= 20 ? 'Bench / development' : 'Development year';
+  const trajMismatches = [];
+  schools.forEach(s => {
+    const mo = s.minutesOutlook;
+    if (s.juco2yr || !mo || !mo.available || !Array.isArray(mo.trajectory)) return;
+    const cleared = mo.cleared_before_2027 || 0, risingSr = mo.rising_senior_2027_count || 0;
+    const returning = mo.mf_total - cleared - risingSr;
+    const opp = cleared * 2 + risingSr - Math.max(0, returning - 3) * 0.5;
+    const f = Math.floor(opp);
+    const row = TRAJ_ROWS[f >= 12 ? 0 : f >= 8 ? 1 : f >= 5 ? 2 : f >= 1 ? 3 : 4];
+    const t = Math.min(1, Math.max(0, (opp - row[0]) / (row[1] - row[0])));
+    const want = row.slice(2).map(([a, b]) => Math.floor((a + t * (b - a)) / 5 + 0.5) * 5);
+    const got = mo.trajectory.map(y => y.pct);
+    if (got.join() !== want.join()) trajMismatches.push(`${s.id} (${s._file}): stored ${got.join('/')}, table gives ${want.join('/')} (opportunity ${opp})`);
+    else mo.trajectory.forEach(y => { if (y.label !== trajLabel(y.pct)) trajMismatches.push(`${s.id} (${s._file}): ${y.pct}% is labelled '${y.label}', expected '${trajLabel(y.pct)}'`); });
+  });
+  if (trajMismatches.length) {
+    note('TRAJ', `${trajMismatches.length} four-year trajectories do not follow the §14 Opportunity Score table — recompute with refresh_school.py, then cascade the scores:`);
+    trajMismatches.forEach(m => note('TRAJ', '  ' + m));
+  }
+}
+
+// ── GPA-PARSE (added v45.95): one reader for gpa.minEntry ──
+// js/dashboard.js had four copies of a looser reader (first number in the text), so
+// "No minimum GPA published; a GPA above 3.0 is typical" read as a 3.0 minimum on the
+// Dashboard while Explore read it as none (Stetson; the v45.92 South Carolina bug was
+// the same class and was fixed in the data only). Both files must call parseMinEntry().
+{
+  const dashSrc = fs.readFileSync(path.join(ROOT, 'js', 'dashboard.js'), 'utf8');
+  if (/minEntry\?*\.match\(/.test(dashSrc.split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n'))) note('GPA-PARSE', 'js/dashboard.js reads gpa.minEntry with its own regex — call parseMinEntry() (js/app.js) instead');
+}
+
 // Shared by COSTSTR and PROSE. A rule about what the CODE does must not be
 // tripped by the comment that explains the rule — the clean baseline fired on
 // this check's own explanatory comment until it was stripped (negative-tested).

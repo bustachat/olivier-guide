@@ -303,7 +303,9 @@
     "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-09-18",
     "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
-    "otherSchools": [],
+    "otherSchools": [
+      "Campbell"
+    ],
     "desc": "Mid-major Division I programs along the East Coast, from New England to the Carolinas.",
     "color": [
       "#0c4a6e",
@@ -396,9 +398,9 @@
     "otherSchools": [
       "Albany",
       "Binghamton",
-      "Hartford",
-      "Maine",
-      "UMBC"
+      "NJIT",
+      "UMBC",
+      "UMass Lowell"
     ],
     "desc": "Mid-major Division I programs in the Northeast, where winters are cold.",
     "color": [
@@ -728,14 +730,14 @@
     "scholarships": "NCAA D1 — up to 9.9 equivalencies (men's soccer); 28 funded roster spots if House opt-in",
     "maxAid": "9.9",
     "otherSchools": [
-      "LIU Post",
-      "Sacred Heart",
-      "Fairleigh Dickinson",
-      "Saint Francis (PA)",
-      "Stonehill",
       "Central Connecticut",
-      "Wagner",
-      "Mount St. Mary's"
+      "Chicago State",
+      "Fairleigh Dickinson",
+      "Howard",
+      "Le Moyne",
+      "LIU",
+      "Stonehill",
+      "New Haven"
     ],
     "desc": "Mid-major Division I programs in the Northeast, including schools still moving up from Division II.",
     "color": [

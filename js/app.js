@@ -792,6 +792,10 @@ const ICON_OVERRIDES = {
   harcum_college: 'assets/logos/harcum_college.png',
   central_georgia_tech: 'assets/logos/central_georgia_tech.png',
   noc_enid: 'assets/logos/noc_enid.png',
+  // v45.95: unfospreys.com/favicon.ico fails to load and Google's proxy answers with its
+  // generic grey globe (HTTP 404 with an image body), so the chain stopped on the globe.
+  // This is the site's own square logo (200x200), read from its og:image tag on 2026-10-05.
+  northflorida: 'https://unfospreys.com/images/logos/site/site.png',
 };
 
 // ── School emblem logo helper ────────────────────────────────────────────────

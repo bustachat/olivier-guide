@@ -4034,7 +4034,7 @@
       "overall": 51,
       "soccer": 77,
       "academic": 52,
-      "minutes": 19,
+      "minutes": 21,
       "lifestyle": 50,
       "value": 31
     },
@@ -4157,13 +4157,13 @@
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 25,
+          "pct": 30,
           "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
@@ -4549,7 +4549,7 @@
       "overall": 48,
       "soccer": 59,
       "academic": 63,
-      "minutes": 31,
+      "minutes": 33,
       "lifestyle": 50,
       "value": 29
     },
@@ -4670,19 +4670,19 @@
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 70,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
@@ -4943,7 +4943,9 @@
           "label": "Captain candidate"
         }
       ],
-      "recruit_risk": "Medium"
+      "recruit_risk": "Medium",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "The roster lists each player's last school. Of the 8 midfielders, five came straight from a high school or club academy and one (Marci Killeen, from Boston College) is a college transfer; two have no last school listed. The midfield is built mainly from first-year recruits."
     },
     "staff": [],
     "acuUnits": [
@@ -5584,14 +5586,14 @@
     },
     "mapX": 73,
     "mapY": 182,
-    "fitOlivier": 58,
+    "fitOlivier": 60,
     "lensScores": {
-      "overall": 58,
+      "overall": 60,
       "soccer": 54,
       "academic": 20,
-      "minutes": 31,
+      "minutes": 38,
       "lifestyle": 100,
-      "value": 35
+      "value": 36
     },
     "confRecord": [
       {
@@ -5706,25 +5708,25 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
+          "pct": 30,
           "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
-          "label": "Squad rotation"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 70,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
@@ -5843,12 +5845,12 @@
     },
     "mapX": 70,
     "mapY": 175,
-    "fitOlivier": 43,
+    "fitOlivier": 44,
     "lensScores": {
-      "overall": 43,
+      "overall": 44,
       "soccer": 54,
       "academic": 52,
-      "minutes": 9,
+      "minutes": 12,
       "lifestyle": 50,
       "value": 26
     },
@@ -5964,7 +5966,7 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 5,
+          "pct": 10,
           "label": "Development year"
         },
         {
@@ -6101,12 +6103,12 @@
     },
     "mapX": 105,
     "mapY": 212,
-    "fitOlivier": 46,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 46,
+      "overall": 47,
       "soccer": 51,
       "academic": 57,
-      "minutes": 21,
+      "minutes": 26,
       "lifestyle": 50,
       "value": 28
     },
@@ -6221,19 +6223,19 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 15,
-          "label": "Development year"
+          "pct": 20,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Bench / development"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
+          "pct": 60,
           "label": "Likely starter"
         },
         {
@@ -6358,14 +6360,14 @@
     },
     "mapX": 81,
     "mapY": 180,
-    "fitOlivier": 50,
+    "fitOlivier": 53,
     "lensScores": {
-      "overall": 50,
+      "overall": 53,
       "soccer": 51,
       "academic": 42,
-      "minutes": 33,
+      "minutes": 43,
       "lifestyle": 50,
-      "value": 30
+      "value": 32
     },
     "confRecord": [
       {
@@ -6481,14 +6483,14 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
-          "label": "Bench / development"
+          "pct": 35,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 45,
-          "label": "Squad rotation"
+          "pct": 55,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
@@ -6618,14 +6620,14 @@
     },
     "mapX": 458,
     "mapY": 306,
-    "fitOlivier": 50,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 50,
+      "overall": 52,
       "soccer": 52,
       "academic": 73,
-      "minutes": 31,
+      "minutes": 38,
       "lifestyle": 50,
-      "value": 39
+      "value": 40
     },
     "confRecord": [
       {
@@ -6738,25 +6740,25 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
+          "pct": 30,
           "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
-          "label": "Squad rotation"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 70,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
@@ -7136,14 +7138,14 @@
     },
     "mapX": 461,
     "mapY": 263,
-    "fitOlivier": 54,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 54,
+      "overall": 55,
       "soccer": 45,
       "academic": 68,
-      "minutes": 31,
+      "minutes": 33,
       "lifestyle": 100,
-      "value": 32
+      "value": 33
     },
     "confRecord": [
       {
@@ -7260,19 +7262,19 @@
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 70,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
@@ -8019,13 +8021,13 @@
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 25,
+          "pct": 30,
           "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 50,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
@@ -8109,7 +8111,7 @@
       "overall": 54,
       "soccer": 55,
       "academic": 63,
-      "minutes": 19,
+      "minutes": 21,
       "lifestyle": 100,
       "value": 32
     }
@@ -8777,20 +8779,20 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 15,
-          "label": "Development year"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Bench / development"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
@@ -8868,14 +8870,14 @@
         "covered": false
       }
     ],
-    "fitOlivier": 50,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 50,
+      "overall": 54,
       "soccer": 44,
       "academic": 57,
-      "minutes": 21,
+      "minutes": 31,
       "lifestyle": 100,
-      "value": 30
+      "value": 32
     }
   }
 ]

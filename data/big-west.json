@@ -2227,12 +2227,12 @@
     },
     "mapX": 92,
     "mapY": 197,
-    "fitOlivier": 58,
+    "fitOlivier": 59,
     "lensScores": {
-      "overall": 58,
+      "overall": 59,
       "soccer": 55,
       "academic": 68,
-      "minutes": 31,
+      "minutes": 33,
       "lifestyle": 100,
       "value": 46
     },
@@ -2358,19 +2358,19 @@
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 70,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
@@ -3000,12 +3000,12 @@
     },
     "mapX": 94,
     "mapY": 198,
-    "fitOlivier": 48,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 48,
+      "overall": 49,
       "soccer": 45,
       "academic": 52,
-      "minutes": 33,
+      "minutes": 38,
       "lifestyle": 50,
       "value": 40
     },
@@ -3118,14 +3118,14 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 25,
+          "pct": 30,
           "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 45,
-          "label": "Squad rotation"
+          "pct": 50,
+          "label": "Likely starter"
         },
         {
           "year": 2029,
@@ -3255,14 +3255,14 @@
     },
     "mapX": 106,
     "mapY": 196,
-    "fitOlivier": 52,
+    "fitOlivier": 56,
     "lensScores": {
-      "overall": 52,
+      "overall": 56,
       "soccer": 50,
       "academic": 42,
-      "minutes": 21,
+      "minutes": 31,
       "lifestyle": 100,
-      "value": 36
+      "value": 39
     },
     "confRecord": [
       {
@@ -3370,20 +3370,20 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 15,
-          "label": "Development year"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Bench / development"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,

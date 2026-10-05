@@ -45,15 +45,17 @@ KNOWN_NON_MF = {'GK', 'G', 'GOALKEEPER', 'KEEPER', 'D', 'DF', 'DEF', 'DEFENDER',
 
 
 def is_mf(pos):
-    """True if any slash/dash-separated component is a midfield token."""
+    """True if the FIRST-listed position is a midfield token (owner rule, 2026-10-05).
+
+    "M/D" counts; "D/M" and "F/MF" do not. Until v45.98 this returned True when ANY
+    component was midfield, which counted a defender who can fill in at midfield as
+    full competition and made schools' midfield sizes not comparable (CLAUDE.md 15).
+    """
     if not pos:
         return False
-    parts = re.split(r'[\/\-,&]| or ', pos.upper())
-    for p in parts:
-        t = re.sub(r'[^A-Z]', '', p)
-        if t in MF_TOKENS:
-            return True
-    return False
+    parts = [re.sub(r'[^A-Z]', '', p) for p in re.split(r'[\/\-,&]| or ', pos.upper())]
+    parts = [p for p in parts if p]
+    return bool(parts) and parts[0] in MF_TOKENS
 
 
 def pos_unknown(pos):

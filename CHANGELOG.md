@@ -6,6 +6,32 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.98 (2026-10-05) — Midfielders are counted by first-listed position (five schools corrected)
+
+**Why:** The v45.97 snapshot pass found that players listed with two positions (for example M/D or F/MF) were counted three different ways across the new schools. The owner ruled: a player counts as a midfielder only when midfield is his first-listed position.
+
+**Changed (from the rosters read on 2026-10-05, applied with `refresh_school.py`):**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Gonzaga | 7 | 10 | 38 | 42 | Three players listed midfield-first (M/D, M/F) had been left out; 5 of 10 now graduate |
+| UMKC | 12 | 11 | 52 | 50 | Guille Munoz is listed defender-first (D/MF) |
+| Virginia Tech | 12 | 11 | 43 | 41 | Alex Perez is listed forward-first |
+| Sacramento State | 4 | 7 | 51 | 51 | Two midfield-first players and one first-year midfielder had been left out |
+| Utah Tech | 7 | 8 | 42 | 42 | One midfield-first first-year had been left out |
+
+Each school's trajectory note, pathway note and overview text now quote the new counts and name the players who are not counted. Entry competition stays as it was at all five (the rule gives the same label).
+
+**Rule and tool:** CLAUDE.md section 15 now states the first-listed rule (it previously said every combined midfield label counts), and `roster_extract.py`'s `is_mf()` follows it.
+
+**Scope:** only the 38 schools added in v45.77–v45.94 could be checked, because theirs are the only rosters stored with combined labels. The other schools are covered by the plan below.
+
+**Plan written to CLAUDE.md section 6C (owner-approved):** make the stored roster the source of truth. Every school gets a full stored roster with positions exactly as published; the midfielder numbers are calculated from it by script; the validator fails a school whose numbers do not match its stored roster. This needs one more read of the 175 schools whose rosters are not stored with their position labels intact, to be done in a new session.
+
+**Validation:** `validate_schools.py` pass, `validate_consistency.js` Issues: 0 (including the TRAJ check), `check_no_jargon.py` and `check_roster_arithmetic.py` pass, local browser check of the five schools.
+
+---
+
 ### v45.97 (2026-10-05) — Roster snapshots for the 38 schools added in v45.77–v45.94
 
 **Why:** The v45.95 review found that none of the 38 schools added in the previous five days had a full-roster snapshot in `data/rosters/`. The owner asked for them.

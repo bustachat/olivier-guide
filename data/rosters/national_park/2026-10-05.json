@@ -1,0 +1,164 @@
+{
+  "schoolId": "national_park",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.np.edu/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 19,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Joseph Jones",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "Hyde, England / Hyde High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Svane-Johnslev",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Odense, Denmark / TietgenSkolen HHX",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Kramer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Naestved, Denmark / Naestved Gymnasium OG HF",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolas Saint-Martin",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So",
+      "hometown": "Toulouse, France / Lycee Nelson Mandela",
+      "previousSchool": null
+    },
+    {
+      "name": "Raban Bourceau",
+      "position": "F",
+      "positionAsListed": "LW",
+      "class": "Fr",
+      "hometown": "Aachen, Germany / Paul-Julius-Reuter-Berufskolleg",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Reiche",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So",
+      "hometown": "Bad Kosen, Germany / Domgymnasium Naumburg",
+      "previousSchool": null
+    },
+    {
+      "name": "Ashton Robson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Seaham, England / Seaham High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Elian Mulopo",
+      "position": "F",
+      "positionAsListed": "RW",
+      "class": "So",
+      "hometown": "Heide, Germany / Berufsbildungszentrum Heide",
+      "previousSchool": null
+    },
+    {
+      "name": "Arius Garcia",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So",
+      "hometown": "Russellville, AR / Russellville High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Harris",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Derbyshire, England / Glossopdale High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Hartley-Stead",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So",
+      "hometown": "Manchester, England / Marple Hall High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Köster",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Berlin, Germany / Ostrom-Humboldt-Oberstufe",
+      "previousSchool": null
+    },
+    {
+      "name": "Anton Klickermann",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "Leipzig, Germany / Leibniz Gymnasium Leipzig",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonathan Amperez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So",
+      "hometown": "Memphis, TN / Memphis Business Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Efan Anwyl",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Harlech, Wales / Ysgol Dyffryn Conwy",
+      "previousSchool": null
+    },
+    {
+      "name": "Nael Baala",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "Reims, France / Lycee Marc Chagall",
+      "previousSchool": null
+    },
+    {
+      "name": "Strohm Carlstone",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Frisco, TX / Wakeland High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Nikita Maul",
+      "position": "F",
+      "positionAsListed": "LW",
+      "class": "Fr",
+      "hometown": "Mönchengladbach, Germany / Math-Nat Gymnasium Monchegladbach",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Wardrope",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Hampshire, England / Complete Academy",
+      "previousSchool": null
+    }
+  ]
+}

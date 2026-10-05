@@ -42,10 +42,15 @@
     const iPrev = col(['previousschool', 'lastschool', 'prevschool', 'previous', 'previousschoolclub', 'lastschoolclub'], ['previous', 'lastschool', 'prev']);
     const rows = [];
     tb.querySelectorAll('tbody tr').forEach(tr => {
-      const c = [...tr.children].map(T);
+      // Presto tables repeat the column label inside each cell ("Pos.: Goalkeeper", "Class: FR")
+      const c = [...tr.children].map(T).map(v => v.replace(/^(no|name|pos|position|cl|class|yr|year|ht|wt|height|weight|hometown[^:]*|club[^:]*|previous[^:]*|last[^:]*|high school)\.?:\s*/i, ''));
+      // Eastern Oklahoma State: each row carries one more cell than the header row (a duplicate number cell)
+      if (hs.length && c.length > hs.length) c.splice(0, c.length - hs.length);
       if (c.length <= Math.max(iPos, iCls, iName) || !c[iName] || /^(name|full name)$/i.test(c[iName])) return;
       rows.push({ name: c[iName], pos: c[iPos], cls: c[iCls], hometown: iHome >= 0 ? c[iHome] : '', prev: iPrev >= 0 ? c[iPrev] : '' });
     });
+    // Rose State: the table view leaves every position blank while the card view prints them; let the cards win
+    if (rows.length && rows.filter(r => !r.pos).length > rows.length / 2 && document.querySelector('.sidearm-roster-player-position, .player-card')) return;
     tables.push({ rows, hasPrev: iPrev >= 0 });
   });
   tables.sort((a, b) => b.rows.length - a.rows.length);
@@ -58,6 +63,16 @@
     document.querySelectorAll(sel).forEach(c => { const p = fn(c); if (p && p.name) out.push(p); });
     if (out.length >= 12) { layout = name; players = out; }
   };
+
+  // ── Presto "player-card" view (NEO A&M): "Position: GK" / "Class: So" lines in the card's bio ──
+  tryCards('prestocard', '.player-card', c => {
+    const txt = c.innerText || '';
+    const g = re => { const m = txt.match(re); return m ? m[1].trim() : ''; };
+    const names = [...c.querySelectorAll('.player-short-bio a, .player-card-footer a, h3, h4, .name')].map(T).filter(Boolean);
+    let name = names.find(n => / /.test(n) && !/full bio|view more|close/i.test(n)) || '';
+    if (!name) { const m = txt.match(/#\d+\s*\n\s*(.+)\n\s*(.+)\n/); if (m) name = m[1].trim() + ' ' + m[2].trim(); }
+    return { name, pos: g(/Position:\s*([^\n]*)/i), cls: g(/Class:\s*([^\n]*)/i), hometown: g(/Hometown[^:\n]*:\s*([^\n]*)/i), prev: g(/(?:Previous|Last)[^:\n]*:\s*([^\n]*)/i), hs: g(/High School:\s*([^\n]*)/i) };
+  });
 
   // ── classic Sidearm cards ──
   tryCards('sidearm', '.sidearm-roster-players-container .sidearm-roster-player, li.sidearm-roster-player', c => {
@@ -171,7 +186,8 @@
   // tidy: drop leading jersey numbers, de-duplicate (some pages render list + grid)
   const seen = new Set();
   players = players.map(p => ({
-    name: (p.name || '').replace(/^#?\d+\s+/, '').replace(/\s+/g, ' ').trim(),
+    // National Park prints each name twice in one cell ("Joseph Jones Joseph Jones")
+    name: (p.name || '').replace(/^#?\d+\s+/, '').replace(/\s+/g, ' ').trim().replace(/^(.+) \1$/, '$1'),
     pos: (p.pos || '').trim(), cls: (p.cls || '').trim(),
     hometown: (p.hometown || '').trim(), prev: (p.prev || '').trim(), hs: (p.hs || '').trim()
   })).filter(p => { const k = p.name.toLowerCase(); if (!p.name || seen.has(k)) return false; seen.add(k); return true; });

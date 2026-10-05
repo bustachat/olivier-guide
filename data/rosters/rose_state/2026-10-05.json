@@ -1,0 +1,281 @@
+{
+  "schoolId": "rose_state",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://rscraiders.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Scott Thomas",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Harrah, OK",
+      "previousSchool": null,
+      "highSchool": "Harrah High School"
+    },
+    {
+      "name": "Luke Flores",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Tulsa, OK",
+      "previousSchool": null,
+      "highSchool": "Bishop Kelly High School"
+    },
+    {
+      "name": "Bode Durham",
+      "position": "MF",
+      "positionAsListed": "Center Midfielder",
+      "class": "So.",
+      "hometown": "Oklahoma City, OK",
+      "previousSchool": null,
+      "highSchool": "Putnam City North High School"
+    },
+    {
+      "name": "Mason Thompson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Manchester, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Edwin Chavez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Tulsa, OK",
+      "previousSchool": null,
+      "highSchool": "Booker T Washington High School"
+    },
+    {
+      "name": "Jaime Aguirre",
+      "position": "MF",
+      "positionAsListed": "Center Midfielder",
+      "class": "Fr.",
+      "hometown": "Tulsa, OK",
+      "previousSchool": null,
+      "highSchool": "Broken Arrow High School"
+    },
+    {
+      "name": "Carmello Myers",
+      "position": "MF",
+      "positionAsListed": "Center Midfielder",
+      "class": "Fr.",
+      "hometown": "Edmond, OK",
+      "previousSchool": null,
+      "highSchool": "Ed. Santa Fe High School"
+    },
+    {
+      "name": "Ali El-Quraishi",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "So.",
+      "hometown": "Belgium",
+      "previousSchool": null,
+      "highSchool": "Koninklijke Atheneum Berchem"
+    },
+    {
+      "name": "Joao Nuevo Franca De Lima",
+      "position": "MF",
+      "positionAsListed": "Center Midfielder",
+      "class": "Fr.",
+      "hometown": "Brazil",
+      "previousSchool": null,
+      "highSchool": "Escola Estadual Padre Manoel da Nobrega"
+    },
+    {
+      "name": "Ruben Philip",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "England",
+      "previousSchool": null,
+      "highSchool": "Eastwood Academy"
+    },
+    {
+      "name": "Jake Madge",
+      "position": "MF",
+      "positionAsListed": "Center Midfielder",
+      "class": "Fr.",
+      "hometown": "England",
+      "previousSchool": null,
+      "highSchool": "John Taylor High School"
+    },
+    {
+      "name": "Sebastian Martinez",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Oklahoma City, OK",
+      "previousSchool": null,
+      "highSchool": "Classen SAS High School"
+    },
+    {
+      "name": "Brody Smith",
+      "position": "MF",
+      "positionAsListed": "Center Midfielder/Winger",
+      "class": "Fr.",
+      "hometown": "Edmond, OK",
+      "previousSchool": null,
+      "highSchool": "Ed. Santa Fe High School"
+    },
+    {
+      "name": "Jackson Escobedo",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Norman, OK",
+      "previousSchool": null,
+      "highSchool": "Norman North High School"
+    },
+    {
+      "name": "Kalem Gonzalez",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Moore, OK",
+      "previousSchool": null,
+      "highSchool": "Westmoore High School"
+    },
+    {
+      "name": "Braylon Keyes",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "So.",
+      "hometown": "Edmond, OK",
+      "previousSchool": null,
+      "highSchool": "Ed. Santa Fe High School"
+    },
+    {
+      "name": "Juan Leal",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Tulsa, OK",
+      "previousSchool": null,
+      "highSchool": "Broken Arrow High School"
+    },
+    {
+      "name": "Gael Orbe-Santos",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Tulsa, OK",
+      "previousSchool": null,
+      "highSchool": "Edison Prep High School"
+    },
+    {
+      "name": "Cooper Hutchinson",
+      "position": "MF",
+      "positionAsListed": "Center Midfielder",
+      "class": "Fr.",
+      "hometown": "Moore, OK",
+      "previousSchool": null,
+      "highSchool": "Westmoore High School"
+    },
+    {
+      "name": "Hudson Stewart",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Newcastle, OK",
+      "previousSchool": null,
+      "highSchool": "Newcastle High School"
+    },
+    {
+      "name": "Marcus Baucom III",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Norman, OK",
+      "previousSchool": null,
+      "highSchool": "Norman High"
+    },
+    {
+      "name": "Asher Lakey",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Choctaw, OK",
+      "previousSchool": null,
+      "highSchool": "Homeschool"
+    },
+    {
+      "name": "Elias Villanueva",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Tulsa, OK",
+      "previousSchool": null,
+      "highSchool": "Edison Prep High School"
+    },
+    {
+      "name": "Eric Gonzalez",
+      "position": "MF",
+      "positionAsListed": "Center Midfielder",
+      "class": "So.",
+      "hometown": "Piedmont, OK",
+      "previousSchool": null,
+      "highSchool": "Piedmont High School"
+    },
+    {
+      "name": "Carson McVicker",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Tulsa, OK",
+      "previousSchool": null,
+      "highSchool": "Jenks High School"
+    },
+    {
+      "name": "Alexis Vega",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Oklahoma City, OK",
+      "previousSchool": null,
+      "highSchool": "Southeast High School"
+    },
+    {
+      "name": "Jose Rodriguez-Mendez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Tulsa, OK",
+      "previousSchool": null,
+      "highSchool": "Edison Prep High School"
+    },
+    {
+      "name": "Charles Thomas",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Del-City, OK",
+      "previousSchool": null,
+      "highSchool": "Del-City High School"
+    },
+    {
+      "name": "Maddox Puig",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Edmond, OK",
+      "previousSchool": null,
+      "highSchool": "Deer Creek High School"
+    },
+    {
+      "name": "Momcilo Maricic",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Serbia",
+      "previousSchool": null,
+      "highSchool": "Sportska I Informaticka Gimnazija Prestiz"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "schoolId": "murray_state_ok",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://mscaggies.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 21,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Woohee Chung",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Suzuka, Japan / Kaisei Catholic H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mateus Valsecchi Ribeiro",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "So.",
+      "hometown": "Lages, Brazil / Colégio São José",
+      "previousSchool": null
+    },
+    {
+      "name": "Tom Perrin",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Fr.",
+      "hometown": "Le Mesnil-Saint-Denis, France / Lycee Les 7 Mares",
+      "previousSchool": null
+    },
+    {
+      "name": "Jošt Remic",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "So.",
+      "hometown": "Kranj, Slovenia / Gimnazija Kranj",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Aguilar",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Elgin, Texas / Elgin H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "James Owen",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Market Harborough, England / Welland Park Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Massei",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "So.",
+      "hometown": "São Paulo, Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Zachary Britton",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "North Manly, Australia / Freshwater Senior Campus",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryuta Sasaki",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Fr.",
+      "hometown": "Saitama, Japan / Saitama Prefectural Oriya Minami H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Caio Carneiro Teixeira",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Rio de Janeiro, Brazil / Ontario Virtual School",
+      "previousSchool": null
+    },
+    {
+      "name": "David Gopaul",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Trinidad and Tobago / St. Mary's College",
+      "previousSchool": null
+    },
+    {
+      "name": "Hamin Kim",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Yongin City, South Korea / Blue Ridge School, St, George",
+      "previousSchool": null
+    },
+    {
+      "name": "Henrique Figueiredo Barboza",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Fr.",
+      "hometown": "Winter Garden, Fla. / Horizon H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeronimo Sanin Arango",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Manizales-Caldas, Columbia / Gimnasio Campestre La Consolata",
+      "previousSchool": null
+    },
+    {
+      "name": "Yahir Chavez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Weatherford, Okla. / Edmond Memorial H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tristan Chandler",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "El Reno, Okla. / El Reno H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Yui Hasegawa",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Okayama, Japan / Lituka H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Matheus Bargiona de Abreu",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Rio de Janeiro, Brazil / Faith Christian Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Amine Louiza",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Paris, France / Lycee Les 7 Mares",
+      "previousSchool": null
+    },
+    {
+      "name": "Jedaiah King",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Fr.",
+      "hometown": "Port of Spain, Trinidad and Tobago / Fatima College",
+      "previousSchool": null
+    },
+    {
+      "name": "Soulaimane El ilafi",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "Fr.",
+      "hometown": "Morocco / International Trilingual School",
+      "previousSchool": null
+    }
+  ]
+}

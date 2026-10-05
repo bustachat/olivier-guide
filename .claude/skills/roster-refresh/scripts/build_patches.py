@@ -43,7 +43,8 @@ DEF = {"D", "DF", "DEF", "DEFENDER", "DEFENSE", "B", "BACK", "CB", "LB", "RB", "
 FWD = {"F", "FW", "FWD", "FORWARD", "ST", "STRIKER", "W", "WINGER", "WING", "ATT", "ATTACKER",
        "WF", "FOR",  # WF = wing forward (USF), For = forward (FAU)
        "S",  # S = striker (UC Riverside; its player bio page prints "Striker")
-       "FOWARD"}  # Georgian Court prints "Foward/Wing" for one forward
+       "FOWARD",
+       "LW", "RW"}  # left / right wing (National Park)  # Georgian Court prints "Foward/Wing" for one forward
 
 
 def first_token(pos):

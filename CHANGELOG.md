@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.08 (2026-10-05) — Region 2 junior college rosters, first four stored and applied (campaign C0, step 4, ninth batch, part 1)
+
+**What:** four of the nine Region 2 (Oklahoma/Arkansas) junior colleges were read on each school's own roster page in Chrome, stored with positions as published, and applied from the stored roster: Murray State College, Eastern Oklahoma State, Rose State and National Park. 120 schools' midfielder numbers now come from a stored roster; 79 are still to read (89 junior colleges on the coverage list, which also counts schools with no usable roster).
+
+**Changes:**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Murray State College | 14 | 10 | 55 | 56 | The 2026-27 roster lists 21 players. Four are listed with midfield as a second position (three D/M, one F/M) and are no longer counted (first-listed position rule). 3 of the 10 midfielders are sophomores |
+| Eastern Oklahoma State | 10 | 11 | 59 | 58 | The roster lists 35 players and 11 midfielders: 7 sophomores and 4 freshmen. Tomohito Imure (So.) and Rafael González-Rubio (Fr.) were not in the stored list; Antonio Baca is listed Defender. Four stored names were misspelt (Baderdien, Prieto, Mapuranga, O'Bryan Marks) |
+| Rose State | 8 | 8 | 63 | 63 | Same 8 midfielders (2 sophomores, 6 freshmen). Brody Smith is listed "Center Midfielder/Winger" and counts |
+| National Park | 5 | 5 | 55 | 55 | Same 5 midfielders, all sophomores; 19 players, the same squad as the September read |
+
+**Text corrected:** Murray State's summary and pathway note said 17 of 23 players were freshmen; the roster now lists 21 players, 15 of them freshmen.
+
+**Coach check (each school's own site, 2026-10-05):** Chris Spear (Murray State, 2026-27 coaches page), Jake Cottage (Eastern Oklahoma State, coaches page), Michael Shanahan (Rose State, staff directory; its coaches page returns 404) and Corey Irvine (National Park, staff directory; its coaches page returns 404) are all confirmed, with titles and emails as stored. Murray State's 2026-27 coaching staff lists only Chris Spear, so Grace Houchin was removed from its staff list. National Park's directory prints no phone for Corey Irvine, so the stored 501-760-4222 is unconfirmed (not changed).
+
+**NJCAA cross-check: NOT done.** `njcaa.org` returned an empty page shell on three attempts (no 403, no table). The four rosters were taken from each school's own page, which is the primary source. Do the cross-check when the site loads.
+
+**Not read (five schools):** Connors State, NEO A&M, Rich Mountain, NOC Enid and NWACC. Their sites (all on the Presto platform) began showing a "Let's confirm you are human" page after several roster pages were opened in quick succession. That check was not worked around. Connors State and NEO A&M had loaded normally minutes earlier.
+
+**Tooling:** `roster_extractor.js` now handles Presto tables that repeat the column label inside each cell ("Pos.: Goalkeeper"), rows with one more cell than the header row (Eastern Oklahoma State), a table view with blank positions beside a card view that prints them (Rose State), the Presto player-card view (NEO A&M) and names printed twice in one cell (National Park). `roster_extract.py` recognises "Center Midfielder" as a midfielder and LW/RW as wingers.
+
+**Validation:** `validate_schools.py` PASS (24 warnings, none new); `validate_consistency.js` Issues: 0; JUCO trajectory check, jargon check and roster arithmetic pass. Local browser: 213 schools load, the four schools' Fit Scores and Minutes Outlook cards match the stored data.
+
+---
+
 ### v46.07 (2026-10-05) — D2, NAIA and D3 rosters stored and applied (campaign C0, step 4, eighth batch)
 
 **What:** the 13 rosters in `data/d2.json` (Barry, Chapman, Columbia College, Cal State LA, Georgian Court, Indiana Tech, Keiser, Lynn, Nova SE, Oklahoma City, PBA, St. Edward's, U of Charleston) were read on each school's own site, stored with positions as published, and applied from the stored roster. 116 schools' midfielder numbers now come from a stored roster; 83 are still to read. The coverage list, which also counts schools with no usable roster, shows 4 four-year schools (Army, Navy, Princeton, Yale, all out of the campaign by owner ruling) and 93 junior colleges.

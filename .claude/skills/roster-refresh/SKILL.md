@@ -28,16 +28,16 @@ regex traps: ordinal years (`1st`-`5th`), `Fy.` (Ivy first-years), and
 `Redshirt Sophomore`-style strings that a `^`-anchored match silently
 drops.
 
-**Also record every player on the page, not just midfielders — this is now
-the standard step, not an extra one.** You're already reading the whole
-roster to find the midfielders; capture the rest (name, position, class,
-hometown, previous school if published) into the patch's `full_roster`
-field alongside the buckets above. Normalize `position` to one of
-`GK`/`D`/`MF`/`F`/`OTHER` — see CLAUDE.md Section 5's "Roster Snapshot
-Archive" for the exact shape and why it exists (it's the raw archive a
-future non-midfielder athlete profile, or a future database migration,
-would be built from). No new browser visit, no extra research time — just
-don't discard what's already on screen.
+**Record every player on the page. This is REQUIRED since v45.99: the
+stored roster is the source of truth and `refresh_school.py` refuses a
+patch without `full_roster`** (CLAUDE.md Section 6C, campaign C0). For each
+player give `name`, `position` (one of `GK`/`D`/`MF`/`F`/`OTHER`),
+**`positionAsListed` (the position exactly as the page prints it:
+"Midfielder", "M/D", "F/MF"; `""` only if the page leaves it blank)**,
+`class` (exactly as printed), `hometown` and `previousSchool`. You do not
+bucket the midfielders yourself any more: the script works out the
+midfielder count and the cleared / rising-senior / rising-junior names
+from the roster, using the first-listed-position rule (Section 15).
 
 **NJCAA JUCOs only — second read on njcaa.org (added 2026-09-14).** NEVER
 start a refresh from NJCAA: the school's own roster page is always read first.
@@ -60,10 +60,12 @@ python .claude/skills/roster-refresh/scripts/refresh_school.py \
   --file data/juco.json --id <school_id> --patch patch.json
 ```
 
-Write your research into a small JSON patch file first (see the script's own
-docstring for the exact shape — `mf_total`, `roster_season`, `cleared`,
-`rising_sr`, `rising_jr`, plus optional `recruit_risk`/`pathway`/
-`pathway_note`/`trajectory_note`/`juco`/`facts_only`). The script:
+Write the roster into a small JSON patch file first (see the script's own
+docstring for the exact shape: `roster_season`, `full_roster`,
+`source_url`, plus optional `pathway`/`pathway_note`/`trajectory_note`/
+`juco`/`facts_only`). `mf_total`, `cleared`, `rising_sr`, `rising_jr` and
+`recruit_risk` are derived from `full_roster`; if you also state them, the
+script refuses the patch when they disagree with the roster. The script:
 
 - Recomputes the cascade using the SAME formulas `js/scores.js` uses —
   imported directly from `apply_roster_refresh.py`, never re-derived, so
@@ -87,12 +89,24 @@ docstring for the exact shape — `mf_total`, `roster_season`, `cleared`,
 - **Preserves the target file's existing line-ending convention** (LF or
   CRLF — `data/*.json` is not uniform across this repo; forcing one would
   silently mass-convert a file that uses the other).
-- **If the patch includes `full_roster`, archives it** to
-  `data/rosters/{id}/{fetchedAt}.json` and updates `data/rosters/manifest
-  .json` — `fetchedAt` is always today's real date, computed by the script
-  itself, never taken from the patch. Fully optional and additive: a patch
-  without `full_roster` behaves exactly as before this existed. See CLAUDE
-  .md Section 5's "Roster Snapshot Archive" for the schema.
+- **Archives `full_roster`** to `data/rosters/{id}/{fetchedAt}.json`
+  (marked `"labelsKept": true`) and updates `data/rosters/manifest.json`.
+  `fetchedAt` is always today's real date, computed by the script itself,
+  never taken from the patch. See CLAUDE.md Section 5's "Roster Snapshot
+  Archive" for the schema.
+
+To re-check or re-apply a school from its stored roster without visiting
+the website (for example after a counting-rule change):
+
+```bash
+python .claude/skills/roster-refresh/scripts/derive_minutes.py --id <school_id>          # compare
+python .claude/skills/roster-refresh/scripts/derive_minutes.py --id <school_id> --apply  # write
+python .claude/skills/roster-refresh/scripts/derive_minutes.py --coverage                # who still needs a read
+```
+
+`validate_consistency.js`'s **ROSTER-SRC** check runs the same comparison
+for every school that has a labels-kept snapshot and fails on any
+difference.
 
 Use `--dry-run` first to see the computed cascade and any detected
 departures without writing anything.

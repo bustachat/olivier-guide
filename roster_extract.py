@@ -101,7 +101,8 @@ def bucket(cls):
     # Getting this backwards inverts the whole opportunity picture; it is the
     # same season-inversion class as the v44.43 Minutes Outlook key bug.
     if JUCO_MODE:
-        if re.search(r'\bSO\b|SOPH|SOPHOMORE|\b2(?:ND)?\b|\bR[\s\-]*FR\b', c):
+        if re.search(r'\bSO\b|SOPH|SOPHOMORE|\b2(?:ND)?\b|\bR[\s\-]*FR\b'
+                     r'|SECOND[\s\-]?YEAR', c):
             return 'cleared'
         if re.search(r'\bFR\b|\bFY\b|FRESH|FIRST[\s\-]?YEAR|\b1(?:ST)?\b', c):
             return 'returning'
@@ -115,8 +116,13 @@ def bucket(cls):
     # Fr./So./Jr./Sr.). Checked FIRST — '4th' is a graduating senior and would
     # otherwise fall through to 'unknown' and silently vanish from `cleared`.
     m = re.match(r'^(?:R[\s\-]*)?([1-6])(?:ST|ND|RD|TH)\b', c)
-    if m:
-        n = int(m.group(1))
+    # Word ordinals ("Third Year", Old Dominion). Same silent-failure class:
+    # "Fourth Year" is a graduating senior and matched nothing before v45.99.
+    w = re.match(r'^(?:R(?:S|EDSHIRT)?[\s\-]*)?'
+                 r'(FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH)[\s\-]?YEAR\b', c)
+    if m or w:
+        n = int(m.group(1)) if m else (
+            ['FIRST', 'SECOND', 'THIRD', 'FOURTH', 'FIFTH', 'SIXTH'].index(w.group(1)) + 1)
         return ('returning' if n == 1 else 'rising_jr' if n == 2
                 else 'rising_sr' if n == 3 else 'cleared')
     if re.search(r'\bGRAD|\bGR\b|\bGS\b|FIFTH|5TH|GRADUATE', c):

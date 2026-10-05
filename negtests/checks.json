@@ -222,5 +222,26 @@
     "find": "\r\n      \"Washington\": 1,",
     "replace": "",
     "expect": "CONF-TITLES"
+  },
+  {
+    "name": "ROSTER-SRC / a stored midfielder name that is not on the stored roster",
+    "file": "data/d1-other.json",
+    "find": "\"Jon Hjaltason\",",
+    "replace": "\"Jon Hjaltasen\",",
+    "expect": "ROSTER-SRC"
+  },
+  {
+    "name": "ROSTER-SRC / the stored roster changed but the stored numbers did not",
+    "file": "data/rosters/gonzaga/2026-10-05.json",
+    "find": "\"name\": \"Jon Hjaltason\",",
+    "replace": "\"name\": \"Jon Hjaltasen\",",
+    "expect": "ROSTER-SRC"
+  },
+  {
+    "name": "ROSTER-SRC / a snapshot for a different season than the stored roster_season",
+    "file": "data/rosters/gonzaga/2026-10-05.json",
+    "find": "\"rosterSeason\": \"2026-27\",",
+    "replace": "\"rosterSeason\": \"2025-26\",",
+    "expect": "ROSTER-SRC"
   }
 ]

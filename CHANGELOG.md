@@ -6,6 +6,28 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.99 (2026-10-05) — Stored rosters become the source of the midfielder numbers (campaign C0, steps 1 to 3)
+
+**Why:** the guide kept each school's midfielder count and names but not the roster they came from, so a counting-rule change or a doubt meant going back to every website (CLAUDE.md section 6C, "C0").
+
+**Built:**
+- **`derive_minutes.py`** (roster-refresh skill): calculates a school's midfielder count, the cleared / rising-senior / rising-junior names, entry competition, the minutes trajectory and the scores from its stored roster. It uses the existing position and class-year rules (`roster_extract.py`) and the existing formulas (`apply_roster_refresh.py`); it has no copy of either. `--coverage` lists the schools that still need a roster read.
+- **Proof:** it reproduces the stored data of all 38 schools whose rosters were stored with combined position labels on 2026-10-05. It also reproduces 33 of the 35 older (September) snapshots; NorthWest Arkansas CC and Oxford College of Emory differ and will be settled when they are re-read.
+- **`refresh_school.py`** now refuses a refresh that does not include the full roster, needs each player's position exactly as the page prints it, works out the midfielder numbers from the roster, and refuses typed numbers that disagree with it. Departures are now matched against every player on the new roster by name, so a midfielder re-listed as a defender is no longer reported as having left.
+- **`ROSTER-SRC` validator check:** a school whose stored numbers differ from its stored roster fails. Schools with no usable stored roster yet are shown as a backlog line (38 backed, 161 pending). Three negative tests added.
+- **Class years:** "Second Year", "Third Year" and "Fourth Year" (Old Dominion's wording) are now recognised by the shared classifier.
+
+**Data fixed (found by the proof run):**
+- San Diego State's stored roster had the jersey number attached to every player's name; the numbers were removed.
+- Cal State Bakersfield: "Jakob Lopping" corrected to "Jakob Löpping", as the roster prints it.
+- The 38 lossless snapshots are marked `"labelsKept": true`.
+
+**No score changed.**
+
+**Next (step 4):** read the remaining rosters once with positions as published, four-year schools first: 82 four-year and 93 junior college schools at this version.
+
+---
+
 ### v45.98 (2026-10-05) — Midfielders are counted by first-listed position (five schools corrected)
 
 **Why:** The v45.97 snapshot pass found that players listed with two positions (for example M/D or F/MF) were counted three different ways across the new schools. The owner ruled: a player counts as a midfielder only when midfield is his first-listed position.

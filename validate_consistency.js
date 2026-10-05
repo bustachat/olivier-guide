@@ -980,6 +980,26 @@ conferences.forEach(c => {
   }
 });
 
+// ── ROSTER-SRC (added v45.99): stored midfielder numbers must equal the stored roster ──
+// CLAUDE.md 6C "C0". The guide used to keep the answer (mf_total and three name lists)
+// and throw the roster away, so a rule change meant re-reading every website. Where a
+// roster snapshot with labels kept exists (data/rosters/, "labelsKept": true), the stored
+// minutesOutlook, trajectory and score cascade must be exactly what that roster gives.
+// The rules live in ONE place (roster_extract.py + apply_roster_refresh.py, driven by
+// derive_minutes.py); this check calls that script instead of keeping a JS copy.
+// Schools with no such snapshot yet are a counted backlog, not issues, until the
+// reading campaign ends. If Python cannot run, that is an issue, never a silent pass.
+let rosterSrc = { backed: 0, pending: 0 };
+try {
+  const out = require('child_process').execFileSync('python',
+    [path.join(ROOT, '.claude/skills/roster-refresh/scripts/derive_minutes.py'), '--check-json'],
+    { cwd: ROOT, encoding: 'utf8' });
+  rosterSrc = JSON.parse(out.trim().split(/\r?\n/).pop());
+  (rosterSrc.fail || []).forEach(f => note('ROSTER-SRC', f));
+} catch (e) {
+  note('ROSTER-SRC', 'could not run derive_minutes.py --check-json: ' + String(e.message || e).split(/\r?\n/)[0]);
+}
+
 // ── prestige rank sequence ──
 const pr = prestige.map(p => p.rank).sort((a, b) => a - b);
 for (let i = 0; i < pr.length; i++) if (pr[i] !== i + 1) { note('PRESTIGE', `conf-prestige rank sequence broken at ${pr[i]}`); break; }
@@ -990,5 +1010,6 @@ const devTotal = schools.filter(s => s.profileDepth === 'full' && s.devScores).l
 console.log(`Dev rubric (§5a): ${devRebaselined}/${devTotal} re-baselined · ${devLegacyOverCeiling} legacy schools still above their division ceiling (backlog, not counted as issues)`);
 console.log(`Coach rubric (§5d): ${coachRescored}/${coaches.length} re-scored · ${coachLegacy} legacy pending (backlog, not counted as issues)`);
 console.log(`confRecord: ${confRecordBacklog} schools with a run of >=3 repeated generic labels — unresearched conference history (backlog, not counted as issues)`);
+console.log(`Roster source (§6C C0): ${rosterSrc.backed} schools' midfielder numbers derive from a stored roster · ${rosterSrc.pending} pending a roster read (backlog, not counted as issues)`);
 console.log(`Issues: ${issues.length}  (July 2026 baseline: 174 — see CLAUDE.md §6 v36 backlog; must never increase, target zero)`);
 issues.forEach(i => console.log(i));

@@ -89,9 +89,12 @@ PATCH FILE SHAPE
                                                 CLAUDE.md Section 15 Rule 0)
 }
 
-`mf_total`, `cleared`, `rising_sr`, `rising_jr` are the four fields the
-cascade needs. Everything else you'd have derived by hand (opportunity score,
-trajectory percentages, the fit/lens score cascade) this script computes.
+SINCE v45.99 (CLAUDE.md 6C, campaign C0): `full_roster` is REQUIRED and is
+the source of truth. `mf_total`, `cleared`, `rising_sr`, `rising_jr` and
+`recruit_risk` are derived from it by derive_minutes.py (midfield = the
+FIRST-listed position). They may be left out of the patch; if stated, they
+must agree with the roster or the patch is refused. Every player needs
+`positionAsListed` (the position exactly as the page prints it) and `class`.
 
 `full_roster`, if present, is EVERY player on the roster page you already
 read for the midfielder buckets above — not just midfielders. `position`
@@ -138,6 +141,8 @@ if ROOT is None:
     sys.exit(2)
 sys.path.insert(0, ROOT)
 import apply_roster_refresh as arr  # noqa: E402  (needs ROOT on sys.path first)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import derive_minutes as dm  # noqa: E402  (same folder; the ONE place buckets are derived)
 
 QUEUE_FILE_DEFAULT = os.path.join(ROOT, "roster_moves_queue.json")
 ROSTERS_DIR = os.path.join(ROOT, "data", "rosters")
@@ -182,6 +187,16 @@ def validate_full_roster(full_roster):
         if pos not in VALID_POSITIONS:
             return (f"full_roster[{i}] ({p.get('name')!r}) has position "
                     f"{pos!r} — must be one of {sorted(VALID_POSITIONS)}")
+        # v45.99 (CLAUDE.md 6C, C0 step 2): the label exactly as the page
+        # prints it ("Midfielder", "M/D", "F/MF", "" if the page leaves it
+        # blank). Without it a combined position cannot be re-read later and
+        # the first-listed rule cannot be applied without revisiting the site.
+        if not isinstance(p.get("positionAsListed"), str):
+            return (f"full_roster[{i}] ({p.get('name')!r}) has no positionAsListed — "
+                    f"give the position exactly as the roster page prints it "
+                    f"(use \"\" only when the page leaves it blank)")
+        if "class" not in p:
+            return f"full_roster[{i}] ({p.get('name')!r}) has no class (use \"\" if the page leaves it blank)"
     return None
 
 
@@ -205,6 +220,7 @@ def write_roster_snapshot(school_id, school_file_rel, roster_season, full_roster
         "sourceUrl": source_url,
         "fetchMethod": fetch_method or "claude-in-chrome",
         "squadTotal": len(full_roster),
+        "labelsKept": True,
         "players": full_roster,
     }
     school_dir = os.path.join(ROSTERS_DIR, school_id)
@@ -263,18 +279,40 @@ def main():
     s = by_id[args.id]
 
     patch = json.loads(open(args.patch, encoding="utf-8").read())
-    required = ("mf_total", "cleared", "rising_sr", "rising_jr")
-    missing = [k for k in required if k not in patch]
-    if missing:
-        print(f"Patch is missing required key(s): {missing}")
-        return 1
 
+    # v45.99 (CLAUDE.md 6C, C0 step 2): the roster is the source of truth.
+    # A refresh without the full roster is refused, and the midfielder count
+    # and the three name lists are DERIVED from it. If the patch also states
+    # them, they must agree — a typed number can no longer override the page.
     full_roster = patch.get("full_roster")
-    if full_roster is not None:
-        err = validate_full_roster(full_roster)
-        if err:
-            print(f"Patch full_roster is invalid: {err}")
-            return 1
+    if full_roster is None:
+        print("Patch has no full_roster. A roster refresh must store every player "
+              "on the page (CLAUDE.md 6C, C0): add full_roster and re-run.")
+        return 1
+    err = validate_full_roster(full_roster)
+    if err:
+        print(f"Patch full_roster is invalid: {err}")
+        return 1
+    season = patch.get("roster_season") or (s.get("minutesOutlook") or {}).get("roster_season")
+    d = dm.derive(s, {"rosterSeason": season, "players": full_roster})
+    stated = {"cleared": d["cleared"], "rising_sr": d["rising_sr"], "rising_jr": d["rising_jr"]}
+    clash = []
+    if "mf_total" in patch and patch["mf_total"] != d["mf_total"]:
+        clash.append(f"mf_total: patch {patch['mf_total']}, roster gives {d['mf_total']}")
+    for k, names in stated.items():
+        if k in patch and {dm.bare(n) for n in patch[k]} != {dm.bare(n) for n in names}:
+            clash.append(f"{k}: patch {sorted(patch[k])}, roster gives {sorted(names)}")
+    if clash:
+        print("Patch disagrees with its own full_roster (midfield = FIRST-listed position):")
+        for c in clash:
+            print("  - " + c)
+        return 1
+    for w in dm.problems(d):
+        print(f"  WARNING: {w}")
+    patch["mf_total"] = d["mf_total"]
+    for k, names in stated.items():
+        patch.setdefault(k, names)
+    patch["recruit_risk"] = d["recruit_risk"]
 
     athlete = json.loads(open(args.athlete, encoding="utf-8").read())
     mo = s.setdefault("minutesOutlook", {})
@@ -346,9 +384,12 @@ def main():
               f"fit {before[0]}->{after[0]}  minutes {before[1]}->{after[1]}  value {before[2]}->{after[2]}")
 
     # ── departure detection ──
-    new_names = set(patch["cleared"]) | set(patch["rising_sr"]) | set(patch["rising_jr"])
+    # Compare against EVERY player on the new roster, by bare name: stored
+    # names carry suffixes like "(Sr.)" / "(So·M)", and a midfielder who is
+    # still on the squad but now listed as a defender has not departed.
+    new_names = {dm.bare(p["name"]) for p in full_roster}
     candidates = [n for n in (old_rising_sr + old_rising_jr)
-                  if looks_like_a_name(n) and n not in new_names]
+                  if looks_like_a_name(n) and dm.bare(n) not in new_names]
     if candidates:
         print(f"  {len(candidates)} unexpected departure(s) — queued for transfer-tracking:")
         queue = []
@@ -372,7 +413,7 @@ def main():
         print("  no unexpected departures detected")
 
     # ── full-roster archive (optional, additive — see module docstring) ──
-    if full_roster is not None:
+    if True:
         write_roster_snapshot(
             school_id=args.id,
             school_file_rel=os.path.relpath(school_path, ROOT).replace("\\", "/"),

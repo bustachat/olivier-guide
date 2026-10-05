@@ -6,198 +6,199 @@
   "sourceUrl": "https://goaztecs.com/sports/mens-soccer/roster",
   "fetchMethod": "claude-desktop-browser-pane",
   "squadTotal": 28,
+  "labelsKept": true,
   "players": [
     {
-      "name": "0 Andrew Klott",
+      "name": "Andrew Klott",
       "position": "GK",
       "class": "Junior",
       "hometown": "St. Charles, Mo.",
       "previousSchool": "Southern Indiana"
     },
     {
-      "name": "00 Trevor Wilson",
+      "name": "Trevor Wilson",
       "position": "GK",
       "class": "Sophomore",
       "hometown": "Kirkland, Wash.",
       "previousSchool": null
     },
     {
-      "name": "1 Nic Diana",
+      "name": "Nic Diana",
       "position": "GK",
       "class": "Fifth Year",
       "hometown": "Grayslake, Ill.",
       "previousSchool": "Milwaukee"
     },
     {
-      "name": "2 Avery Huggins",
+      "name": "Avery Huggins",
       "position": "D",
       "class": "Fifth Year",
       "hometown": "Chandler, Ariz.",
       "previousSchool": "Cal State Fullerton"
     },
     {
-      "name": "3 Mattia Boldrini",
+      "name": "Mattia Boldrini",
       "position": "D",
       "class": "Sophomore",
       "hometown": "Florence, Italy",
       "previousSchool": "Le Moyne College"
     },
     {
-      "name": "4 Luke Fischer",
+      "name": "Luke Fischer",
       "position": "D",
       "class": "Sophomore",
       "hometown": "Highlands Ranch, Colo.",
       "previousSchool": "California Baptist"
     },
     {
-      "name": "5 Cedric Ngounou",
+      "name": "Cedric Ngounou",
       "position": "D",
       "class": "Senior",
       "hometown": "Mississauga, Ontario, Canada",
       "previousSchool": "University of Toronto"
     },
     {
-      "name": "7 Jaxson Hutcheon",
+      "name": "Jaxson Hutcheon",
       "position": "F",
       "class": "Sophomore",
       "hometown": "Laguna Beach, Calif.",
       "previousSchool": "LMU"
     },
     {
-      "name": "8 Carson Ballagh",
+      "name": "Carson Ballagh",
       "position": "MF",
       "class": "Senior",
       "hometown": "Lake Orion, Mich.",
       "previousSchool": "Oakland"
     },
     {
-      "name": "9 Juan Zepeda",
+      "name": "Juan Zepeda",
       "position": "F",
       "class": "Junior",
       "hometown": "Guadalajara, Mexico",
       "previousSchool": "Temple"
     },
     {
-      "name": "10 Yahir Ocampo Navarro",
+      "name": "Yahir Ocampo Navarro",
       "position": "MF",
       "class": "Senior",
       "hometown": "Aloha, Ore.",
       "previousSchool": "Western Oregon"
     },
     {
-      "name": "11 Kian McCusker",
+      "name": "Kian McCusker",
       "position": "F",
       "class": "Freshman",
       "hometown": "Birmingham, England",
       "previousSchool": null
     },
     {
-      "name": "12 Oscar Emilio Trujillo Lizárraga",
+      "name": "Oscar Emilio Trujillo Lizárraga",
       "position": "D",
       "class": "Junior",
       "hometown": "San Diego, Calif.",
       "previousSchool": "West Virginia"
     },
     {
-      "name": "13 Adam Okorodudu",
+      "name": "Adam Okorodudu",
       "position": "F",
       "class": "Freshman",
       "hometown": "London, England",
       "previousSchool": null
     },
     {
-      "name": "14 Sami Tsipena",
+      "name": "Sami Tsipena",
       "position": "MF",
       "class": "Fifth Year",
       "hometown": "Encino, Calif.",
       "previousSchool": "San Diego"
     },
     {
-      "name": "15 Dylan Presto",
+      "name": "Dylan Presto",
       "position": "D",
       "class": "Fifth Year",
       "hometown": "Los Angeles, Calif.",
       "previousSchool": null
     },
     {
-      "name": "17 Nik Orth",
+      "name": "Nik Orth",
       "position": "MF",
       "class": "Sophomore",
       "hometown": "Cologne, Germany",
       "previousSchool": null
     },
     {
-      "name": "19 Jonah Kawamura",
+      "name": "Jonah Kawamura",
       "position": "MF",
       "class": "Fifth Year",
       "hometown": "Honolulu, Hawai'i",
       "previousSchool": "UC San Diego"
     },
     {
-      "name": "20 Max Mair",
+      "name": "Max Mair",
       "position": "MF",
       "class": "Junior",
       "hometown": "Dana Point, Calif.",
       "previousSchool": "San Francisco"
     },
     {
-      "name": "21 Greyson Moreno",
+      "name": "Greyson Moreno",
       "position": "MF",
       "class": "Sophomore",
       "hometown": "San Clemente, Calif.",
       "previousSchool": "LMU"
     },
     {
-      "name": "22 Griffin Brandon",
+      "name": "Griffin Brandon",
       "position": "D",
       "class": "Freshman",
       "hometown": "Tustin, Calif.",
       "previousSchool": null
     },
     {
-      "name": "23 Gio Aguirre",
+      "name": "Gio Aguirre",
       "position": "MF",
       "class": "Freshman",
       "hometown": "San Marcos, Calif.",
       "previousSchool": null
     },
     {
-      "name": "25 Brecken Bowers",
+      "name": "Brecken Bowers",
       "position": "MF",
       "class": "Sophomore",
       "hometown": "Woodinville, Wash.",
       "previousSchool": "Washington"
     },
     {
-      "name": "26 Owen Faris",
+      "name": "Owen Faris",
       "position": "D",
       "class": "Freshman",
       "hometown": "Dallas, Texas",
       "previousSchool": null
     },
     {
-      "name": "27 Dylan Mair",
+      "name": "Dylan Mair",
       "position": "F",
       "class": "Freshman",
       "hometown": "Dana Point, Calif.",
       "previousSchool": null
     },
     {
-      "name": "28 Luke Strassburg",
+      "name": "Luke Strassburg",
       "position": "MF",
       "class": "Freshman",
       "hometown": "Elk Grove, Calif.",
       "previousSchool": null
     },
     {
-      "name": "29 Daniel Prentice",
+      "name": "Daniel Prentice",
       "position": "MF",
       "class": "Freshman",
       "hometown": "Temecula, Calif.",
       "previousSchool": null
     },
     {
-      "name": "30 Lucas Caffo",
+      "name": "Lucas Caffo",
       "position": "MF",
       "class": "Sophomore",
       "hometown": "San Diego, Calif.",

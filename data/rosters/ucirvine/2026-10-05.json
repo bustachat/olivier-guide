@@ -1,0 +1,236 @@
+{
+  "schoolId": "ucirvine",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://ucirvinesports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Scott Williams",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "6th",
+      "hometown": "Cincinnati, Ohio / Seven Hills HS",
+      "previousSchool": "University of New Hampshire"
+    },
+    {
+      "name": "Joe O'Shaughnessy",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Warrington, England / Wolves Academy",
+      "previousSchool": "Florida Southern College"
+    },
+    {
+      "name": "Abraham Brown",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Compton, Calif. / Cathedral HS",
+      "previousSchool": "University of Pittsburgh"
+    },
+    {
+      "name": "Elijah Jugé",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Fullerton, Calif. / Troy HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Mario Nordstrom",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Alicante, Spain / Salesianos Alicante",
+      "previousSchool": "University of Alicante"
+    },
+    {
+      "name": "Gustavo Gonzalez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Santa Ana, Calif. / California Connections Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristian Gallo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Dallas, Tex. / UT-Austin HS",
+      "previousSchool": "North Carolina State"
+    },
+    {
+      "name": "Hunny Yoo",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Gwangju, South Korea / Seohae HS",
+      "previousSchool": "Herkimer College"
+    },
+    {
+      "name": "Isaiahs Gutierrez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Chula Vista, Calif. / Southwest HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Zac Smuck",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Thousand Oaks, Calif. / ASU Prep Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Marcus Lee",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Foothill Ranch, Calif. / Cabrillo Point Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Gage Lyons",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "McLean, Va. / McLean HS",
+      "previousSchool": "Army West Point"
+    },
+    {
+      "name": "Bobby Jacobs",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Fullerton, Calif. / Mater Dei HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Parore",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Hermosa Beach, Calif. / California Connections Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "James Arteaga",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Sylmar, Calif. / Bishop Alemany HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Cade Williams",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Chandler, Ariz. / Hamilton HS",
+      "previousSchool": "Irvine Valley College"
+    },
+    {
+      "name": "Vinny Levasseur",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Montreal, Canada / Taft School",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Powell",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "5th",
+      "hometown": "Chula Vista, Calif. / Eastlake HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Brady Treinen",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Tustin, Calif. / Tustin Connect HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Javier Bedolla Vera",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Newark, Calif. / Newark Memorial HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Braden Ferreira",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Sammamish, Wash. / Internet Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Shane Kaemerle",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Laguna Niguel, Calif. / California Connections Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Miranda",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Downey, Calif. / Mater Dei HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Kenshi Pivernetz",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Long Beach, Calif. / Los Alamitos HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Pierce Rizzo",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Phoenix, Ariz. / Pinnacle HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Royie Rahamim",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Perth, Australia / Carmel School",
+      "previousSchool": "Robert Morris University"
+    },
+    {
+      "name": "Ferran Duran",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "5th",
+      "hometown": "Sant Cugat del Valles, Spain / Colegio Los Sauces Vigo",
+      "previousSchool": "Universitat Autonoma de Barcelona"
+    },
+    {
+      "name": "Benjamin Martin",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Chacarilla, Peru / Colegio Altair",
+      "previousSchool": null
+    }
+  ]
+}

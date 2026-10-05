@@ -1,0 +1,273 @@
+{
+  "schoolId": "ucsb",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://ucsbgauchos.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Owen Beninga",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Jackson Hole, Wyo.",
+      "previousSchool": "New England Revolution Academy",
+      "highSchool": "American HS"
+    },
+    {
+      "name": "Colby Renton",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Vancouver, B.C.",
+      "previousSchool": "Vancouver Whitecaps FC",
+      "highSchool": "Vancouver Whitecaps Academy"
+    },
+    {
+      "name": "Cole Harris",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "San Clemente, Calif.",
+      "previousSchool": "Irvine Strikers FC",
+      "highSchool": "San Clemente HS"
+    },
+    {
+      "name": "Calle Mollerberg",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Stockholm, Sweden",
+      "previousSchool": "AIK Stockholm",
+      "highSchool": "Solna Gymnasium"
+    },
+    {
+      "name": "Viggo Gustavsson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Stockholm, Sweden",
+      "previousSchool": "Grand Canyon",
+      "highSchool": "Solna Gymnasium"
+    },
+    {
+      "name": "Kalle Rahbek",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Odense, Denmark",
+      "previousSchool": "Wofford",
+      "highSchool": "Sct. Knuds Gymnasium"
+    },
+    {
+      "name": "Donovan Sessoms",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Antelope, Calif.",
+      "previousSchool": "Sacramento State",
+      "highSchool": "Antelope HS"
+    },
+    {
+      "name": "Peleg Brown",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Hod HaSharon, Israel",
+      "previousSchool": null,
+      "highSchool": "Mosinzon School"
+    },
+    {
+      "name": "Steinar Bjornsson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Reykjavík, Iceland",
+      "previousSchool": "Víkingur FC",
+      "highSchool": "Commercial College of Iceland"
+    },
+    {
+      "name": "Kaden Standish",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Danville, Calif.",
+      "previousSchool": "De Anza Force SC",
+      "highSchool": "Monte Vista HS"
+    },
+    {
+      "name": "Ty Branigan",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Roseville, Calif.",
+      "previousSchool": "Sacramento Republic FC",
+      "highSchool": "Woodcreek HS"
+    },
+    {
+      "name": "Ethan Senter",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Aiea, Hawaii",
+      "previousSchool": null,
+      "highSchool": "Kalani HS"
+    },
+    {
+      "name": "Owen Wall",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Chandler, Ariz.",
+      "previousSchool": "Real Salt Lake AZ",
+      "highSchool": "Arizona College Prep"
+    },
+    {
+      "name": "Jakob Methvin",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Edwards, Colo.",
+      "previousSchool": null,
+      "highSchool": "Battle Mountain HS"
+    },
+    {
+      "name": "Tobi Gerber",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Weiden, Germany",
+      "previousSchool": "Northeast Community College",
+      "highSchool": "Kepler Gymnasium"
+    },
+    {
+      "name": "Drew Kamienski",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Long Beach, Calif.",
+      "previousSchool": null,
+      "highSchool": "Saint Anthony HS"
+    },
+    {
+      "name": "Jack Middleton",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Larkspur, Calif.",
+      "previousSchool": "Marin FC / De Anza Force",
+      "highSchool": "Redwood HS"
+    },
+    {
+      "name": "Mateos Carvalho",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "San Clemente, Calif.",
+      "previousSchool": "Orange County SC",
+      "highSchool": "San Clemente HS"
+    },
+    {
+      "name": "Martin Odegaard Oesthagen",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Oslo, Norway",
+      "previousSchool": "Lyn FC",
+      "highSchool": "Wang Toppidrett"
+    },
+    {
+      "name": "Simone Ferrieri",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Frosinone, Italy",
+      "previousSchool": "Varese FC",
+      "highSchool": "IIS Bragaglia"
+    },
+    {
+      "name": "Matteo Crisera",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Manhattan Beach, Calif.",
+      "previousSchool": "Beach FC",
+      "highSchool": "Mira Costa HS"
+    },
+    {
+      "name": "Gunnar Franke",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Marbella, Spain",
+      "previousSchool": "Plymouth Argyle FC",
+      "highSchool": "Swans School International"
+    },
+    {
+      "name": "Dylan Hotaling",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Davis, Calif.",
+      "previousSchool": "San Juan SC",
+      "highSchool": "Davis Senior HS"
+    },
+    {
+      "name": "Gavin Sampognaro",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Upland, Calif.",
+      "previousSchool": null,
+      "highSchool": "Upland HS"
+    },
+    {
+      "name": "Nate Riner",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Ventura, Calif.",
+      "previousSchool": "Santa Barbara SC",
+      "highSchool": "Ventura HS"
+    },
+    {
+      "name": "Brennan Mulholland",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Chandler, Ariz.",
+      "previousSchool": "Phoenix Rising FC",
+      "highSchool": "Hamilton HS"
+    },
+    {
+      "name": "Zac Siebenlist",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "San Luis Obispo, Calif.",
+      "previousSchool": "Santa Barbara SC",
+      "highSchool": "San Luis Obispo HS"
+    },
+    {
+      "name": "David Ruy",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "San Ramon, Calif.",
+      "previousSchool": "Saint Mary's",
+      "highSchool": "California HS"
+    },
+    {
+      "name": "Neo Mishan",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Calabasas, Calif.",
+      "previousSchool": "LAFC Academy",
+      "highSchool": "Viewpoint School"
+    }
+  ]
+}

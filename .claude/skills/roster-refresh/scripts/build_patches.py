@@ -41,7 +41,8 @@ GK = {"GK", "G", "GOALKEEPER", "KEEPER", "GOALIE"}
 DEF = {"D", "DF", "DEF", "DEFENDER", "DEFENSE", "B", "BACK", "CB", "LB", "RB", "CENTERBACK",
        "CENTREBACK", "FULLBACK", "OUTSIDEBACK", "LEFTBACK", "RIGHTBACK", "WINGBACK"}
 FWD = {"F", "FW", "FWD", "FORWARD", "ST", "STRIKER", "W", "WINGER", "WING", "ATT", "ATTACKER",
-       "WF", "FOR"}  # WF = wing forward (USF), For = forward (FAU)
+       "WF", "FOR",  # WF = wing forward (USF), For = forward (FAU)
+       "S"}  # S = striker (UC Riverside; its player bio page prints "Striker")
 
 
 def first_token(pos):
@@ -74,7 +75,8 @@ def to_full_roster(rec):
         if prev.lower() == "null":  # Temple prints the word "null" for an empty last school
             prev = ""
         out.append({
-            "name": p["name"],
+            # Cal Poly marks captains with "(C)" after the name; that is not part of the name.
+            "name": re.sub(r"\s*\(C\)\s*$", "", p["name"]),
             "position": enum_position(p["pos"]),
             "positionAsListed": p["pos"],
             "class": p["cls"],

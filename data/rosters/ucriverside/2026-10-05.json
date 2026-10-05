@@ -1,0 +1,260 @@
+{
+  "schoolId": "ucriverside",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gohighlanders.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 31,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Giancarlo Sagredo",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "RS Jr.",
+      "hometown": "Murrieta, Calif. / California Connections Academy",
+      "previousSchool": "Oregon State"
+    },
+    {
+      "name": "Jackson D'Alessandro",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Encinitas, Calif. / San Dieguito Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Finley O’Mahony",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Poway, Calif. / Westview HS",
+      "previousSchool": "San Diego"
+    },
+    {
+      "name": "Mika Sebastian Kosch",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Frankfurt, Germany / Lichtenberg Oberstufen Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Matti Richter",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "So.",
+      "hometown": "Berlin, Germany / Heinz Berggrün Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Hector Torres",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Los Angeles, Calif. / Venice HS",
+      "previousSchool": "Santa Monica College"
+    },
+    {
+      "name": "Adrian Jose Villafranco",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Lake Los Angeles, Calif. / Littlerock HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jona Martinez",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "RS Sr.",
+      "hometown": "Riverside, Calif. / Jurupa Valley HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Tarek Hamideh",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Jr.",
+      "hometown": "San Marcos, Calif. / Mission Hills HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrian Diaz",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "So.",
+      "hometown": "Pacoima, Calif. / Birmingham Community Charter HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Brady Elliott",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Jr.",
+      "hometown": "Wrightwood, Calif. / Serrano HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Walker",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Sr.",
+      "hometown": "Temecula, Calif. / Vista Murrieta HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan-Antonio Miranda",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Jr.",
+      "hometown": "Richmond, Calif. / Torrey Pines HS",
+      "previousSchool": "Cuyamaca CC"
+    },
+    {
+      "name": "Andrija Radonjic",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Podgorica, Montenegro / Gimnazija Slobodan Škerovic",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Gonzalez",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Sr.",
+      "hometown": "Lake Forest, Calif. / El Toro HS",
+      "previousSchool": "UNLV"
+    },
+    {
+      "name": "Ryan Guerra",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Santa Paula,Calif. / Santa Paula HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ace Tendale",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "RS So.",
+      "hometown": "Hawthorne, Calif. / Mira Costa HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ermias Yohannes",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Sacramento, Calif. / Franklin HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Esquivel",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Jr.",
+      "hometown": "Chula Vista, Calif. / Bonita Vista HS",
+      "previousSchool": "Cuyamaca CC"
+    },
+    {
+      "name": "Wyatt Ponting",
+      "position": "F",
+      "positionAsListed": "S",
+      "class": "Jr.",
+      "hometown": "Claremont, Calif. / Claremont HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Roman Rodriguez",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "So.",
+      "hometown": "Menifee, Calif. / Vista Murrieta HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Barros Schelotto",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Irvine, Calif. / Mater Dei HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Ramirez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Riverside, Calif. / Patriot HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Yashir Mimosa",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "RS Fr.",
+      "hometown": "Arua, Uganda / Kampala HS",
+      "previousSchool": "Gardner Webb"
+    },
+    {
+      "name": "Grayson Gilmore",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Long Beach, Calif. / Wilson HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Lopez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Ventura, Calif. / Buena HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Eric Martinez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Perris, Calif. / American HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Xavier Smith",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Liverpool, England / Calday Grange Grammar School",
+      "previousSchool": null
+    },
+    {
+      "name": "Noa Wada",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "Jr.",
+      "hometown": "Torrance, Calif. / West HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Giancarlo Molina Mendoza",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr.",
+      "hometown": "Ontario, Calif. / Alta Loma HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Hermosillo",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "RS Sr.",
+      "hometown": "Victorville, Calif. / Silverado HS",
+      "previousSchool": null
+    }
+  ]
+}

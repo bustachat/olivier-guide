@@ -1,0 +1,284 @@
+{
+  "schoolId": "csuf",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://fullertontitans.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 34,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Eoin Kennedy",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Yonkers, N.Y. / Fordham Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyler Nunnally",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Chandler, Ariz. / Basha HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Asger Hemmer",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Aarhus, Denmark / Risskov Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Brothers",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Jr.",
+      "hometown": "Palm Desert, Calif. / La Quinta HS",
+      "previousSchool": "College of the Desert"
+    },
+    {
+      "name": "Logan Mahoney",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Laguna Niguel, Calif. / JSerra Catholic HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Mati Mestre",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Vinaros, Spain / Villarreal Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Borja",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Ontario, Calif. / Diamond Ranch HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Benjamin Bjorkman",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Stockholm, Sweden / Hagagymnasiet",
+      "previousSchool": "Central Connecticut State"
+    },
+    {
+      "name": "Sebastian Carbajal",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Napa, Calif. / Napa HS",
+      "previousSchool": "Stanislaus State"
+    },
+    {
+      "name": "Aiden Bengard",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "R-So.",
+      "hometown": "Fullerton, Calif. / Fullerton HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Adan Alvarado",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Pomona, Calif. / Montclair HS",
+      "previousSchool": "Vanguard"
+    },
+    {
+      "name": "Jose de la Torre",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Moreno Valley, Calif. / Citrus Hill HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Fernando Valenzuela",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Boca Raton, Fla. / Boca Raton HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Destry Lanza",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Beaumont, Calif. / Beaumont HS",
+      "previousSchool": "College of the Desert"
+    },
+    {
+      "name": "Tarek Ibessaine",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Monterey, Calif. / Carmel HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Rodriguez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Amsterdam, Netherlands / Yverdon Sport FC",
+      "previousSchool": "Manhattan University"
+    },
+    {
+      "name": "Fitz Williams",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Toronto, Canada / Neil McNeil Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Josiah Green",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Toronto, Canada / Bill Crothers Secondary School",
+      "previousSchool": "Lipscomb"
+    },
+    {
+      "name": "Armin Tehrani",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Irvine, Calif. / University HS",
+      "previousSchool": "Irvine Valley College"
+    },
+    {
+      "name": "Cesar Aubour",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R-Jr.",
+      "hometown": "Los Angeles, Calif. / Palisades Charter HS",
+      "previousSchool": "Oregon St."
+    },
+    {
+      "name": "Hughie Eaton",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "San Clemente, Calif. / St. Margarets HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Gianluca D'Amato",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Lake Forest, Calif. / El Toro HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Lachlan Quate",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Inverness, Scotland / Fortrose Academy",
+      "previousSchool": "West Liberty"
+    },
+    {
+      "name": "Ulises Grado",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Anaheim, Calif. / Anaheim HS",
+      "previousSchool": "Long Beach CC"
+    },
+    {
+      "name": "Griffin Blair",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "R-Fr.",
+      "hometown": "San Clemente, Calif. / San Clemente HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Emerson Grimes",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R-Fr.",
+      "hometown": "Sitges, Spain / Escola Pia de Sitges",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Sherman",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Santa Monica, Calif. / Santa Monica HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Tobi Odufalu",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Riverside, Calif. / Martin Luther King HS",
+      "previousSchool": "Mt. San Antonio College"
+    },
+    {
+      "name": "Sam Sery",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R-So.",
+      "hometown": "Gastonia, N.C. / Charlotte FC Academy",
+      "previousSchool": "Syracuse / Campbell"
+    },
+    {
+      "name": "Collin Hale",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Chandler, Ariz. / Hamilton HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Kaj Schroder",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Wageningen, Netherlands / De Graafschap Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Devin Lee",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Honolulu, Hawaii / 'lolani School",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Leviton",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Grapevine, Texas / Colleyville Heritage HS",
+      "previousSchool": "Campell"
+    },
+    {
+      "name": "Alex Lugo",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Inglewood, Calif. / Animo Leadership HS",
+      "previousSchool": null
+    }
+  ]
+}

@@ -6,6 +6,35 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.04 (2026-10-05) — Big West rosters stored and applied (campaign C0, step 4, fifth batch)
+
+**What:** the 7 rosters still to read in `data/big-west.json` (UCSB, UC Irvine, CS Fullerton, Cal Poly, UC Riverside, UC San Diego, UC Davis) were read on each school's own site, stored with positions as published, and applied from the stored roster. 88 schools' midfielder numbers now come from a stored roster; 111 are still to read.
+
+**Changes:**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Cal Poly | 5 | 9 | 46 | 54 | The stored list held 5 names; the 2026 roster lists 9 players at MF (Colin Pearce, Jack Civitts, Mariodavid Vega, Parker Mascott and Landon Erbstoeszer were not stored). Four of the 9 finish before August 2027. Cole Aman is listed D/MF and is no longer counted (first-listed position rule) |
+| CS Fullerton | 12 | 13 | 48 | 50 | Destry Lanza (Jr., from College of the Desert) and Cesar Aubour (R-Jr., from Oregon State) are listed as midfielders and were not stored; Ulises Grado is now listed as a forward |
+| UC Riverside | 8 | 6 | 48 | 46 | Adrian Diaz and Noa Wada are listed F/M and are no longer counted (first-listed position rule) |
+| UC Davis | 9 | 9 | 47 | 45 | Same count, different players: Gabriel Haggerty and Ensio Sardans are listed D/M and are no longer counted, Derrick Green and Jackson Richardson are not on the roster, and four freshmen are |
+
+UCSB, UC Irvine and UC San Diego: same numbers as stored. At UC San Diego the stored name of the one midfielder who finishes before August 2027 was wrong: it is Oren Stuppel (Gr., from Cal Poly), not Liam Zubak, who is a freshman.
+
+**Recruiting pathway:** all 7 notes were rewritten to the new counts. Three classifications changed, none of them scored: UCSB Mixed to Freshman-friendly (2 of 11 midfielders list a previous college, down from 4), Cal Poly Freshman-friendly to Mixed (3 of 9 came from another college), UC San Diego Mixed to Freshman-friendly (its roster table now publishes a previous-school column, and 1 of 9 lists one).
+
+**Departure queue:** Derrick Green and Jackson Richardson (UC Davis) were queued. Masa Fujita (UC San Diego) is listed as Masayuki Fujita, so his queue entry was removed.
+
+**Coach check:** the head coach was confirmed on each school's own coaches page for all 7 (Vom Steeg, Raz, Kuntz, Kennedy, Cupello, Pascale, Shaffer). UCSB's head-coach email was corrected to the address its page publishes (menssoccer@athletics.ucsb.edu), in `contact`, the bio and the staff lists. George Kuntz's title and `yearsHC` now read 12th season, as on Fullerton's page. No score changed, so no re-rank. The placeholder assistant lists for UC Irvine, CS Fullerton, UC Riverside, UC San Diego and UC Davis (in `coaches.json` and each school's `staff[]`) were replaced with the names and emails on each coaches page.
+
+**Not published, left as stored:** UCSB's head-coach phone (stored 805-893-3229). Cal Poly publishes no head-coach phone and none is stored.
+
+**Tooling:** `build_patches.py` removes a trailing captain marker "(C)" from names (Cal Poly) and recognises the forward label "S" (UC Riverside; the player's own page reads "Striker"). UC Irvine and Cal Poly fill the season into the page title late; both were confirmed on the page heading.
+
+**Checks:** `validate_schools.py` pass; `validate_consistency.js` Issues: 0; negative tests 36/36; local browser check of all 7 cards and Details modals (scores match, coach lookups resolve, no "undefined").
+
+---
+
 ### v46.03 (2026-10-05) — AAC rosters stored and applied (campaign C0, step 4, fourth batch)
 
 **What:** the 8 AAC rosters still to read in `data/aac.json` (FIU, USF, Tulsa, Memphis, Temple, UAB, Charlotte, FAU) were read on each school's own site, stored with positions as published, and applied from the stored roster. Army and Navy stay out of roster campaigns; Missouri State already had a stored roster. 81 schools' midfielder numbers now come from a stored roster; 118 are still to read.

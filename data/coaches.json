@@ -366,7 +366,7 @@
     "devScore": 88,
     "ptPathScore": 78,
     "ausConnection": false,
-    "bio": "Tim Vom Steeg enters his 27th season at UCSB in 2025 as the longest-tenured coach in this guide. His four sons all played for UCSB. His 2025 staff: Greg Wilson (Assoc HC), Matias Fernandez (GK Coach), Carson Vom Steeg (Asst — former US U-18 captain and Stanford NCAA champion), Kian Kohan (Director of Operations). Email: tvomsteeg@athletics.ucsb.edu",
+    "bio": "Tim Vom Steeg enters his 27th season at UCSB in 2025 as the longest-tenured coach in this guide. His four sons all played for UCSB. His 2025 staff: Greg Wilson (Assoc HC), Matias Fernandez (GK Coach), Carson Vom Steeg (Asst — former US U-18 captain and Stanford NCAA champion), Kian Kohan (Director of Operations). Email: menssoccer@athletics.ucsb.edu",
     "strengths": [
       "Long tenure",
       "Big West expertise",
@@ -377,30 +377,30 @@
       {
         "name": "Greg Wilson",
         "role": "Associate Head Coach",
-        "email": "",
+        "email": "menssoccer@athletics.ucsb.edu",
         "bg": "Associate Head Coach. Recruiting and player development."
       },
       {
         "name": "Matias Fernandez",
         "role": "Goalkeeping Coach",
-        "email": "",
+        "email": "menssoccer@athletics.ucsb.edu",
         "bg": "Goalkeeping Coach."
       },
       {
         "name": "Carson Vom Steeg",
         "role": "Assistant Coach",
-        "email": "",
+        "email": "menssoccer@athletics.ucsb.edu",
         "bg": "Full-time assistant coach."
       },
       {
         "name": "Kian Kohan",
         "role": "Director of Operations",
-        "email": "",
+        "email": "menssoccer@athletics.ucsb.edu",
         "bg": "Director of program operations."
       }
     ],
     "contact": {
-      "email": "tvomsteeg@athletics.ucsb.edu",
+      "email": "menssoccer@athletics.ucsb.edu",
       "phone": "805-893-3229"
     },
     "url": "https://ucsbgauchos.com/sports/mens-soccer",
@@ -4295,10 +4295,16 @@
     ],
     "staff": [
       {
-        "name": "Assistant Coach",
+        "name": "Jason Hotaling",
+        "role": "Associate Head Coach",
+        "email": "jmhotaling@ucdavis.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Cayden Hotaling",
         "role": "Assistant Coach",
-        "email": "soccer@ucdavis.edu",
-        "bg": "Full-time assistant."
+        "email": "",
+        "bg": "Assistant Coach."
       }
     ],
     "contact": {
@@ -4359,7 +4365,7 @@
     "school": "California State University, Fullerton",
     "div": "D1",
     "conf": "Big West Conference",
-    "yearsHC": 11,
+    "yearsHC": 12,
     "record": "30+ year D1 veteran; built UC Irvine into Big West power before joining Fullerton; 12 MLS players developed; multiple Big West titles across programs",
     "mlsPlayers": 0,
     "rank": 84,
@@ -4378,10 +4384,28 @@
     ],
     "staff": [
       {
-        "name": "Assistant Coach",
+        "name": "Enrique Cardenas",
         "role": "Assistant Coach",
-        "email": "soccer@fullerton.edu",
-        "bg": "Full-time assistant."
+        "email": "encardenas@fullerton.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Levi Toth",
+        "role": "Assistant Coach",
+        "email": "ltoth@fullerton.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Igor Puglia",
+        "role": "Goalkeepers Coach",
+        "email": "ipuglia@fullerton.edu",
+        "bg": "Goalkeepers Coach."
+      },
+      {
+        "name": "Eduardo Perez",
+        "role": "Director of Operations",
+        "email": "eperezgutierrez@fullerton.edu",
+        "bg": "Director of Operations."
       }
     ],
     "contact": {
@@ -4395,7 +4419,7 @@
     ],
     "licence": "USSF A",
     "overallScoreNote": "§5d re-score 50->68 (rk-solid->rk-strong; recent-form inverse halo corrected, Gunn/Clark pattern). fullertontitans.com: 28-yr D1 veteran, 388 career wins; built UC Irvine into a Big West power 1995-2013 (4 NCAA, Round of 16 in 2008), then 3 more NCAA berths at Fullerton = 7 Big West Tournament titles, 8 conference championships, 7 NCAA appearances, 4x Big West CoY + 2x NSCAA Far West CoY, USSF 'A' licence, 12 MLS players + 3 internationals. Recent Fullerton dip (2021-24) had suppressed him to 50/last. Held at low-strong by a Round-of-16 ceiling (no Sweet 16) + sub-.600 record. [DEFER data fix: stored licence None->USSF A.]",
-    "title": "Head Coach (11th+ season)"
+    "title": "Head Coach (12th Season)"
   },
   {
     "id": "coach_lewis_clark_cc",
@@ -5228,10 +5252,16 @@
     ],
     "staff": [
       {
-        "name": "Assistant Coach",
+        "name": "Cale Rodriguez",
+        "role": "Associate Head Coach",
+        "email": "caler@uci.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Yonha Adrabi",
         "role": "Assistant Coach",
-        "email": "soccer@uci.edu",
-        "bg": "Full-time assistant."
+        "email": "yadrabi@uci.edu",
+        "bg": "Assistant Coach."
       }
     ],
     "contact": {
@@ -5771,10 +5801,22 @@
     ],
     "staff": [
       {
-        "name": "Assistant Coach",
+        "name": "Chris Volk",
         "role": "Assistant Coach",
-        "email": "soccer@ucr.edu",
-        "bg": "Full-time assistant."
+        "email": "cvolk@ucr.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Romario Lomeli",
+        "role": "Assistant Coach",
+        "email": "romario.lomeli@ucr.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Julian Ortega",
+        "role": "Assistant Coach",
+        "email": "juliano@ucr.edu",
+        "bg": "Assistant Coach."
       }
     ],
     "contact": {
@@ -7977,10 +8019,22 @@
     ],
     "staff": [
       {
-        "name": "Assistant Coach",
+        "name": "Ryan Hernandez",
+        "role": "Associate Head Coach",
+        "email": "ryanhernandez@ucsd.edu",
+        "bg": "Associate Head Coach."
+      },
+      {
+        "name": "Michael D’Arrigo",
         "role": "Assistant Coach",
-        "email": "soccer@ucsd.edu",
-        "bg": "Full-time assistant."
+        "email": "mdarrigo@ucsd.edu",
+        "bg": "Assistant Coach."
+      },
+      {
+        "name": "Brett Jones",
+        "role": "Assistant Coach",
+        "email": "brj009@ucsd.edu",
+        "bg": "Assistant Coach."
       }
     ],
     "contact": {

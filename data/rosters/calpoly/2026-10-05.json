@@ -1,0 +1,260 @@
+{
+  "schoolId": "calpoly",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gopoly.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 31,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Keagan Rhodes",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "San Jose, CA",
+      "previousSchool": "Santa Clara"
+    },
+    {
+      "name": "Cole Aman",
+      "position": "D",
+      "positionAsListed": "D/MF",
+      "class": "So.",
+      "hometown": "Portland, OR",
+      "previousSchool": "Portland Timbers2"
+    },
+    {
+      "name": "Parker Owens",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Southlake, TX",
+      "previousSchool": "Solar FC"
+    },
+    {
+      "name": "Tanner Casey",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Ladera Ranch, CA",
+      "previousSchool": "Laguna United FC"
+    },
+    {
+      "name": "Colin Pearce",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "San Jose, CA",
+      "previousSchool": "De Anza Force SC"
+    },
+    {
+      "name": "Finn Linas",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "San Clemente, CA",
+      "previousSchool": "Pateadores SC"
+    },
+    {
+      "name": "Diego Guerra",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "R-Jr.",
+      "hometown": "Fresno, CA",
+      "previousSchool": "San Jose Earthquakes II"
+    },
+    {
+      "name": "Roman Anast",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Loomis, CA",
+      "previousSchool": "Sacramento Republic FC"
+    },
+    {
+      "name": "Rylan Firouznam",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Yorba Linda, CA",
+      "previousSchool": "Pateadores SC"
+    },
+    {
+      "name": "Jack Civitts",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Issaquah, WA",
+      "previousSchool": "Santa Clara"
+    },
+    {
+      "name": "Devin Rosas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "San Jose, CA",
+      "previousSchool": "West Valley College"
+    },
+    {
+      "name": "Matt Rajecki",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Walnut Creek, CA",
+      "previousSchool": "Mustang SC"
+    },
+    {
+      "name": "Marlow Buettner",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Fr.",
+      "hometown": "Berkeley, CA",
+      "previousSchool": "Eastshore Alliance FC"
+    },
+    {
+      "name": "Michael Vick",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Kinvara, Ireland",
+      "previousSchool": "De Anza Force SC"
+    },
+    {
+      "name": "Peyton Marmion",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Sacramento, CA",
+      "previousSchool": "Sacramento Republic FC"
+    },
+    {
+      "name": "Brandon Newman",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Gr.",
+      "hometown": "Old Tappen, N.J.",
+      "previousSchool": "Columbia"
+    },
+    {
+      "name": "Quinn Mahoney",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Sacramento, CA",
+      "previousSchool": "San Juan SC"
+    },
+    {
+      "name": "Mariodavid Vega",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Oxnard, CA",
+      "previousSchool": "Santa Barbara City College"
+    },
+    {
+      "name": "Kevin Jimenez Gutierrez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Oakland, CA",
+      "previousSchool": "San Jose Earthquakes Academy"
+    },
+    {
+      "name": "Alex Westberry",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-Fr.",
+      "hometown": "Corvallis, OR",
+      "previousSchool": "Oregon Premier FC"
+    },
+    {
+      "name": "Devin Bening",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Woodland Hills, CA",
+      "previousSchool": "Occidental"
+    },
+    {
+      "name": "Charlie Hogan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Walnut Creek, CA",
+      "previousSchool": "De Anza Force"
+    },
+    {
+      "name": "Benji Jimenez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Bakersfield, CA",
+      "previousSchool": "Pateadores SC"
+    },
+    {
+      "name": "Michael Baumgaertel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Aschheim, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Israel Carrillo Peréz",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "San Jose, CA",
+      "previousSchool": "San Diego State"
+    },
+    {
+      "name": "Parker Mascott",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Mill Valley, CA",
+      "previousSchool": "Marin Academy"
+    },
+    {
+      "name": "Landon Erbstoeszer",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Kirkland, WA",
+      "previousSchool": "Crossfire Premier"
+    },
+    {
+      "name": "Ben Oetman",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "San Luis Obispo, CA",
+      "previousSchool": "Santa Barbara SC"
+    },
+    {
+      "name": "Dylan Glowaski",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Woodland Hills, CA",
+      "previousSchool": "LAFC Academy"
+    },
+    {
+      "name": "Michael Macias",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "San Jose, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Mathew Guerra",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Fr.",
+      "hometown": "Newark, CA",
+      "previousSchool": "San Jose Earthquakes II"
+    }
+  ]
+}

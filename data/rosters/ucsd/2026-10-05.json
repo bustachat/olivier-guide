@@ -1,0 +1,244 @@
+{
+  "schoolId": "ucsd",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://ucsdtritons.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Luc Narido",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Moraga, Calif. / Campolindo HS",
+      "previousSchool": "De Anza College"
+    },
+    {
+      "name": "Nic Thiele",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Sunnyvale, Calif. / Bellarmine College Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Vik Singh",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Fresno, Calif. / Central East HS",
+      "previousSchool": "Clovis College"
+    },
+    {
+      "name": "Matias Mott",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "San Marcos, Calif. / San Marcos HS",
+      "previousSchool": "Wisconsin"
+    },
+    {
+      "name": "Nate Morgan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Oakland, Calif. / Skyline HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Matteo Saffer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Palo Alto, Calif. / Palo Alto HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Keenai Braun",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Foothill Ranch, Calif. / JSerra Catholic HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Gary Green",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "San Mateo, Calif. / Aragon HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean McTague",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Gr.",
+      "hometown": "Mission Viejo, Calif. / JSerra Catholic HS",
+      "previousSchool": "Cal Poly"
+    },
+    {
+      "name": "Sean Ueda",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Santa Clara, Calif. / Adrian Wilcox HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Gavin Allegaert",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Trabuco Canyon, Calif. / JSerra Catholic HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Namdar",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Mission Viejo, Calif. / Capistrano Valley HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Masayuki Fujita",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Corte Madera, Calif. / Redwood HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyler Cash",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Westlake Village, Calif. / Oak Park HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Lalo Barbieri",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "São Paulo, Brazil / Weston HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Murdin",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Lafayette, Calif. / Acalanes HS",
+      "previousSchool": "Cal Poly"
+    },
+    {
+      "name": "Owen Helm",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "San Jose, Calif. / Pioneer HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Zubak",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Corona, Calif. / Santiago HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Nishimoto",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Los Alamitos, Calif. / Los Alamitos HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Oren Stuppel",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Los Angeles, Calif. / Palisades Charter HS",
+      "previousSchool": "Cal Poly"
+    },
+    {
+      "name": "Woody Brown",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Mercer Island, Wash. / Mercer Island HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Gavin Carlson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Hamel, Minn. / Barca Residency Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Dunbar",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Long Beach, Calif. / LA Galaxy Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Aghaian",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Huntington Beach, Calif. / Sage Hill HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Kelham Wolf",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Santa Barbara, Calif. / Santa Barbara Senior HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Richard Hoang",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Temple City, Calif. / Temple City HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Cael McElderry",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Los Alamitos, Calif. / Los Alamitos HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Sagar Patel",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Powell, Ohio / Olentangy Liberty HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Tito Nichols",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Milton, Mass. / Dexter Southfield School",
+      "previousSchool": null
+    }
+  ]
+}

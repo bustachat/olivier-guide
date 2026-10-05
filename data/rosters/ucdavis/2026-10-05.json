@@ -1,0 +1,236 @@
+{
+  "schoolId": "ucdavis",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://ucdavisaggies.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Mekhai Wilson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Jr.",
+      "hometown": "Fontana, Calif. / Bonita",
+      "previousSchool": null
+    },
+    {
+      "name": "Talin Morgan",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Fr.",
+      "hometown": "Huntington Beach, Calif. / Servite",
+      "previousSchool": null
+    },
+    {
+      "name": "Gunner Parker",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "San Diego, Calif. / Steele Canyon",
+      "previousSchool": null
+    },
+    {
+      "name": "Tallyn Lord",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Seattle, Wash. / Shorewood",
+      "previousSchool": null
+    },
+    {
+      "name": "Joshua Gault",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Clovis, Calif. / Clovis North",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Haggerty",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "R-Jr.",
+      "hometown": "Los Gatos, Calif. / Archbishop Mitty",
+      "previousSchool": null
+    },
+    {
+      "name": "Declan Horio",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Honolulu, Hawai'i / Punahou School",
+      "previousSchool": null
+    },
+    {
+      "name": "Tristan Wouters",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Templeton, Calif. / Mission College Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Demetrius Egorerua",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "San Jose, Calif. / Abraham Lincoln",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicco Garzino",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Mountain View, Calif. / Mountain View",
+      "previousSchool": null
+    },
+    {
+      "name": "Rafael Matiello",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "São Paulo, Brazil / NSU University School",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Orosco",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "San Diego, Calif. / Del Norte",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Castagnola",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "San Diego, Calif. / La Jolla Country Day",
+      "previousSchool": null
+    },
+    {
+      "name": "Ensio Sardans",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "R-So.",
+      "hometown": "Corte Madera, Calif. / Redwood",
+      "previousSchool": null
+    },
+    {
+      "name": "Kasra Ghoddousi",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Fr.",
+      "hometown": "Irvine, Calif. / University",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabe Sanchez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-So.",
+      "hometown": "Vacaville, Calif. / Will C. Wood",
+      "previousSchool": "Sonoma State"
+    },
+    {
+      "name": "Cole Powell",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Jr.",
+      "hometown": "Frisco, Tex. / Rick Reedy",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Collins",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "San Jose, Calif. / Del Mar",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Elkins",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Sacramento, Calif. / Inderkum",
+      "previousSchool": "Gonzaga"
+    },
+    {
+      "name": "Jake Hobbs",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-So.",
+      "hometown": "San Diego, Calif. / Mt. Carmel",
+      "previousSchool": "George Washington"
+    },
+    {
+      "name": "Victor Ogieriakhi",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Gilroy, Calif. / Christopher",
+      "previousSchool": null
+    },
+    {
+      "name": "Nami Banks",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Watsonville, Calif. / Aptos",
+      "previousSchool": null
+    },
+    {
+      "name": "Caelan Kellett",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Reno, Nev. / Galena",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Bulloch",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Chula Vista, Calif. / Mater Dei Catholic",
+      "previousSchool": null
+    },
+    {
+      "name": "Ronaldo Melgoza",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Woodland, Calif. / Pioneer",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Chacing",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "So.",
+      "hometown": "Sacramento, Calif. / C.K. McClatchy",
+      "previousSchool": "Cosumnes River"
+    },
+    {
+      "name": "Cole McLemore",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-So.",
+      "hometown": "Erie, Colo. / Prospect Ridge Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Kota Brown",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Campbell, Calif. / Westmont",
+      "previousSchool": null
+    }
+  ]
+}

@@ -198,8 +198,8 @@
   {
     "name": "TRAJ / a four-year trajectory typed by hand instead of taken from the section 14 table",
     "file": "data/acc.json",
-    "find": "the constraint is depth, not the recruiting route.\",\r\n      \"trajectory\": [\r\n        {\r\n          \"year\": 2027,\r\n          \"yr_label\": \"Yr 1 (Fr.)\",\r\n          \"pct\": 15,",
-    "replace": "the constraint is depth, not the recruiting route.\",\r\n      \"trajectory\": [\r\n        {\r\n          \"year\": 2027,\r\n          \"yr_label\": \"Yr 1 (Fr.)\",\r\n          \"pct\": 30,",
+    "find": "and are not counted here.\",\r\n      \"trajectory\": [\r\n        {\r\n          \"year\": 2027,\r\n          \"yr_label\": \"Yr 1 (Fr.)\",\r\n          \"pct\": 15,",
+    "replace": "and are not counted here.\",\r\n      \"trajectory\": [\r\n        {\r\n          \"year\": 2027,\r\n          \"yr_label\": \"Yr 1 (Fr.)\",\r\n          \"pct\": 30,",
     "expect": "TRAJ"
   },
   {

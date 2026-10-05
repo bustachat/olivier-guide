@@ -1,0 +1,214 @@
+{
+  "schoolId": "oregonstate",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://osubeavers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "players": [
+    {
+      "name": "James Romero",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Whittier, Calif. / La Serna HS",
+      "previousSchool": null
+    },
+    {
+      "name": "John Nicolson",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "San Mateo, Calif. / San Mateo HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Martinez",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Alicante, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Henry Blake",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Gig Harbor, Wash. / Gig Harbor HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Oriol Vidal",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Terrassa, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Mark Wieder",
+      "position": "D",
+      "class": "R-Jr.",
+      "hometown": "Tarzana, Calif. / Calabasas HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Zapien",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "San Diego, Calif. / San Marcos HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Eisenberg",
+      "position": "F",
+      "class": "R-Fr.",
+      "hometown": "Portland, Ore. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Rodriguez",
+      "position": "MF",
+      "class": "R-So.",
+      "hometown": "Torrance, Calif. / California Connections Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Wyatt Borso",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Aurora, Ill. / Meters Valley HS",
+      "previousSchool": "Notre Dame"
+    },
+    {
+      "name": "Tim Hoffman",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Hamburg, Germany /",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Marquez",
+      "position": "F",
+      "class": "R-So.",
+      "hometown": "Huntsville, Ala. / ASU Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Milo Wray",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Portland, Ore. / Baker Web Academy",
+      "previousSchool": "James Madison"
+    },
+    {
+      "name": "Nicolas Pietrantonio",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Montreal, Quebec / Laval Senior Academy",
+      "previousSchool": "South Florida"
+    },
+    {
+      "name": "Michael Nesci",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Chicago, Ill. /",
+      "previousSchool": "Indiana"
+    },
+    {
+      "name": "Rocky Wells",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Spokane, Wash.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joan Ruiz",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Valencia, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Hernandez Parra",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Antioch, Calif. /",
+      "previousSchool": null
+    },
+    {
+      "name": "John Koutelieris",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Bothell, Wash / North Creek HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Tommaso Ricordi",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Milan, Italy /",
+      "previousSchool": null
+    },
+    {
+      "name": "Evan Carlock",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "St. Louis, Mo. / Elkhorn Options Charter School",
+      "previousSchool": null
+    },
+    {
+      "name": "Chris Avila",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Austin, Texas /",
+      "previousSchool": null
+    },
+    {
+      "name": "Gonzalo Aranaz",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Las Rozas, Spain / Colegio punta Galea las rozas",
+      "previousSchool": null
+    },
+    {
+      "name": "Sava Catlett",
+      "position": "D",
+      "class": "R-So.",
+      "hometown": "Wasilla, Alaska / Shattuck St. Mary's",
+      "previousSchool": null
+    },
+    {
+      "name": "Taylor Rogers",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Albuquerque, N.M. / Volcano Vista HS",
+      "previousSchool": "Utah Tech"
+    },
+    {
+      "name": "Justin Stewart",
+      "position": "GK",
+      "class": "R-Jr.",
+      "hometown": "Denton, Texas / Texas Connections Academy",
+      "previousSchool": "Western Oregon"
+    },
+    {
+      "name": "Mason Dimitrijevic",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Orange County, Calif. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Paul Fecteau",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Bend, Ore. / Summit HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Gavin Wolff",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Houston, Texas / Vandegrift Highschoo",
+      "previousSchool": null
+    }
+  ]
+}

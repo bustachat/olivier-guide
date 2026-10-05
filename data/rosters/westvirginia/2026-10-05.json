@@ -1,0 +1,222 @@
+{
+  "schoolId": "westvirginia",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://wvusports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "players": [
+    {
+      "name": "Toby Mawer",
+      "position": "GK",
+      "class": "R-So.",
+      "hometown": "Bath, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Harry Hogben",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Teynham, England",
+      "previousSchool": "Missouri State"
+    },
+    {
+      "name": "Aurélien Cormier",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Quimper, France",
+      "previousSchool": "Paotred Dispount Ergué-Gabéric"
+    },
+    {
+      "name": "Tristan Pusztahegyi",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Kitchener, Ontario, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Nacho Martinez",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Posadas, Misiones, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Thijs Veldhorst",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Nijmegen, Netherlands",
+      "previousSchool": "Montgomery College"
+    },
+    {
+      "name": "Kanta Ishii",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Tokyo, Japan",
+      "previousSchool": "Cowley College"
+    },
+    {
+      "name": "Tyler Londono Zapata",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Toronto, Ontario, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Pablo Pozos",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Wingate"
+    },
+    {
+      "name": "Julen Recalde",
+      "position": "F",
+      "class": "So.",
+      "hometown": "San Sebastián, Spain",
+      "previousSchool": "WVU Tech"
+    },
+    {
+      "name": "Joshua Dudock",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Hamburg, Germany",
+      "previousSchool": "Bremer SV"
+    },
+    {
+      "name": "Tyler Bush",
+      "position": "D",
+      "class": "So.",
+      "hometown": "North Fort Myers, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Blank",
+      "position": "D",
+      "class": "R-Jr.",
+      "hometown": "Holbrook, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brayden Macomber",
+      "position": "MF",
+      "class": "R-Fr.",
+      "hometown": "Richmond, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Jones",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Surrey, British Columbia, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Redenfors",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Varberg, Sweden",
+      "previousSchool": "Pitt"
+    },
+    {
+      "name": "Kendall Starks",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Crown Point, Ind.",
+      "previousSchool": "Colorado Rapids"
+    },
+    {
+      "name": "Braedon Smith",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "New York, N.Y.",
+      "previousSchool": "Syracuse"
+    },
+    {
+      "name": "Thomas Bowe",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Naples, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Scheer",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Charlotte, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Grafton Kahl",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Richmond, Va.",
+      "previousSchool": "Richmond United"
+    },
+    {
+      "name": "Lucas White",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Kensington, Md.",
+      "previousSchool": "Bethesda SC"
+    },
+    {
+      "name": "Civan De Jesus Ferreira",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Berlin, Germany",
+      "previousSchool": "Loyola Marymount"
+    },
+    {
+      "name": "Sammie Walker",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Baltimore, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Burke",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Durham, N.C.",
+      "previousSchool": null,
+      "positionAsListed": "MF/D"
+    },
+    {
+      "name": "Michael Marino",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Branchburg, N.J.",
+      "previousSchool": "MLS Next TSF Academy"
+    },
+    {
+      "name": "Mark Chust",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Valencia, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Alvarez",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Seattle, Wash.",
+      "previousSchool": "Seattle Sounders FC"
+    },
+    {
+      "name": "Chase Collins",
+      "position": "GK",
+      "class": "R-So.",
+      "hometown": "Harrisburg, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Birtwistle",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Singapore",
+      "previousSchool": "SV Wacker Burghausen"
+    }
+  ]
+}

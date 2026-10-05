@@ -1,0 +1,270 @@
+{
+  "schoolId": "bellarmine",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.bellarmine.edu/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 37,
+  "players": [
+    {
+      "name": "Justin Glasco",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Georgetown, DE",
+      "previousSchool": null
+    },
+    {
+      "name": "Tudor Iordan",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Laval, Quebec, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Miles Sasine",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Atlanta, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Colin Mackey",
+      "position": "MF",
+      "class": "R-Sr.",
+      "hometown": "Indianapolis, IN",
+      "previousSchool": "DePaul University"
+    },
+    {
+      "name": "Gavin Crowe",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Marietta, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Brady Smith",
+      "position": "D",
+      "class": "So.",
+      "hometown": "St. Louis, MO",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Krall",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Hendersonville, TN",
+      "previousSchool": "Lindenwood University"
+    },
+    {
+      "name": "Bartosz Wojda",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Chicago, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Hueston Gardner",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Louisville, KY",
+      "previousSchool": null
+    },
+    {
+      "name": "Teddy Franke",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Leawood, KS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Jacobs",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Bay Village, OH",
+      "previousSchool": "California State University, Dominguez Hills"
+    },
+    {
+      "name": "Johan Nissen-Lie",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Asker, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Tate McCrery",
+      "position": "MF",
+      "class": "R-Sr.",
+      "hometown": "Louisville, KY",
+      "previousSchool": null
+    },
+    {
+      "name": "Sawyer Gribble",
+      "position": "D",
+      "class": "R-So.",
+      "hometown": "Versailles, KY",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Jones",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Carmel, IN",
+      "previousSchool": null
+    },
+    {
+      "name": "Reed Newman",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Louisville, KY",
+      "previousSchool": null
+    },
+    {
+      "name": "David Skorupan",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Stari Banovci, Serbia",
+      "previousSchool": null
+    },
+    {
+      "name": "James Gardev",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Lexington, KY",
+      "previousSchool": "Radford University"
+    },
+    {
+      "name": "Max Murphy",
+      "position": "MF",
+      "class": "R-Fr.",
+      "hometown": "Cincinnati, OH",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Raulston",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Knoxville, TN",
+      "previousSchool": "Berry College"
+    },
+    {
+      "name": "Kanata Taira",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Kitamoto, Saitama, Japan",
+      "previousSchool": "University of Hawai'i at Hilo"
+    },
+    {
+      "name": "Karson Lang",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Cincinnati, OH",
+      "previousSchool": null
+    },
+    {
+      "name": "Jimmy McCamey III",
+      "position": "MF",
+      "class": "R-So.",
+      "hometown": "Cataula, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Ezekiel Opie",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Nashville, TN",
+      "previousSchool": "University of Tennessee Southern"
+    },
+    {
+      "name": "Will Hunter",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Leawood, KS",
+      "previousSchool": null
+    },
+    {
+      "name": "Sawyer Trowel",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Lexington, KY",
+      "previousSchool": null
+    },
+    {
+      "name": "Declan Walters",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Cleveland, OH",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Safly",
+      "position": "D",
+      "class": "R-Jr.",
+      "hometown": "Lenexa, KS",
+      "previousSchool": "University of Missouri-Kansas City"
+    },
+    {
+      "name": "James Torre",
+      "position": "D",
+      "class": "R-Fr.",
+      "hometown": "Chandler, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Knox",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "St. Louis, MO",
+      "previousSchool": null
+    },
+    {
+      "name": "Cole Seraphine",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Louisville, KY",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicholas Niebauer",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Butler, PA",
+      "previousSchool": null
+    },
+    {
+      "name": "Connor Dailey",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Franklin, TN",
+      "previousSchool": null
+    },
+    {
+      "name": "Benny Howard",
+      "position": "GK",
+      "class": "R-So.",
+      "hometown": "Louisville, KY",
+      "previousSchool": "Hanover College"
+    },
+    {
+      "name": "Martin Cadagan",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Santiago, Chile",
+      "previousSchool": null
+    },
+    {
+      "name": "Alessandro Rincon",
+      "position": "MF",
+      "class": "R-So.",
+      "hometown": "Bradenton, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Boyd",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "West Chester, OH",
+      "previousSchool": null
+    }
+  ]
+}

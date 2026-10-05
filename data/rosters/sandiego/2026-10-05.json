@@ -1,0 +1,221 @@
+{
+  "schoolId": "sandiego",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://usdtoreros.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "players": [
+    {
+      "name": "Artur Rojas",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "São José dos Campos, Sao Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Webster",
+      "position": "GK",
+      "class": "Gr.",
+      "hometown": "Las Vegas, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucca Adams",
+      "position": "GK",
+      "class": "R-So.",
+      "hometown": "São Paulo, Brazil",
+      "previousSchool": "UCLA"
+    },
+    {
+      "name": "Volodymyr Kubrakov",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Luhansk, Ukraine",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucien Wa Bwanda",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Amsterdam, The Netherlands",
+      "previousSchool": "Cal State Fullerton / Indiana Wesleyan"
+    },
+    {
+      "name": "Conner Gardenhour",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "North Ogden, UT",
+      "previousSchool": null
+    },
+    {
+      "name": "Tobias Polz",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Graz, Austria",
+      "previousSchool": "University of Derby"
+    },
+    {
+      "name": "Oliver Rhoades",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Huntington Beach, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Taj Eagleston",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Hermosa Beach, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Steven Ramirez",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Garden Grove, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Samy Kanaan",
+      "position": "F",
+      "class": "Gr.",
+      "hometown": "San Diego, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Devin Zachry",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Mission Viejo, CA",
+      "previousSchool": "Fairfield"
+    },
+    {
+      "name": "Iain Wagner",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "San Diego, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Matteo Salcedo",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Dana Point, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Issak Luna",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Yuma, AZ",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaxson Findlay",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Henderson, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan McNaughton",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Cardiff-by-the-Sea, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Ricky Moreno",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "San Diego, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Jojo Adamitis",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Glen Carbon, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Pena",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "San Marcos, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Elijah Zelkind",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "San Diego, CA",
+      "previousSchool": "Missouri State"
+    },
+    {
+      "name": "Noah James",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Poway, CA",
+      "previousSchool": "Western Michigan"
+    },
+    {
+      "name": "Luca Fava",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Yorba Linda, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Wyatt Marin",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "London, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Tony Ramirez",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Escondido, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyler Severs",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Bothell, WA",
+      "previousSchool": null
+    },
+    {
+      "name": "Devin Dillon",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Draper, UT",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Arndt",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Cologne, Germany",
+      "previousSchool": "Rider"
+    },
+    {
+      "name": "Nick Axelson",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Encinitas, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Mathias Bauer",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Oberstdorf, Germany",
+      "previousSchool": null
+    }
+  ]
+}

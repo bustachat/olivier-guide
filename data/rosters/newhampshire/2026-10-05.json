@@ -1,0 +1,207 @@
+{
+  "schoolId": "newhampshire",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://unhwildcats.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "players": [
+    {
+      "name": "Jochum Magnússon",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Reykjavík, Iceland / Víkingur Reykjavík",
+      "previousSchool": "Reykjavík, Iceland / Víkingur Reykjavík"
+    },
+    {
+      "name": "Max Voigt",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Oberkotzau, Germany / VFB Stuttgart",
+      "previousSchool": "Oberkotzau, Germany / VFB Stuttgart"
+    },
+    {
+      "name": "Kohsuke Fukodome",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Chiba, Japan / Cowley College",
+      "previousSchool": "Chiba, Japan / Cowley College"
+    },
+    {
+      "name": "Andrea Zanata",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Romano d'Ezzelino, Italy / Calcio Schio",
+      "previousSchool": "Romano d'Ezzelino, Italy / Calcio Schio"
+    },
+    {
+      "name": "Mikael Pulkkinen",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Helsinki, Finland / University of Central Florida",
+      "previousSchool": "Helsinki, Finland / University of Central Florida"
+    },
+    {
+      "name": "Lukas Kuca",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Prague, Czech Republic / Radford University",
+      "previousSchool": "Prague, Czech Republic / Radford University"
+    },
+    {
+      "name": "Xahvi DeRoza",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Warwick, Bermuda / Woodstock Academy",
+      "previousSchool": "Warwick, Bermuda / Woodstock Academy"
+    },
+    {
+      "name": "Daniel Firek",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Mississauga, Ontario / Lipscomb University",
+      "previousSchool": "Mississauga, Ontario / Lipscomb University"
+    },
+    {
+      "name": "David Davila",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Elkhart, Ind. / University of Southern Indiana",
+      "previousSchool": "Elkhart, Ind. / University of Southern Indiana"
+    },
+    {
+      "name": "Ryo Miyata",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Yokohama, Japan / Murray State College",
+      "previousSchool": "Yokohama, Japan / Murray State College"
+    },
+    {
+      "name": "Miguel Soto Gonzalez",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Villanueva de la Cañada, Spain / Queens College",
+      "previousSchool": "Villanueva de la Cañada, Spain / Queens College"
+    },
+    {
+      "name": "Laurin Preuss",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Kirchheim Teck, Germany / VfB Stuttgart",
+      "previousSchool": "Kirchheim Teck, Germany / VfB Stuttgart"
+    },
+    {
+      "name": "Graham Dougald",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Charlottesville, Va. / Mount St. Mary’s",
+      "previousSchool": "Charlottesville, Va. / Mount St. Mary’s"
+    },
+    {
+      "name": "Ethan Vermillion",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Frankfort, Ky. / IU Indy",
+      "previousSchool": "Frankfort, Ky. / IU Indy"
+    },
+    {
+      "name": "Rayyan Firdawcy",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Fairfax, Va. / D.C. United Academy",
+      "previousSchool": "Fairfax, Va. / D.C. United Academy"
+    },
+    {
+      "name": "Arturo McConnochie",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Watchung, N.J. / Monmouth University",
+      "previousSchool": "Watchung, N.J. / Monmouth University"
+    },
+    {
+      "name": "Tyson Amoo-Mensah",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Lisle, Ill. / DePaul University",
+      "previousSchool": "Lisle, Ill. / DePaul University"
+    },
+    {
+      "name": "Gershom Matimano",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Manchester, N.H. / Seacoast United",
+      "previousSchool": "Manchester, N.H. / Seacoast United"
+    },
+    {
+      "name": "Reed Cash",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Hampton Falls, N.H. / Seacoast United",
+      "previousSchool": "Hampton Falls, N.H. / Seacoast United"
+    },
+    {
+      "name": "Romeo Corino",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Monaco / Trinity University",
+      "previousSchool": "Monaco / Trinity University"
+    },
+    {
+      "name": "Owen Fadden",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Leicester, Mass. / Intercontinental Football Academy of New England",
+      "previousSchool": "Leicester, Mass. / Intercontinental Football Academy of New England"
+    },
+    {
+      "name": "Quinn Silva",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Greenwich, R.I. / NEFC",
+      "previousSchool": "Greenwich, R.I. / NEFC"
+    },
+    {
+      "name": "Felipe Diniz",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Weston, Fla. / Weston FC",
+      "previousSchool": "Weston, Fla. / Weston FC"
+    },
+    {
+      "name": "Cabot McLaren",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Sugar Hill, N.H. / Seacoast United",
+      "previousSchool": "Sugar Hill, N.H. / Seacoast United"
+    },
+    {
+      "name": "Augie Hoelscher",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Jackson, Wyo. / Unionistas De Salamanca",
+      "previousSchool": "Jackson, Wyo. / Unionistas De Salamanca"
+    },
+    {
+      "name": "Aaron Choi",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Stow, Mass. / Boston Bolts",
+      "previousSchool": "Stow, Mass. / Boston Bolts"
+    },
+    {
+      "name": "Sean Cory",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Wrentham, Mass. / New England Futbol Club",
+      "previousSchool": "Wrentham, Mass. / New England Futbol Club"
+    },
+    {
+      "name": "Lucas Currier",
+      "position": "OTHER",
+      "class": "Gr.",
+      "hometown": "Newfields, N.H. / Northeast Passage Power Soccer",
+      "previousSchool": "Newfields, N.H. / Northeast Passage Power Soccer"
+    }
+  ]
+}

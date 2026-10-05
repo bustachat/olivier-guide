@@ -1,0 +1,215 @@
+{
+  "schoolId": "virginiatech",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://hokiesports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "players": [
+    {
+      "name": "Cameron Farrell",
+      "position": "GK",
+      "class": "SOPHOMORE",
+      "hometown": "Leesburg, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Ledin",
+      "position": "GK",
+      "class": "JUNIOR",
+      "hometown": "Stockholm, Sweden",
+      "previousSchool": "Wofford"
+    },
+    {
+      "name": "Amir Ariely",
+      "position": "D",
+      "class": "SOPHOMORE",
+      "hometown": "Barnsley, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Page",
+      "position": "D",
+      "class": "SOPHOMORE",
+      "hometown": "Brentwood, United Kingdom",
+      "previousSchool": null
+    },
+    {
+      "name": "Beltran Alvarez",
+      "position": "MF",
+      "class": "JUNIOR",
+      "hometown": "Buenos Aires, Argentina",
+      "previousSchool": "FGCU"
+    },
+    {
+      "name": "Yanis Belatrache",
+      "position": "MF",
+      "class": "SENIOR",
+      "hometown": "Paris, France",
+      "previousSchool": "UCF"
+    },
+    {
+      "name": "Mathias Yohannes",
+      "position": "MF",
+      "class": "REDSHIRT SENIOR",
+      "hometown": "South Riding, Va.",
+      "previousSchool": "Kentucky"
+    },
+    {
+      "name": "Cassander Krane Dreyer",
+      "position": "D",
+      "class": "FRESHMAN",
+      "hometown": "Bodo, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Vazquez",
+      "position": "F",
+      "class": "REDSHIRT JUNIOR",
+      "hometown": "Boca Raton, Fla.",
+      "previousSchool": "Louisville"
+    },
+    {
+      "name": "Alex Perez",
+      "position": "F",
+      "class": "JUNIOR",
+      "hometown": "Las Vegas, Nev.",
+      "previousSchool": null,
+      "positionAsListed": "Forward/Midfielder"
+    },
+    {
+      "name": "Ian Marcano",
+      "position": "MF",
+      "class": "JUNIOR",
+      "hometown": "Gaithersburg, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "David Skovborg-Andersen",
+      "position": "MF",
+      "class": "FRESHMAN",
+      "hometown": "Copenhagen, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Parker Polk",
+      "position": "MF",
+      "class": "FRESHMAN",
+      "hometown": "Charlottesville, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Dagur Traustason",
+      "position": "F",
+      "class": "SOPHOMORE",
+      "hometown": "Reykjavik, Iceland",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Stavrou",
+      "position": "D",
+      "class": "FRESHMAN",
+      "hometown": "Leesburg, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Hamel",
+      "position": "MF",
+      "class": "FRESHMAN",
+      "hometown": "McLean, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas Kleinpenning",
+      "position": "MF",
+      "class": "GRADUATE STUDENT",
+      "hometown": "Ulft, Netherlands",
+      "previousSchool": "Young Harris"
+    },
+    {
+      "name": "Chuy Moreno",
+      "position": "D",
+      "class": "FRESHMAN",
+      "hometown": "Pearland, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Alvaro Ruiz-Mateos",
+      "position": "F",
+      "class": "SOPHOMORE",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Jakub Porada",
+      "position": "F",
+      "class": "FRESHMAN",
+      "hometown": "Ashburn, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Noe Uwimana",
+      "position": "F",
+      "class": "SENIOR",
+      "hometown": "Austin, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Tito Peralta",
+      "position": "D",
+      "class": "SOPHOMORE",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Mehdi Kettani",
+      "position": "MF",
+      "class": "FRESHMAN",
+      "hometown": "Casablanca, Morocco",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaden Chan Tack",
+      "position": "D",
+      "class": "FRESHMAN",
+      "hometown": "Denver, Colo.",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Dauzier",
+      "position": "GK",
+      "class": "REDSHIRT SOPHOMORE",
+      "hometown": "Montclair, N.J.",
+      "previousSchool": "Temple"
+    },
+    {
+      "name": "Henry Blackledge",
+      "position": "GK",
+      "class": "FRESHMAN",
+      "hometown": "Queensland, Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "Eduardo Cornejo",
+      "position": "F",
+      "class": "JUNIOR",
+      "hometown": "Homestead, Fla.",
+      "previousSchool": "Miami-Dade College"
+    },
+    {
+      "name": "Landan Grange",
+      "position": "MF",
+      "class": "SOPHOMORE",
+      "hometown": "Chantilly, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Freddy Ferguson",
+      "position": "MF",
+      "class": "JUNIOR",
+      "hometown": "Ashburn, Va.",
+      "previousSchool": "Houston Christian/VMI"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schoolId": "northflorida",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://unfospreys.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 31,
+  "players": [
+    {
+      "name": "Iu Pentinat",
+      "position": "GK",
+      "class": "5th",
+      "hometown": "Reus, Spain",
+      "previousSchool": "Coastal Carolina"
+    },
+    {
+      "name": "Akash Poola",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Pleasanton, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luciano Natoli",
+      "position": "GK",
+      "class": "5th",
+      "hometown": "Miami Beach, Fla.",
+      "previousSchool": "UCF"
+    },
+    {
+      "name": "Tyler Prebenda",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Orlando, Fla.",
+      "previousSchool": "Maryland"
+    },
+    {
+      "name": "Alfie Mattocks",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Norwich, England",
+      "previousSchool": "Barton College"
+    },
+    {
+      "name": "Rafa Rios",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Burriana, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Paul Schacherer",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Ormes, France",
+      "previousSchool": "IUT du Creusot"
+    },
+    {
+      "name": "Cameron Gray",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Hull, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Kaiss Mansouri",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Reims, France",
+      "previousSchool": "Limestone"
+    },
+    {
+      "name": "Mark Romano",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Ponte Vedra Beach, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Geraldo Neto",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": "Limestone"
+    },
+    {
+      "name": "Anton Khelil",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Saint Cyprien, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Monde",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Paris, France",
+      "previousSchool": "EFREI Paris"
+    },
+    {
+      "name": "Owen Lewis",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Cape Coral, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Robert Calazans",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Jacksonville, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brian McManus Jr.",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Fort Walton Beach, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryuta Morioka",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Kyoto, Japan",
+      "previousSchool": "Eastern Florida"
+    },
+    {
+      "name": "Omar Trto",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Jacksonville, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emir Trto",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Jacksonville, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyler Tilden",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Jacksonville, Fla.",
+      "previousSchool": "Georgia Southwestern"
+    },
+    {
+      "name": "Mikhail Keise",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Coral Springs, Fla.",
+      "previousSchool": "South Florida"
+    },
+    {
+      "name": "Kadin Sadiq",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Orlando, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Milan Ales",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Le Cres, France",
+      "previousSchool": "Emory & Henry"
+    },
+    {
+      "name": "Sasha Maric",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Jacksonville, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolas Tafurt",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Jacksonville, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Germain Kapela",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Reims, France",
+      "previousSchool": "IUT de Orleans"
+    },
+    {
+      "name": "Yurok Cho",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Seoul, South Korea",
+      "previousSchool": "Iowa Lakes Community College / Eastern Florida"
+    },
+    {
+      "name": "Austin Gains",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Fort Lauderdale, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tarik Freire",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Rio de Janeiro, Brazil",
+      "previousSchool": "Eastern Florida"
+    },
+    {
+      "name": "Max Maneke",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Paris, France",
+      "previousSchool": "Marshall"
+    },
+    {
+      "name": "Ugo Bertelli",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Marseille, France",
+      "previousSchool": "Campbell / Virginia Tech"
+    }
+  ]
+}

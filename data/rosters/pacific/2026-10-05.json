@@ -1,0 +1,235 @@
+{
+  "schoolId": "pacific",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://pacifictigers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 32,
+  "players": [
+    {
+      "name": "Alejandro Caracheo Luna",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Stockton, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mateus Ruiz-Hurst",
+      "position": "GK",
+      "class": "Gr.",
+      "hometown": "San Jose, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "James Andrew",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Davis, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joaquin d'Escoto",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Turlock, Calif.",
+      "previousSchool": "Southern Indiana"
+    },
+    {
+      "name": "Muharif Abdul-Kadir",
+      "position": "D",
+      "class": "R-So.",
+      "hometown": "Accra, Ghana",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Montero",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Orangevale, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Josephat Yangyuoru",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Bolgatanga, Ghana",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Govea",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Los Baños, Calif.",
+      "previousSchool": "Sacramento State"
+    },
+    {
+      "name": "Xavier Cisneros",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Turlock, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luca Baltzer",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Oberstenfeld, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Massimo Erfani",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "San Diego, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ramiro Corrales",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Los Banos, Calif.",
+      "previousSchool": "Cal State Monterey Bay"
+    },
+    {
+      "name": "Enock Owusu",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Accra, Ghana",
+      "previousSchool": "Bethel"
+    },
+    {
+      "name": "Erick Luna Ramirez",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "San Jose, Calif.",
+      "previousSchool": "Evergreen Valley College"
+    },
+    {
+      "name": "Raphael Odubanjo",
+      "position": "D",
+      "class": "So.",
+      "hometown": "North Andover, Mass.",
+      "previousSchool": "Genesee Community College"
+    },
+    {
+      "name": "Montgomery Carey",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Mountain House, Calif.",
+      "previousSchool": "Sacramento State"
+    },
+    {
+      "name": "Hadar Moskowitz",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Encino, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Edwin Moreno",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Salinas, Calif.",
+      "previousSchool": "Hartnell College"
+    },
+    {
+      "name": "Harrison Chapura",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Moultrie, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Marko Malinovic",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Scottsdale, Ariz.",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Maldonado",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Tulare, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Martinez",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "San Diego, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ionas Papaioannou",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Athens, Greece",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Do Carmo",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Wolfeboro, New Hampshire",
+      "previousSchool": null
+    },
+    {
+      "name": "Connor Louden",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Gig Harbor, Wash.",
+      "previousSchool": null
+    },
+    {
+      "name": "Caleb Cliburn",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Stockton, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Fateh Singh",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Fresno, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Odipo",
+      "position": "D",
+      "class": "R-So.",
+      "hometown": "Elk Grove, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Maxamus Miller",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Honolulu, Hawaii",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Lomeli",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Seaside, Calif.",
+      "previousSchool": "Hartnell College"
+    },
+    {
+      "name": "Daniel Szalai",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Mississauga, Ontario",
+      "previousSchool": "North Central College"
+    },
+    {
+      "name": "Dimitri Kapitsas",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Torrance, Calif.",
+      "previousSchool": null
+    }
+  ]
+}

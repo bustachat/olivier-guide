@@ -1,0 +1,209 @@
+{
+  "schoolId": "bostoncollege",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://bceagles.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "players": [
+    {
+      "name": "Andrej Borak",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Belgrade, Serbia / FK Vojvodina",
+      "previousSchool": "Belgrade, Serbia / FK Vojvodina"
+    },
+    {
+      "name": "Christian Bejar",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Lawrence, Mass. / Brooks School",
+      "previousSchool": "Lawrence, Mass. / Brooks School"
+    },
+    {
+      "name": "Moritz Gundelach",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Stockstadt, Germany / FC Nuremberg",
+      "previousSchool": "Stockstadt, Germany / FC Nuremberg"
+    },
+    {
+      "name": "Ismail Dia",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Lausanne, Switzerland / Siena",
+      "previousSchool": "Lausanne, Switzerland / Siena"
+    },
+    {
+      "name": "Jack Burkhardt",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Sutton, Mass. / Revolution Academy",
+      "previousSchool": "Sutton, Mass. / Revolution Academy",
+      "positionAsListed": "M/D"
+    },
+    {
+      "name": "Michael Asare",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Kumasi, Ghana / Rush Select Academy",
+      "previousSchool": "Kumasi, Ghana / Rush Select Academy"
+    },
+    {
+      "name": "Connor Gibson",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Newton, Mass. / Boston Bolts",
+      "previousSchool": "Newton, Mass. / Boston Bolts"
+    },
+    {
+      "name": "Andres Siso",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Miami, Fla. / AD Union Adarve",
+      "previousSchool": "Miami, Fla. / AD Union Adarve"
+    },
+    {
+      "name": "Dylan Mafong",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "San Diego, Calif. / Albion SC",
+      "previousSchool": "San Diego, Calif. / Albion SC"
+    },
+    {
+      "name": "Leo Seidel",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Lexington, Mass. / Lexington",
+      "previousSchool": "Lexington, Mass. / Lexington"
+    },
+    {
+      "name": "Isaac Bakwira",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Kampala, Uganda / Santa Barbara Soccer Club",
+      "previousSchool": "Kampala, Uganda / Santa Barbara Soccer Club"
+    },
+    {
+      "name": "Bryan Toro",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Revere, Mass. / IFA New England",
+      "previousSchool": "Revere, Mass. / IFA New England"
+    },
+    {
+      "name": "Russell Brown",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "New Orleans, La. / Christian Brothers",
+      "previousSchool": "New Orleans, La. / Christian Brothers"
+    },
+    {
+      "name": "Alexi Karalis",
+      "position": "MF",
+      "class": "R-Jr.",
+      "hometown": "Belmont, Mass. / Providence",
+      "previousSchool": "Belmont, Mass. / Providence",
+      "positionAsListed": "M/D"
+    },
+    {
+      "name": "Aiden Cauley",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "New York City, N.Y. / null",
+      "previousSchool": "New York City, N.Y. / null"
+    },
+    {
+      "name": "Jayson Quintanilla",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Durham, N.C. / North Carolina FC",
+      "previousSchool": "Durham, N.C. / North Carolina FC"
+    },
+    {
+      "name": "Ryan Scuro",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Haworth, N.J. / New York Red Bulls",
+      "previousSchool": "Haworth, N.J. / New York Red Bulls"
+    },
+    {
+      "name": "Charlie Pons",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Camden, Maine / Boston Bolts",
+      "previousSchool": "Camden, Maine / Boston Bolts"
+    },
+    {
+      "name": "Fynn Henze",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Hildesheim, Germany / Newroz Hildesheim",
+      "previousSchool": "Hildesheim, Germany / Newroz Hildesheim"
+    },
+    {
+      "name": "Devon Galluzzo",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Commack, N.Y. / Barca Academy AZ",
+      "previousSchool": "Commack, N.Y. / Barca Academy AZ"
+    },
+    {
+      "name": "Henry Wassarman",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Winchester, Mass. / Boston Bolts",
+      "previousSchool": "Winchester, Mass. / Boston Bolts"
+    },
+    {
+      "name": "Jonah Funk",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Wolfsburg, Germany / Eintracht Braunschweig U19",
+      "previousSchool": "Wolfsburg, Germany / Eintracht Braunschweig U19"
+    },
+    {
+      "name": "Watts Richmond",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Mill Valley, Calif. / Marin FC",
+      "previousSchool": "Mill Valley, Calif. / Marin FC"
+    },
+    {
+      "name": "Hudson Mbalire",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Mukono, Uganda / NEC FC",
+      "previousSchool": "Mukono, Uganda / NEC FC"
+    },
+    {
+      "name": "Mohamed Moustafa",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Cairo, Egypt / Al Ahly SC",
+      "previousSchool": "Cairo, Egypt / Al Ahly SC"
+    },
+    {
+      "name": "Bryce Copeland-Del Toro",
+      "position": "GK",
+      "class": "Gr.",
+      "hometown": "Coral Springs, Fla. / Florida Gulf Coast",
+      "previousSchool": "Coral Springs, Fla. / Florida Gulf Coast"
+    },
+    {
+      "name": "Aidan Horan",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Burlingame, Calif. / WSC Crush",
+      "previousSchool": "Burlingame, Calif. / WSC Crush"
+    },
+    {
+      "name": "Tin Vastic",
+      "position": "F",
+      "class": "Gr.",
+      "hometown": "Split, Croatia / Palm Beach Atlantic",
+      "previousSchool": "Split, Croatia / Palm Beach Atlantic"
+    }
+  ]
+}

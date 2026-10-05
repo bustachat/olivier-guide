@@ -1,0 +1,207 @@
+{
+  "schoolId": "stetson",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gohatters.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "players": [
+    {
+      "name": "Matthew McCall",
+      "position": "GK",
+      "class": "R-Jr.",
+      "hometown": "Orlando, FL",
+      "previousSchool": "Daytona State"
+    },
+    {
+      "name": "Murillo Mello",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Orlando, FL",
+      "previousSchool": "Orlando City"
+    },
+    {
+      "name": "Andre Casas",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Hollywood, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Weston Desoto",
+      "position": "D",
+      "class": "So.",
+      "hometown": "New Smyrna Beach, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Ross Appolon",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Montreal, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Xavier Manning",
+      "position": "D",
+      "class": "R-So.",
+      "hometown": "Halifax, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Benjamin Donato",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Fort Myers, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Afonso Conde",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Lisboa, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Valentin Fontaine",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Amiens, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Maurice Hauser",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Bruggen, Germany",
+      "previousSchool": "Coastal Carolina"
+    },
+    {
+      "name": "Zsombor Pall",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Nyíregyháza, Hungary",
+      "previousSchool": "Harcum College"
+    },
+    {
+      "name": "Leo Fraile",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Cuenca, Spain",
+      "previousSchool": "Albacete Balompié"
+    },
+    {
+      "name": "Ibrahima Keita",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Den Haag, Netherlands",
+      "previousSchool": "Manhattan College"
+    },
+    {
+      "name": "Daniel Makowem",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Wellington, New Zealand",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniele Mastroianni",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Montreal, Canada",
+      "previousSchool": "Hofstra"
+    },
+    {
+      "name": "Israel Daniels",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "New Smyrna Beach, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Avallone",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Winter Park, FL",
+      "previousSchool": "Liberty"
+    },
+    {
+      "name": "Adam Dring",
+      "position": "D",
+      "class": "So.",
+      "hometown": "London, England",
+      "previousSchool": "Saint Mary's"
+    },
+    {
+      "name": "Mauricio Restrepo",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Miami, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaxson Lee",
+      "position": "D",
+      "class": "R-So.",
+      "hometown": "Oklahoma City, OK",
+      "previousSchool": "Robert Morris"
+    },
+    {
+      "name": "Matthew Perez",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Boca Raton, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Reef Brain",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Isabela, Puerto Rico",
+      "previousSchool": null
+    },
+    {
+      "name": "Claver Nugent",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Portland, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "William Mills",
+      "position": "F",
+      "class": "R-Jr.",
+      "hometown": "Port Saint Lucie, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Blanco",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "New York City, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Arango",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Charlotte, NC",
+      "previousSchool": "Charlotte Independence"
+    },
+    {
+      "name": "Junior Essengue",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Paris, France",
+      "previousSchool": "Cosenza Calcio"
+    },
+    {
+      "name": "Desmond Bullard",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Charlotte, NC",
+      "previousSchool": "Presbyterian"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schoolId": "sacramentostate",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://hornetsports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "players": [
+    {
+      "name": "Lucas Bost",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Rocklin, Calif.",
+      "previousSchool": "Chico State"
+    },
+    {
+      "name": "Evan Battistessa",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Fair Oaks, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Castrence",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Rancho Cordova, Calif.",
+      "previousSchool": "Pleasant Grove HS"
+    },
+    {
+      "name": "Mohammed Aldulaimi",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Sacramento, Calif.",
+      "previousSchool": "American River College"
+    },
+    {
+      "name": "Nick Strangio",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Folsom, Calif.",
+      "previousSchool": "Saint Mary's"
+    },
+    {
+      "name": "Gio Ceja",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Merced, Calif.",
+      "previousSchool": "NC State"
+    },
+    {
+      "name": "Eli Reyneveld",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Modesto, Calif.",
+      "previousSchool": "Modesto JC"
+    },
+    {
+      "name": "Allbranly Gue",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Aquin, Haiti",
+      "previousSchool": "Spring Valley HS (Nev.)"
+    },
+    {
+      "name": "Jakub Kozlowski",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Swidwin, Poland",
+      "previousSchool": "Palomar College"
+    },
+    {
+      "name": "Hiroshi Yang",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Wheatland, Calif.",
+      "previousSchool": "Wheatland Union HS"
+    },
+    {
+      "name": "Sean Battistessa",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Fair Oaks, Calif.",
+      "previousSchool": "Kentucky"
+    },
+    {
+      "name": "David Sebastian Killpatrick",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Aptos, Calif.",
+      "previousSchool": "Aptos HS"
+    },
+    {
+      "name": "AJ Bengds",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Raleigh, N.C.",
+      "previousSchool": "UNC Asheville"
+    },
+    {
+      "name": "Henry Hedden",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Alamo, Calif.",
+      "previousSchool": "Monte Vista HS",
+      "positionAsListed": "MF/D"
+    },
+    {
+      "name": "Harrison Emert",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Des Moines, Wash.",
+      "previousSchool": "Highline College"
+    },
+    {
+      "name": "James Murillo",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Natomas, Calif.",
+      "previousSchool": "Folsom Lake College"
+    },
+    {
+      "name": "Collin McNairy",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Roseville, Calif.",
+      "previousSchool": "West Park HS"
+    },
+    {
+      "name": "Zach Looney",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Ceres, Calif.",
+      "previousSchool": "Pitman HS",
+      "positionAsListed": "MF/F"
+    },
+    {
+      "name": "Zac Giles",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Lincoln, Calif.",
+      "previousSchool": "Lincoln HS"
+    },
+    {
+      "name": "Mateus Romualdo",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Salt Lake City, Utah",
+      "previousSchool": "Snow College"
+    },
+    {
+      "name": "Cameron Martino",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Clovis, Calif.",
+      "previousSchool": "Clovis East HS",
+      "positionAsListed": "D/MF"
+    },
+    {
+      "name": "Ronan Rattigan",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Benicia, Calif.",
+      "previousSchool": "De La Salle HS",
+      "positionAsListed": "F/MF"
+    },
+    {
+      "name": "Damien Valeriano",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Plumas Lake, Calif.",
+      "previousSchool": "Del Oro HS"
+    },
+    {
+      "name": "Angad Singh",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Elk Grove, Calif.",
+      "previousSchool": "Elk Grove HS"
+    },
+    {
+      "name": "Adrian Alvarenga",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Sacramento, Calif.",
+      "previousSchool": "Sac Republic Academy",
+      "positionAsListed": "F/MF"
+    },
+    {
+      "name": "Samuel Fomin",
+      "position": "F",
+      "class": "So.",
+      "hometown": "San Ramon, Calif.",
+      "previousSchool": "California HS"
+    },
+    {
+      "name": "Jesus Magaña",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Cowiche, Wash.",
+      "previousSchool": "Western Oregon",
+      "positionAsListed": "F/MF"
+    },
+    {
+      "name": "Brian Tufino",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "San Luis Obispo, Calif.",
+      "previousSchool": "Taft College"
+    }
+  ]
+}

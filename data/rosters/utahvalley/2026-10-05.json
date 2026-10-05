@@ -1,0 +1,221 @@
+{
+  "schoolId": "utahvalley",
+  "schoolFile": "data/big-west.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gouvu.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "players": [
+    {
+      "name": "Kolby Sessions",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Holladay, Utah",
+      "previousSchool": "Saint Mary's (CA)"
+    },
+    {
+      "name": "Jeremie Kuelo",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Wuppertal, Germany",
+      "previousSchool": "Peninsula College"
+    },
+    {
+      "name": "Ashton Wheeler",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Draper, Utah",
+      "previousSchool": "City SC Utah"
+    },
+    {
+      "name": "Toke Amtrup",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Svendborg, Denmark",
+      "previousSchool": "Sfb-Oure FA/Saint Mary's (CA)"
+    },
+    {
+      "name": "Brayden Tester",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Colorado Springs, Colorado",
+      "previousSchool": "Wright State"
+    },
+    {
+      "name": "Dan McKay",
+      "position": "MF",
+      "class": "5th",
+      "hometown": "Wellington, New Zealand",
+      "previousSchool": "Wellington Phoenix"
+    },
+    {
+      "name": "Jose Luis Martin Montealegre",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Malaga, Spain",
+      "previousSchool": "CD Tiro Pichón"
+    },
+    {
+      "name": "Mason Abdella",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Puyallup, Wash.",
+      "previousSchool": "Highline College/Washington Premier FC"
+    },
+    {
+      "name": "Nil Grau",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Girona, Spain",
+      "previousSchool": "Girona FC"
+    },
+    {
+      "name": "Naime Odeh",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "West Haven, Utah",
+      "previousSchool": "La Roca FC"
+    },
+    {
+      "name": "Trevor Walk",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "South Jordan, Utah",
+      "previousSchool": "Utah Soccer Alliance"
+    },
+    {
+      "name": "Luca Wingaa Laursen",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Kastrup, Denmark",
+      "previousSchool": "FA 2000"
+    },
+    {
+      "name": "Edgar Correia",
+      "position": "D",
+      "class": "5th",
+      "hometown": "Familicão, Portugal",
+      "previousSchool": "Central Arkansas"
+    },
+    {
+      "name": "Max Palmer",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "South Jordan, Utah",
+      "previousSchool": "Snow College"
+    },
+    {
+      "name": "Noah Pogue",
+      "position": "D",
+      "class": "5th",
+      "hometown": "Draper, Utah",
+      "previousSchool": null
+    },
+    {
+      "name": "Shayne Byrne",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Birmingham, England",
+      "previousSchool": "Shrewsbury Town FC"
+    },
+    {
+      "name": "Adem Arous",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Lyon, France",
+      "previousSchool": "Indian Hills CC"
+    },
+    {
+      "name": "Sebastian Løvendal",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Farum, Denmark",
+      "previousSchool": "FC Nordsjælland"
+    },
+    {
+      "name": "Ugo Mordi",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Brampton, Ontario",
+      "previousSchool": "Vaughan SC"
+    },
+    {
+      "name": "Oliver Watts",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Frederiksberg, Denmark",
+      "previousSchool": "Hellerup IK"
+    },
+    {
+      "name": "Abe Ashby",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Farmington, Utah",
+      "previousSchool": "Salt Lake CC/Incarnate Word"
+    },
+    {
+      "name": "Kai Skinlo",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Salt Lake City, Utah",
+      "previousSchool": "Barca Residency Academy"
+    },
+    {
+      "name": "Bismark Ayamba",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Kumasi, Ghana",
+      "previousSchool": "Daytona State"
+    },
+    {
+      "name": "Jordan Mangatal",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Lake Worth, Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Landon Christiansen",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Clearfield, Utah",
+      "previousSchool": "UW-River Falls"
+    },
+    {
+      "name": "Noah Moe",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Stjørdal, Norway",
+      "previousSchool": "Peninsula College/Tangmoen IL"
+    },
+    {
+      "name": "Jackson Medina",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Heber City, Utah",
+      "previousSchool": "Salt Lake CC / Xolos Utah"
+    },
+    {
+      "name": "Owen Knecht",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Highland, Utah",
+      "previousSchool": null
+    },
+    {
+      "name": "Briley Alba",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Salt Lake City, Utah",
+      "previousSchool": "Utah Red Wolves"
+    },
+    {
+      "name": "Quinn Danielsen",
+      "position": "OTHER",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    }
+  ]
+}

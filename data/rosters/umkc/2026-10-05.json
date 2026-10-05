@@ -1,0 +1,238 @@
+{
+  "schoolId": "umkc",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://kcroos.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 32,
+  "players": [
+    {
+      "name": "Brandon Kincaid",
+      "position": "GK",
+      "class": "5th",
+      "hometown": "Overland Park, Kan. / Shawnee Mission East HS",
+      "previousSchool": "Johnson County CC"
+    },
+    {
+      "name": "Marc Popow",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Warsaw, Poland / Wolsey Hall Oxford",
+      "previousSchool": "FC Sochaux Montbeliard"
+    },
+    {
+      "name": "Mark Ramarola",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Lyon, France / L'Academy OL",
+      "previousSchool": "Olympique Lyonnais"
+    },
+    {
+      "name": "Brevyn Cole",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Olathe, Kan. / Olathe South HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Guille Munoz",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Madrid, Spain /",
+      "previousSchool": "Periso FC",
+      "positionAsListed": "D/MF"
+    },
+    {
+      "name": "Bryson Gosch",
+      "position": "D",
+      "class": "5th",
+      "hometown": "Liberty, Mo. / Liberty HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Fernandez",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Vilanova de Arousa, Spain / IES A Basella",
+      "previousSchool": "Arosa SC"
+    },
+    {
+      "name": "Bryce Outman",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Dallas, Texas / Lone Star HS",
+      "previousSchool": "FC Dallas Academy",
+      "positionAsListed": "MF/F"
+    },
+    {
+      "name": "Mathias Baucher",
+      "position": "MF",
+      "class": "5th",
+      "hometown": "Pontivy, France / Université de Bretagne Occidentale",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeremy Francou",
+      "position": "F",
+      "class": "5th",
+      "hometown": "Chartres, France /",
+      "previousSchool": "Stade Brestois 29"
+    },
+    {
+      "name": "Gabriele Galluccio",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Genova, Italy / Liceo Scientifico Leonardo Da Vinci",
+      "previousSchool": null
+    },
+    {
+      "name": "Mariano Beunza",
+      "position": "F",
+      "class": "5th",
+      "hometown": "Pamplona, Spain / Liceo Monjardin",
+      "previousSchool": "C.A. Osasuna"
+    },
+    {
+      "name": "Ales Kohoutek",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Prague, Czech Republic / Gymnázium Litomerická",
+      "previousSchool": "Indian Hills CC"
+    },
+    {
+      "name": "Jonas Rossdorfer",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Linz, Austria / HAK Ried",
+      "previousSchool": "ASKÖ Oedt"
+    },
+    {
+      "name": "Elouan Labadie-Vincent",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Vire, France / Lycée Émile Littré",
+      "previousSchool": "US Avranches"
+    },
+    {
+      "name": "Carter Santa",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Prairie Village, Kan. / Shawnee Mission East HS",
+      "previousSchool": "Kansas City Athletics"
+    },
+    {
+      "name": "Makhi Francis",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Evanston, Ill. / Olathe Northwest HS",
+      "previousSchool": "Sporting KC Academy"
+    },
+    {
+      "name": "Shotaro Kodama",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Kanagawa, Japan /",
+      "previousSchool": "Kawasaki Frontale"
+    },
+    {
+      "name": "Ethan Schaefer",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Kansas City, Mo. / Rockhurst HS",
+      "previousSchool": "Drexel"
+    },
+    {
+      "name": "Pablo Morato",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Toulouse, France / Montpellier Hérault Sport Club",
+      "previousSchool": "US Colomiers"
+    },
+    {
+      "name": "Raphael Kistmann",
+      "position": "MF",
+      "class": "5th",
+      "hometown": "Caxambu, Brazil / Faith Christian Academy",
+      "previousSchool": "Saint Louis CC"
+    },
+    {
+      "name": "Ian Witis-Hughes",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Dallas, Texas / Hebron HS",
+      "previousSchool": "FC Dallas Academy"
+    },
+    {
+      "name": "Wesley Cribb",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Leawood, Kan. / Shawnee Mission East HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Santuari",
+      "position": "MF",
+      "class": "5th",
+      "hometown": "Trento, Italy /",
+      "previousSchool": "Clemson"
+    },
+    {
+      "name": "Adam Lansdown",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Flower Mound, Texas / Edward S. Marcus HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Brice Middleton",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Overland Park, Kan. / Rockhurst HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Brice Miller Jr.",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Frisco, Texas / Baker Web Academy",
+      "previousSchool": "Seattle U"
+    },
+    {
+      "name": "Brendan Mikuliza",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Orlando, Fla. / Blue Valley North HS",
+      "previousSchool": "Sporting KC II"
+    },
+    {
+      "name": "Alessandro Patelli",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Grumello del Monte, Italy / Liceo Linguistico G.Falcone",
+      "previousSchool": "UC AlbinoLeffe"
+    },
+    {
+      "name": "Kevin Nkumu",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Paris, France /",
+      "previousSchool": "Amiens SC",
+      "positionAsListed": "MF/D"
+    },
+    {
+      "name": "Rihito Kaji",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Minoh, Japan / Koyodai Koto Gakko",
+      "previousSchool": "Gamba Osaka Academy"
+    },
+    {
+      "name": "Juan Pablo Salgado Canepa",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Buenos Aires, Argentina / Instituto River Plate",
+      "previousSchool": null
+    }
+  ]
+}

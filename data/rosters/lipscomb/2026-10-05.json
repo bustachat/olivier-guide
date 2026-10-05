@@ -1,0 +1,251 @@
+{
+  "schoolId": "lipscomb",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://lipscombsports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 34,
+  "players": [
+    {
+      "name": "Alex Kara",
+      "position": "GK",
+      "class": "R-Jr.",
+      "hometown": "Louisville, Ky. / Indiana",
+      "previousSchool": "Louisville, Ky. / Indiana"
+    },
+    {
+      "name": "Enzo Evangelista",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Buenos Aires, Argentina / null",
+      "previousSchool": "Buenos Aires, Argentina / null"
+    },
+    {
+      "name": "Kylian Karsenty",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Paris, France / null",
+      "previousSchool": "Paris, France / null"
+    },
+    {
+      "name": "Caleb Hylton",
+      "position": "D",
+      "class": "R-So.",
+      "hometown": "Charlotte, N.C. / Charlotte",
+      "previousSchool": "Charlotte, N.C. / Charlotte"
+    },
+    {
+      "name": "Yonis Kireh",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Marseille, France / Virginia Tech/Tulsa",
+      "previousSchool": "Marseille, France / Virginia Tech/Tulsa"
+    },
+    {
+      "name": "Armando Infante Capdepont",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Mexico City, Mexico / null",
+      "previousSchool": "Mexico City, Mexico / null"
+    },
+    {
+      "name": "Mario Gil Sanz",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Ribaforada, Spain / null",
+      "previousSchool": "Ribaforada, Spain / null"
+    },
+    {
+      "name": "Mathew Arias Sinclair",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Alajuela, Costa Rica / null",
+      "previousSchool": "Alajuela, Costa Rica / null"
+    },
+    {
+      "name": "Mason Cooper",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Cincinnati, Ohio / Xavier",
+      "previousSchool": "Cincinnati, Ohio / Xavier"
+    },
+    {
+      "name": "Tobías Sosa",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Paraná, Argentina / null",
+      "previousSchool": "Paraná, Argentina / null"
+    },
+    {
+      "name": "James Sasere",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "London, England / null",
+      "previousSchool": "London, England / null"
+    },
+    {
+      "name": "Diego Ramirez",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Wayne, Pa. / Conestoga HS",
+      "previousSchool": "Wayne, Pa. / Conestoga HS"
+    },
+    {
+      "name": "Gabriel Mejia",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Miami, Florida / Inter Miami CF",
+      "previousSchool": "Miami, Florida / Inter Miami CF"
+    },
+    {
+      "name": "Jorge Morejon",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "San Jose, Costa Rica / Alajuelense",
+      "previousSchool": "San Jose, Costa Rica / Alajuelense"
+    },
+    {
+      "name": "Coby Small",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "London, England / Arsenal",
+      "previousSchool": "London, England / Arsenal"
+    },
+    {
+      "name": "Zach Kennedy",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Evansville, Ind. / Evansville North HS",
+      "previousSchool": "Evansville, Ind. / Evansville North HS"
+    },
+    {
+      "name": "Yohan Franchi",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Geneva, Switzerland / null",
+      "previousSchool": "Geneva, Switzerland / null"
+    },
+    {
+      "name": "Mateo Secaira",
+      "position": "F",
+      "class": "So.",
+      "hometown": "San José, Costa Rica / null",
+      "previousSchool": "San José, Costa Rica / null"
+    },
+    {
+      "name": "Patrick Walz",
+      "position": "MF",
+      "class": "R-Sr.",
+      "hometown": "Louisville, KY / Saint Xavier High School",
+      "previousSchool": "Louisville, KY / Saint Xavier High School"
+    },
+    {
+      "name": "Alejandro Valcarce",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Malaga, Spain / null",
+      "previousSchool": "Malaga, Spain / null"
+    },
+    {
+      "name": "Tyler Stinnett",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Louisville, Ky. / Ballard HS",
+      "previousSchool": "Louisville, Ky. / Ballard HS"
+    },
+    {
+      "name": "Noah Kump",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Wake Forest, N.C. / USC Upstate",
+      "previousSchool": "Wake Forest, N.C. / USC Upstate"
+    },
+    {
+      "name": "Simon Hetrick",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Franklin, Tenn. / Tennessee SC",
+      "previousSchool": "Franklin, Tenn. / Tennessee SC"
+    },
+    {
+      "name": "Robert Rodriguez",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "La Vergne, Tenn. / La Vergne HS",
+      "previousSchool": "La Vergne, Tenn. / La Vergne HS",
+      "positionAsListed": "F/D"
+    },
+    {
+      "name": "Tony Lombardi",
+      "position": "D",
+      "class": "R-Jr.",
+      "hometown": "Frederick, Md. / Tuscarora HS",
+      "previousSchool": "Frederick, Md. / Tuscarora HS"
+    },
+    {
+      "name": "Nathan Starzl",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Gasden, Ala. / null",
+      "previousSchool": "Gasden, Ala. / null"
+    },
+    {
+      "name": "Caleb Davis",
+      "position": "MF",
+      "class": "R-Jr.",
+      "hometown": "Redondo Beach, Calif. / Redondo Union",
+      "previousSchool": "Redondo Beach, Calif. / Redondo Union",
+      "positionAsListed": "MF/D"
+    },
+    {
+      "name": "Luke Hanlon",
+      "position": "MF",
+      "class": "R-So.",
+      "hometown": "Lewis Center, Ohio / Olentangy HS",
+      "previousSchool": "Lewis Center, Ohio / Olentangy HS"
+    },
+    {
+      "name": "Robert Russell",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Mountain Brook, Ala. / null",
+      "previousSchool": "Mountain Brook, Ala. / null"
+    },
+    {
+      "name": "Marco Valentir",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Laval, Canada / Montreal CF",
+      "previousSchool": "Laval, Canada / Montreal CF"
+    },
+    {
+      "name": "Franco Vásquez",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Santiago, Chile / null",
+      "previousSchool": "Santiago, Chile / null"
+    },
+    {
+      "name": "James Pidutti",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Vancouver, Canada / Vinaros CF",
+      "previousSchool": "Vancouver, Canada / Vinaros CF"
+    },
+    {
+      "name": "Luke Hawley",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Austin, Texas / Austin FC",
+      "previousSchool": "Austin, Texas / Austin FC"
+    },
+    {
+      "name": "Jayden Wint",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Calgary, Ontario, Canada / Dubai Irish FC",
+      "previousSchool": "Calgary, Ontario, Canada / Dubai Irish FC"
+    }
+  ]
+}

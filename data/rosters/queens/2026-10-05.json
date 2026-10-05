@@ -1,0 +1,249 @@
+{
+  "schoolId": "queens",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://queensathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 34,
+  "players": [
+    {
+      "name": "Matthew Bademian",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Wake Forest, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Evan Hart",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Cary, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Tzimoulis",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Sewell, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Otto Gustafsson",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Ulricehamn, Sweden",
+      "previousSchool": "California Baptist"
+    },
+    {
+      "name": "Maximos Grafakos",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Waxhaw, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Chapman",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Sheffield, England",
+      "previousSchool": null
+    },
+    {
+      "name": "David Perez",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Cole Pumpian",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Marietta, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kyriakos Christodoulou",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Nicosia, Cyprus",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Kneer",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Tuscaloosa, Ala.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Vera Mayorca",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "San Jose, Costa Rica",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Van Straten",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Brooklyn, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Vitor Baptistelli",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Jundiai, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Tozzi",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Birmingham, Ala.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brock Gramann",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Charlotte, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Cassias Mckinnon",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Indian Trail, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Alejandro Duenas Camacho",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Winter Park, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaiden Anderson",
+      "position": "D",
+      "class": "RS-So.",
+      "hometown": "Dix Hills, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Caden Whitt",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Harrisburg, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Arnar Arnarsson",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Kopavogur, Iceland",
+      "previousSchool": null
+    },
+    {
+      "name": "Valter Salavuo",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Espoo, Finland",
+      "previousSchool": "UNC Wilmington"
+    },
+    {
+      "name": "Iker Erazo",
+      "position": "MF",
+      "class": "Grad.",
+      "hometown": "Skien, Norway",
+      "previousSchool": "Kentucky"
+    },
+    {
+      "name": "Rodrigo Canovas",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Palhares",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Edison Yang",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Vestavia Hills, Ala.",
+      "previousSchool": null
+    },
+    {
+      "name": "Enzo Resende",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Goiania, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Razik Walji",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Burnaby, British Columbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Ravi Luster",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Atlanta, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nolan Masker",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "San Antonio, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Curren Gaskill",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Wilmington, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Riley Bedics",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Fishers, Ind.",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Chromey",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Asheville, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brock Miller",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Hendersonville, Tenn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Andre Gustavo Paz Moraes",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Sao Bernardo do Campo, Brazil",
+      "previousSchool": "Gannon"
+    }
+  ]
+}

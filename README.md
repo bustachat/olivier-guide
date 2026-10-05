@@ -1,6 +1,6 @@
 # Olivier — US College Soccer & Exercise Science Scholarship Guide
 
-**Version 45.96** | Multi Skilled Contractors × Sydney, AUS
+**Version 45.97** | Multi Skilled Contractors × Sydney, AUS
 
 A personalised scholarship research tool covering 213 US universities and colleges across NCAA Division I, II and III, NAIA and junior college conferences — financial modelling in AUD/USD, ACU degree alignment, ATAR → GPA conversion, facilities ratings, culture guides, 6-lens dynamic ranking, 2027-entry Minutes Outlook analysis, and a live Dashboard with interactive USA school map.
 

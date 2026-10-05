@@ -1,0 +1,201 @@
+{
+  "schoolId": "marshall",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://herdzone.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "players": [
+    {
+      "name": "Phillip Diestel",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Lubeck, Germany / VfB Lubeck",
+      "previousSchool": "Lubeck, Germany / VfB Lubeck"
+    },
+    {
+      "name": "Joao Alves",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Portugal /",
+      "previousSchool": "Portugal /"
+    },
+    {
+      "name": "Thiago Apolinario",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Sao Paulo, Brazil / Cowley College",
+      "previousSchool": "Sao Paulo, Brazil / Cowley College"
+    },
+    {
+      "name": "Ryan Holmes",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Ona, W.Va. / Cabell Midland High School",
+      "previousSchool": "Ona, W.Va. / Cabell Midland High School",
+      "positionAsListed": "M/D"
+    },
+    {
+      "name": "Joao Carvalho",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Rio de Janeiro, Brazil / Lakeland College",
+      "previousSchool": "Rio de Janeiro, Brazil / Lakeland College"
+    },
+    {
+      "name": "Jack Shannon",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Houston, Texas / UNCG",
+      "previousSchool": "Houston, Texas / UNCG"
+    },
+    {
+      "name": "Nikita Pakhomov",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Kursk, Russia / Oklahoma Wesleyan University",
+      "previousSchool": "Kursk, Russia / Oklahoma Wesleyan University"
+    },
+    {
+      "name": "Gabriel Stevanato",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Tangará da Serra, Brazil /",
+      "previousSchool": "Tangará da Serra, Brazil /"
+    },
+    {
+      "name": "Haruhi Taneda",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Saitama, Japan / Omiya Ardija",
+      "previousSchool": "Saitama, Japan / Omiya Ardija"
+    },
+    {
+      "name": "Brier Wagner",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Huntington, W.Va. / WVFC/West Virginia United",
+      "previousSchool": "Huntington, W.Va. / WVFC/West Virginia United"
+    },
+    {
+      "name": "Joao Roberto",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Santos, Brazil / Athletico de Madrid/Flamengo U20",
+      "previousSchool": "Santos, Brazil / Athletico de Madrid/Flamengo U20"
+    },
+    {
+      "name": "Joshua Nugent",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Brampton, Ontario, Canada / Toronto FC II",
+      "previousSchool": "Brampton, Ontario, Canada / Toronto FC II"
+    },
+    {
+      "name": "Erik Pop",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Toronto, Ontario, Canada / Valour FC",
+      "previousSchool": "Toronto, Ontario, Canada / Valour FC"
+    },
+    {
+      "name": "Stan Klaver",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Woerden, Netherlands / Missouri State",
+      "previousSchool": "Woerden, Netherlands / Missouri State"
+    },
+    {
+      "name": "Luka Lukic",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Salzburg, Austria / Temple",
+      "previousSchool": "Salzburg, Austria / Temple"
+    },
+    {
+      "name": "Ramado Pierre-Louis",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Miami, Fla. / College Dreamers",
+      "previousSchool": "Miami, Fla. / College Dreamers"
+    },
+    {
+      "name": "Pedro Martins",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Barrerio, Portugal / Real Avila",
+      "previousSchool": "Barrerio, Portugal / Real Avila"
+    },
+    {
+      "name": "David Cho",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Incheon, South Korea / null",
+      "previousSchool": "Incheon, South Korea / null"
+    },
+    {
+      "name": "Andrew Armstrong",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Pompton Lakes, N.J. / Dayton",
+      "previousSchool": "Pompton Lakes, N.J. / Dayton"
+    },
+    {
+      "name": "Carl Romberg",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Werl, Northrhine Westfalia, Germany / Tyler Junior College",
+      "previousSchool": "Werl, Northrhine Westfalia, Germany / Tyler Junior College"
+    },
+    {
+      "name": "Goncalo Machado",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Lisbon, Portugal / FC Vizeia",
+      "previousSchool": "Lisbon, Portugal / FC Vizeia"
+    },
+    {
+      "name": "Alvaro Alvarez",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain /",
+      "previousSchool": "Madrid, Spain /"
+    },
+    {
+      "name": "Alan Horrocks",
+      "position": "GK",
+      "class": "Gr.",
+      "hometown": "Merlo, San Luis, Argentina / Gardner-Webb",
+      "previousSchool": "Merlo, San Luis, Argentina / Gardner-Webb"
+    },
+    {
+      "name": "Imre Hermansen",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Fredrikstad, Norway / Fredrikstad FK II",
+      "previousSchool": "Fredrikstad, Norway / Fredrikstad FK II"
+    },
+    {
+      "name": "Francisco Guimaraes",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Baruari, Brazil / Goias",
+      "previousSchool": "Baruari, Brazil / Goias"
+    },
+    {
+      "name": "Adam N'Goran",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Gatineau, Canada /",
+      "previousSchool": "Gatineau, Canada /"
+    },
+    {
+      "name": "Yurij Obert",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Frankfurt, Germany / Eintracht Frankfurt",
+      "previousSchool": "Frankfurt, Germany / Eintracht Frankfurt"
+    }
+  ]
+}

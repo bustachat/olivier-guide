@@ -1,0 +1,249 @@
+{
+  "schoolId": "bryant",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://bryantbulldogs.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 34,
+  "players": [
+    {
+      "name": "Ramon Camejo",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Monroe, NJ",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaiden Willems",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Belchertown, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nacho Vila",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Almassora, Spain",
+      "previousSchool": "UAL"
+    },
+    {
+      "name": "Nacho Garcia",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Zaragoza, Spain",
+      "previousSchool": "University of Evansville"
+    },
+    {
+      "name": "Fernando Guerrero",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Logos School"
+    },
+    {
+      "name": "Marcos Blasco",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Teulada-Moraira, Spain",
+      "previousSchool": "University of Vermont"
+    },
+    {
+      "name": "David Vilan",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Pontevedra, Spain",
+      "previousSchool": "UNIR"
+    },
+    {
+      "name": "Jorge Veintimilla",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Valencia, Spain",
+      "previousSchool": "Universidad Catolica de Valencia"
+    },
+    {
+      "name": "Fermin Rodriguez",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Valencia, Spain",
+      "previousSchool": "Universidad Internacional De La Rioja"
+    },
+    {
+      "name": "Jojo Ocran",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Baltimore, Md.",
+      "previousSchool": "UMBC"
+    },
+    {
+      "name": "Eloi Goni",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Pamplona, Spain",
+      "previousSchool": "Public University of Navarre"
+    },
+    {
+      "name": "Victor Sala",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Valencia,Spain",
+      "previousSchool": "UOC"
+    },
+    {
+      "name": "Ilay Krespi",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Modiin, Israel",
+      "previousSchool": null
+    },
+    {
+      "name": "Paco Fernandez",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Sevilla, Spain",
+      "previousSchool": "Universidad Isabel"
+    },
+    {
+      "name": "Jesus Martins",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Aguadulce, Spain",
+      "previousSchool": "Ciudad de Lucena"
+    },
+    {
+      "name": "Jorge Rodriguez",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Guaynabo, Puerto Rico",
+      "previousSchool": null
+    },
+    {
+      "name": "Pablo Maya",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Llanes, Spain",
+      "previousSchool": "CD Llanes"
+    },
+    {
+      "name": "Brady Geho",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Westminster, MD",
+      "previousSchool": "UMBC"
+    },
+    {
+      "name": "Angel Perez",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Torrevieja, Spain",
+      "previousSchool": "Universidad de Alicante"
+    },
+    {
+      "name": "Santiago de Prado",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Vigo, Spain",
+      "previousSchool": "Universidad Santiago de Compostela"
+    },
+    {
+      "name": "Manu Morillo",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Sevilla, Spain",
+      "previousSchool": "UNIR"
+    },
+    {
+      "name": "Deji Akinboboye",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "West Hempstead, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Billy Gillespie",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Westchester, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sergi Marcillo",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Olot, Spain",
+      "previousSchool": "Universitat Oberta Catalunya"
+    },
+    {
+      "name": "Caleb Chao",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Dartmouth, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Christien Merritt",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Montclair, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Perrotta",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Toronto, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Aimar Penalver",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Pamplona, Spain",
+      "previousSchool": "UNIR"
+    },
+    {
+      "name": "Felipe De Andrade",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Framingham, MA",
+      "previousSchool": "UMass Boston"
+    },
+    {
+      "name": "Ethen Horrobin",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Union, N.J.",
+      "previousSchool": "Kean University"
+    },
+    {
+      "name": "Michael Outerbridge",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Hamilton, Bermuda",
+      "previousSchool": null
+    },
+    {
+      "name": "Eric Causey",
+      "position": "D",
+      "class": "So.",
+      "hometown": "South Easton, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin DiCarlo",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Canton, Conn.",
+      "previousSchool": "University of Dayton"
+    },
+    {
+      "name": "Kai Yandall",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Murfreesboro, TN",
+      "previousSchool": null
+    }
+  ]
+}

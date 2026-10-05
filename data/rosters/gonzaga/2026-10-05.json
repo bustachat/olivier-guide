@@ -1,0 +1,214 @@
+{
+  "schoolId": "gonzaga",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gozags.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "players": [
+    {
+      "name": "Matthew Dovale",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Toronto, Ontario, Canada",
+      "previousSchool": "Central Arkansas"
+    },
+    {
+      "name": "Chema Preciado",
+      "position": "GK",
+      "class": "5th",
+      "hometown": "Windermere, FL",
+      "previousSchool": "Northern Florida"
+    },
+    {
+      "name": "Perry Blay",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Ostego, MN",
+      "previousSchool": "Liberty"
+    },
+    {
+      "name": "Carson Hammond",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Placentia, CA",
+      "previousSchool": "UC Davis"
+    },
+    {
+      "name": "Damoni McKenna",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Bainbridge Island, WA",
+      "previousSchool": "Wash."
+    },
+    {
+      "name": "Terry Watson",
+      "position": "D",
+      "class": "5th",
+      "hometown": "Columbia, SC",
+      "previousSchool": "Clemson"
+    },
+    {
+      "name": "Sam Dahlin",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Shoreline, WA",
+      "previousSchool": "Kings",
+      "positionAsListed": "M/D"
+    },
+    {
+      "name": "Geremi Onentia",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Kansas City, MO",
+      "previousSchool": null,
+      "positionAsListed": "M/F"
+    },
+    {
+      "name": "Dylan Cantafio",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Orange, CA",
+      "previousSchool": "UCLA",
+      "positionAsListed": "M/F"
+    },
+    {
+      "name": "Drew Pedersen",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Lake Oswego, OR",
+      "previousSchool": "Jesuit"
+    },
+    {
+      "name": "Ezekiel Padilla",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Livingston, CA",
+      "previousSchool": "Pacific"
+    },
+    {
+      "name": "Michael Luande",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Puyallup, WA",
+      "previousSchool": "South Florida"
+    },
+    {
+      "name": "Jon Hjaltason",
+      "position": "MF",
+      "class": "5th",
+      "hometown": "Vogar, Iceland",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Ervin",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Phoenix, AZ",
+      "previousSchool": "SMU"
+    },
+    {
+      "name": "Isaac Dalhart",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Oklahoma City, OK",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Potter",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Pasco, WA",
+      "previousSchool": null
+    },
+    {
+      "name": "Scott Chavira-Robles",
+      "position": "D",
+      "class": "So.",
+      "hometown": "San Jose, CA",
+      "previousSchool": "UNLV"
+    },
+    {
+      "name": "Senshin Suzuki",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Seattle, WA",
+      "previousSchool": null,
+      "positionAsListed": "D/M"
+    },
+    {
+      "name": "Nico Golesis",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Holladay, UT",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Murillo Pavon",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Seattle, WA",
+      "previousSchool": "Eastern Oregon"
+    },
+    {
+      "name": "Dashiell Stein",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Mountlake, WA",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Divano",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Bremerton, WA",
+      "previousSchool": "Western Oregon"
+    },
+    {
+      "name": "Carter Bronold",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Frisco, TX",
+      "previousSchool": null,
+      "positionAsListed": "D/M"
+    },
+    {
+      "name": "Jackson Farrell",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Seattle, WA",
+      "previousSchool": null,
+      "positionAsListed": "D/M"
+    },
+    {
+      "name": "Jelle Van Deijck",
+      "position": "MF",
+      "class": "5th",
+      "hometown": "Eindhoven, Netherlands",
+      "previousSchool": null
+    },
+    {
+      "name": "Mason Schinderle",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Portland, OR",
+      "previousSchool": null
+    },
+    {
+      "name": "Morgan Olson",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "New Hope, MN",
+      "previousSchool": "Portland"
+    },
+    {
+      "name": "Hudson Brunk",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Keizer, OR",
+      "previousSchool": "McNary",
+      "positionAsListed": "D/M"
+    }
+  ]
+}

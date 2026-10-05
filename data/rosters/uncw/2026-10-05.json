@@ -1,0 +1,215 @@
+{
+  "schoolId": "uncw",
+  "schoolFile": "data/caa.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://uncwsports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "players": [
+    {
+      "name": "Trey Smiley",
+      "position": "GK",
+      "class": "R-Jr.",
+      "hometown": "Lynden, Wash.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Kron",
+      "position": "GK",
+      "class": "R-Jr.",
+      "hometown": "Louisville, Ky.",
+      "previousSchool": "Northern Kentucky"
+    },
+    {
+      "name": "Jackson Kirila",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Concord, N.C.",
+      "previousSchool": "Flagler College"
+    },
+    {
+      "name": "Gavin Carmichael",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Baltimore, Md.",
+      "previousSchool": "Drexel"
+    },
+    {
+      "name": "Andrew Hornada",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Apex, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kieran Radke",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Fairfax Station, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Grant Stewart",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Raleigh, N.C.",
+      "previousSchool": "Charlotte"
+    },
+    {
+      "name": "Alex Hornada",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Apex, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Cameron Keay",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Paisley, Scotland",
+      "previousSchool": null
+    },
+    {
+      "name": "Osei Gyamfi",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Kumasi, Ghana",
+      "previousSchool": null,
+      "positionAsListed": "M/F"
+    },
+    {
+      "name": "Lucas Siikala",
+      "position": "F",
+      "class": "So.",
+      "hometown": "North Richland Hills, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Dyland Onwona-Agyeman",
+      "position": "D",
+      "class": "R-Sr.",
+      "hometown": "Des Moines, Iowa",
+      "previousSchool": "Ohio State"
+    },
+    {
+      "name": "Ryan Lee",
+      "position": "F",
+      "class": "R-Jr.",
+      "hometown": "Oak Ridge, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryan Miralrio",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Arlington, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Rogers",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Tsawwassen, British Columbia, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Cormac Austin",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Belfast, Ireland",
+      "previousSchool": null
+    },
+    {
+      "name": "William Ampofo",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Accra, Ghana",
+      "previousSchool": "UNCG"
+    },
+    {
+      "name": "Jacob Coates",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Warwick, R.I.",
+      "previousSchool": null
+    },
+    {
+      "name": "Grady Lewis",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "St. Louis, Mo.",
+      "previousSchool": null
+    },
+    {
+      "name": "Danny Williams",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Medford Lakes, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kristjan Oddur Kristjansson",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Reykjavik, Iceland",
+      "previousSchool": null
+    },
+    {
+      "name": "Benjamin Gooding",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Raleigh, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Rivera",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Wilmington, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Acevedo",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Orlando, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kwaku Bawa",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Accra, Ghana",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Yates",
+      "position": "D",
+      "class": "R-So.",
+      "hometown": "Huntersville, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Landon Wilkinson",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Wake Forest, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jake Roberts",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Huntersville, N.C.",
+      "previousSchool": "Campbell"
+    },
+    {
+      "name": "Luke Mamiya",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Honolulu, Hawaii",
+      "previousSchool": "Puget Sound"
+    }
+  ]
+}

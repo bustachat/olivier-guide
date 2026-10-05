@@ -1,0 +1,200 @@
+{
+  "schoolId": "missouristate",
+  "schoolFile": "data/aac.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://missouristatebears.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "players": [
+    {
+      "name": "Danny Cullum",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Felixstowe, England / St. Alban's Roman Catholic High",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Wachowicz",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "High Wycombe, England / St. Michael's Catholic School",
+      "previousSchool": null
+    },
+    {
+      "name": "Hugo Jinkinson",
+      "position": "D",
+      "class": "5th",
+      "hometown": "Leicester, England / King Edward VII Science and Sport College",
+      "previousSchool": "Monroe College"
+    },
+    {
+      "name": "Harris O'Connor",
+      "position": "D",
+      "class": "5th",
+      "hometown": "West Kilbride, Scotland / Grange Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Leandro Gamba",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Castilla, Colombia / Colegio Montferri",
+      "previousSchool": null
+    },
+    {
+      "name": "Jared Harlock",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Liverpool, England / Rainhill High",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Souza",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Constância, Portugal / Escola Secundária José Régio",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrián Esteban",
+      "position": "MF",
+      "class": "5th",
+      "hometown": "Madrid, Spain / Institut Gabriela Mistral",
+      "previousSchool": null
+    },
+    {
+      "name": "Fionn Mooney",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Worcester Park, England / Whitgift School",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Real",
+      "position": "F",
+      "class": "5th",
+      "hometown": "Valencia, Spain / Rivas Luna",
+      "previousSchool": "Mid-American Christian"
+    },
+    {
+      "name": "Lucas Dawson",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Hull, England / Caistor Grammar",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Gasztos",
+      "position": "D",
+      "class": "5th",
+      "hometown": "Papa, Hungary / Feher Miklos Labdarugo Academy",
+      "previousSchool": "Barry University"
+    },
+    {
+      "name": "Kei Kinoshita",
+      "position": "MF",
+      "class": "5th",
+      "hometown": "Ashiya, Japan / Higashiyama High",
+      "previousSchool": null
+    },
+    {
+      "name": "Raúl Álvaro",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain / Eurocolegio Casvi Boadilla del Monte",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Furlong",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Liverpool, England / Neston High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Marcos Sanchez",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Madrid, Spain / I.E.S. Prado Santo Domingo",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Rodriguez",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Valladolid, Spain / IES Núñez de Arce",
+      "previousSchool": "Clayton State"
+    },
+    {
+      "name": "Marco Rosati",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Rome, Italy / Instituto Mazzini Cassino",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Clift",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Stockport, England / Cheadle Hulme School",
+      "previousSchool": null
+    },
+    {
+      "name": "Joey Dawson",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Scunthorpe, England / Caistor Grammar",
+      "previousSchool": null
+    },
+    {
+      "name": "Dani González",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Newbury, England / St. Bartholomews",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Kehoe",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Dublin, Ireland /",
+      "previousSchool": "Mount St. Mary’s University"
+    },
+    {
+      "name": "João Boavida",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Olhão, Portugal / Escola Secundária de Tondela",
+      "previousSchool": "University of Algarve"
+    },
+    {
+      "name": "Marc Ballart",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Penaguila, Spain /",
+      "previousSchool": "Post University"
+    },
+    {
+      "name": "Fernando Alves Schmelz",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Lisbon, Portugal / Carlucci American International School of Lisbon",
+      "previousSchool": "Iona University"
+    },
+    {
+      "name": "Gavin Weidman",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Greenville, S.C. / Riverside High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolae Velicico",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Montreal, Canada / Woodstock Academy",
+      "previousSchool": null
+    }
+  ]
+}

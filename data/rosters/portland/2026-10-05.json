@@ -1,0 +1,242 @@
+{
+  "schoolId": "portland",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://portlandpilots.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 33,
+  "players": [
+    {
+      "name": "Mark Hyan",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Los Angeles, Calif.",
+      "previousSchool": "Virginia Tech / Orange County SC"
+    },
+    {
+      "name": "Keenan VanPelt",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Portland, Ore.",
+      "previousSchool": "Portland Timbers Academy"
+    },
+    {
+      "name": "Ayo Akintobi",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Atlanta, Ga.",
+      "previousSchool": "Atlanta United FC"
+    },
+    {
+      "name": "Nikos Clarke-Tosczak",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Edmonton, A.B.",
+      "previousSchool": "Vancouver Whitecaps FC / Rhode Island"
+    },
+    {
+      "name": "Michael Dunne",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Pleasant Hill, Ore.",
+      "previousSchool": "North Carolina"
+    },
+    {
+      "name": "Ethan Zamora",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Chula Vista, Calif.",
+      "previousSchool": "San Diego State"
+    },
+    {
+      "name": "Christian Mendoza",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Portland, Ore.",
+      "previousSchool": "Portland Timbers Academy"
+    },
+    {
+      "name": "Joe Highfield",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Plymouth, Minn.",
+      "previousSchool": "Minnesota Thunder ECNL"
+    },
+    {
+      "name": "Efetobo Aror",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Mableton, Ga.",
+      "previousSchool": "Phoenix Rising FC"
+    },
+    {
+      "name": "Alex Waggoner",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Santa Fe, N.M.",
+      "previousSchool": "Michigan"
+    },
+    {
+      "name": "Diego Rosas",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "San Benito, Texas",
+      "previousSchool": "Houston Dynamo 2"
+    },
+    {
+      "name": "Anton Hjalmarsson",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Smålandsstenar, Sweden",
+      "previousSchool": "Gislaveds IS / Fort Lewis College"
+    },
+    {
+      "name": "Isaac Emojong",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Davis, Calif.",
+      "previousSchool": "Utah Valley"
+    },
+    {
+      "name": "Nicholas Dunbar",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Long Beach, Calif.",
+      "previousSchool": "LA Galaxy Academy"
+    },
+    {
+      "name": "Justin Nelson",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Portmore, Jamaica",
+      "previousSchool": "Rollins College"
+    },
+    {
+      "name": "Dominic Edwards",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Ewa Beach, Hawaii",
+      "previousSchool": "Our City SC"
+    },
+    {
+      "name": "Dominic Berrios",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Tucson, Arizona",
+      "previousSchool": "KSL Academy / University of the Pacific"
+    },
+    {
+      "name": "Olayinka Ogunleye",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Bolingbrook, Ill",
+      "previousSchool": "Louisville"
+    },
+    {
+      "name": "David Ajagbe",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Surrey, B.C.",
+      "previousSchool": "Ohio State"
+    },
+    {
+      "name": "Denzel Akyirem",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Roedovre, Denmark",
+      "previousSchool": "Tyler Junior College"
+    },
+    {
+      "name": "Angel Martinez",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Everett, Wash.",
+      "previousSchool": "Sounders FC Academy"
+    },
+    {
+      "name": "Kruz Held",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Naperville, Ill.",
+      "previousSchool": "Chicago Fire"
+    },
+    {
+      "name": "Nick Bishop",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "St. Louis, Missouri",
+      "previousSchool": "University of Pittsburgh"
+    },
+    {
+      "name": "Oskar Kaufmann",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Stockholm, Sweden",
+      "previousSchool": "Tyresö FF / South Carolina Upstate"
+    },
+    {
+      "name": "Tristan Flores",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Chula Vista, Calif.",
+      "previousSchool": "SD Loyal"
+    },
+    {
+      "name": "Maddox Findlay",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Henderson, Nev.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ritvik Karra",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Irvine, Calif.",
+      "previousSchool": "Strikers FC"
+    },
+    {
+      "name": "Andrew Bromert",
+      "position": "D",
+      "class": "So.",
+      "hometown": "Portland, Ore.",
+      "previousSchool": "Portland Timbers Academy"
+    },
+    {
+      "name": "Mason Bradley",
+      "position": "D",
+      "class": "So.",
+      "hometown": "West Linn, Ore.",
+      "previousSchool": "Oregon Premier FC"
+    },
+    {
+      "name": "Julian Bretous",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Atlanta, Ga.",
+      "previousSchool": "Atlanta United FC"
+    },
+    {
+      "name": "Javier Hernandez",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Riverside, Calif.",
+      "previousSchool": "North Carolina"
+    },
+    {
+      "name": "Adriano Samayoa",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Los Angeles, Calif.",
+      "previousSchool": "Total Futbol Academy"
+    },
+    {
+      "name": "Miguel-Angel Hernandez",
+      "position": "GK",
+      "class": "5th",
+      "hometown": "Perris, Calif.",
+      "previousSchool": "LA Galaxy Academy"
+    }
+  ]
+}

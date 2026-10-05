@@ -1,0 +1,222 @@
+{
+  "schoolId": "sanfrancisco",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://usfdons.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "players": [
+    {
+      "name": "Lucas Jones",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "San Francisco, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Duggan",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "San Francisco, Calif.",
+      "previousSchool": "St. Ignatius College Prepatory"
+    },
+    {
+      "name": "Ben Brody",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Mount Horeb, Wisc.",
+      "previousSchool": "Edgewood Univ."
+    },
+    {
+      "name": "Alex Solomis",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Nicosia, Cyprus",
+      "previousSchool": "The English School Nicosia"
+    },
+    {
+      "name": "Marci Killeen",
+      "position": "MF",
+      "class": "R-Sr.",
+      "hometown": "Brea, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Norris",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "San Diego, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brayden Beason",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Keller, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaiah Easley",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Kailua Kona, Hawai'i",
+      "previousSchool": "Clemson"
+    },
+    {
+      "name": "Chris Maldonado",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "San Rafael, Calif.",
+      "previousSchool": "Terra Linda HS"
+    },
+    {
+      "name": "Rayden Daijo",
+      "position": "D",
+      "class": "Gr.",
+      "hometown": "Kailua, Hawaii",
+      "previousSchool": "Punahou School"
+    },
+    {
+      "name": "William Krause",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Littleton, Colo",
+      "previousSchool": "Heritage HS"
+    },
+    {
+      "name": "Braylon Jernigan",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "San Antonio, Texas",
+      "previousSchool": "Reagan HS"
+    },
+    {
+      "name": "Sammy Long",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "San Francisco, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicky Pennell",
+      "position": "F",
+      "class": "So.",
+      "hometown": "San Francisco, Calif.",
+      "previousSchool": "International HS"
+    },
+    {
+      "name": "Jaggar Judkins",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Tacoma, Wash.",
+      "previousSchool": "Bellarmine Preparatory School"
+    },
+    {
+      "name": "Rylan Smith",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Littleton, Colo.",
+      "previousSchool": "Highlands Ranch HS"
+    },
+    {
+      "name": "Nico Ruiz",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Huntington Beach, Calif.",
+      "previousSchool": "Orange County SC Academy"
+    },
+    {
+      "name": "Kaleb Afsari",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Folsom, Calif.",
+      "previousSchool": "Jesuit HS"
+    },
+    {
+      "name": "Elias Steinskog",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Oslo, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Bourne Weideman",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Highlands Ranch, Colo.",
+      "previousSchool": "Valor Christian HS"
+    },
+    {
+      "name": "Ian Burrows",
+      "position": "GK",
+      "class": "Sr.",
+      "hometown": "Victoria, British Columbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Jameson Raby",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "San Ramon, Calif.",
+      "previousSchool": "Dougherty Valley HS"
+    },
+    {
+      "name": "Imani Watkins",
+      "position": "MF",
+      "class": "So.",
+      "hometown": "Temple City, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Null",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Chesterfield, Mo.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaedyn Walters",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": "McNeil HS"
+    },
+    {
+      "name": "Oscar Harris",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Warrington, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Blaisen Kehr",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Redwood City, Calif.",
+      "previousSchool": "Sequoia HS",
+      "positionAsListed": "MF/D"
+    },
+    {
+      "name": "Marco Trufelli-Smith",
+      "position": "D",
+      "class": "So.",
+      "hometown": "San Francisco, Calif.",
+      "previousSchool": "St. Ignatius College Prepatory"
+    },
+    {
+      "name": "Wesley May",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Denver, Colo.",
+      "previousSchool": "Arapahoe HS"
+    },
+    {
+      "name": "David Raphael",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Port-au-Prince, Haiti",
+      "previousSchool": "Natomas HS"
+    }
+  ]
+}

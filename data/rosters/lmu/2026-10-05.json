@@ -1,0 +1,222 @@
+{
+  "schoolId": "lmu",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://lmulions.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "players": [
+    {
+      "name": "Philip Hovers",
+      "position": "GK",
+      "class": "Jr.",
+      "hometown": "Rye, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Cooper Roney",
+      "position": "GK",
+      "class": "Fr.",
+      "hometown": "Austin, Texas",
+      "previousSchool": "Austin FC Academy"
+    },
+    {
+      "name": "Quinn Galvin",
+      "position": "MF",
+      "class": "Sr.",
+      "hometown": "Scottsdale, Ariz.",
+      "previousSchool": null
+    },
+    {
+      "name": "Omar Atia",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Cairo, Egypt",
+      "previousSchool": "Central Arkansas"
+    },
+    {
+      "name": "Nicholas Wilson",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Selden, New York",
+      "previousSchool": "Stony Brook"
+    },
+    {
+      "name": "Nathan Rodrigues",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Campbell, Calif.",
+      "previousSchool": "San Jose Earthquakes"
+    },
+    {
+      "name": "Mati Sacristan",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Cal State Fullerton"
+    },
+    {
+      "name": "Anthony Boyadjian",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Los Angeles, Calif.",
+      "previousSchool": "LAFC"
+    },
+    {
+      "name": "Unathi Radebe",
+      "position": "MF",
+      "class": "Jr.",
+      "hometown": "Cape Town, South Africa",
+      "previousSchool": "Tyler Junior College"
+    },
+    {
+      "name": "Samir Djeha",
+      "position": "F",
+      "class": "Jr.",
+      "hometown": "Montreal, Canada",
+      "previousSchool": "Georgia State"
+    },
+    {
+      "name": "Lewis Clutton",
+      "position": "MF",
+      "class": "Gr.",
+      "hometown": "Newport, UK",
+      "previousSchool": "Cardiff Metropolitan University",
+      "positionAsListed": "M/F"
+    },
+    {
+      "name": "Ismail Nieves",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Fricso, Tex.",
+      "previousSchool": "FC Dallas"
+    },
+    {
+      "name": "Alexi Vagenas",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Arcadia, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Galima Sonnah",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Simsbury, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Skyler Wright",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Austin, Texas",
+      "previousSchool": "Campbell"
+    },
+    {
+      "name": "Marc Li Zimmermann",
+      "position": "D",
+      "class": "Jr.",
+      "hometown": "Munich, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Mathew Habovstak",
+      "position": "D",
+      "class": "Sr.",
+      "hometown": "Phoenix, Ariz.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Scott",
+      "position": "F",
+      "class": "Gr.",
+      "hometown": "Frisco, Tex.",
+      "previousSchool": "UCLA"
+    },
+    {
+      "name": "Axel Uriostegui",
+      "position": "MF",
+      "class": "Fr.",
+      "hometown": "Las Vegas, Nev.",
+      "previousSchool": "Real Salt Lake Academy"
+    },
+    {
+      "name": "Alejandro Fuentesal-Atalaya",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Sevilla, ESP",
+      "previousSchool": null
+    },
+    {
+      "name": "Felix Contreras",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Yuba City, Calif.",
+      "previousSchool": "Real Salt Lake Academy"
+    },
+    {
+      "name": "Adrian Alvarez",
+      "position": "F",
+      "class": "So.",
+      "hometown": "Littlerock, Calif.",
+      "previousSchool": "Taft College"
+    },
+    {
+      "name": "Ky Mani Dade",
+      "position": "GK",
+      "class": "R-Sr.",
+      "hometown": "Ontario, Calif.",
+      "previousSchool": "California Connections Academy"
+    },
+    {
+      "name": "Ignacio Macias",
+      "position": "F",
+      "class": "Sr.",
+      "hometown": "Madrid, ESP",
+      "previousSchool": null
+    },
+    {
+      "name": "Fritz Engel",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Grolsheim, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Danny Fischel",
+      "position": "F",
+      "class": "Fr.",
+      "hometown": "Culver City, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Diaz",
+      "position": "F",
+      "class": "Gr.",
+      "hometown": "Torrance, Calif.",
+      "previousSchool": "UCLA"
+    },
+    {
+      "name": "Cody Davis",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Culver City, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Kohnen",
+      "position": "GK",
+      "class": "So.",
+      "hometown": "Luxembourg",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Guedalia",
+      "position": "D",
+      "class": "Fr.",
+      "hometown": "Woodland Hills, Calif.",
+      "previousSchool": null
+    }
+  ]
+}

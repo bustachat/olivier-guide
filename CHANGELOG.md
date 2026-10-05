@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v45.97 (2026-10-05) — Roster snapshots for the 38 schools added in v45.77–v45.94
+
+**Why:** The v45.95 review found that none of the 38 schools added in the previous five days had a full-roster snapshot in `data/rosters/`. The owner asked for them.
+
+**What was done:** each school's official 2026 roster page was read in a real browser on 2026-10-05 and every player on it (name, position, class, hometown and, where the page gives it, previous school) was archived to `data/rosters/{school}/2026-10-05.json`. 38 snapshots, 1,125 players; `manifest.json` now covers 73 schools. Combined position labels are kept exactly as published in a new optional `positionAsListed` field (for example `M/D`), and `position` holds the first-listed one.
+
+**Check on the stored midfielder data:** each live roster was compared with the school's stored `minutesOutlook` (midfielder count and the named graduating, rising-senior and rising-junior players). 35 of 38 match exactly. The other three (Gonzaga, Sacramento State, Utah Tech) differ only because their stored counts leave out players listed with a combined position, which each school's note already says. No `minutesOutlook` count or score was changed.
+
+**One correction (Gonzaga):** its note said the roster page does not list previous schools. It does (a "Last School" field in the card view), so the note was corrected and the recruiting pathway set to Mixed: of 7 midfielders, three came from another college and four list no last school. No score uses this field.
+
+**Open, for the owner (logged in CLAUDE.md section 6F):** combined positions are not counted the same way everywhere. Most schools count a player whose first-listed position is midfield (Boston College, Lipscomb, Marshall, LMU, UNC Wilmington, West Florida, West Virginia). Gonzaga, Sacramento State and Utah Tech count pure midfielders only, and UMKC and Virginia Tech also count one player whose midfield label comes second. Section 15 says every combined midfield label counts. Applying one rule would change the midfielder totals, and therefore the Fit Scores, at up to six of these schools.
+
+**Validation:** `check_roster_snapshot.py` pass, `validate_schools.py` pass, `validate_consistency.js` Issues: 0, `check_no_jargon.py` pass.
+
+---
+
 ### v45.96 (2026-10-05) — Conference NCAA Titles now count titles held by current members; six champions added to the Pro Pipeline table
 
 **Why:** The owner ruled on the open question from v45.95: a conference card's NCAA Titles figure counts titles held by its current members, whichever conference they were in when they won. Applying that rule to every Division I card, against the NCAA's own championship history (ncaa.com, read 2026-10-05), also showed that the Pro Pipeline champions table was missing six title-winning schools that are in the guide.

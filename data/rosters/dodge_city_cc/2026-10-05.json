@@ -1,0 +1,273 @@
+{
+  "schoolId": "dodge_city_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://goconqs.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Eduardo Solis",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Dodge City, KS",
+      "previousSchool": null,
+      "highSchool": "Dodge City HS"
+    },
+    {
+      "name": "Rensho Ishikawa",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Tochigi, Japan",
+      "previousSchool": null,
+      "highSchool": "Bunan HS"
+    },
+    {
+      "name": "Luke Forsyth",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Kempton Park, South Africa",
+      "previousSchool": null,
+      "highSchool": "Tuks Sport HS"
+    },
+    {
+      "name": "Taemin Son",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Gyeonddi-do, South Korea",
+      "previousSchool": null,
+      "highSchool": "Dukyoung HS"
+    },
+    {
+      "name": "Francesco Pennacchio",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Orbassano, Italy",
+      "previousSchool": null,
+      "highSchool": "IIS Vittorini"
+    },
+    {
+      "name": "Reuben Solomon",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Auckland, New Zealand",
+      "previousSchool": null,
+      "highSchool": "Mount Albert Grammar School"
+    },
+    {
+      "name": "Zaid Debouch",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Castelfranco Veneto, Italy",
+      "previousSchool": null,
+      "highSchool": "Istituto Carlos Rosselli"
+    },
+    {
+      "name": "Adam Oueslati",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Racette, Canada",
+      "previousSchool": null,
+      "highSchool": "Ecole des Pionniers Laure-Gaudreault"
+    },
+    {
+      "name": "Keitu Mphomane",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Johannesburg, South Africa",
+      "previousSchool": null,
+      "highSchool": "St. John's College - Johannesburg"
+    },
+    {
+      "name": "Naim Cochin",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Severes, France",
+      "previousSchool": null,
+      "highSchool": "Eugene Ionesco"
+    },
+    {
+      "name": "Flavio Fois",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Cagliari, Italy",
+      "previousSchool": null,
+      "highSchool": "Istituto Paritario Amerigo Vespucci"
+    },
+    {
+      "name": "Zade Douglas",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "So.",
+      "hometown": "St. Andrew, Grenada",
+      "previousSchool": null,
+      "highSchool": "St. Andrew Anglican Secondary School"
+    },
+    {
+      "name": "Tomoya Kijima",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Fujisawa, Japan",
+      "previousSchool": null,
+      "highSchool": "Shonan Institute of Technology HS"
+    },
+    {
+      "name": "Tadiwanshe Nhau",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "So.",
+      "hometown": "Harare, Zimbabwe",
+      "previousSchool": null,
+      "highSchool": "Maranatha Christian HS"
+    },
+    {
+      "name": "Kanta Watanabe",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Shizuoka, Japan",
+      "previousSchool": null,
+      "highSchool": "Shimizu Sakuragaoka HS"
+    },
+    {
+      "name": "Sota Kido",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Ebina-shi, Japan",
+      "previousSchool": null,
+      "highSchool": "Tokai University Sagami Junior & Senior HS"
+    },
+    {
+      "name": "Isaiah Fonseca",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Rogers, AR",
+      "previousSchool": null,
+      "highSchool": "Rogers HS"
+    },
+    {
+      "name": "Cadu Alfonzo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Broken Arrow, OK",
+      "previousSchool": null,
+      "highSchool": "Union HS"
+    },
+    {
+      "name": "Kanau Hayashi",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Hanamaki, Japan",
+      "previousSchool": null,
+      "highSchool": "Hanamaki Higashi HS"
+    },
+    {
+      "name": "Jinwoo Si",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Goryyeong-gun, South Korea",
+      "previousSchool": null,
+      "highSchool": "Global Vision Christian School"
+    },
+    {
+      "name": "Towa Ochiai",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Hyogo, Japan",
+      "previousSchool": null,
+      "highSchool": "Yonago Kita HS"
+    },
+    {
+      "name": "Leonardo Acquarone",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Bernareggio, Italy",
+      "previousSchool": null,
+      "highSchool": "Liceo M.G. Agensi, Merate"
+    },
+    {
+      "name": "Haruki Nozu",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Kobe, Japan",
+      "previousSchool": null,
+      "highSchool": "Kobe Koryo HS"
+    },
+    {
+      "name": "Osvaldo Chairez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Dodge City, KS",
+      "previousSchool": null,
+      "highSchool": "Dodge City HS"
+    },
+    {
+      "name": "Tsugumi Nakamura",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Osaka, Japan",
+      "previousSchool": null,
+      "highSchool": "Kokomo HS"
+    },
+    {
+      "name": "Koga Katsurashima",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Fujisawa, Japan",
+      "previousSchool": null,
+      "highSchool": "Shonan Institute of Technology HS"
+    },
+    {
+      "name": "Yushin Mizutani",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "So.",
+      "hometown": "Himeji, Japan",
+      "previousSchool": null,
+      "highSchool": "Soukai HS"
+    },
+    {
+      "name": "Dario Baudo",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Oleggio, Italy",
+      "previousSchool": null,
+      "highSchool": "Erie Prepartory Academy"
+    },
+    {
+      "name": "Brian Hara",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Kanagawa, Japan",
+      "previousSchool": null,
+      "highSchool": "Chigasaki HS"
+    }
+  ]
+}

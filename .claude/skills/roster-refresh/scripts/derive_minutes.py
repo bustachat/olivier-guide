@@ -162,6 +162,7 @@ def derive(school, snap):
     gk = sum(1 for p in snap["players"] if (p.get("position") or "").upper() == "GK")
     return {
         "juco": juco, "season": season, "squad": len(snap["players"]), "gk": gk,
+        "gk_accepted": snap.get("goalkeepersAccepted"),
         "mf_total": mf_total,
         "cleared": b["cleared"], "rising_sr": b["rising_sr"], "rising_jr": b["rising_jr"],
         "unknown_class": b["unknown"], "second_position": second,
@@ -184,11 +185,12 @@ def standard_note(d):
     colour belongs in rec / olivierMatch, not here."""
     m, c = d["mf_total"], len(d["cleared"])
     if d["juco"]:
-        s = ("On the %s roster, %s of the %s %s who finish before Olivier arrives in August 2027."
+        s = ("On the %s roster, %s of the %s %s before Olivier arrives in August 2027."
              % (d["season"], "none" if c == 0 else "all" if c == m else c, _n(m, "midfielder", "midfielders"),
-                "is a sophomore" if c == 1 else "are sophomores"))
+                "is a sophomore who finishes" if c == 1 else "are sophomores who finish"))
         if 0 < c < m:
-            s += " The other %s return for his first season." % _n(m - c, "freshman", "freshmen")
+            s += (" The other freshman returns for his first season." if m - c == 1 else
+                  " The other %s return for his first season." % _n(m - c, "freshman", "freshmen"))
         elif c == 0:
             s = ("On the %s roster, all %s are freshmen who return for Olivier's first season in August 2027."
                  % (d["season"], _n(m, "midfielder", "midfielders")))
@@ -243,7 +245,9 @@ def problems(d):
     out = []
     if d["unknown_class"]:
         out.append("midfielder(s) with no usable class year: " + ", ".join(d["unknown_class"]))
-    if d["gk"] < 2:
+    # A school that really publishes one goalkeeper (Harcum, 17 players) carries
+    # "goalkeepersAccepted": "<what was checked>" on its snapshot; without it this fails.
+    if d["gk"] < 2 and not d.get("gk_accepted"):
         out.append("only %d goalkeeper(s) on the roster (half-published?)" % d["gk"])
     if not d["juco"] and d["season"] != TARGET_SEASON:
         out.append("snapshot season is %s, not %s" % (d["season"], TARGET_SEASON))

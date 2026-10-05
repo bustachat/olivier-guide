@@ -1,0 +1,244 @@
+{
+  "schoolId": "jacksonville_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.jacksonvillecollege.edu/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Itan Monge",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Alajuela,SA Costa Rica /",
+      "previousSchool": null
+    },
+    {
+      "name": "David Chinchilla",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "San Antonio, SJ Costa Rica /",
+      "previousSchool": null
+    },
+    {
+      "name": "Ben Smallwood",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "Fr.",
+      "hometown": "Irvine, NA, Scotland /",
+      "previousSchool": null
+    },
+    {
+      "name": "Guilherme Schmidt",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "Caxias, RGDS, Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Matheus Baralhas",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "San Bernado do Campo, SP Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Levi Hilling",
+      "position": "D",
+      "positionAsListed": "CB,CDM",
+      "class": "Fr.",
+      "hometown": "Potreath, C, England /",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Zeni",
+      "position": "D",
+      "positionAsListed": "CB,CDM",
+      "class": "Fr.",
+      "hometown": "Novo Hamburgo, RGDS Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Bruno Bella",
+      "position": "MF",
+      "positionAsListed": "OM",
+      "class": "Fr.",
+      "hometown": "Belo Horizonte, MG, Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Kaden Gonzalez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Dallas, TX US. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Juarez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Jacksonville, TX US. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Yannis Benlarbi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Paris, IDF, France /",
+      "previousSchool": null
+    },
+    {
+      "name": "Hedy Maraoui",
+      "position": "MF",
+      "positionAsListed": "OM",
+      "class": "So.",
+      "hometown": "Paris, IDF, France /",
+      "previousSchool": null
+    },
+    {
+      "name": "Solomon Thawgceu",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Atlants, GA US. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Valerio",
+      "position": "D",
+      "positionAsListed": "LB, OM",
+      "class": "Fr.",
+      "hometown": "Tegucigalpa, M Honduras US /",
+      "previousSchool": null
+    },
+    {
+      "name": "Tshiamo Thulo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Gauteng, V, South America /",
+      "previousSchool": null
+    },
+    {
+      "name": "Dario Duran",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "Bullard, TX US. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Elizondo",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "Fr.",
+      "hometown": "Perez Zeledon, SJ, Costa Rica /",
+      "previousSchool": null
+    },
+    {
+      "name": "Quentin Elia",
+      "position": "MF",
+      "positionAsListed": "M,OM",
+      "class": "Fr.",
+      "hometown": "Bordeaux, NA, France /",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Vazquez",
+      "position": "MF",
+      "positionAsListed": "OM",
+      "class": "Fr.",
+      "hometown": "Neiva, H, Columbia, US /",
+      "previousSchool": null
+    },
+    {
+      "name": "Quentin Nguyen",
+      "position": "MF",
+      "positionAsListed": "OM,M",
+      "class": "Fr.",
+      "hometown": "Paris, IDF, France /",
+      "previousSchool": null
+    },
+    {
+      "name": "Aaron Torres",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Quito, P Ecuador, US /",
+      "previousSchool": null
+    },
+    {
+      "name": "Andres Murrillo",
+      "position": "MF",
+      "positionAsListed": "AM",
+      "class": "Fr.",
+      "hometown": "Tegucigalpa, M, Honduras, US /",
+      "previousSchool": null
+    },
+    {
+      "name": "Franciso Esquivel",
+      "position": "MF",
+      "positionAsListed": "OM,OB",
+      "class": "Fr.",
+      "hometown": "Houston, TX US. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Karol Cadenas",
+      "position": "MF",
+      "positionAsListed": "AM",
+      "class": "Fr.",
+      "hometown": "Jacksonville, TX US. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Rafael Rhetti",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Sao Paulo, SA Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Cuza",
+      "position": "D",
+      "positionAsListed": "LB,RB",
+      "class": "So.",
+      "hometown": "Deer Park, TX /",
+      "previousSchool": null
+    },
+    {
+      "name": "Edwin Dominguez",
+      "position": "MF",
+      "positionAsListed": "OM,M",
+      "class": "Fr.",
+      "hometown": "Edwin, PC Panama, US /",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Marquez",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "Houston, TX US. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Hernandez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Houston, TX US. /",
+      "previousSchool": null
+    }
+  ]
+}

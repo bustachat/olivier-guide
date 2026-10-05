@@ -1,0 +1,244 @@
+{
+  "schoolId": "slcc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://slccbruins.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Simo Kekic",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Hamilton, Canada /",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Rayeur",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "New York, NY / Beacon",
+      "previousSchool": null
+    },
+    {
+      "name": "Iron Vernier",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Santa Cruz, Boliva /",
+      "previousSchool": null
+    },
+    {
+      "name": "Henrique Borges",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Rio De Janeiro, Brazil / Walter Johnson",
+      "previousSchool": null
+    },
+    {
+      "name": "Esteban Fernandes",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "St. Etienne, France / Tenzenas de Montcel",
+      "previousSchool": null
+    },
+    {
+      "name": "Mekhi Haughton-Parris",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "So.",
+      "hometown": "Reading, England /",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Silverstein",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Fr.",
+      "hometown": "Toranto, Canada /",
+      "previousSchool": null
+    },
+    {
+      "name": "Alan Guzman",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Fr.",
+      "hometown": "Ocotlan Jalisco, Mexico /",
+      "previousSchool": null
+    },
+    {
+      "name": "Taylor Kogan",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "St. George, UT / Dixie",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Radomski",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "So.",
+      "hometown": "Oakton, VA /",
+      "previousSchool": null
+    },
+    {
+      "name": "Abdou Dieng",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Laval, Canada /",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Kabongo",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Fr.",
+      "hometown": "Salt Lake City, UT /",
+      "previousSchool": null
+    },
+    {
+      "name": "Fernando Hernandez",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "West Jordan, UT /",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas Goncalves",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Cuiaba, Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Gerald Del Valle",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Herriman, UT /",
+      "previousSchool": null
+    },
+    {
+      "name": "Tom Nhommasith",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "So.",
+      "hometown": "Niort, France /",
+      "previousSchool": null
+    },
+    {
+      "name": "Truman Benson",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Myrtle Beach, SC /",
+      "previousSchool": null
+    },
+    {
+      "name": "Evan Beus",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Fr.",
+      "hometown": "Alpine, UT /",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Germano",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Olinda, Brazil /",
+      "previousSchool": null
+    },
+    {
+      "name": "Andre Louro",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Lisbon, Portugal /",
+      "previousSchool": null
+    },
+    {
+      "name": "Axel Lopez",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Murray, UT /",
+      "previousSchool": null
+    },
+    {
+      "name": "Goncalo Correia",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Lisbon, Portugal /",
+      "previousSchool": null
+    },
+    {
+      "name": "Kallin Banza",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "West Valley, UT /",
+      "previousSchool": null
+    },
+    {
+      "name": "Matt Hagan",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "R-Fr.",
+      "hometown": "Encinitas, CA /",
+      "previousSchool": null
+    },
+    {
+      "name": "Sharif Sayawu",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "So.",
+      "hometown": "Agona Duakwa, Ghana /",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaxon Dingus",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "American Fork, UT / American Fork",
+      "previousSchool": null
+    },
+    {
+      "name": "Vasco Cunha",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Covilha, Portugal /",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaiah Channer",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Fr.",
+      "hometown": "Whitby, Canada /",
+      "previousSchool": null
+    },
+    {
+      "name": "Ariel Martinez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "West Valley, UT /",
+      "previousSchool": null
+    }
+  ]
+}

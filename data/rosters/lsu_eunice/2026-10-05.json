@@ -1,0 +1,237 @@
+{
+  "schoolId": "lsu_eunice",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.lsue.edu/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Josh Barrow",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-So.",
+      "hometown": "Prairieville, LA / Dutchtown HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonathan Molina",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "New Orleans, LA / Holy Cross HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Atticus Solis",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Lafayette, LA / GFI Academy (TX)",
+      "previousSchool": null
+    },
+    {
+      "name": "Carter Schwarz",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Lafayette, LA / St. Thomas More HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Arthur Palud",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Paris, France / Andrews Osborne Academy (OH)",
+      "previousSchool": null
+    },
+    {
+      "name": "Tungamirai Kagoro",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Mufakose, Zimbabwe / Davidson HS (Ala.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Mahmoud Mohamoud",
+      "position": "F",
+      "positionAsListed": "FOR",
+      "class": "So.",
+      "hometown": "Irving, TX / MacArthur HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Aurélien Petorin",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Niort, France / Lycée de la Venise Verte",
+      "previousSchool": null
+    },
+    {
+      "name": "Alfie Mackay Webb",
+      "position": "F",
+      "positionAsListed": "FOR",
+      "class": "Fr.",
+      "hometown": "Northwich, England / Knutsford Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Farrell",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Manchester, England / Pendleton Sixth Form College",
+      "previousSchool": null
+    },
+    {
+      "name": "Caden Hickox",
+      "position": "MF",
+      "positionAsListed": "MID/FOR",
+      "class": "So.",
+      "hometown": "Colorado Springs, CO / Village HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Mounir Salhi",
+      "position": "F",
+      "positionAsListed": "FOR",
+      "class": "So.",
+      "hometown": "Mandeville, LA / Fontainebleau HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Elton Suragh",
+      "position": "F",
+      "positionAsListed": "FOR",
+      "class": "Fr.",
+      "hometown": "Columbus, GA / Brookstone HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jude Smith",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Manchester, England / Curzon Ashton FC College",
+      "previousSchool": null
+    },
+    {
+      "name": "Sergio Alejandro",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Montreal, Quebec, Canada / Hoosac School",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Begnaud",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Youngsville, LA / Southside HS",
+      "previousSchool": null
+    },
+    {
+      "name": "James Kirk",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Rf.",
+      "hometown": "Doncaster, England / Hall Cross Academy",
+      "previousSchool": null,
+      "classUnverified": "The roster prints 'Rf.' for his class and his player page shows no class year (checked 2026-10-05)"
+    },
+    {
+      "name": "Garrett Meaux",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "New Iberia, LA / New Iberia Senior HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ricardo Binns",
+      "position": "F",
+      "positionAsListed": "FOR",
+      "class": "Rf.",
+      "hometown": "Kingston, Jamaica / Glenmuir HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Long",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Rf.",
+      "hometown": "Lafayette, LA / David Thibodaux HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Carson Colombo",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "New Orleans, LA / Benjamin Franklin HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Caden Bland",
+      "position": "MF",
+      "positionAsListed": "MID/DEF",
+      "class": "Fr.",
+      "hometown": "Baton Rouge, LA / Catholic-Baton Rouge HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Issac Varela",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Fr.",
+      "hometown": "Lafayette, LA / Comeaux HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Hunter Simon",
+      "position": "MF",
+      "positionAsListed": "MID/FOR",
+      "class": "Fr.",
+      "hometown": "Scott, LA / Acadiana HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ange Emmanuelie Ibo",
+      "position": "D",
+      "positionAsListed": "DEF/FOR",
+      "class": "So.",
+      "hometown": "Montreal, Quebec, Canada / École Secondaire Dorval-Jean XXIII/",
+      "previousSchool": null
+    },
+    {
+      "name": "Romain Vigouroux",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Nantes, France / Saint Felix La Salle",
+      "previousSchool": null
+    },
+    {
+      "name": "Pierre Lefeuvre",
+      "position": "F",
+      "positionAsListed": "FOR",
+      "class": "Fr.",
+      "hometown": "Angers, France / Lycée Polyvalent Chevrollier",
+      "previousSchool": null
+    },
+    {
+      "name": "Jankell Arias",
+      "position": "MF",
+      "positionAsListed": "MID/FOR",
+      "class": "Fr.",
+      "hometown": "Le Ceiba, Honduras / Denham Springs HS",
+      "previousSchool": null
+    }
+  ]
+}

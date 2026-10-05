@@ -1,0 +1,188 @@
+{
+  "schoolId": "southwestern_illinois",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.swic.edu/students/services/student-life/athletics/mens-soccer/roster/",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 22,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Brady Hemminghaus",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "F",
+      "hometown": "Columbia, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Ilija Jovic",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "F",
+      "hometown": "Zajecar, Serbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo Casimiro",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Lisboa, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Vincent Pratt",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Springfield, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Phil Kirimi Kogsey",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Nairobi, Kenya",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Kowalski",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Mascoutah, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaylen Wade",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "O’Fallon, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Mickael Duailibi",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Cuiaba, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "David Ramos Barnes",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Olivier Brice",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Paris, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Chris Munoz",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "SO",
+      "hometown": "Fairmont City, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Tahair Lawrence",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Kingston, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "Jayd’n Johnson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Kingston, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "Ibrahim Barry",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "St. Louis, MO",
+      "previousSchool": null
+    },
+    {
+      "name": "Terence Williams",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "FR",
+      "hometown": "Kingston, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Jones",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Aripero, Trinidad",
+      "previousSchool": null
+    },
+    {
+      "name": "Dujoni Thompson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "St. Catherine, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Bivins",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Columbia, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Gavin English",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Belleville, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Carlos Doria",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Caseyville, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Kameron Middlebrooks",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Belleville, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Armando Hernandez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Granite City, IL",
+      "previousSchool": null
+    }
+  ]
+}

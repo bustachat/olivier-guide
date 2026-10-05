@@ -250,5 +250,12 @@
     "find": "\"classUnverified\":",
     "replace": "\"classUnverifiedX\":",
     "expect": "ROSTER-SRC"
+  },
+  {
+    "name": "ROSTER-SRC / a one-goalkeeper roster with no recorded reason",
+    "file": "data/rosters/harcum_college/2026-10-05.json",
+    "find": "\"goalkeepersAccepted\":",
+    "replace": "\"goalkeepersAcceptedX\":",
+    "expect": "ROSTER-SRC"
   }
 ]

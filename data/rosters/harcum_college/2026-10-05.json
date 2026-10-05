@@ -1,0 +1,149 @@
+{
+  "schoolId": "harcum_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.harcum.edu/s/1044/bp20/interior.aspx?sid=1044&gid=1&pgid=2095",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 17,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Itay Malka",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Freshman",
+      "hometown": "MIGDAL HAEMEK, ISRAEL",
+      "previousSchool": null
+    },
+    {
+      "name": "Theo Clarke",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Freshman",
+      "hometown": "MILTON KEYNES, ENGLAND",
+      "previousSchool": null
+    },
+    {
+      "name": "Yasuto Ishizuka",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sophomore",
+      "hometown": "IBARAKI, JAPAN",
+      "previousSchool": null
+    },
+    {
+      "name": "Volodymyr Riabtsun",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Freshman",
+      "hometown": "KYIV, UKRAINE",
+      "previousSchool": null
+    },
+    {
+      "name": "Halldór Ragúel Guðbjartsson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Freshman",
+      "hometown": "AKUREYRI, ICELAND",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Brysland",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Freshman",
+      "hometown": "BRENTWOOD, ENGLAND",
+      "previousSchool": null
+    },
+    {
+      "name": "Titouan Blot",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sophomore",
+      "hometown": "LE CRÉS, FRANCE",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Brysland",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Freshman",
+      "hometown": "BRENTWOOD, ENGLAND",
+      "previousSchool": null
+    },
+    {
+      "name": "Finnley Spicer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Freshman",
+      "hometown": "PERTH, AUSTRALIA",
+      "previousSchool": null
+    },
+    {
+      "name": "Akihiro Fujikawa",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sophomore",
+      "hometown": "FUKUOKA, JAPAN",
+      "previousSchool": null
+    },
+    {
+      "name": "Jesús Bazán Marcos",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Freshman",
+      "hometown": "COMUNIDAD VALENCIA, SPAIN",
+      "previousSchool": null
+    },
+    {
+      "name": "Zachariah Earley",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Freshman",
+      "hometown": "SOUTHAMPTON, ENGLAND",
+      "previousSchool": null
+    },
+    {
+      "name": "Ríkharður Axel Magnússon",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Freshman",
+      "hometown": "HAFNARGJÖRÐUR, ICELAND",
+      "previousSchool": null
+    },
+    {
+      "name": "Théo Joseph",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Freshman",
+      "hometown": "DIJON, FRANCE",
+      "previousSchool": null
+    },
+    {
+      "name": "David Bayarri Cantos",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Freshman",
+      "hometown": "MORGES, SWITZERLAND",
+      "previousSchool": null
+    },
+    {
+      "name": "Dennis Hammer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Freshman",
+      "hometown": "STOCKHOLM, SWEDEN",
+      "previousSchool": null
+    },
+    {
+      "name": "Iliess Bari",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Freshman",
+      "hometown": "AULNOYE-AYMERIES, FRANCE",
+      "previousSchool": null
+    }
+  ],
+  "goalkeepersAccepted": "Harcum's own 2026-2027 roster page lists 17 players and one goalkeeper (read 2026-10-05); the same squad shape was on the page in September"
+}

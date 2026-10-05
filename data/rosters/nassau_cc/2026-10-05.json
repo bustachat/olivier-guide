@@ -1,0 +1,204 @@
+{
+  "schoolId": "nassau_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://nassaulions.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 24,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Victord Lozano",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Queens NY / Bayside HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Adryan Campos",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Mineola NY / Mineola HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick Delgado",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Long Island City / Long Island City HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Cabrera",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Copiague / Copiague HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ismael Garcia",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Copiague / Copiague HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Raymond Zavala",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Uniondale / Uniondale HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Alexis Gomez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Corona Queens / Thomas Edison HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Mohamed Alsayedi",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "So.",
+      "hometown": "Roslyn NY / Mieola HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Alan Moran",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Andy Londono Cardona",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Queens NY / Thomas Edison HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Medina",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Benjamin Perez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Lawrence / Lawrence HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Reynoso Perez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Kevin Martinez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Uniondale / Uniondale HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristhian Ramos Monsalve",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Jackson Heights / Emma Lazarus",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Canelas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Farmingdale NY / Sachem East",
+      "previousSchool": null
+    },
+    {
+      "name": "Ray Guaman",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Valley Stream / Valley Stream Central",
+      "previousSchool": null
+    },
+    {
+      "name": "Andy Gonzalez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Roosevelt / Roosevelt HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Josua Banegas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Queens NY / Forest Hills HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Braeden Konop",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Long Beach NY / Long Beach HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Makhai Noel",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Elmont NY / Elmont NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Edgar Velazquez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Uniondale / Uniondale HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Herley Jean",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Hempstead / Uniondale HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Julio Cuaresma-Arcina",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Nicaragua / Mineola HS",
+      "previousSchool": null
+    }
+  ]
+}

@@ -6,6 +6,37 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.09 (2026-10-05) — 18 junior college rosters stored and applied (campaign C0, step 4, tenth batch: Sidearm-platform and own-site schools)
+
+**What:** 18 junior colleges whose sites are not on the Presto platform were read on each school's own roster page in Chrome, stored with positions as published, and applied from the stored roster: Blinn, Colorado Northwestern, College of Southern Nevada, Dodge City, Harcum, Harford, Illinois Central, Jacksonville College, LSU Eunice, Nassau, Neosho County, Salt Lake CC, Snow, Southwestern Illinois, Texas Southmost, Truckee Meadows, USC Lancaster and USC Salkehatchie. 138 schools' midfielder numbers now come from a stored roster; 61 are still to read (75 on the coverage list, which also counts schools with no usable roster).
+
+**Changes (schools not listed kept the same midfielder count and Fit Score: Blinn, CSN, Dodge City, Illinois Central, Nassau, Texas Southmost, USC Lancaster, Harcum, Southwestern Illinois, USC Salkehatchie):**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Colorado Northwestern | 9 | 8 | 40 | 41 | One player is listed D/M and is no longer counted (first-listed position rule) |
+| Harford | 5 | 6 | 37 | 37 | The roster now lists 6 midfielders, 3 of them sophomores. Two players have no position listed and are not counted |
+| Jacksonville College | 15 | 13 | 52 | 52 | Two players listed with midfield second ("CB,CDM", "LB, OM") are no longer counted. The college's "OM" label is counted as midfield. A team manager listed in the roster table was left out |
+| LSU Eunice | 8 | 9 | 56 | 56 | The roster lists 9 players with midfield first (MID, MID/FOR, MID/DEF). James Kirk's class is printed "Rf.", which the college does not explain; he is counted as a midfielder with his year marked unconfirmed |
+| Neosho County | 13 | 12 | 42 | 42 | Giezi Gonzalez is no longer on the roster; 4 of the 12 are sophomores. One player has no position listed |
+| Salt Lake CC | 8 | 8 | 47 | 48 | Same 8 midfielders; Matt Hagan is listed R-Fr. (second year at the college) and is counted with the sophomores, so 4 finish before August 2027 |
+| Snow | 9 | 8 | 43 | 44 | Bobby Simmonds is no longer on the roster (queued as a departure) |
+| Truckee Meadows | 11 | 7 | 43 | 44 | Three players listed "Forward/Midfield" are no longer counted, and one stored midfielder is not on the roster |
+
+**Text corrected:** summaries that still quoted the older counts at Harford, Jacksonville College, Salt Lake CC, Snow and Truckee Meadows; pathway notes at ten schools that quoted older rosters now state the freshman count on the stored roster.
+
+**Coach check (each school's own site, 2026-10-05):** head coaches confirmed unchanged at Blinn (staff directory; its coaches page did not load), Colorado Northwestern, CSN, Dodge City, Harford, Illinois Central, Jacksonville College (staff directory), LSU Eunice, Nassau, Neosho County, Salt Lake CC, Snow, Texas Southmost (staff block on the roster page; its coaches page did not load), Truckee Meadows, USC Lancaster and USC Salkehatchie (staff directory). Corrections: Harford title "Head Coach" and assistants now Gage Rims and Jason Rims; LSU Eunice title "Men's Soccer Head Coach" and Lane Woodall removed; Salt Lake CC assistant Conner Mitchell replaces Drew Hanna; Snow assistant is Jay Younger (Wyatt Burrows is now listed at Colorado Northwestern, whose staff list was empty); Truckee Meadows title "Head Coach, Men's Soccer" and two assistants added; Blinn assistant is Rudy Roediger; Neosho County assistant Eliany Parra added; Illinois Central head-coach email filled from the coaches page. **Not confirmed today:** Harcum (David Hughes) and Southwestern Illinois (Lindsay Eversmeyer); neither roster page names the coach and no staff page was found. Both were last confirmed on 2026-09-24.
+
+**NJCAA cross-check: NOT done.** `njcaa.org` again loaded an empty page shell. All 18 rosters came from each school's own page.
+
+**Not read:** every Presto-platform school (about 55, including the five remaining Region 2 schools) shows a "Let's confirm you are human" page from the first request; it was not worked around. Northeast Texas CC and Westchester (roster address not found), Ulster (athletics site renders blank) and Pacific Northwest Christian (15 players, 1 goalkeeper, most positions blank) were opened and could not be used.
+
+**Tooling:** `roster_extract.py` counts "OM" as a midfield label. `roster_extractor.js` accepts a position column headed "P" (Harcum). `build_patches.py` takes `--fetch-method` and carries `classUnverified` from the inbox. `derive_minutes.py` fixes two wording slips in the automatic note ("is a sophomore who finishes", "The other freshman returns") and accepts a one-goalkeeper roster only when the snapshot carries `goalkeepersAccepted` with what was checked (Harcum; negative test added, 37 of 37 proven).
+
+**Validation:** `validate_schools.py` PASS (23 warnings, none new); `validate_consistency.js` Issues: 0; JUCO trajectory check, jargon check, roster arithmetic and snapshot checks pass. Local browser: 213 schools load, and Fit Scores and midfielder counts for five of the changed schools match the stored data.
+
+---
+
 ### v46.08 (2026-10-05) — Region 2 junior college rosters, first four stored and applied (campaign C0, step 4, ninth batch, part 1)
 
 **What:** four of the nine Region 2 (Oklahoma/Arkansas) junior colleges were read on each school's own roster page in Chrome, stored with positions as published, and applied from the stored roster: Murray State College, Eastern Oklahoma State, Rose State and National Park. 120 schools' midfielder numbers now come from a stored roster; 79 are still to read (89 junior colleges on the coverage list, which also counts schools with no usable roster).

@@ -1,0 +1,228 @@
+{
+  "schoolId": "texas_southmost",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://tscscorpions.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Alan Garcia",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Filiberto Rodriguez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Esteban Juarez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Ordonez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Castro",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Shelbie Razo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Garcia",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "/ Harlingen High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Omar Garcia",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Bradley Cervantes Campas",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "William Arciniega",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "/ IDEA Pharr",
+      "previousSchool": null
+    },
+    {
+      "name": "Thom Torres",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "/ La Joya High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeremiah Tome",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Abraham Segovia",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Nereo Nunez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Escobedo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Gerardo Martinez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Hugo Villafranca",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Carbajal",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristian Preciado",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Alec Gonzales",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Jesus Torres",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "/ IDEA Toros Prep School",
+      "previousSchool": null
+    },
+    {
+      "name": "Eddy Garcia",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Emanuel Ramirez",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Andy Leal",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Anastacio Garcia",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Luca Alvarez",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Dante Buentello",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    }
+  ]
+}

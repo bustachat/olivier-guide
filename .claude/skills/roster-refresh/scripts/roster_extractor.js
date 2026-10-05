@@ -34,7 +34,7 @@
     const hs = heads.length ? heads : [...(tb.querySelector('tr') ? tb.querySelector('tr').children : [])].map(T);
     const H = hs.map(norm);
     const col = (exact, sub) => { let i = H.findIndex(h => exact.includes(h)); if (i < 0) i = H.findIndex(h => sub.some(s => h.includes(s))); return i; };
-    const iPos = col(['pos', 'position'], ['pos']);
+    const iPos = col(['pos', 'position', 'p'], ['pos'])  /* 'P' = Harcum College */;
     const iCls = col(['cl', 'yr', 'year', 'class', 'academicyear', 'clyr', 'eligibility', 'acadyr', 'athletic'], ['class', 'year', 'elig']);
     const iName = col(['fullname', 'name', 'playername', 'player'], ['name']);
     if (iPos < 0 || iCls < 0 || iName < 0) return;

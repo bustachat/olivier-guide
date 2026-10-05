@@ -1,0 +1,212 @@
+{
+  "schoolId": "illinois_central",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://illinoiscentralcougars.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 25,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Felipe Sacramento",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Vitoria, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Reagan Nwaneri",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Port Harcourt, Nigeria",
+      "previousSchool": null
+    },
+    {
+      "name": "Giorgi Obgaidze",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Le Havre, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Louis Daniel",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Bacilly, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Linus Armbruster",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Weilburg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Tomas Caceres",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Santiago, Chile",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo Urban Castillo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Puebla, Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Connor Lee Benway",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Peoria, Illinois",
+      "previousSchool": null
+    },
+    {
+      "name": "Arturo Reglero",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Las Rozas De Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Ilias Kafi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "France",
+      "previousSchool": null
+    },
+    {
+      "name": "Lewis Melgram",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Bradford, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Julien Meira De Araujo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "France",
+      "previousSchool": null
+    },
+    {
+      "name": "Brendan Valentin",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Orlando, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "John Clift",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Washington, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Alfie Taylor",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Manchester, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Zake Scardigno",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Adelaide, Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Russow",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Streator, Illinois",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Bessoudo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolas Seminario",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Lima, Peru",
+      "previousSchool": null
+    },
+    {
+      "name": "Sowedi Sempangama",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Kasana, Uganda",
+      "previousSchool": null
+    },
+    {
+      "name": "Anton Joseph",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Trinidad and Tobago",
+      "previousSchool": null
+    },
+    {
+      "name": "George Witt",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Ahmadou Ngom",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Beker",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "El Paso, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Flores",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Peoria, IL",
+      "previousSchool": null
+    }
+  ]
+}

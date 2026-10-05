@@ -1,0 +1,218 @@
+{
+  "schoolId": "truckee_meadows_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://tmcclizards.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 23,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Sawyer Morris",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Reno High School"
+    },
+    {
+      "name": "Juan Velazquez",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Damonte Ranch High School"
+    },
+    {
+      "name": "Jordan Gomez",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Procter R. Hug High School"
+    },
+    {
+      "name": "Brendan Casey",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Reno High School"
+    },
+    {
+      "name": "Martin Paredes",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Carson City, Nevada",
+      "previousSchool": null,
+      "highSchool": "Carson High School"
+    },
+    {
+      "name": "Brayan Caldera",
+      "position": "F",
+      "positionAsListed": "Forward/Midfield",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Earl Wooster High School"
+    },
+    {
+      "name": "Gavin Sibayan",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Colorado Springs, Colorado",
+      "previousSchool": null,
+      "highSchool": "Fountain-Fort Carson High School"
+    },
+    {
+      "name": "Eduardo Villalobos",
+      "position": "F",
+      "positionAsListed": "Forward/Midfield",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Earl Wooster High School"
+    },
+    {
+      "name": "Landon Savri",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Sweet Home, Oregon",
+      "previousSchool": null
+    },
+    {
+      "name": "Sergio Martin",
+      "position": "F",
+      "positionAsListed": "Forward/Midfield",
+      "class": "Fr.",
+      "hometown": "Las Vegas, Nevada",
+      "previousSchool": null,
+      "highSchool": "Western High School"
+    },
+    {
+      "name": "Joel Willard",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Las Vegas, Nevada",
+      "previousSchool": null,
+      "highSchool": "Spring Valley High School"
+    },
+    {
+      "name": "Omar Estrada",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Procter R. Hug High School"
+    },
+    {
+      "name": "Edwin Ugalde",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Fallon, Nevada",
+      "previousSchool": null,
+      "highSchool": "Churchill County High School"
+    },
+    {
+      "name": "Tony Melendrez",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Damonte Ranch High School"
+    },
+    {
+      "name": "Salvador Anguiano",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Sparks, Nevada",
+      "previousSchool": null,
+      "highSchool": "Edward C. Reed High School"
+    },
+    {
+      "name": "Sammy Anders",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Fairbanks, Alaska",
+      "previousSchool": null,
+      "highSchool": "West Valley High School"
+    },
+    {
+      "name": "Trevan O'Brien",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Reno High School"
+    },
+    {
+      "name": "Myles Koplinski",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Greenfield, Wisconsin",
+      "previousSchool": null,
+      "highSchool": "Muskego High School"
+    },
+    {
+      "name": "Osbel Madera",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "North Valleys High School"
+    },
+    {
+      "name": "Jordan Talavera",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Procter R. Hug High School"
+    },
+    {
+      "name": "Mason Banks",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Las Vegas, Nevada",
+      "previousSchool": null,
+      "highSchool": "Faith Lutheran High School"
+    },
+    {
+      "name": "Aiden Sermeno",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Reno, Nevada",
+      "previousSchool": null,
+      "highSchool": "Procter R. Hug High School"
+    },
+    {
+      "name": "Rocco Primerano",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Medford, Oregon",
+      "previousSchool": null,
+      "highSchool": "St. Mary's School"
+    }
+  ]
+}

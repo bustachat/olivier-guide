@@ -1,0 +1,268 @@
+{
+  "schoolId": "neosho_county_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://goneosho.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 32,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Harry Churnin-Ritchie",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Leeds, England / Horsforth High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Keelan Coleman",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Luton, England / Cardinal Newman Catholic School",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Linnell",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Northampton, England / Pro Direct Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Till Eichmann",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Ebsdorfergrund, Germany / Kaethe-Kollwitz-Schule Marburg",
+      "previousSchool": null
+    },
+    {
+      "name": "Edward Dyer",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Maidstone, Kent, England / Sutton Valence School / Beechwood School",
+      "previousSchool": null
+    },
+    {
+      "name": "Danny Carroll",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Exeter England / Plymouth City College",
+      "previousSchool": null
+    },
+    {
+      "name": "Ivan Rocha",
+      "position": "F",
+      "positionAsListed": "ATT",
+      "class": "Fr.",
+      "hometown": "Vigo, Spain / Colegio Hogar",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Larkin",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Kent, England / St Gregory's Catholic School",
+      "previousSchool": null
+    },
+    {
+      "name": "Riccardo Giovanelli",
+      "position": "F",
+      "positionAsListed": "ATT",
+      "class": "So.",
+      "hometown": "Fano, Italy / Liceo Nolfi Apolloni",
+      "previousSchool": null
+    },
+    {
+      "name": "Keane Hazeldine",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Chester, England / Bishop Heber High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Rhys Brunton",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "So.",
+      "hometown": "Newcastle, England / St Thomas More Roman Catholic Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Lochlan McKenzie-Smith",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Brackley, England / Rotherham United Sports College",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryoma Kobayashi",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Ise Mie / Kansai International School",
+      "previousSchool": null
+    },
+    {
+      "name": "Valdemar Kamstrup",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Rungsted Kyst, Denmark / Rungsted Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Dylan Parry Jones",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Cambridge, England / Hinchingbrooke Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Mlongeca",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "Kansas City, KS / J.C Harmon High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Villads Ottenheim",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Hørsholm, Denmark / Rungsted Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Bruno León",
+      "position": "D",
+      "positionAsListed": "DEF/RB ATT/RW",
+      "class": "Fr.",
+      "hometown": "Barcelona, Spain / Académica International Scool",
+      "previousSchool": null
+    },
+    {
+      "name": "Carrick Kelly",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Birmingham, England / Kings Norton Boys School",
+      "previousSchool": null
+    },
+    {
+      "name": "Leonardo Sales",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "Fr.",
+      "hometown": "São Paulo, Brazil / E.E Presidente Kennedy",
+      "previousSchool": null
+    },
+    {
+      "name": "Bailey Mapletoft",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "So.",
+      "hometown": "Stotfold, England / Etonbury Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryuto Kondo",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Kodaira, Japan / Showa Daiiti Gakuen High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Alejandro Ortega",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Medellin, Colombia / The Academy of Central Florida",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Corwin",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Topeka, KS / Topeka West High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Andres Cisneros-Salas",
+      "position": "MF",
+      "positionAsListed": "MID,DEF",
+      "class": "Fr.",
+      "hometown": "Hays, KS / Hays High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Yuki Suzuki",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Kisarazu, Japan / Gyosei International High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryunosuke Aoki",
+      "position": "D",
+      "positionAsListed": "DF",
+      "class": "Fr.",
+      "hometown": "Tachikawa, Japan / Nihon University Daini High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Shinji Okura",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Tachikawa, Japan / Jissen Gakuen High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Greyson Davis",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Shawnee, KS / Mill Valley High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Storrer",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Topeka, KS / Topeka High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Austin Martinez",
+      "position": "F",
+      "positionAsListed": "WING",
+      "class": "Fr.",
+      "hometown": "Goddard, KS / Eisenhower High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabe Green",
+      "position": "MF",
+      "positionAsListed": "MID, FWD",
+      "class": "Fr.",
+      "hometown": "Shawnee, KS / De Soto High School",
+      "previousSchool": null
+    }
+  ]
+}

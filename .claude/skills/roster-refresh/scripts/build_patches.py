@@ -87,6 +87,8 @@ def to_full_roster(rec):
         })
         if p.get("hs"):
             out[-1]["highSchool"] = p["hs"]
+        if p.get("classUnverified"):  # set by hand in the inbox after checking the bio page
+            out[-1]["classUnverified"] = p["classUnverified"]
     return out
 
 
@@ -120,6 +122,8 @@ def main():
     ap.add_argument("--id", action="append", default=[])
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--force", default="", help="reason a failed sanity test was accepted")
+    ap.add_argument("--fetch-method", default="claude-desktop-browser-pane",
+                    help="which browser read the pages (claude-in-chrome when the owner's Chrome was used)")
     ap.add_argument("--names", action="store_true", help="also list the derived names")
     args = ap.parse_args()
 
@@ -176,7 +180,7 @@ def main():
         if bad:
             print("      forced: %s" % args.force)
         patch = {"roster_season": "2026-27", "full_roster": roster,
-                 "source_url": rec.get("url"), "fetch_method": "claude-desktop-browser-pane"}
+                 "source_url": rec.get("url"), "fetch_method": args.fetch_method}
         pfile = os.path.join(tempfile.gettempdir(), "olivier_roster_inbox", "patch_%s.json" % sid)
         with open(pfile, "w", encoding="utf-8") as f:
             json.dump(patch, f, ensure_ascii=False)

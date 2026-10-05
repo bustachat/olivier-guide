@@ -1,0 +1,212 @@
+{
+  "schoolId": "csn_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://csncoyotes.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 25,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Ulises Mier",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Las Vegas H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrian Reyes",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Western H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nikolas Rivas",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / SECTA",
+      "previousSchool": null
+    },
+    {
+      "name": "Erick Gonzalez-Garza",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / SECTA",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolos Gilbert",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Palo Verde H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Matias Martinez",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So.",
+      "hometown": "Las Vegas / SLAM H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Gilliland",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Liberty H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Javier Montes",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Liberty H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Garcia",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / SECTA",
+      "previousSchool": null
+    },
+    {
+      "name": "Alejandro Marquez",
+      "position": "F",
+      "positionAsListed": "RW / LW",
+      "class": "So.",
+      "hometown": "Las Vegas / Clark H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Abraham Chavez-Roman",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / ECTA",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Petrov",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / SECTA",
+      "previousSchool": null
+    },
+    {
+      "name": "Andres Gutierrez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Cimarron-Memorial H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Martin Ospina",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Palo Verde H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Landen Mendiola",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Coronado H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Lex Madrigal",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Las Vegas H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Erik Espinoza",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Rancho H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Aiden Huerta-Flores",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Centennial H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaxon Law",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Las Vegas / Faith Lutheran HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Pena",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Las Vegas / Mohave H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Omar Enciso",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / ECTA",
+      "previousSchool": null
+    },
+    {
+      "name": "Alan Laguna",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Valley H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brody Vela",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / SLAM",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Marco Guerrero",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Las Vegas, NV / Arbor View H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Mendez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Las Vegas, NV / Green Valley H.S.",
+      "previousSchool": null
+    }
+  ]
+}

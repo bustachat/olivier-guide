@@ -1,0 +1,260 @@
+{
+  "schoolId": "snow_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://snowbadgers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 31,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Yassine Bouaouina",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Laval, Quebec / Curé Antoine labelle",
+      "previousSchool": null
+    },
+    {
+      "name": "Kahler Speyer",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Fr.",
+      "hometown": "South Jordan, Utah / Herriman HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Cody Adams",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Morgan, Utah / Morgan HS",
+      "previousSchool": null
+    },
+    {
+      "name": "William Fausett",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Herriman, Utah / Mountain Ridge HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Tom Culverhouse",
+      "position": "MF",
+      "positionAsListed": "Mid",
+      "class": "So.",
+      "hometown": "Walsall, England / Thomas Telford School",
+      "previousSchool": null
+    },
+    {
+      "name": "Coleton DeMann",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Murray, Utah / Murray HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Nsa",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Montreal, Canada / Cegep de Bois de Boulogne",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Kilbane",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "So.",
+      "hometown": "Preston, England / Brownedge St. Mary's",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Guillory",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "San Francisco, California / International HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Beltran",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "So.",
+      "hometown": "Salt Lake City, Utah / East HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Stanley",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "So.",
+      "hometown": "Shrewsbury, England / Thomas Telford School",
+      "previousSchool": null
+    },
+    {
+      "name": "Kade Davis",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "R-So.",
+      "hometown": "South Jordan, Utah / Bingham HS",
+      "previousSchool": null
+    },
+    {
+      "name": "JJ Cubillas",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "So.",
+      "hometown": "Ogden, Utah / Lone Peak HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Martinez",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "West Valley, Utah / Murray HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jared Mecedo",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Las Vegas, Nevada / East Career & Technical Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Henn",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Bellevue, Washington / Bellevue HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathen Chatenet",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "Fr.",
+      "hometown": "Montreal, Canada / College Laval",
+      "previousSchool": null
+    },
+    {
+      "name": "Dylan Meek",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Ystrad Mynach, Wales / Ysgol Gyfun Cwm Rhymni",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabe Newman",
+      "position": "F",
+      "positionAsListed": "For",
+      "class": "So.",
+      "hometown": "Logan, Utah / Mountain Crest HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Ornelas",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "Fr.",
+      "hometown": "Ephraim, Utah / Manti HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeff De Coteau",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "London, England / Westmorland Secondary",
+      "previousSchool": null
+    },
+    {
+      "name": "Jace Thomson",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "South Jordan, Utah / Herriman, HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Carter Archuleta",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Ogden, Utah / Weber HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Felix Biederman",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Kiel, Germany / Mount Saint Joseph HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Kilsby",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Northhampton, England / Moulton College",
+      "previousSchool": null
+    },
+    {
+      "name": "Parley Gladwell",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Ogden, Utah / Ogden HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Reef Urquhart",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Gold Coast, Australia / Palm Beach Currumbin State HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Landon Michaelis",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Orem, Utah / Orem HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Gatherum",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "Fr.",
+      "hometown": "Riverton, Utah / Riverton HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Amir Odeh",
+      "position": "MF",
+      "positionAsListed": "Mid",
+      "class": "So.",
+      "hometown": "Odgen, Utah / Ben Lomond HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Garcia",
+      "position": "F",
+      "positionAsListed": "FW",
+      "class": "Fr.",
+      "hometown": "Springville, Utah / Springville HS",
+      "previousSchool": null
+    }
+  ]
+}

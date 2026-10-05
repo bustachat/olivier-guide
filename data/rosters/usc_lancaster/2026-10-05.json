@@ -1,0 +1,284 @@
+{
+  "schoolId": "usc_lancaster",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://usclathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 34,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Tim Pilgrim",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Cincinnati, Ohio / West Clermont High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Monteiro",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Brisbane, Queensland / Kenmore State High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Kade Collier",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Maraval Trinidad and Tobago / Fatima College",
+      "previousSchool": null
+    },
+    {
+      "name": "John Sosa",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Fr.",
+      "hometown": "Indian Land, SC / Indian Land High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Filippo Minardi",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Imola, Italy / Liceo Scientifico Rambaldi Valeriani",
+      "previousSchool": null
+    },
+    {
+      "name": "Darius Jordan",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Gerbasi",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Savannah, GA / Effingham County High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Tarik Cimen",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Brakel, Germany / Gesamtschule Brakel",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Gomez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Fort Mill, SC / Fort Mill High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Davi Rezende",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Vitoria, Espírito Santo, Brazil / Escola São Domingos",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Rülke",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Rostock, Germany / Erasmus Gymnasium Rostock",
+      "previousSchool": null
+    },
+    {
+      "name": "Caleb Boyce",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "San Fernando / Presentation College",
+      "previousSchool": null
+    },
+    {
+      "name": "Hasheem Hill",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Fr.",
+      "hometown": "Trinidad / Trinity College East Arima North Secondary",
+      "previousSchool": null
+    },
+    {
+      "name": "Stephon James",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Port of Spain / Queens Royal College",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Nieves",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Malabar, Florida / Melbourne High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Griffin",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Lancaster, SC / Buford High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Brady Evans",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Charleston, SC / Wando High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaydan Gomez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Palm Beach Gardens, Florida / Florida Connections Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Young",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Bristol, England / Churchill Academy and Sixth Form",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaquan Aguilleria",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Fr.",
+      "hometown": "Trinidad / Fatima College",
+      "previousSchool": null
+    },
+    {
+      "name": "Zack Loosli",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Nyon, Switzerland / Nyon",
+      "previousSchool": null
+    },
+    {
+      "name": "Luca Schwartze",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Rostock, Germany / Gymnasium Reutershagen Rostock",
+      "previousSchool": null
+    },
+    {
+      "name": "Colson Varnadoe",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Walterboro, SC / Colleton County High School, Chowan University",
+      "previousSchool": null
+    },
+    {
+      "name": "Josten Ferri",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Fr.",
+      "hometown": "Montreal / Northern Pre University Ontario Virtual School",
+      "previousSchool": null
+    },
+    {
+      "name": "Erik Robertello",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Bluffton, SC / May River Highschool",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Röttger",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Fr.",
+      "hometown": "Fürstenberg, Niedersachsen / Berufskolleg Kreis Höxter",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryce Bridges",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Lancaster, SC / Buford High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Cejir Robinson",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "So.",
+      "hometown": "Charlotte, NC / South Mecklenburg High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Giovanni Palomino",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Rock Hill, SC / Rock Hill High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose (Andy) Rivera",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Columbia, SC / Brookland-Cayce High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Dück",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Brakel, North Rhine Westfalia / Schulen der Brede",
+      "previousSchool": null
+    },
+    {
+      "name": "Talan Liedtke",
+      "position": "D",
+      "positionAsListed": "Def",
+      "class": "Fr.",
+      "hometown": "Bluffton, SC / May River High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Tom Decle",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Petit Valley, Port of Spain / Fatima College",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaak Stephenson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "St Augustine Beach, FL / Legion Collegiate Academy/Combine Academy",
+      "previousSchool": null
+    }
+  ]
+}

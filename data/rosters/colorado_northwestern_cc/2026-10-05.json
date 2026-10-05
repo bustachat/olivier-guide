@@ -1,0 +1,196 @@
+{
+  "schoolId": "colorado_northwestern_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://athletics.cncc.edu/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 23,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Daniel Tobaruela",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Granada, Spain / Mississippi College",
+      "previousSchool": null
+    },
+    {
+      "name": "Jake Carseldine",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Fr.",
+      "hometown": "Brisbane, AU / Villanova College",
+      "previousSchool": null
+    },
+    {
+      "name": "Shaun Fang",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Auckland, New Zealand / Westlake Boys High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Denali Tippetts",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Saratoga Springs, UT / West Lake High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Layne Fabrizi",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Colorado Springs, CO / Mesa Ridge High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Benjamin Liptrott",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Alpharetta, GA / Chattahoochee High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Gianluca Bernuy Matheaus",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Salt Lake City, UT / Hunter High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Keaton Lane",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Plain City, UT / Fremont High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordan Nunez-Alley",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Colorado Springs, CO / Cheyenne Mountain High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Edvin Dabulhaic",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Toronto, Canada / Thistetown Collegiate Institute",
+      "previousSchool": null
+    },
+    {
+      "name": "Sufyan Mohammad",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Karlsruhe, Germany / Justus-Knecht-Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Cash Black",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Henderson, NV / Basic High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaac Torres",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "West Valley City, UT / Granger High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Villalobos",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "West Valley City, UT / Granger High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Molina",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "West Valley City, UT / Granger High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Ashton Goldsmith-Breedlove",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Fr.",
+      "hometown": "Denver, CO / Columbine High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Vera",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "West Valley City, UT / Granger High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Landa",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "West Valley City, UT / Granger High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Aiden McGurk",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Salt Lake City, UT / Juan Diego Catholic High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Vergara Amaya",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Fr.",
+      "hometown": "West Valley City, UT / Granger High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Marquez",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Fr.",
+      "hometown": "West Valley City, UT / Granger High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Benjamin Guthrie",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Cumming, GA / West Forsyth High School",
+      "previousSchool": null
+    },
+    {
+      "name": "James Larson",
+      "position": "D",
+      "positionAsListed": "D/F",
+      "class": "Fr.",
+      "hometown": "Riverton, UT / Riverton High School",
+      "previousSchool": null
+    }
+  ]
+}

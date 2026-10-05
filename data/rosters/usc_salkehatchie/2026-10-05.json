@@ -1,0 +1,348 @@
+{
+  "schoolId": "usc_salkehatchie",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.uscsalkathletics.com/visual-roster-mens-soccer",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 42,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Pedro Daniel Duarte",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "FR",
+      "hometown": "Santo Domingo, Dominion Republic",
+      "previousSchool": null
+    },
+    {
+      "name": "Guaslin Michel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Providenciales, T&C",
+      "previousSchool": null
+    },
+    {
+      "name": "Roger Balongelwa",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "FR",
+      "hometown": "Atlanta, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Strahinja Savic",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Belgrade, Serbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Mats Van Gils",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Zevenhuizen, The Netherlands",
+      "previousSchool": null
+    },
+    {
+      "name": "Alejandro Romero",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Lexington, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Badara Gueye",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Dakar, Senegal",
+      "previousSchool": null
+    },
+    {
+      "name": "Dejauni Ritchie",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Providenciales, T&C Islands",
+      "previousSchool": null
+    },
+    {
+      "name": "Moussa Coly",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Atlanta, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Calvin Dent",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Augusta, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Caleb Mejia Lara",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Lancaster, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathanial Anthony Lutchman",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Kingston, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "Lambert Kwibe",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Kigoma, Tanzania",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Lewis",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "FR",
+      "hometown": "La Fillette Village, Trinidad",
+      "previousSchool": null
+    },
+    {
+      "name": "Sergio Ruiz",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "FR",
+      "hometown": "Panama City, Panama",
+      "previousSchool": null
+    },
+    {
+      "name": "Joao Matheus Costa",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "SO",
+      "hometown": "Xinguara, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Sarrive Ishiabwe",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Atlanta, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Mads Sorenson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Koege on Sealand, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Sibusiso David Omokhomion",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SO",
+      "hometown": "Johannesburg, South Africa",
+      "previousSchool": null
+    },
+    {
+      "name": "Clay Sanders",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Beaufort, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Cheikh Lo Tidiane",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Atlanta, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Kendrick Cordoba",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Leesville, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Boston Piazza Hughes",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Buenos Aires, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Rodrigo Luna",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Blufton, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "David Cox",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Hampton, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Higuan Ledesma Martinez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Evans, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Etungano Wa Etungano",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Atlanta, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Ramirez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Bogota, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Cyril Vital",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "SO",
+      "hometown": "Canton, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Morales",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "FR",
+      "hometown": "Tegucigalpa, Honduras",
+      "previousSchool": null
+    },
+    {
+      "name": "Benoit D'Astous",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Sept-Iles, Quebec, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Stefan Popovic",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Greenville, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Mason DiVirgilio",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "FR",
+      "hometown": "Myrtle Beach, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Landen Malone",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Summerville, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Aguilar",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Greenville, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Lenny Mbimou",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Bath, Maine",
+      "previousSchool": null
+    },
+    {
+      "name": "Gage Evans",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Summerville, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Pena",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Greensboro, NC",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Hernandez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Summerville, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Lestz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "FR",
+      "hometown": "Murrells Inlet, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick Crosby",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "FR",
+      "hometown": "Bamberg, SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaylen Cockfield",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "FR",
+      "hometown": "Florence, SC",
+      "previousSchool": null
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "schoolId": "harford_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://harfordathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 31,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Fabian Sutter",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Stuttgart, Baden-Württemberg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Louka Chainey",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Quebec City, Quebec, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Finn Osborn",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "London, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Mota",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Palmas, Tocantins, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Yannik Paul Zepuntke",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Rostock,Mecklenburg-Vorpommern, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Simon Bauer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Stuttgart, Baden-Württemberg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Dominic McCarthy",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Kingston, Jamaica",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Henebery",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Sydney, Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "Otávio Trevisan",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Bauru, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Ari Rollison",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Sydney, Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "Kaito Takita",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Kobe, Osaka Bay, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Takunda Makunda",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "London, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaiah Rodriguez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Berlin, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Caeden Mueller",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Bel Air, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mani Awah",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Millersville, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tiago Cardum",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Sorocaba, São Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Lohanga Malenga",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Kigoma, Tanzania",
+      "previousSchool": null
+    },
+    {
+      "name": "Fernandinho Waidemam",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Friskey",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Fallston, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Azambuja",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Erechim, Rio Grande do Sul, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Rudis Madrid",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Annandale, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Nobrega",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Sorocaba, São Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Vladyslav Panchenkov",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Poltava, Ukraine",
+      "previousSchool": null
+    },
+    {
+      "name": "Andile Muhlauri",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Posas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Tegucigalpa, Honduras",
+      "previousSchool": null
+    },
+    {
+      "name": "Washe Chirawu",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Harare, Zimbabwe",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Alvarado",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Washington, D.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emmanuel Munoz Vargas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Baltimore, Md.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaime Lareo",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Franck Tina Fop",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Yaounde, Camaroon",
+      "previousSchool": null
+    },
+    {
+      "name": "Eshoroameh Yakubu",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Lagos, Nigeria",
+      "previousSchool": null
+    }
+  ]
+}

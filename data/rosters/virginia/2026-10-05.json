@@ -1,0 +1,258 @@
+{
+  "schoolId": "virginia",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://virginiasports.com/sports/msoc/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Melvin Hellmann",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "2nd Year",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null,
+      "highSchool": "Carl-Von Weinberg"
+    },
+    {
+      "name": "Caleb Tunks",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "4th Year",
+      "hometown": "Kailua-Kona, Hawaii",
+      "previousSchool": null
+    },
+    {
+      "name": "Peter Tolkin",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th Year",
+      "hometown": "Chatham, N.J.",
+      "previousSchool": "Butler",
+      "highSchool": "Chatham"
+    },
+    {
+      "name": "Isaac Mwakutuya",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "1st Year",
+      "hometown": "Houston, Texas",
+      "previousSchool": null,
+      "highSchool": "Texas Connections Academy"
+    },
+    {
+      "name": "Alex Parvu",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "3rd Year",
+      "hometown": "Cumberland, R.I.",
+      "previousSchool": null,
+      "highSchool": "Cumberland"
+    },
+    {
+      "name": "Parker Sloan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th Year",
+      "hometown": "Cartersville, Va.",
+      "previousSchool": null,
+      "highSchool": "Powhatan High School"
+    },
+    {
+      "name": "Ethan Martinez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "2nd Year",
+      "hometown": "San Jose, Calif.",
+      "previousSchool": "Santa Clara",
+      "highSchool": "Bellarmine College Prep"
+    },
+    {
+      "name": "Arnold Matshazi",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "3rd Year",
+      "hometown": "Milton Keynes, England",
+      "previousSchool": "San Jose State"
+    },
+    {
+      "name": "Brendan Lambe",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "4th Year",
+      "hometown": "Apex, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "AJ Smith",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "4th Year",
+      "hometown": "Høje Taastrup, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Burns",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "3rd Year",
+      "hometown": "Scottsdale, Ariz.",
+      "previousSchool": null,
+      "highSchool": "Brophy College Preparatory"
+    },
+    {
+      "name": "Sami Oulouheu",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "2nd Year",
+      "hometown": "Yopougon, Ivory Coast",
+      "previousSchool": null,
+      "highSchool": "Darrow School (N.Y.)"
+    },
+    {
+      "name": "Prince Abanfo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "1st Year",
+      "hometown": "Accra, Ghana",
+      "previousSchool": null,
+      "highSchool": "Berkshire School"
+    },
+    {
+      "name": "Chase Duke",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "1st Year",
+      "hometown": "Oklahoma City, Okla.",
+      "previousSchool": null,
+      "highSchool": "Salt Lake Academy"
+    },
+    {
+      "name": "Nate Young",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "1st Year",
+      "hometown": "Evanston, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Pop",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th Year",
+      "hometown": "Drammen, Norway",
+      "previousSchool": null,
+      "highSchool": "OsloMet"
+    },
+    {
+      "name": "Bacary Tandjigora",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "2nd Year",
+      "hometown": "Thies, Senegal",
+      "previousSchool": null,
+      "highSchool": "The Pennington School"
+    },
+    {
+      "name": "Zachary Ehrenpreis",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "2nd Year",
+      "hometown": "San Carlos, Calif.",
+      "previousSchool": null,
+      "highSchool": "Sacred Heart Atherton"
+    },
+    {
+      "name": "Stephen Hurlock",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "2nd Year",
+      "hometown": "Tyrone, Ga.",
+      "previousSchool": null,
+      "highSchool": "Northgate"
+    },
+    {
+      "name": "Jed Akwaboah",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "3rd Year",
+      "hometown": "Short Hills, N.J.",
+      "previousSchool": null,
+      "highSchool": "Millburn High School"
+    },
+    {
+      "name": "Marco Dos Santos",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "4th Year",
+      "hometown": "Windham, N.H.",
+      "previousSchool": "Boston College",
+      "highSchool": "Virtual Learning Academy"
+    },
+    {
+      "name": "Drew Serafino",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "5th Year",
+      "hometown": "East Longmeadow, Mass.",
+      "previousSchool": "Boston College",
+      "highSchool": "Suffield Academy"
+    },
+    {
+      "name": "Chase Gozdieski",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "1st Year",
+      "hometown": "San Diego, Calif.",
+      "previousSchool": null,
+      "highSchool": "Del Norte"
+    },
+    {
+      "name": "Zeus Rankin",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "1st Year",
+      "hometown": "Okinawa, Japan",
+      "previousSchool": null,
+      "highSchool": "Bridgton Academy"
+    },
+    {
+      "name": "Donovan Maryat",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "4th Year",
+      "hometown": "Brooklyn, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emmanuel Akinkoye",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "2nd Year",
+      "hometown": "Gaithersburg, Md.",
+      "previousSchool": null,
+      "highSchool": "Quince Orchard"
+    },
+    {
+      "name": "Emiliano Mercenari",
+      "position": "F",
+      "positionAsListed": "F/M",
+      "class": "1st Year",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null,
+      "highSchool": "Gulliver Prep"
+    },
+    {
+      "name": "Spencer Sanderson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "3rd Year",
+      "hometown": "Austin, Texas",
+      "previousSchool": null,
+      "highSchool": "Westlake High School/SAI Academy"
+    }
+  ]
+}

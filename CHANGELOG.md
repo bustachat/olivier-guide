@@ -6,6 +6,34 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.00 (2026-10-05) — ACC rosters stored and applied (campaign C0, step 4, first batch)
+
+**What:** the 13 ACC schools whose rosters were not yet stored with positions as published were read on each school's own site and applied from the stored roster. 51 schools' midfielder numbers now come from a stored roster; 148 are still to read.
+
+**Changes (first-listed position rule plus roster movement since August):**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Virginia | 12 | 6 | 49 | 48 | Five players are listed forward-first (F/M) and one stored name is no longer a midfielder; entry competition High to Medium |
+| Duke | 13 | 11 | 47 | 44 | Two players are listed defender-first (D/M) |
+| Notre Dame | 12 | 10 | 51 | 51 | Two fewer players listed as midfielders; entry competition High to Medium |
+| NC State | 12 | 11 | 56 | 54 | Drew Lovelace is no longer on the roster |
+| Stanford | 11 | 10 | 56 | 54 | Two stored midfielders are now listed at other positions; no midfielder finishes before 2027 |
+| Syracuse | 10 | 12 | 43 | 51 | Two midfielders added since August; three now finish before 2027 |
+| Cal | 12 | 13 | 71 | 71 | One midfielder added; Malcolm Zalayet is listed forward-first |
+| North Carolina | 10 | 9 | 60 | 61 | Steven Oyirwoth is listed defender-first (D/M) |
+| Louisville | 9 | 9 | 58 | 60 | Two players' class years changed to junior |
+
+Clemson, Pittsburgh, SMU and Wake Forest: same numbers as stored. Each school's minutes note is now written from the numbers, and the pathway notes that quoted old counts were rewritten.
+
+**Coach check:** the head coach was confirmed on each school's own site for all 13 (Gelnovatch, Muuss, Hudson, Kerr, Hubbard, Hayden, Vidovich, Gunn, McIntyre, Griffin, Noonan, Riley, Somoano). No changes.
+
+**Tools added (roster-refresh skill):** `roster_extractor.js` (reads a roster page in the browser), `roster_receiver.py` (saves what was read to disk) and `build_patches.py` (sanity tests, preview, apply). `refresh_school.py` now writes the minutes note from the numbers when none is supplied, and no longer reports a player as departed when his name is printed with an accent, a nickname or an added middle name.
+
+**Not verified:** NC State's roster table shows a previous school for only two players, so its Mixed pathway rating is kept from the earlier read, not re-derived.
+
+---
+
 ### v45.99 (2026-10-05) — Stored rosters become the source of the midfielder numbers (campaign C0, steps 1 to 3)
 
 **Why:** the guide kept each school's midfielder count and names but not the roster they came from, so a counting-rule change or a doubt meant going back to every website (CLAUDE.md section 6C, "C0").

@@ -1,0 +1,236 @@
+{
+  "schoolId": "notredame",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://fightingirish.com/sports/msoc/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Cole Kowalski",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sophomore",
+      "hometown": "Elkhorn, WI",
+      "previousSchool": null
+    },
+    {
+      "name": "Blake Kelly",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Junior",
+      "hometown": "Holt, MI",
+      "previousSchool": null
+    },
+    {
+      "name": "Eli Ackerman",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Freshman",
+      "hometown": "Natick, MA",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean McDowd",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Senior",
+      "hometown": "Lake Oswego, OR",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Ross",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Senior",
+      "hometown": "Naples, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Schroeder",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Junior",
+      "hometown": "Inverness, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Ian Shaul",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Junior",
+      "hometown": "North Saint Paul, MN",
+      "previousSchool": null
+    },
+    {
+      "name": "Nate Zimmermann",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Senior",
+      "hometown": "Mendham, NJ",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Bartlett",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Senior",
+      "hometown": "Bloomingdale, IL",
+      "previousSchool": null
+    },
+    {
+      "name": "Ren Sylvester",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sophomore",
+      "hometown": "Ann Arbor, MI",
+      "previousSchool": null
+    },
+    {
+      "name": "Nolan Spicer",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Senior",
+      "hometown": "Bay Village, OH",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Flanagan",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Senior",
+      "hometown": "Rancho Palos Verdes, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Scala",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Freshman",
+      "hometown": "Boynton Beach, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Tristan Tropeano",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshman",
+      "hometown": "Birmingham, AL",
+      "previousSchool": null
+    },
+    {
+      "name": "Maverick McCoy",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Freshman",
+      "hometown": "Carmel, IN",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Capretto",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshman",
+      "hometown": "Hockessin, DE",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Brummell",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Senior",
+      "hometown": "Niles, MI",
+      "previousSchool": null
+    },
+    {
+      "name": "Thaddeus Sawyer",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Freshman",
+      "hometown": "Savannah, GA",
+      "previousSchool": null
+    },
+    {
+      "name": "Vlad Walent",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fifth Year",
+      "hometown": "Lafayette, CO",
+      "previousSchool": null
+    },
+    {
+      "name": "Brady Hilden",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Junior",
+      "hometown": "Reno, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Karson Baquero",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sophomore",
+      "hometown": "Montgomery, TX",
+      "previousSchool": null
+    },
+    {
+      "name": "Lincoln Ulrich",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Senior",
+      "hometown": "Delaware, OH",
+      "previousSchool": null
+    },
+    {
+      "name": "Stevie Dunphy",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Junior",
+      "hometown": "Carlsbad, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Evan Lim",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Freshman",
+      "hometown": "Cedar Grove, NJ",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick Cuneo",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Freshman",
+      "hometown": "Patterson, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Green",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sophomore",
+      "hometown": "Las Vegas, NV",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Burton",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sophomore",
+      "hometown": "San Francisco, CA",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Deitrich",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fifth Year",
+      "hometown": "Stevensville, MI",
+      "previousSchool": null
+    }
+  ]
+}

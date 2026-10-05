@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["serve", ".", "--listen", "8787"],
       "port": 8787
+    },
+    {
+      "name": "roster-receiver",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [".claude/skills/roster-refresh/scripts/roster_receiver.py", "8799"],
+      "port": 8799
     }
   ]
 }

@@ -1,0 +1,268 @@
+{
+  "schoolId": "smu",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://smumustangs.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 32,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Jonathan Evans",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "RS SO",
+      "hometown": "Collegeville, Pa.",
+      "previousSchool": "Penn State"
+    },
+    {
+      "name": "Ryan Clanton-Pimentel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "JR",
+      "hometown": "Leander, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Villads Landsperg",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "SR",
+      "hometown": "Copenhagen, Denmark",
+      "previousSchool": "Wofford"
+    },
+    {
+      "name": "Mason Grimm",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "RS SO",
+      "hometown": "Southlake, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Holmstrøm",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "JR",
+      "hometown": "Aalborg, Denmark",
+      "previousSchool": "Georgia Southern"
+    },
+    {
+      "name": "Alex Salvo",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "GR",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaylinn Mitchell",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SR",
+      "hometown": "La Mirada, Calif",
+      "previousSchool": null
+    },
+    {
+      "name": "Tweneboa (Bingo) Kodua",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "JR",
+      "hometown": "Accra, Ghana",
+      "previousSchool": "Oral Roberts"
+    },
+    {
+      "name": "Milton Lopez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SR",
+      "hometown": "Irving, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Franco Ocana",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Las Varillas, Cordoba, Argentina",
+      "previousSchool": "Gardner-Webb"
+    },
+    {
+      "name": "TJ Dilley",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "RS SO",
+      "hometown": "Dana Point, Calif.",
+      "previousSchool": "Saint Mary's College"
+    },
+    {
+      "name": "Enzo Panozzo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "GR",
+      "hometown": "Sarasota, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Harshaw",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "JR",
+      "hometown": "Louisville, Ky.",
+      "previousSchool": "Bellarmine"
+    },
+    {
+      "name": "Landon Hickam",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Frisco, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Dunes Nielsen",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "JR",
+      "hometown": "Prosper, Texas",
+      "previousSchool": "Utah Tech"
+    },
+    {
+      "name": "Micah Ramirez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "GR",
+      "hometown": "Plano, Texas",
+      "previousSchool": "Western Illinois"
+    },
+    {
+      "name": "Joseluis Villagomez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "El Paso, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Mukisa Emmanuel",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SR",
+      "hometown": "Mbale, Uganda",
+      "previousSchool": "Eastern Florida State College"
+    },
+    {
+      "name": "Andre Philibbosian",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "RS JR",
+      "hometown": "San Diego, Calif.",
+      "previousSchool": "Seattle U"
+    },
+    {
+      "name": "Max Sauceda",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Austin, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Knotek",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "JR",
+      "hometown": "Palos Verdes, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Chris Deamon",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SR",
+      "hometown": "Dallas, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Zarnick",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "GR",
+      "hometown": "Redondo Beach, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Caleb Bronold",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "SO",
+      "hometown": "Frisco, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryder Balch",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Trophy Club, Texas",
+      "previousSchool": "null"
+    },
+    {
+      "name": "Sam Cunniffe",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Shrewsbury, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Kinser",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "SO",
+      "hometown": "Lucas, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Stephan Soghomonian",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "JR",
+      "hometown": "Santa Clarita, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Miller",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "FR",
+      "hometown": "Sherwood, Ore.",
+      "previousSchool": "null"
+    },
+    {
+      "name": "Spencer Zachgo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SO",
+      "hometown": "Wichita, Kansas",
+      "previousSchool": null
+    },
+    {
+      "name": "Trey Clements",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "SR",
+      "hometown": "Fairhope, Ala.",
+      "previousSchool": "Cape Fear Community College"
+    },
+    {
+      "name": "Daniel Wozniak",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "SO",
+      "hometown": "Lee's Summit, Mo.",
+      "previousSchool": "Johnson County CC"
+    }
+  ]
+}

@@ -117,6 +117,7 @@ import datetime as dt
 import io
 import json
 import os
+import re
 import sys
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
@@ -342,8 +343,9 @@ def main():
         mo["recruit_pathway"] = patch["pathway"]
     if "pathway_note" in patch:
         mo["recruit_pathway_note"] = patch["pathway_note"]
-    if "trajectory_note" in patch:
-        mo["trajectoryNote"] = patch["trajectory_note"]
+    # v45.99: with no hand-written note in the patch, the note is written from
+    # the numbers (derive_minutes.standard_note) so it cannot go stale.
+    mo["trajectoryNote"] = patch.get("trajectory_note") or dm.standard_note(d)
 
     facts_only = bool(patch.get("facts_only"))
     juco = bool(patch.get("juco", s.get("juco2yr", False)))
@@ -387,9 +389,10 @@ def main():
     # Compare against EVERY player on the new roster, by bare name: stored
     # names carry suffixes like "(Sr.)" / "(So·M)", and a midfielder who is
     # still on the squad but now listed as a defender has not departed.
-    new_names = {dm.bare(p["name"]) for p in full_roster}
+    new_names = [p["name"] for p in full_roster]
     candidates = [n for n in (old_rising_sr + old_rising_jr)
-                  if looks_like_a_name(n) and dm.bare(n) not in new_names]
+                  if looks_like_a_name(n)
+                  and not dm.still_listed(re.sub(r"\s*\(.*?\)\s*$", "", n), new_names)]
     if candidates:
         print(f"  {len(candidates)} unexpected departure(s) — queued for transfer-tracking:")
         queue = []

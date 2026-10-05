@@ -1,0 +1,252 @@
+{
+  "schoolId": "wakeforest",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://godeacs.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Jonah Mednard",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Jr.",
+      "hometown": "Congers, N.Y. / Clarkstown High School North",
+      "previousSchool": null
+    },
+    {
+      "name": "Quinn Syrett",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Brooklyn, N.Y. / Charlotte FC",
+      "previousSchool": null
+    },
+    {
+      "name": "Miles Hadley",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Atlanta, Ga. /",
+      "previousSchool": "Army"
+    },
+    {
+      "name": "Travis Smith Jr.",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Louisville, Ky. / duPont Manual",
+      "previousSchool": null
+    },
+    {
+      "name": "Amoni Thomas",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Edmonton, Canada / University Hill Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Krueger",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Philadelphia, Pa. / YSC Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Lorenze Currie",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Courtice, Ontario / Holy Trinity CSS",
+      "previousSchool": null
+    },
+    {
+      "name": "Philip Biskupski",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Mississauga, Ontario / Toronto FC",
+      "previousSchool": null
+    },
+    {
+      "name": "David Ndong Nguema",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Houston, Texas / Texas Online Preparatory School",
+      "previousSchool": null
+    },
+    {
+      "name": "Pariss Mitchell",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-So.",
+      "hometown": "Ajax, Canada / Bill Crothers",
+      "previousSchool": null
+    },
+    {
+      "name": "Marcos Miranda",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain /",
+      "previousSchool": "John Brown"
+    },
+    {
+      "name": "Jose Perez",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Antioch, Ill. / Shattuck St. Mary's School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeffrey White",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Tampa, Fla. / River Ridge",
+      "previousSchool": null
+    },
+    {
+      "name": "Joby Reid",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Tauranga, N.Z. /",
+      "previousSchool": "Houston Christian"
+    },
+    {
+      "name": "Will Kuisel",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Batesville, Ind. / FC Cincinnati",
+      "previousSchool": null
+    },
+    {
+      "name": "Joel Torbic",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "State College, Pa. / Barca Residency Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Pierce Bateson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Sr.",
+      "hometown": "Madison, N.J. / Madison",
+      "previousSchool": null
+    },
+    {
+      "name": "Henry Rosenfeld",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Morristown, N.J. / Morristown HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Rooney Osei",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Ghana / Asanska FC",
+      "previousSchool": null
+    },
+    {
+      "name": "Alfred Debah",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Payneville, Liberia / Milton Academy (Mass.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Subachan",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Cooper City, Fla. / NSU University School",
+      "previousSchool": "Louisville"
+    },
+    {
+      "name": "Nolan Tinsley",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Los Angeles, Calif. / Barca Residency Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Chandler Young",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Forward",
+      "class": "So.",
+      "hometown": "Brooklyn, N.Y. / Beacon High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Mason Sullivan",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "West Roxbury, Mass. / Buckingham Browne & Nichols",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Kirilenko",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Cambridge, U.K. / Hofstra",
+      "previousSchool": null
+    },
+    {
+      "name": "Copeland Berkley",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Livingston, N.J. / Livingston HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Kurnik",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Fallbrook, Calif. / Orange County SC",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Barnett",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-So.",
+      "hometown": "Athens, Ga. / Clarke Central HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Tate Lorentz",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Forward",
+      "class": "Sr.",
+      "hometown": "Winston-Salem, N.C. / Mount Tabor",
+      "previousSchool": null
+    },
+    {
+      "name": "Ronnie Garcia",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Dallas, Texas / Campbell",
+      "previousSchool": null
+    }
+  ]
+}

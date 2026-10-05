@@ -1,0 +1,212 @@
+{
+  "schoolId": "pittsburgh",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://pittsburghpanthers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 25,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Taren Wente",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Albuquerque, NM",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Moxom",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Milwaukee, WI",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Pendleton",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Washington, D.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ferran Baqué",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Niklas Sørensen",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Thalwil, Switzerland",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Oliver",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Baltimore, MD",
+      "previousSchool": null
+    },
+    {
+      "name": "Kareem Ahmed",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Liverpool, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Albert Thorsen",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Drammen, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Bertran",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Caden Grabfelder",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Northampton, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mamadou Tall",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Dakar, Senegal",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Hardin",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Seattle, WA",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristian LoGrasso",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Montville, NJ",
+      "previousSchool": null
+    },
+    {
+      "name": "Zahir Dyke",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Kansas City, MO",
+      "previousSchool": null
+    },
+    {
+      "name": "Carter Kopay",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Moon Township, PA",
+      "previousSchool": null
+    },
+    {
+      "name": "Bruno Bertran",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Grayson Carter",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Boise, ID",
+      "previousSchool": null
+    },
+    {
+      "name": "Pablo Portero",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Gran Canaria, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Cannon Scretchen",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Nashville, Tenn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gavin Wetzel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Chalfont, PA",
+      "previousSchool": null
+    },
+    {
+      "name": "Simon Tonidandel",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Clemmons, NC",
+      "previousSchool": null
+    },
+    {
+      "name": "Anders Bordoy",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "New Kensington, PA",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Hauskrecht",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Pittsburgh, PA",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Ferreira",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Cali, Colombia",
+      "previousSchool": null
+    },
+    {
+      "name": "Lukah Shah",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Missouri City, TX",
+      "previousSchool": null
+    }
+  ]
+}

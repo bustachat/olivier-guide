@@ -1,0 +1,228 @@
+{
+  "schoolId": "syracuse",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://cuse.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Kyle Jansen",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Marietta, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Chimere Omeze",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Brampton, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Oksanen",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "San Diego. Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Buster Honeywood",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Kessingland, Eng.",
+      "previousSchool": null
+    },
+    {
+      "name": "Dominic Bell",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Orlando, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ivan Irinimbabazi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Kampala, Uganda",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Scott",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "San Jose, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Miller",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "San Diego, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Gulli",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Gr.",
+      "hometown": "Montreal, CA.",
+      "previousSchool": null
+    },
+    {
+      "name": "Guesly Alexandre",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Montreal, CA.",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryson Rodriguez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Liberia, Costa Rica",
+      "previousSchool": null
+    },
+    {
+      "name": "Dario White",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Portland, Ore.",
+      "previousSchool": null
+    },
+    {
+      "name": "Dakota Jonke",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Gr.",
+      "hometown": "Cleveland, OH.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emmanuel Cophy",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Montreal, CA.",
+      "previousSchool": null
+    },
+    {
+      "name": "Reggie Gainer",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Washington, D.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Landon Darko",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Fairburn, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordan Grey",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Ajax, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Badr Laghjibi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Reston, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kameron Kist",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "New Albany, Ohio",
+      "previousSchool": null
+    },
+    {
+      "name": "Kelvin Da Costa",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Maputo, Mozambique",
+      "previousSchool": null
+    },
+    {
+      "name": "Pablo Patrick-Galvez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Toronto, Ontario, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Sachiel Ming",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Jr.",
+      "hometown": "Southampton, Bermuda",
+      "previousSchool": null
+    },
+    {
+      "name": "Grayson Lamb",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Portland, Ore.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kristjan Fortier",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Toronto, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Garrett Holman",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Hamburg, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Quinn Olcott",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Fayetteville, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Martinez-Bastidas",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Greenville, S.C.",
+      "previousSchool": null
+    }
+  ]
+}

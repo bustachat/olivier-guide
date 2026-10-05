@@ -108,6 +108,21 @@ def bare(name):
     return re.sub(r"\s+", " ", re.sub(r"\s*\(.*?\)\s*$", "", name or "")).strip().lower()
 
 
+def name_tokens(name):
+    """Accent-free word set of a name, ignoring nicknames in brackets, so
+    'Erik Pena' = 'Erik Peña' and 'Tweneboa Kodua' fits 'Tweneboa (Bingo) Kodua'."""
+    import unicodedata
+    s = re.sub(r"\(.*?\)", " ", name or "")
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
+    return frozenset(re.findall(r"[a-z]+", s.lower()))
+
+
+def still_listed(old_name, roster_names):
+    """True if a stored name is on the roster, allowing an added middle name."""
+    a = name_tokens(old_name)
+    return bool(a) and any(a <= name_tokens(n) or name_tokens(n) <= a for n in roster_names if name_tokens(n))
+
+
 def derive(school, snap):
     """-> dict of everything minutesOutlook stores that a roster determines."""
     juco = bool(school.get("juco2yr"))
@@ -119,6 +134,12 @@ def derive(school, snap):
         b = {"cleared": [], "rising_sr": [], "rising_jr": [], "returning": [], "unknown": []}
         for p in mfs:
             b[rx.bucket(p.get("class"))].append(p["name"])
+        # Listed with midfield as a SECOND position ("D/M", "Forward/Midfielder"):
+        # not counted (first-listed rule), but named in the note so a reader can see why.
+        second = [(p["name"], published_position(p)) for p in snap["players"]
+                  if p not in mfs and any(
+                      re.sub(r"[^A-Z]", "", t) in rx.MF_TOKENS
+                      for t in re.split(r"[\/\-,&]| or ", published_position(p).upper())[1:])]
     finally:
         rx.JUCO_MODE = rx.JUCO_PRIOR_MODE = False
 
@@ -136,10 +157,54 @@ def derive(school, snap):
         "juco": juco, "season": season, "squad": len(snap["players"]), "gk": gk,
         "mf_total": mf_total,
         "cleared": b["cleared"], "rising_sr": b["rising_sr"], "rising_jr": b["rising_jr"],
-        "unknown_class": b["unknown"],
+        "unknown_class": b["unknown"], "second_position": second,
         "recruit_risk": "High" if ret >= 7 else "Medium" if ret >= 3 else "Low",
         "trajectory": traj,
     }
+
+
+def _n(n, one, many):
+    return "%d %s" % (n, one if n == 1 else many)
+
+
+def _will(n, one, many):
+    return "none will be %s" % many if n == 0 else "%d will be %s" % (n, one if n == 1 else many)
+
+
+def standard_note(d):
+    """The plain-language trajectoryNote, written from the numbers so it can
+    never quote an older roster (the v45.50 prose-drift class). Hand-written
+    colour belongs in rec / olivierMatch, not here."""
+    m, c = d["mf_total"], len(d["cleared"])
+    if d["juco"]:
+        s = ("On the %s roster, %s of the %s %s who finish before Olivier arrives in August 2027."
+             % (d["season"], "none" if c == 0 else "all" if c == m else c, _n(m, "midfielder", "midfielders"),
+                "is a sophomore" if c == 1 else "are sophomores"))
+        if 0 < c < m:
+            s += " The other %s return for his first season." % _n(m - c, "freshman", "freshmen")
+        elif c == 0:
+            s = ("On the %s roster, all %s are freshmen who return for Olivier's first season in August 2027."
+                 % (d["season"], _n(m, "midfielder", "midfielders")))
+    else:
+        sr, jr = len(d["rising_sr"]), len(d["rising_jr"])
+        so = m - c - sr - jr
+        # "N of M midfielders" is the exact wording validate_consistency.js's
+        # ROSTER-PROSE check reads, so this sentence stays guarded.
+        s = ("On the %s roster, %s %s before Olivier arrives in August 2027. In his first season, "
+             "%s, %s and %s."
+             % (d["season"],
+                ("none of the %d midfielders" % m) if c == 0 else
+                ("%d of %d %s" % (c, m, "midfielder" if m == 1 else "midfielders")),
+                "finishes" if c == 1 else "finish",
+                _will(sr, "a senior", "seniors"), _will(jr, "a junior", "juniors"),
+                _will(so, "a sophomore", "sophomores")))
+    sec = d.get("second_position") or []
+    if sec:
+        labels = sorted({lab for _n_, lab in sec})
+        s += (" %s listed with midfield as a second position (%s) and %s not counted."
+              % ("One more player is" if len(sec) == 1 else "%d more players are" % len(sec),
+                 ", ".join(labels), "is" if len(sec) == 1 else "are"))
+    return s
 
 
 def with_derived(school, d, athlete):

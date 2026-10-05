@@ -1,0 +1,236 @@
+{
+  "schoolId": "duke",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://goduke.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Colin Gallagher",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "Safety Harbor, Fla. / Calvary Christian High School",
+      "previousSchool": "Virginia"
+    },
+    {
+      "name": "Max Deisenhofer",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Brush Prairie, Wash. / Portland Timbers Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Jamie Kabuusu",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Jr.",
+      "hometown": "Chestnut Hill, Mass. / New England Revolution",
+      "previousSchool": null
+    },
+    {
+      "name": "Preston Zabinko",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Ann Arbor, Mich. / Chicago Fire",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonah Wolf",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Benndorf, Germany / SV Gonsenheim",
+      "previousSchool": "Saint Francis University"
+    },
+    {
+      "name": "Max Steelman",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "San Diego, Calif. / LA Galaxy Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Nikolai Ronaldo Bull Jorgensen",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Sr.",
+      "hometown": "Oslo, Norway / NTG Kongsvinger",
+      "previousSchool": null
+    },
+    {
+      "name": "Ulfur Bjornsson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Hafnarfjörður, Iceland / Verzlunarskólinn",
+      "previousSchool": null
+    },
+    {
+      "name": "Maxwell Simpson",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Denver, Colo. / Colorado Rapids 2",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Ottley",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Chesapeake, Va. / Real Salt Lake Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas Vold",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Oslo, Norway /",
+      "previousSchool": "Northeastern"
+    },
+    {
+      "name": "Yuto Ueno",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Tokyo, Japan / Royal Russell School",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Moniz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Freetown, Mass. / FC Greater Boston Bolts",
+      "previousSchool": null
+    },
+    {
+      "name": "Ari Racaj",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Sarpsborg, Norway / Sarpsborg 08",
+      "previousSchool": null
+    },
+    {
+      "name": "Kai Aina",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "San Jose, Calif. / LA Galaxy Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrian Byasiima",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Nolensville, Tenn. / Nolensville",
+      "previousSchool": null
+    },
+    {
+      "name": "Julius Suber",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Kirkland, Wash. / O'Dea",
+      "previousSchool": null
+    },
+    {
+      "name": "Ian Hecker",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Sherborn, Mass. / Center of Excellence / Boston Bolts",
+      "previousSchool": null
+    },
+    {
+      "name": "Taisei Kwon",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Tokyo, Japan / ASIJ",
+      "previousSchool": "Yokogawa Musashino FC"
+    },
+    {
+      "name": "Hugo Hill",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "London, England / Whitgift School",
+      "previousSchool": null
+    },
+    {
+      "name": "Emmanuel Frimpong",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Kumasi, Ghana / Breman Asikuma Senior HS",
+      "previousSchool": "University of the Pacific"
+    },
+    {
+      "name": "Ethan Congleton",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Nantucket, Mass. / IMG Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Poulson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Boston, Mass. / New England Revolution Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Casey Bag",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Westport, Conn. / New York Soccer Club",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Blakeney",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Bothell, Wash. / Bothell High School",
+      "previousSchool": "Crossfire Premier Academy ECNL"
+    },
+    {
+      "name": "Tucker Smith",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Boise, Idaho / Boise Timbers",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Gaviser",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Edgemont, N.Y. / Edgemont",
+      "previousSchool": null
+    },
+    {
+      "name": "Sol Arbib",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "London, England /",
+      "previousSchool": null
+    }
+  ]
+}

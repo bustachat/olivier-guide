@@ -1,0 +1,228 @@
+{
+  "schoolId": "stanford",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gostanford.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Rowan Schnebly",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fifth Year",
+      "hometown": "Portland, Ore.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brad Bennett",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sophomore",
+      "hometown": "Bakersfield, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Dylan Groeneveld",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Senior",
+      "hometown": "Coronado, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joshua Partal",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sophomore",
+      "hometown": "Bangor, Maine",
+      "previousSchool": null
+    },
+    {
+      "name": "Jude Stone",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Sophomore",
+      "hometown": "Santa Rosa, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Pymm",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sophomore",
+      "hometown": "Stamford, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Trevor Islam",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Senior",
+      "hometown": "Mill Valley, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Chow",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Junior",
+      "hometown": "Palo Alto, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "TJ Kahoalii",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Junior",
+      "hometown": "Whitman, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jayden Fitzgerald Boes",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Freshman",
+      "hometown": "Oakland, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Hugo Berg",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Freshman",
+      "hometown": "Chicago, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Maximo Nystrom",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Freshman",
+      "hometown": "Portland, Oregon",
+      "previousSchool": null
+    },
+    {
+      "name": "Tim Fortier",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Freshman",
+      "hometown": "Toronto, Ontario, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Ling",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Freshman",
+      "hometown": "Castro Valley, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tim Logan",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Sophomore",
+      "hometown": "Florham Park, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Tsopanoglou",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Freshman",
+      "hometown": "Maple Valley, Wash.",
+      "previousSchool": null
+    },
+    {
+      "name": "Dillon Logan",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Sophomore",
+      "hometown": "Alexandria, Va.",
+      "previousSchool": null
+    },
+    {
+      "name": "Yujin Kikuchi",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Freshman",
+      "hometown": "Chiba, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Fung",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sophomore",
+      "hometown": "Weston, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Reilly",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sophomore",
+      "hometown": "Weymouth, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joe Moyer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Junior",
+      "hometown": "Yorba Linda, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Calder Zirn",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Freshman",
+      "hometown": "Woodside, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Eric Frintu",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Junior",
+      "hometown": "Redmond, Wash.",
+      "previousSchool": null
+    },
+    {
+      "name": "Carson Sagely",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Freshman",
+      "hometown": "Templeton, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordan Victor",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Junior",
+      "hometown": "Sacramento, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Bennett Ewing",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Freshman",
+      "hometown": "Sandy, Utah",
+      "previousSchool": null
+    },
+    {
+      "name": "Brayden Montague",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sophomore",
+      "hometown": "Tampa, Fla.",
+      "previousSchool": null
+    }
+  ]
+}

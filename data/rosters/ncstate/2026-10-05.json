@@ -1,0 +1,268 @@
+{
+  "schoolId": "ncstate",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gopack.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 32,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Samuel Terranova",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Fayetteville, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Josh Gordon",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Scarborough, Ontario",
+      "previousSchool": null
+    },
+    {
+      "name": "Riley Moloney",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Derbyshire, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Nakai Antoine",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Baldwin, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Oriol Comas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Cassà de la Selva, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Abdou-Magib So",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Paris, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Russell Berko",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Aylesbury, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Tom Wingate",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Weybridge, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Ajani Burchall",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Warwick, Bermuda",
+      "previousSchool": null
+    },
+    {
+      "name": "Frank DeFrancesco",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Wayne, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyler Caton",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Surrey, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Austin Bush",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Southampton, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Erik Peña",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Saltillo, Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Payne",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "5th",
+      "hometown": "Wilmington, N.C.",
+      "previousSchool": "New Hanover High School"
+    },
+    {
+      "name": "Lawson Abass",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Accra, Ghana",
+      "previousSchool": null
+    },
+    {
+      "name": "Caden Tolentino",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "5th",
+      "hometown": "Pinehurst, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Cameron Letterlough",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Asheboro, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ervin Cruz",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Knightdale, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Hayato Takayama",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Hyogo, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Abdouh",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Houston, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrià Muñoz",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Malcolm Rangon",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Lyon, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Mikell Barnes",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Birmingham, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Brandon Bent",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Ft. Lauderdale, FL",
+      "previousSchool": null
+    },
+    {
+      "name": "Jackson Smith",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Raleigh, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emanuel Adou",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Hamburg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Brendan Peeples",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "5th",
+      "hometown": "Raleigh, N.C.",
+      "previousSchool": "Cardinal Gibbons"
+    },
+    {
+      "name": "Jake Cooley",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "New York City, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Matheus Rhormens",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Sao Paolo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "John Pottle",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Epping, N.H.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gianni Rosario",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Fort Lee, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabe Lamphere",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "North Andover, MA",
+      "previousSchool": null
+    }
+  ]
+}

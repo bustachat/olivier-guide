@@ -1,0 +1,260 @@
+{
+  "schoolId": "unc",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://goheels.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 31,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Coleman Catlett",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Holly Springs, N.C. / Crossroads Flex",
+      "previousSchool": "Columbus Crew"
+    },
+    {
+      "name": "Alan Rutkowski",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Fr.",
+      "hometown": "Elmwood Park, N.J. /",
+      "previousSchool": "New York Red Bulls"
+    },
+    {
+      "name": "Myles Carson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Bedford, Texas / Allegiance Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Steven Oyirwoth",
+      "position": "D",
+      "positionAsListed": "D/M",
+      "class": "Fr.",
+      "hometown": "Pakwach, Uganda / Buddo S.S.",
+      "previousSchool": "KCCA FC"
+    },
+    {
+      "name": "Nick Lockermann",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Nuremberg, Germany / Nuremberg",
+      "previousSchool": "Vermont"
+    },
+    {
+      "name": "Charlie Antonelius",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "So.",
+      "hometown": "Stockholm, Sweden /",
+      "previousSchool": "IF Brommapojkarna"
+    },
+    {
+      "name": "Jace Donawa",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Sandys, Bermuda / Northwood School",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Loebus",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Bad Homburg, Germany / Oberursel",
+      "previousSchool": "Vermont"
+    },
+    {
+      "name": "Dan Klink",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Baltimore, Md. / Loyola Blakefield",
+      "previousSchool": "Pipeline SC"
+    },
+    {
+      "name": "Joschi Schelb",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Freiburg, Germany / Angell",
+      "previousSchool": "Rutgers"
+    },
+    {
+      "name": "Ryan Dugan",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "St. Louis, Mo. / Buchanan",
+      "previousSchool": "St. Louis City SC"
+    },
+    {
+      "name": "Marco Simion",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Miami, Fla. / Somerset Virtual Academy",
+      "previousSchool": "Miami FC"
+    },
+    {
+      "name": "Luca Nikolai",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Düsseldorf, Germany / Albert Einstein Gymnasium",
+      "previousSchool": "James Madison"
+    },
+    {
+      "name": "Faraji Ramani",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Dzaleka Refugee Camp, Malawi / Texas Virtual Academy Hallsville",
+      "previousSchool": "Houston Dynamo"
+    },
+    {
+      "name": "Max Fisher",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Widnes, Cheshire, England /",
+      "previousSchool": "Gardner-Webb"
+    },
+    {
+      "name": "Evans Dapaah",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Accra, Ghana / Manso Adubia Senior",
+      "previousSchool": "Campbell"
+    },
+    {
+      "name": "Drew Waller",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Concord, N.C. / West Cabarrus",
+      "previousSchool": "Charlotte SA"
+    },
+    {
+      "name": "Jonathan Luna Sabando",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Irving, Texas / Allegiance Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Bertil Rygaard Hansen",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Slagelse, Denmark / Slagelse Gymnasium",
+      "previousSchool": "Naestved IF"
+    },
+    {
+      "name": "Lorenzo D'Agostini",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": "Rimini FC"
+    },
+    {
+      "name": "Benjamin Maitre",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Boulogne Billancourt, France / Lycee Lacroix Rouge",
+      "previousSchool": "Stade Brestois 29"
+    },
+    {
+      "name": "Etienne Veillard",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Federal Way, Wash. / Federal Way",
+      "previousSchool": "Seattle Sounders Academy"
+    },
+    {
+      "name": "Jayden Puna",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Pearland, Texas / iUniversity Prep",
+      "previousSchool": "Houston Dynamo"
+    },
+    {
+      "name": "Alejandro Saborio Perez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Geneva, Switzerland",
+      "previousSchool": "Servette FC"
+    },
+    {
+      "name": "David Molina",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Cary, N.C. / Green Hope",
+      "previousSchool": "Charlotte FC"
+    },
+    {
+      "name": "Martin Mai",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Aarhus, Denmark / Marselisborg Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Zellefrow",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Berywn, Pa. / Conestoga",
+      "previousSchool": "Vermont"
+    },
+    {
+      "name": "Quinton John",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Margate, Fla.",
+      "previousSchool": "Inter Miami"
+    },
+    {
+      "name": "Cristian Milazzo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Cary, N.C. / Crossroads FLEX",
+      "previousSchool": null
+    },
+    {
+      "name": "Riley Berge",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Columbia, Md. / Atholton",
+      "previousSchool": null
+    },
+    {
+      "name": "Jarle Petzold",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "As, Norway / Wang Toppidrett Fredrikstad",
+      "previousSchool": "Follo FK"
+    }
+  ]
+}

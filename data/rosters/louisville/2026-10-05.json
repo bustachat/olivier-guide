@@ -1,0 +1,228 @@
+{
+  "schoolId": "louisville",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gocards.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Nathaniel Abraham",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Toronto, Ontario, Canada / Bill Crothers Secondary School",
+      "previousSchool": null
+    },
+    {
+      "name": "Silas Damm",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Versailles, Ky. / Woodford County",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah De Blasis",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Toronto, Ontario, Canada / Bill Crothers SS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Boring",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Nashville, Tenn. / Brentwood",
+      "previousSchool": null
+    },
+    {
+      "name": "Mamadou Oumar Ndiaye",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Dakar, Senegal / The Senegalese American Bilingual School",
+      "previousSchool": "Fort Hays State University, Dakar University of International Studies"
+    },
+    {
+      "name": "Braydon Sellers",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "St. Louis, Mo. / Whitfield",
+      "previousSchool": "Saint Louis University"
+    },
+    {
+      "name": "Jacopo Surricchio",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Chieti, Italy / Istituto Dante Alighieri Modena",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrés Escudero Martín",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "San Sebastián de los Reyes, Spain / IES Joan Miro",
+      "previousSchool": "Evansville"
+    },
+    {
+      "name": "Giacomo Zizza",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Denville, N.J. /",
+      "previousSchool": "Lehigh University"
+    },
+    {
+      "name": "Brody Mayer",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "St. Louis, Mo. /",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Mandel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Asker, Norway / Norgestoppidrettsgymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Quintos",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Glen Ellyn, Ill. /",
+      "previousSchool": "Wisconsin"
+    },
+    {
+      "name": "Ephram Amones",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Zionsville, Ind. / Zionsville Community",
+      "previousSchool": null
+    },
+    {
+      "name": "Johnny Petruso",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "St. Louis, Mo. / St. Dominic",
+      "previousSchool": null
+    },
+    {
+      "name": "Quinton Wilson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Toronto, Ontario, Canada / Pickering",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicholas Parham",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Smyrna, Ga. / Woodward Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Ashton Flowers",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Nashville, Tenn. / Rutherford County",
+      "previousSchool": null
+    },
+    {
+      "name": "Håkon Edstrøm",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Baerum, Norway / Norges Toppidrettsgymnas",
+      "previousSchool": "Evansville"
+    },
+    {
+      "name": "Fernando Sanchez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Miami, Fla. / SAI Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Emil Thor",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Copenhagen, Denmark / VUC Lyngby",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Lewis",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Blackpool, England / Hodgson Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Zolly Corrigan",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "El Cerrito, Calif. / Berkeley High",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Hauser",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Elk Grove Village, Ill. / Conant High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Eddie DeMarco",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Monroe, N.J. / Monroe Township High School",
+      "previousSchool": "Marshall, Delaware"
+    },
+    {
+      "name": "Liam McClen",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Lewis Center, Ohio / Olentangy",
+      "previousSchool": null
+    },
+    {
+      "name": "Maverick Deutsch",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Los Angeles, Calif. / Baker Web Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Cooper Olson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Lake Zurich, Ill. /",
+      "previousSchool": null
+    }
+  ]
+}

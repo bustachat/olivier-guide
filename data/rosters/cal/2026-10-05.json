@@ -1,0 +1,252 @@
+{
+  "schoolId": "cal",
+  "schoolFile": "data/acc.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://calbears.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Laszlo Bollyky",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Gr.",
+      "hometown": "Stanford, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Spencer Micali",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Manhattan Beach, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas Grimes",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "5th",
+      "hometown": "St. Helena, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Giancarlo Mota",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Castro Valley, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Ramans",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "Fr.",
+      "hometown": "Los Altos, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "D'Andre Pickett",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Tucson, Ariz.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Bowers",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "San Diego, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Junhwan Park",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Guri-si, South Korea",
+      "previousSchool": null
+    },
+    {
+      "name": "Kieran Bracken Serra",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Berkeley, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Malcolm Zalayet",
+      "position": "F",
+      "positionAsListed": "Forward/Midfielder",
+      "class": "Jr.",
+      "hometown": "San Rafael, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Cesar Cordova",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Houston, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Noe Morales",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Pomona, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrian Jacobs",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Benicia, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kai Oppenheim",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "San Francisco, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Griffin Gustafson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Mill Valley, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Miles",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Hanover, N.H.",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucca Guimaraes",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Sao Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Miko Oppenheim",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "San Francisco, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brendan Bell",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Coto de Caza, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nik Laredo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Walnut Creek, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Florentino Junior",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Aveiro, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Finley Reynolds",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Bainbridge Island, Wash.",
+      "previousSchool": null
+    },
+    {
+      "name": "Callen Lewis",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "So.",
+      "hometown": "Thousand Oaks, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Salama",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Gr.",
+      "hometown": "Ramla, Israel",
+      "previousSchool": null
+    },
+    {
+      "name": "Isaiah Thomas",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Braunschweig, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Wisdom Onuoma",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "San Francisco, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Hauschild",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Greenwich, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nizo Alnahlawi",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Santa Cruz, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Beau Morrison",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Sacramento, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Zack Andoh",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Portland, Ore.",
+      "previousSchool": null
+    }
+  ]
+}

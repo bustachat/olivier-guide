@@ -1,0 +1,236 @@
+{
+  "schoolId": "georgetown",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://guhoyas.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Emmanuel Marmolejo",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Milton, Ontario / Berkshire School",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie DeMarco",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "New York, N.Y. / Fordham Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Lindimore",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "New Albany, Ohio / New Albany",
+      "previousSchool": "Indiana"
+    },
+    {
+      "name": "Eric Howard",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Redmond, Wash. / Eastside Catholic",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Stafford",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Katonah, N.Y. / Fordham Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Caldwell",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Newcastle, England / St. Michael’s College School",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Godinho",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Longwood, Fla. / Lake Mary",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordi Sada-Paz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "London, England / The Harrodian School",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Van Horn",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "North Pole, Alaska / Shattuck Saint Mary’s",
+      "previousSchool": null
+    },
+    {
+      "name": "Mitchell Baker",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Melbourne, Australia / Northwood School",
+      "previousSchool": null
+    },
+    {
+      "name": "Mateo Ponce Ocampo",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Harrison, N.Y. / Harrison",
+      "previousSchool": null
+    },
+    {
+      "name": "David Urrutia",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "New Rochelle, N.Y. / New Rochelle",
+      "previousSchool": null
+    },
+    {
+      "name": "Casey Milliken",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Easton, Mass. / Oliver Ames",
+      "previousSchool": null
+    },
+    {
+      "name": "Terrance Reynolds",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Brentwood, Tenn. / Ensworth",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Satriano",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Bethesda, Md. / Walt Whitman",
+      "previousSchool": null
+    },
+    {
+      "name": "Loukas Maroutsis",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Athens, Greece / Athens College",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Brown",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Lititz, Pa. / Manheim Township",
+      "previousSchool": null
+    },
+    {
+      "name": "Kamil Abdul Nafeo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Tamale, Ghana / Cate School",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Nelsen",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Fr.",
+      "hometown": "Washington, D.C. / St. Alban’s School",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Rosenthal",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Hermosa Beach, Calif. / Mira Costa",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Helfrich",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "McLean, Va. / McLean",
+      "previousSchool": null
+    },
+    {
+      "name": "Zayan Ahmed",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Allen, Texas. / Allen",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Heaps",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Birmingham, Ala. / Mountain Brook",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Richman",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Mechanicsville, Va. / Mechanicsville",
+      "previousSchool": null
+    },
+    {
+      "name": "Tate Lampman",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Ann Arbor, Mich. / Pioneer",
+      "previousSchool": null
+    },
+    {
+      "name": "Stan Rzeznik",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Fr.",
+      "hometown": "Poznan, Poland / Royal Russell School",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Strellnauer",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Las Vegas, Nev. / Colorado Connections Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Dmytro Torubara",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Kyiv, Ukraine / IMG Academy",
+      "previousSchool": null
+    }
+  ]
+}

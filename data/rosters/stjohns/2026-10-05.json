@@ -1,0 +1,277 @@
+{
+  "schoolId": "stjohns",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://redstormsports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 33,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Nico Bezama",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "West New York, N.J. / Paramus Catholic",
+      "previousSchool": null
+    },
+    {
+      "name": "Vincenzo Giuliani Mirabal",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Caracas, Venezuela / Bill Crother Secondary School (Can.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Alvaro Rodriguez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Barcelona, Spain / Institut Jaume Balmes",
+      "previousSchool": "Universidad Europea de Madrid"
+    },
+    {
+      "name": "Riki Pulido",
+      "position": "D",
+      "positionAsListed": "DEF/MID",
+      "class": "Sr.",
+      "hometown": "Mataro, Spain / Lleó XIII",
+      "previousSchool": "Escola Universitaria Formatic Barcelona"
+    },
+    {
+      "name": "Tobi Osoba",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Sr.",
+      "hometown": "Essex, England / Repton School",
+      "previousSchool": "La Salle"
+    },
+    {
+      "name": "Issa Atcha Yaya",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Accra, Ghana / Martin Luther King (N.Y.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Erik Kringstad",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Sola, Norway / Sadnes",
+      "previousSchool": null
+    },
+    {
+      "name": "Camron Boumsong",
+      "position": "D",
+      "positionAsListed": "DEF/MID",
+      "class": "Sr.",
+      "hometown": "Paris, France / Bridgton Academy",
+      "previousSchool": "Rutgers"
+    },
+    {
+      "name": "Aron Wilhelmsen",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Nittedal, Norway / NTG Kongsvinger",
+      "previousSchool": null
+    },
+    {
+      "name": "Jace Sais",
+      "position": "D",
+      "positionAsListed": "DEF/MID",
+      "class": "So.",
+      "hometown": "Albuquerque, N.M. / La Cuevo",
+      "previousSchool": "UNLV"
+    },
+    {
+      "name": "Daniel Helle",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Fr.",
+      "hometown": "Stavanger, Norway / Wang Toppidrett",
+      "previousSchool": null
+    },
+    {
+      "name": "Ander Gonzalez",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Mexico City, Mexico / Tomball (Texas)",
+      "previousSchool": null
+    },
+    {
+      "name": "Xavi Abeijon",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "So.",
+      "hometown": "Millington, N.J / Watchung Hills Regional",
+      "previousSchool": null
+    },
+    {
+      "name": "Ivar Nå Aga",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Gr.",
+      "hometown": "Odda, Norway",
+      "previousSchool": "Young Harris College (Ga.)"
+    },
+    {
+      "name": "Travis Thompson",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Jr.",
+      "hometown": "Garden City, N.Y / Garden City",
+      "previousSchool": "Maryland"
+    },
+    {
+      "name": "Lohkoah Paye",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Canton, Conn. / Northwood School",
+      "previousSchool": null
+    },
+    {
+      "name": "Cayden Walton",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Totowa, N.J. / Blair Academy",
+      "previousSchool": "Holy Cross"
+    },
+    {
+      "name": "Luca Fargnoli",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Jr.",
+      "hometown": "North Bellmore, N.Y. / Chaminade (NY)",
+      "previousSchool": null
+    },
+    {
+      "name": "Trevor Rener",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Rs.",
+      "classUnverified": "Roster prints Rs. and his bio page prints Redshirt, with no year; not on the 2025 roster; lists a high school and no previous school (read 2026-10-05)",
+      "hometown": "Austin, Texas / Anderson",
+      "previousSchool": null
+    },
+    {
+      "name": "Zander Romero",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Jr.",
+      "hometown": "Las Vegas, Nevada / Bonita (Calif.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Porucznik",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Mahwah, N.J / Mahwah",
+      "previousSchool": null
+    },
+    {
+      "name": "Brage Birkelund Eie",
+      "position": "MF",
+      "positionAsListed": "MID/FWD",
+      "class": "Fr.",
+      "hometown": "Oslo, Norway / Lambertseter VGS",
+      "previousSchool": null
+    },
+    {
+      "name": "Scott Wilhelmsen",
+      "position": "MF",
+      "positionAsListed": "MID/DEF",
+      "class": "Fr.",
+      "hometown": "Nittedal, Norway / NTG Kongsvinger",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Carrascosa",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Fr.",
+      "hometown": "East Hanover, N.J. / Montclair Kimberley Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorian Michelis",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Saddle River, N.J. / American Christian School",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Joyce",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "So.",
+      "hometown": "Metuchen, N.J / St. Thomas Aquinas",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Guerin",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "So.",
+      "hometown": "Weehawken, N.J / Weehawken",
+      "previousSchool": null
+    },
+    {
+      "name": "Kaief Tomlinson",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Jr.",
+      "hometown": "Hicksville, N.Y. / American (Cali.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Dane Frisch",
+      "position": "MF",
+      "positionAsListed": "MID",
+      "class": "Fr.",
+      "hometown": "Ramona, Calif. / Mountain Valley Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Damian Halat",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "So.",
+      "hometown": "Elmwood Park, N.J / Elmwood Park Memorial",
+      "previousSchool": null
+    },
+    {
+      "name": "Henrik Ropstad",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "Jr.",
+      "hometown": "Haslum, Norway / Eikeli Videregaende",
+      "previousSchool": "Old Westbury"
+    },
+    {
+      "name": "Lavrenti Kudierov",
+      "position": "D",
+      "positionAsListed": "DEF",
+      "class": "Fr.",
+      "hometown": "Kiev, Ukraine / St. Anthony's (N.Y.)",
+      "previousSchool": null
+    },
+    {
+      "name": "Aryeh Miller",
+      "position": "MF",
+      "positionAsListed": "MID/DEF",
+      "class": "So.",
+      "hometown": "High Point, N.C. / Southwest Guliford",
+      "previousSchool": "Carolina Core F.C."
+    }
+  ]
+}

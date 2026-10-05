@@ -1,0 +1,228 @@
+{
+  "schoolId": "providence",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://friars.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Ryan Carney",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-So.",
+      "hometown": "Dunstable, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Steban Lopera",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Revere, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ian Morel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Pawtucket, R.I.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brandon Marshall",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Wake Forest, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeremy Munoz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Rahway, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Angelo Ventrella",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Toronto, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Fernando Garcia Gil",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Granada, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Montalto",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Gr.",
+      "hometown": "Stonington, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alvaro Maneiro",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Iona University"
+    },
+    {
+      "name": "Caleb Williams",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Attleboro, Mass.",
+      "previousSchool": "Hofstra"
+    },
+    {
+      "name": "Luis Gutierrez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Stamford, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Giuseppe Ciampa",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Westwood, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Vella",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Westwood, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tommy Tsouros",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Concord, N.H.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Klein",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Garden City, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Cameron Yriondo",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Sammamish, Wash.",
+      "previousSchool": "University of Virginia"
+    },
+    {
+      "name": "Karim Eljamal",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Tewksbury, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Solis",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Fort Mill, S.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "David Casado",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Alicante, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Slade",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Bolton, Mass.",
+      "previousSchool": "High Point"
+    },
+    {
+      "name": "Vasco Teixeira",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Arrentela, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Mayowa Ajayi",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Westbury, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Aiden Tucker",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Cumberland, R.I.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brian Garrepy",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R-Jr.",
+      "hometown": "Warwick, R.I.",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrian Garcia",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "Mercer County Community College"
+    },
+    {
+      "name": "Tino Kneis",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "West Chester, Pa.",
+      "previousSchool": "La Salle University"
+    },
+    {
+      "name": "Karan Sobti",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Singapore",
+      "previousSchool": "College of William & Mary"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "schoolId": "villanova",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://villanova.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 25,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Lorenzo Avalos",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Salinas, Cal.",
+      "previousSchool": null,
+      "highSchool": "Salinas H.S."
+    },
+    {
+      "name": "Gleb Bogdanov",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Ryebrook, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Sidwell Friends School"
+    },
+    {
+      "name": "Balthazar Buccini",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Chadds Ford, Pa.",
+      "previousSchool": null,
+      "highSchool": "Episcopal Academy"
+    },
+    {
+      "name": "Maximos Chrisafinis",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Clifton, N.J.",
+      "previousSchool": null,
+      "highSchool": "Clifton"
+    },
+    {
+      "name": "Brody Crampton",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Orlando, Fla.",
+      "previousSchool": null,
+      "highSchool": "Lake Highland Prep"
+    },
+    {
+      "name": "Javon Daniels",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Burlington, N.J.",
+      "previousSchool": null,
+      "highSchool": "Burlington Township"
+    },
+    {
+      "name": "Dane Johnstone",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Manhattan Beach, Cal.",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Klann",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Lindenhurst, Ill.",
+      "previousSchool": null,
+      "highSchool": "Lakes Community"
+    },
+    {
+      "name": "Fynn Lahrsen",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null,
+      "highSchool": "Cathedral"
+    },
+    {
+      "name": "Joseph Margita",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "McLean, Va.",
+      "previousSchool": null,
+      "highSchool": "McLean High School"
+    },
+    {
+      "name": "Luke Martelli",
+      "position": "D",
+      "positionAsListed": "Defense/Midfield",
+      "class": "R-Jr.",
+      "hometown": "Kinzers, Pa.",
+      "previousSchool": null,
+      "highSchool": "YSC Academy"
+    },
+    {
+      "name": "Luca Mazzola",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Newtown Square, Pa.",
+      "previousSchool": null,
+      "highSchool": "YSC Academy"
+    },
+    {
+      "name": "Marcello Mazzola",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Newtown Square, Pa.",
+      "previousSchool": null,
+      "highSchool": "YSC Academy"
+    },
+    {
+      "name": "Bar Netanel",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Gr.",
+      "hometown": "Modiin, Israel",
+      "previousSchool": null,
+      "highSchool": "Yitzhak Rabin"
+    },
+    {
+      "name": "Sam Nyenka",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Lower Merion, Pa.",
+      "previousSchool": null,
+      "highSchool": "Lower Merion"
+    },
+    {
+      "name": "Josh Oladele",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Yardley, Pa.",
+      "previousSchool": null,
+      "highSchool": "Pennsbury"
+    },
+    {
+      "name": "Josh Rairick",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Louisville, Ky.",
+      "previousSchool": null,
+      "highSchool": "Louisville Collegiate School"
+    },
+    {
+      "name": "Jayse Rand",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "R-Fr.",
+      "hometown": "Castle Pines, Col.",
+      "previousSchool": null,
+      "highSchool": "Connections Academy"
+    },
+    {
+      "name": "Will Spitznagle",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "R-So.",
+      "hometown": "Chicago, Ill.",
+      "previousSchool": null,
+      "highSchool": "Lincoln Park H.S."
+    },
+    {
+      "name": "Cam Tolson",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Bel Air, Md.",
+      "previousSchool": null,
+      "highSchool": "John Carroll School"
+    },
+    {
+      "name": "Karson Vazquez",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Winter Garden, Fla.",
+      "previousSchool": null,
+      "highSchool": "Horizon"
+    },
+    {
+      "name": "Cooper Wiseman",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Cincinnati, Ohio",
+      "previousSchool": null,
+      "highSchool": "St. Xavier"
+    },
+    {
+      "name": "Alex Yagudayev",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Brooklyn, N.Y.",
+      "previousSchool": null,
+      "highSchool": "American H.S."
+    },
+    {
+      "name": "Mikhail Zaretser",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Brooklyn, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Brooklyn Tech"
+    },
+    {
+      "name": "Jasper Zulman",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Mooresville, N.C.",
+      "previousSchool": null,
+      "highSchool": "Davidson Day"
+    }
+  ]
+}

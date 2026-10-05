@@ -1,0 +1,236 @@
+{
+  "schoolId": "setonhall",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://shupirates.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Mick Sipples",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "Middletown, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas Russo",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Devin Armstrong",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "Palm Harbor, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Hubert Brysiak",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Lódz, Poland",
+      "previousSchool": null
+    },
+    {
+      "name": "Giacomo Graziani",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Ravenna, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas Christensen",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Gentofte, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Milomir Cvoric",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Guca, Serbia",
+      "previousSchool": null
+    },
+    {
+      "name": "Matt Iriarte",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Gr.",
+      "hometown": "Flushing, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Loke Mattsson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Trelleborg, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Sivert Ryssdalsnes",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Asker, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Joaquin Brizuela",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Mendoza, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Giacomo Mana",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Torino, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Mikkel Lejbowicz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Farum, Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Shane Brobst",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Allentown, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Til Kauschke",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Hamburg, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Brock Warren",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Riverview, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tim Valentine",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Rockaway, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Harry Haslam",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Glen Rock, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Rubio",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Egg Harbor Township, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Hannes Ottosson",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Stockholm, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Feiguin",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Rosario, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Herley",
+      "position": "D",
+      "positionAsListed": "D/F",
+      "class": "Gr.",
+      "hometown": "Maplewood, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mika Wernicke",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Potsdam, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "James Reed",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Tenafly, N.J",
+      "previousSchool": null
+    },
+    {
+      "name": "Sammy Sansone",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Fairfield, Ct.",
+      "previousSchool": null
+    },
+    {
+      "name": "Lukas Syah",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Westport, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Akira Bofinger",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Summit, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gui Dos Santos",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Madison, N.J.",
+      "previousSchool": null
+    }
+  ]
+}

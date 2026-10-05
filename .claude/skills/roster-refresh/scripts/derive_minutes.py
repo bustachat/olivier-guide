@@ -134,6 +134,13 @@ def derive(school, snap):
         b = {"cleared": [], "rising_sr": [], "rising_jr": [], "returning": [], "unknown": []}
         for p in mfs:
             b[rx.bucket(p.get("class"))].append(p["name"])
+        # A midfielder whose class year the school does not publish anywhere
+        # (St. John's prints "Rs." with no year) can carry "classUnverified":
+        # "<what was checked>" in the snapshot. He stays in mf_total and in no
+        # class group, and is no longer reported as a problem. Without the
+        # field an unreadable class year still fails.
+        accepted = {p["name"] for p in mfs if p.get("classUnverified")}
+        b["unknown"] = [n for n in b["unknown"] if n not in accepted]
         # Listed with midfield as a SECOND position ("D/M", "Forward/Midfielder"):
         # not counted (first-listed rule), but named in the note so a reader can see why.
         second = [(p["name"], published_position(p)) for p in snap["players"]

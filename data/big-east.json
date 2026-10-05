@@ -138,26 +138,25 @@
     },
     "minutesOutlook": {
       "available": true,
-      "mf_total": 13,
+      "mf_total": 12,
       "roster_season": "2026-27",
-      "cleared_before_2027": 1,
-      "cleared_names": [
-        "Camron Boumsong"
-      ],
+      "cleared_before_2027": 0,
+      "cleared_names": [],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
-        "Alexander Romero",
+        "Zander Romero",
         "Kaief Tomlinson"
       ],
-      "rising_junior_2027_count": 3,
+      "rising_junior_2027_count": 4,
       "rising_junior_2027_names": [
-        "Jace Sais",
         "Andrew Porucznik",
-        "Charlie Joyce"
+        "Jorian Michelis",
+        "Charlie Joyce",
+        "Aryeh Miller"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 redstormsports.com roster (13 MFs of 31). The table publishes only #, Name, Class, Pos and Hometown — no previous-school column — so the split cannot be re-derived; classification retained. 7 of the 13 MFs are freshmen (including three Norwegians recruited together), which is strongly consistent with it. Only 1 MF clears before 2027 against 10 returning underclassmen, so the queue ahead is long.",
+      "recruit_pathway_note": "On the 2026-27 roster (33 players), 12 list midfield first. The roster now shows a previous-school column, and no midfielder lists a previous college (one lists a club, Carolina Core F.C.), so midfield places are filled by first-year recruits. 5 of the 12 are freshmen, including three Norwegians. No midfielder finishes before August 2027, so the queue ahead is long.",
       "trajectory": [
         {
           "year": 2027,
@@ -183,7 +182,8 @@
           "pct": 65,
           "label": "Established starter"
         }
-      ]
+      ],
+      "trajectoryNote": "On the 2026-27 roster, none of the 12 midfielders finish before Olivier arrives in August 2027. In his first season, 2 will be seniors, 4 will be juniors and 5 will be sophomores. One more midfielder is listed only as a redshirt with no class year. 3 more players are listed with midfield as a second position (DEF/MID) and are not counted."
     },
     "profileDepth": "full",
     "confKey": "big-east",
@@ -427,12 +427,12 @@
       "cleared_before_2027": 3,
       "cleared_names": [
         "Diego Ferruzzi",
-        "Edward Morales",
-        "Allan Juarez"
+        "Allan Juarez",
+        "Edward Morales"
       ],
       "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
-        "Miguel \"Angel\" Lopez",
+        "Angel Lopez",
         "Toraji Narazaki",
         "Brady Bragg"
       ],
@@ -444,7 +444,7 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-confirmed on the live 2026-27 gocreighton.com roster (13 MFs of 29). 9 of 13 came straight from high school; 4 list a previous college — 2 of them from the same JUCO (Iowa Western), plus Central Arkansas and California. So the freshman route dominates, but Creighton does run a repeat JUCO channel worth knowing about.",
+      "recruit_pathway_note": "On the 2026-27 roster (29 players), 13 list midfield first. 9 of the 13 came straight from high school; 4 list a previous college: two from the same junior college (Iowa Western), plus Central Arkansas and California. The freshman route dominates, but Creighton does use a repeat junior college channel.",
       "trajectory": [
         {
           "year": 2027,
@@ -471,7 +471,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 3 of 13 midfielders finish before Olivier arrives in August 2027. In his first season, 3 will be seniors, 3 will be juniors and 4 will be sophomores. Creighton has a solid Big East history with active JUCO transfer pipeline."
+      "trajectoryNote": "On the 2026-27 roster, 3 of 13 midfielders finish before Olivier arrives in August 2027. In his first season, 3 will be seniors, 3 will be juniors and 4 will be sophomores."
     },
     "acuUnits": [
       {
@@ -585,14 +585,14 @@
     },
     "mapX": 541,
     "mapY": 139,
-    "fitOlivier": 44,
+    "fitOlivier": 48,
     "lensScores": {
-      "overall": 44,
+      "overall": 48,
       "soccer": 60,
       "academic": 68,
-      "minutes": 21,
+      "minutes": 31,
       "lifestyle": 50,
-      "value": 26
+      "value": 29
     },
     "confRecord": [
       {
@@ -680,7 +680,7 @@
       {
         "name": "Craig Stewart",
         "role": "Head Coach",
-        "email": "cstewart@providence.edu",
+        "email": "cstewar3@providence.edu",
         "bg": "Head Coach. Developing Providence in competitive Big East."
       },
       {
@@ -695,12 +695,13 @@
     "domain": "providence.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 10,
+      "mf_total": 11,
       "roster_season": "2026-27",
-      "cleared_before_2027": 2,
+      "cleared_before_2027": 3,
       "cleared_names": [
         "Fernando Garcia Gil",
-        "Caleb Williams"
+        "Caleb Williams",
+        "Cameron Yriondo"
       ],
       "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
@@ -717,34 +718,34 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-confirmed on the live 2026-27 friars.com roster (10 MFs of 25). Only 2 of 10 are US college transfers (Iona, Hofstra) and one more came from a Spanish club B side (UCAM Murcia B); the other 7 arrived directly from high school. Half the midfield are sophomores who return through 2029.",
+      "recruit_pathway_note": "On the 2026-27 roster (27 players), 11 list midfield. 3 of the 11 list a previous college (Iona, Hofstra and Virginia, two of them graduate students); the other 8 arrived directly. Five of the midfielders are sophomores who return through 2029.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 15,
-          "label": "Development year"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Bench / development"
+          "pct": 40,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 65,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 75,
-          "label": "Established starter"
+          "pct": 80,
+          "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "5 strong rising juniors dominate MF competition in Yr1–Yr2, departing after 2028-29. Providence had a strong 2025 (4th Big East, beat Georgetown semi). Coach Craig Stewart confirmed."
+      "trajectoryNote": "On the 2026-27 roster, 3 of 11 midfielders finish before Olivier arrives in August 2027. In his first season, 2 will be seniors, 5 will be juniors and 1 will be a sophomore."
     },
     "acuUnits": [
       {
@@ -969,7 +970,7 @@
       "roster_season": "2026-27",
       "cleared_before_2027": 2,
       "cleared_names": [
-        "Matthew Iriarte",
+        "Matt Iriarte",
         "Nico Rubio"
       ],
       "rising_senior_2027_count": 4,
@@ -986,7 +987,7 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 shupirates.com roster (11 MFs of 28). Seton Hall's table carries no previous-school column, so the split cannot be re-derived; classification retained. The midfield is strongly international (Norway, Italy, Germany, Sweden) with 3 freshmen, consistent with direct club/academy recruiting — a close profile match to Olivier's own route.",
+      "recruit_pathway_note": "On the 2026-27 roster (28 players), 11 list midfield. Seton Hall's roster has no previous-school column, so the split between freshmen and transfers cannot be read from it and the earlier classification is kept. The midfield is strongly international (Norway, Italy, Germany, Sweden) with 3 freshmen, which fits direct club and academy recruiting, close to Olivier's own route.",
       "trajectory": [
         {
           "year": 2027,
@@ -1013,7 +1014,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 2 of 11 midfielders finish before Olivier arrives in August 2027. In his first season, 4 will be seniors, 2 will be juniors and 3 will be sophomores. Program in transition under head coach Andreas Lindberg."
+      "trajectoryNote": "On the 2026-27 roster, 2 of 11 midfielders finish before Olivier arrives in August 2027. In his first season, 4 will be seniors, 2 will be juniors and 3 will be sophomores."
     },
     "acuUnits": [
       {
@@ -1257,7 +1258,7 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-confirmed on the live 2026-27 butlersports.com roster (9 MFs of 26). 6 of 9 came straight from high school, so the freshman route still dominates, but the 3 transfers all arrived via two-year programs (Monroe CC, El Camino via Xavier) plus St. Louis University. Note NO midfielder graduates before Olivier's 2027 entry — the whole group returns, which drives the opportunity score to zero despite the accessible recruiting route.",
+      "recruit_pathway_note": "On the 2026-27 roster (26 players), 9 list midfield. 6 of the 9 came straight from high school, so the freshman route still dominates; the 3 transfers came from Monroe CC, Xavier (after El Camino) and St. Louis University. No midfielder finishes before August 2027: the whole group returns, which is why the opportunity score is zero despite the accessible recruiting route.",
       "trajectory": [
         {
           "year": 2027,
@@ -1284,7 +1285,7 @@
           "label": "Established starter"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, none of the 9 midfielders finish before Olivier arrives in August 2027. In his first season, 2 will be seniors, 6 will be juniors and 1 will be a sophomore. Butler is Big East mid-lower tier. IU Health clinical access is the academic draw."
+      "trajectoryNote": "On the 2026-27 roster, none of the 9 midfielders finish before Olivier arrives in August 2027. In his first season, 2 will be seniors, 6 will be juniors and 1 will be a sophomore."
     },
     "acuUnits": [
       {
@@ -1398,14 +1399,14 @@
     },
     "mapX": 461,
     "mapY": 176,
-    "fitOlivier": 47,
+    "fitOlivier": 45,
     "lensScores": {
-      "overall": 47,
+      "overall": 45,
       "soccer": 63,
       "academic": 68,
-      "minutes": 26,
+      "minutes": 21,
       "lifestyle": 50,
-      "value": 28
+      "value": 27
     },
     "confRecord": [
       {
@@ -1510,42 +1511,42 @@
       "available": true,
       "mf_total": 10,
       "roster_season": "2026-27",
-      "cleared_before_2027": 2,
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Nathan Trickett",
         "Alejandro Silvestrini"
       ],
-      "rising_senior_2027_count": 3,
+      "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
         "Efraims Valutadatils",
         "Fred Cotta",
+        "Cristiano Fitzgerald",
         "Immanuel Wayoro"
       ],
       "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Ryan D'urso",
-        "Johnny Gourley"
+        "Osi Onwudiwe",
+        "Jose Pedro"
       ],
       "recruit_risk": "High",
-      "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Reclassified from Freshman-friendly on the live 2026-27 goxavier.com roster (10 MFs of 30). 4 of 10 MFs list a previous college and three of those are two-year programs — Iowa Western CC, Snow College and Monroe (plus Rockhurst). The other 6 came straight from high school, 3 of them current freshmen. That is a genuine two-route midfield rather than a freshman-intake one, and the JUCO channel is unusually busy.",
+      "recruit_pathway": "Transfer-preferred",
+      "recruit_pathway_note": "On the 2026-27 roster (29 players), 10 list midfield. 7 of the 10 list a previous college: Iowa Western CC, Snow College, Monroe, Rockhurst, Maryland, Virginia Tech and Akron. The other 3 are freshmen who came straight in. Midfield places here go mostly to transfers, with a busy junior college channel.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Bench / development"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
-          "label": "Squad rotation"
+          "pct": 30,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
+          "pct": 55,
           "label": "Likely starter"
         },
         {
@@ -1555,7 +1556,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 2 of 10 midfielders finish before Olivier arrives in August 2027. In his first season, 3 will be seniors, 2 will be juniors and 3 will be sophomores. Head coach: John Higgins."
+      "trajectoryNote": "On the 2026-27 roster, 1 of 10 midfielders finishes before Olivier arrives in August 2027. In his first season, 4 will be seniors, 2 will be juniors and 3 will be sophomores."
     },
     "acuUnits": [
       {
@@ -1669,14 +1670,14 @@
     },
     "mapX": 538,
     "mapY": 146,
-    "fitOlivier": 46,
+    "fitOlivier": 50,
     "lensScores": {
-      "overall": 46,
+      "overall": 50,
       "soccer": 81,
       "academic": 73,
-      "minutes": 21,
+      "minutes": 33,
       "lifestyle": 0,
-      "value": 28
+      "value": 30
     },
     "confRecord": [
       {
@@ -1781,16 +1782,18 @@
     "domain": "uconn.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 10,
+      "mf_total": 12,
       "roster_season": "2026-27",
-      "cleared_before_2027": 1,
+      "cleared_before_2027": 2,
       "cleared_names": [
-        "Max Gummesson"
+        "Max Gummesson",
+        "Steve Delacour"
       ],
-      "rising_senior_2027_count": 4,
+      "rising_senior_2027_count": 5,
       "rising_senior_2027_names": [
         "Matias Paredes",
         "Aidan Sheppela",
+        "Jorge Sandoval",
         "Yotaro Furutani",
         "Mateo DePinho"
       ],
@@ -1802,34 +1805,34 @@
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 uconnhuskies.com roster (10 MFs of 27). UConn's table carries no previous-school column, so the split cannot be re-derived; classification retained. Shape of the group favours a 2028 entry over 2027: only 1 MF clears before Olivier arrives, but 4 more graduate the year after.",
+      "recruit_pathway_note": "On the 2026-27 roster (29 players), 12 list midfield. UConn's roster has no previous-school column, so the split between freshmen and transfers cannot be read from it and the earlier classification is kept. 2 midfielders finish before Olivier arrives and 5 more finish the year after, so a 2028 opening is larger than the 2027 one.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 15,
-          "label": "Development year"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 30,
-          "label": "Bench / development"
+          "pct": 45,
+          "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 55,
-          "label": "Likely starter"
+          "pct": 70,
+          "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 1 of 10 midfielders finishes before Olivier arrives in August 2027. In his first season, 4 will be seniors, 3 will be juniors and 2 will be sophomores. Head coach: Chris Gbandi."
+      "trajectoryNote": "On the 2026-27 roster, 2 of 12 midfielders finish before Olivier arrives in August 2027. In his first season, 5 will be seniors, 3 will be juniors and 2 will be sophomores."
     },
     "acuUnits": [
       {
@@ -1943,14 +1946,14 @@
     },
     "mapX": 420,
     "mapY": 150,
-    "fitOlivier": 42,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 42,
+      "overall": 43,
       "soccer": 46,
       "academic": 73,
-      "minutes": 31,
+      "minutes": 33,
       "lifestyle": 50,
-      "value": 25
+      "value": 26
     },
     "confRecord": [
       {
@@ -2061,20 +2064,20 @@
         "Chase Stegall",
         "Jordan Clagette"
       ],
-      "rising_senior_2027_count": 2,
+      "rising_senior_2027_count": 3,
       "rising_senior_2027_names": [
         "Eli Wachs",
-        "Max Padua"
+        "Max Padua",
+        "Tyler Flowers"
       ],
-      "rising_junior_2027_count": 3,
+      "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
         "Ronan Selbo",
-        "Tyler Flowers",
         "Nathan Laird"
       ],
       "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 depaulbluedemons.com roster (11 MFs of 29). DePaul's table publishes only #, Name, Class, Pos and Hometown — no previous-school column — so the split cannot be re-derived; classification retained. 3 of 11 MFs are freshmen and the roster is heavily Illinois-sourced, consistent with direct high-school recruiting.",
+      "recruit_pathway_note": "On the 2026-27 roster (29 players), 11 list midfield. DePaul's roster has no previous-school column, so the split between freshmen and transfers cannot be read from it and the earlier classification is kept. 3 of the 11 are freshmen and the group is heavily Illinois-sourced, which fits direct high-school recruiting.",
       "trajectory": [
         {
           "year": 2027,
@@ -2085,23 +2088,23 @@
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 40,
+          "pct": 45,
           "label": "Squad rotation"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 65,
+          "pct": 70,
           "label": "Established starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
+          "pct": 85,
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 3 of 11 midfielders finish before Olivier arrives in August 2027. In his first season, 2 will be seniors, 3 will be juniors and 3 will be sophomores. DePaul is weakest Big East Midwest program (last place twice). Chicago Lincoln Park location is the main draw."
+      "trajectoryNote": "On the 2026-27 roster, 3 of 11 midfielders finish before Olivier arrives in August 2027. In his first season, 3 will be seniors, 2 will be juniors and 3 will be sophomores."
     },
     "acuUnits": [
       {
@@ -2341,7 +2344,7 @@
       ],
       "recruit_risk": "Medium",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 villanova.com roster (9 MFs of 25). Villanova's card layout carries a previous-school field but publishes it empty for every midfielder, so the split cannot be re-derived; classification retained. 3 of 9 MFs clear before 2027 against a small returning group, which is a reasonable ratio for a squad this size.",
+      "recruit_pathway_note": "On the 2026-27 roster (25 players), 9 list midfield first. Villanova's roster has a previous-school field but leaves it empty for every midfielder, so the split between freshmen and transfers cannot be read from it and the earlier classification is kept. 3 of the 9 finish before August 2027, a reasonable share for a squad this size.",
       "trajectory": [
         {
           "year": 2027,
@@ -2368,7 +2371,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 3 of 9 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 3 will be juniors and 2 will be sophomores. Philadelphia medical district (CHOP, Penn Medicine) is the academic draw despite weak soccer."
+      "trajectoryNote": "On the 2026-27 roster, 3 of 9 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 3 will be juniors and 2 will be sophomores. One more player is listed with midfield as a second position (Defense/Midfield) and is not counted."
     },
     "acuUnits": [
       {
@@ -2482,14 +2485,14 @@
     },
     "mapX": 413,
     "mapY": 140,
-    "fitOlivier": 43,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 43,
+      "overall": 40,
       "soccer": 52,
       "academic": 73,
-      "minutes": 26,
+      "minutes": 19,
       "lifestyle": 50,
-      "value": 26
+      "value": 24
     },
     "confRecord": [
       {
@@ -2594,53 +2597,52 @@
     "domain": "marquette.edu",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 9,
+      "mf_total": 8,
       "roster_season": "2026-27",
-      "cleared_before_2027": 3,
+      "cleared_before_2027": 1,
       "cleared_names": [
-        "Mateo Stoka",
-        "Jonathan Monreal-Herrera",
-        "Clayton Hamler"
+        "Mateo Stoka"
       ],
-      "rising_senior_2027_count": 1,
+      "rising_senior_2027_count": 2,
       "rising_senior_2027_names": [
+        "Hudson Torrez",
         "David Siemionko"
       ],
       "rising_junior_2027_count": 2,
       "rising_junior_2027_names": [
-        "Hudson Torrez",
-        "Emilio Maldonado Frei"
+        "Emilio Maldonado Frei",
+        "Joey Buchanan"
       ],
-      "recruit_risk": "Medium",
+      "recruit_risk": "High",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 gomarquette.com roster (9 MFs of 29). Marquette's table carries no previous-school column, so the split cannot be re-derived; classification retained. 3 of 9 MFs are freshmen, including two internationals (Sweden, Switzerland) recruited straight in, which is consistent with it. 3 of 9 clear before 2027.",
+      "recruit_pathway_note": "On the 2026-27 roster (28 players), 8 list midfield. Marquette's roster has no previous-school column, so the split between freshmen and transfers cannot be read from it and the earlier classification is kept. 3 of the 8 are freshmen, one of them from Sweden, and a Swiss sophomore also came straight in. Only 1 of the 8 finishes before August 2027.",
       "trajectory": [
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 20,
-          "label": "Bench / development"
+          "pct": 15,
+          "label": "Development year"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 35,
-          "label": "Squad rotation"
+          "pct": 25,
+          "label": "Bench / development"
         },
         {
           "year": 2029,
           "yr_label": "Yr 3 (Jr.)",
-          "pct": 60,
+          "pct": 50,
           "label": "Likely starter"
         },
         {
           "year": 2030,
           "yr_label": "Yr 4 (Sr.)",
-          "pct": 80,
-          "label": "Captain candidate"
+          "pct": 75,
+          "label": "Established starter"
         }
       ],
-      "trajectoryNote": "On the 2026-27 roster, 3 of 9 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 2 will be juniors and 3 will be sophomores. Marquette will recruit actively. Head coach: David Korn. Froedtert/MCW clinical access is the pre-PT draw."
+      "trajectoryNote": "On the 2026-27 roster, 1 of 8 midfielders finishes before Olivier arrives in August 2027. In his first season, 2 will be seniors, 2 will be juniors and 3 will be sophomores."
     },
     "acuUnits": [
       {
@@ -2872,7 +2874,7 @@
         "Charlie Rosenthal"
       ],
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Re-read on the live 2026-27 guhoyas.com roster — 18 MFs of a 28-man squad, an unusually large midfield group. Georgetown's roster table publishes no previous-school column, so the transfer-vs-freshman split cannot be re-derived directly; every one of the 18 lists a high school rather than a college (Shattuck Saint Mary's, St. Alban's, Royal Russell), which is consistent with the retained classification. 5 of 18 are freshmen.",
+      "recruit_pathway_note": "On the 2026-27 roster (28 players), 18 list midfield first, an unusually large group. The roster has a previous-school column and it is empty for all 18; each lists a high school (Shattuck Saint Mary's, St. Alban's, Royal Russell), so midfield places are filled by first-year recruits. 5 of the 18 are freshmen.",
       "trajectory": [
         {
           "year": 2027,
@@ -2899,7 +2901,7 @@
           "label": "Captain candidate"
         }
       ],
-      "trajectoryNote": "Georgetown is a perennial Big East champion with a deep, technically elite squad. MF competition is intense. Wiese recruits nationally and internationally — Olivier would need to be exceptional to break in early. Years 3-4 are the realistic peak opportunity.",
+      "trajectoryNote": "On the 2026-27 roster, 5 of 18 midfielders finish before Olivier arrives in August 2027. In his first season, 4 will be seniors, 4 will be juniors and 5 will be sophomores.",
       "rising_senior_2027_count": 4,
       "rising_senior_2027_names": [
         "Aidan Godinho",

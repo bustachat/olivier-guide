@@ -1,0 +1,246 @@
+{
+  "schoolId": "butler",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://butlersports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 26,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Brooks Boersma",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Jr.",
+      "hometown": "Haslett, Mich.",
+      "previousSchool": null,
+      "highSchool": "Haslett"
+    },
+    {
+      "name": "Oscar Dawber",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Huddersfield, England",
+      "previousSchool": null,
+      "highSchool": "Huddersfield Grammar"
+    },
+    {
+      "name": "Evan Muckridge",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Fr.",
+      "hometown": "Carmel, Ind.",
+      "previousSchool": null,
+      "highSchool": "Carmel"
+    },
+    {
+      "name": "Manolo Ferreres",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Deltebre, Catalonia, Spain",
+      "previousSchool": null,
+      "highSchool": "IES Miralcamp"
+    },
+    {
+      "name": "Kiel Higginson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Abercarn, Caerphilly, Wales",
+      "previousSchool": null,
+      "highSchool": "Newbridge School"
+    },
+    {
+      "name": "Haato Efune",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Tokyo, Japan",
+      "previousSchool": "Monroe CC",
+      "highSchool": "Azusa Daiichi"
+    },
+    {
+      "name": "Luca Raso",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R-So.",
+      "hometown": "West Dundee, Ill.",
+      "previousSchool": null,
+      "highSchool": "Marian Central Catholic"
+    },
+    {
+      "name": "Nacho de Miguel",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null,
+      "highSchool": "Holy Mary British Catholic"
+    },
+    {
+      "name": "Brendan Cunningham",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-So.",
+      "hometown": "St. Louis, Mo.",
+      "previousSchool": null,
+      "highSchool": "St. Louis University HS"
+    },
+    {
+      "name": "Adam Watson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Stoke on Trent, United Kingdom",
+      "previousSchool": null,
+      "highSchool": "St. John Fisher Catholic"
+    },
+    {
+      "name": "Hayden Neale",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Boulder, Colo.",
+      "previousSchool": null,
+      "highSchool": "Boulder"
+    },
+    {
+      "name": "Jaden Hancock",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Redondo Beach, Calif.",
+      "previousSchool": "Xavier / El Camino",
+      "highSchool": "Redondo Union"
+    },
+    {
+      "name": "Charlie Hosier",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Lakewood Ranch, Fla.",
+      "previousSchool": null,
+      "highSchool": "Lakewood Ranch"
+    },
+    {
+      "name": "Kai Pope",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "R-So.",
+      "hometown": "St. Louis, Mo.",
+      "previousSchool": null,
+      "highSchool": "St. Louis City"
+    },
+    {
+      "name": "Alec Sexton",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Annapolis, Md.",
+      "previousSchool": null,
+      "highSchool": "Mount Saint Joseph"
+    },
+    {
+      "name": "Lou-Kent Bosc",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Gr.",
+      "hometown": "Nogent-sur-Marne, France",
+      "previousSchool": null,
+      "highSchool": "Paris Saint-Germain"
+    },
+    {
+      "name": "Max Klein",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Immesheim, Rhineland-Palatinate, Germany",
+      "previousSchool": null,
+      "highSchool": "Nordpfalzgymnasium"
+    },
+    {
+      "name": "Trent Lindsey",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-So.",
+      "hometown": "Gilbert, Ariz.",
+      "previousSchool": null,
+      "highSchool": "Hamilton"
+    },
+    {
+      "name": "Finn Moran",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Cranford, N.J.",
+      "previousSchool": null,
+      "highSchool": "Cranford"
+    },
+    {
+      "name": "Anden Ellis",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Fr.",
+      "hometown": "Saint Louis, Mo.",
+      "previousSchool": "SMU",
+      "highSchool": "Christian Brothers College"
+    },
+    {
+      "name": "Braden Benyr",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Swansea, Ill.",
+      "previousSchool": "St. Louis University",
+      "highSchool": "Belleville East"
+    },
+    {
+      "name": "Chace Crismale",
+      "position": "F",
+      "positionAsListed": "F/D",
+      "class": "Fr.",
+      "hometown": "Glen Gardner, N.J.",
+      "previousSchool": null,
+      "highSchool": "North Hunterdon"
+    },
+    {
+      "name": "Hudson Sullivan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Fr.",
+      "hometown": "Southlake, Texas",
+      "previousSchool": "Cal Baptist",
+      "highSchool": "Southlake Carroll"
+    },
+    {
+      "name": "Nikolas Juarez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "R-Jr.",
+      "hometown": "Aurora, Ill.",
+      "previousSchool": null,
+      "highSchool": "ASU Prep Academy - Casa Grande"
+    },
+    {
+      "name": "Jameson Metz",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Jr.",
+      "hometown": "Derwood, Md.",
+      "previousSchool": null,
+      "highSchool": "Colonel Zadok Magruder"
+    },
+    {
+      "name": "Inigo Esmanech",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Fr.",
+      "hometown": "Sacramento, Calif.",
+      "previousSchool": null,
+      "highSchool": "K12 Private Academy"
+    }
+  ]
+}

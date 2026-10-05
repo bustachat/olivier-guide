@@ -1,0 +1,244 @@
+{
+  "schoolId": "xavier",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://goxavier.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Austin Nowak",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Cincinnati, Ohio / Archbishop Moeller",
+      "previousSchool": null
+    },
+    {
+      "name": "Jonny Mennell",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "Asheville, N.C. / K12 Private Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Reece Cousino",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Dayton, Ohio / FCC Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Nolan Brice",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Crestwood, Ky. / South Oldham",
+      "previousSchool": null
+    },
+    {
+      "name": "Ajmal Tesilimi",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Brampton, Canada / David Suzuki Secondary",
+      "previousSchool": "Iowa Western CC"
+    },
+    {
+      "name": "Ryan D'urso",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Keller, Texas / Keller",
+      "previousSchool": null
+    },
+    {
+      "name": "Efraims Valutadatils",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Jurmala, Latvia /",
+      "previousSchool": "Iowa Western CC"
+    },
+    {
+      "name": "Nathan Trickett",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Independence, Ohio / St. Ignatius",
+      "previousSchool": null
+    },
+    {
+      "name": "Fred Cotta",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Lisbon, Portugal / Alves Martins Secondary",
+      "previousSchool": "Snow College"
+    },
+    {
+      "name": "Harun Bakaran",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Sarajevo, Bosnia and Herzegovina / Hoosac School (NY)",
+      "previousSchool": null
+    },
+    {
+      "name": "Cristiano Fitzgerald",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Porto, Portugal",
+      "previousSchool": "Maryland"
+    },
+    {
+      "name": "Gun Ha Lee",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Daegu, South Korea / Hyun Pung",
+      "previousSchool": "Monroe University"
+    },
+    {
+      "name": "Joshua Cline",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Centerville, Ohio / Centerville",
+      "previousSchool": "Northern Kentucky"
+    },
+    {
+      "name": "Yves Vaage",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Oslo, Norway /",
+      "previousSchool": "SMU/Gardner-Webb"
+    },
+    {
+      "name": "Immanuel Wayoro",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Roca, Neb. / Lincoln Southeast",
+      "previousSchool": "Rockhurst University"
+    },
+    {
+      "name": "Julian Fitzgerald",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Porto, Portugal /",
+      "previousSchool": null
+    },
+    {
+      "name": "Alejandro Silvestrini",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "San Juan, P.R. / Acellus Academy",
+      "previousSchool": "Monroe University"
+    },
+    {
+      "name": "Beckham Williams",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Oklahoma City, Okla. / Epic Charter Schools",
+      "previousSchool": null
+    },
+    {
+      "name": "Johnny Gourley",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Carmel, Ind. / Carmel",
+      "previousSchool": null
+    },
+    {
+      "name": "Osi Onwudiwe",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Woodbridge, Va. / Episcopal",
+      "previousSchool": "Virginia Tech"
+    },
+    {
+      "name": "Gerard Lorente",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Sant Andreu de Llavaneres, Spain /",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Pedro",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Porto, Portugal / Clip",
+      "previousSchool": "Akron"
+    },
+    {
+      "name": "Ellison Ruffin",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Oviedo, Fla. / Oviedo",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyson Lipp",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Southlake, Texas / Southlake Carroll",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas Wyke",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Bærum, Norway / Norges Toppidrettsgymnas Bærum",
+      "previousSchool": "Houston Christian"
+    },
+    {
+      "name": "Ely Detty",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Greenwood, Ind. / Center Grove",
+      "previousSchool": "Kentucky"
+    },
+    {
+      "name": "Ekene Okeke",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Houston, Texas / Texas Connections Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Laracca",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Parsippany, N.J. / St. Benedict's Prep",
+      "previousSchool": "Fairleigh Dickinson"
+    },
+    {
+      "name": "Charles Barnes",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Loudoun, Va. / Independence",
+      "previousSchool": "Winthrop"
+    }
+  ]
+}

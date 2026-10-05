@@ -1,0 +1,236 @@
+{
+  "schoolId": "marquette",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gomarquette.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Cameron Simpson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Middlesbrough, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Edvard Liljedahl",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Stockholm, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Rio Pehar",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Glenview, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Andreas Fotland",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Drammen, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Tristan Rønnestad-Stevens",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Perth, Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "Mateo Stoka",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "5th",
+      "hometown": "Menomonee Falls, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Antonio Costabile",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Bartlett, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Peyton Hoard",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Racine, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mads Konrad Horgøien",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Trondheim, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Enkido Hackå",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Sollentuna, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Hudson Torrez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Walworth, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emilio Maldonado Frei",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Geneva, Switzerland",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabe Watkins",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Dallas, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "David Siemionko",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Mount Prospect, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Dominic Firs",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Park Ridge, Ill. / Sockers FC",
+      "previousSchool": null
+    },
+    {
+      "name": "Aiden Goldberg",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Lake Zurich, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Wandschneider",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Brookfield, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Felix Masson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Whitehorse, Yukon, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Tomiwa Adewumi",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Pittsburgh, Pa.",
+      "previousSchool": null
+    },
+    {
+      "name": "Clayton Hamler",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Jefferson City, Mo.",
+      "previousSchool": null
+    },
+    {
+      "name": "Drew Mullins",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Clearwater, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Joey Buchanan",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Squamish, British Columbia, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Chidube Nwankwo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "St. Louis, Mo.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Amond",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Green Bay, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Cahill",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Madison, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Viktor Engh",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Billingstad, Norway",
+      "previousSchool": null
+    },
+    {
+      "name": "Renan Salum",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "São Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Slawinski",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Brookfield, Wis.",
+      "previousSchool": null
+    }
+  ]
+}

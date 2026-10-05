@@ -1,0 +1,244 @@
+{
+  "schoolId": "depaul",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://depaulbluedemons.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Hayden Vostal",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Geneva, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Eli Wachs",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Oakland, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Scott Godden",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Leeds, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Ronan Selbo",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Minneapolis, Minn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Gordon",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "5th",
+      "hometown": "Tulsa, Okla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Padua",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Arlington Heights, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Tinoco",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Middletown, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyler Flowers",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Wilmington, Del.",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Mullins",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Phoenix, Ariz.",
+      "previousSchool": null
+    },
+    {
+      "name": "Noeh Hernandez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Bridgeview, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Dionne",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "5th",
+      "hometown": "Hartford, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Gavin Netzel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "St. Louis, Mo.",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Pimentel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Warren, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Emir Herrera",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Joliet, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Laird",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Naperville, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Connor Vela",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Belton, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Stegall",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Atlanta, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Keagan Pace",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Greer, S.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Quinn Bedwell",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Milwaukee, Wis.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordan Clagette",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Douglasville, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luca Iaccino",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Rolling Meadows, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Hassfurther",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Kailua Kona, Hawaii",
+      "previousSchool": null
+    },
+    {
+      "name": "Matt Eger",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Rahway, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mason Kutch",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "McKinney, Texas",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Hickiewicz",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Park Ridge, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Duncan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Charleston, S.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kai Jorgenson",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Arlington Heights, Ill.",
+      "previousSchool": null
+    },
+    {
+      "name": "Chance Johnson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Mustang, Okla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jayden Waski",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Elmhurst, Ill.",
+      "previousSchool": null
+    }
+  ]
+}

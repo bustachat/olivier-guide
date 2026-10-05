@@ -6,6 +6,33 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.02 (2026-10-05) — Big East rosters stored and applied (campaign C0, step 4, third batch)
+
+**What:** all 11 Big East rosters in `data/big-east.json` were read on each school's own site, stored with positions as published, and applied from the stored roster. 73 schools' midfielder numbers now come from a stored roster; 126 are still to read.
+
+**Changes:**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| UConn | 10 | 12 | 46 | 50 | Steve Delacour (Sr.) and Jorge Sandoval (Jr.) are listed as midfielders and were not stored |
+| Providence | 10 | 11 | 44 | 48 | Cameron Yriondo (graduate student, from Virginia) added; 3 of 11 now finish before 2027 |
+| DePaul | 11 | 11 | 42 | 43 | Tyler Flowers is listed as a junior, not a sophomore |
+| Xavier | 10 | 10 | 47 | 45 | Nathan Trickett, Ryan D'urso and Johnny Gourley are now listed as defenders or forwards; Cristiano Fitzgerald (Jr., from Maryland), Osi Onwudiwe and Jose Pedro added |
+| Marquette | 9 | 8 | 43 | 40 | Jonathan Monreal-Herrera is no longer on the roster and Clayton Hamler is now listed as a defender; Hudson Torrez is a junior |
+| St. John's | 13 | 12 | 44 | 44 | Camron Boumsong and Jace Sais are listed defender-first (DEF/MID); Jorian Michelis and Aryeh Miller added |
+
+Creighton, Seton Hall, Butler, Villanova and Georgetown: same numbers as stored. Xavier's recruiting pathway changed from Mixed to Transfer-preferred (7 of its 10 midfielders list a previous college). All 11 pathway notes were rewritten to the new counts. St. John's and Georgetown now publish a previous-school column, so their pathway is read from the roster instead of carried forward.
+
+**One class year not published:** St. John's lists midfielder Trevor Rener as "Rs." and his bio page says "Redshirt", with no year. He is not on the 2025 roster and lists a high school and no previous school. He is counted in the 12 and placed in no class group, and the Minutes Outlook note says so. If he were a senior, St. John's first-year figure would move up one row; nothing on the site suggests that.
+
+**Coach check:** the head coach was confirmed on each school's own coaches page for all 11 (Masur, Torres, Stewart, Lindberg, Sarachan, Higgins, Gbandi, Plotkin, Fetrow, Korn, Wiese). No names or titles changed. Six head-coach contacts were corrected to what each page publishes: Creighton (creightonsocceracademy@creighton.edu, 402-280-3294), Providence (cstewar3@providence.edu, 401-865-2322), Xavier (higginsj5@xavier.edu, 513-745-3879), UConn (menssoccer@uconn.edu), DePaul (phone 773-325-7231), Georgetown (gumenssoccer@georgetown.edu, 202-687-2364). No score changed, so no re-rank. The assistant-coach lists for all 11 were placeholders ("Assistant Coach" with a general address); they now carry the names, titles and emails on each coaches page. Connor Klekota is no longer on Georgetown's staff page and was removed.
+
+**Not published, left as stored:** the head-coach emails for Seton Hall, Villanova and Marquette. St. John's page prints only an extension, 6197, for Dr. Masur; the stored number ends 6139. It was not changed because the full number is not printed.
+
+**Tooling:** `derive_minutes.py` accepts `classUnverified` on a snapshot player (see above); a negative test proves ROSTER-SRC still fails without it.
+
+**Checks:** `validate_schools.py` and `validate_consistency.js` pass (Issues: 0); negtest 36/36 proven; roster arithmetic, snapshot and jargon checks pass. Local browser: 213 schools load, the 11 cards show the new Fit Scores, the Minutes Outlook tab renders the new notes with no "undefined", and Georgetown's modal opens with the corrected contact.
+
 ### v46.01 (2026-10-05) — Big Ten rosters stored and applied (campaign C0, step 4, second batch)
 
 **What:** all 11 Big Ten rosters were read on each school's own site, stored with positions as published, and applied from the stored roster. 62 schools' midfielder numbers now come from a stored roster; 137 are still to read.

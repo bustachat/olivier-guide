@@ -1,0 +1,244 @@
+{
+  "schoolId": "uconn",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://uconnhuskies.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Joe Grossman",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-So.",
+      "hometown": "Freehold, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Hess",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Jr.",
+      "hometown": "Guilford, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Summerville Beckford",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Ossining, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Brayden Strait",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Huntsville, Ala.",
+      "previousSchool": null
+    },
+    {
+      "name": "Maxim Emmerling",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Frankfurt, Germany",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Gummesson",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Gothenburg, Sweden",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Tupay",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Phoenix, Ariz.",
+      "previousSchool": null
+    },
+    {
+      "name": "Abel Ador",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Xikpo, Ghana",
+      "previousSchool": null
+    },
+    {
+      "name": "Matias Paredes",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "R-Jr.",
+      "hometown": "Miami, Fla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Steve Delacour",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Sr.",
+      "hometown": "Alençon, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Elijah Langford",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Edmond, Okla.",
+      "previousSchool": null
+    },
+    {
+      "name": "Rashid Nacif Joffre",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Santa Cruz, Bolivia",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Sheppela",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Brentwood, N.H.",
+      "previousSchool": null
+    },
+    {
+      "name": "Evan Pickering",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Carlsbad, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kyle Durham",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-Jr.",
+      "hometown": "Brooklyn, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Sandoval",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Gainesville, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Yotaro Furutani",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Tokyo, Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacques Mason",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Monrovia, Liberia",
+      "previousSchool": null
+    },
+    {
+      "name": "Grant Emerhi",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Mansfield, Mass.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alfonso Arredondo",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Szymon Sokolnicki",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Warsaw, Poland",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas DePinho",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr.",
+      "hometown": "Clark, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Johan Hamel",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Angers, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Preston Alessio",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Beacon Falls, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Bland",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Murfreesboro, Tenn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Mateo DePinho",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Jr.",
+      "hometown": "Clark, N.J.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Francis",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Farmington, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Ryan",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So.",
+      "hometown": "Brookfield, Conn.",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Hubbard",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "The Woodlands, Texas",
+      "previousSchool": null
+    }
+  ]
+}

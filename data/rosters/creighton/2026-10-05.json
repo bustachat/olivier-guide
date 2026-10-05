@@ -1,0 +1,244 @@
+{
+  "schoolId": "creighton",
+  "schoolFile": "data/big-east.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gocreighton.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Matthew Hudson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Marion, Iowa / Piper HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Reed",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Felton, Del. / Caesar Rodney HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Brian Edelman",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Warren, N.J. / Watchung Hills Regional HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrija Savic",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Belgrade, Serbia / Druga Ekonomska Skola HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Caden Johnson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Glenwood, Iowa / Glenwood HS",
+      "previousSchool": "Iowa Western"
+    },
+    {
+      "name": "Lucas Cavalcante",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Dallas, Texas / University Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Bautista Rossi",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Rosario, Argentina / New Zealand Pacific HS",
+      "previousSchool": "Iona"
+    },
+    {
+      "name": "Carter Derksen",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Lee's Summit, Mo. / Blue Springs South HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Lopez",
+      "position": "MF",
+      "positionAsListed": "M/F",
+      "class": "Jr.",
+      "hometown": "Dodge City, Kan. / Dodge City HS",
+      "previousSchool": "Iowa Western"
+    },
+    {
+      "name": "Ayden Kokoszka",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Easthampton, Mass. / Williston Northampton HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Carter Tavares",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Toronto, Canada / Blyth Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordan Igwenma",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Omaha, Neb. / Creighton Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Ferruzzi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "McKinney, Texas / McKinney Boyd HS",
+      "previousSchool": "Central Arkansas"
+    },
+    {
+      "name": "Aaron Deppe",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Coopersville, Mich. / Laurel Springs HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Mario Albert",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Valencia, Spain / Luis Vives HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Ange Gbe",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Toronto, Canada / PèrePhilippe-Lamarche HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Toraji Narazaki",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Osaka, Japan / Amagasaki Municipal HS",
+      "previousSchool": "Iowa Western"
+    },
+    {
+      "name": "Grady Gilchrist",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Albuquerque, N.M. / Albuquerque Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Allan Juarez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "5th",
+      "hometown": "San Francisco, Calif. / Mission HS",
+      "previousSchool": "California"
+    },
+    {
+      "name": "Brady Bragg",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Omaha, Neb. / Creighton Prep",
+      "previousSchool": null
+    },
+    {
+      "name": "Spencer Sappleton",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Toronto, Canada / Danforth Collegiate and Technological Institute",
+      "previousSchool": null
+    },
+    {
+      "name": "Edward Morales",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "McAllen, Texas / Sharyland HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Clayton Brooks",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Louisville, Ky. / Xavier HS",
+      "previousSchool": "DePaul"
+    },
+    {
+      "name": "Peter Westling",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Elkhorn, Neb. / Shattuck’s-St Mary’s HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Tristan Kokoszka",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Easthampton, Mass. / Williston Northampton HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Leonard",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Clayton, Mo. / Clayton HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Connor Munn",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Bedford, Nova Scotia / Charles P. Allen HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Amari Thompson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Brooklyn, N.Y. / St. Benedict's Prep",
+      "previousSchool": "St. John's"
+    },
+    {
+      "name": "Andreas Frint",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Vienna, Austria / Feldgasse Realgymnassium",
+      "previousSchool": null
+    }
+  ]
+}

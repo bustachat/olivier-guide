@@ -243,5 +243,12 @@
     "find": "\"rosterSeason\": \"2026-27\",",
     "replace": "\"rosterSeason\": \"2025-26\",",
     "expect": "ROSTER-SRC"
+  },
+  {
+    "name": "ROSTER-SRC / a midfielder with no readable class year and no recorded reason",
+    "file": "data/rosters/stjohns/2026-10-05.json",
+    "find": "\"classUnverified\":",
+    "replace": "\"classUnverifiedX\":",
+    "expect": "ROSTER-SRC"
   }
 ]

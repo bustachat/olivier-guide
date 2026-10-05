@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.12 (2026-10-06) — Garden City and USC Salkehatchie notes: count caveats restored
+
+**Owner ruling:** keep Garden City's midfielder count at 23 and say why it is high.
+
+**What:** the rewritten Minutes Outlook notes in v46.09 and v46.10 dropped two caveats about how a count should be read. Garden City's note again says the college lists no forwards (every outfield player is labelled defender or midfielder), so the 23 includes attacking players. USC Salkehatchie's note again says its five wingers are listed separately and are not counted. No number or score changed.
+
+**Checked:** the notes of all 50 schools refreshed since v46.08 were compared with their earlier text; no other count caveat was lost (the remaining differences are commentary the standard note no longer carries).
+
+**Validation:** `validate_consistency.js` Issues: 0; jargon check passes.
+
+---
+
 ### v46.11 (2026-10-06) — eight more junior college rosters stored and applied (campaign C0, step 4, twelfth batch)
 
 **What:** eight junior colleges were stored with positions as published and applied from the stored roster. 170 schools' midfielder numbers now come from a stored roster; 29 are still to read (39 on the coverage list, which also counts schools with no usable roster).

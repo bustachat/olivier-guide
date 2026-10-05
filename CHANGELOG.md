@@ -6,6 +6,36 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.06 (2026-10-05) — Non-major D1 rosters stored and applied (campaign C0, step 4, seventh batch)
+
+**What:** the 7 rosters still to read in `data/d1-other.json` (Akron, Delaware, Denver, GCU, Mercyhurst, UCA, Vermont) were read on each school's own site, stored with positions as published, and applied from the stored roster. 103 schools' midfielder numbers now come from a stored roster; 96 are still to read. The coverage list, which also counts schools with no usable roster, shows 17 four-year schools and 93 junior colleges.
+
+**Changes:**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Denver | 9 | 11 | 47 | 49 | The roster lists 11 midfielders. Dominic Kallay (Sr.) joins the group finishing before August 2027 (3 to 4) and Erik Collins (So.) the 2027 junior group (3 to 4). Entry competition moves from Moderate to Crowded (7 midfielders return) |
+| UCA | 9 | 7 | 43 | 44 | Douglas Asell and Danny Nava are listed Defender/Midfielder and are no longer counted (first-listed position rule). Still no midfielder finishes before August 2027 |
+| Mercyhurst | 18 | 17 | 37 | 36 | Santiago Bustamante is listed Defense/Midfielder and is no longer counted; he had been in the 2027 senior group (7 to 6) |
+| Akron | 11 | 11 | 57 | 57 | Exact match |
+| Delaware | 9 | 9 | 33 | 33 | Exact match |
+| GCU | 7 | 7 | 60 | 60 | Exact match |
+| Vermont | 9 | 9 | 57 | 57 | Exact match |
+
+**Recruiting pathway:** all 7 notes were rewritten in plain language with the new counts. No classification changed. Akron, GCU and Vermont now publish a previous-school column, so their notes are built from the roster instead of being carried over (Akron: 3 of 11 midfielders list a previous college; GCU: 2 of 7, both Phoenix College; Vermont: 2 U.S. colleges and 1 UK university of 9). Denver still publishes none, and its note says so. Squad sizes corrected in the notes: GCU 29 (was 26), Delaware 27 (was 29), Mercyhurst 59 (was 57).
+
+**Departure queue:** nothing queued.
+
+**Coach check:** the head coach was confirmed on each school's own coaches page for all 7 (Embick, McMenemy, Franks, Davies, Solomon, Segebart, Dubois). Contacts corrected to what the page publishes: Akron (menssoccer@uakron.edu, 330-972-6895), Denver (denversoccer@du.edu, 303-871-4945) and GCU's email (jamie.davies@gcu.edu). Denver's title now reads as published ("Jack and Sheila Weinberg Head Men's Soccer Coach"). No score changed, so no re-rank. Staff lists in `coaches.json` now hold the names on each coaches page: Akron (Attila Schmidt replaces Josh Kay), Delaware (placeholders replaced by Makar, McCauley, Baah, True), Denver and GCU (were empty), Mercyhurst (Ross Stewart replaces Logan McFadden; Andrew Bennett's title is Assistant Coach; Ethan Aler added), UCA (Sam Fowler replaces Travis Crane), Vermont (Randy Coble added). The Delaware and Vermont `staff[]` lists in the school file were corrected the same way.
+
+**Not published, left unchanged:** GCU, UCA and Vermont print no head-coach phone, so the stored numbers are unconfirmed (logged in CLAUDE.md section 6B). Delaware prints none and none is stored.
+
+**Sanity tests overridden, with the reason:** Denver and GCU fill the season into the page title late; a reload with a 10 second wait showed "2026 Men's Soccer Roster" and September and October 2026 results. Mercyhurst's roster has 59 unique player cards (7 goalkeepers, 17 defenders, 18 midfield-type, 17 forwards), which is a real squad, not a duplicate list. Its page prints "Defemse" for Jose Jacinto; the snapshot keeps that label as published and files him as a defender.
+
+**Verified:** `validate_schools.py` 0 errors; `validate_consistency.js` Issues: 0 (Roster source: 103 backed, 96 pending); roster arithmetic, snapshot, jargon and coach-ranking checks pass. Local browser: 213 schools load, the seven cards show the stored Fit Scores (Denver 49, UCA 44, Mercyhurst 36), all on 2026-27, corrected coach contacts resolve, Denver's Details modal shows no "undefined" or "NaN".
+
+**Files:** `data/d1-other.json`, `data/coaches.json`, `data/rosters/` (7 new snapshots and the manifest), `athletes/olivier.json`, `CLAUDE.md`, `CHANGELOG.md`.
+
 ### v46.05 (2026-10-05) — CAA rosters stored and applied (campaign C0, step 4, sixth batch)
 
 **What:** the 8 rosters still to read in `data/caa.json` (Charleston, William & Mary, Hofstra, Northeastern, Drexel, Elon, Monmouth, Stony Brook) were read on each school's own site, stored with positions as published, and applied from the stored roster. UNC Wilmington already had a stored roster. 96 schools' midfielder numbers now come from a stored roster; 103 are still to read.

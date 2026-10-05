@@ -503,14 +503,14 @@
         "bg": "Technical development."
       },
       {
-        "name": "Josh Kay",
+        "name": "Attila Schmidt",
         "role": "Assistant Coach",
-        "bg": "United Soccer Coaches 30 Under 30 honoree."
+        "bg": "Assistant coach."
       }
     ],
     "contact": {
-      "email": "jembick@uakron.edu",
-      "phone": "330-972-7080"
+      "email": "menssoccer@uakron.edu",
+      "phone": "330-972-6895"
     },
     "url": "https://gozips.com/sports/mens-soccer",
     "color": [
@@ -602,10 +602,26 @@
       "Technical midfielder development",
       "Denver city campus lifestyle"
     ],
-    "staff": [],
+    "staff": [
+      {
+        "name": "Brad Franks",
+        "role": "Men's Soccer Associate Head Coach",
+        "email": "brad.franks@du.edu"
+      },
+      {
+        "name": "Jose Arenas",
+        "role": "Men's Soccer Assistant Coach",
+        "email": "jose.arenas@du.edu"
+      },
+      {
+        "name": "Jacob Lissek",
+        "role": "Goalkeeper Coach",
+        "email": "Jacob.Lissek@du.edu"
+      }
+    ],
     "contact": {
-      "email": "soccer@du.edu",
-      "phone": "303-871-4618"
+      "email": "denversoccer@du.edu",
+      "phone": "303-871-4945"
     },
     "url": "https://denverpioneers.com/sports/mens-soccer",
     "color": [
@@ -614,7 +630,7 @@
     ],
     "licence": null,
     "overallScoreNote": "§5d 84->86 (mild UP, under-anchored). denverpioneers.com bio: 11th season as HC (named Jan 2015), HC record 136-46-36. TWO College Cups as HC (2016 & 2024 — both national semifinals, the only two in program history), NCAA Tournament 10 of 11 seasons with four top-16 seed byes. Five-time Summit League CoY + 2016 National Coaching Staff of the Year. Pillar-B pipeline is strong: six first-round MLS picks incl. Andre Shinyashiki (2019 MLS Rookie of the Year), Colorado Rapids Homegrowns (Ford 2017, Bassett 2025), Cole Bassett to USMNT; won a national title at Wake Forest as a player. Held just below Embick (88) on Akron's greater longevity/18-pick depth; below the champion-HC tier (no NCAA title as HC).",
-    "title": "Head Coach (10th season)"
+    "title": "Jack and Sheila Weinberg Head Men's Soccer Coach"
   },
   {
     "id": "grassie_marshall",
@@ -2894,9 +2910,30 @@
       "Strong recruiting eye",
       "Warm Phoenix campus"
     ],
-    "staff": [],
+    "staff": [
+      {
+        "name": "Craig McCall",
+        "role": "Assistant Coach",
+        "email": "Craig.McCall@gcu.edu"
+      },
+      {
+        "name": "Michael Garrihy",
+        "role": "Assistant Coach",
+        "email": "michael.garrihy@gcu.edu"
+      },
+      {
+        "name": "Ben Assane",
+        "role": "Assistant Coach",
+        "email": ""
+      },
+      {
+        "name": "Jason Bilger",
+        "role": "Coordinator of Operations",
+        "email": "jb04303@gcu.edu"
+      }
+    ],
     "contact": {
-      "email": "soccer@gcu.edu",
+      "email": "jamie.davies@gcu.edu",
       "phone": "602-639-7500"
     },
     "url": "https://gculopes.com/sports/mens-soccer",
@@ -5143,13 +5180,19 @@
       {
         "name": "Edgar Vargas",
         "role": "Assistant Coach",
+        "email": "Edgar.Vargas@uvm.edu",
+        "bg": "Assistant coach on Dubois's staff."
+      },
+      {
+        "name": "Randy Coble",
+        "role": "Assistant Coach",
         "email": "mens.soccer@uvm.edu",
         "bg": "Assistant coach on Dubois's staff."
       },
       {
         "name": "Eric Bissell",
         "role": "Director of Operations",
-        "email": "mens.soccer@uvm.edu",
+        "email": "",
         "bg": "Director of operations; previously a team student manager."
       }
     ],
@@ -5249,10 +5292,28 @@
     ],
     "staff": [
       {
-        "name": "Assistant Coach",
+        "name": "Justin Makar",
+        "role": "Associate Head Coach",
+        "email": "makarj@udel.edu",
+        "bg": "Associate head coach."
+      },
+      {
+        "name": "Darian McCauley",
         "role": "Assistant Coach",
-        "email": "soccer@udel.edu",
-        "bg": "Full-time assistant."
+        "email": "darianmc@udel.edu",
+        "bg": "Assistant coach."
+      },
+      {
+        "name": "Yawo Baah",
+        "role": "Assistant Coach",
+        "email": "ybaah@udel.edu",
+        "bg": "Assistant coach."
+      },
+      {
+        "name": "Colin True",
+        "role": "Director, Soccer Operations",
+        "email": "ctrue@udel.edu",
+        "bg": "Director of soccer operations."
       }
     ],
     "contact": {
@@ -6660,17 +6721,22 @@
     "staff": [
       {
         "name": "Andrew Bennett",
-        "role": "Associate Head Coach",
+        "role": "Assistant Coach",
         "email": "abennett@mercyhurst.edu"
       },
       {
-        "name": "Logan McFadden",
-        "role": "Player Development Coach",
-        "email": ""
+        "name": "Ross Stewart",
+        "role": "Assistant Coach and Player Development Coordinator",
+        "email": "rstewart@mercyhurst.edu"
       },
       {
         "name": "Ethan Kinyo",
         "role": "Goalkeeper Coach",
+        "email": ""
+      },
+      {
+        "name": "Ethan Aler",
+        "role": "Graduate Assistant",
         "email": ""
       }
     ],
@@ -7939,18 +8005,18 @@
     "staff": [
       {
         "name": "Joe LaCasto",
-        "role": "Assistant Coach",
+        "role": "Assistant Men's Soccer Coach",
         "bg": "Assistant coach — player recruitment and tactical development."
       },
       {
         "name": "Will Montgomery",
-        "role": "Assistant Coach",
+        "role": "Assistant Men's Soccer Coach",
         "bg": "Assistant coach contributing to player development and scouting."
       },
       {
-        "name": "Travis Crane",
-        "role": "Director of Soccer Operations",
-        "bg": "Director of operations — logistics, recruiting coordination, programme administration."
+        "name": "Sam Fowler",
+        "role": "Assistant Men's Soccer Coach",
+        "bg": "Assistant coach."
       },
       {
         "name": "Johnathan Hull",

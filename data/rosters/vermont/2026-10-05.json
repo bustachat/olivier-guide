@@ -1,0 +1,277 @@
+{
+  "schoolId": "vermont",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://uvmathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Alec Laible",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Rock Hill, South Carolina",
+      "previousSchool": "Coastal Carolina University",
+      "highSchool": "Northwestern High School"
+    },
+    {
+      "name": "Niklas Herceg",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Alsdorf, Germany",
+      "previousSchool": "VfL Vichttal",
+      "highSchool": "Gymnasium Alsdorf"
+    },
+    {
+      "name": "Gabriel Chavez",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Wethersfield, CT",
+      "previousSchool": "Providence College",
+      "highSchool": "Xavier High School"
+    },
+    {
+      "name": "Stepan Fiker",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Prague, Czech Republic",
+      "previousSchool": "Franklin Pierce University"
+    },
+    {
+      "name": "Islam Houssni",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Rabat, Morocco",
+      "previousSchool": "ASFAR Academy"
+    },
+    {
+      "name": "Jean-David Mougenot Koffi",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Saint-Raphaël, France",
+      "previousSchool": "SC Bastia",
+      "highSchool": "Olympique de Marseille Ecole Privée"
+    },
+    {
+      "name": "Ezra Widman",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "New York, N.Y.",
+      "previousSchool": "Xavier",
+      "highSchool": "Brooklyn Technical"
+    },
+    {
+      "name": "Luis Vetter",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Diessen, Germany",
+      "previousSchool": "FC 07 Memmingen"
+    },
+    {
+      "name": "Nash Barlow",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Jr.",
+      "hometown": "Burlington, Vt.",
+      "previousSchool": null,
+      "highSchool": "Burlington / Worcester Academy"
+    },
+    {
+      "name": "Philipp Schmidtke",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Gifhorn, Germany",
+      "previousSchool": "Cumberland University"
+    },
+    {
+      "name": "Thaddeus Liquori",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-Jr.",
+      "hometown": "Westfield, Mass.",
+      "previousSchool": null,
+      "highSchool": "Worcester Academy"
+    },
+    {
+      "name": "Gianluca Armellino",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-Jr.",
+      "hometown": "Milford, Conn.",
+      "previousSchool": "New England Revolution Academy",
+      "highSchool": "Connections Academy"
+    },
+    {
+      "name": "Shalom Adja",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Ellicott City, MD",
+      "previousSchool": "Columbus Crew 2",
+      "highSchool": "Mount Hebron High School"
+    },
+    {
+      "name": "David Ismail",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Gr.",
+      "hometown": "Bayreuth, Germany",
+      "previousSchool": "SpVgg Bayreuth",
+      "highSchool": "Bertolt-Brecht-Schule"
+    },
+    {
+      "name": "Aleksei Carnier",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Strasbourg, France",
+      "previousSchool": "University of Strasbourg/Sv Oberachern",
+      "highSchool": "Lycée Sainte-Anne"
+    },
+    {
+      "name": "Brady Costin",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "R-So.",
+      "hometown": "Wayne, Pa.",
+      "previousSchool": "University of Delaware",
+      "highSchool": "Conestoga High School"
+    },
+    {
+      "name": "Arthur Caldas",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "São Paulo - SP, Brazil",
+      "previousSchool": "Corinthians and Portuguesa",
+      "highSchool": "E.E Deputado Silva Prado, Sao Paulo SP"
+    },
+    {
+      "name": "Halim Bangura",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "London, England",
+      "previousSchool": "Loughborough University"
+    },
+    {
+      "name": "Daniel Palomino",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Medford, Oregon",
+      "previousSchool": "Southern Oregon University",
+      "highSchool": "Phoenix"
+    },
+    {
+      "name": "Luis Fischer",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Kassel, Germany",
+      "previousSchool": "ZFC Meuselwitz, Chemnitzer FC",
+      "highSchool": "Sportgymnasium Jena"
+    },
+    {
+      "name": "Noel Bjork",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Gr.",
+      "hometown": "Karlstad, Sweden",
+      "previousSchool": "FBK Karlstad",
+      "highSchool": "Sundsta- älvkullegymnasiet"
+    },
+    {
+      "name": "Karl Daly",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Burlington, Vt.",
+      "previousSchool": null,
+      "highSchool": "Burlington"
+    },
+    {
+      "name": "Gavin Stevenson",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Coon Rapids, MN",
+      "previousSchool": "Minnesota United FC Academy",
+      "highSchool": "Coon Rapids High School"
+    },
+    {
+      "name": "Pieter Bultman",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "R-Sr.",
+      "hometown": "Lexington, Mass.",
+      "previousSchool": null,
+      "highSchool": "Lexington"
+    },
+    {
+      "name": "Mark Isong",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "County Dublin, Ireland",
+      "previousSchool": "Bolton Wanderers",
+      "highSchool": "Belvedere College Dublin"
+    },
+    {
+      "name": "Patrick Aguilar",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Leipzig, Germany",
+      "previousSchool": "FC Eilenburg",
+      "highSchool": "Pierre-de-Coubertin Gymnasium Erfurt, Thuringia"
+    },
+    {
+      "name": "Jack McDowell",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Rugby, England",
+      "previousSchool": "Queens Park Rangers",
+      "highSchool": "Ashlawn School, Rugby"
+    },
+    {
+      "name": "Jeremy Tsang",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Sai Kung, Hong Kong",
+      "previousSchool": "Black Rock FC",
+      "highSchool": "Northwood"
+    },
+    {
+      "name": "Christian Rodriguez",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Stamford, Connecticut",
+      "previousSchool": "CT United MLS NEXT/NEXT PRO",
+      "highSchool": "JM Wright Technical High School"
+    },
+    {
+      "name": "Shane Williams",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "R-So.",
+      "hometown": "Boulder, CO",
+      "previousSchool": "Colgate University",
+      "highSchool": "Fairview High School"
+    }
+  ]
+}

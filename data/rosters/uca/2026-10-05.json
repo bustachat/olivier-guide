@@ -1,0 +1,233 @@
+{
+  "schoolId": "uca",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://ucasports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Merrick Cook",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Blooming Grove, Texas",
+      "previousSchool": null,
+      "highSchool": "Servite HS"
+    },
+    {
+      "name": "Faris Ibraheem",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Brampton, Ontario",
+      "previousSchool": "Syracuse"
+    },
+    {
+      "name": "Jordan Barclay",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Toronto, Canada",
+      "previousSchool": "Portland"
+    },
+    {
+      "name": "Mateusz Wojtalik",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Aalesund, Norway",
+      "previousSchool": "Drexel"
+    },
+    {
+      "name": "Aboubacar Sidick Cisse",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Repentigny, Quebec",
+      "previousSchool": "CS Saint Laurent"
+    },
+    {
+      "name": "Garner Wolfe",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Albuquerque, N.M.",
+      "previousSchool": "New Mexico United"
+    },
+    {
+      "name": "Topias Helle",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Lahti, Finland",
+      "previousSchool": "SalPa"
+    },
+    {
+      "name": "Rico Duggan",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Northampton, England",
+      "previousSchool": "William Carey"
+    },
+    {
+      "name": "Maxim Sheenkov",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Moscow, Russia",
+      "previousSchool": null,
+      "highSchool": "Colegio El Armelar"
+    },
+    {
+      "name": "Vaclav Kozeny",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Prague, Czech Republic",
+      "previousSchool": "FK Dukla Prague"
+    },
+    {
+      "name": "Mani Berg Ellertsson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Akranes, Iceland",
+      "previousSchool": "Grindavik"
+    },
+    {
+      "name": "Douglas Asell",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "Fr.",
+      "hometown": "Knivsta, Sweden",
+      "previousSchool": "Kungsangens IF"
+    },
+    {
+      "name": "Kyle Schwartz",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "St. Louis, Mo.",
+      "previousSchool": "St. Louis Scott Gallagher SC"
+    },
+    {
+      "name": "David Germain",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Montreal, Quebec, Canada",
+      "previousSchool": null,
+      "highSchool": "Hoosac School"
+    },
+    {
+      "name": "John Malik St. Phard",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Montreal, Quebec, Canada",
+      "previousSchool": "CS Saint Laurent"
+    },
+    {
+      "name": "Kaisei Matsudo",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Saitama, Japan",
+      "previousSchool": null,
+      "highSchool": "Urawa South HS"
+    },
+    {
+      "name": "Samuel Switzer",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Bentonville, Ark.",
+      "previousSchool": "GFI Academy"
+    },
+    {
+      "name": "Benjamin Aviles",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Vina del Mar, Chile",
+      "previousSchool": "Sul Ross State"
+    },
+    {
+      "name": "Logan Smith",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Raleigh, N.C.",
+      "previousSchool": "UNC Asheville"
+    },
+    {
+      "name": "Noa Bamballi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Bangui, Republique Cetrafrique",
+      "previousSchool": "Football Bourg-en-Bresse Peronnas 01 B"
+    },
+    {
+      "name": "Jaxon Hinds",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Gr.",
+      "hometown": "Huntersville, N.C.",
+      "previousSchool": "UNC Greensboro",
+      "highSchool": "Langtree Charter Academy"
+    },
+    {
+      "name": "Dalton Anderson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Springfield, Mo.",
+      "previousSchool": "Sporting Springfield"
+    },
+    {
+      "name": "Tristan Amezcua",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Buellton, Calif.",
+      "previousSchool": "Irvine Valley College"
+    },
+    {
+      "name": "Danny Nava",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "Fr.",
+      "hometown": "Little Rock, Ark.",
+      "previousSchool": "Little Rock Rangers"
+    },
+    {
+      "name": "Michael Walenchok",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Moon Township, Pa.",
+      "previousSchool": "Presbyterian College"
+    },
+    {
+      "name": "Joseph Mwamba",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Brondby, Denmark",
+      "previousSchool": "Brondby IF"
+    },
+    {
+      "name": "Ammar Delic",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Bowling Green, Ky.",
+      "previousSchool": "Nashville SC"
+    }
+  ]
+}

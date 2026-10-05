@@ -1,0 +1,244 @@
+{
+  "schoolId": "gcu",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gculopes.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Owen Moore",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Pilesgrove, N.J.",
+      "previousSchool": "Drexel"
+    },
+    {
+      "name": "Beltran Fernandez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "5th",
+      "hometown": "Zaragoza, Spain",
+      "previousSchool": "FIU / David & Elkins College"
+    },
+    {
+      "name": "Raul Vazquez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Ciudad, Juárez, Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Felix Oberwaditzer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Vaduz, Liechtenstein",
+      "previousSchool": null
+    },
+    {
+      "name": "Matas Jokubaitis",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Edmonton, Alberta, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "João Gonçalinho",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Lisbon, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Rafael Coet",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Pamiers, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Martin Luala",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Phoenix, Ariz.",
+      "previousSchool": "Phoenix College"
+    },
+    {
+      "name": "Ife Nkabu",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Toronto, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Lopez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Bakersfield, Calif.",
+      "previousSchool": null
+    },
+    {
+      "name": "Sabri Hanni",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Paris, France",
+      "previousSchool": "UConn"
+    },
+    {
+      "name": "Alan Hermitte",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Allauch, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Damon Rouse",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Albany, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "John Somers",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Decatur, Ga.",
+      "previousSchool": null
+    },
+    {
+      "name": "Alhassan Alhassan",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Tamale, Ghana",
+      "previousSchool": null
+    },
+    {
+      "name": "Marcus Von",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Broomfield, Colo.",
+      "previousSchool": null
+    },
+    {
+      "name": "Arnau Camaño",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Tona, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Godson Anim",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Accra, Ghana",
+      "previousSchool": null
+    },
+    {
+      "name": "Abdul Rahman Mutebi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Katende, Uganda",
+      "previousSchool": null
+    },
+    {
+      "name": "Toto Salama",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Montreal, Quebec, Canada",
+      "previousSchool": null
+    },
+    {
+      "name": "Cruzeiro Cruz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Mesa, Ariz.",
+      "previousSchool": "Phoenix College"
+    },
+    {
+      "name": "Bradley De Jesus",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "London, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Nerville Ntui",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Mesa, Ariz.",
+      "previousSchool": "Phoenix College"
+    },
+    {
+      "name": "Liam Harrington",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Huntington, N.Y.",
+      "previousSchool": null
+    },
+    {
+      "name": "Romain Donnez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Mons, Belgium",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Abrams",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Charlotte, N.C.",
+      "previousSchool": null
+    },
+    {
+      "name": "Casper Van Hemelryck-Bray",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Knokke, Belgium",
+      "previousSchool": null
+    },
+    {
+      "name": "Bildad Abonga",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Homa Bay, Kenya",
+      "previousSchool": null
+    },
+    {
+      "name": "AJ Mather-Nash",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Kinsale, Ireland",
+      "previousSchool": null
+    }
+  ]
+}

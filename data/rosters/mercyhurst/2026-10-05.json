@@ -1,0 +1,540 @@
+{
+  "schoolId": "mercyhurst",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://hurstathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 59,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Jaime Tedaldi",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Sr.",
+      "hometown": "Southend On Sea, England",
+      "previousSchool": null,
+      "highSchool": "Belfries Academy"
+    },
+    {
+      "name": "Christoffer Kalkar",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Copenhagen, Denmark",
+      "previousSchool": null,
+      "highSchool": "Niels Steensens"
+    },
+    {
+      "name": "Sean Halehale",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Sinajana, Guam",
+      "previousSchool": null,
+      "highSchool": "Father Duenas Memorial"
+    },
+    {
+      "name": "Jacob Anderson",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Milton Keynes, England",
+      "previousSchool": null,
+      "highSchool": "Lord Grey"
+    },
+    {
+      "name": "Joseff Edwards",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Pontypridd, Wales, UK",
+      "previousSchool": null,
+      "highSchool": "Ysgol Gyfun Garth Olwg"
+    },
+    {
+      "name": "Ronny Wakelin",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Walsall, Staffordshire",
+      "previousSchool": null,
+      "highSchool": "Erasmus Darwin Academy"
+    },
+    {
+      "name": "Luis Felipe Santos",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Gr.",
+      "hometown": "Salvador, Brazil",
+      "previousSchool": "D'Youville",
+      "highSchool": "Putnam Science Academy"
+    },
+    {
+      "name": "Santiago Bustamante",
+      "position": "D",
+      "positionAsListed": "Defense/Midfielder",
+      "class": "Jr.",
+      "hometown": "Medellin, Colombia",
+      "previousSchool": "Francis Marion",
+      "highSchool": "Marco Fidel Suarez"
+    },
+    {
+      "name": "Ryan Tappouras",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-Jr.",
+      "hometown": "Brisbane, Australia",
+      "previousSchool": null,
+      "highSchool": "St Joseph's Nudgee College"
+    },
+    {
+      "name": "Alvar Silva",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": null,
+      "highSchool": "CE Mercantil"
+    },
+    {
+      "name": "Joe Chinchilla Sánchez",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Pérez Zeledón, San Jose, Costa Rica",
+      "previousSchool": null,
+      "highSchool": "Liceo Unesco"
+    },
+    {
+      "name": "Ryan Mrvcic",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Sydney, Australia",
+      "previousSchool": null,
+      "highSchool": "Endeavour Sports"
+    },
+    {
+      "name": "Harrison Hubert",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Cuffley, Hertfordshire, England",
+      "previousSchool": null,
+      "highSchool": "Chancellors"
+    },
+    {
+      "name": "Jackson Chiocco",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Erie, Pa.",
+      "previousSchool": null,
+      "highSchool": "Fairview"
+    },
+    {
+      "name": "Leonard Seitz",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Berlin, Germany",
+      "previousSchool": null,
+      "highSchool": "Ulrich von Hutten"
+    },
+    {
+      "name": "Max Beech",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Leicester, England",
+      "previousSchool": null
+    },
+    {
+      "name": "Harrison Dudley",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Wellington, New Zealand",
+      "previousSchool": null,
+      "highSchool": "Rathkeale College"
+    },
+    {
+      "name": "Jo Hanamoto",
+      "position": "MF",
+      "positionAsListed": "Midfield/Forward",
+      "class": "Sr.",
+      "hometown": "Yokohama, Japan",
+      "previousSchool": "Lane Community College",
+      "highSchool": "Tokai Sagami"
+    },
+    {
+      "name": "Santiago Giraldo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Medellin, Colombia",
+      "previousSchool": null,
+      "highSchool": "The Kiski School"
+    },
+    {
+      "name": "Luca Venturoli",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Bologna, Italy",
+      "previousSchool": null,
+      "highSchool": "IB International School of Bologna"
+    },
+    {
+      "name": "Jero Bencomo",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Santa Cruz de Tenerife, Spain",
+      "previousSchool": null,
+      "highSchool": "Colegio Pureza de Maria Santa Cruz"
+    },
+    {
+      "name": "Rowan Slater",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "London, England",
+      "previousSchool": null,
+      "highSchool": "Cleeve Park"
+    },
+    {
+      "name": "Benjamin Buckley",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Doneraile, Ireland",
+      "previousSchool": null,
+      "highSchool": "Nagle Rice Secondary School"
+    },
+    {
+      "name": "Paul Shaw",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Holly Springs, N.C.",
+      "previousSchool": null,
+      "highSchool": "Crossroads Flex"
+    },
+    {
+      "name": "Nico Boretto",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Mendoza, Argentina",
+      "previousSchool": null,
+      "highSchool": "Colegio Rainbow"
+    },
+    {
+      "name": "Jake Campbell",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Johannesburg, South Africa",
+      "previousSchool": null,
+      "highSchool": "Fourways High"
+    },
+    {
+      "name": "Kyle Joyce",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Peabody, Massachusetts",
+      "previousSchool": null,
+      "highSchool": "Brooks"
+    },
+    {
+      "name": "Nathan Katari",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Pittsburgh, Pa.",
+      "previousSchool": null,
+      "highSchool": "North Allegheny"
+    },
+    {
+      "name": "Arnau Corona",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Mataro, Barcelona, Spain",
+      "previousSchool": null,
+      "highSchool": "Escola Pia Santa Anna"
+    },
+    {
+      "name": "Sebastian Corletto",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So.",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "previousSchool": "St. Bonaventure",
+      "highSchool": "The Kiski School"
+    },
+    {
+      "name": "Tyler Prex",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Cranberry, Pa.",
+      "previousSchool": null,
+      "highSchool": "Seneca Valley Senior High"
+    },
+    {
+      "name": "Dominic Smith",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Charleston, South Carolina",
+      "previousSchool": null,
+      "highSchool": "Bishop England"
+    },
+    {
+      "name": "Collin Rehwaldt",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Akron, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Akron Central"
+    },
+    {
+      "name": "Colin Blanchette",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Cranston, Rhode Island",
+      "previousSchool": null,
+      "highSchool": "Bishop Hendricken"
+    },
+    {
+      "name": "Landon Marquez de la Plata",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Sunnyvale, Texas",
+      "previousSchool": "Newman",
+      "highSchool": "Sunnyvale High School"
+    },
+    {
+      "name": "Evan Ruth",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Sr.",
+      "hometown": "Wernersville, Pa.",
+      "previousSchool": null,
+      "highSchool": "Conrad Weiser"
+    },
+    {
+      "name": "Idahir Deanda",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Columbus, Ohio",
+      "previousSchool": null,
+      "highSchool": "Ohio Connections Academy"
+    },
+    {
+      "name": "Harrison Frearson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Ilkeston, Nottingham, England",
+      "previousSchool": null,
+      "highSchool": "Kirk Hallam Community"
+    },
+    {
+      "name": "Athan Lee",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Lewiston, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Lewiston Porter"
+    },
+    {
+      "name": "Aidan Suroviec",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Waterford, Pa.",
+      "previousSchool": null,
+      "highSchool": "Fort LeBoeuf"
+    },
+    {
+      "name": "Nithin Perumal",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Brookings, South Dakota",
+      "previousSchool": null,
+      "highSchool": "Brookings"
+    },
+    {
+      "name": "Cole Falk",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Rochester, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Gates Chili"
+    },
+    {
+      "name": "Jose Jacinto",
+      "position": "D",
+      "positionAsListed": "Defemse",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Cameron Dunbar",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Erie, Pa.",
+      "previousSchool": null,
+      "highSchool": "Cathedral Prep / Erie Prep Academy"
+    },
+    {
+      "name": "Dylan Klinger",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Charleroi, Pa.",
+      "previousSchool": null,
+      "highSchool": "Charleroi"
+    },
+    {
+      "name": "Owen Vergotz",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Erie, Pa.",
+      "previousSchool": null,
+      "highSchool": "Fort LeBoeuf"
+    },
+    {
+      "name": "Logan Reed",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Madison, Ohio",
+      "previousSchool": null,
+      "highSchool": "Madison"
+    },
+    {
+      "name": "Vincent Armstrong",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Berwick, Nova Scotia",
+      "previousSchool": null,
+      "highSchool": "King's Edgehill School"
+    },
+    {
+      "name": "Hamza El Shayed",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Powell",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Ambridge, Pa.",
+      "previousSchool": null,
+      "highSchool": "Ambridge Area"
+    },
+    {
+      "name": "Tyler Hunter",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Indiana, Pa.",
+      "previousSchool": null,
+      "highSchool": "Indiana Area"
+    },
+    {
+      "name": "Dominic Insera",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Hamburg, New York",
+      "previousSchool": null,
+      "highSchool": "St. Francis"
+    },
+    {
+      "name": "Drezdan Gesalman",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Jr.",
+      "hometown": "Greensburg, Pa.",
+      "previousSchool": null,
+      "highSchool": "Greensburg Salem"
+    },
+    {
+      "name": "Jimmy Catsaros",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Arlington Heights, Ill",
+      "previousSchool": null,
+      "highSchool": "John Hersey"
+    },
+    {
+      "name": "Noah Ernst",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Butler, Pa.",
+      "previousSchool": null,
+      "highSchool": "Butler Area Senior"
+    },
+    {
+      "name": "Alfredo Morales",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Merida, Mexico",
+      "previousSchool": null,
+      "highSchool": "Virginia Episcopal School"
+    },
+    {
+      "name": "Luca Capilli",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Elmira, New York",
+      "previousSchool": null,
+      "highSchool": "Elmira"
+    },
+    {
+      "name": "Juan Francisco Zuniga Cruz",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Francisco Morazan, Honduras",
+      "previousSchool": null,
+      "highSchool": "Aldebaran Bilingual"
+    },
+    {
+      "name": "Seamus Clark",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr.",
+      "hometown": "Erie, Pa.",
+      "previousSchool": null,
+      "highSchool": "Fort Lebouef"
+    }
+  ]
+}

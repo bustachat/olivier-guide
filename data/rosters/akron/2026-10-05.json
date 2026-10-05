@@ -1,0 +1,244 @@
+{
+  "schoolId": "akron",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gozips.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Gavin Crane",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "R-Fr.",
+      "hometown": "Hinckley, Ohio / Cleveland St. Ignatius",
+      "previousSchool": null
+    },
+    {
+      "name": "Brett Kaminski",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Jr.",
+      "hometown": "Cooper City, Fla. / Broward Virtual School",
+      "previousSchool": null
+    },
+    {
+      "name": "Nolan McGuire",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "St. Louis, Mo. / St. Louis City",
+      "previousSchool": "DePaul"
+    },
+    {
+      "name": "Kam Warnke",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Aurora, Ohio / Aurora",
+      "previousSchool": null
+    },
+    {
+      "name": "Freddy Kossehasse",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "McKinney, Texas / Independence",
+      "previousSchool": "Iowa Western CC"
+    },
+    {
+      "name": "Ioannis Gazis",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Attica, Greece / Panathinaikos FC",
+      "previousSchool": null
+    },
+    {
+      "name": "Matthew Paiva",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Toronto, Ontario / Christ the King",
+      "previousSchool": "McMaster"
+    },
+    {
+      "name": "Thomas O’Rourke",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "R-So.",
+      "hometown": "East Patchogue, N.Y. / Bellport",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyler Morck",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "R-Jr.",
+      "hometown": "Bethpage, N.Y. / Bethpage",
+      "previousSchool": "St. John's"
+    },
+    {
+      "name": "Farrel Ngongang",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Montreal, Quebec / Antoine de-Saint Exupery",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Roman",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Canfield, Ohio / Canfield",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Morana",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Strongsville, Ohio / Strongsville",
+      "previousSchool": null
+    },
+    {
+      "name": "Cole Perez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Orange Park, Fla. / Oakleaf",
+      "previousSchool": null
+    },
+    {
+      "name": "Remi Agunbiade",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Toronto, Ontario / St. Joan of Arc",
+      "previousSchool": null
+    },
+    {
+      "name": "Aiden Benitez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Westfield, Ind. / Blue Valley West (Kan.)",
+      "previousSchool": "Butler"
+    },
+    {
+      "name": "Austin Thum",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "El Dorado Hills, Calif. / Oak Ridge",
+      "previousSchool": null
+    },
+    {
+      "name": "Calan DeWalt",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Dublin, Ohio / Jerome",
+      "previousSchool": null
+    },
+    {
+      "name": "Ignacio Alem",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "R-Jr.",
+      "hometown": "Potomac, Md. / D.C. United Academy",
+      "previousSchool": "Virginia"
+    },
+    {
+      "name": "Benji Jonas Atiabou",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Salzburg, Austria / Vocational School of Business and Competitive Sports of the AK Salzburg",
+      "previousSchool": null
+    },
+    {
+      "name": "Jack Sullivan",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Potomac, Md. / Laurel Springs",
+      "previousSchool": "Saint Louis"
+    },
+    {
+      "name": "Francisco Tolaba",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Buenos Aires, Argentina / Santa Catalina",
+      "previousSchool": "St. Thomas (Fla.)/Long Island"
+    },
+    {
+      "name": "Sam Bunch",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Brussels, Belgium / KA Redingenhof Leuven",
+      "previousSchool": null
+    },
+    {
+      "name": "Matt Dreas",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Covington, Ky. / Holy Cross",
+      "previousSchool": null
+    },
+    {
+      "name": "Braxton Hayes",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Bowie, Md. / EdOptions Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Noa Testa",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "La Sarraz, Switzerland / Lausanne Sport",
+      "previousSchool": null
+    },
+    {
+      "name": "Londen Sears",
+      "position": "MF",
+      "positionAsListed": "MF/D",
+      "class": "Fr.",
+      "hometown": "New Albany, Ohio / New Albany",
+      "previousSchool": null
+    },
+    {
+      "name": "Ivory Covington",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Lilburn, Ga. / Atlanta United Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Kael Taylor",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Olathe, Kan. / Olathe West",
+      "previousSchool": null
+    },
+    {
+      "name": "Francesco Tricarico",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Sr.",
+      "hometown": "Cerignola, Italy / Augusto Righi",
+      "previousSchool": "Iowa Western CC/Biola"
+    }
+  ]
+}

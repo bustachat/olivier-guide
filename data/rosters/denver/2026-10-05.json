@@ -1,0 +1,236 @@
+{
+  "schoolId": "denver",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://denverpioneers.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Alex Hohl",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Castle Pines, Colorado / Rock Canyon H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Will King",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Columbus, Ohio / Upper Arlington H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Grant Lund",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Erie, Colorado / Erie H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Dominic Kallay",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Chandler, Arizona / Hamilton H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Orchard",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Arvada, Colorado / Ralston Valley H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "David Biggers",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "5th",
+      "hometown": "Fort Collins, Colorado / Fossil Ridge H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Mann",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Westminster, Colorado / Holy Family H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Tyler Schommer",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Prior Lake, Minnesota / Shattuck-St. Mary's",
+      "previousSchool": null
+    },
+    {
+      "name": "Kyle McGowan",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "5th",
+      "hometown": "Portland, Oregon / Baker Web Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Ian Welch",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Austin, Texas / Austin H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Kieran Hanna",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Denver, Colorado / Arapahoe H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Chris Carroll",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Denver, Colorado / Arapahoe H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Schultz",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Arvada, Colorado / Arvada West H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Hudson Tate",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Portland, Oregon / Baker Web Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Holger Olsson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "5th",
+      "hometown": "Stockholm, Sweden / Nacka Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Keegan Kelly",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Auckland, New Zealand / Rosmini College",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Isaacson",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Colorado Springs, Colorado / Rampart H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Erik Collins",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Spokane, Washington / Internet Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Tomi Giwa",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Thornton, Colorado / Broomfield H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Stewart",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Las Vegas, Nevada / Bishop Gorman H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Blake Wheeler",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Prosper, Texas / Lone Star H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Collin Keller",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "5th",
+      "hometown": "Denver, Colorado / DSST Conservatory",
+      "previousSchool": null
+    },
+    {
+      "name": "Jon Fritcher",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Pleasant Grove, Utah / Pleasant Grove H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Dean Kelliher",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "5th",
+      "hometown": "Chevy Chase, Maryland / Bethesda-Chevy Chase",
+      "previousSchool": null
+    },
+    {
+      "name": "Tate Sheally",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "Wilmington, North Carolina / Cape Fear Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Mackay",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Auckland, New Zealand / Saint Kentigern College",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryce Willoughby",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "5th",
+      "hometown": "Houston, Texas / James Madison H.S.",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Masino",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Oak Forest, Illinois / Oak Forest H.S.",
+      "previousSchool": null
+    }
+  ]
+}

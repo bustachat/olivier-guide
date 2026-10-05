@@ -1,0 +1,228 @@
+{
+  "schoolId": "delaware",
+  "schoolFile": "data/d1-other.json",
+  "fetchedAt": "2026-10-05",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://bluehens.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-desktop-browser-pane",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Braeden Sorensen",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fifth Year",
+      "hometown": "Ephrata, Pa. / Ephrata",
+      "previousSchool": "Saint Francis/Lock Haven"
+    },
+    {
+      "name": "Eric Widrick",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fifth Year",
+      "hometown": "Arlington, Mass. / Arlington",
+      "previousSchool": "Colgate"
+    },
+    {
+      "name": "Rich Monath",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Essex, Md. / Calvert Hall",
+      "previousSchool": null
+    },
+    {
+      "name": "Jan Schroeder",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fifth Year",
+      "hometown": "Wölfersheim, Germany / Carl-von-Weinberg-Schule",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Chatten",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Haddon Township, N.J. / Haddon Township",
+      "previousSchool": null
+    },
+    {
+      "name": "Jayden Jackson",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Sr.",
+      "hometown": "Edison, N.J. / Edison",
+      "previousSchool": "Temple"
+    },
+    {
+      "name": "German Argueta",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Silver Spring, Md. / SAI Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Frederik Flaskager",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Kolding, Denmark / Munkensdam Gymnasium",
+      "previousSchool": "Penn State"
+    },
+    {
+      "name": "Freddy Jeffreys",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Leeds, England / Corpus Christi",
+      "previousSchool": null
+    },
+    {
+      "name": "Cole Frederick",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Wayne, Pa. / Conestoga",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Penny",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "New London, Pa. / Avon Grove",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Acosta",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Reisterstown, Md. / Loyola Blakefield",
+      "previousSchool": null
+    },
+    {
+      "name": "Seamus Lannon",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Havertown, Pa. / Haverford",
+      "previousSchool": null
+    },
+    {
+      "name": "Emmett Kershner",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Baltimore, Md. / McDonogh School",
+      "previousSchool": "Hofstra University"
+    },
+    {
+      "name": "Luke Jones",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Cape Charles, Va. / Northampton",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean Smith",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Robbinsville, N.J. / Robbinsville",
+      "previousSchool": null
+    },
+    {
+      "name": "Rocco Pastore",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Jr.",
+      "hometown": "Joppa, Md. / Calvert Hall",
+      "previousSchool": null
+    },
+    {
+      "name": "Colin Kelly",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Baltimore, Md. / Calvert Hall College",
+      "previousSchool": null
+    },
+    {
+      "name": "Joe Richards",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Leeds, England / Tadcaster Grammar School",
+      "previousSchool": null
+    },
+    {
+      "name": "Thaddeus Glasser",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Camden, Del. / Caesar Rodney",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Gensel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Harford County, Md. / John Carroll",
+      "previousSchool": null
+    },
+    {
+      "name": "Mason Booz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Mohnton, Pa. / High Point Baptist Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "Beckett Field",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Lower Merion, Pa. / Lower Merion",
+      "previousSchool": null
+    },
+    {
+      "name": "Mikey Johnson",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Gr.",
+      "hometown": "Annapolis, Md. / Broadneck",
+      "previousSchool": null
+    },
+    {
+      "name": "Edwin Flores",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Newark, Del. / American",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Reece",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Gaithersburg, Md. / ASU Global Academy",
+      "previousSchool": null
+    },
+    {
+      "name": "JoJo Elliott Jr.",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Hockessin, Del. / Philadelphia Union Academy",
+      "previousSchool": null
+    }
+  ]
+}

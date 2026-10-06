@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.16 (2026-10-06) — USC Sumter roster stored and applied from its NJCAA team page (campaign C0, step 4)
+
+**What:** USC Sumter's own roster page still shows the human-verification page (opened 2026-10-06). Its NJCAA team page, which said "No roster available" earlier the same day, now lists a roster: 22 players, 3 goalkeepers, a position and class year for every player, team record 3-6. It was matched by name to the midfielders the guide already held, stored with positions as published, and applied. 185 schools' midfielder numbers now come from a stored roster; 14 are still to read.
+
+**Result: no number changed.** 10 midfielders, 2 of them sophomores (Brian Arias, Florian Pignot); Fit Score 50. NJCAA labels 10 of the 22 players as midfielders and only 2 as forwards; that is the listing as published, and the note says the roster came from NJCAA.
+
+**Coach check: not possible.** The college's site shows the verification page, and NJCAA team pages do not name coaches.
+
+**Validation:** `validate_schools.py` PASS; `validate_consistency.js` Issues: 0; JUCO trajectory, jargon, roster arithmetic and snapshot checks pass.
+
+---
+
 ### v46.15 (2026-10-06) — Ulster roster stored and applied from its NJCAA team page (campaign C0, step 4)
 
 **What:** Ulster County CC's own athletics site still renders a blank page (opened 2026-10-06), so its roster was read on its NJCAA team page (29 players, 3 goalkeepers, a position and class year for every player, team record 9-2), matched by name to the midfielders the guide already held, stored with positions as published, and applied. 184 schools' midfielder numbers now come from a stored roster; 15 are still to read.

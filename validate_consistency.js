@@ -987,9 +987,10 @@ conferences.forEach(c => {
 // minutesOutlook, trajectory and score cascade must be exactly what that roster gives.
 // The rules live in ONE place (roster_extract.py + apply_roster_refresh.py, driven by
 // derive_minutes.py); this check calls that script instead of keeping a JS copy.
-// Schools with no such snapshot yet are a counted backlog, not issues, until the
-// reading campaign ends. If Python cannot run, that is an issue, never a silent pass.
-let rosterSrc = { backed: 0, pending: 0 };
+// Since v46.19 (reading campaign finished) a school whose minutesOutlook is available
+// but has no such snapshot FAILS, unless derive_minutes.py's ROSTER_SRC_EXEMPT names it
+// with a reason. If Python cannot run, that is an issue, never a silent pass.
+let rosterSrc = { backed: 0, exempt: 0 };
 try {
   const out = require('child_process').execFileSync('python',
     [path.join(ROOT, '.claude/skills/roster-refresh/scripts/derive_minutes.py'), '--check-json'],
@@ -1010,6 +1011,6 @@ const devTotal = schools.filter(s => s.profileDepth === 'full' && s.devScores).l
 console.log(`Dev rubric (§5a): ${devRebaselined}/${devTotal} re-baselined · ${devLegacyOverCeiling} legacy schools still above their division ceiling (backlog, not counted as issues)`);
 console.log(`Coach rubric (§5d): ${coachRescored}/${coaches.length} re-scored · ${coachLegacy} legacy pending (backlog, not counted as issues)`);
 console.log(`confRecord: ${confRecordBacklog} schools with a run of >=3 repeated generic labels — unresearched conference history (backlog, not counted as issues)`);
-console.log(`Roster source (§6C C0): ${rosterSrc.backed} schools' midfielder numbers derive from a stored roster · ${rosterSrc.pending} pending a roster read (backlog, not counted as issues)`);
+console.log(`Roster source (§6C C0): ${rosterSrc.backed} schools' midfielder numbers derive from a stored roster · ${rosterSrc.exempt} exempt with a recorded reason (a missing roster anywhere else is an issue)`);
 console.log(`Issues: ${issues.length}  (July 2026 baseline: 174 — see CLAUDE.md §6 v36 backlog; must never increase, target zero)`);
 issues.forEach(i => console.log(i));

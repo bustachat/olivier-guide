@@ -257,5 +257,19 @@
     "find": "\"goalkeepersAccepted\":",
     "replace": "\"goalkeepersAcceptedX\":",
     "expect": "ROSTER-SRC"
+  },
+  {
+    "name": "ROSTER-SRC / an available school with no usable stored roster and no exemption",
+    "file": "data/rosters/gonzaga/2026-10-05.json",
+    "find": "\"labelsKept\": true,",
+    "replace": "\"labelsKept\": false,",
+    "expect": "there is no stored roster"
+  },
+  {
+    "name": "ROSTER-SRC / an exemption left on a school that has a stored roster",
+    "file": ".claude/skills/roster-refresh/scripts/derive_minutes.py",
+    "find": "\"truman_college\": \"region4sports.com",
+    "replace": "\"gonzaga\": \"region4sports.com",
+    "expect": "still listed in ROSTER_SRC_EXEMPT"
   }
 ]

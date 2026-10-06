@@ -77,6 +77,18 @@ import roster_extract as rx          # noqa: E402
 MANIFEST = os.path.join(ROOT, "data", "rosters", "manifest.json")
 TARGET_SEASON = "2026-27"            # the season whose roster projects to Aug 2027
 
+# Schools whose minutesOutlook is available but which have NO usable stored roster,
+# each with the reason. ROSTER-SRC fails any other available school without one
+# (the reading campaign finished in v46.18). Remove a school from this list in the
+# same edit that stores its roster; a listed school that has a roster also fails.
+ROSTER_SRC_EXEMPT = {
+    "monroe_college": "owner ruling: leave on its 2025-26 numbers during the move to NCAA Division II",
+    "pacific_northwest_christian_college": "its 2026 roster prints no position for 10 of 15 players (read 2026-10-06)",
+    "trinidad_state": "its 2026-27 roster prints no position for 22 of 29 players (read 2026-10-06)",
+    "truman_college": "region4sports.com could not be reached and NJCAA lists no class years (2026-10-06)",
+    "wilbur_wright_college": "region4sports.com could not be reached and NJCAA lists no roster (2026-10-06)",
+}
+
 
 def load_schools():
     out = {}
@@ -314,7 +326,10 @@ def coverage(schools, manifest):
     print("  snapshot with simplified positions (re-read): %d" % len(lossy))
     print("  no snapshot (read):                         %d" % len(none))
     print("  (of all schools, minutesOutlook.available is false for %d)" % len(off))
-    todo = sorted(lossy + none)
+    todo = sorted(x for x in lossy + none if x not in off and x not in ROSTER_SRC_EXEMPT)
+    print("  no usable roster, minutesOutlook off:      %d" % len([x for x in lossy + none if x in off]))
+    print("  no usable roster, exempt with a reason:    %d  (%s)"
+          % (len(ROSTER_SRC_EXEMPT), ", ".join(sorted(ROSTER_SRC_EXEMPT))))
     four = [x for x in todo if not schools[x][1].get("juco2yr")]
     juco = [x for x in todo if schools[x][1].get("juco2yr")]
     print("\nstill to read, four-year (%d):\n  %s" % (len(four), ", ".join(four)))
@@ -324,19 +339,31 @@ def coverage(schools, manifest):
 def source_check(schools, manifest, athlete):
     """The ROSTER-SRC check (CLAUDE.md 6C, C0 step 3), called by validate_consistency.js.
 
-    Every school with minutesOutlook.available:true should be backed by a stored
+    Every school with minutesOutlook.available:true must be backed by a stored
     roster with labels kept, and its stored numbers must equal what that roster
-    gives. No such roster yet = counted as pending (a backlog, not a failure,
-    until the reading campaign is finished). A roster that disagrees = failure.
+    gives. No such roster = failure, unless the school is in ROSTER_SRC_EXEMPT
+    with a reason. A roster that disagrees = failure.
     """
-    res = {"backed": 0, "pending": 0, "fail": []}
+    res = {"backed": 0, "exempt": 0, "fail": []}
+    for sid in sorted(set(ROSTER_SRC_EXEMPT) - set(schools)):
+        res["fail"].append("%s: listed in ROSTER_SRC_EXEMPT but not a guide school" % sid)
     for sid, (_p, school) in sorted(schools.items()):
         mo = school.get("minutesOutlook") or {}
         if not mo.get("available"):
             continue
         snap = load_snapshot(sid, manifest)
-        if snap is None or not snap.get("labelsKept"):
-            res["pending"] += 1
+        usable = snap is not None and bool(snap.get("labelsKept"))
+        if sid in ROSTER_SRC_EXEMPT:
+            if usable:
+                res["fail"].append("%s: has a stored roster but is still listed in "
+                                   "ROSTER_SRC_EXEMPT; remove it from that list" % sid)
+            else:
+                res["exempt"] += 1
+            continue
+        if not usable:
+            res["fail"].append("%s: minutesOutlook is available but there is no stored roster "
+                               "with positions as published (store one with refresh_school.py, "
+                               "or add the school to ROSTER_SRC_EXEMPT with the reason)" % sid)
             continue
         if snap.get("rosterSeason") != mo.get("roster_season"):
             res["fail"].append("%s: stored roster_season %s but its roster snapshot is %s"

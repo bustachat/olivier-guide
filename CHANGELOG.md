@@ -6,6 +6,22 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.19 (2026-10-06) — stored-roster campaign closed out: a missing roster is now a validator failure
+
+**What:** campaign C0 (stored rosters as the source of the midfielder numbers) is finished. 194 of the 199 schools with a minutes outlook are backed by a stored roster. No school data, score or rank changed.
+
+**Validator:** `ROSTER-SRC` used to count a school with no stored roster as backlog. It now fails any school whose `minutesOutlook` is available but has no stored roster with positions as published, unless `derive_minutes.py`'s `ROSTER_SRC_EXEMPT` names it with a reason. A school on that list that gains a roster also fails until it is taken off the list. Exempt: Monroe (owner ruling), Trinidad State and Pacific Northwest Christian (positions mostly blank on their own pages), Truman and Wilbur Wright (region4sports.com unreachable on 2026-10-06; NJCAA has no class years or no roster). `derive_minutes.py --coverage` now lists the exempt schools separately and shows nothing left to read.
+
+**Negative tests:** two added (an available school with no usable roster and no exemption; an exemption left on a school that has a roster). 39 of 39 proven.
+
+**Coach checks owed from v46.09, done on each college's own page (2026-10-06):** Lindsay Eversmeyer (Southwestern Illinois; the page says she is in her 5th year, with Michael Castillo and Matt Burke) and David Hughes (Harcum; staff page, with Kyle Norton) are confirmed. No edits. The NJCAA cross-check owed from v46.08 and v46.09 was already done in v46.10.
+
+**Docs:** CLAUDE.md section 6C's campaign notes are cut down to a short completed entry; the tooling and site-trap notes are kept.
+
+**Validation:** `validate_schools.py` PASS; `validate_consistency.js` Issues: 0.
+
+---
+
 ### v46.18 (2026-10-06) — coach check completed for the six colleges left over from v46.17
 
 **What:** the owner cleared the verification check on the six coaches pages, and each was read on the college's own site (2026-10-06). All six head coaches are confirmed: Luis Dantas (Lincoln Trail), Tyler Douthitt (NEO A&M), Brad Williams (North Idaho), Fernando Arellano (Paris JC), David Cameron (Phoenix) and Tim Pierce (Santa Monica).

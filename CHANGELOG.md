@@ -6,6 +6,18 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.15 (2026-10-06) — Ulster roster stored and applied from its NJCAA team page (campaign C0, step 4)
+
+**What:** Ulster County CC's own athletics site still renders a blank page (opened 2026-10-06), so its roster was read on its NJCAA team page (29 players, 3 goalkeepers, a position and class year for every player, team record 9-2), matched by name to the midfielders the guide already held, stored with positions as published, and applied. 184 schools' midfielder numbers now come from a stored roster; 15 are still to read.
+
+**Result: no number changed.** 10 midfielders, 5 of them sophomores (Robert Pesantez, Matt Urquia, Patrick Fornelos, Antony Pesantez, Luke Lanzalaco); Fit Score 31. The stored name "Pat Fornelos" now reads "Patrick Fornelos", as NJCAA prints it. The note says the roster came from NJCAA.
+
+**Coach check: not possible.** The college's athletics site is blank, and NJCAA team pages do not name coaches.
+
+**Validation:** `validate_schools.py` PASS; `validate_consistency.js` Issues: 0; JUCO trajectory, jargon, roster arithmetic and snapshot checks pass.
+
+---
+
 ### v46.14 (2026-10-06) — Miami Dade and Oxford College rosters stored and applied from NJCAA team pages (campaign C0, step 4)
 
 **What:** both colleges' own roster pages showed the human-verification page earlier the same day, so their NJCAA team pages were read, matched by name to stored players, and applied. 183 schools' midfielder numbers now come from a stored roster; 16 are still to read (26 on the coverage list).

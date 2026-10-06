@@ -1,0 +1,244 @@
+{
+  "schoolId": "ulster_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.njcaa.org/sports/teams/407470771045139464/roster",
+  "fetchMethod": "claude-in-chrome (NJCAA team page)",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Sebastain Paz",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "North Rockland, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Parra",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Newburgh, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Sandro Bolkvadze",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Monroe-Woodbury, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Luc Saguilan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "New Paltz, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean Viebrock",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Wappingers Falls, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "David Martinez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Kingston, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Robert Pesantez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "North Rockland, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Caleb Nicolas",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Washingtonville, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Matt Urquia",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Ellenville, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Slate Scott",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Shandaken, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Patrick Fornelos",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Hopewell Junction, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Antony Pesantez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "North Rockland, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastain Vazquez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "Newburgh, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Richie Herrera",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "North Rockland, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Cedric Rimes",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Esopus, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Chase Steiner",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Newburgh, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Henry Ruiz",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Kingston, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrii Senko",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Ellenville, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Oleh Shulha",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Ellenville, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Jaren Page",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Esopus, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Antonio",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Highland, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Clive Stewart",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Beacon, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Dylan Merizalde",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "New Paltz, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Matteo Cotten",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "New Paltz, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Andrew Bonet",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Cornwall, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Aidan Ellis",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "New South Wales, Australia",
+      "previousSchool": null
+    },
+    {
+      "name": "Alex Herrera",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Kingston, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Lanzalaco",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "Monroe-Woodbury, NY",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Hernandez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Monroe-Woodbury, NY",
+      "previousSchool": null
+    }
+  ]
+}

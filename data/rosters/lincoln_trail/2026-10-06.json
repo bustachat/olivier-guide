@@ -1,0 +1,196 @@
+{
+  "schoolId": "lincoln_trail",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.ltcathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 23,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Bernardo Zileno Da Silva",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "Brasilia,Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Hector Ortiz",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "F",
+      "hometown": "San Clement, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Erick Olmo",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "So",
+      "hometown": "São Paulo, Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Inaki Azocar",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "So",
+      "hometown": "Chillan, Chile",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Del Solar",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "F",
+      "hometown": "La Paz, Bolivia",
+      "previousSchool": null
+    },
+    {
+      "name": "Facundo Casero",
+      "position": "D",
+      "positionAsListed": "LB",
+      "class": "So",
+      "hometown": "Buenos Aires, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "David Litanga",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "S",
+      "hometown": "Kinshasa, Dr Congo",
+      "previousSchool": null
+    },
+    {
+      "name": "Daleek Hutchinson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "San Jose, Costa Rica",
+      "previousSchool": null
+    },
+    {
+      "name": "Hayase Taira",
+      "position": "F",
+      "positionAsListed": "S",
+      "class": "F",
+      "hometown": "Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan David",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "F",
+      "hometown": "Cartago, Costa Rica",
+      "previousSchool": null
+    },
+    {
+      "name": "Taiga Shinozaki",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "F",
+      "hometown": "Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Taiga Sugiyama",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Moises Martinez Lara",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Alicante, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Ameda Takashi",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "F",
+      "hometown": "Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Curtys Anibie",
+      "position": "F",
+      "positionAsListed": "S",
+      "class": "So",
+      "hometown": "Paris, France",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeykol Mosquera",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "So.",
+      "hometown": "Panama City, Panama",
+      "previousSchool": null
+    },
+    {
+      "name": "Lucas Moradillo",
+      "position": "D",
+      "positionAsListed": "LB",
+      "class": "Fr.",
+      "hometown": "Barcelona, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeronimo Aquino",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "S",
+      "hometown": "Pigue, Argentina",
+      "previousSchool": null
+    },
+    {
+      "name": "Arian Rodriguez",
+      "position": "F",
+      "positionAsListed": "LW/RW",
+      "class": "Fr.",
+      "hometown": "Ibiza, Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Tommaso Romano",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Carate Brianza, Italy",
+      "previousSchool": null
+    },
+    {
+      "name": "Martim Sousa",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "Lisbon, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Francisco Lima",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Porto, Portugal",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Lujan",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "F",
+      "hometown": "Panama City, Panama",
+      "previousSchool": null
+    }
+  ]
+}

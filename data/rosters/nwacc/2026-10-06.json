@@ -1,0 +1,268 @@
+{
+  "schoolId": "nwacc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://nwacceagles.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 32,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Jack Munson",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr",
+      "hometown": "Hadleigh, England",
+      "previousSchool": "AFC Sudbury Academy"
+    },
+    {
+      "name": "Kyan Okoli",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Hockliffe, England",
+      "previousSchool": "Leighton Town FC"
+    },
+    {
+      "name": "Evan Rees",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Bridgend, Wales",
+      "previousSchool": "Brynteg Comprehensive"
+    },
+    {
+      "name": "Oliver Okeh",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Ipswich, England",
+      "previousSchool": "Hadleigh United FC"
+    },
+    {
+      "name": "Mikey Murphy",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Escondido, Calif.",
+      "previousSchool": "Homeschooled"
+    },
+    {
+      "name": "Clayton Butler",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Asheville, N.C.",
+      "previousSchool": "Christ School"
+    },
+    {
+      "name": "Rei Tomita",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Musashino, Japan",
+      "previousSchool": "Komazawa University High School"
+    },
+    {
+      "name": "Jack Bagnall",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Gosport, England",
+      "previousSchool": "City of Portsmouth College"
+    },
+    {
+      "name": "Aukele Paikuli-Campbell",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Kailua-Kona, Haw.",
+      "previousSchool": "Kealekehe HS"
+    },
+    {
+      "name": "Josiah Wilson",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Port-of-Spain, Trinidad and Tobago",
+      "previousSchool": "Trinity College Moka"
+    },
+    {
+      "name": "Luc Fangen Hall",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "London, England",
+      "previousSchool": "Millfield School"
+    },
+    {
+      "name": "Byron Adams",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Chelmsford, England",
+      "previousSchool": "Maldon & Tiptree FC"
+    },
+    {
+      "name": "Jorden Moore",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Denham Springs, La.",
+      "previousSchool": "Denham Springs HS"
+    },
+    {
+      "name": "Takumi Hirokawa",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Higashiura, Japan",
+      "previousSchool": "Tokai Gakuen High School"
+    },
+    {
+      "name": "Santiago Gonçalves",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Tavira, Portugal",
+      "previousSchool": "Secundária Dr. Jorge Augusto Correia"
+    },
+    {
+      "name": "Sota Asano",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Nagoya, Japan",
+      "previousSchool": "Tokai Gakuen High School"
+    },
+    {
+      "name": "Ivan Contreras",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Bentonville, Ark.",
+      "previousSchool": "Heritage HS"
+    },
+    {
+      "name": "Brandon Lawson",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Bentonville, Ark.",
+      "previousSchool": "Bentonville HS"
+    },
+    {
+      "name": "Damian Carranza",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Rogers, Ark.",
+      "previousSchool": "Pea Ridge HS"
+    },
+    {
+      "name": "Costa Barlas",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Asheville, N.C.",
+      "previousSchool": "Christ School"
+    },
+    {
+      "name": "Tazizwa Kasambara",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Blantyre, Malawi",
+      "previousSchool": "Christ School"
+    },
+    {
+      "name": "Tino Le",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Fort Smith, Ark.",
+      "previousSchool": "Southside HS"
+    },
+    {
+      "name": "James Blanco",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Alexandria, Va.",
+      "previousSchool": "Alexandria Soccer Academy"
+    },
+    {
+      "name": "Alan Mendoza",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Neosho, Mo.",
+      "previousSchool": "Neosho HS"
+    },
+    {
+      "name": "Jack Peters",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Cambridge, England",
+      "previousSchool": "Eynesbury Rovers FC"
+    },
+    {
+      "name": "Ethan Twine",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr",
+      "hometown": "Bridgend, Wales",
+      "previousSchool": "Bridgend Club"
+    },
+    {
+      "name": "Jodon Grey",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Sheffield, Jamaica",
+      "previousSchool": "Manning's School"
+    },
+    {
+      "name": "Christian Soto",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr",
+      "hometown": "Rogers, Ark.",
+      "previousSchool": "Heritage HS"
+    },
+    {
+      "name": "Hari Lambe",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Caernarfon, Wales",
+      "previousSchool": "Ysgol Syr Hugh Owen"
+    },
+    {
+      "name": "Jack Goble",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So",
+      "hometown": "Aubrey, Texas",
+      "previousSchool": "Aubrey HS"
+    },
+    {
+      "name": "Erik Ramos",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Rogers, Ark.",
+      "previousSchool": "Rogers HS"
+    },
+    {
+      "name": "Ángel Calix",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr",
+      "hometown": "Rogers, Ark.",
+      "previousSchool": "Har-Ber HS"
+    }
+  ]
+}

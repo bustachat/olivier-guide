@@ -1,0 +1,220 @@
+{
+  "schoolId": "smc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.smccorsairs.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 26,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Greg Georgantellis",
+      "position": "GK",
+      "positionAsListed": "G",
+      "class": "So",
+      "hometown": "Waterloo, Belgium / HH&C",
+      "previousSchool": null
+    },
+    {
+      "name": "Matt Oquendo",
+      "position": "GK",
+      "positionAsListed": "G",
+      "class": "Fr",
+      "hometown": "Los Angeles / Los Angeles Senior High",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Barillas Paredes",
+      "position": "GK",
+      "positionAsListed": "G",
+      "class": "So",
+      "hometown": "Culver City / Culver City",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Hermosillo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Hawthorne / Leuzinger",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Shayne",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Westlake / Westlake",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Aguila",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Los Angeles / Bishop Alemany",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Saenz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Los Angeles / El Camino Real",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Veizaga",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Santa Clarita / Saugus",
+      "previousSchool": null
+    },
+    {
+      "name": "Leo Blanchet",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Espinal, France / Espinal",
+      "previousSchool": null
+    },
+    {
+      "name": "Robert Mejia",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Los Angeles / Birmingham",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Lopez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So",
+      "hometown": "Hawthorne / Leuzinger",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Cano",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Santa Monica / Santa Monica",
+      "previousSchool": null
+    },
+    {
+      "name": "David Rodas",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Los Angeles / Palisades",
+      "previousSchool": null
+    },
+    {
+      "name": "Noah Johannes",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Maui / Kihei, HI",
+      "previousSchool": null
+    },
+    {
+      "name": "Niko Martinez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Hillsboro, OR / Liberty",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Moncada",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Los Angeles / El Camino Real",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Vargas-Loyola",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Elwood, Australia / Elwood",
+      "previousSchool": null
+    },
+    {
+      "name": "Zen Franco",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "Los Angeles / Montebello",
+      "previousSchool": null
+    },
+    {
+      "name": "Rani Noff",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Tel Aviv, Israel / Tichonet",
+      "previousSchool": null
+    },
+    {
+      "name": "Melvin Santa Cruz",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Los Angeles / Laces",
+      "previousSchool": null
+    },
+    {
+      "name": "Kriss Gonzalez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Los Angeles / Birmingham",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Diaz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr",
+      "hometown": "Los Angeles / Palisades",
+      "previousSchool": null
+    },
+    {
+      "name": "Aydin Leyva",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Hawthorne / Leuzinger",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Soiza",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "Los Angeles / Birmingham",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean Banashek",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Los Angeles / Providence",
+      "previousSchool": null
+    },
+    {
+      "name": "Renner Smiley",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "Roseville / Jesuit",
+      "previousSchool": null
+    }
+  ]
+}

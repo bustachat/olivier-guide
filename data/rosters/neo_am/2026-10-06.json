@@ -1,0 +1,244 @@
+{
+  "schoolId": "neo_am",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://neoathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 29,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Sebastian Lara",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Cook",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jason Neumann",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Krum Eftimov",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Charlie Rae",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Arjona",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Edgar Soria",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Cedeno",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Arjona",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "David Smith",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Reuben Trutor",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Brendan Dalton",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Kristian Keihle",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Mathew Abel",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach White",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Luca Enderby",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Fernando Perez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Tomlinson",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathaniel McClaren",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Liam Bello-Matthews",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Lino",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Do Khup",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Zander Floyd",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jarvis Knight",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Austin Bastings",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Rafael Vaz",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Alexandre Descalzo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Seliholm Atefha",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Braquinho",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr",
+      "hometown": "",
+      "previousSchool": null
+    }
+  ]
+}

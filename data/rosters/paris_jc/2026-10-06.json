@@ -1,0 +1,228 @@
+{
+  "schoolId": "paris_jc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://pjcathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Edgar Lopez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "FR",
+      "hometown": "Mt. Pleasant, TX / Mt. Pleasant HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Ruiz",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "FR",
+      "hometown": "Houston, TX / Shadow Creek HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Trevor Jobe",
+      "position": "OTHER",
+      "positionAsListed": "OB",
+      "class": "FR",
+      "hometown": "McKinney, TX / McKinney Boyd HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Mfundo Sketana",
+      "position": "MF",
+      "positionAsListed": "CDM",
+      "class": "FR",
+      "hometown": "Polokwane, South Africa / PEPPS Polokwane",
+      "previousSchool": null
+    },
+    {
+      "name": "Sergio Munoz",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "FR",
+      "hometown": "Arroyomolinos, Spain / Colegio Pasteur",
+      "previousSchool": null
+    },
+    {
+      "name": "Luka Curlic",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "SO",
+      "hometown": "Belgrade, Serbia / XII Belgrade Gymnasium",
+      "previousSchool": null
+    },
+    {
+      "name": "Gael Lozano",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "FR",
+      "hometown": "Madrid, Spain / Medac Alcorcon",
+      "previousSchool": null
+    },
+    {
+      "name": "Kyrylo Peregudov",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "SO",
+      "hometown": "Kherson, Ukraine / Dertsen Educational School",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Rojas",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "SO",
+      "hometown": "Houston, TX / Instituto Leonardo Da Vinci",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Membreno",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "FR",
+      "hometown": "Houston, TX / Bridgeland HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jovan Moreno",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "SO",
+      "hometown": "El Paso, TX / Pebble Hills HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Keane Cobuzio",
+      "position": "F",
+      "positionAsListed": "FWD",
+      "class": "FR",
+      "hometown": "McKinney, TX / UT Austin High School",
+      "previousSchool": null
+    },
+    {
+      "name": "Colin McGill",
+      "position": "OTHER",
+      "positionAsListed": "OB",
+      "class": "FR",
+      "hometown": "Plano, TX / Plano Senior HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Paulo Diaz",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "FR",
+      "hometown": "Mexico City, Mexico / Centro Escolar Del Tepeyac",
+      "previousSchool": null
+    },
+    {
+      "name": "Thomas Hawton",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "FR",
+      "hometown": "Halberton, England / Exeter College",
+      "previousSchool": null
+    },
+    {
+      "name": "Omar Herrera",
+      "position": "OTHER",
+      "positionAsListed": "OB",
+      "class": "FR",
+      "hometown": "El Paso, TX / Burges HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryant Palacios",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "FR",
+      "hometown": "Houston, TX / Angleton HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Oscar Amaya",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "FR",
+      "hometown": "Abilene, TX / Abilene HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Caden Duke",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "FR",
+      "hometown": "McKinney, TX / McKinney HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Funes",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "SO",
+      "hometown": "Dallas, TX / Braswell HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Jose Briones",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "FR",
+      "hometown": "Monterrey, Mexico / Preparatoria 9 UANL",
+      "previousSchool": null
+    },
+    {
+      "name": "Gerardo Chavez",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "FR",
+      "hometown": "Mt. Pleasant, TX / Mt. Pleasant HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Sergio Echeverri",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "SO",
+      "hometown": "Cali, Colombia / San Antonio Maria Claret",
+      "previousSchool": null
+    },
+    {
+      "name": "Gael Parra",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "SO",
+      "hometown": "El Paso, TX / Pebble Hills HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Morales",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "SO",
+      "hometown": "Paris, TX / North Lamar HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Manuel Ayala",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "FR",
+      "hometown": "Dallas, TX / West Mesquite HS",
+      "previousSchool": null
+    },
+    {
+      "name": "Luka Moleville",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "FR",
+      "hometown": "Nimes, France / Alphonse Daudet",
+      "previousSchool": null
+    }
+  ]
+}

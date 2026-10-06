@@ -6,6 +6,31 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.17 (2026-10-06) — nine more junior college rosters stored and applied from the colleges' own pages, after the owner completed the human-verification checks (campaign C0, step 4)
+
+**What:** the owner completed the human-verification check on each blocked site in Chrome, and the rosters were then read from the colleges' own pages: Cowley, Glendale, Lincoln Trail, NEO A&M, North Idaho, NWACC, Paris JC, Phoenix and Santa Monica. Each was stored with positions as published and applied. 194 schools' midfielder numbers now come from a stored roster; 5 are still to read.
+
+**Changes (the other eight kept the same count and Fit Score):**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Phoenix | 12 | 11 | 57 | 57 | One player is listed D/M and is no longer counted (first-listed position rule) |
+
+**Judgement calls:** Glendale labels 17 of its 35 players as midfielders, the same 17 already stored. Lincoln Trail prints no position for one player; he is not counted and the note says so. Paris JC labels its outside backs "OB"; they are filed as defenders. Two Paris JC names are now spelt as the roster prints them (Mfundo Sketana, Bryant Palacios); both are still on the roster. Cowley's roster lists a team manager as a row; he is not stored as a player. NWACC's roster lists a high school or club as the previous school for all 10 midfielders, and its pathway note now says so.
+
+**Not applied:**
+- **Trinidad State:** its own 2026-27 page loaded, but 22 of 29 players have no position and 21 have no class year. Kept on its 2025-26 numbers.
+- **Pacific Northwest Christian:** its own 2026 page lists 15 players, 10 with no position and none labelled midfielder. Kept on its 2025-26 numbers.
+- **Truman and Wilbur Wright:** region4sports.com could not be reached ("This site can't be reached").
+
+**Coach check (each college's own coaches page, 2026-10-06):** Marcos Vinicius Longo Ribeiro (Cowley, with assistant Eusebio "Chevi" Plaza), Jeff Perry (Glendale; its six assistant coaches are now stored) and Dean Johnson (NWACC, staff of five unchanged) are confirmed. The coaches pages at Lincoln Trail, NEO A&M, North Idaho, Paris JC, Phoenix and Santa Monica showed the verification page again, so those six are not confirmed today.
+
+**Lesson:** the verification clears one page view, not the whole site. A second address on the same site (the coaches page, or the roster page opened in another tab) can show the check again. The roster reader also needs a host-name test before each read: one read ran before the page had changed and returned the previous college's roster under the next college's name (caught by the printed host name, discarded and re-read).
+
+**Validation:** `validate_schools.py` PASS; `validate_consistency.js` Issues: 0; JUCO trajectory, jargon, roster arithmetic and snapshot checks pass.
+
+---
+
 ### v46.16 (2026-10-06) — USC Sumter roster stored and applied from its NJCAA team page (campaign C0, step 4)
 
 **What:** USC Sumter's own roster page still shows the human-verification page (opened 2026-10-06). Its NJCAA team page, which said "No roster available" earlier the same day, now lists a roster: 22 players, 3 goalkeepers, a position and class year for every player, team record 3-6. It was matched by name to the midfielders the guide already held, stored with positions as published, and applied. 185 schools' midfielder numbers now come from a stored roster; 14 are still to read.

@@ -1,0 +1,228 @@
+{
+  "schoolId": "cowley_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://cowleytigers.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Lukas Lowry",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So",
+      "hometown": "Kansas City, KS / United States",
+      "previousSchool": null
+    },
+    {
+      "name": "Rikito Takeuchi",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So",
+      "hometown": "Tokyo / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Frederico Martins",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So",
+      "hometown": "Rio de Janeiro / Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Omar Ocampos",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So",
+      "hometown": "Monterrey / Mexico",
+      "previousSchool": null
+    },
+    {
+      "name": "Daichi Yamamoto",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr",
+      "hometown": "Kanagawa / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Nino Inchico",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So",
+      "hometown": "Mulhouse / France",
+      "previousSchool": null
+    },
+    {
+      "name": "Andres Tamayo",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So",
+      "hometown": "Wichita, KS / United States",
+      "previousSchool": null
+    },
+    {
+      "name": "Yushin Nakano",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "So",
+      "hometown": "Tokyo, Japan / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Theo Cutler",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Dorchester / England",
+      "previousSchool": null
+    },
+    {
+      "name": "Shuto Sasaki",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So",
+      "hometown": "Tokyo / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryotaro Tajima",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr",
+      "hometown": "Tokyo / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Rittlinger",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr",
+      "hometown": "Wichita, KS / United States",
+      "previousSchool": null
+    },
+    {
+      "name": "Enzo Rios",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr",
+      "hometown": "Sao Paulo / Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Hyoungsun Jeon",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr",
+      "hometown": "Gyeonggi-do / Korea",
+      "previousSchool": null
+    },
+    {
+      "name": "Takuya Yoshizaki",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr",
+      "hometown": "Kanagawa / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "David Enciso",
+      "position": "D",
+      "positionAsListed": "Defense",
+      "class": "Fr",
+      "hometown": "Wichita, KS / United States",
+      "previousSchool": null
+    },
+    {
+      "name": "Sho Shirakawa",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Shizuoka / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Rasmus Dahl",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Midtjylland / Denmark",
+      "previousSchool": null
+    },
+    {
+      "name": "Taira Horiuchi",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Kanagawa / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Chaebin Lee",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr",
+      "hometown": "Los Angeles, CA / United States",
+      "previousSchool": null
+    },
+    {
+      "name": "Christian Cabrera",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "So",
+      "hometown": "Arkansas City, KS / United States",
+      "previousSchool": null
+    },
+    {
+      "name": "Arnau Vinas Lopez",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Girona / Spain",
+      "previousSchool": null
+    },
+    {
+      "name": "Benjamin Perkins",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So",
+      "hometown": "Prairie Village, KS / United States",
+      "previousSchool": null
+    },
+    {
+      "name": "Koki Arikai",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr",
+      "hometown": "Saga / Japan",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Chavez",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr",
+      "hometown": "Wichita, KS / United States",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Carvalho",
+      "position": "MF",
+      "positionAsListed": "Midfield",
+      "class": "Fr",
+      "hometown": "Rio Grande do Sul / Brazil",
+      "previousSchool": null
+    },
+    {
+      "name": "Lukas Schmidt",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr",
+      "hometown": "Hanover / Germany",
+      "previousSchool": null
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "schoolId": "glendale_cc_az",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.gauchoathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 35,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Dylan Mapston",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "/",
+      "previousSchool": null
+    },
+    {
+      "name": "Sivohn Hobbi",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Peoria, Ariz. / Sunrise Mountain",
+      "previousSchool": null
+    },
+    {
+      "name": "Eli Anderson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Surprise, Ariz. / Shadow Ridge",
+      "previousSchool": null
+    },
+    {
+      "name": "Aaron Apodaca",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Phoenix, Ariz. / Greenway",
+      "previousSchool": null
+    },
+    {
+      "name": "Trevor Scriven",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Peoria, Ariz. / Liberty",
+      "previousSchool": null
+    },
+    {
+      "name": "Henry Trinh",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Phoenix, Ariz. / Thunderbird",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Morquecho",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Phoenix, Ariz. / Washington",
+      "previousSchool": null
+    },
+    {
+      "name": "Ivan Urias",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Phoenix, Ariz. / Alhambra",
+      "previousSchool": null
+    },
+    {
+      "name": "Jordan Yesenski",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Glendale, Ariz. / Ironwood",
+      "previousSchool": null
+    },
+    {
+      "name": "Pablo Morquecho",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Phoenix, Ariz. / Washington",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Essien",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Avondale, Ariz. / La Joya",
+      "previousSchool": null
+    },
+    {
+      "name": "Hubert Muka",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Goodyear, Ariz. / Millennium",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Contreras",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Tolleson, Ariz. / Tolleson",
+      "previousSchool": null
+    },
+    {
+      "name": "Logan Henley",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Surprise, Ariz. / Shadow Ridge",
+      "previousSchool": null
+    },
+    {
+      "name": "Costa Abdallah",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Flagstaff, Ariz. / Flagstaff",
+      "previousSchool": null
+    },
+    {
+      "name": "Jett Douglass",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Vancouver, Wash. / Mountain View",
+      "previousSchool": null
+    },
+    {
+      "name": "Owen Collins",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Peoria, Ariz. / Centennial",
+      "previousSchool": null
+    },
+    {
+      "name": "Nick Blas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Buckeye, Ariz. / Verrado",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Johansen",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Surprise, Ariz. / Shadow Ridge",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Barraza",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Glendale, Ariz. / Independence",
+      "previousSchool": null
+    },
+    {
+      "name": "Noe Cardenas",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Laveen Village, Ariz. / Cesar Chavez",
+      "previousSchool": null
+    },
+    {
+      "name": "Pedro Guerrero",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Buckeye, Ariz. / Verrado",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Herrera",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Goodyear, Ariz. / Millennium",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Engwall",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Surprise, Ariz. / Shadow Ridge",
+      "previousSchool": null
+    },
+    {
+      "name": "Aden Ramirez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Tolleson, Ariz. / Tolleson",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Castruita",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Flagstaff, Ariz. / Flagstaff",
+      "previousSchool": null
+    },
+    {
+      "name": "Gael Castruita",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Flagstaff, Ariz. / Flagstaff",
+      "previousSchool": null
+    },
+    {
+      "name": "Jorge Arreola",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Glendale, Ariz. / Independence",
+      "previousSchool": null
+    },
+    {
+      "name": "Madden Wydra",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Peoria, Ariz. / Sunrise Mountain",
+      "previousSchool": null
+    },
+    {
+      "name": "Kash Witherell",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Phoenix, Ariz. / Sandra Day O'Connor",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Torres",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "El Mirage, Ariz. / Dysart",
+      "previousSchool": null
+    },
+    {
+      "name": "Zach Blasing",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Phoenix, Ariz. / Sandra Day O'Connor",
+      "previousSchool": null
+    },
+    {
+      "name": "Bryan Romero",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Glendale, Ariz. / Ironwood",
+      "previousSchool": null
+    },
+    {
+      "name": "Austin De La Torre",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Glendale, Ariz. / Ironwood",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Torres",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Phoenix, Ariz. / Washington",
+      "previousSchool": null
+    }
+  ]
+}

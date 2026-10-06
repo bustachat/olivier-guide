@@ -1,0 +1,269 @@
+{
+  "schoolId": "yavapai_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.njcaa.org/sports/teams/406088261446928160/roster",
+  "fetchMethod": "claude-in-chrome (NJCAA team page)",
+  "squadTotal": 32,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Christian Rimbu",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Salman Shah",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Coen Storer",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Angelo Rana",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Joel Ajani Harrison",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "David Marku",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Avella",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Louis Heising",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Nery Martinez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Facundo Bellindier-Parada",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Dale Baker",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Mason Winfrey",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Andres Arenas",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Lukas Pino",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Anthony Lara",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Cole Schuman Jr,",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jr. Cole Schumann",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Carlos Javier Esparza",
+      "position": "F",
+      "positionAsListed": "S",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael McDermott",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Lima Dos Santos",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Landon Cramer",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Alexander Boel",
+      "position": "F",
+      "positionAsListed": "S",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Judah Levy",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Job Van Tellingen",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Luke Lapointe",
+      "position": "MF",
+      "positionAsListed": "M/D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Luca Norris Fernandez",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Endrueus Soares",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Afonso Fernandes",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Mickey Finamore",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Micky Finamore",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null,
+      "classUnverified": "NJCAA's team page lists no class year for him, and the college's own roster page could not be opened (2026-10-06)"
+    },
+    {
+      "name": "Andre Arenas Acevedo",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Sailan Rabord",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null
+    }
+  ]
+}

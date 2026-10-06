@@ -1,0 +1,196 @@
+{
+  "schoolId": "northeastern_junior_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.njcaa.org/sports/teams/406125098542565302/roster",
+  "fetchMethod": "claude-in-chrome (NJCAA team page)",
+  "squadTotal": 23,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Luca Baccigalupo Vega",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Edoardo Mitcul",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Quinten Van de Peppel",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Leon Lenweber",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Matteo Russo",
+      "position": "D",
+      "positionAsListed": "LB",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jayden Denieffe-Kelly",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Andreas Lavdas",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeziah Hernandez",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Will Newell",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Mark Griffin",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Ezekiel Garcia",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicholas Maywald",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Taiga Sannonmiya",
+      "position": "OTHER",
+      "positionAsListed": "MB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Taiga Sannonoya",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Adrian Hemmings",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Banks",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Luis Vargas",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Alessandro Pacifico",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Adan Del Rio",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Davide Neri",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Mattia Gubian",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Sebastian Villamizar Lievano",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Zak Macinnes",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    }
+  ]
+}

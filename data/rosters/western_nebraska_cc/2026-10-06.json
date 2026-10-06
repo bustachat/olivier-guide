@@ -1,0 +1,228 @@
+{
+  "schoolId": "western_nebraska_cc",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.njcaa.org/sports/teams/407359806119086062/roster",
+  "fetchMethod": "claude-in-chrome (NJCAA team page)",
+  "squadTotal": 27,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Dillon Jimenez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Ever Zubia",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Christ Aaron Kadja",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Antonio Bento",
+      "position": "D",
+      "positionAsListed": "LB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jafeth Ortega",
+      "position": "MF",
+      "positionAsListed": "CM",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Robert Connolly",
+      "position": "OTHER",
+      "positionAsListed": "U",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Tomoaki Kamiya",
+      "position": "MF",
+      "positionAsListed": "CAM",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Sean Kim",
+      "position": "F",
+      "positionAsListed": "W",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Victor Villalobus",
+      "position": "F",
+      "positionAsListed": "LW",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Pau Vera Montoya",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Macias",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Alessandro Gonzalez",
+      "position": "F",
+      "positionAsListed": "F/W",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Yoandry Guity",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Randall Jacques",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Amara",
+      "position": "MF",
+      "positionAsListed": "CAM",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Mariano Miranda",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Aurele Cuenot",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Gonzalez",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Nicolas Selvaggio",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Braden Anderson",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeffrey Buenahora",
+      "position": "D",
+      "positionAsListed": "RB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Abraham Jordon Agbezo",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Leon",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Giani Nguili",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Noel Enrique",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "David Ngolo",
+      "position": "F",
+      "positionAsListed": "W/MF",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jean Wil Standly-Lord",
+      "position": "D",
+      "positionAsListed": "CB",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    }
+  ]
+}

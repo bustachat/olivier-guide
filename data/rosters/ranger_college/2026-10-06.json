@@ -1,0 +1,236 @@
+{
+  "schoolId": "ranger_college",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.njcaa.org/sports/teams/406133309689563045/roster",
+  "fetchMethod": "claude-in-chrome (NJCAA team page)",
+  "squadTotal": 28,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Jack Bisazza",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Santiago Loayza",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Joseph Tascon",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacopo Bonacina",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Marcos Gomez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jamari Fowler",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Mateo Anez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Kosuke Nozawa",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Pujol",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jon Erana Saenz",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Floriano",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Nahum Vera",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jesus Valdez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jeymark Jimenez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Angel Arzate",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Diego Flores",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Rommel Garcia",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Alessandro Chavez",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Gonzalo Gomez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Adam Shakya",
+      "position": "MF",
+      "positionAsListed": "M",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Alexis Ventura",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Fridgeirsson",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Cameron Steury",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Javier Saucedo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Samuel Castrillon",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "John Voortman",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Lorenzo Mazza",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Mario Martinez",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    }
+  ]
+}

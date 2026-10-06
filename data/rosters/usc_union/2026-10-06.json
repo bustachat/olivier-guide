@@ -1,0 +1,276 @@
+{
+  "schoolId": "usc_union",
+  "schoolFile": "data/juco.json",
+  "fetchedAt": "2026-10-06",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.njcaa.org/sports/teams/412712136792344075/roster",
+  "fetchMethod": "claude-in-chrome (NJCAA team page)",
+  "squadTotal": 33,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Sam Carbonnier",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Aguiar",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Chris Caro",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Hoyos",
+      "position": "MF",
+      "positionAsListed": "C",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Edar Chavelas",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Emilio Werned",
+      "position": "F",
+      "positionAsListed": "RW",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Ethan Blake",
+      "position": "F",
+      "positionAsListed": "RW",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Gabriel Jordan",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Henry Poole",
+      "position": "F",
+      "positionAsListed": "RW",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Isael Antonio",
+      "position": "F",
+      "positionAsListed": "RW",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Chavira",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Jacob Ponce",
+      "position": "MF",
+      "positionAsListed": "C",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Juan Caicedo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Juhani Brown",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Julian Ardila",
+      "position": "D",
+      "positionAsListed": "DB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Justin Aguir",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Kaiden Roberts",
+      "position": "F",
+      "positionAsListed": "LW",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Khairi Richardson",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Massimo Rossi",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Muller",
+      "position": "MF",
+      "positionAsListed": "C",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Siede",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Michael Chivinos",
+      "position": "MF",
+      "positionAsListed": "C",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Nathan Kelly",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Nico Deiringer",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Oliver Lane",
+      "position": "D",
+      "positionAsListed": "DB",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Pau Manso",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Raisel Morales",
+      "position": "F",
+      "positionAsListed": "LW",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Rolando Hernandez",
+      "position": "MF",
+      "positionAsListed": "C",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Ryan Dzadu",
+      "position": "MF",
+      "positionAsListed": "C",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Salim Janna",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Sam Carbannier",
+      "position": "OTHER",
+      "positionAsListed": "",
+      "class": "",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Valentin Dahlem",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "",
+      "previousSchool": null
+    },
+    {
+      "name": "Valerio Cuseina",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "",
+      "previousSchool": null
+    }
+  ]
+}

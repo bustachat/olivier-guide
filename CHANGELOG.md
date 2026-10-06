@@ -6,6 +6,35 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.13 (2026-10-06) — eleven more junior college rosters stored and applied from NJCAA team pages (campaign C0, step 4, thirteenth batch)
+
+**What:** eleven junior colleges whose own roster pages showed the human-verification page (or could not be reached) earlier the same day were read on their NJCAA team pages, matched by name to the players the guide already held, stored with positions as published, and applied: Kennedy-King, Northeastern Junior College, Northwest College, Pima, Ranger, Seward County, Southeastern CC, Tyler JC, USC Union, Western Nebraska and Yavapai. 181 schools' midfielder numbers now come from a stored roster; 18 are still to read (28 on the coverage list, which also counts schools with no usable roster). Each note says the roster came from NJCAA.
+
+**Changes (the other six kept the same count and Fit Score):**
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Pima | 9 | 7 | 56 | 56 | One player is listed "W/F" and wingers are listed separately; 2 of the 7 are sophomores |
+| Western Nebraska | 9 | 8 | 47 | 46 | NJCAA lists 8 with midfield first (one is "W/MF" and is not counted); five players have no position listed |
+| Yavapai | 11 | 12 | 46 | 46 | NJCAA lists 12; Micky Finamore has no class year listed; four players have no position |
+| Northwest College | 14 | 14 | 44 | 45 | Same count; 4 sophomores, not 3 |
+
+**Judgement calls:** Seward County's Neri Díaz has no class year on NJCAA; his class (Fr.) was taken from the college's own roster page read on 15 September, the same season. Kennedy-King's NJCAA roster lists one goalkeeper among 27 players, with a position and class year for everyone; it is accepted with that recorded on the stored roster. Southeastern CC's NJCAA roster lists 62 players and 7 goalkeepers; its 18 midfielders match the stored count. USC Union's "C" label is counted as midfield (six players, matching the stored six). Tyler JC's own site runs on the NJCAA platform, so its NJCAA page is the same roster.
+
+**Not applied:**
+- **Phoenix:** its NJCAA roster includes a player (listed "C", no class year) who is not on the college's own September roster, and NJCAA has mixed women's-team players into Phoenix's list before. The stored numbers from the college's own page were kept.
+- **Truman:** NJCAA lists 28 players with positions but no class years at all.
+- **Trinidad State:** 23 of 29 positions blank.
+- **Wilbur Wright, NEO A&M, Rich Mountain, USC Sumter:** NJCAA says "No roster available".
+- **Monroe:** the only Monroe on NJCAA is the Bronx campus team, a different squad from the New Rochelle team in the guide (no stored midfielder appears on it). Not used; Monroe stays as it is.
+- **Miami Dade, Oxford, Southern Crescent, Southwestern Christian, Suffolk, Ulster, Westchester:** not read (the NJCAA site slowed again).
+
+**Coach check: not possible for these eleven.** Their own sites showed the verification page, and NJCAA team pages do not name coaches.
+
+**Validation:** `validate_schools.py` PASS; `validate_consistency.js` Issues: 0; JUCO trajectory, jargon, roster arithmetic and snapshot checks pass.
+
+---
+
 ### v46.12 (2026-10-06) — Garden City and USC Salkehatchie notes: count caveats restored
 
 **Owner ruling:** keep Garden City's midfielder count at 23 and say why it is high.

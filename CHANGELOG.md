@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.18 (2026-10-06) — coach check completed for the six colleges left over from v46.17
+
+**What:** the owner cleared the verification check on the six coaches pages, and each was read on the college's own site (2026-10-06). All six head coaches are confirmed: Luis Dantas (Lincoln Trail), Tyler Douthitt (NEO A&M), Brad Williams (North Idaho), Fernando Arellano (Paris JC), David Cameron (Phoenix) and Tim Pierce (Santa Monica).
+
+**Corrections to `coaches.json` (no score or rank changed):**
+- **Lincoln Trail:** the page now publishes Luis Dantas's email (rodriguesl@iecc.edu) and phone (618-544-8657 ext. 1388); both were blank. Assistants Kobe Patton and Jonas Burckhartt added.
+- **Phoenix:** staff list replaced with what the page shows: Pedro Mendoza (Associate Head Coach), Ethan Dougherty (Assistant Coach) and Carmen Esnal (Goalkeeping Coach). Sergio Campos and Tafadzwa Semwayo are no longer listed.
+
+**Noted, not changed:** NEO A&M's coaches page lists Tyler Douthitt as Head Coach and also still shows two older rows (Douthitt as assistant, and former head coach Adam Young). North Idaho, Paris JC and Santa Monica match what is stored.
+
+**Validation:** `validate_schools.py` PASS; `validate_consistency.js` Issues: 0.
+
+---
+
 ### v46.17 (2026-10-06) — nine more junior college rosters stored and applied from the colleges' own pages, after the owner completed the human-verification checks (campaign C0, step 4)
 
 **What:** the owner completed the human-verification check on each blocked site in Chrome, and the rosters were then read from the colleges' own pages: Cowley, Glendale, Lincoln Trail, NEO A&M, North Idaho, NWACC, Paris JC, Phoenix and Santa Monica. Each was stored with positions as published and applied. 194 schools' midfielder numbers now come from a stored roster; 5 are still to read.

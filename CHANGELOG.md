@@ -6,6 +6,23 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.14 (2026-10-06) — Miami Dade and Oxford College rosters stored and applied from NJCAA team pages (campaign C0, step 4)
+
+**What:** both colleges' own roster pages showed the human-verification page earlier the same day, so their NJCAA team pages were read, matched by name to stored players, and applied. 183 schools' midfielder numbers now come from a stored roster; 16 are still to read (26 on the coverage list).
+
+| School | Midfielders before | Now | Fit before | Fit now | Reason |
+|---|---|---|---|---|---|
+| Miami Dade | 8 | 8 | 61 | 61 | Same eight; 5 are sophomores |
+| Oxford College (Emory) | 14 | 16 | 47 | 46 | NJCAA lists 16 players with midfield first (10 M, 3 M/D, 3 M/F); 4 are sophomores |
+
+**Judgement calls:** Miami Dade's Lucas DePaula has no position or class year on NJCAA; the college's own roster, read earlier this season, listed him as a sophomore midfielder, and that was used so a known midfielder was not dropped (the note says so). Oxford labels 16 of 27 players as midfielders; that is its own labelling and the note says so.
+
+**Coach check:** not possible (own sites blocked; NJCAA does not name coaches).
+
+**Validation:** `validate_consistency.js` Issues: 0; JUCO trajectory, jargon, roster arithmetic and snapshot checks pass.
+
+---
+
 ### v46.13 (2026-10-06) — eleven more junior college rosters stored and applied from NJCAA team pages (campaign C0, step 4, thirteenth batch)
 
 **What:** eleven junior colleges whose own roster pages showed the human-verification page (or could not be reached) earlier the same day were read on their NJCAA team pages, matched by name to the players the guide already held, stored with positions as published, and applied: Kennedy-King, Northeastern Junior College, Northwest College, Pima, Ranger, Seward County, Southeastern CC, Tyler JC, USC Union, Western Nebraska and Yavapai. 181 schools' midfielder numbers now come from a stored roster; 18 are still to read (28 on the coverage list, which also counts schools with no usable roster). Each note says the roster came from NJCAA.

@@ -403,11 +403,11 @@
       "roster_season": "2026-27",
       "cleared_before_2027": 5,
       "cleared_names": [
-        "Lucas DePaula (So·M)",
-        "Josemy Vigil (So·M)",
-        "Matteo DePalo (So·M)",
-        "Emanuele Serra (So·M)",
-        "Nico Preciado (So·M)"
+        "Emanuele Serra",
+        "Josemy Vigil",
+        "Lucas DePaula",
+        "Matteo DePalo",
+        "Nico Preciado"
       ],
       "rising_senior_2027_count": 0,
       "rising_senior_2027_names": [],
@@ -415,8 +415,8 @@
       "rising_junior_2027_names": [],
       "recruit_risk": "Medium",
       "recruit_pathway": "Mixed",
-      "recruit_pathway_note": "Re-read on the live 2026-27 mdcathletics.com roster (8 MFs, down from 12). The 5 sophomores are exactly the 5 players stored as 2025-26 freshmen (DePaula, Vigil, DePalo, Serra, Preciado) — confirms accurate season-over-season tracking. No previous-school column published, so 'Mixed' is RETAINED, not re-derived.",
-      "trajectoryNote": "JUCO 2-year program. Re-read on the live 2026-27 mdcathletics.com roster (8 MFs, down from 12): only 5 (the So. group) clear before Olivier's August 2027 start — a drop from the prior season's 100% turnover. The other 3 (Fr.) return as sophomores in 2027-28 and would compete directly with Olivier in his first season.",
+      "recruit_pathway_note": "On the 2026-27 roster, 3 of the 8 midfielders are freshmen. The roster does not list previous colleges, so the recruiting-pathway label is carried over from the earlier roster review.",
+      "trajectoryNote": "On the 2026-27 roster, 5 of the 8 midfielders are sophomores who finish before Olivier arrives in August 2027. The other 3 freshmen return for his first season. This roster was read from the NJCAA's team page on 6 October 2026, because the college's own roster page could not be opened that day. 2 players on it have no position listed and are not counted. Lucas DePaula has no position or class year on NJCAA; the college's own roster, read earlier this season, listed him as a sophomore midfielder, and that is used here.",
       "trajectory": [
         {
           "year": 2027,
@@ -22327,12 +22327,12 @@
       "fitness": 45
     },
     "devScoresNote": "Tier-1 (oxfordcollegeathletics.com staff directory and head coach bio, read 2026-09-17): HC Greg Moss-Brown (USSF A licence, NSCAA Premier; two-time NCAA D1 All-American at Hartwick; 25 years coaching), associate head coach Lee Duggan and assistant Allan Wedderburn; department head athletic trainer and assistant athletic trainer. No soccer-specific S&C, video or GPS staff listed; home venue not stated on the pages read.",
-    "fitOlivier": 47,
+    "fitOlivier": 46,
     "lensScores": {
-      "overall": 47,
+      "overall": 46,
       "soccer": 44,
       "academic": 20,
-      "minutes": 55,
+      "minutes": 53,
       "lifestyle": 50,
       "value": 28
     },
@@ -22364,31 +22364,20 @@
       "lifestyleTags": "Warm climate, small residential campus, elite academics, near Atlanta"
     },
     "courses": [],
-    "rec": "Oxford College is Emory University's two-year campus: students complete an Associate of Arts and then usually continue to Emory College in Atlanta. Its men's soccer team is led by Greg Moss-Brown, a two-time NCAA Division I All-American at Hartwick with a US Soccer A licence. For Olivier the barriers are large. Emory says Oxford cannot offer athletic scholarships, the cost is about $94,000 a year, admissions are highly selective, and Oxford offers no exercise-science courses. NJCAA lists the team in Division I for 2026-27, while Emory's own admissions page says Oxford competes in Division III; this guide follows Emory's page, which governs aid. Minutes outlook: on the 2026-27 roster, 4 of 14 midfielders finish before Olivier's August 2027 arrival, and the other 10 return as sophomores in his first season.",
+    "rec": "Oxford College is Emory University's two-year campus: students complete an Associate of Arts and then usually continue to Emory College in Atlanta. Its men's soccer team is led by Greg Moss-Brown, a two-time NCAA Division I All-American at Hartwick with a US Soccer A licence. For Olivier the barriers are large. Emory says Oxford cannot offer athletic scholarships, the cost is about $94,000 a year, admissions are highly selective, and Oxford offers no exercise-science courses. NJCAA lists the team in Division I for 2026-27, while Emory's own admissions page says Oxford competes in Division III; this guide follows Emory's page, which governs aid. Minutes outlook: on the 2026-27 roster, 4 of 16 midfielders finish before Olivier's August 2027 arrival, and the other 12 return as sophomores in his first season.",
     "minutesOutlook": {
       "available": true,
-      "mf_total": 14,
+      "mf_total": 16,
       "roster_season": "2026-27",
       "cleared_before_2027": 4,
       "cleared_names": [
-        "Ethan Zelig (So·M)",
-        "Henry Pickard (So·M)",
-        "Aditya Karkala (So·M)",
-        "Lucas Chustz (So·M)"
+        "Ethan Zelig",
+        "Henry Pickard",
+        "Aditya Karkala",
+        "Lucas Chustz"
       ],
-      "rising_senior_2027_count": 10,
-      "rising_senior_2027_names": [
-        "Nathan Fox (Fr·M)",
-        "Benton McMahon (Fr·M)",
-        "Shawn Pan (Fr·M)",
-        "James Liu (Fr·M)",
-        "Sevastian Castillo (Fr·M)",
-        "Cole Loos (Fr·M)",
-        "Lorenzo Urrutia (Fr·M)",
-        "Fionn Graham (Fr·M)",
-        "Zachary Busch (Fr·M)",
-        "Kavi Dash (Fr·M)"
-      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
       "rising_junior_2027_count": 0,
       "rising_junior_2027_names": [],
       "recruit_risk": "High",
@@ -22396,19 +22385,19 @@
         {
           "year": 2027,
           "yr_label": "Yr 1 (Fr.)",
-          "pct": 50,
-          "label": "Likely starter"
+          "pct": 48,
+          "label": "Squad rotation"
         },
         {
           "year": 2028,
           "yr_label": "Yr 2 (So.)",
-          "pct": 63,
+          "pct": 61,
           "label": "Likely starter"
         }
       ],
-      "trajectoryNote": "Oxford's official 2026-27 roster lists 14 midfield players (including 3 listed as Defense/Midfield and 2 as Midfield/Forward): 4 sophomores who finish at Oxford in 2026-27 and continue to Emory's Atlanta campus, and 10 freshmen who return as sophomores in Olivier's first season. Ask the coach: 'How many midfield places do you expect to fill for 2027?' Roster checked 17 September 2026.",
+      "trajectoryNote": "On the 2026-27 roster, 4 of the 16 midfielders are sophomores who finish before Olivier arrives in August 2027. The other 12 freshmen return for his first season. This roster was read from the NJCAA's team page on 6 October 2026, because the college's own roster page could not be opened that day. 2 players on it have no position listed and are not counted. Oxford lists most of its outfield players as midfielders (16 of 27, including six with a second position), so this group is larger than at most colleges.",
       "recruit_pathway": "Freshman-friendly",
-      "recruit_pathway_note": "Oxford recruits true freshmen through Emory University's own selective admissions; the roster lists high schools only, and no transfer players."
+      "recruit_pathway_note": "On the 2026-27 roster, 12 of the 16 midfielders are freshmen. The roster does not list previous colleges, so the recruiting-pathway label is carried over from the earlier roster review."
     },
     "acRank": "Emory University (two-year campus)",
     "kinRank": "Associate of Arts (liberal arts) — no exercise science, kinesiology or anatomy courses at Oxford"

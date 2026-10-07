@@ -3632,5 +3632,509 @@
         "covered": true
       }
     ]
+  },
+  {
+    "id": "pace",
+    "name": "Pace",
+    "full": "Pace University",
+    "loc": "Pleasantville, NY",
+    "region": "east",
+    "div": "D2",
+    "conf": "Northeast-10 Conference (NE10)",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "profileDepth": "full",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "mapX": 547,
+    "mapY": 136,
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "9th NE10",
+        "note": "1-6-2 NE10 (6-9-3 overall). 9th of 10 in the Northeast-10. First season after the program returned from a 35-year break."
+      }
+    ],
+    "titles": [],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "The program restarted in 2025 after a 35-year break, so it has no recent alumni record yet",
+        "Head coach Ed Evans also coaches the Hudson Valley Hammers in USL League Two, a summer league for college players"
+      ],
+      "draftRank": "No MLS SuperDraft picks, 2022-2026"
+    },
+    "acRank": "National university",
+    "kinRank": "Limited: no exercise science or kinesiology major; Health Science B.S. is the closest",
+    "degreeTitle": "B.S. in Health Science (Pre-Health Profession track)",
+    "acuAlign": 1,
+    "acuAlignNote": "Pace has no exercise science or kinesiology major. The closest degree is the Health Science B.S. in the College of Health Professions, offered on the Pleasantville campus. Its required courses cover health care ethics, health policy, epidemiology and evidence-based practice, and a two-part capstone, which matches the research and ethics unit only. Anatomy, physiology and other science courses are chosen with an adviser as electives and are not required by the degree, so they are not counted here.",
+    "soccerLevel": "NCAA Division II, Northeast-10 Conference",
+    "soccerLevelShort": "Northeast-10",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "capped",
+    "size": 7956,
+    "prePT": "Foundation: health science degree with a pre-health track, science prerequisites taken as electives",
+    "prePTShort": "Foundation",
+    "gpa": {
+      "minEntry": "2.5 for international applicants (or top half of the class)",
+      "minSchol": "Not published; merit awards are decided at admission",
+      "note": "Pace says it generally looks for international applicants in the top 50% of their class, or a 2.5 GPA where the school does not rank students. Olivier's 2.8 is above that.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 78778,
+      "tuition": 55040,
+      "roomBoard": 20900,
+      "fees": 2838,
+      "maxAthletic": 0.6,
+      "maxAcademic": 30000,
+      "aidType": "athletic+merit",
+      "internationalNote": "Pace's 2026-27 cost of attendance page lists tuition of $55,040, standard fees of $2,838 on the Westchester campus (these now include a required book bundle) and $20,900 for food and housing, a total of $78,778. Pace also lists $1,850 for personal expenses and $1,120 for transport, which are not counted here. International students are considered for merit scholarships automatically at admission; Pace says these range from about $10,000 to $30,000 a year and cannot be applied for later. Division II athletic aid is capped and usually partial, so this is one of the most expensive schools in the guide even after aid."
+    },
+    "culture": {
+      "vibe": "Pace's Pleasantville campus is the smaller, greener of its two undergraduate campuses, in a village in Westchester County north of New York City. Most of the university's students are at the Manhattan campus.",
+      "thingsToDo": "Pleasantville is a small commuter village with a train line into Manhattan. The Hudson Valley and its towns are close by. Winters are cold.",
+      "socialScene": "A residential campus where athletes make up a visible share of the students. Housing is in Alumni Hall, Martin Hall and the Townhouses, and most first-year students live in Alumni Hall.",
+      "olivierMatch": "★★ Not warm and not a city campus, though New York City is a train ride away. The cost is very high and the degree is a weak match for exercise science. The draw is a new program with a young squad.",
+      "lifestyleTags": "Westchester County, Suburban campus, Train to New York City, Cold winters"
+    },
+    "facilityDetails": {
+      "stadium": "Northwell Stadium, on the Pleasantville campus. Opened in spring 2015. Artificial turf, lights and an enclosed press box; overall capacity 1,600 with 1,200 seats. Shared with football and lacrosse.",
+      "trainingFields": "Peter X. Finnerty Field is also on campus. Pace's athletics site does not say where the men's soccer team trains.",
+      "strengthConditioning": "The Goldstein Health, Fitness and Recreation Center (75,000 square feet, opened 2002) has a fitness room, an indoor track and a pool. The Joseph R. Ianniello Field House is the athletics building. No strength coach assigned to soccer is named on the athletics site.",
+      "sportsScience": "No sports science staff or equipment for soccer is described on the athletics site.",
+      "sportsMed": "Not described on the men's soccer pages.",
+      "academicLabs": "The College of Health Professions teaches the Health Science degree. No exercise science laboratory is described.",
+      "extras": "Pace also offers minors in Sports Psychology, Nutrition and Wellness, and Public Health.",
+      "rating": "Good",
+      "note": "A modern, lit turf stadium on campus, shared with other sports. Support staff for soccer are not described.",
+      "housing": {
+        "available": true,
+        "note": "New students who pay the housing deposit by May 1 are guaranteed a place in on-campus housing. On the Pleasantville campus students live in Alumni Hall, Martin Hall or the Townhouses."
+      }
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 62,
+      "fitness": 58
+    },
+    "devScoresNote": "Scored §5a (environment only; D2 ceiling 76). paceuathletics.com, read 2026-10-07: HC Ed Evans + 2 assistants (Stefan Copetti, Liam Evans); HC is in his 2nd season as a men's college head coach (program restarted 2025), with 12 years as women's associate HC and a USL2 head-coach role -> tactical 58. Northwell Stadium (2015, turf, lights, 1,600 capacity, shared with football/lacrosse), no video or GPS staff described -> technical 62. Goldstein Center fitness room and field house, no soccer S&C or sports-science staff named -> fitness 58. devAvg 59, under the D2 ceiling.",
+    "lensScores": {
+      "overall": 25,
+      "soccer": 43,
+      "academic": 20,
+      "minutes": 12,
+      "lifestyle": 0,
+      "value": 15
+    },
+    "fitOlivier": 25,
+    "tags": [
+      "soccer"
+    ],
+    "facilities": [
+      "Northwell Stadium: turf, lights, 1,600 capacity",
+      "Goldstein Health, Fitness and Recreation Center",
+      "Joseph R. Ianniello Field House"
+    ],
+    "courses": [
+      "HSC 100 Health Care Ethics",
+      "HSC 110 Introduction to Health Promotion and Disease Prevention",
+      "HSC 305 Introduction to Epidemiology and Evidence-Based Practice",
+      "HSC 400 Leadership and Management in Health Care",
+      "HSC 480 / HSC 481 Capstone Project I and II"
+    ],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": false
+      },
+      {
+        "unit": "EXSC222",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC126",
+        "covered": false
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ],
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 19,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 1,
+      "cleared_names": [
+        "Daniel Santos"
+      ],
+      "rising_senior_2027_count": 3,
+      "rising_senior_2027_names": [
+        "Derrick Henry",
+        "Brandon Carchipulla",
+        "David Kinzel"
+      ],
+      "rising_junior_2027_count": 7,
+      "rising_junior_2027_names": [
+        "Ervin Radoncic",
+        "Daniel Coello",
+        "Brian Alves",
+        "Kaden Gagnon Salama",
+        "Andres Arroyave",
+        "Sean Byles",
+        "Randy Lendot"
+      ],
+      "recruit_risk": "High",
+      "trajectoryNote": "On the 2026-27 roster, 1 of 19 midfielders finishes before Olivier arrives in August 2027. In his first season, 3 will be seniors, 7 will be juniors and 8 will be sophomores. 6 more players are listed with midfield as a second position (Defender/Midfielder, Foward/Midfielder) and are not counted. Pace's published 2026 roster lists 71 players, far more than a match-day squad, so some of these midfielders are likely reserve players.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 10,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 35,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 65,
+          "label": "Established starter"
+        }
+      ],
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "On the 2026 roster, 5 of Pace's 19 midfielders list a previous college (Cal State Monterey Bay, New Haven, Wilmington, Adelphi and Monroe). The other 14 came straight from high school or from overseas, including players from Australia, Vietnam, Canada and the Cayman Islands. The program restarted in 2025, so most of the squad are first- and second-year players."
+    },
+    "rec": "Pace brought men's soccer back in 2025 after 35 years without it, and finished 9th of 10 in the Northeast-10 in its first season. The squad is very large and young, so competition for midfield places is heavy but few players are established. The stadium is modern and on campus. The two drawbacks are large: the published cost is about $78,800 a year, among the highest in the guide, and Pace has no exercise science or kinesiology degree, so the academic match is weak. Worth a look only if a large scholarship is offered.",
+    "domain": "pace.edu",
+    "url": "https://paceuathletics.com/sports/mens-soccer",
+    "confKey": "other"
+  },
+  {
+    "id": "erskine",
+    "name": "Erskine",
+    "full": "Erskine College",
+    "loc": "Due West, SC",
+    "region": "south",
+    "div": "D2",
+    "conf": "Conference Carolinas",
+    "warm": true,
+    "city": false,
+    "top": false,
+    "profileDepth": "full",
+    "color": [
+      "#fde8e8",
+      "#7f1d1d"
+    ],
+    "mapX": 468,
+    "mapY": 241,
+    "confRecord": [
+      {
+        "yr": 2025,
+        "pos": "4th SW Div",
+        "note": "2-9-2 Conference Carolinas (2-10-2 overall). 4th of 5 in the Southwest Division."
+      },
+      {
+        "yr": 2024,
+        "pos": "4th SW Div",
+        "note": "3-8-1 Conference Carolinas (3-9-1 overall). 4th of 5 in the Southwest Division."
+      },
+      {
+        "yr": 2023,
+        "pos": "5th SW Div",
+        "note": "1-11 Conference Carolinas (1-15 overall). 5th of 5 in the Southwest Division."
+      },
+      {
+        "yr": 2022,
+        "pos": "11th CC",
+        "note": "1-9-1 Conference Carolinas (1-14-1 overall). 11th of 12."
+      },
+      {
+        "yr": 2021,
+        "pos": "11th CC",
+        "note": "2-8-1 Conference Carolinas (2-14-1 overall). 11th of 12 in the fall 2021 season."
+      },
+      {
+        "yr": 2020,
+        "pos": "1st CC",
+        "note": "6-0 Conference Carolinas (7-1 overall). 1st of 10 in the 2020-21 season, which was played in spring 2021."
+      }
+    ],
+    "titles": [
+      "First place in the Conference Carolinas regular season, 2020-21 (6-0, played in spring 2021)"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 0,
+      "notable": [
+        "No professional signings are listed on the program's own pages",
+        "The 2026 roster includes players from England, Spain and several US states"
+      ],
+      "draftRank": "No MLS SuperDraft picks, 2022-2026"
+    },
+    "acRank": "Regional liberal arts college",
+    "kinRank": "Good: Health Science B.S. built for physical therapy and athletic training applicants",
+    "degreeTitle": "B.S. in Health Science",
+    "acuAlign": 5,
+    "acuAlignNote": "Erskine's Health Science B.S. is run jointly by its athletic training and biology staff and is aimed at students applying to physical therapy, athletic training, occupational therapy and physician assistant programs. Required courses that match ACU units: Human Anatomy and Physiology I and II (anatomy), Kinesiology (functional anatomy), Concepts of Cellular Biology and Concepts of Organismal Biology (human biology), Physiology of Exercise (exercise physiology) and Research Methods in Health Science (research). The degree also requires 100 hours of supervised field experience with a health professional, which is short of ACU's 140-hour placement and is not counted. Human Growth and Development is one of several options, not a required course, so it is not counted either.",
+    "soccerLevel": "NCAA Division II, Conference Carolinas",
+    "soccerLevelShort": "Conference Carolinas",
+    "aid": "Athletic + Merit",
+    "fundingPathway": "capped",
+    "size": 854,
+    "prePT": "Good: required anatomy and physiology, kinesiology, exercise physiology and 100 hours of field experience",
+    "prePTShort": "Good",
+    "gpa": {
+      "minEntry": "No minimum GPA is published",
+      "minSchol": "Not published; merit awards depend on GPA and SAT or ACT score",
+      "note": "International applicants send a transcript converted to the U.S. 4.0 scale by an approved evaluation service (WES is accepted) and an English test if English is not their first language. Erskine's catalog does not state a minimum GPA.",
+      "status": "eligible"
+    },
+    "fin": {
+      "costNum": 50610,
+      "tuition": 34435,
+      "roomBoard": 13900,
+      "fees": 2275,
+      "maxAthletic": 0.6,
+      "maxAcademic": 0,
+      "aidType": "athletic+merit",
+      "internationalNote": "Erskine's 2026-27 charges for a resident student are tuition $34,435, an institutional service fee of $2,275, a meal plan of $7,000 and a room at $6,900, a total of $50,610. Single rooms, apartments and honors housing cost more. Erskine has announced that published tuition and required fees will fall from $36,710 to $29,000 from fall 2027, the term Olivier would start, which would bring the total to roughly $42,900 if room and meal charges stay the same. Merit scholarships (named Provost, Deans, Towers, Garnet and Gold) are based on GPA and test scores; Erskine does not publish their amounts, so no academic award is assumed here. Ask admissions what an international student with a 2.8 GPA would receive."
+    },
+    "culture": {
+      "vibe": "A small Christian liberal arts college, tied to the Associate Reformed Presbyterian Church, in the village of Due West in rural upstate South Carolina. About 850 undergraduates, and a large share of them play a sport.",
+      "thingsToDo": "Due West is very small. Greenwood and Anderson are the nearest towns, and Greenville is the nearest city. The campus itself is the centre of student life.",
+      "socialScene": "Every student is required to live on campus unless exempted, and alcohol is not allowed on campus. Student life is close-knit and built around teams, chapel and campus events. Students come from 24 countries and territories, including Australia.",
+      "olivierMatch": "★★ Warm climate, but the opposite of a city campus: a rural village with a strict campus code. The degree is a fair match for a physical therapy path. The soccer program has struggled in recent seasons.",
+      "lifestyleTags": "Rural South Carolina, Small Christian college, Residential campus, Warm climate"
+    },
+    "facilityDetails": {
+      "stadium": "Lundy Field, on campus beside the softball complex. Built before the 2026 season with a new grass surface and a new press box; a digital scoreboard is used on match days. The athletics site does not state a seating capacity or mention lights.",
+      "trainingFields": "Huggins Field, on campus, is the football practice field and the alternative site for soccer. The college catalog says it is lit for night play.",
+      "strengthConditioning": "Not described on the athletics site's facility pages.",
+      "sportsScience": "No sports science staff or equipment is described.",
+      "sportsMed": "The Health Science degree is run with the college's athletic training staff. Athletic training cover for soccer is not described on the team pages.",
+      "academicLabs": "Health Science students complete two 50-hour field placements with health professionals in their second and third years.",
+      "extras": "Belk Arena and the Phillips Auxiliary Gym are the indoor facilities on campus.",
+      "rating": "Solid",
+      "note": "The grass home field is new for 2026, but seating, lights and support facilities are not described.",
+      "housing": {
+        "available": true,
+        "note": "Every Erskine student is required to live in a campus residence hall unless granted an exemption. Halls include Bonner, Grier, Carnegie, Kennedy, Pressly and Robinson, with the Erskine Apartments and Fleet Village for older students."
+      }
+    },
+    "devScores": {
+      "tactical": 58,
+      "technical": 54,
+      "fitness": 50
+    },
+    "devScoresNote": "Scored §5a (environment only; D2 ceiling 76). erskinesports.com, read 2026-10-07: HC John Chisolm (US Soccer B licence, national GK licence, 9 years as a college assistant incl. William & Mary, Vanderbilt, Mississippi State) + 2 assistants -> tactical 58. Lundy Field: new grass surface and press box for 2026, no capacity or lights stated, no video or GPS described -> technical 54. No S&C or sports-science provision described on the athletics site -> fitness 50. devAvg 54, under the D2 ceiling. Results (7-48-4, 2022-25) are not part of this score.",
+    "lensScores": {
+      "overall": 39,
+      "soccer": 40,
+      "academic": 42,
+      "minutes": 21,
+      "lifestyle": 50,
+      "value": 24
+    },
+    "fitOlivier": 39,
+    "tags": [
+      "warm",
+      "acad"
+    ],
+    "facilities": [
+      "Lundy Field: new grass pitch and press box, 2026",
+      "Huggins Field: lit alternative pitch",
+      "Health Science field placements (100 hours)"
+    ],
+    "courses": [
+      "BG 210 / BG 211 Human Anatomy & Physiology I and II",
+      "HE 402 Kinesiology",
+      "HE 403 Physiology of Exercise",
+      "HE 317 Human Nutrition in Health & Disease",
+      "HE 401 Research Methods in Health Science",
+      "HE 203 / HE 303 Field Experience in Healthcare I and II"
+    ],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": false
+      },
+      {
+        "unit": "EXSC394",
+        "covered": false
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": false
+      },
+      {
+        "unit": "EXSC233",
+        "covered": false
+      },
+      {
+        "unit": "EXSC216",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": false
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": false
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ],
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 6,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 2,
+      "cleared_names": [
+        "Joe Roberts",
+        "Lian Lal"
+      ],
+      "rising_senior_2027_count": 1,
+      "rising_senior_2027_names": [
+        "Axel Hernandez"
+      ],
+      "rising_junior_2027_count": 3,
+      "rising_junior_2027_names": [
+        "Ricky Olivera Garcia",
+        "Marcos Martinez Loureiro",
+        "Kaden Manigault"
+      ],
+      "recruit_risk": "Medium",
+      "trajectoryNote": "On the 2026-27 roster, 2 of 6 midfielders finish before Olivier arrives in August 2027. In his first season, 1 will be a senior, 3 will be juniors and none will be sophomores. 2 more players are listed with midfield as a second position (Forward/Midfielder, Winger/Midfielder) and are not counted.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 15,
+          "label": "Development year"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 30,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 55,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ],
+      "recruit_pathway": "Mixed",
+      "recruit_pathway_note": "On the 2026 roster, 3 of Erskine's 6 midfielders list a previous college, all two-year colleges (USC Lancaster, USC Union and Cañada College). The other 3 came from high school or from overseas."
+    },
+    "rec": "Erskine is a small, rural Christian college in South Carolina with a warm climate and a Health Science degree that suits a physical therapy path. The soccer program has finished near the bottom of Conference Carolinas in each of the last five fall seasons, and its midfield group is small, though most of it returns for 2027. The cost is about $50,600 a year now and is due to fall from fall 2027. The setting is the main question: Due West is a village, students must live on campus, and campus rules are strict.",
+    "domain": "erskinesports.com",
+    "url": "https://erskinesports.com/sports/mens-soccer",
+    "confKey": "other"
   }
 ]

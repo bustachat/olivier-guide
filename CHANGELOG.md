@@ -6,6 +6,28 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.21 (2026-10-07) — Pace University and Erskine College added (NCAA Division II); Northeast-10 and Conference Carolinas added as new conferences
+
+**What:** two schools added at the owner's request, both read on their own sites in Chrome on 2026-10-07. The guide now has 215 schools and 215 coaches.
+
+**Pace (Pleasantville, NY; Northeast-10).** Men's soccer returned in 2025 after 35 years; 6-9-3 overall and 1-6-2 in the conference, 9th of 10 (northeast10.org standings). Head coach Ed Evans (score 52). 2026 roster: 71 players, 19 with midfield as first position, 1 finishing before August 2027. Cost $78,778 (Pace's 2026-27 cost of attendance page: tuition $55,040, fees $2,838, food and housing $20,900). No exercise science or kinesiology major (catalog Programs A-Z checked); Health Science B.S. scored, ACU match 1 of 16. Fit 25.
+
+**Erskine (Due West, SC; Conference Carolinas).** 2-10-2 in 2025, 4th of 5 in its division; near the bottom every fall since 2021, first place in the 2020-21 season played in spring 2021 (conferencecarolinas.com standings, each season read). Head coach John Chisolm (score 50, US Soccer B licence). 2026 roster: 30 players, 6 midfielders, 2 finishing before August 2027. Cost $50,610 (Erskine's 2026-27 tuition and fees table). Health Science B.S. read in the 2025-26 catalog: ACU match 5 of 16. Students must live on campus. Fit 39.
+
+**Minutes and Fit Scores** were calculated by `build_patches.py` / `refresh_school.py` from the stored rosters (`data/rosters/pace/`, `data/rosters/erskine/`). Pace's 71-player roster needed `--force` for the squad-size test.
+
+**New conferences:** cards and ranking rows for the Northeast-10 (10 men's soccer programs, 12 NCAA Division II titles held by current members, 1 MLS pick 2022-26) and Conference Carolinas (15 programs, no titles, no picks). Program totals are from the NCAA member directory for 2026-27; titles from ncaa.com's Division II championship history. Filter chips added for both. Ranking rows were placed by hand at 20 and 23.
+
+**Coaches:** all 215 re-ranked; Evans is 192nd, Chisolm 196th.
+
+**Icons:** Erskine's `domain` is its athletics site, because the college site's icon comes back from Google as a 16-pixel placeholder.
+
+**Not verified, recorded in CLAUDE.md section 6F:** Erskine merit scholarship amounts (academic aid stored as 0), Erskine's 2027-28 price cut, Lundy Field capacity and lights, Pace soccer social accounts, Ed Evans's licence.
+
+**Validation:** `validate_schools.py` PASS (215 schools); `validate_consistency.js` Issues: 0; `check_no_jargon.py` PASS; coach ranking and bio checks PASS; new-school coverage check PASS for both. Local preview: 215 schools, both cards and all nine modal tabs with no "undefined", both map dots on land, both conference cards and chips present, no console errors.
+
+---
+
 ### v46.20 (2026-10-07) — new coach question about mid-year starts; first roster re-check moved to 20 February 2027
 
 **What:** one question added to the Pathways tab's coach questions: "Do you bring in players mid-year, in January, and would you consider a January start for me?" No score or school data changed.

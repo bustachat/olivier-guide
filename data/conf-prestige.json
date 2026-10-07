@@ -192,6 +192,16 @@
   {
     "rank": 20,
     "rankClass": "rk-solid",
+    "name": "NE10",
+    "group": "ne10",
+    "fullName": "Northeast-10 Conference",
+    "div": "D2",
+    "divBadge": "d-D2",
+    "scholarships": "Up to 9 equivalencies"
+  },
+  {
+    "rank": 21,
+    "rankClass": "rk-solid",
     "name": "MEC",
     "group": "mec",
     "fullName": "Mountain East Conference (WV)",
@@ -200,7 +210,7 @@
     "scholarships": "Up to 9 equivalencies"
   },
   {
-    "rank": 21,
+    "rank": 22,
     "rankClass": "rk-solid",
     "name": "CACC",
     "group": "cacc",
@@ -210,7 +220,17 @@
     "scholarships": "Up to 9 equivalencies"
   },
   {
-    "rank": 22,
+    "rank": 23,
+    "rankClass": "rk-solid",
+    "name": "Conference Carolinas",
+    "group": "conference-carolinas",
+    "fullName": "Conference Carolinas",
+    "div": "D2",
+    "divBadge": "d-D2",
+    "scholarships": "Up to 9 equivalencies"
+  },
+  {
+    "rank": 24,
     "rankClass": "rk-solid",
     "name": "Sun Conference",
     "group": "sun-conference",
@@ -220,7 +240,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 23,
+    "rank": 25,
     "rankClass": "rk-dev",
     "name": "AMC",
     "group": "amc",
@@ -230,7 +250,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 24,
+    "rank": 26,
     "rankClass": "rk-dev",
     "name": "WHAC",
     "group": "whac",
@@ -240,7 +260,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 25,
+    "rank": 27,
     "rankClass": "rk-dev",
     "name": "SAC",
     "group": "sac",
@@ -250,7 +270,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 26,
+    "rank": 28,
     "rankClass": "rk-dev",
     "name": "SCIAC",
     "group": "sciac",
@@ -260,7 +280,7 @@
     "scholarships": "Zero athletic scholarships"
   },
   {
-    "rank": 27,
+    "rank": 29,
     "rankClass": "rk-dev",
     "name": "CCCAA/NJCAA",
     "group": [

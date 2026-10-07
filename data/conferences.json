@@ -876,6 +876,92 @@
     ]
   },
   {
+    "id": "ne10",
+    "group": "ne10",
+    "name": "Northeast-10 Conference",
+    "abbr": "NE10",
+    "tier": "Division II",
+    "tierClass": "tier-d2",
+    "prestige": "Strong regional D2 — New England and New York",
+    "founded": 1979,
+    "teams": 10,
+    "soccerTeams": 10,
+    "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-10-07",
+    "ncaaTitles": 12,
+    "ncaaTitlesSource": "ncaa.com Division II men's soccer championship history, read 2026-10-07. Titles held by current members: Southern Connecticut State 6 (1987, 1990, 1992, 1995, 1998, 1999), Franklin Pierce 3 (2007, 2022, 2023), Southern New Hampshire 2 (1989, 2013), Adelphi 1 (1974).",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 1,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-10-07",
+    "scholarships": "NCAA D2 — up to 9.0 equivalencies (men's soccer)",
+    "maxAid": "9.0",
+    "otherSchools": [
+      "Adelphi",
+      "American International",
+      "Assumption",
+      "Bentley",
+      "Franklin Pierce",
+      "Saint Anselm",
+      "Saint Michael's",
+      "Southern Connecticut State",
+      "Southern New Hampshire"
+    ],
+    "desc": "Division II programs in New England and New York, including several past national champions.",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ]
+  },
+  {
+    "id": "conference-carolinas",
+    "group": "conference-carolinas",
+    "name": "Conference Carolinas",
+    "abbr": "CC",
+    "tier": "Division II",
+    "tierClass": "tier-d2",
+    "prestige": "Regional D2 — the Carolinas, Georgia, Tennessee and Virginia",
+    "founded": 1930,
+    "teams": 16,
+    "soccerTeams": 15,
+    "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-10-07",
+    "ncaaTitles": 0,
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-10-07",
+    "scholarships": "NCAA D2 — up to 9.0 equivalencies (men's soccer)",
+    "maxAid": "9.0",
+    "otherSchools": [
+      "Barton",
+      "Belmont Abbey",
+      "Chowan",
+      "Converse",
+      "Emmanuel (GA)",
+      "Ferrum",
+      "Francis Marion",
+      "King",
+      "Lees-McRae",
+      "Mount Olive",
+      "North Greenville",
+      "Shorter",
+      "Southern Wesleyan",
+      "Young Harris"
+    ],
+    "desc": "Division II programs at small colleges across the Carolinas and neighboring states.",
+    "color": [
+      "#fde8e8",
+      "#7f1d1d"
+    ]
+  },
+  {
     "id": "amc",
     "group": "amc",
     "name": "American Midwest Conference",

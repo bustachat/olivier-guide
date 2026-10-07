@@ -1,0 +1,651 @@
+{
+  "schoolId": "pace",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-07",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://paceuathletics.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 71,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Brady Kozera",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Millbrook, NY",
+      "previousSchool": null,
+      "highSchool": "Millbrook High School"
+    },
+    {
+      "name": "Edward Vargas",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Wallkill, NY",
+      "previousSchool": null,
+      "highSchool": "Wallkill Senior High School"
+    },
+    {
+      "name": "Niall Rodgers",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "So.",
+      "hometown": "Yonkers, NY",
+      "previousSchool": null,
+      "highSchool": "Yonkers Montessori Academy"
+    },
+    {
+      "name": "James Gilbert",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Hamburg, NY",
+      "previousSchool": null,
+      "highSchool": "Hamburg High School"
+    },
+    {
+      "name": "Braden Jacobs",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Pearl River, NY",
+      "previousSchool": null,
+      "highSchool": "Tappan Zee High School"
+    },
+    {
+      "name": "Acland Zhang",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-Fr.",
+      "hometown": "Melbourne, AUS.",
+      "previousSchool": "Cal State Monterey Bay",
+      "highSchool": "University School"
+    },
+    {
+      "name": "Alex Squillacioti",
+      "position": "F",
+      "positionAsListed": "Foward/Midfielder",
+      "class": "So.",
+      "hometown": "Kings Park, NY",
+      "previousSchool": null,
+      "highSchool": "Kings Park High School"
+    },
+    {
+      "name": "Ervin Radoncic",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "East Elmhurst, NY",
+      "previousSchool": null,
+      "highSchool": "Academy of Finance and Enterprise"
+    },
+    {
+      "name": "Alexander Dutra",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Greenwich, CT",
+      "previousSchool": null,
+      "highSchool": "Greenwich High School"
+    },
+    {
+      "name": "Segun Olayinka",
+      "position": "D",
+      "positionAsListed": "Defender/Forward",
+      "class": "So.",
+      "hometown": "Morganville, NJ",
+      "previousSchool": null,
+      "highSchool": "Freehold High School"
+    },
+    {
+      "name": "Jaden Rose",
+      "position": "D",
+      "positionAsListed": "Defender/Foward",
+      "class": "So.",
+      "hometown": "Brooklyn, NY",
+      "previousSchool": null,
+      "highSchool": "Saint Francis Prep"
+    },
+    {
+      "name": "Daniel Coello",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Cortlandt Manor, NY",
+      "previousSchool": null,
+      "highSchool": "Walter Panas High School"
+    },
+    {
+      "name": "Angel Erazo",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Valley Stream, NY",
+      "previousSchool": null,
+      "highSchool": "Kellenberg Memorial High School"
+    },
+    {
+      "name": "Thiago Lugo",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Woodside, NY",
+      "previousSchool": null,
+      "highSchool": "Robert F. Wagner SSAT"
+    },
+    {
+      "name": "Daniel Santos",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "New Rochelle, NY",
+      "previousSchool": "New Haven",
+      "highSchool": "New Rochelle High School"
+    },
+    {
+      "name": "Brian Alves",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Mount Vernon, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Mount Vernon Steam Academy"
+    },
+    {
+      "name": "Tito Easter",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "San Mioguel de Allende, Mexico",
+      "previousSchool": null,
+      "highSchool": "Darlington School"
+    },
+    {
+      "name": "David Cruz",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Highland, NY",
+      "previousSchool": null,
+      "highSchool": "Wallkill Senior High School"
+    },
+    {
+      "name": "Robert Henry",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Valley Stream, NY",
+      "previousSchool": null,
+      "highSchool": "Saint Francis Prep"
+    },
+    {
+      "name": "Jack Ryan",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Inistogie, Ireland",
+      "previousSchool": "Sarah Lawrence College",
+      "highSchool": "Trinity-Pawling School"
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Brooklyn, NY",
+      "previousSchool": "Wilmington (Del.)",
+      "highSchool": "Gateway High School"
+    },
+    {
+      "name": "Tyler Passey",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "Tumwater, WA",
+      "previousSchool": null,
+      "highSchool": "Copper Hills High School"
+    },
+    {
+      "name": "Kaden Gagnon Salama",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Kirkland, Montreal, Quebec",
+      "previousSchool": null,
+      "highSchool": "St. Andrew's High School"
+    },
+    {
+      "name": "Andres Arroyave",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Yonkers, N.Y.",
+      "previousSchool": null,
+      "highSchool": "Roosevelt High School"
+    },
+    {
+      "name": "Luca Porro",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Brooklyn, NY",
+      "previousSchool": null,
+      "highSchool": "Xaverian High School"
+    },
+    {
+      "name": "Teddy Nawrocki",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "So.",
+      "hometown": "Naperville, IL",
+      "previousSchool": null,
+      "highSchool": "Benet Academy"
+    },
+    {
+      "name": "Diego Sanchez",
+      "position": "F",
+      "positionAsListed": "Foward/Midfielder",
+      "class": "So.",
+      "hometown": "Yonkers, NY",
+      "previousSchool": null,
+      "highSchool": "Riverside High School"
+    },
+    {
+      "name": "Aidan Fung",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Dayton, NJ",
+      "previousSchool": null,
+      "highSchool": "South Brunswick High School"
+    },
+    {
+      "name": "Danyil Uchytel",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Odessa, Ukraine",
+      "previousSchool": null,
+      "highSchool": "The Phelps School"
+    },
+    {
+      "name": "Sean McClellan",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "Sr.",
+      "hometown": "Port Washington, NY",
+      "previousSchool": "Mount Saint Vincent",
+      "highSchool": "Paul D. Schreiber High School"
+    },
+    {
+      "name": "Mark Diener",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "North Bellmore, NY",
+      "previousSchool": null,
+      "highSchool": "W.C. Mepham High School"
+    },
+    {
+      "name": "Ali Hasanein",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Nof Hagalil, Israel",
+      "previousSchool": null,
+      "highSchool": "Nazareth Baptist School"
+    },
+    {
+      "name": "Angel Magana",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "New Rochelle, NY",
+      "previousSchool": null,
+      "highSchool": "New Rochelle High School"
+    },
+    {
+      "name": "Viktor Noaksson",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Stockholm, Sweden",
+      "previousSchool": null,
+      "highSchool": "Hersby Gymnasium"
+    },
+    {
+      "name": "Theo Poehlmann",
+      "position": "D",
+      "positionAsListed": "Defender/Forward",
+      "class": "So.",
+      "hometown": "Philadelphia, PA",
+      "previousSchool": null,
+      "highSchool": "Central High School"
+    },
+    {
+      "name": "Olufemi Onigbinde",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Mount Vernon, NY",
+      "previousSchool": null,
+      "highSchool": "Cardinal Spellman High School"
+    },
+    {
+      "name": "Braiden Reid",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "So.",
+      "hometown": "Valley Stream, NY",
+      "previousSchool": null,
+      "highSchool": "Valley Stream Central High School"
+    },
+    {
+      "name": "Eric Garcia",
+      "position": "D",
+      "positionAsListed": "Defender/Midfielder",
+      "class": "Fr.",
+      "hometown": "White Plains, NY",
+      "previousSchool": null,
+      "highSchool": "White Plains High School"
+    },
+    {
+      "name": "Sean Byles",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "George Town, Grand Cayman",
+      "previousSchool": null,
+      "highSchool": "Darlington School"
+    },
+    {
+      "name": "Phu Pham",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Thu Duc City, Vietnam",
+      "previousSchool": null,
+      "highSchool": "EF Academy"
+    },
+    {
+      "name": "Solomon Younger",
+      "position": "F",
+      "positionAsListed": "Foward",
+      "class": "Fr.",
+      "hometown": "Bowie, MD",
+      "previousSchool": null,
+      "highSchool": "Indian Creek High School"
+    },
+    {
+      "name": "Hunter Szabo",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Defender",
+      "class": "Fr.",
+      "hometown": "Staatsburg, NY",
+      "previousSchool": null,
+      "highSchool": "Rhinebeck High School"
+    },
+    {
+      "name": "Thomas Lando",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Tezze Sul Brenta, Italy",
+      "previousSchool": "Christian Brothers",
+      "highSchool": "New Cambridge Institute"
+    },
+    {
+      "name": "Will Trees",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Farmingdale, NY",
+      "previousSchool": "CSI",
+      "highSchool": "Farmingdale High School"
+    },
+    {
+      "name": "Uriah Vergara",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Belleville, NJ",
+      "previousSchool": null,
+      "highSchool": "Belleville High School"
+    },
+    {
+      "name": "Peter Magnuson III",
+      "position": "D",
+      "positionAsListed": "Defender/Forward",
+      "class": "So.",
+      "hometown": "Blackstone, MA",
+      "previousSchool": null,
+      "highSchool": "Blackstone Millville Regional High School"
+    },
+    {
+      "name": "Joshua Zapata",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Jr.",
+      "hometown": "East Elmhurst, NY",
+      "previousSchool": "CSI",
+      "highSchool": "Saint Johns Prep"
+    },
+    {
+      "name": "Michael Khare",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Ottawa, Canada",
+      "previousSchool": null,
+      "highSchool": "Glebe Collegiate Institute"
+    },
+    {
+      "name": "Matthew Molina",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Holmdel, NJ",
+      "previousSchool": null,
+      "highSchool": "Holmdel High School"
+    },
+    {
+      "name": "Ben Dunkerley",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Skipton, North Yorkshire, England",
+      "previousSchool": "Onondaga Community College",
+      "highSchool": "Ermysteds Grammar School"
+    },
+    {
+      "name": "Nathaniel Claudio",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Sr.",
+      "hometown": "Yuma, AZ",
+      "previousSchool": "Concord",
+      "highSchool": "Cibola High School"
+    },
+    {
+      "name": "Olamide Ojediran",
+      "position": "D",
+      "positionAsListed": "Defender/Forward",
+      "class": "Fr.",
+      "hometown": "Mount Royal, NJ",
+      "previousSchool": null,
+      "highSchool": "Kingsway Regional High School"
+    },
+    {
+      "name": "James McGrady",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Mastic Beach, NY",
+      "previousSchool": null,
+      "highSchool": "William Floyd High School"
+    },
+    {
+      "name": "Dez Adams",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Winter Garden, FL.",
+      "previousSchool": null,
+      "highSchool": "Lake Highland Prep"
+    },
+    {
+      "name": "Sebastian Maya",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Fairfield, CT",
+      "previousSchool": null,
+      "highSchool": "Fairfield Warde High School"
+    },
+    {
+      "name": "Dylan Rodgers",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Simsbury, CT",
+      "previousSchool": null,
+      "highSchool": "Simsbury High School"
+    },
+    {
+      "name": "Luke Strada",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Fr.",
+      "hometown": "Middletown, NJ",
+      "previousSchool": null,
+      "highSchool": "Middletown High School South"
+    },
+    {
+      "name": "Patrick Torney",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Fairfield, CT",
+      "previousSchool": null,
+      "highSchool": "Fairfield Warde High School"
+    },
+    {
+      "name": "Brandon Carchipulla",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Foward",
+      "class": "Jr.",
+      "hometown": "West Harrison, N.Y.",
+      "previousSchool": "Adelphi",
+      "highSchool": "Iona Prep"
+    },
+    {
+      "name": "Randy Lendot",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Land O' Lakes, FL.",
+      "previousSchool": null,
+      "highSchool": "Land O' Lakes High School"
+    },
+    {
+      "name": "David Kinzel",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "Modena, NY",
+      "previousSchool": "Monroe",
+      "highSchool": "Wallkill Senior High School"
+    },
+    {
+      "name": "Chris Banegas",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Wallkill, N.Y.",
+      "previousSchool": "South Puget Sound CC",
+      "highSchool": "Wallkill Senior High School"
+    },
+    {
+      "name": "Jevan Khan",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Fr.",
+      "hometown": "Lahore, Pakistan",
+      "previousSchool": null,
+      "highSchool": "Asu Prep Casa Grande"
+    },
+    {
+      "name": "Ryan Bob",
+      "position": "F",
+      "positionAsListed": "Foward",
+      "class": "Fr.",
+      "hometown": "New York, N.Y.",
+      "previousSchool": null,
+      "highSchool": "School Of The Future High School"
+    },
+    {
+      "name": "Christos Dounis",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Port Monmouth, NJ",
+      "previousSchool": null,
+      "highSchool": "Middletown High School North"
+    },
+    {
+      "name": "Isaac Ortega",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Newburgh, NY",
+      "previousSchool": null,
+      "highSchool": "Newburgh Free Academy"
+    },
+    {
+      "name": "Anthony DiRusso",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Shrub Oak, NY",
+      "previousSchool": null,
+      "highSchool": "Lakeland High School"
+    },
+    {
+      "name": "Carson Durkin",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Hopewell Junction, NY",
+      "previousSchool": null,
+      "highSchool": "John Jay Senior High School"
+    },
+    {
+      "name": "Emilio Hernandez-Araujo",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Charlotte, NC",
+      "previousSchool": "Emory & Henry",
+      "highSchool": "South Meck High School"
+    },
+    {
+      "name": "Khais Milligan",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Fayetteville, NY",
+      "previousSchool": null,
+      "highSchool": "Jamesville-Dewitt High School"
+    },
+    {
+      "name": "Joe Zweben",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Jr.",
+      "hometown": "Oceanside, NY",
+      "previousSchool": "Caldwell",
+      "highSchool": "Oceanside High School"
+    }
+  ]
+}

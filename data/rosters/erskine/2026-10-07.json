@@ -1,0 +1,282 @@
+{
+  "schoolId": "erskine",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-07",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://erskinesports.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 30,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Oscar Gould",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Jr.",
+      "hometown": "Fredonia, NY",
+      "previousSchool": null,
+      "highSchool": "Gilbert HS"
+    },
+    {
+      "name": "Luca Barwalde",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Rödermark, Germany",
+      "previousSchool": "Wilmington",
+      "highSchool": "Oswald von Nell Breuning School"
+    },
+    {
+      "name": "Juan Esteban Gomez",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Bogotá, Colombia",
+      "previousSchool": null,
+      "highSchool": "Stratford HS"
+    },
+    {
+      "name": "Perrin Bagwell",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Mountville, SC",
+      "previousSchool": null,
+      "highSchool": "Greenwood Christian School"
+    },
+    {
+      "name": "Ricky Olivera Garcia",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "R-So.",
+      "hometown": "Reno, NV",
+      "previousSchool": null,
+      "highSchool": "Ashbrook HS"
+    },
+    {
+      "name": "Joe Roberts",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Sr.",
+      "hometown": "Southend, England",
+      "previousSchool": "USC Lancaster",
+      "highSchool": "SEEVIC College"
+    },
+    {
+      "name": "Jahdai Prince",
+      "position": "F",
+      "positionAsListed": "Forward/Winger",
+      "class": "So.",
+      "hometown": "Arima, Trinidad and Tobago",
+      "previousSchool": null,
+      "highSchool": "Bradwell Institute"
+    },
+    {
+      "name": "Peyton Williams",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "R-So.",
+      "hometown": "Dallas, TX",
+      "previousSchool": "Evansville",
+      "highSchool": "DeSoto HS"
+    },
+    {
+      "name": "Aaron Cardoza",
+      "position": "F",
+      "positionAsListed": "Forward",
+      "class": "Sr.",
+      "hometown": "West Palm Beach, FL",
+      "previousSchool": null,
+      "highSchool": "John I. Leonard HS"
+    },
+    {
+      "name": "Marcos Martinez Loureiro",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Redondela, Spain",
+      "previousSchool": null,
+      "highSchool": "Vermont Academy"
+    },
+    {
+      "name": "Pelayo Moreno",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Sr.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "USC Sumter",
+      "highSchool": "Trinity College San Sebastián de los Reyes"
+    },
+    {
+      "name": "Evan Williams",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Sr.",
+      "hometown": "Camden, SC",
+      "previousSchool": null,
+      "highSchool": "Camden HS"
+    },
+    {
+      "name": "Zach Hart",
+      "position": "F",
+      "positionAsListed": "Forward/Midfielder",
+      "class": "Jr.",
+      "hometown": "Columbia, SC",
+      "previousSchool": "Newberry",
+      "highSchool": "Gray Collegiate Academy"
+    },
+    {
+      "name": "Brandon Hernandez",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Jr.",
+      "hometown": "Woodruff, SC",
+      "previousSchool": "USC Union",
+      "highSchool": "Woodruff HS"
+    },
+    {
+      "name": "Dane Weaver",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "St. Marys, GA",
+      "previousSchool": null,
+      "highSchool": "Camden County HS"
+    },
+    {
+      "name": "Brayden Roth",
+      "position": "F",
+      "positionAsListed": "Winger/Midfielder",
+      "class": "Fr.",
+      "hometown": "Center Moriches, NY",
+      "previousSchool": null,
+      "highSchool": "Cardinal Newman School"
+    },
+    {
+      "name": "Axel Hernandez",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "Jr.",
+      "hometown": "East Palo Alto, CA",
+      "previousSchool": "Cañada College",
+      "highSchool": "Menlo-Atherton HS"
+    },
+    {
+      "name": "Logan Neely-Habegger",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Duncan, SC",
+      "previousSchool": null,
+      "highSchool": "James F. Byrnes HS"
+    },
+    {
+      "name": "Lian Lal",
+      "position": "MF",
+      "positionAsListed": "Midfielder/Winger",
+      "class": "Sr.",
+      "hometown": "Greer, SC",
+      "previousSchool": "USC Union",
+      "highSchool": "Greer HS"
+    },
+    {
+      "name": "Luka Purkart",
+      "position": "F",
+      "positionAsListed": "Winger",
+      "class": "Fr.",
+      "hometown": "Ljubljana, Slovenia",
+      "previousSchool": null,
+      "highSchool": "Secondary School of Administration Ljubljana"
+    },
+    {
+      "name": "Bennett Boomershine",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "So.",
+      "hometown": "Summerville, SC",
+      "previousSchool": null,
+      "highSchool": "Ashley Ridge HS"
+    },
+    {
+      "name": "Max Camos Serra",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "R-So.",
+      "hometown": "Figueres, Spain",
+      "previousSchool": null,
+      "highSchool": "Centro Escolar Empordà"
+    },
+    {
+      "name": "Connor Blake",
+      "position": "F",
+      "positionAsListed": "Winger/Forward",
+      "class": "Fr.",
+      "hometown": "Dacula, GA",
+      "previousSchool": "Mercer",
+      "highSchool": "Mill Creek HS"
+    },
+    {
+      "name": "Ernesto Marceleno-Brazell",
+      "position": "D",
+      "positionAsListed": "Defender",
+      "class": "Fr.",
+      "hometown": "Swansea, SC",
+      "previousSchool": null,
+      "highSchool": "Swansea HS"
+    },
+    {
+      "name": "Kaden Manigault",
+      "position": "MF",
+      "positionAsListed": "Midfielder",
+      "class": "So.",
+      "hometown": "Charleston, SC",
+      "previousSchool": null,
+      "highSchool": "Wando HS"
+    },
+    {
+      "name": "Joshua Beiler",
+      "position": "F",
+      "positionAsListed": "Winger/Forward",
+      "class": "Fr.",
+      "hometown": "Due West, SC",
+      "previousSchool": null,
+      "highSchool": "Dixie HS"
+    },
+    {
+      "name": "David Torres",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Miami, FL",
+      "previousSchool": "UAB",
+      "highSchool": "Homeschool"
+    },
+    {
+      "name": "Marc Navarro",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Valencia, Spain",
+      "previousSchool": null,
+      "highSchool": "IES Alto Palancia"
+    },
+    {
+      "name": "Grant Driskell",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "So.",
+      "hometown": "Dayton, OH",
+      "previousSchool": "Malone",
+      "highSchool": "Bellbrook HS"
+    },
+    {
+      "name": "Harper McGee",
+      "position": "GK",
+      "positionAsListed": "Goalkeeper",
+      "class": "Fr.",
+      "hometown": "Hodges, SC",
+      "previousSchool": null,
+      "highSchool": "Greenwood HS"
+    }
+  ]
+}

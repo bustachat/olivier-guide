@@ -6,6 +6,16 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.20 (2026-10-07) — new coach question about mid-year starts; first roster re-check moved to 20 February 2027
+
+**What:** one question added to the Pathways tab's coach questions: "Do you bring in players mid-year, in January, and would you consider a January start for me?" No score or school data changed.
+
+**Roster re-check schedule (owner ruling):** the first re-check moves from early January to 20 February 2027, so it catches transfers and early-enrolling recruits who join in mid-January. The cloud reminder now fires then, is renamed "olivier-guide: mid-year roster recheck (20 Feb 2027)", and its text covers mid-year arrivals, junior college January moves and the five schools with no stored 2026-27 roster.
+
+**Checked:** local preview shows v46.20's question in the Pathways tab with 213 school cards and no console errors. `validate_consistency.js` Issues: 0; `check_no_jargon.py` PASS.
+
+---
+
 ### v46.19 (2026-10-06) — stored-roster campaign closed out: a missing roster is now a validator failure
 
 **What:** campaign C0 (stored rosters as the source of the midfielder numbers) is finished. 194 of the 199 schools with a minutes outlook are backed by a stored roster. No school data, score or rank changed.

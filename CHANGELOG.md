@@ -6,6 +6,20 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.22 (2026-10-15) — Indian Hills cost updated from the college's 2027-28 estimate; no scholarship in the spring
+
+**What:** Indian Hills sent the player's agency two cost estimates (spring 2027 and 2027-28). Neither lists any athletic scholarship, and the agency says scholarships do not become available until autumn.
+
+**Changed (`data/juco.json`, `indian_hills`):** `roomBoard` 6,390 to 6,510 (housing $2,685 plus meals $3,825); `costNum` 14,340 to 14,460 (tuition $7,650 unchanged, $300 fee line kept from the college's published international fee table because the estimate does not list fees); `internationalNote` rewritten to quote the estimate, say that no scholarship appears, and say a spring 2027 start would be paid in full.
+
+**Not changed:** `lensScores.value` stays 55 (54.68 before rounding); `fitOlivier` is unaffected because cost is not in the Fit Score. `maxAthletic` stays 0.7 as a ceiling for the Financial Model slider, not an offer.
+
+**Left out of `costNum` on purpose:** the $1,922 mandatory international insurance (the college counts it in its own $16,082 direct total; this guide's cost figure excludes it and the note says to budget it separately) and the $3,000 on-campus work estimate (not guaranteed).
+
+**Open:** the spring sheet's tuition line reads $2,250 but 10 credits at $255 is $2,550. Ask the college which is right. The spring sheet also implies a January 2027 start, while the guide assumes August 2027.
+
+---
+
 ### v46.21 (2026-10-07) — Pace University and Erskine College added (NCAA Division II); Northeast-10 and Conference Carolinas added as new conferences
 
 **What:** two schools added at the owner's request, both read on their own sites in Chrome on 2026-10-07. The guide now has 215 schools and 215 coaches.

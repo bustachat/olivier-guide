@@ -6,6 +6,16 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.26 (2026-10-16) — Delta State icon: official primary logo
+
+**What:** at the owner's request, Delta State's card, modal and dashboard icon is now the official primary "STATE" triangle logo instead of the favicon fetched from the athletics site.
+
+**Changed:** `assets/logos/delta_state.png` added (830x646 transparent PNG, 56 KB) and one `ICON_OVERRIDES` entry in `js/app.js`. The icon boxes use `object-fit: contain`, so the wider logo is letterboxed, not stretched.
+
+**Source:** Delta State's own athletic-logos page (gostatesmen.com/sports/2013/4/17/delta-state-atheltics-logos.aspx), which says the logos are registered trademarks of the university and its athletic department. The page's "PNG Download" link opens a document page, not the file; the real file is on the site's CDN (`dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/gostatesmen.com/documents/2020/3/18/DSU_Athletics_Primary_Logo.png`). A plain request for the link's address returns an HTML page with status 200, so check the file signature, not the status.
+
+---
+
 ### v46.25 (2026-10-16) — Delta State head coach tenure added
 
 **What:** the owner supplied Austin Jackman's hire date: head coach since May 25, 2023, first season 2023, so 2026 is his fourth. This replaces the "start year not stated" gaps in v46.24. The date came from the owner in chat; Delta State's bio page is an undated release and still gives no start year.

@@ -751,6 +751,10 @@ function renderCards(){
 // re-fetched from anywhere.
 const ICON_OVERRIDES = {
   tyler_jc: 'assets/logos/tyler_jc.png',
+  // delta_state (v46.26) -- the owner chose the official primary "STATE" triangle
+  // logo from Delta State's own athletic-logos page (gostatesmen.com); stored
+  // locally, 830x646 transparent PNG, shown letterboxed (object-fit: contain).
+  delta_state: 'assets/logos/delta_state.png',
   // City Colleges of Chicago (v45.12) -- all 5 share domain/DOMAINS (ccc.edu /
   // region4sports.com, see CLAUDE.md SS6D), so every live-fetched icon was
   // identical across all 5 schools. Each mascot logo below was Tier-1

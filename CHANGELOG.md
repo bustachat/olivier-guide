@@ -6,6 +6,16 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.25 (2026-10-16) — Delta State head coach tenure added
+
+**What:** the owner supplied Austin Jackman's hire date: head coach since May 25, 2023, first season 2023, so 2026 is his fourth. This replaces the "start year not stated" gaps in v46.24. The date came from the owner in chat; Delta State's bio page is an undated release and still gives no start year.
+
+**Changed:** `coaches.json` `yearsHC` null to 4; `record` now gives his seasons (14-24-13 across 2023-25, 8-16-9 in the Gulf South, from the school's schedule pages; 2-9-3 so far in 2026); bio and `overallScoreNote` say he was hired in May 2023. Score stays 55 (results are not scored), so no re-rank. School `rec` now says he is in his fourth season. The Coaches table now shows "4 yrs" for him; the v46.24 note that he shows a dash no longer applies, and the dash change in `js/app.js` now affects 20 other coaches.
+
+**Validation:** `validate_schools.py` PASS, `validate_consistency.js` Issues 0, coach ranking PASS, jargon check PASS.
+
+---
+
 ### v46.24 (2026-10-16) — Delta State University added (NCAA Division II, Gulf South); the Gulf South becomes a new conference card
 
 **What:** one school added at the owner's request (`/new-school` with the school's athletics and university pages). Not previously in the guide. The guide now has 217 schools and 217 coaches.

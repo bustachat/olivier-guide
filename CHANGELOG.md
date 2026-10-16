@@ -6,6 +6,27 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.24 (2026-10-16) — Delta State University added (NCAA Division II, Gulf South); the Gulf South becomes a new conference card
+
+**What:** one school added at the owner's request (`/new-school` with the school's athletics and university pages). Not previously in the guide. The guide now has 217 schools and 217 coaches.
+
+**Delta State (Cleveland, MS; Gulf South Conference; `data/d2.json`, id `delta_state`).** Gulf South finishes 2021-25: 11th, 9th, 8th, 7th and 11th of 12 (GSC Championship berths in 2023 and 2024); 2026 so far is 2-9-3 overall and 0-6-2 in the conference, 10th of 11 on 2026-10-16. Head coach Austin Jackman, a former Delta State starter who was an assistant at Yale (US Soccer National B licence; score 55, rank 176; the 41 coaches below moved down one). His start year as head coach is not on his bio page, so `yearsHC` is null. Degree: Sport and Movement Sciences, B.S., Exercise Science concentration (121 credits), 8 of 16 ACU units on required courses only; the 12-credit internship and the clinical experience course are not counted because the catalog states no hours. Cost $19,011 direct billed (international tuition $9,435, fees $170, lowest double room plus the first-year All Access meal plan $9,406), the lowest of any four-year school in the guide as stored (service academies aside). 2026 roster: 32 players, 3 goalkeepers, 16 with midfield as first position (half the squad, which is how Delta State labels it); 3 finish before August 2027, 13 return (High entry competition); 9 of the 16 midfielders arrived as transfers (`Mixed` pathway). One Australian (a freshman defender) is on the roster. Fit Score 43 (soccer 42, minutes 31, warm, no city, -3 Division II funding penalty).
+
+**New conference: Gulf South Conference (`group` key `gulf-south`).** Founded 1970 (the conference's own history page: charter meeting summer 1970, competition from fall 1970); 11 men's soccer programs in 2026-27 (NCAA member directory), 0 NCAA Division II titles held by current members (ncaa.com champions list read in full), 0 MLS SuperDraft picks 2022-26. New conferences card, prestige row and filter chip (`CONF_ALIAS_MAP`, `CONF_CHIP_LABELS`, `CONF_CHIP_ORDER`). **The prestige row was placed by hand at 19 (after the Lone Star Conference); the rows below moved down one.** No written ranking rule exists for Division II conferences, so the owner may want a different position.
+
+**Code change outside the data (`js/app.js`):** the Coaches table showed "New 2026" for any coach with an unknown tenure (`yearsHC` null), which mislabelled Jackman and 21 other coaches (mostly junior college). It now shows a dash for null, as the coach card already did, and "New 2026" only for a stored 0.
+
+**Research notes:**
+- The Gulf South's real site is gscsports.org. **gulfsouthconference.org is a betting-content site**; do not use it. Standings load client-side (wait about 5 seconds) at `standings.aspx?standings=ID`.
+- The first catalog link was a huge PDF; it was read in memory in the browser (pdf.js) to get the real course descriptions, nothing downloaded.
+- Delta State's cost-of-attendance page uses the Mississippi resident tuition ($8,435); the international rate ($9,435) is on the Student Business Services tuition page. The $22-per-credit 'First Day Ready' book charge is left out with other book costs.
+- The card's conference tag shows the first word of the conference name ("Gulf"), as for every school; this is existing behaviour.
+- The map position was re-anchored to Memphis because the hand-drawn map is distorted there (the plain lat/lon formula put it about 50 pixels too far west); (416, 253) is on land.
+
+**Validation:** `validate_schools.py` PASS (217), `validate_consistency.js` Issues 0, `check_no_jargon.py` PASS, coach ranking PASS, new-school coverage check PASS. The qa-suite's negative-test step refuses to run on uncommitted files, so it was not run. Local preview: 217 schools, Delta State card, all nine modal tabs without "undefined"/NaN/null, GSC chip (chips sum to 217), conference card and ranking row, coach row, map dot on land, no JavaScript errors. Open loose ends are in CLAUDE.md section 6F ("Loose ends from v46.24").
+
+---
+
 ### v46.23 (2026-10-16) — William Penn University added (NAIA, Heart of America); the Heart becomes a new conference card, ranked first among the NAIA conferences
 
 **What:** one school added at the owner's request (`/new-school` with the school's athletics, university and NAIA conference pages). Not previously in the guide. The guide now has 216 schools and 216 coaches.

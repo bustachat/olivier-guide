@@ -1,0 +1,268 @@
+{
+  "schoolId": "delta_state",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-16",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://gostatesmen.com/sports/mens-soccer/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 32,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Daniel Santema",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "Groningen, Netherlands",
+      "previousSchool": "Truett McConnell"
+    },
+    {
+      "name": "Joshua Hatton",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Stockton-on-Tees, England",
+      "previousSchool": "Northwest College (Wyo.)"
+    },
+    {
+      "name": "Micah Soper",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Collierville, Tenn.",
+      "previousSchool": "Central Arkansas"
+    },
+    {
+      "name": "Logan Funk",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Pleasant View, Utah",
+      "previousSchool": "Snow College"
+    },
+    {
+      "name": "Ivan Gomez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Santander, Spain",
+      "previousSchool": "Lincoln Memorial University"
+    },
+    {
+      "name": "Joshua Diaz",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Maricopa, Ariz. (Desert Vista High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Elijah Belk",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Oxford, Miss.",
+      "previousSchool": "Itawamba Community College"
+    },
+    {
+      "name": "Charlee Summers",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Cornwall, England",
+      "previousSchool": "Northeast Texas Community College"
+    },
+    {
+      "name": "Ajay Stewart",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Gr.",
+      "hometown": "Montego Bay, Jamaica",
+      "previousSchool": "Florida Atlantic University"
+    },
+    {
+      "name": "Cyrus Gulati",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "R-Sr.",
+      "hometown": "Greenwood Village, Colo.",
+      "previousSchool": "MSU-Denver"
+    },
+    {
+      "name": "Tim Groenenberg",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Gr.",
+      "hometown": "Koblenz, Germany",
+      "previousSchool": "Goshen College"
+    },
+    {
+      "name": "Justin Krampl",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Dubai, United Arab Emirates",
+      "previousSchool": "Monroe Community College (N.Y.)"
+    },
+    {
+      "name": "Aidan Hayes",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Gr.",
+      "hometown": "Chaguanas, Trinidad & Tobago",
+      "previousSchool": "Cecil College"
+    },
+    {
+      "name": "Tazjean Bird",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Ocho Rios, Jamaica",
+      "previousSchool": "GC Foster College"
+    },
+    {
+      "name": "Mills Sheridan",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Flowood, Miss.",
+      "previousSchool": "Auburn Montgomery"
+    },
+    {
+      "name": "Sioni Benham",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Cardiff, Wales",
+      "previousSchool": "Catawba College"
+    },
+    {
+      "name": "Matthew Nicklas",
+      "position": "MF",
+      "positionAsListed": "MF/F",
+      "class": "Jr.",
+      "hometown": "Collierville, Tenn. (Collierville High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Eduardo Guevara",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Memphis, Tenn. (Southwind High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Cole Fenton",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Worongary, Australia (The Southport School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Francisco Carrasco",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Sr.",
+      "hometown": "Bahia Blanca, Argentina",
+      "previousSchool": "Georgia Military College"
+    },
+    {
+      "name": "Danny Vargas",
+      "position": "MF",
+      "positionAsListed": "MF/D",
+      "class": "Jr.",
+      "hometown": "Greenwood, Miss.",
+      "previousSchool": "Hinds Community College"
+    },
+    {
+      "name": "Samuel Fitschen",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Memphis, Tenn. (Christian Brothers High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Junior Villalba-Martinez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Phoenix, Ariz. (Washington High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Andreas Socratous",
+      "position": "MF",
+      "positionAsListed": "MF/D",
+      "class": "Jr.",
+      "hometown": "Nicosia, Cyprus",
+      "previousSchool": "Mount Marty University"
+    },
+    {
+      "name": "Ricky Chagala",
+      "position": "MF",
+      "positionAsListed": "MF/D",
+      "class": "Fr.",
+      "hometown": "Millington, Tenn. (Bartlett High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Daniel Huerta",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Birmingham, Ala.",
+      "previousSchool": "Southern Union State Community College"
+    },
+    {
+      "name": "Callum Black",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Weston Super-Mare, England",
+      "previousSchool": "William Carey University"
+    },
+    {
+      "name": "Lucas Crowley",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Fr.",
+      "hometown": "Memphis, Tenn. (Bartlett High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Max Alonso",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Goodyear, Ariz.",
+      "previousSchool": "Phoenix College"
+    },
+    {
+      "name": "Michael Shade",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Bartlett, Tenn. (Bartlett High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Miguel Jurado",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Odessa, Texas (Legacy High School)",
+      "previousSchool": null
+    },
+    {
+      "name": "Romario Castro",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Blue Mountain, Miss.",
+      "previousSchool": "Harding University"
+    }
+  ]
+}

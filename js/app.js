@@ -1128,6 +1128,7 @@ const DOMAINS = {
   pace: 'paceuathletics.com',
   erskine: 'erskinesports.com',
   william_penn: 'statesmenathletics.com',
+  delta_state: 'gostatesmen.com',
   northeast_cc: 'northeasthawks.com',
   monroe_college: 'monroeumustangs.com',
   tyler_jc:     'apacheathletics.com',
@@ -1347,6 +1348,7 @@ const SITE_URLS = {
   pace: 'https://www.pace.edu',
   erskine: 'https://www.erskine.edu',
   william_penn: 'https://www.wmpenn.edu',
+  delta_state: 'https://www.deltastate.edu',
   northeast_cc: 'https://www.northeast.edu',
   monroe_college: 'https://www.monroeu.edu',
   tyler_jc:     'https://www.tjc.edu',
@@ -1578,6 +1580,7 @@ const SOCIAL = {
   pace:           [null,                                      null,                                null,                                    'https://www.youtube.com/channel/UCriUaO8GJd2xHojDEeC34Zw'],
   erskine:        ['https://instagram.com/erskine_mens_soccer', 'https://x.com/fleetmsoccer',        'https://www.facebook.com/pages/Erskine-Mens-Soccer-Team/112439703242', null],
   william_penn:   ['https://www.instagram.com/wpuathletics/', 'https://x.com/WmPennMSOC',          'https://www.facebook.com/WPUAthletics',   'https://www.youtube.com/channel/UCaxqL_pJqSPhjDMpNjv882g'],
+  delta_state:    [null,                                      'https://x.com/DeltaStateMSOC',      'https://www.facebook.com/dsustatesmen',   null],
   northeast_cc:   ['https://instagram.com/NortheastHawks',    'https://x.com/NortheastHawks',      'https://facebook.com/northeastcchawks', null],
   monroe_college: ['https://instagram.com/monroemsoc',        'https://x.com/MonroeMustangs',      'https://facebook.com/monroeathletics',  null],
   tyler_jc:       [null,                                       null,                                null,                                    null],
@@ -2339,6 +2342,7 @@ const CONF_ALIAS_MAP = {
   'cacc': 'cacc', 'central atlantic collegiate': 'cacc',
   'ne10': 'ne10', 'northeast-10': 'ne10', 'northeast 10': 'ne10',
   'conference carolinas': 'conference-carolinas',
+  'gulf south': 'gulf-south',
   'lsc': 'lsc', 'lone star': 'lsc',
   'sac': 'sac', 'sooner athletic': 'sac',
   'sun conference': 'sun-conference', 'sun': 'sun-conference',
@@ -2725,6 +2729,7 @@ const CONF_CHIP_LABELS = {
   'mec':              'MEC',
   'ne10':             'NE10',
   'conference-carolinas': 'Conf. Carolinas',
+  'gulf-south':       'GSC',
   // NAIA
   'sac':              'SAC',
   'sun-conference':   'Sun Conf',
@@ -2743,7 +2748,7 @@ const CONF_CHIP_ORDER = [
   'sec','acc','big-ten','big-east','aac','big-west',
   'pac-12','mountain-west','sun-belt','caa','mac','wcc','asun','america-east','patriot','summit','nec',
   'ivy-league',
-  'ssc','ccaa','cacc','lsc','mec','ne10','conference-carolinas',
+  'ssc','ccaa','cacc','lsc','gulf-south','mec','ne10','conference-carolinas',
   'sac','sun-conference','amc','whac','haac',
   'sciac',
   'cccaa','njcaa',
@@ -3439,7 +3444,8 @@ function renderCoachTable(){
     if(!tb || typeof coachData==='undefined') return;
     tb.innerHTML=[...coachData].sort((a,b)=>(a.rank||999)-(b.rank||999)).map(c=>{
       const rc=c.rankClass||'rk-solid';
-      const years=(c.yearsHC&&c.yearsHC>0)?c.yearsHC+' yrs':'New 2026';
+      // null = tenure not published (shows a dash, as the coach card does); 0 = genuinely new
+      const years=(c.yearsHC==null)?'—':(c.yearsHC>0?c.yearsHC+' yrs':'New 2026');
       const mls=(typeof c.mlsPlayers==='number')?c.mlsPlayers+' MLS':'—';
       const strengths=Array.isArray(c.strengths)?c.strengths.join(' · '):'';
       const divCell=`<span class="dbadge d-${c.div}">${c.div}</span> ${c.conf||''}`;

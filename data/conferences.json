@@ -534,6 +534,48 @@
     ]
   },
   {
+    "id": "gulf-south",
+    "group": "gulf-south",
+    "name": "Gulf South Conference",
+    "abbr": "GSC",
+    "tier": "Division II",
+    "tierClass": "tier-d2",
+    "prestige": "Regional D2 — Alabama, Mississippi and Tennessee",
+    "founded": 1970,
+    "teams": 12,
+    "soccerTeams": 11,
+    "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-10-16",
+    "ncaaTitles": 0,
+    "ncaaTitlesSource": "ncaa.com Division II men's soccer championship history, read 2026-10-16: no current member appears among the champions (West Florida, a member until 2025, left for the ASUN).",
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-10-16",
+    "scholarships": "NCAA D2 — up to 9.0 equivalencies (men's soccer)",
+    "maxAid": "9.0",
+    "otherSchools": [
+      "Alabama-Huntsville",
+      "Auburn Montgomery",
+      "Christian Brothers",
+      "Lee",
+      "Mississippi Christian",
+      "Montevallo",
+      "Spring Hill",
+      "Trevecca Nazarene",
+      "Union",
+      "West Alabama"
+    ],
+    "desc": "Division II programs in Alabama, Mississippi and Tennessee.",
+    "color": [
+      "#dcfce7",
+      "#166534"
+    ]
+  },
+  {
     "id": "ccaa",
     "group": "ccaa",
     "name": "California Collegiate Athletic Association",

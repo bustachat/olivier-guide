@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.23 (2026-10-16) — William Penn University added (NAIA, Heart of America); the Heart becomes a new conference card, ranked first among the NAIA conferences
+
+**What:** one school added at the owner's request (`/new-school` with the school's athletics, university and NAIA conference pages). Not previously in the guide. The guide now has 216 schools and 216 coaches.
+
+**William Penn (Oskaloosa, IA; Heart of America Athletic Conference; `data/d2.json`, id `william_penn`).** NAIA national runner-up in 2024 (lost the final to Dalton State on penalties), Heart Tournament champions 2024, national quarterfinalists 2025, and five straight NAIA tournament appearances (2021-2025). Standings 2021-25: 4th, 6th, 2nd, 2nd, 4th. Head coach Joe Minton, a former William Penn player in his second year as head coach (score 54, rank 184; the 32 coaches below moved down one). Degree: Exercise Science, B.S. (73 credit hours in the major, 2026-27 catalog), 8 of 16 ACU units on required courses only; the 3-credit internship is not counted because no hours are stated. A separate Biology dual degree guarantees admission to Palmer College of Chiropractic (Davenport) after 94 credits and a 3.0 GPA. Cost $40,990 direct billed (tuition $32,000, average housing $4,090, unlimited meals $4,900; no fees published), taken from the college's own "Total Estimated Cost" line. 2026 roster: 36 players, 4 goalkeepers, 13 midfielders; 4 finish before August 2027, 9 return (High entry competition); 8 of the 13 midfielders arrived as transfers (`Mixed` pathway). Fit Score 32 (soccer 44, minutes 33, no warmth, no city, −3 NAIA funding penalty).
+
+**New conference: Heart of America Athletic Conference (`group` key `haac`).** Founded 1971, 16 full members, 15 with men's soccer (heartofamericaconference.com 2026-27 standings and About Us page). New conferences card, prestige row and filter chip (`CONF_ALIAS_MAP`, `CONF_CHIP_LABELS`, `CONF_CHIP_ORDER`). **Ranked first among the NAIA conferences** on the v45.76 basis (NAIA Championship Record Book, current members, 2021-25): 35 national-tournament wins in 21 team-seasons (2.33 wins per program), the 2023 and 2025 national champions (MidAmerica Nazarene, Grand View) and the 2024 runner-up (William Penn). Sun 1.56 per program, AMC 1.33, WHAC 0.80, SAC 0.40 from v45.76. Sun, AMC, WHAC, SAC and SCIAC each moved down one in `conf-prestige.json`; Sun lost the `rk-solid` class (the top NAIA slot's class) to the Heart.
+
+**Research notes:**
+- Standings and records were read from heartofamericaconference.com and William Penn's own schedule pages. The conference site's season labels are inconsistent (its "2024-25" page returned the 2025 table; its "2023-24" page is the 2024 season), so each season was matched to William Penn's own record before it was used.
+- The NAIA counts a penalty-kick loss as a tie, so the 2024 overall record is 21-1-4 on the conference site and 21-2-3 on the school's page; the note uses the school's.
+- The catalog PDF was read in the browser (pdf.js) for course lists and descriptions; the first catalog link on the program page does not load.
+- No MLS SuperDraft picks 2022-26 from any Heart member in `data/mls-draft-picks-2022-2026.json`.
+
+**Validation:** `validate_schools.py` PASS (216), `validate_consistency.js` Issues 0, `check_no_jargon.py` PASS. Open loose ends are listed in CLAUDE.md section 6F ("Loose ends from v46.23").
+
+---
+
 ### v46.22 (2026-10-15) — Indian Hills cost updated from the college's 2027-28 estimate; no scholarship in the spring
 
 **What:** Indian Hills sent the player's agency two cost estimates (spring 2027 and 2027-28). Neither lists any athletic scholarship, and the agency says scholarships do not become available until autumn.

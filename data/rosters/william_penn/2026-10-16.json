@@ -1,0 +1,300 @@
+{
+  "schoolId": "william_penn",
+  "schoolFile": "data/d2.json",
+  "fetchedAt": "2026-10-16",
+  "rosterSeason": "2026-27",
+  "sourceUrl": "https://www.statesmenathletics.com/sports/msoc/2026-27/roster",
+  "fetchMethod": "claude-in-chrome",
+  "squadTotal": 36,
+  "labelsKept": true,
+  "players": [
+    {
+      "name": "Arthur Moura",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Chapadao do Sul, Brazil",
+      "previousSchool": "E.E.E.M. Presidente Kennedy"
+    },
+    {
+      "name": "Silas Ihde",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Stuttgart, Germany",
+      "previousSchool": "Erich-Bracher-Schule"
+    },
+    {
+      "name": "Sil Milder",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "Fr.",
+      "hometown": "Arnhem, Netherlands",
+      "previousSchool": "Rijn Ijssel College"
+    },
+    {
+      "name": "Nick Nkansa-Dwamena",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "London, England",
+      "previousSchool": "Tulsa"
+    },
+    {
+      "name": "Karim Kalota",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Bad Schwartau, Germany",
+      "previousSchool": "IU Internationale Hochschule"
+    },
+    {
+      "name": "Ivan Abraira",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Asturias, Spain",
+      "previousSchool": "Svida"
+    },
+    {
+      "name": "Gonzalo Requejo",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Gijon, Spain",
+      "previousSchool": "Dominicas Gijon"
+    },
+    {
+      "name": "Rob Stoop",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Bosch en Duin, Netherlands",
+      "previousSchool": "Christelijk Lyceum Zeist"
+    },
+    {
+      "name": "Shahin Adwan",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Aarau, Switzerland",
+      "previousSchool": "Butte CC"
+    },
+    {
+      "name": "Will Couch",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Burnley, England",
+      "previousSchool": "New College of Florida"
+    },
+    {
+      "name": "Jarred Hendricks",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Sr.",
+      "hometown": "Cape Town, South Africa",
+      "previousSchool": "Lindenwood"
+    },
+    {
+      "name": "Javier Perez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Alicante, Spain",
+      "previousSchool": "Ceu Alicante HS"
+    },
+    {
+      "name": "Alexander Greaves",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Hertford, England",
+      "previousSchool": "New College of Florida"
+    },
+    {
+      "name": "Angel Valdez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Mexicali, Mexico",
+      "previousSchool": "Longwood"
+    },
+    {
+      "name": "Jedin Lee",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Jr.",
+      "hometown": "Durban, South Africa",
+      "previousSchool": "Hinds CC"
+    },
+    {
+      "name": "Raimu Shingo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Fukuoka, Japan",
+      "previousSchool": "Kunimi HS"
+    },
+    {
+      "name": "Alex Barnes",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Sittingbourne, England",
+      "previousSchool": "The Whistable School"
+    },
+    {
+      "name": "Victor Lozada",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Valencia, Venezuela",
+      "previousSchool": "Oklahoma Wesleyan"
+    },
+    {
+      "name": "Hector Bastos",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Vitoria, Brazil",
+      "previousSchool": "Indian Hills CC"
+    },
+    {
+      "name": "Leonardo Jimenez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Mexico City, Mexico",
+      "previousSchool": "Iowa Western CC"
+    },
+    {
+      "name": "Yugo Hashimoto",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "Saitama, Japan",
+      "previousSchool": "Urawa Minami HS"
+    },
+    {
+      "name": "Max Mayer",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Wendover, England",
+      "previousSchool": "Snow CC"
+    },
+    {
+      "name": "Mario Navarro",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Grad.",
+      "hometown": "Mira, Spain",
+      "previousSchool": "Siena"
+    },
+    {
+      "name": "Hugo Chavez",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "So.",
+      "hometown": "El Paso, Texas",
+      "previousSchool": "Eastlake HS"
+    },
+    {
+      "name": "Andrea Brugora",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Milano, Italy",
+      "previousSchool": "Salesiani Sesto San Giovanni"
+    },
+    {
+      "name": "Juan Naranjo",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Albacete, Spain",
+      "previousSchool": "Universidad de Alicante"
+    },
+    {
+      "name": "Rayane Baana",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Fr.",
+      "hometown": "Torino, Italy",
+      "previousSchool": "Istituto Carlo Grassi"
+    },
+    {
+      "name": "Czak Martinez",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Monument, Colo.",
+      "previousSchool": "Lewis Palmer HS"
+    },
+    {
+      "name": "Gonzalo Rawinad",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Madrid, Spain",
+      "previousSchool": "West Alabama"
+    },
+    {
+      "name": "Nelson Dongmo",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "So.",
+      "hometown": "Munich, Germany",
+      "previousSchool": "Long Island"
+    },
+    {
+      "name": "Eduardo Cimadevilla",
+      "position": "D",
+      "positionAsListed": "D",
+      "class": "Fr.",
+      "hometown": "Villaviciosa, Spain",
+      "previousSchool": "IES Victor Garcia de la Concha"
+    },
+    {
+      "name": "Ross O'Brien",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Sr.",
+      "hometown": "Calverstown, Ireland",
+      "previousSchool": "Oakland City"
+    },
+    {
+      "name": "Yusei Suzaki",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "So.",
+      "hometown": "Nagoya, Japan",
+      "previousSchool": "Cowley CC"
+    },
+    {
+      "name": "Mateo Nabona",
+      "position": "F",
+      "positionAsListed": "F",
+      "class": "Jr.",
+      "hometown": "Lyon, France",
+      "previousSchool": "Prairie State CC"
+    },
+    {
+      "name": "Amin Zamini",
+      "position": "MF",
+      "positionAsListed": "MF",
+      "class": "Jr.",
+      "hometown": "Tangier, Morocco",
+      "previousSchool": "Heartland CC"
+    },
+    {
+      "name": "Lewis McNab",
+      "position": "GK",
+      "positionAsListed": "GK",
+      "class": "So.",
+      "hometown": "Weymouth, England",
+      "previousSchool": "Budmouth Academy"
+    }
+  ]
+}

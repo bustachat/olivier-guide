@@ -232,6 +232,16 @@
   {
     "rank": 24,
     "rankClass": "rk-solid",
+    "name": "Heart of America",
+    "group": "haac",
+    "fullName": "Heart of America Athletic (NAIA)",
+    "div": "NAIA",
+    "divBadge": "d-NAIA",
+    "scholarships": "Up to 12 equivalencies, no per-player cap"
+  },
+  {
+    "rank": 25,
+    "rankClass": "rk-dev",
     "name": "Sun Conference",
     "group": "sun-conference",
     "fullName": "Sun Conference (NAIA Florida)",
@@ -240,7 +250,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 25,
+    "rank": 26,
     "rankClass": "rk-dev",
     "name": "AMC",
     "group": "amc",
@@ -250,7 +260,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 26,
+    "rank": 27,
     "rankClass": "rk-dev",
     "name": "WHAC",
     "group": "whac",
@@ -260,7 +270,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 27,
+    "rank": 28,
     "rankClass": "rk-dev",
     "name": "SAC",
     "group": "sac",
@@ -270,7 +280,7 @@
     "scholarships": "Up to 12 equivalencies, no per-player cap"
   },
   {
-    "rank": 28,
+    "rank": 29,
     "rankClass": "rk-dev",
     "name": "SCIAC",
     "group": "sciac",
@@ -280,7 +290,7 @@
     "scholarships": "Zero athletic scholarships"
   },
   {
-    "rank": 29,
+    "rank": 30,
     "rankClass": "rk-dev",
     "name": "CCCAA/NJCAA",
     "group": [

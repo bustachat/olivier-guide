@@ -1127,6 +1127,7 @@ const DOMAINS = {
   indiana_tech: 'indianatechwarriors.com',
   pace: 'paceuathletics.com',
   erskine: 'erskinesports.com',
+  william_penn: 'statesmenathletics.com',
   northeast_cc: 'northeasthawks.com',
   monroe_college: 'monroeumustangs.com',
   tyler_jc:     'apacheathletics.com',
@@ -1345,6 +1346,7 @@ const SITE_URLS = {
   indiana_tech: 'https://www.indianatech.edu',
   pace: 'https://www.pace.edu',
   erskine: 'https://www.erskine.edu',
+  william_penn: 'https://www.wmpenn.edu',
   northeast_cc: 'https://www.northeast.edu',
   monroe_college: 'https://www.monroeu.edu',
   tyler_jc:     'https://www.tjc.edu',
@@ -1575,6 +1577,7 @@ const SOCIAL = {
   indiana_tech:   ['https://instagram.com/intechmsoccer',     'https://x.com/INTechMSoccer',       'https://www.facebook.com/INTechWarriors', 'https://www.youtube.com/intechwarriors'],
   pace:           [null,                                      null,                                null,                                    'https://www.youtube.com/channel/UCriUaO8GJd2xHojDEeC34Zw'],
   erskine:        ['https://instagram.com/erskine_mens_soccer', 'https://x.com/fleetmsoccer',        'https://www.facebook.com/pages/Erskine-Mens-Soccer-Team/112439703242', null],
+  william_penn:   ['https://www.instagram.com/wpuathletics/', 'https://x.com/WmPennMSOC',          'https://www.facebook.com/WPUAthletics',   'https://www.youtube.com/channel/UCaxqL_pJqSPhjDMpNjv882g'],
   northeast_cc:   ['https://instagram.com/NortheastHawks',    'https://x.com/NortheastHawks',      'https://facebook.com/northeastcchawks', null],
   monroe_college: ['https://instagram.com/monroemsoc',        'https://x.com/MonroeMustangs',      'https://facebook.com/monroeathletics',  null],
   tyler_jc:       [null,                                       null,                                null,                                    null],
@@ -2329,6 +2332,7 @@ const CONF_ALIAS_MAP = {
   'mountain east': 'mec', 'mec': 'mec',
   'american midwest': 'amc', 'amc': 'amc',
   'wolverine-hoosier': 'whac', 'whac': 'whac',
+  'heart of america': 'haac', 'haac': 'haac',
   'ivy league': 'ivy-league', 'ivy': 'ivy-league',
   'ssc': 'ssc', 'sunshine state': 'ssc',
   'ccaa': 'ccaa', 'california collegiate': 'ccaa',
@@ -2726,6 +2730,7 @@ const CONF_CHIP_LABELS = {
   'sun-conference':   'Sun Conf',
   'amc':              'AMC',
   'whac':             'WHAC',
+  'haac':             'Heart',
   // D3
   'sciac':            'SCIAC',
   // JUCO
@@ -2739,7 +2744,7 @@ const CONF_CHIP_ORDER = [
   'pac-12','mountain-west','sun-belt','caa','mac','wcc','asun','america-east','patriot','summit','nec',
   'ivy-league',
   'ssc','ccaa','cacc','lsc','mec','ne10','conference-carolinas',
-  'sac','sun-conference','amc','whac',
+  'sac','sun-conference','amc','whac','haac',
   'sciac',
   'cccaa','njcaa',
 ];

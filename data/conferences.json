@@ -1038,6 +1038,51 @@
     ]
   },
   {
+    "id": "haac",
+    "group": "haac",
+    "name": "Heart of America Athletic Conference",
+    "abbr": "Heart",
+    "tier": "NAIA",
+    "tierClass": "tier-naia",
+    "prestige": "Strong NAIA - national champions in 2023 (MidAmerica Nazarene) and 2025 (Grand View), runner-up in 2024 (William Penn)",
+    "founded": 1971,
+    "teams": 16,
+    "soccerTeams": 15,
+    "soccerTeamsSource": "heartofamericaconference.com 2026-27 men's soccer standings and About Us member list, checked 2026-10-16",
+    "ncaaTitles": 0,
+    "mlsPicksByYear": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026 (data/mls-draft-picks-2022-2026.json): no pick from a current Heart member; checked 2026-10-16",
+    "scholarships": "NAIA - 12 equivalencies, no per-player cap",
+    "maxAid": "12",
+    "otherSchools": [
+      "Baker University",
+      "Benedictine College",
+      "Central Methodist University",
+      "Clarke University",
+      "Culver-Stockton College",
+      "Graceland University",
+      "Grand View University",
+      "MidAmerica Nazarene University",
+      "Missouri Baptist University",
+      "Missouri Valley College",
+      "Mount Mercy University",
+      "Park University",
+      "St. Ambrose University",
+      "William Woods University"
+    ],
+    "desc": "NAIA programs in Iowa, Kansas and Missouri.",
+    "color": [
+      "#fee2e2",
+      "#b91c1c"
+    ]
+  },
+  {
     "id": "patriot",
     "group": "patriot",
     "name": "Patriot League",

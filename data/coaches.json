@@ -9399,13 +9399,92 @@
     "rankClass": "rk-solid"
   },
   {
+    "id": "minton_joe",
+    "schoolId": "william_penn",
+    "name": "Joe Minton",
+    "school": "William Penn University",
+    "div": "NAIA",
+    "conf": "Heart of America Athletic Conference (Heart)",
+    "yearsHC": 2,
+    "record": "12-6-4 (7-3-3 Heart) in 2025, his first season as head coach, including the NAIA national quarterfinals. He was on the William Penn staff for the five years before that, which included the 2024 NAIA national runner-up team.",
+    "mlsPlayers": 0,
+    "rank": 184,
+    "rankClass": "rk-solid",
+    "overallScore": 54,
+    "tacticalScore": 54,
+    "devScore": 54,
+    "ptPathScore": 0,
+    "ausConnection": false,
+    "bio": "Joe Minton leads William Penn men's soccer in his second year as head coach. He graduated from William Penn in 2020 with a degree in Sports Management after three years in the program, which set a school-record 15 wins and reached its first NAIA national tournament in 2019, and earned Second-Team Academic All-American honors. He added a Master's in Sports Management there in 2022. He was a graduate assistant for two years and an assistant for three before being promoted, and helped recruit five future all-conference players. In his first year as head coach, William Penn went 12-6-4 (7-3-3 Heart) and reached the NAIA national quarterfinals, with five players on the all-Heart teams and seven NAIA Scholar-Athletes. He also played for the Cedar Rapids Inferno of the UPSL. A native of Stoke-on-Trent, England, he played for the England School Boys and England College teams in 2016 and 2017 and holds FA Level 1 and 2 coaching certifications.",
+    "strengths": [
+      "Former William Penn player who has been through the program as player, graduate assistant, assistant and head coach",
+      "Led the team to the NAIA national quarterfinals in his first year as head coach",
+      "Recruits a heavily international squad, with players from England, Spain, Germany, Brazil and Japan",
+      "England School Boys and England College youth international"
+    ],
+    "staff": [
+      {
+        "name": "Milton Magana",
+        "role": "Assistant Coach",
+        "email": "miltonmagana@wmpenn.edu",
+        "bg": "Assistant coach for the 2026 season."
+      },
+      {
+        "name": "Kendall Acuna",
+        "role": "Graduate Assistant",
+        "email": "kendallacuna@wmpenn.edu",
+        "bg": "Graduate assistant coach."
+      },
+      {
+        "name": "John-Joe Mullane",
+        "role": "Graduate Assistant",
+        "email": "",
+        "bg": "Graduate assistant coach; the staff page prints an email address that looks mistyped, so none is stored."
+      },
+      {
+        "name": "Sota Matsuo",
+        "role": "Graduate Assistant",
+        "email": "sotamatsuo@wmpenn.edu",
+        "bg": "Graduate assistant coach."
+      },
+      {
+        "name": "Mauricio Nunez",
+        "role": "Volunteer Goalkeeper Coach",
+        "email": "mauricio.nunez@wmpenn.edu",
+        "bg": "Also an Assistant Professor of Exercise Science at William Penn."
+      },
+      {
+        "name": "Fabian Alvarez",
+        "role": "Student Assistant",
+        "email": "fabianalvarez@wmpenn.edu"
+      },
+      {
+        "name": "Christian Smith",
+        "role": "Student Assistant",
+        "email": "christiansmith@wmpenn.edu"
+      }
+    ],
+    "contact": {
+      "email": "josephminton@wmpenn.edu",
+      "phone": "641-673-2108"
+    },
+    "url": "https://www.statesmenathletics.com/sports/msoc/coaches",
+    "color": [
+      "#dbeafe",
+      "#1e3a8a"
+    ],
+    "licence": "FA Level 2",
+    "overallScoreNote": "Scored against the coach rubric. statesmenathletics.com coach bio: second year as head coach after two years as a graduate assistant and three as an assistant at William Penn; played three years there (school-record 15 wins and first NAIA national tournament in 2019) and in the UPSL; England School Boys and England College youth international; FA Level 1 and 2. First head-coaching year went 12-6-4 and reached the NAIA quarterfinals, but a short head-coaching record and no documented pro output -> solid, 54, slightly above a first-year assistant promoted without a record.",
+    "title": "Head Coach"
+  },
+  {
     "id": "rodriguez_coastalbend",
     "schoolId": "coastal_bend_cc",
     "name": "Justin Rodriguez",
     "school": "Coastal Bend College",
     "div": "JUCO",
     "conf": "NJCAA DI / Region 14",
-    "rank": 184,
+    "rank": 185,
     "rankClass": "rk-solid",
     "overallScore": 53,
     "devScore": 64,
@@ -9446,7 +9525,7 @@
     "yearsHC": 2,
     "record": "Former MLS player (Vancouver 2011); Villanova assoc HC 2019-23; led Drexel 9-2-5 (2023); Villanova HC since Nov 2023",
     "mlsPlayers": 1,
-    "rank": 185,
+    "rank": 186,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "tacticalScore": 47,
@@ -9500,7 +9579,7 @@
     "school": "Jefferson College (Vikings)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 16",
-    "rank": 186,
+    "rank": 187,
     "rankClass": "rk-solid",
     "yearsHC": 3,
     "record": "2025-26: 9-5-2 (.625), Region 16 Tournament Runner-up.",
@@ -9539,7 +9618,7 @@
     "school": "North Idaho College (Cardinals)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 18",
-    "rank": 187,
+    "rank": 188,
     "rankClass": "rk-solid",
     "yearsHC": 3,
     "record": "2024: 8-3-3 SWAC, 3rd place (NIC's debut SWAC season). 2025: 9-4-1 SWAC, tied 3rd.",
@@ -9576,7 +9655,7 @@
     "school": "Connors State College (Cowboys)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 2",
-    "rank": 188,
+    "rank": 189,
     "rankClass": "rk-solid",
     "yearsHC": null,
     "record": "First season at Connors State (2026-27). Previously 7 seasons as founding head coach at Indiana University East (River States Conference Tournament all 7 seasons), plus head-coaching stops at Clarke University, Bethany College, and Concordia University Chicago.",
@@ -9619,7 +9698,7 @@
     "school": "Indiana Institute of Technology",
     "div": "NAIA",
     "conf": "WHAC",
-    "rank": 189,
+    "rank": 190,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 52,
@@ -9731,7 +9810,7 @@
     "licence": null,
     "overallScoreNote": "5d scoring, 52 (rk-solid). sjsuspartans.com bio: interim HC since Aug 21, 2026 (Simon Tobin retired); assistant 2018-23, associate HC 2024-26; WAC tournament every season, 2024 tournament final as the 5th seed; CSU Bakersfield player 2009-12 and USL (Oklahoma City Energy). No head-coaching record, no licence listed. Pillar A: modest assistant pedigree under a long-serving coach. Pillar B: no individual development record beyond the program's two draft picks (Leroux 2024, Rivera 2026). Scored in the solid band on evidence; re-score if he is named permanent. Results excluded.",
     "ptPathScore": 0,
-    "rank": 190,
+    "rank": 191,
     "rankClass": "rk-solid"
   },
   {
@@ -9779,7 +9858,7 @@
     "licence": null,
     "overallScoreNote": "5d scoring, 52 (rk-solid). hornetsports.com bio: interim HC since July 2026 (Michael Linenberger retired); Sacramento State player to 2006, assistant 2006-13 (goalkeeper coach, then top assistant from 2009), assistant head coach 2014-15 and associate head coach from 2016. No head-coaching record, no licence listed. Pillar A: long continuity inside the program, no outside pedigree listed. Pillar B: one SuperDraft pick in 2022-26 (Sessoms). Scored in the solid band on evidence, level with the other interim coach in the guide (Sanchez, San Jose State); re-score if he is named permanent. Results excluded.",
     "ptPathScore": 0,
-    "rank": 191,
+    "rank": 192,
     "rankClass": "rk-solid"
   },
   {
@@ -9789,7 +9868,7 @@
     "school": "Pace University",
     "div": "D2",
     "conf": "NE10",
-    "rank": 192,
+    "rank": 193,
     "rankClass": "rk-solid",
     "overallScore": 52,
     "devScore": 52,
@@ -9838,7 +9917,7 @@
     "school": "Northeastern Oklahoma A&M College (Norsemen)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 2",
-    "rank": 193,
+    "rank": 194,
     "rankClass": "rk-solid",
     "yearsHC": 0,
     "record": "Named interim head coach August 10, 2026; the 'interim' qualifier had been dropped on the official coaches page by 2026-08-17, one week later. Previously the program's assistant coach since 2023, including the 2024 Region 2 semifinal and 2025 Quarterfinal-win seasons.",
@@ -9908,7 +9987,7 @@
     ],
     "overallScoreNote": "§5d score. Pillar A: genuine JUCO playing background (McHenry County College) plus an FIU Sport/Fitness/Education degree — a real, if modest, formal pedigree. Pillar B: a substantive 7-year high school and club coaching record (multiple district titles, a regional championship, a state final-four appearance, pre-ECNL success) is genuinely strong for the level, but he has zero prior college head-coaching experience and currently holds only the Interim title — a real leadership-continuity flag, same class as the Coastal Bend CC and Southeastern CC caveats elsewhere in this guide. Placed at 50, mid rk-solid — strong sub-collegiate coaching record offset by zero college HC experience and unresolved interim status.",
     "note": "Interim Head Coach at time of research (Aug 2026) — re-score if/when a permanent hire is announced, same pattern as the Coastal Bend CC and Southeastern CC entries.",
-    "rank": 194
+    "rank": 195
   },
   {
     "id": "coach_colorado_northwestern_cc",
@@ -9917,7 +9996,7 @@
     "school": "Colorado Northwestern CC (Spartans)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 18",
-    "rank": 195,
+    "rank": 196,
     "rankClass": "rk-solid",
     "yearsHC": 1,
     "record": "2026: first season as Head Coach, inheriting a program that finished last or near-last in Region 18 in every season 2021-2025.",
@@ -9955,7 +10034,7 @@
     "school": "Erskine College",
     "div": "D2",
     "conf": "Conference Carolinas",
-    "rank": 196,
+    "rank": 197,
     "rankClass": "rk-solid",
     "overallScore": 50,
     "devScore": 50,
@@ -10004,7 +10083,7 @@
     "school": "Illinois Central College (Cougars)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 24",
-    "rank": 197,
+    "rank": 198,
     "rankClass": "rk-solid",
     "yearsHC": 0,
     "record": "First season as head coach (2026), after 2 seasons as ICC's own assistant coach (2024-25 and 2025-26, helping guide the team to a Region 24 Championship in fall 2025) and 2 seasons as an NCAA Division I assistant at Western Illinois University (2023-24).",
@@ -10042,7 +10121,7 @@
     "school": "Truckee Meadows CC (Mighty Lizards)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 18",
-    "rank": 198,
+    "rank": 199,
     "rankClass": "rk-solid",
     "yearsHC": 3,
     "record": "2023: 5-5-2 SWAC, 4th place, Region 18 Tournament appearance. 2024: 4-7-3 SWAC. 2025: 4-10 SWAC.",
@@ -10080,7 +10159,7 @@
     "school": "Richard J. Daley College (Bulldogs)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
-    "rank": 199,
+    "rank": 200,
     "rankClass": "rk-solid",
     "yearsHC": null,
     "record": "2023-24: 1-11-3. 2024-25: 5-10-2. 2025-26: 8-6 (.571) — a clear three-year improvement trend under his tenure.",
@@ -10124,7 +10203,7 @@
     "school": "Central Wyoming College (Rustlers)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 9",
-    "rank": 200,
+    "rank": 201,
     "rankClass": "rk-solid",
     "yearsHC": 1,
     "record": "First season as head coach, 2025-26 (4-9 in Region 9 conference play).",
@@ -10159,7 +10238,7 @@
     "school": "Snow College (Badgers)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 18",
-    "rank": 201,
+    "rank": 202,
     "rankClass": "rk-solid",
     "yearsHC": 1,
     "record": "2026: first season as Head Coach, inheriting a roster that won the program's first-ever SWAC title in 2025 under his predecessor.",
@@ -10223,7 +10302,7 @@
     ],
     "overallScoreNote": "§5d score. Neither pillar has usable evidence: no personal playing/pro pedigree or coaching licence is confirmable, and no prior program history was found via the official bio or broader search — genuinely the thinnest-documented coach profile in this batch. Placed at 45, comparable to other campaign coaches with an unconfirmable public CV (e.g. Kennedy-King College's Jonathan Pachar, 44) — a real hire with a real title and two seasons of tenure, but nothing beyond that to score against.",
     "note": "Public biographical information could not be located beyond the hire date and dual men's/women's title — disclosed explicitly rather than assumed.",
-    "rank": 202
+    "rank": 203
   },
   {
     "id": "coach_hagerstown_cc",
@@ -10232,7 +10311,7 @@
     "school": "Hagerstown CC (Hawks)",
     "div": "JUCO",
     "conf": "NJCAA Division II / Region 20",
-    "rank": 203,
+    "rank": 204,
     "rankClass": "rk-solid",
     "yearsHC": 3,
     "record": "2025-26: 12-6-1 (.635). Career at HCC: 22-30-2 across 3 seasons (0-15-1 → 10-9 → 12-6-1).",
@@ -10271,7 +10350,7 @@
     "school": "College of Southern Idaho (Golden Eagles)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 18",
-    "rank": 204,
+    "rank": 205,
     "rankClass": "rk-solid",
     "yearsHC": 3,
     "record": "2024: 5-8-1 SWAC, 5th place (program debut season). 2025: 8-5-1 SWAC, 4th place.",
@@ -10310,7 +10389,7 @@
     "school": "Northern Oklahoma College - Enid (Jets)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 2",
-    "rank": 205,
+    "rank": 206,
     "rankClass": "rk-solid",
     "yearsHC": 0,
     "record": "Interim head coach, appointed August 20, 2026 (one week before the season opener), after serving as Aron Bassoff's assistant coach in 2025. Bassoff left NOC-Enid in July 2026 (19-27-5 over 3 seasons) to take the same position at Southwest Baptist University.",
@@ -10344,7 +10423,7 @@
     "school": "Kennedy-King College (Statesmen)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
-    "rank": 206,
+    "rank": 207,
     "rankClass": "rk-solid",
     "yearsHC": null,
     "record": "2025-26: 3-8-1 (.292). 2024-25: 2-8.",
@@ -10407,7 +10486,7 @@
     ],
     "overallScoreNote": "§5d score. Pillar A: NCAA D2 (Shaw University) then NAIA (LSU-Alexandria) playing career after a modest 2016-17 WNCC playing stint (12-6 best year, fell in region semis 1-0), no international/pro career, no coaching licence confirmed. Pillar B: two years as assistant on the historic 2024 title/National Tournament team gives real direct continuity, but zero personal head-coaching track record — his first HC season (2025-26) regressed sharply from the title-team pace he inherited. Placed at 44, mid rk-solid — real program continuity offset by a completely unproven HC record.",
     "note": null,
-    "rank": 207
+    "rank": 208
   },
   {
     "id": "coach_community_christian_college",
@@ -10416,7 +10495,7 @@
     "school": "Community Christian College",
     "div": "JUCO",
     "conf": "NJCAA Division I / ACCAC",
-    "rank": 208,
+    "rank": 209,
     "rankClass": "rk-solid",
     "yearsHC": null,
     "record": "No coaching CV, tenure length, or team results published anywhere on the official site",
@@ -10446,7 +10525,7 @@
     "school": "Gillette College (Pronghorns)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 9",
-    "rank": 209,
+    "rank": 210,
     "rankClass": "rk-solid",
     "yearsHC": 1,
     "record": "First head-coaching job; 2025-26 season 3-6-4 (8th of 10 in Region 9).",
@@ -10483,7 +10562,7 @@
     "school": "Southwestern Christian College (Rams)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 5",
-    "rank": 210,
+    "rank": 211,
     "rankClass": "rk-solid",
     "yearsHC": 2,
     "record": "Second season at Southwestern Christian; 1-2 in posted 2026-27 results so far.",
@@ -10546,7 +10625,7 @@
     ],
     "overallScoreNote": "§5d score. Pillar A: genuine JUCO playing background plus a real semi-professional career (Milwaukee Torrent) and ownership of an active first-division academy in Guinea — a real, if unconventional, football-development pedigree. Pillar B: zero head-coaching track record at any level, and the program he inherited is the weakest on-field record of this campaign's Region 9 additions (a combined 3-31-1 in conference play across the last four seasons). Placed at 40, lower rk-solid — real football pedigree offset by a completely unproven HC record and the region's weakest program.",
     "note": null,
-    "rank": 211
+    "rank": 212
   },
   {
     "id": "coach_southern_crescent_tech",
@@ -10555,7 +10634,7 @@
     "school": "Southern Crescent Tech (Tigers)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 17",
-    "rank": 212,
+    "rank": 213,
     "rankClass": "rk-solid",
     "yearsHC": 1,
     "record": "First NJCAA season (2026); the team played a club season in fall 2025.",
@@ -10589,7 +10668,7 @@
     "school": "Pacific Northwest Christian College (Gladiators)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 18",
-    "rank": 213,
+    "rank": 214,
     "rankClass": "rk-solid",
     "yearsHC": 1,
     "record": "2026: first season as Head Coach, inheriting a program that has gone 1-39 across its first three competitive seasons (2023-2025).",
@@ -10626,7 +10705,7 @@
     "school": "Wilbur Wright College (Rams)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
-    "rank": 214,
+    "rank": 215,
     "rankClass": "rk-solid",
     "yearsHC": null,
     "record": "Position vacant as of this research. Gabe Billings, previously the program's soccer point of contact and Director of Intercollegiate and Intramural Athletics, left Wilbur Wright College entirely — confirmed via a St. Louis Intercollegiate Athletic Conference (SLIAC) press release dated June 29, 2026 announcing his appointment as Head Women's Soccer Coach at Eureka College, which describes his Wilbur Wright role in the past tense as prior CV. A part-time \"Head Coach - Men's Soccer\" position was posted by City Colleges of Chicago on May 28, 2026 and has since closed, but no successor announcement was found despite a real search. Recruiting-platform listings (ProductiveRecruit) still show Billings, which is stale — not trusted as current.",
@@ -10657,7 +10736,7 @@
     "school": "Malcolm X College (Hawks)",
     "div": "JUCO",
     "conf": "NJCAA Division I / Region 4 (City Colleges of Chicago)",
-    "rank": 215,
+    "rank": 216,
     "rankClass": "rk-solid",
     "yearsHC": null,
     "record": "Jesse Rosen (head coach 2014-2025, 11+ seasons) left in May 2026 to become an assistant coach and recruiting director at Chicago State University (NCAA D1). Aziz Tahir is confirmed as his successor via three independent recruiting-platform listings (NCSA, SportsRecruits, ProductiveRecruit) and a City Colleges of Chicago employee-directory record, though no season/record data specific to his tenure has been found yet.",

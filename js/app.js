@@ -245,11 +245,14 @@ function initModalFocusTrap() {
   });
 }
 
-// Division show/hide toggle
+// Conference section open/close. A closed section is hidden entirely; its tile in the
+// conference index above opens it. filterToConf() (dashboard.js) and showAllCards() /
+// hideAllCards() still drive this by clicking .div-toggle-btn, so keep that contract.
 function toggleDivSection(btn){
   const section = btn.closest('.conf-section');
   const collapsed = section.classList.toggle('div-collapsed');
-  btn.textContent = collapsed ? 'Show' : 'Hide';
+  btn.textContent = collapsed ? 'Open' : 'Close ✕';
+  refreshExploreIndex();
 }
 
 // Section intro (long conference description) show/hide — independent of card
@@ -271,8 +274,8 @@ const ACU_TIP = "ACU Alignment: How many of Olivier's 16 ACU BESS units are cove
 const FIT_TIP = "Fit Score: Soccer program quality, minutes outlook, climate, and city lifestyle combined — minus a penalty (−6/−3) where on-campus housing is missing or unguaranteed. Deliberately excludes GPA, cost, and ACU alignment — check those separately (ATAR/budget toggles, Financial Model, ACU Alignment tab). Colour bands reflect the real range across the guide (max 71): 58+ strong, 48–57 middle, under 48 lower.";
 const FIT_TIP_CN = "Fit · no climate: the same Fit Score with climate removed and the remaining weights "
   + "renormalised to 100 (soccer 47%, minutes 41%, city 12%), minus the same housing and funding penalties. "
-  + "This is the number the cards are sorted by while this lens is active. The school's standard Fit Score is "
-  + "shown on the chip above.";
+  + "This is the number the rows are sorted by while this lens is active. The school's standard Fit Score is "
+  + "shown underneath it.";
 
 // ═══ v15: Lens system ══════════════════════════════════════════════════════
 const LENSES = [
@@ -398,29 +401,18 @@ function applySort(key){
     });
     cards.forEach(c=>grid.appendChild(c));
   });
+  // Row limits and tile summaries follow the new order.
+  refreshExploreIndex();
 }
 
 function renderLensControls(){
   const container = document.getElementById('lens-controls');
   if(!container) return;
-  container.innerHTML =
-    '<div class="lens-header-row">'+
-      '<span class="lens-label">View by</span>'+
-      '<div class="lens-pills">'+
-        LENSES.map(L=>
-          '<button class="lens-pill'+(L.key===currentLens?' active':'')+'" '+
-            'data-lens="'+L.key+'" onclick="applyLens(\''+L.key+'\')" '+
-            'title="'+L.desc.replace(/"/g,'&quot;')+'">'+L.label+'</button>'
-        ).join('')+
-      '</div>'+
-      '<div class="search-schools-wrap" style="margin-left:auto">'+
-        '<input id="search-schools" type="text" placeholder="Search schools…" autocomplete="off" '+
-          'role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-suggest" '+
-          'oninput="onSearchInput(this)" onkeydown="onSearchKey(event)" onfocus="onSearchInput(this)">'+
-        '<button id="search-clear-btn" onclick="clearSearch()" title="Clear search" aria-label="Clear search">✕</button>'+
-        '<div id="search-suggest" class="search-suggest" role="listbox"></div>'+
-      '</div>'+
-    '</div>';
+  container.innerHTML = LENSES.map(L=>
+    '<button class="lens-pill'+(L.key===currentLens?' active':'')+'" '+
+      'data-lens="'+L.key+'" onclick="applyLens(\''+L.key+'\')" '+
+      'title="'+L.desc.replace(/"/g,'&quot;')+'">'+L.label+'</button>'
+  ).join('');
 }
 
 function currentLensExplainer(){
@@ -429,28 +421,27 @@ function currentLensExplainer(){
   return '<div class="lens-desc">'+L.desc+'</div>';
 }
 
-// ── Climate-Neutral display swap (v45.33) ────────────────────────────────
-// Every lens sorts by a score that is NOT the one printed on the card, which leaves the
-// visible Fit column non-monotonic. Harmless for the other lenses (nobody expects an
-// academic ranking to match the Fit number) but actively misleading for Climate-Neutral,
-// which IS the Fit Score reweighted — the column just looks scrambled. So while that lens
-// is active the tile shows the climate-neutral value and the canonical score moves to a
-// chip, keeping both on the card. DISPLAY ONLY — school.fitOlivier is never written, so
-// sorting, Compare, the validators and every stored score stay canonical.
-// The one place that decides which number a Fit display shows. Card tile, modal template
-// AND openDetail()'s post-paint rAF write all route through it — openDetail re-wrote
-// #modal-fit-score with the canonical score after the template had rendered the
+// ── Lens display swap (v45.33, rows since v46.28) ────────────────────────
+// Every lens sorts by its own score, so the score cell must show that score or the visible
+// column reads as scrambled. DISPLAY ONLY — school.fitOlivier is never written, so sorting,
+// Compare, the validators and every stored score stay canonical.
+// The one place that decides which number a Fit display shows. Row score cell, modal
+// template AND openDetail()'s post-paint rAF write all route through it — openDetail
+// re-wrote #modal-fit-score with the canonical score after the template had rendered the
 // climate-neutral one, which silently reverted the modal in any browser where rAF fires.
 function displayFit(u){
   return (currentLens && currentLens !== 'overall') ? lensValue(u, currentLens) : (u.fitOlivier || 0);
 }
 
-// Colour for the swapped tile. Only a Fit-scale lens may use fitColor() — see LENS_TILE.
+// Colour for the swapped score. Only a Fit-scale lens may use fitColor() — see LENS_TILE.
 function displayFitColor(v){
   const cfg = LENS_TILE[currentLens];
   return (cfg && cfg.fitScale) ? fitColor(v) : 'var(--navy)';
 }
 
+// Explore row score cell (v46.28). The big number is the active lens's score (displayFit);
+// under any lens but Best Overall the canonical Fit Score sits underneath it, so both stay
+// visible. Lenses that are not on the Fit scale get a 0-100 bar instead of Fit colours.
 function refreshLensScoreDisplay(){
   const key = currentLens || 'overall';
   const cfg = LENS_TILE[key] || LENS_TILE.overall;
@@ -458,110 +449,55 @@ function refreshLensScoreDisplay(){
   const lensDesc = (LENSES.find(L=>L.key===key)||{}).desc || '';
   const tip = isOverall ? FIT_TIP
             : key === 'climateNeutral' ? FIT_TIP_CN
-            : cfg.label + ': ' + lensDesc + ' The cards are sorted by this value while this lens is active, '
-              + 'which is why it replaces the Fit Score here. The standard Fit Score is on the chip above.';
+            : cfg.label + ': ' + lensDesc + ' The rows are sorted by this value while this lens is active. '
+              + 'The standard Fit Score is shown underneath it.';
+  document.querySelectorAll('#cards-container .ex-score-h').forEach(h=>{ h.textContent = cfg.label; });
   unis.forEach(u=>{
     const valEl = document.getElementById('fit-'+u.id);
     if(!valEl) return;
-    const item  = valEl.closest('.ss-item');
-    const lbl   = item && item.querySelector('.ss-lbl');
     const shown = displayFit(u);
-    valEl.textContent = shown+'%';
+    valEl.textContent = shown;
     valEl.style.color = displayFitColor(shown);
-    if(lbl)  lbl.textContent = cfg.label;
-    if(item) item.setAttribute('data-tip', tip);
-    const fit = u.fitOlivier || 0;
-    // When the active lens duplicates an existing tile, that tile shows the canonical Fit
-    // Score instead of repeating the lens's own input back at the reader.
-    const acuEl  = document.getElementById('acu-'+u.id);
-    const acuIt  = acuEl && acuEl.closest('.ss-item');
-    const acuLbl = acuIt && acuIt.querySelector('.ss-lbl');
-    const swapAcu = (cfg.redundantWith === 'acu');
-    if(acuEl){
-      acuEl.textContent = swapAcu ? fit+'%' : (u.acuAlign+'/16');
-      acuEl.style.color = swapAcu ? fitColor(fit) : alignColor(u.acuAlign);
-      if(acuLbl) acuLbl.textContent = swapAcu ? 'Fit Score' : 'ACU Align';
-      if(acuIt)  acuIt.setAttribute('data-tip', swapAcu ? FIT_TIP : ACU_TIP);
-    }
-    const card = document.getElementById('card-'+u.id);
-    const sub  = card && card.querySelector('.card-sub');
+    const cell = valEl.closest('.ex-score');
+    if(cell) cell.title = tip;
+    const sub = document.getElementById('fitsub-'+u.id);
     if(!sub) return;
-    let chip = sub.querySelector('.cn-delta-chip');
-    // No chip when the Fit Score already has a tile of its own (see redundantWith).
-    if(isOverall || swapAcu){ if(chip) chip.remove(); return; }
-    if(!chip){ chip = document.createElement('span'); chip.className='cn-delta-chip'; sub.appendChild(chip); }
-    // A delta is only meaningful when the lens score is in the SAME units as the Fit Score.
-    // academic/minutes/lifestyle/value are different quantities, so subtracting them from
-    // Fit would render an arithmetically valid but meaningless number.
-    const delta = cfg.fitScale ? shown - fit : null;
-    chip.classList.toggle('cn-up',   delta !== null && delta > 0);
-    chip.classList.toggle('cn-down', delta !== null && delta < 0);
-    chip.textContent = 'Standard fit '+fit+(delta ? ' '+(delta>0?'▲':'▼')+Math.abs(delta) : '');
-    chip.title = (delta !== null)
-      ? 'This school’s normal Fit Score is '+fit+'%. Without the climate weighting it '
-        + (delta>0 ? 'rises to ' : delta<0 ? 'falls to ' : 'stays at ')+shown+'%.'
-      : 'This school’s normal Fit Score is '+fit+'%. The big number is its '+cfg.label
-        + ' score, which is what the cards are sorted by under this lens.';
+    sub.innerHTML = isOverall ? ''
+      : (cfg.fitScale ? '' : '<span class="ex-bar"><i style="width:'+Math.max(0, Math.min(100, shown))+'%"></i></span>')
+        + '<span class="ex-fitsub">Fit '+(u.fitOlivier || 0)+'</span>';
   });
 }
 
 function applyLens(lensKey){
   currentLens = lensKey;
-  // Update active lens pill
   document.querySelectorAll('.lens-pill').forEach(b=>{
     b.classList.toggle('active', b.dataset.lens===lensKey);
   });
-  // Swap the Fit tile / chip BEFORE sorting so the visible column matches the new order
+  // Swap the score cell BEFORE sorting so the visible column matches the new order
   refreshLensScoreDisplay();
-  // Re-sort cards using the now-updated lens (Best Fit is lens-aware)
-  applySort(currentSort);
-
-  // Per-division ranking — get top 3 IDs per division for badge highlights
+  // Mark the top 3 per division before sorting, so the row limit, the tiles and the
+  // leaders strip all read the new badges. (v15 deferred this to a rAF; a deferred write
+  // would leave refreshExploreIndex() reading the previous lens's badges.)
   const byDiv = lensRankByDivision(lensKey);
-  const top3IdsByDiv = {};
-  Object.keys(byDiv).forEach(div=>{
-    top3IdsByDiv[div] = byDiv[div].map(u=>u.id);
+  const lensLabel = LENSES.find(L=>L.key===lensKey).label;
+  document.querySelectorAll('#cards-container .ucard').forEach(card=>{
+    const id = card.id.replace('card-','');
+    card.classList.remove('lens-top1','lens-top2','lens-top3');
+    card.dataset.lensdivtop = 'false';
+    const slot = card.querySelector('.ex-badge-slot');
+    if(slot) slot.innerHTML = '';
+    const u = unis.find(x=>x.id===id);
+    // Never badge listed schools — their scores are unverified
+    if(!u || u.profileDepth === 'listed') return;
+    const pos = (byDiv[u.div] || []).findIndex(x=>x.id===id);
+    if(pos < 0) return;
+    card.classList.add('lens-top'+(pos+1));
+    if(pos === 0) card.dataset.lensdivtop = 'true';
+    if(slot) slot.innerHTML = '<span class="lens-badge">★ #'+(pos+1)+' '+u.div+' · '+lensLabel.toUpperCase()+(u.noVarsity?' ⚠':'')+'</span>';
   });
-
-  // Highlight top 3 within each division — deferred to next frame so sort has painted first
-  requestAnimationFrame(() => {
-    document.querySelectorAll('.ucard').forEach(card=>{
-      const id = card.id.replace('card-','');
-      card.classList.remove('lens-top1','lens-top2','lens-top3');
-      const u = unis.find(x=>x.id===id);
-      if(!u) return;
-      const divTops = top3IdsByDiv[u.div] || [];
-      const pos = divTops.indexOf(id);
-      // Mark #1 per division for the filter
-      card.dataset.lensdivtop = (pos===0) ? 'true' : 'false';
-      if(pos >= 0){
-        if(pos===0) card.classList.add('lens-top1');
-        else if(pos===1) card.classList.add('lens-top2');
-        else if(pos===2) card.classList.add('lens-top3');
-        // Add lens badge
-        let badge = card.querySelector('.lens-badge');
-        if(!badge){
-          badge = document.createElement('div');
-          badge.className = 'lens-badge';
-          card.insertBefore(badge, card.firstChild);
-        }
-        const lensLabel = LENSES.find(L=>L.key===lensKey).label;
-        const warn = u.noVarsity ? ' ⚠' : '';
-        // Never badge listed schools — their scores are unverified
-        if(u.profileDepth === 'listed'){
-          card.classList.remove('lens-top1','lens-top2','lens-top3');
-          card.dataset.lensdivtop = 'false';
-          const badge = card.querySelector('.lens-badge');
-          if(badge) badge.remove();
-        } else {
-          badge.textContent = '★ #'+(pos+1)+' '+u.div+' · '+lensLabel.toUpperCase()+warn;
-        }
-      } else {
-        const badge = card.querySelector('.lens-badge');
-        if(badge) badge.remove();
-      }
-    });
-  });
+  applySort(currentSort);
+  // Re-run the filters: the "#1 by Division" chip reads the badges just written.
+  applyFilters();
 }
 
 // ═══ Application logic ═══════════════════════════════════════════════════════
@@ -638,106 +574,307 @@ function posColor(pos){
 function alignColor(n){return n>=14?'var(--emerald)':n>=10?'var(--sky)':'var(--amber)';}
 function alignLabel(n){return n>=14?'Full align':n>=10?'Strong align':'Partial align';}
 
+// ═══ Explore: conference index + compact rows (v46.28) ═══════════════════════
+// Each school is a row (.ucard.erow) inside a closed conference section; the tiles above
+// open the sections. The rows keep the old card's ids and data attributes (card-, fit-,
+// cbtn-, data-div, data-lensdivtop, data-atargpastatus ...) so applyFilters(), applySort(),
+// applyLens(), refreshAllGpaRows(), toggleCompare() and recalculateAllScores() all still
+// work on them unchanged. refreshExploreIndex() redraws everything that summarises rows.
+// Conference tile logos and accent colours (v46.28). Each logo is the conference's own,
+// read from its official website on 2026-11-25 and stored under assets/conf-logos/
+// (Sidearm sites serve /images/logos/site/site.png; Big Ten, Pac-12 and Mountain West
+// use their header SVG, where the Big Ten and Mountain West white lettering was set to
+// near-black so it shows on a light tile). The division tiles use the governing body's
+// logo: NCAA (ncaa.org) for Division II and III, NAIA (naia.org), and NJCAA through
+// Google's favicon service because njcaa.org blocks traffic from Australia. Each accent
+// is the main colour sampled from that logo.
+const CONF_TILE_STYLE = {
+  'acc':           { logo:'acc.png',           accent:'#0033a0' },
+  'big-ten':       { logo:'big-ten.svg',       accent:'#0085ca' },
+  'big-east':      { logo:'big-east.png',      accent:'#d42a35' },
+  'aac':           { logo:'aac.png',           accent:'#0a2463' },
+  'big-west':      { logo:'big-west.png',      accent:'#1f2937' },
+  'pac-12':        { logo:'pac-12.svg',        accent:'#1f2937' },
+  'mountain-west': { logo:'mountain-west.svg', accent:'#6a4c9e' },
+  'sun-belt':      { logo:'sun-belt.png',      accent:'#e6a100' },
+  'mvc':           { logo:'mvc.png',           accent:'#d0103a' },
+  'caa':           { logo:'caa.png',           accent:'#0a2a5c' },
+  'asun':          { logo:'asun.png',          accent:'#d4b400' },
+  'wcc':           { logo:'wcc.png',           accent:'#111827' },
+  'america-east':  { logo:'america-east.png',  accent:'#e03a3a' },
+  'nec':           { logo:'nec.png',           accent:'#0068a5' },
+  'summit':        { logo:'summit.png',        accent:'#0b3b99' },
+  'patriot':       { logo:'patriot.png',       accent:'#1b2a9c' },
+  'IVY':           { logo:'ivy.png',           accent:'#0d6b36' },
+  'D2':            { logo:'ncaa.svg',          accent:'#009bde' },
+  'NAIA':          { logo:'naia.png',          accent:'#0b4a91' },
+  'D3':            { logo:'ncaa.svg',          accent:'#009bde' },
+  'JUCO':          { logo:'njcaa.png',         accent:'#13509b' },
+};
+
+let exploreSections = [];          // the sections from the last renderCards(), read by the index
+let exploreBudget = null;          // yearly budget (USD) on the Explore slider
+let budgetHideOver = false;
+const exploreShowAll = new Set();  // sections where "Show all" was pressed
+const EXPLORE_ROW_LIMIT = 10;
+
 function renderCards(){
   const container=document.getElementById('cards-container');
   container.innerHTML='';
   renderLensControls();
+  if(exploreBudget === null){
+    exploreBudget = athleteConfig.budgetUSD || 52000;
+    const bs = document.getElementById('budget-slider');
+    if(bs) bs.value = exploreBudget;
+  }
+  updateBudgetReadout();
+  syncExploreStickyOffset();
 
-  // Group by conference key — prevents the 71-card D1 wall
+  // Group by conference key. `short` is the tile name; `label`/`intro` sit on the section.
   const CONF_SECTIONS=[
-    {key:'acc',      label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'The deepest men\'s soccer conference in the guide, with long records of NCAA titles and MLS draft picks.'},
-    {key:'big-ten',  label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'A power conference that spans the country, from the West Coast to the East, with strong MLS draft output.'},
-    {key:'big-east', label:'Big East Conference',                 tier:'Major · D1',   intro:'Mostly private schools in or near large East Coast and Midwest cities. Akron plays its men\'s soccer here, although its other sports are in the MAC.'},
-    {key:'aac',      label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'Mostly warm-weather Division I programs in the South and Southeast, plus Missouri State in the Ozarks. Army and Navy are listed under the Patriot League, where their men\'s soccer competes.'},
-    {key:'big-west', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast programs, mostly California public universities, plus Utah Valley, which joined for 2026.'},
-    {key:'pac-12',   label:'Pac-12 Conference',                   tier:'High Major · D1',intro:'The rebuilt Pac-12, which sponsors men\'s soccer again from the 2026 season, with programs across California and the Pacific Northwest.'},
-    {key:'mountain-west', label:'Mountain West Conference',       tier:'High Major · D1',intro:'Western Division I programs. The Mountain West added men\'s soccer for the 2026 season.'},
-    {key:'sun-belt', label:'Sun Belt Conference',                tier:'Mid-Major · D1', intro:'Programs across the South and Appalachia, including South Carolina and West Virginia, which play men\'s soccer in the Sun Belt although their other sports play in other conferences.'},
-    {key:'mvc',      label:'Missouri Valley Conference',          tier:'Mid-Major · D1', intro:'Midwest Division I programs. Bowling Green and Western Michigan play men\'s soccer in the Missouri Valley although their other sports play in the MAC.'},
-    {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major Division I programs along the East Coast, from New England to the Carolinas.'},
-    {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major Division I programs across the South and Southeast.'},
-    {key:'wcc',      label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Mid-major Division I programs mostly in western states. Denver joined for the 2026 season.'},
-    {key:'america-east', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Mid-major Division I programs in the Northeast, where winters are cold.'},
-    {key:'nec',      label:'NEC — Northeast Conference',          tier:'Mid-Major · D1', intro:'Mid-major Division I programs in the Northeast, including schools still moving up from Division II.'},
-    {key:'summit',   label:'Summit League',                       tier:'Mid-Major · D1', intro:'A small men\'s soccer league that includes Delaware, whose other sports play in Conference USA, and Kansas City (UMKC), a two-time recent NCAA Tournament team.'},
-    {key:'patriot',  label:'Patriot League',                      tier:'Mid-Major · D1', intro:'Army and Navy are service academies. They charge no tuition, but graduates owe years of military service, which rules out a DPT or chiropractic path and an MLS career.'},
-    {key:'other', divFilter:'IVY',     label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships, only need-based aid, and admission standards far above the athletic minimum.'},
-    {key:'other', divFilter:'D2',      label:'NCAA Division II',       tier:'D2',            intro:'Athletic scholarships are allowed but capped, so most players get a partial award. Coaches often mix it with academic aid.'},
-    {key:'other', divFilter:'NAIA',    label:'NAIA',                    tier:'NAIA',          intro:'Athletic scholarships are allowed but capped, usually at small private colleges.'},
-    {key:'other', divFilter:'D3',      label:'NCAA Division III',        tier:'D3',            intro:'No athletic scholarships, only academic and need-based aid.'},
-    {key:'other', divFilter:'JUCO',    label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Two-year colleges where players move on to four-year programs. NJCAA Division I can cover tuition, fees, books, and room and board; Division II covers tuition, fees and books only; Division III and California community colleges offer no athletic aid.'},
+    {key:'acc',      short:'ACC', label:'ACC — Atlantic Coast Conference',     tier:'Power 4 · D1', intro:'The deepest men\'s soccer conference in the guide, with long records of NCAA titles and MLS draft picks.'},
+    {key:'big-ten',  short:'Big Ten', label:'Big Ten Conference',                  tier:'Power 4 · D1', intro:'A power conference that spans the country, from the West Coast to the East, with strong MLS draft output.'},
+    {key:'big-east', short:'Big East', label:'Big East Conference',                 tier:'Major · D1',   intro:'Mostly private schools in or near large East Coast and Midwest cities. Akron plays its men\'s soccer here, although its other sports are in the MAC.'},
+    {key:'aac',      short:'AAC', label:'AAC — American Athletic Conference',  tier:'High Major · D1',intro:'Mostly warm-weather Division I programs in the South and Southeast, plus Missouri State in the Ozarks. Army and Navy are listed under the Patriot League, where their men\'s soccer competes.'},
+    {key:'big-west', short:'Big West', label:'Big West Conference',                 tier:'High Major · D1',intro:'West Coast programs, mostly California public universities, plus Utah Valley, which joined for 2026.'},
+    {key:'pac-12',   short:'Pac-12', label:'Pac-12 Conference',                   tier:'High Major · D1',intro:'The rebuilt Pac-12, which sponsors men\'s soccer again from the 2026 season, with programs across California and the Pacific Northwest.'},
+    {key:'mountain-west', short:'Mountain West', label:'Mountain West Conference',       tier:'High Major · D1',intro:'Western Division I programs. The Mountain West added men\'s soccer for the 2026 season.'},
+    {key:'sun-belt', short:'Sun Belt', label:'Sun Belt Conference',                tier:'Mid-Major · D1', intro:'Programs across the South and Appalachia, including South Carolina and West Virginia, which play men\'s soccer in the Sun Belt although their other sports play in other conferences.'},
+    {key:'mvc',      short:'Missouri Valley', label:'Missouri Valley Conference',          tier:'Mid-Major · D1', intro:'Midwest Division I programs. Bowling Green and Western Michigan play men\'s soccer in the Missouri Valley although their other sports play in the MAC.'},
+    {key:'caa',      short:'CAA', label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major Division I programs along the East Coast, from New England to the Carolinas.'},
+    {key:'asun',     short:'ASUN', label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major Division I programs across the South and Southeast.'},
+    {key:'wcc',      short:'WCC', label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Mid-major Division I programs mostly in western states. Denver joined for the 2026 season.'},
+    {key:'america-east', short:'America East', label:'America East Conference',         tier:'Mid-Major · D1', intro:'Mid-major Division I programs in the Northeast, where winters are cold.'},
+    {key:'nec',      short:'NEC', label:'NEC — Northeast Conference',          tier:'Mid-Major · D1', intro:'Mid-major Division I programs in the Northeast, including schools still moving up from Division II.'},
+    {key:'summit',   short:'Summit League', label:'Summit League',                       tier:'Mid-Major · D1', intro:'A small men\'s soccer league that includes Delaware, whose other sports play in Conference USA, and Kansas City (UMKC), a two-time recent NCAA Tournament team.'},
+    {key:'patriot',  short:'Patriot League', label:'Patriot League',                      tier:'Mid-Major · D1', intro:'Army and Navy are service academies. They charge no tuition, but graduates owe years of military service, which rules out a DPT or chiropractic path and an MLS career.'},
+    {key:'other', divFilter:'IVY',     short:'Ivy League', label:'Ivy League',              tier:'D1 · Ivy',      intro:'No athletic scholarships, only need-based aid, and admission standards far above the athletic minimum.'},
+    {key:'other', divFilter:'D2',      short:'Division II', label:'NCAA Division II',       tier:'D2',            intro:'Athletic scholarships are allowed but capped, so most players get a partial award. Coaches often mix it with academic aid.'},
+    {key:'other', divFilter:'NAIA',    short:'NAIA', label:'NAIA',                    tier:'NAIA',          intro:'Athletic scholarships are allowed but capped, usually at small private colleges.'},
+    {key:'other', divFilter:'D3',      short:'Division III', label:'NCAA Division III',        tier:'D3',            intro:'No athletic scholarships, only academic and need-based aid.'},
+    {key:'other', divFilter:'JUCO',    short:'Junior colleges', label:'Junior College (JUCO)',    tier:'JUCO',          intro:'Two-year colleges where players move on to four-year programs. NJCAA Division I can cover tuition, fees, books, and room and board; Division II covers tuition, fees and books only; Division III and California community colleges offer no athletic aid.'},
   ];
 
-  // Also include Ivy League under acc or as standalone — they are in other.json
-  CONF_SECTIONS.forEach(sec=>{
-    let secUnis;
-    if(sec.key==='other' && sec.divFilter){
-      if(sec.divFilter==='IVY')     secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='IVY');
-      else if(sec.divFilter==='D2') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D2');
-      else if(sec.divFilter==='NAIA') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='NAIA');
-      else if(sec.divFilter==='D3') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='D3');
-      else if(sec.divFilter==='JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&u.div==='JUCO');
-      else if(sec.divFilter==='D3JUCO') secUnis=unis.filter(u=>u.confKey==='other'&&(u.div==='D3'||u.div==='JUCO'));
-      else secUnis=unis.filter(u=>u.confKey===sec.key);
-    } else {
-      secUnis=unis.filter(u=>(u.confKey||'other')===sec.key);
-    }
+  exploreSections = CONF_SECTIONS.map(sec=>Object.assign({}, sec, { secKey: sec.key==='other' ? sec.divFilter : sec.key }));
+  exploreSections.forEach(sec=>{
+    const secUnis = sec.key==='other'
+      ? unis.filter(u=>u.confKey==='other' && u.div===sec.divFilter)
+      : unis.filter(u=>(u.confKey||'other')===sec.key);
     if(!secUnis.length) return;
-    const fullCount=secUnis.filter(u=>u.profileDepth==='full').length;
-    const listedCount=secUnis.filter(u=>u.profileDepth==='listed').length;
-    const countNote=listedCount>0?` <span style="font-size:10px;color:var(--hint);font-weight:500">${fullCount} full profile · ${listedCount} listed</span>`:'';
+    const div = secUnis[0].div || 'D1';
     const el=document.createElement('div');
     el.className='conf-section div-collapsed';
-    el.dataset.div=secUnis[0]?.div||'D1';
+    el.dataset.div=div;
     el.dataset.confkey=sec.key;
-    const headHtml=
-      `<div class="section-head">` +
-        `<h2>${sec.label}${countNote}</h2>` +
-        `<button class="info-icon-btn" onclick="toggleSectionIntro(this)" title="About ${sec.label}" aria-label="About ${sec.label}" aria-expanded="false">ⓘ</button>` +
-        `<span class="dbadge d-${secUnis[0]?.div||'D1'}" style="font-size:9px">${sec.tier}</span>` +
-        `<button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Show/hide this conference">Show</button>` +
-      `</div>` +
-      `<div class="section-intro intro-hidden">${sec.intro}</div>`;
-
-    if(sec.divFilter==='JUCO'){
-      // Group by NJCAA region — schools without an njcaaRegion (e.g. CCCAA-affiliated) get their own bucket
-      const groups={};
-      secUnis.forEach(u=>{
-        const rk=u.njcaaRegion||'CCCAA';
-        (groups[rk]=groups[rk]||[]).push(u);
-      });
-      const regionKeys=Object.keys(groups).sort((a,b)=>{
-        if(a==='CCCAA') return 1;
-        if(b==='CCCAA') return -1;
-        return parseInt(a.replace('Region ',''),10)-parseInt(b.replace('Region ',''),10);
-      });
-      let bodyHtml='';
-      regionKeys.forEach((rk,i)=>{
-        const list=groups[rk];
-        const area=list[0].njcaaRegionArea;
-        const label=rk==='CCCAA' ? 'CCCAA — California (non-NJCAA)' : `NJCAA ${rk}${area?' — '+area:''}`;
-        bodyHtml+=
-          `<div class="region-subhead"><h3>${label}</h3><span class="region-count">${list.length} school${list.length>1?'s':''}</span></div>` +
-          `<div class="cards-grid region-grid" id="grid-${sec.key}-${i}"></div>`;
-      });
-      el.innerHTML=headHtml+bodyHtml;
-      container.appendChild(el);
-      regionKeys.forEach((rk,i)=>{
-        const grid=el.querySelector(`#grid-${sec.key}-${i}`);
-        groups[rk].forEach(u=>grid.appendChild(buildCard(u)));
-      });
-    } else {
-      el.innerHTML=headHtml+`<div class="cards-grid" id="grid-${sec.key}"></div>`;
-      container.appendChild(el);
-      const grid=el.querySelector(`#grid-${sec.key}`);
-      secUnis.forEach(u=>grid.appendChild(buildCard(u)));
-    }
+    el.dataset.seckey=sec.secKey;
+    el.id='sec-'+sec.secKey;
+    el.innerHTML=
+      '<div class="ex-sec-head" onclick="if(!event.target.closest(\'button\'))toggleDivSection(this.querySelector(\'.div-toggle-btn\'))">'+
+        '<div class="ex-sec-title"><h3>'+sec.label+'</h3>'+
+          '<span class="dbadge d-'+div+'" style="font-size:9px">'+sec.tier+'</span>'+
+          '<button class="info-icon-btn" onclick="toggleSectionIntro(this)" title="About '+sec.label+'" aria-label="About '+sec.label+'" aria-expanded="false">ⓘ</button>'+
+        '</div>'+
+        '<div class="ex-meta"><span class="ex-sec-count"></span>'+
+          '<button class="div-toggle-btn" onclick="toggleDivSection(this)" title="Open or close this conference">Open</button></div>'+
+      '</div>'+
+      '<div class="section-intro intro-hidden">'+sec.intro+'</div>'+
+      '<div class="ex-list">'+
+        '<div class="ex-lhead"><span></span><span>School</span><span>GPA entry</span>'+
+          '<span class="r ex-score-h">Fit Score</span><span class="r">Cost / yr</span><span class="r">Climate · city</span><span></span></div>'+
+        '<div class="cards-grid" id="grid-'+sec.secKey+'"></div>'+
+        '<button class="ex-more" onclick="showAllRows(\''+sec.secKey+'\')"></button>'+
+      '</div>';
+    container.appendChild(el);
+    const grid=el.querySelector('.cards-grid');
+    secUnis.forEach(u=>grid.appendChild(buildCard(u)));
   });
+  renderFilterCounts();
+  refreshExploreIndex();
+}
 
-  // Update the filter summary count now that all cards are rendered
-  const totalCards = document.querySelectorAll('#cards-container .ucard').length;
-  const summaryEl = document.getElementById('filter-active-summary');
-  if(summaryEl) summaryEl.innerHTML = 'Showing all <strong>'+totalCards+'</strong> schools';
+// How many schools each filter choice matches on its own, out of the whole guide.
+// Counted from the rows' own data attributes, the same values applyFilters() tests,
+// so a count can never disagree with what the chip actually shows. "#1 by Division"
+// changes with the lens and is left without a count.
+function renderFilterCounts(){
+  const rows = [...document.querySelectorAll('#cards-container .ucard')];
+  const byRow = new Map(unis.map(u=>['card-'+u.id, u]));
+  document.querySelectorAll('#filter-panel-body .fchip').forEach(chip=>{
+    const type = chip.dataset.filter, val = chip.dataset.val;
+    if(type === 'lensdivtop') return;
+    const n = rows.filter(r=>{
+      if(type === 'fitband'){ const u = byRow.get(r.id); return u && fitBand(u.fitOlivier) === val; }
+      return r.dataset[type] === val;
+    }).length;
+    let c = chip.querySelector('.fchip-count');
+    if(!c){ c = document.createElement('span'); c.className = 'fchip-count'; chip.appendChild(c); }
+    c.textContent = n;
+  });
+}
+
+// Redraw the conference tiles, the "#1 by division" strip, each section's counts and
+// row limit, and the in/over budget labels. Called after every filter, sort, lens,
+// slider or open/close change. Everything here is derived from the rows on screen.
+function refreshExploreIndex(){
+  const container = document.getElementById('cards-container');
+  if(!container || !exploreSections.length) return;
+  container.classList.toggle('ex-searching', !!searchKeyword);
+  const budget = exploreBudget || 0;
+  const byRow = new Map(unis.map(u=>['card-'+u.id, u]));
+  const leaders = {};
+  const tiles = [];
+  let shown = 0, total = 0, sections = 0, openCount = 0, lastTier = null;
+  exploreSections.forEach(sec=>{
+    const el = document.getElementById('sec-'+sec.secKey);
+    if(!el) return;
+    const rows = [...el.querySelectorAll('.ucard')];
+    const vis = rows.filter(r=>r.style.display!=='none');
+    total += rows.length; shown += vis.length; sections++;
+    const open = !el.classList.contains('div-collapsed');
+    if(open) openCount++;
+    rows.forEach(r=>{
+      const over = (+r.dataset.cost || 0) > budget;
+      r.querySelectorAll('.ex-cost').forEach(c=>c.classList.toggle('over', over));
+      const lbl = r.querySelector('.ex-budget-lbl');
+      if(lbl) lbl.textContent = over ? 'over budget' : 'in budget';
+    });
+    // First EXPLORE_ROW_LIMIT visible rows, stretched to include every badged row.
+    let lim = vis.length;
+    if(!exploreShowAll.has(sec.secKey)){
+      lim = EXPLORE_ROW_LIMIT;
+      vis.forEach((r, i)=>{ if(/\blens-top[123]\b/.test(r.className)) lim = Math.max(lim, i+1); });
+    }
+    rows.forEach(r=>r.classList.remove('ex-over'));
+    vis.forEach((r, i)=>{ if(i >= lim) r.classList.add('ex-over'); });
+    const more = el.querySelector('.ex-more');
+    if(more){ more.style.display = vis.length > lim ? '' : 'none'; more.textContent = 'Show all '+vis.length; }
+
+    const visU = vis.map(r=>byRow.get(r.id)).filter(Boolean);
+    const inBudget = visU.filter(u=>(u.fin?.costNum || 0) <= budget).length;
+    const gpaOk = vis.filter(r=>r.dataset.atargpastatus==='eligible').length;
+    const cnt = el.querySelector('.ex-sec-count');
+    if(cnt) cnt.textContent = vis.length+' school'+(vis.length!==1?'s':'')+' · '+inBudget+' in budget';
+    const best = visU.slice().sort((a,b)=>(b.fitOlivier||0)-(a.fitOlivier||0))[0];
+    const stars = rows.filter(r=>r.dataset.lensdivtop==='true').map(r=>{
+      const u = byRow.get(r.id);
+      if(u) leaders[u.div] = u;
+      return u ? '<span class="ex-tile-star">★ #1 '+(u.div==='IVY'?'Ivy':u.div)+'</span>' : '';
+    }).join('');
+    const tier = sec.key==='other' ? 'other' : 'd1';
+    if(tier !== lastTier){
+      tiles.push('<div class="ex-tier">'+(tier==='d1' ? 'Division I' : 'Ivy, Division II, NAIA, Division III and junior colleges')+'</div>');
+      lastTier = tier;
+    }
+    const look = CONF_TILE_STYLE[sec.secKey] || {};
+    const countTxt = (vis.length!==rows.length ? vis.length+' of '+rows.length : rows.length)+' school'+(rows.length!==1?'s':'');
+    // The conference logo is a faint watermark behind the tile (CSS ::after reads --logo).
+    tiles.push(
+      '<button class="ex-tile'+(open?' open':'')+(vis.length?'':' empty')+'" '+
+        'style="--acc:'+(look.accent||'var(--indigo)')+(look.logo ? ';--logo:url(assets/conf-logos/'+look.logo+')' : '')+'" '+
+        'onclick="openExploreSection(\''+sec.secKey+'\')" aria-expanded="'+open+'" title="'+esc(sec.label)+'">'+
+        '<span class="ex-tile-top">'+
+          '<span class="ex-tile-id"><span class="ex-tile-name">'+esc(sec.short || sec.label)+'</span>'+
+            '<span class="ex-tile-count">'+countTxt+'</span></span>'+
+          (stars ? '<span class="ex-tile-stars">'+stars+'</span>' : '')+
+        '</span>'+
+        (best
+          ? '<span class="ex-tile-best"><span class="ex-tile-best-lbl">Best fit</span>'+
+              '<b style="color:'+fitColor(best.fitOlivier)+'">'+best.fitOlivier+'</b><span class="ex-tile-best-name">'+esc(best.name)+'</span></span>'
+          : '<span class="ex-tile-best"><span class="ex-tile-best-lbl">No schools match the filters</span></span>')+
+        '<span class="ex-tile-stats">'+
+          '<span class="ex-pill'+(inBudget?' g':'')+'">'+inBudget+' in budget</span>'+
+          '<span class="ex-pill'+(gpaOk?' g':'')+'">'+gpaOk+' GPA ok</span></span>'+
+      '</button>');
+  });
+  const tilesEl = document.getElementById('ex-tiles');
+  if(tilesEl) tilesEl.innerHTML = tiles.join('');
+  const sum = document.getElementById('ex-idx-sum');
+  if(sum) sum.textContent = shown+' of '+total+' schools shown · tap a conference to open it';
+  const openBtn = document.getElementById('open-all-btn');
+  if(openBtn) openBtn.textContent = (openCount === sections) ? 'Close all' : 'Open all';
+
+  const lensLabel = (LENSES.find(L=>L.key===currentLens)||LENSES[0]).label;
+  const strip = document.getElementById('ex-leaders');
+  if(strip){
+    strip.innerHTML = '<span class="ex-lbl">★ #1 by division · '+esc(lensLabel)+'</span>' +
+      DIVISIONS_ORDER.filter(d=>leaders[d]).map(d=>{
+        const u = leaders[d], v = displayFit(u);
+        return '<button class="ex-leader" onclick="jumpToSchool(\''+u.id+'\')"><b>'+(d==='IVY'?'Ivy':d)+'</b>'+esc(u.name)+
+          '<em style="color:'+displayFitColor(v)+'">'+v+'</em></button>';
+      }).join('');
+  }
+}
+
+// Tile click: open the section and scroll to it, or close it if it is already open.
+function openExploreSection(secKey){
+  const el = document.getElementById('sec-'+secKey);
+  if(!el) return;
+  const btn = el.querySelector('.div-toggle-btn');
+  const wasClosed = el.classList.contains('div-collapsed');
+  toggleDivSection(btn);
+  if(wasClosed) el.scrollIntoView({ behavior:'smooth', block:'start' });
+}
+
+// Leaders strip click: open the school's section and bring its row into view.
+function jumpToSchool(id){
+  const u = unis.find(x=>x.id===id);
+  if(!u) return;
+  const secKey = u.confKey==='other' ? u.div : u.confKey;
+  const el = document.getElementById('sec-'+secKey);
+  if(!el) return;
+  if(el.classList.contains('div-collapsed')) toggleDivSection(el.querySelector('.div-toggle-btn'));
+  const row = document.getElementById('card-'+id);
+  if(row && row.classList.contains('ex-over')){ exploreShowAll.add(secKey); refreshExploreIndex(); }
+  const target = (row && row.style.display!=='none') ? row : el;
+  target.scrollIntoView({ behavior:'smooth', block:'center' });
+}
+
+// The Explore toolbar sticks just under the top nav, whose height changes with width
+// (58px desktop, 43px phone). Measure it rather than hard-code it.
+function syncExploreStickyOffset(){
+  const nav = document.querySelector('.top-nav');
+  if(nav && nav.offsetHeight) document.documentElement.style.setProperty('--ex-nav-h', nav.offsetHeight+'px');
+}
+window.addEventListener('resize', syncExploreStickyOffset);
+
+function showAllRows(secKey){
+  exploreShowAll.add(secKey);
+  refreshExploreIndex();
+}
+
+function toggleOpenAll(){
+  const all = [...document.querySelectorAll('#cards-container .conf-section')];
+  if(all.every(s=>!s.classList.contains('div-collapsed'))) hideAllCards();
+  else showAllCards();
+}
+
+// ── Budget slider (v46.28) ──────────────────────────────────────────────────
+// Compares each school's direct billed cost (fin.costNum) with the slider, before any
+// scholarship. It starts at athleteConfig.budgetUSD and never changes stored data.
+function updateBudgetReadout(){
+  const b = exploreBudget || 0;
+  const disp = document.getElementById('budget-display');
+  if(disp) disp.textContent = '$'+Math.round(b/1000)+'k / yr';
+  const cnt = document.getElementById('budget-count');
+  if(cnt) cnt.textContent = unis.filter(u=>(u.fin?.costNum || 0) <= b).length;
+}
+
+function onBudgetSlide(){
+  const bs = document.getElementById('budget-slider');
+  if(!bs) return;
+  exploreBudget = parseInt(bs.value, 10);
+  updateBudgetReadout();
+  applyFilters();
+}
+
+function toggleBudgetHide(){
+  budgetHideOver = !budgetHideOver;
+  const btn = document.getElementById('budget-hide-btn');
+  if(btn){
+    btn.classList.toggle('on', budgetHideOver);
+    btn.textContent = budgetHideOver ? 'Hiding over budget' : 'Hide over budget';
+  }
+  applyFilters();
 }
 
 // ── Known-icon overrides ─────────────────────────────────────────────────────
@@ -766,13 +903,8 @@ const ICON_OVERRIDES = {
   kennedy_king_college: 'assets/logos/kennedy_king_college.png',
   wilbur_wright_college: 'assets/logos/wilbur_wright_college.png',
   malcolm_x_college: 'assets/logos/malcolm_x_college.png',
-  // virginia (v45.13, icon audit) -- virginia.edu and www.virginia.edu both
-  // 404/hang on a direct /favicon.ico fetch (a TLS cert-hostname mismatch on
-  // the bare domain slows browsers rather than failing them promptly), but
-  // Google's favicon proxy for virginia.edu returns a real, confirmed-correct
-  // Rotunda icon (verified by hash: NOT the 726B generic-globe placeholder).
-  // Pointing straight at that URL skips the slow/hanging direct attempt.
-  virginia: 'https://www.google.com/s2/favicons?domain=virginia.edu&sz=64',
+  // virginia (v45.13) pointed at Google's 64px favicon proxy; removed v46.28 now that
+  // assets/logos/virginia.png (the athletics site's own 520px logo) exists.
   // 15-school icon-audit batch (found v45.13, fixed here) -- every one of
   // these has DOMAINS[id] === domain (no second host to fall back to), and
   // for most, that one domain sits behind Cloudflare bot-protection: a
@@ -797,10 +929,8 @@ const ICON_OVERRIDES = {
   harcum_college: 'assets/logos/harcum_college.png',
   central_georgia_tech: 'assets/logos/central_georgia_tech.png',
   noc_enid: 'assets/logos/noc_enid.png',
-  // v45.95: unfospreys.com/favicon.ico fails to load and Google's proxy answers with its
-  // generic grey globe (HTTP 404 with an image body), so the chain stopped on the globe.
-  // This is the site's own square logo (200x200), read from its og:image tag on 2026-10-05.
-  northflorida: 'https://unfospreys.com/images/logos/site/site.png',
+  // northflorida (v45.95) pointed at unfospreys.com's live site.png; removed v46.28 now
+  // that the same 200px logo is saved as assets/logos/northflorida.png.
 };
 
 // ── School emblem logo helper ────────────────────────────────────────────────
@@ -810,9 +940,7 @@ const ICON_OVERRIDES = {
 // back to Google favicon (64px) if that 404s/errors, then falls back to the
 // coloured text abbreviation if both fail.
 function logoUrl(u, size){
-  if(ICON_OVERRIDES[u.id]) return ICON_OVERRIDES[u.id];
-  if(!u.domain) return null;
-  return 'https://' + u.domain + '/favicon.ico';
+  return iconChain(u)[0] || null;
 }
 function googleFaviconUrl(domain){
   return 'https://www.google.com/s2/favicons?domain=' + domain + '&sz=64';
@@ -823,9 +951,18 @@ function googleFaviconUrl(domain){
 // show three different logos. Order: ICON_OVERRIDES, else the school's own domain
 // favicon, then Google's proxy for that domain, then the athletics-site favicon, then
 // initials. Do not give a surface its own chain again.
+//
+// v46.28: a saved logo comes first. 212 of 218 schools have one in assets/logos/, read
+// from the school's own athletics site or the NJCAA team list on 2026-11-25 and checked
+// by eye (a 150-1024px logo, not a 16-64px favicon), so every surface is sharp and the
+// Details window can use it as a background. A school without a file just 404s once
+// locally and falls through to the live icons below. Logos saved as SVG are listed in
+// LOCAL_SVG_LOGOS; everything else is <id>.png.
+const LOCAL_SVG_LOGOS = new Set(['westvirginia', 'northeast_texas_cc']);
+function localLogoUrl(u){ return 'assets/logos/' + u.id + (LOCAL_SVG_LOGOS.has(u.id) ? '.svg' : '.png'); }
 function iconChain(u){
   if(ICON_OVERRIDES[u.id]) return [ICON_OVERRIDES[u.id]];
-  const c = [];
+  const c = [localLogoUrl(u)];
   if(u.domain) c.push('https://' + u.domain + '/favicon.ico', googleFaviconUrl(u.domain));
   const ath = DOMAINS[u.id];
   if(ath && ath !== u.domain) c.push('https://' + ath + '/favicon.ico');
@@ -861,9 +998,21 @@ function buildEmblemHtml(u, sizeClass){
 }
 
 
+// One Explore row (v46.28). Keeps the old card's ids and data attributes so the filter,
+// sort, lens, GPA and Compare code keep working on it. Clicking the row (not a button)
+// opens Details, which is how phones reach it: the buttons are hidden at phone width.
+const GPA_ROW_LABEL  = { eligible:'GPA eligible', borderline:'GPA borderline', below:'GPA below min' };
+const GPA_ROW_SHORT  = { eligible:'GPA ok', borderline:'GPA borderline', below:'GPA below' };
+const GPA_ROW_COLOR  = { eligible:'var(--emerald)', borderline:'var(--amber)', below:'var(--rose)' };
+function costShort(u){
+  if(!u.fin || u.fin.costNum===undefined) return '—';
+  if(u.fin.costNum===0) return 'Fully funded';
+  return '$'+Math.round(u.fin.costNum/1000)+'k';
+}
+
 function buildCard(u){
   const el=document.createElement('div');
-  el.className='ucard'+(u.top?' top-pick':'');
+  el.className='ucard erow'+(u.top?' top-pick':'');
   el.dataset.div=u.div; el.dataset.region=u.region; el.dataset.warm=u.warm; el.dataset.top=u.top;
   el.dataset.njcaadiv=u.njcaaDivision||'';
   el.dataset.city=u.city?'true':'false';
@@ -880,113 +1029,50 @@ function buildCard(u){
   el.dataset.gpamin=gpaBucket;
   const facRating=(u.facilityDetails?.rating||'Solid').toLowerCase().replace(/\s+/g,'');
   el.dataset.facrating=facRating;
+  const housing = u.facilityDetails && u.facilityDetails.housing;
+  el.dataset.housing = (housing && housing.available === true) ? 'true' : 'false';
+  el.dataset.cost = (u.fin && u.fin.costNum) || 0;
   el.id='card-'+u.id;
 
   const isListed = u.profileDepth === 'listed';
-  const cardColor = u.color || ['#e0e7ff', '#4f46e5'];
-  const devAvg = !u.devScores
-    ? null
-    : Object.values(u.devScores).every(v => v === 0)
-      ? null
-      : Math.round((u.devScores.tactical + u.devScores.technical + u.devScores.fitness) / 3);
-  const ivyWarn=u.div==='IVY'?'<div class="ivy-warning" style="margin:.5rem .9rem;border-radius:7px">⚠ Ivy: No athletic scholarships. Need-based only. GPA 2.8 likely insufficient.</div>':'';
-
-  // GPA compact row
-  let gpaHtml='';
-  if(u.gpa){
-    const statusColor=u.gpa.status==='eligible'?'var(--emerald)':u.gpa.status==='borderline'?'var(--amber)':'var(--rose)';
-    const statusIcon=u.gpa.status==='eligible'?'✅':u.gpa.status==='borderline'?'⚠️':'❌';
-    const isOpen=u.gpa.minEntry.toLowerCase().includes('no minimum')||u.gpa.minEntry.toLowerCase().includes('open');
-    const entryText=isOpen?'Open entry ✅':u.gpa.minEntry+' '+statusIcon;
-    // `gpa.minSchol` is free prose. It USUALLY opens with the threshold ("3.5+ for
-    // academic merit"), but at need-blind schools it is a whole sentence — so the old
-    // .split(' ')[0] rendered "Target: Notre" and "Target: Georgetown" on those two
-    // cards, and "Target: N/A" on smc/miami_dade. Same defect class as the Max Aid tile
-    // (v44.50): a display value parsed out of prose that is free to be phrased any way.
-    // Extract a GPA only when the string actually opens with one; otherwise there is no
-    // GPA threshold to display, so show '—' rather than the first word of a sentence.
-    const gpaTargetMatch=(u.gpa.minSchol||'').match(/^\s*(\d(?:\.\d+)?\+?)/);
-    const targetShort=gpaTargetMatch?gpaTargetMatch[1]:'—';
-    gpaHtml='<div class="gpa-compact">'
-      +'<span class="gpa-c-label">GPA</span>'
-      +'<span class="gpa-c-val" style="color:'+statusColor+'">'+entryText+'</span>'
-      +'<span class="gpa-c-target">Target: '+targetShort+'</span>'
-      +'</div>';
+  if(!isListed){
+    el.onclick = function(e){ if(!e.target.closest('button')) openDetail(u.id); };
   }
-
-  const facEmoji=facRating==='elite'?'🏆':facRating==='excellent'?'⭐':facRating==='verygood'?'✅':facRating==='good'?'👍':'📋';
-  const facLabel=u.facilityDetails?u.facilityDetails.rating:'—';
-  const standingHtml=(u.confRecord||[]).slice(0,5).map(function(r){
-    return '<span class="sy '+posColor(r.pos)+'" title="'+r.yr+': '+r.note+'" style="font-size:9px">'+r.yr.toString().slice(2)+': '+chipLabel(r.pos)+'</span>';
-  }).join('');
-  const titlesNote=(u.titles||[]).length>0?'<span style="margin-left:4px;font-size:9px;color:var(--gold);font-weight:700">🏆 '+u.titles.length+' title'+(u.titles.length>1?'s':'')+'</span>':'';
-
-  const alignBg=alignColor(u.acuAlign)==='var(--emerald)'?'var(--emerald3)':alignColor(u.acuAlign)==='var(--sky)'?'var(--sky3)':'var(--amber3)';
-
-  const warmTag=u.warm?'<span style="color:var(--amber);font-size:9px">☀ Warm</span>':'';
-  const cityTag=u.city?'<span style="color:var(--sky);font-size:9px">🏙 City</span>':'';
-  const confShort=u.conf.split(' ')[0];
-  const locShort=u.loc.split(',').slice(-2).join(',').trim();
-  const topBadge=u.top?'<div class="tp-badge">★ TOP PICK</div>':'';
-  const eliteJucoChip=(u.div==='JUCO'&&u.jucoTier==='Elite')?'<span class="elite-juco-chip" title="'+(u.jucoTierNote||'').replace(/"/g,'&quot;')+'">🏆 Elite JUCO</span>':'';
-  // Silent when housing is available (the expected default) — only flag the exception,
-  // same pattern as Top Pick / Elite JUCO. Avoids stacking a tag on every single card.
-  const housing = u.facilityDetails && u.facilityDetails.housing;
-  const housingChip = (housing && housing.available === false)
-    ? '<span class="housing-warn-chip" title="'+(housing.note||'').replace(/"/g,'&quot;')+'">🏠 No on-campus housing</span>'
+  const minGpa = u.gpa ? parseMinEntry(u.gpa.minEntry) : 0;
+  const gpaNeeds = !u.gpa ? '—' : (minGpa ? 'needs '+minGpa.toFixed(1) : 'no minimum');
+  const gpaStatus = (u.gpa && u.gpa.status) || 'eligible';
+  const divLabel = (u.div==='JUCO' && u.njcaaDivision) ? 'NJCAA D'+u.njcaaDivision : (u.div==='IVY' ? 'Ivy' : u.div);
+  const picks = (u.proPlayers && u.proPlayers.mlsPicks5yr) || 0;
+  const sub = esc(u.loc)+' · '+divLabel+(u.njcaaRegion?' · '+esc(u.njcaaRegion):'')+
+    ' · ACU '+u.acuAlign+'/16'+(picks ? ' · '+picks+' MLS pick'+(picks>1?'s':'') : '');
+  const housingFlag = (housing && housing.available === false)
+    ? '<span class="ex-flag w" title="'+esc(housing.note||'')+'">No dorms</span>'
     : (housing && housing.available === 'limited')
-      ? '<span class="housing-warn-chip" title="'+(housing.note||'').replace(/"/g,'&quot;')+'">🏠 Limited housing</span>'
+      ? '<span class="ex-flag w" title="'+esc(housing.note||'')+'">Limited dorms</span>'
       : '';
-  const inSchol=selectedIds.has(u.id);
+  const flags = '<span class="ex-flag'+(u.warm?' y':'')+'">'+(u.warm?'Warm':'Cold')+'</span>'+
+    '<span class="ex-flag'+(u.city?' y':'')+'">'+(u.city?'City':'Town')+'</span>'+housingFlag;
+  const tags = '<span class="ex-badge-slot"></span>'+
+    (u.top ? '<span class="ex-tag ex-t-top">Top pick</span>' : '')+
+    ((u.div==='JUCO' && u.jucoTier==='Elite') ? '<span class="ex-tag ex-t-elite" title="'+esc(u.jucoTierNote||'')+'">Elite JUCO</span>' : '');
+  const inSchol = selectedIds.has(u.id);
 
   el.innerHTML=
-    topBadge+
-    '<div class="card-head2">'+
-      buildEmblemHtml(u, 'card-av-size')+
-      '<div class="card-id">'+
-        '<h3>'+u.full+'</h3>'+
-        '<div class="card-sub">'+
-          '<span class="dbadge d-'+u.div+'" style="font-size:9px;padding:1px 6px">'+u.div+'</span>'+
-          '<span style="color:var(--hint)">'+confShort+'</span>'+
-          (u.njcaaRegion?'<span style="color:var(--hint)" title="'+(u.njcaaRegionArea||'')+'">· '+u.njcaaRegion+'</span>':'')+
-          '<span>📍'+locShort+'</span>'+
-          warmTag+cityTag+eliteJucoChip+housingChip+
-        '</div>'+
-      '</div>'+
+    buildEmblemHtml(u, 'ex-logo')+
+    '<div class="ex-nm"><div class="ex-nm-line"><b title="'+esc(u.full)+'">'+esc(u.name)+'</b>'+tags+'</div>'+
+      '<small>'+sub+'</small></div>'+
+    '<div class="ex-gpa gpa-compact"><b class="gpa-c-val" style="color:'+GPA_ROW_COLOR[gpaStatus]+'">'+GPA_ROW_LABEL[gpaStatus]+'</b>'+
+      '<span title="'+esc(u.gpa ? u.gpa.minEntry : '')+'">'+gpaNeeds+'</span></div>'+
+    '<div class="ex-score" title="'+FIT_TIP+'"><div class="ex-score-v" id="fit-'+u.id+'" style="color:'+fitColor(u.fitOlivier)+'">'+u.fitOlivier+'</div>'+
+      '<div class="ex-score-sub" id="fitsub-'+u.id+'"></div></div>'+
+    '<div class="ex-cost-cell"><span class="ex-cost" title="'+esc(costDisplay(u))+'">'+costShort(u)+'</span><small class="ex-budget-lbl"></small></div>'+
+    '<div class="ex-flags">'+flags+'</div>'+
+    '<div class="ex-acts">'+
+      '<button class="compare-btn ex-mini'+(inSchol?' selected':'')+'" id="cbtn-'+u.id+'" onclick="toggleCompare(\''+u.id+'\',this)">'+(inSchol?'✓ In Compare':'+ Compare')+'</button>'+
+      (isListed ? '<button class="detail-btn ex-mini" disabled>Preview</button>' : '<button class="detail-btn ex-mini p" onclick="openDetail(\''+u.id+'\')">Details</button>')+
     '</div>'+
-    ivyWarn+
-    '<div class="score-strip">'+
-      '<div class="ss-item" data-tip="'+FIT_TIP+'"><div class="ss-val" id="fit-'+u.id+'" style="color:'+fitColor(u.fitOlivier)+'">'+u.fitOlivier+'%</div><div class="ss-lbl">Fit Score</div></div>'+
-      '<div class="ss-item" data-tip="Dev Score: Average of 3 soccer development sub-scores — Tactical, Technical, and Fitness Programming. Reflects how well the program will develop Olivier as a player."><div class="ss-val" style="color:'+(devAvg===null?'var(--hint)':sc(devAvg))+'">'+(devAvg===null?'—':devAvg+'%')+'</div><div class="ss-lbl">Dev Score</div></div>'+
-      '<div class="ss-item" data-tip="'+ACU_TIP+'"><div class="ss-val" id="acu-'+u.id+'" style="color:'+alignColor(u.acuAlign)+';font-size:.95rem">'+u.acuAlign+'/16</div><div class="ss-lbl">ACU Align</div></div>'+
-    '</div>'+
-    '<div class="degree-band">'+
-      '<span class="db-title" title="'+u.degreeTitle+'">'+u.degreeTitle+'</span>'+
-      '<span class="db-align" style="background:'+alignBg+';color:'+alignColor(u.acuAlign)+'">'+alignLabel(u.acuAlign)+'</span>'+
-    '</div>'+
-    '<div class="info-grid2">'+
-      '<div class="ig2-item"><div class="ig2-label">Annual Cost</div><div class="ig2-val" style="color:var(--amber)">'+costDisplay(u)+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Aid Type</div><div class="ig2-val">'+u.aid+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">Pre-PT Path</div><div class="ig2-val" style="color:var(--emerald)">'+u.prePTShort+'</div></div>'+
-      '<div class="ig2-item"><div class="ig2-label">'+(u.proPlayers&&u.proPlayers.nextLevel?'D1 Transfers':'MLS Picks (5yr)')+'</div><div class="ig2-val">'+nlGridDisplay(u)+'</div></div>'+
-      (isListed
-        ? '<div class="ig2-item"><div class="ig2-label">Profile</div><div class="ig2-val" style="color:var(--hint);font-size:10px">Listed — full data pending</div></div>'
-        : '<div class="ig2-item"><div class="ig2-label">Facilities</div><div class="ig2-val"><span class="fac-card-badge fac-'+facRating+'">'+facEmoji+' '+facLabel+'</span></div></div>')+
-      '<div class="ig2-item"><div class="ig2-label">Soccer Level</div><div class="ig2-val" style="font-size:10.5px">'+u.soccerLevelShort+'</div></div>'+
-    '</div>'+
-    gpaHtml+
-    '<div class="conf-strip">'+
-      '<span class="conf-lbl">6yr:</span>'+
-      standingHtml+
-      titlesNote+
-    '</div>'+
-    '<div class="card-footer2">'+
-      '<div class="card-coach">Coach: <strong>'+(getCoach(u.id)?.name||'—')+'</strong></div>'+
-      '<div class="card-btns">'+
-        '<button class="compare-btn'+(inSchol?' selected':'')+'" id="cbtn-'+u.id+'" onclick="toggleCompare(\''+u.id+'\',this)">'+(inSchol?'✓':'+')+' Compare</button>'+
-        (isListed?'<button class="detail-btn listed-btn" disabled>Preview</button>':'<button class="detail-btn" onclick="openDetail(\''+u.id+'\')">Details →</button>')+
-      '</div>'+
-    '</div>';
+    '<div class="ex-rmeta"><span class="ex-cost">'+costShort(u)+'</span>'+
+      '<span class="ex-rm-gpa" style="color:'+GPA_ROW_COLOR[gpaStatus]+'">'+GPA_ROW_SHORT[gpaStatus]+'</span>'+flags+'</div>';
   return el;
 }
 
@@ -1781,14 +1867,30 @@ const SOCIAL = {
 // a real, working favicon that the modal was never trying. Only fall to the
 // Google proxy — and only for the .edu domain, which is far less likely to
 // be broken than the athletics one — as the true last resort before text.
+// Only a large logo is used as the header background; a 16-64px favicon stretched
+// to 250px would show as a blur. SVG logos have no pixel size and are always sharp.
+function modalLogoLoaded(img){
+  const head = img.closest('.modal-head');
+  if(!head) return;
+  const sharp = /\.svg(\?|$)/i.test(img.src) || Math.min(img.naturalWidth, img.naturalHeight) >= 150;
+  if(sharp) head.style.setProperty('--logo', 'url("' + img.src + '")');
+  else head.style.removeProperty('--logo');
+}
 function buildModalHeader(u){
   // Logo / favicon
   const logoEl = document.getElementById('modal-logo');
   const abbrEl = document.getElementById('modal-abbr');
   const iconSrc = iconChain(u)[0] || null;
+  // v46.28: the header carries a light wash of the school's colour, and its logo as a
+  // faint background once that logo has loaded at 150px or more (see modalLogoLoaded).
+  const head = logoEl.closest('.modal-head');
+  if(head){
+    head.style.setProperty('--sch', (u.color || ['#e0e7ff','#4f46e5'])[1]);
+    head.style.removeProperty('--logo');
+  }
   if(iconSrc){
     logoEl.innerHTML = `<img src="${iconSrc}" alt="${u.id}"
-      onerror="iconNext(this,'${u.id}','modal')">
+      onload="modalLogoLoaded(this)" onerror="iconNext(this,'${u.id}','modal')">
       <span id="modal-abbr" style="display:none;font-size:11px;font-weight:700;color:var(--muted)">${(u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3)}</span>`;
   } else {
     abbrEl.textContent = (u.full||u.name).split(' ').map(w=>w[0]).join('').slice(0,3);
@@ -2236,7 +2338,7 @@ function toggleAtarHide() {
   const btn = document.getElementById('atar-hide-btn');
   if (btn) {
     btn.classList.toggle('atar-hide-active', atarHideBelow);
-    btn.textContent = atarHideBelow ? '🚫 Hiding ineligible' : '🚫 Hide ineligible';
+    btn.textContent = atarHideBelow ? 'Hiding ineligible' : 'Hide ineligible';
   }
   refreshAllGpaRows();
   applyFilters();
@@ -2277,15 +2379,16 @@ function refreshAllGpaRows() {
     if (!gpaRowEl) return;
 
     const dynStatus = dynamicGpaStatus(currentAtarGpa, u.gpa.minEntry);
-    const statusColor = dynStatus === 'eligible' ? 'var(--emerald)' : dynStatus === 'borderline' ? 'var(--amber)' : 'var(--rose)';
-    const statusIcon  = dynStatus === 'eligible' ? '✅' : dynStatus === 'borderline' ? '⚠️' : '❌';
-    const isOpen = u.gpa.minEntry.toLowerCase().includes('no minimum') || u.gpa.minEntry.toLowerCase().includes('open');
-    const entryText = isOpen ? 'Open entry ✅' : u.gpa.minEntry + ' ' + statusIcon;
-
     const valEl = gpaRowEl.querySelector('.gpa-c-val');
     if (valEl) {
-      valEl.textContent = entryText;
-      valEl.style.color = statusColor;
+      valEl.textContent = GPA_ROW_LABEL[dynStatus];
+      valEl.style.color = GPA_ROW_COLOR[dynStatus];
+    }
+    // Phone layout repeats the status in the row's second line
+    const rmEl = card.querySelector('.ex-rm-gpa');
+    if (rmEl) {
+      rmEl.textContent = GPA_ROW_SHORT[dynStatus];
+      rmEl.style.color = GPA_ROW_COLOR[dynStatus];
     }
 
     // v17: grey-out class — borderline gets a mild tint, below gets full grey
@@ -2585,6 +2688,8 @@ function applyFilters(){
         show = false;
       }
     }
+    // v46.28: budget slider's "Hide over budget" toggle (direct cost, before scholarships)
+    if (show && budgetHideOver && (+c.dataset.cost || 0) > (exploreBudget || 0)) show = false;
     c.style.display = show ? '' : 'none';
     if(show) visible++;
   });
@@ -2626,6 +2731,7 @@ function applyFilters(){
     if (container) container.appendChild(emptyEl);
   }
   emptyEl.style.display = (visible === 0 && hasAny) ? '' : 'none';
+  refreshExploreIndex();
 }
 
 function clearAllFilters(){
@@ -2636,36 +2742,31 @@ function clearAllFilters(){
   // v17: also reset hide-below toggle
   atarHideBelow = false;
   const hideBtn = document.getElementById('atar-hide-btn');
-  if (hideBtn) { hideBtn.classList.remove('atar-hide-active'); hideBtn.textContent = '🚫 Hide ineligible'; }
-  const container = document.getElementById('cards-container');
-  if(container){
-    container.querySelectorAll('.ucard').forEach(c=>c.style.display='');
-    container.querySelectorAll('.conf-section').forEach(s=>s.style.display='');
-    container.querySelectorAll('.region-subhead').forEach(h=>h.style.display='');
-    const total = container.querySelectorAll('.ucard').length;
-    const el = document.getElementById('filter-active-summary');
-    if(el) el.innerHTML = 'Showing all <strong>'+total+'</strong> schools';
-  }
-  const clearBtn = document.getElementById('filter-clear-btn');
-  if(clearBtn) clearBtn.style.display = 'none';
+  if (hideBtn) { hideBtn.classList.remove('atar-hide-active'); hideBtn.textContent = 'Hide ineligible'; }
+  budgetHideOver = false;
+  const budBtn = document.getElementById('budget-hide-btn');
+  if (budBtn) { budBtn.classList.remove('on'); budBtn.textContent = 'Hide over budget'; }
+  // clearSearch() above already re-ran applyFilters(); run it once more so the
+  // two toggles just reset are reflected in the rows, tiles and counts.
+  applyFilters();
 }
 
 function updateFilterSummary(count){
   const el = document.getElementById('filter-active-summary');
   if(!el) return;
-  const container = document.getElementById('cards-container');
-  const total = container ? container.querySelectorAll('.ucard').length : 0;
-  const activeChips = document.querySelectorAll('.fchip.active');
+  const activeChips = document.querySelectorAll('#filter-panel-body .fchip.active');
+  const badge = document.getElementById('filter-count');
+  if(badge){ badge.hidden = !activeChips.length; badge.textContent = activeChips.length; }
 
   if(activeChips.length === 0 && !searchKeyword){
-    el.innerHTML = 'Showing all <strong>'+total+'</strong> schools';
+    el.innerHTML = '';
     return;
   }
 
   // Build removable tag pills for each active filter
   let html = '<span class="filter-result-count">'+count+' result'+(count!==1?'s':'')+'</span> ';
   activeChips.forEach(chip => {
-    const label = chip.textContent.trim();
+    const label = (chip.querySelector('.fchip-lbl') || chip).textContent.trim();
     const type  = chip.dataset.filter;
     const val   = chip.dataset.val;
     html += `<span class="active-filter-tag">${label}<button class="active-filter-rm" aria-label="Remove ${label} filter" onclick="removeFilter('${type}','${val}',this)">×</button></span>`;
@@ -2685,12 +2786,16 @@ function removeFilter(type, val, btn){
   applyFilters();
 }
 
+// Filters button. On phones the View by and Sort rows live inside the same panel
+// (CSS keys off .filters-open on the toolbar), so the sticky toolbar stays short.
 function toggleFilterPanel(){
   const body = document.getElementById('filter-panel-body');
   const btn  = document.getElementById('filter-toggle-btn');
+  const bar  = document.getElementById('ex-toolbar');
   const isHidden = body.style.display==='none';
   body.style.display = isHidden ? '' : 'none';
-  btn.textContent = isHidden ? '▲ Hide filters' : '▼ Show filters';
+  if(btn) btn.classList.toggle('on', isHidden);
+  if(bar) bar.classList.toggle('filters-open', isHidden);
 }
 
 // Keep backward-compat stubs for any residual calls (coaches filters etc)

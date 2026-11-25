@@ -6,6 +6,29 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.28 (2026-11-25) — Explore redesigned as a conference index with compact rows; saved logos for 212 schools and all conferences
+
+**What:** at the owner's request, after three mockups, the Explore Schools tab was rebuilt. No school data, score or rank changed.
+
+**Explore layout (`js/app.js`, `index.html`):**
+- Conference tiles replace the old wall of cards and the conference filter chips. Each tile shows its school count, the best Fit Score in it, how many schools are in budget and GPA-eligible, and a "★ #1" badge when it holds a division leader under the active lens. Each tile has its conference colour as a top band and the conference logo as a faint tilted background. Clicking a tile opens that conference's section; sections start closed.
+- Schools are compact rows (logo, name, GPA status for the slider, the active lens's score with the standard Fit underneath under other lenses, cost with in/over budget, warm/city/housing flags, Compare, Details). Each section shows 10 rows, stretched to include every badged row, then "Show all". Clicking a row opens Details. The rows keep the old cards' ids and data attributes, so the filter, sort, lens, GPA, Compare and score code runs on them unchanged.
+- A "★ #1 by division" strip above the tiles names each division's leader under the active lens; clicking one opens its section and scrolls to the row.
+- ATAR and a new yearly budget slider (starts at `budgetUSD`, compares direct cost before scholarships, with "Hide over budget") share one dark navy panel matching the Dashboard.
+- A sticky toolbar holds search, Filters and Open all, with View by and Sort on one line. On phones View by and Sort move into the Filters panel.
+- The filter panel is compact: one line per group, a count on each choice (worked out from the rows), and "Clear filters" at the end. New choice: On-campus housing. "Strong ACU (10+)" now reads "(10–13)", which is what it always matched.
+- Junior colleges are no longer grouped by NJCAA region inside their section; the region is on each row.
+
+**Conference logos (`assets/conf-logos/`, `CONF_TILE_STYLE`):** each conference's own logo, read from its official site on 2026-11-25 (Sidearm `/images/logos/site/site.png`; Big Ten, Pac-12 and Mountain West header SVGs, whose white lettering was set to near-black). Division tiles use NCAA (Division II and III), NAIA and NJCAA (through Google's favicon service; njcaa.org blocks Australian traffic). Tile accents are sampled from each logo.
+
+**School logos (`assets/logos/`, 212 of 218 schools):** saved logos of 150–1024px, now first in `iconChain()` (new `localLogoUrl()`, `LOCAL_SVG_LOGOS`), so Explore, the Dashboard and the Details window all use them. Sources: 134 from each athletics site's `site.png`, 14 from school homepages, 45 junior colleges from NJCAA's team list (their own sites show a human-verification check, which was not bypassed), plus West Virginia and Northeast Texas as SVG and Southern Crescent's college logo. Every new logo was checked by eye; 4 wrong ones were rejected and 2 NJCAA name mix-ups corrected. New files were reduced to 256-colour palettes (folder 2.1 MB). Glendale and Jefferson's 96px logos were replaced with 256px ones. The `virginia` and `northflorida` `ICON_OVERRIDES` entries were removed (both now have saved files). Without a saved logo: San José State, Santa Monica, Johnson County, Mohave, Westchester and William Penn; they keep the live icon chain.
+
+**Details window header:** a wash of the school's colour, plus the logo as a faint background when the loaded logo is at least 150px or an SVG (`modalLogoLoaded()`).
+
+**Validation:** `validate_schools.py` PASS (218), `validate_consistency.js` Issues 0, `check_no_jargon.py` PASS, `negtest.py` 39/39 (run on a throwaway clone because it refuses uncommitted files). Browser checks at 1280px and 375px: 218 rows, 212 saved logos loading, all filters (including D1+JUCO = 76 and "#1 by Division" = 6), lens switch, sort, both sliders, search, leaders strip, Show all, Details and Compare, the Dashboard's conference links, no sideways scroll on phones.
+
+---
+
 ### v46.27 (2026-11-25) — Bowling Green State University added (NCAA Division I, Missouri Valley Conference); the Missouri Valley becomes a new conference card
 
 **What:** one school added at the owner's request (`/new-school` with BGSU's university and athletics pages). Not previously in the guide. The guide now has 218 schools and 218 coaches.

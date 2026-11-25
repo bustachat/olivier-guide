@@ -271,6 +271,13 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .modal-overlay.hidden{display:none;}
 .modal{background:var(--surface);border:1px solid var(--border);border-radius:18px;width:100%;max-width:780px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15);}
 .modal-head{border-bottom:1px solid var(--border);background:var(--bg);}
+/* v46.28: school colour wash, and the school logo as a faint tilted background when a large
+   logo has loaded (--logo is set by modalLogoLoaded() in app.js; without it, wash only). */
+.modal-head{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(100deg,#fff 30%,color-mix(in srgb,var(--sch,#4f46e5) 16%,#fff) 100%);}
+.modal-head .mh-banner{background:transparent;}
+.modal-head::after{content:"";position:absolute;z-index:0;right:80px;top:50%;width:250px;height:250px;transform:translateY(-50%) rotate(-8deg);background:var(--logo,none) center/contain no-repeat;opacity:.13;pointer-events:none;}
+.modal-head > *{position:relative;z-index:1;}
+@media(max-width:640px){.modal-head::after{right:-30px;width:190px;height:190px;opacity:.09;}}
 .mh-banner{padding:1.1rem 1.4rem 1rem;display:flex;align-items:center;gap:12px;background:var(--bg);}
 .mh-logo{width:46px;height:46px;border-radius:9px;background:var(--surface);border:1px solid var(--border2);box-shadow:inset 0 0 0 1px rgba(0,0,0,.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}
 .mh-logo img{width:30px;height:30px;object-fit:contain;}
@@ -803,6 +810,198 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
 .app-spinner-ring{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--indigo);border-radius:50%;animation:spin .8s linear infinite}
 .app-spinner-lbl{font-size:13px;color:var(--muted);font-weight:500}
 
+/* ── v46.28: Explore conference index + compact rows ───────────────────── */
+#page-explore .ex-lbl{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--hint);white-space:nowrap;}
+/* Sliders share one dark panel, the same navy as the Dashboard's slider panel */
+#page-explore .ex-sliders{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:.75rem;background:var(--navy);border-radius:14px;overflow:hidden;}
+#page-explore .ex-sl{padding:.75rem 1.1rem .8rem;}
+#page-explore .ex-sl + .ex-sl{border-left:1px solid rgba(255,255,255,.1);}
+#page-explore .ex-sl .ex-lbl{color:rgba(255,255,255,.5);}
+#page-explore .ex-sl-top{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin-bottom:.45rem;}
+#page-explore .ex-readout{font-weight:800;font-size:1.1rem;color:#fff;white-space:nowrap;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:.15rem .6rem;}
+#page-explore .ex-readout small{font-size:11px;font-weight:600;color:rgba(255,255,255,.45);}
+#page-explore #gpa-display{color:#a5b4fc;}
+#page-explore .ex-range{width:100%;-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:rgba(255,255,255,.16);outline:none;cursor:pointer;margin:.45rem 0 .35rem;}
+#page-explore .ex-range::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:#6366f1;cursor:pointer;border:2px solid #fff;box-shadow:0 2px 6px rgba(99,102,241,.6);}
+#page-explore .ex-range::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#6366f1;cursor:pointer;border:2px solid #fff;}
+#page-explore .ex-ticks{display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,.3);}
+#page-explore .ex-sl-foot{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.75);margin-top:.5rem;}
+#page-explore .ex-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;}
+#page-explore .ex-tog{margin-left:auto;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);border-radius:8px;padding:.25rem .6rem;font-family:inherit;font-size:11.5px;font-weight:600;cursor:pointer;color:#fff;}
+#page-explore .ex-tog:hover{background:rgba(255,255,255,.14);}
+#page-explore .ex-tog.on,#page-explore .ex-tog.atar-hide-active{background:#6366f1;border-color:#6366f1;color:#fff;}
+
+#page-explore .ex-toolbar{position:sticky;top:var(--ex-nav-h,58px);z-index:50;background:var(--bg);padding:.55rem 0 .5rem;border-bottom:1px solid var(--border);margin-bottom:.9rem;}
+#page-explore .ex-tb-row{display:flex;gap:.5rem;align-items:center;}
+#page-explore .ex-search{flex:1 1 220px;max-width:none;min-width:0;}
+#page-explore .ex-search input{width:100%;}
+#page-explore .ex-btn{border:1px solid var(--border2);background:var(--surface);border-radius:10px;padding:.45rem .8rem;font-family:inherit;font-size:12.5px;font-weight:600;color:var(--text);cursor:pointer;white-space:nowrap;}
+#page-explore .ex-btn.on{border-color:var(--indigo);color:var(--indigo);background:var(--indigo3);}
+#page-explore .ex-count{background:var(--indigo);color:#fff;border-radius:9px;font-size:10.5px;padding:1px 6px;margin-left:5px;}
+#page-explore .ex-views{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin-top:.5rem;}
+#page-explore .ex-scroll{min-width:0;max-width:100%;overflow-x:auto;scrollbar-width:none;}
+#page-explore .ex-scroll::-webkit-scrollbar{display:none;}
+#page-explore .ex-seg{display:flex;flex-shrink:0;background:var(--surface);border:1px solid var(--border2);border-radius:10px;overflow:hidden;padding:0;box-shadow:none;}
+#page-explore .ex-seg .lens-pill,#page-explore .ex-seg .sort-pill{border:none;border-radius:0;background:none;font-family:inherit;font-size:12.5px;font-weight:500;color:var(--muted);padding:.42rem .7rem;cursor:pointer;white-space:nowrap;box-shadow:none;margin:0;}
+#page-explore .ex-seg .lens-pill:hover,#page-explore .ex-seg .sort-pill:hover{background:var(--surface2);color:var(--text);}
+#page-explore .ex-seg .lens-pill.active,#page-explore .ex-seg .sort-pill.active{background:var(--indigo);color:#fff;font-weight:600;}
+/* Filter panel (compact): each group on one line, its name on the left, small chips */
+#page-explore .ex-drawer{margin-top:.6rem;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.55rem .75rem;}
+#page-explore .ex-fgrid{display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1.25rem;}
+#page-explore .ex-fwide{grid-column:1/-1;}
+#page-explore .ex-fgroup{display:flex;align-items:center;gap:.5rem;min-width:0;}
+#page-explore .ex-fg-lbl{width:74px;flex-shrink:0;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--hint);}
+#page-explore .ex-fg-chips{display:flex;flex-wrap:wrap;gap:.25rem;align-items:center;flex:1;min-width:0;}
+#page-explore .ex-drawer .fchip{display:inline-flex;align-items:center;gap:4px;background:var(--surface);border:1px solid var(--border2);color:var(--text);border-radius:7px;padding:.14rem .5rem;font-size:11.5px;font-weight:500;letter-spacing:0;}
+#page-explore .ex-drawer .fchip:hover{border-color:var(--indigo2);background:var(--indigo3);color:var(--indigo);}
+#page-explore .ex-drawer .fchip.active{background:var(--indigo);border-color:var(--indigo);color:#fff;font-weight:600;}
+#page-explore .ex-drawer .fchip-count{font-size:10px;font-weight:500;color:#b8bcc4;opacity:1;}
+#page-explore .ex-drawer .fchip.active .fchip-count{color:#c7d2fe;}
+#page-explore .ex-clear{margin-left:auto;border:none;background:none;color:var(--indigo);font-family:inherit;font-size:11.5px;font-weight:600;cursor:pointer;padding:0 .2rem;}
+#page-explore .ex-fdot{display:inline-block;width:6px;height:6px;border-radius:50%;}
+#page-explore .ex-active{display:flex;gap:.35rem;flex-wrap:wrap;align-items:center;margin-top:.5rem;font-size:12px;color:var(--muted);}
+#page-explore .ex-active:empty{display:none;}
+
+#page-explore .ex-leaders{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.55rem .75rem;margin-bottom:.9rem;}
+#page-explore .ex-leaders .ex-lbl{margin-right:.25rem;}
+#page-explore .ex-leader{border:1px solid #fcd34d;background:#fffbeb;border-radius:20px;padding:.25rem .65rem;font-family:inherit;font-size:12px;cursor:pointer;color:var(--text);}
+#page-explore .ex-leader:hover{border-color:#f59e0b;}
+#page-explore .ex-leader b{color:#b45309;font-weight:800;margin-right:4px;}
+#page-explore .ex-leader em{font-style:normal;font-weight:800;margin-left:4px;}
+
+#page-explore .ex-idx-head{display:flex;justify-content:space-between;align-items:baseline;gap:.25rem .75rem;flex-wrap:wrap;margin:.25rem 0 .5rem;}
+#page-explore .ex-idx-head h2{font-size:1rem;font-weight:700;color:var(--navy);}
+#page-explore .ex-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.7rem;margin-bottom:1.25rem;}
+#page-explore .ex-tier{grid-column:1/-1;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--hint);margin-top:.35rem;}
+/* Each tile carries its conference's colour (--acc, from CONF_TILE_STYLE) as a top band and a faint wash */
+#page-explore .ex-tile{position:relative;background:linear-gradient(180deg,color-mix(in srgb,var(--acc) 9%,#fff) 0,#fff 62%);border:1px solid var(--border);border-top:4px solid var(--acc);border-radius:14px;padding:.75rem .85rem .75rem;cursor:pointer;text-align:left;font-family:inherit;color:inherit;display:flex;flex-direction:column;gap:.55rem;transition:transform .15s,box-shadow .15s,border-color .15s;}
+#page-explore .ex-tile:hover{transform:translateY(-2px);box-shadow:0 10px 24px color-mix(in srgb,var(--acc) 18%,transparent);}
+#page-explore .ex-tile.open{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc);}
+#page-explore .ex-tile.empty{opacity:.45;}
+#page-explore .ex-tile-top{display:flex;align-items:center;gap:.65rem;min-width:0;}
+/* Conference logo as a faint, slightly tilted watermark on the right of the tile */
+#page-explore .ex-tile{overflow:hidden;isolation:isolate;}
+#page-explore .ex-tile::after{content:"";position:absolute;z-index:-1;right:-14px;top:50%;width:62%;height:120%;transform:translateY(-50%) rotate(-8deg);background:var(--logo) center/contain no-repeat;opacity:.11;filter:saturate(1.2);pointer-events:none;transition:opacity .15s;}
+#page-explore .ex-tile:hover::after{opacity:.18;}
+#page-explore .ex-tile-id{display:flex;flex-direction:column;min-width:0;flex:1;}
+#page-explore .ex-tile-name{font-weight:800;color:var(--navy);font-size:15px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+#page-explore .ex-tile-count{font-size:12px;font-weight:600;color:var(--muted);}
+#page-explore .ex-tile-stars{display:flex;flex-direction:column;gap:3px;align-self:flex-start;}
+#page-explore .ex-tile-best{display:flex;align-items:baseline;gap:.4rem;font-size:12.5px;color:var(--muted);min-width:0;}
+#page-explore .ex-tile-best-lbl{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--hint);white-space:nowrap;}
+#page-explore .ex-tile-best b{font-size:20px;font-weight:800;line-height:1;}
+#page-explore .ex-tile-best-name{font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;}
+#page-explore .ex-tile-stats{display:flex;gap:.35rem;flex-wrap:wrap;}
+#page-explore .ex-pill{font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;background:var(--surface2);color:var(--muted);}
+#page-explore .ex-pill.g{background:var(--emerald3);color:var(--emerald);}
+#page-explore .ex-tile-star{font-size:10.5px;font-weight:800;color:#78350f;background:#fde68a;border:1px solid #fcd34d;border-radius:6px;padding:2px 7px;white-space:nowrap;}
+
+#page-explore .conf-section{margin-bottom:1rem;scroll-margin-top:calc(var(--ex-nav-h,58px) + 150px);}
+#page-explore .conf-section.div-collapsed{display:none;}
+#page-explore #cards-container.ex-searching .conf-section.div-collapsed{display:block;}
+#page-explore .ex-sec-head{display:flex;justify-content:space-between;align-items:center;gap:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:14px 14px 0 0;padding:.65rem .9rem;cursor:pointer;}
+#page-explore .ex-sec-title{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;min-width:0;}
+#page-explore .ex-sec-head h3{font-size:1rem;font-weight:700;color:var(--navy);}
+#page-explore .ex-meta{display:flex;align-items:center;gap:.6rem;font-size:12px;color:var(--muted);white-space:nowrap;}
+#page-explore .ex-sec-head .div-toggle-btn{border:1px solid var(--border2);background:var(--surface);border-radius:8px;padding:.2rem .55rem;font-family:inherit;font-size:11.5px;font-weight:600;color:var(--muted);cursor:pointer;}
+#page-explore .conf-section .section-intro{background:var(--surface);border-left:1px solid var(--border);border-right:1px solid var(--border);padding:.5rem .9rem;margin:0;font-size:12.5px;color:var(--muted);}
+#page-explore .conf-section .section-intro.intro-hidden{display:none;}
+#page-explore .ex-list{background:var(--surface);border:1px solid var(--border);border-top:none;border-radius:0 0 14px 14px;overflow:hidden;}
+#page-explore #cards-container .cards-grid{display:block;margin:0;gap:0;}
+#page-explore .ex-lhead,#page-explore .ucard.erow{display:grid;grid-template-columns:34px minmax(0,1fr) 120px 64px 84px 150px 168px;align-items:center;gap:.6rem;padding:.5rem .9rem;}
+#page-explore .ex-lhead{background:var(--surface2);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--hint);}
+#page-explore .ex-lhead .r{text-align:right;}
+#page-explore .ucard.erow{background:var(--surface);border:none;border-top:1px solid var(--border);border-radius:0;overflow:visible;box-shadow:none;transform:none;cursor:pointer;}
+#page-explore .ucard.erow:hover{background:#fafaf8;transform:none;box-shadow:none;}
+#page-explore .ucard.erow.top-pick{border-color:var(--border);border-width:1px 0 0;}
+#page-explore .ucard.erow.ex-over{display:none !important;}
+#page-explore .ucard.erow.lens-top1{border:none !important;border-top:1px solid var(--border) !important;box-shadow:inset 4px 0 0 #f59e0b !important;background:#fffbeb;}
+#page-explore .ucard.erow.lens-top2{border:none !important;border-top:1px solid var(--border) !important;box-shadow:inset 4px 0 0 #fbbf24 !important;}
+#page-explore .ucard.erow.lens-top3{border:none !important;border-top:1px solid var(--border) !important;box-shadow:inset 4px 0 0 #fcd34d !important;}
+#page-explore .ucard.erow .lens-badge{display:inline-block;width:auto;font-size:10px;letter-spacing:.03em;padding:2px 7px;border-radius:6px;margin-left:5px;vertical-align:1px;color:#78350f;background:#f59e0b;text-transform:none;line-height:1.3;}
+#page-explore .ucard.erow.lens-top2 .lens-badge{background:#fbbf24;}
+#page-explore .ucard.erow.lens-top3 .lens-badge{background:#fcd34d;}
+#page-explore .ex-logo.card-emblem,#page-explore .ex-logo.card-av2{width:32px;height:32px;border-radius:8px;font-size:10px;}
+#page-explore .ex-logo.card-emblem img{width:24px;height:24px;}
+#page-explore .ucard.erow .card-av2{width:32px;height:32px;border-radius:8px;font-size:10px;}
+#page-explore .ex-nm{min-width:0;}
+#page-explore .ex-nm-line{display:flex;align-items:center;min-width:0;}
+#page-explore .ex-nm-line b{font-weight:700;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;}
+#page-explore .ex-nm-line > span{flex-shrink:0;}
+#page-explore .ex-nm small{display:block;color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+#page-explore .ex-tag{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:6px;margin-left:5px;white-space:nowrap;}
+#page-explore .ex-t-top{background:var(--indigo3);color:var(--indigo);}
+#page-explore .ex-t-elite{background:var(--amber3);color:var(--amber);}
+#page-explore .ex-gpa.gpa-compact{display:block;padding:0;border:none;font-size:12px;color:var(--muted);line-height:1.3;}
+#page-explore .ex-gpa b{display:block;font-weight:700;font-size:12px;}
+#page-explore .ex-score{text-align:right;}
+#page-explore .ex-score-v{font-weight:800;font-size:17px;line-height:1.1;}
+#page-explore .ex-bar{display:block;height:4px;border-radius:2px;background:var(--surface3);margin:3px 0 2px auto;overflow:hidden;width:100%;}
+#page-explore .ex-bar i{display:block;height:100%;background:var(--indigo2);}
+#page-explore .ex-fitsub{display:block;font-size:10.5px;font-weight:600;color:var(--hint);}
+#page-explore .ex-cost-cell{text-align:right;}
+#page-explore .ex-cost-cell .ex-cost{display:block;font-weight:600;font-size:13px;}
+#page-explore .ex-budget-lbl{display:block;font-size:10.5px;font-weight:600;color:var(--emerald);}
+#page-explore .ucard.erow:has(.ex-cost.over) .ex-budget-lbl{color:var(--rose);}
+#page-explore .ex-flags{display:flex;gap:4px;justify-content:flex-end;flex-wrap:wrap;}
+#page-explore .ex-flag{font-size:10.5px;font-weight:700;padding:2px 6px;border-radius:6px;background:var(--surface2);color:var(--muted);white-space:nowrap;}
+#page-explore .ex-flag.y{background:var(--emerald3);color:var(--emerald);}
+#page-explore .ex-flag.w{background:var(--rose3);color:var(--rose);}
+#page-explore .ex-acts{display:flex;gap:4px;justify-content:flex-end;}
+#page-explore .ex-mini{white-space:nowrap;border:1px solid var(--border2);background:var(--surface);border-radius:8px;font-family:inherit;font-size:11.5px;font-weight:600;padding:.3rem .55rem;cursor:pointer;color:var(--text);}
+#page-explore .ex-mini.selected{background:var(--indigo3);border-color:var(--indigo);color:var(--indigo);}
+#page-explore .ex-mini.p{background:var(--navy);border-color:var(--navy);color:#fff;}
+#page-explore .ex-mini:disabled{opacity:.5;cursor:default;}
+#page-explore .ex-rmeta{display:none;}
+#page-explore .ex-more{display:block;width:100%;border:none;border-top:1px solid var(--border);background:var(--surface);padding:.65rem;font-family:inherit;font-size:13px;font-weight:600;color:var(--indigo);cursor:pointer;}
+#page-explore .ucard.erow.gpa-borderline{opacity:.72;}
+#page-explore .ucard.erow.gpa-below{opacity:.38;filter:grayscale(.4);}
+#page-explore .ucard.erow.gpa-below:hover,#page-explore .ucard.erow.gpa-borderline:hover{opacity:1;filter:none;}
+
+@media (max-width:860px){
+  #page-explore .ex-sliders{grid-template-columns:1fr;gap:.5rem;}
+  #page-explore .ex-sl{padding:.55rem .8rem;}
+  #page-explore .ex-sl-top{margin-bottom:0;}
+  #page-explore .ex-readout{font-size:1.05rem;}
+  #page-explore .ex-sl-foot{font-size:11.5px;gap:.5rem;margin-top:.25rem;}
+  #page-explore .ex-tog{padding:.2rem .45rem;font-size:11px;}
+  #page-explore .ex-nosm{display:none;}
+  /* Phones: View by and Sort move into the Filters panel so the sticky bar stays short */
+  #page-explore .ex-views{display:none;}
+  #page-explore .ex-toolbar.filters-open .ex-views{display:flex;flex-direction:column;gap:.5rem;}
+  #page-explore .ex-sl + .ex-sl{border-left:none;border-top:1px solid rgba(255,255,255,.1);}
+  #page-explore .ex-fgrid{grid-template-columns:1fr;gap:.4rem;}
+  #page-explore .ex-fgroup{align-items:flex-start;}
+  #page-explore .ex-fg-lbl{width:62px;padding-top:4px;}
+  #page-explore .ex-toolbar.filters-open{max-height:calc(100vh - var(--ex-nav-h,58px));overflow-y:auto;}
+  #page-explore .ex-lhead{display:none;}
+  #page-explore .ucard.erow{grid-template-columns:32px minmax(0,1fr) 50px;grid-template-areas:"logo nm score" "logo rmeta score";row-gap:.15rem;padding:.55rem .75rem;}
+  #page-explore .ucard.erow > .ex-logo{grid-area:logo;align-self:start;}
+  #page-explore .ucard.erow .ex-nm{grid-area:nm;}
+  #page-explore .ucard.erow .ex-score{grid-area:score;}
+  #page-explore .ucard.erow .ex-rmeta{grid-area:rmeta;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted);}
+  #page-explore .ex-rmeta .ex-cost{font-weight:600;color:var(--emerald);}
+  #page-explore .ex-rmeta .ex-cost.over{color:var(--rose);}
+  #page-explore .ex-rm-gpa{font-weight:600;}
+  #page-explore .ucard.erow .ex-gpa,#page-explore .ucard.erow .ex-cost-cell,#page-explore .ucard.erow .ex-flags,#page-explore .ucard.erow .ex-acts{display:none;}
+  /* Long names wrap on phones so the badge and Top pick tag stay readable */
+  #page-explore .ex-nm-line{flex-wrap:wrap;row-gap:2px;}
+  #page-explore .ex-nm-line b{white-space:normal;}
+  #page-explore .ucard.erow .lens-badge,#page-explore .ex-tag{margin-left:0;margin-right:5px;}
+  #page-explore .ex-nm-line b{margin-right:5px;}
+  #page-explore .ex-nm small{white-space:normal;}
+  #page-explore .ex-tiles{grid-template-columns:1fr 1fr;}
+  #page-explore .ex-tile{padding:.6rem .65rem;gap:.45rem;}
+  #page-explore .ex-tile-top{align-items:flex-start;gap:.5rem;}
+  #page-explore .ex-tile::after{width:70%;right:-18px;opacity:.09;}
+  #page-explore .ex-tile-name{font-size:13.5px;white-space:normal;}
+  #page-explore .ex-tile-stars{position:absolute;top:6px;right:6px;}
+  #page-explore .ex-tile-best{flex-wrap:wrap;row-gap:0;}
+  #page-explore .ex-tile-best-lbl{display:none;}
+  #page-explore .ex-tile-best b{font-size:17px;}
+  #page-explore .ex-tile-best-name{white-space:normal;}
+  #page-explore .ex-sec-head{flex-wrap:wrap;}
+}
 </style>
 </head>
 <body>
@@ -862,101 +1061,109 @@ table.ctable td:first-child{font-size:12px;color:var(--muted);font-weight:600;ba
       <div class="ch-p-item"><span class="ch-p-l">AU Degree</span><span class="ch-p-v">BESS ACU (16 units)</span></div>
     </div>
   </div>
-  <div class="atar-panel">
-    <div class="atar-single-row">
-      <div class="atar-title">ATAR → GPA</div>
-      <div class="atar-summary">
-        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#059669"></div><span id="atar-count-eligible">— eligible</span></div>
-        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#d97706"></div><span id="atar-count-borderline">— borderline</span></div>
-        <div class="atar-sum-item"><div class="atar-sum-dot" style="background:#e11d48"></div><span id="atar-count-below">— below min</span></div>
+  <div class="ex-sliders">
+    <div class="ex-sl">
+      <div class="ex-sl-top"><span class="ex-lbl">ATAR → GPA</span><span class="ex-readout"><span id="atar-display">70</span> <small>→</small> <span id="gpa-display">2.8</span> <small>GPA</small></span></div>
+      <input type="range" id="atar-slider" class="ex-range" min="40" max="99" value="70" oninput="onAtarSlide()" aria-label="ATAR">
+      <div class="ex-ticks"><span>40</span><span>50</span><span>60</span><span>70</span><span>80</span><span>90</span><span>99</span></div>
+      <div class="ex-sl-foot">
+        <span><i class="ex-dot" style="background:#059669"></i><span id="atar-count-eligible">— eligible</span></span>
+        <span><i class="ex-dot" style="background:#d97706"></i><span id="atar-count-borderline">— borderline</span></span>
+        <span><i class="ex-dot" style="background:#e11d48"></i><span id="atar-count-below">— below min</span></span>
+        <button class="ex-tog atar-hide-btn" id="atar-hide-btn" onclick="toggleAtarHide()" title="Hide schools where the GPA is below their minimum entry. Top Picks always stay visible.">Hide ineligible</button>
       </div>
-      <div class="atar-slider-wrap" style="flex:1;min-width:0;">
-        <input type="range" id="atar-slider" min="40" max="99" value="70" oninput="onAtarSlide()">
-        <div class="atar-tick-row">
-          <span class="atar-tick">40</span>
-          <span class="atar-tick">50</span>
-          <span class="atar-tick">60</span>
-          <span class="atar-tick">70</span>
-          <span class="atar-tick">80</span>
-          <span class="atar-tick">90</span>
-          <span class="atar-tick">99</span>
+    </div>
+    <div class="ex-sl">
+      <div class="ex-sl-top"><span class="ex-lbl">Yearly budget (USD)</span><span class="ex-readout" id="budget-display"></span></div>
+      <input type="range" id="budget-slider" class="ex-range" min="15000" max="100000" step="1000" value="52000" oninput="onBudgetSlide()" aria-label="Yearly budget in US dollars">
+      <div class="ex-ticks"><span>$15k</span><span>$35k</span><span>$55k</span><span>$75k</span><span>$100k</span></div>
+      <div class="ex-sl-foot">
+        <span><i class="ex-dot" style="background:#059669"></i><span id="budget-count">—</span> within budget<span class="ex-nosm">, before any scholarship</span></span>
+        <button class="ex-tog" id="budget-hide-btn" onclick="toggleBudgetHide()" title="Hide schools whose yearly cost (tuition, room and board, fees) is above the budget.">Hide over budget</button>
+      </div>
+    </div>
+  </div>
+  <div class="ex-toolbar" id="ex-toolbar">
+    <div class="ex-tb-row">
+      <div class="search-schools-wrap ex-search">
+        <input id="search-schools" type="text" placeholder="Search schools…" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-suggest" oninput="onSearchInput(this)" onkeydown="onSearchKey(event)" onfocus="onSearchInput(this)">
+        <button id="search-clear-btn" onclick="clearSearch()" title="Clear search" aria-label="Clear search">✕</button>
+        <div id="search-suggest" class="search-suggest" role="listbox"></div>
+      </div>
+      <button class="ex-btn" id="filter-toggle-btn" onclick="toggleFilterPanel()">Filters<span class="ex-count" id="filter-count" hidden></span></button>
+      <button class="ex-btn" id="open-all-btn" onclick="toggleOpenAll()" title="Open or close every conference">Open all</button>
+    </div>
+    <div class="ex-views">
+      <div class="ex-tb-row ex-scroll"><span class="ex-lbl">View by</span><div class="ex-seg" id="lens-controls"></div></div>
+      <div class="ex-tb-row ex-scroll"><span class="ex-lbl">Sort</span>
+        <div class="ex-seg">
+          <button class="sort-pill active" data-sort="fit" onclick="applySort('fit')">Best Fit</button>
+          <button class="sort-pill" data-sort="cost" onclick="applySort('cost')">Lowest Cost</button>
+          <button class="sort-pill" data-sort="acu" onclick="applySort('acu')">ACU Align</button>
+          <button class="sort-pill" data-sort="mls" onclick="applySort('mls')">MLS Pipeline</button>
         </div>
       </div>
-      <div class="atar-readout">
-        <span class="ar-atar" id="atar-display">70</span>
-        <span class="ar-sep">→</span>
-        <span class="ar-gpa" id="gpa-display">2.8</span>
-        <span class="ar-gpa-label">GPA</span>
-      </div>
-      <button class="atar-hide-btn" id="atar-hide-btn" onclick="toggleAtarHide()" title="Hide schools where your GPA is below minimum entry. Top Picks are always kept visible.">🚫 Hide ineligible</button>
     </div>
+    <div class="ex-drawer" id="filter-panel-body" style="display:none">
+      <div class="ex-fgrid">
+        <div class="ex-fgroup">
+          <div class="ex-fg-lbl">Division</div>
+          <div class="ex-fg-chips">
+            <button class="fchip" data-filter="div" data-val="D1" onclick="toggleFilter(this)"><span class="fchip-lbl">D1</span></button>
+            <button class="fchip" data-filter="div" data-val="D2" onclick="toggleFilter(this)"><span class="fchip-lbl">D2</span></button>
+            <button class="fchip" data-filter="div" data-val="D3" onclick="toggleFilter(this)"><span class="fchip-lbl">D3</span></button>
+            <button class="fchip" data-filter="div" data-val="NAIA" onclick="toggleFilter(this)"><span class="fchip-lbl">NAIA</span></button>
+            <button class="fchip" data-filter="div" data-val="JUCO" onclick="toggleFilter(this)"><span class="fchip-lbl">JUCO</span></button>
+            <button class="fchip" data-filter="div" data-val="IVY" onclick="toggleFilter(this)"><span class="fchip-lbl">Ivy</span></button>
+          </div>
+        </div>
+        <div class="ex-fgroup">
+          <div class="ex-fg-lbl">Fit Score</div>
+          <div class="ex-fg-chips">
+            <button class="fchip" data-filter="fitband" data-val="strong" onclick="toggleFilter(this)"><i class="ex-fdot" style="background:#059669"></i><span class="fchip-lbl">Strong (58+)</span></button>
+            <button class="fchip" data-filter="fitband" data-val="middle" onclick="toggleFilter(this)"><i class="ex-fdot" style="background:#d97706"></i><span class="fchip-lbl">Middle (48–57)</span></button>
+            <button class="fchip" data-filter="fitband" data-val="lower" onclick="toggleFilter(this)"><i class="ex-fdot" style="background:#e11d48"></i><span class="fchip-lbl">Lower (under 48)</span></button>
+          </div>
+        </div>
+        <div class="ex-fgroup">
+          <div class="ex-fg-lbl">Region</div>
+          <div class="ex-fg-chips">
+            <button class="fchip" data-filter="region" data-val="west" onclick="toggleFilter(this)"><span class="fchip-lbl">West</span></button>
+            <button class="fchip" data-filter="region" data-val="east" onclick="toggleFilter(this)"><span class="fchip-lbl">East</span></button>
+            <button class="fchip" data-filter="region" data-val="south" onclick="toggleFilter(this)"><span class="fchip-lbl">Florida</span></button>
+            <button class="fchip" data-filter="region" data-val="texas" onclick="toggleFilter(this)"><span class="fchip-lbl">Texas</span></button>
+            <button class="fchip" data-filter="warm" data-val="true" onclick="toggleFilter(this)"><span class="fchip-lbl">Warm</span></button>
+            <button class="fchip" data-filter="city" data-val="true" onclick="toggleFilter(this)"><span class="fchip-lbl">City</span></button>
+          </div>
+        </div>
+        <div class="ex-fgroup">
+          <div class="ex-fg-lbl">Facilities</div>
+          <div class="ex-fg-chips">
+            <button class="fchip" data-filter="facrating" data-val="elite" onclick="toggleFilter(this)"><span class="fchip-lbl">Elite</span></button>
+            <button class="fchip" data-filter="facrating" data-val="excellent" onclick="toggleFilter(this)"><span class="fchip-lbl">Excellent</span></button>
+            <button class="fchip" data-filter="facrating" data-val="verygood" onclick="toggleFilter(this)"><span class="fchip-lbl">Very Good</span></button>
+            <button class="fchip" data-filter="facrating" data-val="good" onclick="toggleFilter(this)"><span class="fchip-lbl">Good</span></button>
+            <button class="fchip" data-filter="facrating" data-val="solid" onclick="toggleFilter(this)"><span class="fchip-lbl">Solid</span></button>
+          </div>
+        </div>
+        <div class="ex-fgroup ex-fwide">
+          <div class="ex-fg-lbl">Only show</div>
+          <div class="ex-fg-chips">
+            <button class="fchip" data-filter="top" data-val="true" onclick="toggleFilter(this)"><span class="fchip-lbl">★ Top Picks</span></button>
+            <button class="fchip" data-filter="lensdivtop" data-val="true" onclick="toggleFilter(this)"><span class="fchip-lbl">#1 by Division</span></button>
+            <button class="fchip" data-filter="acualign" data-val="full" onclick="toggleFilter(this)"><span class="fchip-lbl">Full ACU (14+)</span></button>
+            <button class="fchip" data-filter="acualign" data-val="strong" onclick="toggleFilter(this)"><span class="fchip-lbl">Strong ACU (10–13)</span></button>
+            <button class="fchip" data-filter="housing" data-val="true" onclick="toggleFilter(this)"><span class="fchip-lbl">On-campus housing</span></button>
+            <button class="filter-clear-btn ex-clear" id="filter-clear-btn" onclick="clearAllFilters()" style="display:none">Clear filters</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ex-active" id="filter-active-summary"></div>
   </div>
-  <div id="lens-controls" class="lens-controls"></div>
-  <div class="filter-panel" id="filter-panel">
-    <div class="filter-panel-header">
-      <span id="filter-active-summary" style="font-size:12px;color:var(--muted)">Loading schools…</span>
-      <div style="display:flex;gap:6px;align-items:center;flex-shrink:0">
-        <button class="filter-clear-btn" id="filter-clear-btn" onclick="clearAllFilters()" style="display:none">✕ Clear filters</button>
-        <button class="filter-toggle-btn" id="filter-toggle-btn" onclick="toggleFilterPanel()">▼ Show filters</button>
-      </div>
-    </div>
-    <div class="filter-panel-body" id="filter-panel-body" style="display:none">
-      <div class="filter-row">
-        <div class="fg-label">Division</div>
-        <button class="fchip" data-filter="div" data-val="D1" onclick="toggleFilter(this)">D1</button>
-        <button class="fchip" data-filter="div" data-val="D2" onclick="toggleFilter(this)">D2</button>
-        <button class="fchip" data-filter="div" data-val="D3" onclick="toggleFilter(this)">D3</button>
-        <button class="fchip" data-filter="div" data-val="NAIA" onclick="toggleFilter(this)">NAIA</button>
-        <button class="fchip" data-filter="div" data-val="JUCO" onclick="toggleFilter(this)">JUCO</button>
-        <button class="fchip" data-filter="div" data-val="IVY" onclick="toggleFilter(this)">Ivy</button>
-      </div>
-      <div class="filter-row">
-        <div class="fg-label">Fit Score</div>
-        <button class="fchip" data-filter="fitband" data-val="strong" onclick="toggleFilter(this)">🟢 Strong (58+)</button>
-        <button class="fchip" data-filter="fitband" data-val="middle" onclick="toggleFilter(this)">🟡 Middle (48–57)</button>
-        <button class="fchip" data-filter="fitband" data-val="lower" onclick="toggleFilter(this)">🔴 Lower (under 48)</button>
-      </div>
-      <div class="filter-row">
-        <div class="fg-label">Region</div>
-        <button class="fchip" data-filter="region" data-val="west" onclick="toggleFilter(this)">🌊 West</button>
-        <button class="fchip" data-filter="region" data-val="east" onclick="toggleFilter(this)">🗽 East</button>
-        <button class="fchip" data-filter="region" data-val="south" onclick="toggleFilter(this)">☀ Florida</button>
-        <button class="fchip" data-filter="region" data-val="texas" onclick="toggleFilter(this)">🤠 Texas</button>
-        <button class="fchip" data-filter="warm" data-val="true" onclick="toggleFilter(this)">☀ Warm</button>
-        <button class="fchip" data-filter="city" data-val="true" onclick="toggleFilter(this)">🏙 City</button>
-      </div>
-      <div class="filter-row">
-        <div class="fg-label">Facilities</div>
-        <button class="fchip" data-filter="facrating" data-val="elite" onclick="toggleFilter(this)">🏆 Elite</button>
-        <button class="fchip" data-filter="facrating" data-val="excellent" onclick="toggleFilter(this)">⭐ Excellent</button>
-        <button class="fchip" data-filter="facrating" data-val="verygood" onclick="toggleFilter(this)">✅ Very Good</button>
-        <button class="fchip" data-filter="facrating" data-val="good" onclick="toggleFilter(this)">👍 Good</button>
-        <button class="fchip" data-filter="facrating" data-val="solid" onclick="toggleFilter(this)">📋 Solid</button>
-      </div>
-      <div class="filter-row">
-        <div class="fg-label">Special</div>
-        <button class="fchip" data-filter="top" data-val="true" onclick="toggleFilter(this)">★ Top Picks</button>
-        <button class="fchip" data-filter="lensdivtop" data-val="true" onclick="toggleFilter(this)">🏅 #1 by Division</button>
-        <button class="fchip" data-filter="acualign" data-val="full" onclick="toggleFilter(this)">🎓 Full ACU (14+)</button>
-        <button class="fchip" data-filter="acualign" data-val="strong" onclick="toggleFilter(this)">🎓 Strong ACU (10+)</button>
-      </div>
-      <div class="filter-row">
-        <div class="fg-label">Conference</div>
-        <div id="conf-filter-chips" style="display:contents"></div>
-      </div>
-    </div>
-  </div>
-  <div class="sort-row" style="display:flex;align-items:center;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap">
-    <span style="font-size:12px;font-weight:600;color:var(--muted)">Sort:</span>
-    <button class="sort-pill active" data-sort="fit" onclick="applySort('fit')">Best Fit</button>
-    <button class="sort-pill" data-sort="cost" onclick="applySort('cost')">Lowest Cost</button>
-    <button class="sort-pill" data-sort="acu" onclick="applySort('acu')">ACU Align</button>
-    <button class="sort-pill" data-sort="mls" onclick="applySort('mls')">MLS Pipeline</button>
-    <div style="margin-left:auto;display:flex;gap:5px">
-      <button class="show-hide-btn" onclick="showAllCards()" title="Expand all conference sections">▼ Show All</button>
-      <button class="show-hide-btn" onclick="hideAllCards()" title="Collapse all conference sections">▲ Hide All</button>
-    </div>
-  </div>
+  <div class="ex-leaders" id="ex-leaders"></div>
+  <div class="ex-idx-head"><h2>Conferences</h2><span class="ex-lbl" id="ex-idx-sum"></span></div>
+  <div class="ex-tiles" id="ex-tiles"></div>
   <div id="cards-container"></div>
 </div>
 

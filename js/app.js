@@ -653,6 +653,7 @@ function renderCards(){
     {key:'pac-12',   label:'Pac-12 Conference',                   tier:'High Major · D1',intro:'The rebuilt Pac-12, which sponsors men\'s soccer again from the 2026 season, with programs across California and the Pacific Northwest.'},
     {key:'mountain-west', label:'Mountain West Conference',       tier:'High Major · D1',intro:'Western Division I programs. The Mountain West added men\'s soccer for the 2026 season.'},
     {key:'sun-belt', label:'Sun Belt Conference',                tier:'Mid-Major · D1', intro:'Programs across the South and Appalachia, including South Carolina and West Virginia, which play men\'s soccer in the Sun Belt although their other sports play in other conferences.'},
+    {key:'mvc',      label:'Missouri Valley Conference',          tier:'Mid-Major · D1', intro:'Midwest Division I programs. Bowling Green and Western Michigan play men\'s soccer in the Missouri Valley although their other sports play in the MAC.'},
     {key:'caa',      label:'CAA — Colonial Athletic Association', tier:'Mid-Major · D1', intro:'Mid-major Division I programs along the East Coast, from New England to the Carolinas.'},
     {key:'asun',     label:'ASUN Conference',                    tier:'Mid-Major · D1', intro:'Mid-major Division I programs across the South and Southeast.'},
     {key:'wcc',      label:'WCC — West Coast Conference',         tier:'Mid-Major · D1', intro:'Mid-major Division I programs mostly in western states. Denver joined for the 2026 season.'},
@@ -1260,6 +1261,7 @@ const DOMAINS = {
   southcarolina:  'gamecocksonline.com',
   olddominion:    'odusports.com',
   westvirginia:   'wvusports.com',
+  bowlinggreen:   'bgsufalcons.com',
   bryant:         'bryantbulldogs.com',
   sandiego:       'usdtoreros.com',
   oregonstate:    'osubeavers.com',
@@ -1480,6 +1482,7 @@ const SITE_URLS = {
   southcarolina:  'https://sc.edu',
   olddominion:    'https://www.odu.edu',
   westvirginia:   'https://www.wvu.edu',
+  bowlinggreen:   'https://www.bgsu.edu',
   bryant:         'https://www.bryant.edu',
   sandiego:       'https://www.sandiego.edu',
   oregonstate:    'https://oregonstate.edu',
@@ -1712,6 +1715,7 @@ const SOCIAL = {
   southcarolina:  ['https://instagram.com/gamecockmsoccer',   'https://twitter.com/GamecockMSoccer', 'https://www.facebook.com/GamecockMSoccer', null],
   olddominion:    [null,                                      'https://twitter.com/ODUMensSoccer',  'https://www.facebook.com/ODUMensSoccer',   null],
   westvirginia:   ['https://instagram.com/wvumenssoccer',     'https://x.com/WVUMensSoccer',        'https://www.facebook.com/WVUMensSoccer',   null],
+  bowlinggreen:   ['https://www.instagram.com/bgsumsoccer',   'https://x.com/BGSUMSoccer',          'https://www.facebook.com/BGMensSoccer',    null],
   bryant:         ['https://instagram.com/BryantMSoc',        'https://x.com/BryantMenSoccer',     'https://www.facebook.com/BryantMSOC/',     null],
   sandiego:       ['https://instagram.com/usdmsoccer',        'https://x.com/USDmsoccer',          'https://www.facebook.com/USDMensSoccer',   null],
   oregonstate:    ['https://instagram.com/beavermsoccer',     'https://x.com/BeaverMSoccer',       'https://www.facebook.com/BeaverMSoccer/',  null],
@@ -2329,6 +2333,7 @@ const CONF_ALIAS_MAP = {
   'wcc': 'wcc', 'west coast': 'wcc',
   'asun': 'asun',
   'sun belt': 'sun-belt',
+  'missouri valley': 'mvc',
   'america east': 'america-east', 'america-east': 'america-east',
   // v44.45: these six were MISSING, so Army, Navy, Delaware, Mercyhurst,
   // U of Charleston and Columbia College fell through to a derived key that no
@@ -2716,6 +2721,7 @@ const CONF_CHIP_LABELS = {
   'pac-12':           'Pac-12',
   'mountain-west':    'Mountain West',
   'sun-belt':         'Sun Belt',
+  'mvc':              'MVC',
   'mac':              'MAC',
   'wcc':              'WCC',
   'asun':             'ASUN',
@@ -2750,7 +2756,7 @@ const CONF_CHIP_LABELS = {
 // Ordered by tier — P4 first, then mid-major D1, Ivy, D2, NAIA, D3, JUCO
 const CONF_CHIP_ORDER = [
   'sec','acc','big-ten','big-east','aac','big-west',
-  'pac-12','mountain-west','sun-belt','caa','mac','wcc','asun','america-east','patriot','summit','nec',
+  'pac-12','mountain-west','sun-belt','mvc','caa','mac','wcc','asun','america-east','patriot','summit','nec',
   'ivy-league',
   'ssc','ccaa','cacc','lsc','gulf-south','mec','ne10','conference-carolinas',
   'sac','sun-conference','amc','whac','haac',
@@ -3900,7 +3906,7 @@ const FCBAR_SHOWN_PER_BRACKET = 6;
 const FIN_CONF_GROUP_LABELS = {
   'acc':'ACC', 'big-ten':'Big Ten', 'big-east':'Big East', 'aac':'AAC', 'big-west':'Big West',
   'caa':'CAA', 'asun':'ASUN', 'pac-12':'Pac-12', 'mountain-west':'Mountain West', 'wcc':'WCC', 'america-east':'America East', 'nec':'NEC',
-  'summit':'Summit', 'patriot':'Patriot', 'sun-belt':'Sun Belt',
+  'summit':'Summit', 'patriot':'Patriot', 'sun-belt':'Sun Belt', 'mvc':'MVC',
   'other-IVY':'Ivy League', 'other-D2':'D2', 'other-NAIA':'NAIA', 'other-D3':'D3', 'other-JUCO':'JUCO',
 };
 function finConfGroupKey(u){ return u.confKey==='other' ? 'other-'+u.div : u.confKey; }

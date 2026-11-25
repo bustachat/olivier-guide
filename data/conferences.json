@@ -1207,5 +1207,44 @@
       "#fef9c3",
       "#a16207"
     ]
+  },
+  {
+    "id": "mvc",
+    "group": "mvc",
+    "name": "Missouri Valley Conference",
+    "abbr": "MVC",
+    "tier": "Mid-Major (D1)",
+    "tierClass": "tier-d1",
+    "prestige": "Midwest mid-major; men's soccer adds Bowling Green and Western Michigan as members for that sport only",
+    "founded": 1907,
+    "teams": 11,
+    "soccerTeams": 7,
+    "soccerTeamsSource": "NCAA member directory, men's soccer, 2026-27 (web3.ncaa.org), checked 2026-11-25; founding year (January 12, 1907) and the 11 full members from mvc-sports.com ('This is The Valley' and members list), checked 2026-11-25",
+    "ncaaTitles": 0,
+    "ncaaTitlesByMember": {},
+    "ncaaTitlesSource": "NCAA.com Division I men's soccer championship history (as recorded in this guide's champions table). Counts titles held by the conference's 2026-27 men's soccer members (NCAA member directory), whichever conference they were in when they won; none of the seven has won one.",
+    "mlsPicksByYear": {
+      "2022": 1,
+      "2023": 4,
+      "2024": 3,
+      "2025": 2,
+      "2026": 2
+    },
+    "mlsPicksSource": "mlssoccer.com SuperDraft trackers 2022-2026, each pick's college matched to its 2026-27 men's soccer conference in the NCAA member directory; checked 2026-11-25",
+    "scholarships": "Up to 9.9 athletic equivalencies — 28 funded roster spots if House opt-in",
+    "maxAid": "9.9",
+    "otherSchools": [
+      "Belmont",
+      "Bradley",
+      "Drake",
+      "Evansville",
+      "UIC",
+      "Western Michigan"
+    ],
+    "desc": "Midwest Division I programs from Illinois, Indiana, Iowa, Michigan, Ohio and Tennessee; Bowling Green and Western Michigan play only men's soccer in the conference.",
+    "color": [
+      "#e0f2fe",
+      "#075985"
+    ]
   }
 ]

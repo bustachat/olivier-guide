@@ -8909,5 +8909,271 @@
       "lifestyle": 100,
       "value": 32
     }
+  },
+  {
+    "id": "bowlinggreen",
+    "profileDepth": "full",
+    "name": "Bowling Green",
+    "full": "Bowling Green State University (Falcons)",
+    "loc": "Bowling Green, OH",
+    "div": "D1",
+    "conf": "Missouri Valley Conference",
+    "confKey": "mvc",
+    "region": "midwest",
+    "warm": false,
+    "city": false,
+    "top": false,
+    "color": [
+      "#ffedd5",
+      "#4f2c1d"
+    ],
+    "kinRank": "Very Strong (Exercise Science B.S.Ed., nationally accredited, with an Exercise Programming or a Sports Medicine specialization: anatomy and physiology, functional anatomy, exercise physiology, biomechanics, exercise testing and prescription, sport conditioning, motor learning, sport psychology and a 12-credit capstone internship)",
+    "degreeTitle": "B.S.Ed. Exercise Science (Exercise Programming or Sports Medicine specialization)",
+    "acuAlign": 12,
+    "acuAlignNote": "BGSU's Exercise Science major is a Bachelor of Science in Education with two specializations, Exercise Programming and Sports Medicine; both share a 46-credit core. Required courses cover 12 of the 16 units: Human Anatomy and Physiology II (BIOL 3320), Structural and Functional Bases of Human Movement, a functional anatomy course (EXSC 2300), Concepts in Biology II (BIOL 2050, required before entry to the major), Exercise Physiology (EXSC 3600), Applied Exercise Physiology (EXSC 3610), Exercise Testing and Prescription for Special Cases (EXSC 4250), Biomechanics of Human Movement (EXSC 3700), Exercise Testing and Prescription (EXSC 4230), Sport Conditioning (EXSC 4290), Foundations of Sport Psychology (SM 3650, or Psychological Aspects of Exercise and Fitness, SM 3660), Motor Learning and Development (EXSC 3450) and Clinical Decision Making and Evidence-Based Practice (EXSC 4190), which covers the critical reading of clinical research. Motor Learning and Development is counted once, as motor learning. There is no separate introductory mechanics course or health psychology course. The Exercise Programming specialization requires an introductory internship and a 12-credit capstone internship (EXSC 3870 and 4890), but the catalog states no hours, so they are not counted. Entry to either specialization needs 45 credits and a 2.75 GPA.",
+    "soccerLevel": "Missouri Valley Conference (men's soccer; the university's other sports play in the MAC); 2026 MVC regular-season co-champions and MVC Tournament champions, NCAA Tournament 2020-21, 2021 and 2026",
+    "soccerLevelShort": "Missouri Valley (MVC)",
+    "fin": {
+      "costNum": 37770,
+      "tuition": 22764,
+      "roomBoard": 14176,
+      "fees": 830,
+      "maxAthletic": 1.0,
+      "maxAcademic": 8000,
+      "aidType": "both",
+      "internationalNote": "BGSU direct billed cost $37,770 (2026-27 entering class, main campus, living on campus): tuition $14,774 plus the non-resident fee $7,990 ($22,764), general fees $730 plus the International Student Service Fee ($50 a semester, $100 a year), and housing $8,160 with food $6,016 ($14,176), from the financial aid office's cost of attendance table and the bursar's 2026-27 fee list. BGSU's international page estimates $39,500 a year (tuition and fees $23,500, a standard room and meal plan $12,500, insurance and books $3,500). Health insurance is required for international students but is left out here, as are books, transport and personal costs, and the one-time International Student Orientation Fee ($100). The Falcon Tuition Guarantee fixes tuition, housing and meal rates for each entering class, so the 2027-28 rates, not yet published, will apply. Academic scholarships for international students (the $4,000 BG Success Scholarship and a $1,000 to $8,000 Freshman Academic Scholarship) need at least a 3.0 GPA, so a 2.8 would not qualify; the athletic scholarship decides affordability."
+    },
+    "aid": "Athletic + Academic",
+    "size": 19600,
+    "prePT": "Very Strong: nationally accredited Exercise Science major with a Sports Medicine specialization built for entry to professional programs such as physical therapy and athletic training, including therapeutic exercise, orthopedic assessment and clinical education",
+    "prePTShort": "Very Strong",
+    "gpa": {
+      "minEntry": "Minimum 2.5 high school GPA (international first-year)",
+      "minSchol": "3.0 GPA for international academic scholarships",
+      "note": "BGSU's international admission requirements list a minimum cumulative high school GPA of 2.5 on a 4.0 scale, so Olivier's 2.8 meets it. Its international academic scholarships start at a 3.0 GPA. Entry to the Exercise Science specializations needs a 2.75 college GPA after 45 credits. The size figure is the university's own 'more than 19,600 students', which includes graduate students and both campuses.",
+      "status": "eligible"
+    },
+    "mapX": 452,
+    "mapY": 156,
+    "confRecord": [
+      {
+        "yr": 2026,
+        "pos": "MVC 5-1-0",
+        "note": "10-7-3 overall: MVC regular-season co-champions and MVC Tournament champions (1-1 against Western Michigan in the final, won 7-6 on penalties), the program's first titles in the MVC; lost 0-4 at Marshall in the NCAA Tournament first round. Picked sixth of seven in the preseason poll."
+      },
+      {
+        "yr": 2025,
+        "pos": "MVC 1-4-2 (7th of 8)",
+        "note": "5-8-4 overall."
+      },
+      {
+        "yr": 2024,
+        "pos": "MVC 4-3-1 (T-3rd of 9)",
+        "note": "12-6-2 overall, unbeaten at home; reached the MVC Tournament final and lost 2-3 in overtime. Two United Soccer Coaches All-Americans."
+      },
+      {
+        "yr": 2023,
+        "pos": "MVC 4-4-0 (4th of 9)",
+        "note": "7-8-3 overall in the first MVC season; lost 1-2 to Northern Illinois in the MVC Tournament quarterfinals."
+      },
+      {
+        "yr": 2022,
+        "pos": "MAC 4-2-2 (3rd of 5)",
+        "note": "6-5-5 overall, the last season of MAC men's soccer."
+      },
+      {
+        "yr": 2021,
+        "pos": "MAC 2-2-2 (4th of 7)",
+        "note": "11-6-3 overall: lost in the MAC Tournament semifinals, then beat Louisville 1-0 in the NCAA Tournament first round and lost 0-2 at Indiana."
+      }
+    ],
+    "titles": [
+      "MVC regular-season co-champions 2026",
+      "MVC Tournament champions 2026",
+      "MAC regular-season champions 2020-21 (played spring 2021)",
+      "NCAA Tournament 2020-21, 2021 and 2026"
+    ],
+    "proPlayers": {
+      "mlsPicks5yr": 3,
+      "notable": [
+        "Joey Akpunonu (No. 22, 2023 MLS SuperDraft, FC Cincinnati; the program's first first-round pick)",
+        "Jacob Erlandson (second round, 2022 MLS SuperDraft, Columbus Crew)",
+        "Trace Terry (third round, 2025 MLS SuperDraft, Seattle Sounders; returned to BGSU and is on the 2026 roster)"
+      ],
+      "draftRank": "3 SuperDraft picks in the last five drafts (2022, 2023, 2025)"
+    },
+    "devScores": {
+      "tactical": 68,
+      "technical": 64,
+      "fitness": 55
+    },
+    "devScoresNote": "5a rubric, training environment only. bgsufalcons.com 2026 roster and staff pages: HC Eric Nichols (18th season, U.S. Soccer A licence, former USISL pro) + 3 assistant coaches (one also recruiting coordinator) + a student director of operations = 4 coaches; an assistant athletic trainer is assigned to men's soccer (shared with baseball). Staff directory: department video services (director and assistant) and sports performance staff, but no strength coach is assigned to men's soccer (the women's team has one). Cochrane Stadium is soccer-only (men and women), 700 permanent seats, about 1,500 with portable bleachers, lights since 2011; two full-size fields plus a small-sided area, and an indoor 90-yard turf room in the Perry Field House. No GPS staff named. Results excluded.",
+    "tags": [
+      "soccer",
+      "acad"
+    ],
+    "facilities": [
+      "Cochrane Stadium (soccer-only, about 1,500 seats, lights, two full-size fields)",
+      "Indoor 90-yard turf room in the Perry Field House",
+      "Accredited Exercise Science B.S.Ed. with a Sports Medicine specialization"
+    ],
+    "courses": [
+      "BIOL 3320: Human Anatomy and Physiology II",
+      "EXSC 2300: Structural and Functional Bases of Human Movement",
+      "EXSC 3600 and 3610: Exercise Physiology; Applied Exercise Physiology",
+      "EXSC 3700: Biomechanics of Human Movement",
+      "EXSC 4230 and 4250: Exercise Testing and Prescription; for Special Cases",
+      "EXSC 4290: Sport Conditioning",
+      "EXSC 4890: Capstone Exercise Science Internship (12 credits)"
+    ],
+    "rec": "Bowling Green is a public university in northwest Ohio whose men's soccer team plays in the Missouri Valley Conference. It is coming off its best season in years: 2026 MVC regular-season co-champions and tournament champions and an NCAA Tournament appearance, under Eric Nichols, head coach since 2009, who holds a U.S. Soccer A licence and has had five players drafted into MLS. The Exercise Science degree covers 12 of the 16 ACU units and has a Sports Medicine specialization aimed at physical therapy and similar programs, and the direct cost (about $37,800 a year) is moderate for Division I. The midfield is open: only five midfielders, three of them seniors who finish before Olivier would arrive. The drawbacks are a cold winter and a small college town rather than a city.",
+    "url": "https://bgsufalcons.com/sports/mens-soccer",
+    "domain": "bgsufalcons.com",
+    "culture": {
+      "vibe": "A large public university of more than 19,600 students in Bowling Green, a college town in northwest Ohio about 25 miles south of Toledo.",
+      "thingsToDo": "Campus life and a small downtown; Toledo is about half an hour away, and Detroit and Cleveland are within a two-hour drive.",
+      "socialScene": "A residential campus with Division I sports, including ice hockey and football. The 2026 men's soccer squad of 26 is mostly from Ohio, Michigan and Illinois, with players from Brazil, Denmark and Senegal.",
+      "olivierMatch": "★★★ Strong on soccer, degree, cost and an open midfield, but a cold climate and a small college town are the opposite of the warm city he wants.",
+      "lifestyleTags": "College town, northwest Ohio, cold winters, MVC champions 2026, Exercise Science B.S.Ed."
+    },
+    "facilityDetails": {
+      "rating": "Good",
+      "stadium": "Men's soccer plays at Mickey Cochrane Stadium on campus, its home since 1966, shared only with the women's team. It has 700 permanent seats and holds about 1,500 with portable bleachers (record crowd 2,133 in 2011), a press box, a scoreboard and lights, first used in 2011. The athletics site does not state the playing surface.",
+      "trainingFields": "Two full-size fields and a small-sided training area at the Cochrane complex.",
+      "strengthConditioning": "The department has a sports performance staff, but none of its listed coaches is assigned to men's soccer.",
+      "sportsScience": "The athletics department has a director and an assistant director of video services; no GPS or sports science staff is named for men's soccer.",
+      "sportsMed": "An assistant athletic trainer is assigned to men's soccer (shared with baseball).",
+      "academicLabs": "Exercise Science includes laboratory and testing courses (exercise physiology, biomechanics, exercise testing) and internships at approved clinical and fitness sites.",
+      "extras": "Winter conditioning uses the Perry Field House, with a 90-yard indoor turf room and a 200-meter track.",
+      "note": "A soccer-only stadium with lights and an indoor turf room; no strength coach is assigned to men's soccer.",
+      "housing": {
+        "available": true,
+        "note": "BGSU has on-campus residence halls; its 2026-27 cost of attendance lists on-campus housing at $8,160 and food at $6,016 for the year."
+      }
+    },
+    "staff": [],
+    "acuUnits": [
+      {
+        "unit": "EXSC142",
+        "covered": true
+      },
+      {
+        "unit": "EXSC222",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC126",
+        "covered": true
+      },
+      {
+        "unit": "EXSC322",
+        "covered": true
+      },
+      {
+        "unit": "EXSC394",
+        "covered": true
+      },
+      {
+        "unit": "EXSC120",
+        "covered": false
+      },
+      {
+        "unit": "EXSC321",
+        "covered": true
+      },
+      {
+        "unit": "EXSC233",
+        "covered": true
+      },
+      {
+        "unit": "EXSC216",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC249",
+        "covered": false
+      },
+      {
+        "unit": "EXSC187",
+        "covered": false
+      },
+      {
+        "unit": "EXSC230",
+        "covered": true
+      },
+      {
+        "unit": "",
+        "covered": true
+      },
+      {
+        "unit": "EXSC388/EXSC389",
+        "covered": false
+      }
+    ],
+    "fitOlivier": 38,
+    "lensScores": {
+      "overall": 38,
+      "soccer": 56,
+      "academic": 79,
+      "minutes": 26,
+      "lifestyle": 0,
+      "value": 34
+    },
+    "minutesOutlook": {
+      "available": true,
+      "mf_total": 5,
+      "roster_season": "2026-27",
+      "cleared_before_2027": 3,
+      "cleared_names": [
+        "Mads Christensen",
+        "Joshua Saavedra",
+        "Aiden Ptacek"
+      ],
+      "rising_senior_2027_count": 0,
+      "rising_senior_2027_names": [],
+      "rising_junior_2027_count": 2,
+      "rising_junior_2027_names": [
+        "Caue Ramos",
+        "Sawyer Wilbanks"
+      ],
+      "recruit_risk": "Low",
+      "recruit_pathway": "Freshman-friendly",
+      "recruit_pathway_note": "Read from BGSU's 2026 roster, which lists each player's last school and previous club. Of the five midfielders, only Joshua Saavedra came from another college (Long Island University); the other four joined from high school or a club, including Mads Christensen from Vejle Boldklub in Denmark and Caue Ramos from Clube Nautico Capibaribe in Brazil. Across the 26-player squad only two players list another college.",
+      "trajectoryNote": "3 of 5 midfielders are seniors who finish before 2027 (Mads Christensen, Joshua Saavedra and Aiden Ptacek). The other two, sophomores Caue Ramos and Sawyer Wilbanks, will be juniors when Olivier arrives, and there are no junior or first-year midfielders, so the group is small and open. The squad of 26 lists 9 forwards and 8 defenders, so the small midfield count partly reflects how BGSU labels its players.",
+      "trajectory": [
+        {
+          "year": 2027,
+          "yr_label": "Yr 1 (Fr.)",
+          "pct": 20,
+          "label": "Bench / development"
+        },
+        {
+          "year": 2028,
+          "yr_label": "Yr 2 (So.)",
+          "pct": 35,
+          "label": "Squad rotation"
+        },
+        {
+          "year": 2029,
+          "yr_label": "Yr 3 (Jr.)",
+          "pct": 60,
+          "label": "Likely starter"
+        },
+        {
+          "year": 2030,
+          "yr_label": "Yr 4 (Sr.)",
+          "pct": 80,
+          "label": "Captain candidate"
+        }
+      ]
+    }
   }
 ]

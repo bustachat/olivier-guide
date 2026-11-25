@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.27 (2026-11-25) — Bowling Green State University added (NCAA Division I, Missouri Valley Conference); the Missouri Valley becomes a new conference card
+
+**What:** one school added at the owner's request (`/new-school` with BGSU's university and athletics pages). Not previously in the guide. The guide now has 218 schools and 218 coaches.
+
+**Bowling Green (Bowling Green, OH; Missouri Valley Conference for men's soccer, MAC for other sports; `data/d1-other.json`, id `bowlinggreen`).** 2026: MVC regular-season co-champions (5-1-0) and MVC Tournament champions (final 1-1 against Western Michigan, won 7-6 on penalties), then lost 0-4 at Marshall in the NCAA first round; 10-7-3 overall. Earlier seasons from the school's schedule pages and coach bio: 2021 MAC 4th of 7 and an NCAA win at Louisville; 2022 MAC 3rd of 5; 2023 MVC 4th of 9; 2024 MVC T-3rd of 9 and an MVC Tournament final; 2025 MVC 7th of 8. Head coach Eric Nichols, at BGSU since 2009 (18th season), U.S. Soccer A licence, former USISL/NPSL professional, two MAC Coach of the Year awards, five MLS draftees (score 71, rank 70; the 148 coaches below moved down one). Degree: Exercise Science, B.S.Ed. (accredited; Exercise Programming or Sports Medicine specialization), 12 of 16 ACU units on required courses; the two internships are not counted because the catalog states no hours. Cost $37,770 direct billed for 2026-27 (tuition $14,774 plus non-resident fee $7,990, fees $730 plus the $100 International Student Service Fee, housing $8,160 and food $6,016); BGSU's own international estimate is $39,500 with insurance and books. Olivier's 2.8 meets the 2.5 international admission minimum but not the 3.0 needed for international academic scholarships. MLS SuperDraft picks 2022-26: 3 (Erlandson 2022, Akpunonu No. 22 in 2023, Terry 2025), added to the Pro Pipeline table. 2026 roster: 26 players, 4 goalkeepers, 5 midfielders; 3 are seniors who finish before August 2027 and 2 return (Low entry competition), but the §14 table gives Yr1 20% / Yr2 35% for that group. Only 2 of the 26 players list another college (`Freshman-friendly`). Fit Score 38 (soccer 56, minutes 26, no warmth, no city).
+
+**New conference: Missouri Valley Conference (`group` and `confKey` `mvc`).** Founded January 12, 1907 (mvc-sports.com); 11 full members; 7 men's soccer programs in 2026-27 (NCAA member directory: Belmont, Bowling Green, Bradley, Drake, Evansville, UIC, Western Michigan); 0 NCAA titles held by current members; 12 MLS SuperDraft picks 2022-26 (from the guide's draft list). New conferences card, prestige row, Explore section, filter chip (`CONF_ALIAS_MAP`, `CONF_CHIP_LABELS`, `CONF_CHIP_ORDER`), `FIN_CONF_GROUP_LABELS`, `CONF_META` in `js/dashboard.js` and the `sectionKeys` set in `validate_consistency.js`. **The prestige row was placed by hand at 12 (after the CAA, before the ASUN); the rows below moved down one.**
+
+**Research notes:**
+- The NCAA member directory API refuses a plain script request; it loads in a real browser.
+- BGSU's catalog is `catalog.bgsu.edu` (Acalog); `catalogs.bgsu.edu` does not resolve. Course descriptions load from `preview_course_nopop.php?catoid=25&coid=…`, using the id in each course link's `showCourse()` call.
+- `bgsu.edu/about/at-a-glance.html` and the old international cost page redirect to an A-Z page; use `financial-aid/cost-of-attendance.html` and `admissions/international/tuition-and-scholarships.html`.
+- Facility details are on `bgsufalcons.com/facilities/x/4` (Cochrane Stadium); the facilities index lists only four venues.
+
+**Validation:** `validate_schools.py` PASS (218), `validate_consistency.js` Issues 0, `check_no_jargon.py` PASS, coach ranking PASS, roster arithmetic and snapshot checks PASS, new-school coverage check PASS. The qa-suite's negative-test step refuses to run on uncommitted files, so it was not run. Local preview: 218 schools, Bowling Green card in a new Missouri Valley section, all nine modal tabs without "undefined"/NaN/null, MVC chip, conference card and ranking row, coach row (rank 70), logo loads from bgsufalcons.com, map dot on land, no new JavaScript errors. Open loose ends are in CLAUDE.md section 6F ("Loose ends from v46.27").
+
+---
+
 ### v46.26 (2026-10-16) — Delta State icon: official primary logo
 
 **What:** at the owner's request, Delta State's card, modal and dashboard icon is now the official primary "STATE" triangle logo instead of the favicon fetched from the athletics site.

@@ -5638,16 +5638,158 @@
    "o72": {
     "school": "Bradley University",
     "site": "www.bradleybraves.com",
-    "base": "/sports/mens-soccer/roster/",
+    "base": "rendered",
     "info": {
-     "2021": "0 (no previous-school field)",
-     "2022": "0 (no previous-school field)",
-     "2023": "0 (no previous-school field)",
-     "2024": "0 (no previous-school field)",
-     "2025": "0 (no previous-school field)"
+     "2021": "29",
+     "2022": "25",
+     "2023": "33",
+     "2024": "32",
+     "2025": "27"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Camden Starzyk",
+      "prev": "Lake St. Louis, Mo. / / Christian Brothers College"
+     },
+     {
+      "season": 2021,
+      "name": "Kaloyan Somov",
+      "prev": "Sofia, Bulgaria / / Brooke House College"
+     },
+     {
+      "season": 2022,
+      "name": "Camden Starzyk",
+      "prev": "Lake St. Louis, Mo. / Christian Brothers College"
+     },
+     {
+      "season": 2022,
+      "name": "Kaloyan Somov",
+      "prev": "Sofia, Bulgaria / Brooke House College"
+     },
+     {
+      "season": 2023,
+      "name": "Charlie Dickerson",
+      "prev": "Norwich, England / Jefferson College"
+     },
+     {
+      "season": 2023,
+      "name": "Elias Benitez Saiz",
+      "prev": "Asunción, Paraguay / Heartland Community College"
+     },
+     {
+      "season": 2023,
+      "name": "Yohance Douglas",
+      "prev": "Ossining, NY / Marist College"
+     },
+     {
+      "season": 2023,
+      "name": "Emilio Madrigal",
+      "prev": "Laredo, TX / Heartland C.C."
+     },
+     {
+      "season": 2023,
+      "name": "Joao Saraiva",
+      "prev": "Setubal, Portugal / Jefferson College"
+     },
+     {
+      "season": 2023,
+      "name": "Caleb Ribeiro",
+      "prev": "Sterling, Massachusetts / Bard College"
+     },
+     {
+      "season": 2023,
+      "name": "Claudel Ngongang",
+      "prev": "Montreal, Quebec / Iowa Western Community College"
+     },
+     {
+      "season": 2023,
+      "name": "Kevin Mejias",
+      "prev": "Fermo, Italy / Indian Hills Community College"
+     },
+     {
+      "season": 2023,
+      "name": "Emilio Madrigal",
+      "prev": "Laredo, TX / Heartland C.C."
+     },
+     {
+      "season": 2024,
+      "name": "Charlie Dickerson",
+      "prev": "Norwich, England / Jefferson College"
+     },
+     {
+      "season": 2024,
+      "name": "Dominic Woolley",
+      "prev": "Loughborough, England / Murray State College"
+     },
+     {
+      "season": 2024,
+      "name": "Elias Benitez Saiz",
+      "prev": "Asunción, Paraguay / Heartland Community College"
+     },
+     {
+      "season": 2024,
+      "name": "Yohance Douglas",
+      "prev": "Ossining, NY / Marist College"
+     },
+     {
+      "season": 2024,
+      "name": "Joao Saraiva",
+      "prev": "Setubal, Portugal / Jefferson College"
+     },
+     {
+      "season": 2024,
+      "name": "Emilio Madrigal",
+      "prev": "Laredo, TX / Heartland C.C."
+     },
+     {
+      "season": 2024,
+      "name": "Jaime Ponce",
+      "prev": "South Sioux City, NE / Salt Lake Community College"
+     },
+     {
+      "season": 2024,
+      "name": "Caleb Ribeiro",
+      "prev": "Sterling, Massachusetts / Bard College"
+     },
+     {
+      "season": 2024,
+      "name": "Claudel Ngongang",
+      "prev": "Montreal, Quebec / Iowa Western Community College"
+     },
+     {
+      "season": 2024,
+      "name": "Kevin Mejias",
+      "prev": "Fermo, Italy / Indian Hills Community College"
+     },
+     {
+      "season": 2025,
+      "name": "Dominic Woolley",
+      "prev": "Loughborough, England / Murray State College"
+     },
+     {
+      "season": 2025,
+      "name": "Stephen Saladin",
+      "prev": "St. Louis, MO / Arizona Western College"
+     },
+     {
+      "season": 2025,
+      "name": "Emilio Madrigal",
+      "prev": "Laredo, TX / Heartland C.C."
+     },
+     {
+      "season": 2025,
+      "name": "Jaime Ponce",
+      "prev": "South Sioux City, NE / Salt Lake Community College"
+     },
+     {
+      "season": 2025,
+      "name": "Kevin Mejias",
+      "prev": "Fermo, Italy / Indian Hills Community College"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o80": {
     "school": "Brown University",
@@ -5893,9 +6035,9 @@
     "site": "gopoly.com",
     "base": "/sports/mens-soccer/roster/",
     "info": {
-     "2021": "0 (no previous-school field)",
-     "2022": "0 (no previous-school field)",
-     "2023": "0 (no previous-school field)",
+     "2021": "44 (second pass, rendered page)",
+     "2022": "44 (second pass, rendered page)",
+     "2023": "31 (second pass, rendered page)",
      "2024": "33",
      "2025": "31"
     },
@@ -5924,6 +6066,66 @@
       "season": 2025,
       "name": "Bakuena Ramakatsa",
       "prev": "Quthing, Lesotho / Lewis & Clark CC (IL)"
+     },
+     {
+      "season": 2021,
+      "name": "Josh Graham (C)",
+      "prev": "Manchester, England / St. Louis Community College"
+     },
+     {
+      "season": 2021,
+      "name": "Christopher Hurleen",
+      "prev": "Oslo, Norway / Norwegian College of Elite Sport"
+     },
+     {
+      "season": 2021,
+      "name": "Seth Murphy",
+      "prev": "Poway, CA / Palomar College"
+     },
+     {
+      "season": 2021,
+      "name": "Jackson Brady",
+      "prev": "Christchurch, New Zealand / Salt Lake City Community College"
+     },
+     {
+      "season": 2021,
+      "name": "Jalen Atkinson",
+      "prev": "Oak Park, CA / Yavapai College"
+     },
+     {
+      "season": 2021,
+      "name": "Max Kleinhammes",
+      "prev": "Aliso Viejo, CA / Irvine Valley College"
+     },
+     {
+      "season": 2022,
+      "name": "Max Kleinhammes",
+      "prev": "Aliso Viejo, CA / Irvine Valley College"
+     },
+     {
+      "season": 2022,
+      "name": "Tony Ruiz",
+      "prev": "Salinas, CA / Hartnell College"
+     },
+     {
+      "season": 2022,
+      "name": "Jalen Atkinson",
+      "prev": "Oak Park, CA / Yavapai College"
+     },
+     {
+      "season": 2022,
+      "name": "Erik Cabrera-Trujillo",
+      "prev": "Marina, CA / Hartnell College"
+     },
+     {
+      "season": 2023,
+      "name": "Tony Ruiz",
+      "prev": "Salinas, CA / Hartnell College"
+     },
+     {
+      "season": 2023,
+      "name": "Andres Rosales",
+      "prev": "Morgan Hill, CA / Evergreen Valley College"
      }
     ],
     "readAt": "2026-11-28"
@@ -6598,7 +6800,7 @@
     "site": "www.calbears.com",
     "base": "/sports/mens-soccer/roster/",
     "info": {
-     "2021": "0 (no previous-school field)",
+     "2021": "28 (no previous-school field) (second pass, rendered page)",
      "2022": "22 (no previous-school field)",
      "2023": "29 (no previous-school field)",
      "2024": "41 (no previous-school field)",
@@ -7259,17 +7461,94 @@
      "err": "no roster path"
     },
     "rows": [],
-    "readAt": "2026-11-28"
+    "readAt": "2026-11-28",
+    "note": "site shows a human-verification page; owner must clear it before it can be read"
    },
    "o128": {
     "school": "University of Central Florida",
     "site": "www.ucfknights.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "27",
+     "2022": "29",
+     "2023": "30",
+     "2024": "27",
+     "2025": "30"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Asher J'n Pierre",
+      "prev": "Bridgetown, Barbados / British College of Gava"
+     },
+     {
+      "season": 2022,
+      "name": "Raphael Crivello",
+      "prev": "Bordeaux, France / College Emile Zola / Pittsburgh"
+     },
+     {
+      "season": 2022,
+      "name": "Timothy Arias",
+      "prev": "Alajuela, Costa Rica / Bri-Bri College"
+     },
+     {
+      "season": 2022,
+      "name": "Oscar Hough",
+      "prev": "Wellington, New Zealand / Wellington College"
+     },
+     {
+      "season": 2022,
+      "name": "Emmanuel Bam",
+      "prev": "Accra, Ghana / Right to Dream Academy / Hartpury College"
+     },
+     {
+      "season": 2023,
+      "name": "Raphael Crivello",
+      "prev": "Bordeaux, France / College Emile Zola / Pittsburgh"
+     },
+     {
+      "season": 2023,
+      "name": "Timothy Arias",
+      "prev": "Alajuela, Costa Rica / Bri-Bri College"
+     },
+     {
+      "season": 2023,
+      "name": "Oscar Hough",
+      "prev": "Wellington, New Zealand / Wellington College"
+     },
+     {
+      "season": 2023,
+      "name": "Emmanuel Bam",
+      "prev": "Accra, Ghana / Right to Dream Academy / Hartpury College"
+     },
+     {
+      "season": 2024,
+      "name": "Timothy Arias",
+      "prev": "Alajuela, Costa Rica / Bri-Bri College"
+     },
+     {
+      "season": 2024,
+      "name": "Sora Funakoshi",
+      "prev": "Nishinomiya Hyogo, Japan / Hotoku Gakuen HS / Cowley College"
+     },
+     {
+      "season": 2024,
+      "name": "Emmanuel Bam",
+      "prev": "Accra, Ghana / Right to Dream Academy / Hartpury College"
+     },
+     {
+      "season": 2025,
+      "name": "Sora Funakoshi",
+      "prev": "Nishinomiya Hyogo, Japan / Hotoku Gakuen HS / Cowley College"
+     },
+     {
+      "season": 2025,
+      "name": "Timothy Arias",
+      "prev": "Alajuela, Costa Rica / Bri-Bri College"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o1014": {
     "school": "College of Charleston (South Carolina)",
@@ -7348,12 +7627,18 @@
    "o147": {
     "school": "Clemson University",
     "site": "clemsontigers.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "no previous-school field (cards show hometown only)",
+     "2022": "same",
+     "2023": "same",
+     "2024": "same",
+     "2025": "same"
     },
     "rows": [],
-    "readAt": "2026-11-28"
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "cards show hometown only, no previous school; seasons not read one by one"
    },
    "o148": {
     "school": "Cleveland State University",
@@ -7577,13 +7862,30 @@
    },
    "o153": {
     "school": "Colgate University",
-    "site": "gocolgateraiders.com",
-    "base": null,
+    "site": "colgateathletics.com",
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "36 (no previous-school field)",
+     "2022": "35 (no previous-school field)",
+     "2023": "34 (no previous-school field)",
+     "2024": "29 (no previous-school field)",
+     "2025": "27 (no previous-school field)"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2025,
+      "name": "22 Evan Danaher",
+      "prev": "San Francisco, Calif. / St. Ignatius College Preparatory / San Francisco, Calif. / St. Ignatius College Preparatory"
+     },
+     {
+      "season": 2021,
+      "name": "00 Nick Gerlach",
+      "prev": "Arlington, Va. / Gonzaga College High School / Arlington, Va. / Gonzaga College High School"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "gocolgateraiders.com no longer serves the athletics site; colgateathletics.com does"
    },
    "o158": {
     "school": "Columbia University-Barnard College",
@@ -7652,12 +7954,74 @@
    "o167": {
     "school": "Cornell University",
     "site": "www.cornellbigred.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "36 (no previous-school field)",
+     "2022": "33",
+     "2023": "33",
+     "2024": "35",
+     "2025": "32"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2025,
+      "name": "4 Fernando Garate",
+      "prev": "Tucson, Ariz. / Salpointe Catholic HS / Pima CC / Tucson, Ariz. / Salpointe Catholic HS / Pima CC"
+     },
+     {
+      "season": 2025,
+      "name": "19 Kasper Wollstein",
+      "prev": "Berlin, Germany / Iowa Lakes CC / Berlin, Germany / Iowa Lakes CC"
+     },
+     {
+      "season": 2024,
+      "name": "15 Jon Snider",
+      "prev": "Reykjavík, Iceland / Commercial College of Iceland / Reykjavík, Iceland / Commercial College of Iceland"
+     },
+     {
+      "season": 2024,
+      "name": "33 Fernando Garate",
+      "prev": "Tucson, Ariz. / Salpointe Catholic HS / Pima CC / Tucson, Ariz. / Salpointe Catholic HS / Pima CC"
+     },
+     {
+      "season": 2023,
+      "name": "15 Lalo Serrano",
+      "prev": "Glendale, Ariz. / Brophy College Preparatory / Glendale, Ariz. / Brophy College Preparatory"
+     },
+     {
+      "season": 2023,
+      "name": "33 Fernando Garate",
+      "prev": "Tucson, Ariz. / Salpointe Catholic HS / Pima CC / Tucson, Ariz. / Salpointe Catholic HS / Pima CC"
+     },
+     {
+      "season": 2023,
+      "name": "36 Jon Snider",
+      "prev": "Reykjavík, Iceland / Commercial College of Iceland / Reykjavík, Iceland / Commercial College of Iceland"
+     },
+     {
+      "season": 2022,
+      "name": "10 Brandon Morales",
+      "prev": "Pharr, Texas / IDEA Toros College Prep / Pharr, Texas / IDEA Toros College Prep"
+     },
+     {
+      "season": 2022,
+      "name": "15 Lalo Serrano",
+      "prev": "Glendale, Ariz. / Brophy College Preparatory / Glendale, Ariz. / Brophy College Preparatory"
+     },
+     {
+      "season": 2021,
+      "name": "15 Lalo Serrano",
+      "prev": "Glendale, Ariz. / Brophy College Preparatory / Glendale, Ariz. / Brophy College Preparatory"
+     },
+     {
+      "season": 2021,
+      "name": "17 Brandon Morales",
+      "prev": "Pharr, Texas / IDEA Toros College Prep / Pharr, Texas / IDEA Toros College Prep"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "seasons at /sports/mens-soccer/roster/YYYY-YY; /roster/YYYY redirects to the current roster"
    },
    "o172": {
     "school": "Dartmouth College",
@@ -7717,16 +8081,48 @@
    "o173": {
     "school": "Davidson College",
     "site": "www.davidsonwildcats.com",
-    "base": "/sports/mens-soccer/roster/",
+    "base": "rendered",
     "info": {
-     "2021": "0 (no previous-school field)",
-     "2022": "0 (no previous-school field)",
-     "2023": "0 (no previous-school field)",
-     "2024": "0 (no previous-school field)",
-     "2025": "0 (no previous-school field)"
+     "2021": "29 (no previous-school field)",
+     "2022": "27 (no previous-school field)",
+     "2023": "27 (no previous-school field)",
+     "2024": "27 (no previous-school field)",
+     "2025": "27 (no previous-school field)"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2025,
+      "name": "Jack Brown",
+      "prev": "Peoria, Ariz. / Brophy College Prep"
+     },
+     {
+      "season": 2021,
+      "name": "Giacomo Piccardo",
+      "prev": "Genova, Italy / Boston College"
+     },
+     {
+      "season": 2022,
+      "name": "Giacomo Piccardo",
+      "prev": "Genova, Italy / Boston College"
+     },
+     {
+      "season": 2022,
+      "name": "Jack Brown",
+      "prev": "Peoria, Ariz. / Brophy College Prep"
+     },
+     {
+      "season": 2023,
+      "name": "Jack Brown",
+      "prev": "Peoria, Ariz. / Brophy College Prep"
+     },
+     {
+      "season": 2024,
+      "name": "Jack Brown",
+      "prev": "Peoria, Ariz. / Brophy College Prep"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o175": {
     "school": "University of Dayton",
@@ -9015,7 +9411,7 @@
      "2021": "42",
      "2022": "62",
      "2023": "29",
-     "2024": "0 (no previous-school field)",
+     "2024": "30 (second pass, rendered page)",
      "2025": "34"
     },
     "rows": [
@@ -9103,6 +9499,26 @@
       "season": 2025,
       "name": "Ryan Tappouras",
       "prev": "Brisbane, Australia / Feather River College"
+     },
+     {
+      "season": 2024,
+      "name": "Ramon Bonzatto",
+      "prev": "Morretes, Brazil / Marshalltown C.C."
+     },
+     {
+      "season": 2024,
+      "name": "Jalen Moore",
+      "prev": "High Point, N.C. / Middle College at UNCG"
+     },
+     {
+      "season": 2024,
+      "name": "Elias Khodri",
+      "prev": "Lyon, France / Northeastern JC"
+     },
+     {
+      "season": 2024,
+      "name": "Caio Hughes",
+      "prev": "Bangor, Wales / Onodaga C.C."
      }
     ],
     "readAt": "2026-11-28"
@@ -9110,16 +9526,83 @@
    "o248": {
     "school": "George Mason University",
     "site": "www.gomason.com",
-    "base": "/sports/mens-soccer/roster/",
+    "base": "rendered",
     "info": {
-     "2021": "0 (no previous-school field)",
-     "2022": "0 (no previous-school field)",
-     "2023": "0 (no previous-school field)",
-     "2024": "0 (no previous-school field)",
-     "2025": "0 (no previous-school field)"
+     "2021": "28 (no previous-school field)",
+     "2022": "33 (no previous-school field)",
+     "2023": "29 (no previous-school field)",
+     "2024": "31 (no previous-school field)",
+     "2025": "27 (no previous-school field)"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Jackson Lee",
+      "prev": "Perth, Australia / Trinity College"
+     },
+     {
+      "season": 2021,
+      "name": "Cameron Revels",
+      "prev": "Clover, S.C. / Wakefield High School (Providence College)"
+     },
+     {
+      "season": 2021,
+      "name": "Henry Wachsman",
+      "prev": "Barrington, Ill. / Barrington Community"
+     },
+     {
+      "season": 2022,
+      "name": "Cameron Revels",
+      "prev": "Clover, S.C. / Wakefield High School (Providence College)"
+     },
+     {
+      "season": 2022,
+      "name": "Henry Wachsman",
+      "prev": "Barrington, Ill. / Barrington Community"
+     },
+     {
+      "season": 2023,
+      "name": "Blake Moness",
+      "prev": "Toronto, Ontario, Canada / (Boston College)"
+     },
+     {
+      "season": 2023,
+      "name": "Gabriel Silveira",
+      "prev": "Concordia, Brazil / Pedro Maciel High School (Monroe College)"
+     },
+     {
+      "season": 2023,
+      "name": "Cameron Revels",
+      "prev": "Clover, S.C. / Wakefield High School (Providence College)"
+     },
+     {
+      "season": 2023,
+      "name": "Souley Diouf",
+      "prev": "Thies, Senegal / Saint Gabriel Thies High School (Otero College)"
+     },
+     {
+      "season": 2023,
+      "name": "Henry Wachsman",
+      "prev": "Barrington, Ill. / Barrington Community"
+     },
+     {
+      "season": 2024,
+      "name": "Blake Moness",
+      "prev": "Toronto, Ontario, Canada / (Boston College)"
+     },
+     {
+      "season": 2024,
+      "name": "Gabriel Silveira",
+      "prev": "Concordia, Brazil / Pedro Maciel High School (Monroe College)"
+     },
+     {
+      "season": 2024,
+      "name": "Henry Wachsman",
+      "prev": "Barrington, Ill. / Barrington Community"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o249": {
     "school": "George Washington University",
@@ -9356,7 +9839,7 @@
     "site": "www.gozags.com",
     "base": "/sports/mens-soccer/roster/",
     "info": {
-     "2021": "0 (no previous-school field)",
+     "2021": "31 (second pass, rendered page)",
      "2022": "30",
      "2023": "32 (no previous-school field)",
      "2024": "32 (no previous-school field)",
@@ -9375,6 +9858,21 @@
      },
      {
       "season": 2022,
+      "name": "Loic Baures",
+      "prev": "Portland, Ore. / Cleveland / Yavapai College"
+     },
+     {
+      "season": 2021,
+      "name": "Leon Sitz",
+      "prev": "Brandenburg, Germany / Links der Weser / Monroe College"
+     },
+     {
+      "season": 2021,
+      "name": "Sebastian Karlholm",
+      "prev": "Uppsala, Sweden / Lundellska Skolan / Butte College"
+     },
+     {
+      "season": 2021,
       "name": "Loic Baures",
       "prev": "Portland, Ore. / Cleveland / Yavapai College"
      }
@@ -10429,12 +10927,59 @@
    "o334": {
     "school": "University of Kentucky",
     "site": "www.ukathletics.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "26",
+     "2022": "24",
+     "2023": "21",
+     "2024": "19",
+     "2025": "26"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2022,
+      "name": "Justin Scharf",
+      "prev": "Newtown, Pa. / Marist College"
+     },
+     {
+      "season": 2023,
+      "name": "Marqes Muir",
+      "prev": "London, England / London Brookes College"
+     },
+     {
+      "season": 2023,
+      "name": "Eoin Martin",
+      "prev": "Mahopac, N.Y. / Lafayette College"
+     },
+     {
+      "season": 2024,
+      "name": "Marqes Muir",
+      "prev": "London, England / London Brookes College"
+     },
+     {
+      "season": 2024,
+      "name": "Iker Carew",
+      "prev": "Skien, Norway / College of Charleston"
+     },
+     {
+      "season": 2024,
+      "name": "Eoin Martin",
+      "prev": "Mahopac, N.Y. / Lafayette College"
+     },
+     {
+      "season": 2025,
+      "name": "Marqes Muir",
+      "prev": "London, England / London Brookes College"
+     },
+     {
+      "season": 2025,
+      "name": "Tiago Honorio Jr.",
+      "prev": "São Paulo, Brazil / Pearl River CC / Zacarias Antônio da Silva"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "seasons at /sports/msoc/roster/season/YYYY/"
    },
    "o340": {
     "school": "La Salle University",
@@ -10706,7 +11251,7 @@
     "site": "www.lipscombsports.com",
     "base": "/sports/mens-soccer/roster/",
     "info": {
-     "2021": "0 (no previous-school field)",
+     "2021": "29 (second pass, rendered page)",
      "2022": "29",
      "2023": "30",
      "2024": "30",
@@ -12256,13 +12801,80 @@
    },
    "o464": {
     "school": "University of Nebraska at Omaha",
-    "site": "www.omavs.com",
-    "base": null,
+    "site": "omavs.com",
+    "base": "/sports/mens-soccer/roster/",
     "info": {
-     "err": "no roster path"
+     "2021": "31",
+     "2022": "27",
+     "2023": "29",
+     "2024": "26",
+     "2025": "28"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Adrian Garcia",
+      "prev": "Barcelona, Spain / IES Front Maritim / Illinois Central College"
+     },
+     {
+      "season": 2021,
+      "name": "Ed Port",
+      "prev": "Reading, England / The Willink School / Genesee Community College"
+     },
+     {
+      "season": 2021,
+      "name": "Hugo Kametani",
+      "prev": "Kashima, Japan / Seiryo / Pima Community College"
+     },
+     {
+      "season": 2021,
+      "name": "Tevin Rochester",
+      "prev": "Owabanks, Jamaica / Jamaica College / Barton Community College"
+     },
+     {
+      "season": 2022,
+      "name": "Tevin Rochester",
+      "prev": "Owabanks, Jamaica / Jamaica College / Barton Community College"
+     },
+     {
+      "season": 2023,
+      "name": "Martin Lago",
+      "prev": "Vigo, Spain / / Davis & Elkins College"
+     },
+     {
+      "season": 2023,
+      "name": "Cillian Heaney",
+      "prev": "Westport, Ireland / / Rice College Westport"
+     },
+     {
+      "season": 2024,
+      "name": "Martin Lago",
+      "prev": "Vigo, Spain / / Davis & Elkins College"
+     },
+     {
+      "season": 2024,
+      "name": "Junior Kone",
+      "prev": "Orleans, Canada / Paul-Desmarais / Siena College"
+     },
+     {
+      "season": 2024,
+      "name": "Maarten Gravekamp",
+      "prev": "Baarn, Netherlands / Oosterlicht College / Olivet Nazarene University"
+     },
+     {
+      "season": 2025,
+      "name": "David Ezerzer",
+      "prev": "San Francisco, Calif. / Virtus the Sixth Form College of Madrid"
+     },
+     {
+      "season": 2025,
+      "name": "Maarten Gravekamp",
+      "prev": "Baarn, Netherlands / Oosterlicht College / Olivet Nazarene University"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "www.omavs.com shows a browser error page; omavs.com works"
    },
    "o465": {
     "school": "University of Nevada, Las Vegas",
@@ -13187,26 +13799,75 @@
    "o509": {
     "school": "Northwestern University",
     "site": "www.nusports.com",
-    "base": "/sports/mens-soccer/roster/season/",
+    "base": "rendered",
     "info": {
-     "2021": "0 (no previous-school field)",
-     "2022": "0 (no previous-school field)",
-     "2023": "0 (no previous-school field)",
-     "2024": "0 (no previous-school field)",
-     "2025": "0 (no previous-school field)"
+     "2021": "28",
+     "2022": "29",
+     "2023": "28",
+     "2024": "28",
+     "2025": "29"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2022,
+      "name": "Christian Garner",
+      "prev": "Boston College / Orleans, Mass. / Brooks School"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o513": {
     "school": "University of Notre Dame",
     "site": "www.fightingirish.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "29",
+     "2022": "29",
+     "2023": "34",
+     "2024": "30",
+     "2025": "26"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Tyler Shea",
+      "prev": "Dallas, TX / Jesuit College Preparatory"
+     },
+     {
+      "season": 2021,
+      "name": "Paddy Burns",
+      "prev": "Crumlin, Northern Ireland / St. Malachy's College"
+     },
+     {
+      "season": 2021,
+      "name": "PJ Bujouves",
+      "prev": "Toronto, ON / Upper Canada College"
+     },
+     {
+      "season": 2021,
+      "name": "Jack Lynn",
+      "prev": "St. Louis, MO / Chaminade College Preparatory"
+     },
+     {
+      "season": 2022,
+      "name": "Paddy Burns",
+      "prev": "Crumlin, Northern Ireland / St. Malachy's College"
+     },
+     {
+      "season": 2022,
+      "name": "PJ Bujouves",
+      "prev": "Toronto, ON / Upper Canada College"
+     },
+     {
+      "season": 2023,
+      "name": "Paddy Burns",
+      "prev": "Crumlin, Northern Ireland / St. Malachy's College"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "seasons at /sports/msoc/roster/season/YYYY-YY"
    },
    "o514": {
     "school": "Oakland University",
@@ -13281,7 +13942,7 @@
      "2021": "29 (no previous-school field)",
      "2022": "27 (no previous-school field)",
      "2023": "28 (no previous-school field)",
-     "2024": "0 (no previous-school field)",
+     "2024": "0 (second pass: rendered page shows no players in a known layout)",
      "2025": "27 (no previous-school field)"
     },
     "rows": [
@@ -13301,12 +13962,83 @@
    "o523": {
     "school": "Old Dominion University",
     "site": "www.odusports.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "14",
+     "2022": "24",
+     "2023": "23",
+     "2024": "29 (no previous-school field)",
+     "2025": "27 (no previous-school field)"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Derek Neidlinger",
+      "prev": "Napa, Cali. / Santa Rosa Junior College"
+     },
+     {
+      "season": 2021,
+      "name": "Karan Mandair",
+      "prev": "Hastings, New Zealand / Lindisfarne College"
+     },
+     {
+      "season": 2022,
+      "name": "Michael Statham",
+      "prev": "Stockport, England / Loughborough College"
+     },
+     {
+      "season": 2022,
+      "name": "Louis Beckett",
+      "prev": "Bridlington, England / Scarborough College"
+     },
+     {
+      "season": 2022,
+      "name": "Karan Mandair",
+      "prev": "Hastings, New Zealand / Lindisfarne College"
+     },
+     {
+      "season": 2023,
+      "name": "Michael Statham",
+      "prev": "Stockport, England / Loughborough College"
+     },
+     {
+      "season": 2023,
+      "name": "Louis Beckett",
+      "prev": "Bridlington, England / Scarborough College"
+     },
+     {
+      "season": 2023,
+      "name": "Karan Mandair",
+      "prev": "Hastings, New Zealand / Lindisfarne College"
+     },
+     {
+      "season": 2024,
+      "name": "#1Michael Statham",
+      "prev": "#1 / Goalkeeper / Third Year / Stockport, England / Loughborough College"
+     },
+     {
+      "season": 2024,
+      "name": "#8Karan Mandair",
+      "prev": "#8 / Midfielder / Graduate Student / Hastings, New Zealand / Lindisfarne College"
+     },
+     {
+      "season": 2024,
+      "name": "#13Nick Osygus",
+      "prev": "#13 / Defender / Redshirt Junior / Wuppertal, Germany / Carl- Fuhlrotty- Gymnasium"
+     },
+     {
+      "season": 2025,
+      "name": "#1Michael Statham",
+      "prev": "#1 / Goalkeeper / Fourth Year / Stockport, England / Loughborough College"
+     },
+     {
+      "season": 2025,
+      "name": "#24Logan Bellina",
+      "prev": "#24 / Goalkeeper / Redshirt Junior / Huntersville, N.C. / Pine Lake Prep / Robert Morris"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o527": {
     "school": "Oral Roberts University",
@@ -13641,12 +14373,33 @@
    "o539": {
     "school": "Pennsylvania State University",
     "site": "goPSUsports.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "25",
+     "2022": "25",
+     "2023": "28",
+     "2024": "27 (no previous-school field)",
+     "2025": "26 (no previous-school field)"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Michael Gaines",
+      "prev": "Oxon Hill, Md. / Gonzaga College Prep"
+     },
+     {
+      "season": 2022,
+      "name": "Michael Gaines",
+      "prev": "Oxon Hill, Md. / Gonzaga College Prep"
+     },
+     {
+      "season": 2023,
+      "name": "Samson Kpardeh",
+      "prev": "Worcester, Mass. / South High Community School"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o545": {
     "school": "University of Pittsburgh",
@@ -14399,12 +15152,28 @@
    "o626": {
     "school": "San Diego State University",
     "site": "goaztecs.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "24",
+     "2022": "30",
+     "2023": "27",
+     "2024": "28",
+     "2025": "27"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "So Nishikawa",
+      "prev": "Melbourne, Australia / Wesley College / Wesley College"
+     },
+     {
+      "season": 2022,
+      "name": "So Nishikawa",
+      "prev": "Melbourne, Australia / Wesley College / Wesley College"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o629": {
     "school": "University of San Francisco",
@@ -14434,12 +15203,138 @@
    "o630": {
     "school": "San Jose State University",
     "site": "www.sjsuspartans.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "29",
+     "2022": "30",
+     "2023": "30",
+     "2024": "31",
+     "2025": "31"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Ryota Nakashima",
+      "prev": "Hiroshima, Japan / Cañada College / Teikyo HS"
+     },
+     {
+      "season": 2021,
+      "name": "Jesse Nieve-Leyva",
+      "prev": "San José, Calif. / Yerba Buena HS / Evergreen Valley College"
+     },
+     {
+      "season": 2022,
+      "name": "Ryota Nakashima",
+      "prev": "Hiroshima, Japan / Cañada College / Teikyo HS"
+     },
+     {
+      "season": 2022,
+      "name": "Isaac Lomeli",
+      "prev": "Seaside, Calif. / Monterey HS / Hartnell Community College"
+     },
+     {
+      "season": 2022,
+      "name": "Andres Maldonado",
+      "prev": "Citrus Heights, Calif. / Bella Vista HS / Folsom Lake College"
+     },
+     {
+      "season": 2022,
+      "name": "Mario Barocio",
+      "prev": "San Jose, Calif. / Bellarmine College Preparatory / Evergreen Valley College"
+     },
+     {
+      "season": 2022,
+      "name": "Diego Delgadillo",
+      "prev": "San Jose, Calif. / Andrew P. Hill HS / De Anza College"
+     },
+     {
+      "season": 2023,
+      "name": "Kaylob Walker",
+      "prev": "Fresno, Calif. / Central HS / Fresno City College"
+     },
+     {
+      "season": 2023,
+      "name": "Marcos Mora",
+      "prev": "Phoenix / Trevor Browne High School / Phoenix College"
+     },
+     {
+      "season": 2023,
+      "name": "Isaac Lomeli",
+      "prev": "Seaside, Calif. / Monterey HS / Hartnell Community College"
+     },
+     {
+      "season": 2023,
+      "name": "Andres Maldonado",
+      "prev": "Citrus Heights, Calif. / Bella Vista HS / Folsom Lake College"
+     },
+     {
+      "season": 2023,
+      "name": "Mario Barocio",
+      "prev": "San Jose, Calif. / Bellarmine College Preparatory / Evergreen Valley College"
+     },
+     {
+      "season": 2023,
+      "name": "Diego Delgadillo",
+      "prev": "San Jose, Calif. / Andrew P. Hill HS / De Anza College"
+     },
+     {
+      "season": 2024,
+      "name": "Dane Pendleton",
+      "prev": "San Jose, Calif. / Prospect HS / Skyline College"
+     },
+     {
+      "season": 2024,
+      "name": "Kaylob Walker",
+      "prev": "Fresno, Calif. / Central HS / Fresno City College"
+     },
+     {
+      "season": 2024,
+      "name": "Erick Villasenor",
+      "prev": "San Jose, Calif. / Gunderson HS / West Valley College"
+     },
+     {
+      "season": 2024,
+      "name": "Javier Lopez",
+      "prev": "Santa Clara, Calif. / Adrian Wilcox HS / Foothill College"
+     },
+     {
+      "season": 2024,
+      "name": "Max Robles",
+      "prev": "Fremont, Calif. / Washington HS / West Valley College"
+     },
+     {
+      "season": 2024,
+      "name": "Julian Escobar",
+      "prev": "San Jose, Calif. / Mount Pleasant HS / De Anza College"
+     },
+     {
+      "season": 2025,
+      "name": "Dane Pendleton",
+      "prev": "San Jose, Calif. / Prospect HS / Skyline College"
+     },
+     {
+      "season": 2025,
+      "name": "Kaylob Walker",
+      "prev": "Fresno, Calif. / Central HS / Fresno City College"
+     },
+     {
+      "season": 2025,
+      "name": "Javier Lopez",
+      "prev": "Santa Clara, Calif. / Adrian Wilcox HS / Foothill College"
+     },
+     {
+      "season": 2025,
+      "name": "Emmanuel Garcia",
+      "prev": "San Jose, Calif. / Bellarmine College Prep"
+     },
+     {
+      "season": 2025,
+      "name": "Jorge Arellano",
+      "prev": "Novato, Calif. / Terra Linda HS / Skyline College"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o631": {
     "school": "Santa Clara University",
@@ -14545,7 +15440,7 @@
      "2022": "33 (no previous-school field)",
      "2023": "30 (no previous-school field)",
      "2024": "31 (no previous-school field)",
-     "2025": "0 (no previous-school field)"
+     "2025": "0 (second pass: rendered page shows no players in a known layout)"
     },
     "rows": [
      {
@@ -14613,12 +15508,69 @@
    "o648": {
     "school": "University of South Carolina, Columbia",
     "site": "gamecocksonline.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "26",
+     "2022": "27",
+     "2023": "25",
+     "2024": "28",
+     "2025": "28"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Innocent Twishime",
+      "prev": "Salt Lake City, Utah / Layton / Salt Lake Community College"
+     },
+     {
+      "season": 2021,
+      "name": "Harrison Myring",
+      "prev": "Leicester, England / Beauchamp College"
+     },
+     {
+      "season": 2022,
+      "name": "Harrison Myring",
+      "prev": "Leicester, England / Beauchamp College"
+     },
+     {
+      "season": 2023,
+      "name": "Jack Burgess",
+      "prev": "Hampton, N.H. / Phillips Exeter Academy / Boston College"
+     },
+     {
+      "season": 2023,
+      "name": "Harrison Myring",
+      "prev": "Leicester, England / Beauchamp College"
+     },
+     {
+      "season": 2024,
+      "name": "Jack Burgess",
+      "prev": "Hampton, N.H. / Phillips Exeter Academy / Boston College"
+     },
+     {
+      "season": 2024,
+      "name": "Alfie Hughes",
+      "prev": "Middlesbrough, England / Boston College"
+     },
+     {
+      "season": 2024,
+      "name": "Ted Cargill",
+      "prev": "London, England / Elthorne Park / Boston College"
+     },
+     {
+      "season": 2024,
+      "name": "Harrison Myring",
+      "prev": "Leicester, England / Beauchamp College"
+     },
+     {
+      "season": 2025,
+      "name": "Ted Cargill",
+      "prev": "London, England / Elthorne Park / Boston College"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "seasons at /sports/msoc/roster/season/YYYY/"
    },
    "o10411": {
     "school": "University of South Carolina Upstate",
@@ -15548,12 +16500,18 @@
    "o674": {
     "school": "Stanford University",
     "site": "gostanford.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "no previous-school field (cards show hometown only)",
+     "2022": "same",
+     "2023": "same",
+     "2024": "same",
+     "2025": "same"
     },
     "rows": [],
-    "readAt": "2026-11-28"
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "cards show hometown only, no previous school; seasons not read one by one"
    },
    "o678": {
     "school": "Stetson University",
@@ -16482,12 +17440,64 @@
    "o746": {
     "school": "University of Virginia",
     "site": "www.virginiasports.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "31",
+     "2022": "36",
+     "2023": "36",
+     "2024": "42",
+     "2025": "30"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Holden Brown",
+      "prev": "Zionsville, Ind. / Zionsville Community"
+     },
+     {
+      "season": 2022,
+      "name": "Holden Brown",
+      "prev": "Zionsville, Ind. / Zionsville Community"
+     },
+     {
+      "season": 2023,
+      "name": "Holden Brown",
+      "prev": "Zionsville, Ind. / Zionsville Community"
+     },
+     {
+      "season": 2024,
+      "name": "Luc Mikula",
+      "prev": "State College, Pa. / Northwood / Coastal Carolina"
+     },
+     {
+      "season": 2024,
+      "name": "Drew Serafino",
+      "prev": "East Longmeadow, Mass. / Suffield Academy / Boston College"
+     },
+     {
+      "season": 2024,
+      "name": "Luke Burns",
+      "prev": "Scottsdale, Ariz. / Brophy College Preparatory"
+     },
+     {
+      "season": 2025,
+      "name": "Luke Burns",
+      "prev": "Scottsdale, Ariz. / Brophy College Preparatory"
+     },
+     {
+      "season": 2025,
+      "name": "Marco Dos Santos",
+      "prev": "Windham, N.H. / Virtual Learning Academy / Boston College"
+     },
+     {
+      "season": 2025,
+      "name": "Drew Serafino",
+      "prev": "East Longmeadow, Mass. / Suffield Academy / Boston College"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "seasons at /sports/msoc/roster/season/YYYY-YY"
    },
    "o740": {
     "school": "Virginia Commonwealth University",
@@ -16566,12 +17576,78 @@
    "o742": {
     "school": "Virginia Polytechnic Institute and State University",
     "site": "www.hokiesports.com",
-    "base": null,
+    "base": "rendered",
     "info": {
-     "err": "no roster path"
+     "2021": "35",
+     "2022": "28",
+     "2023": "32",
+     "2024": "28",
+     "2025": "26"
     },
-    "rows": [],
-    "readAt": "2026-11-28"
+    "rows": [
+     {
+      "season": 2021,
+      "name": "Cameron Joice",
+      "prev": "Newcastle, Australia / Lake Ginninderra Secondary College / Monroe College"
+     },
+     {
+      "season": 2021,
+      "name": "Conor Pugh",
+      "prev": "Dublin, Ireland / St. Michaels College / Coastal Carolina"
+     },
+     {
+      "season": 2021,
+      "name": "Joel Opoku",
+      "prev": "Brampton, Ontario / St. Marguerite d'Youville Secondary School / Casper College"
+     },
+     {
+      "season": 2022,
+      "name": "Cameron Joice",
+      "prev": "Newcastle, Australia / Lake Ginninderra Secondary College / Monroe College"
+     },
+     {
+      "season": 2022,
+      "name": "Ben Fisher",
+      "prev": "Alexandria, Va. / Gonzaga College"
+     },
+     {
+      "season": 2022,
+      "name": "Conor Pugh",
+      "prev": "Dublin, Ireland / St. Michaels College / Coastal Carolina"
+     },
+     {
+      "season": 2023,
+      "name": "Ben Fisher",
+      "prev": "Alexandria, Va. / Gonzaga College"
+     },
+     {
+      "season": 2023,
+      "name": "Conor Pugh",
+      "prev": "Coastal Carolina / Dublin, Ireland / St. Michaels College"
+     },
+     {
+      "season": 2023,
+      "name": "Nick Laffey",
+      "prev": "Germantown, Md. / St. John's College"
+     },
+     {
+      "season": 2024,
+      "name": "Nick Laffey",
+      "prev": "Germantown, Md. / St. John's College"
+     },
+     {
+      "season": 2025,
+      "name": "Amir Ariely",
+      "prev": "Barnsley, England / Barnsley College"
+     },
+     {
+      "season": 2025,
+      "name": "Ethan Page",
+      "prev": "Brentwood, United Kingdom / Ardingly College"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true
    },
    "o749": {
     "school": "Wake Forest University",
@@ -17641,6 +18717,38 @@
      }
     ],
     "readAt": "2026-11-28"
+   },
+   "o416": {
+    "school": "Michigan State University",
+    "site": null,
+    "base": "rendered",
+    "info": {
+     "2021": "4",
+     "2022": "28",
+     "2023": "25",
+     "2024": "28",
+     "2025": "28"
+    },
+    "rows": [
+     {
+      "season": 2023,
+      "name": "Elijah Howe",
+      "prev": "Canberra, Australia / Radford College / West Florida"
+     },
+     {
+      "season": 2022,
+      "name": "Elijah Howe",
+      "prev": "Canberra, Australia / Radford College / West Florida"
+     },
+     {
+      "season": 2022,
+      "name": "Nick Stone",
+      "prev": "Pinckney, Mich. / Pinckney Community High School"
+     }
+    ],
+    "readAt": "2026-11-28",
+    "secondPass": true,
+    "note": "2021 page read only 4 rows; treat 2021 as incomplete"
    }
   }
  }

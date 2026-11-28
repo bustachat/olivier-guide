@@ -1483,6 +1483,20 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
   - **20 programs read 0 players** (`base` null or all 0): Bradley, Central Connecticut, UCF, Clemson, Colgate, Cornell, Davidson, George Mason, Kentucky, Omaha, Northwestern, Notre Dame, Old Dominion, Penn State, San Diego State, San Jose State, South Carolina, Stanford, Virginia, Virginia Tech. Mostly WMT-style sites whose rosters load in the browser. **Omaha matters most**: Iowa Western and Cowley list many moves there.
   - **7 programs read 0 in some seasons**: Cal Poly, Cal, Gardner-Webb, Gonzaga, Lipscomb, Ohio State, Seattle U.
   - 52 programs print no previous-school field in any season. Their hits come from a combined hometown / high school column and will undercount.
+- **Second pass done 2026-11-28 (212 of 213 programs now read; 2,103 raw rows; 331 player-JUCO pairs across 52 JUCOs).** Tool: `d1_roster_render.js` (served at `/render.js`), which reads the rendered page. Layouts it handles: WMT cards, WMT list, an unlabelled list (Old Dominion), tables, Sidearm list items (Bradley), Sidearm cards. Run it only after the players have appeared on the page: poll for them, a fixed wait is not enough. The entries marked `secondPass: true` record any site or address change in `note`.
+- Season addresses differ by site:
+  - `/sports/mens-soccer/roster/season/YYYY` on WMT sites (UCF, Stanford, SDSU, SJSU, Penn State, Old Dominion, Northwestern, Virginia Tech).
+  - `/sports/msoc/roster/season/YYYY-YY` on Virginia and Notre Dame.
+  - `/sports/msoc/roster/season/YYYY/` on Kentucky and South Carolina.
+  - `/roster/YYYY-YY` on Cornell, Cal Poly, Gonzaga, Lipscomb and Gardner-Webb for older seasons. **`/roster/YYYY` silently redirects to the current roster on some of these sites**; the reader flags a page whose title shows a different year.
+- **Site corrections:** Omaha is `omavs.com` (the `www.` host shows an error page). Colgate is `colgateathletics.com`. Clemson and Stanford cards show hometown only, so they cannot show a JUCO transfer.
+- **Still open:**
+  - Central Connecticut shows a human-verification page; the owner must clear it in Chrome before it can be read.
+  - Michigan State 2021 read only 4 rows.
+  - Ohio State 2024 and Seattle U 2025 show no players in any known layout.
+  - Cal 2021's page title has no year.
+- Reader bug fixed during the run: a comma selector picked an empty image link before the player's name, so WMT list rows were all skipped. Pick the name field first.
+- **The sweep undercounts:** Iowa Western has 26 sweep pairs against 37 moves on its own alumni page, because many destinations (UIC among them) print no previous school. Stage 2 must merge the sweep with the page and tracker leads, not replace them.
 - **Open each school's men's soccer roster page** (`https://<site>/sports/mens-soccer/roster`), not the home page, before running the script. The owner asked for this: home pages show basketball splash screens, which made it look as if the wrong sport was being read.
 - **The Chrome connection dropped on batches of three or more** late in the run, and the tab ended on a page Claude may not read. Use one or two sites per call, and save after every few.
 - Nine programs need another method (`base` null or 0 players): Bradley, Central Connecticut, UCF, Clemson, Colgate, Cornell, Davidson, George Mason, Kentucky. Most are WMT-style sites whose rosters load in the browser; read the rendered page instead.

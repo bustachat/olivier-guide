@@ -42,8 +42,9 @@ class H(BaseHTTPRequestHandler):
         if self.path.startswith("/extractor.js"):
             self._send(200, open(os.path.join(HERE, "roster_extractor.js"), encoding="utf-8").read(),
                        "text/javascript; charset=utf-8")
-        elif self.path.startswith("/sweep.js"):  # C1 campaign: Division I roster sweep
-            p = os.path.join(HERE, "..", "..", "transfer-tracking", "scripts", "d1_roster_sweep.js")
+        elif self.path.startswith("/sweep.js") or self.path.startswith("/render.js"):  # C1 campaign
+            name = "d1_roster_sweep.js" if self.path.startswith("/sweep.js") else "d1_roster_render.js"
+            p = os.path.join(HERE, "..", "..", "transfer-tracking", "scripts", name)
             self._send(200, open(p, encoding="utf-8").read(), "text/javascript; charset=utf-8")
         else:
             self._send(200, "<!doctype html><meta charset=utf-8><title>roster receiver</title>"

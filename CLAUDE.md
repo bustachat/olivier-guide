@@ -1000,6 +1000,15 @@ Justified on **staffing and facility limits**, both verifiable per-school from a
 
 ## 5b. nextLevelOutput (v42 — ✅ IMPLEMENTED v42.14)
 
+> **Superseded for the measure itself in v46.30 (campaign C1, §6C).** Every JUCO's `perYear` is now its **confirmed moves straight onto Division I rosters in arrival seasons fall 2021 to fall 2025, divided by its seasons in that window** (programs that started in the window use their own count).
+> - A JUCO with none has a real 0, not the neutral.
+> - `D1_RATE_DIVISOR` stays 5.0594 by owner ruling. Do not re-derive it.
+> - The neutral applies only to a JUCO with no season in the window (NWACC, Southern Crescent Tech).
+> - Each counted player is listed, with his evidence, in `data/juco-d1-transfers-2021-2025.json`. Apply with `.claude/skills/transfer-tracking/scripts/apply_juco_d1_rates.py`.
+> - The window rolls forward each year (2022-2026 next), after the December portal window.
+>
+> The text below records how the v42 long-window method worked: alumni-page traps, the division checks and the seven anchor schools. It is still useful as research method, but its rates and "21 neutral" counts are history.
+
 **Status: shipped v42.14.** `nextLevelFactor()` lives in `js/scores.js` (mirrored in `validate_consistency.js`), gated on `proPlayers.nextLevel` presence — the one-way door: absent ⇒ legacy `min(1, mlsPicks5yr/10)`, present-with-`perYear` ⇒ `min(1, perYear/5.0594)`, present-without ⇒ neutral `0.3773`. All 29 JUCOs populated from the verified table below (7 measured + Phoenix n=1 + 21 neutral) and their `fitOlivier`/`lensScores.overall`/`lensScores.value` cascaded. Glossary Fit-Score prose (index.html ×2) updated "MLS pipeline" → "next-level output". `nextLevel` is stored but **not yet displayed** in any modal/card — the `nextLevelOutput` display block is still a future step. D2/NAIA/D3 keep `mlsPicks5yr` (measured zeros — no `nextLevel` field).
 
 Replaces the `mlsPicks5yr` term inside `soccerQualityScore()`. Measures **does this program move a player up a level** — the thing dev scores were being abused to express.
@@ -1545,7 +1554,19 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
     - Not checked: St. Thomas (MN) (template page), Old Dominion (roster loads in the browser only), and Signorelli at St. Francis Brooklyn, which ended athletics in 2023.
   - **Now: 314 confirmed, 37 lead (unconfirmed, do not count), 2 unresolved, 2 indirect_not_counted, 43 outside_window, 4 not_d1_at_arrival, 9 duplicate.** 50 JUCOs have a confirmed move.
     - Five-year confirmed totals: Iowa Western 35, Salt Lake 26, Tyler 25, Monroe 22, Cowley 20, Pima 12, Indian Hills 11, Arizona Western 10.
-    - Stage 2 is effectively done. **Next is stage 3:** compute rates (confirmed ÷ seasons), recompute the divisor (90th percentile) and show the owner the table before any score moves.
+    - Stage 2 is effectively done.
+- **Stage 3 draft built 2026-11-28; awaiting owner choice. Nothing applied.**
+  - Rates = confirmed ÷ seasons in the window. Programs that started in the window use their own season count:
+    - Mohave 4.
+    - Eastern Arizona, Connors State, Seward County, Texas Southmost, Southern Idaho, Central Georgia Tech and Pacific NW Christian 3.
+    - National Park 2.
+    - NWACC and Southern Crescent Tech 0 seasons: they keep their current scores in the draft and need a ruling.
+  - Fit Scores simulated with the real `js/scores.js` (stored Fit equals scores.js output for all 93 today). Draft and rows are stored in `stage3Draft`; review page: https://claude.ai/artifact/C3g2rYQpreuJk7RPw23odv.
+  - **Benchmark problem found.** The approved 90th percentile across all colleges is only 1.8 a year, because 41 have no confirmed move, so 10 colleges hit the full score and Iowa Western (7.0) scores the same as a college at 1.8. Options shown to the owner:
+    - A: 1.8 (as approved).
+    - B: 2.56 (90th percentile of the 50 with a move; 5 at full score).
+    - C: keep 5.0594 (2 at full score).
+  - Under every option most JUCOs go down, mainly the real-0 ruling: about −4 to −5 Fit for the 41 with none. Indian Hills goes 43 to 52 / 51 / 46.
   - 15 possible indirect moves.
   - 7 destinations not matched to a current D1 program, among them St. Francis Brooklyn, which dropped men's soccer.
   - 79 page or tracker leads to look up on the destination roster one by one.

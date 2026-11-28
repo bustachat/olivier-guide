@@ -62,13 +62,12 @@
       "draftRank": "JUCO — value is pathway program to D1",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Santa Monica doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 1,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "acRank": "Top Transfer College",
@@ -126,7 +125,7 @@
       "technical": 52,
       "fitness": 52
     },
-    "fitOlivier": 51,
+    "fitOlivier": 47,
     "tags": [
       "warm",
       "city",
@@ -147,12 +146,12 @@
     "rec": "THE best JUCO option for Sydney lifestyle match. Santa Monica is the most Sydney-like location in America. Best transfer record to UCLA in California. 2 years to prove GPA and soccer ability, then step up.",
     "url": "https://www.smccorsairs.com/sports/msoc/index",
     "lensScores": {
-      "overall": 51,
-      "soccer": 49,
+      "overall": 47,
+      "soccer": 39,
       "academic": 52,
       "minutes": 58,
       "lifestyle": 100,
-      "value": 51
+      "value": 48
     },
     "minutesOutlook": {
       "available": true,
@@ -305,13 +304,12 @@
       "draftRank": "JUCO — pathway program",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Miami Dade doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "acRank": "Transfer College",
@@ -369,7 +367,7 @@
       "technical": 58,
       "fitness": 50
     },
-    "fitOlivier": 61,
+    "fitOlivier": 56,
     "tags": [
       "warm",
       "city",
@@ -390,12 +388,12 @@
     "rec": "Miami gateway to South Florida 4-year ecosystem. Transfer into Barry for kinesiology degree and pre-PT seminar. Warm city, massive international student body.",
     "url": "https://mdcathletics.com/sports/msoc/index",
     "lensScores": {
-      "overall": 61,
-      "soccer": 50,
+      "overall": 56,
+      "soccer": 39,
       "academic": 42,
       "minutes": 62,
       "lifestyle": 100,
-      "value": 55
+      "value": 52
     },
     "minutesOutlook": {
       "available": true,
@@ -574,13 +572,13 @@
       "draftRank": "JUCO — transfer pathway, not MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 93,
-        "totalCount": null,
-        "yearsCovered": "2004-2026",
-        "years": 23,
-        "perYear": 4.0435,
-        "sourceUrl": "https://goreivers.com/sports/msoc/former",
-        "note": "93 confirmed D1 transfers over 2004–2026 (23 years) works out to about 4.0 per year. Iowa Western's alumni list is longer than Tyler JC's, but it covers nearly twice as many years — the per-year rate gives a fairer comparison than the raw count."
+        "d1Count": 35,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 7.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "35 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing.",
+        "sourceUrl": "https://www.goreivers.com/sports/msoc/former"
       }
     },
     "acRank": "Community College",
@@ -638,7 +636,7 @@
       "technical": 66,
       "fitness": 67
     },
-    "fitOlivier": 61,
+    "fitOlivier": 63,
     "tags": [
       "soccer"
     ],
@@ -657,12 +655,12 @@
     "rec": "Iowa Western CC is the Midwest transfer pathway school — the Council Bluffs/Omaha equivalent of Santa Monica College. Extremely affordable at ~$14k/yr with open admission. Best strategic use: bridge GPA to 2.8+ eligibility floor, gain 2 years of NJCAA D1 soccer film, then transfer to target D1 or D2 program. Cold climate is a significant lifestyle mismatch for a Sydney-raised player. Primary value is financial and eligibility access, not lifestyle fit.",
     "url": "https://www.goreivers.com/sports/msoc/index",
     "lensScores": {
-      "overall": 61,
-      "soccer": 70,
+      "overall": 63,
+      "soccer": 76,
       "academic": 36,
       "minutes": 57,
       "lifestyle": 50,
-      "value": 65
+      "value": 66
     },
     "minutesOutlook": {
       "available": true,
@@ -839,13 +837,12 @@
       "draftRank": "N/A — JUCO pathway program",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "2024 NJCAA DII National Champion. One notable alum, Edouard Nys, transferred to UIC and was picked 40th overall in the 2025 MLS SuperDraft — but that credit officially belongs to UIC, not Northeast. The school doesn't publish an ongoing transfer-destination page, so a year-by-year rate can't be measured."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "acRank": "Community College",
@@ -904,14 +901,14 @@
       "fitness": 46
     },
     "lensScores": {
-      "overall": 42,
-      "soccer": 46,
+      "overall": 38,
+      "soccer": 37,
       "academic": 26,
       "minutes": 58,
       "lifestyle": 0,
-      "value": 52
+      "value": 49
     },
-    "fitOlivier": 42,
+    "fitOlivier": 38,
     "tags": [
       "soccer"
     ],
@@ -1109,13 +1106,12 @@
       "draftRank": "JUCO — confirmed D1 transfer pipeline (4 named transfers 2024-2025) alongside a USL/USL League Two pathway",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 4,
-        "totalCount": 4,
-        "yearsCovered": "2024-2025",
-        "years": 2,
-        "perYear": 2,
-        "sourceUrl": null,
-        "note": "Monroe's own alumni page doesn't list transfer destinations, but 4 recent D1 transfers were confirmed directly on the receiving schools' rosters: Hugo Jinkinson (Missouri State, 2024), Ollie Weir (Wisconsin-Milwaukee, 2025), and Gun Ha Lee and Alejandro Silvestrini (both Xavier, 2025). That's only a 2-year snapshot rather than a full multi-year history, so it's shown as a real rate but treated as less certain than schools with a longer track record."
+        "d1Count": 22,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 4.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "22 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "acRank": "NJCAA Level",
@@ -1174,14 +1170,14 @@
       "fitness": 52
     },
     "lensScores": {
-      "overall": 57,
-      "soccer": 52,
+      "overall": 63,
+      "soccer": 66,
       "academic": 47,
       "minutes": 66,
       "lifestyle": 50,
-      "value": 47
+      "value": 50
     },
-    "fitOlivier": 57,
+    "fitOlivier": 63,
     "tags": [
       "soccer",
       "city"
@@ -1399,13 +1395,13 @@
       "draftRank": "JUCO level — 4-year university transfer pathway",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 15,
-        "totalCount": null,
-        "yearsCovered": "2008-2024",
-        "years": 17,
-        "perYear": 0.8824,
-        "sourceUrl": "https://indianhillsathletics.com/sports/msoc/alums/index",
-        "note": "The program's own alumni page lists 24 “NCAA Division I” transfer destinations, but checking each one against the official NCAA directory shows only 15 are actually D1 — Eastern New Mexico, for example, is listed as D1 ten times but actually competes in D2's Lone Star Conference. Using the verified count, Indian Hills sends players to D1 programs at a rate of about 0.88 per year over 2008–2024, notably lower than its dev score (the highest of any JUCO in this guide) alone would suggest."
+        "d1Count": 11,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 2.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "11 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing.",
+        "sourceUrl": "https://www.indianhillsathletics.com/sports/msoc/alums/index"
       }
     },
     "acRank": "NJCAA Level",
@@ -1440,7 +1436,7 @@
       "vibe": "Indian Hills is a small community college in Ottumwa, a river city of ~25,000 in southeast Iowa. The men's soccer program is the flagship of Indian Hills athletics after winning the 2025 NJCAA DI National Championship in Newton's second season, then the 2026 ICCAC DI regular-season title. Tight-knit, competitive squad culture with a highly international roster.",
       "thingsToDo": "Ottumwa is rural Iowa — limited urban amenities. Des Moines is 90 minutes away for city visits. Campus life centres on athletics. Outdoor activities along the Des Moines River. This is a performance-focused environment, not a lifestyle destination.",
       "socialScene": "Small campus, tight international soccer community. The 2026-27 roster includes players from Australia, England, France, Italy, Spain, Portugal, Denmark, Sweden, Slovakia, Brazil, Chile, Ecuador, Japan, Singapore and Guadeloupe, alongside Americans. Soccer is the dominant sport on campus.",
-      "olivierMatch": "★★ Lifestyle mismatch — cold, rural Iowa is the opposite of Sydney. A strong, nationally ranked team; its record of moving players on to Division I has been modest so far. A results-first soccer choice.",
+      "olivierMatch": "★★ Lifestyle mismatch — cold, rural Iowa is the opposite of Sydney. A strong, nationally ranked team that sent 11 players straight to Division I in 2021–2025. A results-first soccer choice.",
       "lifestyleTags": "Rural, Midwest, Champions culture, Transfer platform, International squad"
     },
     "facilityDetails": {
@@ -1456,21 +1452,21 @@
       "sportsMed": "Athletic training department led by Head Athletic Trainer Laura Goehring (licensed and NATA board-certified, dry needling and blood flow restriction certified), with three full-time assistant athletic trainers. The four trainers cover all 19 Indian Hills sports across the Ottumwa and Centerville campuses, providing daily practice and home-game coverage and return-to-play guidance.",
       "academicLabs": "Associate degree programs in science, health, and transfer pathways. Biology and anatomy prerequisites available for DPT transfer route.",
       "extras": "2025 NJCAA DI National Champions. 2026 ICCAC DI regular-season champions, with Newton named ICCAC DI Coach of the Year. 11 players committed to 4-year universities after 2024-25. First-ever No. 1 national ranking held 5 consecutive weeks. United Soccer Coaches Midwest Region Staff of the Year (Newton, 2024).",
-      "note": "Indian Hills is a results-first choice: a nationally ranked team and a national-championship culture in a rural setting. The training environment is modest (two soccer coaches, shared athletic trainers, no strength-and-conditioning staff), and its record of moving players on to Division I has been about 0.9 a year."
+      "note": "Indian Hills is a results-first choice: a nationally ranked team and a national-championship culture in a rural setting. The training environment is modest (two soccer coaches, shared athletic trainers, no strength-and-conditioning staff), and it sent 11 players straight to Division I rosters in 2021–2025, about 2.2 a year."
     },
     "devScores": {
       "tactical": 54,
       "technical": 56,
       "fitness": 50
     },
-    "fitOlivier": 43,
+    "fitOlivier": 46,
     "lensScores": {
-      "overall": 43,
-      "soccer": 43,
+      "overall": 46,
+      "soccer": 51,
       "academic": 31,
       "minutes": 55,
       "lifestyle": 0,
-      "value": 55
+      "value": 56
     },
     "tags": [
       "juco",
@@ -1480,7 +1476,7 @@
     ],
     "facilities": [],
     "courses": [],
-    "rec": "2025 NJCAA DI National Champions under Zac Newton, followed by the 2026 ICCAC DI regular-season title and Newton's ICCAC Coach of the Year award. Three Australians are on the 2026-27 roster (Sean Suzuki, Tristan Auffret, Luke McFarlane), all freshmen. A results-first choice: a strong, nationally ranked team, but a modest training environment (two soccer coaches, athletic trainers shared across 19 sports, no strength-and-conditioning staff) and a historical Division I transfer rate of about 0.9 players a year. Rural Iowa is a lifestyle sacrifice.",
+    "rec": "2025 NJCAA DI National Champions under Zac Newton, followed by the 2026 ICCAC DI regular-season title and Newton's ICCAC Coach of the Year award. Three Australians are on the 2026-27 roster (Sean Suzuki, Tristan Auffret, Luke McFarlane), all freshmen. A results-first choice: a strong, nationally ranked team, but a modest training environment (two soccer coaches, athletic trainers shared across 19 sports, no strength-and-conditioning staff) and 11 confirmed moves straight to Division I rosters in 2021–2025, about 2.2 a year. Rural Iowa is a lifestyle sacrifice.",
     "url": "https://www.indianhillsathletics.com/sports/msoc/index",
     "domain": "indianhills.edu",
     "minutesOutlook": {
@@ -1671,7 +1667,7 @@
         "covered": false
       }
     ],
-    "soccerLevel": "NJCAA Division I — Highest Measured D1 Transfer Rate in the Guide",
+    "soccerLevel": "NJCAA Division I — 25 moves to Division I, 2021–2025",
     "soccerLevelShort": "NJCAA Division I",
     "aid": "Athletic Grants + Need",
     "fundingPathway": "full",
@@ -1717,7 +1713,7 @@
     ],
     "facilities": [],
     "courses": [],
-    "rec": "6x NJCAA National Champions (2009, 2010, 2012, 2014, 2016, 2017), with the highest measured NCAA Division I transfer rate of any JUCO in this guide (about 6.6 a year, 2012-2023). 100+ players have signed professional contracts, 10 MLS draftees. Tyler, TX is warm East Texas (~105k) with low cost of living. Pure pathway play: ~$22k/yr before aid, then transfer to D1/D2 on Clements' national network.",
+    "rec": "6x NJCAA National Champions (2009, 2010, 2012, 2014, 2016, 2017), with 25 confirmed moves straight to Division I rosters in 2021–2025 (5 a year), the third most of any JUCO in this guide. 100+ players have signed professional contracts, 10 MLS draftees. Tyler, TX is warm East Texas (~105k) with low cost of living. Pure pathway play: ~$22k/yr before aid, then transfer to D1/D2 on Clements' national network.",
     "url": "https://apacheathletics.com/sports/msoc/index",
     "mapX": 337,
     "mapY": 258,
@@ -1771,7 +1767,7 @@
       "sportsScience": "Basic JUCO level. Coaching relationships and transfer network are the primary value drivers at TJC.",
       "sportsMed": "TJC Athletic Trainer on staff. UT Health Tyler and CHRISTUS Trinity Mother Frances provide local sports medicine access.",
       "academicLabs": "Associate degree science prerequisites: biology, chemistry, anatomy. Transfer-ready coursework aligned to Exercise Science and Kinesiology at Texas D1 universities.",
-      "extras": "Tyler, TX is a city of ~105k in East Texas — warm year-round, affordable, with the CHRISTUS Trinity Mother Frances Rose Stadium (Tyler Roughnecks FC). With the highest measured D1 transfer rate of any JUCO in this guide, TJC coaches have established pipelines to programs across every major conference.",
+      "extras": "Tyler, TX is a city of ~105k in East Texas — warm year-round, affordable, with the CHRISTUS Trinity Mother Frances Rose Stadium (Tyler Roughnecks FC). With 25 moves to Division I in 2021–2025, TJC coaches have established pipelines to programs across every major conference.",
       "note": "TJC value is its transfer network — the deepest D1 pipeline in JUCO soccer. Facilities are functional JUCO standard. The differentiator is coaching relationships: TJC coaches have direct contacts at D1 programs that have accepted Apache transfers year after year."
     },
     "culture": {
@@ -1816,7 +1812,7 @@
     "titles": [
       "2023 NJCAA Division I National Runner-Up — lost the final to Monroe on penalties",
       "NJCAA Division I National Champions: 2009, 2010, 2012, 2014, 2016, 2017 (6 titles)",
-      "Highest measured NCAA Division I transfer rate of any JUCO in this guide (about 6.6 a year, 2012-2023)",
+      "25 confirmed moves straight to Division I rosters in 2021–2025, the third most of any JUCO in this guide",
       "100+ professional contracts, 10 MLS draftees under Coach Clements",
       "2 2025 NJCAA All-Americans (Ljubo Popovic, Joe Pollard)"
     ],
@@ -1824,18 +1820,18 @@
       "mlsPicks5yr": 0,
       "draftRank": "JUCO level — D1 transfer pipeline is the primary metric",
       "notable": [
-        "Highest measured NCAA Division I transfer rate of any JUCO in this guide (about 6.6 a year, 2012-2023)",
+        "25 confirmed moves straight to Division I rosters in 2021–2025, the third most of any JUCO in this guide",
         "Alumni transferred to D1 programs across all major conferences"
       ],
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 79,
-        "totalCount": null,
-        "yearsCovered": "2012-2023",
-        "years": 12,
-        "perYear": 6.5833,
-        "sourceUrl": "https://apacheathletics.com/sports/msoc/Sites/Mens_Soccer_Next_Level",
-        "note": "79 confirmed D1 transfers over 2012–2023 (12 years) — about 6.6 per year, the strongest D1 transfer rate of any JUCO in this guide. The school's own list mixes players who went to D1, D2, D3, and NAIA programs without labeling which is which; only confirmed D1 men's soccer destinations are counted here."
+        "d1Count": 25,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 5.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "25 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing.",
+        "sourceUrl": "https://web.archive.org/web/20241103100757/https://www.apacheathletics.com/sports/msoc/Sites/Mens_Soccer_Next_Level"
       }
     },
     "juco2yr": true,
@@ -1962,10 +1958,10 @@
       "technical": 54,
       "fitness": 48
     },
-    "fitOlivier": 61,
+    "fitOlivier": 60,
     "lensScores": {
-      "overall": 61,
-      "soccer": 49,
+      "overall": 60,
+      "soccer": 46,
       "academic": 15,
       "minutes": 56,
       "lifestyle": 100,
@@ -2086,13 +2082,12 @@
       ],
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "2025 NJCAA DI National Champions — but the program doesn't publish a page tracking where players transfer next. One confirmed D1 transfer was found: Carlos Zambrano, who moved to Syracuse for the 2024 season. That's not enough to calculate a reliable year-by-year rate."
+        "d1Count": 7,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "7 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "juco2yr": true,
@@ -2265,13 +2260,12 @@
       "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Barton's alumni page is just a submission form for former players to fill out — it doesn't publish any actual transfer destinations, so this can't be measured."
+        "d1Count": 8,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "8 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -2282,7 +2276,7 @@
     "fitOlivier": 48,
     "lensScores": {
       "overall": 48,
-      "soccer": 50,
+      "soccer": 48,
       "academic": 15,
       "minutes": 64,
       "lifestyle": 0,
@@ -2529,13 +2523,13 @@
       "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 25,
-        "totalCount": null,
-        "yearsCovered": "2017-18 to 2023-24",
-        "years": 7,
-        "perYear": 3.5714,
-        "sourceUrl": "https://cowleytigers.com/sports/msoc/alumni",
-        "note": "25 confirmed D1 transfers over the last 7 seasons — about 3.6 per year."
+        "d1Count": 20,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 4.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "20 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing.",
+        "sourceUrl": "https://www.cowleytigers.com/sports/msoc/alumni"
       }
     },
     "devScores": {
@@ -2543,14 +2537,14 @@
       "technical": 54,
       "fitness": 48
     },
-    "fitOlivier": 50,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 50,
-      "soccer": 58,
+      "overall": 51,
+      "soccer": 61,
       "academic": 26,
       "minutes": 58,
       "lifestyle": 0,
-      "value": 53
+      "value": 54
     },
     "tags": [
       "soccer"
@@ -2787,13 +2781,13 @@
       "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 15,
-        "totalCount": null,
-        "yearsCovered": "2003-2023",
-        "years": 21,
-        "perYear": 0.7143,
-        "sourceUrl": "https://awcmatadors.com/sports/msoc/MSOC_Moving_On",
-        "note": "The program's alumni page lists 25 “NCAA Division I” destinations, but several of those schools — Arizona, Arizona State, Northern Arizona, Southern Utah, and New Mexico State — don't actually field a men's soccer team at all (their D1 status is for other sports). Counting only real men's soccer destinations, the true rate is 15 transfers over 21 years, about 0.71 per year."
+        "d1Count": 10,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 2.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "10 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing.",
+        "sourceUrl": "https://www.awcmatadors.com/sports/msoc/MSOC_Moving_On"
       }
     },
     "devScores": {
@@ -2801,14 +2795,14 @@
       "technical": 56,
       "fitness": 48
     },
-    "fitOlivier": 56,
+    "fitOlivier": 59,
     "lensScores": {
-      "overall": 56,
-      "soccer": 44,
+      "overall": 59,
+      "soccer": 51,
       "academic": 26,
       "minutes": 59,
       "lifestyle": 50,
-      "value": 61
+      "value": 63
     },
     "tags": [
       "warm",
@@ -3051,13 +3045,12 @@
       "draftRank": "JUCO — confirmed D1 transfer pipeline (3 named 2025 transfers verified, program claims 13 total that year), not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 3,
-        "totalCount": 3,
-        "yearsCovered": "2025",
-        "years": 1,
-        "perYear": 3,
-        "sourceUrl": null,
-        "note": "EFSC doesn't publish a page tracking individual transfer destinations, though the school has publicly claimed 13 transfers in 2025 without naming them. Three 2025 transfers were independently confirmed on the receiving schools' own rosters: Achermann-Stanfield (Tulsa), Emmanuel (SMU), and McCoy (South Florida) — likely an undercount of the school's real total, since only one season's worth of data could be verified."
+        "d1Count": 7,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "7 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -3065,14 +3058,14 @@
       "technical": 66,
       "fitness": 48
     },
-    "fitOlivier": 61,
+    "fitOlivier": 57,
     "lensScores": {
-      "overall": 61,
-      "soccer": 59,
+      "overall": 57,
+      "soccer": 50,
       "academic": 15,
       "minutes": 54,
       "lifestyle": 50,
-      "value": 59
+      "value": 57
     },
     "tags": [
       "warm",
@@ -3308,13 +3301,12 @@
       "draftRank": "JUCO — nationally elite D1/D2 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 3,
-        "totalCount": null,
-        "yearsCovered": "2024-25",
-        "years": 1,
-        "perYear": 3,
-        "sourceUrl": "https://d2o2figo6ddd0g.cloudfront.net/p/q/rwrkzf3a0lwf0k/moving_on.pdf",
-        "note": "Phoenix College publishes one school-wide 'Athletes Moving On' document covering the 2024-25 year, which lists 3 men's soccer players who moved on to D1 programs. That's only one year of data, so it's shown here as an indicator rather than a confirmed long-term rate."
+        "d1Count": 6,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "6 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -3322,14 +3314,14 @@
       "technical": 52,
       "fitness": 48
     },
-    "fitOlivier": 57,
+    "fitOlivier": 53,
     "lensScores": {
-      "overall": 57,
-      "soccer": 56,
+      "overall": 53,
+      "soccer": 45,
       "academic": 63,
       "minutes": 53,
       "lifestyle": 100,
-      "value": 56
+      "value": 54
     },
     "tags": [
       "warm",
@@ -3567,13 +3559,13 @@
       "draftRank": "JUCO — nationally competitive D1/D2 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 21,
-        "totalCount": null,
-        "yearsCovered": "2015-2025",
-        "years": 11,
-        "perYear": 1.9091,
-        "sourceUrl": "https://pimaaztecs.com/sports/msoc/movingon",
-        "note": "21 confirmed D1 transfers over 2015–2025 (11 years) — about 1.9 per year, right around the typical rate for JUCOs in this guide with a documented transfer history."
+        "d1Count": 12,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 2.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "12 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing.",
+        "sourceUrl": "https://www.pimaaztecs.com/sports/msoc/movingon"
       }
     },
     "devScores": {
@@ -3581,14 +3573,14 @@
       "technical": 56,
       "fitness": 48
     },
-    "fitOlivier": 56,
+    "fitOlivier": 57,
     "lensScores": {
-      "overall": 56,
-      "soccer": 50,
+      "overall": 57,
+      "soccer": 53,
       "academic": 42,
       "minutes": 56,
       "lifestyle": 100,
-      "value": 56
+      "value": 57
     },
     "tags": [
       "warm",
@@ -3824,13 +3816,12 @@
       "draftRank": "JUCO — new program, D1 transfer pathway",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Mohave's program launched in 2022 and doesn't yet have a published transfer track record to measure."
+        "d1Count": 0,
+        "yearsCovered": "2022-2025",
+        "years": 4,
+        "perYear": 0.0,
+        "window": "arrival seasons 2022-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2022 to fall 2025, since the program started in 2022, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -3838,14 +3829,14 @@
       "technical": 58,
       "fitness": 52
     },
-    "fitOlivier": 56,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 56,
-      "soccer": 50,
+      "overall": 52,
+      "soccer": 39,
       "academic": 36,
       "minutes": 60,
       "lifestyle": 50,
-      "value": 61
+      "value": 59
     },
     "tags": [
       "warm",
@@ -4079,13 +4070,12 @@
       "draftRank": "JUCO — D1/D2 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Glendale's 'Alumni' page lists All-Conference honors, not where players actually transferred to, so this can't be measured from what's published."
+        "d1Count": 1,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -4093,14 +4083,14 @@
       "technical": 52,
       "fitness": 46
     },
-    "fitOlivier": 58,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 58,
-      "soccer": 47,
+      "overall": 54,
+      "soccer": 37,
       "academic": 63,
       "minutes": 66,
       "lifestyle": 100,
-      "value": 50
+      "value": 48
     },
     "tags": [
       "warm",
@@ -4342,13 +4332,12 @@
       "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Dodge City doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -4356,14 +4345,14 @@
       "technical": 58,
       "fitness": 46
     },
-    "fitOlivier": 44,
+    "fitOlivier": 41,
     "lensScores": {
-      "overall": 44,
-      "soccer": 48,
+      "overall": 41,
+      "soccer": 39,
       "academic": 36,
       "minutes": 54,
       "lifestyle": 0,
-      "value": 56
+      "value": 54
     },
     "tags": [
       "soccer"
@@ -4596,13 +4585,12 @@
       "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Neosho County doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 1,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -4610,14 +4598,14 @@
       "technical": 52,
       "fitness": 48
     },
-    "fitOlivier": 42,
+    "fitOlivier": 38,
     "lensScores": {
-      "overall": 42,
-      "soccer": 47,
+      "overall": 38,
+      "soccer": 37,
       "academic": 47,
       "minutes": 56,
       "lifestyle": 0,
-      "value": 51
+      "value": 49
     },
     "tags": [
       "soccer",
@@ -4851,13 +4839,13 @@
       "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 1,
-        "totalCount": null,
-        "yearsCovered": "2018-2024",
-        "years": 7,
-        "perYear": 0.1429,
-        "sourceUrl": "https://sccblackhawks.com/sports/msoc/Men-s_Soccer_Alumni",
-        "note": "Only 1 confirmed D1 transfer over 2018–2024 — about 0.14 per year, one of the lowest confirmed rates in this guide. This is a genuinely low measured number, not a case of missing data."
+        "d1Count": 4,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.8,
+        "window": "arrival seasons 2021-2025",
+        "note": "4 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing.",
+        "sourceUrl": "https://www.sccblackhawks.com/sports/msoc/Men-s_Soccer_Alumni"
       }
     },
     "devScores": {
@@ -4865,14 +4853,14 @@
       "technical": 52,
       "fitness": 48
     },
-    "fitOlivier": 34,
+    "fitOlivier": 36,
     "lensScores": {
-      "overall": 34,
-      "soccer": 37,
+      "overall": 36,
+      "soccer": 41,
       "academic": 63,
       "minutes": 46,
       "lifestyle": 0,
-      "value": 45
+      "value": 47
     },
     "tags": [
       "acad"
@@ -5106,13 +5094,12 @@
       "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Iowa Lakes doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 8,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "8 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -5120,14 +5107,14 @@
       "technical": 52,
       "fitness": 46
     },
-    "fitOlivier": 41,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 41,
-      "soccer": 49,
+      "overall": 40,
+      "soccer": 47,
       "academic": 63,
       "minutes": 53,
       "lifestyle": 0,
-      "value": 52
+      "value": 51
     },
     "tags": [
       "acad",
@@ -5362,13 +5349,12 @@
       "draftRank": "JUCO — nationally competitive D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Blinn doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 4,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.8,
+        "window": "arrival seasons 2021-2025",
+        "note": "4 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -5376,14 +5362,14 @@
       "technical": 54,
       "fitness": 48
     },
-    "fitOlivier": 57,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 57,
-      "soccer": 49,
+      "overall": 54,
+      "soccer": 42,
       "academic": 63,
       "minutes": 55,
       "lifestyle": 50,
-      "value": 51
+      "value": 49
     },
     "tags": [
       "warm",
@@ -5618,13 +5604,12 @@
       "draftRank": "JUCO — nationally competitive D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Coastal Bend doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 4,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.8,
+        "window": "arrival seasons 2021-2025",
+        "note": "4 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -5632,14 +5617,14 @@
       "technical": 50,
       "fitness": 46
     },
-    "fitOlivier": 57,
+    "fitOlivier": 54,
     "lensScores": {
-      "overall": 57,
-      "soccer": 47,
+      "overall": 54,
+      "soccer": 40,
       "academic": 36,
       "minutes": 58,
       "lifestyle": 50,
-      "value": 61
+      "value": 59
     },
     "tags": [
       "warm"
@@ -5871,13 +5856,12 @@
       "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline (confirmed 2025 D1 transfer: Memphis)",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Angelina published a single news release naming 2 players who moved to D1 programs in 2025-26, calling it an incomplete 'list so far.' One of those transfers was independently confirmed: Abdallah Traore, who moved to Memphis for 2025. That's not enough to calculate a reliable year-by-year rate."
+        "d1Count": 4,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.8,
+        "window": "arrival seasons 2021-2025",
+        "note": "4 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -5885,14 +5869,14 @@
       "technical": 54,
       "fitness": 44
     },
-    "fitOlivier": 55,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 55,
-      "soccer": 47,
+      "overall": 52,
+      "soccer": 40,
       "academic": 36,
       "minutes": 60,
       "lifestyle": 50,
-      "value": 63
+      "value": 61
     },
     "tags": [
       "warm"
@@ -6124,13 +6108,12 @@
       "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline (confirmed 2024 D1 transfer: Presbyterian)",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "LSU Eunice's alumni page is just a submission form for former players — it doesn't publish actual destinations. One confirmed D1 transfer was found: Ryan Jeanfreau, who moved to Presbyterian College for 2024. That's not enough to calculate a reliable year-by-year rate."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -6138,14 +6121,14 @@
       "technical": 50,
       "fitness": 46
     },
-    "fitOlivier": 56,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 56,
-      "soccer": 47,
+      "overall": 52,
+      "soccer": 38,
       "academic": 36,
       "minutes": 54,
       "lifestyle": 50,
-      "value": 59
+      "value": 56
     },
     "tags": [
       "warm"
@@ -6375,13 +6358,12 @@
       "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Nassau's alumni page is just a survey for former players — it doesn't publish actual destinations, so this can't be measured."
+        "d1Count": 3,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "3 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -6389,14 +6371,14 @@
       "technical": 52,
       "fitness": 46
     },
-    "fitOlivier": 38,
+    "fitOlivier": 35,
     "lensScores": {
-      "overall": 38,
-      "soccer": 47,
+      "overall": 35,
+      "soccer": 39,
       "academic": 36,
       "minutes": 58,
       "lifestyle": 50,
-      "value": 42
+      "value": 40
     },
     "tags": [
       "city"
@@ -6628,13 +6610,12 @@
       "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Ulster doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -6642,14 +6623,14 @@
       "technical": 50,
       "fitness": 46
     },
-    "fitOlivier": 31,
+    "fitOlivier": 27,
     "lensScores": {
-      "overall": 31,
-      "soccer": 45,
+      "overall": 27,
+      "soccer": 34,
       "academic": 36,
       "minutes": 60,
       "lifestyle": 0,
-      "value": 40
+      "value": 38
     },
     "tags": [],
     "facilities": [
@@ -6880,13 +6861,12 @@
       "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Suffolk doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 1,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -6894,14 +6874,14 @@
       "technical": 52,
       "fitness": 48
     },
-    "fitOlivier": 28,
+    "fitOlivier": 24,
     "lensScores": {
-      "overall": 28,
-      "soccer": 47,
+      "overall": 24,
+      "soccer": 37,
       "academic": 63,
       "minutes": 50,
       "lifestyle": 0,
-      "value": 35
+      "value": 33
     },
     "tags": [
       "acad"
@@ -7105,13 +7085,12 @@
       "draftRank": "JUCO — regional D1 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Westchester doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -7119,14 +7098,14 @@
       "technical": 50,
       "fitness": 46
     },
-    "fitOlivier": 34,
+    "fitOlivier": 30,
     "lensScores": {
-      "overall": 34,
-      "soccer": 45,
+      "overall": 30,
+      "soccer": 34,
       "academic": 47,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 42
+      "value": 39
     },
     "tags": [
       "city"
@@ -7330,13 +7309,12 @@
       "draftRank": "JUCO — nationally competitive D2 transfer pathway, not an MLS pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Johnson County doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 5,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "5 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -7344,14 +7322,14 @@
       "technical": 52,
       "fitness": 46
     },
-    "fitOlivier": 43,
+    "fitOlivier": 41,
     "lensScores": {
-      "overall": 43,
-      "soccer": 47,
+      "overall": 41,
+      "soccer": 42,
       "academic": 36,
       "minutes": 57,
       "lifestyle": 50,
-      "value": 40
+      "value": 39
     },
     "tags": [
       "city"
@@ -7541,14 +7519,14 @@
       "fitness": 42
     },
     "devScoresNote": "Live staff directory (Aug 2026): Chris Spear is head coach of BOTH the men's and women's programs, with a single assistant (Grace Houchin) also shared across both — there is no soccer-only full-time coach and no position-specific coaching. No strength & conditioning coach appears anywhere in the athletics staff directory; the department lists two athletic trainers (Rhonda Wood, Kimberly Smith) covering roughly 230 athletes across 13+ sports. The facilities section names an unbranded 'Soccer Field (Men's and Women's Soccer)' with no capacity, surface or description published, alongside a shared Beames Fieldhouse and Performance Center. No video-analysis or GPS/wearable provision is documented anywhere on the site. Scored on training environment only — the 2024 and 2025 National Tournament runs are results and live in titles[]/confRecord[].",
-    "fitOlivier": 56,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 56,
-      "soccer": 45,
+      "overall": 52,
+      "soccer": 36,
       "academic": 47,
       "minutes": 56,
       "lifestyle": 50,
-      "value": 59
+      "value": 57
     },
     "tags": [
       "juco",
@@ -7664,13 +7642,12 @@
       ],
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Murray State's men's soccer site has only a news archive — no dedicated alumni or transfer-destination page — so this can't be measured."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "juco2yr": true,
@@ -7842,13 +7819,12 @@
       "draftRank": "JUCO — four straight NJCAA DI Region 24 regular-season titles (2021-2024) under head coach John Dunn, with confirmed NCAA D1 transfer output (Daniel Freire, Eastern Illinois, 2025); primary value is the NCAA D1/D2 transfer pipeline, not an MLS pathway.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Lewis & Clark CC doesn't publish its own alumni-tracking page, but one confirmed D1 transfer was found: Daniel Freire, who moved to Eastern Illinois for 2025 (confirmed on EIU's own roster). Head coach John Dunn has separately said the program has sent 6+ players on to four-year programs overall, but that broader total couldn't be independently verified, so only the one confirmed name is counted here."
+        "d1Count": 3,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "3 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -7857,14 +7833,14 @@
       "fitness": 62
     },
     "devScoresNote": "Tier-1: head coach John Dunn holds a USSF 'C' License, multiple prior head-coaching stops (WVU Tech, Indiana Tech) with national-tournament experience and 2x conference Coach of the Year, plus a dedicated goalkeeping coach (Hunter Deeken) and assistant (Parker Medina) — genuinely deep staffing for a JUCO. Games are hosted on a natural grass and turf soccer-specific field at Glazebrook Park (no video-analysis/GPS technology mentioned on the official facilities page). A dedicated HEAD strength & conditioning coach (Dustin Duncan) runs individualized, periodized programming for all athletes with testing three times a year (Aug/Dec/May) — notably above typical JUCO S&C provision.",
-    "fitOlivier": 43,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 43,
-      "soccer": 54,
+      "overall": 40,
+      "soccer": 46,
       "academic": 73,
       "minutes": 61,
       "lifestyle": 0,
-      "value": 53
+      "value": 51
     },
     "tags": [
       "soccer",
@@ -8101,13 +8077,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks on record, but a genuinely elite and growing NCAA transfer pipeline: 13 players signed to four-year programs in a single 2026 class (5 D1, 6 D2, 2 NAIA), described by the Athletic Director as 'record-breaking'. Primary value is the NCAA D1/D2/NAIA transfer pathway, not a pro pipeline.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": "https://www.oterorattlers.com/sports/msoc/2026-27/releases/20260715op9vn5",
-        "note": "Otero doesn't run an ongoing alumni-tracking page, but a July 2026 athletics release named all 13 players who signed with four-year programs that year, with exact destinations. That's a strong single-year snapshot, but not enough years of data to calculate a reliable long-term rate."
+        "d1Count": 9,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.8,
+        "window": "arrival seasons 2021-2025",
+        "note": "9 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -8119,7 +8094,7 @@
     "fitOlivier": 48,
     "lensScores": {
       "overall": 48,
-      "soccer": 53,
+      "soccer": 52,
       "academic": 42,
       "minutes": 60,
       "lifestyle": 0,
@@ -8363,13 +8338,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks on record, but a historically strong NCAA transfer pipeline under head coach Pedro Braz (USSF 'B' license, UEFA C license, former pro in Angola/Puerto Rico/USL): 70 alumni reached NCAA D1/D2/D3/NAIA programs in his first three-season tenure alone (2012-2014).",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Montgomery doesn't run an ongoing alumni-tracking page. The program's coaching staff has cited sending 70 student-athletes on to four-year schools, but that figure covers a specific multi-year coaching tenure (2012–2014) rather than a current, ongoing rate."
+        "d1Count": 4,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.8,
+        "window": "arrival seasons 2021-2025",
+        "note": "4 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -8378,14 +8352,14 @@
       "fitness": 58
     },
     "devScoresNote": "Tier-1: head coach Pedro Braz holds a USSF 'B' license and UEFA C license, played professionally in Angola/Puerto Rico/USL, and returned to MC in 2020 after a five-season NCAA D3 head-coaching stint at Gallaudet University — one of the more credentialed coaching resumes of any JUCO in this guide. The team plays at Alcus Field, a genuinely new (built 2021) award-winning dedicated soccer stadium with synthetic turf and locker rooms (Grunley Construction; Tier-1: official Braz coaching bio + mcraptors.com/information/Facilities). Strength & conditioning runs through a dedicated 'Raptors Student-Athlete Weight Room' plus a separate Cybex Weight Room — commercial-grade equipment, though no dedicated soccer-specific S&C coach is listed (2-person soccer staff: HC + 1 assistant only).",
-    "fitOlivier": 42,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 42,
-      "soccer": 55,
+      "overall": 40,
+      "soccer": 49,
       "academic": 63,
       "minutes": 58,
       "lifestyle": 0,
-      "value": 41
+      "value": 40
     },
     "tags": [
       "soccer",
@@ -8607,13 +8581,12 @@
       "draftRank": "JUCO — seven-time national champion program with a long-running D1 transfer history; no current maintained alumni/next-level tracking page found on ycathletics.com or the legacy goroughriders.com.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Yavapai doesn't run a dedicated alumni-tracking page. Two past D1 transfers were found — Zander Glynn (UIC, 2021) and Matthew Ridley (UNLV, 2020) — but both are several years old, so they aren't used to calculate a current rate."
+        "d1Count": 8,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "8 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -8622,14 +8595,14 @@
       "fitness": 50
     },
     "devScoresNote": "Live staff directory (ycathletics.com): Head Coach Giorgi Manzula (hired April 2025 — played collegiately at Central Connecticut State and Monroe College, pro/semi-pro in Georgia/Brazil/Poland/USA, previously HC at Monroe College NY where he led a regional championship and top-4 national finish) plus 2 assistants including a dedicated GK coach (Michael Tristani) and a Recruiting Coordinator (Juan Enrique Fernandez) — solid staffing depth for a JUCO. No dedicated strength & conditioning coach or sports-science staff confirmed on the official site.",
-    "fitOlivier": 46,
+    "fitOlivier": 45,
     "lensScores": {
-      "overall": 46,
-      "soccer": 50,
+      "overall": 45,
+      "soccer": 48,
       "academic": 36,
       "minutes": 56,
       "lifestyle": 0,
-      "value": 55
+      "value": 54
     },
     "tags": [
       "soccer"
@@ -8851,13 +8824,12 @@
       "draftRank": "JUCO — brand-new program (2023), too young for an established D1 transfer or pro pipeline",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Eastern Arizona's program launched in 2023 and doesn't yet have a published transfer track record to measure."
+        "d1Count": 0,
+        "yearsCovered": "2023-2025",
+        "years": 3,
+        "perYear": 0.0,
+        "window": "arrival seasons 2023-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2023 to fall 2025, since the program started in 2023, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -8866,14 +8838,14 @@
       "fitness": 48
     },
     "devScoresNote": "Live staff directory (eacmonsters.com): Head Coach Abe Tizaf (hired 2026 — decade+ coaching CV including HC at Pellissippi State CC and Young Harris College, launched Saint Mary-of-the-Woods College's program in 2017 to a national tournament berth, USCAA National Coach of the Year, former pro player in Morocco with 120+ appearances for KACM Marrakech) plus one assistant coach. Home venue (John Mickelson Field/Stadium) is a shared multi-sport college stadium, not a soccer-dedicated facility. No dedicated strength & conditioning or sports-science staff confirmed for men's soccer specifically.",
-    "fitOlivier": 59,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 59,
-      "soccer": 49,
+      "overall": 55,
+      "soccer": 37,
       "academic": 47,
       "minutes": 62,
       "lifestyle": 50,
-      "value": 62
+      "value": 59
     },
     "tags": [
       "warm",
@@ -9093,13 +9065,12 @@
       "draftRank": "JUCO — no confirmed pro/D1 transfer pipeline data published",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "College of Southern Nevada doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -9108,14 +9079,14 @@
       "fitness": 62
     },
     "devScoresNote": "Live staff directory (csncoyotes.com, 2026 season — the roster page's own cached 2025 staff list is STALE, superseded by a Feb 13, 2026 restructuring): Jocelyn Roach, Director of Soccer / Head Coach Men's & Women's (hired 2020 as women's HC, played college soccer at Western Kentucky University earning Sun Belt All-Conference honors, graduate degree from Texas A&M-Commerce; new to men's program oversight as of Feb 2026) plus Assistant Coach Grant Vermillion AND a dedicated Strength & Conditioning Coach (Christian Sevilla) — genuinely strong for a JUCO. Support staff includes a Head Athletic Trainer (Steve Jacobucci, MS/ATC/LAT/CSCS) plus 2 assistant athletic trainers — the deepest sports-medicine staffing confirmed among this batch's schools.",
-    "fitOlivier": 60,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 60,
-      "soccer": 52,
+      "overall": 55,
+      "soccer": 40,
       "academic": 52,
       "minutes": 57,
       "lifestyle": 100,
-      "value": 54
+      "value": 51
     },
     "tags": [
       "warm",
@@ -9331,13 +9302,12 @@
       "draftRank": "JUCO — no confirmed pro/D1 transfer pipeline data published; a consistently winless recent program",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Community Christian College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -9346,14 +9316,14 @@
       "fitness": 38
     },
     "devScoresNote": "Official staff directory lists Head Coach Gabriel Mauries (gmauries@cccollege.edu) with no assistant coach found for men's soccer specifically, and no coaching bio/CV published anywhere on cccollegeathletics.com or cccollege.edu. No dedicated strength & conditioning coach, athletic trainer, or sports-science staff confirmed for the program. The thinnest confirmed staffing and facility footprint of any school in this batch, consistent with the program's winless recent record and the college's minimal-campus, multi-state operating model.",
-    "fitOlivier": 46,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 46,
-      "soccer": 41,
+      "overall": 42,
+      "soccer": 30,
       "academic": 26,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 58
+      "value": 56
     },
     "tags": [
       "warm"
@@ -9546,13 +9516,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; one confirmed 2026 NCAA D1 transfer commitment (Radford University) found via the program's own news page.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Eastern Oklahoma State's '4-Year Signings' page is just an image graphic, not searchable data. One confirmed D1 transfer was found through a program news release: Mauricio Jimenez, who moved to Radford University for 2026. That's not enough to calculate a reliable year-by-year rate."
+        "d1Count": 3,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "3 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -9561,14 +9530,14 @@
       "fitness": 40
     },
     "devScoresNote": "Live staff directory (eoscathletics.com): Jake Cottage serves as Head Coach of BOTH the men's and women's soccer programs, with a single shared assistant (Caitlin Hirst) — no soccer-only full-time coach and no position-specific coaching. Athletic Training: one department-wide Head Athletic Trainer (Emilee Burdge) covering all sports, operating out of the 4,800 sq ft Glen Stone Athletic Training Center (renovated 2020) inside the C.C. Dunlap Field House — a genuine dedicated facility, though shared across the whole athletics department. No dedicated strength & conditioning coach or sports-science staff confirmed anywhere on the official site.",
-    "fitOlivier": 58,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 58,
-      "soccer": 45,
+      "overall": 55,
+      "soccer": 37,
       "academic": 20,
       "minutes": 64,
       "lifestyle": 50,
-      "value": 64
+      "value": 62
     },
     "tags": [
       "warm"
@@ -9796,13 +9765,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks; one confirmed 2025 NCAA D1 transfer (Central Connecticut State) among 9 men's players who continued to 4-year programs, mostly NAIA.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Connors State doesn't run an ongoing alumni-tracking page — just a single May 2025 news release naming that year's outgoing class. One confirmed D1 transfer from it: Miguel Gonzalez, who moved to Central Connecticut State. That's one year of data, not enough for a reliable rate."
+        "d1Count": 0,
+        "yearsCovered": "2023-2025",
+        "years": 3,
+        "perYear": 0.0,
+        "window": "arrival seasons 2023-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2023 to fall 2025, since the program started in 2023, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -9811,14 +9779,14 @@
       "fitness": 28
     },
     "devScoresNote": "As of research (Aug 2026), the Men's and Women's Soccer head coaching position is VACANT — founding coach Adam Skolnick resigned effective early May 2026 to join MLS Next club Michigan Jaguars (official April 30, 2026 release: 'A national search for the next Head Men's and Women's Soccer Coach has begun'). The official staff directory (connorsathletics.com/information/directory) lists a 'Men's and Women's Soccer' section with zero names, and the prior assistant's bio page ('Benge Joins Connors State Coaching Staff') is unpublished. No 2026-27 news has been posted at all. Facilities: the program's own January 2026 news story is about replacing a storage shed at the practice field after tornado damage, personally funded by the college's president (Dr. Ramming) — the clearest signal available of how modestly resourced this program still is. Home matches in 2025 were played at Hilldale Hornet Stadium, an off-campus venue. No athletic trainer or S&C coach appears in the department-wide staff directory for any sport. Scored at the low end reflecting the current coaching vacancy and minimal published infrastructure — re-score once a permanent hire is announced.",
-    "fitOlivier": 54,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 54,
-      "soccer": 35,
+      "overall": 49,
+      "soccer": 24,
       "academic": 15,
       "minutes": 61,
       "lifestyle": 50,
-      "value": 60
+      "value": 57
     },
     "tags": [
       "warm"
@@ -10035,13 +10003,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated men's soccer alumni/transfer tracking page found.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "NEO A&M doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -10050,14 +10017,14 @@
       "fitness": 45
     },
     "devScoresNote": "Live staff directory (neoathletics.com) confirms a dedicated department-wide Athletic Training staff — Head Athletic Trainer Kayla Crissman plus Assistant Matt Brannon — a real plus versus the other three schools in this batch. Coaching: Tyler Douthitt was named interim Head Coach on August 10, 2026 (the day before this research), an NEO alumnus (2021-23, First Team Academic All-American both years, 4.0 GPA) who served as the program's assistant coach since 2023 and holds a USSF 'C' License; assistant Wes Dipboye completes the staff — no position-specific coach confirmed. Facilities: the PE program's own page cites a fitness center, core fitness room, six-lane 75-foot pool and gymnasium available to students, though these are general campus facilities rather than a soccer-dedicated weight room. Home venue is Red Robertson Field (per cross-referenced opponent schedules); no capacity or surface detail published.",
-    "fitOlivier": 57,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 57,
-      "soccer": 44,
+      "overall": 52,
+      "soccer": 32,
       "academic": 20,
       "minutes": 61,
       "lifestyle": 50,
-      "value": 59
+      "value": 56
     },
     "tags": [
       "warm"
@@ -10275,13 +10242,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated men's soccer alumni/transfer tracking page found.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Rose State doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -10290,14 +10256,14 @@
       "fitness": 50
     },
     "devScoresNote": "Live staff directory (rscraiders.com) confirms a dedicated Athletic Trainer/Wellness Director (Chris Leland) plus an Executive Director of Athletics, Wellness and Aquatics (Coty Cooper) and two dedicated Athletic Advisors — a more built-out administrative structure than the other three Region 2 schools in this batch, reflecting Rose State's much larger overall enrolment (7,758 students). Head coach Michael Shanahan (OCU alumnus, B.S. Kinesiology Sports Science 2015) has been with the program since 2016 (assistant, now head coach) with one assistant, Andrew Rundell — no position-specific coaching confirmed. The team plays at Raider Soccer Field, a genuine dedicated on-campus venue with bleacher seating and gated admission — the only named, gated soccer-specific venue confirmed across this batch's four schools.",
-    "fitOlivier": 63,
+    "fitOlivier": 58,
     "lensScores": {
-      "overall": 63,
-      "soccer": 47,
+      "overall": 58,
+      "soccer": 35,
       "academic": 31,
       "minutes": 55,
       "lifestyle": 100,
-      "value": 63
+      "value": 60
     },
     "tags": [
       "warm",
@@ -10514,13 +10480,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks; program founded 2024, too new for alumni tracking.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "National Park College's program launched in January 2024 — no class has been through the program long enough yet to have a transfer track record."
+        "d1Count": 0,
+        "yearsCovered": "2024-2025",
+        "years": 2,
+        "perYear": 0.0,
+        "window": "arrival seasons 2024-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2024 to fall 2025, since the program started in 2024, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -10529,14 +10494,14 @@
       "fitness": 45
     },
     "devScoresNote": "A genuinely new program (Jan 2024 founding) with a lean staff — head coach Corey Irvine has no listed assistant on the official staff directory, and the athletic department's sole Athletic Trainer (Heidi Balliette) is shared across all sports, not soccer-dedicated. Home matches are played off-campus at Hot Springs World Class High School (per the official 2026-27 schedule page), not a dedicated on-campus venue — the thinnest facility footprint of this batch. Offset by coach Irvine's own strong personal playing/coaching pedigree (see coaches.json).",
-    "fitOlivier": 55,
+    "fitOlivier": 50,
     "lensScores": {
-      "overall": 55,
-      "soccer": 44,
+      "overall": 50,
+      "soccer": 33,
       "academic": 26,
       "minutes": 63,
       "lifestyle": 50,
-      "value": 60
+      "value": 57
     },
     "tags": [
       "warm"
@@ -10760,13 +10725,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated men's soccer alumni/transfer tracking page found.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "UA Rich Mountain doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -10775,14 +10739,14 @@
       "fitness": 50
     },
     "devScoresNote": "Two assistant coaches confirmed on the official staff directory (Ian Alexander, Morgan Bean) — the deepest men's soccer staff of this batch's four schools. Head coach Kevin Sherry's own bio (bucksathletics.com) documents an unusually extensive multi-decade, multi-country coaching career (five separate head coaching stints including four different NCAA D1 programs, a Final Four appearance and Athletics Wall of Fame induction at Graceland University, and international academy/pro-club coaching in Japan, the UK and UAE), though the program's on-field 2025-26 results (4-9-3) were modest. No dedicated soccer venue, strength coach, or sports-science technology confirmed on official pages.",
-    "fitOlivier": 55,
+    "fitOlivier": 50,
     "lensScores": {
-      "overall": 55,
-      "soccer": 48,
+      "overall": 50,
+      "soccer": 37,
       "academic": 26,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 61
+      "value": 58
     },
     "tags": [
       "warm"
@@ -10979,13 +10943,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated alumni/transfer tracking page found, but real 2025 individual honors (Player of the Year, All-American) confirmed via the official postseason release.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Hill College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -10994,14 +10957,14 @@
       "fitness": 48
     },
     "devScoresNote": "Head coach Ivan Franco is a Hill College alumnus (captain, 2018-20, led the program to a Region V title as a player) who played NCAA D2 at UT Permian Basin and NCAA-tournament-level soccer at Davis & Elkins College, and holds a Bachelor's in Exercise Science plus a Master's in Sports Administration — the strongest formal academic coaching credential found in this batch. At least one assistant coach (Derick Gonzalez) is listed on the official staff directory. No dedicated strength & conditioning coach, sports-science technology, or stadium detail confirmed on official pages; dev score reflects coaching-environment quality only, not the team's 2025 results (per CLAUDE.md §5a, results belong in confRecord/titles, not devScores).",
-    "fitOlivier": 60,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 60,
-      "soccer": 47,
+      "overall": 55,
+      "soccer": 35,
       "academic": 20,
       "minutes": 65,
       "lifestyle": 50,
-      "value": 69
+      "value": 66
     },
     "tags": [
       "warm"
@@ -11219,13 +11182,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; no dedicated alumni/transfer tracking page found, but real 2025 individual postseason honors confirmed via the official coach bio.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Western Texas College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 6,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "6 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -11234,14 +11196,14 @@
       "fitness": 56
     },
     "devScoresNote": "The only school in this batch with an officially confirmed dedicated on-campus soccer complex and a “state-of-the-art Fitness Center” with an indoor track (per the official wtc.edu program overview page). Head coach Daniel Hoskins brings a genuinely international scouting/development pedigree — Head of Scouting and Data Analytics for Gimnàstic de Tarragona (a Spanish third-division professional club) and involvement with TOVO Academy Barcelona since its 2016 founding — though his background skews scouting/analytics/sporting-directorship rather than the traditional playing-and-coaching CV of most peers. One assistant coach (Ramon Chavez) confirmed on staff.",
-    "fitOlivier": 58,
+    "fitOlivier": 56,
     "lensScores": {
-      "overall": 58,
-      "soccer": 50,
+      "overall": 56,
+      "soccer": 46,
       "academic": 20,
       "minutes": 57,
       "lifestyle": 50,
-      "value": 67
+      "value": 65
     },
     "tags": [
       "warm"
@@ -11470,13 +11432,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years; the program's real strength is a three-year run of NJCAA Region 4 postseason dominance rather than a documented D1-transfer pipeline. No dedicated alumni/next-level tracking page was found.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Truman College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -11560,14 +11521,14 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science coursework at this campus (see acuAlignNote)",
-    "fitOlivier": 50,
+    "fitOlivier": 46,
     "lensScores": {
-      "overall": 50,
-      "soccer": 49,
+      "overall": 46,
+      "soccer": 37,
       "academic": 20,
       "minutes": 68,
       "lifestyle": 50,
-      "value": 52
+      "value": 50
     }
   },
   {
@@ -11716,13 +11677,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found. The program's real story is a genuine three-year coaching turnaround rather than a documented pro/transfer pipeline.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Daley College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -11802,14 +11762,14 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science coursework at this campus (see acuAlignNote)",
-    "fitOlivier": 45,
+    "fitOlivier": 41,
     "lensScores": {
-      "overall": 45,
-      "soccer": 44,
+      "overall": 41,
+      "soccer": 32,
       "academic": 20,
       "minutes": 59,
       "lifestyle": 50,
-      "value": 49
+      "value": 47
     }
   },
   {
@@ -11957,13 +11917,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found. Under former head coach Jesse Rosen (2014 to May 2026), the program's next-level output was community-focused: Rosen also ran the CJ Brown Foundation's coaching programme, which places program alumni into youth-coaching roles across Chicago.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Malcolm X College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -12013,14 +11972,14 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "Personal Fitness Trainer, Basic Certificate — the only City Colleges of Chicago campus with real exercise-science coursework (see acuAlignNote)",
-    "fitOlivier": 42,
+    "fitOlivier": 39,
     "lensScores": {
-      "overall": 42,
-      "soccer": 45,
+      "overall": 39,
+      "soccer": 36,
       "academic": 47,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 48
+      "value": 46
     }
   },
   {
@@ -12169,13 +12128,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Kennedy-King College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -12251,14 +12209,14 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science coursework at this campus (see acuAlignNote)",
-    "fitOlivier": 42,
+    "fitOlivier": 38,
     "lensScores": {
-      "overall": 42,
-      "soccer": 42,
+      "overall": 38,
+      "soccer": 31,
       "academic": 20,
       "minutes": 52,
       "lifestyle": 50,
-      "value": 48
+      "value": 45
     }
   },
   {
@@ -12407,13 +12365,12 @@
       "draftRank": "JUCO — no confirmed MLS SuperDraft picks in the last 5 years and no dedicated alumni/next-level tracking page found. This is the newest, least-established program of the guide's five Chicago schools — its real story in 2026 is a fresh NJCAA Foundation grant aimed at building the program up, not a documented pipeline yet.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Wilbur Wright College doesn't publish a page tracking where its players transfer to next (the City Colleges of Chicago district's main athletics site is currently offline), and no confirmed D1 transfers were found elsewhere, so this can't be measured."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -12494,14 +12451,14 @@
     },
     "acRank": "NJCAA Level",
     "kinRank": "A.A. Liberal Arts (Transfer) — general degree; no dedicated exercise-science coursework at this campus (see acuAlignNote)",
-    "fitOlivier": 46,
+    "fitOlivier": 41,
     "lensScores": {
-      "overall": 46,
-      "soccer": 40,
+      "overall": 41,
+      "soccer": 29,
       "academic": 20,
       "minutes": 64,
       "lifestyle": 50,
-      "value": 50
+      "value": 47
     }
   },
   {
@@ -12657,18 +12614,17 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [
-        "No MLS SuperDraft picks or confirmed NCAA D1 transfers found in this research window — cross-checked against TopDrawerSoccer's 2025/2026 D1 men's transfer trackers by school name with no match. The program's value proposition is its 2025-26 NJCAA Academic Team of the Year honour and head coach Steven Harrison's 15-year, five-program JUCO coaching résumé, not a documented pro/D1 pipeline."
+        "No MLS SuperDraft picks in the last five years. Six players moved straight to Division I rosters in 2021–2023, among them Yuval Oren (Florida Atlantic), Gijs Hovius (Missouri State) and Aleksander Mihov (St. Bonaventure). The program's value proposition is its 2025-26 NJCAA Academic Team of the Year honour and head coach Steven Harrison's 15-year, five-program JUCO coaching résumé, not a documented pro/D1 pipeline."
       ],
-      "draftRank": "JUCO — 2025-26 NJCAA Academic Team of the Year (men's soccer); no confirmed D1/pro pipeline found in this research window.",
+      "draftRank": "JUCO — 2025-26 NJCAA Academic Team of the Year (men's soccer); six moves straight to Division I rosters in 2021–2025.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Coffeyville doesn't publish a page tracking where its players transfer to next, and no confirmed D1 transfers were found elsewhere, so this can't be measured."
+        "d1Count": 6,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "6 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -12677,14 +12633,14 @@
       "fitness": 50
     },
     "devScoresNote": "Tier-1: head coach Steven Harrison (hired April 2023) has 15 years of junior-college head-coaching experience across five different programs — Neosho County CC (2005-07 assistant, then HC, 2x KJCCC conference titles, 2015 KJCCC Coach of the Year), Northeast Texas CC (3 seasons HC, three straight Region 14 tournament appearances), Crowder College (2 seasons, Region 16 final both years), and Central Wyoming College (2 seasons, HC of both men's and women's programs, program win-record seasons) before arriving at Coffeyville. A Fontbonne College (MO) alumnus and two-time all-conference player/team captain there, with a master's in media communications from Webster University. Assistant coach Francisco Neto rounds out the staff. Games are hosted at the shared, multi-sport Veterans Memorial Stadium (5,500-seat capacity, FieldTurf) — no dedicated soccer-only facility.",
-    "fitOlivier": 45,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 45,
-      "soccer": 48,
+      "overall": 43,
+      "soccer": 44,
       "academic": 26,
       "minutes": 56,
       "lifestyle": 0,
-      "value": 55
+      "value": 54
     },
     "tags": [
       "soccer",
@@ -12913,18 +12869,17 @@
     "proPlayers": {
       "mlsPicks5yr": 0,
       "notable": [
-        "No MLS SuperDraft picks or confirmed NCAA D1 transfers found in this research window — cross-checked against TopDrawerSoccer's 2025/2026 D1 men's transfer trackers by school name with no match. Head coach Oscar Zelaya's own playing pathway (Garden City to NCAA D2 Rogers State, then a multi-league pro career) is the clearest documented next-level pipeline example, though as an alumnus rather than a current-era transfer."
+        "No MLS SuperDraft picks in the last five years. Two players moved straight to Division I rosters in 2021–2025: Theom Samba (CSUN, 2023) and Noel Williamson (Florida Atlantic, 2024). Head coach Oscar Zelaya's own playing pathway (Garden City to NCAA D2 Rogers State, then a multi-league pro career) is the clearest documented next-level pipeline example, though as an alumnus rather than a current-era transfer."
       ],
-      "draftRank": "JUCO — no confirmed current-era D1/pro pipeline in this research window; head coach is a program alumnus who went on to NCAA D2 and a professional playing career.",
+      "draftRank": "JUCO — two moves straight to Division I rosters in 2021–2025; head coach is a program alumnus who went on to NCAA D2 and a professional playing career.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Garden City doesn't publish a page tracking where its players transfer to next, and no confirmed D1 transfers were found elsewhere, so this can't be measured."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -12933,14 +12888,14 @@
       "fitness": 54
     },
     "devScoresNote": "Tier-1: head coach Oscar Zelaya is a genuine program alumnus — First Team All-KJCCC (2008) as a defender on Garden City's own #4-nationally-ranked NJCAA DI National Tournament team — who went on to two seasons at NCAA D2 Rogers State, a professional career (Southern Premier Soccer League OK, Premier Development League MO, Semi-Pro Indoor League), a Sport Management degree from Rogers State, and an NSCAA diploma, before a 7-year head-coaching stint at Dodge City CC (61-38-12, KJCCC West Coach of the Year 2019, an NJCAA top-20 ranking) prior to returning to Garden City as head coach in March 2024 — a genuine 'returning to complete unfinished business' story per the official hiring release. Assistant coach Yahir Camacho rounds out the staff. Games are hosted at the shared, multi-sport Broncbuster Stadium (official facilities page does not publish seating capacity).",
-    "fitOlivier": 46,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 46,
-      "soccer": 52,
+      "overall": 43,
+      "soccer": 43,
       "academic": 15,
       "minutes": 56,
       "lifestyle": 0,
-      "value": 58
+      "value": 57
     },
     "tags": [
       "soccer"
@@ -13169,13 +13124,12 @@
       "draftRank": "JUCO — one confirmed NCAA D2 transfer (Santiago Gonzalez-Uribe, Shorter University), the program's first-ever four-year signee; primary value is the program's rapid 3-year buildup and 2025-26 NJCAA Academic Team of the Year honour, not a deep pro pipeline.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Seward County doesn't run an alumni-tracking page. One confirmed transfer was found — Santiago Gonzalez-Uribe, who moved to D2's Shorter University — but the program is only 3 years old, too young for a reliable rate."
+        "d1Count": 0,
+        "yearsCovered": "2023-2025",
+        "years": 3,
+        "perYear": 0.0,
+        "window": "arrival seasons 2023-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2023 to fall 2025, since the program started in 2023, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -13184,14 +13138,14 @@
       "fitness": 48
     },
     "devScoresNote": "Tier-1: founding head coach Jaime Beltran (hired 2022, program launched fall 2023) brings a genuinely deep ~20-year coaching résumé spanning five programs before Seward — State Fair CC MO (6 seasons, both men's and women's, multiple Region 16 Tournament semifinal runs), Jarvis Christian College TX (2016), Ranger College TX (2011-16, led the men's program to its first-ever Region 5 Championship and NJCAA DI National Tournament appearance in 2013, NJCAA Region 5 Coach of the Year 2013-14), and NAIA University of the Southwest NM (2008-10). Holds a USSF National Coaching License and a Psychology degree from Mars Hill College (1997). A well-staffed program for a 3-year-old JUCO: assistant John Avalos, volunteer assistant Manuel Ortuno, and a team manager. Home games are played at Redskin Field, a shared, off-campus Liberal High School facility — the program does not yet have its own on-campus venue.",
-    "fitOlivier": 45,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 45,
-      "soccer": 47,
+      "overall": 40,
+      "soccer": 35,
       "academic": 26,
       "minutes": 57,
       "lifestyle": 0,
-      "value": 55
+      "value": 52
     },
     "tags": [
       "soccer",
@@ -13420,13 +13374,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed, but a genuinely deep and sustained NCAA D1/D2/NAIA transfer pipeline under program-founder head coach Ben McArthur — 19 movers across the last two off-seasons alone, 5 to NCAA Division I.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 5,
-        "totalCount": 19,
-        "yearsCovered": "2025-2026",
-        "years": 2,
-        "perYear": 2.5,
-        "sourceUrl": "https://www.caspercollege.edu/news/2026/05/casper-college-mens-soccer-2026/",
-        "note": "Casper doesn't run a standing alumni page, but two consecutive news releases (May 2025 and May 2026) named every player who moved on: 2 of 6 movers went D1 in 2025, and 3 of 13 in 2026 — 5 D1 transfers out of 19 total movers, about 2.5 per year. That's two years of real data, stronger than a single snapshot but shorter than the guide's most established transfer-tracking schools."
+        "d1Count": 9,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.8,
+        "window": "arrival seasons 2021-2025",
+        "note": "9 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -13435,14 +13388,14 @@
       "fitness": 53
     },
     "devScoresNote": "Tier-1: head coach Ben McArthur founded the program in 2020 and has an 11th-year-as-a-college-HC CV, a United Soccer Coaches Advanced National Diploma plus a Level II Goalkeeper Diploma, and an MBA — genuinely licensed and tenured for a JUCO. Staff is 3-deep (HC + assistant Conner Schmidt + volunteer assistant Rick Mullins). Facilities are a real minus: Casper has NO dedicated on-campus soccer stadium — home matches were historically played at the college's own Murane Field, but moved for the 2025-26 season to Kelly Walsh High School's Steinfeld Soccer & Football Field (confirmed via an official Casper College news release, Sept 2025). The shared T-Bird Fitness Center (in the Swede Erickson Thunderbird Gym complex) has a dedicated turf training area, Olympic lifting platforms and free weights, but is shared across all sports with no soccer-dedicated strength coach and no video-analysis/GPS technology confirmed.",
-    "fitOlivier": 47,
+    "fitOlivier": 45,
     "lensScores": {
-      "overall": 47,
-      "soccer": 52,
+      "overall": 45,
+      "soccer": 48,
       "academic": 47,
       "minutes": 57,
       "lifestyle": 0,
-      "value": 52
+      "value": 51
     },
     "tags": [
       "soccer"
@@ -13660,13 +13613,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks or confirmed NCAA D1 transfer pipeline found in this research window.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Northwest College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -13675,14 +13627,14 @@
       "fitness": 48
     },
     "devScoresNote": "Tier-1: head coach Rob Hill holds a UEFA 'B' License plus a United Coaches National/Advanced National/Premier/Master Coach Diploma — the strongest coaching licence found anywhere in this campaign — and a decades-long championship CV across youth, high school and NJCAA levels (2010/2011 NJCAA Region IX Coach of the Year, 2012 NJCAA West District Coach of the Year), returning to the program in 2025 after a 4-year absence. Staff is 2-deep (HC + assistant Dalton Young... [assistant David Gilliatt confirmed]). Facilities are modest: the named Trapper Field hosts matches, and the general-access Johnson Fitness Center (weight room, cardio, gymnasium, racquetball) serves the whole student body and community, not a soccer-dedicated program — no video-analysis/GPS technology confirmed.",
-    "fitOlivier": 45,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 45,
-      "soccer": 49,
+      "overall": 40,
+      "soccer": 38,
       "academic": 26,
       "minutes": 55,
       "lifestyle": 0,
-      "value": 52
+      "value": 49
     },
     "tags": [
       "soccer"
@@ -13897,13 +13849,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks or confirmed NCAA D1 transfer pipeline found in this research window.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Central Wyoming College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -13912,14 +13863,14 @@
       "fitness": 44
     },
     "devScoresNote": "Tier-1: head coach Marcus Horwood was appointed for the 2025-26 season (his first head-coaching role) after playing JUCO (Central Community College, NE) and NAIA (Briar Cliff University) soccer, a brief professional indoor stint (Sioux Falls Thunder), and two years as an assistant coach each at Central Community College and Briar Cliff. Holds a Bachelor's in Exercise Physiology and a Master's in Leadership Management from Briar Cliff. No dedicated soccer facility details published beyond a general-access Fitness Center; no video-analysis/GPS technology confirmed. A genuinely new coaching tenure with real academic/playing credentials but no NJCAA head-coaching track record yet.",
-    "fitOlivier": 41,
+    "fitOlivier": 37,
     "lensScores": {
-      "overall": 41,
-      "soccer": 44,
+      "overall": 37,
+      "soccer": 33,
       "academic": 20,
       "minutes": 50,
       "lifestyle": 0,
-      "value": 50
+      "value": 47
     },
     "tags": [
       "soccer"
@@ -14121,13 +14072,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks; a genuine and sustained NCAA D2/NAIA transfer pipeline (documented back to 2002) but zero measured D1 placements in the program's own recorded alumni history.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": 0,
-        "totalCount": 30,
-        "yearsCovered": "2002-2025",
-        "years": 24,
-        "perYear": 0,
-        "sourceUrl": "https://www.golccc.com/MSOC_Alumni",
-        "note": "Laramie County CC publishes an unusually thorough alumni page tracking roughly 30 transfers from 2002 through 2025, with each destination's division listed. Across that entire history, zero soccer players have moved on to an NCAA Division I program — the one D1 name on the list (Chris Hearne, 2003) went to the football team, not soccer. This is a real, well-documented zero: the program does send players on, just mostly to D2 and NAIA schools rather than D1."
+        "d1Count": 1,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -14136,10 +14086,10 @@
       "fitness": 60
     },
     "devScoresNote": "Tier-1: head coach Fernando Perez is a program alumnus (2012-13, All-Region IX 2nd Team) who played on to NCAA D2 Montana State-Billings (All-Decade Team 2010-2019), then returned as an assistant (contributing to LCCC's 2020-21 Region IX title), served as interim HC leading LCCC to the 2021-22 Region IX Championship final, and has been full head coach since December 2022 (4th season, 2024-25 Region IX Quarterfinal at 8-5-2) — a genuinely deep 5-person staff (HC + assistant Dayton Crocker + 3 volunteer assistants). Facilities are a real asset: LCCC opened a brand-new $31M Blue Federal Credit Union Recreation & Athletics Complex in November 2025, including a dedicated natural-grass soccer field with an adjacent practice field, a team-specific soccer locker room, a dedicated Athletic Training Room, and a Cheyenne Regional Medical Center-branded Fitness Center — a hospital-partnered facility not seen elsewhere in this campaign.",
-    "fitOlivier": 44,
+    "fitOlivier": 45,
     "lensScores": {
-      "overall": 44,
-      "soccer": 43,
+      "overall": 45,
+      "soccer": 44,
       "academic": 52,
       "minutes": 61,
       "lifestyle": 0,
@@ -14363,13 +14313,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks or confirmed NCAA D1 transfer pipeline found in this research window.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Gillette College doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -14378,14 +14327,14 @@
       "fitness": 54
     },
     "devScoresNote": "Tier-1: head coach Spencer Durfee, a Wyoming native (Buffalo, WY) and 2-time WHSAA state finalist as a high school player, played JUCO (Lamar Community College, a Batch 8 school in this same campaign) and NAIA (Waldorf University, Buena Vista University) soccer, earning a Bachelor's in Exercise Science with a strength & conditioning emphasis from Waldorf, then coached overseas and at Iowa Lakes Community College (already a guide school) before this, his first head-coaching job. Staff is 2-deep (HC + assistant Dalton Young). Facilities are a genuine asset: the dedicated Pronghorn Soccer Field (synthetic turf, completed 2020, VEO livestream capability) and the $18.5M Pronghorn Center (opened with a health simulation lab and dedicated fitness space) are real, purpose-built investments — stronger than this batch's other three non-LCCC schools.",
-    "fitOlivier": 46,
+    "fitOlivier": 41,
     "lensScores": {
-      "overall": 46,
-      "soccer": 48,
+      "overall": 41,
+      "soccer": 37,
       "academic": 52,
       "minutes": 59,
       "lifestyle": 0,
-      "value": 52
+      "value": 49
     },
     "tags": [
       "soccer"
@@ -14624,9 +14573,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One dated, confirmed 2025 NCAA Division I transfer (Babiker to Mercyhurst) found via WNCC's own news feed, but not a comprehensive multi-year alumni census — the program's own 'Moving On' alumni page stops at 2017 and was not used as current evidence.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://wnccathletics.com/sports/msoc/2024-25/news",
-        "note": "Western Nebraska CC's news feed confirms one 2025 D1 transfer — Babiker, who moved to Mercyhurst from the 2024 championship roster. The school's official alumni-tracking page hasn't been updated since 2017, so this single confirmed name isn't enough to calculate a current rate."
+        "d1Count": 1,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -14635,14 +14587,14 @@
       "fitness": 48
     },
     "devScoresNote": "Tier-1: the 2024 title team was built under 20-plus-year head coach Todd Rasnic, who stepped aside to lead the women's program in Feb 2025, handing the men's program to his own assistant of two years, program alumnus Eseah Ingram (WNCC 2016-17, transferred to NCAA D2 Shaw University then LSU-Alexandria, graduated 2020) — a genuine internal succession, not an outside hire, but Ingram's first season as head coach (2025-26, 3-4-2) came well off the title-team pace. No dedicated on-campus soccer stadium or strength-and-conditioning facility confirmed on the official site beyond standard campus athletic facilities; no video-analysis/GPS technology confirmed.",
-    "fitOlivier": 46,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 46,
-      "soccer": 46,
+      "overall": 42,
+      "soccer": 36,
       "academic": 42,
       "minutes": 62,
       "lifestyle": 0,
-      "value": 57
+      "value": 54
     },
     "facilities": [
       "First-ever NJCAA DI National Tournament appearance (2024) and first program All-American (Eduardo Oliveira)",
@@ -14868,9 +14820,12 @@
       "draftRank": "JUCO — no confirmed NCAA D1 transfer or MLS SuperDraft pick found for the men's program. No alumni-tracker page or dated news release naming departing players was found (Lamar's own athletics news feed is thin relative to peer Region 9 schools).",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Lamar CC doesn't publish an alumni-tracking page or any news release naming a confirmed D1 transfer, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -14879,14 +14834,14 @@
       "fitness": 43
     },
     "devScoresNote": "Tier-1: head coach Alieu Kamara was hired fall 2025 (his official bio and an Instagram post both confirm 'NEW MEN'S SOCCER COACH') — his own CV is a JUCO alumnus (Marshalltown Community College, IA, holding midfielder) and semi-pro player (Milwaukee Torrent), and he owns/presides over Twin Stars of Guinea, a first-division professional football academy in Guinea, but this is his first head-coaching role at any level. No dedicated on-campus soccer stadium, strength-and-conditioning facility, or sports-science technology confirmed on the official site. The program's four-season on-field record (a combined 3-31-1 in Region 9 conference play, 2022-2025) is the weakest of this campaign's Region 9 additions.",
-    "fitOlivier": 41,
+    "fitOlivier": 36,
     "lensScores": {
-      "overall": 41,
-      "soccer": 43,
+      "overall": 36,
+      "soccer": 31,
       "academic": 36,
       "minutes": 50,
       "lifestyle": 0,
-      "value": 50
+      "value": 47
     },
     "facilities": [
       "Sports & Exercise Science A.S. with a genuine Athletic Training Practicum I & II sequence — real clinical hours",
@@ -15090,9 +15045,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, dated 2026 NCAA Division I signing found (Manning Shareef to Northern Colorado), but not a comprehensive multi-year alumni census.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "One confirmed 2026 D1 signing was found: Manning Shareef, who committed to Northern Colorado. That's a single confirmed name, not enough on its own to calculate a rate."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -15101,14 +15059,14 @@
       "fitness": 44
     },
     "devScoresNote": "Tier-1: new head coach Tyler Wilt (hired May 2025) is a genuine TSC program alumnus (played 2012-13 for founding coach Aaron Miller before finishing his playing career at York University in Nebraska), then spent four years as York's head coach before returning to his alma mater — a real, if modest, coaching CV rather than a first-time hire, but one season removed from predecessor Peter Freeman's departure to a D2 head job. No dedicated on-campus soccer stadium, strength-and-conditioning facility, or sports-science technology confirmed on the official site. Squad depth is thin — the 2025-26 roster carried only 18 players with just 3 confirmed midfielders.",
-    "fitOlivier": 45,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 45,
-      "soccer": 44,
+      "overall": 40,
+      "soccer": 32,
       "academic": 26,
       "minutes": 60,
       "lifestyle": 0,
-      "value": 50
+      "value": 47
     },
     "facilities": [
       "New head coach Tyler Wilt — TSC alumnus, returned May 2025 after 4 years as head coach at York University (NE)",
@@ -15339,9 +15297,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, dated 2025 NCAA Division I signing found (Elias Khodri, via Gardner-Webb to New Hampshire), but not a comprehensive multi-year alumni census.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://unhwildcats.com/news/2025/1/16/mens-soccer-signs-gardner-webb-transfer-elias-khodri",
-        "note": "One confirmed 2025 D1 signing was found: Elias Khodri, who moved on to New Hampshire. That's a single confirmed name, not enough on its own to calculate a rate."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -15350,14 +15311,14 @@
       "fitness": 46
     },
     "devScoresNote": "Tier-1: current Interim Head Coach Hubert Blanco has a genuinely substantive coaching CV despite the interim title — 7 years coaching at the high school and club level, including multiple district championships, a regional championship, and a state championship final-four appearance with his HS team, plus pre-ECNL club coaching with multiple tournament wins (per his own official bio, njc.edu). He is himself a JUCO alumnus (McHenry County College, IL) and holds a Bachelor of Science in Sport, Fitness and Education from Florida International University (2008). No dedicated on-campus soccer stadium, strength-and-conditioning facility, or sports-science technology confirmed on the official site. The 'Interim' title itself is a real leadership-continuity flag, same class as the Coastal Bend/Southeastern CC caveats already in this guide.",
-    "fitOlivier": 43,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 43,
-      "soccer": 45,
+      "overall": 40,
+      "soccer": 36,
       "academic": 42,
       "minutes": 55,
       "lifestyle": 0,
-      "value": 50
+      "value": 48
     },
     "facilities": [
       "2022 Region 9 3rd-place finish (5-1-2, a strong recent season) and a dated 2021 national Top-20 ranking",
@@ -15590,9 +15551,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No verified NCAA D1 transfer found for the 2025-26 offseason.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://usclathletics.com/sports/mens-soccer/archives",
-        "note": "USC Lancaster doesn't publish an alumni-tracking page, and no confirmed 2025-26 D1 transfers could be found elsewhere, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -15601,14 +15565,14 @@
       "fitness": 46
     },
     "devScoresNote": "Tier-1: built under six-year head coach Kenny Halas (also USC Lancaster's Women's Soccer HC, 2020-present, NJCAA Region X Coach of the Year), whose 2025 squad won the Region 10 title and reached the Southeast District Final. USC Lancaster's own soccer field was renovated in 2025 (field, parking lot, locker rooms, and training area upgrades, confirmed via the program's official Facebook), but no dedicated strength-and-conditioning coach or sports-science technology (video analysis, GPS/wearables) was confirmed on the official site.",
-    "fitOlivier": 50,
+    "fitOlivier": 45,
     "lensScores": {
-      "overall": 50,
-      "soccer": 46,
+      "overall": 45,
+      "soccer": 35,
       "academic": 15,
       "minutes": 55,
       "lifestyle": 50,
-      "value": 48
+      "value": 45
     },
     "facilities": [
       "2025 NJCAA Region 10 DI Tournament Champion, Southeast District Runner-up",
@@ -15839,9 +15803,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Head coach William Glass's own bio credits numerous graduating sophomores with four-year scholarship offers over his 16-year tenure, but no individual current-era NCAA D1 destination could be verified.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://www.uscsalkathletics.com/mens-soccer",
-        "note": "USC Salkehatchie doesn't publish an alumni-tracking page, and no confirmed 2025-26 D1 transfers could be found elsewhere, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -15850,14 +15817,14 @@
       "fitness": 41
     },
     "devScoresNote": "Tier-1: head coach William Glass is entering his 16th season at USC Salkehatchie (20 years total college coaching, 218-186-24 career record, NJCAA Region X Coach of the Year 2020), a genuinely deep tenure, but the program has been in decline on the field for three straight seasons (last of five in 2025-26). No dedicated strength-and-conditioning coach, sports-science technology, or soccer-specific facility investment confirmed on the official athletics site.",
-    "fitOlivier": 47,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 47,
-      "soccer": 42,
+      "overall": 42,
+      "soccer": 31,
       "academic": 15,
       "minutes": 51,
       "lifestyle": 50,
-      "value": 46
+      "value": 43
     },
     "facilities": [
       "16-year head coach William Glass (218-186-24 career record, 2020 Region X Coach of the Year)",
@@ -16086,9 +16053,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No verified NCAA D1 transfer found for the 2025-26 offseason.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://uscfireants.com/sports/msoc/index",
-        "note": "USC Sumter doesn't publish an alumni-tracking page, and no confirmed 2025-26 D1 transfers could be found elsewhere, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -16097,14 +16067,14 @@
       "fitness": 48
     },
     "devScoresNote": "Tier-1: head coach Adam Howarth arrived summer 2025 with an unusually deep multi-level CV — HC at NCAA Division III Worcester State (2 seasons, consecutive postseason appearances), assistant at NCAA D2 USC Aiken, volunteer assistant at NCAA D1 Brown University (2019-20), a state high-school championship (South Kingstown, RI, first in 28 years), a 2x Atlantic 10 champion playing career at Rhode Island, and a pro stint with AC Kajaani FC in Finland (2009-11, POTY). USC Sumter's own soccer field (near the Student Union and Nettles Building) was described as newly renovated on the official facilities page; no dedicated strength coach or sports-science technology confirmed.",
-    "fitOlivier": 50,
+    "fitOlivier": 45,
     "lensScores": {
-      "overall": 50,
-      "soccer": 47,
+      "overall": 45,
+      "soccer": 36,
       "academic": 15,
       "minutes": 53,
       "lifestyle": 50,
-      "value": 48
+      "value": 45
     },
     "facilities": [
       "2024-25 Region 10 DI Regular Season Champion (10-1-2), 2025 Semifinalist",
@@ -16338,9 +16308,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No verified NCAA D1 transfer found for the 2025-26 offseason, though 4 straight Region 10 Players of the Year is a real development signal.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://uscunionbantams.com",
-        "note": "USC Union doesn't publish an alumni-tracking page, and no confirmed 2025-26 D1 transfers could be found elsewhere — despite the program producing the conference's Player of the Year four years running, that individual success hasn't been tied to a confirmed D1 transfer yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -16349,14 +16322,14 @@
       "fitness": 47
     },
     "devScoresNote": "Tier-1: the program's four-consecutive-year Region 10 DI Player of the Year streak (2022-2025, confirmed via USC Union's own Bantam Blog season recaps) is a genuine individual-development signal under head coach Marc Curlee (HC since 2022, 26 years total coaching experience including youth soccer in Misawa, Japan and Carolina Elite, 2x Region 10 Coach of the Year). The team's home field sits off-campus, behind Jonesville Town Hall (confirmed via USC Union's own facilities page) — no on-campus venue, and no dedicated strength coach or sports-science technology confirmed.",
-    "fitOlivier": 51,
+    "fitOlivier": 47,
     "lensScores": {
-      "overall": 51,
-      "soccer": 48,
+      "overall": 47,
+      "soccer": 37,
       "academic": 15,
       "minutes": 57,
       "lifestyle": 50,
-      "value": 49
+      "value": 46
     },
     "facilities": [
       "2025-26 Region 10 DI Regular Season Champion (7-1-2) — best season in program history",
@@ -16586,11 +16559,11 @@
       "nextLevel": {
         "metric": "d1TransferRate",
         "d1Count": 1,
-        "yearsCovered": "2025-2026",
-        "years": 2,
-        "perYear": null,
-        "sourceUrl": "https://pjcathletics.com/sports/msoc/2025-26/releases/dragons-contiunuing-careers",
-        "note": "Paris JC publishes yearly signing announcements rather than an alumni-tracking page. One Division I transfer is confirmed on the receiving school's own roster: Jace Starling to Houston Christian (2025). Paris JC also announced Jonathan Chairez's signing with Missouri State in June 2026, but he does not yet appear on Missouri State's 2026 roster. One confirmed transfer isn't enough to calculate a reliable yearly rate, so this program is scored as a typical junior college for now."
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -16599,14 +16572,14 @@
       "fitness": 44
     },
     "devScoresNote": "Tier-1: head coach Fernando Arellano played NCAA D1 (University of Texas Rio Grande Valley, beat #24-ranked UNLV in 2015), was a 2014 NJCAA All-American and NJCAA National Final runner-up captain at Richland College, played professionally in Liga MX (Queretaro FC) and NPSL (Tyler FC), and previously ran another NJCAA DI program (Southwest Virginia CC) plus an NCAA D2 assistant stint (Alderson Broaddus). Holds a USSF 'D' License (entry-level) and a Kinesiology/Sports Administration academic background matching his own coaching subject. Noyes Stadium is the program's on-campus home venue; no dedicated strength-and-conditioning or sports-science technology confirmed on the official site.",
-    "fitOlivier": 56,
+    "fitOlivier": 52,
     "lensScores": {
-      "overall": 56,
-      "soccer": 45,
+      "overall": 52,
+      "soccer": 35,
       "academic": 20,
       "minutes": 56,
       "lifestyle": 50,
-      "value": 64
+      "value": 62
     },
     "facilities": [
       "Program-record 10 players signed to four-year programs, June 2026",
@@ -16835,9 +16808,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No verified NCAA D1 transfer found for the 2025-26 offseason.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://athletics.jacksonvillecollege.edu/sports/mens-soccer/archives",
-        "note": "Jacksonville College doesn't publish an alumni-tracking page and its news archive has no relevant stories, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 3,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "3 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -16846,14 +16822,14 @@
       "fitness": 38
     },
     "devScoresNote": "Tier-1: head coach Thomas Wait was hired in September 2024 as dual head coach of both men's and women's soccer (confirmed via a JUCO coaching-change database entry, contactcollegecoaches.com). No further biographical detail, prior coaching history, playing background, or license information was found on the official staff bio (name/title/email only) or via broader search — a genuine, disclosed information gap, not a fabricated CV. No dedicated facilities page or stadium name confirmed on the official site.",
-    "fitOlivier": 52,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 52,
-      "soccer": 41,
+      "overall": 49,
+      "soccer": 33,
       "academic": 15,
       "minutes": 51,
       "lifestyle": 50,
-      "value": 57
+      "value": 56
     },
     "facilities": [
       "Large midfield group (15 on the 2026-27 roster, 13 of them freshmen)",
@@ -17080,9 +17056,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No verified NCAA D1 transfer found for the 2025-26 offseason, consistent with the program's current on-field rebuild.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://ntcceagles.com/sports/mens-soccer/archives",
-        "note": "Northeast Texas CC's alumni-tracking page link is broken and its news archive has no relevant stories, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -17091,14 +17070,14 @@
       "fitness": 48
     },
     "devScoresNote": "Tier-1 (ntcceagles.com official staff bio): head coach Jon Evan is one of the deepest individually-credentialed coaches found anywhere in this campaign — assistant coach at TWO different NCAA Division I programs (Jacksonville University 2003-05, recruiting/mentoring future MLS SuperDraft pick Akeem Priestly; Boston University 2006), a further D1 associate-head-coach year (Jackson State University), 2 seasons as NCAA D2 head coach at Midwestern State (2008 Lone Star Conference title + #1 national ranking), 2 seasons as NCAA D3 head coach at UMaine Farmington (program-best regular season), and 2 seasons as NCAA D3 head coach at Sul Ross State (program's highest-ever win total) immediately before joining NTCC in April 2023. Holds a BS in Exercise Science (Jacksonville University) and an MS in Kinesiology (Midwestern State) — an academic background matching Olivier's own target field — plus NSCAA and USSF coaching licenses. No dedicated on-campus stadium name or sports-science technology confirmed on the official site; the program itself is in an early (3rd-season) rebuild that has not yet reflected this coaching pedigree in results.",
-    "fitOlivier": 55,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 55,
-      "soccer": 49,
+      "overall": 51,
+      "soccer": 38,
       "academic": 20,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 64
+      "value": 62
     },
     "facilities": [
       "Head coach holds NCAA D1 assistant experience at two different programs plus D2/D3 head-coaching titles",
@@ -17292,9 +17271,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. A real, dated May 2026 official release ('Five Scorpions, One Goal') names 3 men's soccer players continuing their careers, honestly disclosed as NCCAA/NAIA destinations rather than NCAA Division I.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://www.tsc.edu/news/2026/05/five-scorpions-one-goal-continuing-the-journey-beyond-tsc/",
-        "note": "A May 2026 official release named 3 real 2025-26 transfers, but none went to an NCAA Division I program — Nelson University is NCCAA and Texas A&M-San Antonio is NAIA. So while the program does move players on, there's no confirmed D1 transfer yet to build a rate from."
+        "d1Count": 0,
+        "yearsCovered": "2023-2025",
+        "years": 3,
+        "perYear": 0.0,
+        "window": "arrival seasons 2023-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2023 to fall 2025, since the program started in 2023, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -17303,14 +17285,14 @@
       "fitness": 40
     },
     "devScoresNote": "Tier-1 (tsc.edu official Feb 2023 hiring release + ValleyCentral.com news coverage): head coach Mario Zamora is a TSC/UTB alumnus and program founder, hired February 2023 to launch the college's first-ever NJCAA soccer program after previously leading it as a pre-NJCAA club team. Prior coaching experience is at the high-school level (Brownsville Pace HS, St. Joseph Academy). Holds a Master of Education (UTRGV) and dual coaching licenses from the Federación Mexicana de Fútbol (Mexican FA) and US Soccer — a genuine binational credential reflecting the border-region program. No dedicated facilities page, stadium name, or sports-science technology confirmed on the official site; the program is 3 seasons old.",
-    "fitOlivier": 56,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 56,
-      "soccer": 43,
+      "overall": 51,
+      "soccer": 31,
       "academic": 20,
       "minutes": 56,
       "lifestyle": 100,
-      "value": 62
+      "value": 59
     },
     "facilities": [
       "Program founded February 2023 under alumnus head coach Mario Zamora — one of the newest programs in the guide",
@@ -17540,9 +17522,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, dated 2026 NCAA D1 transfer (Silas Laytham → UMKC) found via a national transfer-tracker cross-check, not extrapolated into a measured rate.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Crowder doesn't publish an alumni-tracking page. One 2026 D1 transfer was found — Silas Laytham, who moved to UMKC — confirmed via UMKC's own program social media. That's a single confirmed name, not enough on its own to calculate a rate."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -17551,14 +17536,14 @@
       "fitness": 48
     },
     "devScoresNote": "Tier-1: head coach Hunter Gilliam (CMU 2x national champion + 2x national semifinalist as a player, pro/semi-pro experience with the Springfield Demize, promoted from assistant July 2025) leads a 3-person staff (2 assistants: Oliver Brown, Steven Solano). No dedicated stadium name or facilities page confirmed on the official site; no dedicated soccer S&C coach identified. The 2025 Region 16 title and NJCAA All-American season came in his very first year as HC.",
-    "fitOlivier": 46,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 46,
-      "soccer": 48,
+      "overall": 42,
+      "soccer": 37,
       "academic": 15,
       "minutes": 60,
       "lifestyle": 0,
-      "value": 56
+      "value": 54
     },
     "facilities": [
       "2025 NJCAA Region 16 Tournament Champion + Plains District Tournament qualifier",
@@ -17789,9 +17774,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Real, recurring NCAA D1 transfer activity found via TopDrawerSoccer's tracker across multiple years, not extrapolated into a measured rate.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Jefferson College doesn't publish an alumni-tracking page. Names linked to Jefferson College appear in national transfer-tracker records for both 2022 (to SIUE) and 2023, but weren't individually confirmed on the receiving schools' own rosters, so they aren't used to calculate a rate yet."
+        "d1Count": 7,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 1.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "7 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -17800,10 +17788,10 @@
       "fitness": 42
     },
     "devScoresNote": "Tier-1: head coach Luke Schlichting is a genuine Jefferson College alumnus (played there before transferring to graduate from NCAA D2 McKendree University, where he was an assistant coach for 2 years) who returned as HC in August 2023 after 2 years as De Soto HS's boys/girls head coach. A 3-person staff (2 assistants: Mel Gbougbo, Kody Nicks). No dedicated stadium or facilities page confirmed on the official site.",
-    "fitOlivier": 45,
+    "fitOlivier": 44,
     "lensScores": {
-      "overall": 45,
-      "soccer": 44,
+      "overall": 44,
+      "soccer": 41,
       "academic": 15,
       "minutes": 61,
       "lifestyle": 0,
@@ -18032,12 +18020,15 @@
       "notable": [
         "Ryan Kingsford (F, Herne Bay, England) — played two seasons at Harcum College, then signed with NCAA Division I Akron (already a guide school, Big East) in August 2021, confirmed via Akron's own official 13-player signing-class announcement (SoccerWire.com)."
       ],
-      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, confirmed NCAA D1 transfer (Ryan Kingsford → Akron, 2021) found via a national transfer-tracker cross-check and independently verified on Akron's own signing release, not extrapolated into a measured rate.",
+      "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Two moves straight to Division I rosters in 2021–2025: Ryan Kingsford (Akron, 2021) and Max Asplin-Rowley (Manhattan, 2025).",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Harcum doesn't publish an alumni-tracking page. One confirmed D1 transfer was found: Ryan Kingsford, who moved to Akron in 2021 (confirmed on Akron's own official signing release) — before current head coach David Hughes's tenure, so it isn't used to represent the program's current output."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -18046,14 +18037,14 @@
       "fitness": 50
     },
     "devScoresNote": "Tier-1: head coach David Hughes has led the program since the 2020-21 season (career record 42-10-2, a .795 win rate), holds a UEFA B License and NSCAA Advanced National certification, graduated with honors from Lancaster University (BSc Coaching and Sport Performance), and played for English professional club Carlisle United FC plus coaching in their Academy Program. A 2-person staff (assistant Kyle Norton). Home matches are played at The Proving Grounds, Conshohocken, PA — an off-campus but dedicated soccer venue.",
-    "fitOlivier": 53,
+    "fitOlivier": 49,
     "lensScores": {
-      "overall": 53,
-      "soccer": 51,
+      "overall": 49,
+      "soccer": 42,
       "academic": 47,
       "minutes": 55,
       "lifestyle": 50,
-      "value": 34
+      "value": 32
     },
     "facilities": [
       "2020-21 NJCAA DI National Championship Tournament Final Four (beat Western Texas College 1-0 at Nationals)",
@@ -18273,9 +18264,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No D1 transfer found via a national transfer-tracker cross-check.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Hagerstown doesn't publish an alumni-tracking page, and no confirmed D1 transfers were found elsewhere, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -18284,14 +18278,14 @@
       "fitness": 36
     },
     "devScoresNote": "Tier-1: head coach Joe Mills (hired Aug 2023) has a grassroots coaching CV — HS Coach of the Year at South Hagerstown, founder/VP of the Liverpool Western MD soccer club (formerly Locomotive FC), U.S. Soccer National D License — with a genuine but modest NCAA D3 playing background (Virginia Wesleyan College). A 3-person staff (assistants Connor Blair, Matthew Medina; volunteer assistant Jim Mills). No dedicated stadium or facilities page confirmed on the official site.",
-    "fitOlivier": 33,
+    "fitOlivier": 28,
     "lensScores": {
-      "overall": 33,
-      "soccer": 40,
+      "overall": 28,
+      "soccer": 28,
       "academic": 42,
       "minutes": 57,
       "lifestyle": 0,
-      "value": 42
+      "value": 39
     },
     "facilities": [
       "Real, measured coaching turnaround under Joe Mills: 0-15-1 (2023) → 10-9 (2024) → 12-6-1 (2025)",
@@ -18523,9 +18517,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, confirmed NCAA D1 transfer (Alfonso Gilleard Soriano → FIU, 2025) directly named in Harford's own official news article, not extrapolated into a measured rate.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://www.harford.edu/about/get-to-know-harford/news/2025/09-sep/mens-soccer.php",
-        "note": "Harford doesn't publish an alumni-tracking page, but its own September 2025 feature article confirmed one D1 transfer: Alfonso Gilleard Soriano, who moved to FIU. That's a single confirmed name, not enough on its own to calculate a rate."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -18534,14 +18531,14 @@
       "fitness": 48
     },
     "devScoresNote": "Tier-1: head coach Bill Wardle has led the program for 7 of his 9 years at Harford (set the program's win record in 2021, delivered its first-ever National Tournament berth that year, and its first Region 20 title in 50 years in 2024). His CV is program-builder-focused rather than elite-pedigree: a genuinely deep, personally-built international recruiting network (direct scouting trips to showcases in Panama and elsewhere) rather than a formal coaching license or pro playing background. A 3-person staff (assistants Gage Rims, Jason Rims). No dedicated stadium name confirmed on the official site.",
-    "fitOlivier": 37,
+    "fitOlivier": 34,
     "lensScores": {
-      "overall": 37,
-      "soccer": 49,
+      "overall": 34,
+      "soccer": 40,
       "academic": 47,
       "minutes": 59,
       "lifestyle": 0,
-      "value": 46
+      "value": 44
     },
     "facilities": [
       "2024 NJCAA Region 20 Champion — first Region 20 title in 50 years",
@@ -18775,9 +18772,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. One real, confirmed NCAA D1 transfer (Taimu Okiyoshi → Marshall University) named directly in Marshall's own official roster bio, not extrapolated into a measured rate — SLCC's own alumni/transfer tracking is not comprehensively published.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://herdzone.com/sports/mens-soccer/roster/taimu-okiyoshi",
-        "note": "Salt Lake CC doesn't publish an ongoing alumni-tracking page. One confirmed D1 transfer was found: Taimu Okiyoshi, from the 2021 national championship team, who moved to Marshall University (confirmed on Marshall's own roster bio). That's a single confirmed name for a program that has otherwise won its conference 11 times since 2021 — not enough on its own to calculate a rate."
+        "d1Count": 26,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 5.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "26 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -18786,14 +18786,14 @@
       "fitness": 45
     },
     "devScoresNote": "Tier-1: head coach Mark Davis has led the program since 2016 (his own program bio credits the combined men's/women's programs with 8x SWAC titles, 5x National Tournament appearances, and 1x NJCAA National Coach of the Year), is also owner/technical director of a real local club infrastructure (Utah United Academy, Utah United USL2), and fields a 2-assistant staff (Trentin Atkin, Conner Mitchell). SLCC fields a real dedicated 'Bruin Soccer Field' (confirmed via the athletics site's own facilities section), but no video-analysis, GPS/wearable technology, or dedicated soccer-specific strength & conditioning coach was confirmed on the official staff directory — a program built on coaching continuity and club-pipeline depth rather than confirmed sports-science infrastructure.",
-    "fitOlivier": 48,
+    "fitOlivier": 55,
     "lensScores": {
-      "overall": 48,
-      "soccer": 50,
+      "overall": 55,
+      "soccer": 68,
       "academic": 36,
       "minutes": 60,
       "lifestyle": 50,
-      "value": 44
+      "value": 48
     },
     "facilities": [
       "2021 NJCAA Division I National Champion (undefeated 17-0) — one of the strongest JUCO programs in the guide",
@@ -19024,9 +19024,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. Forward Isaac Stanley earned NJCAA Division I 2nd-Team All-American honors in December 2025, confirmed via Snow College Athletics' own official news release, but no specific NCAA transfer destination has been confirmed for him.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://snowbadgers.com/sports/mens-soccer/archives",
-        "note": "Snow College doesn't publish an alumni-tracking page. Forward Isaac Stanley earned NJCAA All-American honors in December 2025, a real individual achievement, but no confirmed transfer destination was found to calculate a rate from."
+        "d1Count": 3,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "3 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -19035,14 +19038,14 @@
       "fitness": 40
     },
     "devScoresNote": "Tier-1: new head coach Lewis Wilson (born/raised Aberdeen, Scotland; 8 years in the Aberdeen FC Academy; played NCAA at St. Mary's University and University of Central Arkansas, 2x All-American selection; assistant coach at Snow for both men's and women's soccer since summer 2025, promoted to interim HC January 2026 then permanent HC April 2026) is in his first season leading the program — the 2025 SWAC title was delivered under his departed predecessor Jack Larter, who left for NCAA D1 Utah Valley University. A 2-person staff (Wilson + one assistant). No dedicated soccer-specific stadium, video-analysis, or strength & conditioning staff confirmed on the official site beyond the shared Horne Activity Center/Bergeson Athletic Center facilities.",
-    "fitOlivier": 44,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 44,
-      "soccer": 44,
+      "overall": 40,
+      "soccer": 36,
       "academic": 15,
       "minutes": 57,
       "lifestyle": 0,
-      "value": 51
+      "value": 49
     },
     "facilities": [
       "2025 Scenic West Athletic Conference (Region 18) Champion — first SWAC title in program history",
@@ -19258,9 +19261,12 @@
       "draftRank": "JUCO — D1 transfer pathway, not an MLS pipeline (confirmed 2026 D1 transfer: College of Charleston)",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://nicathletics.com/sports/msoc/index",
-        "note": "North Idaho College doesn't publish a page tracking where its players transfer to next. One confirmed Division I transfer was found: Federico Bellisi, who moved to College of Charleston for 2026. One transfer isn't enough to calculate a reliable year-by-year rate."
+        "d1Count": 3,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.6,
+        "window": "arrival seasons 2021-2025",
+        "note": "3 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -19269,14 +19275,14 @@
       "fitness": 42
     },
     "devScoresNote": "Tier-1: head coach Brad Williams (in his 3rd-4th season, hired ~2023) previously coached at NCAA Division II Concordia University Irvine, is a goalkeeper specialist who runs his own camps, and was a finalist for the 2026 North Idaho Sports Awards Banquet Coach of the Year — a real regional recognition. A 2-person staff (Williams + assistant Gunnar Skindlov). NIC fields a real dedicated soccer facility, Eisenwinter Field, confirmed via the athletics site's own facilities section — distinct from the shared Christianson Gym and city-owned Memorial Field. No video-analysis, GPS, or dedicated soccer strength & conditioning staff confirmed.",
-    "fitOlivier": 47,
+    "fitOlivier": 44,
     "lensScores": {
-      "overall": 47,
-      "soccer": 47,
+      "overall": 44,
+      "soccer": 40,
       "academic": 20,
       "minutes": 62,
       "lifestyle": 0,
-      "value": 54
+      "value": 52
     },
     "facilities": [
       "Real, dedicated soccer facility — Eisenwinter Field",
@@ -19492,9 +19498,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. As a program launched in 2023, no multi-year NCAA transfer history yet exists to confirm.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://athletics.csi.edu/sports/msoc/index",
-        "note": "College of Southern Idaho's program launched in August 2023 — too young yet to have a multi-year transfer history."
+        "d1Count": 0,
+        "yearsCovered": "2023-2025",
+        "years": 3,
+        "perYear": 0.0,
+        "window": "arrival seasons 2023-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2023 to fall 2025, since the program started in 2023, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -19503,14 +19512,14 @@
       "fitness": 38
     },
     "devScoresNote": "Tier-1: founding head coach Alex Ferreira has run the program since its August 2023 launch, explicitly prioritizes recruiting Idaho-born players, and is a visible figure on the national youth-showcase circuit (interviewed by multiple recruiting-content accounts). A 3-person staff (Ferreira, assistant Andrew Zaleski, goalkeeper coach Alex Maia) — real depth for a program in only its third year. No dedicated soccer facility, video-analysis, or strength & conditioning staff confirmed on the official site.",
-    "fitOlivier": 42,
+    "fitOlivier": 38,
     "lensScores": {
-      "overall": 42,
-      "soccer": 43,
+      "overall": 38,
+      "soccer": 32,
       "academic": 20,
       "minutes": 54,
       "lifestyle": 0,
-      "value": 55
+      "value": 52
     },
     "facilities": [
       "Founding head coach Alex Ferreira built the program from its August 2023 launch",
@@ -19737,9 +19746,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No NCAA transfer destinations confirmed.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://athletics.cncc.edu/sports/mens-soccer",
-        "note": "Colorado Northwestern CC doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -19748,14 +19760,14 @@
       "fitness": 35
     },
     "devScoresNote": "Tier-1: new head coach Dave Brown (hired for the 2026 season, his first as a JUCO head coach) brings genuine prior staff experience at Jones College (NJCAA), where he was part of a coaching staff that won MACCC, NJCAA Region 23, and Gulf South District Championships and was recognized as United Soccer Coaches Junior College Division II South Staff of the Year, plus two seasons as a graduate assistant at NCAA Division II Christian Brothers University. Prior head coaches (Doug Seigle, Justin Motzkus) departed after CNCC's consistently last-place results — genuine coaching turnover reflecting the program's extended rebuild. No dedicated soccer facility, video-analysis, or strength & conditioning staff confirmed.",
-    "fitOlivier": 41,
+    "fitOlivier": 36,
     "lensScores": {
-      "overall": 41,
-      "soccer": 40,
+      "overall": 36,
+      "soccer": 29,
       "academic": 15,
       "minutes": 53,
       "lifestyle": 0,
-      "value": 49
+      "value": 46
     },
     "facilities": [
       "New head coach Dave Brown arrives with real staff experience from an NJCAA regional/district championship program (Jones College)",
@@ -19978,9 +19990,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://usueasternathletics.com/sports/msc/index",
-        "note": "Utah State Eastern doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -19989,14 +20004,14 @@
       "fitness": 45
     },
     "devScoresNote": "Tier-1: head coach Bruce Palmbaum (hired February 2025) holds a USSF 'A' Coaching License — the highest US coaching credential confirmed anywhere in this entire campaign — plus a 75-58-10 overall collegiate coaching record spanning NCAA Division I (head men's and women's coach at the University of Tulsa), NCAA Division II (Northern Michigan University), and NAIA (Kansas Wesleyan University — led a #246-to-top-30 national-ranking turnaround; Stephens College). His CV also includes professional club coaching (Reno Rattlers, USISL) and international academy coaching at Estudiantes de La Plata in Argentina; he played college soccer at UCLA and the University of Oregon. A 2-assistant staff (Andres Ruiz, Hayden Poll). No dedicated soccer-specific stadium, video-analysis, or strength & conditioning staff confirmed on the official site.",
-    "fitOlivier": 45,
+    "fitOlivier": 41,
     "lensScores": {
-      "overall": 45,
-      "soccer": 50,
+      "overall": 41,
+      "soccer": 38,
       "academic": 52,
       "minutes": 55,
       "lifestyle": 0,
-      "value": 51
+      "value": 48
     },
     "facilities": [
       "Head coach Bruce Palmbaum holds a USSF 'A' Coaching License — an unusually high coaching credential for a JUCO coach",
@@ -20224,9 +20239,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No specific NCAA transfer destinations confirmed.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://tmcclizards.com/sports/mens-soccer/roster/coaches/kyle-kelly/33",
-        "note": "Truckee Meadows CC doesn't publish a page tracking where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -20235,14 +20253,14 @@
       "fitness": 38
     },
     "devScoresNote": "Tier-1: head coach Kyle Kelly (joined 2022 as assistant, promoted to HC for 2023) previously spent 4 years as the NAIA head women's soccer coach at Sierra Nevada University, led Truckee High School to three Nevada state titles (Nevada 3A Girls Coach of the Year 2015), and worked 8 years as Program Director for a Seattle youth soccer camp. TMCC fields a real dedicated facility, TMCC Soccer Field, confirmed via the athletics site's own facilities navigation. No video-analysis, GPS, or dedicated soccer strength & conditioning staff confirmed.",
-    "fitOlivier": 44,
+    "fitOlivier": 39,
     "lensScores": {
-      "overall": 44,
-      "soccer": 44,
+      "overall": 39,
+      "soccer": 33,
       "academic": 26,
       "minutes": 54,
       "lifestyle": 50,
-      "value": 46
+      "value": 43
     },
     "facilities": [
       "Real, dedicated soccer facility — TMCC Soccer Field",
@@ -20458,9 +20476,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks confirmed. No NCAA transfer destinations confirmed yet for a program this young.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://pnwccgladiators.com/sports/mens-soccer",
-        "note": "Pacific Northwest Christian College's program is new (first competitive season 2023) and has had coaching turnover — too early yet to have a multi-year transfer history."
+        "d1Count": 0,
+        "yearsCovered": "2023-2025",
+        "years": 3,
+        "perYear": 0.0,
+        "window": "arrival seasons 2023-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2023 to fall 2025, since the program started in 2023, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -20469,14 +20490,14 @@
       "fitness": 30
     },
     "devScoresNote": "Tier-1: head coach Maximus VanEaton was hired in March 2026, his first collegiate head-coaching role — real credentials include 2024 SPSL 2A Girls Soccer Coach of the Year (a Washington state high-school league) and a United Soccer Coaches High School Diploma certification; he played college soccer at Linfield University (NCAA D3) and currently plays for Washington Premier FC's men's team (2023-present). A 2-person staff (VanEaton + assistant Nathan Trevino) plus a named athletic trainer (Micaela Trefry). The program has had genuine coaching turnover (at least three different head coaches identified across 2024-2026). No dedicated soccer facility, video-analysis, or strength & conditioning staff confirmed.",
-    "fitOlivier": 41,
+    "fitOlivier": 37,
     "lensScores": {
-      "overall": 41,
-      "soccer": 36,
+      "overall": 37,
+      "soccer": 25,
       "academic": 15,
       "minutes": 59,
       "lifestyle": 0,
-      "value": 54
+      "value": 51
     },
     "facilities": [
       "Brand-new head coach Maximus VanEaton (hired March 2026), a real 2024 Washington state HS Coach of the Year",
@@ -20692,9 +20713,12 @@
       "draftRank": "JUCO level — no MLS SuperDraft picks confirmed. ICC's own 'Players Moving On' page lists roughly 28 transfer destinations, including two confirmed NCAA D1 programs (Grand Canyon, UW-Green Bay), but carries no year windows or division labels for the rest.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://illinoiscentralcougars.com/sports/2021/9/3/players-moving-on-ms",
-        "note": "Illinois Central's own 'Players Moving On' page lists real transfer destinations, including D1 programs Grand Canyon and UW-Green Bay — but doesn't date or label each entry consistently, so a reliable year-by-year rate can't be calculated from it yet."
+        "d1Count": 1,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -20703,14 +20727,14 @@
       "fitness": 45
     },
     "devScoresNote": "Tier-1: HC Gabe Carreno (4th season, 32-18-3 career at ICC) played semi-pro/pro (NASL/USL, Albuquerque Sol PDL/USL2), holds a USSF 'B' License, FA Talent ID Certificate and an MBA in Global Sports Business; prior assistant stops at Otero Junior College (Region IX title, Staff of the Year), Heartland CC, and Illinois Wesleyan University. A 4-person staff (HC + 3 assistants) plus a named Athletic Trainer (Anna Smarjesse). Real dedicated CougarPlex Soccer Field (natural grass, since 2011) plus a separate on-campus practice field a quarter-mile away. No dedicated strength & conditioning coach, video-analysis, or sports-science staff confirmed on the official staff directory.",
-    "fitOlivier": 47,
+    "fitOlivier": 43,
     "lensScores": {
-      "overall": 47,
-      "soccer": 49,
+      "overall": 43,
+      "soccer": 39,
       "academic": 36,
       "minutes": 60,
       "lifestyle": 0,
-      "value": 53
+      "value": 50
     },
     "facilities": [
       "Dedicated CougarPlex Soccer Field (natural grass, since 2011) plus a separate practice field",
@@ -20925,9 +20949,12 @@
       "draftRank": "JUCO level — no MLS SuperDraft picks confirmed and no dedicated alumni/next-level page found on the official athletics site.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://www.swic.edu/students/services/student-life/athletics/mens-soccer/",
-        "note": "Southwestern Illinois doesn't publish a page tracking where its players transfer to next, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -20936,14 +20963,14 @@
       "fitness": 40
     },
     "devScoresNote": "Tier-1: HC Lindsay Eversmeyer (4th season) brings an extraordinary personal playing/coaching pedigree — played NCAA D1 at Kansas and at Harris-Stowe State (5 offensive scoring records, AMC MVP 2001), was the first and only woman to play men's professional soccer (Major Indoor Soccer League, St. Louis Steamers, 2005), holds a USSF 'B' National Coaching License, and has been inducted into the Missouri Sports HOF (2024), St. Louis Sports HOF (2024) and Illinois Sports HOF (2025) — but the program itself shows no dedicated stadium (home games split across campus sites), no confirmed strength & conditioning staff, and no video-analysis/sports-science resources on the official site. A 3-person staff (HC + assistant + a dedicated goalkeeper coach) is a real, if modest, structure. Per §5a, this score reflects the training ENVIRONMENT, not the coach's own elite personal CV, which is captured in coaches.json instead.",
-    "fitOlivier": 40,
+    "fitOlivier": 36,
     "lensScores": {
-      "overall": 40,
-      "soccer": 44,
+      "overall": 36,
+      "soccer": 33,
       "academic": 36,
       "minutes": 64,
       "lifestyle": 0,
-      "value": 58
+      "value": 56
     },
     "facilities": [
       "HC Lindsay Eversmeyer — the first and only woman to play men's professional soccer (MISL, St. Louis Steamers, 2005), now in her 4th season as HC",
@@ -21159,9 +21186,12 @@
       "draftRank": "JUCO level — no MLS SuperDraft picks confirmed and no dedicated alumni/next-level page found on the official athletics site.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://www.ltcathletics.com/sports/msoc",
-        "note": "Lincoln Trail doesn't publish a page tracking where its players transfer to next, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 2,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.4,
+        "window": "arrival seasons 2021-2025",
+        "note": "2 players from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -21170,14 +21200,14 @@
       "fitness": 38
     },
     "devScoresNote": "Tier-1: HC Luis Dantas (hired July 2024, 2nd season) brings a genuinely deep personal playing/coaching CV — JUCO playing career at Murray State College (OK) and Cowley CC (2 conference titles, a regional title, Defensive Player of the Year), transferred to NCAA D1 Western Illinois University (800+ minutes, started every conference match), then 3 seasons of professional indoor soccer with the Wichita Wings (3 conference titles, 3 national tournament appearances) plus USL League Two/UPSL experience, and assistant-coaching stops at Newman University (NAIA, a Top 25 ranking and the program's first semifinal) and the University of Health Sciences and Pharmacy in St. Louis. The program itself, however, shows no confirmed dedicated stadium beyond 'Statesmen Park,' no strength & conditioning staff, and no video-analysis/sports-science resources on the official site — and is mid-rebuild on the field (0-4 and 1-4 the last two seasons). Per §5a, this score reflects the training ENVIRONMENT, not the coach's own strong personal CV, which is captured in coaches.json instead.",
-    "fitOlivier": 43,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 43,
-      "soccer": 42,
+      "overall": 40,
+      "soccer": 33,
       "academic": 15,
       "minutes": 58,
       "lifestyle": 0,
-      "value": 59
+      "value": 58
     },
     "facilities": [
       "HC Luis Dantas — a former NCAA D1 (Western Illinois) and JUCO player plus 3-season professional indoor soccer veteran (Wichita Wings)",
@@ -21386,9 +21416,12 @@
       "draftRank": "JUCO level — no MLS SuperDraft picks confirmed. No dedicated alumni/next-level page found; the program is too young (launched 2023) to have an established transfer track record.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://cgtctitans.com/sports/msc",
-        "note": "Central Georgia Tech's program launched in 2023 and doesn't yet publish a page tracking transfer destinations — too early to have an established track record."
+        "d1Count": 0,
+        "yearsCovered": "2023-2025",
+        "years": 3,
+        "perYear": 0.0,
+        "window": "arrival seasons 2023-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2023 to fall 2025, since the program started in 2023, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -21397,14 +21430,14 @@
       "fitness": 35
     },
     "devScoresNote": "Tier-1: HC Elvar Gudjonsson (from Iceland) arrived at CGTC to build the program from its 2023 launch after a substantial prior head-coaching tenure — corroborated via multiple independent sources (his former program's site history, LinkedIn, a local 41NBC news article on his original hiring, and a 'Knights Around the World' feature) — at Middle Georgia State University (NAIA), where he was head coach for at least 6 seasons. CGTC's own coach page confirms name/title/contact only, with no bio text published. Real dedicated facility: Atrium Health Field, opened in 2023 alongside the program's launch. No dedicated strength & conditioning or sports-science staff confirmed on the official site.",
-    "fitOlivier": 55,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 55,
-      "soccer": 42,
+      "overall": 51,
+      "soccer": 31,
       "academic": 47,
       "minutes": 59,
       "lifestyle": 50,
-      "value": 63
+      "value": 60
     },
     "facilities": [
       "Atrium Health Field — a dedicated soccer facility opened in 2023 alongside the program's launch",
@@ -21620,9 +21653,12 @@
       "draftRank": "JUCO level — no MLS SuperDraft picks confirmed and no dedicated alumni/next-level page found on the official athletics site.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://www.rangersports.net/sports/msoc",
-        "note": "Ranger College doesn't publish a page tracking where its players transfer to next, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 1,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.2,
+        "window": "arrival seasons 2021-2025",
+        "note": "1 player from this college moved straight onto a Division I roster in fall 2021 to fall 2025, each checked on the Division I school's own roster or player bio. Moves through another four-year college are not counted. Some Division I rosters do not list previous schools, so a few moves may be missing."
       }
     },
     "devScores": {
@@ -21631,14 +21667,14 @@
       "fitness": 35
     },
     "devScoresNote": "Tier-1: HC Ross Anderson (3rd year, from Glasgow, Scotland) played NAIA soccer at Ottawa University (KS) 2014-2017 — a 4-year KCAC All-Conference honoree, 3-year KCAC preseason team member, and top-10 in program history for assists/goals/points as a midfielder — then moved into coaching/analytics at the University of Saint Mary (KS) 2018-2021, helping the program to its highest-ever conference tournament finish (5th, 2019). No dedicated stadium name, strength & conditioning staff, or sports-science resources confirmed on the official site; the coaches page itself is thin (no staff beyond HC and one assistant).",
-    "fitOlivier": 55,
+    "fitOlivier": 51,
     "lensScores": {
-      "overall": 55,
-      "soccer": 42,
+      "overall": 51,
+      "soccer": 32,
       "academic": 20,
       "minutes": 58,
       "lifestyle": 50,
-      "value": 62
+      "value": 60
     },
     "facilities": [
       "3-season above-.500 program trend (2023-24 through 2025-26) under HC Ross Anderson",
@@ -21847,9 +21883,12 @@
       "draftRank": "JUCO level — no MLS SuperDraft picks confirmed and no dedicated alumni/next-level page found on the official athletics site.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "perYear": null,
-        "sourceUrl": "https://www.nocjets.com/sports/msoc",
-        "note": "NOC-Enid doesn't publish a page tracking where its players transfer to next, so this can't be measured — that's different from actually having zero transfers."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -21858,14 +21897,14 @@
       "fitness": 45
     },
     "devScoresNote": "Tier-1: HC Aron Bassoff (2nd season) brings one of the deepest coaching CVs found anywhere in this campaign — 19 seasons of intercollegiate coaching at the NCAA DII, NCAA DIII, and NAIA levels, 18 as a head coach (13 as a head men's coach), 7 nationally-ranked teams, 3 conference/regional championships, 11 second-place finishes, and 3 Conference Players of the Year produced, including a 47-22-6 record over 5 seasons at Davis & Elkins; he holds a B.S. in Sport and Exercise Science (Messiah College) and an M.S. in Sport Management (Nova Southeastern). The program's real standout asset is environmental: the $12 million Advance Soccer Complex (opened 2023) — a 1,500-seat championship artificial turf stadium plus six full-size natural turf practice/tournament fields and an indoor training complex with locker rooms, smart boards, and a training room — one of the best-documented JUCO soccer facilities found in this entire campaign. No dedicated strength & conditioning coach confirmed on the official staff directory.",
-    "fitOlivier": 45,
+    "fitOlivier": 40,
     "lensScores": {
-      "overall": 45,
-      "soccer": 50,
+      "overall": 40,
+      "soccer": 39,
       "academic": 47,
       "minutes": 53,
       "lifestyle": 0,
-      "value": 53
+      "value": 50
     },
     "facilities": [
       "The $12 million Advance Soccer Complex (opened 2023) — a 1,500-seat championship turf stadium plus six full-size natural turf practice fields and an indoor training complex",
@@ -22295,13 +22334,12 @@
       "draftRank": "JUCO — no MLS SuperDraft picks. Oxford students usually continue to Emory College in Atlanta rather than transferring to other soccer programs.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Oxford doesn't publish where its players go next; most students continue to Emory's Atlanta campus, which plays NCAA Division III."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -22310,14 +22348,14 @@
       "fitness": 45
     },
     "devScoresNote": "Tier-1 (oxfordcollegeathletics.com staff directory and head coach bio, read 2026-09-17): HC Greg Moss-Brown (USSF A licence, NSCAA Premier; two-time NCAA D1 All-American at Hartwick; 25 years coaching), associate head coach Lee Duggan and assistant Allan Wedderburn; department head athletic trainer and assistant athletic trainer. No soccer-specific S&C, video or GPS staff listed; home venue not stated on the pages read.",
-    "fitOlivier": 46,
+    "fitOlivier": 42,
     "lensScores": {
-      "overall": 46,
-      "soccer": 44,
+      "overall": 42,
+      "soccer": 33,
       "academic": 20,
       "minutes": 53,
       "lifestyle": 50,
-      "value": 28
+      "value": 25
     },
     "facilities": [
       "Residential campus of Emory University, about 40 miles east of Atlanta",
@@ -22712,13 +22750,12 @@
       "draftRank": "JUCO — a young program with no MLS SuperDraft picks or published transfer history.",
       "nextLevel": {
         "metric": "d1TransferRate",
-        "d1Count": null,
-        "totalCount": null,
-        "yearsCovered": null,
-        "years": null,
-        "perYear": null,
-        "sourceUrl": null,
-        "note": "Southwestern Christian doesn't publish where its players transfer to next, so this can't be measured yet."
+        "d1Count": 0,
+        "yearsCovered": "2021-2025",
+        "years": 5,
+        "perYear": 0.0,
+        "window": "arrival seasons 2021-2025",
+        "note": "No player from this college was found moving straight onto a Division I roster in fall 2021 to fall 2025, after checking every Division I men's roster for those seasons. Some Division I rosters do not list previous schools, so a move could still be missing."
       }
     },
     "devScores": {
@@ -22727,14 +22764,14 @@
       "fitness": 30
     },
     "devScoresNote": "Tier-1 (swccramathletics.com coaches page and HC bio, read 2026-09-17): a single listed coach, HC Josue Romero (2nd season, eight years' coaching experience, also coaches Kernow Storm SC); no assistants, S&C, athletic trainer, video or GPS staff listed. No home-venue or facilities description on the pages read.",
-    "fitOlivier": 51,
+    "fitOlivier": 46,
     "lensScores": {
-      "overall": 51,
-      "soccer": 38,
+      "overall": 46,
+      "soccer": 26,
       "academic": 15,
       "minutes": 50,
       "lifestyle": 50,
-      "value": 54
+      "value": 51
     },
     "facilities": [
       "On-campus residence halls",

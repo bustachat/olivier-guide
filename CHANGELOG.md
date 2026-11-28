@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.30 (2026-11-28) — JUCO Division I transfer rate measured over one five-year window for all 93 junior colleges
+
+**What:** the owner doubted Indian Hills' stored rate (0.88 a year). It was right for the window used (15 moves over 2008-2024), but each school had a different window and 21 had no rate at all. Owner ruling: one five-year window for every JUCO. Full method and decisions: CLAUDE.md 6C, campaign C1.
+
+**How the moves were found and confirmed:**
+- Leads from TopDrawerSoccer's 2021-2025 transfer trackers, seven JUCO alumni pages, and the guide's stored rosters.
+- Every Division I men's roster for 2021-2025 (212 of 213 programs) read for players whose previous school is a junior college; 2020 rosters checked for players first seen in 2021; leads not shown on a roster checked in the player's own bio on the Division I school's site.
+- Owner rulings: only confirmed moves count; a JUCO with none gets 0; a move counts when the arrival school's roster cannot show it but the JUCO's page and a later D1 roster do; the benchmark (`D1_RATE_DIVISOR`) stays 5.0594.
+- Checks that changed counts: West Florida was Division II through 2025 (4 moves not counted); roster lines do not list schools in time order, so indirect-looking moves were settled from player bios.
+
+**Result:** 314 confirmed moves across 50 of 93 JUCOs; every one is listed with its evidence in `data/juco-d1-transfers-2021-2025.json`. Five-year totals: Iowa Western 35, Salt Lake 26, Tyler 25, Monroe 22, Cowley 20, Pima 12, Indian Hills 11, Arizona Western 10.
+
+**Scores (91 JUCOs; NWACC and Southern Crescent Tech, with no season in the window, unchanged):** `proPlayers.nextLevel`, `fitOlivier`, `lensScores.overall`, `soccer` and `value` re-stored with the real `js/scores.js` (`apply_juco_d1_rates.py`). 9 up, 79 down, 3 the same. Most falls come from the real-0 ruling (about 4-5 points for the 41 JUCOs with no confirmed move). Up most: Salt Lake 48 to 55, Monroe 57 to 63, Indian Hills 43 to 46, Arizona Western 56 to 59.
+
+**Text:** Tyler JC's "highest measured transfer rate (about 6.6 a year)" claim replaced in its records, coach bio and the Pro Pipeline table (Iowa Western and Salt Lake now have more moves); Indian Hills, Coffeyville, Garden City and Harcum text brought in line with the counts. `js/scores.js` comments and CLAUDE.md 5b updated; no formula changed.
+
+---
+
 ### v46.29 (2026-11-28) — Indian Hills: sports-medicine staff, 2026 season and coach details brought up to date
 
 **What:** the owner pointed to the bio of Indian Hills' Head Athletic Trainer, Laura Goehring. Re-read the bio and the full athletics staff directory in a real browser.

@@ -80,15 +80,16 @@ function calcDevAvg(school) {
 //   • nextLevel with a measured rate → min(1, perYear / D1_RATE_DIVISOR)
 //   • nextLevel without one          → NEXT_LEVEL_NEUTRAL  (unknown ≠ zero, §5b)
 //
-// Both constants are DERIVED, not chosen (§5b), from all 29 JUCOs read in a real
-// browser with every destination's division hand-verified against the NCAA member
-// directory: the divisor is the 90th percentile of the 7 multi-year measured
-// schools; the neutral is the MEDIAN measured factor — deliberately NOT 0.5, which
-// sat above the median real program and so rewarded a quiet website. 21 JUCOs
-// publish no usable alumni data and take the neutral. Recompute BOTH if any
-// school's perYear changes — they are derived, not chosen.
-const D1_RATE_DIVISOR    = 5.0594;   // p90 of the 7 multi-year measured JUCOs
-const NEXT_LEVEL_NEUTRAL = 0.3773;   // median measured factor — NOT 0.5
+// Since v46.30 (CLAUDE.md 6C, campaign C1) every JUCO's perYear is its confirmed
+// moves onto Division I rosters in arrival seasons 2021-2025 divided by its seasons
+// in that window; a JUCO with none stores 0 (a real 0, owner ruling). The divisor
+// was first derived in v42.12 as the 90th percentile of 7 long-window schools; the
+// owner chose to KEEP 5.0594 in 2026-11 (the 90th percentile of the new five-year
+// rates was only 1.8, which would give ten JUCOs the full score). Do not re-derive
+// it without asking. The neutral now applies only to a JUCO with no season in the
+// window (perYear null).
+const D1_RATE_DIVISOR    = 5.0594;   // kept by owner ruling 2026-11-28 (see above)
+const NEXT_LEVEL_NEUTRAL = 0.3773;   // only for JUCOs with no season in the window
 
 function nextLevelFactor(school) {
   const pp = school.proPlayers;

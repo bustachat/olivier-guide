@@ -195,7 +195,14 @@ for c in cands:
         arrival = c["firstSeenAtDestination"]
         basis = "first season on the destination roster"
         if arrival == 2021:
-            if 2021 in other_years:
+            r20 = sweep.get(c["destinationKey"], {}).get("roster2020")
+            on2020 = bool(r20 and any(same_person(norm_name(x), c["_n"]) for x in r20["names"]))
+            if on2020:
+                # on the destination's 2020 roster: his first Division I season was 2020, before the window
+                arrival, basis = 2020, "on the destination's 2020 roster (%s)" % r20["title"][:40]
+            elif r20 and r20["n"] >= 15:
+                basis += " (not on the %d-player 2020 roster)" % r20["n"]
+            elif 2021 in other_years:
                 basis += " (2021, matches page or tracker)"
             else:
                 flags.append("first seen 2021: may have arrived before the window; check the 2020 roster")
@@ -217,7 +224,9 @@ for c in cands:
         flags.append("page/tracker destination differs: " + "; ".join(sorted(dests))[:120])
     if arrival is not None and not (2021 <= arrival <= 2025):
         flags.append("arrival outside 2021-2025")
-    if c["firstSeenAtDestination"] and not flags:
+    if arrival is not None and not (2021 <= arrival <= 2025) and c["firstSeenAtDestination"]:
+        status = "outside_window"   # e.g. already on the destination's 2020 roster
+    elif c["firstSeenAtDestination"] and not flags:
         status = "confirmed"
     elif c["firstSeenAtDestination"]:
         status = "needs_check"
@@ -228,7 +237,7 @@ for c in cands:
     c["_key"] = norm_name(c["player"]); c.pop("_n"); c.pop("_indirect")
 
 # ---------- 3b. one count per player: keep his first direct Division I move ----------
-rank = {"confirmed": 0, "needs_check": 1, "lead": 2}
+rank = {"confirmed": 0, "needs_check": 1, "lead": 2, "outside_window": 3}
 groups = []
 for c in cands:
     for g in groups:

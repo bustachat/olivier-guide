@@ -1509,8 +1509,14 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
   - A short first name matches the long one ("Tim" / "Timothy").
   - When two JUCOs are listed, the move counts for the last one (Amancio: Indian Hills, then Eastern Florida, then North Florida).
   - Another college after the JUCO, including short forms like "UIC", raises the indirect-move flag.
+- **2020 check done 2026-11-28.**
+  - Tool: `d1_roster_names.js` (served at `/names.js`) reads EVERY name on a 2020 or 2020-21 roster. The results are stored as `rosterSweep.programs.<key>.roster2020` for the 40 programs involved.
+  - Rule: a player first seen in 2021 who is on that school's 2020 roster played his first Division I season before the window, so his status is `outside_window`, whatever month the COVID 2020 season was played. All 42 such matches were checked and are exact name matches.
+  - A player not on a roster of 15 or more names counts as a 2021 arrival.
+  - Virginia Tech 2020 is at `/roster/season/2020-21`; South Carolina at `/sports/msoc/roster/season/2020/`.
+- After it: 244 confirmed, 37 needs_check, 79 lead, 42 outside_window, 9 duplicate. 46 JUCOs have at least one confirmed move.
 - **Flags to clear in stage 2:**
-  - 60 first seen 2021: the player may have arrived before the window. Re-sweep the 2020 rosters to settle these in one pass.
+  - ~~60 first seen 2021~~: cleared by the 2020 check above.
   - 24 destinations that joined D1 recently. The `RECENT_D1` list in the script is from memory and unverified; confirm each join year on ncaa.org.
   - 15 possible indirect moves.
   - 7 destinations not matched to a current D1 program, among them St. Francis Brooklyn, which dropped men's soccer.

@@ -1477,7 +1477,16 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
   - Programs whose table has no previous-school column (UIC, Binghamton `o62`, Bryant `o81`, Cal `o107` in some seasons) undercount; `info` flags them.
   - Raw rows include high schools with "College" in the name; filter against the guide's JUCO names.
   - Programs that dropped men's soccer since 2021 (e.g. St. Francis Brooklyn) are not in the 2026-27 NCAA list; check them separately.
-- Next: sweep the remaining 181 programs (resume at `o127` in `allPrograms` order, after `o116`), then match rows to JUCOs and dedupe against the page/tracker leads.
+- **2026-11-28 first pass complete: 212 of 213 programs read** (1,906 raw rows). Michigan State (`o416`) froze twice; read it on its own. Wofford's NCAA web address is the college site; its athletics site is `woffordterriers.com` (stored).
+- First match against guide JUCO names: 309 player-JUCO pairs across 52 JUCOs. Most: Tyler 31, Monroe 27, Iowa Western 25, Salt Lake 25, Cowley 16, Iowa Lakes 11. These are unconfirmed and include players already at the destination in 2021 who arrived earlier; matching, arrival-season and dedupe rules come next.
+- Second pass needed:
+  - **20 programs read 0 players** (`base` null or all 0): Bradley, Central Connecticut, UCF, Clemson, Colgate, Cornell, Davidson, George Mason, Kentucky, Omaha, Northwestern, Notre Dame, Old Dominion, Penn State, San Diego State, San Jose State, South Carolina, Stanford, Virginia, Virginia Tech. Mostly WMT-style sites whose rosters load in the browser. **Omaha matters most**: Iowa Western and Cowley list many moves there.
+  - **7 programs read 0 in some seasons**: Cal Poly, Cal, Gardner-Webb, Gonzaga, Lipscomb, Ohio State, Seattle U.
+  - 52 programs print no previous-school field in any season. Their hits come from a combined hometown / high school column and will undercount.
+- **Open each school's men's soccer roster page** (`https://<site>/sports/mens-soccer/roster`), not the home page, before running the script. The owner asked for this: home pages show basketball splash screens, which made it look as if the wrong sport was being read.
+- **The Chrome connection dropped on batches of three or more** late in the run, and the tab ended on a page Claude may not read. Use one or two sites per call, and save after every few.
+- Nine programs need another method (`base` null or 0 players): Bradley, Central Connecticut, UCF, Clemson, Colgate, Cornell, Davidson, George Mason, Kentucky. Most are WMT-style sites whose rosters load in the browser; read the rendered page instead.
+- Then match rows to JUCOs and dedupe against the page/tracker leads.
 
 #### C0. Stored rosters are the source of truth — ✅ CAMPAIGN COMPLETE (v45.99–v46.18, closed out v46.19)
 

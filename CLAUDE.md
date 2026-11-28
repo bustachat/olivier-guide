@@ -1497,6 +1497,25 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
   - Cal 2021's page title has no year.
 - Reader bug fixed during the run: a comma selector picked an empty image link before the player's name, so WMT list rows were all skipped. Pick the name field first.
 - **The sweep undercounts:** Iowa Western has 26 sweep pairs against 37 moves on its own alumni page, because many destinations (UIC among them) print no previous school. Stage 2 must merge the sweep with the page and tracker leads, not replace them.
+- **Merge step done 2026-11-28:** `.claude/skills/transfer-tracking/scripts/build_juco_d1_candidates.py` writes `candidates` and `candidateSummary` into the audit file. Back up the file before re-running: each run rebuilds both from the raw sources. Result: 411 candidates (230 confirmed, 93 needs_check, 79 lead, 9 duplicate). 44 JUCOs have at least one confirmed move; 38 have nothing at all.
+- Statuses:
+  - `confirmed`: the destination's own roster names the JUCO, first seen 2022-2025, and no flag.
+  - `needs_check`: a roster names it, but a flag is raised.
+  - `lead`: only a page or tracker names it.
+  - `duplicate`: the same player at a later school; he is counted once, at his first direct D1 move.
+- Merge rules learned:
+  - Stored 2026-27 rosters only corroborate; on their own they create no candidate (their players often arrived in 2026).
+  - Strip tracker position prefixes ("F Wawa Palga").
+  - A short first name matches the long one ("Tim" / "Timothy").
+  - When two JUCOs are listed, the move counts for the last one (Amancio: Indian Hills, then Eastern Florida, then North Florida).
+  - Another college after the JUCO, including short forms like "UIC", raises the indirect-move flag.
+- **Flags to clear in stage 2:**
+  - 60 first seen 2021: the player may have arrived before the window. Re-sweep the 2020 rosters to settle these in one pass.
+  - 24 destinations that joined D1 recently. The `RECENT_D1` list in the script is from memory and unverified; confirm each join year on ncaa.org.
+  - 15 possible indirect moves.
+  - 7 destinations not matched to a current D1 program, among them St. Francis Brooklyn, which dropped men's soccer.
+  - 79 page or tracker leads to look up on the destination roster one by one.
+- Confirmed so far (lower bounds, not rates yet): Salt Lake 22, Tyler 21, Iowa Western 19, Monroe 19, Cowley 16, then 8 or fewer each.
 - **Open each school's men's soccer roster page** (`https://<site>/sports/mens-soccer/roster`), not the home page, before running the script. The owner asked for this: home pages show basketball splash screens, which made it look as if the wrong sport was being read.
 - **The Chrome connection dropped on batches of three or more** late in the run, and the tab ended on a page Claude may not read. Use one or two sites per call, and save after every few.
 - Nine programs need another method (`base` null or 0 players): Bradley, Central Connecticut, UCF, Clemson, Colgate, Cornell, Davidson, George Mason, Kentucky. Most are WMT-style sites whose rosters load in the browser; read the rendered page instead.

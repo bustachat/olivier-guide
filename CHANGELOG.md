@@ -6,6 +6,24 @@ Version history moved out of CLAUDE.md in v35.2 (July 2026) to reduce per-sessio
 
 ---
 
+### v46.29 (2026-11-28) — Indian Hills: sports-medicine staff, 2026 season and coach details brought up to date
+
+**What:** the owner pointed to the bio of Indian Hills' Head Athletic Trainer, Laura Goehring. Re-read the bio and the full athletics staff directory in a real browser.
+
+- `indian_hills` `facilityDetails.sportsMed` said only "Campus athletic training staff" and sent readers to the head coach's email. It now names the department: Head Athletic Trainer Laura Goehring (licensed, NATA board-certified, dry needling and blood flow restriction certified) and three full-time assistant trainers, covering all 19 sports on both campuses.
+- `devScoresNote` now records the trainers. The directory still lists no strength-and-conditioning coach and no sports-science staff, and the soccer staff is two coaches, so the fitness sub-score (50) and every score are unchanged: four trainers shared across 19 programs is baseline rehab access, not soccer-dedicated support.
+
+**2026 season (owner pointed to the athletics release of 2026-11-13, "Newton named ICCAC Coach of the Year"; schedule and 2026-27 roster re-read the same day):**
+- `confRecord`: 2026 added (1st ICCAC DI, 2-1 conference, 7-4-7 overall, third ICCAC regular-season title, lost 2-1 to Lewis & Clark CC in the NJCAA DI Midwest District semifinals, preseason No. 1 and ranked in all nine polls); the 2020 COVID row dropped to keep six seasons.
+- `titles`: 2026 ICCAC title, Coach of the Year (Newton) and Player of the Year (Leo Morley-Robertson) added. The Australian entry named two 2025-26 players who are no longer listed; the 2026-27 roster has three Australian freshmen (Sean Suzuki, Tristan Auffret, Luke McFarlane).
+- `rec`, `culture.olivierMatch`, `culture.vibe`, `culture.socialScene` and four `facilityDetails` texts said "fastest-rising JUCO program in the country", "elite development environment", "elite transfer pipeline" and "soccer development ROI is the strongest in the JUCO section". None is supported: its development score ranks 25th of 93 junior colleges and its measured Division I transfer rate is about 0.9 a year. Rewritten to what the staff directory, roster and records show.
+- `coaches.json` (Zac Newton): `yearsHC` 2 to 3; 2026 title and Coach of the Year added to `record`, `bio`, `strengths`; unsupported "fastest" claims removed; assistant in `staff[]` corrected from Felix Vu to Nuukele Gboe (staff directory). `overallScore` 74 and rank 44 unchanged: a conference award is not enough to re-score one coach (section 5d).
+- **Not verified:** the stored claim that Newton won the 2021 NJCAA DII national title at Southeastern CC. The release mentions only his 2021 ICCAC Coach of the Year award there.
+
+**Scores:** none moved.
+
+---
+
 ### v46.28 (2026-11-25) — Explore redesigned as a conference index with compact rows; saved logos for 212 schools and all conferences
 
 **What:** at the owner's request, after three mockups, the Explore Schools tab was rebuilt. No school data, score or rank changed.

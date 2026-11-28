@@ -1537,6 +1537,15 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
     - Three bugs found and fixed: "Eastern Florida State College" was matched only as "Eastern Florida", leaving "College" to look like a second school; a repeated hometown segment ("St. Thomas, Virgin Islands") read as St. Thomas University; "Campbell" was mapped to Presbyterian.
     - **Owner ruling 2026-11-28 (do not re-ask): a move counts when the arrival school's roster cannot show the previous school, provided the JUCO's own page names the move and a later D1 roster lists the JUCO.** Applied to Nedic and Greven (Iowa Western to UIC, 2023) and Ka (Pima to Central Connecticut, 2022). The candidate records the earlier move (`VIA_D1` in the script), not the later school.
   - Now: 272 confirmed, 2 unresolved, 2 indirect_not_counted, 79 lead, 43 outside_window, 4 not_d1_at_arrival, 9 duplicate; 0 needs_check. 49 JUCOs have a confirmed move (Salt Lake 26, Tyler 25, Iowa Western 22, Monroe 22, Cowley 16).
+  - ~~79 leads~~: **checked 2026-11-28** with `d1_lead_check.js`, served at `/leads.js`. Jobs go in `leadjobs.json` in the receiver's inbox folder and are served at `/leadjobs.json`.
+    - How it works: for each lead, find the player on the destination's roster for the arrival season (or the next), open his bio on that site, and look for the JUCO's name. Results are stored in `leadCheck` in the audit file.
+    - Result of 76 checked: 42 bios name the JUCO (now confirmed: a destination's own player bio counts as its roster record); 11 on the roster but the bio does not name it; 23 not found on the roster.
+    - The bio text was reviewed by eye; the Wisconsin-Milwaukee group, for example, reads "a transfer from Jefferson College in Hillsboro, Mo.".
+    - Destination-matching bug fixed: names were split at the comma, so "California State University, Northridge" became "California State University". Short forms added (CSU Bakersfield, UNC Wilmington, Loyola (MD), "Dayton Univerity").
+    - Not checked: St. Thomas (MN) (template page), Old Dominion (roster loads in the browser only), and Signorelli at St. Francis Brooklyn, which ended athletics in 2023.
+  - **Now: 314 confirmed, 37 lead (unconfirmed, do not count), 2 unresolved, 2 indirect_not_counted, 43 outside_window, 4 not_d1_at_arrival, 9 duplicate.** 50 JUCOs have a confirmed move.
+    - Five-year confirmed totals: Iowa Western 35, Salt Lake 26, Tyler 25, Monroe 22, Cowley 20, Pima 12, Indian Hills 11, Arizona Western 10.
+    - Stage 2 is effectively done. **Next is stage 3:** compute rates (confirmed ÷ seasons), recompute the divisor (90th percentile) and show the owner the table before any score moves.
   - 15 possible indirect moves.
   - 7 destinations not matched to a current D1 program, among them St. Francis Brooklyn, which dropped men's soccer.
   - 79 page or tracker leads to look up on the destination roster one by one.

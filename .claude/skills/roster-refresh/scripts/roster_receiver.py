@@ -42,9 +42,11 @@ class H(BaseHTTPRequestHandler):
         if self.path.startswith("/extractor.js"):
             self._send(200, open(os.path.join(HERE, "roster_extractor.js"), encoding="utf-8").read(),
                        "text/javascript; charset=utf-8")
-        elif self.path.startswith(("/sweep.js", "/render.js", "/names.js")):  # C1 campaign
+        elif self.path.startswith("/leadjobs.json"):  # C1 campaign: jobs file written into the inbox folder
+            self._send(200, open(os.path.join(INBOX, "leadjobs.json"), encoding="utf-8").read(), "application/json; charset=utf-8")
+        elif self.path.startswith(("/sweep.js", "/render.js", "/names.js", "/leads.js")):  # C1 campaign
             name = {"/sweep.js": "d1_roster_sweep.js", "/render.js": "d1_roster_render.js",
-                    "/names.js": "d1_roster_names.js"}[self.path.split("?")[0]]
+                    "/names.js": "d1_roster_names.js", "/leads.js": "d1_lead_check.js"}[self.path.split("?")[0]]
             p = os.path.join(HERE, "..", "..", "transfer-tracking", "scripts", name)
             self._send(200, open(p, encoding="utf-8").read(), "text/javascript; charset=utf-8")
         else:

@@ -116,12 +116,18 @@ ALIAS = {  # short or odd forms seen on alumni pages and trackers
  "western illinois": "o771", "wright state": "o810", "niagara": "o482", "louisville": "o367", "elon": "o1068",
  "northern illinois": "o503", "san diego": "o627", "gonzaga": "o260", "cornell": "o167", "manhattan": "o381",
  "nc state": "o490", "north carolina state": "o490", "syracuse": "o688", "liberty": "o355", "coastal carolina": "o149",
- "marist": "o386", "campbell": "o115", "presbyterian": "o1320", "dayton": "o175", "utrgv ": "o536", "unlv": "o465", "smu": "o663", "uconn": "o164",
+ "marist": "o386", "dayton univerity": "o175", "csu bakersfield": "o94", "cal state bakersfield": "o94", "unc wilmington": "o460", "loyola md": "o369", "loyola maryland": "o369", "california": "o107", "uc berkeley": "o107", "campbell": "o115", "presbyterian": "o1320", "dayton": "o175", "utrgv ": "o536", "unlv": "o465", "smu": "o663", "uconn": "o164",
 }
 NAMEIDX = [(norm_school(p["school"]), k) for k, p in programs.items()]
 def program_of(dest):
     if not dest: return None
-    first = re.split(r"/|\+| and |,", dest)[0]
+    if re.search(r"Loyola \((MD|Md\.?)\)|Loyola Maryland", dest): return "o369"   # "(MD)" is stripped by norm_school
+    # try the whole name first ("California State University, Northridge"), then the first of several schools
+    for cand in (dest, re.split(r"/|\+| and ", dest)[0], re.split(r"/|\+| and |,", dest)[0]):
+        k = _program_of(cand)
+        if k: return k
+    return None
+def _program_of(first):
     n = norm_school(first)
     if n in ALIAS: return ALIAS[n]
     for k, v in ALIAS.items():
@@ -259,6 +265,26 @@ for c in cands:
               "otherSources": c.pop("_other")})
     c["_key"] = norm_name(c["player"]); c.pop("_n"); c.pop("_indirect")
 
+
+# ---------- 3a0. stage 2 lead check: the destination's own player bio ----------
+LEADCHECK = {}
+for r in d.get("leadCheck", {}).get("results", []):
+    LEADCHECK[(r["destinationKey"], norm_name(r["player"]))] = r
+for c in cands:
+    if c["status"] != "lead" or not c["destinationKey"]: continue
+    r = None
+    for (dk, nn), rr in LEADCHECK.items():
+        if dk == c["destinationKey"] and same_person(nn, norm_name(c["player"])): r = rr; break
+    if not r: continue
+    c["leadCheck"] = {"onRoster": r["onRoster"], "rosterUrl": r["rosterUrl"], "bioUrl": r["bioUrl"], "bioNamesJuco": r["bioNamesJuco"]}
+    if r["bioNamesJuco"]:
+        c["status"] = "confirmed"
+        c["arrivalBasis"] = "destination's own player bio names the JUCO (roster %s)" % r["onRoster"]
+        c["flags"] = []
+    elif r["onRoster"]:
+        c["flags"].append("on the destination roster (%s) but his bio does not name the JUCO" % r["onRoster"])
+    else:
+        c["flags"].append("not found on the destination roster for %s or %s" % (c["arrivalSeason"], (c["arrivalSeason"] or 0) + 1))
 
 # ---------- 3a. decisions made by hand from the players' own bios (2026-11-28) ----------
 # Roster lines do not list schools in time order (Etienne-Courtois: "Indian Hills / Utah Tech" but he went

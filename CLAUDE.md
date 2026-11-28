@@ -1526,6 +1526,17 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
     - St. Thomas (MN) is unchecked (its schedule page shows an unfilled template); its only candidate is a lead.
     - Stonehill, Le Moyne, New Haven, UC San Diego, Bellarmine and Merrimack stay in `RECENT_D1_UNCHECKED`; none has a candidate.
   - After it: 258 confirmed, 19 needs_check, 79 lead, 42 outside_window, 4 not_d1_at_arrival, 9 duplicate. 48 JUCOs have at least one confirmed move.
+  - ~~15 possible indirect moves~~: **checked 2026-11-28, every needs_check resolved.**
+    - **Roster lines do not list schools in time order.** Etienne-Courtois reads "Indian Hills / Utah Tech", but his Wright State bio shows Utah Tech 2022-23, Indian Hills 2024, Wright State 2025. An indirect-looking line therefore needs the player's bio; never decide one from the order of names.
+    - The hand decisions live in `MANUAL` in the merge script, each with its evidence:
+      - Etienne-Courtois and Singh: confirmed.
+      - Matsumori (Iowa Western, then Norco College, then Xavier) and Rahill (Coastal Bend, then Rogers State D2, then Coastal Carolina): `indirect_not_counted`.
+      - Kuku: `outside_window` (Seattle U for the 2020 season).
+      - Lessey and Ferrari: `unresolved` (their bios do not give the order).
+      - Saito, Amancio, Florentino Junior and Saldana: confirmed, credited to the last JUCO listed.
+    - Three bugs found and fixed: "Eastern Florida State College" was matched only as "Eastern Florida", leaving "College" to look like a second school; a repeated hometown segment ("St. Thomas, Virgin Islands") read as St. Thomas University; "Campbell" was mapped to Presbyterian.
+    - **Owner ruling 2026-11-28 (do not re-ask): a move counts when the arrival school's roster cannot show the previous school, provided the JUCO's own page names the move and a later D1 roster lists the JUCO.** Applied to Nedic and Greven (Iowa Western to UIC, 2023) and Ka (Pima to Central Connecticut, 2022). The candidate records the earlier move (`VIA_D1` in the script), not the later school.
+  - Now: 272 confirmed, 2 unresolved, 2 indirect_not_counted, 79 lead, 43 outside_window, 4 not_d1_at_arrival, 9 duplicate; 0 needs_check. 49 JUCOs have a confirmed move (Salt Lake 26, Tyler 25, Iowa Western 22, Monroe 22, Cowley 16).
   - 15 possible indirect moves.
   - 7 destinations not matched to a current D1 program, among them St. Francis Brooklyn, which dropped men's soccer.
   - 79 page or tracker leads to look up on the destination roster one by one.

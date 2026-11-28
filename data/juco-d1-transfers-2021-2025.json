@@ -21318,9 +21318,9 @@
    "arrivalSeason": 2023,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
+    "resolved by hand: bio: Rogers State (Division II) 2022 before Coastal Carolina 2023 (goccusports.com bio)"
    ],
-   "status": "needs_check",
+   "status": "indirect_not_counted",
    "otherSources": []
   },
   {
@@ -21339,9 +21339,9 @@
    "arrivalSeason": 2024,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "two JUCOs listed; credited to the last one"
+    "resolved: two JUCOs listed, credited to the last one, which he left directly for D1"
    ],
-   "status": "needs_check",
+   "status": "confirmed",
    "otherSources": []
   },
   {
@@ -22639,7 +22639,6 @@
    "arrivalSeason": 2020,
    "arrivalBasis": "on the destination's 2020 roster (2020-21 Men's Soccer Roster - Butler Uni)",
    "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move",
     "arrival outside 2021-2025"
    ],
    "status": "outside_window",
@@ -22661,9 +22660,9 @@
    "arrivalSeason": 2021,
    "arrivalBasis": "first season on the destination roster (not on the 31-player 2020 roster)",
    "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
+    "resolved by hand: bio: Eastern Florida 2019-20, Seattle U for the 2020 season (played spring 2021), FGCU 2021; first D1 season 2020 (fgcuathletics.com bio)"
    ],
-   "status": "needs_check",
+   "status": "outside_window",
    "otherSources": []
   },
   {
@@ -22683,10 +22682,8 @@
    ],
    "arrivalSeason": 2023,
    "arrivalBasis": "first season on the destination roster",
-   "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
-   ],
-   "status": "needs_check",
+   "flags": [],
+   "status": "confirmed",
    "otherSources": [
     {
      "source": "transfer tracker",
@@ -22763,9 +22760,9 @@
    "arrivalSeason": 2024,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "two JUCOs listed; credited to the last one"
+    "resolved: two JUCOs listed, credited to the last one, which he left directly for D1"
    ],
-   "status": "needs_check",
+   "status": "confirmed",
    "otherSources": []
   },
   {
@@ -22808,10 +22805,8 @@
    ],
    "arrivalSeason": 2025,
    "arrivalBasis": "first season on the destination roster",
-   "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
-   ],
-   "status": "needs_check",
+   "flags": [],
+   "status": "confirmed",
    "otherSources": [
     {
      "source": "transfer tracker",
@@ -22838,10 +22833,8 @@
    ],
    "arrivalSeason": 2025,
    "arrivalBasis": "first season on the destination roster",
-   "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
-   ],
-   "status": "needs_check",
+   "flags": [],
+   "status": "confirmed",
    "otherSources": [
     {
      "source": "transfer tracker",
@@ -22981,9 +22974,9 @@
    "arrivalSeason": 2025,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
+    "resolved by hand: roster lists Harcum, Felician (D2); order not shown in the bio; not counted until checked"
    ],
-   "status": "needs_check",
+   "status": "unresolved",
    "otherSources": []
   },
   {
@@ -23482,9 +23475,9 @@
    "arrivalSeason": 2025,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
+    "resolved by hand: bio: Utah Tech 2022-23, Indian Hills 2024, Wright State 2025; direct JUCO to D1 move (wsuraiders.com bio)"
    ],
-   "status": "needs_check",
+   "status": "confirmed",
    "otherSources": [
     {
      "source": "JUCO alumni page",
@@ -24326,6 +24319,35 @@
   },
   {
    "jucoId": "iowa_western",
+   "player": "Luka Nedic",
+   "destinationKey": "o302",
+   "destinationSchool": "University of Illinois Chicago",
+   "firstSeenAtDestination": 2025,
+   "seasonsSeen": [
+    2025
+   ],
+   "previousSchoolAsListed": "Lincoln, Neb. / Omaha South HS / Iowa Western CC/UIC",
+   "sources": [
+    "destination roster",
+    "JUCO alumni page"
+   ],
+   "arrivalSeason": 2023,
+   "arrivalBasis": "JUCO alumni page, supported by a later Division I roster (owner ruling 2026-11-28)",
+   "flags": [
+    "resolved by hand: owner ruling 2026-11-28 (counts when the arrival roster cannot show it): direct move was Iowa Western to UIC, 2023 (Iowa Western page); UIC prints no previous school; Creighton 2025 roster lists Iowa Western CC/UIC"
+   ],
+   "status": "confirmed",
+   "otherSources": [
+    {
+     "source": "JUCO alumni page",
+     "arrivalSeason": 2023,
+     "destinationAsListed": "University of Illinois-Chicago",
+     "url": "https://www.goreivers.com/sports/msoc/former"
+    }
+   ]
+  },
+  {
+   "jucoId": "iowa_western",
    "player": "Marc Escuderos",
    "destinationKey": "o719",
    "destinationSchool": "The University of Tulsa",
@@ -24354,6 +24376,35 @@
   },
   {
    "jucoId": "iowa_western",
+   "player": "Oskar Greven",
+   "destinationKey": "o302",
+   "destinationSchool": "University of Illinois Chicago",
+   "firstSeenAtDestination": 2025,
+   "seasonsSeen": [
+    2025
+   ],
+   "previousSchoolAsListed": "Cologne, Germany / Lessing Gymnasium Düesseldorf / UIC / Iowa Western CC",
+   "sources": [
+    "destination roster",
+    "JUCO alumni page"
+   ],
+   "arrivalSeason": 2023,
+   "arrivalBasis": "JUCO alumni page, supported by a later Division I roster (owner ruling 2026-11-28)",
+   "flags": [
+    "resolved by hand: owner ruling 2026-11-28 (counts when the arrival roster cannot show it): direct move was Iowa Western to UIC, 2023 (Iowa Western page); UIC prints no previous school; Wright State 2025 roster lists UIC / Iowa Western CC"
+   ],
+   "status": "confirmed",
+   "otherSources": [
+    {
+     "source": "JUCO alumni page",
+     "arrivalSeason": 2023,
+     "destinationAsListed": "University of Illinois-Chicago",
+     "url": "https://www.goreivers.com/sports/msoc/former"
+    }
+   ]
+  },
+  {
+   "jucoId": "iowa_western",
    "player": "Sohei Matsumori",
    "destinationKey": "o812",
    "destinationSchool": "Xavier University",
@@ -24368,9 +24419,9 @@
    "arrivalSeason": 2023,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
+    "resolved by hand: bio: Iowa Western 2021, Norco College 2022, Xavier 2023; the D1 move came from Norco (goxavier.com bio)"
    ],
-   "status": "needs_check",
+   "status": "indirect_not_counted",
    "otherSources": []
   },
   {
@@ -24744,9 +24795,9 @@
    "arrivalSeason": 2025,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "two JUCOs listed; credited to the last one"
+    "resolved: two JUCOs listed, credited to the last one, which he left directly for D1"
    ],
-   "status": "needs_check",
+   "status": "confirmed",
    "otherSources": [
     {
      "source": "JUCO alumni page",
@@ -24825,67 +24876,6 @@
      "arrivalSeason": null,
      "destinationAsListed": "akron",
      "url": "data/rosters/akron/2026-10-05.json"
-    }
-   ]
-  },
-  {
-   "jucoId": "iowa_western",
-   "player": "Luka Nedic",
-   "destinationKey": "o169",
-   "destinationSchool": "Creighton University",
-   "firstSeenAtDestination": 2025,
-   "seasonsSeen": [
-    2025
-   ],
-   "previousSchoolAsListed": "Lincoln, Neb. / Omaha South HS / Iowa Western CC/UIC",
-   "sources": [
-    "destination roster",
-    "JUCO alumni page"
-   ],
-   "arrivalSeason": 2025,
-   "arrivalBasis": "first season on the destination roster",
-   "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move",
-    "page/tracker year 2023 differs from roster year 2025",
-    "page/tracker destination differs: University of Illinois-Chicago"
-   ],
-   "status": "needs_check",
-   "otherSources": [
-    {
-     "source": "JUCO alumni page",
-     "arrivalSeason": 2023,
-     "destinationAsListed": "University of Illinois-Chicago",
-     "url": "https://www.goreivers.com/sports/msoc/former"
-    }
-   ]
-  },
-  {
-   "jucoId": "iowa_western",
-   "player": "Oskar Greven",
-   "destinationKey": "o810",
-   "destinationSchool": "Wright State University",
-   "firstSeenAtDestination": 2025,
-   "seasonsSeen": [
-    2025
-   ],
-   "previousSchoolAsListed": "Cologne, Germany / Lessing Gymnasium Düesseldorf / UIC / Iowa Western CC",
-   "sources": [
-    "destination roster",
-    "JUCO alumni page"
-   ],
-   "arrivalSeason": 2025,
-   "arrivalBasis": "first season on the destination roster",
-   "flags": [
-    "page/tracker year 2023 differs from roster year 2025",
-    "page/tracker destination differs: University of Illinois-Chicago"
-   ],
-   "status": "needs_check",
-   "otherSources": [
-    {
-     "source": "JUCO alumni page",
-     "arrivalSeason": 2023,
-     "destinationAsListed": "University of Illinois-Chicago",
-     "url": "https://www.goreivers.com/sports/msoc/former"
     }
    ]
   },
@@ -25876,10 +25866,8 @@
    ],
    "arrivalSeason": 2023,
    "arrivalBasis": "first season on the destination roster",
-   "flags": [
-    "page/tracker destination differs: Campbell"
-   ],
-   "status": "needs_check",
+   "flags": [],
+   "status": "confirmed",
    "otherSources": [
     {
      "source": "transfer tracker",
@@ -27410,6 +27398,35 @@
   },
   {
    "jucoId": "pima_cc",
+   "player": "Taein Ka",
+   "destinationKey": "o127",
+   "destinationSchool": "Central Connecticut State University",
+   "firstSeenAtDestination": 2023,
+   "seasonsSeen": [
+    2023
+   ],
+   "previousSchoolAsListed": "South Korea / GVCS South Korean / Central Connecticut State / Pima Community College",
+   "sources": [
+    "destination roster",
+    "JUCO alumni page"
+   ],
+   "arrivalSeason": 2022,
+   "arrivalBasis": "JUCO alumni page, supported by a later Division I roster (owner ruling 2026-11-28)",
+   "flags": [
+    "resolved by hand: owner ruling 2026-11-28 (counts when the arrival roster cannot show it): direct move was Pima to Central Connecticut, 2022 (Pima page); CCSU roster behind a verification page; Coastal Carolina 2023 roster lists CCSU / Pima"
+   ],
+   "status": "confirmed",
+   "otherSources": [
+    {
+     "source": "JUCO alumni page",
+     "arrivalSeason": 2022,
+     "destinationAsListed": "Central Connecticut State University",
+     "url": "https://www.pimaaztecs.com/sports/msoc/movingon"
+    }
+   ]
+  },
+  {
+   "jucoId": "pima_cc",
    "player": "Angel Saldana",
    "destinationKey": "o30095",
    "destinationSchool": "Utah Tech University",
@@ -27425,9 +27442,9 @@
    "arrivalSeason": 2023,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "two JUCOs listed; credited to the last one"
+    "resolved: two JUCOs listed, credited to the last one, which he left directly for D1"
    ],
-   "status": "needs_check",
+   "status": "confirmed",
    "otherSources": []
   },
   {
@@ -27532,35 +27549,6 @@
      "arrivalSeason": 2023,
      "destinationAsListed": "Gonzaga",
      "url": "https://www.topdrawersoccer.com/college-soccer-articles/2023-mens-division-i-transfer-tracker_aid51526"
-    }
-   ]
-  },
-  {
-   "jucoId": "pima_cc",
-   "player": "Taein Ka",
-   "destinationKey": "o149",
-   "destinationSchool": "Coastal Carolina University",
-   "firstSeenAtDestination": 2023,
-   "seasonsSeen": [
-    2023
-   ],
-   "previousSchoolAsListed": "South Korea / GVCS South Korean / Central Connecticut State / Pima Community College",
-   "sources": [
-    "destination roster",
-    "JUCO alumni page"
-   ],
-   "arrivalSeason": 2023,
-   "arrivalBasis": "first season on the destination roster",
-   "flags": [
-    "page/tracker destination differs: Central Connecticut State University"
-   ],
-   "status": "needs_check",
-   "otherSources": [
-    {
-     "source": "JUCO alumni page",
-     "arrivalSeason": 2022,
-     "destinationAsListed": "Central Connecticut State University",
-     "url": "https://www.pimaaztecs.com/sports/msoc/movingon"
     }
    ]
   },
@@ -28625,10 +28613,8 @@
    ],
    "arrivalSeason": 2023,
    "arrivalBasis": "first season on the destination roster",
-   "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
-   ],
-   "status": "needs_check",
+   "flags": [],
+   "status": "confirmed",
    "otherSources": []
   },
   {
@@ -29021,8 +29007,8 @@
   {
    "jucoId": "tyler_jc",
    "player": "Tai Reece Chisholm",
-   "destinationKey": "o1320",
-   "destinationSchool": "Presbyterian College",
+   "destinationKey": "o115",
+   "destinationSchool": "Campbell University",
    "firstSeenAtDestination": null,
    "seasonsSeen": [],
    "previousSchoolAsListed": null,
@@ -29086,9 +29072,9 @@
    "arrivalSeason": 2022,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "page/tracker destination differs: St. John's University"
+    "resolved by hand: Tyler page: St. John's 2021; UTRGV 2022-23 roster names Tyler; one move from Tyler either way"
    ],
-   "status": "needs_check",
+   "status": "confirmed",
    "otherSources": [
     {
      "source": "JUCO alumni page",
@@ -29604,9 +29590,9 @@
    "arrivalSeason": 2021,
    "arrivalBasis": "first season on the destination roster (not on the 25-player 2020 roster)",
    "flags": [
-    "another college follows the JUCO in the previous-school text: possible indirect move"
+    "resolved by hand: roster lists Western Texas / Anderson (D2); order not shown in the bio; not counted until checked"
    ],
-   "status": "needs_check",
+   "status": "unresolved",
    "otherSources": []
   },
   {
@@ -30008,651 +29994,930 @@
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "miami_dade": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "iowa_western": {
-    "confirmed": 19,
-    "needs_check": 4,
+    "confirmed": 22,
+    "needs_check": 0,
     "lead": 17,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 1
    },
    "northeast_cc": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 3,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "monroe_college": {
-    "confirmed": 21,
-    "needs_check": 1,
+    "confirmed": 22,
+    "needs_check": 0,
     "lead": 3,
     "duplicate": 1,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "indian_hills": {
-    "confirmed": 7,
-    "needs_check": 1,
+    "confirmed": 8,
+    "needs_check": 0,
     "lead": 3,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "tyler_jc": {
-    "confirmed": 24,
-    "needs_check": 1,
+    "confirmed": 25,
+    "needs_check": 0,
     "lead": 3,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "daytona_state": {
     "confirmed": 3,
     "needs_check": 0,
     "lead": 4,
     "duplicate": 0,
-    "not_d1_at_arrival": 1
+    "not_d1_at_arrival": 1,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "barton_cc": {
     "confirmed": 7,
     "needs_check": 0,
     "lead": 2,
     "duplicate": 0,
-    "not_d1_at_arrival": 1
+    "not_d1_at_arrival": 1,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "cowley_cc": {
     "confirmed": 16,
     "needs_check": 0,
     "lead": 9,
     "duplicate": 1,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "arizona_western": {
     "confirmed": 9,
     "needs_check": 0,
     "lead": 5,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "efsc": {
-    "confirmed": 0,
-    "needs_check": 5,
+    "confirmed": 4,
+    "needs_check": 0,
     "lead": 3,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "phoenix_college": {
     "confirmed": 6,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "pima_cc": {
-    "confirmed": 7,
-    "needs_check": 2,
+    "confirmed": 9,
+    "needs_check": 0,
     "lead": 5,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "mohave_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "glendale_cc_az": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "dodge_city_cc": {
     "confirmed": 2,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "neosho_county_cc": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "southeastern_cc_ia": {
-    "confirmed": 3,
-    "needs_check": 1,
+    "confirmed": 4,
+    "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "iowa_lakes_cc": {
     "confirmed": 8,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "blinn_college": {
     "confirmed": 3,
     "needs_check": 0,
     "lead": 1,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "coastal_bend_cc": {
-    "confirmed": 3,
-    "needs_check": 2,
+    "confirmed": 4,
+    "needs_check": 0,
     "lead": 1,
     "duplicate": 0,
-    "not_d1_at_arrival": 1
+    "not_d1_at_arrival": 1,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 1
    },
    "angelina_college": {
     "confirmed": 4,
     "needs_check": 0,
     "lead": 1,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "lsu_eunice": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 2,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "nassau_cc": {
     "confirmed": 3,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "ulster_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "suffolk_cc": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "westchester_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "johnson_county_cc": {
     "confirmed": 5,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 1,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "murray_state_ok": {
     "confirmed": 2,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "lewis_clark_cc": {
     "confirmed": 3,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "otero_college": {
     "confirmed": 7,
     "needs_check": 0,
     "lead": 2,
     "duplicate": 2,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "montgomery_college": {
     "confirmed": 4,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "yavapai_college": {
     "confirmed": 7,
     "needs_check": 0,
     "lead": 2,
     "duplicate": 1,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "eastern_arizona": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "csn_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "community_christian_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "eastern_oklahoma_state": {
     "confirmed": 3,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "connors_state": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "neo_am": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "rose_state": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "national_park": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "rich_mountain": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "hill_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 1
+    "not_d1_at_arrival": 1,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "western_texas": {
     "confirmed": 6,
-    "needs_check": 1,
+    "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 1,
+    "indirect_not_counted": 0
    },
    "truman_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "daley_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "malcolm_x_college": {
     "confirmed": 2,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "kennedy_king_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "wilbur_wright_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "coffeyville_cc": {
     "confirmed": 6,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 2,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "garden_city_cc": {
     "confirmed": 2,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "seward_county_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "casper_college": {
     "confirmed": 9,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "northwest_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "central_wyoming": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "laramie_county_cc": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "gillette_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "western_nebraska_cc": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "lamar_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "trinidad_state": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "northeastern_junior_college": {
     "confirmed": 2,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "usc_lancaster": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "usc_salkehatchie": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "usc_sumter": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "usc_union": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "paris_jc": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "jacksonville_college": {
     "confirmed": 3,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "northeast_texas_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "texas_southmost": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "crowder_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "jefferson_college_mo": {
     "confirmed": 4,
     "needs_check": 0,
     "lead": 5,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "harcum_college": {
     "confirmed": 2,
-    "needs_check": 1,
+    "needs_check": 0,
     "lead": 0,
     "duplicate": 1,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 1,
+    "indirect_not_counted": 0
    },
    "hagerstown_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "harford_cc": {
     "confirmed": 2,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "slcc": {
     "confirmed": 26,
     "needs_check": 0,
     "lead": 5,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "snow_college": {
     "confirmed": 3,
     "needs_check": 0,
     "lead": 1,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "north_idaho_college": {
     "confirmed": 3,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "college_of_southern_idaho": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "colorado_northwestern_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "usu_eastern": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 1,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "truckee_meadows_cc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "pacific_northwest_christian_college": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "illinois_central": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "southwestern_illinois": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "lincoln_trail": {
     "confirmed": 2,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "central_georgia_tech": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "ranger_college": {
     "confirmed": 1,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "noc_enid": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "nwacc": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "oxford_college_emory": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 1,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "southern_crescent_tech": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    },
    "southwestern_christian": {
     "confirmed": 0,
     "needs_check": 0,
     "lead": 0,
     "duplicate": 0,
-    "not_d1_at_arrival": 0
+    "not_d1_at_arrival": 0,
+    "via_d1_owner": 0,
+    "unresolved": 0,
+    "indirect_not_counted": 0
    }
   }
  }

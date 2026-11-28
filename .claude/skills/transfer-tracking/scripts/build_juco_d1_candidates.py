@@ -38,7 +38,7 @@ for jid, j in jucos.items():
         pats.append(r"\b" + re.escape(stem) + r"\b")
     JPAT[jid] = re.compile("|".join(pats), re.I)
 JPAT["slcc"] = re.compile(r"Salt Lake (City )?(CC|Community College|C\.C\.)|\bSLCC\b", re.I)
-JPAT["efsc"] = re.compile(r"Eastern Florida( State)?|\bEFSC\b", re.I)
+JPAT["efsc"] = re.compile(r"Eastern Florida( State)?( College)?|\bEFSC\b", re.I)  # whole name, so "College" is not read as a second school
 JPAT["lsu_eunice"] = re.compile(r"LSU[- ]Eunice", re.I)
 JPAT["monroe_college"] = re.compile(r"\bMonroe (College|CC)\b", re.I)
 
@@ -58,7 +58,9 @@ COLLEGEISH = re.compile(r"\b(University|College|State|Institute|Tech)\b", re.I)
 def indirect(text, m):
     """True when another college follows the JUCO in the previous-school text (JUCO -> X -> destination)."""
     tail = text[m.end():]
-    parts = [x.strip() for x in re.split(r"/|;|,|\bthen\b", tail) if x.strip()]
+    # rosters sometimes repeat the hometown and high school after the JUCO; ignore repeated segments
+    seen_before = {x.strip().lower() for x in re.split(r"/|;|,", text[:m.start()]) if x.strip()}
+    parts = [x.strip() for x in re.split(r"/|;|,|\bthen\b", tail) if x.strip() and x.strip().lower() not in seen_before]
     def is_school(x):
         if JPAT[jid_cache].search(x): return False
         if COLLEGEISH.search(x): return True                       # "Missouri State University"
@@ -114,7 +116,7 @@ ALIAS = {  # short or odd forms seen on alumni pages and trackers
  "western illinois": "o771", "wright state": "o810", "niagara": "o482", "louisville": "o367", "elon": "o1068",
  "northern illinois": "o503", "san diego": "o627", "gonzaga": "o260", "cornell": "o167", "manhattan": "o381",
  "nc state": "o490", "north carolina state": "o490", "syracuse": "o688", "liberty": "o355", "coastal carolina": "o149",
- "marist": "o386", "campbell": "o1320", "dayton": "o175", "utrgv ": "o536", "unlv": "o465", "smu": "o663", "uconn": "o164",
+ "marist": "o386", "campbell": "o115", "presbyterian": "o1320", "dayton": "o175", "utrgv ": "o536", "unlv": "o465", "smu": "o663", "uconn": "o164",
 }
 NAMEIDX = [(norm_school(p["school"]), k) for k, p in programs.items()]
 def program_of(dest):
@@ -257,8 +259,38 @@ for c in cands:
               "otherSources": c.pop("_other")})
     c["_key"] = norm_name(c["player"]); c.pop("_n"); c.pop("_indirect")
 
+
+# ---------- 3a. decisions made by hand from the players' own bios (2026-11-28) ----------
+# Roster lines do not list schools in time order (Etienne-Courtois: "Indian Hills / Utah Tech" but he went
+# Utah Tech 2022-23, Indian Hills 2024, Wright State 2025), so indirect-looking lines need the bio.
+MANUAL = {
+ ("indian_hills", "Sacha Etienne-Courtois"): ("confirmed", "bio: Utah Tech 2022-23, Indian Hills 2024, Wright State 2025; direct JUCO to D1 move (wsuraiders.com bio)"),
+ ("iowa_western", "Sohei Matsumori"): ("indirect_not_counted", "bio: Iowa Western 2021, Norco College 2022, Xavier 2023; the D1 move came from Norco (goxavier.com bio)"),
+ ("coastal_bend_cc", "Donal Rahill"): ("indirect_not_counted", "bio: Rogers State (Division II) 2022 before Coastal Carolina 2023 (goccusports.com bio)"),
+ ("efsc", "Abdul Kuku"): ("outside_window", "bio: Eastern Florida 2019-20, Seattle U for the 2020 season (played spring 2021), FGCU 2021; first D1 season 2020 (fgcuathletics.com bio)"),
+ ("western_texas", "Tevin Lessey"): ("unresolved", "roster lists Western Texas / Anderson (D2); order not shown in the bio; not counted until checked"),
+ ("harcum_college", "Lorenzo Ferrari"): ("unresolved", "roster lists Harcum, Felician (D2); order not shown in the bio; not counted until checked"),
+ ("tyler_jc", "Tristan Singh"): ("confirmed", "Tyler page: St. John's 2021; UTRGV 2022-23 roster names Tyler; one move from Tyler either way"),
+ ("iowa_western", "Luka Nedic"): ("confirmed", "owner ruling 2026-11-28 (counts when the arrival roster cannot show it): direct move was Iowa Western to UIC, 2023 (Iowa Western page); UIC prints no previous school; Creighton 2025 roster lists Iowa Western CC/UIC"),
+ ("iowa_western", "Oskar Greven"): ("confirmed", "owner ruling 2026-11-28 (counts when the arrival roster cannot show it): direct move was Iowa Western to UIC, 2023 (Iowa Western page); UIC prints no previous school; Wright State 2025 roster lists UIC / Iowa Western CC"),
+ ("pima_cc", "Taein Ka"): ("confirmed", "owner ruling 2026-11-28 (counts when the arrival roster cannot show it): direct move was Pima to Central Connecticut, 2022 (Pima page); CCSU roster behind a verification page; Coastal Carolina 2023 roster lists CCSU / Pima"),
+}
+VIA_D1 = {("iowa_western", "Luka Nedic"): ("o302", 2023), ("iowa_western", "Oskar Greven"): ("o302", 2023), ("pima_cc", "Taein Ka"): ("o127", 2022)}
+TWO_JUCO_OK = {"Daichi Saito", "Pedro Amancio", "Florentino Junior", "Angel Saldana"}  # credited to the last JUCO listed; direct
+for c in cands:
+    k = (c["jucoId"], c["player"])
+    if k in MANUAL:
+        c["status"], note = MANUAL[k]
+        c["flags"] = [f for f in c["flags"] if f.startswith("arrival outside")] + ["resolved by hand: " + note]
+        if k in VIA_D1:  # owner ruling: the counted move is the earlier one to the intermediate D1 school
+            c["destinationKey"], c["destinationSchool"], c["arrivalSeason"] = VIA_D1[k][0], programs[VIA_D1[k][0]]["school"], VIA_D1[k][1]
+            c["arrivalBasis"] = "JUCO alumni page, supported by a later Division I roster (owner ruling 2026-11-28)"
+    elif c["player"] in TWO_JUCO_OK and c["status"] == "needs_check" and all(f.startswith("two JUCOs") for f in c["flags"]):
+        c["status"] = "confirmed"
+        c["flags"] = ["resolved: two JUCOs listed, credited to the last one, which he left directly for D1"]
+
 # ---------- 3b. one count per player: keep his first direct Division I move ----------
-rank = {"confirmed": 0, "needs_check": 1, "lead": 2, "outside_window": 3, "not_d1_at_arrival": 4}
+rank = {"confirmed": 0, "via_d1_owner": 1, "needs_check": 2, "unresolved": 2, "lead": 3, "indirect_not_counted": 4, "outside_window": 5, "not_d1_at_arrival": 6}
 groups = []
 for c in cands:
     for g in groups:
@@ -281,7 +313,7 @@ summ = {}
 for jid in jucos:
     cs = [c for c in cands if c["jucoId"] == jid and (c["arrivalSeason"] is None or 2021 <= c["arrivalSeason"] <= 2025)]
     k = collections.Counter(c["status"] for c in cs)
-    summ[jid] = {"confirmed": k["confirmed"], "needs_check": k["needs_check"], "lead": k["lead"], "duplicate": k["duplicate"], "not_d1_at_arrival": k["not_d1_at_arrival"]}
+    summ[jid] = {"confirmed": k["confirmed"], "needs_check": k["needs_check"], "lead": k["lead"], "duplicate": k["duplicate"], "not_d1_at_arrival": k["not_d1_at_arrival"], "via_d1_owner": k["via_d1_owner"], "unresolved": k["unresolved"], "indirect_not_counted": k["indirect_not_counted"]}
 d["candidates"] = sorted(cands, key=lambda c: (c["jucoId"], c["arrivalSeason"] or 0, c["player"]))
 d["candidateSummary"] = {"_about": "Counts per JUCO, 2021-2025 arrivals. Only 'confirmed' will count once stage 2 clears the rest. Not used for scoring yet.",
                          "builtAt": datetime.date.today().isoformat(), "byJuco": summ}

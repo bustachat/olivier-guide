@@ -1541,7 +1541,7 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
       - Etienne-Courtois and Singh: confirmed.
       - Matsumori (Iowa Western, then Norco College, then Xavier) and Rahill (Coastal Bend, then Rogers State D2, then Coastal Carolina): `indirect_not_counted`.
       - Kuku: `outside_window` (Seattle U for the 2020 season).
-      - Lessey and Ferrari: `unresolved` (their bios do not give the order).
+      - Lessey and Ferrari: first `unresolved`, then **settled 2026-11-28 as `indirect_not_counted`**. Lessey: Western Texas's own signing release (2019-05-28) shows Anderson University (D2) in 2019, before Saint Joseph's. Ferrari: Harcum 2022, then Felician (D2) 2023-24 per Felician's match reports, then La Salle. No score changed (neither was counted). No `unresolved` entries remain.
       - Saito, Amancio, Florentino Junior and Saldana: confirmed, credited to the last JUCO listed.
     - Three bugs found and fixed: "Eastern Florida State College" was matched only as "Eastern Florida", leaving "College" to look like a second school; a repeated hometown segment ("St. Thomas, Virgin Islands") read as St. Thomas University; "Campbell" was mapped to Presbyterian.
     - **Owner ruling 2026-11-28 (do not re-ask): a move counts when the arrival school's roster cannot show the previous school, provided the JUCO's own page names the move and a later D1 roster lists the JUCO.** Applied to Nedic and Greven (Iowa Western to UIC, 2023) and Ka (Pima to Central Connecticut, 2022). The candidate records the earlier move (`VIA_D1` in the script), not the later school.

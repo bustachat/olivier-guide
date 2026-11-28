@@ -24049,9 +24049,9 @@
    "arrivalSeason": 2025,
    "arrivalBasis": "first season on the destination roster",
    "flags": [
-    "resolved by hand: roster lists Harcum, Felician (D2); order not shown in the bio; not counted until checked"
+    "resolved by hand: Harcum 2022 (Region 19 stats), Felician (Division II) 2023-24 (felicianuathletics.com match reports, hometown Palestro matches), La Salle 2025"
    ],
-   "status": "unresolved",
+   "status": "indirect_not_counted",
    "otherSources": []
   },
   {
@@ -30997,9 +30997,9 @@
    "arrivalSeason": 2021,
    "arrivalBasis": "first season on the destination roster (not on the 25-player 2020 roster)",
    "flags": [
-    "resolved by hand: roster lists Western Texas / Anderson (D2); order not shown in the bio; not counted until checked"
+    "resolved by hand: Western Texas signing release (wtc.prestosports.com, 2019-05-28): signed with Anderson University (Division II) in 2019; Saint Joseph's 2021 came after Anderson"
    ],
-   "status": "unresolved",
+   "status": "indirect_not_counted",
    "otherSources": []
   },
   {
@@ -31857,8 +31857,8 @@
     "duplicate": 0,
     "not_d1_at_arrival": 0,
     "via_d1_owner": 0,
-    "unresolved": 1,
-    "indirect_not_counted": 0
+    "unresolved": 0,
+    "indirect_not_counted": 1
    },
    "truman_college": {
     "confirmed": 0,
@@ -32137,8 +32137,8 @@
     "duplicate": 1,
     "not_d1_at_arrival": 0,
     "via_d1_owner": 0,
-    "unresolved": 1,
-    "indirect_not_counted": 0
+    "unresolved": 0,
+    "indirect_not_counted": 1
    },
    "hagerstown_cc": {
     "confirmed": 0,

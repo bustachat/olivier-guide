@@ -1423,6 +1423,48 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
 - **🚩 Coach-bio men's/women's conflation — general audit still open.** The originating instance (Austin Solomon's bio crediting the Mercyhurst *women's* coach's departure) is fixed and "Rich Wall" returns no hits; the same error class recurred independently at UNC (Somoano/Dorrance, fixed v44.25). **No systematic search for further instances has been done.** Not urgent, but the class has now bitten twice.
 - **📌 The Outreach tracker renders ONLY the 10 shortlisted schools** (confirmed live v44.35: FIU, PBA, Lynn, UCSB, USF, Barry, Clemson, UNC, FAU, SMU). A coach-contact error at any other school shows up in Coaches → Profiles and the school modal but **never** in the Outreach list — so that tab cannot be used to spot-check contact data.
 
+#### C1. JUCO Division I transfer rate, five-year measure — 🚧 IN PROGRESS (planned and started 2026-11-28, owner-approved)
+
+**Why.** The owner doubted Indian Hills' 0.88/yr. Re-reading its alumni page (2026-11-28) showed the count was right but the window was not: 15 genuine D1 moves divided by 17 years (2008-2024), although the page barely tracks 2008-2015 and lists 10 of the 15 in 2022-2024. The seven measured JUCOs also use windows of 7 to 23 years ending 2023 to 2026, and 21 JUCOs get a default rate. **Owner ruling: one five-year window for all 89 JUCOs, so the measure is consistent across the guide.** This supersedes §5b's "whole published window" method once stage 4 ships; until then §5b's stored rates stay live.
+
+**Rule.**
+- Count a player whose last college before an NCAA Division I men's soccer roster was this JUCO, and who first appears on that roster in fall 2021 to fall 2025 (a January arrival counts toward that season).
+- Confirmed means the destination's roster for that season names the JUCO as previous school. A JUCO release alone is not enough.
+- Not counted: indirect moves (JUCO, then NAIA, then D1); D2/NAIA destinations; schools with no varsity men's soccer; tracker-only names.
+- Rate = confirmed ÷ 5, or ÷ the seasons the program existed in the window (programs founded 2023 divide by 3).
+
+**Sources.**
+1. TopDrawerSoccer's yearly D1 transfer trackers 2021-2025, for discovery only.
+2. Each JUCO's alumni page and signing releases, for discovery.
+3. The guide's stored D1 rosters (`data/rosters/`): 105 snapshots, 75 with previous school; 24 hits for the seven measured schools on 2026-11-28, plus false name matches to check by hand.
+4. Confirmation on the destination's roster for the arrival season (Claude-in-Chrome, RULE 0).
+5. The NCAA member directory for division, judged at the time of arrival.
+
+**Stages.**
+- **0.** Name list from the trackers into `data/juco-d1-transfers-2021-2025.json`, one row per player (name, JUCO id, destination, arrival season, status, source). Audit file only; nothing reads it for scoring.
+- **1.** Add alumni-page/release and stored-roster names.
+- **2.** Confirm region by region, 8 to 10 schools per batch.
+- **3.** Compute rates; recompute `D1_RATE_DIVISOR` as the 90th percentile of all 89; show the owner the table before any score moves.
+- **4.** Apply to all 89 at once (fitOlivier, overall, soccer, value, nextLevel, notes) in one release. No batch-by-batch score changes.
+- **5.** Rewrite §5b; add a validator check (rate = confirmed ÷ seasons, every counted player backed by a confirmed row) with a negtest case; update Glossary wording.
+
+**Owner decisions (2026-11-28, do not re-ask):**
+- A school with zero confirmed moves gets a real 0, not the default.
+- Monroe is measured too.
+- The divisor is the 90th percentile across all 89.
+- The window rolls forward each year (2022-2026 next), after the December portal window, alongside the MLS draft recount.
+
+**Scope.** D2/NAIA/D3 keep MLS picks. Phoenix, Eastern Florida State and Monroe's short-window rates are replaced by this method.
+
+**Progress (update as stages finish):**
+- **Stage 0 done 2026-11-28.** Builder: `.claude/skills/transfer-tracking/scripts/build_juco_d1_leads.py`, a one-off that refuses to overwrite once any row is past `lead`.
+- Tracker addresses: 2021 `aid48768`, 2022 `aid50186`, 2023 `aid51526`, 2024 `aid52846`, 2025 `aid54066` (topdrawersoccer.com/college-soccer-articles/...). Each is one table (player, outgoing, incoming) of 152 / 203 / 208 / 269 / 333 players; no paywall.
+- Result: 112 tracker leads and 54 stored-roster leads (5 overlap) across 39 JUCOs. **54 of the 93 JUCOs have no lead yet** (the guide now has 93 JUCOs, not 89).
+- **The trackers miss most JUCO moves.** Indian Hills' alumni page shows about 10 D1 moves in 2022-2024; the trackers list 2. Stage 1 (alumni pages, releases) and stage 2 destination-roster searches therefore carry most of the count. Plan for this: a zero after trackers alone means nothing.
+- **Matching traps, now hand-listed in the builder:** fuzzy matching filed Georgia State, Dayton, Jacksonville University, Wright State, Western Illinois, Iona, Auburn Montgomery and "Christian" colleges under guide JUCOs. "South Carolina", "Northwestern" and "NC State" hit USC regional campuses and Colorado Northwestern. "Barton College" (NC) is not Barton CC; "Lewis & Clark College" (Portland) is not Lewis & Clark CC; "Monroe Community College" (Rochester) is not Monroe College. Trackers misspell real ones ("Indiana Hills Community College", probably "Angelica College" for Angelina). Unsure names carry a `matchNote`.
+- Tracker year is the arrival season as published; Pirry and Rivera Cardona appear in the 2025 tracker although Indian Hills' page lists them at IHCC in 2023-24. Stage 2 must set the arrival season from the destination roster, not the tracker.
+- Next: stage 1 (alumni pages and signing releases for all 93), then stage 2 by region.
+
 #### C0. Stored rosters are the source of truth — ✅ CAMPAIGN COMPLETE (v45.99–v46.18, closed out v46.19)
 
 **What it fixed.** The guide used to store the answer (`mf_total` and three lists of names) and throw the roster away, so every rule change or doubt meant going back to the websites. Now every roster is stored in `data/rosters/` with positions exactly as published, and the midfielder numbers, trajectory and scores are derived from it by `derive_minutes.py`. Per-batch detail is in CHANGELOG.md v45.99–v46.18.

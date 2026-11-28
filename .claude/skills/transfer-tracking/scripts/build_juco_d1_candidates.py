@@ -129,12 +129,22 @@ def program_of(dest):
     best = max(NAMEIDX, key=lambda t: difflib.SequenceMatcher(None, t[0], n).ratio())
     return best[1] if difflib.SequenceMatcher(None, best[0], n).ratio() >= 0.86 else None
 
-# Programs that joined Division I during or just before the window. FROM MEMORY, NOT VERIFIED:
-# a move to one of these only counts if it happened after the program joined D1; confirm each in stage 2.
-RECENT_D1 = {"o620": "St. Thomas (MN)", "o11504": "Queens (NC)", "o30136": "Lindenwood", "o682": "Stonehill",
-             "o661": "Southern Indiana", "o349": "Le Moyne", "o408": "Mercyhurst", "o470": "New Haven",
-             "o11740": "West Florida", "o30095": "Utah Tech", "o112": "UC San Diego", "o52": "Bellarmine",
-             "o410": "Merrimack", "o30135": "California Baptist"}
+# Programs that joined Division I during or just before the window (checked 2026-11-28).
+# D1_FROM: the season a program's men's team first played Division I, or the earliest window season it is
+# shown playing D1, with the evidence. A move that arrives before that season is not a Division I move.
+D1_FROM = {
+ "o11740": (2026, "West Florida: Gulf South (Division II) 2021-2025, ASUN from 2026 (guide record, data/d1-other.json)"),
+ "o408":   (2024, "Mercyhurst: PSAC (Division II) through 2023, NEC from 2024 (guide record)"),
+ "o11504": (2022, "Queens: first Division I season 2022 (guide record)"),
+ "o30095": (2021, "Utah Tech: WAC (Division I) 2021-2025 (guide record)"),
+ "o30135": (2021, "California Baptist: WAC (Division I) 2021-2025 (guide record)"),
+ "o661":   (2025, "Southern Indiana: OVC schedule 2025 (usiscreamingeagles.com); earlier seasons not checked"),
+ "o30136": (2025, "Lindenwood: OVC schedule 2025 (lindenwoodlions.com); earlier seasons not checked"),
+}
+# Joined recently, D1 start season NOT yet checked: a move there stays flagged.
+RECENT_D1_UNCHECKED = {"o620": "St. Thomas (MN): schedule page showed an unfilled template on 2026-11-28",
+                       "o682": "Stonehill", "o349": "Le Moyne", "o470": "New Haven", "o112": "UC San Diego",
+                       "o52": "Bellarmine", "o410": "Merrimack"}
 
 # ---------- 1. sweep candidates ----------
 cands = []
@@ -212,7 +222,16 @@ for c in cands:
         arrival, basis = None, "unknown"
     if TWO_JUCOS.get(c["previousSchoolAsListed"] or ""): flags.append("two JUCOs listed; credited to the last one")
     if c["_indirect"]: flags.append("another college follows the JUCO in the previous-school text: possible indirect move")
-    if c["destinationKey"] in RECENT_D1: flags.append("destination joined Division I recently (from memory, unverified): confirm it was D1 when he arrived")
+    not_d1 = False
+    if c["destinationKey"] in D1_FROM:
+        start, why = D1_FROM[c["destinationKey"]]
+        if arrival is not None and 2021 <= arrival < start:   # outside-window arrivals are excluded anyway
+            not_d1 = True
+            flags.append("destination was not Division I when he arrived: " + why)
+        elif arrival is not None and arrival == start and "earlier seasons not checked" in why:
+            pass  # shown playing D1 in his arrival season
+    elif c["destinationKey"] in RECENT_D1_UNCHECKED:
+        flags.append("destination joined Division I recently; start season not checked: " + RECENT_D1_UNCHECKED[c["destinationKey"]])
     if not c["destinationKey"]:
         ds = [o["destinationAsListed"] for o in c["_other"] if o["destinationAsListed"]]
         flags.append("destination not matched to a current Division I program: " + "; ".join(sorted(set(map(str, ds))))[:160])
@@ -226,6 +245,8 @@ for c in cands:
         flags.append("arrival outside 2021-2025")
     if arrival is not None and not (2021 <= arrival <= 2025) and c["firstSeenAtDestination"]:
         status = "outside_window"   # e.g. already on the destination's 2020 roster
+    elif not_d1:
+        status = "not_d1_at_arrival"
     elif c["firstSeenAtDestination"] and not flags:
         status = "confirmed"
     elif c["firstSeenAtDestination"]:
@@ -237,7 +258,7 @@ for c in cands:
     c["_key"] = norm_name(c["player"]); c.pop("_n"); c.pop("_indirect")
 
 # ---------- 3b. one count per player: keep his first direct Division I move ----------
-rank = {"confirmed": 0, "needs_check": 1, "lead": 2, "outside_window": 3}
+rank = {"confirmed": 0, "needs_check": 1, "lead": 2, "outside_window": 3, "not_d1_at_arrival": 4}
 groups = []
 for c in cands:
     for g in groups:
@@ -260,7 +281,7 @@ summ = {}
 for jid in jucos:
     cs = [c for c in cands if c["jucoId"] == jid and (c["arrivalSeason"] is None or 2021 <= c["arrivalSeason"] <= 2025)]
     k = collections.Counter(c["status"] for c in cs)
-    summ[jid] = {"confirmed": k["confirmed"], "needs_check": k["needs_check"], "lead": k["lead"], "duplicate": k["duplicate"]}
+    summ[jid] = {"confirmed": k["confirmed"], "needs_check": k["needs_check"], "lead": k["lead"], "duplicate": k["duplicate"], "not_d1_at_arrival": k["not_d1_at_arrival"]}
 d["candidates"] = sorted(cands, key=lambda c: (c["jucoId"], c["arrivalSeason"] or 0, c["player"]))
 d["candidateSummary"] = {"_about": "Counts per JUCO, 2021-2025 arrivals. Only 'confirmed' will count once stage 2 clears the rest. Not used for scoring yet.",
                          "builtAt": datetime.date.today().isoformat(), "byJuco": summ}

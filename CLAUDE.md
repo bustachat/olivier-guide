@@ -1517,7 +1517,15 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
 - After it: 244 confirmed, 37 needs_check, 79 lead, 42 outside_window, 9 duplicate. 46 JUCOs have at least one confirmed move.
 - **Flags to clear in stage 2:**
   - ~~60 first seen 2021~~: cleared by the 2020 check above.
-  - 24 destinations that joined D1 recently. The `RECENT_D1` list in the script is from memory and unverified; confirm each join year on ncaa.org.
+  - ~~24 destinations that joined D1 recently~~: **checked 2026-11-28.** The NCAA directory refuses past years (`academicYear=` returns "Access Denied"), so the guide's own conference records and the schools' own 2025 schedules were used instead. They are stored as `D1_FROM` in the merge script, each with its evidence:
+    - West Florida was **Gulf South (D2) through 2025** and joins the ASUN in 2026. Its 4 window arrivals are now `not_d1_at_arrival` and do not count. My from-memory list had this wrong.
+    - Mercyhurst: Division I from 2024.
+    - Queens: Division I from 2022.
+    - Utah Tech and California Baptist: WAC (D1) 2021-2025.
+    - Southern Indiana and Lindenwood: OVC (D1) in 2025, the season their candidates arrived.
+    - St. Thomas (MN) is unchecked (its schedule page shows an unfilled template); its only candidate is a lead.
+    - Stonehill, Le Moyne, New Haven, UC San Diego, Bellarmine and Merrimack stay in `RECENT_D1_UNCHECKED`; none has a candidate.
+  - After it: 258 confirmed, 19 needs_check, 79 lead, 42 outside_window, 4 not_d1_at_arrival, 9 duplicate. 48 JUCOs have at least one confirmed move.
   - 15 possible indirect moves.
   - 7 destinations not matched to a current D1 program, among them St. Francis Brooklyn, which dropped men's soccer.
   - 79 page or tracker leads to look up on the destination roster one by one.

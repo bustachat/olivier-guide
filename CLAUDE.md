@@ -1467,7 +1467,17 @@ Both entries below are the same defect class as the Max Aid tile (fixed v44.50) 
 - The trackers had found only 14 of Iowa Western's 37, 3 of Cowley's 23, 5 of Pima's 11 and 1 of Indian Hills' 11: roughly a quarter.
 - **Arrival season:** Iowa Western, Pima and Arizona Western group players by the year they moved on. Cowley and Indian Hills list the seasons played ("2023/24", "2023-24"), so arrival is estimated as the last season + 1 (`arrivalBasis` says which); stage 2 settles it from the destination roster.
 - Tyler JC: with the VPN on the old page loads blank (the site moved platform in 2026, and the new site has no next-level page). Read via the Internet Archive copy of 2024-11-03; its newest section is 2022, so Tyler has 14 page leads (3 for 2021, 11 for 2022) and 2023-2025 must come from trackers, rosters and stage 2. Side finding: the new site now lists staff (`/staff/...`), with Steve Clements as head coach, so the §6C "no live staff page" note for Tyler is out of date.
-- Next in stage 1: signing and commitment news for the other 87 JUCOs (no alumni page), then stage 2 by region.
+- **Method change (2026-11-28): JUCO signing news replaced by a Division I roster sweep.** Tested on Barton CC: its 2021-22 onward news pages load stories in the browser only, and 2024-25 has no signing stories at all; JUCO sites rarely say where players went. Reading the destination side is better: one same-origin read of a D1 site pulls its 2021-2025 rosters with previous school, gives the arrival season directly, and doubles as stage 2 confirmation.
+- Tools: `.claude/skills/transfer-tracking/scripts/d1_roster_sweep.js`, served by `roster_receiver.py` at `/sweep.js`. Load it into `window.name.code` on `http://localhost:8799/`; on each D1 site run `await eval(JSON.parse(window.name).code)('<key>')`, then POST `out` to `/save` every few sites. Program list and keys (`o<NCAA orgId>`): `rosterSweep.allPrograms` in the audit file.
+- **Progress: 32 of 213 programs swept** (stored in `rosterSweep.programs`, 336 raw rows). First 30 gave 39 player-JUCO pairs across 18 guide JUCOs, including schools with no alumni page (Harcum, Dodge City, Garden City, Angelina, Blinn, Coastal Bend).
+- Sweep traps:
+  - Batches of more than four sites time out; use navigate, a 3-second wait, then the script, about four sites per call.
+  - Some sites redirect after loading ("navigated during execution"); wait and re-run.
+  - Bradley (`o72`) reads 0 players: a different layout, needs a fallback.
+  - Programs whose table has no previous-school column (UIC, Binghamton `o62`, Bryant `o81`, Cal `o107` in some seasons) undercount; `info` flags them.
+  - Raw rows include high schools with "College" in the name; filter against the guide's JUCO names.
+  - Programs that dropped men's soccer since 2021 (e.g. St. Francis Brooklyn) are not in the 2026-27 NCAA list; check them separately.
+- Next: sweep the remaining 181 programs (resume at `o127` in `allPrograms` order, after `o116`), then match rows to JUCOs and dedupe against the page/tracker leads.
 
 #### C0. Stored rosters are the source of truth — ✅ CAMPAIGN COMPLETE (v45.99–v46.18, closed out v46.19)
 
